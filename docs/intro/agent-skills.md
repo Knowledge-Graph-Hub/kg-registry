@@ -5,21 +5,27 @@ title: Agent Skills
 
 # Agent Skills
 
-KG-Registry includes a small set of local agent skills to support curation and maintenance workflows in this repository.
+KG-Registry includes a small set of local agent skills to support curation and maintenance workflows in this repository, plus a set of read-only discovery skills for exploring what the registry knows about a resource or domain.
 
-These skills are designed for curators working in a checked-out copy of the repository, not for editing generated site output or for use against the public website alone.
+The curation and maintenance skills are designed for curators working in a checked-out copy of the repository. The discovery skills are different: they need no local clone and query the published Parquet files over HTTP, so anyone with network access can use them.
 
-## Prerequisite
+## Prerequisites
 
-Before using any of these skills, clone the KG-Registry repository locally.
+The two kinds of skill have different requirements.
 
-The skills rely on:
+### Discovery skills — no clone needed
+
+The read-only discovery skills (`search-resources`, `trace-upstream-sources`, `find-downstream-usages`, `find-similar-resources`) require no local clone. They query the published Parquet files over HTTP at `https://kghub.org/kg-registry/registry/parquet/` using DuckDB with the `httpfs` extension, for example via `uv run --with duckdb --no-project python`. All you need is network access.
+
+### Curation skills — local clone required
+
+The curation and maintenance skills (`kg-registry-curation`, `curate-next`, `kg-registry-validation`, `kg-registry-product-url-update`) must be run from a local clone of the repository. They rely on:
 
 - reading and editing source files under `resource/`
 - checking nearby repository context such as `reports/curation_problems.tsv`
 - running local validation commands such as `uv run make validate-file FILE=...`
 
-If you are not working in a local clone of the repository, stop and clone it first.
+If you want to curate or maintain resources and are not working in a local clone, stop and clone the repository first.
 
 ## Where the skills live
 
@@ -28,7 +34,7 @@ The current agent workflows are defined in the repository's `.agents/` directory
 That directory includes:
 
 - command entry points for common tasks
-- skill definitions for curation and validation workflows
+- skill definitions for both the discovery and the curation workflows
 - local permission settings used by the agent when running repository-specific commands
 
 ## Available workflows
@@ -56,6 +62,60 @@ This workflow checks a curated file for schema validity and curation-specific qu
 Use the `kg-registry-product-url-update` skill.
 
 This workflow is for replacing a stale `product_url` with the best current live URL for the same product. It is especially useful when an old version-specific URL has disappeared and the best replacement is a newer canonical page, release page, or current download endpoint.
+
+## Discovery and exploration
+
+These skills are read-only and need no local clone. They answer questions about what the registry already records by querying the published Parquet files over HTTP at `https://kghub.org/kg-registry/registry/parquet/` (`resources.parquet`, `resource_domains.parquet`, `resource_products.parquet`, `resource_taxa.parquet`). They run DuckDB with the `httpfs` extension — for example via `uv run --with duckdb --no-project python` — and do not edit resource pages. Provenance, usages, and publications live inside the `raw_data` JSON column of `resources.parquet`.
+
+### Search the registry by topic or domain
+
+Use the `search-resources` skill.
+
+This workflow finds resources covering a subject area (for example, "everything about RNA interactions"). It maps the free-text topic to the controlled domain vocabulary, runs a keyword search over names and descriptions, sweeps the source files for matches the structured query misses, and returns a ranked, de-duplicated list noting each resource's category and activity status.
+
+### Trace a resource's upstream sources
+
+Use the `trace-upstream-sources` skill.
+
+This workflow determines the upstream data sources a resource (usually a knowledge graph) is built from, by walking each product's `original_source` and `secondary_source`, resolving the referenced KG-Registry identifiers, and optionally recursing to build the full provenance tree back to primary sources.
+
+### Find where a resource is used
+
+Use the `find-downstream-usages` skill.
+
+This workflow determines everywhere a resource is used downstream. It combines a reverse-provenance sweep (other resources whose products name the target as a source) with the target's own curator-recorded `usages` field.
+
+### Find resources similar to a given one
+
+Use the `find-similar-resources` skill.
+
+This workflow finds alternatives and near-duplicates of a resource by combining structured signals KG-Registry records (shared domains, taxa, category, graph scale, shared upstream sources) with heuristics such as description similarity and overlapping publication authors, then ranks the results with an explanation of why each is similar.
+
+## Installing and discovering these skills
+
+The skills are exposed through two complementary, independent standards. Either can be used on its own; supporting both costs nothing extra.
+
+### Install as a plugin (Claude Code marketplace)
+
+`/.claude-plugin/marketplace.json` defines a Claude Code plugin marketplace with two plugins:
+
+- `kg-registry-discovery` — the four read-only discovery skills (no local clone needed).
+- `kg-registry-curation` — the four curation and maintenance skills (require a local clone).
+
+Add the marketplace and install a plugin from a Claude Code session:
+
+```
+/plugin marketplace add Knowledge-Graph-Hub/kg-registry
+/plugin install kg-registry-discovery
+```
+
+This resolves against the repository's default branch, so the plugins become installable once these files are merged to `main`.
+
+### Discover via Agentic Resource Discovery (ARD)
+
+`/.well-known/ai-catalog.json` is an [Agentic Resource Discovery](https://github.com/ards-project/ard-spec) manifest (the `ai-catalog` format ARD builds on). It lists every skill as a catalog entry with a domain-anchored URN identifier, a short description, `capabilities`, and `representativeQueries` that registries use for semantic matching. Each entry's `url` points at the raw `SKILL.md`, and its `metadata` links back to the marketplace plugin that installs it.
+
+Because the site is served under the `/kg-registry` base path, the manifest is published at `https://kghub.org/kg-registry/.well-known/ai-catalog.json` rather than the bare domain root. An ARD registry can be pointed at that URL directly; placing or linking a copy at the `kghub.org` domain root is a separate hosting step outside this repository.
 
 ## What these workflows assume
 

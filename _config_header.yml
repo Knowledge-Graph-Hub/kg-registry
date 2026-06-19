@@ -14,5 +14,9 @@ plugins:
   - jekyll-feed
 feed:
   disable_in_development: true
+# Publish the Agentic Resource Discovery (ARD) manifest, which lives in a
+# dotfile directory Jekyll would otherwise skip.
+include:
+  - ".well-known"
 ## --Anything above this line can be edited in _config_header.yml --
 ## --Everything below this line automatically generated in _config.yml --

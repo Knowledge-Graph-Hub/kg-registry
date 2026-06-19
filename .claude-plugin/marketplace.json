@@ -1,0 +1,38 @@
+{
+  "name": "kg-registry",
+  "owner": {
+    "name": "Knowledge Graph Hub",
+    "email": "j.harry.caufield@gmail.com",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-registry"
+  },
+  "metadata": {
+    "description": "Agent skills for exploring and curating the KG-Registry of knowledge graphs, ontologies, and data sources.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "kg-registry-discovery",
+      "description": "Read-only skills for exploring the KG-Registry over HTTP (no local clone needed): search resources by topic or domain, trace a resource's upstream data sources, find everywhere a resource is used, and find similar resources. Each queries the published Parquet files at https://kghub.org/kg-registry/registry/parquet/ via DuckDB.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agents/skills/search-resources",
+        "./.agents/skills/trace-upstream-sources",
+        "./.agents/skills/find-downstream-usages",
+        "./.agents/skills/find-similar-resources"
+      ]
+    },
+    {
+      "name": "kg-registry-curation",
+      "description": "Skills for curating and maintaining KG-Registry resource pages from a local clone of the repository: expand and edit a resource, curate the next batch of stubs, validate a curated page, and update a stale product URL.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agents/skills/kg-registry-curation",
+        "./.agents/skills/curate-next",
+        "./.agents/skills/kg-registry-validation",
+        "./.agents/skills/kg-registry-product-url-update"
+      ]
+    }
+  ]
+}

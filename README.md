@@ -1,8 +1,12 @@
-# kg-registry
+<p align="center">
+  <img src="images/kg-registry-logo.png" alt="KG-Registry logo" width="150">
+</p>
 
-A registry for knowledge graphs and their components.
+<h1 align="center">KG-Registry</h1>
 
-🔗 [Visit the KG Registry](https://kghub.org/kg-registry/)
+<p align="center">A registry for knowledge graphs and their components.</p>
+
+<p align="center">🔗 <a href="https://kghub.org/kg-registry/">Visit the KG Registry</a></p>
 
 ## Features
 
