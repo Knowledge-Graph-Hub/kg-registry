@@ -85,6 +85,32 @@ Use the `find-similar-resources` skill.
 
 This workflow finds alternatives and near-duplicates of a resource by combining structured signals KG-Registry records (shared domains, taxa, category, graph scale, shared upstream sources) with heuristics such as description similarity and overlapping publication authors, then ranks the results with an explanation of why each is similar.
 
+## Installing and discovering these skills
+
+The skills are exposed through two complementary, independent standards. Either can be used on its own; supporting both costs nothing extra.
+
+### Install as a plugin (Claude Code marketplace)
+
+`/.claude-plugin/marketplace.json` defines a Claude Code plugin marketplace with two plugins:
+
+- `kg-registry-discovery` — the four read-only discovery skills (no local clone needed).
+- `kg-registry-curation` — the four curation and maintenance skills (require a local clone).
+
+Add the marketplace and install a plugin from a Claude Code session:
+
+```
+/plugin marketplace add Knowledge-Graph-Hub/kg-registry
+/plugin install kg-registry-discovery
+```
+
+This resolves against the repository's default branch, so the plugins become installable once these files are merged to `main`.
+
+### Discover via Agentic Resource Discovery (ARD)
+
+`/.well-known/ai-catalog.json` is an [Agentic Resource Discovery](https://github.com/ards-project/ard-spec) manifest (the `ai-catalog` format ARD builds on). It lists every skill as a catalog entry with a domain-anchored URN identifier, a short description, `capabilities`, and `representativeQueries` that registries use for semantic matching. Each entry's `url` points at the raw `SKILL.md`, and its `metadata` links back to the marketplace plugin that installs it.
+
+Because the site is served under the `/kg-registry` base path, the manifest is published at `https://kghub.org/kg-registry/.well-known/ai-catalog.json` rather than the bare domain root. An ARD registry can be pointed at that URL directly; placing or linking a copy at the `kghub.org` domain root is a separate hosting step outside this repository.
+
 ## What these workflows assume
 
 The agent skills are written around a few KG-Registry-specific rules:

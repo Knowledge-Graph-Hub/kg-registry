@@ -1,0 +1,188 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "KG-Registry",
+    "identifier": "did:web:kghub.org:kg-registry",
+    "documentationUrl": "https://github.com/Knowledge-Graph-Hub/kg-registry/blob/main/docs/intro/agent-skills.md",
+    "logoUrl": "https://kghub.org/kg-registry/images/kg-registry-logo.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:search-resources",
+      "displayName": "Search KG-Registry resources",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/search-resources/SKILL.md",
+      "description": "Find KG-Registry resources covering a topic, subject area, or domain by querying the published Parquet files over HTTP. No local clone needed.",
+      "tags": ["knowledge-graph", "registry", "search", "discovery", "bioinformatics"],
+      "capabilities": ["search-by-domain", "search-by-keyword", "filter-by-category", "filter-by-taxon"],
+      "representativeQueries": [
+        "find everything about RNA interactions",
+        "what knowledge graphs cover proteomics",
+        "which resources use UniProt",
+        "list active ontologies in the clinical domain"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-discovery",
+        "requiresLocalClone": false,
+        "dataEndpoint": "https://kghub.org/kg-registry/registry/parquet/"
+      }
+    },
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:trace-upstream-sources",
+      "displayName": "Trace a resource's upstream data sources",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/trace-upstream-sources/SKILL.md",
+      "description": "Determine all upstream data sources that feed into a resource by walking each product's recorded provenance (original_source and secondary_source) in the published Parquet files.",
+      "tags": ["knowledge-graph", "registry", "provenance", "lineage", "bioinformatics"],
+      "capabilities": ["walk-provenance", "resolve-source-ids", "recursive-upstream-trace"],
+      "representativeQueries": [
+        "what data sources does kg-microbe pull from",
+        "trace the provenance of this knowledge graph back to its primary sources",
+        "what is this resource built from"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-discovery",
+        "requiresLocalClone": false,
+        "dataEndpoint": "https://kghub.org/kg-registry/registry/parquet/"
+      }
+    },
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:find-downstream-usages",
+      "displayName": "Find everywhere a resource is used",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/find-downstream-usages/SKILL.md",
+      "description": "Determine everywhere a resource is used downstream by combining reverse provenance (other resources naming it as a source) with the resource's own recorded usages.",
+      "tags": ["knowledge-graph", "registry", "provenance", "reverse-lookup", "bioinformatics"],
+      "capabilities": ["reverse-provenance", "read-usages", "find-consumers"],
+      "representativeQueries": [
+        "what uses kg-microbe",
+        "which knowledge graphs are built from UniProt",
+        "where is this ontology consumed downstream"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-discovery",
+        "requiresLocalClone": false,
+        "dataEndpoint": "https://kghub.org/kg-registry/registry/parquet/"
+      }
+    },
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:find-similar-resources",
+      "displayName": "Find resources similar to a given one",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/find-similar-resources/SKILL.md",
+      "description": "Find alternatives and near-duplicates of a resource by blending structured signals (shared domains, taxa, category, scale, shared upstream sources) with heuristics (description similarity and overlapping publication authors).",
+      "tags": ["knowledge-graph", "registry", "similarity", "recommendation", "bioinformatics"],
+      "capabilities": ["compare-domains", "compare-sources", "compare-descriptions", "compare-authors", "detect-near-duplicates"],
+      "representativeQueries": [
+        "what's similar to kg-microbe",
+        "find alternatives to this knowledge graph",
+        "are there near-duplicates of this resource in the registry"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-discovery",
+        "requiresLocalClone": false,
+        "dataEndpoint": "https://kghub.org/kg-registry/registry/parquet/"
+      }
+    },
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:kg-registry-curation",
+      "displayName": "Curate a specific KG-Registry resource",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/kg-registry-curation/SKILL.md",
+      "description": "Expand a stub or improve an existing resource page, then validate it. Operates on source files in a local clone of the repository.",
+      "tags": ["knowledge-graph", "registry", "curation", "metadata"],
+      "capabilities": ["edit-resource-page", "fill-provenance", "validate-file"],
+      "representativeQueries": [
+        "curate this resource",
+        "expand this stub resource page"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-curation",
+        "requiresLocalClone": true
+      }
+    },
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:curate-next",
+      "displayName": "Curate the next batch of stub resources",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/curate-next/SKILL.md",
+      "description": "Select the next N uncatalogued stub resources and dispatch per-resource curation. Operates on a local clone of the repository.",
+      "tags": ["knowledge-graph", "registry", "curation", "batch"],
+      "capabilities": ["select-stubs", "dispatch-curation", "skip-blocked"],
+      "representativeQueries": [
+        "curate the next 3 stub resources",
+        "work through a batch of KG-Registry stubs"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-curation",
+        "requiresLocalClone": true
+      }
+    },
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:kg-registry-validation",
+      "displayName": "Validate a curated resource page",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/kg-registry-validation/SKILL.md",
+      "description": "Check a curated resource page for schema validity and curation-specific quality issues such as malformed provenance, missing products, or leftover stub content. Operates on a local clone.",
+      "tags": ["knowledge-graph", "registry", "validation", "quality"],
+      "capabilities": ["validate-schema", "check-provenance", "check-stub-cleanup"],
+      "representativeQueries": [
+        "validate this curated resource page",
+        "check the provenance on this page"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-curation",
+        "requiresLocalClone": true
+      }
+    },
+    {
+      "identifier": "urn:ai:kghub.org:kg-registry:kg-registry-product-url-update",
+      "displayName": "Update a stale product URL",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.agents/skills/kg-registry-product-url-update/SKILL.md",
+      "description": "Replace a stale product_url with the best current live URL for the same product. Operates on a local clone of the repository.",
+      "tags": ["knowledge-graph", "registry", "curation", "maintenance", "urls"],
+      "capabilities": ["find-live-url", "update-product-url"],
+      "representativeQueries": [
+        "update this stale product URL",
+        "fix the broken download link for this product"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T00:00:00Z",
+      "metadata": {
+        "format": "claude-agent-skill",
+        "marketplace": "https://raw.githubusercontent.com/Knowledge-Graph-Hub/kg-registry/main/.claude-plugin/marketplace.json",
+        "plugin": "kg-registry-curation",
+        "requiresLocalClone": true
+      }
+    }
+  ]
+}
