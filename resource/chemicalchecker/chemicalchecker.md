@@ -67,6 +67,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:

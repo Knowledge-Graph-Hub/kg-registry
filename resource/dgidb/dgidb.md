@@ -154,6 +154,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -566,6 +567,7 @@ products:
   compression: targz
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
+  format: mixed
   id: drkg.graph
   name: DRKG graph
   original_source:

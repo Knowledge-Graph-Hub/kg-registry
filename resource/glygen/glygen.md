@@ -346,6 +346,7 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
+  format: txt
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:

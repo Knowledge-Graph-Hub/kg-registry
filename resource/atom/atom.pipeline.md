@@ -3,6 +3,7 @@ category: ProcessProduct
 description: Natural language processing pipeline for constructing anti-tumor biomaterial
   knowledge graphs from unstructured biomedicine literature, implementing entity recognition,
   sentence simplification, triple extraction, and predicate mapping processes.
+format: mixed
 id: atom.pipeline
 name: ATOM Construction Pipeline
 original_source:

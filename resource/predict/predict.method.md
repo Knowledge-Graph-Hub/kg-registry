@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: PREDICT computational method for large-scale prediction of drug indications
   using drug-drug and disease-disease similarity measures and known drug-disease associations.
+format: http
 id: predict.method
 name: PREDICT Drug-Indication Inference Method
 original_source:

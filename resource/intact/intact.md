@@ -158,6 +158,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -2122,6 +2123,7 @@ products:
   compression: targz
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
+  format: mixed
   id: drkg.graph
   name: DRKG graph
   original_source:
@@ -2256,6 +2258,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -2410,11 +2413,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-18: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-22: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -2560,9 +2563,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
@@ -2588,9 +2591,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
@@ -2616,9 +2619,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
@@ -2639,9 +2642,9 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
@@ -2662,9 +2665,9 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
@@ -2889,6 +2892,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:

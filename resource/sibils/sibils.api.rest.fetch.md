@@ -5,8 +5,8 @@ id: sibils.api.rest.fetch
 is_public: true
 name: SIBiLS Fetch API
 original_source:
-  - source: sibils
-    relation_type: prov:hadPrimarySource
-product_url: https://sibils.org/API#Fetch-API
+- relation_type: prov:hadPrimarySource
+  source: sibils
+product_url: https://sibils.org/api#Fetch-API
 layout: product_detail
 ---

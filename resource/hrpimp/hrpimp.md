@@ -36,6 +36,8 @@ products:
     source: hrpimp
   - relation_type: prov:hadPrimarySource
     source: huri
+  product_file_size: 1681536
+  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: gencode
@@ -43,8 +45,6 @@ products:
     source: ensembl
   - relation_type: prov:wasInformedBy
     source: hgnc
-  product_file_size: 1681536
-  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
 - category: Product
   description: Current HuRI PSI-MI formatted interaction file with detailed experimental
     information and isoform-specific ORF, transcript, and protein identifiers
@@ -57,13 +57,13 @@ products:
     source: hrpimp
   - relation_type: prov:hadPrimarySource
     source: huri
+  product_file_size: 169848924
+  product_url: https://www.interactome-atlas.org/data/HuRI.psi
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: gencode
   - relation_type: prov:wasInformedBy
     source: ensembl
-  product_file_size: 169848924
-  product_url: https://www.interactome-atlas.org/data/HuRI.psi
 - category: GraphicalInterface
   description: Web interface for browsing and exploring the Human Reference Interactome
   format: http
@@ -129,6 +129,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -191,7 +192,7 @@ publications:
   - Campos-Laborie FJ
   - Charloteaux B
   - Choi D
-  - Coté AG
+  - "Cot\xE9 AG"
   - Daley M
   - Deimling S
   - Desbuleux A
@@ -200,7 +201,7 @@ publications:
   - Hardy MF
   - Kishore N
   - Knapp JJ
-  - Kovács IA
+  - "Kov\xE1cs IA"
   - Lemmens I
   - Mee MW
   - Mellor JC
@@ -246,7 +247,7 @@ publications:
   - Sheykhkarimli D
   - Sheynkman GM
   - Simonovsky E
-  - Taşan M
+  - "Ta\u015Fan M"
   - Tejeda A
   - Tropepe V
   - Twizere JC

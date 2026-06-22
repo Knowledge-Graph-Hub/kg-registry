@@ -98,6 +98,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -182,6 +183,7 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
+  format: python
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:

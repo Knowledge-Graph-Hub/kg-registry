@@ -63,6 +63,7 @@ products:
 - category: GraphProduct
   description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
     \ relationships (semantic themes)"
+  format: http
   id: gnbr.graph
   name: GNBR graph
   original_source:

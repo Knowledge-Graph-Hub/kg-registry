@@ -18,8 +18,8 @@ name: FORUM
 products:
 - category: GraphicalInterface
   description: FORUM web application interface for semantic metabolomics exploration
-  id: forum.webapp
   format: http
+  id: forum.webapp
   name: FORUM Web Application
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -35,8 +35,8 @@ products:
   product_url: https://forum-webapp.semantic-metabolomics.fr/
 - category: ProgrammingInterface
   description: FORUM REST API for programmatic access to chemical-disease associations
-  id: forum.api
   format: http
+  id: forum.api
   name: FORUM API
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -53,8 +53,8 @@ products:
 - category: DocumentationProduct
   description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
     the knowledge graph structure
-  id: forum.void
   format: ttl
+  id: forum.void
   name: FORUM VoID Metadata
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -72,8 +72,8 @@ products:
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
-  id: forum.graph.dump
   format: mixed
+  id: forum.graph.dump
   name: FORUM Knowledge Graph Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -102,9 +102,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
     out'
 publications:
 - authors:

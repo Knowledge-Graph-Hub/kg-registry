@@ -51,6 +51,7 @@ products:
     sample metadata, and environmental and taxonomic context. The repository documents
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
+  format: mixed
   id: metabokg.graph
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph
@@ -98,6 +99,7 @@ products:
 - category: DataModelProduct
   description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
     class hierarchies used by the generated knowledge graph.
+  format: ttl
   id: metabokg.schema
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0

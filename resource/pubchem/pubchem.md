@@ -163,6 +163,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -216,6 +217,7 @@ products:
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
   edge_count: 500958
+  format: mixed
   id: pharmkg.graph
   name: PharmKG graph
   node_count: 7603
@@ -380,6 +382,7 @@ products:
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
+  format: mixed
   id: forum.graph.dump
   name: FORUM Knowledge Graph Dump
   original_source:
@@ -409,9 +412,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -711,6 +714,7 @@ products:
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: GraphicalInterface
   description: FORUM web application interface for semantic metabolomics exploration
+  format: http
   id: forum.webapp
   name: FORUM Web Application
   original_source:
@@ -727,6 +731,7 @@ products:
   product_url: https://forum-webapp.semantic-metabolomics.fr/
 - category: ProgrammingInterface
   description: FORUM REST API for programmatic access to chemical-disease associations
+  format: http
   id: forum.api
   name: FORUM API
   original_source:
@@ -744,6 +749,7 @@ products:
 - category: DocumentationProduct
   description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
     the knowledge graph structure
+  format: ttl
   id: forum.void
   name: FORUM VoID Metadata
   original_source:
@@ -1494,9 +1500,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
@@ -1523,13 +1529,14 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
+  format: http
   id: foodb.web
   name: FooDB Web Interface
   original_source:
@@ -1648,6 +1655,7 @@ products:
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
+  format: mysql
   id: foodb.data.mysql
   name: FooDB MySQL Dump
   original_source:

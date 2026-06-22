@@ -59,6 +59,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
+  product_url: https://pharmacodb.ca/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: ccle
@@ -66,7 +67,6 @@ products:
     source: gdsc
   - relation_type: prov:wasInfluencedBy
     source: ctrp
-  product_url: https://pharmacodb.ca/
 - category: ProgrammingInterface
   description: RESTful JSON API providing programmatic access to cell lines, compounds,
     tissues, datasets, experiments, and intersections data
@@ -77,6 +77,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
+  product_url: http://api.pharmacodb.ca/v1/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: ccle
@@ -84,7 +85,6 @@ products:
     source: gdsc
   - relation_type: prov:wasInfluencedBy
     source: ctrp
-  product_url: http://api.pharmacodb.ca/v1/
 - category: DocumentationProduct
   description: Comprehensive user documentation covering search functionality, datasets,
     tissues, cell lines, experiments, genes, compounds, and biomarker discovery features
@@ -94,6 +94,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
+  product_url: https://pharmacodb.ca/documentation
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: ccle
@@ -101,10 +102,10 @@ products:
     source: gdsc
   - relation_type: prov:wasInfluencedBy
     source: ctrp
-  product_url: https://pharmacodb.ca/documentation
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -200,7 +201,8 @@ publications:
   doi: 10.1093/nar/gkx911
   id: https://doi.org/10.1093/nar/gkx911
   journal: Nucleic Acids Research
-  title: 'PharmacoDB: an integrative database for mining in vitro anticancer drug screening studies'
+  title: 'PharmacoDB: an integrative database for mining in vitro anticancer drug
+    screening studies'
   year: '2018'
 - authors:
   - Petr Smirnov

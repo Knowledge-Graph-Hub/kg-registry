@@ -506,6 +506,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -611,6 +612,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -1706,6 +1708,7 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
+  format: txt
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:
@@ -2365,6 +2368,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -2520,6 +2524,7 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
+  format: http
   id: foodb.web
   name: FooDB Web Interface
   original_source:
@@ -2638,6 +2643,7 @@ products:
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
+  format: mysql
   id: foodb.data.mysql
   name: FooDB MySQL Dump
   original_source:

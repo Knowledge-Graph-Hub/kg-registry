@@ -1,6 +1,7 @@
 ---
 category: GraphicalInterface
 description: FORUM web application interface for semantic metabolomics exploration
+format: http
 id: forum.webapp
 name: FORUM Web Application
 original_source:

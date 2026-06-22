@@ -181,6 +181,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -436,6 +437,7 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
+  format: txt
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:
@@ -751,7 +753,7 @@ products:
     source: wikipathways
 publications:
 - authors:
-  - Katy Börner
+  - "Katy B\xF6rner"
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1

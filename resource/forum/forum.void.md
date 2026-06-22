@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing the
   knowledge graph structure
+format: ttl
 id: forum.void
 name: FORUM VoID Metadata
 original_source:

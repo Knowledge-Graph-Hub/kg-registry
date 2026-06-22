@@ -99,9 +99,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -121,8 +121,8 @@ products:
   product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
 - category: MappingProduct
   description: Mapping between chembl_35 target chembl_ids and UniProt accessions
-  id: chembl.map_to_uniprot
   format: txt
+  id: chembl.map_to_uniprot
   is_public: true
   name: ChEMBL map to UniProt
   original_source:
@@ -230,8 +230,8 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
-  id: ubkg.neo4j
   format: neo4j
+  id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -570,8 +570,8 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  id: rtx-kg2.neo4j
   format: http
+  id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -628,8 +628,8 @@ products:
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
-  id: disgenet.data
   format: http
+  id: disgenet.data
   name: DisGeNET Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -675,8 +675,8 @@ products:
     source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 1182285769
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
+  product_file_size: 786235145
+  product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -3239,15 +3239,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -3298,15 +3289,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: Product
   description: Bulk download of DisProt data in multiple formats including JSON, TSV,
     FASTA, and GAF
@@ -3539,9 +3521,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -3675,16 +3657,16 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 500 error
     when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
     entries, proteomics evidence, variants, expression, interactions, localization,
     and functional annotations.
-  id: nextprot.portal
   format: http
+  id: nextprot.portal
   name: neXtProt Web Platform
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3863,8 +3845,8 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
-  id: pathwaycommons.gmt
   format: tsv
+  id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource

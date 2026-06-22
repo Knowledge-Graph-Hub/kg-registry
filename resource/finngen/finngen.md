@@ -57,6 +57,7 @@ products:
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
+  format: http
   id: disgenet.data
   name: DisGeNET Data
   original_source:
@@ -101,7 +102,7 @@ products:
 publications:
 - authors:
   - Sean J. Jurgens
-  - Joel T. Rämö
+  - "Joel T. R\xE4m\xF6"
   - Daria R. Kramarenko
   - Leonoor F. J. M. Wijdeveld
   - Jan Haas
@@ -114,9 +115,9 @@ publications:
   - Albert Henry
   - Jennifer E. Huffman
   - Saketh Challa
-  - Frank Rühle
+  - "Frank R\xFChle"
   - Carmen Diaz Verdugo
-  - Christian Krijger Juárez
+  - "Christian Krijger Ju\xE1rez"
   - Shinwan Kany
   - Constance A. van Orsouw
   - Kiran Biddinger
@@ -128,9 +129,9 @@ publications:
   - Satoshi Koyama
   - Leander Beekman
   - Dominic S. Zimmerman
-  - Jean-François Deleuze
+  - "Jean-Fran\xE7ois Deleuze"
   - Eric Villard
-  - David-Alexandre Trégouët
+  - "David-Alexandre Tr\xE9gou\xEBt"
   - Richard Isnard
   - Dorret I. Boomsma
   - Eco J. C. de Geus
@@ -161,7 +162,8 @@ publications:
   doi: 10.1038/s41588-024-01975-5
   id: doi:10.1038/s41588-024-01975-5
   journal: Nature Genetics
-  title: Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy and myocardial resilience
+  title: Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy
+    and myocardial resilience
   year: '2024'
 - authors:
   - Vilma Lammi
@@ -169,8 +171,8 @@ publications:
   - Samuel E. Jones
   - Shea J. Andrews
   - Juha Karjalainen
-  - Beatriz Cortés
-  - Heath E. O’Brien
+  - "Beatriz Cort\xE9s"
+  - "Heath E. O\u2019Brien"
   - Ana Ochoa-Guzman
   - Brian E. Fulton-Howard
   - Martin Broberg
@@ -197,14 +199,14 @@ publications:
   - Celia B. Sequeros
   - Thomas W. Winkler
   - Daniel M. Jordan
-  - Raimonds Rešcenko
+  - "Raimonds Re\u0161cenko"
   - Lorenzo Miano
   - Jacqueline M. Lane
   - Ryan K. Chung
   - Beatriz Guillen-Guio
   - Olivia C. Leavy
   - Laura Carvajal-Silva
-  - Kevin Aguilar-Valdés
+  - "Kevin Aguilar-Vald\xE9s"
   - Erika Frangione
   - Lindsay Guare
   - Ekaterina Vergasova
@@ -237,7 +239,7 @@ publications:
   - Julia Heggemann
   - Sonja Schultz
   - Pari Behzad
-  - Markus M. Nöthen
+  - "Markus M. N\xF6then"
   - Abigail Miller
   - Max C. Pensel
   - Carlo Maj
@@ -247,7 +249,7 @@ publications:
   - Carlos A. Aguilar Salinas
   - Seung Hyuk T. Lee
   - Hortensia Moreno-Macias
-  - Päivi Pajukanta
+  - "P\xE4ivi Pajukanta"
   - Michelle Duran-Gomez
   - Lill Trogstad
   - Daniel J. Rader
@@ -282,53 +284,53 @@ publications:
   - Yolanda Espinosa-Parrilla
   - Juan M. Saez Hidalgo
   - Estefania Nova-Lamperti
-  - Scarlett Gutiérrez-Richards
+  - "Scarlett Guti\xE9rrez-Richards"
   - Gerardo Donoso
   - Leslie C. Cerpa
   - Cesar A. Echeverria
   - Camilo Cabrera
   - Pamela Bocchieri
   - Macarena Fuentes-Guajardo
-  - Christian A. Muñoz
-  - Karen Y. Oróstica
+  - "Christian A. Mu\xF1oz"
+  - "Karen Y. Or\xF3stica"
   - Alvaro Figueroa
   - Lissette G. Guajardo
   - Iskra A. Signore
-  - Virginia A. Monardes-Ramírez
+  - "Virginia A. Monardes-Ram\xEDrez"
   - Eduardo A. Tobar-Calfucoy
-  - Luis A. Quiñones
-  - Cristian E. Yáñez
+  - "Luis A. Qui\xF1ones"
+  - "Cristian E. Y\xE1\xF1ez"
   - Daniela Zapata-Contreras
-  - Paula Zuñiga-Pacheco
+  - "Paula Zu\xF1iga-Pacheco"
   - Romina Quiroga
-  - Matías F. Martínez
+  - "Mat\xEDas F. Mart\xEDnez"
   - Teresa A. Alarcon
   - Andrea X. Silva
   - Carolina S. Selman
   - Sergio Sanhueza
-  - Rocío Retamales-Ortega
-  - Tamara V. Arévalo
+  - "Roc\xEDo Retamales-Ortega"
+  - "Tamara V. Ar\xE9valo"
   - Eduardo Lamoza
-  - Héctor Valenzuela-Jorquera
+  - "H\xE9ctor Valenzuela-Jorquera"
   - Maria Sophia Donaire
   - Sannidhi Sarvadhavabhatla
   - Sisse R. Ostrowski
-  - Søren Brunak
+  - "S\xF8ren Brunak"
   - David Westergaard
   - Bjarke Feenstra
   - Anne Sofie B. Mortensen
   - Anna L. Guyatt
   - Rafael de Cid
-  - Susana Iraola-Guzmán
+  - "Susana Iraola-Guzm\xE1n"
   - Gemma Moncunill
   - Alba Blasco
   - Judith Garcia-Aymerich
   - Natalia Blay
-  - Carlota Dobaño
+  - "Carlota Doba\xF1o"
   - Anna Carreras
-  - Xavier Farré
+  - "Xavier Farr\xE9"
   - Manolis Kogevinas
-  - Gemma Castaño-Vinyals
+  - "Gemma Casta\xF1o-Vinyals"
   - Simone Furini
   - Chiara Fallerini
   - Kristina Zguro
@@ -375,7 +377,7 @@ publications:
   - Vita Rovite
   - Peculis Raitis
   - Monta Briviba
-  - Janis Klovinš
+  - "Janis Klovin\u0161"
   - Richa Saxena
   - Angus C. Burns
   - Jakob M. Cherry
@@ -431,7 +433,7 @@ publications:
   - Rafael de Cid
   - Ahmadreza Niavarani
   - Erik Abner
-  - Teresa Tusié-Luna
+  - "Teresa Tusi\xE9-Luna"
   - Shefali S. Verma
   - George Davey Smith
   - Nicholas J. Timpson
@@ -442,7 +444,7 @@ publications:
   - Eva C. Schulte
   - J. Brent Richards
   - Kerstin U. Ludwig
-  - Michael Marks-Hultström
+  - "Michael Marks-Hultstr\xF6m"
   - Hugo Zeberg
   - Hanna M. Ollila
   doi: 10.1038/s41588-025-02100-w

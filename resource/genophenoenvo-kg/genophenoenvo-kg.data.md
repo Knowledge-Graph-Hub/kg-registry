@@ -5,6 +5,7 @@ description: Merged knowledge graph data files containing over 400,000 nodes and
   homology-based annotations, and environmental exposures from Planteome, EMBL-EBI
   Expression Atlas, and other sources. Available as tab-separated value files in KGX
   format with nodes and edges following the Biolink model.
+format: kgx
 id: genophenoenvo-kg.data
 name: GenoPhenoEnvo KG Data
 original_source:

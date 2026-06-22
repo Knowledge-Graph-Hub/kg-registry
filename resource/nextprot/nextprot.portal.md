@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: neXtProt web platform for searching and browsing curated human protein
   entries, proteomics evidence, variants, expression, interactions, localization,
   and functional annotations.
+format: http
 id: nextprot.portal
 name: neXtProt Web Platform
 original_source:

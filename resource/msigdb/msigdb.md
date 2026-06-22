@@ -141,6 +141,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -471,6 +472,7 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
+  format: txt
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:
@@ -887,6 +889,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -1133,7 +1136,7 @@ publications:
   - Castanza AS
   - Recla JM
   - Eby D
-  - Thorvaldsdóttir H
+  - "Thorvaldsd\xF3ttir H"
   - Bult CJ
   - Mesirov JP
   category: Publication

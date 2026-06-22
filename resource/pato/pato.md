@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: George Gkoutos
-  orcid: 0000-0002-2061-091X
   contact_details:
   - contact_type: email
     value: g.gkoutos@gmail.com
   - contact_type: github
     value: gkoutos
+  label: George Gkoutos
+  orcid: 0000-0002-2061-091X
 creation_date: '2025-06-04T00:00:00Z'
 description: An ontology of phenotypic qualities (properties, attributes or characteristics)
 domains:
@@ -74,6 +74,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:

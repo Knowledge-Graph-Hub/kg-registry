@@ -1,6 +1,7 @@
 ---
 category: GraphProduct
 description: Hetionet v1.0 as a Neo4j database
+format: neo4j
 id: hetionet.data.neo4j
 name: Hetionet v1.0 Neo4j
 original_source:

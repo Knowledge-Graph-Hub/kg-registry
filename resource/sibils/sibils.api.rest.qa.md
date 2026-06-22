@@ -5,8 +5,8 @@ id: sibils.api.rest.qa
 is_public: true
 name: SIBiLS Question Answering API
 original_source:
-  - source: sibils
-    relation_type: prov:hadPrimarySource
-product_url: https://sibils.org/API#Question-Answering-API
+- relation_type: prov:hadPrimarySource
+  source: sibils
+product_url: https://sibils.org/api#Question-Answering-API
 layout: product_detail
 ---

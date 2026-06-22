@@ -128,8 +128,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -250,8 +249,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -299,6 +297,7 @@ products:
     sample metadata, and environmental and taxonomic context. The repository documents
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
+  format: mixed
   id: metabokg.graph
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph
@@ -346,6 +345,7 @@ products:
 - category: DataModelProduct
   description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
     class hierarchies used by the generated knowledge graph.
+  format: ttl
   id: metabokg.schema
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0
@@ -400,7 +400,8 @@ publications:
   doi: 10.1186/s13326-016-0097-6
   id: https://doi.org/10.1186/s13326-016-0097-6
   journal: Journal of Biomedical Semantics
-  title: 'The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation'
+  title: 'The environment ontology in 2016: bridging domains with increased scope,
+    semantic density, and interoperation'
   year: '2016'
 repository: https://github.com/EnvironmentOntology/envo
 ---

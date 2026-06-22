@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: dgv
 product_url: http://dgv.tcag.ca/dgv/app/downloads
-warnings:
-- File was not able to be retrieved when checked on 2026-06-17_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

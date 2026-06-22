@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
   contact_details:
   - contact_type: email
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
+  label: Pankaj Jaiswal
+  orcid: 0000-0002-1005-8383
 creation_date: '2025-06-25T00:00:00Z'
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domains:
@@ -241,6 +241,7 @@ products:
     pathways, homology-based annotations, and environmental exposures from Planteome,
     EMBL-EBI Expression Atlas, and other sources. Available as tab-separated value
     files in KGX format with nodes and edges following the Biolink model.
+  format: kgx
   id: genophenoenvo-kg.data
   name: GenoPhenoEnvo KG Data
   original_source:

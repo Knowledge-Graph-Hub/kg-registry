@@ -1,14 +1,15 @@
 ---
 category: Product
 compression: gzip
-description: Comprehensive gene information including symbols, names, locations, and other metadata
+description: Comprehensive gene information including symbols, names, locations, and
+  other metadata
 format: tsv
 id: ncbigene.gene_info
 name: Gene Information
 original_source:
-  - source: ncbigene
-    relation_type: prov:hadPrimarySource
-product_file_size: 1354219182
-product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_info.gz
+- relation_type: prov:hadPrimarySource
+  source: ncbigene
+product_file_size: 1537004325
+product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
 layout: product_detail
 ---

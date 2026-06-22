@@ -28,6 +28,7 @@ products:
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
   edge_count: 500958
+  format: mixed
   id: pharmkg.graph
   name: PharmKG graph
   node_count: 7603
@@ -64,6 +65,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:

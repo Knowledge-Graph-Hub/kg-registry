@@ -200,6 +200,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -253,6 +254,7 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
+  format: python
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -678,6 +680,7 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
+  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -933,6 +936,7 @@ products:
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15211571
   format: kgx-jsonl
@@ -1059,9 +1063,10 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
   format: kgx-jsonl
@@ -1188,8 +1193,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -1472,6 +1477,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:

@@ -9,7 +9,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: kg-predict
 product_file_size: 48397035
-product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
 secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: drugbank

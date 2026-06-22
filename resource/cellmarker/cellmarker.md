@@ -77,6 +77,7 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
+  format: python
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -329,7 +330,8 @@ publications:
   id: doi:10.1093/nar/gkac947
   journal: Nucleic Acids Research
   preferred: true
-  title: 'CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data'
+  title: 'CellMarker 2.0: an updated database of manually curated cell markers in
+    human/mouse and web tools based on scRNA-seq data'
   year: '2023'
 - authors:
   - Zhang X

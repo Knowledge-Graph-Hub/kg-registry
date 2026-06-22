@@ -93,6 +93,7 @@ products:
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
+  format: http
   id: disgenet.data
   name: DisGeNET Data
   original_source:
@@ -167,14 +168,15 @@ publications:
   doi: 10.1093/genetics/iyae031
   id: https://doi.org/10.1093/genetics/iyae031
   journal: GENETICS
-  title: 'Mouse Genome Informatics: an integrated knowledgebase system for the laboratory mouse'
+  title: 'Mouse Genome Informatics: an integrated knowledgebase system for the laboratory
+    mouse'
   year: '2024'
 - authors:
   - Judith A Blake
   - Richard Baldarelli
   - James A Kadin
   - Joel E Richardson
-  - Cynthia L Smith
+  - "Cynthia\_L Smith"
   - Carol J Bult
   - Anna V Anagnostopoulos
   - Jon S Beal
@@ -206,7 +208,7 @@ publications:
   - Dmitry Sitnikov
   - Monika Tomczuk
   - Lauren Wilming
-  - Yunxia ‘Sophia’ Zhu
+  - "Yunxia \u2018Sophia\u2019 Zhu"
   doi: 10.1093/nar/gkaa1083
   id: https://doi.org/10.1093/nar/gkaa1083
   journal: Nucleic Acids Research

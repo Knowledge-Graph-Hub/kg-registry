@@ -54,11 +54,11 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  product_file_size: 29233
+  product_url: https://raw.githubusercontent.com/glycoinfo/GlycoCoO/master/ontology/glycocoo.owl
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: glycordf
-  product_file_size: 29233
-  product_url: https://raw.githubusercontent.com/glycoinfo/GlycoCoO/master/ontology/glycocoo.owl
 - category: GraphicalInterface
   description: NCBO BioPortal entry for browsing and exploring the GlycoCoO ontology
   format: http
@@ -67,10 +67,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  product_url: https://bioportal.bioontology.org/ontologies/GLYCOCOO
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
-  product_url: https://bioportal.bioontology.org/ontologies/GLYCOCOO
 - category: DocumentationProduct
   description: GitHub Wiki with developer information, database providers, and prefix
     documentation
@@ -80,10 +80,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  product_url: https://github.com/glycoinfo/GlycoCoO/wiki
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: glycordf
-  product_url: https://github.com/glycoinfo/GlycoCoO/wiki
 - category: Product
   description: Sample RDF data files demonstrating GlycoCoO usage with examples from
     UniCarbKB, GlyConnect, and GlycoNAVI
@@ -93,6 +93,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: glycordf
@@ -102,7 +103,6 @@ products:
     source: glyconnect
   - relation_type: prov:wasInformedBy
     source: glyconavi
-  product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
 - category: Product
   description: Example SPARQL queries for querying glycoconjugate data across federated
     endpoints
@@ -112,16 +112,17 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  product_file_size: 2467
+  product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/SPARQL_Query.md
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: glycordf
-  product_file_size: 2467
-  product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/SPARQL_Query.md
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:

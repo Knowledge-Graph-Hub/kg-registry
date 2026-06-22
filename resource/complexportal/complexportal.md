@@ -513,6 +513,7 @@ products:
     source: complexportal
   product_url: https://www.ebi.ac.uk/complexportal/documentation
 - description: The MechRepoNet knowledge graph in its original format
+  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:

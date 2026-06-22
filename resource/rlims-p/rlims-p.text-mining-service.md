@@ -3,6 +3,7 @@ category: ProcessProduct
 description: Rule-based text-mining service for extracting protein phosphorylation
   events, including kinase, substrate, phosphorylation site, and textual evidence,
   from PubMed abstracts and selected literature corpora.
+format: http
 id: rlims-p.text-mining-service
 name: RLIMS-P Text-Mining Service
 original_source:

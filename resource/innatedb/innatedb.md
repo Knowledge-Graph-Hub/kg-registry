@@ -236,6 +236,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -636,7 +637,8 @@ publications:
   doi: 10.1093/nar/gks1147
   id: https://doi.org/10.1093/nar/gks1147
   journal: Nucleic Acids Research
-  title: 'InnateDB: systems biology of innate immunity and beyond - recent updates and continuing curation'
+  title: 'InnateDB: systems biology of innate immunity and beyond - recent updates
+    and continuing curation'
   year: '2013'
 synonyms:
 - InnateDB

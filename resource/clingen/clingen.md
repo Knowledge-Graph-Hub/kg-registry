@@ -111,6 +111,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -338,6 +339,7 @@ products:
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
+  format: http
   id: disgenet.data
   name: DisGeNET Data
   original_source:
@@ -761,6 +763,7 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
+  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -1016,6 +1019,7 @@ products:
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15211571
   format: kgx-jsonl
@@ -1142,9 +1146,10 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
   format: kgx-jsonl
@@ -1271,8 +1276,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -1616,7 +1621,7 @@ publications:
   id: https://doi.org/10.1056/NEJMsr1406261
   journal: New England Journal of Medicine
   preferred: true
-  title: ClinGen — The Clinical Genome Resource
+  title: "ClinGen \u2014 The Clinical Genome Resource"
   year: '2015'
 - authors:
   - Erica F. Andersen
@@ -1624,7 +1629,8 @@ publications:
   doi: 10.1016/j.gim.2024.101228
   id: https://doi.org/10.1016/j.gim.2024.101228
   journal: Genetics in Medicine
-  title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through global curation'
+  title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through
+    global curation'
   year: '2025'
 taxon:
 - NCBITaxon:9606

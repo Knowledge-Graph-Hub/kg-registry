@@ -85,6 +85,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -351,8 +352,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -473,8 +473,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -746,6 +745,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -2536,7 +2536,7 @@ publications:
   - Eric Hurwitz
   - Julius O B Jacobsen
   - Atsuo Kikuchi
-  - Sebastian Köhler
+  - "Sebastian K\xF6hler"
   - Daniel R Korn
   - David Lagorce
   - Bryan J Laraway
@@ -2556,7 +2556,7 @@ publications:
   - David Osumi-Sutherland
   - Kelley Paris
   - Helen E Parkinson
-  - Zoë M Pendlington
+  - "Zo\xEB M Pendlington"
   - Xiao P Peng
   - Amy Pizzino
   - Sharon E Plon

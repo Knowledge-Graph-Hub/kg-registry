@@ -27,6 +27,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -206,7 +207,7 @@ publications:
   - Fabio M R. Amaral
   - Gregory L. Szeto
   - Oliver Fuchs
-  - Sophia M. Schüssler-Fiorenza Rose
+  - "Sophia M. Sch\xFCssler-Fiorenza Rose"
   - Shvetank Sharma
   - Uwe Schwartz
   - Xabier Bengoetxea Bausela
@@ -223,7 +224,7 @@ publications:
   - Carl T. Fulp
   - John A. Galindo
   - Ruta Motiejunaite
-  - Christoph Jüschke
+  - "Christoph J\xFCschke"
   - Philip C. Dishuck
   - Katharina Lahl
   - Mohieddin Jafari
@@ -234,12 +235,13 @@ publications:
   - Pablo Gamallo
   - Fernando de Andres Segura
   - Tyler Dae Devlin
-  - Vicente Pérez-García
-  - Avi Ma’ayan
+  - "Vicente P\xE9rez-Garc\xEDa"
+  - "Avi Ma\u2019ayan"
   doi: 10.1038/ncomms12846
   id: doi:10.1038/ncomms12846
   journal: Nature Communications
-  title: Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd
+  title: Extraction and analysis of signatures from the Gene Expression Omnibus by
+    the crowd
   year: '2016'
 ---
 # CREEDS: Crowd Extracted Expression of Differential Signatures

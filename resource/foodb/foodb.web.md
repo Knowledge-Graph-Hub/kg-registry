@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Web interface that allows searching, browsing, and exploring food compounds
   and their properties.
+format: http
 id: foodb.web
 name: FooDB Web Interface
 original_source:

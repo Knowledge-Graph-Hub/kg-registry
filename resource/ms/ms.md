@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Joshua Klein
-  orcid: 0000-0003-1279-6838
   contact_details:
   - contact_type: email
     value: joshua.adam.klein@gmail.com
   - contact_type: github
     value: mobiusklein
+  label: Joshua Klein
+  orcid: 0000-0003-1279-6838
 creation_date: '2025-08-12T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of experiments
   concerned with proteomics mass spectrometry.
@@ -302,6 +302,7 @@ products:
     sample metadata, and environmental and taxonomic context. The repository documents
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
+  format: mixed
   id: metabokg.graph
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph
@@ -349,6 +350,7 @@ products:
 - category: DataModelProduct
   description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
     class hierarchies used by the generated knowledge graph.
+  format: ttl
   id: metabokg.schema
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0
@@ -394,7 +396,7 @@ publications:
   - Levander F
   - Shofstahl J
   - Orchard S
-  - Vizcaíno JA
+  - "Vizca\xEDno JA"
   - Hermjakob H
   - Stephan C
   - Meyer HE

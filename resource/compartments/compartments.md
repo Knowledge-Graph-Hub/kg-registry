@@ -21,6 +21,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -121,9 +122,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphProduct
   compression: gzip

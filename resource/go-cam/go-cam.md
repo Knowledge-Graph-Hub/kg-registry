@@ -66,9 +66,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: DataModelProduct
   description: LinkML YAML schema for representing Gene Ontology Causal Activity Models
@@ -224,7 +224,8 @@ publications:
   id: doi:10.1038/s41588-019-0500-1
   journal: Nature Genetics
   preferred: true
-  title: Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations to structured descriptions of biological functions and systems
+  title: Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations
+    to structured descriptions of biological functions and systems
   year: '2019'
 repository: https://github.com/geneontology/noctua
 ---

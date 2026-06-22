@@ -91,6 +91,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -176,6 +177,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -631,6 +633,7 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
+  format: txt
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:
@@ -759,7 +762,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/download/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -776,15 +779,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -818,7 +812,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -835,15 +829,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: GraphProduct
   description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
     between 61,146 entities from multiple genotypic and phenotypic databases
@@ -854,7 +839,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank

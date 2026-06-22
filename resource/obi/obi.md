@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Bjoern Peters
-  orcid: 0000-0002-8457-6693
   contact_details:
   - contact_type: email
     value: bpeters@lji.org
   - contact_type: github
     value: bpeters42
+  label: Bjoern Peters
+  orcid: 0000-0002-8457-6693
 creation_date: '2025-06-04T00:00:00Z'
 description: An integrated ontology for the description of life-science and clinical
   investigations
@@ -74,6 +74,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:

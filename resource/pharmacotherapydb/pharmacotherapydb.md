@@ -150,6 +150,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:

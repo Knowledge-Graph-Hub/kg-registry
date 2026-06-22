@@ -39,12 +39,12 @@ products:
     source: inoh
   product_url: http://www.inoh.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-18: Error connecting
     to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
     with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
     port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
     name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-22: Error connecting
     to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
     with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
     port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
@@ -241,6 +241,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:

@@ -47,7 +47,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
@@ -57,7 +57,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 412 error
     when accessing file'
 - category: Product
   description: Dataset of microRNA target sites with detailed binding site information
@@ -82,7 +82,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
@@ -92,7 +92,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 412 error
     when accessing file'
 - category: Product
   description: Species-specific microRNA-target interaction datasets in CSV format
@@ -117,7 +117,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
@@ -127,7 +127,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 412 error
     when accessing file'
 - category: Product
   description: Curated datasets filtered for strong experimental evidence including
@@ -152,7 +152,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
@@ -162,7 +162,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 412 error
     when accessing file'
 - category: Product
   description: Archive of previous miRTarBase releases for reproducibility and historical
@@ -187,7 +187,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
@@ -197,9 +197,10 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 412 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 412 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
+  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
@@ -632,6 +633,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:

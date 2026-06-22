@@ -341,6 +341,7 @@ products:
     source: kg-monarch
   product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
 - description: The MechRepoNet knowledge graph in its original format
+  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
@@ -517,7 +518,8 @@ publications:
   id: doi:10.1111/cts.13302
   journal: Clinical and Translational Science
   preferred: true
-  title: '''Biolink Model: A universal schema for knowledge graphs in clinical, biomedical, and translational science'''
+  title: '''Biolink Model: A universal schema for knowledge graphs in clinical, biomedical,
+    and translational science'''
   year: '2022'
 repository: https://github.com/biolink/biolink-model/
 ---

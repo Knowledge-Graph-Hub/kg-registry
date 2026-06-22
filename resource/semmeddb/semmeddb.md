@@ -155,6 +155,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false

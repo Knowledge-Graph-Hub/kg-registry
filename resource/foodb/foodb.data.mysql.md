@@ -2,6 +2,7 @@
 category: Product
 compression: targz
 description: Complete FooDB database as MySQL dump
+format: mysql
 id: foodb.data.mysql
 name: FooDB MySQL Dump
 original_source:

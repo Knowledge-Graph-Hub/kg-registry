@@ -514,6 +514,7 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
+  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -769,6 +770,7 @@ products:
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15211571
   format: kgx-jsonl
@@ -895,9 +897,10 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
   format: kgx-jsonl
@@ -1024,8 +1027,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -3011,11 +3014,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-18: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-22: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -3329,6 +3332,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:

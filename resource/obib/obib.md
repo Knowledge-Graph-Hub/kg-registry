@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Justin Whorton
-  orcid: 0009-0003-4268-6207
   contact_details:
   - contact_type: email
     value: jmwhorton@uams.edu
   - contact_type: github
     value: jmwhorton
+  label: Justin Whorton
+  orcid: 0009-0003-4268-6207
 creation_date: '2025-06-04T00:00:00Z'
 description: An ontology built for annotation and modeling of biobank repository and
   biobanking administration
@@ -43,6 +43,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:

@@ -121,6 +121,7 @@ products:
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
+  format: http
   id: aop-db.data
   name: AOP-DB Data
   original_source:
@@ -199,6 +200,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -344,6 +346,7 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
+  format: python
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -629,6 +632,7 @@ products:
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
+  format: http
   id: disgenet.data
   name: DisGeNET Data
   original_source:
@@ -1383,9 +1387,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: zip

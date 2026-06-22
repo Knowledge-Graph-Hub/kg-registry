@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: FORUM REST API for programmatic access to chemical-disease associations
+format: http
 id: forum.api
 name: FORUM API
 original_source:

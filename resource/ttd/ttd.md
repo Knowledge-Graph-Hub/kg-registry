@@ -308,6 +308,7 @@ products:
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
   edge_count: 500958
+  format: mixed
   id: pharmkg.graph
   name: PharmKG graph
   node_count: 7603

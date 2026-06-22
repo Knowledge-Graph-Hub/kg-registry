@@ -153,9 +153,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -178,6 +178,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -1161,6 +1162,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:

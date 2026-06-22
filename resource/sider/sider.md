@@ -262,6 +262,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -314,6 +315,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -398,6 +400,7 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
+  format: python
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -436,6 +439,7 @@ products:
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
   edge_count: 500958
+  format: mixed
   id: pharmkg.graph
   name: PharmKG graph
   node_count: 7603
@@ -636,6 +640,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -1230,6 +1235,7 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
+  format: neo4j
   id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:

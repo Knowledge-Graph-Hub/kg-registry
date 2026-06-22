@@ -57,6 +57,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -272,6 +273,7 @@ products:
 - category: GraphicalInterface
   description: Interactive web interface for exploring drug-disease networks with
     probabilistic filtering and graph visualization
+  format: http
   id: redrugs.web
   name: ReDrugs Web Interface
   original_source:
@@ -289,6 +291,7 @@ products:
 - category: ProgrammingInterface
   description: SADI web services API for querying the knowledge graph including resource
     search, interaction lookup, and network expansion
+  format: http
   id: redrugs.api
   name: ReDrugs API
   original_source:

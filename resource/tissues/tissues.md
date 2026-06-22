@@ -57,15 +57,16 @@ products:
     source: tissues
   product_url: https://tissues.jensenlab.org/Downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 503 error
+    when accessing file'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -200,6 +201,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -418,6 +420,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:

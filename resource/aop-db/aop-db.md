@@ -60,8 +60,8 @@ products:
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
-  id: aop-db.data
   format: http
+  id: aop-db.data
   name: AOP-DB Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -133,10 +133,10 @@ products:
     with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fca293233d0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
@@ -191,8 +191,8 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
-  id: alzkb.data
   format: mixed
+  id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
   - relation_type: prov:hadPrimarySource

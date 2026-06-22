@@ -125,6 +125,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -434,6 +435,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -474,6 +476,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uberon
 - description: The MechRepoNet knowledge graph in its original format
+  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:

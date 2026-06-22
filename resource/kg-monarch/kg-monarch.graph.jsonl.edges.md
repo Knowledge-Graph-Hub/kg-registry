@@ -1,5 +1,6 @@
 ---
 category: GraphProduct
+compression: targz
 description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
 edge_count: 15211571
 format: kgx-jsonl
@@ -126,7 +127,7 @@ predicates:
 - biolink:temporally_related_to
 - biolink:treats
 - biolink:treats_or_applied_or_studied_to_treat
-product_file_size: 15279494795
-product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+product_file_size: 487854288
+product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 layout: product_detail
 ---

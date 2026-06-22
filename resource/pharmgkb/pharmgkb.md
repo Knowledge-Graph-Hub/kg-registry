@@ -543,6 +543,7 @@ products:
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
   edge_count: 500958
+  format: mixed
   id: pharmkg.graph
   name: PharmKG graph
   node_count: 7603
@@ -596,6 +597,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:

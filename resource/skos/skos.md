@@ -311,6 +311,7 @@ products:
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
+  format: mixed
   id: forum.graph.dump
   name: FORUM Knowledge Graph Dump
   original_source:
@@ -340,9 +341,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
     out'
 - category: OntologyProduct
   description: OpenBioDiv-O, the OpenBiodiv Ontology

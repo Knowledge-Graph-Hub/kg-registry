@@ -49,9 +49,9 @@ products:
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
@@ -79,6 +79,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -552,7 +553,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank

@@ -257,8 +257,8 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  id: rtx-kg2.neo4j
   format: http
+  id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -366,8 +366,8 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
-  id: alzkb.data
   format: mixed
+  id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -419,8 +419,8 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  id: bioteque.embeddings
   format: mixed
+  id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -504,8 +504,8 @@ products:
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
   edge_count: 500958
-  id: pharmkg.graph
   format: mixed
+  id: pharmkg.graph
   name: PharmKG graph
   node_count: 7603
   original_source:
@@ -814,8 +814,8 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
-  id: ibkh.graph
   format: mixed
+  id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1238,8 +1238,8 @@ products:
   compression: targz
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
-  id: drkg.graph
   format: mixed
+  id: drkg.graph
   name: DRKG graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1327,8 +1327,8 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
-  id: hetionet.data.neo4j
   format: neo4j
+  id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1540,8 +1540,8 @@ products:
 - category: GraphicalInterface
   description: Interactive web interface for exploring drug-disease networks with
     probabilistic filtering and graph visualization
-  id: redrugs.web
   format: http
+  id: redrugs.web
   name: ReDrugs Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1558,8 +1558,8 @@ products:
 - category: ProgrammingInterface
   description: SADI web services API for querying the knowledge graph including resource
     search, interaction lookup, and network expansion
-  id: redrugs.api
   format: http
+  id: redrugs.api
   name: ReDrugs API
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2717,8 +2717,8 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
-  id: pathwaycommons.gmt
   format: tsv
+  id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2843,8 +2843,8 @@ products:
   description: PREDICT computational method for large-scale prediction of drug indications
     using drug-drug and disease-disease similarity measures and known drug-disease
     associations.
-  id: predict.method
   format: http
+  id: predict.method
   name: PREDICT Drug-Indication Inference Method
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2877,11 +2877,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts

@@ -32,12 +32,12 @@ products:
     source: tahe
   product_url: http://purl.obolibrary.org/obo/tahe.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Terminology of Anatomy of Human Embryology in OBO format
   format: obo
@@ -48,12 +48,12 @@ products:
     source: tahe
   product_url: http://purl.obolibrary.org/obo/tahe.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
+    to URL'
 publications: []
 taxon:
 - NCBITaxon:9606

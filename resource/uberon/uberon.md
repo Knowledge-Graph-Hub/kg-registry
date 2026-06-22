@@ -94,6 +94,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -372,6 +373,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -802,6 +804,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -842,6 +845,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uberon
 - description: The MechRepoNet knowledge graph in its original format
+  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
@@ -1125,6 +1129,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -1613,6 +1618,7 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
+  format: neo4j
   id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
@@ -2449,6 +2455,7 @@ products:
     sample metadata, and environmental and taxonomic context. The repository documents
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
+  format: mixed
   id: metabokg.graph
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph
@@ -2496,6 +2503,7 @@ products:
 - category: DataModelProduct
   description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
     class hierarchies used by the generated knowledge graph.
+  format: ttl
   id: metabokg.schema
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0

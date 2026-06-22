@@ -55,6 +55,7 @@ products:
     sample metadata, and environmental and taxonomic context. The repository documents
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
+  format: mixed
   id: metabokg.graph
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph

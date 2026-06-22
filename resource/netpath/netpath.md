@@ -40,9 +40,9 @@ products:
     source: netpath
   product_url: http://www.netpath.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 503 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -236,6 +236,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:

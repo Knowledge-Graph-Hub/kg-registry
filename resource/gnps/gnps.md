@@ -54,11 +54,11 @@ products:
     source: gnps
   product_url: https://gnps-external.ucsd.edu/gnpslibrary
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 502 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
     to URL'
 - category: GraphProduct
   description: RDF knowledge graph materialized by the MetaBoKG workflow from public
@@ -66,6 +66,7 @@ products:
     sample metadata, and environmental and taxonomic context. The repository documents
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
+  format: mixed
   id: metabokg.graph
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph

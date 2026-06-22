@@ -132,11 +132,11 @@ products:
     source: tarbase
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,

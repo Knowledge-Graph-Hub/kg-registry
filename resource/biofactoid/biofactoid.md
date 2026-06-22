@@ -249,6 +249,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -381,7 +382,7 @@ publications:
   - Augustin Luna
   - John Giorgi
   - Igor Rodchenkov
-  - Özgün Babur
+  - "\xD6zg\xFCn Babur"
   - John A Bachman
   - Benjamin M Gyori
   - Emek Demir
@@ -390,7 +391,8 @@ publications:
   doi: 10.7554/eLife.68292
   id: https://doi.org/10.7554/eLife.68292
   journal: eLife
-  title: 'Science Forum: Author-sourced capture of pathway knowledge in computable form using Biofactoid'
+  title: 'Science Forum: Author-sourced capture of pathway knowledge in computable
+    form using Biofactoid'
   year: '2021'
 repository: https://github.com/PathwayCommons/factoid
 synonyms:

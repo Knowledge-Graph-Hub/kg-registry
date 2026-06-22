@@ -193,6 +193,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -259,8 +260,8 @@ products:
     source: ensembl
   - relation_type: prov:hadPrimarySource
     source: ncbigene
-  product_file_size: 282824267
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
+  product_file_size: 288831355
+  product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2ensembl.gz
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.
@@ -527,6 +528,7 @@ products:
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
+  format: http
   id: aop-db.data
   name: AOP-DB Data
   original_source:

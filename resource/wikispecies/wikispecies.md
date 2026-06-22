@@ -54,6 +54,7 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
+  format: http
   id: foodb.web
   name: FooDB Web Interface
   original_source:
@@ -172,6 +173,7 @@ products:
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
+  format: mysql
   id: foodb.data.mysql
   name: FooDB MySQL Dump
   original_source:

@@ -511,6 +511,7 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
+  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -766,6 +767,7 @@ products:
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15211571
   format: kgx-jsonl
@@ -892,9 +894,10 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
   format: kgx-jsonl
@@ -1021,8 +1024,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571

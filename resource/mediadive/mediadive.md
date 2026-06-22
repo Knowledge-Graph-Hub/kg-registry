@@ -120,8 +120,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -242,8 +241,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations

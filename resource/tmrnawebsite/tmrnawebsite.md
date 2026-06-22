@@ -3,15 +3,15 @@ activity_status: inactive
 category: DataSource
 contacts:
 - category: Individual
-  label: Kelly P. Williams
   contact_details:
   - contact_type: email
     value: kpwilli@sandia.gov
+  label: Kelly P. Williams
 - category: Organization
-  label: Sandia National Laboratories
   contact_details:
   - contact_type: url
     value: https://www.sandia.gov/
+  label: Sandia National Laboratories
 creation_date: '2025-09-09T00:00:00Z'
 description: The tmRNA Website is a comprehensive database of transfer-messenger RNA
   (tmRNA) and SmpB protein sequences involved in bacterial trans-translation. Contains
@@ -23,10 +23,10 @@ domains:
 homepage_url: http://bioinformatics.sandia.gov/tmrna/
 id: tmrnawebsite
 last_modified_date: '2026-06-22T00:00:00Z'
+layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-layout: resource_detail
 name: The tmRNA Website
 products:
 - category: GraphicalInterface
@@ -51,9 +51,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: Product
   description: Multiple sequence alignments for 632 tmRNA and 2,258 distinct SmpB
@@ -68,9 +68,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: Product
   description: Krona-based interactive phylogenetic visualization tool for 9,387 tmRNA
@@ -85,9 +85,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: Product
   description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in
@@ -102,9 +102,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,

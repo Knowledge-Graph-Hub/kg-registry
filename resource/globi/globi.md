@@ -78,11 +78,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -114,11 +114,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -148,11 +148,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -172,11 +172,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -228,11 +228,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -284,11 +284,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -313,9 +313,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   description: Field (column) definitions CSV endpoint
@@ -420,7 +420,8 @@ publications:
   doi: 10.1016/j.ecoinf.2014.08.005
   id: doi:10.1016/j.ecoinf.2014.08.005
   journal: Ecological Informatics
-  title: 'Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets'
+  title: 'Global Biotic Interactions: An open infrastructure to share and analyze
+    species-interaction datasets'
   year: '2014'
 taxon:
 - NCBITaxon:2759

@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Interactive web interface for exploring drug-disease networks with probabilistic
   filtering and graph visualization
+format: http
 id: redrugs.web
 name: ReDrugs Web Interface
 original_source:

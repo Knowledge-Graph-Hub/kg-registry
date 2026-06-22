@@ -5,13 +5,13 @@ format: tsv
 id: ncbigene.mim2gene_medgen
 name: MIM to Gene MedGen Mapping
 original_source:
-  - source: ncbigene
-    relation_type: prov:hadPrimarySource
-  - source: medgen
-    relation_type: prov:hadPrimarySource
-  - source: omim
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: ncbigene
+- relation_type: prov:hadPrimarySource
+  source: medgen
+- relation_type: prov:hadPrimarySource
+  source: omim
 product_file_size: 954971
-product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
+product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen
 layout: product_detail
 ---

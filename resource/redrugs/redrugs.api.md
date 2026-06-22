@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: SADI web services API for querying the knowledge graph including resource
   search, interaction lookup, and network expansion
+format: http
 id: redrugs.api
 name: ReDrugs API
 original_source:

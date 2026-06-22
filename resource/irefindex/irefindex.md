@@ -67,6 +67,7 @@ products:
 - category: GraphicalInterface
   description: Interactive web interface for exploring drug-disease networks with
     probabilistic filtering and graph visualization
+  format: http
   id: redrugs.web
   name: ReDrugs Web Interface
   original_source:
@@ -84,6 +85,7 @@ products:
 - category: ProgrammingInterface
   description: SADI web services API for querying the knowledge graph including resource
     search, interaction lookup, and network expansion
+  format: http
   id: redrugs.api
   name: ReDrugs API
   original_source:
@@ -233,7 +235,8 @@ publications:
   doi: 10.1186/1471-2105-12-455
   id: PMID:22115179
   journal: BMC Bioinformatics
-  title: 'iRefR: an R package to manipulate the iRefIndex consolidated protein interaction database.'
+  title: 'iRefR: an R package to manipulate the iRefIndex consolidated protein interaction
+    database.'
   year: '2011'
 - authors:
   - Razick S
@@ -244,7 +247,8 @@ publications:
   doi: 10.1186/1471-2105-12-388
   id: PMID:21975162
   journal: BMC Bioinformatics
-  title: iRefScape. A Cytoscape plug-in for visualization and data mining of protein interaction data from iRefIndex.
+  title: iRefScape. A Cytoscape plug-in for visualization and data mining of protein
+    interaction data from iRefIndex.
   year: '2011'
 warnings:
 - The iRefIndex website appears to be inactive as of 2025. Historical data and methods

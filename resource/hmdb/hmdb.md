@@ -1073,6 +1073,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -1742,9 +1743,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Public library of pathway diagrams that can be browsed, viewed, and
@@ -1966,6 +1967,7 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
+  format: http
   id: foodb.web
   name: FooDB Web Interface
   original_source:
@@ -2084,6 +2086,7 @@ products:
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
+  format: mysql
   id: foodb.data.mysql
   name: FooDB MySQL Dump
   original_source:

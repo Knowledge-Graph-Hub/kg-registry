@@ -671,6 +671,7 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
+  format: neo4j
   id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
@@ -842,6 +843,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -908,11 +910,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -939,11 +941,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -973,11 +975,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -1180,6 +1182,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -1389,7 +1392,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank

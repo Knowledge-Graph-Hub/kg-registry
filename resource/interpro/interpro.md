@@ -221,6 +221,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -302,6 +303,7 @@ products:
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 - description: The MechRepoNet knowledge graph in its original format
+  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
@@ -1220,6 +1222,7 @@ products:
     pathways, homology-based annotations, and environmental exposures from Planteome,
     EMBL-EBI Expression Atlas, and other sources. Available as tab-separated value
     files in KGX format with nodes and edges following the Biolink model.
+  format: kgx
   id: genophenoenvo-kg.data
   name: GenoPhenoEnvo KG Data
   original_source:

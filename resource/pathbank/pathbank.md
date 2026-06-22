@@ -431,6 +431,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -571,7 +572,7 @@ publications:
   - Carin Li
   - Kristen Yee
   - Christiana Garros
-  - Dorsa Yahya Rayat
+  - "Dorsa\_Yahya Rayat"
   - Jeanne Coleongco
   - Tharuni Nandyala
   - Vasuk Gautam
@@ -594,7 +595,7 @@ publications:
   - Xuan Cao
   - Eponine Oler
   - Krissa Li
-  - Maïlys Paccoud
+  - "Ma\xEFlys Paccoud"
   - Chelsea Hong
   - An C Guo
   - Christopher Chan

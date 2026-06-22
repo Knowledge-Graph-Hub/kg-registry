@@ -156,11 +156,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 954971
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
+  product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen
 - category: GraphProduct
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
   edge_count: 500958
+  format: mixed
   id: pharmkg.graph
   name: PharmKG graph
   node_count: 7603
@@ -1372,6 +1373,7 @@ products:
 - category: GraphicalInterface
   description: Interactive web interface for exploring drug-disease networks with
     probabilistic filtering and graph visualization
+  format: http
   id: redrugs.web
   name: ReDrugs Web Interface
   original_source:
@@ -1389,6 +1391,7 @@ products:
 - category: ProgrammingInterface
   description: SADI web services API for querying the knowledge graph including resource
     search, interaction lookup, and network expansion
+  format: http
   id: redrugs.api
   name: ReDrugs API
   original_source:
@@ -1988,7 +1991,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/download/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -2005,15 +2008,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -2047,7 +2041,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -2064,15 +2058,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: GraphicalInterface
   description: Web-based interface for browsing and querying rare disease annotations
     including phenotypes, symptoms, genes, and genotypes with tree-structured disease
@@ -2134,7 +2119,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank
@@ -2196,9 +2181,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
@@ -2474,6 +2459,7 @@ products:
   description: PREDICT computational method for large-scale prediction of drug indications
     using drug-drug and disease-disease similarity measures and known drug-disease
     associations.
+  format: http
   id: predict.method
   name: PREDICT Drug-Indication Inference Method
   original_source:
@@ -2507,11 +2493,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric

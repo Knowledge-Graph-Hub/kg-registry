@@ -27,7 +27,7 @@ domains:
 - biomedical
 homepage_url: https://kghub.org/kg-monarch/index.html
 id: kg-monarch
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-06-22T19:05:50Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -164,11 +164,11 @@ products:
   product_file_size: 230877741
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15211571
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
-  compression: targz
   name: KGX JSON-L Distribution of KG-Monarch Edges
   node_categories:
   - biolink:AnatomicalEntity
@@ -294,11 +294,11 @@ products:
   product_file_size: 487854288
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
-  compression: targz
   name: KGX JSON-L Distribution of KG-Monarch Nodes
   node_categories:
   - biolink:AnatomicalEntity
@@ -1088,8 +1088,8 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
-  id: kg-monarch.graph.neo4j
   format: neo4j
+  id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
   - biolink:AnatomicalEntity

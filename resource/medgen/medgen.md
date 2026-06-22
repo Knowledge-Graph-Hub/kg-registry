@@ -387,7 +387,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 954971
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
+  product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv

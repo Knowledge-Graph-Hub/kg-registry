@@ -27,6 +27,7 @@ products:
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
+  format: http
   id: aop-db.data
   name: AOP-DB Data
   original_source:

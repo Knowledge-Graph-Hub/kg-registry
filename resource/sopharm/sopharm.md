@@ -32,11 +32,11 @@ products:
     source: sopharm
   product_url: http://purl.obolibrary.org/obo/sopharm.owl
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Suggested Ontology for Pharmacogenomics in OBO format
@@ -48,11 +48,11 @@ products:
     source: sopharm
   product_url: http://purl.obolibrary.org/obo/sopharm.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
     to URL'
 publications: []
 taxon:

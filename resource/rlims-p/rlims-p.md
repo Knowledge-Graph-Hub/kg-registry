@@ -40,8 +40,8 @@ products:
   description: Rule-based text-mining service for extracting protein phosphorylation
     events, including kinase, substrate, phosphorylation site, and textual evidence,
     from PubMed abstracts and selected literature corpora.
-  id: rlims-p.text-mining-service
   format: http
+  id: rlims-p.text-mining-service
   name: RLIMS-P Text-Mining Service
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -61,9 +61,9 @@ products:
     source: rlims-p
   product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMS-P_AnnotationGuidelines.pdf
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
@@ -137,7 +137,8 @@ publications:
   id: doi:10.1109/TCBB.2014.2372765
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   preferred: true
-  title: 'RLIMS-P 2.0: a generalizable rule-based information extraction system for literature mining of protein phosphorylation information'
+  title: 'RLIMS-P 2.0: a generalizable rule-based information extraction system for
+    literature mining of protein phosphorylation information'
   year: '2015'
 - authors:
   - M. Torii
@@ -153,7 +154,8 @@ publications:
   doi: 10.1093/database/bau081
   id: doi:10.1093/database/bau081
   journal: Database
-  title: RLIMS-P, an online text-mining tool for literature-based extraction of protein phosphorylation information
+  title: RLIMS-P, an online text-mining tool for literature-based extraction of protein
+    phosphorylation information
   year: '2014'
 synonyms:
 - Rule-based Literature Mining System for Protein Phosphorylation

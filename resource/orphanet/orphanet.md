@@ -230,6 +230,7 @@ products:
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
+  format: http
   id: disgenet.data
   name: DisGeNET Data
   original_source:

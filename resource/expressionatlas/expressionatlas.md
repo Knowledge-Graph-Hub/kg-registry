@@ -100,11 +100,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 500 error
     when accessing file'
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
@@ -683,7 +683,8 @@ publications:
   id: https://doi.org/10.1093/nar/gkad1021
   journal: Nucleic Acids Research
   preferred: true
-  title: 'Expression Atlas update: insights from sequencing data at both bulk and single cell level'
+  title: 'Expression Atlas update: insights from sequencing data at both bulk and
+    single cell level'
   year: '2024'
 - authors:
   - Irene Papatheodorou

@@ -103,8 +103,8 @@ products:
   product_url: https://www.ebi.ac.uk/rdf/services/sparql
 - category: MappingProduct
   description: Mapping between chembl_35 target chembl_ids and UniProt accessions
-  id: chembl.map_to_uniprot
   format: txt
+  id: chembl.map_to_uniprot
   is_public: true
   name: ChEMBL map to UniProt
   original_source:
@@ -309,8 +309,8 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  id: rtx-kg2.neo4j
   format: http
+  id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -368,8 +368,8 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
   format: python
+  id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -491,8 +491,8 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
-  id: ibkh.graph
   format: mixed
+  id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -989,15 +989,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -1048,15 +1039,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
@@ -1467,7 +1449,8 @@ publications:
   id: doi:10.1093/nar/gkad1004
   journal: Nucleic Acids Research
   preferred: true
-  title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods'
+  title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple
+    bioactivity data types and time periods'
   year: '2024'
 repository: https://github.com/chembl
 taxon:

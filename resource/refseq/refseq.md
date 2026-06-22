@@ -39,8 +39,8 @@ products:
     source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 1182285769
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
+  product_file_size: 786235145
+  product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
 - category: MappingProduct
   compression: gzip
   description: Gene to RefSeq mapping data providing links between gene records and
@@ -53,8 +53,8 @@ products:
     source: refseq
   - relation_type: prov:hadPrimarySource
     source: ncbigene
-  product_file_size: 2027684801
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2refseq.gz
+  product_file_size: 2288643234
+  product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2refseq.gz
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -1998,7 +1998,7 @@ products:
   product_url: https://www.genecards.org/
 publications:
 - authors:
-  - "Nuala A. O'Leary"
+  - Nuala A. O'Leary
   - Mathew W. Wright
   - J. Rodney Brister
   - Stacy Ciufo
@@ -2030,7 +2030,7 @@ publications:
   - Patrick Masterson
   - Kelly M. McGarvey
   - Michael R. Murphy
-  - "Kathleen O'Neill"
+  - Kathleen O'Neill
   - Shashikant Pujar
   - Sanjida H. Rangwala
   - Daniel Rausch

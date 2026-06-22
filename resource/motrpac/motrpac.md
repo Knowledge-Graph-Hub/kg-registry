@@ -179,6 +179,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -434,6 +435,7 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
+  format: txt
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:
@@ -666,7 +668,8 @@ publications:
   id: https://doi.org/10.1016/j.cell.2020.06.004
   journal: Cell
   preferred: true
-  title: 'Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping the Dynamic Responses to Exercise'
+  title: 'Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping
+    the Dynamic Responses to Exercise'
   year: '2020'
 - authors:
   - David Amar

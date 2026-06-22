@@ -95,8 +95,8 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
-  id: ubkg.neo4j
   format: neo4j
+  id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -323,8 +323,8 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  id: bioteque.embeddings
   format: mixed
+  id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -910,8 +910,8 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
-  id: ibkh.graph
   format: mixed
+  id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -974,8 +974,8 @@ products:
   product_file_size: 400516
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
 - description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
   format: mixed
+  id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1245,8 +1245,8 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  id: rtx-kg2.neo4j
   format: http
+  id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -1821,8 +1821,8 @@ products:
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 - category: GraphicalInterface
   description: FORUM web application interface for semantic metabolomics exploration
-  id: forum.webapp
   format: http
+  id: forum.webapp
   name: FORUM Web Application
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1838,8 +1838,8 @@ products:
   product_url: https://forum-webapp.semantic-metabolomics.fr/
 - category: ProgrammingInterface
   description: FORUM REST API for programmatic access to chemical-disease associations
-  id: forum.api
   format: http
+  id: forum.api
   name: FORUM API
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1856,8 +1856,8 @@ products:
 - category: DocumentationProduct
   description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
     the knowledge graph structure
-  id: forum.void
   format: ttl
+  id: forum.void
   name: FORUM VoID Metadata
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2644,8 +2644,8 @@ products:
     sample metadata, and environmental and taxonomic context. The repository documents
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
-  id: metabokg.graph
   format: mixed
+  id: metabokg.graph
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph
   original_source:
@@ -2692,8 +2692,8 @@ products:
 - category: DataModelProduct
   description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
     class hierarchies used by the generated knowledge graph.
-  id: metabokg.schema
   format: ttl
+  id: metabokg.schema
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0
     label: Apache License 2.0
@@ -2853,8 +2853,8 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
-  id: pathwaycommons.gmt
   format: tsv
+  id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2978,8 +2978,8 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
-  id: foodb.web
   format: http
+  id: foodb.web
   name: FooDB Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3097,8 +3097,8 @@ products:
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
-  id: foodb.data.mysql
   format: mysql
+  id: foodb.data.mysql
   name: FooDB MySQL Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3511,8 +3511,8 @@ products:
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
-  id: forum.graph.dump
   format: mixed
+  id: forum.graph.dump
   name: FORUM Knowledge Graph Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3541,9 +3541,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
     out'
 publications:
 - authors:

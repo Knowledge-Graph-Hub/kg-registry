@@ -237,6 +237,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: http
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -294,6 +295,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -401,11 +403,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -432,11 +434,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -466,11 +468,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -535,9 +537,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compatibility:
@@ -754,6 +756,7 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
+  format: neo4j
   id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
@@ -1505,7 +1508,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/download/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -1522,15 +1525,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -1564,7 +1558,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -1581,15 +1575,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 publications:
 - authors:
   - Ursu O

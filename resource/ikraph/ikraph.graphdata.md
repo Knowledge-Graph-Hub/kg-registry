@@ -3,6 +3,7 @@ category: GraphProduct
 compression: targz
 description: Complete graph data for iKraph with all entities and relations extracted
   from PubMed abstracts
+format: mixed
 id: ikraph.graphdata
 name: iKraph graph data
 original_source:

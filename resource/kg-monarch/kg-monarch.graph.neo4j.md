@@ -3,6 +3,7 @@ category: GraphProduct
 description: Neo4j Dump of KG-Monarch
 dump_format: neo4j
 edge_count: 15211571
+format: neo4j
 id: kg-monarch.graph.neo4j
 name: Neo4j Dump of KG-Monarch
 node_categories:

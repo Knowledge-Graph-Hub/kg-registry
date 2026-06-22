@@ -52,6 +52,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -143,21 +144,23 @@ publications:
   id: doi:10.1101/gr.240663.118
   journal: Genome Research
   preferred: true
-  title: Benchmark and integration of resources for the estimation of human transcription factor activities
+  title: Benchmark and integration of resources for the estimation of human transcription
+    factor activities
   year: '2019'
 - authors:
-  - Sophia Müller-Dott
+  - "Sophia M\xFCller-Dott"
   - Eirini Tsirvouli
-  - Miguel Vázquez
+  - "Miguel V\xE1zquez"
   - Ricardo O. Ramirez Flores
   - Pau Badia-i-Mompel
   - Robin Fallegger
-  - Astrid Lægreid
+  - "Astrid L\xE6greid"
   - Julio Saez-Rodriguez
   doi: 10.1101/2023.03.30.534849
   id: doi:10.1101/2023.03.30.534849
   journal: bioRxiv
-  title: Expanding the coverage of regulons from high-confidence prior knowledge for accurate estimation of transcription factor activities
+  title: Expanding the coverage of regulons from high-confidence prior knowledge for
+    accurate estimation of transcription factor activities
   year: '2023'
 repository: https://github.com/saezlab/dorothea/
 taxon:

@@ -92,6 +92,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -174,31 +175,33 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
 - authors:
-  - Dénes Türei
-  - Tamás Korcsmáros
+  - "D\xE9nes T\xFCrei"
+  - "Tam\xE1s Korcsm\xE1ros"
   - Julio Saez-Rodriguez
   doi: 10.1038/nmeth.4077
   id: doi:10.1038/nmeth.4077
   journal: Nature Methods
-  title: 'OmniPath: guidelines and gateway for literature-curated signaling pathway resources'
+  title: 'OmniPath: guidelines and gateway for literature-curated signaling pathway
+    resources'
   year: '2016'
 - authors:
-  - Dénes Türei
+  - "D\xE9nes T\xFCrei"
   - Alberto Valdeolivas
   - Lejla Gul
-  - Nicolàs Palacio-Escat
+  - "Nicol\xE0s Palacio-Escat"
   - Michal Klein
   - Olga Ivanova
-  - Márton Ölbei
-  - Attila Gábor
+  - "M\xE1rton \xD6lbei"
+  - "Attila G\xE1bor"
   - Fabian Theis
-  - Dezső Módos
-  - Tamás Korcsmáros
+  - "Dezs\u0151 M\xF3dos"
+  - "Tam\xE1s Korcsm\xE1ros"
   - Julio Saez-Rodriguez
   doi: 10.15252/msb.20209923
   id: doi:10.15252/msb.20209923
   journal: Molecular Systems Biology
-  title: Integrated intra- and intercellular signaling knowledge for multicellular omics analysis
+  title: Integrated intra- and intercellular signaling knowledge for multicellular
+    omics analysis
   year: '2021'
 repository: https://github.com/saezlab/pypath
 ---

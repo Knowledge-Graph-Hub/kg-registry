@@ -3,6 +3,7 @@ category: Product
 compression: gzip
 description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
   derived from the integrated Pathway Commons pathway archive.
+format: tsv
 id: pathwaycommons.gmt
 name: GMT Gene Set Format
 original_source:

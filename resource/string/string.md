@@ -931,6 +931,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -1238,6 +1239,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -1792,6 +1794,7 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
+  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -2126,6 +2129,7 @@ products:
   - v4.0.0
   - current_build
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15211571
   format: kgx-jsonl
@@ -2252,9 +2256,10 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
+  compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
   format: kgx-jsonl
@@ -2381,8 +2386,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -2690,6 +2695,7 @@ products:
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
+  format: http
   id: aop-db.data
   name: AOP-DB Data
   original_source:
@@ -3198,6 +3204,7 @@ products:
   compression: targz
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
+  format: mixed
   id: drkg.graph
   name: DRKG graph
   original_source:
@@ -3253,7 +3260,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/download/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -3270,15 +3277,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -3312,7 +3310,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -3329,15 +3327,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
 - category: GraphicalInterface
   description: Interactive web interface for browsing and analyzing iModulons across
     15 prokaryotic organisms with 22 datasets, 1924 curated iModulons, and 9576 expression
@@ -3385,7 +3374,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank

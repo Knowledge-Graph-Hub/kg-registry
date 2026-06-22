@@ -54,9 +54,9 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
     and other interaction databases.
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: HPRD data in XML format for programmatic access
@@ -71,9 +71,9 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: HPRD data in tab-delimited format for programmatic access
@@ -88,9 +88,9 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 503 error
     when accessing file'
 - category: GraphicalInterface
   description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
@@ -1199,6 +1199,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:

@@ -416,6 +416,7 @@ products:
     source: rnacentral
   product_url: https://rnacentral.org/help/public-database
 - description: The MechRepoNet knowledge graph in its original format
+  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:

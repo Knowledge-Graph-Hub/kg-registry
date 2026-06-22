@@ -199,6 +199,7 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
+  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -510,7 +511,8 @@ publications:
   id: doi:10.1016/j.cell.2017.10.049
   journal: Cell
   preferred: true
-  title: 'A Next Generation Connectivity Map: L1000 platform and the first 1,000,000 profiles'
+  title: 'A Next Generation Connectivity Map: L1000 platform and the first 1,000,000
+    profiles'
   year: '2017'
 repository: https://github.com/cmap/l1000-jupyter
 taxon:
