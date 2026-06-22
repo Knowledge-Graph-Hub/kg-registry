@@ -63,6 +63,7 @@ products:
   - category: Product
     description: Causal Activity Model graphs automatically generated from Reactome pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
     id: cam-kp.reactome-cams
+    format: owl
     name: Reactome Pathway CAMs
     original_source:
       - source: cam-kp
@@ -72,6 +73,7 @@ products:
   - category: Product
     description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes
     id: cam-kp.go-cams
+    format: owl
     name: Gene Ontology CAMs
     original_source:
       - source: cam-kp
@@ -81,6 +83,7 @@ products:
   - category: Product
     description: Chemical-gene interaction models and toxicological pathways derived from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals and 55,400 genes
     id: cam-kp.ctd-interactions
+    format: http
     name: CTD Chemical-Gene Models
     original_source:
       - source: cam-kp
@@ -169,7 +172,7 @@ publications:
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 # CAM-KP (Causal Activity Models Knowledge Provider)

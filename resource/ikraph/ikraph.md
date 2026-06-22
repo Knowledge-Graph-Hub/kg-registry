@@ -21,7 +21,7 @@ domains:
   - genomics
 homepage_url: https://biokde.insilicom.com/
 id: ikraph
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -42,6 +42,7 @@ products:
   - category: ProcessProduct
     description: Code for named entity recognition, relation extraction, and drug repurposing in assembly and analysis of iKraph
     id: ikraph.code
+    format: mixed
     license:
       id: https://www.gnu.org/licenses/gpl-3.0.en.html
       label: GPL-3
@@ -70,6 +71,7 @@ products:
     compression: targz
     description: Complete graph data for iKraph with all entities and relations extracted from PubMed abstracts
     id: ikraph.graphdata
+    format: mixed
     name: iKraph graph data
     original_source:
       - source: ikraph

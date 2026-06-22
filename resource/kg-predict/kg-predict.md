@@ -20,7 +20,7 @@ domains:
 - phenotype
 homepage_url: https://nlp.case.edu/public/data/GPKG-Predict/
 id: kg-predict
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.elsevier.com/open-access/userlicense/1.0/
@@ -37,7 +37,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank

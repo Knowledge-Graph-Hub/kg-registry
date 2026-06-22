@@ -26,6 +26,7 @@ products:
     description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
     edge_count: 500958
     id: pharmkg.graph
+    format: mixed
     name: PharmKG graph
     node_count: 7603
     original_source:
@@ -75,7 +76,7 @@ repository: https://github.com/MindRank-Biotech/PharmKG
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-08-12T00:00:00Z'
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 PharmKG

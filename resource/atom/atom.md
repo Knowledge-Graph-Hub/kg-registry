@@ -21,13 +21,14 @@ domains:
   - clinical
 homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
 id: atom
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: ATOM
 products:
   - category: GraphProduct
     description: Anti-tumor biomaterial knowledge graph constructed from biomedicine literature, containing structured relationships among anti-tumor entities extracted through entity recognition, sentence simplification, triple extraction, and predicate mapping.
     id: atom.kg
+    format: mixed
     name: ATOM Knowledge Graph
     original_source:
       - source: atom
@@ -40,6 +41,7 @@ products:
   - category: ProcessProduct
     description: Natural language processing pipeline for constructing anti-tumor biomaterial knowledge graphs from unstructured biomedicine literature, implementing entity recognition, sentence simplification, triple extraction, and predicate mapping processes.
     id: atom.pipeline
+    format: mixed
     name: ATOM Construction Pipeline
     original_source:
       - source: atom

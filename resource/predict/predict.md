@@ -11,7 +11,7 @@ domains:
 - biomedical
 homepage_url: https://www.embopress.org/doi/abs/10.1038/msb.2011.26
 id: predict
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: PREDICT
 products:
@@ -32,6 +32,7 @@ products:
     using drug-drug and disease-disease similarity measures and known drug-disease
     associations.
   id: predict.method
+  format: http
   name: PREDICT Drug-Indication Inference Method
   original_source:
   - relation_type: prov:hadPrimarySource

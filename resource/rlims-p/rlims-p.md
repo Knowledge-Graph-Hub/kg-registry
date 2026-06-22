@@ -18,7 +18,7 @@ domains:
 - biological systems
 homepage_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/
 id: rlims-p
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: RLIMS-P
 products:
@@ -41,6 +41,7 @@ products:
     events, including kinase, substrate, phosphorylation site, and textual evidence,
     from PubMed abstracts and selected literature corpora.
   id: rlims-p.text-mining-service
+  format: http
   name: RLIMS-P Text-Mining Service
   original_source:
   - relation_type: prov:hadPrimarySource

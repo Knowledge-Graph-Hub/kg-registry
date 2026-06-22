@@ -12,7 +12,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/genophenoenvo/knowledge-graph
 id: genophenoenvo-kg
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/BSD-3-Clause
@@ -22,6 +22,7 @@ products:
   - category: GraphProduct
     description: Merged knowledge graph data files containing over 400,000 nodes and 5,000,000 edges integrating gene expression, molecular interactions, functions, pathways, homology-based annotations, and environmental exposures from Planteome, EMBL-EBI Expression Atlas, and other sources. Available as tab-separated value files in KGX format with nodes and edges following the Biolink model.
     id: genophenoenvo-kg.data
+    format: kgx
     name: GenoPhenoEnvo KG Data
     original_source:
       - source: genophenoenvo-kg

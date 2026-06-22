@@ -16,7 +16,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/gnn4dr/DRKG
 id: drkg
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: Drug Repurposing Knowledge Graph
 products:
@@ -25,6 +25,7 @@ products:
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
   id: drkg.graph
+  format: mixed
   name: DRKG graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -49,6 +50,7 @@ products:
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
   id: ibkh.graph
+  format: mixed
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource

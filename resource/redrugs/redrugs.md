@@ -10,7 +10,7 @@ domains:
   - pharmacology
 homepage_url: http://redrugs.tw.rpi.edu/
 id: redrugs
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -20,6 +20,7 @@ products:
   - category: GraphicalInterface
     description: Interactive web interface for exploring drug-disease networks with probabilistic filtering and graph visualization
     id: redrugs.web
+    format: http
     name: ReDrugs Web Interface
     original_source:
       - source: redrugs
@@ -36,6 +37,7 @@ products:
   - category: ProgrammingInterface
     description: SADI web services API for querying the knowledge graph including resource search, interaction lookup, and network expansion
     id: redrugs.api
+    format: http
     name: ReDrugs API
     original_source:
       - source: redrugs

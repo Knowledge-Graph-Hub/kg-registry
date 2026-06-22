@@ -22,7 +22,7 @@ domains:
 - pathways
 homepage_url: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
 id: aop-db
-last_modified_date: '2026-05-04T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
@@ -61,6 +61,7 @@ products:
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
   id: aop-db.data
+  format: http
   name: AOP-DB Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -191,6 +192,7 @@ products:
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
   id: alzkb.data
+  format: mixed
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
   - relation_type: prov:hadPrimarySource

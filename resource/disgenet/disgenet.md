@@ -22,7 +22,7 @@ domains:
 homepage_url: https://www.disgenet.com/
 id: disgenet
 infores_id: disgenet
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.disgenet.com/Legal
@@ -33,6 +33,7 @@ products:
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
   id: disgenet.data
+  format: http
   name: DisGeNET Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -312,6 +313,7 @@ products:
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
   id: rtx-kg2.neo4j
+  format: http
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -420,6 +422,7 @@ products:
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
   id: alzkb.data
+  format: mixed
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -474,6 +477,7 @@ products:
     API key to access.
   dump_format: neo4j
   id: ubkg.neo4j
+  format: neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -587,6 +591,7 @@ products:
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
   id: bioteque.embeddings
+  format: mixed
   name: Bioteque Embeddings
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -671,6 +676,7 @@ products:
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
   id: indra.cogex.code
+  format: python
   name: INDRA CoGEx Build Code
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -862,6 +868,7 @@ products:
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
   id: aop-db.data
+  format: http
   name: AOP-DB Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1105,6 +1112,7 @@ products:
   description: Standardized gene set collections from Common Fund programs in GMT
     format
   id: cfde-gse.genesets
+  format: txt
   name: CFDE Gene Set Collections
   original_source:
   - relation_type: prov:hadPrimarySource

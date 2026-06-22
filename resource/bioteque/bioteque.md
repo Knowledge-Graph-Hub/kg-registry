@@ -24,6 +24,7 @@ products:
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological entities and their associations
     id: bioteque.embeddings
+    format: mixed
     name: Bioteque Embeddings
     original_source:
       - source: achilles
@@ -136,7 +137,7 @@ publications:
     year: '2022'
 repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 ## Bioteque Knowledge Graph
