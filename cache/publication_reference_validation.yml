@@ -1119,6 +1119,15 @@ entries:
     warnings:
     - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_ncomms12846.md
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_ncomms12846.md
+  resource/ctd/ctd.md#publication[0]#DOI:10.1093/nar/gkae883:
+    checked_at: '2026-06-22T14:44:00Z'
+    errors: []
+    fingerprint: 56aa87c53a4d14570167faa1157d0565d0817ca38637b71d8a8a9773f9cc005f
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae883
+    source_path: resource/ctd/ctd.md
+    status: valid
+    warnings: []
   resource/ctd2/ctd2.md#publication[0]#DOI:10.1093/database/bax054:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4042,15 +4051,14 @@ entries:
     status: valid
     warnings: []
   resource/ncbigene/ncbigene.md#publication[0]#DOI:10.1093/nar/gkq1237:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T14:45:05Z'
     errors: []
-    fingerprint: fdc9f155d69867d373d2f7b4da0f5d46b598dab7dfdd9a8e237893b5e9c433fe
+    fingerprint: 695122171c21df42fd422d3ac8b39e2e9d981c68ad14eec767f340ebe04af590
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkq1237
     source_path: resource/ncbigene/ncbigene.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkq1237.md
+    status: valid
+    warnings: []
   resource/netpath/netpath.md#publication[0]#DOI:10.1186/gb-2010-11-1-r3:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5428,6 +5436,24 @@ entries:
     status: warning
     warnings:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky1033.md
+  resource/pubmed/pubmed.md#publication[0]#DOI:10.1093/nar/gkad1044:
+    checked_at: '2026-06-22T14:41:43Z'
+    errors: []
+    fingerprint: 65c5f08ac3973e3d855081e46d8a37a50c58c0634ddd6e346d7eb0cb2025ce44
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad1044
+    source_path: resource/pubmed/pubmed.md
+    status: valid
+    warnings: []
+  resource/pubmed/pubmed.md#publication[1]#DOI:10.1371/journal.pbio.2005343:
+    checked_at: '2026-06-22T14:42:14Z'
+    errors: []
+    fingerprint: 0fe8f19a762c38565936124d09c8230dd2d1fc5c0e59b5bc77b7600a0230c40d
+    publication_index: 1
+    reference_id: DOI:10.1371/journal.pbio.2005343
+    source_path: resource/pubmed/pubmed.md
+    status: valid
+    warnings: []
   resource/pubtator/pubtator.md#publication[0]#DOI:10.1093/nar/gkae235:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
