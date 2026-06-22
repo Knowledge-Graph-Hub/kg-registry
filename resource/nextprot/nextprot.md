@@ -389,7 +389,7 @@ products:
 publications:
 - authors:
   - Monique Zahn-Zabal
-  - "Pierre-Andr\xE9 Michel"
+  - Pierre-André Michel
   - Caroline Gateau
   - Lydie Lane
   - Amos Bairoch
@@ -398,10 +398,10 @@ publications:
   journal: Nucleic Acids Research
   preferred: true
   title: 'The neXtProt knowledgebase in 2020: data, tools and usability improvements'
-  year: '2020'
+  year: '2019'
 - authors:
   - Pascale Gaudet
-  - "Pierre-Andr\xE9 Michel"
+  - Pierre-André Michel
   - Monique Zahn-Zabal
   - Aurore Britan
   - Isabelle Cusin

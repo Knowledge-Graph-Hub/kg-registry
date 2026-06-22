@@ -192,7 +192,7 @@ publications:
   id: https://doi.org/10.1093/nar/gkm907
   journal: Nucleic Acids Research
   title: The Molecule Pages database
-  year: '2008'
+  year: '2007'
 synonyms:
 - AfCS
 - AfCS-Nature Molecule Pages

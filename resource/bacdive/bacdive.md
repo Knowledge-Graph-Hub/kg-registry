@@ -432,7 +432,7 @@ publications:
 - authors:
   - Schober I
   - Koblitz J
-  - "Sard\xE0 Carbasse J"
+  - Sardà Carbasse J
   - Ebeling C
   - Schmidt ML
   - Podstawka A
@@ -441,7 +441,7 @@ publications:
   - Chamanara J
   - Overmann J
   - Reimer LC
-  doi: doi:10.1093/nar/gkae959
+  doi: 10.1093/nar/gkae959
   id: https://doi.org/10.1093/nar/gkae959
   journal: Nucleic Acids Research
   preferred: true

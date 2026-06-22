@@ -28,15 +28,16 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/bsantan/MGMLink
 publications:
-  - authors:
-      - Santangelo BE
-      - Bada M
-      - Hunter LE
-      - Lozupone C
-    doi: 10.1038/s41598-025-91230-6
-    id: doi:10.1038/s41598-025-91230-6
-    title: '''Hypothesizing mechanistic links between microbes and disease using knowledge graphs'''
-    year: '2025'
+- authors:
+  - Santangelo BE
+  - Bada M
+  - Hunter LE
+  - Lozupone C
+  doi: 10.1038/s41598-025-91230-6
+  id: doi:10.1038/s41598-025-91230-6
+  journal: Scientific Reports
+  title: '''Hypothesizing mechanistic links between microbes and disease using knowledge graphs'''
+  year: '2025'
 taxon:
   - NCBITaxon:2759
 creation_date: '2025-04-13T00:00:00Z'

@@ -256,7 +256,7 @@ publications:
   - Hyka-Nouspikel N
   - Niknejad A
   - Gleizes A
-  - "G\xF6tz L"
+  - Götz L
   - Kuznetsov D
   - David FPA
   - van der Goot FG
@@ -264,8 +264,9 @@ publications:
   - Bougueleret L
   - Xenarios I
   - Bridge A
-  doi: doi:10.1093/bioinformatics/btv285
+  doi: 10.1093/bioinformatics/btv285
   id: doi:10.1093/bioinformatics/btv285
+  journal: Bioinformatics
   preferred: true
   title: The SwissLipids knowledgebase for lipid biology
   year: '2015'

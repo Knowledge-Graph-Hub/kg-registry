@@ -199,11 +199,22 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
 publications:
-- doi: 10.1093/nar/gkaf402
+- authors:
+  - Jennifer Vendetti
+  - Nomi L Harris
+  - Michael V Dorf
+  - Alex Skrenchuk
+  - J Harry Caufield
+  - Rafael S Gonçalves
+  - John B Graybeal
+  - Harshad Hegde
+  - Timothy Redmond
+  - Christopher J Mungall
+  - Mark A Musen
+  doi: 10.1093/nar/gkaf402
   id: doi:10.1093/nar/gkaf402
   journal: Nucleic Acids Research
-  title: 'BioPortal: an open community resource for sharing, searching, and utilizing
-    biomedical ontologies'
+  title: 'BioPortal: an open community resource for sharing, searching, and utilizing biomedical ontologies'
   year: '2025'
 taxon:
 - NCBITaxon:9606

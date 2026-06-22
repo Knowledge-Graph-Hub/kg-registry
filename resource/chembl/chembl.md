@@ -1463,12 +1463,12 @@ publications:
   - Monecke PM
   - Landrum GA
   - Leach AR
-  doi: doi:10.1093/nar/gkad1004
+  doi: 10.1093/nar/gkad1004
   id: doi:10.1093/nar/gkad1004
+  journal: Nucleic Acids Research
   preferred: true
-  title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple
-    bioactivity data types and time periods'
-  year: '2023'
+  title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods'
+  year: '2024'
 repository: https://github.com/chembl
 taxon:
 - NCBITaxon:9606

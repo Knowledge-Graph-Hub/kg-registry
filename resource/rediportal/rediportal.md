@@ -409,22 +409,23 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Pietro D'Addabbo
-      - Roni Cohen-Fultheim
-      - Itamar Twersky
-      - Adriano Fonzino
-      - Domenico Alessandro Silvestris
-      - Ananth Prakash
-      - Pietro Luca Mazzacuva
-      - Juan Antonio Vizcaino
-      - Andrew Green
-      - Blake Sweeney
-    id: https://doi.org/10.1093/nar/gkae1083
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'REDIportal: toward an integrated view of the A-to-I editing'
-    year: '2025'
+- authors:
+  - Pietro D'Addabbo
+  - Roni Cohen-Fultheim
+  - Itamar Twersky
+  - Adriano Fonzino
+  - Domenico Alessandro Silvestris
+  - Ananth Prakash
+  - Pietro Luca Mazzacuva
+  - Juan Antonio Vizcaino
+  - Andrew Green
+  - Blake Sweeney
+  doi: 10.1093/nar/gkae1083
+  id: https://doi.org/10.1093/nar/gkae1083
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'REDIportal: toward an integrated view of the A-to-I editing'
+  year: '2025'
 ---
 
 # REDIportal

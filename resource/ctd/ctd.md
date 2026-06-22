@@ -3586,23 +3586,23 @@ products:
         source: wormbase
     product_url: https://www.genecards.org/
 publications:
-  - authors:
-      - Davis AP
-      - Wiegers TC
-      - Sciaky D
-      - Barkalow F
-      - Strong M
-      - Wyatt B
-      - Wiegers J
-      - McMorran R
-      - Abrar S
-      - Mattingly CJ
-    doi: doi:10.1093/nar/gkae883
-    id: https://doi.org/10.1093/nar/gkae883
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'Comparative Toxicogenomics Database''s 20th anniversary: update 2025'
-    year: '2025'
+- authors:
+  - Davis AP
+  - Wiegers TC
+  - Sciaky D
+  - Barkalow F
+  - Strong M
+  - Wyatt B
+  - Wiegers J
+  - McMorran R
+  - Abrar S
+  - Mattingly CJ
+  doi: 10.1093/nar/gkae883
+  id: https://doi.org/10.1093/nar/gkae883
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Comparative Toxicogenomics Database''s 20th anniversary: update 2025'
+  year: '2025'
 taxon:
   - NCBITaxon:9606
 ---

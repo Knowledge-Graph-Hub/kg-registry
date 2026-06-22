@@ -37,12 +37,21 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/JieZheng-ShanghaiTech/KG4SL
 publications:
-  - doi: doi:10.1093/bioinformatics/btab271
-    id: https://doi.org/10.1093/bioinformatics/btab271
-    journal: Bioinformatics
-    preferred: true
-    title: 'KG4SL: knowledge graph neural network for synthetic lethality prediction in human cancers'
-    year: '2021'
+- authors:
+  - Shike Wang
+  - Fan Xu
+  - Yunyang Li
+  - Jie Wang
+  - Ke Zhang
+  - Yong Liu
+  - Min Wu
+  - Jie Zheng
+  doi: 10.1093/bioinformatics/btab271
+  id: https://doi.org/10.1093/bioinformatics/btab271
+  journal: Bioinformatics
+  preferred: true
+  title: 'KG4SL: knowledge graph neural network for synthetic lethality prediction in human cancers'
+  year: '2021'
 repository: https://github.com/JieZheng-ShanghaiTech/KG4SL
 taxon:
   - NCBITaxon:9606

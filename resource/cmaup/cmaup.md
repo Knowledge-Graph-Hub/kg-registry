@@ -67,7 +67,22 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: bio2rdf
 publications:
-- doi: doi:10.1093/nar/gky965
+- authors:
+  - Xian Zeng
+  - Peng Zhang
+  - Yali Wang
+  - Chu Qin
+  - Shangying Chen
+  - Weidong He
+  - Lin Tao
+  - Ying Tan
+  - Dan Gao
+  - Bohua Wang
+  - Zhe Chen
+  - Weiping Chen
+  - Yu Yang Jiang
+  - Yu Zong Chen
+  doi: 10.1093/nar/gky965
   id: https://doi.org/10.1093/nar/gky965
   journal: Nucleic Acids Research
   preferred: true

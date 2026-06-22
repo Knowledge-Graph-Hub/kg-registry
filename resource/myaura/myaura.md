@@ -58,22 +58,22 @@ products:
         source: myaura
     product_url: https://github.com/cns-iu/myaura
 publications:
-  - authors:
-      - Rion Brattig Correia
-      - Jordan C. Rozum
-      - Leonard Cross
-      - Jack Felag
-      - Michael Gallant
-      - Ziqi Guo
-      - Bruce W. Herr
-      - Aehong Min
-      - Jon Sanchez-Valle
-      - Deborah Stungis Rocha
-    doi: 10.1093/jamia/ocaf012
-    id: doi:10.1093/jamia/ocaf012
-    journal: Journal of the American Medical Informatics Association
-    title: 'myAURA: a personalized health library for epilepsy management via knowledge graph sparsification and visualization'
-    year: '2025'
+- authors:
+  - Rion Brattig Correia
+  - Jordan C. Rozum
+  - Leonard Cross
+  - Jack Felag
+  - Michael Gallant
+  - Ziqi Guo
+  - Bruce W. Herr
+  - Aehong Min
+  - Jon Sanchez-Valle
+  - Deborah Stungis Rocha
+  doi: 10.1093/jamia/ocaf012
+  id: doi:10.1093/jamia/ocaf012
+  journal: Journal of the American Medical Informatics Association
+  title: 'myAURA: a personalized health library for epilepsy management via knowledge graph sparsification and visualization'
+  year: '2026'
 repository: https://github.com/cns-iu/myaura
 taxon:
   - NCBITaxon:9606

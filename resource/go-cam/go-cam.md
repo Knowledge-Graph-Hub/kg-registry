@@ -222,9 +222,9 @@ publications:
   - Christopher J Mungall
   doi: 10.1038/s41588-019-0500-1
   id: doi:10.1038/s41588-019-0500-1
+  journal: Nature Genetics
   preferred: true
-  title: Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations
-    to structured descriptions of biological functions and systems
+  title: Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations to structured descriptions of biological functions and systems
   year: '2019'
 repository: https://github.com/geneontology/noctua
 ---

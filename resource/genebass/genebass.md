@@ -57,12 +57,57 @@ products:
   - '2026_03_27'
   - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
 publications:
-- doi: 10.1016/j.xgen.2022.100168
+- authors:
+  - Konrad J. Karczewski
+  - Matthew Solomonson
+  - Katherine R. Chao
+  - Julia K. Goodrich
+  - Grace Tiao
+  - Wenhan Lu
+  - Bridget M. Riley-Gillis
+  - Ellen A. Tsai
+  - Hye In Kim
+  - Xiuwen Zheng
+  - Fedik Rahimov
+  - Sahar Esmaeeli
+  - A. Jason Grundstad
+  - Mark Reppell
+  - Jeff Waring
+  - Howard Jacob
+  - David Sexton
+  - Paola G. Bronson
+  - Xing Chen
+  - Xinli Hu
+  - Jacqueline I. Goldstein
+  - Daniel King
+  - Christopher Vittal
+  - Timothy Poterba
+  - Duncan S. Palmer
+  - Claire Churchhouse
+  - Daniel P. Howrigan
+  - Wei Zhou
+  - Nicholas A. Watts
+  - Kevin Nguyen
+  - Huy Nguyen
+  - Cara Mason
+  - Christopher Farnham
+  - Charlotte Tolonen
+  - Laura D. Gauthier
+  - Namrata Gupta
+  - Daniel G. MacArthur
+  - Heidi L. Rehm
+  - Cotton Seed
+  - Anthony A. Philippakis
+  - Mark J. Daly
+  - J. Wade Davis
+  - Heiko Runz
+  - Melissa R. Miller
+  - Benjamin M. Neale
+  doi: 10.1016/j.xgen.2022.100168
   id: doi:10.1016/j.xgen.2022.100168
   journal: Cell Genomics
   preferred: true
-  title: Systematic single-variant and gene-based association testing of thousands
-    of phenotypes in 394,841 UK Biobank exomes
+  title: Systematic single-variant and gene-based association testing of thousands of phenotypes in 394,841 UK Biobank exomes
   year: '2022'
 synonyms:
 - Genebass

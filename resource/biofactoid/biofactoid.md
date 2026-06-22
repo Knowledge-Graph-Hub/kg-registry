@@ -371,10 +371,26 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 publications:
-- id: https://doi.org/10.7554/eLife.68292
+- authors:
+  - Jeffrey V Wong
+  - Max Franz
+  - Metin Can Siper
+  - Dylan Fong
+  - Funda Durupinar
+  - Christian Dallago
+  - Augustin Luna
+  - John Giorgi
+  - Igor Rodchenkov
+  - Özgün Babur
+  - John A Bachman
+  - Benjamin M Gyori
+  - Emek Demir
+  - Gary D Bader
+  - Chris Sander
+  doi: 10.7554/eLife.68292
+  id: https://doi.org/10.7554/eLife.68292
   journal: eLife
-  title: 'Science Forum: Author-sourced capture of pathway knowledge in computable
-    form using Biofactoid'
+  title: 'Science Forum: Author-sourced capture of pathway knowledge in computable form using Biofactoid'
   year: '2021'
 repository: https://github.com/PathwayCommons/factoid
 synonyms:

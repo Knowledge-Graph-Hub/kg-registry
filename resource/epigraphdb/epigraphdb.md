@@ -116,23 +116,23 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://docs.epigraphdb.org/
 publications:
-  - authors:
-      - Yi Liu
-      - Benjamin Elsworth
-      - Pau Erola
-      - Valeriia Haberland
-      - Gibran Hemani
-      - Matt Lyon
-      - Jie Zheng
-      - Oliver Lloyd
-      - Marina Vabistsevits
-      - Tom R Gaunt
-    doi: 10.1093/bioinformatics/btaa961
-    id: doi:10.1093/bioinformatics/btaa961
-    journal: Bioinformatics
-    preferred: true
-    title: 'EpiGraphDB: a database and data mining platform for health data science'
-    year: '2020'
+- authors:
+  - Yi Liu
+  - Benjamin Elsworth
+  - Pau Erola
+  - Valeriia Haberland
+  - Gibran Hemani
+  - Matt Lyon
+  - Jie Zheng
+  - Oliver Lloyd
+  - Marina Vabistsevits
+  - Tom R Gaunt
+  doi: 10.1093/bioinformatics/btaa961
+  id: doi:10.1093/bioinformatics/btaa961
+  journal: Bioinformatics
+  preferred: true
+  title: 'EpiGraphDB: a database and data mining platform for health data science'
+  year: '2021'
 repository: https://github.com/MRCIEU/epigraphdb
 ---
 

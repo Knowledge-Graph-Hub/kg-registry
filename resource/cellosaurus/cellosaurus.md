@@ -212,8 +212,9 @@ products:
 publications:
 - authors:
   - Bairoch A
-  doi: doi:10.7171/jbt.18-2902-002
+  doi: 10.7171/jbt.18-2902-002
   id: doi:10.7171/jbt.18-2902-002
+  journal: 'Journal of Biomolecular Techniques : JBT'
   preferred: true
   title: The Cellosaurus, a cell-line knowledge resource
   year: '2018'

@@ -166,18 +166,18 @@ products:
   product_url: https://docs.epigraphdb.org/graph-database/
 publications:
 - authors:
-  - "V\xF5sa U"
+  - Võsa U
   - Claringbould A
   - Westra HJ
   - Bonder MJ
   - Deelen P
   - Zeng B
   - Franke L
+  doi: 10.1038/s41588-021-00913-z
   id: https://doi.org/10.1038/s41588-021-00913-z
   journal: Nature Genetics
   preferred: true
-  title: Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci
-    and polygenic scores that regulate blood gene expression
+  title: Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression
   year: '2021'
 repository: https://github.com/eqtlgen
 ---

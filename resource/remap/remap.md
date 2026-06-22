@@ -139,11 +139,11 @@ publications:
   - Bergon A
   - Lopez F
   - Ballester B
+  doi: 10.1093/nar/gkab996
   id: https://doi.org/10.1093/nar/gkab996
   journal: Nucleic Acids Research
   preferred: true
-  title: 'ReMap 2022: a database of Human, Mouse, Drosophila and Arabidopsis regulatory
-    regions from an integrative analysis of DNA-binding sequencing experiments'
+  title: 'ReMap 2022: a database of Human, Mouse, Drosophila and Arabidopsis regulatory regions from an integrative analysis of DNA-binding sequencing experiments'
   year: '2022'
 taxon:
 - NCBITaxon:9606

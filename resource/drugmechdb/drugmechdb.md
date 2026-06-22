@@ -75,11 +75,21 @@ products:
       - source: drugmechdb
         relation_type: prov:hadPrimarySource
 publications:
-  - doi: 10.1038/s41597-023-02534-z
-    id: doi:10.1038/s41597-023-02534-z
-    journal: Scientific Data
-    title: "DrugMechDB — a curated database of drug mechanisms"
-    year: '2023'
+- authors:
+  - Adriana Carolina Gonzalez-Cavazos
+  - Anna Tanska
+  - Michael Mayers
+  - Denise Carvalho-Silva
+  - Brindha Sridharan
+  - Patrick A. Rewers
+  - Umasri Sankarlal
+  - Lakshmanan Jagannathan
+  - Andrew I. Su
+  doi: 10.1038/s41597-023-02534-z
+  id: doi:10.1038/s41597-023-02534-z
+  journal: Scientific Data
+  title: DrugMechDB — a curated database of drug mechanisms
+  year: '2023'
 repository: https://github.com/SuLab/DrugMechDB
 infores_id: drugmechdb
 taxon:

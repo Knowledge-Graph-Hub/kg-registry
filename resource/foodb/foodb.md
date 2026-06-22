@@ -1019,7 +1019,7 @@ publications:
   - Li L
   - Vogel HJ
   - Forsythe I
-  doi: doi:10.1093/nar/gkn810
+  doi: 10.1093/nar/gkn810
   id: https://doi.org/10.1093/nar/gkn810
   journal: Nucleic Acids Research
   preferred: true
@@ -1054,6 +1054,7 @@ publications:
   - Wilson M
   - Manach C
   - Scalbert A
+  doi: 10.1093/nar/gkx1089
   id: https://doi.org/10.1093/nar/gkx1089
   journal: Nucleic Acids Research
   title: HMDB 4.0 - The Human Metabolome Database for 2018

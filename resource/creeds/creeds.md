@@ -186,10 +186,60 @@ products:
     source: creeds
   product_url: https://maayanlab.cloud/CREEDS/
 publications:
-- doi: 10.1038/ncomms12846
+- authors:
+  - Zichen Wang
+  - Caroline D. Monteiro
+  - Kathleen M. Jagodnik
+  - Nicolas F. Fernandez
+  - Gregory W. Gundersen
+  - Andrew D. Rouillard
+  - Sherry L. Jenkins
+  - Axel S. Feldmann
+  - Kevin S. Hu
+  - Michael G. McDermott
+  - Qiaonan Duan
+  - Neil R. Clark
+  - Matthew R. Jones
+  - Yan Kou
+  - Troy Goff
+  - Holly Woodland
+  - Fabio M R. Amaral
+  - Gregory L. Szeto
+  - Oliver Fuchs
+  - Sophia M. Schüssler-Fiorenza Rose
+  - Shvetank Sharma
+  - Uwe Schwartz
+  - Xabier Bengoetxea Bausela
+  - Maciej Szymkiewicz
+  - Vasileios Maroulis
+  - Anton Salykin
+  - Carolina M. Barra
+  - Candice D. Kruth
+  - Nicholas J. Bongio
+  - Vaibhav Mathur
+  - Radmila D Todoric
+  - Udi E. Rubin
+  - Apostolos Malatras
+  - Carl T. Fulp
+  - John A. Galindo
+  - Ruta Motiejunaite
+  - Christoph Jüschke
+  - Philip C. Dishuck
+  - Katharina Lahl
+  - Mohieddin Jafari
+  - Sara Aibar
+  - Apostolos Zaravinos
+  - Linda H. Steenhuizen
+  - Lindsey R. Allison
+  - Pablo Gamallo
+  - Fernando de Andres Segura
+  - Tyler Dae Devlin
+  - Vicente Pérez-García
+  - Avi Ma’ayan
+  doi: 10.1038/ncomms12846
   id: doi:10.1038/ncomms12846
-  title: Extraction and analysis of signatures from the Gene Expression Omnibus by
-    the crowd
+  journal: Nature Communications
+  title: Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd
   year: '2016'
 ---
 # CREEDS: Crowd Extracted Expression of Differential Signatures

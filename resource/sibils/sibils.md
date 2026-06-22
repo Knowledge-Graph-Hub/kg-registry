@@ -71,18 +71,19 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://sibils.org/API#Question-Answering-API
 publications:
-  - authors:
-      - Gobeill J
-      - Caucheteur D
-      - Michel PA
-      - Mottin L
-      - Pasche E
-      - Ruch P
-    doi: doi:10.1093/nar/gkaa328
-    id: doi:10.1093/nar/gkaa328
-    preferred: true
-    title: 'SIB Literature Services: RESTful customizable search engines in biomedical literature, enriched with automatically mapped biomedical concepts'
-    year: '2020'
+- authors:
+  - Gobeill J
+  - Caucheteur D
+  - Michel PA
+  - Mottin L
+  - Pasche E
+  - Ruch P
+  doi: 10.1093/nar/gkaa328
+  id: doi:10.1093/nar/gkaa328
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'SIB Literature Services: RESTful customizable search engines in biomedical literature, enriched with automatically mapped biomedical concepts'
+  year: '2020'
 creation_date: '2025-05-07T00:00:00Z'
 last_modified_date: '2025-12-07T00:00:00Z'
 ---

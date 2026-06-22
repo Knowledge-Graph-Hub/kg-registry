@@ -23,12 +23,47 @@ synonyms:
   - OmicsDI
   - Omics Discovery Index
 publications:
-  - preferred: true
-    id: doi:10.1038/nbt.3790
-    title: Discovering and linking public omics data sets using the Omics Discovery Index
-    journal: Nature Biotechnology
-    year: "2017"
-    doi: 10.1038/nbt.3790
+- authors:
+  - Yasset Perez-Riverol
+  - Mingze Bai
+  - Felipe da Veiga Leprevost
+  - Silvano Squizzato
+  - Young Mi Park
+  - Kenneth Haug
+  - Adam J Carroll
+  - Dylan Spalding
+  - Justin Paschall
+  - Mingxun Wang
+  - Noemi del-Toro
+  - Tobias Ternent
+  - Peng Zhang
+  - Nicola Buso
+  - Nuno Bandeira
+  - Eric W Deutsch
+  - David S Campbell
+  - Ronald C Beavis
+  - Reza M Salek
+  - Ugis Sarkans
+  - Robert Petryszak
+  - Maria Keays
+  - Eoin Fahy
+  - Manish Sud
+  - Shankar Subramaniam
+  - Ariana Barbera
+  - Rafael C Jiménez
+  - Alexey I Nesvizhskii
+  - Susanna-Assunta Sansone
+  - Christoph Steinbeck
+  - Rodrigo Lopez
+  - Juan A Vizcaíno
+  - Peipei Ping
+  - Henning Hermjakob
+  doi: 10.1038/nbt.3790
+  id: doi:10.1038/nbt.3790
+  journal: Nature Biotechnology
+  preferred: true
+  title: Discovering and linking public omics data sets using the Omics Discovery Index
+  year: '2017'
 products:
   - category: GraphicalInterface
     description: Web portal for searching and browsing integrated omics dataset metadata across repositories.

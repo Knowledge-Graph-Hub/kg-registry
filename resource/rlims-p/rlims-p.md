@@ -137,14 +137,23 @@ publications:
   id: doi:10.1109/TCBB.2014.2372765
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   preferred: true
-  title: 'RLIMS-P 2.0: a generalizable rule-based information extraction system for
-    literature mining of protein phosphorylation information'
+  title: 'RLIMS-P 2.0: a generalizable rule-based information extraction system for literature mining of protein phosphorylation information'
   year: '2015'
-- doi: 10.1093/database/bau081
+- authors:
+  - M. Torii
+  - G. Li
+  - Z. Li
+  - R. Oughtred
+  - F. Diella
+  - I. Celen
+  - C. N. Arighi
+  - H. Huang
+  - K. Vijay-Shanker
+  - C. H. Wu
+  doi: 10.1093/database/bau081
   id: doi:10.1093/database/bau081
   journal: Database
-  title: RLIMS-P, an online text-mining tool for literature-based extraction of protein
-    phosphorylation information
+  title: RLIMS-P, an online text-mining tool for literature-based extraction of protein phosphorylation information
   year: '2014'
 synonyms:
 - Rule-based Literature Mining System for Protein Phosphorylation

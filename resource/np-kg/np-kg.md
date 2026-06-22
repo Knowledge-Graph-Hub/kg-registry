@@ -40,19 +40,20 @@ products:
     product_file_size: 936065236
     product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
 publications:
-  - authors:
-      - Taneja SB
-      - Callahan TJ
-      - Paine MF
-      - Kane-Gill SL
-      - Kilicoglu H
-      - Joachimiak MP
-      - Boyce RD
-    doi: doi:10.1016/j.jbi.2023.104341
-    id: doi:10.1016/j.jbi.2023.104341
-    preferred: true
-    title: '''Developing a Knowledge Graph for Pharmacokinetic Natural Product-Drug Interactions'''
-    year: '2023'
+- authors:
+  - Taneja SB
+  - Callahan TJ
+  - Paine MF
+  - Kane-Gill SL
+  - Kilicoglu H
+  - Joachimiak MP
+  - Boyce RD
+  doi: 10.1016/j.jbi.2023.104341
+  id: doi:10.1016/j.jbi.2023.104341
+  journal: Journal of Biomedical Informatics
+  preferred: true
+  title: '''Developing a Knowledge Graph for Pharmacokinetic Natural Product-Drug Interactions'''
+  year: '2023'
 repository: https://github.com/sanyabt/np-kg
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'

@@ -73,7 +73,19 @@ publications:
   preferred: true
   title: 'UniCarbKB: building a knowledge platform for glycoproteomics'
   year: '2014'
-- doi: 10.1002/pmic.201100302
+- authors:
+  - Matthew P. Campbell
+  - Catherine A. Hayes
+  - Weston B. Struwe
+  - Marc R. Wilkins
+  - Kiyoko F. Aoki‐Kinoshita
+  - David J. Harvey
+  - Pauline M. Rudd
+  - Daniel Kolarich
+  - Frederique Lisacek
+  - Niclas G. Karlsson
+  - Nicolle H. Packer
+  doi: 10.1002/pmic.201100302
   id: doi:10.1002/pmic.201100302
   journal: Proteomics
   title: 'UniCarbKB: putting the pieces together for glycomics research'

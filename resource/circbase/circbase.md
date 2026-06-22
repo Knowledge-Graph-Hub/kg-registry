@@ -182,7 +182,12 @@ products:
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
 publications:
-- id: doi:10.1261/rna.043687.113
+- authors:
+  - Petar Glažar
+  - Panagiotis Papavasileiou
+  - Nikolaus Rajewsky
+  doi: 10.1261/rna.043687.113
+  id: doi:10.1261/rna.043687.113
   journal: RNA
   preferred: true
   title: 'circBase: a database for circular RNAs'

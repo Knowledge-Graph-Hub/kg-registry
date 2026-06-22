@@ -35,14 +35,15 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
 publications:
-  - authors:
-      - Gao Z
-      - Ding P
-      - Xu R
-    doi: doi:10.1016/j.jbi.2022.104133
-    id: doi:10.1016/j.jbi.2022.104133
-    title: 'KG-Predict: A knowledge graph computational framework for drug repurposing'
-    year: '2022'
+- authors:
+  - Gao Z
+  - Ding P
+  - Xu R
+  doi: 10.1016/j.jbi.2022.104133
+  id: doi:10.1016/j.jbi.2022.104133
+  journal: Journal of Biomedical Informatics
+  title: 'KG-Predict: A knowledge graph computational framework for drug repurposing'
+  year: '2022'
 repository: http://nlp.case.edu/public/data/GPKG-Predict/
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'

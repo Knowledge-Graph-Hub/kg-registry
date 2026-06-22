@@ -101,22 +101,23 @@ products:
       - source: chea
         relation_type: prov:wasInfluencedBy
 publications:
-  - authors:
-      - Keenan AB
-      - Torre D
-      - Lachmann A
-      - Leong AK
-      - Wojciechowicz ML
-      - Utti V
-      - Jagodnik KM
-      - Kropiwnicki E
-      - Wang Z
-      - Ma'ayan A
-    id: doi:10.1093/nar/gkz446
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'ChEA3: transcription factor enrichment analysis by orthogonal omics integration'
-    year: '2019'
+- authors:
+  - Keenan AB
+  - Torre D
+  - Lachmann A
+  - Leong AK
+  - Wojciechowicz ML
+  - Utti V
+  - Jagodnik KM
+  - Kropiwnicki E
+  - Wang Z
+  - Ma'ayan A
+  doi: 10.1093/nar/gkz446
+  id: doi:10.1093/nar/gkz446
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'ChEA3: transcription factor enrichment analysis by orthogonal omics integration'
+  year: '2019'
 repository: https://github.com/MaayanLab/chea-kg
 ---
 

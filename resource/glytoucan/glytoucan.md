@@ -72,7 +72,33 @@ products:
   - relation_type: prov:wasInformedBy
     source: glytoucan
 publications:
-- id: https://doi.org/10.1093/nar/gkv1041
+- authors:
+  - Kiyoko Aoki-Kinoshita
+  - Sanjay Agravat
+  - Nobuyuki P. Aoki
+  - Sena Arpinar
+  - Richard D. Cummings
+  - Akihiro Fujita
+  - Noriaki Fujita
+  - Gerald M. Hart
+  - Stuart M. Haslam
+  - Toshisuke Kawasaki
+  - Masaaki Matsubara
+  - Kelley W. Moreman
+  - Shujiro Okuda
+  - Michael Pierce
+  - René Ranzinger
+  - Toshihide Shikanai
+  - Daisuke Shinmachi
+  - Elena Solovieva
+  - Yoshinori Suzuki
+  - Shinichiro Tsuchiya
+  - Issaku Yamada
+  - William S. York
+  - Joseph Zaia
+  - Hisashi Narimatsu
+  doi: 10.1093/nar/gkv1041
+  id: https://doi.org/10.1093/nar/gkv1041
   journal: Nucleic Acids Research
   title: GlyTouCan 1.0 - The international glycan structure repository
   year: '2016'

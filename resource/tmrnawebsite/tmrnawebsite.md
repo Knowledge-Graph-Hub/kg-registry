@@ -486,6 +486,7 @@ publications:
 - authors:
   - Hudson CM
   - Williams KP
+  doi: 10.1093/nar/gku1109
   id: https://doi.org/10.1093/nar/gku1109
   journal: Nucleic Acids Research
   preferred: true

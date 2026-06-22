@@ -26,12 +26,17 @@ contacts:
       - contact_type: url
         value: https://gdc.cancer.gov/
 publications:
-  - preferred: true
-    id: doi:10.1182/blood-2017-03-735654
-    title: The NCI Genomic Data Commons as an engine for precision medicine
-    journal: Blood
-    year: "2017"
-    doi: 10.1182/blood-2017-03-735654
+- authors:
+  - Mark A. Jensen
+  - Vincent Ferretti
+  - Robert L. Grossman
+  - Louis M. Staudt
+  doi: 10.1182/blood-2017-03-735654
+  id: doi:10.1182/blood-2017-03-735654
+  journal: Blood
+  preferred: true
+  title: The NCI Genomic Data Commons as an engine for precision medicine
+  year: '2017'
 products:
   - category: GraphicalInterface
     description: Main GDC web portal for interactive exploration of projects, cohorts, and files.

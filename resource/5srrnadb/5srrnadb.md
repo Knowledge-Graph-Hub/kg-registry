@@ -796,7 +796,13 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- doi: 10.1093/nar/gkv1081
+- authors:
+  - Maciej Szymanski
+  - Andrzej Zielezinski
+  - Jan Barciszewski
+  - Volker A. Erdmann
+  - Wojciech M. Karlowski
+  doi: 10.1093/nar/gkv1081
   id: doi:10.1093/nar/gkv1081
   journal: Nucleic Acids Research
   preferred: true

@@ -500,30 +500,31 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Bailing Zhou
-      - Baohua Ji
-      - Congcong Shen
-      - Xia Zhang
-      - Xue Yu
-      - Pingping Huang
-      - Ru Yu
-      - Hongmei Zhang
-      - Xianghua Dou
-      - Qingshuai Chen
-      - Gang Hu
-      - Keren Wang
-      - Fengcui Qian
-      - Fengxia Chen
-      - Xiaojuan Zhi
-      - Chunqing Wang
-      - Jian Ren
-      - Yan Wang
-    id: https://doi.org/10.1093/nar/gkad1057
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'EVLncRNAs 3.0: an updated comprehensive database for manually curated functional long non-coding RNAs validated by low-throughput experiments'
-    year: '2024'
+- authors:
+  - Bailing Zhou
+  - Baohua Ji
+  - Congcong Shen
+  - Xia Zhang
+  - Xue Yu
+  - Pingping Huang
+  - Ru Yu
+  - Hongmei Zhang
+  - Xianghua Dou
+  - Qingshuai Chen
+  - Gang Hu
+  - Keren Wang
+  - Fengcui Qian
+  - Fengxia Chen
+  - Xiaojuan Zhi
+  - Chunqing Wang
+  - Jian Ren
+  - Yan Wang
+  doi: 10.1093/nar/gkad1057
+  id: https://doi.org/10.1093/nar/gkad1057
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'EVLncRNAs 3.0: an updated comprehensive database for manually curated functional long non-coding RNAs validated by low-throughput experiments'
+  year: '2024'
 taxon:
   - NCBITaxon:9606
 ---

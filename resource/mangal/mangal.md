@@ -84,32 +84,32 @@ products:
       - source: itis
         relation_type: prov:used
 publications:
-  - authors:
-      - Steve Vissault
-      - Dominique Gravel
-      - Timothee Poisot
-    doi: 10.3897/biss.3.37037
-    id: doi:10.3897/biss.3.37037
-    journal: Biodiversity Information Science and Standards
-    preferred: true
-    title: 'Mangal: An open infrastructure for ecological interactions'
-    year: '2019'
-  - authors:
-      - Timothee Poisot
-      - Benjamin Baiser
-      - Jennifer A. Dunne
-      - Sonia Kefi
-      - Francois Massol
-      - Nicolas Mouquet
-      - Tamara N. Romanuk
-      - Daniel B. Stouffer
-      - Spencer A. Wood
-      - Dominique Gravel
-    doi: 10.1111/ecog.00976
-    id: doi:10.1111/ecog.00976
-    journal: Ecography
-    title: mangal - making ecological network analysis simple
-    year: '2015'
+- authors:
+  - Steve Vissault
+  - Dominique Gravel
+  - Timothee Poisot
+  doi: 10.3897/biss.3.37037
+  id: doi:10.3897/biss.3.37037
+  journal: Biodiversity Information Science and Standards
+  preferred: true
+  title: 'Mangal: An open infrastructure for ecological interactions'
+  year: '2019'
+- authors:
+  - Timothee Poisot
+  - Benjamin Baiser
+  - Jennifer A. Dunne
+  - Sonia Kefi
+  - Francois Massol
+  - Nicolas Mouquet
+  - Tamara N. Romanuk
+  - Daniel B. Stouffer
+  - Spencer A. Wood
+  - Dominique Gravel
+  doi: 10.1111/ecog.00976
+  id: doi:10.1111/ecog.00976
+  journal: Ecography
+  title: mangal - making ecological network analysis simple
+  year: '2016'
 taxon:
   - NCBITaxon:33208
   - NCBITaxon:33090

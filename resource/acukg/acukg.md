@@ -83,26 +83,26 @@ products:
         source: snomedct
     product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json
 publications:
-  - authors:
-      - Yiming Li
-      - Xueqing Peng
-      - Suyuan Peng
-      - Jianfu Li
-      - Donghong Pei
-      - Qin Zhang
-      - Yiwei Lu
-      - Yan Hu
-      - Fang Li
-      - Li Zhou
-      - Yongqun He
-      - Cui Tao
-      - Hua Xu
-      - Na Hong
-    doi: 10.1093/jamia/ocaf179
-    id: doi:10.1093/jamia/ocaf179
-    journal: Journal of the American Medical Informatics Association
-    title: 'AcuKG: a comprehensive knowledge graph for medical acupuncture'
-    year: '2025'
+- authors:
+  - Yiming Li
+  - Xueqing Peng
+  - Suyuan Peng
+  - Jianfu Li
+  - Donghong Pei
+  - Qin Zhang
+  - Yiwei Lu
+  - Yan Hu
+  - Fang Li
+  - Li Zhou
+  - Yongqun He
+  - Cui Tao
+  - Hua Xu
+  - Na Hong
+  doi: 10.1093/jamia/ocaf179
+  id: doi:10.1093/jamia/ocaf179
+  journal: Journal of the American Medical Informatics Association
+  title: 'AcuKG: a comprehensive knowledge graph for medical acupuncture'
+  year: '2026'
 repository: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture
 taxon:
   - NCBITaxon:9606

@@ -1459,9 +1459,8 @@ publications:
   id: doi:10.1093/nar/gkz946
   journal: Nucleic Acids Research
   preferred: true
-  title: 'Pathway Commons 2019 Update: integration, analysis and exploration of pathway
-    data'
-  year: '2020'
+  title: 'Pathway Commons 2019 Update: integration, analysis and exploration of pathway data'
+  year: '2019'
 - authors:
   - E. G. Cerami
   - B. E. Gross
@@ -1485,8 +1484,7 @@ publications:
   doi: 10.1186/1471-2105-7-497
   id: doi:10.1186/1471-2105-7-497
   journal: BMC Bioinformatics
-  title: 'cPath: open source software for collecting, storing, and querying biological
-    pathways'
+  title: 'cPath: open source software for collecting, storing, and querying biological pathways'
   year: '2006'
 repository: https://github.com/PathwayCommons
 synonyms:

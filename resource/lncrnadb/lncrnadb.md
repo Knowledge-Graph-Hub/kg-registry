@@ -452,17 +452,18 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Paulo P Amaral
-      - Michael B Clark
-      - Dennis K Gascoigne
-      - Marcel E Dinger
-      - John S Mattick
-    id: https://doi.org/10.1093/nar/gkq1138
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'lncRNAdb: a reference database for long noncoding RNAs'
-    year: '2011'
+- authors:
+  - Paulo P Amaral
+  - Michael B Clark
+  - Dennis K Gascoigne
+  - Marcel E Dinger
+  - John S Mattick
+  doi: 10.1093/nar/gkq1138
+  id: https://doi.org/10.1093/nar/gkq1138
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'lncRNAdb: a reference database for long noncoding RNAs'
+  year: '2011'
 warnings:
   - This database is no longer active and the website is no longer accessible.
 taxon:

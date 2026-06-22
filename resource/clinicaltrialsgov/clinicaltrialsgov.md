@@ -1024,7 +1024,7 @@ publications:
   - Williams RJ
   - Califf RM
   - Ide NC
-  doi: doi:10.1056/NEJMsa1012065
+  doi: 10.1056/NEJMsa1012065
   id: https://pubmed.ncbi.nlm.nih.gov/21366476/
   journal: The New England Journal of Medicine
   preferred: true

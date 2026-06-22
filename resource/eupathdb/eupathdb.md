@@ -133,6 +133,7 @@ publications:
   - Gajria B
   - Gao X
   - Gingle A
+  doi: 10.1093/nar/gks1113
   id: https://doi.org/10.1093/nar/gks1113
   journal: Nucleic Acids Research
   preferred: true

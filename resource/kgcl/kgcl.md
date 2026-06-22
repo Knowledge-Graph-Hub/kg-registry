@@ -70,23 +70,24 @@ products:
     product_file_size: 7492
     product_url: https://w3id.org/kgcl/kgcl.yaml
 publications:
-  - authors:
-      - Hegde H
-      - Vendetti J
-      - Goutte-Gattat D
-      - Caufield JH
-      - Graybeal JB
-      - Harris NL
-      - Karam N
-      - Kindermann C
-      - Matentzoglu N
-      - Overton JA
-      - Mungall CJ
-    id: doi:10.1093/database/baae133
-    journal: Database
-    preferred: true
-    title: A change language for ontologies and knowledge graphs
-    year: '2025'
+- authors:
+  - Hegde H
+  - Vendetti J
+  - Goutte-Gattat D
+  - Caufield JH
+  - Graybeal JB
+  - Harris NL
+  - Karam N
+  - Kindermann C
+  - Matentzoglu N
+  - Overton JA
+  - Mungall CJ
+  doi: 10.1093/database/baae133
+  id: doi:10.1093/database/baae133
+  journal: Database
+  preferred: true
+  title: A change language for ontologies and knowledge graphs
+  year: '2025'
 repository: https://github.com/INCATools/kgcl/
 version: 0.7.0
 creation_date: '2025-03-09T00:00:00Z'

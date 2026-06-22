@@ -2017,7 +2017,7 @@ publications:
   journal: Nucleic Acids Research
   preferred: true
   title: The DisGeNET knowledge platform for disease genomics - 2019 update
-  year: '2020'
+  year: '2019'
 taxon:
 - NCBITaxon:9606
 ---

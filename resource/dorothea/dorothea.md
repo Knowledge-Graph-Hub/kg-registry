@@ -133,24 +133,31 @@ products:
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
-- doi: 10.1101/gr.240663.118
-  authors:
+- authors:
   - Luz Garcia-Alonso
   - Christian H. Holland
   - Mahmoud M. Ibrahim
   - Denes Turei
   - Julio Saez-Rodriguez
+  doi: 10.1101/gr.240663.118
   id: doi:10.1101/gr.240663.118
   journal: Genome Research
   preferred: true
-  title: Benchmark and integration of resources for the estimation of human transcription
-    factor activities
+  title: Benchmark and integration of resources for the estimation of human transcription factor activities
   year: '2019'
-- doi: 10.1101/2023.03.30.534849
+- authors:
+  - Sophia Müller-Dott
+  - Eirini Tsirvouli
+  - Miguel Vázquez
+  - Ricardo O. Ramirez Flores
+  - Pau Badia-i-Mompel
+  - Robin Fallegger
+  - Astrid Lægreid
+  - Julio Saez-Rodriguez
+  doi: 10.1101/2023.03.30.534849
   id: doi:10.1101/2023.03.30.534849
   journal: bioRxiv
-  title: Expanding the coverage of regulons from high-confidence prior knowledge for
-    accurate estimation of transcription factor activities
+  title: Expanding the coverage of regulons from high-confidence prior knowledge for accurate estimation of transcription factor activities
   year: '2023'
 repository: https://github.com/saezlab/dorothea/
 taxon:

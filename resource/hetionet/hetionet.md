@@ -1047,12 +1047,11 @@ publications:
   - Blair D Sullivan
   - Michael W Nagle
   - Casey S Greene
-  doi: doi:10.1093/gigascience/giad047
+  doi: 10.1093/gigascience/giad047
   id: https://doi.org/10.1093/gigascience/giad047
   journal: GigaScience
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities
-    are related
-  year: '2023'
+  title: Hetnet connectivity search provides rapid insights into how biomedical entities are related
+  year: '2022'
 repository: https://github.com/hetio/hetionet
 taxon:
 - NCBITaxon:9606

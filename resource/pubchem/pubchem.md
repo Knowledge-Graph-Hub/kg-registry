@@ -2073,8 +2073,9 @@ publications:
   - Zaslavsky L
   - Zhang J
   - Bolton EE
-  doi: doi:10.1093/nar/gky1033
+  doi: 10.1093/nar/gky1033
   id: doi:10.1093/nar/gky1033
+  journal: Nucleic Acids Research
   preferred: true
   title: PubChem 2019 update - improved access to chemical data
   year: '2019'

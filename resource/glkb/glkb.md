@@ -28,37 +28,37 @@ products:
     product_url: https://glkb.org/
     format: http
 publications:
-  - authors:
-      - Huang Y
-      - Han Z
-      - Luo X
-      - Luo X
-      - Gao Y
-      - Zhao M
-      - Tang F
-      - Wang Y
-      - Chen J
-      - Li C
-      - Lu X
-      - Jiao T
-      - Qiu J
-      - Deng F
-      - Guan L
-      - Shang H
-      - Feng F
-      - Vu THH
-      - Bate T
-      - Xue D
-      - Cartailler J-P
-      - Stitzel M
-      - Chen S
-      - Brissova M
-      - Parker S
-      - Liu J
-    doi: 10.1101/2024.09.22.614323
-    id: doi:10.1101/2024.09.22.614323
-    title: Building a literature knowledge base towards transparent biomedical AI
-    year: '2025'
+- authors:
+  - Huang Y
+  - Han Z
+  - Luo X
+  - Luo X
+  - Gao Y
+  - Zhao M
+  - Tang F
+  - Wang Y
+  - Chen J
+  - Li C
+  - Lu X
+  - Jiao T
+  - Qiu J
+  - Deng F
+  - Guan L
+  - Shang H
+  - Feng F
+  - Vu THH
+  - Bate T
+  - Xue D
+  - Cartailler J-P
+  - Stitzel M
+  - Chen S
+  - Brissova M
+  - Parker S
+  - Liu J
+  doi: 10.1101/2024.09.22.614323
+  id: doi:10.1101/2024.09.22.614323
+  title: Building a literature knowledge base towards transparent biomedical AI
+  year: '2024'
 creation_date: '2025-03-20T00:00:00Z'
 last_modified_date: '2026-06-01T00:00:00Z'
 ---
