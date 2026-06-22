@@ -22,7 +22,7 @@ domains:
 homepage_url: https://github.com/jakelever/GNBR
 id: gnbr
 infores_id: gnbr
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,6 +33,7 @@ products:
   description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
     \ relationships (semantic themes)"
   id: gnbr.graph
+  format: http
   name: GNBR graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -47,6 +48,7 @@ products:
     chemicals, and diseases
   edge_count: 500958
   id: pharmkg.graph
+  format: mixed
   name: PharmKG graph
   node_count: 7603
   original_source:
@@ -82,6 +84,7 @@ products:
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
   id: drkg.graph
+  format: mixed
   name: DRKG graph
   original_source:
   - relation_type: prov:hadPrimarySource

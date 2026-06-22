@@ -83,7 +83,7 @@ publications:
   journal: Nucleic Acids Research
   preferred: true
   title: 'CEBS update: curated toxicology database with enhanced tools for data integration'
-  year: '2021'
+  year: '2022'
 - authors:
   - Isabel A. Lea
   - Hui Gong

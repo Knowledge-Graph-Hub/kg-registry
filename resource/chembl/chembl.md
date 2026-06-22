@@ -17,7 +17,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/chembl/
 id: chembl
 infores_id: chembl
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/
@@ -104,6 +104,7 @@ products:
 - category: MappingProduct
   description: Mapping between chembl_35 target chembl_ids and UniProt accessions
   id: chembl.map_to_uniprot
+  format: txt
   is_public: true
   name: ChEMBL map to UniProt
   original_source:
@@ -309,6 +310,7 @@ products:
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
   id: rtx-kg2.neo4j
+  format: http
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -367,6 +369,7 @@ products:
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
   id: indra.cogex.code
+  format: python
   name: INDRA CoGEx Build Code
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -489,6 +492,7 @@ products:
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
   id: ibkh.graph
+  format: mixed
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -968,7 +972,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/download/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -1027,7 +1031,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -1459,12 +1463,12 @@ publications:
   - Monecke PM
   - Landrum GA
   - Leach AR
-  doi: doi:10.1093/nar/gkad1004
+  doi: 10.1093/nar/gkad1004
   id: doi:10.1093/nar/gkad1004
+  journal: Nucleic Acids Research
   preferred: true
-  title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple
-    bioactivity data types and time periods'
-  year: '2023'
+  title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods'
+  year: '2024'
 repository: https://github.com/chembl
 taxon:
 - NCBITaxon:9606

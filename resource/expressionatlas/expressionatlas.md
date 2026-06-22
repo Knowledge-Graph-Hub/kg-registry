@@ -683,8 +683,7 @@ publications:
   id: https://doi.org/10.1093/nar/gkad1021
   journal: Nucleic Acids Research
   preferred: true
-  title: 'Expression Atlas update: insights from sequencing data at both bulk and
-    single cell level'
+  title: 'Expression Atlas update: insights from sequencing data at both bulk and single cell level'
   year: '2024'
 - authors:
   - Irene Papatheodorou
@@ -711,7 +710,7 @@ publications:
   id: https://doi.org/10.1093/nar/gkz947
   journal: Nucleic Acids Research
   title: 'Expression Atlas update: from tissues to single cells'
-  year: '2020'
+  year: '2019'
 repository: https://github.com/ebi-gene-expression-group
 ---
 # Expression Atlas

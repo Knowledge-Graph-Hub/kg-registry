@@ -413,11 +413,14 @@ products:
     source: try
   product_url: https://sib-swiss.github.io/sparql-editor/emi
 publications:
-- doi: 10.1016/j.ecoinf.2014.08.005
+- authors:
+  - Jorrit H. Poelen
+  - James D. Simons
+  - Chris J. Mungall
+  doi: 10.1016/j.ecoinf.2014.08.005
   id: doi:10.1016/j.ecoinf.2014.08.005
   journal: Ecological Informatics
-  title: 'Global Biotic Interactions: An open infrastructure to share and analyze
-    species-interaction datasets'
+  title: 'Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets'
   year: '2014'
 taxon:
 - NCBITaxon:2759

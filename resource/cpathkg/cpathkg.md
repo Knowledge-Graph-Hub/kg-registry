@@ -34,18 +34,19 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
 publications:
-  - authors:
-      - Braun I
-      - Hartley E
-      - Olson D
-      - Matentzoglu N
-      - Schaper K
-      - Walls R
-      - Vasilevsky N
-    doi: 10.1093/jamiaopen/ooaf001
-    id: doi:10.1093/jamiaopen/ooaf001
-    title: Increased discoverability of rare disease datasets through knowledge graph integration
-    year: '2025'
+- authors:
+  - Braun I
+  - Hartley E
+  - Olson D
+  - Matentzoglu N
+  - Schaper K
+  - Walls R
+  - Vasilevsky N
+  doi: 10.1093/jamiaopen/ooaf001
+  id: doi:10.1093/jamiaopen/ooaf001
+  journal: JAMIA Open
+  title: Increased discoverability of rare disease datasets through knowledge graph integration
+  year: '2024'
 creation_date: '2025-04-11T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'
 ---

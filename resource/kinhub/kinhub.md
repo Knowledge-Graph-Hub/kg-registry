@@ -75,11 +75,17 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
 publications:
-- doi: 10.1186/s12859-016-1433-7
-  id: eid2017kinmap
+- authors:
+  - Sameh Eid
+  - Samo Turk
+  - Andrea Volkamer
+  - Friedrich Rippmann
+  - Simone Fulle
+  doi: 10.1186/s12859-016-1433-7
+  id: doi:10.1186/s12859-016-1433-7
+  journal: BMC Bioinformatics
   preferred: true
-  title: 'KinMap: a web-based tool for interactive navigation through human kinome
-    data'
+  title: 'KinMap: a web-based tool for interactive navigation through human kinome data'
   year: '2017'
 synonyms:
 - Human Kinase Hub

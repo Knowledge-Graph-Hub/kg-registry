@@ -1612,20 +1612,20 @@ publications:
   - Landrum MJ
   - Ledbetter DH
   - et al.
-  doi: doi:10.1056/NEJMsr1406261
+  doi: 10.1056/NEJMsr1406261
   id: https://doi.org/10.1056/NEJMsr1406261
   journal: New England Journal of Medicine
   preferred: true
-  title: "ClinGen \u2014 The Clinical Genome Resource"
+  title: ClinGen — The Clinical Genome Resource
   year: '2015'
 - authors:
+  - Erica F. Andersen
   - ClinGen Consortium
-  doi: doi:10.1016/j.gim.2024.101228
+  doi: 10.1016/j.gim.2024.101228
   id: https://doi.org/10.1016/j.gim.2024.101228
   journal: Genetics in Medicine
-  title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through
-    global curation'
-  year: '2024'
+  title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through global curation'
+  year: '2025'
 taxon:
 - NCBITaxon:9606
 ---

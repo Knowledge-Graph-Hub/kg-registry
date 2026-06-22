@@ -17,12 +17,18 @@ repository: https://github.com/ORCID
 category: DataSource
 last_modified_date: '2026-05-30T00:00:00Z'
 publications:
-  - preferred: true
-    id: doi:10.1087/20120404
-    title: "ORCID: a system to uniquely identify researchers"
-    journal: Learned Publishing
-    year: "2012"
-    doi: 10.1087/20120404
+- authors:
+  - Laurel L. HAAK
+  - Martin FENNER
+  - Laura PAGLIONE
+  - Ed PENTZ
+  - Howard RATNER
+  doi: 10.1087/20120404
+  id: doi:10.1087/20120404
+  journal: Learned Publishing
+  preferred: true
+  title: 'ORCID: a system to uniquely identify researchers'
+  year: '2012'
 products:
   - category: GraphicalInterface
     description: Web interface for searching ORCID records and viewing researcher profiles.

@@ -17,7 +17,7 @@ domains:
 homepage_url: https://www.uniprot.org/
 id: uniprot
 infores_id: uniprot
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,8 +35,7 @@ products:
     source: kg-microbe
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4796343398
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: Product
   compression: gzip
   description: The Reviewed (Swiss-Prot) section of UniProt proteins
@@ -123,6 +122,7 @@ products:
 - category: MappingProduct
   description: Mapping between chembl_35 target chembl_ids and UniProt accessions
   id: chembl.map_to_uniprot
+  format: txt
   is_public: true
   name: ChEMBL map to UniProt
   original_source:
@@ -231,6 +231,7 @@ products:
     API key to access.
   dump_format: neo4j
   id: ubkg.neo4j
+  format: neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -570,6 +571,7 @@ products:
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
   id: rtx-kg2.neo4j
+  format: http
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -627,6 +629,7 @@ products:
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
   id: disgenet.data
+  format: http
   name: DisGeNET Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1168,8 +1171,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -1290,8 +1292,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -3221,7 +3222,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/download/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -3280,7 +3281,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: http://juniper.health.unm.edu/tcrd/
+  product_url: https://unmtid-dbs.net/download/TCRD/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: uniprot
@@ -3683,6 +3684,7 @@ products:
     entries, proteomics evidence, variants, expression, interactions, localization,
     and functional annotations.
   id: nextprot.portal
+  format: http
   name: neXtProt Web Platform
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3862,6 +3864,7 @@ products:
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
   id: pathwaycommons.gmt
+  format: tsv
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource

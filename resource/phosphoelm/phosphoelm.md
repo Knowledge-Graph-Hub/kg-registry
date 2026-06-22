@@ -151,7 +151,7 @@ publications:
   id: doi:10.1093/nar/gkm772
   journal: Nucleic Acids Research
   title: Phospho.ELM, a database of phosphorylation sites - update 2008
-  year: '2008'
+  year: '2007'
 - authors:
   - Francesca Diella
   - Scott Cameron
@@ -165,8 +165,7 @@ publications:
   doi: 10.1186/1471-2105-5-79
   id: doi:10.1186/1471-2105-5-79
   journal: BMC Bioinformatics
-  title: Phospho.ELM, a database of experimentally verified phosphorylation sites
-    in eukaryotic proteins
+  title: Phospho.ELM, a database of experimentally verified phosphorylation sites in eukaryotic proteins
   year: '2004'
 synonyms:
 - PhosphoELM

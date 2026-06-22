@@ -12,13 +12,14 @@ domains:
 - biomedical
 homepage_url: https://forum-webapp.semantic-metabolomics.fr/
 id: forum
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: FORUM
 products:
 - category: GraphicalInterface
   description: FORUM web application interface for semantic metabolomics exploration
   id: forum.webapp
+  format: http
   name: FORUM Web Application
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -35,6 +36,7 @@ products:
 - category: ProgrammingInterface
   description: FORUM REST API for programmatic access to chemical-disease associations
   id: forum.api
+  format: http
   name: FORUM API
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -52,6 +54,7 @@ products:
   description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
     the knowledge graph structure
   id: forum.void
+  format: ttl
   name: FORUM VoID Metadata
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -70,6 +73,7 @@ products:
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
   id: forum.graph.dump
+  format: mixed
   name: FORUM Knowledge Graph Dump
   original_source:
   - relation_type: prov:hadPrimarySource

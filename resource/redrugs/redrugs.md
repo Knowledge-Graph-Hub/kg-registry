@@ -1,6 +1,19 @@
 ---
 activity_status: inactive
 category: KnowledgeGraph
+contacts:
+  - category: Individual
+    label: James P. McCusker
+    contact_details:
+      - contact_type: email
+        value: mccusj@cs.rpi.edu
+      - contact_type: url
+        value: https://tw.rpi.edu/web/person/JamesMcCusker
+  - category: Organization
+    label: Tetherless World Constellation, Rensselaer Polytechnic Institute
+    contact_details:
+      - contact_type: url
+        value: https://tw.rpi.edu/
 creation_date: '2025-11-22T00:00:00Z'
 description: ReDrugs is a probabilistic knowledge graph for drug repositioning that integrates drug-target, protein-protein, and disease-gene interactions from multiple databases. The system uses evidence-weighted nanopublications to assign confidence scores to interactions based on experimental methods and manual curation. ReDrugs was designed to identify novel drug candidates for diseases, particularly melanoma, by filtering and analyzing systems biology networks with probabilistic methods. The platform included both a web interface and API for exploring molecular interaction networks. The web interface appears to be no longer accessible.
 domains:
@@ -10,7 +23,7 @@ domains:
   - pharmacology
 homepage_url: http://redrugs.tw.rpi.edu/
 id: redrugs
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -20,6 +33,7 @@ products:
   - category: GraphicalInterface
     description: Interactive web interface for exploring drug-disease networks with probabilistic filtering and graph visualization
     id: redrugs.web
+    format: http
     name: ReDrugs Web Interface
     original_source:
       - source: redrugs
@@ -36,6 +50,7 @@ products:
   - category: ProgrammingInterface
     description: SADI web services API for querying the knowledge graph including resource search, interaction lookup, and network expansion
     id: redrugs.api
+    format: http
     name: ReDrugs API
     original_source:
       - source: redrugs

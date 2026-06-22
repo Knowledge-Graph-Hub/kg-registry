@@ -119,12 +119,24 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://bis.zju.edu.cn/hald
 publications:
-  - doi: doi:10.1038/s41597-023-02781-0
-    id: https://doi.org/10.1038/s41597-023-02781-0
-    journal: Scientific Data
-    preferred: true
-    title: HALD, a human aging and longevity knowledge graph for precision gerontology and geroscience analyses
-    year: '2023'
+- authors:
+  - Zexu Wu
+  - Cong Feng
+  - Yanshi Hu
+  - Yincong Zhou
+  - Sida Li
+  - Shilong Zhang
+  - Yueming Hu
+  - Yuhao Chen
+  - Haoyu Chao
+  - Qingyang Ni
+  - Ming Chen
+  doi: 10.1038/s41597-023-02781-0
+  id: https://doi.org/10.1038/s41597-023-02781-0
+  journal: Scientific Data
+  preferred: true
+  title: HALD, a human aging and longevity knowledge graph for precision gerontology and geroscience analyses
+  year: '2023'
 repository: https://github.com/zexuwu/hald
 taxon:
   - NCBITaxon:9606

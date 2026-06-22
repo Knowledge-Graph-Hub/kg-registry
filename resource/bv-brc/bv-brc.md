@@ -387,13 +387,12 @@ publications:
   - Zmasek CM
   - Scheuermann RH
   - Stevens RL
-  doi: doi:10.1093/nar/gkac1003
+  doi: 10.1093/nar/gkac1003
   id: https://pubmed.ncbi.nlm.nih.gov/36350631/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   preferred: true
-  title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC):
-    a resource combining PATRIC, IRD and ViPR'
-  year: '2022'
+  title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC): a resource combining PATRIC, IRD and ViPR'
+  year: '2023'
 repository: https://github.com/BV-BRC
 taxon:
 - NCBITaxon:2

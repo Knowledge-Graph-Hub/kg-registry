@@ -24,7 +24,7 @@ domains:
 - genomics
 homepage_url: https://ubkg.docs.xconsortia.org/
 id: ubkg
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
@@ -37,6 +37,7 @@ products:
     API key to access.
   dump_format: neo4j
   id: ubkg.neo4j
+  format: neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource

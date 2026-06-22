@@ -160,6 +160,7 @@ products:
   product_url: https://www.ebi.ac.uk/intact/download/datasets
 publications:
 - authors:
+  - Alfred G. Gilman
   - Participating investigators and scientists of the Alliance for Cellular Signaling
   doi: 10.1038/nature01304
   id: https://doi.org/10.1038/nature01304
@@ -192,7 +193,7 @@ publications:
   id: https://doi.org/10.1093/nar/gkm907
   journal: Nucleic Acids Research
   title: The Molecule Pages database
-  year: '2008'
+  year: '2007'
 synonyms:
 - AfCS
 - AfCS-Nature Molecule Pages

@@ -468,33 +468,34 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Richardson LJ
-      - Allen B
-      - Baldi G
-      - Beracochea M
-      - Bileschi M
-      - Burdett T
-      - Burgin J
-      - Caballero-Pérez J
-      - Cochrane G
-      - Colwell L
-      - Curtis T
-      - Escobar-Zepeda A
-      - Gurbich T
-      - Kale V
-      - Korobeynikov A
-      - Raj S
-      - Rogers AB
-      - Sakharova E
-      - Sanchez S
-      - Wilkinson D
-      - Finn RD
-    id: https://doi.org/10.1093/nar/gkac1080
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'MGnify: the microbiome sequence data analysis resource in 2023'
-    year: '2023'
+- authors:
+  - Richardson LJ
+  - Allen B
+  - Baldi G
+  - Beracochea M
+  - Bileschi M
+  - Burdett T
+  - Burgin J
+  - Caballero-Pérez J
+  - Cochrane G
+  - Colwell L
+  - Curtis T
+  - Escobar-Zepeda A
+  - Gurbich T
+  - Kale V
+  - Korobeynikov A
+  - Raj S
+  - Rogers AB
+  - Sakharova E
+  - Sanchez S
+  - Wilkinson D
+  - Finn RD
+  doi: 10.1093/nar/gkac1080
+  id: https://doi.org/10.1093/nar/gkac1080
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'MGnify: the microbiome sequence data analysis resource in 2023'
+  year: '2023'
 taxon:
   - NCBITaxon:9606
 ---

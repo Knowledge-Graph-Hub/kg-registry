@@ -237,6 +237,7 @@ publications:
   - Orchard S
   - Cesareni G
   - et al.
+  doi: 10.1038/s41467-020-19942-z
   id: https://doi.org/10.1038/s41467-020-19942-z
   journal: Nature Communications
   preferred: true

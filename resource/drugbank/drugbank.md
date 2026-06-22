@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.drugbank.com/
 id: drugbank
 infores_id: drugbank
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://go.drugbank.com/legal/terms_of_use
@@ -258,6 +258,7 @@ products:
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
   id: rtx-kg2.neo4j
+  format: http
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -366,6 +367,7 @@ products:
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
   id: alzkb.data
+  format: mixed
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -418,6 +420,7 @@ products:
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
   id: bioteque.embeddings
+  format: mixed
   name: Bioteque Embeddings
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -502,6 +505,7 @@ products:
     chemicals, and diseases
   edge_count: 500958
   id: pharmkg.graph
+  format: mixed
   name: PharmKG graph
   node_count: 7603
   original_source:
@@ -811,6 +815,7 @@ products:
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
   id: ibkh.graph
+  format: mixed
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1234,6 +1239,7 @@ products:
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
   id: drkg.graph
+  format: mixed
   name: DRKG graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1322,6 +1328,7 @@ products:
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
   id: hetionet.data.neo4j
+  format: neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1534,6 +1541,7 @@ products:
   description: Interactive web interface for exploring drug-disease networks with
     probabilistic filtering and graph visualization
   id: redrugs.web
+  format: http
   name: ReDrugs Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1551,6 +1559,7 @@ products:
   description: SADI web services API for querying the knowledge graph including resource
     search, interaction lookup, and network expansion
   id: redrugs.api
+  format: http
   name: ReDrugs API
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2189,7 +2198,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank
@@ -2709,6 +2718,7 @@ products:
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
   id: pathwaycommons.gmt
+  format: tsv
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2834,6 +2844,7 @@ products:
     using drug-drug and disease-disease similarity measures and known drug-disease
     associations.
   id: predict.method
+  format: http
   name: PREDICT Drug-Indication Inference Method
   original_source:
   - relation_type: prov:hadPrimarySource

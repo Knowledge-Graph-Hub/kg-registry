@@ -63,6 +63,7 @@ products:
   - category: Product
     description: Causal Activity Model graphs automatically generated from Reactome pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
     id: cam-kp.reactome-cams
+    format: owl
     name: Reactome Pathway CAMs
     original_source:
       - source: cam-kp
@@ -72,6 +73,7 @@ products:
   - category: Product
     description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes
     id: cam-kp.go-cams
+    format: owl
     name: Gene Ontology CAMs
     original_source:
       - source: cam-kp
@@ -81,6 +83,7 @@ products:
   - category: Product
     description: Chemical-gene interaction models and toxicological pathways derived from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals and 55,400 genes
     id: cam-kp.ctd-interactions
+    format: http
     name: CTD Chemical-Gene Models
     original_source:
       - source: cam-kp
@@ -102,74 +105,50 @@ products:
     warnings:
       - Repository was archived by the owner in 2024; documentation may be historical.
 publications:
-  - authors:
-      - Balhoff JP
-      - Bizon C
-      - Carlson J
-      - Fecho K
-      - Fink EL
-      - Gorow JS
-      - Graham TGW
-      - Hanna DE
-      - Henricks CJ
-      - Hoyt CT
-      - Imamovic-Tomasovic M
-      - Jacobs JM
-      - Koslovsky MD
-      - Lyzenga Y
-      - Nagel R
-      - Rasmussen JE
-      - Robin A
-      - Sullivan R
-      - Wagner AH
-      - Whetzel PL
-      - Williams JA
-    doi: 10.48550/arXiv.2004.01269
-    id: arXiv:2004.01269
-    journal: arXiv
-    preferred: true
-    title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations
-    year: '2020'
-  - authors:
-      - Balhoff JP
-      - Bizon C
-      - Carlson J
-      - Fecho K
-      - Fink EL
-      - Gorow JS
-    doi: 10.48550/arXiv.2105.04728
-    id: arXiv:2105.04728
-    journal: JMIR Medical Informatics
-    title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations
-    year: '2021'
-  - id: doi:10.1093/nar/gkac833
-    doi: 10.1093/nar/gkac833
-    title: 'Comparative Toxicogenomics Database (CTD): update 2023'
-    authors:
-      - Allan Peter Davis
-      - Thomas C Wiegers
-      - Robin J Johnson
-      - Daniela Sciaky
-      - Jolene Wiegers
-      - Carolyn J Mattingly
-    journal: Nucleic Acids Research
-    year: '2023'
-  - authors:
-      - Davis AP
-      - Murphy CG
-      - Saraceni-Richards CA
-      - Rosenstein MC
-      - Wiegers TC
-      - Mattingly CJ
-    doi: 10.1093/nar/gkn580
-    id: doi:10.1093/nar/gkn580
-    journal: Nucleic Acids Research
-    title: 'The Comparative Toxicogenomics Database: a knowledgebase and discovery tool for chemical-gene-disease networks'
-    year: '2009'
+- authors:
+  - Karamarie Fecho
+  - Chris Bizon
+  - Frederick Miller
+  - Shepherd Schurman
+  - Charles Schmitt
+  - William Xue
+  - Kenneth Morton
+  - Patrick Wang
+  - Alexander Tropsha
+  doi: 10.2196/26714
+  id: doi:10.2196/26714
+  journal: JMIR Medical Informatics
+  preferred: true
+  title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations
+  year: '2021'
+- authors:
+  - Allan Peter Davis
+  - Thomas C Wiegers
+  - Robin J Johnson
+  - Daniela Sciaky
+  - Jolene Wiegers
+  - Carolyn J Mattingly
+  doi: 10.1093/nar/gkac833
+  id: doi:10.1093/nar/gkac833
+  journal: Nucleic Acids Research
+  title: 'Comparative Toxicogenomics Database (CTD): update 2023'
+  year: '2023'
+- authors:
+  - Davis AP
+  - Murphy CG
+  - Saraceni-Richards CA
+  - Rosenstein MC
+  - Wiegers TC
+  - Mattingly CJ
+  doi: 10.1093/nar/gkn580
+  id: doi:10.1093/nar/gkn580
+  journal: Nucleic Acids Research
+  title: 'The Comparative Toxicogenomics Database: a knowledgebase and discovery tool for chemical-gene-disease networks'
+  year: '2009'
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 # CAM-KP (Causal Activity Models Knowledge Provider)

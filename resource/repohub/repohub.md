@@ -259,11 +259,11 @@ publications:
   - Mader
   - Subramanian
   - Golub
+  doi: 10.1038/nm.4306
   id: https://doi.org/10.1038/nm.4306
   journal: Nature Medicine
   preferred: true
-  title: 'The Drug Repurposing Hub: a next-generation drug library and information
-    resource'
+  title: 'The Drug Repurposing Hub: a next-generation drug library and information resource'
   year: '2017'
 taxon:
 - NCBITaxon:9606

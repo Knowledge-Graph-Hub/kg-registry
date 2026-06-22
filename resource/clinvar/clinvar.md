@@ -2987,9 +2987,8 @@ publications:
   id: doi:10.1093/nar/gkae1090
   journal: Nucleic Acids Research
   preferred: true
-  title: 'ClinVar: updates to support classifications of both germline and somatic
-    variants'
-  year: '2024'
+  title: 'ClinVar: updates to support classifications of both germline and somatic variants'
+  year: '2025'
 - authors:
   - Landrum MJ
   - Lee JM

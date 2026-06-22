@@ -507,11 +507,10 @@ publications:
   - Wong, B.
   - Golub, T.R.
   doi: 10.1016/j.cell.2017.10.049
-  id: lincs_l1000_paper
+  id: doi:10.1016/j.cell.2017.10.049
   journal: Cell
   preferred: true
-  title: 'A Next Generation Connectivity Map: L1000 platform and the first 1,000,000
-    profiles'
+  title: 'A Next Generation Connectivity Map: L1000 platform and the first 1,000,000 profiles'
   year: '2017'
 repository: https://github.com/cmap/l1000-jupyter
 taxon:

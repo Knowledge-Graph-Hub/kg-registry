@@ -622,10 +622,21 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1093/nar/gks1147
+- authors:
+  - Karin Breuer
+  - Amir K. Foroushani
+  - Matthew R. Laird
+  - Carol Chen
+  - Anastasia Sribnaia
+  - Raymond Lo
+  - Geoffrey L. Winsor
+  - Robert E. W. Hancock
+  - Fiona S. L. Brinkman
+  - David J. Lynn
+  doi: 10.1093/nar/gks1147
+  id: https://doi.org/10.1093/nar/gks1147
   journal: Nucleic Acids Research
-  title: 'InnateDB: systems biology of innate immunity and beyond - recent updates
-    and continuing curation'
+  title: 'InnateDB: systems biology of innate immunity and beyond - recent updates and continuing curation'
   year: '2013'
 synonyms:
 - InnateDB

@@ -69,7 +69,8 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: tcga
 publications:
-- id: https://doi.org/10.1038/nature08987
+- doi: 10.1038/nature08987
+  id: https://doi.org/10.1038/nature08987
   journal: Nature
   title: International network of cancer genome projects
   year: '2010'

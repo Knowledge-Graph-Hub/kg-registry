@@ -20,7 +20,7 @@ domains:
 - environment
 homepage_url: https://github.com/HolobiomicsLab/MetaBoKG
 id: metabokg
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -34,6 +34,7 @@ products:
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
   id: metabokg.graph
+  format: mixed
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph
   original_source:
@@ -97,6 +98,7 @@ products:
   description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
     class hierarchies used by the generated knowledge graph.
   id: metabokg.schema
+  format: ttl
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0
     label: Apache License 2.0
@@ -155,7 +157,7 @@ publications:
   - Fabien Gandon
   - Louis-Felix Nothias
   doi: 10.48550/arXiv.2605.24706
-  id: arXiv:2605.24706
+  id: doi:10.48550/arXiv.2605.24706
   journal: arXiv
   preferred: true
   title: 'MetaboKG: An Analysis-centric Knowledge Graph Framework for Untargeted Metabolomics'

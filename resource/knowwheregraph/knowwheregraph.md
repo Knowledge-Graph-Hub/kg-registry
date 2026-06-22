@@ -73,58 +73,58 @@ products:
       - source: knowwheregraph
         relation_type: prov:hadPrimarySource
 publications:
-  - authors:
-      - Zhu R
-      - Shimizu C
-      - Janowicz K
-      - Hitzler P
-    doi: "10.48550/arXiv.2502.13874"
-    id: "arXiv:2502.13874"
-    journal: arXiv
-    preferred: true
-    title: 'The KnowWhereGraph: A Large-Scale Geo-Knowledge Graph for Interdisciplinary Knowledge Discovery and Geo-Enrichment'
-    year: "2025"
-  - id: doi:10.1016/j.websem.2024.100842
-    doi: 10.1016/j.websem.2024.100842
-    title: The KnowWhereGraph ontology
-    authors:
-      - Cogan Shimizu
-      - Shirly Stephen
-      - Adrita Barua
-      - Ling Cai
-      - Antrea Christou
-      - Kitty Currier
-      - Abhilekha Dalal
-      - Colby K. Fisher
-      - Pascal Hitzler
-      - Krzysztof Janowicz
-      - Wenwen Li
-      - Zilong Liu
-      - Mohammad Saeid Mahdavinejad
-      - Gengchen Mai
-      - Dean Rehberger
-      - Mark Schildhauer
-      - Meilin Shi
-      - Sanaz Saki Norouzi
-      - Yuanyuan Tian
-      - Sizhe Wang
-      - Zhangyu Wang
-      - Joseph Zalewski
-      - Lu Zhou
-      - Rui Zhu
-    journal: Journal of Web Semantics
-    year: '2025'
-  - authors:
-      - Janowicz K
-      - Hitzler P
-      - Li W
-      - Rehberger D
-      - Schildhauer M
-    doi: "10.1002/aaai.12043"
-    id: "doi:10.1002/aaai.12043"
-    journal: AI Magazine
-    title: 'Know, Know Where, KnowWhereGraph: A Densely Connected, Cross-Domain Knowledge Graph and Geo-Enrichment Service Stack for Applications in Environmental Intelligence'
-    year: "2022"
+- authors:
+  - Zhu R
+  - Shimizu C
+  - Janowicz K
+  - Hitzler P
+  doi: 10.48550/arXiv.2502.13874
+  id: doi:10.48550/arXiv.2502.13874
+  journal: arXiv
+  preferred: true
+  title: 'The KnowWhereGraph: A Large-Scale Geo-Knowledge Graph for Interdisciplinary Knowledge Discovery and Geo-Enrichment'
+  year: '2025'
+- authors:
+  - Cogan Shimizu
+  - Shirly Stephen
+  - Adrita Barua
+  - Ling Cai
+  - Antrea Christou
+  - Kitty Currier
+  - Abhilekha Dalal
+  - Colby K. Fisher
+  - Pascal Hitzler
+  - Krzysztof Janowicz
+  - Wenwen Li
+  - Zilong Liu
+  - Mohammad Saeid Mahdavinejad
+  - Gengchen Mai
+  - Dean Rehberger
+  - Mark Schildhauer
+  - Meilin Shi
+  - Sanaz Saki Norouzi
+  - Yuanyuan Tian
+  - Sizhe Wang
+  - Zhangyu Wang
+  - Joseph Zalewski
+  - Lu Zhou
+  - Rui Zhu
+  doi: 10.1016/j.websem.2024.100842
+  id: doi:10.1016/j.websem.2024.100842
+  journal: Journal of Web Semantics
+  title: The KnowWhereGraph ontology
+  year: '2025'
+- authors:
+  - Janowicz K
+  - Hitzler P
+  - Li W
+  - Rehberger D
+  - Schildhauer M
+  doi: 10.1002/aaai.12043
+  id: doi:10.1002/aaai.12043
+  journal: AI Magazine
+  title: 'Know, Know Where, KnowWhereGraph: A Densely Connected, Cross-Domain Knowledge Graph and Geo-Enrichment Service Stack for Applications in Environmental Intelligence'
+  year: '2022'
 repository: https://github.com/KnowWhereGraph
 usages:
   - description: Humanitarian aid coordination and supply chain management during crises

@@ -363,8 +363,9 @@ publications:
   - Kolarich D
   - Packer NH
   - Lisacek F
-  doi: doi:10.1021/acs.jproteome.8b00766
+  doi: 10.1021/acs.jproteome.8b00766
   id: doi:10.1021/acs.jproteome.8b00766
+  journal: Journal of Proteome Research
   title: 'GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical'
   year: '2019'
 ---

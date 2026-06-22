@@ -17,7 +17,7 @@ domains:
 - biomedical
 homepage_url: https://www.nextprot.org/
 id: nextprot
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: neXtProt
 products:
@@ -26,6 +26,7 @@ products:
     entries, proteomics evidence, variants, expression, interactions, localization,
     and functional annotations.
   id: nextprot.portal
+  format: http
   name: neXtProt Web Platform
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -388,7 +389,7 @@ products:
 publications:
 - authors:
   - Monique Zahn-Zabal
-  - "Pierre-Andr\xE9 Michel"
+  - Pierre-André Michel
   - Caroline Gateau
   - Lydie Lane
   - Amos Bairoch
@@ -397,10 +398,10 @@ publications:
   journal: Nucleic Acids Research
   preferred: true
   title: 'The neXtProt knowledgebase in 2020: data, tools and usability improvements'
-  year: '2020'
+  year: '2019'
 - authors:
   - Pascale Gaudet
-  - "Pierre-Andr\xE9 Michel"
+  - Pierre-André Michel
   - Monique Zahn-Zabal
   - Aurore Britan
   - Isabelle Cusin

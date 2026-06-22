@@ -113,73 +113,73 @@ products:
       - source: reactome
         relation_type: prov:wasInformedBy
 publications:
-  - authors:
-      - Gupta P
-      - Elser J
-      - Hooks E
-      - D'Eustachio P
-      - Jaiswal P
-      - Naithani S
-    doi: 10.1093/nar/gkad1052
-    id: doi:10.1093/nar/gkad1052
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'Plant Reactome Knowledgebase: empowering plant pathway exploration and OMICS data analysis'
-    year: '2024'
-  - id: doi:10.1093/nar/gkz996
-    doi: 10.1093/nar/gkz996
-    title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
-    authors:
-      - Sushma Naithani
-      - Parul Gupta
-      - Justin Preece
-      - Peter D’Eustachio
-      - Justin L Elser
-      - Priyanka Garg
-      - Daemon A Dikeman
-      - Jason Kiff
-      - Justin Cook
-      - Andrew Olson
-      - Sharon Wei
-      - Marcela K Tello-Ruiz
-      - Antonio Fabregat Mundo
-      - Alfonso Munoz-Pomer
-      - Suhaib Mohammed
-      - Tiejun Cheng
-      - Evan Bolton
-      - Irene Papatheodorou
-      - Lincoln Stein
-      - Doreen Ware
-      - Pankaj Jaiswal
-    journal: Nucleic Acids Research
-    year: '2019'
-  - authors:
-      - Naithani S
-      - Gupta P
-      - Preece J
-      - D'Eustachio P
-      - Elser JL
-      - Garg P
-      - Dikeman DA
-      - Kiff J
-      - Cook J
-      - Olson A
-      - Wei S
-      - Tello-Ruiz MK
-      - Mundo AF
-      - Munoz-Pomer A
-      - Mohammed S
-      - Cheng T
-      - Bolton E
-      - Papatheodorou I
-      - Stein L
-      - Ware D
-      - Jaiswal P
-    doi: 10.1093/nar/gkz996
-    id: doi:10.1093/nar/gkz996
-    journal: Nucleic Acids Research
-    title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
-    year: '2020'
+- authors:
+  - Gupta P
+  - Elser J
+  - Hooks E
+  - D'Eustachio P
+  - Jaiswal P
+  - Naithani S
+  doi: 10.1093/nar/gkad1052
+  id: doi:10.1093/nar/gkad1052
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Plant Reactome Knowledgebase: empowering plant pathway exploration and OMICS data analysis'
+  year: '2024'
+- authors:
+  - Sushma Naithani
+  - Parul Gupta
+  - Justin Preece
+  - Peter D’Eustachio
+  - Justin L Elser
+  - Priyanka Garg
+  - Daemon A Dikeman
+  - Jason Kiff
+  - Justin Cook
+  - Andrew Olson
+  - Sharon Wei
+  - Marcela K Tello-Ruiz
+  - Antonio Fabregat Mundo
+  - Alfonso Munoz-Pomer
+  - Suhaib Mohammed
+  - Tiejun Cheng
+  - Evan Bolton
+  - Irene Papatheodorou
+  - Lincoln Stein
+  - Doreen Ware
+  - Pankaj Jaiswal
+  doi: 10.1093/nar/gkz996
+  id: doi:10.1093/nar/gkz996
+  journal: Nucleic Acids Research
+  title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
+  year: '2019'
+- authors:
+  - Naithani S
+  - Gupta P
+  - Preece J
+  - D'Eustachio P
+  - Elser JL
+  - Garg P
+  - Dikeman DA
+  - Kiff J
+  - Cook J
+  - Olson A
+  - Wei S
+  - Tello-Ruiz MK
+  - Mundo AF
+  - Munoz-Pomer A
+  - Mohammed S
+  - Cheng T
+  - Bolton E
+  - Papatheodorou I
+  - Stein L
+  - Ware D
+  - Jaiswal P
+  doi: 10.1093/nar/gkz996
+  id: doi:10.1093/nar/gkz996
+  journal: Nucleic Acids Research
+  title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
+  year: '2019'
 repository: https://github.com/Gramene/gramene-docs
 taxon:
   - NCBITaxon:3055

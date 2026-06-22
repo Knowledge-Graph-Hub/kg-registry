@@ -62,6 +62,7 @@ products:
   - category: ProcessProduct
     description: INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.
     id: indra.cogex.code
+    format: python
     name: INDRA CoGEx Build Code
     original_source:
       - source: chembl
@@ -96,7 +97,7 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/gyorilab/indra_cogex
 creation_date: '2025-07-19T00:00:00Z'
-last_modified_date: '2025-07-20T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated

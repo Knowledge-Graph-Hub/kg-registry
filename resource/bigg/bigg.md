@@ -321,18 +321,18 @@ publications:
 - authors:
   - King ZA
   - Lu JS
-  - "Dr\xE4ger A"
+  - Dräger A
   - Miller PC
   - Federowicz S
   - Lerman JA
   - Ebrahim A
   - Palsson BO
   - Lewis NE
-  doi: doi:10.1093/nar/gkv1049
+  doi: 10.1093/nar/gkv1049
   id: doi:10.1093/nar/gkv1049
+  journal: Nucleic Acids Research
   preferred: true
-  title: 'BiGG Models: A platform for integrating, standardizing, and sharing genome-scale
-    models'
+  title: 'BiGG Models: A platform for integrating, standardizing, and sharing genome-scale models'
   year: '2016'
 repository: https://github.com/SBRG/bigg_models
 ---

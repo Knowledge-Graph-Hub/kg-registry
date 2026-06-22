@@ -329,8 +329,7 @@ publications:
   id: doi:10.1093/nar/gkac947
   journal: Nucleic Acids Research
   preferred: true
-  title: 'CellMarker 2.0: an updated database of manually curated cell markers in
-    human/mouse and web tools based on scRNA-seq data'
+  title: 'CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data'
   year: '2023'
 - authors:
   - Zhang X
@@ -354,7 +353,7 @@ publications:
   id: doi:10.1093/nar/gky900
   journal: Nucleic Acids Research
   title: CellMarker - a manually curated resource of cell markers in human and mouse
-  year: '2018'
+  year: '2019'
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

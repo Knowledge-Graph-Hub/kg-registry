@@ -469,26 +469,27 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - McDonald D
-      - Jiang Y
-      - Balaban M
-      - Cantrell K
-      - Zhu Q
-      - Gonzalez A
-      - Morton JT
-      - Nicolaou G
-      - Parks DH
-      - Karst SM
-      - Albertsen M
-      - Hugenholtz P
-      - Keller A
-      - Knight R
-    id: doi:10.1038/s41587-023-01845-1
-    journal: Nature Biotechnology
-    preferred: true
-    title: Greengenes2 unifies microbial data in a single reference tree
-    year: '2024'
+- authors:
+  - McDonald D
+  - Jiang Y
+  - Balaban M
+  - Cantrell K
+  - Zhu Q
+  - Gonzalez A
+  - Morton JT
+  - Nicolaou G
+  - Parks DH
+  - Karst SM
+  - Albertsen M
+  - Hugenholtz P
+  - Keller A
+  - Knight R
+  doi: 10.1038/s41587-023-01845-1
+  id: doi:10.1038/s41587-023-01845-1
+  journal: Nature Biotechnology
+  preferred: true
+  title: Greengenes2 unifies microbial data in a single reference tree
+  year: '2024'
 repository: https://github.com/biocore/greengenes2/
 taxon:
   - NCBITaxon:2

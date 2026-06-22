@@ -128,6 +128,7 @@ publications:
   - McCarthy FM
   doi: 10.1186/1471-2164-10-S2-S5
   id: doi:10.1186/1471-2164-10-S2-S5
+  journal: BMC Genomics
   title: The Chicken Gene Nomenclature Committee report
   year: '2009'
 ---

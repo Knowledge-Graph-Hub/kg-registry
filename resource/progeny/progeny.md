@@ -141,7 +141,7 @@ publications:
       - Julio Saez-Rodriguez
     doi: 10.1038/s41467-017-02391-6
     id: PMID:29295995
-    journal: Nature Communications
+    journal: Nat Commun
     title: Perturbation-response genes reveal signaling footprints in cancer gene expression
     year: '2018'
   - id: doi:10.1186/s13059-020-1949-z

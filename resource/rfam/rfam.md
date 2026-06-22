@@ -782,15 +782,14 @@ publications:
 - authors:
   - Nancy Ontiveros-Palacios
   - Emma Cooke
-  - "Eric\_P Nawrocki"
+  - Eric P Nawrocki
   - Sandra Triebel
   - Manja Marz
   - Elena Rivas
   - Sam Griffiths-Jones
-  - "Anton\_I Petrov"
+  - Anton I Petrov
   - Alex Bateman
   - Blake Sweeney
-  category: Publication
   doi: 10.1093/nar/gkae1023
   id: doi:10.1093/nar/gkae1023
   journal: Nucleic Acids Research
@@ -813,7 +812,7 @@ publications:
   - Finn RD
   - Bateman A
   - Petrov AI
-  category: Publication
+  doi: 10.1093/nar/gkaa1047
   id: https://doi.org/10.1093/nar/gkaa1047
   journal: Nucleic Acids Research
   preferred: false

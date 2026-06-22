@@ -12,6 +12,12 @@ contacts:
     value: drseb
   label: Sebastian Koehler
   orcid: 0000-0002-5316-1399
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://monarchinitiative.org/
+  id: monarchinitiative
+  label: Monarch Initiative
 creation_date: '2025-04-22T00:00:00Z'
 description: The Human Phenotype Ontology (HPO) is a structured and controlled vocabulary
   for the phenotypic features encountered in human hereditary and other disease.
@@ -21,7 +27,7 @@ domains:
 homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
 infores_id: hpo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://hpo.jax.org/app/license
@@ -241,6 +247,7 @@ products:
     API key to access.
   dump_format: neo4j
   id: ubkg.neo4j
+  format: neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -856,6 +863,7 @@ products:
   dump_format: neo4j
   edge_count: 15211571
   id: kg-monarch.graph.neo4j
+  format: neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
   - biolink:AnatomicalEntity
@@ -1114,6 +1122,7 @@ products:
   edge_count: 15211571
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
+  compression: targz
   name: KGX JSON-L Distribution of KG-Monarch Edges
   node_categories:
   - biolink:AnatomicalEntity
@@ -1236,13 +1245,14 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
+  compression: targz
   name: KGX JSON-L Distribution of KG-Monarch Nodes
   node_categories:
   - biolink:AnatomicalEntity
@@ -1365,8 +1375,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_file_size: 487854288
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -1748,8 +1758,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -1870,8 +1879,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -2214,6 +2222,7 @@ products:
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
   id: indra.cogex.code
+  format: python
   name: INDRA CoGEx Build Code
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2249,6 +2258,7 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
+  format: mixed
   name: MechRepoNet Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2720,6 +2730,7 @@ products:
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
   id: rtx-kg2.neo4j
+  format: http
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -2992,6 +3003,7 @@ products:
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
   id: disgenet.data
+  format: http
   name: DisGeNET Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -4094,7 +4106,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank

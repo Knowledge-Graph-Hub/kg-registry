@@ -611,12 +611,16 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://pharmebi.net/#/datasources
 publications:
-  - doi: doi:10.1038/s41597-022-01510-3
-    id: https://doi.org/10.1038/s41597-022-01510-3
-    journal: Scientific Data
-    preferred: true
-    title: The heterogeneous pharmacological medical biochemical network PharMeBINet
-    year: '2022'
+- authors:
+  - Cassandra Königs
+  - Marcel Friedrichs
+  - Theresa Dietrich
+  doi: 10.1038/s41597-022-01510-3
+  id: https://doi.org/10.1038/s41597-022-01510-3
+  journal: Scientific Data
+  preferred: true
+  title: The heterogeneous pharmacological medical biochemical network PharMeBINet
+  year: '2022'
 repository: https://github.com/ckoenigs/PharMeBINet
 ---
 

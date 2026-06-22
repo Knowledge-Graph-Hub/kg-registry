@@ -25,6 +25,7 @@ products:
   - category: GraphProduct
     description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing and integrating information from diverse biomedical resources including DRKG, iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome, SIDER, and others).
     id: ibkh.graph
+    format: mixed
     name: iBKH Knowledge Graph
     original_source:
       - source: bgee
@@ -93,7 +94,7 @@ publications:
 synonyms:
   - iBKH
 creation_date: '2025-11-19T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 The integrative Biomedical Knowledge Hub (iBKH) is a comprehensive biomedical knowledge graph created by harmonizing and integrating information from diverse biomedical resources. It provides an efficient and effective way to manage abundant knowledge in biomedical and life science.

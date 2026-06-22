@@ -63,8 +63,8 @@ publications:
   doi: 10.5281/zenodo.17508651
   id: https://doi.org/10.5281/zenodo.17508651
   journal: Zenodo
-  title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal
-    Domain
+  title: Ontologias Formais na Organização do Conhecimento no Domínio Obstétrico e
+    Neonatal
   year: '2025'
 ---
 ## Description

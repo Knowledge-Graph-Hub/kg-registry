@@ -1,6 +1,13 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: heshunmin@ibp.ac.cn
+  id: institute-of-biophysics-chinese-academy-of-science
+  label: Institute of Biophysics, Chinese Academy of Sciences
 creation_date: '2025-09-09T00:00:00Z'
 description: A comprehensive database dedicated to long non-coding RNA (lncRNA) annotation
   in animals and plants, providing systematic nomenclature, sequence information,
@@ -11,7 +18,7 @@ domains:
 - biological systems
 homepage_url: http://www.noncode.org/
 id: noncode
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: NONCODE
 products:
@@ -79,9 +86,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: noncode
   product_url: http://www.noncode.org/download.php
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
 - category: GraphicalInterface
   description: Predicted functions for plant lncRNAs based on co-expression analysis
   format: http
@@ -789,11 +793,28 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- doi: 10.1093/nar/gkaa1046
-  id: zhao2021noncode
+- authors:
+  - Lianhe Zhao
+  - Jiajia Wang
+  - Yanyan Li
+  - Tingrui Song
+  - Yang Wu
+  - Shuangsang Fang
+  - Dechao Bu
+  - Hui Li
+  - Liang Sun
+  - Dong Pei
+  - Yu Zheng
+  - Jianqin Huang
+  - Mingqing Xu
+  - Runsheng Chen
+  - Yi Zhao
+  - Shunmin He
+  doi: 10.1093/nar/gkaa1046
+  id: doi:10.1093/nar/gkaa1046
+  journal: Nucleic Acids Research
   preferred: true
-  title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation
-    in both animals and plants'
+  title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation in both animals and plants'
   year: '2021'
 synonyms:
 - NONCODEV6
@@ -1091,9 +1112,6 @@ Integration from multiple sources:
   - zwd
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
 # Noncode
 

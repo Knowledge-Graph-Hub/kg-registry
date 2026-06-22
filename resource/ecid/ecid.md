@@ -26,17 +26,18 @@ layout: resource_detail
 name: ECID
 repository: https://github.com/idslme/ecid
 publications:
-  - id: doi:10.1016/j.envint.2022.107240
-    title: 'CCDB: A database for exploring inter-chemical correlations in metabolomics and exposomics datasets'
-    authors:
-      - Barupal DK
-      - Mahajan P
-      - Fakouri-Baygi S
-      - Wright RO
-      - Arora M
-      - Teitelbaum SL
-    year: '2022'
-    doi: doi:10.1016/j.envint.2022.107240
+- authors:
+  - Barupal DK
+  - Mahajan P
+  - Fakouri-Baygi S
+  - Wright RO
+  - Arora M
+  - Teitelbaum SL
+  doi: 10.1016/j.envint.2022.107240
+  id: doi:10.1016/j.envint.2022.107240
+  journal: Environment International
+  title: 'CCDB: A database for exploring inter-chemical correlations in metabolomics and exposomics datasets'
+  year: '2022'
 products:
   - category: GraphicalInterface
     description: Interface for the Chemical Correlation Database for exploring curated inter-chemical correlations

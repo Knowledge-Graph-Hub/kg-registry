@@ -1342,6 +1342,7 @@ products:
   product_url: https://www.genecards.org/
 publications:
 - authors:
+  - François Aguet
   - GTEx Consortium
   doi: 10.1126/science.aaz1776
   id: doi:10.1126/science.aaz1776
@@ -1349,6 +1350,7 @@ publications:
   title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
   year: '2020'
 - authors:
+  - Kristin G. Ardlie
   - GTEx Consortium
   doi: 10.1126/science.1262110
   id: doi:10.1126/science.1262110

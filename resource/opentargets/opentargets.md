@@ -723,13 +723,12 @@ publications:
   - Matthias Gstaiger
   - Bernd Wollscheid
   - Pedro Beltrao
-  doi: doi:10.1038/s41587-025-02659-z
+  doi: 10.1038/s41587-025-02659-z
   id: https://doi.org/10.1038/s41587-025-02659-z
   journal: Nature Biotechnology
   preferred: true
-  title: "A tissue-specific atlas of protein\u2013protein associations enables prioritization\
-    \ of candidate disease genes"
-  year: '2025'
+  title: A tissue-specific atlas of protein–protein associations enables prioritization of candidate disease genes
+  year: '2026'
 - authors:
   - Carlos Cruz-Castillo
   - Luca Fumis
@@ -746,8 +745,7 @@ publications:
   doi: 10.1093/bioinformatics/btaf070
   id: doi:10.1093/bioinformatics/btaf070
   journal: Bioinformatics
-  title: Associations on the Fly, a new feature aiming to facilitate exploration of
-    the Open Targets Platform evidence
+  title: Associations on the Fly, a new feature aiming to facilitate exploration of the Open Targets Platform evidence
   year: '2025'
 repository: https://github.com/opentargets
 taxon:

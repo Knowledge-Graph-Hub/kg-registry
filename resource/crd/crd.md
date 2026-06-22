@@ -400,13 +400,14 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - James M. Sorace
-      - Kip Canfield
-    id: https://doi.org/10.1089/jir.1998.18.799
-    journal: Journal of Interferon & Cytokine Research
-    title: 'Collaborative Bioinformatics: Data Warehouses for Targeted Experimental Results'
-    year: '1998'
+- authors:
+  - James M. Sorace
+  - Kip Canfield
+  doi: 10.1089/jir.1998.18.799
+  id: https://doi.org/10.1089/jir.1998.18.799
+  journal: Journal of Interferon & Cytokine Research
+  title: 'Collaborative Bioinformatics: Data Warehouses for Targeted Experimental Results'
+  year: '1998'
 warnings:
   - This resource is unresponsive. The database is no longer available; only metadata and publication are retained.
 ---

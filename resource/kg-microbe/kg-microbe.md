@@ -67,8 +67,7 @@ products:
         relation_type: prov:hadPrimarySource
       - source: uniprot
         relation_type: prov:hadPrimarySource
-    product_file_size: 12464495186
-    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+    product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   - category: GraphProduct
     compression: targz
     description: The core KG KG-Microbe-Core with ontologies, organismal traits, and growth preferences.
@@ -188,8 +187,7 @@ products:
         relation_type: prov:hadPrimarySource
       - source: uniprot
         relation_type: prov:hadPrimarySource
-    product_file_size: 4623010863
-    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+    product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   - category: GraphProduct
     compression: targz
     description: Biomedical plus Uniprot genome annotations
@@ -242,14 +240,13 @@ products:
         relation_type: prov:hadPrimarySource
       - source: uniprot
         relation_type: prov:hadPrimarySource
-    product_file_size: 4796343398
-    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+    product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 taxon:
   - NCBITaxon:2
   - NCBITaxon:2759
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 KG-Microbe.

@@ -37,7 +37,7 @@ publications:
       - Austin CP
     id: "doi:10.3389/fphar.2019.00445"
     doi: "10.3389/fphar.2019.00445"
-    journal: Front Pharmacol
+    journal: Frontiers in Pharmacology
     title: "The NCATS BioPlanet – An Integrated Platform for Exploring the Universe of Cellular Signaling Pathways for Toxicology, Systems Biology, and Chemical Genomics"
     year: "2019"
 ---

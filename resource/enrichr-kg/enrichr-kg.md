@@ -146,6 +146,7 @@ publications:
   - Nguyen N
   - Clarke DJB
   - Ma'ayan A
+  doi: 10.1093/nar/gkad393
   id: doi:10.1093/nar/gkad393
   journal: Nucleic Acids Research
   preferred: true

@@ -44,11 +44,11 @@ publications:
 - authors:
   - Aidan H Lakshman
   - Erik S Wright
+  doi: 10.1038/s41467-025-59175-6
   id: https://doi.org/10.1038/s41467-025-59175-6
   journal: Nature Communications
   preferred: true
-  title: 'EvoWeaver: large-scale prediction of gene functional associations from coevolutionary
-    signals'
+  title: 'EvoWeaver: large-scale prediction of gene functional associations from coevolutionary signals'
   year: '2025'
 ---
 EvoWeb

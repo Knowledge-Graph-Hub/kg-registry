@@ -1,6 +1,17 @@
 ---
 activity_status: inactive
 category: DataSource
+contacts:
+- category: Individual
+  label: Kelly P. Williams
+  contact_details:
+  - contact_type: email
+    value: kpwilli@sandia.gov
+- category: Organization
+  label: Sandia National Laboratories
+  contact_details:
+  - contact_type: url
+    value: https://www.sandia.gov/
 creation_date: '2025-09-09T00:00:00Z'
 description: The tmRNA Website is a comprehensive database of transfer-messenger RNA
   (tmRNA) and SmpB protein sequences involved in bacterial trans-translation. Contains
@@ -11,7 +22,10 @@ domains:
 - genomics
 homepage_url: http://bioinformatics.sandia.gov/tmrna/
 id: tmrnawebsite
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 layout: resource_detail
 name: The tmRNA Website
 products:
@@ -486,6 +500,7 @@ publications:
 - authors:
   - Hudson CM
   - Williams KP
+  doi: 10.1093/nar/gku1109
   id: https://doi.org/10.1093/nar/gku1109
   journal: Nucleic Acids Research
   preferred: true

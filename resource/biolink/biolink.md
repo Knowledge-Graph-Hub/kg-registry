@@ -513,11 +513,11 @@ publications:
   - Bizon C
   - Mungall CJ
   - The Biomedical Data Translator Consortium
-  doi: doi:10.1111/cts.13302
+  doi: 10.1111/cts.13302
   id: doi:10.1111/cts.13302
+  journal: Clinical and Translational Science
   preferred: true
-  title: '''Biolink Model: A universal schema for knowledge graphs in clinical, biomedical,
-    and translational science'''
+  title: '''Biolink Model: A universal schema for knowledge graphs in clinical, biomedical, and translational science'''
   year: '2022'
 repository: https://github.com/biolink/biolink-model/
 ---

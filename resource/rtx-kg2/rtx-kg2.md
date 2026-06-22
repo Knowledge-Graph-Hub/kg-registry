@@ -151,6 +151,7 @@ products:
     description: Neo4j distribution of the RTX-KG2 as a graph database
     dump_format: neo4j
     id: rtx-kg2.neo4j
+    format: http
     is_neo4j: true
     is_public: false
     name: RTX-KG2 Neo4j
@@ -223,7 +224,7 @@ publications:
 repository: https://github.com/RTXteam/RTX-KG2
 infores_id: rtx-kg2
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 ## RTX-KG2: A Semantically Standardized Knowledge Graph for Translational Biomedicine

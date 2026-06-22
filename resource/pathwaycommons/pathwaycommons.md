@@ -27,7 +27,7 @@ domains:
 homepage_url: https://www.pathwaycommons.org/
 id: pathwaycommons
 infores_id: pathway-commons
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -250,6 +250,7 @@ products:
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
   id: pathwaycommons.gmt
+  format: tsv
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1458,9 +1459,8 @@ publications:
   id: doi:10.1093/nar/gkz946
   journal: Nucleic Acids Research
   preferred: true
-  title: 'Pathway Commons 2019 Update: integration, analysis and exploration of pathway
-    data'
-  year: '2020'
+  title: 'Pathway Commons 2019 Update: integration, analysis and exploration of pathway data'
+  year: '2019'
 - authors:
   - E. G. Cerami
   - B. E. Gross
@@ -1484,8 +1484,7 @@ publications:
   doi: 10.1186/1471-2105-7-497
   id: doi:10.1186/1471-2105-7-497
   journal: BMC Bioinformatics
-  title: 'cPath: open source software for collecting, storing, and querying biological
-    pathways'
+  title: 'cPath: open source software for collecting, storing, and querying biological pathways'
   year: '2006'
 repository: https://github.com/PathwayCommons
 synonyms:

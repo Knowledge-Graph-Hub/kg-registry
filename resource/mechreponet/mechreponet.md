@@ -11,12 +11,13 @@ domains:
 - pharmacology
 homepage_url: https://github.com/SuLab/MechRepoNet
 id: mechreponet
-last_modified_date: '2025-07-17T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: MechRepoNet
 products:
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
+  format: mixed
   name: MechRepoNet Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource

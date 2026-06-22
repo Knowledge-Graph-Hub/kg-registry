@@ -108,11 +108,11 @@ publications:
   - Wu CH
   - Vijay-Shanker K
   - Arighi CN
+  doi: 10.1101/2023.09.07.556602
   id: doi:10.1101/2023.09.07.556602
   journal: bioRxiv
   preferred: true
-  title: 'eMIND: Enabling automatic collection of protein variation impacts in Alzheimer''s
-    disease from the literature'
+  title: 'eMIND: Enabling automatic collection of protein variation impacts in Alzheimer''s disease from the literature'
   year: '2023'
 ---
 # eMIND

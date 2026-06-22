@@ -61,14 +61,15 @@ products:
       - source: medkg
         relation_type: prov:wasInfluencedBy
 publications:
-  - authors:
-      - Kumari M
-      - Chauhan R
-      - Garg P
-    doi: 10.1007/s11030-025-11164-z
-    id: doi:10.1007/s11030-025-11164-z
-    title: '''MedKG: enabling drug discovery through a unified biomedical knowledge graph'''
-    year: '2025'
+- authors:
+  - Kumari M
+  - Chauhan R
+  - Garg P
+  doi: 10.1007/s11030-025-11164-z
+  id: doi:10.1007/s11030-025-11164-z
+  journal: Molecular Diversity
+  title: '''MedKG: enabling drug discovery through a unified biomedical knowledge graph'''
+  year: '2025'
 creation_date: '2025-03-24T00:00:00Z'
 last_modified_date: '2026-05-27T00:00:00Z'
 ---

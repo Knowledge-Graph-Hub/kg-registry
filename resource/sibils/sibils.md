@@ -24,6 +24,7 @@ license:
   id: https://creativecommons.org/licenses/by/3.0/ch/
   label: CC-BY-3.0-CH
 name: SIBiLS
+repository: https://github.com/sibils
 products:
   - category: GraphicalInterface
     description: Web interface for exploring SIBiLS data
@@ -51,7 +52,7 @@ products:
     original_source:
       - source: sibils
         relation_type: prov:hadPrimarySource
-    product_url: https://sibils.org/API#Fetch-API
+    product_url: https://sibils.org/api#Fetch-API
   - category: ProgrammingInterface
     description: RESTful API for customizable search in SIBiLS collections
     id: sibils.api.rest.search
@@ -60,7 +61,7 @@ products:
     original_source:
       - source: sibils
         relation_type: prov:hadPrimarySource
-    product_url: https://sibils.org/API#Customizable-search-API
+    product_url: https://sibils.org/api#Customizable-search-API
   - category: ProgrammingInterface
     description: RESTful API for question answering using natural language in SIBiLS collections
     id: sibils.api.rest.qa
@@ -69,22 +70,23 @@ products:
     original_source:
       - source: sibils
         relation_type: prov:hadPrimarySource
-    product_url: https://sibils.org/API#Question-Answering-API
+    product_url: https://sibils.org/api#Question-Answering-API
 publications:
-  - authors:
-      - Gobeill J
-      - Caucheteur D
-      - Michel PA
-      - Mottin L
-      - Pasche E
-      - Ruch P
-    doi: doi:10.1093/nar/gkaa328
-    id: doi:10.1093/nar/gkaa328
-    preferred: true
-    title: 'SIB Literature Services: RESTful customizable search engines in biomedical literature, enriched with automatically mapped biomedical concepts'
-    year: '2020'
+- authors:
+  - Gobeill J
+  - Caucheteur D
+  - Michel PA
+  - Mottin L
+  - Pasche E
+  - Ruch P
+  doi: 10.1093/nar/gkaa328
+  id: doi:10.1093/nar/gkaa328
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'SIB Literature Services: RESTful customizable search engines in biomedical literature, enriched with automatically mapped biomedical concepts'
+  year: '2020'
 creation_date: '2025-05-07T00:00:00Z'
-last_modified_date: '2025-12-07T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 ---
 
 SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides personalized information retrieval services in biological literature. The platform offers fully customizable search capabilities in semantically enriched contents based on keywords and/or mapped biomedical entities from a growing set of standardized and legacy vocabularies.

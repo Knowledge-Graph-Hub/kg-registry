@@ -142,18 +142,18 @@ products:
   product_url: https://spoke.ucsf.edu/data-tools
 publications:
 - authors:
-  - "\u015Eenay Kafkas"
+  - Şenay Kafkas
   - Marwa Abdelhakim
   - Yasmeen Hashish
   - Maxat Kulmanov
   - Marwa Abdellatif
   - Paul N. Schofield
   - Robert Hoehndorf
+  doi: 10.1038/s41597-019-0090-x
   id: http://doi.org/10.1038/s41597-019-0090-x
   journal: Scientific Data
   preferred: true
-  title: PathoPhenoDB, linking human pathogens to their phenotypes in support of infectious
-    disease research
+  title: PathoPhenoDB, linking human pathogens to their phenotypes in support of infectious disease research
   year: '2019'
 repository: https://github.com/bio-ontology-research-group/pathophenodb
 taxon:

@@ -99,6 +99,49 @@ If the input is ambiguous, resolve it before editing. Do not guess between multi
    - Keep the reason short and concrete, such as `no_homepage`, `insufficient_info`, or `page_unresolvable`.
    - Do not fabricate metadata just to satisfy validation.
 
+## Fixing broken links and stale product metadata
+
+Resources flagged by the data quality dashboard (`reports/quality-dashboard.json`)
+often carry broken `product_url` links, missing `format` fields, and stale
+retrieval `warnings:`. These notes capture the working pattern for clearing them.
+
+- **Verify before you change.** Check every URL live before editing, e.g.
+  `curl -s -o /dev/null -L -w "%{http_code}" --max-time 30 <url>`. Only swap in a
+  replacement URL you have confirmed returns 200 (or a 3xx that lands on 200).
+  Never replace one unverified URL with another unverified URL.
+- **Repoint moved downloads to the current canonical location.** Most "broken"
+  links are not gone, just moved: an obsolete host alias (e.g. an old FTP
+  mirror), a consolidated bundle replacing per-file artifacts, a version-pinned
+  file replaced by a `releases/latest` page, or an `https`/`http` scheme flip.
+  Find the live equivalent that still represents the same product and update the
+  `product_url`. When the artifact's shape changes, also update `description`,
+  `format`, `compression`, and refresh `product_file_size` from the new
+  `Content-Length` header. See the `kg-registry-product-url-update` skill.
+- **Clear stale false-positive warnings.** When a product's URL now verifies
+  live, remove the stale `File was not able to be retrieved when checked on ...`
+  entries from its `warnings:` block. Leave warnings in place only when the URL
+  is genuinely still unreachable.
+- **Fix foreign products on their OWNER page, or the edit gets clobbered.** A
+  product's owner is the resource whose ID matches the product ID prefix before
+  the first `.` (e.g. `kg-monarch.graph.jsonl.edges` is owned by `kg-monarch`;
+  `pathwaycommons.gmt` by `pathwaycommons`). The build's `sync_product_references`
+  step (`util/extract-metadata.py`) treats the owner page's copy as canonical and
+  **overwrites every other resource's copy of that product byte-for-byte** with
+  it. So editing a foreign (downstream) product only on the page where you found
+  it is NOT durable — the next build reverts it to whatever the owner page says.
+  When you repoint a URL, fix a format, refresh a size, or clear a stale warning
+  on a foreign product, apply the identical change to the product on its owner
+  resource page (`resource/<owner>/<owner>.md`). Updating the host copy too is
+  fine (and keeps the dashboard accurate until the next build), but the owner
+  page is the one that must change. Never *remove* a foreign product, and do not
+  invent a download URL for a product whose owning resource controls it (leave it
+  and note it instead).
+- **Remove a product only when the artifact truly does not exist.** If a product
+  the resource *owns* points at a URL that is a hard 404 and the artifact was
+  never published (not merely moved), removing that product is appropriate after
+  live verification. Also delete its now-orphaned per-product stub file
+  (`resource/<id>/<product-id>.md`). Keep at least one product on the page.
+
 ## Quick reference
 
 | Task | Command |
@@ -116,6 +159,9 @@ If the input is ambiguous, resolve it before editing. Do not guess between multi
 - Creating a separate Product page file.
 - Removing all existing products from a resource.
 - Removing foreign products from a resource page just because they are downstream products rather than direct products of the resource.
+- Replacing a `product_url` with a candidate you did not verify is live, or leaving a stale retrieval `warnings:` entry on a product whose URL now resolves.
+- Removing a product whose URL merely moved (repoint it) instead of only removing products whose artifact genuinely never existed.
+- Fixing a foreign product only on the page where it was flagged, without applying the same change to its owner page (`resource/<owner>/<owner>.md`, owner = product ID prefix); the build's product sync will clobber the host-only edit at the next build.
 - Using free-text source names, URLs, or INFORES IDs directly in `original_source` or `secondary_source` instead of KG-Registry identifiers.
 - Adding an `infores_id` that was inferred from the local KG-Registry ID or ontology prefix without confirming the exact value in `https://biolink.github.io/information-resource-registry/infores_catalog.yaml`.
 - Forgetting that missing source IDs can be intentionally minted as new unique KG-Registry IDs so later tooling can create stub pages for them.

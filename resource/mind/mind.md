@@ -180,6 +180,7 @@ publications:
   - Shehzaad Dhuliawala
   - Andrew McCallum
   - Andrew I. Su
+  doi: 10.1101/2023.05.12.540594
   id: https://doi.org/10.1101/2023.05.12.540594
   journal: bioRxiv
   title: Drug Repurposing using consilience of Knowledge Graph Completion methods

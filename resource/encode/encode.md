@@ -756,6 +756,7 @@ products:
 publications:
 - authors:
   - The ENCODE Project Consortium
+  doi: 10.1038/nature11247
   id: doi:10.1038/nature11247
   journal: Nature
   preferred: true

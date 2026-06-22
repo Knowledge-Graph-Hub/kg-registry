@@ -29,7 +29,7 @@ domains:
 homepage_url: https://foodb.ca/
 id: foodb
 infores_id: foodb
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -40,6 +40,7 @@ products:
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
   id: foodb.web
+  format: http
   name: FooDB Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -158,6 +159,7 @@ products:
   compression: targz
   description: Complete FooDB database as MySQL dump
   id: foodb.data.mysql
+  format: mysql
   name: FooDB MySQL Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1017,7 +1019,7 @@ publications:
   - Li L
   - Vogel HJ
   - Forsythe I
-  doi: doi:10.1093/nar/gkn810
+  doi: 10.1093/nar/gkn810
   id: https://doi.org/10.1093/nar/gkn810
   journal: Nucleic Acids Research
   preferred: true
@@ -1052,6 +1054,7 @@ publications:
   - Wilson M
   - Manach C
   - Scalbert A
+  doi: 10.1093/nar/gkx1089
   id: https://doi.org/10.1093/nar/gkx1089
   journal: Nucleic Acids Research
   title: HMDB 4.0 - The Human Metabolome Database for 2018
