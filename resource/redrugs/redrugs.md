@@ -1,6 +1,19 @@
 ---
 activity_status: inactive
 category: KnowledgeGraph
+contacts:
+  - category: Individual
+    label: James P. McCusker
+    contact_details:
+      - contact_type: email
+        value: mccusj@cs.rpi.edu
+      - contact_type: url
+        value: https://tw.rpi.edu/web/person/JamesMcCusker
+  - category: Organization
+    label: Tetherless World Constellation, Rensselaer Polytechnic Institute
+    contact_details:
+      - contact_type: url
+        value: https://tw.rpi.edu/
 creation_date: '2025-11-22T00:00:00Z'
 description: ReDrugs is a probabilistic knowledge graph for drug repositioning that integrates drug-target, protein-protein, and disease-gene interactions from multiple databases. The system uses evidence-weighted nanopublications to assign confidence scores to interactions based on experimental methods and manual curation. ReDrugs was designed to identify novel drug candidates for diseases, particularly melanoma, by filtering and analyzing systems biology networks with probabilistic methods. The platform included both a web interface and API for exploring molecular interaction networks. The web interface appears to be no longer accessible.
 domains:

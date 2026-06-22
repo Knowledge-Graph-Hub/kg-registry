@@ -1,6 +1,13 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: heshunmin@ibp.ac.cn
+  id: institute-of-biophysics-chinese-academy-of-science
+  label: Institute of Biophysics, Chinese Academy of Sciences
 creation_date: '2025-09-09T00:00:00Z'
 description: A comprehensive database dedicated to long non-coding RNA (lncRNA) annotation
   in animals and plants, providing systematic nomenclature, sequence information,
@@ -11,7 +18,7 @@ domains:
 - biological systems
 homepage_url: http://www.noncode.org/
 id: noncode
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 name: NONCODE
 products:
@@ -79,9 +86,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: noncode
   product_url: http://www.noncode.org/download.php
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
 - category: GraphicalInterface
   description: Predicted functions for plant lncRNAs based on co-expression analysis
   format: http
@@ -1108,9 +1112,6 @@ Integration from multiple sources:
   - zwd
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
 # Noncode
 
