@@ -26,7 +26,7 @@ domains:
 homepage_url: http://www.ebi.ac.uk/chebi
 id: chebi
 infores_id: chebi
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -96,6 +96,7 @@ products:
     API key to access.
   dump_format: neo4j
   id: ubkg.neo4j
+  format: neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -323,6 +324,7 @@ products:
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
   id: bioteque.embeddings
+  format: mixed
   name: Bioteque Embeddings
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -444,8 +446,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -566,8 +567,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -911,6 +911,7 @@ products:
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
   id: ibkh.graph
+  format: mixed
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -974,6 +975,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
+  format: mixed
   name: MechRepoNet Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1244,6 +1246,7 @@ products:
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
   id: rtx-kg2.neo4j
+  format: http
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -1819,6 +1822,7 @@ products:
 - category: GraphicalInterface
   description: FORUM web application interface for semantic metabolomics exploration
   id: forum.webapp
+  format: http
   name: FORUM Web Application
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1835,6 +1839,7 @@ products:
 - category: ProgrammingInterface
   description: FORUM REST API for programmatic access to chemical-disease associations
   id: forum.api
+  format: http
   name: FORUM API
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1852,6 +1857,7 @@ products:
   description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
     the knowledge graph structure
   id: forum.void
+  format: ttl
   name: FORUM VoID Metadata
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2639,6 +2645,7 @@ products:
     generated per-job Turtle files under mapping/kg and loading into Virtuoso named
     graphs.
   id: metabokg.graph
+  format: mixed
   latest_version: arXiv v1 demonstration
   name: MetaboKG RDF Graph
   original_source:
@@ -2686,6 +2693,7 @@ products:
   description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
     class hierarchies used by the generated knowledge graph.
   id: metabokg.schema
+  format: ttl
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0
     label: Apache License 2.0
@@ -2846,6 +2854,7 @@ products:
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
   id: pathwaycommons.gmt
+  format: tsv
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2970,6 +2979,7 @@ products:
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
   id: foodb.web
+  format: http
   name: FooDB Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3088,6 +3098,7 @@ products:
   compression: targz
   description: Complete FooDB database as MySQL dump
   id: foodb.data.mysql
+  format: mysql
   name: FooDB MySQL Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3501,6 +3512,7 @@ products:
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
   id: forum.graph.dump
+  format: mixed
   name: FORUM Knowledge Graph Dump
   original_source:
   - relation_type: prov:hadPrimarySource
