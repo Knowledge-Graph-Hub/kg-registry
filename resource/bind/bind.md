@@ -414,7 +414,7 @@ publications:
   - Hogue CW
   doi: 10.1093/nar/gkg056
   id: doi:10.1093/nar/gkg056
-  journal: Nucleic Acids Res
+  journal: Nucleic Acids Research
   title: 'BIND: the Biomolecular Interaction Network Database'
   year: '2003'
 synonyms:

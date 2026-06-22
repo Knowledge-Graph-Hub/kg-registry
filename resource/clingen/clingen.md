@@ -1619,6 +1619,7 @@ publications:
   title: ClinGen — The Clinical Genome Resource
   year: '2015'
 - authors:
+  - Erica F. Andersen
   - ClinGen Consortium
   doi: 10.1016/j.gim.2024.101228
   id: https://doi.org/10.1016/j.gim.2024.101228

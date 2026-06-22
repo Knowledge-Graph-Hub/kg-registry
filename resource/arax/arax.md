@@ -79,11 +79,27 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/RTXteam/RTX/tree/master/code/ARAX/Examples
 publications:
-  - doi: 10.1093/bioinformatics/btad082
-    id: btad082
-    journal: Bioinformatics
-    title: 'ARAX: a graph-based modular reasoning tool for translational biomedicine'
-    year: '2023'
+- authors:
+  - Amy K Glen
+  - Chunyu Ma
+  - Luis Mendoza
+  - Finn Womack
+  - E C Wood
+  - Meghamala Sinha
+  - Liliana Acevedo
+  - Lindsey G Kvarfordt
+  - Ross C Peene
+  - Shaopeng Liu
+  - Andrew S Hoffman
+  - Jared C Roach
+  - Eric W Deutsch
+  - Stephen A Ramsey
+  - David Koslicki
+  doi: 10.1093/bioinformatics/btad082
+  id: doi:10.1093/bioinformatics/btad082
+  journal: Bioinformatics
+  title: 'ARAX: a graph-based modular reasoning tool for translational biomedicine'
+  year: '2023'
 synonyms:
   - ARAX
   - Expander Agent

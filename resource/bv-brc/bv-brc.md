@@ -389,7 +389,7 @@ publications:
   - Stevens RL
   doi: 10.1093/nar/gkac1003
   id: https://pubmed.ncbi.nlm.nih.gov/36350631/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   preferred: true
   title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC): a resource combining PATRIC, IRD and ViPR'
   year: '2023'

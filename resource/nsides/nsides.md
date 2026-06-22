@@ -82,7 +82,7 @@ publications:
       - Tatonetti NP
     doi: 10.1016/j.patter.2020.100108
     id: doi:10.1016/j.patter.2020.100108
-    journal: Patterns (N Y)
+    journal: Patterns
     title: Using Machine Learning to Identify Adverse Drug Effects Posing Increased Risk to Women
     year: '2020'
   - id: doi:10.1016/j.medj.2022.08.001

@@ -85,7 +85,7 @@ publications:
   id: doi:10.1016/j.jmb.2023.168052
   journal: Journal of Molecular Biology
   preferred: true
-  title: 'PrePPI: a structure-informed database of protein-protein interactions'
+  title: 'PrePPI: A Structure Informed Proteome-wide Database of Protein–Protein Interactions'
   year: '2023'
 synonyms:
 - PrePPI

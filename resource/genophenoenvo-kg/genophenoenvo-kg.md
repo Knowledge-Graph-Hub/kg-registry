@@ -67,7 +67,7 @@ publications:
       - Pankaj Jaiswal
     doi: 10.3389/frai.2023.1201002
     id: PMID:37384147
-    journal: Frontiers in Artificial Intelligence
+    journal: Front Artif Intell
     title: Using knowledge graphs to infer gene expression in plants
     year: '2023'
 taxon:

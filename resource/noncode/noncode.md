@@ -789,11 +789,28 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- doi: 10.1093/nar/gkaa1046
-  id: zhao2021noncode
+- authors:
+  - Lianhe Zhao
+  - Jiajia Wang
+  - Yanyan Li
+  - Tingrui Song
+  - Yang Wu
+  - Shuangsang Fang
+  - Dechao Bu
+  - Hui Li
+  - Liang Sun
+  - Dong Pei
+  - Yu Zheng
+  - Jianqin Huang
+  - Mingqing Xu
+  - Runsheng Chen
+  - Yi Zhao
+  - Shunmin He
+  doi: 10.1093/nar/gkaa1046
+  id: doi:10.1093/nar/gkaa1046
+  journal: Nucleic Acids Research
   preferred: true
-  title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation
-    in both animals and plants'
+  title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation in both animals and plants'
   year: '2021'
 synonyms:
 - NONCODEV6

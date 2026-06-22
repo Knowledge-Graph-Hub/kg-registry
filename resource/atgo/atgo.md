@@ -61,7 +61,7 @@ publications:
       - Subramaniam Subramani
     doi: 10.1016/j.molcel.2016.12.024
     id: PMID:28132844
-    journal: Molecular Cell
+    journal: Mol Cell
     title: Active Interaction Mapping Reveals the Hierarchical Organization of Autophagy
     year: '2017'
 synonyms:

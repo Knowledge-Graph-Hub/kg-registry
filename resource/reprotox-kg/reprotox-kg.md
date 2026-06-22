@@ -95,7 +95,7 @@ publications:
   - Ma'ayan A
   doi: 10.1038/s43856-023-00329-2
   id: PMID:37460679
-  journal: Communications Medicine
+  journal: Commun Med (Lond)
   preferred: true
   title: Toxicology knowledge graph for structural birth defects
   year: '2023'

@@ -72,17 +72,14 @@ entries:
     status: valid
     warnings: []
   resource/afcs/afcs.md#publication[0]#DOI:10.1038/nature01304:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:53:09Z'
     errors: []
-    fingerprint: 3e96f3fca963b6f2f84724a6e6e9b4f40ebf344208196b554531d6395f3ed6c4
+    fingerprint: df89ec52123d27ed1414dc42e5ff5208f22c767ac6f3b4eaee62e71ac76cd2b7
     publication_index: 0
     reference_id: DOI:10.1038/nature01304
     source_path: resource/afcs/afcs.md
-    status: warning
-    warnings:
-    - first author 'Participating investigators and scientists of the Alliance for
-      Cellular Signaling' could not be confidently compared to cached first author
-      'Alfred G. Gilman' in /home/harry/kg-registry/references_cache/DOI_10.1038_nature01304.md
+    status: valid
+    warnings: []
   resource/afcs/afcs.md#publication[1]#DOI:10.1038/nature01307:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -181,8 +178,17 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-016-0092-y.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-016-0092-y.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-016-0092-y.md
+  resource/arax/arax.md#publication[0]#DOI:10.1093/bioinformatics/btad082:
+    checked_at: '2026-06-22T16:51:05Z'
+    errors: []
+    fingerprint: 5add1c2572e1f0fd9007a177acfa2fd9e70f93d71c78456af90caba083a7deb4
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btad082
+    source_path: resource/arax/arax.md
+    status: valid
+    warnings: []
   resource/arax/arax.md#publication[0]#btad082:
-    checked_at: '2026-06-22T16:30:31Z'
+    checked_at: '2026-06-22T16:42:44Z'
     errors: []
     fingerprint: 4a4c88615445d3ce644a98d92af132f160f1860f598cd8ea3f5b918e7f99173f
     publication_index: 0
@@ -214,15 +220,14 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_31665441.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_31665441.md
   resource/atgo/atgo.md#publication[0]#PMID:28132844:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:53:13Z'
     errors: []
-    fingerprint: 251d573e02118baa90a15fbfaa613c79e74960777ccbd5daae6a7fd402c80de3
+    fingerprint: 4c3159d574ac4975192291820e9b45ee68685e020a06291ac09791f1edfdd0c7
     publication_index: 0
     reference_id: PMID:28132844
     source_path: resource/atgo/atgo.md
-    status: warning
-    warnings:
-    - journal 'Molecular Cell' does not match cached journal 'Mol Cell' in /home/harry/kg-registry/references_cache/PMID_28132844.md
+    status: valid
+    warnings: []
   resource/atom/atom.md#publication[0]#DOI:10.1109/BIBM47256.2019.8983062:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -300,16 +305,14 @@ entries:
     status: valid
     warnings: []
   resource/bind/bind.md#publication[0]#DOI:10.1093/nar/gkg056:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:53:16Z'
     errors: []
-    fingerprint: fe32f9f3d86e672090f0d4bf31d943b0b558a3ceab67cfaeba7a10a4868770df
+    fingerprint: 13e65da74f71815d2a032f81d74c2622ea26bc1173f0369dbb09f6e37caa7832
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkg056
     source_path: resource/bind/bind.md
-    status: warning
-    warnings:
-    - journal 'Nucleic Acids Res' does not match cached journal 'Nucleic Acids Research'
-      in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkg056.md
+    status: valid
+    warnings: []
   resource/bindingdb/bindingdb.md#publication[0]#DOI:10.1093/nar/gkae1075:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -435,16 +438,14 @@ entries:
     status: valid
     warnings: []
   resource/bioplanet/bioplanet.md#publication[0]#DOI:10.3389/fphar.2019.00445:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:53:18Z'
     errors: []
-    fingerprint: 214fa00dac2a5cc624da7c377b2f1c55244fb3b3a454bbc8ed0712dbbece5040
+    fingerprint: 405979a3257961e3268242c000360ff0fa0887b3a9943156f078ea95780a093b
     publication_index: 0
     reference_id: DOI:10.3389/fphar.2019.00445
     source_path: resource/bioplanet/bioplanet.md
-    status: warning
-    warnings:
-    - journal 'Front Pharmacol' does not match cached journal 'Frontiers in Pharmacology'
-      in /home/harry/kg-registry/references_cache/DOI_10.3389_fphar.2019.00445.md
+    status: valid
+    warnings: []
   resource/bioportal/bioportal.md#publication[0]#DOI:10.1093/nar/gkaf402:
     checked_at: '2026-06-22T16:25:14Z'
     errors: []
@@ -531,18 +532,16 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_21030441.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_21030441.md
   resource/bv-brc/bv-brc.md#publication[0]#PMID:36350631:
-    checked_at: '2026-06-22T16:25:16Z'
+    checked_at: '2026-06-22T16:53:21Z'
     errors: []
-    fingerprint: 19677e57d2d9b94fc746c157e4735e76aaed53ad28aba209de99e546a2c66bd5
+    fingerprint: 7332d48bef2aa27f3f9ec99d874eee2a5b78a4337ce2f9a5b25fb3e3cc53abfe
     publication_index: 0
     reference_id: PMID:36350631
     source_path: resource/bv-brc/bv-brc.md
-    status: warning
-    warnings:
-    - journal 'Nucleic Acids Research' does not match cached journal 'Nucleic Acids
-      Res' in references_cache/PMID_36350631.md
+    status: valid
+    warnings: []
   resource/cam-kp/cam-kp.md#publication[0]#ARXIV:2004.01269:
-    checked_at: '2026-06-22T16:30:36Z'
+    checked_at: '2026-06-22T16:42:57Z'
     errors: []
     fingerprint: f554fce5b033717d779aa627330f6abbb9742771bc8ecd5833b5b7b13711105c
     publication_index: 0
@@ -551,8 +550,46 @@ entries:
     status: warning
     warnings:
     - ARXIV:2004.01269 has no cached reference at references_cache/ARXIV_2004.01269.md
+  resource/cam-kp/cam-kp.md#publication[0]#DOI:10.2196/26714:
+    checked_at: '2026-06-22T16:56:16Z'
+    errors: []
+    fingerprint: 58a8bbe78a357281a76775c67e07a0865b99d5141fe5702f310094ea28897dbb
+    publication_index: 0
+    reference_id: DOI:10.2196/26714
+    source_path: resource/cam-kp/cam-kp.md
+    status: valid
+    warnings: []
+  resource/cam-kp/cam-kp.md#publication[0]#DOI:10.48550/arXiv.2004.01269:
+    checked_at: '2026-06-22T16:49:23Z'
+    errors:
+    - title 'A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses
+      for Real-World Environmental Health Observations' does not match cached title
+      'Series Elastic Force Control for Soft Robotic Fluid Actuators' in references_cache/DOI_10.48550_arXiv.2004.01269.md
+    - first author 'Balhoff JP' does not match cached first author 'Wang, Chunpeng'
+      in references_cache/DOI_10.48550_arXiv.2004.01269.md
+    fingerprint: fa08f826119937afbf2730d961069a8f541d8a2fceeeea5e5fe7df64e73f8802
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2004.01269
+    source_path: resource/cam-kp/cam-kp.md
+    status: error
+    warnings: []
+  resource/cam-kp/cam-kp.md#publication[0]#DOI:10.48550/arXiv.2105.04728:
+    checked_at: '2026-06-22T16:53:23Z'
+    errors:
+    - title 'A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses
+      for Real-World Environmental Health Observations' does not match cached title
+      'Optimal Online Algorithms for Peak-Demand Reduction Maximization with Energy
+      Storage' in references_cache/DOI_10.48550_arXiv.2105.04728.md
+    - first author 'Balhoff JP' does not match cached first author 'Mo, Yanfang' in
+      references_cache/DOI_10.48550_arXiv.2105.04728.md
+    fingerprint: 194b5a7e1454f5663f7cceb3ba6b479168323581a022bc3fa9ebec37fde22671
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2105.04728
+    source_path: resource/cam-kp/cam-kp.md
+    status: error
+    warnings: []
   resource/cam-kp/cam-kp.md#publication[1]#ARXIV:2105.04728:
-    checked_at: '2026-06-22T16:30:36Z'
+    checked_at: '2026-06-22T16:42:57Z'
     errors: []
     fingerprint: c814da7635577967472d68674b9046dade5e6064fa37728a76e175ac0892ece0
     publication_index: 1
@@ -561,12 +598,47 @@ entries:
     status: warning
     warnings:
     - ARXIV:2105.04728 has no cached reference at references_cache/ARXIV_2105.04728.md
+  resource/cam-kp/cam-kp.md#publication[1]#DOI:10.1093/nar/gkac833:
+    checked_at: '2026-06-22T16:53:23Z'
+    errors: []
+    fingerprint: 4ef902f5e3fe603e78e8e725adf09e08fd9a04f2bd6c4e923f7dcd9d5f1db99e
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkac833
+    source_path: resource/cam-kp/cam-kp.md
+    status: valid
+    warnings: []
+  resource/cam-kp/cam-kp.md#publication[1]#DOI:10.48550/arXiv.2105.04728:
+    checked_at: '2026-06-22T16:49:24Z'
+    errors:
+    - title 'A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses
+      for Real-World Environmental Health Observations' does not match cached title
+      'Optimal Online Algorithms for Peak-Demand Reduction Maximization with Energy
+      Storage' in references_cache/DOI_10.48550_arXiv.2105.04728.md
+    - first author 'Balhoff JP' does not match cached first author 'Mo, Yanfang' in
+      references_cache/DOI_10.48550_arXiv.2105.04728.md
+    fingerprint: ac912b2a0d2083653e1525f942a7e4e3e109a9eb6f5717d150728d586b84d3f7
+    publication_index: 1
+    reference_id: DOI:10.48550/arXiv.2105.04728
+    source_path: resource/cam-kp/cam-kp.md
+    status: error
+    warnings:
+    - journal 'JMIR Medical Informatics' does not match cached journal 'arXiv' in
+      references_cache/DOI_10.48550_arXiv.2105.04728.md
   resource/cam-kp/cam-kp.md#publication[2]#DOI:10.1093/nar/gkac833:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
     fingerprint: 4ef902f5e3fe603e78e8e725adf09e08fd9a04f2bd6c4e923f7dcd9d5f1db99e
     publication_index: 2
     reference_id: DOI:10.1093/nar/gkac833
+    source_path: resource/cam-kp/cam-kp.md
+    status: valid
+    warnings: []
+  resource/cam-kp/cam-kp.md#publication[2]#DOI:10.1093/nar/gkn580:
+    checked_at: '2026-06-22T16:53:23Z'
+    errors: []
+    fingerprint: ff67cccfb1e50cc15f6c51a344815d79c1b9610f0a183ec2c9db0b0ee71e9184
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkn580
     source_path: resource/cam-kp/cam-kp.md
     status: valid
     warnings: []
@@ -617,7 +689,7 @@ entries:
     status: valid
     warnings: []
   resource/catalogue-of-life/catalogue-of-life.md#publication[1]#DOI:10.1371/journal.pbio.2005053:
-    checked_at: '2026-06-22T16:30:38Z'
+    checked_at: '2026-06-22T16:49:36Z'
     errors: []
     fingerprint: 084de15ea2ecbfe32b5c993623d510d098cc49fb5c1ea850e4d1c4e232b0372c
     publication_index: 1
@@ -706,8 +778,18 @@ entries:
     source_path: resource/cellosaurus/cellosaurus.md
     status: valid
     warnings: []
+  resource/cfde-gse/cfde-gse.md#publication[0]#DOI:10.1038/s41467-022-28631-3:
+    checked_at: '2026-06-22T16:57:06Z'
+    errors: []
+    fingerprint: a3ff1c8d84d8ae96f3d4bedb6923e4fdf2801428fb4514f1c38e0207d289497d
+    publication_index: 0
+    reference_id: DOI:10.1038/s41467-022-28631-3
+    source_path: resource/cfde-gse/cfde-gse.md
+    status: warning
+    warnings:
+    - DOI:10.1038/s41467-022-28631-3 has no cached reference at references_cache/DOI_10.1038_s41467-022-28631-3.md
   resource/cfde-gse/cfde-gse.md#publication[0]#DOI:10.1038/s41467-2022-28631-3:
-    checked_at: '2026-06-22T16:30:41Z'
+    checked_at: '2026-06-22T16:43:02Z'
     errors: []
     fingerprint: 7a403c6bcb3cc6926dc9a1ace82515c15bbac9cd3587792c7ca5a93d513763a5
     publication_index: 0
@@ -889,16 +971,14 @@ entries:
     status: valid
     warnings: []
   resource/clingen/clingen.md#publication[1]#DOI:10.1016/j.gim.2024.101228:
-    checked_at: '2026-06-22T16:25:43Z'
+    checked_at: '2026-06-22T16:53:28Z'
     errors: []
-    fingerprint: 46c59d3197b809807754e2e11acb42c6c8d0fbb1e07a6fc48d182245ac6c4828
+    fingerprint: fb7e9bbe56ea6bf6cf3c40dfd43de7df6a135880f925963e905adc841f677249
     publication_index: 1
     reference_id: DOI:10.1016/j.gim.2024.101228
     source_path: resource/clingen/clingen.md
-    status: warning
-    warnings:
-    - first author 'ClinGen Consortium' could not be confidently compared to cached
-      first author 'Erica F. Andersen' in references_cache/DOI_10.1016_j.gim.2024.101228.md
+    status: valid
+    warnings: []
   resource/clinicalkg/clinicalkg.md#publication[0]#DOI:10.1101/2020.05.09.084897:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -909,16 +989,14 @@ entries:
     status: valid
     warnings: []
   resource/clinicaltrialsgov/clinicaltrialsgov.md#publication[0]#PMID:21366476:
-    checked_at: '2026-06-22T16:25:46Z'
+    checked_at: '2026-06-22T16:53:31Z'
     errors: []
-    fingerprint: c5c74d285725acfe958dad4c5279983ef48eb7741b5b49dd6c1513493d9a1e13
+    fingerprint: e03de1d00c52371853b5ee89df8ace04500918cd512b8a100e0e92d785e7770f
     publication_index: 0
     reference_id: PMID:21366476
     source_path: resource/clinicaltrialsgov/clinicaltrialsgov.md
-    status: warning
-    warnings:
-    - journal 'The New England Journal of Medicine' does not match cached journal
-      'N Engl J Med' in references_cache/PMID_21366476.md
+    status: valid
+    warnings: []
   resource/clinvar/clinvar.md#publication[0]#DOI:10.1093/nar/gkae1090:
     checked_at: '2026-06-22T16:25:50Z'
     errors: []
@@ -1703,26 +1781,30 @@ entries:
     status: valid
     warnings: []
   resource/emapa/emapa.md#publication[3]#DOI:10.1016/B978-0-12-800043-4.00023-3:
-    checked_at: '2026-06-22T16:37:05Z'
-    errors:
-    - 'title ''Textual Anatomics'' does not match cached title ''Textual Anatomics:
-      the Mouse Developmental Anatomy Ontology and the Gene Expression Database for
-      Mouse Development (GXD)'' in references_cache/DOI_10.1016_B978-0-12-800043-4.00023-3.md'
-    fingerprint: c6886b7276bc18e94a00b7af42e9347976531f2e13d63ad15903890170f05819
-    publication_index: 3
-    reference_id: DOI:10.1016/B978-0-12-800043-4.00023-3
-    source_path: resource/emapa/emapa.md
-    status: error
-    warnings: []
-  resource/emapa/emapa.md#publication[4]#DOI:10.1016/B978-0-12-800043-4.00023-3:
-    checked_at: '2026-06-22T16:37:05Z'
+    checked_at: '2026-06-22T16:43:10Z'
     errors: []
-    fingerprint: 2b268c4ff004cd3c11dd57211ae93120063bbdfc93c8f36db48bceb165d382ab
-    publication_index: 4
+    fingerprint: 9c2f597eea67856ed01a6a564997f2ce46656ba3bf81e432a3328152018f6a52
+    publication_index: 3
     reference_id: DOI:10.1016/B978-0-12-800043-4.00023-3
     source_path: resource/emapa/emapa.md
     status: valid
     warnings: []
+  resource/emapa/emapa.md#publication[4]#DOI:10.1016/B978-0-12-800043-4.00023-3:
+    checked_at: '2026-06-22T16:43:10Z'
+    errors:
+    - 'title ''Textual Anatomics: the Mouse Developmental Anatomy Ontology and the
+      Gene Expression Database for Mouse Development (GXD)'' does not match cached
+      title ''Textual Anatomics'' in references_cache/DOI_10.1016_B978-0-12-800043-4.00023-3.md'
+    fingerprint: 55c82e3fe22d29fe4e7cb5d1955bce4c3ff7bba9b429f5536c5b28452d4a17f6
+    publication_index: 4
+    reference_id: DOI:10.1016/B978-0-12-800043-4.00023-3
+    source_path: resource/emapa/emapa.md
+    status: error
+    warnings:
+    - authors missing; cached authors are available in references_cache/DOI_10.1016_B978-0-12-800043-4.00023-3.md
+    - journal missing; cached journal is available in references_cache/DOI_10.1016_B978-0-12-800043-4.00023-3.md
+    - year missing; cached year is available in references_cache/DOI_10.1016_B978-0-12-800043-4.00023-3.md
+    - doi missing; cached doi is available in references_cache/DOI_10.1016_B978-0-12-800043-4.00023-3.md
   resource/emeraldgraph/emeraldgraph.md#publication[0]#DOI:10.1145/3774904.3792997:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2291,16 +2373,14 @@ entries:
     status: valid
     warnings: []
   resource/genophenoenvo-kg/genophenoenvo-kg.md#publication[0]#PMID:37384147:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:53:36Z'
     errors: []
-    fingerprint: 63b592dd429ae3fdfd023802c94c1499df6cde08d38e3b0000701431a71375d5
+    fingerprint: ce256a1fd08bd9363e554c08f6aecc692cf6de6ba45efc92c37f91ff690519c9
     publication_index: 0
     reference_id: PMID:37384147
     source_path: resource/genophenoenvo-kg/genophenoenvo-kg.md
-    status: warning
-    warnings:
-    - journal 'Frontiers in Artificial Intelligence' does not match cached journal
-      'Front Artif Intell' in /home/harry/kg-registry/references_cache/PMID_37384147.md
+    status: valid
+    warnings: []
   resource/glkb/glkb.md#publication[0]#DOI:10.1101/2024.09.22.614323:
     checked_at: '2026-06-22T16:26:53Z'
     errors: []
@@ -2450,27 +2530,23 @@ entries:
     status: valid
     warnings: []
   resource/gtex/gtex.md#publication[0]#DOI:10.1126/science.aaz1776:
-    checked_at: '2026-06-15T22:06:33Z'
+    checked_at: '2026-06-22T16:53:39Z'
     errors: []
-    fingerprint: d1cc7f81ec14c9faa21f2fa729b184ac3f1843c25119108ba6b683a7ed0b398a
+    fingerprint: 84729a545b74a8557d25c29641d1c5d1043aa0b44b48bb823788ff31d5186e01
     publication_index: 0
     reference_id: DOI:10.1126/science.aaz1776
     source_path: resource/gtex/gtex.md
-    status: warning
-    warnings:
-    - "first author 'GTEx Consortium' could not be confidently compared to cached\
-      \ first author 'Fran\xE7ois Aguet' in references_cache/DOI_10.1126_science.aaz1776.md"
+    status: valid
+    warnings: []
   resource/gtex/gtex.md#publication[1]#DOI:10.1126/science.1262110:
-    checked_at: '2026-06-15T22:06:33Z'
+    checked_at: '2026-06-22T16:53:39Z'
     errors: []
-    fingerprint: 16a9c214a5c33f73c7ee7c4ba6adae862e6643036ea35232881e48d4caad80cb
+    fingerprint: e04b041f5964cf88dcfe605e9ce6239466cc510f9ef72a2f7ccdbf34e51b5287
     publication_index: 1
     reference_id: DOI:10.1126/science.1262110
     source_path: resource/gtex/gtex.md
-    status: warning
-    warnings:
-    - first author 'GTEx Consortium' could not be confidently compared to cached first
-      author 'Kristin G. Ardlie' in references_cache/DOI_10.1126_science.1262110.md
+    status: valid
+    warnings: []
   resource/gtopdb/gtopdb.md#publication[0]#DOI:10.1093/nar/gkad944:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2757,7 +2833,7 @@ entries:
     status: valid
     warnings: []
   resource/hubmap/hubmap.md#publication[0]#DOI:10.1038/s41592-025-02120-1:
-    checked_at: '2026-06-22T16:35:03Z'
+    checked_at: '2026-06-22T16:49:40Z'
     errors: []
     fingerprint: 2c87855a1d9096ddc1123fbfbdc5784aae2352e0ee873f0b87fc96faf79f2fee
     publication_index: 0
@@ -2767,7 +2843,7 @@ entries:
     warnings:
     - DOI:10.1038/s41592-025-02120-1 has no cached reference at references_cache/DOI_10.1038_s41592-025-02120-1.md
   resource/hubmap/hubmap.md#publication[1]#DOI:10.1038/s41592-024-02497-x:
-    checked_at: '2026-06-22T16:35:05Z'
+    checked_at: '2026-06-22T16:49:41Z'
     errors: []
     fingerprint: ed5aff45bf2c393ec930b5ebdc91e9555d25d495ccf32794879cbcb890df6233
     publication_index: 1
@@ -3167,8 +3243,17 @@ entries:
     source_path: resource/kinace/kinace.md
     status: valid
     warnings: []
+  resource/kinhub/kinhub.md#publication[0]#DOI:10.1186/s12859-016-1433-7:
+    checked_at: '2026-06-22T16:51:08Z'
+    errors: []
+    fingerprint: 0aa35321cb29cdb2c6581e8e967a8eacb9a0cd4d490dbbf587e4297bf8429dba
+    publication_index: 0
+    reference_id: DOI:10.1186/s12859-016-1433-7
+    source_path: resource/kinhub/kinhub.md
+    status: valid
+    warnings: []
   resource/kinhub/kinhub.md#publication[0]#eid2017kinmap:
-    checked_at: '2026-06-22T16:30:45Z'
+    checked_at: '2026-06-22T16:43:20Z'
     errors: []
     fingerprint: e2f52a0b98719dbaf878974aaccd05a9a617dde629edaee85b355e97a04caa0f
     publication_index: 0
@@ -3191,7 +3276,7 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_22027554.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_22027554.md
   resource/knowwheregraph/knowwheregraph.md#publication[0]#ARXIV:2502.13874:
-    checked_at: '2026-06-22T16:30:47Z'
+    checked_at: '2026-06-22T16:43:23Z'
     errors: []
     fingerprint: 55869b0827512d1dd0cd888fa90d254ad16fd9a7d0d55a9e4626c10a98494f3a
     publication_index: 0
@@ -3200,6 +3285,15 @@ entries:
     status: warning
     warnings:
     - ARXIV:2502.13874 has no cached reference at references_cache/ARXIV_2502.13874.md
+  resource/knowwheregraph/knowwheregraph.md#publication[0]#DOI:10.48550/arXiv.2502.13874:
+    checked_at: '2026-06-22T16:49:28Z'
+    errors: []
+    fingerprint: a978ece6837632032dfe4555547271dc1c718609ac15bdc33f4666a83b96fc08
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2502.13874
+    source_path: resource/knowwheregraph/knowwheregraph.md
+    status: valid
+    warnings: []
   resource/knowwheregraph/knowwheregraph.md#publication[1]#DOI:10.1016/j.websem.2024.100842:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3240,8 +3334,17 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.5281_zenodo.6522019.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.5281_zenodo.6522019.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.5281_zenodo.6522019.md
+  resource/lincs-l1000/lincs-l1000.md#publication[0]#DOI:10.1016/j.cell.2017.10.049:
+    checked_at: '2026-06-22T16:49:11Z'
+    errors: []
+    fingerprint: 278afeb610025ccc41902ffc752cda3708c18b5b0c5932a1839fe4cdde39920a
+    publication_index: 0
+    reference_id: DOI:10.1016/j.cell.2017.10.049
+    source_path: resource/lincs-l1000/lincs-l1000.md
+    status: valid
+    warnings: []
   resource/lincs-l1000/lincs-l1000.md#publication[0]#lincs_l1000_paper:
-    checked_at: '2026-06-22T16:30:50Z'
+    checked_at: '2026-06-22T16:43:25Z'
     errors: []
     fingerprint: 75845042b019c5b8e9b9da98d39de4b3a7b49ffc2b78f0d49bc768ebc88d4619
     publication_index: 0
@@ -3497,7 +3600,7 @@ entries:
     status: valid
     warnings: []
   resource/metabokg/metabokg.md#publication[0]#ARXIV:2605.24706:
-    checked_at: '2026-06-22T16:30:52Z'
+    checked_at: '2026-06-22T16:43:28Z'
     errors: []
     fingerprint: 78e93c2f91409e5a19d9f11b04f3557d6c19fe7bdd1fc5c1b4d3d6511f522042
     publication_index: 0
@@ -3506,6 +3609,15 @@ entries:
     status: warning
     warnings:
     - ARXIV:2605.24706 has no cached reference at references_cache/ARXIV_2605.24706.md
+  resource/metabokg/metabokg.md#publication[0]#DOI:10.48550/arXiv.2605.24706:
+    checked_at: '2026-06-22T16:49:32Z'
+    errors: []
+    fingerprint: a4af8fa01850261aa146ce566b68452a2dea9a0d5c6df5222f1f5b6233609c5a
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2605.24706
+    source_path: resource/metabokg/metabokg.md
+    status: valid
+    warnings: []
   resource/metanetx/metanetx.md#publication[0]#DOI:10.1093/nar/gkaa992:
     checked_at: '2026-06-15T22:01:41Z'
     errors: []
@@ -4037,8 +4149,17 @@ entries:
     source_path: resource/nextprot/nextprot.md
     status: valid
     warnings: []
+  resource/noncode/noncode.md#publication[0]#DOI:10.1093/nar/gkaa1046:
+    checked_at: '2026-06-22T16:51:11Z'
+    errors: []
+    fingerprint: 4b14092b7dd1d58a57e5229843ef1d9c54ccf77ebbee3a4b58015655d2c69adb
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaa1046
+    source_path: resource/noncode/noncode.md
+    status: valid
+    warnings: []
   resource/noncode/noncode.md#publication[0]#zhao2021noncode:
-    checked_at: '2026-06-22T16:30:55Z'
+    checked_at: '2026-06-22T16:43:31Z'
     errors: []
     fingerprint: 2d09ce33bde7a29e183e2e63738d7fd76bf510a8e213251466ffbbe853fdeea2
     publication_index: 0
@@ -4068,15 +4189,14 @@ entries:
     - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_35267146.md
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_35267146.md
   resource/nsides/nsides.md#publication[0]#DOI:10.1016/j.patter.2020.100108:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:53:54Z'
     errors: []
-    fingerprint: 3042d5a3459ecfb82270c4264e8b5a00ba1fa8e48e05c884724c79ef26733807
+    fingerprint: 417ab6a7b034c3ad3083c8cf36dffefe302c5de0e370bcd44594702425394fad
     publication_index: 0
     reference_id: DOI:10.1016/j.patter.2020.100108
     source_path: resource/nsides/nsides.md
-    status: warning
-    warnings:
-    - journal 'Patterns (N Y)' does not match cached journal 'Patterns' in /home/harry/kg-registry/references_cache/DOI_10.1016_j.patter.2020.100108.md
+    status: valid
+    warnings: []
   resource/nsides/nsides.md#publication[1]#DOI:10.1016/j.medj.2022.08.001:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4140,7 +4260,7 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_27128319.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_27128319.md
   resource/obis/obis.md#publication[0]#obis-data:
-    checked_at: '2026-06-22T16:30:57Z'
+    checked_at: '2026-06-22T16:43:37Z'
     errors: []
     fingerprint: f1238d5b8f1153a7711812cf5815619ac4a2154cb83189866099fc0187219c4d
     publication_index: 0
@@ -4362,16 +4482,13 @@ entries:
     status: valid
     warnings: []
   resource/ontoneo/ontoneo.md#publication[2]#DOI:10.5281/zenodo.17508651:
-    checked_at: '2026-06-22T16:28:18Z'
-    errors:
-    - "title 'Formal Ontologies in Knowledge Organization within the Obstetric and\
-      \ Neonatal Domain' does not match cached title 'Ontologias Formais na Organiza\xE7\
-      \xE3o do Conhecimento no Dom\xEDnio Obst\xE9trico e Neonatal' in references_cache/DOI_10.5281_zenodo.17508651.md"
-    fingerprint: f9599366b09c53630ba3b5aca50eaef10dd11eb9cc5edb242a8df14fab52d24e
+    checked_at: '2026-06-22T16:53:57Z'
+    errors: []
+    fingerprint: d56927c36bca26522f8ca7ba9e100eae96eeec14540be53f6fd9a5b990b170a0
     publication_index: 2
     reference_id: DOI:10.5281/zenodo.17508651
     source_path: resource/ontoneo/ontoneo.md
-    status: error
+    status: valid
     warnings: []
   resource/open-tree-of-life/open-tree-of-life.md#publication[0]#DOI:10.1073/pnas.1423041112:
     checked_at: '2026-06-12T20:32:32Z'
@@ -5203,17 +5320,14 @@ entries:
     status: valid
     warnings: []
   resource/preppi/preppi.md#publication[0]#DOI:10.1016/j.jmb.2023.168052:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:53:59Z'
     errors: []
-    fingerprint: 47b16be41e047d51d3eabd1033384a416c2fd0010771aed284dd080f53787012
+    fingerprint: 65ac4cdf3bb4f3c9e79030c202a8963de2fab428635cc1db0b967d9d43b4530d
     publication_index: 0
     reference_id: DOI:10.1016/j.jmb.2023.168052
     source_path: resource/preppi/preppi.md
-    status: warning
-    warnings:
-    - "title 'PrePPI: a structure-informed database of protein-protein interactions'\
-      \ does not match cached title 'PrePPI: A Structure Informed Proteome-wide Database\
-      \ of Protein\u2013Protein Interactions' in /home/harry/kg-registry/references_cache/DOI_10.1016_j.jmb.2023.168052.md"
+    status: valid
+    warnings: []
   resource/prism/prism.md#publication[0]#DOI:10.1038/s43018-019-0018-6:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5224,16 +5338,14 @@ entries:
     status: valid
     warnings: []
   resource/progeny/progeny.md#publication[0]#PMID:29295995:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:54:02Z'
     errors: []
-    fingerprint: 38acb1ae0c06db6b0e377bb7955d6f2019cc6a88c5ba0a112ee0a523b65a16c4
+    fingerprint: 9e666b205d9a1daaa40bd7e7757a94efab9aca02543a35a4a466314ad319ff17
     publication_index: 0
     reference_id: PMID:29295995
     source_path: resource/progeny/progeny.md
-    status: warning
-    warnings:
-    - journal 'Nature Communications' does not match cached journal 'Nat Commun' in
-      /home/harry/kg-registry/references_cache/PMID_29295995.md
+    status: valid
+    warnings: []
   resource/progeny/progeny.md#publication[1]#DOI:10.1186/s13059-020-1949-z:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5559,16 +5671,14 @@ entries:
     status: valid
     warnings: []
   resource/reprotox-kg/reprotox-kg.md#publication[0]#PMID:37460679:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:54:04Z'
     errors: []
-    fingerprint: a7f1ec286ca77d54058b8f21aeb22482b288dc44c5240e55cef721753da4441b
+    fingerprint: 3ab5d881c024ec19aea3f7768a9e43ab7e640290cd8332b08ae31f0f96e8af67
     publication_index: 0
     reference_id: PMID:37460679
     source_path: resource/reprotox-kg/reprotox-kg.md
-    status: warning
-    warnings:
-    - journal 'Communications Medicine' does not match cached journal 'Commun Med
-      (Lond)' in /home/harry/kg-registry/references_cache/PMID_37460679.md
+    status: valid
+    warnings: []
   resource/rfam/rfam.md#publication[0]#DOI:10.1093/nar/gkae1023:
     checked_at: '2026-06-22T16:28:56Z'
     errors: []
@@ -5627,16 +5737,14 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_37883399.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_37883399.md
   resource/ribovision/ribovision.md#publication[0]#DOI:10.1039/c3fd00126a:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-22T16:54:07Z'
     errors: []
-    fingerprint: f390fd88cef9229fb9f70c6e964f5841a6180796fd3801c00ec94ca734357b58
+    fingerprint: 71373a0f1724db93466fa13b6dee7be96dde40a192b9b9d557620801f5ce412a
     publication_index: 0
     reference_id: DOI:10.1039/c3fd00126a
     source_path: resource/ribovision/ribovision.md
-    status: warning
-    warnings:
-    - journal 'Faraday Discussions' does not match cached journal 'Faraday Discuss.'
-      in /home/harry/kg-registry/references_cache/DOI_10.1039_c3fd00126a.md
+    status: valid
+    warnings: []
   resource/ribovision/ribovision.md#publication[1]#DOI:10.1371/journal.pone.0088222:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5887,7 +5995,7 @@ entries:
     status: valid
     warnings: []
   resource/skos/skos.md#publication[0]#DOI:10.1016/j.websem.2009.06.001:
-    checked_at: '2026-06-22T16:31:00Z'
+    checked_at: '2026-06-22T16:49:45Z'
     errors: []
     fingerprint: 81370b2ca84b40ab5cdfe4e86519fefa13d6d06aab93f078cf0b4b8d226f8c9f
     publication_index: 0

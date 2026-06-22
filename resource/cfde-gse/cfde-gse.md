@@ -153,7 +153,7 @@ publications:
   - Ben-Moshe NB
   - Barupal DK
   - Ma'ayan A
-  id: doi:10.1038/s41467-2022-28631-3
+  id: doi:10.1038/s41467-022-28631-3
   journal: Nature Communications
   preferred: true
   title: Cross-program analysis of the CFDE gene sets reveals common biological themes

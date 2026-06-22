@@ -157,7 +157,7 @@ publications:
   - Fabien Gandon
   - Louis-Felix Nothias
   doi: 10.48550/arXiv.2605.24706
-  id: arXiv:2605.24706
+  id: doi:10.48550/arXiv.2605.24706
   journal: arXiv
   preferred: true
   title: 'MetaboKG: An Analysis-centric Knowledge Graph Framework for Untargeted Metabolomics'

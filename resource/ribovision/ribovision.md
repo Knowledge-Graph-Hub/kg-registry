@@ -630,7 +630,7 @@ publications:
       - Williams
     doi: 10.1039/c3fd00126a
     id: doi:10.1039/c3fd00126a
-    journal: Faraday Discussions
+    journal: Faraday Discuss.
     preferred: true
     title: RiboVision suite for visualization and analysis of ribosomes
     year: '2014'

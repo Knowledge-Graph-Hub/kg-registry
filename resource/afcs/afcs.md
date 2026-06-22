@@ -160,6 +160,7 @@ products:
   product_url: https://www.ebi.ac.uk/intact/download/datasets
 publications:
 - authors:
+  - Alfred G. Gilman
   - Participating investigators and scientists of the Alliance for Cellular Signaling
   doi: 10.1038/nature01304
   id: https://doi.org/10.1038/nature01304
