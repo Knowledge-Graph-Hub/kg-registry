@@ -20,7 +20,7 @@ description: The tmRNA Website is a comprehensive database of transfer-messenger
   structural annotations, BLAST search tools, and Krona-based phylogenetic visualization.
 domains:
 - genomics
-homepage_url: http://bioinformatics.sandia.gov/tmrna/
+homepage_url: https://rnacentral.org/expert-database/tmrna-website
 id: tmrnawebsite
 last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
@@ -38,7 +38,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tmrnawebsite
-  product_url: http://bioinformatics.sandia.gov/tmrna/
+  product_url: https://rnacentral.org/expert-database/tmrna-website
 - category: Product
   description: BLAST search interface for tmRNA and SmpB sequence similarity searches
   format: http
@@ -47,14 +47,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tmrnawebsite
-  product_url: http://bioinformatics.sandia.gov/tmrna/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  product_url: https://rnacentral.org/expert-database/tmrna-website
 - category: Product
   description: Multiple sequence alignments for 632 tmRNA and 2,258 distinct SmpB
     sequences
@@ -64,14 +57,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tmrnawebsite
-  product_url: http://bioinformatics.sandia.gov/tmrna/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  product_url: https://rnacentral.org/expert-database/tmrna-website
 - category: Product
   description: Krona-based interactive phylogenetic visualization tool for 9,387 tmRNA
     instances
@@ -81,14 +67,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tmrnawebsite
-  product_url: http://bioinformatics.sandia.gov/tmrna/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  product_url: https://rnacentral.org/expert-database/tmrna-website
 - category: Product
   description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in
     genomic sequences
@@ -98,14 +77,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tmrnawebsite
-  product_url: http://bioinformatics.sandia.gov/tmrna/software.html
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  product_url: https://doi.org/10.6084/m9.figshare.28430909
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
@@ -512,8 +484,11 @@ synonyms:
 taxon:
 - NCBITaxon:2
 warnings:
-- Website appears to be inactive (http://bioinformatics.sandia.gov/tmrna/ not accessible
-  as of 2025-11-13). Data has been contributed to RNAcentral.
+- The original Sandia host (http://bioinformatics.sandia.gov/tmrna/) is no longer
+  available (HTTP 404 as of 2026-06-23). The resource has moved to RNAcentral
+  (https://rnacentral.org/expert-database/tmrna-website), with software and data
+  also deposited at figshare (https://doi.org/10.6084/m9.figshare.28430909), per
+  Nawrocki, Petrov & Williams 2025 (doi:10.1093/nargab/lqaf019).
 ---
 # The tmRNA Website
 
@@ -579,7 +554,7 @@ The protein SmpB is a partner throughout trans-translation, bound to tmRNA and o
 - **RNAcentral**: Central repository receiving tmRNA Website contributions
 
 ## Website Status
-The tmRNA Website was hosted at Sandia National Laboratories (http://bioinformatics.sandia.gov/tmrna/) but appears to be inactive as of 2025. The database content has been contributed to RNAcentral for continued access.
+The tmRNA Website was originally hosted at Sandia National Laboratories (http://bioinformatics.sandia.gov/tmrna/), but that host is no longer available (HTTP 404 as of 2026). The resource has migrated to RNAcentral, where it is served as the dedicated "tmRNA Website" expert database (https://rnacentral.org/expert-database/tmrna-website). The associated software (tFind.pl, rFind.pl) and data files are deposited at figshare (https://doi.org/10.6084/m9.figshare.28430909). This migration is described in Nawrocki, Petrov & Williams, "Expansion of the tmRNA sequence database and new tools for search and visualization," NAR Genomics and Bioinformatics 2025 (doi:10.1093/nargab/lqaf019).
 
 ## Funding
 Research fully supported by the Laboratory Directed Research and Development program at Sandia National Laboratories.

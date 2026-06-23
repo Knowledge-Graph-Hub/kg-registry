@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://github.com/terms4fairskills/FAIRterminology
 id: t4fs
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -58,56 +58,6 @@ products:
     source: t4fs
   product_file_size: 74586
   product_url: http://purl.obolibrary.org/obo/t4fs.json
-- category: OntologyProduct
-  description: This community view of T4FS makes the ontology available in OWL without
-    upper-level ontology (ULO) terms to give the user community a simpler view of
-    the term hierarchy.
-  format: owl
-  id: t4fs-community.owl
-  name: This community view of T4FS makes the ontology available in OWL without upper-level
-    ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
-  product_url: http://purl.obolibrary.org/obo/t4fs-community.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
-    to URL'
-- category: OntologyProduct
-  description: This community view of T4FS makes the ontology available in OBO format
-    without upper-level ontology (ULO) terms to give the user community a simpler
-    view of the term hierarchy.
-  format: obo
-  id: t4fs-community.obo
-  name: This community view of T4FS makes the ontology available in OBO format without
-    upper-level ontology (ULO) terms to give the user community a simpler view of
-    the term hierarchy.
-  product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
-    to URL'
-- category: OntologyProduct
-  description: This community view of T4FS makes the ontology available in JSON format
-    without upper-level ontology (ULO) terms to give the user community a simpler
-    view of the term hierarchy.
-  format: json
-  id: t4fs-community.json
-  name: This community view of T4FS makes the ontology available in JSON format without
-    upper-level ontology (ULO) terms to give the user community a simpler view of
-    the term hierarchy.
-  product_url: http://purl.obolibrary.org/obo/t4fs-community.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
-    to URL'
 publications:
 - authors:
   - Molloy, Laura

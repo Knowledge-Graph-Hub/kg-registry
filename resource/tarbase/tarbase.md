@@ -11,7 +11,7 @@ domains:
 - biological systems
 homepage_url: https://dianalab.e-ce.uth.gr/tarbasev9
 id: tarbase
-last_modified_date: '2026-05-26T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: TarBase
 products:
@@ -130,7 +130,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/downloads
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
