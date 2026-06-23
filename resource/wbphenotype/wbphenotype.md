@@ -19,7 +19,8 @@ domains:
 - phenotype
 homepage_url: https://github.com/obophenotype/c-elegans-phenotype-ontology
 id: wbphenotype
-last_modified_date: '2026-06-05T00:00:00Z'
+infores_id: wbphenotype
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

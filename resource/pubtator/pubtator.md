@@ -24,7 +24,8 @@ domains:
 - pharmacology
 homepage_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
 id: pubtator
-last_modified_date: '2025-12-13T00:00:00Z'
+infores_id: pubtator
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/

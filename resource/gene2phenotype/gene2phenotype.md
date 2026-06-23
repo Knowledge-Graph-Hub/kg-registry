@@ -10,7 +10,8 @@ domains:
 - biomedical
 homepage_url: https://www.ebi.ac.uk/gene2phenotype/
 id: gene2phenotype
-last_modified_date: '2026-02-15T00:00:00Z'
+infores_id: gene2phenotype
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Gene2Phenotype
 products:

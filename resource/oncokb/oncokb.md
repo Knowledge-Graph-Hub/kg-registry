@@ -24,7 +24,8 @@ domains:
 - biomedical
 homepage_url: https://www.oncokb.org/
 id: oncokb
-last_modified_date: '2025-09-24T00:00:00Z'
+infores_id: oncokb
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: OncoKB
 products:

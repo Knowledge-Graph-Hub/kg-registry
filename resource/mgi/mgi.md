@@ -17,7 +17,8 @@ domains:
 - genomics
 homepage_url: https://www.informatics.jax.org/
 id: mgi
-last_modified_date: '2026-05-30T00:00:00Z'
+infores_id: mgi
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Mouse Genome Informatics
 products:

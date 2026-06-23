@@ -18,7 +18,8 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 id: wbbt
-last_modified_date: '2026-04-15T00:00:00Z'
+infores_id: wbbt
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

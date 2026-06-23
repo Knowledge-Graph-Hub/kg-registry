@@ -20,7 +20,8 @@ domains:
 - phenotype
 homepage_url: https://github.com/obophenotype/zebrafish-phenotype-ontology
 id: zp
-last_modified_date: '2026-06-05T00:00:00Z'
+infores_id: zp
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

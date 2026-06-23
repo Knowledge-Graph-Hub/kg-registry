@@ -20,7 +20,8 @@ domains:
 - organisms
 homepage_url: http://purl.obolibrary.org/obo/fbcv
 id: fbcv
-last_modified_date: '2026-06-05T00:00:00Z'
+infores_id: fbcv
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
