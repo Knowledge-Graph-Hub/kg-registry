@@ -18,7 +18,7 @@ domains:
 - general
 homepage_url: https://www.mrbase.org/
 id: mrbase
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: MR-Base
 products:
@@ -36,8 +36,9 @@ products:
   - The legacy MR-Base homepage redirected to an HTTPS endpoint with a certificate
     mismatch for www.mrbase.org when checked on 2026-06-02.
 - category: GraphicalInterface
-  description: Interactive Shiny-based web application for performing two-sample Mendelian
-    randomization analyses using curated GWAS summary datasets
+  description: Two-sample Mendelian randomization analysis tooling for curated GWAS
+    summary datasets, provided through the TwoSampleMR R package and its documentation
+    site (successor to the retired MR-Base Shiny web application)
   format: http
   id: mrbase.webapp
   is_public: true
@@ -45,12 +46,18 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mrbase
-  product_url: http://app.mrbase.org/
+  product_url: https://mrcieu.github.io/TwoSampleMR/
+  secondary_source:
+  - relation_type: prov:used
+    source: opengwas
   warnings:
-  - The legacy MR-Base web application timed out when checked on 2026-06-02.
-- category: GraphicalInterface
-  description: Phenome-wide association study (PheWAS) web interface enabling exploration
-    of SNP-trait associations and hypothesis-free MR scans
+  - The legacy MR-Base Shiny web application at app.mrbase.org was unreachable (no
+    response) when checked on 2026-06-23 and has been retired; two-sample MR analysis
+    is now performed via the TwoSampleMR R package against the OpenGWAS database.
+- category: ProgrammingInterface
+  description: Phenome-wide association study (PheWAS) functionality enabling exploration
+    of SNP-trait associations across the OpenGWAS database, now delivered through the
+    OpenGWAS API PheWAS endpoint (successor to the retired MR-Base PheWAS web interface)
   format: http
   id: mrbase.phewas
   is_public: true
@@ -58,7 +65,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mrbase
-  product_url: https://gwas.mrcieu.ac.uk/phewas/
+  product_url: https://api.opengwas.io/api/
+  secondary_source:
+  - relation_type: prov:used
+    source: opengwas
+  warnings:
+  - The legacy MR-Base PheWAS web interface at gwas.mrcieu.ac.uk/phewas/ returned HTTP
+    404 when checked on 2026-06-23 and has been retired; PheWAS is now available as
+    an endpoint of the OpenGWAS API.
 - category: GraphicalInterface
   description: IEU OpenGWAS browser for exploring the harmonized GWAS dataset catalog
     now used by MR-Base-related tooling
