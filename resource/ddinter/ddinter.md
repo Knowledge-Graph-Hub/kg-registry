@@ -14,7 +14,7 @@ domains:
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/ddinter
 id: ddinter
 infores_id: ddinter
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: DDinter
 products:
@@ -604,6 +604,27 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Xiong G
+  - Yang Z
+  - Yi J
+  - Wang N
+  - Wang L
+  - Zhu H
+  - Wu C
+  - Lu A
+  - Chen X
+  - Liu S
+  - Hou T
+  - Cao D
+  doi: 10.1093/nar/gkab880
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34634800
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'DDInter: an online drug-drug interaction database towards improving clinical
+    decision-making and patient safety'
+  year: '2022'
 synonyms:
 - DDInter
 taxon:

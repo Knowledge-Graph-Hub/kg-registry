@@ -10,7 +10,7 @@ domains:
 - biological systems
 homepage_url: https://www.ncbi.nlm.nih.gov/research/cog-project/
 id: cog
-last_modified_date: '2026-02-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: COG
 products:
@@ -739,6 +739,21 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+publications:
+- authors:
+  - Galperin MY
+  - Wolf YI
+  - Makarova KS
+  - Vera Alvarez R
+  - Landsman D
+  - Koonin EV
+  doi: 10.1093/nar/gkaa1018
+  id: https://www.ncbi.nlm.nih.gov/pubmed/33167031
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'COG database update: focus on microbial diversity, model organisms, and
+    widespread pathogens'
+  year: '2021'
 synonyms:
 - COG
 - Clusters of Orthologous Groups

@@ -11,7 +11,7 @@ domains:
 - biomedical
 homepage_url: https://sites.broadinstitute.org/ccle/
 id: ccle
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: CCLE
 products:
@@ -486,6 +486,20 @@ products:
     source: tissues
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Barretina J
+  - Caponigro G
+  - Stransky N
+  - Venkatesan K
+  - Margolin AA
+  doi: 10.1038/nature11003
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22460905
+  journal: Nature
+  preferred: true
+  title: The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer
+    drug sensitivity
+  year: '2012'
 taxon:
 - NCBITaxon:9606
 ---

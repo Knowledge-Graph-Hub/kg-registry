@@ -18,7 +18,7 @@ domains:
 - systems biology
 homepage_url: https://proteininformationresource.org/
 id: pir
-last_modified_date: '2026-05-22T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://proteininformationresource.org/pirwww/about/linkpir.shtml
@@ -109,6 +109,27 @@ products:
     source: prokn
   product_file_size: 19465205
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.ImpcMouseGene.BIOLINK_HAS_GENE_PRODUCT.Protein.edges.csv
+publications:
+- authors:
+  - Wu CH
+  - Yeh LS
+  - Huang H
+  - Arminski L
+  - Castro-Alvear J
+  - Chen Y
+  - Hu Z
+  - Kourtesis P
+  - Ledley RS
+  - Suzek BE
+  - Vinayaka CR
+  - Zhang J
+  - Barker WC
+  doi: 10.1093/nar/gkg040
+  id: https://www.ncbi.nlm.nih.gov/pubmed/12520019
+  journal: Nucleic Acids Res
+  preferred: true
+  title: The Protein Information Resource
+  year: '2003'
 synonyms:
 - PIR
 - Protein Information Resource

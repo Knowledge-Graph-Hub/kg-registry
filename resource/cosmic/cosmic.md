@@ -753,6 +753,40 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Tate JG
+  - Bamford S
+  - Jubb HC
+  - Sondka Z
+  - Beare DM
+  - Bindal N
+  - Boutselakis H
+  - Cole CG
+  - Creatore C
+  - Dawson E
+  - Fish P
+  - Harsha B
+  - Hathaway C
+  - Jupe SC
+  - Kok CY
+  - Noble K
+  - Ponting L
+  - Ramshaw CC
+  - Rye CE
+  - Speedy HE
+  - Stefancsik R
+  - Thompson SL
+  - Wang S
+  - Ward S
+  - Campbell PJ
+  - Forbes SA
+  doi: 10.1093/nar/gky1015
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30371878
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'COSMIC: the Catalogue Of Somatic Mutations In Cancer'
+  year: '2019'
 taxon:
 - NCBITaxon:9606
 warnings:

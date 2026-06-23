@@ -19,12 +19,27 @@ domains:
 - biological systems
 homepage_url: https://www.ebi.ac.uk/thornton-srv/m-csa/
 id: m-csa
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: M-CSA
+publications:
+- authors:
+  - Ribeiro AJM
+  - Holliday GL
+  - Furnham N
+  - Tyzack JD
+  - Ferris K
+  - Thornton JM
+  doi: 10.1093/nar/gkx1012
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29106569
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Mechanism and Catalytic Site Atlas (M-CSA): a database of enzyme reaction
+    mechanisms and active sites'
+  year: '2018'
 products:
 - category: GraphicalInterface
   description: Official M-CSA website for browsing curated enzyme mechanisms, catalytic

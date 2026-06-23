@@ -1286,5 +1286,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Binder JX
+  - Pletscher-Frankild S
+  - Tsafou K
+  - Stolte C
+  - O'Donoghue SI
+  - Schneider R
+  - Jensen LJ
+  doi: 10.1093/database/bau012
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24573882
+  journal: Database (Oxford)
+  preferred: true
+  title: 'COMPARTMENTS: unification and visualization of protein subcellular localization
+    evidence'
+  year: '2014'
 ---
 # COMPARTMENTS

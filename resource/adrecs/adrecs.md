@@ -9,7 +9,7 @@ domains:
 - pharmacology
 homepage_url: http://www.bio-add.org/ADReCS/
 id: adrecs
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 contacts:
 - category: Organization
   label: Bioinformatics-Aided Drug Discovery Group (BADD)
@@ -607,6 +607,24 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Cai MC
+  - Xu Q
+  - Pan YJ
+  - Pan W
+  - Ji N
+  - Li YB
+  - Jin HJ
+  - Liu K
+  - Ji ZL
+  doi: 10.1093/nar/gku1066
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25361966
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'ADReCS: an ontology database for aiding standardization and hierarchical
+    classification of adverse drug reaction terms'
+  year: '2015'
 ---
 # ADReCS
 
