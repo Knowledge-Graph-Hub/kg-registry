@@ -1464,6 +1464,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Öztürk-Çolak A
+  - Marygold SJ
+  - Antonazzo G
+  - Attrill H
+  - Goutte-Gattat D
+  - Jenkins VK
+  - Matthews BB
+  - Millburn G
+  - dos Santos G
+  - Tabone CJ
+  doi: 10.1093/genetics/iyad211
+  id: https://www.ncbi.nlm.nih.gov/pubmed/38301657
+  journal: Genetics
+  preferred: true
+  title: 'FlyBase: updates to the Drosophila genes and genomes database'
+  year: '2024'
 repository: https://github.com/FlyBase
 taxon:
 - NCBITaxon:7227

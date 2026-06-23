@@ -1417,6 +1417,36 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Cherry JM
+  - Hong EL
+  - Amundsen C
+  - Balakrishnan R
+  - Binkley G
+  - Chan ET
+  - Christie KR
+  - Costanzo MC
+  - Dwight SS
+  - Engel SR
+  - Fisk DG
+  - Hirschman JE
+  - Hitz BC
+  - Karra K
+  - Krieger CJ
+  - Miyasato SR
+  - Nash RS
+  - Park J
+  - Skrzypek MS
+  - Simison M
+  - Weng S
+  - Wong ED
+  doi: 10.1093/nar/gkr1029
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22110037
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Saccharomyces Genome Database: the genomics resource of budding yeast'
+  year: '2012'
 taxon:
 - NCBITaxon:4932
 ---

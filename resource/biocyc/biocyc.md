@@ -18,7 +18,7 @@ domains:
 - biological systems
 homepage_url: https://biocyc.org/
 id: biocyc
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://biocyc.org/download.shtml
@@ -1071,6 +1071,27 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Karp PD
+  - Billington R
+  - Caspi R
+  - Fulcher CA
+  - Latendresse M
+  - Kothari A
+  - Keseler IM
+  - Krummenacker M
+  - Midford PE
+  - Ong Q
+  - Ong WK
+  - Paley SM
+  - Subhraveti P
+  doi: 10.1093/bib/bbx085
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29447345
+  journal: Brief Bioinform
+  preferred: true
+  title: The BioCyc collection of microbial genomes and metabolic pathways
+  year: '2019'
 taxon:
 - NCBITaxon:2759
 ---

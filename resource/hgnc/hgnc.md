@@ -3108,6 +3108,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Seal RL
+  - Braschi B
+  - Gray K
+  - Jones TEM
+  - Tweedie S
+  - Haim-Vilmovsky L
+  - Bruford EA
+  doi: 10.1093/nar/gkac888
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36243972
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Genenames.org: the HGNC resources in 2023'
+  year: '2023'
 repository: https://github.com/HGNC
 taxon:
 - NCBITaxon:9606

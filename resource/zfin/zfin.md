@@ -17,7 +17,7 @@ domains:
 homepage_url: https://zfin.org/
 id: zfin
 infores_id: zfin
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1745,6 +1745,27 @@ products:
     source: zfin
   product_file_size: 1884582
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.tsv
+publications:
+- authors:
+  - Bradford YM
+  - Van Slyke CE
+  - Ruzicka L
+  - Singer A
+  - Eagle A
+  - Fashena D
+  - Howe DG
+  - Frazer K
+  - Martin R
+  - Paddock H
+  - Pich C
+  - Ramachandran S
+  - Westerfield M
+  doi: 10.1093/genetics/iyac016
+  id: https://www.ncbi.nlm.nih.gov/pubmed/35166825
+  journal: Genetics
+  preferred: true
+  title: Zebrafish Information Network, the knowledgebase for Danio rerio research
+  year: '2022'
 repository: https://github.com/ZFIN/
 taxon:
 - NCBITaxon:7955

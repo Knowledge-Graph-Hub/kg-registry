@@ -24,7 +24,7 @@ domains:
 homepage_url: https://rgd.mcw.edu/
 id: rgd
 infores_id: rgd
-last_modified_date: '2025-12-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Rat Genome Database
 products:
@@ -733,6 +733,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Smith JR
+  - Hayman GT
+  - Wang SJ
+  - Laulederkind SJF
+  - Hoffman MJ
+  - Kaldunski ML
+  - Tutaj M
+  - Thota J
+  - Nalabolu HS
+  - Ellanki SLR
+  - Tutaj MA
+  - De Pons JL
+  - Kwitek AE
+  - Dwinell MR
+  - Shimoyama ME
+  doi: 10.1093/nar/gkz1041
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31713623
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'The Year of the Rat: The Rat Genome Database at 20: a multi-species knowledgebase
+    and analysis platform'
+  year: '2020'
 repository: https://github.com/rat-genome-database
 synonyms:
 - RGD

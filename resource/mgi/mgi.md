@@ -468,6 +468,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Blake JA
+  - Baldarelli R
+  - Kadin JA
+  - Richardson JE
+  - Smith CL
+  - Bult CJ
+  doi: 10.1093/nar/gkaa1083
+  id: https://www.ncbi.nlm.nih.gov/pubmed/33231642
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Mouse Genome Database (MGD): Knowledgebase for mouse-human comparative biology'
+  year: '2021'
 ---
 # Mouse Genome Informatics
 

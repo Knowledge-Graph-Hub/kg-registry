@@ -9,7 +9,7 @@ domains:
 - proteomics
 homepage_url: https://www.rcsb.org/
 id: pdb
-last_modified_date: '2026-02-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Protein Data Bank (PDB)
 products:
@@ -1143,6 +1143,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - wwPDB consortium
+  - Burley SK
+  - Berman HM
+  - Bhikadiya C
+  - Bi C
+  - Chen L
+  - Di Costanzo L
+  doi: 10.1093/nar/gky949
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30357364
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Protein Data Bank: the single global archive for 3D macromolecular structure
+    data'
+  year: '2019'
 synonyms:
 - PDB
 - Protein Data Bank
