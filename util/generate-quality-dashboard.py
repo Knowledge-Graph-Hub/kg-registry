@@ -18,7 +18,7 @@ from ftplib import FTP
 from pathlib import Path
 from statistics import median
 from typing import Any, Dict, Iterable, List, Optional, Tuple
-from urllib.parse import urlparse
+from urllib.parse import urlparse, quote
 
 import requests
 import yaml
@@ -477,16 +477,83 @@ def check_ftp_url(url: str, timeout: float) -> Dict[str, Any]:
             pass
 
 
+_BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+)
+
+# A minimal, universally-valid SPARQL query used to probe SPARQL endpoints.
+_SPARQL_PROBE_QUERY = "SELECT * WHERE { ?s ?p ?o } LIMIT 1"
+
+
+def is_sparql_endpoint(url: str) -> bool:
+    """Heuristically detect a SPARQL endpoint URL.
+
+    SPARQL service endpoints have no HTML landing page: a bare HEAD/GET on the
+    endpoint typically returns 404/400/406, but the same URL answers normally
+    once a ``?query=`` parameter is supplied. Detect the common ``/sparql``
+    path so we can probe them correctly instead of reporting false 404s.
+    """
+    path = urlparse(url).path.lower().rstrip("/")
+    return path.endswith("/sparql") or path.endswith("sparql-endpoint")
+
+
+def probe_sparql_endpoint(url: str, timeout: float) -> Optional[Dict[str, Any]]:
+    """Probe a SPARQL endpoint with a trivial query.
+
+    Returns a result dict if the endpoint answers a SPARQL query successfully
+    (it is live), otherwise ``None`` so the caller can fall back to the normal
+    HTTP checks.
+    """
+    separator = "&" if "?" in url else "?"
+    query_url = f"{url}{separator}query={quote(_SPARQL_PROBE_QUERY)}"
+    headers = {
+        "User-Agent": _BROWSER_USER_AGENT,
+        "Accept": "application/sparql-results+json, application/json, */*",
+    }
+    for verify in (True, False):
+        try:
+            with warnings.catch_warnings():
+                if InsecureRequestWarning is not None:
+                    warnings.simplefilter("ignore", InsecureRequestWarning)
+                resp = requests.get(
+                    query_url,
+                    timeout=timeout,
+                    allow_redirects=True,
+                    headers=headers,
+                    verify=verify,
+                )
+            code = resp.status_code
+            resp.close()
+        except requests.exceptions.SSLError:
+            continue  # retry once without TLS verification
+        except requests.RequestException:
+            return None
+        if 200 <= code < 400:
+            result = {"ok": True, "status_code": code, "error": None, "sparql_probe": True}
+            if not verify:
+                result["tls_verification_failed"] = True
+            return result
+        # A definitive answer (not a transport error) means no need to retry.
+        return None
+    return None
+
+
 def check_http_url(url: str, timeout: float) -> Dict[str, Any]:
+    # SPARQL endpoints have no browsable landing page; probe them with a real
+    # query before falling back to the generic HEAD/GET checks (a bare request
+    # would otherwise be misreported as a 404/406 broken link).
+    if is_sparql_endpoint(url):
+        sparql_result = probe_sparql_endpoint(url, timeout)
+        if sparql_result is not None:
+            return sparql_result
+
     # Use a browser-like User-Agent. Many hosts return HTTP 403 to non-browser
     # clients (e.g. the default ``python-requests`` agent) even though the
     # resource is publicly reachable, which would otherwise be reported as a
     # broken link.
     headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-        ),
+        "User-Agent": _BROWSER_USER_AGENT,
         "Accept": "*/*",
     }
 
@@ -531,14 +598,16 @@ def check_http_url(url: str, timeout: float) -> Dict[str, Any]:
             result["tls_verification_failed"] = True
         return result
 
-    # Some endpoints disallow HEAD, throttle, or block automated/bot clients with
-    # an access-control status (401/403/405/429) even though the resource is
-    # publicly reachable in a browser. Treat these as reachable rather than
-    # broken: the server is up and responding, we simply cannot fully verify the
-    # resource via an automated request. (Trade-off: a host that returns 403 for
-    # genuinely-missing objects -- e.g. some CloudFront/S3 setups -- will not be
-    # flagged here.)
-    fallback_codes = {401, 403, 405, 429}
+    # Some endpoints disallow HEAD, throttle, block automated/bot clients, or
+    # reject the request's content negotiation with a status (401/403/405/406/
+    # 412/429) even though the resource is publicly reachable in a browser.
+    # Treat these as reachable rather than broken: the server is up and
+    # responding, we simply cannot fully verify the resource via an automated
+    # request. 406 (Not Acceptable) and 412 (Precondition Failed, used by some
+    # JavaScript anti-bot walls) are included here for that reason. (Trade-off:
+    # a host that returns 403 for genuinely-missing objects -- e.g. some
+    # CloudFront/S3 setups -- will not be flagged here.)
+    fallback_codes = {401, 403, 405, 406, 412, 429}
     if head_code in fallback_codes:
         try:
             get_resp = _get_request(verify=not tls_fallback_used)

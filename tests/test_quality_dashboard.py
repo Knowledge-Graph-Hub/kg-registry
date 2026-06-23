@@ -183,3 +183,76 @@ def test_normalize_cache_entry_with_legacy_skip_reason(quality_dashboard_module)
     assert normalized is not None
     assert normalized["ok"] is True
     assert normalized["source"] == "cache"
+
+
+class _FakeResponse:
+    def __init__(self, status_code):
+        self.status_code = status_code
+
+    def close(self):
+        pass
+
+
+def _install_fake_requests(monkeypatch, mod, responder):
+    """Replace mod.requests with a stub whose head/get call `responder(method, url)`."""
+
+    class _FakeRequests:
+        # Preserve the real exception types the code catches.
+        exceptions = mod.requests.exceptions
+        RequestException = mod.requests.RequestException
+
+        @staticmethod
+        def head(url, **kwargs):
+            return responder("head", url)
+
+        @staticmethod
+        def get(url, **kwargs):
+            return responder("get", url)
+
+    monkeypatch.setattr(mod, "requests", _FakeRequests)
+
+
+def test_is_sparql_endpoint(quality_dashboard_module):
+    mod = quality_dashboard_module
+    assert mod.is_sparql_endpoint("https://frink.apps.renci.org/wikidata/sparql")
+    assert mod.is_sparql_endpoint("https://apps.okn.us/identifier-mappings/sparql/")
+    assert not mod.is_sparql_endpoint("https://example.org/data.owl")
+    assert not mod.is_sparql_endpoint("https://example.org/sparqlx")
+
+
+def test_check_http_url_treats_406_and_412_as_live(quality_dashboard_module, monkeypatch):
+    mod = quality_dashboard_module
+    for code in (406, 412):
+        _install_fake_requests(
+            monkeypatch, mod, lambda method, url, code=code: _FakeResponse(code)
+        )
+        result = mod.check_http_url("https://example.org/page", timeout=5.0)
+        assert result["ok"] is True, f"HTTP {code} should be treated as live"
+        assert result.get("access_restricted") is True
+
+
+def test_check_http_url_probes_sparql_endpoints(quality_dashboard_module, monkeypatch):
+    mod = quality_dashboard_module
+
+    def responder(method, url):
+        # A bare request (no query) 404s; a SPARQL query succeeds.
+        if "query=" in url:
+            return _FakeResponse(200)
+        return _FakeResponse(404)
+
+    _install_fake_requests(monkeypatch, mod, responder)
+    result = mod.check_http_url(
+        "https://frink.apps.renci.org/wikidata/sparql", timeout=5.0
+    )
+    assert result["ok"] is True
+    assert result.get("sparql_probe") is True
+
+
+def test_check_http_url_still_flags_dead_sparql_endpoint(quality_dashboard_module, monkeypatch):
+    mod = quality_dashboard_module
+    # Endpoint is genuinely gone: every request 404s, including the query probe.
+    _install_fake_requests(
+        monkeypatch, mod, lambda method, url: _FakeResponse(404)
+    )
+    result = mod.check_http_url("https://gone.example.org/sparql", timeout=5.0)
+    assert result["ok"] is False
