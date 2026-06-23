@@ -23,7 +23,7 @@ domains:
 - drug discovery
 homepage_url: https://cpicpgx.org/
 id: cpic
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -44,6 +44,7 @@ products:
 - category: DocumentationProduct
   description: Peer-reviewed, evidence-based, updatable pharmacogenetic clinical practice
     guidelines translating genotype into prescribing recommendations
+  format: http
   id: cpic.guidelines
   is_public: true
   name: CPIC Clinical Practice Guidelines
@@ -99,6 +100,7 @@ products:
 - category: DocumentationProduct
   description: Overview slide deck describing CPIC assumptions, development process,
     and implementation guidance (PowerPoint)
+  format: http
   id: cpic.overview.slides
   name: CPIC Overview Presentation Slides
   original_source:
@@ -120,6 +122,7 @@ products:
 - category: DocumentationProduct
   description: Term standardization project resources for clinical pharmacogenetic
     test result terminology
+  format: http
   id: cpic.term_standardization
   name: CPIC Term Standardization Project
   original_source:
@@ -128,6 +131,7 @@ products:
   product_url: https://cpicpgx.org/resources/term-standardization
 - category: DocumentationProduct
   description: CYP2D6 genotype to phenotype translation project resources
+  format: http
   id: cpic.cyp2d6_translation
   name: CPIC CYP2D6 Genotype to Phenotype Project
   original_source:

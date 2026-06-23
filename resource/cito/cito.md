@@ -12,7 +12,7 @@ domains:
 - general
 homepage_url: https://sparontologies.github.io/cito/current/cito.html
 id: cito
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: CiTO
 products:
@@ -28,6 +28,7 @@ products:
   product_url: http://purl.org/spar/cito.ttl
 - category: DocumentationProduct
   description: CiTO documentation and specification
+  format: http
   id: cito.documentation
   name: CiTO Documentation
   original_source:

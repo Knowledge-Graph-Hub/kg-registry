@@ -17,7 +17,7 @@ domains:
 homepage_url: https://flybase.org/
 id: flybase
 infores_id: flybase
-last_modified_date: '2025-10-08T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: FlyBase
 products:
@@ -64,6 +64,7 @@ products:
 - category: GraphicalInterface
   description: Interactive genome browser for visualizing Drosophila genomes, gene
     models, expression data, and genomic features using JBrowse technology
+  format: http
   id: flybase.jbrowse
   name: FlyBase JBrowse Genome Browser
   original_source:
@@ -73,6 +74,7 @@ products:
 - category: GraphicalInterface
   description: Web-based search and query interface for accessing FlyBase data, including
     gene information, phenotypes, stocks, and literature
+  format: http
   id: flybase.web.interface
   name: FlyBase Web Interface
   original_source:

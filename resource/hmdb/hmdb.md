@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.hmdb.ca/
 id: hmdb
 infores_id: hmdb
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.hmdb.ca/downloads
@@ -917,6 +917,7 @@ products:
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:

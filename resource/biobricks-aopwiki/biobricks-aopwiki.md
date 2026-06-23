@@ -28,6 +28,7 @@ name: BioBricks AOP-Wiki
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for BioBricks AOP-Wiki
+  format: http
   id: biobricks-aopwiki.sparql
   name: BioBricks AOP-Wiki SPARQL
   original_source:
@@ -44,7 +45,7 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/aopwikirdf-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 BioBricks AOP-Wiki
 

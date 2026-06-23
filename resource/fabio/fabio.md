@@ -13,7 +13,7 @@ domains:
 - general
 homepage_url: https://sparontologies.github.io/fabio/current/fabio.html
 id: fabio
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: FABIO
 products:
@@ -29,6 +29,7 @@ products:
   product_url: http://purl.org/spar/fabio.ttl
 - category: DocumentationProduct
   description: FABIO ontology documentation, specification, and usage guidelines
+  format: http
   id: fabio.documentation
   name: FABIO Documentation
   original_source:

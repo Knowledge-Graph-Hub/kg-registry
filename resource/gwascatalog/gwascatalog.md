@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/gwas/
 id: gwascatalog
 infores_id: gwas-catalog
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use
@@ -730,6 +730,7 @@ products:
     source: kg-jensenlab-diseases
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:

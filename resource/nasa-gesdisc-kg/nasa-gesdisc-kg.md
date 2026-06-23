@@ -33,6 +33,7 @@ name: NASA-GESDISC-KG
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for NASA-GESDISC-KG
+  format: http
   id: nasa-gesdisc-kg.sparql
   name: NASA-GESDISC-KG SPARQL
   original_source:
@@ -48,7 +49,7 @@ products:
   - source: nasa-gesdisc-kg
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 NASA-GESDISC-KG
 

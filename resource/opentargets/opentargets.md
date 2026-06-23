@@ -38,6 +38,7 @@ products:
   repository: https://github.com/opentargets/platform
 - category: ProgrammingInterface
   description: GraphQL API for accessing Open Targets Platform data programmatically.
+  format: http
   id: opentargets.api.graphql
   is_public: true
   name: Open Targets Platform GraphQL API
@@ -48,6 +49,7 @@ products:
 - category: ProgrammingInterface
   description: API documentation for accessing Open Targets Platform data programmatically
     via the GraphQL API (the REST API has been retired).
+  format: http
   id: opentargets.api.rest
   is_public: true
   name: Open Targets Platform API Documentation

@@ -18,7 +18,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://glyconnect.expasy.org/
 id: glyconnect
-last_modified_date: '2025-12-07T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -27,6 +27,7 @@ name: GlyConnect
 products:
 - category: GraphicalInterface
   description: Web interface for exploring GlyConnect data
+  format: http
   id: glyconnect.site
   is_public: true
   name: GlyConnect Web Interface
@@ -36,6 +37,7 @@ products:
   product_url: https://glyconnect.expasy.org/
 - category: ProgrammingInterface
   description: RESTful API for accessing GlyConnect data
+  format: http
   id: glyconnect.api.rest
   is_public: true
   name: GlyConnect RESTful API
@@ -45,6 +47,7 @@ products:
   product_url: https://glyconnect.expasy.org/api
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying GlyConnect RDF data
+  format: http
   id: glyconnect.api.sparql
   is_public: true
   name: GlyConnect SPARQL Endpoint

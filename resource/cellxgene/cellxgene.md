@@ -18,7 +18,7 @@ domains:
 - genomics
 homepage_url: https://cellxgene.cziscience.com/
 id: cellxgene
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: CZ CELLxGENE
 products:
@@ -66,6 +66,7 @@ products:
 - category: ProgrammingInterface
   connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443
   description: Publicly available Neo4j instance for CL-KG.
+  format: http
   id: cl-kg.api.neo4j
   is_neo4j: true
   is_public: true

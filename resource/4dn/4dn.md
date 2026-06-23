@@ -27,7 +27,7 @@ domains:
 - medical imaging
 homepage_url: https://data.4dnucleome.org/
 id: 4dn
-last_modified_date: '2025-06-12T20:16:27Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal
@@ -67,6 +67,7 @@ products:
 - category: GraphicalInterface
   description: A web-based visualization tool for exploring and comparing genomic
     data, particularly suited for Hi-C and other 4DN datasets.
+  format: http
   id: 4dn.higlass
   name: HiGlass
   original_source:

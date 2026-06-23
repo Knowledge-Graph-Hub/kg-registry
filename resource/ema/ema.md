@@ -18,7 +18,7 @@ domains:
 - biomedical
 homepage_url: https://www.ema.europa.eu/
 id: ema
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: European Medicines Agency
 products:
@@ -26,6 +26,7 @@ products:
   description: EMA medicines portal for searching centrally authorised medicines,
     medicines under evaluation, herbal medicines, EPARs, product information, and
     other regulatory medicine records.
+  format: http
   id: ema.medicines
   name: EMA Medicines Portal
   original_source:

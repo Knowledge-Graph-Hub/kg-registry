@@ -24,7 +24,7 @@ domains:
 homepage_url: https://unmtid-shinyapps.net/shiny/repodb/
 id: repodb
 infores_id: repodb
-last_modified_date: '2025-08-07T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -59,6 +59,7 @@ products:
 - category: GraphicalInterface
   description: Interactive web interface for exploring RepoDB data with drug-centric  and
     disease-centric search capabilities
+  format: http
   id: repodb.web_interface
   name: RepoDB Web Interface
   original_source:

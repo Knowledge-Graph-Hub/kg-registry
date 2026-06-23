@@ -35,6 +35,7 @@ products:
 - category: ProgrammingInterface
   description: PubTator 3.0 API for programmatic access to entity annotation, relation
     search, and other features
+  format: http
   id: pubtator.api
   is_public: true
   name: PubTator 3.0 API
@@ -54,6 +55,7 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring PubTator annotations with semantic and
     relation search capabilities
+  format: http
   id: pubtator.site
   is_public: true
   name: PubTator 3.0 Web Interface

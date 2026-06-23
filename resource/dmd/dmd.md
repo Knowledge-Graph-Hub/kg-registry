@@ -17,13 +17,14 @@ domains:
 - pharmacology
 homepage_url: https://digital.nhs.uk/services/terminology-and-classifications/dm-d
 id: dmd
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: NHS dictionary of medicines and devices
 products:
 - category: GraphicalInterface
   description: Official NHSBSA browser for searching and viewing dm+d medicines and
     device concepts.
+  format: http
   id: dmd.browser
   name: dm+d Browser
   original_source:
@@ -33,6 +34,7 @@ products:
 - category: ProgrammingInterface
   description: NHS Terminology Server access route recommended by NHS England for
     integrating dm+d terminology into healthcare IT systems.
+  format: http
   id: dmd.terminology-server
   is_public: true
   name: dm+d Terminology Server Access

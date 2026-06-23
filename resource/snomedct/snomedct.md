@@ -32,7 +32,7 @@ domains:
 homepage_url: https://www.snomed.org/
 id: snomedct
 infores_id: snomedct
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.snomed.org/snomed-ct/get-snomed
@@ -627,6 +627,7 @@ products:
     stable direct public file URLs are not exposed.
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:

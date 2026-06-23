@@ -27,6 +27,7 @@ name: BioBricks Tox21
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for BioBricks Tox21
+  format: http
   id: biobricks-tox21.sparql
   name: BioBricks Tox21 SPARQL
   original_source:
@@ -43,7 +44,7 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 BioBricks Tox21
 

@@ -28,7 +28,7 @@ domains:
 homepage_url: http://geneontology.org/go-cam/docs
 id: go-cam
 infores_id: go-cam
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -84,6 +84,7 @@ products:
 - category: ProgrammingInterface
   connection_url: http://api.geneontology.org/
   description: Programmatic access to GO-CAM models through the Gene Ontology API
+  format: http
   id: go-cam.api
   is_public: true
   name: GO-CAM API

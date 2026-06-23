@@ -23,7 +23,7 @@ domains:
 homepage_url: https://clinicalgenome.org/
 id: clingen
 infores_id: clingen
-last_modified_date: '2026-01-23T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -80,6 +80,7 @@ products:
   description: REST API providing access to ClinGen's Evidence Repository for variant
     pathogenicity assessments. Allows programmatic retrieval of structured evidence
     used to evaluate the clinical significance of genetic variants.
+  format: http
   id: clingen.evrepo.api
   name: ClinGen Evidence Repository API
   original_source:
@@ -90,6 +91,7 @@ products:
   description: Web-based interface for accessing ClinGen's curated data. Allows users
     to search and browse curated gene-disease pairs, variant interpretations, and
     other ClinGen resources.
+  format: http
   id: clingen.web.interface
   name: ClinGen Search Interface
   original_source:

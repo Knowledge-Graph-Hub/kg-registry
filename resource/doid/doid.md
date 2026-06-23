@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://disease-ontology.org
 id: doid
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -1327,6 +1327,7 @@ products:
     source: doid
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:

@@ -29,6 +29,7 @@ name: SCALES
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for SCALES
+  format: http
   id: scales.sparql
   name: SCALES SPARQL
   original_source:
@@ -44,7 +45,7 @@ products:
   - source: scales
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 SCALES
 

@@ -22,7 +22,7 @@ domains:
 - genomics
 homepage_url: https://snap.stanford.edu/stellar/
 id: stellar
-last_modified_date: '2025-10-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -41,6 +41,7 @@ products:
 - category: GraphicalInterface
   description: Demo Jupyter notebook showing example usage of STELLAR on downsampled
     datasets
+  format: http
   id: stellar.demo
   name: STELLAR Demo Notebook
   original_source:

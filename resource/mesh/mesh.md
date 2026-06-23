@@ -1179,6 +1179,7 @@ products:
   product_url: https://het.io/search
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:

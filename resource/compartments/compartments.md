@@ -11,7 +11,7 @@ domains:
 - systems biology
 - biological systems
 id: compartments
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -105,6 +105,7 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring protein subcellular localization evidence
     across integrated sources.
+  format: http
   id: compartments.portal
   name: COMPARTMENTS Portal
   original_source:

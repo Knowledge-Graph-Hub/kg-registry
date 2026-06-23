@@ -20,6 +20,7 @@ name: SecureChain KG
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for SecureChain KG
+  format: http
   id: securechainkg.sparql
   name: SecureChain KG SPARQL
   original_source:
@@ -35,7 +36,7 @@ products:
   - source: securechainkg
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 SecureChain KG
 

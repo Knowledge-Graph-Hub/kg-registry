@@ -104,6 +104,7 @@ products:
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to harmonized GWAS summary
     statistics, LD proxy lookup, instruments, and MR result generation
+  format: http
   id: mrbase.api
   is_public: true
   name: MR-Base REST API
@@ -117,6 +118,7 @@ products:
 - category: ProgrammingInterface
   description: TwoSampleMR R package supporting data extraction, harmonization, instrument
     selection, MR analysis methods, diagnostics, and reproducible code generation
+  format: http
   id: mrbase.twosamplemr
   is_public: true
   name: TwoSampleMR R Package
@@ -130,6 +132,7 @@ products:
 - category: ProgrammingInterface
   description: MRInstruments R package containing curated instruments (top hits) across
     multiple GWAS and QTL sources for instrument selection
+  format: http
   id: mrbase.mrinstruments
   is_public: true
   name: MRInstruments R Package
@@ -153,6 +156,7 @@ products:
 - category: DocumentationProduct
   description: Methods paper analysis reproduction code repository for MR-Base platform
     publication
+  format: http
   id: mrbase.paper.reproducibility
   name: MR-Base Methods Paper Reproducibility Code
   original_source:

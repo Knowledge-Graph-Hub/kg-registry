@@ -27,7 +27,7 @@ domains:
 homepage_url: https://www.orphadata.com/ordo/
 id: ordo
 infores_id: ordo
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -46,6 +46,7 @@ products:
   product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying the ORDO ontology
+  format: http
   id: ordo.sparql
   name: ORDO SPARQL Endpoint
   original_source:
@@ -63,6 +64,7 @@ products:
 - category: ProgrammingInterface
   description: API for accessing the Orphanet nomenclature pack data, allowing flexible
     implementation into various healthcare information systems.
+  format: http
   id: orphacode.api
   name: ORPHAcodes API
   product_url: https://api.orphacode.org/

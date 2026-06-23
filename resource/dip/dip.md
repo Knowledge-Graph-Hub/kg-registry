@@ -44,7 +44,7 @@ domains:
 homepage_url: https://dip.doe-mbi.ucla.edu/
 id: dip
 infores_id: dip
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://dip.doe-mbi.ucla.edu/dip/Download.cgi
@@ -54,6 +54,7 @@ products:
 - category: GraphicalInterface
   description: Web-based search interface for exploring protein-protein interactions
     by journal article, experimental evidence, or protein identifiers
+  format: http
   id: dip.search
   name: DIP Search Interface
   original_source:

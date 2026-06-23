@@ -15,6 +15,7 @@ contacts:
     value: yeghialt@ucmail.uc.edu
 products:
 - id: ufokn.sparql
+  format: http
   name: UF-OKN SPARQL
   description: SPARQL endpoint for UF-OKN
   category: ProgrammingInterface
@@ -23,6 +24,7 @@ products:
   - source: ufokn
     relation_type: prov:hadPrimarySource
 - id: ufokn.tpf
+  format: http
   name: UF-OKN TPF
   description: Triple Pattern Fragments endpoint for UF-OKN
   category: ProgrammingInterface
@@ -35,7 +37,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 domains:
 - general
 ---

@@ -11,12 +11,13 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://classyfire.wishartlab.com/
 id: chemont
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: ChemOnt
 products:
 - category: GraphicalInterface
   description: ClassyFire web interface for chemical classification and ontology exploration
+  format: http
   id: chemont.classyfire
   name: ClassyFire Web Interface
   original_source:

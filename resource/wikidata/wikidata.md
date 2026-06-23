@@ -27,7 +27,7 @@ domains:
 homepage_url: https://www.wikidata.org/
 id: wikidata
 infores_id: wikidata
-last_modified_date: '2026-03-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -180,6 +180,7 @@ products:
   product_url: https://www.wikidata.org/wiki/Special:EntityData
 - category: ProgrammingInterface
   description: SPARQL endpoint for ID Mappings
+  format: http
   id: identifier-mappings.sparql
   name: ID Mappings SPARQL
   original_source:
@@ -188,6 +189,7 @@ products:
   product_url: https://apps.okn.us/identifier-mappings/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for ID Mappings
+  format: http
   id: identifier-mappings.tpf
   name: ID Mappings TPF
   original_source:
@@ -246,6 +248,7 @@ products:
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for Wikidata
+  format: http
   id: wikidata.tpf
   name: Wikidata TPF
   original_source:

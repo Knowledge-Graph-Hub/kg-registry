@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://www.metanetx.org/
 id: metanetx
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -28,6 +28,7 @@ name: MetaNetX
 products:
 - category: GraphicalInterface
   description: Web interface for exploring and analyzing metabolic networks
+  format: http
   id: metanetx.site
   is_public: true
   name: MetaNetX Web Interface
@@ -37,6 +38,7 @@ products:
   product_url: https://www.metanetx.org/
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying MetaNetX RDF data
+  format: http
   id: metanetx.sparql
   is_public: true
   name: MetaNetX SPARQL Endpoint

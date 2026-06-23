@@ -20,7 +20,7 @@ domains:
 - biological systems
 homepage_url: https://phosphat.uni-hohenheim.de/
 id: phosphat
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: PhosPhAt
 products:
@@ -28,6 +28,7 @@ products:
   description: PhosPhAt 4.0 web portal for searching Arabidopsis phosphorylation sites,
     kinase-target relationships, phosphopeptide records, mass spectra, and plant-specific
     phosphorylation-site predictions.
+  format: http
   id: phosphat.portal
   name: PhosPhAt Web Portal
   original_source:

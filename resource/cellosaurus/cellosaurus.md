@@ -74,6 +74,7 @@ products:
   product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.txt
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data
+  format: http
   id: cellosaurus.api.rest
   is_public: true
   name: Cellosaurus API
@@ -83,6 +84,7 @@ products:
   product_url: https://api.cellosaurus.org/
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying Cellosaurus RDF data
+  format: http
   id: cellosaurus.api.sparql
   is_public: true
   name: Cellosaurus SPARQL Endpoint

@@ -20,7 +20,7 @@ domains:
 homepage_url: http://uberon.org
 id: uberon
 infores_id: uberon
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -1787,6 +1787,7 @@ products:
   product_url: https://het.io/search
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:

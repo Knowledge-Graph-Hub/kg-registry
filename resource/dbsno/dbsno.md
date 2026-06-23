@@ -17,7 +17,7 @@ domains:
 - biological systems
 homepage_url: https://biomics.lab.nycu.edu.tw/dbSNO/index.php
 id: dbsno
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: dbSNO
 products:
@@ -25,6 +25,7 @@ products:
   description: dbSNO 3.0 web portal for searching, browsing, and analyzing S-nitrosylated
     proteins, SNO sites, disease associations, SNO regulatory networks, and structural
     environments.
+  format: http
   id: dbsno.portal
   name: dbSNO Web Portal
   original_source:

@@ -23,7 +23,7 @@ domains:
 homepage_url: https://dgidb.org
 id: dgidb
 infores_id: dgidb
-last_modified_date: '2026-01-23T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -32,6 +32,7 @@ name: DGIdb
 products:
 - category: ProgrammingInterface
   description: API for programmatically accessing the Drug Gene Interaction Database
+  format: http
   id: dgidb.api
   is_public: true
   name: DGIdb API

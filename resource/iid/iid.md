@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://iid.ophid.utoronto.ca/
 id: iid
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Integrated Interactions Database
 products:
@@ -63,6 +63,7 @@ products:
 - category: DocumentationProduct
   description: Readme workbook for the IID annotated human protein-protein interaction
     download.
+  format: http
   id: iid.human_annotated_ppis.readme
   name: IID Human Annotated PPIs Readme
   original_source:
@@ -99,6 +100,7 @@ products:
 - category: DocumentationProduct
   description: Readme workbook for the IID annotated mouse protein-protein interaction
     download.
+  format: http
   id: iid.mouse_annotated_ppis.readme
   name: IID Mouse Annotated PPIs Readme
   original_source:

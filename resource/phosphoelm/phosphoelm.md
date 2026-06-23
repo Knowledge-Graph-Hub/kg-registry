@@ -20,7 +20,7 @@ domains:
 - biological systems
 homepage_url: http://phospho.elm.eu.org/
 id: phosphoelm
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Phospho.ELM
 products:
@@ -28,6 +28,7 @@ products:
   description: Phospho.ELM HTTP web portal for searching experimentally verified phosphorylation
     sites by protein, accession, kinase, phosphopeptide-binding domain, organism group,
     and output format.
+  format: http
   id: phosphoelm.portal
   name: Phospho.ELM Web Portal
   original_source:

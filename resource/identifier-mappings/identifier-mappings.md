@@ -19,7 +19,7 @@ contacts:
 description: Mappings using standard RDF predicates between Wikidata entities and
   external identifiers represented as RDF IRIs
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 domains:
 - general
 homepage_url: https://www.wikidata.org/
@@ -29,6 +29,7 @@ name: ID Mappings
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for ID Mappings
+  format: http
   id: identifier-mappings.sparql
   name: ID Mappings SPARQL
   original_source:
@@ -37,6 +38,7 @@ products:
   product_url: https://apps.okn.us/identifier-mappings/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for ID Mappings
+  format: http
   id: identifier-mappings.tpf
   name: ID Mappings TPF
   original_source:

@@ -20,7 +20,7 @@ domains:
 homepage_url: https://obophenotype.github.io/cell-ontology/
 id: cl
 infores_id: cl
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -953,6 +953,7 @@ products:
 - category: ProgrammingInterface
   connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443
   description: Publicly available Neo4j instance for CL-KG.
+  format: http
   id: cl-kg.api.neo4j
   is_neo4j: true
   is_public: true

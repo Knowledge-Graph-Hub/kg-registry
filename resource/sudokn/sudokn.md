@@ -28,6 +28,7 @@ name: SUDOKN
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for SUDOKN
+  format: http
   id: sudokn.sparql
   name: SUDOKN SPARQL
   original_source:
@@ -43,7 +44,7 @@ products:
   - source: sudokn
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 SUDOKN
 

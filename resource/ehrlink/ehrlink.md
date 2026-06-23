@@ -12,7 +12,7 @@ domains:
 - pharmacology
 homepage_url: https://github.com/dhimmel/indications/tree/gh-pages/ehrlink
 id: ehrlink
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: EHRLink
 products:
@@ -33,6 +33,7 @@ products:
 - category: DocumentationProduct
   description: Publication describing the crowdsourcing methodology used to identify
     relationships between clinical problems and medications in EHRLink.
+  format: http
   id: ehrlink.publication
   name: EHRLink Methodology Publication
   original_source:

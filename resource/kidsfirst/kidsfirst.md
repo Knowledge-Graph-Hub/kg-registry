@@ -25,7 +25,7 @@ domains:
 - clinical
 homepage_url: https://kidsfirstdrc.org/
 id: kidsfirst
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Kids First Data Resource Center
 products:
@@ -33,6 +33,7 @@ products:
   description: Centralized platform providing access to harmonized clinical and genomic
     data from childhood cancer and congenital disorder cohorts, supporting cohort
     discovery and analysis.
+  format: http
   id: kidsfirst.portal
   name: Kids First Data Resource Portal
   original_source:
@@ -42,6 +43,7 @@ products:
 - category: GraphicalInterface
   description: Cloud-based analysis platform for Kids First data, allowing researchers
     to analyze and integrate genomic and clinical data in a secure environment.
+  format: http
   id: kidsfirst.cavatica
   name: CAVATICA Platform
   original_source:
@@ -51,6 +53,7 @@ products:
 - category: GraphicalInterface
   description: Web-based tool for exploring and visualizing pediatric cancer genomic
     datasets, integrated with clinical data.
+  format: http
   id: kidsfirst.pedcbioportal
   name: PedcBioPortal
   original_source:

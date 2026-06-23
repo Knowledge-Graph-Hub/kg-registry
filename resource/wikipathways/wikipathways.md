@@ -36,7 +36,7 @@ fairsharing_id: FAIRsharing.1x53qk
 homepage_url: https://www.wikipathways.org/
 id: wikipathways
 infores_id: wikipathways
-last_modified_date: '2025-12-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/share-your-work/public-domain/cc0/
@@ -155,6 +155,7 @@ products:
   product_url: http://data.wikipathways.org/current/rdf/
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying WikiPathways content
+  format: http
   id: wikipathways.sparql
   name: WikiPathways SPARQL Endpoint
   original_source:
@@ -163,6 +164,7 @@ products:
   product_url: https://sparql.wikipathways.org/
 - category: GraphicalInterface
   description: The main web interface for browsing, viewing, and downloading pathways
+  format: http
   id: wikipathways.web
   name: WikiPathways Web Interface
   original_source:
