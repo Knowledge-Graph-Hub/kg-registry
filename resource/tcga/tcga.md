@@ -373,6 +373,7 @@ products:
     source: wikipathways
 publications:
 - authors:
+  - Cancer Genome Atlas Research Network
   - Weinstein JN
   - Collisson EA
   - Mills GB
