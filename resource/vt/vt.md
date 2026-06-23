@@ -19,7 +19,7 @@ domains:
 - phenotype
 homepage_url: https://github.com/AnimalGenome/vertebrate-trait-ontology
 id: vt
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,8 +37,26 @@ products:
   original_source:
   - source: vt
     relation_type: prov:hadPrimarySource
+publications:
+- authors:
+  - Carissa A Park
+  - Susan M Bello
+  - Cynthia L Smith
+  - Zhi-Liang Hu
+  - Diane H Munzenmaier
+  - Rajni Nigam
+  - Jennifer R Smith
+  - Mary Shimoyama
+  - Janan T Eppig
+  - James M Reecy
+  doi: 10.1186/2041-1480-4-13
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23937709
+  journal: J Biomed Semantics
+  preferred: true
+  title: 'The Vertebrate Trait Ontology: a controlled vocabulary for the annotation
+    of trait data across species'
+  year: '2013'
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
-publications: []
 ---
 ## Description
 

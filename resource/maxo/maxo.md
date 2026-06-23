@@ -21,7 +21,7 @@ domains:
 homepage_url: https://github.com/monarch-initiative/MAxO
 id: maxo
 infores_id: maxo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -1253,7 +1253,41 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 349573789
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
-publications: []
+publications:
+- authors:
+  - Leigh C Carmody
+  - Michael A Gargano
+  - Sabrina Toro
+  - Nicole A Vasilevsky
+  - Margaret P Adam
+  - Hannah Blau
+  - Lauren E Chan
+  - David Gomez-Andres
+  - Rita Horvath
+  - Megan L Kraus
+  - Markus S Ladewig
+  - David Lewis-Smith
+  - Hanns Lochmüller
+  - Nicolas A Matentzoglu
+  - Monica C Munoz-Torres
+  - Catharina Schuetz
+  - Berthold Seitz
+  - Morgan N Similuk
+  - Teresa N Sparks
+  - Timmy Strauss
+  - Emilia M Swietlik
+  - Rachel Thompson
+  - Xingmin Aaron Zhang
+  - Christopher J Mungall
+  - Melissa A Haendel
+  - Peter N Robinson
+  doi: 10.1016/j.medj.2023.10.003
+  id: https://www.ncbi.nlm.nih.gov/pubmed/37963467
+  journal: Med
+  preferred: true
+  title: 'The Medical Action Ontology: A tool for annotating and analyzing treatments
+    and clinical management of human disease'
+  year: '2023'
 repository: https://github.com/monarch-initiative/MAxO
 ---
 ## Description

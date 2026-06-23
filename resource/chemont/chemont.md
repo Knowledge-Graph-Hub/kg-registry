@@ -71,6 +71,27 @@ products:
     out'
   - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
     out'
+publications:
+- authors:
+  - Djoumbou Feunang Y
+  - Eisner R
+  - Knox C
+  - Chepelev L
+  - Hastings J
+  - Owen G
+  - Fahy E
+  - Steinbeck C
+  - Subramanian S
+  - Bolton E
+  - Greiner R
+  - Wishart DS
+  doi: 10.1186/s13321-016-0174-y
+  id: https://www.ncbi.nlm.nih.gov/pubmed/27867422
+  journal: J Cheminform
+  preferred: true
+  title: 'ClassyFire: automated chemical classification with a comprehensive, computable
+    taxonomy'
+  year: '2016'
 repository: https://github.com/wishartlab/chemontology
 ---
 ChemOnt

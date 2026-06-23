@@ -19,7 +19,7 @@ domains:
 - information technology
 homepage_url: https://github.com/EBISPOT/DUO
 id: duo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -37,8 +37,73 @@ products:
   original_source:
   - source: duo
     relation_type: prov:hadPrimarySource
+publications:
+- authors:
+  - Lawson J
+  - Cabili MN
+  - Kerry G
+  - Boughtwood T
+  - Thorogood A
+  - Alper P
+  - Bowers SR
+  - Boyles RR
+  - Brookes AJ
+  - Brush M
+  - Burdett T
+  - Clissold H
+  - Donnelly S
+  - Dyke SOM
+  - Freeberg MA
+  - Haendel MA
+  - Hata C
+  - Holub P
+  - Jeanson F
+  - Jene A
+  - Kawashima M
+  - Kawashima S
+  - Konopko M
+  - Kyomugisha I
+  - Li H
+  - Linden M
+  - Lyman Rodriguez L
+  - Morita M
+  - Mulder N
+  - Muller J
+  - Nagaie S
+  - Nasir J
+  - Ogishima S
+  - Ota Wang V
+  - Paglione LD
+  - Pandya RN
+  - Parkinson H
+  - Philippakis AA
+  - Prasser F
+  - Rambla J
+  - Reinold K
+  - Rushton GA
+  - Saltzman A
+  - Saunders G
+  - Sofia HJ
+  - Spalding JD
+  - Swertz MA
+  - Tulchinsky I
+  - van Enckevort EJ
+  - Varma S
+  - Voisin C
+  - Yamamoto N
+  - Yamasaki C
+  - Zass L
+  - Guidry Auvil JM
+  - Nyrönen TH
+  - Courtot M
+  doi: 10.1016/j.xgen.2021.100028
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34820659
+  journal: Cell Genom
+  preferred: true
+  title: The Data Use Ontology to streamline responsible access to human biomedical
+    datasets
+  year: '2021'
 repository: https://github.com/EBISPOT/DUO
-publications: []
 ---
 ## Description
 

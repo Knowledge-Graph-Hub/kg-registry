@@ -21,7 +21,7 @@ domains:
 homepage_url: https://github.com/HUPO-PSI/psi-mi-CV
 id: mi
 infores_id: mi
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -674,7 +674,54 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
-publications: []
+publications:
+- authors:
+  - Henning Hermjakob
+  - Luisa Montecchi-Palazzi
+  - Gary Bader
+  - Jérôme Wojcik
+  - Lukasz Salwinski
+  - Arnaud Ceol
+  - Susan Moore
+  - Sandra Orchard
+  - Ugis Sarkans
+  - Christian von Mering
+  - Bernd Roechert
+  - Sylvain Poux
+  - Eva Jung
+  - Henning Mersch
+  - Paul Kersey
+  - Michael Lappe
+  - Yixue Li
+  - Rong Zeng
+  - Debashis Rana
+  - Macha Nikolski
+  - Holger Husi
+  - Christine Brun
+  - K Shanker
+  - Seth G N Grant
+  - Chris Sander
+  - Peer Bork
+  - Weimin Zhu
+  - Akhilesh Pandey
+  - Alvis Brazma
+  - Bernard Jacq
+  - Marc Vidal
+  - David Sherman
+  - Pierre Legrain
+  - Gianni Cesareni
+  - Ioannis Xenarios
+  - David Eisenberg
+  - Boris Steipe
+  - Chris Hogue
+  - Rolf Apweiler
+  doi: 10.1038/nbt926
+  id: https://www.ncbi.nlm.nih.gov/pubmed/14755292
+  journal: Nat Biotechnol
+  preferred: true
+  title: The HUPO PSI's molecular interaction format--a community standard for the
+    representation of protein interaction data
+  year: '2004'
 repository: https://github.com/HUPO-PSI/psi-mi-CV
 ---
 ## Description

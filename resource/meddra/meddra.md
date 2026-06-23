@@ -15,7 +15,7 @@ domains:
   - pharmacology
 homepage_url: https://admin.ich.org/page/meddra
 id: meddra
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: MedDRA
 products:
@@ -69,6 +69,17 @@ products:
     secondary_source:
       - relation_type: prov:wasInformedBy
         source: meddra
+publications:
+  - authors:
+      - Brown EG
+      - Wood L
+      - Wood S
+    doi: 10.2165/00002018-199920020-00002
+    id: https://www.ncbi.nlm.nih.gov/pubmed/10082069
+    journal: Drug Saf
+    preferred: true
+    title: The Medical Dictionary for Regulatory Activities (MedDRA)
+    year: '1999'
 synonyms:
   - Medical Dictionary for Regulatory Activities
 warnings:

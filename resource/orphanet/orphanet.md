@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.orpha.net/
 id: orphanet
 infores_id: orphanet
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -820,6 +820,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Pavan S
+  - Rommel K
+  - Mateo Marquina ME
+  - Höhn S
+  - Lanneau V
+  - Rath A
+  doi: 10.1371/journal.pone.0170365
+  id: https://www.ncbi.nlm.nih.gov/pubmed/28099516
+  journal: PLoS One
+  preferred: true
+  title: 'Clinical Practice Guidelines for Rare Diseases: The Orphanet Database'
+  year: '2017'
 repository: https://github.com/Orphanet
 taxon:
 - NCBITaxon:9606
