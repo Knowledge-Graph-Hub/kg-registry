@@ -57,18 +57,6 @@ products:
         source: glyconnect
       - relation_type: prov:wasInformedBy
         source: glyconavi
-publications:
-  - authors:
-      - Tsuchiya S
-      - Matsubara M
-      - Aoki-Kinoshita KF
-      - Yamada I
-    doi: 10.3390/molecules26237149
-    id: https://www.ncbi.nlm.nih.gov/pubmed/34885724
-    journal: Molecules
-    preferred: true
-    title: 'SugarDrawer: A Web-Based Database Search Tool with Editing Glycan Structures'
-    year: '2021'
 synonyms:
   - Glyco-Database Information Search
 ---
