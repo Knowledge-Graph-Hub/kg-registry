@@ -18,5 +18,24 @@ feed:
 # dotfile directory Jekyll would otherwise skip.
 include:
   - ".well-known"
+# Keep the reference-validation cache out of the Jekyll build. These files are
+# fetched abstracts/HTML used only by util/reference_validation.py (read straight
+# from disk); nothing on the site links to them. They often contain raw LaTeX or
+# code with `{{ ... }}`, which Liquid tries to parse as a template variable and
+# fails on (e.g. PMID_30564458.md). Excluding the directory avoids that whole
+# class of build break. The remaining entries restore Jekyll's default excludes,
+# which setting `exclude` would otherwise override.
+exclude:
+  - "references_cache"
+  - ".sass-cache"
+  - ".jekyll-cache"
+  - "gemfiles"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
 ## --Anything above this line can be edited in _config_header.yml --
 ## --Everything below this line automatically generated in _config.yml --
