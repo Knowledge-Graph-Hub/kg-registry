@@ -18,7 +18,7 @@ domains:
   - chemistry and biochemistry
 homepage_url: https://github.com/IEDB/MRO
 id: mro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -37,7 +37,25 @@ products:
       - source: mro
         relation_type: prov:hadPrimarySource
 repository: https://github.com/IEDB/MRO
-publications: []
+publications:
+  - authors:
+      - Vita R
+      - Overton JA
+      - Seymour E
+      - Sidney J
+      - Kaufman J
+      - Tallmadge RL
+      - Ellis S
+      - Hammond J
+      - Butcher GW
+      - Sette A
+      - Peters B
+    doi: 10.1186/s13326-016-0045-5
+    id: https://www.ncbi.nlm.nih.gov/pubmed/26759709
+    journal: J Biomed Semantics
+    preferred: true
+    title: An ontology for major histocompatibility restriction
+    year: '2016'
 ---
 
 ## Description

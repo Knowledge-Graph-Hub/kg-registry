@@ -72,6 +72,16 @@ products:
     out'
   - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
     out'
+publications:
+- authors:
+  - Peroni S
+  - Shotton D
+  doi: 10.1016/j.websem.2012.08.001
+  id: https://doi.org/10.1016/j.websem.2012.08.001
+  journal: Journal of Web Semantics
+  preferred: true
+  title: 'FaBiO and CiTO: ontologies for describing bibliographic resources and citations'
+  year: '2012'
 repository: https://github.com/sparontologies/cito
 ---
 CiTO

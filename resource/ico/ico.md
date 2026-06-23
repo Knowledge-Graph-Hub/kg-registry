@@ -19,7 +19,7 @@ domains:
 - general
 homepage_url: https://github.com/ICO-ontology/ICO
 id: ico
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -38,7 +38,21 @@ products:
   - source: ico
     relation_type: prov:hadPrimarySource
 repository: https://github.com/ICO-ontology/ICO
-publications: []
+publications:
+- authors:
+  - Lin Y
+  - Harris MR
+  - Manion FJ
+  - Eisenhauer E
+  - Zhao B
+  - Shi W
+  - Karnovsky A
+  - He Y
+  id: https://ceur-ws.org/Vol-1327/icbo2014_paper_54.pdf
+  journal: CEUR Workshop Proceedings
+  preferred: true
+  title: Development of a BFO-Based Informed Consent Ontology (ICO)
+  year: '2014'
 ---
 ## Description
 

@@ -20,7 +20,7 @@ domains:
 - phenotype
 homepage_url: https://github.com/PlantPhenoOntology/PPO
 id: ppo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -41,7 +41,21 @@ products:
 repository: https://github.com/PlantPhenoOntology/PPO
 taxon:
 - NCBITaxon:33090
-publications: []
+publications:
+- authors:
+  - Stucky BJ
+  - Guralnick R
+  - Deck J
+  - Denny EG
+  - Bolmgren K
+  - Walls R
+  doi: 10.3389/fpls.2018.00517
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29765382
+  journal: Front Plant Sci
+  preferred: true
+  title: 'The Plant Phenology Ontology: A New Informatics Resource for Large-Scale
+    Integration of Plant Phenology Data'
+  year: '2018'
 ---
 ## Description
 

@@ -9,7 +9,7 @@ domains:
 - pharmacology
 homepage_url: http://tatonettilab.org/offsides/
 id: offsides
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: OFFSIDES
 products:
@@ -118,6 +118,18 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+publications:
+- authors:
+  - Tatonetti NP
+  - Ye PP
+  - Daneshjou R
+  - Altman RB
+  doi: 10.1126/scitranslmed.3003377
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22422992
+  journal: Sci Transl Med
+  preferred: true
+  title: Data-driven prediction of drug effects and interactions
+  year: '2012'
 synonyms:
 - OffSIDES
 ---
