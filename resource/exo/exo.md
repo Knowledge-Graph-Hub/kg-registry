@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/CTDbase/exposure-ontology
 id: exo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -47,7 +47,19 @@ products:
       - source: exo
         relation_type: prov:hadPrimarySource
 repository: https://github.com/CTDbase/exposure-ontology
-publications: []
+publications:
+  - authors:
+      - Mattingly CJ
+      - McKone TE
+      - Callahan MA
+      - Blake JA
+      - Cohen Hubal EA
+    doi: 10.1021/es2033857
+    id: https://www.ncbi.nlm.nih.gov/pubmed/22324457
+    journal: Environ Sci Technol
+    preferred: true
+    title: 'Providing the missing link: the exposure science ontology ExO'
+    year: '2012'
 ---
 
 ## Description

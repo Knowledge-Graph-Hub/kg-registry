@@ -15,7 +15,7 @@ domains:
   - proteomics
 homepage_url: https://glyconavi.org/
 id: glyconavi
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: GlycoNAVI
 products:
@@ -57,6 +57,18 @@ products:
         source: glyconnect
       - relation_type: prov:wasInformedBy
         source: glyconavi
+publications:
+  - authors:
+      - Tsuchiya S
+      - Matsubara M
+      - Aoki-Kinoshita KF
+      - Yamada I
+    doi: 10.3390/molecules26237149
+    id: https://www.ncbi.nlm.nih.gov/pubmed/34885724
+    journal: Molecules
+    preferred: true
+    title: 'SugarDrawer: A Web-Based Database Search Tool with Editing Glycan Structures'
+    year: '2021'
 synonyms:
   - Glyco-Database Information Search
 ---

@@ -17,7 +17,7 @@ domains:
 homepage_url: https://datascience.unm.edu/tiga/
 id: "tiga"
 infores_id: "tiga"
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Target Illumination GWAS Analytics
 synonyms:
@@ -41,6 +41,23 @@ products:
       - source: tiga
         relation_type: prov:hadPrimarySource
     product_url: https://unmtid-dbs.net/download/TIGA/
+publications:
+  - authors:
+      - Yang JJ
+      - Grissa D
+      - Lambert CG
+      - Bologa CG
+      - Mathias SL
+      - Waller A
+      - Wild DJ
+      - Jensen LJ
+      - Oprea TI
+    doi: 10.1093/bioinformatics/btab427
+    id: https://www.ncbi.nlm.nih.gov/pubmed/34086846
+    journal: Bioinformatics
+    preferred: true
+    title: "TIGA: target illumination GWAS analytics"
+    year: '2021'
 ---
 
 # Target Illumination GWAS Analytics
