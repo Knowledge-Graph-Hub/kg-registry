@@ -19,7 +19,7 @@ domains:
 homepage_url: https://wormbase.org/
 id: wormbase
 infores_id: wormbase
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -66,7 +66,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  product_url: https://im-dev.wormbase.org/tools/wormmine/begin.do
+  product_url: https://www.wormbase.org/tools/wormmine/
 - category: GraphicalInterface
   description: Full-text search tool for querying C. elegans and nematode literature
     with ontology term support
@@ -76,7 +76,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  product_url: https://www.textpresso.org/cgi-bin/wb/tfw.cgi
+  product_url: https://www.alliancegenome.org/textpresso
 - category: Product
   description: Download site providing bulk genome assemblies, annotations, gene models,
     and other WormBase data files over HTTPS.

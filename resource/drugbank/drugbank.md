@@ -1537,42 +1537,6 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: medkg
-- category: GraphicalInterface
-  description: Interactive web interface for exploring drug-disease networks with
-    probabilistic filtering and graph visualization
-  format: http
-  id: redrugs.web
-  name: ReDrugs Web Interface
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: redrugs
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: irefindex
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  product_url: http://redrugs.tw.rpi.edu/
-- category: ProgrammingInterface
-  description: SADI web services API for querying the knowledge graph including resource
-    search, interaction lookup, and network expansion
-  format: http
-  id: redrugs.api
-  name: ReDrugs API
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: redrugs
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: irefindex
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  product_url: http://redrugs.tw.rpi.edu/api/
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
     and disease information for drug repositioning.
@@ -2868,7 +2832,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: predict
-  product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
+  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/
   secondary_source:
   - relation_type: prov:used
     source: drugbank
@@ -2876,13 +2840,7 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  warnings: []
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
     to create graph nodes and add edges.

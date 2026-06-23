@@ -26,7 +26,7 @@ domains:
 - biomedical
 homepage_url: https://www.cellosaurus.org/
 id: cellosaurus
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -71,34 +71,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellosaurus
-  product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
-- category: Product
-  description: Complete Cellosaurus data in RDF format using the Turtle syntax
-  format: ttl
-  id: cellosaurus.rdf
-  name: Cellosaurus RDF
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: cellosaurus
-  product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.txt
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data
   id: cellosaurus.api.rest
