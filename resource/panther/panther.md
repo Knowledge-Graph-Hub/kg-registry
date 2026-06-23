@@ -18,7 +18,7 @@ domains:
 homepage_url: https://www.pantherdb.org/
 id: panther
 infores_id: panther
-last_modified_date: '2026-01-23T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: PANTHER
 products:
@@ -2129,6 +2129,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Thomas PD
+  - Ebert D
+  - Muruganujan A
+  - Mushayahama T
+  - Albou LP
+  - Mi H
+  doi: 10.1002/pro.4218
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34717010
+  journal: Protein Sci
+  preferred: true
+  title: 'PANTHER: Making genome-scale phylogenetics accessible to all'
+  year: '2022'
 repository: https://data.pantherdb.org/ftp/
 ---
 PANTHER

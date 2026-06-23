@@ -20,7 +20,7 @@ domains:
 homepage_url: https://metacyc.org/
 id: metacyc
 infores_id: metacyc
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://metacyc.org/download.shtml
@@ -218,6 +218,24 @@ products:
     source: metacyc
   - relation_type: prov:wasDerivedFrom
     source: reactome
+publications:
+- authors:
+  - Caspi R
+  - Billington R
+  - Keseler IM
+  - Kothari A
+  - Krummenacker M
+  - Midford PE
+  - Ong WK
+  - Paley S
+  - Subhraveti P
+  - Karp PD
+  doi: 10.1093/nar/gkz862
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31586394
+  journal: Nucleic Acids Res
+  preferred: true
+  title: The MetaCyc database of metabolic pathways and enzymes - a 2019 update
+  year: '2020'
 ---
 # MetaCyc
 

@@ -10,7 +10,7 @@ domains:
 - proteomics
 homepage_url: https://www.tcdb.org/
 id: tcdb
-last_modified_date: '2026-02-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Transporter Classification Database (TCDB)
 products:
@@ -474,6 +474,25 @@ products:
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+publications:
+- authors:
+  - Saier MH
+  - Reddy VS
+  - Moreno-Hagelsieb G
+  - Hendargo KJ
+  - Zhang Y
+  - Iddamsetty V
+  - Lam KJK
+  - Tian N
+  - Russum S
+  - Wang J
+  - Medrano-Soto A
+  doi: 10.1093/nar/gkaa1004
+  id: https://www.ncbi.nlm.nih.gov/pubmed/33170213
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'The Transporter Classification Database (TCDB): 2021 update'
+  year: '2021'
 synonyms:
 - TCDB
 - Transporter Classification Database

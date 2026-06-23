@@ -20,7 +20,7 @@ domains:
 - organisms
 homepage_url: https://www.ncbi.nlm.nih.gov/sra
 id: sra
-last_modified_date: '2026-05-22T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Sequence Read Archive
 products:
@@ -187,6 +187,20 @@ products:
     source: sra
   - relation_type: prov:wasInformedBy
     source: string
+publications:
+- authors:
+  - Katz K
+  - Shutov O
+  - Lapoint R
+  - Kimelman M
+  - Brister JR
+  - O'Sullivan C
+  doi: 10.1093/nar/gkab1053
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34850094
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'The Sequence Read Archive: a decade more of explosive growth'
+  year: '2022'
 synonyms:
 - SRA
 - Sequence Read Archive

@@ -24,7 +24,7 @@ domains:
 - pathways
 homepage_url: https://ecocyc.org/
 id: ecocyc
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://ecocyc.org/download.shtml
@@ -85,6 +85,33 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ecocyc
   product_url: http://www.biomedcentral.com/1752-0509/8/79
+publications:
+- authors:
+  - Keseler IM
+  - Gama-Castro S
+  - Mackie A
+  - Billington R
+  - Bonavides-Martínez C
+  - Caspi R
+  - Kothari A
+  - Krummenacker M
+  - Midford PE
+  - Muñiz-Rascado L
+  - Ong WK
+  - Paley S
+  - Santos-Zavaleta A
+  - Subhraveti P
+  - Tierrafría VH
+  - Wolfe AJ
+  - Collado-Vides J
+  - Paulsen IT
+  - Karp PD
+  doi: 10.3389/fmicb.2021.711077
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34394059
+  journal: Front Microbiol
+  preferred: true
+  title: The EcoCyc Database in 2021
+  year: '2021'
 repository: https://biocyc.org/download.shtml
 ---
 # EcoCyc

@@ -1632,6 +1632,20 @@ products:
     source: obo-db-ingest
   product_file_size: 197677
   product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.tsv
+publications:
+- authors:
+  - Basu S
+  - Fey P
+  - Pandit Y
+  - Dodson R
+  - Kibbe WA
+  - Chisholm RL
+  doi: 10.1093/nar/gks1064
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23172289
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'dictyBase 2013: integrating multiple Dictyostelid species'
+  year: '2013'
 repository: https://github.com/dictybase
 taxon:
 - NCBITaxon:44689

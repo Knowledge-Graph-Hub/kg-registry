@@ -18,7 +18,7 @@ domains:
 - phenotype
 homepage_url: https://www.mousephenotype.org/
 id: impc
-last_modified_date: '2026-05-22T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: International Mouse Phenotyping Consortium
 products:
@@ -380,6 +380,32 @@ products:
     source: tissues
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Groza T
+  - Gomez FL
+  - Mashhadi HH
+  - Muñoz-Fuentes V
+  - Gunes O
+  - Wilson R
+  - Cacheiro P
+  - Frost A
+  - Keskivali-Bond P
+  - Vardal B
+  - McCoy A
+  - Cheng TK
+  - Santos L
+  - Wells S
+  - Smedley D
+  - Mallon AM
+  - Parkinson H
+  doi: 10.1093/nar/gkac972
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36305825
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'The International Mouse Phenotyping Consortium: comprehensive knockout phenotyping
+    underpinning the study of human disease'
+  year: '2023'
 taxon:
 - NCBITaxon:10090
 - NCBITaxon:9606
