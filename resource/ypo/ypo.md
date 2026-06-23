@@ -17,41 +17,13 @@ domains:
 - biological systems
 homepage_url: http://www.yeastgenome.org/
 id: ypo
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
   label: Not specified
 name: Yeast phenotypes
-products:
-- category: OntologyProduct
-  description: Yeast phenotypes ontology in OWL format
-  format: owl
-  id: ypo.owl
-  name: ypo.owl
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ypo
-  product_url: http://purl.obolibrary.org/obo/ypo.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: Yeast phenotypes ontology in OBO format
-  format: obo
-  id: ypo.obo
-  name: ypo.obo
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ypo
-  product_url: http://purl.obolibrary.org/obo/ypo.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+products: []
 publications: []
 taxon:
 - NCBITaxon:4932

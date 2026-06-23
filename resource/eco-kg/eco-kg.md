@@ -24,7 +24,7 @@ domains:
   - organisms
   - environment
   - biological systems
-homepage_url: https://kghub.org/eco-kg/index.html
+homepage_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 id: eco-kg
 layout: resource_detail
 license:
@@ -41,24 +41,14 @@ products:
     original_source:
       - source: eco-kg
         relation_type: prov:hadPrimarySource
-    product_url: https://kg-hub.berkeleybop.io/eco-kg/
-  - category: ProgrammingInterface
-    connection_url: https://kghub.org/eco-kg/api
-    description: API for accessing eco-KG data
-    id: eco-kg.api
-    is_public: true
-    name: eco-KG API
-    original_source:
-      - source: eco-kg
-        relation_type: prov:hadPrimarySource
-    product_url: https://kghub.org/eco-kg/api
+    product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg
 tags:
   - core
 taxon:
   - NCBITaxon:33090
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 
 eco-KG: a knowledge graph of plant traits starting with Planteome and EOL TraitBank. The graph integrates data from various sources related to plant phenotypes, traits, and ecological relationships.

@@ -14,30 +14,15 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
-homepage_url: http://www.maizemap.org/
+homepage_url: https://obofoundry.org/ontology/zea
 id: zea
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
   label: Not specified
 name: Maize gross anatomy
-products:
-- category: OntologyProduct
-  description: Canonical OWL edition of the Maize gross anatomy ontology distributed
-    via OBO PURL.
-  format: owl
-  id: zea.owl
-  name: Maize gross anatomy OWL edition
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: zea
-  product_url: http://purl.obolibrary.org/obo/zea.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+products: []
 publications: []
 taxon:
 - NCBITaxon:4575

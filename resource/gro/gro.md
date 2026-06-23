@@ -15,41 +15,13 @@ domains:
 - anatomy and development
 homepage_url: http://www.gramene.org/plant_ontology/
 id: gro
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
   label: Not specified
 name: Cereal Plant Gross Anatomy
-products:
-- category: OntologyProduct
-  description: Cereal Plant Gross Anatomy in OWL format
-  format: owl
-  id: gro.owl
-  name: gro.owl
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gro
-  product_url: http://purl.obolibrary.org/obo/gro.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: Cereal Plant Gross Anatomy in OBO format
-  format: obo
-  id: gro.obo
-  name: gro.obo
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gro
-  product_url: http://purl.obolibrary.org/obo/gro.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+products: []
 publications: []
 ---
 ## Description

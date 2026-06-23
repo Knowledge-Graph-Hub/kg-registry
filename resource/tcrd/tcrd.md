@@ -46,7 +46,7 @@ domains:
 - drug discovery
 - genomics
 - biological systems
-homepage_url: http://juniper.health.unm.edu/tcrd/
+homepage_url: https://datascience.unm.edu/tcrd/
 id: tcrd
 infores_id: tcrd
 last_modified_date: '2026-06-22T00:00:00Z'
