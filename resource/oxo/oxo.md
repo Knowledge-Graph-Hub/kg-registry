@@ -16,25 +16,16 @@ domains:
   - biomedical
   - general
   - biological systems
-homepage_url: https://www.ebi.ac.uk/spot/oxo/
+homepage_url: https://github.com/EBISPOT/oxo2
 id: oxo
 infores_id: oxo
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
   label: Apache License 2.0
 name: Ontology Xref Service
 products:
-  - category: ProgrammingInterface
-    description: RESTful API for programmatic access to cross-ontology mappings and term equivalence searches
-    format: http
-    id: oxo.api
-    name: OxO REST API
-    original_source:
-      - source: oxo
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.ebi.ac.uk/spot/oxo/docs/api
   - category: GraphicalInterface
     description: Web-based interface for searching and browsing ontology cross-references and mappings
     format: http
@@ -43,8 +34,8 @@ products:
     original_source:
       - source: oxo
         relation_type: prov:hadPrimarySource
-    product_url: https://www.ebi.ac.uk/spot/oxo/
-repository: https://github.com/EBISPOT/OXO
+    product_url: https://github.com/EBISPOT/oxo2
+repository: https://github.com/EBISPOT/oxo2
 synonyms:
   - OxO
 ---

@@ -14,7 +14,7 @@ domains:
 - biological systems
 homepage_url: https://ngdc.cncb.ac.cn/lncbook/home
 id: lncbook
-last_modified_date: '2025-10-21T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: LncBook
 products:
@@ -139,14 +139,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lncbook
-  product_url: https://ngdc.cncb.ac.cn/lncbook/download
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  product_url: https://ngdc.cncb.ac.cn/lncbook/downloads
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

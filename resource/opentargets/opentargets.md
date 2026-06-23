@@ -18,7 +18,7 @@ domains:
 - biomedical
 homepage_url: https://www.opentargets.org/
 id: opentargets
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -46,14 +46,15 @@ products:
     source: opentargets
   product_url: https://api.platform.opentargets.org/api/v4/graphql
 - category: ProgrammingInterface
-  description: REST API for accessing Open Targets Platform data programmatically.
+  description: API documentation for accessing Open Targets Platform data programmatically
+    via the GraphQL API (the REST API has been retired).
   id: opentargets.api.rest
   is_public: true
-  name: Open Targets Platform REST API
+  name: Open Targets Platform API Documentation
   original_source:
   - relation_type: prov:hadPrimarySource
     source: opentargets
-  product_url: https://api.platform.opentargets.org/api/v4/rest
+  product_url: https://platform-docs.opentargets.org/data-access/graphql-api
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS

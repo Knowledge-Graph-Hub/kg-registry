@@ -30,3 +30,7 @@ exclude_products:
     - t4fs-community.owl
     - t4fs-community.obo
     - t4fs-community.json
+  prefer:
+    - prefer.prefer-basic.owl
+    - prefer.prefer-basic.obo
+    - prefer.prefer-basic.json

@@ -82,7 +82,7 @@ products:
     id: openbiodiv.ontology.guide
     is_public: true
     name: OpenBioDiv-O Guide
-    product_url: https://openbiodiv.net/ontologies
+    product_url: https://github.com/pensoft/OpenBiodiv/tree/master/ontology
     original_source:
       - source: openbiodiv
         relation_type: prov:hadPrimarySource
@@ -115,7 +115,7 @@ publications:
 repository: https://github.com/pensoft/OpenBiodiv
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 
 # OpenBiodiv

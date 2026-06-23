@@ -21,7 +21,7 @@ domains:
 - general
 homepage_url: https://github.com/Multiomics-Analytics-Group/prefer_ontology
 id: prefer
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -61,48 +61,6 @@ products:
     source: prefer
   product_file_size: 11740752
   product_url: http://purl.obolibrary.org/obo/prefer.json
-- category: OntologyProduct
-  description: Basic version, no inter-ontology axioms
-  format: owl
-  id: prefer.prefer-basic.owl
-  name: Basic prefer
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: prefer
-  product_url: http://purl.obolibrary.org/obo/prefer/prefer-basic.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: Basic version, no inter-ontology axioms
-  format: obo
-  id: prefer.prefer-basic.obo
-  name: Basic PREFER (OBO version)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: prefer
-  product_url: http://purl.obolibrary.org/obo/prefer/prefer-basic.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: Basic version, no inter-ontology axioms
-  format: json
-  id: prefer.prefer-basic.json
-  name: Basic PREFER (OBOGraph-JSON version)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: prefer
-  product_url: http://purl.obolibrary.org/obo/prefer/prefer-basic.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
 - category: OntologyProduct
   description: complete PREFER but with no imports or external axioms
   format: owl
