@@ -1,6 +1,13 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.wikimedia.org/
+  id: wikimedia
+  label: Wikimedia Foundation
 creation_date: '2026-03-11T00:00:00Z'
 description: Wikipedia is a free, collaboratively edited multilingual encyclopedia
   published by the Wikimedia movement. Its article content is widely reused as an
@@ -11,8 +18,11 @@ domains:
 - general
 homepage_url: https://www.wikipedia.org/
 id: wikipedia
-last_modified_date: '2026-03-11T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by-sa/4.0/
+  label: CC-BY-SA-4.0
 name: Wikipedia
 products:
 - category: GraphicalInterface
@@ -59,7 +69,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wikipedia
-  product_url: https://dumps.wikimedia.org/other/mediawiki_content_current/enwiki/2026-03-01/xml/bzip2/
+  product_url: https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2
 - category: Product
   description: English Wikipedia full revision-history XML export directory from the
     Wikimedia dump service. This dump contains complete page revision histories, split
@@ -70,7 +80,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wikipedia
-  product_url: https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/2026-03-01/xml/bzip2/
+  product_url: https://dumps.wikimedia.org/enwiki/latest/
 - category: GraphProduct
   description: Databus collection for the latest core DBpedia release used by the
     main SPARQL endpoint and linked data interface.

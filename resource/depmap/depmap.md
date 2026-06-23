@@ -24,7 +24,7 @@ domains:
 homepage_url: https://depmap.org/portal/
 id: depmap
 infores_id: depmap
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://depmap.org/portal/terms/
@@ -326,6 +326,7 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_url: https://maayanlab.cloud/enrichr-kg
 - category: Product
   description: DepMap all-data downloads page where current Achilles and related dependency
     datasets are released.
