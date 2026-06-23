@@ -33,6 +33,7 @@ name: NIAID Data Ecosystem KG
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for NIAID Data Ecosystem KG
+  format: http
   id: nde.sparql
   name: NIAID Data Ecosystem KG SPARQL
   original_source:
@@ -50,7 +51,7 @@ products:
 taxon:
 - NCBITaxon:9606
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 NIAID Data Ecosystem KG
 

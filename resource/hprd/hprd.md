@@ -32,7 +32,7 @@ domains:
 - systems biology
 homepage_url: http://www.hprd.org/
 id: hprd
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -60,6 +60,7 @@ products:
     when accessing file'
 - category: DocumentationProduct
   description: HPRD data in XML format for programmatic access
+  format: http
   id: hprd.xml.download
   name: HPRD XML Data Download
   original_source:
@@ -77,6 +78,7 @@ products:
     when accessing file'
 - category: DocumentationProduct
   description: HPRD data in tab-delimited format for programmatic access
+  format: http
   id: hprd.tsv.download
   name: HPRD Tab-Delimited Data Download
   original_source:

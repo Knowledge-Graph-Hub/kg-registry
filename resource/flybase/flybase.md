@@ -17,7 +17,7 @@ domains:
 homepage_url: https://flybase.org/
 id: flybase
 infores_id: flybase
-last_modified_date: '2025-10-08T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: FlyBase
 products:
@@ -64,6 +64,7 @@ products:
 - category: GraphicalInterface
   description: Interactive genome browser for visualizing Drosophila genomes, gene
     models, expression data, and genomic features using JBrowse technology
+  format: http
   id: flybase.jbrowse
   name: FlyBase JBrowse Genome Browser
   original_source:
@@ -73,6 +74,7 @@ products:
 - category: GraphicalInterface
   description: Web-based search and query interface for accessing FlyBase data, including
     gene information, phenotypes, stocks, and literature
+  format: http
   id: flybase.web.interface
   name: FlyBase Web Interface
   original_source:
@@ -1462,6 +1464,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Öztürk-Çolak A
+  - Marygold SJ
+  - Antonazzo G
+  - Attrill H
+  - Goutte-Gattat D
+  - Jenkins VK
+  - Matthews BB
+  - Millburn G
+  - dos Santos G
+  - Tabone CJ
+  doi: 10.1093/genetics/iyad211
+  id: https://www.ncbi.nlm.nih.gov/pubmed/38301657
+  journal: Genetics
+  preferred: true
+  title: 'FlyBase: updates to the Drosophila genes and genomes database'
+  year: '2024'
 repository: https://github.com/FlyBase
 taxon:
 - NCBITaxon:7227

@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.pharmgkb.org/
 id: pharmgkb
 infores_id: pharmgkb
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -1711,6 +1711,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Whirl-Carrillo M
+  - Huddart R
+  - Gong L
+  - Sangkuhl K
+  - Thorn CF
+  - Whaley R
+  - Klein TE
+  doi: 10.1002/cpt.2350
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34216021
+  journal: Clin Pharmacol Ther
+  preferred: true
+  title: An Evidence-Based Framework for Evaluating Pharmacogenomics Knowledge for
+    Personalized Medicine
+  year: '2021'
 repository: https://www.pharmgkb.org/downloads
 taxon:
 - NCBITaxon:9606

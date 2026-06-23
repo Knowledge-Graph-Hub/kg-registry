@@ -9,7 +9,7 @@ domains:
 - biological systems
 homepage_url: https://eggnogdb.org/
 id: eggnog
-last_modified_date: '2026-02-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: eggNOG
 products:
@@ -802,6 +802,27 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+publications:
+- authors:
+  - Hernández-Plaza A
+  - Szklarczyk D
+  - Botas J
+  - Cantalapiedra CP
+  - Giner-Lamia J
+  - Mende DR
+  - Kirsch R
+  - Rattei T
+  - Letunic I
+  - Jensen LJ
+  - Bork P
+  - von Mering C
+  - Huerta-Cepas J
+  doi: 10.1093/nar/gkac1022
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36399505
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'eggNOG 6.0: enabling comparative genomics across 12,535 organisms'
+  year: '2023'
 synonyms:
 - eggNOG
 - 'Evolutionary Genealogy of Genes: Non-supervised Orthologous Groups'

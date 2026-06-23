@@ -19,13 +19,14 @@ domains:
 - general
 homepage_url: http://vectology.mrcieu.ac.uk/
 id: vectology
-last_modified_date: '2025-09-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Vectology
 products:
 - category: ProgrammingInterface
   description: Public API providing access to sentence embedding-based similarity
     endpoints and variable vector queries
+  format: http
   id: vectology.api
   is_public: true
   name: Vectology API

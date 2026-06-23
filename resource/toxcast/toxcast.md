@@ -14,7 +14,7 @@ domains:
 - public health
 - biomedical
 id: toxcast
-last_modified_date: '2025-09-16T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/privacy/privacy-and-security-notice
@@ -55,6 +55,7 @@ products:
 - category: GraphicalInterface
   description: Landing page describing the ToxCast high-throughput screening program
     and providing links to data and documentation.
+  format: http
   id: toxcast.portal
   name: EPA ToxCast Portal
   original_source:
@@ -64,6 +65,7 @@ products:
 - category: ProgrammingInterface
   description: REST API providing programmatic access to ToxCast-related assay, chemical,
     and bioactivity data via the CompTox Chemicals Dashboard.
+  format: http
   id: toxcast.api
   name: CompTox Chemicals Dashboard API (ToxCast)
   original_source:

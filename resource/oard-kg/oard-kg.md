@@ -7,6 +7,7 @@ activity_status: active
 homepage_url: https://github.com/WengLab-InformaticsResearch/oard-react
 products:
 - id: oard-kg.sparql
+  format: http
   name: Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL
   description: SPARQL endpoint for Open Annotations for Rare Diseases (OARD) Knowledge
     Graph
@@ -16,6 +17,7 @@ products:
   - source: oard-kg
     relation_type: prov:hadPrimarySource
 - id: oard-kg.tpf
+  format: http
   name: Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF
   description: Triple Pattern Fragments endpoint for Open Annotations for Rare Diseases
     (OARD) Knowledge Graph
@@ -29,7 +31,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 contacts:
 - category: Individual
   label: Casey Ta

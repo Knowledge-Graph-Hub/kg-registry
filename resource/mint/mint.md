@@ -20,7 +20,8 @@ domains:
 - biological systems
 homepage_url: https://mint.bio.uniroma2.it/
 id: mint
-last_modified_date: '2026-06-02T00:00:00Z'
+infores_id: mint
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

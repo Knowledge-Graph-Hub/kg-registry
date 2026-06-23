@@ -29,7 +29,7 @@ domains:
 homepage_url: https://foodb.ca/
 id: foodb
 infores_id: foodb
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -188,6 +188,7 @@ products:
 - category: Product
   compression: zip
   description: Experimental C-MS Spectra data from FooDB
+  format: mixed
   id: foodb.data.experimental_cms
   name: FooDB Experimental C-MS Spectra
   original_source:
@@ -202,6 +203,7 @@ products:
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
+  format: mixed
   id: foodb.data.predicted_cms
   name: FooDB Predicted C-MS Spectra
   original_source:
@@ -216,6 +218,7 @@ products:
 - category: Product
   compression: zip
   description: Experimental MS-MS Spectra data from FooDB
+  format: mixed
   id: foodb.data.experimental_msms
   name: FooDB Experimental MS-MS Spectra
   original_source:
@@ -230,6 +233,7 @@ products:
 - category: Product
   compression: zip
   description: Predicted MS-MS Spectra data from FooDB
+  format: mixed
   id: foodb.data.predicted_msms
   name: FooDB Predicted MS-MS Spectra
   original_source:
@@ -244,6 +248,7 @@ products:
 - category: Product
   compression: zip
   description: NMR Spectra data from FooDB
+  format: mixed
   id: foodb.data.nmr
   name: FooDB NMR Spectra
   original_source:
@@ -258,6 +263,7 @@ products:
 - category: Product
   compression: zip
   description: Free Induction Decay (FID) files from FooDB
+  format: mixed
   id: foodb.data.fid
   name: FooDB FID Files
   original_source:
@@ -274,6 +280,7 @@ products:
 - category: Product
   compression: zip
   description: Image files of compounds, foods, and chemical structures
+  format: mixed
   id: foodb.data.images
   name: FooDB Image Files
   original_source:
@@ -288,6 +295,7 @@ products:
 - category: Product
   compression: zip
   description: Experimental C-MS peak lists from FooDB.
+  format: mixed
   id: foodb.data.experimental_cms_peak_lists
   name: FooDB Experimental C-MS Peak Lists
   original_source:
@@ -302,6 +310,7 @@ products:
 - category: Product
   compression: zip
   description: Predicted C-MS peak lists from FooDB.
+  format: mixed
   id: foodb.data.predicted_cms_peak_lists
   name: FooDB Predicted C-MS Peak Lists
   original_source:
@@ -316,6 +325,7 @@ products:
 - category: Product
   compression: zip
   description: Experimental MS-MS peak lists from FooDB.
+  format: mixed
   id: foodb.data.experimental_msms_peak_lists
   name: FooDB Experimental MS-MS Peak Lists
   original_source:
@@ -330,6 +340,7 @@ products:
 - category: Product
   compression: zip
   description: Predicted MS-MS peak lists from FooDB.
+  format: mixed
   id: foodb.data.predicted_msms_peak_lists
   name: FooDB Predicted MS-MS Peak Lists
   original_source:
@@ -344,6 +355,7 @@ products:
 - category: Product
   compression: zip
   description: NMR peak lists from FooDB.
+  format: mixed
   id: foodb.data.nmr_peak_lists
   name: FooDB NMR Peak Lists
   original_source:

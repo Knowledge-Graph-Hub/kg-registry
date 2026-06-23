@@ -16,7 +16,7 @@ domains:
 - biological systems
 homepage_url: https://glygen.org/
 id: glygen
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -25,6 +25,7 @@ name: GlyGen
 products:
 - category: GraphicalInterface
   description: Web interface for exploring GlyGen data
+  format: http
   id: glygen.site
   is_public: true
   name: GlyGen Website
@@ -34,6 +35,7 @@ products:
   product_url: https://glygen.org/
 - category: ProgrammingInterface
   description: RESTful API for accessing GlyGen data
+  format: http
   id: glygen.api
   is_public: true
   name: GlyGen API

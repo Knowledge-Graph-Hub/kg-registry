@@ -27,6 +27,7 @@ name: BioBricks PubChem Annotations
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for BioBricks PubChem Annotations
+  format: http
   id: biobricks-pubchem-annotations.sparql
   name: BioBricks PubChem Annotations SPARQL
   original_source:
@@ -43,7 +44,7 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/pubchem-annotations-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 BioBricks PubChem Annotations
 

@@ -22,7 +22,7 @@ domains:
 homepage_url: https://github.com/ncit-obo-org/ncit-obo-edition
 id: ncit
 infores_id: ncit
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -672,7 +672,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
-publications: []
+publications:
+- authors:
+  - Nicholas Sioutos
+  - Sherri de Coronado
+  - Margaret W. Haber
+  - Frank W. Hartel
+  - Wen-Ling Shaiu
+  - Lawrence W. Wright
+  doi: 10.1016/j.jbi.2006.02.013
+  id: https://www.ncbi.nlm.nih.gov/pubmed/16697710
+  journal: J Biomed Inform
+  preferred: true
+  title: 'NCI Thesaurus: a semantic model integrating cancer-related clinical and
+    molecular information'
+  year: '2007'
 repository: https://github.com/ncit-obo-org/ncit-obo-edition
 ---
 ## Description

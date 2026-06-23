@@ -25,7 +25,7 @@ domains:
 - systems biology
 homepage_url: https://research.bioinformatics.udel.edu/ProKN/
 id: prokn
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Protein Knowledge Network
 products:
@@ -1288,6 +1288,7 @@ products:
   product_url: https://research.bioinformatics.udel.edu/ProKN/mcp
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for Protein Knowledge Network
+  format: http
   id: prokn.tpf
   name: Protein Knowledge Network TPF
   original_source:
@@ -1296,6 +1297,7 @@ products:
   product_url: https://apps.okn.us/ldf/prokn
 - category: ProgrammingInterface
   description: SPARQL endpoint for Protein Knowledge Network
+  format: http
   id: prokn.sparql
   name: Protein Knowledge Network SPARQL
   original_source:

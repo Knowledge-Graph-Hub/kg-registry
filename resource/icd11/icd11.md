@@ -16,7 +16,7 @@ domains:
 - biomedical
 homepage_url: https://icd.who.int/en
 id: icd11
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: ICD-11
 products:
@@ -367,6 +367,19 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Harrison JE
+  - Weber S
+  - Jakob R
+  - Chute CG
+  doi: 10.1186/s12911-021-01534-6
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34753471
+  journal: BMC Med Inform Decis Mak
+  preferred: true
+  title: 'ICD-11: an international classification of diseases for the twenty-first
+    century'
+  year: '2021'
 ---
 # ICD-11
 

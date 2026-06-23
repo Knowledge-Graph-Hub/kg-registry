@@ -20,7 +20,7 @@ domains:
 - genomics
 homepage_url: https://www.internationalgenome.org/
 id: 1000genomes
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.internationalgenome.org/IGSR_disclaimer
@@ -125,6 +125,19 @@ products:
     source: phosphositeplus
   - relation_type: prov:wasDerivedFrom
     source: tcga
+publications:
+- authors:
+  - Fairley S
+  - Lowy-Gallego E
+  - Perry E
+  - Flicek P
+  doi: 10.1093/nar/gkz836
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31584097
+  journal: Nucleic Acids Res
+  preferred: true
+  title: The International Genome Sample Resource (IGSR) collection of open human
+    genomic variation resources
+  year: '2020'
 taxon:
 - NCBITaxon:9606
 ---

@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/gwas/
 id: gwascatalog
 infores_id: gwas-catalog
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use
@@ -730,6 +730,7 @@ products:
     source: kg-jensenlab-diseases
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:
@@ -1992,6 +1993,44 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Sollis E
+  - Mosaku A
+  - Abid A
+  - Buniello A
+  - Cerezo M
+  - Gil L
+  - Groza T
+  - Güneş O
+  - Hall P
+  - Hayhurst J
+  - Ibrahim A
+  - Ji Y
+  - John S
+  - Lewis E
+  - MacArthur JAL
+  - McMahon A
+  - Osumi-Sutherland D
+  - Panoutsopoulou K
+  - Pendlington Z
+  - Ramachandran S
+  - Stefancsik R
+  - Stewart J
+  - Whetzel P
+  - Wilson R
+  - Hindorff L
+  - Cunningham F
+  - Lambert SA
+  - Inouye M
+  - Parkinson H
+  - Harris LW
+  doi: 10.1093/nar/gkac1010
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36350656
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'The NHGRI-EBI GWAS Catalog: knowledgebase and deposition resource'
+  year: '2023'
 ---
 ## Overview
 

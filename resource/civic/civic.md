@@ -22,7 +22,7 @@ domains:
 homepage_url: https://civicdb.org/
 id: civic
 infores_id: civic
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -32,6 +32,7 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and curating content
     in the CIViC database.
+  format: http
   id: civic.site
   name: CIViC Web Interface
   original_source:
@@ -40,6 +41,7 @@ products:
   product_url: https://civicdb.org/
 - category: ProgrammingInterface
   description: GraphQL API for programmatic access to the CIViC database.
+  format: http
   id: civic.api.v2
   is_public: true
   name: CIViC GraphQL API (V2)
@@ -50,6 +52,7 @@ products:
 - category: ProgrammingInterface
   description: REST API for programmatic access to the CIViC database (deprecated
     but still accessible).
+  format: http
   id: civic.api.v1
   is_public: true
   name: CIViC REST API (V1 - Deprecated)

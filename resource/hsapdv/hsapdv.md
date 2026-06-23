@@ -18,7 +18,8 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
 id: hsapdv
-last_modified_date: '2026-04-15T00:00:00Z'
+infores_id: hsapdv
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

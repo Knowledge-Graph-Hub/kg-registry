@@ -14,7 +14,7 @@ domains:
 homepage_url: https://www.nlm.nih.gov/mesh/meshhome.html
 id: mesh
 infores_id: mesh
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html
@@ -542,43 +542,6 @@ products:
   warnings:
   - Athena mapping exports are accessed through the authenticated Athena web application;
     stable direct public file URLs are not exposed.
-- category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  format: mixed
-  id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cheminf
-  - relation_type: prov:hadPrimarySource
-    source: chemont
-  - relation_type: prov:hadPrimarySource
-    source: cito
-  - relation_type: prov:hadPrimarySource
-    source: dc
-  - relation_type: prov:hadPrimarySource
-    source: fabio
-  - relation_type: prov:hadPrimarySource
-    source: forum
-  - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: pubchem
-  - relation_type: prov:hadPrimarySource
-    source: pubmed
-  - relation_type: prov:hadPrimarySource
-    source: skos
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
-    out'
-  - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
-    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1216,6 +1179,7 @@ products:
   product_url: https://het.io/search
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:
@@ -1634,7 +1598,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: predict
-  product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
+  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/
   secondary_source:
   - relation_type: prov:used
     source: drugbank
@@ -1642,13 +1606,7 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  warnings: []
 - category: GraphProduct
   description: Source CSV tables for AcuKG, including acupoint therapeutic actions,
     indications, anatomy relationships, clinical trial links, and PubMed links.

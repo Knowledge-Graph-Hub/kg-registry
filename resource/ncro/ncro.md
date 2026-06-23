@@ -19,7 +19,7 @@ domains:
 - general
 homepage_url: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
 id: ncro
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,7 +38,35 @@ products:
   - source: ncro
     relation_type: prov:hadPrimarySource
 repository: https://github.com/OmniSearch/ncro
-publications: []
+publications:
+- authors:
+  - Jingshan Huang
+  - Karen Eilbeck
+  - Barry Smith
+  - Judith A. Blake
+  - Dejing Dou
+  - Weili Huang
+  - Darren A. Natale
+  - Alan Ruttenberg
+  - Jun Huan
+  - Michael T. Zimmermann
+  - Guoqian Jiang
+  - Yu Lin
+  - Bin Wu
+  - Harrison J. Strachan
+  - Yongqun He
+  - Shaojie Zhang
+  - Xiaowei Wang
+  - Zixing Liu
+  - Glen M. Borchert
+  - Ming Tan
+  doi: 10.1186/s13326-016-0066-0
+  id: https://www.ncbi.nlm.nih.gov/pubmed/27152146
+  journal: J Biomed Semantics
+  preferred: true
+  title: 'The Non-Coding RNA Ontology (NCRO): a comprehensive resource for the unification
+    of non-coding RNA biology'
+  year: '2016'
 ---
 ## Description
 

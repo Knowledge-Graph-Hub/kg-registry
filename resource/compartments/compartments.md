@@ -11,7 +11,7 @@ domains:
 - systems biology
 - biological systems
 id: compartments
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -105,6 +105,7 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring protein subcellular localization evidence
     across integrated sources.
+  format: http
   id: compartments.portal
   name: COMPARTMENTS Portal
   original_source:
@@ -1285,5 +1286,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Binder JX
+  - Pletscher-Frankild S
+  - Tsafou K
+  - Stolte C
+  - O'Donoghue SI
+  - Schneider R
+  - Jensen LJ
+  doi: 10.1093/database/bau012
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24573882
+  journal: Database (Oxford)
+  preferred: true
+  title: 'COMPARTMENTS: unification and visualization of protein subcellular localization
+    evidence'
+  year: '2014'
 ---
 # COMPARTMENTS

@@ -21,7 +21,7 @@ domains:
 homepage_url: https://loinc.org/
 id: loinc
 infores_id: loinc
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://loinc.org/license/
@@ -79,6 +79,7 @@ products:
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
     development (CC-BY 4.0 licensed document)
+  format: http
   id: loinc.principles
   name: LOINC Principles Document
   original_source:

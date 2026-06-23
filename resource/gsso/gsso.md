@@ -21,7 +21,7 @@ domains:
 - organisms
 homepage_url: https://gsso.research.cchmc.org/
 id: gsso
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.apache.org/licenses/LICENSE-2.0
@@ -59,7 +59,17 @@ products:
   - source: gsso
     relation_type: prov:hadPrimarySource
 repository: https://github.com/Superraptor/GSSO
-publications: []
+publications:
+- authors:
+  - Kronk CA
+  - Dexheimer JW
+  doi: 10.1093/jamia/ocaa061
+  id: https://www.ncbi.nlm.nih.gov/pubmed/32548638
+  journal: J Am Med Inform Assoc
+  preferred: true
+  title: 'Development of the Gender, Sex, and Sexual Orientation ontology: Evaluation
+    and workflow'
+  year: '2020'
 ---
 ## Description
 

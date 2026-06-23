@@ -27,6 +27,7 @@ name: BiomarkerKB KG
 products:
 - category: GraphicalInterface
   description: Web interface to explore and query the Biomarker Knowledge Graph
+  format: http
   id: biomarkerkg.site
   name: BKG Explorer
   original_source:
@@ -184,7 +185,7 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/MaayanLab/BiomarkerKG
 creation_date: '2025-05-04T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 collection:
 - okn
 ---

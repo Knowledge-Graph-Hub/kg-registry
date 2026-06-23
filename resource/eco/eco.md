@@ -19,7 +19,8 @@ domains:
 - general
 homepage_url: https://www.evidenceontology.org
 id: eco
-last_modified_date: '2026-06-05T00:00:00Z'
+infores_id: eco
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

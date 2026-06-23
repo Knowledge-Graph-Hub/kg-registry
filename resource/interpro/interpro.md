@@ -22,7 +22,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/interpro/
 id: interpro
 infores_id: interpro
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -41,6 +41,7 @@ products:
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/interpro/api/
   description: RESTful API for programmatic access to InterPro data
+  format: http
   id: interpro.api
   is_public: true
   name: InterPro API

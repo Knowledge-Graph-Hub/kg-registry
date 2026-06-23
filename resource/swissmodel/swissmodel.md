@@ -9,7 +9,7 @@ domains:
 - biological systems
 homepage_url: https://swissmodel.expasy.org/
 id: swissmodel
-last_modified_date: '2026-02-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: SWISS-MODEL
 products:
@@ -737,6 +737,26 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+publications:
+- authors:
+  - Waterhouse A
+  - Bertoni M
+  - Bienert S
+  - Studer G
+  - Tauriello G
+  - Gumienny R
+  - Heer FT
+  - de Beer TAP
+  - Rempfer C
+  - Bordoli L
+  - Lepore R
+  - Schwede T
+  doi: 10.1093/nar/gky427
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29788355
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'SWISS-MODEL: homology modelling of protein structures and complexes'
+  year: '2018'
 synonyms:
 - SWISS-MODEL
 - SWISSMODEL

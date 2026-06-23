@@ -18,7 +18,7 @@ domains:
 - pharmacology
 - genomics
 - phenotype
-homepage_url: https://nlp.case.edu/public/data/GPKG-Predict/
+homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 id: kg-predict
 last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
@@ -68,7 +68,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/code/
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
     to URL'
@@ -87,7 +87,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 17402
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/Raw_Data.docx
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/Raw_Data.docx
 - category: Product
   description: Alzheimer's disease case study drug repurposing predictions
   format: csv
@@ -97,7 +97,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 44034
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: clinicaltrialsgov
@@ -111,7 +111,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 1789
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/ad_nct_evidence.csv
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/ad_nct_evidence.csv
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: clinicaltrialsgov

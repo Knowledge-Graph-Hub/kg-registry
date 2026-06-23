@@ -17,7 +17,7 @@ domains:
 - genomics
 homepage_url: https://www.alliancegenome.org/
 id: alliance
-last_modified_date: '2025-09-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.alliancegenome.org/privacy-warranty-licensing
@@ -37,6 +37,7 @@ products:
 - category: ProgrammingInterface
   description: REST/JSON API providing programmatic access to integrated gene, orthology,
     phenotype, disease, expression, and variant endpoints
+  format: http
   id: alliance.api
   is_public: true
   name: Alliance API
@@ -56,6 +57,7 @@ products:
 - category: GraphicalInterface
   description: AllianceMine instance (InterMine-based) enabling advanced query building
     over integrated genomic data
+  format: http
   id: alliance.mine
   name: AllianceMine
   original_source:
@@ -65,6 +67,7 @@ products:
 - category: GraphicalInterface
   description: JBrowse 2 genome browser instance for interactive visualization of
     genomes, annotations, and variants across species
+  format: http
   id: alliance.jbrowse2
   name: Alliance JBrowse 2
   original_source:
@@ -74,6 +77,7 @@ products:
 - category: GraphicalInterface
   description: Textpresso literature mining interface for full-text and ontology term
     powered searches across curated publications
+  format: http
   id: alliance.textpresso
   name: Alliance Textpresso
   original_source:

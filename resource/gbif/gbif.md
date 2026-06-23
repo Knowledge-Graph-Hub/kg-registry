@@ -21,7 +21,7 @@ domains:
 homepage_url: https://www.gbif.org/
 id: gbif
 infores_id: gbif
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -60,7 +60,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gbif
-  product_url: https://api.gbif.org/maps/
+  product_url: https://api.gbif.org/v2/map/
 - category: Product
   compression: zip
   description: Darwin Core Archive format occurrence downloads from 81,000+ datasets
@@ -167,7 +167,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  product_url: https://api.mangal.io/
+  product_url: https://mangal.io/api/v2/
   secondary_source:
   - relation_type: prov:used
     source: catalogue-of-life
@@ -175,8 +175,6 @@ products:
     source: gbif
   - relation_type: prov:used
     source: itis
-  warnings:
-  - Host api.mangal.io was not resolvable when checked on 2026-06-02.
 - category: DocumentationProduct
   description: API documentation, user guides, and data model specification
   format: http

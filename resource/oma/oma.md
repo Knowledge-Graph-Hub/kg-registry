@@ -25,7 +25,7 @@ domains:
 - organisms
 homepage_url: https://omabrowser.org/
 id: oma
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -75,17 +75,6 @@ products:
   warnings: []
 - category: Product
   compression: gzip
-  description: OMA orthology groups in OrthoXML format
-  format: xml
-  id: oma.groups.orthoxml
-  name: OMA Groups (OrthoXML)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: oma
-  product_url: https://omabrowser.org/All/oma-groups.orthoXML.xml.gz
-  warnings: []
-- category: Product
-  compression: gzip
   description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
   format: xml
   id: oma.hogs.orthoxml
@@ -94,17 +83,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: oma
   product_url: https://omabrowser.org/All/oma-hogs.orthoXML.gz
-  warnings: []
-- category: Product
-  compression: gzip
-  description: Pairwise orthologs in tab-separated text format
-  format: tsv
-  id: oma.pairs.txt
-  name: OMA Pairwise Orthologs
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: oma
-  product_url: https://omabrowser.org/All/oma-pairs.txt.gz
   warnings: []
 - category: Product
   compression: gzip
@@ -119,50 +97,6 @@ products:
   warnings: []
 - category: Product
   compression: gzip
-  description: cDNA sequences for Eukaryotic genomes in FASTA format
-  format: fasta
-  id: oma.cdna.eukaryotes.fasta
-  name: OMA cDNA Sequences (Eukaryotes)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: oma
-  product_url: https://omabrowser.org/All/eukaryotes.cdna.fa.gz
-  warnings: []
-- category: Product
-  compression: gzip
-  description: cDNA sequences for Prokaryotic genomes in FASTA format
-  format: fasta
-  id: oma.cdna.prokaryotes.fasta
-  name: OMA cDNA Sequences (Prokaryotes)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: oma
-  product_url: https://omabrowser.org/All/prokaryotes.cdna.fa.gz
-  warnings: []
-- category: Product
-  compression: gzip
-  description: cDNA sequences for viral genomes in FASTA format
-  format: fasta
-  id: oma.cdna.viruses.fasta
-  name: OMA cDNA Sequences (Viruses)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: oma
-  product_url: https://omabrowser.org/All/viruses.cdna.fa.gz
-  warnings: []
-- category: Product
-  compression: targz
-  description: Protein sequences in SeqXML format
-  format: xml
-  id: oma.proteins.seqxml
-  name: OMA Protein Sequences (SeqXML)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: oma
-  product_url: https://omabrowser.org/All/oma-seqs.seqxml.tgz
-  warnings: []
-- category: Product
-  compression: gzip
   description: Protein annotations in text format
   format: txt
   id: oma.protein-annotations.txt
@@ -173,24 +107,16 @@ products:
   product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
   warnings: []
 - category: Product
-  description: OMA Browser database in HDF5 format
+  description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
+    has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
+    Viridiplantae.h5); see the current download page.
   format: hdf5
   id: oma.hdf5
   name: OMA Browser Database (HDF5)
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/All/OmaServer.h5
-  warnings: []
-- category: Product
-  description: Suffix index for the OMA Browser HDF5 database
-  format: mixed
-  id: oma.hdf5.index
-  name: OMA Browser Database Index
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: oma
-  product_url: https://omabrowser.org/All/OmaServer.h5.idx
+  product_url: https://omabrowser.org/oma/current/
   warnings: []
 - category: Product
   compression: targz

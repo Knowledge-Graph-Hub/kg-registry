@@ -9,10 +9,10 @@ description: iRefIndex is a consolidated protein interaction database that aggre
 domains:
 - proteomics
 - biological systems
-homepage_url: https://irefindex.vib.be/wiki/index.php/iRefIndex
+homepage_url: https://irefindex.vib.be/
 id: irefindex
 infores_id: irefindex
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: iRefIndex
 products:
@@ -64,42 +64,6 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: irefindex
-- category: GraphicalInterface
-  description: Interactive web interface for exploring drug-disease networks with
-    probabilistic filtering and graph visualization
-  format: http
-  id: redrugs.web
-  name: ReDrugs Web Interface
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: redrugs
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: irefindex
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  product_url: http://redrugs.tw.rpi.edu/
-- category: ProgrammingInterface
-  description: SADI web services API for querying the knowledge graph including resource
-    search, interaction lookup, and network expansion
-  format: http
-  id: redrugs.api
-  name: ReDrugs API
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: redrugs
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: irefindex
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  product_url: http://redrugs.tw.rpi.edu/api/
 - category: GraphProduct
   compression: gzip
   description: HumanNet-XC v3 functional gene network extended by co-citation, distributed

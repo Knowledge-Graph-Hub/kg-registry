@@ -16,7 +16,7 @@ domains:
 homepage_url: https://www.ensembl.org
 id: ensembl
 infores_id: ensembl-gene
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.apache.org/licenses/LICENSE-2.0
@@ -26,6 +26,7 @@ products:
 - category: GraphicalInterface
   description: A web-based platform for browsing and analyzing vertebrate genomes,
     including gene annotations, comparative genomics, and variation data.
+  format: http
   id: ensembl.browser
   name: Ensembl Genome Browser
   original_source:
@@ -35,6 +36,7 @@ products:
 - category: GraphicalInterface
   description: A data mining tool that allows extraction of data without programming
     knowledge or understanding of the underlying database structure.
+  format: http
   id: ensembl.biomart
   name: BioMart
   original_source:
@@ -62,6 +64,7 @@ products:
   warnings: []
 - category: ProgrammingInterface
   description: Programmatic access to all Ensembl data using Perl scripts.
+  format: http
   id: ensembl.api.perl
   name: Ensembl Perl API
   original_source:
@@ -72,6 +75,7 @@ products:
 - category: ProgrammingInterface
   description: RESTful API that allows access to Ensembl data using various programming
     languages.
+  format: http
   id: ensembl.api.rest
   name: Ensembl REST API
   original_source:

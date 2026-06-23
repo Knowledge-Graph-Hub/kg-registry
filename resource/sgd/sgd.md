@@ -15,7 +15,7 @@ domains:
 homepage_url: https://www.yeastgenome.org/
 id: sgd
 infores_id: sgd
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Saccharomyces Genome Database
 products:
@@ -1141,6 +1141,7 @@ products:
 - category: GraphicalInterface
   description: Legacy PhosphoGRID web portal for searching experimentally verified
     in vivo yeast phosphorylation sites by ORF, gene name, or external identifier.
+  format: http
   id: phosphogrid.portal
   name: PhosphoGRID Web Portal
   original_source:
@@ -1416,6 +1417,36 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Cherry JM
+  - Hong EL
+  - Amundsen C
+  - Balakrishnan R
+  - Binkley G
+  - Chan ET
+  - Christie KR
+  - Costanzo MC
+  - Dwight SS
+  - Engel SR
+  - Fisk DG
+  - Hirschman JE
+  - Hitz BC
+  - Karra K
+  - Krieger CJ
+  - Miyasato SR
+  - Nash RS
+  - Park J
+  - Skrzypek MS
+  - Simison M
+  - Weng S
+  - Wong ED
+  doi: 10.1093/nar/gkr1029
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22110037
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Saccharomyces Genome Database: the genomics resource of budding yeast'
+  year: '2012'
 taxon:
 - NCBITaxon:4932
 ---

@@ -29,7 +29,7 @@ domains:
 - organisms
 homepage_url: https://www.ebi.ac.uk/gxa/home
 id: expressionatlas
-last_modified_date: '2025-11-10T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -58,15 +58,15 @@ products:
     source: expressionatlas
   product_url: https://www.ebi.ac.uk/gxa/sc
 - category: ProgrammingInterface
-  description: REST API for programmatic access to expression data, experiment metadata,
+  description: JSON web API for programmatic access to expression data, experiment metadata,
     and differential expression results
-  format: http
+  format: json
   id: expressionatlas.api
-  name: Expression Atlas REST API
+  name: Expression Atlas JSON Web API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
-  product_url: https://www.ebi.ac.uk/gxa/help/api.html
+  product_url: https://www.ebi.ac.uk/gxa/json/experiments
 - category: Product
   description: FTP archive containing processed expression data files, experiment
     metadata, and analysis results for bulk RNA-seq experiments

@@ -24,7 +24,8 @@ domains:
 - proteomics
 homepage_url: https://www.ebi.ac.uk/GOA/
 id: goa
-last_modified_date: '2026-06-02T00:00:00Z'
+infores_id: goa
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use

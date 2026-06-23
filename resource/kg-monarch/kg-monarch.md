@@ -25,7 +25,7 @@ description: The Monarch Initiative is an international consortium that leads ke
   components.
 domains:
 - biomedical
-homepage_url: https://kghub.org/kg-monarch/index.html
+homepage_url: https://monarchinitiative.org/kg/downloads
 id: kg-monarch
 last_modified_date: '2026-06-22T19:05:50Z'
 layout: resource_detail
@@ -1254,7 +1254,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-monarch
   product_file_size: 630460
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_disease_or_phenotypic_feature_association.all.tsv.gz
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_entity_to_disease_or_phenotypic_feature_association.all.tsv.gz
 - category: Product
   description: Chemical to pathway associations
   format: tsv
@@ -1264,7 +1264,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-monarch
   product_file_size: 2595240
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_pathway_association.all.tsv.gz
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_entity_to_pathway_association.all.tsv.gz
 - category: Product
   description: Correlated gene to disease associations
   format: tsv

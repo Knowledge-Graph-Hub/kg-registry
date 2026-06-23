@@ -30,7 +30,7 @@ fairsharing_id: FAIRsharing.3b36hk
 homepage_url: https://www.bindingdb.org/rwd/bind/index.jsp
 id: bindingdb
 infores_id: bindingdb
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.bindingdb.org/rwd/bind/info.jsp
@@ -288,6 +288,7 @@ products:
   warnings: []
 - category: ProgrammingInterface
   description: RESTful web services for programmatic access to BindingDB data
+  format: http
   id: bindingdb.api
   name: BindingDB RESTful API
   original_source:

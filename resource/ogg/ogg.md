@@ -18,7 +18,7 @@ domains:
   - biological systems
 homepage_url: https://bitbucket.org/hegroup/ogg
 id: ogg
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,7 +37,16 @@ products:
       - source: ogg
         relation_type: prov:hadPrimarySource
 repository: https://bitbucket.org/hegroup/ogg
-publications: []
+publications:
+  - authors:
+      - He Y
+      - Liu Y
+      - Zhao B
+    id: http://ceur-ws.org/Vol-1327/icbo2014_paper_23.pdf
+    journal: CEUR Workshop Proceedings
+    preferred: true
+    title: 'OGG: a Biological Ontology for Representing Genes and Genomes in Specific Organisms'
+    year: '2014'
 ---
 
 ## Description

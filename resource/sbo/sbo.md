@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/sbo/
 id: sbo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://opensource.org/licenses/Artistic-2.0
@@ -266,7 +266,41 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
-publications: []
+publications:
+- authors:
+  - Mélanie Courtot
+  - Nick Juty
+  - Christian Knüpfer
+  - Dagmar Waltemath
+  - Anna Zhukova
+  - Andreas Dräger
+  - Michel Dumontier
+  - Andrew Finney
+  - Martin Golebiewski
+  - Janna Hastings
+  - Stefan Hoops
+  - Sarah Keating
+  - Douglas B Kell
+  - Samuel Kerrien
+  - James Lawson
+  - Allyson Lister
+  - James Lu
+  - Rainer Machne
+  - Pedro Mendes
+  - Matthew Pocock
+  - Nicolas Rodriguez
+  - Alice Villeger
+  - Darren J Wilkinson
+  - Sarala Wimalaratne
+  - Camille Laibe
+  - Michael Hucka
+  - Nicolas Le Novère
+  doi: 10.1038/msb.2011.77
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
+  journal: Mol Syst Biol
+  preferred: true
+  title: Controlled vocabularies and semantics in systems biology
+  year: '2011'
 repository: https://github.com/EBI-BioModels/SBO
 ---
 ## Description

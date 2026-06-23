@@ -18,7 +18,7 @@ domains:
 homepage_url: https://cancer.sanger.ac.uk/cosmic
 id: cosmic
 infores_id: cosmic
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://cancer.sanger.ac.uk/cosmic/license
@@ -270,42 +270,6 @@ products:
     source: wikipathways
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-- category: GraphicalInterface
-  description: Interactive web interface for exploring drug-disease networks with
-    probabilistic filtering and graph visualization
-  format: http
-  id: redrugs.web
-  name: ReDrugs Web Interface
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: redrugs
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: irefindex
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  product_url: http://redrugs.tw.rpi.edu/
-- category: ProgrammingInterface
-  description: SADI web services API for querying the knowledge graph including resource
-    search, interaction lookup, and network expansion
-  format: http
-  id: redrugs.api
-  name: ReDrugs API
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: redrugs
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: irefindex
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  product_url: http://redrugs.tw.rpi.edu/api/
 - category: Product
   description: Unified BioMuta cancer mutation dataset produced by combining mutation
     records from TCGA, ICGC, CIViC, and COSMIC into a common field structure.
@@ -789,6 +753,40 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Tate JG
+  - Bamford S
+  - Jubb HC
+  - Sondka Z
+  - Beare DM
+  - Bindal N
+  - Boutselakis H
+  - Cole CG
+  - Creatore C
+  - Dawson E
+  - Fish P
+  - Harsha B
+  - Hathaway C
+  - Jupe SC
+  - Kok CY
+  - Noble K
+  - Ponting L
+  - Ramshaw CC
+  - Rye CE
+  - Speedy HE
+  - Stefancsik R
+  - Thompson SL
+  - Wang S
+  - Ward S
+  - Campbell PJ
+  - Forbes SA
+  doi: 10.1093/nar/gky1015
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30371878
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'COSMIC: the Catalogue Of Somatic Mutations In Cancer'
+  year: '2019'
 taxon:
 - NCBITaxon:9606
 warnings:

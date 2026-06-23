@@ -9,7 +9,7 @@ domains:
   - environment
 id: dsstoxdb
 infores_id: dsstoxdb
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -55,6 +55,18 @@ products:
       - source: dsstoxdb
         relation_type: prov:hadPrimarySource
     product_url: https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis
+publications:
+  - authors:
+      - Grulke CM
+      - Williams AJ
+      - Thillanadarajah I
+      - Richard AM
+    doi: 10.1016/j.comtox.2019.100096
+    id: https://pubmed.ncbi.nlm.nih.gov/33426407
+    journal: Comput Toxicol
+    preferred: true
+    title: 'EPA''s DSSTox database: History of development of a curated chemistry resource supporting computational toxicology research'
+    year: '2019'
 ---
 
 # Distributed Structure-Searchable Toxicity (DSSTox) Database

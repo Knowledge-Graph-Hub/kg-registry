@@ -19,7 +19,7 @@ domains:
 - systems biology
 homepage_url: https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53
 id: bactotraits
-last_modified_date: '2026-01-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -241,6 +241,23 @@ products:
     source: uniprot
   product_file_size: 4640682152
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
+publications:
+- authors:
+  - "C\xE9bron A"
+  - Zeghal E
+  - Usseglio-Polatera P
+  - Meyer A
+  - Bauda P
+  - Lemmel F
+  - Leyval C
+  - Maunoury-Danger F
+  doi: 10.1016/j.ecolind.2021.108047
+  id: https://doi.org/10.1016/j.ecolind.2021.108047
+  journal: Ecological Indicators
+  preferred: true
+  title: "BactoTraits – A functional trait database to evaluate how natural and\
+    \ man-induced changes influence the assembly of bacterial communities"
+  year: '2021'
 synonyms:
 - BactoTraits
 - Bacterial Traits Database

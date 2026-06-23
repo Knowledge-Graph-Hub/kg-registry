@@ -22,7 +22,7 @@ domains:
 - organisms
 homepage_url: https://github.com/ohmi-ontology/ohmi
 id: ohmi
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -40,8 +40,27 @@ products:
   original_source:
   - source: ohmi
     relation_type: prov:hadPrimarySource
+publications:
+- authors:
+  - He Y
+  - Wang H
+  - Zheng J
+  - Beiting DP
+  - Masci AM
+  - Yu H
+  - Liu K
+  - Wu J
+  - Curtis JL
+  - Smith B
+  - Alekseyenko AV
+  - Obeid JS
+  doi: 10.1186/s13326-019-0217-1
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31888755
+  journal: J Biomed Semantics
+  preferred: true
+  title: 'OHMI: the ontology of host-microbiome interactions'
+  year: '2019'
 repository: https://github.com/ohmi-ontology/ohmi
-publications: []
 ---
 ## Description
 

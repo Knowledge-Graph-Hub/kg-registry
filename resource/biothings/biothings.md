@@ -15,7 +15,7 @@ domains:
 - information technology
 homepage_url: https://biothings.io/
 id: biothings
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/Apache-2.0
@@ -25,6 +25,7 @@ products:
 - category: GraphicalInterface
   description: BioThings homepage describing the BioThings API ecosystem, major public
     APIs, SDK, Studio, and related community resources.
+  format: http
   id: biothings.portal
   name: BioThings Homepage
   original_source:
@@ -44,6 +45,7 @@ products:
 - category: DocumentationProduct
   description: BioThings API specifications describing common endpoints, versioning,
     HTTP methods, formats, and shared request parameters for BioThings APIs.
+  format: http
   id: biothings.api-specs
   name: BioThings API Specifications
   original_source:

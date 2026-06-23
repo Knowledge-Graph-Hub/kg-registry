@@ -27,6 +27,7 @@ name: BioBricks MeSH
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for BioBricks MeSH
+  format: http
   id: biobricks-mesh.sparql
   name: BioBricks MeSH SPARQL
   original_source:
@@ -43,7 +44,7 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/mesh-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 BioBricks MeSH
 

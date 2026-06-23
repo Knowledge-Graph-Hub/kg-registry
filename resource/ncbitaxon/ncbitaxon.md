@@ -20,7 +20,7 @@ domains:
 homepage_url: https://github.com/obophenotype/ncbitaxon
 id: ncbitaxon
 infores_id: ncbi-taxon
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -1344,7 +1344,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
-publications: []
+publications:
+- authors:
+  - Schoch CL
+  - Ciufo S
+  - Domrachev M
+  - Hotton CL
+  - Kannan S
+  - Khovanskaya R
+  - Leipe D
+  - Mcveigh R
+  - O'Neill K
+  - Robbertse B
+  - Sharma S
+  - Soussov V
+  - Sullivan JP
+  - Sun L
+  - Turner S
+  - Karsch-Mizrachi I
+  doi: 10.1093/database/baaa062
+  id: https://www.ncbi.nlm.nih.gov/pubmed/32761142
+  journal: Database (Oxford)
+  preferred: true
+  title: 'NCBI Taxonomy: a comprehensive update on curation, resources and tools'
+  year: '2020'
 repository: https://github.com/obophenotype/ncbitaxon
 ---
 ## Description

@@ -21,7 +21,7 @@ domains:
 - drug discovery
 homepage_url: https://chemicalchecker.com/
 id: chemicalchecker
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Chemical Checker
 products:
@@ -148,6 +148,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+publications:
+- authors:
+  - Duran-Frigola M
+  - Pauls E
+  - Guitart-Pla O
+  - Bertoni M
+  - Alcalde V
+  - Amat D
+  - Juan-Blanco T
+  - Aloy P
+  doi: 10.1038/s41587-020-0502-7
+  id: https://www.ncbi.nlm.nih.gov/pubmed/32440005
+  journal: Nat Biotechnol
+  preferred: true
+  title: Extending the small-molecule similarity principle to all levels of biology
+    with the Chemical Checker
+  year: '2020'
 repository: https://github.com/sbnb-irb/chemical-checker
 taxon:
 - NCBITaxon:9606

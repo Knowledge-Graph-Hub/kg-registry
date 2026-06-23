@@ -16,7 +16,7 @@ fairsharing_id: FAIRsharing.amcv1e
 homepage_url: https://www.genenames.org/
 id: hgnc
 infores_id: hgnc
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -148,15 +148,8 @@ products:
     source: hgnc
   - relation_type: prov:hadPrimarySource
     source: scibite
-  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
+  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2026-04-01.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
   format: sssom
@@ -2049,6 +2042,7 @@ products:
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:
@@ -3114,6 +3108,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Seal RL
+  - Braschi B
+  - Gray K
+  - Jones TEM
+  - Tweedie S
+  - Haim-Vilmovsky L
+  - Bruford EA
+  doi: 10.1093/nar/gkac888
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36243972
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Genenames.org: the HGNC resources in 2023'
+  year: '2023'
 repository: https://github.com/HGNC
 taxon:
 - NCBITaxon:9606

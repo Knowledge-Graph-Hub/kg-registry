@@ -22,7 +22,7 @@ domains:
 - precision medicine
 homepage_url: https://sennetconsortium.org/
 id: sennet
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: SenNet
 products:
@@ -283,6 +283,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+publications:
+- authors:
+  - SenNet Consortium
+  - Lee PJ
+  - Benz CC
+  - Blood P
+  - Börner K
+  - Campisi J
+  - Chen F
+  - Daldrup-Link H
+  - De Jager P
+  - Ding L
+  - Duncan FE
+  - Eickelberg O
+  - Fan R
+  - Finkel T
+  - Furman D
+  doi: 10.1038/s43587-022-00326-5
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36936385
+  journal: Nat Aging
+  preferred: true
+  title: NIH SenNet Consortium to map senescent cells throughout the human lifespan
+    to understand physiological health
+  year: '2022'
 synonyms:
 - SenNet
 - Cellular Senescence Network

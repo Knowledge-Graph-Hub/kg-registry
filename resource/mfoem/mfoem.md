@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/jannahastings/emotion-ontology
 id: mfoem
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,7 +37,18 @@ products:
       - source: mfoem
         relation_type: prov:hadPrimarySource
 repository: https://github.com/jannahastings/emotion-ontology
-publications: []
+publications:
+  - authors:
+      - Hastings J
+      - Ceusters W
+      - Smith B
+      - Mulligan K
+    doi: 10.1007/978-3-642-24279-3_14
+    id: https://doi.org/10.1007/978-3-642-24279-3_14
+    journal: Lecture Notes in Computer Science
+    preferred: true
+    title: 'The Emotion Ontology: Enabling Interdisciplinary Research in the Affective Sciences'
+    year: '2011'
 ---
 
 ## Description

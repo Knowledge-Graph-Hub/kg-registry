@@ -9,7 +9,7 @@ domains:
 - proteomics
 homepage_url: http://qptm.omicsbio.info/index.php
 id: qptm
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: qPTM
 products:
@@ -598,6 +598,25 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Yu K
+  - Wang Y
+  - Zheng Y
+  - Liu Z
+  - Zhang Q
+  - Wang S
+  - Zhao Q
+  - Zhang X
+  - Li X
+  - Xu RH
+  - Liu ZX
+  doi: 10.1093/nar/gkac820
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36165955
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'qPTM: an updated database for PTM dynamics in human, mouse, rat and yeast'
+  year: '2023'
 ---
 # qPTM
 

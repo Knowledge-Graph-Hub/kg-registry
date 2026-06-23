@@ -9,7 +9,7 @@ domains:
 - biological systems
 homepage_url: https://compath.scai.fraunhofer.de/
 id: compath
-last_modified_date: '2026-02-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: ComPath
 products:
@@ -354,6 +354,20 @@ products:
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+publications:
+- authors:
+  - Domingo-Fernández D
+  - Hoyt CT
+  - Bobis-Álvarez C
+  - Marín-Llaó J
+  - Hofmann-Apitius M
+  doi: 10.1038/s41540-018-0078-8
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30564458
+  journal: NPJ Syst Biol Appl
+  preferred: true
+  title: 'ComPath: an ecosystem for exploring, analyzing, and curating mappings across
+    pathway databases'
+  year: '2019'
 synonyms:
 - ComPath
 ---

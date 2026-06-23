@@ -13,7 +13,7 @@ domains:
 - general
 homepage_url: https://sparontologies.github.io/fabio/current/fabio.html
 id: fabio
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: FABIO
 products:
@@ -29,6 +29,7 @@ products:
   product_url: http://purl.org/spar/fabio.ttl
 - category: DocumentationProduct
   description: FABIO ontology documentation, specification, and usage guidelines
+  format: http
   id: fabio.documentation
   name: FABIO Documentation
   original_source:
@@ -91,6 +92,16 @@ products:
     source: openbiodiv
   product_file_size: 8176
   product_url: https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl
+publications:
+- authors:
+  - Peroni S
+  - Shotton D
+  doi: 10.1016/j.websem.2012.08.001
+  id: https://doi.org/10.1016/j.websem.2012.08.001
+  journal: Journal of Web Semantics
+  preferred: true
+  title: 'FaBiO and CiTO: ontologies for describing bibliographic resources and citations'
+  year: '2012'
 repository: https://github.com/SPAROntologies/fabio
 ---
 FABIO

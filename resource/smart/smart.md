@@ -10,7 +10,7 @@ domains:
 - biological systems
 homepage_url: https://smart.embl.de/
 id: smart
-last_modified_date: '2026-02-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: SMART
 products:
@@ -1013,6 +1013,17 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Letunic I
+  - Khedkar S
+  - Bork P
+  doi: 10.1093/nar/gkaa937
+  id: https://www.ncbi.nlm.nih.gov/pubmed/33104802
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'SMART: recent updates, new developments and status in 2020'
+  year: '2021'
 synonyms:
 - SMART
 - Simple Modular Architecture Research Tool

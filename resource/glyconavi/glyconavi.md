@@ -15,7 +15,7 @@ domains:
   - proteomics
 homepage_url: https://glyconavi.org/
 id: glyconavi
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: GlycoNAVI
 products:

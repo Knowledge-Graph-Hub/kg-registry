@@ -15,26 +15,26 @@ contacts:
       - contact_type: url
         value: https://tw.rpi.edu/
 creation_date: '2025-11-22T00:00:00Z'
-description: ReDrugs is a probabilistic knowledge graph for drug repositioning that integrates drug-target, protein-protein, and disease-gene interactions from multiple databases. The system uses evidence-weighted nanopublications to assign confidence scores to interactions based on experimental methods and manual curation. ReDrugs was designed to identify novel drug candidates for diseases, particularly melanoma, by filtering and analyzing systems biology networks with probabilistic methods. The platform included both a web interface and API for exploring molecular interaction networks. The web interface appears to be no longer accessible.
+description: ReDrugs is a probabilistic knowledge graph for drug repositioning that integrates drug-target, protein-protein, and disease-gene interactions from multiple databases. The system uses evidence-weighted nanopublications to assign confidence scores to interactions based on experimental methods and manual curation. ReDrugs was designed to identify novel drug candidates for diseases, particularly melanoma, by filtering and analyzing systems biology networks with probabilistic methods. The platform included both a web interface and API for exploring molecular interaction networks. The hosted web interface, API, and data archive (formerly at redrugs.tw.rpi.edu and data.rpi.edu) are no longer accessible; the source code remains available on GitHub.
 domains:
   - drug discovery
   - systems biology
   - biomedical
   - pharmacology
-homepage_url: http://redrugs.tw.rpi.edu/
+homepage_url: https://github.com/dlmcguinness/redrugs
 id: redrugs
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-06-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: ReDrugs
 products:
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring drug-disease networks with probabilistic filtering and graph visualization
-    id: redrugs.web
-    format: http
-    name: ReDrugs Web Interface
+  - category: Product
+    description: ReDrugS source code (TurboGears/SADI web application and probabilistic nanopublication pipeline). The hosted service it ran (redrugs.tw.rpi.edu) is no longer available.
+    id: redrugs.source
+    format: python
+    name: ReDrugs Source Code
     original_source:
       - source: redrugs
         relation_type: prov:hadPrimarySource
@@ -46,24 +46,7 @@ products:
         relation_type: prov:hadPrimarySource
       - source: cosmic
         relation_type: prov:hadPrimarySource
-    product_url: http://redrugs.tw.rpi.edu/
-  - category: ProgrammingInterface
-    description: SADI web services API for querying the knowledge graph including resource search, interaction lookup, and network expansion
-    id: redrugs.api
-    format: http
-    name: ReDrugs API
-    original_source:
-      - source: redrugs
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: irefindex
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: cosmic
-        relation_type: prov:hadPrimarySource
-    product_url: http://redrugs.tw.rpi.edu/api/
+    product_url: https://github.com/dlmcguinness/redrugs
 publications:
   - authors:
       - McCusker JP
@@ -77,7 +60,7 @@ publications:
     journal: PeerJ Computer Science
     title: Finding melanoma drugs through a probabilistic knowledge graph
     year: '2017'
-repository: https://data.rpi.edu/xmlui/handle/10833/1760
+repository: https://github.com/dlmcguinness/redrugs
 synonyms:
   - ReDrugS
 taxon:
@@ -94,7 +77,7 @@ The platform's key innovation is its use of nanopublications with evidence-based
 
 ReDrugs was successfully applied to melanoma drug discovery, identifying 25 high-quality drug candidates with a joint probability ≥0.93 and ≤3 interaction steps from the disease. The system validated well, with nearly all predicted drugs having evidence from clinical trials or experimental studies.
 
-**Note**: The ReDrugs web interface and API appear to be no longer accessible as of 2025.
+**Note**: The hosted ReDrugs web interface, API, and data archive (formerly at redrugs.tw.rpi.edu and data.rpi.edu) are no longer accessible as of 2025. The source code remains available at [github.com/dlmcguinness/redrugs](https://github.com/dlmcguinness/redrugs).
 
 ## Key Features
 

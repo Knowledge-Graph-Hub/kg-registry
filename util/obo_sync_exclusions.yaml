@@ -1,0 +1,36 @@
+# OBO Foundry sync product exclusions
+#
+# The OBO Foundry registry advertises a `products` list for each ontology, and
+# util/sync_obo_foundry.py mirrors that list into the KG-Registry resource page.
+# Some advertised products are not actually published by the ontology (e.g.
+# -base / -full / -simple release variants that the ontology declares but does
+# not build), so their PURLs 404 and show up as broken links on the data-quality
+# dashboard. Deleting them by hand does not stick, because the next sync re-adds
+# any advertised product that is missing from the page.
+#
+# List those unwanted product ids here. The sync will never (re-)add a product
+# whose id appears under its ontology, and will strip it if present.
+#
+# Keyed by ontology id (lower-case); values are lists of product ids to suppress.
+# Verify with curl before adding -- only suppress products whose PURLs genuinely
+# do not resolve.
+exclude_products:
+  pcl:
+    - pcl.json
+    - pcl-base.owl
+    - pcl-base.obo
+    - pcl-base.json
+    - pcl-full.owl
+    - pcl-full.obo
+    - pcl-full.json
+    - pcl-simple.owl
+    - pcl-simple.obo
+    - pcl-simple.json
+  t4fs:
+    - t4fs-community.owl
+    - t4fs-community.obo
+    - t4fs-community.json
+  prefer:
+    - prefer.prefer-basic.owl
+    - prefer.prefer-basic.obo
+    - prefer.prefer-basic.json

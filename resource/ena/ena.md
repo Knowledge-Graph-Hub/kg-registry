@@ -10,7 +10,7 @@ domains:
 - genomics
 - biological systems
 id: ena
-last_modified_date: '2025-10-10T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: European Nucleotide Archive (ENA)
 products:
@@ -730,6 +730,45 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Burgin J
+  - Ahamed A
+  - Cummins C
+  - Devraj R
+  - Gueye K
+  - Gupta D
+  - Gupta V
+  - Haseeb M
+  - Ihsan M
+  - Ivanov E
+  - Jayathilaka S
+  - Balavenkataraman Kadhirvelu V
+  - Kumar M
+  - Lathi A
+  - Leinonen R
+  - Mansurova M
+  - McKinnon J
+  - O'Cathail C
+  - Paupério J
+  - Pesant S
+  - Rahman N
+  - Rinck G
+  - Selvakumar S
+  - Suman S
+  - Vijayaraja S
+  - Waheed Z
+  - Woollard P
+  - Yuan D
+  - Zyoud A
+  - Burdett T
+  - Cochrane G
+  doi: 10.1093/nar/gkac1051
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36399492
+  journal: Nucleic Acids Res
+  preferred: true
+  title: The European Nucleotide Archive in 2022
+  year: '2023'
 ---
 # European Nucleotide Archive (ENA)
 

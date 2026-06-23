@@ -31,6 +31,7 @@ name: BioBricks ICE
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for BioBricks ICE
+  format: http
   id: biobricks-ice.sparql
   name: BioBricks ICE SPARQL
   original_source:
@@ -47,7 +48,7 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 BioBricks ICE
 

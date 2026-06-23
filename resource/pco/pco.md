@@ -18,7 +18,7 @@ domains:
   - environment
 homepage_url: https://github.com/PopulationAndCommunityOntology/pco
 id: pco
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -37,7 +37,40 @@ products:
       - source: pco
         relation_type: prov:hadPrimarySource
 repository: https://github.com/PopulationAndCommunityOntology/pco
-publications: []
+publications:
+  - authors:
+      - Walls RL
+      - Deck J
+      - Guralnick R
+      - Baskauf S
+      - Beaman R
+      - Blum S
+      - Bowers S
+      - Buttigieg PL
+      - Davies N
+      - Endresen D
+      - Gandolfo MA
+      - Hanner R
+      - Janning A
+      - Krishtalka L
+      - Matsunaga A
+      - Midford P
+      - Morrison N
+      - Tuama ÉÓ
+      - Schildhauer M
+      - Smith B
+      - Stucky BJ
+      - Thomer A
+      - Wieczorek J
+      - Whitacre J
+      - Wooley J
+    doi: 10.1371/journal.pone.0089606
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24595056
+    journal: PLoS One
+    preferred: true
+    title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction
+      to the Biological Collections Ontology and Related Ontologies'
+    year: '2014'
 ---
 
 ## Description

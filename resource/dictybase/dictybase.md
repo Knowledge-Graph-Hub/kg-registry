@@ -14,7 +14,7 @@ domains:
 homepage_url: https://dictybase.dev/
 id: dictybase
 infores_id: dictybase
-last_modified_date: '2025-10-07T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: dictyBase
 products:
@@ -56,6 +56,7 @@ products:
   product_url: https://dictybase.dev/graphql
 - category: GraphicalInterface
   description: Web-based browser for exploring Dictyostelium genomes and annotations
+  format: http
   id: dictybase.genome.browser
   name: dictyBase Genome Browser
   original_source:
@@ -1631,6 +1632,20 @@ products:
     source: obo-db-ingest
   product_file_size: 197677
   product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.tsv
+publications:
+- authors:
+  - Basu S
+  - Fey P
+  - Pandit Y
+  - Dodson R
+  - Kibbe WA
+  - Chisholm RL
+  doi: 10.1093/nar/gks1064
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23172289
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'dictyBase 2013: integrating multiple Dictyostelid species'
+  year: '2013'
 repository: https://github.com/dictybase
 taxon:
 - NCBITaxon:44689

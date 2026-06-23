@@ -195,3 +195,37 @@ def test_transform_obo_to_kg_registry_emits_publication_ids(tmp_path):
         {"id": "doi:10.1093/nar/gkaf1271", "title": "DOI paper"},
         {"id": "PMID:10802651", "title": "Numeric PMID"},
     ]
+
+
+def test_merge_products_excludes_configured_product_ids(tmp_path):
+    """Products listed in the exclusions config must never be (re-)added."""
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    # Inject an exclusion rather than depending on the shipped config file.
+    syncer.product_exclusions = {"pcl": {"pcl.json", "pcl-base.owl"}}
+
+    existing = [{"id": "pcl.owl"}, {"id": "pcl.obo"}]
+    # The OBO registry advertises variant products that do not resolve.
+    synced = [
+        {"id": "pcl.owl"},
+        {"id": "pcl.obo"},
+        {"id": "pcl.json"},
+        {"id": "pcl-base.owl"},
+    ]
+
+    merged = syncer.merge_products(
+        existing, synced, excluded_ids=syncer.product_exclusions["pcl"]
+    )
+    merged_ids = {p["id"] for p in merged}
+    assert merged_ids == {"pcl.owl", "pcl.obo"}
+
+
+def test_merge_products_strips_excluded_existing_products(tmp_path):
+    """An excluded product already present is removed (and not re-synced)."""
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    excluded = {"t4fs-community.owl"}
+
+    existing = [{"id": "t4fs.owl"}, {"id": "t4fs-community.owl"}]
+    synced = [{"id": "t4fs.owl"}, {"id": "t4fs-community.owl"}]
+
+    merged = syncer.merge_products(existing, synced, excluded_ids=excluded)
+    assert {p["id"] for p in merged} == {"t4fs.owl"}

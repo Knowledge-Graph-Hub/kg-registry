@@ -17,7 +17,7 @@ domains:
 - pharmacology
 - genomics
 id: creeds
-last_modified_date: '2025-09-10T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -180,6 +180,7 @@ products:
   product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-p1.0.json
 - category: GraphicalInterface
   description: Web interface for exploring CREEDS gene expression signatures
+  format: http
   id: creeds.web_interface
   name: CREEDS Web Interface
   original_source:

@@ -26,7 +26,7 @@ domains:
 homepage_url: https://github.com/INCATools/ubergraph/
 id: ubergraph
 infores_id: ubergraph
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -99,6 +99,7 @@ products:
   - ubergraph_2026-03-08_0fef3756_2025sep1_4.3.6
 - category: ProgrammingInterface
   description: SPARQL endpoint for Ubergraph
+  format: http
   id: ubergraph.sparql
   name: Ubergraph SPARQL
   original_source:
@@ -107,6 +108,7 @@ products:
   product_url: https://apps.okn.us/ubergraph/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for Ubergraph
+  format: http
   id: ubergraph.tpf
   name: Ubergraph TPF
   original_source:

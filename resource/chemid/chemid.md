@@ -17,7 +17,7 @@ domains:
 - biomedical
 homepage_url: https://pubchem.ncbi.nlm.nih.gov/source/ChemIDplus
 id: chemid
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/copyright.html
@@ -28,6 +28,7 @@ products:
   description: PubChem source page for ChemIDplus, providing the current access point
     for ChemIDplus substance records and annotations after the standalone NLM service
     was retired.
+  format: http
   id: chemid.pubchem-source
   name: ChemIDplus in PubChem
   original_source:
@@ -39,6 +40,7 @@ products:
     source: pubchem
 - category: DocumentationProduct
   description: NLM guide for locating migrated ChemIDplus content within PubChem.
+  format: http
   id: chemid.pubchem-guide
   name: Accessing ChemIDplus Content from PubChem
   original_source:

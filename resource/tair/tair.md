@@ -22,7 +22,7 @@ domains:
 - organisms
 homepage_url: https://www.arabidopsis.org/
 id: tair
-last_modified_date: '2025-12-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: The Arabidopsis Information Resource
 products:
@@ -705,6 +705,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Berardini TZ
+  - Reiser L
+  - Li D
+  - Mezheritsky Y
+  - Muller R
+  - Strait E
+  - Huala E
+  doi: 10.1002/dvg.22877
+  id: https://www.ncbi.nlm.nih.gov/pubmed/26201819
+  journal: Genesis
+  preferred: true
+  title: 'The Arabidopsis information resource: Making and mining the "gold standard"
+    annotated reference plant genome'
+  year: '2015'
 synonyms:
 - TAIR
 taxon:

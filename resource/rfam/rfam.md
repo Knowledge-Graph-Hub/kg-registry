@@ -23,7 +23,7 @@ domains:
 - biological systems
 homepage_url: https://rfam.org/
 id: rfam
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -47,7 +47,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: rfam
-  product_url: https://rfam.org/api
+  product_url: https://docs.rfam.org/en/latest/api.html
 - category: Product
   description: FTP archive with covariance models, sequence alignments, and database
     files

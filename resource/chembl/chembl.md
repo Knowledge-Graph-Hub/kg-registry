@@ -26,6 +26,7 @@ name: ChEMBL
 products:
 - category: GraphicalInterface
   description: Web interface for searching and exploring ChEMBL data
+  format: http
   id: chembl.site
   is_public: true
   name: ChEMBL Web Interface
@@ -35,6 +36,7 @@ products:
   product_url: https://www.ebi.ac.uk/chembl/
 - category: ProgrammingInterface
   description: RESTful API for accessing ChEMBL data programmatically
+  format: http
   id: chembl.api
   is_public: true
   name: ChEMBL API
@@ -94,6 +96,7 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/
 - category: ProgrammingInterface
   description: SPARQL endpoint for the ChEMBL RDF data
+  format: http
   id: chembl.sparql
   is_public: true
   name: ChEMBL SPARQL

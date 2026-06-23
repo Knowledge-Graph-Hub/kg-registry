@@ -45,13 +45,14 @@ domains:
 homepage_url: https://portals.broadinstitute.org/ctrp/
 id: ctrp
 infores_id: ctrp
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Cancer Therapeutics Response Portal
 products:
 - category: GraphicalInterface
   description: Interactive web portal (version 2) for exploring 481 compounds tested
     against 860 cancer cell lines with clustering, enrichments, and correlations
+  format: http
   id: ctrp.portal
   name: CTRP v2 Portal
   original_source:

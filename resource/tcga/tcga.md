@@ -21,7 +21,7 @@ domains:
 homepage_url: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
 id: tcga
 infores_id: tcga
-last_modified_date: '2025-11-08T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: The Cancer Genome Atlas
 products:
@@ -371,6 +371,24 @@ products:
     source: tissues
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Cancer Genome Atlas Research Network
+  - Weinstein JN
+  - Collisson EA
+  - Mills GB
+  - Shaw KRM
+  - Ozenberger BA
+  - Ellrott K
+  - Shmulevich I
+  - Sander C
+  - Stuart JM
+  doi: 10.1038/ng.2764
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24071849
+  journal: Nat Genet
+  preferred: true
+  title: The Cancer Genome Atlas Pan-Cancer analysis project
+  year: '2013'
 synonyms:
 - TCGA
 taxon:

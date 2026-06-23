@@ -22,7 +22,7 @@ domains:
 homepage_url: https://www.nlm.nih.gov/research/umls/index.html
 id: umls
 infores_id: umls
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://uts.nlm.nih.gov/uts/
@@ -52,6 +52,7 @@ products:
 - category: ProgrammingInterface
   description: REST API providing programmatic access to UMLS Metathesaurus, Semantic
     Network, and related terminology services
+  format: http
   id: umls.api
   is_public: true
   name: UMLS Terminology Services API
@@ -1272,6 +1273,7 @@ products:
 - category: ProgrammingInterface
   description: REST API with endpoints that abstract common types of queries against
     a UBKG neo4j knowledge graph database. Requires UMLS API key to access.
+  format: http
   id: ubkg.api
   is_public: false
   name: UBKG API
@@ -1284,6 +1286,7 @@ products:
 - category: GraphicalInterface
   description: Guesdt (Graphing UMLS Enables Search In Dynamic Trees) application
     used to represent the UBKG in a tree view.
+  format: http
   id: ubkg.guesdt
   name: UBKG Guesdt Interface
   original_source:

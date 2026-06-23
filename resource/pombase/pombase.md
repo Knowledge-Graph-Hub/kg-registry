@@ -16,7 +16,7 @@ domains:
 homepage_url: https://www.pombase.org/
 id: pombase
 infores_id: pombase
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1696,6 +1696,17 @@ products:
     source: signor
   - relation_type: prov:wasDerivedFrom
     source: uniprot
+publications:
+- authors:
+  - Rutherford KM
+  - Lera-Ramírez M
+  - Wood V
+  doi: 10.1093/genetics/iyae007
+  id: https://www.ncbi.nlm.nih.gov/pubmed/38376816
+  journal: Genetics
+  preferred: true
+  title: 'PomBase: a Global Core Biodata Resource-growth, collaboration, and sustainability'
+  year: '2024'
 repository: https://www.pombase.org/datasets
 taxon:
 - NCBITaxon:4896

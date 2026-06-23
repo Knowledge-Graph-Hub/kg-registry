@@ -18,7 +18,8 @@ domains:
   - anatomy and development
 homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 id: zfs
-last_modified_date: '2026-04-15T00:00:00Z'
+infores_id: zfs
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

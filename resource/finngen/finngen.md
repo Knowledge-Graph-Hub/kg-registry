@@ -19,7 +19,7 @@ domains:
 - clinical
 homepage_url: https://www.finngen.fi/en
 id: finngen
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -39,6 +39,7 @@ products:
 - category: GraphicalInterface
   description: A web service for browsing disease endpoints in FinnGen, including
     statistics, definitions, and relationships between diseases.
+  format: http
   id: finngen.risteys
   name: Risteys
   original_source:

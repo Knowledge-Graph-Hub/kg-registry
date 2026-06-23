@@ -18,7 +18,8 @@ domains:
   - anatomy and development
 homepage_url: http://dictybase.org/
 id: ddpheno
-last_modified_date: '2026-04-15T00:00:00Z'
+infores_id: ddpheno
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

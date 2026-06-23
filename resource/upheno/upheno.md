@@ -20,7 +20,8 @@ domains:
 - phenotype
 homepage_url: https://github.com/obophenotype/upheno
 id: upheno
-last_modified_date: '2026-06-05T00:00:00Z'
+infores_id: upheno
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

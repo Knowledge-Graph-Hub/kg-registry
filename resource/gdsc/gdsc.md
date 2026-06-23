@@ -5,7 +5,7 @@ contacts:
 - category: Organization
   contact_details:
   - contact_type: url
-    value: https://www.cancerrxgene.org/
+    value: https://www.sanger.ac.uk/tool/gdsc-genomics-drug-sensitivity-cancer/
   label: Genomics of Drug Sensitivity in Cancer Project
 - category: Organization
   contact_details:
@@ -29,13 +29,13 @@ domains:
 - drug discovery
 - genomics
 - pharmacology
-homepage_url: https://www.cancerrxgene.org/
+homepage_url: https://www.sanger.ac.uk/tool/gdsc-genomics-drug-sensitivity-cancer/
 id: gdsc
 infores_id: gdsc
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://www.cancerrxgene.org/legal
+  id: https://www.sanger.ac.uk/tool/gdsc-genomics-drug-sensitivity-cancer/
   label: Custom (non-commercial research use)
 name: Genomics of Drug Sensitivity in Cancer
 products:
@@ -48,54 +48,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gdsc
-  product_url: https://www.cancerrxgene.org/
-- category: Product
-  description: Drug sensitivity data including IC50 values for cancer cell lines
-  format: csv
-  id: gdsc.drug_data
-  name: GDSC Drug Sensitivity Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  product_url: https://www.cancerrxgene.org/downloads/drug_data
-- category: Product
-  description: ANOVA analysis results of associations between drug sensitivity and
-    genomic features
-  format: csv
-  id: gdsc.anova
-  name: GDSC ANOVA Results
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  product_url: https://www.cancerrxgene.org/downloads/anova
-- category: Product
-  description: Genetic feature data including mutations, copy number variations, gene
-    expression, and methylation
-  format: csv
-  id: gdsc.genetic_features
-  name: GDSC Genetic Features
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  product_url: https://www.cancerrxgene.org/downloads/genetic_features
-- category: Product
-  description: FTP repository with all GDSC data releases and archives
-  format: csv
-  id: gdsc.ftp
-  name: GDSC FTP Data Repository
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
+  product_url: https://www.sanger.ac.uk/tool/gdsc-genomics-drug-sensitivity-cancer/
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -279,7 +232,7 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: ctrp
 - category: ProgrammingInterface
-  description: RESTful JSON API providing programmatic access to cell lines, compounds,
+  description: GraphQL API providing programmatic access to cell lines, compounds,
     tissues, datasets, experiments, and intersections data
   format: http
   id: pharmacodb.api
@@ -288,7 +241,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
-  product_url: http://api.pharmacodb.ca/v1/
+  product_url: https://pharmacodb.ca/graphql
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: ccle

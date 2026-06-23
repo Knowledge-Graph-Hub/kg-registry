@@ -43,7 +43,7 @@ domains:
 homepage_url: https://idrblab.org/ttd/
 id: ttd
 infores_id: ttd
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://idrblab.org/ttd/
@@ -448,6 +448,7 @@ products:
   - 423af7989cac
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:

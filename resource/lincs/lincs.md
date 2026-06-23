@@ -25,13 +25,14 @@ domains:
 homepage_url: https://lincsportal.ccs.miami.edu/signatures/home
 id: lincs
 infores_id: lincs
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: LINCS
 products:
 - category: GraphicalInterface
   description: Web interface that allows users to explore, analyze, and visualize
     LINCS signatures and datasets.
+  format: http
   id: lincs.portal
   name: LINCS Data Portal 2.0
   original_source:
@@ -40,6 +41,7 @@ products:
   product_url: https://lincsportal.ccs.miami.edu/signatures/home
 - category: ProgrammingInterface
   description: API for programmatic access to LINCS data and signatures.
+  format: http
   id: lincs.api
   is_public: true
   name: LINCS API

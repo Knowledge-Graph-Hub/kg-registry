@@ -10,7 +10,7 @@ domains:
 - biological systems
 homepage_url: http://www.rnainter.org/
 id: rnainter
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: RNAInter
 products:
@@ -600,6 +600,33 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Kang J
+  - Tang Q
+  - He J
+  - Li L
+  - Yang N
+  - Yu S
+  - Wang M
+  - Zhang Y
+  - Lin J
+  - Cui T
+  - Hu Y
+  - Tan P
+  - Cheng J
+  - Zheng H
+  - Wang D
+  - Su X
+  - Chen W
+  - Huang Y
+  doi: 10.1093/nar/gkab997
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34718726
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'RNAInter v4.0: RNA interactome repository with redefined confidence scoring
+    system and improved accessibility'
+  year: '2022'
 ---
 # RNAInter
 

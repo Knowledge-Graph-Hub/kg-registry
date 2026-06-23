@@ -71,15 +71,15 @@ products:
     product_file_size: 548527
     product_url: https://skm.nib.si/downloads/pss/public/sbml
   - category: GraphProduct
-    description: Current PSS model in DOT Language format compatible with Graphviz
+    description: PSS model (v1.0.0, October 2023) in DOT Language format compatible with Graphviz. The live/current DOT export endpoint was retired upstream; this points to the latest published versioned DOT export.
     format: dot
     id: skm.pss.live.dot
-    name: PSS Live Download (DOT)
+    name: PSS Download (DOT, v1.0.0)
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
-    product_file_size: 595369
-    product_url: https://skm.nib.si/downloads/pss/public/graphviz
+    product_file_size: 405988
+    product_url: https://skm.nib.si/downloads/pss-version/v1.0.0/graphviz
   - category: GraphProduct
     description: Current PSS model in Simple Interaction Format compatible with Cytoscape. Reactions are represented as nodes (as in PSS Explorer and database schema).
     format: sif
@@ -161,7 +161,7 @@ products:
       - source: skm
         relation_type: prov:hadPrimarySource
     product_file_size: 2732107
-    product_url: https://skm.nib.si/downloads/ckn/v2-2023.06
+    product_url: https://skm.nib.si/downloads/ckn/v2-2023.06/edges
   - category: GraphProduct
     description: Comprehensive Knowledge Network v2 in SIF/LGL format with 26,234 entities and ~500,000 interactions. This file contains the node annotations.
     format: sif
@@ -171,7 +171,7 @@ products:
       - source: skm
         relation_type: prov:hadPrimarySource
     product_file_size: 885747
-    product_url: https://skm.nib.si/downloads/ckn-annot/v2-2023.06
+    product_url: https://skm.nib.si/downloads/ckn/v2-2023.06/nodes
   - category: GraphProduct
     description: Comprehensive Knowledge Network v1 in SIF/LGL format
     format: sif
@@ -181,7 +181,7 @@ products:
       - source: skm
         relation_type: prov:hadPrimarySource
     product_file_size: 318666
-    product_url: https://skm.nib.si/downloads/ckn/v1-2018.06
+    product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/edges
   - category: GraphProduct
     description: Comprehensive Knowledge Network v1 in SIF/LGL format. This file contains the node annotations.
     format: sif
@@ -191,7 +191,7 @@ products:
       - source: skm
         relation_type: prov:hadPrimarySource
     product_file_size: 702407
-    product_url: https://skm.nib.si/downloads/ckn-annot/v1-2018.06
+    product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/nodes
 publications:
   - authors:
       - Carissa Bleker
@@ -221,7 +221,7 @@ taxon:
   - NCBITaxon:33090
 version: '1.0'
 creation_date: '2025-06-17T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 
 # Stress Knowledge Map

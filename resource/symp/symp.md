@@ -18,7 +18,8 @@ domains:
   - biomedical
 homepage_url: https://github.com/DiseaseOntology/SymptomOntology
 id: symp
-last_modified_date: '2026-04-15T00:00:00Z'
+infores_id: symp
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -21,7 +21,7 @@ domains:
 homepage_url: http://sideeffects.embl.de/
 id: sider
 infores_id: sider
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -31,6 +31,7 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching and browsing drugs and their side
     effects.
+  format: http
   id: sider.web
   name: SIDER Web Interface
   original_source:

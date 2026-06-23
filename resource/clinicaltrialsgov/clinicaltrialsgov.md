@@ -34,7 +34,7 @@ fairsharing_id: FAIRsharing.mewhad
 homepage_url: https://clinicaltrials.gov/
 id: clinicaltrialsgov
 infores_id: clinicaltrials
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions
@@ -262,7 +262,7 @@ products:
     source: drugcentral
   - relation_type: prov:hadPrimarySource
     source: repodb
-  product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
+  product_url: https://unmtid-shinyapps.net/shiny/repodb/
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -538,7 +538,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 44034
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: clinicaltrialsgov
@@ -552,7 +552,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 1789
-  product_url: https://nlp.case.edu/public/data/GPKG-Predict/ad_nct_evidence.csv
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/ad_nct_evidence.csv
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: clinicaltrialsgov

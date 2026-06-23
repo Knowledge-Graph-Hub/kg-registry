@@ -21,6 +21,7 @@ name: Bio-Health KG
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for Bio-Health KG
+  format: http
   id: biohealth.sparql
   name: Bio-Health KG SPARQL
   original_source:
@@ -36,7 +37,7 @@ products:
   - source: biohealth
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 Bio-Health KG
 

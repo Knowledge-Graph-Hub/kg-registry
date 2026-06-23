@@ -20,7 +20,7 @@ domains:
 homepage_url: https://oborel.github.io/
 id: ro
 infores_id: ro
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -393,7 +393,24 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
-publications: []
+publications:
+- authors:
+  - Barry Smith
+  - Werner Ceusters
+  - Bert Klagges
+  - Jacob Köhler
+  - Anand Kumar
+  - Jane Lomax
+  - Chris Mungall
+  - Fabian Neuhaus
+  - Alan L Rector
+  - Cornelius Rosse
+  doi: 10.1186/gb-2005-6-5-r46
+  id: https://www.ncbi.nlm.nih.gov/pubmed/15892874
+  journal: Genome Biol
+  preferred: true
+  title: Relations in biomedical ontologies
+  year: '2005'
 repository: https://github.com/oborel/obo-relations
 ---
 ## Description

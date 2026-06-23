@@ -21,7 +21,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/snp/
 id: dbsnp
 infores_id: dbsnp
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -30,6 +30,7 @@ name: dbSNP
 products:
 - category: GraphicalInterface
   description: Web interface for searching and exploring dbSNP data
+  format: http
   id: dbsnp.site
   is_public: true
   name: dbSNP Web Interface
@@ -39,6 +40,7 @@ products:
   product_url: https://www.ncbi.nlm.nih.gov/snp/
 - category: ProgrammingInterface
   description: Programmatic access to dbSNP data via the NCBI E-utilities API
+  format: http
   id: dbsnp.api
   is_public: true
   name: dbSNP E-utilities API
@@ -59,6 +61,7 @@ products:
 - category: ProgrammingInterface
   description: NCBI Variation Services API for accessing and manipulating variant
     data
+  format: http
   id: dbsnp.variation.api
   is_public: true
   name: NCBI Variation Services API

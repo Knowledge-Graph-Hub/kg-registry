@@ -20,7 +20,7 @@ domains:
 - environment
 homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 id: dsstox
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -50,6 +50,7 @@ products:
   product_url: https://comptox.epa.gov/dashboard
 - category: ProgrammingInterface
   description: Public API for programmatic access to DSSTox data
+  format: http
   id: dsstox.api
   is_public: true
   name: CompTox API

@@ -15,9 +15,37 @@ domains:
 - drug discovery
 homepage_url: https://bidd.group/NPASS/
 id: npass
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: NPASS
+publications:
+- authors:
+  - Zhao H
+  - Yang Y
+  - Wang S
+  - Yang X
+  - Zhou K
+  - Xu C
+  - Zhang X
+  - Fan J
+  - Hou D
+  - Li X
+  - Lin H
+  - Tan Y
+  - Wang S
+  - Chu XY
+  - Zhuoma D
+  - Zhang F
+  - Ju D
+  - Zeng X
+  - Chen YZ
+  doi: 10.1093/nar/gkac1069
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36624664
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'NPASS database update 2023: quantitative natural product activity and species
+    source database for biomedical research'
+  year: '2023'
 products:
 - category: GraphicalInterface
   description: Official NPASS portal for searching and browsing natural products,

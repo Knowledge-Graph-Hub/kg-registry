@@ -13,9 +13,9 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - chemistry and biochemistry
-homepage_url: http://www.loria.fr/~coulet/sopharm2.0_description.php
+homepage_url: https://bioportal.bioontology.org/ontologies/SOPHARM
 id: sopharm
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -30,14 +30,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: sopharm
-  product_url: http://purl.obolibrary.org/obo/sopharm.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
-    to URL'
+  product_url: https://bioportal.bioontology.org/ontologies/SOPHARM
 - category: OntologyProduct
   description: Suggested Ontology for Pharmacogenomics in OBO format
   format: obo
@@ -46,14 +39,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: sopharm
-  product_url: http://purl.obolibrary.org/obo/sopharm.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
-    to URL'
+  product_url: https://bioportal.bioontology.org/ontologies/SOPHARM
 publications: []
 taxon:
 - NCBITaxon:9606

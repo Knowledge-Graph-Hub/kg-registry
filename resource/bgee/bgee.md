@@ -20,7 +20,7 @@ domains:
 homepage_url: https://www.bgee.org/
 id: bgee
 infores_id: bgee
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -29,6 +29,7 @@ name: Bgee - Gene Expression Database
 products:
 - category: GraphicalInterface
   description: Web interface for exploring Bgee data
+  format: http
   id: bgee.site
   is_public: true
   name: Bgee Web Interface
@@ -38,6 +39,7 @@ products:
   product_url: https://www.bgee.org/
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying Bgee RDF data
+  format: http
   id: bgee.sparql
   is_public: true
   name: Bgee SPARQL Endpoint

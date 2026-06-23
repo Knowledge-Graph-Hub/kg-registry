@@ -29,6 +29,7 @@ name: SPOKE GeneLab
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for SPOKE GeneLab
+  format: http
   id: spoke-genelab.sparql
   name: SPOKE GeneLab SPARQL
   original_source:
@@ -45,7 +46,7 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/BaranziniLab/spoke_genelab
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 SPOKE GeneLab
 

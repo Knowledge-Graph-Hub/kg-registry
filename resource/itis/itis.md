@@ -24,7 +24,7 @@ domains:
 - environment
 homepage_url: https://www.itis.gov/
 id: itis
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.itis.gov/access.html
@@ -56,6 +56,7 @@ products:
 - category: Product
   compression: gzip
   description: Full ITIS data set for MySQL by-table bulk loading.
+  format: mysql
   id: itis.mysql_tables
   name: ITIS MySQL Tables Download
   original_source:
@@ -66,6 +67,7 @@ products:
 - category: Product
   compression: zip
   description: Full ITIS data set packaged as a SQLite database download.
+  format: sqlite
   id: itis.sqlite
   name: ITIS SQLite Download
   original_source:
@@ -139,6 +141,7 @@ products:
   description: Annual comprehensive Catalogue of Life releases (Base Release with
     expert curation and Extended Release with broader source integration) with permanent
     archiving and DOI assignment
+  format: http
   id: catalogue-of-life.annual-releases
   name: Annual Releases
   original_source:
@@ -153,6 +156,7 @@ products:
   description: Downloadable Catalogue of Life datasets in multiple standardized formats
     including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
     and MySQL dumps
+  format: http
   id: catalogue-of-life.downloads
   name: Data Downloads
   original_source:

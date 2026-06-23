@@ -15,7 +15,7 @@ domains:
 - microbiology
 homepage_url: https://gtdb.ecogenomic.org/
 id: gtdb
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -145,6 +145,21 @@ products:
     source: progenomes
   product_file_size: 12570522
   product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_species_summary_no_predictions.tsv.gz
+publications:
+- authors:
+  - Parks DH
+  - Chuvochina M
+  - Rinke C
+  - Mussig AJ
+  - Chaumeil PA
+  - Hugenholtz P
+  doi: 10.1093/nar/gkab776
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34520557
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'GTDB: an ongoing census of bacterial and archaeal diversity through a phylogenetically
+    consistent, rank normalized and complete genome-based taxonomy'
+  year: '2022'
 ---
 # Genome Taxonomy Database
 

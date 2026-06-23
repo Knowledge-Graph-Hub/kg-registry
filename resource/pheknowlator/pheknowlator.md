@@ -20,7 +20,7 @@ domains:
 - genomics
 homepage_url: https://github.com/callahantiff/PheKnowLator
 id: pheknowlator
-last_modified_date: '2025-08-26T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -118,6 +118,7 @@ products:
 - category: DocumentationProduct
   description: User and developer documentation for PheKnowLator, including build
     recipes and usage guides
+  format: http
   id: pheknowlator.doc
   name: PheKnowLator Wiki
   original_source:

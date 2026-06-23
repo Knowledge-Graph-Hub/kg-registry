@@ -17,7 +17,8 @@ domains:
 - genomics
 homepage_url: https://www.informatics.jax.org/
 id: mgi
-last_modified_date: '2026-05-30T00:00:00Z'
+infores_id: mgi
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: Mouse Genome Informatics
 products:
@@ -467,6 +468,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Blake JA
+  - Baldarelli R
+  - Kadin JA
+  - Richardson JE
+  - Smith CL
+  - Bult CJ
+  doi: 10.1093/nar/gkaa1083
+  id: https://www.ncbi.nlm.nih.gov/pubmed/33231642
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'Mouse Genome Database (MGD): Knowledgebase for mouse-human comparative biology'
+  year: '2021'
 ---
 # Mouse Genome Informatics
 

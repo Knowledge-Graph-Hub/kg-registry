@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://www.fda.gov/cder/ob/default.htm
 id: fda-orange-book
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: FDA Orange Book
 products:
@@ -27,6 +27,7 @@ products:
   description: FDA searchable Orange Book database for approved drug products, active
     ingredients, proprietary names, applicants, application numbers, dosage forms,
     routes, and patent numbers.
+  format: http
   id: fda-orange-book.search
   name: FDA Orange Book Search
   original_source:
@@ -52,6 +53,7 @@ products:
 - category: DocumentationProduct
   description: FDA Orange Book preface describing publication structure, therapeutic
     equivalence codes, and interpretation of Orange Book listings.
+  format: http
   id: fda-orange-book.preface
   name: FDA Orange Book Preface
   original_source:

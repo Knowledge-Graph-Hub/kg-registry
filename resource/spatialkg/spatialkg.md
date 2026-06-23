@@ -25,6 +25,7 @@ name: SAWGraph Spatial KG
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for SAWGraph Spatial KG
+  format: http
   id: spatialkg.sparql
   name: SAWGraph Spatial KG SPARQL
   original_source:
@@ -40,7 +41,7 @@ products:
   - source: spatialkg
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 SAWGraph Spatial KG
 
