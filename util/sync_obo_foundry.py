@@ -45,6 +45,7 @@ class OBOFoundrySync:
 
         self.obo_foundry_url = "https://obofoundry.org/registry/ontologies.yml"
         self.existing_resources = self._load_existing_resources()
+        self.product_exclusions = self._load_product_exclusions()
 
         # Cache configuration
         self.cache_ttl_hours = cache_ttl_hours
@@ -64,6 +65,27 @@ class OBOFoundrySync:
                     if resource_file.exists():
                         resources[resource_dir.name] = resource_file
         return resources
+
+    def _load_product_exclusions(self) -> Dict[str, set]:
+        """Load per-ontology product ids that the sync must never (re-)add.
+
+        These are products the OBO Foundry registry advertises but that are not
+        actually published (their PURLs 404). See util/obo_sync_exclusions.yaml.
+        """
+        exclusions: Dict[str, set] = {}
+        config_path = Path(__file__).parent / 'obo_sync_exclusions.yaml'
+        if not config_path.exists():
+            return exclusions
+        try:
+            with open(config_path, 'r', encoding='utf-8') as handle:
+                data = yaml.safe_load(handle) or {}
+            for ontology_id, product_ids in (data.get('exclude_products') or {}).items():
+                exclusions[str(ontology_id).lower()] = {
+                    str(pid) for pid in (product_ids or [])
+                }
+        except Exception as e:
+            logger.warning(f"Failed to load product exclusions: {e}")
+        return exclusions
 
     def _map_obo_domain_to_schema(self, obo_domain: str) -> List[str]:
         """Map OBO Foundry domain to KG-Registry DomainEnum values"""
@@ -546,9 +568,27 @@ class OBOFoundrySync:
             seen.add(identity)
         return merged
 
-    def merge_products(self, existing_products: Any, synced_products: Any) -> List[Dict[str, Any]]:
-        existing = [copy.deepcopy(p) for p in existing_products or [] if isinstance(p, dict)]
-        synced = [copy.deepcopy(p) for p in synced_products or [] if isinstance(p, dict)]
+    def merge_products(
+        self,
+        existing_products: Any,
+        synced_products: Any,
+        excluded_ids: Optional[set] = None,
+    ) -> List[Dict[str, Any]]:
+        excluded_ids = excluded_ids or set()
+
+        def _is_excluded(product: Dict[str, Any]) -> bool:
+            return isinstance(product.get('id'), str) and product['id'] in excluded_ids
+
+        existing = [
+            copy.deepcopy(p)
+            for p in existing_products or []
+            if isinstance(p, dict) and not _is_excluded(p)
+        ]
+        synced = [
+            copy.deepcopy(p)
+            for p in synced_products or []
+            if isinstance(p, dict) and not _is_excluded(p)
+        ]
         if not existing:
             return synced
         if not synced:
@@ -665,8 +705,13 @@ class OBOFoundrySync:
         merged['contacts'] = self.merge_contacts(
             existing_metadata.get('contacts'), synced_metadata.get('contacts')
         )
+        ontology_id = str(
+            existing_metadata.get('id') or synced_metadata.get('id') or ''
+        ).lower()
         merged['products'] = self.merge_products(
-            existing_metadata.get('products'), synced_metadata.get('products')
+            existing_metadata.get('products'),
+            synced_metadata.get('products'),
+            excluded_ids=self.product_exclusions.get(ontology_id, set()),
         )
         merged['publications'] = self.merge_publications(
             existing_metadata.get('publications'), synced_metadata.get('publications')
