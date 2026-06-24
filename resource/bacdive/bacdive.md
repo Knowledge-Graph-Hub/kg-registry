@@ -19,13 +19,46 @@ domains:
 - biological systems
 homepage_url: https://bacdive.dsmz.de/
 id: bacdive
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-06-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: BacDive
 products:
+- category: GraphicalInterface
+  description: BacDive web interface for browsing, searching, and exploring standardized
+    strain-level data for over 99,000 bacterial strains, including advanced search
+    and the TAXplorer taxonomic exploration tool.
+  format: http
+  id: bacdive.portal
+  name: BacDive Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  product_url: https://bacdive.dsmz.de/
+- category: ProgrammingInterface
+  description: BacDive RESTful API for programmatic retrieval of strain data. Access
+    requires free registration (publicly available credentials).
+  format: http
+  id: bacdive.api
+  is_public: true
+  name: BacDive API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  product_url: https://api.bacdive.dsmz.de/
+- category: ProgrammingInterface
+  description: Example client packages and code for accessing the BacDive API from
+    Python and R.
+  format: http
+  id: bacdive.client_examples
+  is_public: true
+  name: BacDive API Client Examples (Python/R)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  product_url: https://api.bacdive.dsmz.de/client_examples
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
