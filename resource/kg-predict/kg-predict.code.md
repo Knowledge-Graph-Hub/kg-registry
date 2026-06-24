@@ -8,9 +8,9 @@ name: KG-Predict Code
 original_source:
 - relation_type: prov:hadPrimarySource
   source: kg-predict
-product_url: https://nlp.case.edu/public/data/GPKG-Predict/code/
+product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
 warnings:
-- File was not able to be retrieved when checked on 2026-06-18_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-22_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-12_ Error connecting to
   URL_ HTTPSConnectionPool(host='nlp.case.edu', port=443)_ Max retries exceeded with

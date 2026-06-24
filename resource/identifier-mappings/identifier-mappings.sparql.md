@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for ID Mappings
+format: http
 id: identifier-mappings.sparql
 name: ID Mappings SPARQL
 original_source:

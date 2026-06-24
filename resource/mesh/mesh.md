@@ -1248,11 +1248,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -1279,11 +1279,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -1313,11 +1313,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -1598,7 +1598,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: predict
-  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/
+  product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
   secondary_source:
   - relation_type: prov:used
     source: drugbank
@@ -1606,7 +1606,13 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Source CSV tables for AcuKG, including acupoint therapeutic actions,
     indications, anatomy relationships, clinical trial links, and PubMed links.
@@ -2086,6 +2092,232 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.2.1
+  compression: gzip
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
+    exported as a biolink-typed KGX graph (~40M nodes / ~132M edges, ~8.3 GB compressed
+    across separate node and edge files). A practical projection of the full graph
+    for human-centric biomedical use. Published on Zenodo.
+  edge_count: 132075627
+  format: kgx
+  id: biobtree.graph.human-subgraph
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC-BY-NC-SA-4.0
+  name: BioBTree Knowledge Graph - Human Subgraph (KGX)
+  node_categories:
+  - biolink:BiologicalProcess
+  - biolink:Cell
+  - biolink:CellLine
+  - biolink:CellularComponent
+  - biolink:CodingSequence
+  - biolink:Disease
+  - biolink:DiseaseOrPhenotypicFeature
+  - biolink:Drug
+  - biolink:Exon
+  - biolink:Gene
+  - biolink:GrossAnatomicalStructure
+  - biolink:MacromolecularComplex
+  - biolink:MolecularActivity
+  - biolink:NoncodingRNAProduct
+  - biolink:NucleicAcidSequenceMotif
+  - biolink:OrganismTaxon
+  - biolink:Pathway
+  - biolink:PhenotypicFeature
+  - biolink:Protein
+  - biolink:ProteinDomain
+  - biolink:ProteinFamily
+  - biolink:Publication
+  - biolink:RegulatoryRegion
+  - biolink:SequenceVariant
+  - biolink:SmallMolecule
+  - biolink:Transcript
+  node_count: 40160474
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biobtree
+  - relation_type: prov:hadPrimarySource
+    source: alphafold
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: bao
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: brenda
+  - relation_type: prov:hadPrimarySource
+    source: cellphonedb
+  - relation_type: prov:hadPrimarySource
+    source: cellxgene
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: collectri
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: lipidmaps
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: surechembl
+  - relation_type: prov:hadPrimarySource
+    source: swisslipid
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  predicates:
+  - biolink:actively_involved_in
+  - biolink:affects
+  - biolink:associated_with
+  - biolink:close_match
+  - biolink:derives_from
+  - biolink:directly_physically_interacts_with
+  - biolink:enables
+  - biolink:expressed_in
+  - biolink:gene_associated_with_condition
+  - biolink:gene_product_of
+  - biolink:has_adverse_event
+  - biolink:has_gene_product
+  - biolink:has_part
+  - biolink:has_participant
+  - biolink:has_phenotype
+  - biolink:in_clinical_trials_for
+  - biolink:in_taxon
+  - biolink:interacts_with
+  - biolink:is_sequence_variant_of
+  - biolink:located_in
+  - biolink:member_of
+  - biolink:mentions
+  - biolink:orthologous_to
+  - biolink:paralogous_to
+  - biolink:participates_in
+  - biolink:physically_interacts_with
+  - biolink:related_to
+  - biolink:same_as
+  - biolink:subclass_of
+  - biolink:transcribed_from
+  - biolink:translates_to
+  - biolink:treats_or_applied_or_studied_to_treat
+  product_url: https://zenodo.org/records/20816742
+- category: GraphProduct
+  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
+    FORUM data
+  format: mixed
+  id: forum.graph.dump
+  name: FORUM Knowledge Graph Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cheminf
+  - relation_type: prov:hadPrimarySource
+    source: chemont
+  - relation_type: prov:hadPrimarySource
+    source: cito
+  - relation_type: prov:hadPrimarySource
+    source: dc
+  - relation_type: prov:hadPrimarySource
+    source: fabio
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: skos
+  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
+  - 'File was not able to be retrieved when checked on 2026-06-22: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-24: FTP error: timed
+    out'
 publications:
 - authors:
   - Lipscomb CE

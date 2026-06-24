@@ -652,12 +652,10 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
-  product_url: https://github.com/wcm-wanglab/iBKH
 - category: DatabaseProduct
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.
-  format: sqlite
   id: rampdb.database
   is_public: true
   name: RaMP-DB Integrated Database
@@ -1707,7 +1705,6 @@ products:
     source: glygen
   - relation_type: prov:hadPrimarySource
     source: motrpac
-  product_url: https://gse.cfde.cloud/
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
@@ -1780,7 +1777,6 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
-  product_url: https://maayanlab.cloud/enrichr-kg
 - category: GraphProduct
   description: Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory
     interactions, and disease associations
@@ -1805,7 +1801,6 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
-  product_url: https://maayanlab.cloud/lncrnalyzr
 - category: GraphProduct
   compression: gzip
   description: HumanNet-XC v3 functional gene network extended by co-citation, distributed

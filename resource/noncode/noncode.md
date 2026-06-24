@@ -528,7 +528,6 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
-  product_url: https://maayanlab.cloud/lncrnalyzr
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
@@ -815,7 +814,8 @@ publications:
   id: doi:10.1093/nar/gkaa1046
   journal: Nucleic Acids Research
   preferred: true
-  title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation in both animals and plants'
+  title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation
+    in both animals and plants'
   year: '2021'
 synonyms:
 - NONCODEV6

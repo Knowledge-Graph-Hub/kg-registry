@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SemOpenAlex
+format: http
 id: semopenalex.sparql
 name: SemOpenAlex SPARQL
 original_source:

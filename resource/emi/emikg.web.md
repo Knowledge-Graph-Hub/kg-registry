@@ -1,6 +1,7 @@
 ---
 category: GraphicalInterface
 description: Web-based SPARQL query editor for the EMI Knowledge Graph
+format: http
 id: emikg.web
 name: EMI KG SPARQL Query Editor
 original_source:

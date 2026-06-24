@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for Open Annotations for Rare Diseases
   (OARD) Knowledge Graph
+format: http
 id: oard-kg.tpf
 name: Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF
 original_source:

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for BioBricks PubChem Annotations
+format: http
 id: biobricks-pubchem-annotations.sparql
 name: BioBricks PubChem Annotations SPARQL
 original_source:

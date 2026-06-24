@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for BioBricks ToxCast
+format: http
 id: biobricks-toxcast.sparql
 name: BioBricks ToxCast SPARQL
 original_source:

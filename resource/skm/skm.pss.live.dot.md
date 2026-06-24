@@ -1,13 +1,15 @@
 ---
 category: GraphProduct
-description: Current PSS model in DOT Language format compatible with Graphviz
+description: PSS model (v1.0.0, October 2023) in DOT Language format compatible with
+  Graphviz. The live/current DOT export endpoint was retired upstream; this points
+  to the latest published versioned DOT export.
 format: dot
 id: skm.pss.live.dot
-name: PSS Live Download (DOT)
+name: PSS Download (DOT, v1.0.0)
 original_source:
-  - source: skm
-    relation_type: prov:hadPrimarySource
-product_file_size: 595369
-product_url: https://skm.nib.si/downloads/pss/public/graphviz
+- relation_type: prov:hadPrimarySource
+  source: skm
+product_file_size: 405988
+product_url: https://skm.nib.si/downloads/pss-version/v1.0.0/graphviz
 layout: product_detail
 ---

@@ -1,12 +1,14 @@
 ---
 category: ProgrammingInterface
-description: REST API for accessing Open Targets Platform data programmatically.
+description: API documentation for accessing Open Targets Platform data programmatically
+  via the GraphQL API (the REST API has been retired).
+format: http
 id: opentargets.api.rest
 is_public: true
-name: Open Targets Platform REST API
-product_url: https://api.platform.opentargets.org/api/v4/rest
-layout: product_detail
+name: Open Targets Platform API Documentation
 original_source:
-  - source: opentargets
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: opentargets
+product_url: https://platform-docs.opentargets.org/data-access/graphql-api
+layout: product_detail
 ---

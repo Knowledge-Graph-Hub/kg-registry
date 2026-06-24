@@ -8,6 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: rnadisease
 product_url: http://www.rnadisease.org/
-warnings: []
+warnings:
+- File was not able to be retrieved when checked on 2026-06-22_ Timeout connecting
+  to URL
 layout: product_detail
 ---

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for Protein Knowledge Network
+format: http
 id: prokn.tpf
 name: Protein Knowledge Network TPF
 original_source:

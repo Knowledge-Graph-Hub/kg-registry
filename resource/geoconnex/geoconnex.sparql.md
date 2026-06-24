@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for GEOCONNEX
+format: http
 id: geoconnex.sparql
 name: GEOCONNEX SPARQL
 original_source:

@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: BioThings homepage describing the BioThings API ecosystem, major public
   APIs, SDK, Studio, and related community resources.
+format: http
 id: biothings.portal
 name: BioThings Homepage
 original_source:

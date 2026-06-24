@@ -1,11 +1,13 @@
 ---
 category: DocumentationProduct
-description: Methods paper analysis reproduction code repository for MR-Base platform publication
+description: Methods paper analysis reproduction code repository for MR-Base platform
+  publication
+format: http
 id: mrbase.paper.reproducibility
 name: MR-Base Methods Paper Reproducibility Code
 original_source:
-  - source: mrbase
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: mrbase
 product_url: https://github.com/explodecomputer/mr-base-methods-paper
 layout: product_detail
 ---

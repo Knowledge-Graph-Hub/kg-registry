@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: FDA searchable Orange Book database for approved drug products, active
   ingredients, proprietary names, applicants, application numbers, dosage forms, routes,
   and patent numbers.
+format: http
 id: fda-orange-book.search
 name: FDA Orange Book Search
 original_source:

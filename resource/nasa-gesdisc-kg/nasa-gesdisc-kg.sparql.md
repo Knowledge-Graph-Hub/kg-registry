@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for NASA-GESDISC-KG
+format: http
 id: nasa-gesdisc-kg.sparql
 name: NASA-GESDISC-KG SPARQL
 original_source:

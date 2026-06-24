@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Protein Knowledge Network
+format: http
 id: prokn.sparql
 name: Protein Knowledge Network SPARQL
 original_source:

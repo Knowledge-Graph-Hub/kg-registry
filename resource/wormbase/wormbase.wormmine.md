@@ -8,6 +8,6 @@ name: WormMine
 original_source:
 - relation_type: prov:hadPrimarySource
   source: wormbase
-product_url: https://im-dev.wormbase.org/tools/wormmine/begin.do
+product_url: https://www.wormbase.org/tools/wormmine/
 layout: product_detail
 ---

@@ -11,7 +11,7 @@ original_source:
   source: cellphonedb
 product_url: https://www.cellphonedb.org/downloads
 warnings:
-- File was not able to be retrieved when checked on 2026-06-18_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-22_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

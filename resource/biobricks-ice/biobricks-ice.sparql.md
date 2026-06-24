@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for BioBricks ICE
+format: http
 id: biobricks-ice.sparql
 name: BioBricks ICE SPARQL
 original_source:

@@ -20,7 +20,7 @@ domains:
 homepage_url: http://www.informatics.jax.org/expression.shtml
 id: emapa
 infores_id: emapa
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-06-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -96,6 +96,9 @@ publications:
   journal: Kaufman's Atlas of Mouse Development Supplement
   title: Textual Anatomics
   year: '2016'
+- id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
+  title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
+    Expression Database for Mouse Development (GXD)'
 ---
 ## Description
 

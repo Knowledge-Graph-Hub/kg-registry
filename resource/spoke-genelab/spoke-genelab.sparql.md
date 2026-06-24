@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SPOKE GeneLab
+format: http
 id: spoke-genelab.sparql
 name: SPOKE GeneLab SPARQL
 original_source:

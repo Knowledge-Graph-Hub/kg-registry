@@ -10,7 +10,7 @@ original_source:
   source: bootstrep
 product_url: http://purl.obolibrary.org/obo/bootstrep.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-18_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-22_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

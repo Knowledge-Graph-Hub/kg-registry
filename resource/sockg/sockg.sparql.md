@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SOC-KG
+format: http
 id: sockg.sparql
 name: SOC-KG SPARQL
 original_source:

@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: REST API with endpoints that abstract common types of queries against
   a UBKG neo4j knowledge graph database. Requires UMLS API key to access.
+format: http
 id: ubkg.api
 is_public: false
 name: UBKG API

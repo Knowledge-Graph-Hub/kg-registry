@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SecureChain KG
+format: http
 id: securechainkg.sparql
 name: SecureChain KG SPARQL
 original_source:

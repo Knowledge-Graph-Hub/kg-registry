@@ -4,9 +4,9 @@ description: REST API for programmatic access to Rfam data
 format: http
 id: rfam.api
 name: Rfam REST API
-product_url: https://rfam.org/api
-layout: product_detail
 original_source:
-  - source: rfam
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: rfam
+product_url: https://docs.rfam.org/en/latest/api.html
+layout: product_detail
 ---

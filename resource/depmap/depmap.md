@@ -326,7 +326,6 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
-  product_url: https://maayanlab.cloud/enrichr-kg
 - category: Product
   description: DepMap all-data downloads page where current Achilles and related dependency
     datasets are released.

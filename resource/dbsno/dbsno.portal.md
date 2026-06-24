@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: dbSNO 3.0 web portal for searching, browsing, and analyzing S-nitrosylated
   proteins, SNO sites, disease associations, SNO regulatory networks, and structural
   environments.
+format: http
 id: dbsno.portal
 name: dbSNO Web Portal
 original_source:

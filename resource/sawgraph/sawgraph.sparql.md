@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SAWGraph PFAS KG
+format: http
 id: sawgraph.sparql
 name: SAWGraph PFAS KG SPARQL
 original_source:

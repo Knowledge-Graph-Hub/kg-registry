@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: Phospho.ELM HTTP web portal for searching experimentally verified phosphorylation
   sites by protein, accession, kinase, phosphopeptide-binding domain, organism group,
   and output format.
+format: http
 id: phosphoelm.portal
 name: Phospho.ELM Web Portal
 original_source:

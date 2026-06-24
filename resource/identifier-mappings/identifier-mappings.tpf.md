@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for ID Mappings
+format: http
 id: identifier-mappings.tpf
 name: ID Mappings TPF
 original_source:

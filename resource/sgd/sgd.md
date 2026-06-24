@@ -1141,7 +1141,6 @@ products:
 - category: GraphicalInterface
   description: Legacy PhosphoGRID web portal for searching experimentally verified
     in vivo yeast phosphorylation sites by ORF, gene name, or external identifier.
-  format: http
   id: phosphogrid.portal
   name: PhosphoGRID Web Portal
   original_source:

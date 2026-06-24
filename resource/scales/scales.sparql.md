@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SCALES
+format: http
 id: scales.sparql
 name: SCALES SPARQL
 original_source:

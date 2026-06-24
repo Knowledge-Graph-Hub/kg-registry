@@ -1,12 +1,13 @@
 ---
 category: ProgrammingInterface
-description: REST API for programmatic access to expression data, experiment metadata, and differential expression results
-format: http
+description: JSON web API for programmatic access to expression data, experiment metadata,
+  and differential expression results
+format: json
 id: expressionatlas.api
-name: Expression Atlas REST API
-product_url: https://www.ebi.ac.uk/gxa/help/api.html
-layout: product_detail
+name: Expression Atlas JSON Web API
 original_source:
-  - source: expressionatlas
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: expressionatlas
+product_url: https://www.ebi.ac.uk/gxa/json/experiments
+layout: product_detail
 ---

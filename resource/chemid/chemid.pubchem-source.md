@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: PubChem source page for ChemIDplus, providing the current access point
   for ChemIDplus substance records and annotations after the standalone NLM service
   was retired.
+format: http
 id: chemid.pubchem-source
 name: ChemIDplus in PubChem
 original_source:

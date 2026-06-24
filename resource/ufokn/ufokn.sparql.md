@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for UF-OKN
+format: http
 id: ufokn.sparql
 name: UF-OKN SPARQL
 original_source:

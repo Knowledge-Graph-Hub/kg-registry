@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for DREAM-KG
+format: http
 id: dreamkg.sparql
 name: DREAM-KG SPARQL
 original_source:

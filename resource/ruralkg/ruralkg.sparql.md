@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Rural Resilience KG
+format: http
 id: ruralkg.sparql
 name: Rural Resilience KG SPARQL
 original_source:

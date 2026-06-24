@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Neighborhood Information KG
+format: http
 id: nikg.sparql
 name: Neighborhood Information KG SPARQL
 original_source:

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for UF-OKN
+format: http
 id: ufokn.tpf
 name: UF-OKN TPF
 original_source:

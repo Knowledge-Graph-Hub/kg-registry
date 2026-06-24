@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Bio-Health KG
+format: http
 id: biohealth.sparql
 name: Bio-Health KG SPARQL
 original_source:

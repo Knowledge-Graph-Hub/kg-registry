@@ -55,6 +55,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ucsc
   product_url: https://hgdownload.soe.ucsc.edu/downloads.html
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-24: Error connecting
+    to URL: HTTPSConnectionPool(host=''hgdownload.soe.ucsc.edu'', port=443): Max retries
+    exceeded with url: /downloads.html (Caused by NewConnectionError("HTTPSConnection(host=''hgdownload.soe.ucsc.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
 - category: ProgrammingInterface
   description: REST API for programmatic access to genome assemblies and annotation
     tracks.

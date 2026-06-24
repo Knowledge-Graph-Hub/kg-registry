@@ -2,6 +2,7 @@
 category: Product
 compression: gzip
 description: Full ITIS data set for MySQL by-table bulk loading.
+format: mysql
 id: itis.mysql_tables
 name: ITIS MySQL Tables Download
 original_source:

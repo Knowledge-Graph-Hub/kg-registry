@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SUDOKN
+format: http
 id: sudokn.sparql
 name: SUDOKN SPARQL
 original_source:

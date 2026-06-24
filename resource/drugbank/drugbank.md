@@ -2833,7 +2833,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: predict
-  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/
+  product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
   secondary_source:
   - relation_type: prov:used
     source: drugbank
@@ -2841,7 +2841,13 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
     to create graph nodes and add edges.
@@ -3137,6 +3143,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: Product
+  description: ReDrugS source code (TurboGears/SADI web application and probabilistic
+    nanopublication pipeline). The hosted service it ran (redrugs.tw.rpi.edu) is no
+    longer available.
+  format: python
+  id: redrugs.source
+  name: ReDrugs Source Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redrugs
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  product_url: https://github.com/dlmcguinness/redrugs
 publications:
 - authors:
   - Craig Knox

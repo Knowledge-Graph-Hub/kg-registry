@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Official NHSBSA browser for searching and viewing dm+d medicines and
   device concepts.
+format: http
 id: dmd.browser
 name: dm+d Browser
 original_source:

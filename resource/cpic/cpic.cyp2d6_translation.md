@@ -1,11 +1,12 @@
 ---
 category: DocumentationProduct
 description: CYP2D6 genotype to phenotype translation project resources
+format: http
 id: cpic.cyp2d6_translation
 name: CPIC CYP2D6 Genotype to Phenotype Project
 original_source:
-  - source: cpic
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: cpic
 product_url: https://cpicpgx.org/resources/cyp2d6-genotype-to-phenotype-standardization-project/
 layout: product_detail
 ---

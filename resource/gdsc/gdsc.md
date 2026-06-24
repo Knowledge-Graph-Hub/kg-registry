@@ -232,7 +232,7 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: ctrp
 - category: ProgrammingInterface
-  description: GraphQL API providing programmatic access to cell lines, compounds,
+  description: RESTful JSON API providing programmatic access to cell lines, compounds,
     tissues, datasets, experiments, and intersections data
   format: http
   id: pharmacodb.api
@@ -241,7 +241,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
-  product_url: https://pharmacodb.ca/graphql
+  product_url: http://api.pharmacodb.ca/v1/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: ccle
@@ -517,7 +517,7 @@ publications:
   - Menden MP
   - Schubert M
   - Aben N
-  - Gonçalves E
+  - "Gon\xE7alves E"
   - Barthorpe S
   - Lightfoot H
   - Cokelaer T

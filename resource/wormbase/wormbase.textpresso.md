@@ -8,6 +8,6 @@ name: Textpresso
 original_source:
 - relation_type: prov:hadPrimarySource
   source: wormbase
-product_url: https://www.textpresso.org/cgi-bin/wb/tfw.cgi
+product_url: https://www.alliancegenome.org/textpresso
 layout: product_detail
 ---

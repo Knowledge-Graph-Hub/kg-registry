@@ -9,7 +9,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: kg-predict
 product_file_size: 1789
-product_url: https://nlp.case.edu/public/data/GPKG-Predict/ad_nct_evidence.csv
+product_url: http://nlp.case.edu/public/data/GPKG-Predict/ad_nct_evidence.csv
 secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: clinicaltrialsgov

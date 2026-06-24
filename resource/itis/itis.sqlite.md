@@ -2,6 +2,7 @@
 category: Product
 compression: zip
 description: Full ITIS data set packaged as a SQLite database download.
+format: sqlite
 id: itis.sqlite
 name: ITIS SQLite Download
 original_source:

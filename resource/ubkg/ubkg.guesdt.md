@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Guesdt (Graphing UMLS Enables Search In Dynamic Trees) application used
   to represent the UBKG in a tree view.
+format: http
 id: ubkg.guesdt
 name: UBKG Guesdt Interface
 original_source:

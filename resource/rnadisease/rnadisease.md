@@ -12,28 +12,6 @@ id: rnadisease
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: RNADisease
-publications:
-- authors:
-  - Chen J
-  - Lin J
-  - Hu Y
-  - Ye M
-  - Yao L
-  - Wu L
-  - Zhang W
-  - Wang M
-  - Deng T
-  - Guo F
-  - Huang Y
-  - Zhu B
-  - Wang D
-  doi: 10.1093/nar/gkac814
-  id: https://www.ncbi.nlm.nih.gov/pubmed/36134718
-  journal: Nucleic Acids Res
-  preferred: true
-  title: 'RNADisease v4.0: an updated resource of RNA-associated diseases, providing
-    RNA-disease analysis, enrichment and prediction'
-  year: '2023'
 products:
 - category: Product
   description: RNADisease website for browsing RNA-disease association records.
@@ -44,9 +22,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rnadisease
   product_url: http://www.rnadisease.org/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -623,6 +599,28 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Chen J
+  - Lin J
+  - Hu Y
+  - Ye M
+  - Yao L
+  - Wu L
+  - Zhang W
+  - Wang M
+  - Deng T
+  - Guo F
+  - Huang Y
+  - Zhu B
+  - Wang D
+  doi: 10.1093/nar/gkac814
+  id: https://www.ncbi.nlm.nih.gov/pubmed/36134718
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'RNADisease v4.0: an updated resource of RNA-associated diseases, providing
+    RNA-disease analysis, enrichment and prediction'
+  year: '2023'
 ---
 # RNADisease
 

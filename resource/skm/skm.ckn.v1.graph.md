@@ -5,9 +5,9 @@ format: sif
 id: skm.ckn.v1.graph
 name: CKN v1 (June 2018)
 original_source:
-  - source: skm
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: skm
 product_file_size: 318666
-product_url: https://skm.nib.si/downloads/ckn/v1-2018.06
+product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/edges
 layout: product_detail
 ---

@@ -5,9 +5,9 @@ format: http
 id: openbiodiv.ontology.guide
 is_public: true
 name: OpenBioDiv-O Guide
-product_url: https://openbiodiv.net/ontologies
-layout: product_detail
 original_source:
-  - source: openbiodiv
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: openbiodiv
+product_url: https://github.com/pensoft/OpenBiodiv/tree/master/ontology
+layout: product_detail
 ---

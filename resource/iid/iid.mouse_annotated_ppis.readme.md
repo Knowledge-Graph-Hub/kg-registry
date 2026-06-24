@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: Readme workbook for the IID annotated mouse protein-protein interaction
   download.
+format: http
 id: iid.mouse_annotated_ppis.readme
 name: IID Mouse Annotated PPIs Readme
 original_source:

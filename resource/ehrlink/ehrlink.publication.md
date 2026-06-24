@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: Publication describing the crowdsourcing methodology used to identify
   relationships between clinical problems and medications in EHRLink.
+format: http
 id: ehrlink.publication
 name: EHRLink Methodology Publication
 original_source:

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Climate Models KG
+format: http
 id: climatemodelskg.sparql
 name: Climate Models KG SPARQL
 original_source:

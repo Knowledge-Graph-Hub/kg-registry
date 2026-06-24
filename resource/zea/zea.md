@@ -5,18 +5,18 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Leszek Vincent
+  orcid: 0000-0002-9316-2919
   contact_details:
   - contact_type: email
     value: Leszek@missouri.edu
-  label: Leszek Vincent
-  orcid: 0000-0002-9316-2919
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
-homepage_url: https://obofoundry.org/ontology/zea
+homepage_url: http://www.maizemap.org/
 id: zea
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

@@ -141,7 +141,6 @@ products:
   description: Annual comprehensive Catalogue of Life releases (Base Release with
     expert curation and Extended Release with broader source integration) with permanent
     archiving and DOI assignment
-  format: http
   id: catalogue-of-life.annual-releases
   name: Annual Releases
   original_source:
@@ -156,7 +155,6 @@ products:
   description: Downloadable Catalogue of Life datasets in multiple standardized formats
     including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
     and MySQL dumps
-  format: http
   id: catalogue-of-life.downloads
   name: Data Downloads
   original_source:

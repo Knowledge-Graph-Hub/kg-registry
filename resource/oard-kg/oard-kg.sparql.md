@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: SPARQL endpoint for Open Annotations for Rare Diseases (OARD) Knowledge
   Graph
+format: http
 id: oard-kg.sparql
 name: Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL
 original_source:

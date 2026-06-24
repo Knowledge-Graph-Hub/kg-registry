@@ -8,11 +8,6 @@ name: tmRNA Identification Software
 original_source:
 - relation_type: prov:hadPrimarySource
   source: tmrnawebsite
-product_url: http://bioinformatics.sandia.gov/tmrna/software.html
-warnings:
-- File was not able to be retrieved when checked on 2026-06-18_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+product_url: https://doi.org/10.6084/m9.figshare.28430909
 layout: product_detail
 ---

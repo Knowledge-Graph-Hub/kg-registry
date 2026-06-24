@@ -7,11 +7,6 @@ name: sopharm.owl
 original_source:
 - relation_type: prov:hadPrimarySource
   source: sopharm
-product_url: http://purl.obolibrary.org/obo/sopharm.owl
-warnings:
-- File was not able to be retrieved when checked on 2026-06-18_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-06-17_ HTTP 404 error when
-  accessing file
+product_url: https://bioportal.bioontology.org/ontologies/SOPHARM
 layout: product_detail
 ---

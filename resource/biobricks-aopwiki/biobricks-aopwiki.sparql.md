@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for BioBricks AOP-Wiki
+format: http
 id: biobricks-aopwiki.sparql
 name: BioBricks AOP-Wiki SPARQL
 original_source:

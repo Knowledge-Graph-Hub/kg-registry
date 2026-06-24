@@ -390,7 +390,6 @@ lipidmaps,active,PASS
 litvar,active,PASS
 lncbase,active,PASS
 lncbook,active,PASS
-lncipedia,active,PASS
 lncrnadisease,active,PASS
 lncrnalyzr,active,PASS
 loinc,active,PASS
@@ -819,6 +818,7 @@ iproclass,inactive,PASS
 irefindex,inactive,PASS
 labeledin,inactive,PASS
 lipro,inactive,PASS
+lncipedia,inactive,PASS
 lncrnadb,inactive,PASS
 loggerhead,inactive,PASS
 mamo,orphaned,PASS

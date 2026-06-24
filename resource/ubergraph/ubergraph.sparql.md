@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Ubergraph
+format: http
 id: ubergraph.sparql
 name: Ubergraph SPARQL
 original_source:

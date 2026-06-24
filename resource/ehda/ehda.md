@@ -5,17 +5,17 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jonathan Bard
   contact_details:
   - contact_type: email
     value: J.Bard@ed.ac.uk
-  label: Jonathan Bard
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
-homepage_url: https://obofoundry.org/ontology/ehda
+homepage_url: http://genex.hgu.mrc.ac.uk/
 id: ehda
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

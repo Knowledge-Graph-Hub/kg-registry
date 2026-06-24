@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SAWGraph Hydrology KG
+format: http
 id: hydrologykg.sparql
 name: SAWGraph Hydrology KG SPARQL
 original_source:

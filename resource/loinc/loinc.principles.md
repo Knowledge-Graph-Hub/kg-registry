@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: LOINC Mission, Vision, and Guiding Principles for open terminology development
   (CC-BY 4.0 licensed document)
+format: http
 id: loinc.principles
 name: LOINC Principles Document
 original_source:

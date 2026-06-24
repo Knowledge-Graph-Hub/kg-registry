@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: NHS Terminology Server access route recommended by NHS England for integrating
   dm+d terminology into healthcare IT systems.
+format: http
 id: dmd.terminology-server
 is_public: true
 name: dm+d Terminology Server Access
