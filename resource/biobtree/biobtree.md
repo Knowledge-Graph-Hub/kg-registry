@@ -18,13 +18,28 @@ domains:
   - clinical
 homepage_url: https://sugi.bio/biobtree/
 id: biobtree
-last_modified_date: '2026-06-15T00:00:00Z'
+last_modified_date: '2026-06-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/agpl-3.0.en.html
   label: AGPL-3.0
 name: BioBTree
 products:
+  - category: GraphProduct
+    compression: gzip
+    description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported as a biolink-typed KGX graph (~40M nodes / ~132M edges, ~8.3 GB compressed across separate node and edge files). A practical projection of the full graph for human-centric biomedical use. Published on Zenodo.
+    edge_count: 132000000
+    format: kgx
+    id: biobtree.graph.human-subgraph
+    license:
+      id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      label: CC-BY-NC-SA-4.0
+    name: BioBTree Knowledge Graph - Human Subgraph (KGX)
+    node_count: 40000000
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biobtree
+    product_url: https://zenodo.org/records/20816742
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping between data sources with a chain-query syntax, and retrieving entries across the integrated BioBTree databases.
     format: http
