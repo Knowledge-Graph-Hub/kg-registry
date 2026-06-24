@@ -367,6 +367,24 @@ entries:
     source_path: resource/bio2rdf/bio2rdf.md
     status: valid
     warnings: []
+  resource/biobtree/biobtree.md#publication[0]#DOI:10.5281/zenodo.18962899:
+    checked_at: '2026-06-24T15:55:55Z'
+    errors: []
+    fingerprint: 17d3fc4a29dd6bd37fc2813f3e947b8bdb1436912d74ce95cbda79564bd04024
+    publication_index: 0
+    reference_id: DOI:10.5281/zenodo.18962899
+    source_path: resource/biobtree/biobtree.md
+    status: valid
+    warnings: []
+  resource/biobtree/biobtree.md#publication[1]#DOI:10.12688/f1000research.17927.1:
+    checked_at: '2026-06-24T15:55:55Z'
+    errors: []
+    fingerprint: a6fb7317382a3136652b324c54bcf353bfe9d10faeaf01ddf7c73876eb3db444
+    publication_index: 1
+    reference_id: DOI:10.12688/f1000research.17927.1
+    source_path: resource/biobtree/biobtree.md
+    status: valid
+    warnings: []
   resource/biofactoid/biofactoid.md#publication[0]#DOI:10.7554/eLife.68292:
     checked_at: '2026-06-22T16:25:07Z'
     errors: []
