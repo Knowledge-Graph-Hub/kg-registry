@@ -29,7 +29,7 @@ domains:
 - proteomics
 homepage_url: https://zhanggroup.org/UniBioMap/
 id: unibiomap
-last_modified_date: '2026-01-28T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -339,6 +339,12 @@ products:
   name: UniBioMap Compound Descriptions
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json
   warnings:
@@ -351,6 +357,8 @@ products:
   name: UniBioMap Protein Descriptions
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/protein_desc.json
   warnings:
@@ -362,6 +370,14 @@ products:
   id: unibiomap.disease_desc
   name: UniBioMap Disease Descriptions
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: doid
   - relation_type: prov:hadPrimarySource
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json
@@ -389,6 +405,12 @@ products:
   name: UniBioMap Pathway Descriptions
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json
   warnings:
@@ -400,6 +422,8 @@ products:
   id: unibiomap.phenotype_desc
   name: UniBioMap Phenotype Descriptions
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hp
   - relation_type: prov:hadPrimarySource
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/phenotype_desc.json
