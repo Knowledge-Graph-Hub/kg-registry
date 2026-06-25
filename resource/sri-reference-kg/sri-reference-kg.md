@@ -186,6 +186,10 @@ products:
         relation_type: prov:hadPrimarySource
       - source: icd11
         relation_type: prov:hadPrimarySource
+      - source: decipher
+        relation_type: prov:hadPrimarySource
+      - source: mmrrc
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/monarch-initiative/monarch-app
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-06-18T00:00:00Z'

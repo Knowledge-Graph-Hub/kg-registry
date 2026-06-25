@@ -51,6 +51,14 @@ products:
     source: sider
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: gad
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: t3db
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
