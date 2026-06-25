@@ -59,6 +59,8 @@ products:
     source: matador
   - relation_type: prov:hadPrimarySource
     source: t3db
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations

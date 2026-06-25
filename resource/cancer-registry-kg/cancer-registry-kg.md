@@ -52,6 +52,10 @@ products:
     original_source:
       - source: cancer-registry-kg
         relation_type: prov:hadPrimarySource
+      - source: us-census
+        relation_type: prov:hadPrimarySource
+      - source: rural-urban-continuum-codes
+        relation_type: prov:hadPrimarySource
     product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
     warnings:
       - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when accessing file

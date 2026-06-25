@@ -146,4 +146,8 @@ original_source:
   relation_type: prov:hadPrimarySource
 - source: mmrrc
   relation_type: prov:hadPrimarySource
+- source: cureid
+  relation_type: prov:hadPrimarySource
+- source: phenopacket-store
+  relation_type: prov:hadPrimarySource
 ---

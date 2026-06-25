@@ -34,5 +34,7 @@ original_source:
   source: matador
 - relation_type: prov:hadPrimarySource
   source: t3db
+- relation_type: prov:hadPrimarySource
+  source: wipo-tkp
 layout: product_detail
 ---

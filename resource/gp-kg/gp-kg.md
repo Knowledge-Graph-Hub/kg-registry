@@ -52,6 +52,8 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: phenomebrowser
         relation_type: prov:wasDerivedFrom
+      - source: treatkb
+        relation_type: prov:wasDerivedFrom
     product_file_size: 48397035
     product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   - category: ProcessProduct
