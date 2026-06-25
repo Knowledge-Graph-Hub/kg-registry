@@ -41,6 +41,18 @@ products:
     original_source:
       - source: eco-kg
         relation_type: prov:hadPrimarySource
+      - source: eol-traitbank
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: to
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg
 tags:
