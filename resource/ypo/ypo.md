@@ -11,7 +11,7 @@ contacts:
   label: Mike Cherry
   orcid: 0000-0001-9163-5180
 creation_date: '2025-09-29T00:00:00Z'
-description: Description unavailable.
+description: A structured controlled vocabulary for the phenotypes of budding yeast. This ontology is obsolete and has been replaced by the Ascomycete Phenotype Ontology (APO).
 domains:
 - phenotype
 - biological systems
@@ -30,7 +30,7 @@ taxon:
 ---
 ## Description
 
-Yeast Phenotypes Ontology is a deprecated controlled vocabulary for the phenotypes of budding yeast. OBO Foundry recommends APO as a successor resource.
+A structured controlled vocabulary for the phenotypes of budding yeast. This ontology is obsolete; the OBO Foundry registry records it as replaced by the Ascomycete Phenotype Ontology (APO).
 
 ## Contacts
 

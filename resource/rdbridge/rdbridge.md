@@ -39,6 +39,14 @@ products:
     original_source:
       - source: rdbridge
         relation_type: prov:hadPrimarySource
+      - source: pmc
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: cpdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Curated collection of 235,631 scientific publications related to rare diseases
     format: http
@@ -66,7 +74,7 @@ taxon:
 warnings:
   - Homepage may be inaccessible (March 5 2025)
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 
 ## Automated Evaluation

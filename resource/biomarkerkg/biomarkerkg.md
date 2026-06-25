@@ -95,6 +95,8 @@ products:
   original_source:
   - source: biomarkerkg
     relation_type: prov:hadPrimarySource
+  - source: obci
+    relation_type: prov:hadPrimarySource
   product_file_size: 276
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.nodes.zip
 - category: GraphProduct
@@ -119,6 +121,8 @@ products:
   original_source:
   - source: biomarkerkg
     relation_type: prov:hadPrimarySource
+  - source: uberon
+    relation_type: prov:hadPrimarySource
   product_file_size: 1229
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.edges.zip
 - category: GraphProduct
@@ -130,6 +134,8 @@ products:
   name: BKG Compound Edges
   original_source:
   - source: biomarkerkg
+    relation_type: prov:hadPrimarySource
+  - source: pubchem
     relation_type: prov:hadPrimarySource
   product_file_size: 1333
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.edges.zip
@@ -143,6 +149,8 @@ products:
   original_source:
   - source: biomarkerkg
     relation_type: prov:hadPrimarySource
+  - source: doid
+    relation_type: prov:hadPrimarySource
   product_file_size: 1204603
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.edges.zip
 - category: GraphProduct
@@ -154,6 +162,8 @@ products:
   original_source:
   - source: biomarkerkg
     relation_type: prov:hadPrimarySource
+  - source: obci
+    relation_type: prov:hadPrimarySource
   product_file_size: 355306
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.edges.zip
 - category: GraphProduct
@@ -164,6 +174,8 @@ products:
   name: BKG Variant Edges
   original_source:
   - source: biomarkerkg
+    relation_type: prov:hadPrimarySource
+  - source: dbsnp
     relation_type: prov:hadPrimarySource
   product_file_size: 1067491
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip

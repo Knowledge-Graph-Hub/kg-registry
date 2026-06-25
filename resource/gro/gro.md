@@ -10,7 +10,7 @@ contacts:
     value: po-discuss@plantontology.org
   label: Plant Ontology Administrators
 creation_date: '2025-09-29T00:00:00Z'
-description: Description unavailable.
+description: A structured controlled vocabulary for the anatomy of Graminae.
 domains:
 - anatomy and development
 homepage_url: http://www.gramene.org/plant_ontology/
@@ -26,7 +26,7 @@ publications: []
 ---
 ## Description
 
-Cereal Plant Gross Anatomy is a deprecated ontology for the anatomy of grasses and cereal plants. OBO Foundry notes that it has been superseded by the Plant Ontology.
+A structured controlled vocabulary for the anatomy of Graminae. This ontology is deprecated and obsolete; OBO Foundry notes that it has now been superseded by the Plant Ontology.
 
 ## Contacts
 

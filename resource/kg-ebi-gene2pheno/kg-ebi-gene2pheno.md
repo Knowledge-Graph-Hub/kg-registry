@@ -28,6 +28,14 @@ products:
     original_source:
       - source: kg-ebi-gene2pheno
         relation_type: prov:hadPrimarySource
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:wasDerivedFrom
+      - source: omim
+        relation_type: prov:wasDerivedFrom
+      - source: orphanet
+        relation_type: prov:wasDerivedFrom
   - category: GraphProduct
     description: KGX edges file for EBI Gene2Phenotype KG
     format: kgx-jsonl
@@ -38,6 +46,14 @@ products:
     original_source:
       - source: kg-ebi-gene2pheno
         relation_type: prov:hadPrimarySource
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:wasDerivedFrom
+      - source: omim
+        relation_type: prov:wasDerivedFrom
+      - source: orphanet
+        relation_type: prov:wasDerivedFrom
   - category: GraphProduct
     description: TRAPI edges file for EBI Gene2Phenotype KG
     format: trapi-jsonl
@@ -48,9 +64,17 @@ products:
     original_source:
       - source: kg-ebi-gene2pheno
         relation_type: prov:hadPrimarySource
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:wasDerivedFrom
+      - source: omim
+        relation_type: prov:wasDerivedFrom
+      - source: orphanet
+        relation_type: prov:wasDerivedFrom
 repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/ebi_gene2phenotype
 creation_date: '2025-05-07T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 
 ## Automated Evaluation

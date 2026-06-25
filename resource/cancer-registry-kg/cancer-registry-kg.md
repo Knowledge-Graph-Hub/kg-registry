@@ -8,7 +8,7 @@ domains:
   - biomedical
 homepage_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
 id: cancer-registry-kg
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.hhs.gov/open/public-access-guiding-principles/index.html
@@ -22,6 +22,10 @@ products:
     original_source:
       - source: cancer-registry-kg
         relation_type: prov:hadPrimarySource
+      - source: louisiana-tumor-registry
+        relation_type: prov:hadPrimarySource
+      - source: naaccr
+        relation_type: prov:hadPrimarySource
     product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
     warnings:
       - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when accessing file
@@ -33,6 +37,10 @@ products:
     original_source:
       - source: cancer-registry-kg
         relation_type: prov:hadPrimarySource
+      - source: kentucky-cancer-registry
+        relation_type: prov:hadPrimarySource
+      - source: naaccr
+        relation_type: prov:hadPrimarySource
     product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
     warnings:
       - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when accessing file
@@ -43,6 +51,10 @@ products:
     name: Concentrated Disadvantage Index Integration
     original_source:
       - source: cancer-registry-kg
+        relation_type: prov:hadPrimarySource
+      - source: us-census
+        relation_type: prov:hadPrimarySource
+      - source: rural-urban-continuum-codes
         relation_type: prov:hadPrimarySource
     product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
     warnings:

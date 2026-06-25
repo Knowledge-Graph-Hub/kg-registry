@@ -58,6 +58,20 @@ products:
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
+        relation_type: prov:hadPrimarySource
     product_file_size: 3204548
     product_url: https://skm.nib.si/downloads/pss/public/sbgn
   - category: GraphProduct
@@ -67,6 +81,20 @@ products:
     name: PSS Live Download (SBML)
     original_source:
       - source: skm
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
         relation_type: prov:hadPrimarySource
     product_file_size: 548527
     product_url: https://skm.nib.si/downloads/pss/public/sbml
@@ -78,6 +106,20 @@ products:
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
+        relation_type: prov:hadPrimarySource
     product_file_size: 405988
     product_url: https://skm.nib.si/downloads/pss-version/v1.0.0/graphviz
   - category: GraphProduct
@@ -87,6 +129,20 @@ products:
     name: PSS Live Download, original (SIF/LGL)
     original_source:
       - source: skm
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
         relation_type: prov:hadPrimarySource
     product_file_size: 161651
     product_url: https://skm.nib.si/downloads/pss/public/sif-edges
@@ -98,6 +154,20 @@ products:
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
+        relation_type: prov:hadPrimarySource
     product_file_size: 401897
     product_url: https://skm.nib.si/downloads/pss/public/sif-nodes
   - category: GraphProduct
@@ -107,6 +177,20 @@ products:
     name: PSS Live Download, projection (SIF/LGL)
     original_source:
       - source: skm
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
         relation_type: prov:hadPrimarySource
     product_file_size: 253631
     product_url: https://skm.nib.si/downloads/pss/public/rxn-edges
@@ -118,6 +202,20 @@ products:
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
+        relation_type: prov:hadPrimarySource
     product_file_size: 163587
     product_url: https://skm.nib.si/downloads/pss/public/rxn-nodes
   - category: GraphProduct
@@ -127,6 +225,20 @@ products:
     name: PSS Live Download, DiNAR (SIF/LGL)
     original_source:
       - source: skm
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
         relation_type: prov:hadPrimarySource
     product_file_size: 361747
     product_url: https://skm.nib.si/downloads/pss/public/dinar-edges
@@ -138,6 +250,20 @@ products:
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
+        relation_type: prov:hadPrimarySource
     product_file_size: 53198
     product_url: https://skm.nib.si/downloads/pss/public/boolnet
   - category: GraphProduct
@@ -147,6 +273,20 @@ products:
     name: PSS Live Downloads (BoolNet), node annotations
     original_source:
       - source: skm
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
         relation_type: prov:hadPrimarySource
     product_file_size: 70946
     product_url: https://skm.nib.si/downloads/pss/public/boolnet-annot
@@ -160,6 +300,24 @@ products:
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
+        relation_type: prov:hadPrimarySource
     product_file_size: 2732107
     product_url: https://skm.nib.si/downloads/ckn/v2-2023.06/edges
   - category: GraphProduct
@@ -169,6 +327,24 @@ products:
     name: CKN v2 (June 2023), node annotations
     original_source:
       - source: skm
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
         relation_type: prov:hadPrimarySource
     product_file_size: 885747
     product_url: https://skm.nib.si/downloads/ckn/v2-2023.06/nodes
@@ -180,6 +356,24 @@ products:
     original_source:
       - source: skm
         relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
+        relation_type: prov:hadPrimarySource
     product_file_size: 318666
     product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/edges
   - category: GraphProduct
@@ -189,6 +383,24 @@ products:
     name: CKN v1 (June 2018), node annotations
     original_source:
       - source: skm
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: araport
+        relation_type: prov:hadPrimarySource
+      - source: gomapman
         relation_type: prov:hadPrimarySource
     product_file_size: 702407
     product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/nodes

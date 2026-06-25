@@ -14,7 +14,7 @@ domains:
 - biomedical
 homepage_url: https://saezlab.github.io/dorothea/
 id: dorothea
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/saezlab/dorothea/blob/master/LICENSE
@@ -29,6 +29,22 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
   product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 - category: ProcessProduct
   description: Bioconductor R data package containing human and mouse regulons for

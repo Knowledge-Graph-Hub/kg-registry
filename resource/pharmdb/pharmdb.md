@@ -10,7 +10,7 @@ domains:
 - biomedical
 homepage_url: http://www.pharmdb-k.org/
 id: pharmdb
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 name: PharmDB
 products:
@@ -33,6 +33,34 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: gad
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: t3db
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations

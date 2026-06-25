@@ -11,7 +11,10 @@ contacts:
   label: Peter Midford
   orcid: 0000-0001-6512-3296
 creation_date: '2025-09-29T00:00:00Z'
-description: Description unavailable.
+description: A demonstration of ontology construction as a general technique for
+  coding ethograms and other descriptions of behavior into machine understandable
+  forms. An ontology for courtship behavior of the spider Habronattus californicus.
+  This ontology is obsolete in the OBO Foundry.
 domains:
 - organisms
 - biological systems
@@ -28,7 +31,7 @@ publications: []
 ---
 ## Description
 
-Habronattus courtship is a deprecated demonstration ontology for representing ethograms and the courtship behavior of the spider Habronattus californicus in machine-readable form.
+A demonstration of ontology construction as a general technique for coding ethograms and other descriptions of behavior into machine understandable forms. An ontology for courtship behavior of the spider Habronattus californicus. This ontology is obsolete in the OBO Foundry.
 
 ## Contacts
 

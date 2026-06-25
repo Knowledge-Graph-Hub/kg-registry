@@ -20,6 +20,9 @@ homepage_url: http://www.noncode.org/
 id: noncode
 last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc/4.0/
+  label: CC BY-NC 4.0
 name: NONCODE
 products:
 - category: GraphicalInterface
@@ -67,7 +70,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: noncode
-  product_url: http://www.noncode.org/disease.php
+  product_url: http://www.noncode.org/keyword_dis.php
 - category: GraphicalInterface
   description: View transcript locations in genomic context (human hg38)
   format: http
@@ -76,7 +79,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: noncode
-  product_url: http://www.noncode.org/genome.php
+  product_url: http://www.noncode.org/cgi-bin/hgTracks?db=hg38
 - category: Product
   description: Download complete lncRNA annotations and sequences
   format: http
@@ -94,7 +97,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: noncode
-  product_url: http://www.noncode.org/function.php
+  product_url: http://www.noncode.org/keyword_func.php
 - category: GraphicalInterface
   description: Cross-species conservation analysis for plant lncRNAs
   format: http
@@ -103,7 +106,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: noncode
-  product_url: http://www.noncode.org/conservation.php
+  product_url: http://www.noncode.org/keyword_cons.php
 - category: GraphicalInterface
   description: Convert between NONCODE IDs and other database identifiers (Ensembl,
     RefSeq, etc.)

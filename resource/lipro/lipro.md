@@ -11,7 +11,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 domains:
 - chemistry and biochemistry
 contacts:
@@ -22,11 +22,29 @@ contacts:
   - contact_type: email
     value: bakerc@unb.ca
 products: []
-publications: []
+publications:
+- authors:
+  - Chepelev LL
+  - Riazanov A
+  - Kouznetsov A
+  - Low HS
+  - Dumontier M
+  - Baker CJO
+  doi: 10.1186/1471-2105-12-303
+  id: https://doi.org/10.1186/1471-2105-12-303
+  journal: BMC Bioinformatics
+  title: Prototype semantic infrastructure for automated small molecule classification
+    and annotation in lipidomics
+  year: '2011'
 ---
 ## Description
 
-An ontology representation of the LIPIDMAPS nomenclature classification.
+An ontology representation of the LIPIDMAPS nomenclature classification. The ontology
+describes the LIPIDMAPS nomenclature classification explicitly using description logics
+(OWL-DL). Lipid classes are organized hierarchically with the super-classes restricted
+by generic necessary conditions; more specific necessary conditions define membership
+requirements for sub-classes of lipid according to appropriate functional groups. Note:
+this ontology is obsolete (deprecated) in the OBO Foundry.
 
 ## Contacts
 
