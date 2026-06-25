@@ -26,17 +26,25 @@ products:
     original_source:
       - source: hra-kg
         relation_type: prov:hadPrimarySource
+      - source: ccf
+        relation_type: prov:hadPrimarySource
       - source: cl
         relation_type: prov:hadPrimarySource
       - source: fma
         relation_type: prov:hadPrimarySource
       - source: hgnc
         relation_type: prov:hadPrimarySource
+      - source: hravs
+        relation_type: prov:hadPrimarySource
+      - source: lmha
+        relation_type: prov:hadPrimarySource
       - source: pcl
         relation_type: prov:hadPrimarySource
       - source: ro
         relation_type: prov:hadPrimarySource
       - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vccf
         relation_type: prov:hadPrimarySource
     product_file_size: 204030087
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
@@ -48,17 +56,25 @@ products:
     original_source:
       - source: hra-kg
         relation_type: prov:hadPrimarySource
+      - source: ccf
+        relation_type: prov:hadPrimarySource
       - source: cl
         relation_type: prov:hadPrimarySource
       - source: fma
         relation_type: prov:hadPrimarySource
       - source: hgnc
         relation_type: prov:hadPrimarySource
+      - source: hravs
+        relation_type: prov:hadPrimarySource
+      - source: lmha
+        relation_type: prov:hadPrimarySource
       - source: pcl
         relation_type: prov:hadPrimarySource
       - source: ro
         relation_type: prov:hadPrimarySource
       - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vccf
         relation_type: prov:hadPrimarySource
     product_file_size: 18043
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
@@ -70,17 +86,25 @@ products:
     original_source:
       - source: hra-kg
         relation_type: prov:hadPrimarySource
+      - source: ccf
+        relation_type: prov:hadPrimarySource
       - source: cl
         relation_type: prov:hadPrimarySource
       - source: fma
         relation_type: prov:hadPrimarySource
       - source: hgnc
         relation_type: prov:hadPrimarySource
+      - source: hravs
+        relation_type: prov:hadPrimarySource
+      - source: lmha
+        relation_type: prov:hadPrimarySource
       - source: pcl
         relation_type: prov:hadPrimarySource
       - source: ro
         relation_type: prov:hadPrimarySource
       - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vccf
         relation_type: prov:hadPrimarySource
     product_file_size: 185060502
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
@@ -92,17 +116,25 @@ products:
     original_source:
       - source: hra-kg
         relation_type: prov:hadPrimarySource
+      - source: ccf
+        relation_type: prov:hadPrimarySource
       - source: cl
         relation_type: prov:hadPrimarySource
       - source: fma
         relation_type: prov:hadPrimarySource
       - source: hgnc
         relation_type: prov:hadPrimarySource
+      - source: hravs
+        relation_type: prov:hadPrimarySource
+      - source: lmha
+        relation_type: prov:hadPrimarySource
       - source: pcl
         relation_type: prov:hadPrimarySource
       - source: ro
         relation_type: prov:hadPrimarySource
       - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vccf
         relation_type: prov:hadPrimarySource
     product_file_size: 291382102
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
@@ -114,17 +146,25 @@ products:
     original_source:
       - source: hra-kg
         relation_type: prov:hadPrimarySource
+      - source: ccf
+        relation_type: prov:hadPrimarySource
       - source: cl
         relation_type: prov:hadPrimarySource
       - source: fma
         relation_type: prov:hadPrimarySource
       - source: hgnc
         relation_type: prov:hadPrimarySource
+      - source: hravs
+        relation_type: prov:hadPrimarySource
+      - source: lmha
+        relation_type: prov:hadPrimarySource
       - source: pcl
         relation_type: prov:hadPrimarySource
       - source: ro
         relation_type: prov:hadPrimarySource
       - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vccf
         relation_type: prov:hadPrimarySource
     product_file_size: 376981902
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq

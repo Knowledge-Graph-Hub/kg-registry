@@ -64,6 +64,8 @@ products:
       - relation_type: prov:hadPrimarySource
         source: ro
       - relation_type: prov:hadPrimarySource
+        source: semrep
+      - relation_type: prov:hadPrimarySource
         source: so
       - relation_type: prov:hadPrimarySource
         source: uberon
@@ -113,6 +115,8 @@ products:
         source: pw
       - relation_type: prov:hadPrimarySource
         source: ro
+      - relation_type: prov:hadPrimarySource
+        source: semrep
       - relation_type: prov:hadPrimarySource
         source: so
       - relation_type: prov:hadPrimarySource

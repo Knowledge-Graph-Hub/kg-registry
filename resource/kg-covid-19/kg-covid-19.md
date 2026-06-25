@@ -36,6 +36,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
+    source: cord-19
+  - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
     source: go
