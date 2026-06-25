@@ -4006,26 +4006,17 @@ http://purl.obolibrary.org/obo/zp.owl:
   source: cache
   status_code: 200
 http://purl.org/dc/dcmitype/:
-  checked_at: '2026-06-02T22:35:43Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.org'', port=443): Read
-    timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T00:00:00Z'
+  note: 'RDF namespace: 302 redirect, resolves 200 with rdf+xml Accept'
+  ok: true
 http://purl.org/dc/elements/1.1/:
-  checked_at: '2026-06-02T22:35:44Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.org'', port=443): Read
-    timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T00:00:00Z'
+  note: 'RDF namespace: 302 redirect, resolves 200 with rdf+xml Accept'
+  ok: true
 http://purl.org/dc/terms/:
-  checked_at: '2026-06-02T22:35:44Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.org'', port=443): Read
-    timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T00:00:00Z'
+  note: 'RDF namespace: 302 redirect, resolves 200 with rdf+xml Accept'
+  ok: true
 http://purl.org/spar/cito.ttl:
   checked_at: '2026-06-02T22:35:44Z'
   error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.org'', port=443): Read

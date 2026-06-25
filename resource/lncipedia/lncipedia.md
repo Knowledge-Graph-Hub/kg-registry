@@ -19,59 +19,10 @@ id: lncipedia
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://www.lncipedia.org/download
+  id: ''
   label: Non-Commercial Use Only
 name: LncIPedia
 products:
-- category: GraphicalInterface
-  description: Web interface for searching and browsing human lncRNA sequences and
-    annotations
-  format: http
-  id: lncipedia.search
-  name: LncIPedia Search
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: lncipedia
-  product_url: https://lncipedia.org/db/search
-- category: Product
-  description: Downloadable database files in FASTA, GFF, and BED formats for both
-    GRCh37/hg19 and GRCh38/hg38 genome assemblies
-  format: fasta
-  id: lncipedia.downloads
-  name: LncIPedia Downloads
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: lncipedia
-  product_url: https://lncipedia.org/download
-- category: GraphicalInterface
-  description: UCSC Genome Browser trackhub for directly displaying LncIPedia annotations
-  format: http
-  id: lncipedia.trackhub
-  name: LncIPedia UCSC Trackhub
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: lncipedia
-  product_url: https://www.lncipedia.org/trackhub/hub.txt
-- category: Product
-  description: Integration files for Integrative Genomics Viewer (IGV) to visualize
-    lncRNA annotations
-  format: http
-  id: lncipedia.igv
-  name: LncIPedia IGV Integration
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: lncipedia
-  product_url: https://lncipedia.org/download#anchor-igv
-- category: Product
-  description: Metadata files including locus conservation across species (chimpanzee,
-    mouse, Drosophila, zebrafish) and conversion tables to Ensembl and RefSeq IDs
-  format: tsv
-  id: lncipedia.metadata
-  name: LncIPedia Metadata
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: lncipedia
-  product_url: https://lncipedia.org/download#anchor-metadata
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

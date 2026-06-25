@@ -25,7 +25,7 @@ domains:
 - organisms
 homepage_url: https://omabrowser.org/
 id: oma
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -41,7 +41,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/
+  product_url: https://omabrowser.org/oma/home/
 - category: ProgrammingInterface
   description: RESTful API for accessing OMA data
   format: http
