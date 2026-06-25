@@ -15,4 +15,10 @@ original_source:
   source: jaspar
 - relation_type: prov:hadPrimarySource
   source: gtex
+- relation_type: prov:hadPrimarySource
+  source: hocomoco
+- relation_type: prov:hadPrimarySource
+  source: oreganno
+- relation_type: prov:hadPrimarySource
+  source: trrust
 ---

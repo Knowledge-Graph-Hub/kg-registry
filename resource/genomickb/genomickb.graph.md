@@ -41,6 +41,12 @@ original_source:
   relation_type: prov:hadPrimarySource
 - source: efo
   relation_type: prov:hadPrimarySource
+- source: dbvar
+  relation_type: prov:hadPrimarySource
+- source: endb
+  relation_type: prov:hadPrimarySource
+- source: enhanceratlas
+  relation_type: prov:hadPrimarySource
 product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
 layout: product_detail
 ---

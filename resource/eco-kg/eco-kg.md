@@ -53,6 +53,12 @@ products:
         relation_type: prov:hadPrimarySource
       - source: ncbitaxon
         relation_type: prov:hadPrimarySource
+      - source: maizegdb
+        relation_type: prov:hadPrimarySource
+      - source: planteome
+        relation_type: prov:hadPrimarySource
+      - source: rapdb
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg
 tags:

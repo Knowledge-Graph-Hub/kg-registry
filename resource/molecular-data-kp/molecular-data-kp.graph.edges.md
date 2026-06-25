@@ -71,6 +71,12 @@ original_source:
   relation_type: prov:hadPrimarySource
 - source: drugrephub
   relation_type: prov:hadPrimarySource
+- source: chembank
+  relation_type: prov:hadPrimarySource
+- source: inxight-drugs
+  relation_type: prov:hadPrimarySource
+- source: probe-miner
+  relation_type: prov:hadPrimarySource
 product_file_size: 20140191116
 product_url: https://molepro.s3.amazonaws.com/edges.tsv
 layout: product_detail

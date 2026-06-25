@@ -35,6 +35,12 @@ products:
     source: jaspar
   - relation_type: prov:hadPrimarySource
     source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
   product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 - category: ProcessProduct
   description: Bioconductor R data package containing human and mouse regulons for
