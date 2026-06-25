@@ -911,11 +911,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -942,11 +942,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -976,11 +976,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -1746,6 +1746,108 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: GraphProduct
+  description: GP_KG.txt
+  edge_count: 1246726
+  id: gp-kg.graph
+  name: GP-KG
+  node_count: 61146
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gp-kg
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: goa
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: phenomebrowser
+  - relation_type: prov:wasDerivedFrom
+    source: treatkb
+  product_file_size: 48397035
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+- category: GraphProduct
+  description: The full PrimeKG dataset containing disease relationships.
+  id: primekg.graph
+  name: PrimeKG Full Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: primekg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
+    to URL
+- category: GraphProduct
+  description: UniBioMap disease entity descriptions.
+  format: json
+  id: unibiomap.disease_desc
+  name: UniBioMap Disease Descriptions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 publications:
 - authors:
   - Bodenreider O

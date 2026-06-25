@@ -1009,12 +1009,260 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- category: GraphProduct
+  description: KGX nodes file for EBI Gene2Phenotype KG
+  format: kgx-jsonl
+  id: kg-ebi-gene2pheno.nodes.kgx
+  name: EBI gene2pheno KGX nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 62139
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_nodes.jsonl
+- category: GraphProduct
+  description: KGX edges file for EBI Gene2Phenotype KG
+  format: kgx-jsonl
+  id: kg-ebi-gene2pheno.edges.kgx
+  name: EBI gene2pheno KGX edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 133106
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_edges.jsonl
+- category: GraphProduct
+  description: TRAPI edges file for EBI Gene2Phenotype KG
+  format: trapi-jsonl
+  id: kg-ebi-gene2pheno.edges.trapi
+  name: EBI gene2pheno TRAPI edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 142045
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_trapi_edges.jsonl
+- category: GraphProduct
+  description: KGX Distribution of KG-IDG
+  format: kgx
+  id: kg-idg.graph
+  name: KGX Distribution of KG-IDG
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-idg
+  - relation_type: prov:hadPrimarySource
+    source: atc
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: KGX distribution of the SRI-Reference KG
+  format: kgx
+  id: sri-reference-kg.graph
+  name: SRI-Reference KG (KGX distribution)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sri-reference-kg
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: ddanat
+  - relation_type: prov:hadPrimarySource
+    source: ddpheno
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: fypo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: upheno
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: wbphenotype
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  - relation_type: prov:hadPrimarySource
+    source: zfs
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: icd10cm
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  - relation_type: prov:hadPrimarySource
+    source: decipher
+  - relation_type: prov:hadPrimarySource
+    source: mmrrc
+  - relation_type: prov:hadPrimarySource
+    source: cureid
+  - relation_type: prov:hadPrimarySource
+    source: phenopacket-store
+  product_file_size: 230046094
+  product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 publications:
 - authors:
   - Pavan S
   - Rommel K
   - Mateo Marquina ME
-  - "H\xF6hn S"
+  - Höhn S
   - Lanneau V
   - Rath A
   doi: 10.1371/journal.pone.0170365

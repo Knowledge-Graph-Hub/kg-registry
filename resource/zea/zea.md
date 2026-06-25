@@ -11,13 +11,12 @@ contacts:
   - contact_type: email
     value: Leszek@missouri.edu
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary for the anatomy of Zea mays. This
-  ontology is obsolete and inactive.
+description: Description unavailable.
 domains:
 - anatomy and development
 homepage_url: http://www.maizemap.org/
 id: zea
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

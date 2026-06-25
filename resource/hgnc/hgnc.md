@@ -153,9 +153,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -3304,6 +3304,637 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- category: GraphProduct
+  description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
+  dump_format: neo4j
+  id: genomickb.graph
+  name: GenomicKB Graph Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genomickb
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: epd
+  - relation_type: prov:hadPrimarySource
+    source: dbsuper
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: dgv
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: endb
+  - relation_type: prov:hadPrimarySource
+    source: enhanceratlas
+  - relation_type: prov:hadPrimarySource
+    source: ccre
+  - relation_type: prov:hadPrimarySource
+    source: fire
+  - relation_type: prov:hadPrimarySource
+    source: motifmap
+  product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, Turtle format
+  format: ttl
+  id: hra-kg.graph.ttl
+  name: HRA KG graph data, v2.2, Turtle format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 204030087
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, JSON-LD format
+  format: jsonld
+  id: hra-kg.graph.json
+  name: HRA KG graph data, v2.2, JSON-LD format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 18043
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, RDF/XML format
+  format: rdfxml
+  id: hra-kg.graph.xml
+  name: HRA KG graph data, v2.2, RDF/XML format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 185060502
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Triples format
+  format: ntriples
+  id: hra-kg.graph.nt
+  name: HRA KG graph data, v2.2, N-Triples format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 291382102
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Quads format
+  format: nquads
+  id: hra-kg.graph.nq
+  name: HRA KG graph data, v2.2, N-Quads format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 376981902
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
+- category: GraphProduct
+  compression: targz
+  description: KGX Distribution of KG-Alzheimers
+  format: kgx
+  id: kg-alzheimers.graph
+  name: KGX Distribution of KG-Alzheimers
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-alzheimers
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 210868256
+  product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+- category: GraphProduct
+  description: KGX nodes file for EBI Gene2Phenotype KG
+  format: kgx-jsonl
+  id: kg-ebi-gene2pheno.nodes.kgx
+  name: EBI gene2pheno KGX nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 62139
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_nodes.jsonl
+- category: GraphProduct
+  description: KGX edges file for EBI Gene2Phenotype KG
+  format: kgx-jsonl
+  id: kg-ebi-gene2pheno.edges.kgx
+  name: EBI gene2pheno KGX edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 133106
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_edges.jsonl
+- category: GraphProduct
+  description: TRAPI edges file for EBI Gene2Phenotype KG
+  format: trapi-jsonl
+  id: kg-ebi-gene2pheno.edges.trapi
+  name: EBI gene2pheno TRAPI edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 142045
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_trapi_edges.jsonl
+- category: GraphProduct
+  description: KGX nodes for Molecular Data KP
+  format: kgx
+  id: molecular-data-kp.graph.nodes
+  name: Nodes for Molecular Data KP
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molecular-data-kp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  product_file_size: 3676906360
+  product_url: https://molepro.s3.amazonaws.com/nodes.tsv
+- category: GraphProduct
+  description: KGX edges for Molecular Data KP
+  format: kgx
+  id: molecular-data-kp.graph.edges
+  name: Edges for Molecular Data KP
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molecular-data-kp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  product_file_size: 20140191116
+  product_url: https://molepro.s3.amazonaws.com/edges.tsv
+- category: GraphProduct
+  description: KGX distribution of the SRI-Reference KG
+  format: kgx
+  id: sri-reference-kg.graph
+  name: SRI-Reference KG (KGX distribution)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sri-reference-kg
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: ddanat
+  - relation_type: prov:hadPrimarySource
+    source: ddpheno
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: fypo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: upheno
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: wbphenotype
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  - relation_type: prov:hadPrimarySource
+    source: zfs
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: icd10cm
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  - relation_type: prov:hadPrimarySource
+    source: decipher
+  - relation_type: prov:hadPrimarySource
+    source: mmrrc
+  - relation_type: prov:hadPrimarySource
+    source: cureid
+  - relation_type: prov:hadPrimarySource
+    source: phenopacket-store
+  product_file_size: 230046094
+  product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 publications:
 - authors:
   - Seal RL

@@ -8,7 +8,7 @@ contacts:
     value: https://allenai.org/
   label: Allen Institute for AI (AI2)
 creation_date: '2026-06-18T00:00:00Z'
-description: 'CORD-19 (the COVID-19 Open Research Dataset) is a freely available corpus
+description: CORD-19 (the COVID-19 Open Research Dataset) is a freely available corpus
   of tens of thousands of scholarly articles about COVID-19, SARS-CoV-2, and the broader
   coronavirus family, assembled by the Allen Institute for AI (AI2) in partnership
   with the White House Office of Science and Technology Policy (OSTP), the National
@@ -18,7 +18,7 @@ description: 'CORD-19 (the COVID-19 Open Research Dataset) is a freely available
   corpus a widely used resource for text mining, information retrieval, and natural
   language processing during the pandemic. It is an upstream literature source for
   KG-COVID-19. The dataset is no longer maintained; its final release was issued on
-  2 June 2022 and AI2 has since sunset the project.'
+  2 June 2022 and AI2 has since sunset the project.
 domains:
 - literature
 - biomedical
@@ -55,6 +55,50 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cord-19
   product_url: https://allenai.org/data/cord-19
+- category: GraphProduct
+  description: KGX nodes and edges for KG-COVID-19
+  format: kgx
+  id: kg-covid-19.graph
+  name: KG-COVID-19 graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cord-19
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://kghub.io/kg-covid-19/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Wang LL
@@ -91,7 +135,6 @@ publications:
   year: '2020'
 repository: https://github.com/allenai/cord19
 ---
-
 ## Description
 
 CORD-19, the COVID-19 Open Research Dataset, is a freely available corpus of tens

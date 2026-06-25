@@ -1325,9 +1325,130 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: GraphProduct
+  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
+    \ levels (A\u2013E)"
+  id: dorothea.graph
+  name: DoRothEA Regulon Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
+  product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
+- category: GraphProduct
+  description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
+  dump_format: neo4j
+  id: genomickb.graph
+  name: GenomicKB Graph Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genomickb
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: epd
+  - relation_type: prov:hadPrimarySource
+    source: dbsuper
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: dgv
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: endb
+  - relation_type: prov:hadPrimarySource
+    source: enhanceratlas
+  - relation_type: prov:hadPrimarySource
+    source: ccre
+  - relation_type: prov:hadPrimarySource
+    source: fire
+  - relation_type: prov:hadPrimarySource
+    source: motifmap
+  product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+- category: GraphProduct
+  description: GP_KG.txt
+  edge_count: 1246726
+  id: gp-kg.graph
+  name: GP-KG
+  node_count: 61146
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gp-kg
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: goa
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: phenomebrowser
+  - relation_type: prov:wasDerivedFrom
+    source: treatkb
+  product_file_size: 48397035
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
 publications:
 - authors:
-  - François Aguet
+  - "Fran\xE7ois Aguet"
   - GTEx Consortium
   doi: 10.1126/science.aaz1776
   id: doi:10.1126/science.aaz1776

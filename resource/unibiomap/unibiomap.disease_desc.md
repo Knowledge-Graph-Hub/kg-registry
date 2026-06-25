@@ -6,6 +6,14 @@ id: unibiomap.disease_desc
 name: UniBioMap Disease Descriptions
 original_source:
 - relation_type: prov:hadPrimarySource
+  source: umls
+- relation_type: prov:hadPrimarySource
+  source: mesh
+- relation_type: prov:hadPrimarySource
+  source: omim
+- relation_type: prov:hadPrimarySource
+  source: doid
+- relation_type: prov:hadPrimarySource
   source: unibiomap
 product_url: https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json
 warnings:

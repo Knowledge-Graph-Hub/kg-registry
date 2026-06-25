@@ -6,6 +6,8 @@ id: unibiomap.protein_desc
 name: UniBioMap Protein Descriptions
 original_source:
 - relation_type: prov:hadPrimarySource
+  source: uniprot
+- relation_type: prov:hadPrimarySource
   source: unibiomap
 product_url: https://aideepmed.com/UniBioMap/database/unibiomap/protein_desc.json
 warnings:

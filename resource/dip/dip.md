@@ -877,11 +877,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-24: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-24: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-25: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -1251,6 +1251,43 @@ products:
     source: innatedb
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
+- category: GraphProduct
+  description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
+    diseases, and associations
+  format: http
+  id: pharmdb.graph
+  name: PharmDB-K Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: gad
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: t3db
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
 publications:
 - authors:
   - I. Xenarios

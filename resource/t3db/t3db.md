@@ -8,8 +8,8 @@ description: The Toxin and Toxin Target Database (T3DB), also known as the Toxic
   including pollutants, pesticides, drugs, and food toxins, annotated with chemical,
   toxicological, mechanistic, and target details across more than 90 data fields per
   record. Each toxin is linked to its corresponding protein, gene, or other molecular
-  targets along with the associated mechanisms of toxicity. T3DB is an upstream
-  primary source for PharmDB.
+  targets along with the associated mechanisms of toxicity. T3DB is an upstream primary
+  source for PharmDB.
 domains:
 - toxicology
 - chemistry and biochemistry
@@ -21,7 +21,7 @@ layout: resource_detail
 license:
   id: ''
   label: Not specified
-name: "Toxin and Toxin Target Database"
+name: Toxin and Toxin Target Database
 products:
 - category: GraphicalInterface
   description: Web portal for browsing and searching T3DB toxins, their targets, and
@@ -48,6 +48,43 @@ products:
   - URL returned HTTP 403 when checked on 2026-06-18 because the site is served behind
     a Cloudflare bot challenge (Cf-Mitigated_ challenge)_ the server is responding
     and the site is reachable in a standard browser.
+- category: GraphProduct
+  description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
+    diseases, and associations
+  format: http
+  id: pharmdb.graph
+  name: PharmDB-K Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: gad
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: t3db
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
 publications:
 - authors:
   - Wishart D

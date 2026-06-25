@@ -6,6 +6,8 @@ id: unibiomap.phenotype_desc
 name: UniBioMap Phenotype Descriptions
 original_source:
 - relation_type: prov:hadPrimarySource
+  source: hp
+- relation_type: prov:hadPrimarySource
   source: unibiomap
 product_url: https://aideepmed.com/UniBioMap/database/unibiomap/phenotype_desc.json
 warnings:

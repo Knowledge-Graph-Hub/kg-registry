@@ -5,10 +5,10 @@ creation_date: '2026-06-18T00:00:00Z'
 description: The Genetic Association Database (GAD) was an archive of human genetic
   association studies compiled from peer-reviewed literature, cataloging reported
   links between genes and complex diseases or phenotypes. Developed and hosted at
-  the U.S. National Institutes of Health (NIH), it aimed to support standardized
-  analysis of gene-disease associations. The resource has been archived and is no
-  longer maintained or updated, and its original web portal is no longer reachable.
-  GAD served as an upstream primary source for downstream resources such as PharmDB.
+  the U.S. National Institutes of Health (NIH), it aimed to support standardized analysis
+  of gene-disease associations. The resource has been archived and is no longer maintained
+  or updated, and its original web portal is no longer reachable. GAD served as an
+  upstream primary source for downstream resources such as PharmDB.
 domains:
 - genomics
 - clinical
@@ -33,6 +33,43 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gad
   product_url: https://doi.org/10.1038/ng0504-431
+- category: GraphProduct
+  description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
+    diseases, and associations
+  format: http
+  id: pharmdb.graph
+  name: PharmDB-K Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: gad
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: t3db
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
 publications:
 - authors:
   - Becker KG

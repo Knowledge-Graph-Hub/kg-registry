@@ -1369,6 +1369,87 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: GraphProduct
+  description: KGX nodes and edges for KG-COVID-19
+  format: kgx
+  id: kg-covid-19.graph
+  name: KG-COVID-19 graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cord-19
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://kghub.io/kg-covid-19/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
+    diseases, and associations
+  format: http
+  id: pharmdb.graph
+  name: PharmDB-K Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: gad
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: t3db
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
 publications:
 - authors:
   - Ying Zhou

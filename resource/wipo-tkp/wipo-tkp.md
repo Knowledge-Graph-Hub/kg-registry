@@ -2,27 +2,25 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.wipo.int/en/web/traditional-knowledge
-    label: World Intellectual Property Organization (WIPO)
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.wipo.int/en/web/traditional-knowledge
+  label: World Intellectual Property Organization (WIPO)
 creation_date: '2026-06-18T00:00:00Z'
-description: >-
-  The World Intellectual Property Organization (WIPO) maintains a portal and
-  associated resources on traditional knowledge (TK), traditional cultural
-  expressions, and genetic resources, including documentation related to
-  traditional and herbal medicine knowledge held by indigenous and local
-  communities. WIPO's TK pages provide policy materials, guidance, and links to
-  databases and registries of traditional knowledge, such as documentation of
-  traditional medicinal systems that intersect with pharmacology and natural
-  product research. These resources have been cited as an upstream reference for
-  PharmDB, a database of traditional Korean medicine. The portal serves as a
-  reference hub rather than a single downloadable dataset.
+description: The World Intellectual Property Organization (WIPO) maintains a portal
+  and associated resources on traditional knowledge (TK), traditional cultural expressions,
+  and genetic resources, including documentation related to traditional and herbal
+  medicine knowledge held by indigenous and local communities. WIPO's TK pages provide
+  policy materials, guidance, and links to databases and registries of traditional
+  knowledge, such as documentation of traditional medicinal systems that intersect
+  with pharmacology and natural product research. These resources have been cited
+  as an upstream reference for PharmDB, a database of traditional Korean medicine.
+  The portal serves as a reference hub rather than a single downloadable dataset.
 domains:
-  - pharmacology
-  - public health
-  - literature
+- pharmacology
+- public health
+- literature
 homepage_url: https://www.wipo.int/en/web/traditional-knowledge
 id: wipo-tkp
 last_modified_date: '2026-06-18T00:00:00Z'
@@ -30,18 +28,56 @@ layout: resource_detail
 license:
   id: ''
   label: Not specified
-name: "WIPO Traditional Knowledge Resources"
+name: WIPO Traditional Knowledge Resources
 products:
-  - category: GraphicalInterface
-    description: WIPO Traditional Knowledge web portal providing access to TK resources, policy materials, and links to traditional knowledge databases relevant to traditional and herbal medicine.
-    id: wipo-tkp.portal
-    name: WIPO Traditional Knowledge Portal
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: wipo-tkp
-    product_url: https://www.wipo.int/en/web/traditional-knowledge
+- category: GraphicalInterface
+  description: WIPO Traditional Knowledge web portal providing access to TK resources,
+    policy materials, and links to traditional knowledge databases relevant to traditional
+    and herbal medicine.
+  id: wipo-tkp.portal
+  name: WIPO Traditional Knowledge Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
+  product_url: https://www.wipo.int/en/web/traditional-knowledge
+- category: GraphProduct
+  description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
+    diseases, and associations
+  format: http
+  id: pharmdb.graph
+  name: PharmDB-K Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: gad
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: t3db
+  - relation_type: prov:hadPrimarySource
+    source: wipo-tkp
 ---
-
 ## Description
 
 The **WIPO Traditional Knowledge Resources** are a set of web pages and linked

@@ -2910,6 +2910,566 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Anatomy relationships (determined_using_sample_from)
+  format: csv
+  id: biomarkerkg.edges.anatomy
+  name: BKG Anatomy Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarkerkg
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1229
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.edges.zip
+- category: GraphProduct
+  description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
+  dump_format: neo4j
+  id: genomickb.graph
+  name: GenomicKB Graph Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genomickb
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: epd
+  - relation_type: prov:hadPrimarySource
+    source: dbsuper
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: dgv
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: endb
+  - relation_type: prov:hadPrimarySource
+    source: enhanceratlas
+  - relation_type: prov:hadPrimarySource
+    source: ccre
+  - relation_type: prov:hadPrimarySource
+    source: fire
+  - relation_type: prov:hadPrimarySource
+    source: motifmap
+  product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+- category: GraphProduct
+  description: GP_KG.txt
+  edge_count: 1246726
+  id: gp-kg.graph
+  name: GP-KG
+  node_count: 61146
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gp-kg
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: goa
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: phenomebrowser
+  - relation_type: prov:wasDerivedFrom
+    source: treatkb
+  product_file_size: 48397035
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, Turtle format
+  format: ttl
+  id: hra-kg.graph.ttl
+  name: HRA KG graph data, v2.2, Turtle format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 204030087
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, JSON-LD format
+  format: jsonld
+  id: hra-kg.graph.json
+  name: HRA KG graph data, v2.2, JSON-LD format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 18043
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, RDF/XML format
+  format: rdfxml
+  id: hra-kg.graph.xml
+  name: HRA KG graph data, v2.2, RDF/XML format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 185060502
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Triples format
+  format: ntriples
+  id: hra-kg.graph.nt
+  name: HRA KG graph data, v2.2, N-Triples format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 291382102
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Quads format
+  format: nquads
+  id: hra-kg.graph.nq
+  name: HRA KG graph data, v2.2, N-Quads format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 376981902
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
+- category: GraphProduct
+  description: Merged KG with ontology-grounded KG and literature-based graph as TSV
+    file
+  id: np-kg.graph.tsv
+  name: NP-KG TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: np-kg
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: dideo
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: indra
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: oae
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pheknowlator
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pw
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: semrep
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1074149258
+  product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
+- category: GraphProduct
+  description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
+    multidigraph object
+  dump_format: gpickle
+  id: np-kg.graph.networkx
+  name: NP-KG gpickle
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: np-kg
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: dideo
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: indra
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: oae
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pheknowlator
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pw
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: semrep
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 936065236
+  product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
+- category: GraphProduct
+  description: The full PrimeKG dataset containing disease relationships.
+  id: primekg.graph
+  name: PrimeKG Full Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: primekg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
+    to URL
+- category: GraphProduct
+  description: KGX distribution of the SRI-Reference KG
+  format: kgx
+  id: sri-reference-kg.graph
+  name: SRI-Reference KG (KGX distribution)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sri-reference-kg
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: ddanat
+  - relation_type: prov:hadPrimarySource
+    source: ddpheno
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: fypo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: upheno
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: wbphenotype
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  - relation_type: prov:hadPrimarySource
+    source: zfs
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: icd10cm
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  - relation_type: prov:hadPrimarySource
+    source: decipher
+  - relation_type: prov:hadPrimarySource
+    source: mmrrc
+  - relation_type: prov:hadPrimarySource
+    source: cureid
+  - relation_type: prov:hadPrimarySource
+    source: phenopacket-store
+  product_file_size: 230046094
+  product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 publications:
 - authors:
   - Mungall CJ

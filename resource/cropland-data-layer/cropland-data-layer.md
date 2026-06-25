@@ -10,11 +10,11 @@ contacts:
 creation_date: '2026-06-18T00:00:00Z'
 description: The Cropland Data Layer (CDL) is an annual, georeferenced, crop-specific
   land cover raster map covering the conterminous United States, produced by the USDA
-  National Agricultural Statistics Service (NASS). It is generated from satellite imagery
-  and extensive agricultural ground reference data, classifying each 30-meter pixel
-  into crop types and other land cover categories. The CDL serves as an upstream source
-  for KnowWhereGraph and supports agricultural monitoring, acreage estimation, and
-  land use analysis.
+  National Agricultural Statistics Service (NASS). It is generated from satellite
+  imagery and extensive agricultural ground reference data, classifying each 30-meter
+  pixel into crop types and other land cover categories. The CDL serves as an upstream
+  source for KnowWhereGraph and supports agricultural monitoring, acreage estimation,
+  and land use analysis.
 domains:
 - agriculture
 - environment
@@ -26,7 +26,7 @@ layout: resource_detail
 license:
   id: ''
   label: US federal government public domain
-name: "Cropland Data Layer"
+name: Cropland Data Layer
 products:
 - category: GraphicalInterface
   description: CroplandCROS web mapping application for interactive viewing, querying,
@@ -38,12 +38,63 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cropland-data-layer
   product_url: https://croplandcros.scinet.usda.gov/
+- category: GraphProduct
+  description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
+    30+ environmental and geospatial data layers accessible through SPARQL endpoint
+  edge_count: 29000000000
+  format: rdfxml
+  id: knowwheregraph.graph
+  name: KnowWhereGraph RDF Knowledge Graph
+  node_count: 5000000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: knowwheregraph
+  - relation_type: prov:wasDerivedFrom
+    source: wikidata
+  - relation_type: prov:hadPrimarySource
+    source: bluesky
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
+  - relation_type: prov:hadPrimarySource
+    source: cdc-svi
+  - relation_type: prov:hadPrimarySource
+    source: cropland-data-layer
+  - relation_type: prov:hadPrimarySource
+    source: epa-aqs
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  - relation_type: prov:hadPrimarySource
+    source: gnis
+  - relation_type: prov:hadPrimarySource
+    source: hifld
+  - relation_type: prov:hadPrimarySource
+    source: mtbs
+  - relation_type: prov:hadPrimarySource
+    source: nhpn
+  - relation_type: prov:hadPrimarySource
+    source: nifc
+  - relation_type: prov:hadPrimarySource
+    source: noaa-hms
+  - relation_type: prov:hadPrimarySource
+    source: noaa-ncei
+  - relation_type: prov:hadPrimarySource
+    source: openfema
+  - relation_type: prov:hadPrimarySource
+    source: reliefweb
+  - relation_type: prov:hadPrimarySource
+    source: ssurgo
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  - relation_type: prov:hadPrimarySource
+    source: usdm
+  - relation_type: prov:hadPrimarySource
+    source: usgs-comcat
+  product_url: https://knowwheregraph.org/
 publications:
 - id: doi:10.1080/10106049.2011.562309
   title: 'Monitoring US agriculture: the US Department of Agriculture, National Agricultural
     Statistics Service, Cropland Data Layer Program'
 ---
-
 The Cropland Data Layer (CDL) is an annual crop-specific land cover product for the
 conterminous United States, produced by the USDA National Agricultural Statistics
 Service (NASS). Built from satellite imagery combined with ground reference data,

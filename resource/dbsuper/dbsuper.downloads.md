@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: dbsuper
 product_url: https://asntech.org/dbsuper/download.php
+warnings:
+- File was not able to be retrieved when checked on 2026-06-24_ Timeout connecting
+  to URL
 layout: product_detail
 ---

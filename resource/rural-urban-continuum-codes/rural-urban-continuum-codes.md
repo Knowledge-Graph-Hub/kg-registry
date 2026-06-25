@@ -8,15 +8,14 @@ contacts:
     value: https://www.ers.usda.gov/contact-us
   label: USDA Economic Research Service
 creation_date: '2026-06-18T00:00:00Z'
-description: >-
-  The Rural-Urban Continuum Codes (RUCC) are a classification scheme from the
-  USDA Economic Research Service that distinguishes US counties by their
-  metropolitan or nonmetropolitan status and degree of urbanization. Metro
-  counties are classified by the population size of their metro area, and
-  nonmetro counties are classified by degree of urbanization and adjacency to a
-  metro area. The codes provide a county-level measure of rurality widely used
-  for socioeconomic and geographic analysis. RUCC serves as an upstream source
-  for the Cancer Registry KG, supporting socioeconomic and geographic linkage.
+description: The Rural-Urban Continuum Codes (RUCC) are a classification scheme from
+  the USDA Economic Research Service that distinguishes US counties by their metropolitan
+  or nonmetropolitan status and degree of urbanization. Metro counties are classified
+  by the population size of their metro area, and nonmetro counties are classified
+  by degree of urbanization and adjacency to a metro area. The codes provide a county-level
+  measure of rurality widely used for socioeconomic and geographic analysis. RUCC
+  serves as an upstream source for the Cancer Registry KG, supporting socioeconomic
+  and geographic linkage.
 domains:
 - public health
 - agriculture
@@ -28,11 +27,11 @@ layout: resource_detail
 license:
   id: https://www.usa.gov/government-works
   label: U.S. Government Work (public domain)
-name: "Rural-Urban Continuum Codes"
+name: Rural-Urban Continuum Codes
 products:
 - category: GraphicalInterface
-  description: USDA ERS Rural-Urban Continuum Codes data product page, providing
-    documentation, methodology, and downloadable county-level RUCC datasets.
+  description: USDA ERS Rural-Urban Continuum Codes data product page, providing documentation,
+    methodology, and downloadable county-level RUCC datasets.
   format: http
   id: rural-urban-continuum-codes.ers-page
   name: USDA ERS Rural-Urban Continuum Codes data page
@@ -40,8 +39,27 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rural-urban-continuum-codes
   product_url: https://www.ers.usda.gov/data-products/rural-urban-continuum-codes
+- category: Product
+  description: Linked neighborhood concentrated disadvantage index (CDI) dataset for
+    Louisiana and Kentucky census tracts, enabling socioeconomic analysis of cancer
+    incidence patterns and disparities. Demonstrates knowledge graph capability for
+    third-party data integration to explain variation in cancer outcomes.
+  id: cancer-registry-kg.cdi
+  name: Concentrated Disadvantage Index Integration
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cancer-registry-kg
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  - relation_type: prov:hadPrimarySource
+    source: rural-urban-continuum-codes
+  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 ---
-
 ## Description
 
 The **Rural-Urban Continuum Codes (RUCC)** are a county-level classification

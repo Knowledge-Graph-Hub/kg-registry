@@ -32,8 +32,8 @@ products:
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
-  id: disgenet.data
   format: http
+  id: disgenet.data
   name: DisGeNET Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -312,8 +312,8 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  id: rtx-kg2.neo4j
   format: http
+  id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
   name: RTX-KG2 Neo4j
@@ -421,8 +421,8 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
-  id: alzkb.data
   format: mixed
+  id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -476,8 +476,8 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
-  id: ubkg.neo4j
   format: neo4j
+  id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -590,8 +590,8 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  id: bioteque.embeddings
   format: mixed
+  id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -675,8 +675,8 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
   format: python
+  id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -867,8 +867,8 @@ products:
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
-  id: aop-db.data
   format: http
+  id: aop-db.data
   name: AOP-DB Data
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1111,8 +1111,8 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
-  id: cfde-gse.genesets
   format: txt
+  id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2003,11 +2003,52 @@ products:
   - relation_type: prov:used
     source: opentargets
   product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+- category: GraphProduct
+  description: The full PrimeKG dataset containing disease relationships.
+  id: primekg.graph
+  name: PrimeKG Full Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: primekg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
+    to URL
 publications:
 - authors:
-  - Janet Piñero
-  - Juan Manuel Ramírez-Anguita
-  - Josep Saüch-Pitarch
+  - "Janet Pi\xF1ero"
+  - "Juan Manuel Ram\xEDrez-Anguita"
+  - "Josep Sa\xFCch-Pitarch"
   - Francesco Ronzano
   - Emilio Centeno
   - Ferran Sanz

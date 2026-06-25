@@ -10,13 +10,13 @@ contacts:
 creation_date: '2026-06-18T00:00:00Z'
 description: The Rice Annotation Project Database (RAP-DB) provides curated genome
   annotation for the rice species Oryza sativa (Nipponbare), built on the IRGSP-1.0
-  reference assembly by the Rice Annotation Project together with the National
-  Agriculture and Food Research Organization (NARO). It integrates gene structures,
-  functional annotations, transcript and protein information, and supporting evidence
-  through both an interactive web interface and bulk download files. A central
-  resource is the RAP-MSU locus identifier mapping, which links RAP gene IDs to
-  the corresponding MSU (Michigan State University) Rice Genome Annotation Project
-  locus IDs. RAP-DB serves as the upstream primary source for eco-KG.
+  reference assembly by the Rice Annotation Project together with the National Agriculture
+  and Food Research Organization (NARO). It integrates gene structures, functional
+  annotations, transcript and protein information, and supporting evidence through
+  both an interactive web interface and bulk download files. A central resource is
+  the RAP-MSU locus identifier mapping, which links RAP gene IDs to the corresponding
+  MSU (Michigan State University) Rice Genome Annotation Project locus IDs. RAP-DB
+  serves as the upstream primary source for eco-KG.
 domains:
 - genomics
 - organisms
@@ -31,8 +31,8 @@ license:
 name: Rice Annotation Project Database
 products:
 - category: GraphicalInterface
-  description: Interactive RAP-DB web portal for browsing and searching curated
-    Oryza sativa genome annotation, gene structures, and functional information.
+  description: Interactive RAP-DB web portal for browsing and searching curated Oryza
+    sativa genome annotation, gene structures, and functional information.
   format: http
   id: rapdb.portal
   name: RAP-DB Portal
@@ -50,6 +50,38 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rapdb
   product_url: https://rapdb.dna.affrc.go.jp/download/index.html
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
+    to URL'
+- category: GraphProduct
+  compression: tar
+  description: Knowledge graph containing plant traits data from Planteome and EOL
+    TraitBank
+  format: kgx
+  id: eco-kg.graph
+  name: eco-KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eco-kg
+  - relation_type: prov:hadPrimarySource
+    source: eol-traitbank
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: maizegdb
+  - relation_type: prov:hadPrimarySource
+    source: planteome
+  - relation_type: prov:hadPrimarySource
+    source: rapdb
+  product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 publications:
 - authors:
   - Sakai H

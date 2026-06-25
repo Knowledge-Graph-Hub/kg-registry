@@ -895,9 +895,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
@@ -1472,6 +1472,19 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Variant relationships (indicated_by_presence_of)
+  format: csv
+  id: biomarkerkg.edges.variant
+  name: BKG Variant Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarkerkg
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  product_file_size: 1067491
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
 publications:
 - authors:
   - S. T. Sherry

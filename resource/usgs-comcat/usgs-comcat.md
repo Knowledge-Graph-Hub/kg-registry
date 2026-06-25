@@ -11,10 +11,10 @@ creation_date: '2026-06-18T00:00:00Z'
 description: The Advanced National Seismic System (ANSS) Comprehensive Earthquake
   Catalog (ComCat) is the U.S. Geological Survey's authoritative catalog of earthquake
   events. It aggregates seismic event records contributed by ANSS networks and other
-  sources, including event origins (location, depth, and time), magnitudes, and
-  associated phase and product data. ComCat is accessible through a web-based
-  earthquake search interface and a programmatic FDSN-standard event web service,
-  and serves as an upstream source for the KnowWhereGraph.
+  sources, including event origins (location, depth, and time), magnitudes, and associated
+  phase and product data. ComCat is accessible through a web-based earthquake search
+  interface and a programmatic FDSN-standard event web service, and serves as an upstream
+  source for the KnowWhereGraph.
 domains:
 - environment
 - general
@@ -48,6 +48,58 @@ products:
   - relation_type: prov:hadPrimarySource
     source: usgs-comcat
   product_url: https://earthquake.usgs.gov/fdsnws/event/1/
+- category: GraphProduct
+  description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
+    30+ environmental and geospatial data layers accessible through SPARQL endpoint
+  edge_count: 29000000000
+  format: rdfxml
+  id: knowwheregraph.graph
+  name: KnowWhereGraph RDF Knowledge Graph
+  node_count: 5000000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: knowwheregraph
+  - relation_type: prov:wasDerivedFrom
+    source: wikidata
+  - relation_type: prov:hadPrimarySource
+    source: bluesky
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
+  - relation_type: prov:hadPrimarySource
+    source: cdc-svi
+  - relation_type: prov:hadPrimarySource
+    source: cropland-data-layer
+  - relation_type: prov:hadPrimarySource
+    source: epa-aqs
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  - relation_type: prov:hadPrimarySource
+    source: gnis
+  - relation_type: prov:hadPrimarySource
+    source: hifld
+  - relation_type: prov:hadPrimarySource
+    source: mtbs
+  - relation_type: prov:hadPrimarySource
+    source: nhpn
+  - relation_type: prov:hadPrimarySource
+    source: nifc
+  - relation_type: prov:hadPrimarySource
+    source: noaa-hms
+  - relation_type: prov:hadPrimarySource
+    source: noaa-ncei
+  - relation_type: prov:hadPrimarySource
+    source: openfema
+  - relation_type: prov:hadPrimarySource
+    source: reliefweb
+  - relation_type: prov:hadPrimarySource
+    source: ssurgo
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  - relation_type: prov:hadPrimarySource
+    source: usdm
+  - relation_type: prov:hadPrimarySource
+    source: usgs-comcat
+  product_url: https://knowwheregraph.org/
 ---
 # USGS Comprehensive Earthquake Catalog (ComCat)
 

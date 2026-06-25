@@ -51,8 +51,8 @@ products:
     source: gnis
   product_url: https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data
 - category: GraphicalInterface
-  description: GNIS-LD, the Linked Data (RDF/GeoSPARQL) version of GNIS published by
-    the STKO Lab at UC Santa Barbara, with a public SPARQL endpoint and downloadable
+  description: GNIS-LD, the Linked Data (RDF/GeoSPARQL) version of GNIS published
+    by the STKO Lab at UC Santa Barbara, with a public SPARQL endpoint and downloadable
     triples.
   format: http
   id: gnis.linkeddata
@@ -61,8 +61,59 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gnis
   product_url: https://gnis-ld.org/
+- category: GraphProduct
+  description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
+    30+ environmental and geospatial data layers accessible through SPARQL endpoint
+  edge_count: 29000000000
+  format: rdfxml
+  id: knowwheregraph.graph
+  name: KnowWhereGraph RDF Knowledge Graph
+  node_count: 5000000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: knowwheregraph
+  - relation_type: prov:wasDerivedFrom
+    source: wikidata
+  - relation_type: prov:hadPrimarySource
+    source: bluesky
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
+  - relation_type: prov:hadPrimarySource
+    source: cdc-svi
+  - relation_type: prov:hadPrimarySource
+    source: cropland-data-layer
+  - relation_type: prov:hadPrimarySource
+    source: epa-aqs
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  - relation_type: prov:hadPrimarySource
+    source: gnis
+  - relation_type: prov:hadPrimarySource
+    source: hifld
+  - relation_type: prov:hadPrimarySource
+    source: mtbs
+  - relation_type: prov:hadPrimarySource
+    source: nhpn
+  - relation_type: prov:hadPrimarySource
+    source: nifc
+  - relation_type: prov:hadPrimarySource
+    source: noaa-hms
+  - relation_type: prov:hadPrimarySource
+    source: noaa-ncei
+  - relation_type: prov:hadPrimarySource
+    source: openfema
+  - relation_type: prov:hadPrimarySource
+    source: reliefweb
+  - relation_type: prov:hadPrimarySource
+    source: ssurgo
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  - relation_type: prov:hadPrimarySource
+    source: usdm
+  - relation_type: prov:hadPrimarySource
+    source: usgs-comcat
+  product_url: https://knowwheregraph.org/
 ---
-
 ## Description
 
 The Geographic Names Information System (GNIS) is the official U.S. gazetteer of

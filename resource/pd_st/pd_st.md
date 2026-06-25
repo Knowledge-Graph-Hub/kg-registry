@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Thorsten Henrich
+  orcid: 0000-0002-1548-3290
   contact_details:
   - contact_type: email
     value: henrich@embl.de
   - contact_type: github
     value: ThorstenHen
-  label: Thorsten Henrich
-  orcid: 0000-0002-1548-3290
 creation_date: '2025-09-29T00:00:00Z'
-description: A deprecated developmental stage ontology for the marine annelid Platynereis dumerilii. It has been superseded by the Platynereis dumerilii development and anatomy ontology (pdumdv), which OBO Foundry recommends as its successor.
+description: Description unavailable.
 domains:
 - anatomy and development
 homepage_url: http://4dx.embl.de/platy
 id: pd_st
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -26,15 +26,15 @@ license:
 name: Platynereis stage ontology
 products: []
 publications:
-  - id: doi:10.1186/1742-9994-7-31
-    doi: 10.1186/1742-9994-7-31
-    title: The normal development of Platynereis dumerilii (Nereididae, Annelida)
-    authors:
-      - Antje H. L. Fischer
-      - Thorsten Henrich
-      - Detlev Arendt
-    journal: Frontiers in Zoology
-    year: '2010'
+- id: doi:10.1186/1742-9994-7-31
+  doi: 10.1186/1742-9994-7-31
+  title: The normal development of Platynereis dumerilii (Nereididae, Annelida)
+  authors:
+  - Antje H. L. Fischer
+  - Thorsten Henrich
+  - Detlev Arendt
+  journal: Frontiers in Zoology
+  year: '2010'
 taxon:
 - NCBITaxon:6358
 ---

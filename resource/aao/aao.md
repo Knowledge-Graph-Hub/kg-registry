@@ -34,9 +34,9 @@ products:
     source: aao
   product_url: http://purl.obolibrary.org/obo/aao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
     when accessing file'
 publications: []
 taxon:

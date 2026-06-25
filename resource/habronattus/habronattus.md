@@ -5,22 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Peter Midford
+  orcid: 0000-0001-6512-3296
   contact_details:
   - contact_type: email
     value: peteremidford@yahoo.com
-  label: Peter Midford
-  orcid: 0000-0001-6512-3296
 creation_date: '2025-09-29T00:00:00Z'
-description: A demonstration of ontology construction as a general technique for
-  coding ethograms and other descriptions of behavior into machine understandable
-  forms. An ontology for courtship behavior of the spider Habronattus californicus.
-  This ontology is obsolete in the OBO Foundry.
+description: Description unavailable.
 domains:
 - organisms
 - biological systems
 homepage_url: http://www.mesquiteproject.org/ontology/Habronattus/index.html
 id: habronattus
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

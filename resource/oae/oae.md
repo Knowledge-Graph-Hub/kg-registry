@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Yongqunh He
-  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
+  label: Yongqunh He
+  orcid: 0000-0001-9189-9661
 creation_date: '2025-09-29T00:00:00Z'
 description: A biomedical ontology in the domain of adverse events
 domains:
@@ -31,12 +31,116 @@ products:
   format: owl
   id: oae.owl
   name: oae.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oae
   product_file_size: 1274564
   product_url: http://purl.obolibrary.org/obo/oae.owl
+- category: GraphProduct
+  description: Merged KG with ontology-grounded KG and literature-based graph as TSV
+    file
+  id: np-kg.graph.tsv
+  name: NP-KG TSV
   original_source:
-  - source: oae
-    relation_type: prov:hadPrimarySource
-repository: https://github.com/OAE-ontology/OAE
+  - relation_type: prov:hadPrimarySource
+    source: np-kg
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: dideo
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: indra
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: oae
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pheknowlator
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pw
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: semrep
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1074149258
+  product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
+- category: GraphProduct
+  description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
+    multidigraph object
+  dump_format: gpickle
+  id: np-kg.graph.networkx
+  name: NP-KG gpickle
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: np-kg
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: dideo
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: indra
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: oae
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pheknowlator
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pw
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: semrep
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 936065236
+  product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
 publications:
 - authors:
   - He Y
@@ -66,6 +170,7 @@ publications:
   journal: Sci Data
   title: The Ontology of Adverse Events in 2025
   year: '2026'
+repository: https://github.com/OAE-ontology/OAE
 ---
 ## Description
 

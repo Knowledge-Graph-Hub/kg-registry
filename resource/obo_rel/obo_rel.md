@@ -1,9 +1,7 @@
 ---
 id: obo_rel
 name: OBO relationship types (legacy)
-description: Defines core relations used in all OBO ontologies. This is the legacy
-  OBO Relation Ontology, now obsolete and superseded by RO, the Relations Ontology
-  (http://obofoundry.org/ontology/ro).
+description: Description unavailable.
 activity_status: inactive
 homepage_url: http://www.obofoundry.org/ro
 license:
@@ -14,7 +12,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 domains:
 - biological systems
 - general

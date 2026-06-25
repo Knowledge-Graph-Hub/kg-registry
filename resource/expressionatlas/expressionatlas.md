@@ -100,11 +100,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 500 error
     when accessing file'
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
@@ -835,6 +835,35 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- category: GraphProduct
+  compression: tar
+  description: Knowledge graph containing plant traits data from Planteome and EOL
+    TraitBank
+  format: kgx
+  id: eco-kg.graph
+  name: eco-KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eco-kg
+  - relation_type: prov:hadPrimarySource
+    source: eol-traitbank
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: maizegdb
+  - relation_type: prov:hadPrimarySource
+    source: planteome
+  - relation_type: prov:hadPrimarySource
+    source: rapdb
+  product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 publications:
 - authors:
   - Nancy George

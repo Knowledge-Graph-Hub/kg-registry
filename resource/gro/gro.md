@@ -10,12 +10,12 @@ contacts:
     value: po-discuss@plantontology.org
   label: Plant Ontology Administrators
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary for the anatomy of Graminae.
+description: Description unavailable.
 domains:
 - anatomy and development
 homepage_url: http://www.gramene.org/plant_ontology/
 id: gro
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

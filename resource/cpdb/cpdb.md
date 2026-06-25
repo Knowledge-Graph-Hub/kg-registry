@@ -42,9 +42,9 @@ products:
     source: cpdb
   product_url: http://cpdb.molgen.mpg.de/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-22: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: SOAP web service description for ConsensusPathDB programmatic access
@@ -55,6 +55,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cpdb
   product_url: http://cpdb.molgen.mpg.de/download/CPDB.wsdl
+- category: GraphProduct
+  description: Knowledge graph connecting rare diseases with genes, drugs, pathways,
+    and medical images
+  edge_count: 22293
+  id: rdbridge.graph
+  name: RDBridge Knowledge Graph
+  node_count: 11704
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdbridge
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
 publications:
 - authors:
   - Atanas Kamburov

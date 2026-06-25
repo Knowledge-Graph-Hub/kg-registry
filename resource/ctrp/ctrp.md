@@ -122,6 +122,166 @@ products:
     source: gdsc
   - relation_type: prov:wasInfluencedBy
     source: ctrp
+- category: GraphProduct
+  description: KGX nodes for Molecular Data KP
+  format: kgx
+  id: molecular-data-kp.graph.nodes
+  name: Nodes for Molecular Data KP
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molecular-data-kp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  product_file_size: 3676906360
+  product_url: https://molepro.s3.amazonaws.com/nodes.tsv
+- category: GraphProduct
+  description: KGX edges for Molecular Data KP
+  format: kgx
+  id: molecular-data-kp.graph.edges
+  name: Edges for Molecular Data KP
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molecular-data-kp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  product_file_size: 20140191116
+  product_url: https://molepro.s3.amazonaws.com/edges.tsv
 publications:
 - authors:
   - Matthew G Rees
@@ -142,7 +302,7 @@ publications:
   - C Suk-Yee Hon
   - Benito Munoz
   - Ted Liefeld
-  - Vlado Dančík
+  - "Vlado Dan\u010D\xEDk"
   - Daniel A Haber
   - Clary B Clish
   - Joshua A Bittker
@@ -154,7 +314,8 @@ publications:
   doi: 10.1038/nchembio.1986
   id: https://doi.org/10.1038/nchembio.1986
   journal: Nature Chemical Biology
-  title: Correlating chemical sensitivity and basal gene expression reveals mechanism of action
+  title: Correlating chemical sensitivity and basal gene expression reveals mechanism
+    of action
   year: '2016'
 - authors:
   - Brinton Seashore-Ludlow
@@ -176,7 +337,7 @@ publications:
   - C. Suk-Yee Hon
   - Benito Munoz
   - Ted Liefeld
-  - Vlado Dančík
+  - "Vlado Dan\u010D\xEDk"
   - Joshua A. Bittker
   - Michelle Palmer
   - James E. Bradner
@@ -190,38 +351,39 @@ publications:
   year: '2015'
 - authors:
   - Amrita Basu
-  - Nicole E. Bodycombe
-  - Jaime H. Cheah
-  - Edmund V. Price
+  - "Nicole\_E. Bodycombe"
+  - "Jaime\_H. Cheah"
+  - "Edmund\_V. Price"
   - Ke Liu
-  - Giannina I. Schaefer
-  - Richard Y. Ebright
-  - Michelle L. Stewart
+  - "Giannina\_I. Schaefer"
+  - "Richard\_Y. Ebright"
+  - "Michelle\_L. Stewart"
   - Daisuke Ito
   - Stephanie Wang
-  - Abigail L. Bracha
+  - "Abigail\_L. Bracha"
   - Ted Liefeld
   - Mathias Wawer
-  - Joshua C. Gilbert
-  - Andrew J. Wilson
+  - "Joshua\_C. Gilbert"
+  - "Andrew\_J. Wilson"
   - Nicolas Stransky
-  - Gregory V. Kryukov
+  - "Gregory\_V. Kryukov"
   - Vlado Dancik
   - Jordi Barretina
-  - Levi A. Garraway
-  - C. Suk-Yee Hon
+  - "Levi\_A. Garraway"
+  - "C.\_Suk-Yee Hon"
   - Benito Munoz
-  - Joshua A. Bittker
-  - Brent R. Stockwell
+  - "Joshua\_A. Bittker"
+  - "Brent\_R. Stockwell"
   - Dineo Khabele
-  - Andrew M. Stern
-  - Paul A. Clemons
-  - Alykhan F. Shamji
-  - Stuart L. Schreiber
+  - "Andrew\_M. Stern"
+  - "Paul\_A. Clemons"
+  - "Alykhan\_F. Shamji"
+  - "Stuart\_L. Schreiber"
   doi: 10.1016/j.cell.2013.08.003
   id: https://doi.org/10.1016/j.cell.2013.08.003
   journal: Cell
-  title: An Interactive Resource to Identify Cancer Genetic and Lineage Dependencies Targeted by Small Molecules
+  title: An Interactive Resource to Identify Cancer Genetic and Lineage Dependencies
+    Targeted by Small Molecules
   year: '2013'
 synonyms:
 - CTRP

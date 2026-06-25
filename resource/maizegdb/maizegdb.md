@@ -9,13 +9,12 @@ contacts:
   label: USDA-ARS MaizeGDB
 creation_date: '2026-06-18T00:00:00Z'
 description: MaizeGDB is the community database for maize (Zea mays) genetics and
-  genomics, maintained by the USDA-ARS. It integrates genome assemblies and gene
-  models for B73 and an expanding set of maize and related Andropogoneae lines,
-  along with gene function and expression data, genetic and physical maps,
-  phenotypes, stocks, metabolic pathways, and curated literature. The resource
-  provides genome browsers, a MaizeMine data-mining interface, and bulk downloads
-  of sequence and annotation files, and serves as the upstream data source for
-  eco-KG.
+  genomics, maintained by the USDA-ARS. It integrates genome assemblies and gene models
+  for B73 and an expanding set of maize and related Andropogoneae lines, along with
+  gene function and expression data, genetic and physical maps, phenotypes, stocks,
+  metabolic pathways, and curated literature. The resource provides genome browsers,
+  a MaizeMine data-mining interface, and bulk downloads of sequence and annotation
+  files, and serves as the upstream data source for eco-KG.
 domains:
 - genomics
 - organisms
@@ -30,33 +29,62 @@ license:
 name: MaizeGDB
 products:
 - category: DataProduct
-  description: Bulk download server hosting maize and Andropogoneae genome
-    assemblies, gene models (GFF, CDS, protein, genomic sequence), transposable
-    element annotations, and other genomics datasets.
+  description: Bulk download server hosting maize and Andropogoneae genome assemblies,
+    gene models (GFF, CDS, protein, genomic sequence), transposable element annotations,
+    and other genomics datasets.
   id: maizegdb.downloads
   name: MaizeGDB Download Server
-  product_url: https://download.maizegdb.org/
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maizegdb
+  product_url: https://download.maizegdb.org/
 - category: DataProduct
-  description: Gene model annotation files in GFF format for maize genome
-    assemblies hosted on the MaizeGDB download server.
+  description: Gene model annotation files in GFF format for maize genome assemblies
+    hosted on the MaizeGDB download server.
   id: maizegdb.gene_model_gff
   name: MaizeGDB Gene Model GFF Files
-  product_url: https://download.maizegdb.org/All_gene_model_GFF/
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maizegdb
+  product_url: https://download.maizegdb.org/All_gene_model_GFF/
 - category: DataProduct
-  description: MaizeMine data warehouse downloads providing integrated and
-    queryable maize genomics datasets.
+  description: MaizeMine data warehouse downloads providing integrated and queryable
+    maize genomics datasets.
   id: maizegdb.maizemine
   name: MaizeMine Downloads
-  product_url: https://download.maizegdb.org/MaizeMine/
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maizegdb
+  product_url: https://download.maizegdb.org/MaizeMine/
+- category: GraphProduct
+  compression: tar
+  description: Knowledge graph containing plant traits data from Planteome and EOL
+    TraitBank
+  format: kgx
+  id: eco-kg.graph
+  name: eco-KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eco-kg
+  - relation_type: prov:hadPrimarySource
+    source: eol-traitbank
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: maizegdb
+  - relation_type: prov:hadPrimarySource
+    source: planteome
+  - relation_type: prov:hadPrimarySource
+    source: rapdb
+  product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 publications:
 - authors:
   - John L Portwood II

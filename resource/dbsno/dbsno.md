@@ -49,9 +49,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 500 error
     when accessing file'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,

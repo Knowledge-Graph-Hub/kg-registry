@@ -6,6 +6,12 @@ id: unibiomap.pathway_desc
 name: UniBioMap Pathway Descriptions
 original_source:
 - relation_type: prov:hadPrimarySource
+  source: kegg
+- relation_type: prov:hadPrimarySource
+  source: reactome
+- relation_type: prov:hadPrimarySource
+  source: smpdb
+- relation_type: prov:hadPrimarySource
   source: unibiomap
 product_url: https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json
 warnings:

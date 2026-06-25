@@ -132,6 +132,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tcga
   product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+- category: GraphProduct
+  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
+    \ levels (A\u2013E)"
+  id: dorothea.graph
+  name: DoRothEA Regulon Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
+  product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 publications:
 - authors:
   - Hammal F
@@ -143,7 +168,8 @@ publications:
   id: https://doi.org/10.1093/nar/gkab996
   journal: Nucleic Acids Research
   preferred: true
-  title: 'ReMap 2022: a database of Human, Mouse, Drosophila and Arabidopsis regulatory regions from an integrative analysis of DNA-binding sequencing experiments'
+  title: 'ReMap 2022: a database of Human, Mouse, Drosophila and Arabidopsis regulatory
+    regions from an integrative analysis of DNA-binding sequencing experiments'
   year: '2022'
 taxon:
 - NCBITaxon:9606
@@ -151,7 +177,6 @@ taxon:
 - NCBITaxon:7227
 - NCBITaxon:3702
 ---
-
 # ReMap
 
 ReMap curates and reprocesses public ChIP-seq, ChIP-exo, and DAP-seq experiments to

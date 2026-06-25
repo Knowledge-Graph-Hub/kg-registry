@@ -34,8 +34,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: greenclaims
   product_url: https://github.com/DizzyPanda1/GreenwashingDetectionDataset
+- category: GraphProduct
+  description: Pre-built EmeraldGraph JSON export containing sustainability-related
+    triples extracted from corporate ESG reports.
+  edge_count: 59921
+  format: json
+  id: emeraldgraph.graph-json
+  name: EmeraldGraph JSON export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: emeraldgraph
+  - relation_type: prov:hadPrimarySource
+    source: effas-kpi
+  - relation_type: prov:hadPrimarySource
+    source: greenclaims
+  product_file_size: 2283928
+  product_url: https://github.com/ai4greenwashing/EmeraldMind/blob/main/graph_latest.json
 ---
-
 GreenClaims is the principal openly available dataset for greenwashing detection. It
 collects third-party-verified environmental claims and greenwashing allegations drawn
 from news coverage and regulatory bodies (such as advertising-standards rulings),

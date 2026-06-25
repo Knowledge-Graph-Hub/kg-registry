@@ -44,6 +44,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-24: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
@@ -308,6 +310,61 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: GraphProduct
+  description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
+  dump_format: neo4j
+  id: genomickb.graph
+  name: GenomicKB Graph Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genomickb
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: epd
+  - relation_type: prov:hadPrimarySource
+    source: dbsuper
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: dgv
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: endb
+  - relation_type: prov:hadPrimarySource
+    source: enhanceratlas
+  - relation_type: prov:hadPrimarySource
+    source: ccre
+  - relation_type: prov:hadPrimarySource
+    source: fire
+  - relation_type: prov:hadPrimarySource
+    source: motifmap
+  product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
 publications:
 - authors:
   - Aziz Khan

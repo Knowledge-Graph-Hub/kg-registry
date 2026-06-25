@@ -2,17 +2,19 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: info@monarchinitiative.org
-    id: monarchinitiative
-    label: Monarch Initiative
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: info@monarchinitiative.org
+  id: monarchinitiative
+  label: Monarch Initiative
 creation_date: '2025-10-30T00:00:00Z'
-description: The Monarch Initiative is an international consortium that integrates, aligns, and redistributes cross-species gene, genotype, variant, disease, and phenotype data to improve understanding of genetic disease and support translational research.
+description: The Monarch Initiative is an international consortium that integrates,
+  aligns, and redistributes cross-species gene, genotype, variant, disease, and phenotype
+  data to improve understanding of genetic disease and support translational research.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: https://monarchinitiative.org/
 id: monarchinitiative
 infores_id: monarchinitiative
@@ -20,72 +22,130 @@ last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: Monarch Initiative
 products:
-  - category: KnowledgeGraph
-    description: Monarch Knowledge Graph integrating phenotype, disease, gene data across species
-    format: mixed
-    id: monarchinitiative.kg
-    name: Monarch Knowledge Graph
-    original_source:
-      - source: monarchinitiative
-        relation_type: prov:hadPrimarySource
-    product_url: https://monarchinitiative.org/
-  - category: ProgrammingInterface
-    description: Monarch API for programmatic access to integrated data
-    format: http
-    id: monarchinitiative.api
-    name: Monarch API
-    original_source:
-      - source: monarchinitiative
-        relation_type: prov:hadPrimarySource
-    product_url: https://api.monarchinitiative.org/api/
-  - category: GraphicalInterface
-    description: Web interface for browsing genes, diseases, phenotypes across species
-    format: http
-    id: monarchinitiative.portal
-    name: Monarch Web Portal
-    original_source:
-      - source: monarchinitiative
-        relation_type: prov:hadPrimarySource
-    product_url: https://monarchinitiative.org/
+- category: KnowledgeGraph
+  description: Monarch Knowledge Graph integrating phenotype, disease, gene data across
+    species
+  format: mixed
+  id: monarchinitiative.kg
+  name: Monarch Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  product_url: https://monarchinitiative.org/
+- category: ProgrammingInterface
+  description: Monarch API for programmatic access to integrated data
+  format: http
+  id: monarchinitiative.api
+  name: Monarch API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  product_url: https://api.monarchinitiative.org/api/
+- category: GraphicalInterface
+  description: Web interface for browsing genes, diseases, phenotypes across species
+  format: http
+  id: monarchinitiative.portal
+  name: Monarch Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  product_url: https://monarchinitiative.org/
+- category: GraphProduct
+  compression: targz
+  description: KGX Distribution of KG-Alzheimers
+  format: kgx
+  id: kg-alzheimers.graph
+  name: KGX Distribution of KG-Alzheimers
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-alzheimers
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 210868256
+  product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
 publications:
-  - authors:
-      - Christopher J. Mungall
-      - Julie A. McMurry
-      - Sebastian Köhler
-      - James P. Balhoff
-      - Charles Borromeo
-      - Matthew Brush
-      - Seth Carbon
-      - Tom Conlin
-      - Nathan Dunn
-      - Mark Engelstad
-      - Erin Foster
-      - J.P. Gourdine
-      - Julius O.B. Jacobsen
-      - Dan Keith
-      - Bryan Laraway
-      - Suzanna E. Lewis
-      - Jeremy NguyenXuan
-      - Kent Shefchek
-      - Nicole Vasilevsky
-      - Zhou Yuan
-      - Nicole Washington
-      - Harry Hochheiser
-      - Tudor Groza
-      - Damian Smedley
-      - Peter N. Robinson
-      - Melissa A. Haendel
-    doi: 10.1093/nar/gkw1128
-    id: https://doi.org/10.1093/nar/gkw1128
-    journal: Nucleic Acids Research
-    title: 'The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species'
-    year: '2017'
+- authors:
+  - Christopher J. Mungall
+  - Julie A. McMurry
+  - "Sebastian K\xF6hler"
+  - James P. Balhoff
+  - Charles Borromeo
+  - Matthew Brush
+  - Seth Carbon
+  - Tom Conlin
+  - Nathan Dunn
+  - Mark Engelstad
+  - Erin Foster
+  - J.P. Gourdine
+  - Julius O.B. Jacobsen
+  - Dan Keith
+  - Bryan Laraway
+  - Suzanna E. Lewis
+  - Jeremy NguyenXuan
+  - Kent Shefchek
+  - Nicole Vasilevsky
+  - Zhou Yuan
+  - Nicole Washington
+  - Harry Hochheiser
+  - Tudor Groza
+  - Damian Smedley
+  - Peter N. Robinson
+  - Melissa A. Haendel
+  doi: 10.1093/nar/gkw1128
+  id: https://doi.org/10.1093/nar/gkw1128
+  journal: Nucleic Acids Research
+  title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+    phenotypes to genotypes across species'
+  year: '2017'
 repository: https://github.com/monarch-initiative
 synonyms:
-  - Monarch
-  - The Monarch Initiative
+- Monarch
+- The Monarch Initiative
 ---
-
 # Monarch Initiative
 
 ## Overview

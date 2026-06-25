@@ -9,12 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: kg-predict
 product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
-warnings:
-- File was not able to be retrieved when checked on 2026-06-22_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-06-12_ Error connecting to
-  URL_ HTTPSConnectionPool(host='nlp.case.edu', port=443)_ Max retries exceeded with
-  url_ /public/data/GPKG-Predict/code/ (Caused by NewConnectionError("HTTPSConnection(host='nlp.case.edu',
-  port=443)_ Failed to establish a new connection_ [Errno 113] No route to host"))
+warnings: []
 layout: product_detail
 ---

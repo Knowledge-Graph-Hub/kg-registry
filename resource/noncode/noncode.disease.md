@@ -4,9 +4,9 @@ description: Browse disease-related lncRNA information, especially cancer associ
 format: http
 id: noncode.disease
 name: Disease Information
-product_url: http://www.noncode.org/disease.php
-layout: product_detail
 original_source:
-  - source: noncode
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: noncode
+product_url: http://www.noncode.org/keyword_dis.php
+layout: product_detail
 ---

@@ -2,17 +2,23 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://gadm.org/about.html
-    label: GADM
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://gadm.org/about.html
+  label: GADM
 creation_date: '2026-06-18T00:00:00Z'
-description: GADM (Database of Global Administrative Areas) provides maps and spatial data of administrative boundaries for all countries and their sub-divisions. The current version (4.1) delimits over 400,000 administrative areas across multiple levels, from countries down to local divisions. The polygons are distributed for download by country or for the entire world in several geospatial formats. GADM is used as an upstream source of administrative boundary data by projects such as KnowWhereGraph.
+description: GADM (Database of Global Administrative Areas) provides maps and spatial
+  data of administrative boundaries for all countries and their sub-divisions. The
+  current version (4.1) delimits over 400,000 administrative areas across multiple
+  levels, from countries down to local divisions. The polygons are distributed for
+  download by country or for the entire world in several geospatial formats. GADM
+  is used as an upstream source of administrative boundary data by projects such as
+  KnowWhereGraph.
 domains:
-  - environment
-  - general
-  - information technology
+- environment
+- general
+- information technology
 homepage_url: https://gadm.org/
 id: gadm
 last_modified_date: '2026-06-18T00:00:00Z'
@@ -22,34 +28,88 @@ license:
   label: GADM license (free for academic/non-commercial use)
 name: GADM
 products:
-  - category: Product
-    description: Download page for GADM administrative boundary spatial data by country, the recommended approach for obtaining GADM polygons.
-    id: gadm.download_country
-    name: GADM Data Download (by country)
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: gadm
-    product_url: https://gadm.org/download_country.html
-  - category: Product
-    description: Download page for GADM administrative boundary spatial data covering the entire world.
-    id: gadm.download_world
-    name: GADM Data Download (world)
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: gadm
-    product_url: https://gadm.org/download_world.html
-  - category: DocumentationProduct
-    description: Metadata documentation describing the GADM data, its structure, and administrative levels.
-    id: gadm.metadata
-    name: GADM Metadata
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: gadm
-    product_url: https://gadm.org/metadata.html
+- category: Product
+  description: Download page for GADM administrative boundary spatial data by country,
+    the recommended approach for obtaining GADM polygons.
+  id: gadm.download_country
+  name: GADM Data Download (by country)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  product_url: https://gadm.org/download_country.html
+- category: Product
+  description: Download page for GADM administrative boundary spatial data covering
+    the entire world.
+  id: gadm.download_world
+  name: GADM Data Download (world)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  product_url: https://gadm.org/download_world.html
+- category: DocumentationProduct
+  description: Metadata documentation describing the GADM data, its structure, and
+    administrative levels.
+  id: gadm.metadata
+  name: GADM Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  product_url: https://gadm.org/metadata.html
+- category: GraphProduct
+  description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
+    30+ environmental and geospatial data layers accessible through SPARQL endpoint
+  edge_count: 29000000000
+  format: rdfxml
+  id: knowwheregraph.graph
+  name: KnowWhereGraph RDF Knowledge Graph
+  node_count: 5000000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: knowwheregraph
+  - relation_type: prov:wasDerivedFrom
+    source: wikidata
+  - relation_type: prov:hadPrimarySource
+    source: bluesky
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
+  - relation_type: prov:hadPrimarySource
+    source: cdc-svi
+  - relation_type: prov:hadPrimarySource
+    source: cropland-data-layer
+  - relation_type: prov:hadPrimarySource
+    source: epa-aqs
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  - relation_type: prov:hadPrimarySource
+    source: gnis
+  - relation_type: prov:hadPrimarySource
+    source: hifld
+  - relation_type: prov:hadPrimarySource
+    source: mtbs
+  - relation_type: prov:hadPrimarySource
+    source: nhpn
+  - relation_type: prov:hadPrimarySource
+    source: nifc
+  - relation_type: prov:hadPrimarySource
+    source: noaa-hms
+  - relation_type: prov:hadPrimarySource
+    source: noaa-ncei
+  - relation_type: prov:hadPrimarySource
+    source: openfema
+  - relation_type: prov:hadPrimarySource
+    source: reliefweb
+  - relation_type: prov:hadPrimarySource
+    source: ssurgo
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  - relation_type: prov:hadPrimarySource
+    source: usdm
+  - relation_type: prov:hadPrimarySource
+    source: usgs-comcat
+  product_url: https://knowwheregraph.org/
 synonyms:
-  - Database of Global Administrative Areas
+- Database of Global Administrative Areas
 ---
-
 # GADM (Database of Global Administrative Areas)
 
 ## Overview

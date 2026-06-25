@@ -5,19 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Mike Cherry
+  orcid: 0000-0001-9163-5180
   contact_details:
   - contact_type: email
     value: cherry@genome.stanford.edu
-  label: Mike Cherry
-  orcid: 0000-0001-9163-5180
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary for the phenotypes of budding yeast. This ontology is obsolete and has been replaced by the Ascomycete Phenotype Ontology (APO).
+description: Description unavailable.
 domains:
 - phenotype
 - biological systems
 homepage_url: http://www.yeastgenome.org/
 id: ypo
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

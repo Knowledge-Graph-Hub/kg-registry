@@ -148,6 +148,60 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+- category: GraphProduct
+  description: KGX nodes file for EBI Gene2Phenotype KG
+  format: kgx-jsonl
+  id: kg-ebi-gene2pheno.nodes.kgx
+  name: EBI gene2pheno KGX nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 62139
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_nodes.jsonl
+- category: GraphProduct
+  description: KGX edges file for EBI Gene2Phenotype KG
+  format: kgx-jsonl
+  id: kg-ebi-gene2pheno.edges.kgx
+  name: EBI gene2pheno KGX edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 133106
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_edges.jsonl
+- category: GraphProduct
+  description: TRAPI edges file for EBI Gene2Phenotype KG
+  format: trapi-jsonl
+  id: kg-ebi-gene2pheno.edges.trapi
+  name: EBI gene2pheno TRAPI edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-ebi-gene2pheno
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  product_file_size: 142045
+  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_trapi_edges.jsonl
 repository: https://github.com/EBI-G2P/gene2phenotype_api
 synonyms:
 - G2P

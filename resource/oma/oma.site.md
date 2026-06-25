@@ -8,6 +8,6 @@ name: OMA Browser
 original_source:
 - relation_type: prov:hadPrimarySource
   source: oma
-product_url: https://omabrowser.org/oma/
+product_url: https://omabrowser.org/oma/home/
 layout: product_detail
 ---

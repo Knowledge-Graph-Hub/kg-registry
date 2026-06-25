@@ -50,6 +50,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: trrust
+  product_file_size: 297659
   product_url: https://www.grnpedia.org/trrust/data/trrust_rawdata.human.tsv
 - category: Product
   description: TRRUST v2 mouse transcription factor-target regulatory interactions
@@ -61,7 +62,33 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: trrust
+  product_file_size: 220353
   product_url: https://www.grnpedia.org/trrust/data/trrust_rawdata.mouse.tsv
+- category: GraphProduct
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
+  id: dorothea.graph
+  name: DoRothEA Regulon Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
+  product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 publications:
 - authors:
   - Han H

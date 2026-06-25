@@ -9,12 +9,12 @@ contacts:
   label: North American Association of Central Cancer Registries (NAACCR)
 creation_date: '2026-06-18T00:00:00Z'
 description: The North American Association of Central Cancer Registries (NAACCR)
-  is a collaborative umbrella organization for cancer registries, governmental
-  agencies, and professional associations across North America. NAACCR develops
-  and maintains the standardized NAACCR data standards and data dictionary used
-  for the consistent collection, coding, and exchange of cancer incidence records
-  by central cancer registries. These standards define the data items, codes, and
-  record layouts used to capture cancer surveillance data across registries.
+  is a collaborative umbrella organization for cancer registries, governmental agencies,
+  and professional associations across North America. NAACCR develops and maintains
+  the standardized NAACCR data standards and data dictionary used for the consistent
+  collection, coding, and exchange of cancer incidence records by central cancer registries.
+  These standards define the data items, codes, and record layouts used to capture
+  cancer surveillance data across registries.
 domains:
 - clinical
 - public health
@@ -49,6 +49,46 @@ products:
   - relation_type: prov:hadPrimarySource
     source: naaccr
   product_url: https://www.naaccr.org/data-standards-data-dictionary-version-archive/
+- category: GraphProduct
+  description: RDF-based knowledge graph containing 374,682 unique tumor records from
+    Louisiana Tumor Registry (2000-2016) with 240 columns of NAACCR-standardized cancer
+    data including demographics, tumor characteristics, treatment, and outcomes. Contains
+    90,673,527 triples stored in Virtuoso triplestore with SPARQL endpoint access.
+  id: cancer-registry-kg.ltr
+  name: Louisiana Tumor Registry Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cancer-registry-kg
+  - relation_type: prov:hadPrimarySource
+    source: louisiana-tumor-registry
+  - relation_type: prov:hadPrimarySource
+    source: naaccr
+  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: GraphProduct
+  description: RDF-based knowledge graph containing 207,766 unique tumor records from
+    Kentucky Cancer Registry (2010-2016) with 232 columns of cancer data. Contains
+    48,409,945 triples demonstrating the framework's ability to dynamically integrate
+    multiple registry datasets without code changes.
+  id: cancer-registry-kg.kcr
+  name: Kentucky Cancer Registry Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cancer-registry-kg
+  - relation_type: prov:hadPrimarySource
+    source: kentucky-cancer-registry
+  - relation_type: prov:hadPrimarySource
+    source: naaccr
+  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 ---
 # North American Association of Central Cancer Registries
 

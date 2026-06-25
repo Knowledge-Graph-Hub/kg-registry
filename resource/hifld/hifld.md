@@ -2,17 +2,24 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.dhs.gov/"
-    label: U.S. Department of Homeland Security
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.dhs.gov/
+  label: U.S. Department of Homeland Security
 creation_date: '2026-06-18T00:00:00Z'
-description: Homeland Infrastructure Foundation-Level Data (HIFLD) is a U.S. Department of Homeland Security program that provides national geospatial datasets describing the location and attributes of critical infrastructure across the United States. Datasets cover sectors such as hospitals and public health facilities, emergency medical and fire services, law enforcement, energy and utilities, transportation, and communications. The data are distributed as an ArcGIS Hub open-data catalog with downloads in formats including CSV, GeoJSON, KML, and shapefile, and via GeoServices/WMS/WFS APIs. HIFLD is an upstream source of the KnowWhereGraph.
+description: Homeland Infrastructure Foundation-Level Data (HIFLD) is a U.S. Department
+  of Homeland Security program that provides national geospatial datasets describing
+  the location and attributes of critical infrastructure across the United States.
+  Datasets cover sectors such as hospitals and public health facilities, emergency
+  medical and fire services, law enforcement, energy and utilities, transportation,
+  and communications. The data are distributed as an ArcGIS Hub open-data catalog
+  with downloads in formats including CSV, GeoJSON, KML, and shapefile, and via GeoServices/WMS/WFS
+  APIs. HIFLD is an upstream source of the KnowWhereGraph.
 domains:
-  - public health
-  - general
-  - information technology
+- public health
+- general
+- information technology
 homepage_url: https://hifld-geoplatform.hub.arcgis.com/
 id: hifld
 last_modified_date: '2026-06-18T00:00:00Z'
@@ -20,30 +27,84 @@ layout: resource_detail
 license:
   id: ''
   label: Not specified
-name: "Homeland Infrastructure Foundation-Level Data (HIFLD)"
+name: Homeland Infrastructure Foundation-Level Data (HIFLD)
 products:
-  - category: Product
-    description: HIFLD ArcGIS Hub open-data catalog of U.S. critical infrastructure geospatial datasets, with downloads in CSV, GeoJSON, KML, GeoTIFF, and shapefile formats.
-    format: csv
-    id: "hifld.catalog"
-    is_public: true
-    name: HIFLD Open Data Catalog
-    product_url: https://hifld-geoplatform.hub.arcgis.com/search
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: hifld
-  - category: ProgrammingInterface
-    description: ArcGIS Hub open-data API access to HIFLD datasets via GeoServices, WMS, and WFS endpoints for programmatic querying and download.
-    format: http
-    id: "hifld.api"
-    is_public: true
-    name: HIFLD Open Data API
-    product_url: https://hifld-geoplatform.opendata.arcgis.com/
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: hifld
+- category: Product
+  description: HIFLD ArcGIS Hub open-data catalog of U.S. critical infrastructure
+    geospatial datasets, with downloads in CSV, GeoJSON, KML, GeoTIFF, and shapefile
+    formats.
+  format: csv
+  id: hifld.catalog
+  is_public: true
+  name: HIFLD Open Data Catalog
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hifld
+  product_url: https://hifld-geoplatform.hub.arcgis.com/search
+- category: ProgrammingInterface
+  description: ArcGIS Hub open-data API access to HIFLD datasets via GeoServices,
+    WMS, and WFS endpoints for programmatic querying and download.
+  format: http
+  id: hifld.api
+  is_public: true
+  name: HIFLD Open Data API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hifld
+  product_url: https://hifld-geoplatform.opendata.arcgis.com/
+- category: GraphProduct
+  description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
+    30+ environmental and geospatial data layers accessible through SPARQL endpoint
+  edge_count: 29000000000
+  format: rdfxml
+  id: knowwheregraph.graph
+  name: KnowWhereGraph RDF Knowledge Graph
+  node_count: 5000000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: knowwheregraph
+  - relation_type: prov:wasDerivedFrom
+    source: wikidata
+  - relation_type: prov:hadPrimarySource
+    source: bluesky
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
+  - relation_type: prov:hadPrimarySource
+    source: cdc-svi
+  - relation_type: prov:hadPrimarySource
+    source: cropland-data-layer
+  - relation_type: prov:hadPrimarySource
+    source: epa-aqs
+  - relation_type: prov:hadPrimarySource
+    source: gadm
+  - relation_type: prov:hadPrimarySource
+    source: gnis
+  - relation_type: prov:hadPrimarySource
+    source: hifld
+  - relation_type: prov:hadPrimarySource
+    source: mtbs
+  - relation_type: prov:hadPrimarySource
+    source: nhpn
+  - relation_type: prov:hadPrimarySource
+    source: nifc
+  - relation_type: prov:hadPrimarySource
+    source: noaa-hms
+  - relation_type: prov:hadPrimarySource
+    source: noaa-ncei
+  - relation_type: prov:hadPrimarySource
+    source: openfema
+  - relation_type: prov:hadPrimarySource
+    source: reliefweb
+  - relation_type: prov:hadPrimarySource
+    source: ssurgo
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  - relation_type: prov:hadPrimarySource
+    source: usdm
+  - relation_type: prov:hadPrimarySource
+    source: usgs-comcat
+  product_url: https://knowwheregraph.org/
 ---
-
 # Homeland Infrastructure Foundation-Level Data (HIFLD)
 
 ## Overview

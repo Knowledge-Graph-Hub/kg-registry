@@ -42,7 +42,34 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obci
+  product_file_size: 195392
   product_url: https://proteininformationresource.org/staff/nataled/OBCI/obci.owl
+- category: GraphProduct
+  compression: zip
+  description: Nodes from OBCI
+  format: csv
+  id: biomarkerkg.nodes.role
+  name: BKG Role Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarkerkg
+  - relation_type: prov:hadPrimarySource
+    source: obci
+  product_file_size: 276
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.nodes.zip
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Role relationships (has_best_classification)
+  format: csv
+  id: biomarkerkg.edges.role
+  name: BKG Role Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarkerkg
+  - relation_type: prov:hadPrimarySource
+    source: obci
+  product_file_size: 355306
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.edges.zip
 repository: https://github.com/clinical-biomarkers/OBCI
 ---
 The Ontology for Biomarkers of Clinical Interest (OBCI) is an OWL-formatted ontology that formally defines biomarkers for diseases, phenotypes, and effects. It is developed and maintained by the clinical-biomarkers group, the same community responsible for the GlyGen and OncoMX biomarker data resources.

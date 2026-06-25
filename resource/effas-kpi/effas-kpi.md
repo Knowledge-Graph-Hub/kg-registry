@@ -37,6 +37,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: effas-kpi
+  product_file_size: 1275425
   product_url: https://effas.com/wp-content/uploads/2021/09/KPIs_for_ESG_3_0_Final.pdf
 - category: GraphicalInterface
   description: EFFAS announcement and landing page for the KPIs for ESG 3.0 exposure
@@ -48,6 +49,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: effas-kpi
   product_url: https://effas.com/download/effas-dvfa-launch-exposure-draft-kpis-for-esg-3-0/
+- category: GraphProduct
+  description: Pre-built EmeraldGraph JSON export containing sustainability-related
+    triples extracted from corporate ESG reports.
+  edge_count: 59921
+  format: json
+  id: emeraldgraph.graph-json
+  name: EmeraldGraph JSON export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: emeraldgraph
+  - relation_type: prov:hadPrimarySource
+    source: effas-kpi
+  - relation_type: prov:hadPrimarySource
+    source: greenclaims
+  product_file_size: 2283928
+  product_url: https://github.com/ai4greenwashing/EmeraldMind/blob/main/graph_latest.json
 ---
 KPIs for ESG is a standardized framework of Key Performance Indicators for
 Environmental, Social, and Governance (ESG) reporting, published by EFFAS together

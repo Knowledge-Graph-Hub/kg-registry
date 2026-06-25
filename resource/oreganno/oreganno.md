@@ -2,14 +2,14 @@
 activity_status: inactive
 category: DataSource
 creation_date: '2026-06-18T00:00:00Z'
-description: "ORegAnno (the Open Regulatory Annotation database) is a community-driven,\
-  \ literature-curated resource of regulatory regions, transcription factor binding\
-  \ sites, regulatory polymorphisms, and regulatory interactions across multiple species.\
-  \ It served as an upstream primary source for regulatory annotation resources such\
-  \ as DoRothEA. The original standalone interactive site (oreganno.org) is no longer\
-  \ operational and now redirects to the UCSC Genome Browser; the curated ORegAnno\
-  \ 3.0 data set lives on as a track and bulk download in the UCSC Genome Browser and\
-  \ is also distributed via Ensembl."
+description: ORegAnno (the Open Regulatory Annotation database) is a community-driven,
+  literature-curated resource of regulatory regions, transcription factor binding
+  sites, regulatory polymorphisms, and regulatory interactions across multiple species.
+  It served as an upstream primary source for regulatory annotation resources such
+  as DoRothEA. The original standalone interactive site (oreganno.org) is no longer
+  operational and now redirects to the UCSC Genome Browser; the curated ORegAnno 3.0
+  data set lives on as a track and bulk download in the UCSC Genome Browser and is
+  also distributed via Ensembl.
 domains:
 - genomics
 - systems biology
@@ -23,15 +23,41 @@ license:
 name: ORegAnno
 products:
 - category: DataProduct
-  description: "ORegAnno 3.0 regulatory annotation as a UCSC Genome Browser track and\
-    \ bulk download (human, hg38)."
+  description: ORegAnno 3.0 regulatory annotation as a UCSC Genome Browser track and
+    bulk download (human, hg38).
   format: gff
   id: oreganno.ucsc
   name: ORegAnno UCSC Track Download
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oreganno
+  product_file_size: 20472081
   product_url: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/oreganno.txt.gz
+- category: GraphProduct
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
+  id: dorothea.graph
+  name: DoRothEA Regulon Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
+  product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 publications:
 - authors:
   - Robert Lesurf

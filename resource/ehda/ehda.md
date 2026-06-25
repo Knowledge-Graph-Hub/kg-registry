@@ -10,12 +10,12 @@ contacts:
   - contact_type: email
     value: J.Bard@ed.ac.uk
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of stage-specific anatomical structures of the human. It has been designed to mesh with the mouse anatomy and incorporates each Carnegie stage of development (CS1-20).
+description: Description unavailable.
 domains:
 - anatomy and development
 homepage_url: http://genex.hgu.mrc.ac.uk/
 id: ehda
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-25T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

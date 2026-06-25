@@ -55,6 +55,161 @@ products:
     source: pcl
   product_file_size: 39796128
   product_url: http://purl.obolibrary.org/obo/pcl.obo
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, Turtle format
+  format: ttl
+  id: hra-kg.graph.ttl
+  name: HRA KG graph data, v2.2, Turtle format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 204030087
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, JSON-LD format
+  format: jsonld
+  id: hra-kg.graph.json
+  name: HRA KG graph data, v2.2, JSON-LD format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 18043
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, RDF/XML format
+  format: rdfxml
+  id: hra-kg.graph.xml
+  name: HRA KG graph data, v2.2, RDF/XML format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 185060502
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Triples format
+  format: ntriples
+  id: hra-kg.graph.nt
+  name: HRA KG graph data, v2.2, N-Triples format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 291382102
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Quads format
+  format: nquads
+  id: hra-kg.graph.nq
+  name: HRA KG graph data, v2.2, N-Quads format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 376981902
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
 publications:
 - authors:
   - Shawn Zheng Kai Tan
@@ -141,7 +296,7 @@ publications:
   - Rimorin C
   - Rivkin A
   - Romanow WJ
-  - Sedeño-Cortés AE
+  - "Sede\xF1o-Cort\xE9s AE"
   - Siletti K
   - Somasundaram S
   - Sulc J
@@ -160,7 +315,7 @@ publications:
   - Gillis J
   - Hertzano R
   - Hof PR
-  - Höllt T
+  - "H\xF6llt T"
   - Horwitz GD
   - Keene CD
   - Kharchenko PV
@@ -206,7 +361,7 @@ publications:
   - Penn O
   - Yao Z
   - Eggermont J
-  - Höllt T
+  - "H\xF6llt T"
   - Levi BP
   - Shehata SI
   - Aevermann B

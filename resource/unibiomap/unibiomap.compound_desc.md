@@ -6,6 +6,12 @@ id: unibiomap.compound_desc
 name: UniBioMap Compound Descriptions
 original_source:
 - relation_type: prov:hadPrimarySource
+  source: inchikey
+- relation_type: prov:hadPrimarySource
+  source: pubchem
+- relation_type: prov:hadPrimarySource
+  source: chebi
+- relation_type: prov:hadPrimarySource
   source: unibiomap
 product_url: https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json
 warnings:

@@ -2,48 +2,214 @@
 activity_status: active
 category: Ontology
 contacts:
-  - category: Organization
-    label: Indiana University Cyberinfrastructure for Network Science Center (CNS)
-    contact_details:
-      - contact_type: url
-        value: "https://cns.iu.edu/"
-description: The Common Coordinate Framework (CCF) Ontology is the spatial and semantic framework that underpins the Human Reference Atlas (HRA) developed within the NIH Human BioMolecular Atlas Program (HuBMAP). It encodes the relationships among anatomical structures, cell types, and biomarkers captured in the ASCT+B (Anatomical Structures, Cell Types, plus Biomarkers) tables, linking them to established ontologies such as Uberon, FMA, and Cell Ontology. The CCF also provides a spatial component that supports 3D spatial registration of tissue samples to reference organs via the CCF Registration User Interface, giving each sample a defined location in a common coordinate system. Together these clinical, semantic, and spatial layers serve as a primary upstream source for the HRA Knowledge Graph (HRA-KG).
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://cns.iu.edu/
+  label: Indiana University Cyberinfrastructure for Network Science Center (CNS)
+creation_date: '2026-06-18T00:00:00Z'
+description: The Common Coordinate Framework (CCF) Ontology is the spatial and semantic
+  framework that underpins the Human Reference Atlas (HRA) developed within the NIH
+  Human BioMolecular Atlas Program (HuBMAP). It encodes the relationships among anatomical
+  structures, cell types, and biomarkers captured in the ASCT+B (Anatomical Structures,
+  Cell Types, plus Biomarkers) tables, linking them to established ontologies such
+  as Uberon, FMA, and Cell Ontology. The CCF also provides a spatial component that
+  supports 3D spatial registration of tissue samples to reference organs via the CCF
+  Registration User Interface, giving each sample a defined location in a common coordinate
+  system. Together these clinical, semantic, and spatial layers serve as a primary
+  upstream source for the HRA Knowledge Graph (HRA-KG).
 domains:
-  - anatomy and development
-  - biomedical
+- anatomy and development
+- biomedical
 homepage_url: https://humanatlas.io/ccf-ontology
-id: "ccf"
+id: ccf
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Common Coordinate Framework Ontology
 products:
-  - category: OntologyProduct
-    description: The Common Coordinate Framework (CCF) Ontology in OWL (RDF/XML) format, integrating ASCT+B anatomical structures, cell types, and biomarkers with the CCF spatial model for the Human Reference Atlas.
-    format: owl
-    id: "ccf.owl"
-    name: CCF Ontology (OWL)
-    product_url: https://cdn.humanatlas.io/digital-objects/graph/ccf/latest/assets/ccf.owl
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: ccf
+- category: OntologyProduct
+  description: The Common Coordinate Framework (CCF) Ontology in OWL (RDF/XML) format,
+    integrating ASCT+B anatomical structures, cell types, and biomarkers with the
+    CCF spatial model for the Human Reference Atlas.
+  format: owl
+  id: ccf.owl
+  name: CCF Ontology (OWL)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  product_file_size: 44683831
+  product_url: https://cdn.humanatlas.io/digital-objects/graph/ccf/latest/assets/ccf.owl
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, Turtle format
+  format: ttl
+  id: hra-kg.graph.ttl
+  name: HRA KG graph data, v2.2, Turtle format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 204030087
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, JSON-LD format
+  format: jsonld
+  id: hra-kg.graph.json
+  name: HRA KG graph data, v2.2, JSON-LD format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 18043
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, RDF/XML format
+  format: rdfxml
+  id: hra-kg.graph.xml
+  name: HRA KG graph data, v2.2, RDF/XML format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 185060502
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Triples format
+  format: ntriples
+  id: hra-kg.graph.nt
+  name: HRA KG graph data, v2.2, N-Triples format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 291382102
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
+- category: GraphProduct
+  description: The graph representation of the Human Reference Atlas (HRA) dataset,
+    v2.2, N-Quads format
+  format: nquads
+  id: hra-kg.graph.nq
+  name: HRA KG graph data, v2.2, N-Quads format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra-kg
+  - relation_type: prov:hadPrimarySource
+    source: ccf
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hravs
+  - relation_type: prov:hadPrimarySource
+    source: lmha
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: vccf
+  product_file_size: 376981902
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
 publications:
-  - authors:
-      - "Börner K"
-      - "Teichmann SA"
-      - "Quardokus EM"
-      - "Gee JC"
-    doi: "10.1038/s41556-021-00788-6"
-    id: "https://pubmed.ncbi.nlm.nih.gov/34750582"
-    journal: Nat Cell Biol
-    preferred: true
-    title: Anatomical structures, cell types and biomarkers of the Human Reference Atlas
-    year: "2021"
-creation_date: '2026-06-18T00:00:00Z'
+- authors:
+  - Börner K
+  - Teichmann SA
+  - Quardokus EM
+  - Gee JC
+  doi: 10.1038/s41556-021-00788-6
+  id: https://pubmed.ncbi.nlm.nih.gov/34750582
+  journal: Nat Cell Biol
+  preferred: true
+  title: Anatomical structures, cell types and biomarkers of the Human Reference Atlas
+  year: '2021'
 ---
-
 ## Description
 
 The **Common Coordinate Framework (CCF) Ontology** is the spatial and semantic backbone

@@ -10,12 +10,12 @@ contacts:
   label: Planteome (Oregon State University)
 creation_date: '2026-06-18T00:00:00Z'
 description: Planteome is an integrated resource that develops and hosts a suite of
-  reference plant ontologies (including the Plant Ontology, Plant Trait Ontology, and
-  Plant Experimental Conditions Ontology) alongside species-specific crop ontologies.
+  reference plant ontologies (including the Plant Ontology, Plant Trait Ontology,
+  and Plant Experimental Conditions Ontology) alongside species-specific crop ontologies.
   It aggregates and cross-references genome and phenotype annotations from many plant
   species against these common ontologies, enabling comparative genomics and phenomics
-  across taxa. The resource is maintained at Oregon State University and provides an
-  AmiGO-based browser for searching ontology terms, bioentities, and annotations.
+  across taxa. The resource is maintained at Oregon State University and provides
+  an AmiGO-based browser for searching ontology terms, bioentities, and annotations.
   Planteome serves as the upstream source for derived knowledge graphs such as eco-KG.
 domains:
 - genomics
@@ -32,8 +32,9 @@ license:
 name: Planteome
 products:
 - category: GraphicalInterface
-  description: AmiGO-based Planteome ontology browser for searching reference and species-specific
-    plant ontology terms, bioentities, and aggregated genome and phenotype annotations.
+  description: AmiGO-based Planteome ontology browser for searching reference and
+    species-specific plant ontology terms, bioentities, and aggregated genome and
+    phenotype annotations.
   format: http
   id: planteome.browser
   name: Planteome Ontology Browser
@@ -42,15 +43,45 @@ products:
     source: planteome
   product_url: https://browser.planteome.org/amigo
 - category: OntologyProduct
-  description: The Plant Ontology (PO), a Planteome reference ontology describing plant
-    anatomy, morphology, and developmental stages, available as an OWL download.
+  description: The Plant Ontology (PO), a Planteome reference ontology describing
+    plant anatomy, morphology, and developmental stages, available as an OWL download.
   format: owl
   id: planteome.po
   name: Plant Ontology (PO)
   original_source:
   - relation_type: prov:hadPrimarySource
     source: planteome
+  product_file_size: 360811
   product_url: http://purl.obolibrary.org/obo/po.owl
+- category: GraphProduct
+  compression: tar
+  description: Knowledge graph containing plant traits data from Planteome and EOL
+    TraitBank
+  format: kgx
+  id: eco-kg.graph
+  name: eco-KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eco-kg
+  - relation_type: prov:hadPrimarySource
+    source: eol-traitbank
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: maizegdb
+  - relation_type: prov:hadPrimarySource
+    source: planteome
+  - relation_type: prov:hadPrimarySource
+    source: rapdb
+  product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 publications:
 - authors:
   - Cooper L

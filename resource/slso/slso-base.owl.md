@@ -10,7 +10,7 @@ original_source:
   source: slso
 product_url: http://purl.obolibrary.org/obo/slso-base.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-22_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-24_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-18_ HTTP 404 error when
   accessing file

@@ -2,7 +2,15 @@
 activity_status: inactive
 category: DataSource
 creation_date: '2026-06-18T00:00:00Z'
-description: "TRED (Transcriptional Regulatory Element Database) was a curated database of cis-regulatory elements, with an emphasis on transcription factor (TF) binding sites, TF-promoter regulatory interactions, and promoter annotations for human, mouse, and rat genes. It combined computational promoter prediction with literature-based manual curation of regulatory interactions, and was originally developed and hosted at Cold Spring Harbor Laboratory. TRED served as an upstream primary source for downstream regulatory network resources such as DoRothEA. The resource is now legacy and effectively superseded; its original hosting sites are no longer serving content, and it was dropped from some downstream tools due to licensing constraints."
+description: TRED (Transcriptional Regulatory Element Database) was a curated database
+  of cis-regulatory elements, with an emphasis on transcription factor (TF) binding
+  sites, TF-promoter regulatory interactions, and promoter annotations for human,
+  mouse, and rat genes. It combined computational promoter prediction with literature-based
+  manual curation of regulatory interactions, and was originally developed and hosted
+  at Cold Spring Harbor Laboratory. TRED served as an upstream primary source for
+  downstream regulatory network resources such as DoRothEA. The resource is now legacy
+  and effectively superseded; its original hosting sites are no longer serving content,
+  and it was dropped from some downstream tools due to licensing constraints.
 domains:
 - genomics
 - systems biology
@@ -14,10 +22,13 @@ layout: resource_detail
 license:
   id: ''
   label: Not specified
-name: "Transcriptional Regulatory Element Database"
+name: Transcriptional Regulatory Element Database
 products:
 - category: DocumentationProduct
-  description: "Reference publication describing TRED's curated transcription factor binding sites, TF-promoter regulatory interactions, and promoter annotations. The original web database is no longer available, so the publication serves as the primary documentation of record."
+  description: Reference publication describing TRED's curated transcription factor
+    binding sites, TF-promoter regulatory interactions, and promoter annotations.
+    The original web database is no longer available, so the publication serves as
+    the primary documentation of record.
   format: http
   id: tred.docs
   name: TRED Publication
@@ -25,6 +36,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tred
   product_url: https://doi.org/10.1093/nar/gkl1041
+- category: GraphProduct
+  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
+    \ levels (A\u2013E)"
+  id: dorothea.graph
+  name: DoRothEA Regulon Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
+  product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 publications:
 - authors:
   - C. Jiang
@@ -35,7 +71,8 @@ publications:
   id: https://pubmed.ncbi.nlm.nih.gov/17202159/
   journal: Nucleic Acids Res
   preferred: true
-  title: "TRED: a transcriptional regulatory element database, new entries and other development"
+  title: 'TRED: a transcriptional regulatory element database, new entries and other
+    development'
   year: '2007'
 ---
 # Transcriptional Regulatory Element Database (TRED)

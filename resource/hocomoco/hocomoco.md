@@ -2,13 +2,13 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-06-18T00:00:00Z'
-description: "HOCOMOCO (HOmo sapiens COmprehensive MOdel COllection) is a curated\
-  \ database of transcription factor (TF) binding models, primarily position weight\
-  \ matrices (PWMs), for human and mouse. The models are derived from large-scale\
-  \ ChIP-Seq and HT-SELEX experiments and are manually curated, benchmarked, and\
-  \ annotated with quality ratings and recommended score thresholds. HOCOMOCO covers\
-  \ over a thousand human and mouse TFs, including secondary motif subtypes, and is\
-  \ a widely used upstream source for downstream regulatory resources such as DoRothEA."
+description: HOCOMOCO (HOmo sapiens COmprehensive MOdel COllection) is a curated database
+  of transcription factor (TF) binding models, primarily position weight matrices
+  (PWMs), for human and mouse. The models are derived from large-scale ChIP-Seq and
+  HT-SELEX experiments and are manually curated, benchmarked, and annotated with quality
+  ratings and recommended score thresholds. HOCOMOCO covers over a thousand human
+  and mouse TFs, including secondary motif subtypes, and is a widely used upstream
+  source for downstream regulatory resources such as DoRothEA.
 domains:
 - genomics
 - systems biology
@@ -31,6 +31,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/core/HUMAN/mono/HOCOMOCOv11_core_pwms_HUMAN_mono.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
 - category: Product
   description: HOCOMOCO v11 full collection human mononucleotide PWMs (flat text),
     including secondary motif subtypes
@@ -41,6 +44,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/full/HUMAN/mono/HOCOMOCOv11_full_pwms_HUMAN_mono.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
 - category: Product
   description: HOCOMOCO download portal with PWM/PCM models for human and mouse in
     multiple formats (JASPAR, MEME, TRANSFAC, HOMER) plus annotations and thresholds
@@ -51,6 +57,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hocomoco
   product_url: https://hocomoco14.autosome.org/downloads_v11
+- category: GraphProduct
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
+  id: dorothea.graph
+  name: DoRothEA Regulon Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hocomoco
+  - relation_type: prov:hadPrimarySource
+    source: oreganno
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
+  product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 publications:
 - authors:
   - Ivan V. Kulakovskiy
