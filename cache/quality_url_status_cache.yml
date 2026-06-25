@@ -108,11 +108,8 @@ http://91.121.148.199:8889/bigdata/#query:
   source: cache
   status_code: null
 http://amigo.geneontology.org/amigo:
-  checked_at: '2026-02-16T22:11:00Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://api.geneontology.org/:
   checked_at: '2026-06-02T22:34:50Z'
   error: null
@@ -120,8 +117,8 @@ http://api.geneontology.org/:
   source: cache
   status_code: 200
 http://api.geneontology.org/api/:
-  checked_at: '2026-04-15T21:11:29Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -277,14 +274,14 @@ http://biohackathon.org/resource/faldo.ttl:
   source: cache
   status_code: 200
 http://bioinformatics.sandia.gov/tmrna/:
-  checked_at: '2026-06-02T22:34:51Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://bioinformatics.sandia.gov/tmrna/software.html:
-  checked_at: '2026-06-02T22:34:51Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -301,8 +298,8 @@ http://birdgenenames.org/cgnc/:
   source: cache
   status_code: 200
 http://birdgenenames.org/cgnc/downloads.jsp?file=standard:
-  checked_at: '2026-05-19T18:49:12Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -358,8 +355,8 @@ http://cpdb.molgen.mpg.de/:
   source: cache
   status_code: 200
 http://cpdb.molgen.mpg.de/CPDB/download:
-  checked_at: '2026-05-19T18:49:12Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -443,8 +440,8 @@ http://environmentontology.org/:
   source: cache
   status_code: 200
 http://expression.darkkinome.org/:
-  checked_at: '2026-06-02T22:34:52Z'
-  error: HEAD returned HTTP 500
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   source: cache
   status_code: 500
@@ -524,8 +521,8 @@ http://genomics.senescence.info/diet/dataset.zip:
   source: cache
   status_code: 200
 http://genomics.senescence.info/diet/help.html#api:
-  checked_at: '2026-05-19T18:49:13Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -536,24 +533,17 @@ http://genomics.senescence.info/genes/:
   source: cache
   status_code: 200
 http://github.com/seger/aao:
-  checked_at: '2026-06-02T22:34:53Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://gowiki.tamu.edu/wiki/index.php/Category:CACAO:
-  checked_at: '2026-06-02T22:34:53Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''gowiki.tamu.edu'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://graph.openbiodiv.net/:
-  checked_at: '2026-06-02T22:34:53Z'
-  error: HEAD returned HTTP 406
-  ok: false
-  source: cache
-  status_code: 406
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://hymao.org:
   checked_at: '2026-06-02T22:34:53Z'
   error: null
@@ -585,11 +575,8 @@ http://juniper.health.unm.edu/tcrd/download/:
   source: cache
   status_code: null
 http://kim.bio.upenn.edu/software/ornaseq.shtml:
-  checked_at: '2026-06-02T22:34:53Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto:
   checked_at: '2026-06-02T22:34:53Z'
   error: 'HEAD request failed: HTTPConnectionPool(host=''labda.inf.uc3m.es'', port=80):
@@ -621,14 +608,8 @@ http://mged.sourceforge.net/ontologies/MGEDontology.php:
   source: cache
   status_code: 200
 http://microbialphenotypes.org:
-  checked_at: '2026-06-02T22:34:53Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''microbialphenotypes.org'',
-    port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host=''microbialphenotypes.org'',
-    port=443) at 0x7fad5ca63c50>, ''Connection to microbialphenotypes.org timed out.
-    (connect timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://mips.helmholtz-muenchen.de/simap/:
   checked_at: '2026-06-02T22:34:54Z'
   error: 'HEAD request failed: HTTPConnectionPool(host=''mips.helmholtz-muenchen.de'',
@@ -657,8 +638,8 @@ http://mirgate.bioinfo.cnio.es/API/:
   source: cache
   status_code: null
 http://mrcieu.mrsoftware.org/PRS_atlas/:
-  checked_at: '2026-05-19T18:49:14Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -675,11 +656,8 @@ http://nanopub.net/:
   source: cache
   status_code: 200
 http://neuinfo.org/:
-  checked_at: '2026-06-02T22:34:54Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://nlp.case.edu/public/data/GPKG-Predict/:
   checked_at: '2026-06-02T22:34:54Z'
   error: null
@@ -729,14 +707,11 @@ http://omnisearch.soc.southalabama.edu/w/index.php/Ontology:
   source: cache
   status_code: null
 http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/:
-  checked_at: '2026-05-19T18:49:15Z'
-  error: HEAD returned HTTP 502
-  ok: false
-  source: cache
-  status_code: 502
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.html:
-  checked_at: '2026-05-19T18:49:15Z'
-  error: HEAD returned HTTP 502
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 502
@@ -818,11 +793,8 @@ http://proconsortium.org:
   source: cache
   status_code: 200
 http://proteininformationresource.org/efip:
-  checked_at: '2026-06-12T16:52:39Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''proteininformationresource.org'',
-    port=443): Read timed out. (read timeout=8.0)'
-  ok: false
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://psidev.info/index.php?q=node/312:
   checked_at: '2026-06-02T22:34:56Z'
   error: null
@@ -836,14 +808,14 @@ http://purl.obolibrary.org/obo/BMONT.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/EPIO_merged.owl:
-  checked_at: '2026-06-02T22:34:57Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/aao.owl:
-  checked_at: '2026-06-02T22:34:58Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -854,8 +826,8 @@ http://purl.obolibrary.org/obo/ado.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/adw.owl:
-  checked_at: '2026-06-12T16:52:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 http://purl.obolibrary.org/obo/aeo.owl:
@@ -877,14 +849,14 @@ http://purl.obolibrary.org/obo/aero.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/afpo.json:
-  checked_at: '2026-06-02T22:34:58Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/afpo.obo:
-  checked_at: '2026-06-02T22:34:59Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -955,11 +927,8 @@ http://purl.obolibrary.org/obo/aro.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ato.owl:
-  checked_at: '2026-06-02T22:35:01Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/bcgo.owl:
   checked_at: '2026-06-02T22:35:01Z'
   error: null
@@ -985,14 +954,11 @@ http://purl.obolibrary.org/obo/bfo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/bila.owl:
-  checked_at: '2026-06-02T22:35:01Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/bootstrep.owl:
-  checked_at: '2026-06-02T22:35:01Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -1225,9 +1191,8 @@ http://purl.obolibrary.org/obo/clyh.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/cmf.owl:
-  checked_at: '2026-06-02T22:35:02Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.archive.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
@@ -1262,8 +1227,8 @@ http://purl.obolibrary.org/obo/cob/cob-native.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/cob/cob-to-external.owl:
-  checked_at: '2026-06-02T22:35:02Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -1347,12 +1312,8 @@ http://purl.obolibrary.org/obo/dideo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/dinto.owl:
-  checked_at: '2026-06-02T22:35:03Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.archive.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/disdriv.owl:
   checked_at: '2026-06-02T22:35:03Z'
   error: null
@@ -1481,29 +1442,17 @@ http://purl.obolibrary.org/obo/ecto/ecto-base.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ehda.obo:
-  checked_at: '2026-06-02T22:35:04Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/ehda.owl:
-  checked_at: '2026-06-02T22:35:04Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/ehdaa.obo:
-  checked_at: '2026-06-02T22:35:04Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/ehdaa.owl:
-  checked_at: '2026-06-02T22:35:04Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/ehdaa2.obo:
   checked_at: '2026-06-02T22:35:04Z'
   error: null
@@ -1571,14 +1520,14 @@ http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/eo.obo:
-  checked_at: '2026-06-02T22:35:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/eo.owl:
-  checked_at: '2026-06-02T22:35:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -1772,11 +1721,8 @@ http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/fbsp.owl:
-  checked_at: '2026-06-02T22:35:06Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/fideo.owl:
   checked_at: '2026-06-02T22:35:07Z'
   error: null
@@ -1790,11 +1736,8 @@ http://purl.obolibrary.org/obo/fix.obo:
   source: cache
   status_code: null
 http://purl.obolibrary.org/obo/fix.owl:
-  checked_at: '2026-06-02T22:35:07Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/flopo.owl:
   checked_at: '2026-06-02T22:35:07Z'
   error: null
@@ -1802,12 +1745,8 @@ http://purl.obolibrary.org/obo/flopo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/flu.owl:
-  checked_at: '2026-06-02T22:35:07Z'
-  error: 'HEAD request failed: HTTPConnectionPool(host=''svn.code.sf.net'', port=80):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/flu/:
   checked_at: '2026-06-02T22:35:07Z'
   error: null
@@ -1815,11 +1754,8 @@ http://purl.obolibrary.org/obo/flu/:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/fma.owl:
-  checked_at: '2026-06-02T22:35:07Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/fobi.owl:
   checked_at: '2026-06-02T22:35:07Z'
   error: null
@@ -1833,8 +1769,8 @@ http://purl.obolibrary.org/obo/foodon.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/foodon_core.owl:
-  checked_at: '2026-06-02T22:35:07Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -1990,11 +1926,8 @@ http://purl.obolibrary.org/obo/go/extensions/go-plus.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl:
-  checked_at: '2026-06-02T22:35:09Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/go/extensions/reacto.owl:
   checked_at: '2026-06-02T22:35:09Z'
   error: null
@@ -2265,8 +2198,8 @@ http://purl.obolibrary.org/obo/iao/d-acts.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/iao/dev/iao.owl:
-  checked_at: '2026-06-02T22:35:15Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -2307,17 +2240,11 @@ http://purl.obolibrary.org/obo/idomal.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/iev.obo:
-  checked_at: '2026-06-02T22:35:16Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/iev.owl:
-  checked_at: '2026-06-02T22:35:16Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/ino.owl:
   checked_at: '2026-06-02T22:35:16Z'
   error: null
@@ -2477,8 +2404,8 @@ http://purl.obolibrary.org/obo/micro.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/mirnao.owl:
-  checked_at: '2026-06-02T22:35:17Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -2773,14 +2700,14 @@ http://purl.obolibrary.org/obo/occo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ogg.owl:
-  checked_at: '2026-06-02T22:35:20Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/ogi.owl:
-  checked_at: '2026-06-02T22:35:20Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -2803,8 +2730,8 @@ http://purl.obolibrary.org/obo/ohd.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ohd/dev/ohd.owl:
-  checked_at: '2026-06-02T22:35:20Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -3269,18 +3196,18 @@ http://purl.obolibrary.org/obo/prefer/prefer-base.owl:
   ok: true
   status_code: 200
 http://purl.obolibrary.org/obo/prefer/prefer-basic.json:
-  checked_at: '2026-06-12T16:52:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 http://purl.obolibrary.org/obo/prefer/prefer-basic.obo:
-  checked_at: '2026-06-12T16:52:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 http://purl.obolibrary.org/obo/prefer/prefer-basic.owl:
-  checked_at: '2026-06-12T16:52:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 http://purl.obolibrary.org/obo/proco.owl:
@@ -3371,11 +3298,8 @@ http://purl.obolibrary.org/obo/resid.owl:
   source: cache
   status_code: null
 http://purl.obolibrary.org/obo/rex.owl:
-  checked_at: '2026-06-02T22:35:31Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/rnao.obo:
   checked_at: '2026-06-02T22:35:31Z'
   error: null
@@ -3419,8 +3343,8 @@ http://purl.obolibrary.org/obo/ro/ro-base.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl:
-  checked_at: '2026-06-02T22:35:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -3480,11 +3404,8 @@ http://purl.obolibrary.org/obo/scdo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/sep.owl:
-  checked_at: '2026-06-02T22:35:33Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/sepio.owl:
   checked_at: '2026-06-02T22:35:33Z'
   error: null
@@ -3887,11 +3808,8 @@ http://purl.obolibrary.org/obo/vbo/vbo-base.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/vhog.owl:
-  checked_at: '2026-06-02T22:35:41Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://purl.obolibrary.org/obo/vo.owl:
   checked_at: '2026-06-02T22:35:42Z'
   error: null
@@ -4129,8 +4047,8 @@ http://qptm.omicsbio.info/index.php:
   source: cache
   status_code: 200
 http://rdb.lifesynther.com/:
-  checked_at: '2026-06-02T22:35:44Z'
-  error: HEAD returned HTTP 502
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 502
   ok: false
   source: cache
   status_code: 502
@@ -4153,8 +4071,8 @@ http://redrugs.tw.rpi.edu/api/:
   source: cache
   status_code: null
 http://research.amnh.org/atol/files/:
-  checked_at: '2026-06-02T22:35:44Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -4409,8 +4327,8 @@ http://www.biomedcentral.com/1752-0509/8/79:
   source: cache
   status_code: 200
 http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology:
-  checked_at: '2026-06-02T22:35:50Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -4508,14 +4426,14 @@ http://www.dukeontologygroup.org/Projects.html:
   source: cache
   status_code: null
 http://www.ebi.ac.uk/RESID/:
-  checked_at: '2026-06-02T22:35:51Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html:
-  checked_at: '2026-06-02T22:35:51Z'
-  error: HEAD returned HTTP 500
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   source: cache
   status_code: 500
@@ -4601,16 +4519,11 @@ http://www.glycoinfo.org/GlycoRDF/:
   source: cache
   status_code: 200
 http://www.gramene.org/plant_ontology/:
-  checked_at: '2026-06-02T22:35:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''archive.gramene.org'', port=443):
-    Max retries exceeded with url: /plant_ontology/ (Caused by NewConnectionError("HTTPSConnection(host=''archive.gramene.org'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.hprd.org/:
-  checked_at: '2026-06-02T22:35:51Z'
-  error: HEAD returned HTTP 503
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 503
   ok: false
   source: cache
   status_code: 503
@@ -4686,86 +4599,50 @@ http://www.lncrnadb.org/:
   source: cache
   status_code: 200
 http://www.loria.fr/~coulet/sopharm2.0_description.php:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.maizemap.org/:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.mesquiteproject.org/ontology/Habronattus/index.html:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.mesquiteproject.org/ontology/Loggerhead/index.html:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.microrna.gr/LncBase:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: 'HEAD request failed: HTTPConnectionPool(host=''www.microrna.gr'', port=80):
-    Max retries exceeded with url: /LncBase (Caused by NameResolutionError("HTTPConnection(host=''www.microrna.gr'',
-    port=80): Failed to resolve ''www.microrna.gr'' ([Errno -2] Name or service not
-    known)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.mousemine.org/:
-  checked_at: '2026-05-19T18:49:59Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.mousemine.org'', port=443):
-    Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host=''www.mousemine.org'',
-    port=443) at 0x7effcb5ad950>, ''Connection to www.mousemine.org timed out. (connect
-    timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.mousemine.org/mousemine/api.do:
-  checked_at: '2026-05-19T18:49:59Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.mousemine.org'', port=443):
-    Max retries exceeded with url: /mousemine/api.do (Caused by ConnectTimeoutError(<HTTPSConnection(host=''www.mousemine.org'',
-    port=443) at 0x7effcb5af9d0>, ''Connection to www.mousemine.org timed out. (connect
-    timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.mousemine.org/mousemine/begin.do:
-  checked_at: '2026-05-19T18:49:59Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.mousemine.org'', port=443):
-    Max retries exceeded with url: /mousemine/begin.do (Caused by ConnectTimeoutError(<HTTPSConnection(host=''www.mousemine.org'',
-    port=443) at 0x7effcb5adf90>, ''Connection to www.mousemine.org timed out. (connect
-    timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.mousemine.org/mousemine/customQuery.do:
-  checked_at: '2026-05-19T18:49:59Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.mousemine.org'', port=443):
-    Max retries exceeded with url: /mousemine/customQuery.do (Caused by ConnectTimeoutError(<HTTPSConnection(host=''www.mousemine.org'',
-    port=443) at 0x7effcb5af890>, ''Connection to www.mousemine.org timed out. (connect
-    timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.mousemine.org/mousemine/templates.do:
-  checked_at: '2026-05-19T18:49:59Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.mousemine.org'', port=443):
-    Max retries exceeded with url: /mousemine/templates.do (Caused by ConnectTimeoutError(<HTTPSConnection(host=''www.mousemine.org'',
-    port=443) at 0x7effcb5ac690>, ''Connection to www.mousemine.org timed out. (connect
-    timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.netpath.org/:
-  checked_at: '2026-06-12T16:52:40Z'
-  error: HEAD returned HTTP 503
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 503
   ok: false
   status_code: 503
 http://www.noncode.org/:
@@ -4787,14 +4664,14 @@ http://www.noncode.org/browse.php:
   source: cache
   status_code: 200
 http://www.noncode.org/conservation.php:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.noncode.org/disease.php:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -4805,14 +4682,14 @@ http://www.noncode.org/download.php:
   source: cache
   status_code: 200
 http://www.noncode.org/function.php:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.noncode.org/genome.php:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -4829,8 +4706,8 @@ http://www.noncode.org/search.php:
   source: cache
   status_code: 200
 http://www.obofoundry.org/ro:
-  checked_at: '2026-06-02T22:35:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -4868,8 +4745,8 @@ http://www.plantontology.org:
   source: cache
   status_code: 200
 http://www.psidev.info/MOD:
-  checked_at: '2026-06-02T22:35:53Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -4898,29 +4775,17 @@ http://www.rnainter.org/:
   source: cache
   status_code: 200
 http://www.sanger.ac.uk/Users/mb4/PLO/:
-  checked_at: '2026-06-02T22:35:53Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.sequenceontology.org/:
-  checked_at: '2026-06-02T22:35:53Z'
-  error: 'HEAD request failed: HTTPConnectionPool(host=''www.sequenceontology.org'',
-    port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host=''www.sequenceontology.org'',
-    port=80) at 0x7fad59991750>, ''Connection to www.sequenceontology.org timed out.
-    (connect timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.sequenceontology.org/gff3.shtml:
-  checked_at: '2026-06-02T22:35:53Z'
-  error: 'HEAD request failed: HTTPConnectionPool(host=''www.sequenceontology.org'',
-    port=80): Max retries exceeded with url: /gff3.shtml (Caused by ConnectTimeoutError(<HTTPConnection(host=''www.sequenceontology.org'',
-    port=80) at 0x7fad59991350>, ''Connection to www.sequenceontology.org timed out.
-    (connect timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.signaling-gateway.org/molecule:
   checked_at: '2026-06-02T22:35:53Z'
   error: 'HEAD request failed: HTTPConnectionPool(host=''www.signaling-gateway.org'',
@@ -4936,11 +4801,8 @@ http://www.violinet.org/ovae/:
   source: cache
   status_code: 200
 http://www.wormbase.org/:
-  checked_at: '2026-05-19T18:50:02Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 http://www.xenbase.org/anatomy/xao.do?method=display:
   checked_at: '2026-06-02T22:35:53Z'
   error: null
@@ -5049,11 +4911,8 @@ https://aact.ctti-clinicaltrials.org/schema:
   source: cache
   status_code: 200
 https://academic.oup.com/nar/article/47/D1/D1118/5144144:
-  checked_at: '2026-06-02T22:35:54Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://activedriverdb.org/:
   checked_at: '2026-06-12T16:52:40Z'
   error: null
@@ -5153,11 +5012,8 @@ https://alzkb.ai:7473/login:
   source: cache
   status_code: 200
 https://amigo.geneontology.org/amigo:
-  checked_at: '2026-06-02T22:35:55Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://annotator.transltr.io/:
   checked_at: '2026-06-02T22:35:55Z'
   error: null
@@ -5237,23 +5093,14 @@ https://api-v3.monarchinitiative.org/v3/docs:
   source: cache
   status_code: 200
 https://api-vast.jrc.service.ec.europa.eu/fct/:
-  checked_at: '2026-06-02T22:35:55Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''api-vast.jrc.service.ec.europa.eu'',
-    port=443): Max retries exceeded with url: /fct/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=''api-vast.jrc.service.ec.europa.eu'',
-    port=443) at 0x7fad5d71f9d0>, ''Connection to api-vast.jrc.service.ec.europa.eu
-    timed out. (connect timeout=8.0)''))'
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
 https://api-vast.jrc.service.ec.europa.eu/sparql/:
-  checked_at: '2026-06-02T22:35:55Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''api-vast.jrc.service.ec.europa.eu'',
-    port=443): Max retries exceeded with url: /sparql/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=''api-vast.jrc.service.ec.europa.eu'',
-    port=443) at 0x7fad5d71ec10>, ''Connection to api-vast.jrc.service.ec.europa.eu
-    timed out. (connect timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://api.catalogueoflife.org/:
   checked_at: '2026-06-02T22:35:55Z'
   error: null
@@ -5261,17 +5108,11 @@ https://api.catalogueoflife.org/:
   source: cache
   status_code: 200
 https://api.cellosaurus.org/:
-  checked_at: '2026-06-02T22:35:55Z'
-  error: HEAD returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://api.cellosaurus.org/sparql-editor:
-  checked_at: '2026-06-02T22:35:55Z'
-  error: HEAD returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://api.eol.org/:
   checked_at: '2026-06-02T22:35:55Z'
   error: null
@@ -5285,8 +5126,8 @@ https://api.epigraphdb.org/:
   source: cache
   status_code: 200
 https://api.gbif.org/maps/:
-  checked_at: '2026-06-02T22:35:56Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -5490,14 +5331,14 @@ https://api.pharmgkb.org/v1/download/file/data/variants.zip:
   source: cache
   status_code: 200
 https://api.platform.opentargets.org/api/v4/graphql:
-  checked_at: '2026-06-02T22:35:58Z'
-  error: HEAD returned HTTP 400
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 400
   ok: false
   source: cache
   status_code: 400
 https://api.platform.opentargets.org/api/v4/rest:
-  checked_at: '2026-06-02T22:35:58Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -5602,101 +5443,53 @@ https://apps.humanatlas.io/dashboard/data:
   source: cache
   status_code: 200
 https://apps.okn.us/biobricks-aopwiki/sparql:
-  checked_at: '2026-06-02T22:35:59Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/biobricks-ice/sparql:
-  checked_at: '2026-06-02T22:35:59Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/biobricks-mesh/sparql:
-  checked_at: '2026-06-02T22:35:59Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/biobricks-pubchem-annotations/sparql:
-  checked_at: '2026-06-02T22:35:59Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/biobricks-tox21/sparql:
-  checked_at: '2026-06-02T22:35:59Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/biobricks-toxcast/sparql:
-  checked_at: '2026-06-02T22:35:59Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/biohealth/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/biomarkerkg/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/climatemodelskg/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/dreamkg/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/evoweb/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/fiokg/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/gene-expression-atlas-okn/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/geoconnex/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/hydrologykg/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/identifier-mappings/sparql:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/ldf/biobricks-aopwiki:
   checked_at: '2026-06-02T22:36:00Z'
   error: null
@@ -5884,8 +5677,8 @@ https://apps.okn.us/ldf/securechainkg:
   source: cache
   status_code: 200
 https://apps.okn.us/ldf/semopenalex:
-  checked_at: '2026-06-02T22:36:00Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -5938,89 +5731,47 @@ https://apps.okn.us/ldf/wildlifekn:
   source: cache
   status_code: 200
 https://apps.okn.us/maudekg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/nasa-gesdisc-kg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/ncipidkg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/nde/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/nikg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/oard-kg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/okn-void/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/pankgraph/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/phaseskg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/prokn/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/ruralkg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/sawgraph/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/scales/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/securechainkg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/semopenalex/sparql:
   checked_at: '2026-06-02T22:36:01Z'
   error: null
@@ -6028,56 +5779,32 @@ https://apps.okn.us/semopenalex/sparql:
   source: cache
   status_code: 200
 https://apps.okn.us/sockg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/spatialkg/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/spoke-genelab/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/spoke-okn/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/sudokn/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/ubergraph/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/ufokn/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://apps.okn.us/wildlifekn/sparql:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://aragorn.renci.org/:
-  checked_at: '2026-05-19T18:50:19Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -6122,11 +5849,8 @@ https://ars-prod.transltr.io/:
   source: cache
   status_code: 200
 https://ars-prod.transltr.io/ars/api/submit:
-  checked_at: '2026-06-02T22:36:01Z'
-  error: GET returned HTTP 405
-  ok: false
-  source: cache
-  status_code: 405
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://atcddd.fhi.no/atc_ddd_index/:
   checked_at: '2026-06-02T22:36:01Z'
   error: null
@@ -6265,8 +5989,8 @@ https://bioconductor.org/packages/release/bioc/html/OmnipathR.html:
   source: cache
   status_code: 200
 https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf:
-  checked_at: '2026-06-02T22:36:02Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -6381,8 +6105,8 @@ https://biomics.lab.nycu.edu.tw/dbPTM/download.php:
   ok: true
   status_code: 200
 https://biomics.lab.nycu.edu.tw/dbSNO/download.php:
-  checked_at: '2026-06-12T16:52:41Z'
-  error: HEAD returned HTTP 500
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   status_code: 500
 https://biomics.lab.nycu.edu.tw/dbSNO/index.php:
@@ -6511,8 +6235,8 @@ https://bis.zju.edu.cn/hald:
   source: cache
   status_code: 200
 https://bitbucket.org/hegroup/ogg:
-  checked_at: '2026-06-02T22:36:04Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -6535,11 +6259,8 @@ https://bkg.dev.maayanlab.cloud/:
   source: cache
   status_code: 200
 https://browser.ihtsdotools.org/:
-  checked_at: '2026-06-02T22:36:05Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://cam-kp-api-dev.renci.org/1.2.0/query:
   checked_at: '2026-05-19T18:50:20Z'
   error: 'HEAD request failed: HTTPSConnectionPool(host=''cam-kp-api-dev.renci.org'',
@@ -6592,11 +6313,8 @@ https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/hippie_current.txt:
   source: cache
   status_code: 200
 https://ccdb.ecidbase.org/:
-  checked_at: '2026-06-02T22:36:05Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ccms-ucsd.github.io/MassIVEDocumentation/:
   checked_at: '2026-06-02T22:36:05Z'
   error: null
@@ -6704,20 +6422,20 @@ https://cellxgene.cziscience.com/docs:
   source: cache
   status_code: 200
 https://cfde.cloud/gse/:
-  checked_at: '2026-05-19T18:50:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://cfde.cloud/gse/api/:
-  checked_at: '2026-05-19T18:50:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://cfde.cloud/gse/downloads/:
-  checked_at: '2026-05-19T18:50:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -6836,11 +6554,8 @@ https://ckg.readthedocs.io/:
   source: cache
   status_code: 200
 ? https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/
-: checked_at: '2026-06-02T22:36:06Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+: checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://clinicalgenome.org/:
   checked_at: '2026-06-02T22:36:06Z'
   error: null
@@ -6878,11 +6593,8 @@ https://clinicaltrials.gov/search:
   source: cache
   status_code: 200
 ? https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
-: checked_at: '2026-06-02T22:36:06Z'
-  error: HEAD returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+: checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://clue.io:
   checked_at: '2026-06-02T22:36:06Z'
   error: null
@@ -6949,11 +6661,8 @@ https://code.google.com/p/epidemiology-ontology/:
   source: cache
   status_code: 200
 https://code.google.com/p/ontology-for-genetic-interval/:
-  checked_at: '2026-06-02T22:36:06Z'
-  error: HEAD returned HTTP 500
-  ok: false
-  source: cache
-  status_code: 500
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://cohd-api.ci.transltr.io/:
   checked_at: '2026-06-02T22:36:06Z'
   error: null
@@ -7271,8 +6980,8 @@ https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz:
   source: cache
   status_code: 200
 https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl:
-  checked_at: '2026-06-02T22:36:09Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -7283,8 +6992,8 @@ https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv:
   source: cache
   status_code: 200
 https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl:
-  checked_at: '2026-06-02T22:36:09Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -7325,14 +7034,14 @@ https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/causal
   source: cache
   status_code: 200
 ? https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_disease_or_phenotypic_feature_association.all.tsv.gz
-: checked_at: '2026-06-02T22:36:09Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_pathway_association.all.tsv.gz:
-  checked_at: '2026-06-02T22:36:09Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -7457,56 +7166,56 @@ https://data.niaid.nih.gov/:
   source: cache
   status_code: 200
 https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_genes.tab.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_species.tab.gz:
-  checked_at: '2026-06-02T22:36:10Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/v12/:
-  checked_at: '2026-06-12T16:52:41Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 https://data.pantherdb.org/ftp/:
@@ -7579,17 +7288,11 @@ https://datadryad.org/dataset/doi:10.5061/dryad.h18c66b:
   source: cache
   status_code: 200
 https://datadryad.org/downloads/file_stream/83029:
-  checked_at: '2026-06-02T22:36:11Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://datadryad.org/downloads/file_stream/83030:
-  checked_at: '2026-06-02T22:36:11Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4:
   checked_at: '2026-05-19T18:50:26Z'
   error: null
@@ -7663,17 +7366,11 @@ https://depmap.org/portal/api/:
   source: cache
   status_code: 200
 https://depmap.org/portal/cell_line_selector/:
-  checked_at: '2026-06-02T22:36:12Z'
-  error: HEAD returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://depmap.org/portal/context/:
-  checked_at: '2026-06-02T22:36:12Z'
-  error: HEAD returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://depmap.org/portal/data_page/:
   checked_at: '2026-06-02T22:36:12Z'
   error: null
@@ -7807,38 +7504,38 @@ https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz:
   source: cache
   status_code: 200
 https://dianalab.e-ce.uth.gr/tarbasev9/downloads:
-  checked_at: '2026-06-02T22:36:16Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/help:
-  checked_at: '2026-05-19T18:50:28Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/interactions:
-  checked_at: '2026-05-19T18:50:28Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/statistics:
-  checked_at: '2026-05-19T18:50:28Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/textmining:
-  checked_at: '2026-05-19T18:50:28Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/visualizations:
-  checked_at: '2026-05-19T18:50:28Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -7861,10 +7558,8 @@ https://dictybase.dev/graphql:
   source: cache
   status_code: 200
 https://digital.nhs.uk/services/terminology-and-classifications/dm-d:
-  checked_at: '2026-06-12T16:52:41Z'
-  error: GET returned HTTP 403
-  ok: false
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://dip.doe-mbi.ucla.edu/:
   checked_at: '2026-06-02T22:36:17Z'
   error: null
@@ -8014,29 +7709,19 @@ https://docs.ropensci.org/rmangal/:
   source: cache
   status_code: 200
 https://documentation.uts.nlm.nih.gov/rest/home.html:
-  checked_at: '2026-06-02T22:36:19Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''documentation.uts.nlm.nih.gov'',
-    port=443): Max retries exceeded with url: /rest/home.html (Caused by NameResolutionError("HTTPSConnection(host=''documentation.uts.nlm.nih.gov'',
-    port=443): Failed to resolve ''documentation.uts.nlm.nih.gov'' ([Errno -3] Temporary
-    failure in name resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://doi.org/10.1016/j.jbi.2014.08.004:
   checked_at: '2026-06-12T16:52:42Z'
   error: null
   ok: true
   status_code: 200
 https://doi.org/10.1093/database/bas044:
-  checked_at: '2026-06-12T16:52:42Z'
-  error: GET returned HTTP 403
-  ok: false
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://doi.org/10.1093/nar/gkt1128:
-  checked_at: '2026-06-12T16:52:42Z'
-  error: GET returned HTTP 403
-  ok: false
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://doi.org/10.1109/BIBM47256.2019.8983062:
   checked_at: '2026-06-02T22:36:19Z'
   error: null
@@ -8044,16 +7729,11 @@ https://doi.org/10.1109/BIBM47256.2019.8983062:
   source: cache
   status_code: 200
 https://doi.org/10.1136/amiajnl-2012-000852:
-  checked_at: '2026-06-12T16:52:42Z'
-  error: GET returned HTTP 403
-  ok: false
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://doi.org/10.13020/d6bm3v:
-  checked_at: '2026-06-02T22:36:19Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://doi.org/10.23645/epacomptox.5588566:
   checked_at: '2026-06-02T22:36:19Z'
   error: null
@@ -8341,11 +8021,8 @@ https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS
   source: cache
   status_code: 200
 https://downloads.wormbase.org/:
-  checked_at: '2026-06-02T22:36:22Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://dreamkg.com/:
   checked_at: '2026-06-02T22:36:22Z'
   error: null
@@ -8371,14 +8048,14 @@ https://dumps.wikimedia.org/other/incr/wikidatawiki/:
   source: cache
   status_code: 200
 https://dumps.wikimedia.org/other/mediawiki_content_current/enwiki/2026-03-01/xml/bzip2/:
-  checked_at: '2026-06-02T22:36:23Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/2026-03-01/xml/bzip2/:
-  checked_at: '2026-06-02T22:36:23Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -8585,17 +8262,11 @@ https://enpkg.commons-lab.org/doc/index.html:
   source: cache
   status_code: 200
 https://enpkg.commons-lab.org/graphdb:
-  checked_at: '2026-06-02T22:36:26Z'
-  error: HEAD returned HTTP 406
-  ok: false
-  source: cache
-  status_code: 406
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://enpkg.commons-lab.org/graphdb/sparql:
-  checked_at: '2026-06-02T22:36:26Z'
-  error: HEAD returned HTTP 406
-  ok: false
-  source: cache
-  status_code: 406
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://eol.org/api/reconciliation:
   checked_at: '2026-06-02T22:36:26Z'
   error: null
@@ -8609,17 +8280,14 @@ https://eol.org/docs/what-is-eol/data-services:
   source: cache
   status_code: 200
 https://eol.org/pages/traitbank:
-  checked_at: '2026-06-02T22:36:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://eol.org/services/authenticate:
-  checked_at: '2026-06-02T22:36:27Z'
-  error: GET returned HTTP 401
-  ok: false
-  source: cache
-  status_code: 401
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 ? https://epa.figshare.com/articles/dataset/Chemistry_Dashboard_Data_DSSTox_Identifiers_Mapped_to_CAS_Numbers_and_Names/5588566
 : checked_at: '2026-06-02T22:36:27Z'
   error: null
@@ -8651,8 +8319,8 @@ https://eqtlgen.github.io/eqtlgen-web-site/eQTLGen-p2-cookbook.html:
   source: cache
   status_code: 200
 https://erepo.clinicalgenome.org/evrepo/api/:
-  checked_at: '2026-06-02T22:36:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -8940,101 +8608,53 @@ https://forum.semantic-metabolomics.fr/.well-known/void:
   source: cache
   status_code: 200
 https://frink.apps.renci.org/biobricks-aopwiki/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/biobricks-ice/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/biobricks-mesh/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/biobricks-pubchem-annotations/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/biobricks-tox21/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/biobricks-toxcast/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/biohealth/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/biomarkerkg/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/climatemodelskg/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/dreamkg/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/evoweb/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/fiokg/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/gene-expression-atlas-okn/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/geoconnex/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/hydrologykg/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/identifier-mappings/sparql:
-  checked_at: '2026-04-15T21:12:46Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/ldf/biobricks-aopwiki:
   checked_at: '2026-04-15T21:12:46Z'
   error: null
@@ -9144,8 +8764,8 @@ https://frink.apps.renci.org/ldf/nasa-gesdisc-kg:
   source: cache
   status_code: 200
 https://frink.apps.renci.org/ldf/ncipidkg:
-  checked_at: '2026-04-15T21:12:47Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -9156,8 +8776,8 @@ https://frink.apps.renci.org/ldf/nde:
   source: cache
   status_code: 200
 https://frink.apps.renci.org/ldf/neighborhood-information-kg:
-  checked_at: '2026-04-15T21:12:47Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -9270,149 +8890,80 @@ https://frink.apps.renci.org/ldf/wildlifekn:
   source: cache
   status_code: 200
 https://frink.apps.renci.org/maudekg/sparql:
-  checked_at: '2026-04-15T21:12:47Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/nasa-gesdisc-kg/sparql:
-  checked_at: '2026-04-15T21:12:47Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/ncipidkg/sparql:
-  checked_at: '2026-04-15T21:12:47Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/nde/sparql:
-  checked_at: '2026-04-15T21:12:47Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/neighborhood-information-kg/sparql:
-  checked_at: '2026-04-15T21:12:47Z'
-  error: HEAD returned HTTP 503
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 503
   ok: false
   source: cache
   status_code: 503
 https://frink.apps.renci.org/oard-kg/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/okn-void/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/pankgraph/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/prokn/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/ruralkg/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/sawgraph/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/scales/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/securechainkg/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/semopenalex/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: GET returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/sockg/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/spatialkg/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/spoke-genelab/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/spoke-okn/sparql:
-  checked_at: '2026-06-02T22:36:49Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/sudokn/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/ubergraph/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: GET returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/ufokn/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/wikidata/sparql:
-  checked_at: '2026-06-02T22:36:49Z'
-  error: GET returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/wildlifekg/sparql:
-  checked_at: '2026-02-16T22:12:16Z'
-  error: HEAD returned HTTP 503
-  ok: false
-  source: cache
-  status_code: 503
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.apps.renci.org/wildlifekn/sparql:
-  checked_at: '2026-04-15T21:12:48Z'
-  error: HEAD returned HTTP 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://frink.renci.org/registry/kgs/biohealth/:
   checked_at: '2026-06-02T22:36:49Z'
   error: null
@@ -9606,32 +9157,32 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/2025/01/31/gwas-kb.owl:
   source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json:
-  checked_at: '2026-05-19T18:50:37Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz:
-  checked_at: '2026-05-19T18:50:37Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv:
-  checked_at: '2026-06-02T22:36:50Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip:
-  checked_at: '2026-05-19T18:50:37Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg:
-  checked_at: '2026-05-19T18:50:37Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -9642,14 +9193,14 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.ts
   source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv:
-  checked_at: '2026-05-19T18:50:37Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv:
-  checked_at: '2026-05-19T18:50:37Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -9720,59 +9271,23 @@ https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/3702.tsv:
   source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/559292.tsv:
-  checked_at: '2026-06-02T22:36:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/complextab/559292.tsv
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/562.tsv:
-  checked_at: '2026-06-02T22:36:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/complextab/562.tsv
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/6239.tsv:
-  checked_at: '2026-06-02T22:36:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/complextab/6239.tsv
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/6523.tsv:
-  checked_at: '2026-06-02T22:36:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/complextab/6523.tsv
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/694009.tsv:
-  checked_at: '2026-06-02T22:36:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/complextab/694009.tsv
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7227.tsv:
-  checked_at: '2026-06-02T22:36:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/complextab/7227.tsv
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7787.tsv:
   checked_at: '2026-06-02T22:36:51Z'
   error: null
@@ -9924,122 +9439,44 @@ https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/released_complexes.tx
   source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/various/complex_portal_dr_export.tsv:
-  checked_at: '2026-06-02T22:36:51Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/various/complex_portal_dr_export.tsv
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/various/cpx_ebi_ac_translation.txt:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/complex/current/various/cpx_ebi_ac_translation.txt
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/current/psi25/ (Caused by
-    NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443): Failed
-    to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/current/psi30/ (Caused by
-    NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443): Failed
-    to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/current/psimitab/ (Caused
-    by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443): Failed
-    to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/datasets/AFCS.zip:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/current/psimitab/datasets/AFCS.zip
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/intact/current/psimitab/intact.zip
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/ParentChildTreeFile.txt:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/interpro/current_release/ParentChildTreeFile.txt
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/entry.list:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/interpro/current_release/entry.list
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/interpro/current_release/interpro.xml.gz
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/interpro/current_release/interpro2go
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/match_complete.xml.gz:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/interpro/current_release/match_complete.xml.gz
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ftp.ebi.ac.uk'', port=443):
-    Max retries exceeded with url: /pub/databases/interpro/current_release/protein2ipr.dat.gz
-    (Caused by NewConnectionError("HTTPSConnection(host=''ftp.ebi.ac.uk'', port=443):
-    Failed to establish a new connection: [Errno 111] Connection refused"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.gz:
   checked_at: '2026-06-02T22:36:52Z'
   error: null
@@ -10065,8 +9502,8 @@ https://ftp.ebi.ac.uk/pub/databases/spot/ols/:
   source: cache
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -10083,8 +9520,8 @@ https://ftp.expasy.org/databases/cellosaurus/cellosaurus.xml:
   source: cache
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv:
-  checked_at: '2026-06-02T22:36:52Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -10413,8 +9850,8 @@ https://ftp.ncbi.nlm.nih.gov/refseq/:
   source: cache
   status_code: 200
 https://ftp.sanger.ac.uk/project/cancerrxgene/releases/:
-  checked_at: '2026-06-02T22:36:54Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -10593,8 +10030,8 @@ https://genesilico.pl/modomics/search/advance/:
   source: cache
   status_code: 200
 https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/:
-  checked_at: '2026-06-02T22:36:55Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -10857,8 +10294,8 @@ https://github.com/EBI-G2P/gene2phenotype_api:
   source: cache
   status_code: 200
 https://github.com/EBI-IntAct/intact-data-exchange:
-  checked_at: '2026-06-02T22:36:57Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -10869,8 +10306,8 @@ https://github.com/EBISPOT/DUO:
   source: cache
   status_code: 200
 https://github.com/EBISPOT/OXO:
-  checked_at: '2026-06-02T22:36:57Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11047,8 +10484,8 @@ https://github.com/GenomicsStandardsConsortium/mixs:
   source: cache
   status_code: 200
 https://github.com/Gramene/gramene-docs:
-  checked_at: '2026-06-02T22:36:59Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11113,8 +10550,8 @@ https://github.com/HumanBrainProject/kg-core:
   source: cache
   status_code: 200
 https://github.com/ICD-Codes:
-  checked_at: '2026-06-02T22:36:59Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11340,8 +10777,8 @@ https://github.com/MaayanLab/BiomarkerKG:
   source: cache
   status_code: 200
 https://github.com/MaayanLab/CFDE-KG:
-  checked_at: '2026-06-02T22:37:01Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11410,8 +10847,8 @@ https://github.com/MaayanLab/datadistillery-kg:
   source: cache
   status_code: 200
 https://github.com/MaayanLab/enrichr-kg:
-  checked_at: '2026-06-02T22:37:01Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11421,8 +10858,8 @@ https://github.com/MaayanLab/enrichr_issues:
   ok: true
   status_code: 200
 https://github.com/MaayanLab/harmonizome-kg:
-  checked_at: '2026-05-19T18:50:48Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11665,8 +11102,8 @@ https://github.com/OBOFoundry/COB:
   source: cache
   status_code: 200
 https://github.com/OBioFoundry/FALDO:
-  checked_at: '2026-06-02T22:37:03Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11797,8 +11234,8 @@ https://github.com/OmniSearch/omit:
   source: cache
   status_code: 200
 https://github.com/Ontotext-AD/proton:
-  checked_at: '2026-06-02T22:37:04Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11851,8 +11288,8 @@ https://github.com/PROconsortium/PRoteinOntology:
   source: cache
   status_code: 200
 https://github.com/PanKbase-DB:
-  checked_at: '2026-06-02T22:37:04Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -11928,8 +11365,8 @@ https://github.com/PopulationAndCommunityOntology/pco:
   source: cache
   status_code: 200
 https://github.com/Prabhadeus/Proto-OKN:
-  checked_at: '2026-06-02T22:37:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -12174,8 +11611,8 @@ https://github.com/VEuPathDB-ontology/VEuPathDB-ontology:
   source: cache
   status_code: 200
 https://github.com/VIDallab/huri:
-  checked_at: '2026-05-19T18:50:53Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -12198,8 +11635,8 @@ https://github.com/WengLab-InformaticsResearch/oard-react:
   source: cache
   status_code: 200
 https://github.com/WishartLab/PathWhiz:
-  checked_at: '2026-05-19T18:50:54Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -12277,8 +11714,8 @@ https://github.com/avsastry/modulome-workflow:
   source: cache
   status_code: 200
 https://github.com/baranzini-lab/SPOKE:
-  checked_at: '2026-06-02T22:37:07Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -12529,8 +11966,8 @@ https://github.com/cmap:
   source: cache
   status_code: 200
 https://github.com/cmap/l1000-jupyter:
-  checked_at: '2026-06-02T22:37:07Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -12694,8 +12131,8 @@ https://github.com/elsevier-health/scibite-ontology:
   source: cache
   status_code: 200
 https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip:
-  checked_at: '2026-06-02T22:37:08Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -12790,8 +12227,8 @@ https://github.com/geneontology:
   source: cache
   status_code: 200
 https://github.com/geneontology/go-cam:
-  checked_at: '2026-06-02T22:37:09Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -13305,8 +12742,8 @@ https://github.com/monarch-initiative/phenio:
   source: cache
   status_code: 200
 https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl:
-  checked_at: '2026-06-02T22:37:12Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -13377,8 +12814,8 @@ https://github.com/ncbi/AIONER:
   source: cache
   status_code: 200
 https://github.com/ncbi/NCBI-Datasets:
-  checked_at: '2026-06-02T22:37:12Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -13389,8 +12826,8 @@ https://github.com/ncbi/dbsnp:
   source: cache
   status_code: 200
 https://github.com/ncbi/entrez-direct:
-  checked_at: '2026-06-02T22:37:12Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -13413,8 +12850,8 @@ https://github.com/nhgritctran/PheTK:
   source: cache
   status_code: 200
 https://github.com/nih-cfde/cfde-gse:
-  checked_at: '2026-05-19T18:51:02Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -13880,8 +13317,8 @@ https://github.com/reimandlab/ActiveDriverDB:
   ok: true
   status_code: 200
 https://github.com/reprotox-kg/reprotox-kg:
-  checked_at: '2026-05-19T18:51:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -13982,11 +13419,8 @@ https://github.com/snap-stanford/stellar/blob/main/demo.ipynb:
   source: cache
   status_code: 200
 https://github.com/sorgerlab/indra:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/sparontologies/cito:
   checked_at: '2026-06-02T22:37:16Z'
   error: null
@@ -14012,113 +13446,68 @@ https://github.com/tatonetti-lab/onsides:
   source: cache
   status_code: 200
 https://github.com/tatonetti-lab/onsides/releases:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/terms4fairskills/FAIRterminology:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/txpo-ontology/TXPO:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/ufbmi/dron:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/ufbmi/geographical-entity-ontology:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/ufbmi/geographical-entity-ontology/wiki:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/unmtransinfo/TCRD:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/vaccineontology/VO:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/w3c/skos:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 429
 https://github.com/wikipathways/pfocr:
-  checked_at: '2026-05-19T18:51:07Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://github.com/wikipathways/pfocr-database:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/wikipathways/wikipathways-database:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/wishartlab/chemontology:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 429
 https://github.com/x-atlas-consortia:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/xenopus-anatomy:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/xenopus-anatomy/xao:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/xfd997700/UniBioMap:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/ybradford/zebrafish-experimental-conditions-ontology:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture:
   checked_at: '2026-06-12T16:52:43Z'
   error: null
@@ -14140,26 +13529,20 @@ https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree
   ok: true
   status_code: 200
 https://github.com/zdobnov-lab/orthodb:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 429
 https://github.com/zexuwu/hald:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
-  ok: false
-  source: cache
-  status_code: 429
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://github.com/zhang-informatics/iDISK:
-  checked_at: '2026-06-02T22:37:16Z'
-  error: GET returned HTTP 429
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 429
@@ -14188,26 +13571,14 @@ https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque:
   source: cache
   status_code: 429
 https://gitub.u-bordeaux.fr/erias/fideo:
-  checked_at: '2026-06-02T22:37:17Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''gitub.u-bordeaux.fr'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://gitub.u-bordeaux.fr/erias/oregano:
-  checked_at: '2026-06-02T22:37:17Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''gitub.u-bordeaux.fr'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://gitub.u-bordeaux.fr/erias/oregano/-/blob/master/README.md:
-  checked_at: '2026-06-02T22:37:17Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''gitub.u-bordeaux.fr'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master:
   checked_at: '2026-05-19T18:51:07Z'
   error: null
@@ -14215,12 +13586,8 @@ https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master:
   source: cache
   status_code: 200
 https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs:
-  checked_at: '2026-06-02T22:37:17Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''gitub.u-bordeaux.fr'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://gkb.dcmb.med.umich.edu/:
   checked_at: '2026-06-02T22:37:17Z'
   error: null
@@ -14262,8 +13629,8 @@ https://glyconnect.expasy.org/:
   source: cache
   status_code: 200
 https://glyconnect.expasy.org/api:
-  checked_at: '2026-06-02T22:37:17Z'
-  error: HEAD returned HTTP 500
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   source: cache
   status_code: 500
@@ -14328,11 +13695,8 @@ https://gnpsdocs.readthedocs.io/:
   source: cache
   status_code: 200
 https://go.drugbank.com/:
-  checked_at: '2026-06-02T22:37:17Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://go.drugbank.com/releases/latest:
   checked_at: '2026-06-02T22:37:17Z'
   error: null
@@ -14346,20 +13710,11 @@ https://gold.jgi.doe.gov/:
   source: cache
   status_code: 200
 https://gowiki.tamu.edu/wiki/api.php:
-  checked_at: '2026-06-02T22:37:18Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''gowiki.tamu.edu'', port=443):
-    Max retries exceeded with url: /wiki/api.php (Caused by ConnectTimeoutError(<HTTPSConnection(host=''gowiki.tamu.edu'',
-    port=443) at 0x7fad59a36d50>, ''Connection to gowiki.tamu.edu timed out. (connect
-    timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://graph.openbiodiv.net/webapi:
-  checked_at: '2026-06-02T22:37:18Z'
-  error: HEAD returned HTTP 406
-  ok: false
-  source: cache
-  status_code: 406
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://greengenes2.ucsd.edu/:
   checked_at: '2026-06-02T22:37:18Z'
   error: null
@@ -14456,8 +13811,8 @@ https://gtrnadb.org/search.html:
   source: cache
   status_code: 200
 https://gwas.mrcieu.ac.uk/phewas/:
-  checked_at: '2026-06-02T22:37:18Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -14663,14 +14018,8 @@ https://idir.sockg.org/:
   source: cache
   status_code: 200
 https://idir.uta.edu/sockg/:
-  checked_at: '2026-02-16T22:12:55Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''idir.uta.edu'', port=443):
-    Max retries exceeded with url: /sockg/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=''idir.uta.edu'',
-    port=443) at 0x7f4dfc2cde50>, ''Connection to idir.uta.edu timed out. (connect
-    timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt:
   checked_at: '2026-06-02T22:37:19Z'
   error: null
@@ -14920,50 +14269,50 @@ https://kchen-lab.github.io/immune-knowledgegraph.github.io/:
   ok: true
   status_code: 200
 https://kg-hub.berkeleybop.io/eco-kg/:
-  checked_at: '2026-06-02T22:37:24Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz:
-  checked_at: '2026-06-02T22:37:24Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz:
-  checked_at: '2026-06-02T22:37:24Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz:
-  checked_at: '2026-06-02T22:37:25Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.io/kg-covid-19/:
-  checked_at: '2026-06-02T22:37:25Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.io/sldb/:
-  checked_at: '2026-06-02T22:37:25Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.org/eco-kg/api:
-  checked_at: '2026-06-02T22:37:25Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.org/eco-kg/index.html:
-  checked_at: '2026-06-02T22:37:25Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -14986,8 +14335,8 @@ https://kghub.org/kg-microbe/index.html:
   source: cache
   status_code: 200
 https://kghub.org/kg-monarch/index.html:
-  checked_at: '2026-06-02T22:37:25Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -15202,8 +14551,8 @@ https://knowwheregraph.org/:
   source: cache
   status_code: 200
 https://knowwheregraph.org/sparql/:
-  checked_at: '2026-05-19T18:51:14Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -15256,32 +14605,32 @@ https://lincsproject.org/LINCS/:
   source: cache
   status_code: 200
 https://lncipedia.org/:
-  checked_at: '2026-06-02T22:37:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/db/search:
-  checked_at: '2026-06-02T22:37:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/download:
-  checked_at: '2026-06-02T22:37:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/download#anchor-igv:
-  checked_at: '2026-06-02T22:37:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/download#anchor-metadata:
-  checked_at: '2026-06-02T22:37:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -15470,8 +14819,8 @@ https://maayanlab.cloud/harmonizome-kg/:
   source: cache
   status_code: 200
 https://maayanlab.cloud/harmonizome-kg/api/:
-  checked_at: '2026-05-19T18:51:16Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -15494,14 +14843,8 @@ https://mangal.io/documentation:
   source: cache
   status_code: 200
 https://manticore.niehs.nih.gov/cebssearch/:
-  checked_at: '2026-05-19T18:51:16Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''cebs.niehs.nih.gov'', port=443):
-    Max retries exceeded with url: /cebs// (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://manual.obis.org/:
   checked_at: '2026-06-02T22:37:28Z'
   error: null
@@ -15637,23 +14980,11 @@ https://medlineplus.gov/xml.html:
   source: cache
   status_code: 200
 https://meshb.nlm.nih.gov/MeSHonDemand:
-  checked_at: '2026-06-02T22:37:29Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''meshb.nlm.nih.gov'', port=443):
-    Max retries exceeded with url: /MeSHonDemand (Caused by NameResolutionError("HTTPSConnection(host=''meshb.nlm.nih.gov'',
-    port=443): Failed to resolve ''meshb.nlm.nih.gov'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://meshb.nlm.nih.gov/search:
-  checked_at: '2026-06-02T22:37:29Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''meshb.nlm.nih.gov'', port=443):
-    Max retries exceeded with url: /search (Caused by NameResolutionError("HTTPSConnection(host=''meshb.nlm.nih.gov'',
-    port=443): Failed to resolve ''meshb.nlm.nih.gov'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://metacyc.org/:
   checked_at: '2026-06-02T22:37:29Z'
   error: null
@@ -16068,8 +15399,8 @@ https://ngdc.cncb.ac.cn/lgc:
   source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/lncbook/download:
-  checked_at: '2026-06-02T22:37:35Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -16152,34 +15483,14 @@ https://niva-knowledge-graph.github.io/TERA/:
   source: cache
   status_code: 200
 https://nlmpubs.nlm.nih.gov/projects/mesh/:
-  checked_at: '2026-06-02T22:37:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''nlmpubs.nlm.nih.gov'', port=443):
-    Max retries exceeded with url: /projects/mesh/ (Caused by NameResolutionError("HTTPSConnection(host=''nlmpubs.nlm.nih.gov'',
-    port=443): Failed to resolve ''nlmpubs.nlm.nih.gov'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/asciimesh/:
-  checked_at: '2026-06-02T22:37:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''nlmpubs.nlm.nih.gov'', port=443):
-    Max retries exceeded with url: /projects/mesh/MESH_FILES/asciimesh/ (Caused by
-    NameResolutionError("HTTPSConnection(host=''nlmpubs.nlm.nih.gov'', port=443):
-    Failed to resolve ''nlmpubs.nlm.nih.gov'' ([Errno -3] Temporary failure in name
-    resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/meshmarc/:
-  checked_at: '2026-06-02T22:37:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''nlmpubs.nlm.nih.gov'', port=443):
-    Max retries exceeded with url: /projects/mesh/MESH_FILES/meshmarc/ (Caused by
-    NameResolutionError("HTTPSConnection(host=''nlmpubs.nlm.nih.gov'', port=443):
-    Failed to resolve ''nlmpubs.nlm.nih.gov'' ([Errno -3] Temporary failure in name
-    resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/xmlmesh/:
   checked_at: '2026-06-02T22:37:38Z'
   error: null
@@ -16308,14 +15619,8 @@ https://oborel.github.io/:
   source: cache
   status_code: 200
 https://ocg.cancer.gov/programs/ctd2/data-portal/:
-  checked_at: '2026-06-02T22:37:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''ocg.cancer.gov'', port=443):
-    Max retries exceeded with url: /programs/ctd2/data-portal/ (Caused by NameResolutionError("HTTPSConnection(host=''ocg.cancer.gov'',
-    port=443): Failed to resolve ''ocg.cancer.gov'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ohdsi.github.io/CommonDataModel/:
   checked_at: '2026-06-02T22:37:39Z'
   error: null
@@ -16329,32 +15634,29 @@ https://ohdsi.github.io/Hades/:
   source: cache
   status_code: 200
 https://omabrowser.org/:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://omabrowser.org/All/OmaServer.h5:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/OmaServer.h5.idx:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/eukaryotes.cdna.fa.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/group-descriptions.txt.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
@@ -16365,53 +15667,41 @@ https://omabrowser.org/All/oma-ensembl.txt.gz:
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-entrez.txt.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://omabrowser.org/All/oma-go.txt.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://omabrowser.org/All/oma-groups.orthoXML.xml.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-groups.txt.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 521
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-hogs.orthoXML.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://omabrowser.org/All/oma-pairs.txt.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-protein-annotations.txt.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-rdf-turtle.tgz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://omabrowser.org/All/oma-refseq.txt.gz:
   checked_at: '2026-06-02T22:37:40Z'
   error: GET returned HTTP 403
@@ -16419,14 +15709,14 @@ https://omabrowser.org/All/oma-refseq.txt.gz:
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-seqs.fa.gz:
-  checked_at: '2026-06-02T22:37:40Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-seqs.seqxml.tgz:
-  checked_at: '2026-06-02T22:37:40Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
@@ -16437,14 +15727,11 @@ https://omabrowser.org/All/oma-species.txt:
   source: cache
   status_code: 200
 https://omabrowser.org/All/oma-uniprot.txt.gz:
-  checked_at: '2026-06-02T22:37:40Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://omabrowser.org/All/prokaryotes.cdna.fa.gz:
-  checked_at: '2026-06-02T22:37:40Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
@@ -16455,68 +15742,65 @@ https://omabrowser.org/All/viruses.cdna.fa.gz:
   source: cache
   status_code: 403
 https://omabrowser.org/api/:
-  checked_at: '2026-06-02T22:37:40Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://omabrowser.org/oma/:
-  checked_at: '2026-06-02T22:37:40Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OMA.ttl.gz:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaGroups.orthoxml:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaGroups.txt.gz:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaHOGs.orthoxml:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaServer.h5:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OrthologousPairs.txt.gz:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/oma-proteins.fa.gz:
-  checked_at: '2026-05-19T18:51:22Z'
-  error: GET returned HTTP 403
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 403
@@ -16533,8 +15817,8 @@ https://omnipathdb.org/:
   source: cache
   status_code: 200
 https://omnipathdb.org/queries:
-  checked_at: '2026-06-02T22:37:40Z'
-  error: HEAD returned HTTP 500
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   source: cache
   status_code: 500
@@ -16563,8 +15847,8 @@ https://open.fda.gov/apis/drug/ndc/:
   source: cache
   status_code: 200
 https://open.med.harvard.edu/wiki/display/eaglei/Ontology:
-  checked_at: '2026-06-02T22:37:41Z'
-  error: HEAD returned HTTP 503
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 503
   ok: false
   source: cache
   status_code: 503
@@ -16575,8 +15859,8 @@ https://openbiodiv.net/:
   source: cache
   status_code: 200
 https://openbiodiv.net/ontologies:
-  checked_at: '2026-06-02T22:37:41Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -16697,8 +15981,8 @@ https://orkg.org/triplestore:
   source: cache
   status_code: 200
 https://pankbase-db.github.io/pankbase-client-openapi-spec/:
-  checked_at: '2026-06-02T22:37:44Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -16721,60 +16005,32 @@ https://pankgraph.org/api:
   source: cache
   status_code: 200
 https://parasite.wormbase.org/:
-  checked_at: '2026-06-02T22:37:45Z'
-  error: HEAD returned HTTP 500
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   source: cache
   status_code: 500
 https://pathbank.org/:
-  checked_at: '2026-06-02T22:37:45Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''pathbank.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://pathbank.org/downloads:
-  checked_at: '2026-06-02T22:37:45Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''pathbank.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://pathbank.org/lims:
-  checked_at: '2026-06-02T22:37:45Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''pathbank.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://pathbank.org/pathwhiz:
-  checked_at: '2026-06-02T22:37:45Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''pathbank.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://pathbank.org/pathwhiz/guest_login:
-  checked_at: '2026-06-02T22:37:46Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''pathbank.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://pathbank.org/pathwhiz/guides:
-  checked_at: '2026-06-02T22:37:47Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''pathbank.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://pathbank.org/pathwhiz/pathways:
-  checked_at: '2026-06-02T22:37:47Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''pathbank.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://pathwaycommons.github.io/pcapi/:
   checked_at: '2026-05-19T18:51:25Z'
   error: null
@@ -17035,8 +16291,8 @@ https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=1
   source: cache
   status_code: 200
 https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=217&Itemid=255:
-  checked_at: '2026-05-19T18:51:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -17136,20 +16392,20 @@ https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.ta
   source: cache
   status_code: 200
 https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz:
-  checked_at: '2026-06-02T22:37:55Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz:
-  checked_at: '2026-06-02T22:37:55Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz:
-  checked_at: '2026-06-02T22:37:55Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -17190,11 +16446,8 @@ https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip:
   source: cache
   status_code: 200
 https://previous.malacards.org/:
-  checked_at: '2026-06-02T22:37:56Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://progenomes.embl.de/:
   checked_at: '2026-06-02T22:37:56Z'
   error: null
@@ -17226,11 +16479,8 @@ https://proteininformationresource.org/:
   source: cache
   status_code: 200
 https://proteininformationresource.org/pirwww/download/:
-  checked_at: '2026-06-12T16:52:44Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''proteininformationresource.org'',
-    port=443): Read timed out. (read timeout=8.0)'
-  ok: false
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://ptmd.biocuckoo.cn/:
   checked_at: '2026-06-02T22:37:56Z'
   error: null
@@ -17321,8 +16571,8 @@ https://purl.obolibrary.org/obo/ohd:
   source: cache
   status_code: 200
 https://purl.obolibrary.org/obo/ohd/home:
-  checked_at: '2026-04-15T21:14:03Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -17345,11 +16595,8 @@ https://pypi.org/project/pypath-omnipath/:
   source: cache
   status_code: 200
 https://qlever.earthmetabolome.org/api/metrin-kg:
-  checked_at: '2026-06-02T22:37:58Z'
-  error: GET returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://query.wikidata.org/:
   checked_at: '2026-06-02T22:37:58Z'
   error: null
@@ -17357,12 +16604,8 @@ https://query.wikidata.org/:
   source: cache
   status_code: 200
 https://query.wikidata.org/sparql:
-  checked_at: '2026-02-16T22:13:10Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''query.wikidata.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://rampdb.nih.gov/:
   checked_at: '2026-06-02T22:37:58Z'
   error: null
@@ -17781,10 +17024,8 @@ https://research.bioinformatics.udel.edu/ProKN/explorer:
   source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/ProKN/mcp:
-  checked_at: '2026-06-12T16:52:44Z'
-  error: GET returned HTTP 406
-  ok: false
-  status_code: 406
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://research.bioinformatics.udel.edu/ProKN/restapi:
   checked_at: '2026-06-02T22:38:00Z'
   error: null
@@ -17838,8 +17079,8 @@ https://research.bioinformatics.udel.edu/itextmine/integrate/search/emind/medlin
   ok: true
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv
-: checked_at: '2026-05-19T18:51:31Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18207,218 +17448,218 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.P
   source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Anatomy.nodes.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Anatomy.edges.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Gene.EXPRESSED_IN.Anatomy.edges.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.AminoAcid.nodes.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenLocation.HAS_AMINO_ACID.AminoAcid.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.ATTACHED_BY.Glycosylation.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.HAS_PARENT.GlyGenResidue.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.GLYCOSYLATED_AT.GlycosylationSite.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_EVIDENCE.GlycoproteinEvidence.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Isoform.edges.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycoproteinEvidence.CITATION.GlycoproteinCitation.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.HAS_SACCHARIDE.Glytoucan.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.LOCATION.GlyGenLocation.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_CANONICAL_RESIDUE.GlyGenResidue.edges.csv
-: checked_at: '2026-05-19T18:51:32Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_GLYCOSEQUENCE.GlyGenGlycosequence.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_MOTIF.GlycanMotif.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.IS_FROM_SOURCE.GlyGenSrc.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Isoform.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.nodes.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.nodes.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.BIOACTIVITY.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.nodes.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18513,20 +17754,20 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Pro
   source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.NEGATIVELY_REGULATES.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18547,56 +17788,56 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.P
   source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.DOWN_REGULATED.Experiment.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.IS_SITE_OF.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UNREGULATED.Experiment.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UP_REGULATED.Experiment.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_MARKER_GENE.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_SIGNATURE_GENE.Gene.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.PATHWAY_ASSOCIATED_WITH_GENE.Gene.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.TARGETS_EXPRESSION_OF_GENE.Gene.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18606,14 +17847,14 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound
   ok: true
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound.TARGETS.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Disease.SKOS_EXACT_MATCH.DiseaseOrPhenotype.edges.csv
-: checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18648,8 +17889,8 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Pro
   source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_PTM.PTM.edges.csv:
-  checked_at: '2026-05-19T18:51:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18689,8 +17930,8 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Varian
   source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.PTM.TARGETS.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:34Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18700,8 +17941,8 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Prot
   ok: true
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.HAS_ISOFORM.Protein.edges.csv:
-  checked_at: '2026-05-19T18:51:34Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18716,8 +17957,8 @@ https://research.bioinformatics.udel.edu/text_mining/rlimsp2/:
   ok: true
   status_code: 200
 https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMS-P_AnnotationGuidelines.pdf:
-  checked_at: '2026-06-12T16:52:45Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 https://rest.ensembl.org:
@@ -18733,8 +17974,8 @@ https://rfam.org/:
   source: cache
   status_code: 200
 https://rfam.org/api:
-  checked_at: '2026-06-02T22:38:02Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -18787,12 +18028,8 @@ https://rna-kg.biodata.di.unimi.it/rnakgv20.dump:
   source: cache
   status_code: 200
 https://rnacentral.org/:
-  checked_at: '2026-06-02T22:38:02Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''rnacentral.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://rnacentral.org/api:
   checked_at: '2026-06-02T22:38:02Z'
   error: null
@@ -18919,14 +18156,8 @@ https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.g
   source: cache
   status_code: 200
 https://rxnav.nlm.nih.gov/RxNormAPIs.html:
-  checked_at: '2026-06-02T22:38:03Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''rxnav.nlm.nih.gov'', port=443):
-    Max retries exceeded with url: /RxNormAPIs.html (Caused by NameResolutionError("HTTPSConnection(host=''rxnav.nlm.nih.gov'',
-    port=443): Failed to resolve ''rxnav.nlm.nih.gov'' ([Errno -3] Temporary failure
-    in name resolution)"))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz:
   checked_at: '2026-06-02T22:38:03Z'
   error: null
@@ -19182,10 +18413,8 @@ https://sennetconsortium.org/:
   source: cache
   status_code: 200
 https://services.nhsbsa.nhs.uk/dmd-browser/:
-  checked_at: '2026-06-12T16:52:46Z'
-  error: GET returned HTTP 403
-  ok: false
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://sib-swiss.github.io/sparql-editor/emi:
   checked_at: '2026-06-02T22:38:04Z'
   error: null
@@ -19199,20 +18428,20 @@ https://sibils.org/:
   source: cache
   status_code: 200
 https://sibils.org/API#Customizable-search-API:
-  checked_at: '2026-06-02T22:38:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://sibils.org/API#Fetch-API:
-  checked_at: '2026-06-02T22:38:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://sibils.org/API#Question-Answering-API:
-  checked_at: '2026-06-02T22:38:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -19277,26 +18506,26 @@ https://skm.nib.si/ckn:
   source: cache
   status_code: 200
 https://skm.nib.si/downloads/ckn-annot/v1-2018.06:
-  checked_at: '2026-06-02T22:38:05Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://skm.nib.si/downloads/ckn-annot/v2-2023.06:
-  checked_at: '2026-06-02T22:38:06Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://skm.nib.si/downloads/ckn/v1-2018.06:
-  checked_at: '2026-06-02T22:38:06Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://skm.nib.si/downloads/ckn/v2-2023.06:
-  checked_at: '2026-06-02T22:38:06Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -19319,8 +18548,8 @@ https://skm.nib.si/downloads/pss/public/dinar-edges:
   source: cache
   status_code: 200
 https://skm.nib.si/downloads/pss/public/graphviz:
-  checked_at: '2026-06-02T22:38:06Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -19409,12 +18638,8 @@ https://smart.embl.de/smart/search.cgi:
   source: cache
   status_code: 200
 https://smpdb.ca/:
-  checked_at: '2026-06-02T22:38:07Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''smpdb.ca'', port=443): Read
-    timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://smpdb.ca/pathwhiz:
   checked_at: '2026-05-19T18:51:37Z'
   error: null
@@ -19689,8 +18914,8 @@ https://stars.renci.org/var/translator/releases/cohd/2025_12_15/:
   source: cache
   status_code: 200
 https://stars.renci.org/var/translator/releases/ctd/2025_12_15/:
-  checked_at: '2026-03-30T20:13:49Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -19833,8 +19058,8 @@ https://stko-kwg.geog.ucsb.edu/lod/ontology:
   source: cache
   status_code: 200
 https://stko-kwg.geog.ucsb.edu/sparql:
-  checked_at: '2026-06-02T22:38:08Z'
-  error: HEAD returned HTTP 400
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 400
   ok: false
   source: cache
   status_code: 400
@@ -20160,14 +19385,14 @@ https://tree.opentreeoflife.org/:
   source: cache
   status_code: 200
 https://tree.opentreeoflife.org/tnrs:
-  checked_at: '2026-06-02T22:38:11Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://tree.opentreeoflife.org/tree:
-  checked_at: '2026-06-02T22:38:11Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -20267,8 +19492,8 @@ https://unmtid-shinyapps.net/shiny/repodb/:
   source: cache
   status_code: 200
 https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=:
-  checked_at: '2026-06-02T22:38:11Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -20336,8 +19561,8 @@ https://vitessce.io/:
   source: cache
   status_code: 200
 https://w3id.org/biolink/biolink-model.graphql:
-  checked_at: '2026-06-02T22:38:13Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -20618,8 +19843,8 @@ https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json:
-  checked_at: '2026-02-16T22:13:26Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -20630,8 +19855,8 @@ https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo:
-  checked_at: '2026-02-16T22:13:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -20642,8 +19867,8 @@ https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl:
-  checked_at: '2026-02-16T22:13:27Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21032,8 +20257,8 @@ https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo:
-  checked_at: '2026-02-16T22:13:30Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21266,8 +20491,8 @@ https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mesh/mesh.json:
-  checked_at: '2026-02-16T22:13:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21284,8 +20509,8 @@ https://w3id.org/biopragmatics/resources/mesh/mesh.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mesh/mesh.owl:
-  checked_at: '2026-02-16T22:13:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21302,8 +20527,8 @@ https://w3id.org/biopragmatics/resources/mesh/mesh.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mgi/mgi.json:
-  checked_at: '2026-02-16T22:13:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21314,8 +20539,8 @@ https://w3id.org/biopragmatics/resources/mgi/mgi.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mgi/mgi.obo:
-  checked_at: '2026-02-16T22:13:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21326,8 +20551,8 @@ https://w3id.org/biopragmatics/resources/mgi/mgi.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mgi/mgi.owl:
-  checked_at: '2026-02-16T22:13:33Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21434,8 +20659,8 @@ https://w3id.org/biopragmatics/resources/mirbase/mirbase.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.json:
-  checked_at: '2026-02-16T22:13:34Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21446,8 +20671,8 @@ https://w3id.org/biopragmatics/resources/msigdb/msigdb.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo:
-  checked_at: '2026-02-16T22:13:34Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21458,8 +20683,8 @@ https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl:
-  checked_at: '2026-02-16T22:13:35Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21512,8 +20737,8 @@ https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json:
-  checked_at: '2026-02-16T22:13:35Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21524,8 +20749,8 @@ https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo:
-  checked_at: '2026-02-16T22:13:35Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21536,8 +20761,8 @@ https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl:
-  checked_at: '2026-02-16T22:13:35Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21668,8 +20893,8 @@ https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.json:
-  checked_at: '2026-02-16T22:13:36Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21680,8 +20905,8 @@ https://w3id.org/biopragmatics/resources/pathbank/pathbank.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo:
-  checked_at: '2026-02-16T22:13:36Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21692,8 +20917,8 @@ https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl:
-  checked_at: '2026-02-16T22:13:36Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21956,8 +21181,8 @@ https://w3id.org/biopragmatics/resources/pombase/pombase.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/reactome/reactome.json:
-  checked_at: '2026-02-16T22:13:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -21974,8 +21199,8 @@ https://w3id.org/biopragmatics/resources/reactome/reactome.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/reactome/reactome.owl:
-  checked_at: '2026-02-16T22:13:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22034,8 +21259,8 @@ https://w3id.org/biopragmatics/resources/rgd/rgd.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/rhea/rhea.json:
-  checked_at: '2026-02-16T22:13:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22052,8 +21277,8 @@ https://w3id.org/biopragmatics/resources/rhea/rhea.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/rhea/rhea.owl:
-  checked_at: '2026-02-16T22:13:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22076,8 +21301,8 @@ https://w3id.org/biopragmatics/resources/rhea/rhea.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/ror/ror.json:
-  checked_at: '2026-02-16T22:13:40Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22094,8 +21319,8 @@ https://w3id.org/biopragmatics/resources/ror/ror.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/ror/ror.owl:
-  checked_at: '2026-02-16T22:13:40Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22166,8 +21391,8 @@ https://w3id.org/biopragmatics/resources/signor/signor.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/slm/slm.json:
-  checked_at: '2026-02-16T22:13:40Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22178,8 +21403,8 @@ https://w3id.org/biopragmatics/resources/slm/slm.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/slm/slm.obo:
-  checked_at: '2026-02-16T22:13:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22190,8 +21415,8 @@ https://w3id.org/biopragmatics/resources/slm/slm.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/slm/slm.owl:
-  checked_at: '2026-02-16T22:13:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22292,8 +21517,8 @@ https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.json:
-  checked_at: '2026-02-16T22:13:39Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22304,8 +21529,8 @@ https://w3id.org/biopragmatics/resources/uniprot/uniprot.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo:
-  checked_at: '2026-02-16T22:13:40Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22316,8 +21541,8 @@ https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl:
-  checked_at: '2026-02-16T22:13:40Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22364,8 +21589,8 @@ https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/zfin/zfin.json:
-  checked_at: '2026-02-16T22:13:40Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22382,8 +21607,8 @@ https://w3id.org/biopragmatics/resources/zfin/zfin.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/zfin/zfin.owl:
-  checked_at: '2026-02-16T22:13:40Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22412,8 +21637,8 @@ https://w3id.org/emi:
   source: cache
   status_code: 200
 https://w3id.org/goldterms/goldterms.owl:
-  checked_at: '2026-06-02T22:38:35Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22484,11 +21709,8 @@ https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources:
   source: cache
   status_code: 200
 https://wormbase.org/:
-  checked_at: '2026-06-02T22:38:35Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www-snorna.biotoul.fr/:
   checked_at: '2026-06-02T22:38:35Z'
   error: null
@@ -22591,11 +21813,8 @@ https://www.ama-assn.org/practice-management/cpt:
   source: cache
   status_code: 200
 https://www.arabidopsis.org/:
-  checked_at: '2026-06-02T22:38:36Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.arb-silva.de/:
   checked_at: '2026-06-02T22:38:36Z'
   error: null
@@ -22855,11 +22074,8 @@ https://www.brenda-enzymes.org/soap.php:
   source: cache
   status_code: 200
 https://www.broadinstitute.org/connectivity-map-cmap:
-  checked_at: '2026-06-02T22:38:38Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.bv-brc.org/:
   checked_at: '2026-06-02T22:38:38Z'
   error: null
@@ -22873,8 +22089,8 @@ https://www.bv-brc.org/api/doc/:
   source: cache
   status_code: 200
 https://www.bv-brc.org/docs/api/:
-  checked_at: '2026-05-19T18:52:07Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -22942,26 +22158,26 @@ https://www.cancergenomeinterpreter.org/rest_api:
   source: cache
   status_code: 200
 https://www.cancerrxgene.org/:
-  checked_at: '2026-06-02T22:38:38Z'
-  error: HEAD returned HTTP 410
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 410
   ok: false
   source: cache
   status_code: 410
 https://www.cancerrxgene.org/downloads/anova:
-  checked_at: '2026-06-02T22:38:38Z'
-  error: HEAD returned HTTP 410
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 410
   ok: false
   source: cache
   status_code: 410
 https://www.cancerrxgene.org/downloads/drug_data:
-  checked_at: '2026-06-02T22:38:38Z'
-  error: HEAD returned HTTP 410
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 410
   ok: false
   source: cache
   status_code: 410
 https://www.cancerrxgene.org/downloads/genetic_features:
-  checked_at: '2026-06-02T22:38:38Z'
-  error: HEAD returned HTTP 410
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 410
   ok: false
   source: cache
   status_code: 410
@@ -23095,17 +22311,11 @@ https://www.disprot.org/download:
   source: cache
   status_code: 200
 https://www.drugbank.com/:
-  checked_at: '2026-06-02T22:38:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.drugbank.com/clinical:
-  checked_at: '2026-06-02T22:38:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.dublincore.org/:
   checked_at: '2026-06-02T22:38:39Z'
   error: null
@@ -23215,11 +22425,8 @@ https://www.ebi.ac.uk/complexportal/webservice:
   source: cache
   status_code: 200
 https://www.ebi.ac.uk/efo/:
-  checked_at: '2026-06-02T22:38:40Z'
-  error: HEAD returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.ebi.ac.uk/efo/efo.obo:
   checked_at: '2026-06-02T22:38:40Z'
   error: null
@@ -23323,8 +22530,8 @@ https://www.ebi.ac.uk/gxa/experiments?experimentType=differential:
   source: cache
   status_code: 200
 https://www.ebi.ac.uk/gxa/help/api.html:
-  checked_at: '2026-06-02T22:38:41Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -23335,8 +22542,8 @@ https://www.ebi.ac.uk/gxa/help/index.html:
   source: cache
   status_code: 200
 https://www.ebi.ac.uk/gxa/help/r-data-objects.html:
-  checked_at: '2026-06-02T22:38:41Z'
-  error: HEAD returned HTTP 500
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   source: cache
   status_code: 500
@@ -23478,15 +22685,14 @@ https://www.ebi.ac.uk/pdbe/pdbe-kb/schema:
   source: cache
   status_code: 200
 https://www.ebi.ac.uk/rdf/services/sparql:
-  checked_at: '2026-06-02T22:38:41Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.ebi.ac.uk/spot/oxo/:
-  checked_at: '2026-06-02T22:38:41Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.ebi.ac.uk'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 500
   ok: false
   source: cache
   status_code: null
@@ -23563,8 +22769,8 @@ https://www.ema.europa.eu/:
   ok: true
   status_code: 200
 ? https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/data-medicines-iso-idmp-standards/public-data-article-57-database
-: checked_at: '2026-06-12T16:52:46Z'
-  error: HEAD returned HTTP 404
+: checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 https://www.ema.europa.eu/en/medicines:
@@ -23589,8 +22795,8 @@ https://www.embopress.org/doi/abs/10.1038/msb.2011.26:
   ok: true
   status_code: 200
 https://www.embopress.org/doi/suppl/10.1038/msb.2011.26:
-  checked_at: '2026-06-12T16:52:46Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   status_code: 404
 https://www.encodeproject.org/:
@@ -23772,23 +22978,14 @@ https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementar
   source: cache
   status_code: 200
 https://www.gbif.org/:
-  checked_at: '2026-06-02T22:38:42Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.gbif.org/ipt:
-  checked_at: '2026-06-02T22:38:42Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.gbif.org/occurrence/download:
-  checked_at: '2026-06-02T22:38:42Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.gencodegenes.org/:
   checked_at: '2026-06-02T22:38:42Z'
   error: null
@@ -23814,11 +23011,8 @@ https://www.gencodegenes.org/pages/gencode_primary/:
   source: cache
   status_code: 200
 https://www.genecards.org/:
-  checked_at: '2026-06-02T22:38:42Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.genenames.org/:
   checked_at: '2026-06-02T22:38:42Z'
   error: null
@@ -24021,35 +23215,20 @@ https://www.guidetopharmacology.org/webServices.jsp:
   source: cache
   status_code: 200
 https://www.hmdb.ca/:
-  checked_at: '2026-06-02T22:38:44Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.hmdb.ca/downloads#metabolite-protein-xml:
-  checked_at: '2026-06-02T22:38:44Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.hmdb.ca/downloads#protein-gene-sequences:
-  checked_at: '2026-06-02T22:38:44Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.hmdb.ca/downloads#spectra:
-  checked_at: '2026-06-02T22:38:44Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.hmdb.ca/downloads#structures:
-  checked_at: '2026-06-02T22:38:44Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.icgc-argo.org/:
   checked_at: '2026-06-12T16:52:47Z'
   error: null
@@ -24061,17 +23240,11 @@ https://www.imexconsortium.org/:
   ok: true
   status_code: 200
 https://www.inchi-trust.org/:
-  checked_at: '2026-06-02T22:38:44Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.inchi-trust.org/downloads/:
-  checked_at: '2026-06-02T22:38:44Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.indra.bio/:
   checked_at: '2026-06-02T22:38:44Z'
   error: null
@@ -24331,8 +23504,8 @@ https://www.knowwheregraph.org/tools/knowledge-explorer/:
   source: cache
   status_code: 200
 https://www.lncipedia.org/trackhub/hub.txt:
-  checked_at: '2026-06-02T22:38:47Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -24390,8 +23563,8 @@ https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv:
   source: cache
   status_code: 200
 https://www.metanetx.org/ftp/latest/metanetx.ttl.gz:
-  checked_at: '2026-06-02T22:38:47Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -24573,12 +23746,8 @@ https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi:
   source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424:
-  checked_at: '2026-06-02T22:38:48Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.ncbi.nlm.nih.gov'',
-    port=443): Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.ncbi.nlm.nih.gov/refseq/:
   checked_at: '2026-06-02T22:38:48Z'
   error: null
@@ -24662,8 +23831,8 @@ https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8b
   source: cache
   status_code: 200
 https://www.nescent.org/phenoscape/Main_Page:
-  checked_at: '2026-06-02T22:38:48Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -24777,17 +23946,11 @@ https://www.omicsdi.org/ws/swagger-ui/index.html:
   source: cache
   status_code: 200
 https://www.omim.org/:
-  checked_at: '2026-06-02T22:38:49Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.omim.org/api:
-  checked_at: '2026-06-02T22:38:49Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.omim.org/static/omim/data/mim2gene.txt:
   checked_at: '2026-06-02T22:38:49Z'
   error: null
@@ -24843,8 +24006,8 @@ https://www.orphadata.com/contact/:
   source: cache
   status_code: 200
 https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl:
-  checked_at: '2026-06-02T22:38:49Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -24873,8 +24036,8 @@ https://www.orthodb.org/:
   source: cache
   status_code: 200
 https://www.orthodb.org/api/:
-  checked_at: '2026-05-19T18:52:19Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -24884,11 +24047,8 @@ https://www.p3db.org/:
   ok: true
   status_code: 200
 https://www.pantherdb.org/:
-  checked_at: '2026-06-02T22:38:49Z'
-  error: 'HEAD request failed: Exceeded 30 redirects.'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.pathwaycommons.org/:
   checked_at: '2026-06-02T22:38:49Z'
   error: null
@@ -25006,26 +24166,26 @@ https://www.proteinatlas.org/about/download:
   source: cache
   status_code: 200
 https://www.proteinatlas.org/download/blood_protein.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/brain_rna.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/normal_tissue.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/pathology.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -25048,32 +24208,32 @@ https://www.proteinatlas.org/download/proteinatlas.xml.gz:
   source: cache
   status_code: 200
 https://www.proteinatlas.org/download/rna_celline.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/rna_single_cell.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/rna_tissue.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/subcellular_location.tsv.zip:
-  checked_at: '2026-05-19T18:52:21Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-25T15:59:09Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -25130,11 +24290,8 @@ https://www.rcsb.org/:
   source: cache
   status_code: 200
 https://www.rhea-db.org/:
-  checked_at: '2026-06-02T22:38:51Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.ribocentre.org/:
   checked_at: '2026-06-02T22:38:51Z'
   error: null
@@ -25334,12 +24491,8 @@ https://www.tcdb.org/cgi-bin/projectv/public/refseq.py:
   source: cache
   status_code: 200
 https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py:
-  checked_at: '2026-06-02T22:38:53Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.tcdb.org'', port=443):
-    Read timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.tcdb.org/cgi-bin/substrates/listSuperfamilies.py:
   checked_at: '2026-06-02T22:38:53Z'
   error: null
@@ -25365,11 +24518,8 @@ https://www.tcdb.org/public/tcdb:
   source: cache
   status_code: 200
 https://www.textpresso.org/cgi-bin/wb/tfw.cgi:
-  checked_at: '2026-06-02T22:38:53Z'
-  error: GET returned HTTP 404
-  ok: false
-  source: cache
-  status_code: 404
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.try-db.org/TryWeb/Home.php:
   checked_at: '2026-06-02T22:38:53Z'
   error: null
@@ -25377,11 +24527,8 @@ https://www.try-db.org/TryWeb/Home.php:
   source: cache
   status_code: 200
 https://www.ukbiobank.ac.uk/:
-  checked_at: '2026-06-02T22:38:53Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.unicarbkb.org:
   checked_at: '2026-06-12T16:52:48Z'
   error: null
@@ -25424,15 +24571,11 @@ https://www.vectorbase.org/ontology-browser:
   source: cache
   status_code: 200
 https://www.vmh.life/:
-  checked_at: '2026-06-12T16:52:48Z'
-  error: GET returned HTTP 403
-  ok: false
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.vmh.life/#downloadview:
-  checked_at: '2026-06-12T16:52:48Z'
-  error: GET returned HTTP 403
-  ok: false
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.vumc.org/cpm/center-precision-medicine-blog/phewas-r-package:
   checked_at: '2026-06-02T22:38:54Z'
   error: null
@@ -25579,17 +24722,11 @@ https://www.wolterskluwer.com/en/solutions/medi-span/contact-us/support:
   source: cache
   status_code: 200
 https://www.wormbase.org/about/userguide/for_developers/API-REST:
-  checked_at: '2026-06-02T22:38:55Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.wormbase.org/tools/genome/gbrowse/c_elegans/:
-  checked_at: '2026-06-02T22:38:55Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://www.yeastgenome.org/:
   checked_at: '2026-06-02T22:38:55Z'
   error: null
@@ -26022,11 +25159,8 @@ https://zfin.org/downloads/phenoGeneCleanData_fish.txt:
   source: cache
   status_code: 200
 https://zhanggroup.org/UniBioMap/:
-  checked_at: '2026-06-02T22:38:57Z'
-  error: HEAD returned HTTP 525
-  ok: false
-  source: cache
-  status_code: 525
+  checked_at: '2026-06-25T15:59:09Z'
+  ok: true
 https://zitniklab.hms.harvard.edu/projects/PrimeKG:
   checked_at: '2026-06-02T22:38:57Z'
   error: null
