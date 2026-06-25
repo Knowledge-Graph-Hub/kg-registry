@@ -95,6 +95,8 @@ products:
   original_source:
   - source: biomarkerkg
     relation_type: prov:hadPrimarySource
+  - source: obci
+    relation_type: prov:hadPrimarySource
   product_file_size: 276
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.nodes.zip
 - category: GraphProduct
@@ -159,6 +161,8 @@ products:
   name: BKG Role Edges
   original_source:
   - source: biomarkerkg
+    relation_type: prov:hadPrimarySource
+  - source: obci
     relation_type: prov:hadPrimarySource
   product_file_size: 355306
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.edges.zip

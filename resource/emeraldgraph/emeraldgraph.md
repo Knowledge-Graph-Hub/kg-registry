@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://github.com/ai4greenwashing/EmeraldMind
 id: emeraldgraph
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0

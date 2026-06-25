@@ -6,8 +6,10 @@ format: csv
 id: biomarkerkg.edges.variant
 name: BKG Variant Edges
 original_source:
-  - source: biomarkerkg
-    relation_type: prov:hadPrimarySource
+- source: biomarkerkg
+  relation_type: prov:hadPrimarySource
+- source: dbsnp
+  relation_type: prov:hadPrimarySource
 product_file_size: 1067491
 product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
 layout: product_detail

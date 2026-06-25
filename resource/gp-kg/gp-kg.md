@@ -24,6 +24,32 @@ products:
     original_source:
       - source: gp-kg
         relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:wasDerivedFrom
+      - source: mgi
+        relation_type: prov:wasDerivedFrom
+      - source: go
+        relation_type: prov:wasDerivedFrom
+      - source: goa
+        relation_type: prov:wasDerivedFrom
+      - source: gtex
+        relation_type: prov:wasDerivedFrom
+      - source: hp
+        relation_type: prov:wasDerivedFrom
+      - source: mp
+        relation_type: prov:wasDerivedFrom
+      - source: omim
+        relation_type: prov:wasDerivedFrom
+      - source: umls
+        relation_type: prov:wasDerivedFrom
+      - source: uberon
+        relation_type: prov:wasDerivedFrom
+      - source: pubchem
+        relation_type: prov:wasDerivedFrom
+      - source: uniprot
+        relation_type: prov:wasDerivedFrom
+      - source: faers
+        relation_type: prov:wasDerivedFrom
     product_file_size: 48397035
     product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   - category: ProcessProduct
@@ -46,7 +72,7 @@ publications:
   year: '2022'
 repository: http://nlp.case.edu/public/data/GPKG-Predict/
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 ---
 
 GP-KG

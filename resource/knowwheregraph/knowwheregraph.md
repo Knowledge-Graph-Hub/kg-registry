@@ -24,7 +24,7 @@ funding:
 homepage_url: https://knowwheregraph.org/
 id: "knowwheregraph"
 infores_id: "knowwheregraph"
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: "https://creativecommons.org/licenses/by/4.0/"
@@ -42,6 +42,8 @@ products:
     original_source:
       - source: knowwheregraph
         relation_type: prov:hadPrimarySource
+      - source: wikidata
+        relation_type: prov:wasDerivedFrom
   - category: ProgrammingInterface
     description: SPARQL endpoint with GeoSPARQL support for querying KnowWhereGraph data and performing geospatial queries
     format: http

@@ -21,4 +21,8 @@ original_source:
   source: oreganno
 - relation_type: prov:hadPrimarySource
   source: trrust
+- relation_type: prov:hadPrimarySource
+  source: tfacts
+- relation_type: prov:hadPrimarySource
+  source: tred
 ---

@@ -81,6 +81,12 @@ products:
         relation_type: prov:hadPrimarySource
       - source: enhanceratlas
         relation_type: prov:hadPrimarySource
+      - source: ccre
+        relation_type: prov:hadPrimarySource
+      - source: fire
+        relation_type: prov:hadPrimarySource
+      - source: motifmap
+        relation_type: prov:hadPrimarySource
     product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
 creation_date: '2025-03-20T00:00:00Z'
 last_modified_date: '2026-06-18T00:00:00Z'

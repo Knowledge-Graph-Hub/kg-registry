@@ -41,6 +41,10 @@ products:
     source: oreganno
   - relation_type: prov:hadPrimarySource
     source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: tfacts
+  - relation_type: prov:hadPrimarySource
+    source: tred
   product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 - category: ProcessProduct
   description: Bioconductor R data package containing human and mouse regulons for
