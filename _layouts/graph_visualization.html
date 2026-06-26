@@ -27,12 +27,15 @@ layout: default
               <li><strong>Select resources</strong> from the dropdown list on the right (hold Ctrl/Cmd for multiple selections)</li>
               <li><strong>Click "Add Selected Resources"</strong> to add them to the graph</li>
               <li>Each resource will show <strong>only its direct products</strong> by default</li>
+              <li><strong>Solid lines</strong> link a resource to the products it makes; <strong>dashed lines</strong> mark products re-used by other resources</li>
+              <li>Try the <strong>Example</strong> button to load a sample knowledge graph with its data sources already shown</li>
             </ul>
           </div>
           <div class="col-md-6">
             <h5>Interacting with the Graph</h5>
             <ul>
-              <li><strong>Right-click on a node</strong> to expand its connections or hide it</li>
+              <li><strong>Right-click on a node</strong> to expand its connections, show its data sources, or hide it</li>
+              <li><strong>"Show Data Sources"</strong> reveals the upstream sources for a product, or for all of a resource's primary products</li>
               <li><strong>Left-click on a node</strong> to see its details and highlight connections</li>
               <li><strong>Drag nodes</strong> to reposition them for better visibility</li>
               <li><strong>Zoom</strong> in and out using the mouse wheel or pinch gestures</li>
@@ -59,7 +62,7 @@ layout: default
           </div>
         </div>
         <div class="alert alert-info mt-3 mb-0">
-          <strong>💡 Tip:</strong> Start with 1-3 resources to keep the visualization manageable. Right-click nodes to expand their connections. Products only show connections to resources that are already in the graph.
+          <strong>💡 Tip:</strong> Start with 1-3 resources to keep the visualization manageable. Right-click a product or resource and choose "Show Data Sources" to bring in just its upstream sources, without expanding every connection between them.
         </div>
       </div>
     </div>

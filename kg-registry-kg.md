@@ -24,6 +24,9 @@ permalink: /kg-registry-kg/
   <div class="context-menu-item" id="expand-node">
     <i class="bi bi-arrows-expand"></i> Expand Connections
   </div>
+  <div class="context-menu-item" id="show-sources">
+    <i class="bi bi-diagram-2"></i> Show Data Sources
+  </div>
   <div class="context-menu-item" id="hide-node">
     <i class="bi bi-eye-slash"></i> Hide Node
   </div>
