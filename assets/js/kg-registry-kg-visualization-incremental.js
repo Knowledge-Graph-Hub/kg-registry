@@ -55,6 +55,28 @@ function productSourceAssociations(product) {
   return associations;
 }
 
+/**
+ * Determine which resource "owns" a product from its ID.
+ * Product IDs are namespaced as `<resourceId>.<rest>` and resource IDs never
+ * contain a dot, so the owner is the segment before the first dot.
+ */
+function productOwnerId(productId) {
+  if (typeof productId !== 'string') {
+    return '';
+  }
+  return productId.split('.')[0];
+}
+
+/**
+ * A product is "primary" to a resource when the resource owns it, and
+ * "secondary" when it merely appears under the resource because it is re-used
+ * by another resource (e.g. genecards.web.interface listed under kg-monarch).
+ */
+function isSecondaryProduct(productId, resourceId) {
+  const owner = productOwnerId(productId);
+  return owner !== '' && owner !== resourceId;
+}
+
 function edgeSourceId(edge) {
   return typeof edge.source === 'object' ? edge.source.id : edge.source;
 }
@@ -354,36 +376,44 @@ function addResourcesToGraph(resourceIds) {
           return;
         }
 
+        const secondary = isSecondaryProduct(productId, resource.id);
+
         const productNode = {
           id: productId,
           name: product.description || productId,
           type: product.category,
           url: product.product_url || '',
           parentId: resource.id,
-          isUserSelected: false
+          isUserSelected: false,
+          isSecondary: secondary // Owned by another resource; shown as re-use
         };
 
         displayedGraph.nodes.push(productNode);
 
-        // Add link from resource to product
+        // Add link from resource to product (dashed in the view when secondary)
         displayedGraph.links.push({
           source: resource.id,
           target: productId,
-          type: 'has_product'
+          type: 'has_product',
+          secondary: secondary
         });
 
-        // Create links to all source resources (whether in graph or not)
-        productSourceAssociations(product).forEach(({ association, defaultRelation }) => {
-          const sourceId = sourceAssociationId(association);
-          if (!sourceId) return;
-          // Create link to source resource regardless of whether it's displayed
-          displayedGraph.links.push({
-            source: productId,
-            target: sourceId,
-            type: 'derived_from',
-            relationType: sourceAssociationRelation(association, defaultRelation)
+        // Pre-register provenance edges for PRIMARY products only, so they
+        // appear automatically if the source resource is already displayed.
+        // Secondary products often have hundreds of sources; those are only
+        // revealed on demand via "Show Data Sources" to avoid edge blow-up.
+        if (!secondary) {
+          productSourceAssociations(product).forEach(({ association, defaultRelation }) => {
+            const sourceId = sourceAssociationId(association);
+            if (!sourceId || sourceId === resource.id) return; // skip empty/self
+            displayedGraph.links.push({
+              source: productId,
+              target: sourceId,
+              type: 'derived_from',
+              relationType: sourceAssociationRelation(association, defaultRelation)
+            });
           });
-        });
+        }
       });
     }
 
@@ -457,6 +487,124 @@ function addDomainConnections() {
 }
 
 /**
+ * Ensure a lightweight node exists for an upstream data source.
+ * Unlike addResourcesToGraph, this does NOT pull in the source's own products
+ * or its onward sources — it just places the single source node so provenance
+ * edges into it become visible.
+ */
+function ensureSourceNode(sourceId) {
+  const existing = displayedGraph.nodes.find(n => n.id === sourceId);
+  if (existing) {
+    return existing;
+  }
+
+  const resource = allResourceMap[sourceId];
+  const sourceNode = {
+    id: sourceId,
+    name: resource ? (resource.name || sourceId) : sourceId,
+    type: resource ? (resource.category || 'DataSource') : 'DataSource',
+    description: resource ? (resource.description || '') : '',
+    url: resource ? (resource.homepage_url || '') : '',
+    domains: resource ? (resource.domains || []) : [],
+    isUserSelected: false,
+    isSource: true
+  };
+
+  displayedGraph.nodes.push(sourceNode);
+  return sourceNode;
+}
+
+/**
+ * Reveal the upstream data sources for a single product node by adding their
+ * nodes (and the provenance edges, for products that didn't pre-register them).
+ * Returns the number of newly added source nodes.
+ */
+function addSourcesForProduct(productNode) {
+  if (!productNode || !productNode.parentId) {
+    return 0;
+  }
+
+  const parentResource = allResourceMap[productNode.parentId];
+  if (!parentResource || !Array.isArray(parentResource.products)) {
+    return 0;
+  }
+
+  const product = parentResource.products.find(p => (p.id || '') === productNode.id);
+  if (!product) {
+    return 0;
+  }
+
+  let addedNodes = 0;
+
+  productSourceAssociations(product).forEach(({ association, defaultRelation }) => {
+    const sourceId = sourceAssociationId(association);
+    // Skip empty sources and self-references (the owning resource itself).
+    if (!sourceId || sourceId === productNode.parentId) {
+      return;
+    }
+
+    if (!displayedGraph.nodes.find(n => n.id === sourceId)) {
+      ensureSourceNode(sourceId);
+      addedNodes++;
+    }
+
+    const relationType = sourceAssociationRelation(association, defaultRelation);
+    const linkExists = displayedGraph.links.some(link =>
+      edgeSourceId(link) === productNode.id &&
+      edgeTargetId(link) === sourceId &&
+      edgeRelationType(link) === relationType
+    );
+
+    if (!linkExists) {
+      displayedGraph.links.push({
+        source: productNode.id,
+        target: sourceId,
+        type: 'derived_from',
+        relationType: relationType
+      });
+    }
+  });
+
+  return addedNodes;
+}
+
+/**
+ * Reveal the upstream data sources for every PRIMARY product of a resource
+ * that is currently displayed. Secondary (re-used) products are skipped to keep
+ * the source set focused on what the resource itself produces.
+ */
+function addSourcesForResource(resourceNode) {
+  if (!resourceNode) {
+    return 0;
+  }
+
+  let addedNodes = 0;
+  displayedGraph.nodes
+    .filter(node => node.parentId === resourceNode.id && !node.isSecondary)
+    .forEach(productNode => {
+      addedNodes += addSourcesForProduct(productNode);
+    });
+
+  return addedNodes;
+}
+
+/**
+ * Remove source-only nodes that no longer have any visible connections, so the
+ * graph doesn't accumulate floating dots after resources are removed.
+ */
+function pruneOrphanSourceNodes() {
+  const connected = new Set();
+  displayedGraph.links.forEach(link => {
+    connected.add(edgeSourceId(link));
+    connected.add(edgeTargetId(link));
+  });
+
+  displayedGraph.nodes = displayedGraph.nodes.filter(node =>
+    !node.isSource || connected.has(node.id)
+  );
+}
+
+/**
  * Remove a resource from the graph
  */
 function removeResourceFromGraph(resourceId) {
@@ -480,6 +628,9 @@ function removeResourceFromGraph(resourceId) {
     const targetId = edgeTargetId(link);
     return nodeIds.has(sourceId) && nodeIds.has(targetId);
   });
+
+  // Drop source-only nodes that are now disconnected
+  pruneOrphanSourceNodes();
 
   updateGraph();
   updateActiveResourcesList();
@@ -532,6 +683,13 @@ function updateGraph() {
     .attr('stroke-opacity', config.links.opacity.default);
 
   linkElements = linkEnter.merge(linkElements);
+
+  // Secondary-product links (re-use in another resource) are dashed and tinted
+  // so they read differently from a resource's own (primary) products.
+  linkElements
+    .attr('stroke', d => d.secondary ? '#b07aa1' : '#999')
+    .attr('stroke-dasharray', d => d.secondary ? '6,4' : null);
+
   linkElements.selectAll('title').remove();
   linkElements.append('title').text(edgeTriple);
 
@@ -585,11 +743,13 @@ function updateGraph() {
 
   nodeElements = nodeEnter.merge(nodeElements);
 
-  // Update node colors and strokes (in case type or selection status changed)
+  // Update node colors and strokes (in case type or selection status changed).
+  // Secondary products get a dashed border to match their dashed re-use edge.
   nodeElements
     .attr('fill', d => config.colors[d.type] || config.colors.Resource)
-    .attr('stroke', d => d.isUserSelected ? '#000' : '#fff')
-    .attr('stroke-width', d => d.isUserSelected ? 3 : 1.5);
+    .attr('stroke', d => d.isUserSelected ? '#000' : (d.isSecondary ? '#b07aa1' : '#fff'))
+    .attr('stroke-width', d => d.isUserSelected ? 3 : (d.isSecondary ? 2 : 1.5))
+    .attr('stroke-dasharray', d => (!d.isUserSelected && d.isSecondary) ? '3,2' : null);
 
   // Update icons using foreignObject to embed HTML
   iconElements = g.selectAll('foreignObject.node-icon')
@@ -749,7 +909,14 @@ function calculateConnectedComponents() {
  */
 function updateCounters() {
   document.getElementById('node-count').textContent = displayedGraph.nodes.length;
-  document.getElementById('edge-count').textContent = displayedGraph.links.length;
+
+  // Count only edges actually drawn (both endpoints present). Provenance edges
+  // for primary products are stored even before their source node is revealed.
+  const nodeIds = new Set(displayedGraph.nodes.map(n => n.id));
+  const visibleLinkCount = displayedGraph.links.filter(link =>
+    nodeIds.has(edgeSourceId(link)) && nodeIds.has(edgeTargetId(link))
+  ).length;
+  document.getElementById('edge-count').textContent = visibleLinkCount;
 
   const componentCount = calculateConnectedComponents();
   const componentElement = document.getElementById('component-count');
@@ -898,6 +1065,28 @@ function showContextMenu(event, node) {
     menu.style.display = 'none';
   };
 
+  // Set up "show data sources" action. Available for products (their own
+  // sources) and resources (sources of all their primary products); hidden for
+  // source-only nodes which have nothing further upstream in the graph.
+  const sourcesItem = document.getElementById('show-sources');
+  if (sourcesItem) {
+    const isProduct = Boolean(node.parentId);
+    const isResource = !node.parentId && Boolean(allResourceMap[node.id]);
+    const canShowSources = !node.isSource && (isProduct || isResource);
+
+    sourcesItem.style.display = canShowSources ? 'flex' : 'none';
+    sourcesItem.onclick = () => {
+      if (isProduct) {
+        addSourcesForProduct(node);
+      } else {
+        addSourcesForResource(node);
+      }
+      updateGraph();
+      updateCounters();
+      menu.style.display = 'none';
+    };
+  }
+
   // Set up hide action
   const hideItem = document.getElementById('hide-node');
   hideItem.onclick = () => {
@@ -1019,6 +1208,9 @@ function hideNode(node) {
       return nodeIds.has(sourceId) && nodeIds.has(targetId);
     });
 
+    // Drop source-only nodes that are now disconnected
+    pruneOrphanSourceNodes();
+
     updateGraph();
     updateCounters();
   }
@@ -1121,13 +1313,30 @@ function createLegend() {
   const legend = document.getElementById('graph-legend');
   legend.innerHTML = '';
 
-  // Add note about user-selected resources
-  const userSelectedNote = document.createElement('div');
-  userSelectedNote.className = 'legend-item mb-3';
-  userSelectedNote.innerHTML = `
-    <span><strong>Bold border = User-selected resource</strong></span>
+  // Connections / line-style key, explaining primary vs secondary products
+  const stylesSection = document.createElement('div');
+  stylesSection.className = 'legend-styles mb-2';
+  stylesSection.innerHTML = `
+    <div class="legend-item">
+      <svg width="40" height="14" style="vertical-align: middle; flex-shrink: 0;">
+        <line x1="2" y1="7" x2="38" y2="7" stroke="#999" stroke-width="2" />
+      </svg>
+      <span class="ms-2">Primary product <small class="text-muted">(made by this resource)</small></span>
+    </div>
+    <div class="legend-item">
+      <svg width="40" height="14" style="vertical-align: middle; flex-shrink: 0;">
+        <line x1="2" y1="7" x2="38" y2="7" stroke="#b07aa1" stroke-width="2" stroke-dasharray="6,4" />
+      </svg>
+      <span class="ms-2">Secondary product <small class="text-muted">(re-used by another resource)</small></span>
+    </div>
+    <div class="legend-item">
+      <span><strong>Bold border</strong> = User-selected resource</span>
+    </div>
+    <div class="legend-item">
+      <span class="text-muted"><em>Right-click a node → "Show Data Sources" to reveal its upstream sources.</em></span>
+    </div>
   `;
-  legend.appendChild(userSelectedNote);
+  legend.appendChild(stylesSection);
 
   // Add horizontal rule
   const hr = document.createElement('hr');
@@ -1194,6 +1403,16 @@ function showRandomExample() {
 
   // Add it to the graph
   addResourcesToGraph([selectedResource.id]);
+
+  // By default, reveal the upstream data sources of its primary products so the
+  // example shows where the graph's data comes from (without expanding each
+  // source into its own products/sources).
+  const resourceNode = displayedGraph.nodes.find(n => n.id === selectedResource.id);
+  if (resourceNode) {
+    addSourcesForResource(resourceNode);
+    updateGraph();
+    updateCounters();
+  }
 
   console.log(`Example: Displaying ${selectedResource.name || selectedResource.id}`);
 }
