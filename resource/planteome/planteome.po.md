@@ -8,6 +8,7 @@ name: Plant Ontology (PO)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: planteome
+product_file_size: 360811
 product_url: http://purl.obolibrary.org/obo/po.owl
 layout: product_detail
 ---

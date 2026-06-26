@@ -9,6 +9,7 @@ name: TRRUST Human Interactions (TSV)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: trrust
+product_file_size: 297659
 product_url: https://www.grnpedia.org/trrust/data/trrust_rawdata.human.tsv
 layout: product_detail
 ---

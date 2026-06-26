@@ -99,9 +99,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -3522,9 +3522,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -3658,9 +3658,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 500 error
     when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
@@ -4675,9 +4675,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG

@@ -1012,9 +1012,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 500 error
     when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
@@ -1604,9 +1604,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-24: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-25: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-26: FTP error: timed
     out'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV

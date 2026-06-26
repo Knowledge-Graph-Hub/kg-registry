@@ -10,6 +10,8 @@ original_source:
   source: foodb
 product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
 warnings:
+- File was not able to be retrieved when checked on 2026-06-25_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2026-06-24_ No Content-Length
   header found
 layout: product_detail

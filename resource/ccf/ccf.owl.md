@@ -9,6 +9,7 @@ name: CCF Ontology (OWL)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ccf
+product_file_size: 44683831
 product_url: https://cdn.humanatlas.io/digital-objects/graph/ccf/latest/assets/ccf.owl
 layout: product_detail
 ---

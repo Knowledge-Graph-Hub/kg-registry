@@ -54,6 +54,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
     30+ environmental and geospatial data layers accessible through SPARQL endpoint

@@ -1464,9 +1464,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
@@ -1495,9 +1495,9 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
@@ -2254,9 +2254,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-24: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-25: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-26: FTP error: timed
     out'
 - category: GraphProduct
   compression: zip

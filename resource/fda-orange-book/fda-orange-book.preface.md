@@ -10,7 +10,7 @@ original_source:
   source: fda-orange-book
 product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
 warnings:
-- File was not able to be retrieved when checked on 2026-06-24_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-25_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

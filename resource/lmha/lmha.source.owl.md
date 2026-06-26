@@ -8,6 +8,7 @@ name: LungMAP lung ontology OWL source file
 original_source:
 - relation_type: prov:hadPrimarySource
   source: lmha
+product_file_size: 24956
 product_url: https://raw.githubusercontent.com/duke-lungmap-team/lung_ontology/master/lung_ontology.owl
 layout: product_detail
 ---

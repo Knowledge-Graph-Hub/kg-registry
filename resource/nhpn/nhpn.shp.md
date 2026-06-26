@@ -9,6 +9,7 @@ name: NHPN Shapefile edition
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nhpn
+product_file_size: 182540623
 product_url: https://www.fhwa.dot.gov/planning/processes/tools/nhpn/2015/nhpnv14-05shp.zip
 layout: product_detail
 ---

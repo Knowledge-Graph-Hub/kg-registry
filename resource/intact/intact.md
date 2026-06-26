@@ -2413,11 +2413,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-24: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-25: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-26: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -2563,9 +2563,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
@@ -2591,9 +2591,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
@@ -2619,9 +2619,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
@@ -2642,9 +2642,9 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
@@ -2665,9 +2665,9 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-06-24: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
@@ -3627,9 +3627,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
     when accessing file'
 publications:
 - authors:

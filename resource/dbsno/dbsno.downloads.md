@@ -16,7 +16,7 @@ secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: uniprot
 warnings:
-- File was not able to be retrieved when checked on 2026-06-24_ HTTP 500 error when
+- File was not able to be retrieved when checked on 2026-06-25_ HTTP 500 error when
   accessing file
 layout: product_detail
 ---

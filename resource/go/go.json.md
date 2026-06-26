@@ -9,7 +9,7 @@ original_source:
   source: go
 product_url: http://purl.obolibrary.org/obo/go.json
 warnings:
-- File was not able to be retrieved when checked on 2026-06-24_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-25_ No Content-Length
   header found
 layout: product_detail
 ---

@@ -27,9 +27,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mirdb
   product_url: https://mirdb.org/download.html
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphicalInterface
   description: Web interface for searching predicted miRNA targets by miRNA name or
     gene, performing custom target prediction on user-provided sequences, and browsing

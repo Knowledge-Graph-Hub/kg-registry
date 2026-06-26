@@ -9,6 +9,7 @@ name: LMHA ontology graph data, v1.4, Turtle format
 original_source:
 - relation_type: prov:hadPrimarySource
   source: lmha
+product_file_size: 68119
 product_url: https://cdn.humanatlas.io/digital-objects/vocab/lmha/latest/graph.ttl
 layout: product_detail
 ---

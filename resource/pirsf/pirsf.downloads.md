@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: pirsf
 product_url: https://ftp.proteininformationresource.org/pir_databases/pirsf/
-warnings:
-- File was not able to be retrieved when checked on 2026-06-24_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

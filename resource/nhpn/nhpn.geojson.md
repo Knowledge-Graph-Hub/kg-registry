@@ -8,6 +8,7 @@ name: NHPN GeoJSON edition
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nhpn
+product_file_size: 127105820
 product_url: https://www.fhwa.dot.gov/planning/processes/tools/nhpn/2015/nhpnv14-05geojson.zip
 layout: product_detail
 ---

@@ -9,6 +9,7 @@ name: 'Inxight: Drugs REST API'
 original_source:
 - relation_type: prov:hadPrimarySource
   source: inxight-drugs
+product_file_size: 39857
 product_url: https://drugs.ncats.io/api/v1/substances
 layout: product_detail
 ---

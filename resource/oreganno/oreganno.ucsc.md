@@ -8,6 +8,7 @@ name: ORegAnno UCSC Track Download
 original_source:
 - relation_type: prov:hadPrimarySource
   source: oreganno
+product_file_size: 20472081
 product_url: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/oreganno.txt.gz
 layout: product_detail
 ---

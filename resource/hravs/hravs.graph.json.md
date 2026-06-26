@@ -8,6 +8,7 @@ name: HRAVS graph data, JSON-LD format
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hravs
+product_file_size: 860
 product_url: https://cdn.humanatlas.io/digital-objects/vocab/hravs/latest/graph.json
 layout: product_detail
 ---

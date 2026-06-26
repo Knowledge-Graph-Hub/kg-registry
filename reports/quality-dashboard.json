@@ -25,7 +25,7 @@
       "afpo.json",
       "afpo.obo",
       "alphafold.docs",
-      "automat.panther",
+      "automat.ctd",
       "bila",
       "bind",
       "bio2rdf",
@@ -40,6 +40,11 @@
       "bootstrep",
       "bootstrep.owl",
       "cam-kp.sparql",
+      "cellmarker.act",
+      "cellmarker.all",
+      "cellmarker.human",
+      "cellmarker.mouse",
+      "cellmarker.singlecell",
       "cellphonedb.database",
       "cfde-gse",
       "chembl.sparql",
@@ -60,14 +65,17 @@
       "dc_cl",
       "dc_cl.owl",
       "dinto",
+      "disprot.api",
       "dsstox.api",
       "ecosim",
-      "effas-kpi",
-      "effas-kpi.document",
-      "effas-kpi.landing",
       "ehda",
       "ekg.browser",
       "ema.article-57",
+      "encode",
+      "encode.annotations",
+      "encode.api",
+      "encode.experiment-matrix",
+      "encode.portal",
       "enrichr-kg",
       "ensembl",
       "ensembl.browser",
@@ -78,17 +86,22 @@
       "eol-traitbank",
       "eol-traitbank.web",
       "epio.EPIO_merged.owl",
+      "epo",
       "epo.owl",
       "ero",
       "eupathdb.mapveu",
       "ev.obo",
       "ev.owl",
-      "expressionatlas.api",
       "expressionatlas.r-objects",
       "fabio.ttl",
       "faers",
       "faers.electronic_submissions",
       "faldo",
+      "fda-orange-book",
+      "fda-orange-book.data-files",
+      "fda-orange-book.preface",
+      "fda-orange-book.search",
+      "fideo.owl",
       "fix.obo",
       "foodb.data.fid",
       "foodon_core.owl",
@@ -98,10 +111,13 @@
       "gbif.maps-api",
       "geneticskp.trapi",
       "glyconnect.api.rest",
+      "glytoucan.api",
       "gnps.spectral_libraries",
       "go-cam.model",
       "go-cam.noctua",
       "goldterms.data.owl",
+      "greengenes",
+      "greengenes.portal",
       "gwascatalog.associations.tsv",
       "habronattus",
       "hancestro-base.owl",
@@ -126,7 +142,6 @@
       "kg-alzheimers.graph",
       "kg-covid-19.graph",
       "kg-idg.graph",
-      "kg-microbe.graph.biomedical-function",
       "knowwheregraph.sparql",
       "lincs-l1000",
       "lipidmaps",
@@ -134,17 +149,12 @@
       "lipidmaps.lmsd",
       "lncipedia",
       "loggerhead",
-      "mamo.owl",
       "mangal.api",
       "mao",
       "matador",
       "maudekg",
       "metanetx.rdf",
       "mfo.owl",
-      "miapa",
-      "mirdb",
-      "mirdb.predicted-targets",
-      "mirdb.search",
       "mirgate",
       "mirgate.api",
       "mirgate.portal",
@@ -161,6 +171,7 @@
       "nmr.owl",
       "noaa-ncei",
       "noaa-ncei.ibtracs",
+      "obo-db-ingest.clinicaltrialsgov.tsv",
       "obo_rel",
       "ogg",
       "ogg.owl",
@@ -173,7 +184,6 @@
       "oma.mapping.refseq",
       "oma.protein-annotations.txt",
       "oma.proteins.fasta",
-      "oma.site",
       "omit",
       "omnipath.webservice",
       "opentargets.api.graphql",
@@ -212,6 +222,10 @@
       "rdbridge",
       "rdbridge.webinterface",
       "reliefweb.api",
+      "remap",
+      "remap.api",
+      "remap.downloads",
+      "remap.portal",
       "repodb.full_dataset",
       "resid",
       "resid.owl",
@@ -228,11 +242,6 @@
       "sldb",
       "slso-base.owl",
       "slso.json",
-      "snodb.rrna-modifications",
-      "snodb.rrna-mods",
-      "snodb.sequence-search",
-      "snodb.statistics",
-      "snodb.tutorial",
       "sopharm",
       "spd",
       "spoke",
@@ -244,8 +253,10 @@
       "tahe.owl",
       "tahh.obo",
       "tahh.owl",
+      "tarbase.mus-musculus",
       "toxcast.api",
       "txpo",
+      "unichem.api",
       "vsao",
       "wormbase.parasite",
       "zea"
@@ -1219,7 +1230,6 @@
       "atom.pipeline",
       "automat",
       "automat.biolink",
-      "automat.ctd",
       "automat.drugcentral",
       "automat.gtex",
       "automat.gtopdb",
@@ -1229,6 +1239,7 @@
       "automat.hmdb",
       "automat.humangoa",
       "automat.intact",
+      "automat.panther",
       "automat.pharos",
       "automat.robokopkg",
       "automat.robokopplus",
@@ -1468,11 +1479,6 @@
       "cebs.data",
       "cebs.web",
       "cellmarker",
-      "cellmarker.act",
-      "cellmarker.all",
-      "cellmarker.human",
-      "cellmarker.mouse",
-      "cellmarker.singlecell",
       "cellosaurus",
       "cellosaurus.api.rest",
       "cellosaurus.api.sparql",
@@ -1918,7 +1924,6 @@
       "disgenet.browser",
       "disgenet.data",
       "disprot",
-      "disprot.api",
       "disprot.browser",
       "disprot.deposition",
       "disprot.downloads",
@@ -2021,6 +2026,9 @@
       "edam.csv",
       "edam.owl",
       "edam.tsv",
+      "effas-kpi",
+      "effas-kpi.document",
+      "effas-kpi.landing",
       "efip",
       "efip.text-mining-system",
       "efo",
@@ -2086,10 +2094,6 @@
       "ena.ftp",
       "ena.training",
       "encode",
-      "encode.annotations",
-      "encode.api",
-      "encode.experiment-matrix",
-      "encode.portal",
       "endb",
       "endb.browse",
       "endb.download",
@@ -2148,7 +2152,6 @@
       "epigraphdb.web",
       "epio",
       "epio.owl",
-      "epo",
       "epsd",
       "epsd.browse",
       "epsd.download",
@@ -2199,6 +2202,7 @@
       "exo.obo",
       "exo.owl",
       "expressionatlas",
+      "expressionatlas.api",
       "expressionatlas.baseline-summary",
       "expressionatlas.differential-results",
       "expressionatlas.documentation",
@@ -2250,12 +2254,7 @@
       "fbdv.owl",
       "fbsp",
       "fbsp.owl",
-      "fda-orange-book",
-      "fda-orange-book.data-files",
-      "fda-orange-book.preface",
-      "fda-orange-book.search",
       "fideo",
-      "fideo.owl",
       "finngen",
       "finngen.endpoints",
       "finngen.meta_analysis",
@@ -2484,7 +2483,6 @@
       "glygen.data.site",
       "glygen.site",
       "glytoucan",
-      "glytoucan.api",
       "glytoucan.portal",
       "glytoucan.sparql",
       "gnbr",
@@ -2545,7 +2543,6 @@
       "greengenes",
       "greengenes.ftp",
       "greengenes.phylogeny",
-      "greengenes.portal",
       "greengenes.qiime2-plugin",
       "greengenes.sequences",
       "greengenes.taxonomy",
@@ -2944,6 +2941,7 @@
       "kg-jensenlab-diseases.nodes.kgx",
       "kg-microbe",
       "kg-microbe.graph.biomedical",
+      "kg-microbe.graph.biomedical-function",
       "kg-microbe.graph.core",
       "kg-microbe.graph.function",
       "kg-microbe.graph.raw",
@@ -3100,6 +3098,7 @@
       "malacards.portal",
       "malacards.search",
       "mamo",
+      "mamo.owl",
       "mangal",
       "mangal.docs",
       "mangal.portal",
@@ -3302,6 +3301,9 @@
       "mirbase.readme",
       "mirbase.rno-gff3",
       "mirbase.tissue-search",
+      "mirdb",
+      "mirdb.predicted-targets",
+      "mirdb.search",
       "mirgenedb.bulk",
       "mirgenedb.covariance",
       "mirgenedb.info",
@@ -3637,7 +3639,6 @@
       "obo-db-ingest.clinicaltrialsgov.obo",
       "obo-db-ingest.clinicaltrialsgov.owl",
       "obo-db-ingest.clinicaltrialsgov.sssom.tsv",
-      "obo-db-ingest.clinicaltrialsgov.tsv",
       "obo-db-ingest.complexportal.json",
       "obo-db-ingest.complexportal.obo",
       "obo-db-ingest.complexportal.owl",
@@ -3944,6 +3945,7 @@
       "oma.mapping.go",
       "oma.mapping.uniprot",
       "oma.rdf",
+      "oma.site",
       "oma.species.txt",
       "omiabis",
       "omiabis.owl",
@@ -4634,10 +4636,6 @@
       "regl.docs",
       "reliefweb",
       "reliefweb.site",
-      "remap",
-      "remap.api",
-      "remap.downloads",
-      "remap.portal",
       "repodb",
       "repodb.web_interface",
       "repohub",
@@ -4884,8 +4882,13 @@
       "snodb.noncanonical-interactions",
       "snodb.portal",
       "snodb.protein-interactions",
+      "snodb.rrna-modifications",
+      "snodb.rrna-mods",
+      "snodb.sequence-search",
       "snodb.sequences",
       "snodb.snorupdate",
+      "snodb.statistics",
+      "snodb.tutorial",
       "snomedct",
       "snomedct.browser",
       "snomedct.icd10cm.map",
@@ -5086,7 +5089,6 @@
       "tarbase.help",
       "tarbase.homo-sapiens",
       "tarbase.interactions",
-      "tarbase.mus-musculus",
       "tarbase.other-species",
       "tarbase.portal",
       "tarbase.statistics",
@@ -5293,7 +5295,6 @@
       "unicarbkb.article",
       "unicarbkb.portal",
       "unichem",
-      "unichem.api",
       "unichem.docs",
       "unichem.docs.uci",
       "unichem.search",
@@ -14097,8 +14098,6 @@
       "alphamissense",
       "atc",
       "automat",
-      "bacdive",
-      "bactotraits",
       "bao",
       "bgee",
       "bila",
@@ -14116,6 +14115,7 @@
       "cam-kp",
       "catalogue-of-life",
       "ccle",
+      "cellmarker",
       "cellphonedb",
       "cellxgene",
       "cfde-gse",
@@ -14148,14 +14148,12 @@
       "dictybase",
       "dinto",
       "dip",
-      "disbiome",
+      "disprot",
       "drugbank",
       "drugcentral",
       "dsstox",
-      "ec",
       "eco",
       "ecosim",
-      "effas-kpi",
       "efo",
       "ehda",
       "ekg",
@@ -14164,7 +14162,6 @@
       "enrichr-kg",
       "ensembl",
       "entrez",
-      "envo",
       "eo",
       "eol-traitbank",
       "epio",
@@ -14177,6 +14174,8 @@
       "faers",
       "faldo",
       "fantom5",
+      "fda-orange-book",
+      "fideo",
       "fix",
       "flybase",
       "foodb",
@@ -14190,10 +14189,12 @@
       "geneticskp",
       "geonames",
       "glyconnect",
+      "glytoucan",
       "gnps",
       "go",
       "go-cam",
       "goldterms",
+      "greengenes",
       "gwascatalog",
       "habronattus",
       "hancestro",
@@ -14218,24 +14219,19 @@
       "kg-alzheimers",
       "kg-covid-19",
       "kg-idg",
-      "kg-microbe",
       "knowwheregraph",
       "lincs-l1000",
       "lipidmaps",
       "lncipedia",
       "loggerhead",
-      "mamo",
       "mangal",
       "mao",
       "matador",
       "maudekg",
-      "mediadive",
       "mesh",
       "metanetx",
-      "metpo",
       "mfo",
       "mgi",
-      "miapa",
       "mint",
       "mirdb",
       "mirgate",
@@ -14255,6 +14251,7 @@
       "netpath",
       "nmr",
       "noaa-ncei",
+      "obo-db-ingest",
       "obo_rel",
       "ogg",
       "ogi",
@@ -14299,6 +14296,7 @@
       "reactome",
       "refseq",
       "reliefweb",
+      "remap",
       "repodb",
       "resid",
       "rgd",
@@ -14316,7 +14314,6 @@
       "skos",
       "sldb",
       "slso",
-      "snodb",
       "sopharm",
       "spd",
       "spoke",
@@ -14328,12 +14325,14 @@
       "swisslipid",
       "tahe",
       "tahh",
+      "tarbase",
       "tcrd",
       "toxcast",
       "translator",
       "ttd",
       "txpo",
       "uberon",
+      "unichem",
       "uniprot",
       "vsao",
       "who",
@@ -14823,7 +14822,6 @@
       "mint.mitab.human",
       "mint.mitab.mouse",
       "mint.mitab.yeast",
-      "mirdb.predicted-targets",
       "mirgate.portal",
       "mirnao.owl",
       "mirtarbase.archive",
@@ -14855,7 +14853,6 @@
       "pr-asserted.owl",
       "predict.supporting-information",
       "propreo.owl",
-      "proton.top",
       "psygenet.psygenet2r",
       "rapdb.downloads",
       "rbo.json",
@@ -15005,18 +15002,18 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-06-25T19:14:50Z",
+  "generated_at": "2026-06-26T20:45:32Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 153,
     "with_evaluation_page": 127,
     "without_evaluation_page": 26
   },
   "links": {
-    "broken_urls": 210,
-    "cache_hits": 526,
+    "broken_urls": 219,
+    "cache_hits": 284,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 3939,
-    "live_checked_urls": 3623,
+    "healthy_urls": 3930,
+    "live_checked_urls": 3865,
     "mode": "live",
     "total_unique_urls": 4149,
     "unchecked_urls": 0
@@ -15025,7 +15022,7 @@
     "missing_format": 453,
     "missing_original_source": 5,
     "missing_product_url": 114,
-    "retrieval_warning_mentions": 539,
+    "retrieval_warning_mentions": 554,
     "total": 8049
   },
   "resource_count": 954,
@@ -15048,13 +15045,13 @@
     },
     "stub_count": 0,
     "total": 954,
-    "with_broken_links": 253,
+    "with_broken_links": 251,
     "with_citation_issues": 9,
     "without_products": 14,
     "without_publications": 357
   },
   "scoring": {
-    "average_score": 7.98,
+    "average_score": 7.96,
     "median_score": 8.0,
     "resources_with_issues": 946,
     "tracked_but_unscored_metrics": [
@@ -15089,6 +15086,148 @@
       "broken_links": [
         {
           "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx"
+        }
+      ],
+      "id": "cellmarker",
+      "issues": [
+        {
+          "count": 5,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 15
+        },
+        {
+          "count": 4,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 4
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "CellMarker",
+      "resource_page": "resource/cellmarker/cellmarker.html",
+      "score": 24
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/help/rest-api/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/matrix/?type=Experiment"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/search/?type=Annotation&encyclopedia_version=current&annotation_type=candidate+Cis-Regulatory+Elements&annotation_type=chromatin+state&annotation_type=representative+DNase+hypersensitivity+sites&status=released"
+        }
+      ],
+      "id": "encode",
+      "issues": [
+        {
+          "count": 5,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 15
+        },
+        {
+          "count": 2,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 4
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "ENCODE",
+      "resource_page": "resource/encode/encode.html",
+      "score": 24
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
             "warning",
             "cache"
           ],
@@ -15105,22 +15244,16 @@
           "sources": [
             "live"
           ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz"
-        },
-        {
-          "sources": [
-            "live"
-          ],
           "url": "https://sugi.bio/biobtree/api/"
         }
       ],
       "id": "go",
       "issues": [
         {
-          "count": 4,
+          "count": 3,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
-          "points": 12
+          "points": 9
         },
         {
           "count": 6,
@@ -15137,322 +15270,7 @@
       ],
       "name": "Gene Ontology",
       "resource_page": "resource/go/go.html",
-      "score": 24
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "warning",
-            "live"
-          ],
-          "url": "ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://kghub.io/kg-covid-19/"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://sugi.bio/biobtree/api/"
-        }
-      ],
-      "id": "chebi",
-      "issues": [
-        {
-          "count": 6,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 18
-        },
-        {
-          "count": 2,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 2
-        }
-      ],
-      "name": "Chemical Entities of Biological Interest",
-      "resource_page": "resource/chebi/chebi.html",
-      "score": 22
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://kghub.io/kg-covid-19/"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://sugi.bio/biobtree/api/"
-        }
-      ],
-      "id": "hp",
-      "issues": [
-        {
-          "count": 5,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 15
-        },
-        {
-          "count": 5,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 5
-        },
-        {
-          "count": 1,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 2
-        }
-      ],
-      "name": "Human Phenotype Ontology (HPO)",
-      "resource_page": "resource/hp/hp.html",
-      "score": 22
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://omabrowser.org/All/group-descriptions.txt.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://omabrowser.org/All/oma-groups.txt.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://omabrowser.org/All/oma-protein-annotations.txt.gz"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://omabrowser.org/All/oma-refseq.txt.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://omabrowser.org/All/oma-seqs.fa.gz"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://omabrowser.org/oma/home/"
-        }
-      ],
-      "id": "oma",
-      "issues": [
-        {
-          "count": 6,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 18
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        }
-      ],
-      "name": "OMA",
-      "resource_page": "resource/oma/oma.html",
       "score": 21
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://mirdb.org/"
-        },
-        {
-          "sources": [
-            "warning",
-            "live"
-          ],
-          "url": "https://mirdb.org/download.html"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://sugi.bio/biobtree/api/"
-        }
-      ],
-      "id": "mirdb",
-      "issues": [
-        {
-          "count": 3,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 9
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_contacts",
-          "label": "Missing contacts",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "unchanged_since_creation",
-          "label": "Not modified since creation",
-          "points": 2
-        }
-      ],
-      "name": "miRDB",
-      "resource_page": "resource/mirdb/mirdb.html",
-      "score": 20
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://kghub.io/kg-covid-19/"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://sugi.bio/biobtree/api/"
-        }
-      ],
-      "id": "mondo",
-      "issues": [
-        {
-          "count": 5,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 15
-        },
-        {
-          "count": 4,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 4
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Mondo Disease Ontology",
-      "resource_page": "resource/mondo/mondo.html",
-      "score": 20
     },
     {
       "activity_status": "active",
@@ -15507,65 +15325,62 @@
       "broken_links": [
         {
           "sources": [
+            "warning",
             "live"
           ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/rRNA_modifications/"
+          "url": "ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://kghub.io/kg-covid-19/"
         },
         {
           "sources": [
             "live"
           ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/sequence_similarity_search/"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/statistics/"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/tutorial/"
+          "url": "https://sugi.bio/biobtree/api/"
         }
       ],
-      "id": "snodb",
+      "id": "chebi",
       "issues": [
         {
-          "count": 4,
+          "count": 5,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
-          "points": 12
+          "points": 15
         },
         {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
+          "count": 2,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
           "points": 2
         },
         {
           "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
           "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
         }
       ],
-      "name": "snoDB",
-      "resource_page": "resource/snodb/snodb.html",
-      "score": 20
+      "name": "Chemical Entities of Biological Interest",
+      "resource_page": "resource/chebi/chebi.html",
+      "score": 19
     },
     {
       "activity_status": "active",
@@ -15580,7 +15395,7 @@
           "sources": [
             "live"
           ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz"
+          "url": "https://stars.renci.org/var/plater/bl-4.2.1/CTD_Automat/f92c663160ec5e36/"
         },
         {
           "sources": [
@@ -15627,28 +15442,89 @@
           "sources": [
             "live"
           ],
-          "url": "https://effas.com/"
+          "url": "https://www.fda.gov/cder/ob/default.htm"
         },
         {
           "sources": [
+            "warning",
             "live"
           ],
-          "url": "https://effas.com/download/effas-dvfa-launch-exposure-draft-kpis-for-esg-3-0/"
+          "url": "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface"
         },
         {
           "sources": [
+            "warning",
             "live"
           ],
-          "url": "https://effas.com/wp-content/uploads/2021/09/KPIs_for_ESG_3_0_Final.pdf"
+          "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files"
         }
       ],
-      "id": "effas-kpi",
+      "id": "fda-orange-book",
       "issues": [
         {
           "count": 3,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
           "points": 9
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "FDA Orange Book",
+      "resource_page": "resource/fda-orange-book/fda-orange-book.html",
+      "score": 19
+    },
+    {
+      "activity_status": "inactive",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
+        }
+      ],
+      "id": "habronattus",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
         },
         {
           "count": 1,
@@ -15670,19 +15546,129 @@
         },
         {
           "count": 1,
-          "issue_key": "unchanged_since_creation",
-          "label": "Not modified since creation",
-          "points": 2
-        },
-        {
-          "count": 1,
           "issue_key": "contacts_not_connected_to_org",
           "label": "Contacts not linked to Organization entry",
           "points": 1
         }
       ],
-      "name": "EFFAS KPIs for ESG",
-      "resource_page": "resource/effas-kpi/effas-kpi.html",
+      "name": "Habronattus courtship",
+      "resource_page": "resource/habronattus/habronattus.html",
+      "score": 19
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://kghub.io/kg-covid-19/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
+        }
+      ],
+      "id": "hp",
+      "issues": [
+        {
+          "count": 4,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 12
+        },
+        {
+          "count": 5,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 5
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 2
+        }
+      ],
+      "name": "Human Phenotype Ontology (HPO)",
+      "resource_page": "resource/hp/hp.html",
+      "score": 19
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.lipidmaps.org/databases/lmsd"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://www.lipidmaps.org/databases/lmsd/download"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://www.lipidmaps.org/databases/lmsd/overview"
+        }
+      ],
+      "id": "lipidmaps",
+      "issues": [
+        {
+          "count": 4,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 12
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_contacts",
+          "label": "Missing contacts",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        }
+      ],
+      "name": "LIPID MAPS",
+      "resource_page": "resource/lipidmaps/lipidmaps.html",
       "score": 19
     }
   ]
