@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Aggregator
+collection:
+- ber
 creation_date: '2025-09-09T00:00:00Z'
 description: MGnify is an active aggregator and analysis platform for microbiome and metagenomic data, providing tools for submission, analysis, visualization, and discovery of microbiome datasets from diverse biomes and environments. It is operated by EMBL-EBI and is an ELIXIR Core Data Resource.
 domains:

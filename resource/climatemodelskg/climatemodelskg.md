@@ -3,6 +3,7 @@ activity_status: active
 category: KnowledgeGraph
 collection:
 - okn
+- ber
 contacts:
 - category: Individual
   label: Aayush Acharya

@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+collection:
+- ber
 creation_date: '2025-11-22T00:00:00Z'
 description: A knowledge graph integrating plant genomics, phenomics, and environmental data to predict gene expression patterns across multiple species under different environmental conditions, particularly drought stress
 domains:
