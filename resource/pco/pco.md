@@ -3,6 +3,7 @@ activity_status: active
 category: Ontology
 collection:
   - obo-foundry
+  - ber
 contacts:
   - category: Individual
     label: Ramona Walls

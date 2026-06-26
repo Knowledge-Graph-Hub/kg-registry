@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- ber
 creation_date: '2026-01-30T00:00:00Z'
 description: A resource for orthology-based functional classification of proteins
   into clusters of orthologous groups (COGs) across complete genomes.

@@ -3,6 +3,7 @@ activity_status: inactive
 category: Ontology
 collection:
 - obo-foundry
+- ber
 contacts:
 - category: Individual
   contact_details:

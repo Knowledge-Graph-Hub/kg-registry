@@ -3,6 +3,7 @@ activity_status: active
 category: DataSource
 collection:
 - aop
+- ber
 contacts:
 - category: Organization
   contact_details:

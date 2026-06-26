@@ -1,4 +1,6 @@
 ---
+collection:
+- ber
 layout: resource_detail
 activity_status: active
 category: DataSource
