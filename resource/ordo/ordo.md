@@ -27,7 +27,7 @@ domains:
 homepage_url: https://www.orphadata.com/ordo/
 id: ordo
 infores_id: ordo
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,15 +35,15 @@ license:
 name: Orphanet Rare Disease Ontology (ORDO)
 products:
 - category: DataModelProduct
-  description: ORDO in OWL format in English (v4.7)
+  description: ORDO in OWL format in English (v4.8)
   format: owl
   id: ordo.owl
   name: ORDO OWL
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ordo
-  product_file_size: 49203440
-  product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
+  product_file_size: 50841163
+  product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.8.owl
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying the ORDO ontology
   format: http

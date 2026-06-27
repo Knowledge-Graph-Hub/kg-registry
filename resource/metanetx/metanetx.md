@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://www.metanetx.org/
 id: metanetx
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -86,15 +86,15 @@ products:
     header found'
 - category: Product
   compression: gzip
-  description: RDF version of the MetaNetX data for semantic web applications
+  description: RDF version of the MetaNetX MNXref data for semantic web applications
   format: ttl
   id: metanetx.rdf
   name: MetaNetX RDF Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: metanetx
-  product_file_size: 237044998
-  product_url: https://www.metanetx.org/ftp/latest/metanetx.ttl.gz
+  product_file_size: 274279352
+  product_url: https://www.metanetx.org/ftp/latest/MNXref.ttl.gz
 publications:
 - authors:
   - Moretti S

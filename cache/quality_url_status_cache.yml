@@ -5307,11 +5307,9 @@ https://api.pharmgkb.org/v1/download/file/data/variants.zip:
   source: cache
   status_code: 200
 https://api.platform.opentargets.org/api/v4/graphql:
-  checked_at: '2026-06-27T13:24:56Z'
-  error: get 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-27T00:00:00Z'
+  ok: true
+  note: 'GraphQL endpoint: 200 on POST, 400 on GET'
 https://api.platform.opentargets.org/api/v4/rest:
   checked_at: '2026-06-27T13:24:56Z'
   error: get 404

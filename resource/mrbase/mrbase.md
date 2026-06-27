@@ -16,9 +16,9 @@ domains:
 - biomedical
 - genomics
 - general
-homepage_url: https://www.mrbase.org/
+homepage_url: https://gwas.mrcieu.ac.uk/
 id: mrbase
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: MR-Base
 products:
@@ -103,7 +103,8 @@ products:
     source: mrbase
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to harmonized GWAS summary
-    statistics, LD proxy lookup, instruments, and MR result generation
+    statistics, LD proxy lookup, instruments, and MR result generation, now served
+    by the OpenGWAS API (successor to the retired api.mrbase.org endpoint)
   format: http
   id: mrbase.api
   is_public: true
@@ -111,10 +112,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mrbase
-  product_url: http://api.mrbase.org/
-  warnings:
-  - The legacy MR-Base API returned HTTP 503 when checked on 2026-06-02; current OpenGWAS
-    API access is represented by opengwas.api.
+  product_url: https://api.opengwas.io/
+  secondary_source:
+  - relation_type: prov:used
+    source: opengwas
 - category: ProgrammingInterface
   description: TwoSampleMR R package supporting data extraction, harmonization, instrument
     selection, MR analysis methods, diagnostics, and reproducible code generation
@@ -322,4 +323,4 @@ The platform paper is distributed under CC-BY 4.0. Access to certain GWAS datase
 
 ## Contact
 
-For scientific or data queries, contact corresponding authors (jie.zheng@bristol.ac.uk, tom.gaunt@bristol.ac.uk, philip.haycock@bristol.ac.uk) or Gibran Hemani (g.hemani@bristol.ac.uk). General platform information: https://www.mrbase.org/.
+For scientific or data queries, contact corresponding authors (jie.zheng@bristol.ac.uk, tom.gaunt@bristol.ac.uk, philip.haycock@bristol.ac.uk) or Gibran Hemani (g.hemani@bristol.ac.uk). General platform information is now provided via the IEU OpenGWAS portal: https://gwas.mrcieu.ac.uk/.
