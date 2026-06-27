@@ -117,7 +117,7 @@ http://api.geneontology.org/:
   source: cache
   status_code: 200
 http://api.geneontology.org/api/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -274,13 +274,13 @@ http://biohackathon.org/resource/faldo.ttl:
   source: cache
   status_code: 200
 http://bioinformatics.sandia.gov/tmrna/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://bioinformatics.sandia.gov/tmrna/software.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -298,7 +298,7 @@ http://birdgenenames.org/cgnc/:
   source: cache
   status_code: 200
 http://birdgenenames.org/cgnc/downloads.jsp?file=standard:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -355,7 +355,7 @@ http://cpdb.molgen.mpg.de/:
   source: cache
   status_code: 200
 http://cpdb.molgen.mpg.de/CPDB/download:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -440,7 +440,7 @@ http://environmentontology.org/:
   source: cache
   status_code: 200
 http://expression.darkkinome.org/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 500
   ok: false
   source: cache
@@ -521,7 +521,7 @@ http://genomics.senescence.info/diet/dataset.zip:
   source: cache
   status_code: 200
 http://genomics.senescence.info/diet/help.html#api:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -533,7 +533,7 @@ http://genomics.senescence.info/genes/:
   source: cache
   status_code: 200
 http://github.com/seger/aao:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -638,7 +638,7 @@ http://mirgate.bioinfo.cnio.es/API/:
   source: cache
   status_code: null
 http://mrcieu.mrsoftware.org/PRS_atlas/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -710,7 +710,7 @@ http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -808,13 +808,13 @@ http://purl.obolibrary.org/obo/BMONT.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/EPIO_merged.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/aao.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -826,7 +826,7 @@ http://purl.obolibrary.org/obo/ado.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/adw.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
@@ -849,7 +849,7 @@ http://purl.obolibrary.org/obo/aero.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/afpo.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -957,7 +957,7 @@ http://purl.obolibrary.org/obo/bila.owl:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 http://purl.obolibrary.org/obo/bootstrep.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -1191,7 +1191,7 @@ http://purl.obolibrary.org/obo/clyh.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/cmf.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -1227,7 +1227,7 @@ http://purl.obolibrary.org/obo/cob/cob-native.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/cob/cob-to-external.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -1520,13 +1520,13 @@ http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/eo.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/eo.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -1769,7 +1769,7 @@ http://purl.obolibrary.org/obo/foodon.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/foodon_core.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -2198,7 +2198,7 @@ http://purl.obolibrary.org/obo/iao/d-acts.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/iao/dev/iao.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -2404,7 +2404,7 @@ http://purl.obolibrary.org/obo/micro.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/mirnao.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -2700,13 +2700,13 @@ http://purl.obolibrary.org/obo/occo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ogg.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/ogi.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -2730,7 +2730,7 @@ http://purl.obolibrary.org/obo/ohd.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ohd/dev/ohd.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -3196,17 +3196,17 @@ http://purl.obolibrary.org/obo/prefer/prefer-base.owl:
   ok: true
   status_code: 200
 http://purl.obolibrary.org/obo/prefer/prefer-basic.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
 http://purl.obolibrary.org/obo/prefer/prefer-basic.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
 http://purl.obolibrary.org/obo/prefer/prefer-basic.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
@@ -3343,7 +3343,7 @@ http://purl.obolibrary.org/obo/ro/ro-base.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -3576,30 +3576,26 @@ http://purl.obolibrary.org/obo/tads.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/tahe.obo:
-  checked_at: '2026-06-02T22:35:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.oclc.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
 http://purl.obolibrary.org/obo/tahe.owl:
-  checked_at: '2026-06-02T22:35:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.oclc.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
 http://purl.obolibrary.org/obo/tahh.obo:
-  checked_at: '2026-06-02T22:35:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.oclc.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
 http://purl.obolibrary.org/obo/tahh.owl:
-  checked_at: '2026-06-02T22:35:38Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.oclc.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
@@ -3931,23 +3927,20 @@ http://purl.obolibrary.org/obo/xpo.owl:
   source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/ypo.obo:
-  checked_at: '2026-06-02T22:35:43Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.oclc.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
 http://purl.obolibrary.org/obo/ypo.owl:
-  checked_at: '2026-06-02T22:35:43Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.oclc.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
 http://purl.obolibrary.org/obo/zea.owl:
-  checked_at: '2026-06-02T22:35:43Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.oclc.org'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: null
@@ -4018,19 +4011,11 @@ http://purl.org/dc/terms/:
   note: 'RDF namespace: 302 redirect, resolves 200 with rdf+xml Accept'
   ok: true
 http://purl.org/spar/cito.ttl:
-  checked_at: '2026-06-02T22:35:44Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.org'', port=443): Read
-    timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-27T13:24:56Z'
+  ok: true
 http://purl.org/spar/fabio.ttl:
-  checked_at: '2026-06-02T22:35:44Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''purl.org'', port=443): Read
-    timed out. (read timeout=8.0)'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-27T13:24:56Z'
+  ok: true
 http://qptm.omicsbio.info/index.php:
   checked_at: '2026-06-02T22:35:44Z'
   error: null
@@ -4038,7 +4023,7 @@ http://qptm.omicsbio.info/index.php:
   source: cache
   status_code: 200
 http://rdb.lifesynther.com/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 502
   ok: false
   source: cache
@@ -4062,7 +4047,7 @@ http://redrugs.tw.rpi.edu/api/:
   source: cache
   status_code: null
 http://research.amnh.org/atol/files/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -4318,7 +4303,7 @@ http://www.biomedcentral.com/1752-0509/8/79:
   source: cache
   status_code: 200
 http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -4417,13 +4402,13 @@ http://www.dukeontologygroup.org/Projects.html:
   source: cache
   status_code: null
 http://www.ebi.ac.uk/RESID/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 500
   ok: false
   source: cache
@@ -4513,7 +4498,7 @@ http://www.gramene.org/plant_ontology/:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 http://www.hprd.org/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 503
   ok: false
   source: cache
@@ -4590,25 +4575,25 @@ http://www.lncrnadb.org/:
   source: cache
   status_code: 200
 http://www.loria.fr/~coulet/sopharm2.0_description.php:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.maizemap.org/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.mesquiteproject.org/ontology/Habronattus/index.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.mesquiteproject.org/ontology/Loggerhead/index.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -4632,7 +4617,7 @@ http://www.mousemine.org/mousemine/templates.do:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 http://www.netpath.org/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 503
   ok: false
   status_code: 503
@@ -4655,13 +4640,13 @@ http://www.noncode.org/browse.php:
   source: cache
   status_code: 200
 http://www.noncode.org/conservation.php:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.noncode.org/disease.php:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -4673,13 +4658,13 @@ http://www.noncode.org/download.php:
   source: cache
   status_code: 200
 http://www.noncode.org/function.php:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 http://www.noncode.org/genome.php:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -4697,7 +4682,7 @@ http://www.noncode.org/search.php:
   source: cache
   status_code: 200
 http://www.obofoundry.org/ro:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -4736,7 +4721,7 @@ http://www.plantontology.org:
   source: cache
   status_code: 200
 http://www.psidev.info/MOD:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -4766,7 +4751,7 @@ http://www.rnainter.org/:
   source: cache
   status_code: 200
 http://www.sanger.ac.uk/Users/mb4/PLO/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -5117,7 +5102,7 @@ https://api.epigraphdb.org/:
   source: cache
   status_code: 200
 https://api.gbif.org/maps/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -5322,13 +5307,11 @@ https://api.pharmgkb.org/v1/download/file/data/variants.zip:
   source: cache
   status_code: 200
 https://api.platform.opentargets.org/api/v4/graphql:
-  checked_at: '2026-06-25T15:59:09Z'
-  error: get 400
-  ok: false
-  source: cache
-  status_code: 400
+  checked_at: '2026-06-27T00:00:00Z'
+  note: 'GraphQL endpoint: 200 on POST, 400 on GET'
+  ok: true
 https://api.platform.opentargets.org/api/v4/rest:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -5668,7 +5651,7 @@ https://apps.okn.us/ldf/securechainkg:
   source: cache
   status_code: 200
 https://apps.okn.us/ldf/semopenalex:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -5794,7 +5777,7 @@ https://apps.okn.us/wildlifekn/sparql:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://aragorn.renci.org/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -5980,7 +5963,7 @@ https://bioconductor.org/packages/release/bioc/html/OmnipathR.html:
   source: cache
   status_code: 200
 https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -6096,7 +6079,7 @@ https://biomics.lab.nycu.edu.tw/dbPTM/download.php:
   ok: true
   status_code: 200
 https://biomics.lab.nycu.edu.tw/dbSNO/download.php:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 500
   ok: false
   status_code: 500
@@ -6226,7 +6209,7 @@ https://bis.zju.edu.cn/hald:
   source: cache
   status_code: 200
 https://bitbucket.org/hegroup/ogg:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -6413,19 +6396,19 @@ https://cellxgene.cziscience.com/docs:
   source: cache
   status_code: 200
 https://cfde.cloud/gse/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://cfde.cloud/gse/api/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://cfde.cloud/gse/downloads/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -6490,6 +6473,10 @@ https://civicdb.org/api/graphiql:
   ok: true
   source: cache
   status_code: 200
+https://civicdb.org/api/graphql:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: 'GraphQL: 200 on POST (GET returns 400/405)'
+  ok: true
 https://civicdb.org/downloads/nightly/nightly-AssertionSummaries.tsv:
   checked_at: '2026-06-02T22:36:05Z'
   error: null
@@ -6724,6 +6711,10 @@ https://compath.scai.fraunhofer.de/similarity:
   ok: true
   source: cache
   status_code: 200
+https://comptox.epa.gov/ctx-api/docs/chemical.html:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: verified 200
+  ok: true
 https://comptox.epa.gov/dashboard:
   checked_at: '2026-06-02T22:36:06Z'
   error: null
@@ -6971,7 +6962,7 @@ https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz:
   source: cache
   status_code: 200
 https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -6983,7 +6974,7 @@ https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv:
   source: cache
   status_code: 200
 https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -7025,13 +7016,13 @@ https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/causal
   source: cache
   status_code: 200
 ? https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_disease_or_phenotypic_feature_association.all.tsv.gz
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_pathway_association.all.tsv.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -7157,55 +7148,55 @@ https://data.niaid.nih.gov/:
   source: cache
   status_code: 200
 https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_genes.tab.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/current/download/odb12v1_species.tab.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://data.orthodb.org/v12/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
@@ -7495,37 +7486,37 @@ https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz:
   source: cache
   status_code: 200
 https://dianalab.e-ce.uth.gr/tarbasev9/downloads:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/help:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/interactions:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/statistics:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/textmining:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/visualizations:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -8039,13 +8030,13 @@ https://dumps.wikimedia.org/other/incr/wikidatawiki/:
   source: cache
   status_code: 200
 https://dumps.wikimedia.org/other/mediawiki_content_current/enwiki/2026-03-01/xml/bzip2/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/2026-03-01/xml/bzip2/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -8271,7 +8262,7 @@ https://eol.org/docs/what-is-eol/data-services:
   source: cache
   status_code: 200
 https://eol.org/pages/traitbank:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -8310,11 +8301,15 @@ https://eqtlgen.github.io/eqtlgen-web-site/eQTLGen-p2-cookbook.html:
   source: cache
   status_code: 200
 https://erepo.clinicalgenome.org/evrepo/api/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
+https://erepo.clinicalgenome.org/evrepo/api/summary/:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: evrepo API root; verified 200 (transient 502 on recheck)
+  ok: true
 https://evs.nci.nih.gov/ftp1/CDISC/ADaM/:
   checked_at: '2026-06-02T22:36:27Z'
   error: null
@@ -8435,6 +8430,10 @@ https://exrna.org/:
   ok: true
   source: cache
   status_code: 200
+https://external.gnps2.org/gnpslibrary:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: verified 200
+  ok: true
 https://files.cpicpgx.org/resources/CPIC-overview-updates-02.2025.pptx:
   checked_at: '2026-06-02T22:36:48Z'
   error: null
@@ -8530,8 +8529,8 @@ https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip:
   source: cache
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_fid_files.zip:
-  checked_at: '2026-06-02T22:36:49Z'
-  error: HEAD returned HTTP 404
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 404
   ok: false
   source: cache
   status_code: 404
@@ -8755,7 +8754,7 @@ https://frink.apps.renci.org/ldf/nasa-gesdisc-kg:
   source: cache
   status_code: 200
 https://frink.apps.renci.org/ldf/ncipidkg:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -8767,7 +8766,7 @@ https://frink.apps.renci.org/ldf/nde:
   source: cache
   status_code: 200
 https://frink.apps.renci.org/ldf/neighborhood-information-kg:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -8893,7 +8892,7 @@ https://frink.apps.renci.org/nde/sparql:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://frink.apps.renci.org/neighborhood-information-kg/sparql:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 503
   ok: false
   source: cache
@@ -8929,8 +8928,10 @@ https://frink.apps.renci.org/sockg/sparql:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://frink.apps.renci.org/spatialkg/sparql:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T00:00:00Z'
+  note: 'KnowWhereGraph SPARQL endpoint on FRINK: 200 with query, returns sparql-results+json'
   ok: true
+  status_code: 200
 https://frink.apps.renci.org/spoke-genelab/sparql:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
@@ -9148,31 +9149,31 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/2025/01/31/gwas-kb.owl:
   source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -9184,13 +9185,13 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.ts
   source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -9493,7 +9494,7 @@ https://ftp.ebi.ac.uk/pub/databases/spot/ols/:
   source: cache
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -9511,7 +9512,7 @@ https://ftp.expasy.org/databases/cellosaurus/cellosaurus.xml:
   source: cache
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -9841,7 +9842,7 @@ https://ftp.ncbi.nlm.nih.gov/refseq/:
   source: cache
   status_code: 200
 https://ftp.sanger.ac.uk/project/cancerrxgene/releases/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -10021,11 +10022,15 @@ https://genesilico.pl/modomics/search/advance/:
   source: cache
   status_code: 200
 https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
+https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: TRAPI v1.5 base; openapi.json 200
+  ok: true
 https://genomics.senescence.info/genes/human.html:
   checked_at: '2026-06-02T22:36:55Z'
   error: null
@@ -10285,7 +10290,7 @@ https://github.com/EBI-G2P/gene2phenotype_api:
   source: cache
   status_code: 200
 https://github.com/EBI-IntAct/intact-data-exchange:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -10297,7 +10302,7 @@ https://github.com/EBISPOT/DUO:
   source: cache
   status_code: 200
 https://github.com/EBISPOT/OXO:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -10475,7 +10480,7 @@ https://github.com/GenomicsStandardsConsortium/mixs:
   source: cache
   status_code: 200
 https://github.com/Gramene/gramene-docs:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -10541,7 +10546,7 @@ https://github.com/HumanBrainProject/kg-core:
   source: cache
   status_code: 200
 https://github.com/ICD-Codes:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -10768,7 +10773,7 @@ https://github.com/MaayanLab/BiomarkerKG:
   source: cache
   status_code: 200
 https://github.com/MaayanLab/CFDE-KG:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -10838,7 +10843,7 @@ https://github.com/MaayanLab/datadistillery-kg:
   source: cache
   status_code: 200
 https://github.com/MaayanLab/enrichr-kg:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -10849,7 +10854,7 @@ https://github.com/MaayanLab/enrichr_issues:
   ok: true
   status_code: 200
 https://github.com/MaayanLab/harmonizome-kg:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11093,7 +11098,7 @@ https://github.com/OBOFoundry/COB:
   source: cache
   status_code: 200
 https://github.com/OBioFoundry/FALDO:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11225,7 +11230,7 @@ https://github.com/OmniSearch/omit:
   source: cache
   status_code: 200
 https://github.com/Ontotext-AD/proton:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11279,7 +11284,7 @@ https://github.com/PROconsortium/PRoteinOntology:
   source: cache
   status_code: 200
 https://github.com/PanKbase-DB:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11356,7 +11361,7 @@ https://github.com/PopulationAndCommunityOntology/pco:
   source: cache
   status_code: 200
 https://github.com/Prabhadeus/Proto-OKN:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11602,7 +11607,7 @@ https://github.com/VEuPathDB-ontology/VEuPathDB-ontology:
   source: cache
   status_code: 200
 https://github.com/VIDallab/huri:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11626,7 +11631,7 @@ https://github.com/WengLab-InformaticsResearch/oard-react:
   source: cache
   status_code: 200
 https://github.com/WishartLab/PathWhiz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11705,7 +11710,7 @@ https://github.com/avsastry/modulome-workflow:
   source: cache
   status_code: 200
 https://github.com/baranzini-lab/SPOKE:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -11957,7 +11962,7 @@ https://github.com/cmap:
   source: cache
   status_code: 200
 https://github.com/cmap/l1000-jupyter:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -12122,7 +12127,7 @@ https://github.com/elsevier-health/scibite-ontology:
   source: cache
   status_code: 200
 https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -12218,7 +12223,7 @@ https://github.com/geneontology:
   source: cache
   status_code: 200
 https://github.com/geneontology/go-cam:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -12733,7 +12738,7 @@ https://github.com/monarch-initiative/phenio:
   source: cache
   status_code: 200
 https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -12805,7 +12810,7 @@ https://github.com/ncbi/AIONER:
   source: cache
   status_code: 200
 https://github.com/ncbi/NCBI-Datasets:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -12817,7 +12822,7 @@ https://github.com/ncbi/dbsnp:
   source: cache
   status_code: 200
 https://github.com/ncbi/entrez-direct:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -12841,7 +12846,7 @@ https://github.com/nhgritctran/PheTK:
   source: cache
   status_code: 200
 https://github.com/nih-cfde/cfde-gse:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -13308,7 +13313,7 @@ https://github.com/reimandlab/ActiveDriverDB:
   ok: true
   status_code: 200
 https://github.com/reprotox-kg/reprotox-kg:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -13461,13 +13466,13 @@ https://github.com/vaccineontology/VO:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://github.com/w3c/skos:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 429
 https://github.com/wikipathways/pfocr:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -13479,7 +13484,7 @@ https://github.com/wikipathways/wikipathways-database:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://github.com/wishartlab/chemontology:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -13520,7 +13525,7 @@ https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree
   ok: true
   status_code: 200
 https://github.com/zdobnov-lab/orthodb:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -13532,7 +13537,7 @@ https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://github.com/zhang-informatics/iDISK:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -13620,11 +13625,15 @@ https://glyconnect.expasy.org/:
   source: cache
   status_code: 200
 https://glyconnect.expasy.org/api:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 500
   ok: false
   source: cache
   status_code: 500
+https://glyconnect.expasy.org/api/docs:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: verified 200 (Swagger docs)
+  ok: true
 https://glyconnect.expasy.org/downloads/Immunoglobulins/:
   checked_at: '2026-06-02T22:37:17Z'
   error: null
@@ -13802,7 +13811,7 @@ https://gtrnadb.org/search.html:
   source: cache
   status_code: 200
 https://gwas.mrcieu.ac.uk/phewas/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -14260,49 +14269,49 @@ https://kchen-lab.github.io/immune-knowledgegraph.github.io/:
   ok: true
   status_code: 200
 https://kg-hub.berkeleybop.io/eco-kg/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.io/kg-covid-19/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.io/sldb/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.org/eco-kg/api:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://kghub.org/eco-kg/index.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -14326,7 +14335,7 @@ https://kghub.org/kg-microbe/index.html:
   source: cache
   status_code: 200
 https://kghub.org/kg-monarch/index.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -14542,7 +14551,7 @@ https://knowwheregraph.org/:
   source: cache
   status_code: 200
 https://knowwheregraph.org/sparql/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -14596,31 +14605,31 @@ https://lincsproject.org/LINCS/:
   source: cache
   status_code: 200
 https://lncipedia.org/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/db/search:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/download:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/download#anchor-igv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://lncipedia.org/download#anchor-metadata:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -14810,7 +14819,7 @@ https://maayanlab.cloud/harmonizome-kg/:
   source: cache
   status_code: 200
 https://maayanlab.cloud/harmonizome-kg/api/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15103,23 +15112,13 @@ https://mirgenedb.org/information:
   source: cache
   status_code: 200
 https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php:
-  checked_at: '2026-06-02T22:37:31Z'
-  error: 'HEAD request failed after TLS fallback: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'',
-    port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php
-    (Caused by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert
-    handshake failure (_ssl.c:1028)'')))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-27T00:00:00Z'
+  note: HTTP 412 = live but bot-blocked (Cloudflare-style challenge)
+  ok: true
 https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/index.php:
-  checked_at: '2026-06-02T22:37:31Z'
-  error: 'HEAD request failed after TLS fallback: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'',
-    port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/index.php
-    (Caused by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert
-    handshake failure (_ssl.c:1028)'')))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-27T00:00:00Z'
+  note: HTTP 412 = live but bot-blocked (Cloudflare-style challenge)
+  ok: true
 https://molepro-trapi.transltr.io/molepro/trapi/v1.5/ui/:
   checked_at: '2026-06-02T22:37:31Z'
   error: null
@@ -15390,7 +15389,7 @@ https://ngdc.cncb.ac.cn/lgc:
   source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/lncbook/download:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15547,14 +15546,8 @@ https://nlp.case.edu/public/data/GPKG-Predict/data/Raw_Data.docx:
   source: cache
   status_code: null
 https://noctua.geneontology.org/:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''noctua.geneontology.org'',
-    port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host=''noctua.geneontology.org'',
-    port=443) at 0x7fad59a37b10>, ''Connection to noctua.geneontology.org timed out.
-    (connect timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-27T00:00:00Z'
+  ok: true
 https://nsides.io/:
   checked_at: '2026-06-02T22:37:39Z'
   error: null
@@ -15628,35 +15621,32 @@ https://omabrowser.org/:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://omabrowser.org/All/OmaServer.h5:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/OmaServer.h5.idx:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/eukaryotes.cdna.fa.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/group-descriptions.txt.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-ensembl.txt.gz:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: GET returned HTTP 403
-  ok: false
-  source: cache
-  status_code: 403
+  checked_at: '2026-06-27T13:24:56Z'
+  ok: true
 https://omabrowser.org/All/oma-entrez.txt.gz:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
@@ -15664,7 +15654,7 @@ https://omabrowser.org/All/oma-go.txt.gz:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://omabrowser.org/All/oma-groups.orthoXML.xml.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15679,13 +15669,13 @@ https://omabrowser.org/All/oma-hogs.orthoXML.gz:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://omabrowser.org/All/oma-pairs.txt.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-protein-annotations.txt.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15700,13 +15690,13 @@ https://omabrowser.org/All/oma-refseq.txt.gz:
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-seqs.fa.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/All/oma-seqs.seqxml.tgz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15721,7 +15711,7 @@ https://omabrowser.org/All/oma-uniprot.txt.gz:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://omabrowser.org/All/prokaryotes.cdna.fa.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15736,61 +15726,61 @@ https://omabrowser.org/api/:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://omabrowser.org/oma/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OMA.ttl.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaGroups.orthoxml:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaGroups.txt.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaHOGs.orthoxml:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OmaServer.h5:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/OrthologousPairs.txt.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 403
 https://omabrowser.org/oma/current/oma-proteins.fa.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15808,7 +15798,7 @@ https://omnipathdb.org/:
   source: cache
   status_code: 200
 https://omnipathdb.org/queries:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 500
   ok: false
   source: cache
@@ -15838,7 +15828,7 @@ https://open.fda.gov/apis/drug/ndc/:
   source: cache
   status_code: 200
 https://open.med.harvard.edu/wiki/display/eaglei/Ontology:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 503
   ok: false
   source: cache
@@ -15850,7 +15840,7 @@ https://openbiodiv.net/:
   source: cache
   status_code: 200
 https://openbiodiv.net/ontologies:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15972,7 +15962,7 @@ https://orkg.org/triplestore:
   source: cache
   status_code: 200
 https://pankbase-db.github.io/pankbase-client-openapi-spec/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -15996,11 +15986,8 @@ https://pankgraph.org/api:
   source: cache
   status_code: 200
 https://parasite.wormbase.org/:
-  checked_at: '2026-06-25T15:59:09Z'
-  error: get 500
-  ok: false
-  source: cache
-  status_code: 500
+  checked_at: '2026-06-27T13:24:56Z'
+  ok: true
 https://pathbank.org/:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
@@ -16282,7 +16269,7 @@ https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=1
   source: cache
   status_code: 200
 https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=217&Itemid=255:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -16383,19 +16370,19 @@ https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.ta
   source: cache
   status_code: 200
 https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -16562,7 +16549,7 @@ https://purl.obolibrary.org/obo/ohd:
   source: cache
   status_code: 200
 https://purl.obolibrary.org/obo/ohd/home:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17070,7 +17057,7 @@ https://research.bioinformatics.udel.edu/itextmine/integrate/search/emind/medlin
   ok: true
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17439,217 +17426,217 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.P
   source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Anatomy.nodes.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Anatomy.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Gene.EXPRESSED_IN.Anatomy.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.AminoAcid.nodes.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenLocation.HAS_AMINO_ACID.AminoAcid.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.ATTACHED_BY.Glycosylation.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.HAS_PARENT.GlyGenResidue.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.GLYCOSYLATED_AT.GlycosylationSite.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_EVIDENCE.GlycoproteinEvidence.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Isoform.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycoproteinEvidence.CITATION.GlycoproteinCitation.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.HAS_SACCHARIDE.Glytoucan.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.LOCATION.GlyGenLocation.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_CANONICAL_RESIDUE.GlyGenResidue.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_GLYCOSEQUENCE.GlyGenGlycosequence.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_MOTIF.GlycanMotif.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.IS_FROM_SOURCE.GlyGenSrc.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Isoform.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.nodes.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.nodes.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.BIOACTIVITY.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.nodes.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17745,19 +17732,19 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Pro
   source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.NEGATIVELY_REGULATES.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17779,55 +17766,55 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.P
   source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.DOWN_REGULATED.Experiment.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.IS_SITE_OF.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UNREGULATED.Experiment.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UP_REGULATED.Experiment.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_MARKER_GENE.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_SIGNATURE_GENE.Gene.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.PATHWAY_ASSOCIATED_WITH_GENE.Gene.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.TARGETS_EXPRESSION_OF_GENE.Gene.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17838,13 +17825,13 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound
   ok: true
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound.TARGETS.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Disease.SKOS_EXACT_MATCH.DiseaseOrPhenotype.edges.csv
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17880,7 +17867,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Pro
   source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_PTM.PTM.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17921,7 +17908,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Varian
   source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.PTM.TARGETS.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17932,7 +17919,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Prot
   ok: true
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.HAS_ISOFORM.Protein.edges.csv:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -17948,7 +17935,7 @@ https://research.bioinformatics.udel.edu/text_mining/rlimsp2/:
   ok: true
   status_code: 200
 https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMS-P_AnnotationGuidelines.pdf:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
@@ -17965,7 +17952,7 @@ https://rfam.org/:
   source: cache
   status_code: 200
 https://rfam.org/api:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -18419,19 +18406,19 @@ https://sibils.org/:
   source: cache
   status_code: 200
 https://sibils.org/API#Customizable-search-API:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://sibils.org/API#Fetch-API:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://sibils.org/API#Question-Answering-API:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -18497,25 +18484,25 @@ https://skm.nib.si/ckn:
   source: cache
   status_code: 200
 https://skm.nib.si/downloads/ckn-annot/v1-2018.06:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://skm.nib.si/downloads/ckn-annot/v2-2023.06:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://skm.nib.si/downloads/ckn/v1-2018.06:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://skm.nib.si/downloads/ckn/v2-2023.06:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -18539,7 +18526,7 @@ https://skm.nib.si/downloads/pss/public/dinar-edges:
   source: cache
   status_code: 200
 https://skm.nib.si/downloads/pss/public/graphviz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -18905,7 +18892,7 @@ https://stars.renci.org/var/translator/releases/cohd/2025_12_15/:
   source: cache
   status_code: 200
 https://stars.renci.org/var/translator/releases/ctd/2025_12_15/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -19049,11 +19036,12 @@ https://stko-kwg.geog.ucsb.edu/lod/ontology:
   source: cache
   status_code: 200
 https://stko-kwg.geog.ucsb.edu/sparql:
-  checked_at: '2026-06-25T15:59:09Z'
-  error: get 400
+  checked_at: '2026-06-27T00:00:00Z'
+  error: get 500
+  note: 'Dead SPARQL endpoint: 500 even with a real ?query; repointed to FRINK https://frink.apps.renci.org/spatialkg/sparql'
   ok: false
   source: cache
-  status_code: 400
+  status_code: 500
 https://storage.googleapis.com/translator-text-workflow-dev-public/:
   checked_at: '2026-06-02T22:38:08Z'
   error: null
@@ -19376,13 +19364,13 @@ https://tree.opentreeoflife.org/:
   source: cache
   status_code: 200
 https://tree.opentreeoflife.org/tnrs:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://tree.opentreeoflife.org/tree:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -19483,7 +19471,7 @@ https://unmtid-shinyapps.net/shiny/repodb/:
   source: cache
   status_code: 200
 https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -19552,7 +19540,7 @@ https://vitessce.io/:
   source: cache
   status_code: 200
 https://w3id.org/biolink/biolink-model.graphql:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -19834,7 +19822,7 @@ https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -19846,7 +19834,7 @@ https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -19858,7 +19846,7 @@ https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20248,7 +20236,7 @@ https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20482,7 +20470,7 @@ https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mesh/mesh.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20500,7 +20488,7 @@ https://w3id.org/biopragmatics/resources/mesh/mesh.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mesh/mesh.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20518,7 +20506,7 @@ https://w3id.org/biopragmatics/resources/mesh/mesh.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mgi/mgi.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20530,7 +20518,7 @@ https://w3id.org/biopragmatics/resources/mgi/mgi.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mgi/mgi.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20542,7 +20530,7 @@ https://w3id.org/biopragmatics/resources/mgi/mgi.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/mgi/mgi.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20650,7 +20638,7 @@ https://w3id.org/biopragmatics/resources/mirbase/mirbase.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20662,7 +20650,7 @@ https://w3id.org/biopragmatics/resources/msigdb/msigdb.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20674,7 +20662,7 @@ https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20728,7 +20716,7 @@ https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20740,7 +20728,7 @@ https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20752,7 +20740,7 @@ https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20884,7 +20872,7 @@ https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20896,7 +20884,7 @@ https://w3id.org/biopragmatics/resources/pathbank/pathbank.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -20908,7 +20896,7 @@ https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21172,7 +21160,7 @@ https://w3id.org/biopragmatics/resources/pombase/pombase.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/reactome/reactome.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21190,7 +21178,7 @@ https://w3id.org/biopragmatics/resources/reactome/reactome.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/reactome/reactome.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21250,7 +21238,7 @@ https://w3id.org/biopragmatics/resources/rgd/rgd.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/rhea/rhea.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21268,7 +21256,7 @@ https://w3id.org/biopragmatics/resources/rhea/rhea.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/rhea/rhea.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21292,7 +21280,7 @@ https://w3id.org/biopragmatics/resources/rhea/rhea.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/ror/ror.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21310,7 +21298,7 @@ https://w3id.org/biopragmatics/resources/ror/ror.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/ror/ror.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21382,7 +21370,7 @@ https://w3id.org/biopragmatics/resources/signor/signor.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/slm/slm.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21394,7 +21382,7 @@ https://w3id.org/biopragmatics/resources/slm/slm.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/slm/slm.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21406,7 +21394,7 @@ https://w3id.org/biopragmatics/resources/slm/slm.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/slm/slm.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21508,7 +21496,7 @@ https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21520,7 +21508,7 @@ https://w3id.org/biopragmatics/resources/uniprot/uniprot.json.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21532,7 +21520,7 @@ https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21580,7 +21568,7 @@ https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.tsv:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/zfin/zfin.json:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21598,7 +21586,7 @@ https://w3id.org/biopragmatics/resources/zfin/zfin.obo:
   source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/zfin/zfin.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -21628,7 +21616,7 @@ https://w3id.org/emi:
   source: cache
   status_code: 200
 https://w3id.org/goldterms/goldterms.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -22080,7 +22068,7 @@ https://www.bv-brc.org/api/doc/:
   source: cache
   status_code: 200
 https://www.bv-brc.org/docs/api/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -22149,25 +22137,25 @@ https://www.cancergenomeinterpreter.org/rest_api:
   source: cache
   status_code: 200
 https://www.cancerrxgene.org/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 410
   ok: false
   source: cache
   status_code: 410
 https://www.cancerrxgene.org/downloads/anova:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 410
   ok: false
   source: cache
   status_code: 410
 https://www.cancerrxgene.org/downloads/drug_data:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 410
   ok: false
   source: cache
   status_code: 410
 https://www.cancerrxgene.org/downloads/genetic_features:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 410
   ok: false
   source: cache
@@ -22521,7 +22509,7 @@ https://www.ebi.ac.uk/gxa/experiments?experimentType=differential:
   source: cache
   status_code: 200
 https://www.ebi.ac.uk/gxa/help/api.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -22533,7 +22521,7 @@ https://www.ebi.ac.uk/gxa/help/index.html:
   source: cache
   status_code: 200
 https://www.ebi.ac.uk/gxa/help/r-data-objects.html:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 500
   ok: false
   source: cache
@@ -22676,21 +22664,20 @@ https://www.ebi.ac.uk/pdbe/pdbe-kb/schema:
   source: cache
   status_code: 200
 https://www.ebi.ac.uk/rdf/services/sparql:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.ebi.ac.uk/spot/oxo/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 500
   ok: false
   source: cache
   status_code: null
 https://www.ebi.ac.uk/spot/oxo/docs/api:
-  checked_at: '2026-06-02T22:38:41Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''www.ebi.ac.uk'', port=443):
-    Read timed out. (read timeout=8.0)'
+  checked_at: '2026-06-27T13:24:56Z'
+  error: get 500
   ok: false
   source: cache
   status_code: null
@@ -22760,7 +22747,7 @@ https://www.ema.europa.eu/:
   ok: true
   status_code: 200
 ? https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/data-medicines-iso-idmp-standards/public-data-article-57-database
-: checked_at: '2026-06-25T15:59:09Z'
+: checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
@@ -22786,7 +22773,7 @@ https://www.embopress.org/doi/abs/10.1038/msb.2011.26:
   ok: true
   status_code: 200
 https://www.embopress.org/doi/suppl/10.1038/msb.2011.26:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   status_code: 404
@@ -23495,7 +23482,7 @@ https://www.knowwheregraph.org/tools/knowledge-explorer/:
   source: cache
   status_code: 200
 https://www.lncipedia.org/trackhub/hub.txt:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -23554,7 +23541,7 @@ https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv:
   source: cache
   status_code: 200
 https://www.metanetx.org/ftp/latest/metanetx.ttl.gz:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -23822,7 +23809,7 @@ https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8b
   source: cache
   status_code: 200
 https://www.nescent.org/phenoscape/Main_Page:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -23997,7 +23984,7 @@ https://www.orphadata.com/contact/:
   source: cache
   status_code: 200
 https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -24027,7 +24014,7 @@ https://www.orthodb.org/:
   source: cache
   status_code: 200
 https://www.orthodb.org/api/:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -24157,25 +24144,25 @@ https://www.proteinatlas.org/about/download:
   source: cache
   status_code: 200
 https://www.proteinatlas.org/download/blood_protein.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/brain_rna.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/normal_tissue.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/pathology.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
@@ -24199,31 +24186,31 @@ https://www.proteinatlas.org/download/proteinatlas.xml.gz:
   source: cache
   status_code: 200
 https://www.proteinatlas.org/download/rna_celline.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/rna_single_cell.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/rna_tissue.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache
   status_code: 404
 https://www.proteinatlas.org/download/subcellular_location.tsv.zip:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T13:24:56Z'
   error: get 404
   ok: false
   source: cache

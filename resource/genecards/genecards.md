@@ -19,8 +19,12 @@ domains:
 - pathways
 homepage_url: https://www.genecards.org/
 id: genecards
-last_modified_date: '2025-10-08T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.lifemapsc.com/genecards-suite-terms-of-use/
+  label: Free for non-profit academic/hospital use; commercial license required (proprietary,
+    LifeMap Sciences)
 name: GeneCards
 products:
 - category: GraphicalInterface

@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/gwas/
 id: gwascatalog
 infores_id: gwas-catalog
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use
@@ -52,16 +52,19 @@ products:
     source: gwascatalog
   product_url: https://www.ebi.ac.uk/gwas/rest/api/v2/docs
 - category: Product
+  compression: zip
   description: Full data dump of GWAS Catalog associations in tab-delimited format
-    (SNP-trait association data)
+    (SNP-trait association data, ontology-annotated full release). The flat
+    gwas-catalog-associations.tsv file was retired from releases/latest/; the current
+    canonical full associations download is the zipped ontology-annotated TSV.
   format: tsv
   id: gwascatalog.associations.tsv
   name: GWAS Catalog Associations TSV
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
-  product_file_size: 482336061
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv
+  product_file_size: 70520866
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations_ontology-annotated-full.zip
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
     entries

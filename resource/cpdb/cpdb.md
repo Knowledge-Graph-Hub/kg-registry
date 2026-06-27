@@ -18,8 +18,12 @@ domains:
 homepage_url: http://cpdb.molgen.mpg.de/
 id: cpdb
 infores_id: cpdb
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: http://cpdb.molgen.mpg.de/
+  label: Free for academic use; commercial users must contact the developers (integrated
+    interaction data inherits the license terms of the contributing source databases)
 name: ConsensusPathDB
 products:
 - category: GraphicalInterface

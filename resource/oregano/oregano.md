@@ -15,7 +15,7 @@ domains:
   - biomedical
 homepage_url: https://gitub.u-bordeaux.fr/erias/oregano
 id: oregano
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: OREGANO
 products:
@@ -66,12 +66,12 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: bio2rdf
         relation_type: prov:wasDerivedFrom
-  - category: ProgrammingInterface
-    description: Public SPARQL endpoint for querying OREGANO graph content.
-    format: http
+  - category: GraphProduct
+    description: OREGANO knowledge graph data download on Zenodo (record 10103842, v3). Provides the integrated graph as TSV triples (OREGANO_V2.1.tsv) plus per-entity TSV files and a Turtle (.ttl) metadata file with entity names and cross-references. This download replaces the former public SPARQL endpoint, which is no longer available.
+    format: tsv
     id: oregano.sparql
-    name: OREGANO SPARQL Endpoint
-    product_url: http://91.121.148.199:8889/bigdata/#query
+    name: OREGANO Knowledge Graph Data Download (Zenodo)
+    product_url: https://zenodo.org/records/10103842
     original_source:
       - source: oregano
         relation_type: prov:hadPrimarySource
@@ -97,8 +97,11 @@ drug-target relation discovery. It integrates drug, target, gene, disease,
 pathway, phenotype, and related biomedical entities from multiple upstream data
 sources into a single graph designed for link-prediction workflows.
 
-The owned products on this page include the project documentation, graph
-distribution folder, and published SPARQL endpoint for querying the resource.
-The graph is explicitly assembled from many free biomedical databases, which are
-represented in product provenance rather than duplicated as separate owned OREGANO
-products.
+The owned products on this page include the project documentation, the graph
+distribution folder in the project repository, and a Zenodo data download of the
+integrated graph (TSV triples plus a Turtle metadata file). OREGANO is now
+distributed primarily as downloadable graph files; the project's former public
+SPARQL endpoint is no longer reachable and has been replaced here by the Zenodo
+download. The graph is explicitly assembled from many free biomedical databases,
+which are represented in product provenance rather than duplicated as separate
+owned OREGANO products.

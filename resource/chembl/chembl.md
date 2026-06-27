@@ -17,7 +17,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/chembl/
 id: chembl
 infores_id: chembl
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/
@@ -94,16 +94,19 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chembl
   product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/
-- category: ProgrammingInterface
-  description: SPARQL endpoint for the ChEMBL RDF data
-  format: http
+- category: Product
+  compression: gzip
+  description: RDF (Turtle) download of the ChEMBL data via the EBI ChEMBL-RDF FTP
+    archive. The former EBI RDF Platform SPARQL endpoint has been retired, so ChEMBL
+    RDF is now distributed as downloadable Turtle dumps.
+  format: ttl
   id: chembl.sparql
   is_public: true
-  name: ChEMBL SPARQL
+  name: ChEMBL RDF Download
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chembl
-  product_url: https://www.ebi.ac.uk/rdf/services/sparql
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/
 - category: MappingProduct
   description: Mapping between chembl_35 target chembl_ids and UniProt accessions
   format: txt

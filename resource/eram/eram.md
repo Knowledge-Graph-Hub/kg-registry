@@ -10,8 +10,11 @@ domains:
   - precision medicine
 id: eram
 infores_id: eram
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: http://119.3.41.228/eram/download.php
+  label: Free of charge for non-profit (academic) institutions
 name: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
 homepage_url: http://119.3.41.228/eram/
 publications:

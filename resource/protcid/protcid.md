@@ -19,9 +19,9 @@ domains:
 - proteomics
 - chemistry and biochemistry
 - biological systems
-homepage_url: http://dunbrack2.fccc.edu/protcid/
+homepage_url: https://dunbrack2.fccc.edu/ProtCiD/Default.aspx
 id: protcid
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://dunbrack2.fccc.edu/ProtCID/About.aspx

@@ -17,7 +17,7 @@ domains:
 - biological systems
 homepage_url: https://biomics.lab.nycu.edu.tw/dbSNO/index.php
 id: dbsno
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: dbSNO
 products:
@@ -53,6 +53,10 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
+    when accessing file. The dbSNO 3.0 download page (download.php) renders its page
+    shell but the server errors before emitting download links; the rest of the site
+    (index.php, statistics.php) is live (200).'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
     organism, site, enzyme, relation identifiers, and publication evidence.

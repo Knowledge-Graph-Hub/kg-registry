@@ -14,7 +14,7 @@ domains:
 homepage_url: https://scibite.com/
 id: scibite
 infores_id: scibite
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: SciBite
 products:
@@ -36,14 +36,8 @@ products:
     source: hgnc
   - relation_type: prov:hadPrimarySource
     source: scibite
-  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
+  product_file_size: 8114434
+  product_url: https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-04-01.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
 ---
 SciBite

@@ -29,7 +29,7 @@ domains:
 homepage_url: https://foodb.ca/
 id: foodb
 infores_id: foodb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -271,24 +271,17 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
 - category: Product
-  compression: zip
-  description: Free Induction Decay (FID) files from FooDB
-  format: mixed
+  description: FooDB downloads page listing the available bulk data archives, spectra,
+    peak lists, and supplementary files (including NMR Free Induction Decay data).
+    The previously listed direct FID archive (foodb_fid_files.zip) is no longer served
+    by the host, so this product points to the canonical downloads page.
+  format: http
   id: foodb.data.fid
-  name: FooDB FID Files
+  name: FooDB Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: foodb
-  product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
-  warnings:
-  - The FooDB downloads page lists this file, but the direct download URL returned
-    HTTP 404 when checked on 2026-06-12.
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-24: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
+  product_url: https://foodb.ca/downloads
 - category: Product
   compression: zip
   description: Image files of compounds, foods, and chemical structures

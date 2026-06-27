@@ -24,7 +24,7 @@ funding:
 homepage_url: https://knowwheregraph.org/
 id: "knowwheregraph"
 infores_id: "knowwheregraph"
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: "https://creativecommons.org/licenses/by/4.0/"
@@ -83,12 +83,12 @@ products:
       - source: usgs-comcat
         relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
-    description: SPARQL endpoint with GeoSPARQL support for querying KnowWhereGraph data and performing geospatial queries
+    description: SPARQL endpoint with GeoSPARQL support for querying KnowWhereGraph data and performing geospatial queries, served via the FRINK (Proto-OKN) platform
     format: http
     id: "knowwheregraph.sparql"
     is_public: true
     name: KnowWhereGraph SPARQL Endpoint
-    product_url: https://stko-kwg.geog.ucsb.edu/sparql
+    product_url: https://frink.apps.renci.org/spatialkg/sparql
     original_source:
       - source: knowwheregraph
         relation_type: prov:hadPrimarySource
@@ -228,7 +228,7 @@ KnowWhereGraph covers a comprehensive range of environmental and human systems:
 
 **SPARQL Endpoint**
 - Direct SPARQL and GeoSPARQL query support
-- Location: https://knowwheregraph.org/sparql/
+- Location: https://frink.apps.renci.org/spatialkg/sparql (served via the FRINK / Proto-OKN platform)
 - Enables complex geospatial queries across all data layers
 - Supports spatial reasoning and analysis
 

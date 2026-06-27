@@ -1,5 +1,5 @@
 ---
-activity_status: active
+activity_status: inactive
 category: DataSource
 creation_date: '2025-11-05T00:00:00Z'
 description: CoralKinome is a comprehensive resource for coral kinase sequences and
@@ -10,7 +10,7 @@ domains:
 - systems biology
 homepage_url: https://www.coralkinome.org/
 id: coralkinome
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: CoralKinome
 products:

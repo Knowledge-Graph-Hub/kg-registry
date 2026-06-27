@@ -12,9 +12,9 @@ description: A graph of synthetic lethal interactions.
 domains:
 - biomedical
 - genomics
-homepage_url: https://kghub.io/sldb/
+homepage_url: https://github.com/monarch-initiative/SLDBGen
 id: sldb
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: sldb
 products:

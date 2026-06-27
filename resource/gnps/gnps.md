@@ -18,7 +18,7 @@ domains:
 - microbiology
 homepage_url: https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp
 id: gnps
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Global Natural Products Social Molecular Networking
 products:
@@ -52,7 +52,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gnps
-  product_url: https://gnps-external.ucsd.edu/gnpslibrary
+  product_url: https://external.gnps2.org/gnpslibrary
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 502 error
     when accessing file'

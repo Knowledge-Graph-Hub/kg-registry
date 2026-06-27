@@ -12,8 +12,11 @@ domains:
 - biological systems
 homepage_url: https://www.ncbi.nlm.nih.gov/research/cog-project/
 id: cog
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.usa.gov/government-works
+  label: U.S. Government Work (public domain)
 name: COG
 products:
 - category: GraphicalInterface

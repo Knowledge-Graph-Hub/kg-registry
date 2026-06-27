@@ -16,7 +16,7 @@ domains:
 - biomedical
 homepage_url: https://kghub.org/kg-idg/index.html
 id: kg-idg
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause

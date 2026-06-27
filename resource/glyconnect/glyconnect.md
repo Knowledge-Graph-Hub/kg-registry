@@ -18,7 +18,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://glyconnect.expasy.org/
 id: glyconnect
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,7 +44,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glyconnect
-  product_url: https://glyconnect.expasy.org/api
+  product_url: https://glyconnect.expasy.org/api/docs
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying GlyConnect RDF data
   format: http

@@ -11,7 +11,7 @@ domains:
 - pathways
 homepage_url: http://bind.ca
 id: bind
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Biomolecular Interaction Network Database (BIND)
 products:
@@ -418,6 +418,15 @@ publications:
   journal: Nucleic Acids Research
   title: 'BIND: the Biomolecular Interaction Network Database'
   year: '2003'
+- authors:
+  - Alfarano C
+  - Andrade CE
+  - Anthony K
+  doi: 10.1093/nar/gki051
+  id: doi:10.1093/nar/gki051
+  journal: Nucleic Acids Research
+  title: The Biomolecular Interaction Network Database and related tools 2005 update
+  year: '2005'
 synonyms:
 - BIND
 ---

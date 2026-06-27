@@ -20,7 +20,7 @@ domains:
 - environment
 homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 id: dsstox
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -57,7 +57,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dsstox
-  product_url: https://api-ccte.epa.gov/docs/index.html
+  product_url: https://comptox.epa.gov/ctx-api/docs/chemical.html
 - category: DocumentationProduct
   description: Documentation for the DSSTox database
   format: docx
