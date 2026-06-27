@@ -23,7 +23,7 @@ domains:
 homepage_url: https://clinicalgenome.org/
 id: clingen
 infores_id: clingen
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -86,7 +86,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: clingen
-  product_url: https://erepo.clinicalgenome.org/evrepo/api/
+  product_url: https://erepo.clinicalgenome.org/evrepo/api/summary/
 - category: GraphicalInterface
   description: Web-based interface for accessing ClinGen's curated data. Allows users
     to search and browse curated gene-disease pairs, variant interpretations, and

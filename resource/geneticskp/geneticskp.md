@@ -22,7 +22,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 id: geneticskp
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Genetics KP
 products:
@@ -73,7 +73,7 @@ products:
     source: geneticskp
   - relation_type: prov:hadPrimarySource
     source: translator
-  product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/
+  product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/
 - category: GraphProduct
   compatibility:
   - standard: biolink

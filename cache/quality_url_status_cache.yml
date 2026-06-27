@@ -5308,8 +5308,8 @@ https://api.pharmgkb.org/v1/download/file/data/variants.zip:
   status_code: 200
 https://api.platform.opentargets.org/api/v4/graphql:
   checked_at: '2026-06-27T00:00:00Z'
-  ok: true
   note: 'GraphQL endpoint: 200 on POST, 400 on GET'
+  ok: true
 https://api.platform.opentargets.org/api/v4/rest:
   checked_at: '2026-06-27T13:24:56Z'
   error: get 404
@@ -6473,6 +6473,10 @@ https://civicdb.org/api/graphiql:
   ok: true
   source: cache
   status_code: 200
+https://civicdb.org/api/graphql:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: 'GraphQL: 200 on POST (GET returns 400/405)'
+  ok: true
 https://civicdb.org/downloads/nightly/nightly-AssertionSummaries.tsv:
   checked_at: '2026-06-02T22:36:05Z'
   error: null
@@ -6707,6 +6711,10 @@ https://compath.scai.fraunhofer.de/similarity:
   ok: true
   source: cache
   status_code: 200
+https://comptox.epa.gov/ctx-api/docs/chemical.html:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: verified 200
+  ok: true
 https://comptox.epa.gov/dashboard:
   checked_at: '2026-06-02T22:36:06Z'
   error: null
@@ -8298,6 +8306,10 @@ https://erepo.clinicalgenome.org/evrepo/api/:
   ok: false
   source: cache
   status_code: 404
+https://erepo.clinicalgenome.org/evrepo/api/summary/:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: evrepo API root; verified 200 (transient 502 on recheck)
+  ok: true
 https://evs.nci.nih.gov/ftp1/CDISC/ADaM/:
   checked_at: '2026-06-02T22:36:27Z'
   error: null
@@ -8418,6 +8430,10 @@ https://exrna.org/:
   ok: true
   source: cache
   status_code: 200
+https://external.gnps2.org/gnpslibrary:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: verified 200
+  ok: true
 https://files.cpicpgx.org/resources/CPIC-overview-updates-02.2025.pptx:
   checked_at: '2026-06-02T22:36:48Z'
   error: null
@@ -10011,6 +10027,10 @@ https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/:
   ok: false
   source: cache
   status_code: 404
+https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: TRAPI v1.5 base; openapi.json 200
+  ok: true
 https://genomics.senescence.info/genes/human.html:
   checked_at: '2026-06-02T22:36:55Z'
   error: null
@@ -13610,6 +13630,10 @@ https://glyconnect.expasy.org/api:
   ok: false
   source: cache
   status_code: 500
+https://glyconnect.expasy.org/api/docs:
+  checked_at: '2026-06-27T00:00:00Z'
+  note: verified 200 (Swagger docs)
+  ok: true
 https://glyconnect.expasy.org/downloads/Immunoglobulins/:
   checked_at: '2026-06-02T22:37:17Z'
   error: null
