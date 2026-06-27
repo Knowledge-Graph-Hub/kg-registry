@@ -18,7 +18,7 @@ domains:
 - biomedical
 homepage_url: https://www.ema.europa.eu/
 id: ema
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: European Medicines Agency
 products:
@@ -52,14 +52,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ema
-  product_url: https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/data-medicines-iso-idmp-standards/public-data-article-57-database
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 429 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
+  product_url: https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/data-medicines-iso-idmp-standards-post-authorisation/public-data-article-57-database
 - category: Product
   description: EMA regulatory source extract from the medic v1.0.1 release
   id: medi.ema

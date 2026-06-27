@@ -17,10 +17,10 @@ description: Encyclopedia of Life (EOL) TraitBank is a searchable, comprehensive
 domains:
 - organisms
 - phenotype
-homepage_url: https://eol.org/pages/traitbank
+homepage_url: https://eol.org/traitbank
 id: eol-traitbank
 infores_id: eol-traitbank
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,7 +37,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: eol-traitbank
-  product_url: https://eol.org/pages/traitbank
+  product_url: https://eol.org/traitbank
 - category: ProgrammingInterface
   description: Neo4j Cypher query interface providing programmatic access to structured
     trait data, requiring authentication via EOL account
@@ -253,7 +253,7 @@ TraitBank organizes data across 11 broad subject categories:
 TraitBank provides multiple mechanisms for accessing trait data:
 
 **1. Web Portal Interface**
-- Interactive search and browse functionality at https://eol.org/pages/traitbank
+- Interactive search and browse functionality at https://eol.org/traitbank
 - User-friendly discovery of organism traits by taxon or attribute
 - Filtering by trait type, data source, and quality levels
 - Integration with EOL species pages for comprehensive organism information
@@ -403,7 +403,7 @@ The system is maintained by the Smithsonian Institution's National Museum of Nat
 
 When citing TraitBank as a data source:
 
-"Encyclopedia of Life TraitBank. Available at https://eol.org/pages/traitbank"
+"Encyclopedia of Life TraitBank. Available at https://eol.org/traitbank"
 
 For the primary semantic web paper:
 "Adams et al. (2016) TraitBank: Practical semantics for organism attribute data. Semantic Web, 7(6), 577-588. https://doi.org/10.3233/SW-150190"

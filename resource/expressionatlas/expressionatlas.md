@@ -29,7 +29,7 @@ domains:
 - organisms
 homepage_url: https://www.ebi.ac.uk/gxa/home
 id: expressionatlas
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -88,24 +88,17 @@ products:
     source: expressionatlas
   product_url: https://www.ebi.ac.uk/gxa/download
 - category: Product
-  description: Normalized gene expression data and raw count matrices in R data object
-    format for computational analysis
+  description: Normalized gene expression data and raw count matrices delivered as R
+    SummarizedExperiment objects via the ExpressionAtlas Bioconductor package, which
+    downloads and imports Expression Atlas experiment data into R for computational
+    analysis
   format: mixed
   id: expressionatlas.r-objects
   name: Expression Atlas R Data Objects
   original_source:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
-  product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 500 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 500 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 500 error
-    when accessing file'
+  product_url: https://bioconductor.org/packages/ExpressionAtlas/
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
     from GTEx, Human Protein Atlas and other major studies

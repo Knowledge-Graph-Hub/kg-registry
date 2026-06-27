@@ -79,11 +79,13 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 210868256
     product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error when accessing file (KG-Hub host migration; no GitHub releases mirror available)'
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-03-18T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 ---
 
 KG-Alzheimers is a knowledge graph created in collaboration between Lawrence Berkeley National

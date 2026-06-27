@@ -11,7 +11,7 @@ domains:
 - biological systems
 - organisms
 id: eupathdb
-last_modified_date: '2025-10-10T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Eukaryotic Pathogen Database (EuPathDB)
 products:
@@ -55,15 +55,17 @@ products:
     source: eupathdb
   product_url: https://veupathdb.org/veupathdb/app/workspace/strategies
 - category: GraphicalInterface
-  description: Map-based visualization tool for field-collected data including insecticide
-    resistance, population abundance, and pathogen infection status.
+  description: Map-based visualization tool (PopBio Map) within VectorBase for field-collected
+    data including insecticide resistance, population abundance, and pathogen infection
+    status. Successor to the standalone MapVEu tool, now folded into VectorBase (part
+    of VEuPathDB).
   format: http
   id: eupathdb.mapveu
-  name: MapVEu
+  name: VectorBase PopBio Map (formerly MapVEu)
   original_source:
   - relation_type: prov:hadPrimarySource
     source: eupathdb
-  product_url: https://mapveu.org
+  product_url: https://vectorbase.org/vectorbase/app/popbio-map
 - category: DocumentationProduct
   description: Comprehensive documentation including tutorials, exercises, and user
     guides for VEuPathDB tools and features.

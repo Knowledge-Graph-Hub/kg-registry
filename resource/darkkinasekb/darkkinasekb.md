@@ -15,7 +15,7 @@ domains:
 homepage_url: https://darkkinome.org
 id: darkkinasekb
 infores_id: darkkinasekb
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Dark Kinase Knowledgebase
 products:
@@ -31,15 +31,18 @@ products:
     source: darkkinasekb
   product_url: https://darkkinome.org
 - category: Browser
-  description: Interactive expression browser showing tissue-specific expression of
-    dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide comparisons
+  description: Expression browser data and source code showing tissue-specific expression
+    of dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide
+    comparisons. The hosted Shiny application formerly at expression.darkkinome.org
+    has been retired; the underlying data and code remain available in this GitHub
+    repository.
   format: http
   id: darkkinasekb.expression
   name: DKK Expression Browser
   original_source:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
-  product_url: http://expression.darkkinome.org/
+  product_url: https://github.com/IDG-Kinase/kinase_expression
 - category: Dataset
   description: Parallel reaction monitoring (PRM) peptides for quantitative mass spectrometry
     of dark kinases with standard curves and detection limits
@@ -196,7 +199,7 @@ Each of the 162 dark kinases has a dedicated page containing:
 - Links to complementary resources (Pharos, GeneCards, Monarch Initiative)
 
 ### DKK Expression Browser
-Interactive web application ([http://expression.darkkinome.org/](http://expression.darkkinome.org/)) featuring:
+Interactive web application (formerly hosted at expression.darkkinome.org, now retired; data and source code remain available at [https://github.com/IDG-Kinase/kinase_expression](https://github.com/IDG-Kinase/kinase_expression)) featuring:
 - RNAseq data from GTEx Consortium
 - Mass spectrometry-based protein abundance from Human Proteome Map
 - Kinome-specific expression comparisons
