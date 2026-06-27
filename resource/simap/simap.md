@@ -1,18 +1,43 @@
 ---
-activity_status: unknown
+activity_status: inactive
 category: DataSource
 creation_date: '2026-02-18T00:00:00Z'
-description: SIMAP (Similarity Matrix of Proteins) is a protein sequence similarity
-  resource historically used as an upstream source in integrative protein interaction
-  systems.
+description: SIMAP (Similarity Matrix of Proteins) was a comprehensive database of
+  pre-calculated all-against-all protein sequence similarities, protein domains, functional
+  annotations, and clusters. Developed at MIPS (Munich Information Center for Protein
+  Sequences) / GSF / Helmholtz Munich and later maintained at the Technical University
+  of Munich (TUM), it provided a continuously updated similarity matrix covering tens
+  of millions of non-redundant protein sequences from UniProt and other sources, and
+  was used as an upstream resource by integrative protein interaction and annotation
+  systems. The project appears discontinued, as its historical hosts (MIPS/Helmholtz
+  Munich and the TUM webclu server) no longer resolve and no successor host is
+  currently reachable.
 domains:
 - proteomics
 - genomics
 - biological systems
+homepage_url: http://mips.helmholtz-muenchen.de/simap/
 id: simap
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: SIMAP
+publications:
+- id: doi:10.1093/nar/gkp949
+  title: SIMAP—a comprehensive database of pre-calculated protein sequence similarities,
+    domains, annotations and clusters
+  authors:
+  - Thomas Rattei
+  - Patrick Tischler
+  - Stefan Götz
+  - Marc-André Jehl
+  - Jonathan Hoser
+  - Roland Arnold
+  - Ana Conesa
+  - Hans-Werner Mewes
+  journal: Nucleic Acids Research
+  year: '2010'
+  doi: doi:10.1093/nar/gkp949
+  preferred: true
 products:
 - category: Product
   description: Legacy SIMAP homepage used for sequence-similarity resource access.
@@ -990,8 +1015,11 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 warnings:
-- Current operational status of the legacy SIMAP portal should be rechecked periodically.
+- 'SIMAP appears discontinued: the historical MIPS/Helmholtz Munich portal and the
+  TUM webclu host did not resolve when checked on 2026-06-27 (connection timeout /
+  404). The homepage_url is retained as the historical location for an inactive
+  resource.'
 ---
 # SIMAP
 
-SIMAP is represented as a legacy protein-similarity data source referenced by downstream resources.
+SIMAP (Similarity Matrix of Proteins) was a database of pre-calculated all-against-all protein sequence similarities, domains, annotations, and clusters, developed at MIPS / Helmholtz Munich and later the Technical University of Munich. It is now inactive: its historical hosts no longer resolve and no live successor was found. It remains referenced here as a legacy upstream protein-similarity data source for downstream resources such as STRING.
