@@ -15520,14 +15520,8 @@ https://nlp.case.edu/public/data/GPKG-Predict/data/Raw_Data.docx:
   source: cache
   status_code: null
 https://noctua.geneontology.org/:
-  checked_at: '2026-06-02T22:37:39Z'
-  error: 'HEAD request failed: HTTPSConnectionPool(host=''noctua.geneontology.org'',
-    port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host=''noctua.geneontology.org'',
-    port=443) at 0x7fad59a37b10>, ''Connection to noctua.geneontology.org timed out.
-    (connect timeout=8.0)''))'
-  ok: false
-  source: cache
-  status_code: null
+  checked_at: '2026-06-27T00:00:00Z'
+  ok: true
 https://nsides.io/:
   checked_at: '2026-06-02T22:37:39Z'
   error: null

@@ -28,7 +28,7 @@ domains:
 homepage_url: http://geneontology.org/go-cam/docs
 id: go-cam
 infores_id: go-cam
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -62,14 +62,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: go-cam
-  product_url: https://github.com/geneontology/go-cam
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
+  product_url: https://github.com/geneontology/noctua-models
 - category: DataModelProduct
   description: LinkML YAML schema for representing Gene Ontology Causal Activity Models
     (GO-CAMs)
