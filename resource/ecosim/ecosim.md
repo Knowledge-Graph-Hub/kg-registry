@@ -17,8 +17,8 @@ contacts:
         value: cjmungall@lbl.gov
       - contact_type: github
         value: cmungall
-homepage_url: http://purl.obolibrary.org/obo/ecosim.owl
-repository: http://purl.obolibrary.org/obo/ecosim.owl
+homepage_url: https://github.com/bioepic-data/ecosim-ontology
+repository: https://github.com/bioepic-data/ecosim-ontology
 products:
   - id: ecosim.model.owl
     name: ecosim OWL release
@@ -30,7 +30,7 @@ products:
         relation_type: prov:hadPrimarySource
 category: Resource
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-09-27T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 ---
 
 Ontology rendering of the EcoSIM Land System Model
