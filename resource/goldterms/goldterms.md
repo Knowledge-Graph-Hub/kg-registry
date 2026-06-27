@@ -23,7 +23,7 @@ domains:
 - biological systems
 homepage_url: https://gold.jgi.doe.gov/
 id: goldterms
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/cmungall/gold-ontology/blob/main/LICENSE
@@ -37,16 +37,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: goldterms
-  product_url: https://w3id.org/goldterms/goldterms.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
+  product_file_size: 4602231
+  product_url: https://raw.githubusercontent.com/cmungall/gold-ontology/main/gold.owl
 - category: GraphicalInterface
   format: owl
   id: goldterms.bioportal
@@ -63,7 +55,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: goldterms
   product_file_size: 27808
-  product_url: https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml
+  product_url: https://raw.githubusercontent.com/cmungall/gold-ontology/main/gold_definitions.yaml
 - category: Product
   description: Trait data table listing all 140+ harmonized traits available in metaTraits,
     mapped to standardized ontologies.

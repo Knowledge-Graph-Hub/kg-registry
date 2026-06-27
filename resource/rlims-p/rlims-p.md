@@ -18,7 +18,7 @@ domains:
 - biological systems
 homepage_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/
 id: rlims-p
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: RLIMS-P
 products:
@@ -53,18 +53,14 @@ products:
 - category: DocumentationProduct
   description: Annotation guidelines used with RLIMS-P protein phosphorylation literature-mining
     tasks.
-  format: http
+  format: pdf
   id: rlims-p.annotation-guidelines
   name: RLIMS-P Annotation Guidelines
   original_source:
   - relation_type: prov:hadPrimarySource
     source: rlims-p
-  product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMS-P_AnnotationGuidelines.pdf
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
+  product_file_size: 189787
+  product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMSP_guidelines.pdf
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
     organism, site, enzyme, relation identifiers, and publication evidence.

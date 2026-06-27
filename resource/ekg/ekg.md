@@ -15,7 +15,7 @@ domains:
   - public health
 homepage_url: https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601
 id: ekg
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -70,8 +70,8 @@ products:
     product_file_size: 185806
     product_url: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/corpus_processed/SUMMARIZED/OutputAnnotatedTexts-LLMs-ENSEMBLE_whoDons.csv
   - category: ProgrammingInterface
-    connection_url: https://api-vast.jrc.service.ec.europa.eu/sparql/
-    description: Public SPARQL endpoint for querying eKG
+    connection_url: https://data.jrc.ec.europa.eu/yasgui
+    description: SPARQL query interface for eKG via the JRC Data Catalogue YASGUI (the former dedicated endpoint at api-vast.jrc.service.ec.europa.eu/sparql/ has been retired)
     format: http
     id: ekg.sparql
     name: eKG SPARQL endpoint
@@ -85,12 +85,12 @@ products:
         relation_type: prov:wasInformedBy
       - source: geonames
         relation_type: prov:wasInformedBy
-    product_url: https://api-vast.jrc.service.ec.europa.eu/sparql/
+    product_url: https://data.jrc.ec.europa.eu/yasgui
   - category: GraphicalInterface
-    description: Virtuoso faceted browser for exploring eKG
+    description: JRC Data Catalogue dataset landing page for browsing and downloading eKG (the former Virtuoso faceted browser at api-vast.jrc.service.ec.europa.eu/fct/ has been retired)
     format: http
     id: ekg.browser
-    name: eKG Faceted Browser
+    name: eKG Data Catalogue Page
     original_source:
       - source: ekg
         relation_type: prov:hadPrimarySource
@@ -101,7 +101,7 @@ products:
         relation_type: prov:wasInformedBy
       - source: geonames
         relation_type: prov:wasInformedBy
-    product_url: https://api-vast.jrc.service.ec.europa.eu/fct/
+    product_url: https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601
 publications:
   - authors:
       - Sergio Consoli

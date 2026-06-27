@@ -62,7 +62,7 @@ products:
     name: PanKBase Data Library API
     description: Programming interface for accessing contents of the PanKbase Data Portal
     category: ProgrammingInterface
-    product_url: https://pankbase-db.github.io/pankbase-client-openapi-spec/
+    product_url: https://pankbase.github.io/pankbase-client-openapi-spec/
     original_source:
       - source: pankbase
         relation_type: prov:hadPrimarySource
@@ -71,7 +71,7 @@ products:
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-03-17T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 ---
 
 PanKBase

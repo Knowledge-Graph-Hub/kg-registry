@@ -8912,8 +8912,10 @@ https://frink.apps.renci.org/sockg/sparql:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
 https://frink.apps.renci.org/spatialkg/sparql:
-  checked_at: '2026-06-25T15:59:09Z'
+  checked_at: '2026-06-27T00:00:00Z'
+  note: 'KnowWhereGraph SPARQL endpoint on FRINK: 200 with query, returns sparql-results+json'
   ok: true
+  status_code: 200
 https://frink.apps.renci.org/spoke-genelab/sparql:
   checked_at: '2026-06-25T15:59:09Z'
   ok: true
@@ -19010,11 +19012,12 @@ https://stko-kwg.geog.ucsb.edu/lod/ontology:
   source: cache
   status_code: 200
 https://stko-kwg.geog.ucsb.edu/sparql:
-  checked_at: '2026-06-27T13:24:56Z'
-  error: get 400
+  checked_at: '2026-06-27T00:00:00Z'
+  error: get 500
+  note: 'Dead SPARQL endpoint: 500 even with a real ?query; repointed to FRINK https://frink.apps.renci.org/spatialkg/sparql'
   ok: false
   source: cache
-  status_code: 400
+  status_code: 500
 https://storage.googleapis.com/translator-text-workflow-dev-public/:
   checked_at: '2026-06-02T22:38:08Z'
   error: null
