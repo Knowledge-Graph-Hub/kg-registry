@@ -25,7 +25,7 @@ domains:
 - pathways
 homepage_url: https://omnipathdb.org/
 id: omnipath
-last_modified_date: '2025-09-27T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: OmniPath
 products:
@@ -38,7 +38,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: omnipath
-  product_url: https://omnipathdb.org/queries
+  product_url: https://omnipathdb.org/info
 - category: ProgrammingInterface
   description: R/Bioconductor package (OmnipathR) for accessing and analyzing OmniPath
     data within the R statistical computing environment

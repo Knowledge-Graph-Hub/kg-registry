@@ -16,7 +16,7 @@ domains:
   - biological systems
 homepage_url: https://mangal.io/
 id: mangal
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -45,7 +45,7 @@ products:
     id: mangal.api
     is_public: true
     name: mangal.io API
-    product_url: https://api.mangal.io/
+    product_url: https://mangal.io/api/v2/
     original_source:
       - source: mangal
         relation_type: prov:hadPrimarySource
@@ -56,8 +56,6 @@ products:
         relation_type: prov:used
       - source: itis
         relation_type: prov:used
-    warnings:
-      - 'Host api.mangal.io was not resolvable when checked on 2026-06-02.'
   - category: DocumentationProduct
     description: API documentation, user guides, and data model specification
     format: http
