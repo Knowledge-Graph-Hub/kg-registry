@@ -13,8 +13,11 @@ domains:
 - biomedical
 homepage_url: https://repo-hub.broadinstitute.org/repurposing
 id: repohub
-last_modified_date: '2026-05-23T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 name: Drug Repurposing Hub
 products:
 - category: GraphicalInterface

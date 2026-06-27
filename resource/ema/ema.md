@@ -20,6 +20,10 @@ homepage_url: https://www.ema.europa.eu/
 id: ema
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ema.europa.eu/en/about-us/about-website/legal-notice
+  label: EMA legal notice - public information may be reproduced/distributed for
+    non-commercial and commercial purposes provided EMA is acknowledged as the source
 name: European Medicines Agency
 products:
 - category: GraphicalInterface

@@ -10,8 +10,11 @@ domains:
 - drug discovery
 homepage_url: https://www.inchi-trust.org/
 id: inchikey
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://github.com/IUPAC-InChI/InChI/blob/main/LICENSE
+  label: MIT License
 name: InChIKey
 products:
 - category: DocumentationProduct

@@ -22,11 +22,11 @@ domains:
 - information technology
 homepage_url: https://www.naaccr.org/
 id: naaccr
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://www.naaccr.org/data-standards-data-dictionary/
+  label: NAACCR copyright; see terms
 name: North American Association of Central Cancer Registries
 products:
 - category: GraphicalInterface

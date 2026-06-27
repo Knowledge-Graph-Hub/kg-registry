@@ -12,8 +12,11 @@ domains:
 - biological systems
 homepage_url: https://www.unicarbkb.org
 id: unicarbkb
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by-nc-nd/3.0/
+  label: CC BY-NC-ND 3.0
 name: UniCarbKB
 products:
 - category: GraphicalInterface

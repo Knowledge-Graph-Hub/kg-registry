@@ -17,10 +17,13 @@ domains:
 - pharmacology
 - clinical
 - biomedical
-homepage_url: https://www.fda.gov/cder/ob/default.htm
+homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book
 id: fda-orange-book
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.usa.gov/government-works
+  label: U.S. Government Work (public domain)
 name: FDA Orange Book
 products:
 - category: GraphicalInterface
