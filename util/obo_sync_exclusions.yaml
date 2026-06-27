@@ -52,3 +52,9 @@ exclude_products:
     - iao.dev.iao.owl
   ohd:
     - ohd.dev.ohd.owl
+  gallont:
+    - gallont.json
+  epio:
+    - epio.EPIO_merged.owl
+  cob:
+    - cob.cob-to-external.owl
