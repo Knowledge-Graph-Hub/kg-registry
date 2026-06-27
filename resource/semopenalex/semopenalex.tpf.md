@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SemOpenAlex
+format: http
 id: semopenalex.tpf
 name: SemOpenAlex TPF
 original_source:

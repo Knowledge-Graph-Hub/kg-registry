@@ -9,6 +9,6 @@ original_source:
   source: geneticskp
 - relation_type: prov:hadPrimarySource
   source: translator
-product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/
+product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/
 layout: product_detail
 ---

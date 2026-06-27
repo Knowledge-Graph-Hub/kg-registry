@@ -10,8 +10,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: mirdb
 product_url: https://mirdb.org/download.html
-warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

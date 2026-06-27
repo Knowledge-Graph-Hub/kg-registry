@@ -131,7 +131,6 @@ compartments,active,PASS
 compath,active,PASS
 complexportal,active,PASS
 connections-hypothesis-kp,active,PASS
-coralkinome,active,PASS
 corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
@@ -832,6 +831,7 @@ chembank,inactive,PASS
 chemid,inactive,PASS
 cmf,inactive,PASS
 connectivitymap,inactive,PASS
+coralkinome,inactive,PASS
 cord-19,inactive,PASS
 crd,unresponsive,PASS
 date,inactive,PASS
@@ -929,6 +929,7 @@ semmeddb,inactive,PASS
 sep,inactive,PASS
 sibo,orphaned,PASS
 sider,inactive,PASS
+simap,inactive,PASS
 sopharm,inactive,PASS
 stitch,inactive,PASS
 tads,inactive,PASS

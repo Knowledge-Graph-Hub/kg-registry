@@ -10,11 +10,11 @@ original_source:
   source: ctd2
 product_url: https://ctd2-dashboard.nci.nih.gov/
 warnings:
-- 'Dashboard host ctd2-dashboard.nci.nih.gov no longer resolves (no DNS record) as
+- Dashboard host ctd2-dashboard.nci.nih.gov no longer resolves (no DNS record) as
   checked on 2026-06-27; the standalone CTD2 Dashboard application appears to have
   been decommissioned. NCI has consolidated CTD2 data access into the Index of NCI
-  Studies / Study Catalog (https://studycatalog.cancer.gov), reachable via the CTD2
+  Studies / Study Catalog (https_//studycatalog.cancer.gov), reachable via the CTD2
   Data Portal product. No live replacement for the dashboard application itself was
-  found.'
+  found.
 layout: product_detail
 ---

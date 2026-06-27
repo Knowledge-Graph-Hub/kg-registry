@@ -403,11 +403,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -434,11 +434,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -468,11 +468,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -518,7 +518,8 @@ products:
   product_url: https://zenodo.org/records/8117748/files/relations.dict
 - category: Product
   description: Complete RepoDB dataset containing drug repositioning successes and
-    failures, with approved drugs, indications, and clinical trial outcomes
+    failures, with approved drugs, indications, and clinical trial outcomes. Distributed
+    as full.csv via the figshare deposit "repoDB (Final Database)" (DOI 10.6084/m9.figshare.3811674).
   format: csv
   id: repodb.full_dataset
   name: RepoDB Full Dataset
@@ -529,18 +530,8 @@ products:
     source: drugcentral
   - relation_type: prov:hadPrimarySource
     source: repodb
-  product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
+  product_file_size: 1029743
+  product_url: https://ndownloader.figshare.com/files/7341422
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -1615,9 +1606,14 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file. KG-Hub reorganization has taken the download offline; the
+    kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
+    (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
+    public download URL is available.'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
@@ -1659,9 +1655,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP

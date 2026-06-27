@@ -1012,9 +1012,13 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 500 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
+    when accessing file. The dbSNO 3.0 download page (download.php) renders its page
+    shell but the server errors before emitting download links; the rest of the site
+    (index.php, statistics.php) is live (200).'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
@@ -1572,11 +1576,13 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 - category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  format: mixed
+  description: Public SPARQL endpoint (OpenLink Virtuoso) providing query access to
+    the complete FORUM knowledge graph. The former credentialed FTP tarball dump (2021)
+    is no longer published; the SPARQL endpoint is the current canonical access point
+    for the full RDF graph.
+  format: http
   id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
+  name: FORUM Knowledge Graph SPARQL Endpoint
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chebi
@@ -1600,14 +1606,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: skos
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-25: FTP error: timed
-    out'
-  - 'File was not able to be retrieved when checked on 2026-06-26: FTP error: timed
-    out'
+  product_url: https://forum.semantic-metabolomics.fr/sparql
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file

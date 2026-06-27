@@ -2,15 +2,13 @@
 category: DocumentationProduct
 description: Annotation guidelines used with RLIMS-P protein phosphorylation literature-mining
   tasks.
-format: http
+format: pdf
 id: rlims-p.annotation-guidelines
 name: RLIMS-P Annotation Guidelines
 original_source:
 - relation_type: prov:hadPrimarySource
   source: rlims-p
-product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMS-P_AnnotationGuidelines.pdf
-warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ HTTP 404 error when
-  accessing file
+product_file_size: 189787
+product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMSP_guidelines.pdf
 layout: product_detail
 ---

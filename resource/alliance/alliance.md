@@ -98,9 +98,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
@@ -1693,6 +1693,7 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+  warnings: []
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx

@@ -1464,10 +1464,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''markerdb.ca'', port=443): Max retries exceeded
+    with url: /pages/download_all_chemicals?format=tsv (Caused by SSLError(SSLEOFError(8,
+    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
     for ChemIDplus substance records and annotations after the standalone NLM service
@@ -1495,9 +1497,9 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
@@ -2222,11 +2224,13 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
 - category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  format: mixed
+  description: Public SPARQL endpoint (OpenLink Virtuoso) providing query access to
+    the complete FORUM knowledge graph. The former credentialed FTP tarball dump (2021)
+    is no longer published; the SPARQL endpoint is the current canonical access point
+    for the full RDF graph.
+  format: http
   id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
+  name: FORUM Knowledge Graph SPARQL Endpoint
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chebi
@@ -2250,14 +2254,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: skos
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-25: FTP error: timed
-    out'
-  - 'File was not able to be retrieved when checked on 2026-06-26: FTP error: timed
-    out'
+  product_url: https://forum.semantic-metabolomics.fr/sparql
 - category: GraphProduct
   compression: zip
   description: Biomarker to Compound relationships (indicated_by_above_normal_level_of,

@@ -1521,6 +1521,7 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+  warnings: []
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -1673,7 +1674,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 publications:
 - authors:
-  - "\xD6zt\xFCrk-\xC7olak A"
+  - Öztürk-Çolak A
   - Marygold SJ
   - Antonazzo G
   - Attrill H

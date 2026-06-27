@@ -1,20 +1,15 @@
 ---
 category: Product
-compression: zip
-description: Free Induction Decay (FID) files from FooDB
-format: mixed
+description: FooDB downloads page listing the available bulk data archives, spectra,
+  peak lists, and supplementary files (including NMR Free Induction Decay data). The
+  previously listed direct FID archive (foodb_fid_files.zip) is no longer served by
+  the host, so this product points to the canonical downloads page.
+format: http
 id: foodb.data.fid
-name: FooDB FID Files
+name: FooDB Downloads
 original_source:
 - relation_type: prov:hadPrimarySource
   source: foodb
-product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
-warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-06-24_ HTTP 404 error when
-  accessing file
-- The FooDB downloads page lists this file, but the direct download URL returned HTTP
-  404 when checked on 2026-06-12.
+product_url: https://foodb.ca/downloads
 layout: product_detail
 ---

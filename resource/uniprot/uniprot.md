@@ -99,9 +99,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -3522,10 +3522,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized
@@ -3658,9 +3658,13 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 500 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
+    when accessing file. The dbSNO 3.0 download page (download.php) renders its page
+    shell but the server errors before emitting download links; the rest of the site
+    (index.php, statistics.php) is live (200).'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
@@ -4675,9 +4679,14 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file. KG-Hub reorganization has taken the download offline; the
+    kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
+    (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
+    public download URL is available.'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG

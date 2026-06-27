@@ -169,7 +169,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  product_url: https://api.mangal.io/
+  product_url: https://mangal.io/api/v2/
   secondary_source:
   - relation_type: prov:used
     source: catalogue-of-life
@@ -177,8 +177,6 @@ products:
     source: gbif
   - relation_type: prov:used
     source: itis
-  warnings:
-  - Host api.mangal.io was not resolvable when checked on 2026-06-02.
 - category: DocumentationProduct
   description: API documentation, user guides, and data model specification
   format: http

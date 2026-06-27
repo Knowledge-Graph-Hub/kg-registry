@@ -9,7 +9,7 @@ original_source:
   source: mo
 product_url: http://purl.obolibrary.org/obo/mo.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-26_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

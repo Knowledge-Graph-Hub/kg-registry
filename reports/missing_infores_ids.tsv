@@ -181,7 +181,7 @@ ecid	ECID	DataSource	https://www.ecidbase.org/	resource/ecid/ecid.md
 eco-kg	eco-KG	KnowledgeGraph	https://github.com/Knowledge-Graph-Hub/eco-kg	resource/eco-kg/eco-kg.md
 ecocore	An ontology of core ecological entities	Ontology	https://github.com/EcologicalSemantics/ecocore	resource/ecocore/ecocore.md
 ecocyc	EcoCyc	DataSource	https://ecocyc.org/	resource/ecocyc/ecocyc.md
-ecosim	ecosim	Resource	http://purl.obolibrary.org/obo/ecosim.owl	resource/ecosim/ecosim.md
+ecosim	ecosim	Resource	https://github.com/bioepic-data/ecosim-ontology	resource/ecosim/ecosim.md
 edam	EDAM Ontology	Ontology	https://edamontology.org/	resource/edam/edam.md
 effas-kpi	EFFAS KPIs for ESG	DataModel	https://effas.com/	resource/effas-kpi/effas-kpi.md
 efip	eFIP	DataSource	http://proteininformationresource.org/efip	resource/efip/efip.md
@@ -230,7 +230,7 @@ fantom5	FANTOM5	DataSource	https://fantom.gsc.riken.jp/5/	resource/fantom5/fanto
 fao	Fungal gross anatomy	Ontology	https://github.com/obophenotype/fungal-anatomy-ontology/	resource/fao/fao.md
 fbbi	Biological Imaging Methods Ontology	Ontology	https://github.com/foundingGIDE/fbbi	resource/fbbi/fbbi.md
 fbsp	Fly taxonomy	Ontology	http://www.flybase.org/	resource/fbsp/fbsp.md
-fda-orange-book	FDA Orange Book	DataSource	https://www.fda.gov/cder/ob/default.htm	resource/fda-orange-book/fda-orange-book.md
+fda-orange-book	FDA Orange Book	DataSource	https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book	resource/fda-orange-book/fda-orange-book.md
 fideo	Food Interactions with Drugs Evidence Ontology	Ontology	https://gitub.u-bordeaux.fr/erias/fideo	resource/fideo/fideo.md
 finngen	FinnGen	DataSource	https://www.finngen.fi/en	resource/finngen/finngen.md
 fiokg	SAWGraph FRS KG	KnowledgeGraph	https://sawgraph.github.io/	resource/fiokg/fiokg.md
@@ -399,7 +399,7 @@ mirdb	miRDB	DataSource	https://mirdb.org/	resource/mirdb/mirdb.md
 mirgenedb	MirGeneDB	DataSource		resource/mirgenedb/mirgenedb.md
 mirnao	microRNA Ontology	Ontology	http://code.google.com/p/mirna-ontology/	resource/mirnao/mirnao.md
 miro	Mosquito insecticide resistance	Ontology	http://purl.obolibrary.org/obo/miro.owl	resource/miro/miro.md
-mirtarbase	miRTarBase	DataSource		resource/mirtarbase/mirtarbase.md
+mirtarbase	miRTarBase	DataSource	https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/index.php	resource/mirtarbase/mirtarbase.md
 mixs	MIxS	DataModel	https://w3id.org/mixs	resource/mixs/mixs.md
 mmo	Measurement method ontology	Ontology	https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000	resource/mmo/mmo.md
 mmrrc	Mutant Mouse Resource and Research Centers	DataSource	https://www.mmrrc.org/	resource/mmrrc/mmrrc.md
@@ -411,7 +411,7 @@ molecular-data-kp	MolePro	KnowledgeGraph	https://github.com/broadinstitute/molec
 motifmap	MotifMap	DataSource	https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-495	resource/motifmap/motifmap.md
 motrpac	Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub	DataSource	https://motrpac-data.org/	resource/motrpac/motrpac.md
 mpio	Minimum PDDI Information Ontology	Ontology	https://github.com/MPIO-Developers/MPIO	resource/mpio/mpio.md
-mrbase	MR-Base	DataSource	https://www.mrbase.org/	resource/mrbase/mrbase.md
+mrbase	MR-Base	DataSource	https://gwas.mrcieu.ac.uk/	resource/mrbase/mrbase.md
 mro	MHC Restriction Ontology	Ontology	https://github.com/IEDB/MRO	resource/mro/mro.md
 ms	Mass spectrometry ontology	Ontology	http://www.psidev.info/groups/controlled-vocabularies	resource/ms/ms.md
 mtbs	Monitoring Trends in Burn Severity	DataSource	https://www.mtbs.gov/	resource/mtbs/mtbs.md
@@ -554,7 +554,7 @@ progeny	PROGENy	DataSource	https://saezlab.github.io/progeny/	resource/progeny/p
 prokn	Protein Knowledge Network	KnowledgeGraph	https://research.bioinformatics.udel.edu/ProKN/	resource/prokn/prokn.md
 propreo	Proteomics data and process provenance	Ontology	http://lsdis.cs.uga.edu/projects/glycomics/propreo/	resource/propreo/propreo.md
 prosite	PROSITE	DataSource	https://prosite.expasy.org/	resource/prosite/prosite.md
-protcid	ProtCID	DataSource	http://dunbrack2.fccc.edu/protcid/	resource/protcid/protcid.md
+protcid	ProtCID	DataSource	https://dunbrack2.fccc.edu/ProtCiD/Default.aspx	resource/protcid/protcid.md
 proteomehd	ProteomeHD	DataSource	https://github.com/Rappsilber-Laboratory/ProteomeHD	resource/proteomehd/proteomehd.md
 proteomicsdb	ProteomicsDB	DataSource	https://www.proteomicsdb.org/	resource/proteomicsdb/proteomicsdb.md
 proteopedia	Proteopedia	DataSource	https://proteopedia.org/	resource/proteopedia/proteopedia.md
@@ -618,11 +618,11 @@ sfld	Structure-Function Linkage Database	DataSource	http://sfld.rbvi.ucsf.edu/	r
 sibils	SIBiLS	DataSource	https://sibils.org/	resource/sibils/sibils.md
 sibo	Social Insect Behavior Ontology	Ontology	https://github.com/obophenotype/sibo	resource/sibo/sibo.md
 silva	SILVA	DataSource	https://www.arb-silva.de/	resource/silva/silva.md
-simap	SIMAP	DataSource		resource/simap/simap.md
+simap	SIMAP	DataSource	http://mips.helmholtz-muenchen.de/simap/	resource/simap/simap.md
 sio	Semanticscience Integrated Ontology	Ontology	https://semanticscience.org/	resource/sio/sio.md
 skm	Stress Knowledge Map	KnowledgeGraph	https://skm.nib.si/	resource/skm/skm.md
 skos	SKOS	DataModel	https://www.w3.org/2004/02/skos/	resource/skos/skos.md
-sldb	sldb	KnowledgeGraph	https://kghub.io/sldb/	resource/sldb/sldb.md
+sldb	sldb	KnowledgeGraph	https://github.com/monarch-initiative/SLDBGen	resource/sldb/sldb.md
 slso	Space Life Sciences Ontology	Ontology	https://github.com/nasa/LSDAO	resource/slso/slso.md
 smart	SMART	DataSource	https://smart.embl.de/	resource/smart/smart.md
 snodb	snoDB	DataSource	https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/	resource/snodb/snodb.md

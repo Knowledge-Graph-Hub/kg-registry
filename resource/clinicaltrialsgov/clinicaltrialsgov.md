@@ -251,7 +251,8 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
 - category: Product
   description: Complete RepoDB dataset containing drug repositioning successes and
-    failures, with approved drugs, indications, and clinical trial outcomes
+    failures, with approved drugs, indications, and clinical trial outcomes. Distributed
+    as full.csv via the figshare deposit "repoDB (Final Database)" (DOI 10.6084/m9.figshare.3811674).
   format: csv
   id: repodb.full_dataset
   name: RepoDB Full Dataset
@@ -262,18 +263,8 @@ products:
     source: drugcentral
   - relation_type: prov:hadPrimarySource
     source: repodb
-  product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
+  product_file_size: 1029743
+  product_url: https://ndownloader.figshare.com/files/7341422
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
   format: http

@@ -1,18 +1,18 @@
 {
   "citations": {
     "publication_entries_total": 812,
-    "publication_entries_with_issues": 0,
-    "resources_with_citation_issues": 0,
+    "publication_entries_with_issues": 10,
+    "resources_with_citation_issues": 9,
     "resources_without_publications": 356,
-    "validation_errors": 0,
-    "validation_warnings": 0
+    "validation_errors": 2,
+    "validation_warnings": 18
   },
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 842,
+    "modified_after_creation": 843,
     "stale_over_365_days": 1,
-    "unchanged_since_creation": 112,
+    "unchanged_since_creation": 111,
     "with_both_dates": 954
   },
   "detail_lists": {
@@ -20,24 +20,54 @@
       "aao",
       "aao.owl",
       "adw.owl",
+      "afo",
+      "afo.release",
+      "alphafold.docs",
       "bila",
       "bind",
+      "bio2rdf",
       "bio2rdf.biosearch",
+      "bio2rdf.dumps",
+      "bio2rdf.sparql",
+      "bio2rdf.web",
+      "biobtree.api",
+      "biomarkerkg.site",
+      "bioplanet",
       "bootstrep",
       "bootstrep.owl",
       "cam-kp.sparql",
+      "cellmarker.act",
+      "cellmarker.all",
+      "cellmarker.human",
+      "cellmarker.mouse",
+      "cellmarker.singlecell",
+      "cellphonedb.database",
       "cfde-gse",
       "chemont",
       "cmf.owl",
+      "complexportal.human.psi30",
+      "complexportal.psi30",
       "coralkinome",
       "ctd2.dashboard",
+      "dbpedia.ontology",
       "dbsno.downloads",
+      "dbsuper",
+      "dbsuper.downloads",
+      "dbsuper.site",
       "dc_cl",
       "dc_cl.owl",
       "dinto",
+      "disprot.api",
       "ehda",
-      "ekg.browser",
+      "encode",
+      "encode.annotations",
+      "encode.api",
+      "encode.experiment-matrix",
+      "encode.portal",
       "enrichr-kg",
+      "ensembl",
+      "ensembl.blast",
+      "ensembl.browser",
       "entrez.edirect",
       "eo.obo",
       "eo.owl",
@@ -45,13 +75,46 @@
       "ero",
       "ev.obo",
       "ev.owl",
+      "faers",
+      "faers.electronic_submissions",
       "faldo",
+      "fda-orange-book",
+      "fda-orange-book.data-files",
+      "fda-orange-book.preface",
+      "fda-orange-book.search",
       "fix.obo",
+      "foodb",
+      "foodb.data.csv",
+      "foodb.data.experimental_cms",
+      "foodb.data.experimental_cms_peak_lists",
+      "foodb.data.experimental_msms",
+      "foodb.data.experimental_msms_peak_lists",
+      "foodb.data.fid",
+      "foodb.data.images",
+      "foodb.data.json",
+      "foodb.data.mysql",
+      "foodb.data.nmr",
+      "foodb.data.nmr_peak_lists",
+      "foodb.data.predicted_cms",
+      "foodb.data.predicted_cms_peak_lists",
+      "foodb.data.predicted_msms",
+      "foodb.data.predicted_msms_peak_lists",
+      "foodb.data.xml",
+      "foodb.web",
       "foodon_core.owl",
-      "forum.graph.dump",
-      "geneticskp.trapi",
+      "gad",
+      "gbif.maps-api",
+      "glytoucan.api",
+      "gnps.docs",
+      "greengenes",
+      "greengenes.portal",
       "habronattus",
       "hancestro-base.owl",
+      "harmonizome",
+      "harmonizome.documentation",
+      "harmonizome.downloads",
+      "harmonizome.kg-api",
+      "harmonizome.portal",
       "hpidb",
       "hpidb.mitab",
       "hpidb.portal",
@@ -63,28 +126,51 @@
       "hprd.xml.download",
       "icd10",
       "idisk",
+      "ido",
       "iev",
       "imr",
       "inoh",
       "inoh.pathways",
+      "irefindex",
+      "kegg.disease",
+      "kegg.genes",
+      "kegg.orthology",
       "kg-alzheimers.graph",
       "kg-covid-19.graph",
       "kg-idg.graph",
       "lincs-l1000",
+      "lipidmaps",
+      "lipidmaps.docs",
+      "lipidmaps.lmsd",
       "lncipedia",
       "loggerhead",
-      "mamo.owl",
       "mangal.api",
       "mao",
-      "mfo.owl",
+      "markerdb",
+      "markerdb.api",
+      "markerdb.chemicals.tsv",
+      "markerdb.downloads",
+      "markerdb.proteins.tsv",
+      "markerdb.web",
+      "matador",
+      "maudekg",
+      "medgen.readme",
       "mirgate",
       "mirgate.api",
       "mirgate.portal",
       "mirnao.owl",
       "mo.owl",
+      "mod",
+      "motifmap.portal",
+      "mpath",
+      "nasa-gesdisc-kg",
+      "ncro",
+      "ndcd",
       "netpath",
       "netpath.pathways",
       "nmr.owl",
+      "noaa-ncei",
+      "noaa-ncei.ibtracs",
       "obo_rel",
       "ogg",
       "ogg.owl",
@@ -96,6 +182,7 @@
       "oma.mapping.refseq",
       "oma.protein-annotations.txt",
       "oma.proteins.fasta",
+      "omit",
       "otol.tnrs",
       "otol.tree-browser",
       "pankbase",
@@ -116,27 +203,48 @@
       "proton",
       "psygenet.psygenet2r",
       "pubchem",
+      "pubchem.bioassay.asn",
+      "pubchem.bioassay.xml",
+      "pubchem.compounds.asn",
+      "pubchem.compounds.sdf",
+      "rapdb",
+      "rapdb.downloads",
+      "rapdb.portal",
       "rdbridge",
       "rdbridge.webinterface",
-      "repodb.full_dataset",
+      "reliefweb.api",
+      "remap",
+      "remap.api",
+      "remap.downloads",
+      "remap.portal",
       "resid",
       "resid.owl",
+      "rnainter",
+      "rnainter.web",
       "sao",
       "sao.owl",
-      "scibite.hgnc",
+      "semopenalex.tpf",
       "simap",
       "simap.portal",
       "skos",
       "slso-base.owl",
+      "snodb.rrna-modifications",
+      "snodb.rrna-mods",
+      "snodb.statistics",
+      "snodb.tutorial",
       "sopharm",
+      "spd",
       "spoke",
       "spoke-okn",
+      "ssurgo.download",
       "startgeo",
       "startgeo.portal",
       "tahe.obo",
       "tahe.owl",
       "tahh.obo",
       "tahh.owl",
+      "tarbase.statistics",
+      "txpo",
       "vsao",
       "zea"
     ],
@@ -1004,10 +1112,10 @@
       "aeolus.standardized_data",
       "aero",
       "aero.owl",
+      "afcs",
       "afcs.intact.mitab",
-      "afo",
+      "afcs.molecule-pages",
       "afo.ontobee",
-      "afo.release",
       "afpo",
       "afpo.owl",
       "agro",
@@ -1024,9 +1132,20 @@
       "alliance.openapi",
       "alliance.portal",
       "alliance.textpresso",
+      "alphafold",
+      "alphafold.api",
+      "alphafold.downloads",
+      "alphafold.web",
+      "alphamissense",
+      "alphamissense.docs",
+      "alphamissense.predictions",
+      "alphamissense.software",
+      "alphamissense.viewer",
       "alzkb",
       "alzkb.browser",
       "alzkb.data",
+      "aminode",
+      "aminode.site",
       "amphx",
       "amphx.obo",
       "amphx.owl",
@@ -1057,6 +1176,9 @@
       "aragorn",
       "aragorn.api",
       "aragorn.ui",
+      "araport",
+      "araport.araport11",
+      "araport.thalemine",
       "arax",
       "arax.api",
       "arax.araxi.docs",
@@ -1112,9 +1234,15 @@
       "automat.stringdb",
       "automat.ubergraph",
       "bacdive",
+      "bacdive.api",
+      "bacdive.client_examples",
       "bacdive.portal",
       "bactotraits",
       "bactotraits.database",
+      "bao",
+      "bao.complete-owl",
+      "bao.core-owl",
+      "bao.website",
       "batman",
       "batman.web",
       "bcgo",
@@ -1160,9 +1288,6 @@
       "bio101",
       "bio2rdf",
       "bio2rdf.api",
-      "bio2rdf.dumps",
-      "bio2rdf.sparql",
-      "bio2rdf.web",
       "biobricks-aopwiki",
       "biobricks-aopwiki.sparql",
       "biobricks-aopwiki.tpf",
@@ -1181,6 +1306,11 @@
       "biobricks-toxcast",
       "biobricks-toxcast.sparql",
       "biobricks-toxcast.tpf",
+      "biobtree",
+      "biobtree.docs",
+      "biobtree.graph.human-subgraph",
+      "biobtree.mcp",
+      "biobtree.qa",
       "biocyc",
       "biofactoid",
       "biofactoid.api",
@@ -1224,14 +1354,12 @@
       "biomarkerkg.nodes.condition",
       "biomarkerkg.nodes.role",
       "biomarkerkg.nodes.variant",
-      "biomarkerkg.site",
       "biomarkerkg.sparql",
       "biomarkerkg.tpf",
       "biomuta",
       "biomuta.dataset",
       "biomuta.pipeline",
       "biomuta.portal",
-      "bioplanet",
       "bioportal.api",
       "bioportal.portal",
       "bioteque",
@@ -1242,6 +1370,11 @@
       "biothings.api-specs",
       "biothings.portal",
       "biothings.sdk",
+      "bitterdb",
+      "bitterdb.site",
+      "bluesky",
+      "bluesky.code",
+      "bluesky.portal",
       "bmont",
       "bmont.BMONT.owl",
       "brenda",
@@ -1294,11 +1427,25 @@
       "catalogue-of-life.documentation",
       "catalogue-of-life.downloads",
       "catalogue-of-life.web",
+      "ccf",
+      "ccf.owl",
       "ccle",
       "ccle.datasets",
       "ccle.docs",
+      "ccre",
+      "ccre.screen",
       "cdao",
       "cdao.owl",
+      "cdc-places",
+      "cdc-places.datasets",
+      "cdc-places.portal",
+      "cdc-svi",
+      "cdc-svi.data",
+      "cdc-svi.map",
+      "cdd",
+      "cdd.cdsearch",
+      "cdd.downloads",
+      "cdd.site",
       "cdiscvocab",
       "cdiscvocab.adam",
       "cdiscvocab.browser",
@@ -1320,11 +1467,6 @@
       "cebs.data",
       "cebs.web",
       "cellmarker",
-      "cellmarker.act",
-      "cellmarker.all",
-      "cellmarker.human",
-      "cellmarker.mouse",
-      "cellmarker.singlecell",
       "cellosaurus",
       "cellosaurus.api.rest",
       "cellosaurus.api.sparql",
@@ -1332,6 +1474,11 @@
       "cellosaurus.site",
       "cellosaurus.txt",
       "cellosaurus.xml",
+      "cellosaurus.xrefs",
+      "cellphonedb",
+      "cellphonedb.docs",
+      "cellphonedb.package",
+      "cellphonedb.web",
       "cellxgene",
       "cellxgene.census",
       "cellxgene.datasets",
@@ -1369,6 +1516,9 @@
       "chebi.obo",
       "chebi.owl",
       "chebi.owl.gz",
+      "chembank",
+      "chembank.publication",
+      "chembank.wayback",
       "chembl",
       "chembl.api",
       "chembl.map_to_uniprot",
@@ -1512,6 +1662,10 @@
       "colao",
       "colao.obo",
       "colao.owl",
+      "collectri",
+      "collectri.decoupler",
+      "collectri.docs",
+      "collectri.regulons",
       "compartments.downloads",
       "compartments.portal",
       "compath",
@@ -1539,7 +1693,6 @@
       "complexportal.human.predicted.psi25",
       "complexportal.human.predicted.psi30",
       "complexportal.human.psi25",
-      "complexportal.human.psi30",
       "complexportal.id-translation",
       "complexportal.lamprey.complextab",
       "complexportal.leishmania.complextab",
@@ -1550,7 +1703,6 @@
       "complexportal.pig.complextab",
       "complexportal.portal",
       "complexportal.psi25",
-      "complexportal.psi30",
       "complexportal.pufferfish.takifugu.complextab",
       "complexportal.pufferfish.tetraodon.complextab",
       "complexportal.rabbit.complextab",
@@ -1571,6 +1723,9 @@
       "connections-hypothesis-kp.code",
       "connections-hypothesis-kp.smartapi",
       "connectivitymap",
+      "cord-19",
+      "cord-19.corpus",
+      "cord-19.landing",
       "corum",
       "corum.all_complexes",
       "corum.core_complexes",
@@ -1601,6 +1756,8 @@
       "cqs",
       "cqs.code",
       "cqs.docs",
+      "craft",
+      "craft.site",
       "credit",
       "credit.spec",
       "creeds.automatic_disease_signatures",
@@ -1613,6 +1770,8 @@
       "creeds.web_interface",
       "cro",
       "cro.owl",
+      "cropland-data-layer",
+      "cropland-data-layer.croplandcros",
       "ctd",
       "ctd2",
       "ctd2.data-portal",
@@ -1627,6 +1786,10 @@
       "ctrp",
       "ctrp.data",
       "ctrp.portal",
+      "cureid",
+      "cureid.about",
+      "cureid.app",
+      "cureid.explore",
       "cvdo",
       "cvdo.owl",
       "cvx",
@@ -1643,6 +1806,7 @@
       "dailymed.website",
       "darkkinasekb",
       "darkkinasekb.compounds",
+      "darkkinasekb.expression",
       "darkkinasekb.github",
       "darkkinasekb.interactions",
       "darkkinasekb.portal",
@@ -1652,7 +1816,6 @@
       "date.archive",
       "dbpedia",
       "dbpedia.latest-core",
-      "dbpedia.ontology",
       "dbpedia.portal",
       "dbpedia.sparql",
       "dbptm",
@@ -1665,6 +1828,9 @@
       "dbsnp.json",
       "dbsnp.site",
       "dbsnp.variation.api",
+      "dbvar",
+      "dbvar.ftp",
+      "dbvar.portal",
       "dc",
       "dc.classes",
       "dc.dcmitype_rdf",
@@ -1676,6 +1842,8 @@
       "dcat",
       "dcat.spec",
       "dcat.ttl",
+      "dcdb",
+      "dcdb.publication",
       "dct",
       "dct.rdf",
       "dct.spec",
@@ -1687,6 +1855,9 @@
       "ddpheno",
       "ddpheno.obo",
       "ddpheno.owl",
+      "decipher",
+      "decipher.downloads",
+      "decipher.web",
       "depmap",
       "depmap.api",
       "depmap.cell_line_info",
@@ -1705,6 +1876,9 @@
       "depmap.target_discovery",
       "dgidb",
       "dgidb.api",
+      "dgv",
+      "dgv.downloads",
+      "dgv.site",
       "dictybase",
       "dictybase.annotations.gff",
       "dictybase.genome.browser",
@@ -1741,7 +1915,6 @@
       "disgenet.browser",
       "disgenet.data",
       "disprot",
-      "disprot.api",
       "disprot.browser",
       "disprot.deposition",
       "disprot.downloads",
@@ -1834,6 +2007,7 @@
       "ecocyc.api",
       "ecocyc.metabolic_model",
       "ecocyc.web",
+      "ecosim",
       "ecto",
       "ecto.ecto-base.json",
       "ecto.ecto-base.obo",
@@ -1845,6 +2019,9 @@
       "edam.csv",
       "edam.owl",
       "edam.tsv",
+      "effas-kpi",
+      "effas-kpi.document",
+      "effas-kpi.landing",
       "efip",
       "efip.text-mining-system",
       "efo",
@@ -1877,6 +2054,7 @@
       "ekg.sparql",
       "ekg.ttl",
       "ema",
+      "ema.article-57",
       "ema.medicine-data",
       "ema.medicines",
       "emap",
@@ -1911,10 +2089,12 @@
       "ena.ftp",
       "ena.training",
       "encode",
-      "encode.annotations",
-      "encode.api",
-      "encode.experiment-matrix",
-      "encode.portal",
+      "endb",
+      "endb.browse",
+      "endb.download",
+      "enhanceratlas",
+      "enhanceratlas.browse",
+      "enhanceratlas.download",
       "enrichr",
       "enrichr-kg",
       "enrichr-kg.api",
@@ -1929,8 +2109,6 @@
       "ensembl.api.perl",
       "ensembl.api.rest",
       "ensembl.biomart",
-      "ensembl.blast",
-      "ensembl.browser",
       "ensembl.vep",
       "entrez",
       "entrez.edirect",
@@ -1950,10 +2128,17 @@
       "eol-traitbank.cypher",
       "eol-traitbank.docs",
       "eol-traitbank.reconciliation",
+      "eol-traitbank.web",
+      "epa-aqs",
+      "epa-aqs.api",
+      "epa-aqs.landing",
       "epa-srs",
       "epa-srs.about",
       "epa-srs.search",
       "epa-srs.widget",
+      "epd",
+      "epd.downloads",
+      "epd.site",
       "epigraphdb",
       "epigraphdb.api",
       "epigraphdb.docs",
@@ -1991,6 +2176,7 @@
       "eupathdb.apollo",
       "eupathdb.docs",
       "eupathdb.downloads",
+      "eupathdb.mapveu",
       "eupathdb.portal",
       "ev",
       "evlncrnas",
@@ -2014,18 +2200,21 @@
       "exo.obo",
       "exo.owl",
       "expressionatlas",
+      "expressionatlas.api",
       "expressionatlas.baseline-summary",
       "expressionatlas.differential-results",
       "expressionatlas.documentation",
       "expressionatlas.experiment-downloads",
       "expressionatlas.ftp-bulk",
       "expressionatlas.portal",
+      "expressionatlas.r-objects",
       "expressionatlas.single-cell",
       "fabio",
       "fabio.documentation",
       "fabio.ttl",
-      "faers",
-      "faers.electronic_submissions",
+      "fabric",
+      "fabric.genes",
+      "fabric.site",
       "faers.faq",
       "faers.public_dashboard",
       "faers.quarterly_data_ascii",
@@ -2034,6 +2223,11 @@
       "faldo.browser",
       "faldo.rdf",
       "faldo.ttl",
+      "fantom5",
+      "fantom5.atlas",
+      "fantom5.docs",
+      "fantom5.sstar",
+      "fantom5.zenbu",
       "fao",
       "fao.obo",
       "fao.owl",
@@ -2060,10 +2254,6 @@
       "fbdv.owl",
       "fbsp",
       "fbsp.owl",
-      "fda-orange-book",
-      "fda-orange-book.data-files",
-      "fda-orange-book.preface",
-      "fda-orange-book.search",
       "fideo",
       "fideo.owl",
       "finngen",
@@ -2074,6 +2264,8 @@
       "fiokg",
       "fiokg.sparql",
       "fiokg.tpf",
+      "fire",
+      "fire.publication",
       "fix",
       "fix.owl",
       "flopo",
@@ -2091,27 +2283,11 @@
       "fma.owl",
       "fobi",
       "fobi.owl",
-      "foodb",
-      "foodb.data.csv",
-      "foodb.data.experimental_cms",
-      "foodb.data.experimental_cms_peak_lists",
-      "foodb.data.experimental_msms",
-      "foodb.data.experimental_msms_peak_lists",
-      "foodb.data.images",
-      "foodb.data.json",
-      "foodb.data.mysql",
-      "foodb.data.nmr",
-      "foodb.data.nmr_peak_lists",
-      "foodb.data.predicted_cms",
-      "foodb.data.predicted_cms_peak_lists",
-      "foodb.data.predicted_msms",
-      "foodb.data.predicted_msms_peak_lists",
-      "foodb.data.xml",
-      "foodb.web",
       "foodon",
       "foodon.owl",
       "forum",
       "forum.api",
+      "forum.graph.dump",
       "forum.void",
       "forum.webapp",
       "fovt",
@@ -2122,6 +2298,11 @@
       "fypo",
       "fypo.obo",
       "fypo.owl",
+      "gad.publication",
+      "gadm",
+      "gadm.download_country",
+      "gadm.download_world",
+      "gadm.metadata",
       "gallont",
       "gallont.obo",
       "gallont.owl",
@@ -2143,6 +2324,7 @@
       "gdc.data-transfer-tool",
       "gdc.portal",
       "gdsc",
+      "gdsc.site",
       "gecko",
       "gecko.owl",
       "gelinea",
@@ -2194,6 +2376,8 @@
       "genemania.cytoscape-app",
       "genemania.networks",
       "genemania.web",
+      "geneorganizer",
+      "geneorganizer.site",
       "genepio",
       "genepio.owl",
       "geneprof",
@@ -2205,6 +2389,9 @@
       "geneticskp.trapi",
       "geno",
       "geno.owl",
+      "genomernai",
+      "genomernai.downloads",
+      "genomernai.site",
       "genomickb",
       "genomickb.graph",
       "genomickb.site",
@@ -2283,17 +2470,19 @@
       "glygen.data.site",
       "glygen.site",
       "glytoucan",
-      "glytoucan.api",
       "glytoucan.portal",
       "glytoucan.sparql",
       "gnbr",
       "gnbr.graph",
+      "gnis",
+      "gnis.download",
+      "gnis.linkeddata",
+      "gnis.search",
       "gno",
       "gno.json",
       "gno.obo",
       "gno.owl",
       "gnps",
-      "gnps.docs",
       "gnps.portal",
       "gnps.spectral_libraries",
       "go",
@@ -2302,12 +2491,14 @@
       "go-cam.browser",
       "go-cam.linkml-schema",
       "go-cam.minerva",
+      "go-cam.model",
       "go-cam.noctua",
       "go.amigo",
       "go.api",
       "go.extensions.go-plus.json",
       "go.extensions.go-plus.owl",
       "go.extensions.go-taxon-groupings.owl",
+      "go.extensions.go-taxon-subsets.owl",
       "go.go-base.owl",
       "go.go-basic.json",
       "go.go-basic.obo",
@@ -2330,13 +2521,18 @@
       "goa.uniprot",
       "goldterms",
       "goldterms.bioportal",
+      "goldterms.data.owl",
+      "goldterms.definitions.yaml",
+      "gomapman",
+      "gomapman.portal",
       "gp-kg",
       "gp-kg.graph",
       "gp-kg.process.kg-predict",
+      "greenclaims",
+      "greenclaims.dataset",
       "greengenes",
       "greengenes.ftp",
       "greengenes.phylogeny",
-      "greengenes.portal",
       "greengenes.qiime2-plugin",
       "greengenes.sequences",
       "greengenes.taxonomy",
@@ -2381,6 +2577,7 @@
       "gwascatalog",
       "gwascatalog.api",
       "gwascatalog.associations.owl",
+      "gwascatalog.associations.tsv",
       "gwascatalog.diagram.current",
       "gwascatalog.studies.tsv",
       "gwascatalog.summary_statistics.ftp",
@@ -2402,12 +2599,8 @@
       "hao.obo",
       "hao.owl",
       "harmonizome",
-      "harmonizome.documentation",
-      "harmonizome.downloads",
-      "harmonizome.kg-api",
       "harmonizome.kg-neo4j",
       "harmonizome.kg-portal",
-      "harmonizome.portal",
       "hetionet",
       "hetionet.data.edges",
       "hetionet.data.json",
@@ -2417,6 +2610,9 @@
       "hetionet.search",
       "hetnetpy",
       "hgnc",
+      "hifld",
+      "hifld.api",
+      "hifld.catalog",
       "hippie",
       "hippie.current.mitab",
       "hippie.current.tab",
@@ -2448,6 +2644,10 @@
       "hmdb.xml.metabolites.sweat",
       "hmdb.xml.metabolites.urine",
       "hmdb.xml.proteins",
+      "hocomoco",
+      "hocomoco.core-pwms",
+      "hocomoco.downloads",
+      "hocomoco.full-pwms",
       "hom",
       "hom.owl",
       "homologene",
@@ -2504,6 +2704,8 @@
       "hra.knowledge-graph",
       "hra.portal",
       "hravs",
+      "hravs.graph.json",
+      "hravs.graph.ttl",
       "hrpimp",
       "hrpimp.data",
       "hrpimp.huri.psi",
@@ -2596,6 +2798,9 @@
       "imex",
       "imex.downloads",
       "imex.portal",
+      "imgt",
+      "imgt.genedb",
+      "imgt.site",
       "imodulondb",
       "imodulondb.browser",
       "imodulondb.datasets",
@@ -2645,6 +2850,9 @@
       "interpro.uniparc_match",
       "interpro.web",
       "interpro.xml",
+      "inxight-drugs",
+      "inxight-drugs.api",
+      "inxight-drugs.portal",
       "ipr",
       "iproclass",
       "iproclass.pir-docs",
@@ -2663,27 +2871,32 @@
       "itis.mysql_tables",
       "itis.portal",
       "itis.sqlite",
+      "jaspar",
+      "jaspar.api",
+      "jaspar.docs",
+      "jaspar.matrices",
+      "jaspar.web",
       "kegg",
       "kegg.annotation",
       "kegg.api",
       "kegg.blastkoala",
       "kegg.brite",
       "kegg.compound",
-      "kegg.disease",
       "kegg.drug",
-      "kegg.genes",
       "kegg.genome",
       "kegg.glycan",
       "kegg.mapper",
       "kegg.medicus",
       "kegg.module",
-      "kegg.orthology",
       "kegg.pathway",
       "kegg.pathway.kgml",
       "kegg.reaction",
       "kegg.syntax",
       "kegg.web",
       "kegg.webapps",
+      "kentucky-cancer-registry",
+      "kentucky-cancer-registry.cancer-rates",
+      "kentucky-cancer-registry.research",
       "kg-alzheimers",
       "kg-covid-19",
       "kg-ebi-gene2pheno",
@@ -2721,6 +2934,8 @@
       "kg-monarch.associations.all",
       "kg-monarch.associations.causal_gene_to_disease",
       "kg-monarch.associations.chemical_or_drug_to_disease",
+      "kg-monarch.associations.chemical_to_disease",
+      "kg-monarch.associations.chemical_to_pathway",
       "kg-monarch.associations.correlated_gene_to_disease",
       "kg-monarch.associations.disease_to_inheritance",
       "kg-monarch.associations.disease_to_location",
@@ -2752,8 +2967,11 @@
       "kg-monarch.phenio.semsql",
       "kg-monarch.solr",
       "kg-predict",
+      "kg-predict.ad_nct_evidence",
+      "kg-predict.ad_predictions",
       "kg-predict.code",
       "kg-predict.gpkg",
+      "kg-predict.raw_data",
       "kg4sl",
       "kg4sl.code",
       "kg4sl.synlethkg",
@@ -2802,10 +3020,18 @@
       "lincs-l1000.geo",
       "lincs.api",
       "lincs.portal",
+      "lipidmaps",
+      "lipidmaps.api",
+      "lipidmaps.gateway",
       "litvar",
       "litvar.api",
       "litvar.api_documentation",
       "litvar.web_interface",
+      "lmha",
+      "lmha.browser",
+      "lmha.graph.ttl",
+      "lmha.graph.xml",
+      "lmha.source.owl",
       "lncbase",
       "lncbase.correlation-viz",
       "lncbase.expression-viz",
@@ -2816,6 +3042,7 @@
       "lncbook.classification",
       "lncbook.conservation",
       "lncbook.conversion",
+      "lncbook.downloads",
       "lncbook.expression",
       "lncbook.interaction",
       "lncbook.lgc",
@@ -2828,6 +3055,8 @@
       "lncrnadb.export",
       "lncrnadb.portal",
       "lncrnadb.search",
+      "lncrnadisease",
+      "lncrnadisease.site",
       "lncrnalyzr",
       "lncrnalyzr.api",
       "lncrnalyzr.portal",
@@ -2837,32 +3066,35 @@
       "loinc.complete",
       "loinc.principles",
       "loinc.web",
+      "louisiana-tumor-registry",
+      "louisiana-tumor-registry.data-request",
       "m-csa",
       "m-csa.download",
       "m-csa.portal",
       "ma",
       "ma.obo",
       "ma.owl",
+      "maizegdb",
+      "maizegdb.downloads",
+      "maizegdb.gene_model_gff",
+      "maizegdb.maizemine",
       "malacards.archive",
       "malacards.categories",
       "malacards.portal",
       "malacards.search",
       "mamo",
+      "mamo.owl",
       "mangal",
       "mangal.docs",
       "mangal.portal",
       "mangal.rmangal",
-      "markerdb",
-      "markerdb.api",
-      "markerdb.chemicals.tsv",
-      "markerdb.downloads",
       "markerdb.karyotypes.tsv",
-      "markerdb.proteins.tsv",
       "markerdb.sequence_variants.tsv",
-      "markerdb.web",
       "massive",
       "massive.docs",
       "massive.portal",
+      "matador.publication",
+      "maudekg.sparql",
       "maudekg.tpf",
       "maxo",
       "maxo.json",
@@ -2913,7 +3145,6 @@
       "medgen.portal",
       "medgen.presentations",
       "medgen.pubmed-links",
-      "medgen.readme",
       "medgen.search",
       "medgen.sources",
       "medgen.uid-cui-history",
@@ -2966,9 +3197,18 @@
       "metanetx",
       "metanetx.mnxref.metabolites",
       "metanetx.mnxref.reactions",
+      "metanetx.rdf",
       "metanetx.site",
       "metanetx.sparql",
       "metatraits",
+      "metatraits.gtdb.family-summary",
+      "metatraits.gtdb.genus-summary",
+      "metatraits.gtdb.species-summary",
+      "metatraits.gtdb2ncbi",
+      "metatraits.ncbi.family-summary",
+      "metatraits.ncbi.genus-summary",
+      "metatraits.ncbi.species-summary",
+      "metatraits.ncbi2gtdb",
       "metatraits.site",
       "metatraits.traits",
       "metpo",
@@ -2977,6 +3217,7 @@
       "mf.owl",
       "mfmo",
       "mfmo.owl",
+      "mfo.owl",
       "mfoem",
       "mfoem.owl",
       "mfomd",
@@ -3040,6 +3281,9 @@
       "mirbase.readme",
       "mirbase.rno-gff3",
       "mirbase.tissue-search",
+      "mirdb",
+      "mirdb.predicted-targets",
+      "mirdb.search",
       "mirgenedb.bulk",
       "mirgenedb.covariance",
       "mirgenedb.info",
@@ -3062,6 +3306,10 @@
       "mmo",
       "mmo.obo",
       "mmo.owl",
+      "mmrrc",
+      "mmrrc.api",
+      "mmrrc.catalog",
+      "mmrrc.data-download",
       "mmusdv",
       "mmusdv.obo",
       "mmusdv.owl",
@@ -3102,6 +3350,7 @@
       "mondo.sssom",
       "mop",
       "mop.owl",
+      "motifmap",
       "motrpac",
       "motrpac.code-repositories",
       "motrpac.data-access",
@@ -3131,6 +3380,8 @@
       "mpath.owl",
       "mpio",
       "mpio.owl",
+      "mrbase",
+      "mrbase.api",
       "mrbase.home",
       "mrbase.mrinstruments",
       "mrbase.paper.reproducibility",
@@ -3151,6 +3402,9 @@
       "msigdb.downloads.mouse",
       "msigdb.gene_families",
       "msigdb.investigate",
+      "mtbs",
+      "mtbs.direct-download",
+      "mtbs.viewer",
       "multiomics-kp.code",
       "multiomics-kp.docs",
       "mutationds",
@@ -3160,13 +3414,15 @@
       "myaura.graph",
       "myaura.portal",
       "myaura.workflow",
+      "naaccr",
+      "naaccr.data-dictionary",
+      "naaccr.standards",
       "namsnetwork",
       "namsnetwork.portal",
       "nanopublications",
       "nanopublications.docs",
       "nanopublications.portal",
       "nanopublications.servers",
-      "nasa-gesdisc-kg",
       "nasa-gesdisc-kg.sparql",
       "nasa-gesdisc-kg.tpf",
       "nbo",
@@ -3178,6 +3434,19 @@
       "ncbi.datasets-api",
       "ncbi.gc",
       "ncbigene",
+      "ncbigene.gene2accession",
+      "ncbigene.gene2ensembl",
+      "ncbigene.gene2go",
+      "ncbigene.gene2pubmed",
+      "ncbigene.gene2refseq",
+      "ncbigene.gene_group",
+      "ncbigene.gene_history",
+      "ncbigene.gene_info",
+      "ncbigene.gene_neighbors",
+      "ncbigene.gene_orthologs",
+      "ncbigene.gene_refseq_uniprotkb_collab",
+      "ncbigene.gene_summary",
+      "ncbigene.mim2gene_medgen",
       "ncbigene.search",
       "ncbitaxon",
       "ncbitaxon.json",
@@ -3193,7 +3462,6 @@
       "ncit.owl",
       "ncro",
       "ncro.dev.ncro.owl",
-      "ndcd",
       "ndcd.api",
       "ndcd.excel",
       "ndcd.search",
@@ -3213,9 +3481,18 @@
       "nextprot.sparql",
       "ngbo",
       "ngbo.owl",
+      "nhpn",
+      "nhpn.geojson",
+      "nhpn.shp",
       "nif_cell",
+      "nif_cell.ttl",
       "nif_dysfunction",
+      "nif_dysfunction.ttl",
       "nif_grossanatomy",
+      "nif_grossanatomy.ttl",
+      "nifc",
+      "nifc.fire-perimeters",
+      "nifc.portal",
       "nihreporter",
       "nihreporter.abstracts",
       "nihreporter.api",
@@ -3233,12 +3510,21 @@
       "nlm-ckn.schema",
       "nlm.portal",
       "nmr",
+      "noaa-hms",
+      "noaa-hms.fire-points",
+      "noaa-hms.smoke-polygons",
+      "noaa-ncei.data-search",
+      "noaa-ncei.storm-events",
       "nomen",
       "nomen.owl",
       "noncode",
       "noncode.blast",
       "noncode.browse",
+      "noncode.conservation",
+      "noncode.disease",
       "noncode.download",
+      "noncode.function",
+      "noncode.genome-browser",
       "noncode.id-conversion",
       "noncode.portal",
       "noncode.search",
@@ -3266,6 +3552,8 @@
       "oba.obo",
       "oba.owl",
       "oba.subsets.oba-basic.obo",
+      "obci",
+      "obci.owl",
       "obcs",
       "obcs.owl",
       "obi",
@@ -3632,12 +3920,14 @@
       "oma",
       "oma.api.rest",
       "oma.api.sparql",
+      "oma.hdf5",
       "oma.hogs.orthoxml",
       "oma.mapping.ensembl",
       "oma.mapping.entrez",
       "oma.mapping.go",
       "oma.mapping.uniprot",
       "oma.rdf",
+      "oma.site",
       "oma.species.txt",
       "omiabis",
       "omiabis.owl",
@@ -3659,6 +3949,7 @@
       "omnipath.pypath",
       "omnipath.python_client",
       "omnipath.r_package",
+      "omnipath.webservice",
       "omo",
       "omo.owl",
       "omp",
@@ -3687,9 +3978,13 @@
       "open-tree-of-life",
       "openbiodiv",
       "openbiodiv.api",
+      "openbiodiv.ontology.guide",
       "openbiodiv.ontology.ttl",
       "openbiodiv.portal",
       "openbiodiv.sparql",
+      "openfema",
+      "openfema.api",
+      "openfema.datasets",
       "opengwas",
       "opengwas.api",
       "opengwas.datasets",
@@ -3701,6 +3996,7 @@
       "openpredict.ui",
       "opentargets",
       "opentargets.api.graphql",
+      "opentargets.api.rest",
       "opentargets.platform",
       "opl",
       "opl.owl",
@@ -3711,10 +4007,14 @@
       "orcid.docs",
       "orcid.portal",
       "ordo",
+      "ordo.owl",
       "ordo.sparql",
+      "oreganno",
+      "oreganno.ucsc",
       "oregano",
       "oregano.docs",
       "oregano.graph",
+      "oregano.sparql",
       "orkg",
       "orkg.api",
       "orkg.api-docs",
@@ -3749,8 +4049,17 @@
       "orphanet.researchprojectsnetworks",
       "orphanet.scientific_knowledge_files",
       "orthodb",
+      "orthodb.aa_fasta",
+      "orthodb.api.rest",
       "orthodb.api.sparql",
+      "orthodb.cds_fasta",
+      "orthodb.gene_xrefs",
+      "orthodb.genes",
+      "orthodb.og2genes",
+      "orthodb.og_xrefs",
+      "orthodb.ogs",
       "orthodb.site",
+      "orthodb.species",
       "otol.api",
       "otol.bulk-download",
       "otol.documentation",
@@ -3761,11 +4070,14 @@
       "owlsim.owltools",
       "owlsim.rest",
       "owlsim.v3",
+      "oxo",
+      "oxo.portal",
       "p3db",
       "p3db.datasets",
       "p3db.portal",
       "p3db.ptm-search",
       "pankbase",
+      "pankbase.api",
       "pankbase.graph.api",
       "pankbase.graph.site",
       "pankgraph",
@@ -3809,6 +4121,9 @@
       "patric.bv_brc_overview",
       "patric.genomes",
       "patric.web",
+      "paxdb",
+      "paxdb.downloads",
+      "paxdb.site",
       "pbpko",
       "pbpko.owl",
       "pcl",
@@ -3931,6 +4246,10 @@
       "phenio",
       "phenio.graph",
       "phenio.model",
+      "phenomebrowser",
+      "phenomebrowser.web",
+      "phenopacket-store",
+      "phenopacket-store.release",
       "phewascat",
       "phewascat.associations",
       "phewascat.phecodes",
@@ -3982,6 +4301,9 @@
       "pirbase.rno-sequences",
       "pirbase.tools",
       "pirbase.tutorial",
+      "pirsf",
+      "pirsf.downloads",
+      "pirsf.site",
       "pistoia-pgo",
       "pistoia-pgo.core_concepts",
       "pistoia-pgo.core_concepts_csv",
@@ -4002,6 +4324,8 @@
       "plant-reactome.portal",
       "plant-reactome.sbgn",
       "plant-reactome.svg",
+      "planteome",
+      "planteome.browser",
       "planteome.po",
       "plncdb",
       "plncdb.blast",
@@ -4058,6 +4382,8 @@
       "prism.portal",
       "prism.primary_screen_lfc",
       "prism.secondary_screen_dose_response",
+      "probe-miner",
+      "probe-miner.website",
       "proco",
       "proco.owl",
       "progenomes",
@@ -4175,6 +4501,11 @@
       "prokn.tpf",
       "prokn.uniprotkb.protein.has_site.site.edges",
       "prokn.uniprotkb.protein.has_variant.variant.edges",
+      "prosite",
+      "prosite.downloads",
+      "prosite.scanprosite",
+      "prosite.site",
+      "protcid",
       "protcid.database",
       "protcid.docs",
       "protcid.site",
@@ -4183,6 +4514,11 @@
       "proteomehd.intact_interactions",
       "proteomehd.reactome_tp_fp",
       "proteomehd.uniprot_annotations",
+      "proteomicsdb",
+      "proteomicsdb.api",
+      "proteomicsdb.site",
+      "proteopedia",
+      "proteopedia.site",
       "proton",
       "proton.browser",
       "proton.documentation",
@@ -4210,10 +4546,6 @@
       "ptmd.upregulation_pda",
       "ptmd.web",
       "pubchem",
-      "pubchem.bioassay.asn",
-      "pubchem.bioassay.xml",
-      "pubchem.compounds.asn",
-      "pubchem.compounds.sdf",
       "pubchem.pug.rest",
       "pubchem.substances.asn",
       "pubchem.substances.sdf",
@@ -4278,17 +4610,18 @@
       "reconx.model",
       "reconx.vmh",
       "rediportal.portal",
+      "redrugs",
+      "redrugs.source",
       "redu",
       "redu.dashboard",
       "redu.docs",
       "refseq",
       "regl",
       "regl.docs",
-      "remap",
-      "remap.api",
-      "remap.downloads",
-      "remap.portal",
+      "reliefweb",
+      "reliefweb.site",
       "repodb",
+      "repodb.full_dataset",
       "repodb.web_interface",
       "repohub",
       "repohub.about",
@@ -4313,6 +4646,7 @@
       "rex",
       "rex.owl",
       "rfam",
+      "rfam.api",
       "rfam.cm-models",
       "rfam.docs",
       "rfam.fasta",
@@ -4354,6 +4688,7 @@
       "ribovision.twincons",
       "ribovision.user-upload-guide",
       "rlims-p",
+      "rlims-p.annotation-guidelines",
       "rlims-p.portal",
       "rlims-p.text-mining-service",
       "rna-kg",
@@ -4367,8 +4702,6 @@
       "rnacentral.public-db",
       "rnadisease",
       "rnadisease.web",
-      "rnainter",
-      "rnainter.web",
       "rnao",
       "rnao.obo",
       "rnao.owl",
@@ -4393,6 +4726,8 @@
       "rtx-kg2.graph.edges",
       "rtx-kg2.graph.nodes",
       "rtx-kg2.neo4j",
+      "rural-urban-continuum-codes",
+      "rural-urban-continuum-codes.ers-page",
       "ruralkg",
       "ruralkg.sparql",
       "ruralkg.tpf",
@@ -4422,6 +4757,8 @@
       "sckan.data_release",
       "sckan.docs",
       "sckan.query_interface",
+      "scop",
+      "scop.site",
       "securechainkg",
       "securechainkg.sparql",
       "securechainkg.tpf",
@@ -4430,6 +4767,8 @@
       "semmeddb.semrep.tool",
       "semopenalex",
       "semopenalex.sparql",
+      "semrep",
+      "semrep.homepage",
       "sennet",
       "sennet.api",
       "sennet.data",
@@ -4441,8 +4780,13 @@
       "service-kp.code",
       "service-kp.docs",
       "service-kp.portal",
+      "sfld",
+      "sfld.site",
       "sgd",
       "sibils",
+      "sibils.api.rest.fetch",
+      "sibils.api.rest.qa",
+      "sibils.api.rest.search",
       "sibils.api.sparql",
       "sibils.site",
       "sibo",
@@ -4478,9 +4822,14 @@
       "sio.owl",
       "skm",
       "skm.ckn.explorer",
+      "skm.ckn.v1.annotations",
+      "skm.ckn.v1.graph",
+      "skm.ckn.v2.annotations",
+      "skm.ckn.v2.graph",
       "skm.pss.explorer",
       "skm.pss.live.boolnet.annotations",
       "skm.pss.live.boolnet.graph",
+      "skm.pss.live.dot",
       "skm.pss.live.sbgn",
       "skm.pss.live.sbml",
       "skm.pss.live.sif.dinar.graph",
@@ -4519,13 +4868,9 @@
       "snodb.noncanonical-interactions",
       "snodb.portal",
       "snodb.protein-interactions",
-      "snodb.rrna-modifications",
-      "snodb.rrna-mods",
       "snodb.sequence-search",
       "snodb.sequences",
       "snodb.snorupdate",
-      "snodb.statistics",
-      "snodb.tutorial",
       "snomedct",
       "snomedct.browser",
       "snomedct.icd10cm.map",
@@ -4569,6 +4914,8 @@
       "sockg",
       "sockg.sparql",
       "sockg.tpf",
+      "sopharm.obo",
+      "sopharm.owl",
       "spatialkg",
       "spatialkg.sparql",
       "spatialkg.tpf",
@@ -4630,6 +4977,8 @@
       "srpdb.srp72",
       "srpdb.srp9",
       "srpdb.structures",
+      "ssurgo",
+      "ssurgo.websoilsurvey",
       "stato",
       "stato.owl",
       "stellar",
@@ -4679,6 +5028,10 @@
       "suppkg",
       "suppkg.docs",
       "suppkg.source-data",
+      "surechembl",
+      "surechembl.bulk-data",
+      "surechembl.docs",
+      "surechembl.search",
       "swisslipid",
       "swisslipid.api",
       "swisslipid.enzymes",
@@ -4698,6 +5051,9 @@
       "symp",
       "symp.obo",
       "symp.owl",
+      "t3db",
+      "t3db.downloads",
+      "t3db.portal",
       "t4fs",
       "t4fs.json",
       "t4fs.obo",
@@ -4711,13 +5067,13 @@
       "tao",
       "tao.owl",
       "tarbase",
+      "tarbase.downloads-doc",
       "tarbase.help",
       "tarbase.homo-sapiens",
       "tarbase.interactions",
       "tarbase.mus-musculus",
       "tarbase.other-species",
       "tarbase.portal",
-      "tarbase.statistics",
       "tarbase.textmining",
       "tarbase.viral",
       "tarbase.visualizations",
@@ -4746,6 +5102,8 @@
       "tcga.gdc_submission",
       "tcrd",
       "tcrd.api",
+      "tcrd.database_download",
+      "tcrd.documentation",
       "tera",
       "tera.cas-to-mesh-csv",
       "tera.chebi-to-mesh-csv",
@@ -4763,6 +5121,8 @@
       "tera.zenodo-dataset",
       "text-mining-kp",
       "text-mining-kp.graph",
+      "tfacts",
+      "tfacts.publication",
       "tgma",
       "tgma.obo",
       "tgma.owl",
@@ -4773,6 +5133,12 @@
       "tissues.downloads",
       "tissues.search",
       "tissues.web",
+      "tmrnawebsite",
+      "tmrnawebsite.alignments",
+      "tmrnawebsite.blast",
+      "tmrnawebsite.krona-viewer",
+      "tmrnawebsite.portal",
+      "tmrnawebsite.software",
       "to",
       "to.obo",
       "to.owl",
@@ -4780,6 +5146,7 @@
       "topmed.data-access",
       "topmed.portal",
       "topmed.wgs-counts",
+      "toxcast.api",
       "toxcast.downloads",
       "toxcast.portal",
       "toxin",
@@ -4817,6 +5184,17 @@
       "translator.translator_kg.graph",
       "translator.ttd.graph",
       "translator.ubergraph.graph",
+      "treatkb",
+      "treatkb.publication",
+      "tred",
+      "tred.docs",
+      "treefam",
+      "treefam.downloads",
+      "treefam.site",
+      "trrust",
+      "trrust.human.tsv",
+      "trrust.mouse.tsv",
+      "trrust.web",
       "try",
       "try.portal",
       "ttd",
@@ -4861,6 +5239,13 @@
       "ubkg.csv",
       "ubkg.guesdt",
       "ubkg.neo4j",
+      "ucnebase",
+      "ucnebase.site",
+      "ucsc",
+      "ucsc.api",
+      "ucsc.browser",
+      "ucsc.downloads",
+      "ucsc.tablebrowser",
       "uf-okn",
       "uf-okn.code",
       "uf-okn.portal",
@@ -4928,6 +5313,15 @@
       "upheno.mp-hp-view.owl",
       "upheno.owl",
       "upheno.v2.upheno.owl",
+      "us-census",
+      "us-census.api",
+      "us-census.data",
+      "usdm",
+      "usdm.data",
+      "usdm.map",
+      "usgs-comcat",
+      "usgs-comcat.fdsnws",
+      "usgs-comcat.search",
       "vario",
       "vario.obo",
       "vario.owl",
@@ -4938,10 +5332,15 @@
       "vbo.vbo-base.json",
       "vbo.vbo-base.obo",
       "vbo.vbo-base.owl",
+      "vccf",
+      "vccf.explorer",
       "vectology",
       "vectology.api",
       "vectology.docs",
       "vhog.owl",
+      "vista",
+      "vista.data",
+      "vista.site",
       "vo",
       "vo.owl",
       "vsao.owl",
@@ -4994,6 +5393,8 @@
       "wikipathways.web",
       "wikipedia",
       "wikipedia.api",
+      "wikipedia.dumps.enwiki.current",
+      "wikipedia.dumps.enwiki.history",
       "wikipedia.portal",
       "wikipedia.rest",
       "wikispecies",
@@ -5004,6 +5405,8 @@
       "wildlifekn.portal",
       "wildlifekn.sparql",
       "wildlifekn.tpf",
+      "wipo-tkp",
+      "wipo-tkp.portal",
       "wormbase",
       "wormbase.api",
       "wormbase.ftp",
@@ -5011,6 +5414,7 @@
       "wormbase.parasite",
       "wormbase.portal",
       "wormbase.textpresso",
+      "wormbase.wormmine",
       "xao",
       "xao.obo",
       "xao.owl",
@@ -7108,13 +7512,11 @@
       "clue",
       "cm4ai_talent_kg",
       "cmaup",
-      "cog",
       "cohd",
       "compath",
       "connectivitymap",
       "coralkinome",
       "cpathkg",
-      "cpdb",
       "cqs",
       "crd",
       "ctd2",
@@ -7145,7 +7547,6 @@
       "efip",
       "eggnog",
       "ehrlink",
-      "ema",
       "emerge",
       "emind",
       "ena",
@@ -7154,14 +7555,12 @@
       "epd",
       "epsd",
       "eqtlgen",
-      "eram",
       "eupathdb",
       "evlncrnas",
       "evoweb",
       "fabio",
       "fabric",
       "faers",
-      "fda-orange-book",
       "fiokg",
       "flybase",
       "forum",
@@ -7174,7 +7573,6 @@
       "gene-expression-atlas-okn",
       "gene2phenotype",
       "genebass",
-      "genecards",
       "genemania",
       "geneorganizer",
       "geneprof",
@@ -7207,7 +7605,6 @@
       "iid",
       "imodulondb",
       "impc",
-      "inchikey",
       "insight",
       "iproclass",
       "irefindex",
@@ -7324,7 +7721,6 @@
       "redu",
       "refseq",
       "regl",
-      "repohub",
       "retriever",
       "rgd",
       "ribocentre",
@@ -7376,7 +7772,6 @@
       "ucnebase",
       "uf-okn",
       "ufokn",
-      "unicarbkb",
       "unii",
       "vectology",
       "vista",
@@ -8372,6 +8767,7 @@
       "mutationds",
       "mw",
       "myaura",
+      "naaccr",
       "namsnetwork",
       "nanopublications",
       "nasa-gesdisc-kg",
@@ -13657,74 +14053,121 @@
     ],
     "resource_with_broken_links_ids": [
       "aao",
+      "achilles",
       "adw",
+      "afo",
       "alliance",
       "alphafold",
+      "alphamissense",
       "atc",
+      "bao",
       "bgee",
       "bila",
       "bind",
+      "bindingdb",
       "bio2rdf",
+      "biobtree",
+      "biogps",
       "biogrid",
-      "bioportal",
+      "biomarkerkg",
+      "bioplanet",
       "bootstrep",
+      "brenda",
       "cam-kp",
       "catalogue-of-life",
       "ccle",
+      "cellmarker",
       "cellphonedb",
+      "cellxgene",
       "cfde-gse",
+      "chea",
       "chebi",
       "chembl",
-      "cheminf",
       "chemont",
-      "cito",
+      "cl",
       "clinicaltrialsgov",
+      "clinvar",
+      "cmap",
       "cmf",
+      "collectri",
+      "compartments",
+      "complexportal",
       "coralkinome",
       "cord-19",
+      "corum",
+      "cosmic",
       "ctd",
       "ctd2",
       "ctrp",
+      "dbpedia",
       "dbsno",
+      "dbsnp",
       "dbsuper",
-      "dc",
       "dc_cl",
+      "depmap",
       "dictybase",
       "dinto",
       "dip",
+      "diseases",
+      "disgenet",
+      "disprot",
       "drugbank",
       "drugcentral",
+      "eco",
+      "efo",
       "ehda",
+      "encode",
       "enrichr-kg",
+      "ensembl",
       "entrez",
       "eo",
       "epo",
       "ero",
       "ev",
-      "fabio",
+      "expressionatlas",
+      "faers",
       "faldo",
+      "fantom5",
+      "fda-orange-book",
       "fix",
       "flybase",
+      "foodb",
       "foodon",
+      "gad",
       "gbif",
       "gdsc",
-      "geonames",
+      "gencc",
+      "geo",
+      "glygen",
+      "glytoucan",
+      "gnps",
       "go",
+      "greengenes",
+      "gtex",
+      "gwascatalog",
       "habronattus",
       "hancestro",
+      "harmonizome",
       "hgnc",
-      "hocomoco",
+      "hmdb",
       "hp",
       "hpa",
       "hpidb",
       "hprd",
+      "hubmap",
       "icd10",
       "idisk",
+      "ido",
       "iev",
+      "impc",
       "imr",
       "inoh",
       "intact",
+      "interpro",
+      "irefindex",
       "itis",
+      "jaspar",
+      "kegg",
       "kg-alzheimers",
       "kg-covid-19",
       "kg-idg",
@@ -13732,18 +14175,33 @@
       "lipidmaps",
       "lncipedia",
       "loggerhead",
-      "mamo",
+      "mangal",
       "mao",
+      "markerdb",
+      "matador",
+      "maudekg",
+      "medgen",
       "mesh",
-      "mfo",
       "mgi",
       "mint",
+      "mirdb",
       "mirgate",
       "mirnao",
+      "mirtarbase",
       "mo",
+      "mod",
       "monarchinitiative",
       "mondo",
+      "motifmap",
+      "motrpac",
+      "mp",
+      "mpath",
+      "msigdb",
+      "nasa-gesdisc-kg",
       "ncbigene",
+      "ncbitaxon",
+      "ncro",
+      "ndcd",
       "netpath",
       "nmr",
       "noaa-ncei",
@@ -13754,16 +14212,22 @@
       "oio",
       "oma",
       "omim",
+      "omit",
       "open-tree-of-life",
       "orphanet",
       "pankbase",
       "panther",
       "pao",
+      "pathwaycommons",
       "pd_st",
+      "pdb",
+      "pfocr",
       "pgdso",
+      "pharmacodb",
       "pharmgkb",
       "pharos",
       "phenio",
+      "phosphositeplus",
       "pid",
       "plant-reactome",
       "plo",
@@ -13779,32 +14243,59 @@
       "rdbridge",
       "reactome",
       "refseq",
+      "reliefweb",
+      "remap",
       "resid",
       "rgd",
+      "rhea",
+      "rnacentral",
+      "rnainter",
       "sao",
+      "semopenalex",
       "sgd",
+      "signor",
       "simap",
       "skos",
       "slso",
+      "snodb",
       "sopharm",
+      "spd",
       "spoke",
       "spoke-okn",
       "ssurgo",
       "startgeo",
       "string",
+      "surechembl",
+      "swisslipid",
       "tahe",
       "tahh",
+      "tarbase",
+      "tcga",
       "tcrd",
-      "translator",
+      "tissues",
       "ttd",
+      "txpo",
+      "uberon",
       "uniprot",
       "vsao",
-      "who",
+      "wikipathways",
+      "wikipedia",
+      "wikispecies",
       "xenbase",
       "zea",
       "zfin"
     ],
-    "resources_with_citation_issue_ids": [],
+    "resources_with_citation_issue_ids": [
+      "catalogue-of-life",
+      "ccre",
+      "cfde-gse",
+      "cropland-data-layer",
+      "emapa",
+      "hubmap",
+      "obis",
+      "ontoneo",
+      "skos"
+    ],
     "resources_without_products_ids": [
       "bio101",
       "ehda",
@@ -14220,7 +14711,6 @@
       "foodb.data.predicted_msms",
       "foodb.data.predicted_msms_peak_lists",
       "foodon_core.owl",
-      "forum.graph.dump",
       "globi.citations.csv",
       "globi.datasets.csv",
       "globi.fields.json",
@@ -14228,7 +14718,6 @@
       "globi.refuted_interactions.csv",
       "globi.refuted_verbatim_interactions.csv",
       "globi.verbatim_interactions.csv",
-      "gnps.spectral_libraries",
       "go.extensions.go-plus.json",
       "go.go-basic.json",
       "go.json",
@@ -14247,13 +14736,11 @@
       "hprd.tsv.download",
       "hprd.xml.download",
       "inoh.pathways",
-      "kg-alzheimers.graph",
       "kg-covid-19.graph",
       "kg-idg.graph",
       "lipidmaps.docs",
       "lipidmaps.lmsd",
       "markerdb.chemicals.tsv",
-      "markerdb.karyotypes.tsv",
       "markerdb.proteins.tsv",
       "markerdb.sequence_variants.tsv",
       "metanetx.mnxref.metabolites",
@@ -14295,10 +14782,8 @@
       "propreo.owl",
       "psygenet.psygenet2r",
       "rapdb.downloads",
-      "repodb.full_dataset",
       "resid.owl",
       "sao.owl",
-      "scibite.hgnc",
       "simap.portal",
       "slso-base.owl",
       "ssurgo.download",
@@ -14383,7 +14868,6 @@
       "mmrrc",
       "motifmap",
       "mtbs",
-      "naaccr",
       "nhpn",
       "nifc",
       "noaa-hms",
@@ -14434,445 +14918,30 @@
       "wipo-tkp",
       "zwd"
     ],
-    "unchecked_link_page_ids": [
-      "afcs",
-      "afcs.molecule-pages",
-      "alphafold",
-      "alphafold.api",
-      "alphafold.docs",
-      "alphafold.downloads",
-      "alphafold.web",
-      "alphamissense",
-      "alphamissense.docs",
-      "alphamissense.predictions",
-      "alphamissense.software",
-      "alphamissense.viewer",
-      "aminode",
-      "aminode.site",
-      "araport",
-      "araport.araport11",
-      "araport.thalemine",
-      "bacdive",
-      "bacdive.api",
-      "bacdive.client_examples",
-      "bao",
-      "bao.complete-owl",
-      "bao.core-owl",
-      "bao.website",
-      "biobtree",
-      "biobtree.api",
-      "biobtree.docs",
-      "biobtree.graph.human-subgraph",
-      "biobtree.mcp",
-      "biobtree.qa",
-      "bitterdb",
-      "bitterdb.site",
-      "bluesky",
-      "bluesky.code",
-      "bluesky.portal",
-      "ccf",
-      "ccf.owl",
-      "ccre",
-      "ccre.screen",
-      "cdc-places",
-      "cdc-places.datasets",
-      "cdc-places.portal",
-      "cdc-svi",
-      "cdc-svi.data",
-      "cdc-svi.map",
-      "cdd",
-      "cdd.cdsearch",
-      "cdd.downloads",
-      "cdd.site",
-      "cellosaurus.xrefs",
-      "cellphonedb",
-      "cellphonedb.database",
-      "cellphonedb.docs",
-      "cellphonedb.package",
-      "cellphonedb.web",
-      "chembank",
-      "chembank.publication",
-      "chembank.wayback",
-      "collectri",
-      "collectri.decoupler",
-      "collectri.docs",
-      "collectri.regulons",
-      "cord-19",
-      "cord-19.corpus",
-      "cord-19.landing",
-      "craft",
-      "craft.site",
-      "cropland-data-layer",
-      "cropland-data-layer.croplandcros",
-      "cureid",
-      "cureid.about",
-      "cureid.app",
-      "cureid.explore",
-      "darkkinasekb.expression",
-      "dbsuper",
-      "dbsuper.downloads",
-      "dbsuper.site",
-      "dbvar",
-      "dbvar.ftp",
-      "dbvar.portal",
-      "dcdb",
-      "dcdb.publication",
-      "decipher",
-      "decipher.downloads",
-      "decipher.web",
-      "dgv",
-      "dgv.downloads",
-      "dgv.site",
-      "ecosim",
-      "effas-kpi",
-      "effas-kpi.document",
-      "effas-kpi.landing",
-      "ekg.sparql",
-      "ema.article-57",
-      "endb",
-      "endb.browse",
-      "endb.download",
-      "enhanceratlas",
-      "enhanceratlas.browse",
-      "enhanceratlas.download",
-      "eol-traitbank",
-      "eol-traitbank.web",
-      "epa-aqs",
-      "epa-aqs.api",
-      "epa-aqs.landing",
-      "epd",
-      "epd.downloads",
-      "epd.site",
-      "eupathdb.mapveu",
-      "expressionatlas.api",
-      "expressionatlas.r-objects",
-      "fabric",
-      "fabric.genes",
-      "fabric.site",
-      "fantom5",
-      "fantom5.atlas",
-      "fantom5.docs",
-      "fantom5.sstar",
-      "fantom5.zenbu",
-      "fire",
-      "fire.publication",
-      "foodb.data.fid",
-      "forum.graph.dump",
-      "gad",
-      "gad.publication",
-      "gadm",
-      "gadm.download_country",
-      "gadm.download_world",
-      "gadm.metadata",
-      "gbif.maps-api",
-      "gdsc",
-      "gdsc.site",
-      "geneorganizer",
-      "geneorganizer.site",
-      "genomernai",
-      "genomernai.downloads",
-      "genomernai.site",
-      "gnis",
-      "gnis.download",
-      "gnis.linkeddata",
-      "gnis.search",
-      "go-cam.model",
-      "go.extensions.go-taxon-subsets.owl",
-      "goldterms.data.owl",
-      "goldterms.definitions.yaml",
-      "gomapman",
-      "gomapman.portal",
-      "greenclaims",
-      "greenclaims.dataset",
-      "gwascatalog.associations.tsv",
-      "hifld",
-      "hifld.api",
-      "hifld.catalog",
-      "hocomoco",
-      "hocomoco.core-pwms",
-      "hocomoco.downloads",
-      "hocomoco.full-pwms",
-      "hravs",
-      "hravs.graph.json",
-      "hravs.graph.ttl",
-      "imgt",
-      "imgt.genedb",
-      "imgt.site",
-      "inxight-drugs",
-      "inxight-drugs.api",
-      "inxight-drugs.portal",
-      "irefindex",
-      "jaspar",
-      "jaspar.api",
-      "jaspar.docs",
-      "jaspar.matrices",
-      "jaspar.web",
-      "kentucky-cancer-registry",
-      "kentucky-cancer-registry.cancer-rates",
-      "kentucky-cancer-registry.research",
-      "kg-monarch",
-      "kg-monarch.associations.chemical_to_disease",
-      "kg-monarch.associations.chemical_to_pathway",
-      "kg-predict.ad_nct_evidence",
-      "kg-predict.ad_predictions",
-      "kg-predict.raw_data",
-      "lipidmaps",
-      "lipidmaps.api",
-      "lipidmaps.docs",
-      "lipidmaps.gateway",
-      "lipidmaps.lmsd",
-      "lmha",
-      "lmha.browser",
-      "lmha.graph.ttl",
-      "lmha.graph.xml",
-      "lmha.source.owl",
-      "lncbook.downloads",
-      "lncrnadisease",
-      "lncrnadisease.site",
-      "louisiana-tumor-registry",
-      "louisiana-tumor-registry.data-request",
-      "maizegdb",
-      "maizegdb.downloads",
-      "maizegdb.gene_model_gff",
-      "maizegdb.maizemine",
-      "mangal.api",
-      "matador",
-      "matador.publication",
-      "maudekg",
-      "maudekg.sparql",
-      "metanetx.rdf",
-      "metatraits",
-      "metatraits.gtdb.family-summary",
-      "metatraits.gtdb.genus-summary",
-      "metatraits.gtdb.species-summary",
-      "metatraits.gtdb2ncbi",
-      "metatraits.ncbi.family-summary",
-      "metatraits.ncbi.genus-summary",
-      "metatraits.ncbi.species-summary",
-      "metatraits.ncbi2gtdb",
-      "mirdb",
-      "mirdb.predicted-targets",
-      "mirdb.search",
-      "mmrrc",
-      "mmrrc.api",
-      "mmrrc.catalog",
-      "mmrrc.data-download",
-      "motifmap",
-      "motifmap.portal",
-      "mrbase",
-      "mrbase.api",
-      "mtbs",
-      "mtbs.direct-download",
-      "mtbs.viewer",
-      "naaccr",
-      "naaccr.data-dictionary",
-      "naaccr.standards",
-      "ncbigene",
-      "ncbigene.gene2accession",
-      "ncbigene.gene2ensembl",
-      "ncbigene.gene2go",
-      "ncbigene.gene2pubmed",
-      "ncbigene.gene2refseq",
-      "ncbigene.gene_group",
-      "ncbigene.gene_history",
-      "ncbigene.gene_info",
-      "ncbigene.gene_neighbors",
-      "ncbigene.gene_orthologs",
-      "ncbigene.gene_refseq_uniprotkb_collab",
-      "ncbigene.gene_summary",
-      "ncbigene.mim2gene_medgen",
-      "nhpn",
-      "nhpn.geojson",
-      "nhpn.shp",
-      "nif_cell.ttl",
-      "nif_dysfunction.ttl",
-      "nif_grossanatomy.ttl",
-      "nifc",
-      "nifc.fire-perimeters",
-      "nifc.portal",
-      "noaa-hms",
-      "noaa-hms.fire-points",
-      "noaa-hms.smoke-polygons",
-      "noaa-ncei",
-      "noaa-ncei.data-search",
-      "noaa-ncei.ibtracs",
-      "noaa-ncei.storm-events",
-      "noncode.conservation",
-      "noncode.disease",
-      "noncode.function",
-      "noncode.genome-browser",
-      "obci",
-      "obci.owl",
-      "ogg",
-      "oma.hdf5",
-      "oma.site",
-      "omnipath.webservice",
-      "openbiodiv.ontology.guide",
-      "openfema",
-      "openfema.api",
-      "openfema.datasets",
-      "opentargets.api.rest",
-      "ordo.owl",
-      "oreganno",
-      "oreganno.ucsc",
-      "oregano.sparql",
-      "orthodb.aa_fasta",
-      "orthodb.api.rest",
-      "orthodb.cds_fasta",
-      "orthodb.gene_xrefs",
-      "orthodb.genes",
-      "orthodb.og2genes",
-      "orthodb.og_xrefs",
-      "orthodb.ogs",
-      "orthodb.species",
-      "oxo",
-      "oxo.portal",
-      "pankbase.api",
-      "paxdb",
-      "paxdb.downloads",
-      "paxdb.site",
-      "pharmacodb.api",
-      "phenio.graph",
-      "phenio.model",
-      "phenomebrowser",
-      "phenomebrowser.web",
-      "phenopacket-store",
-      "phenopacket-store.release",
-      "pirsf",
-      "pirsf.downloads",
-      "pirsf.site",
-      "planteome",
-      "planteome.browser",
-      "probe-miner",
-      "probe-miner.website",
-      "progenomes",
-      "prosite",
-      "prosite.downloads",
-      "prosite.scanprosite",
-      "prosite.site",
-      "protcid",
-      "proteomicsdb",
-      "proteomicsdb.api",
-      "proteomicsdb.site",
-      "proteopedia",
-      "proteopedia.site",
-      "rapdb",
-      "rapdb.downloads",
-      "rapdb.portal",
-      "redrugs",
-      "redrugs.source",
-      "reliefweb",
-      "reliefweb.api",
-      "reliefweb.site",
-      "repodb.full_dataset",
-      "rfam.api",
-      "rlims-p.annotation-guidelines",
-      "rural-urban-continuum-codes",
-      "rural-urban-continuum-codes.ers-page",
-      "scibite.hgnc",
-      "scop",
-      "scop.site",
-      "semopenalex.tpf",
-      "semrep",
-      "semrep.homepage",
-      "sfld",
-      "sfld.site",
-      "sibils",
-      "sibils.api.rest.fetch",
-      "sibils.api.rest.qa",
-      "sibils.api.rest.search",
-      "skm.ckn.v1.annotations",
-      "skm.ckn.v1.graph",
-      "skm.ckn.v2.annotations",
-      "skm.ckn.v2.graph",
-      "skm.pss.live.dot",
-      "sopharm.obo",
-      "sopharm.owl",
-      "ssurgo",
-      "ssurgo.download",
-      "ssurgo.websoilsurvey",
-      "surechembl",
-      "surechembl.bulk-data",
-      "surechembl.docs",
-      "surechembl.search",
-      "t3db",
-      "t3db.downloads",
-      "t3db.portal",
-      "tarbase.downloads-doc",
-      "tcrd",
-      "tcrd.database_download",
-      "tcrd.documentation",
-      "tfacts",
-      "tfacts.publication",
-      "tmrnawebsite",
-      "tmrnawebsite.alignments",
-      "tmrnawebsite.blast",
-      "tmrnawebsite.krona-viewer",
-      "tmrnawebsite.portal",
-      "tmrnawebsite.software",
-      "toxcast.api",
-      "treatkb",
-      "treatkb.publication",
-      "tred",
-      "tred.docs",
-      "treefam",
-      "treefam.downloads",
-      "treefam.site",
-      "trrust",
-      "trrust.human.tsv",
-      "trrust.mouse.tsv",
-      "trrust.web",
-      "txpo",
-      "ucnebase",
-      "ucnebase.site",
-      "ucsc",
-      "ucsc.api",
-      "ucsc.browser",
-      "ucsc.downloads",
-      "ucsc.tablebrowser",
-      "us-census",
-      "us-census.api",
-      "us-census.data",
-      "usdm",
-      "usdm.data",
-      "usdm.map",
-      "usgs-comcat",
-      "usgs-comcat.fdsnws",
-      "usgs-comcat.search",
-      "vccf",
-      "vccf.explorer",
-      "vista",
-      "vista.data",
-      "vista.site",
-      "wikipedia.dumps.enwiki.current",
-      "wikipedia.dumps.enwiki.history",
-      "wipo-tkp",
-      "wipo-tkp.portal",
-      "wormbase.wormmine"
-    ]
+    "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-06-27T15:31:53Z",
+  "generated_at": "2026-06-27T17:53:55Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 153,
     "with_evaluation_page": 127,
     "without_evaluation_page": 26
   },
   "links": {
-    "broken_urls": 108,
-    "cache_hits": 3789,
+    "broken_urls": 203,
+    "cache_hits": 269,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 3681,
-    "live_checked_urls": 0,
-    "mode": "cache-or-unchecked",
-    "total_unique_urls": 4137,
-    "unchecked_urls": 348
+    "healthy_urls": 3932,
+    "live_checked_urls": 3866,
+    "mode": "live",
+    "total_unique_urls": 4135,
+    "unchecked_urls": 0
   },
   "products": {
     "missing_format": 452,
     "missing_original_source": 5,
     "missing_product_url": 114,
-    "retrieval_warning_mentions": 510,
-    "total": 8036
+    "retrieval_warning_mentions": 494,
+    "total": 8037
   },
   "resource_count": 954,
   "resources": {
@@ -14883,7 +14952,7 @@
     "missing_fairsharing_id": 946,
     "missing_homepage_url": 30,
     "missing_infores_id": 709,
-    "missing_license": 323,
+    "missing_license": 314,
     "missing_repository": 480,
     "status_counts": {
       "active": 809,
@@ -14894,15 +14963,15 @@
     },
     "stub_count": 0,
     "total": 954,
-    "with_broken_links": 147,
-    "with_citation_issues": 0,
+    "with_broken_links": 232,
+    "with_citation_issues": 9,
     "without_products": 14,
     "without_publications": 356
   },
   "scoring": {
-    "average_score": 7.4,
-    "median_score": 7.0,
-    "resources_with_issues": 943,
+    "average_score": 8.13,
+    "median_score": 8.0,
+    "resources_with_issues": 947,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -14931,34 +15000,398 @@
   },
   "top_resources": [
     {
-      "activity_status": "inactive",
+      "activity_status": "active",
       "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/downloads"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_experimental_cms_peak_lists.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_experimental_msms_peak_lists.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_image_files.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_predicted_cms_peak_lists.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_predicted_msms_peak_lists.zip"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip"
+        }
+      ],
+      "id": "foodb",
+      "issues": [
+        {
+          "count": 17,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 51
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        }
+      ],
+      "name": "FooDB",
+      "resource_page": "resource/foodb/foodb.html",
+      "score": 53
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/ASN/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/XML/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/ASN/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/"
+        },
         {
           "sources": [
             "cache"
           ],
-          "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
+          "url": "https://github.com/ncbi/NCBI-Datasets"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://markerdb.ca/markerdb_api"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://markerdb.ca/pages/download_all_chemicals?format=tsv"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
         }
       ],
-      "id": "habronattus",
+      "id": "pubchem",
       "issues": [
         {
+          "count": 13,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 39
+        },
+        {
           "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "PubChem",
+      "resource_page": "resource/pubchem/pubchem.html",
+      "score": 40
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://maayanlab.cloud/Harmonizome/download"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.kegg.jp/kegg/disease/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.kegg.jp/kegg/genes.html"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.kegg.jp/kegg/ko.html"
+        }
+      ],
+      "id": "kegg",
+      "issues": [
+        {
+          "count": 9,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 27
+        },
+        {
+          "count": 4,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
           "points": 8
         },
         {
           "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
         },
         {
           "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "KEGG",
+      "resource_page": "resource/kegg/kegg.html",
+      "score": 38
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://maayanlab.cloud/Harmonizome/download"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://markerdb.ca/markerdb_api"
+        },
+        {
+          "sources": [
+            "warning",
+            "live"
+          ],
+          "url": "https://markerdb.ca/pages/download_all_chemicals?format=tsv"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
+        }
+      ],
+      "id": "hmdb",
+      "issues": [
+        {
+          "count": 9,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 27
         },
         {
           "count": 1,
@@ -14974,137 +15407,301 @@
         },
         {
           "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
           "points": 1
         }
       ],
-      "name": "Habronattus courtship",
-      "resource_page": "resource/habronattus/habronattus.html",
-      "score": 19
+      "name": "Human Metabolome Database",
+      "resource_page": "resource/hmdb/hmdb.html",
+      "score": 32
     },
     {
-      "activity_status": "inactive",
+      "activity_status": "active",
       "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz"
+        },
         {
           "sources": [
             "cache"
           ],
-          "url": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html"
-        }
-      ],
-      "id": "loggerhead",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
+          "url": "https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz"
         },
         {
-          "count": 1,
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://kghub.io/kg-covid-19/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
+        }
+      ],
+      "id": "chebi",
+      "issues": [
+        {
+          "count": 9,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
-          "points": 3
+          "points": 27
         },
         {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_publications",
-          "label": "Missing publications",
+          "count": 2,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
           "points": 2
         },
         {
           "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
           "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
         }
       ],
-      "name": "Loggerhead nesting",
-      "resource_page": "resource/loggerhead/loggerhead.html",
-      "score": 19
+      "name": "Chemical Entities of Biological Interest",
+      "resource_page": "resource/chebi/chebi.html",
+      "score": 31
     },
     {
-      "activity_status": "inactive",
-      "broken_links": [],
-      "id": "mat",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_homepage_url",
-          "label": "Missing homepage_url",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_publications",
-          "label": "Missing publications",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Minimal anatomical terminology",
-      "resource_page": "resource/mat/mat.html",
-      "score": 19
-    },
-    {
-      "activity_status": "inactive",
+      "activity_status": "active",
       "broken_links": [
         {
           "sources": [
-            "cache"
+            "live"
           ],
-          "url": "http://www.maizemap.org/"
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://maayanlab.cloud/Harmonizome/download"
         }
       ],
-      "id": "zea",
+      "id": "cellmarker",
       "issues": [
         {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
+          "count": 6,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 18
+        },
+        {
+          "count": 4,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 4
         },
         {
           "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "CellMarker",
+      "resource_page": "resource/cellmarker/cellmarker.html",
+      "score": 27
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://maayanlab.cloud/Harmonizome/download"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/help/rest-api/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/matrix/?type=Experiment"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://www.encodeproject.org/search/?type=Annotation&encyclopedia_version=current&annotation_type=candidate+Cis-Regulatory+Elements&annotation_type=chromatin+state&annotation_type=representative+DNase+hypersensitivity+sites&status=released"
+        }
+      ],
+      "id": "encode",
+      "issues": [
+        {
+          "count": 6,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
+          "points": 18
+        },
+        {
+          "count": 2,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 4
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
           "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "ENCODE",
+      "resource_page": "resource/encode/encode.html",
+      "score": 27
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://mangal.io/api/v2/"
+        }
+      ],
+      "id": "itis",
+      "issues": [
+        {
+          "count": 6,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 18
         },
         {
           "count": 1,
@@ -15125,15 +15722,15 @@
           "points": 2
         },
         {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
+          "count": 2,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 2
         }
       ],
-      "name": "Maize gross anatomy",
-      "resource_page": "resource/zea/zea.html",
-      "score": 19
+      "name": "ITIS",
+      "resource_page": "resource/itis/itis.html",
+      "score": 27
     },
     {
       "activity_status": "active",
@@ -15151,15 +15748,27 @@
             "cache"
           ],
           "url": "https://kghub.io/kg-covid-19/"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://maayanlab.cloud/Harmonizome/download"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
         }
       ],
       "id": "go",
       "issues": [
         {
-          "count": 2,
+          "count": 4,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
-          "points": 6
+          "points": 12
         },
         {
           "count": 6,
@@ -15176,84 +15785,51 @@
       ],
       "name": "Gene Ontology",
       "resource_page": "resource/go/go.html",
-      "score": 18
+      "score": 24
     },
     {
       "activity_status": "active",
       "broken_links": [
         {
           "sources": [
-            "cache"
+            "live"
           ],
-          "url": "https://omabrowser.org/All/group-descriptions.txt.gz"
+          "url": "https://markerdb.ca/"
         },
         {
           "sources": [
-            "cache"
+            "live"
           ],
-          "url": "https://omabrowser.org/All/oma-groups.txt.gz"
+          "url": "https://markerdb.ca/downloads"
         },
         {
           "sources": [
-            "cache"
+            "live"
           ],
-          "url": "https://omabrowser.org/All/oma-protein-annotations.txt.gz"
+          "url": "https://markerdb.ca/markerdb_api"
         },
         {
           "sources": [
-            "cache"
+            "warning",
+            "live"
           ],
-          "url": "https://omabrowser.org/All/oma-refseq.txt.gz"
+          "url": "https://markerdb.ca/pages/download_all_chemicals?format=tsv"
         },
         {
           "sources": [
-            "cache"
+            "warning",
+            "live"
           ],
-          "url": "https://omabrowser.org/All/oma-seqs.fa.gz"
+          "url": "https://markerdb.ca/pages/download_all_proteins?format=tsv"
         }
       ],
-      "id": "oma",
+      "id": "markerdb",
       "issues": [
         {
           "count": 5,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
           "points": 15
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        }
-      ],
-      "name": "OMA",
-      "resource_page": "resource/oma/oma.html",
-      "score": 18
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://bind.ca"
-        }
-      ],
-      "id": "bind",
-      "issues": [
-        {
-          "count": 2,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 4
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
         },
         {
           "count": 1,
@@ -15278,151 +15854,11 @@
           "issue_key": "missing_repository",
           "label": "Missing repository",
           "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 1
         }
       ],
-      "name": "Biomolecular Interaction Network Database (BIND)",
-      "resource_page": "resource/bind/bind.html",
-      "score": 17
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [],
-      "id": "bio101",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "kg_missing_evaluation_page",
-          "label": "KnowledgeGraph missing evaluation page",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_contacts",
-          "label": "Missing contacts",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        }
-      ],
-      "name": "KB Bio 101",
-      "resource_page": "resource/bio101/bio101.html",
-      "score": 17
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://genex.hgu.mrc.ac.uk/"
-        }
-      ],
-      "id": "ehda",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Human developmental anatomy, timed version",
-      "resource_page": "resource/ehda/ehda.html",
-      "score": 17
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://www.inoh.org"
-        }
-      ],
-      "id": "imr",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Molecule role (INOH Protein name/family name ontology)",
-      "resource_page": "resource/imr/imr.html",
-      "score": 17
+      "name": "MarkerDB",
+      "resource_page": "resource/markerdb/markerdb.html",
+      "score": 24
     }
   ]
 }

@@ -54,9 +54,9 @@ products:
 - category: Product
   compression: zip
   description: Full data dump of GWAS Catalog associations in tab-delimited format
-    (SNP-trait association data, ontology-annotated full release). The flat
-    gwas-catalog-associations.tsv file was retired from releases/latest/; the current
-    canonical full associations download is the zipped ontology-annotated TSV.
+    (SNP-trait association data, ontology-annotated full release). The flat gwas-catalog-associations.tsv
+    file was retired from releases/latest/; the current canonical full associations
+    download is the zipped ontology-annotated TSV.
   format: tsv
   id: gwascatalog.associations.tsv
   name: GWAS Catalog Associations TSV
@@ -1391,9 +1391,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: Product
   compression: zip

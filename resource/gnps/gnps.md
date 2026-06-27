@@ -53,13 +53,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gnps
   product_url: https://external.gnps2.org/gnpslibrary
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-24: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-26: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphProduct
   description: RDF knowledge graph materialized by the MetaBoKG workflow from public
     metabolomics repository outputs, GNPS molecular-networking jobs, annotation evidence,

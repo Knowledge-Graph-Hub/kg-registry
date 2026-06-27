@@ -71,10 +71,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
+    when accessing file'
 - category: Product
   description: TSV export of MarkerDB chemical biomarkers with associated conditions
     and concentration data.
@@ -91,10 +91,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''markerdb.ca'', port=443): Max retries exceeded
+    with url: /pages/download_all_chemicals?format=tsv (Caused by SSLError(SSLEOFError(8,
+    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
 - category: Product
   description: TSV export of MarkerDB genetic biomarkers with associated conditions.
   format: tsv
@@ -112,9 +114,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: Product
   description: TSV export of MarkerDB karyotype biomarkers with associated conditions.
@@ -125,11 +127,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: markerdb
   product_url: https://markerdb.ca/pages/download_all_karyotypes?format=tsv
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
+  warnings: []
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

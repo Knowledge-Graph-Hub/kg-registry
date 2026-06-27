@@ -1,13 +1,13 @@
 ---
 category: DataModelProduct
-description: ORDO in OWL format in English (v4.7)
+description: ORDO in OWL format in English (v4.8)
 format: owl
 id: ordo.owl
 name: ORDO OWL
-product_file_size: 49203440
-product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
-layout: product_detail
 original_source:
-  - source: ordo
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: ordo
+product_file_size: 50841163
+product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.8.owl
+layout: product_detail
 ---

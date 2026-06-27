@@ -837,7 +837,7 @@ products:
     source: geneticskp
   - relation_type: prov:hadPrimarySource
     source: translator
-  product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/
+  product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/
 - category: ProgrammingInterface
   description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
     standardized Translator protocols
@@ -907,9 +907,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
 - category: DocumentationProduct
   description: SmartAPI registry entry for the Multiomics Clinical Trials KP TRAPI

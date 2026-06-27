@@ -8,11 +8,6 @@ name: EMA Article 57 Authorised Medicines Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ema
-product_url: https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/data-medicines-iso-idmp-standards/public-data-article-57-database
-warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-06-03_ HTTP 429 error when
-  accessing file
+product_url: https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/data-medicines-iso-idmp-standards-post-authorisation/public-data-article-57-database
 layout: product_detail
 ---

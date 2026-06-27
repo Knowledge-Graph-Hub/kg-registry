@@ -9,6 +9,6 @@ name: ClinGen Evidence Repository API
 original_source:
 - relation_type: prov:hadPrimarySource
   source: clingen
-product_url: https://erepo.clinicalgenome.org/evrepo/api/
+product_url: https://erepo.clinicalgenome.org/evrepo/api/summary/
 layout: product_detail
 ---

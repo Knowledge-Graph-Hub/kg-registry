@@ -63,15 +63,15 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file. KG-Hub reorganization has taken the download offline; the
     kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
-    (current and dated) and the kg-hub-public-data S3 objects return 403. No
-    replacement public download URL is available.'
+    (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
+    public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 ---
 KG-COVID-19: a knowledge graph for COVID-19 and SARS-COV-2.

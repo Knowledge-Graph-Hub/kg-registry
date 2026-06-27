@@ -3698,11 +3698,13 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
 - category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  format: mixed
+  description: Public SPARQL endpoint (OpenLink Virtuoso) providing query access to
+    the complete FORUM knowledge graph. The former credentialed FTP tarball dump (2021)
+    is no longer published; the SPARQL endpoint is the current canonical access point
+    for the full RDF graph.
+  format: http
   id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
+  name: FORUM Knowledge Graph SPARQL Endpoint
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chebi
@@ -3726,14 +3728,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: skos
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-25: FTP error: timed
-    out'
-  - 'File was not able to be retrieved when checked on 2026-06-26: FTP error: timed
-    out'
+  product_url: https://forum.semantic-metabolomics.fr/sparql
 - category: GraphProduct
   compression: targz
   description: KGX Distribution of KG-Alzheimers
@@ -3791,6 +3786,7 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+  warnings: []
 - category: GraphProduct
   description: KGX nodes and edges for KG-COVID-19
   format: kgx
@@ -3831,9 +3827,14 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file. KG-Hub reorganization has taken the download offline; the
+    kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
+    (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
+    public download URL is available.'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
@@ -3875,9 +3876,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP

@@ -6,13 +6,7 @@ name: Main GOLDTERMS OWL release
 original_source:
 - relation_type: prov:hadPrimarySource
   source: goldterms
-product_url: https://w3id.org/goldterms/goldterms.owl
-warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-  to URL
+product_file_size: 4602231
+product_url: https://raw.githubusercontent.com/cmungall/gold-ontology/main/gold.owl
 layout: product_detail
 ---

@@ -107,11 +107,12 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+  warnings: []
 publications:
 - authors:
   - Christopher J. Mungall
   - Julie A. McMurry
-  - "Sebastian K\xF6hler"
+  - Sebastian Köhler
   - James P. Balhoff
   - Charles Borromeo
   - Matthew Brush

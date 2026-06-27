@@ -46,9 +46,9 @@ products:
   product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
   repository: https://git.bioconductor.org/packages/psygenet2r
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to

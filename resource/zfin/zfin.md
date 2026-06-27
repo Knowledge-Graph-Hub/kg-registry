@@ -1802,6 +1802,7 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+  warnings: []
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx

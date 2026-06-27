@@ -1,12 +1,15 @@
 ---
 category: GraphicalInterface
-description: Map-based visualization tool for field-collected data including insecticide resistance, population abundance, and pathogen infection status.
+description: Map-based visualization tool (PopBio Map) within VectorBase for field-collected
+  data including insecticide resistance, population abundance, and pathogen infection
+  status. Successor to the standalone MapVEu tool, now folded into VectorBase (part
+  of VEuPathDB).
 format: http
 id: eupathdb.mapveu
-name: MapVEu
-product_url: https://mapveu.org
-layout: product_detail
+name: VectorBase PopBio Map (formerly MapVEu)
 original_source:
-  - source: eupathdb
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: eupathdb
+product_url: https://vectorbase.org/vectorbase/app/popbio-map
+layout: product_detail
 ---

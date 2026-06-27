@@ -10,8 +10,8 @@ description: SIMAP (Similarity Matrix of Proteins) was a comprehensive database 
   of millions of non-redundant protein sequences from UniProt and other sources, and
   was used as an upstream resource by integrative protein interaction and annotation
   systems. The project appears discontinued, as its historical hosts (MIPS/Helmholtz
-  Munich and the TUM webclu server) no longer resolve and no successor host is
-  currently reachable.
+  Munich and the TUM webclu server) no longer resolve and no successor host is currently
+  reachable.
 domains:
 - proteomics
 - genomics
@@ -21,23 +21,6 @@ id: simap
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: SIMAP
-publications:
-- id: doi:10.1093/nar/gkp949
-  title: SIMAP—a comprehensive database of pre-calculated protein sequence similarities,
-    domains, annotations and clusters
-  authors:
-  - Thomas Rattei
-  - Patrick Tischler
-  - Stefan Götz
-  - Marc-André Jehl
-  - Jonathan Hoser
-  - Roland Arnold
-  - Ana Conesa
-  - Hans-Werner Mewes
-  journal: Nucleic Acids Research
-  year: '2010'
-  doi: doi:10.1093/nar/gkp949
-  preferred: true
 products:
 - category: Product
   description: Legacy SIMAP homepage used for sequence-similarity resource access.
@@ -51,9 +34,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-26: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-27: Timeout connecting
     to URL'
 - category: GraphProduct
   compression: gzip
@@ -1014,11 +997,27 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Thomas Rattei
+  - Patrick Tischler
+  - Stefan Götz
+  - Marc-André Jehl
+  - Jonathan Hoser
+  - Roland Arnold
+  - Ana Conesa
+  - Hans-Werner Mewes
+  doi: doi:10.1093/nar/gkp949
+  id: doi:10.1093/nar/gkp949
+  journal: Nucleic Acids Research
+  preferred: true
+  title: SIMAP—a comprehensive database of pre-calculated protein sequence similarities,
+    domains, annotations and clusters
+  year: '2010'
 warnings:
 - 'SIMAP appears discontinued: the historical MIPS/Helmholtz Munich portal and the
   TUM webclu host did not resolve when checked on 2026-06-27 (connection timeout /
-  404). The homepage_url is retained as the historical location for an inactive
-  resource.'
+  404). The homepage_url is retained as the historical location for an inactive resource.'
 ---
 # SIMAP
 

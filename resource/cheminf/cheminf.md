@@ -38,11 +38,13 @@ products:
   product_file_size: 22830
   product_url: http://purl.obolibrary.org/obo/cheminf.owl
 - category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  format: mixed
+  description: Public SPARQL endpoint (OpenLink Virtuoso) providing query access to
+    the complete FORUM knowledge graph. The former credentialed FTP tarball dump (2021)
+    is no longer published; the SPARQL endpoint is the current canonical access point
+    for the full RDF graph.
+  format: http
   id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
+  name: FORUM Knowledge Graph SPARQL Endpoint
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chebi
@@ -66,14 +68,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: skos
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-25: FTP error: timed
-    out'
-  - 'File was not able to be retrieved when checked on 2026-06-26: FTP error: timed
-    out'
+  product_url: https://forum.semantic-metabolomics.fr/sparql
 publications:
 - authors:
   - Hastings J

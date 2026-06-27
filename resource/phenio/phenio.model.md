@@ -1,5 +1,6 @@
 ---
 category: Product
+compression: gzip
 description: OWL version of phenio
 format: owl
 id: phenio.model
@@ -10,14 +11,8 @@ name: phenio
 original_source:
 - relation_type: prov:hadPrimarySource
   source: phenio
-product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
+product_file_size: 124412326
+product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl.gz
 repository: https://github.com/monarch-initiative/phenio
-warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-  to URL
 layout: product_detail
 ---

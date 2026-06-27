@@ -10,7 +10,7 @@ original_source:
   source: biothings
 product_url: https://biothings.io/specs/
 warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ HTTP 204 error when
+- File was not able to be retrieved when checked on 2026-06-26_ HTTP 204 error when
   accessing file
 layout: product_detail
 ---

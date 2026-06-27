@@ -63,10 +63,10 @@ products:
     source: noaa-ncei
   product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-26: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
-  - 'File was not able to be retrieved when checked on 2026-06-26: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
 - category: GraphProduct

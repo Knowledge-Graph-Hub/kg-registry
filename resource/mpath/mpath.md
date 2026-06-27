@@ -5,19 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Paul Schofield
+  orcid: 0000-0002-5111-7263
   contact_details:
   - contact_type: email
     value: pns12@hermes.cam.ac.uk
   - contact_type: github
     value: PaulNSchofield
-  label: Paul Schofield
-  orcid: 0000-0002-5111-7263
 creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of mutant and transgenic mouse pathology
   phenotypes
 domains:
 - biomedical
-homepage_url: https://github.com/PaulNSchofield/mpath
+homepage_url: http://www.pathbase.net
 id: mpath
 infores_id: mpath
 last_modified_date: '2026-06-27T00:00:00Z'

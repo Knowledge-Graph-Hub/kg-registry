@@ -291,11 +291,13 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 - category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  format: mixed
+  description: Public SPARQL endpoint (OpenLink Virtuoso) providing query access to
+    the complete FORUM knowledge graph. The former credentialed FTP tarball dump (2021)
+    is no longer published; the SPARQL endpoint is the current canonical access point
+    for the full RDF graph.
+  format: http
   id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
+  name: FORUM Knowledge Graph SPARQL Endpoint
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chebi
@@ -319,14 +321,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: skos
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-25: FTP error: timed
-    out'
-  - 'File was not able to be retrieved when checked on 2026-06-26: FTP error: timed
-    out'
+  product_url: https://forum.semantic-metabolomics.fr/sparql
 - category: OntologyProduct
   description: EDAM OWL release
   format: owl
@@ -372,12 +367,12 @@ products:
 publications:
 - id: https://www.iso.org/standard/71339.html
   preferred: true
-  title: 'ISO 15836-1:2017 Information and documentation — The Dublin Core metadata
-    element set — Part 1: Core elements'
+  title: "ISO 15836-1:2017 Information and documentation \u2014 The Dublin Core metadata\
+    \ element set \u2014 Part 1: Core elements"
   year: '2017'
 - id: https://www.iso.org/standard/71341.html
-  title: 'ISO 15836-2:2019 Information and documentation — The Dublin Core metadata
-    element set — Part 2: DCMI Properties and classes'
+  title: "ISO 15836-2:2019 Information and documentation \u2014 The Dublin Core metadata\
+    \ element set \u2014 Part 2: DCMI Properties and classes"
   year: '2019'
 repository: https://github.com/dcmi/
 ---

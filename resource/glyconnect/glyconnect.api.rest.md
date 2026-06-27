@@ -8,6 +8,6 @@ name: GlyConnect RESTful API
 original_source:
 - relation_type: prov:hadPrimarySource
   source: glyconnect
-product_url: https://glyconnect.expasy.org/api
+product_url: https://glyconnect.expasy.org/api/docs
 layout: product_detail
 ---

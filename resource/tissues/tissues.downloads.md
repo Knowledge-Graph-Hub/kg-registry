@@ -10,7 +10,7 @@ original_source:
   source: tissues
 product_url: https://tissues.jensenlab.org/Downloads
 warnings:
-- File was not able to be retrieved when checked on 2026-06-25_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-26_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-06-22_ HTTP 503 error when
   accessing file

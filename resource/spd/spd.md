@@ -2,21 +2,23 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Martin Ramirez
-    orcid: 0000-0002-0358-0130
-    contact_details:
-      - contact_type: email
-        value: ramirez@macn.gov.ar
-      - contact_type: github
-        value: martinjramirez
+- category: Individual
+  label: Martin Ramirez
+  orcid: 0000-0002-0358-0130
+  contact_details:
+  - contact_type: email
+    value: ramirez@macn.gov.ar
+  - contact_type: github
+    value: martinjramirez
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
+description: An ontology for spider comparative biology including anatomical parts
+  (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web,
+  borrow).
 domains:
-  - anatomy and development
-homepage_url: https://github.com/obophenotype/spider-ontology
+- anatomy and development
+homepage_url: http://research.amnh.org/atol/files/
 id: spd
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
@@ -26,30 +28,30 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Spider Ontology
 products:
-  - category: OntologyProduct
-    description: Spider Ontology in OWL format
-    format: owl
-    id: spd.owl
-    name: spd.owl
-    product_file_size: 69679
-    product_url: http://purl.obolibrary.org/obo/spd.owl
-    original_source:
-      - source: spd
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Spider Ontology in OWL format
+  format: owl
+  id: spd.owl
+  name: spd.owl
+  product_file_size: 69679
+  product_url: http://purl.obolibrary.org/obo/spd.owl
+  original_source:
+  - source: spd
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/spider-ontology
 taxon:
-  - NCBITaxon:6893
+- NCBITaxon:6893
 publications:
-  - authors:
-      - Martín J. Ramírez
-      - Peter Michalik
-    doi: 10.3390/d11100202
-    id: https://doi.org/10.3390/d11100202
-    journal: Diversity
-    title: The Spider Anatomy Ontology (SPD) A Versatile Tool to Link Anatomy with Cross-Disciplinary Data
-    year: '2019'
+- authors:
+  - Martín J. Ramírez
+  - Peter Michalik
+  doi: 10.3390/d11100202
+  id: https://doi.org/10.3390/d11100202
+  journal: Diversity
+  title: The Spider Anatomy Ontology (SPD) A Versatile Tool to Link Anatomy with Cross-Disciplinary
+    Data
+  year: '2019'
 ---
-
 ## Description
 
 An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).

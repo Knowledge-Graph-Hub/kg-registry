@@ -8,6 +8,6 @@ name: CompTox API
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dsstox
-product_url: https://api-ccte.epa.gov/docs/index.html
+product_url: https://comptox.epa.gov/ctx-api/docs/chemical.html
 layout: product_detail
 ---
