@@ -2,24 +2,23 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: daniel.c.berrios@nasa.gov
-  - contact_type: github
-    value: DanBerrios
-  label: Daniel C. Berrios
-  orcid: 0000-0003-4312-9552
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: daniel.c.berrios@nasa.gov
+      - contact_type: github
+        value: DanBerrios
+    label: Daniel C. Berrios
+    orcid: 0000-0003-4312-9552
 creation_date: '2025-09-29T00:00:00Z'
-description: RBO is an ontology for the effects of radiation on biota in terrestrial
-  and space environments.
+description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
 domains:
-- environment
+  - environment
 homepage_url: https://github.com/Radiobiology-Informatics-Consortium/RBO
 id: rbo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -27,75 +26,60 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Radiation Biology Ontology
 products:
-- category: OntologyProduct
-  description: Radiation Biology Ontology in OWL format
-  format: owl
-  id: rbo.owl
-  name: rbo.owl
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: rbo
-  product_file_size: 1902434
-  product_url: http://purl.obolibrary.org/obo/rbo.owl
-- category: OntologyProduct
-  description: Radiation Biology Ontology in OBO format
-  format: obo
-  id: rbo.obo
-  name: rbo.obo
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: rbo
-  product_file_size: 486142
-  product_url: http://purl.obolibrary.org/obo/rbo.obo
-- category: OntologyProduct
-  description: Radiation Biology Ontology in JSON format
-  format: json
-  id: rbo.json
-  name: rbo.json
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: rbo
-  product_url: http://purl.obolibrary.org/obo/rbo.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-25: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: Radiation Biology Ontology in OWL format
-  format: owl
-  id: rbo.rbo-base.owl
-  name: rbo.rbo-base.owl
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: rbo
-  product_file_size: 47966
-  product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
-- category: OntologyProduct
-  description: Radiation Biology Ontology in OBO format
-  format: obo
-  id: rbo.rbo-base.obo
-  name: rbo.rbo-base.obo
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: rbo
-  product_file_size: 10927
-  product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.obo
-- category: OntologyProduct
-  description: Radiation Biology Ontology in JSON format
-  format: json
-  id: rbo.rbo-base.json
-  name: rbo.rbo-base.json
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: rbo
-  product_file_size: 46077
-  product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.json
+  - category: OntologyProduct
+    description: Radiation Biology Ontology in OWL format
+    format: owl
+    id: rbo.owl
+    name: rbo.owl
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: rbo
+    product_file_size: 1902434
+    product_url: http://purl.obolibrary.org/obo/rbo.owl
+  - category: OntologyProduct
+    description: Radiation Biology Ontology in OBO format
+    format: obo
+    id: rbo.obo
+    name: rbo.obo
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: rbo
+    product_file_size: 486142
+    product_url: http://purl.obolibrary.org/obo/rbo.obo
+  - category: OntologyProduct
+    description: Radiation Biology Ontology in OWL format
+    format: owl
+    id: rbo.rbo-base.owl
+    name: rbo.rbo-base.owl
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: rbo
+    product_file_size: 47966
+    product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
+  - category: OntologyProduct
+    description: Radiation Biology Ontology in OBO format
+    format: obo
+    id: rbo.rbo-base.obo
+    name: rbo.rbo-base.obo
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: rbo
+    product_file_size: 10927
+    product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.obo
+  - category: OntologyProduct
+    description: Radiation Biology Ontology in JSON format
+    format: json
+    id: rbo.rbo-base.json
+    name: rbo.rbo-base.json
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: rbo
+    product_file_size: 46077
+    product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.json
 publications: []
 repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
 ---
+
 ## Description
 
 RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.

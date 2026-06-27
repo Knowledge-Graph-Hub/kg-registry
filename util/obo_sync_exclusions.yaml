@@ -34,3 +34,21 @@ exclude_products:
     - prefer.prefer-basic.owl
     - prefer.prefer-basic.obo
     - prefer.prefer-basic.json
+  # Format variants the ontology does not actually build (PURLs 404):
+  slso:
+    - slso.json
+  rbo:
+    - rbo.json
+  pbpko:
+    - pbpko.obo
+    - pbpko.json
+  afpo:
+    - afpo.obo
+    - afpo.json
+  # Discontinued dev-snapshot / subset products (PURLs 404; release files live):
+  ro:
+    - ro.subsets.ro-eco.owl
+  iao:
+    - iao.dev.iao.owl
+  ohd:
+    - ohd.dev.ohd.owl
