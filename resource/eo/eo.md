@@ -75,6 +75,8 @@ publications:
   title: Ontologies as integrative tools for plant science.
   year: '2012'
 repository: https://github.com/Planteome/plant-environment-ontology
+use_instead:
+- peco
 ---
 ## Description
 

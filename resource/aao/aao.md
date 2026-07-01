@@ -41,6 +41,8 @@ products:
 publications: []
 taxon:
 - NCBITaxon:8292
+use_instead:
+- uberon
 ---
 ## Description
 

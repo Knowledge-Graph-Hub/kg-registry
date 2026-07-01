@@ -234,7 +234,16 @@ body:
   - type: markdown
     attributes:
       value: "## Additional Information"
-  
+
+  - type: input
+    id: use_instead
+    attributes:
+      label: Use Instead
+      description: If this resource is no longer active and has a clear replacement (e.g., it has been superseded by a newer resource or subsumed by another), provide the KG-Registry Resource ID(s) that should be used in its place (comma separated).
+      placeholder: e.g., kg-tofu-2
+    validations:
+      required: false
+
   - type: input
     id: publications
     attributes:

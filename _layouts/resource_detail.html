@@ -125,6 +125,22 @@ layout: default
   </div>
 </div>
 {% endif %}
+{% if page.use_instead and page.use_instead.size > 0 %}
+<div class="row">
+  <div class="alert alert-info" style="max-width: 72rem" role="alert">
+    {% if page.use_instead.size == 1 %}
+    Use instead:
+    {% assign replacement = page.use_instead[0] %}
+    <a href="/kg-registry/resource/{{ replacement }}/{{ replacement }}.html">{{ replacement }}</a>.
+    {% else %}
+    Use instead:
+    {% for replacement in page.use_instead %}
+    <a href="/kg-registry/resource/{{ replacement }}/{{ replacement }}.html">{{ replacement }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}.
+    {% endif %}
+  </div>
+</div>
+{% endif %}
 <div class="col">
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 header-card-row">
       <div class="col d-flex">

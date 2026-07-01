@@ -38,6 +38,8 @@ publications:
   year: '2003'
 taxon:
 - NCBITaxon:9606
+use_instead:
+- ehdaa2
 ---
 ## Description
 

@@ -34,6 +34,8 @@ products:
   - source: nif_cell
     relation_type: prov:hadPrimarySource
 publications: []
+use_instead:
+- cl
 ---
 ## Description
 

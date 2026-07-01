@@ -27,6 +27,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/vhog.owl
   warnings: []
 publications: []
+use_instead:
+- uberon
 ---
 ## Description
 

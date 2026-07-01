@@ -37,6 +37,8 @@ publications:
   year: '2010'
 taxon:
 - NCBITaxon:6358
+use_instead:
+- pdumdv
 ---
 ## Description
 

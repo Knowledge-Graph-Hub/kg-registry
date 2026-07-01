@@ -42,6 +42,8 @@ publications:
   preferred: true
   title: Relations in biomedical ontologies
   year: '2005'
+use_instead:
+- ro
 ---
 ## Description
 
