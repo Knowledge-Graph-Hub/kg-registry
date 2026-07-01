@@ -59,7 +59,7 @@ publications:
   - Kristi L. Holmes
   doi: 10.3389/frma.2017.00012
   id: https://doi.org/10.3389/frma.2017.00012
-  journal: Front Res Metr Anal
+  journal: Frontiers in Research Metrics and Analytics
   preferred: true
   title: 'OpenVIVO: Transparency in Scholarship'
   year: '2018'
