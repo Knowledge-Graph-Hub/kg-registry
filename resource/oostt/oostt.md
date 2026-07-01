@@ -9,19 +9,19 @@ contacts:
     orcid: 0000-0003-1834-3856
     contact_details:
       - contact_type: email
-        value: mbrochhausen@gmail.com
+        value: "mbrochhausen@gmail.com"
       - contact_type: github
-        value: mbrochhausen
+        value: "mbrochhausen"
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology built for representating the organizational components of trauma centers and trauma systems.
 domains:
   - biomedical
 homepage_url: https://github.com/OOSTT/OOSTT
-id: oostt
-last_modified_date: '2026-04-15T00:00:00Z'
+id: "oostt"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/4.0/
+  id: "http://creativecommons.org/licenses/by/4.0/"
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Organizational Structures of Trauma centers and Trauma systems
@@ -29,15 +29,38 @@ products:
   - category: OntologyProduct
     description: Ontology of Organizational Structures of Trauma centers and Trauma systems in OWL format
     format: owl
-    id: oostt.owl
+    id: "oostt.owl"
     name: oostt.owl
     product_file_size: 78721
     product_url: http://purl.obolibrary.org/obo/oostt.owl
     original_source:
       - source: oostt
         relation_type: prov:hadPrimarySource
+publications:
+  - authors:
+      - Joseph Utecht
+      - John Judkins
+      - Mathias Brochhausen
+      - Terra Colvin Jr.
+      - J. Neil Otte
+      - Nicholas Rogers
+      - Robert Rose
+      - Maria Alvi
+      - Amanda Hicks
+      - Jane Ball
+      - Stephen M. Bowman
+      - Robert T. Maxson
+      - Rosemary Nabaweesi
+      - Rohit Pradhan
+      - Nels D. Sanddal
+      - M. Eduard Tudoreanu
+      - Robert Winchell
+    id: "https://ceur-ws.org/Vol-1747/IT504_ICBO2016.pdf"
+    journal: CEUR Workshop Proceedings
+    preferred: true
+    title: 'OOSTT: a Resource for Analyzing the Organizational Structures of Trauma Centers and Trauma Systems'
+    year: "2016"
 repository: https://github.com/OOSTT/OOSTT
-publications: []
 ---
 
 ## Description

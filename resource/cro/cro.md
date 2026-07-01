@@ -22,7 +22,7 @@ domains:
 - information technology
 homepage_url: https://github.com/data2health/contributor-role-ontology
 id: cro
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/2.0/
@@ -41,7 +41,28 @@ products:
   - source: cro
     relation_type: prov:hadPrimarySource
 repository: https://github.com/data2health/contributor-role-ontology
-publications: []
+publications:
+- authors:
+  - Violeta Ilik
+  - Michael Conlon
+  - Graham Triggs
+  - Marijane White
+  - Muhammad Javed
+  - Matthew Brush
+  - Karen Gutzman
+  - Shahim Essaid
+  - Paul Friedman
+  - Simon Porter
+  - Martin Szomszor
+  - Melissa Anne Haendel
+  - David Eichmann
+  - Kristi L. Holmes
+  doi: 10.3389/frma.2017.00012
+  id: https://doi.org/10.3389/frma.2017.00012
+  journal: Frontiers in Research Metrics and Analytics
+  preferred: true
+  title: 'OpenVIVO: Transparency in Scholarship'
+  year: '2018'
 ---
 ## Description
 

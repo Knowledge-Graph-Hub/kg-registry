@@ -23,7 +23,7 @@ domains:
 - general
 homepage_url: https://github.com/Dalalghamdi/NGBO
 id: ngbo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -42,7 +42,20 @@ products:
   - source: ngbo
     relation_type: prov:hadPrimarySource
 repository: https://github.com/Dalalghamdi/NGBO
-publications: []
+publications:
+- authors:
+  - Dalia Alghamdi
+  - Damion M Dooley
+  - Mannar Samman
+  - Ali AlFaiz
+  - William W L Hsiao
+  doi: 10.1093/bioadv/vbaf131
+  id: https://pubmed.ncbi.nlm.nih.gov/40799495
+  journal: Bioinform Adv
+  preferred: true
+  title: 'Next generation biobanking ontology: introducing-omics contextual data to
+    biobanking ontology'
+  year: '2025'
 ---
 ## Description
 

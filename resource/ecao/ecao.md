@@ -9,19 +9,19 @@ contacts:
     orcid: 0000-0002-3625-0955
     contact_details:
       - contact_type: email
-        value: ettensohn@cmu.edu
+        value: "ettensohn@cmu.edu"
       - contact_type: github
-        value: ettensohn
+        value: "ettensohn"
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for the development and anatomy of the different species of the phylum Echinodermata (NCBITaxon:7586).
 domains:
   - anatomy and development
 homepage_url: https://github.com/echinoderm-ontology/ecao_ontology
-id: ecao
-last_modified_date: '2026-04-15T00:00:00Z'
+id: "ecao"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/3.0/
+  id: "http://creativecommons.org/licenses/by/3.0/"
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: The Echinoderm Anatomy and Development Ontology
@@ -29,7 +29,7 @@ products:
   - category: OntologyProduct
     description: The Echinoderm Anatomy and Development Ontology in OWL format
     format: owl
-    id: ecao.owl
+    id: "ecao.owl"
     name: ecao.owl
     product_file_size: 1546949
     product_url: http://purl.obolibrary.org/obo/ecao.owl
@@ -39,7 +39,7 @@ products:
   - category: OntologyProduct
     description: The Echinoderm Anatomy and Development Ontology in OBO format
     format: obo
-    id: ecao.obo
+    id: "ecao.obo"
     name: ecao.obo
     product_file_size: 1002010
     product_url: http://purl.obolibrary.org/obo/ecao.obo
@@ -47,7 +47,21 @@ products:
       - source: ecao
         relation_type: prov:hadPrimarySource
 repository: https://github.com/echinoderm-ontology/ecao_ontology
-publications: []
+publications:
+  - authors:
+      - Ettensohn CA
+      - Chess MM
+      - Formery L
+      - Pells TJ
+      - Segerdell E
+      - Vize PD
+      - Croce JC
+    doi: "10.1242/dev.205294"
+    id: "https://pubmed.ncbi.nlm.nih.gov/41717723"
+    journal: Development
+    preferred: true
+    title: A stage and anatomy ontology for embryogenesis in indirect-developing echinoderms.
+    year: "2026"
 ---
 
 ## Description

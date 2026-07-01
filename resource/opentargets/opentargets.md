@@ -18,6 +18,7 @@ domains:
 - biomedical
 homepage_url: https://www.opentargets.org/
 id: opentargets
+infores_id: open-targets
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:

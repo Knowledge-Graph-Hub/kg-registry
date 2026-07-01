@@ -36,7 +36,19 @@ products:
         source: pbpko
     product_file_size: 53137
     product_url: http://purl.obolibrary.org/obo/pbpko.owl
-publications: []
+publications:
+- authors:
+  - Kumar V
+  - Deepika D
+  - Kumar S
+  - Sharma S
+  doi: 10.1016/j.toxlet.2024.07.382
+  id: https://doi.org/10.1016/j.toxlet.2024.07.382
+  journal: Toxicology Letters
+  preferred: true
+  title: P05-47 An ontology of Physiologically Based Pharmacokinetic Model (PBPK) for
+    harmonization and automation of modeling framework (PBPKO)
+  year: '2024'
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 ---
 

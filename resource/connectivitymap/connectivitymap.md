@@ -20,7 +20,8 @@ domains:
 - biomedical
 homepage_url: https://www.broadinstitute.org/connectivity-map-cmap
 id: connectivitymap
-last_modified_date: '2025-10-07T00:00:00Z'
+infores_id: cmap
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Connectivity Map
 products:

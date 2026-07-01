@@ -9,19 +9,19 @@ contacts:
     orcid: 0000-0003-1834-3856
     contact_details:
       - contact_type: email
-        value: mbrochhausen@uams.edu
+        value: "mbrochhausen@uams.edu"
       - contact_type: github
-        value: mbrochhausen
+        value: "mbrochhausen"
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of minimum information regarding potential drug-drug interaction information.
 domains:
   - biomedical
 homepage_url: https://github.com/MPIO-Developers/MPIO
-id: mpio
-last_modified_date: '2026-04-15T00:00:00Z'
+id: "mpio"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/4.0/
+  id: "http://creativecommons.org/licenses/by/4.0/"
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Minimum PDDI Information Ontology
@@ -29,7 +29,7 @@ products:
   - category: OntologyProduct
     description: Minimum PDDI Information Ontology in OWL format
     format: owl
-    id: mpio.owl
+    id: "mpio.owl"
     name: mpio.owl
     product_file_size: 19172
     product_url: http://purl.obolibrary.org/obo/mpio.owl
@@ -37,7 +37,37 @@ products:
       - source: mpio
         relation_type: prov:hadPrimarySource
 repository: https://github.com/MPIO-Developers/MPIO
-publications: []
+publications:
+  - authors:
+      - Harry Hochheiser
+      - Xia Jing
+      - Elizabeth A. Garcia
+      - Serkan Ayvaz
+      - Ratnesh Sahay
+      - Michel Dumontier
+      - Juan M. Banda
+      - Oya Beyan
+      - Mathias Brochhausen
+      - Evan Draper
+      - Sam Habiel
+      - Oktie Hassanzadeh
+      - Maria Herrero-Zazo
+      - Brian Hocum
+      - John Horn
+      - Brian LeBaron
+      - Daniel C. Malone
+      - Øystein Nytrø
+      - Thomas Reese
+      - Katrina Romagnoli
+      - Jodi Schneider
+      - Louisa (Yu) Zhang
+      - Richard D. Boyce
+    doi: "10.3389/fphar.2020.608068"
+    id: "https://pubmed.ncbi.nlm.nih.gov/33762928"
+    journal: Front Pharmacol
+    preferred: true
+    title: A Minimal Information Model for Potential Drug-Drug Interactions
+    year: "2020"
 ---
 
 ## Description

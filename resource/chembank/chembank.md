@@ -23,7 +23,8 @@ domains:
 - pharmacology
 homepage_url: http://chembank.broadinstitute.org/
 id: chembank
-last_modified_date: '2026-06-18T00:00:00Z'
+infores_id: chembank
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

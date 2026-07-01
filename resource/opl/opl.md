@@ -2,44 +2,63 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
-  contact_details:
-  - contact_type: email
-    value: zhengj2007@gmail.com
-  - contact_type: github
-    value: zhengj2007
+  - category: Individual
+    label: Jie Zheng
+    orcid: 0000-0002-2999-0103
+    contact_details:
+      - contact_type: email
+        value: "zhengj2007@gmail.com"
+      - contact_type: github
+        value: "zhengj2007"
 creation_date: '2025-09-29T00:00:00Z'
 description: A reference ontology for parasite life cycle stages.
 domains:
-- biological systems
-- organisms
+  - biological systems
+  - organisms
 homepage_url: https://github.com/OPL-ontology/OPL
-id: opl
-last_modified_date: '2026-06-05T00:00:00Z'
+id: "opl"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
+  id: "https://creativecommons.org/licenses/by/4.0/"
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology for Parasite LifeCycle
 products:
-- category: OntologyProduct
-  description: Ontology for Parasite LifeCycle in OWL format
-  format: owl
-  id: opl.owl
-  name: opl.owl
-  product_file_size: 75624
-  product_url: http://purl.obolibrary.org/obo/opl.owl
-  original_source:
-  - source: opl
-    relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Ontology for Parasite LifeCycle in OWL format
+    format: owl
+    id: "opl.owl"
+    name: opl.owl
+    product_file_size: 75624
+    product_url: http://purl.obolibrary.org/obo/opl.owl
+    original_source:
+      - source: opl
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/OPL-ontology/OPL
-publications: []
+publications:
+  - authors:
+      - Parikh PP
+      - Zheng J
+      - Logan-Klumpler F
+      - Stoeckert CJ Jr
+      - Louis C
+      - Topalis P
+      - Protasio AV
+      - Sheth AP
+      - Carrington M
+      - Berriman M
+      - Sahoo SS
+    doi: "10.1186/2041-1480-3-5"
+    id: "https://pubmed.ncbi.nlm.nih.gov/22621763"
+    journal: J Biomed Semantics
+    preferred: true
+    title: 'The Ontology for Parasite Lifecycle (OPL): towards a consistent vocabulary of lifecycle stages in parasitic organisms'
+    year: "2012"
 ---
+
 ## Description
 
 A reference ontology for parasite life cycle stages.

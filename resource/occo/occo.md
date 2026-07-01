@@ -24,7 +24,7 @@ domains:
 - information technology
 homepage_url: https://github.com/Occupation-Ontology/OccO
 id: occo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -43,7 +43,18 @@ products:
   - source: occo
     relation_type: prov:hadPrimarySource
 repository: https://github.com/Occupation-Ontology/OccO
-publications: []
+publications:
+- authors:
+  - Smith S
+  - Dooley D
+  - Merrell E
+  - Beverley J
+  - He Y
+  id: https://ceur-ws.org/Vol-3805/ICBO-2022_paper_5061.pdf
+  journal: CEUR Workshop Proceedings
+  preferred: true
+  title: Toward an Occupation Ontology, OccO
+  year: '2022'
 ---
 ## Description
 

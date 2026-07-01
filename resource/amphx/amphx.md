@@ -9,19 +9,19 @@ contacts:
     orcid: 0000-0001-7577-5028
     contact_details:
       - contact_type: email
-        value: hescriva@obs-banyuls.fr
+        value: "hescriva@obs-banyuls.fr"
       - contact_type: github
-        value: hescriva
+        value: "hescriva"
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).
 domains:
   - anatomy and development
 homepage_url: https://github.com/EBISPOT/amphx_ontology
-id: amphx
-last_modified_date: '2026-04-15T00:00:00Z'
+id: "amphx"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/3.0/
+  id: "http://creativecommons.org/licenses/by/3.0/"
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: The Amphioxus Development and Anatomy Ontology
@@ -29,7 +29,7 @@ products:
   - category: OntologyProduct
     description: The Amphioxus Development and Anatomy Ontology in OWL format
     format: owl
-    id: amphx.owl
+    id: "amphx.owl"
     name: amphx.owl
     product_file_size: 13761
     product_url: http://purl.obolibrary.org/obo/amphx.owl
@@ -39,7 +39,7 @@ products:
   - category: OntologyProduct
     description: The Amphioxus Development and Anatomy Ontology in OBO format
     format: obo
-    id: amphx.obo
+    id: "amphx.obo"
     name: amphx.obo
     product_file_size: 8608
     product_url: http://purl.obolibrary.org/obo/amphx.obo
@@ -47,7 +47,22 @@ products:
       - source: amphx
         relation_type: prov:hadPrimarySource
 repository: https://github.com/EBISPOT/amphx_ontology
-publications: []
+publications:
+  - authors:
+      - Stephanie Bertrand
+      - João E. Carvalho
+      - Delphine Dauga
+      - Nicolas Matentzoglu
+      - Vladimir Daric
+      - Jr-Kai Yu
+      - Michael Schubert
+      - Hector Escrivá
+    doi: "10.3389/fcell.2021.668025"
+    id: "https://pubmed.ncbi.nlm.nih.gov/33981708/"
+    journal: Front Cell Dev Biol
+    preferred: true
+    title: The Ontology of the Amphioxus Anatomy and Life Cycle (AMPHX)
+    year: "2021"
 ---
 
 ## Description

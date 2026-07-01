@@ -9,19 +9,19 @@ contacts:
     orcid: 0000-0002-3469-4923
     contact_details:
       - contact_type: email
-        value: janna.hastings@gmail.com
+        value: "janna.hastings@gmail.com"
       - contact_type: github
-        value: jannahastings
+        value: "jannahastings"
 creation_date: '2025-09-29T00:00:00Z'
 description: The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning.
 domains:
   - biomedical
 homepage_url: https://github.com/jannahastings/mental-functioning-ontology
-id: mf
-last_modified_date: '2026-04-15T00:00:00Z'
+id: "mf"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/3.0/
+  id: "http://creativecommons.org/licenses/by/3.0/"
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mental Functioning Ontology
@@ -29,7 +29,7 @@ products:
   - category: OntologyProduct
     description: Mental Functioning Ontology in OWL format
     format: owl
-    id: mf.owl
+    id: "mf.owl"
     name: mf.owl
     product_file_size: 55614
     product_url: http://purl.obolibrary.org/obo/mf.owl
@@ -37,7 +37,18 @@ products:
       - source: mf
         relation_type: prov:hadPrimarySource
 repository: https://github.com/jannahastings/mental-functioning-ontology
-publications: []
+publications:
+  - authors:
+      - Janna Hastings
+      - Werner Ceusters
+      - Mark Jensen
+      - Kevin Mulligan
+      - Barry Smith
+    id: "https://ontology.buffalo.edu/smith/articles/ICBO2012/MFO_Hastings.pdf"
+    journal: CEUR Workshop Proceedings
+    preferred: true
+    title: 'Representing mental functioning: Ontologies for mental health and disease'
+    year: "2012"
 ---
 
 ## Description

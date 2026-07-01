@@ -14,7 +14,8 @@ domains:
 - biological systems
 homepage_url: https://www.phosphosite.org/
 id: phosphositeplus
-last_modified_date: '2025-09-11T00:00:00Z'
+infores_id: psite-plus
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: PhosphoSitePlus
 products:

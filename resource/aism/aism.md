@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/insect-morphology/aism
 id: aism
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -57,7 +57,29 @@ products:
       - source: aism
         relation_type: prov:hadPrimarySource
 repository: https://github.com/insect-morphology/aism
-publications: []
+publications:
+  - authors:
+      - Girón JC
+      - Tarasov S
+      - González Montaña LA
+      - Matentzoglu N
+      - Smith AD
+      - Koch M
+      - Boudinot BE
+      - Bouchard P
+      - Burks R
+      - Vogt L
+      - Yoder M
+      - Osumi-Sutherland D
+      - Friedrich F
+      - Beutel RG
+      - Mikó I
+    doi: 10.1093/sysbio/syad025
+    id: https://www.ncbi.nlm.nih.gov/pubmed/37094905
+    journal: Syst Biol
+    preferred: true
+    title: 'Formalizing Invertebrate Morphological Data: A Descriptive Model for Cuticle-Based Skeleto-Muscular Systems, an Ontology for Insect Anatomy, and their Potential Applications in Biodiversity Research and Informatics'
+    year: '2023'
 ---
 
 ## Description

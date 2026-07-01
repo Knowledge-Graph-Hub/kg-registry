@@ -7,9 +7,9 @@ contacts:
   - category: Individual
     contact_details:
       - contact_type: email
-        value: zhengj2007@gmail.com
+        value: "zhengj2007@gmail.com"
       - contact_type: github
-        value: zhengj2007
+        value: "zhengj2007"
     label: Jie Zheng
     orcid: 0000-0002-2999-0103
 creation_date: '2025-06-25T00:00:00Z'
@@ -18,11 +18,11 @@ domains:
   - biomedical
   - information technology
 homepage_url: https://github.com/information-artifact-ontology/IAO/
-id: iao
+id: "iao"
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/4.0/
+  id: "http://creativecommons.org/licenses/by/4.0/"
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Information Artifact Ontology
@@ -30,7 +30,7 @@ products:
   - category: OntologyProduct
     description: Information Artifact Ontology in OWL format
     format: owl
-    id: iao.owl
+    id: "iao.owl"
     name: iao.owl
     original_source:
       - relation_type: prov:hadPrimarySource
@@ -40,7 +40,7 @@ products:
   - category: OntologyProduct
     description: IAO ontology metadata
     format: owl
-    id: iao.ontology-metadata.owl
+    id: "iao.ontology-metadata.owl"
     name: IAO ontology metadata
     original_source:
       - relation_type: prov:hadPrimarySource
@@ -50,7 +50,7 @@ products:
   - category: OntologyProduct
     description: An ontology based on a theory of document acts describing what people can do with documents
     format: owl
-    id: iao.d-acts.owl
+    id: "iao.d-acts.owl"
     name: ontology of document acts
     original_source:
       - relation_type: prov:hadPrimarySource
@@ -60,7 +60,7 @@ products:
   - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
-    id: chr.model.owl
+    id: "chr.model.owl"
     name: Monochrom Ontology OWL release
     original_source:
       - relation_type: prov:hadPrimarySource
@@ -84,7 +84,7 @@ products:
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
-    id: efo.owl
+    id: "efo.owl"
     name: EFO OWL
     original_source:
       - relation_type: prov:hadPrimarySource
@@ -178,7 +178,7 @@ products:
   - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
-    id: efo.obo
+    id: "efo.obo"
     name: EFO OBO
     original_source:
       - relation_type: prov:hadPrimarySource
@@ -272,7 +272,7 @@ products:
   - category: GraphProduct
     description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples format.
     format: ntriples
-    id: orkg.dump
+    id: "orkg.dump"
     name: ORKG RDF Dump
     original_source:
       - relation_type: prov:hadPrimarySource
@@ -303,7 +303,15 @@ products:
         source: obi
     product_file_size: 642902930
     product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
-publications: []
+publications:
+  - authors:
+      - Ceusters W
+    doi: "10.3233/978-1-61499-101-4-68"
+    id: "https://pubmed.ncbi.nlm.nih.gov/22874154"
+    journal: Stud Health Technol Inform
+    preferred: true
+    title: An information artifact ontology perspective on data collections and associated representational artifacts
+    year: "2012"
 repository: https://github.com/information-artifact-ontology/IAO
 ---
 

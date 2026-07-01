@@ -26,7 +26,8 @@ domains:
 - drug discovery
 homepage_url: http://patho.phenomebrowser.net/
 id: pathophenodb
-last_modified_date: '2026-05-30T00:00:00Z'
+infores_id: path-pheno-db
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: PathoPhenoDB
 products:

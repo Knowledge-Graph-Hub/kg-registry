@@ -9,19 +9,19 @@ contacts:
     orcid: 0000-0002-3469-4923
     contact_details:
       - contact_type: email
-        value: janna.hastings@gmail.com
+        value: "janna.hastings@gmail.com"
       - contact_type: github
-        value: jannahastings
+        value: "jannahastings"
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to describe and classify mental diseases such as schizophrenia, annotated with DSM-IV and ICD codes where applicable
 domains:
   - biomedical
 homepage_url: https://github.com/jannahastings/mental-functioning-ontology
-id: mfomd
-last_modified_date: '2026-04-15T00:00:00Z'
+id: "mfomd"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/3.0/
+  id: "http://creativecommons.org/licenses/by/3.0/"
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mental Disease Ontology
@@ -29,7 +29,7 @@ products:
   - category: OntologyProduct
     description: Mental Disease Ontology in OWL format
     format: owl
-    id: mfomd.owl
+    id: "mfomd.owl"
     name: mfomd.owl
     product_file_size: 1294
     product_url: http://purl.obolibrary.org/obo/mfomd.owl
@@ -37,7 +37,16 @@ products:
       - source: mfomd
         relation_type: prov:hadPrimarySource
 repository: https://github.com/jannahastings/mental-functioning-ontology
-publications: []
+publications:
+  - authors:
+      - Werner Ceusters
+      - Barry Smith
+    doi: "10.1186/2041-1480-1-10"
+    id: "https://pubmed.ncbi.nlm.nih.gov/21143905"
+    journal: J Biomed Semantics
+    preferred: true
+    title: Foundations for a realist ontology of mental disease
+    year: "2010"
 ---
 
 ## Description
