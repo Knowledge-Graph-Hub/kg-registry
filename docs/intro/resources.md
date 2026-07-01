@@ -16,6 +16,7 @@ All Resources have the following attributes:
 - `contacts`: List of contact points
 - `products`: Specific representations of the resource
 - `activity_status`: Current state of the resource (active, inactive, etc.)
+- `use_instead`: KG-Registry Resource ID(s) that replace this resource (see _Pointing to a Replacement Resource_ below)
 - `tags`: Categorization tags
 - `funding`: Funding source information
 
@@ -45,6 +46,34 @@ This Resource defines an ontology, or a formal representation of a set of concep
 ### Aggregator
 
 This Resource combines multiple data sources.
+
+## Pointing to a Replacement Resource
+
+Some resources are obsoleted or absorbed by others over time. When that happens
+we do not delete the older Resource's page — its metadata still has historical
+and provenance value — but we point visitors toward whatever they should use in
+its place. This is done with the `use_instead` field, which holds one or more
+KG-Registry Resource IDs. On the Resource page these appear as a "Use instead"
+notice linking to the replacement(s).
+
+We apply `use_instead` conservatively, only when both of the following hold:
+
+- **The resource is not active.** Its `activity_status` is `inactive`,
+  `orphaned`, or `unresponsive`. We do not redirect users away from an active
+  resource, even if a similar one exists.
+- **There is a clear replacement.** This is usually one of two situations:
+  - A newer resource was explicitly intended to supersede the older one (for
+    example, a version 2 released under a new identifier), or
+  - The older resource has been subsumed by, merged into, or fully absorbed by
+    another resource that now covers its content.
+
+When neither a clear successor nor an absorbing resource exists — for instance a
+resource that was simply discontinued — we leave `use_instead` empty and rely on
+the `activity_status` banner alone. If a resource was split into several
+successors, or was subsumed by more than one resource, list each replacement ID.
+
+The value of each `use_instead` entry must be an existing KG-Registry Resource
+ID (the `id` of the replacement's page), not a name or URL.
 
 ## Domains
 

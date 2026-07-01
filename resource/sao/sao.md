@@ -40,6 +40,8 @@ products:
 publications: []
 taxon:
 - NCBITaxon:9606
+use_instead:
+- go
 ---
 ## Description
 

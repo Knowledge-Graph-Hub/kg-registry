@@ -35,6 +35,8 @@ products:
   product_file_size: 437531
   product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/NIF-Dysfunction.ttl
 publications: []
+use_instead:
+- doid
 ---
 ## Description
 

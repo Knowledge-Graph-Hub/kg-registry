@@ -36,6 +36,8 @@ products:
   product_file_size: 1475624
   product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/NIF-GrossAnatomy.ttl
 publications: []
+use_instead:
+- uberon
 ---
 ## Description
 

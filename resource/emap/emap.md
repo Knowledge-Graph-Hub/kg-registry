@@ -38,6 +38,8 @@ products:
 taxon:
   - NCBITaxon:10088
 publications: []
+use_instead:
+- emapa
 ---
 
 ## Description

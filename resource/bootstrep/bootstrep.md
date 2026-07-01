@@ -38,12 +38,19 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 publications: []
+use_instead:
+- go
 ---
 ## Description
 
 The BOOTStrep Gene Regulation Ontology is a conceptual model for gene regulation
 that covers regulatory processes, involved physical entities, and their relations,
 with a particular focus on NLP applications. This ontology is deprecated.
+
+The OBO Foundry records this ontology as replaced by `molecular_function`, which
+is not a standalone resource but the Molecular Function branch of the Gene
+Ontology (GO). The `use_instead` pointer therefore targets the `go` resource,
+the KG-Registry entry under which that content is maintained.
 
 ## Contacts
 

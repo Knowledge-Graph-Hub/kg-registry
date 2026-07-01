@@ -52,6 +52,8 @@ publications:
     journal: Syst Biol
     title: 'The teleost anatomy ontology: anatomical representation for the genomics age'
     year: '2010'
+use_instead:
+- uberon
 ---
 
 ## Description

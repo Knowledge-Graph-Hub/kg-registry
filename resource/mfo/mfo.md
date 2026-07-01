@@ -36,6 +36,8 @@ products:
       - source: mfo
         relation_type: prov:hadPrimarySource
 publications: []
+use_instead:
+- olatdv
 ---
 
 ## Description

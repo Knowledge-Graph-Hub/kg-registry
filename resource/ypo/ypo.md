@@ -27,6 +27,8 @@ products: []
 publications: []
 taxon:
 - NCBITaxon:4932
+use_instead:
+- apo
 ---
 ## Description
 

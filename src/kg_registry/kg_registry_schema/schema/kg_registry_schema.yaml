@@ -76,6 +76,17 @@ classes:
         description: >-
           The status of the resource.
         range: ActivityStatusEnum
+      use_instead:
+        description: >-
+          The identifier(s) of one or more other KG-Registry Resources
+          that should be used in place of this one. This is intended for
+          resources that are no longer active (e.g., inactive, orphaned,
+          or unresponsive) and have a clear replacement, such as when a
+          newer resource is meant to supersede an older one or when the
+          resource has been subsumed by another. Each value should be a
+          KG-Registry Resource ID.
+        range: string
+        multivalued: true
       name:
         description: >-
           The human-readable name of the resource.

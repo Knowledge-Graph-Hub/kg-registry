@@ -215,6 +215,16 @@
                         "null"
                     ]
                 },
+                "use_instead": {
+                    "description": "The identifier(s) of one or more other KG-Registry Resources that should be used in place of this one. This is intended for resources that are no longer active (e.g., inactive, orphaned, or unresponsive) and have a clear replacement, such as when a newer resource is meant to supersede an older one or when the resource has been subsumed by another. Each value should be a KG-Registry Resource ID.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "version": {
                     "description": "The version of the resource.",
                     "type": [
@@ -538,6 +548,16 @@
                     "description": "The usage(s) of the resource.",
                     "items": {
                         "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "use_instead": {
+                    "description": "The identifier(s) of one or more other KG-Registry Resources that should be used in place of this one. This is intended for resources that are no longer active (e.g., inactive, orphaned, or unresponsive) and have a clear replacement, such as when a newer resource is meant to supersede an older one or when the resource has been subsumed by another. Each value should be a KG-Registry Resource ID.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -983,6 +1003,16 @@
                     "description": "The usage(s) of the resource.",
                     "items": {
                         "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "use_instead": {
+                    "description": "The identifier(s) of one or more other KG-Registry Resources that should be used in place of this one. This is intended for resources that are no longer active (e.g., inactive, orphaned, or unresponsive) and have a clear replacement, such as when a newer resource is meant to supersede an older one or when the resource has been subsumed by another. Each value should be a KG-Registry Resource ID.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -2154,6 +2184,16 @@
                         "null"
                     ]
                 },
+                "use_instead": {
+                    "description": "The identifier(s) of one or more other KG-Registry Resources that should be used in place of this one. This is intended for resources that are no longer active (e.g., inactive, orphaned, or unresponsive) and have a clear replacement, such as when a newer resource is meant to supersede an older one or when the resource has been subsumed by another. Each value should be a KG-Registry Resource ID.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "version": {
                     "description": "The version of the resource.",
                     "type": [
@@ -2737,6 +2777,16 @@
                     "description": "The usage(s) of the resource.",
                     "items": {
                         "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "use_instead": {
+                    "description": "The identifier(s) of one or more other KG-Registry Resources that should be used in place of this one. This is intended for resources that are no longer active (e.g., inactive, orphaned, or unresponsive) and have a clear replacement, such as when a newer resource is meant to supersede an older one or when the resource has been subsumed by another. Each value should be a KG-Registry Resource ID.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -4078,6 +4128,16 @@
                     "description": "The usage(s) of the resource.",
                     "items": {
                         "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "use_instead": {
+                    "description": "The identifier(s) of one or more other KG-Registry Resources that should be used in place of this one. This is intended for resources that are no longer active (e.g., inactive, orphaned, or unresponsive) and have a clear replacement, such as when a newer resource is meant to supersede an older one or when the resource has been subsumed by another. Each value should be a KG-Registry Resource ID.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
