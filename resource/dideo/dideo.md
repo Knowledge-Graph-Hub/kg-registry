@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/DIDEO/DIDEO
 id: dideo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -143,7 +143,19 @@ products:
     source: uberon
   product_file_size: 936065236
   product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
-publications: []
+publications:
+- authors:
+  - John Judkins
+  - Jessica Tay-Sontheimer
+  - Richard D. Boyce
+  - Mathias Brochhausen
+  doi: 10.1186/s13326-018-0183-z
+  id: https://pubmed.ncbi.nlm.nih.gov/29743102
+  journal: J Biomed Semantics
+  preferred: true
+  title: Extending the DIDEO ontology to include entities from the natural product
+    drug interaction domain of discourse
+  year: '2018'
 repository: https://github.com/DIDEO/DIDEO
 ---
 ## Description
