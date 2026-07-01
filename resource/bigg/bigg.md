@@ -15,7 +15,8 @@ domains:
 - information technology
 homepage_url: http://bigg.ucsd.edu/
 id: bigg
-last_modified_date: '2025-09-27T00:00:00Z'
+infores_id: bigg-models
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: http://bigg.ucsd.edu/license#license

@@ -26,7 +26,8 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://drugs.ncats.io
 id: inxight-drugs
-last_modified_date: '2026-06-18T00:00:00Z'
+infores_id: inxight-drugs
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

@@ -22,7 +22,8 @@ domains:
 - pharmacology
 homepage_url: https://probeminer.icr.ac.uk
 id: probe-miner
-last_modified_date: '2026-06-18T00:00:00Z'
+infores_id: probe-miner
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

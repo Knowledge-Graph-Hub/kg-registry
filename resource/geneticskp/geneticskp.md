@@ -22,6 +22,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 id: geneticskp
+infores_id: genetics-data-provider
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Genetics KP

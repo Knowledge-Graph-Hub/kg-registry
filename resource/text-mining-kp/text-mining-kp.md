@@ -22,7 +22,8 @@ domains:
 - literature
 homepage_url: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
 id: text-mining-kp
-last_modified_date: '2026-05-28T00:00:00Z'
+infores_id: textmining-kp
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Text Mining KP
 products:

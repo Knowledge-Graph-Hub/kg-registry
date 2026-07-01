@@ -10,7 +10,8 @@ description: A Translator Knowledge Provider focusing on genetic data.
 domains:
   - biomedical
 id: genetics-kp
-last_modified_date: '2026-02-20T00:00:00Z'
+infores_id: genetics-data-provider
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Genetics KP
 products:

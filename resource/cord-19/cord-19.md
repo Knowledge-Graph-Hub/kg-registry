@@ -26,7 +26,8 @@ domains:
 - information technology
 homepage_url: https://allenai.org/data/cord-19
 id: cord-19
-last_modified_date: '2026-06-18T00:00:00Z'
+infores_id: cord19
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
