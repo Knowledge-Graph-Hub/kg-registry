@@ -206,9 +206,9 @@ products:
     source: oma
   product_url: https://omabrowser.org/All/oma-species.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: Product
   compression: gzip

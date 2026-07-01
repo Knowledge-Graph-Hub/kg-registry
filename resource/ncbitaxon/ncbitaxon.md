@@ -59,11 +59,11 @@ products:
     source: ncbitaxon
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim
@@ -1566,6 +1566,7 @@ products:
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
+  format: tsv
   id: np-kg.graph.tsv
   name: NP-KG TSV
   original_source:
@@ -1619,6 +1620,7 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
     multidigraph object
   dump_format: gpickle
+  format: mixed
   id: np-kg.graph.networkx
   name: NP-KG gpickle
   original_source:

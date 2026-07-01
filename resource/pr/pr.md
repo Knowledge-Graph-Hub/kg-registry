@@ -52,9 +52,9 @@ products:
   name: pro_nonreasoned.owl
   product_url: http://purl.obolibrary.org/obo/pr-asserted.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: PRO without reasoning applied, OBO format.
@@ -63,11 +63,11 @@ products:
   name: pro_nonreasoned.obo
   product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-24: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   format: mixed
@@ -594,6 +594,7 @@ products:
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
+  format: tsv
   id: np-kg.graph.tsv
   name: NP-KG TSV
   original_source:
@@ -647,6 +648,7 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
     multidigraph object
   dump_format: gpickle
+  format: mixed
   id: np-kg.graph.networkx
   name: NP-KG gpickle
   original_source:

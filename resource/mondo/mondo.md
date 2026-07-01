@@ -2772,9 +2772,9 @@ products:
     kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
     (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
     public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
@@ -2816,13 +2816,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
+  format: tsv
   id: np-kg.graph.tsv
   name: NP-KG TSV
   original_source:
@@ -2876,6 +2877,7 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
     multidigraph object
   dump_format: gpickle
+  format: mixed
   id: np-kg.graph.networkx
   name: NP-KG gpickle
   original_source:
@@ -2927,6 +2929,7 @@ products:
   product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

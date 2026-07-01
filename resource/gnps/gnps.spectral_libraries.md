@@ -8,10 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: gnps
 product_url: https://external.gnps2.org/gnpslibrary
-warnings:
-- File was not able to be retrieved when checked on 2026-06-26_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-06-25_ HTTP 502 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

@@ -1016,9 +1016,9 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 500 error
     when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
@@ -1610,6 +1610,7 @@ products:
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
+  format: tsv
   id: np-kg.graph.tsv
   name: NP-KG TSV
   original_source:
@@ -1663,6 +1664,7 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
     multidigraph object
   dump_format: gpickle
+  format: mixed
   id: np-kg.graph.networkx
   name: NP-KG gpickle
   original_source:

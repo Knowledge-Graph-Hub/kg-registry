@@ -2146,9 +2146,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
@@ -2458,11 +2458,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
@@ -2750,6 +2750,7 @@ products:
 - category: GraphProduct
   description: GP_KG.txt
   edge_count: 1246726
+  format: txt
   id: gp-kg.graph
   name: GP-KG
   node_count: 61146
@@ -2882,9 +2883,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
@@ -2925,6 +2926,7 @@ products:
     source: wipo-tkp
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

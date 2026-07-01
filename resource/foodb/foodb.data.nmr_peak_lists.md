@@ -10,6 +10,8 @@ original_source:
   source: foodb
 product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
 warnings:
+- File was not able to be retrieved when checked on 2026-06-27_ HTTP 500 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-06-26_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-06-25_ Timeout connecting

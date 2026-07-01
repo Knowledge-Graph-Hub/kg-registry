@@ -43,6 +43,7 @@ products:
 - category: GraphProduct
   description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
   dump_format: neo4j
+  format: http
   id: genomickb.graph
   name: GenomicKB Graph Dump
   original_source:

@@ -644,6 +644,7 @@ products:
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   edge_count: 15211571
+  format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -3014,11 +3015,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-26: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-07-01: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'

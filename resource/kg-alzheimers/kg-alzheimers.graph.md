@@ -56,8 +56,6 @@ original_source:
   source: mesh
 product_file_size: 210868256
 product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-warnings:
-- File was not able to be retrieved when checked on 2026-06-27_ HTTP 404 error when
-  accessing file (KG-Hub host migration; no GitHub releases mirror available)
+warnings: []
 layout: product_detail
 ---

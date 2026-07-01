@@ -702,6 +702,8 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphProduct
   description: Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory
     interactions, and disease associations
@@ -726,6 +728,7 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+  product_url: https://github.com/MaayanLab/lncRNAlyzr
 - category: GraphProduct
   description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,
     transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and
@@ -1353,6 +1356,7 @@ products:
 - category: GraphProduct
   description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
   dump_format: neo4j
+  format: http
   id: genomickb.graph
   name: GenomicKB Graph Dump
   original_source:
@@ -1408,6 +1412,7 @@ products:
 - category: GraphProduct
   description: GP_KG.txt
   edge_count: 1246726
+  format: txt
   id: gp-kg.graph
   name: GP-KG
   node_count: 61146

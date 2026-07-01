@@ -992,6 +992,7 @@ products:
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   edge_count: 15211571
+  format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -3430,6 +3431,8 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
     and disease information for drug repositioning.
@@ -5032,6 +5035,7 @@ products:
 - category: GraphProduct
   description: GP_KG.txt
   edge_count: 1246726
+  format: txt
   id: gp-kg.graph
   name: GP-KG
   node_count: 61146
@@ -5173,9 +5177,9 @@ products:
     kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
     (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
     public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
@@ -5217,13 +5221,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
+  format: tsv
   id: np-kg.graph.tsv
   name: NP-KG TSV
   original_source:
@@ -5277,6 +5282,7 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
     multidigraph object
   dump_format: gpickle
+  format: mixed
   id: np-kg.graph.networkx
   name: NP-KG gpickle
   original_source:
@@ -5328,6 +5334,7 @@ products:
   product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

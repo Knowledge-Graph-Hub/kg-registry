@@ -39,9 +39,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -62,9 +62,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -603,6 +603,7 @@ products:
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   edge_count: 15211571
+  format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:

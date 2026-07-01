@@ -1325,6 +1325,7 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+  product_url: https://github.com/MaayanLab/lncRNAlyzr
 - category: GraphicalInterface
   description: Graphical interface for MedKG
   format: http

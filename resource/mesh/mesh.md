@@ -1248,11 +1248,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -1279,11 +1279,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -1313,11 +1313,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -1607,11 +1607,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Source CSV tables for AcuKG, including acupoint therapeutic actions,

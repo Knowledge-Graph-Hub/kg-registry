@@ -2842,11 +2842,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
@@ -3165,6 +3165,7 @@ products:
 - category: GraphProduct
   description: GP_KG.txt
   edge_count: 1246726
+  format: txt
   id: gp-kg.graph
   name: GP-KG
   node_count: 61146
@@ -3366,6 +3367,7 @@ products:
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
+  format: tsv
   id: np-kg.graph.tsv
   name: NP-KG TSV
   original_source:
@@ -3419,6 +3421,7 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
     multidigraph object
   dump_format: gpickle
+  format: mixed
   id: np-kg.graph.networkx
   name: NP-KG gpickle
   original_source:
@@ -3507,6 +3510,7 @@ products:
     source: wipo-tkp
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

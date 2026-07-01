@@ -317,6 +317,7 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+  product_url: https://github.com/MaayanLab/lncRNAlyzr
 - category: Product
   description: Current HuRI TSV file containing 52,569 systematically mapped binary
     human protein-protein interactions, provided as interacting Ensembl gene ID pairs
@@ -624,6 +625,7 @@ products:
 - category: GraphProduct
   description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
   dump_format: neo4j
+  format: http
   id: genomickb.graph
   name: GenomicKB Graph Dump
   original_source:

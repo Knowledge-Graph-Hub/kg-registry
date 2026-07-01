@@ -1653,6 +1653,7 @@ products:
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   edge_count: 15211571
+  format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -3938,6 +3939,8 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphicalInterface
   description: Browser for complete Hetionet v1.0 graph database in Neo4j
   format: http
@@ -6276,9 +6279,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
@@ -6442,6 +6445,7 @@ products:
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

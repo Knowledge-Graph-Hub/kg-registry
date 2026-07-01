@@ -403,11 +403,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -434,11 +434,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -468,11 +468,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -1611,9 +1611,9 @@ products:
     kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
     (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
     public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
@@ -1655,9 +1655,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
@@ -1821,6 +1821,7 @@ products:
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

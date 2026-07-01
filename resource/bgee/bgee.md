@@ -812,6 +812,7 @@ products:
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   edge_count: 15211571
+  format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -2258,6 +2259,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

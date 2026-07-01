@@ -531,6 +531,7 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+  product_url: https://github.com/MaayanLab/lncRNAlyzr
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources

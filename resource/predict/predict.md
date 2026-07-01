@@ -65,11 +65,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: Product
   description: Curated TSV catalog of drug-disease indications classified as disease-modifying,

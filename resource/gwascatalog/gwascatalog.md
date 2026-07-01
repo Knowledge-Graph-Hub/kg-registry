@@ -731,6 +731,8 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphicalInterface
   description: Graphical interface for MedKG
   format: http
@@ -1391,9 +1393,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -2188,6 +2190,7 @@ products:
 - category: GraphProduct
   description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
   dump_format: neo4j
+  format: http
   id: genomickb.graph
   name: GenomicKB Graph Dump
   original_source:

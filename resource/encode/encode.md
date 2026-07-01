@@ -169,6 +169,7 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+  product_url: https://github.com/MaayanLab/lncRNAlyzr
 - category: Product
   description: Harmonizome 3.0 processed dataset downloads, including dataset-specific
     association files and knowledge graph serialization downloads.
@@ -945,6 +946,7 @@ products:
 - category: GraphProduct
   description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
   dump_format: neo4j
+  format: http
   id: genomickb.graph
   name: GenomicKB Graph Dump
   original_source:

@@ -3,6 +3,7 @@ category: GraphProduct
 description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX
   multidigraph object
 dump_format: gpickle
+format: mixed
 id: np-kg.graph.networkx
 name: NP-KG gpickle
 original_source:

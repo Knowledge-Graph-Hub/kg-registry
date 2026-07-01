@@ -2909,9 +2909,9 @@ products:
     kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
     (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
     public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-06-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
@@ -2952,6 +2952,7 @@ products:
     source: wipo-tkp
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

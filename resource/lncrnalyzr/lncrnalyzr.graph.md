@@ -23,5 +23,6 @@ original_source:
   source: kegg
 - relation_type: prov:hadPrimarySource
   source: doid
+product_url: https://github.com/MaayanLab/lncRNAlyzr
 layout: product_detail
 ---

@@ -49,9 +49,9 @@ products:
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
@@ -778,6 +778,7 @@ products:
 - category: GraphProduct
   description: GP_KG.txt
   edge_count: 1246726
+  format: txt
   id: gp-kg.graph
   name: GP-KG
   node_count: 61146

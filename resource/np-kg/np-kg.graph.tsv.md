@@ -2,6 +2,7 @@
 category: GraphProduct
 description: Merged KG with ontology-grounded KG and literature-based graph as TSV
   file
+format: tsv
 id: np-kg.graph.tsv
 name: NP-KG TSV
 original_source:

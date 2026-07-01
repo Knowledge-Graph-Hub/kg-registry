@@ -1180,6 +1180,8 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -2005,6 +2007,7 @@ products:
   product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

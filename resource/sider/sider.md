@@ -2217,6 +2217,7 @@ products:
     source: wipo-tkp
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
+  format: csv
   id: primekg.graph
   name: PrimeKG Full Dataset
   original_source:

@@ -58,9 +58,9 @@ products:
     source: enrichr
   product_url: https://maayanlab.cloud/Enrichr/datasetStatistics
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
@@ -211,6 +211,8 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: Product
   description: Node-table CSV snapshot from the Enrichr-KG downloads page containing
     node metadata for a current release

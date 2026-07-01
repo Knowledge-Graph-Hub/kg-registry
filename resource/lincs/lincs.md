@@ -535,6 +535,8 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphProduct
   description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,
     transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and
