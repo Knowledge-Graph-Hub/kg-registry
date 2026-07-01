@@ -18,7 +18,7 @@ domains:
   - chemistry and biochemistry
 homepage_url: https://github.com/proco-ontology/PROCO
 id: proco
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,7 +37,20 @@ products:
       - source: proco
         relation_type: prov:hadPrimarySource
 repository: https://github.com/proco-ontology/PROCO
-publications: []
+publications:
+  - authors:
+      - Schafer W
+      - Antonucci V
+      - He Y
+      - Dunn A
+      - Dance ZEX
+      - Nespor J
+      - Saeeda L
+    id: https://ceur-ws.org/Vol-3805/ICBO-2022_paper_4112.pdf
+    journal: CEUR Workshop Proceedings
+    preferred: true
+    title: Collaborative Development of a Process Chemistry Domain Ontology, PROCO
+    year: '2022'
 ---
 
 ## Description

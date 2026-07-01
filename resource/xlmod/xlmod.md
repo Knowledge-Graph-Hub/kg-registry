@@ -9,19 +9,19 @@ contacts:
     orcid: 0000-0003-4978-0864
     contact_details:
       - contact_type: email
-        value: lutz.fischer@tu-berlin.de
+        value: "lutz.fischer@tu-berlin.de"
       - contact_type: github
-        value: lutzfischer
+        value: "lutzfischer"
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry.
 domains:
   - chemistry and biochemistry
 homepage_url: http://www.psidev.info/groups/controlled-vocabularies
-id: xlmod
-last_modified_date: '2026-04-15T00:00:00Z'
+id: "xlmod"
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/3.0/
+  id: "https://creativecommons.org/licenses/by/3.0/"
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
@@ -29,7 +29,7 @@ products:
   - category: OntologyProduct
     description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary in OBO format
     format: obo
-    id: xlmod.obo
+    id: "xlmod.obo"
     name: xlmod.obo
     product_file_size: 56285
     product_url: http://purl.obolibrary.org/obo/xlmod.obo
@@ -39,7 +39,7 @@ products:
   - category: OntologyProduct
     description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary in OWL format
     format: owl
-    id: xlmod.owl
+    id: "xlmod.owl"
     name: xlmod.owl
     product_file_size: 96240
     product_url: http://purl.obolibrary.org/obo/xlmod.owl
@@ -47,7 +47,15 @@ products:
       - source: xlmod
         relation_type: prov:hadPrimarySource
 repository: https://github.com/HUPO-PSI/xlmod-CV
-publications: []
+publications:
+  - authors:
+      - Gerhard Mayer
+    doi: "10.48550/arXiv.2003.00329"
+    id: "https://doi.org/10.48550/arXiv.2003.00329"
+    journal: arXiv
+    preferred: true
+    title: 'XLMOD: Cross-linking and chromatography derivatization reagents ontology'
+    year: "2020"
 ---
 
 ## Description

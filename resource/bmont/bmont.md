@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/SCAI-BIO/BiomarkerOntology
 id: bmont
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

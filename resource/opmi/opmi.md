@@ -21,7 +21,7 @@ domains:
 - general
 homepage_url: https://github.com/OPMI/opmi
 id: opmi
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -39,8 +39,36 @@ products:
   original_source:
   - source: opmi
     relation_type: prov:hadPrimarySource
+publications:
+- authors:
+  - He Y
+  - Ong E
+  - Schaub J
+  - Dowd F
+  - O'Toole JF
+  - Siapos A
+  - Reich C
+  - Seager S
+  - Wan L
+  - Yu H
+  - Zheng J
+  - Stoeckert C
+  - Yang X
+  - Yang S
+  - Steck B
+  - Park C
+  - Barisoni L
+  - Kretzler M
+  - Himmelfarb J
+  - Iyengar R
+  - Mooney SD
+  id: http://ceur-ws.org/Vol-2931/ICBO_2019_paper_34.pdf
+  journal: CEUR Workshop Proceedings
+  preferred: true
+  title: 'OPMI: the Ontology of Precision Medicine and Investigation and its Support
+    for Clinical Data and Metadata Representation and Analysis'
+  year: '2019'
 repository: https://github.com/OPMI/opmi
-publications: []
 ---
 ## Description
 
