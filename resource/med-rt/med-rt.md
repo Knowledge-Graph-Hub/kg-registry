@@ -12,7 +12,7 @@ domains:
 homepage_url: https://evs.nci.nih.gov/ftp1/MED-RT/
 id: med-rt
 infores_id: medrt-umls
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: MED-RT
 products:
@@ -709,6 +709,24 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Brown SH
+  - Elkin PL
+  - Rosenbloom ST
+  - Husser C
+  - Bauer BA
+  - Lincoln MJ
+  - Carter J
+  - Erlbaum M
+  - Tuttle MS
+  doi: 10.3233/978-1-60750-949-3-477
+  id: https://pubmed.ncbi.nlm.nih.gov/15360858/
+  journal: Stud Health Technol Inform
+  preferred: true
+  title: 'VA National Drug File Reference Terminology: a cross-institutional content
+    coverage study'
+  year: '2004'
 ---
 # MED-RT
 

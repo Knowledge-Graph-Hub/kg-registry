@@ -14,7 +14,7 @@ domains:
 - biomedical
 homepage_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html
 id: sty
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://lhncbc.nlm.nih.gov/semanticnetwork/
@@ -70,6 +70,15 @@ products:
     source: sty
   product_file_size: 1583
   product_url: https://w3id.org/biopragmatics/resources/sty/sty.tsv
+publications:
+- authors:
+  - McCray AT
+  doi: 10.1002/cfg.255
+  id: https://www.ncbi.nlm.nih.gov/pubmed/18629109
+  journal: Comp Funct Genomics
+  preferred: true
+  title: An upper-level ontology for the biomedical domain
+  year: '2003'
 synonyms:
 - STY
 - UMLS semantic types

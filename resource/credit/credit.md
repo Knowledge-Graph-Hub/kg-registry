@@ -18,7 +18,7 @@ domains:
 fairsharing_id: FAIRsharing.fe4816
 homepage_url: https://credit.niso.org/
 id: credit
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -65,6 +65,19 @@ products:
     source: obo-db-ingest
   product_file_size: 1046
   product_url: https://w3id.org/biopragmatics/resources/credit/credit.tsv
+publications:
+- authors:
+  - Brand A
+  - Allen L
+  - Altman M
+  - Hlava M
+  - Scott J
+  doi: 10.1087/20150211
+  id: https://doi.org/10.1087/20150211
+  journal: Learned Publishing
+  preferred: true
+  title: 'Beyond authorship: attribution, contribution, collaboration, and credit'
+  year: '2015'
 ---
 # Credit
 

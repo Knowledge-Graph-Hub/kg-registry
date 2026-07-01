@@ -2,672 +2,679 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: contact.orphanet@inserm.fr
-  - contact_type: url
-    value: https://www.orpha.net/
-  label: Orphanet
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.inserm.fr/
-  label: INSERM
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: "contact.orphanet@inserm.fr"
+      - contact_type: url
+        value: "https://www.orpha.net/"
+    label: Orphanet
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: "https://www.inserm.fr/"
+    label: INSERM
 creation_date: '2025-06-04T00:00:00Z'
-description: The Orphanet Rare Disease Ontology (ORDO) is an open-access ontology
-  developed from the Orphanet information system, enabling complex queries of rare
-  diseases and their epidemiological data (age of onset, prevalence, mode of inheritance)
-  and gene-disorder functional relationships.
+description: The Orphanet Rare Disease Ontology (ORDO) is an open-access ontology developed from the Orphanet information system, enabling complex queries of rare diseases and their epidemiological data (age of onset, prevalence, mode of inheritance) and gene-disorder functional relationships.
 domains:
-- biomedical
-- clinical
-- genomics
-- phenotype
+  - biomedical
+  - clinical
+  - genomics
+  - phenotype
 homepage_url: https://www.orphadata.com/ordo/
-id: ordo
-infores_id: ordo
+id: "ordo"
+infores_id: "ordo"
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
+  id: "https://creativecommons.org/licenses/by/4.0/"
   label: CC BY 4.0 (Creative Commons Attribution 4.0 International)
 name: Orphanet Rare Disease Ontology (ORDO)
+publications:
+  - authors:
+      - Vasant D
+      - Chanas L
+      - Malone J
+      - Hanauer M
+      - Olry A
+      - Jupp S
+      - Robinson PN
+      - Parkinson H
+      - Rath A
+    id: "https://www.researchgate.net/publication/281824026_ORDO_An_Ontology_Connecting_Rare_Disease_Epidemiology_and_Genetic_Data"
+    journal: Bio-Ontologies SIG, ISMB 2014
+    preferred: true
+    title: 'ORDO: An Ontology Connecting Rare Disease, Epidemiology and Genetic Data'
+    year: "2014"
 products:
-- category: DataModelProduct
-  description: ORDO in OWL format in English (v4.8)
-  format: owl
-  id: ordo.owl
-  name: ORDO OWL
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  product_file_size: 50841163
-  product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.8.owl
-- category: ProgrammingInterface
-  description: SPARQL endpoint for querying the ORDO ontology
-  format: http
-  id: ordo.sparql
-  name: ORDO SPARQL Endpoint
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  product_url: https://www.orphadata.com/ordo-sparql-endpoint/
-- category: DataModelProduct
-  description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers)
-    for rare diseases, along with mappings to other terminologies, and is released
-    annually in July.
-  id: orphacode.nomenclature
-  name: Orphanet Nomenclature Pack
-  product_url: https://www.orphacode.org/pack-nomenclature/
-  warnings: []
-- category: ProgrammingInterface
-  description: API for accessing the Orphanet nomenclature pack data, allowing flexible
-    implementation into various healthcare information systems.
-  format: http
-  id: orphacode.api
-  name: ORPHAcodes API
-  product_url: https://api.orphacode.org/
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: bfo
-  - relation_type: prov:hadPrimarySource
-    source: bto
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clo
-  - relation_type: prov:hadPrimarySource
-    source: cob
-  - relation_type: prov:hadPrimarySource
-    source: dc
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: ecto
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: fbbt
-  - relation_type: prov:hadPrimarySource
-    source: fbdv
-  - relation_type: prov:hadPrimarySource
-    source: fma
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: hancestro
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: iao
-  - relation_type: prov:hadPrimarySource
-    source: ido
-  - relation_type: prov:hadPrimarySource
-    source: ma
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: mpath
-  - relation_type: prov:hadPrimarySource
-    source: ncbitaxon
-  - relation_type: prov:hadPrimarySource
-    source: ncit
-  - relation_type: prov:hadPrimarySource
-    source: oba
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: ogms
-  - relation_type: prov:hadPrimarySource
-    source: oio
-  - relation_type: prov:hadPrimarySource
-    source: omit
-  - relation_type: prov:hadPrimarySource
-    source: omo
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: po
-  - relation_type: prov:hadPrimarySource
-    source: pr
-  - relation_type: prov:hadPrimarySource
-    source: ro
-  - relation_type: prov:hadPrimarySource
-    source: semapv
-  - relation_type: prov:hadPrimarySource
-    source: skos
-  - relation_type: prov:hadPrimarySource
-    source: so
-  - relation_type: prov:hadPrimarySource
-    source: to
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wbls
-  - relation_type: prov:hadPrimarySource
-    source: zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: bfo
-  - relation_type: prov:hadPrimarySource
-    source: bto
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clo
-  - relation_type: prov:hadPrimarySource
-    source: cob
-  - relation_type: prov:hadPrimarySource
-    source: dc
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: ecto
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: fbbt
-  - relation_type: prov:hadPrimarySource
-    source: fbdv
-  - relation_type: prov:hadPrimarySource
-    source: fma
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: hancestro
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: iao
-  - relation_type: prov:hadPrimarySource
-    source: ido
-  - relation_type: prov:hadPrimarySource
-    source: ma
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: mpath
-  - relation_type: prov:hadPrimarySource
-    source: ncbitaxon
-  - relation_type: prov:hadPrimarySource
-    source: ncit
-  - relation_type: prov:hadPrimarySource
-    source: oba
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: ogms
-  - relation_type: prov:hadPrimarySource
-    source: oio
-  - relation_type: prov:hadPrimarySource
-    source: omit
-  - relation_type: prov:hadPrimarySource
-    source: omo
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: po
-  - relation_type: prov:hadPrimarySource
-    source: pr
-  - relation_type: prov:hadPrimarySource
-    source: ro
-  - relation_type: prov:hadPrimarySource
-    source: semapv
-  - relation_type: prov:hadPrimarySource
-    source: skos
-  - relation_type: prov:hadPrimarySource
-    source: so
-  - relation_type: prov:hadPrimarySource
-    source: to
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wbls
-  - relation_type: prov:hadPrimarySource
-    source: zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: 4dn
-  - relation_type: prov:hadPrimarySource
-    source: biomarker
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: connectivitymap
-  - relation_type: prov:hadPrimarySource
-    source: dct
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: edam
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: erccrbp
-  - relation_type: prov:hadPrimarySource
-    source: erccreg
-  - relation_type: prov:hadPrimarySource
-    source: faldo
-  - relation_type: prov:hadPrimarySource
-    source: gencode
-  - relation_type: prov:hadPrimarySource
-    source: glycocoo
-  - relation_type: prov:hadPrimarySource
-    source: glycordf
-  - relation_type: prov:hadPrimarySource
-    source: gtex
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: hra
-  - relation_type: prov:hadPrimarySource
-    source: hsapdv
-  - relation_type: prov:hadPrimarySource
-    source: hubmap
-  - relation_type: prov:hadPrimarySource
-    source: icd10
-  - relation_type: prov:hadPrimarySource
-    source: kidsfirst
-  - relation_type: prov:hadPrimarySource
-    source: lincs
-  - relation_type: prov:hadPrimarySource
-    source: loinc
-  - relation_type: prov:hadPrimarySource
-    source: mi
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: motrpac
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: msigdb
-  - relation_type: prov:hadPrimarySource
-    source: mw
-  - relation_type: prov:hadPrimarySource
-    source: npo
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: obib
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: pgo
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: sbo
-  - relation_type: prov:hadPrimarySource
-    source: sckan
-  - relation_type: prov:hadPrimarySource
-    source: sennet
-  - relation_type: prov:hadPrimarySource
-    source: snomedct
-  - relation_type: prov:hadPrimarySource
-    source: stellar
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: ubkg
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  product_url: https://ubkg-downloads.xconsortia.org/
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: 4dn
-  - relation_type: prov:hadPrimarySource
-    source: biomarker
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: connectivitymap
-  - relation_type: prov:hadPrimarySource
-    source: dct
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: edam
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: erccrbp
-  - relation_type: prov:hadPrimarySource
-    source: erccreg
-  - relation_type: prov:hadPrimarySource
-    source: faldo
-  - relation_type: prov:hadPrimarySource
-    source: gencode
-  - relation_type: prov:hadPrimarySource
-    source: glycocoo
-  - relation_type: prov:hadPrimarySource
-    source: glycordf
-  - relation_type: prov:hadPrimarySource
-    source: gtex
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: hra
-  - relation_type: prov:hadPrimarySource
-    source: hsapdv
-  - relation_type: prov:hadPrimarySource
-    source: hubmap
-  - relation_type: prov:hadPrimarySource
-    source: icd10
-  - relation_type: prov:hadPrimarySource
-    source: kidsfirst
-  - relation_type: prov:hadPrimarySource
-    source: lincs
-  - relation_type: prov:hadPrimarySource
-    source: loinc
-  - relation_type: prov:hadPrimarySource
-    source: mi
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: motrpac
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: msigdb
-  - relation_type: prov:hadPrimarySource
-    source: mw
-  - relation_type: prov:hadPrimarySource
-    source: npo
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: obib
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: pgo
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: sbo
-  - relation_type: prov:hadPrimarySource
-    source: sckan
-  - relation_type: prov:hadPrimarySource
-    source: sennet
-  - relation_type: prov:hadPrimarySource
-    source: snomedct
-  - relation_type: prov:hadPrimarySource
-    source: stellar
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: ubkg
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  product_url: https://ubkg-downloads.xconsortia.org/
-- category: ProgrammingInterface
-  description: Triple Pattern Fragments endpoint for RDKG
-  format: http
-  id: rdkg.tpf
-  name: RDKG TPF
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: rdkg
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: umls
-  product_url: https://apps.okn.us/ldf/rdkg
-- category: DocumentationProduct
-  description: Current Orphadata Science page for the Orphanet Rare Disease Ontology
-    release, including ORDO 4.8 OWL downloads and release notes
-  format: http
-  id: orphanet.ordo_release
-  name: ORDO Release Page
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: orphanet
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  product_url: https://sciences.orphadata.com/ordo/
-- category: GraphProduct
-  description: KGX distribution of the SRI-Reference KG
-  format: kgx
-  id: sri-reference-kg.graph
-  name: SRI-Reference KG (KGX distribution)
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: sri-reference-kg
-  - relation_type: prov:hadPrimarySource
-    source: alliance
-  - relation_type: prov:hadPrimarySource
-    source: bgee
-  - relation_type: prov:hadPrimarySource
-    source: biogrid
-  - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: ctd
-  - relation_type: prov:hadPrimarySource
-    source: dictybase
-  - relation_type: prov:hadPrimarySource
-    source: flybase
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: mgi
-  - relation_type: prov:hadPrimarySource
-    source: ncbigene
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: orphanet
-  - relation_type: prov:hadPrimarySource
-    source: panther
-  - relation_type: prov:hadPrimarySource
-    source: pombase
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: rgd
-  - relation_type: prov:hadPrimarySource
-    source: sgd
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: xenbase
-  - relation_type: prov:hadPrimarySource
-    source: zfin
-  - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
-    source: bfo
-  - relation_type: prov:hadPrimarySource
-    source: bspo
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: ddanat
-  - relation_type: prov:hadPrimarySource
-    source: ddpheno
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: dpo
-  - relation_type: prov:hadPrimarySource
-    source: eco
-  - relation_type: prov:hadPrimarySource
-    source: emapa
-  - relation_type: prov:hadPrimarySource
-    source: fbbt
-  - relation_type: prov:hadPrimarySource
-    source: fbdv
-  - relation_type: prov:hadPrimarySource
-    source: foodon
-  - relation_type: prov:hadPrimarySource
-    source: fypo
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: hsapdv
-  - relation_type: prov:hadPrimarySource
-    source: maxo
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: mpath
-  - relation_type: prov:hadPrimarySource
-    source: nbo
-  - relation_type: prov:hadPrimarySource
-    source: ncbitaxon
-  - relation_type: prov:hadPrimarySource
-    source: ncit
-  - relation_type: prov:hadPrimarySource
-    source: oba
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: pr
-  - relation_type: prov:hadPrimarySource
-    source: ro
-  - relation_type: prov:hadPrimarySource
-    source: so
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: upheno
-  - relation_type: prov:hadPrimarySource
-    source: wbbt
-  - relation_type: prov:hadPrimarySource
-    source: wbls
-  - relation_type: prov:hadPrimarySource
-    source: wbphenotype
-  - relation_type: prov:hadPrimarySource
-    source: xao
-  - relation_type: prov:hadPrimarySource
-    source: xpo
-  - relation_type: prov:hadPrimarySource
-    source: zfa
-  - relation_type: prov:hadPrimarySource
-    source: zfs
-  - relation_type: prov:hadPrimarySource
-    source: zp
-  - relation_type: prov:hadPrimarySource
-    source: icd10cm
-  - relation_type: prov:hadPrimarySource
-    source: icd11
-  - relation_type: prov:hadPrimarySource
-    source: decipher
-  - relation_type: prov:hadPrimarySource
-    source: mmrrc
-  - relation_type: prov:hadPrimarySource
-    source: cureid
-  - relation_type: prov:hadPrimarySource
-    source: phenopacket-store
-  product_file_size: 230046094
-  product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  - category: DataModelProduct
+    description: ORDO in OWL format in English (v4.8)
+    format: owl
+    id: "ordo.owl"
+    name: ORDO OWL
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+    product_file_size: 50841163
+    product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.8.owl
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying the ORDO ontology
+    format: http
+    id: "ordo.sparql"
+    name: ORDO SPARQL Endpoint
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+    product_url: https://www.orphadata.com/ordo-sparql-endpoint/
+  - category: DataModelProduct
+    description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers) for rare diseases, along with mappings to other terminologies, and is released annually in July.
+    id: "orphacode.nomenclature"
+    name: Orphanet Nomenclature Pack
+    product_url: https://www.orphacode.org/pack-nomenclature/
+    warnings: []
+  - category: ProgrammingInterface
+    description: API for accessing the Orphanet nomenclature pack data, allowing flexible implementation into various healthcare information systems.
+    format: http
+    id: "orphacode.api"
+    name: ORPHAcodes API
+    product_url: https://api.orphacode.org/
+  - category: OntologyProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: "efo.owl"
+    name: EFO OWL
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: bfo
+      - relation_type: prov:hadPrimarySource
+        source: bto
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cl
+      - relation_type: prov:hadPrimarySource
+        source: clo
+      - relation_type: prov:hadPrimarySource
+        source: cob
+      - relation_type: prov:hadPrimarySource
+        source: dc
+      - relation_type: prov:hadPrimarySource
+        source: doid
+      - relation_type: prov:hadPrimarySource
+        source: ecto
+      - relation_type: prov:hadPrimarySource
+        source: efo
+      - relation_type: prov:hadPrimarySource
+        source: fbbt
+      - relation_type: prov:hadPrimarySource
+        source: fbdv
+      - relation_type: prov:hadPrimarySource
+        source: fma
+      - relation_type: prov:hadPrimarySource
+        source: go
+      - relation_type: prov:hadPrimarySource
+        source: hancestro
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: iao
+      - relation_type: prov:hadPrimarySource
+        source: ido
+      - relation_type: prov:hadPrimarySource
+        source: ma
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: mp
+      - relation_type: prov:hadPrimarySource
+        source: mpath
+      - relation_type: prov:hadPrimarySource
+        source: ncbitaxon
+      - relation_type: prov:hadPrimarySource
+        source: ncit
+      - relation_type: prov:hadPrimarySource
+        source: oba
+      - relation_type: prov:hadPrimarySource
+        source: obi
+      - relation_type: prov:hadPrimarySource
+        source: ogms
+      - relation_type: prov:hadPrimarySource
+        source: oio
+      - relation_type: prov:hadPrimarySource
+        source: omit
+      - relation_type: prov:hadPrimarySource
+        source: omo
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: pato
+      - relation_type: prov:hadPrimarySource
+        source: po
+      - relation_type: prov:hadPrimarySource
+        source: pr
+      - relation_type: prov:hadPrimarySource
+        source: ro
+      - relation_type: prov:hadPrimarySource
+        source: semapv
+      - relation_type: prov:hadPrimarySource
+        source: skos
+      - relation_type: prov:hadPrimarySource
+        source: so
+      - relation_type: prov:hadPrimarySource
+        source: to
+      - relation_type: prov:hadPrimarySource
+        source: uberon
+      - relation_type: prov:hadPrimarySource
+        source: uo
+      - relation_type: prov:hadPrimarySource
+        source: wbls
+      - relation_type: prov:hadPrimarySource
+        source: zfa
+    product_file_size: 240665663
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+  - category: OntologyProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: "efo.obo"
+    name: EFO OBO
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: bfo
+      - relation_type: prov:hadPrimarySource
+        source: bto
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cl
+      - relation_type: prov:hadPrimarySource
+        source: clo
+      - relation_type: prov:hadPrimarySource
+        source: cob
+      - relation_type: prov:hadPrimarySource
+        source: dc
+      - relation_type: prov:hadPrimarySource
+        source: doid
+      - relation_type: prov:hadPrimarySource
+        source: ecto
+      - relation_type: prov:hadPrimarySource
+        source: efo
+      - relation_type: prov:hadPrimarySource
+        source: fbbt
+      - relation_type: prov:hadPrimarySource
+        source: fbdv
+      - relation_type: prov:hadPrimarySource
+        source: fma
+      - relation_type: prov:hadPrimarySource
+        source: go
+      - relation_type: prov:hadPrimarySource
+        source: hancestro
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: iao
+      - relation_type: prov:hadPrimarySource
+        source: ido
+      - relation_type: prov:hadPrimarySource
+        source: ma
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: mp
+      - relation_type: prov:hadPrimarySource
+        source: mpath
+      - relation_type: prov:hadPrimarySource
+        source: ncbitaxon
+      - relation_type: prov:hadPrimarySource
+        source: ncit
+      - relation_type: prov:hadPrimarySource
+        source: oba
+      - relation_type: prov:hadPrimarySource
+        source: obi
+      - relation_type: prov:hadPrimarySource
+        source: ogms
+      - relation_type: prov:hadPrimarySource
+        source: oio
+      - relation_type: prov:hadPrimarySource
+        source: omit
+      - relation_type: prov:hadPrimarySource
+        source: omo
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: pato
+      - relation_type: prov:hadPrimarySource
+        source: po
+      - relation_type: prov:hadPrimarySource
+        source: pr
+      - relation_type: prov:hadPrimarySource
+        source: ro
+      - relation_type: prov:hadPrimarySource
+        source: semapv
+      - relation_type: prov:hadPrimarySource
+        source: skos
+      - relation_type: prov:hadPrimarySource
+        source: so
+      - relation_type: prov:hadPrimarySource
+        source: to
+      - relation_type: prov:hadPrimarySource
+        source: uberon
+      - relation_type: prov:hadPrimarySource
+        source: uo
+      - relation_type: prov:hadPrimarySource
+        source: wbls
+      - relation_type: prov:hadPrimarySource
+        source: zfa
+    product_file_size: 64058275
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    format: neo4j
+    id: "ubkg.neo4j"
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: 4dn
+      - relation_type: prov:hadPrimarySource
+        source: biomarker
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cl
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: connectivitymap
+      - relation_type: prov:hadPrimarySource
+        source: dct
+      - relation_type: prov:hadPrimarySource
+        source: disgenet
+      - relation_type: prov:hadPrimarySource
+        source: doid
+      - relation_type: prov:hadPrimarySource
+        source: edam
+      - relation_type: prov:hadPrimarySource
+        source: efo
+      - relation_type: prov:hadPrimarySource
+        source: erccrbp
+      - relation_type: prov:hadPrimarySource
+        source: erccreg
+      - relation_type: prov:hadPrimarySource
+        source: faldo
+      - relation_type: prov:hadPrimarySource
+        source: gencode
+      - relation_type: prov:hadPrimarySource
+        source: glycocoo
+      - relation_type: prov:hadPrimarySource
+        source: glycordf
+      - relation_type: prov:hadPrimarySource
+        source: gtex
+      - relation_type: prov:hadPrimarySource
+        source: hgnc
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: hra
+      - relation_type: prov:hadPrimarySource
+        source: hsapdv
+      - relation_type: prov:hadPrimarySource
+        source: hubmap
+      - relation_type: prov:hadPrimarySource
+        source: icd10
+      - relation_type: prov:hadPrimarySource
+        source: kidsfirst
+      - relation_type: prov:hadPrimarySource
+        source: lincs
+      - relation_type: prov:hadPrimarySource
+        source: loinc
+      - relation_type: prov:hadPrimarySource
+        source: mi
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: motrpac
+      - relation_type: prov:hadPrimarySource
+        source: mp
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
+      - relation_type: prov:hadPrimarySource
+        source: mw
+      - relation_type: prov:hadPrimarySource
+        source: npo
+      - relation_type: prov:hadPrimarySource
+        source: obi
+      - relation_type: prov:hadPrimarySource
+        source: obib
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: pato
+      - relation_type: prov:hadPrimarySource
+        source: pgo
+      - relation_type: prov:hadPrimarySource
+        source: reactome
+      - relation_type: prov:hadPrimarySource
+        source: sbo
+      - relation_type: prov:hadPrimarySource
+        source: sckan
+      - relation_type: prov:hadPrimarySource
+        source: sennet
+      - relation_type: prov:hadPrimarySource
+        source: snomedct
+      - relation_type: prov:hadPrimarySource
+        source: stellar
+      - relation_type: prov:hadPrimarySource
+        source: string
+      - relation_type: prov:hadPrimarySource
+        source: uberon
+      - relation_type: prov:hadPrimarySource
+        source: ubkg
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
+      - relation_type: prov:hadPrimarySource
+        source: uo
+      - relation_type: prov:hadPrimarySource
+        source: wikipathways
+    product_url: https://ubkg-downloads.xconsortia.org/
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: "ubkg.csv"
+    name: UBKG Ontology CSV Files
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: 4dn
+      - relation_type: prov:hadPrimarySource
+        source: biomarker
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cl
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: connectivitymap
+      - relation_type: prov:hadPrimarySource
+        source: dct
+      - relation_type: prov:hadPrimarySource
+        source: disgenet
+      - relation_type: prov:hadPrimarySource
+        source: doid
+      - relation_type: prov:hadPrimarySource
+        source: edam
+      - relation_type: prov:hadPrimarySource
+        source: efo
+      - relation_type: prov:hadPrimarySource
+        source: erccrbp
+      - relation_type: prov:hadPrimarySource
+        source: erccreg
+      - relation_type: prov:hadPrimarySource
+        source: faldo
+      - relation_type: prov:hadPrimarySource
+        source: gencode
+      - relation_type: prov:hadPrimarySource
+        source: glycocoo
+      - relation_type: prov:hadPrimarySource
+        source: glycordf
+      - relation_type: prov:hadPrimarySource
+        source: gtex
+      - relation_type: prov:hadPrimarySource
+        source: hgnc
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: hra
+      - relation_type: prov:hadPrimarySource
+        source: hsapdv
+      - relation_type: prov:hadPrimarySource
+        source: hubmap
+      - relation_type: prov:hadPrimarySource
+        source: icd10
+      - relation_type: prov:hadPrimarySource
+        source: kidsfirst
+      - relation_type: prov:hadPrimarySource
+        source: lincs
+      - relation_type: prov:hadPrimarySource
+        source: loinc
+      - relation_type: prov:hadPrimarySource
+        source: mi
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: motrpac
+      - relation_type: prov:hadPrimarySource
+        source: mp
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
+      - relation_type: prov:hadPrimarySource
+        source: mw
+      - relation_type: prov:hadPrimarySource
+        source: npo
+      - relation_type: prov:hadPrimarySource
+        source: obi
+      - relation_type: prov:hadPrimarySource
+        source: obib
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: pato
+      - relation_type: prov:hadPrimarySource
+        source: pgo
+      - relation_type: prov:hadPrimarySource
+        source: reactome
+      - relation_type: prov:hadPrimarySource
+        source: sbo
+      - relation_type: prov:hadPrimarySource
+        source: sckan
+      - relation_type: prov:hadPrimarySource
+        source: sennet
+      - relation_type: prov:hadPrimarySource
+        source: snomedct
+      - relation_type: prov:hadPrimarySource
+        source: stellar
+      - relation_type: prov:hadPrimarySource
+        source: string
+      - relation_type: prov:hadPrimarySource
+        source: uberon
+      - relation_type: prov:hadPrimarySource
+        source: ubkg
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
+      - relation_type: prov:hadPrimarySource
+        source: uo
+      - relation_type: prov:hadPrimarySource
+        source: wikipathways
+    product_url: https://ubkg-downloads.xconsortia.org/
+  - category: ProgrammingInterface
+    description: Triple Pattern Fragments endpoint for RDKG
+    format: http
+    id: "rdkg.tpf"
+    name: RDKG TPF
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: rdkg
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: omim
+      - relation_type: prov:hadPrimarySource
+        source: umls
+    product_url: https://apps.okn.us/ldf/rdkg
+  - category: DocumentationProduct
+    description: Current Orphadata Science page for the Orphanet Rare Disease Ontology release, including ORDO 4.8 OWL downloads and release notes
+    format: http
+    id: "orphanet.ordo_release"
+    name: ORDO Release Page
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: orphanet
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+    product_url: https://sciences.orphadata.com/ordo/
+  - category: GraphProduct
+    description: KGX distribution of the SRI-Reference KG
+    format: kgx
+    id: "sri-reference-kg.graph"
+    name: SRI-Reference KG (KGX distribution)
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: sri-reference-kg
+      - relation_type: prov:hadPrimarySource
+        source: alliance
+      - relation_type: prov:hadPrimarySource
+        source: bgee
+      - relation_type: prov:hadPrimarySource
+        source: biogrid
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: ctd
+      - relation_type: prov:hadPrimarySource
+        source: dictybase
+      - relation_type: prov:hadPrimarySource
+        source: flybase
+      - relation_type: prov:hadPrimarySource
+        source: goa
+      - relation_type: prov:hadPrimarySource
+        source: hgnc
+      - relation_type: prov:hadPrimarySource
+        source: mgi
+      - relation_type: prov:hadPrimarySource
+        source: ncbigene
+      - relation_type: prov:hadPrimarySource
+        source: omim
+      - relation_type: prov:hadPrimarySource
+        source: orphanet
+      - relation_type: prov:hadPrimarySource
+        source: panther
+      - relation_type: prov:hadPrimarySource
+        source: pombase
+      - relation_type: prov:hadPrimarySource
+        source: reactome
+      - relation_type: prov:hadPrimarySource
+        source: rgd
+      - relation_type: prov:hadPrimarySource
+        source: sgd
+      - relation_type: prov:hadPrimarySource
+        source: string
+      - relation_type: prov:hadPrimarySource
+        source: wormbase
+      - relation_type: prov:hadPrimarySource
+        source: xenbase
+      - relation_type: prov:hadPrimarySource
+        source: zfin
+      - relation_type: prov:hadPrimarySource
+        source: phenio
+      - relation_type: prov:hadPrimarySource
+        source: bfo
+      - relation_type: prov:hadPrimarySource
+        source: bspo
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cl
+      - relation_type: prov:hadPrimarySource
+        source: ddanat
+      - relation_type: prov:hadPrimarySource
+        source: ddpheno
+      - relation_type: prov:hadPrimarySource
+        source: doid
+      - relation_type: prov:hadPrimarySource
+        source: dpo
+      - relation_type: prov:hadPrimarySource
+        source: eco
+      - relation_type: prov:hadPrimarySource
+        source: emapa
+      - relation_type: prov:hadPrimarySource
+        source: fbbt
+      - relation_type: prov:hadPrimarySource
+        source: fbdv
+      - relation_type: prov:hadPrimarySource
+        source: foodon
+      - relation_type: prov:hadPrimarySource
+        source: fypo
+      - relation_type: prov:hadPrimarySource
+        source: go
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: hsapdv
+      - relation_type: prov:hadPrimarySource
+        source: maxo
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: mp
+      - relation_type: prov:hadPrimarySource
+        source: mpath
+      - relation_type: prov:hadPrimarySource
+        source: nbo
+      - relation_type: prov:hadPrimarySource
+        source: ncbitaxon
+      - relation_type: prov:hadPrimarySource
+        source: ncit
+      - relation_type: prov:hadPrimarySource
+        source: oba
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: pato
+      - relation_type: prov:hadPrimarySource
+        source: pr
+      - relation_type: prov:hadPrimarySource
+        source: ro
+      - relation_type: prov:hadPrimarySource
+        source: so
+      - relation_type: prov:hadPrimarySource
+        source: uberon
+      - relation_type: prov:hadPrimarySource
+        source: upheno
+      - relation_type: prov:hadPrimarySource
+        source: wbbt
+      - relation_type: prov:hadPrimarySource
+        source: wbls
+      - relation_type: prov:hadPrimarySource
+        source: wbphenotype
+      - relation_type: prov:hadPrimarySource
+        source: xao
+      - relation_type: prov:hadPrimarySource
+        source: xpo
+      - relation_type: prov:hadPrimarySource
+        source: zfa
+      - relation_type: prov:hadPrimarySource
+        source: zfs
+      - relation_type: prov:hadPrimarySource
+        source: zp
+      - relation_type: prov:hadPrimarySource
+        source: icd10cm
+      - relation_type: prov:hadPrimarySource
+        source: icd11
+      - relation_type: prov:hadPrimarySource
+        source: decipher
+      - relation_type: prov:hadPrimarySource
+        source: mmrrc
+      - relation_type: prov:hadPrimarySource
+        source: cureid
+      - relation_type: prov:hadPrimarySource
+        source: phenopacket-store
+    product_file_size: 230046094
+    product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # Orphanet Rare Disease Ontology (ORDO)
 
 The Orphanet Rare Disease Ontology (ORDO) is a comprehensive, structured vocabulary specifically designed for rare diseases. It integrates rare disease classification with relationships between diseases, genes, and other relevant features. ORDO has been developed and is maintained by Orphanet, a reference portal for information on rare diseases and orphan drugs.
