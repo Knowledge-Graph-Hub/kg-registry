@@ -17,7 +17,7 @@ domains:
   - systems biology
 homepage_url: https://lncrnalyzr.maayanlab.cloud/
 id: lncrnalyzr
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -48,6 +48,7 @@ products:
     format: neo4j
     id: lncrnalyzr.graph
     name: lncRNAlyzr Knowledge Graph
+    product_url: https://github.com/MaayanLab/lncRNAlyzr
     original_source:
       - source: lncrnalyzr
         relation_type: prov:hadPrimarySource

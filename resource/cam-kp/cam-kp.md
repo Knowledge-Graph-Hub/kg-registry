@@ -71,10 +71,11 @@ products:
       - source: reactome
         relation_type: prov:hadPrimarySource
   - category: Product
-    description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes
+    description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes. Distributed as the canonical noctua-models repository, where each model is stored as a Turtle (TTL) file.
     id: cam-kp.go-cams
-    format: owl
+    format: ttl
     name: Gene Ontology CAMs
+    product_url: https://github.com/geneontology/noctua-models
     original_source:
       - source: cam-kp
         relation_type: prov:hadPrimarySource
@@ -148,7 +149,7 @@ publications:
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 ---
 
 # CAM-KP (Causal Activity Models Knowledge Provider)

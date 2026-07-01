@@ -22,7 +22,7 @@ domains:
 - biological systems
 homepage_url: https://maayanlab.cloud/enrichr-kg/
 id: enrichr-kg
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -73,6 +73,8 @@ products:
   format: neo4j
   id: enrichr-kg.graph
   name: Enrichr-KG Neo4j Database
+  product_file_size: 522141103
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
   original_source:
   - relation_type: prov:hadPrimarySource
     source: enrichr-kg
