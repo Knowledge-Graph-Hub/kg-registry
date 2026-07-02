@@ -1,6 +1,12 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://markerdb.ca/contact
+  label: Wishart Lab, University of Alberta
 creation_date: '2026-05-29T00:00:00Z'
 description: MarkerDB 2.0 is a freely available molecular biomarker database that
   consolidates clinical and selected pre-clinical biomarkers across protein, chemical,
@@ -11,8 +17,11 @@ domains:
 - clinical
 homepage_url: https://markerdb.ca/
 id: markerdb
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc/4.0/
+  label: CC-BY-NC-4.0
 name: MarkerDB
 products:
 - category: Product
@@ -70,11 +79,6 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: uniprot
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
-    when accessing file'
 - category: Product
   description: TSV export of MarkerDB chemical biomarkers with associated conditions
     and concentration data.
@@ -90,13 +94,6 @@ products:
     source: hmdb
   - relation_type: prov:wasInformedBy
     source: pubchem
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
-    to URL: HTTPSConnectionPool(host=''markerdb.ca'', port=443): Max retries exceeded
-    with url: /pages/download_all_chemicals?format=tsv (Caused by SSLError(SSLEOFError(8,
-    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
 - category: Product
   description: TSV export of MarkerDB genetic biomarkers with associated conditions.
   format: tsv
@@ -113,9 +110,6 @@ products:
     source: gwascatalog
   - relation_type: prov:wasInformedBy
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
 - category: Product
   description: TSV export of MarkerDB karyotype biomarkers with associated conditions.
   format: tsv
@@ -125,9 +119,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: markerdb
   product_url: https://markerdb.ca/pages/download_all_karyotypes?format=tsv
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

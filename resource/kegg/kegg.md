@@ -29,7 +29,7 @@ domains:
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
 infores_id: kegg
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.kegg.jp/feedback/copyright.html

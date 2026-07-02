@@ -29,7 +29,7 @@ domains:
 homepage_url: https://foodb.ca/
 id: foodb
 infores_id: foodb
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -195,13 +195,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 525 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -212,11 +205,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: Experimental MS-MS Spectra data from FooDB
@@ -227,13 +215,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: Predicted MS-MS Spectra data from FooDB
@@ -244,11 +225,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: NMR Spectra data from FooDB
@@ -259,13 +235,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: Product
   description: FooDB downloads page listing the available bulk data archives, spectra,
     peak lists, and supplementary files (including NMR Free Induction Decay data).
@@ -288,13 +257,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 525 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: Experimental C-MS peak lists from FooDB.
@@ -305,13 +267,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_peak_lists.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 525 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: Predicted C-MS peak lists from FooDB.
@@ -322,13 +277,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_peak_lists.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 525 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: Experimental MS-MS peak lists from FooDB.
@@ -339,13 +287,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_peak_lists.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 525 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: Predicted MS-MS peak lists from FooDB.
@@ -356,11 +297,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_peak_lists.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: Timeout connecting
-    to URL'
 - category: Product
   compression: zip
   description: NMR peak lists from FooDB.
@@ -371,13 +307,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-25: Timeout connecting
-    to URL'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.

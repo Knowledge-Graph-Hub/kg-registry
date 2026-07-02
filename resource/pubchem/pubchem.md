@@ -7,7 +7,7 @@ contacts:
   - contact_type: email
     value: info@ncbi.nlm.nih.gov
   - contact_type: url
-    value: https://pubchem.ncbi.nlm.nih.gov/contact
+    value: https://pubchem.ncbi.nlm.nih.gov/docs/contact
   id: ncbi
   label: National Center for Biotechnology Information (NCBI)
 creation_date: '2025-05-04T00:00:00Z'
@@ -20,7 +20,7 @@ domains:
 homepage_url: https://pubchem.ncbi.nlm.nih.gov/
 id: pubchem
 infores_id: pubchem
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -2508,7 +2508,7 @@ publications:
   preferred: true
   title: PubChem 2019 update - improved access to chemical data
   year: '2019'
-repository: https://github.com/ncbi/NCBI-Datasets
+repository: https://github.com/ncbi/datasets
 ---
 PubChem is a database of chemical molecules and their activities against biological assays maintained by the National Center for Biotechnology Information (NCBI), a component of the National Library of Medicine, which is part of the United States National Institutes of Health (NIH).
 

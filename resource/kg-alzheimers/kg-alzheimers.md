@@ -19,7 +19,7 @@ domains:
 - neuroscience
 homepage_url: https://kghub.org/kg-alzheimers/index.html
 id: kg-alzheimers
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -83,7 +83,10 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-  warnings: []
+  warnings:
+  - File was not able to be retrieved when checked on 2026-07-01; no live download
+    location was found (GitHub releases, kghub.io/current, and Zenodo all return
+    404 or have no published artifact).
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 taxon:
 - NCBITaxon:9606
