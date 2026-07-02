@@ -1652,7 +1652,7 @@ products:
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous
     networks)
-  id: hetnetpy
+  id: hetionet.hetnetpy
   name: hetnetpy
   original_source:
   - relation_type: prov:hadPrimarySource
