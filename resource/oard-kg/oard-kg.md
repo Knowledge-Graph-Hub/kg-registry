@@ -16,6 +16,13 @@ products:
   original_source:
   - source: oard-kg
     relation_type: prov:hadPrimarySource
+  - source: oard
+    relation_type: prov:hadPrimarySource
+  secondary_source:
+  - source: hp
+    relation_type: prov:wasInfluencedBy
+  - source: mondo
+    relation_type: prov:wasInfluencedBy
 - id: oard-kg.tpf
   format: http
   name: Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF
@@ -26,12 +33,19 @@ products:
   original_source:
   - source: oard-kg
     relation_type: prov:hadPrimarySource
+  - source: oard
+    relation_type: prov:hadPrimarySource
+  secondary_source:
+  - source: hp
+    relation_type: prov:wasInfluencedBy
+  - source: mondo
+    relation_type: prov:wasInfluencedBy
 collection:
 - okn
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 contacts:
 - category: Individual
   label: Casey Ta
