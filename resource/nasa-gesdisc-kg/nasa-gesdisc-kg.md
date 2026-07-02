@@ -49,8 +49,22 @@ products:
   original_source:
   - source: nasa-gesdisc-kg
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: The NASA Knowledge Graph Dataset (NASA-GESDISC-KG), an RDF knowledge
+    graph integrating NASA satellite datasets, scientific publications, instruments,
+    platforms, projects, data centers, and science keywords, derived from NASA GES
+    DISC data holdings.
+  format: ttl
+  id: nasa-gesdisc-kg.graph
+  name: NASA-GESDISC-KG Graph
+  original_source:
+  - source: nasa-gesdisc-kg
+    relation_type: prov:hadPrimarySource
+  - source: nasa-gesdisc
+    relation_type: prov:wasDerivedFrom
+  product_url: https://frink.renci.org/nasa-gesdisc-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 NASA-GESDISC-KG
 

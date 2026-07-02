@@ -21,7 +21,7 @@ contacts:
 description: SCALES is an integrated justice platform to connect criminal justice
   data across data silos.
 domains:
-- public health
+- general
 homepage_url: https://scales-okn.org/
 id: scales
 layout: resource_detail
@@ -44,8 +44,20 @@ products:
   original_source:
   - source: scales
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: SCALES knowledge graph of U.S. federal court records, derived from PACER
+    data and served via the SCALES SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: scales.graph
+  name: SCALES Knowledge Graph
+  original_source:
+  - source: scales
+    relation_type: prov:hadPrimarySource
+  - source: pacer
+    relation_type: prov:wasDerivedFrom
+  product_url: https://scales-okn.org/
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 SCALES
 

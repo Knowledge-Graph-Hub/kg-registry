@@ -14,6 +14,18 @@ contacts:
     value: Prabhadeus
   label: Prabhjot Singh
 products:
+- id: maudekg.graph
+  name: FDA MAUDE Adverse Event Knowledge Graph
+  description: RDF knowledge graph constructed from FDA MAUDE medical-device adverse
+    event reports using standardized FDA product codes.
+  category: GraphProduct
+  format: ttl
+  product_url: https://frink.renci.org/maudekg
+  original_source:
+  - source: maudekg
+    relation_type: prov:hadPrimarySource
+  - source: maude
+    relation_type: prov:wasDerivedFrom
 - id: maudekg.sparql
   name: FDA MAUDE Adverse Event Knowledge Graph SPARQL
   description: SPARQL endpoint for FDA MAUDE Adverse Event Knowledge Graph
@@ -38,7 +50,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 domains:
 - biomedical
 - clinical

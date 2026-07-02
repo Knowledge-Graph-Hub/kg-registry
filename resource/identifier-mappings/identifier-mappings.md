@@ -19,7 +19,7 @@ contacts:
 description: Mappings using standard RDF predicates between Wikidata entities and
   external identifiers represented as RDF IRIs
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 domains:
 - general
 homepage_url: https://www.wikidata.org/
@@ -27,6 +27,18 @@ id: identifier-mappings
 layout: resource_detail
 name: ID Mappings
 products:
+- category: GraphProduct
+  description: Mappings between Wikidata entities and external identifiers, extracted
+    and represented as RDF using standard RDF predicates
+  format: ttl
+  id: identifier-mappings.graph
+  name: ID Mappings Graph
+  original_source:
+  - source: identifier-mappings
+    relation_type: prov:hadPrimarySource
+  - source: wikidata
+    relation_type: prov:wasDerivedFrom
+  product_url: https://www.wikidata.org/
 - category: ProgrammingInterface
   description: SPARQL endpoint for ID Mappings
   format: http

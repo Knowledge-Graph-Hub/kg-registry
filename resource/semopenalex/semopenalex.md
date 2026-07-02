@@ -35,8 +35,21 @@ products:
   original_source:
   - source: semopenalex
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: RDF graph representation of the OpenAlex scholarly data as Linked Open
+    Data, distributed as Turtle (TTL) snapshots via the SemOpenAlex code and data
+    repository.
+  format: ttl
+  id: semopenalex.graph
+  name: SemOpenAlex RDF Graph
+  original_source:
+  - source: semopenalex
+    relation_type: prov:hadPrimarySource
+  - source: openalex
+    relation_type: prov:wasDerivedFrom
+  product_url: https://github.com/metaphacts/semopenalex
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 SemOpenAlex
 
