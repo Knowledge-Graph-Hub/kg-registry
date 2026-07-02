@@ -32,8 +32,6 @@ products:
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/core/HUMAN/mono/HOCOMOCOv11_core_pwms_HUMAN_mono.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: Product
@@ -47,8 +45,6 @@ products:
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/full/HUMAN/mono/HOCOMOCOv11_full_pwms_HUMAN_mono.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: Product
@@ -62,8 +58,8 @@ products:
     source: hocomoco
   product_url: https://hocomoco14.autosome.org/downloads_v11
 - category: GraphProduct
-  description: Core TF–target regulon knowledge graph (multi-species) with confidence
-    levels (A–E)
+  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
+    \ levels (A\u2013E)"
   id: dorothea.graph
   name: DoRothEA Regulon Graph
   original_source:

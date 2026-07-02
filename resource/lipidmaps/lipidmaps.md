@@ -33,8 +33,6 @@ products:
     source: lipidmaps
   product_url: https://www.lipidmaps.org/databases/lmsd/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 520 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 520 error
     when accessing file'
 - category: ProgrammingInterface
@@ -70,8 +68,6 @@ products:
     source: lipidmaps
   product_url: https://www.lipidmaps.org/databases/lmsd/overview
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 520 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 520 error
     when accessing file'
 - category: ProgrammingInterface
@@ -416,7 +412,7 @@ publications:
   - Andrea F Lopez-Clavijo
   - Caroline Ready
   - Shankar Subramaniam
-  - Valerie B O’Donnell
+  - "Valerie B O\u2019Donnell"
   doi: doi:10.1093/nar/gkad896
   id: doi:10.1093/nar/gkad896
   journal: Nucleic Acids Research

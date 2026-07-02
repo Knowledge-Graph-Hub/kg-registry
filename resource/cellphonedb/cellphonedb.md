@@ -33,8 +33,6 @@ products:
     source: cellphonedb
   product_url: https://www.cellphonedb.org/downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: ProcessProduct
@@ -387,8 +385,8 @@ publications:
   id: doi:10.1038/s41596-020-0292-x
   journal: Nature Protocols
   preferred: true
-  title: 'CellPhoneDB: inferring cell–cell communication from combined expression
-    of multi-subunit ligand–receptor complexes'
+  title: "CellPhoneDB: inferring cell\u2013cell communication from combined expression\
+    \ of multi-subunit ligand\u2013receptor complexes"
   year: '2020'
 repository: https://github.com/ventolab/CellphoneDB
 ---

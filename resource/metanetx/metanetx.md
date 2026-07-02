@@ -56,18 +56,16 @@ products:
     source: metanetx
   product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-26: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-26: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases
   format: tsv
@@ -78,12 +76,10 @@ products:
     source: metanetx
   product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+    header found
 - category: Product
   compression: gzip
   description: RDF version of the MetaNetX MNXref data for semantic web applications

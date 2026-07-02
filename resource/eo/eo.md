@@ -38,8 +38,6 @@ products:
     source: eo
   product_url: http://purl.obolibrary.org/obo/eo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
@@ -52,8 +50,6 @@ products:
     source: eo
   product_url: http://purl.obolibrary.org/obo/eo.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 publications:

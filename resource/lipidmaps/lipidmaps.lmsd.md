@@ -11,7 +11,7 @@ original_source:
   source: lipidmaps
 product_url: https://www.lipidmaps.org/databases/lmsd/download
 warnings:
-- File was not able to be retrieved when checked on 2026-06-27_ HTTP 520 error when
+- File was not able to be retrieved when checked on 2026-07-01_ HTTP 520 error when
   accessing file
 layout: product_detail
 ---

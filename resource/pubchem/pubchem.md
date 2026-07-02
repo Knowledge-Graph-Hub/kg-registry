@@ -1464,14 +1464,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+    header found'
   - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
     to URL: HTTPSConnectionPool(host=''markerdb.ca'', port=443): Max retries exceeded
     with url: /pages/download_all_chemicals?format=tsv (Caused by SSLError(SSLEOFError(8,
     ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-06-26: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
     for ChemIDplus substance records and annotations after the standalone NLM service
@@ -1499,8 +1497,6 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
 - category: GraphicalInterface

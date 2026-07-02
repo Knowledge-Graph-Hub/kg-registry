@@ -67,8 +67,6 @@ products:
     source: alphafold
   product_url: https://alphafold.ebi.ac.uk/help
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
@@ -654,7 +652,7 @@ publications:
   - Olaf Ronneberger
   - Kathryn Tunyasuvunakool
   - Russ Bates
-  - Augustin Žídek
+  - "Augustin \u017D\xEDdek"
   - Anna Potapenko
   - Alex Bridgland
   - Clemens Meyer
@@ -697,7 +695,7 @@ publications:
   - Oana Stroe
   - Gemma Wood
   - Agata Laydon
-  - Augustin Žídek
+  - "Augustin \u017D\xEDdek"
   - Tim Green
   - Kathryn Tunyasuvunakool
   - Stig Petersen

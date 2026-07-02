@@ -3011,18 +3011,14 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
-    on 2026-06-02.
-  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
-    during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-07-01: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
 - category: GraphProduct
   compression: gzip
   description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -4274,7 +4270,7 @@ publications:
   - Rose Oughtred
   - Jennifer Rust
   - Christie Chang
-  - Bobby‐Joe Breitkreutz
+  - "Bobby\u2010Joe Breitkreutz"
   - Chris Stark
   - Andrew Willems
   - Lorrie Boucher
@@ -4282,16 +4278,16 @@ publications:
   - Nadine Kolas
   - Frederick Zhang
   - Sonam Dolma
-  - Jasmin Coulombe‐Huntington
-  - Andrew Chatr‐aryamontri
+  - "Jasmin Coulombe\u2010Huntington"
+  - "Andrew Chatr\u2010aryamontri"
   - Kara Dolinski
   - Mike Tyers
   doi: 10.1002/pro.3978
   id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
-    genetic, and chemical interactions
+  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
+    \ protein, genetic, and chemical interactions"
   year: '2021'
 - authors:
   - Rose Oughtred
@@ -4301,7 +4297,7 @@ publications:
   - Lorrie Boucher
   - Christie Chang
   - Nadine Kolas
-  - Lara O’Donnell
+  - "Lara O\u2019Donnell"
   - Genie Leung
   - Rochelle McAdam
   - Frederick Zhang

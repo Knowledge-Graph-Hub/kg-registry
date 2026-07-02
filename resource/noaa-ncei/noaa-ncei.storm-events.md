@@ -10,5 +10,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: noaa-ncei
 product_url: https://www.ncdc.noaa.gov/stormevents/
+warnings:
+- File was not able to be retrieved when checked on 2026-07-01_ Timeout connecting
+  to URL
 layout: product_detail
 ---

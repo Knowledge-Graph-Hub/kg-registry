@@ -46,8 +46,6 @@ products:
   product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
   repository: https://git.bioconductor.org/packages/psygenet2r
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -88,12 +86,12 @@ products:
   product_url: https://www.disgenet.com/
 publications:
 - authors:
-  - Alba Gutiérrez-Sacristán
-  - Solène Grosdidier
+  - "Alba Guti\xE9rrez-Sacrist\xE1n"
+  - "Sol\xE8ne Grosdidier"
   - Olga Valverde
   - Marta Torrens
-  - Àlex Bravo
-  - Janet Piñero
+  - "\xC0lex Bravo"
+  - "Janet Pi\xF1ero"
   - Ferran Sanz
   - Laura I. Furlong
   doi: 10.1093/bioinformatics/btv301

@@ -1743,8 +1743,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3823,19 +3823,17 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
-    accessing file
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
     when accessing file. KG-Hub reorganization has taken the download offline; the
     kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
     (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
     public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -3874,12 +3872,10 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -4689,12 +4685,12 @@ publications:
   - Muhammad Arsalan
   - Carlos Moreno
   - Juan Mosquera
-  - Eloy Félix
-  - Tevfik Kizilören
+  - "Eloy F\xE9lix"
+  - "Tevfik Kizil\xF6ren"
   - Venkatesh Muthukrishnan
   - Barbara Zdrazil
   - Andrew R Leach
-  - Noel M O’Boyle
+  - "Noel M O\u2019Boyle"
   doi: 10.1093/nar/gkaf1271
   id: https://doi.org/10.1093/nar/gkaf1271
   journal: Nucleic Acids Research
