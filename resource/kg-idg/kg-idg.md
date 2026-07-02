@@ -16,7 +16,7 @@ domains:
 - biomedical
 homepage_url: https://kghub.org/kg-idg/index.html
 id: kg-idg
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause
@@ -59,12 +59,11 @@ products:
     source: string
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
+    The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
+    pending relocation to a new home; no live download is currently available.'
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 ---
 KG-IDG: a Knowledge Graph for Illuminating the Druggable Genome.

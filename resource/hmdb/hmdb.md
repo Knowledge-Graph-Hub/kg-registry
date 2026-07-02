@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.hmdb.ca/
 id: hmdb
 infores_id: hmdb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.hmdb.ca/downloads
@@ -2849,6 +2849,51 @@ products:
     source: probe-miner
   product_file_size: 20140191116
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
+publications:
+- authors:
+  - Wishart DS
+  - Guo A
+  - Oler E
+  - Wang F
+  - Anjum A
+  - Peters H
+  - Dizon R
+  - Sayeeda Z
+  - Tian S
+  - Lee BL
+  - Berjanskii M
+  - Mah R
+  - Yamamoto M
+  - Jovel J
+  - Torres-Calzada C
+  - Hiebert-Giesbrecht M
+  - Lui VW
+  - Varshavi D
+  - Varshavi D
+  - Allen D
+  - Arndt D
+  - Khetarpal N
+  - Sivakumaran A
+  - Harford K
+  - Sanford S
+  - Yee K
+  - Cao X
+  - Budinski Z
+  - Liigand J
+  - Zhang L
+  - Zheng J
+  - Mandal R
+  - Karu N
+  - Dambrova M
+  - Schiöth HB
+  - Greiner R
+  - Gautam V
+  doi: 10.1093/nar/gkab1062
+  id: https://pubmed.ncbi.nlm.nih.gov/34986597
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'HMDB 5.0: the Human Metabolome Database for 2022'
+  year: '2022'
 taxon:
 - NCBITaxon:9606
 ---

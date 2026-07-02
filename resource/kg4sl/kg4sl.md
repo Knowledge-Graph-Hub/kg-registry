@@ -9,7 +9,7 @@ domains:
   - drug discovery
 homepage_url: https://github.com/JieZheng-ShanghaiTech/KG4SL
 id: kg4sl
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: KG4SL
 products:
@@ -21,8 +21,11 @@ products:
     original_source:
       - source: kg4sl
         relation_type: prov:hadPrimarySource
+      - source: synlethdb
+        relation_type: prov:hadPrimarySource
+    secondary_source:
       - source: hetionet
-        relation_type: prov:wasDerivedFrom
+        relation_type: prov:wasInfluencedBy
     product_url: https://github.com/JieZheng-ShanghaiTech/KG4SL/tree/main/data
   - category: ProcessProduct
     description: Repository containing preprocessing, training, and evaluation code for KG4SL.

@@ -16,7 +16,7 @@ domains:
 - general
 homepage_url: https://species.wikimedia.org/wiki/Main_Page
 id: wikispecies
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

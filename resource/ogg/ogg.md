@@ -16,9 +16,9 @@ creation_date: '2025-09-29T00:00:00Z'
 description: A formal ontology of genes and genomes of biological organisms.
 domains:
 - biological systems
-homepage_url: https://bitbucket.org/hegroup/ogg
+homepage_url: https://obofoundry.org/ontology/ogg
 id: ogg
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -36,7 +36,6 @@ products:
   original_source:
   - source: ogg
     relation_type: prov:hadPrimarySource
-repository: https://bitbucket.org/hegroup/ogg
 publications:
 - authors:
   - He Y

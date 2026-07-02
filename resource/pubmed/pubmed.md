@@ -33,7 +33,7 @@ domains:
 homepage_url: https://pubmed.ncbi.nlm.nih.gov/
 id: pubmed
 infores_id: pubmed
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/

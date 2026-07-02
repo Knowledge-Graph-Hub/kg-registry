@@ -42,9 +42,21 @@ products:
   original_source:
   - source: biobricks-toxcast
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  id: biobricks-toxcast.graph
+  name: BioBricks ToxCast Graph
+  description: RDF knowledge graph (Turtle) repackaging EPA ToxCast high-throughput
+    screening data as an open knowledge graph
+  format: ttl
+  product_url: https://github.com/biobricks-ai/biobricks-okg
+  original_source:
+  - source: biobricks-toxcast
+    relation_type: prov:hadPrimarySource
+  - source: toxcast
+    relation_type: prov:wasDerivedFrom
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 BioBricks ToxCast
 

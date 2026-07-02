@@ -1,5 +1,5 @@
 ---
-activity_status: unknown
+activity_status: inactive
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
 description: STARGEO is a gene expression search application that enables researchers
@@ -12,7 +12,7 @@ domains:
 homepage_url: https://stargeo.org/
 id: startgeo
 infores_id: startgeo
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: STAR GEO Search Application
 products:
@@ -29,6 +29,8 @@ products:
   warnings: []
 synonyms:
 - STARGEO
+warnings:
+- The STARGEO homepage (https://stargeo.org/) was unreachable when checked on 2026-07-01, returning HTTP 522 (origin server down) over both http and https including the www host; the resource is marked inactive.
 ---
 # STAR GEO Search Application
 

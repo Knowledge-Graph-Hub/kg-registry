@@ -180,7 +180,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
   year: '2019'
-repository: https://github.com/Gramene/gramene-docs
+repository: https://github.com/PlantReactome
 taxon:
   - NCBITaxon:3055
   - NCBITaxon:2763
@@ -205,7 +205,7 @@ warnings:
   - The INFORES catalog did not contain an exact Plant Reactome entry on 2026-06-02, so no infores_id is asserted.
   - Plant Reactome pages identify the April 2025 release as Version 24, but the homepage text says Gramene r69 while the release summary heading and stats widget say Gramene 68/r68.
   - The Plant Reactome license page states CC BY 3.0 for Plant Reactome content, while annotations and external data remain under the licenses of their source providers unless specified.
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 
 # Plant Reactome

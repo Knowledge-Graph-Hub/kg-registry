@@ -7,6 +7,11 @@ contacts:
   - contact_type: email
     value: xiaoyun@ems.hrbmu.edu.cn
   label: Yun Xiao
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://bio-bigdata.hrbmu.edu.cn/CellMarker/
+  label: College of Bioinformatics Science and Technology, Harbin Medical University
 creation_date: '2025-07-20T00:00:00Z'
 description: CellMarker is a comprehensive and accurate resource of cell markers for
   various cell types in tissues of human and mouse. CellMarker 2.0 provides a manually
@@ -21,48 +26,52 @@ domains:
 homepage_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/
 id: cellmarker
 infores_id: cellmarker
-last_modified_date: '2026-05-23T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: CellMarker
 products:
 - category: Product
   description: Human CellMarker 2.0 marker dataset in spreadsheet format
+  format: mixed
   id: cellmarker.human
   name: Human Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
   product_file_size: 7982475
-  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx
+  product_url: http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx
 - category: Product
   description: Mouse CellMarker 2.0 marker dataset in spreadsheet format
+  format: mixed
   id: cellmarker.mouse
   name: Mouse Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
   product_file_size: 3740448
-  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx
+  product_url: http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx
 - category: Product
   description: CellMarker 2.0 marker dataset derived from single-cell sequencing studies
     in human and mouse
+  format: mixed
   id: cellmarker.singlecell
   name: Single Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
   product_file_size: 6005874
-  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx
+  product_url: http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx
 - category: Product
   description: Combined CellMarker 2.0 marker dataset for human and mouse in spreadsheet
     format
+  format: mixed
   id: cellmarker.all
   name: All Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
   product_file_size: 10010437
-  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx
+  product_url: http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx
 - category: GraphicalInterface
   description: CellMarker 2.0 annotation tool for assigning cell types using curated
     marker genes
@@ -72,7 +81,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
-  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp
+  product_url: http://117.50.127.228/CellMarker/CellMarker_annotation.jsp
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific

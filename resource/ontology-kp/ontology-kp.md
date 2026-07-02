@@ -10,7 +10,7 @@ description: A Translator Knowledge Provider dedicated to ontology-based service
 domains:
   - other
 id: ontology-kp
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: Ontology KP
 products:
@@ -32,6 +32,17 @@ products:
       - source: ontology-kp
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/INCATools/ubergraph
+  - category: GraphProduct
+    description: Ontology KP graph served over Ubergraph, a precomputed OWL-reasoned RDF merge of OBO ontologies queried via SPARQL for ontology-based Translator services.
+    format: ttl
+    id: ontology-kp.graph
+    name: Ontology KP Graph
+    original_source:
+      - source: ontology-kp
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasDerivedFrom
+    product_url: https://ubergraph.apps.renci.org/sparql
 creation_date: '2025-03-09T00:00:00Z'
 ---
 
