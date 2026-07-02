@@ -27,7 +27,7 @@ domains:
 - organisms
 homepage_url: https://omabrowser.org/
 id: oma
-last_modified_date: '2026-06-25T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -96,7 +96,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: oma
   product_url: https://omabrowser.org/All/oma-seqs.fa.gz
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
+    canonical filename is still listed on the OMA current release download page
+    (https://omabrowser.org/oma/current/) but is not currently served.'
 - category: Product
   compression: gzip
   description: Protein annotations in text format
@@ -107,7 +110,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: oma
   product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
+    canonical filename is still listed on the OMA current release download page
+    (https://omabrowser.org/oma/current/) but is not currently served.'
 - category: Product
   description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
     has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
@@ -218,7 +224,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: oma
   product_url: https://omabrowser.org/All/group-descriptions.txt.gz
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
+    canonical filename is still listed on the OMA current release download page
+    (https://omabrowser.org/oma/current/) but is not currently served.'
 publications:
 - authors:
   - Adrian M Altenhoff

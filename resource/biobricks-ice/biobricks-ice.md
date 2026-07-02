@@ -46,9 +46,22 @@ products:
   original_source:
   - source: biobricks-ice
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  id: biobricks-ice.graph
+  name: BioBricks ICE Knowledge Graph
+  description: RDF knowledge graph repackaging ICE (Integrated Chemical Environment)
+    cheminformatics and chemical safety data, built and published from the biobricks-okg
+    repository.
+  format: ttl
+  product_url: https://github.com/biobricks-ai/biobricks-okg
+  original_source:
+  - source: biobricks-ice
+    relation_type: prov:hadPrimarySource
+  - source: ice
+    relation_type: prov:wasDerivedFrom
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 BioBricks ICE
 

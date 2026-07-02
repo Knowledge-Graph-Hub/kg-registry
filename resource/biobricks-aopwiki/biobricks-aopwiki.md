@@ -43,9 +43,21 @@ products:
   original_source:
   - source: biobricks-aopwiki
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  id: biobricks-aopwiki.graph
+  name: BioBricks AOP-Wiki Graph
+  description: RDF knowledge graph (Turtle) repackaging AOP-Wiki data as an open knowledge
+    graph
+  format: ttl
+  product_url: https://github.com/biobricks-ai/aopwikirdf-kg
+  original_source:
+  - source: biobricks-aopwiki
+    relation_type: prov:hadPrimarySource
+  - source: aop-wiki
+    relation_type: prov:wasDerivedFrom
 repository: https://github.com/biobricks-ai/aopwikirdf-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 BioBricks AOP-Wiki
 

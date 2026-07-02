@@ -42,9 +42,21 @@ products:
   original_source:
   - source: biobricks-tox21
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  id: biobricks-tox21.graph
+  name: BioBricks Tox21 Knowledge Graph
+  description: RDF knowledge graph repackaging EPA/NIH Tox21 high-throughput toxicology
+    screening data, distributed via the biobricks-okg repository.
+  format: ttl
+  product_url: https://github.com/biobricks-ai/biobricks-okg
+  original_source:
+  - source: biobricks-tox21
+    relation_type: prov:hadPrimarySource
+  - source: tox21
+    relation_type: prov:wasDerivedFrom
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 BioBricks Tox21
 

@@ -17,9 +17,9 @@ description: Ontology to establish data exchange standards and common data eleme
   in the microRNA (miR) domain
 domains:
 - chemistry and biochemistry
-homepage_url: http://omit.cis.usouthal.edu/
+homepage_url: https://obofoundry.org/ontology/omit
 id: omit
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
