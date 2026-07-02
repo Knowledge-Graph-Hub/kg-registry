@@ -14,7 +14,7 @@ domains:
   - genomics
 homepage_url: https://github.com/ncats/RD-Clust
 id: ncatsgardkg
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: NCATS GARD KG
 publications:
@@ -39,6 +39,41 @@ publications:
     year: '2023'
 repository: https://github.com/ncats/RD-Clust
 products:
+  - category: GraphProduct
+    description: Integrated rare-disease knowledge graph produced by the RD-Clust
+      workflow, connecting rare diseases to genes, phenotypes, Gene Ontology terms,
+      drugs/ligands, and pathway interactions. Distributed as the processed
+      disease ontograph within the RD-Clust repository.
+    format: http
+    id: ncatsgardkg.graph
+    name: NCATS GARD Knowledge Graph
+    original_source:
+      - source: ncatsgardkg
+        relation_type: prov:hadPrimarySource
+      - source: gard
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: hp
+        relation_type: prov:wasInfluencedBy
+      - source: go
+        relation_type: prov:wasInfluencedBy
+      - source: mondo
+        relation_type: prov:wasInfluencedBy
+      - source: orphanet
+        relation_type: prov:wasInfluencedBy
+      - source: ncbigene
+        relation_type: prov:wasInfluencedBy
+      - source: pharos
+        relation_type: prov:wasInfluencedBy
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+      - source: chebi
+        relation_type: prov:wasInfluencedBy
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+      - source: pathwaycommons
+        relation_type: prov:wasInfluencedBy
+    product_url: https://github.com/ncats/RD-Clust/tree/main/data/processed
   - category: ProcessProduct
     description: RD-Clust source repository implementing NCATS GARD KG clustering and analysis workflows.
     format: http

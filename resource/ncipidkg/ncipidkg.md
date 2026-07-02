@@ -17,8 +17,23 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 products:
+- id: ncipidkg.graph.ttl
+  name: NCI-PID 2.0 KG RDF graph
+  description: RDF graph converting NCI Pathway Interaction Database version 2.0 networks
+    into RDF, enriched with INDRA evidence metadata.
+  category: GraphProduct
+  format: ttl
+  product_url: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
+  original_source:
+  - source: ncipidkg
+    relation_type: prov:hadPrimarySource
+  - source: pid
+    relation_type: prov:wasDerivedFrom
+  secondary_source:
+  - source: indra
+    relation_type: prov:wasInfluencedBy
 - id: ncipidkg.sparql
   name: NCI-PID 2.0 KG SPARQL
   description: SPARQL endpoint for NCI-PID 2.0 KG
