@@ -14,7 +14,7 @@ domains:
 - genomics
 homepage_url: https://github.com/monarch-initiative/SLDBGen
 id: sldb
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: sldb
 products:
@@ -47,6 +47,9 @@ products:
     source: sldb
   product_file_size: 36316
   product_url: https://raw.githubusercontent.com/monarch-initiative/SLDBGen/master/SL_data.tsv
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hgnc
 - category: Product
   description: Release artifacts for SLDB graph builds.
   format: mixed

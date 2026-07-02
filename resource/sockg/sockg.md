@@ -44,8 +44,25 @@ products:
   original_source:
   - source: sockg
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: The Soil Organic Carbon Knowledge Graph (SOCKG), an RDF knowledge graph
+    integrating and mapping agricultural experimental data (soil properties, greenhouse
+    gas fluxes, crop yields, and management practices) to support soil carbon modeling.
+    Terminology is semantically aligned to the National Agricultural Library Thesaurus.
+  format: rdfxml
+  id: sockg.graph
+  name: SOC-KG RDF Knowledge Graph
+  original_source:
+  - source: sockg
+    relation_type: prov:hadPrimarySource
+  - source: agcros
+    relation_type: prov:hadPrimarySource
+  secondary_source:
+  - source: nalt
+    relation_type: prov:wasInfluencedBy
+  product_url: https://idir.sockg.org/
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-01T00:00:00Z'
 ---
 SOC-KG
 
