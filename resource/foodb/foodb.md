@@ -195,6 +195,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -205,6 +208,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental MS-MS Spectra data from FooDB
@@ -215,6 +221,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted MS-MS Spectra data from FooDB
@@ -225,6 +234,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: NMR Spectra data from FooDB
@@ -235,6 +247,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   description: FooDB downloads page listing the available bulk data archives, spectra,
     peak lists, and supplementary files (including NMR Free Induction Decay data).
@@ -257,6 +272,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental C-MS peak lists from FooDB.
@@ -267,6 +285,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_peak_lists.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS peak lists from FooDB.
@@ -277,6 +298,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_peak_lists.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental MS-MS peak lists from FooDB.
@@ -287,6 +311,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_peak_lists.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted MS-MS peak lists from FooDB.
@@ -297,6 +324,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_peak_lists.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: NMR peak lists from FooDB.
@@ -307,6 +337,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -931,6 +964,90 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
+    SPOKE biomedical and environmental health knowledge graph, served through FRINK
+    query services.
+  format: ttl
+  id: spoke-okn.graph
+  name: SPOKE-OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  - relation_type: prov:wasDerivedFrom
+    source: spoke
+  product_url: https://spoke.ucsf.edu
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bgee
+  - relation_type: prov:wasInfluencedBy
+    source: bindingdb
+  - relation_type: prov:wasInfluencedBy
+    source: bv-brc
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: civic
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+  - relation_type: prov:wasInfluencedBy
+    source: doid
+  - relation_type: prov:wasInfluencedBy
+    source: drugbank
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: foodb
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: gwascatalog
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: interpro
+  - relation_type: prov:wasInfluencedBy
+    source: kegg
+  - relation_type: prov:wasInfluencedBy
+    source: lincs-l1000
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: metacyc
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pathophenodb
+  - relation_type: prov:wasInfluencedBy
+    source: pfam
+  - relation_type: prov:wasInfluencedBy
+    source: pid
+  - relation_type: prov:wasInfluencedBy
+    source: protcid
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: sider
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
 publications:
 - authors:
   - Wishart DS
@@ -983,7 +1100,7 @@ publications:
   - Marcu A
   - Guo AC
   - Liang K
-  - "V\xE1zquez-Fresno R"
+  - Vázquez-Fresno R
   - Sajed T
   - Johnson D
   - Li C

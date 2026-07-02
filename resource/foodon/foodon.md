@@ -52,6 +52,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

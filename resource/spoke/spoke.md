@@ -2,142 +2,235 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-  - okn
+- okn
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: sergio.baranzini@ucsf.edu
-    label: Sergio Baranzini
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: sui.huang@ucsf.edu
-    label: Sui Huang
-  - category: Organization
-    label: University of California, San Francisco
-description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) is a comprehensive biomedical knowledge graph that connects diverse data from multiple domains to enable discovery and precision medicine applications.
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: sergio.baranzini@ucsf.edu
+  label: Sergio Baranzini
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: sui.huang@ucsf.edu
+  label: Sui Huang
+- category: Organization
+  label: University of California, San Francisco
+creation_date: '2025-03-09T00:00:00Z'
+description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) is a comprehensive
+  biomedical knowledge graph that connects diverse data from multiple domains to enable
+  discovery and precision medicine applications.
 domains:
-  - biomedical
-  - genomics
-  - clinical
-  - drug discovery
-  - precision medicine
-  - pharmacology
+- biomedical
+- genomics
+- clinical
+- drug discovery
+- precision medicine
+- pharmacology
 homepage_url: https://spoke.ucsf.edu/
 id: spoke
+infores_id: spoke
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://spoke.rbvi.ucsf.edu/docs/licenses.html
   label: Multiple licenses (see individual data sources)
 name: SPOKE
 products:
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
-    format: http
-    id: spoke.graph
-    name: SPOKE Graph
-    product_url: https://spoke.ucsf.edu/data-tools
-    original_source:
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: bv-brc
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: civic
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: gdsc
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: lincs-l1000
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: metacyc
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pathophenodb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: pid
-        relation_type: prov:hadPrimarySource
-      - source: protcid
-        relation_type: prov:hadPrimarySource
-      - source: pubmed
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: spoke
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Web interface that allows searching SPOKE for a node of interest and viewing its immediate connectivity neighborhood.
-    format: http
-    id: spoke.neighborhood_explorer
-    name: SPOKE Neighborhood Explorer
-    product_url: https://spoke.rbvi.ucsf.edu/neighborhood.html
-    original_source:
-      - source: spoke
-        relation_type: prov:hadPrimarySource
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for querying SPOKE knowledge graph via the OKN FRINK service
-    format: http
-    id: spoke.sparql
-    name: SPOKE SPARQL Endpoint
-    original_source:
-      - source: spoke
-        relation_type: prov:hadPrimarySource
-    product_url: https://frink.apps.renci.org/spoke-okn/sparql
-  - category: DocumentationProduct
-    description: SPOKE data and tools page describing access paths, visualizations, and related resources.
-    format: http
-    id: spoke.docs
-    name: SPOKE Data and Tools
-    product_url: https://spoke.ucsf.edu/data-tools
-    original_source:
-      - source: spoke
-        relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  format: http
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: metacyc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: protcid
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: spoke
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
+- category: GraphicalInterface
+  description: Web interface that allows searching SPOKE for a node of interest and
+    viewing its immediate connectivity neighborhood.
+  format: http
+  id: spoke.neighborhood_explorer
+  name: SPOKE Neighborhood Explorer
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke
+  product_url: https://spoke.rbvi.ucsf.edu/neighborhood.html
+- category: ProgrammingInterface
+  description: SPARQL endpoint for querying SPOKE knowledge graph via the OKN FRINK
+    service
+  format: http
+  id: spoke.sparql
+  name: SPOKE SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke
+  product_url: https://frink.apps.renci.org/spoke-okn/sparql
+- category: DocumentationProduct
+  description: SPOKE data and tools page describing access paths, visualizations,
+    and related resources.
+  format: http
+  id: spoke.docs
+  name: SPOKE Data and Tools
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke
+  product_url: https://spoke.ucsf.edu/data-tools
+- category: GraphProduct
+  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
+    SPOKE biomedical and environmental health knowledge graph, served through FRINK
+    query services.
+  format: ttl
+  id: spoke-okn.graph
+  name: SPOKE-OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  - relation_type: prov:wasDerivedFrom
+    source: spoke
+  product_url: https://spoke.ucsf.edu
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bgee
+  - relation_type: prov:wasInfluencedBy
+    source: bindingdb
+  - relation_type: prov:wasInfluencedBy
+    source: bv-brc
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: civic
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+  - relation_type: prov:wasInfluencedBy
+    source: doid
+  - relation_type: prov:wasInfluencedBy
+    source: drugbank
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: foodb
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: gwascatalog
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: interpro
+  - relation_type: prov:wasInfluencedBy
+    source: kegg
+  - relation_type: prov:wasInfluencedBy
+    source: lincs-l1000
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: metacyc
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pathophenodb
+  - relation_type: prov:wasInfluencedBy
+    source: pfam
+  - relation_type: prov:wasInfluencedBy
+    source: pid
+  - relation_type: prov:wasInfluencedBy
+    source: protcid
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: sider
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
 publications:
 - authors:
   - John H Morris
@@ -155,7 +248,8 @@ publications:
   id: https://doi.org/10.1093/bioinformatics/btad080
   journal: Bioinformatics
   preferred: true
-  title: 'The scalable precision medicine open knowledge engine (SPOKE): a massive knowledge graph of biomedical information'
+  title: 'The scalable precision medicine open knowledge engine (SPOKE): a massive
+    knowledge graph of biomedical information'
   year: '2023'
 - authors:
   - Charlotte A Nelson
@@ -164,7 +258,8 @@ publications:
   doi: 10.1038/s41467-019-11069-0
   id: https://doi.org/10.1038/s41467-019-11069-0
   journal: Nature Communications
-  title: Integrating biomedical research and electronic health records to create knowledge-based biologically meaningful machine-readable embeddings
+  title: Integrating biomedical research and electronic health records to create knowledge-based
+    biologically meaningful machine-readable embeddings
   year: '2019'
 - authors:
   - Daniel Scott Himmelstein
@@ -182,14 +277,10 @@ publications:
   title: Systematic integration of biomedical knowledge prioritizes drugs for repurposing
   year: '2017'
 repository: https://github.com/baranzini-lab/SPOKE
-version: '2.0'
-infores_id: spoke
 taxon:
-  - NCBITaxon:9606
-creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+- NCBITaxon:9606
+version: '2.0'
 ---
-
 SPOKE (Scalable Precision Medicine Open Knowledge Engine) is a comprehensive biomedical knowledge graph developed at the University of California, San Francisco (UCSF). It integrates data from over 30 public databases to create a rich network of biomedical relationships.
 
 SPOKE is a heterogeneous network, containing different types of nodes (e.g., genes, diseases, drugs, pathways) and the edges between them represent known connections. The knowledge graph pulls data out of silos, connecting diverse information from molecular research, clinical insights, and environmental data.

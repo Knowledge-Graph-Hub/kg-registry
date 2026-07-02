@@ -3,11 +3,11 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: NICEATM (NTP Interagency Center for the Evaluation of Alternative Toxicological
-    Methods)
   contact_details:
   - contact_type: url
     value: https://ntp.niehs.nih.gov/whatwestudy/niceatm
+  label: NICEATM (NTP Interagency Center for the Evaluation of Alternative Toxicological
+    Methods)
 creation_date: '2026-07-01T00:00:00Z'
 description: The Integrated Chemical Environment (ICE) is a resource developed by
   the NTP Interagency Center for the Evaluation of Alternative Toxicological Methods
@@ -44,6 +44,19 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ice
   product_url: https://ice.ntp.niehs.nih.gov/DATASETDESCRIPTION
+- category: GraphProduct
+  description: RDF knowledge graph repackaging ICE (Integrated Chemical Environment)
+    cheminformatics and chemical safety data, built and published from the biobricks-okg
+    repository.
+  format: ttl
+  id: biobricks-ice.graph
+  name: BioBricks ICE Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biobricks-ice
+  - relation_type: prov:wasDerivedFrom
+    source: ice
+  product_url: https://github.com/biobricks-ai/biobricks-okg
 publications:
 - authors:
   - Shannon Bell

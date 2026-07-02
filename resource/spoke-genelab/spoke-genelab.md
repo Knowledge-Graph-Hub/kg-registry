@@ -35,8 +35,6 @@ products:
   original_source:
   - source: spoke-genelab
     relation_type: prov:hadPrimarySource
-  - source: nasa-osdr
-    relation_type: prov:hadPrimarySource
   secondary_source:
   - source: spoke-okn
     relation_type: prov:wasInfluencedBy
@@ -49,14 +47,12 @@ products:
   original_source:
   - source: spoke-genelab
     relation_type: prov:hadPrimarySource
-  - source: nasa-osdr
-    relation_type: prov:hadPrimarySource
   secondary_source:
   - source: spoke-okn
     relation_type: prov:wasInfluencedBy
 repository: https://github.com/BaranziniLab/spoke_genelab
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 ---
 SPOKE GeneLab
 

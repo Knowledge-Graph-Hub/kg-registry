@@ -416,8 +416,8 @@ products:
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   format: http
   id: gnbr.graph
   name: GNBR graph
@@ -1018,6 +1018,8 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed
@@ -1712,6 +1714,119 @@ products:
     source: uberon
   product_file_size: 936065236
   product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
+- category: GraphProduct
+  description: The NLM-CKN knowledge graph of cellular phenotypes. It is built from
+    triple assertions (subject-predicate-object) that link single-cell genomics experimental
+    data (from the CELLxGENE Census) and computationally derived NS-Forest marker
+    genes to the Cell Ontology and other reference ontologies, augmented with literature-derived
+    assertions from text mining/NLP. The graph is produced by the NLM-CKN ETL pipeline
+    as an ArangoDB archive and served via the web application at https://nlm-ckn.org.
+  format: http
+  id: nlm-ckn.graph
+  name: nlm-ckn-graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nlm-ckn
+  - relation_type: prov:hadPrimarySource
+    source: cellxgene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://github.com/NIH-NLM/cell-kn-mvp
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: pato
+  - relation_type: prov:wasInfluencedBy
+    source: mondo
+  - relation_type: prov:wasInfluencedBy
+    source: hsapdv
+- category: GraphProduct
+  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
+    SPOKE biomedical and environmental health knowledge graph, served through FRINK
+    query services.
+  format: ttl
+  id: spoke-okn.graph
+  name: SPOKE-OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  - relation_type: prov:wasDerivedFrom
+    source: spoke
+  product_url: https://spoke.ucsf.edu
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bgee
+  - relation_type: prov:wasInfluencedBy
+    source: bindingdb
+  - relation_type: prov:wasInfluencedBy
+    source: bv-brc
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: civic
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+  - relation_type: prov:wasInfluencedBy
+    source: doid
+  - relation_type: prov:wasInfluencedBy
+    source: drugbank
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: foodb
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: gwascatalog
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: interpro
+  - relation_type: prov:wasInfluencedBy
+    source: kegg
+  - relation_type: prov:wasInfluencedBy
+    source: lincs-l1000
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: metacyc
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pathophenodb
+  - relation_type: prov:wasInfluencedBy
+    source: pfam
+  - relation_type: prov:wasInfluencedBy
+    source: pid
+  - relation_type: prov:wasInfluencedBy
+    source: protcid
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: sider
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
 publications:
 - authors:
   - Eric W Sayers

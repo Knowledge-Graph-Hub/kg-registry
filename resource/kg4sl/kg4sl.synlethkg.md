@@ -8,8 +8,11 @@ name: SynLethKG Data Files
 original_source:
 - relation_type: prov:hadPrimarySource
   source: kg4sl
-- relation_type: prov:wasDerivedFrom
-  source: hetionet
+- relation_type: prov:hadPrimarySource
+  source: synlethdb
 product_url: https://github.com/JieZheng-ShanghaiTech/KG4SL/tree/main/data
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: hetionet
 layout: product_detail
 ---

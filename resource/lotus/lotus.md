@@ -8,13 +8,13 @@ contacts:
     value: https://lotus.naturalproducts.net/
   label: LOTUS Initiative
 creation_date: '2026-07-01T00:00:00Z'
-description: 'LOTUS (naturaL prOducTs occUrrence databaSe) is an open knowledge base
+description: LOTUS (naturaL prOducTs occUrrence databaSe) is an open knowledge base
   of referenced structure-organism pairs for natural products research. It harmonizes,
   curates, and validates hundreds of thousands of documented natural product occurrences,
   linking chemical structures to the organisms in which they were reported together
   with the supporting literature references. LOTUS data are disseminated openly and
-  are hosted on Wikidata, mirrored at lotus.naturalproducts.net, and released as
-  frozen tabular snapshots on Zenodo.'
+  are hosted on Wikidata, mirrored at lotus.naturalproducts.net, and released as frozen
+  tabular snapshots on Zenodo.
 domains:
 - chemistry and biochemistry
 - biomedical
@@ -54,6 +54,35 @@ products:
   - relation_type: prov:hadPrimarySource
     source: lotus
   product_url: https://doi.org/10.5281/zenodo.5794106
+- category: GraphProduct
+  description: RDF knowledge graph of the Experimental Natural Products Knowledge
+    Graph, integrating experimental LC-MS/MS spectra and GNPS-based annotations, ISDB-LOTUS
+    structural annotations, taxonomic and bioactivity metadata, cross-linked to Wikidata
+    and served from the public GraphDB/SPARQL endpoint.
+  format: ttl
+  id: kg-enp.graph
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+    label: CC0-1.0
+  name: ENPKG RDF Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: lotus
+  - relation_type: prov:hadPrimarySource
+    source: wikidata
+  product_url: https://enpkg.commons-lab.org/graphdb
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: open-tree-of-life
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 406 error
+    when accessing file'
 publications:
 - authors:
   - Adriano Rutz

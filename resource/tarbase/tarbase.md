@@ -131,7 +131,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tarbase
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/downloads
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

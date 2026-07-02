@@ -15,8 +15,5 @@ secondary_source:
   source: gwascatalog
 - relation_type: prov:wasInformedBy
   source: omim
-warnings:
-- File was not able to be retrieved when checked on 2026-07-01_ No Content-Length
-  header found
 layout: product_detail
 ---

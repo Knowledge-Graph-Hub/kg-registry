@@ -97,8 +97,8 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
-  id: hetionet.data.neo4j
   format: neo4j
+  id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -318,8 +318,8 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
-  id: alzkb.data
   format: mixed
+  id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -369,8 +369,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: hetionet
 - description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
   format: mixed
+  id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -425,8 +425,8 @@ products:
   compression: targz
   description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
     and a glossary of relation types.
-  id: drkg.graph
   format: mixed
+  id: drkg.graph
   name: DRKG graph
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -454,9 +454,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: kg4sl
-  - relation_type: prov:wasDerivedFrom
-    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: synlethdb
   product_url: https://github.com/JieZheng-ShanghaiTech/KG4SL/tree/main/data
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hetionet
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -1050,7 +1053,8 @@ publications:
   doi: 10.1093/gigascience/giad047
   id: https://doi.org/10.1093/gigascience/giad047
   journal: GigaScience
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities are related
+  title: Hetnet connectivity search provides rapid insights into how biomedical entities
+    are related
   year: '2022'
 repository: https://github.com/hetio/hetionet
 taxon:

@@ -18,9 +18,9 @@ description: An ontology for spider comparative biology including anatomical par
   borrow).
 domains:
 - anatomy and development
-homepage_url: https://obofoundry.org/ontology/spd
+homepage_url: http://research.amnh.org/atol/files/
 id: spd
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/

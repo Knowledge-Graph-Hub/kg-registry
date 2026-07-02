@@ -96,10 +96,12 @@ products:
     source: alliance
   product_url: https://download.alliancegenome.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 15211571
@@ -1692,7 +1694,10 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-  warnings: []
+  warnings:
+  - File was not able to be retrieved when checked on 2026-07-01; no live download
+    location was found (GitHub releases, kghub.io/current, and Zenodo all return 404
+    or have no published artifact).
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx

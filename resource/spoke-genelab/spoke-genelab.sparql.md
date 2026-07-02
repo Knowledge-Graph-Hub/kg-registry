@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: spoke-genelab
 product_url: https://apps.okn.us/spoke-genelab/sparql
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: spoke-okn
 layout: product_detail
 ---

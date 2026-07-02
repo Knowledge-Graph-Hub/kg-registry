@@ -3862,7 +3862,10 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-  warnings: []
+  warnings:
+  - File was not able to be retrieved when checked on 2026-07-01; no live download
+    location was found (GitHub releases, kghub.io/current, and Zenodo all return 404
+    or have no published artifact).
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx

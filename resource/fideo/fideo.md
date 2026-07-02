@@ -39,9 +39,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-06-26: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-07-01: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
 - category: GraphProduct
   compression: gzip

@@ -1464,12 +1464,8 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
-    to URL: HTTPSConnectionPool(host=''markerdb.ca'', port=443): Max retries exceeded
-    with url: /pages/download_all_chemicals?format=tsv (Caused by SSLError(SSLEOFError(8,
-    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
     for ChemIDplus substance records and annotations after the standalone NLM service
@@ -1498,6 +1494,8 @@ products:
     source: pubchem
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
@@ -2487,6 +2485,53 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+- category: GraphProduct
+  description: RDF knowledge graph (Turtle) repackaging PubChem chemical annotations
+    as an open knowledge graph
+  format: ttl
+  id: biobricks-pubchem-annotations.graph
+  name: BioBricks PubChem Annotations Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biobricks-pubchem-annotations
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  product_url: https://github.com/biobricks-ai/pubchem-annotations-kg
+- category: GraphProduct
+  description: Integrated rare-disease knowledge graph produced by the RD-Clust workflow,
+    connecting rare diseases to genes, phenotypes, Gene Ontology terms, drugs/ligands,
+    and pathway interactions. Distributed as the processed disease ontograph within
+    the RD-Clust repository.
+  format: http
+  id: ncatsgardkg.graph
+  name: NCATS GARD Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncatsgardkg
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  product_url: https://github.com/ncats/RD-Clust/tree/main/data/processed
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hp
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: mondo
+  - relation_type: prov:wasInfluencedBy
+    source: orphanet
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: pharos
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: chebi
+  - relation_type: prov:wasInfluencedBy
+    source: pubchem
+  - relation_type: prov:wasInfluencedBy
+    source: pathwaycommons
 publications:
 - authors:
   - Kim S

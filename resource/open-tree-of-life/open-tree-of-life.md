@@ -4,147 +4,187 @@ category: DataSource
 collection:
 - ber
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://tree.opentreeoflife.org/"
-    id: "open-tree-of-life-collaboration"
-    label: "Open Tree of Life Collaboration"
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://tree.opentreeoflife.org/
+  id: open-tree-of-life-collaboration
+  label: Open Tree of Life Collaboration
 creation_date: '2025-12-17T00:00:00Z'
-description: Open Tree of Life (OToL) is a comprehensive, collaborative online phylogenetic tree synthesizing published evolutionary estimates with taxonomic data. It combines phylogenetic data from 1,216 published papers with 10 source taxonomies to construct a dynamic tree of life with 2.4 million tips representing species and infraspecific taxa.
+description: Open Tree of Life (OToL) is a comprehensive, collaborative online phylogenetic
+  tree synthesizing published evolutionary estimates with taxonomic data. It combines
+  phylogenetic data from 1,216 published papers with 10 source taxonomies to construct
+  a dynamic tree of life with 2.4 million tips representing species and infraspecific
+  taxa.
 domains:
-  - biological systems
-  - organisms
+- biological systems
+- organisms
 homepage_url: https://tree.opentreeoflife.org/
-id: "open-tree-of-life"
-infores_id: "open-tree-of-life"
+id: open-tree-of-life
+infores_id: open-tree-of-life
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/publicdomain/zero/1.0/"
+  id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 Public Domain
 name: Open Tree of Life
 products:
-  - category: GraphicalInterface
-    description: Interactive zoomable phylogenetic tree browser enabling exploration of taxonomic relationships and phylogenetic structure across 2.4 million tips
-    format: http
-    id: "otol.tree-browser"
-    name: Open Tree of Life Browser
-    product_url: "https://tree.opentreeoflife.org/tree"
-    original_source:
-      - source: open-tree-of-life
-        relation_type: prov:hadPrimarySource
-  - category: ProgrammingInterface
-    description: RESTful APIs providing programmatic access to synthetic tree, taxonomy, and taxonomic name resolution services with support for MRCA queries and subtree extraction
-    format: http
-    id: "otol.api"
-    is_public: true
-    name: Open Tree of Life APIs
-    product_url: "https://opentreeoflife.github.io/develop/api"
-    original_source:
-      - source: open-tree-of-life
-        relation_type: prov:hadPrimarySource
-  - category: ProgrammingInterface
-    description: Taxonomic Name Resolution Service (TNRS) providing exact and fuzzy matching of taxonomic names to Open Tree Taxonomy with context-based disambiguation
-    format: http
-    id: "otol.tnrs"
-    is_public: true
-    name: Taxonomic Name Resolution Service (TNRS)
-    product_url: "https://tree.opentreeoflife.org/tnrs"
-    original_source:
-      - source: open-tree-of-life
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Complete phylesystem repository containing 4,500+ curated phylogenetic studies in NexSON JSON format with full version control history
-    id: "otol.phylesystem"
-    name: Phylesystem Data Repository
-    product_url: "https://github.com/opentreeoflife/phylesystem"
-    original_source:
-      - source: open-tree-of-life
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Preprocessed source trees and taxonomy files available for bulk download in Newick, Nexus, and JSON formats
-    id: "otol.bulk-download"
-    name: Open Tree of Life Bulk Downloads
-    product_url: "https://files.opentreeoflife.org/preprocessed/v3.0/"
-    original_source:
-      - source: open-tree-of-life
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: API reference, developer guides, and integration documentation for accessing Open Tree of Life data programmatically
-    format: http
-    id: "otol.documentation"
-    is_public: true
-    name: Open Tree of Life Developer Documentation
-    product_url: "https://opentreeoflife.github.io/develop"
-    original_source:
-      - source: open-tree-of-life
-        relation_type: prov:hadPrimarySource
+- category: GraphicalInterface
+  description: Interactive zoomable phylogenetic tree browser enabling exploration
+    of taxonomic relationships and phylogenetic structure across 2.4 million tips
+  format: http
+  id: otol.tree-browser
+  name: Open Tree of Life Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tree-of-life
+  product_url: https://tree.opentreeoflife.org/tree
+- category: ProgrammingInterface
+  description: RESTful APIs providing programmatic access to synthetic tree, taxonomy,
+    and taxonomic name resolution services with support for MRCA queries and subtree
+    extraction
+  format: http
+  id: otol.api
+  is_public: true
+  name: Open Tree of Life APIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tree-of-life
+  product_url: https://opentreeoflife.github.io/develop/api
+- category: ProgrammingInterface
+  description: Taxonomic Name Resolution Service (TNRS) providing exact and fuzzy
+    matching of taxonomic names to Open Tree Taxonomy with context-based disambiguation
+  format: http
+  id: otol.tnrs
+  is_public: true
+  name: Taxonomic Name Resolution Service (TNRS)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tree-of-life
+  product_url: https://tree.opentreeoflife.org/tnrs
+- category: Product
+  description: Complete phylesystem repository containing 4,500+ curated phylogenetic
+    studies in NexSON JSON format with full version control history
+  id: otol.phylesystem
+  name: Phylesystem Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tree-of-life
+  product_url: https://github.com/opentreeoflife/phylesystem
+- category: Product
+  description: Preprocessed source trees and taxonomy files available for bulk download
+    in Newick, Nexus, and JSON formats
+  id: otol.bulk-download
+  name: Open Tree of Life Bulk Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tree-of-life
+  product_url: https://files.opentreeoflife.org/preprocessed/v3.0/
+- category: DocumentationProduct
+  description: API reference, developer guides, and integration documentation for
+    accessing Open Tree of Life data programmatically
+  format: http
+  id: otol.documentation
+  is_public: true
+  name: Open Tree of Life Developer Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tree-of-life
+  product_url: https://opentreeoflife.github.io/develop
+- category: GraphProduct
+  description: RDF knowledge graph of the Experimental Natural Products Knowledge
+    Graph, integrating experimental LC-MS/MS spectra and GNPS-based annotations, ISDB-LOTUS
+    structural annotations, taxonomic and bioactivity metadata, cross-linked to Wikidata
+    and served from the public GraphDB/SPARQL endpoint.
+  format: ttl
+  id: kg-enp.graph
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+    label: CC0-1.0
+  name: ENPKG RDF Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: lotus
+  - relation_type: prov:hadPrimarySource
+    source: wikidata
+  product_url: https://enpkg.commons-lab.org/graphdb
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: open-tree-of-life
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 406 error
+    when accessing file'
 publications:
-  - authors:
-      - Hinchliff CE
-      - Smith SA
-      - Allman JF
-      - Burleigh JG
-      - Chaudhary R
-      - Cogdell-Waters LM
-      - Crandall KA
-      - Deng J
-      - Drew BT
-      - Gazis R
-      - Gude K
-      - Hibbett DS
-      - Katz LA
-      - Laughinghouse HD
-      - McTavish EJ
-      - Midford PE
-      - Oliver PM
-      - Olds BS
-      - Soltis DE
-      - Soltis PS
-    doi: "10.1073/pnas.1423041112"
-    id: "doi:10.1073/pnas.1423041112"
-    journal: "Proceedings of the National Academy of Sciences"
-    preferred: true
-    title: "Synthesis of phylogeny and taxonomy into a comprehensive tree of life"
-    year: "2015"
-  - id: doi:10.1093/bioinformatics/btv276
-    doi: 10.1093/bioinformatics/btv276
-    title: 'Phylesystem: a git-based data store for community-curated phylogenetic estimates'
-    authors:
-      - Emily Jane McTavish
-      - Cody E. Hinchliff
-      - James F. Allman
-      - Joseph W. Brown
-      - Karen A. Cranston
-      - Mark T. Holder
-      - Jonathan A. Rees
-      - Stephen A. Smith
-    journal: Bioinformatics
-    year: '2015'
-  - id: doi:10.1093/sysbio/syab033
-    doi: 10.1093/sysbio/syab033
-    title: 'OpenTree: A Python Package for Accessing and Analyzing Data from the Open Tree of Life'
-    authors:
-      - Emily Jane Mctavish
-      - Luna Luisa Sánchez-Reyes
-      - Mark T Holder
-    journal: Systematic Biology
-    year: '2021'
-  - authors:
-      - Michonneau F
-      - Brown JW
-      - Winter DJ
-    doi: "10.1111/2041-210X.12593"
-    id: "doi:10.1111/2041-210X.12593"
-    journal: "Methods in Ecology and Evolution"
-    title: "rotl: an R package to interact with the Open Tree of Life data"
-    year: "2016"
-repository: "https://github.com/opentreeoflife"
+- authors:
+  - Hinchliff CE
+  - Smith SA
+  - Allman JF
+  - Burleigh JG
+  - Chaudhary R
+  - Cogdell-Waters LM
+  - Crandall KA
+  - Deng J
+  - Drew BT
+  - Gazis R
+  - Gude K
+  - Hibbett DS
+  - Katz LA
+  - Laughinghouse HD
+  - McTavish EJ
+  - Midford PE
+  - Oliver PM
+  - Olds BS
+  - Soltis DE
+  - Soltis PS
+  doi: 10.1073/pnas.1423041112
+  id: doi:10.1073/pnas.1423041112
+  journal: Proceedings of the National Academy of Sciences
+  preferred: true
+  title: Synthesis of phylogeny and taxonomy into a comprehensive tree of life
+  year: '2015'
+- authors:
+  - Emily Jane McTavish
+  - Cody E. Hinchliff
+  - James F. Allman
+  - Joseph W. Brown
+  - Karen A. Cranston
+  - Mark T. Holder
+  - Jonathan A. Rees
+  - Stephen A. Smith
+  doi: 10.1093/bioinformatics/btv276
+  id: doi:10.1093/bioinformatics/btv276
+  journal: Bioinformatics
+  title: 'Phylesystem: a git-based data store for community-curated phylogenetic estimates'
+  year: '2015'
+- authors:
+  - Emily Jane Mctavish
+  - Luna Luisa Sánchez-Reyes
+  - Mark T Holder
+  doi: 10.1093/sysbio/syab033
+  id: doi:10.1093/sysbio/syab033
+  journal: Systematic Biology
+  title: 'OpenTree: A Python Package for Accessing and Analyzing Data from the Open
+    Tree of Life'
+  year: '2021'
+- authors:
+  - Michonneau F
+  - Brown JW
+  - Winter DJ
+  doi: 10.1111/2041-210X.12593
+  id: doi:10.1111/2041-210X.12593
+  journal: Methods in Ecology and Evolution
+  title: 'rotl: an R package to interact with the Open Tree of Life data'
+  year: '2016'
+repository: https://github.com/opentreeoflife
 taxon:
-  - "NCBITaxon:1"
-last_modified_date: '2026-06-12T00:00:00Z'
+- NCBITaxon:1
 ---
-
 # Open Tree of Life
 
 ## Overview

@@ -10,5 +10,8 @@ original_source:
   source: sldb
 product_file_size: 36316
 product_url: https://raw.githubusercontent.com/monarch-initiative/SLDBGen/master/SL_data.tsv
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: hgnc
 layout: product_detail
 ---

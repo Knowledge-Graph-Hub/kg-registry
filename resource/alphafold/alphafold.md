@@ -69,6 +69,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
@@ -652,7 +654,7 @@ publications:
   - Olaf Ronneberger
   - Kathryn Tunyasuvunakool
   - Russ Bates
-  - "Augustin \u017D\xEDdek"
+  - Augustin Žídek
   - Anna Potapenko
   - Alex Bridgland
   - Clemens Meyer
@@ -695,7 +697,7 @@ publications:
   - Oana Stroe
   - Gemma Wood
   - Agata Laydon
-  - "Augustin \u017D\xEDdek"
+  - Augustin Žídek
   - Tim Green
   - Kathryn Tunyasuvunakool
   - Stig Petersen

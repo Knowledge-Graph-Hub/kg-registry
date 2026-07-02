@@ -3,10 +3,11 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: OurResearch
   contact_details:
   - contact_type: url
     value: https://ourresearch.org/
+  label: OurResearch
+creation_date: '2026-07-01T00:00:00Z'
 description: OpenAlex is a free, open catalog of the global research system. It indexes
   scholarly works together with their authors, sources (venues such as journals and
   repositories), institutions, publishers, funders, and concepts/topics, and captures
@@ -19,6 +20,7 @@ domains:
 - general
 homepage_url: https://openalex.org/
 id: openalex
+last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -33,8 +35,8 @@ products:
   id: openalex.api
   name: OpenAlex API
   original_source:
-  - source: openalex
-    relation_type: prov:hadPrimarySource
+  - relation_type: prov:hadPrimarySource
+    source: openalex
   product_url: https://docs.openalex.org/
 - category: Product
   description: The OpenAlex data snapshot is a complete downloadable copy of the OpenAlex
@@ -44,23 +46,34 @@ products:
   id: openalex.snapshot
   name: OpenAlex Data Snapshot
   original_source:
-  - source: openalex
-    relation_type: prov:hadPrimarySource
+  - relation_type: prov:hadPrimarySource
+    source: openalex
   product_url: https://docs.openalex.org/download-all-data/openalex-snapshot
+- category: GraphProduct
+  description: RDF graph representation of the OpenAlex scholarly data as Linked Open
+    Data, distributed as Turtle (TTL) snapshots via the SemOpenAlex code and data
+    repository.
+  format: ttl
+  id: semopenalex.graph
+  name: SemOpenAlex RDF Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: semopenalex
+  - relation_type: prov:wasDerivedFrom
+    source: openalex
+  product_url: https://github.com/metaphacts/semopenalex
 publications:
-- id: doi:10.48550/arXiv.2205.01833
-  preferred: true
-  title: 'OpenAlex: A fully-open index of scholarly works, authors, venues, institutions,
-    and concepts'
-  authors:
+- authors:
   - Jason Priem
   - Heather Piwowar
   - Richard Orr
-  journal: arXiv
-  year: '2022'
   doi: 10.48550/arXiv.2205.01833
-creation_date: '2026-07-01T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+  id: doi:10.48550/arXiv.2205.01833
+  journal: arXiv
+  preferred: true
+  title: 'OpenAlex: A fully-open index of scholarly works, authors, venues, institutions,
+    and concepts'
+  year: '2022'
 ---
 ## Description
 

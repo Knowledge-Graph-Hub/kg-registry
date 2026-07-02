@@ -17,9 +17,9 @@ description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms 
   toxicity courses and processes. The first version of TXPO focuses on liver toxicity.
 domains:
 - chemistry and biochemistry
-homepage_url: https://obofoundry.org/ontology/txpo
+homepage_url: https://toxpilot.nibiohn.go.jp/
 id: txpo
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/

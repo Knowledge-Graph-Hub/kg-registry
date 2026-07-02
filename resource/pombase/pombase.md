@@ -37,10 +37,12 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
     chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -58,10 +60,12 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -1750,7 +1754,10 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-  warnings: []
+  warnings:
+  - File was not able to be retrieved when checked on 2026-07-01; no live download
+    location was found (GitHub releases, kghub.io/current, and Zenodo all return 404
+    or have no published artifact).
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -1904,7 +1911,7 @@ products:
 publications:
 - authors:
   - Rutherford KM
-  - "Lera-Ram\xEDrez M"
+  - Lera-Ramírez M
   - Wood V
   doi: 10.1093/genetics/iyae007
   id: https://www.ncbi.nlm.nih.gov/pubmed/38376816

@@ -216,12 +216,13 @@ products:
     source: string
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
+    The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
+    relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -382,6 +383,42 @@ products:
     source: probe-miner
   product_file_size: 20140191116
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
+- category: GraphProduct
+  description: Statistically inferred genomic evidence graph connecting genes, gene
+    sets, inferred disease mechanisms, and human phenotypes. Gene sets are derived
+    from eleven NIH Common Fund programs (GlyGen, GTEx, IDG, IMPC/KOMP2, LINCS, MoTrPAC,
+    Bridge2AI, HuBMAP, Metabolomics Workbench, SenNet, and SPARC) and phenotype-gene
+    set relationships are computed with PIGEAN (Priors Inferred from GEne ANnotations).
+  format: http
+  id: digcfdekg.graph
+  name: CFDE REVEAL Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: digcfdekg
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: impc
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: bridge2ai
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: sennet
+  - relation_type: prov:hadPrimarySource
+    source: sparc
+  product_url: https://cfdeknowledge.org/r/cfde_reveal
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hubmap
 publications:
 - authors:
   - Timothy K Sheils
@@ -391,16 +428,16 @@ publications:
   - Dac-Trung Nguyen
   - Cristian G Bologa
   - Lars Juhl Jensen
-  - "Du\u0161ica Vidovi\u0107"
+  - Dušica Vidović
   - Amar Koleti
-  - "Stephan C Sch\xFCrer"
+  - Stephan C Schürer
   - Anna Waller
   - Jeremy J Yang
   - Jayme Holmes
   - Giovanni Bocci
   - Noel Southall
   - Poorva Dharkar
-  - "Ewy Math\xE9"
+  - Ewy Mathé
   - Anton Simeonov
   - Tudor I Oprea
   doi: 10.1093/nar/gkaa993
@@ -427,7 +464,7 @@ publications:
   - John Overington
   - Juhee Patel
   - Andrew D. Rouillard
-  - "Stephan Sch\xFCrer"
+  - Stephan Schürer
   - Timothy Sheils
   - Anton Simeonov
   - Larry A. Sklar

@@ -1936,17 +1936,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+  - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
+    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
+    kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
+    return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file. KG-Hub reorganization has taken the download offline; the
-    kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
-    (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
-    public download URL is available.'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
-    accessing file
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx

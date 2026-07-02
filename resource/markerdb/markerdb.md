@@ -79,6 +79,9 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: uniprot
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   description: TSV export of MarkerDB chemical biomarkers with associated conditions
     and concentration data.
@@ -94,6 +97,9 @@ products:
     source: hmdb
   - relation_type: prov:wasInformedBy
     source: pubchem
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   description: TSV export of MarkerDB genetic biomarkers with associated conditions.
   format: tsv
@@ -110,6 +116,9 @@ products:
     source: gwascatalog
   - relation_type: prov:wasInformedBy
     source: omim
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   description: TSV export of MarkerDB karyotype biomarkers with associated conditions.
   format: tsv
@@ -119,6 +128,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: markerdb
   product_url: https://markerdb.ca/pages/download_all_karyotypes?format=tsv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

@@ -8,9 +8,9 @@ contacts:
     value: https://www.omim.org/contact
   label: OMIM (Johns Hopkins University)
 creation_date: '2025-06-04T00:00:00Z'
-description: "OMIM (Online Mendelian Inheritance in Man) is a continuously updated,\
-  \ expert-curated catalog of human genes and genetic disorders, focusing on genotype\u2013\
-  phenotype relationships and the molecular basis of disease."
+description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
+  expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
+  relationships and the molecular basis of disease.
 domains:
 - biomedical
 - clinical
@@ -2146,7 +2146,7 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
@@ -2460,6 +2460,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
@@ -2875,12 +2877,13 @@ products:
     source: string
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
+    The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
+    relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations
@@ -3148,6 +3151,90 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+- category: GraphProduct
+  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
+    SPOKE biomedical and environmental health knowledge graph, served through FRINK
+    query services.
+  format: ttl
+  id: spoke-okn.graph
+  name: SPOKE-OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  - relation_type: prov:wasDerivedFrom
+    source: spoke
+  product_url: https://spoke.ucsf.edu
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bgee
+  - relation_type: prov:wasInfluencedBy
+    source: bindingdb
+  - relation_type: prov:wasInfluencedBy
+    source: bv-brc
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: civic
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+  - relation_type: prov:wasInfluencedBy
+    source: doid
+  - relation_type: prov:wasInfluencedBy
+    source: drugbank
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: foodb
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: gwascatalog
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: interpro
+  - relation_type: prov:wasInfluencedBy
+    source: kegg
+  - relation_type: prov:wasInfluencedBy
+    source: lincs-l1000
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: metacyc
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pathophenodb
+  - relation_type: prov:wasInfluencedBy
+    source: pfam
+  - relation_type: prov:wasInfluencedBy
+    source: pid
+  - relation_type: prov:wasInfluencedBy
+    source: protcid
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: sider
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
 publications:
 - authors:
   - Joanna S Amberger
@@ -3158,19 +3245,19 @@ publications:
   id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research
   preferred: true
-  title: "OMIM.org\u2014leveraging knowledge across phenotype\u2013gene relationships"
+  title: OMIM.org—leveraging knowledge across phenotype–gene relationships
   year: '2019'
 - authors:
   - Joanna S. Amberger
   - Carol A. Bocchini
-  - "Fran\xE7ois Schiettecatte"
+  - François Schiettecatte
   - Alan F. Scott
   - Ada Hamosh
   doi: 10.1093/nar/gku1205
   id: doi:10.1093/nar/gku1205
   journal: Nucleic Acids Research
-  title: "OMIM.org: Online Mendelian Inheritance in Man (OMIM\xAE), an online catalog\
-    \ of human genes and genetic disorders"
+  title: 'OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog
+    of human genes and genetic disorders'
   year: '2015'
 taxon:
 - NCBITaxon:9606

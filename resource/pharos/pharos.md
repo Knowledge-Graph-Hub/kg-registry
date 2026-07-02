@@ -160,12 +160,13 @@ products:
     source: string
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
+    The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
+    relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -326,6 +327,41 @@ products:
     source: probe-miner
   product_file_size: 20140191116
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
+- category: GraphProduct
+  description: Integrated rare-disease knowledge graph produced by the RD-Clust workflow,
+    connecting rare diseases to genes, phenotypes, Gene Ontology terms, drugs/ligands,
+    and pathway interactions. Distributed as the processed disease ontograph within
+    the RD-Clust repository.
+  format: http
+  id: ncatsgardkg.graph
+  name: NCATS GARD Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncatsgardkg
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  product_url: https://github.com/ncats/RD-Clust/tree/main/data/processed
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hp
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: mondo
+  - relation_type: prov:wasInfluencedBy
+    source: orphanet
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: pharos
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: chebi
+  - relation_type: prov:wasInfluencedBy
+    source: pubchem
+  - relation_type: prov:wasInfluencedBy
+    source: pathwaycommons
 publications:
 - authors:
   - Kelleher K
@@ -336,14 +372,14 @@ publications:
   - Siramshetty VB
   - Nguyen DT
   - Jensen LJ
-  - "Vidovi\u0107 D"
-  - "Sch\xFCrer SC"
+  - Vidović D
+  - Schürer SC
   - Holmes J
   - Sharma A
   - Pillai A
   - Bologa CG
   - Edwards L
-  - "Math\xE9 E"
+  - Mathé E
   - Oprea TI
   doi: 10.1093/nar/gkac1033
   id: doi:10.1093/nar/gkac1033
@@ -370,7 +406,7 @@ publications:
   - Overington J
   - Patel J
   - Rouillard AD
-  - "Sch\xFCrer S"
+  - Schürer S
   - Sheils T
   - Simeonov A
   - Sklar LA
@@ -395,16 +431,16 @@ publications:
   - Nguyen DT
   - Bologa CG
   - Jensen LJ
-  - "Vidovi\u0107 D"
+  - Vidović D
   - Koleti A
-  - "Sch\xFCrer SC"
+  - Schürer SC
   - Waller A
   - Yang JJ
   - Holmes J
   - Bocci G
   - Southall N
   - Dharuri H
-  - "Math\xE9 E"
+  - Mathé E
   - Simeonov A
   - Oprea TI
   doi: 10.1093/nar/gkaa993

@@ -623,8 +623,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2846,6 +2846,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
     to create graph nodes and add edges.
@@ -3548,18 +3550,102 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
+- category: GraphProduct
+  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
+    SPOKE biomedical and environmental health knowledge graph, served through FRINK
+    query services.
+  format: ttl
+  id: spoke-okn.graph
+  name: SPOKE-OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  - relation_type: prov:wasDerivedFrom
+    source: spoke
+  product_url: https://spoke.ucsf.edu
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bgee
+  - relation_type: prov:wasInfluencedBy
+    source: bindingdb
+  - relation_type: prov:wasInfluencedBy
+    source: bv-brc
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: civic
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+  - relation_type: prov:wasInfluencedBy
+    source: doid
+  - relation_type: prov:wasInfluencedBy
+    source: drugbank
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: foodb
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: gwascatalog
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: interpro
+  - relation_type: prov:wasInfluencedBy
+    source: kegg
+  - relation_type: prov:wasInfluencedBy
+    source: lincs-l1000
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: metacyc
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pathophenodb
+  - relation_type: prov:wasInfluencedBy
+    source: pfam
+  - relation_type: prov:wasInfluencedBy
+    source: pid
+  - relation_type: prov:wasInfluencedBy
+    source: protcid
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: sider
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
 publications:
 - authors:
   - Craig Knox
   - Mike Wilson
-  - "Christen\_M Klinger"
+  - Christen M Klinger
   - Mark Franklin
   - Eponine Oler
   - Alex Wilson
   - Allison Pon
   - Jordan Cox
-  - "Na Eun\_(Lucy) Chin"
-  - "Seth\_A Strawbridge"
+  - Na Eun (Lucy) Chin
+  - Seth A Strawbridge
   - Marysol Garcia-Patino
   - Ray Kruger
   - Aadhavya Sivakumaran
@@ -3569,7 +3655,7 @@ publications:
   - Omolola Fatokun
   - Daphnee Doucet
   - Ashley Zubkowski
-  - "Dorsa\_Yahya Rayat"
+  - Dorsa Yahya Rayat
   - Hayley Jackson
   - Karxena Harford
   - Afia Anjum
@@ -3579,11 +3665,11 @@ publications:
   - Brian Lee
   - Jaanus Liigand
   - Harrison Peters
-  - "Ruo Qi\_(Rachel) Wang"
+  - Ruo Qi (Rachel) Wang
   - Tue Nguyen
   - Denise So
   - Matthew Sharp
-  - "Rodolfo da\_Silva"
+  - Rodolfo da Silva
   - Cyrella Gabriel
   - Joshua Scantlebury
   - Marissa Jasinski
@@ -3591,7 +3677,7 @@ publications:
   - Timothy Jewison
   - Tanvir Sajed
   - Vasuk Gautam
-  - "David\_S Wishart"
+  - David S Wishart
   doi: 10.1093/nar/gkad976
   id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

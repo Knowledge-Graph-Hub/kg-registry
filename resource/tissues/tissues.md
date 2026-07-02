@@ -63,6 +63,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -1721,7 +1723,7 @@ publications:
   - Kalliopi Tsafou
   - Christian Stolte
   - Sune Pletscher-Frankild
-  - "Se\xE1n I. O\u2019Donoghue"
+  - Seán I. O’Donoghue
   - Lars Juhl Jensen
   doi: 10.7717/peerj.1054
   id: doi:10.7717/peerj.1054

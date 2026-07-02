@@ -2,18 +2,22 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: github
-        value: "oolonek"
-    label: Pierre-Marie Allard
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: oolonek
+  label: Pierre-Marie Allard
 creation_date: '2026-01-06T00:00:00Z'
-description: 'ENP-KG is a specialized knowledge graph for experimental natural products discovery and characterization. It integrates chemical spectroscopy data, natural product structures, and organism information to support drug discovery research and chemical ecology applications. The knowledge graph provides a unified platform for exploring relationships between organisms and their secondary metabolites.'
+description: ENP-KG is a specialized knowledge graph for experimental natural products
+  discovery and characterization. It integrates chemical spectroscopy data, natural
+  product structures, and organism information to support drug discovery research
+  and chemical ecology applications. The knowledge graph provides a unified platform
+  for exploring relationships between organisms and their secondary metabolites.
 domains:
-  - organisms
-  - drug discovery
+- organisms
+- drug discovery
 homepage_url: https://enpkg.commons-lab.org/
-id: "kg-enp"
+id: kg-enp
 last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
@@ -21,117 +25,129 @@ license:
   label: CC0-1.0
 name: ENPKG
 products:
-  - category: GraphicalInterface
-    description: Landing page for the Experimental Natural Products Knowledge Graph with links to the public GraphDB instance, SPARQL interface, vocabulary documentation, and GitHub organization.
-    format: http
-    id: "kg-enp.portal"
-    name: ENP-KG Portal
-    product_url: https://enpkg.commons-lab.org/
-    original_source:
-      - source: kg-enp
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Public GraphDB browser for exploring the Experimental Natural Products Knowledge Graph.
-    format: http
-    id: "kg-enp.graphdb"
-    license:
-      id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
-      label: CC0-1.0
-    name: ENPKG GraphDB
-    original_source:
-      - source: kg-enp
-        relation_type: prov:hadPrimarySource
-    product_url: https://enpkg.commons-lab.org/graphdb
-  - category: ProgrammingInterface
-    connection_url: https://enpkg.commons-lab.org/graphdb/sparql
-    description: SPARQL research interface for querying the Experimental Natural Products Knowledge Graph.
-    format: http
-    id: "kg-enp.sparql"
-    is_public: true
-    license:
-      id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
-      label: CC0-1.0
-    name: ENPKG SPARQL Endpoint
-    original_source:
-      - source: kg-enp
-        relation_type: prov:hadPrimarySource
-    product_url: https://enpkg.commons-lab.org/graphdb/sparql
-  - category: DocumentationProduct
-    description: ENPKG RDF vocabulary documentation describing classes and properties used in the Experimental Natural Products Knowledge Graph.
-    format: http
-    id: "kg-enp.vocabulary"
-    license:
-      id: https://creativecommons.org/licenses/by-nc-sa/4.0/
-      label: CC BY-NC-SA 4.0
-    name: ENPKG RDF Vocabulary
-    original_source:
-      - source: kg-enp
-        relation_type: prov:hadPrimarySource
-    product_url: https://enpkg.commons-lab.org/doc/index.html
-  - category: GraphProduct
-    description: RDF knowledge graph of the Experimental Natural Products Knowledge Graph, integrating experimental LC-MS/MS spectra and GNPS-based annotations, ISDB-LOTUS structural annotations, taxonomic and bioactivity metadata, cross-linked to Wikidata and served from the public GraphDB/SPARQL endpoint.
-    format: ttl
-    id: "kg-enp.graph"
-    license:
-      id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
-      label: CC0-1.0
-    name: ENPKG RDF Knowledge Graph
-    original_source:
-      - source: kg-enp
-        relation_type: prov:hadPrimarySource
-      - source: gnps
-        relation_type: prov:hadPrimarySource
-      - source: lotus
-        relation_type: prov:hadPrimarySource
-      - source: wikidata
-        relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: open-tree-of-life
-        relation_type: prov:wasInfluencedBy
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
-    product_url: https://enpkg.commons-lab.org/graphdb
-  - category: ProcessProduct
-    description: Full ENPKG workflow repository for generating experimental natural products knowledge graphs from metabolomics datasets.
-    format: http
-    id: "kg-enp.workflow"
-    license:
-      id: https://www.gnu.org/licenses/gpl-3.0.en.html
-      label: GPL-3.0
-    name: ENPKG Full Workflow
-    original_source:
-      - source: kg-enp
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/enpkg/enpkg_full
+- category: GraphicalInterface
+  description: Landing page for the Experimental Natural Products Knowledge Graph
+    with links to the public GraphDB instance, SPARQL interface, vocabulary documentation,
+    and GitHub organization.
+  format: http
+  id: kg-enp.portal
+  name: ENP-KG Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  product_url: https://enpkg.commons-lab.org/
+- category: GraphicalInterface
+  description: Public GraphDB browser for exploring the Experimental Natural Products
+    Knowledge Graph.
+  format: http
+  id: kg-enp.graphdb
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+    label: CC0-1.0
+  name: ENPKG GraphDB
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  product_url: https://enpkg.commons-lab.org/graphdb
+- category: ProgrammingInterface
+  connection_url: https://enpkg.commons-lab.org/graphdb/sparql
+  description: SPARQL research interface for querying the Experimental Natural Products
+    Knowledge Graph.
+  format: http
+  id: kg-enp.sparql
+  is_public: true
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+    label: CC0-1.0
+  name: ENPKG SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  product_url: https://enpkg.commons-lab.org/graphdb/sparql
+- category: DocumentationProduct
+  description: ENPKG RDF vocabulary documentation describing classes and properties
+    used in the Experimental Natural Products Knowledge Graph.
+  format: http
+  id: kg-enp.vocabulary
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: ENPKG RDF Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  product_url: https://enpkg.commons-lab.org/doc/index.html
+- category: GraphProduct
+  description: RDF knowledge graph of the Experimental Natural Products Knowledge
+    Graph, integrating experimental LC-MS/MS spectra and GNPS-based annotations, ISDB-LOTUS
+    structural annotations, taxonomic and bioactivity metadata, cross-linked to Wikidata
+    and served from the public GraphDB/SPARQL endpoint.
+  format: ttl
+  id: kg-enp.graph
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+    label: CC0-1.0
+  name: ENPKG RDF Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: lotus
+  - relation_type: prov:hadPrimarySource
+    source: wikidata
+  product_url: https://enpkg.commons-lab.org/graphdb
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: open-tree-of-life
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 406 error
+    when accessing file'
+- category: ProcessProduct
+  description: Full ENPKG workflow repository for generating experimental natural
+    products knowledge graphs from metabolomics datasets.
+  format: http
+  id: kg-enp.workflow
+  license:
+    id: https://www.gnu.org/licenses/gpl-3.0.en.html
+    label: GPL-3.0
+  name: ENPKG Full Workflow
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-enp
+  product_url: https://github.com/enpkg/enpkg_full
 publications:
-  - authors:
-      - Arnaud Gaudry
-      - Marco Pagni
-      - Florence Mehl
-      - Sebastien Moretti
-      - Luis-Manuel Quiros-Guerrero
-      - Luca Cappelletti
-      - Adriano Rutz
-      - Marcel Kaiser
-      - Laurence Marcourt
-      - Emerson Ferreira Queiroz
-      - Jean-Robert Ioset
-      - Antonio Grondin
-      - Bruno David
-      - Jean-Luc Wolfender
-      - Pierre-Marie Allard
-    doi: 10.1021/acscentsci.3c00800
-    id: doi:10.1021/acscentsci.3c00800
-    journal: ACS Central Science
-    preferred: true
-    title: A Sample-Centric and Knowledge-Driven Computational Framework for Natural Products Drug Discovery
-    year: '2024'
+- authors:
+  - Arnaud Gaudry
+  - Marco Pagni
+  - Florence Mehl
+  - Sebastien Moretti
+  - Luis-Manuel Quiros-Guerrero
+  - Luca Cappelletti
+  - Adriano Rutz
+  - Marcel Kaiser
+  - Laurence Marcourt
+  - Emerson Ferreira Queiroz
+  - Jean-Robert Ioset
+  - Antonio Grondin
+  - Bruno David
+  - Jean-Luc Wolfender
+  - Pierre-Marie Allard
+  doi: 10.1021/acscentsci.3c00800
+  id: doi:10.1021/acscentsci.3c00800
+  journal: ACS Central Science
+  preferred: true
+  title: A Sample-Centric and Knowledge-Driven Computational Framework for Natural
+    Products Drug Discovery
+  year: '2024'
 repository: https://github.com/enpkg/enpkg_full
 synonyms:
-  - ENPKG
-  - Experimental Natural Products Knowledge Graph
+- ENPKG
+- Experimental Natural Products Knowledge Graph
 ---
-
 # ENP-KG: Experimental Natural Products Knowledge Graph
 
 ENP-KG is a specialized knowledge graph dedicated to experimental natural products discovery, characterization, and integration. It serves as a comprehensive resource for researchers in drug discovery, chemical ecology, ethnobotany, and natural products chemistry by providing structured access to chemical structures, spectroscopic data, and organism-metabolite associations.

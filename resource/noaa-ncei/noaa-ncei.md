@@ -51,7 +51,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: noaa-ncei
   product_url: https://www.ncdc.noaa.gov/stormevents/
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
+    to URL'
 - category: Product
   description: The International Best Track Archive for Climate Stewardship (IBTrACS),
     a unified global collection of historical tropical cyclone (hurricane) track and
@@ -66,12 +68,11 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-27: Error connecting
-    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-    without response''))'
   - 'File was not able to be retrieved when checked on 2026-07-01: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
+  - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
     30+ environmental and geospatial data layers accessible through SPARQL endpoint

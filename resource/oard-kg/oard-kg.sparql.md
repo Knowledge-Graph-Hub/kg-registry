@@ -9,5 +9,10 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: oard-kg
 product_url: https://apps.okn.us/oard-kg/sparql
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: hp
+- relation_type: prov:wasInfluencedBy
+  source: mondo
 layout: product_detail
 ---

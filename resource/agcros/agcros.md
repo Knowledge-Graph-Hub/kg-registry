@@ -32,10 +32,10 @@ license:
 name: Agricultural Collaborative Research Outcomes System
 products:
 - category: GraphicalInterface
-  description: The AgCROS open data portal, hosted on ArcGIS Hub, allows users to discover,
-    analyze, and download data from the member research networks in formats including
-    CSV, KML, Zip, GeoJSON, and GeoTIFF, along with GeoServices, WMS, and WFS API
-    endpoints.
+  description: The AgCROS open data portal, hosted on ArcGIS Hub, allows users to
+    discover, analyze, and download data from the member research networks in formats
+    including CSV, KML, Zip, GeoJSON, and GeoTIFF, along with GeoServices, WMS, and
+    WFS API endpoints.
   format: http
   id: agcros.portal
   is_public: true
@@ -44,6 +44,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: agcros
   product_url: https://agcros-usdaars.opendata.arcgis.com/
+- category: GraphProduct
+  description: The Soil Organic Carbon Knowledge Graph (SOCKG), an RDF knowledge graph
+    integrating and mapping agricultural experimental data (soil properties, greenhouse
+    gas fluxes, crop yields, and management practices) to support soil carbon modeling.
+    Terminology is semantically aligned to the National Agricultural Library Thesaurus.
+  format: rdfxml
+  id: sockg.graph
+  name: SOC-KG RDF Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sockg
+  - relation_type: prov:hadPrimarySource
+    source: agcros
+  product_url: https://idir.sockg.org/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: nalt
 ---
 # Agricultural Collaborative Research Outcomes System (AgCROS)
 

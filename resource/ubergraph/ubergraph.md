@@ -5,12 +5,12 @@ collection:
 - okn
 contacts:
 - category: Individual
-  label: Jim Balhoff
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
+  label: Jim Balhoff
 - category: Individual
   contact_details:
   - contact_type: email
@@ -103,8 +103,8 @@ products:
   id: ubergraph.sparql
   name: Ubergraph SPARQL
   original_source:
-  - source: ubergraph
-    relation_type: prov:hadPrimarySource
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
   product_url: https://apps.okn.us/ubergraph/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for Ubergraph
@@ -112,8 +112,8 @@ products:
   id: ubergraph.tpf
   name: Ubergraph TPF
   original_source:
-  - source: ubergraph
-    relation_type: prov:hadPrimarySource
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
   product_url: https://apps.okn.us/ldf/ubergraph
 - category: GraphProduct
   compatibility:
@@ -196,6 +196,19 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+- category: GraphProduct
+  description: Ontology KP graph served over Ubergraph, a precomputed OWL-reasoned
+    RDF merge of OBO ontologies queried via SPARQL for ontology-based Translator services.
+  format: ttl
+  id: ontology-kp.graph
+  name: Ontology KP Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontology-kp
+  - relation_type: prov:wasDerivedFrom
+    source: ubergraph
+  product_file_size: 6906154
+  product_url: https://ubergraph.apps.renci.org/sparql
 repository: https://github.com/INCATools/ubergraph
 ---
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies

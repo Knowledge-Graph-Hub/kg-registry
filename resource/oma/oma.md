@@ -98,8 +98,10 @@ products:
   product_url: https://omabrowser.org/All/oma-seqs.fa.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
-    canonical filename is still listed on the OMA current release download page
-    (https://omabrowser.org/oma/current/) but is not currently served.'
+    canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
+    but is not currently served.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Protein annotations in text format
@@ -112,8 +114,10 @@ products:
   product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
-    canonical filename is still listed on the OMA current release download page
-    (https://omabrowser.org/oma/current/) but is not currently served.'
+    canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
+    but is not currently served.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
 - category: Product
   description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
     has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
@@ -125,7 +129,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: oma
   product_url: https://omabrowser.org/oma/current/
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: targz
   description: OMA data in RDF format (Turtle syntax)
@@ -214,6 +220,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: Text descriptions for OMA groups
@@ -226,16 +234,18 @@ products:
   product_url: https://omabrowser.org/All/group-descriptions.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
-    canonical filename is still listed on the OMA current release download page
-    (https://omabrowser.org/oma/current/) but is not currently served.'
+    canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
+    but is not currently served.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Adrian M Altenhoff
-  - "Alex Warwick\_Vesztrocy"
+  - Alex Warwick Vesztrocy
   - Charles Bernard
   - Clement-Marie Train
   - Alina Nicheperovich
-  - "Silvia Prieto\_Ba\xF1os"
+  - Silvia Prieto Baños
   - Irene Julca
   - David Moi
   - Yannis Nevers
@@ -250,15 +260,15 @@ publications:
   year: '2024'
 - authors:
   - Adrian M Altenhoff
-  - "Cl\xE9ment-Marie Train"
+  - Clément-Marie Train
   - Kimberly J Gilbert
   - Ishita Mediratta
-  - "Tarcisio Mendes\_de\_Farias"
+  - Tarcisio Mendes de Farias
   - David Moi
   - Yannis Nevers
   - Hale-Seda Radoykova
   - Victor Rossier
-  - "Alex Warwick\_Vesztrocy"
+  - Alex Warwick Vesztrocy
   - Natasha M Glover
   - Christophe Dessimoz
   doi: 10.1093/nar/gkaa1007

@@ -1099,12 +1099,13 @@ products:
     source: string
   - relation_type: prov:hadPrimarySource
     source: tcrd
-  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
+    The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
+    relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -1255,12 +1256,47 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: GraphProduct
+  description: Integrated rare-disease knowledge graph produced by the RD-Clust workflow,
+    connecting rare diseases to genes, phenotypes, Gene Ontology terms, drugs/ligands,
+    and pathway interactions. Distributed as the processed disease ontograph within
+    the RD-Clust repository.
+  format: http
+  id: ncatsgardkg.graph
+  name: NCATS GARD Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncatsgardkg
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  product_url: https://github.com/ncats/RD-Clust/tree/main/data/processed
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hp
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: mondo
+  - relation_type: prov:wasInfluencedBy
+    source: orphanet
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: pharos
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: chebi
+  - relation_type: prov:wasInfluencedBy
+    source: pubchem
+  - relation_type: prov:wasInfluencedBy
+    source: pathwaycommons
 publications:
 - authors:
   - Pavan S
   - Rommel K
   - Mateo Marquina ME
-  - "H\xF6hn S"
+  - Höhn S
   - Lanneau V
   - Rath A
   doi: 10.1371/journal.pone.0170365

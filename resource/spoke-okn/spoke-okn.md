@@ -1,137 +1,160 @@
 ---
-id: spoke-okn
-name: SPOKE-OKN
-description: The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive biomedical
-  and environmental health knowledge graph that integrates diverse data across genomics,
-  environmental science, and public health.
 activity_status: active
-homepage_url: https://spoke.ucsf.edu
+category: KnowledgeGraph
+collection:
+- okn
 contacts:
 - category: Individual
-  label: Sergio Baranzini
   contact_details:
   - contact_type: email
     value: sergio.baranzini@ucsf.edu
   - contact_type: github
     value: baranzini-lab
-license:
-  id: https://spoke.rbvi.ucsf.edu/docs/licenses.html
-  label: Multiple licenses (see individual data sources)
-products:
-- id: spoke-okn.sparql
-  name: SPOKE-OKN SPARQL
-  description: SPARQL endpoint for SPOKE-OKN
-  category: ProgrammingInterface
-  format: http
-  product_url: https://apps.okn.us/spoke-okn/sparql
-  original_source:
-  - source: spoke-okn
-    relation_type: prov:hadPrimarySource
-- id: spoke-okn.tpf
-  name: SPOKE-OKN TPF
-  description: Triple Pattern Fragments endpoint for SPOKE-OKN
-  category: ProgrammingInterface
-  format: http
-  product_url: https://apps.okn.us/ldf/spoke-okn
-  original_source:
-  - source: spoke-okn
-    relation_type: prov:hadPrimarySource
-- id: spoke-okn.graph
-  name: SPOKE-OKN Graph
-  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
-    SPOKE biomedical and environmental health knowledge graph, served through FRINK
-    query services.
-  category: GraphProduct
-  format: ttl
-  product_url: https://spoke.ucsf.edu
-  original_source:
-  - source: spoke-okn
-    relation_type: prov:hadPrimarySource
-  - source: spoke
-    relation_type: prov:wasDerivedFrom
-  secondary_source:
-  - source: bgee
-    relation_type: prov:wasInfluencedBy
-  - source: bindingdb
-    relation_type: prov:wasInfluencedBy
-  - source: bv-brc
-    relation_type: prov:wasInfluencedBy
-  - source: chembl
-    relation_type: prov:wasInfluencedBy
-  - source: civic
-    relation_type: prov:wasInfluencedBy
-  - source: cl
-    relation_type: prov:wasInfluencedBy
-  - source: clinicaltrialsgov
-    relation_type: prov:wasInfluencedBy
-  - source: diseases
-    relation_type: prov:wasInfluencedBy
-  - source: doid
-    relation_type: prov:wasInfluencedBy
-  - source: drugbank
-    relation_type: prov:wasInfluencedBy
-  - source: drugcentral
-    relation_type: prov:wasInfluencedBy
-  - source: foodb
-    relation_type: prov:wasInfluencedBy
-  - source: gdsc
-    relation_type: prov:wasInfluencedBy
-  - source: go
-    relation_type: prov:wasInfluencedBy
-  - source: gwascatalog
-    relation_type: prov:wasInfluencedBy
-  - source: hpa
-    relation_type: prov:wasInfluencedBy
-  - source: interpro
-    relation_type: prov:wasInfluencedBy
-  - source: kegg
-    relation_type: prov:wasInfluencedBy
-  - source: lincs-l1000
-    relation_type: prov:wasInfluencedBy
-  - source: mesh
-    relation_type: prov:wasInfluencedBy
-  - source: metacyc
-    relation_type: prov:wasInfluencedBy
-  - source: ncbigene
-    relation_type: prov:wasInfluencedBy
-  - source: ncbitaxon
-    relation_type: prov:wasInfluencedBy
-  - source: omim
-    relation_type: prov:wasInfluencedBy
-  - source: pathophenodb
-    relation_type: prov:wasInfluencedBy
-  - source: pfam
-    relation_type: prov:wasInfluencedBy
-  - source: pid
-    relation_type: prov:wasInfluencedBy
-  - source: protcid
-    relation_type: prov:wasInfluencedBy
-  - source: pubmed
-    relation_type: prov:wasInfluencedBy
-  - source: reactome
-    relation_type: prov:wasInfluencedBy
-  - source: sider
-    relation_type: prov:wasInfluencedBy
-  - source: string
-    relation_type: prov:wasInfluencedBy
-  - source: uberon
-    relation_type: prov:wasInfluencedBy
-  - source: uniprot
-    relation_type: prov:wasInfluencedBy
-  - source: wikipathways
-    relation_type: prov:wasInfluencedBy
-collection:
-- okn
-layout: resource_detail
-category: KnowledgeGraph
+  label: Sergio Baranzini
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+description: The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive biomedical
+  and environmental health knowledge graph that integrates diverse data across genomics,
+  environmental science, and public health.
 domains:
 - biomedical
 - genomics
 - clinical
 - precision medicine
 - pharmacology
+homepage_url: https://spoke.ucsf.edu
+id: spoke-okn
+last_modified_date: '2026-07-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: https://spoke.rbvi.ucsf.edu/docs/licenses.html
+  label: Multiple licenses (see individual data sources)
+name: SPOKE-OKN
+products:
+- category: ProgrammingInterface
+  description: SPARQL endpoint for SPOKE-OKN
+  format: http
+  id: spoke-okn.sparql
+  name: SPOKE-OKN SPARQL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  product_url: https://apps.okn.us/spoke-okn/sparql
+- category: ProgrammingInterface
+  description: Triple Pattern Fragments endpoint for SPOKE-OKN
+  format: http
+  id: spoke-okn.tpf
+  name: SPOKE-OKN TPF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  product_url: https://apps.okn.us/ldf/spoke-okn
+- category: GraphProduct
+  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
+    SPOKE biomedical and environmental health knowledge graph, served through FRINK
+    query services.
+  format: ttl
+  id: spoke-okn.graph
+  name: SPOKE-OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  - relation_type: prov:wasDerivedFrom
+    source: spoke
+  product_url: https://spoke.ucsf.edu
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bgee
+  - relation_type: prov:wasInfluencedBy
+    source: bindingdb
+  - relation_type: prov:wasInfluencedBy
+    source: bv-brc
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: civic
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+  - relation_type: prov:wasInfluencedBy
+    source: doid
+  - relation_type: prov:wasInfluencedBy
+    source: drugbank
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: foodb
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: gwascatalog
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: interpro
+  - relation_type: prov:wasInfluencedBy
+    source: kegg
+  - relation_type: prov:wasInfluencedBy
+    source: lincs-l1000
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: metacyc
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pathophenodb
+  - relation_type: prov:wasInfluencedBy
+    source: pfam
+  - relation_type: prov:wasInfluencedBy
+    source: pid
+  - relation_type: prov:wasInfluencedBy
+    source: protcid
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: sider
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
+- category: ProgrammingInterface
+  description: SPARQL endpoint for SPOKE GeneLab
+  format: http
+  id: spoke-genelab.sparql
+  name: SPOKE GeneLab SPARQL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-genelab
+  product_url: https://apps.okn.us/spoke-genelab/sparql
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: spoke-okn
+- category: ProgrammingInterface
+  description: Triple Pattern Fragments endpoint for SPOKE GeneLab
+  id: spoke-genelab.tpf
+  name: SPOKE GeneLab TPF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-genelab
+  product_url: https://apps.okn.us/ldf/spoke-genelab
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: spoke-okn
 publications:
 - authors:
   - John H Morris

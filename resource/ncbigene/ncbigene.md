@@ -2863,7 +2863,10 @@ products:
     source: mesh
   product_file_size: 210868256
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-  warnings: []
+  warnings:
+  - File was not able to be retrieved when checked on 2026-07-01; no live download
+    location was found (GitHub releases, kghub.io/current, and Zenodo all return 404
+    or have no published artifact).
 - category: GraphProduct
   description: KGX nodes and edges for KG-COVID-19
   format: kgx
@@ -2900,17 +2903,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+  - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
+    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
+    kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
+    return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 404 error
-    when accessing file. KG-Hub reorganization has taken the download offline; the
-    kg-hub.berkeleybop.io and kghub.io hosts now 404 for all kg-covid-19 artifacts
-    (current and dated) and the kg-hub-public-data S3 objects return 403. No replacement
-    public download URL is available.'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
-    accessing file
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations
@@ -3140,6 +3138,125 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: GraphProduct
+  description: Integrated rare-disease knowledge graph produced by the RD-Clust workflow,
+    connecting rare diseases to genes, phenotypes, Gene Ontology terms, drugs/ligands,
+    and pathway interactions. Distributed as the processed disease ontograph within
+    the RD-Clust repository.
+  format: http
+  id: ncatsgardkg.graph
+  name: NCATS GARD Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncatsgardkg
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  product_url: https://github.com/ncats/RD-Clust/tree/main/data/processed
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hp
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: mondo
+  - relation_type: prov:wasInfluencedBy
+    source: orphanet
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: pharos
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: chebi
+  - relation_type: prov:wasInfluencedBy
+    source: pubchem
+  - relation_type: prov:wasInfluencedBy
+    source: pathwaycommons
+- category: GraphProduct
+  description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
+    SPOKE biomedical and environmental health knowledge graph, served through FRINK
+    query services.
+  format: ttl
+  id: spoke-okn.graph
+  name: SPOKE-OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spoke-okn
+  - relation_type: prov:wasDerivedFrom
+    source: spoke
+  product_url: https://spoke.ucsf.edu
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bgee
+  - relation_type: prov:wasInfluencedBy
+    source: bindingdb
+  - relation_type: prov:wasInfluencedBy
+    source: bv-brc
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: civic
+  - relation_type: prov:wasInfluencedBy
+    source: cl
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+  - relation_type: prov:wasInfluencedBy
+    source: doid
+  - relation_type: prov:wasInfluencedBy
+    source: drugbank
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: foodb
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: gwascatalog
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: interpro
+  - relation_type: prov:wasInfluencedBy
+    source: kegg
+  - relation_type: prov:wasInfluencedBy
+    source: lincs-l1000
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: metacyc
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pathophenodb
+  - relation_type: prov:wasInfluencedBy
+    source: pfam
+  - relation_type: prov:wasInfluencedBy
+    source: pid
+  - relation_type: prov:wasInfluencedBy
+    source: protcid
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: sider
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: uberon
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
 publications:
 - authors:
   - Donna Maglott

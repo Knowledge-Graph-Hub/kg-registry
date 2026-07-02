@@ -8,6 +8,6 @@ name: Cell Annotation Tool
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cellmarker
-product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp
+product_url: http://117.50.127.228/CellMarker/CellMarker_annotation.jsp
 layout: product_detail
 ---

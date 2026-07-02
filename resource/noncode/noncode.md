@@ -89,6 +89,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: noncode
   product_url: http://www.noncode.org/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Predicted functions for plant lncRNAs based on co-expression analysis
   format: http
