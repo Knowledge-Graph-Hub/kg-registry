@@ -162,11 +162,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -372,14 +372,14 @@ publications:
   - Siramshetty VB
   - Nguyen DT
   - Jensen LJ
-  - Vidović D
-  - Schürer SC
+  - "Vidovi\u0107 D"
+  - "Sch\xFCrer SC"
   - Holmes J
   - Sharma A
   - Pillai A
   - Bologa CG
   - Edwards L
-  - Mathé E
+  - "Math\xE9 E"
   - Oprea TI
   doi: 10.1093/nar/gkac1033
   id: doi:10.1093/nar/gkac1033
@@ -406,7 +406,7 @@ publications:
   - Overington J
   - Patel J
   - Rouillard AD
-  - Schürer S
+  - "Sch\xFCrer S"
   - Sheils T
   - Simeonov A
   - Sklar LA
@@ -431,16 +431,16 @@ publications:
   - Nguyen DT
   - Bologa CG
   - Jensen LJ
-  - Vidović D
+  - "Vidovi\u0107 D"
   - Koleti A
-  - Schürer SC
+  - "Sch\xFCrer SC"
   - Waller A
   - Yang JJ
   - Holmes J
   - Bocci G
   - Southall N
   - Dharuri H
-  - Mathé E
+  - "Math\xE9 E"
   - Simeonov A
   - Oprea TI
   doi: 10.1093/nar/gkaa993

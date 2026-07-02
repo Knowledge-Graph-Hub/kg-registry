@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: foodb
 product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
+warnings:
+- File was not able to be retrieved when checked on 2026-07-02_ No Content-Length
+  header found
 layout: product_detail
 ---

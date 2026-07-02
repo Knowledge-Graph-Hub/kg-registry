@@ -10,6 +10,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: oma
 product_url: https://omabrowser.org/oma/current/
-warnings: []
+warnings:
+- File was not able to be retrieved when checked on 2026-07-02_ HTTP 502 error when
+  accessing file
 layout: product_detail
 ---

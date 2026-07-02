@@ -10,6 +10,7 @@ original_source:
   source: ontology-kp
 - relation_type: prov:wasDerivedFrom
   source: ubergraph
+product_file_size: 6906154
 product_url: https://ubergraph.apps.renci.org/sparql
 layout: product_detail
 ---

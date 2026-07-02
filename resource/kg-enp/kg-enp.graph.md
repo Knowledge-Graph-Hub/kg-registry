@@ -25,5 +25,8 @@ secondary_source:
   source: open-tree-of-life
 - relation_type: prov:wasInfluencedBy
   source: chembl
+warnings:
+- File was not able to be retrieved when checked on 2026-07-02_ HTTP 406 error when
+  accessing file
 layout: product_detail
 ---

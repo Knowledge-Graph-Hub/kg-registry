@@ -49,8 +49,6 @@ products:
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
     header found'
 - category: OntologyProduct

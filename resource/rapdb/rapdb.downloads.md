@@ -10,7 +10,7 @@ original_source:
   source: rapdb
 product_url: https://rapdb.dna.affrc.go.jp/download/index.html
 warnings:
-- File was not able to be retrieved when checked on 2026-07-01_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-07-02_ Timeout connecting
   to URL
 layout: product_detail
 ---

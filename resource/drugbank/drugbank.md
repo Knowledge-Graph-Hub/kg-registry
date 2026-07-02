@@ -623,8 +623,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2842,12 +2842,10 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
     to create graph nodes and add edges.
@@ -3638,14 +3636,14 @@ publications:
 - authors:
   - Craig Knox
   - Mike Wilson
-  - Christen M Klinger
+  - "Christen\_M Klinger"
   - Mark Franklin
   - Eponine Oler
   - Alex Wilson
   - Allison Pon
   - Jordan Cox
-  - Na Eun (Lucy) Chin
-  - Seth A Strawbridge
+  - "Na Eun\_(Lucy) Chin"
+  - "Seth\_A Strawbridge"
   - Marysol Garcia-Patino
   - Ray Kruger
   - Aadhavya Sivakumaran
@@ -3655,7 +3653,7 @@ publications:
   - Omolola Fatokun
   - Daphnee Doucet
   - Ashley Zubkowski
-  - Dorsa Yahya Rayat
+  - "Dorsa\_Yahya Rayat"
   - Hayley Jackson
   - Karxena Harford
   - Afia Anjum
@@ -3665,11 +3663,11 @@ publications:
   - Brian Lee
   - Jaanus Liigand
   - Harrison Peters
-  - Ruo Qi (Rachel) Wang
+  - "Ruo Qi\_(Rachel) Wang"
   - Tue Nguyen
   - Denise So
   - Matthew Sharp
-  - Rodolfo da Silva
+  - "Rodolfo da\_Silva"
   - Cyrella Gabriel
   - Joshua Scantlebury
   - Marissa Jasinski
@@ -3677,7 +3675,7 @@ publications:
   - Timothy Jewison
   - Tanvir Sajed
   - Vasuk Gautam
-  - David S Wishart
+  - "David\_S Wishart"
   doi: 10.1093/nar/gkad976
   id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

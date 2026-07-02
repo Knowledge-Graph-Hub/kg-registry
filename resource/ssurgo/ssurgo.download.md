@@ -10,7 +10,7 @@ original_source:
   source: ssurgo
 product_url: https://nrcs.app.box.com/v/soils
 warnings:
-- File was not able to be retrieved when checked on 2026-07-01_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-07-02_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

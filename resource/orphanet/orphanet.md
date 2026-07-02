@@ -1101,11 +1101,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -1296,7 +1296,7 @@ publications:
   - Pavan S
   - Rommel K
   - Mateo Marquina ME
-  - Höhn S
+  - "H\xF6hn S"
   - Lanneau V
   - Rath A
   doi: 10.1371/journal.pone.0170365

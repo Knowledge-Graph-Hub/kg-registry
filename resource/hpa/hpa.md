@@ -1483,11 +1483,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
     SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -1574,9 +1574,9 @@ products:
     source: wikipathways
 publications:
 - authors:
-  - Uhlén M
+  - "Uhl\xE9n M"
   - Fagerberg L
-  - Hallström BM
+  - "Hallstr\xF6m BM"
   - Lindskog C
   - Oksvold P
   - Mardinoglu A

@@ -32,12 +32,10 @@ products:
     source: simap
   product_url: http://mips.helmholtz-muenchen.de/simap/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-07-01: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1001,8 +999,8 @@ publications:
 - authors:
   - Thomas Rattei
   - Patrick Tischler
-  - Stefan Götz
-  - Marc-André Jehl
+  - "Stefan G\xF6tz"
+  - "Marc-Andr\xE9 Jehl"
   - Jonathan Hoser
   - Roland Arnold
   - Ana Conesa
@@ -1011,8 +1009,8 @@ publications:
   id: doi:10.1093/nar/gkp949
   journal: Nucleic Acids Research
   preferred: true
-  title: SIMAP—a comprehensive database of pre-calculated protein sequence similarities,
-    domains, annotations and clusters
+  title: "SIMAP\u2014a comprehensive database of pre-calculated protein sequence similarities,\
+    \ domains, annotations and clusters"
   year: '2010'
 warnings:
 - 'SIMAP appears discontinued: the historical MIPS/Helmholtz Munich portal and the

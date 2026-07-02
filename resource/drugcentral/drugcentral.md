@@ -397,18 +397,16 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -430,16 +428,14 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -462,18 +458,16 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -1602,12 +1596,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -1646,11 +1640,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
