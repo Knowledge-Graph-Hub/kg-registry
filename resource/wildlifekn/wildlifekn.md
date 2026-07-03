@@ -54,10 +54,34 @@ products:
   original_source:
   - source: wildlifekn
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: The Wildlife-KN knowledge graph, an integrative RDF network of managed
+    species and their habitats, environmental factors, and climate context, built to
+    support wildlife management under climate change. It is served as Linked Data
+    through the Wildlife-KN SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: wildlifekn.graph
+  name: Wildlife-KN Knowledge Graph
+  original_source:
+  - source: wildlifekn
+    relation_type: prov:hadPrimarySource
+  - source: usgs
+    relation_type: prov:hadPrimarySource
+  - source: edrr-invasive-catalog
+    relation_type: prov:hadPrimarySource
+  - source: gbif
+    relation_type: prov:hadPrimarySource
+  - source: worldclim
+    relation_type: prov:hadPrimarySource
+  - source: iucn-red-list
+    relation_type: prov:hadPrimarySource
+  - source: cabi-isc
+    relation_type: prov:hadPrimarySource
+  product_url: https://apps.okn.us/ldf/wildlifekn
 taxon:
 - NCBITaxon:131567
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-07-03T00:00:00Z'
 ---
 Wildlife-KN is an open knowledge network for wildlife management under climate
 change, developed to support exploration of species observations in relation to
