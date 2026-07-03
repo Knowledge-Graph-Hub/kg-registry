@@ -48,10 +48,41 @@ products:
   original_source:
   - source: nde
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
+    dataset and computational-tool metadata harvested from NIAID-funded and
+    globally-relevant infectious and immune-mediated disease repositories. Served
+    through the Proto-OKN FRINK federated SPARQL platform.
+  format: ttl
+  id: nde.graph
+  name: NIAID Data Ecosystem KG (graph)
+  product_url: https://frink.apps.renci.org/nde
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nde
+  - relation_type: prov:hadPrimarySource
+    source: immport
+  - relation_type: prov:hadPrimarySource
+    source: vdjserver
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: gene-expression-omnibus
+  - relation_type: prov:wasInfluencedBy
+    source: sra
+  - relation_type: prov:wasInfluencedBy
+    source: omicsdi
+  - relation_type: prov:wasInfluencedBy
+    source: hubmap
+  - relation_type: prov:wasInfluencedBy
+    source: massive
+  - relation_type: prov:wasInfluencedBy
+    source: pdb
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
 taxon:
 - NCBITaxon:9606
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 ---
 NIAID Data Ecosystem KG
 

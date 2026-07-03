@@ -43,8 +43,35 @@ products:
   original_source:
   - source: ruralkg
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: The Rural Resilience KG graph, a cross-domain RDF knowledge graph
+    integrating health and justice data for rural resilience. It integrates
+    justice/crime data from the National Incident-Based Reporting System (NIBRS),
+    substance-use survey data from the National Survey on Drug Use and Health
+    (NSDUH), mental health treatment providers from the National Directory of
+    Mental Health Treatment Facilities, county rurality classifications from the
+    USDA Rural-Urban Continuum Codes, and US administrative-area geography, served
+    via the FRINK/Proto-OKN infrastructure.
+  format: ttl
+  id: ruralkg.graph
+  name: Rural Resilience KG graph
+  original_source:
+  - source: ruralkg
+    relation_type: prov:hadPrimarySource
+  - source: nibrs
+    relation_type: prov:hadPrimarySource
+  - source: nsduh
+    relation_type: prov:hadPrimarySource
+  - source: national-directory-mental-health-facilities
+    relation_type: prov:hadPrimarySource
+  - source: rural-urban-continuum-codes
+    relation_type: prov:hadPrimarySource
+  secondary_source:
+  - source: us-census
+    relation_type: prov:wasInfluencedBy
+  product_url: https://frink.renci.org/registry/kgs/rural-kg/
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-03T00:00:00Z'
 ---
 Rural Resilience KG
 

@@ -300,9 +300,12 @@ def sort_grid(metadata_grid):
             continue
 
         # finally, sort by: active, inactive
+        # any non-active status (e.g. "unknown", or a status not explicitly
+        # handled above) falls through to the inactive bucket so it is still
+        # displayed (at the bottom) rather than being silently dropped.
         if resource_status == "active":
             active[validation_status].append(resource_id)
-        elif resource_status == "inactive":
+        else:
             inactive[validation_status].append(resource_id)
 
     # concatenate everything to a sorted list:

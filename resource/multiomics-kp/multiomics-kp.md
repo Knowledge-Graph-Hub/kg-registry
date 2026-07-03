@@ -12,7 +12,7 @@ description: A Translator Knowledge Provider incorporating multiomics data.
 domains:
   - biomedical
 id: multiomics-kp
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-07-03T00:00:00Z'
 layout: resource_detail
 name: Multiomics KP
 products:
@@ -34,6 +34,42 @@ products:
       - source: multiomics-kp
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/PriceLab/DOCKET
+  - category: GraphProduct
+    description: Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse KP, exposing the multiomics knowledge graph served by the Multiomics Provider (built from GTEx, TCGA, and drug-response data, with additional clinical-trials, drug-approval and knowledge-resource inputs).
+    format: json
+    id: multiomics-kp.graph
+    name: Multiomics KP Knowledge Graph
+    original_source:
+      - source: multiomics-kp
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: tcga
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+      - source: dailymed
+        relation_type: prov:hadPrimarySource
+      - source: faers
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: aact
+        relation_type: prov:wasInfluencedBy
+      - source: biogrid
+        relation_type: prov:wasInfluencedBy
+      - source: huri
+        relation_type: prov:wasInfluencedBy
+      - source: cellmarker
+        relation_type: prov:wasInfluencedBy
+      - source: drugcentral
+        relation_type: prov:wasInfluencedBy
+      - source: ttd
+        relation_type: prov:wasInfluencedBy
+      - source: pubmed
+        relation_type: prov:wasInfluencedBy
+    product_url: https://biothings.transltr.io/biggim_drugresponse_kp/metadata
 creation_date: '2025-03-09T00:00:00Z'
 ---
 

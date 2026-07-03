@@ -4,7 +4,7 @@ layout: resource_detail
 name: Tumor-Biomarker Knowledge Graph
 description: A weighted heterogeneous knowledge graph containing four types of entities (Tumor, Biomarker, Drug, and ADR)  extracted from MEDLINE corpus for adverse drug reaction discovery in antitumor drugs. TBKG uses a naive  Bayesian model to explore correlations and provides explainable predictions through tumor-biomarker-drug  pathways. The knowledge graph contains 1,179 tumors, 2,550 biomarkers, 1,806 drugs, and 756 ADRs with six  types of relationships totaling 139,254 edges.
 category: KnowledgeGraph
-activity_status: unknown
+activity_status: active
 domains:
   - drug discovery
   - pharmacology
@@ -14,7 +14,8 @@ domains:
 homepage_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full
 repository: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
 publications:
-  - id: PMID:33584816
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33584816
+    preferred: true
     title: Adverse Drug Reaction Discovery Using a Tumor-Biomarker Knowledge Graph
     authors:
       - Wang M
@@ -36,7 +37,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 creation_date: '2025-11-22T00:00:00Z'
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 products:
   - id: tbkg.data
     name: TBKG Knowledge Graph Data
@@ -48,9 +49,10 @@ products:
       - source: tbkg
         relation_type: prov:hadPrimarySource
       - source: pubmed
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:wasDerivedFrom
+    secondary_source:
       - source: umls
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:wasInfluencedBy
   - id: tbkg.osimertinib_case_study
     name: TBKG Osimertinib ADR Case Study Data
     description: Clinical validation dataset with calculated ADRs for osimertinib ranked by importance, biomarker pathways explaining drug-ADR relationships, and clinical data from 8 lung adenocarcinoma patients. Model achieved Kappa=0.68 concordance with official manual and 0.81 three-fold cross-validation accuracy.
@@ -61,9 +63,10 @@ products:
       - source: tbkg
         relation_type: prov:hadPrimarySource
       - source: pubmed
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:wasDerivedFrom
+    secondary_source:
       - source: umls
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:wasInfluencedBy
 taxon:
   - NCBITaxon:9606
 ---

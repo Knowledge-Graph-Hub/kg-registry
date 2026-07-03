@@ -43,8 +43,27 @@ products:
   original_source:
   - source: dreamkg
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: DREAM-KG homelessness and social-services knowledge graph for the
+    Philadelphia region, integrating social service directory records and provider
+    reviews. Served via the DREAM-KG SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: dreamkg.graph
+  is_public: true
+  name: DREAM-KG Knowledge Graph
+  product_url: https://dreamkg.com/
+  original_source:
+  - source: dreamkg
+    relation_type: prov:hadPrimarySource
+  - source: auntbertha
+    relation_type: prov:hadPrimarySource
+  - source: google-reviews
+    relation_type: prov:hadPrimarySource
+  secondary_source:
+  - source: opendataphilly
+    relation_type: prov:wasInfluencedBy
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-03T00:00:00Z'
 ---
 DREAM-KG
 

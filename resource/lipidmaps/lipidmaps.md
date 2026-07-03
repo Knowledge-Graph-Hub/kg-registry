@@ -1,6 +1,13 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.lipidmaps.org/
+  label: LIPID MAPS Consortium (hosted at University of California San Diego and Cardiff
+    University)
 creation_date: '2026-06-15T00:00:00Z'
 description: LIPID MAPS is the LIPID MAPS Lipidomics Gateway, a community resource
   for lipid structures, classification, and nomenclature. It provides the LIPID MAPS
@@ -14,7 +21,7 @@ domains:
 - nutrition
 homepage_url: https://www.lipidmaps.org/
 id: lipidmaps
-last_modified_date: '2026-06-15T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,9 +39,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: lipidmaps
   product_url: https://www.lipidmaps.org/databases/lmsd/download
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 520 error
-    when accessing file'
 - category: ProgrammingInterface
   description: REST API for programmatic access to LIPID MAPS databases, allowing
     lookup and retrieval of lipid records, structures, and annotations by identifier
@@ -67,9 +71,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: lipidmaps
   product_url: https://www.lipidmaps.org/databases/lmsd/overview
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 520 error
-    when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
