@@ -69,6 +69,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
     symptomatic, or non-indications

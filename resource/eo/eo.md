@@ -40,6 +40,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Plant Environment Ontology in OBO format
   format: obo
@@ -51,6 +53,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/eo.obo
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
     when accessing file'
 publications:
 - authors:

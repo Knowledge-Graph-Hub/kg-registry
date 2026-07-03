@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: tarbase
 product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/downloads
-warnings:
-- File was not able to be retrieved when checked on 2026-07-02_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

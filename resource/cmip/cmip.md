@@ -8,12 +8,11 @@ contacts:
     value: https://github.com/WCRP-CMIP
   label: World Climate Research Programme (WCRP) CMIP Panel
 creation_date: '2026-07-03T00:00:00Z'
-description: The Coupled Model Intercomparison Project (CMIP) is a coordinated
-  climate modeling framework organized under the World Climate Research Programme
-  (WCRP). Its CMIP6 Controlled Vocabularies (CMIP6CV) define the standardized
-  identifiers used across CMIP, including source_id (models), experiment_id
-  (experiments), activity_id (MIP activities), and institution_id, published as
-  machine-readable files.
+description: The Coupled Model Intercomparison Project (CMIP) is a coordinated climate
+  modeling framework organized under the World Climate Research Programme (WCRP).
+  Its CMIP6 Controlled Vocabularies (CMIP6CV) define the standardized identifiers
+  used across CMIP, including source_id (models), experiment_id (experiments), activity_id
+  (MIP activities), and institution_id, published as machine-readable files.
 domains:
 - environment
 - information technology
@@ -25,9 +24,9 @@ layout: resource_detail
 name: Coupled Model Intercomparison Project (CMIP)
 products:
 - category: Product
-  description: The CMIP6 Controlled Vocabularies (CMIP6CV) are machine-readable
-    JSON files defining standardized CMIP identifiers such as source_id,
-    experiment_id, activity_id, and institution_id.
+  description: The CMIP6 Controlled Vocabularies (CMIP6CV) are machine-readable JSON
+    files defining standardized CMIP identifiers such as source_id, experiment_id,
+    activity_id, and institution_id.
   format: json
   id: cmip.cmip6cvs
   name: CMIP6 Controlled Vocabularies
@@ -35,6 +34,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cmip
   product_url: https://github.com/WCRP-CMIP/CMIP6_CVs
+- category: GraphProduct
+  description: RDF/Turtle knowledge graph integrating climate model and dataset metadata
+    (from ESGF, CMIP controlled vocabularies, and the NASA GCMD keyword taxonomy)
+    with entities and relationships extracted from climate-science publications. Served
+    through the FRINK federation and the SPARQL and TPF endpoints.
+  format: ttl
+  id: climatemodelskg.graph
+  name: Climate Models KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: climatemodelskg
+  - relation_type: prov:hadPrimarySource
+    source: esgf
+  - relation_type: prov:hadPrimarySource
+    source: cmip
+  - relation_type: prov:hadPrimarySource
+    source: gcmd
+  product_url: https://frink.renci.org/registry/kgs/climatepub4-kg/
 ---
 ## Description
 

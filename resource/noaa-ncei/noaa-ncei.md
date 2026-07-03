@@ -66,10 +66,10 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-01: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
-  - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
 - category: GraphProduct

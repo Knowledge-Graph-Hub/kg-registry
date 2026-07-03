@@ -8,11 +8,11 @@ contacts:
     value: https://www.findhelp.org/
   label: findhelp (formerly Aunt Bertha)
 creation_date: '2026-07-03T00:00:00Z'
-description: Aunt Bertha (now operating as findhelp) is a nationwide social care
-  directory of free and reduced-cost health and human services, including food,
-  housing, financial assistance, and other community programs. It provides
-  structured records of service names, descriptions, contact information,
-  locations, languages, cost, availability, hours, and service types.
+description: Aunt Bertha (now operating as findhelp) is a nationwide social care directory
+  of free and reduced-cost health and human services, including food, housing, financial
+  assistance, and other community programs. It provides structured records of service
+  names, descriptions, contact information, locations, languages, cost, availability,
+  hours, and service types.
 domains:
 - public health
 - general
@@ -23,8 +23,8 @@ layout: resource_detail
 name: Aunt Bertha (findhelp)
 products:
 - category: GraphicalInterface
-  description: Searchable web directory of free and reduced-cost social care
-    services, including organizations, programs, locations, and hours.
+  description: Searchable web directory of free and reduced-cost social care services,
+    including organizations, programs, locations, and hours.
   format: http
   id: auntbertha.site
   is_public: true
@@ -33,6 +33,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: auntbertha
   product_url: https://www.findhelp.org/
+- category: GraphProduct
+  description: DREAM-KG homelessness and social-services knowledge graph for the Philadelphia
+    region, integrating social service directory records and provider reviews. Served
+    via the DREAM-KG SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: dreamkg.graph
+  is_public: true
+  name: DREAM-KG Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dreamkg
+  - relation_type: prov:hadPrimarySource
+    source: auntbertha
+  - relation_type: prov:hadPrimarySource
+    source: google-reviews
+  product_url: https://dreamkg.com/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: opendataphilly
 ---
 # Aunt Bertha (findhelp)
 

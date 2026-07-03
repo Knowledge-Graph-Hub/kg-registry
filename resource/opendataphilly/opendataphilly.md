@@ -8,11 +8,10 @@ contacts:
     value: https://opendataphilly.org/
   label: OpenDataPhilly
 creation_date: '2026-07-03T00:00:00Z'
-description: OpenDataPhilly is the open data portal for the Philadelphia region,
-  cataloging hundreds of public datasets, APIs, and applications from the City of
-  Philadelphia and partner organizations. Datasets span public safety, health,
-  transportation, property, and other civic domains, including the Philadelphia
-  crime incidents dataset.
+description: OpenDataPhilly is the open data portal for the Philadelphia region, cataloging
+  hundreds of public datasets, APIs, and applications from the City of Philadelphia
+  and partner organizations. Datasets span public safety, health, transportation,
+  property, and other civic domains, including the Philadelphia crime incidents dataset.
 domains:
 - public health
 - general
@@ -44,6 +43,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: opendataphilly
   product_url: https://opendataphilly.org/datasets/crime-incidents/
+- category: GraphProduct
+  description: DREAM-KG homelessness and social-services knowledge graph for the Philadelphia
+    region, integrating social service directory records and provider reviews. Served
+    via the DREAM-KG SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: dreamkg.graph
+  is_public: true
+  name: DREAM-KG Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dreamkg
+  - relation_type: prov:hadPrimarySource
+    source: auntbertha
+  - relation_type: prov:hadPrimarySource
+    source: google-reviews
+  product_url: https://dreamkg.com/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: opendataphilly
 ---
 # OpenDataPhilly
 

@@ -1405,12 +1405,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations
@@ -1448,6 +1450,45 @@ products:
     source: t3db
   - relation_type: prov:hadPrimarySource
     source: wipo-tkp
+- category: GraphProduct
+  description: Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse
+    KP, exposing the multiomics knowledge graph served by the Multiomics Provider
+    (built from GTEx, TCGA, and drug-response data, with additional clinical-trials,
+    drug-approval and knowledge-resource inputs).
+  format: json
+  id: multiomics-kp.graph
+  name: Multiomics KP Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
+    source: faers
+  product_url: https://biothings.transltr.io/biggim_drugresponse_kp/metadata
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: aact
+  - relation_type: prov:wasInfluencedBy
+    source: biogrid
+  - relation_type: prov:wasInfluencedBy
+    source: huri
+  - relation_type: prov:wasInfluencedBy
+    source: cellmarker
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: ttd
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
 publications:
 - authors:
   - Ying Zhou

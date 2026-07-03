@@ -56,6 +56,30 @@ products:
   versions:
   - '2026_03_27'
   - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
+- category: GraphProduct
+  description: TRAPI knowledge graph served by the Genetics KP, exposing gene/disease
+    and gene/phenotype associations computed from large-scale human genetics data
+    (e.g. Genebass exome association statistics aggregated with methods such as MAGMA
+    and the HuGE calculator) and integrated curated gene-condition resources. The
+    linked endpoint returns the meta knowledge graph describing the served node and
+    edge types.
+  format: json
+  id: genetics-kp.graph
+  name: Genetics KP Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  - relation_type: prov:hadPrimarySource
+    source: genebass
+  product_file_size: 3538
+  product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/meta_knowledge_graph
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: gencc
+  - relation_type: prov:wasInfluencedBy
+    source: clinvar
+  - relation_type: prov:wasInfluencedBy
+    source: clingen
 publications:
 - authors:
   - Konrad J. Karczewski
@@ -107,7 +131,8 @@ publications:
   id: doi:10.1016/j.xgen.2022.100168
   journal: Cell Genomics
   preferred: true
-  title: Systematic single-variant and gene-based association testing of thousands of phenotypes in 394,841 UK Biobank exomes
+  title: Systematic single-variant and gene-based association testing of thousands
+    of phenotypes in 394,841 UK Biobank exomes
   year: '2022'
 synonyms:
 - Genebass

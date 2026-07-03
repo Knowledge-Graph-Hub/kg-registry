@@ -9,11 +9,11 @@ contacts:
   label: VDJServer
 creation_date: '2026-07-02T00:00:00Z'
 description: VDJServer is a NIAID-supported, cloud-based analysis portal and public
-  data repository for adaptive immune receptor repertoire (AIRR) sequencing data. It
-  provides tools for processing B-cell and T-cell receptor repertoire sequences and
-  hosts an AIRR Data Commons-compliant repository for sharing immune repertoire
-  datasets. VDJServer is one of the NIAID-sponsored repositories whose dataset
-  metadata is harvested and indexed by the NIAID Data Ecosystem Discovery Portal.
+  data repository for adaptive immune receptor repertoire (AIRR) sequencing data.
+  It provides tools for processing B-cell and T-cell receptor repertoire sequences
+  and hosts an AIRR Data Commons-compliant repository for sharing immune repertoire
+  datasets. VDJServer is one of the NIAID-sponsored repositories whose dataset metadata
+  is harvested and indexed by the NIAID Data Ecosystem Discovery Portal.
 domains:
 - biomedical
 - immunology
@@ -34,6 +34,37 @@ products:
   - relation_type: prov:hadPrimarySource
     source: vdjserver
   product_url: https://vdjserver.org/
+- category: GraphProduct
+  description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
+    dataset and computational-tool metadata harvested from NIAID-funded and globally-relevant
+    infectious and immune-mediated disease repositories. Served through the Proto-OKN
+    FRINK federated SPARQL platform.
+  format: ttl
+  id: nde.graph
+  name: NIAID Data Ecosystem KG (graph)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nde
+  - relation_type: prov:hadPrimarySource
+    source: immport
+  - relation_type: prov:hadPrimarySource
+    source: vdjserver
+  product_url: https://frink.apps.renci.org/nde
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: gene-expression-omnibus
+  - relation_type: prov:wasInfluencedBy
+    source: sra
+  - relation_type: prov:wasInfluencedBy
+    source: omicsdi
+  - relation_type: prov:wasInfluencedBy
+    source: hubmap
+  - relation_type: prov:wasInfluencedBy
+    source: massive
+  - relation_type: prov:wasInfluencedBy
+    source: pdb
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
 taxon:
 - NCBITaxon:9606
 ---

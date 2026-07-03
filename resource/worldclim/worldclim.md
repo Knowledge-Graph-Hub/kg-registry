@@ -3,10 +3,10 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: WorldClim
   contact_details:
   - contact_type: url
     value: https://www.worldclim.org/
+  label: WorldClim
 creation_date: '2026-07-03T00:00:00Z'
 description: WorldClim is a set of global climate layers (gridded climate data) at
   spatial resolutions down to about 1 km2, providing historical monthly, bioclimatic,
@@ -42,6 +42,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: worldclim
   product_url: https://www.worldclim.org/data/worldclim21.html
+- category: GraphProduct
+  description: The Wildlife-KN knowledge graph, an integrative RDF network of managed
+    species and their habitats, environmental factors, and climate context, built
+    to support wildlife management under climate change. It is served as Linked Data
+    through the Wildlife-KN SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: wildlifekn.graph
+  name: Wildlife-KN Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wildlifekn
+  - relation_type: prov:hadPrimarySource
+    source: usgs
+  - relation_type: prov:hadPrimarySource
+    source: edrr-invasive-catalog
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: worldclim
+  - relation_type: prov:hadPrimarySource
+    source: iucn-red-list
+  - relation_type: prov:hadPrimarySource
+    source: cabi-isc
+  product_url: https://apps.okn.us/ldf/wildlifekn
 ---
 # WorldClim
 

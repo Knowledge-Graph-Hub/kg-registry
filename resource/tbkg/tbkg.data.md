@@ -10,10 +10,11 @@ name: TBKG Knowledge Graph Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: tbkg
-- relation_type: prov:hadPrimarySource
+- relation_type: prov:wasDerivedFrom
   source: pubmed
-- relation_type: prov:hadPrimarySource
-  source: umls
 product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: umls
 layout: product_detail
 ---

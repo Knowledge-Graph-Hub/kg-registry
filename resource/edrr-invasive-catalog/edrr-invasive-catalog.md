@@ -3,10 +3,10 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: U.S. Geological Survey (USGS)
   contact_details:
   - contact_type: url
     value: https://www.usgs.gov/
+  label: U.S. Geological Survey (USGS)
 creation_date: '2026-07-03T00:00:00Z'
 description: The Catalog of U.S. Federal Early Detection/Rapid Response (EDRR) Invasive
   Species Databases and Tools catalogs and describes existing online, federally supported
@@ -32,6 +32,33 @@ products:
   - relation_type: prov:hadPrimarySource
     source: edrr-invasive-catalog
   product_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+- category: GraphProduct
+  description: The Wildlife-KN knowledge graph, an integrative RDF network of managed
+    species and their habitats, environmental factors, and climate context, built
+    to support wildlife management under climate change. It is served as Linked Data
+    through the Wildlife-KN SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: wildlifekn.graph
+  name: Wildlife-KN Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wildlifekn
+  - relation_type: prov:hadPrimarySource
+    source: usgs
+  - relation_type: prov:hadPrimarySource
+    source: edrr-invasive-catalog
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: worldclim
+  - relation_type: prov:hadPrimarySource
+    source: iucn-red-list
+  - relation_type: prov:hadPrimarySource
+    source: cabi-isc
+  product_url: https://apps.okn.us/ldf/wildlifekn
 publications:
 - authors:
   - Simpson A
@@ -41,8 +68,8 @@ publications:
   - Guala GF
   doi: 10.5066/P9CNVBYR
   id: doi:10.5066/P9CNVBYR
-  title: 'Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases
-    and Tools: Version 2.0'
+  title: 'Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species
+    Databases and Tools: Version 2.0'
   year: '2019'
 ---
 # Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases and Tools

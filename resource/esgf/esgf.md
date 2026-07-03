@@ -8,12 +8,11 @@ contacts:
     value: https://esgf.llnl.gov/
   label: Earth System Grid Federation
 creation_date: '2026-07-03T00:00:00Z'
-description: The Earth System Grid Federation (ESGF) is an international,
-  distributed data infrastructure that archives and serves climate model output
-  and observational data, including the CMIP model ensembles. ESGF exposes
-  dataset metadata such as source_id, experiment_id, variable_id, and activity_id
-  through federated search nodes and APIs, enabling discovery and download of
-  climate simulation datasets.
+description: The Earth System Grid Federation (ESGF) is an international, distributed
+  data infrastructure that archives and serves climate model output and observational
+  data, including the CMIP model ensembles. ESGF exposes dataset metadata such as
+  source_id, experiment_id, variable_id, and activity_id through federated search
+  nodes and APIs, enabling discovery and download of climate simulation datasets.
 domains:
 - environment
 - information technology
@@ -35,6 +34,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: esgf
   product_url: https://aims2.llnl.gov/search
+- category: GraphProduct
+  description: RDF/Turtle knowledge graph integrating climate model and dataset metadata
+    (from ESGF, CMIP controlled vocabularies, and the NASA GCMD keyword taxonomy)
+    with entities and relationships extracted from climate-science publications. Served
+    through the FRINK federation and the SPARQL and TPF endpoints.
+  format: ttl
+  id: climatemodelskg.graph
+  name: Climate Models KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: climatemodelskg
+  - relation_type: prov:hadPrimarySource
+    source: esgf
+  - relation_type: prov:hadPrimarySource
+    source: cmip
+  - relation_type: prov:hadPrimarySource
+    source: gcmd
+  product_url: https://frink.renci.org/registry/kgs/climatepub4-kg/
 ---
 ## Description
 

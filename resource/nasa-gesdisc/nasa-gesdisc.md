@@ -39,6 +39,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: nasa-gesdisc
   product_url: https://disc.gsfc.nasa.gov/datasets
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
+    to URL: HTTPSConnectionPool(host=''disc.gsfc.nasa.gov'', port=443): Max retries
+    exceeded with url: /datasets (Caused by NewConnectionError("HTTPSConnection(host=''disc.gsfc.nasa.gov'',
+    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
 - category: GraphProduct
   description: The NASA Knowledge Graph Dataset (NASA-GESDISC-KG), an RDF knowledge
     graph integrating NASA satellite datasets, scientific publications, instruments,

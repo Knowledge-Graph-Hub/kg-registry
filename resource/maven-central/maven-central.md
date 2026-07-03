@@ -8,9 +8,8 @@ contacts:
     value: https://central.sonatype.org/
   label: Sonatype
 creation_date: '2026-07-03T00:00:00Z'
-description: Maven Central is the default public repository for the Java and JVM
-  ecosystem, hosting metadata and distributable artifacts for Maven-compatible
-  packages.
+description: Maven Central is the default public repository for the Java and JVM ecosystem,
+  hosting metadata and distributable artifacts for Maven-compatible packages.
 domains:
 - information technology
 homepage_url: https://central.sonatype.com/
@@ -20,7 +19,8 @@ layout: resource_detail
 name: Maven Central Repository
 products:
 - category: GraphicalInterface
-  description: Web interface and public repository for browsing and retrieving Maven packages
+  description: Web interface and public repository for browsing and retrieving Maven
+    packages
   format: http
   id: maven-central.website
   name: Maven Central website
@@ -28,6 +28,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: maven-central
   product_url: https://central.sonatype.com/
+- category: GraphProduct
+  description: SecureChain knowledge graph of software supply-chain components, versions,
+    dependencies, and vulnerabilities, served as RDF/Turtle via the project's SPARQL
+    and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: securechainkg.graph
+  name: SecureChain KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: securechainkg
+  - relation_type: prov:hadPrimarySource
+    source: npm
+  - relation_type: prov:hadPrimarySource
+    source: pypi
+  - relation_type: prov:hadPrimarySource
+    source: maven-central
+  - relation_type: prov:hadPrimarySource
+    source: nuget
+  - relation_type: prov:hadPrimarySource
+    source: rubygems
+  - relation_type: prov:hadPrimarySource
+    source: cargo
+  - relation_type: prov:hadPrimarySource
+    source: osv
+  product_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
 ---
 ## Maven Central Repository
 

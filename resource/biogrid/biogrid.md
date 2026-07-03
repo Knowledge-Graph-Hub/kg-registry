@@ -3011,14 +3011,18 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
 - category: GraphProduct
   compression: gzip
   description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -4268,12 +4272,51 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: GraphProduct
+  description: Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse
+    KP, exposing the multiomics knowledge graph served by the Multiomics Provider
+    (built from GTEx, TCGA, and drug-response data, with additional clinical-trials,
+    drug-approval and knowledge-resource inputs).
+  format: json
+  id: multiomics-kp.graph
+  name: Multiomics KP Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
+    source: faers
+  product_url: https://biothings.transltr.io/biggim_drugresponse_kp/metadata
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: aact
+  - relation_type: prov:wasInfluencedBy
+    source: biogrid
+  - relation_type: prov:wasInfluencedBy
+    source: huri
+  - relation_type: prov:wasInfluencedBy
+    source: cellmarker
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: ttd
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
 publications:
 - authors:
   - Rose Oughtred
   - Jennifer Rust
   - Christie Chang
-  - "Bobby\u2010Joe Breitkreutz"
+  - Bobby‐Joe Breitkreutz
   - Chris Stark
   - Andrew Willems
   - Lorrie Boucher
@@ -4281,16 +4324,16 @@ publications:
   - Nadine Kolas
   - Frederick Zhang
   - Sonam Dolma
-  - "Jasmin Coulombe\u2010Huntington"
-  - "Andrew Chatr\u2010aryamontri"
+  - Jasmin Coulombe‐Huntington
+  - Andrew Chatr‐aryamontri
   - Kara Dolinski
   - Mike Tyers
   doi: 10.1002/pro.3978
   id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
-    \ protein, genetic, and chemical interactions"
+  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
+    genetic, and chemical interactions
   year: '2021'
 - authors:
   - Rose Oughtred
@@ -4300,7 +4343,7 @@ publications:
   - Lorrie Boucher
   - Christie Chang
   - Nadine Kolas
-  - "Lara O\u2019Donnell"
+  - Lara O’Donnell
   - Genie Leung
   - Rochelle McAdam
   - Frederick Zhang

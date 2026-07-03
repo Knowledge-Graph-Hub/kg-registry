@@ -12,5 +12,7 @@ product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_pe
 warnings:
 - File was not able to be retrieved when checked on 2026-07-02_ No Content-Length
   header found
+- File was not able to be retrieved when checked on 2026-07-02_ Timeout connecting
+  to URL
 layout: product_detail
 ---

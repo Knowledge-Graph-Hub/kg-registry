@@ -2,26 +2,79 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.ebi.ac.uk/
-    id: ebi
-    label: EMBL-EBI
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.ebi.ac.uk/
+  id: ebi
+  label: EMBL-EBI
 creation_date: '2025-10-30T00:00:00Z'
-description: OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets across multiple repositories, providing a unified search interface for genomics, proteomics, metabolomics, and transcriptomics data.
+description: OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets
+  across multiple repositories, providing a unified search interface for genomics,
+  proteomics, metabolomics, and transcriptomics data.
 domains:
-  - genomics
-  - proteomics
+- genomics
+- proteomics
 homepage_url: https://www.omicsdi.org/
 id: omicsdi
 infores_id: omicsdi
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: OmicsDI
-synonyms:
-  - OmicsDI
-  - Omics Discovery Index
+products:
+- category: GraphicalInterface
+  description: Web portal for searching and browsing integrated omics dataset metadata
+    across repositories.
+  format: http
+  id: omicsdi.portal
+  name: OmicsDI Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omicsdi
+  product_url: https://www.omicsdi.org/
+- category: ProgrammingInterface
+  connection_url: https://www.omicsdi.org/ws
+  description: Swagger-documented web service for programmatic querying of OmicsDI
+    dataset metadata.
+  format: http
+  id: omicsdi.api
+  is_public: true
+  name: OmicsDI API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omicsdi
+  product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: GraphProduct
+  description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
+    dataset and computational-tool metadata harvested from NIAID-funded and globally-relevant
+    infectious and immune-mediated disease repositories. Served through the Proto-OKN
+    FRINK federated SPARQL platform.
+  format: ttl
+  id: nde.graph
+  name: NIAID Data Ecosystem KG (graph)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nde
+  - relation_type: prov:hadPrimarySource
+    source: immport
+  - relation_type: prov:hadPrimarySource
+    source: vdjserver
+  product_url: https://frink.apps.renci.org/nde
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: gene-expression-omnibus
+  - relation_type: prov:wasInfluencedBy
+    source: sra
+  - relation_type: prov:wasInfluencedBy
+    source: omicsdi
+  - relation_type: prov:wasInfluencedBy
+    source: hubmap
+  - relation_type: prov:wasInfluencedBy
+    source: massive
+  - relation_type: prov:wasInfluencedBy
+    source: pdb
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
 publications:
 - authors:
   - Yasset Perez-Riverol
@@ -50,43 +103,25 @@ publications:
   - Manish Sud
   - Shankar Subramaniam
   - Ariana Barbera
-  - Rafael C Jiménez
+  - "Rafael C Jim\xE9nez"
   - Alexey I Nesvizhskii
   - Susanna-Assunta Sansone
   - Christoph Steinbeck
   - Rodrigo Lopez
-  - Juan A Vizcaíno
+  - "Juan A Vizca\xEDno"
   - Peipei Ping
   - Henning Hermjakob
   doi: 10.1038/nbt.3790
   id: doi:10.1038/nbt.3790
   journal: Nature Biotechnology
   preferred: true
-  title: Discovering and linking public omics data sets using the Omics Discovery Index
+  title: Discovering and linking public omics data sets using the Omics Discovery
+    Index
   year: '2017'
-products:
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing integrated omics dataset metadata across repositories.
-    format: http
-    id: omicsdi.portal
-    name: OmicsDI Portal
-    original_source:
-      - source: omicsdi
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.omicsdi.org/
-  - category: ProgrammingInterface
-    connection_url: https://www.omicsdi.org/ws
-    description: Swagger-documented web service for programmatic querying of OmicsDI dataset metadata.
-    format: http
-    id: omicsdi.api
-    is_public: true
-    name: OmicsDI API
-    original_source:
-      - source: omicsdi
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+synonyms:
+- OmicsDI
+- Omics Discovery Index
 ---
-
 # OmicsDI
 
 ## Overview

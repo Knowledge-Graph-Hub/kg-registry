@@ -200,6 +200,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -215,6 +217,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental MS-MS Spectra data from FooDB
@@ -230,6 +234,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted MS-MS Spectra data from FooDB
@@ -245,6 +251,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: NMR Spectra data from FooDB
@@ -260,6 +268,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   description: FooDB downloads page listing the available bulk data archives, spectra,
     peak lists, and supplementary files (including NMR Free Induction Decay data).
@@ -287,6 +297,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental C-MS peak lists from FooDB.
@@ -302,6 +314,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS peak lists from FooDB.
@@ -317,6 +331,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental MS-MS peak lists from FooDB.
@@ -332,6 +348,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted MS-MS peak lists from FooDB.
@@ -347,6 +365,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: NMR peak lists from FooDB.
@@ -362,6 +382,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.

@@ -2,17 +2,19 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://aact.ctti-clinicaltrials.org/contactus
-    label: Clinical Trials Transformation Initiative (CTTI)
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://aact.ctti-clinicaltrials.org/contactus
+  label: Clinical Trials Transformation Initiative (CTTI)
 creation_date: '2025-10-30T00:00:00Z'
-description: AACT is a publicly available relational PostgreSQL database that contains all protocol and result data elements from every study registered in ClinicalTrials.gov, refreshed daily from the ClinicalTrials.gov registry.
+description: AACT is a publicly available relational PostgreSQL database that contains
+  all protocol and result data elements from every study registered in ClinicalTrials.gov,
+  refreshed daily from the ClinicalTrials.gov registry.
 domains:
-  - clinical
-  - public health
-  - biomedical
+- clinical
+- public health
+- biomedical
 homepage_url: https://aact.ctti-clinicaltrials.org/
 id: aact
 infores_id: aact
@@ -20,122 +22,169 @@ last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Aggregate Analysis of ClinicalTrials.gov (AACT) Database
 products:
-  - category: GraphicalInterface
-    description: Web-based SQL query playground for running queries on AACT data directly from the browser
-    format: http
-    id: aact.playground
-    name: AACT Playground
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: aact
-    product_url: https://aact.ctti-clinicaltrials.org/playground
-  - category: Product
-    description: Cloud-based PostgreSQL database with daily refreshed clinical trial data, accessible via standard PostgreSQL clients
-    format: postgres
-    id: aact.database
-    name: AACT Cloud Database
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: aact
-      - relation_type: prov:hadPrimarySource
-        source: clinicaltrialsgov
-    product_url: https://aact.ctti-clinicaltrials.org/connect
-  - category: Product
-    description: Static downloadable copies of the complete AACT database
-    format: postgres
-    id: aact.downloads
-    name: AACT Database Downloads
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: aact
-      - relation_type: prov:hadPrimarySource
-        source: clinicaltrialsgov
-    product_url: https://aact.ctti-clinicaltrials.org/downloads
-  - category: Product
-    compression: zip
-    description: Pipe-delimited text exports of the AACT database for import into databases or analysis tools
-    format: csv
-    id: aact.pipe_delimited
-    name: AACT Pipe-Delimited Downloads
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: aact
-      - relation_type: prov:hadPrimarySource
-        source: clinicaltrialsgov
-    product_url: https://aact.ctti-clinicaltrials.org/downloads
-  - category: DocumentationProduct
-    description: Complete database schema documentation showing table structure and relationships
-    id: aact.schema
-    name: AACT Database Schema
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: aact
-    product_url: https://aact.ctti-clinicaltrials.org/schema
-  - category: DocumentationProduct
-    description: Data dictionary with detailed information about all AACT data elements and their relationship to ClinicalTrials.gov definitions
-    id: aact.dictionary
-    name: AACT Data Dictionary
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: aact
-    product_url: https://aact.ctti-clinicaltrials.org/data_dictionary
-  - category: Product
-    description: Aggregate Analysis of ClinicalTrials.gov (AACT) - A relational PostgreSQL database containing all clinical trial data, updated daily
-    format: postgres
-    id: clinicaltrialsgov.aact
-    name: AACT Database
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: clinicaltrialsgov
-      - relation_type: prov:hadPrimarySource
-        source: aact
-    product_url: https://aact.ctti-clinicaltrials.org/
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: KGX JSONL graph package for CTKP distributed via the NCATS Translator release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 438575
-    format: kgx-jsonl
-    id: translator.ctkp.graph
-    latest_version: '2026_03_27'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator CTKP KGX Graph
-    node_count: 41243
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: ctkp
-      - relation_type: prov:hadPrimarySource
-        source: translator
-    product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
-    versions:
-      - '2026_03_27'
-      - ctkp_3.1.37_a99268cc_2025sep1_4.3.6
+- category: GraphicalInterface
+  description: Web-based SQL query playground for running queries on AACT data directly
+    from the browser
+  format: http
+  id: aact.playground
+  name: AACT Playground
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/playground
+- category: Product
+  description: Cloud-based PostgreSQL database with daily refreshed clinical trial
+    data, accessible via standard PostgreSQL clients
+  format: postgres
+  id: aact.database
+  name: AACT Cloud Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/connect
+- category: Product
+  description: Static downloadable copies of the complete AACT database
+  format: postgres
+  id: aact.downloads
+  name: AACT Database Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/downloads
+- category: Product
+  compression: zip
+  description: Pipe-delimited text exports of the AACT database for import into databases
+    or analysis tools
+  format: csv
+  id: aact.pipe_delimited
+  name: AACT Pipe-Delimited Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/downloads
+- category: DocumentationProduct
+  description: Complete database schema documentation showing table structure and
+    relationships
+  id: aact.schema
+  name: AACT Database Schema
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/schema
+- category: DocumentationProduct
+  description: Data dictionary with detailed information about all AACT data elements
+    and their relationship to ClinicalTrials.gov definitions
+  id: aact.dictionary
+  name: AACT Data Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/data_dictionary
+- category: Product
+  description: Aggregate Analysis of ClinicalTrials.gov (AACT) - A relational PostgreSQL
+    database containing all clinical trial data, updated daily
+  format: postgres
+  id: clinicaltrialsgov.aact
+  name: AACT Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for CTKP distributed via the NCATS Translator
+    release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source
+    version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 438575
+  format: kgx-jsonl
+  id: translator.ctkp.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator CTKP KGX Graph
+  node_count: 41243
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
+  versions:
+  - '2026_03_27'
+  - ctkp_3.1.37_a99268cc_2025sep1_4.3.6
+- category: GraphProduct
+  description: Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse
+    KP, exposing the multiomics knowledge graph served by the Multiomics Provider
+    (built from GTEx, TCGA, and drug-response data, with additional clinical-trials,
+    drug-approval and knowledge-resource inputs).
+  format: json
+  id: multiomics-kp.graph
+  name: Multiomics KP Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
+    source: faers
+  product_url: https://biothings.transltr.io/biggim_drugresponse_kp/metadata
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: aact
+  - relation_type: prov:wasInfluencedBy
+    source: biogrid
+  - relation_type: prov:wasInfluencedBy
+    source: huri
+  - relation_type: prov:wasInfluencedBy
+    source: cellmarker
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: ttd
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
 publications:
-  - authors:
-      - Asba Tasneem
-      - Laura Aberle
-      - Hari Ananth
-      - Swati Chakraborty
-      - Karen Chiswell
-      - Brian J. McCourt
-      - Ricardo Pietrobon
-    doi: 10.1371/journal.pone.0033677
-    id: doi:10.1371/journal.pone.0033677
-    journal: PLOS ONE
-    preferred: true
-    title: The Database for Aggregate Analysis of ClinicalTrials.gov (AACT) and Subsequent Regrouping by Clinical Specialty
-    year: '2012'
+- authors:
+  - Asba Tasneem
+  - Laura Aberle
+  - Hari Ananth
+  - Swati Chakraborty
+  - Karen Chiswell
+  - Brian J. McCourt
+  - Ricardo Pietrobon
+  doi: 10.1371/journal.pone.0033677
+  id: doi:10.1371/journal.pone.0033677
+  journal: PLOS ONE
+  preferred: true
+  title: The Database for Aggregate Analysis of ClinicalTrials.gov (AACT) and Subsequent
+    Regrouping by Clinical Specialty
+  year: '2012'
 repository: https://github.com/ctti-clinicaltrials/aact
 synonyms:
-  - AACT
-  - Aggregate Analysis of ClinicalTrial.gov
+- AACT
+- Aggregate Analysis of ClinicalTrial.gov
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # Aggregate Analysis of ClinicalTrials.gov (AACT) Database
 
 ## Overview

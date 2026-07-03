@@ -223,6 +223,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -428,16 +430,16 @@ publications:
   - Dac-Trung Nguyen
   - Cristian G Bologa
   - Lars Juhl Jensen
-  - "Du\u0161ica Vidovi\u0107"
+  - Dušica Vidović
   - Amar Koleti
-  - "Stephan C Sch\xFCrer"
+  - Stephan C Schürer
   - Anna Waller
   - Jeremy J Yang
   - Jayme Holmes
   - Giovanni Bocci
   - Noel Southall
   - Poorva Dharkar
-  - "Ewy Math\xE9"
+  - Ewy Mathé
   - Anton Simeonov
   - Tudor I Oprea
   doi: 10.1093/nar/gkaa993
@@ -464,7 +466,7 @@ publications:
   - John Overington
   - Juhee Patel
   - Andrew D. Rouillard
-  - "Stephan Sch\xFCrer"
+  - Stephan Schürer
   - Timothy Sheils
   - Anton Simeonov
   - Larry A. Sklar

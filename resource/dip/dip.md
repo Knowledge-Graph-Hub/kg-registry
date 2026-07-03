@@ -873,14 +873,18 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
 - category: GraphProduct
   compression: gzip
   description: IID annotated human protein-protein interaction download.
@@ -1327,7 +1331,7 @@ publications:
   - Sylvie Ricard-Blum
   - Bernd Roechert
   - Lukasz Salwinski
-  - "Volker St\xFCmpflen"
+  - Volker Stümpflen
   - Mike Tyers
   - Peter Uetz
   - Ioannis Xenarios

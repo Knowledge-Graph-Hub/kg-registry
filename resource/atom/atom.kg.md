@@ -9,7 +9,7 @@ name: ATOM Knowledge Graph
 original_source:
 - relation_type: prov:hadPrimarySource
   source: atom
-- relation_type: prov:hadPrimarySource
+- relation_type: prov:wasDerivedFrom
   source: pubmed
 product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
 warnings:

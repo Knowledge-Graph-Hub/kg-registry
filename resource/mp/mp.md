@@ -51,6 +51,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
   format: json

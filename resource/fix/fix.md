@@ -41,6 +41,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
+  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 publications: []
 ---
 ## Description

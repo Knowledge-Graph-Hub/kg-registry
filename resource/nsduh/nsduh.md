@@ -11,10 +11,10 @@ creation_date: '2026-07-03T00:00:00Z'
 description: The National Survey on Drug Use and Health (NSDUH) is an annual survey
   sponsored by the Substance Abuse and Mental Health Services Administration (SAMHSA)
   that provides nationally representative data on the use of tobacco, alcohol, and
-  illicit drugs, as well as substance use disorders, mental health, and related
-  behaviors among the US civilian, noninstitutionalized population. NSDUH survey
-  variables, answer options, and substance categories are widely reused for public
-  health and behavioral health analysis.
+  illicit drugs, as well as substance use disorders, mental health, and related behaviors
+  among the US civilian, noninstitutionalized population. NSDUH survey variables,
+  answer options, and substance categories are widely reused for public health and
+  behavioral health analysis.
 domains:
 - public health
 - general
@@ -28,8 +28,8 @@ license:
 name: National Survey on Drug Use and Health
 products:
 - category: GraphicalInterface
-  description: The SAMHSA NSDUH landing page, providing survey documentation,
-    methodology, questionnaires, and access to public-use data files and reports.
+  description: The SAMHSA NSDUH landing page, providing survey documentation, methodology,
+    questionnaires, and access to public-use data files and reports.
   format: http
   id: nsduh.samhsa-page
   is_public: true
@@ -38,6 +38,32 @@ products:
   - relation_type: prov:hadPrimarySource
     source: nsduh
   product_url: https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health
+- category: GraphProduct
+  description: The Rural Resilience KG graph, a cross-domain RDF knowledge graph integrating
+    health and justice data for rural resilience. It integrates justice/crime data
+    from the National Incident-Based Reporting System (NIBRS), substance-use survey
+    data from the National Survey on Drug Use and Health (NSDUH), mental health treatment
+    providers from the National Directory of Mental Health Treatment Facilities, county
+    rurality classifications from the USDA Rural-Urban Continuum Codes, and US administrative-area
+    geography, served via the FRINK/Proto-OKN infrastructure.
+  format: ttl
+  id: ruralkg.graph
+  name: Rural Resilience KG graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ruralkg
+  - relation_type: prov:hadPrimarySource
+    source: nibrs
+  - relation_type: prov:hadPrimarySource
+    source: nsduh
+  - relation_type: prov:hadPrimarySource
+    source: national-directory-mental-health-facilities
+  - relation_type: prov:hadPrimarySource
+    source: rural-urban-continuum-codes
+  product_url: https://frink.renci.org/registry/kgs/rural-kg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: us-census
 ---
 ## Description
 

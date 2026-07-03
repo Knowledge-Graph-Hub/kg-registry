@@ -64,10 +64,10 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-06-26: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases
   format: tsv
@@ -78,10 +78,12 @@ products:
     source: metanetx
   product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: RDF version of the MetaNetX MNXref data for semantic web applications

@@ -1466,6 +1466,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
     for ChemIDplus substance records and annotations after the standalone NLM service
@@ -1494,6 +1496,8 @@ products:
     source: pubchem
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds

@@ -39,6 +39,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: lipidmaps
   product_url: https://www.lipidmaps.org/databases/lmsd/download
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 520 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API for programmatic access to LIPID MAPS databases, allowing
     lookup and retrieval of lipid records, structures, and annotations by identifier
@@ -71,6 +74,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: lipidmaps
   product_url: https://www.lipidmaps.org/databases/lmsd/overview
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 520 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
@@ -413,7 +419,7 @@ publications:
   - Andrea F Lopez-Clavijo
   - Caroline Ready
   - Shankar Subramaniam
-  - "Valerie B O\u2019Donnell"
+  - Valerie B O’Donnell
   doi: doi:10.1093/nar/gkad896
   id: doi:10.1093/nar/gkad896
   journal: Nucleic Acids Research

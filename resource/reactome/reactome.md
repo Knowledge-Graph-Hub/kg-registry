@@ -1091,8 +1091,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -6284,6 +6284,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -6774,7 +6776,7 @@ publications:
   - Guanming Wu
   - Lincoln Stein
   - Henning Hermjakob
-  - "Peter D\u2019Eustachio"
+  - Peter D’Eustachio
   doi: 10.1093/nar/gkab1028
   id: doi:10.1093/nar/gkab1028
   journal: Nucleic Acids Research

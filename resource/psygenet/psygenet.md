@@ -48,6 +48,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -86,12 +88,12 @@ products:
   product_url: https://www.disgenet.com/
 publications:
 - authors:
-  - "Alba Guti\xE9rrez-Sacrist\xE1n"
-  - "Sol\xE8ne Grosdidier"
+  - Alba Gutiérrez-Sacristán
+  - Solène Grosdidier
   - Olga Valverde
   - Marta Torrens
-  - "\xC0lex Bravo"
-  - "Janet Pi\xF1ero"
+  - Àlex Bravo
+  - Janet Piñero
   - Ferran Sanz
   - Laura I. Furlong
   doi: 10.1093/bioinformatics/btv301

@@ -86,6 +86,68 @@ products:
     source: ssurgo
   - relation_type: prov:wasInfluencedBy
     source: cropland-data-layer
+- category: GraphProduct
+  description: The Geoconnex knowledge graph, an open community-contributed RDF graph
+    linking U.S. hydrologic features via persistent identifiers. It integrates USGS
+    reference features (NHDPlus High Resolution hydrologic units, Watershed Boundary
+    Dataset subwatersheds, reference stream gages, and national aquifers) with community-contributed
+    feature registries, and is served through the Geoconnex SPARQL and Triple Pattern
+    Fragments endpoints.
+  format: ttl
+  id: geoconnex.graph
+  name: GEOCONNEX Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geoconnex
+  - relation_type: prov:hadPrimarySource
+    source: usgs-nhd
+  - relation_type: prov:hadPrimarySource
+    source: usgs-nwis
+  product_url: https://github.com/internetofwater/geoconnex.us
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: epa-sdwis
+  - relation_type: prov:wasInfluencedBy
+    source: us-census
+- category: GraphProduct
+  description: The SAWGraph Hydrology knowledge graph, describing surface water bodies
+    (lakes, rivers, wetlands), the flowlines that connect them, and groundwater features
+    (aquifers, wells, springs) together with their locations. Surface water bodies
+    and flowlines are modeled from USGS NHDPlus data (NHDWaterbody and NHDFlowline);
+    groundwater features are drawn primarily from individual state geological surveys
+    (for example, the Maine Geological Survey). The RDF (Turtle) graph is served through
+    the SAWGraph Hydrology KG SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: hydrologykg.graph
+  name: SAWGraph Hydrology Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hydrologykg
+  - relation_type: prov:wasDerivedFrom
+    source: sawgraph
+  - relation_type: prov:hadPrimarySource
+    source: usgs-nhd
+  product_url: https://github.com/SAWGraph/water-kg
+- category: GraphProduct
+  description: The UF-OKN knowledge graph, published as Linked Data (RDF/Turtle),
+    that links urban infrastructure features to hydrologic forecasts so that flood
+    risk can be explored as connected data. It relates OpenStreetMap building footprints
+    and road networks to their nearest river (via the NHD/NHDPlus reach network) and
+    to the streamflow forecasts from the NOAA National Water Model that would inundate
+    them.
+  format: ttl
+  id: uf-okn.graph
+  name: UF-OKN Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uf-okn
+  - relation_type: prov:hadPrimarySource
+    source: noaa-nwm
+  - relation_type: prov:hadPrimarySource
+    source: openstreetmap
+  - relation_type: prov:hadPrimarySource
+    source: usgs-nhd
+  product_url: https://github.com/UFOKN/Knowledge-Graph
 ---
 ## Description
 

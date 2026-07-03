@@ -161,6 +161,116 @@ products:
     source: ssurgo
   - relation_type: prov:wasInfluencedBy
     source: cropland-data-layer
+- category: GraphProduct
+  description: The Geoconnex knowledge graph, an open community-contributed RDF graph
+    linking U.S. hydrologic features via persistent identifiers. It integrates USGS
+    reference features (NHDPlus High Resolution hydrologic units, Watershed Boundary
+    Dataset subwatersheds, reference stream gages, and national aquifers) with community-contributed
+    feature registries, and is served through the Geoconnex SPARQL and Triple Pattern
+    Fragments endpoints.
+  format: ttl
+  id: geoconnex.graph
+  name: GEOCONNEX Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geoconnex
+  - relation_type: prov:hadPrimarySource
+    source: usgs-nhd
+  - relation_type: prov:hadPrimarySource
+    source: usgs-nwis
+  product_url: https://github.com/internetofwater/geoconnex.us
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: epa-sdwis
+  - relation_type: prov:wasInfluencedBy
+    source: us-census
+- category: GraphProduct
+  description: The Neighborhood Information KG (NIKG) RDF graph, a knowledge graph
+    warehouse integrating neighborhood-level information such as demographics, land
+    use, local incidents and injuries, and proximity to trauma centers. Built from
+    census data and other neighborhood-level records, the graph is served in RDF (Turtle)
+    through the NIKG SPARQL and Triple Pattern Fragments endpoints hosted on the FRINK
+    / Proto-OKN infrastructure.
+  format: ttl
+  id: nikg.graph
+  is_public: true
+  name: Neighborhood Information KG RDF Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nikg
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  product_url: https://frink.renci.org/registry/kgs/neighborhood-kg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: nij
+- category: GraphProduct
+  description: The Rural Resilience KG graph, a cross-domain RDF knowledge graph integrating
+    health and justice data for rural resilience. It integrates justice/crime data
+    from the National Incident-Based Reporting System (NIBRS), substance-use survey
+    data from the National Survey on Drug Use and Health (NSDUH), mental health treatment
+    providers from the National Directory of Mental Health Treatment Facilities, county
+    rurality classifications from the USDA Rural-Urban Continuum Codes, and US administrative-area
+    geography, served via the FRINK/Proto-OKN infrastructure.
+  format: ttl
+  id: ruralkg.graph
+  name: Rural Resilience KG graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ruralkg
+  - relation_type: prov:hadPrimarySource
+    source: nibrs
+  - relation_type: prov:hadPrimarySource
+    source: nsduh
+  - relation_type: prov:hadPrimarySource
+    source: national-directory-mental-health-facilities
+  - relation_type: prov:hadPrimarySource
+    source: rural-urban-continuum-codes
+  product_url: https://frink.renci.org/registry/kgs/rural-kg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: us-census
+- category: GraphProduct
+  description: The SAWGraph Spatial KG as an RDF (Turtle) graph. It contains all Level
+    13 grid cells from the S2 grid together with administrative regions of levels
+    1 to 3 (states, counties, and county subdivisions) and the spatial relationships
+    between them for the 48 contiguous U.S. states. S2 grid cells and state/county
+    geometries are taken from KnowWhereGraph, and county subdivisions are sourced
+    from the US Census Bureau. The graph is served through the SAWGraph Spatial KG
+    SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: spatialkg.graph
+  name: SAWGraph Spatial KG Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spatialkg
+  - relation_type: prov:wasDerivedFrom
+    source: sawgraph
+  product_url: https://github.com/SAWGraph/geospatial-kg
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: knowwheregraph
+  - relation_type: prov:wasInfluencedBy
+    source: us-census
+- category: GraphProduct
+  description: The SUDOKN manufacturing capability knowledge graph in RDF (Turtle),
+    representing the capabilities of small and medium-sized U.S. manufacturers. Company
+    profiles (manufacturing processes, materials, industries served, certifications,
+    NAICS classification, and locations) are built by web-scraping raw text from manufacturer
+    company websites and extracting triples with an LLM-based ETL pipeline, using
+    terms from the SUDOKN application ontology (built on the Industrial Ontology Foundry
+    and Basic Formal Ontology). Served through the SUDOKN SPARQL and Triple Pattern
+    Fragments endpoints.
+  format: ttl
+  id: sudokn.graph
+  name: SUDOKN Manufacturing Capability Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sudokn
+  product_url: https://github.com/SUDOKN/graph
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: us-census
 ---
 # United States Census Bureau
 

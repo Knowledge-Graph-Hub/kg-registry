@@ -20,6 +20,7 @@ alphamissense,active,PASS
 alzkb,active,PASS
 aminode,active,PASS
 amphx,active,PASS
+annotator,active,PASS
 aop-db,active,PASS
 aop-wiki,active,PASS
 apo,active,PASS
@@ -31,6 +32,7 @@ aro,active,PASS
 ars,active,PASS
 atc,active,PASS
 athena,active,PASS
+auntbertha,active,PASS
 automat,active,PASS
 bacdive,active,PASS
 bactotraits,active,PASS
@@ -70,9 +72,12 @@ bridge2ai,active,PASS
 bspo,active,PASS
 bto,active,PASS
 bv-brc,active,PASS
+cabi-isc,active,PASS
+campbell-biology,active,PASS
 cancer-genome-interpreter,active,PASS
 cancer-registry-kg,active,PASS
 cardiokg,active,PASS
+cargo,active,PASS
 catalogue-of-life,active,PASS
 ccf,active,PASS
 ccle,active,PASS
@@ -123,6 +128,7 @@ clyh,active,PASS
 cm4ai_talent_kg,active,PASS
 cmap,active,PASS
 cmaup,active,PASS
+cmip,active,PASS
 cmo,active,PASS
 cob,active,PASS
 cog,active,PASS
@@ -209,6 +215,7 @@ ecocyc,active,PASS
 ecosim,active,PASS
 ecto,active,PASS
 edam,active,PASS
+edrr-invasive-catalog,active,PASS
 effas-kpi,active,PASS
 efo,active,PASS
 eggnog,active,PASS
@@ -246,11 +253,13 @@ eqtlgen,active,PASS
 eram,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
+esgf,active,PASS
 eupathdb,active,PASS
 evlncrnas,active,PASS
 evoweb,active,PASS
 exmo,active,PASS
 exo,active,PASS
+expression-atlas,active,PASS
 expressionatlas,active,PASS
 fabio,active,PASS
 fabric,active,PASS
@@ -279,6 +288,7 @@ gallont,active,PASS
 gard,active,PASS
 gaz,active,PASS
 gbif,active,PASS
+gcmd,active,PASS
 gdc,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
@@ -323,6 +333,7 @@ go-cam,active,PASS
 goa,active,PASS
 goldterms,active,PASS
 gomapman,active,PASS
+google-reviews,active,PASS
 gp-kg,active,PASS
 greengenes,active,PASS
 gsso,active,PASS
@@ -379,6 +390,7 @@ iidp,active,PASS
 ikraph,active,PASS
 imex,active,PASS
 imgt,active,PASS
+immport,active,PASS
 imodulondb,active,PASS
 impc,active,PASS
 inchikey,active,PASS
@@ -392,6 +404,7 @@ interpro,active,PASS
 inxight-drugs,active,PASS
 iptmnet,active,PASS
 itis,active,PASS
+iucn-red-list,active,PASS
 jaspar,active,PASS
 kegg,active,PASS
 kentucky-cancer-registry,active,PASS
@@ -437,6 +450,7 @@ markerdb,active,PASS
 massive,active,PASS
 maude,active,PASS
 maudekg,active,PASS
+maven-central,active,PASS
 maxo,active,PASS
 mco,active,PASS
 mcro,active,PASS
@@ -497,12 +511,14 @@ mutationds,active,PASS
 mw,active,PASS
 myaura,active,PASS
 naaccr,active,PASS
+naics,active,PASS
 nalt,active,PASS
 namsnetwork,active,PASS
 nanopublications,active,PASS
 nasa-gesdisc,active,PASS
 nasa-gesdisc-kg,active,PASS
 nasa-osdr,active,PASS
+national-directory-mental-health-facilities,active,PASS
 nbo,active,PASS
 ncatsgardkg,active,PASS
 ncbi,active,PASS
@@ -518,19 +534,25 @@ neo,active,PASS
 nextprot,active,PASS
 ngbo,active,PASS
 nhpn,active,PASS
+nibrs,active,PASS
 nifc,active,PASS
 nihreporter,active,PASS
+nij,active,PASS
 nikg,active,PASS
 nlm,active,PASS
 nlm-ckn,active,PASS
 noaa-hms,active,PASS
 noaa-ncei,active,PASS
+noaa-nwm,active,PASS
 nomen,active,PASS
 noncode,active,PASS
 np-kg,active,PASS
 npass,active,PASS
+npm,active,PASS
 npo,active,PASS
+nsduh,active,PASS
 nsides,active,PASS
+nuget,active,PASS
 oae,active,PASS
 oarcs,active,PASS
 oard,active,PASS
@@ -571,9 +593,11 @@ oostt,active,PASS
 open-tree-of-life,active,PASS
 openalex,active,PASS
 openbiodiv,active,PASS
+opendataphilly,active,PASS
 openfema,active,PASS
 opengwas,active,PASS
 openpredict,active,PASS
+openstreetmap,active,PASS
 opentargets,active,PASS
 opl,active,PASS
 opmi,active,PASS
@@ -584,6 +608,7 @@ orkg,active,PASS
 ornaseq,active,PASS
 orphanet,active,PASS
 orthodb,active,PASS
+osv,active,PASS
 ovae,active,PASS
 p3db,active,PASS
 pacer,active,PASS
@@ -662,9 +687,11 @@ pso,active,PASS
 ptmd,active,PASS
 pubchem,active,PASS
 pubmed,active,PASS
+pubmed-knowledge-graph,active,PASS
 pubmedcentral,active,PASS
 pubtator,active,PASS
 pw,active,PASS
+pypi,active,PASS
 qptm,active,PASS
 rampdb,active,PASS
 rapdb,active,PASS
@@ -677,6 +704,7 @@ reconx,active,PASS
 rediportal,active,PASS
 redu,active,PASS
 refseq,active,PASS
+regl,active,PASS
 reliefweb,active,PASS
 remap,active,PASS
 repodb,active,PASS
@@ -698,6 +726,7 @@ robokop,active,PASS
 ror,active,PASS
 rs,active,PASS
 rtx-kg2,active,PASS
+rubygems,active,PASS
 rural-urban-continuum-codes,active,PASS
 ruralkg,active,PASS
 rxno,active,PASS
@@ -710,6 +739,7 @@ scibite,active,PASS
 sckan,active,PASS
 scop,active,PASS
 securechainkg,active,PASS
+semantic-scholar,active,PASS
 semapv,active,PASS
 semopenalex,active,PASS
 semrep,active,PASS
@@ -719,6 +749,7 @@ service-kp,active,PASS
 sfld,active,PASS
 sgd,active,PASS
 sibils,active,PASS
+sic,active,PASS
 signor,active,PASS
 silva,active,PASS
 sio,active,PASS
@@ -763,6 +794,7 @@ t4fs,active,PASS
 tair,active,PASS
 tarbase,active,PASS
 taxrank,active,PASS
+tbkg,active,PASS
 tcdb,active,PASS
 tcga,active,PASS
 tcrd,active,PASS
@@ -777,6 +809,7 @@ toxcast,active,PASS
 toxin,active,PASS
 trans,active,PASS
 translator,active,PASS
+treatkb,active,PASS
 treefam,active,PASS
 trrust,active,PASS
 try,active,PASS
@@ -789,7 +822,6 @@ ubkg,active,PASS
 ucnebase,active,PASS
 ucsc,active,PASS
 uf-okn,active,PASS
-ufokn,active,PASS
 ukbiobank,active,PASS
 umls,active,PASS
 unibiomap,active,PASS
@@ -802,10 +834,13 @@ uo,active,PASS
 upheno,active,PASS
 us-census,active,PASS
 usdm,active,PASS
+usgs,active,PASS
 usgs-comcat,active,PASS
 usgs-nhd,active,PASS
+usgs-nwis,active,PASS
 vbo,active,PASS
 vccf,active,PASS
+vdjserver,active,PASS
 vista,active,PASS
 vo,active,PASS
 vt,active,PASS
@@ -822,6 +857,7 @@ wikipedia,active,PASS
 wikispecies,active,PASS
 wildlifekn,active,PASS
 wipo-tkp,active,PASS
+worldclim,active,PASS
 wormbase,active,PASS
 xao,active,PASS
 xco,active,PASS
@@ -844,6 +880,7 @@ amyco,orphaned,PASS
 araport,inactive,PASS
 atgo,inactive,PASS
 ato,inactive,PASS
+atom,inactive,PASS
 bcgo,inactive,PASS
 bila,inactive,PASS
 bind,inactive,PASS

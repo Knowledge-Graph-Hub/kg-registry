@@ -313,7 +313,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: atom
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: pubmed
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
@@ -356,7 +356,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: atom
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: pubmed
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
@@ -416,8 +416,8 @@ products:
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   format: http
   id: gnbr.graph
   name: GNBR graph
@@ -700,11 +700,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tbkg
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: pubmed
-  - relation_type: prov:hadPrimarySource
-    source: umls
   product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: umls
 - category: Product
   description: Clinical validation dataset with calculated ADRs for osimertinib ranked
     by importance, biomarker pathways explaining drug-ADR relationships, and clinical
@@ -716,11 +717,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tbkg
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: pubmed
-  - relation_type: prov:hadPrimarySource
-    source: umls
   product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: umls
 - category: Product
   description: Raw format target information including all TTD target data
   format: txt
@@ -1018,6 +1020,8 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed
@@ -1825,6 +1829,57 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- category: GraphProduct
+  description: Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse
+    KP, exposing the multiomics knowledge graph served by the Multiomics Provider
+    (built from GTEx, TCGA, and drug-response data, with additional clinical-trials,
+    drug-approval and knowledge-resource inputs).
+  format: json
+  id: multiomics-kp.graph
+  name: Multiomics KP Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
+    source: faers
+  product_url: https://biothings.transltr.io/biggim_drugresponse_kp/metadata
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: aact
+  - relation_type: prov:wasInfluencedBy
+    source: biogrid
+  - relation_type: prov:wasInfluencedBy
+    source: huri
+  - relation_type: prov:wasInfluencedBy
+    source: cellmarker
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: ttd
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
+- category: GraphicalInterface
+  description: Project homepage for the PubMed Knowledge Graph, providing dataset
+    documentation and download access.
+  format: http
+  id: pubmed-knowledge-graph.website
+  name: PubMed Knowledge Graph Homepage
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pubmed-knowledge-graph
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://pubmedkg.github.io/
 publications:
 - authors:
   - Eric W Sayers

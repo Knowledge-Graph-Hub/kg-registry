@@ -35,6 +35,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
 - category: ProcessProduct
   description: Python package that interrogates single-cell transcriptomics data against
     the CellPhoneDB database to statistically infer enriched ligand-receptor interactions
@@ -385,8 +387,8 @@ publications:
   id: doi:10.1038/s41596-020-0292-x
   journal: Nature Protocols
   preferred: true
-  title: "CellPhoneDB: inferring cell\u2013cell communication from combined expression\
-    \ of multi-subunit ligand\u2013receptor complexes"
+  title: 'CellPhoneDB: inferring cell–cell communication from combined expression
+    of multi-subunit ligand–receptor complexes'
   year: '2020'
 repository: https://github.com/ventolab/CellphoneDB
 ---

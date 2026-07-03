@@ -8,12 +8,13 @@ contacts:
     value: https://nij.ojp.gov/
   label: National Institute of Justice
 creation_date: '2026-07-03T00:00:00Z'
-description: The National Institute of Justice (NIJ) is the research, development, and
-  evaluation agency of the U.S. Department of Justice, Office of Justice Programs. NIJ
-  produces and disseminates data, research findings, and publications on crime, victimization,
-  firearms violence, forensic science, and community safety. As a partner in the NSF
-  Proto-OKN program, NIJ contributed the "Data on Nonfatal Firearms Injuries" use case
-  motivating the integration of criminal victimization and neighborhood-level data.
+description: The National Institute of Justice (NIJ) is the research, development,
+  and evaluation agency of the U.S. Department of Justice, Office of Justice Programs.
+  NIJ produces and disseminates data, research findings, and publications on crime,
+  victimization, firearms violence, forensic science, and community safety. As a partner
+  in the NSF Proto-OKN program, NIJ contributed the "Data on Nonfatal Firearms Injuries"
+  use case motivating the integration of criminal victimization and neighborhood-level
+  data.
 domains:
 - public health
 - general
@@ -37,6 +38,26 @@ products:
   - relation_type: prov:hadPrimarySource
     source: nij
   product_url: https://nij.ojp.gov/library/publications/list
+- category: GraphProduct
+  description: The Neighborhood Information KG (NIKG) RDF graph, a knowledge graph
+    warehouse integrating neighborhood-level information such as demographics, land
+    use, local incidents and injuries, and proximity to trauma centers. Built from
+    census data and other neighborhood-level records, the graph is served in RDF (Turtle)
+    through the NIKG SPARQL and Triple Pattern Fragments endpoints hosted on the FRINK
+    / Proto-OKN infrastructure.
+  format: ttl
+  id: nikg.graph
+  is_public: true
+  name: Neighborhood Information KG RDF Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nikg
+  - relation_type: prov:hadPrimarySource
+    source: us-census
+  product_url: https://frink.renci.org/registry/kgs/neighborhood-kg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: nij
 ---
 # National Institute of Justice
 
