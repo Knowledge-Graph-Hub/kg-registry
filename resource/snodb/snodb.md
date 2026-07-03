@@ -8,6 +8,7 @@ contacts:
     value: danny.bergeron@usherbrooke.ca
   - contact_type: email
     value: Michelle.Scott@USherbrooke.ca
+  id: scott-lab-universite-de-sherbrooke
   label: "Scott Lab, Department of Biochemistry and Functional Genomics, Universit\xE9 de Sherbrooke"
 creation_date: '2025-10-27T00:00:00Z'
 description: snoDB is a specialized database of human small nucleolar RNAs (snoRNAs),
@@ -20,7 +21,7 @@ domains:
 - biological systems
 homepage_url: https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/
 id: snodb
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 name: snoDB
 products:
@@ -902,6 +903,21 @@ publications:
   preferred: true
   title: 'snoDB 2.0: an enhanced interactive database, specializing in human snoRNAs'
   year: '2023'
+- authors:
+  - Bouchard-Bourelle
+  - Desjardins-Henri
+  - Mathurin-St-Pierre
+  - Deschamps-Francoeur
+  - "Fafard-Couture"
+  - Garant
+  - Abou Elela
+  - Scott
+  doi: 10.1093/nar/gkz884
+  id: https://pubmed.ncbi.nlm.nih.gov/31598696/
+  journal: Nucleic Acids Res
+  title: 'snoDB: an interactive database of human snoRNA sequences, abundance and
+    interactions'
+  year: '2020'
 taxon:
 - NCBITaxon:9606
 ---

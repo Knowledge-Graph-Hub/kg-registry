@@ -18,7 +18,7 @@ domains:
 - biological systems
 homepage_url: http://www.noncode.org/
 id: noncode
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -89,9 +89,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: noncode
   product_url: http://www.noncode.org/download.php
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
-    to URL'
 - category: GraphicalInterface
   description: Predicted functions for plant lncRNAs based on co-expression analysis
   format: http

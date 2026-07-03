@@ -1,7 +1,10 @@
 ---
 id: loggerhead
 name: Loggerhead nesting
-description: Description unavailable.
+description: A demonstration of ontology construction as a general technique for
+  coding ethograms and other descriptions of behavior into machine understandable
+  forms; an example ontology for Loggerhead sea turtle (Caretta caretta) nesting
+  behavior.
 activity_status: inactive
 homepage_url: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
 license:
@@ -12,7 +15,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-25T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 domains:
 - biological systems
 - organisms
