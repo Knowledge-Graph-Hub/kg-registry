@@ -35,8 +35,27 @@ products:
   original_source:
   - source: hydrologykg
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: The SAWGraph Hydrology knowledge graph, describing surface water bodies
+    (lakes, rivers, wetlands), the flowlines that connect them, and groundwater features
+    (aquifers, wells, springs) together with their locations. Surface water bodies
+    and flowlines are modeled from USGS NHDPlus data (NHDWaterbody and NHDFlowline);
+    groundwater features are drawn primarily from individual state geological surveys
+    (for example, the Maine Geological Survey). The RDF (Turtle) graph is served
+    through the SAWGraph Hydrology KG SPARQL and Triple Pattern Fragments endpoints.
+  format: ttl
+  id: hydrologykg.graph
+  name: SAWGraph Hydrology Knowledge Graph
+  product_url: https://github.com/SAWGraph/water-kg
+  original_source:
+  - source: hydrologykg
+    relation_type: prov:hadPrimarySource
+  - source: sawgraph
+    relation_type: prov:wasDerivedFrom
+  - source: usgs-nhd
+    relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 ---
 SAWGraph Hydrology KG
 

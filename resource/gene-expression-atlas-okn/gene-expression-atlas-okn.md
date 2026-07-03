@@ -20,6 +20,18 @@ contacts:
   - contact_type: github
     value: twhetzel
 products:
+- id: gene-expression-atlas-okn.graph
+  name: Gene Expression Atlas OKN Graph
+  description: RDF graph of the Gene Expression Atlas OKN knowledge graph, served
+    via the FRINK federated knowledge network.
+  category: GraphProduct
+  format: ttl
+  product_url: https://frink.apps.renci.org/gene-expression-atlas-okn
+  original_source:
+  - source: gene-expression-atlas-okn
+    relation_type: prov:hadPrimarySource
+  - source: expression-atlas
+    relation_type: prov:wasDerivedFrom
 - id: gene-expression-atlas-okn.sparql
   name: Gene Expression Atlas SPARQL
   description: SPARQL endpoint for Gene Expression Atlas
@@ -43,7 +55,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 domains:
 - biomedical
 - genomics

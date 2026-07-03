@@ -16,11 +16,30 @@ domains:
   - environment
 homepage_url: https://ufokn.com/
 id: "uf-okn"
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 name: UF-OKN
 repository: https://github.com/UFOKN/Knowledge-Graph
 products:
+  - category: GraphProduct
+    description: The UF-OKN knowledge graph, published as Linked Data (RDF/Turtle), that
+      links urban infrastructure features to hydrologic forecasts so that flood risk can
+      be explored as connected data. It relates OpenStreetMap building footprints and road
+      networks to their nearest river (via the NHD/NHDPlus reach network) and to the
+      streamflow forecasts from the NOAA National Water Model that would inundate them.
+    format: ttl
+    id: "uf-okn.graph"
+    name: UF-OKN Knowledge Graph
+    original_source:
+      - source: uf-okn
+        relation_type: prov:hadPrimarySource
+      - source: noaa-nwm
+        relation_type: prov:hadPrimarySource
+      - source: openstreetmap
+        relation_type: prov:hadPrimarySource
+      - source: usgs-nhd
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/UFOKN/Knowledge-Graph
   - category: GraphicalInterface
     description: Public UF-OKN web portal for project information and application context.
     format: http
