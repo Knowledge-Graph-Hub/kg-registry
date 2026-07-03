@@ -44,8 +44,27 @@ products:
   original_source:
   - source: climatemodelskg
     relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  id: climatemodelskg.graph
+  name: Climate Models KG Graph
+  description: RDF/Turtle knowledge graph integrating climate model and dataset
+    metadata (from ESGF, CMIP controlled vocabularies, and the NASA GCMD keyword
+    taxonomy) with entities and relationships extracted from climate-science
+    publications. Served through the FRINK federation and the SPARQL and TPF
+    endpoints.
+  format: ttl
+  product_url: https://frink.renci.org/registry/kgs/climatepub4-kg/
+  original_source:
+  - source: climatemodelskg
+    relation_type: prov:hadPrimarySource
+  - source: esgf
+    relation_type: prov:hadPrimarySource
+  - source: cmip
+    relation_type: prov:hadPrimarySource
+  - source: gcmd
+    relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-07-03T00:00:00Z'
 ---
 Climate Models KG
 

@@ -16,6 +16,15 @@ id: ebrains
 layout: resource_detail
 name: EBRAINS Knowledge Graph
 products:
+  - category: GraphProduct
+    description: The EBRAINS Knowledge Graph itself, a metadata graph cataloging neuroscience datasets, models, and software contributed by researchers within the EBRAINS research infrastructure, accessed through the KG search interface.
+    format: http
+    id: ebrains.graph
+    name: EBRAINS Knowledge Graph
+    original_source:
+      - source: ebrains
+        relation_type: prov:hadPrimarySource
+    product_url: https://kg.ebrains.eu/
   - category: GraphicalInterface
     description: A visualization of the contents of the EBRAINS knowledge graph.
     format: http
@@ -36,7 +45,7 @@ products:
     product_url: https://core.kg.ebrains.eu/swagger-ui/index.html
 repository: https://github.com/HumanBrainProject/kg-core
 creation_date: '2025-05-01T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-07-03T00:00:00Z'
 ---
 
 EBRAINS Knowledge Graph
