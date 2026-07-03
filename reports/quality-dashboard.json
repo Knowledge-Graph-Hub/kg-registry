@@ -3,17 +3,17 @@
     "publication_entries_total": 855,
     "publication_entries_with_issues": 0,
     "resources_with_citation_issues": 0,
-    "resources_without_publications": 350,
+    "resources_without_publications": 349,
     "validation_errors": 0,
     "validation_warnings": 0
   },
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 853,
+    "modified_after_creation": 852,
     "stale_over_365_days": 0,
     "unchanged_since_creation": 135,
-    "with_both_dates": 988
+    "with_both_dates": 987
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -945,7 +945,6 @@
       "uberon",
       "ucnebase",
       "ucsc",
-      "ufokn",
       "unibiomap",
       "uo",
       "upa",
@@ -4915,9 +4914,8 @@
       "uf-okn.code",
       "uf-okn.graph",
       "uf-okn.portal",
-      "ufokn",
-      "ufokn.sparql",
-      "ufokn.tpf",
+      "uf-okn.sparql",
+      "uf-okn.tpf",
       "ukbiobank",
       "ukbiobank.showcase",
       "umls",
@@ -5262,8 +5260,7 @@
       "pubmed-knowledge-graph",
       "raras",
       "rdkg",
-      "tbkg",
-      "ufokn"
+      "tbkg"
     ],
     "missing_contacts_resource_ids": [
       "aelous",
@@ -6345,7 +6342,6 @@
       "ucnebase",
       "ucsc",
       "uf-okn",
-      "ufokn",
       "ukbiobank",
       "umls",
       "unibiomap",
@@ -7124,7 +7120,6 @@
       "ucnebase",
       "ucsc",
       "uf-okn",
-      "ufokn",
       "ukbiobank",
       "unibiomap",
       "unicarbkb",
@@ -7475,7 +7470,6 @@
       "try",
       "ucnebase",
       "uf-okn",
-      "ufokn",
       "unii",
       "vdjserver",
       "vectology",
@@ -7971,7 +7965,6 @@
       "ttd",
       "ucnebase",
       "ucsc",
-      "ufokn",
       "ukbiobank",
       "umls",
       "unicarbkb",
@@ -8813,7 +8806,6 @@
       "uberon",
       "ubkg",
       "uf-okn",
-      "ufokn",
       "ukbiobank",
       "umls",
       "unibiomap",
@@ -12463,8 +12455,8 @@
       "uf-okn.code",
       "uf-okn.graph",
       "uf-okn.portal",
-      "ufokn.sparql",
-      "ufokn.tpf",
+      "uf-okn.sparql",
+      "uf-okn.tpf",
       "ukbiobank.showcase",
       "umls.api",
       "umls.browser",
@@ -13843,7 +13835,6 @@
       "ucnebase",
       "ucsc",
       "uf-okn",
-      "ufokn",
       "ukbiobank",
       "umls",
       "unibiomap",
@@ -14383,7 +14374,6 @@
       "ubergraph",
       "ubkg",
       "uf-okn",
-      "ufokn",
       "unibiomap",
       "us-census",
       "usdm",
@@ -14540,7 +14530,8 @@
       "tcdb.download.refseq",
       "tcdb.download.substrates",
       "text-mining-kp.graph",
-      "tissues.downloads"
+      "tissues.downloads",
+      "uf-okn.sparql"
     ],
     "stale_over_365_days_resource_ids": [],
     "stub_resource_ids": [],
@@ -15197,57 +15188,57 @@
       "wormbase.wormmine"
     ]
   },
-  "generated_at": "2026-07-03T13:33:55Z",
+  "generated_at": "2026-07-03T13:57:17Z",
   "knowledge_graph_evaluations": {
-    "knowledge_graph_total": 154,
+    "knowledge_graph_total": 153,
     "with_evaluation_page": 127,
-    "without_evaluation_page": 27
+    "without_evaluation_page": 26
   },
   "links": {
     "broken_urls": 107,
-    "cache_hits": 3783,
+    "cache_hits": 3782,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 3676,
+    "healthy_urls": 3675,
     "live_checked_urls": 0,
     "mode": "cache-or-unchecked",
-    "total_unique_urls": 4204,
+    "total_unique_urls": 4203,
     "unchecked_urls": 421
   },
   "products": {
     "missing_format": 334,
     "missing_original_source": 5,
     "missing_product_url": 86,
-    "retrieval_warning_mentions": 319,
+    "retrieval_warning_mentions": 320,
     "total": 8227
   },
-  "resource_count": 988,
+  "resource_count": 987,
   "resources": {
     "contacts_with_org_connection": 248,
-    "contacts_without_org_connection": 592,
+    "contacts_without_org_connection": 591,
     "missing_contacts": 148,
     "missing_description": 0,
-    "missing_fairsharing_id": 980,
+    "missing_fairsharing_id": 979,
     "missing_homepage_url": 30,
-    "missing_infores_id": 727,
-    "missing_license": 322,
-    "missing_repository": 513,
+    "missing_infores_id": 726,
+    "missing_license": 321,
+    "missing_repository": 512,
     "status_counts": {
-      "active": 847,
+      "active": 846,
       "inactive": 125,
       "orphaned": 11,
       "unresponsive": 5
     },
     "stub_count": 0,
-    "total": 988,
+    "total": 987,
     "with_broken_links": 139,
     "with_citation_issues": 0,
     "without_products": 14,
-    "without_publications": 350
+    "without_publications": 349
   },
   "scoring": {
     "average_score": 7.1,
     "median_score": 7.0,
-    "resources_with_issues": 970,
+    "resources_with_issues": 969,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],

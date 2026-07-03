@@ -35,6 +35,15 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 
+# Some FRINK shortnames map onto an existing KG-Registry id that differs from the
+# raw shortname -- e.g. a duplicate that has been merged into a canonical entry.
+# Mapping them here makes the sync update the canonical page instead of recreating
+# the duplicate resource directory on the next run.
+SHORTNAME_ALIASES = {
+    "ufokn": "uf-okn",
+}
+
+
 class FRINKSync:
     """Synchronize FRINK OKN registry entries with KG-Registry."""
 
@@ -149,6 +158,7 @@ class FRINKSync:
         resource_id = str(frink_kg.get("shortname", "")).strip()
         if not resource_id:
             raise ValueError("FRINK entry is missing shortname")
+        resource_id = SHORTNAME_ALIASES.get(resource_id, resource_id)
 
         resource_name = str(frink_kg.get("title", resource_id)).strip()
         description = str(frink_kg.get("description", "")).strip() or "Description unavailable."
