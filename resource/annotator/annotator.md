@@ -1,13 +1,13 @@
 ---
-activity_status: unknown
-category: DataSource
+activity_status: active
+category: Aggregator
 creation_date: '2025-10-30T00:00:00Z'
-description: The Annotator Service is an NCATS Translator service that provides detailed annotations for biomedical entities by aggregating information from multiple knowledge sources, offering comprehensive metadata including synonyms, descriptions, classifications, and cross-references to enhance entity understanding and interoperability.
+description: The Annotator Service is an NCATS Biomedical Data Translator service that provides detailed annotations for biomedical entities identified by CURIE. It aggregates metadata such as synonyms, descriptions, classifications, and cross-references from multiple knowledge sources (including BioThings services) to enhance entity understanding and interoperability across the Translator ecosystem.
 domains:
   - biomedical
 id: "annotator"
 infores_id: "annotator"
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 name: Annotator Service
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Annotator-Service
@@ -19,17 +19,17 @@ contacts:
         value: "https://ncats.nih.gov/translator"
 products:
   - category: GraphicalInterface
-    description: Web interface for querying Translator Annotator service responses.
+    description: Interactive Swagger UI for exploring and testing the Annotator Service REST API.
     format: http
     id: annotator.portal
-    name: Translator Annotator Portal
+    name: Translator Annotator API Documentation
     original_source:
       - source: annotator
         relation_type: prov:hadPrimarySource
     product_url: https://annotator.transltr.io/
   - category: ProgrammingInterface
     connection_url: https://annotator.transltr.io
-    description: Public HTTP API endpoint for entity annotation lookups in Translator.
+    description: Public HTTP REST API for CURIE-based biomedical entity annotation lookups (e.g. /curie/{curie}) in Translator, returning aggregated metadata as JSON.
     format: http
     id: annotator.api
     is_public: true
@@ -37,7 +37,7 @@ products:
     original_source:
       - source: annotator
         relation_type: prov:hadPrimarySource
-    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Annotator-Service
+    product_url: https://annotator.transltr.io/openapi.json
 ---
 
 # Annotator Service
