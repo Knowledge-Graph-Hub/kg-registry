@@ -1,6 +1,14 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: support@bioontology.org
+  - contact_type: url
+    value: https://www.bioontology.org/
+  label: National Center for Biomedical Ontology (NCBO), Stanford
 creation_date: '2025-08-20T00:00:00Z'
 description: BioPortal is a comprehensive open repository and portal for biomedical
   ontologies and terminologies, providing search, browsing, mappings, versioned downloads,
@@ -11,6 +19,7 @@ domains:
 - clinical
 - information technology
 - general
+homepage_url: https://bioportal.bioontology.org/
 id: bioportal
 infores_id: bioportal
 last_modified_date: '2025-09-16T00:00:00Z'
@@ -226,6 +235,7 @@ taxon:
 warnings:
 - Some ontologies have distinct licenses; review individual ontology license metadata
   before reuse.
+repository: https://github.com/ncbo
 ---
 # BioPortal
 

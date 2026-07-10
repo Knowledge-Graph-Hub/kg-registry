@@ -6,9 +6,13 @@ description: The Ribosomal Database Project (RDP) provided ribosome-related data
 domains:
   - biological systems
   - genomics
+homepage_url: https://github.com/rdpstaff/RDPTools
 id: rdp
 last_modified_date: '2025-10-15T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://spdx.org/licenses/GPL-2.0.html
+  label: GPL-2.0
 name: Ribosomal Database Project
 products:
   - category: ProcessProduct
@@ -417,6 +421,43 @@ products:
       - source: rnacentral
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24288368
+    authors:
+      - Cole JR
+      - Wang Q
+      - Fish JA
+      - Chai B
+      - McGarrell DM
+      - Sun Y
+      - Brown CT
+      - Porras-Alfaro A
+      - Kuske CR
+      - Tiedje JM
+    doi: 10.1093/nar/gkt1244
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Ribosomal Database Project: data and tools for high throughput rRNA analysis'
+    year: '2014'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/19004872
+    authors:
+      - Cole JR
+      - Wang Q
+      - Cardenas E
+      - Fish J
+      - Chai B
+      - Farris RJ
+      - Kulam-Syed-Mohideen AS
+      - McGarrell DM
+      - Marsh T
+      - Garrity GM
+      - Tiedje JM
+    doi: 10.1093/nar/gkn879
+    journal: Nucleic Acids Research
+    title: 'The Ribosomal Database Project: improved alignments and new tools for rRNA
+      analysis'
+    year: '2009'
+repository: https://github.com/rdpstaff/classifier
 warnings:
   - The RDP website is no longer available. Only stand-alone tools and classifiers remain accessible.
 taxon:

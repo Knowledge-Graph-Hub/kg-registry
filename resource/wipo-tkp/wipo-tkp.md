@@ -26,14 +26,15 @@ id: wipo-tkp
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: WIPO Traditional Knowledge Resources
 products:
 - category: GraphicalInterface
   description: WIPO Traditional Knowledge web portal providing access to TK resources,
     policy materials, and links to traditional knowledge databases relevant to traditional
     and herbal medicine.
+  format: http
   id: wipo-tkp.portal
   name: WIPO Traditional Knowledge Portal
   original_source:

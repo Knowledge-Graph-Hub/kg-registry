@@ -9,10 +9,15 @@ contacts:
 description: A Translator Knowledge Provider
 domains:
   - biomedical
+homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Service-Provider
 id: service-kp
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/licenses/Apache-2.0
+  label: Apache-2.0
 name: Service KP
+repository: https://github.com/biothings/biothings.api
 products:
   - category: DocumentationProduct
     description: Team documentation for the Translator Service Provider.
@@ -41,6 +46,28 @@ products:
       - source: service-kp
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/biothings/biothings.api
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35020801
+    authors:
+      - Sebastien Lelong
+      - Xinghua Zhou
+      - Cyrus Afrasiabi
+      - Zhongchao Qian
+      - Marco Alvarado Cano
+      - Ginger Tsueng
+      - Jiwen Xin
+      - Julia Mullen
+      - Yao Yao
+      - Ricardo Avila
+      - Greg Taylor
+      - Andrew I Su
+      - Chunlei Wu
+    doi: 10.1093/bioinformatics/btac017
+    journal: Bioinformatics
+    preferred: true
+    title: 'BioThings SDK: a toolkit for building high-performance data APIs in biomedical
+      research'
+    year: '2022'
 creation_date: '2025-03-09T00:00:00Z'
 ---
 
