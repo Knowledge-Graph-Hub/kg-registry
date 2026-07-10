@@ -23,6 +23,9 @@ homepage_url: https://immport.niaid.nih.gov/home
 id: immport
 last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://docs.immport.org/home/agreement/
+  label: ImmPort User Agreement (custom data use agreement)
 name: ImmPort
 products:
 - category: DataSource
@@ -66,6 +69,29 @@ products:
     source: pdb
   - relation_type: prov:wasInfluencedBy
     source: lincs
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/29485622
+  authors:
+  - Sanchita Bhattacharya
+  - Patrick Dunn
+  - Cristel G. Thomas
+  - Barry Smith
+  - Henry Schaefer
+  - Jieming Chen
+  - Zicheng Hu
+  - Kelly A. Zalocusky
+  - Ravi D. Shankar
+  - Shai S. Shen-Orr
+  - Elizabeth Thomson
+  - Jeffrey Wiser
+  - Atul J. Butte
+  doi: 10.1038/sdata.2018.15
+  journal: Scientific Data
+  preferred: true
+  title: ImmPort, toward repurposing of open access immunological assay data for translational
+    and clinical research
+  year: '2018'
+repository: https://github.com/ImmPortDB
 taxon:
 - NCBITaxon:9606
 ---

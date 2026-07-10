@@ -1,6 +1,17 @@
 ---
 activity_status: inactive
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: hum@ccf.org
+  label: Ming Hu
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: biren@ucsd.edu
+  label: Bing Ren
 creation_date: '2026-06-18T00:00:00Z'
 description: FIRE (Frequently Interacting REgions) are genomic regions that participate
   in an unusually high number of local chromatin interactions, identified from high-throughput
@@ -28,6 +39,7 @@ products:
   description: Schmitt et al. (2016) compendium of chromatin contact maps and Frequently
     Interacting REgions, distributed via the PubMed Central article record and its
     supplementary data.
+  format: http
   id: fire.publication
   name: FIRE compendium of chromatin contact maps
   original_source:
@@ -110,6 +122,7 @@ publications:
   title: A Compendium of Chromatin Contact Maps Reveals Spatially Active Regions in
     the Human Genome
   year: '2016'
+repository: https://github.com/yycunc/FIREcaller
 ---
 FIRE (Frequently Interacting REgions) identifies genomic regions that frequently
 take part in local chromatin interactions, called from Hi-C data. Introduced by

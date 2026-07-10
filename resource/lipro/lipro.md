@@ -3,6 +3,7 @@ id: lipro
 name: Lipid Ontology
 description: An ontology representation of the LIPIDMAPS nomenclature classification.
 activity_status: inactive
+homepage_url: https://obofoundry.org/ontology/lipro.html
 license:
   id: ''
   label: Not specified
@@ -21,7 +22,18 @@ contacts:
   contact_details:
   - contact_type: email
     value: bakerc@unb.ca
-products: []
+products:
+- id: lipro.owl
+  name: Lipid Ontology OWL product
+  description: OWL-DL edition of the Lipid Ontology (LiPrO), representing the LIPIDMAPS
+    nomenclature classification. Served as an archived mirror via AberOWL; the original
+    OBO PURL no longer resolves.
+  category: OntologyProduct
+  format: owl
+  product_url: http://aber-owl.net/media/ontologies/LIPRO/4/lipro.owl
+  original_source:
+  - source: lipro
+    relation_type: prov:hadPrimarySource
 publications:
 - authors:
   - Chepelev LL
