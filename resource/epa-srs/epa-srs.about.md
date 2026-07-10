@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: EPA overview page explaining Substance Registry Services as the central
   EPA system for substance information and program-list membership.
+format: http
 id: epa-srs.about
 name: About EPA Substance Registry Services
 original_source:

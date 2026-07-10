@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: Publication describing the LabeledIn corpus construction workflow, including
   drug label selection, automatic disease recognition, and manual indication annotation.
+format: http
 id: labeledin.publication
 name: LabeledIn Publication
 original_source:

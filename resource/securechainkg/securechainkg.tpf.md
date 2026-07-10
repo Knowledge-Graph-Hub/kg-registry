@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SecureChain KG
+format: http
 id: securechainkg.tpf
 name: SecureChain KG TPF
 original_source:

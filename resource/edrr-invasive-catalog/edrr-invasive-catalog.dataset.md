@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: edrr-invasive-catalog
 product_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
+warnings:
+- File was not able to be retrieved when checked on 2026-07-03_ No Content-Length
+  header found
 layout: product_detail
 ---

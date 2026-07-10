@@ -1,17 +1,17 @@
 ---
 category: OntologyProduct
-description: Plant Anatomy Ontology in OBO format
+description: OBO edition of the plant anatomy content. The original Plant Anatomy
+  Ontology OBO PURL no longer resolves; product_url now points to the Plant Ontology
+  (PO), which superseded and absorbed the plant anatomy content.
 format: obo
 id: pao.obo
 name: pao.obo
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pao
-product_url: http://purl.obolibrary.org/obo/pao.obo
+product_url: http://purl.obolibrary.org/obo/po.obo
 warnings:
-- File was not able to be retrieved when checked on 2026-07-02_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-06-22_ Timeout connecting
-  to URL
+- The original PAO OBO PURL (http_//purl.obolibrary.org/obo/pao.obo) no longer resolves
+  (HTTP 404); product_url points to the successor Plant Ontology (PO) OBO.
 layout: product_detail
 ---

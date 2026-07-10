@@ -13,14 +13,12 @@ contacts:
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
 creation_date: '2025-09-29T00:00:00Z'
-description: Plant Anatomy Ontology, a controlled vocabulary for plant anatomical
-  and morphological structures. It is deprecated and has been superseded by the Plant
-  Ontology (PO).
+description: Description unavailable.
 domains:
 - anatomy and development
 homepage_url: http://www.plantontology.org
 id: pao
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-07-10T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -37,10 +35,11 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pao
+  product_file_size: 360811
   product_url: http://purl.obolibrary.org/obo/po.owl
   warnings:
-  - 'The original PAO OBO PURL (http://purl.obolibrary.org/obo/pao.owl) no longer resolves
-    (HTTP 404); product_url points to the successor Plant Ontology (PO) OWL.'
+  - The original PAO OBO PURL (http://purl.obolibrary.org/obo/pao.owl) no longer resolves
+    (HTTP 404); product_url points to the successor Plant Ontology (PO) OWL.
 - category: OntologyProduct
   description: OBO edition of the plant anatomy content. The original Plant Anatomy
     Ontology OBO PURL no longer resolves; product_url now points to the Plant Ontology
@@ -51,13 +50,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pao
+  product_file_size: 222891
   product_url: http://purl.obolibrary.org/obo/po.obo
   warnings:
-  - 'The original PAO OBO PURL (http://purl.obolibrary.org/obo/pao.obo) no longer resolves
-    (HTTP 404); product_url points to the successor Plant Ontology (PO) OBO.'
+  - The original PAO OBO PURL (http://purl.obolibrary.org/obo/pao.obo) no longer resolves
+    (HTTP 404); product_url points to the successor Plant Ontology (PO) OBO.
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/23220694
-  authors:
+- authors:
   - Laurel Cooper
   - Ramona L. Walls
   - Justin Elser
@@ -81,6 +80,7 @@ publications:
   - Yukiko Yamazaki
   - Pankaj Jaiswal
   doi: 10.1093/pcp/pcs163
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23220694
   journal: Plant and Cell Physiology
   preferred: true
   title: The Plant Ontology as a Tool for Comparative Plant Anatomy and Genomic Analyses

@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Public EPA Substance Registry Services search interface for looking up
   substances tracked or regulated by EPA programs and other sources.
+format: http
 id: epa-srs.search
 name: EPA SRS Search
 original_source:

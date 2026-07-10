@@ -9,7 +9,7 @@ original_source:
   source: epo
 product_url: http://purl.obolibrary.org/obo/epo.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-07-02_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-07-03_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

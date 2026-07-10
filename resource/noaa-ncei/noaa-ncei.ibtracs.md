@@ -11,10 +11,10 @@ original_source:
   source: noaa-ncei
 product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
 warnings:
-- File was not able to be retrieved when checked on 2026-07-02_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-07-02_ Error connecting to
+- File was not able to be retrieved when checked on 2026-07-03_ Error connecting to
   URL_ ('Connection aborted.', RemoteDisconnected('Remote end closed connection without
   response'))
+- File was not able to be retrieved when checked on 2026-07-02_ Timeout connecting
+  to URL
 layout: product_detail
 ---

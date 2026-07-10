@@ -109,10 +109,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -137,10 +137,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -165,10 +165,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
     format.
@@ -188,10 +188,10 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
     format.
@@ -211,10 +211,10 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).

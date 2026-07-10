@@ -65,9 +65,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -90,9 +90,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -128,9 +128,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for taxon subsets such as prokaryotes
@@ -6594,9 +6594,9 @@ products:
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
@@ -6636,12 +6636,12 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV

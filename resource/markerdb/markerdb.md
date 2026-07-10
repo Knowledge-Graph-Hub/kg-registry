@@ -80,9 +80,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: Product
   description: TSV export of MarkerDB chemical biomarkers with associated conditions
@@ -100,9 +100,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: Product
   description: TSV export of MarkerDB genetic biomarkers with associated conditions.
@@ -121,9 +121,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: Product
   description: TSV export of MarkerDB karyotype biomarkers with associated conditions.
@@ -135,9 +135,9 @@ products:
     source: markerdb
   product_url: https://markerdb.ca/pages/download_all_karyotypes?format=tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: GraphProduct
   compression: gzip

@@ -9,7 +9,7 @@ name: PREDICT Supporting Information
 original_source:
 - relation_type: prov:hadPrimarySource
   source: predict
-product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
+product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/
 secondary_source:
 - relation_type: prov:used
   source: drugbank
@@ -17,10 +17,5 @@ secondary_source:
   source: mesh
 - relation_type: prov:used
   source: omim
-warnings:
-- File was not able to be retrieved when checked on 2026-07-02_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-06-16_ Timeout connecting
-  to URL
 layout: product_detail
 ---

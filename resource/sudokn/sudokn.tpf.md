@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SUDOKN
+format: http
 id: sudokn.tpf
 name: SUDOKN TPF
 original_source:

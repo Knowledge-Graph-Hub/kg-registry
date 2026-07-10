@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for NASA-GESDISC-KG
+format: http
 id: nasa-gesdisc-kg.tpf
 name: NASA-GESDISC-KG TPF
 original_source:

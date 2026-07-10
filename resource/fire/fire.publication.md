@@ -3,6 +3,7 @@ category: DataSource
 description: Schmitt et al. (2016) compendium of chromatin contact maps and Frequently
   Interacting REgions, distributed via the PubMed Central article record and its supplementary
   data.
+format: http
 id: fire.publication
 name: FIRE compendium of chromatin contact maps
 original_source:

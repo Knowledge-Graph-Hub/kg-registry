@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for NIAID Data Ecosystem KG
+format: http
 id: nde.tpf
 name: NIAID Data Ecosystem KG TPF
 original_source:

@@ -13,6 +13,7 @@ original_source:
   source: genetics-kp
 - relation_type: prov:hadPrimarySource
   source: genebass
+product_file_size: 3538
 product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/meta_knowledge_graph
 secondary_source:
 - relation_type: prov:wasInfluencedBy

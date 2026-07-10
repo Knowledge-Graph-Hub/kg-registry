@@ -130,7 +130,7 @@ compath	ComPath	DataSource	https://compath.scai.fraunhofer.de/	resource/compath/
 connections-hypothesis-kp	Connections Hypothesis KP	KnowledgeGraph	https://github.com/di2ag/chp_api	resource/connections-hypothesis-kp/connections-hypothesis-kp.md
 coralkinome	CoralKinome	DataSource	https://www.coralkinome.org/	resource/coralkinome/coralkinome.md
 corum	CORUM	DataSource	https://mips.helmholtz-muenchen.de/corum/	resource/corum/corum.md
-cpathkg	C-Path Knowledge Graph	KnowledgeGraph		resource/cpathkg/cpathkg.md
+cpathkg	C-Path Knowledge Graph	KnowledgeGraph	https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration	resource/cpathkg/cpathkg.md
 cpic	CPIC	Resource	https://cpicpgx.org/	resource/cpic/cpic.md
 cpt	Current Procedural Terminology	DataSource	https://www.ama-assn.org/practice-management/cpt	resource/cpt/cpt.md
 craft	Colorado Richly Annotated Full-Text Corpus	DataSource	https://github.com/UCDenver-ccp/CRAFT	resource/craft/craft.md
@@ -348,7 +348,7 @@ jaspar	JASPAR	DataSource	https://jaspar.elixir.no/	resource/jaspar/jaspar.md
 kentucky-cancer-registry	Kentucky Cancer Registry	DataSource	https://www.kcr.uky.edu/	resource/kentucky-cancer-registry/kentucky-cancer-registry.md
 kg-alzheimers	KG-Alzheimers	KnowledgeGraph	https://kghub.org/kg-alzheimers/index.html	resource/kg-alzheimers/kg-alzheimers.md
 kg-covid-19	KG-COVID-19	KnowledgeGraph	https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki	resource/kg-covid-19/kg-covid-19.md
-kg-ebi-gene2pheno	EBI Gene2Phenotype KG	KnowledgeGraph		resource/kg-ebi-gene2pheno/kg-ebi-gene2pheno.md
+kg-ebi-gene2pheno	EBI Gene2Phenotype KG	KnowledgeGraph	https://www.ebi.ac.uk/gene2phenotype/	resource/kg-ebi-gene2pheno/kg-ebi-gene2pheno.md
 kg-enp	ENPKG	KnowledgeGraph	https://enpkg.commons-lab.org/	resource/kg-enp/kg-enp.md
 kg-fm	KG-FM	KnowledgeGraph	https://github.com/MontageBai/KGFM	resource/kg-fm/kg-fm.md
 kg-idg	KG-IDG	KnowledgeGraph	https://kghub.org/kg-idg/index.html	resource/kg-idg/kg-idg.md
@@ -366,7 +366,7 @@ labo	clinical LABoratory Ontology	Ontology	https://github.com/OpenLHS/LABO	resou
 lepao	Lepidoptera Anatomy Ontology	Ontology	https://github.com/insect-morphology/lepao	resource/lepao/lepao.md
 lincs-l1000	LINCS L1000	DataSource	https://lincsproject.org/LINCS/	resource/lincs-l1000/lincs-l1000.md
 lipidmaps	LIPID MAPS	DataSource	https://www.lipidmaps.org/	resource/lipidmaps/lipidmaps.md
-lipro	Lipid Ontology	Ontology		resource/lipro/lipro.md
+lipro	Lipid Ontology	Ontology	https://obofoundry.org/ontology/lipro.html	resource/lipro/lipro.md
 lmha	LungMAP Human Anatomy Ontology	Ontology	https://github.com/duke-lungmap-team/lung_ontology	resource/lmha/lmha.md
 lncbase	DIANA-LncBase	DataSource	http://www.microrna.gr/LncBase	resource/lncbase/lncbase.md
 lncbook	LncBook	DataSource	https://ngdc.cncb.ac.cn/lncbook/home	resource/lncbook/lncbook.md
@@ -606,10 +606,10 @@ raras	Raras	KnowledgeGraph	https://raras.org/	resource/raras/raras.md
 rbo	Radiation Biology Ontology	Ontology	https://github.com/Radiobiology-Informatics-Consortium/RBO	resource/rbo/rbo.md
 rdbridge	RDBridge	KnowledgeGraph	http://rdb.lifesynther.com/	resource/rdbridge/rdbridge.md
 rdkg	Rare Disease Knowledge Graph	KnowledgeGraph	https://frink.renci.org/registry/kgs/rdkg/	resource/rdkg/rdkg.md
-rdp	Ribosomal Database Project	DataSource		resource/rdp/rdp.md
+rdp	Ribosomal Database Project	DataSource	https://github.com/rdpstaff/RDPTools	resource/rdp/rdp.md
 reacto	Reactome Entity Ontology (REACTO)	Resource	http://purl.obolibrary.org/obo/go/extensions/reacto.owl	resource/reacto/reacto.md
 reconx	ReconX	DataSource	https://www.vmh.life/	resource/reconx/reconx.md
-rediportal	REDIportal	DataSource		resource/rediportal/rediportal.md
+rediportal	REDIportal	DataSource	https://rediportal.cloud.ba.infn.it/atlas/	resource/rediportal/rediportal.md
 redrugs	ReDrugs	KnowledgeGraph	https://github.com/dlmcguinness/redrugs	resource/redrugs/redrugs.md
 redu	ReDU	Aggregator	https://redu.gnps2.org/selection/	resource/redu/redu.md
 refseq	RefSeq	DataSource	https://www.ncbi.nlm.nih.gov/refseq/	resource/refseq/refseq.md
@@ -647,7 +647,7 @@ semrep	SemRep	DataSource	https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR
 sennet	SenNet	DataSource	https://sennetconsortium.org/	resource/sennet/sennet.md
 sep	Sample processing and separation techniques	Ontology	http://psidev.info/index.php?q=node/312	resource/sep/sep.md
 sepio	Scientific Evidence and Provenance Information Ontology	Ontology	https://github.com/monarch-initiative/SEPIO-ontology	resource/sepio/sepio.md
-service-kp	Service KP	KnowledgeGraph		resource/service-kp/service-kp.md
+service-kp	Service KP	KnowledgeGraph	https://github.com/NCATSTranslator/Translator-All/wiki/Service-Provider	resource/service-kp/service-kp.md
 sfld	Structure-Function Linkage Database	DataSource	http://sfld.rbvi.ucsf.edu/	resource/sfld/sfld.md
 sibils	SIBiLS	DataSource	https://sibils.org/	resource/sibils/sibils.md
 sibo	Social Insect Behavior Ontology	Ontology	https://github.com/obophenotype/sibo	resource/sibo/sibo.md

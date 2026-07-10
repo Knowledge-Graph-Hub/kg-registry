@@ -2146,9 +2146,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
@@ -2449,7 +2449,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: predict
-  product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
+  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/
   secondary_source:
   - relation_type: prov:used
     source: drugbank
@@ -2457,13 +2457,6 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
-    when accessing file'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
@@ -2881,12 +2874,12 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,

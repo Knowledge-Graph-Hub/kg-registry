@@ -67,9 +67,9 @@ products:
     source: alphafold
   product_url: https://alphafold.ebi.ac.uk/help
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between

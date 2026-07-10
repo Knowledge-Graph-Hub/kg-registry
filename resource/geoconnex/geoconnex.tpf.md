@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for GEOCONNEX
+format: http
 id: geoconnex.tpf
 name: GEOCONNEX TPF
 original_source:

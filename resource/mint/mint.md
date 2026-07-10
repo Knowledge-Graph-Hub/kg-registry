@@ -62,10 +62,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -90,10 +90,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -118,10 +118,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
     format.
@@ -141,10 +141,10 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
     format.
@@ -164,10 +164,10 @@ products:
     source: mi
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-07-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
@@ -1119,11 +1119,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-07-02: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'

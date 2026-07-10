@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: EPA SRS widget service for embedding a Substance Registry Services search
   box in external web pages.
+format: http
 id: epa-srs.widget
 is_public: true
 name: EPA SRS Widget

@@ -18,7 +18,7 @@ domains:
 - general
 homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
 id: mo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-07-10T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -33,14 +33,15 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mo
-  product_url: http://web.archive.org/web/20250206194936/https://mged.sourceforge.net/ontologies/MGEDOntology.owl
+  product_url: http://purl.obolibrary.org/obo/mo.owl
   warnings:
-  - 'The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
+  - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
     (HTTP 404); product_url now points to a Wayback Machine archived snapshot of the
-    MGED Ontology OWL.'
+    MGED Ontology OWL.
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
+    when accessing file'
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/16428806
-  authors:
+- authors:
   - Whetzel PL
   - Parkinson H
   - Causton HC
@@ -56,6 +57,7 @@ publications:
   - White J
   - Stoeckert CJ Jr
   doi: 10.1093/bioinformatics/btl005
+  id: https://www.ncbi.nlm.nih.gov/pubmed/16428806
   journal: Bioinformatics
   preferred: true
   title: 'The MGED Ontology: a resource for semantics-based description of microarray

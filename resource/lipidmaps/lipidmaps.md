@@ -42,6 +42,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 520 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 520 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API for programmatic access to LIPID MAPS databases, allowing
     lookup and retrieval of lipid records, structures, and annotations by identifier
@@ -76,6 +78,8 @@ products:
   product_url: https://www.lipidmaps.org/databases/lmsd/overview
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 520 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 520 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between

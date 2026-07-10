@@ -1,39 +1,40 @@
 ---
-id: lipro
-name: Lipid Ontology
-description: An ontology representation of the LIPIDMAPS nomenclature classification.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/lipro.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Christopher Baker
-  orcid: 0000-0003-4004-6479
   contact_details:
   - contact_type: email
     value: bakerc@unb.ca
+  label: Christopher Baker
+  orcid: 0000-0003-4004-6479
+creation_date: '2025-09-29T00:00:00Z'
+description: An ontology representation of the LIPIDMAPS nomenclature classification.
+domains:
+- chemistry and biochemistry
+homepage_url: https://obofoundry.org/ontology/lipro.html
+id: lipro
+last_modified_date: '2026-06-18T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Lipid Ontology
 products:
-- id: lipro.owl
-  name: Lipid Ontology OWL product
+- category: OntologyProduct
   description: OWL-DL edition of the Lipid Ontology (LiPrO), representing the LIPIDMAPS
     nomenclature classification. Served as an archived mirror via AberOWL; the original
     OBO PURL no longer resolves.
-  category: OntologyProduct
   format: owl
-  product_url: http://aber-owl.net/media/ontologies/LIPRO/4/lipro.owl
+  id: lipro.owl
+  name: Lipid Ontology OWL product
   original_source:
-  - source: lipro
-    relation_type: prov:hadPrimarySource
+  - relation_type: prov:hadPrimarySource
+    source: lipro
+  product_file_size: 50539
+  product_url: http://aber-owl.net/media/ontologies/LIPRO/4/lipro.owl
 publications:
 - authors:
   - Chepelev LL

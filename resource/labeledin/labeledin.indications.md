@@ -3,6 +3,7 @@ category: Product
 description: LabeledIn indication corpus described in the source publication, containing
   human-reviewed drug-disease treatment relationships with links back to source drug
   labels.
+format: http
 id: labeledin.indications
 name: LabeledIn Drug Indication Corpus
 original_source:

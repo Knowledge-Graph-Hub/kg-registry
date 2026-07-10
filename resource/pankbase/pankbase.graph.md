@@ -1,10 +1,12 @@
 ---
 category: GraphProduct
 description: Knowledge graph representation of human pancreas and diabetes data
+format: http
 id: pankbase.graph
 name: PanKGraph
 original_source:
-  - source: pankbase
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: pankbase
+product_url: https://pankgraph.org/
 layout: product_detail
 ---
