@@ -21,6 +21,17 @@ products:
       - source: geneprof
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/GeneProf
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22205509
+    authors:
+      - Florian Halbritter
+      - Harsh J. Vaidya
+      - Simon R. Tomlinson
+    doi: 10.1038/nmeth.1809
+    journal: Nature Methods
+    preferred: true
+    title: 'GeneProf: analysis of high-throughput sequencing experiments'
+    year: '2012'
 ---
 
 # GeneProf

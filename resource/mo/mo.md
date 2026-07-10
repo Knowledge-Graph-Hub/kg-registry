@@ -33,13 +33,35 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mo
-  product_url: http://purl.obolibrary.org/obo/mo.owl
+  product_url: http://web.archive.org/web/20250206194936/https://mged.sourceforge.net/ontologies/MGEDOntology.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
-    when accessing file'
-publications: []
+  - 'The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
+    (HTTP 404); product_url now points to a Wayback Machine archived snapshot of the
+    MGED Ontology OWL.'
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/16428806
+  authors:
+  - Whetzel PL
+  - Parkinson H
+  - Causton HC
+  - Fan L
+  - Fostel J
+  - Fragoso G
+  - Game L
+  - Heiskanen M
+  - Morrison N
+  - Rocca-Serra P
+  - Sansone SA
+  - Taylor C
+  - White J
+  - Stoeckert CJ Jr
+  doi: 10.1093/bioinformatics/btl005
+  journal: Bioinformatics
+  preferred: true
+  title: 'The MGED Ontology: a resource for semantics-based description of microarray
+    experiments'
+  year: '2006'
+repository: https://sourceforge.net/projects/mged/
 use_instead:
 - obi
 ---

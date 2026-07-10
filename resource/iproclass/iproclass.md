@@ -11,6 +11,12 @@ last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: iProClass
 homepage_url: http://pir.georgetown.edu/iproclass/
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://proteininformationresource.org/
+    label: Protein Information Resource (PIR)
 synonyms:
   - iProClass
   - Integrated Protein Classification
@@ -33,6 +39,30 @@ products:
       - source: iproclass
         relation_type: prov:hadPrimarySource
     product_url: https://proteininformationresource.org/
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/12520030
+    authors:
+      - Hongzhan Huang
+      - Winona C. Barker
+      - Yongxing Chen
+      - Cathy H. Wu
+    doi: 10.1093/nar/gkg044
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'iProClass: an integrated database of protein family, function and structure
+      information'
+    year: '2003'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/15022647
+    authors:
+      - Cathy H. Wu
+      - Hongzhan Huang
+      - Anastasia Nikolskaya
+      - Zhanghi Hu
+      - Winona C. Barker
+    doi: 10.1016/j.compbiolchem.2003.10.003
+    journal: Computational Biology and Chemistry
+    title: The iProClass integrated database for protein functional analysis
+    year: '2004'
 ---
 
 # iProClass

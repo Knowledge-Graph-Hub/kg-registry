@@ -1,6 +1,17 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lidong.bprc@foxmail.com
+  label: Dong Li
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: liuzy1984@163.com
+  label: Zhongyang Liu
 creation_date: '2026-02-18T00:00:00Z'
 description: BATMAN-TCM is a web resource and database for known and predicted interactions
   between traditional Chinese medicine ingredients and target proteins, supporting

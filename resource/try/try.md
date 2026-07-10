@@ -1,6 +1,17 @@
 ---
 activity_status: active
 category: Dataset
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jkattge@bgc-jena.mpg.de
+  label: Jens Kattge
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.bgc-jena.mpg.de/
+  label: Max Planck Institute for Biogeochemistry
 creation_date: '2026-01-15T00:00:00Z'
 description: The TRY Plant Trait Database aggregates global plant trait measurements
   contributed by researchers and institutions, widely used for ecological and metabolomic
@@ -12,6 +23,9 @@ id: try
 infores_id: try
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.try-db.org/TryWeb/TRY_Intellectual_Property_Guidelines.pdf
+  label: CC BY (TRY Data Intellectual Property Guidelines)
 name: TRY Plant Trait Database
 products:
 - category: Product
@@ -91,6 +105,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: try
   product_url: https://sib-swiss.github.io/sparql-editor/emi
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/31891233
+  authors:
+  - Jens Kattge
+  - Gerhard Bönisch
+  - Sandra Díaz
+  - Sandra Lavorel
+  - Iain Colin Prentice
+  doi: 10.1111/gcb.14904
+  journal: Global Change Biology
+  preferred: true
+  title: TRY plant trait database – enhanced coverage and open access
+  year: '2020'
+- id: doi:10.1111/j.1365-2486.2011.02451.x
+  authors:
+  - Jens Kattge
+  - Sandra Díaz
+  - Sandra Lavorel
+  - Iain Colin Prentice
+  - Paul Leadley
+  doi: 10.1111/j.1365-2486.2011.02451.x
+  journal: Global Change Biology
+  title: TRY – a global database of plant traits
+  year: '2011'
 ---
 # TRY Plant Trait Database
 

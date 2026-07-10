@@ -1,7 +1,12 @@
 ---
 activity_status: active
 category: DataSource
-contacts: []
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007019
+  label: Pearson Education
 creation_date: '2026-07-03T00:00:00Z'
 description: Campbell Biology (by Reece, Urry, Cain, Wasserman, Minorsky, and Jackson;
   published by Pearson) is a widely used undergraduate introductory biology textbook.
@@ -14,6 +19,9 @@ homepage_url: https://openlibrary.org/isbn/9780134093413
 id: campbell-biology
 last_modified_date: '2026-07-03T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.pearson.com/en-us/legal-information/terms-of-use.html
+  label: Pearson — proprietary / all rights reserved
 name: Campbell Biology
 products:
 - category: Product
