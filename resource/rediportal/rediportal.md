@@ -1,11 +1,24 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: ernesto.picardi@uniba.it
+    label: Ernesto Picardi
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://rediportal.cloud.ba.infn.it/atlas/contact.html
+    label: Laboratory of Bioinformatics and Comparative Genomics, University of Bari
+      "Aldo Moro"
 creation_date: '2025-09-09T00:00:00Z'
 description: REDIportal is a specialized database of A-to-I RNA editing events, integrating ~16 million sites from GTEx and TCGA with links to Ensembl, RNAcentral, UniProt, and PRIDE. The portal supports search by genomic position, sample (GTEx/TCGA), dsRNA modules, and gene view, and reports AEI/REI indices and a deep-learning-based reliability score (REDInet).
 domains:
   - genomics
   - biological systems
+homepage_url: https://rediportal.cloud.ba.infn.it/atlas/
 id: rediportal
 last_modified_date: '2025-10-15T00:00:00Z'
 layout: resource_detail
@@ -16,7 +29,7 @@ products:
     format: http
     id: rediportal.portal
     name: REDIportal Web Portal
-    product_url: http://srv00.recas.ba.infn.it/atlas/
+    product_url: https://rediportal.cloud.ba.infn.it/atlas/
     original_source:
       - source: rediportal
         relation_type: prov:hadPrimarySource
@@ -426,6 +439,7 @@ publications:
   preferred: true
   title: 'REDIportal: toward an integrated view of the A-to-I editing'
   year: '2025'
+repository: https://github.com/BioinfoUNIBA/REDItools
 ---
 
 # REDIportal

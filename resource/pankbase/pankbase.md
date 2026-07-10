@@ -36,11 +36,13 @@ name: PanKBase
 products:
 - category: GraphProduct
   description: Knowledge graph representation of human pancreas and diabetes data
+  format: http
   id: pankbase.graph
   name: PanKGraph
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pankbase
+  product_url: https://pankgraph.org/
 - category: GraphicalInterface
   description: Graphical interface for exploring the PanKGraph
   format: http
@@ -93,7 +95,24 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: gene-expression-omnibus
-repository: https://github.com/PanKbase-DB
+publications:
+- authors:
+  - Ha T. H. Vu
+  - Han Sun
+  - Parul Kudtarkar
+  - Seth A. Sharp
+  - PanKbase Consortium
+  - Anna L. Gloyn
+  - Kyle J. Gaulton
+  - Stephen C. J. Parker
+  doi: 10.64898/2026.06.02.729719
+  id: https://www.ncbi.nlm.nih.gov/pubmed/42327171
+  journal: bioRxiv
+  preferred: true
+  title: 'PanKbase Integrated Single-Cell Map: A Comprehensive Atlas of Human Pancreatic
+    Islets'
+  year: '2026'
+repository: https://github.com/PanKbase
 taxon:
 - NCBITaxon:9606
 ---
