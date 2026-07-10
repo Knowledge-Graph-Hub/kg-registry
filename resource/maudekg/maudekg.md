@@ -4,7 +4,7 @@ name: FDA MAUDE Adverse Event Knowledge Graph
 description: Knowledge graph constructed from FDA MAUDE adverse event reports using
   standardized FDA product codes.
 activity_status: active
-homepage_url: https://github.com/Prabhadeus/Proto-OKN
+homepage_url: https://frink.renci.org/maudekg
 contacts:
 - category: Individual
   contact_details:

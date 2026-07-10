@@ -20,7 +20,11 @@ homepage_url: https://cellxgene.cziscience.com/
 id: cellxgene
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 name: CZ CELLxGENE
+repository: https://github.com/chanzuckerberg/single-cell-data-portal
 products:
 - category: GraphicalInterface
   description: Main CZ CELLxGENE Discover portal for browsing public single-cell collections,
@@ -416,6 +420,18 @@ products:
     source: mondo
   - relation_type: prov:wasInfluencedBy
     source: hsapdv
+publications:
+- id: https://doi.org/10.1093/nar/gkae1142
+  authors:
+  - Shibla Abdulla
+  - Brian Aevermann
+  - CZI Cell Science Program
+  doi: 10.1093/nar/gkae1142
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'CZ CELLxGENE Discover: a single-cell data platform for scalable exploration,
+    analysis and modeling of aggregated data'
+  year: '2025'
 ---
 # CZ CELLxGENE
 

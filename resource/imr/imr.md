@@ -1,9 +1,11 @@
 ---
 id: imr
 name: Molecule role (INOH Protein name/family name ontology)
-description: Description unavailable.
+description: A structured controlled vocabulary of concrete and generic (abstract)
+  protein names, developed as an INOH pathway-annotation ontology for use in signal-transduction
+  pathway data annotation and integration.
 activity_status: inactive
-homepage_url: http://www.inoh.org
+homepage_url: https://obofoundry.org/ontology/imr.html
 license:
   id: ''
   label: Not specified

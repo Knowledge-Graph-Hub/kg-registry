@@ -1,9 +1,12 @@
 ---
 id: loggerhead
 name: Loggerhead nesting
-description: Description unavailable.
+description: An ontology for loggerhead sea turtle (Caretta caretta) nesting behavior,
+  based on the published ethogram of Hailman and Elowson, demonstrating ontology construction
+  as a technique for coding ethograms into machine-understandable forms. It is obsolete/deprecated
+  in the OBO Foundry.
 activity_status: inactive
-homepage_url: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
+homepage_url: https://obofoundry.org/ontology/loggerhead.html
 license:
   id: ''
   label: Not specified

@@ -53,6 +53,20 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: gene-expression-omnibus
+publications:
+- authors:
+  - David W. Scharp
+  - Jayagowri Arulmoli
+  - Kelly Morgan
+  - Hannah Sunshine
+  - Ergeng Hao
+  doi: 10.21926/obm.transplant.1901052
+  id: https://doi.org/10.21926/obm.transplant.1901052
+  journal: OBM Transplantation
+  preferred: true
+  title: 'Advances in Human Islet Processing: Manufacturing Steps to Achieve Predictable
+    Islet Outcomes from Research Pancreases'
+  year: '2019'
 taxon:
 - NCBITaxon:9606
 ---

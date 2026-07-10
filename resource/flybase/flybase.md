@@ -1,6 +1,12 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://flybase.org/contact/email
+  label: FlyBase
 creation_date: '2025-09-09T00:00:00Z'
 description: FlyBase is a comprehensive database of genomic and genetic data for Drosophila
   melanogaster (fruit fly) and related species. It provides curated information on
@@ -19,6 +25,9 @@ id: flybase
 infores_id: flybase
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 name: FlyBase
 products:
 - category: Product

@@ -11,11 +11,6 @@ contacts:
     value: apadilla@lincolninst.edu
   - contact_type: github
     value: adplincinst
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: apadilla@lincolninst.edu
-  label: Andrew Padilla
 description: Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic
   features to enable seamless water data discovery, access, and collaborative monitoring.
 domains:
@@ -23,7 +18,11 @@ domains:
 homepage_url: https://docs.geoconnex.us/about/intro
 id: geoconnex
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 name: GEOCONNEX
+repository: https://github.com/internetofwater/geoconnex.us
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for GEOCONNEX
@@ -38,6 +37,7 @@ products:
   name: GEOCONNEX TPF
   description: Triple Pattern Fragments endpoint for GEOCONNEX
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/geoconnex
   original_source:
   - source: geoconnex

@@ -16,7 +16,11 @@ domains:
 homepage_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
 id: securechainkg
 layout: resource_detail
+license:
+  id: https://opensource.org/licenses/Apache-2.0
+  label: Apache-2.0
 name: SecureChain KG
+repository: https://github.com/purdue-hcss/SecureChain
 products:
 - category: ProgrammingInterface
   description: SPARQL endpoint for SecureChain KG
@@ -31,6 +35,7 @@ products:
   name: SecureChain KG TPF
   description: Triple Pattern Fragments endpoint for SecureChain KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/securechainkg
   original_source:
   - source: securechainkg

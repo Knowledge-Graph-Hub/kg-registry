@@ -3,6 +3,14 @@ activity_status: active
 category: Ontology
 collection:
 - omop
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: nchsicd10cm@cdc.gov
+  - contact_type: url
+    value: https://www.cdc.gov/nchs/icd/icd-10-cm/index.html
+  label: NCHS ICD-10-CM (National Center for Health Statistics, CDC)
 creation_date: '2025-10-30T00:00:00Z'
 description: ICD-10-CM (International Classification of Diseases, 10th Revision, Clinical
   Modification) is a clinical modification of the WHO's ICD-10 system, providing diagnostic

@@ -1,6 +1,19 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://tatonettilab.org/
+  - contact_type: github
+    value: tatonetti-lab
+  label: Tatonetti Lab
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: nicholas.tatonetti@cshs.org
+  label: Nicholas P. Tatonetti
 creation_date: '2025-07-08T00:00:00Z'
 description: OFFSIDES is a database of drug side effects that were found through data
   mining of FDA Adverse Event Reporting System (FAERS) but are not listed on the official
@@ -11,7 +24,11 @@ homepage_url: http://tatonettilab.org/offsides/
 id: offsides
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  label: CC-BY-NC-SA-4.0
 name: OFFSIDES
+repository: https://github.com/tatonetti-lab/nsides
 products:
 - category: DocumentationProduct
   description: Tatonetti Lab project page describing OffSIDES and related nSIDES resources.

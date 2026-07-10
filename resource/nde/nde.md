@@ -29,6 +29,9 @@ domains:
 homepage_url: https://data.niaid.nih.gov/
 id: nde
 layout: resource_detail
+license:
+  id: https://opensource.org/licenses/Apache-2.0
+  label: Apache-2.0
 name: NIAID Data Ecosystem KG
 products:
 - category: ProgrammingInterface
@@ -44,6 +47,7 @@ products:
   name: NIAID Data Ecosystem KG TPF
   description: Triple Pattern Fragments endpoint for NIAID Data Ecosystem KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/nde
   original_source:
   - source: nde
@@ -79,6 +83,37 @@ products:
     source: pdb
   - relation_type: prov:wasInfluencedBy
     source: lincs
+publications:
+- id: https://doi.org/10.48550/arXiv.2509.13524
+  authors:
+  - Ginger Tsueng
+  - Emily Bullen
+  - Candice Czech
+  - Dylan Welzel
+  - Leandro Collares
+  - Jason Lin
+  - Everaldo Rodolpho
+  - Zubair Qazi
+  - Nichollette Acosta
+  - Lisa M. Mayer
+  - Sudha Venkatachari
+  - Zorana Mitrović Vučičević
+  - Poromendro N. Burman
+  - Deepti Jain
+  - Jack DiGiovanna
+  - Maria Giovanni
+  - Asiyah Lin
+  - Wilbert Van Panhuis
+  - Laura D. Hughes
+  - Andrew I. Su
+  - Chunlei Wu
+  doi: 10.48550/arXiv.2509.13524
+  journal: arXiv
+  preferred: true
+  title: 'The NIAID Discovery Portal: A Unified Search Engine for Infectious and Immune-Mediated
+    Disease Datasets'
+  year: '2025'
+repository: https://github.com/NIAID-Data-Ecosystem/nde-crawlers
 taxon:
 - NCBITaxon:9606
 creation_date: '2025-12-08T00:00:00Z'

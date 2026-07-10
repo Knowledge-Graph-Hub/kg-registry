@@ -1,6 +1,17 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: xueyu@hust.edu.cn
+  label: Yu Xue
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://biocuckoo.cn/
+  label: The CUCKOO Workgroup (BioCuckoo)
 creation_date: '2026-05-29T00:00:00Z'
 description: PTMD 2.0 is a human post-translational modification and disease association
   resource that integrates experimentally supported PTM-disease associations with

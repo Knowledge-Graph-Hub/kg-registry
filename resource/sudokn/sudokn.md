@@ -59,10 +59,23 @@ products:
   name: SUDOKN TPF
   description: Triple Pattern Fragments endpoint for SUDOKN
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/sudokn
   original_source:
   - source: sudokn
     relation_type: prov:hadPrimarySource
+publications:
+- id: https://doi.org/10.1007/978-3-031-71637-9_21
+  authors:
+  - Farhad Ameri
+  - Mukund Shenoy
+  - Ali Hasanzadeh
+  - Sambhav Kapoor
+  doi: 10.1007/978-3-031-71637-9_21
+  journal: Advances in Production Management Systems (APMS 2024), IFIP AICT 732
+  preferred: true
+  title: Open Manufacturing Capability Network Supported by Formal Ontologies
+  year: '2024'
 creation_date: '2025-12-08T00:00:00Z'
 last_modified_date: '2026-07-03T00:00:00Z'
 ---

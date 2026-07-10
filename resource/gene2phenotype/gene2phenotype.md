@@ -1,6 +1,17 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: hvf21@cam.ac.uk
+  label: Helen V. Firth
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: seh@ebi.ac.uk
+  label: Sarah E. Hunt
 creation_date: '2026-01-23T00:00:00Z'
 description: A curated gene-disease evidence resource linking genes, variant mechanisms,
   and clinical phenotypes to support rare disease interpretation.
@@ -13,6 +24,9 @@ id: gene2phenotype
 infores_id: gene2phenotype
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ebi.ac.uk/about/terms-of-use/
+  label: EMBL-EBI Terms of Use
 name: Gene2Phenotype
 products:
 - category: GraphicalInterface
@@ -202,6 +216,45 @@ products:
     source: orphanet
   product_file_size: 142045
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_trapi_edges.jsonl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/39506859
+  authors:
+  - T. Michael Yates
+  - Morad Ansari
+  - Louise Thompson
+  - Sarah E. Hunt
+  - Elena Cibrian Uhalte
+  - Rachel J. Hobson
+  - Joseph A. Marsh
+  - Caroline F. Wright
+  - Helen V. Firth
+  doi: 10.1186/s13073-024-01398-1
+  journal: Genome Medicine
+  preferred: true
+  title: Curating genomic disease-gene relationships with Gene2Phenotype (G2P)
+  year: '2024'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/31147538
+  authors:
+  - Anja Thormann
+  - Mihail Halachev
+  - William McLaren
+  - David J. Moore
+  - Victoria Svinti
+  - Archie Campbell
+  - Shona M. Kerr
+  - Marc Tischkowitz
+  - Sarah E. Hunt
+  - Malcolm G. Dunlop
+  - Matthew E. Hurles
+  - Caroline F. Wright
+  - Helen V. Firth
+  - Fiona Cunningham
+  - David R. FitzPatrick
+  doi: 10.1038/s41467-019-10016-3
+  journal: Nature Communications
+  title: Flexible and scalable diagnostic filtering of genomic variants using G2P with
+    Ensembl VEP
+  year: '2019'
 repository: https://github.com/EBI-G2P/gene2phenotype_api
 synonyms:
 - G2P

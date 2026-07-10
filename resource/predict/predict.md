@@ -1,6 +1,14 @@
 ---
 activity_status: inactive
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: roded@tauex.tau.ac.il
+  - contact_type: url
+    value: https://english.tau.ac.il/profile/roded
+  label: Roded Sharan
 creation_date: '2026-06-02T00:00:00Z'
 description: PREDICT is a computational drug-indication inference method and associated
   drug-disease gold-standard dataset introduced by Gottlieb and colleagues for large-scale
@@ -13,6 +21,9 @@ homepage_url: https://www.embopress.org/doi/abs/10.1038/msb.2011.26
 id: predict
 last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  label: CC BY-NC-SA 3.0
 name: PREDICT
 products:
 - category: DocumentationProduct
@@ -56,7 +67,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: predict
-  product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
+  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/
   secondary_source:
   - relation_type: prov:used
     source: drugbank
@@ -64,13 +75,6 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-02: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 404 error
-    when accessing file'
 - category: Product
   description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
     symptomatic, or non-indications

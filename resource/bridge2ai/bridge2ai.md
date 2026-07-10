@@ -90,6 +90,47 @@ products:
     source: orcid
   - relation_type: prov:wasInfluencedBy
     source: bridge2ai
+publications:
+- authors:
+  - Timothy Clark
+  - Harry Caufield
+  - Jillian A Parker
+  - Sadnan Al Manir
+  - Edilberto Amorim
+  - James Eddy
+  - Nayoon Gim
+  - Brian Gow
+  - Wesley Goar
+  - Jan N Hansen
+  - Nomi Harris
+  - Henning Hermjakob
+  - Marcin Joachimiak
+  - Gianna Jordan
+  - In-Hee Lee
+  - Shannon K McWeeney
+  - Camille Nebeker
+  - Milen Nikolov
+  - Sarah J Ratcliffe
+  - Justin Reese
+  - Jamie Shaffer
+  - Nathan Sheffield
+  - Gloria Sheynkman
+  - James Stevenson
+  - Jake Y Chen
+  - Chris Mungall
+  - Alex Wagner
+  - Sek Won Kong
+  - Satrajit S Ghosh
+  - Bhavesh Patel
+  - Andrew Williams
+  - Monica C Munoz-Torres
+  doi: 10.1101/2024.10.23.619844
+  id: https://www.ncbi.nlm.nih.gov/pubmed/39484409
+  journal: bioRxiv
+  preferred: true
+  title: 'AI-readiness for Biomedical Data: Bridge2AI Recommendations'
+  year: '2024'
+repository: https://github.com/bridge2ai
 synonyms:
 - Bridge2AI
 - Bridge to Artificial Intelligence

@@ -18,6 +18,9 @@ domains:
 homepage_url: https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/
 id: web-of-science
 last_modified_date: '2026-06-02T00:00:00Z'
+license:
+  id: https://clarivate.com/legal-center/terms-of-business/product-service-terms/
+  label: Clarivate — proprietary / subscription
 layout: resource_detail
 name: Web of Science
 products:

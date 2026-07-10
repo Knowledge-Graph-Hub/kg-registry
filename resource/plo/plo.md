@@ -10,10 +10,11 @@ contacts:
     value: mb4@sanger.ac.uk
   label: Matt Berriman
 creation_date: '2025-09-29T00:00:00Z'
-description: Description unavailable.
+description: A structured controlled vocabulary for the life cycle of the malaria
+  parasite Plasmodium. This ontology is obsolete/deprecated.
 domains:
 - anatomy and development
-homepage_url: http://www.sanger.ac.uk/Users/mb4/PLO/
+homepage_url: https://obofoundry.org/ontology/plo
 id: plo
 last_modified_date: '2026-05-31T00:00:00Z'
 layout: resource_detail

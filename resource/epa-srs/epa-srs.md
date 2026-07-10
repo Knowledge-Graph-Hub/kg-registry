@@ -16,10 +16,14 @@ homepage_url: https://cdxapps.epa.gov/oms-substance-registry-services/about-srs
 id: epa-srs
 last_modified_date: '2026-06-03T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://edg.epa.gov/epa_data_license.html
+  label: EPA Standard Open Data License
 name: EPA Substance Registry Services
 products:
   - category: GraphicalInterface
     description: Public EPA Substance Registry Services search interface for looking up substances tracked or regulated by EPA programs and other sources.
+    format: http
     id: epa-srs.search
     name: EPA SRS Search
     original_source:
@@ -28,6 +32,7 @@ products:
     product_url: https://cdxapps.epa.gov/oms-substance-registry-services/search
   - category: DocumentationProduct
     description: EPA overview page explaining Substance Registry Services as the central EPA system for substance information and program-list membership.
+    format: http
     id: epa-srs.about
     name: About EPA Substance Registry Services
     original_source:
@@ -36,6 +41,7 @@ products:
     product_url: https://cdxapps.epa.gov/oms-substance-registry-services/about-srs
   - category: ProgrammingInterface
     description: EPA SRS widget service for embedding a Substance Registry Services search box in external web pages.
+    format: http
     id: epa-srs.widget
     is_public: true
     name: EPA SRS Widget

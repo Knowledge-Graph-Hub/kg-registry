@@ -13,6 +13,9 @@ homepage_url: https://sites.broadinstitute.org/ccle/
 id: ccle
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: CCLE
 products:
 - category: DocumentationProduct

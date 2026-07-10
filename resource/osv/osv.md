@@ -17,6 +17,9 @@ homepage_url: https://osv.dev/
 id: osv
 last_modified_date: '2026-07-03T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/licenses/Apache-2.0
+  label: Apache-2.0
 name: OSV (Open Source Vulnerabilities)
 products:
 - category: GraphicalInterface
@@ -53,6 +56,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: osv
   product_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+repository: https://github.com/google/osv.dev
 ---
 ## OSV (Open Source Vulnerabilities)
 

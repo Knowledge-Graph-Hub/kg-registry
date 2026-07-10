@@ -21,7 +21,11 @@ homepage_url: http://vectology.mrcieu.ac.uk/
 id: vectology
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://spdx.org/licenses/GPL-3.0-only
+  label: GPL-3.0
 name: Vectology
+repository: https://github.com/MRCIEU/vectology
 products:
 - category: ProgrammingInterface
   description: Public API providing access to sentence embedding-based similarity
@@ -87,6 +91,18 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: https://docs.epigraphdb.org/graph-database/
+publications:
+- id: https://doi.org/10.1093/bioinformatics/btad169
+  authors:
+  - Yi Liu
+  - Benjamin L Elsworth
+  - Tom R Gaunt
+  doi: 10.1093/bioinformatics/btad169
+  journal: Bioinformatics
+  preferred: true
+  title: Using language models and ontology topology to perform semantic mapping of
+    traits between biomedical datasets
+  year: '2023'
 ---
 ## Overview
 

@@ -22,6 +22,9 @@ homepage_url: https://kgx-storage.rtx.ai/releases/
 id: translator
 last_modified_date: '2026-04-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/license/mit/
+  label: MIT
 name: NCATS Translator Graph Releases
 products:
 - category: GraphProduct
@@ -935,6 +938,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: translator
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
+publications:
+- authors:
+  - The Biomedical Data Translator Consortium
+  doi: 10.1111/cts.12591
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30412337
+  journal: Clinical and Translational Science
+  preferred: true
+  title: Toward A Universal Biomedical Data Translator
+  year: '2019'
+- authors:
+  - The Biomedical Data Translator Consortium
+  doi: 10.1111/cts.12592
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30412340
+  journal: Clinical and Translational Science
+  title: 'The Biomedical Data Translator Program: Conception, Culture, and Community'
+  year: '2019'
+repository: https://github.com/NCATSTranslator
 tags:
 - translator
 ---

@@ -1,6 +1,17 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: daniel.domingo.fernandez@scai.fraunhofer.de
+  label: Daniel Domingo-Fernández
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.scai.fraunhofer.de/
+  label: Fraunhofer SCAI
 creation_date: '2026-01-28T00:00:00Z'
 description: A pathway mapping and harmonization framework for integrating and comparing
   pathway knowledge across multiple pathway databases.
@@ -11,6 +22,9 @@ homepage_url: https://compath.scai.fraunhofer.de/
 id: compath
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/licenses/MIT
+  label: MIT License
 name: ComPath
 products:
 - category: GraphicalInterface
@@ -368,6 +382,7 @@ publications:
   title: 'ComPath: an ecosystem for exploring, analyzing, and curating mappings across
     pathway databases'
   year: '2019'
+repository: https://github.com/ComPath/ComPath
 synonyms:
 - ComPath
 ---
