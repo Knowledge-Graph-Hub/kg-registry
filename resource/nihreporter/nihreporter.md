@@ -22,6 +22,9 @@ homepage_url: https://reporter.nih.gov/
 id: nihreporter
 last_modified_date: '2025-09-24T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.usa.gov/government-works
+  label: U.S. Government Work (public domain)
 name: NIH Reporter
 products:
 - category: GraphicalInterface
@@ -64,6 +67,7 @@ products:
 - category: Product
   description: Database of patents linked to NIH-funded research projects
   id: nihreporter.patents
+  format: csv
   name: NIH-Funded Project Patents
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -72,6 +76,7 @@ products:
 - category: Product
   description: Database of clinical studies linked to NIH-funded research projects
   id: nihreporter.clinicalstudies
+  format: csv
   name: NIH-Funded Project Clinical Studies
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -89,6 +94,7 @@ products:
 - category: Product
   description: Database of publication link tables for NIH-funded research projects
   id: nihreporter.linktables
+  format: csv
   name: NIH-Funded Publications Link Tables
   original_source:
   - relation_type: prov:hadPrimarySource

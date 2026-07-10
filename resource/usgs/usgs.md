@@ -19,6 +19,9 @@ homepage_url: https://www.usgs.gov/
 id: usgs
 last_modified_date: '2026-07-03T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.usa.gov/government-works
+  label: U.S. Government Work (public domain)
 name: U.S. Geological Survey (USGS)
 products:
 - category: GraphicalInterface

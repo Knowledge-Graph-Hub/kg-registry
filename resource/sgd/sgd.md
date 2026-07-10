@@ -17,7 +17,11 @@ id: sgd
 infores_id: sgd
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 name: Saccharomyces Genome Database
+repository: https://github.com/yeastgenome/SGDBackend-Nex2
 products:
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,

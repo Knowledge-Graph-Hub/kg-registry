@@ -26,7 +26,11 @@ homepage_url: https://ncats.nih.gov/research/research-activities/translator/proj
 id: clinical-data-kp
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  label: CC BY-NC-SA 4.0
 name: Clinical Data KP
+repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 products:
   - category: GraphicalInterface
     description: Translator project portal describing clinical data provider activities.
@@ -46,6 +50,20 @@ products:
       - source: clinical-data-kp
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Data-Provider
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30480666
+    authors:
+      - Casey N. Ta
+      - Michel Dumontier
+      - George Hripcsak
+      - Nicholas P. Tatonetti
+      - Chunhua Weng
+    doi: 10.1038/sdata.2018.273
+    journal: Scientific Data
+    preferred: true
+    title: Columbia Open Health Data, clinical concept prevalence and co-occurrence
+      from electronic health records
+    year: '2018'
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-03-09T00:00:00Z'
