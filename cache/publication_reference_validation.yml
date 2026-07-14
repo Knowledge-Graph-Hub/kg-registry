@@ -446,6 +446,15 @@ entries:
     source_path: resource/biolink/biolink.md
     status: valid
     warnings: []
+  resource/biomarker/biomarker.md#publication[0]#DOI:10.64898/2026.01.26.701395:
+    checked_at: '2026-07-14T22:35:15Z'
+    errors: []
+    fingerprint: 202454183976690bb23e93f35fd04ea69787b4abc8a86e1d942477e40d18e66c
+    publication_index: 0
+    reference_id: DOI:10.64898/2026.01.26.701395
+    source_path: resource/biomarker/biomarker.md
+    status: valid
+    warnings: []
   resource/biomuta/biomuta.md#publication[0]#DOI:10.1093/nar/gkx907:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
