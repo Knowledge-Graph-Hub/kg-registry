@@ -21,7 +21,7 @@ domains:
 - immunology
 homepage_url: https://immport.niaid.nih.gov/home
 id: immport
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-07-14T00:00:00Z'
 layout: resource_detail
 license:
   id: https://docs.immport.org/home/agreement/
@@ -38,6 +38,51 @@ products:
   - relation_type: prov:hadPrimarySource
     source: immport
   product_url: https://immport.niaid.nih.gov/home
+- category: GraphicalInterface
+  description: The ImmPort Shared Data browser (Updated Data Browser) for searching
+    and browsing shared studies and downloading data as single files, download-cart
+    ZIP archives, or complete study (ALL_DATA) packages.
+  format: http
+  id: immport.databrowser
+  name: ImmPort Shared Data Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: immport
+  product_url: https://www.immport.org/shared
+- category: ProgrammingInterface
+  description: The ImmPort Shared Data API, a REST API providing programmatic access
+    to study manifests and file downloads. Requires a free ImmPort API key.
+  format: http
+  id: immport.api
+  is_public: true
+  name: ImmPort Shared Data API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: immport
+  product_url: https://immport.org/data/query/swagger-ui/index.html
+- category: ProgrammingInterface
+  description: The ImmPort GA4GH Data Repository Service (DRS) API, which resolves
+    logical file identifiers to physical download URLs (S3 signed URLs or streaming
+    URLs). Requires a free ImmPort API key.
+  connection_url: drs.immport.org/ga4gh/drs/v1/
+  format: http
+  id: immport.drs
+  is_public: true
+  name: ImmPort GA4GH DRS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: immport
+  product_url: https://drs.immport.org/ga4gh/drs/v1/
+- category: Product
+  description: The ImmPort Download Client, a cross-platform (Linux, macOS, Windows)
+    command-line tool that batch-downloads files from a manifest using GA4GH DRS
+    standard transfer methods. Requires a free ImmPort API key.
+  id: immport.download-client
+  name: ImmPort Download Client
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: immport
+  product_url: https://downloads.immport.org/immport-download-client/
 - category: GraphProduct
   description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
     dataset and computational-tool metadata harvested from NIAID-funded and globally-relevant
