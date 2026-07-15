@@ -1,14 +1,19 @@
 name: Dragon AI Agent GitHub Mentions
 
+# Temporarily deactivated to reduce noise: the upstream dragon-ai-agent
+# actions keep failing due to configuration we can't easily change here.
+# The automatic mention triggers below are disabled; the workflow only runs
+# when dispatched manually. To re-enable, restore the commented-out triggers.
 on:
-  issues:
-    types: [opened, edited]
-  issue_comment:
-    types: [created, edited]
-  pull_request:
-    types: [opened, edited]
-  pull_request_review_comment:
-    types: [created, edited]
+  workflow_dispatch:
+  # issues:
+  #   types: [opened, edited]
+  # issue_comment:
+  #   types: [created, edited]
+  # pull_request:
+  #   types: [opened, edited]
+  # pull_request_review_comment:
+  #   types: [created, edited]
 
 jobs:
   check-mention:
