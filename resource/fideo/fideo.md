@@ -37,11 +37,11 @@ products:
     source: fideo
   product_url: http://purl.obolibrary.org/obo/fideo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: GraphProduct
   compression: gzip

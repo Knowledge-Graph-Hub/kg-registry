@@ -40,9 +40,9 @@ products:
     source: netpath
   product_url: http://www.netpath.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 503 error
     when accessing file'
 - category: Product
   compression: gzip

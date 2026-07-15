@@ -9,6 +9,7 @@ name: pao.owl
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pao
+product_file_size: 360811
 product_url: http://purl.obolibrary.org/obo/po.owl
 warnings:
 - The original PAO OBO PURL (http_//purl.obolibrary.org/obo/pao.owl) no longer resolves

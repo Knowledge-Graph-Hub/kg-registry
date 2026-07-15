@@ -34,15 +34,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gcmd
   product_url: https://gcmd.earthdata.nasa.gov/KeywordViewer/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: Error connecting
-    to URL: HTTPSConnectionPool(host=''gcmd.earthdata.nasa.gov'', port=443): Max retries
-    exceeded with url: /KeywordViewer/ (Caused by NewConnectionError("HTTPSConnection(host=''gcmd.earthdata.nasa.gov'',
-    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
-    to URL: HTTPSConnectionPool(host=''gcmd.earthdata.nasa.gov'', port=443): Max retries
-    exceeded with url: /KeywordViewer/ (Caused by NewConnectionError("HTTPSConnection(host=''gcmd.earthdata.nasa.gov'',
-    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
+  warnings: []
 - category: GraphProduct
   description: RDF/Turtle knowledge graph integrating climate model and dataset metadata
     (from ESGF, CMIP controlled vocabularies, and the NASA GCMD keyword taxonomy)

@@ -32,9 +32,9 @@ products:
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/core/HUMAN/mono/HOCOMOCOv11_core_pwms_HUMAN_mono.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: HOCOMOCO v11 full collection human mononucleotide PWMs (flat text),
@@ -47,9 +47,9 @@ products:
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/full/HUMAN/mono/HOCOMOCOv11_full_pwms_HUMAN_mono.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: HOCOMOCO download portal with PWM/PCM models for human and mouse in

@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: cureid
 product_url: https://cure.ncats.io/about
-warnings:
-- File was not able to be retrieved when checked on 2026-07-03_ HTTP 404 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

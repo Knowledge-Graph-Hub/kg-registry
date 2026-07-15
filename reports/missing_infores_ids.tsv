@@ -57,7 +57,7 @@ biofactoid	Biofactoid	DataSource	https://biofactoid.org/	resource/biofactoid/bio
 biogps	BioGPS	Aggregator	http://biogps.org/	resource/biogps/biogps.md
 biohealth	Bio-Health KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/biohealth/	resource/biohealth/biohealth.md
 biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resource/biolink/biolink.md
-biomarker	BiomarkerKB	KnowledgeGraph	https://glygen.ccrc.uga.edu/frontend/home/	resource/biomarker/biomarker.md
+biomarker	BiomarkerKB	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarker/biomarker.md
 biomarkerkg	BiomarkerKB KG	KnowledgeGraph	https://biomarkerkb.org/home/	resource/biomarkerkg/biomarkerkg.md
 biomuta	BioMuta	DataSource	https://hivelab.biochemistry.gwu.edu/biomuta	resource/biomuta/biomuta.md
 bioteque	Bioteque	KnowledgeGraph	https://bioteque.irbbarcelona.org/	resource/bioteque/bioteque.md
@@ -464,7 +464,7 @@ nihreporter	NIH Reporter	DataSource	https://reporter.nih.gov/	resource/nihreport
 nij	National Institute of Justice	DataSource	https://nij.ojp.gov/	resource/nij/nij.md
 nikg	Neighborhood Information KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/neighborhood-kg/	resource/nikg/nikg.md
 nlm	National Library of Medicine	DataSource	https://www.nlm.nih.gov/	resource/nlm/nlm.md
-nlm-ckn	NLM-CKN	KnowledgeGraph		resource/nlm-ckn/nlm-ckn.md
+nlm-ckn	NLM-CKN	KnowledgeGraph	https://nlm-ckn.org	resource/nlm-ckn/nlm-ckn.md
 nmr	NMR-instrument specific component of metabolomics investigations	Ontology	http://msi-ontology.sourceforge.net/	resource/nmr/nmr.md
 noaa-hms	NOAA Hazard Mapping System Fire and Smoke Product	DataSource	https://www.ospo.noaa.gov/products/land/hms.html	resource/noaa-hms/noaa-hms.md
 noaa-ncei	NOAA National Centers for Environmental Information	DataSource	https://www.ncei.noaa.gov/	resource/noaa-ncei/noaa-ncei.md

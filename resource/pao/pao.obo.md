@@ -9,6 +9,7 @@ name: pao.obo
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pao
+product_file_size: 222891
 product_url: http://purl.obolibrary.org/obo/po.obo
 warnings:
 - The original PAO OBO PURL (http_//purl.obolibrary.org/obo/pao.obo) no longer resolves

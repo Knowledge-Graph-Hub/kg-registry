@@ -11,5 +11,8 @@ original_source:
 - relation_type: prov:wasDerivedFrom
   source: mesh
 product_url: https://github.com/biobricks-ai/mesh-kg
+warnings:
+- File was not able to be retrieved when checked on 2026-07-10_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

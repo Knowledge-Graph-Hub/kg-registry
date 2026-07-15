@@ -1014,13 +1014,13 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 500 error
     when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
@@ -1733,7 +1733,7 @@ products:
     source: cellxgene
   - relation_type: prov:hadPrimarySource
     source: pubmed
-  product_url: https://github.com/NIH-NLM/cell-kn-mvp
+  product_url: https://nlm-ckn.org
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: cl

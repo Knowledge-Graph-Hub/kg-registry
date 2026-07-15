@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: noncode
 product_url: http://www.noncode.org/download.php
-warnings:
-- File was not able to be retrieved when checked on 2026-07-03_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

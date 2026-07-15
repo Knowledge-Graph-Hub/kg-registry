@@ -53,11 +53,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gnps
   product_url: https://external.gnps2.org/gnpslibrary
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
-    to URL: HTTPSConnectionPool(host=''external.gnps2.org'', port=443): Max retries
-    exceeded with url: /gnpslibrary (Caused by NewConnectionError("HTTPSConnection(host=''external.gnps2.org'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  warnings: []
 - category: GraphProduct
   description: RDF knowledge graph materialized by the MetaBoKG workflow from public
     metabolomics repository outputs, GNPS molecular-networking jobs, annotation evidence,
@@ -171,9 +167,9 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: HTTP 406 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 406 error
     when accessing file'
 publications:
 - authors:

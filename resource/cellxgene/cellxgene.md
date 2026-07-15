@@ -24,7 +24,6 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: CZ CELLxGENE
-repository: https://github.com/chanzuckerberg/single-cell-data-portal
 products:
 - category: GraphicalInterface
   description: Main CZ CELLxGENE Discover portal for browsing public single-cell collections,
@@ -408,7 +407,7 @@ products:
     source: cellxgene
   - relation_type: prov:hadPrimarySource
     source: pubmed
-  product_url: https://github.com/NIH-NLM/cell-kn-mvp
+  product_url: https://nlm-ckn.org
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: cl
@@ -421,17 +420,18 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: hsapdv
 publications:
-- id: https://doi.org/10.1093/nar/gkae1142
-  authors:
+- authors:
   - Shibla Abdulla
   - Brian Aevermann
   - CZI Cell Science Program
   doi: 10.1093/nar/gkae1142
+  id: https://doi.org/10.1093/nar/gkae1142
   journal: Nucleic Acids Research
   preferred: true
   title: 'CZ CELLxGENE Discover: a single-cell data platform for scalable exploration,
     analysis and modeling of aggregated data'
   year: '2025'
+repository: https://github.com/chanzuckerberg/single-cell-data-portal
 ---
 # CZ CELLxGENE
 

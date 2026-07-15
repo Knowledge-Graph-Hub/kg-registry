@@ -11,7 +11,7 @@ original_source:
   source: gcmd
 product_url: https://gcmd.earthdata.nasa.gov/KeywordViewer/
 warnings:
-- File was not able to be retrieved when checked on 2026-07-03_ Error connecting to
+- File was not able to be retrieved when checked on 2026-07-10_ Error connecting to
   URL_ HTTPSConnectionPool(host='gcmd.earthdata.nasa.gov', port=443)_ Max retries
   exceeded with url_ /KeywordViewer/ (Caused by NewConnectionError("HTTPSConnection(host='gcmd.earthdata.nasa.gov',
   port=443)_ Failed to establish a new connection_ [Errno 101] Network is unreachable"))

@@ -54,9 +54,9 @@ products:
     source: sty
   product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: sty Nodes TSV

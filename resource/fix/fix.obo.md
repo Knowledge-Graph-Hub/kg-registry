@@ -9,7 +9,7 @@ original_source:
   source: fix
 product_url: http://purl.obolibrary.org/obo/fix.obo
 warnings:
-- File was not able to be retrieved when checked on 2026-07-03_ Error connecting to
+- File was not able to be retrieved when checked on 2026-07-10_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'
 layout: product_detail
 ---

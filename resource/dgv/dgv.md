@@ -45,6 +45,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-15: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources

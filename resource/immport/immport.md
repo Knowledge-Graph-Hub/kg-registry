@@ -61,10 +61,10 @@ products:
     source: immport
   product_url: https://immport.org/data/query/swagger-ui/index.html
 - category: ProgrammingInterface
+  connection_url: drs.immport.org/ga4gh/drs/v1/
   description: The ImmPort GA4GH Data Repository Service (DRS) API, which resolves
     logical file identifiers to physical download URLs (S3 signed URLs or streaming
     URLs). Requires a free ImmPort API key.
-  connection_url: drs.immport.org/ga4gh/drs/v1/
   format: http
   id: immport.drs
   is_public: true
@@ -75,13 +75,14 @@ products:
   product_url: https://drs.immport.org/ga4gh/drs/v1/
 - category: Product
   description: The ImmPort Download Client, a cross-platform (Linux, macOS, Windows)
-    command-line tool that batch-downloads files from a manifest using GA4GH DRS
-    standard transfer methods. Requires a free ImmPort API key.
+    command-line tool that batch-downloads files from a manifest using GA4GH DRS standard
+    transfer methods. Requires a free ImmPort API key.
   id: immport.download-client
   name: ImmPort Download Client
   original_source:
   - relation_type: prov:hadPrimarySource
     source: immport
+  product_file_size: 0
   product_url: https://downloads.immport.org/immport-download-client/
 - category: GraphProduct
   description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
@@ -115,8 +116,7 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: lincs
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/29485622
-  authors:
+- authors:
   - Sanchita Bhattacharya
   - Patrick Dunn
   - Cristel G. Thomas
@@ -131,6 +131,7 @@ publications:
   - Jeffrey Wiser
   - Atul J. Butte
   doi: 10.1038/sdata.2018.15
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29485622
   journal: Scientific Data
   preferred: true
   title: ImmPort, toward repurposing of open access immunological assay data for translational

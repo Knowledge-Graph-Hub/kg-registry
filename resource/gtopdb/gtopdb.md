@@ -60,9 +60,9 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: Complete list of ligands including drugs, small molecules, and other
@@ -75,9 +75,9 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: Comprehensive dataset of all interactions between ligands and targets
@@ -89,9 +89,9 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: Detailed interactions list for approved drugs and their targets
@@ -103,9 +103,9 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: SDF file containing chemical structures with SMILES for all ligands
@@ -118,9 +118,9 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: RDF/linked data format of the GtoPdb data (target-ligand interactions
@@ -133,9 +133,9 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: Complete PostgreSQL database dump of the current Guide to Pharmacology
@@ -148,9 +148,9 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: GraphicalInterface
   description: An extension of the Guide to PHARMACOLOGY database providing immunological
@@ -884,6 +884,116 @@ products:
     source: probe-miner
   product_file_size: 20140191116
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
+- category: Product
+  compression: gzip
+  description: PubChem substance information in ASN.1 format
+  format: xml
+  id: pubchem.substances.asn
+  name: PubChem Substances ASN
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: lipidmaps
+  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/ASN/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: clinvar
+  - relation_type: prov:wasInfluencedBy
+    source: dbsnp
+  - relation_type: prov:wasInfluencedBy
+    source: dgidb
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pharmgkb
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: unichem
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
+- category: Product
+  compression: gzip
+  description: PubChem substance information in SDF format
+  format: sdf
+  id: pubchem.substances.sdf
+  name: PubChem Substances SDF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: lipidmaps
+  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: clinvar
+  - relation_type: prov:wasInfluencedBy
+    source: dbsnp
+  - relation_type: prov:wasInfluencedBy
+    source: dgidb
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pharmgkb
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: unichem
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
 publications:
 - authors:
   - Harding SD

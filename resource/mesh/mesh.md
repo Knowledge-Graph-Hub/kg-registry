@@ -1248,11 +1248,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -1279,11 +1279,11 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -1313,11 +1313,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-03: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -2402,6 +2402,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
     SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -2484,6 +2486,116 @@ products:
     source: uberon
   - relation_type: prov:wasInfluencedBy
     source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
+- category: Product
+  compression: gzip
+  description: PubChem substance information in ASN.1 format
+  format: xml
+  id: pubchem.substances.asn
+  name: PubChem Substances ASN
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: lipidmaps
+  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/ASN/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: clinvar
+  - relation_type: prov:wasInfluencedBy
+    source: dbsnp
+  - relation_type: prov:wasInfluencedBy
+    source: dgidb
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pharmgkb
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: unichem
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: wikipathways
+- category: Product
+  compression: gzip
+  description: PubChem substance information in SDF format
+  format: sdf
+  id: pubchem.substances.sdf
+  name: PubChem Substances SDF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: lipidmaps
+  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: clinvar
+  - relation_type: prov:wasInfluencedBy
+    source: dbsnp
+  - relation_type: prov:wasInfluencedBy
+    source: dgidb
+  - relation_type: prov:wasInfluencedBy
+    source: mesh
+  - relation_type: prov:wasInfluencedBy
+    source: ncbigene
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  - relation_type: prov:wasInfluencedBy
+    source: pharmgkb
+  - relation_type: prov:wasInfluencedBy
+    source: reactome
+  - relation_type: prov:wasInfluencedBy
+    source: unichem
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
 publications:

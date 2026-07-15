@@ -6,7 +6,7 @@ id: hancestro-base.owl
 name: HANCESTRO Base
 product_url: http://purl.obolibrary.org/obo/hancestro-base.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-07-03_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-07-10_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

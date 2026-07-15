@@ -36,8 +36,8 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
-  id: ubkg.neo4j
   format: neo4j
+  id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -341,6 +341,22 @@ products:
     source: umls
   product_file_size: 5216
   product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/minio/downloads.json
+- category: GraphProduct
+  description: Neo4j knowledge graph built from curated BiomarkerKB data and integrated
+    into the CFDE Unified Biomedical Knowledge Graph (UBKG). The initial release comprises
+    over 300,000 nodes and 1.2 million edges.
+  edge_count: 1200000
+  format: neo4j
+  id: biomarker.kg
+  name: BiomarkerKB Knowledge Graph
+  node_count: 300000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  product_url: https://github.com/clinical-biomarkers/Knowledge-Graph
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: ubkg
 repository: https://github.com/x-atlas-consortia
 usages:
 - description: The Petagraph Knowledge Graph is built using UBKG as a scaffold.

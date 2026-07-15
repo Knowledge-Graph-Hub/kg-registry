@@ -57,9 +57,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inxight-drugs
   product_url: https://drugs.ncats.io
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
