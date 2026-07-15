@@ -41,6 +41,12 @@ logger = logging.getLogger(__name__)
 # the duplicate resource directory on the next run.
 SHORTNAME_ALIASES = {
     "ufokn": "uf-okn",
+    # BiomarkerKB KG (FRINK shortname "biomarkerkg") has been merged into the
+    # BiomarkerKB resource ("biomarker") to avoid confusion between the
+    # knowledgebase and its knowledge-graph representation. Syncing updates the
+    # "biomarker" page (e.g. its SPARQL/TPF endpoint URLs) instead of recreating
+    # a separate "biomarkerkg" resource directory.
+    "biomarkerkg": "biomarker",
 }
 
 
@@ -325,7 +331,10 @@ class FRINKSync:
         return merged
 
     def merge_resource_metadata(
-        self, existing_metadata: Dict[str, Any], synced_metadata: Dict[str, Any]
+        self,
+        existing_metadata: Dict[str, Any],
+        synced_metadata: Dict[str, Any],
+        preserve_identity: bool = False,
     ) -> Dict[str, Any]:
         if not existing_metadata:
             return copy.deepcopy(synced_metadata)
@@ -333,8 +342,15 @@ class FRINKSync:
         merged = copy.deepcopy(existing_metadata)
 
         for field in ["name", "description", "homepage_url", "activity_status", "category", "layout"]:
-            if synced_metadata.get(field):
-                merged[field] = synced_metadata[field]
+            if not synced_metadata.get(field):
+                continue
+            # When a FRINK entry has been aliased onto a canonical, curated
+            # resource (see SHORTNAME_ALIASES), the synced entry describes only
+            # one facet of that resource. Never let it overwrite the canonical
+            # resource's own identity fields; only backfill when missing.
+            if preserve_identity and merged.get(field):
+                continue
+            merged[field] = synced_metadata[field]
 
         merged["collection"] = self._merge_unique_lists(
             existing_metadata.get("collection"), synced_metadata.get("collection")
@@ -404,11 +420,15 @@ class FRINKSync:
     def sync_kg(self, frink_kg: Dict[str, Any], dry_run: bool = False) -> str:
         synced_metadata = self.transform_frink_to_kg_registry(frink_kg)
         resource_id = synced_metadata["id"]
+        raw_shortname = str(frink_kg.get("shortname", "")).strip()
+        is_alias = SHORTNAME_ALIASES.get(raw_shortname, raw_shortname) != raw_shortname
         resource_dir = self.registry_root / resource_id
         resource_file = resource_dir / f"{resource_id}.md"
 
         existing_metadata, existing_content = self._load_existing_post(resource_file)
-        merged_metadata = self.merge_resource_metadata(existing_metadata, synced_metadata)
+        merged_metadata = self.merge_resource_metadata(
+            existing_metadata, synced_metadata, preserve_identity=is_alias
+        )
 
         today_iso = self._today_iso()
         if existing_metadata.get("creation_date"):

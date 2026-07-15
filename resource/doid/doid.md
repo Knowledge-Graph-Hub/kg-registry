@@ -554,11 +554,11 @@ products:
   compression: zip
   description: Nodes from Human Disease Ontology
   format: csv
-  id: biomarkerkg.nodes.condition
+  id: biomarker.bkg.nodes.condition
   name: BKG Condition Nodes
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: biomarkerkg
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: doid
   product_file_size: 5501
@@ -2474,11 +2474,11 @@ products:
   description: Biomarker to Condition relationships (diagnostic_for, indicates_risk_of_developing,
     prognostic_for)
   format: csv
-  id: biomarkerkg.edges.condition
+  id: biomarker.bkg.edges.condition
   name: BKG Condition Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: biomarkerkg
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: doid
   product_file_size: 1204603

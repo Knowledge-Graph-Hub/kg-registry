@@ -48,11 +48,11 @@ products:
   compression: zip
   description: Nodes from OBCI
   format: csv
-  id: biomarkerkg.nodes.role
+  id: biomarker.bkg.nodes.role
   name: BKG Role Nodes
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: biomarkerkg
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: obci
   product_file_size: 276
@@ -61,11 +61,11 @@ products:
   compression: zip
   description: Biomarker to Role relationships (has_best_classification)
   format: csv
-  id: biomarkerkg.edges.role
+  id: biomarker.bkg.edges.role
   name: BKG Role Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: biomarkerkg
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: obci
   product_file_size: 355306

@@ -1,23 +1,40 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+collection:
+- okn
 contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jeetvora@gwu.edu
+  - contact_type: github
+    value: jeet-vora
+  label: Jeet Vora
 - category: Organization
   contact_details:
   - contact_type: url
     value: https://biomarkerkb.org/contact
   label: BiomarkerKB Team
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: avi.maayan@mssm.edu
+  label: MaayanLab
 creation_date: '2025-05-29T00:00:00Z'
 description: BiomarkerKB is a Common Fund Data Ecosystem (CFDE) sponsored project
   to develop a knowledgebase that organizes and integrates biomarker data from different
   public sources, providing researchers with comprehensive, integrated access to biomarker
-  information.
+  information. This resource also covers the BiomarkerKB Knowledge Graph (BKG), the
+  graph representation of BiomarkerKB data (formerly registered separately as
+  `biomarkerkg`), which is available as an interactive explorer, downloadable node
+  and edge datasets, and OKN/FRINK SPARQL and Triple Pattern Fragments endpoints.
 domains:
 - biomedical
 - biological systems
 homepage_url: https://biomarkerkb.org/
 id: biomarker
-last_modified_date: '2026-07-14T00:00:00Z'
+last_modified_date: '2026-07-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -92,6 +109,178 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biomarker
   product_url: https://github.com/clinical-biomarkers/biomarker-partnership
+- category: GraphicalInterface
+  description: Web interface to explore and query the BiomarkerKB Knowledge Graph (BKG),
+    the MaayanLab-built graph representation of BiomarkerKB data.
+  format: http
+  id: biomarker.bkg.explorer
+  name: BKG Explorer
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  product_url: https://bkg.dev.maayanlab.cloud/
+  repository: https://github.com/MaayanLab/BiomarkerKG
+- category: GraphProduct
+  compression: zip
+  description: Nodes from Uber-Anatomy Ontology
+  format: csv
+  id: biomarker.bkg.nodes.anatomy
+  name: BKG Anatomy Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 332
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
+- category: GraphProduct
+  compression: zip
+  description: Nodes from GlyGen Biomarker Database
+  format: csv
+  id: biomarker.bkg.nodes.biomarker
+  name: BKG Biomarker Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  product_file_size: 1252064
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
+- category: GraphProduct
+  compression: zip
+  description: Nodes from PubChem Database
+  format: csv
+  id: biomarker.bkg.nodes.compound
+  name: BKG Compound Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_file_size: 871
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
+- category: GraphProduct
+  compression: zip
+  description: Nodes from Human Disease Ontology
+  format: csv
+  id: biomarker.bkg.nodes.condition
+  name: BKG Condition Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  product_file_size: 5501
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
+- category: GraphProduct
+  compression: zip
+  description: Nodes from OBCI
+  format: csv
+  id: biomarker.bkg.nodes.role
+  name: BKG Role Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: obci
+  product_file_size: 276
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.nodes.zip
+- category: GraphProduct
+  compression: zip
+  description: Nodes from dbSNP
+  format: csv
+  id: biomarker.bkg.nodes.variant
+  name: BKG Variant Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  product_file_size: 782975
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.nodes.zip
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Anatomy relationships (determined_using_sample_from)
+  format: csv
+  id: biomarker.bkg.edges.anatomy
+  name: BKG Anatomy Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1229
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.edges.zip
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Compound relationships (indicated_by_above_normal_level_of,
+    indicated_by_below_normal_level_of)
+  format: csv
+  id: biomarker.bkg.edges.compound
+  name: BKG Compound Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_file_size: 1333
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.edges.zip
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Condition relationships (diagnostic_for, indicates_risk_of_developing,
+    prognostic_for)
+  format: csv
+  id: biomarker.bkg.edges.condition
+  name: BKG Condition Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  product_file_size: 1204603
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.edges.zip
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Role relationships (has_best_classification)
+  format: csv
+  id: biomarker.bkg.edges.role
+  name: BKG Role Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: obci
+  product_file_size: 355306
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.edges.zip
+- category: GraphProduct
+  compression: zip
+  description: Biomarker to Variant relationships (indicated_by_presence_of)
+  format: csv
+  id: biomarker.bkg.edges.variant
+  name: BKG Variant Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  product_file_size: 1067491
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
+- category: ProgrammingInterface
+  description: SPARQL endpoint for BiomarkerKB KG
+  id: biomarker.sparql
+  name: BiomarkerKB KG SPARQL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  product_url: https://apps.okn.us/biomarkerkg/sparql
+- category: ProgrammingInterface
+  description: Triple Pattern Fragments endpoint for BiomarkerKB KG
+  id: biomarker.tpf
+  name: BiomarkerKB KG TPF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  product_url: https://apps.okn.us/ldf/biomarkerkg
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
