@@ -62,7 +62,6 @@ jQuery(document).ready(function () {
 
     // Cache frequently accessed DOM elements
     const $tableDiv = $("#tableDiv");
-    const $tableMain = $('#table-main');
     const $searchVal = $("#searchVal");
     const $ddDomains = $("#dd-domains");
     const $ddResourceTypes = $("#dd-resourcetypes");
@@ -276,7 +275,7 @@ jQuery(document).ready(function () {
         const header = domain ? `<div class="p-1 bg-light"><strong>${capitalize(tableDomains)}</strong></div>` : '';
         return `${header}
                 <div class="registry-table-wrapper">
-                <table id="ont_table" class="table table-hover sortable">
+                <table id="ont_table" class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col" style="width: 15%; vertical-align: middle;">
@@ -435,14 +434,6 @@ jQuery(document).ready(function () {
         }
     }
 
-    // Lazily initialize sortable tables
-    function initSortableTables() {
-        const sortableTables = document.querySelectorAll('table.sortable');
-        for (let i = 0; i < sortableTables.length; i++) {
-            new SortableTable(sortableTables[i]);
-        }
-    }
-
     // constrain status values, make them sortable
     const DashboardStatus = {
         PASS: 5,  // all checks pass
@@ -454,139 +445,216 @@ jQuery(document).ready(function () {
     };
 
     /**
-     * Optimize renderTable function for faster rendering by:
-     * 1. Splitting rendering into chunks for large datasets
-     * 2. Using document fragments for DOM operations
-     * 3. Loading dashboard data asynchronously in parallel
+     * Rendering strategy: the filtered dataset is kept in memory and only a
+     * batch of rows is put in the DOM at a time, with more appended as the user
+     * scrolls. Building the row HTML string for ~1000 rows costs ~16ms, but
+     * inserting them (~2MB of HTML, 8000+ cells) costs ~600ms and is paid again
+     * on every filter change -- so the fix is to not create the nodes at all
+     * until they are needed. See issue #662.
+     *
+     * Because only part of the table is in the DOM, sorting cannot be done by
+     * reordering rows (what sorttable.js did); it sorts the dataset and
+     * re-renders from the top.
      */
-    function renderTable(data) {
-        // Show loading indicator right away
-        $tableDiv.html(
-            `<div class="loading-indicator" role="status" aria-live="polite">
-                <div class="spinner-border spinner-border-sm text-primary me-2" aria-hidden="true"></div>
-                Loading resources…
-            </div>`
-        );
+    const ROWS_PER_BATCH = 60;
+    // How far below the viewport the sentinel is pulled in, in px. Larger means
+    // rows are ready before the user reaches them, at the cost of more DOM.
+    const SCROLL_PREFETCH_PX = 800;
 
-        // Initialize total resource count
-        let totalCount = 0;
-        let totalKgCount = 0;
-        if (data && Array.isArray(data)) {
-            totalCount = data.length;
-            totalKgCount = data.filter(x => x.category && x.category.toLowerCase() === 'knowledgegraph').length;
+    const renderState = {
+        rows: [],          // the full filtered+sorted dataset
+        rendered: 0,       // how many of those are currently in the DOM
+        sortField: null,
+        sortDir: 'ascending',
+        observer: null,
+    };
+
+    // The value a row is sorted by, for each sortable column. Must mirror what
+    // createTableRow actually displays in that column.
+    function sortValue(item, field) {
+        if (field === 'license') {
+            return ((item.license && item.license.label) || '').toLowerCase();
         }
+        return ((item && item[field]) || '').toString().toLowerCase();
+    }
 
-        // Check if data is valid before processing
-        if (!data || !Array.isArray(data) || data.length === 0) {
-            $tableDiv.html('<div class="alert alert-info">No resources found - please try another search.</div>');
-            $tableMain.css('display', 'block');
-            updateResourceCount(0, totalCount, 0, totalKgCount);
-            return;
+    function sortRows(rows) {
+        if (!renderState.sortField) {
+            return rows;
         }
-
-        // Update resource count immediately
-        updateResourceCount(totalCount, totalCount, totalKgCount, totalKgCount);
-
-        // Preprocess data before manipulation
-        const processedData = data.map(item => {
-            const id = item.id || '';
-            const is_inactive = item.activity_status === "inactive" || item.activity_status === "orphaned" ? "inactive_row" : "";
-            const is_obsolete = item.is_obsolete ? "(obsolete)" :
-                (item.activity_status === "inactive" || item.activity_status === "orphaned") ?
-                    `(${item.activity_status})` : "";
-
-            // Pre-compute domain for faster sorting
-            const domainValues = Array.isArray(item.domains) ?
-                item.domains.map(d => d.trim()) :
-                Array.isArray(item.domain) ? // Backward compatibility
-                    item.domain.map(d => d.trim()) :
-                    [(item.domains ? item.domains.trim() :
-                        item.domain ? item.domain.trim() : "Unknown")];
-
-            return {
-                item,
-                id,
-                is_inactive,
-                is_obsolete,
-                domainValues,
-                domainValue: domainValues[0] // Keep for backward compatibility
-            };
+        const field = renderState.sortField;
+        const direction = renderState.sortDir === 'ascending' ? 1 : -1;
+        // Sort a copy: the caller's array is the filter output, not ours to reorder.
+        return rows.slice().sort((a, b) => {
+            const av = sortValue(a, field);
+            const bv = sortValue(b, field);
+            if (av === bv) return 0;
+            return av < bv ? -direction : direction;
         });
+    }
 
-        // Separate dashboard data fetch from the rendering
-        setTimeout(() => {
-            renderBasicTable(processedData);
-        }, 0);
+    function rowHtml(item) {
+        const id = item.id || '';
+        const is_inactive = (item.activity_status === "inactive" || item.activity_status === "orphaned")
+            ? "inactive_row" : "";
+        const is_obsolete = item.is_obsolete ? "(obsolete)" :
+            (item.activity_status === "inactive" || item.activity_status === "orphaned") ?
+                `(${item.activity_status})` : "";
+        return createTableRow(item, id, is_inactive, is_obsolete);
+    }
 
-        // If dashboard data should be loaded, do it asynchronously
-        if (typeof shouldFetchDashboardData !== 'undefined' && shouldFetchDashboardData) {
-            setTimeout(() => {
-                fetchAndProcessDashboardData(data);
-            }, 50);
+    // Reflect the current sort on the freshly rendered header
+    function applySortIndicators() {
+        $tableDiv.find('#ont_table thead th').each(function () {
+            const $th = $(this);
+            const $button = $th.find('.sort-button');
+            if (!$button.length) return;
+
+            const $icon = $button.find('i');
+            if ($button.data('sort') === renderState.sortField) {
+                $th.attr('aria-sort', renderState.sortDir);
+                $icon.attr('class', renderState.sortDir === 'ascending'
+                    ? 'bi-chevron-up' : 'bi-chevron-down');
+            } else {
+                $th.removeAttr('aria-sort');
+                $icon.attr('class', 'bi-chevron-up');
+            }
+        });
+    }
+
+    function updateSentinel() {
+        const remaining = renderState.rows.length - renderState.rendered;
+        const $sentinel = $('#table-sentinel');
+        if (!$sentinel.length) return;
+
+        if (remaining > 0) {
+            $sentinel.html(
+                `<div class="loading-indicator">
+                    <div class="spinner-border spinner-border-sm text-primary me-2" aria-hidden="true"></div>
+                    Loading ${remaining} more…
+                </div>`
+            );
+        } else {
+            // Everything is rendered; say so rather than leaving a dangling spinner
+            $sentinel.html(renderState.rows.length
+                ? `<div class="text-muted text-center py-2"><small>All ${renderState.rows.length} shown</small></div>`
+                : '');
         }
     }
 
-    // Render the basic table structure without waiting for dashboard data
-    function renderBasicTable(processedData) {
-        // Check data again before processing
-        if (!processedData || !Array.isArray(processedData) || processedData.length === 0) {
-            $tableDiv.html('<div class="alert alert-info">No resources found matching your criteria.</div>');
-            $tableMain.css('display', 'block');
+    function appendNextBatch() {
+        const tbody = document.querySelector('#ont_table tbody');
+        if (!tbody) return false;
+
+        const start = renderState.rendered;
+        const end = Math.min(start + ROWS_PER_BATCH, renderState.rows.length);
+        if (start >= end) return false;
+
+        let html = '';
+        for (let i = start; i < end; i++) {
+            html += rowHtml(renderState.rows[i]);
+        }
+        tbody.insertAdjacentHTML('beforeend', html);
+        renderState.rendered = end;
+        return true;
+    }
+
+    /**
+     * Append batches until the sentinel is pushed below the prefetch line.
+     * IntersectionObserver only fires on intersection *changes*, so if one batch
+     * is too short to push the sentinel out of view it would never fire again
+     * and loading would stall. This tops up until it does.
+     */
+    function fillViewport() {
+        const sentinel = document.getElementById('table-sentinel');
+        if (!sentinel) return;
+
+        let guard = 0;
+        while (renderState.rendered < renderState.rows.length && guard++ < 100) {
+            if (sentinel.getBoundingClientRect().top > window.innerHeight + SCROLL_PREFETCH_PX) {
+                break;
+            }
+            if (!appendNextBatch()) break;
+        }
+        updateSentinel();
+    }
+
+    function observeSentinel() {
+        if (renderState.observer) {
+            renderState.observer.disconnect();
+        }
+        const sentinel = document.getElementById('table-sentinel');
+        if (!sentinel || typeof IntersectionObserver === 'undefined') {
+            // No IntersectionObserver (or no sentinel): fall back to rendering
+            // everything so the table is never silently truncated.
+            while (appendNextBatch()) { /* keep going */ }
+            updateSentinel();
+            return;
+        }
+
+        renderState.observer = new IntersectionObserver(entries => {
+            if (entries.some(entry => entry.isIntersecting)) {
+                fillViewport();
+            }
+        }, { rootMargin: SCROLL_PREFETCH_PX + 'px' });
+
+        renderState.observer.observe(sentinel);
+    }
+
+    /**
+     * Render the filtered dataset.
+     * @param {Array} data filtered resources
+     */
+    function renderTable(data) {
+        if (!data || !Array.isArray(data) || data.length === 0) {
+            if (renderState.observer) renderState.observer.disconnect();
+            renderState.rows = [];
+            renderState.rendered = 0;
+            $tableDiv.html('<div class="alert alert-info">No resources found - please try another search.</div>');
             updateResourceCount(0, window.totalResourceCount || 0, 0, window.totalKgCount || 0);
             return;
         }
 
-        // Count Knowledge Graphs in filtered data
-        const kgCount = processedData.filter(x => x.item && x.item.category && x.item.category.toLowerCase() === 'knowledgegraph').length;
+        const kgCount = data.filter(x => x.category && x.category.toLowerCase() === 'knowledgegraph').length;
+        updateResourceCount(
+            data.length, window.totalResourceCount || data.length,
+            kgCount, window.totalKgCount || kgCount
+        );
 
-        // Update the count with filtered data length
-        updateResourceCount(processedData.length, window.totalResourceCount || processedData.length, kgCount, window.totalKgCount || kgCount);
+        renderState.rows = sortRows(data);
+        renderState.rendered = 0;
 
-        let table = '';
-
-        // Process in chunks for large datasets (improves responsiveness)
-        const CHUNK_SIZE = 50;
-        const processChunk = (startIndex) => {
-            const endIndex = Math.min(startIndex + CHUNK_SIZE, processedData.length);
-
-            for (let i = startIndex; i < endIndex; i++) {
-                const item = processedData[i];
-                // Skip undefined items
-                if (!item) continue;
-
-                const { item: originalItem, id, is_inactive, is_obsolete, domainValues } = item;
-                const template = createTableRow(originalItem, id, is_inactive, is_obsolete);
-
-                // Always render as a flat list (no grouping)
-                table += template;
-            }
-
-            // If more chunks to process, schedule next chunk
-            if (endIndex < processedData.length) {
-                setTimeout(() => processChunk(endIndex), 0);
-            } else {
-                finishRendering();
-            }
-        };
-
-        // Handle completion of all chunks
-        const finishRendering = () => {
-            if (table.length === 0) {
-                $tableDiv.html('<div class="alert alert-info">No resources found matching your criteria.</div>');
-            } else {
-                $tableDiv.html(tableHtml(table, false, ""));
-            }
-
-            // Initialize sortable tables after content is added
-            initSortableTables();
-
-            // Show the main table
-            $tableMain.css('display', 'block');
-        };
-
-        // Start processing the first chunk
-        processChunk(0);
+        // Header + empty tbody; rows are appended in batches below.
+        $tableDiv.html(tableHtml('', false, '') + '<div id="table-sentinel"></div>');
+        applySortIndicators();
+        fillViewport();
+        observeSentinel();
     }
+
+    // Re-render from the top with the current sort applied, reusing the
+    // dataset already in memory (no refiltering needed).
+    function resortAndRerender() {
+        renderState.rows = sortRows(renderState.rows);
+        renderState.rendered = 0;
+        $('#ont_table tbody').empty();
+        applySortIndicators();
+        fillViewport();
+        observeSentinel();
+    }
+
+    // Delegated so it survives the table being re-rendered
+    $tableDiv.on('click', '.sort-button', function () {
+        const field = $(this).data('sort');
+        if (!field) return;
+
+        if (renderState.sortField === field) {
+            renderState.sortDir = renderState.sortDir === 'ascending' ? 'descending' : 'ascending';
+        } else {
+            renderState.sortField = field;
+            renderState.sortDir = 'ascending';
+        }
+        resortAndRerender();
+    });
 
     // Get dashboard data in the background
     function fetchAndProcessDashboardData(data) {
@@ -878,33 +946,18 @@ jQuery(document).ready(function () {
     // Run search initialization
     search();
 
-    // The main table only needs a few fields per resource, so it loads a slim
-    // summary (registry/kgs-summary.json, generated by util/make_summary_json.py)
-    // rather than the full ~30 MB kgs.jsonld. Fall back to the full file if the
-    // summary is unavailable, e.g. on a deployment built before it existed.
-    const SUMMARY_URL = 'registry/kgs-summary.json';
-    const FULL_URL = 'registry/kgs.jsonld';
-
+    // The registry fetch is started by assets/js/registry-data.js, which loads
+    // before jQuery so the request goes out in parallel with the CDN scripts
+    // instead of waiting for them. See issue #662.
     function fetchRegistryData() {
-        return fetch(SUMMARY_URL)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`${response.status} ${response.statusText}`);
-                }
-                return response.json();
-            })
-            .catch(error => {
-                console.warn(
-                    `Could not load ${SUMMARY_URL} (${error.message}); ` +
-                    `falling back to ${FULL_URL}. This is slower.`
-                );
-                return fetch(FULL_URL).then(response => {
-                    if (!response.ok) {
-                        throw new Error(`${FULL_URL}: ${response.status} ${response.statusText}`);
-                    }
-                    return response.json();
-                });
-            });
+        if (window.KGRegistryData) {
+            return window.KGRegistryData.take();
+        }
+        // registry-data.js failed to load; surface that rather than silently
+        // rendering an empty registry.
+        return Promise.reject(new Error(
+            'registry-data.js did not load, so the registry data was never requested'
+        ));
     }
 
     // Show a clearly-distinct failure state. This must not be confusable with
@@ -948,9 +1001,6 @@ jQuery(document).ready(function () {
         if (!data || !Array.isArray(data.resources)) {
             throw new Error('Registry data is missing its list of resources');
         }
-
-        // Show table container immediately
-        $tableMain.css('display', 'block');
 
         console.log('Data loaded: total resources =', data.resources.length);
 
@@ -1038,16 +1088,6 @@ jQuery(document).ready(function () {
         $ddEvaluation.on("change", filterHandler);
         $ddTaxa.on("change", filterHandler);
         $searchVal.on("keyup", filterHandler);
-
-        // Create observer for table sorting
-        const observer = new MutationObserver(function () {
-            initSortableTables();
-        });
-
-        observer.observe($tableDiv[0], {
-            childList: true,
-            subtree: true
-        });
 
         // Trigger initial filter to apply default exclusions
         filterHandler();

@@ -2,6 +2,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+{% if page.url == "/" %}
+<!-- MUST stay above the stylesheet links below: a parser-inserted script waits
+     for pending stylesheets before executing, and the CDN CSS can take seconds.
+     Placed here, the registry data request goes out immediately instead of
+     queueing behind the CSS. Home page only -- no other page reads this data.
+     See issue #662 and assets/js/registry-data.js. -->
+<script src="{{ site.baseurl }}/assets/js/registry-data.js"></script>
+{% endif %}
+
 <!-- Favicons -->
 <link rel="icon" type="image/png" sizes="32x32" href="/kg-registry/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/kg-registry/images/favicon-16x16.png">
@@ -161,6 +170,11 @@ Custom blockquote formatting
     justify-content: center;
     padding: 2rem 1rem;
     color: #6c757d;
+}
+
+/* Marks the end of the rendered rows; rows are appended as it comes into view */
+#table-sentinel .loading-indicator {
+    padding: 1rem;
 }
 
 .registry-filter {
