@@ -6,8 +6,8 @@
     ]
 </div>
 <div class="mb-2 registry-counts">
-    <span id="resource-count" class="badge bg-primary" style="font-size: 1rem;">0 resources</span>
-    <span id="kg-count" class="badge bg-success" style="font-size: 1rem;">0 KGs</span>
+    <span id="resource-count" class="badge bg-secondary" style="font-size: 1rem;">Loading resources…</span>
+    <span id="kg-count" class="badge bg-secondary" style="font-size: 1rem;">Loading KGs…</span>
     <span class="text-muted" style="font-size: 0.9rem;">
         Legend:
         <span class="ms-0" style="text-decoration: underline dotted; cursor: help;"
@@ -99,9 +99,17 @@
     <div id="collection-description-container" class="alert alert-info mt-2 mb-3" style="display: none;">
         <span id="collection-description-text"></span>
     </div>
+    <!-- Non-fatal warnings (e.g. a filter's supporting data failed to load) -->
+    <div id="registry-warning-container" class="mt-2 mb-3" role="status" aria-live="polite"></div>
     <!-- Search and table -->
     <div class="search-result-wrapper">
         <input type="text" class="form-control" id="searchVal" placeholder="Search table ..." />
-        <div id="tableDiv" class="mt-3"></div>
+        <div id="tableDiv" class="mt-3">
+            <!-- Replaced by custom.js once the registry data has loaded (or failed to load) -->
+            <div class="loading-indicator" role="status" aria-live="polite">
+                <div class="spinner-border spinner-border-sm text-primary me-2" aria-hidden="true"></div>
+                Loading registry data…
+            </div>
+        </div>
     </div>
 </div>

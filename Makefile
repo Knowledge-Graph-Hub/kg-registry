@@ -66,6 +66,7 @@ all: \
 	sync-obo-foundry \
 	_config.yml \
 	registry/kgs.jsonld \
+	registry/kgs-summary.json \
 	registry/kgs.ttl \
 	registry/parquet \
 	registry/taxon_mapping.yaml \
@@ -142,7 +143,7 @@ $(SOURCE_SCHEMA_ALL):
 # Remove and/or revert all targets to their repository versions
 clean:
 	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/organizations.yml registry/parquet registry/taxon_mapping.yaml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
-	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml
+	git checkout _config.yml registry/kgs.jsonld registry/kgs-summary.json registry/kgs.yml
 
 clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
@@ -211,6 +212,12 @@ $(DUCKDB_WASM_FILES):
 # Use a generic yaml->json conversion, but adding a @content
 registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
+
+# Slim summary JSON with only the fields the home page table needs.
+# The full kgs.jsonld is ~30 MB; this is a fraction of that size so the
+# main page loads quickly. See util/make_summary_json.py.
+registry/kgs-summary.json: registry/kgs.yml
+	./util/make_summary_json.py $< > $@.tmp && mv $@.tmp $@
 
 # Generate Turtle RDF serialization from YAML
 registry/kgs.ttl: registry/kgs.yml
