@@ -16,7 +16,7 @@ original_source:
   source: cellxgene
 - relation_type: prov:hadPrimarySource
   source: pubmed
-product_url: https://github.com/NIH-NLM/cell-kn-mvp
+product_url: https://nlm-ckn.org
 secondary_source:
 - relation_type: prov:wasInfluencedBy
   source: cl
