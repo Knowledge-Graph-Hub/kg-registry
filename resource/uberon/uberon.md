@@ -937,11 +937,11 @@ products:
   compression: zip
   description: Nodes from Uber-Anatomy Ontology
   format: csv
-  id: biomarkerkg.nodes.anatomy
+  id: biomarker.bkg.nodes.anatomy
   name: BKG Anatomy Nodes
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: biomarkerkg
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: uberon
   product_file_size: 332
@@ -2914,11 +2914,11 @@ products:
   compression: zip
   description: Biomarker to Anatomy relationships (determined_using_sample_from)
   format: csv
-  id: biomarkerkg.edges.anatomy
+  id: biomarker.bkg.edges.anatomy
   name: BKG Anatomy Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: biomarkerkg
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: uberon
   product_file_size: 1229

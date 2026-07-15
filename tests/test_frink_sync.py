@@ -2,6 +2,8 @@
 
 import copy
 
+from util.sync_frink import SHORTNAME_ALIASES
+
 def test_transform_frink_entry_to_resource(frink_syncer, frink_entry_example):
     resource = frink_syncer.transform_frink_to_kg_registry(frink_entry_example)
 
@@ -82,3 +84,79 @@ def test_merge_backfills_missing_domains_from_frink_sync(
     )
 
     assert merged["domains"] == ["general"]
+
+
+def test_aliased_shortname_transforms_to_canonical_id(frink_syncer):
+    """A FRINK shortname aliased to a merged resource resolves to the canonical id."""
+    assert SHORTNAME_ALIASES.get("biomarkerkg") == "biomarker"
+
+    entry = {
+        "shortname": "biomarkerkg",
+        "title": "BiomarkerKB KG",
+        "description": "The BiomarkerKB knowledge graph.",
+        "homepage": "https://biomarkerkb.org/home/",
+        "sparql": "https://apps.okn.us/biomarkerkg/sparql",
+        "tpf": "https://apps.okn.us/ldf/biomarkerkg",
+        "contact": {"label": "Jeet Vora", "email": "jeetvora@gwu.edu", "github": "jeet-vora"},
+    }
+    resource = frink_syncer.transform_frink_to_kg_registry(entry)
+
+    # Targets the canonical resource, not a new "biomarkerkg" directory.
+    assert resource["id"] == "biomarker"
+    # Endpoint product ids use the canonical id so they merge in place.
+    assert {p["id"] for p in resource["products"]} == {"biomarker.sparql", "biomarker.tpf"}
+
+
+def test_merge_preserve_identity_keeps_canonical_fields(
+    frink_syncer, frink_existing_resource_example
+):
+    """When a FRINK entry is aliased onto a curated resource, its identity fields
+    (name/description/homepage) must not be overwritten, but products still merge."""
+    synced = {
+        "id": "prokn",
+        "name": "BiomarkerKB KG",
+        "description": "Different description from the merged duplicate.",
+        "homepage_url": "https://biomarkerkb.org/home/",
+        "activity_status": "active",
+        "products": [
+            {
+                "id": "prokn.sparql",
+                "name": "BiomarkerKB KG SPARQL",
+                "description": "SPARQL endpoint for BiomarkerKB KG",
+                "category": "ProgrammingInterface",
+                "product_url": "https://apps.okn.us/biomarkerkg/sparql",
+                "original_source": [{"source": "prokn", "relation_type": "prov:hadPrimarySource"}],
+            }
+        ],
+    }
+
+    merged = frink_syncer.merge_resource_metadata(
+        frink_existing_resource_example, synced, preserve_identity=True
+    )
+
+    # Canonical identity preserved.
+    assert merged["name"] == "Old ProKN"
+    assert merged["description"] == "Old description."
+    assert merged["homepage_url"] == "https://old.example.org"
+    # Products still merged (endpoint url updated in place, no duplicate).
+    merged_products = {p["id"]: p for p in merged["products"]}
+    assert set(merged_products) == {"prokn.graph", "prokn.sparql"}
+    assert merged_products["prokn.sparql"]["product_url"] == "https://apps.okn.us/biomarkerkg/sparql"
+
+
+def test_merge_without_preserve_identity_still_overwrites(
+    frink_syncer, frink_existing_resource_example
+):
+    """Non-aliased entries keep the original overwrite behavior."""
+    synced = {
+        "id": "prokn",
+        "name": "New Name",
+        "description": "New description.",
+        "homepage_url": "https://new.example.org",
+    }
+    merged = frink_syncer.merge_resource_metadata(
+        frink_existing_resource_example, synced, preserve_identity=False
+    )
+    assert merged["name"] == "New Name"
+    assert merged["description"] == "New description."
+    assert merged["homepage_url"] == "https://new.example.org"

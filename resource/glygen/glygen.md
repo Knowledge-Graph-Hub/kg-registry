@@ -56,11 +56,11 @@ products:
   compression: zip
   description: Nodes from GlyGen Biomarker Database
   format: csv
-  id: biomarkerkg.nodes.biomarker
+  id: biomarker.bkg.nodes.biomarker
   name: BKG Biomarker Nodes
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: biomarkerkg
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: glygen
   product_file_size: 1252064
