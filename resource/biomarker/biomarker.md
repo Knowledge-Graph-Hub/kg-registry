@@ -11,7 +11,9 @@ creation_date: '2025-05-29T00:00:00Z'
 description: BiomarkerKB is a Common Fund Data Ecosystem (CFDE) sponsored project
   to develop a knowledgebase that organizes and integrates biomarker data from different
   public sources, providing researchers with comprehensive, integrated access to biomarker
-  information.
+  information. Note that BiomarkerKB (this resource, id `biomarker`) is the source
+  knowledgebase and is distinct from the similarly named BiomarkerKB KG (id
+  `biomarkerkg`), a separate knowledge-graph resource built from BiomarkerKB data.
 domains:
 - biomedical
 - biological systems
@@ -136,6 +138,8 @@ repository: https://github.com/clinical-biomarkers
 ## BiomarkerKB: Comprehensive Biomarker Knowledge Integration
 
 **BiomarkerKB** is a Common Fund Data Ecosystem (CFDE) sponsored project to develop a knowledgebase that organizes and integrates biomarker data from different public sources. It provides researchers with a unified platform for biomarker information access and analysis.
+
+> **Disambiguation:** This resource (`biomarker`) is the BiomarkerKB *knowledgebase*. It should not be confused with **BiomarkerKB KG** (`biomarkerkg`), a separate registry resource for the knowledge-graph representation that is built from BiomarkerKB data. The two projects have very similar names.
 
 ### Overview
 
