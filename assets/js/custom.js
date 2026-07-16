@@ -984,6 +984,34 @@ jQuery(document).ready(function () {
         $('#retry-load').on('click', loadRegistryData);
     }
 
+    // The counterpart to showLoadError for the other failure mode: the data
+    // arrived intact but an exception was thrown while rendering it. Retrying
+    // is pointless here (a deterministic render bug fails identically every
+    // time), so offer a link to the issue tracker instead. See issue #664.
+    function showRenderError(error) {
+        console.error('Error rendering data:', error);
+        $tableDiv.html(
+            `<div class="alert alert-danger" role="alert">
+                <h5 class="alert-heading">
+                    <i class="bi-exclamation-triangle-fill" aria-hidden="true"></i>
+                    Could not display the registry data
+                </h5>
+                <p class="mb-2">
+                    The registry data loaded, but an error occurred while
+                    displaying it. This is a problem with the page or the data,
+                    not with your connection, so retrying will not help.
+                </p>
+                <p class="mb-3"><small>Details: ${error && error.message ? error.message : error}</small></p>
+                <a class="btn btn-outline-danger btn-sm"
+                   href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues"
+                   target="_blank" rel="noopener">
+                    <i class="bi-bug" aria-hidden="true"></i> Report this problem
+                </a>
+            </div>`
+        );
+        setCountsError();
+    }
+
     function loadRegistryData() {
         $tableDiv.html(
             `<div class="loading-indicator" role="status" aria-live="polite">
@@ -992,9 +1020,20 @@ jQuery(document).ready(function () {
             </div>`
         );
 
-        return fetchRegistryData()
-            .then(onRegistryDataLoaded)
-            .catch(showLoadError);
+        // Keep the two failure modes distinct (issue #664): a rejected fetch
+        // is a load failure, but an exception thrown by onRegistryDataLoaded
+        // means the data arrived and only the rendering broke. The
+        // two-argument then() ensures showLoadError never sees render errors.
+        return fetchRegistryData().then(
+            data => {
+                try {
+                    onRegistryDataLoaded(data);
+                } catch (error) {
+                    showRenderError(error);
+                }
+            },
+            showLoadError
+        );
     }
 
     function onRegistryDataLoaded(data) {
