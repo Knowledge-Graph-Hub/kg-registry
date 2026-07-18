@@ -50,7 +50,7 @@ def _check_schema(max_cutoff: int = 3, links: bool = True):
                     k,
                     ", ".join(
                         (
-                            f"[{prefix}](https://obofoundry.org/resources/{prefix})"
+                            f"[{prefix}](https://kghub.org/kg-registry/resource/{prefix}/{prefix}.html)"
                             if links
                             else prefix
                         )

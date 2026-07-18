@@ -89,8 +89,6 @@ pull_and_build: pull all
 
 test: reports/metadata-grid.html _config.yml tox
 
-integration-test: test valid-purl-report.txt
-
 ### Source-specific ingests
 
 # Pull KG-Monarch QC counts and update resource metadata
@@ -142,7 +140,7 @@ $(SOURCE_SCHEMA_ALL):
 
 # Remove and/or revert all targets to their repository versions
 clean:
-	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/organizations.yml registry/parquet registry/taxon_mapping.yaml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/organizations.yml registry/parquet registry/taxon_mapping.yaml jenkins-output.txt _site/ tmp/ reports/
 	git checkout _config.yml registry/kgs.jsonld registry/kgs-summary.json registry/kgs.yml
 
 clean-schema:
@@ -161,9 +159,6 @@ tmp:
 	mkdir -p $@
 
 reports:
-	mkdir -p $@
-
-reports/robot:
 	mkdir -p $@
 
 ### Build Configuration Files
@@ -386,52 +381,12 @@ create-infores-stubs-simple:
 ## Metadata Maintenance ##
 ##########################
 
-# Build directories
-build:
-	mkdir -p $@
-build/resource:
-	mkdir -p $@
-
 quality-dashboard: $(RESOURCES) util/generate-quality-dashboard.py util/reference_validation.py | reports
 	$(RUN) python util/generate-quality-dashboard.py --output $(QUALITY_DASHBOARD_JSON) $(QUALITY_DASHBOARD_LINK_FLAGS)
 
 # Backward-compatible file target alias.
 $(QUALITY_DASHBOARD_JSON): quality-dashboard
 	@:
-
-# Generate the HTML grid output for dashboard
-reports/dashboard.html: reports/dashboard-full.csv
-	./util/create-html-grid.py $< $@
-
-# Move all important results to a dashboard directory
-build/dashboard: reports/dashboard.html
-	mkdir -p $@
-	mkdir -p $@/assets
-	mkdir -p $@/reports
-	cp $< $@
-	cp -r reports/robot $@/reports
-	cp -r assets/svg $@/assets
-	rm -rf build/dashboard.zip
-	zip -r $@.zip $@
-
-# Clean up, removing files
-# We don't want to keep them because we will download new ones each time to stay up-to-date
-# Reports are all archived in build/dashboard.zip
-clean-dashboard: build/dashboard
-	rm -rf build/resource
-	rm -rf reports/robot
-	rm -rf build/dashboard
-
-# Note this should *not* be run as part of general travis jobs, it is expensive
-# and may be prone to false positives as it is inherently network-based
-valid-purl-report.txt: registry/kgs.yml
-	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
-
-sparql-consistency-report.txt: registry/kgs.yml
-	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
-
-reports/%.csv: registry/kgs.ttl sparql/%.sparql
-	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@
 
 # Generate schema documentation
 # and add the frontmatter to each page

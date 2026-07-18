@@ -656,31 +656,6 @@ jQuery(document).ready(function () {
         resortAndRerender();
     });
 
-    // Get dashboard data in the background
-    function fetchAndProcessDashboardData(data) {
-        const dashboard_url = "https://raw.githubusercontent.com/OBOFoundry/obo-dash.github.io/gh-pages/dashboard/dashboard-results.json";
-
-        fetch(dashboard_url)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(dashboard_data => {
-                // Process dashboard data
-                updateTablesWithDashboardData(data, dashboard_data);
-            })
-            .catch(error => {
-                console.error('Error fetching dashboard data:', error);
-            });
-    }
-
-    // Update tables with dashboard data without re-rendering everything
-    function updateTablesWithDashboardData(data, dashboard_data) {
-        // Implementation would go here
-    }
-
     /**
      * Search the given fields {domain, description, id} for input text
      * @param {*} input input is a jQuery selector of the search box

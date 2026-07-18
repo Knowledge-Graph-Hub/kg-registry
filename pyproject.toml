@@ -1,6 +1,6 @@
 [project]
 name = "kg-registry"
-version = "0.0.1"
+version = "0.1.0"
 description = "A registry for knowlege graphs."
 readme = "README.md"
 license = { text = "GPL-3" }
