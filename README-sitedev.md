@@ -50,24 +50,7 @@ mkdir -p assets/js/duckdb
 # Download DuckDB files
 curl -s https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js -o assets/js/duckdb/duckdb-browser-mvp.worker.js
 curl -s https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm -o assets/js/duckdb/duckdb-mvp.wasm
-```f the site is based on the OBO Foundry site (<https://obofoundry.org/>).
-
-## Getting Started
-
-Because Jekyll can be difficult to install, Docker provides an
-alternative for running the `serve` command, then open http://localhost:4000:
-
-```shell
-docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:4.2.0 jekyll serve
 ```
-
-For features that use WebAssembly and Web Workers (like the Advanced Search), use the `--host` parameter to avoid CORS issues:
-
-```shell
-docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:4.2.0 jekyll serve --host 0.0.0.0
-```
-
-Then access the site using your machine's IP address instead of localhost.
 
 You can make changes locally and the Docker image will automatically update.
 When you're ready, you can commit to a new branch and send a pull request.
