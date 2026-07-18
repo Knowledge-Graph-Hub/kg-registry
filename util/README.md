@@ -51,14 +51,12 @@ These scripts still define their own path constants and could benefit from using
 
 These scripts have specialized functionality:
 
-- `processor.py` - Registry processing and data transformation
 - `bulk_domain_rename.py` - Bulk domain field updates
 - `standardize_license_labels.py` - License field standardization
 - `populate_repositories.py` - Repository URL population
 - `populate_infores_ids.py` - Infores ID population
 - `populate_orcid.py` - ORCID population
 - `create_infores_stubs.py` - Stub resource creation
-- `add_preferred_prefixes.py` - Prefix management
 
 ## Usage
 
