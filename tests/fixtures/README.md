@@ -7,12 +7,6 @@ their fixtures are automatically available to tests without local import boilerp
 
 ## Static Fixture Files
 
-### `test_ftp_resources.yml`
-Test data for `util/processor.py` `check_urls`.
-- Uses the `resource_purl` field expected by `processor.py`
-- Contains examples of FTP files, FTP directories, and HTTPS URLs
-- Used by [tests/test_ftp_url_checker.py](/home/harry/kg-registry/tests/test_ftp_url_checker.py)
-
 ### `test_ftp_parallel.yml`
 Test data for `util/retrieve-file-sizes-parallel.py`.
 - Uses the `product_url` field expected by the retrieve-file-sizes scripts
@@ -71,7 +65,7 @@ from pathlib import Path
 import yaml
 
 fixtures_dir = Path(__file__).parent / "fixtures"
-with open(fixtures_dir / "test_ftp_resources.yml", "r", encoding="utf-8") as handle:
+with open(fixtures_dir / "test_ftp_parallel.yml", "r", encoding="utf-8") as handle:
     test_data = yaml.safe_load(handle)
 ```
 
