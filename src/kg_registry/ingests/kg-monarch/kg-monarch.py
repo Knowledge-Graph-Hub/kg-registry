@@ -39,10 +39,25 @@ NODE_URL = "https://data.monarchinitiative.org/monarch-kg/latest/qc/node_report.
 
 STATE_DIR = ROOT / "build" / "ingests" / "kg-monarch"
 STATE_FILE = STATE_DIR / "state.json"
-RESOURCE_FILE = ROOT / "resource" / "kg-monarch" / "kg-monarch.md"
+RESOURCE_ID = "kg-monarch"
+RESOURCE_FILE = ROOT / "resource" / RESOURCE_ID / f"{RESOURCE_ID}.md"
 
 
 logger = logging.getLogger("kg_registry.ingests.kg_monarch")
+
+
+def _owned_by_resource(product_id: object) -> bool:
+    """Return True if `product_id` belongs to this resource.
+
+    Product IDs are namespaced as `<resource-id>.<suffix>`, so ownership is the
+    segment before the first dot. Compare that whole segment rather than using
+    str.startswith, which would also match a resource whose ID merely begins
+    with this one's. Mirrors util.source_associations.resource_owns_product,
+    which this script cannot import from src/.
+    """
+    if not isinstance(product_id, str) or "." not in product_id:
+        return False
+    return product_id.split(".", 1)[0] == RESOURCE_ID
 
 
 def http_last_modified(url: str) -> Optional[str]:
@@ -302,12 +317,19 @@ def update_resource(
         meta["last_modified_date"] = now_iso
         changed = True
 
-    # Update counts and types on all GraphProduct entries
+    # Update counts and types on the GraphProduct entries this resource owns.
+    # The page also lists products propagated here from every resource that cites
+    # kg-monarch as a source -- epigraphdb.graph among them -- and stamping
+    # Monarch's counts and predicate lists onto those describes them wrongly.
     products = meta.get("products") or []
     if isinstance(products, list):
         new_products = []
         for p in products:
-            if isinstance(p, dict) and p.get("category") == "GraphProduct":
+            if (
+                isinstance(p, dict)
+                and p.get("category") == "GraphProduct"
+                and _owned_by_resource(p.get("id"))
+            ):
                 # Compute whether any updates are needed
                 need_edge = p.get("edge_count") != edge_count
                 need_node = (node_count is not None) and (p.get("node_count") != node_count)
@@ -342,10 +364,10 @@ def update_resource(
 
     if changed:
         post.metadata = meta
-        with open(RESOURCE_FILE, "wb") as fwb:
-            frontmatter.dump(post, fd=fwb, handler=handler)
+        with open(RESOURCE_FILE, "w", encoding="utf-8") as fw:
+            fw.write(frontmatter.dumps(post, handler=handler))
         # Ensure trailing newline for content separation
-        with open(RESOURCE_FILE, "a") as fa:
+        with open(RESOURCE_FILE, "a", encoding="utf-8") as fa:
             fa.write("\n")
 
     return changed

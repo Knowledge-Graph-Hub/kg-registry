@@ -22,11 +22,13 @@ from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
 
 try:
+    from util.common import dump_frontmatter_text
     from util.source_associations import (
         ORIGINAL_SOURCE_RELATION,
         merge_source_associations,
     )
 except ModuleNotFoundError:
+    from common import dump_frontmatter_text
     from source_associations import (
         ORIGINAL_SOURCE_RELATION,
         merge_source_associations,
@@ -259,9 +261,9 @@ def update_resource_infores(
     # Write back if modified
     if modified and not dry_run:
         post.metadata = metadata
-        with open(resource_path, 'wb') as f:
-            frontmatter.dump(post, fd=f, handler=handler)
-        with open(resource_path, 'a') as f:
+        with open(resource_path, 'w', encoding='utf-8') as f:
+            f.write(dump_frontmatter_text(post, handler))
+        with open(resource_path, 'a', encoding='utf-8') as f:
             f.write('\n')
 
     return modified, messages

@@ -41,6 +41,7 @@ __all__ = [
     "load_frontmatter_files_parallel",
     "save_frontmatter_file",
     "get_yaml_text",
+    "dump_frontmatter_text",
     "create_id_from_label",
     "get_today_iso",
     "get_separator_for_file",
@@ -178,6 +179,34 @@ def load_frontmatter_files_parallel(
     return results
 
 
+def dump_frontmatter_text(
+    post: "frontmatter.Post",
+    handler: Optional[frontmatter.YAMLHandler] = None,
+) -> str:
+    """
+    Serialize a frontmatter Post to text.
+
+    Use this instead of ``frontmatter.dump(post, fd)``. How ``dump`` treats the
+    file object changed in python-frontmatter 1.2.0: it used to encode the text
+    and write bytes, so callers opened files in binary mode, and it now writes
+    ``str``, which raises ``TypeError: a bytes-like object is required`` against
+    a binary handle. ``dumps`` returns text in every version, so going through it
+    and writing the result works either way.
+
+    The returned text has no trailing newline, matching what ``dump`` wrote.
+
+    Args:
+        post: The frontmatter Post to serialize
+        handler: Optional YAML handler controlling how metadata is emitted
+
+    Returns:
+        The serialized frontmatter document as a string
+    """
+    if handler is None:
+        return frontmatter.dumps(post)
+    return frontmatter.dumps(post, handler=handler)
+
+
 def save_frontmatter_file(
     filepath: pathlib.Path,
     metadata: Dict[str, Any],
@@ -196,13 +225,9 @@ def save_frontmatter_file(
     post = frontmatter.Post(content)
     post.metadata = metadata
 
-    if use_ruamel:
-        handler = CustomRuamelYAMLHandler()
-        with open(filepath, 'wb') as f:
-            frontmatter.dump(post, f, handler=handler)
-    else:
-        with open(filepath, 'wb') as f:
-            frontmatter.dump(post, f)
+    handler = CustomRuamelYAMLHandler() if use_ruamel else None
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(dump_frontmatter_text(post, handler))
 
 
 def get_yaml_text(filepath: pathlib.Path) -> str:
