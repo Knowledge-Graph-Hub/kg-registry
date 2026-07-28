@@ -828,11 +828,14 @@ def build_dashboard_data(
     contacts_with_org_connection = 0
     contacts_without_org_connection = 0
 
-    total_products = 0
-    products_missing_format = 0
-    products_missing_original_source = 0
-    products_missing_product_url = 0
-    retrieval_warning_count = 0
+    # Product metrics are counted per unique product, not per product entry.
+    # ``propagate_products`` (util/extract-metadata.py) copies a derived product
+    # onto every Resource page listed as one of its sources, so a single product
+    # can appear on dozens of pages and would otherwise be counted once per
+    # appearance. The ``products_*`` / ``*_product_ids`` sets in ``detail_lists``
+    # are keyed on product ID and so are the authoritative counts; the aggregate
+    # figures are derived from them at the end of this function, which also keeps
+    # every dashboard number equal to the length of its own drill-down list.
 
     with_both_dates = 0
     modified_after_creation = 0
@@ -1015,7 +1018,6 @@ def build_dashboard_data(
         for idx, product in enumerate(products):
             if not isinstance(product, dict):
                 continue
-            total_products += 1
             product_id_value = product.get("id")
             if is_non_empty_text(product_id_value):
                 product_id = str(product_id_value)
@@ -1024,7 +1026,6 @@ def build_dashboard_data(
             detail_lists["product_total_ids"].add(product_id)
 
             if not is_non_empty_text(product.get("format")):
-                products_missing_format += 1
                 missing_format_for_resource += 1
                 detail_lists["products_missing_format_ids"].add(product_id)
 
@@ -1035,7 +1036,6 @@ def build_dashboard_data(
                     for source in iter_source_ids(product.get("original_source"))
                 )
                 if not has_source:
-                    products_missing_original_source += 1
                     missing_source_for_resource += 1
                     detail_lists["products_missing_original_source_ids"].add(product_id)
 
@@ -1043,7 +1043,6 @@ def build_dashboard_data(
             if is_non_empty_text(product_url):
                 url_targets.append((resource_id, product_id, str(product_url)))
             else:
-                products_missing_product_url += 1
                 missing_url_for_resource += 1
                 detail_lists["products_missing_product_url_ids"].add(product_id)
 
@@ -1054,7 +1053,6 @@ def build_dashboard_data(
             warning_values = ensure_list(product.get("warnings"))
             for warning in warning_values:
                 if isinstance(warning, str) and WARNING_RETRIEVAL_PATTERN.match(warning):
-                    retrieval_warning_count += 1
                     detail_lists["retrieval_warning_product_ids"].add(product_id)
                     if is_non_empty_text(product_url):
                         warning_url = str(product_url)
@@ -1183,11 +1181,11 @@ def build_dashboard_data(
             "validation_warnings": citation_validation_warnings,
         },
         "products": {
-            "total": total_products,
-            "missing_format": products_missing_format,
-            "missing_original_source": products_missing_original_source,
-            "missing_product_url": products_missing_product_url,
-            "retrieval_warning_mentions": retrieval_warning_count,
+            "total": len(detail_lists["product_total_ids"]),
+            "missing_format": len(detail_lists["products_missing_format_ids"]),
+            "missing_original_source": len(detail_lists["products_missing_original_source_ids"]),
+            "missing_product_url": len(detail_lists["products_missing_product_url_ids"]),
+            "with_retrieval_warning": len(detail_lists["retrieval_warning_product_ids"]),
         },
         "dates": {
             "with_both_dates": with_both_dates,

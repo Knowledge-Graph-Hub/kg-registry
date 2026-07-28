@@ -359,7 +359,7 @@ async function loadDashboard() {
             { label: 'Missing format', detailKey: 'products_missing_format_ids', value: data.products.missing_format || 0, color: '#a61e4d' },
             { label: 'Missing original_source', detailKey: 'products_missing_original_source_ids', value: data.products.missing_original_source || 0, color: '#7c3aed' },
             { label: 'Missing product_url', detailKey: 'products_missing_product_url_ids', value: data.products.missing_product_url || 0, color: '#2563eb' },
-            { label: 'Retrieval warning mentions', detailKey: 'retrieval_warning_product_ids', value: data.products.retrieval_warning_mentions || 0, color: '#0f766e' }
+            { label: 'Retrieval warnings', detailKey: 'retrieval_warning_product_ids', value: data.products.with_retrieval_warning || 0, color: '#0f766e' }
         ], productTotal);
 
         const linkTotal = data.links.total_unique_urls || 0;
