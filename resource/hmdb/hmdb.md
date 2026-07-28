@@ -917,8 +917,7 @@ products:
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphicalInterface
   description: Graphical interface for MedKG
-  format: http
-  id: medkb.site
+  id: medkg.site
   name: MedKG Site
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -956,9 +955,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: medkg
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -1744,8 +1740,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: GraphicalInterface
@@ -2993,7 +2987,7 @@ publications:
   - Mandal R
   - Karu N
   - Dambrova M
-  - Schiöth HB
+  - "Schi\xF6th HB"
   - Greiner R
   - Gautam V
   doi: 10.1093/nar/gkab1062

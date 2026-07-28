@@ -26,6 +26,7 @@ try:
     from util.source_associations import (
         ensure_direct_product_primary_source,
         iter_source_ids,
+        resource_owns_product,
         source_resource_id,
     )
     from util.reference_validation import (
@@ -39,6 +40,7 @@ except ModuleNotFoundError:
     from source_associations import (
         ensure_direct_product_primary_source,
         iter_source_ids,
+        resource_owns_product,
         source_resource_id,
     )
     from reference_validation import (
@@ -376,8 +378,10 @@ def concat_resource_yaml(args):
         for obj in objs:
             if "products" in obj:
                 for product in obj["products"]:
-                    # Only create pages for products with IDs that start with the resource ID
-                    if "id" in product and (product["id"]).startswith(obj["id"]):
+                    # Only create pages for products this resource owns. Products
+                    # propagated here because the resource is one of their sources
+                    # get their page under their owner.
+                    if "id" in product and resource_owns_product(obj["id"], product["id"]):
                         fn = f"resource/{obj['id']}/{product['id']}.md"
                         file_path = pathlib.Path(fn)
                         product_for_page = sanitize_product_for_page(product)

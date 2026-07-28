@@ -45,30 +45,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pr
   product_url: http://purl.obolibrary.org/obo/pr.obo
-- category: OntologyProduct
-  description: PRO without reasoning applied, OWL format. Add '.gz' for compressed.
-  format: owl
-  id: pr-asserted.owl
-  name: pro_nonreasoned.owl
-  product_url: http://purl.obolibrary.org/obo/pr-asserted.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: PRO without reasoning applied, OBO format.
-  format: obo
-  id: pr-asserted.obo
-  name: pro_nonreasoned.obo
-  product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-24: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   format: mixed
   id: mechreponet.kg

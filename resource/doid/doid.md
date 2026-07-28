@@ -1328,8 +1328,7 @@ products:
   product_url: https://github.com/MaayanLab/lncRNAlyzr
 - category: GraphicalInterface
   description: Graphical interface for MedKG
-  format: http
-  id: medkb.site
+  id: medkg.site
   name: MedKG Site
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1367,9 +1366,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: medkg
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl

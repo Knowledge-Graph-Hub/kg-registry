@@ -46,7 +46,7 @@ products:
   - category: GraphicalInterface
     description: SnpSift documentation covering tools for filtering, annotating, and manipulating VCF files
     format: http
-    id: snpsift.documentation
+    id: snpeff.snpsift-documentation
     name: SnpSift Documentation
     original_source:
       - source: snpeff

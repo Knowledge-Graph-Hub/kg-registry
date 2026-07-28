@@ -127,6 +127,69 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
     assert top[0]["score"] > top[1]["score"]
 
 
+def test_resources_are_scored_only_for_products_they_own(quality_dashboard_module):
+    """A Resource must not be penalized for products propagated onto its page.
+
+    ``agg.download`` has no format, no original_source, no product_url and a
+    broken URL. It is owned by ``agg`` and propagated onto ``src``, which cites
+    it as a source. Only ``agg`` should be scored for it.
+    """
+    mod = quality_dashboard_module
+    repo_root = Path(__file__).resolve().parents[1]
+    now = datetime(2026, 2, 16, tzinfo=timezone.utc)
+
+    broken_product = {
+        "id": "agg.download",
+        "category": "GraphProduct",
+        "name": "Aggregated Download",
+        "repository": "https://example.org/broken-repo",
+        "warnings": [
+            "File was not able to be retrieved when checked on 2026-02-10: timeout"
+        ],
+    }
+    resources = [
+        {"id": "agg", "name": "Aggregator", "products": [dict(broken_product)]},
+        {"id": "src", "name": "Source", "products": [dict(broken_product)]},
+    ]
+
+    data = mod.build_dashboard_data(
+        resources,
+        org_index={"ids": set(), "short_ids": set(), "labels": set()},
+        url_results={"https://example.org/broken-repo": {"ok": False, "source": "live"}},
+        citation_reports={},
+        now=now,
+        link_mode="live",
+        link_summary={
+            "total_unique_urls": 1,
+            "live_checked_urls": 1,
+            "cache_hits": 0,
+            "healthy_urls": 0,
+            "broken_urls": 1,
+            "unchecked_urls": 0,
+        },
+        cache_path=repo_root / "cache" / "quality_url_status_cache.yml",
+    )
+
+    by_id = {record["id"]: record for record in data["top_resources"]}
+    product_issues = {"product_missing_format", "product_missing_original_source",
+                      "product_missing_product_url", "broken_link"}
+
+    agg_issues = {issue["issue_key"] for issue in by_id["agg"]["issues"]}
+    src_issues = {issue["issue_key"] for issue in by_id["src"]["issues"]}
+    assert product_issues <= agg_issues, "owner must be scored for its own product"
+    assert not (product_issues & src_issues), "non-owner must not be scored for it"
+    assert by_id["src"]["broken_links"] == []
+
+    # The registry-wide totals still count the product once, from either page.
+    assert data["products"]["total"] == 1
+    assert data["products"]["missing_format"] == 1
+    assert data["products"]["missing_original_source"] == 1
+    assert data["products"]["missing_product_url"] == 1
+    assert data["products"]["with_retrieval_warning"] == 1
+    assert data["resources"]["with_broken_links"] == 1
+    assert data["detail_lists"]["resource_with_broken_links_ids"] == ["agg"]
+
+
 def test_product_metrics_count_unique_products(quality_dashboard_module):
     """Products propagated onto source Resource pages are counted only once.
 

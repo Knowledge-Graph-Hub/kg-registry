@@ -227,6 +227,26 @@ products:
   warnings:
   - The former Orphadata API landing-page URL returned 404 when checked on 2026-06-02;
     the registry points to the Orphadata contact page for access questions.
+- category: DataModelProduct
+  description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers)
+    for rare diseases, along with mappings to other terminologies, and is released
+    annually in July.
+  id: orphanet.nomenclature
+  name: Orphanet Nomenclature Pack
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_url: https://www.orphacode.org/pack-nomenclature/
+- category: ProgrammingInterface
+  description: API for accessing the Orphanet nomenclature pack data, allowing flexible
+    implementation into various healthcare information systems.
+  format: http
+  id: orphanet.orphacode_api
+  name: ORPHAcodes API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_url: https://api.orphacode.org/
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -1101,13 +1121,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -1298,7 +1316,7 @@ publications:
   - Pavan S
   - Rommel K
   - Mateo Marquina ME
-  - Höhn S
+  - "H\xF6hn S"
   - Lanneau V
   - Rath A
   doi: 10.1371/journal.pone.0170365

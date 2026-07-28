@@ -3,6 +3,7 @@
 import frontmatter
 import pytest
 
+from util.source_associations import resource_owns_product
 from util.sync_obo_foundry import OBOFoundrySync
 
 
@@ -229,3 +230,36 @@ def test_merge_products_strips_excluded_existing_products(tmp_path):
 
     merged = syncer.merge_products(existing, synced, excluded_ids=excluded)
     assert {p["id"] for p in merged} == {"t4fs.owl"}
+
+
+def test_transform_obo_namespaces_product_ids_under_the_ontology(tmp_path):
+    """Every generated product id must be owned by its ontology.
+
+    The OBO Foundry registry advertises ids in two shapes: path-style
+    (`chebi/chebi_lite.obo`) and variant-style (`hancestro-base.owl`). The latter
+    starts with the ontology id but its first dot-separated segment does not, so
+    it has to be namespaced explicitly.
+    """
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+
+    resource = syncer.transform_obo_to_kg_registry(
+        {
+            "id": "hancestro",
+            "title": "HANCESTRO",
+            "products": [
+                {"id": "hancestro.owl", "title": "HANCESTRO OWL"},
+                {"id": "hancestro-base.owl", "title": "HANCESTRO Base"},
+                {"id": "hancestro/subsets/basic.obo", "title": "HANCESTRO Basic"},
+                {"id": "extras.json", "title": "Unprefixed extra"},
+            ],
+        }
+    )
+
+    assert [product["id"] for product in resource["products"]] == [
+        "hancestro.owl",
+        "hancestro.hancestro-base.owl",
+        "hancestro.subsets.basic.obo",
+        "hancestro.extras.json",
+    ]
+    for product in resource["products"]:
+        assert resource_owns_product("hancestro", product["id"])

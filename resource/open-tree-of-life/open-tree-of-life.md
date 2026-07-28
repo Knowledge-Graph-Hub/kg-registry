@@ -33,7 +33,7 @@ products:
   description: Interactive zoomable phylogenetic tree browser enabling exploration
     of taxonomic relationships and phylogenetic structure across 2.4 million tips
   format: http
-  id: otol.tree-browser
+  id: open-tree-of-life.tree-browser
   name: Open Tree of Life Browser
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -44,7 +44,7 @@ products:
     and taxonomic name resolution services with support for MRCA queries and subtree
     extraction
   format: http
-  id: otol.api
+  id: open-tree-of-life.api
   is_public: true
   name: Open Tree of Life APIs
   original_source:
@@ -55,7 +55,7 @@ products:
   description: Taxonomic Name Resolution Service (TNRS) providing exact and fuzzy
     matching of taxonomic names to Open Tree Taxonomy with context-based disambiguation
   format: http
-  id: otol.tnrs
+  id: open-tree-of-life.tnrs
   is_public: true
   name: Taxonomic Name Resolution Service (TNRS)
   original_source:
@@ -65,7 +65,7 @@ products:
 - category: Product
   description: Complete phylesystem repository containing 4,500+ curated phylogenetic
     studies in NexSON JSON format with full version control history
-  id: otol.phylesystem
+  id: open-tree-of-life.phylesystem
   name: Phylesystem Data Repository
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -74,7 +74,7 @@ products:
 - category: Product
   description: Preprocessed source trees and taxonomy files available for bulk download
     in Newick, Nexus, and JSON formats
-  id: otol.bulk-download
+  id: open-tree-of-life.bulk-download
   name: Open Tree of Life Bulk Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -84,7 +84,7 @@ products:
   description: API reference, developer guides, and integration documentation for
     accessing Open Tree of Life data programmatically
   format: http
-  id: otol.documentation
+  id: open-tree-of-life.documentation
   is_public: true
   name: Open Tree of Life Developer Documentation
   original_source:
@@ -118,8 +118,6 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 406 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 406 error
     when accessing file'
 publications:
@@ -166,7 +164,7 @@ publications:
   year: '2015'
 - authors:
   - Emily Jane Mctavish
-  - Luna Luisa Sánchez-Reyes
+  - "Luna Luisa S\xE1nchez-Reyes"
   - Mark T Holder
   doi: 10.1093/sysbio/syab033
   id: doi:10.1093/sysbio/syab033
