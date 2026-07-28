@@ -1360,8 +1360,7 @@ products:
   product_url: https://raras.org/explorar
 - category: GraphicalInterface
   description: Graphical interface for MedKG
-  format: http
-  id: medkb.site
+  id: medkg.site
   name: MedKG Site
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1399,9 +1398,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: medkg
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for RDKG
   format: http
@@ -2766,14 +2762,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -2812,13 +2806,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
@@ -3269,7 +3261,7 @@ publications:
   - Eric Hurwitz
   - Julius O B Jacobsen
   - Atsuo Kikuchi
-  - Sebastian Köhler
+  - "Sebastian K\xF6hler"
   - Daniel R Korn
   - David Lagorce
   - Bryan J Laraway
@@ -3289,7 +3281,7 @@ publications:
   - David Osumi-Sutherland
   - Kelley Paris
   - Helen E Parkinson
-  - Zoë M Pendlington
+  - "Zo\xEB M Pendlington"
   - Xiao P Peng
   - Amy Pizzino
   - Sharon E Plon

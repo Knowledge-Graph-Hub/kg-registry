@@ -66,18 +66,6 @@ products:
       - relation_type: prov:hadPrimarySource
         source: ordo
     product_url: https://www.orphadata.com/ordo-sparql-endpoint/
-  - category: DataModelProduct
-    description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers) for rare diseases, along with mappings to other terminologies, and is released annually in July.
-    id: "orphacode.nomenclature"
-    name: Orphanet Nomenclature Pack
-    product_url: https://www.orphacode.org/pack-nomenclature/
-    warnings: []
-  - category: ProgrammingInterface
-    description: API for accessing the Orphanet nomenclature pack data, allowing flexible implementation into various healthcare information systems.
-    format: http
-    id: "orphacode.api"
-    name: ORPHAcodes API
-    product_url: https://api.orphacode.org/
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

@@ -351,14 +351,19 @@ class OBOFoundrySync:
                 # Generate unique Product ID: [Resource ID].[Product ID suffix]
                 product_id_raw = product.get('id', f"product-{i + 1}")
 
-                # If product ID doesn't start with resource ID, prefix it
-                if not product_id_raw.startswith(ontology_id):
-                    product_id = f"{ontology_id}.{product_id_raw}"
-                else:
-                    product_id = product_id_raw
+                # Sanitize product ID first: replace slashes with dots to avoid
+                # file system issues. This also turns the registry's path-style
+                # ids into the namespaced form, so 'chebi/chebi_lite.obo' becomes
+                # 'chebi.chebi_lite.obo' and already carries its owner prefix.
+                product_id = product_id_raw.replace('/', '.')
 
-                # Sanitize product ID: replace slashes with dots to avoid file system issues
-                product_id = product_id.replace('/', '.')
+                # Namespace the product under its ontology unless it already is.
+                # Test for the separator too: the registry advertises ids such as
+                # 'hancestro-base.owl' and 'pr-asserted.obo' which start with the
+                # ontology id but whose first segment is a different string, so a
+                # bare startswith would leave them owned by no resource.
+                if not product_id.startswith(f"{ontology_id}."):
+                    product_id = f"{ontology_id}.{product_id}"
 
                 # Detect format from product ID, URL, or explicit format field
                 product_format = product.get('format', '')

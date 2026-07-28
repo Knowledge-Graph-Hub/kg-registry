@@ -448,8 +448,7 @@ products:
   - 423af7989cac
 - category: GraphicalInterface
   description: Graphical interface for MedKG
-  format: http
-  id: medkb.site
+  id: medkg.site
   name: MedKG Site
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -487,9 +486,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: medkg
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
     and disease information for drug repositioning.
@@ -1405,14 +1401,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations

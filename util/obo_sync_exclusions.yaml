@@ -14,22 +14,27 @@
 # Keyed by ontology id (lower-case); values are lists of product ids to suppress.
 # Verify with curl before adding -- only suppress products whose PURLs genuinely
 # do not resolve.
+#
+# Ids here are the ids the sync generates, which are always namespaced under the
+# ontology: `<ontology-id>.<advertised-id>`. Where the registry advertises an id
+# that already starts with the ontology id but is not a segment of it -- e.g.
+# `pcl-base.owl` for pcl -- the generated id is `pcl.pcl-base.owl`.
 exclude_products:
   pcl:
     - pcl.json
-    - pcl-base.owl
-    - pcl-base.obo
-    - pcl-base.json
-    - pcl-full.owl
-    - pcl-full.obo
-    - pcl-full.json
-    - pcl-simple.owl
-    - pcl-simple.obo
-    - pcl-simple.json
+    - pcl.pcl-base.owl
+    - pcl.pcl-base.obo
+    - pcl.pcl-base.json
+    - pcl.pcl-full.owl
+    - pcl.pcl-full.obo
+    - pcl.pcl-full.json
+    - pcl.pcl-simple.owl
+    - pcl.pcl-simple.obo
+    - pcl.pcl-simple.json
   t4fs:
-    - t4fs-community.owl
-    - t4fs-community.obo
-    - t4fs-community.json
+    - t4fs.t4fs-community.owl
+    - t4fs.t4fs-community.obo
+    - t4fs.t4fs-community.json
   prefer:
     - prefer.prefer-basic.owl
     - prefer.prefer-basic.obo
@@ -37,6 +42,14 @@ exclude_products:
   # Format variants the ontology does not actually build (PURLs 404):
   slso:
     - slso.json
+    - slso.slso-base.owl
+  foodon:
+    - foodon.foodon_core.owl
+  hancestro:
+    - hancestro.hancestro-base.owl
+  pr:
+    - pr.pr-asserted.owl
+    - pr.pr-asserted.obo
   rbo:
     - rbo.json
   pbpko:

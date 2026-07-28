@@ -735,8 +735,7 @@ products:
   product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphicalInterface
   description: Graphical interface for MedKG
-  format: http
-  id: medkb.site
+  id: medkg.site
   name: MedKG Site
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -774,9 +773,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: medkg
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -1393,8 +1389,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: Product
@@ -2496,7 +2490,7 @@ publications:
   - Cerezo M
   - Gil L
   - Groza T
-  - Güneş O
+  - "G\xFCne\u015F O"
   - Hall P
   - Hayhurst J
   - Ibrahim A

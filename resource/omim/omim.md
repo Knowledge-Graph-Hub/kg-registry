@@ -8,9 +8,9 @@ contacts:
     value: https://www.omim.org/contact
   label: OMIM (Johns Hopkins University)
 creation_date: '2025-06-04T00:00:00Z'
-description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
-  expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
-  relationships and the molecular basis of disease.
+description: "OMIM (Online Mendelian Inheritance in Man) is a continuously updated,\
+  \ expert-curated catalog of human genes and genetic disorders, focusing on genotype\u2013\
+  phenotype relationships and the molecular basis of disease."
 domains:
 - biomedical
 - clinical
@@ -1312,8 +1312,7 @@ products:
   product_url: https://raras.org/explorar
 - category: GraphicalInterface
   description: Graphical interface for MedKG
-  format: http
-  id: medkb.site
+  id: medkg.site
   name: MedKG Site
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1351,9 +1350,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: medkg
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for RDKG
   format: http
@@ -2146,8 +2142,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
     header found'
 - category: ProgrammingInterface
@@ -2874,13 +2868,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations
@@ -3352,19 +3344,19 @@ publications:
   id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research
   preferred: true
-  title: OMIM.org—leveraging knowledge across phenotype–gene relationships
+  title: "OMIM.org\u2014leveraging knowledge across phenotype\u2013gene relationships"
   year: '2019'
 - authors:
   - Joanna S. Amberger
   - Carol A. Bocchini
-  - François Schiettecatte
+  - "Fran\xE7ois Schiettecatte"
   - Alan F. Scott
   - Ada Hamosh
   doi: 10.1093/nar/gku1205
   id: doi:10.1093/nar/gku1205
   journal: Nucleic Acids Research
-  title: 'OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog
-    of human genes and genetic disorders'
+  title: "OMIM.org: Online Mendelian Inheritance in Man (OMIM\xAE), an online catalog\
+    \ of human genes and genetic disorders"
   year: '2015'
 taxon:
 - NCBITaxon:9606

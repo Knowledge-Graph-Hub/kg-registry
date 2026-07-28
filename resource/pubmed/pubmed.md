@@ -416,8 +416,8 @@ products:
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct
-  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
-    (semantic themes)
+  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
+    \ relationships (semantic themes)"
   format: http
   id: gnbr.graph
   name: GNBR graph
@@ -591,8 +591,7 @@ products:
   product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
 - category: GraphicalInterface
   description: Graphical interface for MedKG
-  format: http
-  id: medkb.site
+  id: medkg.site
   name: MedKG Site
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -630,9 +629,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: medkg
 - category: GraphicalInterface
   description: Public web interface for querying and exploring ReproTox-KG relationships.
   format: http
@@ -1014,14 +1010,12 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 500 error
-    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed

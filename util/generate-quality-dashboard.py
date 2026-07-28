@@ -30,7 +30,7 @@ except Exception:  # pragma: no cover
 
 from common import RESOURCE_DIR, ROOT, load_frontmatter_file
 try:
-    from util.source_associations import iter_source_ids
+    from util.source_associations import iter_source_ids, resource_owns_product
     from util.reference_validation import (
         DEFAULT_CACHE_DIR as DEFAULT_REFERENCE_CACHE_DIR,
         DEFAULT_VALIDATION_CACHE_PATH as DEFAULT_REFERENCE_VALIDATION_CACHE_PATH,
@@ -39,7 +39,7 @@ try:
         validate_publication_references,
     )
 except ModuleNotFoundError:
-    from source_associations import iter_source_ids
+    from source_associations import iter_source_ids, resource_owns_product
     from reference_validation import (
         DEFAULT_CACHE_DIR as DEFAULT_REFERENCE_CACHE_DIR,
         DEFAULT_VALIDATION_CACHE_PATH as DEFAULT_REFERENCE_VALIDATION_CACHE_PATH,
@@ -1025,8 +1025,15 @@ def build_dashboard_data(
                 product_id = f"{resource_id}.product-{idx+1}"
             detail_lists["product_total_ids"].add(product_id)
 
+            # Registry-wide metrics count every product once, wherever it is
+            # listed; per-resource scoring counts only the products this resource
+            # owns. Without that split a Resource is penalized for the products of
+            # every other Resource that names it as a source.
+            owned = resource_owns_product(resource_id, product_id)
+
             if not is_non_empty_text(product.get("format")):
-                missing_format_for_resource += 1
+                if owned:
+                    missing_format_for_resource += 1
                 detail_lists["products_missing_format_ids"].add(product_id)
 
             category = str(product.get("category", ""))
@@ -1036,24 +1043,29 @@ def build_dashboard_data(
                     for source in iter_source_ids(product.get("original_source"))
                 )
                 if not has_source:
-                    missing_source_for_resource += 1
+                    if owned:
+                        missing_source_for_resource += 1
                     detail_lists["products_missing_original_source_ids"].add(product_id)
 
             product_url = product.get("product_url")
             if is_non_empty_text(product_url):
-                url_targets.append((resource_id, product_id, str(product_url)))
+                if owned:
+                    url_targets.append((resource_id, product_id, str(product_url)))
             else:
-                missing_url_for_resource += 1
+                if owned:
+                    missing_url_for_resource += 1
                 detail_lists["products_missing_product_url_ids"].add(product_id)
 
             product_repository = product.get("repository")
-            if is_non_empty_text(product_repository):
+            if owned and is_non_empty_text(product_repository):
                 url_targets.append((resource_id, product_id, str(product_repository)))
 
             warning_values = ensure_list(product.get("warnings"))
             for warning in warning_values:
                 if isinstance(warning, str) and WARNING_RETRIEVAL_PATTERN.match(warning):
                     detail_lists["retrieval_warning_product_ids"].add(product_id)
+                    if not owned:
+                        continue
                     if is_non_empty_text(product_url):
                         warning_url = str(product_url)
                         # If this run already has a healthy URL check, treat the warning as stale.

@@ -151,6 +151,31 @@ def source_resource_id(source_id: str) -> str:
     return source.split(".", 1)[0]
 
 
+def resource_owns_product(resource_id: Any, product_id: Any) -> bool:
+    """Return True if ``resource_id`` is the owning resource of ``product_id``.
+
+    Product IDs are namespaced by their owning resource -- ``go.owl`` belongs to
+    ``go``, ``biobtree.graph.human-subgraph`` to ``biobtree`` -- so ownership is
+    decided by the segment before the first dot.
+
+    A product is listed on its owner's page and, via ``propagate_products``, on
+    the page of every resource it cites as a source. "Is this product on this
+    page" is therefore a different question from "does this resource own it".
+
+    Compare the whole first segment rather than using a bare ``str.startswith``:
+    that would let any resource whose ID is a string prefix of another's claim
+    its products, so ``go`` would own ``goa.ftp`` and ``mi`` would own
+    ``mint.psicquic``.
+    """
+    if not isinstance(resource_id, str) or not isinstance(product_id, str):
+        return False
+    resource = resource_id.strip()
+    product = product_id.strip()
+    if not resource or "." not in product:
+        return False
+    return source_resource_id(product) == resource
+
+
 def _ensure_list(value: Any) -> list[Any]:
     if value is None:
         return []

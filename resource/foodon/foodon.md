@@ -43,17 +43,6 @@ products:
     source: foodon
   product_file_size: 2852449
   product_url: http://purl.obolibrary.org/obo/foodon.owl
-- category: OntologyProduct
-  description: FoodOn core ontology (currently the same as foodon.owl)
-  format: owl
-  id: foodon_core.owl
-  name: FoodOn core ontology (currently the same as foodon.owl)
-  product_url: http://purl.obolibrary.org/obo/foodon_core.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
