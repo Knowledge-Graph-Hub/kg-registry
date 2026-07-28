@@ -58,7 +58,7 @@ biogps	BioGPS	Aggregator	http://biogps.org/	resource/biogps/biogps.md
 biohealth	Bio-Health KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/biohealth/	resource/biohealth/biohealth.md
 biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resource/biolink/biolink.md
 biomarker	BiomarkerKB	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarker/biomarker.md
-biomarkerkg	BiomarkerKB KG	KnowledgeGraph	https://biomarkerkb.org/home/	resource/biomarkerkg/biomarkerkg.md
+biomarkerkg	BiomarkerKB KG	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarkerkg/biomarkerkg.md
 biomuta	BioMuta	DataSource	https://hivelab.biochemistry.gwu.edu/biomuta	resource/biomuta/biomuta.md
 bioteque	Bioteque	KnowledgeGraph	https://bioteque.irbbarcelona.org/	resource/bioteque/bioteque.md
 biothings	BioThings	DataSource	https://biothings.io/	resource/biothings/biothings.md

@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: Neo4j Dump of KG-Monarch Edges
-edge_count: 15211571
+edge_count: 15807241
 format: neo4j
 id: kg-monarch.graph.neo4j.edges
 name: Neo4j Dump of KG-Monarch Edges
@@ -12,6 +12,7 @@ node_categories:
 - biolink:Cell
 - biolink:CellularComponent
 - biolink:ChemicalEntity
+- biolink:ClinicalMeasurement
 - biolink:Disease
 - biolink:Gene
 - biolink:Genotype
@@ -24,7 +25,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1462594
+node_count: 1582279
 original_source:
 - relation_type: prov:hadPrimarySource
   source: alliance
@@ -63,6 +64,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: zfin
 predicates:
+- biolink:active_in
 - biolink:actively_involved_in
 - biolink:acts_upstream_of
 - biolink:acts_upstream_of_negative_effect
@@ -103,7 +105,6 @@ predicates:
 - biolink:homologous_to
 - biolink:in_taxon
 - biolink:interacts_with
-- biolink:is_active_in
 - biolink:is_input_of
 - biolink:is_output_of
 - biolink:is_sequence_variant_of
@@ -124,8 +125,6 @@ predicates:
 - biolink:same_as
 - biolink:subclass_of
 - biolink:temporally_related_to
-- biolink:treats
-- biolink:treats_or_applied_or_studied_to_treat
 product_file_size: 4386388748
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 layout: product_detail

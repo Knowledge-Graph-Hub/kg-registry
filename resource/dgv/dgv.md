@@ -43,9 +43,9 @@ products:
     source: dgv
   product_url: http://dgv.tcag.ca/dgv/app/downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-07-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-07-28: Timeout connecting
     to URL'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric

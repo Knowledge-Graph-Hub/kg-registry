@@ -58,7 +58,6 @@ biogrid,active,PASS
 biohealth,active,PASS
 biolink,active,PASS
 biomarker,active,PASS
-biomarkerkg,active,PASS
 biomuta,active,PASS
 bioplanet,active,PASS
 bioportal,active,PASS
@@ -885,6 +884,7 @@ bcgo,inactive,PASS
 bila,inactive,PASS
 bind,inactive,PASS
 bio2rdf,inactive,PASS
+biomarkerkg,inactive,PASS
 bootstrep,inactive,PASS
 cacao,inactive,PASS
 cam-kp,inactive,PASS

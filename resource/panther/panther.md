@@ -24,7 +24,7 @@ name: PANTHER
 products:
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 15211571
+  edge_count: 15807241
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -35,6 +35,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -47,7 +48,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -86,6 +87,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -126,7 +128,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -147,13 +148,11 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 230877741
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 15211571
+  edge_count: 15807241
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -164,6 +163,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -176,7 +176,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -215,6 +215,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -255,7 +256,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -276,13 +276,11 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 315667976
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 15211571
+  edge_count: 15807241
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -293,6 +291,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -305,7 +304,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -344,6 +343,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -384,7 +384,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -405,14 +404,12 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 879238775
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 15211571
+  edge_count: 15807241
   format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
@@ -423,6 +420,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -435,7 +433,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -474,6 +472,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -514,7 +513,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -535,14 +533,12 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 15211571
+  edge_count: 15807241
   format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
@@ -553,6 +549,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -565,7 +562,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -604,6 +601,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -644,7 +642,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -665,8 +662,6 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
@@ -684,7 +679,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 15211571
+  edge_count: 15807241
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -695,6 +690,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -707,7 +703,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -746,6 +742,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -786,7 +783,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -807,14 +803,12 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 487854288
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 15211571
+  edge_count: 15807241
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -825,6 +819,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -837,7 +832,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -876,6 +871,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -916,7 +912,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -937,13 +932,11 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 487854288
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 15211571
+  edge_count: 15807241
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -954,6 +947,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -966,7 +960,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1005,6 +999,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -1045,7 +1040,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -1066,13 +1060,11 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 4386388748
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 15211571
+  edge_count: 15807241
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1083,6 +1075,7 @@ products:
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
+  - biolink:ClinicalMeasurement
   - biolink:Disease
   - biolink:Gene
   - biolink:Genotype
@@ -1095,7 +1088,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1462594
+  node_count: 1582279
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1134,6 +1127,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   predicates:
+  - biolink:active_in
   - biolink:actively_involved_in
   - biolink:acts_upstream_of
   - biolink:acts_upstream_of_negative_effect
@@ -1174,7 +1168,6 @@ products:
   - biolink:homologous_to
   - biolink:in_taxon
   - biolink:interacts_with
-  - biolink:is_active_in
   - biolink:is_input_of
   - biolink:is_output_of
   - biolink:is_sequence_variant_of
@@ -1195,8 +1188,6 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
-  - biolink:treats
-  - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 349573789
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
 - category: ProgrammingInterface

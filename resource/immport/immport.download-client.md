@@ -8,6 +8,7 @@ name: ImmPort Download Client
 original_source:
 - relation_type: prov:hadPrimarySource
   source: immport
+product_file_size: 0
 product_url: https://downloads.immport.org/immport-download-client/
 layout: product_detail
 ---
