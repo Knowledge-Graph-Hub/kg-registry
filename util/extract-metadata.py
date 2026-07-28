@@ -23,6 +23,7 @@ from ruamel.yaml.scanner import ScannerError
 from yamllint import config, linter
 
 try:
+    from util.common import dump_frontmatter_text
     from util.source_associations import (
         ensure_direct_product_primary_source,
         iter_source_ids,
@@ -37,6 +38,7 @@ try:
         validate_publication_references,
     )
 except ModuleNotFoundError:
+    from common import dump_frontmatter_text
     from source_associations import (
         ensure_direct_product_primary_source,
         iter_source_ids,
@@ -169,9 +171,10 @@ def prettify(args):
     for file in args.files:
         handler = CustomRuamelYAMLHandler()
         text = frontmatter.load(file, handler=handler)
-        file_obj = open(file, "wb")
-        frontmatter.dump(text, fd=file_obj, handler=handler)
-        file_obj = open(file, "a")
+        file_obj = open(file, "w", encoding="utf-8")
+        file_obj.write(dump_frontmatter_text(text, handler))
+        file_obj.close()
+        file_obj = open(file, "a", encoding="utf-8")
         file_obj.write("\n")
         file_obj.close()
 
@@ -220,10 +223,10 @@ def validate_markdown(args):
         # If modified, write back in-place using ruamel to preserve formatting and quotes
         if obj != original_obj:
             post.metadata = obj
-            with open(fn, "wb") as fwb:
-                frontmatter.dump(post, fd=fwb, handler=handler)
+            with open(fn, "w", encoding="utf-8") as fw:
+                fw.write(dump_frontmatter_text(post, handler))
             # Ensure trailing newline after frontmatter/content
-            with open(fn, "a") as fa:
+            with open(fn, "a", encoding="utf-8") as fa:
                 fa.write("\n")
 
         # If this is the root of the resource, validate against the Resource class
@@ -274,9 +277,9 @@ def validate_markdown(args):
                     if index not in removed_indexes
                 ]
                 post.metadata = obj
-                with open(fn, "wb") as fwb:
-                    frontmatter.dump(post, fd=fwb, handler=handler)
-                with open(fn, "a") as fa:
+                with open(fn, "w", encoding="utf-8") as fw:
+                    fw.write(dump_frontmatter_text(post, handler))
+                with open(fn, "a", encoding="utf-8") as fa:
                     fa.write("\n")
                 warn.append(
                     f"{fn}: removed {len(removed_indexes)} invalid publication reference(s): "

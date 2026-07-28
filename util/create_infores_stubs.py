@@ -21,6 +21,11 @@ import yaml
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
 
+try:
+    from util.common import dump_frontmatter_text
+except ModuleNotFoundError:
+    from common import dump_frontmatter_text
+
 __author__ = "kg-registry-team"
 
 HERE = pathlib.Path(__file__).parent.resolve()
@@ -318,10 +323,10 @@ If this should be a Product, add it to the appropriate parent Resource's `produc
     if not dry_run:
         # Create directory and write file
         resource_dir.mkdir(exist_ok=True, parents=True)
-        with open(resource_file, 'wb') as f:
-            frontmatter.dump(post, fd=f, handler=handler)
+        with open(resource_file, 'w', encoding='utf-8') as f:
+            f.write(dump_frontmatter_text(post, handler))
         # Add trailing newline
-        with open(resource_file, 'a') as f:
+        with open(resource_file, 'a', encoding='utf-8') as f:
             f.write('\n')
 
         print(f"  ✓ Created stub: {resource_file}")

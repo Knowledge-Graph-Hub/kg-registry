@@ -24,6 +24,7 @@ from common import (
     ORG_DIR,
     REGISTRY_DIR,
     create_id_from_label,
+    dump_frontmatter_text,
     get_today_iso,
     load_frontmatter_file,
     save_frontmatter_file,
@@ -418,8 +419,8 @@ def update_resource_contacts(
                 if not dry_run:
                     post = frontmatter.Post(content or "")
                     post.metadata = metadata
-                    with open(md_file, 'wb') as f:
-                        frontmatter.dump(post, f)
+                    with open(md_file, 'w', encoding='utf-8') as f:
+                        f.write(dump_frontmatter_text(post))
                 updated += 1
 
     return updated
@@ -558,8 +559,8 @@ def process_resource_organizations(
 
                     post = frontmatter.Post(content or "")
                     post.metadata = metadata
-                    with open(resource_file, 'wb') as f:
-                        frontmatter.dump(post, f)
+                    with open(resource_file, 'w', encoding='utf-8') as f:
+                        f.write(dump_frontmatter_text(post))
 
                     contacts_updated += 1
                     if verbose:
