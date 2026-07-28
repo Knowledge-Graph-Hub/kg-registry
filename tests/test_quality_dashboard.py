@@ -103,7 +103,7 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
     assert data["products"]["missing_format"] == 1
     assert data["products"]["missing_original_source"] == 1
     assert data["products"]["missing_product_url"] == 1
-    assert data["products"]["retrieval_warning_mentions"] == 1
+    assert data["products"]["with_retrieval_warning"] == 1
     assert data["citations"]["publication_entries_total"] == 1
     assert data["citations"]["publication_entries_with_issues"] == 1
     assert data["citations"]["resources_without_publications"] == 1
@@ -125,6 +125,135 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
     assert len(top) == 2
     assert top[0]["id"] == "stubres"
     assert top[0]["score"] > top[1]["score"]
+
+
+def test_product_metrics_count_unique_products(quality_dashboard_module):
+    """Products propagated onto source Resource pages are counted only once.
+
+    ``propagate_products`` copies a derived product onto every Resource page
+    listed as one of its sources, so the same product ID appears on several
+    pages. Every product metric must count distinct products.
+    """
+    mod = quality_dashboard_module
+    repo_root = Path(__file__).resolve().parents[1]
+    now = datetime(2026, 2, 16, tzinfo=timezone.utc)
+
+    shared_product = {
+        "id": "agg.download",
+        "category": "GraphProduct",
+        "name": "Aggregated Download",
+        "warnings": [
+            "File was not able to be retrieved when checked on 2026-02-10: timeout"
+        ],
+    }
+    resources = [
+        {
+            "id": "agg",
+            "name": "Aggregator",
+            "products": [dict(shared_product)],
+        },
+        # The propagated copies, as they appear on each cited source's page.
+        {
+            "id": "src1",
+            "name": "Source One",
+            "products": [
+                dict(shared_product),
+                {"id": "src1.graph", "category": "GraphProduct", "name": "Src1 Graph"},
+            ],
+        },
+        {
+            "id": "src2",
+            "name": "Source Two",
+            "products": [dict(shared_product)],
+        },
+    ]
+
+    data = mod.build_dashboard_data(
+        resources,
+        org_index={"ids": set(), "short_ids": set(), "labels": set()},
+        url_results={},
+        citation_reports={},
+        now=now,
+        link_mode="cache-or-unchecked",
+        link_summary={
+            "total_unique_urls": 0,
+            "live_checked_urls": 0,
+            "cache_hits": 0,
+            "healthy_urls": 0,
+            "broken_urls": 0,
+            "unchecked_urls": 0,
+        },
+        cache_path=repo_root / "cache" / "quality_url_status_cache.yml",
+    )
+
+    # Four product entries across the three pages, but only two distinct products.
+    assert data["products"]["total"] == 2
+    assert data["products"]["missing_format"] == 2
+    assert data["products"]["missing_original_source"] == 2
+    assert data["products"]["missing_product_url"] == 2
+    assert data["products"]["with_retrieval_warning"] == 1
+
+    # Every product figure equals the length of the list it drills down into.
+    detail = data["detail_lists"]
+    assert data["products"]["total"] == len(detail["product_total_ids"])
+    assert data["products"]["missing_format"] == len(detail["products_missing_format_ids"])
+    assert data["products"]["missing_original_source"] == len(
+        detail["products_missing_original_source_ids"]
+    )
+    assert data["products"]["missing_product_url"] == len(
+        detail["products_missing_product_url_ids"]
+    )
+    assert data["products"]["with_retrieval_warning"] == len(
+        detail["retrieval_warning_product_ids"]
+    )
+    assert detail["product_total_ids"] == ["agg.download", "src1.graph"]
+
+
+def test_products_without_ids_are_counted_separately(quality_dashboard_module):
+    """Unidentified products fall back to per-resource synthetic IDs, not deduped away."""
+    mod = quality_dashboard_module
+    repo_root = Path(__file__).resolve().parents[1]
+    now = datetime(2026, 2, 16, tzinfo=timezone.utc)
+    resources = [
+        {
+            "id": "res1",
+            "name": "Resource One",
+            "products": [
+                {"category": "GraphProduct", "name": "Unnamed A"},
+                {"category": "GraphProduct", "name": "Unnamed B"},
+            ],
+        },
+        {
+            "id": "res2",
+            "name": "Resource Two",
+            "products": [{"category": "GraphProduct", "name": "Unnamed C"}],
+        },
+    ]
+
+    data = mod.build_dashboard_data(
+        resources,
+        org_index={"ids": set(), "short_ids": set(), "labels": set()},
+        url_results={},
+        citation_reports={},
+        now=now,
+        link_mode="cache-or-unchecked",
+        link_summary={
+            "total_unique_urls": 0,
+            "live_checked_urls": 0,
+            "cache_hits": 0,
+            "healthy_urls": 0,
+            "broken_urls": 0,
+            "unchecked_urls": 0,
+        },
+        cache_path=repo_root / "cache" / "quality_url_status_cache.yml",
+    )
+
+    assert data["products"]["total"] == 3
+    assert data["detail_lists"]["product_total_ids"] == [
+        "res1.product-1",
+        "res1.product-2",
+        "res2.product-1",
+    ]
 
 
 def test_knowledge_graph_evaluation_coverage(quality_dashboard_module):

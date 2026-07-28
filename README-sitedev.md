@@ -130,6 +130,12 @@ Then access the site using the Docker host's IP address rather than localhost, e
 The site includes a data quality dashboard at `/kg-registry/data-quality-dashboard.html`.
 It reads metrics from `reports/quality-dashboard.json`, generated from all Resource pages.
 
+Product metrics count *unique* Products, keyed on product ID. A derived Product is
+propagated onto the page of every Resource it names as a source, so the same Product
+appears on many Resource pages; each one is counted once. A Product counts toward a
+completeness metric (missing `format`, missing `original_source`, missing `product_url`,
+retrieval warnings) if any of its copies shows that issue.
+
 Generate/update the dashboard metrics:
 
 ```shell
