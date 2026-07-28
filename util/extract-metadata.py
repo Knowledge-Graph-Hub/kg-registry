@@ -431,6 +431,66 @@ def concat_resource_yaml(args):
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product_for_page) + layout_string + "\n---\n")
 
+    def remove_stale_product_pages(objs):
+        """Delete product pages whose product is no longer listed by its resource.
+
+        generate_product_pages creates and updates pages but has no way to notice
+        a product that was renamed or dropped, so its page lingers and publishes a
+        URL for something the registry no longer describes.
+
+        Only resources present in `objs` are swept, so running the concat over a
+        subset of files cannot reap pages for resources it did not look at. Pages
+        it generates carry frontmatter and nothing else; anything with a body was
+        written by hand, so report it and leave it alone.
+        """
+        removed = 0
+        for obj in objs:
+            resource_id = obj.get("id")
+            if not isinstance(resource_id, str):
+                continue
+            resource_dir = pathlib.Path("resource") / resource_id
+            if not resource_dir.is_dir():
+                continue
+
+            owned_ids = {
+                product["id"]
+                for product in (obj.get("products") or [])
+                if isinstance(product, dict)
+                and isinstance(product.get("id"), str)
+                and resource_owns_product(resource_id, product["id"])
+            }
+
+            for page_path in sorted(resource_dir.glob("*.md")):
+                if page_path.stem == resource_id:
+                    continue
+                try:
+                    page = frontmatter.load(page_path)
+                except Exception as e:
+                    print(f"Error reading {page_path}, leaving in place: {e}")
+                    continue
+                if str(page.metadata.get("layout", "")).strip() != "product_detail":
+                    continue
+
+                page_id = page.metadata.get("id")
+                if not isinstance(page_id, str) or not page_id.strip():
+                    page_id = page_path.stem
+                if page_id in owned_ids:
+                    continue
+
+                if page.content.strip():
+                    print(
+                        f"WARNING: {page_path} describes {page_id}, which {resource_id} no "
+                        "longer lists, but has hand-written content - leaving in place"
+                    )
+                    continue
+
+                print(f"Removing page for product {page_id} - no longer listed by {resource_id}")
+                page_path.unlink()
+                removed += 1
+
+        if removed:
+            print(f"Removed {removed} stale product page(s)")
+
     def normalize_direct_product_sources(objs):
         """Ensure resource-owned products use a primary-source provenance relation."""
         updated_count = 0
@@ -590,9 +650,12 @@ def concat_resource_yaml(args):
                                     # Simple resource reference
                                     referenced_resources.add(resource_ref)
 
-        # Get the list of existing resource directories
+        # Get the list of existing resource directories. Resolve relative to the
+        # working directory, as every other step in this concat does -- in a real
+        # run that is the repository root, and it keeps a concat run against a
+        # different tree from writing stubs back into the repository.
         existing_resources = set()
-        resource_dir = pathlib.Path(ROOT / "resource")
+        resource_dir = pathlib.Path("resource")
         if resource_dir.exists() and resource_dir.is_dir():
             for path in resource_dir.iterdir():
                 if path.is_dir():
@@ -618,7 +681,7 @@ def concat_resource_yaml(args):
                 continue
 
             # Create the directory if it doesn't exist
-            resource_dir = ROOT / "resource" / resource_id
+            resource_dir = pathlib.Path("resource") / resource_id
             resource_dir.mkdir(parents=True, exist_ok=True)
 
             # Check if the main resource file already exists
@@ -1392,6 +1455,9 @@ def concat_resource_yaml(args):
 
     # Synchronize cross-resource product references so they match their canonical definitions
     sync_product_references(objs)
+
+    # Reap pages for products no longer listed, once every product list is final
+    remove_stale_product_pages(objs)
 
     # Clean up resource-level stale retrieval warnings once products are synchronized
     cleanup_resource_level_retrieval_warnings(objs)

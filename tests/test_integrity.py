@@ -219,3 +219,47 @@ def test_product_detail_pages_live_under_their_owning_resource():
             violations.append(f"{path} holds {product_id!r}, owned by {owner!r}")
 
     assert not violations, "Misplaced product detail pages found:\n" + "\n".join(violations)
+
+
+def test_no_stale_product_detail_pages():
+    """Every product detail page must describe a product some Resource still lists.
+
+    Product pages are generated, and `remove_stale_product_pages` reaps them when a
+    product is renamed or dropped. A page left behind publishes a URL for something
+    the registry no longer describes.
+    """
+    listed_product_ids = {
+        product["id"].strip()
+        for _path, _resource_id, _index, product in _iter_products()
+        if isinstance(product.get("id"), str) and product["id"].strip()
+    }
+
+    violations = []
+    for path in sorted(RESOURCE_DIR.glob("*/*.md")):
+        if path.stem == path.parent.name:
+            continue
+        metadata = dict(frontmatter.load(path).metadata)
+        if str(metadata.get("layout", "")).strip() != "product_detail":
+            continue
+
+        product_id = metadata.get("id")
+        product_id = product_id.strip() if isinstance(product_id, str) else path.stem
+        if product_id not in listed_product_ids:
+            violations.append(f"{path} describes {product_id!r}, which no Resource lists")
+
+    assert not violations, "Stale product detail pages found:\n" + "\n".join(violations)
+
+
+def test_every_product_has_a_detail_page():
+    """Each product needs the page its Resource page links to."""
+    violations = []
+    for _path, _resource_id, _index, product in _iter_products():
+        product_id = product.get("id")
+        if not isinstance(product_id, str) or "." not in product_id:
+            continue
+        product_id = product_id.strip()
+        owner = product_id.split(".", 1)[0]
+        if not (RESOURCE_DIR / owner / f"{product_id}.md").exists():
+            violations.append(f"{product_id} has no page at resource/{owner}/{product_id}.md")
+
+    assert not violations, "Products without a detail page:\n" + "\n".join(sorted(set(violations)))

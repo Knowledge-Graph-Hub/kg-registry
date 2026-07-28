@@ -200,3 +200,110 @@ def test_product_pages_are_written_only_under_the_owning_resource(
     assert (tmp_path / "resource" / "goa" / "goa.ftp.md").exists()
     assert not (tmp_path / "resource" / "go" / "goa.ftp.md").exists()
     assert (tmp_path / "resource" / "go" / "go.owl.md").exists()
+
+
+def test_concat_reaps_pages_for_products_that_no_longer_exist(
+    extract_metadata_module,
+    monkeypatch,
+    tmp_path,
+):
+    """Renamed or dropped products must not leave their page behind.
+
+    A page with hand-written content is reported and kept: the generator only ever
+    writes frontmatter, so a body means someone edited it.
+    """
+    resource_dir = tmp_path / "resource" / "demo"
+    resource_dir.mkdir(parents=True)
+    resource_path = resource_dir / "demo.md"
+    with resource_path.open("w", encoding="utf-8") as handle:
+        handle.write("---\n")
+        yaml.safe_dump(
+            {
+                "id": "demo",
+                "name": "Demo",
+                "description": "Demo resource",
+                "category": "DataSource",
+                "domains": ["general"],
+                "products": [
+                    {
+                        "id": "demo.current",
+                        "name": "Current",
+                        "category": "Product",
+                        "format": "tsv",
+                        "description": "Still listed",
+                    }
+                ],
+            },
+            handle,
+            sort_keys=False,
+        )
+        handle.write("---\n\n# Demo\n")
+
+    def _write_page(product_id, body=""):
+        path = resource_dir / f"{product_id}.md"
+        path.write_text(
+            f"---\nid: {product_id}\nname: {product_id}\nlayout: product_detail\n---\n{body}",
+            encoding="utf-8",
+        )
+        return path
+
+    stale = _write_page("demo.renamed-away")
+    curated = _write_page("demo.hand-edited", body="\nCurated notes worth keeping.\n")
+    eval_page = resource_dir / "demo_eval_automated.md"
+    eval_page.write_text("---\nid: demo\nlayout: eval_detail\n---\n", encoding="utf-8")
+
+    monkeypatch.chdir(tmp_path)
+    extract_metadata_module.concat_resource_yaml(
+        SimpleNamespace(
+            files=[str(resource_path)],
+            include=None,
+            output=str(tmp_path / "unsorted.yml"),
+        )
+    )
+
+    assert not stale.exists(), "page for a dropped product should be reaped"
+    assert curated.exists(), "page with hand-written content should be left alone"
+    assert eval_page.exists(), "only product_detail pages are swept"
+    assert (resource_dir / "demo.current.md").exists()
+    assert resource_path.exists()
+
+
+def test_reaper_ignores_resources_outside_the_processed_set(
+    extract_metadata_module,
+    monkeypatch,
+    tmp_path,
+):
+    """A concat over a subset of files must not reap pages it never looked at."""
+    for resource_id in ("alpha", "beta"):
+        resource_dir = tmp_path / "resource" / resource_id
+        resource_dir.mkdir(parents=True)
+        with (resource_dir / f"{resource_id}.md").open("w", encoding="utf-8") as handle:
+            handle.write("---\n")
+            yaml.safe_dump(
+                {
+                    "id": resource_id,
+                    "name": resource_id,
+                    "description": f"{resource_id} resource",
+                    "category": "DataSource",
+                    "domains": ["general"],
+                    "products": [],
+                },
+                handle,
+                sort_keys=False,
+            )
+            handle.write("---\n")
+        (resource_dir / f"{resource_id}.orphan.md").write_text(
+            f"---\nid: {resource_id}.orphan\nlayout: product_detail\n---\n", encoding="utf-8"
+        )
+
+    monkeypatch.chdir(tmp_path)
+    extract_metadata_module.concat_resource_yaml(
+        SimpleNamespace(
+            files=[str(tmp_path / "resource" / "alpha" / "alpha.md")],
+            include=None,
+            output=str(tmp_path / "unsorted.yml"),
+        )
+    )
+
+    assert not (tmp_path / "resource" / "alpha" / "alpha.orphan.md").exists()
+    assert (tmp_path / "resource" / "beta" / "beta.orphan.md").exists()
