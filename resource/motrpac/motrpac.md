@@ -28,7 +28,7 @@ domains:
 - systems biology
 homepage_url: https://motrpac-data.org/
 id: motrpac
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-07-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -716,6 +716,7 @@ publications:
   preferred: false
   title: Temporal dynamics of the multi-omic response to endurance exercise training
   year: '2024'
+repository: https://github.com/MoTrPAC
 taxon:
 - NCBITaxon:10116
 ---
