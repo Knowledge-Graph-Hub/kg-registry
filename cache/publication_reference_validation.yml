@@ -3976,27 +3976,23 @@ entries:
     status: valid
     warnings: []
   resource/motrpac/motrpac.md#publication[0]#DOI:10.1016/j.cell.2020.06.004:
-    checked_at: '2026-06-15T22:07:58Z'
+    checked_at: '2026-07-28T17:04:18Z'
     errors: []
-    fingerprint: fb8a2614ff8c6535029816065a3f3e4a21c57460a033aa37987f301b2d195b3e
+    fingerprint: 7457f1393cc981e93e37d3a067d29cf609b961c83ec518fcb42fe6248e305c00
     publication_index: 0
     reference_id: DOI:10.1016/j.cell.2020.06.004
     source_path: resource/motrpac/motrpac.md
-    status: warning
-    warnings:
-    - first author 'MoTrPAC Study Group' could not be confidently compared to cached
-      first author 'James A. Sanford' in references_cache/DOI_10.1016_j.cell.2020.06.004.md
+    status: valid
+    warnings: []
   resource/motrpac/motrpac.md#publication[1]#DOI:10.1038/s41586-023-06877-w:
-    checked_at: '2026-06-15T22:07:58Z'
+    checked_at: '2026-07-28T17:04:18Z'
     errors: []
-    fingerprint: ce3282e6fc8e54139021a044bbe695f1c426f4d04457b0a67ae766d96fd266de
+    fingerprint: 5564efc2bb97435457cf7836925ccb5f3080b9ff5a5f5e300d8811a080bb4de4
     publication_index: 1
     reference_id: DOI:10.1038/s41586-023-06877-w
     source_path: resource/motrpac/motrpac.md
-    status: warning
-    warnings:
-    - first author 'MoTrPAC Study Group' could not be confidently compared to cached
-      first author 'David Amar' in references_cache/DOI_10.1038_s41586-023-06877-w.md
+    status: valid
+    warnings: []
   resource/mousemine/mousemine.md#publication[0]#DOI:10.1007/s00335-015-9573-z:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
