@@ -14,7 +14,11 @@ import yaml
 
 from copy import deepcopy
 from frontmatter.util import u
-from linkml.validator import validate
+from functools import lru_cache
+from linkml.validator import Validator
+from linkml.validator.plugins import JsonschemaValidationPlugin
+from linkml_runtime.linkml_model.meta import SchemaDefinition
+from linkml_runtime.loaders import yaml_loader
 from yaml.parser import ParserError
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
@@ -69,6 +73,20 @@ if str(ROOT / "src") not in sys.path:
 # and CI builds, so keep it opt-in.
 PARALLEL_LOADING = os.environ.get("PARALLEL_LOADING", "no").lower() in ("yes", "true", "1")
 PARALLEL_WORKERS = int(os.environ.get("PARALLEL_WORKERS", "10"))
+
+
+@lru_cache(maxsize=1)
+def get_schema_validator():
+    """
+    Build the LinkML validator for the combined schema, once per process.
+
+    This mirrors what `linkml.validator.validate()` does internally, but that
+    helper reloads the schema and re-materializes the JSON Schema on every call.
+    Validating ~1000 resources that way costs ~0.8s each; reusing one validator
+    brings it down to ~0.03s each.
+    """
+    schema = yaml_loader.load(str(SOURCE_SCHEMA_PATH), target_class=SchemaDefinition)
+    return Validator(schema, validation_plugins=[JsonschemaValidationPlugin(closed=True)])
 
 
 def main():
@@ -237,7 +255,7 @@ def validate_markdown(args):
         else:
             continue
 
-        report = validate(instance=obj, schema=str(SOURCE_SCHEMA_PATH), target_class=target_class)
+        report = get_schema_validator().validate(obj, target_class)
         if report.results:
             for result in report.results:
                 if result.severity == "ERROR":
