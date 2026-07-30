@@ -25,16 +25,45 @@ jobs:
           
       - name: Update registry files
         run: uv run make all
-          
+
+      # Runs before the commit: if the derived files disagree with kgs.yml the
+      # build produced an inconsistent registry, and committing half of it would
+      # publish worse data than doing nothing.
+      - name: Check generated artifacts are in sync
+        run: uv run make check-artifacts
+
       - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          git add registry/kgs.jsonld registry/kgs.yml registry/parquet/*.parquet registry/taxon_mapping.yaml
+          # Every generated target of `make all` has to be staged here, or it
+          # dies with the runner and the site serves a stale copy. kgs-summary.json
+          # in particular is what the home page table actually fetches, so leaving
+          # it out silently freezes the resource browser (see registry-data.js).
+          git add registry/kgs.jsonld registry/kgs.yml registry/kgs-summary.json registry/kgs.ttl
+          git add registry/organizations.yml registry/parquet/*.parquet registry/taxon_mapping.yaml
           git add registry/parquet-downloads.html assets/js/duckdb/*
-          git add resource/*.md reports/ _config.yml _data/schema.yaml
+          # resource pages live at resource/<id>/<id>.md, so a top-level *.md
+          # glob matches nothing. Stage the directory to pick up adds, edits and
+          # the product pages the build reaps.
+          git add resource/ reports/ _config.yml _data/schema.yaml
           # Persist the URL/reference caches the build just refreshed. Without
           # this they die with the runner, so every run re-checks every URL from
           # scratch and the cache TTLs never do anything.
           git add cache/
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update registry files" && git push)
+
+      # Deliberately after the push: anything `make all` touched but the step
+      # above does not stage is a file the site will serve a stale copy of. This
+      # fails the job so it gets noticed, but only once the registry update
+      # itself is safely committed. tmp/ is scratch space the build recreates.
+      - name: Check for unstaged build output
+        run: |
+          leftover=$(git status --porcelain -- . ':(exclude)tmp/')
+          if [ -n "$leftover" ]; then
+            echo "::error::'make all' changed files that the commit step does not stage:"
+            echo "$leftover"
+            echo "Add them to the 'git add' list in this workflow, or the site will serve stale copies."
+            exit 1
+          fi
+          echo "No unstaged build output."

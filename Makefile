@@ -58,7 +58,7 @@ SCHEMA_DOC_DIR = docs/schema
 SCHEMA_DIR = src/kg_registry/kg_registry_schema
 
 ### Main Tasks
-.PHONY: all pull_and_build test pull clean sync-obo-foundry sync-frink quality-dashboard
+.PHONY: all pull_and_build test pull clean sync-obo-foundry sync-frink quality-dashboard check-artifacts
 
 all: \
 	ingest-kg-monarch \
@@ -217,6 +217,12 @@ registry/kgs-summary.json: registry/kgs.yml
 # Generate Turtle RDF serialization from YAML
 registry/kgs.ttl: registry/kgs.yml
 	$(RUN) python ./util/yaml2ttl.py $< $@.tmp && mv $@.tmp $@
+
+# Verify the derived artifacts agree with registry/kgs.yml. Run after `make all`
+# so a file that failed to regenerate -- or regenerated but never got committed --
+# fails loudly instead of quietly serving stale data to the site.
+check-artifacts:
+	$(RUN) python ./util/check_generated_artifacts.py
 
 ### Validate Configuration Files
 
