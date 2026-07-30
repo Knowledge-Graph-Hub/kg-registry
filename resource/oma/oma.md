@@ -109,12 +109,14 @@ products:
     source: oma
   product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-28: No Content-Length
+    header found'
   - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
     canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
     but is not currently served.'
-  - 'File was not able to be retrieved when checked on 2026-07-28: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
     header found'
 - category: Product
   description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
@@ -214,9 +216,9 @@ products:
     source: oma
   product_url: https://omabrowser.org/All/oma-species.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-15: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -229,12 +231,14 @@ products:
     source: oma
   product_url: https://omabrowser.org/All/group-descriptions.txt.gz
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-07-28: No Content-Length
+    header found'
   - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
     canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
     but is not currently served.'
-  - 'File was not able to be retrieved when checked on 2026-07-28: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
     header found'
 publications:
 - authors:

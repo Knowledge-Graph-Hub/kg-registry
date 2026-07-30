@@ -10,8 +10,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: lipidmaps
 product_url: https://www.lipidmaps.org/databases/lmsd/download
-warnings:
-- File was not able to be retrieved when checked on 2026-07-15_ HTTP 520 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

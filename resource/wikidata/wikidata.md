@@ -394,9 +394,9 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 406 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-28: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 406 error
     when accessing file'
 - category: Product
   compression: gzip

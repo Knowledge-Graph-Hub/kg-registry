@@ -390,6 +390,7 @@ ikraph,active,PASS
 imex,active,PASS
 imgt,active,PASS
 immport,active,PASS
+imo-knowledge-graph,active,PASS
 imodulondb,active,PASS
 impc,active,PASS
 inchikey,active,PASS

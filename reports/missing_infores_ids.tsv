@@ -333,6 +333,7 @@ iidp	Integrated Islet Distribution Program (IIDP)	DataSource	https://iidp.coh.or
 ikraph	iKraph	KnowledgeGraph	https://biokde.insilicom.com/	resource/ikraph/ikraph.md
 imgt	IMGT	DataSource	https://www.imgt.org/	resource/imgt/imgt.md
 immport	ImmPort	DataSource	https://immport.niaid.nih.gov/home	resource/immport/immport.md
+imo-knowledge-graph	IMO Health Knowledge Graph	KnowledgeGraph	https://www.imohealth.com/knowledge-graph/	resource/imo-knowledge-graph/imo-knowledge-graph.md
 imodulondb	iModulonDB	DataSource	https://imodulondb.org/	resource/imodulondb/imodulondb.md
 impc	International Mouse Phenotyping Consortium	DataSource	https://www.mousephenotype.org/	resource/impc/impc.md
 imr	Molecule role (INOH Protein name/family name ontology)	Ontology	http://www.inoh.org	resource/imr/imr.md

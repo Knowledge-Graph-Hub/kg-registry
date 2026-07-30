@@ -190,9 +190,9 @@ products:
     source: aop-wiki
   product_url: https://github.com/biobricks-ai/aopwikirdf-kg
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-28: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
     when accessing file'
 taxon:
 - NCBITaxon:9606

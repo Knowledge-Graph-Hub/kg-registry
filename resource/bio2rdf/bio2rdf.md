@@ -88,13 +88,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-15: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-07-28: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
     to URL: HTTPSConnectionPool(host=''biosemantics.org'', port=443): Max retries
     exceeded with url: /biosearch (Caused by NewConnectionError("HTTPSConnection(host=''biosemantics.org'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-07-28: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-07-30: Timeout connecting
     to URL'
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
