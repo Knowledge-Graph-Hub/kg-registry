@@ -227,7 +227,11 @@ Content
 """
     )
 
-    monkeypatch.setattr(mod, "validate", lambda **_: SimpleNamespace(results=[]))
+    monkeypatch.setattr(
+        mod,
+        "get_schema_validator",
+        lambda: SimpleNamespace(validate=lambda *_: SimpleNamespace(results=[])),
+    )
 
     def fake_validate_publication_references(*args, **kwargs):
         return SimpleNamespace(errors=["publication mismatch"], warnings=["publication warning"])
@@ -271,7 +275,11 @@ Content
 """
     )
 
-    monkeypatch.setattr(mod, "validate", lambda **_: SimpleNamespace(results=[]))
+    monkeypatch.setattr(
+        mod,
+        "get_schema_validator",
+        lambda: SimpleNamespace(validate=lambda *_: SimpleNamespace(results=[])),
+    )
 
     def fake_validate_publication_references(*args, **kwargs):
         return SimpleNamespace(errors=["publication mismatch"], warnings=["publication warning"])
@@ -322,7 +330,11 @@ Content
 """
     )
 
-    monkeypatch.setattr(mod, "validate", lambda **_: SimpleNamespace(results=[]))
+    monkeypatch.setattr(
+        mod,
+        "get_schema_validator",
+        lambda: SimpleNamespace(validate=lambda *_: SimpleNamespace(results=[])),
+    )
 
     def fake_validate_publication_references(*args, **kwargs):
         return SimpleNamespace(
