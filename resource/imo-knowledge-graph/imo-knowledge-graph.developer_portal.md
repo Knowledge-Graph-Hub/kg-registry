@@ -10,5 +10,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: imo-knowledge-graph
 product_url: https://developer.imohealth.com/
+warnings:
+- File was not able to be retrieved when checked on 2026-07-30_ Timeout connecting
+  to URL
 layout: product_detail
 ---

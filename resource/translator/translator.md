@@ -910,9 +910,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-07-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: DocumentationProduct
   description: SmartAPI registry entry for the Multiomics Clinical Trials KP TRAPI

@@ -43,9 +43,9 @@ products:
     source: chembank
   product_url: http://web.archive.org/web/20180524103413/http://chembank.broadinstitute.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-28: HTTP 498 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 498 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 498 error
     when accessing file'
 - category: DocumentationProduct
   description: Primary publication describing ChemBank, its data model, and its cheminformatics

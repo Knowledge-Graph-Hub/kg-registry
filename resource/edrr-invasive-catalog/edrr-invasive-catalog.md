@@ -32,7 +32,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: edrr-invasive-catalog
   product_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
+    header found'
 - category: GraphProduct
   description: The Wildlife-KN knowledge graph, an integrative RDF network of managed
     species and their habitats, environmental factors, and climate context, built

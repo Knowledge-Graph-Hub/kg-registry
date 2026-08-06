@@ -130,6 +130,7 @@ compath	ComPath	DataSource	https://compath.scai.fraunhofer.de/	resource/compath/
 connections-hypothesis-kp	Connections Hypothesis KP	KnowledgeGraph	https://github.com/di2ag/chp_api	resource/connections-hypothesis-kp/connections-hypothesis-kp.md
 coralkinome	CoralKinome	DataSource	https://www.coralkinome.org/	resource/coralkinome/coralkinome.md
 corum	CORUM	DataSource	https://mips.helmholtz-muenchen.de/corum/	resource/corum/corum.md
+courage	COURAGE Knowledge Graph	KnowledgeGraph	https://cultural-opposition.eu/	resource/courage/courage.md
 cpathkg	C-Path Knowledge Graph	KnowledgeGraph	https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration	resource/cpathkg/cpathkg.md
 cpic	CPIC	Resource	https://cpicpgx.org/	resource/cpic/cpic.md
 cpt	Current Procedural Terminology	DataSource	https://www.ama-assn.org/practice-management/cpt	resource/cpt/cpt.md
