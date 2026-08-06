@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/obophenotype/caro/
 id: caro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: caro
         relation_type: prov:hadPrimarySource
+  - id: caro.kg-bioportal
+    name: CARO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Common Anatomy Reference Ontology (CARO), produced by KG-Bioportal from the BioPortal submission. The archive contains CARO_nodes.tsv and CARO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CARO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: caro
+        relation_type: prov:hadPrimarySource
+    node_count: 8891
+    edge_count: 10155
+    latest_version: '2023-03-15'
 repository: https://github.com/obophenotype/caro
 publications: []
 ---

@@ -19,7 +19,7 @@ domains:
 homepage_url: https://github.com/obo-behavior/behavior-ontology/
 id: nbo
 infores_id: nbo
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -187,6 +187,20 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- id: nbo.kg-bioportal
+  name: NBO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Neuro Behavior Ontology (NBO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains NBO_nodes.tsv and NBO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NBO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: nbo
+    relation_type: prov:hadPrimarySource
+  node_count: 5142
+  edge_count: 13594
+  latest_version: '2023-07-04'
 publications:
 - authors:
   - Hoehndorf R

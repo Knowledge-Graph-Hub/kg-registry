@@ -18,7 +18,7 @@ domains:
 - information technology
 homepage_url: https://humanatlas.io/
 id: hravs
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -202,6 +202,20 @@ products:
     source: vccf
   product_file_size: 376981902
   product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
+- id: hravs.kg-bioportal
+  name: HRAVS KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of HuBMAP Research Attributes Value Set (HRAVS),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains HRAVS_nodes.tsv
+    and HRAVS_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HRAVS.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: hravs
+    relation_type: prov:hadPrimarySource
+  node_count: 969
+  edge_count: 2596
 publications:
 - authors:
   - Andreas Bueckle

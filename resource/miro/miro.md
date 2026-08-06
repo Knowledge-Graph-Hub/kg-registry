@@ -15,7 +15,7 @@ domains:
   - environment
 homepage_url: http://purl.obolibrary.org/obo/miro.owl
 id: miro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -42,6 +42,19 @@ products:
     original_source:
       - source: miro
         relation_type: prov:hadPrimarySource
+  - id: miro.kg-bioportal
+    name: MIRO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Mosquito Insecticide Resistance (MIRO), produced by KG-Bioportal from the BioPortal submission. The archive contains MIRO_nodes.tsv and MIRO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIRO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: miro
+        relation_type: prov:hadPrimarySource
+    node_count: 4450
+    edge_count: 4456
+    latest_version: releases/2014-05-14
 repository: https://github.com/VEuPathDB-ontology/MIRO
 taxon:
   - NCBITaxon:44484

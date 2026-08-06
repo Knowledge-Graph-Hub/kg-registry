@@ -20,7 +20,7 @@ domains:
 - organisms
 homepage_url: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 id: eupath
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -38,24 +38,38 @@ products:
   original_source:
   - source: eupath
     relation_type: prov:hadPrimarySource
+- id: eupath.kg-bioportal
+  name: EUPATH KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of VEuPathDB Ontology (EUPATH), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains EUPATH_nodes.tsv and EUPATH_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EUPATH.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: eupath
+    relation_type: prov:hadPrimarySource
+  node_count: 6164
+  edge_count: 13057
+  latest_version: '2023-05-30'
 repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 publications:
 - authors:
-  - "Zheng, Jie"
-  - "Cade, JasShon"
-  - "Brunk, Brian"
-  - "Roos, David"
-  - "Stoeckert, Christian"
-  - "James, San"
-  - "Arinaitwe, Emmanuel"
-  - "Greenhouse, Bryan"
-  - "Dorsey, Grant"
-  - "Sullivan, Steven"
-  - "Carlton, Jane"
-  - "Carrasco-Escobar, Gabriel"
-  - "Gamboa, Dionicia"
-  - "Maguina-Mercedes, Paula"
-  - "Vinetz, Joseph"
+  - Zheng, Jie
+  - Cade, JasShon
+  - Brunk, Brian
+  - Roos, David
+  - Stoeckert, Christian
+  - James, San
+  - Arinaitwe, Emmanuel
+  - Greenhouse, Bryan
+  - Dorsey, Grant
+  - Sullivan, Steven
+  - Carlton, Jane
+  - Carrasco-Escobar, Gabriel
+  - Gamboa, Dionicia
+  - Maguina-Mercedes, Paula
+  - Vinetz, Joseph
   doi: 10.5281/zenodo.6685957
   id: https://doi.org/10.5281/zenodo.6685957
   journal: Zenodo

@@ -19,7 +19,7 @@ domains:
 - phenotype
 homepage_url: https://github.com/AnimalGenome/vertebrate-trait-ontology
 id: vt
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,6 +37,20 @@ products:
   original_source:
   - source: vt
     relation_type: prov:hadPrimarySource
+- id: vt.kg-bioportal
+  name: VT KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Vertebrate Trait Ontology (VT), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains VT_nodes.tsv and VT_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VT.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: vt
+    relation_type: prov:hadPrimarySource
+  node_count: 4116
+  edge_count: 4953
+  latest_version: '2026-07-23'
 publications:
 - authors:
   - Carissa A Park

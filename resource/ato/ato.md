@@ -17,7 +17,7 @@ domains:
 - biological systems
 homepage_url: http://www.amphibanat.org
 id: ato
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -35,6 +35,21 @@ products:
     source: ato
   product_url: http://purl.obolibrary.org/obo/ato.owl
   warnings: []
+- id: ato.kg-bioportal
+  name: ATO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Amphibian Taxonomy Ontology (ATO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains ATO_nodes.tsv
+    and ATO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ATO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ato
+    relation_type: prov:hadPrimarySource
+  node_count: 6147
+  edge_count: 12163
+  latest_version: See Remote Site
 publications: []
 taxon:
 - NCBITaxon:8292

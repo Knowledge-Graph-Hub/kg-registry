@@ -18,7 +18,7 @@ domains:
   - chemistry and biochemistry
 homepage_url: https://github.com/InSilicoVida-Research-Lab/pbpko
 id: pbpko
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -36,19 +36,31 @@ products:
         source: pbpko
     product_file_size: 53137
     product_url: http://purl.obolibrary.org/obo/pbpko.owl
+  - id: pbpko.kg-bioportal
+    name: PBPKO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Physiologically-Based Pharmacokinetic ontology (PBPKO), produced by KG-Bioportal from the BioPortal submission. The archive contains PBPKO_nodes.tsv and PBPKO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PBPKO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: pbpko
+        relation_type: prov:hadPrimarySource
+    node_count: 1541
+    edge_count: 5226
+    latest_version: '2026-07-15'
 publications:
-- authors:
-  - Kumar V
-  - Deepika D
-  - Kumar S
-  - Sharma S
-  doi: 10.1016/j.toxlet.2024.07.382
-  id: https://doi.org/10.1016/j.toxlet.2024.07.382
-  journal: Toxicology Letters
-  preferred: true
-  title: P05-47 An ontology of Physiologically Based Pharmacokinetic Model (PBPK) for
-    harmonization and automation of modeling framework (PBPKO)
-  year: '2024'
+  - authors:
+      - Kumar V
+      - Deepika D
+      - Kumar S
+      - Sharma S
+    doi: 10.1016/j.toxlet.2024.07.382
+    id: https://doi.org/10.1016/j.toxlet.2024.07.382
+    journal: Toxicology Letters
+    preferred: true
+    title: P05-47 An ontology of Physiologically Based Pharmacokinetic Model (PBPK) for harmonization and automation of modeling framework (PBPKO)
+    year: '2024'
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 ---
 

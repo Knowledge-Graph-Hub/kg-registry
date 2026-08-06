@@ -11,12 +11,12 @@ contacts:
   contact_details:
   - contact_type: github
     value: matuskalas
-  label: "Mat\xFA\u0161 Kala\u0161"
+  label: Matúš Kalaš
 - category: Individual
   contact_details:
   - contact_type: github
     value: hmenager
-  label: "Herv\xE9 M\xE9nager"
+  label: Hervé Ménager
 creation_date: '2025-06-04T00:00:00Z'
 description: EDAM is an ontology of bioscientific data analysis and data management,
   covering topics, operations, data, identifiers, and formats. It supports semantic
@@ -26,7 +26,7 @@ domains:
 - biological systems
 homepage_url: https://edamontology.org/
 id: edam
-last_modified_date: '2025-10-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -305,10 +305,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- id: edam.kg-bioportal
+  name: EDAM KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of EDAM - The ontology of data analysis and management
+    (EDAM), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    EDAM_nodes.tsv and EDAM_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EDAM.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: edam
+    relation_type: prov:hadPrimarySource
+  node_count: 4613
+  edge_count: 15464
+  latest_version: 1.25-20260626T1230Z
 publications:
 - authors:
   - Ison J
-  - "Kala\u0161 M"
+  - Kalaš M
   - Jonassen I
   - Bolser D
   - Uludag M

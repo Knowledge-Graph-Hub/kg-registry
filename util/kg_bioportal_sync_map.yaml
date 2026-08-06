@@ -1,0 +1,64 @@
+# KG-Bioportal sync: curated acronym-to-resource decisions
+#
+# util/sync_kg_bioportal.py adds a KGX GraphProduct to a KG-Registry resource for
+# each ontology KG-Bioportal successfully transformed. It matches a BioPortal
+# acronym to a resource by lowercasing the acronym, but only accepts that match
+# when the two names are similar enough to rule out a collision.
+#
+# This file records the decisions that heuristic cannot make on its own. Entries
+# the sync could not resolve are written to reports/kg_bioportal_unmatched.tsv
+# after every run, with a suggested resource where one exists -- that report is
+# the worklist for adding to this file.
+
+# BioPortal acronym -> KG-Registry resource id, for pairs the name check rejects
+# or would never see. BioPortal acronyms and KG-Registry ids drift apart in both
+# directions, so these are checked before anything else.
+confirmed:
+  # Same ontology, different acronym on BioPortal.
+  APOLLO-SV: apollo_sv    # Apollo Structured Vocabulary
+  AURA: bio101            # KB_Bio_101
+  FB-CV: fbcv             # FlyBase Controlled Vocabulary
+  FB-SP: fbsp             # Fly taxonomy
+  GMM: gomapman           # GoMapMan
+  MHCRO: mro              # MHC Restriction Ontology (BioPortal's MRO is unrelated)
+  NPOKB: npo              # Neuron Phenotype Ontology (BioPortal's NPO is unrelated)
+  OBI_BCGO: bcgo          # Beta Cell Genomics Ontology (BioPortal's BCGO is unrelated)
+  OBOREL: ro              # Relations Ontology (BioPortal's RO is unrelated)
+  PLANTSO: pso            # Plant Stress Ontology (BioPortal's PSO is unrelated)
+  PTO: to                 # Plant Trait Ontology
+  PTRANS: trans           # Pathogen Transmission Ontology (BioPortal's TRANS is unrelated)
+  VANDF: ndfrt            # Veterans Health Administration National Drug File
+
+  # Acronym matches the resource id, but the names are worded too differently
+  # for the automatic name check to accept.
+  EPIO: epio              # "EpilepsyOntology" vs. "Epilepsy Ontology"
+  HGNC: hgnc              # "HUGO Gene Nomenclature" vs. the bare acronym
+  FALDO: faldo            # spelled-out name vs. the acronym alone
+  MIXS: mixs              # "Minimal Information about any Sequence Ontology" vs. "MIxS"
+  PATO: pato              # "Phenotypic Quality Ontology" vs. "Phenotype And Trait Ontology"
+
+# BioPortal acronyms that must never be written, whatever the name check says.
+rejected:
+  # Acronym collisions: BioPortal uses the acronym for a different ontology than
+  # the identically-named KG-Registry resource.
+  - ATOM       # "Atlas Ontology Model", not the Anti-tumor Biomaterial knowledge graph
+  - BCGO       # "Breast Cancer Grading Ontology", not Beta Cell Genomics Ontology
+  - COG        # "Common Ontology of Genome", not Clusters of Orthologous Genes
+  - EO         # "Ethnicity Ontoloy", not Plant Environment Ontology
+  - EPO        # "Early Pregnancy Ontology", not Epidemiology Ontology
+  - GRO        # "Gene Regulation Ontology", not Cereal Plant Gross Anatomy
+  - MRO        # "Defen", not MHC Restriction Ontology
+  - NDFRT      # NDF-RT proper, not the Veterans Health Administration drug file
+  - NEO        # "Neurologic Examination Ontology", not Noctua Entity Ontology
+  - NPO        # "NanoParticle Ontology", not Neuron Phenotype Ontology
+  - PSO        # "PatientSafetyOntology", not Plant Stress Ontology
+  - RGD        # "RRB Group D", not the Rat Genome Database
+  - RO         # "Radiomics Ontology", not the Relation Ontology
+  - TRANS      # "Nurse Transitional", not Pathogen Transmission Ontology
+
+  # Duplicate submissions: BioPortal hosts the same ontology under a second
+  # acronym that already matches by other means, so only one can supply the
+  # resource's single KG-Bioportal product.
+  - EPILONT    # duplicate of EPIO -> epio
+  - HPO        # Hypertension-Ontology, already covered by HTN -> htn
+  - LION       # LipidOntology, already covered by LIPRO -> lipro

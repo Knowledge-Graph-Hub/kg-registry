@@ -19,7 +19,7 @@ domains:
   - information technology
 homepage_url: https://github.com/information-artifact-ontology/IAO/
 id: "iao"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: "http://creativecommons.org/licenses/by/4.0/"
@@ -303,6 +303,19 @@ products:
         source: obi
     product_file_size: 642902930
     product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
+  - id: iao.kg-bioportal
+    name: IAO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Information Artifact Ontology (IAO), produced by KG-Bioportal from the BioPortal submission. The archive contains IAO_nodes.tsv and IAO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IAO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: iao
+        relation_type: prov:hadPrimarySource
+    node_count: 505
+    edge_count: 878
+    latest_version: '2026-03-30'
 publications:
   - authors:
       - Ceusters W

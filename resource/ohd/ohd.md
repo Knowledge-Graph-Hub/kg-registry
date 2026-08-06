@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://purl.obolibrary.org/obo/ohd
 id: ohd
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,19 @@ products:
         source: ohd
     product_file_size: 307089
     product_url: http://purl.obolibrary.org/obo/ohd.owl
+  - id: ohd.kg-bioportal
+    name: OHD KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of The Oral Health and Disease Ontology (OHD), produced by KG-Bioportal from the BioPortal submission. The archive contains OHD_nodes.tsv and OHD_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHD.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: ohd
+        relation_type: prov:hadPrimarySource
+    node_count: 2325
+    edge_count: 7280
+    latest_version: '2026-03-16'
 publications:
   - authors:
       - Duncan WD

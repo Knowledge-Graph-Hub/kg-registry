@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/semanticchemistry/semanticchemistry
 id: cheminf
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -69,6 +69,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: skos
   product_url: https://forum.semantic-metabolomics.fr/sparql
+- id: cheminf.kg-bioportal
+  name: CHEMINF KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Chemical Information Ontology (CHEMINF), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains CHEMINF_nodes.tsv
+    and CHEMINF_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHEMINF.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: cheminf
+    relation_type: prov:hadPrimarySource
+  node_count: 625
+  edge_count: 639
+  latest_version: 2.1.0
 publications:
 - authors:
   - Hastings J

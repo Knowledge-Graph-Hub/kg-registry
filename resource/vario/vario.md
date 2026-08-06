@@ -18,7 +18,7 @@ domains:
   - biological systems
 homepage_url: http://variationontology.org
 id: vario
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -46,28 +46,41 @@ products:
     original_source:
       - source: vario
         relation_type: prov:hadPrimarySource
+  - id: vario.kg-bioportal
+    name: VARIO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Variation Ontology (VARIO), produced by KG-Bioportal from the BioPortal submission. The archive contains VARIO_nodes.tsv and VARIO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VARIO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: vario
+        relation_type: prov:hadPrimarySource
+    node_count: 532
+    edge_count: 518
+    latest_version: '2018-11-09'
 publications:
-- authors:
-  - Vihinen M
-  doi: 10.1101/gr.157495.113
-  id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
-  journal: Genome Res
-  title: Variation Ontology for annotation of variation effects and mechanisms
-  year: '2014'
-- authors:
-  - Vihinen M
-  doi: 10.1186/2041-1480-5-9
-  id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
-  journal: J Biomed Semantics
-  title: 'Variation ontology: annotator guide'
-  year: '2014'
-- authors:
-  - Vihinen M
-  doi: 10.1007/s00439-015-1529-6
-  id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
-  journal: Hum Genet
-  title: Types and effects of protein variations
-  year: '2015'
+  - authors:
+      - Vihinen M
+    doi: 10.1101/gr.157495.113
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
+    journal: Genome Res
+    title: Variation Ontology for annotation of variation effects and mechanisms
+    year: '2014'
+  - authors:
+      - Vihinen M
+    doi: 10.1186/2041-1480-5-9
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
+    journal: J Biomed Semantics
+    title: 'Variation ontology: annotator guide'
+    year: '2014'
+  - authors:
+      - Vihinen M
+    doi: 10.1007/s00439-015-1529-6
+    id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
+    journal: Hum Genet
+    title: Types and effects of protein variations
+    year: '2015'
 ---
 
 ## Description

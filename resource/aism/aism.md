@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/insect-morphology/aism
 id: aism
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -56,6 +56,19 @@ products:
     original_source:
       - source: aism
         relation_type: prov:hadPrimarySource
+  - id: aism.kg-bioportal
+    name: AISM KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM), produced by KG-Bioportal from the BioPortal submission. The archive contains AISM_nodes.tsv and AISM_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AISM.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: aism
+        relation_type: prov:hadPrimarySource
+    node_count: 8584
+    edge_count: 31372
+    latest_version: '2023-04-14'
 repository: https://github.com/insect-morphology/aism
 publications:
   - authors:

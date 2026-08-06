@@ -20,7 +20,7 @@ domains:
 homepage_url: http://dictybase.org/
 id: ddanat
 infores_id: dda
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -198,6 +198,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- id: ddanat.kg-bioportal
+  name: DDANAT KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Dictyostelium Discoideum Anatomy Ontology (DDANAT),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains DDANAT_nodes.tsv
+    and DDANAT_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DDANAT.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ddanat
+    relation_type: prov:hadPrimarySource
+  node_count: 163
+  edge_count: 360
+  latest_version: '1.19'
 publications:
 - authors:
   - Gaudet P

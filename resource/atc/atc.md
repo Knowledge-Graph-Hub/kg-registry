@@ -26,7 +26,7 @@ domains:
 - biomedical
 homepage_url: https://atcddd.fhi.no/atc_ddd_index/
 id: atc
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 name: Anatomical Therapeutic Chemical Classification System
 products:
@@ -673,13 +673,26 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
-    when accessing file'
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
+    (ATC), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    ATC_nodes.tsv and ATC_edges.tsv.
+  edge_count: 7023
+  format: kgx
+  id: atc.kg-bioportal
+  latest_version: '2025_02_10'
+  name: ATC KGX graph (KG-Bioportal)
+  node_count: 7033
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: atc
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ATC.tar.gz
 synonyms:
 - ATC
 - ATC/DDD

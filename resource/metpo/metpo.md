@@ -20,7 +20,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/berkeleybop/metpo
 id: metpo
-last_modified_date: '2026-01-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -243,6 +243,20 @@ products:
     source: uniprot
   product_file_size: 4640682152
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
+- id: metpo.kg-bioportal
+  name: METPO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of METPO (METPO), produced by KG-Bioportal from the
+    BioPortal submission. The archive contains METPO_nodes.tsv and METPO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/METPO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: metpo
+    relation_type: prov:hadPrimarySource
+  node_count: 1654
+  edge_count: 3189
+  latest_version: '2026-06-12'
 repository: https://github.com/berkeleybop/metpo
 synonyms:
 - METPO

@@ -26,7 +26,7 @@ domains:
 - systems biology
 homepage_url: https://gomapman.nib.si/
 id: gomapman
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -412,6 +412,20 @@ products:
     source: gomapman
   product_file_size: 702407
   product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/nodes
+- id: gomapman.kg-bioportal
+  name: GMM KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of GoMapMan (GMM), produced by KG-Bioportal from
+    the BioPortal submission. The archive contains GMM_nodes.tsv and GMM_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GMM.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: gomapman
+    relation_type: prov:hadPrimarySource
+  node_count: 1902
+  edge_count: 1895
+  latest_version: '1.2'
 publications:
 - authors:
   - Ramsak Z

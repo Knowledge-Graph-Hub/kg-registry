@@ -16,7 +16,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://obofoundry.org/ontology/lipro.html
 id: lipro
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -35,6 +35,20 @@ products:
     source: lipro
   product_file_size: 50539
   product_url: http://aber-owl.net/media/ontologies/LIPRO/4/lipro.owl
+- id: lipro.kg-bioportal
+  name: LIPRO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Lipid Ontology (LIPRO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains LIPRO_nodes.tsv and LIPRO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/LIPRO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: lipro
+    relation_type: prov:hadPrimarySource
+  node_count: 292
+  edge_count: 17
+  latest_version: See Remote Site
 publications:
 - authors:
   - Chepelev LL

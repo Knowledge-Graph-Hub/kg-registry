@@ -20,7 +20,7 @@ domains:
 - organisms
 homepage_url: https://github.com/phenoscape/taxrank
 id: taxrank
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -48,6 +48,21 @@ products:
   original_source:
   - source: taxrank
     relation_type: prov:hadPrimarySource
+- id: taxrank.kg-bioportal
+  name: TAXRANK KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Taxonomic Rank Vocabulary (TAXRANK), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains TAXRANK_nodes.tsv
+    and TAXRANK_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAXRANK.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: taxrank
+    relation_type: prov:hadPrimarySource
+  node_count: 96
+  edge_count: 80
+  latest_version: unknown
 repository: https://github.com/phenoscape/taxrank
 publications:
 - authors:

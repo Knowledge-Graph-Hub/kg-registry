@@ -19,7 +19,7 @@ domains:
   - environment
 homepage_url: https://github.com/PopulationAndCommunityOntology/pco
 id: pco
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -37,6 +37,19 @@ products:
     original_source:
       - source: pco
         relation_type: prov:hadPrimarySource
+  - id: pco.kg-bioportal
+    name: PCO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Population and Community Ontology (PCO), produced by KG-Bioportal from the BioPortal submission. The archive contains PCO_nodes.tsv and PCO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PCO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: pco
+        relation_type: prov:hadPrimarySource
+    node_count: 558
+    edge_count: 1052
+    latest_version: '2013-10-03'
 repository: https://github.com/PopulationAndCommunityOntology/pco
 publications:
   - authors:
@@ -69,8 +82,7 @@ publications:
     id: https://www.ncbi.nlm.nih.gov/pubmed/24595056
     journal: PLoS One
     preferred: true
-    title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction
-      to the Biological Collections Ontology and Related Ontologies'
+    title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction to the Biological Collections Ontology and Related Ontologies'
     year: '2014'
 ---
 

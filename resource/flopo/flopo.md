@@ -19,7 +19,7 @@ domains:
 - phenotype
 homepage_url: https://github.com/flora-phenotype-ontology/flopoontology
 id: flopo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -37,6 +37,21 @@ products:
   original_source:
   - source: flopo
     relation_type: prov:hadPrimarySource
+- id: flopo.kg-bioportal
+  name: FLOPO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Flora Phenotype Ontology (FLOPO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains FLOPO_nodes.tsv
+    and FLOPO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/FLOPO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: flopo
+    relation_type: prov:hadPrimarySource
+  node_count: 58680
+  edge_count: 69743
+  latest_version: '2026-07-31'
 repository: https://github.com/flora-phenotype-ontology/flopoontology
 taxon:
 - NCBITaxon:33090

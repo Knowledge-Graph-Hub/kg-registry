@@ -20,7 +20,7 @@ domains:
 - general
 homepage_url: https://github.com/biobanking/biobanking
 id: obib
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -268,6 +268,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- id: obib.kg-bioportal
+  name: OBIB KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Ontology for Biobanking (OBIB), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains OBIB_nodes.tsv and OBIB_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBIB.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: obib
+    relation_type: prov:hadPrimarySource
+  node_count: 2419
+  edge_count: 4499
+  latest_version: '2023-04-05'
 publications: []
 repository: https://github.com/biobanking/biobanking
 ---

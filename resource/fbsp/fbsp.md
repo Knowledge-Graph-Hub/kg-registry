@@ -20,7 +20,7 @@ domains:
 - organisms
 homepage_url: http://www.flybase.org/
 id: fbsp
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -37,6 +37,19 @@ products:
     source: fbsp
   product_url: http://purl.obolibrary.org/obo/fbsp.owl
   warnings: []
+- id: fbsp.kg-bioportal
+  name: FB-SP KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Fly Taxonomy (FB-SP), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains FB-SP_nodes.tsv and FB-SP_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FB-SP.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: fbsp
+    relation_type: prov:hadPrimarySource
+  node_count: 6622
+  edge_count: 6619
 publications: []
 taxon:
 - NCBITaxon:7227

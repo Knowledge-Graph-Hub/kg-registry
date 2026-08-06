@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
 id: cmo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -46,41 +46,54 @@ products:
     original_source:
       - source: cmo
         relation_type: prov:hadPrimarySource
+  - id: cmo.kg-bioportal
+    name: CMO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Clinical Measurement Ontology (CMO), produced by KG-Bioportal from the BioPortal submission. The archive contains CMO_nodes.tsv and CMO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CMO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: cmo
+        relation_type: prov:hadPrimarySource
+    node_count: 4186
+    edge_count: 5013
+    latest_version: '2026-07-25'
 repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
 publications:
-- authors:
-  - Shimoyama M
-  - Nigam R
-  - McIntosh LS
-  - Nagarajan R
-  - Rice T
-  - Rao DC
-  - Dwinell MR
-  doi: 10.3389/fgene.2012.00087
-  id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
-  journal: Front Genet
-  title: Three ontologies to define phenotype measurement data.
-  year: '2012'
-- authors:
-  - Smith JR
-  - Park CA
-  - Nigam R
-  - Laulederkind SJ
-  - Hayman GT
-  - Wang SJ
-  - Lowry TF
-  - Petri V
-  - Pons JD
-  - Tutaj M
-  - Liu W
-  - Worthey EA
-  - Shimoyama M
-  - Dwinell MR
-  doi: 10.1186/2041-1480-4-26
-  id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
-  journal: J Biomed Semantics
-  title: 'The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.'
-  year: '2013'
+  - authors:
+      - Shimoyama M
+      - Nigam R
+      - McIntosh LS
+      - Nagarajan R
+      - Rice T
+      - Rao DC
+      - Dwinell MR
+    doi: 10.3389/fgene.2012.00087
+    id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
+    journal: Front Genet
+    title: Three ontologies to define phenotype measurement data.
+    year: '2012'
+  - authors:
+      - Smith JR
+      - Park CA
+      - Nigam R
+      - Laulederkind SJ
+      - Hayman GT
+      - Wang SJ
+      - Lowry TF
+      - Petri V
+      - Pons JD
+      - Tutaj M
+      - Liu W
+      - Worthey EA
+      - Shimoyama M
+      - Dwinell MR
+    doi: 10.1186/2041-1480-4-26
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
+    journal: J Biomed Semantics
+    title: 'The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.'
+    year: '2013'
 ---
 
 ## Description

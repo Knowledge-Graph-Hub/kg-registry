@@ -15,7 +15,7 @@ domains:
 - general
 homepage_url: https://www.w3.org/TR/vocab-dcat-3/
 id: dcat
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 name: Data Catalog Vocabulary
 products:
@@ -126,6 +126,19 @@ products:
     source: dcat
   - relation_type: prov:wasInformedBy
     source: afo
+- id: dcat.kg-bioportal
+  name: DCAT KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Data Catalog Vocabulary (DCAT), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains DCAT_nodes.tsv and DCAT_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DCAT.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: dcat
+    relation_type: prov:hadPrimarySource
+  node_count: 51
+  edge_count: 64
 publications:
 - authors:
   - Riccardo Albertoni

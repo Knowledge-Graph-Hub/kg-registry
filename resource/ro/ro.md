@@ -20,7 +20,7 @@ domains:
 homepage_url: https://oborel.github.io/
 id: ro
 infores_id: ro
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -791,12 +791,26 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- id: ro.kg-bioportal
+  name: OBOREL KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Relations Ontology (OBOREL), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains OBOREL_nodes.tsv and OBOREL_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOREL.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ro
+    relation_type: prov:hadPrimarySource
+  node_count: 1234
+  edge_count: 2787
+  latest_version: '2025-12-17'
 publications:
 - authors:
   - Barry Smith
   - Werner Ceusters
   - Bert Klagges
-  - "Jacob K\xF6hler"
+  - Jacob Köhler
   - Anand Kumar
   - Jane Lomax
   - Chris Mungall

@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: http://emouseatlas.org
 id: emap
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -35,11 +35,24 @@ products:
     original_source:
       - source: emap
         relation_type: prov:hadPrimarySource
+  - id: emap.kg-bioportal
+    name: EMAP KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Mouse Gross Anatomy and Development Ontology (EMAP), produced by KG-Bioportal from the BioPortal submission. The archive contains EMAP_nodes.tsv and EMAP_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EMAP.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: emap
+        relation_type: prov:hadPrimarySource
+    node_count: 19455
+    edge_count: 21721
+    latest_version: unknown
 taxon:
   - NCBITaxon:10088
 publications: []
 use_instead:
-- emapa
+  - emapa
 ---
 
 ## Description

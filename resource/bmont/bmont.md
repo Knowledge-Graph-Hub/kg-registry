@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/SCAI-BIO/BiomarkerOntology
 id: bmont
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: bmont
         relation_type: prov:hadPrimarySource
+  - id: bmont.kg-bioportal
+    name: BMONT KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of The Biomarker Ontology (BMONT), produced by KG-Bioportal from the BioPortal submission. The archive contains BMONT_nodes.tsv and BMONT_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BMONT.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: bmont
+        relation_type: prov:hadPrimarySource
+    node_count: 1222
+    edge_count: 2215
+    latest_version: 'Version Release: 0.5.8'
 repository: https://github.com/SCAI-BIO/BiomarkerOntology
 publications: []
 ---

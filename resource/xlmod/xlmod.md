@@ -18,7 +18,7 @@ domains:
   - chemistry and biochemistry
 homepage_url: http://www.psidev.info/groups/controlled-vocabularies
 id: "xlmod"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: "https://creativecommons.org/licenses/by/3.0/"
@@ -46,6 +46,19 @@ products:
     original_source:
       - source: xlmod
         relation_type: prov:hadPrimarySource
+  - id: xlmod.kg-bioportal
+    name: XLMOD KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of mass spectrometry cross-linking and derivatization reagents (XLMOD), produced by KG-Bioportal from the BioPortal submission. The archive contains XLMOD_nodes.tsv and XLMOD_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XLMOD.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: xlmod
+        relation_type: prov:hadPrimarySource
+    node_count: 1149
+    edge_count: 2970
+    latest_version: release/2019-10-28
 repository: https://github.com/HUPO-PSI/xlmod-CV
 publications:
   - authors:

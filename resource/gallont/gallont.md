@@ -19,7 +19,7 @@ domains:
   - phenotype
 homepage_url: https://adeans.github.io/gallont/
 id: gallont
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -47,6 +47,19 @@ products:
         source: gallont
     product_file_size: 60631
     product_url: http://purl.obolibrary.org/obo/gallont.obo
+  - id: gallont.kg-bioportal
+    name: GALLONT KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Plant Gall Ontology (GALLONT), produced by KG-Bioportal from the BioPortal submission. The archive contains GALLONT_nodes.tsv and GALLONT_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GALLONT.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: gallont
+        relation_type: prov:hadPrimarySource
+    node_count: 861
+    edge_count: 1776
+    latest_version: '2024-04-19'
 publications: []
 repository: https://github.com/adeans/gallont
 ---

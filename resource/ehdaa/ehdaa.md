@@ -15,7 +15,7 @@ domains:
 - anatomy and development
 homepage_url: https://obofoundry.org/ontology/ehdaa
 id: ehdaa
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -42,6 +42,21 @@ products:
     source: ehdaa
   product_url: http://purl.obolibrary.org/obo/ehdaa.obo
   warnings: []
+- id: ehdaa.kg-bioportal
+  name: EHDAA KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Human Developmental Anatomy Ontology, abstract
+    version 1 (EHDAA), produced by KG-Bioportal from the BioPortal submission. The
+    archive contains EHDAA_nodes.tsv and EHDAA_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDAA.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ehdaa
+    relation_type: prov:hadPrimarySource
+  node_count: 2326
+  edge_count: 2335
+  latest_version: unknown
 publications: []
 taxon:
 - NCBITaxon:9606

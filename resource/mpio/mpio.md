@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/MPIO-Developers/MPIO
 id: "mpio"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: "http://creativecommons.org/licenses/by/4.0/"
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: mpio
         relation_type: prov:hadPrimarySource
+  - id: mpio.kg-bioportal
+    name: MPIO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Minimum PDDI Information Ontology (MPIO), produced by KG-Bioportal from the BioPortal submission. The archive contains MPIO_nodes.tsv and MPIO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPIO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: mpio
+        relation_type: prov:hadPrimarySource
+    node_count: 111
+    edge_count: 78
+    latest_version: '2023-10-17'
 repository: https://github.com/MPIO-Developers/MPIO
 publications:
   - authors:

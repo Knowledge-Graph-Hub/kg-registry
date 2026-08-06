@@ -20,7 +20,7 @@ domains:
 - agriculture
 homepage_url: https://github.com/AgriculturalSemantics/agro
 id: agro
-last_modified_date: '2026-06-13T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,19 @@ products:
   original_source:
   - source: agro
     relation_type: prov:hadPrimarySource
+- id: agro.kg-bioportal
+  name: AGRO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of AGRonomy Ontology (AGRO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains AGRO_nodes.tsv and AGRO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-7/AGRO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: agro
+    relation_type: prov:hadPrimarySource
+  node_count: 5102
+  edge_count: 8691
 repository: https://github.com/AgriculturalSemantics/agro
 publications:
 - id: url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf

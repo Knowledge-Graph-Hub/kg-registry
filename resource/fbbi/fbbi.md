@@ -28,7 +28,7 @@ domains:
 - general
 homepage_url: https://github.com/foundingGIDE/fbbi
 id: fbbi
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -76,6 +76,21 @@ products:
   original_source:
   - source: fbbi
     relation_type: prov:hadPrimarySource
+- id: fbbi.kg-bioportal
+  name: FBBI KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Biological Imaging Methods Ontology (FBBI), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains FBBI_nodes.tsv
+    and FBBI_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FBbi.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: fbbi
+    relation_type: prov:hadPrimarySource
+  node_count: 896
+  edge_count: 1062
+  latest_version: '2026-06-25'
 publications: []
 repository: https://github.com/foundingGIDE/fbbi
 ---

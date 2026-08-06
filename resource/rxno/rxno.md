@@ -18,7 +18,7 @@ domains:
   - chemistry and biochemistry
 homepage_url: https://github.com/rsc-ontologies/rxno
 id: rxno
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: rxno
         relation_type: prov:hadPrimarySource
+  - id: rxno.kg-bioportal
+    name: RXNO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Name Reaction Ontology (RXNO), produced by KG-Bioportal from the BioPortal submission. The archive contains RXNO_nodes.tsv and RXNO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RXNO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: rxno
+        relation_type: prov:hadPrimarySource
+    node_count: 1128
+    edge_count: 1939
+    latest_version: releases/2021-12-16
 repository: https://github.com/rsc-ontologies/rxno
 publications: []
 ---

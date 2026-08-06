@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: http://www.brenda-enzymes.org
 id: bto
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -633,6 +633,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: motifmap
   product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+- id: bto.kg-bioportal
+  name: BTO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of BRENDA Tissue and Enzyme Source Ontology (BTO),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains BTO_nodes.tsv
+    and BTO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BTO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: bto
+    relation_type: prov:hadPrimarySource
+  node_count: 6612
+  edge_count: 7657
+  latest_version: releases/2021-10-26
 publications:
 - authors:
   - Gremse M

@@ -17,7 +17,7 @@ domains:
 homepage_url: https://www.uniprot.org/
 id: uniprot
 infores_id: uniprot
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -97,12 +97,10 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -764,8 +762,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3518,8 +3516,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: Product
@@ -3654,14 +3650,12 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 500 error
-    when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
     entries, proteomics evidence, variants, expression, interactions, localization,
@@ -4672,14 +4666,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
   format: kgx-jsonl
@@ -5120,6 +5112,20 @@ products:
     source: wikidata
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Uniprot Core Ontology (UNIPROT), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains UNIPROT_nodes.tsv and UNIPROT_edges.tsv.
+  edge_count: 396
+  format: kgx
+  id: uniprot.kg-bioportal
+  latest_version: v2012-10-03
+  name: UNIPROT KGX graph (KG-Bioportal)
+  node_count: 364
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UNIPROT.tar.gz
 publications:
 - authors:
   - Alex Bateman

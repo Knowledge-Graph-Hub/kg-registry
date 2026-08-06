@@ -15,7 +15,7 @@ domains:
   - anatomy and development
 homepage_url: https://www.vectorbase.org/ontology-browser
 id: tgma
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -43,6 +43,19 @@ products:
     original_source:
       - source: tgma
         relation_type: prov:hadPrimarySource
+  - id: tgma.kg-bioportal
+    name: TGMA KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Mosquito Gross Anatomy Ontology (TGMA), produced by KG-Bioportal from the BioPortal submission. The archive contains TGMA_nodes.tsv and TGMA_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TGMA.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: tgma
+        relation_type: prov:hadPrimarySource
+    node_count: 1887
+    edge_count: 2733
+    latest_version: releases/2013-06-03
 repository: https://github.com/VEuPathDB-ontology/TGMA
 taxon:
   - NCBITaxon:44484

@@ -19,7 +19,7 @@ domains:
 homepage_url: http://genepio.org/
 id: genepio
 infores_id: genepio
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,19 @@ products:
     original_source:
       - source: genepio
         relation_type: prov:hadPrimarySource
+  - id: genepio.kg-bioportal
+    name: GENEPIO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Genomic Epidemiology Application Ontology (GENEPIO), produced by KG-Bioportal from the BioPortal submission. The archive contains GENEPIO_nodes.tsv and GENEPIO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENEPIO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: genepio
+        relation_type: prov:hadPrimarySource
+    node_count: 10962
+    edge_count: 23079
+    latest_version: '2026-04-13'
 repository: https://github.com/GenEpiO/genepio
 publications: []
 ---

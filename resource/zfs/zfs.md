@@ -19,7 +19,7 @@ domains:
 homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 id: zfs
 infores_id: zfs
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -197,6 +197,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- id: zfs.kg-bioportal
+  name: ZFS KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Zebrafish Developmental Stages (ZFS), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains ZFS_nodes.tsv
+    and ZFS_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZFS.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: zfs
+    relation_type: prov:hadPrimarySource
+  node_count: 3340
+  edge_count: 13189
+  latest_version: '2026-07-16'
 publications: []
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 taxon:

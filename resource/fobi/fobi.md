@@ -20,7 +20,7 @@ domains:
 - nutrition
 homepage_url: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 id: fobi
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -40,6 +40,20 @@ products:
   original_source:
   - source: fobi
     relation_type: prov:hadPrimarySource
+- id: fobi.kg-bioportal
+  name: FOBI KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of FOBI (Food-Biomarker Ontology) (FOBI), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains FOBI_nodes.tsv
+    and FOBI_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FOBI.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: fobi
+    relation_type: prov:hadPrimarySource
+  node_count: 1359
+  edge_count: 6815
 repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 publications:
 - authors:
@@ -51,7 +65,8 @@ publications:
   doi: 10.1093/databa/baaa033
   id: https://www.ncbi.nlm.nih.gov/pubmed/32556148
   journal: Database (Oxford)
-  title: 'FOBI: an ontology to represent food intake data and associate it with metabolomic data'
+  title: 'FOBI: an ontology to represent food intake data and associate it with metabolomic
+    data'
   year: '2020'
 - authors:
   - Castellano-Escuder P

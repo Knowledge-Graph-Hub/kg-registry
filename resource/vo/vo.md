@@ -18,7 +18,7 @@ domains:
 - biomedical
 homepage_url: https://violinet.org/vaccineontology
 id: vo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -236,6 +236,20 @@ products:
     source: wikipathways
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+- id: vo.kg-bioportal
+  name: VO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Vaccine Ontology (VO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains VO_nodes.tsv and VO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: vo
+    relation_type: prov:hadPrimarySource
+  node_count: 15915
+  edge_count: 105299
+  latest_version: '2026-06-12'
 publications:
 - authors:
   - Lin Y

@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: http://hymao.org
 id: hao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -56,6 +56,19 @@ products:
     original_source:
       - source: hao
         relation_type: prov:hadPrimarySource
+  - id: hao.kg-bioportal
+    name: HAO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Hymenoptera Anatomy Ontology (HAO), produced by KG-Bioportal from the BioPortal submission. The archive contains HAO_nodes.tsv and HAO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HAO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: hao
+        relation_type: prov:hadPrimarySource
+    node_count: 5384
+    edge_count: 4952
+    latest_version: '2023-06-01'
 repository: https://github.com/hymao/hao
 taxon:
   - NCBITaxon:7399

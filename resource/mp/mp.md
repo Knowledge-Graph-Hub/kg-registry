@@ -20,7 +20,7 @@ domains:
 homepage_url: https://www.informatics.jax.org/vocab/mp_ontology/
 id: mp
 infores_id: mp
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -49,8 +49,6 @@ products:
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: OntologyProduct
@@ -967,6 +965,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Mammalian Phenotype Ontology (MP), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains MP_nodes.tsv
+    and MP_edges.tsv.
+  edge_count: 30356
+  format: kgx
+  id: mp.kg-bioportal
+  latest_version: '2026-06-17'
+  name: MP KGX graph (KG-Bioportal)
+  node_count: 16057
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MP.tar.gz
 publications:
 - authors:
   - Bello SM

@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/aellenhicks/htn_owl
 id: htn
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,18 @@ products:
     original_source:
       - source: htn
         relation_type: prov:hadPrimarySource
+  - id: htn.kg-bioportal
+    name: HTN KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Hypertension Ontology (HTN), produced by KG-Bioportal from the BioPortal submission. The archive contains HTN_nodes.tsv and HTN_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HTN.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: htn
+        relation_type: prov:hadPrimarySource
+    node_count: 1130
+    edge_count: 1963
 repository: https://github.com/aellenhicks/htn_owl
 publications: []
 ---

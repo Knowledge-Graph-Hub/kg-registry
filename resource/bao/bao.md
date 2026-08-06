@@ -15,7 +15,7 @@ domains:
 - biomedical
 homepage_url: http://bioassayontology.org/
 id: bao
-last_modified_date: '2026-06-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -363,6 +363,20 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- id: bao.kg-bioportal
+  name: BAO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of BioAssay Ontology (BAO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains BAO_nodes.tsv and BAO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BAO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: bao
+    relation_type: prov:hadPrimarySource
+  node_count: 6088
+  edge_count: 7517
+  latest_version: 2.8.19
 publications:
 - authors:
   - Ubbo Visser
@@ -370,7 +384,7 @@ publications:
   - Uma Vempati
   - Robin P Smith
   - Vance Lemmon
-  - "Stephan C Sch\xFCrer"
+  - Stephan C Schürer
   doi: doi:10.1186/1471-2105-12-257
   id: doi:10.1186/1471-2105-12-257
   journal: BMC Bioinformatics
@@ -381,7 +395,7 @@ publications:
 - authors:
   - Saminda Abeyruwan
   - Uma D Vempati
-  - "Hande K\xFC\xE7\xFCk-McGinty"
+  - Hande Küçük-McGinty
   - Ubbo Visser
   - Amar Koleti
   - Ahsan Mir
@@ -396,7 +410,7 @@ publications:
   - David Twomey
   - Svetlana Bureeva
   - Vance Lemmon
-  - "Stephan C Sch\xFCrer"
+  - Stephan C Schürer
   doi: doi:10.1186/2041-1480-5-S1-S5
   id: doi:10.1186/2041-1480-5-S1-S5
   journal: Journal of Biomedical Semantics

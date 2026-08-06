@@ -20,7 +20,7 @@ domains:
 homepage_url: https://obophenotype.github.io/cell-ontology/
 id: cl
 infores_id: cl
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -909,8 +909,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2476,6 +2476,20 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- id: cl.kg-bioportal
+  name: CL KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Cell Ontology (CL), produced by KG-Bioportal from
+    the BioPortal submission. The archive contains CL_nodes.tsv and CL_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CL.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: cl
+    relation_type: prov:hadPrimarySource
+  node_count: 20178
+  edge_count: 85215
+  latest_version: '2026-06-08'
 publications:
 - authors:
   - Diehl AD

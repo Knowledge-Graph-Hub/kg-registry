@@ -21,7 +21,7 @@ domains:
 - general
 homepage_url: https://github.com/OPMI/opmi
 id: opmi
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -39,6 +39,21 @@ products:
   original_source:
   - source: opmi
     relation_type: prov:hadPrimarySource
+- id: opmi.kg-bioportal
+  name: OPMI KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Ontology of Precision Medicine and Investigation
+    (OPMI), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    OPMI_nodes.tsv and OPMI_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OPMI.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: opmi
+    relation_type: prov:hadPrimarySource
+  node_count: 4201
+  edge_count: 10056
+  latest_version: 'Vision Release: 1.0.166'
 publications:
 - authors:
   - He Y

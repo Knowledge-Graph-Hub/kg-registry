@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/insect-morphology/lepao
 id: lepao
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -46,6 +46,19 @@ products:
     original_source:
       - source: lepao
         relation_type: prov:hadPrimarySource
+  - id: lepao.kg-bioportal
+    name: LEPAO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Lepidoptera Anatomy Ontology (LEPAO), produced by KG-Bioportal from the BioPortal submission. The archive contains LEPAO_nodes.tsv and LEPAO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LEPAO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: lepao
+        relation_type: prov:hadPrimarySource
+    node_count: 1215
+    edge_count: 2404
+    latest_version: '2023-02-18'
 repository: https://github.com/insect-morphology/lepao
 publications: []
 ---

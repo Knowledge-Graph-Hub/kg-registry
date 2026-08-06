@@ -19,7 +19,7 @@ domains:
   - general
 homepage_url: https://obofoundry.org/COB/
 id: cob
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -255,6 +255,19 @@ products:
         source: zfa
     product_file_size: 64058275
     product_url: https://www.ebi.ac.uk/efo/efo.obo
+  - id: cob.kg-bioportal
+    name: COB KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Core Ontology for Biology and Biomedicine (COB), produced by KG-Bioportal from the BioPortal submission. The archive contains COB_nodes.tsv and COB_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/COB.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: cob
+        relation_type: prov:hadPrimarySource
+    node_count: 126
+    edge_count: 106
+    latest_version: '2025-12-15'
 publications: []
 repository: https://github.com/OBOFoundry/COB
 ---

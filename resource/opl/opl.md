@@ -19,7 +19,7 @@ domains:
   - organisms
 homepage_url: https://github.com/OPL-ontology/OPL
 id: "opl"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: "https://creativecommons.org/licenses/by/4.0/"
@@ -37,6 +37,19 @@ products:
     original_source:
       - source: opl
         relation_type: prov:hadPrimarySource
+  - id: opl.kg-bioportal
+    name: OPL KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Ontology for Parasite LifeCycle (OPL), produced by KG-Bioportal from the BioPortal submission. The archive contains OPL_nodes.tsv and OPL_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OPL.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: opl
+        relation_type: prov:hadPrimarySource
+    node_count: 745
+    edge_count: 1839
+    latest_version: '2023-08-28'
 repository: https://github.com/OPL-ontology/OPL
 publications:
   - authors:

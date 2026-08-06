@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://disease-ontology.org
 id: doid
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -2805,6 +2805,20 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- id: doid.kg-bioportal
+  name: DOID KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Human Disease Ontology (DOID), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains DOID_nodes.tsv and DOID_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/DOID.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: doid
+    relation_type: prov:hadPrimarySource
+  node_count: 16717
+  edge_count: 39169
+  latest_version: '2026-07-31'
 publications:
 - authors:
   - Kibbe WA

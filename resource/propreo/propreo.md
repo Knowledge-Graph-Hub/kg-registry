@@ -15,7 +15,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
 id: propreo
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -32,10 +32,23 @@ products:
     source: propreo
   product_url: http://purl.obolibrary.org/obo/propreo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Proteomics Data and Process Provenance Ontology
+    (PROPREO), produced by KG-Bioportal from the BioPortal submission. The archive
+    contains PROPREO_nodes.tsv and PROPREO_edges.tsv.
+  edge_count: 593
+  format: kgx
+  id: propreo.kg-bioportal
+  latest_version: '1.1'
+  name: PROPREO KGX graph (KG-Bioportal)
+  node_count: 512
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: propreo
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/PROPREO.tar.gz
 publications: []
 ---
 ## Description

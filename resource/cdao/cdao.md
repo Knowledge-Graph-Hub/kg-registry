@@ -20,7 +20,7 @@ domains:
 - organisms
 homepage_url: https://github.com/evoinfo/cdao
 id: cdao
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -38,6 +38,21 @@ products:
   original_source:
   - source: cdao
     relation_type: prov:hadPrimarySource
+- id: cdao.kg-bioportal
+  name: CDAO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Comparative Data Analysis Ontology (CDAO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains CDAO_nodes.tsv
+    and CDAO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDAO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: cdao
+    relation_type: prov:hadPrimarySource
+  node_count: 238
+  edge_count: 346
+  latest_version: $Revision$
 repository: https://github.com/evoinfo/cdao
 publications:
 - authors:

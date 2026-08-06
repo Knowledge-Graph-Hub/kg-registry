@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/luis-gonzalez-m/Collembola
 id: clao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -46,6 +46,19 @@ products:
     original_source:
       - source: clao
         relation_type: prov:hadPrimarySource
+  - id: clao.kg-bioportal
+    name: CLAO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Collembola Anatomy Ontology (CLAO), produced by KG-Bioportal from the BioPortal submission. The archive contains CLAO_nodes.tsv and CLAO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLAO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: clao
+        relation_type: prov:hadPrimarySource
+    node_count: 1565
+    edge_count: 2653
+    latest_version: '2021-09-27'
 repository: https://github.com/luis-gonzalez-m/Collembola
 publications: []
 ---

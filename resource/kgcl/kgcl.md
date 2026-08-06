@@ -69,29 +69,42 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 7492
     product_url: https://w3id.org/kgcl/kgcl.yaml
+  - id: kgcl.kg-bioportal
+    name: KGCL KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Knowledge Graph Change Language (KGCL), produced by KG-Bioportal from the BioPortal submission. The archive contains KGCL_nodes.tsv and KGCL_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/KGCL.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: kgcl
+        relation_type: prov:hadPrimarySource
+    node_count: 218
+    edge_count: 526
+    latest_version: 0.1.0
 publications:
-- authors:
-  - Hegde H
-  - Vendetti J
-  - Goutte-Gattat D
-  - Caufield JH
-  - Graybeal JB
-  - Harris NL
-  - Karam N
-  - Kindermann C
-  - Matentzoglu N
-  - Overton JA
-  - Mungall CJ
-  doi: 10.1093/database/baae133
-  id: doi:10.1093/database/baae133
-  journal: Database
-  preferred: true
-  title: A change language for ontologies and knowledge graphs
-  year: '2025'
+  - authors:
+      - Hegde H
+      - Vendetti J
+      - Goutte-Gattat D
+      - Caufield JH
+      - Graybeal JB
+      - Harris NL
+      - Karam N
+      - Kindermann C
+      - Matentzoglu N
+      - Overton JA
+      - Mungall CJ
+    doi: 10.1093/database/baae133
+    id: doi:10.1093/database/baae133
+    journal: Database
+    preferred: true
+    title: A change language for ontologies and knowledge graphs
+    year: '2025'
 repository: https://github.com/INCATools/kgcl/
 version: 0.7.0
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-08-06T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 ---
 
 ## Overview

@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/monarch-initiative/GENO-ontology/
 id: geno
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -61,6 +61,20 @@ products:
     source: skos
   product_file_size: 102365
   product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+- id: geno.kg-bioportal
+  name: GENO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Genotype Ontology (GENO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains GENO_nodes.tsv and GENO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: geno
+    relation_type: prov:hadPrimarySource
+  node_count: 1352
+  edge_count: 1942
+  latest_version: '2026-02-02'
 publications: []
 repository: https://github.com/monarch-initiative/GENO-ontology
 ---

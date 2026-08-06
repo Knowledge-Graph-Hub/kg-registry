@@ -19,7 +19,7 @@ domains:
 - organisms
 homepage_url: https://github.com/phenoscape/teleost-taxonomy-ontology
 id: tto
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -47,6 +47,20 @@ products:
   original_source:
   - source: tto
     relation_type: prov:hadPrimarySource
+- id: tto.kg-bioportal
+  name: TTO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Teleost Taxonomy Ontology (TTO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains TTO_nodes.tsv and TTO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TTO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: tto
+    relation_type: prov:hadPrimarySource
+  node_count: 38743
+  edge_count: 77538
+  latest_version: unknown
 repository: https://github.com/phenoscape/teleost-taxonomy-ontology
 taxon:
 - NCBITaxon:32443

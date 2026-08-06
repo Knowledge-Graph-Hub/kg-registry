@@ -16,7 +16,7 @@ domains:
   - biomedical
 homepage_url: http://purl.obolibrary.org/obo/aero
 id: aero
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -34,6 +34,19 @@ products:
     original_source:
       - source: aero
         relation_type: prov:hadPrimarySource
+  - id: aero.kg-bioportal
+    name: AERO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Adverse Event Reporting Ontology (AERO), produced by KG-Bioportal from the BioPortal submission. The archive contains AERO_nodes.tsv and AERO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/AERO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: aero
+        relation_type: prov:hadPrimarySource
+    node_count: 261
+    edge_count: 1047
+    latest_version: unknown
 publications: []
 ---
 

@@ -15,13 +15,28 @@ domains:
 - anatomy and development
 homepage_url: http://genex.hgu.mrc.ac.uk/
 id: ehda
-last_modified_date: '2026-06-25T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
   label: Not specified
 name: Human developmental anatomy, timed version
-products: []
+products:
+- id: ehda.kg-bioportal
+  name: EHDA KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Human Developmental Anatomy Ontology, timed version
+    (EHDA), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    EHDA_nodes.tsv and EHDA_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDA.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ehda
+    relation_type: prov:hadPrimarySource
+  node_count: 8353
+  edge_count: 8339
+  latest_version: unknown
 publications:
 - authors:
   - Hunter A

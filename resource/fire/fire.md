@@ -28,7 +28,7 @@ domains:
 - biomedical
 homepage_url: https://doi.org/10.1016/j.celrep.2016.10.061
 id: fire
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -102,6 +102,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: motifmap
   product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+- id: fire.kg-bioportal
+  name: FIRE KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Fire Ontology (FIRE), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains FIRE_nodes.tsv and FIRE_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIRE.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: fire
+    relation_type: prov:hadPrimarySource
+  node_count: 95
+  edge_count: 106
+  latest_version: '0.8'
 publications:
 - authors:
   - Schmitt AD

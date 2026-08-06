@@ -19,7 +19,7 @@ domains:
 - nutrition
 homepage_url: https://gitub.u-bordeaux.fr/erias/fideo
 id: fideo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -37,12 +37,10 @@ products:
     source: fideo
   product_url: http://purl.obolibrary.org/obo/fideo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -619,6 +617,21 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Food Interactions with Drugs Evidence Ontology
+    (FIDEO), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    FIDEO_nodes.tsv and FIDEO_edges.tsv.
+  edge_count: 7649
+  format: kgx
+  id: fideo.kg-bioportal
+  latest_version: '2023-12-18'
+  name: FIDEO KGX graph (KG-Bioportal)
+  node_count: 3565
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fideo
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIDEO.tar.gz
 publications: []
 repository: https://gitub.u-bordeaux.fr/erias/fideo
 ---

@@ -211,6 +211,51 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
+- category: GraphicalInterface
+  description: Browsable listing of every KG-Bioportal graph, with node and edge counts,
+    transform status, and a download link for each. This is the canonical index of
+    the transforms; KG-Registry does not mirror the full inventory.
+  format: http
+  id: kg-bioportal.browser
+  name: KG-Bioportal Graph Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-bioportal
+  product_url: https://ncbo.github.io/kg-bioportal/graphs/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bioportal
+- category: Product
+  description: Manifest of every transform attempt, giving the BioPortal acronym,
+    status, node and edge counts, source submission, and release download URL for
+    each ontology. Refreshed with each monthly transform run.
+  format: yaml
+  id: kg-bioportal.manifest
+  name: KG-Bioportal Transform Manifest
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-bioportal
+  product_url: https://github.com/ncbo/kg-bioportal/releases/latest/download/onto_stats.yaml
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bioportal
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV graphs for all successfully transformed BioPortal ontologies,
+    published as one gzipped tar archive per ontology on the latest release. Individual
+    archives are at https://github.com/ncbo/kg-bioportal/releases/latest/download/<ACRONYM>.tar.gz
+    and contain <ACRONYM>_nodes.tsv and <ACRONYM>_edges.tsv.
+  format: kgx
+  id: kg-bioportal.graphs
+  latest_version: latest
+  name: KG-Bioportal KGX Graphs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-bioportal
+  product_url: https://github.com/ncbo/kg-bioportal/releases/latest
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bioportal
 publications:
 - authors:
   - Jennifer Vendetti
@@ -230,12 +275,12 @@ publications:
   title: 'BioPortal: an open community resource for sharing, searching, and utilizing
     biomedical ontologies'
   year: '2025'
+repository: https://github.com/ncbo
 taxon:
 - NCBITaxon:9606
 warnings:
 - Some ontologies have distinct licenses; review individual ontology license metadata
   before reuse.
-repository: https://github.com/ncbo
 ---
 # BioPortal
 

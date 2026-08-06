@@ -19,7 +19,7 @@ domains:
 homepage_url: https://github.com/INO-ontology/ino
 id: ino
 infores_id: ino
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,19 @@ products:
     original_source:
       - source: ino
         relation_type: prov:hadPrimarySource
+  - id: ino.kg-bioportal
+    name: INO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Interaction Network Ontology (INO), produced by KG-Bioportal from the BioPortal submission. The archive contains INO_nodes.tsv and INO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/INO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: ino
+        relation_type: prov:hadPrimarySource
+    node_count: 496
+    edge_count: 965
+    latest_version: 1.1.13
 repository: https://github.com/INO-ontology/ino
 publications:
   - authors:

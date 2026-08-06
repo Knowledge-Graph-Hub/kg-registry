@@ -27,7 +27,7 @@ domains:
 homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
 infores_id: hpo
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://hpo.jax.org/app/license
@@ -3255,8 +3255,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -5162,14 +5162,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -5208,13 +5206,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
@@ -5593,10 +5589,24 @@ products:
     source: hp
   - relation_type: prov:wasInfluencedBy
     source: mondo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Human Phenotype Ontology (HP), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains HP_nodes.tsv and HP_edges.tsv.
+  edge_count: 52509
+  format: kgx
+  id: hp.kg-bioportal
+  latest_version: '2026-06-23'
+  name: HP KGX graph (KG-Bioportal)
+  node_count: 25358
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HP.tar.gz
 publications:
 - authors:
   - Robinson PN
-  - Köhler S
+  - "K\xF6hler S"
   - Bauer S
   - Seelow D
   - Horn D
@@ -5609,7 +5619,7 @@ publications:
   year: '2008'
 - authors:
   - Groza T
-  - Köhler S
+  - "K\xF6hler S"
   - Moldenhauer D
   - Vasilevsky N
   - Baynam G
@@ -5633,7 +5643,7 @@ publications:
   title: 'The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease.'
   year: '2015'
 - authors:
-  - Köhler S
+  - "K\xF6hler S"
   - Doelken SC
   - Mungall CJ
   - Bauer S
@@ -5650,7 +5660,7 @@ publications:
   - Girdea M
   - Helbig I
   - Hurst JA
-  - Jähn J
+  - "J\xE4hn J"
   - Jackson LG
   - Kelly AM
   - Ledbetter DH
@@ -5687,7 +5697,7 @@ publications:
     through phenotype data.'
   year: '2014'
 - authors:
-  - Köhler S
+  - "K\xF6hler S"
   - Carmody L
   - Vasilevsky N
   - Jacobsen JOB
@@ -5712,7 +5722,7 @@ publications:
   - Chang WH
   - Bergerson J
   - Laulederkind SJF
-  - Yüksel Z
+  - "Y\xFCksel Z"
   - Beltran S
   - Freeman AF
   - Sergouniotis PI
@@ -5738,8 +5748,8 @@ publications:
   - Notarangelo L
   - Similuk M
   - Zhang XA
-  - Gómez-Andrés D
-  - Lochmüller H
+  - "G\xF3mez-Andr\xE9s D"
+  - "Lochm\xFCller H"
   - Dollfus H
   - Rosenzweig S
   - Marwaha S

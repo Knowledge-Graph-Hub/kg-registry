@@ -16,7 +16,7 @@ domains:
 - information technology
 homepage_url: https://www.allotrope.org/product-releases
 id: afo
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -130,6 +130,21 @@ products:
     source: dcat
   - relation_type: prov:wasInformedBy
     source: afo
+- id: afo.kg-bioportal
+  name: AFO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Allotrope Merged Ontology Suite (AFO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains AFO_nodes.tsv
+    and AFO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AFO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: afo
+    relation_type: prov:hadPrimarySource
+  node_count: 4854
+  edge_count: 11298
+  latest_version: REC/2026/06
 synonyms:
 - AFO
 warnings:

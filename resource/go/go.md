@@ -26,7 +26,7 @@ domains:
 homepage_url: http://geneontology.org/
 id: go
 infores_id: go
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -65,8 +65,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: OntologyProduct
@@ -90,8 +88,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: OntologyProduct
@@ -128,8 +124,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: OntologyProduct
@@ -3896,8 +3890,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -6577,14 +6571,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -6623,13 +6615,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
@@ -7048,6 +7038,20 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Gene Ontology (GO), produced by KG-Bioportal from
+    the BioPortal submission. The archive contains GO_nodes.tsv and GO_edges.tsv.
+  edge_count: 114015
+  format: kgx
+  id: go.kg-bioportal
+  latest_version: '2026-06-15'
+  name: GO KGX graph (KG-Bioportal)
+  node_count: 66332
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GO.tar.gz
 publications:
 - authors:
   - Ashburner M

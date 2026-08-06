@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://github.com/SpeciesFileGroup/nomen
 id: nomen
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -38,6 +38,20 @@ products:
   original_source:
   - source: nomen
     relation_type: prov:hadPrimarySource
+- id: nomen.kg-bioportal
+  name: NOMEN KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of NOMEN - A nomenclatural ontology for biological
+    names (NOMEN), produced by KG-Bioportal from the BioPortal submission. The archive
+    contains NOMEN_nodes.tsv and NOMEN_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NOMEN.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: nomen
+    relation_type: prov:hadPrimarySource
+  node_count: 390
+  edge_count: 474
 repository: https://github.com/SpeciesFileGroup/nomen
 publications: []
 ---

@@ -27,7 +27,7 @@ domains:
 - general
 homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 id: mco
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -55,6 +55,20 @@ products:
   original_source:
   - source: mco
     relation_type: prov:hadPrimarySource
+- id: mco.kg-bioportal
+  name: MCO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Microbial Conditions Ontology (MCO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains MCO_nodes.tsv
+    and MCO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: mco
+    relation_type: prov:hadPrimarySource
+  node_count: 3561
+  edge_count: 9520
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 publications: []
 ---

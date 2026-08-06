@@ -22,7 +22,7 @@ domains:
 - information technology
 homepage_url: https://gitlab.com/fortunalab/ontoavida
 id: ontoavida
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -50,6 +50,20 @@ products:
   original_source:
   - source: ontoavida
     relation_type: prov:hadPrimarySource
+- id: ontoavida.kg-bioportal
+  name: ONTOAVIDA KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: 'KGX TSV transform of OntoAvida: ontology for Avida digital evolution
+    platform (ONTOAVIDA), produced by KG-Bioportal from the BioPortal submission.
+    The archive contains ONTOAVIDA_nodes.tsv and ONTOAVIDA_edges.tsv.'
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTOAVIDA.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ontoavida
+    relation_type: prov:hadPrimarySource
+  node_count: 741
+  edge_count: 807
 repository: https://gitlab.com/fortunalab/ontoavida
 publications:
 - authors:

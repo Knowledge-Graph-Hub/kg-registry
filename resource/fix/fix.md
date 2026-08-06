@@ -12,7 +12,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/chebi
 id: fix
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -39,10 +39,23 @@ products:
     source: fix
   product_url: http://purl.obolibrary.org/obo/fix.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
   - 'File was not able to be retrieved when checked on 2026-08-06: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Physico-Chemical Methods and Properties (FIX),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains FIX_nodes.tsv
+    and FIX_edges.tsv.
+  edge_count: 1684
+  format: kgx
+  id: fix.kg-bioportal
+  latest_version: '1.2'
+  name: FIX KGX graph (KG-Bioportal)
+  node_count: 1179
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fix
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIX.tar.gz
 publications: []
 ---
 ## Description

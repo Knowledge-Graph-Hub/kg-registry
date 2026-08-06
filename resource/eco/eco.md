@@ -20,7 +20,7 @@ domains:
 homepage_url: https://www.evidenceontology.org
 id: eco
 infores_id: eco
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -555,13 +555,28 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- id: eco.kg-bioportal
+  name: ECO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Evidence and Conclusion Ontology (ECO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains ECO_nodes.tsv
+    and ECO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: eco
+    relation_type: prov:hadPrimarySource
+  node_count: 2351
+  edge_count: 5362
+  latest_version: releases/2025-06-23
 publications:
 - authors:
   - Nadendla S
   - Jackson R
   - Munro J
   - Quaglia F
-  - "M\xE9sz\xE1ros B"
+  - Mészáros B
   - Olley D
   - Hobbs ET
   - Goralski SM

@@ -20,7 +20,7 @@ domains:
 homepage_url: http://www.pathbase.net
 id: mpath
 infores_id: mpath
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -376,6 +376,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- id: mpath.kg-bioportal
+  name: MPATH KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Mouse Pathology Ontology (MPATH), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains MPATH_nodes.tsv
+    and MPATH_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPATH.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: mpath
+    relation_type: prov:hadPrimarySource
+  node_count: 916
+  edge_count: 952
+  latest_version: '2020-05-19'
 publications: []
 repository: https://github.com/PaulNSchofield/mpath
 taxon:

@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/ClinicalTrialOntology/CTO/
 id: cto
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: cto
         relation_type: prov:hadPrimarySource
+  - id: cto.kg-bioportal
+    name: CTO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Clinical Trials Ontology (CTO), produced by KG-Bioportal from the BioPortal submission. The archive contains CTO_nodes.tsv and CTO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CTO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: cto
+        relation_type: prov:hadPrimarySource
+    node_count: 447
+    edge_count: 904
+    latest_version: 'Version Release: 1.0.0'
 repository: https://github.com/ClinicalTrialOntology/CTO
 publications: []
 ---

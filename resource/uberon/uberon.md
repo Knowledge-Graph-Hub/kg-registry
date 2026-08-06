@@ -20,7 +20,7 @@ domains:
 homepage_url: http://uberon.org
 id: uberon
 infores_id: uberon
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -1508,8 +1508,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3584,6 +3584,20 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- id: uberon.kg-bioportal
+  name: UBERON KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Uber Anatomy Ontology (UBERON), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains UBERON_nodes.tsv and UBERON_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UBERON.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: uberon
+    relation_type: prov:hadPrimarySource
+  node_count: 31219
+  edge_count: 134094
+  latest_version: '2023-07-25'
 publications:
 - authors:
   - Mungall CJ

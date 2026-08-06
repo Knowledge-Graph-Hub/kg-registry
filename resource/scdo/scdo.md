@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://scdontology.h3abionet.org/
 id: scdo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -45,69 +45,82 @@ products:
     original_source:
       - source: scdo
         relation_type: prov:hadPrimarySource
+  - id: scdo.kg-bioportal
+    name: SCDO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Sickle Cell Disease Ontology (SCDO), produced by KG-Bioportal from the BioPortal submission. The archive contains SCDO_nodes.tsv and SCDO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SCDO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: scdo
+        relation_type: prov:hadPrimarySource
+    node_count: 2870
+    edge_count: 7286
+    latest_version: '2021-04-15'
 repository: https://github.com/scdodev/scdo-ontology
 publications:
-- authors:
-  - Mazandu GK
-  - Hotchkiss J
-  - Nembaware V
-  - Wonkam A
-  - Mulder N
-  doi: 10.1093/database/baac014
-  id: https://www.ncbi.nlm.nih.gov/pubmed/35363306
-  journal: Database (Oxford)
-  title: 'The Sickle Cell Disease Ontology: recent development and expansion of the universal sickle cell knowledge representation.'
-  year: '2022'
-- authors:
-  - Nembaware V
-  - Mazandu GK
-  - Hotchkiss J
-  - Safari Serufuri JM
-  - Kent J
-  - Kengne AP
-  - Anie K
-  - Munung NS
-  - Bukini D
-  - Bitoungui VJN
-  - Munube D
-  - Chirwa U
-  - Chunda-Liyoka C
-  - Jonathan A
-  - Flor-Park MV
-  - Esoh KK
-  - Jonas M
-  - Mnika K
-  - Oosterwyk C
-  - Masamu U
-  - Morrice J
-  - Uwineza A
-  - Nguweneza A
-  - Banda K
-  - Nyanor I
-  - Adjei DN
-  - Siebu NE
-  - Nkanyemka M
-  - Kuona P
-  - Tayo BO
-  - Campbell A
-  - Oron AP
-  - Nnodu OE
-  - Painstil V
-  - Makani J
-  - Mulder N
-  - Wonkam A
-  doi: 10.1089/omi.2020.0153
-  id: https://www.ncbi.nlm.nih.gov/pubmed/33021900
-  journal: OMICS
-  title: 'The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing of New Planetary Health Applications.'
-  year: '2020'
-- authors:
-  - Sickle Cell Disease Ontology Working Group
-  doi: 10.1093/database/baz118
-  id: https://www.ncbi.nlm.nih.gov/pubmed/31769834
-  journal: Database (Oxford)
-  title: 'The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation.'
-  year: '2019'
+  - authors:
+      - Mazandu GK
+      - Hotchkiss J
+      - Nembaware V
+      - Wonkam A
+      - Mulder N
+    doi: 10.1093/database/baac014
+    id: https://www.ncbi.nlm.nih.gov/pubmed/35363306
+    journal: Database (Oxford)
+    title: 'The Sickle Cell Disease Ontology: recent development and expansion of the universal sickle cell knowledge representation.'
+    year: '2022'
+  - authors:
+      - Nembaware V
+      - Mazandu GK
+      - Hotchkiss J
+      - Safari Serufuri JM
+      - Kent J
+      - Kengne AP
+      - Anie K
+      - Munung NS
+      - Bukini D
+      - Bitoungui VJN
+      - Munube D
+      - Chirwa U
+      - Chunda-Liyoka C
+      - Jonathan A
+      - Flor-Park MV
+      - Esoh KK
+      - Jonas M
+      - Mnika K
+      - Oosterwyk C
+      - Masamu U
+      - Morrice J
+      - Uwineza A
+      - Nguweneza A
+      - Banda K
+      - Nyanor I
+      - Adjei DN
+      - Siebu NE
+      - Nkanyemka M
+      - Kuona P
+      - Tayo BO
+      - Campbell A
+      - Oron AP
+      - Nnodu OE
+      - Painstil V
+      - Makani J
+      - Mulder N
+      - Wonkam A
+    doi: 10.1089/omi.2020.0153
+    id: https://www.ncbi.nlm.nih.gov/pubmed/33021900
+    journal: OMICS
+    title: 'The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing of New Planetary Health Applications.'
+    year: '2020'
+  - authors:
+      - Sickle Cell Disease Ontology Working Group
+    doi: 10.1093/database/baz118
+    id: https://www.ncbi.nlm.nih.gov/pubmed/31769834
+    journal: Database (Oxford)
+    title: 'The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation.'
+    year: '2019'
 ---
 
 ## Description
