@@ -47,6 +47,14 @@ jobs:
           # glob matches nothing. Stage the directory to pick up adds, edits and
           # the product pages the build reaps.
           git add resource/ reports/ _config.yml _data/schema.yaml
+          # `make refresh-schema` deletes and regenerates these three (see
+          # clean-schema), then copies the combined schema to _data/schema.yaml.
+          # Staging only the copy let the tracked originals drift away from what
+          # the pinned LinkML emits -- and validation reads the original, not the
+          # copy, so the drift was not merely cosmetic.
+          git add src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
+          git add src/kg_registry/kg_registry_schema/datamodel/*.py
+          git add src/kg_registry/kg_registry_schema/*.json
           # Persist the URL/reference caches the build just refreshed. Without
           # this they die with the runner, so every run re-checks every URL from
           # scratch and the cache TTLs never do anything.
