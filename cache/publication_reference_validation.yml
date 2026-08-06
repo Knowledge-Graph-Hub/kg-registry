@@ -2406,6 +2406,15 @@ entries:
     source_path: resource/eram/eram.md
     status: valid
     warnings: []
+  resource/eu-knowledge-graph/eu-knowledge-graph.md#publication[0]#DOI:10.1007/978-3-030-88361-4_37:
+    checked_at: '2026-08-06T18:08:16Z'
+    errors: []
+    fingerprint: b26ed960616e9867f89a304c218051dcc2d577f9d83d94b7ce5921584c8764ee
+    publication_index: 0
+    reference_id: DOI:10.1007/978-3-030-88361-4_37
+    source_path: resource/eu-knowledge-graph/eu-knowledge-graph.md
+    status: valid
+    warnings: []
   resource/eupath/eupath.md#publication[0]#DOI:10.5281/zenodo.6685957:
     checked_at: '2026-08-06T18:17:18Z'
     errors: []
