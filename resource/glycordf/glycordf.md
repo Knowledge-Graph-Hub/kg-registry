@@ -35,7 +35,7 @@ domains:
 - biomedical
 homepage_url: https://www.glycoinfo.org/GlycoRDF/
 id: glycordf
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 name: 'GlycoRDF: An Ontology to Standardize Glycomics Data in RDF'
 products:
@@ -402,13 +402,27 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: glycordf
+- id: glycordf.kg-bioportal
+  name: GLYCORDF KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of GlycoRDF (GLYCORDF), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains GLYCORDF_nodes.tsv and GLYCORDF_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCORDF.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: glycordf
+    relation_type: prov:hadPrimarySource
+  node_count: 605
+  edge_count: 514
+  latest_version: 1.2.1
 publications:
 - authors:
   - Rene Ranzinger
   - Kiyoko F. Aoki-Kinoshita
   - Matthew P. Campbell
   - Shin Kawano
-  - "Thomas L\xFCtteke"
+  - Thomas Lütteke
   - Shujiro Okuda
   - Daisuke Shinmachi
   - Toshihide Shikanai

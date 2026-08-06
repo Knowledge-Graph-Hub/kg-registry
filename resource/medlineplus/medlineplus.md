@@ -29,7 +29,7 @@ domains:
 homepage_url: https://medlineplus.gov/
 id: medlineplus
 infores_id: medlineplus
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 name: MedlinePlus
 products:
@@ -431,6 +431,21 @@ products:
     source: medlineplus
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
+- id: medlineplus.kg-bioportal
+  name: MEDLINEPLUS KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of MedlinePlus Health Topics (MEDLINEPLUS), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains MEDLINEPLUS_nodes.tsv
+    and MEDLINEPLUS_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MEDLINEPLUS.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: medlineplus
+    relation_type: prov:hadPrimarySource
+  node_count: 6111
+  edge_count: 2037
+  latest_version: '20250624'
 taxon:
 - NCBITaxon:9606
 ---

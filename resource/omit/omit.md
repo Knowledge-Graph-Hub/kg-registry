@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://omit.cis.usouthal.edu/
 id: omit
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -260,6 +260,21 @@ products:
     source: obi
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
+- id: omit.kg-bioportal
+  name: OMIT KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Ontology for MicroRNA Target (OMIT), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains OMIT_nodes.tsv
+    and OMIT_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMIT.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: omit
+    relation_type: prov:hadPrimarySource
+  node_count: 87856
+  edge_count: 97760
+  latest_version: OBO 4.0-12122013-2338
 publications: []
 repository: https://github.com/OmniSearch/omit
 ---

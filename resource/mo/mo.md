@@ -18,7 +18,7 @@ domains:
 - general
 homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
 id: mo
-last_modified_date: '2026-07-10T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -35,13 +35,26 @@ products:
     source: mo
   product_url: http://purl.obolibrary.org/obo/mo.owl
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+    when accessing file'
   - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
     (HTTP 404); product_url now points to a Wayback Machine archived snapshot of the
     MGED Ontology OWL.
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
-    when accessing file'
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Microarray and Gene Expression Data Ontology (MO),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains MO_nodes.tsv
+    and MO_edges.tsv.
+  edge_count: 464
+  format: kgx
+  id: mo.kg-bioportal
+  latest_version: 1.3.1.1
+  name: MO KGX graph (KG-Bioportal)
+  node_count: 1045
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mo
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/MO.tar.gz
 publications:
 - authors:
   - Whetzel PL

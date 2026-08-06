@@ -19,7 +19,7 @@ domains:
   - agriculture
 homepage_url: https://github.com/Planteome/plant-stress-ontology
 id: pso
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -47,6 +47,19 @@ products:
     original_source:
       - source: pso
         relation_type: prov:hadPrimarySource
+  - id: pso.kg-bioportal
+    name: PLANTSO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Plant Stress Ontology (PLANTSO), produced by KG-Bioportal from the BioPortal submission. The archive contains PLANTSO_nodes.tsv and PLANTSO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANTSO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: pso
+        relation_type: prov:hadPrimarySource
+    node_count: 5355
+    edge_count: 16147
+    latest_version: '2026-01-08'
 repository: https://github.com/Planteome/plant-stress-ontology
 publications:
   - authors:

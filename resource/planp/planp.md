@@ -20,7 +20,7 @@ domains:
 - phenotype
 homepage_url: https://github.com/obophenotype/planarian-phenotype-ontology
 id: planp
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -48,6 +48,20 @@ products:
   original_source:
   - source: planp
     relation_type: prov:hadPrimarySource
+- id: planp.kg-bioportal
+  name: PLANP KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Planarian Phenotype Ontology (PLANP), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains PLANP_nodes.tsv
+    and PLANP_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANP.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: planp
+    relation_type: prov:hadPrimarySource
+  node_count: 4790
+  edge_count: 12777
 repository: https://github.com/obophenotype/planarian-phenotype-ontology
 publications: []
 ---

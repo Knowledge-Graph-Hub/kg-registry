@@ -15,7 +15,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.loria.fr/~coulet/sopharm2.0_description.php
 id: sopharm
-last_modified_date: '2026-06-24T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -40,6 +40,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sopharm
   product_url: https://bioportal.bioontology.org/ontologies/SOPHARM
+- id: sopharm.kg-bioportal
+  name: SOPHARM KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Suggested Ontology for Pharmacogenomics (SOPHARM),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains SOPHARM_nodes.tsv
+    and SOPHARM_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SOPHARM.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: sopharm
+    relation_type: prov:hadPrimarySource
+  node_count: 232
+  edge_count: 294
+  latest_version: 'Version: SO-Pharm 2.2
+
+    Release: 02 Mar 2017'
 publications: []
 taxon:
 - NCBITaxon:9606

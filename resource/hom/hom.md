@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/BgeeDB/homology-ontology
 id: hom
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: hom
         relation_type: prov:hadPrimarySource
+  - id: hom.kg-bioportal
+    name: HOM KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Ontology of Homology and Related Concepts in Biology (HOM), produced by KG-Bioportal from the BioPortal submission. The archive contains HOM_nodes.tsv and HOM_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HOM.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: hom
+        relation_type: prov:hadPrimarySource
+    node_count: 86
+    edge_count: 84
+    latest_version: releases/2015-01-07
 repository: https://github.com/BgeeDB/homology-ontology
 publications:
   - authors:

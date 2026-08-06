@@ -15,7 +15,7 @@ domains:
 - anatomy and development
 homepage_url: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
 id: sao
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -33,10 +33,23 @@ products:
     source: sao
   product_url: http://purl.obolibrary.org/obo/sao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Subcellular Anatomy Ontology (SAO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains SAO_nodes.tsv
+    and SAO_edges.tsv.
+  edge_count: 2541
+  format: kgx
+  id: sao.kg-bioportal
+  latest_version: Version 1.2
+  name: SAO KGX graph (KG-Bioportal)
+  node_count: 863
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sao
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SAO.tar.gz
 publications: []
 taxon:
 - NCBITaxon:9606

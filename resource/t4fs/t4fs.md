@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://github.com/terms4fairskills/FAIRterminology
 id: t4fs
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -58,6 +58,20 @@ products:
     source: t4fs
   product_file_size: 74586
   product_url: http://purl.obolibrary.org/obo/t4fs.json
+- id: t4fs.kg-bioportal
+  name: T4FS KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of terms4FAIRskills (T4FS), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains T4FS_nodes.tsv and T4FS_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/T4FS.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: t4fs
+    relation_type: prov:hadPrimarySource
+  node_count: 675
+  edge_count: 768
+  latest_version: '2025-02-09'
 publications:
 - authors:
   - Molloy, Laura

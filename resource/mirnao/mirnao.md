@@ -15,7 +15,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://code.google.com/p/mirna-ontology/
 id: mirnao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -33,10 +33,22 @@ products:
     source: mirnao
   product_url: http://purl.obolibrary.org/obo/mirnao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of MicroRNA Ontology (MIRNAO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains MIRNAO_nodes.tsv and MIRNAO_edges.tsv.
+  edge_count: 764
+  format: kgx
+  id: mirnao.kg-bioportal
+  latest_version: '1.7'
+  name: MIRNAO KGX graph (KG-Bioportal)
+  node_count: 695
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirnao
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIRNAO.tar.gz
 publications: []
 ---
 ## Description

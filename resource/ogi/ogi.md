@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
 id: ogi
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -36,10 +36,23 @@ products:
     source: ogi
   product_url: http://purl.obolibrary.org/obo/ogi.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Ontology for Genetic Interval (OGI), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains OGI_nodes.tsv
+    and OGI_edges.tsv.
+  edge_count: 305
+  format: kgx
+  id: ogi.kg-bioportal
+  latest_version: '2.0'
+  name: OGI KGX graph (KG-Bioportal)
+  node_count: 262
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ogi
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/OGI.tar.gz
 publications: []
 use_instead:
 - ogsf

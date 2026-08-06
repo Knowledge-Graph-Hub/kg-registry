@@ -18,7 +18,7 @@ domains:
   - chemistry and biochemistry
 homepage_url: https://github.com/IEDB/MRO
 id: mro
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: mro
         relation_type: prov:hadPrimarySource
+  - id: mro.kg-bioportal
+    name: MHCRO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of MHC Restriction Ontology (MHCRO), produced by KG-Bioportal from the BioPortal submission. The archive contains MHCRO_nodes.tsv and MHCRO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MHCRO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: mro
+        relation_type: prov:hadPrimarySource
+    node_count: 51499
+    edge_count: 168477
+    latest_version: '2026-02-10'
 repository: https://github.com/IEDB/MRO
 publications:
   - authors:

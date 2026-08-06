@@ -21,7 +21,7 @@ domains:
 - biomedical
 homepage_url: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
 id: ido
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -227,6 +227,21 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
+- id: ido.kg-bioportal
+  name: IDO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Infectious Disease Ontology (IDO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains IDO_nodes.tsv
+    and IDO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IDO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ido
+    relation_type: prov:hadPrimarySource
+  node_count: 538
+  edge_count: 835
+  latest_version: 8-3-20
 publications:
 - authors:
   - Babcock S

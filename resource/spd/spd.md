@@ -20,7 +20,7 @@ domains:
 - anatomy and development
 homepage_url: http://research.amnh.org/atol/files/
 id: spd
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -38,6 +38,20 @@ products:
   original_source:
   - source: spd
     relation_type: prov:hadPrimarySource
+- id: spd.kg-bioportal
+  name: SPD KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Spider Anatomy Ontology (SPD), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains SPD_nodes.tsv and SPD_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SPD.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: spd
+    relation_type: prov:hadPrimarySource
+  node_count: 853
+  edge_count: 1214
+  latest_version: '1.1'
 repository: https://github.com/obophenotype/spider-ontology
 taxon:
 - NCBITaxon:6893

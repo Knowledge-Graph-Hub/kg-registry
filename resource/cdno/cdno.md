@@ -20,7 +20,7 @@ domains:
 - nutrition
 homepage_url: https://cdno.info/
 id: cdno
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -48,6 +48,20 @@ products:
   original_source:
   - source: cdno
     relation_type: prov:hadPrimarySource
+- id: cdno.kg-bioportal
+  name: CDNO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Compositional Dietary Nutrition Ontology (CDNO),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains CDNO_nodes.tsv
+    and CDNO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDNO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: cdno
+    relation_type: prov:hadPrimarySource
+  node_count: 3507
+  edge_count: 5886
 repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
 publications:
 - authors:

@@ -16,13 +16,28 @@ domains:
 - anatomy and development
 homepage_url: http://www.maizemap.org/
 id: zea
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
   label: Not specified
 name: Maize gross anatomy
-products: []
+products:
+- id: zea.kg-bioportal
+  name: ZEA KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Maize Gross Anatomy Ontology (ZEA), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains ZEA_nodes.tsv
+    and ZEA_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZEA.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: zea
+    relation_type: prov:hadPrimarySource
+  node_count: 195
+  edge_count: 217
+  latest_version: '1.2'
 publications: []
 taxon:
 - NCBITaxon:4575

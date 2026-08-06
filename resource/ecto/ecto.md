@@ -27,7 +27,7 @@ domains:
 homepage_url: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 id: ecto
 infores_id: ecto
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -289,6 +289,21 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
+- id: ecto.kg-bioportal
+  name: ECTO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Environmental conditions, treatments and exposures
+    ontology (ECTO), produced by KG-Bioportal from the BioPortal submission. The archive
+    contains ECTO_nodes.tsv and ECTO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECTO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ecto
+    relation_type: prov:hadPrimarySource
+  node_count: 21399
+  edge_count: 61849
+  latest_version: '2026-07-28'
 publications: []
 repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 ---

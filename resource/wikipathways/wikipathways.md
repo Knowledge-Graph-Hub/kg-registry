@@ -36,7 +36,7 @@ fairsharing_id: FAIRsharing.1x53qk
 homepage_url: https://www.wikipathways.org/
 id: wikipathways
 infores_id: wikipathways
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/share-your-work/public-domain/cc0/
@@ -3026,6 +3026,21 @@ products:
     source: wikidata
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- id: wikipathways.kg-bioportal
+  name: WIKIPATHWAYS KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of WikiPathways (WIKIPATHWAYS), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains WIKIPATHWAYS_nodes.tsv and
+    WIKIPATHWAYS_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/WIKIPATHWAYS.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: wikipathways
+    relation_type: prov:hadPrimarySource
+  node_count: 65
+  edge_count: 95
+  latest_version: 2013a
 publications:
 - authors:
   - Agrawal A

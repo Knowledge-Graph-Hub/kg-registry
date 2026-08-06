@@ -11,7 +11,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://purl.obolibrary.org/obo/rex.owl
 id: rex
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -28,6 +28,20 @@ products:
     source: rex
   product_url: http://purl.obolibrary.org/obo/rex.owl
   warnings: []
+- id: rex.kg-bioportal
+  name: REX KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Physico-Chemical Process (REX), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains REX_nodes.tsv and REX_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/REX.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: rex
+    relation_type: prov:hadPrimarySource
+  node_count: 570
+  edge_count: 734
+  latest_version: '1.13'
 publications: []
 ---
 ## Description

@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/OOSTT/OOSTT
 id: "oostt"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: "http://creativecommons.org/licenses/by/4.0/"
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: oostt
         relation_type: prov:hadPrimarySource
+  - id: oostt.kg-bioportal
+    name: OOSTT KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Ontology of Organizational Structures of Trauma centers and Trauma systems (OOSTT), produced by KG-Bioportal from the BioPortal submission. The archive contains OOSTT_nodes.tsv and OOSTT_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OOSTT.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: oostt
+        relation_type: prov:hadPrimarySource
+    node_count: 1117
+    edge_count: 1178
+    latest_version: release version - 2025-01-24
 publications:
   - authors:
       - Joseph Utecht

@@ -17,7 +17,7 @@ domains:
 - information technology
 homepage_url: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
 id: ero
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/2.0/
@@ -35,6 +35,21 @@ products:
     source: ero
   product_url: http://purl.obolibrary.org/obo/ero.owl
   warnings: []
+- id: ero.kg-bioportal
+  name: ERO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Eagle-I Research Resource Ontology (ERO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains ERO_nodes.tsv
+    and ERO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ERO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ero
+    relation_type: prov:hadPrimarySource
+  node_count: 4384
+  edge_count: 9033
+  latest_version: '2013-08-02'
 publications: []
 ---
 ## Description

@@ -18,7 +18,7 @@ domains:
   - environment
 homepage_url: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
 id: zeco
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -56,6 +56,19 @@ products:
     original_source:
       - source: zeco
         relation_type: prov:hadPrimarySource
+  - id: zeco.kg-bioportal
+    name: ZECO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Zebrafish Experimental Conditions Ontology (ZECO), produced by KG-Bioportal from the BioPortal submission. The archive contains ZECO_nodes.tsv and ZECO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZECO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: zeco
+        relation_type: prov:hadPrimarySource
+    node_count: 220
+    edge_count: 222
+    latest_version: '2022-02-14'
 repository: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
 taxon:
   - NCBITaxon:7954

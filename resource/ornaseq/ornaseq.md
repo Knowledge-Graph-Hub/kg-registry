@@ -20,7 +20,7 @@ domains:
 - general
 homepage_url: http://kim.bio.upenn.edu/software/ornaseq.shtml
 id: ornaseq
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,20 @@ products:
   original_source:
   - source: ornaseq
     relation_type: prov:hadPrimarySource
+- id: ornaseq.kg-bioportal
+  name: ORNASEQ KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Ontology of RNA Sequencing (ORNASEQ), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains ORNASEQ_nodes.tsv
+    and ORNASEQ_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ORNASEQ.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ornaseq
+    relation_type: prov:hadPrimarySource
+  node_count: 203
+  edge_count: 332
 repository: https://github.com/safisher/ornaseq
 publications: []
 ---

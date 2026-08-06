@@ -19,7 +19,7 @@ domains:
 - phenotype
 homepage_url: http://browser.planteome.org/amigo
 id: to
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -289,6 +289,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rapdb
   product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
+- id: to.kg-bioportal
+  name: PTO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Plant Trait Ontology (PTO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains PTO_nodes.tsv and PTO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PTO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: to
+    relation_type: prov:hadPrimarySource
+  node_count: 1761
+  edge_count: 1989
+  latest_version: May 2025
 publications:
 - authors:
   - Cooper L

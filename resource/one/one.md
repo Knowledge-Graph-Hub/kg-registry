@@ -20,7 +20,7 @@ domains:
 - nutrition
 homepage_url: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 id: one
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,21 @@ products:
   original_source:
   - source: one
     relation_type: prov:hadPrimarySource
+- id: one.kg-bioportal
+  name: ONE KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Ontology for Nutritional Epidemiology (ONE), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains ONE_nodes.tsv
+    and ONE_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONE.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: one
+    relation_type: prov:hadPrimarySource
+  node_count: 125
+  edge_count: 102
+  latest_version: V2.2
 repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 publications: []
 ---

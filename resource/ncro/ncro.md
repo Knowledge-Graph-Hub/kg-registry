@@ -19,7 +19,7 @@ domains:
 - general
 homepage_url: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
 id: ncro
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,6 +37,20 @@ products:
   original_source:
   - source: ncro
     relation_type: prov:hadPrimarySource
+- id: ncro.kg-bioportal
+  name: NCRO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Non-coding RNA Ontology (NCRO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains NCRO_nodes.tsv and NCRO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NCRO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ncro
+    relation_type: prov:hadPrimarySource
+  node_count: 100
+  edge_count: 96
+  latest_version: Working version 06102015
 repository: https://github.com/OmniSearch/ncro
 publications:
 - authors:

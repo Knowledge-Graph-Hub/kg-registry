@@ -19,7 +19,7 @@ domains:
 homepage_url: https://github.com/DiseaseOntology/SymptomOntology
 id: symp
 infores_id: symp
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -47,6 +47,19 @@ products:
     original_source:
       - source: symp
         relation_type: prov:hadPrimarySource
+  - id: symp.kg-bioportal
+    name: SYMP KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Symptom Ontology (SYMP), produced by KG-Bioportal from the BioPortal submission. The archive contains SYMP_nodes.tsv and SYMP_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SYMP.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: symp
+        relation_type: prov:hadPrimarySource
+    node_count: 1044
+    edge_count: 916
+    latest_version: '2024-05-17'
 repository: https://github.com/DiseaseOntology/SymptomOntology
 taxon:
   - NCBITaxon:9606

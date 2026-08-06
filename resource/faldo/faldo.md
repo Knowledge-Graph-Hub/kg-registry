@@ -18,7 +18,7 @@ domains:
 - information technology
 homepage_url: http://biohackathon.org/resource/faldo
 id: faldo
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -285,6 +285,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- id: faldo.kg-bioportal
+  name: FALDO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Feature Annotation Location Description Ontology
+    (FALDO), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    FALDO_nodes.tsv and FALDO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FALDO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: faldo
+    relation_type: prov:hadPrimarySource
+  node_count: 40
+  edge_count: 46
+  latest_version: Created at the Biohackathon 2012 and 2013
 repository: https://github.com/OBioFoundry/FALDO
 synonyms:
 - Feature Annotation Location Description Ontology

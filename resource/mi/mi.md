@@ -21,7 +21,7 @@ domains:
 homepage_url: https://github.com/HUPO-PSI/psi-mi-CV
 id: mi
 infores_id: mi
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -545,18 +545,16 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -575,18 +573,16 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -605,18 +601,16 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
     format.
@@ -635,13 +629,11 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
     format.
@@ -660,13 +652,11 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
@@ -684,12 +674,25 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Molecular Interactions (MI), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains MI_nodes.tsv and MI_edges.tsv.
+  edge_count: 3178
+  format: kgx
+  id: mi.kg-bioportal
+  name: MI KGX graph (KG-Bioportal)
+  node_count: 1703
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MI.tar.gz
 publications:
 - authors:
   - Henning Hermjakob
   - Luisa Montecchi-Palazzi
   - Gary Bader
-  - Jérôme Wojcik
+  - "J\xE9r\xF4me Wojcik"
   - Lukasz Salwinski
   - Arnaud Ceol
   - Susan Moore

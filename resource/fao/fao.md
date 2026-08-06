@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/obophenotype/fungal-anatomy-ontology/
 id: fao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -46,6 +46,18 @@ products:
     original_source:
       - source: fao
         relation_type: prov:hadPrimarySource
+  - id: fao.kg-bioportal
+    name: FAO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Fungal Gross Anatomy Ontology (FAO), produced by KG-Bioportal from the BioPortal submission. The archive contains FAO_nodes.tsv and FAO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FAO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: fao
+        relation_type: prov:hadPrimarySource
+    node_count: 146
+    edge_count: 156
 repository: https://github.com/obophenotype/fungal-anatomy-ontology
 taxon:
   - NCBITaxon:4751

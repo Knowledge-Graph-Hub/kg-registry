@@ -19,7 +19,7 @@ domains:
 - environment
 homepage_url: http://environmentontology.org/
 id: envo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -379,6 +379,20 @@ products:
     source: dcat
   - relation_type: prov:wasInformedBy
     source: afo
+- id: envo.kg-bioportal
+  name: ENVO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Environment Ontology (ENVO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains ENVO_nodes.tsv and ENVO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ENVO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: envo
+    relation_type: prov:hadPrimarySource
+  node_count: 8323
+  edge_count: 15406
+  latest_version: '2026-06-26'
 publications:
 - authors:
   - Pier Buttigieg

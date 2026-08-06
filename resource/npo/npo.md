@@ -25,7 +25,7 @@ domains:
 - neuroscience
 homepage_url: https://bioportal.bioontology.org/ontologies/NPOKB
 id: npo
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 name: Neuron Phenotype Ontology
 products:
@@ -259,6 +259,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- id: npo.kg-bioportal
+  name: NPOKB KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Neuron Phenotype Ontology (NPOKB), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains NPOKB_nodes.tsv
+    and NPOKB_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NPOKB.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: npo
+    relation_type: prov:hadPrimarySource
+  node_count: 2916
+  edge_count: 5225
+  latest_version: '2026-03-19'
 publications:
 - authors:
   - Gillespie TH

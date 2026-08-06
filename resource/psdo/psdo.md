@@ -19,7 +19,7 @@ domains:
 - information technology
 homepage_url: https://github.com/Display-Lab/psdo
 id: psdo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,21 @@ products:
   original_source:
   - source: psdo
     relation_type: prov:hadPrimarySource
+- id: psdo.kg-bioportal
+  name: PSDO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Performance Summary Display Ontology (PSDO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains PSDO_nodes.tsv
+    and PSDO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PSDO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: psdo
+    relation_type: prov:hadPrimarySource
+  node_count: 128
+  edge_count: 136
+  latest_version: 1.0.1
 repository: https://github.com/Display-Lab/psdo
 publications: []
 ---

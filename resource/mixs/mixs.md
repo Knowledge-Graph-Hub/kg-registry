@@ -32,9 +32,22 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 154279
     product_url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
+  - id: mixs.kg-bioportal
+    name: MIXS KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Minimal Information about any Sequence Ontology (MIXS), produced by KG-Bioportal from the BioPortal submission. The archive contains MIXS_nodes.tsv and MIXS_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MIXS.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: mixs
+        relation_type: prov:hadPrimarySource
+    node_count: 2391
+    edge_count: 7242
+    latest_version: 7.0.1
 repository: https://github.com/GenomicsStandardsConsortium/mixs
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-09-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 ---
 
 mixs

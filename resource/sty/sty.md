@@ -14,7 +14,7 @@ domains:
 - biomedical
 homepage_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html
 id: sty
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://lhncbc.nlm.nih.gov/semanticnetwork/
@@ -54,8 +54,6 @@ products:
     source: sty
   product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: Product
@@ -70,6 +68,20 @@ products:
     source: sty
   product_file_size: 1583
   product_url: https://w3id.org/biopragmatics/resources/sty/sty.tsv
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Semantic Types Ontology (STY), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains STY_nodes.tsv and STY_edges.tsv.
+  edge_count: 127
+  format: kgx
+  id: sty.kg-bioportal
+  latest_version: 2025AB
+  name: STY KGX graph (KG-Bioportal)
+  node_count: 130
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STY.tar.gz
 publications:
 - authors:
   - McCray AT

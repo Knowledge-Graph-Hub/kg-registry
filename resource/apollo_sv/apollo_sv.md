@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/ApolloDev/apollo-sv
 id: apollo_sv
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,19 @@ products:
     original_source:
       - source: apollo_sv
         relation_type: prov:hadPrimarySource
+  - id: apollo_sv.kg-bioportal
+    name: APOLLO-SV KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Apollo Structured Vocabulary (APOLLO-SV), produced by KG-Bioportal from the BioPortal submission. The archive contains APOLLO-SV_nodes.tsv and APOLLO-SV_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/APOLLO-SV.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: apollo_sv
+        relation_type: prov:hadPrimarySource
+    node_count: 2334
+    edge_count: 3597
+    latest_version: '2026-07-19'
 repository: https://github.com/ApolloDev/apollo-sv
 publications:
   - authors:

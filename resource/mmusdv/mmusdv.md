@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
 id: mmusdv
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -46,6 +46,18 @@ products:
     original_source:
       - source: mmusdv
         relation_type: prov:hadPrimarySource
+  - id: mmusdv.kg-bioportal
+    name: MMUSDV KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Mouse Developmental Stages (MMUSDV), produced by KG-Bioportal from the BioPortal submission. The archive contains MMUSDV_nodes.tsv and MMUSDV_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MMUSDV.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: mmusdv
+        relation_type: prov:hadPrimarySource
+    node_count: 174
+    edge_count: 367
 repository: https://github.com/obophenotype/developmental-stage-ontologies
 publications: []
 ---

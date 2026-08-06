@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: http://browser.planteome.org/amigo
 id: po
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -657,6 +657,20 @@ products:
     source: gomapman
   product_file_size: 702407
   product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/nodes
+- id: po.kg-bioportal
+  name: PO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Plant Ontology (PO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains PO_nodes.tsv and PO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: po
+    relation_type: prov:hadPrimarySource
+  node_count: 2073
+  edge_count: 4425
+  latest_version: releases/2024-04-17
 publications:
 - authors:
   - Cooper L

@@ -21,7 +21,7 @@ domains:
 - organisms
 homepage_url: https://github.com/BiodiversityOntologies/bco
 id: bco
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -39,6 +39,21 @@ products:
   original_source:
   - source: bco
     relation_type: prov:hadPrimarySource
+- id: bco.kg-bioportal
+  name: BCO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Biological Collections Ontology (BCO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains BCO_nodes.tsv
+    and BCO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BCO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: bco
+    relation_type: prov:hadPrimarySource
+  node_count: 860
+  edge_count: 1287
+  latest_version: '2021-11-14'
 repository: https://github.com/BiodiversityOntologies/bco
 publications:
 - authors:

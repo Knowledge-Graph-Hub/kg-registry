@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: https://github.com/obophenotype/adult-mouse-anatomy-ontology
 id: "ma"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: "https://creativecommons.org/licenses/by/4.0/"
@@ -234,6 +234,19 @@ products:
         source: zfa
     product_file_size: 64058275
     product_url: https://www.ebi.ac.uk/efo/efo.obo
+  - id: ma.kg-bioportal
+    name: MA KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Mouse Adult Gross Anatomy Ontology (MA), produced by KG-Bioportal from the BioPortal submission. The archive contains MA_nodes.tsv and MA_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MA.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: ma
+        relation_type: prov:hadPrimarySource
+    node_count: 3408
+    edge_count: 4284
+    latest_version: '2026-02-24'
 publications:
   - authors:
       - Hayamizu TF

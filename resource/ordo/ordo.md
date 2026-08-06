@@ -24,7 +24,7 @@ domains:
 homepage_url: https://www.orphadata.com/ordo/
 id: "ordo"
 infores_id: "ordo"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: "https://creativecommons.org/licenses/by/4.0/"
@@ -659,6 +659,19 @@ products:
         source: phenopacket-store
     product_file_size: 230046094
     product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  - id: ordo.kg-bioportal
+    name: ORDO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Orphanet Rare Disease Ontology (ORDO), produced by KG-Bioportal from the BioPortal submission. The archive contains ORDO_nodes.tsv and ORDO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ORDO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+    node_count: 16393
+    edge_count: 52455
+    latest_version: '4.9'
 taxon:
   - NCBITaxon:9606
 ---

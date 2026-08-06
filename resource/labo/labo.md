@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://github.com/OpenLHS/LABO
 id: labo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,15 +38,29 @@ products:
   original_source:
   - source: labo
     relation_type: prov:hadPrimarySource
+- id: labo.kg-bioportal
+  name: LABO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of clinical LABoratory Ontology (LABO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains LABO_nodes.tsv
+    and LABO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LABO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: labo
+    relation_type: prov:hadPrimarySource
+  node_count: 298
+  edge_count: 547
 repository: https://github.com/OpenLHS/LABO
 taxon:
 - NCBITaxon:9606
 publications:
 - authors:
-  - "Barton, Adrien"
-  - "Fabry, Paul"
-  - "Lavoie, Luc"
-  - "Ethier, Jean-François"
+  - Barton, Adrien
+  - Fabry, Paul
+  - Lavoie, Luc
+  - Ethier, Jean-François
   doi: 10.5281/zenodo.6522019
   id: https://doi.org/10.5281/zenodo.6522019
   journal: Zenodo

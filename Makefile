@@ -58,12 +58,13 @@ SCHEMA_DOC_DIR = docs/schema
 SCHEMA_DIR = src/kg_registry/kg_registry_schema
 
 ### Main Tasks
-.PHONY: all pull_and_build test pull clean sync-obo-foundry sync-frink quality-dashboard check-artifacts
+.PHONY: all pull_and_build test pull clean sync-obo-foundry sync-frink sync-kg-bioportal quality-dashboard check-artifacts
 
 all: \
 	ingest-kg-monarch \
 	sync-frink \
 	sync-obo-foundry \
+	sync-kg-bioportal \
 	_config.yml \
 	registry/kgs.jsonld \
 	registry/kgs-summary.json \
@@ -123,6 +124,22 @@ sync-obo-foundry-test:
 sync-obo-foundry:
 	$(RUN) python util/sync_obo_foundry.py --verbose
 
+# Add KG-Bioportal KGX transform products to matching KG-Registry resources.
+# This does not create resources -- see docs/kg-bioportal-sync.md.
+.PHONY: sync-kg-bioportal sync-kg-bioportal-dry-run sync-kg-bioportal-test
+
+# Dry run to see what would be synced
+sync-kg-bioportal-dry-run:
+	$(RUN) python util/sync_kg_bioportal.py --dry-run --verbose
+
+# Test sync with a limited number of manifest entries
+sync-kg-bioportal-test:
+	$(RUN) python util/sync_kg_bioportal.py --limit 50 --verbose
+
+# Full sync of KG-Bioportal transforms
+sync-kg-bioportal:
+	$(RUN) python util/sync_kg_bioportal.py --verbose
+
 # Sync Translator release metadata to KG-Registry
 .PHONY: sync-translator sync-translator-dry-run
 
@@ -147,7 +164,7 @@ clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 clean-cache:
-	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/publication_reference_validation.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
+	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/kg_bioportal_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/publication_reference_validation.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
 	@echo "✅ Cleared cache files"
 
 ### Directories:
@@ -231,7 +248,7 @@ check-artifacts:
 # Validation uses parallel execution by default (5-10x faster)
 # Set PARALLEL_VALIDATION=no to use sequential validation
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
-reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-frink sync-obo-foundry | extract-metadata reports
+reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-frink sync-obo-foundry sync-kg-bioportal | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
 
 # generate an HTML output of the metadata grid

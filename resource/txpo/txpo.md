@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://toxpilot.nibiohn.go.jp/
 id: txpo
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,20 @@ products:
   original_source:
   - source: txpo
     relation_type: prov:hadPrimarySource
+- id: txpo.kg-bioportal
+  name: TXPO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Toxic Process Ontology (TXPO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains TXPO_nodes.tsv and TXPO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TXPO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: txpo
+    relation_type: prov:hadPrimarySource
+  node_count: 10304
+  edge_count: 23316
+  latest_version: 2022/12/07
 repository: https://github.com/txpo-ontology/TXPO
 publications:
 - authors:

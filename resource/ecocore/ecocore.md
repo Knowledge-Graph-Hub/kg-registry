@@ -19,7 +19,7 @@ domains:
   - environment
 homepage_url: https://github.com/EcologicalSemantics/ecocore
 id: ecocore
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -47,6 +47,19 @@ products:
     original_source:
       - source: ecocore
         relation_type: prov:hadPrimarySource
+  - id: ecocore.kg-bioportal
+    name: ECOCORE KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of An ontology of core ecological entities (ECOCORE), produced by KG-Bioportal from the BioPortal submission. The archive contains ECOCORE_nodes.tsv and ECOCORE_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECOCORE.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: ecocore
+        relation_type: prov:hadPrimarySource
+    node_count: 7497
+    edge_count: 23306
+    latest_version: '2022-03-09'
 repository: https://github.com/EcologicalSemantics/ecocore
 publications: []
 ---

@@ -21,7 +21,7 @@ domains:
 - literature
 homepage_url: https://www.dublincore.org/
 id: dc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -364,15 +364,28 @@ products:
     source: skos
   product_file_size: 1977072
   product_url: https://edamontology.org/EDAM.csv
+- id: dc.kg-bioportal
+  name: DC KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Dublin Core (DC), produced by KG-Bioportal from
+    the BioPortal submission. The archive contains DC_nodes.tsv and DC_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DC.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: dc
+    relation_type: prov:hadPrimarySource
+  node_count: 38
+  edge_count: 37
 publications:
 - id: https://www.iso.org/standard/71339.html
   preferred: true
-  title: "ISO 15836-1:2017 Information and documentation \u2014 The Dublin Core metadata\
-    \ element set \u2014 Part 1: Core elements"
+  title: 'ISO 15836-1:2017 Information and documentation — The Dublin Core metadata
+    element set — Part 1: Core elements'
   year: '2017'
 - id: https://www.iso.org/standard/71341.html
-  title: "ISO 15836-2:2019 Information and documentation \u2014 The Dublin Core metadata\
-    \ element set \u2014 Part 2: DCMI Properties and classes"
+  title: 'ISO 15836-2:2019 Information and documentation — The Dublin Core metadata
+    element set — Part 2: DCMI Properties and classes'
   year: '2019'
 repository: https://github.com/dcmi/
 ---

@@ -16,7 +16,7 @@ domains:
   - anatomy and development
 homepage_url: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
 id: tao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -34,6 +34,19 @@ products:
     original_source:
       - source: tao
         relation_type: prov:hadPrimarySource
+  - id: tao.kg-bioportal
+    name: TAO KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Teleost Anatomy Ontology (TAO), produced by KG-Bioportal from the BioPortal submission. The archive contains TAO_nodes.tsv and TAO_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAO.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: tao
+        relation_type: prov:hadPrimarySource
+    node_count: 3487
+    edge_count: 5423
+    latest_version: '2012-08-10'
 taxon:
   - NCBITaxon:32443
 publications:
@@ -53,7 +66,7 @@ publications:
     title: 'The teleost anatomy ontology: anatomical representation for the genomics age'
     year: '2010'
 use_instead:
-- uberon
+  - uberon
 ---
 
 ## Description

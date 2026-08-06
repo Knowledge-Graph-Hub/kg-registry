@@ -16,7 +16,7 @@ domains:
   - general
 homepage_url: https://biolink.github.io/biolink-model/
 id: biolink
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -432,6 +432,19 @@ products:
         source: mesh
       - relation_type: prov:used
         source: omim
+  - id: biolink.kg-bioportal
+    name: BIOLINK KGX graph (KG-Bioportal)
+    category: GraphProduct
+    description: KGX TSV transform of Biolink Model (BIOLINK), produced by KG-Bioportal from the BioPortal submission. The archive contains BIOLINK_nodes.tsv and BIOLINK_edges.tsv.
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOLINK.tar.gz
+    format: kgx
+    compression: targz
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    node_count: 329
+    edge_count: 812
+    latest_version: 4.4.3
 publications:
   - authors:
       - Unni DR

@@ -20,7 +20,7 @@ domains:
 - general
 homepage_url: http://www.psidev.info/groups/controlled-vocabularies
 id: ms
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -383,6 +383,20 @@ products:
     source: dcat
   - relation_type: prov:wasInformedBy
     source: afo
+- id: ms.kg-bioportal
+  name: MS KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Mass Spectrometry Ontology (MS), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains MS_nodes.tsv and MS_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MS.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ms
+    relation_type: prov:hadPrimarySource
+  node_count: 4182
+  edge_count: 7529
+  latest_version: 4.1.195
 publications:
 - authors:
   - Mayer G
@@ -396,7 +410,7 @@ publications:
   - Levander F
   - Shofstahl J
   - Orchard S
-  - "Vizca\xEDno JA"
+  - Vizcaíno JA
   - Hermjakob H
   - Stephan C
   - Meyer HE

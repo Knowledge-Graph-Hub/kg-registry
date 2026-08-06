@@ -11,7 +11,7 @@ domains:
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/vandf.html
 id: ndfrt
 infores_id: ndfrt
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 name: Veterans Health Administration National Drug File
 products:
@@ -660,6 +660,21 @@ products:
     source: snomedct
   - relation_type: prov:wasInformedBy
     source: umls
+- id: ndfrt.kg-bioportal
+  name: VANDF KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Veterans Health Administration National Drug File
+    (VANDF), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    VANDF_nodes.tsv and VANDF_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VANDF.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ndfrt
+    relation_type: prov:hadPrimarySource
+  node_count: 31362
+  edge_count: 126
+  latest_version: '2025_07_31'
 synonyms:
 - VANDF
 - NDF-RT

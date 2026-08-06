@@ -41,7 +41,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/glycoinfo/GlycoCoO
 id: glycocoo
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 name: GlycoConjugate Ontology (GlycoCoO)
 products:
@@ -347,6 +347,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- id: glycocoo.kg-bioportal
+  name: GLYCOCOO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of GlycoConjugate Ontology (GLYCOCOO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains GLYCOCOO_nodes.tsv
+    and GLYCOCOO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCOCOO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: glycocoo
+    relation_type: prov:hadPrimarySource
+  node_count: 94
+  edge_count: 94
+  latest_version: 1.1.3
 publications:
 - authors:
   - Issaku Yamada

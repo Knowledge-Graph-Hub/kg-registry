@@ -23,7 +23,7 @@ domains:
 - biomedical
 homepage_url: https://humanatlas.io/ccf-ontology
 id: ccf
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -197,6 +197,21 @@ products:
     source: vccf
   product_file_size: 376981902
   product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
+- id: ccf.kg-bioportal
+  name: CCF KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Human Reference Atlas Common Coordinate Framework
+    Ontology (CCF), produced by KG-Bioportal from the BioPortal submission. The archive
+    contains CCF_nodes.tsv and CCF_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CCF.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: ccf
+    relation_type: prov:hadPrimarySource
+  node_count: 140
+  edge_count: 23
+  latest_version: 3.0.0
 publications:
 - authors:
   - Börner K

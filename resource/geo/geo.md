@@ -18,7 +18,7 @@ domains:
 - environment
 homepage_url: https://github.com/ufbmi/geographical-entity-ontology/wiki
 id: geo
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1130,6 +1130,21 @@ products:
     source: tissues
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- id: geo.kg-bioportal
+  name: GEO KGX graph (KG-Bioportal)
+  category: GraphProduct
+  description: KGX TSV transform of Geographical Entity Ontology (GEO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains GEO_nodes.tsv
+    and GEO_edges.tsv.
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/GEO.tar.gz
+  format: kgx
+  compression: targz
+  original_source:
+  - source: geo
+    relation_type: prov:hadPrimarySource
+  node_count: 3
+  edge_count: 0
+  latest_version: production version 2018-02-23
 publications: []
 repository: https://github.com/ufbmi/geographical-entity-ontology
 ---
