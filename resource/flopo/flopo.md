@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Robert Hoehndorf
-  orcid: 0000-0001-8149-5890
   contact_details:
   - contact_type: email
     value: robert.hoehndorf@kaust.edu.sa
   - contact_type: github
     value: leechuck
+  label: Robert Hoehndorf
+  orcid: 0000-0001-8149-5890
 creation_date: '2025-09-29T00:00:00Z'
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domains:
@@ -32,29 +32,27 @@ products:
   format: owl
   id: flopo.owl
   name: flopo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: flopo
   product_file_size: 767285
   product_url: http://purl.obolibrary.org/obo/flopo.owl
-  original_source:
-  - source: flopo
-    relation_type: prov:hadPrimarySource
-- id: flopo.kg-bioportal
-  name: FLOPO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Flora Phenotype Ontology (FLOPO), produced by
     KG-Bioportal from the BioPortal submission. The archive contains FLOPO_nodes.tsv
     and FLOPO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/FLOPO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: flopo
-    relation_type: prov:hadPrimarySource
-  node_count: 58680
   edge_count: 69743
+  format: kgx
+  id: flopo.kg-bioportal
   latest_version: '2026-07-31'
-repository: https://github.com/flora-phenotype-ontology/flopoontology
-taxon:
-- NCBITaxon:33090
+  name: FLOPO KGX graph (KG-Bioportal)
+  node_count: 58680
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: flopo
+  product_file_size: 2441725
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/FLOPO.tar.gz
 publications:
 - authors:
   - Hoehndorf R
@@ -76,6 +74,9 @@ publications:
   title: 'The flora phenotype ontology (FLOPO): tool for integrating morphological
     traits and phenotypes of vascular plants'
   year: '2016'
+repository: https://github.com/flora-phenotype-ontology/flopoontology
+taxon:
+- NCBITaxon:33090
 ---
 ## Description
 

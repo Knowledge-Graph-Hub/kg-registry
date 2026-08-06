@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Fernanda Farinelli
-  orcid: 0000-0003-2338-8872
   contact_details:
   - contact_type: email
     value: fernanda.farinelli@gmail.com
   - contact_type: github
     value: FernandaFarinelli
+  label: Fernanda Farinelli
+  orcid: 0000-0003-2338-8872
 creation_date: '2025-09-29T00:00:00Z'
 description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary
   to provide a representation of the data from electronic health records (EHRs) involved
@@ -33,27 +33,27 @@ products:
   format: owl
   id: ontoneo.owl
   name: ONTONEO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoneo
   product_file_size: 238873
   product_url: http://purl.obolibrary.org/obo/ontoneo.owl
-  original_source:
-  - source: ontoneo
-    relation_type: prov:hadPrimarySource
-- id: ontoneo.kg-bioportal
-  name: ONTONEO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Obstetric and Neonatal Ontology (ONTONEO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains ONTONEO_nodes.tsv
     and ONTONEO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTONEO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ontoneo
-    relation_type: prov:hadPrimarySource
-  node_count: 2348
   edge_count: 3316
+  format: kgx
+  id: ontoneo.kg-bioportal
   latest_version: '2025-03-14'
-repository: https://github.com/ontoneo-project/Ontoneo
+  name: ONTONEO KGX graph (KG-Bioportal)
+  node_count: 2348
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoneo
+  product_file_size: 113340
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTONEO.tar.gz
 publications:
 - authors:
   - Farinelli, Fernanda
@@ -65,13 +65,13 @@ publications:
   journal: CEUR-WS
   title: 'OntONeo: The Obstetric and Neonatal Ontology'
   year: '2025'
-- id: doi:10.5281/zenodo.17508651
+- authors:
+  - Farinelli, Fernanda
   doi: 10.5281/zenodo.17508651
+  id: doi:10.5281/zenodo.17508651
+  journal: Zenodo
   title: Ontologias Formais na Organização do Conhecimento no Domínio Obstétrico e
     Neonatal
-  authors:
-  - Farinelli, Fernanda
-  journal: Zenodo
   year: '2025'
 - authors:
   - Farinelli, Fernanda
@@ -81,6 +81,7 @@ publications:
   title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal
     Domain
   year: '2025'
+repository: https://github.com/ontoneo-project/Ontoneo
 ---
 ## Description
 

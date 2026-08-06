@@ -2,20 +2,22 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Lynn Schriml
-    orcid: 0000-0001-8910-9851
-    contact_details:
-      - contact_type: email
-        value: lynn.schriml@gmail.com
-      - contact_type: github
-        value: lschriml
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lynn.schriml@gmail.com
+  - contact_type: github
+    value: lschriml
+  label: Lynn Schriml
+  orcid: 0000-0001-8910-9851
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host.
+description: An ontology representing the disease transmission process during which
+  the pathogen is transmitted directly or indirectly from its natural reservoir, a
+  susceptible host or source to a new host.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 id: trans
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,82 +28,85 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Pathogen Transmission Ontology
 products:
-  - category: OntologyProduct
-    description: Pathogen Transmission Ontology in OWL format
-    format: owl
-    id: trans.owl
-    name: trans.owl
-    product_file_size: 4172
-    product_url: http://purl.obolibrary.org/obo/trans.owl
-    original_source:
-      - source: trans
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Pathogen Transmission Ontology in OBO format
-    format: obo
-    id: trans.obo
-    name: trans.obo
-    product_file_size: 2629
-    product_url: http://purl.obolibrary.org/obo/trans.obo
-    original_source:
-      - source: trans
-        relation_type: prov:hadPrimarySource
-  - id: trans.kg-bioportal
-    name: PTRANS KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Pathogen Transmission Ontology (PTRANS), produced by KG-Bioportal from the BioPortal submission. The archive contains PTRANS_nodes.tsv and PTRANS_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PTRANS.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: trans
-        relation_type: prov:hadPrimarySource
-    node_count: 53
-    edge_count: 33
-    latest_version: '2026-03-13'
-repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
+- category: OntologyProduct
+  description: Pathogen Transmission Ontology in OWL format
+  format: owl
+  id: trans.owl
+  name: trans.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: trans
+  product_file_size: 4172
+  product_url: http://purl.obolibrary.org/obo/trans.owl
+- category: OntologyProduct
+  description: Pathogen Transmission Ontology in OBO format
+  format: obo
+  id: trans.obo
+  name: trans.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: trans
+  product_file_size: 2629
+  product_url: http://purl.obolibrary.org/obo/trans.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Pathogen Transmission Ontology (PTRANS), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains PTRANS_nodes.tsv
+    and PTRANS_edges.tsv.
+  edge_count: 33
+  format: kgx
+  id: trans.kg-bioportal
+  latest_version: '2026-03-13'
+  name: PTRANS KGX graph (KG-Bioportal)
+  node_count: 53
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: trans
+  product_file_size: 2564
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PTRANS.tar.gz
 publications:
-  - authors:
-      - Schriml LM
-      - Arze C
-      - Nadendla S
-      - Ganapathy A
-      - Felix V
-      - Mahurkar A
-      - Phillippy K
-      - Gussman A
-      - Angiuoli S
-      - Ghedin E
-      - White O
-      - Hall N
-    doi: 10.1093/nar/gkp832
-    id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
-    journal: Nucleic Acids Res
-    title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database
-    year: '2010'
-  - authors:
-      - Schriml LM
-      - Munro JB
-      - Schor M
-      - Olley D
-      - McCracken C
-      - Felix V
-      - Baron JA
-      - Jackson R
-      - Bello SM
-      - Bearer C
-      - Lichenstein R
-      - Bisordi K
-      - Dialo NC
-      - Giglio M
-      - Greene C
-    doi: 10.1093/nar/gkab1063
-    id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
-    journal: Nucleic Acids Res
-    title: The Human Disease Ontology 2022 update
-    year: '2022'
+- authors:
+  - Schriml LM
+  - Arze C
+  - Nadendla S
+  - Ganapathy A
+  - Felix V
+  - Mahurkar A
+  - Phillippy K
+  - Gussman A
+  - Angiuoli S
+  - Ghedin E
+  - White O
+  - Hall N
+  doi: 10.1093/nar/gkp832
+  id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+  journal: Nucleic Acids Res
+  title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance
+    pathogen database
+  year: '2010'
+- authors:
+  - Schriml LM
+  - Munro JB
+  - Schor M
+  - Olley D
+  - McCracken C
+  - Felix V
+  - Baron JA
+  - Jackson R
+  - Bello SM
+  - Bearer C
+  - Lichenstein R
+  - Bisordi K
+  - Dialo NC
+  - Giglio M
+  - Greene C
+  doi: 10.1093/nar/gkab1063
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+  journal: Nucleic Acids Res
+  title: The Human Disease Ontology 2022 update
+  year: '2022'
+repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 ---
-
 ## Description
 
 An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host.

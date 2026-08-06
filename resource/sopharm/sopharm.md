@@ -5,10 +5,10 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Adrien Coulet
   contact_details:
   - contact_type: email
     value: Adrien.Coulet@loria.fr
+  label: Adrien Coulet
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
@@ -40,23 +40,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sopharm
   product_url: https://bioportal.bioontology.org/ontologies/SOPHARM
-- id: sopharm.kg-bioportal
-  name: SOPHARM KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Suggested Ontology for Pharmacogenomics (SOPHARM),
     produced by KG-Bioportal from the BioPortal submission. The archive contains SOPHARM_nodes.tsv
     and SOPHARM_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SOPHARM.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: sopharm
-    relation_type: prov:hadPrimarySource
-  node_count: 232
   edge_count: 294
+  format: kgx
+  id: sopharm.kg-bioportal
   latest_version: 'Version: SO-Pharm 2.2
 
     Release: 02 Mar 2017'
+  name: SOPHARM KGX graph (KG-Bioportal)
+  node_count: 232
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sopharm
+  product_file_size: 6800
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SOPHARM.tar.gz
 publications: []
 taxon:
 - NCBITaxon:9606

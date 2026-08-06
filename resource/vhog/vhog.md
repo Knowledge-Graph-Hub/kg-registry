@@ -26,21 +26,22 @@ products:
     source: vhog
   product_url: http://purl.obolibrary.org/obo/vhog.owl
   warnings: []
-- id: vhog.kg-bioportal
-  name: VHOG KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Vertebrate Homologous Organ Group Ontology (VHOG),
     produced by KG-Bioportal from the BioPortal submission. The archive contains VHOG_nodes.tsv
     and VHOG_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VHOG.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: vhog
-    relation_type: prov:hadPrimarySource
-  node_count: 1200
   edge_count: 1687
+  format: kgx
+  id: vhog.kg-bioportal
   latest_version: unknown
+  name: VHOG KGX graph (KG-Bioportal)
+  node_count: 1200
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vhog
+  product_file_size: 69953
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VHOG.tar.gz
 publications: []
 use_instead:
 - uberon

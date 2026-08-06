@@ -2,20 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Chris Mungall
-    orcid: 0000-0002-6601-2165
-    contact_details:
-      - contact_type: email
-        value: cjmungall@lbl.gov
-      - contact_type: github
-        value: cmungall
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
 creation_date: '2025-09-29T00:00:00Z'
 description: An anatomical and developmental ontology for cephalopods
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://github.com/obophenotype/cephalopod-ontology
 id: ceph
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,44 +26,45 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Cephalopod Ontology
 products:
-  - category: OntologyProduct
-    description: main version
-    format: owl
-    id: ceph.owl
-    name: main version
-    product_file_size: 48794
-    product_url: http://purl.obolibrary.org/obo/ceph.owl
-    original_source:
-      - source: ceph
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: oboformat edition
-    format: obo
-    id: ceph.obo
-    name: oboformat edition
-    product_file_size: 82316
-    product_url: http://purl.obolibrary.org/obo/ceph.obo
-    original_source:
-      - source: ceph
-        relation_type: prov:hadPrimarySource
-  - id: ceph.kg-bioportal
-    name: CEPH KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Cephalopod Ontology (CEPH), produced by KG-Bioportal from the BioPortal submission. The archive contains CEPH_nodes.tsv and CEPH_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CEPH.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: ceph
-        relation_type: prov:hadPrimarySource
-    node_count: 484
-    edge_count: 583
+- category: OntologyProduct
+  description: main version
+  format: owl
+  id: ceph.owl
+  name: main version
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ceph
+  product_file_size: 48794
+  product_url: http://purl.obolibrary.org/obo/ceph.owl
+- category: OntologyProduct
+  description: oboformat edition
+  format: obo
+  id: ceph.obo
+  name: oboformat edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ceph
+  product_file_size: 82316
+  product_url: http://purl.obolibrary.org/obo/ceph.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Cephalopod Ontology (CEPH), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains CEPH_nodes.tsv and CEPH_edges.tsv.
+  edge_count: 583
+  format: kgx
+  id: ceph.kg-bioportal
+  name: CEPH KGX graph (KG-Bioportal)
+  node_count: 484
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ceph
+  product_file_size: 28955
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CEPH.tar.gz
+publications: []
 repository: https://github.com/obophenotype/cephalopod-ontology
 taxon:
-  - NCBITaxon:6605
-publications: []
+- NCBITaxon:6605
 ---
-
 ## Description
 
 An anatomical and developmental ontology for cephalopods

@@ -236,20 +236,21 @@ products:
     source: wikipathways
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-- id: vo.kg-bioportal
-  name: VO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Vaccine Ontology (VO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains VO_nodes.tsv and VO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: vo
-    relation_type: prov:hadPrimarySource
-  node_count: 15915
   edge_count: 105299
+  format: kgx
+  id: vo.kg-bioportal
   latest_version: '2026-06-12'
+  name: VO KGX graph (KG-Bioportal)
+  node_count: 15915
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  product_file_size: 2730157
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VO.tar.gz
 publications:
 - authors:
   - Lin Y

@@ -199,21 +199,22 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: xpo.kg-bioportal
-  name: XPO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Xenopus Phenotype Ontology (XPO), produced by
     KG-Bioportal from the BioPortal submission. The archive contains XPO_nodes.tsv
     and XPO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XPO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: xpo
-    relation_type: prov:hadPrimarySource
-  node_count: 52063
   edge_count: 87933
+  format: kgx
+  id: xpo.kg-bioportal
   latest_version: '2025-07-25'
+  name: XPO KGX graph (KG-Bioportal)
+  node_count: 52063
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  product_file_size: 2965388
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XPO.tar.gz
 publications:
 - authors:
   - Fisher ME

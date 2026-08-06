@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Colin Batchelor
-    orcid: 0000-0001-5985-7429
-    contact_details:
-      - contact_type: email
-        value: batchelorc@rsc.org
-      - contact_type: github
-        value: batchelorc
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: batchelorc@rsc.org
+  - contact_type: github
+    value: batchelorc
+  label: Colin Batchelor
+  orcid: 0000-0001-5985-7429
 creation_date: '2025-09-29T00:00:00Z'
 description: Processes at the molecular level
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://github.com/rsc-ontologies/rxno
 id: mop
 infores_id: mop
@@ -27,32 +27,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Molecular Process Ontology
 products:
-  - category: OntologyProduct
-    description: Molecular Process Ontology
-    format: owl
-    id: mop.owl
-    name: Molecular Process Ontology
-    product_file_size: 154788
-    product_url: http://purl.obolibrary.org/obo/mop.owl
-    original_source:
-      - source: mop
-        relation_type: prov:hadPrimarySource
-  - id: mop.kg-bioportal
-    name: MOP KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Molecular Process Ontology (MOP), produced by KG-Bioportal from the BioPortal submission. The archive contains MOP_nodes.tsv and MOP_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MOP.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: mop
-        relation_type: prov:hadPrimarySource
-    node_count: 3731
-    edge_count: 3893
-repository: https://github.com/rsc-ontologies/rxno
+- category: OntologyProduct
+  description: Molecular Process Ontology
+  format: owl
+  id: mop.owl
+  name: Molecular Process Ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mop
+  product_file_size: 154788
+  product_url: http://purl.obolibrary.org/obo/mop.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Molecular Process Ontology (MOP), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains MOP_nodes.tsv
+    and MOP_edges.tsv.
+  edge_count: 3893
+  format: kgx
+  id: mop.kg-bioportal
+  name: MOP KGX graph (KG-Bioportal)
+  node_count: 3731
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mop
+  product_file_size: 66635
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MOP.tar.gz
 publications: []
+repository: https://github.com/rsc-ontologies/rxno
 ---
-
 ## Description
 
 Processes at the molecular level

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jingshan Huang
-  orcid: 0000-0003-2408-2883
   contact_details:
   - contact_type: email
     value: huang@southalabama.edu
   - contact_type: github
     value: Huang-OMIT
+  label: Jingshan Huang
+  orcid: 0000-0003-2408-2883
 creation_date: '2025-06-25T00:00:00Z'
 description: Ontology to establish data exchange standards and common data elements
   in the microRNA (miR) domain
@@ -260,21 +260,22 @@ products:
     source: obi
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
-- id: omit.kg-bioportal
-  name: OMIT KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology for MicroRNA Target (OMIT), produced
     by KG-Bioportal from the BioPortal submission. The archive contains OMIT_nodes.tsv
     and OMIT_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMIT.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: omit
-    relation_type: prov:hadPrimarySource
-  node_count: 87856
   edge_count: 97760
+  format: kgx
+  id: omit.kg-bioportal
   latest_version: OBO 4.0-12122013-2338
+  name: OMIT KGX graph (KG-Bioportal)
+  node_count: 87856
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  product_file_size: 1400036
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMIT.tar.gz
 publications: []
 repository: https://github.com/OmniSearch/omit
 ---

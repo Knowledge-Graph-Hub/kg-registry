@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Stacia R Engel
-  orcid: 0000-0001-5472-917X
   contact_details:
   - contact_type: email
     value: stacia@stanford.edu
   - contact_type: github
     value: srengel
+  label: Stacia R Engel
+  orcid: 0000-0001-5472-917X
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
 domains:
@@ -32,39 +32,37 @@ products:
   format: owl
   id: apo.owl
   name: apo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: apo
   product_file_size: 32488
   product_url: http://purl.obolibrary.org/obo/apo.owl
-  original_source:
-  - source: apo
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Ascomycete phenotype ontology in OBO format
   format: obo
   id: apo.obo
   name: apo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: apo
   product_file_size: 16797
   product_url: http://purl.obolibrary.org/obo/apo.obo
-  original_source:
-  - source: apo
-    relation_type: prov:hadPrimarySource
-- id: apo.kg-bioportal
-  name: APO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ascomycete Phenotype Ontology (APO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains APO_nodes.tsv
     and APO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/APO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: apo
-    relation_type: prov:hadPrimarySource
-  node_count: 656
   edge_count: 2042
+  format: kgx
+  id: apo.kg-bioportal
   latest_version: '2026-06-16'
-repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
-taxon:
-- NCBITaxon:4890
+  name: APO KGX graph (KG-Bioportal)
+  node_count: 656
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: apo
+  product_file_size: 22698
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/APO.tar.gz
 publications:
 - authors:
   - Costanzo MC
@@ -82,6 +80,9 @@ publications:
   journal: Database (Oxford)
   title: New mutant phenotype data curation system in the Saccharomyces Genome Database
   year: '2009'
+repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
+taxon:
+- NCBITaxon:4890
 ---
 ## Description
 

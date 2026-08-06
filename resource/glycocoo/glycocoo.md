@@ -347,21 +347,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
-- id: glycocoo.kg-bioportal
-  name: GLYCOCOO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of GlycoConjugate Ontology (GLYCOCOO), produced by
     KG-Bioportal from the BioPortal submission. The archive contains GLYCOCOO_nodes.tsv
     and GLYCOCOO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCOCOO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: glycocoo
-    relation_type: prov:hadPrimarySource
-  node_count: 94
   edge_count: 94
+  format: kgx
+  id: glycocoo.kg-bioportal
   latest_version: 1.1.3
+  name: GLYCOCOO KGX graph (KG-Bioportal)
+  node_count: 94
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  product_file_size: 3055
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCOCOO.tar.gz
 publications:
 - authors:
   - Issaku Yamada

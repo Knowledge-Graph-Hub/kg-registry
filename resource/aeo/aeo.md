@@ -2,17 +2,18 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Jonathan Bard
-    contact_details:
-      - contact_type: email
-        value: J.Bard@ed.ac.uk
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: J.Bard@ed.ac.uk
+  label: Jonathan Bard
 creation_date: '2025-09-29T00:00:00Z'
-description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology
+description: AEO is an ontology of anatomical structures that expands CARO, the Common
+  Anatomy Reference Ontology
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology/
 id: aeo
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -23,32 +24,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Anatomical Entity Ontology
 products:
-  - category: OntologyProduct
-    description: Anatomical Entity Ontology in OWL format
-    format: owl
-    id: aeo.owl
-    name: aeo.owl
-    product_file_size: 25664
-    product_url: http://purl.obolibrary.org/obo/aeo.owl
-    original_source:
-      - source: aeo
-        relation_type: prov:hadPrimarySource
-  - id: aeo.kg-bioportal
-    name: AEO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Anatomical Entity Ontology (AEO), produced by KG-Bioportal from the BioPortal submission. The archive contains AEO_nodes.tsv and AEO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AEO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: aeo
-        relation_type: prov:hadPrimarySource
-    node_count: 461
-    edge_count: 728
-repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
+- category: OntologyProduct
+  description: Anatomical Entity Ontology in OWL format
+  format: owl
+  id: aeo.owl
+  name: aeo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aeo
+  product_file_size: 25664
+  product_url: http://purl.obolibrary.org/obo/aeo.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Anatomical Entity Ontology (AEO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains AEO_nodes.tsv
+    and AEO_edges.tsv.
+  edge_count: 728
+  format: kgx
+  id: aeo.kg-bioportal
+  name: AEO KGX graph (KG-Bioportal)
+  node_count: 461
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aeo
+  product_file_size: 18041
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AEO.tar.gz
 publications: []
+repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 ---
-
 ## Description
 
 AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology

@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Janna Hastings
-    orcid: 0000-0002-3469-4923
-    contact_details:
-      - contact_type: email
-        value: janna.hastings@gmail.com
-      - contact_type: github
-        value: jannahastings
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: janna.hastings@gmail.com
+  - contact_type: github
+    value: jannahastings
+  label: Janna Hastings
+  orcid: 0000-0002-3469-4923
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.
+description: An ontology of affective phenomena such as emotions, moods, appraisals
+  and subjective feelings.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/jannahastings/emotion-ontology
 id: mfoem
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,44 +27,46 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Emotion Ontology
 products:
-  - category: OntologyProduct
-    description: Emotion Ontology in OWL format
-    format: owl
-    id: mfoem.owl
-    name: mfoem.owl
-    product_file_size: 72354
-    product_url: http://purl.obolibrary.org/obo/mfoem.owl
-    original_source:
-      - source: mfoem
-        relation_type: prov:hadPrimarySource
-  - id: mfoem.kg-bioportal
-    name: MFOEM KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Emotion Ontology (MFOEM), produced by KG-Bioportal from the BioPortal submission. The archive contains MFOEM_nodes.tsv and MFOEM_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFOEM.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: mfoem
-        relation_type: prov:hadPrimarySource
-    node_count: 771
-    edge_count: 1109
-    latest_version: '2025-07-31'
-repository: https://github.com/jannahastings/emotion-ontology
+- category: OntologyProduct
+  description: Emotion Ontology in OWL format
+  format: owl
+  id: mfoem.owl
+  name: mfoem.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mfoem
+  product_file_size: 72354
+  product_url: http://purl.obolibrary.org/obo/mfoem.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Emotion Ontology (MFOEM), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains MFOEM_nodes.tsv and MFOEM_edges.tsv.
+  edge_count: 1109
+  format: kgx
+  id: mfoem.kg-bioportal
+  latest_version: '2025-07-31'
+  name: MFOEM KGX graph (KG-Bioportal)
+  node_count: 771
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mfoem
+  product_file_size: 38652
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFOEM.tar.gz
 publications:
-  - authors:
-      - Hastings J
-      - Ceusters W
-      - Smith B
-      - Mulligan K
-    doi: 10.1007/978-3-642-24279-3_14
-    id: https://doi.org/10.1007/978-3-642-24279-3_14
-    journal: Lecture Notes in Computer Science
-    preferred: true
-    title: 'The Emotion Ontology: Enabling Interdisciplinary Research in the Affective Sciences'
-    year: '2011'
+- authors:
+  - Hastings J
+  - Ceusters W
+  - Smith B
+  - Mulligan K
+  doi: 10.1007/978-3-642-24279-3_14
+  id: https://doi.org/10.1007/978-3-642-24279-3_14
+  journal: Lecture Notes in Computer Science
+  preferred: true
+  title: 'The Emotion Ontology: Enabling Interdisciplinary Research in the Affective
+    Sciences'
+  year: '2011'
+repository: https://github.com/jannahastings/emotion-ontology
 ---
-
 ## Description
 
 An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.

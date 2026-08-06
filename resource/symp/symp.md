@@ -2,20 +2,22 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Lynn Schriml
-    orcid: 0000-0001-8910-9851
-    contact_details:
-      - contact_type: email
-        value: lynn.schriml@gmail.com
-      - contact_type: github
-        value: lschriml
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lynn.schriml@gmail.com
+  - contact_type: github
+    value: lschriml
+  label: Lynn Schriml
+  orcid: 0000-0001-8910-9851
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease.
+description: An ontology of disease symptoms, with symptoms encompasing perceived
+  changes in function, sensations or appearance reported by a patient indicative of
+  a disease.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/DiseaseOntology/SymptomOntology
 id: symp
 infores_id: symp
@@ -27,84 +29,86 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Symptom Ontology
 products:
-  - category: OntologyProduct
-    description: Symptom Ontology in OWL format
-    format: owl
-    id: symp.owl
-    name: symp.owl
-    product_file_size: 73868
-    product_url: http://purl.obolibrary.org/obo/symp.owl
-    original_source:
-      - source: symp
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Symptom Ontology in OBO format
-    format: obo
-    id: symp.obo
-    name: symp.obo
-    product_file_size: 49360
-    product_url: http://purl.obolibrary.org/obo/symp.obo
-    original_source:
-      - source: symp
-        relation_type: prov:hadPrimarySource
-  - id: symp.kg-bioportal
-    name: SYMP KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Symptom Ontology (SYMP), produced by KG-Bioportal from the BioPortal submission. The archive contains SYMP_nodes.tsv and SYMP_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SYMP.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: symp
-        relation_type: prov:hadPrimarySource
-    node_count: 1044
-    edge_count: 916
-    latest_version: '2024-05-17'
+- category: OntologyProduct
+  description: Symptom Ontology in OWL format
+  format: owl
+  id: symp.owl
+  name: symp.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  product_file_size: 73868
+  product_url: http://purl.obolibrary.org/obo/symp.owl
+- category: OntologyProduct
+  description: Symptom Ontology in OBO format
+  format: obo
+  id: symp.obo
+  name: symp.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  product_file_size: 49360
+  product_url: http://purl.obolibrary.org/obo/symp.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Symptom Ontology (SYMP), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains SYMP_nodes.tsv and SYMP_edges.tsv.
+  edge_count: 916
+  format: kgx
+  id: symp.kg-bioportal
+  latest_version: '2024-05-17'
+  name: SYMP KGX graph (KG-Bioportal)
+  node_count: 1044
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  product_file_size: 36741
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SYMP.tar.gz
+publications:
+- authors:
+  - Schriml LM
+  - Arze C
+  - Nadendla S
+  - Ganapathy A
+  - Felix V
+  - Mahurkar A
+  - Phillippy K
+  - Gussman A
+  - Angiuoli S
+  - Ghedin E
+  - White O
+  - Hall N
+  doi: 10.1093/nar/gkp832
+  id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+  journal: Nucleic Acids Res
+  title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance
+    pathogen database
+  year: '2010'
+- authors:
+  - Schriml LM
+  - Munro JB
+  - Schor M
+  - Olley D
+  - McCracken C
+  - Felix V
+  - Baron JA
+  - Jackson R
+  - Bello SM
+  - Bearer C
+  - Lichenstein R
+  - Bisordi K
+  - Dialo NC
+  - Giglio M
+  - Greene C
+  doi: 10.1093/nar/gkab1063
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+  journal: Nucleic Acids Res
+  title: The Human Disease Ontology 2022 update
+  year: '2022'
 repository: https://github.com/DiseaseOntology/SymptomOntology
 taxon:
-  - NCBITaxon:9606
-publications:
-  - authors:
-      - Schriml LM
-      - Arze C
-      - Nadendla S
-      - Ganapathy A
-      - Felix V
-      - Mahurkar A
-      - Phillippy K
-      - Gussman A
-      - Angiuoli S
-      - Ghedin E
-      - White O
-      - Hall N
-    doi: 10.1093/nar/gkp832
-    id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
-    journal: Nucleic Acids Res
-    title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database
-    year: '2010'
-  - authors:
-      - Schriml LM
-      - Munro JB
-      - Schor M
-      - Olley D
-      - McCracken C
-      - Felix V
-      - Baron JA
-      - Jackson R
-      - Bello SM
-      - Bearer C
-      - Lichenstein R
-      - Bisordi K
-      - Dialo NC
-      - Giglio M
-      - Greene C
-    doi: 10.1093/nar/gkab1063
-    id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
-    journal: Nucleic Acids Res
-    title: The Human Disease Ontology 2022 update
-    year: '2022'
+- NCBITaxon:9606
 ---
-
 ## Description
 
 An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease.

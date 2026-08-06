@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Sabrina Toro
-  orcid: 0000-0002-4142-7153
   contact_details:
   - contact_type: email
     value: Sabrina@tislab.org
   - contact_type: github
     value: sabrinatoro
+  label: Sabrina Toro
+  orcid: 0000-0002-4142-7153
 creation_date: '2025-09-29T00:00:00Z'
 description: Vertebrate Breed Ontology is an ontology created to serve as a single
   computable resource for vertebrate breed names.
@@ -33,76 +33,76 @@ products:
   format: owl
   id: vbo.owl
   name: vbo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vbo
   product_file_size: 2077292
   product_url: http://purl.obolibrary.org/obo/vbo.owl
-  original_source:
-  - source: vbo
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in OBO format
   format: obo
   id: vbo.obo
   name: vbo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vbo
   product_file_size: 990658
   product_url: http://purl.obolibrary.org/obo/vbo.obo
-  original_source:
-  - source: vbo
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in JSON format
   format: json
   id: vbo.json
   name: vbo.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vbo
   product_file_size: 1205306
   product_url: http://purl.obolibrary.org/obo/vbo.json
-  original_source:
-  - source: vbo
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in OWL format
   format: owl
   id: vbo.vbo-base.owl
   name: vbo.vbo-base.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vbo
   product_file_size: 2016216
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.owl
-  original_source:
-  - source: vbo
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in OBO format
   format: obo
   id: vbo.vbo-base.obo
   name: vbo.vbo-base.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vbo
   product_file_size: 958659
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.obo
-  original_source:
-  - source: vbo
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in JSON format
   format: json
   id: vbo.vbo-base.json
   name: vbo.vbo-base.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vbo
   product_file_size: 1154978
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
-  original_source:
-  - source: vbo
-    relation_type: prov:hadPrimarySource
-- id: vbo.kg-bioportal
-  name: VBO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Vertebrate Breed Ontology (VBO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains VBO_nodes.tsv and VBO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VBO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: vbo
-    relation_type: prov:hadPrimarySource
-  node_count: 20885
   edge_count: 114284
+  format: kgx
+  id: vbo.kg-bioportal
   latest_version: '2026-04-15'
-repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
+  name: VBO KGX graph (KG-Bioportal)
+  node_count: 20885
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vbo
+  product_file_size: 1488812
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VBO.tar.gz
 publications:
 - authors:
   - Kathleen R. Mullen
@@ -126,6 +126,7 @@ publications:
   journal: Journal of Veterinary Internal Medicine
   title: 'The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization'
   year: '2025'
+repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
 ---
 ## Description
 

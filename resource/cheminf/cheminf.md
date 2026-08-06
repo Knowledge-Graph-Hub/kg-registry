@@ -69,21 +69,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: skos
   product_url: https://forum.semantic-metabolomics.fr/sparql
-- id: cheminf.kg-bioportal
-  name: CHEMINF KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Chemical Information Ontology (CHEMINF), produced
     by KG-Bioportal from the BioPortal submission. The archive contains CHEMINF_nodes.tsv
     and CHEMINF_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHEMINF.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: cheminf
-    relation_type: prov:hadPrimarySource
-  node_count: 625
   edge_count: 639
+  format: kgx
+  id: cheminf.kg-bioportal
   latest_version: 2.1.0
+  name: CHEMINF KGX graph (KG-Bioportal)
+  node_count: 625
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cheminf
+  product_file_size: 22283
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHEMINF.tar.gz
 publications:
 - authors:
   - Hastings J

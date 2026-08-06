@@ -5,11 +5,11 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Leszek Vincent
-  orcid: 0000-0002-9316-2919
   contact_details:
   - contact_type: email
     value: Leszek@missouri.edu
+  label: Leszek Vincent
+  orcid: 0000-0002-9316-2919
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
@@ -23,21 +23,22 @@ license:
   label: Not specified
 name: Maize gross anatomy
 products:
-- id: zea.kg-bioportal
-  name: ZEA KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Maize Gross Anatomy Ontology (ZEA), produced by
     KG-Bioportal from the BioPortal submission. The archive contains ZEA_nodes.tsv
     and ZEA_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZEA.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: zea
-    relation_type: prov:hadPrimarySource
-  node_count: 195
   edge_count: 217
+  format: kgx
+  id: zea.kg-bioportal
   latest_version: '1.2'
+  name: ZEA KGX graph (KG-Bioportal)
+  node_count: 195
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zea
+  product_file_size: 23487
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZEA.tar.gz
 publications: []
 taxon:
 - NCBITaxon:4575

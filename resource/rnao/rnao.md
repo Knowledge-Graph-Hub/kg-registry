@@ -2,18 +2,19 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Colin Batchelor
-    orcid: 0000-0001-5985-7429
-    contact_details:
-      - contact_type: email
-        value: BatchelorC@rsc.org
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: BatchelorC@rsc.org
+  label: Colin Batchelor
+  orcid: 0000-0001-5985-7429
 creation_date: '2025-09-29T00:00:00Z'
-description: Controlled vocabulary pertaining to RNA function and based on RNA sequences, secondary and three-dimensional structures.
+description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
+  secondary and three-dimensional structures.
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://github.com/bgsu-rna/rnao
 id: rnao
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -24,43 +25,44 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: RNA ontology
 products:
-  - category: OntologyProduct
-    description: RNA ontology in OWL format
-    format: owl
-    id: rnao.owl
-    name: rnao.owl
-    product_file_size: 30137
-    product_url: http://purl.obolibrary.org/obo/rnao.owl
-    original_source:
-      - source: rnao
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: RNA ontology in OBO format
-    format: obo
-    id: rnao.obo
-    name: rnao.obo
-    product_file_size: 11126
-    product_url: http://purl.obolibrary.org/obo/rnao.obo
-    original_source:
-      - source: rnao
-        relation_type: prov:hadPrimarySource
-  - id: rnao.kg-bioportal
-    name: RNAO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of RNA Ontology (RNAO), produced by KG-Bioportal from the BioPortal submission. The archive contains RNAO_nodes.tsv and RNAO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RNAO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: rnao
-        relation_type: prov:hadPrimarySource
-    node_count: 811
-    edge_count: 1362
-    latest_version: r113
-repository: https://github.com/BGSU-RNA/rnao
+- category: OntologyProduct
+  description: RNA ontology in OWL format
+  format: owl
+  id: rnao.owl
+  name: rnao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rnao
+  product_file_size: 30137
+  product_url: http://purl.obolibrary.org/obo/rnao.owl
+- category: OntologyProduct
+  description: RNA ontology in OBO format
+  format: obo
+  id: rnao.obo
+  name: rnao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rnao
+  product_file_size: 11126
+  product_url: http://purl.obolibrary.org/obo/rnao.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of RNA Ontology (RNAO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains RNAO_nodes.tsv and RNAO_edges.tsv.
+  edge_count: 1362
+  format: kgx
+  id: rnao.kg-bioportal
+  latest_version: r113
+  name: RNAO KGX graph (KG-Bioportal)
+  node_count: 811
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rnao
+  product_file_size: 29298
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RNAO.tar.gz
 publications: []
+repository: https://github.com/BGSU-RNA/rnao
 ---
-
 ## Description
 
 Controlled vocabulary pertaining to RNA function and based on RNA sequences, secondary and three-dimensional structures.

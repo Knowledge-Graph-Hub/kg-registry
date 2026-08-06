@@ -57,8 +57,6 @@ products:
     source: mesh
   product_url: https://github.com/biobricks-ai/mesh-kg
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
 repository: https://github.com/biobricks-ai/mesh-kg

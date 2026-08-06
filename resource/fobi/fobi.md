@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Pol Castellano Escuder
-  orcid: 0000-0001-6466-877X
   contact_details:
   - contact_type: email
     value: polcaes@gmail.com
   - contact_type: github
     value: pcastellanoescuder
+  label: Pol Castellano Escuder
+  orcid: 0000-0001-6466-877X
 creation_date: '2025-09-29T00:00:00Z'
 description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake
   data and associate it with metabolomic data
@@ -35,26 +35,26 @@ products:
   id: fobi.owl
   name: FOBI is an ontology to represent food intake data and associate it with metabolomic
     data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fobi
   product_file_size: 118923
   product_url: http://purl.obolibrary.org/obo/fobi.owl
-  original_source:
-  - source: fobi
-    relation_type: prov:hadPrimarySource
-- id: fobi.kg-bioportal
-  name: FOBI KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of FOBI (Food-Biomarker Ontology) (FOBI), produced
     by KG-Bioportal from the BioPortal submission. The archive contains FOBI_nodes.tsv
     and FOBI_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FOBI.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: fobi
-    relation_type: prov:hadPrimarySource
-  node_count: 1359
   edge_count: 6815
-repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
+  format: kgx
+  id: fobi.kg-bioportal
+  name: FOBI KGX graph (KG-Bioportal)
+  node_count: 1359
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fobi
+  product_file_size: 177125
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FOBI.tar.gz
 publications:
 - authors:
   - Castellano-Escuder P
@@ -77,6 +77,7 @@ publications:
   journal: Bioinformatics
   title: 'The fobitools framework: the first steps towards food enrichment analysis'
   year: '2021'
+repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 ---
 ## Description
 

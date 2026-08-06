@@ -364,19 +364,20 @@ products:
     source: skos
   product_file_size: 1977072
   product_url: https://edamontology.org/EDAM.csv
-- id: dc.kg-bioportal
-  name: DC KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Dublin Core (DC), produced by KG-Bioportal from
     the BioPortal submission. The archive contains DC_nodes.tsv and DC_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DC.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: dc
-    relation_type: prov:hadPrimarySource
-  node_count: 38
   edge_count: 37
+  format: kgx
+  id: dc.kg-bioportal
+  name: DC KGX graph (KG-Bioportal)
+  node_count: 38
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dc
+  product_file_size: 2735
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DC.tar.gz
 publications:
 - id: https://www.iso.org/standard/71339.html
   preferred: true

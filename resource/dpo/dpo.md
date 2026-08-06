@@ -207,21 +207,22 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: dpo.kg-bioportal
-  name: DPO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Drosophila Phenotype Ontology (DPO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains DPO_nodes.tsv
     and DPO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DPO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: dpo
-    relation_type: prov:hadPrimarySource
-  node_count: 2172
   edge_count: 5184
+  format: kgx
+  id: dpo.kg-bioportal
   latest_version: '2026-07-10'
+  name: DPO KGX graph (KG-Bioportal)
+  node_count: 2172
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  product_file_size: 157428
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DPO.tar.gz
 publications:
 - authors:
   - Osumi-Sutherland D

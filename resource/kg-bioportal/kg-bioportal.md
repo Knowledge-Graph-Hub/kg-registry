@@ -10,12 +10,11 @@ contacts:
     value: https://www.bioontology.org/
   label: National Center for Biomedical Ontology (NCBO), Stanford
 creation_date: '2026-08-06T00:00:00Z'
-description: KG-Bioportal transforms the ontologies hosted by BioPortal into KGX
-  node and edge files, so each can be used as a knowledge graph. Transforms run
-  monthly on GitHub Actions and every successful result is published as a release
-  asset, alongside a manifest of per-ontology status and node/edge counts. Over
-  a thousand ontologies are covered; the graph browser is the authoritative
-  listing.
+description: KG-Bioportal transforms the ontologies hosted by BioPortal into KGX node
+  and edge files, so each can be used as a knowledge graph. Transforms run monthly
+  on GitHub Actions and every successful result is published as a release asset, alongside
+  a manifest of per-ontology status and node/edge counts. Over a thousand ontologies
+  are covered; the graph browser is the authoritative listing.
 domains:
 - biomedical
 - clinical
@@ -31,9 +30,9 @@ license:
 name: KG-Bioportal
 products:
 - category: GraphicalInterface
-  description: Browsable listing of every KG-Bioportal graph, with node and edge
-    counts, transform status, and a download link for each. This is the canonical
-    index of the transforms; KG-Registry does not mirror the full inventory.
+  description: Browsable listing of every KG-Bioportal graph, with node and edge counts,
+    transform status, and a download link for each. This is the canonical index of
+    the transforms; KG-Registry does not mirror the full inventory.
   format: http
   id: kg-bioportal.browser
   name: KG-Bioportal Graph Browser
@@ -54,17 +53,17 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: kg-bioportal
+  product_file_size: 341106
   product_url: https://github.com/ncbo/kg-bioportal/releases/latest/download/onto_stats.yaml
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: bioportal
 - category: GraphProduct
-  description: KGX TSV graphs for all successfully transformed BioPortal
-    ontologies, published as one gzipped tar archive per ontology on the latest
-    release. Individual archives are at
-    https://github.com/ncbo/kg-bioportal/releases/latest/download/<ACRONYM>.tar.gz
-    and contain <ACRONYM>_nodes.tsv and <ACRONYM>_edges.tsv.
   compression: targz
+  description: KGX TSV graphs for all successfully transformed BioPortal ontologies,
+    published as one gzipped tar archive per ontology on the latest release. Individual
+    archives are at https://github.com/ncbo/kg-bioportal/releases/latest/download/<ACRONYM>.tar.gz
+    and contain <ACRONYM>_nodes.tsv and <ACRONYM>_edges.tsv.
   format: kgx
   id: kg-bioportal.graphs
   latest_version: latest

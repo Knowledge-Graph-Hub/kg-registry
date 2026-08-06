@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
   contact_details:
   - contact_type: email
     value: rlwalls2008@gmail.com
   - contact_type: github
     value: ramonawalls
+  label: Ramona Walls
+  orcid: 0000-0001-8815-0078
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for describing the phenology of individual plants and populations
   of plants, and for integrating plant phenological data across sources and scales.
@@ -33,28 +33,26 @@ products:
   format: owl
   id: ppo.owl
   name: ppo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ppo
   product_file_size: 67183
   product_url: http://purl.obolibrary.org/obo/ppo.owl
-  original_source:
-  - source: ppo
-    relation_type: prov:hadPrimarySource
-- id: ppo.kg-bioportal
-  name: PPO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Plant Phenology Ontology (PPO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains PPO_nodes.tsv and PPO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PPO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ppo
-    relation_type: prov:hadPrimarySource
-  node_count: 921
   edge_count: 1480
+  format: kgx
+  id: ppo.kg-bioportal
   latest_version: '2026-05-06'
-repository: https://github.com/PlantPhenoOntology/PPO
-taxon:
-- NCBITaxon:33090
+  name: PPO KGX graph (KG-Bioportal)
+  node_count: 921
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ppo
+  product_file_size: 48581
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PPO.tar.gz
 publications:
 - authors:
   - Stucky BJ
@@ -70,6 +68,9 @@ publications:
   title: 'The Plant Phenology Ontology: A New Informatics Resource for Large-Scale
     Integration of Plant Phenology Data'
   year: '2018'
+repository: https://github.com/PlantPhenoOntology/PPO
+taxon:
+- NCBITaxon:33090
 ---
 ## Description
 

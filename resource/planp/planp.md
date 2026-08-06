@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Sofia Robb
-  orcid: 0000-0002-3528-5267
   contact_details:
   - contact_type: email
     value: smr@stowers.org
   - contact_type: github
     value: srobb1
+  label: Sofia Robb
+  orcid: 0000-0002-3528-5267
 creation_date: '2025-09-29T00:00:00Z'
 description: Planarian Phenotype Ontology is an ontology of phenotypes observed in
   the planarian Schmidtea mediterranea.
@@ -33,37 +33,38 @@ products:
   format: owl
   id: planp.owl
   name: planp.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: planp
   product_file_size: 535526
   product_url: http://purl.obolibrary.org/obo/planp.owl
-  original_source:
-  - source: planp
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Planarian Phenotype Ontology in OBO format
   format: obo
   id: planp.obo
   name: planp.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: planp
   product_file_size: 339560
   product_url: http://purl.obolibrary.org/obo/planp.obo
-  original_source:
-  - source: planp
-    relation_type: prov:hadPrimarySource
-- id: planp.kg-bioportal
-  name: PLANP KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Planarian Phenotype Ontology (PLANP), produced
     by KG-Bioportal from the BioPortal submission. The archive contains PLANP_nodes.tsv
     and PLANP_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANP.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: planp
-    relation_type: prov:hadPrimarySource
-  node_count: 4790
   edge_count: 12777
-repository: https://github.com/obophenotype/planarian-phenotype-ontology
+  format: kgx
+  id: planp.kg-bioportal
+  name: PLANP KGX graph (KG-Bioportal)
+  node_count: 4790
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: planp
+  product_file_size: 336377
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANP.tar.gz
 publications: []
+repository: https://github.com/obophenotype/planarian-phenotype-ontology
 ---
 ## Description
 

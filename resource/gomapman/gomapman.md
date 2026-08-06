@@ -412,20 +412,21 @@ products:
     source: gomapman
   product_file_size: 702407
   product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/nodes
-- id: gomapman.kg-bioportal
-  name: GMM KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of GoMapMan (GMM), produced by KG-Bioportal from
     the BioPortal submission. The archive contains GMM_nodes.tsv and GMM_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GMM.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: gomapman
-    relation_type: prov:hadPrimarySource
-  node_count: 1902
   edge_count: 1895
+  format: kgx
+  id: gomapman.kg-bioportal
   latest_version: '1.2'
+  name: GMM KGX graph (KG-Bioportal)
+  node_count: 1902
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gomapman
+  product_file_size: 28220
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GMM.tar.gz
 publications:
 - authors:
   - Ramsak Z

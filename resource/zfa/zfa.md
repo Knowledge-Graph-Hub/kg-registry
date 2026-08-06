@@ -386,21 +386,22 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: zfa.kg-bioportal
-  name: ZFA KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Zebrafish Anatomy and Development Ontology (ZFA),
     produced by KG-Bioportal from the BioPortal submission. The archive contains ZFA_nodes.tsv
     and ZFA_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZFA.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: zfa
-    relation_type: prov:hadPrimarySource
-  node_count: 3341
   edge_count: 13190
+  format: kgx
+  id: zfa.kg-bioportal
   latest_version: '2026-07-16'
+  name: ZFA KGX graph (KG-Bioportal)
+  node_count: 3341
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  product_file_size: 419706
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZFA.tar.gz
 publications:
 - authors:
   - Van Slyke CE

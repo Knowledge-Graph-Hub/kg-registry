@@ -583,21 +583,22 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: so.kg-bioportal
-  name: SO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Sequence Types and Features Ontology (SO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains SO_nodes.tsv
     and SO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: so
-    relation_type: prov:hadPrimarySource
-  node_count: 2842
   edge_count: 3924
+  format: kgx
+  id: so.kg-bioportal
   latest_version: unknown
+  name: SO KGX graph (KG-Bioportal)
+  node_count: 2842
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: so
+  product_file_size: 136152
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SO.tar.gz
 publications:
 - authors:
   - Eilbeck K

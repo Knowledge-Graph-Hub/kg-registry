@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Shur-Jen Wang
-  orcid: 0000-0001-5256-8683
   contact_details:
   - contact_type: email
     value: sjwang@mcw.edu
   - contact_type: github
     value: shurjenw
+  label: Shur-Jen Wang
+  orcid: 0000-0001-5256-8683
 creation_date: '2025-09-29T00:00:00Z'
 description: Ontology of rat strains
 domains:
@@ -32,37 +32,35 @@ products:
   format: owl
   id: rs.owl
   name: rs.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rs
   product_file_size: 5527319
   product_url: http://purl.obolibrary.org/obo/rs.owl
-  original_source:
-  - source: rs
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Rat Strain Ontology in OBO format
   format: obo
   id: rs.obo
   name: rs.obo
-  product_url: http://purl.obolibrary.org/obo/rs.obo
   original_source:
-  - source: rs
-    relation_type: prov:hadPrimarySource
-- id: rs.kg-bioportal
-  name: RS KGX graph (KG-Bioportal)
-  category: GraphProduct
+  - relation_type: prov:hadPrimarySource
+    source: rs
+  product_url: http://purl.obolibrary.org/obo/rs.obo
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Rat Strain Ontology (RS), produced by KG-Bioportal
     from the BioPortal submission. The archive contains RS_nodes.tsv and RS_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RS.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: rs
-    relation_type: prov:hadPrimarySource
-  node_count: 5714
   edge_count: 7580
+  format: kgx
+  id: rs.kg-bioportal
   latest_version: '2026-07-29'
-repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
-taxon:
-- NCBITaxon:10114
+  name: RS KGX graph (KG-Bioportal)
+  node_count: 5714
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rs
+  product_file_size: 90719
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RS.tar.gz
 publications:
 - authors:
   - Nigam R
@@ -77,6 +75,9 @@ publications:
   title: 'Rat Strain Ontology: structured controlled vocabulary designed to facilitate
     access to strain data at RGD.'
   year: '2013'
+repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
+taxon:
+- NCBITaxon:10114
 ---
 ## Description
 

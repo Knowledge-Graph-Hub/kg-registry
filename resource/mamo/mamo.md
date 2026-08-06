@@ -25,28 +25,29 @@ products:
   format: owl
   id: mamo.owl
   name: mamo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mamo
   product_file_size: 204902
   product_url: http://purl.obolibrary.org/obo/mamo.owl
-  original_source:
-  - source: mamo
-    relation_type: prov:hadPrimarySource
-- id: mamo.kg-bioportal
-  name: MAMO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Mathematical Modelling Ontology (MAMO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains MAMO_nodes.tsv
     and MAMO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MAMO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: mamo
-    relation_type: prov:hadPrimarySource
-  node_count: 117
   edge_count: 168
+  format: kgx
+  id: mamo.kg-bioportal
   latest_version: '2023-02-03'
-repository: http://sourceforge.net/p/mamo-ontology
+  name: MAMO KGX graph (KG-Bioportal)
+  node_count: 117
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mamo
+  product_file_size: 11301
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MAMO.tar.gz
 publications: []
+repository: http://sourceforge.net/p/mamo-ontology
 ---
 ## Description
 

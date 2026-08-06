@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jingshan Huang
-  orcid: 0000-0003-2408-2883
   contact_details:
   - contact_type: email
     value: huang@southalabama.edu
   - contact_type: github
     value: Huang-OMIT
+  label: Jingshan Huang
+  orcid: 0000-0003-2408-2883
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for non-coding RNA, both of biological origin, and engineered.
 domains:
@@ -32,26 +32,26 @@ products:
   format: owl
   id: ncro.dev.ncro.owl
   name: NCRO development version
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncro
   product_file_size: 4548
   product_url: http://purl.obolibrary.org/obo/ncro/dev/ncro.owl
-  original_source:
-  - source: ncro
-    relation_type: prov:hadPrimarySource
-- id: ncro.kg-bioportal
-  name: NCRO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Non-coding RNA Ontology (NCRO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains NCRO_nodes.tsv and NCRO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NCRO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ncro
-    relation_type: prov:hadPrimarySource
-  node_count: 100
   edge_count: 96
+  format: kgx
+  id: ncro.kg-bioportal
   latest_version: Working version 06102015
-repository: https://github.com/OmniSearch/ncro
+  name: NCRO KGX graph (KG-Bioportal)
+  node_count: 100
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncro
+  product_file_size: 3672
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NCRO.tar.gz
 publications:
 - authors:
   - Jingshan Huang
@@ -81,6 +81,7 @@ publications:
   title: 'The Non-Coding RNA Ontology (NCRO): a comprehensive resource for the unification
     of non-coding RNA biology'
   year: '2016'
+repository: https://github.com/OmniSearch/ncro
 ---
 ## Description
 

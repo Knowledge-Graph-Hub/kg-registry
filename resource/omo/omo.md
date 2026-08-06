@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
 creation_date: '2025-06-25T00:00:00Z'
 description: An ontology specifies terms that are used to annotate ontology terms
   for all OBO ontologies. The ontology was developed as part of Information Artifact
@@ -227,19 +227,20 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
-- id: omo.kg-bioportal
-  name: OMO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of OBO Metadata Ontology (OMO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains OMO_nodes.tsv and OMO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: omo
-    relation_type: prov:hadPrimarySource
-  node_count: 118
   edge_count: 67
+  format: kgx
+  id: omo.kg-bioportal
+  name: OMO KGX graph (KG-Bioportal)
+  node_count: 118
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  product_file_size: 6000
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMO.tar.gz
 publications: []
 repository: https://github.com/information-artifact-ontology/ontology-metadata
 ---

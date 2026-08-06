@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of clinical informed consents
 domains:
@@ -32,26 +32,26 @@ products:
   format: owl
   id: ico.owl
   name: ico.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ico
   product_file_size: 205044
   product_url: http://purl.obolibrary.org/obo/ico.owl
-  original_source:
-  - source: ico
-    relation_type: prov:hadPrimarySource
-- id: ico.kg-bioportal
-  name: ICO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Informed Consent Ontology (ICO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains ICO_nodes.tsv and ICO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ICO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ico
-    relation_type: prov:hadPrimarySource
-  node_count: 1589
   edge_count: 3300
+  format: kgx
+  id: ico.kg-bioportal
   latest_version: '2026-02-28'
-repository: https://github.com/ICO-ontology/ICO
+  name: ICO KGX graph (KG-Bioportal)
+  node_count: 1589
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  product_file_size: 99655
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ICO.tar.gz
 publications:
 - authors:
   - Lin Y
@@ -67,6 +67,7 @@ publications:
   preferred: true
   title: Development of a BFO-Based Informed Consent Ontology (ICO)
   year: '2014'
+repository: https://github.com/ICO-ontology/ICO
 ---
 ## Description
 

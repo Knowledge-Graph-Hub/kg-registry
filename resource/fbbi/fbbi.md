@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Damien Goutte-Gattat
-  orcid: 0000-0002-6095-8718
   contact_details:
   - contact_type: email
     value: damien@gerbi-gmb.de
   - contact_type: github
     value: gouttegd
+  label: Damien Goutte-Gattat
+  orcid: 0000-0002-6095-8718
 - category: Individual
   contact_details:
   - contact_type: email
@@ -41,56 +41,57 @@ products:
   format: owl
   id: fbbi.owl
   name: fbbi.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbbi
   product_file_size: 701623
   product_url: http://purl.obolibrary.org/obo/fbbi.owl
-  original_source:
-  - source: fbbi
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Biological Imaging Methods Ontology in OBO format
   format: obo
   id: fbbi.obo
   name: fbbi.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbbi
   product_file_size: 195618
   product_url: http://purl.obolibrary.org/obo/fbbi.obo
-  original_source:
-  - source: fbbi
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Biological Imaging Methods Ontology in OWL format
   format: owl
   id: fbbi.fbbi-base.owl
   name: fbbi.fbbi-base.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbbi
   product_file_size: 449484
   product_url: http://purl.obolibrary.org/obo/fbbi/fbbi-base.owl
-  original_source:
-  - source: fbbi
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Biological Imaging Methods Ontology in OBO format
   format: obo
   id: fbbi.fbbi-base.obo
   name: fbbi.fbbi-base.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbbi
   product_file_size: 142654
   product_url: http://purl.obolibrary.org/obo/fbbi/fbbi-base.obo
-  original_source:
-  - source: fbbi
-    relation_type: prov:hadPrimarySource
-- id: fbbi.kg-bioportal
-  name: FBBI KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Biological Imaging Methods Ontology (FBBI), produced
     by KG-Bioportal from the BioPortal submission. The archive contains FBBI_nodes.tsv
     and FBBI_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FBbi.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: fbbi
-    relation_type: prov:hadPrimarySource
-  node_count: 896
   edge_count: 1062
+  format: kgx
+  id: fbbi.kg-bioportal
   latest_version: '2026-06-25'
+  name: FBBI KGX graph (KG-Bioportal)
+  node_count: 896
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbbi
+  product_file_size: 28919
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FBbi.tar.gz
 publications: []
 repository: https://github.com/foundingGIDE/fbbi
 ---

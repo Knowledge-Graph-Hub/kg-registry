@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: William Hogan
-    orcid: 0000-0002-9881-1017
-    contact_details:
-      - contact_type: email
-        value: hoganwr@gmail.com
-      - contact_type: github
-        value: hoganwr
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: hoganwr@gmail.com
+  - contact_type: github
+    value: hoganwr
+  label: William Hogan
+  orcid: 0000-0002-9881-1017
 creation_date: '2025-09-29T00:00:00Z'
-description: An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.
+description: An OWL2 ontology of phenomena in infectious disease epidemiology and
+  population biology for use in epidemic simulation.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/ApolloDev/apollo-sv
 id: apollo_sv
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,47 +27,50 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Apollo Structured Vocabulary
 products:
-  - category: OntologyProduct
-    description: Apollo Structured Vocabulary in OWL format
-    format: owl
-    id: apollo_sv.owl
-    name: apollo_sv.owl
-    product_file_size: 264551
-    product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
-    original_source:
-      - source: apollo_sv
-        relation_type: prov:hadPrimarySource
-  - id: apollo_sv.kg-bioportal
-    name: APOLLO-SV KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Apollo Structured Vocabulary (APOLLO-SV), produced by KG-Bioportal from the BioPortal submission. The archive contains APOLLO-SV_nodes.tsv and APOLLO-SV_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/APOLLO-SV.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: apollo_sv
-        relation_type: prov:hadPrimarySource
-    node_count: 2334
-    edge_count: 3597
-    latest_version: '2026-07-19'
-repository: https://github.com/ApolloDev/apollo-sv
+- category: OntologyProduct
+  description: Apollo Structured Vocabulary in OWL format
+  format: owl
+  id: apollo_sv.owl
+  name: apollo_sv.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  product_file_size: 264551
+  product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Apollo Structured Vocabulary (APOLLO-SV), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains APOLLO-SV_nodes.tsv
+    and APOLLO-SV_edges.tsv.
+  edge_count: 3597
+  format: kgx
+  id: apollo_sv.kg-bioportal
+  latest_version: '2026-07-19'
+  name: APOLLO-SV KGX graph (KG-Bioportal)
+  node_count: 2334
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  product_file_size: 112213
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/APOLLO-SV.tar.gz
 publications:
-  - authors:
-      - William R. Hogan
-      - Michael M. Wagner
-      - Mathias Brochhausen
-      - John Levander
-      - Shawn T. Brown
-      - Nicholas Millett
-      - Jay DePasse
-      - Josh Hanna
-    doi: 10.1186/s13326-016-0092-y
-    id: https://doi.org/10.1186/s13326-016-0092-y
-    journal: Journal of Biomedical Semantics
-    title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation'
-    year: '2016'
+- authors:
+  - William R. Hogan
+  - Michael M. Wagner
+  - Mathias Brochhausen
+  - John Levander
+  - Shawn T. Brown
+  - Nicholas Millett
+  - Jay DePasse
+  - Josh Hanna
+  doi: 10.1186/s13326-016-0092-y
+  id: https://doi.org/10.1186/s13326-016-0092-y
+  journal: Journal of Biomedical Semantics
+  title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious
+    disease epidemiology and population biology for use in epidemic simulation'
+  year: '2016'
+repository: https://github.com/ApolloDev/apollo-sv
 ---
-
 ## Description
 
 An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.

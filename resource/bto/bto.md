@@ -633,21 +633,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: motifmap
   product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
-- id: bto.kg-bioportal
-  name: BTO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of BRENDA Tissue and Enzyme Source Ontology (BTO),
     produced by KG-Bioportal from the BioPortal submission. The archive contains BTO_nodes.tsv
     and BTO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BTO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: bto
-    relation_type: prov:hadPrimarySource
-  node_count: 6612
   edge_count: 7657
+  format: kgx
+  id: bto.kg-bioportal
   latest_version: releases/2021-10-26
+  name: BTO KGX graph (KG-Bioportal)
+  node_count: 6612
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  product_file_size: 423773
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BTO.tar.gz
 publications:
 - authors:
   - Gremse M

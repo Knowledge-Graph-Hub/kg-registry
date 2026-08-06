@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Yuki Yamagata
-  orcid: 0000-0002-9673-1283
   contact_details:
   - contact_type: email
     value: yuki.yamagata@riken.jp
   - contact_type: github
     value: yuki-yamagata
+  label: Yuki Yamagata
+  orcid: 0000-0002-9673-1283
 creation_date: '2025-09-29T00:00:00Z'
 description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving
   toxicity courses and processes. The first version of TXPO focuses on liver toxicity.
@@ -32,26 +32,26 @@ products:
   format: owl
   id: txpo.owl
   name: txpo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: txpo
   product_file_size: 1799724
   product_url: http://purl.obolibrary.org/obo/txpo.owl
-  original_source:
-  - source: txpo
-    relation_type: prov:hadPrimarySource
-- id: txpo.kg-bioportal
-  name: TXPO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Toxic Process Ontology (TXPO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains TXPO_nodes.tsv and TXPO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TXPO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: txpo
-    relation_type: prov:hadPrimarySource
-  node_count: 10304
   edge_count: 23316
+  format: kgx
+  id: txpo.kg-bioportal
   latest_version: 2022/12/07
-repository: https://github.com/txpo-ontology/TXPO
+  name: TXPO KGX graph (KG-Bioportal)
+  node_count: 10304
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: txpo
+  product_file_size: 798810
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TXPO.tar.gz
 publications:
 - authors:
   - Yamagata Y
@@ -62,6 +62,7 @@ publications:
   title: Ontological approach to the knowledge systematization of a toxic process
     and toxic course representation framework for early drug risk management
   year: '2020'
+repository: https://github.com/txpo-ontology/TXPO
 ---
 ## Description
 

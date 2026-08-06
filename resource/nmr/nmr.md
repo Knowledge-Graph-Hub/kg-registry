@@ -52,6 +52,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nmr
+  product_file_size: 22087
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NMR.tar.gz
 publications: []
 ---

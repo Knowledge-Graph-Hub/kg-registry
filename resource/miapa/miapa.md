@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Hilmar Lapp
-  orcid: 0000-0001-9107-0714
   contact_details:
   - contact_type: email
     value: hilmar.lapp@duke.edu
   - contact_type: github
     value: hlapp
+  label: Hilmar Lapp
+  orcid: 0000-0001-9107-0714
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology to formalize annotation of phylogenetic data.
 domains:
@@ -32,25 +32,25 @@ products:
   format: owl
   id: miapa.owl
   name: miapa.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: miapa
   product_file_size: 5849
   product_url: http://purl.obolibrary.org/obo/miapa.owl
-  original_source:
-  - source: miapa
-    relation_type: prov:hadPrimarySource
-- id: miapa.kg-bioportal
-  name: MIAPA KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of MIAPA Ontology (MIAPA), produced by KG-Bioportal
     from the BioPortal submission. The archive contains MIAPA_nodes.tsv and MIAPA_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIAPA.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: miapa
-    relation_type: prov:hadPrimarySource
-  node_count: 88
   edge_count: 58
-repository: https://github.com/evoinfo/miapa
+  format: kgx
+  id: miapa.kg-bioportal
+  name: MIAPA KGX graph (KG-Bioportal)
+  node_count: 88
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: miapa
+  product_file_size: 2775
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIAPA.tar.gz
 publications:
 - authors:
   - Jim Leebens-Mack
@@ -87,6 +87,7 @@ publications:
   title: 'Taking the First Steps towards a Standard for Reporting on Phylogenies:
     Minimum Information about a Phylogenetic Analysis (MIAPA)'
   year: '2006'
+repository: https://github.com/evoinfo/miapa
 ---
 ## Description
 

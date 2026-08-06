@@ -2,75 +2,80 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Lutz Fischer
-    orcid: 0000-0003-4978-0864
-    contact_details:
-      - contact_type: email
-        value: "lutz.fischer@tu-berlin.de"
-      - contact_type: github
-        value: "lutzfischer"
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lutz.fischer@tu-berlin.de
+  - contact_type: github
+    value: lutzfischer
+  label: Lutz Fischer
+  orcid: 0000-0003-4978-0864
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry.
+description: A structured controlled vocabulary for cross-linking reagents used with
+  proteomics mass spectrometry.
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: http://www.psidev.info/groups/controlled-vocabularies
-id: "xlmod"
+id: xlmod
 last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/3.0/"
+  id: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
 products:
-  - category: OntologyProduct
-    description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary in OBO format
-    format: obo
-    id: "xlmod.obo"
-    name: xlmod.obo
-    product_file_size: 56285
-    product_url: http://purl.obolibrary.org/obo/xlmod.obo
-    original_source:
-      - source: xlmod
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary in OWL format
-    format: owl
-    id: "xlmod.owl"
-    name: xlmod.owl
-    product_file_size: 96240
-    product_url: http://purl.obolibrary.org/obo/xlmod.owl
-    original_source:
-      - source: xlmod
-        relation_type: prov:hadPrimarySource
-  - id: xlmod.kg-bioportal
-    name: XLMOD KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of mass spectrometry cross-linking and derivatization reagents (XLMOD), produced by KG-Bioportal from the BioPortal submission. The archive contains XLMOD_nodes.tsv and XLMOD_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XLMOD.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: xlmod
-        relation_type: prov:hadPrimarySource
-    node_count: 1149
-    edge_count: 2970
-    latest_version: release/2019-10-28
-repository: https://github.com/HUPO-PSI/xlmod-CV
+- category: OntologyProduct
+  description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
+    in OBO format
+  format: obo
+  id: xlmod.obo
+  name: xlmod.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: xlmod
+  product_file_size: 56285
+  product_url: http://purl.obolibrary.org/obo/xlmod.obo
+- category: OntologyProduct
+  description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
+    in OWL format
+  format: owl
+  id: xlmod.owl
+  name: xlmod.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: xlmod
+  product_file_size: 96240
+  product_url: http://purl.obolibrary.org/obo/xlmod.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of mass spectrometry cross-linking and derivatization
+    reagents (XLMOD), produced by KG-Bioportal from the BioPortal submission. The
+    archive contains XLMOD_nodes.tsv and XLMOD_edges.tsv.
+  edge_count: 2970
+  format: kgx
+  id: xlmod.kg-bioportal
+  latest_version: release/2019-10-28
+  name: XLMOD KGX graph (KG-Bioportal)
+  node_count: 1149
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: xlmod
+  product_file_size: 79721
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XLMOD.tar.gz
 publications:
-  - authors:
-      - Gerhard Mayer
-    doi: "10.48550/arXiv.2003.00329"
-    id: "https://doi.org/10.48550/arXiv.2003.00329"
-    journal: arXiv
-    preferred: true
-    title: 'XLMOD: Cross-linking and chromatography derivatization reagents ontology'
-    year: "2020"
+- authors:
+  - Gerhard Mayer
+  doi: 10.48550/arXiv.2003.00329
+  id: https://doi.org/10.48550/arXiv.2003.00329
+  journal: arXiv
+  preferred: true
+  title: 'XLMOD: Cross-linking and chromatography derivatization reagents ontology'
+  year: '2020'
+repository: https://github.com/HUPO-PSI/xlmod-CV
 ---
-
 ## Description
 
 A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry.

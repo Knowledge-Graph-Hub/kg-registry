@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Francesco Vitali
-  orcid: 0000-0001-9125-4337
   contact_details:
   - contact_type: email
     value: francesco.vitali@ibba.cnr.it
   - contact_type: github
     value: FrancescoVit
+  label: Francesco Vitali
+  orcid: 0000-0001-9125-4337
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for description of concepts in the nutritional studies domain.
 domains:
@@ -32,27 +32,27 @@ products:
   format: owl
   id: ons.owl
   name: ONS latest release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ons
   product_file_size: 215578
   product_url: http://purl.obolibrary.org/obo/ons.owl
-  original_source:
-  - source: ons
-    relation_type: prov:hadPrimarySource
-- id: ons.kg-bioportal
-  name: ONS KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology for Nutritional Studies (ONS), produced
     by KG-Bioportal from the BioPortal submission. The archive contains ONS_nodes.tsv
     and ONS_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONS.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ons
-    relation_type: prov:hadPrimarySource
-  node_count: 5129
   edge_count: 13920
+  format: kgx
+  id: ons.kg-bioportal
   latest_version: '2026-02-06'
-repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
+  name: ONS KGX graph (KG-Bioportal)
+  node_count: 5129
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ons
+  product_file_size: 257463
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONS.tar.gz
 publications:
 - authors:
   - Vitali F
@@ -82,6 +82,7 @@ publications:
   title: 'ONS: an ontology for a standardized description of interventions and observational
     studies in nutrition'
   year: '2018'
+repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 ---
 ## Description
 

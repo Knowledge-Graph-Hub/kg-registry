@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Chen Yang
-  orcid: 0000-0001-9202-5309
   contact_details:
   - contact_type: email
     value: chenyangnutrition@gmail.com
   - contact_type: github
     value: cyang0128
+  label: Chen Yang
+  orcid: 0000-0001-9202-5309
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to standardize research output of nutritional epidemiologic
   studies.
@@ -33,28 +33,29 @@ products:
   format: owl
   id: one.owl
   name: one.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: one
   product_file_size: 9258
   product_url: http://purl.obolibrary.org/obo/one.owl
-  original_source:
-  - source: one
-    relation_type: prov:hadPrimarySource
-- id: one.kg-bioportal
-  name: ONE KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology for Nutritional Epidemiology (ONE), produced
     by KG-Bioportal from the BioPortal submission. The archive contains ONE_nodes.tsv
     and ONE_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONE.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: one
-    relation_type: prov:hadPrimarySource
-  node_count: 125
   edge_count: 102
+  format: kgx
+  id: one.kg-bioportal
   latest_version: V2.2
-repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
+  name: ONE KGX graph (KG-Bioportal)
+  node_count: 125
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: one
+  product_file_size: 6653
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONE.tar.gz
 publications: []
+repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 ---
 ## Description
 

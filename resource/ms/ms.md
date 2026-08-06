@@ -383,20 +383,21 @@ products:
     source: dcat
   - relation_type: prov:wasInformedBy
     source: afo
-- id: ms.kg-bioportal
-  name: MS KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Mass Spectrometry Ontology (MS), produced by KG-Bioportal
     from the BioPortal submission. The archive contains MS_nodes.tsv and MS_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MS.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ms
-    relation_type: prov:hadPrimarySource
-  node_count: 4182
   edge_count: 7529
+  format: kgx
+  id: ms.kg-bioportal
   latest_version: 4.1.195
+  name: MS KGX graph (KG-Bioportal)
+  node_count: 4182
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ms
+  product_file_size: 237776
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MS.tar.gz
 publications:
 - authors:
   - Mayer G

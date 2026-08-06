@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Zach Landis-Lewis
-  orcid: 0000-0002-9117-9338
   contact_details:
   - contact_type: email
     value: zachll@umich.edu
   - contact_type: github
     value: zachll
+  label: Zach Landis-Lewis
+  orcid: 0000-0002-9117-9338
 creation_date: '2025-09-29T00:00:00Z'
 description: Ontology to reproducibly study visualizations of clinical performance
 domains:
@@ -32,28 +32,29 @@ products:
   format: owl
   id: psdo.owl
   name: psdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: psdo
   product_file_size: 9703
   product_url: http://purl.obolibrary.org/obo/psdo.owl
-  original_source:
-  - source: psdo
-    relation_type: prov:hadPrimarySource
-- id: psdo.kg-bioportal
-  name: PSDO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Performance Summary Display Ontology (PSDO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains PSDO_nodes.tsv
     and PSDO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PSDO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: psdo
-    relation_type: prov:hadPrimarySource
-  node_count: 128
   edge_count: 136
+  format: kgx
+  id: psdo.kg-bioportal
   latest_version: 1.0.1
-repository: https://github.com/Display-Lab/psdo
+  name: PSDO KGX graph (KG-Bioportal)
+  node_count: 128
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: psdo
+  product_file_size: 6374
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PSDO.tar.gz
 publications: []
+repository: https://github.com/Display-Lab/psdo
 ---
 ## Description
 

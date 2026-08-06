@@ -2,20 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Nicole Vasilevsky
-    orcid: 0000-0001-5208-3432
-    contact_details:
-      - contact_type: email
-        value: vasilevs@ohsu.edu
-      - contact_type: github
-        value: nicolevasilevsky
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: vasilevs@ohsu.edu
+  - contact_type: github
+    value: nicolevasilevsky
+  label: Nicole Vasilevsky
+  orcid: 0000-0001-5208-3432
 creation_date: '2025-09-29T00:00:00Z'
-description: CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes.
+description: CHEBI provides a distinct role hierarchy. Chemicals in the structural
+  hierarchy are connected via a 'has role' relation. CHIRO provides links from these
+  roles to useful other classes in other ontologies. This will allow direct connection
+  between chemical structures (small molecules, drugs) and what they do. This could
+  be formalized using 'capable of', in the same way Uberon and the Cell Ontology link
+  structures to processes.
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://github.com/obophenotype/chiro
 id: chiro
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,53 +31,55 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: CHEBI Integrated Role Ontology
 products:
-  - category: OntologyProduct
-    description: CHEBI Integrated Role Ontology in OWL format
-    format: owl
-    id: chiro.owl
-    name: chiro.owl
-    product_file_size: 7043
-    product_url: http://purl.obolibrary.org/obo/chiro.owl
-    original_source:
-      - source: chiro
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: CHEBI Integrated Role Ontology in OBO format
-    format: obo
-    id: chiro.obo
-    name: chiro.obo
-    product_file_size: 3337
-    product_url: http://purl.obolibrary.org/obo/chiro.obo
-    original_source:
-      - source: chiro
-        relation_type: prov:hadPrimarySource
-  - id: chiro.kg-bioportal
-    name: CHIRO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of CHEBI Integrated Role Ontology (CHIRO), produced by KG-Bioportal from the BioPortal submission. The archive contains CHIRO_nodes.tsv and CHIRO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHIRO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: chiro
-        relation_type: prov:hadPrimarySource
-    node_count: 429
-    edge_count: 466
-repository: https://github.com/obophenotype/chiro
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OWL format
+  format: owl
+  id: chiro.owl
+  name: chiro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chiro
+  product_file_size: 7043
+  product_url: http://purl.obolibrary.org/obo/chiro.owl
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OBO format
+  format: obo
+  id: chiro.obo
+  name: chiro.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chiro
+  product_file_size: 3337
+  product_url: http://purl.obolibrary.org/obo/chiro.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of CHEBI Integrated Role Ontology (CHIRO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains CHIRO_nodes.tsv
+    and CHIRO_edges.tsv.
+  edge_count: 466
+  format: kgx
+  id: chiro.kg-bioportal
+  name: CHIRO KGX graph (KG-Bioportal)
+  node_count: 429
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chiro
+  product_file_size: 10920
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHIRO.tar.gz
 publications:
-  - authors:
-      - Charles Tapley Hoyt
-      - Christopher Mungall
-      - Nicole Vasilevsky
-      - Daniel Domingo-Fernández
-      - Matthew Healy
-      - Viswa Colluru
-    doi: 10.26434/chemrxiv.12591221
-    id: https://doi.org/10.26434/chemrxiv.12591221
-    title: Extension of Roles in the ChEBI Ontology
-    year: '2020'
+- authors:
+  - Charles Tapley Hoyt
+  - Christopher Mungall
+  - Nicole Vasilevsky
+  - Daniel Domingo-Fernández
+  - Matthew Healy
+  - Viswa Colluru
+  doi: 10.26434/chemrxiv.12591221
+  id: https://doi.org/10.26434/chemrxiv.12591221
+  title: Extension of Roles in the ChEBI Ontology
+  year: '2020'
+repository: https://github.com/obophenotype/chiro
 ---
-
 ## Description
 
 CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes.

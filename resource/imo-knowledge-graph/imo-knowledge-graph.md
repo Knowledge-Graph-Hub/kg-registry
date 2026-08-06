@@ -186,10 +186,12 @@ products:
     source: imo-knowledge-graph
   product_url: https://developer.imohealth.com/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-30: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
+    to URL'
 - category: DocumentationProduct
   description: Product page describing the IMO Health Knowledge Graph, its clinical
     context layer, curation model, and use in grounding clinical AI.

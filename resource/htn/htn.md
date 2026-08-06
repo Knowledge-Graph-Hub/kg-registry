@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Amanda Hicks
-    orcid: 0000-0002-1795-5570
-    contact_details:
-      - contact_type: email
-        value: aellenhicks@gmail.com
-      - contact_type: github
-        value: aellenhicks
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: aellenhicks@gmail.com
+  - contact_type: github
+    value: aellenhicks
+  label: Amanda Hicks
+  orcid: 0000-0002-1795-5570
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for representing clinical data about hypertension, intended to support classification of patients according to various diagnostic guidelines
+description: An ontology for representing clinical data about hypertension, intended
+  to support classification of patients according to various diagnostic guidelines
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/aellenhicks/htn_owl
 id: htn
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,32 +27,33 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Hypertension Ontology
 products:
-  - category: OntologyProduct
-    description: HTN
-    format: owl
-    id: htn.owl
-    name: HTN
-    product_file_size: 140471
-    product_url: http://purl.obolibrary.org/obo/htn.owl
-    original_source:
-      - source: htn
-        relation_type: prov:hadPrimarySource
-  - id: htn.kg-bioportal
-    name: HTN KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Hypertension Ontology (HTN), produced by KG-Bioportal from the BioPortal submission. The archive contains HTN_nodes.tsv and HTN_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HTN.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: htn
-        relation_type: prov:hadPrimarySource
-    node_count: 1130
-    edge_count: 1963
-repository: https://github.com/aellenhicks/htn_owl
+- category: OntologyProduct
+  description: HTN
+  format: owl
+  id: htn.owl
+  name: HTN
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: htn
+  product_file_size: 140471
+  product_url: http://purl.obolibrary.org/obo/htn.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Hypertension Ontology (HTN), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains HTN_nodes.tsv and HTN_edges.tsv.
+  edge_count: 1963
+  format: kgx
+  id: htn.kg-bioportal
+  name: HTN KGX graph (KG-Bioportal)
+  node_count: 1130
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: htn
+  product_file_size: 55964
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HTN.tar.gz
 publications: []
+repository: https://github.com/aellenhicks/htn_owl
 ---
-
 ## Description
 
 An ontology for representing clinical data about hypertension, intended to support classification of patients according to various diagnostic guidelines

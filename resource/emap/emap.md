@@ -2,20 +2,21 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Terry Hayamizu
-    orcid: 0000-0002-0956-8634
-    contact_details:
-      - contact_type: email
-        value: Terry.Hayamizu@jax.org
-      - contact_type: github
-        value: tfhayamizu
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: Terry.Hayamizu@jax.org
+  - contact_type: github
+    value: tfhayamizu
+  label: Terry Hayamizu
+  orcid: 0000-0002-0956-8634
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
+description: A structured controlled vocabulary of stage-specific anatomical structures
+  of the mouse (Mus).
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: http://emouseatlas.org
 id: emap
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -25,36 +26,38 @@ license:
   label: Not specified
 name: Mouse gross anatomy and development, timed
 products:
-  - category: OntologyProduct
-    description: Mouse gross anatomy and development, timed in OWL format
-    format: owl
-    id: emap.owl
-    name: emap.owl
-    product_file_size: 611769
-    product_url: http://purl.obolibrary.org/obo/emap.owl
-    original_source:
-      - source: emap
-        relation_type: prov:hadPrimarySource
-  - id: emap.kg-bioportal
-    name: EMAP KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Mouse Gross Anatomy and Development Ontology (EMAP), produced by KG-Bioportal from the BioPortal submission. The archive contains EMAP_nodes.tsv and EMAP_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EMAP.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: emap
-        relation_type: prov:hadPrimarySource
-    node_count: 19455
-    edge_count: 21721
-    latest_version: unknown
-taxon:
-  - NCBITaxon:10088
+- category: OntologyProduct
+  description: Mouse gross anatomy and development, timed in OWL format
+  format: owl
+  id: emap.owl
+  name: emap.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: emap
+  product_file_size: 611769
+  product_url: http://purl.obolibrary.org/obo/emap.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Mouse Gross Anatomy and Development Ontology (EMAP),
+    produced by KG-Bioportal from the BioPortal submission. The archive contains EMAP_nodes.tsv
+    and EMAP_edges.tsv.
+  edge_count: 21721
+  format: kgx
+  id: emap.kg-bioportal
+  latest_version: unknown
+  name: EMAP KGX graph (KG-Bioportal)
+  node_count: 19455
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: emap
+  product_file_size: 899044
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EMAP.tar.gz
 publications: []
+taxon:
+- NCBITaxon:10088
 use_instead:
-  - emapa
+- emapa
 ---
-
 ## Description
 
 A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).

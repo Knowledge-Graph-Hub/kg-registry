@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Jennifer Smith
-    orcid: 0000-0002-6443-9376
-    contact_details:
-      - contact_type: email
-        value: jrsmith@mcw.edu
-      - contact_type: github
-        value: jrsjrs
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jrsmith@mcw.edu
+  - contact_type: github
+    value: jrsjrs
+  label: Jennifer Smith
+  orcid: 0000-0002-6443-9376
 creation_date: '2025-09-29T00:00:00Z'
-description: A representation of the variety of methods used to make clinical and phenotype measurements.
+description: A representation of the variety of methods used to make clinical and
+  phenotype measurements.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 id: mmo
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,76 +27,79 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Measurement method ontology
 products:
-  - category: OntologyProduct
-    description: Measurement method ontology in OWL format
-    format: owl
-    id: mmo.owl
-    name: mmo.owl
-    product_file_size: 1924733
-    product_url: http://purl.obolibrary.org/obo/mmo.owl
-    original_source:
-      - source: mmo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Measurement method ontology in OBO format
-    format: obo
-    id: mmo.obo
-    name: mmo.obo
-    product_file_size: 506276
-    product_url: http://purl.obolibrary.org/obo/mmo.obo
-    original_source:
-      - source: mmo
-        relation_type: prov:hadPrimarySource
-  - id: mmo.kg-bioportal
-    name: MMO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Measurement Method Ontology (MMO), produced by KG-Bioportal from the BioPortal submission. The archive contains MMO_nodes.tsv and MMO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MMO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: mmo
-        relation_type: prov:hadPrimarySource
-    node_count: 880
-    edge_count: 987
-    latest_version: '2.109'
-repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
+- category: OntologyProduct
+  description: Measurement method ontology in OWL format
+  format: owl
+  id: mmo.owl
+  name: mmo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mmo
+  product_file_size: 1924733
+  product_url: http://purl.obolibrary.org/obo/mmo.owl
+- category: OntologyProduct
+  description: Measurement method ontology in OBO format
+  format: obo
+  id: mmo.obo
+  name: mmo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mmo
+  product_file_size: 506276
+  product_url: http://purl.obolibrary.org/obo/mmo.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Measurement Method Ontology (MMO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains MMO_nodes.tsv
+    and MMO_edges.tsv.
+  edge_count: 987
+  format: kgx
+  id: mmo.kg-bioportal
+  latest_version: '2.109'
+  name: MMO KGX graph (KG-Bioportal)
+  node_count: 880
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mmo
+  product_file_size: 64625
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MMO.tar.gz
 publications:
-  - authors:
-      - Shimoyama M
-      - Nigam R
-      - McIntosh LS
-      - Nagarajan R
-      - Rice T
-      - Rao DC
-      - Dwinell MR
-    doi: 10.3389/fgene.2012.00087
-    id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
-    journal: Front Genet
-    title: Three ontologies to define phenotype measurement data.
-    year: '2012'
-  - authors:
-      - Smith JR
-      - Park CA
-      - Nigam R
-      - Laulederkind SJ
-      - Hayman GT
-      - Wang SJ
-      - Lowry TF
-      - Petri V
-      - Pons JD
-      - Tutaj M
-      - Liu W
-      - Worthey EA
-      - Shimoyama M
-      - Dwinell MR
-    doi: 10.1186/2041-1480-4-26
-    id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
-    journal: J Biomed Semantics
-    title: 'The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.'
-    year: '2013'
+- authors:
+  - Shimoyama M
+  - Nigam R
+  - McIntosh LS
+  - Nagarajan R
+  - Rice T
+  - Rao DC
+  - Dwinell MR
+  doi: 10.3389/fgene.2012.00087
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
+  journal: Front Genet
+  title: Three ontologies to define phenotype measurement data.
+  year: '2012'
+- authors:
+  - Smith JR
+  - Park CA
+  - Nigam R
+  - Laulederkind SJ
+  - Hayman GT
+  - Wang SJ
+  - Lowry TF
+  - Petri V
+  - Pons JD
+  - Tutaj M
+  - Liu W
+  - Worthey EA
+  - Shimoyama M
+  - Dwinell MR
+  doi: 10.1186/2041-1480-4-26
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
+  journal: J Biomed Semantics
+  title: 'The clinical measurement, measurement method and experimental condition
+    ontologies: expansion, improvements and new applications.'
+  year: '2013'
+repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
 ---
-
 ## Description
 
 A representation of the variety of methods used to make clinical and phenotype measurements.

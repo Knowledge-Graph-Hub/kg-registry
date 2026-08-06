@@ -35,20 +35,21 @@ products:
     source: lipro
   product_file_size: 50539
   product_url: http://aber-owl.net/media/ontologies/LIPRO/4/lipro.owl
-- id: lipro.kg-bioportal
-  name: LIPRO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Lipid Ontology (LIPRO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains LIPRO_nodes.tsv and LIPRO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/LIPRO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: lipro
-    relation_type: prov:hadPrimarySource
-  node_count: 292
   edge_count: 17
+  format: kgx
+  id: lipro.kg-bioportal
   latest_version: See Remote Site
+  name: LIPRO KGX graph (KG-Bioportal)
+  node_count: 292
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lipro
+  product_file_size: 3285
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/LIPRO.tar.gz
 publications:
 - authors:
   - Chepelev LL

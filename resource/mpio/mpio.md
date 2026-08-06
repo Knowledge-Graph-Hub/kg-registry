@@ -2,87 +2,90 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Mathias Brochhausen
-    orcid: 0000-0003-1834-3856
-    contact_details:
-      - contact_type: email
-        value: "mbrochhausen@uams.edu"
-      - contact_type: github
-        value: "mbrochhausen"
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: mbrochhausen@uams.edu
+  - contact_type: github
+    value: mbrochhausen
+  label: Mathias Brochhausen
+  orcid: 0000-0003-1834-3856
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of minimum information regarding potential drug-drug interaction information.
+description: An ontology of minimum information regarding potential drug-drug interaction
+  information.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/MPIO-Developers/MPIO
-id: "mpio"
+id: mpio
 last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
-  id: "http://creativecommons.org/licenses/by/4.0/"
+  id: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Minimum PDDI Information Ontology
 products:
-  - category: OntologyProduct
-    description: Minimum PDDI Information Ontology in OWL format
-    format: owl
-    id: "mpio.owl"
-    name: mpio.owl
-    product_file_size: 19172
-    product_url: http://purl.obolibrary.org/obo/mpio.owl
-    original_source:
-      - source: mpio
-        relation_type: prov:hadPrimarySource
-  - id: mpio.kg-bioportal
-    name: MPIO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Minimum PDDI Information Ontology (MPIO), produced by KG-Bioportal from the BioPortal submission. The archive contains MPIO_nodes.tsv and MPIO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPIO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: mpio
-        relation_type: prov:hadPrimarySource
-    node_count: 111
-    edge_count: 78
-    latest_version: '2023-10-17'
-repository: https://github.com/MPIO-Developers/MPIO
+- category: OntologyProduct
+  description: Minimum PDDI Information Ontology in OWL format
+  format: owl
+  id: mpio.owl
+  name: mpio.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mpio
+  product_file_size: 19172
+  product_url: http://purl.obolibrary.org/obo/mpio.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Minimum PDDI Information Ontology (MPIO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains MPIO_nodes.tsv
+    and MPIO_edges.tsv.
+  edge_count: 78
+  format: kgx
+  id: mpio.kg-bioportal
+  latest_version: '2023-10-17'
+  name: MPIO KGX graph (KG-Bioportal)
+  node_count: 111
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mpio
+  product_file_size: 4741
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPIO.tar.gz
 publications:
-  - authors:
-      - Harry Hochheiser
-      - Xia Jing
-      - Elizabeth A. Garcia
-      - Serkan Ayvaz
-      - Ratnesh Sahay
-      - Michel Dumontier
-      - Juan M. Banda
-      - Oya Beyan
-      - Mathias Brochhausen
-      - Evan Draper
-      - Sam Habiel
-      - Oktie Hassanzadeh
-      - Maria Herrero-Zazo
-      - Brian Hocum
-      - John Horn
-      - Brian LeBaron
-      - Daniel C. Malone
-      - Øystein Nytrø
-      - Thomas Reese
-      - Katrina Romagnoli
-      - Jodi Schneider
-      - Louisa (Yu) Zhang
-      - Richard D. Boyce
-    doi: "10.3389/fphar.2020.608068"
-    id: "https://pubmed.ncbi.nlm.nih.gov/33762928"
-    journal: Front Pharmacol
-    preferred: true
-    title: A Minimal Information Model for Potential Drug-Drug Interactions
-    year: "2020"
+- authors:
+  - Harry Hochheiser
+  - Xia Jing
+  - Elizabeth A. Garcia
+  - Serkan Ayvaz
+  - Ratnesh Sahay
+  - Michel Dumontier
+  - Juan M. Banda
+  - Oya Beyan
+  - Mathias Brochhausen
+  - Evan Draper
+  - Sam Habiel
+  - Oktie Hassanzadeh
+  - Maria Herrero-Zazo
+  - Brian Hocum
+  - John Horn
+  - Brian LeBaron
+  - Daniel C. Malone
+  - Øystein Nytrø
+  - Thomas Reese
+  - Katrina Romagnoli
+  - Jodi Schneider
+  - Louisa (Yu) Zhang
+  - Richard D. Boyce
+  doi: 10.3389/fphar.2020.608068
+  id: https://pubmed.ncbi.nlm.nih.gov/33762928
+  journal: Front Pharmacol
+  preferred: true
+  title: A Minimal Information Model for Potential Drug-Drug Interactions
+  year: '2020'
+repository: https://github.com/MPIO-Developers/MPIO
 ---
-
 ## Description
 
 An ontology of minimum information regarding potential drug-drug interaction information.

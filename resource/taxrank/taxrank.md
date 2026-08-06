@@ -6,13 +6,13 @@ collection:
 - ber
 contacts:
 - category: Individual
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
 creation_date: '2025-09-29T00:00:00Z'
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domains:
@@ -33,37 +33,37 @@ products:
   format: owl
   id: taxrank.owl
   name: taxrank.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: taxrank
   product_file_size: 3843
   product_url: http://purl.obolibrary.org/obo/taxrank.owl
-  original_source:
-  - source: taxrank
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Taxonomic rank vocabulary in OBO format
   format: obo
   id: taxrank.obo
   name: taxrank.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: taxrank
   product_file_size: 2271
   product_url: http://purl.obolibrary.org/obo/taxrank.obo
-  original_source:
-  - source: taxrank
-    relation_type: prov:hadPrimarySource
-- id: taxrank.kg-bioportal
-  name: TAXRANK KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Taxonomic Rank Vocabulary (TAXRANK), produced
     by KG-Bioportal from the BioPortal submission. The archive contains TAXRANK_nodes.tsv
     and TAXRANK_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAXRANK.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: taxrank
-    relation_type: prov:hadPrimarySource
-  node_count: 96
   edge_count: 80
+  format: kgx
+  id: taxrank.kg-bioportal
   latest_version: unknown
-repository: https://github.com/phenoscape/taxrank
+  name: TAXRANK KGX graph (KG-Bioportal)
+  node_count: 96
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: taxrank
+  product_file_size: 1722
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAXRANK.tar.gz
 publications:
 - authors:
   - Peter E Midford
@@ -84,6 +84,7 @@ publications:
   title: 'The vertebrate taxonomy ontology: a framework for reasoning across model
     organism and species phenotypes'
   year: '2013'
+repository: https://github.com/phenoscape/taxrank
 ---
 ## Description
 

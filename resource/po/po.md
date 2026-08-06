@@ -657,20 +657,21 @@ products:
     source: gomapman
   product_file_size: 702407
   product_url: https://skm.nib.si/downloads/ckn/v1-2018.06/nodes
-- id: po.kg-bioportal
-  name: PO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Plant Ontology (PO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains PO_nodes.tsv and PO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: po
-    relation_type: prov:hadPrimarySource
-  node_count: 2073
   edge_count: 4425
+  format: kgx
+  id: po.kg-bioportal
   latest_version: releases/2024-04-17
+  name: PO KGX graph (KG-Bioportal)
+  node_count: 2073
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: po
+  product_file_size: 110771
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PO.tar.gz
 publications:
 - authors:
   - Cooper L

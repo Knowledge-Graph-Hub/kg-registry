@@ -48,6 +48,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: propreo
+  product_file_size: 15309
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/PROPREO.tar.gz
 publications: []
 ---

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
   contact_details:
   - contact_type: email
     value: jiezhen@med.umich.edu
   - contact_type: github
     value: zhengj2007
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
   Genomics Resource (VEuPathDB; https://veupathdb.org).
@@ -33,26 +33,26 @@ products:
   format: owl
   id: eupath.owl
   name: eupath.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eupath
   product_file_size: 438457
   product_url: http://purl.obolibrary.org/obo/eupath.owl
-  original_source:
-  - source: eupath
-    relation_type: prov:hadPrimarySource
-- id: eupath.kg-bioportal
-  name: EUPATH KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of VEuPathDB Ontology (EUPATH), produced by KG-Bioportal
     from the BioPortal submission. The archive contains EUPATH_nodes.tsv and EUPATH_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EUPATH.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: eupath
-    relation_type: prov:hadPrimarySource
-  node_count: 6164
   edge_count: 13057
+  format: kgx
+  id: eupath.kg-bioportal
   latest_version: '2023-05-30'
-repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
+  name: EUPATH KGX graph (KG-Bioportal)
+  node_count: 6164
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  product_file_size: 396273
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EUPATH.tar.gz
 publications:
 - authors:
   - Zheng, Jie
@@ -76,6 +76,7 @@ publications:
   title: Malaria study data integration and information retrieval based on OBO Foundry
     ontologies.
   year: '2016'
+repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 ---
 ## Description
 

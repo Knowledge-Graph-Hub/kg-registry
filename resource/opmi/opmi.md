@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
 creation_date: '2025-09-29T00:00:00Z'
 description: The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically
   represent and standardize various entities and relations associated with precision
@@ -34,26 +34,27 @@ products:
   format: owl
   id: opmi.owl
   name: opmi.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: opmi
   product_file_size: 394555
   product_url: http://purl.obolibrary.org/obo/opmi.owl
-  original_source:
-  - source: opmi
-    relation_type: prov:hadPrimarySource
-- id: opmi.kg-bioportal
-  name: OPMI KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology of Precision Medicine and Investigation
     (OPMI), produced by KG-Bioportal from the BioPortal submission. The archive contains
     OPMI_nodes.tsv and OPMI_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OPMI.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: opmi
-    relation_type: prov:hadPrimarySource
-  node_count: 4201
   edge_count: 10056
+  format: kgx
+  id: opmi.kg-bioportal
   latest_version: 'Vision Release: 1.0.166'
+  name: OPMI KGX graph (KG-Bioportal)
+  node_count: 4201
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  product_file_size: 194304
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OPMI.tar.gz
 publications:
 - authors:
   - He Y

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Miguel A. Fortuna
-  orcid: 0000-0002-8374-1941
   contact_details:
   - contact_type: email
     value: fortuna@ebd.csic.es
   - contact_type: github
     value: miguelfortuna
+  label: Miguel A. Fortuna
+  orcid: 0000-0002-8374-1941
 creation_date: '2025-09-29T00:00:00Z'
 description: OntoAvida develops an integrated vocabulary for the description of the
   most widely-used computational approach for studying evolution using digital organisms
@@ -35,36 +35,36 @@ products:
   format: owl
   id: ontoavida.owl
   name: OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoavida
   product_file_size: 472853
   product_url: http://purl.obolibrary.org/obo/ontoavida.owl
-  original_source:
-  - source: ontoavida
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Equivalent to ontoavida.owl, in obo format
   format: obo
   id: ontoavida.obo
   name: OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoavida
   product_file_size: 240082
   product_url: http://purl.obolibrary.org/obo/ontoavida.obo
-  original_source:
-  - source: ontoavida
-    relation_type: prov:hadPrimarySource
-- id: ontoavida.kg-bioportal
-  name: ONTOAVIDA KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: 'KGX TSV transform of OntoAvida: ontology for Avida digital evolution
     platform (ONTOAVIDA), produced by KG-Bioportal from the BioPortal submission.
     The archive contains ONTOAVIDA_nodes.tsv and ONTOAVIDA_edges.tsv.'
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTOAVIDA.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ontoavida
-    relation_type: prov:hadPrimarySource
-  node_count: 741
   edge_count: 807
-repository: https://gitlab.com/fortunalab/ontoavida
+  format: kgx
+  id: ontoavida.kg-bioportal
+  name: ONTOAVIDA KGX graph (KG-Bioportal)
+  node_count: 741
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoavida
+  product_file_size: 23451
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTOAVIDA.tar.gz
 publications:
 - authors:
   - Raúl Ortega
@@ -75,6 +75,7 @@ publications:
   journal: Scientific Data
   title: Ontology for the Avida digital evolution platform
   year: '2023'
+repository: https://gitlab.com/fortunalab/ontoavida
 ---
 ## Description
 

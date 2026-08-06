@@ -3255,8 +3255,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -5602,11 +5602,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hp
+  product_file_size: 1471700
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HP.tar.gz
 publications:
 - authors:
   - Robinson PN
-  - "K\xF6hler S"
+  - Köhler S
   - Bauer S
   - Seelow D
   - Horn D
@@ -5619,7 +5620,7 @@ publications:
   year: '2008'
 - authors:
   - Groza T
-  - "K\xF6hler S"
+  - Köhler S
   - Moldenhauer D
   - Vasilevsky N
   - Baynam G
@@ -5643,7 +5644,7 @@ publications:
   title: 'The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease.'
   year: '2015'
 - authors:
-  - "K\xF6hler S"
+  - Köhler S
   - Doelken SC
   - Mungall CJ
   - Bauer S
@@ -5660,7 +5661,7 @@ publications:
   - Girdea M
   - Helbig I
   - Hurst JA
-  - "J\xE4hn J"
+  - Jähn J
   - Jackson LG
   - Kelly AM
   - Ledbetter DH
@@ -5697,7 +5698,7 @@ publications:
     through phenotype data.'
   year: '2014'
 - authors:
-  - "K\xF6hler S"
+  - Köhler S
   - Carmody L
   - Vasilevsky N
   - Jacobsen JOB
@@ -5722,7 +5723,7 @@ publications:
   - Chang WH
   - Bergerson J
   - Laulederkind SJF
-  - "Y\xFCksel Z"
+  - Yüksel Z
   - Beltran S
   - Freeman AF
   - Sergouniotis PI
@@ -5748,8 +5749,8 @@ publications:
   - Notarangelo L
   - Similuk M
   - Zhang XA
-  - "G\xF3mez-Andr\xE9s D"
-  - "Lochm\xFCller H"
+  - Gómez-Andrés D
+  - Lochmüller H
   - Dollfus H
   - Rosenzweig S
   - Marwaha S

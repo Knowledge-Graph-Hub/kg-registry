@@ -1,41 +1,42 @@
 ---
-id: mat
-name: Minimal anatomical terminology
-description: Description unavailable.
 activity_status: inactive
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-08-06T00:00:00Z'
-domains:
-- anatomy and development
 contacts:
 - category: Individual
-  label: Jonathan Bard
   contact_details:
   - contact_type: email
     value: j.bard@ed.ac.uk
+  label: Jonathan Bard
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+id: mat
+last_modified_date: '2026-08-06T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Minimal anatomical terminology
 products:
-- id: mat.kg-bioportal
-  name: MAT KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Minimal Anatomical Terminology (MAT), produced
     by KG-Bioportal from the BioPortal submission. The archive contains MAT_nodes.tsv
     and MAT_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MAT.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: mat
-    relation_type: prov:hadPrimarySource
-  node_count: 2204
   edge_count: 3954
+  format: kgx
+  id: mat.kg-bioportal
   latest_version: '1.1'
+  name: MAT KGX graph (KG-Bioportal)
+  node_count: 2204
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mat
+  product_file_size: 49984
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MAT.tar.gz
 publications: []
 ---
 ## Description

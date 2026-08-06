@@ -631,6 +631,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: fideo
+  product_file_size: 169447
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIDEO.tar.gz
 publications: []
 repository: https://gitub.u-bordeaux.fr/erias/fideo

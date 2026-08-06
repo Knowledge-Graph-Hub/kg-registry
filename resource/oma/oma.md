@@ -109,15 +109,13 @@ products:
     source: oma
   product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
     canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
     but is not currently served.'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
 - category: Product
   description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
     has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
@@ -216,8 +214,6 @@ products:
     source: oma
   product_url: https://omabrowser.org/All/oma-species.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: Product
@@ -231,23 +227,21 @@ products:
     source: oma
   product_url: https://omabrowser.org/All/group-descriptions.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
     canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
     but is not currently served.'
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
 publications:
 - authors:
   - Adrian M Altenhoff
-  - Alex Warwick Vesztrocy
+  - "Alex Warwick\_Vesztrocy"
   - Charles Bernard
   - Clement-Marie Train
   - Alina Nicheperovich
-  - Silvia Prieto Baños
+  - "Silvia Prieto\_Ba\xF1os"
   - Irene Julca
   - David Moi
   - Yannis Nevers
@@ -262,15 +256,15 @@ publications:
   year: '2024'
 - authors:
   - Adrian M Altenhoff
-  - Clément-Marie Train
+  - "Cl\xE9ment-Marie Train"
   - Kimberly J Gilbert
   - Ishita Mediratta
-  - Tarcisio Mendes de Farias
+  - "Tarcisio Mendes\_de\_Farias"
   - David Moi
   - Yannis Nevers
   - Hale-Seda Radoykova
   - Victor Rossier
-  - Alex Warwick Vesztrocy
+  - "Alex Warwick\_Vesztrocy"
   - Natasha M Glover
   - Christophe Dessimoz
   doi: 10.1093/nar/gkaa1007

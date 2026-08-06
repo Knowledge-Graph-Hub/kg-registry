@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Asiyah Yu Lin
-  orcid: 0000-0002-5379-5359
   contact_details:
   - contact_type: email
     value: linikujp@gmail.com
   - contact_type: github
     value: linikujp
+  label: Asiyah Yu Lin
+  orcid: 0000-0002-5379-5359
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology to represent genetic susceptibility to a specific
   disease, adverse event, or a pathological process.
@@ -33,28 +33,29 @@ products:
   format: owl
   id: ogsf.owl
   name: ogsf.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ogsf
   product_file_size: 69686
   product_url: http://purl.obolibrary.org/obo/ogsf.owl
-  original_source:
-  - source: ogsf
-    relation_type: prov:hadPrimarySource
-- id: ogsf.kg-bioportal
-  name: OGSF KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology for Genetic Susceptibility Factor (OGSF),
     produced by KG-Bioportal from the BioPortal submission. The archive contains OGSF_nodes.tsv
     and OGSF_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OGSF.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ogsf
-    relation_type: prov:hadPrimarySource
-  node_count: 693
   edge_count: 1369
+  format: kgx
+  id: ogsf.kg-bioportal
   latest_version: '2.0'
-repository: https://github.com/linikujp/OGSF
+  name: OGSF KGX graph (KG-Bioportal)
+  node_count: 693
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ogsf
+  product_file_size: 36653
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OGSF.tar.gz
 publications: []
+repository: https://github.com/linikujp/OGSF
 ---
 ## Description
 

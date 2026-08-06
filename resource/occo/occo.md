@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
   contact_details:
   - contact_type: email
     value: zhengj2007@gmail.com
   - contact_type: github
     value: zhengj2007
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology representing occupations. It is designed to facilitate harmonization
   of existing occupation standards, such as the US Bureau of Labor Statistics Standard
@@ -37,26 +37,26 @@ products:
   format: owl
   id: occo.owl
   name: occo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: occo
   product_file_size: 280761
   product_url: http://purl.obolibrary.org/obo/occo.owl
-  original_source:
-  - source: occo
-    relation_type: prov:hadPrimarySource
-- id: occo.kg-bioportal
-  name: OCCO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Occupation Ontology (OCCO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains OCCO_nodes.tsv and OCCO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OCCO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: occo
-    relation_type: prov:hadPrimarySource
-  node_count: 1905
   edge_count: 10972
+  format: kgx
+  id: occo.kg-bioportal
   latest_version: '2023-08-20'
-repository: https://github.com/Occupation-Ontology/OccO
+  name: OCCO KGX graph (KG-Bioportal)
+  node_count: 1905
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: occo
+  product_file_size: 367542
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OCCO.tar.gz
 publications:
 - authors:
   - Smith S
@@ -69,6 +69,7 @@ publications:
   preferred: true
   title: Toward an Occupation Ontology, OccO
   year: '2022'
+repository: https://github.com/Occupation-Ontology/OccO
 ---
 ## Description
 

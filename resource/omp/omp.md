@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: James C. Hu
-  orcid: 0000-0001-9016-2684
   contact_details:
   - contact_type: email
     value: jimhu@tamu.edu
   - contact_type: github
     value: jimhu-tamu
+  label: James C. Hu
+  orcid: 0000-0001-9016-2684
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of phenotypes covering microbes
 domains:
@@ -32,37 +32,37 @@ products:
   format: owl
   id: omp.owl
   name: omp.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omp
   product_file_size: 222487
   product_url: http://purl.obolibrary.org/obo/omp.owl
-  original_source:
-  - source: omp
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Ontology of Microbial Phenotypes in OBO format
   format: obo
   id: omp.obo
   name: omp.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omp
   product_file_size: 124064
   product_url: http://purl.obolibrary.org/obo/omp.obo
-  original_source:
-  - source: omp
-    relation_type: prov:hadPrimarySource
-- id: omp.kg-bioportal
-  name: OMP KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology of Microbial Phenotypes (OMP), produced
     by KG-Bioportal from the BioPortal submission. The archive contains OMP_nodes.tsv
     and OMP_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMP.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: omp
-    relation_type: prov:hadPrimarySource
-  node_count: 2445
   edge_count: 3815
+  format: kgx
+  id: omp.kg-bioportal
   latest_version: releases/2019-06-07
-repository: https://github.com/microbialphenotypes/OMP-ontology
+  name: OMP KGX graph (KG-Bioportal)
+  node_count: 2445
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omp
+  product_file_size: 90931
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMP.tar.gz
 publications:
 - authors:
   - Marcus C Chibucos
@@ -79,6 +79,7 @@ publications:
   journal: BMC Microbiology
   title: An ontology for microbial phenotypes
   year: '2014'
+repository: https://github.com/microbialphenotypes/OMP-ontology
 ---
 ## Description
 

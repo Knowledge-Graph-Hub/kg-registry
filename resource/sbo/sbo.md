@@ -266,20 +266,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
-- id: sbo.kg-bioportal
-  name: SBO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Systems Biology Ontology (SBO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains SBO_nodes.tsv and SBO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SBO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: sbo
-    relation_type: prov:hadPrimarySource
-  node_count: 697
   edge_count: 745
+  format: kgx
+  id: sbo.kg-bioportal
   latest_version: 28:08:2021 03:13
+  name: SBO KGX graph (KG-Bioportal)
+  node_count: 697
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  product_file_size: 11261
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SBO.tar.gz
 publications:
 - authors:
   - Mélanie Courtot

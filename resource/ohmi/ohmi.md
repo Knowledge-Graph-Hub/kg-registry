@@ -6,13 +6,13 @@ collection:
 - ber
 contacts:
 - category: Individual
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
 creation_date: '2025-07-10T00:00:00Z'
 description: The Ontology of Host-Microbiome Interactions aims to ontologically represent
   and standardize various entities and relations related to microbiomes, microbiome
@@ -36,26 +36,27 @@ products:
   format: owl
   id: ohmi.owl
   name: ohmi.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohmi
   product_file_size: 156548
   product_url: http://purl.obolibrary.org/obo/ohmi.owl
-  original_source:
-  - source: ohmi
-    relation_type: prov:hadPrimarySource
-- id: ohmi.kg-bioportal
-  name: OHMI KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology of Host-Microbe Interactions (OHMI),
     produced by KG-Bioportal from the BioPortal submission. The archive contains OHMI_nodes.tsv
     and OHMI_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHMI.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ohmi
-    relation_type: prov:hadPrimarySource
-  node_count: 2652
   edge_count: 5277
+  format: kgx
+  id: ohmi.kg-bioportal
   latest_version: '2026-05-14'
+  name: OHMI KGX graph (KG-Bioportal)
+  node_count: 2652
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohmi
+  product_file_size: 145724
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHMI.tar.gz
 publications:
 - authors:
   - He Y

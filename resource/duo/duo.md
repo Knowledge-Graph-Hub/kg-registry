@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Melanie Courtot
-  orcid: 0000-0002-9551-6370
   contact_details:
   - contact_type: email
     value: mcourtot@gmail.com
   - contact_type: github
     value: mcourtot
+  label: Melanie Courtot
+  orcid: 0000-0002-9551-6370
 creation_date: '2025-09-29T00:00:00Z'
 description: DUO is an ontology which represent data use conditions.
 domains:
@@ -32,24 +32,25 @@ products:
   format: owl
   id: duo.owl
   name: duo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: duo
   product_file_size: 8062
   product_url: http://purl.obolibrary.org/obo/duo.owl
-  original_source:
-  - source: duo
-    relation_type: prov:hadPrimarySource
-- id: duo.kg-bioportal
-  name: DUO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of The Data Use Ontology (DUO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains DUO_nodes.tsv and DUO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DUO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: duo
-    relation_type: prov:hadPrimarySource
-  node_count: 316
   edge_count: 311
+  format: kgx
+  id: duo.kg-bioportal
+  name: DUO KGX graph (KG-Bioportal)
+  node_count: 316
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  product_file_size: 4908
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DUO.tar.gz
 publications:
 - authors:
   - Lawson J

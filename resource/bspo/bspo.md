@@ -198,20 +198,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: bspo.kg-bioportal
-  name: BSPO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Spatial Ontology (BSPO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains BSPO_nodes.tsv and BSPO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BSPO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: bspo
-    relation_type: prov:hadPrimarySource
-  node_count: 505
   edge_count: 905
+  format: kgx
+  id: bspo.kg-bioportal
   latest_version: '2023-05-27'
+  name: BSPO KGX graph (KG-Bioportal)
+  node_count: 505
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  product_file_size: 23215
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BSPO.tar.gz
 publications:
 - authors:
   - Dahdul WM

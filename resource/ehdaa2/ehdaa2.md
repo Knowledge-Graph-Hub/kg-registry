@@ -2,17 +2,18 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Jonathan Bard
-    contact_details:
-      - contact_type: email
-        value: J.Bard@ed.ac.uk
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: J.Bard@ed.ac.uk
+  label: Jonathan Bard
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
+description: A structured controlled vocabulary of stage-specific anatomical structures
+  of the developing human.
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology
 id: ehdaa2
 infores_id: ehdaa2
@@ -24,52 +25,55 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Human developmental anatomy, abstract
 products:
-  - category: OntologyProduct
-    description: Human developmental anatomy, abstract in OWL format
-    format: owl
-    id: ehdaa2.owl
-    name: ehdaa2.owl
-    product_file_size: 125946
-    product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
-    original_source:
-      - source: ehdaa2
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Human developmental anatomy, abstract in OBO format
-    format: obo
-    id: ehdaa2.obo
-    name: ehdaa2.obo
-    product_file_size: 83809
-    product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
-    original_source:
-      - source: ehdaa2
-        relation_type: prov:hadPrimarySource
-  - id: ehdaa2.kg-bioportal
-    name: EHDAA2 KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Human Developmental Anatomy Ontology, abstract version 2 (EHDAA2), produced by KG-Bioportal from the BioPortal submission. The archive contains EHDAA2_nodes.tsv and EHDAA2_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDAA2.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: ehdaa2
-        relation_type: prov:hadPrimarySource
-    node_count: 2776
-    edge_count: 11768
-    latest_version: releases/2024-01-11
+- category: OntologyProduct
+  description: Human developmental anatomy, abstract in OWL format
+  format: owl
+  id: ehdaa2.owl
+  name: ehdaa2.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehdaa2
+  product_file_size: 125946
+  product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
+- category: OntologyProduct
+  description: Human developmental anatomy, abstract in OBO format
+  format: obo
+  id: ehdaa2.obo
+  name: ehdaa2.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehdaa2
+  product_file_size: 83809
+  product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Human Developmental Anatomy Ontology, abstract
+    version 2 (EHDAA2), produced by KG-Bioportal from the BioPortal submission. The
+    archive contains EHDAA2_nodes.tsv and EHDAA2_edges.tsv.
+  edge_count: 11768
+  format: kgx
+  id: ehdaa2.kg-bioportal
+  latest_version: releases/2024-01-11
+  name: EHDAA2 KGX graph (KG-Bioportal)
+  node_count: 2776
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehdaa2
+  product_file_size: 311779
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDAA2.tar.gz
+publications:
+- authors:
+  - Bard J
+  doi: 10.1111/j.1469-7580.2012.01566.x
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22973865
+  journal: J Anat
+  title: A new ontology (structured hierarchy) of human developmental anatomy for
+    the first 7 weeks (Carnegie stages 1-20).
+  year: '2012'
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 taxon:
-  - NCBITaxon:9606
-publications:
-  - authors:
-      - Bard J
-    doi: 10.1111/j.1469-7580.2012.01566.x
-    id: https://www.ncbi.nlm.nih.gov/pubmed/22973865
-    journal: J Anat
-    title: A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).
-    year: '2012'
+- NCBITaxon:9606
 ---
-
 ## Description
 
 A structured controlled vocabulary of stage-specific anatomical structures of the developing human.

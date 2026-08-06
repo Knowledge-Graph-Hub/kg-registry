@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Tuan Amith
-  orcid: 0000-0003-4333-1857
   contact_details:
   - contact_type: email
     value: muamith@utmb.edu
   - contact_type: github
     value: ProfTuan
+  label: Tuan Amith
+  orcid: 0000-0003-4333-1857
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology representing the structure of model card reports - reports
   that describe basic characteristics of machine learning models for the public and
@@ -34,27 +34,27 @@ products:
   format: owl
   id: mcro.owl
   name: mcro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mcro
   product_file_size: 7969
   product_url: http://purl.obolibrary.org/obo/mcro.owl
-  original_source:
-  - source: mcro
-    relation_type: prov:hadPrimarySource
-- id: mcro.kg-bioportal
-  name: MCRO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Model Card Report Ontology (MCRO), produced by
     KG-Bioportal from the BioPortal submission. The archive contains MCRO_nodes.tsv
     and MCRO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCRO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: mcro
-    relation_type: prov:hadPrimarySource
-  node_count: 92
   edge_count: 124
+  format: kgx
+  id: mcro.kg-bioportal
   latest_version: '2023-03-07'
-repository: https://github.com/UTHealth-Ontology/MCRO
+  name: MCRO KGX graph (KG-Bioportal)
+  node_count: 92
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mcro
+  product_file_size: 7532
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCRO.tar.gz
 publications:
 - authors:
   - Muhammad Tuan Amith
@@ -70,6 +70,7 @@ publications:
   journal: BMC Bioinformatics
   title: Toward a standard formal semantic representation of the model card report
   year: '2022'
+repository: https://github.com/UTHealth-Ontology/MCRO
 ---
 ## Description
 

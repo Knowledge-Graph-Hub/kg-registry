@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Bjoern Peters
-    orcid: 0000-0002-8457-6693
-    contact_details:
-      - contact_type: email
-        value: bpeters@lji.org
-      - contact_type: github
-        value: bpeters42
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: bpeters@lji.org
+  - contact_type: github
+    value: bpeters42
+  label: Bjoern Peters
+  orcid: 0000-0002-8457-6693
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for Major Histocompatibility Complex (MHC) restriction in experiments
+description: An ontology for Major Histocompatibility Complex (MHC) restriction in
+  experiments
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://github.com/IEDB/MRO
 id: mro
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,51 +27,53 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: MHC Restriction Ontology
 products:
-  - category: OntologyProduct
-    description: MHC Restriction Ontology in OWL format
-    format: owl
-    id: mro.owl
-    name: mro.owl
-    product_file_size: 82450469
-    product_url: http://purl.obolibrary.org/obo/mro.owl
-    original_source:
-      - source: mro
-        relation_type: prov:hadPrimarySource
-  - id: mro.kg-bioportal
-    name: MHCRO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of MHC Restriction Ontology (MHCRO), produced by KG-Bioportal from the BioPortal submission. The archive contains MHCRO_nodes.tsv and MHCRO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MHCRO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: mro
-        relation_type: prov:hadPrimarySource
-    node_count: 51499
-    edge_count: 168477
-    latest_version: '2026-02-10'
-repository: https://github.com/IEDB/MRO
+- category: OntologyProduct
+  description: MHC Restriction Ontology in OWL format
+  format: owl
+  id: mro.owl
+  name: mro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mro
+  product_file_size: 82450469
+  product_url: http://purl.obolibrary.org/obo/mro.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of MHC Restriction Ontology (MHCRO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains MHCRO_nodes.tsv
+    and MHCRO_edges.tsv.
+  edge_count: 168477
+  format: kgx
+  id: mro.kg-bioportal
+  latest_version: '2026-02-10'
+  name: MHCRO KGX graph (KG-Bioportal)
+  node_count: 51499
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mro
+  product_file_size: 3350296
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MHCRO.tar.gz
 publications:
-  - authors:
-      - Vita R
-      - Overton JA
-      - Seymour E
-      - Sidney J
-      - Kaufman J
-      - Tallmadge RL
-      - Ellis S
-      - Hammond J
-      - Butcher GW
-      - Sette A
-      - Peters B
-    doi: 10.1186/s13326-016-0045-5
-    id: https://www.ncbi.nlm.nih.gov/pubmed/26759709
-    journal: J Biomed Semantics
-    preferred: true
-    title: An ontology for major histocompatibility restriction
-    year: '2016'
+- authors:
+  - Vita R
+  - Overton JA
+  - Seymour E
+  - Sidney J
+  - Kaufman J
+  - Tallmadge RL
+  - Ellis S
+  - Hammond J
+  - Butcher GW
+  - Sette A
+  - Peters B
+  doi: 10.1186/s13326-016-0045-5
+  id: https://www.ncbi.nlm.nih.gov/pubmed/26759709
+  journal: J Biomed Semantics
+  preferred: true
+  title: An ontology for major histocompatibility restriction
+  year: '2016'
+repository: https://github.com/IEDB/MRO
 ---
-
 ## Description
 
 An ontology for Major Histocompatibility Complex (MHC) restriction in experiments

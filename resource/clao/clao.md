@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Luis Gonz lez-Monta a
-    orcid: 0000-0002-9136-9932
-    contact_details:
-      - contact_type: email
-        value: lagonzalezmo@unal.edu.co
-      - contact_type: github
-        value: luis-gonzalez-m
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lagonzalezmo@unal.edu.co
+  - contact_type: github
+    value: luis-gonzalez-m
+  label: Luis Gonz lez-Monta a
+  orcid: 0000-0002-9136-9932
 creation_date: '2025-09-29T00:00:00Z'
-description: 'CLAO is an ontology of anatomical terms employed in morphological descriptions for the Class Collembola (Arthropoda: Hexapoda).'
+description: 'CLAO is an ontology of anatomical terms employed in morphological descriptions
+  for the Class Collembola (Arthropoda: Hexapoda).'
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://github.com/luis-gonzalez-m/Collembola
 id: clao
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,43 +27,45 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Collembola Anatomy Ontology
 products:
-  - category: OntologyProduct
-    description: Collembola Anatomy Ontology in OWL format
-    format: owl
-    id: clao.owl
-    name: clao.owl
-    product_file_size: 112550
-    product_url: http://purl.obolibrary.org/obo/clao.owl
-    original_source:
-      - source: clao
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Collembola Anatomy Ontology in OBO format
-    format: obo
-    id: clao.obo
-    name: clao.obo
-    product_file_size: 74344
-    product_url: http://purl.obolibrary.org/obo/clao.obo
-    original_source:
-      - source: clao
-        relation_type: prov:hadPrimarySource
-  - id: clao.kg-bioportal
-    name: CLAO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Collembola Anatomy Ontology (CLAO), produced by KG-Bioportal from the BioPortal submission. The archive contains CLAO_nodes.tsv and CLAO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLAO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: clao
-        relation_type: prov:hadPrimarySource
-    node_count: 1565
-    edge_count: 2653
-    latest_version: '2021-09-27'
-repository: https://github.com/luis-gonzalez-m/Collembola
+- category: OntologyProduct
+  description: Collembola Anatomy Ontology in OWL format
+  format: owl
+  id: clao.owl
+  name: clao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clao
+  product_file_size: 112550
+  product_url: http://purl.obolibrary.org/obo/clao.owl
+- category: OntologyProduct
+  description: Collembola Anatomy Ontology in OBO format
+  format: obo
+  id: clao.obo
+  name: clao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clao
+  product_file_size: 74344
+  product_url: http://purl.obolibrary.org/obo/clao.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Collembola Anatomy Ontology (CLAO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains CLAO_nodes.tsv
+    and CLAO_edges.tsv.
+  edge_count: 2653
+  format: kgx
+  id: clao.kg-bioportal
+  latest_version: '2021-09-27'
+  name: CLAO KGX graph (KG-Bioportal)
+  node_count: 1565
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clao
+  product_file_size: 82266
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLAO.tar.gz
 publications: []
+repository: https://github.com/luis-gonzalez-m/Collembola
 ---
-
 ## Description
 
 CLAO is an ontology of anatomical terms employed in morphological descriptions for the Class Collembola (Arthropoda: Hexapoda).

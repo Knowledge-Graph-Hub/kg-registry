@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Paul Fabry
-  orcid: 0000-0002-3336-2476
   contact_details:
   - contact_type: email
     value: paul.fabry@usherbrooke.ca
   - contact_type: github
     value: pfabry
+  label: Paul Fabry
+  orcid: 0000-0002-3336-2476
 creation_date: '2025-09-29T00:00:00Z'
 description: LABO is an ontology of informational entities formalizing clinical laboratory
   tests prescriptions and reporting documents.
@@ -33,28 +33,26 @@ products:
   format: owl
   id: labo.owl
   name: labo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: labo
   product_file_size: 47001
   product_url: http://purl.obolibrary.org/obo/labo.owl
-  original_source:
-  - source: labo
-    relation_type: prov:hadPrimarySource
-- id: labo.kg-bioportal
-  name: LABO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of clinical LABoratory Ontology (LABO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains LABO_nodes.tsv
     and LABO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LABO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: labo
-    relation_type: prov:hadPrimarySource
-  node_count: 298
   edge_count: 547
-repository: https://github.com/OpenLHS/LABO
-taxon:
-- NCBITaxon:9606
+  format: kgx
+  id: labo.kg-bioportal
+  name: LABO KGX graph (KG-Bioportal)
+  node_count: 298
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: labo
+  product_file_size: 15124
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LABO.tar.gz
 publications:
 - authors:
   - Barton, Adrien
@@ -66,6 +64,9 @@ publications:
   journal: Zenodo
   title: 'LABO: An Ontology for Laboratory Test Prescription and Reporting'
   year: '2019'
+repository: https://github.com/OpenLHS/LABO
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

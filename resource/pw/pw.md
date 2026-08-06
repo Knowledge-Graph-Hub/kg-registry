@@ -353,20 +353,21 @@ products:
     source: uberon
   product_file_size: 936065236
   product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
-- id: pw.kg-bioportal
-  name: PW KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Pathway Ontology (PW), produced by KG-Bioportal
     from the BioPortal submission. The archive contains PW_nodes.tsv and PW_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PW.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: pw
-    relation_type: prov:hadPrimarySource
-  node_count: 2787
   edge_count: 3455
+  format: kgx
+  id: pw.kg-bioportal
   latest_version: '2026-05-16'
+  name: PW KGX graph (KG-Bioportal)
+  node_count: 2787
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pw
+  product_file_size: 181592
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PW.tar.gz
 publications:
 - authors:
   - Petri V

@@ -402,20 +402,21 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: glycordf
-- id: glycordf.kg-bioportal
-  name: GLYCORDF KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of GlycoRDF (GLYCORDF), produced by KG-Bioportal
     from the BioPortal submission. The archive contains GLYCORDF_nodes.tsv and GLYCORDF_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCORDF.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: glycordf
-    relation_type: prov:hadPrimarySource
-  node_count: 605
   edge_count: 514
+  format: kgx
+  id: glycordf.kg-bioportal
   latest_version: 1.2.1
+  name: GLYCORDF KGX graph (KG-Bioportal)
+  node_count: 605
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_file_size: 11127
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCORDF.tar.gz
 publications:
 - authors:
   - Rene Ranzinger

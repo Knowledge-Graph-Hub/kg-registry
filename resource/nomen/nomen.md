@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Matt Yoder
-  orcid: 0000-0002-5640-5491
   contact_details:
   - contact_type: email
     value: diapriid@gmail.com
   - contact_type: github
     value: mjy
+  label: Matt Yoder
+  orcid: 0000-0002-5640-5491
 creation_date: '2025-09-29T00:00:00Z'
 description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
   encodes the goverened rules of nomenclature.
@@ -33,27 +33,28 @@ products:
   format: owl
   id: nomen.owl
   name: NOMEN
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nomen
   product_file_size: 11371
   product_url: http://purl.obolibrary.org/obo/nomen.owl
-  original_source:
-  - source: nomen
-    relation_type: prov:hadPrimarySource
-- id: nomen.kg-bioportal
-  name: NOMEN KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of NOMEN - A nomenclatural ontology for biological
     names (NOMEN), produced by KG-Bioportal from the BioPortal submission. The archive
     contains NOMEN_nodes.tsv and NOMEN_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NOMEN.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: nomen
-    relation_type: prov:hadPrimarySource
-  node_count: 390
   edge_count: 474
-repository: https://github.com/SpeciesFileGroup/nomen
+  format: kgx
+  id: nomen.kg-bioportal
+  name: NOMEN KGX graph (KG-Bioportal)
+  node_count: 390
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nomen
+  product_file_size: 6588
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NOMEN.tar.gz
 publications: []
+repository: https://github.com/SpeciesFileGroup/nomen
 ---
 ## Description
 

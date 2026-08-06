@@ -200,20 +200,21 @@ products:
     source: progenomes
   product_file_size: 12570522
   product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_species_summary_no_predictions.tsv.gz
-- id: goldterms.kg-bioportal
-  name: GOLDTERMS KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of GOLD Ecosystem Classification (GOLDTERMS), produced
     by KG-Bioportal from the BioPortal submission. The archive contains GOLDTERMS_nodes.tsv
     and GOLDTERMS_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GOLDTERMS.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: goldterms
-    relation_type: prov:hadPrimarySource
-  node_count: 2428
   edge_count: 11199
+  format: kgx
+  id: goldterms.kg-bioportal
+  name: GOLDTERMS KGX graph (KG-Bioportal)
+  node_count: 2428
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: goldterms
+  product_file_size: 236593
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GOLDTERMS.tar.gz
 repository: https://github.com/cmungall/gold-ontology
 tags:
 - biopragmatics

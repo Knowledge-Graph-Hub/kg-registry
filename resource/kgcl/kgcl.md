@@ -2,111 +2,120 @@
 activity_status: active
 category: DataModel
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: cjmungall@lbl.gov
-      - contact_type: github
-        value: cmungall
-    label: Christopher J. Mungall
-    orcid: 0000-0002-6601-2165
-description: A data model for describing change operations at a high level on an ontology or ontology-like artefact, such as a Knowledge Graph. KGCL enables standardized representation of changes in ontologies and knowledge graphs for tracking, auditing, and reproducibility. It provides a formal language for representing and documenting changes in knowledge graphs, facilitating version control, change history, and collaboration.
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
+  label: Christopher J. Mungall
+  orcid: 0000-0002-6601-2165
+creation_date: '2025-03-09T00:00:00Z'
+description: A data model for describing change operations at a high level on an ontology
+  or ontology-like artefact, such as a Knowledge Graph. KGCL enables standardized
+  representation of changes in ontologies and knowledge graphs for tracking, auditing,
+  and reproducibility. It provides a formal language for representing and documenting
+  changes in knowledge graphs, facilitating version control, change history, and collaboration.
 domains:
-  - information technology
+- information technology
 homepage_url: https://incatools.github.io/kgcl/
 id: kgcl
+last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
   label: MIT License
 name: Knowledge Graph Change Language
 products:
-  - category: DataModelProduct
-    description: OWL release of Knowledge Graph Change Language, provides a formal semantic model for representing change operations in ontologies and knowledge graphs.
-    format: owl
-    id: kgcl.model.owl
-    name: Knowledge Graph Change Language OWL release
-    original_source:
-      - source: kgcl
-        relation_type: prov:hadPrimarySource
-    product_file_size: 11700
-    product_url: https://w3id.org/kgcl/kgcl.owl.ttl
-  - category: ProcessProduct
-    description: Python implementation of the Knowledge Graph Change Language standard, including a LinkML model and LARK grammar for parsing and generating KGCL statements.
-    id: kgcl.python
-    name: KGCL Python Implementation
-    original_source:
-      - source: kgcl
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/INCATools/kgcl/
-  - category: DataModelProduct
-    description: JSON-LD context for the Knowledge Graph Change Language model, enabling semantic interoperability for KGCL data.
-    format: jsonld
-    id: kgcl.model.jsonld
-    name: Knowledge Graph Change Language JSON-LD Context
-    original_source:
-      - source: kgcl
-        relation_type: prov:hadPrimarySource
-    product_file_size: 2161
-    product_url: https://w3id.org/kgcl/kgcl.context.jsonld
-  - category: DataModelProduct
-    description: SHACL shapes for validating Knowledge Graph Change Language instances.
-    format: shacl
-    id: kgcl.model.shacl
-    name: Knowledge Graph Change Language SHACL Shapes
-    original_source:
-      - source: kgcl
-        relation_type: prov:hadPrimarySource
-    product_file_size: 15868
-    product_url: https://w3id.org/kgcl/kgcl.shacl.ttl
-  - category: DataModelProduct
-    description: YAML schema representation of the Knowledge Graph Change Language model.
-    format: yaml
-    id: kgcl.model.yaml
-    name: Knowledge Graph Change Language YAML Schema
-    original_source:
-      - source: kgcl
-        relation_type: prov:hadPrimarySource
-    product_file_size: 7492
-    product_url: https://w3id.org/kgcl/kgcl.yaml
-  - id: kgcl.kg-bioportal
-    name: KGCL KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Knowledge Graph Change Language (KGCL), produced by KG-Bioportal from the BioPortal submission. The archive contains KGCL_nodes.tsv and KGCL_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/KGCL.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: kgcl
-        relation_type: prov:hadPrimarySource
-    node_count: 218
-    edge_count: 526
-    latest_version: 0.1.0
+- category: DataModelProduct
+  description: OWL release of Knowledge Graph Change Language, provides a formal semantic
+    model for representing change operations in ontologies and knowledge graphs.
+  format: owl
+  id: kgcl.model.owl
+  name: Knowledge Graph Change Language OWL release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kgcl
+  product_file_size: 11700
+  product_url: https://w3id.org/kgcl/kgcl.owl.ttl
+- category: ProcessProduct
+  description: Python implementation of the Knowledge Graph Change Language standard,
+    including a LinkML model and LARK grammar for parsing and generating KGCL statements.
+  id: kgcl.python
+  name: KGCL Python Implementation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kgcl
+  product_url: https://github.com/INCATools/kgcl/
+- category: DataModelProduct
+  description: JSON-LD context for the Knowledge Graph Change Language model, enabling
+    semantic interoperability for KGCL data.
+  format: jsonld
+  id: kgcl.model.jsonld
+  name: Knowledge Graph Change Language JSON-LD Context
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kgcl
+  product_file_size: 2161
+  product_url: https://w3id.org/kgcl/kgcl.context.jsonld
+- category: DataModelProduct
+  description: SHACL shapes for validating Knowledge Graph Change Language instances.
+  format: shacl
+  id: kgcl.model.shacl
+  name: Knowledge Graph Change Language SHACL Shapes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kgcl
+  product_file_size: 15868
+  product_url: https://w3id.org/kgcl/kgcl.shacl.ttl
+- category: DataModelProduct
+  description: YAML schema representation of the Knowledge Graph Change Language model.
+  format: yaml
+  id: kgcl.model.yaml
+  name: Knowledge Graph Change Language YAML Schema
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kgcl
+  product_file_size: 7492
+  product_url: https://w3id.org/kgcl/kgcl.yaml
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Knowledge Graph Change Language (KGCL), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains KGCL_nodes.tsv
+    and KGCL_edges.tsv.
+  edge_count: 526
+  format: kgx
+  id: kgcl.kg-bioportal
+  latest_version: 0.1.0
+  name: KGCL KGX graph (KG-Bioportal)
+  node_count: 218
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kgcl
+  product_file_size: 15365
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/KGCL.tar.gz
 publications:
-  - authors:
-      - Hegde H
-      - Vendetti J
-      - Goutte-Gattat D
-      - Caufield JH
-      - Graybeal JB
-      - Harris NL
-      - Karam N
-      - Kindermann C
-      - Matentzoglu N
-      - Overton JA
-      - Mungall CJ
-    doi: 10.1093/database/baae133
-    id: doi:10.1093/database/baae133
-    journal: Database
-    preferred: true
-    title: A change language for ontologies and knowledge graphs
-    year: '2025'
+- authors:
+  - Hegde H
+  - Vendetti J
+  - Goutte-Gattat D
+  - Caufield JH
+  - Graybeal JB
+  - Harris NL
+  - Karam N
+  - Kindermann C
+  - Matentzoglu N
+  - Overton JA
+  - Mungall CJ
+  doi: 10.1093/database/baae133
+  id: doi:10.1093/database/baae133
+  journal: Database
+  preferred: true
+  title: A change language for ontologies and knowledge graphs
+  year: '2025'
 repository: https://github.com/INCATools/kgcl/
 version: 0.7.0
-creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-08-06T00:00:00Z'
 ---
-
 ## Overview
 
 KGCL (Knowledge Graph Change Language) is a standard datamodel for representing changes in ontologies and knowledge graphs. It provides a formal way to describe operations such as node creation, edge modification, and entity obsolescence while preserving the history and intent behind each change.

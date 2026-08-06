@@ -49,21 +49,22 @@ products:
     source: slso
   product_file_size: 413238
   product_url: http://purl.obolibrary.org/obo/slso.obo
-- id: slso.kg-bioportal
-  name: SLSO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Space Life Sciences Ontology (SLSO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains SLSO_nodes.tsv
     and SLSO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SLSO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: slso
-    relation_type: prov:hadPrimarySource
-  node_count: 6111
   edge_count: 8853
+  format: kgx
+  id: slso.kg-bioportal
   latest_version: '2025-12-11'
+  name: SLSO KGX graph (KG-Bioportal)
+  node_count: 6111
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: slso
+  product_file_size: 304513
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SLSO.tar.gz
 publications: []
 repository: https://github.com/nasa/LSDAO
 ---

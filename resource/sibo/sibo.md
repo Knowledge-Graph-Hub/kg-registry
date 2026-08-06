@@ -2,18 +2,18 @@
 activity_status: orphaned
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Chris Mungall
-    orcid: 0000-0002-6601-2165
-    contact_details:
-      - contact_type: email
-        value: cjmungall@lbl.gov
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
 creation_date: '2025-09-29T00:00:00Z'
 description: Social Behavior in insects
 domains:
-  - biological systems
+- biological systems
 homepage_url: https://github.com/obophenotype/sibo
 id: sibo
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -24,42 +24,44 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Social Insect Behavior Ontology
 products:
-  - category: OntologyProduct
-    description: Social Insect Behavior Ontology in OWL format
-    format: owl
-    id: sibo.owl
-    name: sibo.owl
-    product_file_size: 26920
-    product_url: http://purl.obolibrary.org/obo/sibo.owl
-    original_source:
-      - source: sibo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Social Insect Behavior Ontology in OBO format
-    format: obo
-    id: sibo.obo
-    name: sibo.obo
-    product_file_size: 16744
-    product_url: http://purl.obolibrary.org/obo/sibo.obo
-    original_source:
-      - source: sibo
-        relation_type: prov:hadPrimarySource
-  - id: sibo.kg-bioportal
-    name: SIBO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Social Insect Behavior Ontology (SIBO), produced by KG-Bioportal from the BioPortal submission. The archive contains SIBO_nodes.tsv and SIBO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SIBO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: sibo
-        relation_type: prov:hadPrimarySource
-    node_count: 547
-    edge_count: 1103
-repository: https://github.com/obophenotype/sibo
+- category: OntologyProduct
+  description: Social Insect Behavior Ontology in OWL format
+  format: owl
+  id: sibo.owl
+  name: sibo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sibo
+  product_file_size: 26920
+  product_url: http://purl.obolibrary.org/obo/sibo.owl
+- category: OntologyProduct
+  description: Social Insect Behavior Ontology in OBO format
+  format: obo
+  id: sibo.obo
+  name: sibo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sibo
+  product_file_size: 16744
+  product_url: http://purl.obolibrary.org/obo/sibo.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Social Insect Behavior Ontology (SIBO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains SIBO_nodes.tsv
+    and SIBO_edges.tsv.
+  edge_count: 1103
+  format: kgx
+  id: sibo.kg-bioportal
+  name: SIBO KGX graph (KG-Bioportal)
+  node_count: 547
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sibo
+  product_file_size: 33150
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SIBO.tar.gz
 publications: []
+repository: https://github.com/obophenotype/sibo
 ---
-
 ## Description
 
 Social Behavior in insects

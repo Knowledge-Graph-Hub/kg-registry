@@ -2,20 +2,22 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Luis A. Gonzalez-Montana
-    orcid: 0000-0002-9136-9932
-    contact_details:
-      - contact_type: email
-        value: lagonzalezmo@unal.edu.co
-      - contact_type: github
-        value: luis-gonzalez-m
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lagonzalezmo@unal.edu.co
+  - contact_type: github
+    value: luis-gonzalez-m
+  label: Luis A. Gonzalez-Montana
+  orcid: 0000-0002-9136-9932
 creation_date: '2025-09-29T00:00:00Z'
-description: The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).
+description: The Lepidoptera Anatomy Ontology contains terms used for describing the
+  anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is
+  developed in part by BIOfid (The Specialised Information Service Biodiversity Research).
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://github.com/insect-morphology/lepao
 id: lepao
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,43 +28,45 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Lepidoptera Anatomy Ontology
 products:
-  - category: OntologyProduct
-    description: Lepidoptera Anatomy Ontology in OWL format
-    format: owl
-    id: lepao.owl
-    name: lepao.owl
-    product_file_size: 141799
-    product_url: http://purl.obolibrary.org/obo/lepao.owl
-    original_source:
-      - source: lepao
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Lepidoptera Anatomy Ontology in OBO format
-    format: obo
-    id: lepao.obo
-    name: lepao.obo
-    product_file_size: 74809
-    product_url: http://purl.obolibrary.org/obo/lepao.obo
-    original_source:
-      - source: lepao
-        relation_type: prov:hadPrimarySource
-  - id: lepao.kg-bioportal
-    name: LEPAO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Lepidoptera Anatomy Ontology (LEPAO), produced by KG-Bioportal from the BioPortal submission. The archive contains LEPAO_nodes.tsv and LEPAO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LEPAO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: lepao
-        relation_type: prov:hadPrimarySource
-    node_count: 1215
-    edge_count: 2404
-    latest_version: '2023-02-18'
-repository: https://github.com/insect-morphology/lepao
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OWL format
+  format: owl
+  id: lepao.owl
+  name: lepao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lepao
+  product_file_size: 141799
+  product_url: http://purl.obolibrary.org/obo/lepao.owl
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OBO format
+  format: obo
+  id: lepao.obo
+  name: lepao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lepao
+  product_file_size: 74809
+  product_url: http://purl.obolibrary.org/obo/lepao.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Lepidoptera Anatomy Ontology (LEPAO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains LEPAO_nodes.tsv
+    and LEPAO_edges.tsv.
+  edge_count: 2404
+  format: kgx
+  id: lepao.kg-bioportal
+  latest_version: '2023-02-18'
+  name: LEPAO KGX graph (KG-Bioportal)
+  node_count: 1215
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lepao
+  product_file_size: 88064
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LEPAO.tar.gz
 publications: []
+repository: https://github.com/insect-morphology/lepao
 ---
-
 ## Description
 
 The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).

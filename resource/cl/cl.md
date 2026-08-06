@@ -2476,20 +2476,21 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
-- id: cl.kg-bioportal
-  name: CL KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Cell Ontology (CL), produced by KG-Bioportal from
     the BioPortal submission. The archive contains CL_nodes.tsv and CL_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CL.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: cl
-    relation_type: prov:hadPrimarySource
-  node_count: 20178
   edge_count: 85215
+  format: kgx
+  id: cl.kg-bioportal
   latest_version: '2026-06-08'
+  name: CL KGX graph (KG-Bioportal)
+  node_count: 20178
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_file_size: 2427165
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CL.tar.gz
 publications:
 - authors:
   - Diehl AD

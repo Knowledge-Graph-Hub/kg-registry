@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Lindsay Cowell
-  orcid: 0000-0003-1617-8244
   contact_details:
   - contact_type: email
     value: Lindsay.Cowell@utsouthwestern.edu
   - contact_type: github
     value: lgcowell
+  label: Lindsay Cowell
+  orcid: 0000-0003-1617-8244
 creation_date: '2025-06-25T00:00:00Z'
 description: A set of interoperable ontologies that will together provide coverage
   of the infectious disease domain. IDO core is the upper-level ontology that hosts
@@ -227,21 +227,22 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
-- id: ido.kg-bioportal
-  name: IDO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Infectious Disease Ontology (IDO), produced by
     KG-Bioportal from the BioPortal submission. The archive contains IDO_nodes.tsv
     and IDO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IDO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ido
-    relation_type: prov:hadPrimarySource
-  node_count: 538
   edge_count: 835
+  format: kgx
+  id: ido.kg-bioportal
   latest_version: 8-3-20
+  name: IDO KGX graph (KG-Bioportal)
+  node_count: 538
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  product_file_size: 30122
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IDO.tar.gz
 publications:
 - authors:
   - Babcock S

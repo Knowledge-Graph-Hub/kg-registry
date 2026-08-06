@@ -2,20 +2,23 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Fernanda Dorea
-    orcid: 0000-0001-8638-8525
-    contact_details:
-      - contact_type: email
-        value: fernanda.dorea@sva.se
-      - contact_type: github
-        value: nandadorea
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: fernanda.dorea@sva.se
+  - contact_type: github
+    value: nandadorea
+  label: Fernanda Dorea
+  orcid: 0000-0001-8638-8525
 creation_date: '2025-09-29T00:00:00Z'
-description: The health Surveillance Ontology (HSO) focuses on "surveillance system level data", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc. It aims to support One-Health surveillance, covering animal health, public health and food safety surveillance.
+description: The health Surveillance Ontology (HSO) focuses on "surveillance system
+  level data", that is, data outputs from surveillance activities, such as number
+  of samples collected, cases observed, etc. It aims to support One-Health surveillance,
+  covering animal health, public health and food safety surveillance.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://w3id.org/hso
 id: hso
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,33 +29,35 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Health Surveillance Ontology
 products:
-  - category: OntologyProduct
-    description: Health Surveillance Ontology in OWL format
-    format: owl
-    id: hso.owl
-    name: hso.owl
-    product_file_size: 138245
-    product_url: http://purl.obolibrary.org/obo/hso.owl
-    original_source:
-      - source: hso
-        relation_type: prov:hadPrimarySource
-  - id: hso.kg-bioportal
-    name: HSO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Health Surveillance Ontology (HSO), produced by KG-Bioportal from the BioPortal submission. The archive contains HSO_nodes.tsv and HSO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HSO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: hso
-        relation_type: prov:hadPrimarySource
-    node_count: 1283
-    edge_count: 2042
-    latest_version: 3.1.1
-repository: https://github.com/SVA-SE/HSO
+- category: OntologyProduct
+  description: Health Surveillance Ontology in OWL format
+  format: owl
+  id: hso.owl
+  name: hso.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hso
+  product_file_size: 138245
+  product_url: http://purl.obolibrary.org/obo/hso.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Health Surveillance Ontology (HSO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains HSO_nodes.tsv
+    and HSO_edges.tsv.
+  edge_count: 2042
+  format: kgx
+  id: hso.kg-bioportal
+  latest_version: 3.1.1
+  name: HSO KGX graph (KG-Bioportal)
+  node_count: 1283
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hso
+  product_file_size: 55392
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HSO.tar.gz
 publications: []
+repository: https://github.com/SVA-SE/HSO
 ---
-
 ## Description
 
 The health Surveillance Ontology (HSO) focuses on "surveillance system level data", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc. It aims to support One-Health surveillance, covering animal health, public health and food safety surveillance.

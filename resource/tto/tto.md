@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domains:
@@ -32,38 +32,36 @@ products:
   format: obo
   id: tto.obo
   name: tto.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tto
   product_file_size: 2260220
   product_url: http://purl.obolibrary.org/obo/tto.obo
-  original_source:
-  - source: tto
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Teleost taxonomy ontology in OWL format
   format: owl
   id: tto.owl
   name: tto.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tto
   product_file_size: 3526608
   product_url: http://purl.obolibrary.org/obo/tto.owl
-  original_source:
-  - source: tto
-    relation_type: prov:hadPrimarySource
-- id: tto.kg-bioportal
-  name: TTO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Teleost Taxonomy Ontology (TTO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains TTO_nodes.tsv and TTO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TTO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: tto
-    relation_type: prov:hadPrimarySource
-  node_count: 38743
   edge_count: 77538
+  format: kgx
+  id: tto.kg-bioportal
   latest_version: unknown
-repository: https://github.com/phenoscape/teleost-taxonomy-ontology
-taxon:
-- NCBITaxon:32443
+  name: TTO KGX graph (KG-Bioportal)
+  node_count: 38743
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tto
+  product_file_size: 995250
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TTO.tar.gz
 publications:
 - authors:
   - Peter Midford
@@ -80,6 +78,9 @@ publications:
   journal: Nature Precedings
   title: The Teleost Taxonomy Ontology
   year: '2010'
+repository: https://github.com/phenoscape/teleost-taxonomy-ontology
+taxon:
+- NCBITaxon:32443
 ---
 ## Description
 

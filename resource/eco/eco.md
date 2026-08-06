@@ -555,21 +555,22 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: eco.kg-bioportal
-  name: ECO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Evidence and Conclusion Ontology (ECO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains ECO_nodes.tsv
     and ECO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: eco
-    relation_type: prov:hadPrimarySource
-  node_count: 2351
   edge_count: 5362
+  format: kgx
+  id: eco.kg-bioportal
   latest_version: releases/2025-06-23
+  name: ECO KGX graph (KG-Bioportal)
+  node_count: 2351
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_file_size: 128184
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECO.tar.gz
 publications:
 - authors:
   - Nadendla S

@@ -34,8 +34,6 @@ products:
     source: resid
   product_url: http://purl.obolibrary.org/obo/resid.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
 publications: []

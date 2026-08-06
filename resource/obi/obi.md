@@ -522,21 +522,22 @@ products:
     source: obi
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
-- id: obi.kg-bioportal
-  name: OBI KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Ontology for Biomedical Investigations (OBI),
     produced by KG-Bioportal from the BioPortal submission. The archive contains OBI_nodes.tsv
     and OBI_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBI.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: obi
-    relation_type: prov:hadPrimarySource
-  node_count: 7552
   edge_count: 16102
+  format: kgx
+  id: obi.kg-bioportal
   latest_version: '2026-05-08'
+  name: OBI KGX graph (KG-Bioportal)
+  node_count: 7552
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  product_file_size: 578003
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBI.tar.gz
 publications:
 - authors:
   - Bandrowski A

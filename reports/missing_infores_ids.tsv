@@ -144,6 +144,7 @@ ctd2	Cancer Target Discovery and Development Network	DataSource	https://www.canc
 cteno	Ctenophore Ontology	Ontology	https://github.com/obophenotype/ctenophore-ontology	resource/cteno/cteno.md
 ctkp	Clinical Trials KP	KnowledgeGraph	https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP	resource/ctkp/ctkp.md
 cto	CTO: Core Ontology of Clinical Trials	Ontology	https://github.com/ClinicalTrialOntology/CTO/	resource/cto/cto.md
+culture-knowledge-graph	Culture Knowledge Graph	KnowledgeGraph	https://nfdi4culture.de/services/details/culture-knowledge-graph.html	resource/culture-knowledge-graph/culture-knowledge-graph.md
 cureid	CURE ID	DataSource	https://cure.ncats.io/	resource/cureid/cureid.md
 cvdo	Cardiovascular Disease Ontology	Ontology	https://github.com/OpenLHS/CVDO	resource/cvdo/cvdo.md
 cvx	Vaccine Administered Code Set (CVX)	DataSource	https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx	resource/cvx/cvx.md
@@ -220,12 +221,15 @@ epigraphdb	EpiGraphDB	KnowledgeGraph	https://epigraphdb.org/	resource/epigraphdb
 epio	Epilepsy Ontology	Ontology	https://github.com/SCAI-BIO/EpilepsyOntology	resource/epio/epio.md
 epo	Epidemiology Ontology	Ontology	https://code.google.com/p/epidemiology-ontology/	resource/epo/epo.md
 eqtlgen	eQTLGen Consortium	DataSource	https://www.eqtlgen.org/	resource/eqtlgen/eqtlgen.md
+era-kg	ERA Knowledge Graph	KnowledgeGraph	https://www.era.europa.eu/domains/registers/era-knowlege-graph_en	resource/era-kg/era-kg.md
 erccrbp	ERCC RNA Binding Protein Dataset	DataSource	https://exrna.org/	resource/erccrbp/erccrbp.md
 erccreg	ERCC Regulatory Element Dataset	DataSource	https://exrna.org/	resource/erccreg/erccreg.md
 ero	eagle-i resource ontology	Ontology	https://open.med.harvard.edu/wiki/display/eaglei/Ontology	resource/ero/ero.md
 esgf	Earth System Grid Federation (ESGF)	DataSource	https://esgf.llnl.gov/	resource/esgf/esgf.md
+eu-knowledge-graph	EU Knowledge Graph	KnowledgeGraph	https://linkedopendata.eu/wiki/The_EU_Knowledge_Graph	resource/eu-knowledge-graph/eu-knowledge-graph.md
 eupath	VEuPathDB ontology	Ontology	https://github.com/VEuPathDB-ontology/VEuPathDB-ontology	resource/eupath/eupath.md
 eupathdb	Eukaryotic Pathogen Database (EuPathDB)	DataSource		resource/eupathdb/eupathdb.md
+eurio	EURIO Knowledge Graph	KnowledgeGraph	https://cordis.europa.eu/datalab	resource/eurio/eurio.md
 ev	eVOC (Expressed Sequence Annotation for Humans)	Ontology	https://obofoundry.org/ontology/ev	resource/ev/ev.md
 evlncrnas	EVLncRNAs	DataSource	https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/	resource/evlncrnas/evlncrnas.md
 evoweb	EvoWeb	KnowledgeGraph	https://data.niaid.nih.gov/	resource/evoweb/evoweb.md
@@ -349,6 +353,7 @@ iucn-red-list	IUCN Red List of Threatened Species	DataSource	https://www.iucnred
 jaspar	JASPAR	DataSource	https://jaspar.elixir.no/	resource/jaspar/jaspar.md
 kentucky-cancer-registry	Kentucky Cancer Registry	DataSource	https://www.kcr.uky.edu/	resource/kentucky-cancer-registry/kentucky-cancer-registry.md
 kg-alzheimers	KG-Alzheimers	KnowledgeGraph	https://kghub.org/kg-alzheimers/index.html	resource/kg-alzheimers/kg-alzheimers.md
+kg-bioportal	KG-Bioportal	Aggregator	https://ncbo.github.io/kg-bioportal/	resource/kg-bioportal/kg-bioportal.md
 kg-covid-19	KG-COVID-19	KnowledgeGraph	https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki	resource/kg-covid-19/kg-covid-19.md
 kg-ebi-gene2pheno	EBI Gene2Phenotype KG	KnowledgeGraph	https://www.ebi.ac.uk/gene2phenotype/	resource/kg-ebi-gene2pheno/kg-ebi-gene2pheno.md
 kg-enp	ENPKG	KnowledgeGraph	https://enpkg.commons-lab.org/	resource/kg-enp/kg-enp.md

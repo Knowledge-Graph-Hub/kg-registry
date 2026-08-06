@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Andrew G. McArthur
-    orcid: 0000-0002-1142-3063
-    contact_details:
-      - contact_type: email
-        value: mcarthua@mcmaster.ca
-      - contact_type: github
-        value: agmcarthur
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: mcarthua@mcmaster.ca
+  - contact_type: github
+    value: agmcarthur
+  label: Andrew G. McArthur
+  orcid: 0000-0002-1142-3063
 creation_date: '2025-09-29T00:00:00Z'
 description: Antibiotic resistance genes and mutations
 domains:
-  - biological systems
+- biological systems
 homepage_url: https://github.com/arpcard/aro
 id: aro
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,72 +26,75 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Antibiotic Resistance Ontology
 products:
-  - category: OntologyProduct
-    description: Antibiotic Resistance Ontology in OWL format
-    format: owl
-    id: aro.owl
-    name: aro.owl
-    product_file_size: 687021
-    product_url: http://purl.obolibrary.org/obo/aro.owl
-    original_source:
-      - source: aro
-        relation_type: prov:hadPrimarySource
-  - id: aro.kg-bioportal
-    name: ARO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Antibiotic Resistance Ontology (ARO), produced by KG-Bioportal from the BioPortal submission. The archive contains ARO_nodes.tsv and ARO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ARO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: aro
-        relation_type: prov:hadPrimarySource
-    node_count: 8608
-    edge_count: 14883
-repository: https://github.com/arpcard/aro
+- category: OntologyProduct
+  description: Antibiotic Resistance Ontology in OWL format
+  format: owl
+  id: aro.owl
+  name: aro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  product_file_size: 687021
+  product_url: http://purl.obolibrary.org/obo/aro.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Antibiotic Resistance Ontology (ARO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains ARO_nodes.tsv
+    and ARO_edges.tsv.
+  edge_count: 14883
+  format: kgx
+  id: aro.kg-bioportal
+  name: ARO KGX graph (KG-Bioportal)
+  node_count: 8608
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  product_file_size: 450290
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ARO.tar.gz
 publications:
-  - authors:
-      - Alcock BP
-      - Raphenya AR
-      - Lau TTY
-      - Tsang KK
-      - Bouchard M
-      - Edalatmand A
-      - Huynh W
-      - Nguyen AV
-      - Cheng AA
-      - Liu S
-      - Min SY
-      - Miroshnichenko A
-      - Tran HK
-      - Werfalli RE
-      - Nasir JA
-      - Oloni M
-      - Speicher DJ
-      - Florescu A
-      - Singh B
-      - Faltyn M
-      - Hernandez-Koutoucheva A
-      - Sharma AN
-      - Bordeleau E
-      - Pawlowski AC
-      - Zubyk HL
-      - Dooley D
-      - Griffiths E
-      - Maguire F
-      - Winsor GL
-      - Beiko RG
-      - Brinkman FSL
-      - Hsiao WWL
-      - Domselaar GV
-      - McArthur AG
-    doi: 10.1093/nar/gkz935
-    id: https://www.ncbi.nlm.nih.gov/pubmed/31665441
-    journal: Nucleic Acids Res
-    title: 'CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database.'
-    year: '2020'
+- authors:
+  - Alcock BP
+  - Raphenya AR
+  - Lau TTY
+  - Tsang KK
+  - Bouchard M
+  - Edalatmand A
+  - Huynh W
+  - Nguyen AV
+  - Cheng AA
+  - Liu S
+  - Min SY
+  - Miroshnichenko A
+  - Tran HK
+  - Werfalli RE
+  - Nasir JA
+  - Oloni M
+  - Speicher DJ
+  - Florescu A
+  - Singh B
+  - Faltyn M
+  - Hernandez-Koutoucheva A
+  - Sharma AN
+  - Bordeleau E
+  - Pawlowski AC
+  - Zubyk HL
+  - Dooley D
+  - Griffiths E
+  - Maguire F
+  - Winsor GL
+  - Beiko RG
+  - Brinkman FSL
+  - Hsiao WWL
+  - Domselaar GV
+  - McArthur AG
+  doi: 10.1093/nar/gkz935
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31665441
+  journal: Nucleic Acids Res
+  title: 'CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic
+    resistance database.'
+  year: '2020'
+repository: https://github.com/arpcard/aro
 ---
-
 ## Description
 
 Antibiotic resistance genes and mutations

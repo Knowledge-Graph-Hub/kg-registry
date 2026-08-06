@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Philippe Rocca-Serra
-  orcid: 0000-0001-9853-5668
   contact_details:
   - contact_type: email
     value: proccaserra@gmail.com
   - contact_type: github
     value: proccaserra
+  label: Philippe Rocca-Serra
+  orcid: 0000-0001-9853-5668
 creation_date: '2025-09-29T00:00:00Z'
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide
   coverage for processes such as statistical tests, their conditions of application,
@@ -78,20 +78,21 @@ products:
     source: obi
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
-- id: stato.kg-bioportal
-  name: STATO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Statistics Ontology (STATO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains STATO_nodes.tsv and STATO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STATO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: stato
-    relation_type: prov:hadPrimarySource
-  node_count: 1446
   edge_count: 3999
+  format: kgx
+  id: stato.kg-bioportal
   latest_version: '2026-04-20'
+  name: STATO KGX graph (KG-Bioportal)
+  node_count: 1446
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  product_file_size: 150377
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STATO.tar.gz
 publications:
 - authors:
   - Rocca-Serra P

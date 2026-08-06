@@ -35,21 +35,22 @@ products:
     source: ato
   product_url: http://purl.obolibrary.org/obo/ato.owl
   warnings: []
-- id: ato.kg-bioportal
-  name: ATO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Amphibian Taxonomy Ontology (ATO), produced by
     KG-Bioportal from the BioPortal submission. The archive contains ATO_nodes.tsv
     and ATO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ATO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ato
-    relation_type: prov:hadPrimarySource
-  node_count: 6147
   edge_count: 12163
+  format: kgx
+  id: ato.kg-bioportal
   latest_version: See Remote Site
+  name: ATO KGX graph (KG-Bioportal)
+  node_count: 6147
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ato
+  product_file_size: 280421
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ATO.tar.gz
 publications: []
 taxon:
 - NCBITaxon:8292

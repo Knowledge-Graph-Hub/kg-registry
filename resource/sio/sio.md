@@ -132,21 +132,22 @@ products:
     source: dcat
   - relation_type: prov:wasInformedBy
     source: afo
-- id: sio.kg-bioportal
-  name: SIO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Semanticscience Integrated Ontology (SIO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains SIO_nodes.tsv
     and SIO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SIO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: sio
-    relation_type: prov:hadPrimarySource
-  node_count: 1897
   edge_count: 4185
+  format: kgx
+  id: sio.kg-bioportal
   latest_version: '1.61'
+  name: SIO KGX graph (KG-Bioportal)
+  node_count: 1897
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sio
+  product_file_size: 95819
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SIO.tar.gz
 publications:
 - authors:
   - Michel Dumontier

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Liliana Andres Hernandez
-  orcid: 0000-0002-7696-731X
   contact_details:
   - contact_type: email
     value: landreshdz@gmail.com
   - contact_type: github
     value: LilyAndres
+  label: Liliana Andres Hernandez
+  orcid: 0000-0002-7696-731X
 creation_date: '2025-09-29T00:00:00Z'
 description: CDNO provides structured terminologies to describe nutritional attributes
   of material entities that contribute to human diet.
@@ -33,36 +33,36 @@ products:
   format: owl
   id: cdno.owl
   name: cdno.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdno
   product_file_size: 590900
   product_url: http://purl.obolibrary.org/obo/cdno.owl
-  original_source:
-  - source: cdno
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Compositional Dietary Nutrition Ontology in OBO format
   format: obo
   id: cdno.obo
   name: cdno.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdno
   product_file_size: 331277
   product_url: http://purl.obolibrary.org/obo/cdno.obo
-  original_source:
-  - source: cdno
-    relation_type: prov:hadPrimarySource
-- id: cdno.kg-bioportal
-  name: CDNO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Compositional Dietary Nutrition Ontology (CDNO),
     produced by KG-Bioportal from the BioPortal submission. The archive contains CDNO_nodes.tsv
     and CDNO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDNO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: cdno
-    relation_type: prov:hadPrimarySource
-  node_count: 3507
   edge_count: 5886
-repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
+  format: kgx
+  id: cdno.kg-bioportal
+  name: CDNO KGX graph (KG-Bioportal)
+  node_count: 3507
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdno
+  product_file_size: 170141
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDNO.tar.gz
 publications:
 - authors:
   - Liliana Andrés-Hernández
@@ -89,6 +89,7 @@ publications:
   journal: Frontiers in Nutrition
   title: Establishing a Common Nutritional Vocabulary - From Food Production to Diet
   year: '2022'
+repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
 ---
 ## Description
 

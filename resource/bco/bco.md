@@ -6,13 +6,13 @@ collection:
 - ber
 contacts:
 - category: Individual
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
   contact_details:
   - contact_type: email
     value: rlwalls2008@gmail.com
   - contact_type: github
     value: ramonawalls
+  label: Ramona Walls
+  orcid: 0000-0001-8815-0078
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to support the interoperability of biodiversity data, including
   data on museum collections, environmental/metagenomic samples, and ecological surveys.
@@ -34,27 +34,27 @@ products:
   format: owl
   id: bco.owl
   name: bco.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bco
   product_file_size: 108849
   product_url: http://purl.obolibrary.org/obo/bco.owl
-  original_source:
-  - source: bco
-    relation_type: prov:hadPrimarySource
-- id: bco.kg-bioportal
-  name: BCO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Biological Collections Ontology (BCO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains BCO_nodes.tsv
     and BCO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BCO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: bco
-    relation_type: prov:hadPrimarySource
-  node_count: 860
   edge_count: 1287
+  format: kgx
+  id: bco.kg-bioportal
   latest_version: '2021-11-14'
-repository: https://github.com/BiodiversityOntologies/bco
+  name: BCO KGX graph (KG-Bioportal)
+  node_count: 860
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  product_file_size: 41667
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BCO.tar.gz
 publications:
 - authors:
   - Ramona L. Walls
@@ -88,6 +88,7 @@ publications:
   title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction
     to the Biological Collections Ontology and Related Ontologies'
   year: '2014'
+repository: https://github.com/BiodiversityOntologies/bco
 ---
 ## Description
 

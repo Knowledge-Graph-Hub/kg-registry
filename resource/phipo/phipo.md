@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Alayne Cuzick
-  orcid: 0000-0001-8941-3984
   contact_details:
   - contact_type: email
     value: alayne.cuzick@rothamsted.ac.uk
   - contact_type: github
     value: CuzickA
+  label: Alayne Cuzick
+  orcid: 0000-0001-8941-3984
 creation_date: '2025-09-29T00:00:00Z'
 description: PHIPO is a formal ontology of species-neutral phenotypes observed in
   pathogen-host interactions.
@@ -33,37 +33,37 @@ products:
   format: owl
   id: phipo.owl
   name: phipo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phipo
   product_file_size: 1709467
   product_url: http://purl.obolibrary.org/obo/phipo.owl
-  original_source:
-  - source: phipo
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Pathogen Host Interaction Phenotype Ontology in OBO format
   format: obo
   id: phipo.obo
   name: phipo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phipo
   product_file_size: 1133552
   product_url: http://purl.obolibrary.org/obo/phipo.obo
-  original_source:
-  - source: phipo
-    relation_type: prov:hadPrimarySource
-- id: phipo.kg-bioportal
-  name: PHIPO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Pathogen Host Interaction Phenotype Ontology (PHIPO),
     produced by KG-Bioportal from the BioPortal submission. The archive contains PHIPO_nodes.tsv
     and PHIPO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PHIPO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: phipo
-    relation_type: prov:hadPrimarySource
-  node_count: 12086
   edge_count: 40085
+  format: kgx
+  id: phipo.kg-bioportal
   latest_version: '2026-03-12'
-repository: https://github.com/PHI-base/phipo
+  name: PHIPO KGX graph (KG-Bioportal)
+  node_count: 12086
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phipo
+  product_file_size: 1095286
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PHIPO.tar.gz
 publications:
 - authors:
   - Urban M
@@ -85,6 +85,7 @@ publications:
   journal: Nucleic Acids Res
   title: 'PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions'
   year: '2022'
+repository: https://github.com/PHI-base/phipo
 ---
 ## Description
 

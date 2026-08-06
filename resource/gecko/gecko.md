@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Rebecca Jackson
-  orcid: 0000-0003-4871-5569
   contact_details:
   - contact_type: email
     value: rbca.jackson@gmail.com
   - contact_type: github
     value: beckyjackson
+  label: Rebecca Jackson
+  orcid: 0000-0003-4871-5569
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to represent genomics cohort attributes
 domains:
@@ -32,27 +32,28 @@ products:
   format: owl
   id: gecko.owl
   name: gecko.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gecko
   product_file_size: 18443
   product_url: http://purl.obolibrary.org/obo/gecko.owl
-  original_source:
-  - source: gecko
-    relation_type: prov:hadPrimarySource
-- id: gecko.kg-bioportal
-  name: GECKO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Genomics Cohorts Knowledge Ontology (GECKO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains GECKO_nodes.tsv
     and GECKO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GECKO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: gecko
-    relation_type: prov:hadPrimarySource
-  node_count: 176
   edge_count: 155
-repository: https://github.com/IHCC-cohorts/GECKO
+  format: kgx
+  id: gecko.kg-bioportal
+  name: GECKO KGX graph (KG-Bioportal)
+  node_count: 176
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gecko
+  product_file_size: 8867
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GECKO.tar.gz
 publications: []
+repository: https://github.com/IHCC-cohorts/GECKO
 ---
 ## Description
 

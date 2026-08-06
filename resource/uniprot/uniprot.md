@@ -762,8 +762,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -5125,6 +5125,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  product_file_size: 7213
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UNIPROT.tar.gz
 publications:
 - authors:

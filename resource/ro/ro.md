@@ -791,20 +791,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: ro.kg-bioportal
-  name: OBOREL KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Relations Ontology (OBOREL), produced by KG-Bioportal
     from the BioPortal submission. The archive contains OBOREL_nodes.tsv and OBOREL_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOREL.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ro
-    relation_type: prov:hadPrimarySource
-  node_count: 1234
   edge_count: 2787
+  format: kgx
+  id: ro.kg-bioportal
   latest_version: '2025-12-17'
+  name: OBOREL KGX graph (KG-Bioportal)
+  node_count: 1234
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 62349
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOREL.tar.gz
 publications:
 - authors:
   - Barry Smith

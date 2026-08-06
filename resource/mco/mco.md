@@ -5,21 +5,21 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  contact_details:
+  - contact_type: email
+    value: citlalli.mejiaalmonte@gmail.com
+  - contact_type: github
+    value: citmejia
   label: Citlalli Mej a-Almonte
   orcid: 0000-0002-0142-5591
+- category: Individual
   contact_details:
   - contact_type: email
     value: citlalli.mejiaalmonte@gmail.com
   - contact_type: github
     value: citmejia
-- category: Individual
   label: Citlalli Mejia-Almonte
   orcid: 0000-0002-0142-5591
-  contact_details:
-  - contact_type: email
-    value: citlalli.mejiaalmonte@gmail.com
-  - contact_type: github
-    value: citmejia
 creation_date: '2025-09-29T00:00:00Z'
 description: Microbial Conditions Ontology is an ontology...
 domains:
@@ -40,37 +40,38 @@ products:
   format: owl
   id: mco.owl
   name: mco.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mco
   product_file_size: 772100
   product_url: http://purl.obolibrary.org/obo/mco.owl
-  original_source:
-  - source: mco
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Microbial Conditions Ontology in OBO format
   format: obo
   id: mco.obo
   name: mco.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mco
   product_file_size: 409757
   product_url: http://purl.obolibrary.org/obo/mco.obo
-  original_source:
-  - source: mco
-    relation_type: prov:hadPrimarySource
-- id: mco.kg-bioportal
-  name: MCO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Microbial Conditions Ontology (MCO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains MCO_nodes.tsv
     and MCO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: mco
-    relation_type: prov:hadPrimarySource
-  node_count: 3561
   edge_count: 9520
-repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
+  format: kgx
+  id: mco.kg-bioportal
+  name: MCO KGX graph (KG-Bioportal)
+  node_count: 3561
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mco
+  product_file_size: 212864
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCO.tar.gz
 publications: []
+repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 ---
 The Microbial Conditions Ontology (MCO) standardizes the description of
 microbial growth conditions so that experiments can be annotated in a consistent,

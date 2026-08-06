@@ -2,18 +2,18 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Wasila Dahdul
-    orcid: 0000-0003-3162-7490
-    contact_details:
-      - contact_type: email
-        value: wasila.dahdul@usd.edu
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: wasila.dahdul@usd.edu
+  label: Wasila Dahdul
+  orcid: 0000-0003-3162-7490
 creation_date: '2025-09-29T00:00:00Z'
 description: Vertebrate skeletal anatomy ontology.
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://www.nescent.org/phenoscape/Main_Page
 id: vsao
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -23,36 +23,38 @@ license:
   label: Not specified
 name: Vertebrate Skeletal Anatomy Ontology-
 products:
-  - category: OntologyProduct
-    description: Vertebrate Skeletal Anatomy Ontology- in OWL format
-    format: owl
-    id: vsao.owl
-    name: vsao.owl
-    product_file_size: 600603
-    product_url: http://purl.obolibrary.org/obo/vsao.owl
-    original_source:
-      - source: vsao
-        relation_type: prov:hadPrimarySource
-  - id: vsao.kg-bioportal
-    name: VSAO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Vertebrate Skeletal Anatomy Ontology (VSAO), produced by KG-Bioportal from the BioPortal submission. The archive contains VSAO_nodes.tsv and VSAO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VSAO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: vsao
-        relation_type: prov:hadPrimarySource
-    node_count: 358
-    edge_count: 438
-    latest_version: '2012-11-06'
-taxon:
-  - NCBITaxon:7742
+- category: OntologyProduct
+  description: Vertebrate Skeletal Anatomy Ontology- in OWL format
+  format: owl
+  id: vsao.owl
+  name: vsao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vsao
+  product_file_size: 600603
+  product_url: http://purl.obolibrary.org/obo/vsao.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Vertebrate Skeletal Anatomy Ontology (VSAO), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains VSAO_nodes.tsv
+    and VSAO_edges.tsv.
+  edge_count: 438
+  format: kgx
+  id: vsao.kg-bioportal
+  latest_version: '2012-11-06'
+  name: VSAO KGX graph (KG-Bioportal)
+  node_count: 358
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vsao
+  product_file_size: 20343
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VSAO.tar.gz
 publications: []
+taxon:
+- NCBITaxon:7742
 use_instead:
-  - uberon
+- uberon
 ---
-
 ## Description
 
 Vertebrate skeletal anatomy ontology.

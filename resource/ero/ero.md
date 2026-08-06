@@ -5,10 +5,10 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Marc Ciriello
   contact_details:
   - contact_type: email
     value: Marc_Ciriello@hms.harvard.edu
+  label: Marc Ciriello
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of research resources such as instruments. protocols, reagents,
   animal models and biospecimens.
@@ -35,21 +35,22 @@ products:
     source: ero
   product_url: http://purl.obolibrary.org/obo/ero.owl
   warnings: []
-- id: ero.kg-bioportal
-  name: ERO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Eagle-I Research Resource Ontology (ERO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains ERO_nodes.tsv
     and ERO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ERO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ero
-    relation_type: prov:hadPrimarySource
-  node_count: 4384
   edge_count: 9033
+  format: kgx
+  id: ero.kg-bioportal
   latest_version: '2013-08-02'
+  name: ERO KGX graph (KG-Bioportal)
+  node_count: 4384
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ero
+  product_file_size: 251982
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ERO.tar.gz
 publications: []
 ---
 ## Description

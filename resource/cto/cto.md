@@ -2,20 +2,24 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Dr. Alpha Tom Kodamullil
-    orcid: 0000-0001-9896-3531
-    contact_details:
-      - contact_type: email
-        value: alpha.tom.kodamullil@scai.fraunhofer.de
-      - contact_type: github
-        value: akodamullil
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: alpha.tom.kodamullil@scai.fraunhofer.de
+  - contact_type: github
+    value: akodamullil
+  label: Dr. Alpha Tom Kodamullil
+  orcid: 0000-0001-9896-3531
 creation_date: '2025-09-29T00:00:00Z'
-description: The core Ontology of Clinical Trials (CTO) will serve as a structured resource integrating basic terms and concepts in the context of clinical trials. Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate extended versions for specific applications such as annotation of variables in study documents from clinical trials.
+description: The core Ontology of Clinical Trials (CTO) will serve as a structured
+  resource integrating basic terms and concepts in the context of clinical trials.
+  Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate
+  extended versions for specific applications such as annotation of variables in study
+  documents from clinical trials.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/ClinicalTrialOntology/CTO/
 id: cto
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,33 +30,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: 'CTO: Core Ontology of Clinical Trials'
 products:
-  - category: OntologyProduct
-    description: 'CTO: Core Ontology of Clinical Trials in OWL format'
-    format: owl
-    id: cto.owl
-    name: cto.owl
-    product_file_size: 96492
-    product_url: http://purl.obolibrary.org/obo/cto.owl
-    original_source:
-      - source: cto
-        relation_type: prov:hadPrimarySource
-  - id: cto.kg-bioportal
-    name: CTO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Clinical Trials Ontology (CTO), produced by KG-Bioportal from the BioPortal submission. The archive contains CTO_nodes.tsv and CTO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CTO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: cto
-        relation_type: prov:hadPrimarySource
-    node_count: 447
-    edge_count: 904
-    latest_version: 'Version Release: 1.0.0'
-repository: https://github.com/ClinicalTrialOntology/CTO
+- category: OntologyProduct
+  description: 'CTO: Core Ontology of Clinical Trials in OWL format'
+  format: owl
+  id: cto.owl
+  name: cto.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cto
+  product_file_size: 96492
+  product_url: http://purl.obolibrary.org/obo/cto.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Clinical Trials Ontology (CTO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains CTO_nodes.tsv and CTO_edges.tsv.
+  edge_count: 904
+  format: kgx
+  id: cto.kg-bioportal
+  latest_version: 'Version Release: 1.0.0'
+  name: CTO KGX graph (KG-Bioportal)
+  node_count: 447
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cto
+  product_file_size: 30324
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CTO.tar.gz
 publications: []
+repository: https://github.com/ClinicalTrialOntology/CTO
 ---
-
 ## Description
 
 The core Ontology of Clinical Trials (CTO) will serve as a structured resource integrating basic terms and concepts in the context of clinical trials. Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate extended versions for specific applications such as annotation of variables in study documents from clinical trials.

@@ -61,20 +61,21 @@ products:
     source: skos
   product_file_size: 102365
   product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-- id: geno.kg-bioportal
-  name: GENO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Genotype Ontology (GENO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains GENO_nodes.tsv and GENO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: geno
-    relation_type: prov:hadPrimarySource
-  node_count: 1352
   edge_count: 1942
+  format: kgx
+  id: geno.kg-bioportal
   latest_version: '2026-02-02'
+  name: GENO KGX graph (KG-Bioportal)
+  node_count: 1352
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geno
+  product_file_size: 69665
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENO.tar.gz
 publications: []
 repository: https://github.com/monarch-initiative/GENO-ontology
 ---

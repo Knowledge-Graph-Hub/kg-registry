@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Paul Schofield
-  orcid: 0000-0002-5111-7263
   contact_details:
   - contact_type: email
     value: pns12@hermes.cam.ac.uk
   - contact_type: github
     value: PaulNSchofield
+  label: Paul Schofield
+  orcid: 0000-0002-5111-7263
 creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of mutant and transgenic mouse pathology
   phenotypes
@@ -376,21 +376,22 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: mpath.kg-bioportal
-  name: MPATH KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Mouse Pathology Ontology (MPATH), produced by
     KG-Bioportal from the BioPortal submission. The archive contains MPATH_nodes.tsv
     and MPATH_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPATH.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: mpath
-    relation_type: prov:hadPrimarySource
-  node_count: 916
   edge_count: 952
+  format: kgx
+  id: mpath.kg-bioportal
   latest_version: '2020-05-19'
+  name: MPATH KGX graph (KG-Bioportal)
+  node_count: 916
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  product_file_size: 41073
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPATH.tar.gz
 publications: []
 repository: https://github.com/PaulNSchofield/mpath
 taxon:

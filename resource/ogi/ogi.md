@@ -52,6 +52,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ogi
+  product_file_size: 9832
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/OGI.tar.gz
 publications: []
 use_instead:

@@ -91,21 +91,22 @@ products:
     source: prefer
   product_file_size: 233928
   product_url: http://purl.obolibrary.org/obo/prefer/prefer-base.json
-- id: prefer.kg-bioportal
-  name: PREFER KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Precision Fermentation Ontology (PREFER), produced
     by KG-Bioportal from the BioPortal submission. The archive contains PREFER_nodes.tsv
     and PREFER_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PREFER.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: prefer
-    relation_type: prov:hadPrimarySource
-  node_count: 7597
   edge_count: 22849
+  format: kgx
+  id: prefer.kg-bioportal
   latest_version: '2026-07-14'
+  name: PREFER KGX graph (KG-Bioportal)
+  node_count: 7597
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prefer
+  product_file_size: 698733
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PREFER.tar.gz
 publications:
 - id: https://arxiv.org/abs/2602.16755
   title: 'PREFER: An Ontology for the PREcision FERmentation Community'

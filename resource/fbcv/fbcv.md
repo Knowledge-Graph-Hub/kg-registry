@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Clare Pilgrim
-  orcid: 0000-0002-1373-1705
   contact_details:
   - contact_type: email
     value: cp390@cam.ac.uk
   - contact_type: github
     value: Clare72
+  label: Clare Pilgrim
+  orcid: 0000-0002-1373-1705
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary used for various aspects of annotation
   by FlyBase.
@@ -34,48 +34,49 @@ products:
   format: owl
   id: fbcv.owl
   name: fbcv.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
   product_file_size: 4294066
   product_url: http://purl.obolibrary.org/obo/fbcv.owl
-  original_source:
-  - source: fbcv
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: FlyBase Controlled Vocabulary in OBO format
   format: obo
   id: fbcv.obo
   name: fbcv.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
   product_file_size: 568816
   product_url: http://purl.obolibrary.org/obo/fbcv.obo
-  original_source:
-  - source: fbcv
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: FlyBase Controlled Vocabulary in JSON format
   format: json
   id: fbcv.json
   name: fbcv.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
   product_file_size: 2716834
   product_url: http://purl.obolibrary.org/obo/fbcv.json
-  original_source:
-  - source: fbcv
-    relation_type: prov:hadPrimarySource
-- id: fbcv.kg-bioportal
-  name: FB-CV KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of FlyBase Controlled Vocabulary (FB-CV), produced
     by KG-Bioportal from the BioPortal submission. The archive contains FB-CV_nodes.tsv
     and FB-CV_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FB-CV.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: fbcv
-    relation_type: prov:hadPrimarySource
-  node_count: 2467
   edge_count: 5471
+  format: kgx
+  id: fbcv.kg-bioportal
   latest_version: '2026-07-10'
-repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+  name: FB-CV KGX graph (KG-Bioportal)
+  node_count: 2467
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
+  product_file_size: 142353
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FB-CV.tar.gz
 publications: []
+repository: https://github.com/FlyBase/flybase-controlled-vocabulary
 ---
 ## Description
 

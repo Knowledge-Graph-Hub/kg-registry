@@ -5,10 +5,10 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jonathan Bard
   contact_details:
   - contact_type: email
     value: J.Bard@ed.ac.uk
+  label: Jonathan Bard
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
@@ -22,21 +22,22 @@ license:
   label: Not specified
 name: Human developmental anatomy, timed version
 products:
-- id: ehda.kg-bioportal
-  name: EHDA KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Human Developmental Anatomy Ontology, timed version
     (EHDA), produced by KG-Bioportal from the BioPortal submission. The archive contains
     EHDA_nodes.tsv and EHDA_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDA.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: ehda
-    relation_type: prov:hadPrimarySource
-  node_count: 8353
   edge_count: 8339
+  format: kgx
+  id: ehda.kg-bioportal
   latest_version: unknown
+  name: EHDA KGX graph (KG-Bioportal)
+  node_count: 8353
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehda
+  product_file_size: 327864
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDA.tar.gz
 publications:
 - authors:
   - Hunter A

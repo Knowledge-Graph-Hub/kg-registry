@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Bob Thacker
-    orcid: 0000-0002-9654-0073
-    contact_details:
-      - contact_type: email
-        value: robert.thacker@stonybrook.edu
-      - contact_type: github
-        value: bobthacker
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: robert.thacker@stonybrook.edu
+  - contact_type: github
+    value: bobthacker
+  label: Bob Thacker
+  orcid: 0000-0002-9654-0073
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology covering the anatomy of the taxon Porifera (sponges)
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://github.com/obophenotype/porifera-ontology
 id: poro
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,58 +26,60 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Porifera Ontology
 products:
-  - category: OntologyProduct
-    description: Porifera Ontology in OWL format
-    format: owl
-    id: poro.owl
-    name: poro.owl
-    product_file_size: 62597
-    product_url: http://purl.obolibrary.org/obo/poro.owl
-    original_source:
-      - source: poro
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Porifera Ontology in OBO format
-    format: obo
-    id: poro.obo
-    name: poro.obo
-    product_file_size: 54580
-    product_url: http://purl.obolibrary.org/obo/poro.obo
-    original_source:
-      - source: poro
-        relation_type: prov:hadPrimarySource
-  - id: poro.kg-bioportal
-    name: PORO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Porifera Ontology (PORO), produced by KG-Bioportal from the BioPortal submission. The archive contains PORO_nodes.tsv and PORO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PORO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: poro
-        relation_type: prov:hadPrimarySource
-    node_count: 944
-    edge_count: 1163
-    latest_version: unknown
+- category: OntologyProduct
+  description: Porifera Ontology in OWL format
+  format: owl
+  id: poro.owl
+  name: poro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  product_file_size: 62597
+  product_url: http://purl.obolibrary.org/obo/poro.owl
+- category: OntologyProduct
+  description: Porifera Ontology in OBO format
+  format: obo
+  id: poro.obo
+  name: poro.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  product_file_size: 54580
+  product_url: http://purl.obolibrary.org/obo/poro.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Porifera Ontology (PORO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains PORO_nodes.tsv and PORO_edges.tsv.
+  edge_count: 1163
+  format: kgx
+  id: poro.kg-bioportal
+  latest_version: unknown
+  name: PORO KGX graph (KG-Bioportal)
+  node_count: 944
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  product_file_size: 38450
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PORO.tar.gz
+publications:
+- authors:
+  - Thacker RW
+  - Díaz MC
+  - Kerner A
+  - Vignes-Lebbe R
+  - Segerdell E
+  - Haendel MA
+  - Mungall CJ
+  doi: 10.1186/2041-1480-5-39
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25276334
+  journal: J Biomed Semantics
+  title: 'The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy
+    ontology'
+  year: '2014'
 repository: https://github.com/obophenotype/porifera-ontology
 taxon:
-  - NCBITaxon:6040
-publications:
-  - authors:
-      - Thacker RW
-      - Díaz MC
-      - Kerner A
-      - Vignes-Lebbe R
-      - Segerdell E
-      - Haendel MA
-      - Mungall CJ
-    doi: 10.1186/2041-1480-5-39
-    id: https://www.ncbi.nlm.nih.gov/pubmed/25276334
-    journal: J Biomed Semantics
-    title: 'The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology'
-    year: '2014'
+- NCBITaxon:6040
 ---
-
 ## Description
 
 An ontology covering the anatomy of the taxon Porifera (sponges)

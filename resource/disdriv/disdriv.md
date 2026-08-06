@@ -2,20 +2,22 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Lynn Schriml
-    orcid: 0000-0001-8910-9851
-    contact_details:
-      - contact_type: email
-        value: lynn.schriml@gmail.com
-      - contact_type: github
-        value: lschriml
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lynn.schriml@gmail.com
+  - contact_type: github
+    value: lschriml
+  label: Lynn Schriml
+  orcid: 0000-0001-8910-9851
 creation_date: '2025-09-29T00:00:00Z'
-description: Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors. An application ontology. Built in collaboration with EnvO, ExO, ECTO and ChEBI.
+description: Ontology for drivers and triggers of human diseases, built to classify
+  ExO ontology exposure stressors. An application ontology. Built in collaboration
+  with EnvO, ExO, ECTO and ChEBI.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://disease-ontology.org/
 id: disdriv
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,35 +28,37 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Disease Drivers Ontology
 products:
-  - category: OntologyProduct
-    description: Disease Drivers Ontology in OWL format
-    format: owl
-    id: disdriv.owl
-    name: disdriv.owl
-    product_file_size: 13991
-    product_url: http://purl.obolibrary.org/obo/disdriv.owl
-    original_source:
-      - source: disdriv
-        relation_type: prov:hadPrimarySource
-  - id: disdriv.kg-bioportal
-    name: DISDRIV KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Disease Drivers Ontology (DISDRIV), produced by KG-Bioportal from the BioPortal submission. The archive contains DISDRIV_nodes.tsv and DISDRIV_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DISDRIV.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: disdriv
-        relation_type: prov:hadPrimarySource
-    node_count: 99
-    edge_count: 84
-    latest_version: '2026-03-31'
+- category: OntologyProduct
+  description: Disease Drivers Ontology in OWL format
+  format: owl
+  id: disdriv.owl
+  name: disdriv.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disdriv
+  product_file_size: 13991
+  product_url: http://purl.obolibrary.org/obo/disdriv.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Disease Drivers Ontology (DISDRIV), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains DISDRIV_nodes.tsv
+    and DISDRIV_edges.tsv.
+  edge_count: 84
+  format: kgx
+  id: disdriv.kg-bioportal
+  latest_version: '2026-03-31'
+  name: DISDRIV KGX graph (KG-Bioportal)
+  node_count: 99
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disdriv
+  product_file_size: 9343
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DISDRIV.tar.gz
+publications: []
 repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
 taxon:
-  - NCBITaxon:9606
-publications: []
+- NCBITaxon:9606
 ---
-
 ## Description
 
 Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors. An application ontology. Built in collaboration with EnvO, ExO, ECTO and ChEBI.

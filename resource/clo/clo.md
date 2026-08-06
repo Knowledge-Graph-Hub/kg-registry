@@ -435,20 +435,21 @@ products:
     source: uberon
   product_file_size: 936065236
   product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
-- id: clo.kg-bioportal
-  name: CLO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Cell Line Ontology (CLO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains CLO_nodes.tsv and CLO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: clo
-    relation_type: prov:hadPrimarySource
-  node_count: 48410
   edge_count: 69409
+  format: kgx
+  id: clo.kg-bioportal
   latest_version: '2026-06-19'
+  name: CLO KGX graph (KG-Bioportal)
+  node_count: 48410
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  product_file_size: 1646060
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLO.tar.gz
 publications:
 - authors:
   - Sarntivijai S

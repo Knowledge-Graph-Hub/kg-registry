@@ -2805,20 +2805,21 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
-- id: doid.kg-bioportal
-  name: DOID KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Human Disease Ontology (DOID), produced by KG-Bioportal
     from the BioPortal submission. The archive contains DOID_nodes.tsv and DOID_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/DOID.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: doid
-    relation_type: prov:hadPrimarySource
-  node_count: 16717
   edge_count: 39169
+  format: kgx
+  id: doid.kg-bioportal
   latest_version: '2026-07-31'
+  name: DOID KGX graph (KG-Bioportal)
+  node_count: 16717
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  product_file_size: 1167920
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/DOID.tar.gz
 publications:
 - authors:
   - Kibbe WA

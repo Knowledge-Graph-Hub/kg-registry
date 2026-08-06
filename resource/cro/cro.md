@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Marijane White
-  orcid: 0000-0001-5059-4132
   contact_details:
   - contact_type: email
     value: whimar@ohsu.edu
   - contact_type: github
     value: marijane
+  label: Marijane White
+  orcid: 0000-0001-5059-4132
 creation_date: '2025-09-29T00:00:00Z'
 description: A classification of the diverse roles performed in the work leading to
   a published research output in the sciences. Its purpose to provide transparency
@@ -35,26 +35,26 @@ products:
   format: owl
   id: cro.owl
   name: CRO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cro
   product_file_size: 12414
   product_url: http://purl.obolibrary.org/obo/cro.owl
-  original_source:
-  - source: cro
-    relation_type: prov:hadPrimarySource
-- id: cro.kg-bioportal
-  name: CRO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Contributor Role Ontology (CRO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains CRO_nodes.tsv and CRO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CRO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: cro
-    relation_type: prov:hadPrimarySource
-  node_count: 138
   edge_count: 237
+  format: kgx
+  id: cro.kg-bioportal
   latest_version: v2019-08-16
-repository: https://github.com/data2health/contributor-role-ontology
+  name: CRO KGX graph (KG-Bioportal)
+  node_count: 138
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cro
+  product_file_size: 7890
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CRO.tar.gz
 publications:
 - authors:
   - Violeta Ilik
@@ -77,6 +77,7 @@ publications:
   preferred: true
   title: 'OpenVIVO: Transparency in Scholarship'
   year: '2018'
+repository: https://github.com/data2health/contributor-role-ontology
 ---
 ## Description
 

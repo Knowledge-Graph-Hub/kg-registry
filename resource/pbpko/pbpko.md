@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: saurav.kumar@iispv.cat
-      - contact_type: github
-        value: Crispae
-    label: Saurav Kumar
-    orcid: 0000-0003-0593-2598
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: saurav.kumar@iispv.cat
+  - contact_type: github
+    value: Crispae
+  label: Saurav Kumar
+  orcid: 0000-0003-0593-2598
 creation_date: '2026-02-20T00:00:00Z'
-description: An ontology for modeling and understanding of pharmacokinetics in biological systems.
+description: An ontology for modeling and understanding of pharmacokinetics in biological
+  systems.
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://github.com/InSilicoVida-Research-Lab/pbpko
 id: pbpko
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,44 +27,47 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Physiologically-Based Pharmacokinetic Ontology
 products:
-  - category: OntologyProduct
-    description: Physiologically-Based Pharmacokinetic Ontology in OWL format
-    format: owl
-    id: pbpko.owl
-    name: pbpko.owl
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: pbpko
-    product_file_size: 53137
-    product_url: http://purl.obolibrary.org/obo/pbpko.owl
-  - id: pbpko.kg-bioportal
-    name: PBPKO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Physiologically-Based Pharmacokinetic ontology (PBPKO), produced by KG-Bioportal from the BioPortal submission. The archive contains PBPKO_nodes.tsv and PBPKO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PBPKO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: pbpko
-        relation_type: prov:hadPrimarySource
-    node_count: 1541
-    edge_count: 5226
-    latest_version: '2026-07-15'
+- category: OntologyProduct
+  description: Physiologically-Based Pharmacokinetic Ontology in OWL format
+  format: owl
+  id: pbpko.owl
+  name: pbpko.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pbpko
+  product_file_size: 53137
+  product_url: http://purl.obolibrary.org/obo/pbpko.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Physiologically-Based Pharmacokinetic ontology
+    (PBPKO), produced by KG-Bioportal from the BioPortal submission. The archive contains
+    PBPKO_nodes.tsv and PBPKO_edges.tsv.
+  edge_count: 5226
+  format: kgx
+  id: pbpko.kg-bioportal
+  latest_version: '2026-07-15'
+  name: PBPKO KGX graph (KG-Bioportal)
+  node_count: 1541
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pbpko
+  product_file_size: 159916
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PBPKO.tar.gz
 publications:
-  - authors:
-      - Kumar V
-      - Deepika D
-      - Kumar S
-      - Sharma S
-    doi: 10.1016/j.toxlet.2024.07.382
-    id: https://doi.org/10.1016/j.toxlet.2024.07.382
-    journal: Toxicology Letters
-    preferred: true
-    title: P05-47 An ontology of Physiologically Based Pharmacokinetic Model (PBPK) for harmonization and automation of modeling framework (PBPKO)
-    year: '2024'
+- authors:
+  - Kumar V
+  - Deepika D
+  - Kumar S
+  - Sharma S
+  doi: 10.1016/j.toxlet.2024.07.382
+  id: https://doi.org/10.1016/j.toxlet.2024.07.382
+  journal: Toxicology Letters
+  preferred: true
+  title: P05-47 An ontology of Physiologically Based Pharmacokinetic Model (PBPK)
+    for harmonization and automation of modeling framework (PBPKO)
+  year: '2024'
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 ---
-
 ## Description
 
 An ontology for modeling and understanding of pharmacokinetics in biological systems.

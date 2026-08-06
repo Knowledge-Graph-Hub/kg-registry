@@ -198,20 +198,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: xao.kg-bioportal
-  name: XAO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Xenopus Anatomy Ontology (XAO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains XAO_nodes.tsv and XAO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XAO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: xao
-    relation_type: prov:hadPrimarySource
-  node_count: 1891
   edge_count: 7240
+  format: kgx
+  id: xao.kg-bioportal
   latest_version: releases/2024-09-03
+  name: XAO KGX graph (KG-Bioportal)
+  node_count: 1891
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  product_file_size: 256104
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XAO.tar.gz
 publications:
 - authors:
   - Segerdell E

@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Matt Yoder
-    orcid: 0000-0002-5640-5491
-    contact_details:
-      - contact_type: email
-        value: diapriid@gmail.com
-      - contact_type: github
-        value: mjy
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: diapriid@gmail.com
+  - contact_type: github
+    value: mjy
+  label: Matt Yoder
+  orcid: 0000-0002-5640-5491
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)
+description: A structured controlled vocabulary of the anatomy of the Hymenoptera
+  (bees, wasps, and ants)
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: http://hymao.org
 id: hao
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,66 +27,68 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Hymenoptera Anatomy Ontology
 products:
-  - category: OntologyProduct
-    description: Hymenoptera Anatomy Ontology in OWL format
-    format: owl
-    id: hao.owl
-    name: hao.owl
-    product_file_size: 287954
-    product_url: http://purl.obolibrary.org/obo/hao.owl
-    original_source:
-      - source: hao
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Hymenoptera Anatomy Ontology in OBO format
-    format: obo
-    id: hao.obo
-    name: hao.obo
-    product_file_size: 129805
-    product_url: http://purl.obolibrary.org/obo/hao.obo
-    original_source:
-      - source: hao
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Hymenoptera Anatomy Ontology in OWL format
-    format: owl
-    id: hao.depictions.owl
-    name: hao.depictions.owl
-    product_file_size: 33370
-    product_url: http://purl.obolibrary.org/obo/hao/depictions.owl
-    original_source:
-      - source: hao
-        relation_type: prov:hadPrimarySource
-  - id: hao.kg-bioportal
-    name: HAO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Hymenoptera Anatomy Ontology (HAO), produced by KG-Bioportal from the BioPortal submission. The archive contains HAO_nodes.tsv and HAO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HAO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: hao
-        relation_type: prov:hadPrimarySource
-    node_count: 5384
-    edge_count: 4952
-    latest_version: '2023-06-01'
+- category: OntologyProduct
+  description: Hymenoptera Anatomy Ontology in OWL format
+  format: owl
+  id: hao.owl
+  name: hao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hao
+  product_file_size: 287954
+  product_url: http://purl.obolibrary.org/obo/hao.owl
+- category: OntologyProduct
+  description: Hymenoptera Anatomy Ontology in OBO format
+  format: obo
+  id: hao.obo
+  name: hao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hao
+  product_file_size: 129805
+  product_url: http://purl.obolibrary.org/obo/hao.obo
+- category: OntologyProduct
+  description: Hymenoptera Anatomy Ontology in OWL format
+  format: owl
+  id: hao.depictions.owl
+  name: hao.depictions.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hao
+  product_file_size: 33370
+  product_url: http://purl.obolibrary.org/obo/hao/depictions.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Hymenoptera Anatomy Ontology (HAO), produced by
+    KG-Bioportal from the BioPortal submission. The archive contains HAO_nodes.tsv
+    and HAO_edges.tsv.
+  edge_count: 4952
+  format: kgx
+  id: hao.kg-bioportal
+  latest_version: '2023-06-01'
+  name: HAO KGX graph (KG-Bioportal)
+  node_count: 5384
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hao
+  product_file_size: 165296
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HAO.tar.gz
+publications:
+- authors:
+  - Yoder MJ
+  - Mikó I
+  - Seltmann KC
+  - Bertone MA
+  - Deans AR
+  doi: 10.1371/journal.pone.0015991
+  id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
+  journal: PLoS One
+  title: A gross anatomy ontology for hymenoptera
+  year: '2010'
 repository: https://github.com/hymao/hao
 taxon:
-  - NCBITaxon:7399
-publications:
-  - authors:
-      - Yoder MJ
-      - Mikó I
-      - Seltmann KC
-      - Bertone MA
-      - Deans AR
-    doi: 10.1371/journal.pone.0015991
-    id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
-    journal: PLoS One
-    title: A gross anatomy ontology for hymenoptera
-    year: '2010'
+- NCBITaxon:7399
 ---
-
 ## Description
 
 A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)

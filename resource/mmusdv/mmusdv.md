@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Fr d ric Bastian
-    orcid: 0000-0002-9415-5104
-    contact_details:
-      - contact_type: email
-        value: frederic.bastian@unil.ch
-      - contact_type: github
-        value: fbastian
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: frederic.bastian@unil.ch
+  - contact_type: github
+    value: fbastian
+  label: Fr d ric Bastian
+  orcid: 0000-0002-9415-5104
 creation_date: '2025-09-29T00:00:00Z'
 description: Life cycle stages for Mus Musculus
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
 id: mmusdv
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,42 +26,44 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mouse Developmental Stages
 products:
-  - category: OntologyProduct
-    description: Mouse Developmental Stages in OWL format
-    format: owl
-    id: mmusdv.owl
-    name: mmusdv.owl
-    product_file_size: 367557
-    product_url: http://purl.obolibrary.org/obo/mmusdv.owl
-    original_source:
-      - source: mmusdv
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Mouse Developmental Stages in OBO format
-    format: obo
-    id: mmusdv.obo
-    name: mmusdv.obo
-    product_file_size: 104741
-    product_url: http://purl.obolibrary.org/obo/mmusdv.obo
-    original_source:
-      - source: mmusdv
-        relation_type: prov:hadPrimarySource
-  - id: mmusdv.kg-bioportal
-    name: MMUSDV KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Mouse Developmental Stages (MMUSDV), produced by KG-Bioportal from the BioPortal submission. The archive contains MMUSDV_nodes.tsv and MMUSDV_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MMUSDV.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: mmusdv
-        relation_type: prov:hadPrimarySource
-    node_count: 174
-    edge_count: 367
-repository: https://github.com/obophenotype/developmental-stage-ontologies
+- category: OntologyProduct
+  description: Mouse Developmental Stages in OWL format
+  format: owl
+  id: mmusdv.owl
+  name: mmusdv.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mmusdv
+  product_file_size: 367557
+  product_url: http://purl.obolibrary.org/obo/mmusdv.owl
+- category: OntologyProduct
+  description: Mouse Developmental Stages in OBO format
+  format: obo
+  id: mmusdv.obo
+  name: mmusdv.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mmusdv
+  product_file_size: 104741
+  product_url: http://purl.obolibrary.org/obo/mmusdv.obo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Mouse Developmental Stages (MMUSDV), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains MMUSDV_nodes.tsv
+    and MMUSDV_edges.tsv.
+  edge_count: 367
+  format: kgx
+  id: mmusdv.kg-bioportal
+  name: MMUSDV KGX graph (KG-Bioportal)
+  node_count: 174
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mmusdv
+  product_file_size: 11997
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MMUSDV.tar.gz
 publications: []
+repository: https://github.com/obophenotype/developmental-stage-ontologies
 ---
-
 ## Description
 
 Life cycle stages for Mus Musculus

@@ -81,6 +81,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: sty
+  product_file_size: 1363
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STY.tar.gz
 publications:
 - authors:

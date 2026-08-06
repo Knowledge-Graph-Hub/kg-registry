@@ -363,20 +363,21 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
-- id: bao.kg-bioportal
-  name: BAO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of BioAssay Ontology (BAO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains BAO_nodes.tsv and BAO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BAO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: bao
-    relation_type: prov:hadPrimarySource
-  node_count: 6088
   edge_count: 7517
+  format: kgx
+  id: bao.kg-bioportal
   latest_version: 2.8.19
+  name: BAO KGX graph (KG-Bioportal)
+  node_count: 6088
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bao
+  product_file_size: 106171
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BAO.tar.gz
 publications:
 - authors:
   - Ubbo Visser

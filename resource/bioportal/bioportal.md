@@ -235,6 +235,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: kg-bioportal
+  product_file_size: 341106
   product_url: https://github.com/ncbo/kg-bioportal/releases/latest/download/onto_stats.yaml
   secondary_source:
   - relation_type: prov:wasDerivedFrom
@@ -259,16 +260,16 @@ products:
 publications:
 - authors:
   - Jennifer Vendetti
-  - "Nomi\_L Harris"
-  - "Michael\_V Dorf"
+  - Nomi L Harris
+  - Michael V Dorf
   - Alex Skrenchuk
-  - "J\_Harry Caufield"
-  - "Rafael\_S Gon\xE7alves"
-  - "John\_B Graybeal"
+  - J Harry Caufield
+  - Rafael S Gonçalves
+  - John B Graybeal
   - Harshad Hegde
   - Timothy Redmond
-  - "Christopher\_J Mungall"
-  - "Mark\_A Musen"
+  - Christopher J Mungall
+  - Mark A Musen
   doi: 10.1093/nar/gkaf402
   id: doi:10.1093/nar/gkaf402
   journal: Nucleic Acids Research

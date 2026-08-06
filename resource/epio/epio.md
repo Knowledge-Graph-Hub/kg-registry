@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: alpha.tom.kodamullil@scai.fraunhofer.de
-      - contact_type: github
-        value: akodamullil
-    label: Alpha Tom Kodamullil
-    orcid: 0000-0001-9896-3531
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: alpha.tom.kodamullil@scai.fraunhofer.de
+  - contact_type: github
+    value: akodamullil
+  label: Alpha Tom Kodamullil
+  orcid: 0000-0001-9896-3531
 creation_date: '2025-09-29T00:00:00Z'
 description: A application driven Epilepsy Ontology with official terms from the ILAE.
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/SCAI-BIO/EpilepsyOntology
 id: epio
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -26,33 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Epilepsy Ontology
 products:
-  - category: OntologyProduct
-    description: Epilepsy Ontology in OWL format
-    format: owl
-    id: epio.owl
-    name: epio.owl
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: epio
-    product_file_size: 415175
-    product_url: http://purl.obolibrary.org/obo/epio.owl
-  - id: epio.kg-bioportal
-    name: EPIO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of EpilepsyOntology (EPIO), produced by KG-Bioportal from the BioPortal submission. The archive contains EPIO_nodes.tsv and EPIO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EPIO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: epio
-        relation_type: prov:hadPrimarySource
-    node_count: 3100
-    edge_count: 5472
-    latest_version: 'Version Release: 1.0.0'
+- category: OntologyProduct
+  description: Epilepsy Ontology in OWL format
+  format: owl
+  id: epio.owl
+  name: epio.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: epio
+  product_file_size: 415175
+  product_url: http://purl.obolibrary.org/obo/epio.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of EpilepsyOntology (EPIO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains EPIO_nodes.tsv and EPIO_edges.tsv.
+  edge_count: 5472
+  format: kgx
+  id: epio.kg-bioportal
+  latest_version: 'Version Release: 1.0.0'
+  name: EPIO KGX graph (KG-Bioportal)
+  node_count: 3100
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: epio
+  product_file_size: 160785
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EPIO.tar.gz
 publications: []
 repository: https://github.com/SCAI-BIO/EpilepsyOntology
 ---
-
 ## Description
 
 A application driven Epilepsy Ontology with official terms from the ILAE.

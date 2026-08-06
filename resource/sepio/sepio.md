@@ -2,67 +2,70 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Matthew Brush
-    orcid: 0000-0002-1048-5019
-    contact_details:
-      - contact_type: email
-        value: "mhb120@gmail.com"
-      - contact_type: github
-        value: "mbrush"
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: mhb120@gmail.com
+  - contact_type: github
+    value: mbrush
+  label: Matthew Brush
+  orcid: 0000-0002-1048-5019
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for representing the provenance of scientific claims and the evidence that supports them.
+description: An ontology for representing the provenance of scientific claims and
+  the evidence that supports them.
 domains:
-  - biomedical
-  - general
+- biomedical
+- general
 homepage_url: https://github.com/monarch-initiative/SEPIO-ontology
-id: "sepio"
+id: sepio
 last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/3.0/"
+  id: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Scientific Evidence and Provenance Information Ontology
 products:
-  - category: OntologyProduct
-    description: SEPIO
-    format: owl
-    id: "sepio.owl"
-    name: SEPIO
-    product_file_size: 75985
-    product_url: http://purl.obolibrary.org/obo/sepio.owl
-    original_source:
-      - source: sepio
-        relation_type: prov:hadPrimarySource
-  - id: sepio.kg-bioportal
-    name: SEPIO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Scientific Evidence and Provenance Information Ontology (SEPIO), produced by KG-Bioportal from the BioPortal submission. The archive contains SEPIO_nodes.tsv and SEPIO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-7/SEPIO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: sepio
-        relation_type: prov:hadPrimarySource
-    node_count: 529
-    edge_count: 878
-    latest_version: '2023-06-13'
-repository: https://github.com/monarch-initiative/SEPIO-ontology
+- category: OntologyProduct
+  description: SEPIO
+  format: owl
+  id: sepio.owl
+  name: SEPIO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sepio
+  product_file_size: 75985
+  product_url: http://purl.obolibrary.org/obo/sepio.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Scientific Evidence and Provenance Information
+    Ontology (SEPIO), produced by KG-Bioportal from the BioPortal submission. The
+    archive contains SEPIO_nodes.tsv and SEPIO_edges.tsv.
+  edge_count: 878
+  format: kgx
+  id: sepio.kg-bioportal
+  latest_version: '2023-06-13'
+  name: SEPIO KGX graph (KG-Bioportal)
+  node_count: 529
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sepio
+  product_file_size: 26076
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-7/SEPIO.tar.gz
 publications:
-  - authors:
-      - Brush MH
-      - Shefchek K
-      - Haendel M
-    id: "url:http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf"
-    journal: CEUR Workshop Proceedings
-    preferred: true
-    title: 'SEPIO: A Semantic Model for the Integration and Analysis of Scientific Evidence'
-    year: "2016"
+- authors:
+  - Brush MH
+  - Shefchek K
+  - Haendel M
+  id: url:http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf
+  journal: CEUR Workshop Proceedings
+  preferred: true
+  title: 'SEPIO: A Semantic Model for the Integration and Analysis of Scientific Evidence'
+  year: '2016'
+repository: https://github.com/monarch-initiative/SEPIO-ontology
 ---
-
 ## Description
 
 An ontology for representing the provenance of scientific claims and the evidence that supports them.

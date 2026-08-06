@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Fr d ric Bastian
-  orcid: 0000-0002-9415-5104
   contact_details:
   - contact_type: email
     value: frederic.bastian@unil.ch
   - contact_type: github
     value: fbastian
+  label: Fr d ric Bastian
+  orcid: 0000-0002-9415-5104
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to capture confidence information about annotations.
 domains:
@@ -32,36 +32,36 @@ products:
   format: owl
   id: cio.owl
   name: cio.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cio
   product_file_size: 6187
   product_url: http://purl.obolibrary.org/obo/cio.owl
-  original_source:
-  - source: cio
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Confidence Information Ontology in OBO format
   format: obo
   id: cio.obo
   name: cio.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cio
   product_file_size: 3960
   product_url: http://purl.obolibrary.org/obo/cio.obo
-  original_source:
-  - source: cio
-    relation_type: prov:hadPrimarySource
-- id: cio.kg-bioportal
-  name: CIO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Confidence Information Ontology (CIO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains CIO_nodes.tsv
     and CIO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CIO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: cio
-    relation_type: prov:hadPrimarySource
-  node_count: 64
   edge_count: 129
-repository: https://github.com/BgeeDB/confidence-information-ontology
+  format: kgx
+  id: cio.kg-bioportal
+  name: CIO KGX graph (KG-Bioportal)
+  node_count: 64
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cio
+  product_file_size: 3599
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CIO.tar.gz
 publications:
 - authors:
   - Bastian FB
@@ -82,6 +82,7 @@ publications:
   title: 'The Confidence Information Ontology: a step towards a standard for asserting
     confidence in annotations'
   year: '2015'
+repository: https://github.com/BgeeDB/confidence-information-ontology
 ---
 ## Description
 

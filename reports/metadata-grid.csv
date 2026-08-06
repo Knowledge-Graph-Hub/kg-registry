@@ -156,6 +156,7 @@ cteno,active,PASS
 ctkp,active,PASS
 cto,active,PASS
 ctrp,active,PASS
+culture-knowledge-graph,active,PASS
 cureid,active,PASS
 cvdo,active,PASS
 cvx,active,PASS
@@ -249,11 +250,14 @@ epigraphdb,active,PASS
 epio,active,PASS
 epsd,active,PASS
 eqtlgen,active,PASS
+era-kg,active,PASS
 eram,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
 esgf,active,PASS
+eu-knowledge-graph,active,PASS
 eupathdb,active,PASS
+eurio,active,PASS
 evlncrnas,active,PASS
 evoweb,active,PASS
 exmo,active,PASS
@@ -409,6 +413,7 @@ jaspar,active,PASS
 kegg,active,PASS
 kentucky-cancer-registry,active,PASS
 kg-alzheimers,active,PASS
+kg-bioportal,active,PASS
 kg-covid-19,active,PASS
 kg-ebi-gene2pheno,active,PASS
 kg-enp,active,PASS

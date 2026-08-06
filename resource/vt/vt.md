@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Carissa Park
-  orcid: 0000-0002-2346-5201
   contact_details:
   - contact_type: email
     value: caripark@iastate.edu
   - contact_type: github
     value: caripark
+  label: Carissa Park
+  orcid: 0000-0002-2346-5201
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of traits covering vertebrates
 domains:
@@ -32,25 +32,26 @@ products:
   format: owl
   id: vt.owl
   name: vt.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vt
   product_file_size: 416669
   product_url: http://purl.obolibrary.org/obo/vt.owl
-  original_source:
-  - source: vt
-    relation_type: prov:hadPrimarySource
-- id: vt.kg-bioportal
-  name: VT KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Vertebrate Trait Ontology (VT), produced by KG-Bioportal
     from the BioPortal submission. The archive contains VT_nodes.tsv and VT_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VT.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: vt
-    relation_type: prov:hadPrimarySource
-  node_count: 4116
   edge_count: 4953
+  format: kgx
+  id: vt.kg-bioportal
   latest_version: '2026-07-23'
+  name: VT KGX graph (KG-Bioportal)
+  node_count: 4116
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 200324
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VT.tar.gz
 publications:
 - authors:
   - Carissa A Park

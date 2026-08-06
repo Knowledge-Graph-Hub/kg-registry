@@ -12,19 +12,19 @@ contacts:
 creation_date: '2026-08-06T00:00:00Z'
 description: The EURIO (EUropean Research Information Ontology) Knowledge Graph publishes
   CORDIS data about research projects funded by the European Union's framework programmes
-  for research and innovation - FP7, Horizon 2020, and Horizon Europe - as linked data.
-  It covers projects together with their grants, payments, and monetary amounts; the
-  organizations that participate in them and the roles those organizations play; and
-  project outputs including deliverables, publications, journal papers, and proceedings
+  for research and innovation - FP7, Horizon 2020, and Horizon Europe - as linked
+  data. It covers projects together with their grants, payments, and monetary amounts;
+  the organizations that participate in them and the roles those organizations play;
+  and project outputs including deliverables, publications, journal papers, and proceedings
   papers, alongside SKOS reference data for countries, funding schemes, programmes,
   and topics. When queried on 2026-08-06 the graph held 26,429,912 triples, including
-  80,208 projects, 72,534 organizations, and 696,156 results. Entities are minted in
-  the http://data.europa.eu/s66# namespace. The graph is published by the Publications
+  80,208 projects, 72,534 organizations, and 696,156 results. Entities are minted
+  in the http://data.europa.eu/s66# namespace. The graph is published by the Publications
   Office of the European Union both as a full dump and as per-entity named graph subsets,
   each available in RDF/XML, Turtle, N-Quads, N-Triples, and JSON-LD, and is queryable
-  through a public Virtuoso SPARQL endpoint on the CORDIS Datalab. Its schema, the EURIO
-  ontology, is aligned with EU ontologies such as DINGO and FRAPO and with widely used
-  vocabularies including schema.org and the W3C Organization Ontology.
+  through a public Virtuoso SPARQL endpoint on the CORDIS Datalab. Its schema, the
+  EURIO ontology, is aligned with EU ontologies such as DINGO and FRAPO and with widely
+  used vocabularies including schema.org and the W3C Organization Ontology.
 domains:
 - research funding
 - literature
@@ -48,8 +48,8 @@ products:
   product_url: https://cordis.europa.eu/datalab/sparql
 - category: GraphicalInterface
   description: CORDIS Datalab, the Publications Office's interface for exploring CORDIS
-    data, including the SPARQL query interface over the EURIO Knowledge Graph and its
-    catalogue of example queries.
+    data, including the SPARQL query interface over the EURIO Knowledge Graph and
+    its catalogue of example queries.
   format: http
   id: eurio.datalab
   name: CORDIS Datalab
@@ -58,12 +58,12 @@ products:
     source: eurio
   product_url: https://cordis.europa.eu/datalab/sparql-endpoint/en
 - category: GraphProduct
-  description: Full dump of the EURIO Knowledge Graph, containing all CORDIS data about
-    research projects funded under FP7, Horizon 2020, and Horizon Europe. Distributed
+  compression: zip
+  description: Full dump of the EURIO Knowledge Graph, containing all CORDIS data
+    about research projects funded under FP7, Horizon 2020, and Horizon Europe. Distributed
     as a zipped N-Quads file of approximately 1.19 GB; the same dump is also published
     in RDF/XML, Turtle, N-Triples, and JSON-LD. The edge count recorded here is the
     triple count reported by the live SPARQL endpoint on 2026-08-06.
-  compression: zip
   edge_count: 26429912
   format: nquads
   id: eurio.dump
@@ -71,53 +71,57 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: eurio
+  product_file_size: 1190300961
   product_url: https://cordis.europa.eu/data/cordis-EURIOKnowledgeGraph-nq.zip
 - category: GraphProduct
-  description: Projects named graph, the subset of the EURIO Knowledge Graph covering
-    all projects funded under the FP7, Horizon 2020, and Horizon Europe framework programmes.
-    Distributed as a zipped N-Quads file of approximately 373 MB, and also available
-    in RDF/XML, Turtle, N-Triples, and JSON-LD.
   compression: zip
+  description: Projects named graph, the subset of the EURIO Knowledge Graph covering
+    all projects funded under the FP7, Horizon 2020, and Horizon Europe framework
+    programmes. Distributed as a zipped N-Quads file of approximately 373 MB, and
+    also available in RDF/XML, Turtle, N-Triples, and JSON-LD.
   format: nquads
   id: eurio.projects-graph
   name: EURIO Projects Named Graph
   original_source:
   - relation_type: prov:hadPrimarySource
     source: eurio
+  product_file_size: 372749888
   product_url: https://cordis.europa.eu/data/cordis-projectNamedGraph-nq.zip
 - category: GraphProduct
-  description: Organisations named graph, the subset of the EURIO Knowledge Graph covering
-    the organizations participating in funded projects. Distributed as a zipped N-Quads
-    file of approximately 100 MB, and also available in RDF/XML, Turtle, N-Triples,
-    and JSON-LD.
   compression: zip
+  description: Organisations named graph, the subset of the EURIO Knowledge Graph
+    covering the organizations participating in funded projects. Distributed as a
+    zipped N-Quads file of approximately 100 MB, and also available in RDF/XML, Turtle,
+    N-Triples, and JSON-LD.
   format: nquads
   id: eurio.organisations-graph
   name: EURIO Organisations Named Graph
   original_source:
   - relation_type: prov:hadPrimarySource
     source: eurio
+  product_file_size: 100174043
   product_url: https://cordis.europa.eu/data/cordis-organisationNamedGraph-nq.zip
 - category: GraphProduct
+  compression: zip
   description: Results named graph, the subset of the EURIO Knowledge Graph covering
     project results, including deliverables and publications. Distributed as a zipped
     N-Quads file of approximately 577 MB, and also available in RDF/XML, Turtle, N-Triples,
     and JSON-LD.
-  compression: zip
   format: nquads
   id: eurio.results-graph
   name: EURIO Results Named Graph
   original_source:
   - relation_type: prov:hadPrimarySource
     source: eurio
+  product_file_size: 577116349
   product_url: https://cordis.europa.eu/data/cordis-resultNamedGraph-nq.zip
 - category: OntologyProduct
-  description: The EURIO (EUropean Research Information Ontology) ontology, which defines
-    the structure of the EURIO Knowledge Graph and its named graphs. Developed by CORDIS
-    on the basis of data about EU framework programme projects, following Semantic Web
-    standards, and aligned with EU ontologies such as DINGO and FRAPO as well as schema.org
-    and the W3C Organization Ontology. Published through EU Vocabularies at the Publications
-    Office.
+  description: The EURIO (EUropean Research Information Ontology) ontology, which
+    defines the structure of the EURIO Knowledge Graph and its named graphs. Developed
+    by CORDIS on the basis of data about EU framework programme projects, following
+    Semantic Web standards, and aligned with EU ontologies such as DINGO and FRAPO
+    as well as schema.org and the W3C Organization Ontology. Published through EU
+    Vocabularies at the Publications Office.
   format: owl
   id: eurio.ontology
   name: EURIO Ontology
@@ -141,11 +145,12 @@ synonyms:
 - EUropean Research Information Ontology Knowledge Graph
 - CORDIS EURIO Knowledge Graph
 warnings:
-- No license is stated for this data. The DCAT records on the EU Open Data Portal carry
-  no license field for the EURIO dataset or for its distributions, at either dataset
-  or distribution level, as verified through the data.europa.eu search API on 2026-08-06.
-  Reuse is presumably governed by the European Commission's general reuse policy, but
-  that should be confirmed against the CORDIS legal notice before the data is redistributed.
+- No license is stated for this data. The DCAT records on the EU Open Data Portal
+  carry no license field for the EURIO dataset or for its distributions, at either
+  dataset or distribution level, as verified through the data.europa.eu search API
+  on 2026-08-06. Reuse is presumably governed by the European Commission's general
+  reuse policy, but that should be confirmed against the CORDIS legal notice before
+  the data is redistributed.
 ---
 # EURIO Knowledge Graph
 

@@ -1740,8 +1740,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
 - category: GraphicalInterface
@@ -2989,7 +2987,7 @@ publications:
   - Mandal R
   - Karu N
   - Dambrova M
-  - Schiöth HB
+  - "Schi\xF6th HB"
   - Greiner R
   - Gautam V
   doi: 10.1093/nar/gkab1062

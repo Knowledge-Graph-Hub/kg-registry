@@ -386,20 +386,21 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
-- id: bfo.kg-bioportal
-  name: BFO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Basic Formal Ontology (BFO), produced by KG-Bioportal
     from the BioPortal submission. The archive contains BFO_nodes.tsv and BFO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BFO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: bfo
-    relation_type: prov:hadPrimarySource
-  node_count: 75
   edge_count: 115
+  format: kgx
+  id: bfo.kg-bioportal
   latest_version: '2.0'
+  name: BFO KGX graph (KG-Bioportal)
+  node_count: 75
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  product_file_size: 2371
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BFO.tar.gz
 publications: []
 repository: https://github.com/BFO-ontology/BFO
 ---

@@ -2,18 +2,19 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Wasila Dahdul
-    orcid: 0000-0003-3162-7490
-    contact_details:
-      - contact_type: email
-        value: wasila.dahdul@usd.edu
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: wasila.dahdul@usd.edu
+  label: Wasila Dahdul
+  orcid: 0000-0003-3162-7490
 creation_date: '2025-09-29T00:00:00Z'
-description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa
+description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended
+  to cover terms relevant to other taxa
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
 id: tao
 last_modified_date: '2026-08-06T00:00:00Z'
@@ -24,51 +25,53 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Teleost Anatomy Ontology
 products:
-  - category: OntologyProduct
-    description: Teleost Anatomy Ontology in OWL format
-    format: owl
-    id: tao.owl
-    name: tao.owl
-    product_file_size: 5063653
-    product_url: http://purl.obolibrary.org/obo/tao.owl
-    original_source:
-      - source: tao
-        relation_type: prov:hadPrimarySource
-  - id: tao.kg-bioportal
-    name: TAO KGX graph (KG-Bioportal)
-    category: GraphProduct
-    description: KGX TSV transform of Teleost Anatomy Ontology (TAO), produced by KG-Bioportal from the BioPortal submission. The archive contains TAO_nodes.tsv and TAO_edges.tsv.
-    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAO.tar.gz
-    format: kgx
-    compression: targz
-    original_source:
-      - source: tao
-        relation_type: prov:hadPrimarySource
-    node_count: 3487
-    edge_count: 5423
-    latest_version: '2012-08-10'
-taxon:
-  - NCBITaxon:32443
+- category: OntologyProduct
+  description: Teleost Anatomy Ontology in OWL format
+  format: owl
+  id: tao.owl
+  name: tao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tao
+  product_file_size: 5063653
+  product_url: http://purl.obolibrary.org/obo/tao.owl
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of Teleost Anatomy Ontology (TAO), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains TAO_nodes.tsv and TAO_edges.tsv.
+  edge_count: 5423
+  format: kgx
+  id: tao.kg-bioportal
+  latest_version: '2012-08-10'
+  name: TAO KGX graph (KG-Bioportal)
+  node_count: 3487
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tao
+  product_file_size: 196671
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAO.tar.gz
 publications:
-  - authors:
-      - Dahdul WM
-      - Lundberg JG
-      - Midford PE
-      - Balhoff JP
-      - Lapp H
-      - Vision TJ
-      - Haendel MA
-      - Westerfield M
-      - Mabee PM
-    doi: 10.1093/sysbio/syq013
-    id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
-    journal: Syst Biol
-    title: 'The teleost anatomy ontology: anatomical representation for the genomics age'
-    year: '2010'
+- authors:
+  - Dahdul WM
+  - Lundberg JG
+  - Midford PE
+  - Balhoff JP
+  - Lapp H
+  - Vision TJ
+  - Haendel MA
+  - Westerfield M
+  - Mabee PM
+  doi: 10.1093/sysbio/syq013
+  id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
+  journal: Syst Biol
+  title: 'The teleost anatomy ontology: anatomical representation for the genomics
+    age'
+  year: '2010'
+taxon:
+- NCBITaxon:32443
 use_instead:
-  - uberon
+- uberon
 ---
-
 ## Description
 
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa

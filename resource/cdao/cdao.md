@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
 creation_date: '2025-09-29T00:00:00Z'
 description: a formalization of concepts and relations relevant to evolutionary comparative
   analysis
@@ -33,27 +33,27 @@ products:
   format: owl
   id: cdao.owl
   name: cdao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdao
   product_file_size: 10952
   product_url: http://purl.obolibrary.org/obo/cdao.owl
-  original_source:
-  - source: cdao
-    relation_type: prov:hadPrimarySource
-- id: cdao.kg-bioportal
-  name: CDAO KGX graph (KG-Bioportal)
-  category: GraphProduct
+- category: GraphProduct
+  compression: targz
   description: KGX TSV transform of Comparative Data Analysis Ontology (CDAO), produced
     by KG-Bioportal from the BioPortal submission. The archive contains CDAO_nodes.tsv
     and CDAO_edges.tsv.
-  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDAO.tar.gz
-  format: kgx
-  compression: targz
-  original_source:
-  - source: cdao
-    relation_type: prov:hadPrimarySource
-  node_count: 238
   edge_count: 346
+  format: kgx
+  id: cdao.kg-bioportal
   latest_version: $Revision$
-repository: https://github.com/evoinfo/cdao
+  name: CDAO KGX graph (KG-Bioportal)
+  node_count: 238
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdao
+  product_file_size: 8115
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDAO.tar.gz
 publications:
 - authors:
   - Francisco Prosdocimi
@@ -66,6 +66,7 @@ publications:
   journal: Evolutionary Bioinformatics
   title: Initial Implementation of a Comparative Data Analysis Ontology
   year: '2009'
+repository: https://github.com/evoinfo/cdao
 ---
 ## Description
 

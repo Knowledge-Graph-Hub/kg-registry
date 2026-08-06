@@ -118,8 +118,6 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 406 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 406 error
     when accessing file'
 publications:
@@ -166,7 +164,7 @@ publications:
   year: '2015'
 - authors:
   - Emily Jane Mctavish
-  - Luna Luisa Sánchez-Reyes
+  - "Luna Luisa S\xE1nchez-Reyes"
   - Mark T Holder
   doi: 10.1093/sysbio/syab033
   id: doi:10.1093/sysbio/syab033
