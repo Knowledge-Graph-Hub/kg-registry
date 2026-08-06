@@ -1998,6 +1998,15 @@ entries:
     source_path: resource/eqtlgen/eqtlgen.md
     status: valid
     warnings: []
+  resource/era-kg/era-kg.md#publication[0]#DOI:10.1007/978-3-032-09530-5_23:
+    checked_at: '2026-08-06T17:58:17Z'
+    errors: []
+    fingerprint: f7297ab1b861b997ead9908ec5e45389456d364520bff4584685b58e2c53a68d
+    publication_index: 0
+    reference_id: DOI:10.1007/978-3-032-09530-5_23
+    source_path: resource/era-kg/era-kg.md
+    status: valid
+    warnings: []
   resource/eram/eram.md#publication[0]#DOI:10.1093/nar/gkx1062:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
