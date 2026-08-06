@@ -26,8 +26,8 @@ description: The EURIO (EUropean Research Information Ontology) Knowledge Graph 
   ontology, is aligned with EU ontologies such as DINGO and FRAPO and with widely used
   vocabularies including schema.org and the W3C Organization Ontology.
 domains:
+- research funding
 - literature
-- general
 homepage_url: https://cordis.europa.eu/datalab
 id: eurio
 last_modified_date: '2026-08-06T00:00:00Z'

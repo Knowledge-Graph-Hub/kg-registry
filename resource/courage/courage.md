@@ -28,7 +28,7 @@ description: The COURAGE knowledge graph is the linked data registry produced by
   the dataset in CIDOC-CRM and validated the conversion with SPARQL and SHACL, and
   another linked COURAGE entities to Wikidata.
 domains:
-- other
+- humanities and cultural heritage
 homepage_url: https://cultural-opposition.eu/
 id: courage
 last_modified_date: '2026-08-06T00:00:00Z'

@@ -6,6 +6,7 @@ description: Periodic full dump of the infrastructure knowledge graph, archived 
   earlier releases were compressed N-Quads. The edge count recorded here is the triple
   count reported by the live RINF+ repository on 2026-08-06.
 edge_count: 53716816
+format: trig
 id: era-kg.dump
 latest_version: v9.0
 license:
@@ -16,8 +17,5 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: era-kg
 product_url: https://doi.org/10.5281/zenodo.14605743
-warnings:
-- The current release is serialized as TriG, for which the registry format enum has
-  no value, so no format is recorded for this product.
 layout: product_detail
 ---

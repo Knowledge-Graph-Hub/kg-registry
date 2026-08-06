@@ -93,6 +93,7 @@ body:
         - environment
         - general
         - genomics
+        - humanities and cultural heritage
         - immunology
         - information technology
         - literature
@@ -108,8 +109,10 @@ body:
         - precision medicine
         - proteomics
         - public health
+        - research funding
         - systems biology
         - toxicology
+        - transportation
     validations:
       required: false
 
@@ -225,6 +228,7 @@ body:
         - shacl
         - shex
         - sssom
+        - trig
         - tsv
         - ttl
         - xml

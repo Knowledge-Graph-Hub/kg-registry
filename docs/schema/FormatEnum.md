@@ -64,6 +64,7 @@ URI: [kgr:FormatEnum](https://w3id.org/bridge2ai/data-sheets-schema/FormatEnum)
 | stockholm | edam:1961 | The Stockholm format, a multiple sequence alignment format used in bioinforma... |
 | svg | edam:3604 | The Scalable Vector Graphics (SVG) format, an XML-based format for describing... |
 | trapi-jsonl | https://raw.githubusercontent.com/NCATSTranslator/ReasonerAPI/refs/heads/master/TranslatorReasonerAPI.yaml | The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for ... |
+| trig | None | The TriG format, a textual syntax for RDF datasets. It extends Turtle with th... |
 | tsv | edam:3475 | The Tab-Separated Values (TSV) format |
 | ttl | edam:3255 | The Turtle (TTL) format, a textual syntax for RDF that allows RDF graphs to b... |
 | txt | None | The Plain Text (TXT) format, a simple text format for representing unformatte... |

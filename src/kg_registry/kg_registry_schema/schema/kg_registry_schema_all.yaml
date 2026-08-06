@@ -448,6 +448,13 @@ enums:
         description: The study of genomes, including genome structure, evolution,
           function, mapping, and editing.
         meaning: MESH:D023281
+      humanities and cultural heritage:
+        text: humanities and cultural heritage
+        description: The humanities and the cultural heritage domain, including art
+          history, architecture, musicology, media and performing arts, archaeology,
+          and history, along with the collections, archives, and museum holdings that
+          document them.
+        meaning: MESH:D006809
       immunology:
         text: immunology
         description: The study of the immune system, including its structure and function,
@@ -519,6 +526,12 @@ enums:
           and their communities, including epidemiology, population health, and the
           social determinants of health.
         meaning: MESH:D011634
+      research funding:
+        text: research funding
+        description: The funding and administration of research, including research
+          projects, grants and their payments, funding programmes, the organizations
+          that fund or carry out research, and the outputs attributed to that funding.
+        meaning: NCIT:C17090
       systems biology:
         text: systems biology
         description: The computational and mathematical analysis of complex biological
@@ -528,6 +541,12 @@ enums:
         text: toxicology
         description: The study of the adverse effects of chemicals on living organisms.
         meaning: MESH:D014116
+      transportation:
+        text: transportation
+        description: Transportation and transport infrastructure, including railway,
+          road, air, and maritime networks, the assets and parameters that describe
+          them, and the movement of people and goods over them.
+        meaning: MESH:D014186
       stub:
         text: stub
         description: This is not a domain, but rather a category for resources that
@@ -896,6 +915,11 @@ enums:
         description: The Translator Reasoner API (TRAPI) format, which is a JSON Lines
           format for TRAPI responses.
         meaning: https://raw.githubusercontent.com/NCATSTranslator/ReasonerAPI/refs/heads/master/TranslatorReasonerAPI.yaml
+      trig:
+        text: trig
+        description: The TriG format, a textual syntax for RDF datasets. It extends
+          Turtle with the ability to write multiple named graphs in a single document,
+          standing to Turtle as N-Quads stands to N-Triples.
       tsv:
         text: tsv
         description: The Tab-Separated Values (TSV) format. It has rows of data separated

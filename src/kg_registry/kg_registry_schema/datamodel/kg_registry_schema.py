@@ -320,6 +320,10 @@ class FormatEnum(str, Enum):
     """
     The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.
     """
+    trig = "trig"
+    """
+    The TriG format, a textual syntax for RDF datasets. It extends Turtle with the ability to write multiple named graphs in a single document, standing to Turtle as N-Quads stands to N-Triples.
+    """
     tsv = "tsv"
     """
     The Tab-Separated Values (TSV) format. It has rows of data separated by newlines, and columns separated by tabs.
@@ -510,6 +514,10 @@ class DomainEnum(str, Enum):
     """
     The study of genomes, including genome structure, evolution, function, mapping, and editing.
     """
+    humanities_and_cultural_heritage = "humanities and cultural heritage"
+    """
+    The humanities and the cultural heritage domain, including art history, architecture, musicology, media and performing arts, archaeology, and history, along with the collections, archives, and museum holdings that document them.
+    """
     immunology = "immunology"
     """
     The study of the immune system, including its structure and function, disorders, and therapeutic applications.
@@ -570,6 +578,10 @@ class DomainEnum(str, Enum):
     """
     The science of protecting and improving the health of people and their communities, including epidemiology, population health, and the social determinants of health.
     """
+    research_funding = "research funding"
+    """
+    The funding and administration of research, including research projects, grants and their payments, funding programmes, the organizations that fund or carry out research, and the outputs attributed to that funding.
+    """
     systems_biology = "systems biology"
     """
     The computational and mathematical analysis of complex biological systems and their interactions.
@@ -577,6 +589,10 @@ class DomainEnum(str, Enum):
     toxicology = "toxicology"
     """
     The study of the adverse effects of chemicals on living organisms.
+    """
+    transportation = "transportation"
+    """
+    Transportation and transport infrastructure, including railway, road, air, and maritime networks, the assets and parameters that describe them, and the movement of people and goods over them.
     """
     stub = "stub"
     """

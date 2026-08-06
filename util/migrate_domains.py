@@ -30,10 +30,11 @@ MAPPING = {
 ALLOWED = {
     "agriculture", "anatomy and development", "biological systems", "biomedical",
     "chemistry and biochemistry", "clinical", "drug discovery", "environment",
-    "general", "genomics", "immunology", "information technology", "literature",
-    "medical imaging", "microbiology", "neuroscience", "nutrition", "organisms",
-    "other", "pathways", "pharmacology", "phenotype", "precision medicine",
-    "proteomics", "public health", "systems biology", "toxicology", "stub",
+    "general", "genomics", "humanities and cultural heritage", "immunology",
+    "information technology", "literature", "medical imaging", "microbiology",
+    "neuroscience", "nutrition", "organisms", "other", "pathways", "pharmacology",
+    "phenotype", "precision medicine", "proteomics", "public health",
+    "research funding", "systems biology", "toxicology", "transportation", "stub",
 }
 
 ITEM_RE = re.compile(r"^(?P<indent>\s*)-\s+(?P<val>.+?)\s*$")

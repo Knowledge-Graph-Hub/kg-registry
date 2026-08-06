@@ -18,6 +18,7 @@ description: Homeland Infrastructure Foundation-Level Data (HIFLD) is a U.S. Dep
   APIs. HIFLD is an upstream source of the KnowWhereGraph.
 domains:
 - public health
+- transportation
 - general
 - information technology
 homepage_url: https://hifld-geoplatform.hub.arcgis.com/

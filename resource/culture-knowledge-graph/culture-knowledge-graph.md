@@ -27,7 +27,7 @@ description: The Culture Knowledge Graph (CKG) is the integrating linked open da
   2020, provides the semantic backbone. The graph is reported to hold roughly 106 million
   RDF triples and is queryable through a public SPARQL endpoint.
 domains:
-- other
+- humanities and cultural heritage
 homepage_url: https://nfdi4culture.de/services/details/culture-knowledge-graph.html
 id: culture-knowledge-graph
 last_modified_date: '2026-08-06T00:00:00Z'
