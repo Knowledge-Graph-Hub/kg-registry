@@ -119794,8 +119794,7 @@ resources:
   layout: resource_detail
   name: NASA Global Change Master Directory (GCMD) Keywords
   products:
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: The GCMD Keyword Viewer provides browsable access to NASA's hierarchical
       Earth science controlled vocabulary, including science keywords, instruments,
       platforms, providers, and locations.
@@ -172103,8 +172102,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 406 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-07-30: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
       to URL'
   - category: DocumentationProduct
@@ -186790,7 +186787,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-08-06T21:57:19Z'
+  last_modified_date: '2026-08-06T22:32:10Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -225734,8 +225731,7 @@ resources:
     label: NASA Open Data Policy (U.S. Government work, public domain)
   name: NASA GES DISC (Goddard Earth Sciences Data and Information Services Center)
   products:
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: The GES DISC data archive, providing discovery, access, and download
       of NASA Earth science datasets (atmospheric composition, water and energy cycles,
       precipitation, and atmospheric dynamics) through the dataset catalog, OPeNDAP,
@@ -271997,8 +271993,7 @@ resources:
     label: BSD-3-Clause
   name: Phenopacket Store
   products:
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: Versioned release of the Phenopacket Store collection of GA4GH phenopackets
       for rare and Mendelian disease cases, archived on Zenodo.
     format: json
@@ -339703,6 +339698,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -339729,6 +339726,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Tab-delimited table mapping systems, subfamilies, and families to
       superfamilies. The URL ends in .py, but this endpoint serves data, not Python
@@ -339756,6 +339755,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Tab-delimited annotation mapping table for TC systems. The URL ends
       in .py, but this endpoint serves data, not Python source code.
@@ -339771,6 +339772,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Tab-delimited structure mapping table for TC systems. The URL ends
       in .py, but this endpoint serves data, not Python source code.
@@ -339786,6 +339789,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Tab-delimited protein family mapping table for TC systems. The URL
       ends in .py, but this endpoint serves data, not Python source code.
@@ -339801,6 +339806,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -380164,8 +380171,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
       when accessing file'
   publications: []
@@ -381301,8 +381306,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
       when accessing file'
   publications: []
@@ -382093,8 +382096,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
       when accessing file'
   publications: []
@@ -382264,8 +382265,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -382280,8 +382279,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-07-30: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
       when accessing file'
   publications: []

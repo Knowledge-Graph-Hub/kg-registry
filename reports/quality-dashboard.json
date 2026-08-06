@@ -16083,7 +16083,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-08-06T22:06:34Z",
+  "generated_at": "2026-08-06T22:42:10Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 159,
     "with_evaluation_page": 127,
@@ -16091,10 +16091,10 @@
   },
   "links": {
     "broken_urls": 272,
-    "cache_hits": 4295,
+    "cache_hits": 4566,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 4294,
-    "live_checked_urls": 271,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 4566,
     "unchecked_urls": 0

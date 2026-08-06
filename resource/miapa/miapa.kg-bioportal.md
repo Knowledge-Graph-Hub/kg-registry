@@ -11,6 +11,7 @@ node_count: 88
 original_source:
 - relation_type: prov:hadPrimarySource
   source: miapa
+product_file_size: 2775
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIAPA.tar.gz
 layout: product_detail
 ---

@@ -13,6 +13,7 @@ node_count: 1149
 original_source:
 - relation_type: prov:hadPrimarySource
   source: xlmod
+product_file_size: 79721
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XLMOD.tar.gz
 layout: product_detail
 ---

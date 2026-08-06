@@ -13,6 +13,7 @@ node_count: 7597
 original_source:
 - relation_type: prov:hadPrimarySource
   source: prefer
+product_file_size: 698733
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PREFER.tar.gz
 layout: product_detail
 ---

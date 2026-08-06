@@ -13,6 +13,7 @@ node_count: 9032
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pato
+product_file_size: 804645
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PATO.tar.gz
 layout: product_detail
 ---

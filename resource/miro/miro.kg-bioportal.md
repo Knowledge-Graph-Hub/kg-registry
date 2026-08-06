@@ -13,6 +13,7 @@ node_count: 4450
 original_source:
 - relation_type: prov:hadPrimarySource
   source: miro
+product_file_size: 72930
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIRO.tar.gz
 layout: product_detail
 ---

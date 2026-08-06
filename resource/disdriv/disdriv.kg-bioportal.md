@@ -13,6 +13,7 @@ node_count: 99
 original_source:
 - relation_type: prov:hadPrimarySource
   source: disdriv
+product_file_size: 9343
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DISDRIV.tar.gz
 layout: product_detail
 ---

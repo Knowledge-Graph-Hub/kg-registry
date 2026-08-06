@@ -13,6 +13,7 @@ node_count: 10962
 original_source:
 - relation_type: prov:hadPrimarySource
   source: genepio
+product_file_size: 607503
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENEPIO.tar.gz
 layout: product_detail
 ---

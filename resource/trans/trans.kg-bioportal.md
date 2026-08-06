@@ -13,6 +13,7 @@ node_count: 53
 original_source:
 - relation_type: prov:hadPrimarySource
   source: trans
+product_file_size: 2564
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PTRANS.tar.gz
 layout: product_detail
 ---

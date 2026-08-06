@@ -12,6 +12,7 @@ node_count: 1589
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ico
+product_file_size: 99655
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ICO.tar.gz
 layout: product_detail
 ---

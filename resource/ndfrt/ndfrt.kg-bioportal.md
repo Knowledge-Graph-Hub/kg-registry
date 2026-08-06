@@ -13,6 +13,7 @@ node_count: 31362
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ndfrt
+product_file_size: 337669
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VANDF.tar.gz
 layout: product_detail
 ---

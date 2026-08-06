@@ -12,6 +12,7 @@ node_count: 10304
 original_source:
 - relation_type: prov:hadPrimarySource
   source: txpo
+product_file_size: 798810
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TXPO.tar.gz
 layout: product_detail
 ---

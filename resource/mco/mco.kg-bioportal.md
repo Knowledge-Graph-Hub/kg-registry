@@ -12,6 +12,7 @@ node_count: 3561
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mco
+product_file_size: 212864
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCO.tar.gz
 layout: product_detail
 ---

@@ -12,6 +12,7 @@ node_count: 1044
 original_source:
 - relation_type: prov:hadPrimarySource
   source: symp
+product_file_size: 36741
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SYMP.tar.gz
 layout: product_detail
 ---

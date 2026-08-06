@@ -12,6 +12,7 @@ node_count: 861
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gallont
+product_file_size: 40518
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GALLONT.tar.gz
 layout: product_detail
 ---

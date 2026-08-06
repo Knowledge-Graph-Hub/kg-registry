@@ -11,6 +11,7 @@ node_count: 461
 original_source:
 - relation_type: prov:hadPrimarySource
   source: aeo
+product_file_size: 18041
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AEO.tar.gz
 layout: product_detail
 ---

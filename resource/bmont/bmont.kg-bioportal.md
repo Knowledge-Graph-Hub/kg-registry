@@ -12,6 +12,7 @@ node_count: 1222
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bmont
+product_file_size: 81076
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BMONT.tar.gz
 layout: product_detail
 ---

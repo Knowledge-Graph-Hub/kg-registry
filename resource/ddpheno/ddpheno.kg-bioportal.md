@@ -12,6 +12,7 @@ node_count: 1399
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ddpheno
+product_file_size: 30312
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DDPHENO.tar.gz
 layout: product_detail
 ---

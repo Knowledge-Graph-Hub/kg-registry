@@ -9,6 +9,7 @@ name: KG-Bioportal Transform Manifest
 original_source:
 - relation_type: prov:hadPrimarySource
   source: kg-bioportal
+product_file_size: 341106
 product_url: https://github.com/ncbo/kg-bioportal/releases/latest/download/onto_stats.yaml
 secondary_source:
 - relation_type: prov:wasDerivedFrom

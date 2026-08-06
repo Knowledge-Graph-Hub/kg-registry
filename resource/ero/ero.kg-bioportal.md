@@ -13,6 +13,7 @@ node_count: 4384
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ero
+product_file_size: 251982
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ERO.tar.gz
 layout: product_detail
 ---

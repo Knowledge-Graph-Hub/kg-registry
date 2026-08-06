@@ -12,6 +12,7 @@ node_count: 4790
 original_source:
 - relation_type: prov:hadPrimarySource
   source: planp
+product_file_size: 336377
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANP.tar.gz
 layout: product_detail
 ---

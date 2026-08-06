@@ -13,6 +13,7 @@ node_count: 19455
 original_source:
 - relation_type: prov:hadPrimarySource
   source: emap
+product_file_size: 899044
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EMAP.tar.gz
 layout: product_detail
 ---

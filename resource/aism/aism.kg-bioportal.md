@@ -13,6 +13,7 @@ node_count: 8584
 original_source:
 - relation_type: prov:hadPrimarySource
   source: aism
+product_file_size: 865456
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AISM.tar.gz
 layout: product_detail
 ---

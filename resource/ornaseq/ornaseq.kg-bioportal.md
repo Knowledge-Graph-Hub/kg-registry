@@ -12,6 +12,7 @@ node_count: 203
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ornaseq
+product_file_size: 14003
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ORNASEQ.tar.gz
 layout: product_detail
 ---

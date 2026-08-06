@@ -11,6 +11,7 @@ node_count: 1703
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mi
+product_file_size: 136568
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MI.tar.gz
 layout: product_detail
 ---

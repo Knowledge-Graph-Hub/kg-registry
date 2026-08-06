@@ -12,6 +12,7 @@ node_count: 605
 original_source:
 - relation_type: prov:hadPrimarySource
   source: glycordf
+product_file_size: 11127
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCORDF.tar.gz
 layout: product_detail
 ---

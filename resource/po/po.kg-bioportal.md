@@ -12,6 +12,7 @@ node_count: 2073
 original_source:
 - relation_type: prov:hadPrimarySource
   source: po
+product_file_size: 110771
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PO.tar.gz
 layout: product_detail
 ---

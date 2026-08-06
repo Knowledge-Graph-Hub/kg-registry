@@ -12,6 +12,7 @@ node_count: 8323
 original_source:
 - relation_type: prov:hadPrimarySource
   source: envo
+product_file_size: 542367
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ENVO.tar.gz
 layout: product_detail
 ---

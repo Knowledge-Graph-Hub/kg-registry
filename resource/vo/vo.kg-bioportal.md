@@ -12,6 +12,7 @@ node_count: 15915
 original_source:
 - relation_type: prov:hadPrimarySource
   source: vo
+product_file_size: 2730157
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VO.tar.gz
 layout: product_detail
 ---

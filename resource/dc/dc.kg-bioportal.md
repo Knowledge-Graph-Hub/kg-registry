@@ -11,6 +11,7 @@ node_count: 38
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dc
+product_file_size: 2735
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DC.tar.gz
 layout: product_detail
 ---

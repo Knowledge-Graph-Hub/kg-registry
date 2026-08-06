@@ -13,6 +13,7 @@ node_count: 896
 original_source:
 - relation_type: prov:hadPrimarySource
   source: fbbi
+product_file_size: 28919
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FBbi.tar.gz
 layout: product_detail
 ---

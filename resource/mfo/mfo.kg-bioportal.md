@@ -12,6 +12,7 @@ node_count: 4374
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mfo
+product_file_size: 177766
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFO.tar.gz
 layout: product_detail
 ---

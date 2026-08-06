@@ -12,6 +12,7 @@ node_count: 1234
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ro
+product_file_size: 62349
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOREL.tar.gz
 layout: product_detail
 ---

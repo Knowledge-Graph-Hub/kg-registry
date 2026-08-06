@@ -13,6 +13,7 @@ node_count: 7552
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obi
+product_file_size: 578003
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBI.tar.gz
 layout: product_detail
 ---

@@ -12,6 +12,7 @@ node_count: 64
 original_source:
 - relation_type: prov:hadPrimarySource
   source: olatdv
+product_file_size: 10564
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OLATDV.tar.gz
 layout: product_detail
 ---

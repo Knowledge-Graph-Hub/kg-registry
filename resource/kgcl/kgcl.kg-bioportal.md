@@ -13,6 +13,7 @@ node_count: 218
 original_source:
 - relation_type: prov:hadPrimarySource
   source: kgcl
+product_file_size: 15365
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/KGCL.tar.gz
 layout: product_detail
 ---

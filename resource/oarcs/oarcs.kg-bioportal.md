@@ -13,6 +13,7 @@ node_count: 652
 original_source:
 - relation_type: prov:hadPrimarySource
   source: oarcs
+product_file_size: 19468
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OARCS.tar.gz
 layout: product_detail
 ---

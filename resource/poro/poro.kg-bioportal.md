@@ -12,6 +12,7 @@ node_count: 944
 original_source:
 - relation_type: prov:hadPrimarySource
   source: poro
+product_file_size: 38450
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PORO.tar.gz
 layout: product_detail
 ---

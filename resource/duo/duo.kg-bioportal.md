@@ -11,6 +11,7 @@ node_count: 316
 original_source:
 - relation_type: prov:hadPrimarySource
   source: duo
+product_file_size: 4908
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DUO.tar.gz
 layout: product_detail
 ---

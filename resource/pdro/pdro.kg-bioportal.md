@@ -13,6 +13,7 @@ node_count: 649
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pdro
+product_file_size: 36570
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PDRO.tar.gz
 layout: product_detail
 ---

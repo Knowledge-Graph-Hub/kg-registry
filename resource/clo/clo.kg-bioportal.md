@@ -12,6 +12,7 @@ node_count: 48410
 original_source:
 - relation_type: prov:hadPrimarySource
   source: clo
+product_file_size: 1646060
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLO.tar.gz
 layout: product_detail
 ---

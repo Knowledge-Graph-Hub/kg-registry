@@ -12,6 +12,7 @@ node_count: 3203
 original_source:
 - relation_type: prov:hadPrimarySource
   source: idomal
+product_file_size: 157187
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IDOMAL.tar.gz
 layout: product_detail
 ---

@@ -13,6 +13,7 @@ node_count: 1045
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mo
+product_file_size: 18675
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/MO.tar.gz
 layout: product_detail
 ---

@@ -12,6 +12,7 @@ node_count: 58680
 original_source:
 - relation_type: prov:hadPrimarySource
   source: flopo
+product_file_size: 2441725
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/FLOPO.tar.gz
 layout: product_detail
 ---

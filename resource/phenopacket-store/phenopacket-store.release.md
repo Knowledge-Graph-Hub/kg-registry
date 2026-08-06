@@ -9,8 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: phenopacket-store
 product_url: https://doi.org/10.5281/zenodo.13168726
-warnings:
-- File was not able to be retrieved when checked on 2026-08-06_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

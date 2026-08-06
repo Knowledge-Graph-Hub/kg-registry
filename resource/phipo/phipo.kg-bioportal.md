@@ -13,6 +13,7 @@ node_count: 12086
 original_source:
 - relation_type: prov:hadPrimarySource
   source: phipo
+product_file_size: 1095286
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PHIPO.tar.gz
 layout: product_detail
 ---

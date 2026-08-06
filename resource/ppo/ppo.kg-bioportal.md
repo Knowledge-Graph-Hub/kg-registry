@@ -12,6 +12,7 @@ node_count: 921
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ppo
+product_file_size: 48581
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PPO.tar.gz
 layout: product_detail
 ---

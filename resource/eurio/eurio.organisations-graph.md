@@ -11,6 +11,7 @@ name: EURIO Organisations Named Graph
 original_source:
 - relation_type: prov:hadPrimarySource
   source: eurio
+product_file_size: 100174043
 product_url: https://cordis.europa.eu/data/cordis-organisationNamedGraph-nq.zip
 layout: product_detail
 ---

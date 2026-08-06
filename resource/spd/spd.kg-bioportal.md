@@ -12,6 +12,7 @@ node_count: 853
 original_source:
 - relation_type: prov:hadPrimarySource
   source: spd
+product_file_size: 50892
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SPD.tar.gz
 layout: product_detail
 ---

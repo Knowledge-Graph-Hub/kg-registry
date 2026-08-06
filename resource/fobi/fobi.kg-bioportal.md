@@ -12,6 +12,7 @@ node_count: 1359
 original_source:
 - relation_type: prov:hadPrimarySource
   source: fobi
+product_file_size: 177125
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FOBI.tar.gz
 layout: product_detail
 ---

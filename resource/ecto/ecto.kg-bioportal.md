@@ -13,6 +13,7 @@ node_count: 21399
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ecto
+product_file_size: 1733738
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECTO.tar.gz
 layout: product_detail
 ---

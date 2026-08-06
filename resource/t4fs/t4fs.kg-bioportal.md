@@ -12,6 +12,7 @@ node_count: 675
 original_source:
 - relation_type: prov:hadPrimarySource
   source: t4fs
+product_file_size: 52296
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/T4FS.tar.gz
 layout: product_detail
 ---

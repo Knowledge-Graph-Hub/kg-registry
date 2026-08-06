@@ -13,6 +13,7 @@ node_count: 6111
 original_source:
 - relation_type: prov:hadPrimarySource
   source: slso
+product_file_size: 304513
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SLSO.tar.gz
 layout: product_detail
 ---

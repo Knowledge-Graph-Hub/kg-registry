@@ -13,6 +13,7 @@ node_count: 1200
 original_source:
 - relation_type: prov:hadPrimarySource
   source: vhog
+product_file_size: 69953
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VHOG.tar.gz
 layout: product_detail
 ---

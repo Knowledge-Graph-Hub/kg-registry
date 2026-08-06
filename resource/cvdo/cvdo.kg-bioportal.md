@@ -13,6 +13,7 @@ node_count: 1023
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cvdo
+product_file_size: 44973
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CVDO.tar.gz
 layout: product_detail
 ---

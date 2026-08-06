@@ -13,6 +13,7 @@ node_count: 5384
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hao
+product_file_size: 165296
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HAO.tar.gz
 layout: product_detail
 ---

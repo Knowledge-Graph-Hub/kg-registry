@@ -13,6 +13,7 @@ node_count: 445
 original_source:
 - relation_type: prov:hadPrimarySource
   source: adw
+product_file_size: 9599
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/ADW.tar.gz
 layout: product_detail
 ---

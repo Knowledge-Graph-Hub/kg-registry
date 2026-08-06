@@ -12,6 +12,7 @@ node_count: 6088
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bao
+product_file_size: 106171
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BAO.tar.gz
 layout: product_detail
 ---

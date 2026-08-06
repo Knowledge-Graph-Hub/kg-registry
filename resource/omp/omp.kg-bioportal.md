@@ -13,6 +13,7 @@ node_count: 2445
 original_source:
 - relation_type: prov:hadPrimarySource
   source: omp
+product_file_size: 90931
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMP.tar.gz
 layout: product_detail
 ---

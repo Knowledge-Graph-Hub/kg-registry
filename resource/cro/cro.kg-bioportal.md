@@ -12,6 +12,7 @@ node_count: 138
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cro
+product_file_size: 7890
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CRO.tar.gz
 layout: product_detail
 ---

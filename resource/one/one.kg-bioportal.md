@@ -13,6 +13,7 @@ node_count: 125
 original_source:
 - relation_type: prov:hadPrimarySource
   source: one
+product_file_size: 6653
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONE.tar.gz
 layout: product_detail
 ---

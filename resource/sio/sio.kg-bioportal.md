@@ -13,6 +13,7 @@ node_count: 1897
 original_source:
 - relation_type: prov:hadPrimarySource
   source: sio
+product_file_size: 95819
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SIO.tar.gz
 layout: product_detail
 ---

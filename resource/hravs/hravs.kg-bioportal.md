@@ -12,6 +12,7 @@ node_count: 969
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hravs
+product_file_size: 73427
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HRAVS.tar.gz
 layout: product_detail
 ---

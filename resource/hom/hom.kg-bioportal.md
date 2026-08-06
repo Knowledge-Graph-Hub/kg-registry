@@ -13,6 +13,7 @@ node_count: 86
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hom
+product_file_size: 3823
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HOM.tar.gz
 layout: product_detail
 ---

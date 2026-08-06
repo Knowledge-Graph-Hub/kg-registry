@@ -12,6 +12,7 @@ node_count: 16717
 original_source:
 - relation_type: prov:hadPrimarySource
   source: doid
+product_file_size: 1167920
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/DOID.tar.gz
 layout: product_detail
 ---

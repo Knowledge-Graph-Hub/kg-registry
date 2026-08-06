@@ -13,6 +13,7 @@ node_count: 40
 original_source:
 - relation_type: prov:hadPrimarySource
   source: faldo
+product_file_size: 1346
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FALDO.tar.gz
 layout: product_detail
 ---

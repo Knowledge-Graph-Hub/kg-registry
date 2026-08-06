@@ -13,6 +13,7 @@ node_count: 34
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mfomd
+product_file_size: 853
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFOMD.tar.gz
 layout: product_detail
 ---

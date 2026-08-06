@@ -12,6 +12,7 @@ node_count: 95
 original_source:
 - relation_type: prov:hadPrimarySource
   source: fire
+product_file_size: 3152
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIRE.tar.gz
 layout: product_detail
 ---

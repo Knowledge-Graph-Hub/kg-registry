@@ -13,6 +13,7 @@ node_count: 195
 original_source:
 - relation_type: prov:hadPrimarySource
   source: zea
+product_file_size: 23487
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZEA.tar.gz
 layout: product_detail
 ---

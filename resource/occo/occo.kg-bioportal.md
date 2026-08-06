@@ -12,6 +12,7 @@ node_count: 1905
 original_source:
 - relation_type: prov:hadPrimarySource
   source: occo
+product_file_size: 367542
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OCCO.tar.gz
 layout: product_detail
 ---

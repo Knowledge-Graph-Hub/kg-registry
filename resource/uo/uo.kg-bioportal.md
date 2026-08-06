@@ -13,6 +13,7 @@ node_count: 587
 original_source:
 - relation_type: prov:hadPrimarySource
   source: uo
+product_file_size: 20223
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/UO.tar.gz
 layout: product_detail
 ---

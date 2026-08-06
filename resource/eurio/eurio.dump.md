@@ -13,6 +13,7 @@ name: EURIO Knowledge Graph Dump
 original_source:
 - relation_type: prov:hadPrimarySource
   source: eurio
+product_file_size: 1190300961
 product_url: https://cordis.europa.eu/data/cordis-EURIOKnowledgeGraph-nq.zip
 layout: product_detail
 ---

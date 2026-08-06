@@ -12,6 +12,7 @@ node_count: 92
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mcro
+product_file_size: 7532
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCRO.tar.gz
 layout: product_detail
 ---

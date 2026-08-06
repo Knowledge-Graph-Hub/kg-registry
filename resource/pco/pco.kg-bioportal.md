@@ -13,6 +13,7 @@ node_count: 558
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pco
+product_file_size: 27141
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PCO.tar.gz
 layout: product_detail
 ---

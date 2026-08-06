@@ -13,6 +13,7 @@ node_count: 529
 original_source:
 - relation_type: prov:hadPrimarySource
   source: sepio
+product_file_size: 26076
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-7/SEPIO.tar.gz
 layout: product_detail
 ---

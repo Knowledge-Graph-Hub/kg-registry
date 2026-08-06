@@ -13,6 +13,7 @@ node_count: 2325
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ohd
+product_file_size: 142572
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHD.tar.gz
 layout: product_detail
 ---

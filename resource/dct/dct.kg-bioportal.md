@@ -11,6 +11,7 @@ node_count: 240
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dct
+product_file_size: 6920
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DCT.tar.gz
 layout: product_detail
 ---

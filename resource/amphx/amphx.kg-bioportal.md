@@ -12,6 +12,7 @@ node_count: 418
 original_source:
 - relation_type: prov:hadPrimarySource
   source: amphx
+product_file_size: 46403
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AMPHX.tar.gz
 layout: product_detail
 ---

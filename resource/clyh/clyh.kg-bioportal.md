@@ -12,6 +12,7 @@ node_count: 279
 original_source:
 - relation_type: prov:hadPrimarySource
   source: clyh
+product_file_size: 24980
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLYH.tar.gz
 layout: product_detail
 ---

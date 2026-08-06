@@ -12,6 +12,7 @@ node_count: 1761
 original_source:
 - relation_type: prov:hadPrimarySource
   source: to
+product_file_size: 65688
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PTO.tar.gz
 layout: product_detail
 ---

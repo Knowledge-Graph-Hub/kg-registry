@@ -12,6 +12,7 @@ node_count: 771
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mfoem
+product_file_size: 38652
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFOEM.tar.gz
 layout: product_detail
 ---

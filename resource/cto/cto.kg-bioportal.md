@@ -12,6 +12,7 @@ node_count: 447
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cto
+product_file_size: 30324
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CTO.tar.gz
 layout: product_detail
 ---

@@ -11,6 +11,7 @@ node_count: 680
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cteno
+product_file_size: 14433
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CTENO.tar.gz
 layout: product_detail
 ---

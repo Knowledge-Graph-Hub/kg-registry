@@ -13,6 +13,7 @@ node_count: 4854
 original_source:
 - relation_type: prov:hadPrimarySource
   source: afo
+product_file_size: 315639
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AFO.tar.gz
 layout: product_detail
 ---

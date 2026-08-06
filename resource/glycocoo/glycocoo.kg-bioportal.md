@@ -13,6 +13,7 @@ node_count: 94
 original_source:
 - relation_type: prov:hadPrimarySource
   source: glycocoo
+product_file_size: 3055
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCOCOO.tar.gz
 layout: product_detail
 ---

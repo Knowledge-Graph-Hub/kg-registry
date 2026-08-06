@@ -13,6 +13,7 @@ node_count: 675
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dideo
+product_file_size: 34196
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DIDEO.tar.gz
 layout: product_detail
 ---

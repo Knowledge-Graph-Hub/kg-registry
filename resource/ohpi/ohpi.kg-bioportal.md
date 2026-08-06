@@ -13,6 +13,7 @@ node_count: 14180
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ohpi
+product_file_size: 1144821
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHPI.tar.gz
 layout: product_detail
 ---

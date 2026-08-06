@@ -12,6 +12,7 @@ node_count: 2419
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obib
+product_file_size: 137953
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBIB.tar.gz
 layout: product_detail
 ---

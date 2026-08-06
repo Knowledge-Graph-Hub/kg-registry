@@ -13,6 +13,7 @@ node_count: 220
 original_source:
 - relation_type: prov:hadPrimarySource
   source: zeco
+product_file_size: 6786
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZECO.tar.gz
 layout: product_detail
 ---

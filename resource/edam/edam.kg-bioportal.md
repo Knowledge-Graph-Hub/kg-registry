@@ -13,6 +13,7 @@ node_count: 4613
 original_source:
 - relation_type: prov:hadPrimarySource
   source: edam
+product_file_size: 217936
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EDAM.tar.gz
 layout: product_detail
 ---

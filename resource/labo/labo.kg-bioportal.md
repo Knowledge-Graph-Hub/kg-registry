@@ -12,6 +12,7 @@ node_count: 298
 original_source:
 - relation_type: prov:hadPrimarySource
   source: labo
+product_file_size: 15124
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LABO.tar.gz
 layout: product_detail
 ---

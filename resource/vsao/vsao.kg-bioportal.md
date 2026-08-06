@@ -13,6 +13,7 @@ node_count: 358
 original_source:
 - relation_type: prov:hadPrimarySource
   source: vsao
+product_file_size: 20343
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VSAO.tar.gz
 layout: product_detail
 ---

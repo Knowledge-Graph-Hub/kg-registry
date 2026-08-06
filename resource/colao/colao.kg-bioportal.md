@@ -13,6 +13,7 @@ node_count: 1319
 original_source:
 - relation_type: prov:hadPrimarySource
   source: colao
+product_file_size: 99877
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/COLAO.tar.gz
 layout: product_detail
 ---

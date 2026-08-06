@@ -12,6 +12,7 @@ node_count: 16057
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mp
+product_file_size: 961487
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MP.tar.gz
 layout: product_detail
 ---

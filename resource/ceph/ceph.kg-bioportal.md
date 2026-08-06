@@ -11,6 +11,7 @@ node_count: 484
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ceph
+product_file_size: 28955
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CEPH.tar.gz
 layout: product_detail
 ---

@@ -12,6 +12,7 @@ node_count: 4861
 original_source:
 - relation_type: prov:hadPrimarySource
   source: upa
+product_file_size: 555072
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UPA.tar.gz
 layout: product_detail
 ---

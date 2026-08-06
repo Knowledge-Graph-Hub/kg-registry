@@ -13,6 +13,7 @@ node_count: 3340
 original_source:
 - relation_type: prov:hadPrimarySource
   source: zfs
+product_file_size: 419475
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZFS.tar.gz
 layout: product_detail
 ---

@@ -12,6 +12,7 @@ node_count: 5142
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nbo
+product_file_size: 306300
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NBO.tar.gz
 layout: product_detail
 ---

@@ -13,6 +13,7 @@ node_count: 1592
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obcs
+product_file_size: 118956
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBCS.tar.gz
 layout: product_detail
 ---

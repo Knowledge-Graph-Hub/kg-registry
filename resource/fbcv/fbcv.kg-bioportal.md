@@ -13,6 +13,7 @@ node_count: 2467
 original_source:
 - relation_type: prov:hadPrimarySource
   source: fbcv
+product_file_size: 142353
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FB-CV.tar.gz
 layout: product_detail
 ---

@@ -11,6 +11,7 @@ node_count: 118
 original_source:
 - relation_type: prov:hadPrimarySource
   source: omo
+product_file_size: 6000
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMO.tar.gz
 layout: product_detail
 ---

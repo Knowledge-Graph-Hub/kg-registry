@@ -11,6 +11,7 @@ name: EURIO Projects Named Graph
 original_source:
 - relation_type: prov:hadPrimarySource
   source: eurio
+product_file_size: 372749888
 product_url: https://cordis.europa.eu/data/cordis-projectNamedGraph-nq.zip
 layout: product_detail
 ---

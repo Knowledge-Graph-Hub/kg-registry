@@ -13,6 +13,7 @@ node_count: 2172
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dpo
+product_file_size: 157428
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DPO.tar.gz
 layout: product_detail
 ---

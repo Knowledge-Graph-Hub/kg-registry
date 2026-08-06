@@ -13,6 +13,7 @@ node_count: 8353
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ehda
+product_file_size: 327864
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDA.tar.gz
 layout: product_detail
 ---

@@ -13,6 +13,7 @@ node_count: 3341
 original_source:
 - relation_type: prov:hadPrimarySource
   source: zfa
+product_file_size: 419706
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZFA.tar.gz
 layout: product_detail
 ---

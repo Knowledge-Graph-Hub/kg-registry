@@ -12,6 +12,7 @@ node_count: 282
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mfmo
+product_file_size: 14299
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFMO.tar.gz
 layout: product_detail
 ---

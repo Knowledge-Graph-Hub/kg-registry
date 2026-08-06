@@ -12,6 +12,7 @@ node_count: 75
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bfo
+product_file_size: 2371
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BFO.tar.gz
 layout: product_detail
 ---

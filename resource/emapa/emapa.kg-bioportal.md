@@ -12,6 +12,7 @@ node_count: 8797
 original_source:
 - relation_type: prov:hadPrimarySource
   source: emapa
+product_file_size: 647205
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EMAPA.tar.gz
 layout: product_detail
 ---

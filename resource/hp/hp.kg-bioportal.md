@@ -12,6 +12,7 @@ node_count: 25358
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hp
+product_file_size: 1471700
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HP.tar.gz
 layout: product_detail
 ---

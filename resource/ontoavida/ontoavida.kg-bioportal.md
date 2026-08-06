@@ -12,6 +12,7 @@ node_count: 741
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ontoavida
+product_file_size: 23451
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTOAVIDA.tar.gz
 layout: product_detail
 ---

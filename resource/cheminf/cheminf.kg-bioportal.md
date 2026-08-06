@@ -13,6 +13,7 @@ node_count: 625
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cheminf
+product_file_size: 22283
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHEMINF.tar.gz
 layout: product_detail
 ---

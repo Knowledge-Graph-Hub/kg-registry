@@ -13,6 +13,7 @@ node_count: 368
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hsapdv
+product_file_size: 23352
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HSAPDV.tar.gz
 layout: product_detail
 ---

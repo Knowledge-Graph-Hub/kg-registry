@@ -12,6 +12,7 @@ node_count: 6164
 original_source:
 - relation_type: prov:hadPrimarySource
   source: eupath
+product_file_size: 396273
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EUPATH.tar.gz
 layout: product_detail
 ---

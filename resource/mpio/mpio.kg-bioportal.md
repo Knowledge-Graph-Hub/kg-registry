@@ -13,6 +13,7 @@ node_count: 111
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mpio
+product_file_size: 4741
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPIO.tar.gz
 layout: product_detail
 ---

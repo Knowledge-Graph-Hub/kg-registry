@@ -13,6 +13,7 @@ node_count: 2870
 original_source:
 - relation_type: prov:hadPrimarySource
   source: scdo
+product_file_size: 300215
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SCDO.tar.gz
 layout: product_detail
 ---

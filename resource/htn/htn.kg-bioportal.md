@@ -11,6 +11,7 @@ node_count: 1130
 original_source:
 - relation_type: prov:hadPrimarySource
   source: htn
+product_file_size: 55964
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HTN.tar.gz
 layout: product_detail
 ---

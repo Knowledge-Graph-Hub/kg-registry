@@ -13,6 +13,7 @@ node_count: 2204
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mat
+product_file_size: 49984
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MAT.tar.gz
 layout: product_detail
 ---

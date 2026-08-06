@@ -12,6 +12,7 @@ node_count: 4116
 original_source:
 - relation_type: prov:hadPrimarySource
   source: vt
+product_file_size: 200324
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VT.tar.gz
 layout: product_detail
 ---

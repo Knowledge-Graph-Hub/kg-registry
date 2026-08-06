@@ -13,6 +13,7 @@ node_count: 745
 original_source:
 - relation_type: prov:hadPrimarySource
   source: opl
+product_file_size: 51686
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OPL.tar.gz
 layout: product_detail
 ---

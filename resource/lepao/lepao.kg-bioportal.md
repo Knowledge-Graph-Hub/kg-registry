@@ -13,6 +13,7 @@ node_count: 1215
 original_source:
 - relation_type: prov:hadPrimarySource
   source: lepao
+product_file_size: 88064
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LEPAO.tar.gz
 layout: product_detail
 ---

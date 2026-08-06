@@ -13,6 +13,7 @@ node_count: 87856
 original_source:
 - relation_type: prov:hadPrimarySource
   source: omit
+product_file_size: 1400036
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMIT.tar.gz
 layout: product_detail
 ---

@@ -13,6 +13,7 @@ node_count: 8891
 original_source:
 - relation_type: prov:hadPrimarySource
   source: caro
+product_file_size: 313461
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CARO.tar.gz
 layout: product_detail
 ---

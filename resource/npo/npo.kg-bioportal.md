@@ -12,6 +12,7 @@ node_count: 2916
 original_source:
 - relation_type: prov:hadPrimarySource
   source: npo
+product_file_size: 108842
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NPOKB.tar.gz
 layout: product_detail
 ---

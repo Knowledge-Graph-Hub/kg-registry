@@ -13,6 +13,7 @@ node_count: 2729
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ado
+product_file_size: 160945
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ADO.tar.gz
 layout: product_detail
 ---

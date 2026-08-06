@@ -12,6 +12,7 @@ node_count: 100
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ncro
+product_file_size: 3672
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NCRO.tar.gz
 layout: product_detail
 ---

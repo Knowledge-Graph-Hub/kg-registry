@@ -13,6 +13,7 @@ node_count: 6111
 original_source:
 - relation_type: prov:hadPrimarySource
   source: medlineplus
+product_file_size: 2045909
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MEDLINEPLUS.tar.gz
 layout: product_detail
 ---

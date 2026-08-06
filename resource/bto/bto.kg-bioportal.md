@@ -13,6 +13,7 @@ node_count: 6612
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bto
+product_file_size: 423773
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BTO.tar.gz
 layout: product_detail
 ---

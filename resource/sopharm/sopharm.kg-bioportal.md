@@ -15,6 +15,7 @@ node_count: 232
 original_source:
 - relation_type: prov:hadPrimarySource
   source: sopharm
+product_file_size: 6800
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SOPHARM.tar.gz
 layout: product_detail
 ---

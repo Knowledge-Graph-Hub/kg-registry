@@ -13,6 +13,7 @@ node_count: 96
 original_source:
 - relation_type: prov:hadPrimarySource
   source: taxrank
+product_file_size: 1722
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAXRANK.tar.gz
 layout: product_detail
 ---
