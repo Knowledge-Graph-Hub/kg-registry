@@ -22,9 +22,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rnadisease
   product_url: http://www.rnadisease.org/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-07-30: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

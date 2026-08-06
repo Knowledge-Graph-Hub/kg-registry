@@ -9,7 +9,7 @@ original_source:
   source: dgv
 product_url: http://dgv.tcag.ca/dgv/app/downloads
 warnings:
-- File was not able to be retrieved when checked on 2026-07-28_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-07-30_ Timeout connecting
   to URL
 layout: product_detail
 ---
