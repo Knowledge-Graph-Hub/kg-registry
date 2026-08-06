@@ -27,7 +27,7 @@ description: The ERA Knowledge Graph is the RDF publication of the European Unio
   to Zenodo; the infrastructure repository held roughly 53.7 million triples when checked
   in August 2026.
 domains:
-- other
+- transportation
 homepage_url: https://www.era.europa.eu/domains/registers/era-knowlege-graph_en
 last_modified_date: '2026-08-06T00:00:00Z'
 layout: resource_detail
@@ -95,6 +95,7 @@ products:
     earlier releases were compressed N-Quads. The edge count recorded here is the triple
     count reported by the live RINF+ repository on 2026-08-06.
   edge_count: 53716816
+  format: trig
   id: era-kg.dump
   latest_version: v9.0
   license:
@@ -105,9 +106,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: era-kg
   product_url: https://doi.org/10.5281/zenodo.14605743
-  warnings:
-  - The current release is serialized as TriG, for which the registry format enum has
-    no value, so no format is recorded for this product.
 - category: OntologyProduct
   description: The ERA Vocabulary (ERA Ontology), defined by the European Union Agency
     for Railways to describe European railway infrastructure and the vehicles authorized
@@ -227,9 +225,6 @@ Verified on 2026-08-06:
 
 ## Notes on this entry
 
-`FormatEnum` has no value for TriG, the serialization of the current dump, and no
-`other` fallback either, so that product carries no format and a warning explaining
-why. Adding `trig` to `FormatEnum` would close the gap.
-
-Domains are recorded as `other`: this is transport infrastructure data, and
-`DomainEnum` has no term for it.
+The domain is `transportation` and the current dump's format is `trig`. Both values
+were added to the schema for this entry: `DomainEnum` had no term covering transport
+infrastructure, and `FormatEnum` had neither a TriG value nor an `other` fallback.

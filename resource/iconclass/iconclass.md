@@ -4,7 +4,7 @@ category: DataSource
 creation_date: '2026-02-26T00:00:00Z'
 description: ICONCLASS is a comprehensive classification system for the subjects and content of images, used widely by museums, libraries, and other cultural heritage collections.
 domains:
-  - other
+  - humanities and cultural heritage
 homepage_url: https://iconclass.org/
 id: iconclass
 last_modified_date: '2026-05-30T00:00:00Z'

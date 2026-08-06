@@ -98,6 +98,7 @@ Resources may cover one or more of the following domains:
 | **environment** | The environment, ecosystems, ecology, and environmental health | [MeSH:D004777](https://meshb.nlm.nih.gov/record/ui?ui=D004777) |
 | **general** | Broadly applicable, cross-domain, or upper-level resources | — |
 | **genomics** | The study of genomes, including structure, function, mapping, and editing | [MeSH:D023281](https://meshb.nlm.nih.gov/record/ui?ui=D023281) |
+| **humanities and cultural heritage** | The humanities and cultural heritage: art history, architecture, musicology, media and performing arts, archaeology, history, and the collections that document them | [MeSH:D006809](https://meshb.nlm.nih.gov/record/ui?ui=D006809) |
 | **immunology** | The study of the immune system and its disorders | [MeSH:D000486](https://meshb.nlm.nih.gov/record/ui?ui=D000486) |
 | **information technology** | Informatics, software, computational methods, simulation, and digital health | [MeSH:D000073256](https://meshb.nlm.nih.gov/record/ui?ui=D000073256) |
 | **literature** | The literature and publications of a domain | [MeSH:D011642](https://meshb.nlm.nih.gov/record/ui?ui=D011642) |
@@ -112,8 +113,10 @@ Resources may cover one or more of the following domains:
 | **precision medicine** | Treatment/prevention accounting for individual variability | [MeSH:D057285](https://meshb.nlm.nih.gov/record/ui?ui=D057285) |
 | **proteomics** | The large-scale study of proteins | [MeSH:D040901](https://meshb.nlm.nih.gov/record/ui?ui=D040901) |
 | **public health** | Population health, epidemiology, and social determinants of health | [MeSH:D011634](https://meshb.nlm.nih.gov/record/ui?ui=D011634) |
+| **research funding** | Research projects, grants and payments, funding programmes, and the organizations that fund or carry out research | [NCIT:C17090](http://purl.obolibrary.org/obo/NCIT_C17090) |
 | **systems biology** | Computational/mathematical analysis of complex biological systems | [MeSH:D049490](https://meshb.nlm.nih.gov/record/ui?ui=D049490) |
 | **toxicology** | The adverse effects of chemicals on living organisms | [MeSH:D014116](https://meshb.nlm.nih.gov/record/ui?ui=D014116) |
+| **transportation** | Transportation and transport infrastructure: railway, road, air, and maritime networks and their assets | [MeSH:D014186](https://meshb.nlm.nih.gov/record/ui?ui=D014186) |
 | **other** | Another domain not defined here | — |
 
 (The `stub` value is reserved for auto-generated placeholder pages and is not a

@@ -28,6 +28,7 @@ URI: [kgr:DomainEnum](https://w3id.org/bridge2ai/data-sheets-schema/DomainEnum)
 | environment | MESH:D004777 | The environment and ecosystems, including ecology and environmental health |
 | general | None | A general domain, not specific to any other category |
 | genomics | MESH:D023281 | The study of genomes, including genome structure, evolution, function, mappin... |
+| humanities and cultural heritage | MESH:D006809 | The humanities and the cultural heritage domain, including art history, archi... |
 | immunology | MESH:D000486 | The study of the immune system, including its structure and function, disorde... |
 | information technology | MESH:D000073256 | The information technology and informatics sciences, including software, comp... |
 | literature | MESH:D011642 | The literature and publications of a domain |
@@ -43,8 +44,10 @@ URI: [kgr:DomainEnum](https://w3id.org/bridge2ai/data-sheets-schema/DomainEnum)
 | precision medicine | MESH:D057285 | An approach to disease treatment and prevention that takes into account indiv... |
 | proteomics | MESH:D040901 | The large-scale study of proteins, their structures, functions, and interacti... |
 | public health | MESH:D011634 | The science of protecting and improving the health of people and their commun... |
+| research funding | NCIT:C17090 | The funding and administration of research, including research projects, gran... |
 | systems biology | MESH:D049490 | The computational and mathematical analysis of complex biological systems and... |
 | toxicology | MESH:D014116 | The study of the adverse effects of chemicals on living organisms |
+| transportation | MESH:D014186 | Transportation and transport infrastructure, including railway, road, air, an... |
 | stub | None | This is not a domain, but rather a category for resources that are not yet ca... |
 
 

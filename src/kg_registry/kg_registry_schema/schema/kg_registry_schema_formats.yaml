@@ -315,6 +315,12 @@ enums:
           The Translator Reasoner API (TRAPI) format, which is a JSON Lines format
           for TRAPI responses.
         meaning: https://raw.githubusercontent.com/NCATSTranslator/ReasonerAPI/refs/heads/master/TranslatorReasonerAPI.yaml
+      trig:
+        description: >-
+          The TriG format, a textual syntax for RDF datasets. It extends
+          Turtle with the ability to write multiple named graphs in a
+          single document, standing to Turtle as N-Quads stands to
+          N-Triples.
       tsv:
         description: >-
           The Tab-Separated Values (TSV) format. It has

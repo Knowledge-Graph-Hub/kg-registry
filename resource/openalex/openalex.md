@@ -16,6 +16,7 @@ description: OpenAlex is a free, open catalog of the global research system. It 
   through an open API and a full downloadable data snapshot.
 domains:
 - literature
+- research funding
 - information technology
 - general
 homepage_url: https://openalex.org/

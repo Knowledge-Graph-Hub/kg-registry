@@ -18,6 +18,7 @@ description: The National Highway Planning Network (NHPN) is a geospatial networ
   as part of their Highway Performance Monitoring System (HPMS) submissions. NHPN
   is used as an upstream geospatial source for KnowWhereGraph.
 domains:
+- transportation
 - environment
 - information technology
 - general

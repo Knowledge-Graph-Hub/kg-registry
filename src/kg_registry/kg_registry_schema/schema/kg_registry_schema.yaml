@@ -953,6 +953,13 @@ enums:
           The study of genomes, including genome structure, evolution,
           function, mapping, and editing.
         meaning: MESH:D023281
+      humanities and cultural heritage:
+        description: >-
+          The humanities and the cultural heritage domain, including art history,
+          architecture, musicology, media and performing arts, archaeology, and
+          history, along with the collections, archives, and museum holdings that
+          document them.
+        meaning: MESH:D006809
       immunology:
         description: >-
           The study of the immune system, including its structure and function,
@@ -1025,6 +1032,12 @@ enums:
           communities, including epidemiology, population health, and the social
           determinants of health.
         meaning: MESH:D011634
+      research funding:
+        description: >-
+          The funding and administration of research, including research projects,
+          grants and their payments, funding programmes, the organizations that
+          fund or carry out research, and the outputs attributed to that funding.
+        meaning: NCIT:C17090
       systems biology:
         description: >-
           The computational and mathematical analysis of complex biological systems
@@ -1034,6 +1047,12 @@ enums:
         description: >-
           The study of the adverse effects of chemicals on living organisms.
         meaning: MESH:D014116
+      transportation:
+        description: >-
+          Transportation and transport infrastructure, including railway, road,
+          air, and maritime networks, the assets and parameters that describe
+          them, and the movement of people and goods over them.
+        meaning: MESH:D014186
       stub:
         description: >-
           This is not a domain, but rather a category for
