@@ -47,6 +47,10 @@ products:
         source: ensembl
       - relation_type: prov:wasDerivedFrom
         source: mondo
+      - relation_type: prov:wasDerivedFrom
+        source: omia
+      - relation_type: prov:wasDerivedFrom
+        source: gnomad
     product_file_size: 3726803
     product_url: https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv
   - category: GraphProduct
@@ -72,6 +76,8 @@ products:
         source: ensembl
       - relation_type: prov:wasDerivedFrom
         source: mondo
+      - relation_type: prov:wasDerivedFrom
+        source: omia
     product_file_size: 5247253
     product_url: https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_edges.tsv
   - category: Product
@@ -93,6 +99,13 @@ products:
     original_source:
       - relation_type: prov:hadPrimarySource
         source: sniff
+    secondary_source:
+      - relation_type: prov:wasDerivedFrom
+        source: canvas
+      - relation_type: prov:wasDerivedFrom
+        source: dog10k
+      - relation_type: prov:wasDerivedFrom
+        source: darwins-ark
     latest_version: 1.0.1
     product_url: https://zenodo.org/records/20566358
   - category: GraphicalInterface
