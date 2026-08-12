@@ -815,6 +815,15 @@ entries:
     source_path: resource/cancer-registry-kg/cancer-registry-kg.md
     status: valid
     warnings: []
+  resource/canvas/canvas.md#publication[0]#DOI:10.64898/2026.04.13.718238:
+    checked_at: '2026-08-12T18:06:23Z'
+    errors: []
+    fingerprint: 2ed3f90478c6623e47b647b38df55689bffcf060ae65f0d5f83e2774e9a03bb5
+    publication_index: 0
+    reference_id: DOI:10.64898/2026.04.13.718238
+    source_path: resource/canvas/canvas.md
+    status: valid
+    warnings: []
   resource/cardiokg/cardiokg.md#publication[0]#DOI:10.1038/s44161-025-00757-4:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1561,6 +1570,15 @@ entries:
     source_path: resource/darkkinasekb/darkkinasekb.md
     status: valid
     warnings: []
+  resource/darwins-ark/darwins-ark.md#publication[0]#DOI:10.1073/pnas.2421752122:
+    checked_at: '2026-08-12T18:06:29Z'
+    errors: []
+    fingerprint: 4f96d4e8684b009f9f0f67ca36d34febfdceb879dcc0108816e703c34dcbfe28
+    publication_index: 0
+    reference_id: DOI:10.1073/pnas.2421752122
+    source_path: resource/darwins-ark/darwins-ark.md
+    status: valid
+    warnings: []
   resource/dbpedia/dbpedia.md#publication[0]#DOI:10.1007/978-3-540-76298-0_52:
     checked_at: '2026-08-06T18:17:00Z'
     errors: []
@@ -1892,6 +1910,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.3233/SW-150177
     source_path: resource/doco/doco.md
+    status: valid
+    warnings: []
+  resource/dog10k/dog10k.md#publication[0]#DOI:10.1186/s13059-023-03023-7:
+    checked_at: '2026-08-12T18:06:26Z'
+    errors: []
+    fingerprint: da424e5f838945adb390f0f17c613689f173b03eb1eb1f37f8ed12c66c373af3
+    publication_index: 0
+    reference_id: DOI:10.1186/s13059-023-03023-7
+    source_path: resource/dog10k/dog10k.md
+    status: valid
+    warnings: []
+  resource/dog10k/dog10k.md#publication[1]#DOI:10.1093/nar/gkae928:
+    checked_at: '2026-08-12T18:06:26Z'
+    errors: []
+    fingerprint: 84e166106c94fe4f519652b35102be2fb3ba65511def7f333ed3432acf49c872
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkae928
+    source_path: resource/dog10k/dog10k.md
     status: valid
     warnings: []
   resource/doid/doid.md#publication[0]#PMID:25348409:
@@ -2983,6 +3019,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.5281/zenodo.6678278
     source_path: resource/gno/gno.md
+    status: valid
+    warnings: []
+  resource/gnomad/gnomad.md#publication[0]#DOI:10.1038/s41586-020-2308-7:
+    checked_at: '2026-08-12T18:06:18Z'
+    errors: []
+    fingerprint: e69aac594912dbe386a2074e05c9dcfd6a67b879e471fe3a57bf464718e4ca90
+    publication_index: 0
+    reference_id: DOI:10.1038/s41586-020-2308-7
+    source_path: resource/gnomad/gnomad.md
     status: valid
     warnings: []
   resource/gnps/gnps.md#publication[0]#DOI:10.1038/nbt.3597:
