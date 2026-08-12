@@ -7259,6 +7259,15 @@ entries:
     source_path: resource/smpdb/smpdb.md
     status: valid
     warnings: []
+  resource/sniff/sniff.md#publication[0]#DOI:10.5281/zenodo.20566358:
+    checked_at: '2026-08-12T16:39:17Z'
+    errors: []
+    fingerprint: c2932215311e19fea3a99c26f8027fdba11a3c9841b3ad6a779bb708ab1a527f
+    publication_index: 0
+    reference_id: DOI:10.5281/zenodo.20566358
+    source_path: resource/sniff/sniff.md
+    status: valid
+    warnings: []
   resource/snodb/snodb.md#publication[0]#PMID:36165892:
     checked_at: '2026-08-06T18:19:02Z'
     errors: []
