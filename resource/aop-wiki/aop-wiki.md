@@ -192,6 +192,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
+    when accessing file'
 taxon:
 - NCBITaxon:9606
 version: '2.8'

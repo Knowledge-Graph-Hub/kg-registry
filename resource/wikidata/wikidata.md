@@ -396,6 +396,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 406 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: PubChem substance information in ASN.1 format

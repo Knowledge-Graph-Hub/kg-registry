@@ -12,6 +12,8 @@ product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
 warnings:
 - File was not able to be retrieved when checked on 2026-08-06_ Timeout connecting
   to URL
+- File was not able to be retrieved when checked on 2026-08-06_ HTTP 404 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL
 layout: product_detail

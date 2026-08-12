@@ -71,6 +71,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
     but this endpoint serves data, not Python source code.
@@ -98,6 +100,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
 - category: Product
   description: Tab-delimited table mapping systems, subfamilies, and families to superfamilies.
@@ -127,6 +131,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Tab-delimited annotation mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -143,6 +149,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
 - category: Product
   description: Tab-delimited structure mapping table for TC systems. The URL ends
@@ -161,6 +169,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Tab-delimited protein family mapping table for TC systems. The URL
     ends in .py, but this endpoint serves data, not Python source code.
@@ -177,6 +187,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

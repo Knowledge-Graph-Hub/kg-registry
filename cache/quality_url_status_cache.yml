@@ -7652,36 +7652,43 @@ https://cordis.europa.eu/data/cordis-EURIOKnowledgeGraph-nq.zip:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cordis.europa.eu/data/cordis-organisationNamedGraph-nq.zip:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cordis.europa.eu/data/cordis-projectNamedGraph-nq.zip:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cordis.europa.eu/data/cordis-resultNamedGraph-nq.zip:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cordis.europa.eu/datalab:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cordis.europa.eu/datalab/sparql:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cordis.europa.eu/datalab/sparql-endpoint/en:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://core.kg.ebrains.eu/swagger-ui/index.html:
   checked_at: '2026-08-06T18:24:12Z'
@@ -7870,6 +7877,7 @@ https://data-interop.era.europa.eu/era-vocabulary/:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data-nifc.opendata.arcgis.com/:
   checked_at: '2026-08-06T18:24:13Z'
@@ -7947,6 +7955,7 @@ https://data.europa.eu/data/datasets/named-graphs-from-eurio-knowledge-graph:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.glygen.org/:
   checked_at: '2026-08-06T18:24:14Z'
@@ -7970,6 +7979,7 @@ https://data.linkedopendata.eu:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://data.mendeley.com/datasets/mrcf7f4tc2/1:
   checked_at: '2026-08-06T18:24:14Z'
@@ -8874,6 +8884,7 @@ https://docs.nfdi4culture.de/ta5-cgif-specification/introduction:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.openalex.org/:
   checked_at: '2026-08-06T18:24:22Z'
@@ -9029,6 +9040,7 @@ https://doi.org/10.5281/zenodo.14605743:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://doi.org/10.5281/zenodo.16025953:
   checked_at: '2026-08-06T18:24:24Z'
@@ -12629,6 +12641,7 @@ https://github.com/ISE-FIZKarlsruhe/nfdi4culture:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/IUPAC-InChI/InChI:
   checked_at: '2026-08-06T18:24:40Z'
@@ -13734,6 +13747,17 @@ https://github.com/SciCrunch/sparc-curation/tree/master/docs/sckan#download-dock
   ok: true
   source: cache
   status_code: 200
+https://github.com/Sniffscore:
+  checked_at: '2026-08-12T17:55:37Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/Sniffscore/sniff-mcp:
+  checked_at: '2026-08-12T17:55:37Z'
+  error: 'HEAD request failed: (''Connection aborted.'', RemoteDisconnected(''Remote
+    end closed connection without response''))'
+  ok: false
+  status_code: null
 https://github.com/SpeciesFileGroup/nomen:
   checked_at: '2026-08-06T18:24:46Z'
   error: null
@@ -14428,6 +14452,7 @@ https://github.com/ec-doris/EuKnowledgeGraph:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/echinoderm-ontology/ecao_ontology:
   checked_at: '2026-08-06T18:24:50Z'
@@ -15237,1171 +15262,1405 @@ https://github.com/ncbo/kg-bioportal:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ADO.tar.gz:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AEO.tar.gz:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AFO.tar.gz:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AISM.tar.gz:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AMPHX.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/APO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/APOLLO-SV.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ARO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ATC.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ATO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AURA.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BAO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BCO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BFO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOLINK.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BMONT.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BSPO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BTO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CARO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CCF.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDAO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CDNO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CEPH.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHEMINF.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHIRO.tar.gz:
   checked_at: '2026-08-06T22:06:40Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHMO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHR.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CIDO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CIO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CL.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLAO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CLYH.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CMO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/COB.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/COLAO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CRO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CTENO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CTO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CVDO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DC.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DCAT.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DCT.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DDANAT.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DDPHENO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DIDEO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DISDRIV.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DPO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/DUO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECAO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECO.tar.gz:
   checked_at: '2026-08-06T22:06:41Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECOCORE.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECOSIM.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECTO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EDAM.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDA.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDAA.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EHDAA2.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EMAP.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EMAPA.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ENVO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EPIO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ERO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EUPATH.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EXMO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EXO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FALDO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FAO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FB-CV.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FB-SP.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FBbi.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIDEO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIRE.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIX.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FOBI.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GALLONT.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GECKO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENEPIO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCOCOO.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GLYCORDF.tar.gz:
   checked_at: '2026-08-06T22:06:42Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GMM.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GOLDTERMS.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HAO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HOM.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HP.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HRAVS.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HSAPDV.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HSO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/HTN.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IAO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ICO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IDO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IDOMAL.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/INO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/KGCL.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LABO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/LEPAO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MA.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MAMO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MAT.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MCRO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MEDLINEPLUS.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/METPO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MF.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFMO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFOEM.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MFOMD.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MHCRO.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MI.tar.gz:
   checked_at: '2026-08-06T22:06:43Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIAPA.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIRNAO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIRO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MMO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MMUSDV.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MOP.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MP.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPATH.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MPIO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NBO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NCRO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NGBO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NMR.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NOMEN.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NPOKB.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OARCS.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBCS.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBI.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBIB.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBI_BCGO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOREL.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OCCO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OGMS.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OGSF.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHD.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHMI.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OHPI.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OLATDV.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMIT.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMO.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMP.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMRSE.tar.gz:
   checked_at: '2026-08-06T22:06:44Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONE.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONS.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTOAVIDA.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONTONEO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OOSTT.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OPL.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OPMI.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ORDO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ORNASEQ.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OVAE.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PATO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PBPKO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PCO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PDRO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PDUMDV.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PHIPO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANA.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANP.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANTSO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PORO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PPO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PREFER.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PROCO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PSDO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PTO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PTRANS.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PW.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/REX.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RNAO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RS.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/RXNO.tar.gz:
   checked_at: '2026-08-06T22:06:45Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SAO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SBO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SCDO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SIBO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SIO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SLSO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SOPHARM.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SPD.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STATO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STY.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SWO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SYMP.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/T4FS.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TADS.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TAXRANK.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TGMA.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TTO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/TXPO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UBERON.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UNIPROT.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UPA.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VANDF.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VARIO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VBO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VHOG.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VSAO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/VT.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/WIKIPATHWAYS.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XAO.tar.gz:
   checked_at: '2026-08-06T22:06:46Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XCO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XLMOD.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XPO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZEA.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZECO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZFA.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ZFS.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/DOID.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/FLOPO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MIXS.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MS.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/UO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-7/AGRO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-7/SEPIO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/ADW.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/AERO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/FLU.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/GEO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/LIPRO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/MO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/OGI.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/PROPREO.tar.gz:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/latest:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/latest/download/onto_stats.yaml:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncit-obo-org/ncit-obo-edition:
   checked_at: '2026-08-06T18:24:54Z'
@@ -17265,16 +17524,19 @@ https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontolog
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology/era-kg-mappings:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology/era-ontology:
   checked_at: '2026-08-06T22:06:47Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gitlab.com/fortunalab/ontoavida:
   checked_at: '2026-08-06T18:24:57Z'
@@ -17482,11 +17744,13 @@ https://graph.data.era.europa.eu/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 406
 https://graph.data.era.europa.eu/repositories/rinf-plus:
   checked_at: '2026-08-06T22:06:48Z'
   error: HEAD returned HTTP 400
   ok: false
+  source: cache
   status_code: 400
 https://graph.openbiodiv.net/webapi:
   checked_at: '2026-08-06T18:24:58Z'
@@ -18589,6 +18853,7 @@ https://kohesio.ec.europa.eu/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://lhncbc.nlm.nih.gov/LSG/index.html:
   checked_at: '2026-08-06T18:25:15Z'
@@ -18648,16 +18913,19 @@ https://linkedopendata.eu/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://linkedopendata.eu/w/api.php:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://linkedopendata.eu/wiki/The_EU_Knowledge_Graph:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://lncipedia.org/:
   checked_at: '2026-08-06T18:25:17Z'
@@ -19456,11 +19724,13 @@ https://ncbo.github.io/kg-bioportal/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ncbo.github.io/kg-bioportal/graphs/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ndownloader.figshare.com/files/20237709:
   checked_at: '2026-08-06T18:25:21Z'
@@ -19532,26 +19802,31 @@ https://nfdi.fiz-karlsruhe.de/4culture/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nfdi4culture.de/ontology/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nfdi4culture.de/resources/knowledge-graph.html:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nfdi4culture.de/services/details/culture-knowledge-graph.html:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nfdi4culture.de/shmarql/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/lgc:
   checked_at: '2026-08-06T18:25:21Z'
@@ -20092,6 +20367,7 @@ https://op.europa.eu/en/web/eu-vocabularies/eurio:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://open.fda.gov/apis/device/event/:
   checked_at: '2026-08-06T18:25:26Z'
@@ -21084,6 +21360,7 @@ https://qa.linkedopendata.eu:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://qlever.earthmetabolome.org/api/metrin-kg:
   checked_at: '2026-08-06T18:25:35Z'
@@ -21095,11 +21372,13 @@ https://query.linkedopendata.eu/:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://query.linkedopendata.eu/sparql:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://query.wikidata.org/:
   checked_at: '2026-08-06T18:25:35Z'
@@ -22678,11 +22957,13 @@ https://rinf.data.era.europa.eu/:
   error: 'HEAD request failed: HTTPSConnectionPool(host=''rinf.data.era.europa.eu'',
     port=443): Read timed out. (read timeout=8.0)'
   ok: false
+  source: cache
   status_code: null
 https://rinf.data.era.europa.eu/api/v1/sparql/rinf:
   checked_at: '2026-08-06T22:06:48Z'
   error: GET returned HTTP 500
   ok: false
+  source: cache
   status_code: 500
 https://risteys.finngen.fi/:
   checked_at: '2026-08-06T18:25:39Z'
@@ -23459,6 +23740,26 @@ https://snap.stanford.edu/stellar/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://sniff.world/:
+  checked_at: '2026-08-12T17:55:37Z'
+  error: null
+  ok: true
+  status_code: 200
+https://sniffdog-data.s3.amazonaws.com/federation/kgx/manifest.json:
+  checked_at: '2026-08-12T17:55:37Z'
+  error: null
+  ok: true
+  status_code: 200
+https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_edges.tsv:
+  checked_at: '2026-08-12T17:55:37Z'
+  error: null
+  ok: true
+  status_code: 200
+https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv:
+  checked_at: '2026-08-12T17:55:37Z'
+  error: null
+  ok: true
   status_code: 200
 https://snpeff.odsp.astrazeneca.com/versions/snpEff_latest_core.zip:
   checked_at: '2026-08-06T18:25:45Z'
@@ -28071,6 +28372,7 @@ https://www.era.europa.eu/domains/registers/era-knowlege-graph_en:
   checked_at: '2026-08-06T22:06:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ers.usda.gov/data-products/rural-urban-continuum-codes:
   checked_at: '2026-08-06T18:26:12Z'
@@ -30764,6 +31066,11 @@ https://zenodo.org/records/18339711:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://zenodo.org/records/20566358:
+  checked_at: '2026-08-12T17:55:37Z'
+  error: null
+  ok: true
   status_code: 200
 https://zenodo.org/records/20816742:
   checked_at: '2026-08-06T18:26:35Z'

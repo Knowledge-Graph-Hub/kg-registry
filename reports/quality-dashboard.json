@@ -1,6 +1,6 @@
 {
   "citations": {
-    "publication_entries_total": 887,
+    "publication_entries_total": 888,
     "publication_entries_with_issues": 37,
     "resources_with_citation_issues": 30,
     "resources_without_publications": 356,
@@ -11,9 +11,9 @@
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
     "modified_after_creation": 861,
-    "stale_over_365_days": 0,
-    "unchanged_since_creation": 158,
-    "with_both_dates": 1019
+    "stale_over_365_days": 2,
+    "unchanged_since_creation": 159,
+    "with_both_dates": 1020
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -281,6 +281,7 @@
       "simap",
       "simap.portal",
       "smpdb",
+      "sniff.mcp",
       "snodb.rrna-modifications",
       "snodb.rrna-mods",
       "snodb.sequence-search",
@@ -1144,6 +1145,7 @@
       "sio",
       "sldb",
       "slso",
+      "sniff",
       "snpeff",
       "so",
       "sockg",
@@ -5400,6 +5402,12 @@
       "smart.list-genomes",
       "smart.portal",
       "smart.search",
+      "sniff",
+      "sniff.atlas-vcf",
+      "sniff.browser",
+      "sniff.federation-edges",
+      "sniff.federation-manifest",
+      "sniff.federation-nodes",
       "snodb",
       "snodb.about",
       "snodb.abundance",
@@ -6194,6 +6202,7 @@
       "pubmed-knowledge-graph",
       "raras",
       "rdkg",
+      "sniff",
       "tbkg"
     ],
     "missing_contacts_resource_ids": [
@@ -7218,6 +7227,7 @@
       "slso",
       "smart",
       "smpdb",
+      "sniff",
       "snodb",
       "snomedct",
       "snopy",
@@ -8040,6 +8050,7 @@
       "sldb",
       "slso",
       "smart",
+      "sniff",
       "snodb",
       "snopy",
       "snornadatabase",
@@ -13388,6 +13399,12 @@
       "smart.list-genomes",
       "smart.portal",
       "smart.search",
+      "sniff.atlas-vcf",
+      "sniff.browser",
+      "sniff.federation-edges",
+      "sniff.federation-manifest",
+      "sniff.federation-nodes",
+      "sniff.mcp",
       "snodb.about",
       "snodb.abundance",
       "snodb.abundance-viewer",
@@ -15100,6 +15117,7 @@
       "slso",
       "smart",
       "smpdb",
+      "sniff",
       "snodb",
       "snomedct",
       "snopy",
@@ -15370,6 +15388,7 @@
       "semopenalex",
       "simap",
       "smpdb",
+      "sniff",
       "snodb",
       "snomedct",
       "sopharm",
@@ -15919,7 +15938,10 @@
       "text-mining-kp.graph",
       "tissues.downloads"
     ],
-    "stale_over_365_days_resource_ids": [],
+    "stale_over_365_days_resource_ids": [
+      "neo",
+      "refseq"
+    ],
     "stub_resource_ids": [],
     "unchanged_since_creation_resource_ids": [
       "acukg",
@@ -16052,6 +16074,7 @@
       "semrep",
       "sfld",
       "sic",
+      "sniff",
       "snpeff",
       "sparc",
       "ssurgo",
@@ -16083,49 +16106,49 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-08-06T22:42:10Z",
+  "generated_at": "2026-08-12T17:55:32Z",
   "knowledge_graph_evaluations": {
-    "knowledge_graph_total": 159,
+    "knowledge_graph_total": 160,
     "with_evaluation_page": 127,
-    "without_evaluation_page": 32
+    "without_evaluation_page": 33
   },
   "links": {
-    "broken_urls": 272,
+    "broken_urls": 273,
     "cache_hits": 4566,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4294,
-    "live_checked_urls": 0,
+    "healthy_urls": 4300,
+    "live_checked_urls": 7,
     "mode": "live",
-    "total_unique_urls": 4566,
+    "total_unique_urls": 4573,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 235,
     "missing_original_source": 0,
     "missing_product_url": 22,
-    "total": 4117,
+    "total": 4123,
     "with_retrieval_warning": 127
   },
-  "resource_count": 1019,
+  "resource_count": 1020,
   "resources": {
     "contacts_with_org_connection": 249,
-    "contacts_without_org_connection": 636,
+    "contacts_without_org_connection": 637,
     "missing_contacts": 134,
     "missing_description": 0,
-    "missing_fairsharing_id": 1011,
+    "missing_fairsharing_id": 1012,
     "missing_homepage_url": 22,
-    "missing_infores_id": 758,
+    "missing_infores_id": 759,
     "missing_license": 314,
     "missing_repository": 515,
     "status_counts": {
-      "active": 876,
+      "active": 877,
       "inactive": 126,
       "orphaned": 12,
       "unresponsive": 5
     },
     "stub_count": 0,
-    "total": 1019,
-    "with_broken_links": 156,
+    "total": 1020,
+    "with_broken_links": 157,
     "with_citation_issues": 30,
     "without_products": 10,
     "without_publications": 356
@@ -16133,7 +16156,7 @@
   "scoring": {
     "average_score": 7.16,
     "median_score": 7.0,
-    "resources_with_issues": 983,
+    "resources_with_issues": 984,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],

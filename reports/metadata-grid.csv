@@ -764,6 +764,7 @@ sldb,active,PASS
 slso,active,PASS
 smart,active,PASS
 smpdb,active,PASS
+sniff,active,PASS
 snodb,active,PASS
 snomedct,active,PASS
 snopy,active,PASS

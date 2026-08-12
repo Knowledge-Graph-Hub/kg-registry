@@ -667,6 +667,7 @@ skos	SKOS	DataModel	https://www.w3.org/2004/02/skos/	resource/skos/skos.md
 sldb	sldb	KnowledgeGraph	https://github.com/monarch-initiative/SLDBGen	resource/sldb/sldb.md
 slso	Space Life Sciences Ontology	Ontology	https://github.com/nasa/LSDAO	resource/slso/slso.md
 smart	SMART	DataSource	https://smart.embl.de/	resource/smart/smart.md
+sniff	Sniff	KnowledgeGraph	https://sniff.world/	resource/sniff/sniff.md
 snodb	snoDB	DataSource	https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/	resource/snodb/snodb.md
 snopy	snOPY	DataSource	http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi	resource/snopy/snopy.md
 snornadatabase	snoRNABase	DataSource	https://www-snorna.biotoul.fr/	resource/snornadatabase/snornadatabase.md

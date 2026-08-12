@@ -3420,6 +3420,8 @@ kgr:clinvar a schema1:DataSource ;
         kgr:pubchem.substances.sdf,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
+        kgr:sniff.federation-edges,
+        kgr:sniff.federation-nodes,
         kgr:sri-reference-kg.graph,
         kgr:translator.geneticskp.graph,
         kgr:ubkg.csv,
@@ -6562,6 +6564,8 @@ kgr:ensembl a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:sniff.federation-edges,
+        kgr:sniff.federation-nodes,
         kgr:string.cog.links,
         kgr:string.cog.links.detailed,
         kgr:string.database,
@@ -11773,7 +11777,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-08-06T22:32:10+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-08-12T17:46:25+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -13945,6 +13949,8 @@ kgr:mondo a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:sniff.federation-edges,
+        kgr:sniff.federation-nodes,
         kgr:sri-reference-kg.graph,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
@@ -21228,6 +21234,32 @@ kgr:smpdb a schema1:DataSource ;
         "pathways" ;
     adms:status "Active" ;
     foaf:homepage <https://smpdb.ca/> .
+
+kgr:sniff a schema1:KnowledgeGraph ;
+    rdfs:label "Sniff" ;
+    dcterms:created "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "An open canine genetics atlas covering breed-stratified variant data, canine disease associations, and dog-to-human gene orthology, published with an evidence-graded, Biolink-conformant knowledge graph." ;
+    dcterms:hasVersion "1.0.1" ;
+    dcterms:identifier "sniff" ;
+    dcterms:isReferencedBy <https://doi.org/10.5281/zenodo.20566358> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606>,
+        <NCBITaxon:9615> ;
+    schema1:hasPart kgr:sniff.atlas-vcf,
+        kgr:sniff.browser,
+        kgr:sniff.federation-edges,
+        kgr:sniff.federation-manifest,
+        kgr:sniff.federation-nodes,
+        kgr:sniff.mcp ;
+    schema1:name "Sniff" ;
+    doap:repository <https://github.com/Sniffscore> ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "organisms",
+        "phenotype" ;
+    adms:status "Active" ;
+    foaf:homepage <https://sniff.world/> .
 
 kgr:snodb a schema1:DataSource ;
     rdfs:label "snoDB" ;
@@ -38409,6 +38441,26 @@ kgr:smart.search a schema1:GraphicalInterface ;
 kgr:smithsonian-nmnh a "Organization" ;
     rdfs:label "Smithsonian Institution's National Museum of Natural History" .
 
+kgr:sniff.atlas-vcf a schema1:Product ;
+    rdfs:label "Sniff Atlas sites VCF (v1.0.1)" ;
+    dcterms:description "A sites-only VCF of the Sniff Atlas variant catalogue, containing allele frequencies for 9,667,790 imputed variants across 14,478 dogs and 188 breeds on the CanFam4 assembly, restricted to variants with allele frequency at or above 1%." ;
+    schema1:url <https://zenodo.org/records/20566358> .
+
+kgr:sniff.browser a schema1:GraphicalInterface ;
+    rdfs:label "Sniff web interface" ;
+    dcterms:description "The Sniff web interface, providing browsers for breeds, genes, diseases, variants, and contributing studies, an interactive atlas view, and a natural-language query view." ;
+    schema1:url <https://sniff.world/> .
+
+kgr:sniff.federation-manifest a schema1:Product ;
+    rdfs:label "Sniff KGX federation export manifest" ;
+    dcterms:description "A JSON manifest for the Sniff KGX federation export, providing node and edge counts, per-predicate and per-evidence-tier breakdowns, build provenance, and SHA256 checksums for verification of the bundle." ;
+    schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/manifest.json> .
+
+kgr:sniff.mcp a schema1:ProgrammingInterface ;
+    rdfs:label "sniff-mcp" ;
+    dcterms:description "A Model Context Protocol server exposing Sniff data for programmatic and agent-based access." ;
+    schema1:url <https://github.com/Sniffscore/sniff-mcp> .
+
 kgr:snodb.about a schema1:DocumentationProduct ;
     rdfs:label "About and Help Documentation" ;
     dcterms:description "Comprehensive documentation about data sources, methods, and curation processes" ;
@@ -43995,6 +44047,16 @@ kgr:ptmd.total_pda a schema1:Product ;
     rdfs:label "PTMD Total PTM-Disease Associations" ;
     dcterms:description "Complete PTMD 2.0 PTM-disease association download in tab-delimited format" ;
     schema1:url <https://ptmd.biocuckoo.cn/Download/Total.zip> .
+
+kgr:sniff.federation-edges a schema1:GraphProduct ;
+    rdfs:label "Sniff KGX federation export, edges" ;
+    dcterms:description "A Biolink-conformant KGX TSV edge file for the Sniff cross-species substrate, covering dog-to-human orthology and canine disease associations. Every edge carries provenance and an evidence level, and all edges with a knowledge level of prediction are excluded." ;
+    schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_edges.tsv> .
+
+kgr:sniff.federation-nodes a schema1:GraphProduct ;
+    rdfs:label "Sniff KGX federation export, nodes" ;
+    dcterms:description "A Biolink-conformant KGX TSV node file for the Sniff cross-species substrate, covering dog and human genes and canine and human diseases. Part of the facts-only federation bundle intended for ingest into other knowledge graphs." ;
+    schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv> .
 
 kgr:spatialkg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph Spatial KG Graph" ;

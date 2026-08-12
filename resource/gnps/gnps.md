@@ -169,6 +169,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 406 error
+    when accessing file'
 publications:
 - authors:
   - Mingxun Wang
