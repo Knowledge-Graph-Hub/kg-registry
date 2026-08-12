@@ -12,5 +12,12 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: sniff
 product_url: https://zenodo.org/records/20566358
+secondary_source:
+- relation_type: prov:wasDerivedFrom
+  source: canvas
+- relation_type: prov:wasDerivedFrom
+  source: dog10k
+- relation_type: prov:wasDerivedFrom
+  source: darwins-ark
 layout: product_detail
 ---

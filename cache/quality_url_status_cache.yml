@@ -4646,6 +4646,11 @@ http://www.docm.info/:
   ok: true
   source: cache
   status_code: 200
+http://www.dog10kgenomes.org/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
 http://www.dukeontologygroup.org/Projects.html:
   checked_at: '2026-08-06T18:23:50Z'
   error: 'HEAD request failed: HTTPConnectionPool(host=''www.dukeontologygroup.org'',
@@ -7873,6 +7878,11 @@ https://darkkinome.org/compounds:
   ok: true
   source: cache
   status_code: 200
+https://darwinsark.org/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://data-interop.era.europa.eu/era-vocabulary/:
   checked_at: '2026-08-06T22:06:39Z'
   error: null
@@ -8375,6 +8385,11 @@ https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://datadryad.org/dataset/doi:10.5061/dryad.83bk3jb4r:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4:
   checked_at: '2026-08-06T18:24:15Z'
@@ -8933,6 +8948,11 @@ https://documentation.uts.nlm.nih.gov/rest/home.html:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://dog10k.kiz.ac.cn/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://doi.org/10.1016/j.celrep.2016.10.061:
   checked_at: '2026-08-06T18:24:23Z'
@@ -12169,6 +12189,11 @@ https://github.com/BioinfoUNIBA/REDItools:
   ok: true
   source: cache
   status_code: 200
+https://github.com/Brundage-VAIL/CanVAS:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/CCMS-UCSD/GNPSDocumentation:
   checked_at: '2026-08-06T18:24:38Z'
   error: null
@@ -12252,6 +12277,11 @@ https://github.com/Dalalghamdi/NGBO:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/DarwinsArk:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/DessimozLab/pyomabrowser:
   checked_at: '2026-08-06T18:24:38Z'
@@ -13751,12 +13781,14 @@ https://github.com/Sniffscore:
   checked_at: '2026-08-12T17:55:37Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/Sniffscore/sniff-mcp:
   checked_at: '2026-08-12T17:55:37Z'
   error: 'HEAD request failed: (''Connection aborted.'', RemoteDisconnected(''Remote
     end closed connection without response''))'
   ok: false
+  source: cache
   status_code: null
 https://github.com/SpeciesFileGroup/nomen:
   checked_at: '2026-08-06T18:24:46Z'
@@ -17676,6 +17708,21 @@ https://gnis-ld.org/:
   ok: true
   source: cache
   status_code: 200
+https://gnomad.broadinstitute.org/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://gnomad.broadinstitute.org/api:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: HEAD returned HTTP 400
+  ok: false
+  status_code: 400
+https://gnomad.broadinstitute.org/downloads:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://gnome.glyomics.org/:
   checked_at: '2026-08-06T18:24:58Z'
   error: null
@@ -18813,6 +18860,11 @@ https://kgx-storage.rtx.ai/releases/ubergraph/latest/:
   ok: false
   source: cache
   status_code: null
+https://kiddlabshare.med.umich.edu/dog10K/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://kidsfirstdrc.org/:
   checked_at: '2026-08-06T18:25:14Z'
   error: null
@@ -20326,6 +20378,36 @@ https://omabrowser.org/oma/home/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://omia.org/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://omia.org/download/csv/genes/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://omia.org/download/vcf_exports/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://omia.org/home/:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://omia.org/static/omia.sql.gz:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://omia.org/static/omia.xml.gz:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://omnipathdb.org/:
   checked_at: '2026-08-06T18:25:26Z'
@@ -23745,21 +23827,25 @@ https://sniff.world/:
   checked_at: '2026-08-12T17:55:37Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sniffdog-data.s3.amazonaws.com/federation/kgx/manifest.json:
   checked_at: '2026-08-12T17:55:37Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_edges.tsv:
   checked_at: '2026-08-12T17:55:37Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv:
   checked_at: '2026-08-12T17:55:37Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://snpeff.odsp.astrazeneca.com/versions/snpEff_latest_core.zip:
   checked_at: '2026-08-06T18:25:45Z'
@@ -30983,6 +31069,11 @@ https://zenodo.org/record/4077338:
   ok: true
   source: cache
   status_code: 200
+https://zenodo.org/record/8084059:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://zenodo.org/records/10103842:
   checked_at: '2026-08-06T18:26:35Z'
   error: null
@@ -31067,10 +31158,16 @@ https://zenodo.org/records/18339711:
   ok: true
   source: cache
   status_code: 200
+https://zenodo.org/records/19186944:
+  checked_at: '2026-08-12T19:15:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://zenodo.org/records/20566358:
   checked_at: '2026-08-12T17:55:37Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zenodo.org/records/20816742:
   checked_at: '2026-08-06T18:26:35Z'

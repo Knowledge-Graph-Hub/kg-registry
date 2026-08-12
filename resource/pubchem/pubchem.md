@@ -1513,12 +1513,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
-    returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-08-06: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
     when accessing file'
+  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
+    returned HTTP 404 during curation on 2026-06-02.
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,
     genetic, protein, and karyotype biomarker records.
@@ -1558,8 +1556,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
 - category: GraphicalInterface
@@ -1589,8 +1585,6 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
 - category: GraphicalInterface

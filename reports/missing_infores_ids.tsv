@@ -74,6 +74,7 @@ cabi-isc	CABI Invasive Species Compendium	DataSource	https://www.cabidigitallibr
 campbell-biology	Campbell Biology	DataSource	https://openlibrary.org/isbn/9780134093413	resource/campbell-biology/campbell-biology.md
 cancer-genome-interpreter	Cancer Genome Interpreter	DataSource		resource/cancer-genome-interpreter/cancer-genome-interpreter.md
 cancer-registry-kg	Cancer Registry Knowledge Graph	KnowledgeGraph	https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/	resource/cancer-registry-kg/cancer-registry-kg.md
+canvas	CanVAS	DataSource	https://github.com/Brundage-VAIL/CanVAS	resource/canvas/canvas.md
 cardiokg	CardioKG	KnowledgeGraph	https://github.com/ImperialCollegeLondon/cardioKG	resource/cardiokg/cardiokg.md
 cargo	crates.io (Cargo)	DataSource	https://crates.io/	resource/cargo/cargo.md
 caro	Common Anatomy Reference Ontology	Ontology	https://github.com/obophenotype/caro/	resource/caro/caro.md
@@ -149,6 +150,7 @@ cureid	CURE ID	DataSource	https://cure.ncats.io/	resource/cureid/cureid.md
 cvdo	Cardiovascular Disease Ontology	Ontology	https://github.com/OpenLHS/CVDO	resource/cvdo/cvdo.md
 cvx	Vaccine Administered Code Set (CVX)	DataSource	https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx	resource/cvx/cvx.md
 cytoscape	Cytoscape	DataSource	https://cytoscape.org/	resource/cytoscape/cytoscape.md
+darwins-ark	Darwin's Ark	DataSource	https://darwinsark.org/	resource/darwins-ark/darwins-ark.md
 dbpedia	DBpedia	KnowledgeGraph	https://www.dbpedia.org/	resource/dbpedia/dbpedia.md
 dbptm	dbPTM	DataSource	https://biomics.lab.nycu.edu.tw/dbPTM/	resource/dbptm/dbptm.md
 dbsno	dbSNO	DataSource	https://biomics.lab.nycu.edu.tw/dbSNO/index.php	resource/dbsno/dbsno.md
@@ -168,6 +170,7 @@ disbiome	Disbiome	DataSource	https://disbiome.ugent.be/	resource/disbiome/disbio
 disdriv	Disease Drivers Ontology	Ontology	https://disease-ontology.org/	resource/disdriv/disdriv.md
 dmd	NHS dictionary of medicines and devices	DataSource	https://digital.nhs.uk/services/terminology-and-classifications/dm-d	resource/dmd/dmd.md
 doco	Document Components Ontology (DOCO)	Ontology	https://github.com/SPAROntologies/doco	resource/doco/doco.md
+dog10k	Dog10K	DataSource	http://www.dog10kgenomes.org/	resource/dog10k/dog10k.md
 doid	Human Disease Ontology	Ontology	https://disease-ontology.org	resource/doid/doid.md
 dorothea	DoRothEA	KnowledgeGraph	https://saezlab.github.io/dorothea/	resource/dorothea/dorothea.md
 dpo	Drosophila Phenotype Ontology	Ontology	http://purl.obolibrary.org/obo/fbcv	resource/dpo/dpo.md
@@ -288,6 +291,7 @@ glygen	GlyGen	DataSource	https://glygen.org/	resource/glygen/glygen.md
 glytoucan	GlyTouCan	DataSource	https://glytoucan.org/	resource/glytoucan/glytoucan.md
 gnis	Geographic Names Information System	DataSource	https://www.usgs.gov/tools/geographic-names-information-system-gnis	resource/gnis/gnis.md
 gno	Glycan Naming and Subsumption Ontology (GNOme)	Ontology	https://gnome.glyomics.org/	resource/gno/gno.md
+gnomad	Genome Aggregation Database (gnomAD)	DataSource	https://gnomad.broadinstitute.org/	resource/gnomad/gnomad.md
 gnps	Global Natural Products Social Molecular Networking	DataSource	https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp	resource/gnps/gnps.md
 goldterms	GOLD Environmental Paths	DataModel	https://gold.jgi.doe.gov/	resource/goldterms/goldterms.md
 gomapman	GoMapMan	DataSource	https://gomapman.nib.si/	resource/gomapman/gomapman.md
@@ -508,6 +512,7 @@ oio	OBO Interoperability Ontology	Ontology		resource/oio/oio.md
 okn-void	OKN VoID graph descriptions	KnowledgeGraph	https://registry.okn.us/registry/kgs/okn-void/	resource/okn-void/okn-void.md
 olatdv	Medaka Developmental Stages	Ontology	https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv	resource/olatdv/olatdv.md
 oma	OMA	DataSource	https://omabrowser.org/	resource/oma/oma.md
+omia	Online Mendelian Inheritance in Animals (OMIA)	DataSource	https://omia.org/	resource/omia/omia.md
 omiabis	Ontologized MIABIS	Ontology	https://github.com/OMIABIS/omiabis-dev	resource/omiabis/omiabis.md
 omit	Ontology for MIRNA Target	Ontology	http://omit.cis.usouthal.edu/	resource/omit/omit.md
 omnipath	OmniPath	Aggregator	https://omnipathdb.org/	resource/omnipath/omnipath.md

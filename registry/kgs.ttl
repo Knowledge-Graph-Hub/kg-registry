@@ -2159,6 +2159,27 @@ kgr:cancer-registry-kg a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/> .
 
+kgr:canvas a schema1:DataSource ;
+    rdfs:label "CanVAS" ;
+    dcterms:created "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "A harmonized and imputed canine variant atlas, unifying genotypes from fifteen previously incomparable dog cohorts into a single set of 9.67 million variants on the CanFam4 reference assembly." ;
+    dcterms:hasVersion "v1" ;
+    dcterms:identifier "canvas" ;
+    dcterms:isReferencedBy <https://doi.org/10.64898/2026.04.13.718238> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9615> ;
+    schema1:hasPart kgr:canvas.backbone,
+        kgr:canvas.imputed,
+        kgr:canvas.metadata,
+        kgr:sniff.atlas-vcf ;
+    schema1:name "CanVAS" ;
+    doap:repository <https://github.com/Brundage-VAIL/CanVAS> ;
+    skos:inScheme "genomics",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/Brundage-VAIL/CanVAS> .
+
 kgr:cardiokg a schema1:KnowledgeGraph ;
     rdfs:label "CardioKG" ;
     dcterms:created "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
@@ -4537,6 +4558,28 @@ kgr:darkkinasekb a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://darkkinome.org> .
 
+kgr:darwins-ark a schema1:DataSource ;
+    rdfs:label "Darwin's Ark" ;
+    dcterms:created "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "A community science project collecting owner-reported behavioral and physical survey data alongside whole genome sequence data for pet dogs, and releasing the combined dataset openly." ;
+    dcterms:identifier "darwins-ark" ;
+    dcterms:isReferencedBy <https://doi.org/10.1073/pnas.2421752122> ;
+    dcterms:modified "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9615> ;
+    schema1:hasPart kgr:canvas.imputed,
+        kgr:darwins-ark.genotypes,
+        kgr:darwins-ark.surveys,
+        kgr:darwins-ark.website,
+        kgr:sniff.atlas-vcf ;
+    schema1:name "Darwin's Ark" ;
+    doap:repository <https://github.com/DarwinsArk> ;
+    skos:altLabel "Darwin's Dogs" ;
+    skos:inScheme "genomics",
+        "organisms",
+        "phenotype" ;
+    adms:status "Active" ;
+    foaf:homepage <https://darwinsark.org/> .
+
 kgr:date a schema1:DataSource ;
     rdfs:label "Drugs to target pAthways by the Tissue Expression" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -5349,6 +5392,26 @@ kgr:doco a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/SPAROntologies/doco> ;
     foaf:maker kgr:spar .
+
+kgr:dog10k a schema1:DataSource ;
+    rdfs:label "Dog10K" ;
+    dcterms:created "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "An international consortium sequencing canine genomes across breeds, village dogs, and wild canids, producing a reference catalogue of canine genetic variation that serves as an imputation reference panel." ;
+    dcterms:identifier "dog10k" ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkae928>,
+        <https://doi.org/10.1186/s13059-023-03023-7> ;
+    dcterms:modified "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9615> ;
+    schema1:hasPart kgr:canvas.imputed,
+        kgr:dog10k.browser,
+        kgr:dog10k.variants,
+        kgr:dog10k.zenodo,
+        kgr:sniff.atlas-vcf ;
+    schema1:name "Dog10K" ;
+    skos:inScheme "genomics",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <http://www.dog10kgenomes.org/> .
 
 kgr:doid a schema1:Ontology ;
     rdfs:label "Human Disease Ontology" ;
@@ -8815,6 +8878,28 @@ kgr:gno a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://gnome.glyomics.org/> .
 
+kgr:gnomad a schema1:DataSource ;
+    rdfs:label "Genome Aggregation Database (gnomAD)" ;
+    dcterms:created "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "A reference catalogue of human genetic variation, aggregating and harmonizing exome and genome sequencing data from large-scale sequencing projects to provide population allele frequencies and gene-level constraint metrics." ;
+    dcterms:hasVersion "4.1.1" ;
+    dcterms:identifier "gnomad" ;
+    dcterms:isReferencedBy <https://doi.org/10.1038/s41586-020-2308-7> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:gnomad.api,
+        kgr:gnomad.browser,
+        kgr:gnomad.downloads,
+        kgr:sniff.federation-nodes ;
+    schema1:name "Genome Aggregation Database (gnomAD)" ;
+    skos:altLabel "gnomAD" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "precision medicine" ;
+    adms:status "Active" ;
+    foaf:homepage <https://gnomad.broadinstitute.org/> .
+
 kgr:gnps a schema1:DataSource ;
     rdfs:label "Global Natural Products Social Molecular Networking" ;
     dcterms:created "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
@@ -11777,7 +11862,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-08-12T17:46:25+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-08-12T19:06:28+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -14578,6 +14663,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:ncbigene.mim2gene_medgen,
         kgr:ncbigene.search,
         kgr:oma.mapping.entrez,
+        kgr:omia.gene-mappings,
         kgr:omim.mim2gene,
         kgr:pharmdb.graph,
         kgr:pharmebinet.graphml,
@@ -16059,6 +16145,28 @@ kgr:oma a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://omabrowser.org/> ;
     foaf:maker kgr:sib .
+
+kgr:omia a schema1:DataSource ;
+    rdfs:label "Online Mendelian Inheritance in Animals (OMIA)" ;
+    dcterms:created "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "A catalogue of inherited disorders, other single-locus traits, and associated genes and variants in animals, covering 786 mostly vertebrate species." ;
+    dcterms:identifier "omia" ;
+    dcterms:modified "2026-08-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:omia.browser,
+        kgr:omia.gene-mappings,
+        kgr:omia.sql-dump,
+        kgr:omia.vcf-exports,
+        kgr:omia.xml-dump,
+        kgr:sniff.federation-edges,
+        kgr:sniff.federation-nodes ;
+    schema1:name "Online Mendelian Inheritance in Animals (OMIA)" ;
+    skos:altLabel "OMIA" ;
+    skos:inScheme "agriculture",
+        "genomics",
+        "organisms",
+        "phenotype" ;
+    adms:status "Active" ;
+    foaf:homepage <https://omia.org/> .
 
 kgr:omiabis a schema1:Ontology ;
     rdfs:label "Ontologized MIABIS" ;
@@ -25778,6 +25886,16 @@ kgr:cancer-registry-kg.visualization a schema1:GraphicalInterface ;
     dcterms:description "Interactive graph visualization service using Gephi with Semantic Web Importer plugin to query Virtuoso SPARQL endpoint. Provides high-level and low-level visualizations with graph algorithms (PageRank, connected components, modularity) for pattern discovery and anomaly detection." ;
     schema1:url <https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/> .
 
+kgr:canvas.backbone a schema1:Product ;
+    rdfs:label "CanVAS backbone genotypes" ;
+    dcterms:description "The CanVAS backbone genotype set, comprising sites genotyped in at least 90% of samples prior to imputation, as a PLINK binary fileset in CanFam4 coordinates." ;
+    schema1:url <https://zenodo.org/records/19186944> .
+
+kgr:canvas.metadata a schema1:Product ;
+    rdfs:label "CanVAS sample metadata" ;
+    dcterms:description "Sample-level metadata for the CanVAS cohort, including breed assignment and contributing study for each dog." ;
+    schema1:url <https://zenodo.org/records/19186944> .
+
 kgr:cardiokg.embeddings a schema1:Product ;
     rdfs:label "CardioKG generated embeddings" ;
     dcterms:description "Generated CardioKG embeddings for gene-disease and medication-disease association prediction tasks." ;
@@ -27425,6 +27543,21 @@ kgr:darkkinasekb.synapse a schema1:Dataset ;
     dcterms:description "Bulk datasets and resources distributed through Synapse platform" ;
     schema1:url <https://www.synapse.org/#!Synapse:syn18360482/files/> .
 
+kgr:darwins-ark.genotypes a schema1:Product ;
+    rdfs:label "Darwin's Ark dog genotypes" ;
+    dcterms:description "A PLINK binary fileset of genotypes from 3,277 dog whole genomes, with sample identifiers matching the dog identifiers used in the Darwin's Ark survey data files. Sequencing data are deposited under BioProject PRJNA675863." ;
+    schema1:url <https://datadryad.org/dataset/doi:10.5061/dryad.83bk3jb4r> .
+
+kgr:darwins-ark.surveys a schema1:Product ;
+    rdfs:label "Darwin's Ark survey data" ;
+    dcterms:description "Owner-reported survey data covering behavioral and physical traits for dogs enrolled in Darwin's Ark, keyed to the same dog identifiers as the genotype data." ;
+    schema1:url <https://datadryad.org/dataset/doi:10.5061/dryad.83bk3jb4r> .
+
+kgr:darwins-ark.website a schema1:GraphicalInterface ;
+    rdfs:label "Darwin's Ark website" ;
+    dcterms:description "The Darwin's Ark website, where owners enroll dogs, complete behavioral surveys, and browse project results." ;
+    schema1:url <https://darwinsark.org/> .
+
 kgr:date.archive a schema1:Product ;
     rdfs:label "DATE Archive ZIP" ;
     dcterms:description "Archived DATE ZIP package for tissue-specific drug-target-pathway analyses." ;
@@ -27894,6 +28027,21 @@ kgr:doco.owl a schema1:OntologyProduct ;
     rdfs:label "DOCO Ontology (OWL)" ;
     dcterms:description "DOCO ontology in OWL/RDF format" ;
     schema1:url <https://svn.code.sf.net/p/sempublishing/code/DoCO/2015-07-03_doco-1_3.owl> .
+
+kgr:dog10k.browser a schema1:GraphicalInterface ;
+    rdfs:label "Dog10K database" ;
+    dcterms:description "The Dog10K database web interface, providing browsing of canine multi-omics data including variation, de novo mutations, single-cell RNA sequencing, and transcriptomic data." ;
+    schema1:url <https://dog10k.kiz.ac.cn/> .
+
+kgr:dog10k.variants a schema1:Product ;
+    rdfs:label "Dog10K variant files" ;
+    dcterms:description "Variant call files and associated annotations from the Dog10K consortium, covering single nucleotide variants, copy number variants, and structural variants across sequenced canids." ;
+    schema1:url <https://kiddlabshare.med.umich.edu/dog10K/> .
+
+kgr:dog10k.zenodo a schema1:Product ;
+    rdfs:label "Dog10K variant data archive" ;
+    dcterms:description "An archived release of Dog10K variant data and annotations deposited on Zenodo." ;
+    schema1:url <https://zenodo.org/record/8084059> .
 
 kgr:doid.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "DOID KGX graph (KG-Bioportal)" ;
@@ -30167,6 +30315,21 @@ kgr:gno.owl a schema1:OntologyProduct ;
     rdfs:label "gno.owl" ;
     dcterms:description "Glycan Naming and Subsumption Ontology, OWL format (primary)" ;
     schema1:url <http://purl.obolibrary.org/obo/gno.owl> .
+
+kgr:gnomad.api a schema1:ProgrammingInterface ;
+    rdfs:label "gnomAD GraphQL API" ;
+    dcterms:description "A public GraphQL API for programmatic queries against gnomAD variant and gene data." ;
+    schema1:url <https://gnomad.broadinstitute.org/api> .
+
+kgr:gnomad.browser a schema1:GraphicalInterface ;
+    rdfs:label "gnomAD browser" ;
+    dcterms:description "The gnomAD browser, providing search and display of variants, genes, transcripts, and regions with population allele frequencies and constraint metrics." ;
+    schema1:url <https://gnomad.broadinstitute.org/> .
+
+kgr:gnomad.downloads a schema1:Product ;
+    rdfs:label "gnomAD data downloads" ;
+    dcterms:description "Bulk downloads of gnomAD variant data, coverage, and constraint files, distributed as VCF and Hail Table formats. Also mirrored on the AWS Registry of Open Data." ;
+    schema1:url <https://gnomad.broadinstitute.org/downloads> .
 
 kgr:gnps.docs a schema1:DocumentationProduct ;
     rdfs:label "GNPS Documentation" ;
@@ -35351,6 +35514,26 @@ kgr:oma.species.txt a schema1:Product ;
     dcterms:description "Species metadata including taxonomy identifiers and genome source information" ;
     schema1:url <https://omabrowser.org/All/oma-species.txt> .
 
+kgr:omia.browser a schema1:GraphicalInterface ;
+    rdfs:label "OMIA web interface" ;
+    dcterms:description "The OMIA web interface, providing browsing and search of phenes, species, genes, and likely causal variants." ;
+    schema1:url <https://omia.org/home/> .
+
+kgr:omia.sql-dump a schema1:Product ;
+    rdfs:label "OMIA SQL database dump" ;
+    dcterms:description "A full dump of the OMIA database as MySQL SQL statements. The OMIA team asks to be contacted to discuss co-authorship arrangements for publications relying on this dump or on extended data." ;
+    schema1:url <https://omia.org/static/omia.sql.gz> .
+
+kgr:omia.vcf-exports a schema1:Product ;
+    rdfs:label "OMIA variant VCF exports" ;
+    dcterms:description "VCF exports of OMIA likely causal variants, given in the coordinates of the relevant species reference assemblies." ;
+    schema1:url <https://omia.org/download/vcf_exports/> .
+
+kgr:omia.xml-dump a schema1:Product ;
+    rdfs:label "OMIA XML database dump" ;
+    dcterms:description "A full dump of the OMIA database in XML format." ;
+    schema1:url <https://omia.org/static/omia.xml.gz> .
+
 kgr:omiabis.owl a schema1:OntologyProduct ;
     rdfs:label "omiabis.owl" ;
     dcterms:description "Ontologized MIABIS in OWL format" ;
@@ -38440,11 +38623,6 @@ kgr:smart.search a schema1:GraphicalInterface ;
 
 kgr:smithsonian-nmnh a "Organization" ;
     rdfs:label "Smithsonian Institution's National Museum of Natural History" .
-
-kgr:sniff.atlas-vcf a schema1:Product ;
-    rdfs:label "Sniff Atlas sites VCF (v1.0.1)" ;
-    dcterms:description "A sites-only VCF of the Sniff Atlas variant catalogue, containing allele frequencies for 9,667,790 imputed variants across 14,478 dogs and 188 breeds on the CanFam4 assembly, restricted to variants with allele frequency at or above 1%." ;
-    schema1:url <https://zenodo.org/records/20566358> .
 
 kgr:sniff.browser a schema1:GraphicalInterface ;
     rdfs:label "Sniff web interface" ;
@@ -42449,6 +42627,11 @@ kgr:oma.mapping.uniprot a schema1:MappingProduct ;
     dcterms:description "Mapping of OMA identifiers to UniProt accession numbers" ;
     schema1:url <https://omabrowser.org/All/oma-uniprot.txt.gz> .
 
+kgr:omia.gene-mappings a schema1:MappingProduct ;
+    rdfs:label "OMIA to NCBI Gene mappings" ;
+    dcterms:description "A CSV mapping OMIA internal gene identifiers to NCBI Gene identifiers." ;
+    schema1:url <https://omia.org/download/csv/genes/> .
+
 kgr:ontology-kp.graph a schema1:GraphProduct ;
     rdfs:label "Ontology KP Graph" ;
     dcterms:description "Ontology KP graph served over Ubergraph, a precomputed OWL-reasoned RDF merge of OBO ontologies queried via SPARQL for ontology-based Translator services." ;
@@ -43365,6 +43548,11 @@ kgr:cancer-registry-kg.ltr a schema1:GraphProduct ;
     dcterms:description "RDF-based knowledge graph containing 374,682 unique tumor records from Louisiana Tumor Registry (2000-2016) with 240 columns of NAACCR-standardized cancer data including demographics, tumor characteristics, treatment, and outcomes. Contains 90,673,527 triples stored in Virtuoso triplestore with SPARQL endpoint access." ;
     schema1:url <https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/> .
 
+kgr:canvas.imputed a schema1:Product ;
+    rdfs:label "CanVAS imputed genotypes" ;
+    dcterms:description "The imputed CanVAS genotype set as a PLINK binary fileset, restricted to variants with minor allele frequency at or above 1%, in CanFam4 coordinates." ;
+    schema1:url <https://zenodo.org/records/19186944> .
+
 kgr:catalogue-of-life.annual-releases a schema1:Product ;
     rdfs:label "Annual Releases" ;
     dcterms:description "Annual comprehensive Catalogue of Life releases (Base Release with expert curation and Extended Release with broader source integration) with permanent archiving and DOI assignment" ;
@@ -44048,15 +44236,10 @@ kgr:ptmd.total_pda a schema1:Product ;
     dcterms:description "Complete PTMD 2.0 PTM-disease association download in tab-delimited format" ;
     schema1:url <https://ptmd.biocuckoo.cn/Download/Total.zip> .
 
-kgr:sniff.federation-edges a schema1:GraphProduct ;
-    rdfs:label "Sniff KGX federation export, edges" ;
-    dcterms:description "A Biolink-conformant KGX TSV edge file for the Sniff cross-species substrate, covering dog-to-human orthology and canine disease associations. Every edge carries provenance and an evidence level, and all edges with a knowledge level of prediction are excluded." ;
-    schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_edges.tsv> .
-
-kgr:sniff.federation-nodes a schema1:GraphProduct ;
-    rdfs:label "Sniff KGX federation export, nodes" ;
-    dcterms:description "A Biolink-conformant KGX TSV node file for the Sniff cross-species substrate, covering dog and human genes and canine and human diseases. Part of the facts-only federation bundle intended for ingest into other knowledge graphs." ;
-    schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv> .
+kgr:sniff.atlas-vcf a schema1:Product ;
+    rdfs:label "Sniff Atlas sites VCF (v1.0.1)" ;
+    dcterms:description "A sites-only VCF of the Sniff Atlas variant catalogue, containing allele frequencies for 9,667,790 imputed variants across 14,478 dogs and 188 breeds on the CanFam4 assembly, restricted to variants with allele frequency at or above 1%." ;
+    schema1:url <https://zenodo.org/records/20566358> .
 
 kgr:spatialkg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph Spatial KG Graph" ;
@@ -44292,6 +44475,11 @@ kgr:redrugs.source a schema1:Product ;
     dcterms:description "ReDrugS source code (TurboGears/SADI web application and probabilistic nanopublication pipeline). The hosted service it ran (redrugs.tw.rpi.edu) is no longer available." ;
     schema1:url <https://github.com/dlmcguinness/redrugs> .
 
+kgr:sniff.federation-edges a schema1:GraphProduct ;
+    rdfs:label "Sniff KGX federation export, edges" ;
+    dcterms:description "A Biolink-conformant KGX TSV edge file for the Sniff cross-species substrate, covering dog-to-human orthology and canine disease associations. Every edge carries provenance and an evidence level, and all edges with a knowledge level of prediction are excluded." ;
+    schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_edges.tsv> .
+
 kgr:suppkg.source-data a schema1:ProcessProduct ;
     rdfs:label "SuppKG Source Data Repository" ;
     dcterms:description "Source data directory used for SuppKG in the SemRep_DS repository." ;
@@ -44381,6 +44569,11 @@ kgr:ruralkg.graph a schema1:GraphProduct ;
     rdfs:label "Rural Resilience KG graph" ;
     dcterms:description "The Rural Resilience KG graph, a cross-domain RDF knowledge graph integrating health and justice data for rural resilience. It integrates justice/crime data from the National Incident-Based Reporting System (NIBRS), substance-use survey data from the National Survey on Drug Use and Health (NSDUH), mental health treatment providers from the National Directory of Mental Health Treatment Facilities, county rurality classifications from the USDA Rural-Urban Continuum Codes, and US administrative-area geography, served via the FRINK/Proto-OKN infrastructure." ;
     schema1:url <https://frink.renci.org/registry/kgs/rural-kg/> .
+
+kgr:sniff.federation-nodes a schema1:GraphProduct ;
+    rdfs:label "Sniff KGX federation export, nodes" ;
+    dcterms:description "A Biolink-conformant KGX TSV node file for the Sniff cross-species substrate, covering dog and human genes and canine and human diseases. Part of the facts-only federation bundle intended for ingest into other knowledge graphs." ;
+    schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv> .
 
 kgr:translator.geneticskp.graph a schema1:GraphProduct ;
     rdfs:label "Translator Genetics KP KGX Graph" ;

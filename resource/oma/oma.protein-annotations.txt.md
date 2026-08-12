@@ -10,7 +10,7 @@ original_source:
   source: oma
 product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-08-06_ No Content-Length
+- File was not able to be retrieved when checked on 2026-08-12_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-07-15_ HTTP 404 error when
   accessing file

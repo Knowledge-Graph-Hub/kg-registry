@@ -24,5 +24,9 @@ secondary_source:
   source: ensembl
 - relation_type: prov:wasDerivedFrom
   source: mondo
+- relation_type: prov:wasDerivedFrom
+  source: omia
+- relation_type: prov:wasDerivedFrom
+  source: gnomad
 layout: product_detail
 ---

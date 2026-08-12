@@ -3457,6 +3457,10 @@ products:
     source: ensembl
   - relation_type: prov:wasDerivedFrom
     source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: omia
+  - relation_type: prov:wasDerivedFrom
+    source: gnomad
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -3485,6 +3489,8 @@ products:
     source: ensembl
   - relation_type: prov:wasDerivedFrom
     source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: omia
 publications:
 - authors:
   - Landrum MJ

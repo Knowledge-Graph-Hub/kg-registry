@@ -9,7 +9,7 @@ original_source:
   source: hocomoco
 product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/core/HUMAN/mono/HOCOMOCOv11_core_pwms_HUMAN_mono.txt
 warnings:
-- File was not able to be retrieved when checked on 2026-08-06_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-08-12_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-07-30_ No Content-Length
   header found

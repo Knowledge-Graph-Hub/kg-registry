@@ -11,7 +11,7 @@ original_source:
   source: chembank
 product_url: http://web.archive.org/web/20180524103413/http://chembank.broadinstitute.org/
 warnings:
-- File was not able to be retrieved when checked on 2026-08-06_ HTTP 498 error when
+- File was not able to be retrieved when checked on 2026-08-12_ HTTP 498 error when
   accessing file
 layout: product_detail
 ---

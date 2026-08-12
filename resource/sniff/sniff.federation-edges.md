@@ -27,5 +27,7 @@ secondary_source:
   source: ensembl
 - relation_type: prov:wasDerivedFrom
   source: mondo
+- relation_type: prov:wasDerivedFrom
+  source: omia
 layout: product_detail
 ---

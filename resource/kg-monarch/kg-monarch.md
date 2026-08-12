@@ -24,7 +24,7 @@ domains:
   - biomedical
 homepage_url: https://monarchinitiative.org/kg/downloads
 id: kg-monarch
-last_modified_date: '2026-08-12T17:46:25Z'
+last_modified_date: '2026-08-12T19:06:28Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

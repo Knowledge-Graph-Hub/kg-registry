@@ -75,6 +75,7 @@ cabi-isc,active,PASS
 campbell-biology,active,PASS
 cancer-genome-interpreter,active,PASS
 cancer-registry-kg,active,PASS
+canvas,active,PASS
 cardiokg,active,PASS
 cargo,active,PASS
 catalogue-of-life,active,PASS
@@ -163,6 +164,7 @@ cvx,active,PASS
 cytoscape,active,PASS
 dailymed,active,PASS
 darkkinasekb,active,PASS
+darwins-ark,active,PASS
 dbpedia,active,PASS
 dbptm,active,PASS
 dbsno,active,PASS
@@ -190,6 +192,7 @@ disgenet,active,PASS
 disprot,active,PASS
 dmd,active,PASS
 doco,active,PASS
+dog10k,active,PASS
 doid,active,PASS
 dorothea,active,PASS
 dpo,active,PASS
@@ -330,6 +333,7 @@ glytoucan,active,PASS
 gnbr,active,PASS
 gnis,active,PASS
 gno,active,PASS
+gnomad,active,PASS
 gnps,active,PASS
 go,active,PASS
 go-cam,active,PASS
@@ -580,6 +584,7 @@ ohpi,active,PASS
 okn-void,active,PASS
 ols,active,PASS
 oma,active,PASS
+omia,active,PASS
 omicsdi,active,PASS
 omim,active,PASS
 omit,active,PASS
