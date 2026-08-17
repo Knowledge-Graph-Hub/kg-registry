@@ -11,7 +11,7 @@ original_source:
   source: ncbigene
 product_url: https://omia.org/download/csv/genes/
 warnings:
-- File was not able to be retrieved when checked on 2026-08-12_ No Content-Length
+- File was not able to be retrieved when checked on 2026-08-17_ No Content-Length
   header found
 layout: product_detail
 ---

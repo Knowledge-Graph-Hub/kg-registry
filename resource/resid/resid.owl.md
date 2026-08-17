@@ -10,9 +10,9 @@ original_source:
   source: resid
 product_url: http://purl.obolibrary.org/obo/resid.owl
 warnings:
+- File was not able to be retrieved when checked on 2026-08-17_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2026-08-12_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-08-12_ Timeout connecting
-  to URL
 layout: product_detail
 ---

@@ -10,6 +10,7 @@ original_source:
   source: aop-wiki
 - relation_type: prov:hadPrimarySource
   source: aopwiki-rdf
+product_file_size: 1055
 product_url: https://raw.githubusercontent.com/marvinm2/AOPWikiRDF/master/data/AOPWikiRDF-Void.ttl
 layout: product_detail
 ---

@@ -2231,12 +2231,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
-    returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 502 error
     when accessing file'
+  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
+    returned HTTP 404 during curation on 2026-06-02.
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
@@ -2907,14 +2905,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations
@@ -3385,8 +3381,6 @@ products:
     source: ncbigene
   product_url: https://omia.org/download/csv/genes/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
     header found'
 - category: GraphProduct

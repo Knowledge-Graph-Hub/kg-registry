@@ -56,18 +56,16 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -86,18 +84,16 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -116,18 +112,16 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
     format.
@@ -146,13 +140,11 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
     format.
@@ -171,13 +163,11 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
@@ -1125,18 +1115,14 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
-    on 2026-06-02.
-  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
-    during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-08-12: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-08-17: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
 - category: GraphProduct
   compression: gzip
   description: IID annotated human protein-protein interaction download.

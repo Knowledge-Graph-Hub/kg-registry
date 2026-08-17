@@ -5469,20 +5469,28 @@ https://annotator.transltr.io/openapi.json:
   ok: true
   source: cache
   status_code: 200
+https://aopdb.rdf.bigcat-bioinformatics.org/sparql/:
+  checked_at: '2026-08-17T19:58:01Z'
+  error: null
+  ok: true
+  status_code: 200
 https://aopwiki-dashboard.vhp4safety.nl:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aopwiki-multirdf.vhp4safety.nl/sparql:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aopwiki.api.bigcat-bioinformatics.org/:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aopwiki.org/:
   checked_at: '2026-08-06T18:24:01Z'
@@ -5536,11 +5544,13 @@ https://aopwiki.rdf.bigcat-bioinformatics.org/:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aopwiki.rdf.bigcat-bioinformatics.org/sparql:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api-ccte.epa.gov/dashboard/:
   checked_at: '2026-06-02T22:35:55Z'
@@ -15067,31 +15077,37 @@ https://github.com/marvinm2/AOP-Wiki-Queries:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/marvinm2/AOP-Wiki-RDF-dashboard:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/marvinm2/AOP-Wiki-Snorql-UI:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/marvinm2/AOP-Wiki_multi-endpoint:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/marvinm2/AOPWikiRDF:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/marvinm2/AOPWikiRDF/tree/master/data:
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/mcwdsi/OMRSE:
   checked_at: '2026-08-06T18:24:53Z'
@@ -21795,6 +21811,7 @@ https://raw.githubusercontent.com/marvinm2/AOPWikiRDF/master/data/AOPWikiRDF-Voi
   checked_at: '2026-08-17T17:56:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/monarch-initiative/SLDBGen/master/SL_data.tsv:
   checked_at: '2026-08-06T18:25:36Z'

@@ -152,9 +152,9 @@ products:
 - category: ProgrammingInterface
   connection_url: https://aopdb.rdf.bigcat-bioinformatics.org/sparql/
   description: Public Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB for
-    querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology, ontology,
-    and gene interaction relationships. Originally deployed under the OpenRiskNet project
-    and now hosted by the BiGCaT department at Maastricht University.
+    querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology,
+    ontology, and gene interaction relationships. Originally deployed under the OpenRiskNet
+    project and now hosted by the BiGCaT department at Maastricht University.
   format: http
   id: aop-db.sparql
   is_public: true
@@ -178,8 +178,6 @@ products:
     source: aop-wiki
   product_url: https://github.com/biobricks-ai/aopwikirdf-kg
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface

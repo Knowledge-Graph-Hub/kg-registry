@@ -9,7 +9,7 @@ original_source:
   source: oma
 product_url: https://omabrowser.org/All/oma-species.txt
 warnings:
-- File was not able to be retrieved when checked on 2026-08-12_ No Content-Length
+- File was not able to be retrieved when checked on 2026-08-17_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-08-12_ HTTP 502 error when
   accessing file

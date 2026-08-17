@@ -9,6 +9,8 @@ original_source:
   source: propreo
 product_url: http://purl.obolibrary.org/obo/propreo.owl
 warnings:
+- File was not able to be retrieved when checked on 2026-08-17_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2026-08-12_ HTTP 404 error when
   accessing file
 layout: product_detail

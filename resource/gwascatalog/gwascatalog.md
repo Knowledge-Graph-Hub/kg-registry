@@ -1389,8 +1389,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
     header found'
 - category: Product
@@ -2492,7 +2490,7 @@ publications:
   - Cerezo M
   - Gil L
   - Groza T
-  - Güneş O
+  - "G\xFCne\u015F O"
   - Hall P
   - Hayhurst J
   - Ibrahim A

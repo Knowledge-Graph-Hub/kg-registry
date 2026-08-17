@@ -77,8 +77,6 @@ products:
     source: ncbigene
   product_url: https://omia.org/download/csv/genes/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
     header found'
 - category: GraphProduct

@@ -601,7 +601,7 @@ kgr:aop-db a schema1:Aggregator ;
     dcterms:isReferencedBy <doi:10.1016/j.taap.2018.02.006>,
         <doi:10.1038/s41597-021-00962-3> ;
     dcterms:license <https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db> ;
-    dcterms:modified "2026-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-08-17T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -623,7 +623,7 @@ kgr:aop-wiki a schema1:DataSource ;
     dcterms:hasVersion "2.8" ;
     dcterms:identifier "aop-wiki" ;
     dcterms:license <https://aopwiki.org/> ;
-    dcterms:modified "2026-05-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-08-17T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aop-db.data,
         kgr:aop-db.sparql,
@@ -635,7 +635,6 @@ kgr:aop-wiki a schema1:DataSource ;
         kgr:aop-wiki.nightly-xml,
         kgr:aop-wiki.portal,
         kgr:aop-wiki.quarterly-xml,
-        kgr:aop-wiki.sparql,
         kgr:aopwiki-rdf.converter,
         kgr:aopwiki-rdf.dashboard,
         kgr:aopwiki-rdf.grlc-api,
@@ -11904,7 +11903,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-08-17T17:46:59+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-08-17T19:48:04+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -25038,11 +25037,6 @@ kgr:aop-wiki.quarterly-xml a schema1:Product ;
     rdfs:label "AOP-Wiki Quarterly XML Snapshot" ;
     dcterms:description "Quarterly permanent XML snapshot (versioned) of AOP-Wiki content suitable for citation and archival use" ;
     schema1:url <https://aopwiki.org/downloads> .
-
-kgr:aop-wiki.sparql a schema1:ProgrammingInterface ;
-    rdfs:label "AOP-Wiki SPARQL Endpoint" ;
-    dcterms:description "OpenRiskNet SPARQL endpoint loaded with RDF converted from AOP-Wiki quarterly XML dumps for querying AOPs, key events, key event relationships, and stressors." ;
-    schema1:url <https://openrisknet.org/e-infrastructure/services/133/> .
 
 kgr:apo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "APO KGX graph (KG-Bioportal)" ;
@@ -41128,8 +41122,8 @@ kgr:afcs.intact.mitab a schema1:Product ;
 
 kgr:aop-db.sparql a schema1:ProgrammingInterface ;
     rdfs:label "AOP-DB SPARQL Endpoint" ;
-    dcterms:description "OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology, ontology, and gene interaction relationships." ;
-    schema1:url <https://openrisknet.org/e-infrastructure/services/147/> .
+    dcterms:description "Public Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology, ontology, and gene interaction relationships. Originally deployed under the OpenRiskNet project and now hosted by the BiGCaT department at Maastricht University." ;
+    schema1:url <https://aopdb.rdf.bigcat-bioinformatics.org/sparql/> .
 
 kgr:aopwiki-rdf.converter a schema1:ProcessProduct ;
     rdfs:label "AOP-Wiki XML to RDF Conversion Tool" ;

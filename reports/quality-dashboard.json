@@ -1360,7 +1360,6 @@
       "aop-wiki.nightly-xml",
       "aop-wiki.portal",
       "aop-wiki.quarterly-xml",
-      "aop-wiki.sparql",
       "aopwiki-rdf",
       "aopwiki-rdf.converter",
       "aopwiki-rdf.dashboard",
@@ -9994,7 +9993,6 @@
       "aop-wiki.nightly-xml",
       "aop-wiki.portal",
       "aop-wiki.quarterly-xml",
-      "aop-wiki.sparql",
       "aopwiki-rdf.converter",
       "aopwiki-rdf.dashboard",
       "aopwiki-rdf.grlc-api",
@@ -16017,7 +16015,6 @@
       "simap.portal",
       "ssurgo.download",
       "sty.semantic-groups",
-      "tahe.obo",
       "tahe.owl",
       "tcdb.download.acc2tcid",
       "tcdb.download.go",
@@ -16202,7 +16199,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-08-17T17:55:58Z",
+  "generated_at": "2026-08-17T19:57:56Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 161,
     "with_evaluation_page": 127,
@@ -16210,20 +16207,20 @@
   },
   "links": {
     "broken_urls": 274,
-    "cache_hits": 4591,
+    "cache_hits": 4601,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4329,
-    "live_checked_urls": 12,
+    "healthy_urls": 4328,
+    "live_checked_urls": 1,
     "mode": "live",
-    "total_unique_urls": 4603,
+    "total_unique_urls": 4602,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 235,
     "missing_original_source": 0,
     "missing_product_url": 22,
-    "total": 4149,
-    "with_retrieval_warning": 126
+    "total": 4148,
+    "with_retrieval_warning": 125
   },
   "resource_count": 1026,
   "resources": {

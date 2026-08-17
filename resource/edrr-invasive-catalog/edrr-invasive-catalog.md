@@ -33,8 +33,6 @@ products:
     source: edrr-invasive-catalog
   product_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
     header found'
 - category: GraphProduct
