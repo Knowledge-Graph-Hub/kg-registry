@@ -23,7 +23,7 @@ domains:
 - pathways
 homepage_url: https://aopwiki.org/
 id: aop-wiki
-last_modified_date: '2026-05-26T00:00:00Z'
+last_modified_date: '2026-08-17T00:00:00Z'
 layout: resource_detail
 license:
   id: https://aopwiki.org/
@@ -40,19 +40,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: aop-wiki
   product_url: https://aopwiki.org/
-- category: ProgrammingInterface
-  connection_url: https://aopwiki-rdf.prod.openrisknet.org/
-  description: OpenRiskNet SPARQL endpoint loaded with RDF converted from AOP-Wiki
-    quarterly XML dumps for querying AOPs, key events, key event relationships, and
-    stressors.
-  format: http
-  id: aop-wiki.sparql
-  is_public: true
-  name: AOP-Wiki SPARQL Endpoint
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: aop-wiki
-  product_url: https://openrisknet.org/e-infrastructure/services/133/
 - category: Product
   description: Quarterly permanent XML snapshot (versioned) of AOP-Wiki content suitable
     for citation and archival use
@@ -163,10 +150,11 @@ products:
     source: toxcast
   product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
 - category: ProgrammingInterface
-  connection_url: https://aopdb.rdf.bigcat-bioinformatics.org/
-  description: OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB
-    for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology,
-    ontology, and gene interaction relationships.
+  connection_url: https://aopdb.rdf.bigcat-bioinformatics.org/sparql/
+  description: Public Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB for
+    querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology, ontology,
+    and gene interaction relationships. Originally deployed under the OpenRiskNet project
+    and now hosted by the BiGCaT department at Maastricht University.
   format: http
   id: aop-db.sparql
   is_public: true
@@ -176,7 +164,7 @@ products:
     source: aop-db
   - relation_type: prov:hadPrimarySource
     source: aop-wiki
-  product_url: https://openrisknet.org/e-infrastructure/services/147/
+  product_url: https://aopdb.rdf.bigcat-bioinformatics.org/sparql/
 - category: GraphProduct
   description: RDF knowledge graph (Turtle) repackaging AOP-Wiki data as an open knowledge
     graph
