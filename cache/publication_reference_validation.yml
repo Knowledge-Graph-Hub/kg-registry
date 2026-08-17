@@ -233,6 +233,24 @@ entries:
     source_path: resource/aop-db/aop-db.md
     status: valid
     warnings: []
+  resource/aopwiki-rdf/aopwiki-rdf.md#publication[0]#DOI:10.1089/aivt.2021.0010:
+    checked_at: '2026-08-17T17:39:15Z'
+    errors: []
+    fingerprint: 376f23cbfae0386fbac6ae0e2328f4a80ef715724a8304378f6adcfa875e824f
+    publication_index: 0
+    reference_id: DOI:10.1089/aivt.2021.0010
+    source_path: resource/aopwiki-rdf/aopwiki-rdf.md
+    status: valid
+    warnings: []
+  resource/aopwiki-rdf/aopwiki-rdf.md#publication[1]#DOI:10.5281/zenodo.13353286:
+    checked_at: '2026-08-17T17:40:02Z'
+    errors: []
+    fingerprint: 49166ec6b569dc133cdbf8438821388f808a99ae020e5bed42e15c46a5a6d5e1
+    publication_index: 1
+    reference_id: DOI:10.5281/zenodo.13353286
+    source_path: resource/aopwiki-rdf/aopwiki-rdf.md
+    status: valid
+    warnings: []
   resource/apo/apo.md#publication[0]#PMID:20157474:
     checked_at: '2026-08-06T18:16:32Z'
     errors: []
