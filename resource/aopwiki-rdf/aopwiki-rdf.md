@@ -175,9 +175,9 @@ version: '2026.08.15'
 
 ## Overview
 
-AOP-Wiki RDF is a semantic web representation of the [AOP-Wiki](/resource/aop-wiki),
-the community authoring and curation interface of the Adverse Outcome Pathway
-Knowledge Base (AOP-KB). The weekly AOP-Wiki XML export is converted to RDF/Turtle
+AOP-Wiki RDF is a semantic web representation of the AOP-Wiki, the community
+authoring and curation interface of the Adverse Outcome Pathway Knowledge Base
+(AOP-KB). The weekly AOP-Wiki XML export is converted to RDF/Turtle
 using the AOP Ontology (aopo) alongside Dublin Core, CHEMINF and NCIT, making the
 mechanistic toxicology content of the AOP-Wiki queryable with SPARQL.
 
