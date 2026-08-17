@@ -192,6 +192,167 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
+    when accessing file'
+- category: ProgrammingInterface
+  connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
+  description: Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki RDF
+    graph, including the gene-mapping and cross-reference enrichments. Supports SELECT,
+    CONSTRUCT, ASK and DESCRIBE over HTTP GET/POST with JSON, XML, CSV and Turtle
+    result serializations, and federated queries via SERVICE. Reloaded weekly from
+    the generated Turtle files.
+  format: http
+  id: aopwiki-rdf.sparql
+  is_public: true
+  name: AOP-Wiki RDF SPARQL Endpoint
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
+- category: GraphicalInterface
+  description: SNORQL web interface ("AOP-Wiki RDF Explorer") for interactive SPARQL
+    querying of the AOP-Wiki RDF endpoint. Provides a CodeMirror SPARQL editor with
+    syntax highlighting, a browsable library of curated and parameterized example
+    queries, endpoint health indication, result browsing with dereferenceable URIs,
+    and CSV/JSON/XML export.
+  format: http
+  id: aopwiki-rdf.snorql
+  name: AOP-Wiki RDF SNORQL Interface
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_url: https://aopwiki.rdf.bigcat-bioinformatics.org/
+  repository: https://github.com/marvinm2/AOP-Wiki-Snorql-UI
+- category: GraphProduct
+  description: The AOP-Wiki RDF dataset in RDF/Turtle, covering AOPs, key events,
+    key event relationships, biological events, stressors and chemicals converted
+    from the AOP-Wiki XML export, together with the gene mappings (HGNC approved symbols
+    resolved to Ensembl, NCBI Gene, UniProt and Protein Ontology identifiers via BridgeDb)
+    and the chemical and protein cross-reference enrichments. Distributed as Turtle
+    files in the data/ directory of the conversion repository (AOPWikiRDF.ttl, AOPWikiRDF-Genes.ttl,
+    AOPWikiRDF-Enriched.ttl); all of them are loaded together into the SPARQL endpoint
+    and are meant to be used as one dataset. Regenerated weekly.
+  format: ttl
+  id: aopwiki-rdf.ttl
+  latest_version: 2026.08.15
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: AOP-Wiki RDF Turtle Dataset
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  - relation_type: prov:used
+    source: ensembl
+  - relation_type: prov:used
+    source: hgnc
+  - relation_type: prov:used
+    source: ncbigene
+  - relation_type: prov:used
+    source: pr
+  - relation_type: prov:used
+    source: uniprot
+  product_url: https://github.com/marvinm2/AOPWikiRDF/tree/master/data
+  repository: https://github.com/marvinm2/AOPWikiRDF
+- category: Product
+  description: VoID metadata describing the AOP-Wiki RDF dataset, its triple counts,
+    licence, provenance, update frequency and SPARQL endpoint.
+  format: ttl
+  id: aopwiki-rdf.void
+  name: AOP-Wiki RDF VoID Description
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_file_size: 1055
+  product_url: https://raw.githubusercontent.com/marvinm2/AOPWikiRDF/master/data/AOPWikiRDF-Void.ttl
+- category: ProcessProduct
+  description: Python conversion pipeline that transforms the AOP-Wiki XML export
+    into RDF/Turtle, performs the three-stage gene-mapping algorithm, and runs Turtle
+    syntax and URI-resolvability quality control. Executed weekly by GitHub Actions
+    (Saturdays 08:00 UTC). Code is MIT licensed.
+  format: http
+  id: aopwiki-rdf.converter
+  license:
+    id: https://opensource.org/licenses/MIT
+    label: MIT License
+  name: AOP-Wiki XML to RDF Conversion Tool
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_url: https://github.com/marvinm2/AOPWikiRDF
+  repository: https://github.com/marvinm2/AOPWikiRDF
+- category: ProgrammingInterface
+  connection_url: https://aopwiki-multirdf.vhp4safety.nl/sparql
+  description: Companion SPARQL endpoint holding every quarterly AOP-Wiki snapshot
+    from 2018-04-01 onwards as separate named graphs (http://aopwiki.org/graph/YYYY-MM-DD),
+    33 versions at present, for tracking how AOP-Wiki content evolves over time.
+  format: http
+  id: aopwiki-rdf.multiversion-sparql
+  is_public: true
+  name: AOP-Wiki RDF Multi-Version SPARQL Endpoint
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_url: https://aopwiki-multirdf.vhp4safety.nl/sparql
+  repository: https://github.com/marvinm2/AOP-Wiki_multi-endpoint
+- category: GraphicalInterface
+  description: Web dashboard visualizing the content and growth of AOP-Wiki RDF across
+    all quarterly versions, with entity counts, key event component and ontology usage
+    breakdowns, network statistics, completeness metrics and an interactive AOP network
+    view. Every plot exposes the SPARQL query behind it and offers CSV export.
+  format: http
+  id: aopwiki-rdf.dashboard
+  name: AOP-Wiki RDF Dashboard
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_url: https://aopwiki-dashboard.vhp4safety.nl
+  repository: https://github.com/marvinm2/AOP-Wiki-RDF-dashboard
+- category: ProgrammingInterface
+  connection_url: https://aopwiki.api.bigcat-bioinformatics.org/
+  description: grlc-generated REST API that exposes the curated AOP-Wiki SPARQL example
+    queries as parameterized HTTP endpoints with a Swagger/OpenAPI description, for
+    users who prefer REST over writing SPARQL.
+  format: http
+  id: aopwiki-rdf.grlc-api
+  is_public: true
+  name: AOP-Wiki RDF grlc REST API
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_url: https://aopwiki.api.bigcat-bioinformatics.org/
+  repository: https://github.com/marvinm2/AOP-Wiki-Queries
+- category: DocumentationProduct
+  description: Curated library of documented SPARQL example queries for AOP-Wiki RDF,
+    organised by category (metadata, AOPs, key events, KERs, stressors, chemicals,
+    data export, federated queries). Consumed by both the SNORQL interface and the
+    grlc REST API.
+  format: http
+  id: aopwiki-rdf.queries
+  name: AOP-Wiki SPARQL Query Library
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  product_url: https://github.com/marvinm2/AOP-Wiki-Queries
+  repository: https://github.com/marvinm2/AOP-Wiki-Queries
 taxon:
 - NCBITaxon:9606
 version: '2.8'

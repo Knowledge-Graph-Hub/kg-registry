@@ -111,13 +111,15 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
     canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
     but is not currently served.'
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: Product
   description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
     has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
@@ -220,6 +222,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: Text descriptions for OMA groups
@@ -233,13 +237,15 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
     canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
     but is not currently served.'
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 publications:
 - authors:
   - Adrian M Altenhoff

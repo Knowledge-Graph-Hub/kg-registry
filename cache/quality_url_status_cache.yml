@@ -4650,6 +4650,7 @@ http://www.dog10kgenomes.org/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.dukeontologygroup.org/Projects.html:
   checked_at: '2026-08-06T18:23:50Z'
@@ -5468,6 +5469,21 @@ https://annotator.transltr.io/openapi.json:
   ok: true
   source: cache
   status_code: 200
+https://aopwiki-dashboard.vhp4safety.nl:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://aopwiki-multirdf.vhp4safety.nl/sparql:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://aopwiki.api.bigcat-bioinformatics.org/:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
 https://aopwiki.org/:
   checked_at: '2026-08-06T18:24:01Z'
   error: null
@@ -5515,6 +5531,16 @@ https://aopwiki.org/handbooks/4:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://aopwiki.rdf.bigcat-bioinformatics.org/:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://aopwiki.rdf.bigcat-bioinformatics.org/sparql:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
   status_code: 200
 https://api-ccte.epa.gov/dashboard/:
   checked_at: '2026-06-02T22:35:55Z'
@@ -7882,6 +7908,7 @@ https://darwinsark.org/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data-interop.era.europa.eu/era-vocabulary/:
   checked_at: '2026-08-06T22:06:39Z'
@@ -8390,6 +8417,7 @@ https://datadryad.org/dataset/doi:10.5061/dryad.83bk3jb4r:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4:
   checked_at: '2026-08-06T18:24:15Z'
@@ -8953,6 +8981,7 @@ https://dog10k.kiz.ac.cn/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://doi.org/10.1016/j.celrep.2016.10.061:
   checked_at: '2026-08-06T18:24:23Z'
@@ -12193,6 +12222,7 @@ https://github.com/Brundage-VAIL/CanVAS:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/CCMS-UCSD/GNPSDocumentation:
   checked_at: '2026-08-06T18:24:38Z'
@@ -12282,6 +12312,7 @@ https://github.com/DarwinsArk:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/DessimozLab/pyomabrowser:
   checked_at: '2026-08-06T18:24:38Z'
@@ -15032,6 +15063,36 @@ https://github.com/marcello-deluca/medic/releases/tag/v1.0.1:
   ok: true
   source: cache
   status_code: 200
+https://github.com/marvinm2/AOP-Wiki-Queries:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/marvinm2/AOP-Wiki-RDF-dashboard:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/marvinm2/AOP-Wiki-Snorql-UI:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/marvinm2/AOP-Wiki_multi-endpoint:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/marvinm2/AOPWikiRDF:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/marvinm2/AOPWikiRDF/tree/master/data:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/mcwdsi/OMRSE:
   checked_at: '2026-08-06T18:24:53Z'
   error: null
@@ -17712,16 +17773,19 @@ https://gnomad.broadinstitute.org/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gnomad.broadinstitute.org/api:
   checked_at: '2026-08-12T19:15:32Z'
   error: HEAD returned HTTP 400
   ok: false
+  source: cache
   status_code: 400
 https://gnomad.broadinstitute.org/downloads:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gnome.glyomics.org/:
   checked_at: '2026-08-06T18:24:58Z'
@@ -18864,6 +18928,7 @@ https://kiddlabshare.med.umich.edu/dog10K/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://kidsfirstdrc.org/:
   checked_at: '2026-08-06T18:25:14Z'
@@ -20383,31 +20448,37 @@ https://omia.org/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://omia.org/download/csv/genes/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://omia.org/download/vcf_exports/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://omia.org/home/:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://omia.org/static/omia.sql.gz:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://omia.org/static/omia.xml.gz:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://omnipathdb.org/:
   checked_at: '2026-08-06T18:25:26Z'
@@ -21719,6 +21790,11 @@ https://raw.githubusercontent.com/glycoinfo/GlycoRDF/master/ontology/glycan.owl:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://raw.githubusercontent.com/marvinm2/AOPWikiRDF/master/data/AOPWikiRDF-Void.ttl:
+  checked_at: '2026-08-17T17:56:03Z'
+  error: null
+  ok: true
   status_code: 200
 https://raw.githubusercontent.com/monarch-initiative/SLDBGen/master/SL_data.tsv:
   checked_at: '2026-08-06T18:25:36Z'
@@ -31073,6 +31149,7 @@ https://zenodo.org/record/8084059:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zenodo.org/records/10103842:
   checked_at: '2026-08-06T18:26:35Z'
@@ -31162,6 +31239,7 @@ https://zenodo.org/records/19186944:
   checked_at: '2026-08-12T19:15:32Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zenodo.org/records/20566358:
   checked_at: '2026-08-12T17:55:37Z'

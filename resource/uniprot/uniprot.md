@@ -97,10 +97,12 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -762,8 +764,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3518,6 +3520,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized
@@ -3656,6 +3660,8 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 500 error
+    when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
     entries, proteomics evidence, variants, expression, interactions, localization,
@@ -4666,12 +4672,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
   format: kgx-jsonl
@@ -5127,6 +5135,39 @@ products:
     source: uniprot
   product_file_size: 7213
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UNIPROT.tar.gz
+- category: GraphProduct
+  description: The AOP-Wiki RDF dataset in RDF/Turtle, covering AOPs, key events,
+    key event relationships, biological events, stressors and chemicals converted
+    from the AOP-Wiki XML export, together with the gene mappings (HGNC approved symbols
+    resolved to Ensembl, NCBI Gene, UniProt and Protein Ontology identifiers via BridgeDb)
+    and the chemical and protein cross-reference enrichments. Distributed as Turtle
+    files in the data/ directory of the conversion repository (AOPWikiRDF.ttl, AOPWikiRDF-Genes.ttl,
+    AOPWikiRDF-Enriched.ttl); all of them are loaded together into the SPARQL endpoint
+    and are meant to be used as one dataset. Regenerated weekly.
+  format: ttl
+  id: aopwiki-rdf.ttl
+  latest_version: 2026.08.15
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: AOP-Wiki RDF Turtle Dataset
+  original_source:
+  - relation_type: prov:wasDerivedFrom
+    source: aop-wiki
+  - relation_type: prov:hadPrimarySource
+    source: aopwiki-rdf
+  - relation_type: prov:used
+    source: ensembl
+  - relation_type: prov:used
+    source: hgnc
+  - relation_type: prov:used
+    source: ncbigene
+  - relation_type: prov:used
+    source: pr
+  - relation_type: prov:used
+    source: uniprot
+  product_url: https://github.com/marvinm2/AOPWikiRDF/tree/master/data
+  repository: https://github.com/marvinm2/AOPWikiRDF
 publications:
 - authors:
   - Alex Bateman

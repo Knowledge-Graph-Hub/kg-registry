@@ -8,6 +8,7 @@ name: OMIA XML database dump
 original_source:
 - relation_type: prov:hadPrimarySource
   source: omia
+product_file_size: 261825107
 product_url: https://omia.org/static/omia.xml.gz
 layout: product_detail
 ---

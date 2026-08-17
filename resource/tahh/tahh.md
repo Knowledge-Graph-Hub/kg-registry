@@ -31,11 +31,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tahh
   product_url: http://purl.obolibrary.org/obo/tahh.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-22: Timeout connecting
-    to URL'
+  warnings: []
 - category: OntologyProduct
   description: Terminology of Anatomy of Human Histology in OBO format
   format: obo
@@ -45,9 +41,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tahh
   product_url: http://purl.obolibrary.org/obo/tahh.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
-    when accessing file'
+  warnings: []
 publications: []
 taxon:
 - NCBITaxon:9606

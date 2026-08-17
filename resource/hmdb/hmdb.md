@@ -1742,6 +1742,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: Public library of pathway diagrams that can be browsed, viewed, and
     used as templates for creating new pathways
@@ -2987,7 +2989,7 @@ publications:
   - Mandal R
   - Karu N
   - Dambrova M
-  - "Schi\xF6th HB"
+  - Schiöth HB
   - Greiner R
   - Gautam V
   doi: 10.1093/nar/gkab1062

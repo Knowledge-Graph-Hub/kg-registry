@@ -26,6 +26,7 @@ aminode	Aminode	DataSource	http://www.aminode.org/	resource/aminode/aminode.md
 amphx	The Amphioxus Development and Anatomy Ontology	Ontology	https://github.com/EBISPOT/amphx_ontology	resource/amphx/amphx.md
 aop-db	AOP-DB	Aggregator	https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db	resource/aop-db/aop-db.md
 aop-wiki	AOP-Wiki	DataSource	https://aopwiki.org/	resource/aop-wiki/aop-wiki.md
+aopwiki-rdf	AOP-Wiki RDF	KnowledgeGraph	https://aopwiki.rdf.bigcat-bioinformatics.org/	resource/aopwiki-rdf/aopwiki-rdf.md
 apo	Ascomycete phenotype ontology	Ontology	http://www.yeastgenome.org/	resource/apo/apo.md
 apollo_sv	Apollo Structured Vocabulary	Ontology	https://github.com/ApolloDev/apollo-sv	resource/apollo_sv/apollo_sv.md
 araport	Araport (Arabidopsis Information Portal)	DataSource	https://www.araport.org/	resource/araport/araport.md

@@ -35,6 +35,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: GraphProduct
   description: The Wildlife-KN knowledge graph, an integrative RDF network of managed
     species and their habitats, environmental factors, and climate context, built

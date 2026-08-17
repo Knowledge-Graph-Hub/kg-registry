@@ -65,12 +65,14 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: Timeout connecting
     to URL'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
     but this endpoint serves data, not Python source code.
@@ -93,12 +95,14 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited table mapping systems, subfamilies, and families to superfamilies.
     The URL ends in .py, but this endpoint serves data, not Python source code.
@@ -121,12 +125,14 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited annotation mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -138,12 +144,14 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited structure mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -155,12 +163,14 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited protein family mapping table for TC systems. The URL
     ends in .py, but this endpoint serves data, not Python source code.
@@ -172,12 +182,14 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-06: No Content-Length
     header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv

@@ -10,6 +10,7 @@ name: OMIA SQL database dump
 original_source:
 - relation_type: prov:hadPrimarySource
   source: omia
+product_file_size: 197714331
 product_url: https://omia.org/static/omia.sql.gz
 layout: product_detail
 ---

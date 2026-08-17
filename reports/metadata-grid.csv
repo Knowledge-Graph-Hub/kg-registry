@@ -23,6 +23,7 @@ amphx,active,PASS
 annotator,active,PASS
 aop-db,active,PASS
 aop-wiki,active,PASS
+aopwiki-rdf,active,PASS
 apo,active,PASS
 apollo_sv,active,PASS
 aragorn,active,PASS

@@ -636,6 +636,15 @@ kgr:aop-wiki a schema1:DataSource ;
         kgr:aop-wiki.portal,
         kgr:aop-wiki.quarterly-xml,
         kgr:aop-wiki.sparql,
+        kgr:aopwiki-rdf.converter,
+        kgr:aopwiki-rdf.dashboard,
+        kgr:aopwiki-rdf.grlc-api,
+        kgr:aopwiki-rdf.multiversion-sparql,
+        kgr:aopwiki-rdf.queries,
+        kgr:aopwiki-rdf.snorql,
+        kgr:aopwiki-rdf.sparql,
+        kgr:aopwiki-rdf.ttl,
+        kgr:aopwiki-rdf.void,
         kgr:biobricks-aopwiki.graph ;
     schema1:name "AOP-Wiki" ;
     skos:inScheme "environment",
@@ -643,6 +652,37 @@ kgr:aop-wiki a schema1:DataSource ;
         "toxicology" ;
     adms:status "Active" ;
     foaf:homepage <https://aopwiki.org/> .
+
+kgr:aopwiki-rdf a schema1:KnowledgeGraph ;
+    rdfs:label "AOP-Wiki RDF" ;
+    dcterms:created "2026-08-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "AOP-Wiki RDF is an RDF representation of the AOP-Wiki, the authoring interface of the Adverse Outcome Pathway Knowledge Base. The AOP-Wiki XML export is converted to RDF/Turtle every week using the AOP Ontology (aopo) together with Dublin Core, CHEMINF and NCIT, and is enriched with gene mappings (gene names in key events matched to HGNC symbols and resolved to Ensembl, NCBI Gene, UniProt and Protein Ontology identifiers through BridgeDb) and chemical cross-references. AOPs, key events, key event relationships, biological events, stressors and chemicals get identifiers.org URIs and are linked to ChEBI, GO, PATO, UBERON, CL, NCBITaxon and HGNC. The 2026.08.15 release has about 340,000 triples, covering 595 AOPs, 1,595 key events, 2,360 key event relationships, 754 stressors and 430 chemicals. The data is served from a public SPARQL endpoint with a SNORQL query interface on top of it. A grlc REST API built from the same curated query library, a second endpoint holding every quarterly AOP-Wiki snapshot since 2018 as named graphs, and a dashboard for version-over-version trends are also available." ;
+    dcterms:hasVersion "2026.08.15" ;
+    dcterms:identifier "aopwiki-rdf" ;
+    dcterms:isReferencedBy <doi:10.1089/aivt.2021.0010>,
+        <doi:10.5281/zenodo.13353286> ;
+    dcterms:language "en" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-08-17T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:aopwiki-rdf.converter,
+        kgr:aopwiki-rdf.dashboard,
+        kgr:aopwiki-rdf.grlc-api,
+        kgr:aopwiki-rdf.multiversion-sparql,
+        kgr:aopwiki-rdf.queries,
+        kgr:aopwiki-rdf.snorql,
+        kgr:aopwiki-rdf.sparql,
+        kgr:aopwiki-rdf.ttl,
+        kgr:aopwiki-rdf.void ;
+    schema1:name "AOP-Wiki RDF" ;
+    doap:repository <https://github.com/marvinm2/AOPWikiRDF> ;
+    skos:altLabel "AOP-Wiki RDF Explorer",
+        "AOPWikiRDF" ;
+    skos:inScheme "chemistry and biochemistry",
+        "environment",
+        "pathways",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://aopwiki.rdf.bigcat-bioinformatics.org/> .
 
 kgr:apo a schema1:Ontology ;
     rdfs:label "Ascomycete phenotype ontology" ;
@@ -6587,6 +6627,7 @@ kgr:ensembl a schema1:DataSource ;
         <NCBITaxon:7955>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:aop-db.data,
+        kgr:aopwiki-rdf.ttl,
         kgr:archs4.human.gene_counts,
         kgr:archs4.human.transcript_counts,
         kgr:archs4.mouse.gene_counts,
@@ -9701,7 +9742,8 @@ kgr:hgnc a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:automat.hgnc,
+    schema1:hasPart kgr:aopwiki-rdf.ttl,
+        kgr:automat.hgnc,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
@@ -11862,7 +11904,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-08-12T19:06:28+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-08-17T17:46:59+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -14627,6 +14669,7 @@ kgr:ncbigene a schema1:DataSource ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:aop-db.data,
+        kgr:aopwiki-rdf.ttl,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
@@ -18613,7 +18656,8 @@ kgr:pr a schema1:Ontology ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/27899649> ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:drugmechdb.graph,
+    schema1:hasPart kgr:aopwiki-rdf.ttl,
+        kgr:drugmechdb.graph,
         kgr:efo.obo,
         kgr:efo.owl,
         kgr:mechreponet.kg,
@@ -23431,7 +23475,8 @@ kgr:uniprot a schema1:DataSource ;
         <NCBITaxon:7227>,
         <NCBITaxon:7955>,
         <NCBITaxon:9606> ;
-    schema1:hasPart kgr:biobtree.api,
+    schema1:hasPart kgr:aopwiki-rdf.ttl,
+        kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
@@ -41086,6 +41131,46 @@ kgr:aop-db.sparql a schema1:ProgrammingInterface ;
     dcterms:description "OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology, ontology, and gene interaction relationships." ;
     schema1:url <https://openrisknet.org/e-infrastructure/services/147/> .
 
+kgr:aopwiki-rdf.converter a schema1:ProcessProduct ;
+    rdfs:label "AOP-Wiki XML to RDF Conversion Tool" ;
+    dcterms:description "Python conversion pipeline that transforms the AOP-Wiki XML export into RDF/Turtle, performs the three-stage gene-mapping algorithm, and runs Turtle syntax and URI-resolvability quality control. Executed weekly by GitHub Actions (Saturdays 08:00 UTC). Code is MIT licensed." ;
+    schema1:url <https://github.com/marvinm2/AOPWikiRDF> .
+
+kgr:aopwiki-rdf.dashboard a schema1:GraphicalInterface ;
+    rdfs:label "AOP-Wiki RDF Dashboard" ;
+    dcterms:description "Web dashboard visualizing the content and growth of AOP-Wiki RDF across all quarterly versions, with entity counts, key event component and ontology usage breakdowns, network statistics, completeness metrics and an interactive AOP network view. Every plot exposes the SPARQL query behind it and offers CSV export." ;
+    schema1:url <https://aopwiki-dashboard.vhp4safety.nl> .
+
+kgr:aopwiki-rdf.grlc-api a schema1:ProgrammingInterface ;
+    rdfs:label "AOP-Wiki RDF grlc REST API" ;
+    dcterms:description "grlc-generated REST API that exposes the curated AOP-Wiki SPARQL example queries as parameterized HTTP endpoints with a Swagger/OpenAPI description, for users who prefer REST over writing SPARQL." ;
+    schema1:url <https://aopwiki.api.bigcat-bioinformatics.org/> .
+
+kgr:aopwiki-rdf.multiversion-sparql a schema1:ProgrammingInterface ;
+    rdfs:label "AOP-Wiki RDF Multi-Version SPARQL Endpoint" ;
+    dcterms:description "Companion SPARQL endpoint holding every quarterly AOP-Wiki snapshot from 2018-04-01 onwards as separate named graphs (http://aopwiki.org/graph/YYYY-MM-DD), 33 versions at present, for tracking how AOP-Wiki content evolves over time." ;
+    schema1:url <https://aopwiki-multirdf.vhp4safety.nl/sparql> .
+
+kgr:aopwiki-rdf.queries a schema1:DocumentationProduct ;
+    rdfs:label "AOP-Wiki SPARQL Query Library" ;
+    dcterms:description "Curated library of documented SPARQL example queries for AOP-Wiki RDF, organised by category (metadata, AOPs, key events, KERs, stressors, chemicals, data export, federated queries). Consumed by both the SNORQL interface and the grlc REST API." ;
+    schema1:url <https://github.com/marvinm2/AOP-Wiki-Queries> .
+
+kgr:aopwiki-rdf.snorql a schema1:GraphicalInterface ;
+    rdfs:label "AOP-Wiki RDF SNORQL Interface" ;
+    dcterms:description "SNORQL web interface (\"AOP-Wiki RDF Explorer\") for interactive SPARQL querying of the AOP-Wiki RDF endpoint. Provides a CodeMirror SPARQL editor with syntax highlighting, a browsable library of curated and parameterized example queries, endpoint health indication, result browsing with dereferenceable URIs, and CSV/JSON/XML export." ;
+    schema1:url <https://aopwiki.rdf.bigcat-bioinformatics.org/> .
+
+kgr:aopwiki-rdf.sparql a schema1:ProgrammingInterface ;
+    rdfs:label "AOP-Wiki RDF SPARQL Endpoint" ;
+    dcterms:description "Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki RDF graph, including the gene-mapping and cross-reference enrichments. Supports SELECT, CONSTRUCT, ASK and DESCRIBE over HTTP GET/POST with JSON, XML, CSV and Turtle result serializations, and federated queries via SERVICE. Reloaded weekly from the generated Turtle files." ;
+    schema1:url <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql> .
+
+kgr:aopwiki-rdf.void a schema1:Product ;
+    rdfs:label "AOP-Wiki RDF VoID Description" ;
+    dcterms:description "VoID metadata describing the AOP-Wiki RDF dataset, its triple counts, licence, provenance, update frequency and SPARQL endpoint." ;
+    schema1:url <https://raw.githubusercontent.com/marvinm2/AOPWikiRDF/master/data/AOPWikiRDF-Void.ttl> .
+
 kgr:atom.kg a schema1:GraphProduct ;
     rdfs:label "ATOM Knowledge Graph" ;
     dcterms:description "Anti-tumor biomaterial knowledge graph constructed from biomedicine literature, containing structured relationships among anti-tumor entities extracted through entity recognition, sentence simplification, triple extraction, and predicate mapping." ;
@@ -44579,6 +44664,11 @@ kgr:translator.geneticskp.graph a schema1:GraphProduct ;
     rdfs:label "Translator Genetics KP KGX Graph" ;
     dcterms:description "KGX JSONL graph package for Genetics KP distributed via the NCATS Translator release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6; source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
     schema1:url <https://kgx-storage.rtx.ai/releases/geneticskp/latest/> .
+
+kgr:aopwiki-rdf.ttl a schema1:GraphProduct ;
+    rdfs:label "AOP-Wiki RDF Turtle Dataset" ;
+    dcterms:description "The AOP-Wiki RDF dataset in RDF/Turtle, covering AOPs, key events, key event relationships, biological events, stressors and chemicals converted from the AOP-Wiki XML export, together with the gene mappings (HGNC approved symbols resolved to Ensembl, NCBI Gene, UniProt and Protein Ontology identifiers via BridgeDb) and the chemical and protein cross-reference enrichments. Distributed as Turtle files in the data/ directory of the conversion repository (AOPWikiRDF.ttl, AOPWikiRDF-Genes.ttl, AOPWikiRDF-Enriched.ttl); all of them are loaded together into the SPARQL endpoint and are meant to be used as one dataset. Regenerated weekly." ;
+    schema1:url <https://github.com/marvinm2/AOPWikiRDF/tree/master/data> .
 
 kgr:drkg.graph a schema1:GraphProduct ;
     rdfs:label "DRKG graph" ;

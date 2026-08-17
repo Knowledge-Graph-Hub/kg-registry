@@ -12,6 +12,8 @@ product_url: https://omabrowser.org/All/group-descriptions.txt.gz
 warnings:
 - File was not able to be retrieved when checked on 2026-08-12_ No Content-Length
   header found
+- File was not able to be retrieved when checked on 2026-08-12_ HTTP 502 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-07-15_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-07-01_ HTTP 404. This canonical

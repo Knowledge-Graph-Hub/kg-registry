@@ -897,6 +897,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
