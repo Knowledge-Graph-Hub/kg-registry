@@ -307,3 +307,35 @@ def test_reaper_ignores_resources_outside_the_processed_set(
 
     assert not (tmp_path / "resource" / "alpha" / "alpha.orphan.md").exists()
     assert (tmp_path / "resource" / "beta" / "beta.orphan.md").exists()
+
+
+def test_validate_markdown_skips_pages_reaped_during_the_build(
+    extract_metadata_module,
+    tmp_path,
+    capsys,
+):
+    """The build's file list is a snapshot, so it can name a page the concat reaped.
+
+    tmp/resource-files.txt is written by `find` before the concat runs, and the
+    concat deletes the page for any product its resource no longer lists. Reading
+    the snapshot afterwards used to blow up with FileNotFoundError and fail the
+    whole registry build.
+    """
+    reaped = tmp_path / "resource" / "alpha" / "alpha.reaped.md"
+
+    extract_metadata_module.validate_markdown(SimpleNamespace(files=[str(reaped)]))
+
+    assert "no longer present" in capsys.readouterr().out
+
+
+def test_prettify_skips_pages_reaped_during_the_build(
+    extract_metadata_module,
+    tmp_path,
+    capsys,
+):
+    """prettify reads the same snapshot, so it needs the same tolerance."""
+    reaped = tmp_path / "resource" / "alpha" / "alpha.reaped.md"
+
+    extract_metadata_module.prettify(SimpleNamespace(files=[str(reaped)]))
+
+    assert "no longer present" in capsys.readouterr().out
