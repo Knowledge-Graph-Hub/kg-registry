@@ -187,6 +187,12 @@ class CustomRuamelYAMLHandler(frontmatter.YAMLHandler):
 
 def prettify(args):
     for file in args.files:
+        # Same snapshot hazard as validate_markdown: the list can name a page the
+        # concat reaped earlier in this build.
+        if not os.path.exists(file):
+            print(f"Skipping {file}: no longer present, removed earlier in this build")
+            continue
+
         handler = CustomRuamelYAMLHandler()
         text = frontmatter.load(file, handler=handler)
         file_obj = open(file, "w", encoding="utf-8")
@@ -218,6 +224,14 @@ def validate_markdown(args):
         else None
     )
     for fn in args.files:
+        # The file list is a snapshot taken before the build ran, so it can name
+        # a page the concat has since reaped (remove_stale_product_pages deletes
+        # the page for a product its resource no longer lists). Validating a path
+        # that is gone on purpose is not a failure, so skip it.
+        if not os.path.exists(fn):
+            print(f"Skipping {fn}: no longer present, removed earlier in this build")
+            continue
+
         # Check to see if we can parse the yaml frontmatter first
         if not frontmatter.check(fn):
             errs.append("%s does not contain frontmatter" % (fn))
