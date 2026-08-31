@@ -39,6 +39,16 @@ build-backend = "hatchling.build"
 [dependency-groups]
 dev = ["pytest>=7.1.2", "setuptools>=65.5.0", "tox>=3.25.1"]
 
+[tool.pytest.ini_options]
+# Collect from tests/ only. A Jekyll build leaves a copy of the test tree in
+# _site/, which is gitignored but present in working trees; collecting it fails
+# because its conftest.py defines pytest_plugins outside the rootdir.
+testpaths = ["tests"]
+norecursedirs = ["_site", ".git", ".tox", ".venv", "build", "dist", "node_modules"]
+markers = [
+    "network: test contacts a live external service (deselect with -m 'not network')",
+]
+
 [tool.black]
 line-length = 100
 target-version = ["py39", "py310"]
