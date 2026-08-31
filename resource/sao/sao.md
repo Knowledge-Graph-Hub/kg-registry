@@ -35,6 +35,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of Subcellular Anatomy Ontology (SAO), produced by

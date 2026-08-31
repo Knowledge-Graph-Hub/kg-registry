@@ -37,10 +37,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: fix
+  product_file_size: 26562
   product_url: http://purl.obolibrary.org/obo/fix.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
+  warnings: []
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of Physico-Chemical Methods and Properties (FIX),

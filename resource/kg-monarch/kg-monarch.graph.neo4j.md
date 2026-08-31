@@ -2,7 +2,7 @@
 category: GraphProduct
 description: Neo4j Dump of KG-Monarch
 dump_format: neo4j
-edge_count: 15807241
+edge_count: 16066449
 format: neo4j
 id: kg-monarch.graph.neo4j
 name: Neo4j Dump of KG-Monarch
@@ -26,7 +26,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1582279
+node_count: 1666878
 original_source:
 - relation_type: prov:hadPrimarySource
   source: alliance
@@ -112,11 +112,13 @@ predicates:
 - biolink:located_in
 - biolink:location_of
 - biolink:model_of
+- biolink:negatively_correlated_with
 - biolink:occurs_in
 - biolink:orthologous_to
 - biolink:overlaps
 - biolink:part_of
 - biolink:participates_in
+- biolink:positively_correlated_with
 - biolink:preceded_by
 - biolink:precedes
 - biolink:produced_by

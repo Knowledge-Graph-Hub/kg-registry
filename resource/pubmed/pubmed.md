@@ -416,8 +416,8 @@ products:
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   format: http
   id: gnbr.graph
   name: GNBR graph
@@ -1016,6 +1016,8 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed

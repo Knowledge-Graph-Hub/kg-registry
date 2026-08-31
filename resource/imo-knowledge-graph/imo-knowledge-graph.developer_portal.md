@@ -13,7 +13,7 @@ product_url: https://developer.imohealth.com/
 warnings:
 - File was not able to be retrieved when checked on 2026-08-17_ HTTP 406 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-08-12_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-08-17_ Timeout connecting
   to URL
 layout: product_detail
 ---

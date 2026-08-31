@@ -11903,7 +11903,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-08-17T19:48:04+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-08-31T17:50:55+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -37701,7 +37701,7 @@ kgr:reactome.browser a schema1:GraphicalInterface ;
 kgr:reactome.data.human a schema1:Product ;
     rdfs:label "Reactome Human from BioPAX, sqlite" ;
     dcterms:description "Conversion from BioPAX, human subset" ;
-    schema1:url <https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz> .
+    schema1:url <https://semanticsql.berkeleybop.io/reactome-hs.db.gz> .
 
 kgr:reactome.flat a schema1:GraphProduct ;
     rdfs:label "Reactome Pathway Hierarchy Flat File" ;

@@ -1391,6 +1391,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: PheWAS association results for SNPs from GWAS Catalog analyzed against
@@ -2490,7 +2492,7 @@ publications:
   - Cerezo M
   - Gil L
   - Groza T
-  - "G\xFCne\u015F O"
+  - Güneş O
   - Hall P
   - Hayhurst J
   - Ibrahim A
