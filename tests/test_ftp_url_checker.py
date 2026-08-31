@@ -1,5 +1,9 @@
 """Tests for FTP URL checking functionality.
 
+Tests marked ``network`` contact ftp.ncbi.nlm.nih.gov directly and are
+therefore subject to that server's availability. CI deselects them with
+``-m 'not network'``; run them locally with ``pytest -m network``.
+
 Test fixtures are available in tests/fixtures/:
 - test_ftp_parallel.yml: Test data for retrieve-file-sizes-parallel.py (uses product_url field)
 
@@ -13,6 +17,8 @@ import importlib.util
 import sys
 from pathlib import Path
 from unittest import TestCase
+
+import pytest
 
 # Add util directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent / "util"))
@@ -32,6 +38,7 @@ retrieve_spec.loader.exec_module(retrieve_file_sizes)
 class TestFTPURLChecker(TestCase):
     """Test FTP URL checking functionality in retrieve-file-sizes.py."""
 
+    @pytest.mark.network
     def test_ftp_file_size_retrieval(self):
         """Test that FTP file size can be retrieved successfully."""
         # Test with a known public FTP file
@@ -47,6 +54,7 @@ class TestFTPURLChecker(TestCase):
         self.assertIn("checked_at", info)
         self.assertGreater(size, 0)
 
+    @pytest.mark.network
     def test_ftp_directory_detection(self):
         """Test that FTP directories are correctly identified."""
         # Test with a known public FTP directory
@@ -61,6 +69,7 @@ class TestFTPURLChecker(TestCase):
         self.assertEqual(info["protocol"], "ftp")
         self.assertIn("checked_at", info)
 
+    @pytest.mark.network
     def test_ftp_nonexistent_path(self):
         """Test that nonexistent FTP paths return appropriate errors."""
         # Test with a path that doesn't exist
@@ -103,6 +112,7 @@ class TestFTPURLChecker(TestCase):
         self.assertIsNotNone(entry)
         self.assertEqual(entry["skip_reason"], "directory")
 
+    @pytest.mark.network
     def test_get_file_size_from_header_routes_ftp(self):
         """Test that get_file_size_from_header correctly routes FTP URLs to get_ftp_info."""
         url = "ftp://ftp.ncbi.nlm.nih.gov/README.ftp"

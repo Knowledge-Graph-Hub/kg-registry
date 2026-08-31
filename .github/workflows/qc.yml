@@ -33,5 +33,9 @@ jobs:
       - name: Check static typing with MyPy
         run: uv run tox -e mypy
 
+      # pytest, not `unittest discover`: most of this suite is pytest-style
+      # functions, which unittest walks past silently (18 of 139 collected).
+      # Tests marked `network` reach live external services and are excluded
+      # here to keep CI deterministic; run them locally with `pytest -m network`.
       - name: Run tests
-        run: uv run python -m unittest discover tests
+        run: uv run pytest tests/ -m "not network"

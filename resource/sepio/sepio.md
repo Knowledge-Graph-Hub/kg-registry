@@ -59,7 +59,7 @@ publications:
   - Brush MH
   - Shefchek K
   - Haendel M
-  id: url:http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf
+  id: http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf
   journal: CEUR Workshop Proceedings
   preferred: true
   title: 'SEPIO: A Semantic Model for the Integration and Analysis of Scientific Evidence'

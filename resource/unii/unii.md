@@ -134,7 +134,7 @@ products:
   - relation_type: prov:wasInformedBy
     source: ndcd
 publications:
-- id: url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
+- id: https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
   title: "FDA\u2019s Global Substance Registration System (GSRS) Unique Ingredient\
     \ Identifiers (UNIIs) uniquely define substances in FDA-regulated products - 06/08/2023\
     \ | FDA"

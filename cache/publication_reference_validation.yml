@@ -126,19 +126,10 @@ entries:
     status: valid
     warnings: []
   resource/agro/agro.md#publication[0]#url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf:
-    checked_at: '2026-06-12T20:32:32Z'
-    errors: []
-    fingerprint: aa53efb180f186ceeb09eb76a6156f189d2f9e6502b8d62599cc17318d5694df
-    publication_index: 0
-    reference_id: url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
-    source_path: resource/agro/agro.md
-    status: valid
-    warnings: []
-  resource/agro/agro.md#publication[1]#url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf:
-    checked_at: '2026-08-06T18:16:30Z'
+    checked_at: '2026-08-31T17:59:34Z'
     errors: []
     fingerprint: 1cd470a4f6dff1f52c5673a55c4fc8b55964c5f6bb860277c2bfdd2b4f8e0712
-    publication_index: 1
+    publication_index: 0
     reference_id: url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
     source_path: resource/agro/agro.md
     status: valid
@@ -7168,9 +7159,9 @@ entries:
     status: valid
     warnings: []
   resource/sepio/sepio.md#publication[0]#url:http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf:
-    checked_at: '2026-08-06T18:18:57Z'
+    checked_at: '2026-08-31T17:59:38Z'
     errors: []
-    fingerprint: c4680f10c2347e80fea3ca94c402f7f5590d262fe21be6375ba93b69615ac61a
+    fingerprint: d6b21b551f385160e159910549f3311fed965f9c59676d7608d566e031715c88
     publication_index: 0
     reference_id: url:http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf
     source_path: resource/sepio/sepio.md
@@ -8039,9 +8030,9 @@ entries:
     status: valid
     warnings: []
   ? resource/unii/unii.md#publication[0]#url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
-  : checked_at: '2026-06-12T20:32:32Z'
+  : checked_at: '2026-08-31T17:59:41Z'
     errors: []
-    fingerprint: 0fd2a1c9aa5d90b789381554958dc4035dff0c3c41bf53bfcf08f4bb68bd0801
+    fingerprint: 2904d3ab7f87f14ca251b763d7173c3e4be405cd9ee3e81305d5e1fccff1b70f
     publication_index: 0
     reference_id: url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
     source_path: resource/unii/unii.md
