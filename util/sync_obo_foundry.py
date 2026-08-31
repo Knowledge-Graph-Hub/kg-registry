@@ -15,7 +15,7 @@ import os
 import time
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 import logging
 
 import frontmatter
@@ -540,7 +540,7 @@ class OBOFoundrySync:
 
     def _today_iso(self) -> str:
         """Return today's date normalized as ISO date-time with Z suffix."""
-        return datetime.now(UTC).strftime('%Y-%m-%dT00:00:00Z')
+        return datetime.now(timezone.utc).strftime('%Y-%m-%dT00:00:00Z')
 
     def _contact_identity(self, contact: Dict[str, Any]) -> Tuple[str, str, str]:
         label = str(contact.get('label', '')).strip().lower()

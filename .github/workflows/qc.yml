@@ -11,18 +11,27 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [ "3.9", "3.10" ]
+        python-version: [ "3.10", "3.11" ]
+
+    # setup-uv's python-version input did not bind: uv fell through to
+    # /usr/bin/python3 and both matrix legs silently tested the runner's 3.12.
+    # UV_PYTHON is what uv actually reads, so the matrix now selects the
+    # interpreter for every uv command in the job.
+    env:
+      UV_PYTHON: ${{ matrix.python-version }}
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }} and uv
+      - name: Set up uv
         uses: astral-sh/setup-uv@v3
-        with:
-          python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: uv sync --dev
+
+      # Print it, so a matrix that stops binding is visible in the log.
+      - name: Report interpreter under test
+        run: uv run python -VV
 
       - name: Run linter
         run: uv run tox -e lint
