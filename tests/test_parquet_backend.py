@@ -141,14 +141,12 @@ def test_duckdb_parquet_querier(parquet_backend_sample_data, parquet_yaml_writer
         assert len(results) == 1
         assert results[0]["id"] == "test-resource-1"
 
-        results = querier.execute_query(
-            """
+        results = querier.execute_query("""
             SELECT r.id, r.name, d.domain
             FROM resources r
             JOIN resource_domains d ON r.id = d.resource_id
             WHERE d.domain = 'example'
-            """
-        )
+            """)
         assert len(results) == 1
         assert results[0]["id"] == "test-resource-1"
         assert results[0]["domain"] == "example"

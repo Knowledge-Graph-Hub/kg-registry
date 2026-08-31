@@ -52,6 +52,9 @@ markers = [
 [tool.black]
 line-length = 100
 target-version = ["py310", "py311"]
+# gen-pydantic writes this file; reformatting it would be undone by the next
+# `make refresh-schema`. flake8 already excludes the same directory.
+extend-exclude = "^/src/kg_registry/kg_registry_schema/datamodel/"
 
 [tool.isort]
 profile = "black"
@@ -59,3 +62,4 @@ multi_line_output = 3
 line_length = 100
 include_trailing_comma = true
 reverse_relative = true
+extend_skip_glob = ["src/kg_registry/kg_registry_schema/datamodel/*"]

@@ -4,6 +4,7 @@ import copy
 
 from util.sync_frink import SHORTNAME_ALIASES
 
+
 def test_transform_frink_entry_to_resource(frink_syncer, frink_entry_example):
     resource = frink_syncer.transform_frink_to_kg_registry(frink_entry_example)
 
@@ -63,7 +64,10 @@ def test_merge_preserves_existing_graph_products_and_adds_frink_endpoints(
     merged_products = {product["id"]: product for product in merged["products"]}
     assert set(merged_products) == {"prokn.graph", "prokn.sparql", "prokn.tpf"}
     assert merged_products["prokn.graph"]["category"] == "GraphProduct"
-    assert merged_products["prokn.sparql"]["product_url"] == "https://frink.apps.renci.org/prokn/sparql"
+    assert (
+        merged_products["prokn.sparql"]["product_url"]
+        == "https://frink.apps.renci.org/prokn/sparql"
+    )
     assert merged_products["prokn.sparql"]["original_source"] == [
         {"source": "prokn", "relation_type": "prov:hadPrimarySource"}
     ]
@@ -141,7 +145,9 @@ def test_merge_preserve_identity_keeps_canonical_fields(
     # Products still merged (endpoint url updated in place, no duplicate).
     merged_products = {p["id"]: p for p in merged["products"]}
     assert set(merged_products) == {"prokn.graph", "prokn.sparql"}
-    assert merged_products["prokn.sparql"]["product_url"] == "https://apps.okn.us/biomarkerkg/sparql"
+    assert (
+        merged_products["prokn.sparql"]["product_url"] == "https://apps.okn.us/biomarkerkg/sparql"
+    )
 
 
 def test_merge_without_preserve_identity_still_overwrites(

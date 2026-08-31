@@ -14,7 +14,6 @@ import pytest
 
 from util.common import CustomRuamelYAMLHandler, dump_frontmatter_text, save_frontmatter_file
 
-
 POST_TEXT = "---\nid: demo.product\nname: Demo\n---\n\nBody text.\n"
 
 

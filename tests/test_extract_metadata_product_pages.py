@@ -71,7 +71,9 @@ def test_concat_propagates_cross_resource_products(
                     "name": "Bioteque embeddings",
                     "category": "GraphEmbeddingProduct",
                     "description": "Embeddings built using BTO",
-                    "original_source": [{"source": "bto", "relation_type": "prov:hadPrimarySource"}],
+                    "original_source": [
+                        {"source": "bto", "relation_type": "prov:hadPrimarySource"}
+                    ],
                 }
             ],
         },
@@ -90,7 +92,9 @@ def test_concat_propagates_cross_resource_products(
                     "name": "ClinicalKG graph",
                     "category": "KnowledgeGraphProduct",
                     "description": "Graph with the BTO ontology product as a secondary source",
-                    "secondary_source": [{"source": "bto.owl", "relation_type": "prov:wasInfluencedBy"}],
+                    "secondary_source": [
+                        {"source": "bto.owl", "relation_type": "prov:wasInfluencedBy"}
+                    ],
                 }
             ],
         },
@@ -175,9 +179,7 @@ def test_product_pages_are_written_only_under_the_owning_resource(
                     "category": "Product",
                     "format": "gaf",
                     "description": "GOA annotation files",
-                    "original_source": [
-                        {"source": "go", "relation_type": "prov:hadPrimarySource"}
-                    ],
+                    "original_source": [{"source": "go", "relation_type": "prov:hadPrimarySource"}],
                 }
             ],
         },

@@ -94,9 +94,18 @@ doi: 10.1000/correct
         require_cache=True,
     )
 
-    assert any("title 'Wrong title' does not match cached title 'Correct title'" in e for e in report.errors)
-    assert any("doi '10.1000/wrong' does not match cached doi '10.1000/correct'" in e for e in report.errors)
-    assert any("first author 'Wrong A' does not match cached first author 'Correct A'" in e for e in report.errors)
+    assert any(
+        "title 'Wrong title' does not match cached title 'Correct title'" in e
+        for e in report.errors
+    )
+    assert any(
+        "doi '10.1000/wrong' does not match cached doi '10.1000/correct'" in e
+        for e in report.errors
+    )
+    assert any(
+        "first author 'Wrong A' does not match cached first author 'Correct A'" in e
+        for e in report.errors
+    )
     assert any("year '2023' does not match cached year '2024'" in w for w in report.warnings)
     assert report.invalid_publication_indexes == [0]
 
@@ -207,8 +216,7 @@ def test_validate_markdown_runs_publication_reference_validation(
     resource_dir = tmp_path / "tmpres"
     resource_dir.mkdir()
     md_path = resource_dir / "tmpres.md"
-    md_path.write_text(
-        """---
+    md_path.write_text("""---
 id: tmpres
 layout: resource_detail
 category: DataSource
@@ -224,8 +232,7 @@ products:
 ---
 
 Content
-"""
-    )
+""")
 
     monkeypatch.setattr(
         mod,
@@ -255,8 +262,7 @@ def test_validate_markdown_can_warn_on_publication_reference_errors(
     resource_dir = tmp_path / "tmpres"
     resource_dir.mkdir()
     md_path = resource_dir / "tmpres.md"
-    md_path.write_text(
-        """---
+    md_path.write_text("""---
 id: tmpres
 layout: resource_detail
 category: DataSource
@@ -272,8 +278,7 @@ products:
 ---
 
 Content
-"""
-    )
+""")
 
     monkeypatch.setattr(
         mod,
@@ -309,8 +314,7 @@ def test_validate_markdown_can_remove_invalid_publications(
     resource_dir = tmp_path / "tmpres"
     resource_dir.mkdir()
     md_path = resource_dir / "tmpres.md"
-    md_path.write_text(
-        """---
+    md_path.write_text("""---
 id: tmpres
 layout: resource_detail
 category: DataSource
@@ -327,8 +331,7 @@ products:
 ---
 
 Content
-"""
-    )
+""")
 
     monkeypatch.setattr(
         mod,

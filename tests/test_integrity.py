@@ -9,7 +9,6 @@ from urllib.parse import urlparse
 
 import frontmatter
 
-
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
 RESOURCE_DIR = ROOT / "resource"
@@ -84,7 +83,9 @@ def test_root_resource_publications_have_at_most_one_preferred_entry():
     for path, metadata in _load_root_resource_posts():
         publications = metadata.get("publications", []) or []
         preferred_count = sum(
-            1 for publication in publications if isinstance(publication, dict) and publication.get("preferred")
+            1
+            for publication in publications
+            if isinstance(publication, dict) and publication.get("preferred")
         )
         if preferred_count > 1:
             violations.append(f"{path}: preferred_count={preferred_count}")
@@ -122,7 +123,9 @@ def test_root_resource_publication_identifiers_use_supported_formats():
 
         normalized_identifier = identifier.strip()
         if not _is_supported_publication_identifier(normalized_identifier):
-            violations.append(f"{path} publication[{index}] has unsupported identifier: {normalized_identifier}")
+            violations.append(
+                f"{path} publication[{index}] has unsupported identifier: {normalized_identifier}"
+            )
 
     assert not violations, "Unsupported publication identifiers found:\n" + "\n".join(violations)
 
