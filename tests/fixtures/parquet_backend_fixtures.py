@@ -24,9 +24,7 @@ def parquet_backend_sample_data():
                     {
                         "category": "Individual",
                         "label": "Test Person",
-                        "contact_details": [
-                            {"contact_type": "email", "value": "test@example.com"}
-                        ],
+                        "contact_details": [{"contact_type": "email", "value": "test@example.com"}],
                     }
                 ],
                 "products": [

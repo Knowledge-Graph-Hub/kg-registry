@@ -104,8 +104,12 @@ def test_name_similarity_accepts_reworded_names_and_rejects_collisions():
     # Genuine matches that read very differently.
     assert name_similarity("Uber Anatomy Ontology", "Uberon multi-species anatomy ontology") > 0.3
     assert name_similarity("Relations Ontology", "Relation Ontology") > 0.3
-    assert name_similarity("Microarray and Gene Expression Data Ontology",
-                           "Microarray experimental conditions") > 0.3
+    assert (
+        name_similarity(
+            "Microarray and Gene Expression Data Ontology", "Microarray experimental conditions"
+        )
+        > 0.3
+    )
     # Acronym collisions in the live manifest.
     assert name_similarity("Radiomics Ontology", "Relation Ontology") == 0.0
     assert name_similarity("Atlas Ontology Model", "ATOM") == 0.0
@@ -352,9 +356,7 @@ def test_sync_all_reports_entries_a_curator_could_resolve(syncer, agro_entry, mo
             "download_url": "https://example.org/UNRELATED.tar.gz",
         },
     ]
-    monkeypatch.setattr(
-        syncer, "fetch_manifest", lambda: {"ontologies": entries, "totals": {}}
-    )
+    monkeypatch.setattr(syncer, "fetch_manifest", lambda: {"ontologies": entries, "totals": {}})
 
     stats = syncer.sync_all()
 

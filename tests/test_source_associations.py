@@ -3,8 +3,8 @@
 from util.source_associations import (
     ORIGINAL_SOURCE_RELATION,
     SECONDARY_SOURCE_RELATION,
-    iter_source_ids,
     ensure_direct_product_primary_source,
+    iter_source_ids,
     make_original_source_associations,
     make_secondary_source_associations,
     merge_source_associations,
@@ -21,9 +21,7 @@ def test_source_association_defaults_and_legacy_iteration():
         {"source": "go", "relation_type": ORIGINAL_SOURCE_RELATION},
         {"source": "hp", "relation_type": ORIGINAL_SOURCE_RELATION},
     ]
-    assert secondary == [
-        {"source": "translator", "relation_type": SECONDARY_SOURCE_RELATION}
-    ]
+    assert secondary == [{"source": "translator", "relation_type": SECONDARY_SOURCE_RELATION}]
     assert list(iter_source_ids(["go", {"source": "hp", "relation_type": "prov:used"}])) == [
         "go",
         "hp",
@@ -78,8 +76,8 @@ def test_resource_owns_product_rejects_string_prefix_matches():
 
 
 def test_resource_owns_product_handles_missing_and_malformed_ids():
-    assert not resource_owns_product("go", "go")       # undotted: no owner segment
+    assert not resource_owns_product("go", "go")  # undotted: no owner segment
     assert not resource_owns_product("", "go.owl")
     assert not resource_owns_product("go", None)
     assert not resource_owns_product(None, "go.owl")
-    assert resource_owns_product(" go ", " go.owl ")   # surrounding whitespace tolerated
+    assert resource_owns_product(" go ", " go.owl ")  # surrounding whitespace tolerated

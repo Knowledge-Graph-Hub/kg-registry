@@ -10,11 +10,7 @@ def test_load_md_parallel_reads_frontmatter(tmp_path):
     resource_dir.mkdir()
     resource_file = resource_dir / "demo.md"
     resource_file.write_text(
-        "---\n"
-        "id: demo\n"
-        "name: Demo Resource\n"
-        "---\n"
-        "Demo body\n",
+        "---\n" "id: demo\n" "name: Demo Resource\n" "---\n" "Demo body\n",
         encoding="utf-8",
     )
 

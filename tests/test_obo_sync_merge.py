@@ -26,9 +26,7 @@ def test_merge_resource_metadata_preserves_curated_fields_products_and_publicati
             {
                 "category": "Organization",
                 "label": "Gene Ontology Consortium",
-                "contact_details": [
-                    {"contact_type": "url", "value": "https://geneontology.org/"}
-                ],
+                "contact_details": [{"contact_type": "url", "value": "https://geneontology.org/"}],
             }
         ],
         "products": [
@@ -61,9 +59,7 @@ def test_merge_resource_metadata_preserves_curated_fields_products_and_publicati
             {
                 "category": "Individual",
                 "label": "Suzi Aleksander",
-                "contact_details": [
-                    {"contact_type": "email", "value": "suzia@stanford.edu"}
-                ],
+                "contact_details": [{"contact_type": "email", "value": "suzia@stanford.edu"}],
             }
         ],
         "products": [
@@ -165,7 +161,10 @@ Keep this body.
 @pytest.mark.parametrize(
     ("raw_identifier", "expected"),
     [
-        ("https://www.ncbi.nlm.nih.gov/pubmed/10802651", "https://www.ncbi.nlm.nih.gov/pubmed/10802651"),
+        (
+            "https://www.ncbi.nlm.nih.gov/pubmed/10802651",
+            "https://www.ncbi.nlm.nih.gov/pubmed/10802651",
+        ),
         ("10.1093/nar/gkaf1271", "doi:10.1093/nar/gkaf1271"),
         ("10802651", "PMID:10802651"),
         (10802651, "PMID:10802651"),
@@ -213,9 +212,7 @@ def test_merge_products_excludes_configured_product_ids(tmp_path):
         {"id": "pcl-base.owl"},
     ]
 
-    merged = syncer.merge_products(
-        existing, synced, excluded_ids=syncer.product_exclusions["pcl"]
-    )
+    merged = syncer.merge_products(existing, synced, excluded_ids=syncer.product_exclusions["pcl"])
     merged_ids = {p["id"] for p in merged}
     assert merged_ids == {"pcl.owl", "pcl.obo"}
 

@@ -15,7 +15,9 @@ def test_update_product_file_sizes_deduplicates_shared_urls(
 ):
     calls = []
 
-    def _fake_process_single_url(url, product_id, resource_id, cache, ignore_cache, clean_warnings_only, product):
+    def _fake_process_single_url(
+        url, product_id, resource_id, cache, ignore_cache, clean_warnings_only, product
+    ):
         calls.append((url, product_id, resource_id))
         return {
             "url": url,
