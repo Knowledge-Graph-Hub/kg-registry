@@ -8,7 +8,7 @@ authors = [
 	{ name = "Harry Caufield", email = "j.harry.caufield@gmail.com" },
 	{ name = "Justin Reese", email = "justaddcoffee@gmail.com" }
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = [
 	"linkml>=1.8.5",
 	"pyyaml>=6.0.2",
@@ -22,7 +22,7 @@ dependencies = [
 	"oaklib>=0.6.0",
 	"pysolr>=3.9.0",
 	"rdflib>=7.5.0",
-	"linkml-reference-validator>=0.2.0 ; python_full_version >= '3.10'",
+	"linkml-reference-validator>=0.2.0",
 ]
 
 [project.optional-dependencies]
@@ -51,7 +51,7 @@ markers = [
 
 [tool.black]
 line-length = 100
-target-version = ["py39", "py310"]
+target-version = ["py310", "py311"]
 
 [tool.isort]
 profile = "black"

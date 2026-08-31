@@ -68,9 +68,8 @@ uv run ./util/extract-metadata.py validate \
   resource/<resource>/<resource>.md
 ```
 
-`linkml-reference-validator` currently requires Python 3.10 or newer, so the
-dependency is marked with a Python-version guard. On Python 3.9, KG-Registry can
-still compare existing cache files but cannot fetch missing cache entries.
+`linkml-reference-validator` requires Python 3.10 or newer, which is also
+KG-Registry's minimum, so the dependency is unconditional.
 
 ## Dashboard Metrics
 
