@@ -10,8 +10,9 @@ domains:
 - drug discovery
 - pharmacology
 - chemistry and biochemistry
+homepage_url: https://bidd.group/CMAUP/
 id: cmaup
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: CMAUP
 products:

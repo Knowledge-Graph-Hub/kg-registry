@@ -1,13 +1,14 @@
 ---
-activity_status: unresponsive
+activity_status: active
 category: Aggregator
 creation_date: '2025-09-09T00:00:00Z'
-description: The Comparative RNA Database (CRD) was an aggregator of RNA sequence and structure data, but is no longer available. This resource is considered unresponsive; only its metadata and publication are retained for reference.
+description: The Comparative RNA Database (CRD) is an aggregator of comparative RNA sequence and secondary structure data, covering ribosomal, intron, and other RNAs. It is published through the Comparative RNA Web (CRW) Site, which relocated from its original University of Texas host to CRW2 (Comparative RNA Web-2).
 domains:
   - biological systems
   - genomics
+homepage_url: https://crw2-comparative-rna-web.org/
 id: crd
-last_modified_date: '2025-10-10T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: Comparative RNA Database (CRD)
 products:
@@ -408,12 +409,10 @@ publications:
   journal: Journal of Interferon & Cytokine Research
   title: 'Collaborative Bioinformatics: Data Warehouses for Targeted Experimental Results'
   year: '1998'
-warnings:
-  - This resource is unresponsive. The database is no longer available; only metadata and publication are retained.
 ---
 
 # Comparative RNA Database (CRD)
 
-The Comparative RNA Database (CRD) was an aggregator of RNA sequence and structure data, including ribosomal and intron RNAs. The database is no longer available, but its metadata and publication are retained for reference. For more information, see the original publication:
+The Comparative RNA Database (CRD) is an aggregator of comparative RNA sequence and secondary structure data, including ribosomal, intron, and other RNAs. Its data is published through the Comparative RNA Web (CRW) Site, which has moved from its original University of Texas host to CRW2 (Comparative RNA Web-2) at https://crw2-comparative-rna-web.org/. For more information, see the original publication:
 
 - Gutell RR, Cannone JJ, Konings BF, Yang Z. The Comparative RNA Web (CRW) Site: An Online Database of Comparative Sequence and Structure Information for Ribosomal, Intron, and Other RNAs. Journal of Interferon & Cytokine Research. 1998;18(10):799-803. doi:10.1089/jir.1998.18.799

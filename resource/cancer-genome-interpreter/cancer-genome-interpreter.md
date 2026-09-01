@@ -11,8 +11,9 @@ domains:
 - clinical
 - precision medicine
 - drug discovery
+homepage_url: https://www.cancergenomeinterpreter.org/
 id: cancer-genome-interpreter
-last_modified_date: '2025-09-16T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.cancergenomeinterpreter.org/conditions#license

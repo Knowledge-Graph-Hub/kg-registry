@@ -10,9 +10,10 @@ creation_date: '2025-03-09T00:00:00Z'
 description: A Translator Knowledge Provider focusing on genetic data.
 domains:
 - biomedical
+homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 id: genetics-kp
 infores_id: genetics-data-provider
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: Genetics KP
 products:

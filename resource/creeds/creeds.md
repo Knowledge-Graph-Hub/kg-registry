@@ -16,8 +16,9 @@ description: CREEDS (CRowd Extracted Expression of Differential Signatures) is a
 domains:
 - pharmacology
 - genomics
+homepage_url: https://maayanlab.cloud/CREEDS/
 id: creeds
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -9,8 +9,9 @@ description: The European Nucleotide Archive (ENA) is a comprehensive database p
 domains:
 - genomics
 - biological systems
+homepage_url: https://www.ebi.ac.uk/ena/browser/home
 id: ena
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: European Nucleotide Archive (ENA)
 products:
