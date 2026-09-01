@@ -445,3 +445,122 @@ def test_check_http_url_still_flags_dead_sparql_endpoint(quality_dashboard_modul
     _install_fake_requests(monkeypatch, mod, lambda method, url: _FakeResponse(404))
     result = mod.check_http_url("https://gone.example.org/sparql", timeout=5.0)
     assert result["ok"] is False
+
+
+class _FlakyResponder:
+    """Responder that fails a set number of times before succeeding."""
+
+    def __init__(self, mod, failures, exc_factory, then_code=200):
+        self.mod = mod
+        self.remaining = failures
+        self.exc_factory = exc_factory
+        self.then_code = then_code
+        self.calls = []
+
+    def __call__(self, method, url):
+        self.calls.append(method)
+        if self.remaining > 0:
+            self.remaining -= 1
+            raise self.exc_factory()
+        return _FakeResponse(self.then_code)
+
+
+def test_check_http_url_falls_back_to_get_on_head_404(quality_dashboard_module, monkeypatch):
+    """A host answering HEAD 404 but GET 200 is reachable, not broken.
+
+    Real cases: dsstox's clowder.edap-cluster.com URL and ssurgo's box.com URL.
+    """
+    mod = quality_dashboard_module
+    calls = []
+
+    def responder(method, url):
+        calls.append(method)
+        return _FakeResponse(404 if method == "head" else 200)
+
+    _install_fake_requests(monkeypatch, mod, responder)
+    result = mod.check_http_url("https://example.org/file.zip", timeout=5.0)
+    assert result["ok"] is True
+    assert result["status_code"] == 200
+    assert calls == ["head", "get"], "GET must be attempted after a HEAD 404"
+
+
+def test_check_http_url_falls_back_to_get_when_head_connection_fails(
+    quality_dashboard_module, monkeypatch
+):
+    """Some hosts drop HEAD connections but serve GET fine (noaa-ncei.ibtracs)."""
+    mod = quality_dashboard_module
+
+    def responder(method, url):
+        if method == "head":
+            raise mod.requests.exceptions.ConnectionError("RemoteDisconnected")
+        return _FakeResponse(200)
+
+    _install_fake_requests(monkeypatch, mod, responder)
+    result = mod.check_http_url("https://example.org/page", timeout=5.0)
+    assert result["ok"] is True
+    assert result["status_code"] == 200
+
+
+def test_check_http_url_retries_once_on_connection_error(quality_dashboard_module, monkeypatch):
+    """A single transient reset must not write a durable broken-link warning."""
+    mod = quality_dashboard_module
+    responder = _FlakyResponder(
+        mod, failures=1, exc_factory=lambda: mod.requests.exceptions.ConnectionError("reset")
+    )
+    _install_fake_requests(monkeypatch, mod, responder)
+    monkeypatch.setattr(mod, "_RETRY_DELAY_SECONDS", 0)
+    result = mod.check_http_url("https://example.org/page", timeout=5.0)
+    assert result["ok"] is True
+    assert responder.calls == ["head", "head"], "HEAD should be retried once, then succeed"
+
+
+def test_check_http_url_does_not_retry_timeouts(quality_dashboard_module, monkeypatch):
+    """Timeouts dominate genuinely dead hosts; retrying them only doubles runtime."""
+    mod = quality_dashboard_module
+    calls = []
+
+    def responder(method, url):
+        calls.append(method)
+        raise mod.requests.exceptions.Timeout("timed out")
+
+    _install_fake_requests(monkeypatch, mod, responder)
+    monkeypatch.setattr(mod, "_RETRY_DELAY_SECONDS", 0)
+    result = mod.check_http_url("https://dead.example.org/page", timeout=5.0)
+    assert result["ok"] is False
+    assert calls == ["head", "get"], "one HEAD and one GET, no timeout retries"
+
+
+def test_check_http_url_still_reports_genuinely_dead_urls(quality_dashboard_module, monkeypatch):
+    """The GET fallback must not turn real 404s into false positives."""
+    mod = quality_dashboard_module
+    _install_fake_requests(monkeypatch, mod, lambda method, url: _FakeResponse(404))
+    result = mod.check_http_url("https://example.org/gone.zip", timeout=5.0)
+    assert result["ok"] is False
+    assert result["status_code"] == 404
+    assert "GET returned HTTP 404" in result["error"]
+
+
+def test_check_http_url_reports_both_failures_when_neither_verb_responds(
+    quality_dashboard_module, monkeypatch
+):
+    mod = quality_dashboard_module
+
+    def responder(method, url):
+        raise mod.requests.exceptions.Timeout("timed out")
+
+    _install_fake_requests(monkeypatch, mod, responder)
+    monkeypatch.setattr(mod, "_RETRY_DELAY_SECONDS", 0)
+    result = mod.check_http_url("https://dead.example.org/page", timeout=5.0)
+    assert result["ok"] is False
+    assert result["status_code"] is None
+    assert "HEAD request failed" in result["error"]
+    assert "GET request failed" in result["error"]
+
+
+def test_check_http_url_keeps_access_restricted_semantics(quality_dashboard_module, monkeypatch):
+    """403 on both verbs stays reachable-but-restricted, not broken."""
+    mod = quality_dashboard_module
+    _install_fake_requests(monkeypatch, mod, lambda method, url: _FakeResponse(403))
+    result = mod.check_http_url("https://example.org/page", timeout=5.0)
+    assert result["ok"] is True
+    assert result.get("access_restricted") is True

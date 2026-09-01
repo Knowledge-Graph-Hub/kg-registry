@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import time
 import warnings
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
@@ -477,6 +478,20 @@ def check_ftp_url(url: str, timeout: float) -> Dict[str, Any]:
             pass
 
 
+# A single transient connection reset would otherwise write a durable
+# "File was not able to be retrieved" warning onto a product page, so
+# connection-level failures get one retry. Timeouts are not retried: they are
+# the dominant failure mode for genuinely dead hosts and retrying them doubles
+# the runtime of the slowest part of the check for no benefit.
+_CONNECTION_RETRIES = 1
+_RETRY_DELAY_SECONDS = 2.0
+
+# Statuses that mean "the server is up but will not serve this to an automated
+# client": auth walls, throttling, bot walls, content-negotiation refusals.
+# (Trade-off: a host that returns 403 for genuinely-missing objects -- e.g.
+# some CloudFront/S3 setups -- will not be flagged.)
+_ACCESS_RESTRICTED_CODES = frozenset({401, 403, 405, 406, 412, 429})
+
 _BROWSER_USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
@@ -571,75 +586,75 @@ def check_http_url(url: str, timeout: float) -> Dict[str, Any]:
             warnings.simplefilter("ignore", InsecureRequestWarning)
             return requests.get(url, timeout=timeout, allow_redirects=True, headers=headers, verify=verify)
 
-    tls_fallback_used = False
+    def _perform(request_fn, verify: bool) -> Tuple[Optional[int], Optional[str], bool]:
+        """Issue one request, returning ``(status_code, error, tls_fallback_used)``.
 
-    try:
-        head_resp = _head_request(verify=True)
-        head_code = head_resp.status_code
-        head_resp.close()
-    except requests.exceptions.SSLError:
-        tls_fallback_used = True
-        try:
-            head_resp = _head_request(verify=False)
-            head_code = head_resp.status_code
-            head_resp.close()
-        except requests.RequestException as error:
-            return {
-                "ok": False,
-                "status_code": None,
-                "error": f"HEAD request failed after TLS fallback: {error}",
-            }
-    except requests.RequestException as error:
-        return {"ok": False, "status_code": None, "error": f"HEAD request failed: {error}"}
+        Falls back to an unverified connection once on a TLS error, and retries
+        once on a connection-level failure. ``status_code`` is ``None`` only
+        when no response was obtained at all.
+        """
+        tls_fallback = False
+        attempts = 0
+        while True:
+            attempts += 1
+            try:
+                resp = request_fn(verify)
+                code = resp.status_code
+                resp.close()
+                return code, None, tls_fallback
+            except requests.exceptions.SSLError as error:
+                if verify:
+                    verify = False
+                    tls_fallback = True
+                    continue
+                return None, f"TLS verification failed: {error}", tls_fallback
+            except requests.exceptions.Timeout as error:
+                return None, str(error), tls_fallback
+            except requests.RequestException as error:
+                if attempts <= _CONNECTION_RETRIES:
+                    time.sleep(_RETRY_DELAY_SECONDS)
+                    continue
+                return None, str(error), tls_fallback
 
-    if 200 <= head_code < 400:
-        result = {"ok": True, "status_code": head_code, "error": None}
-        if tls_fallback_used:
+    def _reachable(code: int, tls_fallback: bool) -> Dict[str, Any]:
+        result: Dict[str, Any] = {"ok": True, "status_code": code, "error": None}
+        if tls_fallback:
             result["tls_verification_failed"] = True
+        if code in _ACCESS_RESTRICTED_CODES:
+            result["access_restricted"] = True
         return result
 
-    # Some endpoints disallow HEAD, throttle, block automated/bot clients, or
-    # reject the request's content negotiation with a status (401/403/405/406/
-    # 412/429) even though the resource is publicly reachable in a browser.
-    # Treat these as reachable rather than broken: the server is up and
-    # responding, we simply cannot fully verify the resource via an automated
-    # request. 406 (Not Acceptable) and 412 (Precondition Failed, used by some
-    # JavaScript anti-bot walls) are included here for that reason. (Trade-off:
-    # a host that returns 403 for genuinely-missing objects -- e.g. some
-    # CloudFront/S3 setups -- will not be flagged here.)
-    fallback_codes = {401, 403, 405, 406, 412, 429}
-    if head_code in fallback_codes:
-        try:
-            get_resp = _get_request(verify=not tls_fallback_used)
-            get_code = get_resp.status_code
-            get_resp.close()
-            if 200 <= get_code < 400:
-                result = {"ok": True, "status_code": get_code, "error": None}
-                if tls_fallback_used:
-                    result["tls_verification_failed"] = True
-                return result
-            if get_code in fallback_codes:
-                result = {
-                    "ok": True,
-                    "status_code": get_code,
-                    "error": None,
-                    "access_restricted": True,
-                }
-                if tls_fallback_used:
-                    result["tls_verification_failed"] = True
-                return result
-            return {
-                "ok": False,
-                "status_code": get_code,
-                "error": f"GET returned HTTP {get_code}",
-            }
-        except requests.RequestException as error:
-            return {"ok": False, "status_code": head_code, "error": f"GET request failed: {error}"}
+    head_code, head_error, tls_fallback_used = _perform(_head_request, True)
 
+    if head_code is not None and 200 <= head_code < 400:
+        return _reachable(head_code, tls_fallback_used)
+
+    # HEAD is never authoritative for *failure*. Hosts answer HEAD with 404 or
+    # 405, or drop the connection outright, while serving the same URL fine
+    # over GET, so always confirm with GET before reporting a broken link.
+    get_code, get_error, get_tls_fallback = _perform(_get_request, not tls_fallback_used)
+    tls_fallback_used = tls_fallback_used or get_tls_fallback
+
+    if get_code is not None:
+        if 200 <= get_code < 400 or get_code in _ACCESS_RESTRICTED_CODES:
+            return _reachable(get_code, tls_fallback_used)
+        return {
+            "ok": False,
+            "status_code": get_code,
+            "error": f"GET returned HTTP {get_code}",
+        }
+
+    # No response from either verb.
+    if head_code is not None:
+        return {
+            "ok": False,
+            "status_code": head_code,
+            "error": f"HEAD returned HTTP {head_code}; GET request failed: {get_error}",
+        }
     return {
         "ok": False,
-        "status_code": head_code,
-        "error": f"HEAD returned HTTP {head_code}",
+        "status_code": None,
+        "error": f"HEAD request failed: {head_error}; GET request failed: {get_error}",
     }
 
 
