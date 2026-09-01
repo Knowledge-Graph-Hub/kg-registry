@@ -80,7 +80,8 @@ def cache_should_skip(url: str, cache: Dict[str, Any], ignore_cache: bool = Fals
     if not entry:
         return False, None
     # Skip if prior run recorded skip_reason we want to honor
-    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory', 'tls_cert_accessible', 'access_restricted'}:
+    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory', 'tls_cert_accessible',
+                                   'access_restricted', 'no_content_length'}:
         return True, entry
     return False, entry
 
@@ -283,14 +284,17 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
         content_length = response.headers.get('Content-Length')
 
         if content_length is None:
+            # The request succeeded; the server just did not declare a size
+            # (chunked transfer encoding, or a dynamically generated response).
+            # The URL is reachable, so this must not raise a "file was not able
+            # to be retrieved" warning -- that reads as a broken link.
             if tls_fallback_used:
-                print("  ⚠️  TLS verification failed; endpoint is reachable but no Content-Length header was found")
+                print("  ⏭️  TLS verification failed; endpoint is reachable but no Content-Length header was found")
                 info['skip_reason'] = 'tls_cert_accessible'
-                return None, None, info
-            error_msg = "No Content-Length header found"
-            print(f"  ⚠️  {error_msg}")
-            info['error'] = error_msg
-            return None, error_msg, info
+            else:
+                print("  ⏭️  Reachable, but no Content-Length header; size unknown")
+                info['skip_reason'] = 'no_content_length'
+            return None, None, info
 
         try:
             file_size = int(content_length)
@@ -298,14 +302,14 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
             info['content_length'] = file_size
             return file_size, None, info
         except ValueError:
+            # Reachable but unmeasurable, same as a missing header above.
             if tls_fallback_used:
-                print("  ⚠️  TLS verification failed; endpoint is reachable but Content-Length is not parseable")
+                print("  ⏭️  TLS verification failed; endpoint is reachable but Content-Length is not parseable")
                 info['skip_reason'] = 'tls_cert_accessible'
-                return None, None, info
-            error_msg = f"Invalid Content-Length value: {content_length}"
-            print(f"  ⚠️  {error_msg}")
-            info['error'] = error_msg
-            return None, error_msg, info
+            else:
+                print(f"  ⏭️  Reachable, but Content-Length is not parseable: {content_length}")
+                info['skip_reason'] = 'no_content_length'
+            return None, None, info
 
     except requests.exceptions.Timeout:
         error_msg = "Timeout connecting to URL"
