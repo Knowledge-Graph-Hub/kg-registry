@@ -19,7 +19,7 @@ domains:
 - general
 homepage_url: https://esgf.llnl.gov/
 id: esgf
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: Earth System Grid Federation (ESGF)
 products:
@@ -33,7 +33,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: esgf
-  product_url: https://aims2.llnl.gov/search
+  product_url: https://metagrid.esgf-west.org/search
 - category: GraphProduct
   description: RDF/Turtle knowledge graph integrating climate model and dataset metadata
     (from ESGF, CMIP controlled vocabularies, and the NASA GCMD keyword taxonomy)
@@ -70,7 +70,7 @@ programmatic APIs.
 Federated search and download interface for climate dataset metadata across ESGF
 nodes.
 
-**URL**: [https://aims2.llnl.gov/search](https://aims2.llnl.gov/search)
+**URL**: [https://metagrid.esgf-west.org/search](https://metagrid.esgf-west.org/search)
 
 **Format**: http
 </content>

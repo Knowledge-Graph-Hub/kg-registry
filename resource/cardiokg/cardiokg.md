@@ -16,9 +16,9 @@ domains:
   - clinical
   - medical imaging
   - precision medicine
-homepage_url: https://github.com/ImperialCollegeLondon/cardioKG
+homepage_url: https://doi.org/10.5281/zenodo.16025953
 id: cardiokg
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/
@@ -26,7 +26,7 @@ license:
 name: CardioKG
 products:
   - category: GraphProduct
-    description: Neo4j construction artifacts for CardioKG, including Cypher scripts to create graph nodes and add edges.
+    description: Neo4j construction artifacts for CardioKG, including Cypher scripts to create graph nodes and add edges. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -54,9 +54,9 @@ products:
         source: string
       - relation_type: prov:used
         source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
-    description: CardioKG supporting data tables for anatomy and cardiac magnetic resonance anatomy mappings.
+    description: CardioKG supporting data tables for anatomy and cardiac magnetic resonance anatomy mappings. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot.
     format: csv
     id: cardiokg.data
     name: CardioKG supporting data tables
@@ -65,23 +65,23 @@ products:
         source: cardiokg
       - relation_type: prov:hadPrimarySource
         source: ukbiobank
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Data
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
-    description: Generated CardioKG embeddings for gene-disease and medication-disease association prediction tasks.
+    description: Generated CardioKG embeddings for gene-disease and medication-disease association prediction tasks. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot.
     id: cardiokg.embeddings
     name: CardioKG generated embeddings
     original_source:
       - relation_type: prov:hadPrimarySource
         source: cardiokg
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Generated_embeddings
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProcessProduct
-    description: Analysis notebooks and scripts for CardioKG graph construction, PageRank importance analysis, gene-disease association prediction, and drug repurposing.
+    description: Analysis notebooks and scripts for CardioKG graph construction, PageRank importance analysis, gene-disease association prediction, and drug repurposing. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot.
     id: cardiokg.workflow
     name: CardioKG analysis workflow
     original_source:
       - relation_type: prov:hadPrimarySource
         source: cardiokg
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
     compression: zip
     description: Archived CardioKG repository release on Zenodo.
@@ -116,7 +116,6 @@ publications:
     journal: Nature Cardiovascular Research
     title: A multimodal vision knowledge graph of cardiovascular disease
     year: '2025'
-repository: https://github.com/ImperialCollegeLondon/cardioKG
 taxon:
   - NCBITaxon:9606
 ---
@@ -124,3 +123,8 @@ taxon:
 CardioKG combines cardiovascular imaging-derived phenotypes with biomedical knowledge
 sources to support graph-based prediction of disease genes, pathway enrichment, and
 drug repurposing opportunities for cardiovascular disease.
+
+The project's GitHub repository (`ImperialCollegeLondon/cardioKG`) is no longer
+available. The archived release deposited on Zenodo is the remaining source for the
+graph construction scripts, supporting data tables, generated embeddings and analysis
+notebooks, so the products above all resolve to that snapshot.

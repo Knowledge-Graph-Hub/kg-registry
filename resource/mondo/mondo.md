@@ -20,7 +20,7 @@ domains:
 homepage_url: https://monarch-initiative.github.io/mondo
 id: mondo
 infores_id: mondo
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -2093,7 +2093,7 @@ products:
     source: string
   - relation_type: prov:used
     source: opentargets
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+  product_url: https://doi.org/10.5281/zenodo.16025953
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated

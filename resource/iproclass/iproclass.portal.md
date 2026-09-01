@@ -7,6 +7,6 @@ name: iProClass Portal
 original_source:
   - source: iproclass
     relation_type: prov:hadPrimarySource
-product_url: http://pir.georgetown.edu/iproclass/
+product_url: https://proteininformationresource.org/iproclass/
 layout: product_detail
 ---

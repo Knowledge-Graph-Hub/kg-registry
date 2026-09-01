@@ -17,10 +17,10 @@ description: A structured controlled vocabulary of mutant and transgenic mouse p
   phenotypes
 domains:
 - biomedical
-homepage_url: http://www.pathbase.net
+homepage_url: https://pathbase.net/
 id: mpath
 infores_id: mpath
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

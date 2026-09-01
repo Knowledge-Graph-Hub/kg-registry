@@ -7,10 +7,10 @@ domains:
   - proteomics
 id: "iproclass"
 infores_id: "iproclass"
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: iProClass
-homepage_url: http://pir.georgetown.edu/iproclass/
+homepage_url: https://proteininformationresource.org/iproclass/
 contacts:
   - category: Organization
     contact_details:
@@ -29,7 +29,7 @@ products:
     original_source:
       - source: iproclass
         relation_type: prov:hadPrimarySource
-    product_url: http://pir.georgetown.edu/iproclass/
+    product_url: https://proteininformationresource.org/iproclass/
   - category: DocumentationProduct
     description: Protein Information Resource site with parent documentation and context for iProClass.
     format: http

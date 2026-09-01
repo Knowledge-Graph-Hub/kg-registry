@@ -13,7 +13,7 @@ domains:
 - phenotype
 homepage_url: https://www.ukbiobank.ac.uk/
 id: ukbiobank
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ukbiobank.ac.uk/terms-and-conditions/
@@ -187,7 +187,7 @@ products:
     source: string
   - relation_type: prov:used
     source: opentargets
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+  product_url: https://doi.org/10.5281/zenodo.16025953
 - category: Product
   description: CardioKG supporting data tables for anatomy and cardiac magnetic resonance
     anatomy mappings.
@@ -199,7 +199,7 @@ products:
     source: cardiokg
   - relation_type: prov:hadPrimarySource
     source: ukbiobank
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Data
+  product_url: https://doi.org/10.5281/zenodo.16025953
 publications:
 - authors:
   - Clare Bycroft

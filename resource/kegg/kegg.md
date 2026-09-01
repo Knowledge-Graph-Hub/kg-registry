@@ -29,7 +29,7 @@ domains:
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
 infores_id: kegg
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.kegg.jp/feedback/copyright.html
@@ -2523,7 +2523,7 @@ products:
     source: string
   - relation_type: prov:used
     source: opentargets
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+  product_url: https://doi.org/10.5281/zenodo.16025953
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
