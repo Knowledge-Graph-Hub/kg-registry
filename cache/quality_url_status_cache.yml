@@ -5466,6 +5466,7 @@ https://aopdb.rdf.bigcat-bioinformatics.org/sparql/:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aopwiki-dashboard.vhp4safety.nl:
   checked_at: '2026-08-31T18:00:51Z'
@@ -5617,6 +5618,106 @@ https://api.cellosaurus.org/sparql-editor:
   ok: false
   source: cache
   status_code: 404
+https://api.clinpgx.org/v1/download/file/attachment/PapersOfInterestArchive.csv:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/automated_annotations.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/chemicals.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/clinicalVariants.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/drugLabels.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/drugs.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/genes.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/guidelineAnnotations.json.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/occurrences.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/pathways-biopax.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/pathways-tsv.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/pathways.json.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/phenotypes.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/relationships.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/variantAnnotations.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://api.clinpgx.org/v1/download/file/data/variants.zip:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
 https://api.eol.org/:
   checked_at: '2026-08-31T18:00:52Z'
   error: null
@@ -6716,6 +6817,7 @@ https://bidd.group/CMAUP/:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bidd.group/NPASS/:
   checked_at: '2026-08-31T18:01:27Z'
@@ -7847,6 +7949,7 @@ https://crw2-comparative-rna-web.org/:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctd2-dashboard.nci.nih.gov/:
   checked_at: '2026-08-31T18:01:44Z'
@@ -9017,6 +9120,7 @@ https://docs.sparc.science/docs/sckan:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://documentation.uts.nlm.nih.gov/rest/home.html:
   checked_at: '2026-08-31T18:01:57Z'
@@ -13206,6 +13310,7 @@ https://github.com/NCATSTranslator/Translator-All/wiki/Drug-Approvals-KP:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/Translator-All/wiki/Expander-Agent:
   checked_at: '2026-08-31T18:02:20Z'
@@ -20257,11 +20362,13 @@ https://obofoundry.org/ontology/mat.html:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obofoundry.org/ontology/mfo.html:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obofoundry.org/ontology/tahe:
   checked_at: '2026-08-31T18:03:15Z'
@@ -20279,6 +20386,7 @@ https://obofoundry.org/ontology/vhog.html:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obophenotype.github.io/cell-ontology/:
   checked_at: '2026-08-31T18:03:15Z'
@@ -24981,6 +25089,7 @@ https://veupathdb.org/:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://veupathdb.org/veupathdb/app:
   checked_at: '2026-08-31T18:03:44Z'
@@ -27883,6 +27992,16 @@ https://www.clinicalgenome.org/working-groups/sequence-variant-interpretation/:
   ok: true
   source: cache
   status_code: 200
+https://www.clinpgx.org/:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.clinpgx.org/downloads:
+  checked_at: '2026-09-01T15:28:05Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.coralkinome.org/:
   checked_at: '2026-08-31T18:04:07Z'
   error: 'HEAD request failed: HTTPSConnectionPool(host=''www.coralkinome.org'', port=443):
@@ -28334,6 +28453,7 @@ https://www.ebi.ac.uk/ols4/ontologies/oio:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/pdbe/download/docs:
   checked_at: '2026-08-31T18:04:09Z'
@@ -28579,6 +28699,7 @@ https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast:
   checked_at: '2026-09-01T13:43:39Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.epa.gov/developers/data-data-products-substance-registry-services-widget:
   checked_at: '2026-08-31T18:04:11Z'

@@ -4,11 +4,11 @@ description: Archive of papers of interest from May 2006 to April 2017
 format: csv
 id: pharmgkb.papers
 name: PharmKB Papers of Interest Archive
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: pharmgkb
 product_file_size: 126005
-product_url: https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv
+product_url: https://api.clinpgx.org/v1/download/file/attachment/PapersOfInterestArchive.csv
 warnings: []
 layout: product_detail
-original_source:
-  - source: pharmgkb
-    relation_type: prov:hadPrimarySource
 ---

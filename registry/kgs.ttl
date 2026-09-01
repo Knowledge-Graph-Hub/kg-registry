@@ -5823,7 +5823,7 @@ kgr:dsstox a schema1:DataSource ;
     dcterms:identifier "dsstox" ;
     dcterms:isReferencedBy <doi:10.1186/s13321-017-0247-6> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:dsstox.api,
@@ -6106,7 +6106,7 @@ kgr:edrr-invasive-catalog a schema1:DataSource ;
     dcterms:description "The Catalog of U.S. Federal Early Detection/Rapid Response (EDRR) Invasive Species Databases and Tools catalogs and describes existing online, federally supported databases and tools relevant to a potential national early detection and rapid response invasive species framework. It is published as a USGS data release on ScienceBase." ;
     dcterms:identifier "edrr-invasive-catalog" ;
     dcterms:isReferencedBy <doi:10.5066/P9CNVBYR> ;
-    dcterms:modified "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:edrr-invasive-catalog.dataset,
         kgr:wildlifekn.graph ;
     schema1:name "Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases and Tools" ;
@@ -7600,7 +7600,7 @@ kgr:fda-orange-book a schema1:DataSource ;
     dcterms:description "The FDA Orange Book, Approved Drug Products with Therapeutic Equivalence Evaluations, identifies drug products approved on the basis of safety and effectiveness by FDA and provides therapeutic equivalence, patent, and exclusivity information." ;
     dcterms:identifier "fda-orange-book" ;
     dcterms:license <https://www.usa.gov/government-works> ;
-    dcterms:modified "2026-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:fda-orange-book.data-files,
         kgr:fda-orange-book.preface,
         kgr:fda-orange-book.search,
@@ -11911,7 +11911,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-01T13:33:43+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T15:18:06+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15233,7 +15233,7 @@ kgr:noaa-ncei a schema1:DataSource ;
     dcterms:description "The NOAA National Centers for Environmental Information (NCEI) is the U.S. government's archive and steward for environmental data, hosting one of the most significant collections of oceanic, atmospheric, climate, weather, and geophysical data on Earth. NCEI preserves and provides access to records including the Storm Events Database, historical hurricane and tropical cyclone tracks (IBTrACS), climate summaries, and a broad range of monitoring products. These data are an upstream source for the KnowWhereGraph project." ;
     dcterms:identifier "noaa-ncei" ;
     dcterms:license "US Government Work (public domain)" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:knowwheregraph.graph,
         kgr:noaa-ncei.data-search,
         kgr:noaa-ncei.ibtracs,
@@ -17873,11 +17873,11 @@ kgr:pharmebinet a schema1:KnowledgeGraph ;
 kgr:pharmgkb a schema1:Resource ;
     rdfs:label "PharmGKB" ;
     dcterms:created "2025-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "PharmGKB collects, curates and disseminates knowledge about clinically actionable gene-drug associations and genotype-phenotype relationships." ;
+    dcterms:description "PharmGKB collects, curates and disseminates knowledge about clinically actionable gene-drug associations and genotype-phenotype relationships. As of 2025-07-30 PharmGKB is delivered through ClinPGx, which unifies PharmGKB, CPIC and PharmCAT; pharmgkb.org URLs now redirect to their clinpgx.org equivalents and downloads are served from api.clinpgx.org." ;
     dcterms:identifier "pharmgkb" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/34216021> ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
@@ -17942,14 +17942,14 @@ kgr:pharmgkb a schema1:Resource ;
         kgr:pubchem.substances.sdf ;
     schema1:identifier "pharmgkb" ;
     schema1:name "PharmGKB" ;
-    doap:repository <https://www.pharmgkb.org/downloads> ;
+    doap:repository <https://www.clinpgx.org/downloads> ;
     skos:inScheme "biomedical",
         "chemistry and biochemistry",
         "genomics",
         "pharmacology",
         "precision medicine" ;
     adms:status "Active" ;
-    foaf:homepage <https://www.pharmgkb.org/> .
+    foaf:homepage <https://www.clinpgx.org/> .
 
 kgr:pharmkg a schema1:KnowledgeGraph ;
     rdfs:label "PharmKG" ;
@@ -21889,7 +21889,7 @@ kgr:ssurgo a schema1:DataSource ;
     dcterms:description "The Soil Survey Geographic Database (SSURGO) is a detailed digital soil-survey dataset produced by the USDA Natural Resources Conservation Service (NRCS). It provides spatial map units and associated tabular attributes describing the physical and chemical properties of soils across the United States, generally at scales from 1:12,000 to 1:63,360. SSURGO is the most detailed level of the USDA soil-survey series and is widely used in land management, agriculture, and environmental modeling. It serves as an upstream data source for KnowWhereGraph." ;
     dcterms:identifier "ssurgo" ;
     dcterms:license <https://www.usa.gov/government-works> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:knowwheregraph.graph,
         kgr:sawgraph.graph,
         kgr:ssurgo.download,
@@ -36626,102 +36626,102 @@ kgr:pharmebinet.data-sources a schema1:DocumentationProduct ;
 kgr:pharmgkb.automatedannotations a schema1:Product ;
     rdfs:label "PharmKB Automated Annotations" ;
     dcterms:description "Automatically identified possible relationships between variants and drugs from literature" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/automated_annotations.zip> .
 
 kgr:pharmgkb.chemicals a schema1:Product ;
     rdfs:label "PharmKB Chemicals" ;
     dcterms:description "Summaries of chemical information annotated by PharmGKB" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/chemicals.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/chemicals.zip> .
 
 kgr:pharmgkb.clinicalannotations a schema1:Product ;
     rdfs:label "PharmKB Clinical Annotations" ;
     dcterms:description "Clinical annotation summaries" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations.zip> .
 
 kgr:pharmgkb.clinicalannotations.loe a schema1:Product ;
     rdfs:label "PharmKB Clinical Annotations (LOE 1-2)" ;
     dcterms:description "Level of evidence 1-2 clinical annotation summaries" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip> .
 
 kgr:pharmgkb.clinicalvariants a schema1:Product ;
     rdfs:label "PharmKB Clinical Variants" ;
     dcterms:description "List of variant-drug pairs and level of evidence for all clinical annotations" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/clinicalVariants.zip> .
 
 kgr:pharmgkb.druglabels a schema1:Product ;
     rdfs:label "PharmKB Drug Label Annotations" ;
     dcterms:description "Drug label annotations" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/drugLabels.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/drugLabels.zip> .
 
 kgr:pharmgkb.drugs a schema1:Product ;
     rdfs:label "PharmKB Drugs" ;
     dcterms:description "Summaries of drug information annotated by PharmGKB" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/drugs.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/drugs.zip> .
 
 kgr:pharmgkb.genes a schema1:Product ;
     rdfs:label "PharmKB Genes" ;
     dcterms:description "Summary of gene information used by PharmGKB and annotations" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/genes.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/genes.zip> .
 
 kgr:pharmgkb.guidelineannotations a schema1:Product ;
     rdfs:label "PharmKB Clinical Guideline Annotations" ;
     dcterms:description "Detailed clinical guideline annotations" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/guidelineAnnotations.json.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/guidelineAnnotations.json.zip> .
 
 kgr:pharmgkb.haplotypefrequencies.allofus a schema1:Product ;
     rdfs:label "PharmKB AllOfUs Biobank Frequencies" ;
     dcterms:description "Haplotype, phenotype, and activity score frequencies from AllOfUs dataset using PharmCAT" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip> .
 
 kgr:pharmgkb.haplotypefrequencies.ukbb a schema1:Product ;
     rdfs:label "PharmKB UK Biobank Frequencies" ;
     dcterms:description "Haplotype frequencies from UK Biobank dataset using PharmCAT" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip> .
 
 kgr:pharmgkb.literatureoccurrences a schema1:Product ;
     rdfs:label "PharmKB Literature Occurrences" ;
     dcterms:description "List of objects that occur in PharmGKB literature annotations and pathways" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/occurrences.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/occurrences.zip> .
 
 kgr:pharmgkb.papers a schema1:Product ;
     rdfs:label "PharmKB Papers of Interest Archive" ;
     dcterms:description "Archive of papers of interest from May 2006 to April 2017" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/attachment/PapersOfInterestArchive.csv> .
 
 kgr:pharmgkb.pathways.biopax a schema1:Product ;
     rdfs:label "PharmKB Pathways (BioPax)" ;
     dcterms:description "Pathways data in BioPax XML format" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/pathways-biopax.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/pathways-biopax.zip> .
 
 kgr:pharmgkb.pathways.json a schema1:Product ;
     rdfs:label "PharmKB Pathways (JSON)" ;
     dcterms:description "Pathways data in JSON format" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/pathways.json.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/pathways.json.zip> .
 
 kgr:pharmgkb.pathways.tsv a schema1:Product ;
     rdfs:label "PharmKB Pathways (TSV)" ;
     dcterms:description "Pathways data in TSV format" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/pathways-tsv.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/pathways-tsv.zip> .
 
 kgr:pharmgkb.phenotypes a schema1:Product ;
     rdfs:label "PharmKB Phenotypes" ;
     dcterms:description "Summary of disease and other phenotypes annotated by PharmGKB" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/phenotypes.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/phenotypes.zip> .
 
 kgr:pharmgkb.relationships a schema1:Product ;
     rdfs:label "PharmKB Relationships" ;
     dcterms:description "Relationships summarized from PharmGKB annotations" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/relationships.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/relationships.zip> .
 
 kgr:pharmgkb.variantannotations a schema1:Product ;
     rdfs:label "PharmKB Variant Annotations" ;
     dcterms:description "Variant annotation summary" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/variantAnnotations.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/variantAnnotations.zip> .
 
 kgr:pharmgkb.variants a schema1:Product ;
     rdfs:label "PharmKB Variants" ;
     dcterms:description "Summary of variants annotated by PharmGKB that have been tracked in dbSNP" ;
-    schema1:url <https://api.pharmgkb.org/v1/download/file/data/variants.zip> .
+    schema1:url <https://api.clinpgx.org/v1/download/file/data/variants.zip> .
 
 kgr:pharos.api a schema1:ProgrammingInterface ;
     rdfs:label "Pharos GraphQL API" ;

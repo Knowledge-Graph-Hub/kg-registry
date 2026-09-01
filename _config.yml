@@ -4002,7 +4002,8 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: alliance
     product_url: https://www.alliancegenome.org/textpresso
-  - category: Product
+  - _replace_warnings: true
+    category: Product
     description: Root directory for release-specific bulk data dumps (JSON, TSV, GAF,
       and other formats) for genes, orthology, phenotypes, disease associations, alleles,
       and related integrated datasets; individual per-file products can be programmatically
@@ -4012,14 +4013,11 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: alliance
+    product_file_size: 0
     product_url: https://download.alliancegenome.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
     edge_count: 16066449
@@ -7594,7 +7592,7 @@ resources:
       source: aop-db
     product_url: https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-26: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
@@ -7638,8 +7636,6 @@ resources:
       with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7fca293233d0>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
     format: http
@@ -7952,8 +7948,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -9802,13 +9796,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -17605,8 +17597,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
@@ -17733,8 +17723,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
@@ -23803,7 +23791,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -23811,10 +23799,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -26878,8 +26862,6 @@ resources:
       source: biothings
     product_url: https://biothings.io/specs/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 204 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
@@ -32951,8 +32933,6 @@ resources:
       source: cellphonedb
     product_url: https://www.cellphonedb.org/downloads
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
@@ -34176,8 +34156,6 @@ resources:
       source: chea
     product_url: https://hub.docker.com/r/maayanlab/chea3
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphicalInterface
@@ -38445,14 +38423,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -38491,13 +38467,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -41136,14 +41110,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -41368,8 +41340,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 406 error
       when accessing file'
   - category: GraphProduct
@@ -56668,12 +56638,10 @@ resources:
       source: compartments
     product_url: https://compartments.jensenlab.org/Downloads
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -61295,8 +61263,6 @@ resources:
       source: cpdb
     product_url: http://cpdb.molgen.mpg.de/download
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: ProgrammingInterface
@@ -69319,14 +69285,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
-      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -70289,8 +70253,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: omim
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: ProgrammingInterface
@@ -79009,7 +78971,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -79017,10 +78979,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -92863,7 +92821,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/train.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -92873,8 +92831,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -92896,7 +92852,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/test.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -92904,8 +92860,6 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -92928,18 +92882,16 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/valid.txt
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -94068,14 +94020,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -94114,13 +94064,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -95056,7 +95004,7 @@ resources:
   - environment
   homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
   id: dsstox
-  last_modified_date: '2026-06-27T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -95105,10 +95053,6 @@ resources:
       source: dsstox
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
-    - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
-      when accessing file
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -97736,7 +97680,7 @@ resources:
   - environment
   homepage_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
   id: edrr-invasive-catalog
-  last_modified_date: '2026-07-03T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   name: Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases
     and Tools
@@ -97751,13 +97695,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: edrr-invasive-catalog
     product_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
-    warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
+    warnings: []
   - category: GraphProduct
     description: The Wildlife-KN knowledge graph, an integrative RDF network of managed
       species and their habitats, environmental factors, and climate context, built
@@ -103791,8 +103729,6 @@ resources:
       source: enrichr
     product_url: https://maayanlab.cloud/Enrichr/datasetStatistics
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphProduct
@@ -115013,7 +114949,7 @@ resources:
   - biomedical
   homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book
   id: fda-orange-book
-  last_modified_date: '2026-07-02T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.usa.gov/government-works
@@ -115043,8 +114979,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
@@ -115058,8 +114992,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: Product
@@ -115116,12 +115048,10 @@ resources:
       source: fideo
     product_url: http://purl.obolibrary.org/obo/fideo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     compression: gzip
     description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -118297,12 +118227,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -118314,12 +118242,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -118331,12 +118257,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -118348,12 +118272,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -118365,12 +118287,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     description: FooDB downloads page listing the available bulk data archives, spectra,
       peak lists, and supplementary files (including NMR Free Induction Decay data).
@@ -118394,12 +118314,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Experimental C-MS peak lists from FooDB.
@@ -118411,12 +118329,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_peak_lists.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted C-MS peak lists from FooDB.
@@ -118428,12 +118344,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_peak_lists.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Experimental MS-MS peak lists from FooDB.
@@ -118445,12 +118359,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_peak_lists.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted MS-MS peak lists from FooDB.
@@ -118462,12 +118374,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_peak_lists.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: NMR peak lists from FooDB.
@@ -118479,12 +118389,10 @@ resources:
       source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -128925,18 +128833,16 @@ resources:
       source: globi
     product_url: https://zenodo.org/record/14640564/files/interactions.csv.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: Tab-separated verbatim species interaction pairs (original unresolved
@@ -128961,18 +128867,16 @@ resources:
       source: globi
     product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: Tab-separated refuted species interaction pairs (interpreted names)
@@ -128995,18 +128899,16 @@ resources:
       source: globi
     product_url: https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: Comma-separated refuted verbatim species interaction pairs (original
@@ -129019,18 +128921,16 @@ resources:
       source: globi
     product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2026-01-15_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: RDF N-Quads representation of interaction data
@@ -129075,18 +128975,16 @@ resources:
       source: globi
     product_url: https://zenodo.org/record/14640564/files/datasets.csv.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: Tab-separated taxonomic name mapping file
@@ -129131,7 +129029,7 @@ resources:
       source: globi
     product_url: https://zenodo.org/record/14640564/files/citations.csv.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -129141,8 +129039,6 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: Tab-separated refuted species interactions (original unresolved names)
@@ -129164,12 +129060,10 @@ resources:
       source: globi
     product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Field (column) definitions CSV endpoint
     format: csv
@@ -132472,8 +132366,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 406 error
       when accessing file'
   publications:
@@ -132562,8 +132454,6 @@ resources:
       source: go
     product_url: http://purl.obolibrary.org/obo/go.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: OntologyProduct
@@ -132587,8 +132477,6 @@ resources:
       source: go
     product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: OntologyProduct
@@ -132625,8 +132513,6 @@ resources:
       source: go
     product_url: http://purl.obolibrary.org/obo/go/go-basic.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: OntologyProduct
@@ -139093,14 +138979,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -139139,13 +139023,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -143477,8 +143359,6 @@ resources:
       source: gtopdb
     product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -143492,8 +143372,6 @@ resources:
       source: gtopdb
     product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -143506,8 +143384,6 @@ resources:
       source: gtopdb
     product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -143520,8 +143396,6 @@ resources:
       source: gtopdb
     product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -143535,8 +143409,6 @@ resources:
       source: gtopdb
     product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -143550,8 +143422,6 @@ resources:
       source: gtopdb
     product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -143565,8 +143435,6 @@ resources:
       source: gtopdb
     product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphicalInterface
@@ -145258,12 +145126,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
-      when accessing file'
   publications:
   - authors:
     - Mallory J. Owen
@@ -146766,8 +146632,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: omim
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -156281,8 +156145,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphicalInterface
@@ -157574,12 +157436,10 @@ resources:
       source: hocomoco
     product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/core/HUMAN/mono/HOCOMOCOv11_core_pwms_HUMAN_mono.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: HOCOMOCO v11 full collection human mononucleotide PWMs (flat text),
       including secondary motif subtypes
@@ -157591,12 +157451,10 @@ resources:
       source: hocomoco
     product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/full/HUMAN/mono/HOCOMOCOv11_full_pwms_HUMAN_mono.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: HOCOMOCO download portal with PWM/PCM models for human and mouse
       in multiple formats (JASPAR, MEME, TRANSFAC, HOMER) plus annotations and thresholds
@@ -162899,14 +162757,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -162945,13 +162801,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -165002,13 +164856,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -173280,7 +173132,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -173290,8 +173142,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
       sapiens (NCBITaxon 9606).
@@ -173310,7 +173160,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -173320,8 +173170,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
       musculus (NCBITaxon 10090).
@@ -173340,7 +173188,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -173350,8 +173198,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Drosophila melanogaster protein interactions from MINT in PSI-MI
       MITAB format.
@@ -173370,14 +173216,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI
       MITAB format.
@@ -173396,14 +173240,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: ProgrammingInterface
     description: PSICQUIC SOAP and REST web services for programmatic access to MINT
       data using Molecular Interactions Query Language (MIQL).
@@ -174097,12 +173939,10 @@ resources:
       source: imo-knowledge-graph
     product_url: https://developer.imohealth.com/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
+      when accessing file'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
       context layer, curation model, and use in grounding clinical AI.
@@ -178713,7 +178553,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -178721,10 +178561,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -178861,7 +178697,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -178871,8 +178707,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
       sapiens (NCBITaxon 9606).
@@ -178891,7 +178725,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -178901,8 +178735,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
       musculus (NCBITaxon 10090).
@@ -178921,7 +178753,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -178931,8 +178763,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Drosophila melanogaster protein interactions from MINT in PSI-MI
       MITAB format.
@@ -178951,14 +178781,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI
       MITAB format.
@@ -178977,14 +178805,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: ProgrammingInterface
     description: PSICQUIC SOAP and REST web services for programmatic access to MINT
       data using Molecular Interactions Query Language (MIQL).
@@ -179941,14 +179767,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications:
   - authors:
     - Noemi del Toro
@@ -187884,14 +187708,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
   category: KnowledgeGraph
@@ -188121,8 +187943,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 406 error
       when accessing file'
   - category: ProcessProduct
@@ -188367,13 +188187,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -188808,7 +188626,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-09-01T13:33:43Z'
+  last_modified_date: '2026-09-01T15:18:06Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -196917,8 +196735,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 406 error
       when accessing file'
   publications:
@@ -198544,8 +198360,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -198564,8 +198378,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -198585,8 +198397,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: omim
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -198599,8 +198409,6 @@ resources:
       source: markerdb
     product_url: https://markerdb.ca/pages/download_all_karyotypes?format=tsv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphProduct
@@ -201365,7 +201173,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/train.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -201375,8 +201183,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -201398,7 +201204,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/test.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -201406,8 +201212,6 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -201430,18 +201234,16 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/valid.txt
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -205636,7 +205438,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/train.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -205646,8 +205448,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -205669,7 +205469,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/test.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -205677,8 +205477,6 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -205701,18 +205499,16 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/valid.txt
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -206795,8 +206591,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -207669,7 +207463,7 @@ resources:
       source: metanetx
     product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
       to URL'
@@ -207679,8 +207473,6 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
     format: tsv
@@ -207691,12 +207483,10 @@ resources:
       source: metanetx
     product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: RDF version of the MetaNetX MNXref data for semantic web applications
@@ -210556,7 +210346,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -210566,8 +210356,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
       sapiens (NCBITaxon 9606).
@@ -210586,7 +210374,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -210596,8 +210384,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
       musculus (NCBITaxon 10090).
@@ -210616,7 +210402,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -210626,8 +210412,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Drosophila melanogaster protein interactions from MINT in PSI-MI
       MITAB format.
@@ -210646,14 +210430,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI
       MITAB format.
@@ -210672,14 +210454,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: ProgrammingInterface
     description: PSICQUIC SOAP and REST web services for programmatic access to MINT
       data using Molecular Interactions Query Language (MIQL).
@@ -210994,7 +210774,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/train.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -211004,8 +210784,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -211027,7 +210805,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/test.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -211035,8 +210813,6 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -211059,18 +210835,16 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/valid.txt
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -211186,7 +210960,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -211196,8 +210970,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
       sapiens (NCBITaxon 9606).
@@ -211216,7 +210988,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -211226,8 +210998,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
       musculus (NCBITaxon 10090).
@@ -211246,7 +211016,7 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
@@ -211256,8 +211026,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Drosophila melanogaster protein interactions from MINT in PSI-MI
       MITAB format.
@@ -211276,14 +211044,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI
       MITAB format.
@@ -211302,14 +211068,12 @@ resources:
     - relation_type: prov:used
       source: mi
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
       to URL'
     - PSICQUIC query endpoints may stream results without a stable Content-Length
       header.
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: ProgrammingInterface
     description: PSICQUIC SOAP and REST web services for programmatic access to MINT
       data using Molecular Interactions Query Language (MIQL).
@@ -212258,7 +212022,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -212266,10 +212030,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -215416,7 +215176,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -215446,9 +215206,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -215460,7 +215217,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -215490,9 +215247,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -215504,7 +215258,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -215534,9 +215288,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -215548,7 +215299,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -215578,9 +215329,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -215592,7 +215340,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -215622,9 +215370,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -220501,12 +220246,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
-      when accessing file'
   - category: ProcessProduct
     description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
       and contraindications data and processing code
@@ -221258,14 +221001,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -221304,13 +221045,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -222933,8 +222672,6 @@ resources:
       source: mp
     product_url: http://purl.obolibrary.org/obo/mp.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: OntologyProduct
@@ -230885,12 +230622,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
-      when accessing file'
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -231561,14 +231296,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -232039,8 +231772,6 @@ resources:
       source: ncbigene
     product_url: https://omia.org/download/csv/genes/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphProduct
@@ -232150,12 +231881,10 @@ resources:
       source: ncbitaxon
     product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: OntologyProduct
     description: taxslim
     format: owl
@@ -237366,7 +237095,7 @@ resources:
   - general
   homepage_url: https://www.ncei.noaa.gov/
   id: noaa-ncei
-  last_modified_date: '2026-06-18T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: ''
@@ -237407,11 +237136,6 @@ resources:
       source: noaa-ncei
     product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
-    - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
@@ -246003,13 +245727,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -246726,7 +246448,7 @@ resources:
       source: oma
     product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
       when accessing file'
@@ -246735,8 +246457,6 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
       canonical filename is still listed on the OMA current release download page
       (https://omabrowser.org/oma/current/) but is not currently served.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
       has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
@@ -246836,12 +246556,10 @@ resources:
       source: oma
     product_url: https://omabrowser.org/All/oma-species.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     compression: gzip
     description: Text descriptions for OMA groups
@@ -246853,7 +246571,7 @@ resources:
       source: oma
     product_url: https://omabrowser.org/All/group-descriptions.txt.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 502 error
       when accessing file'
@@ -246862,8 +246580,6 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
       canonical filename is still listed on the OMA current release download page
       (https://omabrowser.org/oma/current/) but is not currently served.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   publications:
   - authors:
     - Adrian M Altenhoff
@@ -246982,8 +246698,6 @@ resources:
       source: ncbigene
     product_url: https://omia.org/download/csv/genes/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphProduct
@@ -249313,8 +249027,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: omim
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: ProgrammingInterface
@@ -250042,13 +249754,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -252412,8 +252122,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 406 error
       when accessing file'
   publications:
@@ -256337,13 +256045,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -269777,17 +269483,20 @@ resources:
     label: PharmGKB
   creation_date: '2025-05-01T00:00:00Z'
   description: PharmGKB collects, curates and disseminates knowledge about clinically
-    actionable gene-drug associations and genotype-phenotype relationships.
+    actionable gene-drug associations and genotype-phenotype relationships. As of
+    2025-07-30 PharmGKB is delivered through ClinPGx, which unifies PharmGKB, CPIC
+    and PharmCAT; pharmgkb.org URLs now redirect to their clinpgx.org equivalents
+    and downloads are served from api.clinpgx.org.
   domains:
   - biomedical
   - chemistry and biochemistry
   - pharmacology
   - genomics
   - precision medicine
-  homepage_url: https://www.pharmgkb.org/
+  homepage_url: https://www.clinpgx.org/
   id: pharmgkb
   infores_id: pharmgkb
-  last_modified_date: '2026-06-18T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -269805,7 +269514,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
     product_file_size: 1231768
-    product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip
+    product_url: https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations.zip
   - category: Product
     compression: zip
     description: Level of evidence 1-2 clinical annotation summaries
@@ -269816,7 +269525,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
     product_file_size: 271314
-    product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip
+    product_url: https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip
   - category: Product
     compression: zip
     description: Variant annotation summary
@@ -269826,8 +269535,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 4071535
-    product_url: https://api.pharmgkb.org/v1/download/file/data/variantAnnotations.zip
+    product_file_size: 4272899
+    product_url: https://api.clinpgx.org/v1/download/file/data/variantAnnotations.zip
   - category: Product
     compression: zip
     description: Relationships summarized from PharmGKB annotations
@@ -269837,8 +269546,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 1261136
-    product_url: https://api.pharmgkb.org/v1/download/file/data/relationships.zip
+    product_file_size: 2370578
+    product_url: https://api.clinpgx.org/v1/download/file/data/relationships.zip
   - category: Product
     compression: zip
     description: Detailed clinical guideline annotations
@@ -269848,8 +269557,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 811786
-    product_url: https://api.pharmgkb.org/v1/download/file/data/guidelineAnnotations.json.zip
+    product_file_size: 861200
+    product_url: https://api.clinpgx.org/v1/download/file/data/guidelineAnnotations.json.zip
   - category: Product
     compression: zip
     description: Drug label annotations
@@ -269859,8 +269568,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 55911
-    product_url: https://api.pharmgkb.org/v1/download/file/data/drugLabels.zip
+    product_file_size: 59489
+    product_url: https://api.clinpgx.org/v1/download/file/data/drugLabels.zip
   - category: Product
     compression: zip
     description: Pathways data in BioPax XML format
@@ -269870,8 +269579,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 645142
-    product_url: https://api.pharmgkb.org/v1/download/file/data/pathways-biopax.zip
+    product_file_size: 634025
+    product_url: https://api.clinpgx.org/v1/download/file/data/pathways-biopax.zip
   - category: Product
     compression: zip
     description: Pathways data in TSV format
@@ -269881,8 +269590,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 195089
-    product_url: https://api.pharmgkb.org/v1/download/file/data/pathways-tsv.zip
+    product_file_size: 204070
+    product_url: https://api.clinpgx.org/v1/download/file/data/pathways-tsv.zip
   - category: Product
     compression: zip
     description: Pathways data in JSON format
@@ -269892,8 +269601,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 1873189
-    product_url: https://api.pharmgkb.org/v1/download/file/data/pathways.json.zip
+    product_file_size: 1929507
+    product_url: https://api.clinpgx.org/v1/download/file/data/pathways.json.zip
   - category: Product
     compression: zip
     description: List of variant-drug pairs and level of evidence for all clinical
@@ -269904,8 +269613,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 74321
-    product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip
+    product_file_size: 74385
+    product_url: https://api.clinpgx.org/v1/download/file/data/clinicalVariants.zip
   - category: Product
     compression: zip
     description: List of objects that occur in PharmGKB literature annotations and
@@ -269916,8 +269625,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 1918901
-    product_url: https://api.pharmgkb.org/v1/download/file/data/occurrences.zip
+    product_file_size: 2904200
+    product_url: https://api.clinpgx.org/v1/download/file/data/occurrences.zip
   - category: Product
     compression: zip
     description: Automatically identified possible relationships between variants
@@ -269929,7 +269638,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
     product_file_size: 1881822
-    product_url: https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip
+    product_url: https://api.clinpgx.org/v1/download/file/data/automated_annotations.zip
     warnings: []
   - category: Product
     compression: zip
@@ -269940,8 +269649,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 2901222
-    product_url: https://api.pharmgkb.org/v1/download/file/data/genes.zip
+    product_file_size: 2905543
+    product_url: https://api.clinpgx.org/v1/download/file/data/genes.zip
     warnings: []
   - category: Product
     compression: zip
@@ -269953,8 +269662,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 850310
-    product_url: https://api.pharmgkb.org/v1/download/file/data/variants.zip
+    product_file_size: 894788
+    product_url: https://api.clinpgx.org/v1/download/file/data/variants.zip
   - category: Product
     compression: zip
     description: Summaries of drug information annotated by PharmGKB
@@ -269964,8 +269673,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 717666
-    product_url: https://api.pharmgkb.org/v1/download/file/data/drugs.zip
+    product_file_size: 678193
+    product_url: https://api.clinpgx.org/v1/download/file/data/drugs.zip
     warnings: []
   - category: Product
     compression: zip
@@ -269976,8 +269685,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 836804
-    product_url: https://api.pharmgkb.org/v1/download/file/data/chemicals.zip
+    product_file_size: 813363
+    product_url: https://api.clinpgx.org/v1/download/file/data/chemicals.zip
     warnings: []
   - category: Product
     compression: zip
@@ -269988,8 +269697,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 186836
-    product_url: https://api.pharmgkb.org/v1/download/file/data/phenotypes.zip
+    product_file_size: 187372
+    product_url: https://api.clinpgx.org/v1/download/file/data/phenotypes.zip
   - category: Product
     description: Archive of papers of interest from May 2006 to April 2017
     format: csv
@@ -269999,7 +269708,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
     product_file_size: 126005
-    product_url: https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv
+    product_url: https://api.clinpgx.org/v1/download/file/attachment/PapersOfInterestArchive.csv
     warnings: []
   - category: Product
     compression: zip
@@ -270010,8 +269719,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
-    product_file_size: 30925
-    product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
+    product_file_size: 29627
+    product_url: https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
     warnings: []
   - category: Product
     compression: zip
@@ -270024,7 +269733,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pharmgkb
     product_file_size: 58421
-    product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip
+    product_url: https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip
   - category: Product
     description: pharmgkb.disease OBO
     format: obo
@@ -271707,14 +271416,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -272001,7 +271708,7 @@ resources:
     title: An Evidence-Based Framework for Evaluating Pharmacogenomics Knowledge for
       Personalized Medicine
     year: '2021'
-  repository: https://www.pharmgkb.org/downloads
+  repository: https://www.clinpgx.org/downloads
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -272255,13 +271962,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -279726,12 +279431,10 @@ resources:
       source: pombase
     product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
       chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -279749,12 +279452,10 @@ resources:
       source: pombase
     product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
       protein-coding gene mapped to the corresponding UniProt accession number
@@ -290584,12 +290285,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
-      when accessing file'
   - category: ProgrammingInterface
     description: MarkerDB API documentation and endpoint examples for condition, chemical,
       genetic, protein, and karyotype biomarker records.
@@ -290629,8 +290328,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphicalInterface
@@ -290660,8 +290357,6 @@ resources:
     - relation_type: prov:used
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: GraphicalInterface
@@ -292734,14 +292429,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
-      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -296180,8 +295873,6 @@ resources:
       source: rapdb
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
   - category: GraphProduct
@@ -302768,13 +302459,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -332630,7 +332319,7 @@ resources:
   - general
   homepage_url: https://websoilsurvey.nrcs.usda.gov/
   id: ssurgo
-  last_modified_date: '2026-06-18T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.usa.gov/government-works
@@ -332659,8 +332348,6 @@ resources:
       source: ssurgo
     product_url: https://nrcs.app.box.com/v/soils
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -337287,14 +336974,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -337333,13 +337018,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -338001,8 +337684,6 @@ resources:
       source: sty
     product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -342441,7 +342122,7 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
@@ -342449,8 +342130,6 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
-      when accessing file'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -342473,14 +342152,12 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Tab-delimited table mapping systems, subfamilies, and families to
       superfamilies. The URL ends in .py, but this endpoint serves data, not Python
@@ -342504,14 +342181,12 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Tab-delimited annotation mapping table for TC systems. The URL ends
       in .py, but this endpoint serves data, not Python source code.
@@ -342523,14 +342198,12 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Tab-delimited structure mapping table for TC systems. The URL ends
       in .py, but this endpoint serves data, not Python source code.
@@ -342542,14 +342215,12 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Tab-delimited protein family mapping table for TC systems. The URL
       ends in .py, but this endpoint serves data, not Python source code.
@@ -342561,14 +342232,12 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -343555,13 +343224,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -344089,12 +343756,10 @@ resources:
       source: translator
     product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -344331,14 +343996,12 @@ resources:
       source: tissues
     product_url: https://tissues.jensenlab.org/Downloads
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 503 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -348083,12 +347746,10 @@ resources:
       source: translator
     product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: DocumentationProduct
     description: SmartAPI registry entry for the Multiomics Clinical Trials KP TRAPI
       1.5 endpoint.
@@ -350210,14 +349871,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -356609,7 +356268,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/train.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -356619,8 +356278,6 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -356642,7 +356299,7 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/test.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
       to URL'
@@ -356650,8 +356307,6 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -356674,18 +356329,16 @@ resources:
       source: mesh
     product_url: https://zenodo.org/records/8117748/files/valid.txt
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-      header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -359344,12 +358997,10 @@ resources:
       source: pombase
     product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-      header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
       protein-coding gene mapped to the corresponding UniProt accession number
@@ -362766,8 +362417,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: Product
@@ -362902,14 +362551,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
-      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -363923,14 +363570,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -369308,8 +368953,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 406 error
       when accessing file'
   - category: Product
@@ -380305,12 +379948,10 @@ resources:
       source: aao
     product_url: http://purl.obolibrary.org/obo/aao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -380449,8 +380090,6 @@ resources:
       source: adw
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -382159,7 +381798,7 @@ resources:
       source: bio2rdf
     product_url: https://biosemantics.org/biosearch
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
       to URL: HTTPSConnectionPool(host=''biosemantics.org'', port=443): Max retries
@@ -382167,8 +381806,6 @@ resources:
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
-      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -382342,12 +381979,10 @@ resources:
       source: bootstrep
     product_url: http://purl.obolibrary.org/obo/bootstrep.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
   use_instead:
   - go
@@ -382716,8 +382351,7 @@ resources:
     label: Not specified
   name: ChemBank
   products:
-  - _replace_warnings: true
-    category: DocumentationProduct
+  - category: DocumentationProduct
     description: Archived snapshot of the former ChemBank homepage in the Internet
       Archive Wayback Machine, preserved because the original site (chembank.broadinstitute.org)
       is defunct.
@@ -382973,8 +382607,6 @@ resources:
     - relation_type: prov:used
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
   - category: MappingProduct
@@ -383040,12 +382672,10 @@ resources:
       source: cmf
     product_url: http://purl.obolibrary.org/obo/cmf.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -383512,14 +383142,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications:
   - authors:
     - Wang LL
@@ -383762,12 +383390,10 @@ resources:
       source: dc_cl
     product_url: http://purl.obolibrary.org/obo/dc_cl.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - all
@@ -384490,8 +384116,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -384504,8 +384128,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   publications:
@@ -384558,12 +384180,10 @@ resources:
       source: epo
     product_url: http://purl.obolibrary.org/obo/epo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -384729,12 +384349,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -384745,12 +384363,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -386175,7 +385791,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -386183,10 +385799,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/intact/ws
     description: IntAct web service and URL-based programmatic interface for retrieving
@@ -386369,14 +385981,12 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 503 error
-      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
     format: http
@@ -386387,14 +385997,12 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 503 error
-      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
     format: http
@@ -386405,14 +386013,12 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 503 error
-      when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
       and binding motifs
@@ -388224,11 +387830,6 @@ resources:
       source: inoh
     product_url: http://www.inoh.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
-      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
-      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
-      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
-      name resolution)"))'
     - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
@@ -390687,7 +390288,7 @@ resources:
       source: mirgate
     product_url: http://mirgate.bioinfo.cnio.es
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
       to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'', port=80): Max retries
       exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''mirgate.bioinfo.cnio.es'',
       port=80): Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno -2] Name or
@@ -390802,11 +390403,6 @@ resources:
       exceeded with url_ / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
       object at 0x7fd68a510490>_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno
       -2] Name or service not known)"))
-    - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-      to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'', port=80): Max retries
-      exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''mirgate.bioinfo.cnio.es'',
-      port=80): Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno -2] Name or
-      service not known)"))'
   - category: ProgrammingInterface
     description: REST API for programmatic access to miRNA-mRNA target prediction
       data
@@ -390871,8 +390467,6 @@ resources:
       source: mirnao
     product_url: http://purl.obolibrary.org/obo/mirnao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -390991,13 +390585,11 @@ resources:
       source: mo
     product_url: http://purl.obolibrary.org/obo/mo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -391186,8 +390778,6 @@ resources:
       source: netpath
     product_url: http://www.netpath.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 503 error
       when accessing file'
   - category: Product
@@ -391707,12 +391297,10 @@ resources:
       source: nmr
     product_url: http://purl.obolibrary.org/obo/nmr.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -391812,8 +391400,6 @@ resources:
       source: ogi
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -391932,14 +391518,12 @@ resources:
       source: oio
     product_url: http://purl.obolibrary.org/obo/oio.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -391950,14 +391534,12 @@ resources:
       source: oio
     product_url: http://purl.obolibrary.org/obo/oio.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
@@ -392811,12 +392393,10 @@ resources:
       source: pgdso
     product_url: http://purl.obolibrary.org/obo/pgdso.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:33090
@@ -395007,12 +394587,10 @@ resources:
       source: plo
     product_url: http://purl.obolibrary.org/obo/plo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -395164,12 +394742,10 @@ resources:
       source: propreo
     product_url: http://purl.obolibrary.org/obo/propreo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Proteomics Data and Process Provenance Ontology
@@ -395377,8 +394953,6 @@ resources:
     product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -396112,8 +395686,7 @@ resources:
     label: Not specified
   name: Protein covalent bond
   products:
-  - _replace_warnings: true
-    category: OntologyProduct
+  - category: OntologyProduct
     description: Canonical OWL edition of the RESID protein covalent bond ontology
       distributed via OBO PURL.
     format: owl
@@ -396257,8 +395830,7 @@ resources:
     label: Not specified
   name: Subcellular anatomy ontology
   products:
-  - _replace_warnings: true
-    category: OntologyProduct
+  - category: OntologyProduct
     description: Canonical OWL edition of the Subcellular Anatomy Ontology distributed
       via OBO PURL.
     format: owl
@@ -399193,12 +398765,10 @@ resources:
       source: simap
     product_url: http://mips.helmholtz-muenchen.de/simap/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
-      to URL'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -401151,8 +400721,7 @@ resources:
     label: Not specified
   name: Terminology of Anatomy of Human Embryology
   products:
-  - _replace_warnings: true
-    category: OntologyProduct
+  - category: OntologyProduct
     description: Terminology of Anatomy of Human Embryology in OWL format
     format: owl
     id: tahe.owl

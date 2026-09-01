@@ -10,8 +10,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: fda-orange-book
 product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
-warnings:
-- File was not able to be retrieved when checked on 2026-08-31_ HTTP 404 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

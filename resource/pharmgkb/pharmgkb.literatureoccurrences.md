@@ -5,10 +5,10 @@ description: List of objects that occur in PharmGKB literature annotations and p
 format: tsv
 id: pharmgkb.literatureoccurrences
 name: PharmKB Literature Occurrences
-product_file_size: 1918901
-product_url: https://api.pharmgkb.org/v1/download/file/data/occurrences.zip
-layout: product_detail
 original_source:
-  - source: pharmgkb
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: pharmgkb
+product_file_size: 2904200
+product_url: https://api.clinpgx.org/v1/download/file/data/occurrences.zip
+layout: product_detail
 ---

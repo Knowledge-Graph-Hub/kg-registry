@@ -5,10 +5,10 @@ description: Drug label annotations
 format: tsv
 id: pharmgkb.druglabels
 name: PharmKB Drug Label Annotations
-product_file_size: 55911
-product_url: https://api.pharmgkb.org/v1/download/file/data/drugLabels.zip
-layout: product_detail
 original_source:
-  - source: pharmgkb
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: pharmgkb
+product_file_size: 59489
+product_url: https://api.clinpgx.org/v1/download/file/data/drugLabels.zip
+layout: product_detail
 ---

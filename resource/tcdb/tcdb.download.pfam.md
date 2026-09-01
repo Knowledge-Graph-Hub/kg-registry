@@ -10,7 +10,7 @@ original_source:
   source: tcdb
 product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
 warnings:
-- File was not able to be retrieved when checked on 2026-08-31_ No Content-Length
+- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-08-12_ HTTP 404 error when
   accessing file

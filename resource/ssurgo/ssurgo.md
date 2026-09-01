@@ -51,7 +51,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ssurgo
   product_url: https://nrcs.app.box.com/v/soils
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
     30+ environmental and geospatial data layers accessible through SPARQL endpoint

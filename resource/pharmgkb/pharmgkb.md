@@ -9,10 +9,10 @@ contacts:
   label: PharmGKB
 creation_date: '2025-05-01T00:00:00Z'
 description: PharmGKB collects, curates and disseminates knowledge about clinically
-  actionable gene-drug associations and genotype-phenotype relationships. As of
-  2025-07-30 PharmGKB is delivered through ClinPGx, which unifies PharmGKB, CPIC
-  and PharmCAT; pharmgkb.org URLs now redirect to their clinpgx.org equivalents
-  and downloads are served from api.clinpgx.org.
+  actionable gene-drug associations and genotype-phenotype relationships. As of 2025-07-30
+  PharmGKB is delivered through ClinPGx, which unifies PharmGKB, CPIC and PharmCAT;
+  pharmgkb.org URLs now redirect to their clinpgx.org equivalents and downloads are
+  served from api.clinpgx.org.
 domains:
 - biomedical
 - chemistry and biochemistry
@@ -1939,14 +1939,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx

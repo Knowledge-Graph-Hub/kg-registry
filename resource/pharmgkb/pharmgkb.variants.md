@@ -5,10 +5,10 @@ description: Summary of variants annotated by PharmGKB that have been tracked in
 format: tsv
 id: pharmgkb.variants
 name: PharmKB Variants
-product_file_size: 850310
-product_url: https://api.pharmgkb.org/v1/download/file/data/variants.zip
-layout: product_detail
 original_source:
-  - source: pharmgkb
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: pharmgkb
+product_file_size: 894788
+product_url: https://api.clinpgx.org/v1/download/file/data/variants.zip
+layout: product_detail
 ---

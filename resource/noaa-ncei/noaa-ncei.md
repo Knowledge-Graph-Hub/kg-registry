@@ -63,7 +63,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: noaa-ncei
   product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
+    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+    without response''))'
 - category: GraphProduct
   description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
     30+ environmental and geospatial data layers accessible through SPARQL endpoint

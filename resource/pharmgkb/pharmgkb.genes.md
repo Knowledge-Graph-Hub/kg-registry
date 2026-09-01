@@ -5,11 +5,11 @@ description: Summary of gene information used by PharmGKB and annotations
 format: tsv
 id: pharmgkb.genes
 name: PharmKB Genes
-product_file_size: 2901222
-product_url: https://api.pharmgkb.org/v1/download/file/data/genes.zip
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: pharmgkb
+product_file_size: 2905543
+product_url: https://api.clinpgx.org/v1/download/file/data/genes.zip
 warnings: []
 layout: product_detail
-original_source:
-  - source: pharmgkb
-    relation_type: prov:hadPrimarySource
 ---

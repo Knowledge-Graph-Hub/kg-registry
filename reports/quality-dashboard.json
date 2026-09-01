@@ -10,9 +10,9 @@
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 861,
+    "modified_after_creation": 864,
     "stale_over_365_days": 4,
-    "unchanged_since_creation": 165,
+    "unchanged_since_creation": 162,
     "with_both_dates": 1026
   },
   "detail_lists": {
@@ -298,26 +298,6 @@
       "pathwhiz.private_draw",
       "pd_st",
       "pharmacodb.api",
-      "pharmgkb.automatedannotations",
-      "pharmgkb.chemicals",
-      "pharmgkb.clinicalannotations",
-      "pharmgkb.clinicalannotations.loe",
-      "pharmgkb.clinicalvariants",
-      "pharmgkb.druglabels",
-      "pharmgkb.drugs",
-      "pharmgkb.genes",
-      "pharmgkb.guidelineannotations",
-      "pharmgkb.haplotypefrequencies.allofus",
-      "pharmgkb.haplotypefrequencies.ukbb",
-      "pharmgkb.literatureoccurrences",
-      "pharmgkb.papers",
-      "pharmgkb.pathways.biopax",
-      "pharmgkb.pathways.json",
-      "pharmgkb.pathways.tsv",
-      "pharmgkb.phenotypes",
-      "pharmgkb.relationships",
-      "pharmgkb.variantannotations",
-      "pharmgkb.variants",
       "phaseskg.sparql",
       "pid",
       "pir",
@@ -4798,6 +4778,26 @@
       "pharmebinet.neo4j.dump",
       "pharmebinet.tsv",
       "pharmgkb",
+      "pharmgkb.automatedannotations",
+      "pharmgkb.chemicals",
+      "pharmgkb.clinicalannotations",
+      "pharmgkb.clinicalannotations.loe",
+      "pharmgkb.clinicalvariants",
+      "pharmgkb.druglabels",
+      "pharmgkb.drugs",
+      "pharmgkb.genes",
+      "pharmgkb.guidelineannotations",
+      "pharmgkb.haplotypefrequencies.allofus",
+      "pharmgkb.haplotypefrequencies.ukbb",
+      "pharmgkb.literatureoccurrences",
+      "pharmgkb.papers",
+      "pharmgkb.pathways.biopax",
+      "pharmgkb.pathways.json",
+      "pharmgkb.pathways.tsv",
+      "pharmgkb.phenotypes",
+      "pharmgkb.relationships",
+      "pharmgkb.variantannotations",
+      "pharmgkb.variants",
       "pharmkg",
       "pharmkg.graph",
       "pharos",
@@ -9257,6 +9257,7 @@
       "ecosim",
       "ecto",
       "edam",
+      "edrr-invasive-catalog",
       "efip",
       "efo",
       "eggnog",
@@ -9580,6 +9581,7 @@
       "nlm",
       "nlm-ckn",
       "nmr",
+      "noaa-ncei",
       "nomen",
       "noncode",
       "np-kg",
@@ -9812,6 +9814,7 @@
       "sra",
       "sri-reference-kg",
       "srpdb",
+      "ssurgo",
       "startgeo",
       "stato",
       "stellar",
@@ -15485,7 +15488,6 @@
       "pathwhiz",
       "pd_st",
       "pharmacodb",
-      "pharmgkb",
       "phaseskg",
       "pid",
       "pir",
@@ -15943,7 +15945,6 @@
     "retrieval_warning_product_ids": [
       "aao.owl",
       "adw.owl",
-      "alliance.downloads",
       "aop-db.manual",
       "bio2rdf.biosearch",
       "biobricks-aopwiki.graph",
@@ -15959,7 +15960,6 @@
       "dbsno.downloads",
       "dc_cl.owl",
       "dsstox.description",
-      "edrr-invasive-catalog.dataset",
       "enrichr.library-statistics",
       "eo.obo",
       "eo.owl",
@@ -16104,7 +16104,6 @@
       "decipher",
       "dgv",
       "dog10k",
-      "edrr-invasive-catalog",
       "effas-kpi",
       "endb",
       "enhanceratlas",
@@ -16168,7 +16167,6 @@
       "nifc",
       "nij",
       "noaa-hms",
-      "noaa-ncei",
       "noaa-nwm",
       "npm",
       "nsduh",
@@ -16209,7 +16207,6 @@
       "sniff",
       "snpeff",
       "sparc",
-      "ssurgo",
       "surechembl",
       "synlethdb",
       "t3db",
@@ -16238,18 +16235,18 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-09-01T13:43:34Z",
+  "generated_at": "2026-09-01T15:27:59Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 161,
     "with_evaluation_page": 127,
     "without_evaluation_page": 34
   },
   "links": {
-    "broken_urls": 326,
-    "cache_hits": 4601,
+    "broken_urls": 306,
+    "cache_hits": 4590,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4286,
-    "live_checked_urls": 11,
+    "healthy_urls": 4306,
+    "live_checked_urls": 22,
     "mode": "live",
     "total_unique_urls": 4612,
     "unchecked_urls": 0
@@ -16259,7 +16256,7 @@
     "missing_original_source": 0,
     "missing_product_url": 22,
     "total": 4148,
-    "with_retrieval_warning": 120
+    "with_retrieval_warning": 118
   },
   "resource_count": 1026,
   "resources": {
@@ -16280,15 +16277,15 @@
     },
     "stub_count": 0,
     "total": 1026,
-    "with_broken_links": 197,
+    "with_broken_links": 196,
     "with_citation_issues": 30,
     "without_products": 10,
     "without_publications": 357
   },
   "scoring": {
-    "average_score": 7.27,
+    "average_score": 7.21,
     "median_score": 7.0,
-    "resources_with_issues": 991,
+    "resources_with_issues": 990,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -16530,143 +16527,6 @@
       "name": "NCATS Translator Graph Releases",
       "resource_page": "resource/translator/translator.html",
       "score": 100
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/chemicals.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/drugLabels.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/drugs.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/genes.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/guidelineAnnotations.json.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/occurrences.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/pathways-biopax.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/pathways-tsv.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/pathways.json.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/phenotypes.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/relationships.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/variantAnnotations.zip"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://api.pharmgkb.org/v1/download/file/data/variants.zip"
-        }
-      ],
-      "id": "pharmgkb",
-      "issues": [
-        {
-          "count": 20,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 60
-        }
-      ],
-      "name": "PharmGKB",
-      "resource_page": "resource/pharmgkb/pharmgkb.html",
-      "score": 60
     },
     {
       "activity_status": "active",
@@ -17183,6 +17043,71 @@
       "name": "snoDB",
       "resource_page": "resource/snodb/snodb.html",
       "score": 19
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://apps.okn.us/ldf/maudekg"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://github.com/Prabhadeus/Proto-OKN"
+        }
+      ],
+      "id": "maudekg",
+      "issues": [
+        {
+          "count": 2,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 6
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "kg_missing_evaluation_page",
+          "label": "KnowledgeGraph missing evaluation page",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "FDA MAUDE Adverse Event Knowledge Graph",
+      "resource_page": "resource/maudekg/maudekg.html",
+      "score": 18
     }
   ]
 }
