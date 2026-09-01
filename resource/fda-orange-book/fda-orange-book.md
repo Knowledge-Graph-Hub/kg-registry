@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book
 id: fda-orange-book
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works
@@ -48,11 +48,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: fda-orange-book
   product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-    when accessing file'
+  warnings: []
 - category: DocumentationProduct
   description: FDA Orange Book preface describing publication structure, therapeutic
     equivalence codes, and interpretation of Orange Book listings.
@@ -63,11 +59,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: fda-orange-book
   product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
   id: medi.orangebook

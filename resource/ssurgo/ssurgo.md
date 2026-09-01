@@ -23,7 +23,7 @@ domains:
 - general
 homepage_url: https://websoilsurvey.nrcs.usda.gov/
 id: ssurgo
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works
@@ -51,11 +51,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ssurgo
   product_url: https://nrcs.app.box.com/v/soils
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
-    when accessing file'
+  warnings: []
 - category: GraphProduct
   description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
     30+ environmental and geospatial data layers accessible through SPARQL endpoint
