@@ -10,8 +10,9 @@ domains:
 - genomics
 - biological systems
 - organisms
+homepage_url: https://veupathdb.org/
 id: eupathdb
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: Eukaryotic Pathogen Database (EuPathDB)
 products:

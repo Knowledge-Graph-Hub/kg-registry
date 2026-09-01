@@ -13,8 +13,9 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
+homepage_url: https://obofoundry.org/ontology/mat.html
 id: mat
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

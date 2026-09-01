@@ -18,8 +18,9 @@ domains:
 - biomedical
 - pharmacology
 - drug discovery
+homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Drug-Approvals-KP
 id: drug-approvals-kp
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: Drug Approvals KP
 products:

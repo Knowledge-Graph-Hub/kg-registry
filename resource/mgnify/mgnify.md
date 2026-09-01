@@ -10,8 +10,9 @@ domains:
   - genomics
   - environment
   - clinical
+homepage_url: https://www.ebi.ac.uk/metagenomics
 id: mgnify
-last_modified_date: '2025-10-10T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: MGnify
 products:
