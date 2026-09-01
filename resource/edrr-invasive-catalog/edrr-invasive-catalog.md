@@ -17,7 +17,7 @@ domains:
 - environment
 homepage_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
 id: edrr-invasive-catalog
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases
   and Tools
@@ -32,13 +32,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: edrr-invasive-catalog
   product_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: GraphProduct
   description: The Wildlife-KN knowledge graph, an integrative RDF network of managed
     species and their habitats, environmental factors, and climate context, built

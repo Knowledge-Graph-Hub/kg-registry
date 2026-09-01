@@ -9,17 +9,20 @@ contacts:
   label: PharmGKB
 creation_date: '2025-05-01T00:00:00Z'
 description: PharmGKB collects, curates and disseminates knowledge about clinically
-  actionable gene-drug associations and genotype-phenotype relationships.
+  actionable gene-drug associations and genotype-phenotype relationships. As of
+  2025-07-30 PharmGKB is delivered through ClinPGx, which unifies PharmGKB, CPIC
+  and PharmCAT; pharmgkb.org URLs now redirect to their clinpgx.org equivalents
+  and downloads are served from api.clinpgx.org.
 domains:
 - biomedical
 - chemistry and biochemistry
 - pharmacology
 - genomics
 - precision medicine
-homepage_url: https://www.pharmgkb.org/
+homepage_url: https://www.clinpgx.org/
 id: pharmgkb
 infores_id: pharmgkb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -36,7 +39,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
   product_file_size: 1231768
-  product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip
+  product_url: https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations.zip
 - category: Product
   compression: zip
   description: Level of evidence 1-2 clinical annotation summaries
@@ -47,7 +50,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
   product_file_size: 271314
-  product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip
+  product_url: https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip
 - category: Product
   compression: zip
   description: Variant annotation summary
@@ -57,8 +60,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 4071535
-  product_url: https://api.pharmgkb.org/v1/download/file/data/variantAnnotations.zip
+  product_file_size: 4272899
+  product_url: https://api.clinpgx.org/v1/download/file/data/variantAnnotations.zip
 - category: Product
   compression: zip
   description: Relationships summarized from PharmGKB annotations
@@ -68,8 +71,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 1261136
-  product_url: https://api.pharmgkb.org/v1/download/file/data/relationships.zip
+  product_file_size: 2370578
+  product_url: https://api.clinpgx.org/v1/download/file/data/relationships.zip
 - category: Product
   compression: zip
   description: Detailed clinical guideline annotations
@@ -79,8 +82,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 811786
-  product_url: https://api.pharmgkb.org/v1/download/file/data/guidelineAnnotations.json.zip
+  product_file_size: 861200
+  product_url: https://api.clinpgx.org/v1/download/file/data/guidelineAnnotations.json.zip
 - category: Product
   compression: zip
   description: Drug label annotations
@@ -90,8 +93,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 55911
-  product_url: https://api.pharmgkb.org/v1/download/file/data/drugLabels.zip
+  product_file_size: 59489
+  product_url: https://api.clinpgx.org/v1/download/file/data/drugLabels.zip
 - category: Product
   compression: zip
   description: Pathways data in BioPax XML format
@@ -101,8 +104,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 645142
-  product_url: https://api.pharmgkb.org/v1/download/file/data/pathways-biopax.zip
+  product_file_size: 634025
+  product_url: https://api.clinpgx.org/v1/download/file/data/pathways-biopax.zip
 - category: Product
   compression: zip
   description: Pathways data in TSV format
@@ -112,8 +115,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 195089
-  product_url: https://api.pharmgkb.org/v1/download/file/data/pathways-tsv.zip
+  product_file_size: 204070
+  product_url: https://api.clinpgx.org/v1/download/file/data/pathways-tsv.zip
 - category: Product
   compression: zip
   description: Pathways data in JSON format
@@ -123,8 +126,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 1873189
-  product_url: https://api.pharmgkb.org/v1/download/file/data/pathways.json.zip
+  product_file_size: 1929507
+  product_url: https://api.clinpgx.org/v1/download/file/data/pathways.json.zip
 - category: Product
   compression: zip
   description: List of variant-drug pairs and level of evidence for all clinical annotations
@@ -134,8 +137,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 74321
-  product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip
+  product_file_size: 74385
+  product_url: https://api.clinpgx.org/v1/download/file/data/clinicalVariants.zip
 - category: Product
   compression: zip
   description: List of objects that occur in PharmGKB literature annotations and pathways
@@ -145,8 +148,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 1918901
-  product_url: https://api.pharmgkb.org/v1/download/file/data/occurrences.zip
+  product_file_size: 2904200
+  product_url: https://api.clinpgx.org/v1/download/file/data/occurrences.zip
 - category: Product
   compression: zip
   description: Automatically identified possible relationships between variants and
@@ -158,7 +161,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
   product_file_size: 1881822
-  product_url: https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip
+  product_url: https://api.clinpgx.org/v1/download/file/data/automated_annotations.zip
   warnings: []
 - category: Product
   compression: zip
@@ -169,8 +172,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 2901222
-  product_url: https://api.pharmgkb.org/v1/download/file/data/genes.zip
+  product_file_size: 2905543
+  product_url: https://api.clinpgx.org/v1/download/file/data/genes.zip
   warnings: []
 - category: Product
   compression: zip
@@ -182,8 +185,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 850310
-  product_url: https://api.pharmgkb.org/v1/download/file/data/variants.zip
+  product_file_size: 894788
+  product_url: https://api.clinpgx.org/v1/download/file/data/variants.zip
 - category: Product
   compression: zip
   description: Summaries of drug information annotated by PharmGKB
@@ -193,8 +196,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 717666
-  product_url: https://api.pharmgkb.org/v1/download/file/data/drugs.zip
+  product_file_size: 678193
+  product_url: https://api.clinpgx.org/v1/download/file/data/drugs.zip
   warnings: []
 - category: Product
   compression: zip
@@ -205,8 +208,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 836804
-  product_url: https://api.pharmgkb.org/v1/download/file/data/chemicals.zip
+  product_file_size: 813363
+  product_url: https://api.clinpgx.org/v1/download/file/data/chemicals.zip
   warnings: []
 - category: Product
   compression: zip
@@ -217,8 +220,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 186836
-  product_url: https://api.pharmgkb.org/v1/download/file/data/phenotypes.zip
+  product_file_size: 187372
+  product_url: https://api.clinpgx.org/v1/download/file/data/phenotypes.zip
 - category: Product
   description: Archive of papers of interest from May 2006 to April 2017
   format: csv
@@ -228,7 +231,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
   product_file_size: 126005
-  product_url: https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv
+  product_url: https://api.clinpgx.org/v1/download/file/attachment/PapersOfInterestArchive.csv
   warnings: []
 - category: Product
   compression: zip
@@ -239,8 +242,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
-  product_file_size: 30925
-  product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
+  product_file_size: 29627
+  product_url: https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
   warnings: []
 - category: Product
   compression: zip
@@ -253,7 +256,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharmgkb
   product_file_size: 58421
-  product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip
+  product_url: https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip
 - category: Product
   description: pharmgkb.disease OBO
   format: obo
@@ -2230,8 +2233,15 @@ publications:
   title: An Evidence-Based Framework for Evaluating Pharmacogenomics Knowledge for
     Personalized Medicine
   year: '2021'
-repository: https://www.pharmgkb.org/downloads
+repository: https://www.clinpgx.org/downloads
 taxon:
 - NCBITaxon:9606
 ---
-PharmGKB
+PharmGKB is a pharmacogenomics knowledge resource covering clinically actionable
+gene-drug associations and genotype-phenotype relationships.
+
+PharmGKB is now delivered through [ClinPGx](https://www.clinpgx.org/), which brings
+PharmGKB together with CPIC and PharmCAT under one resource. Since 2025-07-30 all
+pharmgkb.org links redirect to their ClinPGx equivalents, and the bulk download files
+listed here are served from `api.clinpgx.org` on the same paths they previously used
+on `api.pharmgkb.org`, which no longer resolves.
