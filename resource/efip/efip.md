@@ -15,9 +15,9 @@ domains:
 - biomedical
 - literature
 - proteomics
-homepage_url: http://proteininformationresource.org/efip
+homepage_url: https://proteininformationresource.org/efip/
 id: efip
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: eFIP
 products:

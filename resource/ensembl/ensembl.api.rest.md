@@ -8,6 +8,6 @@ name: Ensembl REST API
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ensembl
-product_url: https://rest.ensembl.org
+product_url: https://rest.ensembl.org/
 layout: product_detail
 ---

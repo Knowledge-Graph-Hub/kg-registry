@@ -36,7 +36,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: fda-orange-book
-  product_url: https://www.fda.gov/cder/ob/default.htm
+  product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book
 - category: Product
   description: FDA Orange Book data files and appendices for approved drug products,
     therapeutic equivalence evaluations, patents, exclusivity, and related regulatory

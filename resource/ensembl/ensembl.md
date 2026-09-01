@@ -16,7 +16,7 @@ domains:
 homepage_url: https://www.ensembl.org
 id: ensembl
 infores_id: ensembl-gene
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.apache.org/licenses/LICENSE-2.0
@@ -81,7 +81,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ensembl
-  product_url: https://rest.ensembl.org
+  product_url: https://rest.ensembl.org/
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl

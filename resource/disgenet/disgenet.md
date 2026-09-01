@@ -22,7 +22,7 @@ domains:
 homepage_url: https://www.disgenet.com/
 id: disgenet
 infores_id: disgenet
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.disgenet.com/Legal
@@ -2004,7 +2004,7 @@ products:
     source: string
   - relation_type: prov:used
     source: opentargets
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+  product_url: https://doi.org/10.5281/zenodo.16025953
 - category: GraphProduct
   description: The full PrimeKG dataset containing disease relationships.
   format: csv

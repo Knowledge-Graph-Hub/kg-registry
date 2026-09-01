@@ -9,6 +9,6 @@ name: ESGF Search
 original_source:
 - relation_type: prov:hadPrimarySource
   source: esgf
-product_url: https://aims2.llnl.gov/search
+product_url: https://metagrid.esgf-west.org/search
 layout: product_detail
 ---

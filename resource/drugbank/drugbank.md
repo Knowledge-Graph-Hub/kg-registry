@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.drugbank.com/
 id: drugbank
 infores_id: drugbank
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://go.drugbank.com/legal/terms_of_use
@@ -2867,7 +2867,7 @@ products:
     source: string
   - relation_type: prov:used
     source: opentargets
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+  product_url: https://doi.org/10.5281/zenodo.16025953
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources

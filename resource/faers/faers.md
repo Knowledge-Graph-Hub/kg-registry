@@ -23,10 +23,10 @@ domains:
 - drug discovery
 - clinical
 - public health
-homepage_url: https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers
+homepage_url: https://www.fda.gov/drugs/surveillance-post-drug-approval-activities/fda-adverse-event-monitoring-system-aems
 id: faers
 infores_id: faers
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: FDA Adverse Event Reporting System
 products:
@@ -86,7 +86,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: faers
-  product_url: https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-electronic-submissions
+  product_url: https://www.fda.gov/drugs/fda-adverse-event-monitoring-system-aems/fda-adverse-event-monitoring-system-aems-electronic-submissions
 - category: Product
   description: Standardized and deduplicated version of FDA FAERS data with drug names
     mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed

@@ -9,6 +9,6 @@ name: FDA Orange Book Search
 original_source:
 - relation_type: prov:hadPrimarySource
   source: fda-orange-book
-product_url: https://www.fda.gov/cder/ob/default.htm
+product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book
 layout: product_detail
 ---
