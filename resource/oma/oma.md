@@ -118,6 +118,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
     canonical filename is still listed on the OMA current release download page (https://omabrowser.org/oma/current/)
     but is not currently served.'
+  - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+    to URL'
 - category: Product
   description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
     has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
@@ -243,11 +245,11 @@ products:
 publications:
 - authors:
   - Adrian M Altenhoff
-  - "Alex Warwick\_Vesztrocy"
+  - Alex Warwick Vesztrocy
   - Charles Bernard
   - Clement-Marie Train
   - Alina Nicheperovich
-  - "Silvia Prieto\_Ba\xF1os"
+  - Silvia Prieto Baños
   - Irene Julca
   - David Moi
   - Yannis Nevers
@@ -262,15 +264,15 @@ publications:
   year: '2024'
 - authors:
   - Adrian M Altenhoff
-  - "Cl\xE9ment-Marie Train"
+  - Clément-Marie Train
   - Kimberly J Gilbert
   - Ishita Mediratta
-  - "Tarcisio Mendes\_de\_Farias"
+  - Tarcisio Mendes de Farias
   - David Moi
   - Yannis Nevers
   - Hale-Seda Radoykova
   - Victor Rossier
-  - "Alex Warwick\_Vesztrocy"
+  - Alex Warwick Vesztrocy
   - Natasha M Glover
   - Christophe Dessimoz
   doi: 10.1093/nar/gkaa1007

@@ -5,15 +5,15 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Pantelis Topalis
   contact_details:
   - contact_type: email
     value: topalis@imbb.forth.gr
-  label: Pantelis Topalis
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology for use with miRNA databases.
 domains:
 - chemistry and biochemistry
-homepage_url: https://code.google.com/archive/p/mirna-ontology
+homepage_url: http://code.google.com/p/mirna-ontology/
 id: mirnao
 last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail

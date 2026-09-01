@@ -3961,8 +3961,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: alliance
     product_url: https://www.alliancegenome.org/textpresso
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: Root directory for release-specific bulk data dumps (JSON, TSV, GAF,
       and other formats) for genes, orthology, phenotypes, disease associations, alleles,
       and related integrated datasets; individual per-file products can be programmatically
@@ -3977,6 +3976,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+      header found'
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
     edge_count: 16066449
@@ -29966,9 +29967,9 @@ resources:
   - clinical
   - medical imaging
   - precision medicine
-  homepage_url: https://github.com/ImperialCollegeLondon/cardioKG
+  homepage_url: https://doi.org/10.5281/zenodo.16025953
   id: cardiokg
-  last_modified_date: '2026-06-12T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://opensource.org/license/mit/
@@ -29977,7 +29978,8 @@ resources:
   products:
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -30005,10 +30007,11 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
     description: CardioKG supporting data tables for anatomy and cardiac magnetic
-      resonance anatomy mappings.
+      resonance anatomy mappings. The GitHub repository is no longer available; these
+      files are inside the archived Zenodo snapshot.
     format: csv
     id: cardiokg.data
     name: CardioKG supporting data tables
@@ -30017,25 +30020,28 @@ resources:
       source: cardiokg
     - relation_type: prov:hadPrimarySource
       source: ukbiobank
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Data
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
     description: Generated CardioKG embeddings for gene-disease and medication-disease
-      association prediction tasks.
+      association prediction tasks. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     id: cardiokg.embeddings
     name: CardioKG generated embeddings
     original_source:
     - relation_type: prov:hadPrimarySource
       source: cardiokg
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Generated_embeddings
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProcessProduct
     description: Analysis notebooks and scripts for CardioKG graph construction, PageRank
       importance analysis, gene-disease association prediction, and drug repurposing.
+      The GitHub repository is no longer available; these files are inside the archived
+      Zenodo snapshot.
     id: cardiokg.workflow
     name: CardioKG analysis workflow
     original_source:
     - relation_type: prov:hadPrimarySource
       source: cardiokg
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
     compression: zip
     description: Archived CardioKG repository release on Zenodo.
@@ -30070,7 +30076,6 @@ resources:
     journal: Nature Cardiovascular Research
     title: A multimodal vision knowledge graph of cardiovascular disease
     year: '2025'
-  repository: https://github.com/ImperialCollegeLondon/cardioKG
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -82259,7 +82264,7 @@ resources:
   homepage_url: https://www.disgenet.com/
   id: disgenet
   infores_id: disgenet
-  last_modified_date: '2026-06-22T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.disgenet.com/Legal
@@ -84214,7 +84219,8 @@ resources:
       source: wikipathways
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -84242,7 +84248,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: GraphProduct
     description: The full PrimeKG dataset containing disease relationships.
     format: csv
@@ -88585,7 +88591,7 @@ resources:
   homepage_url: https://www.drugbank.com/
   id: drugbank
   infores_id: drugbank
-  last_modified_date: '2026-06-22T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://go.drugbank.com/legal/terms_of_use
@@ -91403,7 +91409,8 @@ resources:
       source: omim
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -91431,7 +91438,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: GraphicalInterface
     description: Web-based interface for searching and browsing comprehensive gene-centric
       information integrating data from over 200 sources
@@ -92790,6 +92797,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -104087,7 +104096,7 @@ resources:
   homepage_url: https://www.ensembl.org
   id: ensembl
   infores_id: ensembl-gene
-  last_modified_date: '2026-06-18T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: http://www.apache.org/licenses/LICENSE-2.0
@@ -104152,7 +104161,7 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: ensembl
-    product_url: https://rest.ensembl.org
+    product_url: https://rest.ensembl.org/
   - category: GraphProduct
     description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl
@@ -109876,7 +109885,7 @@ resources:
   - general
   homepage_url: https://esgf.llnl.gov/
   id: esgf
-  last_modified_date: '2026-07-03T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   name: Earth System Grid Federation (ESGF)
   products:
@@ -109890,7 +109899,7 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: esgf
-    product_url: https://aims2.llnl.gov/search
+    product_url: https://metagrid.esgf-west.org/search
   - category: GraphProduct
     description: RDF/Turtle knowledge graph integrating climate model and dataset
       metadata (from ESGF, CMIP controlled vocabularies, and the NASA GCMD keyword
@@ -112549,10 +112558,10 @@ resources:
   - drug discovery
   - clinical
   - public health
-  homepage_url: https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers
+  homepage_url: https://www.fda.gov/drugs/surveillance-post-drug-approval-activities/fda-adverse-event-monitoring-system-aems
   id: faers
   infores_id: faers
-  last_modified_date: '2026-06-02T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   name: FDA Adverse Event Reporting System
   products:
@@ -112613,7 +112622,7 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: faers
-    product_url: https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-electronic-submissions
+    product_url: https://www.fda.gov/drugs/fda-adverse-event-monitoring-system-aems/fda-adverse-event-monitoring-system-aems-electronic-submissions
   - category: Product
     description: Standardized and deduplicated version of FDA FAERS data with drug
       names mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including
@@ -114925,7 +114934,7 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: fda-orange-book
-    product_url: https://www.fda.gov/cder/ob/default.htm
+    product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book
   - category: Product
     description: FDA Orange Book data files and appendices for approved drug products,
       therapeutic equivalence evaluations, patents, exclusivity, and related regulatory
@@ -118190,6 +118199,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -118204,6 +118215,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
   - category: Product
     compression: zip
@@ -118220,6 +118233,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -118235,6 +118250,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -118249,6 +118266,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
   - category: Product
     description: FooDB downloads page listing the available bulk data archives, spectra,
@@ -118277,6 +118296,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Experimental C-MS peak lists from FooDB.
@@ -118291,6 +118312,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
   - category: Product
     compression: zip
@@ -118307,6 +118330,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Experimental MS-MS peak lists from FooDB.
@@ -118321,6 +118346,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
   - category: Product
     compression: zip
@@ -118337,6 +118364,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: NMR peak lists from FooDB.
@@ -118351,6 +118380,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
       to URL'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -128868,6 +128899,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     compression: gzip
     description: Comma-separated refuted verbatim species interaction pairs (original
@@ -184107,7 +184140,7 @@ resources:
   homepage_url: https://www.genome.jp/kegg/
   id: kegg
   infores_id: kegg
-  last_modified_date: '2026-07-01T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.kegg.jp/feedback/copyright.html
@@ -186577,7 +186610,8 @@ resources:
       source: biofactoid
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -186605,7 +186639,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: GraphicalInterface
     description: Web interface that allows searching, browsing, and exploring food
       compounds and their properties.
@@ -188585,7 +188619,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-09-01T15:18:06Z'
+  last_modified_date: '2026-09-01T15:38:45Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -199307,9 +199341,9 @@ resources:
   domains:
   - clinical
   - biomedical
-  homepage_url: https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/manufacturer-and-user-facility-device-experience-database-maude
+  homepage_url: https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database
   id: maude
-  last_modified_date: '2026-07-01T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.usa.gov/government-works
@@ -201142,6 +201176,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -204173,7 +204209,7 @@ resources:
   homepage_url: https://www.nlm.nih.gov/mesh/meshhome.html
   id: mesh
   infores_id: mesh
-  last_modified_date: '2026-06-18T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html
@@ -205407,6 +205443,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -205822,7 +205860,8 @@ resources:
     product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -205850,7 +205889,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -210743,6 +210782,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -218215,7 +218256,7 @@ resources:
   homepage_url: https://monarch-initiative.github.io/mondo
   id: mondo
   infores_id: mondo
-  last_modified_date: '2026-06-18T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: http://creativecommons.org/licenses/by/4.0/
@@ -220261,7 +220302,8 @@ resources:
       source: omim
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -220289,7 +220331,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -223619,7 +223661,7 @@ resources:
   homepage_url: http://www.pathbase.net
   id: mpath
   infores_id: mpath
-  last_modified_date: '2026-08-06T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: http://creativecommons.org/licenses/by/3.0/
@@ -246416,6 +246458,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404. This
       canonical filename is still listed on the OMA current release download page
       (https://omabrowser.org/oma/current/) but is not currently served.'
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: Product
     description: OMA Browser database in HDF5 format. The single monolithic OmaServer.h5
       has been replaced by taxonomic-range HDF5 files (e.g. Primates.h5, Metazoa.h5,
@@ -253300,7 +253344,8 @@ resources:
     product_url: https://docs.epigraphdb.org/graph-database/
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -253328,7 +253373,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: GraphicalInterface
     description: Web-based interface for searching and browsing comprehensive gene-centric
       information integrating data from over 200 sources
@@ -281454,7 +281499,7 @@ resources:
   homepage_url: http://proconsortium.org
   id: pr
   infores_id: pr
-  last_modified_date: '2026-04-15T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: http://creativecommons.org/licenses/by/4.0/
@@ -296161,7 +296206,7 @@ resources:
   homepage_url: https://reactome.org
   id: reactome
   infores_id: reactome
-  last_modified_date: '2026-06-22T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -301717,7 +301762,8 @@ resources:
       source: biofactoid
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -301745,7 +301791,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -332845,7 +332891,7 @@ resources:
   homepage_url: https://string-db.org/
   id: string
   infores_id: string
-  last_modified_date: '2026-02-20T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -336234,7 +336280,8 @@ resources:
       source: umls
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -336262,7 +336309,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -355080,7 +355127,7 @@ resources:
   - phenotype
   homepage_url: https://www.ukbiobank.ac.uk/
   id: ukbiobank
-  last_modified_date: '2025-12-13T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.ukbiobank.ac.uk/terms-and-conditions/
@@ -355226,7 +355273,8 @@ resources:
     warnings: []
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -355254,10 +355302,11 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
     description: CardioKG supporting data tables for anatomy and cardiac magnetic
-      resonance anatomy mappings.
+      resonance anatomy mappings. The GitHub repository is no longer available; these
+      files are inside the archived Zenodo snapshot.
     format: csv
     id: cardiokg.data
     name: CardioKG supporting data tables
@@ -355266,7 +355315,7 @@ resources:
       source: cardiokg
     - relation_type: prov:hadPrimarySource
       source: ukbiobank
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Data
+    product_url: https://doi.org/10.5281/zenodo.16025953
   publications:
   - authors:
     - Clare Bycroft
@@ -356237,6 +356286,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -358875,7 +358926,7 @@ resources:
   homepage_url: https://www.uniprot.org/
   id: uniprot
   infores_id: uniprot
-  last_modified_date: '2026-08-06T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -362849,7 +362900,8 @@ resources:
     warnings: []
   - category: GraphProduct
     description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-      to create graph nodes and add edges.
+      to create graph nodes and add edges. The GitHub repository is no longer available;
+      these files are inside the archived Zenodo snapshot.
     dump_format: neo4j
     format: neo4j
     id: cardiokg.neo4j
@@ -362877,7 +362929,7 @@ resources:
       source: string
     - relation_type: prov:used
       source: opentargets
-    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+    product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -383614,9 +383666,9 @@ resources:
   - biomedical
   - literature
   - proteomics
-  homepage_url: http://proteininformationresource.org/efip
+  homepage_url: https://proteininformationresource.org/efip/
   id: efip
-  last_modified_date: '2026-06-03T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   name: eFIP
   products:
@@ -388165,10 +388217,10 @@ resources:
     data.
   domains:
   - proteomics
-  homepage_url: http://pir.georgetown.edu/iproclass/
+  homepage_url: https://proteininformationresource.org/iproclass/
   id: iproclass
   infores_id: iproclass
-  last_modified_date: '2026-02-20T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   name: iProClass
   products:
@@ -388181,7 +388233,7 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: iproclass
-    product_url: http://pir.georgetown.edu/iproclass/
+    product_url: https://proteininformationresource.org/iproclass/
   - category: DocumentationProduct
     description: Protein Information Resource site with parent documentation and context
       for iProClass.
@@ -390408,7 +390460,7 @@ resources:
   - chemistry and biochemistry
   homepage_url: http://code.google.com/p/mirna-ontology/
   id: mirnao
-  last_modified_date: '2026-08-06T00:00:00Z'
+  last_modified_date: '2026-09-01T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/

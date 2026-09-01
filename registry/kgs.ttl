@@ -2226,7 +2226,7 @@ kgr:cardiokg a schema1:KnowledgeGraph ;
     dcterms:identifier "cardiokg" ;
     dcterms:isReferencedBy <doi:10.1038/s44161-025-00757-4> ;
     dcterms:license <https://opensource.org/license/mit/> ;
-    dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:cardiokg.data,
         kgr:cardiokg.embeddings,
@@ -2234,13 +2234,12 @@ kgr:cardiokg a schema1:KnowledgeGraph ;
         kgr:cardiokg.workflow,
         kgr:cardiokg.zenodo-archive ;
     schema1:name "CardioKG" ;
-    doap:repository <https://github.com/ImperialCollegeLondon/cardioKG> ;
     skos:inScheme "biomedical",
         "clinical",
         "medical imaging",
         "precision medicine" ;
     adms:status "Active" ;
-    foaf:homepage <https://github.com/ImperialCollegeLondon/cardioKG> .
+    foaf:homepage <https://doi.org/10.5281/zenodo.16025953> .
 
 kgr:cargo a schema1:DataSource ;
     rdfs:label "crates.io (Cargo)" ;
@@ -5294,7 +5293,7 @@ kgr:disgenet a schema1:DataSource ;
     dcterms:identifier "disgenet" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkz1021> ;
     dcterms:license <https://www.disgenet.com/Legal> ;
-    dcterms:modified "2026-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -5636,7 +5635,7 @@ kgr:drugbank a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkad976>,
         <https://doi.org/10.1093/nar/gkx1037> ;
     dcterms:license <https://go.drugbank.com/legal/terms_of_use> ;
-    dcterms:modified "2026-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -6138,7 +6137,7 @@ kgr:efip a schema1:DataSource ;
     dcterms:description "eFIP, Extracting Functional Impact of Phosphorylation, is a text-mining system for finding literature evidence about phosphorylation-dependent protein-protein interactions and functional impacts." ;
     dcterms:identifier "efip" ;
     dcterms:isReferencedBy <doi:10.1093/database/bas044> ;
-    dcterms:modified "2026-06-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:efip.text-mining-system,
         kgr:iptmnet.ptm ;
     schema1:name "eFIP" ;
@@ -6146,7 +6145,7 @@ kgr:efip a schema1:DataSource ;
         "literature",
         "proteomics" ;
     adms:status "Inactive" ;
-    foaf:homepage <http://proteininformationresource.org/efip> .
+    foaf:homepage <https://proteininformationresource.org/efip/> .
 
 kgr:efo a schema1:Ontology ;
     rdfs:label "Experimental Factor Ontology" ;
@@ -6625,7 +6624,7 @@ kgr:ensembl a schema1:DataSource ;
     dcterms:identifier "ensembl" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkae1071> ;
     dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:10116>,
         <NCBITaxon:7227>,
@@ -7125,7 +7124,7 @@ kgr:esgf a schema1:DataSource ;
     dcterms:created "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Earth System Grid Federation (ESGF) is an international, distributed data infrastructure that archives and serves climate model output and observational data, including the CMIP model ensembles. ESGF exposes dataset metadata such as source_id, experiment_id, variable_id, and activity_id through federated search nodes and APIs, enabling discovery and download of climate simulation datasets." ;
     dcterms:identifier "esgf" ;
-    dcterms:modified "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:climatemodelskg.graph,
         kgr:esgf.search ;
     schema1:name "Earth System Grid Federation (ESGF)" ;
@@ -7401,7 +7400,7 @@ kgr:faers a schema1:DataSource ;
     dcterms:created "2025-11-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The FDA Adverse Event Monitoring System (AEMS), formerly the FDA Adverse Event Reporting System (FAERS), is a database that contains adverse event reports, medication error reports, and product quality complaints resulting in adverse events submitted to the FDA. AEMS/FAERS supports the FDA's post-marketing safety surveillance program for drug and therapeutic biologic products. The database adheres to ICH E2B international safety reporting guidance, and adverse events are coded using MedDRA (Medical Dictionary for Regulatory Activities) terminology. FAERS provides quarterly data files in ASCII and XML formats dating back to 2012, with archives available for earlier data." ;
     dcterms:identifier "faers" ;
-    dcterms:modified "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aeolus.standardized_data,
         kgr:faers.electronic_submissions,
@@ -7423,7 +7422,7 @@ kgr:faers a schema1:DataSource ;
         "pharmacology",
         "public health" ;
     adms:status "Active" ;
-    foaf:homepage <https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers> ;
+    foaf:homepage <https://www.fda.gov/drugs/surveillance-post-drug-approval-activities/fda-adverse-event-monitoring-system-aems> ;
     foaf:maker kgr:fda .
 
 kgr:faldo a schema1:Ontology ;
@@ -11458,7 +11457,7 @@ kgr:iproclass a schema1:DataSource ;
     dcterms:identifier "iproclass" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/12520030>,
         <https://www.ncbi.nlm.nih.gov/pubmed/15022647> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:iproclass.pir-docs,
         kgr:iproclass.portal ;
     schema1:identifier "iproclass" ;
@@ -11467,7 +11466,7 @@ kgr:iproclass a schema1:DataSource ;
         "iProClass" ;
     skos:inScheme "proteomics" ;
     adms:status "Inactive" ;
-    foaf:homepage <http://pir.georgetown.edu/iproclass/> .
+    foaf:homepage <https://proteininformationresource.org/iproclass/> .
 
 kgr:iptmnet a schema1:DataSource ;
     rdfs:label "iPTMnet" ;
@@ -11604,7 +11603,7 @@ kgr:kegg a schema1:DataSource ;
     dcterms:identifier "kegg" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae909> ;
     dcterms:license <https://www.kegg.jp/feedback/copyright.html> ;
-    dcterms:modified "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:10116>,
         <NCBITaxon:3702>,
@@ -11911,7 +11910,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-01T15:18:06+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T15:38:45+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -12799,14 +12798,14 @@ kgr:maude a schema1:DataSource ;
     dcterms:description "The U.S. FDA database of medical device adverse event reports. It houses mandatory reports submitted by device manufacturers, importers, and device user facilities, along with voluntary reports from healthcare professionals, patients, and consumers. The data are searchable through a public web interface and are also released as downloadable data files and via an API." ;
     dcterms:identifier "maude" ;
     dcterms:license <https://www.usa.gov/government-works> ;
-    dcterms:modified "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:maude.data,
         kgr:maudekg.graph ;
     schema1:name "MAUDE (Manufacturer and User Facility Device Experience)" ;
     skos:inScheme "biomedical",
         "clinical" ;
     adms:status "Active" ;
-    foaf:homepage <https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/manufacturer-and-user-facility-device-experience-database-maude> .
+    foaf:homepage <https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database> .
 
 kgr:maudekg a schema1:KnowledgeGraph ;
     rdfs:label "FDA MAUDE Adverse Event Knowledge Graph" ;
@@ -13143,7 +13142,7 @@ kgr:mesh a schema1:Ontology ;
     dcterms:identifier "mesh" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/10928714> ;
     dcterms:license <https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:acukg.csv,
         kgr:acukg.json,
         kgr:acukg.rdf,
@@ -13794,7 +13793,7 @@ kgr:mirnao a schema1:Ontology ;
     dcterms:description "An application ontology for use with miRNA databases." ;
     dcterms:identifier "mirnao" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mirnao.kg-bioportal,
         kgr:mirnao.owl ;
     schema1:name "microRNA Ontology" ;
@@ -14033,7 +14032,7 @@ kgr:mondo a schema1:Ontology ;
     dcterms:isReferencedBy <https://doi.org/10.1093/genetics/iyaf215>,
         <https://www.medrxiv.org/content/10.1101/2022.04.13.22273750> ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:33208> ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
@@ -14249,7 +14248,7 @@ kgr:mpath a schema1:Ontology ;
     dcterms:description "A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes" ;
     dcterms:identifier "mpath" ;
     dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10088> ;
     schema1:hasPart kgr:efo.obo,
         kgr:efo.owl,
@@ -18672,7 +18671,7 @@ kgr:pr a schema1:Ontology ;
     dcterms:identifier "pr" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/27899649> ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:aopwiki-rdf.ttl,
         kgr:drugmechdb.graph,
         kgr:efo.obo,
@@ -19744,7 +19743,7 @@ kgr:reactome a schema1:DataSource ;
     dcterms:identifier "reactome" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkab1028> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
@@ -21993,7 +21992,7 @@ kgr:string a schema1:DataSource ;
     dcterms:identifier "string" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkac1000> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:aop-db.data,
         kgr:automat.stringdb,
         kgr:biobtree.api,
@@ -23269,7 +23268,7 @@ kgr:ukbiobank a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1038/s41586-018-0579-z>,
         <doi:10.1371/journal.pmed.1001779> ;
     dcterms:license <https://www.ukbiobank.ac.uk/terms-and-conditions/> ;
-    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:cardiokg.data,
         kgr:cardiokg.neo4j,
@@ -23485,7 +23484,7 @@ kgr:uniprot a schema1:DataSource ;
     dcterms:identifier "uniprot" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae1010> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:10116>,
         <NCBITaxon:3702>,
@@ -25958,13 +25957,13 @@ kgr:canvas.metadata a schema1:Product ;
 
 kgr:cardiokg.embeddings a schema1:Product ;
     rdfs:label "CardioKG generated embeddings" ;
-    dcterms:description "Generated CardioKG embeddings for gene-disease and medication-disease association prediction tasks." ;
-    schema1:url <https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Generated_embeddings> .
+    dcterms:description "Generated CardioKG embeddings for gene-disease and medication-disease association prediction tasks. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
+    schema1:url <https://doi.org/10.5281/zenodo.16025953> .
 
 kgr:cardiokg.workflow a schema1:ProcessProduct ;
     rdfs:label "CardioKG analysis workflow" ;
-    dcterms:description "Analysis notebooks and scripts for CardioKG graph construction, PageRank importance analysis, gene-disease association prediction, and drug repurposing." ;
-    schema1:url <https://github.com/ImperialCollegeLondon/cardioKG> .
+    dcterms:description "Analysis notebooks and scripts for CardioKG graph construction, PageRank importance analysis, gene-disease association prediction, and drug repurposing. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
+    schema1:url <https://doi.org/10.5281/zenodo.16025953> .
 
 kgr:cardiokg.zenodo-archive a schema1:Product ;
     rdfs:label "CardioKG Zenodo archive" ;
@@ -28698,7 +28697,7 @@ kgr:ensembl.api.perl a schema1:ProgrammingInterface ;
 kgr:ensembl.api.rest a schema1:ProgrammingInterface ;
     rdfs:label "Ensembl REST API" ;
     dcterms:description "RESTful API that allows access to Ensembl data using various programming languages." ;
-    schema1:url <https://rest.ensembl.org> .
+    schema1:url <https://rest.ensembl.org/> .
 
 kgr:ensembl.biomart a schema1:GraphicalInterface ;
     rdfs:label "BioMart" ;
@@ -29038,7 +29037,7 @@ kgr:ero.owl a schema1:OntologyProduct ;
 kgr:esgf.search a schema1:ProgrammingInterface ;
     rdfs:label "ESGF Search" ;
     dcterms:description "The ESGF search interface (MetaGrid / AIMS) provides discovery and access to climate dataset metadata across the federation, including CMIP model output indexed by source_id, experiment_id, variable_id, and activity_id." ;
-    schema1:url <https://aims2.llnl.gov/search> .
+    schema1:url <https://metagrid.esgf-west.org/search> .
 
 kgr:eu-knowledge-graph.api a schema1:ProgrammingInterface ;
     rdfs:label "EU Knowledge Graph Wikibase API" ;
@@ -29333,7 +29332,7 @@ kgr:fabric.site a schema1:GraphicalInterface ;
 kgr:faers.electronic_submissions a schema1:GraphicalInterface ;
     rdfs:label "FAERS Electronic Submissions Portal" ;
     dcterms:description "Portal for submitting adverse event reports electronically to the FDA" ;
-    schema1:url <https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-electronic-submissions> .
+    schema1:url <https://www.fda.gov/drugs/fda-adverse-event-monitoring-system-aems/fda-adverse-event-monitoring-system-aems-electronic-submissions> .
 
 kgr:faers.faq a schema1:DocumentationProduct ;
     rdfs:label "FAERS FAQ" ;
@@ -29518,7 +29517,7 @@ kgr:fda-orange-book.preface a schema1:DocumentationProduct ;
 kgr:fda-orange-book.search a schema1:GraphicalInterface ;
     rdfs:label "FDA Orange Book Search" ;
     dcterms:description "FDA searchable Orange Book database for approved drug products, active ingredients, proprietary names, applicants, application numbers, dosage forms, routes, and patent numbers." ;
-    schema1:url <https://www.fda.gov/cder/ob/default.htm> .
+    schema1:url <https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book> .
 
 kgr:fideo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "FIDEO KGX graph (KG-Bioportal)" ;
@@ -31765,7 +31764,7 @@ kgr:iproclass.pir-docs a schema1:DocumentationProduct ;
 kgr:iproclass.portal a schema1:GraphicalInterface ;
     rdfs:label "iProClass Portal" ;
     dcterms:description "Historical iProClass web interface for integrated protein annotation lookup." ;
-    schema1:url <http://pir.georgetown.edu/iproclass/> .
+    schema1:url <https://proteininformationresource.org/iproclass/> .
 
 kgr:iptmnet.api a schema1:ProgrammingInterface ;
     rdfs:label "iPTMnet REST API" ;
@@ -41392,8 +41391,8 @@ kgr:cam-kp.reactome-cams a schema1:Product ;
 
 kgr:cardiokg.data a schema1:Product ;
     rdfs:label "CardioKG supporting data tables" ;
-    dcterms:description "CardioKG supporting data tables for anatomy and cardiac magnetic resonance anatomy mappings." ;
-    schema1:url <https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Data> .
+    dcterms:description "CardioKG supporting data tables for anatomy and cardiac magnetic resonance anatomy mappings. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
+    schema1:url <https://doi.org/10.5281/zenodo.16025953> .
 
 kgr:chea-kg.api a schema1:ProgrammingInterface ;
     rdfs:label "ChEA-KG API" ;
@@ -45062,8 +45061,8 @@ kgr:skm.ckn.v2.graph a schema1:GraphProduct ;
 
 kgr:cardiokg.neo4j a schema1:GraphProduct ;
     rdfs:label "CardioKG Neo4j graph construction scripts" ;
-    dcterms:description "Neo4j construction artifacts for CardioKG, including Cypher scripts to create graph nodes and add edges." ;
-    schema1:url <https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG> .
+    dcterms:description "Neo4j construction artifacts for CardioKG, including Cypher scripts to create graph nodes and add edges. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
+    schema1:url <https://doi.org/10.5281/zenodo.16025953> .
 
 kgr:forum.graph.dump a schema1:GraphProduct ;
     rdfs:label "FORUM Knowledge Graph SPARQL Endpoint" ;

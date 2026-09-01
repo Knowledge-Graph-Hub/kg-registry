@@ -2495,7 +2495,8 @@ products:
     source: biofactoid
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-    to create graph nodes and add edges.
+    to create graph nodes and add edges. The GitHub repository is no longer available;
+    these files are inside the archived Zenodo snapshot.
   dump_format: neo4j
   format: neo4j
   id: cardiokg.neo4j

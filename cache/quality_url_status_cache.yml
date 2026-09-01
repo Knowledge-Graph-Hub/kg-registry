@@ -5622,101 +5622,121 @@ https://api.clinpgx.org/v1/download/file/attachment/PapersOfInterestArchive.csv:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/automated_annotations.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/chemicals.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/clinicalVariants.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/drugLabels.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/drugs.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/genes.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/guidelineAnnotations.json.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/occurrences.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/pathways-biopax.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/pathways-tsv.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/pathways.json.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/phenotypes.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/relationships.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/variantAnnotations.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.clinpgx.org/v1/download/file/data/variants.zip:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.eol.org/:
   checked_at: '2026-08-31T18:00:52Z'
@@ -19638,6 +19658,14 @@ https://metacyc.org/web-services.shtml:
   ok: true
   source: cache
   status_code: 200
+https://metagrid.esgf-west.org/search:
+  checked_at: '2026-09-01T15:48:55Z'
+  error: 'HEAD request failed: HTTPSConnectionPool(host=''metagrid.esgf-west.org'',
+    port=443): Max retries exceeded with url: /search (Caused by ConnectTimeoutError(<HTTPSConnection(host=''metagrid.esgf-west.org'',
+    port=443) at 0x7f08551caa80>, ''Connection to metagrid.esgf-west.org timed out.
+    (connect timeout=8.0)''))'
+  ok: false
+  status_code: null
 https://metatraits.embl.de/:
   checked_at: '2026-08-31T18:03:06Z'
   error: null
@@ -21524,6 +21552,16 @@ https://proteininformationresource.org/:
   ok: false
   source: cache
   status_code: null
+https://proteininformationresource.org/efip/:
+  checked_at: '2026-09-01T15:48:55Z'
+  error: null
+  ok: true
+  status_code: 200
+https://proteininformationresource.org/iproclass/:
+  checked_at: '2026-09-01T15:48:55Z'
+  error: null
+  ok: true
+  status_code: 200
 https://proteininformationresource.org/pirsf/:
   checked_at: '2026-08-31T18:03:25Z'
   error: 'HEAD request failed: HTTPSConnectionPool(host=''proteininformationresource.org'',
@@ -23274,6 +23312,12 @@ https://rest.ensembl.org:
     Read timed out. (read timeout=8.0)'
   ok: false
   source: cache
+  status_code: null
+https://rest.ensembl.org/:
+  checked_at: '2026-09-01T15:48:55Z'
+  error: 'HEAD request failed: HTTPSConnectionPool(host=''rest.ensembl.org'', port=443):
+    Read timed out. (read timeout=8.0)'
+  ok: false
   status_code: null
 https://rfam.org/:
   checked_at: '2026-08-31T18:03:32Z'
@@ -27996,11 +28040,13 @@ https://www.clinpgx.org/:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.clinpgx.org/downloads:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.coralkinome.org/:
   checked_at: '2026-08-31T18:04:07Z'
@@ -28815,17 +28861,32 @@ https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files:
   ok: false
   source: cache
   status_code: 404
+? https://www.fda.gov/drugs/fda-adverse-event-monitoring-system-aems/fda-adverse-event-monitoring-system-aems-electronic-submissions
+: checked_at: '2026-09-01T15:48:55Z'
+  error: HEAD returned HTTP 404
+  ok: false
+  status_code: 404
 ? https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-electronic-submissions
 : checked_at: '2026-08-31T18:04:12Z'
   error: HEAD returned HTTP 404
   ok: false
   source: cache
   status_code: 404
+https://www.fda.gov/drugs/surveillance-post-drug-approval-activities/fda-adverse-event-monitoring-system-aems:
+  checked_at: '2026-09-01T15:48:55Z'
+  error: HEAD returned HTTP 404
+  ok: false
+  status_code: 404
 https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers:
   checked_at: '2026-08-31T18:04:12Z'
   error: HEAD returned HTTP 404
   ok: false
   source: cache
+  status_code: 404
+? https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database
+: checked_at: '2026-09-01T15:48:55Z'
+  error: HEAD returned HTTP 404
+  ok: false
   status_code: 404
 ? https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/manufacturer-and-user-facility-device-experience-database-maude
 : checked_at: '2026-08-31T18:04:12Z'

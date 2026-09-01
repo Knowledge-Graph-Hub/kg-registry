@@ -1,7 +1,8 @@
 ---
 category: Product
 description: CardioKG supporting data tables for anatomy and cardiac magnetic resonance
-  anatomy mappings.
+  anatomy mappings. The GitHub repository is no longer available; these files are
+  inside the archived Zenodo snapshot.
 format: csv
 id: cardiokg.data
 name: CardioKG supporting data tables

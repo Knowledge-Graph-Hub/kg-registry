@@ -345,8 +345,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -1238,16 +1238,18 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -1662,7 +1664,8 @@ products:
   product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-    to create graph nodes and add edges.
+    to create graph nodes and add edges. The GitHub repository is no longer available;
+    these files are inside the archived Zenodo snapshot.
   dump_format: neo4j
   format: neo4j
   id: cardiokg.neo4j

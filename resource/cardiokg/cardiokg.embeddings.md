@@ -1,7 +1,8 @@
 ---
 category: Product
 description: Generated CardioKG embeddings for gene-disease and medication-disease
-  association prediction tasks.
+  association prediction tasks. The GitHub repository is no longer available; these
+  files are inside the archived Zenodo snapshot.
 id: cardiokg.embeddings
 name: CardioKG generated embeddings
 original_source:

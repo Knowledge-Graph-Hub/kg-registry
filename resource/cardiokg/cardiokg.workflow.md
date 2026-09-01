@@ -2,6 +2,8 @@
 category: ProcessProduct
 description: Analysis notebooks and scripts for CardioKG graph construction, PageRank
   importance analysis, gene-disease association prediction, and drug repurposing.
+  The GitHub repository is no longer available; these files are inside the archived
+  Zenodo snapshot.
 id: cardiokg.workflow
 name: CardioKG analysis workflow
 original_source:

@@ -9,6 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: ssurgo
 product_url: https://nrcs.app.box.com/v/soils
-warnings: []
+warnings:
+- File was not able to be retrieved when checked on 2026-09-01_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

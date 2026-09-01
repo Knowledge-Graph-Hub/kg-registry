@@ -5,18 +5,18 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Darren Natale
+  orcid: 0000-0001-5809-9523
   contact_details:
   - contact_type: email
     value: dan5@georgetown.edu
   - contact_type: github
     value: nataled
-  label: Darren Natale
-  orcid: 0000-0001-5809-9523
 creation_date: '2025-06-25T00:00:00Z'
 description: An ontological representation of protein-related entities
 domains:
 - chemistry and biochemistry
-homepage_url: https://proconsortium.org/
+homepage_url: http://proconsortium.org
 id: pr
 infores_id: pr
 last_modified_date: '2026-09-01T00:00:00Z'
@@ -526,8 +526,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

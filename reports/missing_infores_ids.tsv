@@ -76,7 +76,7 @@ campbell-biology	Campbell Biology	DataSource	https://openlibrary.org/isbn/978013
 cancer-genome-interpreter	Cancer Genome Interpreter	DataSource	https://www.cancergenomeinterpreter.org/	resource/cancer-genome-interpreter/cancer-genome-interpreter.md
 cancer-registry-kg	Cancer Registry Knowledge Graph	KnowledgeGraph	https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/	resource/cancer-registry-kg/cancer-registry-kg.md
 canvas	CanVAS	DataSource	https://github.com/Brundage-VAIL/CanVAS	resource/canvas/canvas.md
-cardiokg	CardioKG	KnowledgeGraph	https://github.com/ImperialCollegeLondon/cardioKG	resource/cardiokg/cardiokg.md
+cardiokg	CardioKG	KnowledgeGraph	https://doi.org/10.5281/zenodo.16025953	resource/cardiokg/cardiokg.md
 cargo	crates.io (Cargo)	DataSource	https://crates.io/	resource/cargo/cargo.md
 caro	Common Anatomy Reference Ontology	Ontology	https://github.com/obophenotype/caro/	resource/caro/caro.md
 ccf	Common Coordinate Framework Ontology	Ontology	https://humanatlas.io/ccf-ontology	resource/ccf/ccf.md
@@ -192,7 +192,7 @@ ecosim	ecosim	Resource	https://github.com/bioepic-data/ecosim-ontology	resource/
 edam	EDAM Ontology	Ontology	https://edamontology.org/	resource/edam/edam.md
 edrr-invasive-catalog	Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases and Tools	DataSource	https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6	resource/edrr-invasive-catalog/edrr-invasive-catalog.md
 effas-kpi	EFFAS KPIs for ESG	DataModel	https://effas.com/	resource/effas-kpi/effas-kpi.md
-efip	eFIP	DataSource	http://proteininformationresource.org/efip	resource/efip/efip.md
+efip	eFIP	DataSource	https://proteininformationresource.org/efip/	resource/efip/efip.md
 eggnog	eggNOG	DataSource	https://eggnogdb.org/	resource/eggnog/eggnog.md
 ehda	Human developmental anatomy, timed version	Ontology	http://genex.hgu.mrc.ac.uk/	resource/ehda/ehda.md
 ehdaa	Human developmental anatomy, abstract version	Ontology	https://obofoundry.org/ontology/ehdaa	resource/ehdaa/ehdaa.md
@@ -401,7 +401,7 @@ markerdb	MarkerDB	DataSource	https://markerdb.ca/	resource/markerdb/markerdb.md
 massive	MassIVE	DataSource	https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp	resource/massive/massive.md
 mat	Minimal anatomical terminology	Ontology	https://obofoundry.org/ontology/mat.html	resource/mat/mat.md
 matador	MATADOR	DataSource	http://matador.embl.de/	resource/matador/matador.md
-maude	MAUDE (Manufacturer and User Facility Device Experience)	DataSource	https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/manufacturer-and-user-facility-device-experience-database-maude	resource/maude/maude.md
+maude	MAUDE (Manufacturer and User Facility Device Experience)	DataSource	https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database	resource/maude/maude.md
 maudekg	FDA MAUDE Adverse Event Knowledge Graph	KnowledgeGraph	https://github.com/Prabhadeus/Proto-OKN	resource/maudekg/maudekg.md
 maven-central	Maven Central Repository	DataSource	https://central.sonatype.com/	resource/maven-central/maven-central.md
 mco	Microbial Conditions Ontology	Ontology	https://github.com/microbial-conditions-ontology/microbial-conditions-ontology	resource/mco/mco.md

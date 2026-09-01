@@ -159,7 +159,8 @@ products:
   warnings: []
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-    to create graph nodes and add edges.
+    to create graph nodes and add edges. The GitHub repository is no longer available;
+    these files are inside the archived Zenodo snapshot.
   dump_format: neo4j
   format: neo4j
   id: cardiokg.neo4j
@@ -190,7 +191,8 @@ products:
   product_url: https://doi.org/10.5281/zenodo.16025953
 - category: Product
   description: CardioKG supporting data tables for anatomy and cardiac magnetic resonance
-    anatomy mappings.
+    anatomy mappings. The GitHub repository is no longer available; these files are
+    inside the archived Zenodo snapshot.
   format: csv
   id: cardiokg.data
   name: CardioKG supporting data tables

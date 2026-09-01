@@ -417,7 +417,8 @@ products:
   product_url: https://docs.epigraphdb.org/graph-database/
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-    to create graph nodes and add edges.
+    to create graph nodes and add edges. The GitHub repository is no longer available;
+    these files are inside the archived Zenodo snapshot.
   dump_format: neo4j
   format: neo4j
   id: cardiokg.neo4j
@@ -445,7 +446,7 @@ products:
     source: string
   - relation_type: prov:used
     source: opentargets
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+  product_url: https://doi.org/10.5281/zenodo.16025953
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources

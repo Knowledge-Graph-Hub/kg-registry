@@ -10,9 +10,9 @@
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 864,
+    "modified_after_creation": 867,
     "stale_over_365_days": 4,
-    "unchanged_since_creation": 162,
+    "unchanged_since_creation": 159,
     "with_both_dates": 1026
   },
   "detail_lists": {
@@ -55,11 +55,6 @@
       "cam-kp.sparql",
       "cancer-genome-interpreter",
       "cancer-genome-interpreter.portal",
-      "cardiokg",
-      "cardiokg.data",
-      "cardiokg.embeddings",
-      "cardiokg.neo4j",
-      "cardiokg.workflow",
       "cargo",
       "cargo.website",
       "cellosaurus.api.rest",
@@ -94,7 +89,6 @@
       "edrr-invasive-catalog",
       "edrr-invasive-catalog.dataset",
       "effas-kpi.document",
-      "efip",
       "ehda",
       "emikg.sparql",
       "encode",
@@ -162,9 +156,7 @@
       "inxight-drugs",
       "inxight-drugs.api",
       "inxight-drugs.portal",
-      "iproclass",
       "iproclass.pir-docs",
-      "iproclass.portal",
       "irefindex",
       "kg-alzheimers.graph",
       "kg-covid-19.graph",
@@ -1700,6 +1692,11 @@
       "canvas.backbone",
       "canvas.imputed",
       "canvas.metadata",
+      "cardiokg",
+      "cardiokg.data",
+      "cardiokg.embeddings",
+      "cardiokg.neo4j",
+      "cardiokg.workflow",
       "cardiokg.zenodo-archive",
       "caro",
       "caro.kg-bioportal",
@@ -2370,6 +2367,7 @@
       "edam.tsv",
       "effas-kpi",
       "effas-kpi.landing",
+      "efip",
       "efip.text-mining-system",
       "efo",
       "efo.obo",
@@ -3335,6 +3333,8 @@
       "interpro.web",
       "interpro.xml",
       "ipr",
+      "iproclass",
+      "iproclass.portal",
       "iptmnet",
       "iptmnet.api",
       "iptmnet.download.readme",
@@ -8564,6 +8564,7 @@
       "campbell-biology",
       "cancer-genome-interpreter",
       "cancer-registry-kg",
+      "cardiokg",
       "cargo",
       "ccf",
       "ccle",
@@ -9119,6 +9120,7 @@
       "cam-kp",
       "cancer-genome-interpreter",
       "cancer-registry-kg",
+      "cardiokg",
       "caro",
       "catalogue-of-life",
       "ccf",
@@ -9294,6 +9296,7 @@
       "erccrbp",
       "erccreg",
       "ero",
+      "esgf",
       "eupath",
       "eupathdb",
       "ev",
@@ -9490,6 +9493,7 @@
       "markerdb",
       "massive",
       "mat",
+      "maude",
       "maudekg",
       "maxo",
       "mco",
@@ -15364,7 +15368,6 @@
       "cacao",
       "cam-kp",
       "cancer-genome-interpreter",
-      "cardiokg",
       "cargo",
       "cellosaurus",
       "cellphonedb",
@@ -15389,7 +15392,6 @@
       "ecid",
       "edrr-invasive-catalog",
       "effas-kpi",
-      "efip",
       "ehda",
       "emikg",
       "encode",
@@ -15945,6 +15947,7 @@
     "retrieval_warning_product_ids": [
       "aao.owl",
       "adw.owl",
+      "alliance.downloads",
       "aop-db.manual",
       "bio2rdf.biosearch",
       "biobricks-aopwiki.graph",
@@ -16084,7 +16087,6 @@
       "cabi-isc",
       "campbell-biology",
       "canvas",
-      "cardiokg",
       "cargo",
       "ccre",
       "cdc-svi",
@@ -16115,7 +16117,6 @@
       "epa-ucmr",
       "epd",
       "era-kg",
-      "esgf",
       "eu-knowledge-graph",
       "eurio",
       "expression-atlas",
@@ -16151,7 +16152,6 @@
       "maine-egad",
       "maizegdb",
       "matador",
-      "maude",
       "maven-central",
       "mirdb",
       "mmrrc",
@@ -16235,20 +16235,20 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-09-01T15:27:59Z",
+  "generated_at": "2026-09-01T15:48:50Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 161,
     "with_evaluation_page": 127,
     "without_evaluation_page": 34
   },
   "links": {
-    "broken_urls": 306,
-    "cache_hits": 4590,
+    "broken_urls": 299,
+    "cache_hits": 4600,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4306,
-    "live_checked_urls": 22,
+    "healthy_urls": 4308,
+    "live_checked_urls": 7,
     "mode": "live",
-    "total_unique_urls": 4612,
+    "total_unique_urls": 4607,
     "unchecked_urls": 0
   },
   "products": {
@@ -16256,7 +16256,7 @@
     "missing_original_source": 0,
     "missing_product_url": 22,
     "total": 4148,
-    "with_retrieval_warning": 118
+    "with_retrieval_warning": 119
   },
   "resource_count": 1026,
   "resources": {
@@ -16268,7 +16268,7 @@
     "missing_homepage_url": 0,
     "missing_infores_id": 765,
     "missing_license": 317,
-    "missing_repository": 518,
+    "missing_repository": 519,
     "status_counts": {
       "active": 884,
       "inactive": 126,
@@ -16277,13 +16277,13 @@
     },
     "stub_count": 0,
     "total": 1026,
-    "with_broken_links": 196,
+    "with_broken_links": 194,
     "with_citation_issues": 30,
     "without_products": 10,
     "without_publications": 357
   },
   "scoring": {
-    "average_score": 7.21,
+    "average_score": 7.18,
     "median_score": 7.0,
     "resources_with_issues": 990,
     "tracked_but_unscored_metrics": [
@@ -16624,77 +16624,6 @@
           "sources": [
             "cache"
           ],
-          "url": "https://github.com/ImperialCollegeLondon/cardioKG"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Data"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Generated_embeddings"
-        }
-      ],
-      "id": "cardiokg",
-      "issues": [
-        {
-          "count": 4,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 12
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 3,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "kg_missing_evaluation_page",
-          "label": "KnowledgeGraph missing evaluation page",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "unchanged_since_creation",
-          "label": "Not modified since creation",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "CardioKG",
-      "resource_page": "resource/cardiokg/cardiokg.html",
-      "score": 23
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
           "url": "https://orkg.org/"
         },
         {
@@ -16817,67 +16746,6 @@
       "name": "ERA Knowledge Graph",
       "resource_page": "resource/era-kg/era-kg.html",
       "score": 20
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://www.fda.gov/cder/ob/default.htm"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files"
-        }
-      ],
-      "id": "fda-orange-book",
-      "issues": [
-        {
-          "count": 4,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 12
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_publications",
-          "label": "Missing publications",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        }
-      ],
-      "name": "FDA Orange Book",
-      "resource_page": "resource/fda-orange-book/fda-orange-book.html",
-      "score": 19
     },
     {
       "activity_status": "inactive",
@@ -17108,6 +16976,94 @@
       "name": "FDA MAUDE Adverse Event Knowledge Graph",
       "resource_page": "resource/maudekg/maudekg.html",
       "score": 18
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://ccdb.ecidbase.org/"
+        }
+      ],
+      "id": "ecid",
+      "issues": [
+        {
+          "count": 9,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 9
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        }
+      ],
+      "name": "ECID",
+      "resource_page": "resource/ecid/ecid.html",
+      "score": 17
+    },
+    {
+      "activity_status": "inactive",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://www.inoh.org"
+        }
+      ],
+      "id": "imr",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Molecule role (INOH Protein name/family name ontology)",
+      "resource_page": "resource/imr/imr.html",
+      "score": 17
     }
   ]
 }
