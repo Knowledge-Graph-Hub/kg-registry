@@ -49,13 +49,13 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 500 error
     when accessing file'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,

@@ -17,8 +17,9 @@ description: A structured controlled vocabulary of the anatomy and development o
   the Japanese medaka fish, <i>Oryzias latipes</i>.
 domains:
 - anatomy and development
+homepage_url: https://obofoundry.org/ontology/mfo.html
 id: mfo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

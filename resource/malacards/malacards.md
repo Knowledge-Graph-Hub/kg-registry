@@ -10,8 +10,9 @@ domains:
 - biomedical
 - clinical
 - genomics
+homepage_url: https://www.malacards.org/
 id: malacards
-last_modified_date: '2025-10-10T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: MalaCards
 products:

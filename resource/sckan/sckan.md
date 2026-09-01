@@ -11,8 +11,9 @@ description: SCKAN (SPARC Connectivity Knowledge base of the Autonomic Nervous s
 domains:
 - biological systems
 - anatomy and development
+homepage_url: https://docs.sparc.science/docs/sckan
 id: sckan
-last_modified_date: '2025-10-15T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: SCKAN
 products:

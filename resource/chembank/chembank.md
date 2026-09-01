@@ -42,11 +42,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chembank
   product_url: http://web.archive.org/web/20180524103413/http://chembank.broadinstitute.org/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 498 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 503 error
-    when accessing file'
+  warnings: []
 - category: DocumentationProduct
   description: Primary publication describing ChemBank, its data model, and its cheminformatics
     tools (Nucleic Acids Research Database issue).

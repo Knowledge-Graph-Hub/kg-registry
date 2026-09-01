@@ -19,8 +19,9 @@ description: The OBO Interoperability Ontology (OIO) was a set of annotation pro
 domains:
 - biological systems
 - general
+homepage_url: https://www.ebi.ac.uk/ols4/ontologies/oio
 id: oio
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -39,11 +40,11 @@ products:
   warnings:
   - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
     metadata.
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: OBO Interoperability Ontology in OBO format
@@ -57,11 +58,11 @@ products:
   warnings:
   - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
     metadata.
+  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

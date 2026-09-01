@@ -1,6 +1,6 @@
 {
   "citations": {
-    "publication_entries_total": 895,
+    "publication_entries_total": 894,
     "publication_entries_with_issues": 37,
     "resources_with_citation_issues": 30,
     "resources_without_publications": 357,
@@ -53,6 +53,7 @@
       "cacao.api",
       "cacao.gowiki",
       "cam-kp.sparql",
+      "cancer-genome-interpreter",
       "cancer-genome-interpreter.portal",
       "cardiokg",
       "cardiokg.data",
@@ -1959,6 +1960,7 @@
       "cmap.data_downloads",
       "cmap.python_api",
       "cmap.query_app",
+      "cmaup",
       "cmaup.publication",
       "cmip",
       "cmip.cmip6cvs",
@@ -1986,6 +1988,7 @@
       "collectri.decoupler",
       "collectri.docs",
       "collectri.regulons",
+      "compartments",
       "compartments.downloads",
       "compartments.portal",
       "compath",
@@ -2086,8 +2089,10 @@
       "cqs.docs",
       "craft",
       "craft.site",
+      "crd",
       "credit",
       "credit.spec",
+      "creeds",
       "creeds.automatic_disease_signatures",
       "creeds.automatic_single_drug",
       "creeds.automatic_single_gene",
@@ -2448,6 +2453,7 @@
       "emind",
       "emind.json",
       "emind.site",
+      "ena",
       "ena.api",
       "ena.browser",
       "ena.datahubs",
@@ -2575,6 +2581,7 @@
       "eupath",
       "eupath.kg-bioportal",
       "eupath.owl",
+      "eupathdb",
       "eupathdb.api",
       "eupathdb.apollo",
       "eupathdb.docs",
@@ -2830,6 +2837,7 @@
       "genepio.owl",
       "geneprof",
       "geneprof.translator-wiki",
+      "genetics-kp",
       "genetics-kp.code",
       "genetics-kp.docs",
       "genetics-kp.graph",
@@ -3589,6 +3597,7 @@
       "maizegdb.downloads",
       "maizegdb.gene_model_gff",
       "maizegdb.maizemine",
+      "malacards",
       "malacards.archive",
       "malacards.categories",
       "malacards.portal",
@@ -3611,6 +3620,7 @@
       "massive",
       "massive.docs",
       "massive.portal",
+      "mat",
       "mat.kg-bioportal",
       "matador.publication",
       "maude.data",
@@ -3746,6 +3756,7 @@
       "mfmo",
       "mfmo.kg-bioportal",
       "mfmo.owl",
+      "mfo",
       "mfo.kg-bioportal",
       "mfo.owl",
       "mfoem",
@@ -3761,7 +3772,9 @@
       "mgd.portal",
       "mgi",
       "mgi.portal",
+      "mgmlink",
       "mgmlink.code",
+      "mgnify",
       "mgnify.api",
       "mgnify.docs",
       "mgnify.ftp",
@@ -3795,6 +3808,7 @@
       "mirdb",
       "mirdb.predicted-targets",
       "mirdb.search",
+      "mirgenedb",
       "mirgenedb.bulk",
       "mirgenedb.covariance",
       "mirgenedb.info",
@@ -3826,6 +3840,7 @@
       "mod",
       "mod.obo",
       "mod.owl",
+      "modomics",
       "modomics.annotation",
       "modomics.api",
       "modomics.help",
@@ -3923,6 +3938,7 @@
       "mtbs",
       "mtbs.direct-download",
       "mtbs.viewer",
+      "multiomics-kp",
       "multiomics-kp.code",
       "multiomics-kp.docs",
       "multiomics-kp.graph",
@@ -4456,6 +4472,7 @@
       "ohpi",
       "ohpi.kg-bioportal",
       "ohpi.owl",
+      "oio",
       "okn-void",
       "okn-void.tpf",
       "olatdv",
@@ -4537,6 +4554,7 @@
       "ontoavida.kg-bioportal",
       "ontoavida.obo",
       "ontoavida.owl",
+      "ontology-kp",
       "ontology-kp.docs",
       "ontology-kp.graph",
       "ontology-kp.ubergraph",
@@ -5336,6 +5354,7 @@
       "scdo.owl",
       "scibite",
       "scibite.hgnc",
+      "sckan",
       "sckan.apinatomy",
       "sckan.data_release",
       "sckan.docs",
@@ -5765,6 +5784,7 @@
       "topmed.wgs-counts",
       "tox21",
       "tox21.data",
+      "toxcast",
       "toxcast.api",
       "toxcast.downloads",
       "toxcast.portal",
@@ -5944,6 +5964,7 @@
       "vectology",
       "vectology.api",
       "vectology.docs",
+      "vhog",
       "vhog.kg-bioportal",
       "vhog.owl",
       "vista",
@@ -7406,30 +7427,7 @@
       "zp",
       "zwd"
     ],
-    "missing_homepage_url_resource_ids": [
-      "cancer-genome-interpreter",
-      "cmaup",
-      "compartments",
-      "crd",
-      "creeds",
-      "drug-approvals-kp",
-      "ena",
-      "eupathdb",
-      "genetics-kp",
-      "malacards",
-      "mat",
-      "mfo",
-      "mgmlink",
-      "mgnify",
-      "mirgenedb",
-      "modomics",
-      "multiomics-kp",
-      "oio",
-      "ontology-kp",
-      "sckan",
-      "toxcast",
-      "vhog"
-    ],
+    "missing_homepage_url_resource_ids": [],
     "missing_infores_id_resource_ids": [
       "1000genomes",
       "4dn",
@@ -15954,7 +15952,6 @@
       "bootstrep.owl",
       "cellphonedb.database",
       "chea.docker",
-      "chembank.wayback",
       "chemid.pubchem-guide",
       "cmf.owl",
       "compartments.downloads",
@@ -16053,12 +16050,9 @@
       "propreo.owl",
       "psygenet.psygenet2r",
       "rapdb.downloads",
-      "resid.owl",
-      "sao.owl",
       "simap.portal",
       "ssurgo.download",
       "sty.semantic-groups",
-      "tahe.owl",
       "tcdb.download.acc2tcid",
       "tcdb.download.go",
       "tcdb.download.pdb",
@@ -16244,7 +16238,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-08-31T18:00:04Z",
+  "generated_at": "2026-09-01T13:43:34Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 161,
     "with_evaluation_page": 127,
@@ -16252,12 +16246,12 @@
   },
   "links": {
     "broken_urls": 326,
-    "cache_hits": 1,
+    "cache_hits": 4601,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4276,
-    "live_checked_urls": 4601,
+    "healthy_urls": 4286,
+    "live_checked_urls": 11,
     "mode": "live",
-    "total_unique_urls": 4602,
+    "total_unique_urls": 4612,
     "unchecked_urls": 0
   },
   "products": {
@@ -16265,7 +16259,7 @@
     "missing_original_source": 0,
     "missing_product_url": 22,
     "total": 4148,
-    "with_retrieval_warning": 124
+    "with_retrieval_warning": 120
   },
   "resource_count": 1026,
   "resources": {
@@ -16274,15 +16268,15 @@
     "missing_contacts": 134,
     "missing_description": 0,
     "missing_fairsharing_id": 1018,
-    "missing_homepage_url": 22,
+    "missing_homepage_url": 0,
     "missing_infores_id": 765,
     "missing_license": 317,
     "missing_repository": 518,
     "status_counts": {
-      "active": 883,
+      "active": 884,
       "inactive": 126,
       "orphaned": 12,
-      "unresponsive": 5
+      "unresponsive": 4
     },
     "stub_count": 0,
     "total": 1026,
@@ -16292,7 +16286,7 @@
     "without_publications": 357
   },
   "scoring": {
-    "average_score": 7.34,
+    "average_score": 7.27,
     "median_score": 7.0,
     "resources_with_issues": 991,
     "tracked_but_unscored_metrics": [
@@ -16327,181 +16321,181 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/alliance/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bgee/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bindingdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/chembl/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/cohd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dakp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dgidb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/diseases/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drugcentral/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/geneticskp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/go_cam/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/goa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gtopdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/hpoa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/icees/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/intact/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/panther/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/pathbank/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/semmeddb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/sider/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/signor/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/tmkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/translator_kg/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ttd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ubergraph/latest/"
         }
@@ -16542,121 +16536,121 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/chemicals.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/drugLabels.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/drugs.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/genes.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/guidelineAnnotations.json.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/occurrences.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/pathways-biopax.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/pathways-tsv.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/pathways.json.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/phenotypes.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/relationships.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/variantAnnotations.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://api.pharmgkb.org/v1/download/file/data/variants.zip"
         }
@@ -16679,61 +16673,61 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/blast.php"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/browse.php"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/cgi-bin/hgTracks?db=hg38"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/download.php"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/id_conversion.php"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/keyword_cons.php"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/keyword_dis.php"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/keyword_func.php"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.noncode.org/search.php"
         }
@@ -16768,25 +16762,25 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://github.com/ImperialCollegeLondon/cardioKG"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Data"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Generated_embeddings"
         }
@@ -16839,31 +16833,31 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://orkg.org/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://orkg.org/api"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://orkg.org/sparql/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://orkg.org/triplestore"
         }
@@ -16904,25 +16898,25 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data-interop.era.europa.eu/era-vocabulary/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://graph.data.era.europa.eu/repositories/rinf-plus"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://rinf.data.era.europa.eu/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://rinf.data.era.europa.eu/api/v1/sparql/rinf"
         }
@@ -16969,27 +16963,27 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://www.fda.gov/cder/ob/default.htm"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files"
         }
@@ -17030,7 +17024,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
         }
@@ -17083,7 +17077,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html"
         }
@@ -17136,25 +17130,25 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/rRNA_modifications/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/sequence_similarity_search/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/statistics/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/tutorial/"
         }

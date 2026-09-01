@@ -10,8 +10,9 @@ creation_date: '2025-03-09T00:00:00Z'
 description: A Translator Knowledge Provider dedicated to ontology-based services.
 domains:
 - other
+homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SRI-Ontology-Service
 id: ontology-kp
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
 name: Ontology KP
 products:

@@ -20,10 +20,10 @@ original_source:
   source: mesh
 product_url: https://zenodo.org/records/8117748/files/valid.txt
 warnings:
+- File was not able to be retrieved when checked on 2026-08-31_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2026-08-17_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2026-06-13_ Timeout connecting
-  to URL
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when

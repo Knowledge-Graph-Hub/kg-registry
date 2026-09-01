@@ -2233,9 +2233,9 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 502 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
@@ -2911,9 +2911,9 @@ products:
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-31: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
@@ -3385,9 +3385,9 @@ products:
     source: ncbigene
   product_url: https://omia.org/download/csv/genes/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
     header found'
 - category: GraphProduct
   description: The AOP-Wiki RDF dataset in RDF/Turtle, covering AOPs, key events,
