@@ -59,11 +59,11 @@ products:
     source: ncbitaxon
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim

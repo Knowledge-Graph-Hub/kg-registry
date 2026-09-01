@@ -7,9 +7,8 @@ name: fix.obo
 original_source:
 - relation_type: prov:hadPrimarySource
   source: fix
+product_file_size: 26562
 product_url: http://purl.obolibrary.org/obo/fix.obo
-warnings:
-- File was not able to be retrieved when checked on 2026-08-17_ Error connecting to
-  URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'
+warnings: []
 layout: product_detail
 ---

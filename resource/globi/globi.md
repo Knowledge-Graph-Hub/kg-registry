@@ -78,12 +78,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: Tab-separated verbatim species interaction pairs (original unresolved
@@ -114,12 +114,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: Tab-separated refuted species interaction pairs (interpreted names)
@@ -148,12 +148,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: Comma-separated refuted verbatim species interaction pairs (original
@@ -172,12 +172,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: RDF N-Quads representation of interaction data
@@ -228,12 +228,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: Tab-separated taxonomic name mapping file
@@ -284,11 +284,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -313,9 +313,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-08-17: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-08-31: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
     header found'
 - category: Product
   description: Field (column) definitions CSV endpoint

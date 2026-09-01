@@ -148,6 +148,7 @@ cpic,active,PASS
 cpt,active,PASS
 cqs,active,PASS
 craft,active,PASS
+crd,active,PASS
 credit,active,PASS
 creeds,active,PASS
 cro,active,PASS
@@ -910,7 +911,6 @@ connectivitymap,inactive,PASS
 coralkinome,inactive,PASS
 cord-19,inactive,PASS
 courage,orphaned,PASS
-crd,unresponsive,PASS
 date,inactive,PASS
 dc_cl,inactive,PASS
 dcdb,inactive,PASS

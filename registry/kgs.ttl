@@ -397,8 +397,7 @@ kgr:agro a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments" ;
     dcterms:identifier "agro" ;
-    dcterms:isReferencedBy <http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf>,
-        <url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf> ;
+    dcterms:isReferencedBy <http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:agro.kg-bioportal,
@@ -2162,7 +2161,7 @@ kgr:cancer-genome-interpreter a schema1:DataSource ;
     dcterms:description "Cancer Genome Interpreter (CGI) is a resource that annotates tumor genomic alterations to identify likely oncogenic events and interpret their potential therapeutic, prognostic, and diagnostic relevance using curated knowledge bases, machine learning (BoostDM, OncodriveMUT), and clinical evidence levels." ;
     dcterms:identifier "cancer-genome-interpreter" ;
     dcterms:license <https://www.cancergenomeinterpreter.org/conditions#license> ;
-    dcterms:modified "2025-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:cancer-genome-interpreter.api,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
@@ -2174,7 +2173,8 @@ kgr:cancer-genome-interpreter a schema1:DataSource ;
         "clinical",
         "drug discovery",
         "precision medicine" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://www.cancergenomeinterpreter.org/> .
 
 kgr:cancer-registry-kg a schema1:KnowledgeGraph ;
     rdfs:label "Cancer Registry Knowledge Graph" ;
@@ -3602,7 +3602,7 @@ kgr:cmaup a schema1:DataSource ;
     dcterms:description "CMAUP is a database of collective molecular activities of useful plants, linking plant ingredients to targets, phenotypes, diseases, pathways, and traditional uses to support natural product and medicinal plant research." ;
     dcterms:identifier "cmaup" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gky965> ;
-    dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cmaup.publication,
         kgr:oregano.graph ;
     schema1:name "CMAUP" ;
@@ -3610,7 +3610,8 @@ kgr:cmaup a schema1:DataSource ;
         "chemistry and biochemistry",
         "drug discovery",
         "pharmacology" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://bidd.group/CMAUP/> .
 
 kgr:cmf a schema1:Ontology ;
     rdfs:label "CranioMaxilloFacial ontology" ;
@@ -3776,7 +3777,7 @@ kgr:compartments a schema1:DataSource ;
     dcterms:identifier "compartments" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/24573882> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:compartments.downloads,
         kgr:compartments.portal,
@@ -3796,7 +3797,8 @@ kgr:compartments a schema1:DataSource ;
     skos:inScheme "biological systems",
         "proteomics",
         "systems biology" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://compartments.jensenlab.org/> .
 
 kgr:compath a schema1:DataSource ;
     rdfs:label "ComPath" ;
@@ -4205,10 +4207,10 @@ kgr:craft a schema1:DataSource ;
 kgr:crd a schema1:Aggregator ;
     rdfs:label "Comparative RNA Database (CRD)" ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Comparative RNA Database (CRD) was an aggregator of RNA sequence and structure data, but is no longer available. This resource is considered unresponsive; only its metadata and publication are retained for reference." ;
+    dcterms:description "The Comparative RNA Database (CRD) is an aggregator of comparative RNA sequence and secondary structure data, covering ribosomal, intron, and other RNAs. It is published through the Comparative RNA Web (CRW) Site, which relocated from its original University of Texas host to CRW2 (Comparative RNA Web-2)." ;
     dcterms:identifier "crd" ;
     dcterms:isReferencedBy <https://doi.org/10.1089/jir.1998.18.799> ;
-    dcterms:modified "2025-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
@@ -4216,7 +4218,8 @@ kgr:crd a schema1:Aggregator ;
     schema1:name "Comparative RNA Database (CRD)" ;
     skos:inScheme "biological systems",
         "genomics" ;
-    adms:status "unresponsive" .
+    adms:status "Active" ;
+    foaf:homepage <https://crw2-comparative-rna-web.org/> .
 
 kgr:credit a schema1:Ontology ;
     rdfs:label "Credit" ;
@@ -4243,7 +4246,7 @@ kgr:creeds a schema1:DataSource ;
     dcterms:identifier "creeds" ;
     dcterms:isReferencedBy <doi:10.1038/ncomms12846> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:creeds.automatic_disease_signatures,
         kgr:creeds.automatic_single_drug,
@@ -4256,7 +4259,8 @@ kgr:creeds a schema1:DataSource ;
     schema1:name "CREEDS" ;
     skos:inScheme "genomics",
         "pharmacology" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/CREEDS/> .
 
 kgr:cro a schema1:Ontology ;
     rdfs:label "Contributor Role Ontology" ;
@@ -5610,7 +5614,7 @@ kgr:drug-approvals-kp a schema1:KnowledgeGraph ;
     dcterms:created "2025-04-22T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator knowledge provider focused on drug approval status and other drug-related metadata." ;
     dcterms:identifier "drug-approvals-kp" ;
-    dcterms:modified "2026-05-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:drug-approvals-kp.code,
         kgr:drug-approvals-kp.graph.edges,
         kgr:drug-approvals-kp.graph.nodes,
@@ -5621,7 +5625,8 @@ kgr:drug-approvals-kp a schema1:KnowledgeGraph ;
     skos:inScheme "biomedical",
         "drug discovery",
         "pharmacology" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/Drug-Approvals-KP> .
 
 kgr:drugbank a schema1:DataSource ;
     rdfs:label "DrugBank" ;
@@ -6475,7 +6480,7 @@ kgr:ena a schema1:DataSource ;
     dcterms:description "The European Nucleotide Archive (ENA) is a comprehensive database providing free and open access to nucleotide sequence data, functional genomics data, and associated metadata. It is operated by EMBL-EBI and serves as an ELIXIR Core Data Resource and a Global Core Biodata Resource." ;
     dcterms:identifier "ena" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/36399492> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ena.api,
         kgr:ena.browser,
         kgr:ena.datahubs,
@@ -6490,7 +6495,8 @@ kgr:ena a schema1:DataSource ;
     schema1:name "European Nucleotide Archive (ENA)" ;
     skos:inScheme "biological systems",
         "genomics" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://www.ebi.ac.uk/ena/browser/home> .
 
 kgr:encode a schema1:DataSource ;
     rdfs:label "ENCODE" ;
@@ -7175,7 +7181,7 @@ kgr:eupathdb a schema1:DataSource ;
     dcterms:description "The Eukaryotic Pathogen Database (EuPathDB) is an integrated genomics database covering numerous eukaryotic pathogens including Plasmodium, Trypanosoma, and other parasites. It provides functional genomics resources integrating data from human and veterinary parasites, now known as VEuPathDB (Vectorbase and EuPathDB)." ;
     dcterms:identifier "eupathdb" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gks1113> ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2759>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:eupathdb.api,
@@ -7189,7 +7195,8 @@ kgr:eupathdb a schema1:DataSource ;
     skos:inScheme "biological systems",
         "genomics",
         "organisms" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://veupathdb.org/> .
 
 kgr:eurio a schema1:KnowledgeGraph ;
     rdfs:label "EURIO Knowledge Graph" ;
@@ -8435,14 +8442,15 @@ kgr:genetics-kp a schema1:KnowledgeGraph ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider focusing on genetic data." ;
     dcterms:identifier "genetics-kp" ;
-    dcterms:modified "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genetics-kp.code,
         kgr:genetics-kp.docs,
         kgr:genetics-kp.graph ;
     schema1:identifier "genetics-data-provider" ;
     schema1:name "Genetics KP" ;
     skos:inScheme "biomedical" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider> .
 
 kgr:geneticskp a schema1:KnowledgeGraph ;
     rdfs:label "Genetics KP" ;
@@ -11903,7 +11911,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-08-31T17:50:55+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T13:33:43+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -12637,7 +12645,7 @@ kgr:malacards a schema1:Aggregator ;
     dcterms:identifier "malacards" ;
     dcterms:isReferencedBy <https://doi.org/10.1002/0471250953.bi0124s47>,
         <https://doi.org/10.1093/database/bat018> ;
-    dcterms:modified "2025-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.disease.associations,
         kgr:genecards.web.interface,
@@ -12653,7 +12661,8 @@ kgr:malacards a schema1:Aggregator ;
     skos:inScheme "biomedical",
         "clinical",
         "genomics" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://www.malacards.org/> .
 
 kgr:mamo a schema1:Ontology ;
     rdfs:label "Mathematical modeling ontology" ;
@@ -12760,11 +12769,12 @@ kgr:mat a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "mat" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mat.kg-bioportal ;
     schema1:name "Minimal anatomical terminology" ;
     skos:inScheme "anatomy and development" ;
-    adms:status "Inactive" .
+    adms:status "Inactive" ;
+    foaf:homepage <https://obofoundry.org/ontology/mat.html> .
 
 kgr:matador a schema1:DataSource ;
     rdfs:label "MATADOR" ;
@@ -13372,13 +13382,14 @@ kgr:mfo a schema1:Ontology ;
     dcterms:description "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>." ;
     dcterms:identifier "mfo" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:8089> ;
     schema1:hasPart kgr:mfo.kg-bioportal,
         kgr:mfo.owl ;
     schema1:name "Medaka fish anatomy and development" ;
     skos:inScheme "anatomy and development" ;
-    adms:status "Inactive" .
+    adms:status "Inactive" ;
+    foaf:homepage <https://obofoundry.org/ontology/mfo.html> .
 
 kgr:mfoem a schema1:Ontology ;
     rdfs:label "Emotion Ontology" ;
@@ -13473,13 +13484,14 @@ kgr:mgmlink a schema1:KnowledgeGraph ;
     dcterms:description "A knowledge graph of linked microbes, genes and metabolites." ;
     dcterms:identifier "mgmlink" ;
     dcterms:isReferencedBy <doi:10.1038/s41598-025-91230-6> ;
-    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2759> ;
     schema1:hasPart kgr:mgmlink.code ;
     schema1:name "MGMLink" ;
     skos:inScheme "biological systems",
         "microbiology" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/bsantan/MGMLink> .
 
 kgr:mgnify a schema1:Aggregator ;
     rdfs:label "MGnify" ;
@@ -13487,7 +13499,7 @@ kgr:mgnify a schema1:Aggregator ;
     dcterms:description "MGnify is an active aggregator and analysis platform for microbiome and metagenomic data, providing tools for submission, analysis, visualization, and discovery of microbiome datasets from diverse biomes and environments. It is operated by EMBL-EBI and is an ELIXIR Core Data Resource." ;
     dcterms:identifier "mgnify" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkac1080> ;
-    dcterms:modified "2025-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:mgnify.api,
         kgr:mgnify.docs,
@@ -13505,7 +13517,8 @@ kgr:mgnify a schema1:Aggregator ;
         "clinical",
         "environment",
         "genomics" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://www.ebi.ac.uk/metagenomics> .
 
 kgr:mi a schema1:Ontology ;
     rdfs:label "Molecular Interactions Controlled Vocabulary" ;
@@ -13757,7 +13770,7 @@ kgr:mirgenedb a schema1:DataSource ;
     dcterms:description "MirGeneDB is a manually curated database of microRNA genes, providing validated and annotated microRNA gene entries for over 21,000 genes from 114 metazoan species. It offers uniform nomenclature, evolutionary context, and downloadable data for all species and families." ;
     dcterms:identifier "mirgenedb" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkae1094> ;
-    dcterms:modified "2025-10-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:mirgenedb.bulk,
         kgr:mirgenedb.covariance,
@@ -13772,7 +13785,8 @@ kgr:mirgenedb a schema1:DataSource ;
     schema1:name "MirGeneDB" ;
     skos:inScheme "biological systems",
         "genomics" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://mirgenedb.org/> .
 
 kgr:mirnao a schema1:Ontology ;
     rdfs:label "microRNA Ontology" ;
@@ -13946,7 +13960,7 @@ kgr:modomics a schema1:DataSource ;
     dcterms:identifier "modomics" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkab1083>,
         <https://doi.org/10.1093/nar/gkad1083> ;
-    dcterms:modified "2025-10-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:modomics.annotation,
@@ -13969,7 +13983,8 @@ kgr:modomics a schema1:DataSource ;
     skos:inScheme "biological systems",
         "chemistry and biochemistry",
         "genomics" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://genesilico.pl/modomics/> .
 
 kgr:molecular-data-kp a schema1:KnowledgeGraph ;
     rdfs:label "MolePro" ;
@@ -14401,13 +14416,14 @@ kgr:multiomics-kp a schema1:KnowledgeGraph ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider incorporating multiomics data." ;
     dcterms:identifier "multiomics-kp" ;
-    dcterms:modified "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:multiomics-kp.code,
         kgr:multiomics-kp.docs,
         kgr:multiomics-kp.graph ;
     schema1:name "Multiomics KP" ;
     skos:inScheme "biomedical" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-Provider> .
 
 kgr:mutationds a schema1:DataSource ;
     rdfs:label "Catalog of Validated Oncogenic Mutations" ;
@@ -16089,7 +16105,7 @@ kgr:oio a schema1:Ontology ;
     dcterms:description "The OBO Interoperability Ontology (OIO) was a set of annotation properties and ontology metadata standards developed to promote interoperability between OBO Foundry ontologies. Its terms and properties have been superseded by OMO (Ontology Metadata Ontology) and are now considered deprecated. OIO provided foundational metadata terms that were widely used in early OBO ontologies for describing ontology versioning, imports, and other metadata." ;
     dcterms:identifier "oio" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:efo.obo,
         kgr:efo.owl,
         kgr:oio.obo,
@@ -16099,7 +16115,8 @@ kgr:oio a schema1:Ontology ;
         "oio" ;
     skos:inScheme "biological systems",
         "general" ;
-    adms:status "Inactive" .
+    adms:status "Inactive" ;
+    foaf:homepage <https://www.ebi.ac.uk/ols4/ontologies/oio> .
 
 kgr:okn-void a schema1:KnowledgeGraph ;
     rdfs:label "OKN VoID graph descriptions" ;
@@ -16519,13 +16536,14 @@ kgr:ontology-kp a schema1:KnowledgeGraph ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider dedicated to ontology-based services." ;
     dcterms:identifier "ontology-kp" ;
-    dcterms:modified "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ontology-kp.docs,
         kgr:ontology-kp.graph,
         kgr:ontology-kp.ubergraph ;
     schema1:name "Ontology KP" ;
     skos:inScheme "other" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/SRI-Ontology-Service> .
 
 kgr:ontoneo a schema1:Ontology ;
     rdfs:label "Obstetric and Neonatal Ontology" ;
@@ -20742,7 +20760,7 @@ kgr:sckan a schema1:DataSource ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SCKAN (SPARC Connectivity Knowledge base of the Autonomic Nervous system) is a curated knowledge base representing neural circuit connectivity in the autonomic nervous system, derived from SPARC data, anatomical expert interviews, and scientific literature. It supports reasoning and querying of central and peripheral nervous system-end organ circuitry, including detailed ApiNATOMY models for organs such as bladder, heart, colon, stomach, spleen, pancreas, and airways." ;
     dcterms:identifier "sckan" ;
-    dcterms:modified "2025-10-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sckan.apinatomy,
         kgr:sckan.data_release,
         kgr:sckan.docs,
@@ -20752,7 +20770,8 @@ kgr:sckan a schema1:DataSource ;
     schema1:name "SCKAN" ;
     skos:inScheme "anatomy and development",
         "biological systems" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://docs.sparc.science/docs/sckan> .
 
 kgr:scop a schema1:DataSource ;
     rdfs:label "SCOP" ;
@@ -20921,7 +20940,7 @@ kgr:sepio a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ontology for representing the provenance of scientific claims and the evidence that supports them." ;
     dcterms:identifier "sepio" ;
-    dcterms:isReferencedBy <url:http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf> ;
+    dcterms:isReferencedBy <http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf> ;
     dcterms:license <https://creativecommons.org/licenses/by/3.0/> ;
     dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sepio.kg-bioportal,
@@ -22782,7 +22801,7 @@ kgr:toxcast a schema1:DataSource ;
     dcterms:description "ToxCast (US EPA Toxicity Forecaster) is a high-throughput screening program generating bioactivity profiles for thousands of environmental chemicals across diverse in vitro assays to prioritize substances for hazard characterization, integrate exposure and pathway information, and support predictive toxicology." ;
     dcterms:identifier "toxcast" ;
     dcterms:license <https://www.epa.gov/privacy/privacy-and-security-notice> ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:aop-db.data,
         kgr:biobricks-toxcast.graph,
         kgr:toxcast.api,
@@ -22793,7 +22812,8 @@ kgr:toxcast a schema1:DataSource ;
         "environment",
         "public health",
         "toxicology" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast> .
 
 kgr:toxin a schema1:KnowledgeGraph ;
     rdfs:label "TOXIN" ;
@@ -23438,7 +23458,7 @@ kgr:unii a schema1:DataSource ;
     dcterms:created "2025-07-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "FDA's Global Substance Registration System (GSRS) is a comprehensive database that provides Unique Ingredient Identifiers (UNIIs) for substances in FDA-regulated products. UNIIs uniquely define substances based on scientific identity characteristics using ISO 11238 data elements, enabling efficient and accurate exchange of substance information across regulatory domains." ;
     dcterms:identifier "unii" ;
-    dcterms:isReferencedBy <url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define> ;
+    dcterms:isReferencedBy <https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define> ;
     dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:dailymed.spl_files,
@@ -23898,12 +23918,13 @@ kgr:vhog a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "vhog" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:vhog.kg-bioportal,
         kgr:vhog.owl ;
     schema1:name "Vertebrate Homologous Ontology Group Ontology" ;
     skos:inScheme "anatomy and development" ;
-    adms:status "Inactive" .
+    adms:status "Inactive" ;
+    foaf:homepage <https://obofoundry.org/ontology/vhog.html> .
 
 kgr:vista a schema1:DataSource ;
     rdfs:label "VISTA Enhancer Browser" ;
