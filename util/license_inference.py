@@ -668,6 +668,19 @@ def _plain(value: Any) -> Any:
 _TOP_LEVEL_KEY = re.compile(r"^([A-Za-z0-9_]+):")
 
 
+def _parsed_license(block: list[str]) -> Any:
+    """The value of a ``license`` block, or None for an empty or unreadable one."""
+    import yaml
+
+    if not block:
+        return None
+    try:
+        parsed = yaml.safe_load("\n".join(block))
+    except yaml.YAMLError:
+        return None
+    return parsed.get("license") if isinstance(parsed, dict) else None
+
+
 class LicenseWriteRefused(RuntimeError):
     """The page could not take an inferred license without harming what is there."""
 
@@ -732,7 +745,10 @@ def _write_inferred_license(
     if value is not None:
         dumped = yaml.dump({"license": value}, sort_keys=True, allow_unicode=True)
         new_block = dumped.rstrip("\n").split("\n")
-    if existing == new_block:
+    # Compare what the block means, not how it is laid out. Other build steps
+    # re-dump touched pages through ruamel with a different indent and width,
+    # and a textual comparison would rewrite the block on every other build.
+    if _parsed_license(existing) == _parsed_license(new_block):
         return False
 
     if start is not None:

@@ -448,3 +448,19 @@ def test_apply_fills_an_empty_license_block_and_reports_refusals(tmp_path, capsy
     # The export never shows a license the page does not carry.
     assert "license" not in missing
     assert "not written" in capsys.readouterr().out
+
+
+def test_reflowed_inferred_block_is_not_rewritten(tmp_path):
+    kg = _resource("kg", category="KnowledgeGraph", products=[_product("kg.graph", ["src"])])
+    objs = [_resource("src", license=CC_BY_SA), kg]
+    page = _write_page(tmp_path, kg)
+    apply_inferred_licenses(objs, write=True, resource_dir=tmp_path / "resource")
+    # Another build step re-indents the page the way the ruamel handler does.
+    text = page.read_text(encoding="utf-8")
+    reflowed = text.replace("  inferred_from:\n  - src\n", "  inferred_from:\n    - src\n")
+    assert reflowed != text
+    page.write_text(reflowed, encoding="utf-8")
+
+    summary = apply_inferred_licenses(objs, write=True, resource_dir=tmp_path / "resource")
+    assert summary["written"] == []
+    assert page.read_text(encoding="utf-8") == reflowed
