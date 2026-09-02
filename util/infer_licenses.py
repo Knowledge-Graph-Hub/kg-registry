@@ -22,36 +22,30 @@ import pathlib
 import sys
 from collections import Counter
 
-import frontmatter
-
 HERE = pathlib.Path(__file__).parent.resolve()
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
-from license_inference import (  # noqa: E402
-    RESOURCE_DIR,
-    TIERS,
-    apply_inferred_licenses,
-    write_report,
-)
+from common import RESOURCE_DIR, load_frontmatter_files_parallel  # noqa: E402
+from license_inference import TIERS, apply_inferred_licenses, write_report  # noqa: E402
 
 
 def load_resources(resource_dir: pathlib.Path) -> list[dict]:
-    """Load the main page of every resource, in ID order."""
+    """Load the main page of every resource, in ID order.
+
+    Reading a thousand pages one at a time is nearly all of this command's
+    runtime, so the pages go through the shared parallel loader.
+    """
+    pages = sorted(
+        directory / f"{directory.name}.md"
+        for directory in resource_dir.iterdir()
+        if directory.is_dir() and (directory / f"{directory.name}.md").exists()
+    )
+    loaded = load_frontmatter_files_parallel(pages)
     resources = []
-    for directory in sorted(resource_dir.iterdir()):
-        if not directory.is_dir():
-            continue
-        page = directory / f"{directory.name}.md"
-        if not page.exists():
-            continue
-        try:
-            metadata = dict(frontmatter.load(str(page)).metadata)
-        except Exception as exc:  # noqa: BLE001
-            print(f"WARN: could not read {page}: {exc}", file=sys.stderr)
-            continue
-        if metadata.get("id") == directory.name:
-            resources.append(metadata)
+    for page, metadata, _content in sorted(loaded, key=lambda item: item[0]):
+        if metadata.get("id") == page.parent.name:
+            resources.append(dict(metadata))
     return resources
 
 

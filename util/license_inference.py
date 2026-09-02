@@ -44,6 +44,7 @@ from copy import deepcopy
 from typing import Any, Iterable, Mapping, Optional
 
 try:
+    from util.common import RESOURCE_DIR
     from util.source_associations import (
         resource_owns_product,
         source_association_id,
@@ -51,6 +52,7 @@ try:
         source_resource_id,
     )
 except ImportError:  # pragma: no cover - fallback for direct script execution
+    from common import RESOURCE_DIR  # type: ignore
     from source_associations import (  # type: ignore
         resource_owns_product,
         source_association_id,
@@ -76,10 +78,6 @@ __all__ = [
     "LicenseWriteRefused",
     "write_report",
 ]
-
-HERE = pathlib.Path(__file__).parent.resolve()
-ROOT = HERE.parent
-RESOURCE_DIR = ROOT / "resource"
 
 #: Least to most restrictive. Position is rank.
 TIERS: tuple[str, ...] = (
