@@ -395,11 +395,17 @@ jQuery(document).ready(function () {
 
         // A license the build inferred from upstream sources is marked as such,
         // with the contributing sources in the tooltip.
+        // Keep this wording in step with the License card in
+        // _layouts/resource_detail.html, which composes the same sentence in Liquid.
         let inferred_mark = '';
         if (item.license.status === 'inferred') {
             const sources = (item.license.inferred_from || []).join(', ');
             const tier = item.license.restrictiveness ? ` (${item.license.restrictiveness})` : '';
-            const tip = `No license is declared. This is the most restrictive license${tier} among its sources: ${sources}.`;
+            let tip = `No license is declared for this resource. This is the most restrictive license${tier} among its sources: ${sources}.`;
+            const unresolved = item.license.unresolved_sources || [];
+            if (unresolved.length > 0) {
+                tip += ` Not accounted for, no known license: ${unresolved.join(', ')}.`;
+            }
             inferred_mark = ` <span class="text-muted" style="cursor: help; border-bottom: 1px dotted;" title="${tip.replace(/"/g, '&quot;')}">(inferred)</span>`;
         }
         return (license_logo ?

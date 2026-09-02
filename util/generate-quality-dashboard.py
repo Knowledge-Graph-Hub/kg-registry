@@ -31,6 +31,7 @@ except Exception:  # pragma: no cover
 
 from common import RESOURCE_DIR, ROOT, load_frontmatter_file
 try:
+    from util.license_inference import is_inferred_license
     from util.source_associations import iter_source_ids, resource_owns_product
     from util.reference_validation import (
         DEFAULT_CACHE_DIR as DEFAULT_REFERENCE_CACHE_DIR,
@@ -40,6 +41,7 @@ try:
         validate_publication_references,
     )
 except ModuleNotFoundError:
+    from license_inference import is_inferred_license
     from source_associations import iter_source_ids, resource_owns_product
     from reference_validation import (
         DEFAULT_CACHE_DIR as DEFAULT_REFERENCE_CACHE_DIR,
@@ -230,7 +232,7 @@ def has_license_data(value: Any) -> bool:
     if isinstance(value, dict):
         # A license the build inferred from upstream sources is not one the
         # resource provided. It still counts as missing for curation purposes.
-        if str(value.get("status") or "").strip().lower() == "inferred":
+        if is_inferred_license(value):
             return False
         for key in ("id", "label", "url"):
             if is_non_empty_text(value.get(key)):

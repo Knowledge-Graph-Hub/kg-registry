@@ -28,9 +28,9 @@ SUMMARY_FIELDS = [
     "is_obsolete",
 ]
 
-# Only these license subfields are rendered in the table.
-# status and the inferred_* fields let the table mark a license the build
-# inferred from upstream sources rather than one the resource provided.
+# Only these license subfields reach the table. status marks a license the
+# build inferred rather than one the resource provided; the three fields
+# after it feed the "(inferred)" tooltip in assets/js/custom.js.
 LICENSE_FIELDS = [
     "id",
     "label",
