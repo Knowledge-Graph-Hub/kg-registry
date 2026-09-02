@@ -112,8 +112,13 @@ def test_classify_falls_back_to_label_when_url_unknown_or_missing():
             "Free with attribution; content may not be altered",
             "no derivatives",
         ),
-        # A mixed label lands on the most restrictive license it names.
+        # A mixed label lands on the most restrictive license it names,
+        # with or without a recognized URL beside it.
         ("", "CC0, CC BY, and CC BY-NC (mixed)", "non-commercial"),
+        (CC0["id"], "CC0, CC BY, and CC BY-NC (mixed)", "non-commercial"),
+        (CC0["id"], "CC0 and CC BY (mixed)", "permissive"),
+        # A label that matches nothing does not loosen or tighten a known URL.
+        (CC_BY["id"], "Custom", "permissive"),
         # "non-commercial and commercial" is a grant, not a restriction.
         (
             "https://www.ema.europa.eu/en/legal-notice",

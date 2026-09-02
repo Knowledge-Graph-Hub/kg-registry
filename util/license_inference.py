@@ -266,17 +266,39 @@ def classify_license(license_obj: Any) -> Optional[str]:
     """
     if not has_declared_license(license_obj):
         return None
-    url = normalize_license_url(_license_url(license_obj))
-    if url:
-        for fragment, tier in _URL_TIERS:
-            if fragment in url:
-                return tier
-    label = _NC_AND_COMMERCIAL.sub("", _license_label(license_obj))
-    if label:
-        for pattern, tier in _LABEL_TIERS:
-            if pattern.search(label):
-                return tier
+    url_tier = _classify_url(_license_url(license_obj))
+    label_tier = _classify_label(_license_label(license_obj))
+    # A label is curator commentary on the URL. It can add a restriction the
+    # URL does not show ("CC0 and CC BY-NC (mixed)" on a CC0 page) but it
+    # cannot loosen one, so the more restrictive of the two wins. A label
+    # that matches nothing is not a vote.
+    if url_tier is not None and label_tier is not None:
+        return most_restrictive([url_tier, label_tier])
+    if url_tier is not None:
+        return url_tier
+    if label_tier is not None:
+        return label_tier
     return "custom"
+
+
+def _classify_url(url: str) -> Optional[str]:
+    url = normalize_license_url(url)
+    if not url:
+        return None
+    for fragment, tier in _URL_TIERS:
+        if fragment in url:
+            return tier
+    return None
+
+
+def _classify_label(label: str) -> Optional[str]:
+    label = _NC_AND_COMMERCIAL.sub("", label)
+    if not label:
+        return None
+    for pattern, tier in _LABEL_TIERS:
+        if pattern.search(label):
+            return tier
+    return None
 
 
 def most_restrictive(tiers: Iterable[Optional[str]]) -> Optional[str]:
