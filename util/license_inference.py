@@ -132,6 +132,12 @@ _URL_TIERS: tuple[tuple[str, str], ...] = (
     ("opendatacommons.org/licenses/odbl", "copyleft"),
     ("spdx.org/licenses/odbl", "copyleft"),
     ("gnu.org/licenses/", "copyleft"),
+    ("opensource.org/license/gpl", "copyleft"),
+    ("opensource.org/licenses/gpl", "copyleft"),
+    ("opensource.org/license/lgpl", "copyleft"),
+    ("opensource.org/licenses/lgpl", "copyleft"),
+    ("opensource.org/license/agpl", "copyleft"),
+    ("opensource.org/licenses/agpl", "copyleft"),
     ("spdx.org/licenses/gpl", "copyleft"),
     ("spdx.org/licenses/lgpl", "copyleft"),
     ("spdx.org/licenses/agpl", "copyleft"),
@@ -293,8 +299,11 @@ def _classify_url(url: str) -> Optional[str]:
     url = normalize_license_url(url)
     if not url:
         return None
+    # The normalized URL has no trailing slash, so match fragments without
+    # one too. Order in _URL_TIERS keeps "licenses/by" from claiming the
+    # by-nc, by-nd, and by-sa forms, which are listed before it.
     for fragment, tier in _URL_TIERS:
-        if fragment in url:
+        if fragment.rstrip("/") in url:
             return tier
     return None
 

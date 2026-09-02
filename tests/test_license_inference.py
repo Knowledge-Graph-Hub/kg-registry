@@ -76,6 +76,8 @@ def test_classify_by_url():
         ],
         "permissive": [
             CC_BY["id"],
+            "https://creativecommons.org/licenses/by/",
+            "https://www.apache.org/licenses/",
             "https://opensource.org/license/mit/",
             "https://www.apache.org/licenses/LICENSE-2.0",
             "https://opendatacommons.org/licenses/by/1-0/",
@@ -84,6 +86,9 @@ def test_classify_by_url():
             CC_BY_SA["id"],
             "https://opendatacommons.org/licenses/odbl/1-0/",
             "https://www.gnu.org/licenses/gpl-3.0.en.html",
+            "https://www.gnu.org/licenses/",
+            "https://opensource.org/license/gpl-3-0",
+            "https://opensource.org/licenses/LGPL-2.1",
         ],
         "non-commercial": [CC_BY_NC["id"], "https://creativecommons.org/licenses/by-nc-sa/4.0/"],
         "no derivatives": [
