@@ -52,6 +52,20 @@ URI: [kgr:License](https://w3id.org/bridge2ai/data-sheets-schema/License)
 
       License : logo
 
+      License : status
+
+        License --> "0..1" LicenseStatusEnum : status
+        click LicenseStatusEnum href "LicenseStatusEnum/.html"
+
+      License : restrictiveness
+
+        License --> "0..1" LicenseRestrictivenessEnum : restrictiveness
+        click LicenseRestrictivenessEnum href "LicenseRestrictivenessEnum/.html"
+
+      License : inferred_from
+
+      License : unresolved_sources
+
       License : warnings
 
 
@@ -73,6 +87,10 @@ URI: [kgr:License](https://w3id.org/bridge2ai/data-sheets-schema/License)
 | ---  | --- | --- | --- |
 | [label](label.html) | 0..1 <br/> [String](String.html) | The name of the license | direct |
 | [logo](logo.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of a logo for the license | direct |
+| [status](status.html) | 0..1 <br/> [LicenseStatusEnum](LicenseStatusEnum.html) | Whether the license was provided by the resource's curators or maintainers, or inferred by the build process from the licenses of the resource's upstream sources | direct |
+| [restrictiveness](restrictiveness.html) | 0..1 <br/> [LicenseRestrictivenessEnum](LicenseRestrictivenessEnum.html) | Where this license sits on the restrictiveness ladder used to choose among source licenses | direct |
+| [inferred_from](inferred_from.html) | * <br/> [String](String.html) | For an inferred license, the identifiers of the sources whose licenses sit at the chosen restrictiveness tier | direct |
+| [unresolved_sources](unresolved_sources.html) | * <br/> [String](String.html) | For an inferred license, the identifiers of sources for which no license could be found | direct |
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | [NamedThing](NamedThing.html) |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [NamedThing](NamedThing.html) |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | [NamedThing](NamedThing.html) |

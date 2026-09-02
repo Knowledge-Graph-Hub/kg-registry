@@ -82,6 +82,7 @@ Name: kg_registry_schema
 | [github_url](github_url.html) | The GitHub URL of the organization |
 | [homepage_url](homepage_url.html) | The primary URL of the resource |
 | [id](id.html) | The identifier of an entity |
+| [inferred_from](inferred_from.html) | For an inferred license, the identifiers of the sources (resources or product... |
 | [infores_id](infores_id.html) | The Infores ID of the resource |
 | [is_neo4j](is_neo4j.html) | Whether the API is for a Neo4j database |
 | [is_public](is_public.html) | Whether the API is publicly accessible, or requires only publicly provided cr... |
@@ -108,17 +109,21 @@ Name: kg_registry_schema
 | [relation_type](relation_type.html) | The PROV-O relation type that describes how the product is related to the sou... |
 | [repository](repository.html) | A main version control repository for the resource |
 | [resources](resources.html) | A list of entries in the registry |
+| [restrictiveness](restrictiveness.html) | Where this license sits on the restrictiveness ladder used to choose among so... |
 | [secondary_source](secondary_source.html) | The source(s) of the product, other than its original source, with the proven... |
 | [short_id](short_id.html) | A short identifier for the organization |
 | [source](source.html) | The identifier of the resource or product that is related to the product thro... |
 | [standard](standard.html) | The name of the standard that the product is compatible with |
+| [status](status.html) | Whether the license was provided by the resource's curators or maintainers, o... |
 | [synonyms](synonyms.html) | A list of synonyms for the resource |
 | [tags](tags.html) | Tags associated with the resource |
 | [taxon](taxon.html) | The taxon or taxa that the resource is relevant to |
 | [title](title.html) | The title of the publication |
 | [type](type.html) | The type of usage |
+| [unresolved_sources](unresolved_sources.html) | For an inferred license, the identifiers of sources for which no license coul... |
 | [url](url.html) | A URL for a description or example of the usage |
 | [usages](usages.html) | The usage(s) of the resource |
+| [use_instead](use_instead.html) | The identifier(s) of one or more other KG-Registry Resources that should be u... |
 | [users](users.html) | The user implementing or working with the resource |
 | [value](value.html) | The value of the contact detail |
 | [version](version.html) | The version of the resource |
@@ -138,6 +143,8 @@ Name: kg_registry_schema
 | [DomainEnum](DomainEnum.html) | A domain that a resource is relevant to |
 | [DumpFormatEnum](DumpFormatEnum.html) | The format of a dump of a product, generally a graph, as a file |
 | [FormatEnum](FormatEnum.html) | The serialization/format of a product |
+| [LicenseRestrictivenessEnum](LicenseRestrictivenessEnum.html) | A coarse ordering of licenses from least to most restrictive |
+| [LicenseStatusEnum](LicenseStatusEnum.html) | How a license came to be recorded on a resource |
 | [ProvenanceRelationEnum](ProvenanceRelationEnum.html) | PROV-O relation types used to describe how a product is related to a resource... |
 | [StandardEnum](StandardEnum.html) | The standard or standards that a product conforms to |
 | [TagEnum](TagEnum.html) | General-purpose tags that can be associated with resources |
