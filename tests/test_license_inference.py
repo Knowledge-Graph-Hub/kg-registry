@@ -119,12 +119,22 @@ def test_classify_falls_back_to_label_when_url_unknown_or_missing():
         (CC0["id"], "CC0 and CC BY (mixed)", "permissive"),
         # A label that matches nothing does not loosen or tighten a known URL.
         (CC_BY["id"], "Custom", "permissive"),
-        # "non-commercial and commercial" is a grant, not a restriction.
+        # "non-commercial and commercial" in either order is a grant, not a restriction.
         (
             "https://www.ema.europa.eu/en/legal-notice",
             "May be reproduced for non-commercial and commercial purposes with acknowledgement",
-            "custom",
+            "permissive",
         ),
+        ("https://example.org/a", "Free for commercial and non-commercial use", "permissive"),
+        ("https://example.org/b", "Free for non-commercial and commercial use", "permissive"),
+        # Spellings seen in the registry.
+        (
+            "https://www.omim.org/help/agreement",
+            "OMIM Use Agreement (research/educational use; license required for commercial use)",
+            "non-commercial",
+        ),
+        ("https://example.org/c", "GPLv3", "copyleft"),
+        ("https://example.org/d", "LGPL-2.1", "copyleft"),
     ]
     for url, label, tier in cases:
         assert classify_license({"id": url, "label": label}) == tier, label

@@ -169,12 +169,15 @@ _LABEL_TIERS: tuple[tuple[re.Pattern[str], str], ...] = (
     (
         re.compile(
             r"\bby[\s-]*nc\b|\bnon[\s-]*commercial\b|\bnoncommercial\b|\bacademic\b"
-            r"|\bnon[\s-]*profit\b|\bnonprofit\b|research (?:and|or|/) educational",
+            r"|\bnon[\s-]*profit\b|\bnonprofit\b|research\s*(?:and|or|/)\s*educational",
             re.I,
         ),
         "non-commercial",
     ),
-    (re.compile(r"\bby[\s-]*sa\b|\bodbl\b|\bshare[\s-]*alike\b|\b[al]?gpl\b", re.I), "copyleft"),
+    (
+        re.compile(r"\bby[\s-]*sa\b|\bodbl\b|\bshare[\s-]*alike\b|\b[al]?gpl(?:v?\d)?\b", re.I),
+        "copyleft",
+    ),
     (
         re.compile(
             r"\bcc[\s-]*by\b|\bcc\s+by\b|\bmit\b|\bapache\b|\bbsd\b|\bartistic\b"
@@ -194,9 +197,14 @@ _LABEL_TIERS: tuple[tuple[re.Pattern[str], str], ...] = (
     ),
 )
 
-# "non-commercial and commercial" describes a permissive grant, not a
-# restriction. Strip it before the non-commercial pattern can see it.
-_NC_AND_COMMERCIAL = re.compile(r"non[\s-]*commercial\s+(?:and|or)\s+commercial", re.I)
+# "non-commercial and commercial" (either order) describes a grant to every
+# kind of user, not a restriction. It is stripped before the non-commercial
+# pattern can see it, and on its own it reads as permissive.
+_NC_AND_COMMERCIAL = re.compile(
+    r"non[\s-]*commercial\s+(?:and|or)\s+commercial(?:\s+(?:use|purposes?))?"
+    r"|commercial\s+(?:and|or)\s+non[\s-]*commercial(?:\s+(?:use|purposes?))?",
+    re.I,
+)
 
 #: Labels that mean "no license recorded" even though the field is present.
 _PLACEHOLDER_LABELS = re.compile(r"^\s*(not specified|unspecified|unknown|none|n/?a|tbd)\s*$", re.I)
@@ -292,13 +300,13 @@ def _classify_url(url: str) -> Optional[str]:
 
 
 def _classify_label(label: str) -> Optional[str]:
-    label = _NC_AND_COMMERCIAL.sub("", label)
-    if not label:
+    stripped, grants_both = _NC_AND_COMMERCIAL.subn("", label)
+    if not stripped and not grants_both:
         return None
     for pattern, tier in _LABEL_TIERS:
-        if pattern.search(label):
+        if pattern.search(stripped):
             return tier
-    return None
+    return "permissive" if grants_both else None
 
 
 def most_restrictive(tiers: Iterable[Optional[str]]) -> Optional[str]:
