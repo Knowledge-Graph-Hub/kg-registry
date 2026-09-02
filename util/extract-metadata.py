@@ -34,6 +34,7 @@ try:
         resource_owns_product,
         source_resource_id,
     )
+    from util.license_inference import apply_inferred_licenses
     from util.reference_validation import (
         DEFAULT_VALIDATION_CACHE_PATH,
         env_flag,
@@ -49,6 +50,7 @@ except ModuleNotFoundError:
         resource_owns_product,
         source_resource_id,
     )
+    from license_inference import apply_inferred_licenses
     from reference_validation import (
         DEFAULT_VALIDATION_CACHE_PATH,
         env_flag,
@@ -376,6 +378,8 @@ def concat_resource_yaml(args):
     This function also:
     * Creates sub-pages for products as needed
     * Propagates derived products to the source Resource pages
+    * Infers a license for KnowledgeGraph and Aggregator resources that declare none,
+      from the most restrictive license among their upstream sources
     * Adds a logo to the license metadata if it exists
     * Creates stub Resource pages for sources mentioned in products but don't have a page yet
     """
@@ -383,28 +387,28 @@ def concat_resource_yaml(args):
     def decorate_metadata(objs):
         """
         Add the logo corresponding to the given object's license (if it has one).
+        An inferred license gets its logo the same way.
         """
+
+        def _logo_for(lurl):
+            # https://creativecommons.org/about/downloads
+            if lurl.find("creativecommons.org/licenses/by-sa") > 0:
+                return "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png"
+            if lurl.find("creativecommons.org/licenses/by/") > 0:
+                return "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            if lurl.find("creativecommons.org/publicdomain/zero/") > 0:
+                return "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+            return ""
 
         for obj in objs:
             if "license" in obj:
-                # https://creativecommons.org/about/downloads
                 license = obj["license"]
                 try:
                     lurl = license["id"]  # This should be a URL
-                except KeyError:
+                except (KeyError, TypeError):
                     print(f"ERROR: Could not find id for license in {obj['id']}")
                     sys.exit(1)
-                logo = ""
-                if lurl.find("creativecommons.org/licenses/by-sa") > 0:
-                    logo = (
-                        "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png"
-                    )
-                elif lurl.find("creativecommons.org/licenses/by/") > 0:
-                    logo = "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
-                elif lurl.find("creativecommons.org/publicdomain/zero/") > 0:
-                    logo = (
-                        "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
-                    )
+                logo = _logo_for(lurl or "")
                 if logo:
                     license["logo"] = logo
 
@@ -1496,6 +1500,15 @@ def concat_resource_yaml(args):
 
     # Clean up resource-level stale retrieval warnings once products are synchronized
     cleanup_resource_level_retrieval_warnings(objs)
+
+    # Infer licenses for aggregate resources that declare none
+    # Paths are relative to the working directory, as for every other write-back in this step.
+    license_summary = apply_inferred_licenses(objs, write=True, resource_dir=pathlib.Path("resource"))
+    print(
+        f"Inferred licenses for {len(license_summary['inferred'])} resource(s) from their sources; "
+        f"{len(license_summary['unresolved'])} inheriting resource(s) have no license anywhere upstream; "
+        f"{len(license_summary['written'])} page(s) updated"
+    )
 
     # Add logos to licenses
     decorate_metadata(objs)

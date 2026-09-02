@@ -393,9 +393,18 @@ jQuery(document).ready(function () {
         const license_logo = item.license.logo || '';
         const license_label = item.license.label || '';
 
-        return license_logo ?
+        // A license the build inferred from upstream sources is marked as such,
+        // with the contributing sources in the tooltip.
+        let inferred_mark = '';
+        if (item.license.status === 'inferred') {
+            const sources = (item.license.inferred_from || []).join(', ');
+            const tier = item.license.restrictiveness ? ` (${item.license.restrictiveness})` : '';
+            const tip = `No license is declared. This is the most restrictive license${tier} among its sources: ${sources}.`;
+            inferred_mark = ` <span class="text-muted" style="cursor: help; border-bottom: 1px dotted;" title="${tip.replace(/"/g, '&quot;')}">(inferred)</span>`;
+        }
+        return (license_logo ?
             `<a href="${license_url}"><img width="100px" src="${license_logo}" alt="${license_label}"/></a>` :
-            `<a href="${license_url}">${license_label}</a>`;
+            `<a href="${license_url}">${license_label}</a>`) + inferred_mark;
     }
 
     // Helper function to normalize DOI by removing 'doi:' prefix if present

@@ -10,7 +10,7 @@ All Resources have the following attributes:
 - `description`: Detailed description
 - `homepage_url`: Primary resource URL
 - `repository`: Version control repository
-- `license`: Resource licensing information
+- `license`: Resource licensing information. When none is provided, the build fills this in from upstream sources and marks it `status: inferred` (see _License Inheritance_ below)
 - `version`: Resource version
 - `domain`: Primary scientific domain (see _Domains_ below)
 - `contacts`: List of contact points
@@ -46,6 +46,77 @@ This Resource defines an ontology, or a formal representation of a set of concep
 ### Aggregator
 
 This Resource combines multiple data sources.
+
+## License Inheritance
+
+A KnowledgeGraph or Aggregator that provides no `license` is, by default,
+bound by the licenses of the sources it was built from. The build fills in
+`license` for such resources with the most restrictive license found among
+their sources and marks it with `status: inferred`. A license without a
+`status` is one the resource provided. The build never overwrites a provided
+license. To replace an inferred license, edit the `license` block and drop the
+`status` line and the `inferred_from`, `unresolved_sources`, and
+`restrictiveness` lines with it.
+
+On the resource page and in the registry table an inferred license shows as
+the license label followed by "(inferred)". Hovering over that word lists the
+sources that imposed it.
+
+```yaml
+license:
+  id: https://www.omim.org/help/agreement
+  inferred_from:
+  - omim
+  - umls
+  label: OMIM Use Agreement
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
+```
+
+Sources are read from the resource's `components` field and from the
+`original_source` and `secondary_source` associations on the products the
+resource owns. Only associations whose relation carries content count:
+`prov:hadPrimarySource`, `prov:wasDerivedFrom`, and `prov:used`.
+`prov:wasInfluencedBy` and `prov:wasInformedBy` are ignored.
+
+Each source is resolved to a license in this order: the license on the named
+product, then the source resource's own `license`, then the most restrictive
+license among that resource's products, then the source resource's own
+inferred license. A source with no license anywhere is listed under
+`unresolved_sources` and does not affect the result.
+
+Licenses are ranked on a coarse ladder, least to most restrictive:
+
+| Tier | Meaning | Examples |
+|------|---------|----------|
+| public domain | No rights reserved | CC0, Public Domain Mark, U.S. federal government works |
+| permissive | Attribution, nothing more | CC BY, MIT, BSD, Apache, ODC-By |
+| copyleft | Same or compatible license on reuse | CC BY-SA, ODbL, GPL family |
+| non-commercial | Non-commercial or academic use only | CC BY-NC, CC BY-NC-SA, academic licenses |
+| no derivatives | Redistribution without modification only | CC BY-ND, CC BY-NC-ND |
+| custom | Terms that could not be placed on the ladder | Terms of use, subscriptions, controlled access, "varies" |
+
+`custom` sits at the top because such terms have to be read before any reuse.
+A license is placed by its URL first and by its label when the URL is not
+recognized. A label that names several licenses lands on the most restrictive
+one it names.
+
+The inferred license lists `inferred_from`, the sources at the winning tier,
+`unresolved_sources`, and `restrictiveness`, the tier itself. Inference runs
+during `make` and can also be run on its own:
+
+```
+make infer-licenses-dry-run
+make infer-licenses
+make license-report
+```
+
+The report (`reports/license-inference.tsv`) covers every KnowledgeGraph and
+Aggregator, including those with a declared license, and flags a `conflict`
+when the declared license is less restrictive than what the sources impose.
+A conflict is not an error in the registry. It is something to check with the
+resource's maintainers.
 
 ## Pointing to a Replacement Resource
 

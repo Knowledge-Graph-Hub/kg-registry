@@ -228,6 +228,10 @@ def has_license_data(value: Any) -> bool:
     if isinstance(value, str):
         return value.strip() != ""
     if isinstance(value, dict):
+        # A license the build inferred from upstream sources is not one the
+        # resource provided. It still counts as missing for curation purposes.
+        if str(value.get("status") or "").strip().lower() == "inferred":
+            return False
         for key in ("id", "label", "url"):
             if is_non_empty_text(value.get(key)):
                 return True

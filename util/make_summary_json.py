@@ -28,8 +28,18 @@ SUMMARY_FIELDS = [
     "is_obsolete",
 ]
 
-# Only these license subfields are rendered in the table
-LICENSE_FIELDS = ["id", "label", "logo"]
+# Only these license subfields are rendered in the table.
+# status and the inferred_* fields let the table mark a license the build
+# inferred from upstream sources rather than one the resource provided.
+LICENSE_FIELDS = [
+    "id",
+    "label",
+    "logo",
+    "status",
+    "restrictiveness",
+    "inferred_from",
+    "unresolved_sources",
+]
 
 
 def summarize(resource):
