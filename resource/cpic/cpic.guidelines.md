@@ -9,6 +9,6 @@ name: CPIC Clinical Practice Guidelines
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cpic
-product_url: https://cpicpgx.org/guidelines/
+product_url: https://www.clinpgx.org/cpic/guidelines
 layout: product_detail
 ---

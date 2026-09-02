@@ -8,6 +8,6 @@ name: CPIC Term Standardization Project
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cpic
-product_url: https://cpicpgx.org/resources/term-standardization
+product_url: https://www.clinpgx.org/page/cpicTermStandardization
 layout: product_detail
 ---

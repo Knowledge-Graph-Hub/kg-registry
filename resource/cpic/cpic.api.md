@@ -10,6 +10,6 @@ name: CPIC Database & API
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cpic
-product_url: https://cpicpgx.org/api-and-database/
+product_url: https://www.clinpgx.org/page/cpicResources#database-and-api
 layout: product_detail
 ---
