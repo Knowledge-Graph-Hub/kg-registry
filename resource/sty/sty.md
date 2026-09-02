@@ -53,9 +53,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sty
   product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: Product
   description: sty Nodes TSV
   format: tsv

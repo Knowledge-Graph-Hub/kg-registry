@@ -56,10 +56,6 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
@@ -84,10 +80,6 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
@@ -112,10 +104,6 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
@@ -140,10 +128,6 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
@@ -163,10 +147,6 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-07-10: Timeout connecting
-    to URL'
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
@@ -1115,14 +1095,18 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - 'File was not able to be retrieved when checked on 2026-09-02: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
 - category: GraphProduct
   compression: gzip
   description: IID annotated human protein-protein interaction download.

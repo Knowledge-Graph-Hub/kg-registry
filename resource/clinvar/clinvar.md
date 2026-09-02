@@ -358,7 +358,7 @@ products:
   product_url: https://www.disgenet.com/
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -382,7 +382,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -488,7 +488,7 @@ products:
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -512,7 +512,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -618,7 +618,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -642,7 +642,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -749,7 +749,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 16066449
+  edge_count: 16107480
   format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
@@ -773,7 +773,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -880,7 +880,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
@@ -904,7 +904,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1079,7 +1079,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -1103,7 +1103,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1210,7 +1210,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -1234,7 +1234,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1340,7 +1340,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 16066449
+  edge_count: 16107480
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -1364,7 +1364,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1470,7 +1470,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 16066449
+  edge_count: 16107480
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1494,7 +1494,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance

@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: KGX Distribution of KG-Monarch
-edge_count: 16066449
+edge_count: 16107480
 format: kgx
 id: kg-monarch.graph
 name: KGX Distribution of KG-Monarch
@@ -25,7 +25,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1666878
+node_count: 1668236
 original_source:
 - relation_type: prov:hadPrimarySource
   source: alliance

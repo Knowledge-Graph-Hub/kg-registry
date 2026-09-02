@@ -5,10 +5,10 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Pantelis Topalis
   contact_details:
   - contact_type: email
     value: topalis@imbb.forth.gr
+  label: Pantelis Topalis
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology for use with miRNA databases.
 domains:
@@ -34,6 +34,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/mirnao.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compression: targz

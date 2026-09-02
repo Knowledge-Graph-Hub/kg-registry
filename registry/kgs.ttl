@@ -3430,6 +3430,27 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
     foaf:homepage <https://clinicaltrials.gov/> ;
     foaf:maker kgr:ncbi .
 
+kgr:clinpgx a schema1:Resource ;
+    rdfs:label "ClinPGx" ;
+    dcterms:created "2026-09-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ClinPGx is a clinical pharmacogenomics knowledge resource that unifies the PharmGKB knowledge base, the CPIC prescribing guidelines and the PharmCAT genotype-to-phenotype tool under one site. It launched on 2025-07-30 as the successor to PharmGKB; pharmgkb.org and cpicpgx.org URLs redirect to their clinpgx.org equivalents and the PharmGKB bulk downloads are served from api.clinpgx.org. Content includes curated clinical and variant annotations, drug labels, pathways, gene-drug pairs drawn from CPIC, DPWG and FDA sources, and allele definition and frequency tables." ;
+    dcterms:identifier "clinpgx" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-09-02T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:clinpgx.api,
+        kgr:clinpgx.downloads,
+        kgr:clinpgx.portal ;
+    schema1:name "ClinPGx" ;
+    skos:inScheme "biomedical",
+        "chemistry and biochemistry",
+        "clinical",
+        "genomics",
+        "pharmacology",
+        "precision medicine" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.clinpgx.org/> .
+
 kgr:clinvar a schema1:DataSource ;
     rdfs:label "ClinVar" ;
     dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
@@ -4129,12 +4150,13 @@ kgr:cpdb a schema1:Aggregator ;
 kgr:cpic a schema1:Resource ;
     rdfs:label "CPIC" ;
     dcterms:created "2025-09-03T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Clinical Pharmacogenetics Implementation Consortium (CPIC) creates, curates, and disseminates freely available, peer-reviewed, evidence-based, and updatable clinical practice guidelines that translate patient pharmacogenetic test results into actionable prescribing decisions. CPIC also publishes structured gene–drug annotations, allele function data, standardized terminology resources, and implementation tools (database, API, SOPs, educational materials) to accelerate pharmacogenomics in clinical care." ;
+    dcterms:description "The Clinical Pharmacogenetics Implementation Consortium (CPIC) creates, curates, and disseminates freely available, peer-reviewed, evidence-based, and updatable clinical practice guidelines that translate patient pharmacogenetic test results into actionable prescribing decisions. CPIC also publishes structured gene-drug annotations, allele function data, standardized terminology resources, and implementation tools (database, API, SOPs, educational materials). Since 2025-07-30 CPIC content is hosted within ClinPGx (registry id clinpgx) and cpicpgx.org pages redirect there; the CPIC name and guidelines continue under ClinPGx." ;
     dcterms:identifier "cpic" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-02T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:cpic.alleles,
+    schema1:hasPart kgr:clinpgx.portal,
+        kgr:cpic.alleles,
         kgr:cpic.api,
         kgr:cpic.cyp2d6_translation,
         kgr:cpic.genes_drugs,
@@ -4151,7 +4173,7 @@ kgr:cpic a schema1:Resource ;
         "clinical",
         "drug discovery" ;
     adms:status "Active" ;
-    foaf:homepage <https://cpicpgx.org/> .
+    foaf:homepage <https://www.clinpgx.org/cpic> .
 
 kgr:cpt a schema1:DataSource ;
     rdfs:label "Current Procedural Terminology" ;
@@ -11910,7 +11932,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-01T15:38:45+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-02T20:32:09+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -17763,10 +17785,10 @@ kgr:pgo a schema1:Ontology ;
 kgr:pgxmine a schema1:DataSource ;
     rdfs:label "PGxMine" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "PGxMine uses text mining to identify pharmacogenomic associations between chemicals and genetic variants in the biomedical literature to assist curation of PharmGKB. The system uses the Kindred relation classifier along with PubTator annotations to extract chemical-variant associations from PubMed, PubMed Central Open Access, and PubMed Central Author Manuscript Collection." ;
+    dcterms:description "PGxMine used text mining to identify pharmacogenomic associations between chemicals and genetic variants in the biomedical literature to assist curation of PharmGKB. The system uses the Kindred relation classifier along with PubTator annotations to extract chemical-variant associations from PubMed, PubMed Central Open Access, and PubMed Central Author Manuscript Collection. The hosted viewer at pgxmine.pharmgkb.org stopped resolving after PharmGKB moved to ClinPGx (checked 2026-09-02) and the code was last updated in November 2022; the data remain on Zenodo and the code on GitHub." ;
     dcterms:identifier "pgxmine" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2025-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-02T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:pgxmine.code,
         kgr:pgxmine.collated,
         kgr:pgxmine.sentences,
@@ -17779,8 +17801,8 @@ kgr:pgxmine a schema1:DataSource ;
         "literature",
         "pharmacology",
         "precision medicine" ;
-    adms:status "Active" ;
-    foaf:homepage <https://pgxmine.pharmgkb.org/> .
+    adms:status "Inactive" ;
+    foaf:homepage <https://github.com/jakelever/pgxmine> .
 
 kgr:pharmacodb a schema1:DataSource ;
     rdfs:label "PharmacoDB" ;
@@ -17872,14 +17894,16 @@ kgr:pharmebinet a schema1:KnowledgeGraph ;
 kgr:pharmgkb a schema1:Resource ;
     rdfs:label "PharmGKB" ;
     dcterms:created "2025-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "PharmGKB collects, curates and disseminates knowledge about clinically actionable gene-drug associations and genotype-phenotype relationships. As of 2025-07-30 PharmGKB is delivered through ClinPGx, which unifies PharmGKB, CPIC and PharmCAT; pharmgkb.org URLs now redirect to their clinpgx.org equivalents and downloads are served from api.clinpgx.org." ;
+    dcterms:description "PharmGKB collected, curated and disseminated knowledge about clinically actionable gene-drug associations and genotype-phenotype relationships. On 2025-07-30 PharmGKB was succeeded by ClinPGx (registry id clinpgx), which unifies PharmGKB, CPIC and PharmCAT; pharmgkb.org URLs redirect to their clinpgx.org equivalents and the downloads listed here are served from api.clinpgx.org. This page is kept because many registry resources cite pharmgkb as a provenance source. Use clinpgx for the current resource." ;
     dcterms:identifier "pharmgkb" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/34216021> ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-02T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:clinpgx.downloads,
+        kgr:clinpgx.portal,
         kgr:genecards.pharmacogenomics,
         kgr:genecards.web.interface,
         kgr:ibkh.graph,
@@ -17947,7 +17971,7 @@ kgr:pharmgkb a schema1:Resource ;
         "genomics",
         "pharmacology",
         "precision medicine" ;
-    adms:status "Active" ;
+    adms:status "Inactive" ;
     foaf:homepage <https://www.clinpgx.org/> .
 
 kgr:pharmkg a schema1:KnowledgeGraph ;
@@ -26758,6 +26782,11 @@ kgr:clinicaltrialsgov.search a schema1:GraphicalInterface ;
     dcterms:description "Web-based interface for searching and browsing clinical trials with advanced filtering and export capabilities" ;
     schema1:url <https://clinicaltrials.gov/search> .
 
+kgr:clinpgx.api a schema1:ProgrammingInterface ;
+    rdfs:label "ClinPGx API" ;
+    dcterms:description "REST API for ClinPGx data and bulk file downloads, keeping the path structure of the former PharmGKB API (for example /v1/download/file/data/)" ;
+    schema1:url <https://api.clinpgx.org/swagger/> .
+
 kgr:clinvar.api a schema1:ProgrammingInterface ;
     rdfs:label "ClinVar API (E-utilities)" ;
     dcterms:description "API access to ClinVar data through NCBI's E-utilities, supporting programmatic queries and data retrieval." ;
@@ -27295,27 +27324,27 @@ kgr:cpdb.wsdl a schema1:ProgrammingInterface ;
 kgr:cpic.alleles a schema1:Product ;
     rdfs:label "CPIC Allele & Diplotype Function Tables" ;
     dcterms:description "Allele function and diplotype-to-phenotype tables standardized for clinical pharmacogenetic test result interpretation" ;
-    schema1:url <https://cpicpgx.org/alleles/> .
+    schema1:url <https://www.clinpgx.org/page/cpicResources#guideline-alleles> .
 
 kgr:cpic.api a schema1:ProgrammingInterface ;
     rdfs:label "CPIC Database & API" ;
     dcterms:description "Structured data (database and API) for CPIC guideline-derived gene–drug relationships, allele function, and standardized terms" ;
-    schema1:url <https://cpicpgx.org/api-and-database/> .
+    schema1:url <https://www.clinpgx.org/page/cpicResources#database-and-api> .
 
 kgr:cpic.cyp2d6_translation a schema1:DocumentationProduct ;
     rdfs:label "CPIC CYP2D6 Genotype to Phenotype Project" ;
     dcterms:description "CYP2D6 genotype to phenotype translation project resources" ;
-    schema1:url <https://cpicpgx.org/resources/cyp2d6-genotype-to-phenotype-standardization-project/> .
+    schema1:url <https://www.clinpgx.org/page/cpicCyp2d6Standardization> .
 
 kgr:cpic.genes_drugs a schema1:Product ;
     rdfs:label "CPIC Genes-Drugs Tables" ;
     dcterms:description "Curated gene–drug pair tables linking pharmacogenes with affected medications and guideline recommendations" ;
-    schema1:url <https://cpicpgx.org/genes-drugs/> .
+    schema1:url <https://www.clinpgx.org/cpic/pairs> .
 
 kgr:cpic.guidelines a schema1:DocumentationProduct ;
     rdfs:label "CPIC Clinical Practice Guidelines" ;
     dcterms:description "Peer-reviewed, evidence-based, updatable pharmacogenetic clinical practice guidelines translating genotype into prescribing recommendations" ;
-    schema1:url <https://cpicpgx.org/guidelines/> .
+    schema1:url <https://www.clinpgx.org/cpic/guidelines> .
 
 kgr:cpic.onepager a schema1:DocumentationProduct ;
     rdfs:label "CPIC One-Page Summary" ;
@@ -27330,7 +27359,7 @@ kgr:cpic.overview.slides a schema1:DocumentationProduct ;
 kgr:cpic.portal a schema1:GraphicalInterface ;
     rdfs:label "CPIC Website Portal" ;
     dcterms:description "Main CPIC website portal providing access to guidelines, genes-drugs tables, alleles, publications, resources, and implementation information" ;
-    schema1:url <https://cpicpgx.org/> .
+    schema1:url <https://www.clinpgx.org/cpic> .
 
 kgr:cpic.sop a schema1:DocumentationProduct ;
     rdfs:label "CPIC Pharmacogene Curation SOP" ;
@@ -27340,7 +27369,7 @@ kgr:cpic.sop a schema1:DocumentationProduct ;
 kgr:cpic.term_standardization a schema1:DocumentationProduct ;
     rdfs:label "CPIC Term Standardization Project" ;
     dcterms:description "Term standardization project resources for clinical pharmacogenetic test result terminology" ;
-    schema1:url <https://cpicpgx.org/resources/term-standardization> .
+    schema1:url <https://www.clinpgx.org/page/cpicTermStandardization> .
 
 kgr:cpt.spec a schema1:DocumentationProduct ;
     rdfs:label "CPT Overview and Guidance" ;
@@ -41424,6 +41453,11 @@ kgr:clinicaltrialsgov.aact a schema1:Product ;
     dcterms:description "Aggregate Analysis of ClinicalTrials.gov (AACT) - A relational PostgreSQL database containing all clinical trial data, updated daily" ;
     schema1:url <https://aact.ctti-clinicaltrials.org/> .
 
+kgr:clinpgx.downloads a schema1:DocumentationProduct ;
+    rdfs:label "ClinPGx Downloads" ;
+    dcterms:description "Downloads page listing the bulk data files (formerly the PharmGKB downloads), with data usage policy and file descriptions" ;
+    schema1:url <https://www.clinpgx.org/downloads> .
+
 kgr:cmap.clue a schema1:GraphicalInterface ;
     rdfs:label "CLUE Platform" ;
     dcterms:description "Cloud-based user interface providing suite of apps for querying gene expression signatures, browsing perturbagen data, searching metadata, and visualizing connectivity results" ;
@@ -43676,6 +43710,11 @@ kgr:cl-kg.api.neo4j a schema1:ProgrammingInterface ;
     rdfs:label "CL-KG Neo4j graph instance" ;
     dcterms:description "Publicly available Neo4j instance for CL-KG." ;
     schema1:url <https://cellular-semantics.sanger.ac.uk/browser/> .
+
+kgr:clinpgx.portal a schema1:GraphicalInterface ;
+    rdfs:label "ClinPGx Portal" ;
+    dcterms:description "ClinPGx web portal for browsing genes, variants, drugs, clinical annotations, drug labels, pathways and CPIC guidelines, integrating PharmGKB and CPIC content" ;
+    schema1:url <https://www.clinpgx.org/> .
 
 kgr:clo.owl a schema1:OntologyProduct ;
     rdfs:label "clo.owl" ;

@@ -56,13 +56,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   product_url: https://tissues.jensenlab.org/Downloads
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-22: HTTP 503 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
-    to URL'
+  warnings: []
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -1721,7 +1715,7 @@ publications:
   - Kalliopi Tsafou
   - Christian Stolte
   - Sune Pletscher-Frankild
-  - "Se\xE1n I. O\u2019Donoghue"
+  - Seán I. O’Donoghue
   - Lars Juhl Jensen
   doi: 10.7717/peerj.1054
   id: doi:10.7717/peerj.1054

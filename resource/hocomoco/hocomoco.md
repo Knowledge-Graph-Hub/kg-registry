@@ -31,11 +31,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/core/HUMAN/mono/HOCOMOCOv11_core_pwms_HUMAN_mono.txt
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: HOCOMOCO v11 full collection human mononucleotide PWMs (flat text),
     including secondary motif subtypes
@@ -46,11 +42,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hocomoco
   product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/full/HUMAN/mono/HOCOMOCOv11_full_pwms_HUMAN_mono.txt
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-08-17: HTTP 404 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: HOCOMOCO download portal with PWM/PCM models for human and mouse in
     multiple formats (JASPAR, MEME, TRANSFAC, HOMER) plus annotations and thresholds
@@ -62,8 +54,8 @@ products:
     source: hocomoco
   product_url: https://hocomoco14.autosome.org/downloads_v11
 - category: GraphProduct
-  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
-    \ levels (A\u2013E)"
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
   id: dorothea.graph
   name: DoRothEA Regulon Graph
   original_source:

@@ -1244,12 +1244,6 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-09-01: Timeout connecting
-    to URL'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -1271,10 +1265,6 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
@@ -1301,10 +1291,6 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-08-31: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
@@ -2394,6 +2380,8 @@ products:
   product_url: https://github.com/biobricks-ai/mesh-kg
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the

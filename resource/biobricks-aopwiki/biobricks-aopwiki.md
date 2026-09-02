@@ -60,6 +60,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
+    when accessing file'
 repository: https://github.com/biobricks-ai/aopwikirdf-kg
 ---
 BioBricks AOP-Wiki

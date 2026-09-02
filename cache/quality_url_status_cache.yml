@@ -5618,6 +5618,11 @@ https://api.cellosaurus.org/sparql-editor:
   ok: false
   source: cache
   status_code: 404
+https://api.clinpgx.org/swagger/:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
+  status_code: 200
 https://api.clinpgx.org/v1/download/file/attachment/PapersOfInterestArchive.csv:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
@@ -19665,6 +19670,7 @@ https://metagrid.esgf-west.org/search:
     port=443) at 0x7f08551caa80>, ''Connection to metagrid.esgf-west.org timed out.
     (connect timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 https://metatraits.embl.de/:
   checked_at: '2026-08-31T18:03:06Z'
@@ -21556,11 +21562,13 @@ https://proteininformationresource.org/efip/:
   checked_at: '2026-09-01T15:48:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://proteininformationresource.org/iproclass/:
   checked_at: '2026-09-01T15:48:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://proteininformationresource.org/pirsf/:
   checked_at: '2026-08-31T18:03:25Z'
@@ -23318,6 +23326,7 @@ https://rest.ensembl.org/:
   error: 'HEAD request failed: HTTPSConnectionPool(host=''rest.ensembl.org'', port=443):
     Read timed out. (read timeout=8.0)'
   ok: false
+  source: cache
   status_code: null
 https://rfam.org/:
   checked_at: '2026-08-31T18:03:32Z'
@@ -28042,11 +28051,46 @@ https://www.clinpgx.org/:
   ok: true
   source: cache
   status_code: 200
+https://www.clinpgx.org/cpic:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.clinpgx.org/cpic/guidelines:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.clinpgx.org/cpic/pairs:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.clinpgx.org/downloads:
   checked_at: '2026-09-01T15:28:05Z'
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://www.clinpgx.org/page/cpicCyp2d6Standardization:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.clinpgx.org/page/cpicResources#database-and-api:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.clinpgx.org/page/cpicResources#guideline-alleles:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.clinpgx.org/page/cpicTermStandardization:
+  checked_at: '2026-09-02T20:40:39Z'
+  error: null
+  ok: true
   status_code: 200
 https://www.coralkinome.org/:
   checked_at: '2026-08-31T18:04:07Z'
@@ -28865,6 +28909,7 @@ https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files:
 : checked_at: '2026-09-01T15:48:55Z'
   error: HEAD returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 ? https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-electronic-submissions
 : checked_at: '2026-08-31T18:04:12Z'
@@ -28876,6 +28921,7 @@ https://www.fda.gov/drugs/surveillance-post-drug-approval-activities/fda-adverse
   checked_at: '2026-09-01T15:48:55Z'
   error: HEAD returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers:
   checked_at: '2026-08-31T18:04:12Z'
@@ -28887,6 +28933,7 @@ https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers
 : checked_at: '2026-09-01T15:48:55Z'
   error: HEAD returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 ? https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/manufacturer-and-user-facility-device-experience-database-maude
 : checked_at: '2026-08-31T18:04:12Z'

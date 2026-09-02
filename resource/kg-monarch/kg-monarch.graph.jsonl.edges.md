@@ -2,7 +2,7 @@
 category: GraphProduct
 compression: targz
 description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-edge_count: 16066449
+edge_count: 16107480
 format: kgx-jsonl
 id: kg-monarch.graph.jsonl.edges
 name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -26,7 +26,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1666878
+node_count: 1668236
 original_source:
 - relation_type: prov:hadPrimarySource
   source: alliance

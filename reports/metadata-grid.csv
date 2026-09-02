@@ -122,6 +122,7 @@ clingen,active,PASS
 clinical-data-kp,active,PASS
 clinicalkg,active,PASS
 clinicaltrialsgov,active,PASS
+clinpgx,active,PASS
 clinvar,active,PASS
 clo,active,PASS
 clue,active,PASS
@@ -646,10 +647,8 @@ pf1600,active,PASS
 pfam,active,PASS
 pfocr,active,PASS
 pgo,active,PASS
-pgxmine,active,PASS
 pharmacodb,active,PASS
 pharmebinet,active,PASS
-pharmgkb,active,PASS
 pharmkg,active,PASS
 pharos,active,PASS
 phaseskg,active,PASS
@@ -985,8 +984,10 @@ patric,inactive,PASS
 pd_st,inactive,PASS
 pdumdv,inactive,PASS
 pgdso,inactive,PASS
+pgxmine,inactive,PASS
 pharmacotherapydb,inactive,PASS
 pharmdb,orphaned,PASS
+pharmgkb,inactive,PASS
 phosphoelm,orphaned,PASS
 phosphogrid,orphaned,PASS
 pid,inactive,PASS

@@ -48,9 +48,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
   format: json

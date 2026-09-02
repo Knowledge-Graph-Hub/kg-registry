@@ -64,9 +64,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
     with subsets of those ontologies
@@ -87,9 +85,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
     excluding the external ontologies themselves
@@ -123,9 +119,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: OntologyProduct
   description: Classes added to ncbitaxon for taxon subsets such as prokaryotes
   format: owl
@@ -387,7 +381,7 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -411,7 +405,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -517,7 +511,7 @@ products:
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -541,7 +535,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -647,7 +641,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -671,7 +665,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -778,7 +772,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 16066449
+  edge_count: 16107480
   format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
@@ -802,7 +796,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -909,7 +903,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 16066449
+  edge_count: 16107480
   format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
@@ -933,7 +927,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1040,7 +1034,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -1064,7 +1058,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1171,7 +1165,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 16066449
+  edge_count: 16107480
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -1195,7 +1189,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1301,7 +1295,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 16066449
+  edge_count: 16107480
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -1325,7 +1319,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1431,7 +1425,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 16066449
+  edge_count: 16107480
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1455,7 +1449,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1666878
+  node_count: 1668236
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -3908,8 +3902,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -6589,12 +6583,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -6638,6 +6634,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file

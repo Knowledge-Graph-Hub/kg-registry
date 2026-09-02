@@ -45,9 +45,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cpdb
   product_url: http://cpdb.molgen.mpg.de/download
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: ProgrammingInterface
   description: SOAP web service description for ConsensusPathDB programmatic access
   format: xml

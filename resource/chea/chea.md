@@ -81,9 +81,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chea
   product_url: https://hub.docker.com/r/maayanlab/chea3
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: GraphicalInterface
   description: Interactive ChEA3 web interface for transcription factor enrichment
     analysis, result tables, and network visualizations

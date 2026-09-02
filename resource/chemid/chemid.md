@@ -50,9 +50,7 @@ products:
   secondary_source:
   - relation_type: prov:used
     source: pubchem
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: MappingProduct
   description: Downloadable Excel and CSV files containing DSSTox identifiers mapped
     to CAS numbers, InChIKeys, SMILES, molecular formulas, and other chemical identifiers

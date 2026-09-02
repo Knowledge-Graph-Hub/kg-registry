@@ -894,9 +894,7 @@ products:
     source: gwascatalog
   - relation_type: prov:wasInformedBy
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
+  warnings: []
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated

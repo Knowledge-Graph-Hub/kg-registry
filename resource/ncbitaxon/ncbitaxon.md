@@ -58,11 +58,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
-    to URL'
+  warnings: []
 - category: OntologyProduct
   description: taxslim
   format: owl
@@ -843,8 +839,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
