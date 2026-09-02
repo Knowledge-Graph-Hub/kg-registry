@@ -260,3 +260,26 @@ def test_transform_obo_namespaces_product_ids_under_the_ontology(tmp_path):
     ]
     for product in resource["products"]:
         assert resource_owns_product("hancestro", product["id"])
+
+
+def test_merge_resource_metadata_keeps_curated_license_label_for_same_url(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    curated = {
+        "id": "https://hpo.jax.org/app/license",
+        "label": "HPO License (free with attribution; content may not be altered)",
+    }
+    synced_same = {"id": "https://hpo.jax.org/app/license", "label": "hpo"}
+    synced_moved = {"id": "https://example.org/new-license", "label": "hpo"}
+
+    kept = syncer.merge_resource_metadata(
+        {"id": "hp", "license": curated}, {"id": "hp", "license": synced_same}
+    )
+    assert kept["license"] == curated
+
+    replaced = syncer.merge_resource_metadata(
+        {"id": "hp", "license": curated}, {"id": "hp", "license": synced_moved}
+    )
+    assert replaced["license"] == synced_moved
+
+    filled = syncer.merge_resource_metadata({"id": "hp"}, {"id": "hp", "license": synced_same})
+    assert filled["license"] == synced_same
