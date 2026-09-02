@@ -5,31 +5,31 @@ contacts:
 - category: Organization
   contact_details:
   - contact_type: url
-    value: https://cpicpgx.org/contact/
+    value: https://www.clinpgx.org/cpic#contact
   - contact_type: email
     value: contact@cpicpgx.org
   label: Clinical Pharmacogenetics Implementation Consortium (CPIC)
 creation_date: '2025-09-03T00:00:00Z'
-description: "The Clinical Pharmacogenetics Implementation Consortium (CPIC) creates,\
-  \ curates, and disseminates freely available, peer-reviewed, evidence-based, and\
-  \ updatable clinical practice guidelines that translate patient pharmacogenetic\
-  \ test results into actionable prescribing decisions. CPIC also publishes structured\
-  \ gene\u2013drug annotations, allele function data, standardized terminology resources,\
-  \ and implementation tools (database, API, SOPs, educational materials) to accelerate\
-  \ pharmacogenomics in clinical care."
+description: The Clinical Pharmacogenetics Implementation Consortium (CPIC) creates,
+  curates, and disseminates freely available, peer-reviewed, evidence-based, and updatable
+  clinical practice guidelines that translate patient pharmacogenetic test results
+  into actionable prescribing decisions. CPIC also publishes structured gene-drug
+  annotations, allele function data, standardized terminology resources, and implementation
+  tools (database, API, SOPs, educational materials). Since 2025-07-30 CPIC content
+  is hosted within ClinPGx (registry id clinpgx) and cpicpgx.org pages redirect there;
+  the CPIC name and guidelines continue under ClinPGx.
 domains:
 - biomedical
 - clinical
 - drug discovery
-homepage_url: https://cpicpgx.org/
+homepage_url: https://www.clinpgx.org/cpic
 id: cpic
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 name: CPIC
-repository: https://github.com/cpicpgx/cpic-data
 products:
 - category: GraphicalInterface
   description: Main CPIC website portal providing access to guidelines, genes-drugs
@@ -40,7 +40,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://cpicpgx.org/
+  product_url: https://www.clinpgx.org/cpic
 - category: DocumentationProduct
   description: Peer-reviewed, evidence-based, updatable pharmacogenetic clinical practice
     guidelines translating genotype into prescribing recommendations
@@ -51,7 +51,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://cpicpgx.org/guidelines/
+  product_url: https://www.clinpgx.org/cpic/guidelines
 - category: Product
   description: "Curated gene\u2013drug pair tables linking pharmacogenes with affected\
     \ medications and guideline recommendations"
@@ -62,7 +62,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://cpicpgx.org/genes-drugs/
+  product_url: https://www.clinpgx.org/cpic/pairs
 - category: Product
   description: Allele function and diplotype-to-phenotype tables standardized for
     clinical pharmacogenetic test result interpretation
@@ -73,11 +73,11 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://cpicpgx.org/alleles/
+  product_url: https://www.clinpgx.org/page/cpicResources#guideline-alleles
 - category: ProgrammingInterface
+  connection_url: https://api.cpicpgx.org/
   description: "Structured data (database and API) for CPIC guideline-derived gene\u2013\
     drug relationships, allele function, and standardized terms"
-  connection_url: https://api.cpicpgx.org/
   format: json
   id: cpic.api
   is_public: true
@@ -85,7 +85,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://cpicpgx.org/api-and-database/
+  product_url: https://www.clinpgx.org/page/cpicResources#database-and-api
 - category: DocumentationProduct
   description: Standard operating procedure PDF for assigning allele function and
     translating diplotypes to phenotypes
@@ -128,7 +128,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://cpicpgx.org/resources/term-standardization
+  product_url: https://www.clinpgx.org/page/cpicTermStandardization
 - category: DocumentationProduct
   description: CYP2D6 genotype to phenotype translation project resources
   format: http
@@ -137,7 +137,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://cpicpgx.org/resources/cyp2d6-genotype-to-phenotype-standardization-project/
+  product_url: https://www.clinpgx.org/page/cpicCyp2d6Standardization
 - category: GraphProduct
   description: Integrated graph knowledge base combining Mendelian randomization causal
     estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
@@ -181,10 +181,34 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: https://docs.epigraphdb.org/graph-database/
+- category: GraphicalInterface
+  description: ClinPGx web portal for browsing genes, variants, drugs, clinical annotations,
+    drug labels, pathways and CPIC guidelines, integrating PharmGKB and CPIC content
+  id: clinpgx.portal
+  is_public: true
+  name: ClinPGx Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: cpic
+  product_url: https://www.clinpgx.org/
+repository: https://github.com/cpicpgx/cpic-data
 taxon:
 - NCBITaxon:9606
 ---
 ## Overview
+
+Since 2025-07-30 CPIC is delivered through [ClinPGx](clinpgx), which unifies PharmGKB,
+CPIC and PharmCAT. The standalone cpicpgx.org site redirects into the CPIC section of
+ClinPGx and is stated to be retiring. Product URLs on this page were repointed to their
+ClinPGx targets on 2026-09-02, following the redirects the CPIC site issues. Three files
+remain on CPIC hosts with no redirect and no known ClinPGx copy: the API at
+api.cpicpgx.org, the overview slides on files.cpicpgx.org and the one-pager under
+cpicpgx.org/wp-content. They answered normally on 2026-09-02 and will need repointing
+when those hosts retire.
 
 The Clinical Pharmacogenetics Implementation Consortium (CPIC) facilitates the integration of pharmacogenetic test results into routine clinical care. CPIC develops and maintains evidence-based guidelines that translate patient genotype (or predicted phenotype) into prescribing recommendations, removing implementation barriers and standardizing clinical decision support for pharmacogenomics (PGx).
 
@@ -207,4 +231,4 @@ Caudle KE, Klein TE, Whirl-Carrillo M, et al. (CPIC® guideline citation – see
 
 ## Contact
 
-General inquiries: contact@cpicpgx.org. Additional forms and subscription options are available on the contact page for allele function questions, announcements, and discussion list enrollment.
+General inquiries: contact@cpicpgx.org (not re-verified since the ClinPGx move; feedback@clinpgx.org is the ClinPGx address). Additional forms and subscription options are available on the ClinPGx CPIC contact section for allele function questions, announcements, and discussion list enrollment.

@@ -9,6 +9,6 @@ name: CPIC Genes-Drugs Tables
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cpic
-product_url: https://cpicpgx.org/genes-drugs/
+product_url: https://www.clinpgx.org/cpic/pairs
 layout: product_detail
 ---

@@ -1,18 +1,22 @@
 ---
-activity_status: active
+activity_status: inactive
 category: Resource
 contacts:
 - category: Organization
   contact_details:
   - contact_type: email
     value: feedback@pharmgkb.org
+  - contact_type: email
+    value: feedback@clinpgx.org
   label: PharmGKB
 creation_date: '2025-05-01T00:00:00Z'
-description: PharmGKB collects, curates and disseminates knowledge about clinically
-  actionable gene-drug associations and genotype-phenotype relationships. As of 2025-07-30
-  PharmGKB is delivered through ClinPGx, which unifies PharmGKB, CPIC and PharmCAT;
-  pharmgkb.org URLs now redirect to their clinpgx.org equivalents and downloads are
-  served from api.clinpgx.org.
+description: PharmGKB collected, curated and disseminated knowledge about clinically
+  actionable gene-drug associations and genotype-phenotype relationships. On 2025-07-30
+  PharmGKB was succeeded by ClinPGx (registry id clinpgx), which unifies PharmGKB,
+  CPIC and PharmCAT; pharmgkb.org URLs redirect to their clinpgx.org equivalents and
+  the downloads listed here are served from api.clinpgx.org. This page is kept because
+  many registry resources cite pharmgkb as a provenance source. Use clinpgx for the
+  current resource.
 domains:
 - biomedical
 - chemistry and biochemistry
@@ -22,7 +26,7 @@ domains:
 homepage_url: https://www.clinpgx.org/
 id: pharmgkb
 infores_id: pharmgkb
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -2215,6 +2219,32 @@ products:
     source: wikidata
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- category: GraphicalInterface
+  description: ClinPGx web portal for browsing genes, variants, drugs, clinical annotations,
+    drug labels, pathways and CPIC guidelines, integrating PharmGKB and CPIC content
+  id: clinpgx.portal
+  is_public: true
+  name: ClinPGx Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: cpic
+  product_url: https://www.clinpgx.org/
+- category: DocumentationProduct
+  description: Downloads page listing the bulk data files (formerly the PharmGKB downloads),
+    with data usage policy and file descriptions
+  id: clinpgx.downloads
+  is_public: true
+  name: ClinPGx Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  product_url: https://www.clinpgx.org/downloads
 publications:
 - authors:
   - Whirl-Carrillo M
@@ -2234,12 +2264,25 @@ publications:
 repository: https://www.clinpgx.org/downloads
 taxon:
 - NCBITaxon:9606
+use_instead:
+- clinpgx
 ---
-PharmGKB is a pharmacogenomics knowledge resource covering clinically actionable
+PharmGKB was a pharmacogenomics knowledge resource covering clinically actionable
 gene-drug associations and genotype-phenotype relationships.
 
-PharmGKB is now delivered through [ClinPGx](https://www.clinpgx.org/), which brings
-PharmGKB together with CPIC and PharmCAT under one resource. Since 2025-07-30 all
-pharmgkb.org links redirect to their ClinPGx equivalents, and the bulk download files
-listed here are served from `api.clinpgx.org` on the same paths they previously used
-on `api.pharmgkb.org`, which no longer resolves.
+## Redirect notice
+
+PharmGKB is now [ClinPGx](clinpgx). ClinPGx brings PharmGKB together with CPIC and
+PharmCAT under one resource. Since 2025-07-30 all pharmgkb.org links redirect to their
+ClinPGx equivalents, and the bulk download files listed here are served from
+`api.clinpgx.org` on the same paths they previously used on `api.pharmgkb.org`, which
+no longer resolves. The feedback address is now feedback@clinpgx.org.
+
+This page is kept on purpose. Many resources in this registry name `pharmgkb` as a
+provenance source, and downstream consumers may still refer to PharmGKB rather than to
+ClinPGx. The `pharmgkb` identifier therefore stays stable, the page is marked inactive,
+and `use_instead` points to `clinpgx`. The download products remain listed here because
+they are the same files under the same paths.
+
+The INFORES catalog had no ClinPGx identifier as of 2026-09-02, so `infores_id`
+remains `pharmgkb`. That is deliberate.

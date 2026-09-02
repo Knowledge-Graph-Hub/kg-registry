@@ -7,6 +7,6 @@ name: CPIC CYP2D6 Genotype to Phenotype Project
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cpic
-product_url: https://cpicpgx.org/resources/cyp2d6-genotype-to-phenotype-standardization-project/
+product_url: https://www.clinpgx.org/page/cpicCyp2d6Standardization
 layout: product_detail
 ---

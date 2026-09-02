@@ -9,6 +9,6 @@ name: CPIC Allele & Diplotype Function Tables
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cpic
-product_url: https://cpicpgx.org/alleles/
+product_url: https://www.clinpgx.org/page/cpicResources#guideline-alleles
 layout: product_detail
 ---
