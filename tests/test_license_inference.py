@@ -5,6 +5,7 @@ import yaml
 
 from util.license_inference import (
     STATUS_INFERRED,
+    STATUS_PROVIDED,
     TIERS,
     LicenseIndex,
     apply_inferred_licenses,
@@ -385,3 +386,19 @@ def test_apply_removes_inferred_block_when_sources_no_longer_resolve(tmp_path):
     assert summary["written"] == ["kg"]
     assert "license" not in kg
     assert "license" not in frontmatter.load(str(page)).metadata
+
+
+def test_code_constants_match_schema_enums():
+    # The values written to pages are plain strings. The schema validates them
+    # against these enums, so the two lists must not drift apart.
+    from pathlib import Path
+
+    schema = yaml.safe_load(
+        Path("src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml").read_text()
+    )
+    enums = schema["enums"]
+    assert list(enums["LicenseRestrictivenessEnum"]["permissible_values"]) == list(TIERS)
+    assert list(enums["LicenseStatusEnum"]["permissible_values"]) == [
+        STATUS_PROVIDED,
+        STATUS_INFERRED,
+    ]
