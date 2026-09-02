@@ -411,6 +411,24 @@ quality-dashboard: $(RESOURCES) util/generate-quality-dashboard.py util/referenc
 $(QUALITY_DASHBOARD_JSON): quality-dashboard
 	@:
 
+#########################
+## License Inheritance ##
+#########################
+
+# Infer licenses for KnowledgeGraph and Aggregator resources that declare none,
+# from the most restrictive license among their upstream sources.
+# This also runs as part of the concat step, so `make` keeps it current.
+.PHONY: infer-licenses infer-licenses-dry-run license-report
+
+infer-licenses:
+	$(RUN) python util/infer_licenses.py
+
+infer-licenses-dry-run:
+	$(RUN) python util/infer_licenses.py --dry-run
+
+license-report: | reports
+	$(RUN) python util/infer_licenses.py --dry-run --report reports/license-inference.tsv
+
 # Generate schema documentation
 # and add the frontmatter to each page
 schema-docs:
