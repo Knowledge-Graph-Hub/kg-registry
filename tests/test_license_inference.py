@@ -422,3 +422,29 @@ def test_code_constants_match_schema_enums():
         STATUS_PROVIDED,
         STATUS_INFERRED,
     ]
+
+
+def test_apply_fills_an_empty_license_block_and_reports_refusals(tmp_path, capsys):
+    empty = _resource(
+        "empty", category="KnowledgeGraph", products=[_product("empty.graph", ["src"])]
+    )
+    missing = _resource(
+        "missing", category="KnowledgeGraph", products=[_product("missing.graph", ["src"])]
+    )
+    objs = [_resource("src", license=CC_BY_NC), empty, missing]
+    page = _write_page(tmp_path, empty)
+    # A bare key with nothing under it, as a hand-written page may carry.
+    page.write_text(
+        page.read_text(encoding="utf-8").replace("id: empty\n", "id: empty\nlicense:\n")
+    )
+    # "missing" has no page at all.
+
+    summary = apply_inferred_licenses(objs, write=True, resource_dir=tmp_path / "resource")
+
+    assert frontmatter.load(str(page)).metadata["license"]["status"] == STATUS_INFERRED
+    assert summary["written"] == ["empty"]
+    assert summary["refused"] == ["missing"]
+    assert summary["inferred"] == ["empty"]
+    # The export never shows a license the page does not carry.
+    assert "license" not in missing
+    assert "not written" in capsys.readouterr().out

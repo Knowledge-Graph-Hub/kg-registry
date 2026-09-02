@@ -92,6 +92,10 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  {tier:16s} {tier_counts[tier]}")
     print(f"Inferred licenses set: {len(summary['inferred'])}")
     print(f"Stale inferred licenses removed: {len(summary['removed'])}")
+    if summary["refused"]:
+        print(f"Pages that could not take an inferred license: {len(summary['refused'])}")
+        for resource_id in summary["refused"]:
+            print(f"  {resource_id}")
     if args.dry_run:
         changed = [row["resource_id"] for row in rows if row["status"] in ("inferred",)]
         print(f"Dry run: {len(changed)} page(s) would carry an inferred license")

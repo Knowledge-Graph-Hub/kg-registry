@@ -1507,7 +1507,8 @@ def concat_resource_yaml(args):
     print(
         f"Inferred licenses for {len(license_summary['inferred'])} resource(s) from their sources; "
         f"{len(license_summary['unresolved'])} inheriting resource(s) have no license anywhere upstream; "
-        f"{len(license_summary['written'])} page(s) updated"
+        f"{len(license_summary['written'])} page(s) updated; "
+        f"{len(license_summary['refused'])} page(s) refused (see warnings above)"
     )
 
     # Add logos to licenses

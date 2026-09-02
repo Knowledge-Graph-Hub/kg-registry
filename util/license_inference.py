@@ -73,6 +73,7 @@ __all__ = [
     "LicenseIndex",
     "infer_license",
     "apply_inferred_licenses",
+    "LicenseWriteRefused",
     "write_report",
 ]
 
@@ -585,9 +586,14 @@ def apply_inferred_licenses(
     resource that has since gained a provided license simply keeps it; the
     inferred block is gone because the curator replaced it.
 
+    A page that cannot take the block (missing, no front matter, or a
+    ``license`` the writer must not touch) is reported under ``refused`` with
+    a warning, and the inferred license is dropped from the object so the
+    registry export never shows a license the page does not carry.
+
     Returns a summary with ``inferred``, ``removed``, ``unresolved`` (IDs that
-    inherit but resolved nothing), ``placeholder``, ``written`` and a ``rows``
-    list suitable for :func:`write_report`.
+    inherit but resolved nothing), ``placeholder``, ``written``, ``refused``
+    and a ``rows`` list suitable for :func:`write_report`.
     """
     index = LicenseIndex(objs)
     wanted = set(only_ids) if only_ids is not None else None
@@ -597,6 +603,7 @@ def apply_inferred_licenses(
         "unresolved": [],
         "placeholder": [],
         "written": [],
+        "refused": [],
         "rows": [],
     }
 
@@ -634,8 +641,17 @@ def apply_inferred_licenses(
             summary["inferred"].append(resource_id)
 
         if write and previous != inferred:
-            if _write_inferred_license(resource_dir, resource_id, inferred):
-                summary["written"].append(resource_id)
+            try:
+                if _write_inferred_license(resource_dir, resource_id, inferred):
+                    summary["written"].append(resource_id)
+            except LicenseWriteRefused as refusal:
+                # Keep the export honest: a license the page does not carry
+                # must not appear in the registry either.
+                print(f"WARN: inferred license for {resource_id} not written: {refusal}")
+                if inferred is not None:
+                    obj.pop("license", None)
+                    summary["inferred"].remove(resource_id)
+                summary["refused"].append(resource_id)
 
     return summary
 
@@ -650,6 +666,28 @@ def _plain(value: Any) -> Any:
 
 
 _TOP_LEVEL_KEY = re.compile(r"^([A-Za-z0-9_]+):")
+
+
+class LicenseWriteRefused(RuntimeError):
+    """The page could not take an inferred license without harming what is there."""
+
+
+def _block_is_replaceable(block: list[str]) -> bool:
+    """A license block may be replaced if it is inferred or holds nothing.
+
+    A bare ``license:`` line, or one whose value parses to null or an empty
+    mapping, is not a provided license. Anything else that lacks
+    ``status: inferred`` belongs to the curator.
+    """
+    import yaml
+
+    if any(line.strip() == f"status: {STATUS_INFERRED}" for line in block):
+        return True
+    try:
+        parsed = yaml.safe_load("\n".join(block))
+    except yaml.YAMLError:
+        return False
+    return not (isinstance(parsed, dict) and parsed.get("license"))
 
 
 def _write_inferred_license(
@@ -667,14 +705,14 @@ def _write_inferred_license(
 
     fn = resource_dir / resource_id / f"{resource_id}.md"
     if not fn.exists():
-        return False
+        raise LicenseWriteRefused(f"{fn} does not exist (is the working directory the repo root?)")
     text = fn.read_text(encoding="utf-8")
     lines = text.split("\n")
     if not lines or lines[0].strip() != "---":
-        return False
+        raise LicenseWriteRefused(f"{fn} has no front matter")
     close = next((i for i in range(1, len(lines)) if lines[i].strip() == "---"), None)
     if close is None:
-        return False
+        raise LicenseWriteRefused(f"{fn} has no closing front matter delimiter")
     front = lines[1:close]
 
     start = next((i for i, line in enumerate(front) if line.startswith("license:")), None)
@@ -685,8 +723,10 @@ def _write_inferred_license(
             len(front),
         )
     existing = front[start:stop] if start is not None else []
-    if existing and not any(line.strip() == f"status: {STATUS_INFERRED}" for line in existing):
-        return False  # a provided (or placeholder) license; never overwrite
+    if existing and not _block_is_replaceable(existing):
+        raise LicenseWriteRefused(
+            f"{fn} already carries a license that is not marked status: {STATUS_INFERRED}"
+        )
 
     new_block: list[str] = []
     if value is not None:
