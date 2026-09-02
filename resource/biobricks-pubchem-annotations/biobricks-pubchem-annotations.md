@@ -23,6 +23,14 @@ domains:
 homepage_url: https://github.com/biobricks-ai/pubchem-annotations-kg
 id: biobricks-pubchem-annotations
 layout: resource_detail
+license:
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+  inferred_from:
+  - pubchem
+  label: Public Domain
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: BioBricks PubChem Annotations
 products:
 - category: ProgrammingInterface

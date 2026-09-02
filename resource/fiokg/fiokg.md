@@ -18,6 +18,15 @@ domains:
 homepage_url: https://sawgraph.github.io/
 id: fiokg
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - epa-frs
+  - sawgraph
+  label: US federal government public domain
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: SAWGraph FRS KG
 products:
 - category: ProgrammingInterface

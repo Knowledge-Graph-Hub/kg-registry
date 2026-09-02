@@ -20,6 +20,14 @@ id: aact
 infores_id: aact
 last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://clinicaltrials.gov/about-site/terms-conditions
+  inferred_from:
+  - clinicaltrialsgov
+  label: Public Domain
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: Aggregate Analysis of ClinicalTrials.gov (AACT) Database
 products:
 - category: GraphicalInterface

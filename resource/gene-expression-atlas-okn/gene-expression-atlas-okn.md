@@ -1,5 +1,13 @@
 ---
 id: gene-expression-atlas-okn
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  inferred_from:
+  - expression-atlas
+  label: CC BY 4.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: Gene Expression Atlas
 description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
 activity_status: active

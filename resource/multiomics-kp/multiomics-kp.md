@@ -15,6 +15,17 @@ homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-
 id: multiomics-kp
 last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.gtexportal.org/home/license
+  inferred_from:
+  - gtex
+  label: GTEx Portal Data License
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - dailymed
+  - faers
+  - tcga
 name: Multiomics KP
 products:
   - category: DocumentationProduct

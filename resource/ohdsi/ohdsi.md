@@ -20,6 +20,14 @@ homepage_url: https://www.ohdsi.org/
 id: ohdsi
 last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://loinc.org/license/
+  inferred_from:
+  - athena
+  label: LOINC License (free registration required)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: OHDSI
 products:
   - category: GraphicalInterface

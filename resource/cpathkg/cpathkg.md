@@ -19,6 +19,15 @@ domains:
 homepage_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
 id: cpathkg
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  inferred_from:
+  - biolink
+  - kg-monarch
+  label: CC0 1.0
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: C-Path Knowledge Graph
 repository: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
 products:

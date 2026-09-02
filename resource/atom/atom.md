@@ -18,6 +18,14 @@ homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
 id: atom
 last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+  inferred_from:
+  - pubmed
+  label: Public Domain (U.S. Government)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: ATOM
 products:
   - category: GraphProduct

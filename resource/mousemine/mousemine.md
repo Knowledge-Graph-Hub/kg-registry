@@ -13,6 +13,14 @@ id: mousemine
 infores_id: mousemine
 last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  inferred_from:
+  - mgi
+  label: CC-BY-4.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: MouseMine
 homepage_url: https://www.mousemine.org/mousemine/begin.do
 taxon:

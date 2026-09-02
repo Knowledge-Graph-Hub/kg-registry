@@ -23,6 +23,16 @@ id: microbiomekg
 infores_id: multiomics-microbiome
 last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://go.drugbank.com/legal/terms_of_use
+  inferred_from:
+  - drugbank
+  label: Custom (free for academic research with license)
+  restrictiveness: non-commercial
+  status: inferred
+  unresolved_sources:
+  - eupathdb
+  - panther
 name: MicrobiomeKG
 products:
   - category: ProgrammingInterface

@@ -14,6 +14,14 @@ homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SRI-Ontolog
 id: ontology-kp
 last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  inferred_from:
+  - ubergraph
+  label: CC BY 4.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: Ontology KP
 products:
 - category: DocumentationProduct

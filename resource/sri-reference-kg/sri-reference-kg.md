@@ -19,6 +19,25 @@ homepage_url: https://monarchinitiative.org/kg/about
 id: sri-reference-kg
 infores_id: sri-reference-kg
 layout: resource_detail
+license:
+  id: https://www.alliancegenome.org/privacy-warranty-licensing
+  inferred_from:
+  - alliance
+  - ctd
+  - goa
+  - omim
+  - xenbase
+  label: Alliance Data Licensing & Privacy
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - cureid
+  - decipher
+  - dictybase
+  - icd11
+  - mmrrc
+  - panther
+  - rgd
 name: SRI-Reference KG
 products:
   - category: ProgrammingInterface

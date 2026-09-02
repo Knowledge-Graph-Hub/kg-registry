@@ -24,6 +24,19 @@ homepage_url: https://sawgraph.github.io/
 id: sawgraph
 last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - epa-frs
+  - epa-ghg
+  - epa-sdwis
+  - epa-ucmr
+  - maine-egad
+  - water-quality-portal
+  label: US federal government public domain
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: SAWGraph PFAS KG
 products:
 - category: ProgrammingInterface

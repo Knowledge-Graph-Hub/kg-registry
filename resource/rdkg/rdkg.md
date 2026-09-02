@@ -1,5 +1,14 @@
 ---
 id: rdkg
+license:
+  id: https://www.omim.org/help/agreement
+  inferred_from:
+  - omim
+  - umls
+  label: OMIM Use Agreement (research/educational use; license required for commercial/redistribution)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: Rare Disease Knowledge Graph
 description: RDKG is an open knowledge graph for rare diseases that integrates standardized
   disease identifiers and cross-references to support discovery and evidence synthesis.

@@ -20,6 +20,15 @@ homepage_url: https://github.com/biothings/pending.api/tree/translator-output/pl
 id: kg-jensenlab-diseases
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://cancer.sanger.ac.uk/cosmic/license
+  inferred_from:
+  - cosmic
+  label: COSMIC License
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - medlineplus
 name: JensenLab DISEASES KG
 products:
 - category: DocumentationProduct

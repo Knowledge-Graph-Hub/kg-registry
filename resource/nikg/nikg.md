@@ -16,6 +16,14 @@ domains:
 homepage_url: https://frink.renci.org/registry/kgs/neighborhood-kg/
 id: nikg
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - us-census
+  label: U.S. Government Work (public domain)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: Neighborhood Information KG
 products:
 - category: ProgrammingInterface

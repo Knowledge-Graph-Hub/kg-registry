@@ -28,6 +28,14 @@ homepage_url: https://ufokn.com
 id: uf-okn
 last_modified_date: '2026-07-03T00:00:00Z'
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - openstreetmap
+  label: Open Database License (ODbL) 1.0
+  restrictiveness: copyleft
+  status: inferred
+  unresolved_sources: []
 name: UF-OKN
 products:
 - category: GraphProduct

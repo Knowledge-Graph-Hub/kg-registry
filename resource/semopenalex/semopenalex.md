@@ -15,6 +15,14 @@ domains:
 homepage_url: https://semopenalex.org/
 id: semopenalex
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  inferred_from:
+  - openalex
+  label: CC0 1.0
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: SemOpenAlex
 products:
 - category: ProgrammingInterface

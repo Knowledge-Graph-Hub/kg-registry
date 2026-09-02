@@ -23,6 +23,15 @@ homepage_url: http://pitools.niper.ac.in/medkg/
 id: medkg
 last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.omim.org/help/agreement
+  inferred_from:
+  - omim
+  - snomedct
+  label: OMIM Use Agreement (research/educational use; license required for commercial/redistribution)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: MedKG
 products:
 - category: GraphicalInterface

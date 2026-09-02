@@ -24,6 +24,17 @@ domains:
 homepage_url: https://frink.renci.org/registry/kgs/rural-kg/
 id: ruralkg
 layout: resource_detail
+license:
+  id: https://www.usa.gov/government-works
+  inferred_from:
+  - national-directory-mental-health-facilities
+  - nibrs
+  - nsduh
+  - rural-urban-continuum-codes
+  label: U.S. Government Work (public domain)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: Rural Resilience KG
 products:
 - category: ProgrammingInterface

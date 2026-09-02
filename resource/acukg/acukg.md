@@ -17,6 +17,14 @@ homepage_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-ac
 id: acukg
 last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.snomed.org/snomed-ct/get-snomed
+  inferred_from:
+  - snomedct
+  label: SNOMED CT Affiliate License
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: AcuKG
 products:
   - category: GraphProduct

@@ -19,6 +19,14 @@ homepage_url: https://pubmedkg.github.io/
 id: pubmed-knowledge-graph
 last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+  inferred_from:
+  - pubmed
+  label: Public Domain (U.S. Government)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: PubMed Knowledge Graph
 products:
 - category: GraphicalInterface

@@ -23,6 +23,14 @@ domains:
 homepage_url: https://github.com/biobricks-ai/biobricks-okg
 id: biobricks-toxcast
 layout: resource_detail
+license:
+  id: https://www.epa.gov/privacy/privacy-and-security-notice
+  inferred_from:
+  - toxcast
+  label: EPA Data Usage & Privacy Notice (public domain / open government data)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: BioBricks ToxCast
 products:
 - category: ProgrammingInterface

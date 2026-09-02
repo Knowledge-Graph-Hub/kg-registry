@@ -22,6 +22,14 @@ id: gtrx
 infores_id: gtrx
 last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/licenses/Apache-2.0
+  inferred_from:
+  - biothings
+  label: Apache-2.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: Genome-to-Treatment
 products:
 - category: ProgrammingInterface

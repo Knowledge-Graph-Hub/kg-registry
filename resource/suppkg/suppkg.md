@@ -17,6 +17,15 @@ id: suppkg
 infores_id: suppkg
 last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  inferred_from:
+  - chebi
+  - uniprot
+  label: CC BY 4.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: SuppKG
 publications:
   - id: doi:10.1016/j.jbi.2022.104120

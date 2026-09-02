@@ -27,6 +27,18 @@ homepage_url: https://research.bioinformatics.udel.edu/ProKN/
 id: prokn
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.gsea-msigdb.org/gsea/license_terms_list.jsp
+  inferred_from:
+  - gtex
+  - msigdb
+  - pir
+  label: GSEA/MSigDB License Terms
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - impc
+  - lincs
 name: Protein Knowledge Network
 products:
 - category: GraphProduct

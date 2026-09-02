@@ -14,6 +14,20 @@ homepage_url: https://forum-webapp.semantic-metabolomics.fr/
 id: forum
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  inferred_from:
+  - chebi
+  - dc
+  - mesh
+  - skos
+  label: CC BY 4.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources:
+  - chemont
+  - cito
+  - fabio
 name: FORUM
 products:
 - category: GraphicalInterface

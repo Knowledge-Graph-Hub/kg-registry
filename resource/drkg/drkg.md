@@ -18,6 +18,14 @@ homepage_url: https://github.com/gnn4dr/DRKG
 id: drkg
 last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://go.drugbank.com/legal/terms_of_use
+  inferred_from:
+  - drugbank
+  label: Custom (free for academic research with license)
+  restrictiveness: non-commercial
+  status: inferred
+  unresolved_sources: []
 name: Drug Repurposing Knowledge Graph
 products:
 - category: GraphProduct

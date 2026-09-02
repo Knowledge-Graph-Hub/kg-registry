@@ -14,6 +14,15 @@ id: irefindex
 infores_id: irefindex
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://dip.doe-mbi.ucla.edu/dip/Download.cgi
+  inferred_from:
+  - dip
+  label: DIP Terms of Use
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - bind
 name: iRefIndex
 products:
 - category: Product

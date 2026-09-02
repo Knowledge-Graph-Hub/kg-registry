@@ -18,6 +18,14 @@ homepage_url: https://www.dbpedia.org/
 id: dbpedia
 last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by-sa/4.0/
+  inferred_from:
+  - wikipedia
+  label: CC-BY-SA-4.0
+  restrictiveness: copyleft
+  status: inferred
+  unresolved_sources: []
 name: DBpedia
 products:
 - category: GraphicalInterface

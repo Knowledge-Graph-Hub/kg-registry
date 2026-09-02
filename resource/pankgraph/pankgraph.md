@@ -1,5 +1,16 @@
 ---
 id: pankgraph
+license:
+  id: https://opensource.org/licenses/MIT
+  inferred_from:
+  - pankbase
+  label: MIT License
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources:
+  - hpap
+  - iidp
+  - prodo
 name: PanKgraph
 description: PanKgraph — PanKbase Knowledge Graph (NIDDK)
 activity_status: active

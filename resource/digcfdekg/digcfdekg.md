@@ -1,5 +1,18 @@
 ---
 id: digcfdekg
+license:
+  id: https://www.gtexportal.org/home/license
+  inferred_from:
+  - gtex
+  label: GTEx Portal Data License
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - bridge2ai
+  - impc
+  - lincs
+  - mw
+  - sennet
 name: CFDE REVEAL Knowledge Graph
 description: The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence
   graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem
