@@ -24,11 +24,10 @@ id: medkg
 last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://www.omim.org/help/agreement
+  id: https://www.snomed.org/snomed-ct/get-snomed
   inferred_from:
-  - omim
   - snomedct
-  label: OMIM Use Agreement (research/educational use; license required for commercial/redistribution)
+  label: SNOMED CT Affiliate License
   restrictiveness: custom
   status: inferred
   unresolved_sources: []

@@ -17,7 +17,6 @@ license:
   inferred_from:
   - ctd
   - dip
-  - omim
   label: Custom
   restrictiveness: custom
   status: inferred

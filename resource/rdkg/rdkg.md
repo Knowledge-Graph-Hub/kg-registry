@@ -1,11 +1,10 @@
 ---
 id: rdkg
 license:
-  id: https://www.omim.org/help/agreement
+  id: https://uts.nlm.nih.gov/uts/
   inferred_from:
-  - omim
   - umls
-  label: OMIM Use Agreement (research/educational use; license required for commercial/redistribution)
+  label: UMLS License (free for individuals)
   restrictiveness: custom
   status: inferred
   unresolved_sources: []

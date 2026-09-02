@@ -20,7 +20,6 @@ license:
   inferred_from:
   - goa
   - gtex
-  - omim
   - umls
   label: EMBL-EBI Terms of Use
   restrictiveness: custom

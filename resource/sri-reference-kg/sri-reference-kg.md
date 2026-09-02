@@ -25,7 +25,6 @@ license:
   - alliance
   - ctd
   - goa
-  - omim
   - xenbase
   label: Alliance Data Licensing & Privacy
   restrictiveness: custom
