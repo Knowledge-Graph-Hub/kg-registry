@@ -426,13 +426,15 @@ class LicenseIndex:
 
     def resolve_source(
         self, source_id: str, visiting: frozenset[str]
-    ) -> tuple[Optional[Any], Optional[str]]:
-        """Return (license_obj, tier) for a source ID, or (None, None).
+    ) -> tuple[Optional[Any], Optional[str], bool]:
+        """Return (license_obj, tier, truncated) for a source ID.
 
         Resolution order: the product's own license, the owning resource's
         declared license, the most restrictive license among the resource's
         owned products, and finally the resource's own inferred license.
-        ``visiting`` guards against cycles in the provenance graph.
+        ``visiting`` guards against cycles in the provenance graph. When the
+        guard fires, ``truncated`` is True: the answer may have missed
+        sources and must not be cached.
         """
         resource_id = source_resource_id(source_id)
         if source_id != resource_id:
@@ -440,13 +442,13 @@ class LicenseIndex:
             if product is not None:
                 tier = classify_license(product.get("license"))
                 if tier is not None:
-                    return product.get("license"), tier
+                    return product.get("license"), tier, False
         resource = self.resources.get(resource_id)
         if resource is None:
-            return None, None
+            return None, None, False
         tier = classify_license(resource.get("license"))
         if tier is not None:
-            return resource.get("license"), tier
+            return resource.get("license"), tier, False
 
         best_license, best_tier = None, None
         products = resource.get("products")
@@ -465,29 +467,39 @@ class LicenseIndex:
                 ):
                     best_license, best_tier = product.get("license"), tier
         if best_tier is not None:
-            return best_license, best_tier
+            return best_license, best_tier, False
 
         if resource_id in visiting:
-            return None, None
-        inferred = self._infer(resource, visiting)
+            return None, None, True
+        inferred, truncated = self._infer(resource, visiting)
         if inferred is not None:
-            return {"id": inferred["id"], "label": inferred["label"]}, inferred["restrictiveness"]
-        return None, None
+            license_obj = {"id": inferred["id"], "label": inferred["label"]}
+            return license_obj, inferred["restrictiveness"], truncated
+        return None, None, truncated
 
     # -- whole-resource inference ------------------------------------------
 
     def _infer(
         self, resource: Mapping[str, Any], visiting: frozenset[str]
-    ) -> Optional[dict[str, Any]]:
+    ) -> tuple[Optional[dict[str, Any]], bool]:
+        """Infer for one resource. Returns (result, truncated).
+
+        ``truncated`` is True when some branch of the walk was cut by the
+        cycle guard. Such a result is right for the caller that asked but
+        may be incomplete for another root, so it is not memoized. Every
+        other result is cached, whatever depth it was reached at.
+        """
         resource_id = str(resource.get("id") or "").strip()
         if resource_id in self._inferred:
-            return self._inferred[resource_id]
+            return self._inferred[resource_id], False
         visiting = visiting | {resource_id}
 
         resolved: list[tuple[str, Any, str]] = []
         unresolved: list[str] = []
+        truncated = False
         for source_id in upstream_sources(resource):
-            license_obj, tier = self.resolve_source(source_id, visiting)
+            license_obj, tier, cut = self.resolve_source(source_id, visiting)
+            truncated = truncated or cut
             if tier is None:
                 unresolved.append(source_id)
             else:
@@ -508,11 +520,9 @@ class LicenseIndex:
                 "inferred_from": sorted(sid for sid, _ in winners),
                 "unresolved_sources": sorted(unresolved),
             }
-        # Memoize only complete answers: a cycle-truncated walk may have
-        # skipped sources that a later, differently-rooted walk can reach.
-        if not (visiting - {resource_id}):
+        if not truncated:
             self._inferred[resource_id] = result
-        return result
+        return result, truncated
 
     def infer(self, resource: Mapping[str, Any]) -> Optional[dict[str, Any]]:
         """Infer a license for a resource from its upstream sources.
@@ -522,7 +532,8 @@ class LicenseIndex:
         ``unresolved_sources`` (sources with no license anywhere), or None
         when no upstream license could be found at all.
         """
-        return self._infer(resource, frozenset())
+        result, _ = self._infer(resource, frozenset())
+        return result
 
 
 def _choose_license(licenses: Iterable[Any]) -> tuple[str, str]:

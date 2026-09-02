@@ -257,9 +257,10 @@ def test_inference_is_transitive_and_survives_cycles():
     assert top["inferred_from"] == ["mid"]
     mid = index.infer(resources[1])
     assert mid["restrictiveness"] == "custom"
-    # "top" sits in a cycle with "mid" and resolves through it; "leaf" is the real origin.
-    assert "leaf" in mid["inferred_from"]
-    assert mid["unresolved_sources"] == []
+    # "top" sits in a cycle with "mid". Its only license is the one it takes
+    # from "mid", so from "mid" it is unresolved, not a contributor.
+    assert mid["inferred_from"] == ["leaf"]
+    assert mid["unresolved_sources"] == ["top"]
     assert index.infer(resources[3]) is None
 
 
@@ -484,3 +485,34 @@ def test_indented_dashes_inside_a_scalar_are_not_the_front_matter_close(tmp_path
     assert rewritten.metadata["description"] == original.metadata["description"]
     assert rewritten.metadata["license"]["status"] == STATUS_INFERRED
     assert rewritten.content == original.content
+
+
+def test_nested_walks_are_memoized_and_cycles_are_not():
+    resources = [
+        _resource("leaf", license=CC_BY_NC),
+        _resource(
+            "shared", category="KnowledgeGraph", products=[_product("shared.graph", ["leaf"])]
+        ),
+        _resource("a", category="KnowledgeGraph", products=[_product("a.graph", ["shared"])]),
+        _resource("b", category="KnowledgeGraph", products=[_product("b.graph", ["shared"])]),
+        _resource("x", category="KnowledgeGraph", products=[_product("x.graph", ["y"])]),
+        _resource("y", category="KnowledgeGraph", products=[_product("y.graph", ["x", "leaf"])]),
+    ]
+    index = LicenseIndex(resources)
+    computed = []
+    original = index._infer
+
+    def counting(resource, visiting):
+        if resource["id"] not in index._inferred:
+            computed.append(resource["id"])
+        return original(resource, visiting)
+
+    index._infer = counting
+    assert index.infer(resources[2])["restrictiveness"] == "non-commercial"
+    assert index.infer(resources[3])["restrictiveness"] == "non-commercial"
+    # "shared" was reached below a root and still computed only once.
+    assert computed.count("shared") == 1
+    # A walk cut by the cycle guard is right for its root but not cached.
+    assert index.infer(resources[4])["restrictiveness"] == "non-commercial"
+    assert "x" not in index._inferred
+    assert "y" not in index._inferred
