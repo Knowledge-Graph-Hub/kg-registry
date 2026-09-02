@@ -26,7 +26,7 @@ last_modified_date: '2025-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.bioontology.org/terms/
-  label: BioPortal Terms of Use (includes attribution & reuse conditions)
+  label: BioPortal Terms of Use (individual ontologies carry their own licenses)
 name: BioPortal
 products:
 - category: GraphicalInterface

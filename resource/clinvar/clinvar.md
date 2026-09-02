@@ -23,11 +23,11 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/clinvar/
 id: clinvar
 infores_id: clinvar
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
-  label: NCBI and NLM Data Usage Policies and Disclaimers
+  label: Public Domain (U.S. Government work; NCBI and NLM Data Usage Policies)
 name: ClinVar
 products:
 - category: Product
