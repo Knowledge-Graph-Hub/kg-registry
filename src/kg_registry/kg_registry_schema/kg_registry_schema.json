@@ -142,7 +142,7 @@
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License."
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -481,7 +481,7 @@
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License."
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -936,7 +936,7 @@
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License."
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -2115,7 +2115,7 @@
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License."
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -2258,6 +2258,16 @@
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
+                "inferred_from": {
+                    "description": "For an inferred license, the identifiers of the sources (resources or products) whose licenses sit at the chosen restrictiveness tier. Any one of them is enough to impose this license.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "label": {
                     "description": "The name of the license.",
                     "type": [
@@ -2287,6 +2297,24 @@
                         "null"
                     ]
                 },
+                "restrictiveness": {
+                    "$ref": "#/$defs/LicenseRestrictivenessEnum",
+                    "description": "Where this license sits on the restrictiveness ladder used to choose among source licenses. Set for inferred licenses."
+                },
+                "status": {
+                    "$ref": "#/$defs/LicenseStatusEnum",
+                    "description": "Whether the license was provided by the resource's curators or maintainers, or inferred by the build process from the licenses of the resource's upstream sources. If absent, the license is provided."
+                },
+                "unresolved_sources": {
+                    "description": "For an inferred license, the identifiers of sources for which no license could be found, either directly or through their own sources. The inferred license does not account for these.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
                     "items": {
@@ -2303,6 +2331,28 @@
             ],
             "title": "License",
             "type": "object"
+        },
+        "LicenseRestrictivenessEnum": {
+            "description": "A coarse ordering of licenses from least to most restrictive. It is used to choose which source license an aggregate resource inherits when it declares none of its own. Values are listed here from least to most restrictive.",
+            "enum": [
+                "public domain",
+                "permissive",
+                "copyleft",
+                "non-commercial",
+                "no derivatives",
+                "custom"
+            ],
+            "title": "LicenseRestrictivenessEnum",
+            "type": "string"
+        },
+        "LicenseStatusEnum": {
+            "description": "How a license came to be recorded on a resource.",
+            "enum": [
+                "provided",
+                "inferred"
+            ],
+            "title": "LicenseStatusEnum",
+            "type": "string"
         },
         "MappingProduct": {
             "additionalProperties": false,
@@ -2714,7 +2764,7 @@
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License."
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -4065,7 +4115,7 @@
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License."
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",

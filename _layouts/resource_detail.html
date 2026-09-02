@@ -173,7 +173,14 @@ layout: default
           <div class="card-body">
             <h5 class="card-title">License</h5>
             {% if page.license %}
-            <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
+            <p class="card-text">
+              {% if page.license.id and page.license.id != "" %}<a href="{{ page.license.id }}">{{ page.license.label }}</a>{% else %}{{ page.license.label }}{% endif %}
+              {% if page.license.status == "inferred" %}
+              {% comment %}Keep this wording in step with createLicenseBox in assets/js/custom.js.{% endcomment %}
+              {% capture inferred_tip %}No license is declared for this resource. This is the most restrictive license ({{ page.license.restrictiveness }}) among its sources: {{ page.license.inferred_from | join: ", " }}.{% if page.license.unresolved_sources and page.license.unresolved_sources.size > 0 %} Not accounted for, no known license: {{ page.license.unresolved_sources | join: ", " }}.{% endif %}{% endcapture %}
+              <span class="text-muted" style="cursor: help; border-bottom: 1px dotted;" title="{{ inferred_tip | strip | escape }}">(inferred)</span>
+              {% endif %}
+            </p>
             {% else %}
             <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
             {% endif %}

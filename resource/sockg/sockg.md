@@ -25,6 +25,14 @@ domains:
 homepage_url: https://idir.sockg.org/
 id: sockg
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - agcros
+  label: U.S. Government Work (public domain)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: SOC-KG
 products:
 - category: ProgrammingInterface

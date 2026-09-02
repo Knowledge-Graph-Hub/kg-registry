@@ -1,5 +1,13 @@
 ---
 id: rdkg
+license:
+  id: https://uts.nlm.nih.gov/uts/
+  inferred_from:
+  - umls
+  label: UMLS License (free for individuals)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: Rare Disease Knowledge Graph
 description: RDKG is an open knowledge graph for rare diseases that integrates standardized
   disease identifiers and cross-references to support discovery and evidence synthesis.

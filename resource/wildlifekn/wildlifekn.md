@@ -24,6 +24,17 @@ domains:
 homepage_url: https://sites.nd.edu/kn-wildlife/
 id: wildlifekn
 layout: resource_detail
+license:
+  id: https://www.cabidigitallibrary.org/terms-and-conditions
+  inferred_from:
+  - cabi-isc
+  label: CABI Digital Library Terms and Conditions (proprietary / subscription)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - edrr-invasive-catalog
+  - iucn-red-list
+  - worldclim
 name: Wildlife-KN
 products:
 - category: GraphicalInterface

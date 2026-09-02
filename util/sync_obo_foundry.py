@@ -695,10 +695,25 @@ class OBOFoundrySync:
             'activity_status',
             'category',
             'layout',
-            'license',
         ]:
             if synced_metadata.get(field):
                 merged[field] = copy.deepcopy(synced_metadata[field])
+
+        # A curated license label survives the sync. The OBO Foundry record
+        # only carries a short name (e.g. "hpo"), and curators refine that to
+        # say what the license page actually grants. Take the synced license
+        # when the page has none, or when the URL itself has changed upstream.
+        synced_license = synced_metadata.get('license')
+        if synced_license:
+            existing_license = existing_metadata.get('license')
+            same_url = (
+                isinstance(existing_license, dict)
+                and isinstance(synced_license, dict)
+                and existing_license.get('id')
+                and existing_license.get('id') == synced_license.get('id')
+            )
+            if not same_url:
+                merged['license'] = copy.deepcopy(synced_license)
 
         for field in ['domains', 'tags', 'taxon', 'collection']:
             merged_values = self._merge_unique_lists(

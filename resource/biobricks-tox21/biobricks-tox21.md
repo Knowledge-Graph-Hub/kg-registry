@@ -23,6 +23,14 @@ domains:
 homepage_url: https://github.com/biobricks-ai/biobricks-okg
 id: biobricks-tox21
 layout: resource_detail
+license:
+  id: https://www.usa.gov/government-works
+  inferred_from:
+  - tox21
+  label: U.S. Government Work (public domain)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: BioBricks Tox21
 products:
 - category: ProgrammingInterface

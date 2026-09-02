@@ -25,6 +25,15 @@ domains:
 homepage_url: https://scales-okn.org/
 id: scales
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - pacer
+  label: U.S. Government Work (public domain records; PACER access subject to per-page
+    usage fees)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: SCALES
 products:
 - category: ProgrammingInterface

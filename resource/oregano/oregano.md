@@ -17,6 +17,17 @@ homepage_url: https://gitub.u-bordeaux.fr/erias/oregano
 id: oregano
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://ctdbase.org/about/legal.jsp
+  inferred_from:
+  - ctd
+  - umls
+  label: Custom
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - cmaup
+  - npass
 name: OREGANO
 products:
   - category: DocumentationProduct

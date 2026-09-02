@@ -564,3 +564,20 @@ def test_check_http_url_keeps_access_restricted_semantics(quality_dashboard_modu
     result = mod.check_http_url("https://example.org/page", timeout=5.0)
     assert result["ok"] is True
     assert result.get("access_restricted") is True
+
+
+def test_inferred_license_counts_as_missing(quality_dashboard_module):
+    has = quality_dashboard_module.has_license_data
+    assert has({"id": "https://creativecommons.org/licenses/by/4.0/", "label": "CC BY 4.0"})
+    assert has({"id": "", "label": "Public Domain"})
+    assert not has({"id": "", "label": "Not specified"})
+    assert not has({})
+    assert not has(None)
+    assert not has(
+        {
+            "id": "https://creativecommons.org/licenses/by/4.0/",
+            "label": "CC BY 4.0",
+            "status": "inferred",
+            "inferred_from": ["src"],
+        }
+    )

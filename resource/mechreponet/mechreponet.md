@@ -13,6 +13,16 @@ homepage_url: https://github.com/SuLab/MechRepoNet
 id: mechreponet
 last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://ctdbase.org/about/legal.jsp
+  inferred_from:
+  - ctd
+  label: Custom
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - mirtarbase
+  - unii
 name: MechRepoNet
 products:
 - description: The MechRepoNet knowledge graph in its original format

@@ -20,6 +20,16 @@ domains:
 homepage_url: https://pubmed.ncbi.nlm.nih.gov/37020958/
 id: ibkh
 layout: resource_detail
+license:
+  id: https://conservancy.umn.edu/handle/11299/204783
+  inferred_from:
+  - ctd
+  - idisk
+  - kegg
+  label: Varies
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: integrative Biomedical Knowledge Hub
 products:
   - category: GraphProduct

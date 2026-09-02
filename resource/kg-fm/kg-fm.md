@@ -17,6 +17,14 @@ homepage_url: https://github.com/MontageBai/KGFM
 id: kg-fm
 last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://clarivate.com/legal-center/terms-of-business/product-service-terms/
+  inferred_from:
+  - web-of-science
+  label: Clarivate — proprietary / subscription
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: KG-FM
 products:
   - category: GraphProduct

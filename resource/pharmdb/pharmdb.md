@@ -12,6 +12,19 @@ homepage_url: http://www.pharmdb-k.org/
 id: pharmdb
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://ctdbase.org/about/legal.jsp
+  inferred_from:
+  - ctd
+  - dip
+  label: Custom
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - dcdb
+  - gad
+  - matador
+  - t3db
 name: PharmDB
 products:
 - category: GraphicalInterface

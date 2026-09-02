@@ -23,6 +23,14 @@ homepage_url: http://pitools.niper.ac.in/medkg/
 id: medkg
 last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.snomed.org/snomed-ct/get-snomed
+  inferred_from:
+  - snomedct
+  label: SNOMED CT Affiliate License
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: MedKG
 products:
 - category: GraphicalInterface

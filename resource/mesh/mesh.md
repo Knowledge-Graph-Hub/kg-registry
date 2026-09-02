@@ -14,11 +14,11 @@ domains:
 homepage_url: https://www.nlm.nih.gov/mesh/meshhome.html
 id: mesh
 infores_id: mesh
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html
-  label: NLM Terms and Conditions for MeSH Data
+  label: NLM Terms and Conditions for MeSH Data (freely provided with attribution; no endorsement; redistributors must keep data current)
 name: Medical Subject Headings (MeSH)
 products:
 - category: GraphicalInterface

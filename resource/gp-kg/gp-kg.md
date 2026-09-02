@@ -15,6 +15,19 @@ homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 id: gp-kg
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ebi.ac.uk/about/terms-of-use
+  inferred_from:
+  - goa
+  - gtex
+  - umls
+  label: EMBL-EBI Terms of Use
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - faers
+  - phenomebrowser
+  - treatkb
 name: GP-KG
 products:
   - category: GraphProduct

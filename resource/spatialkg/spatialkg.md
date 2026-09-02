@@ -21,6 +21,14 @@ domains:
 homepage_url: https://sawgraph.github.io/
 id: spatialkg
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - sawgraph
+  label: US federal government public domain
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: SAWGraph Spatial KG
 products:
 - category: GraphProduct

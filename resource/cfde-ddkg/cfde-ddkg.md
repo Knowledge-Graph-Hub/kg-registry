@@ -14,6 +14,15 @@ homepage_url: https://dd-kg-ui.cfde.cloud/about
 id: cfde-ddkg
 last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://uts.nlm.nih.gov/uts/
+  inferred_from:
+  - ubkg
+  - umls
+  label: UMLS License (free for individuals)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: Data Distillery Knowledge Graph (DDKG)
 products:
   - category: GraphicalInterface

@@ -13,6 +13,15 @@ domains:
 homepage_url: https://cm4aikg.vercel.app/
 id: cm4ai_talent_kg
 layout: resource_detail
+license:
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+  inferred_from:
+  - pubmed-knowledge-graph
+  label: Public Domain (U.S. Government)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources:
+  - semantic-scholar
 name: CM4AI Talent KG
 products:
   - category: GraphicalInterface

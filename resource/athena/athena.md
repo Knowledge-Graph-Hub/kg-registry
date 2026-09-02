@@ -27,6 +27,20 @@ id: athena
 infores_id: athena
 last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://loinc.org/license/
+  inferred_from:
+  - loinc
+  - snomedct
+  label: LOINC License (free registration required)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - cdiscvocab
+  - gemscript
+  - icd10
+  - medispan-gpi
+  - rxnorm
 name: Athena
 products:
 - category: GraphicalInterface

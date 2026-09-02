@@ -16,6 +16,15 @@ domains:
 homepage_url: https://github.com/bsantan/MGMLink
 id: mgmlink
 layout: resource_detail
+license:
+  id: https://www.apache.org/licenses/LICENSE-2.0
+  inferred_from:
+  - pheknowlator
+  label: Apache License 2.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources:
+  - gutmgene
 name: MGMLink
 products:
   - category: ProcessProduct

@@ -27,11 +27,11 @@ domains:
 homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
 infores_id: hpo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://hpo.jax.org/app/license
-  label: hpo
+  label: HPO License (free for any use with attribution and version display; content may not be altered)
 name: Human Phenotype Ontology (HPO)
 products:
 - category: OntologyProduct

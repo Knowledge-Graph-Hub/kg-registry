@@ -25,6 +25,14 @@ id: text-mining-kp
 infores_id: textmining-kp
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/license/mit/
+  inferred_from:
+  - translator
+  label: MIT
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: Text Mining KP
 products:
 - category: GraphProduct

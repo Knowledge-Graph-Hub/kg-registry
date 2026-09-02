@@ -21,6 +21,14 @@ homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Tr
 id: ctkp
 last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/license/mit/
+  inferred_from:
+  - translator
+  label: MIT
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: Clinical Trials KP
 products:
 - category: GraphProduct

@@ -18,6 +18,14 @@ homepage_url: https://kchen-lab.github.io/immune-knowledgegraph.github.io/
 id: "ickg"
 last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+  inferred_from:
+  - pubmed
+  label: Public Domain (U.S. Government)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: Immune Cell Knowledge Graph
 products:
   - category: GraphProduct

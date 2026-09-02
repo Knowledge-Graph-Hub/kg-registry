@@ -19,6 +19,24 @@ domains:
 homepage_url: https://bioteque.irbbarcelona.org/
 id: bioteque
 layout: resource_detail
+license:
+  id: https://depmap.org/portal/terms/
+  inferred_from:
+  - achilles
+  - cosmic
+  - ctd
+  - depmap
+  - disgenet
+  - gtex
+  label: DepMap Terms of Use
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - chemicalchecker
+  - clue
+  - lincs
+  - omnipath
+  - prism
 name: Bioteque
 products:
   - category: Product

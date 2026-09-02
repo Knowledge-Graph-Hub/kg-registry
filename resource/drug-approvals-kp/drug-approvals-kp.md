@@ -22,6 +22,15 @@ homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Drug-Approv
 id: drug-approvals-kp
 last_modified_date: '2026-09-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://hpo.jax.org/app/license
+  inferred_from:
+  - hp
+  label: HPO License (free for any use with attribution and version display; content
+    may not be altered)
+  restrictiveness: no derivatives
+  status: inferred
+  unresolved_sources: []
 name: Drug Approvals KP
 products:
 - category: GraphProduct

@@ -16,6 +16,15 @@ domains:
 homepage_url: https://sawgraph.github.io/
 id: hydrologykg
 layout: resource_detail
+license:
+  id: ''
+  inferred_from:
+  - sawgraph
+  - usgs-nhd
+  label: U.S. federal government public domain
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: SAWGraph Hydrology KG
 products:
 - category: ProgrammingInterface

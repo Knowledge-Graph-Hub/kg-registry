@@ -394,6 +394,50 @@ class ProvenanceRelationEnum(str, Enum):
     """
 
 
+class LicenseStatusEnum(str, Enum):
+    """
+    How a license came to be recorded on a resource.
+    """
+    provided = "provided"
+    """
+    Declared by the resource's curators or maintainers. This is the default when no status is recorded.
+    """
+    inferred = "inferred"
+    """
+    Filled in by the build process as the most restrictive license among the resource's upstream sources, because the resource declares no license of its own.
+    """
+
+
+class LicenseRestrictivenessEnum(str, Enum):
+    """
+    A coarse ordering of licenses from least to most restrictive. It is used to choose which source license an aggregate resource inherits when it declares none of its own. Values are listed here from least to most restrictive.
+    """
+    public_domain = "public domain"
+    """
+    No rights reserved. CC0, the Public Domain Mark, and works of the U.S. federal government.
+    """
+    permissive = "permissive"
+    """
+    Reuse with attribution and no further conditions. CC BY, MIT, BSD, Apache, ODC-By.
+    """
+    copyleft = "copyleft"
+    """
+    Reuse under the same or a compatible license. CC BY-SA, ODbL, and the GPL family.
+    """
+    non_commercial = "non-commercial"
+    """
+    Reuse for non-commercial or academic purposes only. CC BY-NC, CC BY-NC-SA, and academic-use licenses.
+    """
+    no_derivatives = "no derivatives"
+    """
+    Redistribution without modification only. CC BY-ND and CC BY-NC-ND.
+    """
+    custom = "custom"
+    """
+    Bespoke terms that could not be placed on the ladder: terms of use, subscriptions, controlled access, and mixed or varying licenses. Ranked most restrictive because the terms must be read before any reuse.
+    """
+
+
 class CompressionEnum(str, Enum):
     """
     The type of compression used with a product.
@@ -722,7 +766,7 @@ class Resource(NamedThing):
     description: Optional[str] = Field(default=None, description="""A description of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
     homepage_url: Optional[str] = Field(default=None, description="""The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Organization']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the resource. Specific products may have their own repositories.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
-    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     version: Optional[str] = Field(default=None, description="""The version of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'StandardCompatibility'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
@@ -765,7 +809,7 @@ class KnowledgeGraph(Resource):
     description: Optional[str] = Field(default=None, description="""A description of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
     homepage_url: Optional[str] = Field(default=None, description="""The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Organization']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the resource. Specific products may have their own repositories.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
-    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     version: Optional[str] = Field(default=None, description="""The version of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'StandardCompatibility'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
@@ -802,7 +846,7 @@ class DataSource(Resource):
     description: Optional[str] = Field(default=None, description="""A description of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
     homepage_url: Optional[str] = Field(default=None, description="""The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Organization']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the resource. Specific products may have their own repositories.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
-    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     version: Optional[str] = Field(default=None, description="""The version of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'StandardCompatibility'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
@@ -839,7 +883,7 @@ class DataModel(Resource):
     description: Optional[str] = Field(default=None, description="""A description of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
     homepage_url: Optional[str] = Field(default=None, description="""The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Organization']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the resource. Specific products may have their own repositories.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
-    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     version: Optional[str] = Field(default=None, description="""The version of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'StandardCompatibility'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
@@ -876,7 +920,7 @@ class Ontology(Resource):
     description: Optional[str] = Field(default=None, description="""A description of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
     homepage_url: Optional[str] = Field(default=None, description="""The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Organization']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the resource. Specific products may have their own repositories.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
-    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     version: Optional[str] = Field(default=None, description="""The version of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'StandardCompatibility'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
@@ -913,7 +957,7 @@ class Aggregator(Resource):
     description: Optional[str] = Field(default=None, description="""A description of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
     homepage_url: Optional[str] = Field(default=None, description="""The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Organization']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the resource. Specific products may have their own repositories.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
-    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    license: Optional[License] = Field(default=None, description="""The license of the resource. Individual products may have their own licenses. For KnowledgeGraph and Aggregator resources that declare no license, the build process fills this in with the most restrictive license among the resource's sources and marks it with a status of inferred. See the status, inferred_from, and unresolved_sources fields of License.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     version: Optional[str] = Field(default=None, description="""The version of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'StandardCompatibility'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
@@ -1367,6 +1411,10 @@ class License(NamedThing):
                        'License',
                        'Usage']} })
     logo: Optional[str] = Field(default=None, description="""The URL of a logo for the license. This is added at metadata parsing time.""", json_schema_extra = { "linkml_meta": {'domain_of': ['License']} })
+    status: Optional[LicenseStatusEnum] = Field(default=None, description="""Whether the license was provided by the resource's curators or maintainers, or inferred by the build process from the licenses of the resource's upstream sources. If absent, the license is provided.""", json_schema_extra = { "linkml_meta": {'domain_of': ['License']} })
+    restrictiveness: Optional[LicenseRestrictivenessEnum] = Field(default=None, description="""Where this license sits on the restrictiveness ladder used to choose among source licenses. Set for inferred licenses.""", json_schema_extra = { "linkml_meta": {'domain_of': ['License']} })
+    inferred_from: Optional[list[str]] = Field(default=None, description="""For an inferred license, the identifiers of the sources (resources or products) whose licenses sit at the chosen restrictiveness tier. Any one of them is enough to impose this license.""", json_schema_extra = { "linkml_meta": {'domain_of': ['License']} })
+    unresolved_sources: Optional[list[str]] = Field(default=None, description="""For an inferred license, the identifiers of sources for which no license could be found, either directly or through their own sources. The inferred license does not account for these.""", json_schema_extra = { "linkml_meta": {'domain_of': ['License']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'domain': 'NamedThing', 'domain_of': ['NamedThing', 'Contact'], 'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing']} })

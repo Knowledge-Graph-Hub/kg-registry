@@ -24,6 +24,17 @@ domains:
 homepage_url: https://alzkb.ai/Home
 id: alzkb
 layout: resource_detail
+license:
+  id: https://www.disgenet.com/Legal
+  inferred_from:
+  - aop-db
+  - disgenet
+  label: DisGeNET License
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - lincs-l1000
+  - pid
 name: Alzheimer's Knowledge Base
 products:
   - category: GraphicalInterface

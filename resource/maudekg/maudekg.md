@@ -1,5 +1,13 @@
 ---
 id: maudekg
+license:
+  id: https://www.usa.gov/government-works
+  inferred_from:
+  - maude
+  label: U.S. Government Work (Public Domain)
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: FDA MAUDE Adverse Event Knowledge Graph
 description: Knowledge graph constructed from FDA MAUDE adverse event reports using
   standardized FDA product codes.

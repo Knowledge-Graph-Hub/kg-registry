@@ -27,6 +27,14 @@ id: icees-kg
 infores_id: icees-kg
 last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://uts.nlm.nih.gov/uts/
+  inferred_from:
+  - umls
+  label: UMLS License (free for individuals)
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources: []
 name: Exposures KP (icees-kg)
 products:
 - category: GraphProduct

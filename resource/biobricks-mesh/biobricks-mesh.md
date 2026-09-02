@@ -25,6 +25,15 @@ homepage_url: https://github.com/biobricks-ai/mesh-kg
 id: biobricks-mesh
 last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html
+  inferred_from:
+  - mesh
+  label: NLM Terms and Conditions for MeSH Data (freely provided with attribution;
+    no endorsement; redistributors must keep data current)
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources: []
 name: BioBricks MeSH
 products:
 - category: ProgrammingInterface

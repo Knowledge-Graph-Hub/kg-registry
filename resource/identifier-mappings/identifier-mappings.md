@@ -25,6 +25,14 @@ domains:
 homepage_url: https://www.wikidata.org/
 id: identifier-mappings
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  inferred_from:
+  - wikidata
+  label: CC0 1.0 Public Domain Dedication
+  restrictiveness: public domain
+  status: inferred
+  unresolved_sources: []
 name: ID Mappings
 products:
 - category: GraphProduct
