@@ -464,3 +464,23 @@ def test_reflowed_inferred_block_is_not_rewritten(tmp_path):
     summary = apply_inferred_licenses(objs, write=True, resource_dir=tmp_path / "resource")
     assert summary["written"] == []
     assert page.read_text(encoding="utf-8") == reflowed
+
+
+def test_indented_dashes_inside_a_scalar_are_not_the_front_matter_close(tmp_path):
+    kg = _resource(
+        "kg",
+        category="KnowledgeGraph",
+        description="First line\n  ---\nstill the description",
+        products=[_product("kg.graph", ["src"])],
+    )
+    objs = [_resource("src", license=CC_BY), kg]
+    page = _write_page(tmp_path, kg)
+    original = frontmatter.load(str(page))
+    assert "---" in original.metadata["description"]
+
+    apply_inferred_licenses(objs, write=True, resource_dir=tmp_path / "resource")
+
+    rewritten = frontmatter.load(str(page))
+    assert rewritten.metadata["description"] == original.metadata["description"]
+    assert rewritten.metadata["license"]["status"] == STATUS_INFERRED
+    assert rewritten.content == original.content

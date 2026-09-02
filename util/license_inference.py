@@ -723,7 +723,9 @@ def _write_inferred_license(
     lines = text.split("\n")
     if not lines or lines[0].strip() != "---":
         raise LicenseWriteRefused(f"{fn} has no front matter")
-    close = next((i for i in range(1, len(lines)) if lines[i].strip() == "---"), None)
+    # The delimiter sits at column 0. An indented "---" inside a block
+    # scalar is content, not the end of the front matter.
+    close = next((i for i in range(1, len(lines)) if lines[i] == "---"), None)
     if close is None:
         raise LicenseWriteRefused(f"{fn} has no closing front matter delimiter")
     front = lines[1:close]
