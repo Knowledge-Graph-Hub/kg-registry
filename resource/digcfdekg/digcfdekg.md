@@ -1,6 +1,9 @@
 ---
 id: digcfdekg
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: gtex. Not accounted for, no known license:
+    bridge2ai, impc, lincs, mw, sennet.'
   id: https://www.gtexportal.org/home/license
   inferred_from:
   - gtex

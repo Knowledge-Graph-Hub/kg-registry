@@ -1,6 +1,8 @@
 ---
 id: maudekg
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: maude.'
   id: https://www.usa.gov/government-works
   inferred_from:
   - maude

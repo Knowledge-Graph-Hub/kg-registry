@@ -15,6 +15,9 @@ id: forum
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: chebi, dc, mesh, skos. Not accounted for,
+    no known license: chemont, cito, fabio.'
   id: https://creativecommons.org/licenses/by/4.0/
   inferred_from:
   - chebi

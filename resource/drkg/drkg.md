@@ -19,6 +19,8 @@ id: drkg
 last_modified_date: '2026-06-22T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (non-commercial) among its sources: drugbank.'
   id: https://go.drugbank.com/legal/terms_of_use
   inferred_from:
   - drugbank

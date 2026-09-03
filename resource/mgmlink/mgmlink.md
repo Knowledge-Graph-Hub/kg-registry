@@ -17,6 +17,9 @@ homepage_url: https://github.com/bsantan/MGMLink
 id: mgmlink
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: pheknowlator. Not accounted for, no known
+    license: gutmgene.'
   id: https://www.apache.org/licenses/LICENSE-2.0
   inferred_from:
   - pheknowlator

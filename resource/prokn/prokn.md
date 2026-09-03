@@ -28,6 +28,9 @@ id: prokn
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: gtex, msigdb, pir. Not accounted for, no known
+    license: impc, lincs.'
   id: https://www.gsea-msigdb.org/gsea/license_terms_list.jsp
   inferred_from:
   - gtex

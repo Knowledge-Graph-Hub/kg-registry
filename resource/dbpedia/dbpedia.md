@@ -19,6 +19,8 @@ id: dbpedia
 last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (copyleft) among its sources: wikipedia.'
   id: http://creativecommons.org/licenses/by-sa/4.0/
   inferred_from:
   - wikipedia

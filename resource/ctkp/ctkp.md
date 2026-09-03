@@ -22,6 +22,8 @@ id: ctkp
 last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: translator.'
   id: https://opensource.org/license/mit/
   inferred_from:
   - translator

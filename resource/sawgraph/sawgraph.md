@@ -25,6 +25,9 @@ id: sawgraph
 last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: epa-frs, epa-ghg, epa-sdwis, epa-ucmr,
+    maine-egad, water-quality-portal.'
   id: ''
   inferred_from:
   - epa-frs

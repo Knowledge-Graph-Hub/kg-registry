@@ -15,6 +15,9 @@ infores_id: irefindex
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: dip. Not accounted for, no known license:
+    bind.'
   id: https://dip.doe-mbi.ucla.edu/dip/Download.cgi
   inferred_from:
   - dip

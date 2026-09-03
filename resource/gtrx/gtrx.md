@@ -23,6 +23,8 @@ infores_id: gtrx
 last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: biothings.'
   id: https://opensource.org/licenses/Apache-2.0
   inferred_from:
   - biothings

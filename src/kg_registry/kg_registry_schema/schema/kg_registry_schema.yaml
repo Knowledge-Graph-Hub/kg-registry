@@ -635,6 +635,14 @@ classes:
           account for these.
         range: string
         multivalued: true
+      display_note:
+        description: >-
+          For an inferred license, a sentence explaining where the
+          license came from, for display beside it. The build
+          composes this from the other inferred fields so that every
+          view of the registry shows the same wording; a curator does
+          not write it, and anything written here is overwritten.
+        range: string
 
   Publication:
     is_a: NamedThing

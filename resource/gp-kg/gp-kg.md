@@ -16,6 +16,9 @@ id: gp-kg
 last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: goa, gtex, umls. Not accounted for, no known
+    license: faers, phenomebrowser, treatkb.'
   id: https://www.ebi.ac.uk/about/terms-of-use
   inferred_from:
   - goa

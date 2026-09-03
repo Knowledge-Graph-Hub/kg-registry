@@ -24,6 +24,8 @@ homepage_url: https://github.com/biobricks-ai/biobricks-okg
 id: biobricks-tox21
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: tox21.'
   id: https://www.usa.gov/government-works
   inferred_from:
   - tox21

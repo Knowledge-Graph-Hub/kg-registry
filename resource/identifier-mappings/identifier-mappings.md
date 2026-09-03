@@ -26,6 +26,8 @@ homepage_url: https://www.wikidata.org/
 id: identifier-mappings
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: wikidata.'
   id: https://creativecommons.org/publicdomain/zero/1.0/
   inferred_from:
   - wikidata

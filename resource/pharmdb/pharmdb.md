@@ -13,6 +13,9 @@ id: pharmdb
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: ctd, dip. Not accounted for, no known license:
+    dcdb, gad, matador, t3db.'
   id: https://ctdbase.org/about/legal.jsp
   inferred_from:
   - ctd

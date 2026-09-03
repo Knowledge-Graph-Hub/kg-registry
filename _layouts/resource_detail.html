@@ -176,9 +176,8 @@ layout: default
             <p class="card-text">
               {% if page.license.id and page.license.id != "" %}<a href="{{ page.license.id }}">{{ page.license.label }}</a>{% else %}{{ page.license.label }}{% endif %}
               {% if page.license.status == "inferred" %}
-              {% comment %}Keep this wording in step with createLicenseBox in assets/js/custom.js.{% endcomment %}
-              {% capture inferred_tip %}No license is declared for this resource. This is the most restrictive license ({{ page.license.restrictiveness }}) among its sources: {{ page.license.inferred_from | join: ", " }}.{% if page.license.unresolved_sources and page.license.unresolved_sources.size > 0 %} Not accounted for, no known license: {{ page.license.unresolved_sources | join: ", " }}.{% endif %}{% endcapture %}
-              <span class="text-muted" style="cursor: help; border-bottom: 1px dotted;" title="{{ inferred_tip | strip | escape }}">(inferred)</span>
+              {% comment %}The tooltip is composed once by inferred_license_note in util/license_inference.py.{% endcomment %}
+              <span class="text-muted" style="cursor: help; border-bottom: 1px dotted;" title="{{ page.license.display_note | escape }}">(inferred)</span>
               {% endif %}
             </p>
             {% else %}

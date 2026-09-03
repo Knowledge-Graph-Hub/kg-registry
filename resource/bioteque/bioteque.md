@@ -20,6 +20,9 @@ homepage_url: https://bioteque.irbbarcelona.org/
 id: bioteque
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: achilles, cosmic, ctd, depmap, disgenet, gtex.
+    Not accounted for, no known license: chemicalchecker, clue, lincs, omnipath, prism.'
   id: https://depmap.org/portal/terms/
   inferred_from:
   - achilles

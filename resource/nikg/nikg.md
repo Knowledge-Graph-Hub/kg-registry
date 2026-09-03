@@ -17,6 +17,8 @@ homepage_url: https://frink.renci.org/registry/kgs/neighborhood-kg/
 id: nikg
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: us-census.'
   id: ''
   inferred_from:
   - us-census

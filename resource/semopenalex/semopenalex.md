@@ -16,6 +16,8 @@ homepage_url: https://semopenalex.org/
 id: semopenalex
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: openalex.'
   id: https://creativecommons.org/publicdomain/zero/1.0/
   inferred_from:
   - openalex

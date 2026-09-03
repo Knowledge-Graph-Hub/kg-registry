@@ -26,6 +26,8 @@ homepage_url: https://scales-okn.org/
 id: scales
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: pacer.'
   id: ''
   inferred_from:
   - pacer

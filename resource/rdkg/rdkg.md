@@ -1,6 +1,8 @@
 ---
 id: rdkg
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: umls.'
   id: https://uts.nlm.nih.gov/uts/
   inferred_from:
   - umls

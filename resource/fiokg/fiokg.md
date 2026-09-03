@@ -19,6 +19,8 @@ homepage_url: https://sawgraph.github.io/
 id: fiokg
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: epa-frs, sawgraph.'
   id: ''
   inferred_from:
   - epa-frs
