@@ -29,16 +29,15 @@ SUMMARY_FIELDS = [
 ]
 
 # Only these license subfields reach the table. status marks a license the
-# build inferred rather than one the resource provided; the three fields
-# after it feed the "(inferred)" tooltip in assets/js/custom.js.
+# build inferred rather than one the resource provided, and display_note is
+# the sentence the "(inferred)" tooltip in assets/js/custom.js prints. The
+# fields that sentence was composed from stay out of the summary.
 LICENSE_FIELDS = [
     "id",
     "label",
     "logo",
     "status",
-    "restrictiveness",
-    "inferred_from",
-    "unresolved_sources",
+    "display_note",
 ]
 
 

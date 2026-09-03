@@ -1,6 +1,8 @@
 ---
 id: gene-expression-atlas-okn
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: expression-atlas.'
   id: https://creativecommons.org/licenses/by/4.0/
   inferred_from:
   - expression-atlas

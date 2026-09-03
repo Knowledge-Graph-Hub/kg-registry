@@ -24,6 +24,8 @@ homepage_url: https://github.com/biobricks-ai/biobricks-okg
 id: biobricks-toxcast
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: toxcast.'
   id: https://www.epa.gov/privacy/privacy-and-security-notice
   inferred_from:
   - toxcast

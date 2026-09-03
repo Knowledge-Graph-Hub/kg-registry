@@ -25,6 +25,9 @@ homepage_url: https://frink.renci.org/registry/kgs/rural-kg/
 id: ruralkg
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: national-directory-mental-health-facilities,
+    nibrs, nsduh, rural-urban-continuum-codes.'
   id: https://www.usa.gov/government-works
   inferred_from:
   - national-directory-mental-health-facilities

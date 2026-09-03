@@ -72,6 +72,7 @@ Name: kg_registry_schema
 | [date_created](date_created.html) | The date the knowledge graph was created |
 | [date_modified](date_modified.html) | The date the knowledge graph was last modified |
 | [description](description.html) | A description of the resource |
+| [display_note](display_note.html) | For an inferred license, a sentence explaining where the license came from, f... |
 | [doi](doi.html) | The DOI of the publication |
 | [domains](domains.html) | The domain(s) that the resource is relevant to |
 | [dump_format](dump_format.html) | The format of a dump of the product as a file |

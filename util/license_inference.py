@@ -7,8 +7,9 @@ reads the provenance already recorded on a resource's products
 (``original_source`` and ``secondary_source`` associations) and on the
 ``components`` field, resolves each upstream source to a license, and picks
 the most restrictive one. The result is written to the resource's
-``license`` field with ``status: inferred``. A provided license is never
-overwritten.
+``license`` field with ``status: inferred``, along with the
+``display_note`` sentence that both views of the registry print beside
+it. A provided license is never overwritten.
 
 Restrictiveness is a coarse ladder, least to most restrictive:
 
@@ -72,6 +73,7 @@ __all__ = [
     "is_inferred_license",
     "most_restrictive",
     "upstream_sources",
+    "inferred_license_note",
     "LicenseIndex",
     "apply_inferred_licenses",
     "LicenseWriteRefused",
@@ -391,6 +393,30 @@ def upstream_sources(resource: Mapping[str, Any]) -> list[str]:
     return found
 
 
+def inferred_license_note(
+    restrictiveness: Optional[str],
+    inferred_from: Iterable[str],
+    unresolved_sources: Iterable[str] = (),
+) -> str:
+    """Compose the sentence shown beside an inferred license.
+
+    Both views of the registry — the License card in
+    ``_layouts/resource_detail.html`` and the table built by
+    ``assets/js/custom.js`` — print the result verbatim, so the wording
+    lives here and nowhere else. Changing it here changes both.
+    """
+    tier = f" ({restrictiveness})" if restrictiveness else ""
+    sources = ", ".join(inferred_from)
+    note = (
+        "No license is declared for this resource. This is the most "
+        f"restrictive license{tier} among its sources: {sources}."
+    )
+    unresolved = ", ".join(unresolved_sources)
+    if unresolved:
+        note += f" Not accounted for, no known license: {unresolved}."
+    return note
+
+
 # ---------------------------------------------------------------------------
 # Resolution
 # ---------------------------------------------------------------------------
@@ -534,13 +560,16 @@ class LicenseIndex:
             assert top is not None
             winners = [(sid, lic) for sid, lic, tier in resolved if tier == top]
             chosen_url, chosen_label = _choose_license(lic for _, lic in winners)
+            inferred_from = sorted(sid for sid, _ in winners)
+            unresolved_sources = sorted(unresolved)
             result = {
                 "id": chosen_url,
                 "label": chosen_label,
                 "status": STATUS_INFERRED,
                 "restrictiveness": top,
-                "inferred_from": sorted(sid for sid, _ in winners),
-                "unresolved_sources": sorted(unresolved),
+                "inferred_from": inferred_from,
+                "unresolved_sources": unresolved_sources,
+                "display_note": inferred_license_note(top, inferred_from, unresolved_sources),
             }
         if not truncated:
             self._inferred[resource_id] = result

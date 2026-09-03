@@ -21,6 +21,9 @@ id: kg-jensenlab-diseases
 last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: cosmic. Not accounted for, no known license:
+    medlineplus.'
   id: https://cancer.sanger.ac.uk/cosmic/license
   inferred_from:
   - cosmic

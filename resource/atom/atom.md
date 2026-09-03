@@ -19,6 +19,8 @@ id: atom
 last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: pubmed.'
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
   inferred_from:
   - pubmed

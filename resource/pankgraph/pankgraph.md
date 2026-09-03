@@ -1,6 +1,9 @@
 ---
 id: pankgraph
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: pankbase. Not accounted for, no known
+    license: hpap, iidp, prodo.'
   id: https://opensource.org/licenses/MIT
   inferred_from:
   - pankbase

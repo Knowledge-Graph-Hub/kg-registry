@@ -1,5 +1,7 @@
 """Tests for upstream license inference on aggregate resources."""
 
+from pathlib import Path
+
 import frontmatter
 import yaml
 
@@ -11,6 +13,7 @@ from util.license_inference import (
     apply_inferred_licenses,
     classify_license,
     has_declared_license,
+    inferred_license_note,
     is_inferred_license,
     most_restrictive,
     upstream_sources,
@@ -358,6 +361,7 @@ def test_apply_writes_only_inheriting_unlicensed_pages_and_never_overwrites(tmp_
         "restrictiveness": "copyleft",
         "inferred_from": ["src"],
         "unresolved_sources": [],
+        "display_note": inferred_license_note("copyleft", ["src"]),
     }
     assert frontmatter.load(str(pages["kg"])).metadata["license"] == expected
     # The stale inferred block was replaced in place.
@@ -550,3 +554,52 @@ def test_declared_memo_records_a_source_with_nothing_to_declare():
 
     assert index.infer(resources[1]) is None
     assert index._declared == {"bare": None}
+
+
+# ---------------------------------------------------------------------------
+# The tooltip sentence
+# ---------------------------------------------------------------------------
+
+
+def test_note_names_the_tier_and_the_winning_sources():
+    assert inferred_license_note("copyleft", ["a", "b"]) == (
+        "No license is declared for this resource. This is the most restrictive "
+        "license (copyleft) among its sources: a, b."
+    )
+
+
+def test_note_names_the_sources_it_could_not_account_for():
+    assert inferred_license_note("custom", ["a"], ["b", "c"]) == (
+        "No license is declared for this resource. This is the most restrictive "
+        "license (custom) among its sources: a."
+        " Not accounted for, no known license: b, c."
+    )
+
+
+def test_inferred_license_carries_the_composed_note():
+    resources = [
+        _resource("licensed", license=CC_BY_NC),
+        _resource("bare"),
+        _resource(
+            "kg",
+            category="KnowledgeGraph",
+            products=[_product("kg.graph", ["licensed", "bare"])],
+        ),
+    ]
+    inferred = LicenseIndex(resources).infer(resources[2])
+    assert inferred["display_note"] == inferred_license_note(
+        inferred["restrictiveness"], inferred["inferred_from"], inferred["unresolved_sources"]
+    )
+    assert "bare" in inferred["display_note"]
+
+
+def test_both_views_print_the_note_rather_than_composing_their_own():
+    """The wording lives in one place, so neither renderer may rebuild it."""
+    layout = Path("_layouts/resource_detail.html").read_text(encoding="utf-8")
+    script = Path("assets/js/custom.js").read_text(encoding="utf-8")
+
+    assert "page.license.display_note" in layout
+    assert "license.display_note" in script
+    for view in (layout, script):
+        assert "No license is declared" not in view
+        assert "Not accounted for" not in view

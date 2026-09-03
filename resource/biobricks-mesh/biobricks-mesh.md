@@ -26,6 +26,8 @@ id: biobricks-mesh
 last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: mesh.'
   id: https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html
   inferred_from:
   - mesh

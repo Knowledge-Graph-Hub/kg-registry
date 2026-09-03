@@ -14,6 +14,9 @@ homepage_url: https://cm4aikg.vercel.app/
 id: cm4ai_talent_kg
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: pubmed-knowledge-graph. Not accounted
+    for, no known license: semantic-scholar.'
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
   inferred_from:
   - pubmed-knowledge-graph

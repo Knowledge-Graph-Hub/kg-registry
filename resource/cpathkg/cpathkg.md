@@ -20,6 +20,8 @@ homepage_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-in
 id: cpathkg
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: biolink, kg-monarch.'
   id: https://creativecommons.org/publicdomain/zero/1.0/
   inferred_from:
   - biolink

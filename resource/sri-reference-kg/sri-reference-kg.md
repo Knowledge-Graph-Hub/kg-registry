@@ -20,6 +20,9 @@ id: sri-reference-kg
 infores_id: sri-reference-kg
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: alliance, ctd, goa, xenbase. Not accounted
+    for, no known license: cureid, decipher, dictybase, icd11, mmrrc, panther, rgd.'
   id: https://www.alliancegenome.org/privacy-warranty-licensing
   inferred_from:
   - alliance

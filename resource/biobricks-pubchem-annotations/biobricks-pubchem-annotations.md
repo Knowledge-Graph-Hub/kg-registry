@@ -24,6 +24,8 @@ homepage_url: https://github.com/biobricks-ai/pubchem-annotations-kg
 id: biobricks-pubchem-annotations
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: pubchem.'
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
   inferred_from:
   - pubchem

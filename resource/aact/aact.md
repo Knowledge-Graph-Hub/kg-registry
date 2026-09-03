@@ -21,6 +21,8 @@ infores_id: aact
 last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: clinicaltrialsgov.'
   id: https://clinicaltrials.gov/about-site/terms-conditions
   inferred_from:
   - clinicaltrialsgov

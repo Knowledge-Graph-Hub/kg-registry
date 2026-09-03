@@ -25,6 +25,9 @@ homepage_url: https://alzkb.ai/Home
 id: alzkb
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: aop-db, disgenet. Not accounted for, no known
+    license: lincs-l1000, pid.'
   id: https://www.disgenet.com/Legal
   inferred_from:
   - aop-db

@@ -27,6 +27,8 @@ id: biobricks-aopwiki
 last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: aop-wiki.'
   id: https://aopwiki.org/
   inferred_from:
   - aop-wiki

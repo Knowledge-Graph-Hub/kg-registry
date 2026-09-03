@@ -28,6 +28,9 @@ infores_id: athena
 last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: loinc, snomedct. Not accounted for, no known
+    license: cdiscvocab, gemscript, icd10, medispan-gpi, rxnorm.'
   id: https://loinc.org/license/
   inferred_from:
   - loinc

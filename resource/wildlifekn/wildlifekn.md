@@ -25,6 +25,9 @@ homepage_url: https://sites.nd.edu/kn-wildlife/
 id: wildlifekn
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: cabi-isc. Not accounted for, no known license:
+    edrr-invasive-catalog, iucn-red-list, worldclim.'
   id: https://www.cabidigitallibrary.org/terms-and-conditions
   inferred_from:
   - cabi-isc

@@ -18,6 +18,8 @@ id: acukg
 last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: snomedct.'
   id: https://www.snomed.org/snomed-ct/get-snomed
   inferred_from:
   - snomedct

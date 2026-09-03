@@ -17,6 +17,8 @@ homepage_url: https://sawgraph.github.io/
 id: hydrologykg
 layout: resource_detail
 license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (public domain) among its sources: sawgraph, usgs-nhd.'
   id: ''
   inferred_from:
   - sawgraph
