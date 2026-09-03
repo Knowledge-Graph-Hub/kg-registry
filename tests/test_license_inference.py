@@ -514,3 +514,39 @@ def test_nested_walks_are_memoized_and_cycles_are_not():
     assert index.infer(resources[4])["restrictiveness"] == "non-commercial"
     assert "x" not in index._inferred
     assert "y" not in index._inferred
+
+
+def test_declared_license_lookup_is_memoized_per_resource():
+    """A source referenced many times is classified once, with the same answer."""
+    leaf = _resource(
+        "leaf",
+        products=[
+            _product("leaf.a", license=CC_BY),
+            _product("leaf.b", license=CC_BY_SA),
+        ],
+    )
+    resources = [leaf] + [
+        _resource(
+            f"kg{n}", category="KnowledgeGraph", products=[_product(f"kg{n}.graph", ["leaf"])]
+        )
+        for n in range(5)
+    ]
+    index = LicenseIndex(resources)
+
+    tiers = {r["id"]: index.infer(r)["restrictiveness"] for r in resources[1:]}
+    # The most restrictive product license of the unlicensed source wins.
+    assert set(tiers.values()) == {"copyleft"}
+    # Five references, one walk of the source's products.
+    assert index._declared == {"leaf": (CC_BY_SA, "copyleft")}
+
+
+def test_declared_memo_records_a_source_with_nothing_to_declare():
+    """A source with no license anywhere is remembered as such, not re-walked."""
+    resources = [
+        _resource("bare", products=[_product("bare.data")]),
+        _resource("kg", category="KnowledgeGraph", products=[_product("kg.graph", ["bare"])]),
+    ]
+    index = LicenseIndex(resources)
+
+    assert index.infer(resources[1]) is None
+    assert index._declared == {"bare": None}

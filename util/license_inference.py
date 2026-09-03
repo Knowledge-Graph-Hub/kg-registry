@@ -73,7 +73,6 @@ __all__ = [
     "most_restrictive",
     "upstream_sources",
     "LicenseIndex",
-    "infer_license",
     "apply_inferred_licenses",
     "LicenseWriteRefused",
     "write_report",
@@ -419,6 +418,7 @@ class LicenseIndex:
                 if isinstance(product_id, str) and resource_owns_product(resource_id, product_id):
                     self.products.setdefault(product_id.strip(), product)
         self._inferred: dict[str, Optional[dict[str, Any]]] = {}
+        self._declared: dict[str, Optional[tuple[Any, str]]] = {}
 
     # -- single-source resolution ------------------------------------------
 
@@ -444,28 +444,10 @@ class LicenseIndex:
         resource = self.resources.get(resource_id)
         if resource is None:
             return None, None, False
-        tier = classify_license(resource.get("license"))
-        if tier is not None:
-            return resource.get("license"), tier, False
-
-        best_license, best_tier = None, None
-        products = resource.get("products")
-        if isinstance(products, list):
-            for product in products:
-                if not isinstance(product, Mapping):
-                    continue
-                product_id = product.get("id")
-                if not (
-                    isinstance(product_id, str) and resource_owns_product(resource_id, product_id)
-                ):
-                    continue
-                tier = classify_license(product.get("license"))
-                if tier is not None and (
-                    best_tier is None or TIER_RANK[tier] > TIER_RANK[best_tier]
-                ):
-                    best_license, best_tier = product.get("license"), tier
-        if best_tier is not None:
-            return best_license, best_tier, False
+        declared = self._declared_license(resource_id, resource)
+        if declared is not None:
+            license_obj, tier = declared
+            return license_obj, tier, False
 
         if resource_id in visiting:
             return None, None, True
@@ -474,6 +456,48 @@ class LicenseIndex:
             license_obj = {"id": inferred["id"], "label": inferred["label"]}
             return license_obj, inferred["restrictiveness"], truncated
         return None, None, truncated
+
+    def _declared_license(
+        self, resource_id: str, resource: Mapping[str, Any]
+    ) -> Optional[tuple[Any, str]]:
+        """Return (license_obj, tier) from the resource itself, or None.
+
+        The resource's own declared license wins; failing that, the most
+        restrictive license among the products it owns. Neither reads the
+        provenance graph, so the answer is the same for every caller and is
+        memoized unconditionally. None means the resource declares nothing
+        and its products carry nothing either.
+        """
+        if resource_id in self._declared:
+            return self._declared[resource_id]
+
+        result: Optional[tuple[Any, str]] = None
+        tier = classify_license(resource.get("license"))
+        if tier is not None:
+            result = (resource.get("license"), tier)
+        else:
+            best_license, best_tier = None, None
+            products = resource.get("products")
+            if isinstance(products, list):
+                for product in products:
+                    if not isinstance(product, Mapping):
+                        continue
+                    product_id = product.get("id")
+                    if not (
+                        isinstance(product_id, str)
+                        and resource_owns_product(resource_id, product_id)
+                    ):
+                        continue
+                    tier = classify_license(product.get("license"))
+                    if tier is not None and (
+                        best_tier is None or TIER_RANK[tier] > TIER_RANK[best_tier]
+                    ):
+                        best_license, best_tier = product.get("license"), tier
+            if best_tier is not None:
+                result = (best_license, best_tier)
+
+        self._declared[resource_id] = result
+        return result
 
     # -- whole-resource inference ------------------------------------------
 
@@ -560,13 +584,6 @@ def _choose_license(licenses: Iterable[Any]) -> tuple[str, str]:
     if label_only:
         return "", sorted(label_only, key=lambda lab: (-label_only[lab], lab))[0]
     return "", ""
-
-
-def infer_license(
-    resource: Mapping[str, Any], resources: Iterable[Mapping[str, Any]]
-) -> Optional[dict[str, Any]]:
-    """Convenience wrapper: build an index and infer for one resource."""
-    return LicenseIndex(resources).infer(resource)
 
 
 # ---------------------------------------------------------------------------
