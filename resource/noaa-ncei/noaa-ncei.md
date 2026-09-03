@@ -67,6 +67,9 @@ products:
   - 'File was not able to be retrieved when checked on 2026-09-02: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
+  - 'File was not able to be retrieved when checked on 2026-09-03: Error connecting
+    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+    without response''))'
 - category: GraphProduct
   description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
     30+ environmental and geospatial data layers accessible through SPARQL endpoint

@@ -83,6 +83,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-03: HTTP 406 error
+    when accessing file'
 publications:
 - authors:
   - Adriano Rutz
@@ -94,7 +96,7 @@ publications:
   - James G Graham
   - Ralf Stephan
   - Roderic Page
-  - "Ji\u0159\xED Vondr\xE1\u0161ek"
+  - Jiří Vondrášek
   - Christoph Steinbeck
   - Guido F Pauli
   - Jean-Luc Wolfender

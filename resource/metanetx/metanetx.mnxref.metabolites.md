@@ -9,7 +9,7 @@ original_source:
   source: metanetx
 product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
 warnings:
-- File was not able to be retrieved when checked on 2026-09-02_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-09-03_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
   header found

@@ -346,8 +346,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2381,6 +2381,8 @@ products:
   product_url: https://github.com/biobricks-ai/mesh-kg
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-03: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the

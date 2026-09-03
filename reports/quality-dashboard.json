@@ -16075,7 +16075,6 @@
       "kg-covid-19.graph",
       "kg-enp.graph",
       "kg-idg.graph",
-      "metanetx.mnxref.metabolites",
       "mirgate.portal",
       "mirnao.owl",
       "mirtarbase.archive",
@@ -16266,7 +16265,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-09-03T00:07:03Z",
+  "generated_at": "2026-09-03T15:49:28Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 161,
     "with_evaluation_page": 127,
@@ -16287,7 +16286,7 @@
     "missing_original_source": 0,
     "missing_product_url": 22,
     "total": 4151,
-    "with_retrieval_warning": 48
+    "with_retrieval_warning": 47
   },
   "resource_count": 1027,
   "resources": {

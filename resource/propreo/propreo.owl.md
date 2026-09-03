@@ -8,10 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: propreo
 product_url: http://purl.obolibrary.org/obo/propreo.owl
-warnings:
-- File was not able to be retrieved when checked on 2026-09-02_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-08-17_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

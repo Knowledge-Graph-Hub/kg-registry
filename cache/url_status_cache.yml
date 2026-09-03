@@ -199,10 +199,10 @@ http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_Kino
   last_success_bytes: 17872
   status_code: 200
 http://mips.helmholtz-muenchen.de/simap/:
-  checked_at: '2026-09-03T00:00:07Z'
+  checked_at: '2026-09-03T15:45:11Z'
   error: Timeout connecting to URL
 http://mirgate.bioinfo.cnio.es:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:57Z'
   error: 'Error connecting to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'',
     port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''mirgate.bioinfo.cnio.es'',
     port=80): Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno -2] Name or service
@@ -260,7 +260,7 @@ http://purl.obolibrary.org/obo/EPIO_merged.owl:
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/aao.owl:
-  checked_at: '2026-09-02T23:59:54Z'
+  checked_at: '2026-09-03T15:44:56Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ado.owl:
@@ -270,7 +270,7 @@ http://purl.obolibrary.org/obo/ado.owl:
   last_success_bytes: 1166665
   status_code: 200
 http://purl.obolibrary.org/obo/adw.owl:
-  checked_at: '2026-09-02T23:59:54Z'
+  checked_at: '2026-09-03T15:44:57Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/aeo.owl:
@@ -398,7 +398,7 @@ http://purl.obolibrary.org/obo/bila.owl:
   skip_reason: access_restricted
   status_code: 403
 http://purl.obolibrary.org/obo/bootstrep.owl:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:58Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/bspo.obo:
@@ -638,7 +638,7 @@ http://purl.obolibrary.org/obo/clyh.owl:
   last_success_bytes: 13404
   status_code: 200
 http://purl.obolibrary.org/obo/cmf.owl:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:45:00Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/cmo.obo:
@@ -719,7 +719,7 @@ http://purl.obolibrary.org/obo/cvdo.owl:
   last_success_bytes: 105498
   status_code: 200
 http://purl.obolibrary.org/obo/dc_cl.owl:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:56Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ddanat.obo:
@@ -967,11 +967,11 @@ http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl:
   last_success_bytes: 19016
   status_code: 200
 http://purl.obolibrary.org/obo/eo.obo:
-  checked_at: '2026-09-02T23:59:53Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/eo.owl:
-  checked_at: '2026-09-02T23:59:53Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/epio.owl:
@@ -981,7 +981,7 @@ http://purl.obolibrary.org/obo/epio.owl:
   last_success_bytes: 415175
   status_code: 200
 http://purl.obolibrary.org/obo/epo.owl:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:58Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ero.owl:
@@ -1000,11 +1000,11 @@ http://purl.obolibrary.org/obo/eupath.owl:
   last_success_bytes: 438457
   status_code: 200
 http://purl.obolibrary.org/obo/ev.obo:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:59Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ev.owl:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:45:01Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/exmo.owl:
@@ -1828,7 +1828,7 @@ http://purl.obolibrary.org/obo/micro.owl:
   last_success_bytes: 665050
   status_code: 200
 http://purl.obolibrary.org/obo/mirnao.owl:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:58Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/miro.obo:
@@ -1868,7 +1868,7 @@ http://purl.obolibrary.org/obo/mmusdv.owl:
   last_success_bytes: 367557
   status_code: 200
 http://purl.obolibrary.org/obo/mo.owl:
-  checked_at: '2026-09-02T23:59:56Z'
+  checked_at: '2026-09-03T15:45:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/mod.obo:
@@ -2036,7 +2036,7 @@ http://purl.obolibrary.org/obo/ngbo.owl:
   last_success_bytes: 187540
   status_code: 200
 http://purl.obolibrary.org/obo/nmr.owl:
-  checked_at: '2026-09-02T23:59:56Z'
+  checked_at: '2026-09-03T15:45:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/nomen.owl:
@@ -2124,7 +2124,7 @@ http://purl.obolibrary.org/obo/ogg.owl:
   last_success_bytes: 127956460
   status_code: 200
 http://purl.obolibrary.org/obo/ogi.owl:
-  checked_at: '2026-09-02T23:59:56Z'
+  checked_at: '2026-09-03T15:45:00Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ogms.owl:
@@ -2167,7 +2167,7 @@ http://purl.obolibrary.org/obo/oio.obo:
   skip_reason: access_restricted
   status_code: 429
 http://purl.obolibrary.org/obo/oio.owl:
-  checked_at: '2026-09-02T23:59:57Z'
+  checked_at: '2026-09-03T15:45:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/olatdv.obo:
@@ -3535,11 +3535,11 @@ http://www.genomernai.org/Download:
   skip_reason: html_page
   status_code: 200
 http://www.hprd.org/:
-  checked_at: '2026-09-02T23:59:54Z'
+  checked_at: '2026-09-03T15:44:55Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 http://www.inoh.org/:
-  checked_at: '2026-09-03T00:00:05Z'
+  checked_at: '2026-09-03T15:45:02Z'
   error: 'Error connecting to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80):
     Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
     port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
@@ -3570,7 +3570,7 @@ http://www.microrna.gr/LncBase:
   skip_reason: html_page
   status_code: 200
 http://www.netpath.org/:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:58Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 http://www.noncode.org/download.php:
@@ -3917,7 +3917,7 @@ https://bioconductor.org/packages/ExpressionAtlas/:
   skip_reason: html_page
   status_code: 200
 https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf:
-  checked_at: '2026-09-02T23:59:59Z'
+  checked_at: '2026-09-03T15:45:00Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://bioconductor.org/packages/release/data/experiment/html/dorothea.html:
@@ -4001,7 +4001,7 @@ https://biomics.lab.nycu.edu.tw/dbPTM/download.php:
   skip_reason: html_page
   status_code: 200
 https://biomics.lab.nycu.edu.tw/dbSNO/download.php:
-  checked_at: '2026-09-02T23:59:54Z'
+  checked_at: '2026-09-03T15:44:54Z'
   error: HTTP 500 error when accessing file
   status_code: 500
 https://biomuta.readthedocs.io/en/latest/:
@@ -4014,7 +4014,7 @@ https://bioportal.bioontology.org/ontologies/SOPHARM:
   skip_reason: access_restricted
   status_code: 403
 https://biosemantics.org/biosearch:
-  checked_at: '2026-09-03T00:00:02Z'
+  checked_at: '2026-09-03T15:45:03Z'
   error: Timeout connecting to URL
 https://bioteque.irbbarcelona.org/bqsupports:
   checked_at: '2025-08-26T18:14:45Z'
@@ -4027,11 +4027,11 @@ https://bioteque.irbbarcelona.org/downloads/embeddings:
   skip_reason: html_page
   status_code: 200
 https://biothings.io/specs/:
-  checked_at: '2026-09-02T23:59:52Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 204 error when accessing file
   status_code: 204
 https://biothings.ncats.io/gtrx/metadata:
-  checked_at: '2026-09-02T23:59:54Z'
+  checked_at: '2026-09-03T15:44:55Z'
   error: HTTP 502 error when accessing file
   status_code: 502
 https://biothings.transltr.io/biggim_drugresponse_kp/metadata:
@@ -4128,7 +4128,7 @@ https://clinicaltrials.gov/data-about-studies/download-clinical-trial-data:
   skip_reason: html_page
   status_code: 200
 ? https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
-: checked_at: '2026-09-02T23:59:53Z'
+: checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://clue.io/connectopedia:
@@ -4521,8 +4521,8 @@ https://depmap.org/portal/download/all/:
   skip_reason: html_page
   status_code: 200
 https://developer.imohealth.com/:
-  checked_at: '2026-09-03T00:00:00Z'
-  error: HTTP 406 error when accessing file
+  checked_at: '2026-09-03T15:45:06Z'
+  error: Timeout connecting to URL
   status_code: 406
 https://dianalab.e-ce.uth.gr/tarbasev9/#/downloads:
   checked_at: '2026-08-06T18:15:56Z'
@@ -4892,7 +4892,7 @@ https://download.xenbase.org/xenbase/:
   skip_reason: html_page
   status_code: 200
 https://downloads.immport.org/immport-download-client/:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:55Z'
   content_length: 0
   content_type: application/x-directory; charset=UTF-8
   last_success_bytes: 0
@@ -5014,7 +5014,7 @@ https://enpkg.commons-lab.org/doc/index.html:
   skip_reason: html_page
   status_code: 200
 https://enpkg.commons-lab.org/graphdb:
-  checked_at: '2026-09-02T23:59:53Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 406 error when accessing file
   status_code: 406
 https://eol.org/docs/what-is-eol/data-services:
@@ -6515,7 +6515,7 @@ https://github.com/avsastry/modulome-workflow:
   skip_reason: html_page
   status_code: 200
 https://github.com/biobricks-ai/aopwikirdf-kg:
-  checked_at: '2026-09-02T23:59:52Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/biobricks-ai/biobricks-okg:
@@ -6524,7 +6524,7 @@ https://github.com/biobricks-ai/biobricks-okg:
   skip_reason: html_page
   status_code: 200
 https://github.com/biobricks-ai/mesh-kg:
-  checked_at: '2026-09-02T23:59:52Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/biobricks-ai/pubchem-annotations-kg:
@@ -8551,7 +8551,7 @@ https://hpap.pmacs.upenn.edu/:
   skip_reason: html_page
   status_code: 200
 https://hpidb.igbb.msstate.edu/:
-  checked_at: '2026-09-02T23:59:52Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'',
     port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -8767,7 +8767,7 @@ https://kg-hub.berkeleybop.io/eco-kg/:
   skip_reason: html_page
   status_code: 200
 https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz:
-  checked_at: '2026-09-02T23:59:52Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz:
@@ -8780,7 +8780,7 @@ https://kg.ebrains.eu/:
   skip_reason: html_page
   status_code: 200
 https://kghub.io/kg-covid-19/:
-  checked_at: '2026-09-02T23:59:52Z'
+  checked_at: '2026-09-03T15:44:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz:
@@ -9156,7 +9156,7 @@ https://mirgenedb.org/information:
   skip_reason: html_page
   status_code: 200
 https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php:
-  checked_at: '2026-09-02T23:59:57Z'
+  checked_at: '2026-09-03T15:45:02Z'
   error: 'Error connecting to URL: (''Connection aborted.'', RemoteDisconnected(''Remote
     end closed connection without response''))'
   status_code: 403
@@ -9341,7 +9341,7 @@ https://nlp.case.edu/public/data/GPKG-Predict/code/:
     Max retries exceeded with url: /public/data/GPKG-Predict/code/ (Caused by NewConnectionError("HTTPSConnection(host=''nlp.case.edu'',
     port=443): Failed to establish a new connection: [Errno 113] No route to host"))'
 https://nrcs.app.box.com/v/soils:
-  checked_at: '2026-09-02T23:59:57Z'
+  checked_at: '2026-09-03T15:45:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ocg.cancer.gov/programs/ctd2/data-portal/:
@@ -9822,7 +9822,7 @@ https://rampdb.nih.gov/:
   skip_reason: html_page
   status_code: 200
 https://rapdb.dna.affrc.go.jp/download/index.html:
-  checked_at: '2026-09-03T00:00:07Z'
+  checked_at: '2026-09-03T15:45:11Z'
   error: Timeout connecting to URL
 https://rarediseases.info.nih.gov/:
   checked_at: '2026-06-02T22:19:56Z'
@@ -11655,7 +11655,7 @@ https://www.cellosaurus.org/str-search/:
   skip_reason: html_page
   status_code: 200
 https://www.cellphonedb.org/downloads:
-  checked_at: '2026-09-02T23:59:53Z'
+  checked_at: '2026-09-03T15:44:54Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.checklistbank.org/:
@@ -11912,7 +11912,7 @@ https://www.era.europa.eu/domains/registers/era-knowlege-graph_en:
   skip_reason: html_page
   status_code: 200
 https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface:
-  checked_at: '2026-09-02T23:59:54Z'
+  checked_at: '2026-09-03T15:44:55Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory:
@@ -11920,7 +11920,7 @@ https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-direct
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files:
-  checked_at: '2026-09-02T23:59:54Z'
+  checked_at: '2026-09-03T15:44:54Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.fema.gov/about/openfema/data-sets:
@@ -12245,9 +12245,10 @@ https://www.meddra.org/subscription:
   skip_reason: html_page
   status_code: 200
 https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv:
-  checked_at: '2026-09-03T00:00:06Z'
+  checked_at: '2026-09-03T15:45:03Z'
   content_type: application/octet-stream
   error: Timeout connecting to URL
+  skip_reason: no_content_length
   status_code: 200
 https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv:
   checked_at: '2026-09-02T20:34:20Z'
@@ -12346,7 +12347,7 @@ https://www.ncdc.noaa.gov/stormevents/:
   skip_reason: html_page
   status_code: 200
 https://www.ncei.noaa.gov/products/international-best-track-archive:
-  checked_at: '2026-09-02T23:59:55Z'
+  checked_at: '2026-09-03T15:44:59Z'
   error: 'Error connecting to URL: (''Connection aborted.'', RemoteDisconnected(''Remote
     end closed connection without response''))'
 https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf:
@@ -12660,7 +12661,7 @@ https://www.tcdb.org/cgi-bin/projectv/public/refseq.py:
   skip_reason: no_content_length
   status_code: 200
 https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py:
-  checked_at: '2026-09-02T23:59:59Z'
+  checked_at: '2026-09-03T15:45:03Z'
   error: HTTP 500 error when accessing file
   status_code: 500
 https://www.try-db.org/TryWeb/Home.php:
