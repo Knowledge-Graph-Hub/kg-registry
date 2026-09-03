@@ -10,8 +10,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: ncbigene
 product_url: https://omia.org/download/csv/genes/
-warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
+warnings: []
 layout: product_detail
 ---

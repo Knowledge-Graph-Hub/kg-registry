@@ -8,10 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: ncbitaxon
 product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
-warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-06-13_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

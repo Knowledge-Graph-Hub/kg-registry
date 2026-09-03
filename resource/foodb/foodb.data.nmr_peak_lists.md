@@ -9,10 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: foodb
 product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
-warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-09-01_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

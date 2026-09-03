@@ -9,10 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: hocomoco
 product_url: https://hocomoco11.autosome.org/final_bundle/hocomoco11/full/HUMAN/mono/HOCOMOCOv11_full_pwms_HUMAN_mono.txt
-warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-08-17_ HTTP 404 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

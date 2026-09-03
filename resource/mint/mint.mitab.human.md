@@ -17,10 +17,6 @@ secondary_source:
 - relation_type: prov:used
   source: mi
 warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-07-10_ Timeout connecting
-  to URL
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when

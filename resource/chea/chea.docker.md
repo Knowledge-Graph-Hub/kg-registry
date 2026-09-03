@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: chea
 product_url: https://hub.docker.com/r/maayanlab/chea3
-warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
+warnings: []
 layout: product_detail
 ---

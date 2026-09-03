@@ -263,13 +263,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of Ontology for General Medical Science (OGMS), produced

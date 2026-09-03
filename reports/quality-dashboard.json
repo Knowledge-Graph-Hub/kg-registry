@@ -8206,22 +8206,27 @@
     "missing_license_resource_ids": [
       "5srrnadb",
       "aact",
+      "aao",
       "activedriverdb",
       "acukg",
       "adrecs",
+      "adw",
       "afcs",
       "alzkb",
       "aminode",
       "amyco",
       "annotator",
+      "araport",
       "arax",
       "ars",
       "atc",
       "atgo",
       "athena",
+      "ato",
       "atom",
       "auntbertha",
       "batman",
+      "bila",
       "bind",
       "biobricks-aopwiki",
       "biobricks-mesh",
@@ -8235,15 +8240,19 @@
       "bioplanet",
       "bioteque",
       "bitterdb",
+      "bluesky",
+      "bootstrep",
       "bridge2ai",
       "cacao",
       "cargo",
+      "ccre",
       "cdd",
       "cdiscvocab",
       "cebs",
       "cellmarker",
       "cfde-ddkg",
       "cgnc",
+      "chembank",
       "chemicalchecker",
       "chemont",
       "cito",
@@ -8251,6 +8260,7 @@
       "clue",
       "cm4ai_talent_kg",
       "cmaup",
+      "cmf",
       "cmip",
       "cohd",
       "connectivitymap",
@@ -8262,6 +8272,7 @@
       "ctkp",
       "ctrp",
       "culture-knowledge-graph",
+      "cureid",
       "cvx",
       "dailymed",
       "darkkinasekb",
@@ -8271,8 +8282,12 @@
       "dbptm",
       "dbsno",
       "dbsuper",
+      "dbvar",
+      "dc_cl",
       "dcat",
+      "dcdb",
       "ddinter",
+      "decipher",
       "dgv",
       "dictybase",
       "digcfdekg",
@@ -8287,27 +8302,40 @@
       "ecid",
       "ecosim",
       "edrr-invasive-catalog",
+      "effas-kpi",
       "efip",
       "eggnog",
+      "ehda",
+      "ehdaa",
       "ehrlink",
+      "emap",
       "emerge",
       "emind",
       "ena",
+      "endb",
+      "enhanceratlas",
       "entrez",
       "epd",
+      "epo",
       "epsd",
       "eqtlgen",
       "esgf",
       "eu-knowledge-graph",
       "eupathdb",
       "eurio",
+      "ev",
       "evlncrnas",
       "evoweb",
       "fabio",
       "fabric",
       "faers",
+      "fbsp",
       "fiokg",
+      "fire",
+      "fix",
+      "flu",
       "forum",
+      "gad",
       "gard",
       "gcmd",
       "gdc",
@@ -8331,12 +8359,17 @@
       "glyconavi",
       "glycordf",
       "gnps",
+      "gomapman",
       "google-reviews",
       "gp-kg",
+      "greenclaims",
       "greengenes",
+      "gro",
       "gtrnadb",
       "gtrx",
       "gutmgene",
+      "habronattus",
+      "hifld",
       "hippie",
       "hpap",
       "hpidb",
@@ -8348,14 +8381,19 @@
       "ickg",
       "iconclass",
       "identifier-mappings",
+      "iev",
       "iid",
       "iidp",
       "imodulondb",
       "impc",
+      "imr",
       "insight",
+      "inxight-drugs",
+      "ipr",
       "iproclass",
       "irefindex",
       "iucn-red-list",
+      "kentucky-cancer-registry",
       "kg-fm",
       "kg-jensenlab-diseases",
       "kg4sl",
@@ -8364,13 +8402,20 @@
       "kinomescan",
       "lincs",
       "lincs-l1000",
+      "lipro",
       "litvar",
       "lncbase",
       "lncbook",
       "lncrnadb",
       "lncrnadisease",
+      "loggerhead",
+      "louisiana-tumor-registry",
+      "maizegdb",
       "malacards",
+      "mao",
       "massive",
+      "mat",
+      "matador",
       "maudekg",
       "maven-central",
       "mechreponet",
@@ -8379,6 +8424,7 @@
       "medispan-gpi",
       "medkg",
       "medlineplus",
+      "mfo",
       "mgd",
       "mgmlink",
       "mgnify",
@@ -8386,12 +8432,17 @@
       "mirdb",
       "mirgate",
       "mirgenedb",
+      "miro",
       "mirtarbase",
+      "mmrrc",
+      "mo",
       "modomics",
       "molepro",
       "monarchinitiative",
+      "motifmap",
       "mousemine",
       "mrbase",
+      "mtbs",
       "multiomics-kp",
       "mutationds",
       "mw",
@@ -8402,13 +8453,19 @@
       "ndfrt",
       "neo",
       "nextprot",
+      "nif_cell",
+      "nif_dysfunction",
+      "nif_grossanatomy",
       "nikg",
+      "nmr",
       "npass",
       "npm",
       "npo",
       "nsides",
       "nuget",
       "oard-kg",
+      "obo_rel",
+      "ogi",
       "ohdsi",
       "okn-void",
       "ols",
@@ -8420,21 +8477,26 @@
       "ontology-kp",
       "opendataphilly",
       "opengwas",
+      "oreganno",
       "oregano",
       "owlsim",
       "p3db",
       "pankgraph",
       "panther",
+      "pao",
       "pathophenodb",
       "pathwhiz",
       "patric",
       "paxdb",
+      "pd_st",
       "pdb",
       "pdsp",
+      "pgdso",
       "pgo",
       "pharmdb",
       "pharos",
       "phaseskg",
+      "phenomebrowser",
       "phewascat",
       "phosphat",
       "phosphoelm",
@@ -8443,13 +8505,17 @@
       "pid",
       "pirbase",
       "pirsf",
+      "planteome",
       "plncdb",
+      "plo",
       "pmc",
       "pmda",
       "preppi",
       "prism",
+      "probe-miner",
       "prodo",
       "prokn",
+      "propreo",
       "proteomehd",
       "proteomicsdb",
       "proteopedia",
@@ -8461,13 +8527,16 @@
       "pypi",
       "qptm",
       "rampdb",
+      "rapdb",
       "rdkg",
       "reacto",
       "rediportal",
       "redu",
       "refseq",
       "regl",
+      "resid",
       "retriever",
+      "rex",
       "rgd",
       "ribocentre",
       "rlims-p",
@@ -8476,6 +8545,7 @@
       "rubygems",
       "ruralkg",
       "rxnorm",
+      "sao",
       "sawgraph",
       "scales",
       "scibite",
@@ -8483,7 +8553,9 @@
       "scop",
       "semantic-scholar",
       "semopenalex",
+      "semrep",
       "sennet",
+      "sep",
       "sfld",
       "silva",
       "simap",
@@ -8494,6 +8566,7 @@
       "snopy",
       "snornadatabase",
       "sockg",
+      "sopharm",
       "spatialkg",
       "spdx",
       "spoke-genelab",
@@ -8504,22 +8577,34 @@
       "sudokn",
       "suppkg",
       "swissmodel",
+      "synlethdb",
+      "t3db",
+      "tahe",
+      "tahh",
       "tair",
       "tarbase",
       "tcdb",
       "tcga",
       "text-mining-kp",
+      "tfacts",
       "tiga",
       "topmed",
+      "treatkb",
+      "tred",
       "treefam",
       "ucnebase",
       "uf-okn",
       "unii",
+      "usdm",
       "vdjserver",
+      "vhog",
       "vista",
+      "vsao",
       "who",
       "wildlifekn",
       "worldclim",
+      "ypo",
+      "zea",
       "zwd"
     ],
     "missing_repository_resource_ids": [
@@ -16003,11 +16088,7 @@
       "nmr.owl",
       "noaa-ncei.ibtracs",
       "ogi.owl",
-      "oio.obo",
       "oio.owl",
-      "pgdso.owl",
-      "plo.owl",
-      "propreo.owl",
       "psygenet.psygenet2r",
       "rapdb.downloads",
       "simap.portal",
@@ -16185,7 +16266,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-09-02T20:40:35Z",
+  "generated_at": "2026-09-03T00:07:03Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 161,
     "with_evaluation_page": 127,
@@ -16193,10 +16274,10 @@
   },
   "links": {
     "broken_urls": 299,
-    "cache_hits": 4600,
+    "cache_hits": 4608,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 4309,
-    "live_checked_urls": 8,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 4608,
     "unchecked_urls": 0
@@ -16206,7 +16287,7 @@
     "missing_original_source": 0,
     "missing_product_url": 22,
     "total": 4151,
-    "with_retrieval_warning": 52
+    "with_retrieval_warning": 48
   },
   "resource_count": 1027,
   "resources": {
@@ -16217,7 +16298,7 @@
     "missing_fairsharing_id": 1019,
     "missing_homepage_url": 0,
     "missing_infores_id": 766,
-    "missing_license": 317,
+    "missing_license": 402,
     "missing_repository": 520,
     "status_counts": {
       "active": 883,
@@ -16233,7 +16314,7 @@
     "without_publications": 358
   },
   "scoring": {
-    "average_score": 7.19,
+    "average_score": 7.35,
     "median_score": 7.0,
     "resources_with_issues": 991,
     "tracked_but_unscored_metrics": [
@@ -16568,6 +16649,124 @@
       "score": 35
     },
     {
+      "activity_status": "inactive",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
+        }
+      ],
+      "id": "habronattus",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Habronattus courtship",
+      "resource_page": "resource/habronattus/habronattus.html",
+      "score": 21
+    },
+    {
+      "activity_status": "inactive",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html"
+        }
+      ],
+      "id": "loggerhead",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Loggerhead nesting",
+      "resource_page": "resource/loggerhead/loggerhead.html",
+      "score": 21
+    },
+    {
       "activity_status": "active",
       "broken_links": [
         {
@@ -16704,277 +16903,6 @@
           "sources": [
             "cache"
           ],
-          "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
-        }
-      ],
-      "id": "habronattus",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_publications",
-          "label": "Missing publications",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Habronattus courtship",
-      "resource_page": "resource/habronattus/habronattus.html",
-      "score": 19
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html"
-        }
-      ],
-      "id": "loggerhead",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_publications",
-          "label": "Missing publications",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Loggerhead nesting",
-      "resource_page": "resource/loggerhead/loggerhead.html",
-      "score": 19
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/rRNA_modifications/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/sequence_similarity_search/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/statistics/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/tutorial/"
-        }
-      ],
-      "id": "snodb",
-      "issues": [
-        {
-          "count": 4,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 12
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        }
-      ],
-      "name": "snoDB",
-      "resource_page": "resource/snodb/snodb.html",
-      "score": 19
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://apps.okn.us/ldf/maudekg"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://github.com/Prabhadeus/Proto-OKN"
-        }
-      ],
-      "id": "maudekg",
-      "issues": [
-        {
-          "count": 2,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 6
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "kg_missing_evaluation_page",
-          "label": "KnowledgeGraph missing evaluation page",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_publications",
-          "label": "Missing publications",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "FDA MAUDE Adverse Event Knowledge Graph",
-      "resource_page": "resource/maudekg/maudekg.html",
-      "score": 18
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://ccdb.ecidbase.org/"
-        }
-      ],
-      "id": "ecid",
-      "issues": [
-        {
-          "count": 9,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 9
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        }
-      ],
-      "name": "ECID",
-      "resource_page": "resource/ecid/ecid.html",
-      "score": 17
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
           "url": "http://www.inoh.org"
         }
       ],
@@ -17000,6 +16928,12 @@
         },
         {
           "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
           "issue_key": "missing_repository",
           "label": "Missing repository",
           "points": 2
@@ -17013,7 +16947,166 @@
       ],
       "name": "Molecule role (INOH Protein name/family name ontology)",
       "resource_page": "resource/imr/imr.html",
-      "score": 17
+      "score": 19
+    },
+    {
+      "activity_status": "inactive",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html"
+        }
+      ],
+      "id": "mao",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Multiple alignment",
+      "resource_page": "resource/mao/mao.html",
+      "score": 19
+    },
+    {
+      "activity_status": "inactive",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://www.obofoundry.org/ro"
+        }
+      ],
+      "id": "obo_rel",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "OBO relationship types (legacy)",
+      "resource_page": "resource/obo_rel/obo_rel.html",
+      "score": 19
+    },
+    {
+      "activity_status": "inactive",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://4dx.embl.de/platy"
+        }
+      ],
+      "id": "pd_st",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Platynereis stage ontology",
+      "resource_page": "resource/pd_st/pd_st.html",
+      "score": 19
     }
   ]
 }

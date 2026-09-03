@@ -11,10 +11,10 @@ contacts:
   id: ebi
   label: IntAct Team (EMBL-EBI)
 creation_date: '2025-07-08T00:00:00Z'
-description: IntAct is an open, curated molecular interaction database maintained
-  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
-  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
-  along with curated datasets and documentation.
+description: "IntAct is an open, curated molecular interaction database maintained\
+  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
+  \ literature curation and direct submissions, and distributes data in PSI\u2011\
+  MI XML and MITAB formats along with curated datasets and documentation."
 domains:
 - proteomics
 - systems biology
@@ -2409,18 +2409,14 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
-    on 2026-06-02.
-  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
-    during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-09-01: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-09-02: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
 - category: GraphProduct
   compression: gzip
   description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -3603,14 +3599,12 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
+    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 404 error
-    when accessing file'
 publications:
 - authors:
   - Noemi del Toro
@@ -3624,7 +3618,7 @@ publications:
   - Prashansa Ratan
   - Gautam Shirodkar
   - Odilia Lu
-  - Bálint Mészáros
+  - "B\xE1lint M\xE9sz\xE1ros"
   - Xavier Watkins
   - Sangya Pundir
   - Luana Licata

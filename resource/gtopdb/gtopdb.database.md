@@ -9,8 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: gtopdb
 product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
-warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
+warnings: []
 layout: product_detail
 ---

@@ -8,8 +8,6 @@ original_source:
   source: compartments
 product_url: https://compartments.jensenlab.org/Downloads
 warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
 - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
   header found
 layout: product_detail

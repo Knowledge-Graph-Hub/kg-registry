@@ -9,8 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: sty
 product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
-warnings:
-- File was not able to be retrieved when checked on 2026-09-01_ No Content-Length
-  header found
+warnings: []
 layout: product_detail
 ---
