@@ -18,7 +18,7 @@ layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
     license (custom) among its sources: goa, gtex, umls. Not accounted for, no known
-    license: faers, phenomebrowser, treatkb.'
+    license: faers, treatkb.'
   id: https://www.ebi.ac.uk/about/terms-of-use
   inferred_from:
   - goa
@@ -29,7 +29,6 @@ license:
   status: inferred
   unresolved_sources:
   - faers
-  - phenomebrowser
   - treatkb
 name: GP-KG
 products:

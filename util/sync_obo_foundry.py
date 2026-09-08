@@ -253,6 +253,26 @@ class OBOFoundrySync:
 
             raise
 
+    @staticmethod
+    def _license_from_obo(license_info: Any) -> Optional[Dict[str, Any]]:
+        """Build a License object from an OBO Foundry license entry.
+
+        Returns None when the entry names no license, so that the page
+        carries no license block rather than a placeholder.
+        """
+        if isinstance(license_info, dict):
+            url = (license_info.get('url') or '').strip()
+            label = (license_info.get('label') or '').strip()
+            if not url and not label:
+                return None
+            license_obj: Dict[str, Any] = {'id': url, 'label': label or url}
+            if license_info.get('logo'):
+                license_obj['logo'] = license_info['logo']
+            return license_obj
+        if license_info:
+            return {'id': '', 'label': str(license_info).strip()}
+        return None
+
     def transform_obo_to_kg_registry(self, obo_ontology: Dict[str, Any]) -> Dict[str, Any]:
         """Transform OBO Foundry ontology metadata to KG-Registry format"""
 
@@ -278,20 +298,11 @@ class OBOFoundrySync:
         # Get repository
         repository = obo_ontology.get('repository')
 
-        # Get license information - format as License object
-        license_info = obo_ontology.get('license', {})
-        if isinstance(license_info, dict):
-            license_obj = {
-                'id': license_info.get('url', ''),
-                'label': license_info.get('label', 'Not specified')
-            }
-            if license_info.get('logo'):
-                license_obj['logo'] = license_info['logo']
-        else:
-            license_obj = {
-                'id': '',
-                'label': str(license_info) if license_info else 'Not specified'
-            }
+        # Get license information - format as License object. An ontology
+        # with no license upstream gets no license block at all. A placeholder
+        # ("Not specified") would count as missing on the quality dashboard
+        # and hide the gap from the page (#719).
+        license_obj = self._license_from_obo(obo_ontology.get('license'))
 
         # Enhancement 1: Transform contact information to Contact class objects
         contacts = []
@@ -463,7 +474,6 @@ class OBOFoundrySync:
             'activity_status': activity_status,
             'homepage_url': homepage_url,
             'repository': repository,
-            'license': license_obj,
             'domains': domains,  # Use 'domains' (plural) as per schema
             'contacts': contacts,
             'products': products,
@@ -472,6 +482,8 @@ class OBOFoundrySync:
             'layout': 'resource_detail',
             'category': 'Ontology'  # Set category to Ontology for OBO Foundry ontologies
         }
+        if license_obj:
+            kg_resource['license'] = license_obj
 
         # Add tags if available
         if tags:
@@ -847,7 +859,7 @@ class OBOFoundrySync:
             'activity_status': resource_data['activity_status'],
             'homepage_url': resource_data.get('homepage_url'),
             'repository': resource_data.get('repository'),
-            'license': resource_data['license'],
+            'license': resource_data.get('license'),
             'collection': resource_data['collection'],
             'layout': resource_data['layout'],
             'category': resource_data['category']

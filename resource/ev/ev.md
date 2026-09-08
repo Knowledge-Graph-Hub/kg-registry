@@ -15,11 +15,8 @@ domains:
 - anatomy and development
 homepage_url: https://obofoundry.org/ontology/ev
 id: ev
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: eVOC (Expressed Sequence Annotation for Humans)
 products:
 - category: OntologyProduct

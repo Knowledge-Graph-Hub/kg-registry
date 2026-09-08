@@ -26,11 +26,11 @@ domains:
 - systems biology
 homepage_url: https://gomapman.nib.si/
 id: gomapman
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  label: CC BY-NC-SA 3.0
 name: GoMapMan
 products:
 - category: GraphicalInterface

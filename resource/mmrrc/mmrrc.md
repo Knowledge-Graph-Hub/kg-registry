@@ -23,11 +23,11 @@ domains:
 - biomedical
 homepage_url: https://www.mmrrc.org/
 id: mmrrc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://www.mmrrc.org/methods/data_download.php
+  label: MMRRC data download terms (attribution required; all rights reserved)
 name: Mutant Mouse Resource and Research Centers
 products:
 - category: Database

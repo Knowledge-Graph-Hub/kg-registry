@@ -17,11 +17,11 @@ domains:
 - biomedical
 homepage_url: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-495
 id: motifmap
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://web.archive.org/web/20160112094556/http://motifmap.ics.uci.edu/
+  label: Free for academic use; commercial license by contact (archived site)
 name: MotifMap
 products:
 - category: GraphicalInterface

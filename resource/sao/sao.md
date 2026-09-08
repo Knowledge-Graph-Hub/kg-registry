@@ -15,11 +15,8 @@ domains:
 - anatomy and development
 homepage_url: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
 id: sao
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Subcellular anatomy ontology
 products:
 - category: OntologyProduct

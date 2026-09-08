@@ -14,11 +14,11 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://matador.embl.de/
 id: matador
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  label: CC BY-NC-SA 3.0 (commercial use by separate license)
 name: MATADOR
 products:
 - category: DocumentationProduct

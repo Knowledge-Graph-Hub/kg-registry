@@ -16,11 +16,8 @@ domains:
 - anatomy and development
 homepage_url: http://github.com/seger/aao
 id: aao
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Amphibian gross anatomy
 products:
 - category: OntologyProduct

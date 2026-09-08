@@ -23,11 +23,11 @@ domains:
 - precision medicine
 homepage_url: https://www.deciphergenomics.org/
 id: decipher
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://www.deciphergenomics.org/files/pdfs/DECIPHER_Terms_of_Use.pdf
+  label: DECIPHER Terms of Use (restrictions on use and redistribution to protect patient privacy)
 name: DECIPHER
 products:
 - category: GraphicalInterface

@@ -4,15 +4,12 @@ name: Molecule role (INOH Protein name/family name ontology)
 description: Description unavailable.
 activity_status: inactive
 homepage_url: http://www.inoh.org
-license:
-  id: ''
-  label: Not specified
 collection:
 - obo-foundry
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-07-10T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 domains:
 - chemistry and biochemistry
 contacts:

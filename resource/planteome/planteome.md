@@ -26,11 +26,11 @@ domains:
 - phenotype
 homepage_url: https://planteome.org
 id: planteome
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: Planteome
 products:
 - category: GraphicalInterface

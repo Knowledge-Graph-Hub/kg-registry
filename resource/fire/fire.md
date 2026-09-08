@@ -28,11 +28,11 @@ domains:
 - biomedical
 homepage_url: https://doi.org/10.1016/j.celrep.2016.10.061
 id: fire
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://www.gnu.org/licenses/gpl-3.0.en.html
+  label: GPL-3.0 (FIREcaller R package)
 name: FIRE (Frequently Interacting REgions)
 products:
 - category: DataSource

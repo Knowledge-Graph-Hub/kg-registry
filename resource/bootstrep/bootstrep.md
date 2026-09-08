@@ -15,11 +15,8 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
 id: bootstrep
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Gene Regulation Ontology
 products:
 - category: OntologyProduct

@@ -23,11 +23,8 @@ domains:
 - information technology
 homepage_url: https://hifld-geoplatform.hub.arcgis.com/
 id: hifld
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Homeland Infrastructure Foundation-Level Data (HIFLD)
 products:
 - category: Product

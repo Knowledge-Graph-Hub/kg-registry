@@ -17,11 +17,8 @@ domains:
 - biological systems
 homepage_url: http://www.mesquiteproject.org/ontology/Habronattus/index.html
 id: habronattus
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Habronattus courtship
 products: []
 publications: []

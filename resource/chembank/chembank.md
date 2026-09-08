@@ -24,11 +24,8 @@ domains:
 homepage_url: http://chembank.broadinstitute.org/
 id: chembank
 infores_id: chembank
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: ChemBank
 products:
 - category: DocumentationProduct
