@@ -283,3 +283,47 @@ def test_merge_resource_metadata_keeps_curated_license_label_for_same_url(tmp_pa
 
     filled = syncer.merge_resource_metadata({"id": "hp"}, {"id": "hp", "license": synced_same})
     assert filled["license"] == synced_same
+
+
+def test_transform_obo_omits_license_when_upstream_has_none(tmp_path):
+    """An ontology without a license upstream gets no license block.
+
+    A placeholder such as ``label: Not specified`` counts as missing on the
+    quality dashboard and in license inference, and it hides the gap on the
+    page (#719). No block is the honest shape.
+    """
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+
+    for upstream in ({"id": "aao", "title": "AAO"},
+                     {"id": "aao", "title": "AAO", "license": {}},
+                     {"id": "aao", "title": "AAO", "license": None},
+                     {"id": "aao", "title": "AAO", "license": ""}):
+        resource = syncer.transform_obo_to_kg_registry(upstream)
+        assert "license" not in resource, upstream
+        page = syncer.create_resource_markdown(resource)
+        assert "license" not in page.split("---")[1]
+
+    with_license = syncer.transform_obo_to_kg_registry(
+        {
+            "id": "go",
+            "title": "Gene Ontology",
+            "license": {"url": "https://creativecommons.org/licenses/by/4.0/", "label": "CC BY 4.0"},
+        }
+    )
+    assert with_license["license"] == {
+        "id": "https://creativecommons.org/licenses/by/4.0/",
+        "label": "CC BY 4.0",
+    }
+
+    label_only = syncer.transform_obo_to_kg_registry(
+        {"id": "x", "title": "X", "license": {"label": "CC BY 3.0"}}
+    )
+    assert label_only["license"] == {"id": "", "label": "CC BY 3.0"}
+
+
+def test_merge_resource_metadata_keeps_curated_license_when_sync_has_none(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    curated = {"id": "https://creativecommons.org/licenses/by/4.0/", "label": "CC BY 4.0"}
+
+    merged = syncer.merge_resource_metadata({"id": "pao", "license": curated}, {"id": "pao"})
+    assert merged["license"] == curated
