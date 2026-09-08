@@ -294,10 +294,12 @@ def test_transform_obo_omits_license_when_upstream_has_none(tmp_path):
     """
     syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
 
-    for upstream in ({"id": "aao", "title": "AAO"},
-                     {"id": "aao", "title": "AAO", "license": {}},
-                     {"id": "aao", "title": "AAO", "license": None},
-                     {"id": "aao", "title": "AAO", "license": ""}):
+    for upstream in (
+        {"id": "aao", "title": "AAO"},
+        {"id": "aao", "title": "AAO", "license": {}},
+        {"id": "aao", "title": "AAO", "license": None},
+        {"id": "aao", "title": "AAO", "license": ""},
+    ):
         resource = syncer.transform_obo_to_kg_registry(upstream)
         assert "license" not in resource, upstream
         page = syncer.create_resource_markdown(resource)
@@ -307,7 +309,10 @@ def test_transform_obo_omits_license_when_upstream_has_none(tmp_path):
         {
             "id": "go",
             "title": "Gene Ontology",
-            "license": {"url": "https://creativecommons.org/licenses/by/4.0/", "label": "CC BY 4.0"},
+            "license": {
+                "url": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC BY 4.0",
+            },
         }
     )
     assert with_license["license"] == {
