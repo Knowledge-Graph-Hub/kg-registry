@@ -104,9 +104,9 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 406 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-09-03: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 406 error
     when accessing file'
 - category: ProcessProduct
   description: Full ENPKG workflow repository for generating experimental natural

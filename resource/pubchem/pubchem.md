@@ -1515,9 +1515,9 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-09-02: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-09-03: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 502 error
     when accessing file'
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,

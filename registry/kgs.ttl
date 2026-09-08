@@ -125,8 +125,7 @@ kgr:aao a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "aao" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:8292> ;
     schema1:hasPart kgr:aao.owl ;
     schema1:name "Amphibian gross anatomy" ;
@@ -235,8 +234,7 @@ kgr:adw a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "adw" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:adw.kg-bioportal,
         kgr:adw.owl ;
     schema1:name "Animal natural history and life history" ;
@@ -746,8 +744,7 @@ kgr:araport a schema1:DataSource ;
     dcterms:description "Araport (the Arabidopsis Information Portal) was a J. Craig Venter Institute (JCVI) project that provided an integrated data warehouse, genome browser, and analysis apps for Arabidopsis thaliana research. Its central product, Araport11, is the complete 2016/2017 reannotation of the A. thaliana Col-0 reference genome, refining gene models and adding non-coding RNAs based on extensive RNA-seq evidence. The Araport web portal was retired around 2018 after funding ended, with its data and services migrated to TAIR, NCGR, and the Bio-Analytic Resource (BAR/ThaleMine). The Araport11 gene/locus annotation remains a standard reference annotation, distributed via TAIR and Phytozome, and is used by downstream resources such as the Stress Knowledge Map." ;
     dcterms:identifier "araport" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/27862469> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:araport.araport11,
         kgr:araport.thalemine,
         kgr:skm.ckn.v1.annotations,
@@ -928,8 +925,7 @@ kgr:ato a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "ato" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:8292> ;
     schema1:hasPart kgr:ato.kg-bioportal,
         kgr:ato.owl ;
@@ -1277,8 +1273,7 @@ kgr:bila a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "bila" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:33213> ;
     schema1:hasPart kgr:bila.owl ;
     schema1:name "Bilateria anatomy" ;
@@ -1928,8 +1923,7 @@ kgr:bluesky a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BlueSky is the U.S. Forest Service AirFire team's wildfire smoke modeling framework (NOT the social network of the same name). It chains together fire information, fuel loading, consumption, emissions, plume rise, and meteorological dispersion models to predict where smoke from wildland fires will travel and how it affects ground-level air quality. AirFire operates BlueSky Daily Runs that produce routine smoke forecasts, distributed through the AirFire tools portal for fire and air-quality decision support. It is developed and maintained by the USFS Pacific Northwest Research Station's Pacific Wildland Fire Sciences Laboratory." ;
     dcterms:identifier "bluesky" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bluesky.code,
         kgr:bluesky.portal,
         kgr:knowwheregraph.graph ;
@@ -1960,8 +1954,7 @@ kgr:bootstrep a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "bootstrep" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bootstrep.owl ;
     schema1:name "Gene Regulation Ontology" ;
     skos:inScheme "chemistry and biochemistry" ;
@@ -2369,8 +2362,8 @@ kgr:ccre a schema1:DataSource ;
     dcterms:description "The ENCODE Registry of candidate cis-Regulatory Elements (cCREs) is a curated annotation of regulatory regions in the human and mouse genomes derived from ENCODE and Roadmap Epigenomics data. Each cCRE is classified by its biochemical signature, including promoter-like, enhancer-like, and CTCF-bound elements based on DNase hypersensitivity, H3K4me3, H3K27ac, and CTCF ChIP-seq signals. The registry is explorable through the SCREEN (Search Candidate cis-Regulatory Elements by ENCODE) web portal, which lets users browse cCREs and their activity across cell types and tissues. cCREs/SCREEN are produced as part of the ENCODE project and serve as an upstream source for downstream resources such as GenomicKB." ;
     dcterms:identifier "ccre" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/32728249/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ccre.screen,
         kgr:genomickb.graph ;
     schema1:name "ENCODE cCRE Registry (SCREEN)" ;
@@ -2855,8 +2848,7 @@ kgr:chembank a schema1:DataSource ;
     dcterms:description "ChemBank was a public, freely available collection of small-molecule screening data and cheminformatics resources developed by the Chemical Biology Program (formerly the Initiative for Chemical Genetics) at the Broad Institute. It assembled biological activity measurements from high-throughput screens together with chemical structures, compound annotations, and analysis tools, with the aim of helping researchers relate small molecules to their effects on biological systems. ChemBank is no longer maintained: its homepage at chembank.broadinstitute.org is defunct and now redirects away from the original database. It served as an upstream primary source for the Molecular Data Provider (MolePro) and the molecular-data-kp knowledge provider." ;
     dcterms:identifier "chembank" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/17947324> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:chembank.publication,
         kgr:chembank.wayback,
         kgr:molecular-data-kp.graph.edges,
@@ -3651,8 +3643,7 @@ kgr:cmf a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "cmf" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cmf.owl ;
     schema1:name "CranioMaxilloFacial ontology" ;
     skos:inScheme "biomedical" ;
@@ -4522,8 +4513,7 @@ kgr:cureid a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CURE ID is a crowdsourcing platform and mobile/web app developed by the U.S. National Center for Advancing Translational Sciences (NCATS) at NIH in collaboration with the U.S. Food and Drug Administration (FDA). It allows clinicians around the world to report and share real-world clinical experiences treating difficult-to-treat and rare diseases, with an emphasis on novel uses of existing (off-label) drugs. The collected case reports and treatment outcomes form a repository intended to surface promising therapies and inform clinical research. CURE ID serves as an upstream ingest source for the Monarch/SRI Reference Knowledge Graph." ;
     dcterms:identifier "cureid" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cureid.about,
         kgr:cureid.app,
         kgr:cureid.explore,
@@ -4798,8 +4788,8 @@ kgr:dbvar a schema1:DataSource ;
     dcterms:description "dbVar is NCBI's public archive of human genomic structural variation, covering large-scale variants such as insertions, deletions, duplications, inversions, copy number variants (CNVs), and translocations. It aggregates submitted structural variant calls together with their genomic placements, supporting evidence, and associated clinical assertions, and exchanges data with the European DGVa archive. dbVar provides a web portal for searching and browsing variants and regions, as well as bulk FTP downloads of variant call and region files in multiple formats. It serves as an upstream source for integrative knowledge graphs such as GenomicKB." ;
     dcterms:identifier "dbvar" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/23193291> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:dbvar.ftp,
         kgr:dbvar.portal,
@@ -4847,8 +4837,7 @@ kgr:dc_cl a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "dc_cl" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <all> ;
     schema1:hasPart kgr:dc_cl.owl ;
     schema1:name "Dendritic cell" ;
@@ -4881,8 +4870,7 @@ kgr:dcdb a schema1:DataSource ;
     dcterms:description "DCDB (Drug Combination Database) was a curated database of drug combinations and their components, developed at Zhejiang University. It catalogued combinations along with their individual drugs, molecular targets, mechanisms, and therapeutic indications to support pharmacology and drug discovery research. The resource served as an upstream source for downstream pharmacological knowledge graphs such as PharmDB. The original host site no longer serves the database and the project is now defunct." ;
     dcterms:identifier "dcdb" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/20031966/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dcdb.publication,
         kgr:pharmdb.graph ;
     schema1:name "Drug Combination Database" ;
@@ -4984,8 +4972,8 @@ kgr:decipher a schema1:DataSource ;
     dcterms:description "DECIPHER (DatabasE of genomiC varIation and Phenotype in Humans using Ensembl Resources) is a web-based platform, hosted at the Wellcome Sanger Institute, that aggregates and shares anonymized clinical and genomic data on submicroscopic chromosomal imbalances and other genomic variants in patients with rare developmental and genetic disorders. It links genomic variants to associated phenotypes (using Human Phenotype Ontology terms) to support interpretation of variant pathogenicity and clinical diagnosis. DECIPHER integrates Ensembl genome resources and an international consortium of clinical genetics centers. It is an upstream data source for the SRI-Reference Knowledge Graph and the Monarch Initiative." ;
     dcterms:identifier "decipher" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/19344873/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.deciphergenomics.org/files/pdfs/DECIPHER_Terms_of_Use.pdf> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:decipher.downloads,
         kgr:decipher.web,
         kgr:sri-reference-kg.graph ;
@@ -6160,8 +6148,8 @@ kgr:effas-kpi a schema1:DataModel ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "KPIs for ESG is a standardized framework of Key Performance Indicators for Environmental, Social, and Governance (ESG) reporting, published by EFFAS (the European Federation of Financial Analysts Societies) together with DVFA (the German Society of Investment Professionals). The current \"KPIs for ESG 3.0\" edition defines sector-specific ESG indicators aligned with the Dow Jones Industry Classification Benchmark (ICB), intended for integration of ESG data into corporate performance reporting. It provides the controlled KPI vocabulary used by EmeraldGraph/EmeraldMind." ;
     dcterms:identifier "effas-kpi" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://effas.com/legal-notice/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:effas-kpi.document,
         kgr:effas-kpi.landing,
         kgr:emeraldgraph.graph-json ;
@@ -6265,8 +6253,7 @@ kgr:ehda a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "ehda" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/14620375/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:ehda.kg-bioportal ;
     schema1:name "Human developmental anatomy, timed version" ;
@@ -6279,8 +6266,7 @@ kgr:ehdaa a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "ehdaa" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:ehdaa.kg-bioportal,
         kgr:ehdaa.obo,
@@ -6370,8 +6356,7 @@ kgr:emap a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus)." ;
     dcterms:identifier "emap" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10088> ;
     schema1:hasPart kgr:emap.kg-bioportal,
         kgr:emap.owl ;
@@ -6574,8 +6559,7 @@ kgr:endb a schema1:DataSource ;
     dcterms:description "ENdb is a manually curated database of experimentally validated enhancers for human and mouse, compiled from published literature. Each entry links an enhancer to its experimentally supported target gene(s) and includes detailed regulatory annotations such as the validation experiment type, associated transcription factors, disease and tissue/cell-line context, and references to the supporting publications. The database provides browse, search, genome browser, and bulk download interfaces, and serves as an upstream primary source for integrated resources including GenomicKB." ;
     dcterms:identifier "endb" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/31665430> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:endb.browse,
         kgr:endb.download,
         kgr:genomickb.graph ;
@@ -6592,8 +6576,7 @@ kgr:enhanceratlas a schema1:DataSource ;
     dcterms:description "EnhancerAtlas is a genome-wide atlas of enhancer annotations spanning a large number of human and animal cell and tissue types. The resource integrates diverse high-throughput experimental datasets (including histone modifications, DNase-seq, transcription factor binding, and other epigenomic signals) to predict consensus enhancer regions and infer enhancer-target gene interactions. EnhancerAtlas 2.0 provides enhancer annotations for 586 tissue and cell types across nine species, making it a comprehensive reference for regulatory genomics. It serves as an upstream data source for the GenomicKB knowledge graph." ;
     dcterms:identifier "enhanceratlas" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/31740966/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:enhanceratlas.browse,
         kgr:enhanceratlas.download,
         kgr:genomickb.graph ;
@@ -7002,8 +6985,7 @@ kgr:epo a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ontology designed to support the semantic annotation of epidemiology resources" ;
     dcterms:identifier "epo" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:epo.owl ;
     schema1:name "Epidemiology Ontology" ;
     skos:inScheme "biomedical" ;
@@ -7266,8 +7248,7 @@ kgr:ev a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "ev" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ev.obo,
         kgr:ev.owl ;
     schema1:name "eVOC (Expressed Sequence Annotation for Humans)" ;
@@ -7623,8 +7604,7 @@ kgr:fbsp a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase." ;
     dcterms:identifier "fbsp" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:7227> ;
     schema1:hasPart kgr:fbsp.kg-bioportal,
         kgr:fbsp.owl ;
@@ -7720,8 +7700,8 @@ kgr:fire a schema1:DataSource ;
     dcterms:description "FIRE (Frequently Interacting REgions) are genomic regions that participate in an unusually high number of local chromatin interactions, identified from high-throughput chromosome conformation capture (Hi-C) data. They were defined by Schmitt et al. (Cell Reports, 2016), who built a compendium of chromatin contact maps across 14 human primary tissues and cell types and showed that FIREs mark spatially active, cell-type-specific regions of the genome enriched for super-enhancers and disease-associated variants. FIRE serves as an upstream chromatin-architecture data layer in GenomicKB, contributing three-dimensional genome-organization annotations to that knowledge graph." ;
     dcterms:identifier "fire" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/27851967> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.gnu.org/licenses/gpl-3.0.en.html> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:fire.kg-bioportal,
         kgr:fire.publication,
         kgr:genomickb.graph ;
@@ -7738,8 +7718,7 @@ kgr:fix a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ontology of physico-chemical methods and properties." ;
     dcterms:identifier "fix" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:fix.kg-bioportal,
         kgr:fix.obo,
         kgr:fix.owl ;
@@ -7771,8 +7750,7 @@ kgr:flu a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "flu" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:flu.kg-bioportal,
         kgr:flu.owl ;
     schema1:name "Influenza Ontology" ;
@@ -7999,8 +7977,7 @@ kgr:gad a schema1:DataSource ;
     dcterms:description "The Genetic Association Database (GAD) was an archive of human genetic association studies compiled from peer-reviewed literature, cataloging reported links between genes and complex diseases or phenotypes. Developed and hosted at the U.S. National Institutes of Health (NIH), it aimed to support standardized analysis of gene-disease associations. The resource has been archived and is no longer maintained or updated, and its original web portal is no longer reachable. GAD served as an upstream primary source for downstream resources such as PharmDB." ;
     dcterms:identifier "gad" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/15118671> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gad.publication,
         kgr:pharmdb.graph ;
     schema1:name "Genetic Association Database" ;
@@ -9280,8 +9257,8 @@ kgr:gomapman a schema1:DataSource ;
     dcterms:description "GoMapMan is a manually curated, open database that integrates, consolidates, and visualizes plant gene functional annotations organized within the MapMan ontology, a hierarchical scheme of functional \"bins\" tailored to plant biology. It maps genes to MapMan bins across several crop and model plant species, including Arabidopsis, potato, and tomato, and harmonizes annotations drawn from multiple sources into a single consolidated, expert-reviewed resource. The portal provides interactive browsing and visualization of the ontology and gene-to-bin mappings, and its curated mappings are widely reused to annotate genes in plant systems-biology and transcriptomics analyses. It is an upstream source for the Stress Knowledge Map (SKM)." ;
     dcterms:identifier "gomapman" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/24194592> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gomapman.kg-bioportal,
         kgr:gomapman.portal,
         kgr:skm.ckn.v1.annotations,
@@ -9341,8 +9318,8 @@ kgr:greenclaims a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "GreenClaims is a third-party-verified dataset of corporate environmental claims and greenwashing cases, compiled from reputable news sources and regulatory records such as advertising-standards (e.g., ASA) rulings. Each record pairs a company's environmental claim with documented greenwashing allegations, company descriptions, certificates, and source URLs. It was introduced in Mattia Fornasiero's work on greenwashing detection and is used by knowledge-graph frameworks such as EmeraldGraph and EmeraldMind for explainable greenwashing detection." ;
     dcterms:identifier "greenclaims" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://opensource.org/license/mit/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:emeraldgraph.graph-json,
         kgr:greenclaims.dataset ;
     schema1:name "GreenClaims" ;
@@ -9383,8 +9360,7 @@ kgr:gro a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "gro" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "Cereal Plant Gross Anatomy" ;
     skos:inScheme "anatomy and development" ;
     adms:status "Inactive" ;
@@ -9654,8 +9630,7 @@ kgr:habronattus a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "habronattus" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "Habronattus courtship" ;
     skos:inScheme "biological systems",
         "organisms" ;
@@ -9873,8 +9848,7 @@ kgr:hifld a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Homeland Infrastructure Foundation-Level Data (HIFLD) is a U.S. Department of Homeland Security program that provides national geospatial datasets describing the location and attributes of critical infrastructure across the United States. Datasets cover sectors such as hospitals and public health facilities, emergency medical and fire services, law enforcement, energy and utilities, transportation, and communications. The data are distributed as an ArcGIS Hub open-data catalog with downloads in formats including CSV, GeoJSON, KML, and shapefile, and via GeoServices/WMS/WFS APIs. HIFLD is an upstream source of the KnowWhereGraph." ;
     dcterms:identifier "hifld" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:hifld.api,
         kgr:hifld.catalog,
         kgr:knowwheregraph.graph ;
@@ -10918,8 +10892,7 @@ kgr:iev a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "iev" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:iev.obo,
         kgr:iev.owl ;
     schema1:name "Event (INOH pathway ontology)" ;
@@ -11160,8 +11133,7 @@ kgr:imr a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "imr" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/22120663/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "Molecule role (INOH Protein name/family name ontology)" ;
     skos:inScheme "chemistry and biochemistry" ;
     adms:status "Inactive" ;
@@ -11474,8 +11446,8 @@ kgr:inxight-drugs a schema1:DataSource ;
     dcterms:description "Inxight Drugs is a comprehensive and curated drug database developed by the National Center for Advancing Translational Sciences (NCATS) to support translational research. It provides rigorously curated information on drug substances, including their regulatory approval and development status, ingredient definitions, mechanisms of action, biological targets, and pharmacological class. The resource resolves ambiguity in substance identity by applying the FDA Global Substance Registration System (GSRS) and links each substance to detailed marketing, regulatory, and clinical development metadata. Inxight Drugs serves as an upstream primary source for downstream knowledge resources such as the Molecular Data Provider (MolePro) and the Molecular Data Knowledge Provider." ;
     dcterms:identifier "inxight-drugs" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/34648031> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://drugs.ncats.io/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:inxight-drugs.api,
         kgr:inxight-drugs.portal,
         kgr:molecular-data-kp.graph.edges,
@@ -11495,8 +11467,7 @@ kgr:ipr a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "ipr" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "Protein Domains" ;
     skos:inScheme "chemistry and biochemistry" ;
     adms:status "Inactive" ;
@@ -11771,8 +11742,8 @@ kgr:kentucky-cancer-registry a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Kentucky Cancer Registry (KCR) is Kentucky's statewide population-based central cancer registry, hosted at the University of Kentucky and the Markey Cancer Center. KCR collects, manages, and reports incidence, treatment, and outcome data for cancers diagnosed among Kentucky residents. It is a participant in both the National Cancer Institute's Surveillance, Epidemiology, and End Results (SEER) Program and the Centers for Disease Control and Prevention's National Program of Cancer Registries (NPCR). KCR data serve as the primary data source for the Kentucky Cancer Registry Knowledge Graph (the .kcr graph) within the Cancer Registry KG." ;
     dcterms:identifier "kentucky-cancer-registry" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.kcr.uky.edu/research/how.php> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-registry-kg.kcr,
         kgr:kentucky-cancer-registry.cancer-rates,
         kgr:kentucky-cancer-registry.research ;
@@ -11965,7 +11936,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-03T15:43:28+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T20:33:28+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -12352,8 +12323,7 @@ kgr:lipro a schema1:Ontology ;
     dcterms:description "An ontology representation of the LIPIDMAPS nomenclature classification." ;
     dcterms:identifier "lipro" ;
     dcterms:isReferencedBy <https://doi.org/10.1186/1471-2105-12-303> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:lipro.kg-bioportal,
         kgr:lipro.owl ;
     schema1:name "Lipid Ontology" ;
@@ -12548,8 +12518,7 @@ kgr:loggerhead a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "loggerhead" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "Loggerhead nesting" ;
     skos:inScheme "biological systems",
         "organisms" ;
@@ -12609,8 +12578,8 @@ kgr:louisiana-tumor-registry a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Louisiana Tumor Registry (LTR) is Louisiana's statewide, population-based cancer incidence registry, housed in the School of Public Health at LSU Health Sciences Center New Orleans. It collects, manages, and reports data on all newly diagnosed cancer cases among Louisiana residents and participates in both the NCI Surveillance, Epidemiology, and End Results (SEER) Program and the CDC National Program of Cancer Registries (NPCR). LTR data support cancer surveillance, research, and public health planning, and serve as the primary data source for the Cancer Registry KG (the .ltr graph)." ;
     dcterms:identifier "louisiana-tumor-registry" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://publichealth.lsuhsc.edu/louisiana-tumor-registry/data-usestatistics/data-request.aspx> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-registry-kg.ltr,
         kgr:louisiana-tumor-registry.data-request ;
     schema1:name "Louisiana Tumor Registry" ;
@@ -12679,8 +12648,7 @@ kgr:maizegdb a schema1:DataSource ;
     dcterms:description "MaizeGDB is the community database for maize (Zea mays) genetics and genomics, maintained by the USDA-ARS. It integrates genome assemblies and gene models for B73 and an expanding set of maize and related Andropogoneae lines, along with gene function and expression data, genetic and physical maps, phenotypes, stocks, metabolic pathways, and curated literature. The resource provides genome browsers, a MaizeMine data-mining interface, and bulk downloads of sequence and annotation files, and serves as the upstream data source for eco-KG." ;
     dcterms:identifier "maizegdb" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/30407532/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:eco-kg.graph,
         kgr:maizegdb.downloads,
         kgr:maizegdb.gene_model_gff,
@@ -12761,8 +12729,7 @@ kgr:mao a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "mao" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/16043635> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "Multiple alignment" ;
     skos:inScheme "chemistry and biochemistry" ;
     adms:status "Inactive" ;
@@ -12822,8 +12789,7 @@ kgr:mat a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "mat" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mat.kg-bioportal ;
     schema1:name "Minimal anatomical terminology" ;
     skos:inScheme "anatomy and development" ;
@@ -12836,8 +12802,8 @@ kgr:matador a schema1:DataSource ;
     dcterms:description "MATADOR (Manually Annotated Targets and Drugs Online Resource) is a manually curated database of drug-target relationships developed at EMBL. Unlike resources limited to direct binding, MATADOR captures both direct (binding) and indirect (e.g., metabolic or signaling) drug-target interactions for proteins and small molecules. It was distributed alongside SuperTarget and serves as an upstream source for downstream knowledge graphs such as PharmDB." ;
     dcterms:identifier "matador" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/17942422/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:matador.publication,
         kgr:pharmdb.graph ;
     schema1:name "MATADOR" ;
@@ -13438,8 +13404,7 @@ kgr:mfo a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>." ;
     dcterms:identifier "mfo" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:8089> ;
     schema1:hasPart kgr:mfo.kg-bioportal,
         kgr:mfo.owl ;
@@ -13866,8 +13831,7 @@ kgr:miro a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Application ontology for entities related to insecticide resistance in mosquitos" ;
     dcterms:identifier "miro" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:44484> ;
     schema1:hasPart kgr:miro.kg-bioportal,
         kgr:miro.obo,
@@ -13946,8 +13910,8 @@ kgr:mmrrc a schema1:DataSource ;
     dcterms:description "The Mutant Mouse Resource and Research Centers (MMRRC) is the NIH-funded national public repository and distribution archive of genetically engineered and mutant laboratory mouse strains in the United States. It maintains live mice, cryopreserved embryos and sperm, embryonic stem cell lines, and hybridomas for tens of thousands of alleles, together with associated genotype and phenotype data. The MMRRC consortium comprises regionally distributed vivaria and an Informatics Coordination and Service Center, and its strain catalog and phenotype annotations serve as an upstream source for integrative knowledge graphs such as Monarch and the NCATS SRI Reference KG." ;
     dcterms:identifier "mmrrc" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/39304538/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.mmrrc.org/methods/data_download.php> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mmrrc.api,
         kgr:mmrrc.catalog,
         kgr:mmrrc.data-download,
@@ -13982,8 +13946,7 @@ kgr:mo a schema1:Ontology ;
     dcterms:description "A standardized description of a microarray experiment in support of MAGE v.1." ;
     dcterms:identifier "mo" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/16428806> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mo.kg-bioportal,
         kgr:mo.owl ;
     schema1:name "Microarray experimental conditions" ;
@@ -14183,8 +14146,8 @@ kgr:motifmap a schema1:DataSource ;
     dcterms:description "MotifMap is a system from UC Irvine that provides integrative genome-wide maps of predicted transcription factor binding sites (regulatory motifs) across the human genome and other model species. It combines databases of transcription factor binding motifs, refined multiple-genome alignments, and a comparative genomic statistical scoring approach (Bayesian Branch Length Score) to call candidate regulatory motif sites with associated false discovery rates. The released maps cover yeast, fly, worm, mouse, and human, with the human map containing over 500,000 sites for hundreds of motif matrices. MotifMap is an upstream source of the GenomicKB knowledge graph." ;
     dcterms:identifier "motifmap" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/22208852/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://web.archive.org/web/20160112094556/http://motifmap.ics.uci.edu/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genomickb.graph,
         kgr:motifmap.portal ;
     schema1:name "MotifMap" ;
@@ -14460,8 +14423,7 @@ kgr:mtbs a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Monitoring Trends in Burn Severity (MTBS) is an interagency program that consistently maps the burn severity and perimeter extent of large wildfires across all lands of the United States from 1984 to the present. Fires are mapped where they meet size thresholds of 1,000 acres or greater in the western U.S. and 500 acres or greater in the eastern U.S., covering the continental U.S., Alaska, Hawaii, and Puerto Rico. The program is a joint effort of the U.S. Geological Survey (USGS) and the USDA Forest Service. MTBS data serve as an upstream source for KnowWhereGraph." ;
     dcterms:identifier "mtbs" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:knowwheregraph.graph,
         kgr:mtbs.direct-download,
         kgr:mtbs.viewer ;
@@ -15115,8 +15077,7 @@ kgr:nif_cell a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Neuronal cell types" ;
     dcterms:identifier "nif_cell" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nif_cell.ttl ;
     schema1:name "NIF Cell" ;
     skos:inScheme "anatomy and development" ;
@@ -15128,8 +15089,7 @@ kgr:nif_dysfunction a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "nif_dysfunction" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nif_dysfunction.ttl ;
     schema1:name "NIF Dysfunction" ;
     skos:inScheme "biomedical" ;
@@ -15141,8 +15101,7 @@ kgr:nif_grossanatomy a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "nif_grossanatomy" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nif_grossanatomy.ttl ;
     schema1:name "NIF Gross Anatomy" ;
     skos:inScheme "anatomy and development" ;
@@ -15263,8 +15222,7 @@ kgr:nmr a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation." ;
     dcterms:identifier "nmr" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nmr.kg-bioportal,
         kgr:nmr.owl ;
     schema1:name "NMR-instrument specific component of metabolomics investigations" ;
@@ -16003,8 +15961,7 @@ kgr:obo_rel a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "obo_rel" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/15892874> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "OBO relationship types (legacy)" ;
     skos:inScheme "biological systems",
         "general" ;
@@ -16066,8 +16023,7 @@ kgr:ogi a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ontology that formalizes the genomic element by defining an upper class genetic interval" ;
     dcterms:identifier "ogi" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ogi.kg-bioportal,
         kgr:ogi.owl ;
     schema1:name "Ontology for genetic interval" ;
@@ -16925,8 +16881,8 @@ kgr:oreganno a schema1:DataSource ;
     dcterms:description "ORegAnno (the Open Regulatory Annotation database) is a community-driven, literature-curated resource of regulatory regions, transcription factor binding sites, regulatory polymorphisms, and regulatory interactions across multiple species. It served as an upstream primary source for regulatory annotation resources such as DoRothEA. The original standalone interactive site (oreganno.org) is no longer operational and now redirects to the UCSC Genome Browser; the curated ORegAnno 3.0 data set lives on as a track and bulk download in the UCSC Genome Browser and is also distributed via Ensembl." ;
     dcterms:identifier "oreganno" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/26578589> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.gnu.org/licenses/lgpl.html> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dorothea.graph,
         kgr:oreganno.ucsc ;
     schema1:name "ORegAnno" ;
@@ -17267,8 +17223,8 @@ kgr:pao a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "pao" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/23220694> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:33090> ;
     schema1:hasPart kgr:pao.obo,
         kgr:pao.owl ;
@@ -17533,8 +17489,7 @@ kgr:pd_st a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "pd_st" ;
     dcterms:isReferencedBy <doi:10.1186/1742-9994-7-31> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:6358> ;
     schema1:name "Platynereis stage ontology" ;
     skos:inScheme "anatomy and development" ;
@@ -17801,8 +17756,7 @@ kgr:pgdso a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "pgdso" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:33090> ;
     schema1:hasPart kgr:pgdso.owl ;
     schema1:name "Plant Growth and Development Stage" ;
@@ -18144,8 +18098,8 @@ kgr:phenomebrowser a schema1:DataSource ;
     dcterms:description "PhenomeBrowser is a web resource from the Hoehndorf group that provides drug-phenotype and gene-phenotype associations integrated across multiple species within the PhenomeNET ecosystem. It applies ontology-based phenotype representations and cross-species semantic similarity to connect genes, drugs, diseases, and their phenotypic manifestations. PhenomeBrowser serves as the upstream source of the GP-KG knowledge graph used for drug repurposing." ;
     dcterms:identifier "phenomebrowser" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/29258588> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gp-kg.graph,
         kgr:phenomebrowser.web ;
     schema1:name "PhenomeBrowser" ;
@@ -18571,8 +18525,7 @@ kgr:plo a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "plo" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:plo.owl ;
     schema1:name "Plasmodium life cycle" ;
     skos:inScheme "anatomy and development" ;
@@ -18874,8 +18827,8 @@ kgr:probe-miner a schema1:DataSource ;
     dcterms:description "Probe Miner is a public resource for the objective, quantitative, and data-driven assessment of chemical probes for protein targets, developed at the Institute of Cancer Research. It integrates large-scale, publicly available medicinal chemistry and bioactivity data to score small molecules against six objective criteria, enabling researchers to evaluate the suitability of compounds as chemical probes for a given protein target. The resource helps reduce the misuse of poor-quality chemical probes in target validation and chemical biology by surfacing potency, selectivity, and cell-based activity evidence in a transparent, reproducible way." ;
     dcterms:identifier "probe-miner" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/29249694/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
         kgr:probe-miner.website ;
@@ -19112,8 +19065,7 @@ kgr:propreo a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "propreo" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:propreo.kg-bioportal,
         kgr:propreo.owl ;
     schema1:name "Proteomics data and process provenance" ;
@@ -19691,8 +19643,7 @@ kgr:rapdb a schema1:DataSource ;
     dcterms:description "The Rice Annotation Project Database (RAP-DB) provides curated genome annotation for the rice species Oryza sativa (Nipponbare), built on the IRGSP-1.0 reference assembly by the Rice Annotation Project together with the National Agriculture and Food Research Organization (NARO). It integrates gene structures, functional annotations, transcript and protein information, and supporting evidence through both an interactive web interface and bulk download files. A central resource is the RAP-MSU locus identifier mapping, which links RAP gene IDs to the corresponding MSU (Michigan State University) Rice Genome Annotation Project locus IDs. RAP-DB serves as the upstream primary source for eco-KG." ;
     dcterms:identifier "rapdb" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/23299411> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:eco-kg.graph,
         kgr:rapdb.downloads,
         kgr:rapdb.portal ;
@@ -20210,8 +20161,7 @@ kgr:resid a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "For the description of covalent bonds in proteins." ;
     dcterms:identifier "resid" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:resid.owl ;
     schema1:name "Protein covalent bond" ;
     skos:inScheme "chemistry and biochemistry" ;
@@ -20239,8 +20189,7 @@ kgr:rex a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time." ;
     dcterms:identifier "rex" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:rex.kg-bioportal,
         kgr:rex.owl ;
     schema1:name "Physico-chemical process" ;
@@ -20733,8 +20682,7 @@ kgr:sao a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "sao" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:sao.kg-bioportal,
         kgr:sao.owl ;
@@ -20960,8 +20908,8 @@ kgr:semrep a schema1:DataSource ;
     dcterms:description "SemRep is a natural language processing program developed at the U.S. National Library of Medicine that extracts semantic predications (subject-relation-object triples) from biomedical text. It uses MetaMap to map free text onto Unified Medical Language System (UMLS) Metathesaurus concepts and the UMLS Semantic Network to assign relations, producing normalized assertions such as \"Drug TREATS Disease\". The semantic predications generated by SemRep over the PubMed corpus form the basis of SemMedDB, a PubMed-scale repository of biomedical predications widely reused for literature-based discovery and knowledge graph construction." ;
     dcterms:identifier "semrep" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/23044550> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://uts.nlm.nih.gov/license.html> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
         kgr:semrep.homepage ;
@@ -21001,8 +20949,7 @@ kgr:sep a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments." ;
     dcterms:identifier "sep" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sep.owl ;
     schema1:name "Sample processing and separation techniques" ;
     skos:inScheme "biomedical",
@@ -21715,8 +21662,7 @@ kgr:sopharm a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "sopharm" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:sopharm.kg-bioportal,
         kgr:sopharm.obo,
@@ -22334,8 +22280,7 @@ kgr:synlethdb a schema1:DataSource ;
     dcterms:identifier "synlethdb" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/26516187>,
         <https://www.ncbi.nlm.nih.gov/pubmed/35562840> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:kg4sl.synlethkg,
         kgr:synlethdb.download,
@@ -22354,8 +22299,8 @@ kgr:t3db a schema1:DataSource ;
     dcterms:description "The Toxin and Toxin Target Database (T3DB), also known as the Toxic Exposome Database, is a bioinformatics resource from the Wishart lab that combines detailed toxin data with comprehensive toxin target information. It covers thousands of toxins, including pollutants, pesticides, drugs, and food toxins, annotated with chemical, toxicological, mechanistic, and target details across more than 90 data fields per record. Each toxin is linked to its corresponding protein, gene, or other molecular targets along with the associated mechanisms of toxicity. T3DB is an upstream primary source for PharmDB." ;
     dcterms:identifier "t3db" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/25378312/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <http://www.t3db.ca/downloads> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:pharmdb.graph,
         kgr:t3db.downloads,
         kgr:t3db.portal ;
@@ -22407,8 +22352,7 @@ kgr:tahe a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "tahe" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:tahe.obo,
         kgr:tahe.owl ;
@@ -22422,8 +22366,7 @@ kgr:tahh a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "tahh" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:tahh.obo,
         kgr:tahh.owl ;
@@ -22701,8 +22644,7 @@ kgr:tfacts a schema1:DataSource ;
     dcterms:description "TFactS is a catalogue of literature-curated, signed transcription factor to target gene regulatory interactions, where each interaction records whether a transcription factor up-regulates or down-regulates its target. By comparing these curated \"regulons\" against differentially expressed genes, TFactS infers the activation or repression state of transcription factors from gene expression (microarray) data. It served as a foundational upstream source for the DoRothEA regulon collection. The original web service at tfacts.org is no longer operational and the domain has been re-registered for unrelated content." ;
     dcterms:identifier "tfacts" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/20215436/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dorothea.graph,
         kgr:tfacts.publication ;
     schema1:name "TFactS" ;
@@ -22992,8 +22934,7 @@ kgr:treatkb a schema1:DataSource ;
     dcterms:description "TreatKB is a text-mined knowledge base of drug-treats-disease (treatment) relationships developed by the Rong Xu lab at Case Western Reserve University. Treatment pairs are extracted and combined from multiple lines of evidence, including MEDLINE/PubMed literature, the FDA Adverse Event Reporting System (FAERS), and ClinicalTrials.gov records, alongside a curated gold-standard set of drug-disease treatment pairs. The data are distributed as plain-text files from the Xu lab public data server. TreatKB has been used as a source to construct GP-KG." ;
     dcterms:identifier "treatkb" ;
     dcterms:isReferencedBy <doi:10.1186/1471-2105-14-181> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gp-kg.graph,
         kgr:treatkb.goldstandard,
         kgr:treatkb.publication ;
@@ -23011,8 +22952,7 @@ kgr:tred a schema1:DataSource ;
     dcterms:description "TRED (Transcriptional Regulatory Element Database) was a curated database of cis-regulatory elements, with an emphasis on transcription factor (TF) binding sites, TF-promoter regulatory interactions, and promoter annotations for human, mouse, and rat genes. It combined computational promoter prediction with literature-based manual curation of regulatory interactions, and was originally developed and hosted at Cold Spring Harbor Laboratory. TRED served as an upstream primary source for downstream regulatory network resources such as DoRothEA. The resource is now legacy and effectively superseded; its original hosting sites are no longer serving content, and it was dropped from some downstream tools due to licensing constraints." ;
     dcterms:identifier "tred" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/17202159/> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dorothea.graph,
         kgr:tred.docs ;
     schema1:name "Transcriptional Regulatory Element Database" ;
@@ -23818,8 +23758,7 @@ kgr:usdm a schema1:DataSource ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The U.S. Drought Monitor (USDM) is a weekly map and dataset that classifies the location and severity of drought across the United States, its territories, and tribal areas. It is produced jointly by the National Drought Mitigation Center at the University of Nebraska-Lincoln, the U.S. Department of Agriculture, and the National Oceanic and Atmospheric Administration, drawing on numerous climatic and hydrologic indicators plus local expert input. USDM data and maps serve as an upstream source for KnowWhereGraph." ;
     dcterms:identifier "usdm" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:knowwheregraph.graph,
         kgr:usdm.data,
         kgr:usdm.map ;
@@ -23998,8 +23937,7 @@ kgr:vhog a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "vhog" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:vhog.kg-bioportal,
         kgr:vhog.owl ;
     schema1:name "Vertebrate Homologous Ontology Group Ontology" ;
@@ -24049,8 +23987,7 @@ kgr:vsao a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Vertebrate skeletal anatomy ontology." ;
     dcterms:identifier "vsao" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:7742> ;
     schema1:hasPart kgr:vsao.kg-bioportal,
         kgr:vsao.owl ;
@@ -24565,8 +24502,7 @@ kgr:ypo a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "ypo" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:4932> ;
     schema1:name "Yeast phenotypes" ;
     skos:inScheme "biological systems",
@@ -24579,8 +24515,7 @@ kgr:zea a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "zea" ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:4575> ;
     schema1:hasPart kgr:zea.kg-bioportal ;
     schema1:name "Maize gross anatomy" ;
@@ -37174,8 +37109,8 @@ kgr:planteome a schema1:Aggregator,
     dcterms:description "Planteome is an integrated resource that develops and hosts a suite of reference plant ontologies (including the Plant Ontology, Plant Trait Ontology, and Plant Experimental Conditions Ontology) alongside species-specific crop ontologies. It aggregates and cross-references genome and phenotype annotations from many plant species against these common ontologies, enabling comparative genomics and phenomics across taxa. The resource is maintained at Oregon State University and provides an AmiGO-based browser for searching ontology terms, bioentities, and annotations. Planteome serves as the upstream source for derived knowledge graphs such as eco-KG." ;
     dcterms:identifier "planteome" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/29186578> ;
-    dcterms:license "Not specified" ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:eco-kg.graph,
         kgr:planteome.browser,
         kgr:planteome.po ;
