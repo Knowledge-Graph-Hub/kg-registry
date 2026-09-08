@@ -15,11 +15,8 @@ domains:
 - biomedical
 homepage_url: https://obofoundry.org/ontology/tahh
 id: tahh
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Terminology of Anatomy of Human Histology
 products:
 - category: OntologyProduct

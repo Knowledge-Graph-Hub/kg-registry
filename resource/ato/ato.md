@@ -17,11 +17,8 @@ domains:
 - biological systems
 homepage_url: http://www.amphibanat.org
 id: ato
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Amphibian taxonomy
 products:
 - category: OntologyProduct

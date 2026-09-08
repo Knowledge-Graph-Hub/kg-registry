@@ -18,11 +18,11 @@ domains:
 - anatomy and development
 homepage_url: http://www.plantontology.org
 id: pao
-last_modified_date: '2026-07-10T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: Plant Anatomy Ontology
 products:
 - category: OntologyProduct

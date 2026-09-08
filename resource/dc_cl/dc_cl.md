@@ -16,11 +16,8 @@ domains:
 - anatomy and development
 homepage_url: http://www.dukeontologygroup.org/Projects.html
 id: dc_cl
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Dendritic cell
 products:
 - category: OntologyProduct

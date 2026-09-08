@@ -15,11 +15,8 @@ domains:
 - anatomy and development
 homepage_url: http://www.gramene.org/plant_ontology/
 id: gro
-last_modified_date: '2026-06-25T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Cereal Plant Gross Anatomy
 products: []
 publications: []

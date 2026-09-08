@@ -10,11 +10,8 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.inoh.org
 id: iev
-last_modified_date: '2026-06-24T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Event (INOH pathway ontology)
 products:
 - category: OntologyProduct

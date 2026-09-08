@@ -22,11 +22,11 @@ domains:
 - biomedical
 homepage_url: https://publichealth.lsuhsc.edu/louisiana-tumor-registry/
 id: louisiana-tumor-registry
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://publichealth.lsuhsc.edu/louisiana-tumor-registry/data-usestatistics/data-request.aspx
+  label: LTR data request terms (data released by application; IRB approval for case-specific data)
 name: Louisiana Tumor Registry
 products:
 - category: GraphicalInterface

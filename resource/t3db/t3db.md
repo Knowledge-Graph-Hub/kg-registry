@@ -16,11 +16,11 @@ domains:
 - pharmacology
 homepage_url: http://www.t3db.ca/
 id: t3db
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: http://www.t3db.ca/downloads
+  label: T3DB terms (free for non-commercial use; commercial use or redistribution requires permission)
 name: Toxin and Toxin Target Database
 products:
 - category: GraphicalInterface

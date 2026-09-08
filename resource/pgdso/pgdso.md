@@ -15,11 +15,8 @@ domains:
 - anatomy and development
 homepage_url: http://www.plantontology.org
 id: pgdso
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Plant Growth and Development Stage
 products:
 - category: OntologyProduct

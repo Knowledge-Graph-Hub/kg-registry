@@ -17,11 +17,8 @@ domains:
 - biological systems
 homepage_url: https://rulai.cshl.edu/TRED/
 id: tred
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: Transcriptional Regulatory Element Database
 products:
 - category: DocumentationProduct

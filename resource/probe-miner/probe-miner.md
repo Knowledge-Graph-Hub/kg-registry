@@ -23,11 +23,11 @@ domains:
 homepage_url: https://probeminer.icr.ac.uk
 id: probe-miner
 infores_id: probe-miner
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: Probe Miner
 products:
 - category: GraphicalInterface

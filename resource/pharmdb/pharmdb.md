@@ -15,7 +15,7 @@ layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
     license (custom) among its sources: ctd, dip. Not accounted for, no known license:
-    dcdb, gad, matador, t3db.'
+    dcdb, gad.'
   id: https://ctdbase.org/about/legal.jsp
   inferred_from:
   - ctd
@@ -26,8 +26,6 @@ license:
   unresolved_sources:
   - dcdb
   - gad
-  - matador
-  - t3db
 name: PharmDB
 products:
 - category: GraphicalInterface

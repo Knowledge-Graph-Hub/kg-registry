@@ -15,11 +15,11 @@ domains:
 - literature
 homepage_url: https://github.com/DizzyPanda1/GreenwashingDetectionDataset
 id: greenclaims
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://opensource.org/license/mit/
+  label: MIT
 name: GreenClaims
 products:
 - category: DataDump

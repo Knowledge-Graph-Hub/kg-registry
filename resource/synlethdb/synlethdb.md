@@ -24,11 +24,8 @@ domains:
 - drug discovery
 homepage_url: https://synlethdb.sist.shanghaitech.edu.cn/
 id: synlethdb
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
-license:
-  id: ''
-  label: Not specified
 name: SynLethDB
 products:
 - category: Product

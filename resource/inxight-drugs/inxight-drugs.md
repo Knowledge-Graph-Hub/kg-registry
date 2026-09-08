@@ -27,11 +27,11 @@ domains:
 homepage_url: https://drugs.ncats.io
 id: inxight-drugs
 infores_id: inxight-drugs
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://drugs.ncats.io/
+  label: Public Domain (NCATS states all facts in these datasets are in the public domain)
 name: 'Inxight: Drugs'
 products:
 - category: DataProduct

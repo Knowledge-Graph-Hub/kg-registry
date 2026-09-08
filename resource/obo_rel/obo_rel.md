@@ -4,15 +4,12 @@ name: OBO relationship types (legacy)
 description: Description unavailable.
 activity_status: inactive
 homepage_url: http://www.obofoundry.org/ro
-license:
-  id: ''
-  label: Not specified
 collection:
 - obo-foundry
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-25T00:00:00Z'
+last_modified_date: '2026-09-08T00:00:00Z'
 domains:
 - biological systems
 - general
