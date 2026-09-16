@@ -12,6 +12,7 @@ name: MicroMap Neo4j Schema
 original_source:
 - relation_type: prov:hadPrimarySource
   source: micromap
+product_file_size: 4414
 product_url: https://github.com/vkhangraphomics/micromap-oss/blob/main/database/neo4j_microbiome_schema.cypher
 repository: https://github.com/vkhangraphomics/micromap-oss
 layout: product_detail

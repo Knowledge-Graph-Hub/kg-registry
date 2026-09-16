@@ -52,8 +52,6 @@ products:
     source: ssurgo
   product_url: https://nrcs.app.box.com/v/soils
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
     when accessing file'
 - category: GraphProduct

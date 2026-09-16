@@ -10,12 +10,12 @@ original_source:
   source: tcdb
 product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
 warnings:
+- File was not able to be retrieved when checked on 2026-09-16_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2026-09-08_ HTTP 500 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-08-12_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-08-06_ Timeout connecting
-  to URL
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL
 layout: product_detail

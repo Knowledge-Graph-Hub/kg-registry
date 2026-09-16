@@ -746,8 +746,8 @@ enums:
         meaning: https://graphviz.org/doc/info/lang.html
       dwca:
         text: dwca
-        description: The Darwin Core Archive (DwC-A) format, a zipped package of one or
-          more text tables (usually CSV or TSV) following the Darwin Core standard,
+        description: The Darwin Core Archive (DwC-A) format, a zipped package of one
+          or more text tables (usually CSV or TSV) following the Darwin Core standard,
           together with a meta.xml descriptor and an EML metadata file. It is the
           standard exchange format for biodiversity occurrence and checklist data.
         meaning: https://dwc.tdwg.org/text/
@@ -853,8 +853,9 @@ enums:
           is in this format, it is likely a MySQL database dump.
       n3:
         text: n3
-        description: The Notation3 (N3) format, a compact text serialization of RDF that
-          extends Turtle with support for rules and formulae. Files usually end in .n3.
+        description: The Notation3 (N3) format, a compact text serialization of RDF
+          that extends Turtle with support for rules and formulae. Files usually end
+          in .n3.
         meaning: edam:3257
       neo4j:
         text: neo4j
@@ -892,9 +893,9 @@ enums:
       parquet:
         text: parquet
         description: The Apache Parquet format, a columnar binary storage format for
-          tabular data designed for efficient compression and querying of large
-          datasets. It is common in cloud-native data lakes. GeoParquet is Parquet with
-          geospatial columns.
+          tabular data designed for efficient compression and querying of large datasets.
+          It is common in cloud-native data lakes. GeoParquet is Parquet with geospatial
+          columns.
         meaning: https://parquet.apache.org/docs/file-format/
       pdf:
         text: pdf
@@ -1038,8 +1039,8 @@ enums:
       xlsx:
         text: xlsx
         description: The Microsoft Excel Open XML Spreadsheet (XLSX) format, a zipped,
-          XML-based file format for spreadsheets. Also used for the legacy binary Excel
-          (.xls) workbook format.
+          XML-based file format for spreadsheets. Also used for the legacy binary
+          Excel (.xls) workbook format.
         meaning: edam:3620
       xml:
         text: xml

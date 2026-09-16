@@ -2,48 +2,52 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: The NCATS BioPlanet is a comprehensive, publicly accessible informatics resource that catalogues all pathways, their healthy and disease state annotations, and targets within and relationships among them.
+description: The NCATS BioPlanet is a comprehensive, publicly accessible informatics
+  resource that catalogues all pathways, their healthy and disease state annotations,
+  and targets within and relationships among them.
 domains:
-  - pathways
-  - toxicology
-id: "bioplanet"
-infores_id: "bioplanet"
+- pathways
+- toxicology
+homepage_url: https://tripod.nih.gov/bioplanet/
+id: bioplanet
+infores_id: bioplanet
 last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: BioPlanet
-homepage_url: https://tripod.nih.gov/bioplanet/
 products:
-  - category: Product
-    description: Comprehensive integrated pathway resource that incorporates 1,658 distinct human pathways.
-    format: csv
-    id: "bioplanet.data"
-    name: BioPlanet Pathway Data
-    original_source:
-      - source: bioplanet
-        relation_type: prov:hadPrimarySource
-    product_url: https://tripod.nih.gov/bioplanet/download/pathway.csv
+- category: Product
+  description: Comprehensive integrated pathway resource that incorporates 1,658 distinct
+    human pathways.
+  format: csv
+  id: bioplanet.data
+  name: BioPlanet Pathway Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioplanet
+  product_file_size: 4696219
+  product_url: https://tripod.nih.gov/bioplanet/download/pathway.csv
 publications:
-  - authors:
-      - Huang R
-      - Grishagin I
-      - Wang Y
-      - Zhao T
-      - Greene J
-      - Obenauer JC
-      - Ngan D
-      - Nguyen D-T
-      - Guha R
-      - Jadhav A
-      - Southall N
-      - Simeonov A
-      - Austin CP
-    id: "doi:10.3389/fphar.2019.00445"
-    doi: "10.3389/fphar.2019.00445"
-    journal: Frontiers in Pharmacology
-    title: "The NCATS BioPlanet – An Integrated Platform for Exploring the Universe of Cellular Signaling Pathways for Toxicology, Systems Biology, and Chemical Genomics"
-    year: "2019"
+- authors:
+  - Huang R
+  - Grishagin I
+  - Wang Y
+  - Zhao T
+  - Greene J
+  - Obenauer JC
+  - Ngan D
+  - Nguyen D-T
+  - Guha R
+  - Jadhav A
+  - Southall N
+  - Simeonov A
+  - Austin CP
+  doi: 10.3389/fphar.2019.00445
+  id: doi:10.3389/fphar.2019.00445
+  journal: Frontiers in Pharmacology
+  title: The NCATS BioPlanet – An Integrated Platform for Exploring the Universe of
+    Cellular Signaling Pathways for Toxicology, Systems Biology, and Chemical Genomics
+  year: '2019'
 ---
-
 # BioPlanet
 
 ## Overview

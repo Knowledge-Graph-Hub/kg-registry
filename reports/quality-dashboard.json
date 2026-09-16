@@ -10,9 +10,9 @@
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 897,
+    "modified_after_creation": 908,
     "stale_over_365_days": 6,
-    "unchanged_since_creation": 135,
+    "unchanged_since_creation": 124,
     "with_both_dates": 1032
   },
   "detail_lists": {
@@ -1544,6 +1544,7 @@
       "biomuta.pipeline",
       "biomuta.portal",
       "bioplanet",
+      "bioplanet.data",
       "bioportal",
       "bioportal.api",
       "bioportal.portal",
@@ -9281,6 +9282,7 @@
       "clinical-data-kp",
       "clinicalkg",
       "clinicaltrialsgov",
+      "clinpgx",
       "clinvar",
       "clo",
       "clue",
@@ -9421,6 +9423,7 @@
       "erccreg",
       "ero",
       "esgf",
+      "eu-knowledge-graph",
       "eupath",
       "eupathdb",
       "ev",
@@ -9455,6 +9458,7 @@
       "fovt",
       "fypo",
       "gad",
+      "gadm",
       "gallont",
       "gard",
       "gaz",
@@ -9523,6 +9527,7 @@
       "hifld",
       "hippie",
       "hmdb",
+      "hocomoco",
       "hom",
       "homologene",
       "hp",
@@ -9549,6 +9554,7 @@
       "icees-kg",
       "iceo",
       "icgc",
+      "ickg",
       "ico",
       "iconclass",
       "identifier-mappings",
@@ -9578,12 +9584,14 @@
       "iptmnet",
       "irefindex",
       "itis",
+      "jaspar",
       "kegg",
       "kentucky-cancer-registry",
       "kg-alzheimers",
       "kg-covid-19",
       "kg-ebi-gene2pheno",
       "kg-enp",
+      "kg-fm",
       "kg-idg",
       "kg-jensenlab-diseases",
       "kg-microbe",
@@ -9945,6 +9953,7 @@
       "snomedct",
       "snopy",
       "snornadatabase",
+      "snpeff",
       "so",
       "sockg",
       "sopharm",
@@ -9966,6 +9975,7 @@
       "sty",
       "sudokn",
       "suppkg",
+      "surechembl",
       "swisslipid",
       "swissmodel",
       "swo",
@@ -9999,6 +10009,7 @@
       "translator",
       "treatkb",
       "tred",
+      "trrust",
       "try",
       "ttd",
       "tto",
@@ -10029,6 +10040,7 @@
       "wbbt",
       "wbls",
       "wbphenotype",
+      "web-of-science",
       "who",
       "wikidata",
       "wikipathways",
@@ -14217,250 +14229,26 @@
       "zwd.alignments"
     ],
     "products_missing_format_ids": [
-      "4dn.jupyterhub",
-      "4dn.micrometa",
-      "aact.dictionary",
-      "aact.schema",
-      "activedriverdb.downloads",
-      "activedriverdb.portal",
-      "aeolus.standardized_data",
-      "alliance.downloads",
       "amyco.annotations",
-      "arax.api",
-      "arax.araxi.docs",
-      "arax.examples",
-      "arax.github",
-      "atgo.ontology",
       "bind.data",
-      "bindingdb.chebi_mapping",
-      "bindingdb.cid_mapping",
-      "bindingdb.drugbank_mapping",
-      "bindingdb.sid_mapping",
-      "bindingdb.uniprot_mapping",
-      "bio2rdf.biosearch",
-      "biobricks-aopwiki.tpf",
-      "biobricks-ice.tpf",
-      "biobricks-mesh.tpf",
-      "biobricks-pubchem-annotations.tpf",
-      "biobricks-tox21.tpf",
-      "biobricks-toxcast.tpf",
-      "biohealth.tpf",
-      "biomarker.sparql",
-      "biomarker.tpf",
-      "biomuta.pipeline",
-      "biomuta.portal",
-      "bioplanet.data",
-      "bioteque.bqsupports",
-      "bioteque.code",
-      "biothings.sdk",
-      "cancer-registry-kg.api",
       "cancer-registry-kg.cdi",
       "cancer-registry-kg.kcr",
       "cancer-registry-kg.ltr",
       "cancer-registry-kg.visualization",
-      "cardiokg.embeddings",
-      "cardiokg.workflow",
-      "cardiokg.zenodo-archive",
-      "catalogue-of-life.annual-releases",
-      "catalogue-of-life.checklistbank",
-      "catalogue-of-life.downloads",
-      "ccre.screen",
-      "cl-kg.api.neo4j",
-      "climatemodelskg.tpf",
-      "clingen.variant.frameworks",
-      "clinpgx.api",
-      "clinpgx.downloads",
-      "clinpgx.portal",
-      "compartments.downloads",
-      "ctd2.dashboard",
-      "ctd2.data-portal",
-      "ctd2.usage-guide",
-      "cureid.about",
-      "cytoscape.app-store",
-      "cytoscape.automation-api",
-      "cytoscape.desktop",
-      "dbptm.portal",
-      "dcat.ttl",
-      "ddinter.ddi_annotations",
-      "diseases.dictionary",
-      "docm.data.sql",
-      "dorothea.graph",
-      "dreamkg.tpf",
-      "drug-approvals-kp.code",
-      "ecid.ccdb.site",
-      "ecid.compound.lists",
-      "ecid.dataset.list",
-      "ecid.echo.analyte.list",
-      "ecid.edir.site",
-      "ecid.hhear.analyte.list",
-      "ecid.metabolomics.data.dictionary",
-      "ecid.metabolomics.workbench.dictionary",
-      "ecid.nhanes.analyte.list",
-      "edrr-invasive-catalog.dataset",
-      "efip.text-mining-system",
-      "ehrlink.pharmacotherapydb-processing",
-      "emeraldgraph.datasets",
-      "emeraldgraph.pipeline",
-      "emeraldgraph.zenodo-archive",
-      "emerge.nhgri-project-page",
-      "emerge.portal",
-      "emikg.web",
-      "endb.browse",
-      "endb.download",
-      "enhanceratlas.browse",
-      "enhanceratlas.download",
-      "ensembl.blast",
-      "ensembl.vep",
-      "epigraphdb.examples",
-      "eu-knowledge-graph.exports",
-      "eu-knowledge-graph.wikibase-config",
-      "finngen.endpoints",
-      "finngen.meta_analysis",
-      "finngen.summary_stats",
-      "fiokg.tpf",
-      "gadm.download_country",
-      "gadm.download_world",
-      "gadm.metadata",
-      "gbif.csv-download",
-      "gbif.dwc-archive",
-      "gbif.ipt",
-      "genomickb.site",
-      "genophenoenvo-kg.code",
-      "genophenoenvo-kg.neo4j",
-      "glyconavi.portal",
-      "go-cam.minerva",
-      "gp-kg.process.kg-predict",
-      "harmonizome.documentation",
-      "harmonizome.portal",
-      "hetionet.hetnetpy",
-      "hydrologykg.tpf",
-      "ickg.code",
-      "immport.download-client",
-      "innatedb.downloads",
-      "intermine.documentation",
-      "intermine.registry",
-      "intermine.registry-api",
-      "intermine.software",
-      "kentucky-cancer-registry.cancer-rates",
-      "kentucky-cancer-registry.research",
-      "kg-fm.abstract_text",
-      "kg-fm.answer_references",
       "kg-fm.demonstration_video",
-      "kg-fm.graph",
-      "kg-fm.json_extractions",
       "kg-monarch.solr",
-      "kgcl.python",
-      "kinace.github_archive",
-      "kinace.zenodo_archive",
-      "kinomescan.spreadsheet",
-      "maizegdb.downloads",
-      "maizegdb.gene_model_gff",
-      "maizegdb.maizemine",
-      "mechreponet.code",
-      "med-rt.accessory_files",
-      "med-rt.core_dts",
-      "med-rt.core_spl",
-      "meddra.ich-page",
-      "meddra.release-files",
-      "meddra.web-browser",
-      "medi.ema",
-      "medi.matrix_indication_list",
-      "medi.orangebook",
-      "medi.pmda",
-      "medkg.site",
-      "mgmlink.code",
-      "mixs.model",
-      "modomics.images",
-      "modomics.mol2",
-      "modomics.n3",
-      "modomics.pdb",
-      "modomics.positions",
-      "molecular-data-kp.api",
-      "motifmap.portal",
-      "myaura.workflow",
-      "namsnetwork.portal",
-      "ndcd.excel",
-      "ndfrt.rxnorm",
-      "ndfrt.umls",
-      "nikg.tpf",
-      "nlm-ckn.etl",
-      "nlm-ckn.harvester",
-      "nlm-ckn.nsforest-qc",
-      "nlm-ckn.schema",
-      "nlm-ckn.scsilhouette",
-      "nsides.kidsides.code",
-      "nsides.onsides.code",
-      "obis.dca",
-      "obis.geoparquet",
-      "obis.seamap",
       "ols.solr",
-      "open-tree-of-life.bulk-download",
-      "open-tree-of-life.phylesystem",
-      "orphanet.nomenclature",
-      "p3db.portal",
-      "p3db.ptm-search",
-      "petagraph.graph",
-      "pfam.a.data",
-      "pfam.a.fullalignment",
-      "pfam.a.models",
-      "pfam.a.seedalignment",
-      "pgxmine.code",
-      "pheknowlator.code",
-      "phosphat.predictor",
-      "phosphoelm.phosphoblast",
-      "phosphogrid.portal",
-      "pubtator.bulk",
-      "rampdb.api",
-      "rampdb.database",
       "rdbridge.graph",
       "repohub.followup-compounds",
       "repohub.repo1-library",
       "repohub.screening-library",
-      "robokop.graph",
-      "rtx-kg2.code",
-      "ruralkg.tpf",
-      "sawgraph.tpf",
-      "scales.tpf",
-      "semmeddb.semrep.tool",
-      "sibils.api.rest.fetch",
-      "sibils.api.rest.qa",
-      "sibils.api.rest.search",
-      "sibils.api.sparql",
-      "sibils.site",
-      "skm.ckn.explorer",
-      "skm.pss.explorer",
-      "snomedct.icd10cm.map",
-      "snomedct.international.content",
-      "snomedct.nursing",
-      "snomedct.us.content",
-      "snpeff.databases",
-      "snpeff.download",
-      "snpeff.github",
-      "snpeff.sourceforge",
-      "sockg.tpf",
-      "spatialkg.tpf",
-      "spoke-genelab.tpf",
-      "stellar.code",
-      "stellar.datasets",
-      "surechembl.bulk-data",
-      "text-mining-kp.graph",
-      "tfacts.publication",
-      "toxcast.downloads",
-      "treatkb.publication",
       "ubergraph.blazegraph.jnl",
-      "ubergraph.rdf",
-      "umls.metamorphosys",
-      "umls.release",
-      "umls.specialist_lexicon",
-      "unibiomap.code",
-      "wikidata.dumps.incremental",
       "worldclim.download"
     ],
     "products_missing_original_source_ids": [],
     "products_missing_product_url_ids": [
       "amyco.annotations",
       "bind.data",
-      "bioplanet.data",
       "cam-kp.ctd-interactions",
       "cam-kp.reactome-cams",
       "cfde-gse.graph",
@@ -16163,7 +15951,6 @@
       "cdc-svi",
       "cdd",
       "cellphonedb",
-      "clinpgx",
       "cmip",
       "collectri",
       "courage",
@@ -16182,12 +15969,10 @@
       "epa-ucmr",
       "epd",
       "era-kg",
-      "eu-knowledge-graph",
       "eurio",
       "expression-atlas",
       "fabric",
       "fantom5",
-      "gadm",
       "gcmd",
       "gene-expression-omnibus",
       "geneorganizer",
@@ -16197,17 +15982,13 @@
       "gnomad",
       "google-reviews",
       "gutmdisorder",
-      "hocomoco",
       "hpap",
       "ice",
-      "ickg",
       "iidp",
       "imgt",
       "imo-knowledge-graph",
       "iucn-red-list",
-      "jaspar",
       "kg-bioportal",
-      "kg-fm",
       "lmha",
       "lncrnadisease",
       "lotus",
@@ -16259,12 +16040,9 @@
       "sfld",
       "sic",
       "sniff",
-      "snpeff",
       "sparc",
-      "surechembl",
       "tox21",
       "treefam",
-      "trrust",
       "ucnebase",
       "ucsc",
       "uniref",
@@ -16277,14 +16055,13 @@
       "vdjserver",
       "vista",
       "water-quality-portal",
-      "web-of-science",
       "wipo-tkp",
       "worldclim",
       "zwd"
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-09-16T20:18:06Z",
+  "generated_at": "2026-09-16T22:06:20Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 162,
     "with_evaluation_page": 127,
@@ -16292,18 +16069,18 @@
   },
   "links": {
     "broken_urls": 244,
-    "cache_hits": 8,
+    "cache_hits": 4615,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4380,
-    "live_checked_urls": 4616,
+    "healthy_urls": 4383,
+    "live_checked_urls": 12,
     "mode": "live",
-    "total_unique_urls": 4624,
+    "total_unique_urls": 4627,
     "unchecked_urls": 0
   },
   "products": {
-    "missing_format": 238,
+    "missing_format": 15,
     "missing_original_source": 0,
-    "missing_product_url": 22,
+    "missing_product_url": 21,
     "total": 4165,
     "with_retrieval_warning": 49
   },
@@ -16332,9 +16109,9 @@
     "without_publications": 358
   },
   "scoring": {
-    "average_score": 7.11,
-    "median_score": 7.0,
-    "resources_with_issues": 995,
+    "average_score": 6.87,
+    "median_score": 6.0,
+    "resources_with_issues": 993,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -16367,181 +16144,181 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/alliance/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bgee/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bindingdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/chembl/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/cohd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dakp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dgidb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/diseases/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drugcentral/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/geneticskp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/go_cam/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/goa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gtopdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/hpoa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/icees/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/intact/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/panther/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/pathbank/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/semmeddb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/sider/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/signor/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/tmkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/translator_kg/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ttd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ubergraph/latest/"
         }
@@ -16583,37 +16360,37 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/crosswalks"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/knowledge-graph"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/terminology-server-api"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/value-sets-graphql"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/mcp-server"
         }
@@ -16672,7 +16449,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
         }
@@ -16731,7 +16508,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html"
         }
@@ -16790,80 +16567,21 @@
       "broken_links": [
         {
           "sources": [
-            "live"
-          ],
-          "url": "https://aact.ctti-clinicaltrials.org/connect"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://aact.ctti-clinicaltrials.org/data_dictionary"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://aact.ctti-clinicaltrials.org/downloads"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://aact.ctti-clinicaltrials.org/playground"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://github.com/ctti-clinicaltrials/aact"
-        }
-      ],
-      "id": "aact",
-      "issues": [
-        {
-          "count": 5,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 15
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 2,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 2
-        }
-      ],
-      "name": "Aggregate Analysis of ClinicalTrials.gov (AACT) Database",
-      "resource_page": "resource/aact/aact.html",
-      "score": 19
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://bio-annotation.cn/gutMDisorder/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://bio-annotation.cn/gutMDisorder/public/res/2.0-literature-associations.xlsx"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx"
         }
@@ -16916,7 +16634,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.inoh.org"
         }
@@ -16969,7 +16687,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html"
         }
@@ -17022,7 +16740,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.obofoundry.org/ro"
         }
@@ -17075,7 +16793,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://4dx.embl.de/platy"
         }
@@ -17122,6 +16840,52 @@
       "name": "Platynereis stage ontology",
       "resource_page": "resource/pd_st/pd_st.html",
       "score": 19
+    },
+    {
+      "activity_status": "inactive",
+      "broken_links": [],
+      "id": "gro",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "no_products",
+          "label": "No products listed",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Cereal Plant Gross Anatomy",
+      "resource_page": "resource/gro/gro.html",
+      "score": 18
     }
   ]
 }

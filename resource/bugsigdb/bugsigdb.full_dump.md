@@ -8,6 +8,7 @@ name: BugSigDB full dump
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bugsigdb
+product_file_size: 3276228
 product_url: https://raw.githubusercontent.com/waldronlab/BugSigDBExports/main/full_dump.csv
 repository: https://github.com/waldronlab/BugSigDBExports
 layout: product_detail
