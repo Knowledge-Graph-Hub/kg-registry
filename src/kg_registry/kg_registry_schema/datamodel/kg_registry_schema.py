@@ -152,6 +152,10 @@ class FormatEnum(str, Enum):
     """
     The DOT format, a plain text graph description language used to define the structure of graphs. It is often used with Graphviz to visualize graphs.
     """
+    dwca = "dwca"
+    """
+    The Darwin Core Archive (DwC-A) format, a zipped package of one or more text tables (usually CSV or TSV) following the Darwin Core standard, together with a meta.xml descriptor and an EML metadata file. It is the standard exchange format for biodiversity occurrence and checklist data.
+    """
     fasta = "fasta"
     """
     The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
@@ -167,6 +171,10 @@ class FormatEnum(str, Enum):
     hdf5 = "hdf5"
     """
     The Hierarchical Data Format version 5 (HDF5) format, a file format and set of tools for managing complex data. It is designed to store and organize large amounts of data in a hierarchical structure, allowing for efficient access and manipulation.
+    """
+    hmmer = "hmmer"
+    """
+    The HMMER profile hidden Markov model format, a text format for profile HMMs built and searched with the HMMER package. It is used for profile libraries such as Pfam-A.hmm and usually ends in .hmm.
     """
     http = "http"
     """
@@ -204,13 +212,25 @@ class FormatEnum(str, Enum):
     """
     The KGX standard, which is a graph exchange format for knowledge graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single file.
     """
+    markdown = "markdown"
+    """
+    The Markdown format, a lightweight plain-text markup language commonly used for documentation such as README files and wiki pages. Files usually end in .md.
+    """
     mixed = "mixed"
     """
     A product that contains multiple formats or serializations. This is used when a product is not easily categorized into a single format, such as a codebase that includes multiple file types (e.g., Python scripts, JSON files, etc.).
     """
+    mol2 = "mol2"
+    """
+    The Tripos Mol2 format, a text format for describing molecular structures including atoms, bonds, substructures, and partial charges. Files end in .mol2.
+    """
     mysql = "mysql"
     """
     The MySQL relational database management system. If a product is in this format, it is likely a MySQL database dump.
+    """
+    n3 = "n3"
+    """
+    The Notation3 (N3) format, a compact text serialization of RDF that extends Turtle with support for rules and formulae. Files usually end in .n3.
     """
     neo4j = "neo4j"
     """
@@ -231,6 +251,10 @@ class FormatEnum(str, Enum):
     owl = "owl"
     """
     The Web Ontology Language (OWL) format, a semantic web language designed to represent rich and complex knowledge about things and their relationships. OWL builds on RDF and adds more vocabulary for describing properties and classes.
+    """
+    parquet = "parquet"
+    """
+    The Apache Parquet format, a columnar binary storage format for tabular data designed for efficient compression and querying of large datasets. It is common in cloud-native data lakes. GeoParquet is Parquet with geospatial columns.
     """
     pdf = "pdf"
     """
@@ -259,6 +283,10 @@ class FormatEnum(str, Enum):
     python = "python"
     """
     The Python script format, which is a text file containing Python code. It is used for writing scripts and programs in the Python language.
+    """
+    r = "r"
+    """
+    The R script or package format, which is a text file or package containing R code. It is used for writing scripts and programs in the R language, including data packages that distribute datasets as R objects.
     """
     rdfxml = "rdfxml"
     """
@@ -331,6 +359,10 @@ class FormatEnum(str, Enum):
     xgmml = "xgmml"
     """
     The eXtensible Graph Markup Language (XGMML) format, an XML-based format for representing graphs and networks.
+    """
+    xlsx = "xlsx"
+    """
+    The Microsoft Excel Open XML Spreadsheet (XLSX) format, a zipped, XML-based file format for spreadsheets. Also used for the legacy binary Excel (.xls) workbook format.
     """
     xml = "xml"
     """
