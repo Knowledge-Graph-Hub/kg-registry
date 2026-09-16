@@ -3286,6 +3286,14 @@ products:
     source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: semmeddb
+  - relation_type: prov:wasDerivedFrom
+    source: gutmdisorder
+  - relation_type: prov:wasDerivedFrom
+    source: bugsigdb
+  - relation_type: prov:wasDerivedFrom
+    source: gmrepo
+  - relation_type: prov:wasDerivedFrom
+    source: mbodymap
   product_url: https://www.graphomics.com/docs
 publications:
 - authors:
