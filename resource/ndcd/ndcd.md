@@ -51,8 +51,7 @@ products:
   product_url: https://www.accessdata.fda.gov/cder/ndctext.zip
 - category: Product
   compression: zip
-  description: Downloadable database file in Excel format containing finished drug
-    product information
+  description: Downloadable NDC database files (product.xls and package.xls) containing finished drug product information. Despite the .xls extension, the files are tab-delimited text.
   format: tsv
   id: ndcd.excel
   name: NDC Database Excel File

@@ -49,7 +49,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: snomedct
-  product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
+  product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/SnomedCT_ManagedServiceUS_PRODUCTION_US1000124_20260901T120000Z.zip
 - category: OntologyProduct
   compression: zip
   description: The monthly release of the International Edition of SNOMED CT, the

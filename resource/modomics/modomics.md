@@ -60,7 +60,7 @@ products:
   product_url: https://genesilico.pl/modomics/download/modification_pics/
 - category: Product
   compression: zip
-  description: Modified positions in PDB structure files.
+  description: Three-dimensional structures of modified bases. Although listed as PDB files, the archive served at this URL currently contains the same MOL2 files as the MOL2 download.
   format: mol2
   id: modomics.pdb
   name: MODOMICS PDB Modified Positions

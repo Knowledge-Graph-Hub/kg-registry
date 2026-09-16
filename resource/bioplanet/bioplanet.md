@@ -21,6 +21,7 @@ products:
     original_source:
       - source: bioplanet
         relation_type: prov:hadPrimarySource
+    product_url: https://tripod.nih.gov/bioplanet/download/pathway.csv
 publications:
   - authors:
       - Huang R
