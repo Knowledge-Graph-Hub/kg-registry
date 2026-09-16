@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: Open-source data processing workflow for building the myAURA knowledge
   graph and supporting application data.
+format: python
 id: myaura.workflow
 name: myAURA data processing workflow
 original_source:

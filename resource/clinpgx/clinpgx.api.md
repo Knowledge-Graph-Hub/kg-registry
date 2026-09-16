@@ -3,6 +3,7 @@ category: ProgrammingInterface
 connection_url: https://api.clinpgx.org/
 description: REST API for ClinPGx data and bulk file downloads, keeping the path structure
   of the former PharmGKB API (for example /v1/download/file/data/)
+format: http
 id: clinpgx.api
 is_public: true
 name: ClinPGx API

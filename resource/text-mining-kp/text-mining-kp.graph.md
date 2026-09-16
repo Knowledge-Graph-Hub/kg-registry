@@ -1,6 +1,7 @@
 ---
 category: GraphProduct
 description: Release files for the Text Mining KP
+format: kgx
 id: text-mining-kp.graph
 name: Text Mining KP Release Files
 original_source:

@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Cancer-Rates.com interactive interface providing population-based cancer
   incidence and mortality statistics for Kentucky derived from KCR data.
+format: http
 id: kentucky-cancer-registry.cancer-rates
 name: Cancer-Rates.com Kentucky Statistics
 original_source:

@@ -15,12 +15,13 @@ domains:
   - precision medicine
 homepage_url: https://hivelab.biochemistry.gwu.edu/biomuta
 id: biomuta
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: BioMuta
 products:
   - category: GraphicalInterface
     description: Production BioMuta web interface hosted by the GW HIVE Lab for exploring cancer-associated mutation records.
+    format: http
     id: biomuta.portal
     name: BioMuta Web Portal
     original_source:
@@ -47,6 +48,7 @@ products:
         source: tcga
   - category: ProcessProduct
     description: BioMuta v5 data release pipeline for downloading, converting, and combining cancer mutation source files into BioMuta datasets.
+    format: python
     id: biomuta.pipeline
     name: BioMuta Data Release Pipeline
     original_source:

@@ -23,32 +23,35 @@ domains:
 - agriculture
 homepage_url: https://www.maizegdb.org
 id: maizegdb
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: MaizeGDB
 products:
-- category: DataProduct
+- category: Product
   description: Bulk download server hosting maize and Andropogoneae genome assemblies,
     gene models (GFF, CDS, protein, genomic sequence), transposable element annotations,
     and other genomics datasets.
+  format: mixed
   id: maizegdb.downloads
   name: MaizeGDB Download Server
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maizegdb
   product_url: https://download.maizegdb.org/
-- category: DataProduct
+- category: Product
   description: Gene model annotation files in GFF format for maize genome assemblies
     hosted on the MaizeGDB download server.
+  format: gff
   id: maizegdb.gene_model_gff
   name: MaizeGDB Gene Model GFF Files
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maizegdb
   product_url: https://download.maizegdb.org/All_gene_model_GFF/
-- category: DataProduct
+- category: Product
   description: MaizeMine data warehouse downloads providing integrated and queryable
     maize genomics datasets.
+  format: mixed
   id: maizegdb.maizemine
   name: MaizeMine Downloads
   original_source:

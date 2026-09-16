@@ -40,6 +40,7 @@ products:
   name: Climate Models KG TPF
   description: Triple Pattern Fragments endpoint for Climate Models KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/climatemodelskg
   original_source:
   - source: climatemodelskg
@@ -64,7 +65,7 @@ products:
   - source: gcmd
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 Climate Models KG
 

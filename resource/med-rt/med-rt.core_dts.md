@@ -2,6 +2,7 @@
 category: Product
 compression: zip
 description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+format: mixed
 id: med-rt.core_dts
 name: Core MED-RT DTS Archive
 original_source:

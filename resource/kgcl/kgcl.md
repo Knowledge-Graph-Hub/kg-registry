@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://incatools.github.io/kgcl/
 id: kgcl
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -41,6 +41,7 @@ products:
 - category: ProcessProduct
   description: Python implementation of the Knowledge Graph Change Language standard,
     including a LinkML model and LARK grammar for parsing and generating KGCL statements.
+  format: python
   id: kgcl.python
   name: KGCL Python Implementation
   original_source:

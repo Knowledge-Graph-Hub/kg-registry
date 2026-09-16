@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for DREAM-KG
+format: http
 id: dreamkg.tpf
 name: DREAM-KG TPF
 original_source:

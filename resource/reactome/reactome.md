@@ -32,7 +32,7 @@ domains:
 homepage_url: https://reactome.org
 id: reactome
 infores_id: reactome
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -2696,6 +2696,7 @@ products:
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.
+  format: mysql
   id: rampdb.database
   is_public: true
   name: RaMP-DB Integrated Database
@@ -4122,6 +4123,7 @@ products:
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous
     networks)
+  format: python
   id: hetionet.hetnetpy
   name: hetnetpy
   original_source:
@@ -4188,6 +4190,7 @@ products:
   product_url: https://het.io/search
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:

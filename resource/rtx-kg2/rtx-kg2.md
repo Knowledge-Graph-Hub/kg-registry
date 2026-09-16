@@ -140,6 +140,7 @@ products:
     product_file_size: 1807360397
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   - category: ProcessProduct
+    format: python
     description: Code for building RTX-KG2, in Python
     id: rtx-kg2.code
     name: Code for building RTX-KG2
@@ -224,7 +225,7 @@ publications:
 repository: https://github.com/RTXteam/RTX-KG2
 infores_id: rtx-kg2
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 ## RTX-KG2: A Semantically Standardized Knowledge Graph for Translational Biomedicine

@@ -2,6 +2,7 @@
 category: GraphProduct
 description: Data exports of the EU Knowledge Graph, advertised on the instance's
   main page as available from data.linkedopendata.eu.
+format: mixed
 id: eu-knowledge-graph.exports
 name: EU Knowledge Graph Data Exports
 original_source:

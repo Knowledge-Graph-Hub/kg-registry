@@ -2,6 +2,7 @@
 category: Product
 description: Download page for GADM administrative boundary spatial data by country,
   the recommended approach for obtaining GADM polygons.
+format: mixed
 id: gadm.download_country
 name: GADM Data Download (by country)
 original_source:

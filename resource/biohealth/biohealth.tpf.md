@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for Bio-Health KG
+format: http
 id: biohealth.tpf
 name: Bio-Health KG TPF
 original_source:

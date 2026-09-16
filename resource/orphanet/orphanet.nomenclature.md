@@ -3,6 +3,7 @@ category: DataModelProduct
 description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers)
   for rare diseases, along with mappings to other terminologies, and is released annually
   in July.
+format: mixed
 id: orphanet.nomenclature
 name: Orphanet Nomenclature Pack
 original_source:

@@ -44,7 +44,7 @@ domains:
 homepage_url: https://icd.who.int/browse10
 id: icd10
 infores_id: icd10
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: ICD-10
 products:
@@ -89,8 +89,10 @@ products:
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
 - category: MappingProduct
+  compression: zip
   description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps
     SNOMED CT concepts to ICD-10-CM codes.
+  format: tsv
   id: snomedct.icd10cm.map
   name: SNOMED CT to ICD-10-CM Map
   original_source:

@@ -16,7 +16,7 @@ domains:
 homepage_url: https://www.ensembl.org
 id: ensembl
 infores_id: ensembl-gene
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.apache.org/licenses/LICENSE-2.0
@@ -46,6 +46,7 @@ products:
 - category: ProcessProduct
   description: A tool to analyze variants and predict the functional consequences
     of known and unknown variants.
+  format: http
   id: ensembl.vep
   name: Variant Effect Predictor (VEP)
   original_source:
@@ -55,6 +56,7 @@ products:
   warnings: []
 - category: ProcessProduct
   description: Tool to search Ensembl genomes for DNA or protein sequences.
+  format: http
   id: ensembl.blast
   name: BLAST/BLAT
   original_source:

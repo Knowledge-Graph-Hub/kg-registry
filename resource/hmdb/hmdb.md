@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.hmdb.ca/
 id: hmdb
 infores_id: hmdb
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.hmdb.ca/downloads
@@ -520,6 +520,7 @@ products:
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.
+  format: mysql
   id: rampdb.database
   is_public: true
   name: RaMP-DB Integrated Database
@@ -917,6 +918,7 @@ products:
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:

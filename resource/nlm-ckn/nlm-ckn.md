@@ -38,7 +38,7 @@ domains:
   - phenotype
 homepage_url: https://nlm-ckn.org
 id: nlm-ckn
-last_modified_date: '2026-07-14T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -80,6 +80,7 @@ products:
     product_url: https://github.com/NIH-NLM/nlm-ckn-ui
   - category: DataModelProduct
     description: LinkML data model (schema) for cell phenotypes and the biological entities they relate to, defining the node and edge types used in the NLM-CKN knowledge graph.
+    format: yaml
     id: nlm-ckn.schema
     name: nlm-ckn-schema
     original_source:
@@ -89,6 +90,7 @@ products:
     product_url: https://github.com/NIH-NLM/nlm-ckn-schema/blob/main/ckn-schema.yaml
   - category: ProcessProduct
     description: The NLM-CKN ETL pipeline, which produces the knowledge graph as an ArangoDB archive from single-cell genomics results and source ontologies. It combines a data processing pipeline (DataFetcher, DataTransformer, TupleWriters, ResultsGraphBuilder) with an ontology processing pipeline (OntologyDownloader, OntologyGraphBuilder), then selects a relevant induced subgraph.
+    format: python
     id: nlm-ckn.etl
     name: nlm-ckn-etl
     original_source:
@@ -97,6 +99,7 @@ products:
     product_url: https://github.com/NIH-NLM/nlm-ckn-etl
   - category: ProcessProduct
     description: The cellxgene-harvester package, which harvests, filters, and counts normal cells from the CELLxGENE Census using ontology-based filtering (UBERON tissue, PATO/MONDO disease, HsapDv age) to produce per-organ input datasets for the quality-control workflow.
+    format: python
     id: nlm-ckn.harvester
     name: cellxgene-harvester
     original_source:
@@ -105,6 +108,7 @@ products:
     product_url: https://github.com/NIH-NLM/cellxgene-harvester
   - category: ProcessProduct
     description: The scsilhouette Python package, part of the NLM-CKN quality-control workflow. Together with NSForest F-scores it computes silhouette and summary quality metrics that characterize the single-cell clusters used in the knowledgebase.
+    format: python
     id: nlm-ckn.scsilhouette
     name: scsilhouette
     original_source:
@@ -113,6 +117,7 @@ products:
     product_url: https://github.com/NIH-NLM/scsilhouette
   - category: ProcessProduct
     description: The sc-nsforest-qc-nf Nextflow workflow, which runs the scsilhouette package and the JCVI NSForest method over each harvested dataset to produce marker genes, F-scores, and silhouette quality metrics consumed downstream by the ETL pipeline.
+    format: mixed
     id: nlm-ckn.nsforest-qc
     name: sc-nsforest-qc-nf
     original_source:

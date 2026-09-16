@@ -23,7 +23,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/biobricks-ai/mesh-kg
 id: biobricks-mesh
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -49,6 +49,7 @@ products:
   product_url: https://apps.okn.us/biobricks-mesh/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for BioBricks MeSH
+  format: http
   id: biobricks-mesh.tpf
   name: BioBricks MeSH TPF
   original_source:

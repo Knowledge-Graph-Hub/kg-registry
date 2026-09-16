@@ -29,7 +29,7 @@ domains:
 - proteomics
 homepage_url: https://zhanggroup.org/UniBioMap/
 id: unibiomap
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -441,6 +441,7 @@ products:
   product_url: https://zhanggroup.org/UniBioMap/
 - category: ProcessProduct
   description: Source code and pipelines used to build the UniBioMap knowledge graph.
+  format: python
   id: unibiomap.code
   name: UniBioMap Code
   original_source:

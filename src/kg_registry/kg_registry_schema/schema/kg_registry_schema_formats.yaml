@@ -92,6 +92,14 @@ enums:
           used to define the structure of graphs. It is often used
           with Graphviz to visualize graphs.
         meaning: https://graphviz.org/doc/info/lang.html
+      dwca:
+        description: >-
+          The Darwin Core Archive (DwC-A) format, a zipped package of
+          one or more text tables (usually CSV or TSV) following the
+          Darwin Core standard, together with a meta.xml descriptor
+          and an EML metadata file. It is the standard exchange format
+          for biodiversity occurrence and checklist data.
+        meaning: https://dwc.tdwg.org/text/
       fasta:
         description: >-
           The FASTA format, a text-based format for representing
@@ -115,6 +123,13 @@ enums:
           It is designed to store and organize large amounts of data
           in a hierarchical structure, allowing for efficient access and manipulation.
         meaning: edam:3590
+      hmmer:
+        description: >-
+          The HMMER profile hidden Markov model format, a text format
+          for profile HMMs built and searched with the HMMER package.
+          It is used for profile libraries such as Pfam-A.hmm and
+          usually ends in .hmm.
+        meaning: edam:1370
       http:
         description: >-
           The Hypertext Transfer Protocol (HTTP) format.
@@ -170,16 +185,34 @@ enums:
           for knowledge graphs. This is the RDF Turtle (TTL) format,
           with nodes and edges in a single file.
         meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      markdown:
+        description: >-
+          The Markdown format, a lightweight plain-text markup
+          language commonly used for documentation such as README
+          files and wiki pages. Files usually end in .md.
+        meaning: https://commonmark.org/
       mixed:
         description: >-
           A product that contains multiple formats or serializations.
           This is used when a product is not easily categorized into
           a single format, such as a codebase that includes
           multiple file types (e.g., Python scripts, JSON files, etc.).
+      mol2:
+        description: >-
+          The Tripos Mol2 format, a text format for describing
+          molecular structures including atoms, bonds, substructures,
+          and partial charges. Files end in .mol2.
+        meaning: edam:3816
       mysql:
         description: >-
           The MySQL relational database management system.
           If a product is in this format, it is likely a MySQL database dump.
+      n3:
+        description: >-
+          The Notation3 (N3) format, a compact text serialization of
+          RDF that extends Turtle with support for rules and formulae.
+          Files usually end in .n3.
+        meaning: edam:3257
       neo4j:
         description: >-
           The Neo4j graph database management system.
@@ -213,6 +246,13 @@ enums:
           and their relationships. OWL builds on RDF and adds more
           vocabulary for describing properties and classes.
         meaning: edam:2197
+      parquet:
+        description: >-
+          The Apache Parquet format, a columnar binary storage format
+          for tabular data designed for efficient compression and
+          querying of large datasets. It is common in cloud-native
+          data lakes. GeoParquet is Parquet with geospatial columns.
+        meaning: https://parquet.apache.org/docs/file-format/
       pdf:
         description: >-
           The Portable Document Format (PDF), a file format developed by Adobe
@@ -250,6 +290,13 @@ enums:
         description: >-
           The Python script format, which is a text file containing
           Python code. It is used for writing scripts and programs in the Python language.
+      r:
+        description: >-
+          The R script or package format, which is a text file or
+          package containing R code. It is used for writing scripts
+          and programs in the R language, including data packages that
+          distribute datasets as R objects.
+        meaning: edam:3999
       rdfxml:
         description: >-
           The RDF/XML format, an XML syntax for expressing RDF
@@ -350,6 +397,12 @@ enums:
           The eXtensible Graph Markup Language (XGMML) format,
           an XML-based format for representing graphs and networks.
         meaning: edam:3618
+      xlsx:
+        description: >-
+          The Microsoft Excel Open XML Spreadsheet (XLSX) format, a
+          zipped, XML-based file format for spreadsheets. Also used
+          for the legacy binary Excel (.xls) workbook format.
+        meaning: edam:3620
       xml:
         description: >-
           The Extensible Markup Language (XML) format.

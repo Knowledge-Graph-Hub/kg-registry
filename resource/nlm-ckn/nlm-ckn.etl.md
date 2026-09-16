@@ -5,6 +5,7 @@ description: The NLM-CKN ETL pipeline, which produces the knowledge graph as an 
   processing pipeline (DataFetcher, DataTransformer, TupleWriters, ResultsGraphBuilder)
   with an ontology processing pipeline (OntologyDownloader, OntologyGraphBuilder),
   then selects a relevant induced subgraph.
+format: python
 id: nlm-ckn.etl
 name: nlm-ckn-etl
 original_source:

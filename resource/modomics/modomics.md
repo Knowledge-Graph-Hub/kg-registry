@@ -12,7 +12,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://genesilico.pl/modomics/
 id: modomics
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: MODOMICS
 products:
@@ -36,8 +36,10 @@ products:
     source: modomics
   product_url: https://genesilico.pl/modomics/api/
 - category: Product
+  compression: zip
   description: Three-dimensional structures of modified bases in MOL2 format for computational
     chemistry applications.
+  format: mol2
   id: modomics.mol2
   name: MODOMICS Modified Base Structures
   original_source:
@@ -46,7 +48,9 @@ products:
   product_file_size: 1194876
   product_url: https://genesilico.pl/modomics/download/modification_mol/
 - category: Product
+  compression: zip
   description: Chemical structure images of modified bases for visualization and publication.
+  format: png
   id: modomics.images
   name: MODOMICS Modified Base Images
   original_source:
@@ -55,7 +59,9 @@ products:
   product_file_size: 11835390
   product_url: https://genesilico.pl/modomics/download/modification_pics/
 - category: Product
-  description: Modified positions in PDB structure files.
+  compression: zip
+  description: Three-dimensional structures of modified bases. Although listed as PDB files, the archive served at this URL currently contains the same MOL2 files as the MOL2 download.
+  format: mol2
   id: modomics.pdb
   name: MODOMICS PDB Modified Positions
   original_source:
@@ -64,7 +70,9 @@ products:
   product_file_size: 1194876
   product_url: https://genesilico.pl/modomics/download/modification_mol2/
 - category: Product
+  compression: zip
   description: Comprehensive list of modified positions in RNA sequences.
+  format: tsv
   id: modomics.positions
   name: MODOMICS Modified Positions List
   original_source:
@@ -84,6 +92,7 @@ products:
   product_url: https://genesilico.pl/modomics/download/ModifiedBases.owl
 - category: OntologyProduct
   description: Ontology of base modifications in N3 format.
+  format: n3
   id: modomics.n3
   name: MODOMICS Ontology (N3)
   original_source:

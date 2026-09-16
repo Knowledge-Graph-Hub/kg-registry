@@ -17,12 +17,13 @@ domains:
   - biological systems
 homepage_url: https://www.p3db.org/
 id: p3db
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: P3DB
 products:
   - category: GraphicalInterface
     description: P3DB V5.0 web portal for searching plant phosphorylation peptides and sites, browsing kinases and organisms, and using PTM peptide BLAST tools.
+    format: http
     id: p3db.portal
     name: P3DB Web Portal
     original_source:
@@ -40,6 +41,7 @@ products:
     product_url: https://www.p3db.org/
   - category: ProcessProduct
     description: P3DB PTM peptide BLAST and search tools for querying plant phosphopeptides and phosphorylation sites by sequence or accession.
+    format: http
     id: p3db.ptm-search
     name: P3DB PTM Search and BLAST Tools
     original_source:

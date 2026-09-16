@@ -39,6 +39,7 @@ products:
   name: DREAM-KG TPF
   description: Triple Pattern Fragments endpoint for DREAM-KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/dreamkg
   original_source:
   - source: dreamkg
@@ -63,7 +64,7 @@ products:
   - source: opendataphilly
     relation_type: prov:wasInfluencedBy
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 DREAM-KG
 

@@ -20,7 +20,7 @@ domains:
 homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
 id: ndcd
 infores_id: ndcd
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.fda.gov/about-fda/about-website/website-policies
@@ -51,8 +51,8 @@ products:
   product_url: https://www.accessdata.fda.gov/cder/ndctext.zip
 - category: Product
   compression: zip
-  description: Downloadable database file in Excel format containing finished drug
-    product information
+  description: Downloadable NDC database files (product.xls and package.xls) containing finished drug product information. Despite the .xls extension, the files are tab-delimited text.
+  format: tsv
   id: ndcd.excel
   name: NDC Database Excel File
   original_source:

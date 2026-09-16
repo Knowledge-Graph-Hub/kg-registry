@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.innatedb.com/
 id: innatedb
 infores_id: innatedb
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.innatedb.com/
@@ -38,6 +38,7 @@ products:
   product_url: https://www.innatedb.com/
 - category: Product
   description: Downloadable data files for interactions, pathways, and annotations
+  format: mixed
   id: innatedb.downloads
   name: InnateDB Data Downloads
   original_source:

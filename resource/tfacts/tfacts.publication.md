@@ -4,6 +4,7 @@ description: Peer-reviewed publication describing the TFactS method and the cura
   catalogue of signed transcription factor to target gene interactions. The original
   tfacts.org web server is defunct, so the paper serves as the authoritative reference
   for the resource.
+format: http
 id: tfacts.publication
 name: TFactS publication (Nucleic Acids Research, 2010)
 original_source:

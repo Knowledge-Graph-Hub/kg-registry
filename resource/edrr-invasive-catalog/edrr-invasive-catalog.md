@@ -17,7 +17,7 @@ domains:
 - environment
 homepage_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
 id: edrr-invasive-catalog
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases
   and Tools
@@ -26,6 +26,7 @@ products:
   description: USGS ScienceBase data release containing the catalog of U.S. federal
     early detection/rapid response invasive species databases and tools, distributed
     as tabular spreadsheet data with metadata.
+  format: xlsx
   id: edrr-invasive-catalog.dataset
   name: EDRR Invasive Species Databases and Tools Catalog (Version 2.0)
   original_source:

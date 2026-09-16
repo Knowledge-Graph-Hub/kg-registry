@@ -36,6 +36,7 @@ name: Stress Knowledge Map
 products:
   - category: GraphicalInterface
     description: Interactive search and visualization tool for the mechanistic Plant Stress Signalling model
+    format: http
     id: skm.pss.explorer
     name: PSS Explorer
     original_source:
@@ -44,6 +45,7 @@ products:
     product_url: https://skm.nib.si/pss
   - category: GraphicalInterface
     description: Interactive search and visualization tool for the Comprehensive Knowledge Network
+    format: http
     id: skm.ckn.explorer
     name: CKN Explorer
     original_source:
@@ -433,7 +435,7 @@ taxon:
   - NCBITaxon:33090
 version: '1.0'
 creation_date: '2025-06-17T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 # Stress Knowledge Map

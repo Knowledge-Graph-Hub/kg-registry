@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: About page describing the CURE ID initiative, its NCATS/FDA partnership,
   and how clinicians can participate.
+format: http
 id: cureid.about
 name: CURE ID About
 original_source:

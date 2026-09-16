@@ -31,7 +31,7 @@ domains:
 homepage_url: https://dailymed.nlm.nih.gov/dailymed/
 id: dailymed
 infores_id: dailymed
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: DailyMed
 products:
@@ -97,6 +97,7 @@ products:
 - category: Product
   compression: zip
   description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  format: mixed
   id: med-rt.core_dts
   name: Core MED-RT DTS Archive
   original_source:
@@ -145,6 +146,7 @@ products:
   compression: zip
   description: Structured Product Labeling subset archive from the current MED-RT
     distribution.
+  format: txt
   id: med-rt.core_spl
   name: Core MED-RT SPL Archive
   original_source:
@@ -176,6 +178,7 @@ products:
     source: mondo
 - category: Product
   description: Matrix indication list spreadsheet from the medic v1.0.1 release
+  format: xlsx
   id: medi.matrix_indication_list
   latest_version: v1.0.1
   name: Matrix Indication List

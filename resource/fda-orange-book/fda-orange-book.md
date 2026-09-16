@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book
 id: fda-orange-book
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works
@@ -70,6 +70,7 @@ products:
     when accessing file'
 - category: Product
   description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
+  format: xlsx
   id: medi.orangebook
   latest_version: v1.0.1
   name: MeDI Orange Book Extract

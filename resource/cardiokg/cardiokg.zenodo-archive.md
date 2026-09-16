@@ -2,6 +2,7 @@
 category: Product
 compression: zip
 description: Archived CardioKG repository release on Zenodo.
+format: mixed
 id: cardiokg.zenodo-archive
 name: CardioKG Zenodo archive
 original_source:

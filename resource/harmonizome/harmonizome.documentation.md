@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: Harmonizome documentation describing dataset pages, API access, downloads,
   and the Harmonizome knowledge graph API and graph serialization.
+format: http
 id: harmonizome.documentation
 name: Harmonizome Documentation
 original_source:

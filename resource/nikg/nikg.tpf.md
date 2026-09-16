@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for Neighborhood Information KG
+format: http
 id: nikg.tpf
 name: Neighborhood Information KG TPF
 original_source:

@@ -34,7 +34,7 @@ domains:
 homepage_url: https://www.catalogueoflife.org/
 id: catalogue-of-life
 infores_id: catalogue-of-life
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -69,6 +69,7 @@ products:
   description: Annual comprehensive Catalogue of Life releases (Base Release with
     expert curation and Extended Release with broader source integration) with permanent
     archiving and DOI assignment
+  format: mixed
   id: catalogue-of-life.annual-releases
   name: Annual Releases
   original_source:
@@ -83,6 +84,7 @@ products:
   description: Downloadable Catalogue of Life datasets in multiple standardized formats
     including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
     and MySQL dumps
+  format: mixed
   id: catalogue-of-life.downloads
   name: Data Downloads
   original_source:
@@ -100,6 +102,7 @@ products:
   description: ChecklistBank repository infrastructure for publishing, discovery,
     and management of taxonomic datasets with data standardization to ColDP format
     and quality control workflows
+  format: http
   id: catalogue-of-life.checklistbank
   name: ChecklistBank Repository
   original_source:

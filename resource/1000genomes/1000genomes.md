@@ -20,7 +20,7 @@ domains:
 - genomics
 homepage_url: https://www.internationalgenome.org/
 id: 1000genomes
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.internationalgenome.org/IGSR_disclaimer
@@ -110,6 +110,7 @@ products:
   compression: zip
   description: Bulk downloadable ActiveDriverDB datasets, including cancer, disease,
     and population mutations affecting PTM sites and kinase-target site-specific networks.
+  format: tsv
   id: activedriverdb.downloads
   name: ActiveDriverDB Downloads
   original_source:

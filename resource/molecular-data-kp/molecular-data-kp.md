@@ -181,6 +181,7 @@ products:
   - category: ProgrammingInterface
     connection_url: https://translator.broadinstitute.org/molecular_data_provider/api
     description: Open API for Molecular Data KP
+    format: http
     id: molecular-data-kp.api
     is_public: true
     name: Open API for Molecular Data KP
@@ -190,7 +191,7 @@ products:
     product_url: https://translator.broadinstitute.org/molecular_data_provider/api
 repository: https://github.com/broadinstitute/molecular-data-provider/
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 A Translator Knowledge Provider for molecular data.

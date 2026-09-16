@@ -14,7 +14,7 @@ domains:
 - public health
 homepage_url: https://www.globalbioticinteractions.org/
 id: globi
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -358,6 +358,7 @@ products:
   product_url: https://qlever.earthmetabolome.org/api/metrin-kg
 - category: GraphicalInterface
   description: Web-based SPARQL query editor for the EMI Knowledge Graph
+  format: http
   id: emikg.web
   name: EMI KG SPARQL Query Editor
   original_source:

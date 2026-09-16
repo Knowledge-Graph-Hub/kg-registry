@@ -22,7 +22,7 @@ domains:
 homepage_url: https://www.nlm.nih.gov/research/umls/index.html
 id: umls
 infores_id: umls
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://uts.nlm.nih.gov/uts/
@@ -64,6 +64,7 @@ products:
   description: Full UMLS Knowledge Sources release including Metathesaurus, Semantic
     Network, and SPECIALIST Lexicon for local installation with MetamorphoSys customization
     tool
+  format: txt
   id: umls.release
   name: UMLS Knowledge Sources Release Files
   original_source:
@@ -73,6 +74,7 @@ products:
 - category: ProcessProduct
   description: MetamorphoSys tool for customizing UMLS subsets by vocabulary, language,
     or semantic type and loading data into local databases
+  format: java
   id: umls.metamorphosys
   name: MetamorphoSys Customization Tool
   original_source:
@@ -82,6 +84,7 @@ products:
 - category: ProcessProduct
   description: SPECIALIST Lexicon and Lexical Tools for normalizing strings, generating
     lexical variants, and creating indexes for biomedical text processing
+  format: mixed
   id: umls.specialist_lexicon
   name: SPECIALIST Lexicon and Lexical Tools
   original_source:
@@ -173,6 +176,7 @@ products:
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
 - category: Product
   description: VANDF drug terminology data distributed through UMLS Metathesaurus
+  format: http
   id: ndfrt.umls
   name: VANDF in UMLS
   original_source:
@@ -775,6 +779,7 @@ products:
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous
     networks)
+  format: python
   id: hetionet.hetnetpy
   name: hetnetpy
   original_source:
@@ -1012,6 +1017,7 @@ products:
     118 million relationships.
   dump_format: neo4j
   edge_count: 118000000
+  format: neo4j
   id: petagraph.graph
   name: Petagraph Knowledge Graph (Neo4J)
   node_count: 32000000
@@ -1404,6 +1410,7 @@ products:
 - category: Product
   compression: zip
   description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  format: mixed
   id: med-rt.core_dts
   name: Core MED-RT DTS Archive
   original_source:
@@ -1452,6 +1459,7 @@ products:
   compression: zip
   description: Structured Product Labeling subset archive from the current MED-RT
     distribution.
+  format: txt
   id: med-rt.core_spl
   name: Core MED-RT SPL Archive
   original_source:

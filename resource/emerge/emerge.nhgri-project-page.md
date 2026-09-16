@@ -3,6 +3,7 @@ category: DocumentationProduct
 description: NHGRI project page summarizing eMERGE as an NIH-organized and funded
   consortium for combining biorepositories and electronic medical record systems in
   genomic medicine research.
+format: http
 id: emerge.nhgri-project-page
 name: NHGRI eMERGE Project Page
 original_source:

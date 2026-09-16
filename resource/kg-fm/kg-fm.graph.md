@@ -5,6 +5,7 @@ description: Neo4j framework-materials knowledge graph constructed from Web of S
   paper reports 2.53 million nodes and 4.01 million relationships covering materials,
   properties, structures, applications, and related literature.
 edge_count: 4010000
+format: neo4j
 id: kg-fm.graph
 name: KG-FM Neo4j Knowledge Graph
 node_count: 2530000

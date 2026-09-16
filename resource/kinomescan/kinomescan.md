@@ -19,7 +19,7 @@ domains:
 homepage_url: https://lincs.hms.harvard.edu/kinomescan/
 id: kinomescan
 infores_id: kinomescan
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: KINOMEscan
 products:
@@ -36,6 +36,7 @@ products:
 - category: DocumentationProduct
   description: Excel spreadsheet containing HMS LINCS KINOMEscan datasets with compound
     information and data links
+  format: xlsx
   id: kinomescan.spreadsheet
   name: KINOMEscan Datasets Spreadsheet
   original_source:

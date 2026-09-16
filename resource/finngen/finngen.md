@@ -19,7 +19,7 @@ domains:
 - clinical
 homepage_url: https://www.finngen.fi/en
 id: finngen
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -30,6 +30,7 @@ products:
   description: Summary statistics from genome-wide association studies of various
     disease phenotypes conducted on Finnish population data, with the most recent
     release being Data Freeze 13.
+  format: tsv
   id: finngen.summary_stats
   name: FinnGen GWAS Summary Statistics
   original_source:
@@ -49,6 +50,7 @@ products:
 - category: Product
   description: Results from meta-analysis of FinnGen data with other major biobanks,
     allowing for more powerful detection of genetic associations.
+  format: tsv
   id: finngen.meta_analysis
   name: FinnGen Meta-Analysis Results
   original_source:
@@ -94,6 +96,7 @@ products:
 - category: Product
   description: Clinical endpoint definitions and control groups for FinnGen data releases,
     including detailed documentation for each data freeze.
+  format: http
   id: finngen.endpoints
   name: FinnGen Clinical Endpoints
   original_source:

@@ -11,7 +11,7 @@ domains:
 homepage_url: https://kinet.kinametrix.com/
 id: "kinace"
 infores_id: "kinace"
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -67,6 +67,7 @@ products:
         relation_type: prov:wasDerivedFrom
   - id: kinace.github_archive
     category: Product
+    format: csv
     name: KiNet GitHub Dataset Archive
     description: Zipped GitHub data archive for the KiNet/KinAce web portal and kinase-substrate interaction dataset
     product_url: https://raw.githubusercontent.com/GauravPandeyLab/KiNet/master/data/2023-10-30-kinace-dataset.zip
@@ -77,6 +78,7 @@ products:
         relation_type: prov:hadPrimarySource
   - id: kinace.zenodo_archive
     category: Product
+    format: csv
     name: KinAce Zenodo Archive
     description: Zenodo archive for the KinAce web portal and kinase-substrate interaction dataset
     product_url: https://zenodo.org/api/records/10212986/files/KinAce.zip/content

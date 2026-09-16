@@ -1,8 +1,10 @@
 ---
 category: Product
+compression: zip
 description: Standardized and deduplicated version of FDA FAERS data with drug names
   mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed
   summary statistics for drug-outcome relationships.
+format: csv
 id: aeolus.standardized_data
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

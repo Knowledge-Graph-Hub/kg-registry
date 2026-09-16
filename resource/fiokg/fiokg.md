@@ -44,6 +44,7 @@ products:
   name: SAWGraph FRS KG TPF
   description: Triple Pattern Fragments endpoint for SAWGraph FRS KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/fiokg
   original_source:
   - source: fiokg
@@ -71,7 +72,7 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: sic
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 SAWGraph FIO KG
 

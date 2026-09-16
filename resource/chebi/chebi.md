@@ -26,7 +26,7 @@ domains:
 homepage_url: http://www.ebi.ac.uk/chebi
 id: chebi
 infores_id: chebi
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1874,6 +1874,7 @@ products:
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:

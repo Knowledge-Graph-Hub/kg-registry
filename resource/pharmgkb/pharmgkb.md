@@ -26,7 +26,7 @@ domains:
 homepage_url: https://www.clinpgx.org/
 id: pharmgkb
 infores_id: pharmgkb
-last_modified_date: '2026-09-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -2224,6 +2224,7 @@ products:
 - category: GraphicalInterface
   description: ClinPGx web portal for browsing genes, variants, drugs, clinical annotations,
     drug labels, pathways and CPIC guidelines, integrating PharmGKB and CPIC content
+  format: http
   id: clinpgx.portal
   is_public: true
   name: ClinPGx Portal
@@ -2238,6 +2239,7 @@ products:
 - category: DocumentationProduct
   description: Downloads page listing the bulk data files (formerly the PharmGKB downloads),
     with data usage policy and file descriptions
+  format: http
   id: clinpgx.downloads
   is_public: true
   name: ClinPGx Downloads

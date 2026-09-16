@@ -28,7 +28,7 @@ domains:
 homepage_url: http://geneontology.org/go-cam/docs
 id: go-cam
 infores_id: go-cam
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -88,6 +88,7 @@ products:
 - category: ProcessProduct
   description: Server-side component for storing, validating, and reasoning over GO-CAM
     models
+  format: java
   id: go-cam.minerva
   name: Minerva
   original_source:

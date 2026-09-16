@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: Metadata documentation describing the GADM data, its structure, and administrative
   levels.
+format: http
 id: gadm.metadata
 name: GADM Metadata
 original_source:

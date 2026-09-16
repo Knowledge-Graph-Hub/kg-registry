@@ -15,12 +15,13 @@ domains:
 - general
 homepage_url: https://www.w3.org/TR/vocab-dcat-3/
 id: dcat
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Data Catalog Vocabulary
 products:
 - category: DataModelProduct
   description: Turtle serialization of the W3C Data Catalog Vocabulary namespace.
+  format: ttl
   id: dcat.ttl
   latest_version: '3'
   name: DCAT Turtle Vocabulary

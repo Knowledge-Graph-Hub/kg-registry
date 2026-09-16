@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: RESTful API for customizable search in SIBiLS collections
+format: http
 id: sibils.api.rest.search
 is_public: true
 name: SIBiLS Search API

@@ -2,6 +2,7 @@
 category: Product
 description: Bulk download of the ENdb dataset of experimentally supported enhancer-target
   gene records and associated regulatory metadata.
+format: csv
 id: endb.download
 name: ENdb Download
 original_source:

@@ -22,7 +22,7 @@ domains:
 homepage_url: https://tree.opentreeoflife.org/
 id: open-tree-of-life
 infores_id: open-tree-of-life
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -65,6 +65,7 @@ products:
 - category: Product
   description: Complete phylesystem repository containing 4,500+ curated phylogenetic
     studies in NexSON JSON format with full version control history
+  format: json
   id: open-tree-of-life.phylesystem
   name: Phylesystem Data Repository
   original_source:
@@ -74,6 +75,7 @@ products:
 - category: Product
   description: Preprocessed source trees and taxonomy files available for bulk download
     in Newick, Nexus, and JSON formats
+  format: mixed
   id: open-tree-of-life.bulk-download
   name: Open Tree of Life Bulk Downloads
   original_source:

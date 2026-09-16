@@ -2,6 +2,7 @@
 category: Product
 compression: zip
 description: Zipped answer-reference material for the KG-FM question-answering benchmark.
+format: txt
 id: kg-fm.answer_references
 name: KG-FM Answer References
 original_source:

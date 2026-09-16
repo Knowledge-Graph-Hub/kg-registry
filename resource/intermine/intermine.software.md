@@ -2,6 +2,7 @@
 category: Product
 description: Open-source InterMine codebase for building biological data warehouses
   and deploying InterMine instances.
+format: java
 id: intermine.software
 name: InterMine Software
 original_source:

@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Cytoscape App Store for discovering and installing Cytoscape apps that
   extend analysis, visualization, and data integration workflows.
+format: http
 id: cytoscape.app-store
 name: Cytoscape App Store
 original_source:

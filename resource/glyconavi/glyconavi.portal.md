@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: GlycoNAVI integrated portal for glycoscience research, including glycan
   structures, glycoproteins, glycosylation sites, glycan-related genes, diseases,
   and glycan analysis tools.
+format: http
 id: glyconavi.portal
 name: GlycoNAVI Portal
 original_source:

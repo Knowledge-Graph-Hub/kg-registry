@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: PhosPhAt plant-specific phosphorylation-site predictor trained on the
   experimental Arabidopsis serine, threonine, and tyrosine phosphorylation dataset.
+format: http
 id: phosphat.predictor
 name: PhosPhAt Phosphorylation Site Predictor
 original_source:

@@ -15,12 +15,13 @@ domains:
   - pharmacology
 homepage_url: https://admin.ich.org/page/meddra
 id: meddra
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: MedDRA
 products:
   - category: Product
     description: MedDRA terminology release files maintained and distributed by the MedDRA MSSO for subscribers, supporting regulatory coding and pharmacovigilance workflows.
+    format: txt
     id: meddra.release-files
     name: MedDRA Terminology Release Files
     original_source:
@@ -29,6 +30,7 @@ products:
     product_url: https://www.meddra.org/subscription
   - category: GraphicalInterface
     description: MedDRA Web-Based Browser provided for MedDRA subscribers to search and view MedDRA terminology content.
+    format: http
     id: meddra.web-browser
     name: MedDRA Web-Based Browser
     original_source:
@@ -37,6 +39,7 @@ products:
     product_url: https://mssotools.com/MSSOWeb/wbb/wbb_index.html
   - category: DocumentationProduct
     description: ICH MedDRA page describing the terminology, governance, MSSO maintenance, and regulatory use cases.
+    format: http
     id: meddra.ich-page
     name: ICH MedDRA Documentation
     original_source:

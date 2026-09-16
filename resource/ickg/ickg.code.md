@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: Source code and models used for constructing and using Immune Cell Knowledge
   Graphs.
+format: mixed
 id: ickg.code
 name: ICKG code repository
 original_source:

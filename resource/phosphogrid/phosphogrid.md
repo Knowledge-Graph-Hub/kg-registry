@@ -17,12 +17,13 @@ domains:
   - biomedical
 homepage_url: https://phosphogrid.org/
 id: phosphogrid
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: PhosphoGRID
 products:
   - category: GraphicalInterface
     description: Legacy PhosphoGRID web portal for searching experimentally verified in vivo yeast phosphorylation sites by ORF, gene name, or external identifier.
+    format: http
     id: phosphogrid.portal
     name: PhosphoGRID Web Portal
     original_source:

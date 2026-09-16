@@ -14,7 +14,7 @@ domains:
 - biological systems
 homepage_url: https://jaspar.elixir.no/
 id: jaspar
-last_modified_date: '2026-06-15T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -374,6 +374,7 @@ products:
 - category: GraphProduct
   description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
     \ levels (A\u2013E)"
+  format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph
   original_source:

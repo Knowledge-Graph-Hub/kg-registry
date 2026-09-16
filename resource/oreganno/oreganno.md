@@ -15,7 +15,7 @@ domains:
 - systems biology
 homepage_url: https://genome.ucsc.edu/cgi-bin/hgTrackUi?org=Human&g=oreganno
 id: oreganno
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/lgpl.html
@@ -36,6 +36,7 @@ products:
 - category: GraphProduct
   description: Core TF–target regulon knowledge graph (multi-species) with confidence
     levels (A–E)
+  format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph
   original_source:

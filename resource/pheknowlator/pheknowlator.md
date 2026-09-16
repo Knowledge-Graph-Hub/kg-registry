@@ -20,7 +20,7 @@ domains:
 - genomics
 homepage_url: https://github.com/callahantiff/PheKnowLator
 id: pheknowlator
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -97,6 +97,7 @@ products:
   - current_build
 - category: ProcessProduct
   description: Code for generating PheKnowLator
+  format: python
   id: pheknowlator.code
   name: PheKnowLator code
   original_source:
@@ -105,6 +106,7 @@ products:
   product_url: https://github.com/callahantiff/PheKnowLator
 - category: ProcessProduct
   description: Code for generating MGMLink
+  format: python
   id: mgmlink.code
   name: MGMLink code
   original_source:

@@ -24,7 +24,7 @@ domains:
 homepage_url: https://diseases.jensenlab.org/
 id: diseases
 infores_id: diseases
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -121,6 +121,7 @@ products:
 - category: Product
   compression: targz
   description: Dictionary of human gene and disease names for the DISEASES tagger
+  format: tsv
   id: diseases.dictionary
   name: DISEASES Dictionary
   original_source:

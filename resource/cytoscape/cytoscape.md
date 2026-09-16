@@ -16,7 +16,7 @@ domains:
   - pathways
 homepage_url: https://cytoscape.org/
 id: cytoscape
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/lgpl-2.1.html
@@ -25,6 +25,7 @@ name: Cytoscape
 products:
   - category: GraphicalInterface
     description: Cross-platform Cytoscape desktop application for complex network visualization, molecular interaction analysis, and integration of network attribute data.
+    format: java
     id: cytoscape.desktop
     name: Cytoscape Desktop
     original_source:
@@ -34,6 +35,7 @@ products:
     repository: https://github.com/cytoscape/cytoscape
   - category: GraphicalInterface
     description: Cytoscape App Store for discovering and installing Cytoscape apps that extend analysis, visualization, and data integration workflows.
+    format: http
     id: cytoscape.app-store
     name: Cytoscape App Store
     original_source:
@@ -42,6 +44,7 @@ products:
     product_url: https://apps.cytoscape.org/
   - category: ProgrammingInterface
     description: CyREST-powered Cytoscape Automation interface for executing reproducible Cytoscape workflows from external tools such as Python, R, and Jupyter.
+    format: http
     id: cytoscape.automation-api
     is_public: true
     name: Cytoscape Automation API

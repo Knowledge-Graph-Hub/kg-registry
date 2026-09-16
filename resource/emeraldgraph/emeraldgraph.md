@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://github.com/ai4greenwashing/EmeraldMind
 id: emeraldgraph
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -56,6 +56,7 @@ products:
 - category: ProcessProduct
   description: Source code for constructing EmeraldGraph, loading it into Neo4j, and
     using it in the EmeraldMind greenwashing-detection workflow.
+  format: python
   id: emeraldgraph.pipeline
   name: EmeraldGraph construction pipeline
   original_source:
@@ -65,6 +66,7 @@ products:
 - category: Product
   description: Processed greenwashing claim and EmeraldData datasets used by EmeraldMind
     experiments.
+  format: mixed
   id: emeraldgraph.datasets
   name: EmeraldMind processed datasets
   original_source:
@@ -75,6 +77,7 @@ products:
   compression: zip
   description: Archived release of the EmeraldMind repository and associated EmeraldGraph
     artifacts on Zenodo.
+  format: mixed
   id: emeraldgraph.zenodo-archive
   name: EmeraldMind Zenodo archive
   original_source:

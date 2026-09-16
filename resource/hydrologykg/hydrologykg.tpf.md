@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SAWGraph Hydrology KG
+format: http
 id: hydrologykg.tpf
 name: SAWGraph Hydrology KG TPF
 original_source:

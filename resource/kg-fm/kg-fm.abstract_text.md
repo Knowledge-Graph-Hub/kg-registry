@@ -3,6 +3,7 @@ category: Product
 compression: zip
 description: Zipped abstract-text corpora for COF, HOF, and MOF literature used as
   input to KG-FM extraction and graph construction.
+format: txt
 id: kg-fm.abstract_text
 name: KG-FM Abstract Text Files
 original_source:

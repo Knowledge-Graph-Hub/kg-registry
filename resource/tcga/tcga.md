@@ -21,7 +21,7 @@ domains:
 homepage_url: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
 id: tcga
 infores_id: tcga
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: The Cancer Genome Atlas
 products:
@@ -137,6 +137,7 @@ products:
   compression: zip
   description: Bulk downloadable ActiveDriverDB datasets, including cancer, disease,
     and population mutations affecting PTM sites and kinase-target site-specific networks.
+  format: tsv
   id: activedriverdb.downloads
   name: ActiveDriverDB Downloads
   original_source:

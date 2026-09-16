@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for BioBricks PubChem Annotations
+format: http
 id: biobricks-pubchem-annotations.tpf
 name: BioBricks PubChem Annotations TPF
 original_source:

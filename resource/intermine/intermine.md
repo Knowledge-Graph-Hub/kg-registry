@@ -15,7 +15,7 @@ domains:
   - information technology
 homepage_url: https://intermine.org/
 id: intermine
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
@@ -24,6 +24,7 @@ name: InterMine
 products:
   - category: DocumentationProduct
     description: InterMine server documentation describing the biological data warehouse system, BlueGenes interface, data integration model, and web-service API.
+    format: http
     id: intermine.documentation
     name: InterMine Documentation
     original_source:
@@ -32,6 +33,7 @@ products:
     product_url: https://intermine.org/im-docs/docs/introduction/index
   - category: Product
     description: Open-source InterMine codebase for building biological data warehouses and deploying InterMine instances.
+    format: java
     id: intermine.software
     name: InterMine Software
     original_source:
@@ -41,6 +43,7 @@ products:
     repository: https://github.com/intermine/intermine
   - category: GraphicalInterface
     description: Public InterMine Registry listing deployed InterMine instances across organisms and life-science research areas.
+    format: http
     id: intermine.registry
     name: InterMine Registry
     original_source:
@@ -49,6 +52,7 @@ products:
     product_url: https://registry.intermine.org/
   - category: ProgrammingInterface
     description: InterMine Registry Swagger API for programmatically discovering public InterMine instances.
+    format: http
     id: intermine.registry-api
     is_public: true
     name: InterMine Registry API

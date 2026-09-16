@@ -22,7 +22,7 @@ domains:
 - genomics
 homepage_url: https://snap.stanford.edu/stellar/
 id: stellar
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -32,6 +32,7 @@ products:
 - category: ProcessProduct
   description: PyTorch implementation of the STELLAR algorithm for cell-type discovery
     and identification
+  format: python
   id: stellar.code
   name: STELLAR Code
   original_source:
@@ -50,6 +51,7 @@ products:
   product_url: https://github.com/snap-stanford/stellar/blob/main/demo.ipynb
 - category: Product
   description: CODEX multiplexed imaging datasets used in STELLAR research
+  format: mixed
   id: stellar.datasets
   name: STELLAR Datasets
   original_source:

@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: ClinPGx web portal for browsing genes, variants, drugs, clinical annotations,
   drug labels, pathways and CPIC guidelines, integrating PharmGKB and CPIC content
+format: http
 id: clinpgx.portal
 is_public: true
 name: ClinPGx Portal

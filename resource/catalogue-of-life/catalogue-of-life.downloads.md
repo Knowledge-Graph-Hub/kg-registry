@@ -3,6 +3,7 @@ category: Product
 description: Downloadable Catalogue of Life datasets in multiple standardized formats
   including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
   and MySQL dumps
+format: mixed
 id: catalogue-of-life.downloads
 name: Data Downloads
 original_source:

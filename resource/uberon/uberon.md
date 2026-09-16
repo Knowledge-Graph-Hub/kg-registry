@@ -20,7 +20,7 @@ domains:
 homepage_url: http://uberon.org
 id: uberon
 infores_id: uberon
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -1721,6 +1721,7 @@ products:
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous
     networks)
+  format: python
   id: hetionet.hetnetpy
   name: hetnetpy
   original_source:
@@ -1787,6 +1788,7 @@ products:
   product_url: https://het.io/search
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:

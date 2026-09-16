@@ -24,7 +24,7 @@ domains:
 homepage_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_download.html
 id: semmeddb
 infores_id: semmeddb
-last_modified_date: '2026-01-23T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/web_policies.html
@@ -34,6 +34,7 @@ products:
 - category: ProcessProduct
   description: The SemRep natural language processing system that extracts semantic
     predications from biomedical literature to create SemMedDB
+  format: mixed
   id: semmeddb.semrep.tool
   name: SemRep NLP System
   original_source:

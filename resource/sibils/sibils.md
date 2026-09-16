@@ -28,6 +28,7 @@ repository: https://github.com/sibils
 products:
   - category: GraphicalInterface
     description: Web interface for exploring SIBiLS data
+    format: http
     id: sibils.site
     is_public: true
     name: SIBiLS Web Interface
@@ -37,6 +38,7 @@ products:
     product_url: https://sibils.org/
   - category: ProgrammingInterface
     description: SPARQL endpoint for querying SIBiLS data
+    format: http
     id: sibils.api.sparql
     is_public: true
     name: SIBiLS SPARQL Endpoint
@@ -46,6 +48,7 @@ products:
     product_url: https://sparql.sibils.org/sparql
   - category: ProgrammingInterface
     description: RESTful API for fetching annotated contents from SIBiLS collections
+    format: http
     id: sibils.api.rest.fetch
     is_public: true
     name: SIBiLS Fetch API
@@ -55,6 +58,7 @@ products:
     product_url: https://sibils.org/api#Fetch-API
   - category: ProgrammingInterface
     description: RESTful API for customizable search in SIBiLS collections
+    format: http
     id: sibils.api.rest.search
     is_public: true
     name: SIBiLS Search API
@@ -64,6 +68,7 @@ products:
     product_url: https://sibils.org/api#Customizable-search-API
   - category: ProgrammingInterface
     description: RESTful API for question answering using natural language in SIBiLS collections
+    format: http
     id: sibils.api.rest.qa
     is_public: true
     name: SIBiLS Question Answering API
@@ -86,7 +91,7 @@ publications:
   title: 'SIB Literature Services: RESTful customizable search engines in biomedical literature, enriched with automatically mapped biomedical concepts'
   year: '2020'
 creation_date: '2025-05-07T00:00:00Z'
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides personalized information retrieval services in biological literature. The platform offers fully customizable search capabilities in semantically enriched contents based on keywords and/or mapped biomedical entities from a growing set of standardized and legacy vocabularies.

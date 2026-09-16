@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.orpha.net/
 id: orphanet
 infores_id: orphanet
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -231,6 +231,7 @@ products:
   description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers)
     for rare diseases, along with mappings to other terminologies, and is released
     annually in July.
+  format: mixed
   id: orphanet.nomenclature
   name: Orphanet Nomenclature Pack
   original_source:

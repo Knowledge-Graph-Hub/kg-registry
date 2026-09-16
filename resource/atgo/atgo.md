@@ -14,18 +14,20 @@ domains:
 homepage_url: http://atgo.ucsd.edu/
 id: atgo
 infores_id: atgo
-last_modified_date: '2025-11-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Autophagy Ontology
 products:
   - category: OntologyProduct
+    compression: targz
     description: Second-generation hierarchical ontology of 220 autophagy functions built from 156,364 synthetic-lethal genetic interactions across autophagy-activating conditions in Saccharomyces cerevisiae.
+    format: mixed
     id: atgo.ontology
     name: ATGO Hierarchical Ontology
     original_source:
       - source: atgo
         relation_type: prov:hadPrimarySource
-    product_url: http://atgo.ucsd.edu/
+    product_url: http://atgo.ucsd.edu/download.html
     warnings:
       - File was not able to be retrieved when checked on 2026-01-06_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu', port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
       - File was not able to be retrieved when checked on 2025-12-13_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb70a995de0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))

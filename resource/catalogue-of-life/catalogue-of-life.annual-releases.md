@@ -3,6 +3,7 @@ category: Product
 description: Annual comprehensive Catalogue of Life releases (Base Release with expert
   curation and Extended Release with broader source integration) with permanent archiving
   and DOI assignment
+format: mixed
 id: catalogue-of-life.annual-releases
 name: Annual Releases
 original_source:

@@ -20,7 +20,7 @@ domains:
   - biomedical
 homepage_url: https://gkb.dcmb.med.umich.edu/
 id: genomickb
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome#modal-licence-preview
@@ -29,6 +29,7 @@ name: GenomicKB
 products:
   - category: GraphicalInterface
     description: Graphical interface for GenomicKB
+    format: http
     id: genomickb.site
     name: GenomicKB Site
     original_source:

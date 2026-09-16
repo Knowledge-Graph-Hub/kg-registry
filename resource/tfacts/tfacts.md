@@ -16,7 +16,7 @@ domains:
 - pathways
 homepage_url: http://www.tfacts.org/
 id: tfacts
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: TFactS
 products:
@@ -25,6 +25,7 @@ products:
     catalogue of signed transcription factor to target gene interactions. The original
     tfacts.org web server is defunct, so the paper serves as the authoritative reference
     for the resource.
+  format: http
   id: tfacts.publication
   name: TFactS publication (Nucleic Acids Research, 2010)
   original_source:
@@ -34,6 +35,7 @@ products:
 - category: GraphProduct
   description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
     \ levels (A\u2013E)"
+  format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph
   original_source:

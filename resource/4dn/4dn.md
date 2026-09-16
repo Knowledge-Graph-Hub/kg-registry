@@ -27,7 +27,7 @@ domains:
 - medical imaging
 homepage_url: https://data.4dnucleome.org/
 id: 4dn
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal
@@ -77,6 +77,7 @@ products:
 - category: ProcessProduct
   description: A cloud-based Jupyter environment for analyzing 4DN data without downloading
     it, including example notebooks for data exploration.
+  format: http
   id: 4dn.jupyterhub
   name: 4DN JupyterHub
   original_source:
@@ -86,6 +87,7 @@ products:
 - category: ProcessProduct
   description: A tool for entering and accessing microscope metadata with standardized
     formats.
+  format: http
   id: 4dn.micrometa
   name: Micro Meta App
   original_source:

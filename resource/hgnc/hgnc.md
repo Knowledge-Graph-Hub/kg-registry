@@ -16,7 +16,7 @@ fairsharing_id: FAIRsharing.amcv1e
 homepage_url: https://www.genenames.org/
 id: hgnc
 infores_id: hgnc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -2043,6 +2043,7 @@ products:
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:

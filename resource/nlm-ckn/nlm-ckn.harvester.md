@@ -4,6 +4,7 @@ description: The cellxgene-harvester package, which harvests, filters, and count
   normal cells from the CELLxGENE Census using ontology-based filtering (UBERON tissue,
   PATO/MONDO disease, HsapDv age) to produce per-organ input datasets for the quality-control
   workflow.
+format: python
 id: nlm-ckn.harvester
 name: cellxgene-harvester
 original_source:

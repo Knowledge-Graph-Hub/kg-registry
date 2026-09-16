@@ -3,6 +3,7 @@ category: Product
 compression: zip
 description: Zipped GitHub data archive for the KiNet/KinAce web portal and kinase-substrate
   interaction dataset
+format: csv
 id: kinace.github_archive
 name: KiNet GitHub Dataset Archive
 original_source:

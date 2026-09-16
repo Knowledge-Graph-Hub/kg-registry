@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Web interface for browsing manually curated, experimentally validated
   enhancers and their target genes and regulatory annotations in ENdb.
+format: http
 id: endb.browse
 name: ENdb Browse
 original_source:

@@ -21,7 +21,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://pitools.niper.ac.in/medkg/
 id: medkg
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -37,6 +37,7 @@ name: MedKG
 products:
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:

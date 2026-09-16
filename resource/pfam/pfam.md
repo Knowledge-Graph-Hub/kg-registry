@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/interpro/entry/pfam/
 id: pfam
 infores_id: pfam
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -39,6 +39,7 @@ products:
 - category: Product
   description: The Pfam HMM library for Pfam-A families, used for searching protein
     sequences against Pfam.
+  format: hmmer
   id: pfam.a.models
   name: Pfam-A HMM Library
   original_source:
@@ -49,6 +50,7 @@ products:
 - category: Product
   description: The Pfam HMM data for Pfam-A families, used for searching protein sequences
     against Pfam.
+  format: stockholm
   id: pfam.a.data
   name: Pfam-A HMM data
   original_source:
@@ -58,6 +60,7 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
 - category: Product
   description: Pfam-A Seed alignment.
+  format: stockholm
   id: pfam.a.seedalignment
   name: Pfam-A Seed alignment
   original_source:
@@ -67,6 +70,7 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.seed.gz
 - category: Product
   description: Pfam-A Full alignment.
+  format: stockholm
   id: pfam.a.fullalignment
   name: Pfam-A Full alignment
   original_source:

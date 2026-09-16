@@ -8,7 +8,7 @@ domains:
   - biomedical
 homepage_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
 id: cancer-registry-kg
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.hhs.gov/open/public-access-guiding-principles/index.html
@@ -62,6 +62,7 @@ products:
       - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
   - category: ProgrammingInterface
     description: Python-based API using RDFLib for parameterized SPARQL query execution against cancer registry knowledge graph. Provides template-based queries for hypothesis generation, treatment sequence analysis, and multi-dataset integration without requiring users to write SPARQL directly.
+    format: python
     id: cancer-registry-kg.api
     name: Cancer Registry Query API
     original_source:

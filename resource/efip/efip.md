@@ -17,7 +17,7 @@ domains:
 - proteomics
 homepage_url: https://proteininformationresource.org/efip/
 id: efip
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: eFIP
 products:
@@ -26,6 +26,7 @@ products:
     phosphorylation mentions, detecting protein-protein interaction mentions, and
     identifying temporal or causal relationships between phosphorylation and interaction
     events.
+  format: http
   id: efip.text-mining-system
   name: eFIP Text-Mining System
   original_source:

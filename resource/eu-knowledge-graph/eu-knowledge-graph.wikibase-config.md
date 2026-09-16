@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: Wikibase configuration of the EU Knowledge Graph, published by the Commission's
   DORIS team, along with the issue tracker used for feature requests and bug reports.
+format: mixed
 id: eu-knowledge-graph.wikibase-config
 name: EU Knowledge Graph Wikibase Configuration
 original_source:

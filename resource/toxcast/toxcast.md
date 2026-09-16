@@ -15,7 +15,7 @@ domains:
 - biomedical
 homepage_url: https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast
 id: toxcast
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/privacy/privacy-and-security-notice
@@ -78,6 +78,7 @@ products:
 - category: Product
   description: Bulk release archives (assay annotations, hit-call data, summary tables)
     for ToxCast phases.
+  format: mixed
   id: toxcast.downloads
   name: ToxCast Bulk Data Downloads
   original_source:

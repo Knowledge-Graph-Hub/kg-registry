@@ -2,6 +2,7 @@
 category: Product
 description: Python-based BioThings SDK for aggregating biomedical annotations and
   exposing them as high-performance APIs.
+format: python
 id: biothings.sdk
 name: BioThings SDK
 original_source:

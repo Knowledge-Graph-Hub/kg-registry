@@ -18,7 +18,7 @@ domains:
   - biomedical
 id: rampdb
 infores_id: rampdb
-last_modified_date: '2026-01-15T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: RaMPDB
 homepage_url: https://rampdb.nih.gov/
@@ -31,6 +31,7 @@ products:
     name: RaMP-DB Integrated Database
     description: Multi-sourced relational database integrating metabolomic pathway information, biochemical reactions, ontologies, and chemical descriptors for genes, proteins, and metabolites with query and enrichment analysis capabilities.
     category: DatabaseProduct
+    format: mysql
     product_url: https://rampdb.nih.gov/
     original_source:
       - source: kegg
@@ -48,6 +49,7 @@ products:
     name: RaMP-DB API
     description: Programmatic interface for accessing RaMP-DB integrated metabolomic pathway data and performing enrichment analyses.
     category: ProgrammingInterface
+    format: http
     product_url: https://rampdb.nih.gov/api
     original_source:
       - source: rampdb

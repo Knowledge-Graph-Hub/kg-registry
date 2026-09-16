@@ -40,6 +40,7 @@ publications:
   year: '2022'
 products:
   - category: GraphicalInterface
+    format: http
     description: Interface for the Chemical Correlation Database for exploring curated inter-chemical correlations
     id: ecid.ccdb.site
     name: CCDB
@@ -50,6 +51,7 @@ products:
     product_url: https://ccdb.ecidbase.org/
   - category: GraphicalInterface
     description: Interface for Exposome Data Interpretation Resource for interpreting inter-chemical correlations
+    format: http
     id: ecid.edir.site
     is_public: true
     name: EDIR
@@ -58,6 +60,7 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://edir.ecidbase.org/
   - category: Product
+    format: xlsx
     description: Compound lists from 73 untargeted datasets with 3,329 unique 2D structures.
     id: ecid.compound.lists
     name: ECID Compound Lists
@@ -67,6 +70,7 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: xlsx
     description: Analytes measured by targeted assays for the NIEHS HHEAR program.
     id: ecid.hhear.analyte.list
     name: HHEAR Analyte List
@@ -76,6 +80,7 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: xlsx
     description: Chemical analytes reported for the ECHO cohort measured by targeted assays.
     id: ecid.echo.analyte.list
     name: ECHO Analyte List
@@ -85,6 +90,7 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: csv
     description: Selected datasets (n=289) for computing and curating inter-chemical correlations.
     id: ecid.dataset.list
     name: ECID Dataset List
@@ -94,6 +100,7 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: xlsx
     description: Chemical analytes reported by the NHANES biomonitoring survey.
     id: ecid.nhanes.analyte.list
     name: NHANES Analyte List
@@ -103,6 +110,7 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: csv
     description: Metabolite and chemical names reported by Metabolon Inc. in PMC articles.
     id: ecid.metabolomics.data.dictionary
     name: Metabolomics Data Dictionary
@@ -112,6 +120,7 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: csv
     description: mwTAB files processed to yield curated compound names and identifiers.
     id: ecid.metabolomics.workbench.dictionary
     name: Metabolomics WorkBench Compound Dictionary
@@ -133,7 +142,7 @@ products:
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-05-12T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 # Exposome Correlation and Interpretation Database (ECID)

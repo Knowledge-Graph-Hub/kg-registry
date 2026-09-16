@@ -15,7 +15,7 @@ domains:
 - information technology
 homepage_url: https://biothings.io/
 id: biothings
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/Apache-2.0
@@ -35,6 +35,7 @@ products:
 - category: Product
   description: Python-based BioThings SDK for aggregating biomedical annotations and
     exposing them as high-performance APIs.
+  format: python
   id: biothings.sdk
   name: BioThings SDK
   original_source:

@@ -3,6 +3,7 @@ category: ProcessProduct
 description: The scsilhouette Python package, part of the NLM-CKN quality-control
   workflow. Together with NSForest F-scores it computes silhouette and summary quality
   metrics that characterize the single-cell clusters used in the knowledgebase.
+format: python
 id: nlm-ckn.scsilhouette
 name: scsilhouette
 original_source:

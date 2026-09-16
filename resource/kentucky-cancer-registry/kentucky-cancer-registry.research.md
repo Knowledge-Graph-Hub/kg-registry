@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Researcher data-request and research resources portal describing how
   to request KCR cancer surveillance data for approved research projects.
+format: http
 id: kentucky-cancer-registry.research
 name: KCR Research Data Request Portal
 original_source:

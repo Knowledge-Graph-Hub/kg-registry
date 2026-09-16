@@ -32,6 +32,7 @@ name: MGMLink
 products:
   - category: ProcessProduct
     description: Code for generating MGMLink
+    format: python
     id: mgmlink.code
     name: MGMLink code
     original_source:
@@ -56,7 +57,7 @@ publications:
 taxon:
   - NCBITaxon:2759
 creation_date: '2025-04-13T00:00:00Z'
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 MGMLink

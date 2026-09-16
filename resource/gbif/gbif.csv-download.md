@@ -3,6 +3,7 @@ category: Product
 compression: zip
 description: Simple CSV format occurrence downloads with interpreted data and commonly
   used columns, suitable for spreadsheet and programming analysis
+format: csv
 id: gbif.csv-download
 name: GBIF Simple CSV Downloads
 original_source:

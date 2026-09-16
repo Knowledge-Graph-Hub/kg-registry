@@ -207,8 +207,10 @@ body:
       options:
         - chebi_sdf
         - csv
+        - dwca
         - fasta
         - graphql
+        - hmmer
         - http
         - json
         - jsonld
@@ -216,13 +218,18 @@ body:
         - kgx-json
         - kgx-jsonl
         - kgx-rdf
+        - markdown
+        - mol2
+        - n3
         - nquads
         - ntriples
         - obo
         - other
         - owl
+        - parquet
         - postgres
         - protobuf
+        - r
         - rdfxml
         - sdf
         - shacl
@@ -231,6 +238,7 @@ body:
         - trig
         - tsv
         - ttl
+        - xlsx
         - xml
     validations:
       required: false

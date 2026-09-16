@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for BioBricks ICE
+format: http
 id: biobricks-ice.tpf
 name: BioBricks ICE TPF
 original_source:

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SPOKE GeneLab
+format: http
 id: spoke-genelab.tpf
 name: SPOKE GeneLab TPF
 original_source:

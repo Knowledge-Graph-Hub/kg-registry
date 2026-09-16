@@ -5,6 +5,7 @@ description: A comprehensive multi-omics biomedical knowledge graph connecting g
   118 million relationships.
 dump_format: neo4j
 edge_count: 118000000
+format: neo4j
 id: petagraph.graph
 name: Petagraph Knowledge Graph (Neo4J)
 node_count: 32000000

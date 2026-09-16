@@ -18,7 +18,7 @@ domains:
 homepage_url: https://aact.ctti-clinicaltrials.org/
 id: aact
 infores_id: aact
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -81,6 +81,7 @@ products:
 - category: DocumentationProduct
   description: Complete database schema documentation showing table structure and
     relationships
+  format: http
   id: aact.schema
   name: AACT Database Schema
   original_source:
@@ -90,6 +91,7 @@ products:
 - category: DocumentationProduct
   description: Data dictionary with detailed information about all AACT data elements
     and their relationship to ClinicalTrials.gov definitions
+  format: http
   id: aact.dictionary
   name: AACT Data Dictionary
   original_source:

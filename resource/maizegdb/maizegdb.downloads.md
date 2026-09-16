@@ -1,8 +1,9 @@
 ---
-category: DataProduct
+category: Product
 description: Bulk download server hosting maize and Andropogoneae genome assemblies,
   gene models (GFF, CDS, protein, genomic sequence), transposable element annotations,
   and other genomics datasets.
+format: mixed
 id: maizegdb.downloads
 name: MaizeGDB Download Server
 original_source:

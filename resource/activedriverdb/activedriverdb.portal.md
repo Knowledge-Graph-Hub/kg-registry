@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Web interface for searching and browsing ActiveDriverDB proteins, mutations,
   pathways, and PTM-site annotations.
+format: http
 id: activedriverdb.portal
 name: ActiveDriverDB Web Portal
 original_source:

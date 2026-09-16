@@ -25,10 +25,12 @@ URI: [kgr:FormatEnum](https://w3id.org/bridge2ai/data-sheets-schema/FormatEnum)
 | doc | None | The Microsoft Word Document (DOC) format, a binary file format used by Micros... |
 | docx | None | The Microsoft Word Open XML Document (DOCX) format, a modern file format for ... |
 | dot | https://graphviz.org/doc/info/lang.html | The DOT format, a plain text graph description language used to define the st... |
+| dwca | https://dwc.tdwg.org/text/ | The Darwin Core Archive (DwC-A) format, a zipped package of one or more text ... |
 | fasta | edam:1929 | The FASTA format, a text-based format for representing nucleotide or peptide ... |
 | gff | None | The General Feature Format (GFF), a standard file format for describing genes... |
 | graphql | None | The GraphQL format, a query language for APIs and a runtime for executing tho... |
 | hdf5 | edam:3590 | The Hierarchical Data Format version 5 (HDF5) format, a file format and set o... |
+| hmmer | edam:1370 | The HMMER profile hidden Markov model format, a text format for profile HMMs ... |
 | http | None | The Hypertext Transfer Protocol (HTTP) format |
 | java | None | The Java source code format, which is a text file containing Java code |
 | javascript | None | The JavaScript file format, which is a text file containing JavaScript code |
@@ -38,13 +40,17 @@ URI: [kgr:FormatEnum](https://w3id.org/bridge2ai/data-sheets-schema/FormatEnum)
 | kgx-json | https://github.com/biolink/kgx/blob/master/specification/kgx-format.md | The KGX standard, which is a graph exchange format for knowledge graphs |
 | kgx-jsonl | https://github.com/biolink/kgx/blob/master/specification/kgx-format.md | The KGX standard, which is a graph exchange format for knowledge graphs |
 | kgx-rdf | https://github.com/biolink/kgx/blob/master/specification/kgx-format.md | The KGX standard, which is a graph exchange format for knowledge graphs |
+| markdown | https://commonmark.org/ | The Markdown format, a lightweight plain-text markup language commonly used f... |
 | mixed | None | A product that contains multiple formats or serializations |
+| mol2 | edam:3816 | The Tripos Mol2 format, a text format for describing molecular structures inc... |
 | mysql | None | The MySQL relational database management system |
+| n3 | edam:3257 | The Notation3 (N3) format, a compact text serialization of RDF that extends T... |
 | neo4j | None | The Neo4j graph database management system |
 | nquads | edam:3956 | The N-Quads format, an extension of the N-Triples format that adds an optiona... |
 | ntriples | edam:3256 | The N-Triples format, a line-based, plain text serialization format for RDF g... |
 | obo | edam:2196 | The Open Biomedical Ontologies (OBO) format, a file format for representing o... |
 | owl | edam:2197 | The Web Ontology Language (OWL) format, a semantic web language designed to r... |
+| parquet | https://parquet.apache.org/docs/file-format/ | The Apache Parquet format, a columnar binary storage format for tabular data ... |
 | pdf | None | The Portable Document Format (PDF), a file format developed by Adobe for pres... |
 | png | None | The Portable Network Graphics (PNG) format, a raster graphics file format tha... |
 | postgres | None | The PostgreSQL relational database management system |
@@ -52,6 +58,7 @@ URI: [kgr:FormatEnum](https://w3id.org/bridge2ai/data-sheets-schema/FormatEnum)
 | psi_mi_mitab | https://psicquic.github.io/MITAB28Format.html | The PSI-MI MITAB format, which is a tab-delimited format for representing mol... |
 | psi_mi_xml | https://www.psidev.info/psi-mi-xml-specification | The PSI-MI XML format, which is a standard for representing molecular interac... |
 | python | None | The Python script format, which is a text file containing Python code |
+| r | edam:3999 | The R script or package format, which is a text file or package containing R ... |
 | rdfxml | edam:3261 | The RDF/XML format, an XML syntax for expressing RDF graphs as an XML documen... |
 | sbgnml | https://sbgn.github.io/sbgn/ | The Systems Biology Graphical Notation (SBGN) XML format, which is a standard... |
 | sbml | https://sbml.org/ | The Systems Biology Markup Language (SBML) XML format, which is a computer-re... |
@@ -70,6 +77,7 @@ URI: [kgr:FormatEnum](https://w3id.org/bridge2ai/data-sheets-schema/FormatEnum)
 | txt | None | The Plain Text (TXT) format, a simple text format for representing unformatte... |
 | vcf | edam:3016 | The Variant Call Format (VCF), a text file format for storing gene sequence v... |
 | xgmml | edam:3618 | The eXtensible Graph Markup Language (XGMML) format, an XML-based format for ... |
+| xlsx | edam:3620 | The Microsoft Excel Open XML Spreadsheet (XLSX) format, a zipped, XML-based f... |
 | xml | edam:2332 | The Extensible Markup Language (XML) format |
 | yaml | edam:3750 | The YAML Ain't Markup Language (YAML) format, a human-readable data serializa... |
 

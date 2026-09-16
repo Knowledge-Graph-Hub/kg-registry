@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SAWGraph PFAS KG
+format: http
 id: sawgraph.tpf
 name: SAWGraph PFAS KG TPF
 original_source:

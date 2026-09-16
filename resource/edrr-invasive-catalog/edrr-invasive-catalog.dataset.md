@@ -3,6 +3,7 @@ category: Product
 description: USGS ScienceBase data release containing the catalog of U.S. federal
   early detection/rapid response invasive species databases and tools, distributed
   as tabular spreadsheet data with metadata.
+format: xlsx
 id: edrr-invasive-catalog.dataset
 name: EDRR Invasive Species Databases and Tools Catalog (Version 2.0)
 original_source:

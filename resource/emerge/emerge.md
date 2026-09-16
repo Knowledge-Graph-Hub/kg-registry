@@ -15,12 +15,13 @@ domains:
   - precision medicine
 homepage_url: https://emerge-network.org/
 id: emerge
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Electronic Medical Records and Genomics Network
 products:
   - category: GraphicalInterface
     description: eMERGE Network website describing network phases, study sites, working groups, genomic medicine implementation activities, and consortium resources.
+    format: http
     id: emerge.portal
     name: eMERGE Network Website
     original_source:
@@ -29,6 +30,7 @@ products:
     product_url: https://emerge-network.org/
   - category: DocumentationProduct
     description: NHGRI project page summarizing eMERGE as an NIH-organized and funded consortium for combining biorepositories and electronic medical record systems in genomic medicine research.
+    format: http
     id: emerge.nhgri-project-page
     name: NHGRI eMERGE Project Page
     original_source:

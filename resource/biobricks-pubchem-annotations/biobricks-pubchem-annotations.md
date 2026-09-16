@@ -48,6 +48,7 @@ products:
   name: BioBricks PubChem Annotations TPF
   description: Triple Pattern Fragments endpoint for BioBricks PubChem Annotations
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/biobricks-pubchem-annotations
   original_source:
   - source: biobricks-pubchem-annotations
@@ -66,7 +67,7 @@ products:
     relation_type: prov:wasDerivedFrom
 repository: https://github.com/biobricks-ai/pubchem-annotations-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 BioBricks PubChem Annotations
 

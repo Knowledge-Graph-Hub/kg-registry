@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: Source code for constructing EmeraldGraph, loading it into Neo4j, and
   using it in the EmeraldMind greenwashing-detection workflow.
+format: python
 id: emeraldgraph.pipeline
 name: EmeraldGraph construction pipeline
 original_source:

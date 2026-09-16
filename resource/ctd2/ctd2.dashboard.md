@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: Searchable CTD2 Dashboard interface for Network-generated observations
   and validated experimental findings associated with genes, proteins, compounds,
   biomarkers, and other studied subjects.
+format: http
 id: ctd2.dashboard
 name: CTD2 Dashboard
 original_source:
