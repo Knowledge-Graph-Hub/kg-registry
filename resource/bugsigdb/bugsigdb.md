@@ -54,6 +54,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bugsigdb
+  product_file_size: 3276228
   product_url: https://raw.githubusercontent.com/waldronlab/BugSigDBExports/main/full_dump.csv
   repository: https://github.com/waldronlab/BugSigDBExports
 - category: Product
@@ -143,7 +144,7 @@ publications:
   - Sengupta P
   - Hecht I
   - Ravikrishnan A
-  - "Gon\xE7alves RS"
+  - Gonçalves RS
   - Franzosa E
   - Raman K
   - Carey V

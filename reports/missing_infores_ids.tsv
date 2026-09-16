@@ -70,6 +70,7 @@ bootstrep	Gene Regulation Ontology	Ontology	http://www.ebi.ac.uk/Rebholz-srv/GRO
 brenda	BRENDA	DataSource	https://www.brenda-enzymes.org/	resource/brenda/brenda.md
 bridge2ai	Bridge to Artificial Intelligence (Bridge2AI)	DataSource	https://bridge2ai.org/	resource/bridge2ai/bridge2ai.md
 bto	BRENDA tissue / enzyme source	Ontology	http://www.brenda-enzymes.org	resource/bto/bto.md
+bugsigdb	BugSigDB	DataSource	https://bugsigdb.org/	resource/bugsigdb/bugsigdb.md
 bv-brc	Bacterial and Viral Bioinformatics Resource Center	DataSource	https://www.bv-brc.org/	resource/bv-brc/bv-brc.md
 cabi-isc	CABI Invasive Species Compendium	DataSource	https://www.cabidigitallibrary.org/product/qi	resource/cabi-isc/cabi-isc.md
 campbell-biology	Campbell Biology	DataSource	https://openlibrary.org/isbn/9780134093413	resource/campbell-biology/campbell-biology.md
@@ -291,6 +292,7 @@ glyconnect	GlyConnect	DataSource	https://glyconnect.expasy.org/	resource/glyconn
 glycordf	GlycoRDF: An Ontology to Standardize Glycomics Data in RDF	Ontology	https://www.glycoinfo.org/GlycoRDF/	resource/glycordf/glycordf.md
 glygen	GlyGen	DataSource	https://glygen.org/	resource/glygen/glygen.md
 glytoucan	GlyTouCan	DataSource	https://glytoucan.org/	resource/glytoucan/glytoucan.md
+gmrepo	GMrepo	DataSource	https://gmrepo.humangut.info/	resource/gmrepo/gmrepo.md
 gnis	Geographic Names Information System	DataSource	https://www.usgs.gov/tools/geographic-names-information-system-gnis	resource/gnis/gnis.md
 gno	Glycan Naming and Subsumption Ontology (GNOme)	Ontology	https://gnome.glyomics.org/	resource/gno/gno.md
 gnomad	Genome Aggregation Database (gnomAD)	DataSource	https://gnomad.broadinstitute.org/	resource/gnomad/gnomad.md
@@ -305,6 +307,7 @@ gro	Cereal Plant Gross Anatomy	Ontology	http://www.gramene.org/plant_ontology/	r
 gsso	Gender, Sex, and Sexual Orientation (GSSO) ontology	Ontology	https://gsso.research.cchmc.org/	resource/gsso/gsso.md
 gtdb	Genome Taxonomy Database	DataSource	https://gtdb.ecogenomic.org/	resource/gtdb/gtdb.md
 gtrnadb	GtRNAdb	DataSource	https://gtrnadb.org/	resource/gtrnadb/gtrnadb.md
+gutmdisorder	gutMDisorder	DataSource	http://bio-annotation.cn/gutMDisorder/	resource/gutmdisorder/gutmdisorder.md
 gutmgene	GutMGene	DataSource	http://bio-computing.hrbmu.edu.cn/gutmgene	resource/gutmgene/gutmgene.md
 habronattus	Habronattus courtship	Ontology	http://www.mesquiteproject.org/ontology/Habronattus/index.html	resource/habronattus/habronattus.md
 hald	Human Aging and Longevity Database	KnowledgeGraph	https://bis.zju.edu.cn/hald	resource/hald/hald.md
@@ -405,6 +408,7 @@ matador	MATADOR	DataSource	http://matador.embl.de/	resource/matador/matador.md
 maude	MAUDE (Manufacturer and User Facility Device Experience)	DataSource	https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database	resource/maude/maude.md
 maudekg	FDA MAUDE Adverse Event Knowledge Graph	KnowledgeGraph	https://github.com/Prabhadeus/Proto-OKN	resource/maudekg/maudekg.md
 maven-central	Maven Central Repository	DataSource	https://central.sonatype.com/	resource/maven-central/maven-central.md
+mbodymap	mBodyMap	DataSource	https://mbodymap.microbiome.cloud/	resource/mbodymap/mbodymap.md
 mco	Microbial Conditions Ontology	Ontology	https://github.com/microbial-conditions-ontology/microbial-conditions-ontology	resource/mco/mco.md
 mcro	Model Card Report Ontology	Ontology	https://github.com/UTHealth-Ontology/MCRO	resource/mcro/mcro.md
 mechreponet	MechRepoNet	KnowledgeGraph	https://github.com/SuLab/MechRepoNet	resource/mechreponet/mechreponet.md
@@ -425,6 +429,7 @@ mgmlink	MGMLink	KnowledgeGraph	https://github.com/bsantan/MGMLink	resource/mgmli
 mgnify	MGnify	Aggregator	https://www.ebi.ac.uk/metagenomics	resource/mgnify/mgnify.md
 miapa	MIAPA Ontology	Ontology	http://www.evoio.org/wiki/MIAPA	resource/miapa/miapa.md
 micro	Ontology of Prokaryotic Phenotypic and Metabolic Characters	Ontology	https://github.com/carrineblank/MicrO	resource/micro/micro.md
+micromap	MicroMap	KnowledgeGraph	https://github.com/vkhangraphomics/micromap-oss	resource/micromap/micromap.md
 mind	MIND	KnowledgeGraph	https://zenodo.org/records/8117748	resource/mind/mind.md
 mirdb	miRDB	DataSource	https://mirdb.org/	resource/mirdb/mirdb.md
 mirgenedb	MirGeneDB	DataSource	https://mirgenedb.org/	resource/mirgenedb/mirgenedb.md

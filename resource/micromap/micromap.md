@@ -11,17 +11,16 @@ contacts:
   label: Varun Khandavalli
 creation_date: '2026-09-16T00:00:00Z'
 description: MicroMap is a microbiome knowledge graph platform built by Graphomics
-  on Neo4j. It links microbial taxa to diseases, metabolites, pathways, drugs,
-  genes, proteins, body sites and literature. The graph is populated through
-  MapForge, a BioCypher-compatible ingestion pipeline that turns tabular source
-  data into parameterized Cypher bundles that a reviewer approves before any node
-  is written. Loaders cover NCBI Taxonomy, Disbiome, gutMDisorder, BugSigDB,
-  GMrepo, mBodyMap, HMDB, KEGG, ChEMBL, Reactome, PubChem, PubMed and SemMedDB.
-  The ingestion software, API code and graph schema are open source under the
-  MIT license. The populated production graph is served to Graphomics customers
-  through a REST API and an MCP server and is not distributed as a bulk download.
-  This resource is unrelated to the MicroMap microbiome-metabolism visualization
-  resource from the Thiele lab (University of Galway, 2025).
+  on Neo4j. It links microbial taxa to diseases, metabolites, pathways, drugs, genes,
+  proteins, body sites and literature. The graph is populated through MapForge, a
+  BioCypher-compatible ingestion pipeline that turns tabular source data into parameterized
+  Cypher bundles that a reviewer approves before any node is written. Loaders cover
+  NCBI Taxonomy, Disbiome, gutMDisorder, BugSigDB, GMrepo, mBodyMap, HMDB, KEGG, ChEMBL,
+  Reactome, PubChem, PubMed and SemMedDB. The ingestion software, API code and graph
+  schema are open source under the MIT license. The populated production graph is
+  served to Graphomics customers through a REST API and an MCP server and is not distributed
+  as a bulk download. This resource is unrelated to the MicroMap microbiome-metabolism
+  visualization resource from the Thiele lab (University of Galway, 2025).
 domains:
 - biomedical
 - microbiology
@@ -36,11 +35,11 @@ license:
 name: MicroMap
 products:
 - category: ProgrammingInterface
-  description: REST API and MCP server over the production MicroMap Neo4j graph,
-    with endpoints for taxa, diseases, metabolites, drugs, genes, proteins, pathways,
-    biomarker signatures, papers, cross-feeding networks, provenance and graph
-    traversal. Access requires a Graphomics API key. The API application code is
-    in the open-source repository.
+  description: REST API and MCP server over the production MicroMap Neo4j graph, with
+    endpoints for taxa, diseases, metabolites, drugs, genes, proteins, pathways, biomarker
+    signatures, papers, cross-feeding networks, provenance and graph traversal. Access
+    requires a Graphomics API key. The API application code is in the open-source
+    repository.
   format: http
   id: micromap.api
   is_neo4j: true
@@ -81,8 +80,8 @@ products:
     tabular sources (CSV, TSV, JSON, JSONL, Parquet, SQL dumps), resolves entities
     against the graph, emits deterministic parameterized Cypher bundles and writes
     them to Neo4j 5.x only after a reviewer approves the bundle. BioCypher adapters
-    are supported through the import-kg path. Distributed as a Python package in
-    the micromap-oss repository.
+    are supported through the import-kg path. Distributed as a Python package in the
+    micromap-oss repository.
   format: python
   id: micromap.mapforge
   license:
@@ -95,10 +94,9 @@ products:
   product_url: https://github.com/vkhangraphomics/micromap-oss/tree/main/micromap-mapforge
   repository: https://github.com/vkhangraphomics/micromap-oss
 - category: DataModelProduct
-  description: Neo4j graph schema for MicroMap, defining the node labels (Taxon,
-    Disease, Compound, Pathway, Gene, Drug, Protein, Paper, Study, BodySite,
-    DrugClass), relationship types and indexes, as Cypher constraint and index
-    statements.
+  description: Neo4j graph schema for MicroMap, defining the node labels (Taxon, Disease,
+    Compound, Pathway, Gene, Drug, Protein, Paper, Study, BodySite, DrugClass), relationship
+    types and indexes, as Cypher constraint and index statements.
   format: neo4j
   id: micromap.schema
   license:
@@ -108,6 +106,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: micromap
+  product_file_size: 4414
   product_url: https://github.com/vkhangraphomics/micromap-oss/blob/main/database/neo4j_microbiome_schema.cypher
   repository: https://github.com/vkhangraphomics/micromap-oss
 publications:
@@ -122,7 +121,6 @@ publications:
 repository: https://github.com/vkhangraphomics/micromap-oss
 version: v0.1.4
 ---
-
 MicroMap is a microbiome knowledge graph platform from Graphomics. It runs on
 Neo4j and connects microbial taxa to diseases, metabolites, pathways, drugs,
 genes, proteins, body sites and papers.

@@ -71,6 +71,7 @@ brenda,active,PASS
 bridge2ai,active,PASS
 bspo,active,PASS
 bto,active,PASS
+bugsigdb,active,PASS
 bv-brc,active,PASS
 cabi-isc,active,PASS
 campbell-biology,active,PASS
@@ -333,6 +334,7 @@ glyconnect,active,PASS
 glycordf,active,PASS
 glygen,active,PASS
 glytoucan,active,PASS
+gmrepo,active,PASS
 gnbr,active,PASS
 gnis,active,PASS
 gno,active,PASS
@@ -352,6 +354,7 @@ gtex,active,PASS
 gtopdb,active,PASS
 gtrnadb,active,PASS
 gtrx,active,PASS
+gutmdisorder,active,PASS
 gutmgene,active,PASS
 gwascatalog,active,PASS
 hald,active,PASS
@@ -464,6 +467,7 @@ maude,active,PASS
 maudekg,active,PASS
 maven-central,active,PASS
 maxo,active,PASS
+mbodymap,active,PASS
 mco,active,PASS
 mcro,active,PASS
 mechreponet,active,PASS
@@ -491,6 +495,7 @@ mgnify,active,PASS
 mi,active,PASS
 miapa,active,PASS
 microbiomekg,active,PASS
+micromap,active,PASS
 mind,active,PASS
 mint,active,PASS
 mirbase,active,PASS

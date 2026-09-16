@@ -133,6 +133,7 @@ mgd	Aggregator	no-upstream
 mgmlink	KnowledgeGraph	inferred			https://www.apache.org/licenses/LICENSE-2.0	permissive	pheknowlator	gutmgene
 mgnify	Aggregator	no-upstream						
 microbiomekg	KnowledgeGraph	inferred			https://go.drugbank.com/legal/terms_of_use	non-commercial	drugbank	eupathdb|panther
+micromap	KnowledgeGraph	conflict	https://opensource.org/license/mit/	permissive	https://www.kegg.jp/feedback/copyright.html	custom	kegg|semmeddb	disbiome|gmrepo|gutmdisorder|mbodymap
 mind	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://ctdbase.org/about/legal.jsp	custom	mechreponet|umls	
 mint	Aggregator	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	mi	
 mirbase	Aggregator	no-upstream	https://creativecommons.org/publicdomain/zero/1.0/	public domain				

@@ -2051,6 +2051,30 @@ kgr:bto a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <http://www.brenda-enzymes.org> .
 
+kgr:bugsigdb a schema1:DataSource ;
+    rdfs:label "BugSigDB" ;
+    dcterms:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "BugSigDB is a community-editable database of manually curated microbial signatures from published differential abundance studies of host-associated microbiomes. Each signature lists the taxa reported as increased or decreased between two conditions and is annotated with study geography, health outcome, host body site and experimental, epidemiological and statistical methods using controlled vocabulary. The initial release held more than 2,500 signatures from more than 600 studies on three host species. The site is a Semantic MediaWiki. Data are exported hourly to GitHub and released periodically on Zenodo, and the bugsigdbr Bioconductor package gives access from R." ;
+    dcterms:identifier "bugsigdb" ;
+    dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/37697152> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:bugsigdb.bugsigdbr,
+        kgr:bugsigdb.full_dump,
+        kgr:bugsigdb.gmt,
+        kgr:bugsigdb.site,
+        kgr:bugsigdb.zenodo,
+        kgr:micromap.api ;
+    schema1:name "BugSigDB" ;
+    doap:repository <https://github.com/waldronlab/BugSigDB> ;
+    skos:inScheme "biomedical",
+        "microbiology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://bugsigdb.org/> .
+
 kgr:bv-brc a schema1:DataSource ;
     rdfs:label "Bacterial and Viral Bioinformatics Resource Center" ;
     dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
@@ -2890,6 +2914,7 @@ kgr:chembl a schema1:DataSource ;
         kgr:indra.cogex.code,
         kgr:kg-covid-19.graph,
         kgr:kg-enp.graph,
+        kgr:micromap.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
         kgr:ncatsgardkg.graph,
@@ -5230,7 +5255,8 @@ kgr:disbiome a schema1:DataSource ;
         kgr:kg-microbe.graph.biomedical-function,
         kgr:kg-microbe.graph.core,
         kgr:kg-microbe.graph.function,
-        kgr:kg-microbe.graph.raw ;
+        kgr:kg-microbe.graph.raw,
+        kgr:micromap.api ;
     schema1:name "Disbiome" ;
     skos:altLabel "Disbiome",
         "Disbiome Database" ;
@@ -8892,6 +8918,25 @@ kgr:glytoucan a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://glytoucan.org/> .
 
+kgr:gmrepo a schema1:DataSource ;
+    rdfs:label "GMrepo" ;
+    dcterms:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "GMrepo (Gut Microbiome Data Repository) is a curated and consistently annotated database of human gut metagenomes and 16S rRNA amplicon datasets. Samples are grouped by manually curated host phenotype (health and disease, coded with MeSH) and their microbial contents are re-annotated with a common pipeline so that projects can be compared across datasets. Version 3 (2026) holds 890 projects and 118,965 runs, 302 annotated diseases and 1,299 marker taxa for 167 phenotype pairs, with a Marker Consistency Index summarizing how reproducible each marker is across studies. Data are served through the web site and a RESTful API." ;
+    dcterms:identifier "gmrepo" ;
+    dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/31504765>,
+        <https://www.ncbi.nlm.nih.gov/pubmed/34788838>,
+        <https://www.ncbi.nlm.nih.gov/pubmed/41277537> ;
+    dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:gmrepo.api,
+        kgr:gmrepo.site,
+        kgr:micromap.api ;
+    schema1:name "GMrepo" ;
+    skos:inScheme "biomedical",
+        "microbiology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://gmrepo.humangut.info/> .
+
 kgr:gnbr a schema1:KnowledgeGraph ;
     rdfs:label "GNBR" ;
     dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
@@ -9553,6 +9598,24 @@ kgr:gtrx a schema1:Aggregator ;
     adms:status "Active" ;
     foaf:homepage <https://biothings.ncats.io/gtrx> .
 
+kgr:gutmdisorder a schema1:DataSource ;
+    rdfs:label "gutMDisorder" ;
+    dcterms:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "gutMDisorder is a manually curated database of dysbiosis of the gut microbiota in disorders and under interventions such as medications, diets and probiotics. Each association records the microbe, the condition or intervention, the direction of change, the host and the supporting publication. Version 2.0 (2022) added associations curated from re-annotated raw sequencing data with manually curated host metadata, and interactive charts. Conditions are linked to MeSH and Disease Ontology terms and microbes to NCBI Taxonomy. Maintained at Harbin Medical University." ;
+    dcterms:identifier "gutmdisorder" ;
+    dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/31584099>,
+        <https://www.ncbi.nlm.nih.gov/pubmed/36215029> ;
+    dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:gutmdisorder.literature_associations,
+        kgr:gutmdisorder.rawdata_associations,
+        kgr:gutmdisorder.site,
+        kgr:micromap.api ;
+    schema1:name "gutMDisorder" ;
+    skos:inScheme "biomedical",
+        "microbiology" ;
+    adms:status "Active" ;
+    foaf:homepage <http://bio-annotation.cn/gutMDisorder/> .
+
 kgr:gutmgene a schema1:DataSource ;
     rdfs:label "GutMGene" ;
     dcterms:created "2025-04-13T00:00:00+00:00"^^xsd:dateTime ;
@@ -9939,6 +10002,7 @@ kgr:hmdb a schema1:Aggregator ;
         kgr:markerdb.api,
         kgr:markerdb.chemicals.tsv,
         kgr:medkg.site,
+        kgr:micromap.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
         kgr:pathwhiz.pathways,
@@ -11672,6 +11736,7 @@ kgr:kegg a schema1:DataSource ;
         kgr:kegg.webapps,
         kgr:kinace.portal,
         kgr:lncrnalyzr.graph,
+        kgr:micromap.api,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
         kgr:obo-db-ingest.bigg.metabolite.sssom.tsv,
@@ -11936,7 +12001,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-08T20:33:28+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-16T20:09:17+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -12889,6 +12954,22 @@ kgr:maxo a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/monarch-initiative/MAxO> .
 
+kgr:mbodymap a schema1:DataSource ;
+    rdfs:label "mBodyMap" ;
+    dcterms:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "mBodyMap is a curated database of microbes across the human body and their associations with health and diseases. It re-annotates the microbial contents of public metagenomic and amplicon samples with a common pipeline and manually curates the metadata of the human hosts, then organizes samples by body site and by disease so that datasets can be integrated and compared. At publication (2022) it held 63,148 runs, 14,401 metagenomes and 48,747 amplicons, from 136 projects across 22 body sites and 56 diseases, with precomputed abundance and prevalence for 6,247 species in 1,645 genera stratified by body site and disease." ;
+    dcterms:identifier "mbodymap" ;
+    dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/34718713> ;
+    dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:mbodymap.site,
+        kgr:micromap.api ;
+    schema1:name "mBodyMap" ;
+    skos:inScheme "biomedical",
+        "microbiology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://mbodymap.microbiome.cloud/> .
+
 kgr:mco a schema1:Ontology ;
     rdfs:label "Microbial Conditions Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -13623,6 +13704,26 @@ kgr:microbiomekg a schema1:KnowledgeGraph ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://multiomics.transltr.io/mbkp> .
+
+kgr:micromap a schema1:KnowledgeGraph ;
+    rdfs:label "MicroMap" ;
+    dcterms:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "MicroMap is a microbiome knowledge graph platform built by Graphomics on Neo4j. It links microbial taxa to diseases, metabolites, pathways, drugs, genes, proteins, body sites and literature. The graph is populated through MapForge, a BioCypher-compatible ingestion pipeline that turns tabular source data into parameterized Cypher bundles that a reviewer approves before any node is written. Loaders cover NCBI Taxonomy, Disbiome, gutMDisorder, BugSigDB, GMrepo, mBodyMap, HMDB, KEGG, ChEMBL, Reactome, PubChem, PubMed and SemMedDB. The ingestion software, API code and graph schema are open source under the MIT license. The populated production graph is served to Graphomics customers through a REST API and an MCP server and is not distributed as a bulk download. This resource is unrelated to the MicroMap microbiome-metabolism visualization resource from the Thiele lab (University of Galway, 2025)." ;
+    dcterms:hasVersion "v0.1.4" ;
+    dcterms:identifier "micromap" ;
+    dcterms:isReferencedBy <https://doi.org/10.5281/zenodo.22800749> ;
+    dcterms:license <https://opensource.org/license/mit/> ;
+    dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:micromap.api,
+        kgr:micromap.mapforge,
+        kgr:micromap.schema ;
+    schema1:name "MicroMap" ;
+    doap:repository <https://github.com/vkhangraphomics/micromap-oss> ;
+    skos:inScheme "biomedical",
+        "microbiology",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/vkhangraphomics/micromap-oss> .
 
 kgr:mind a schema1:KnowledgeGraph ;
     rdfs:label "MIND" ;
@@ -14812,6 +14913,7 @@ kgr:ncbitaxon a schema1:Ontology ;
         kgr:metabokg.graph,
         kgr:metabokg.schema,
         kgr:microbiomekg.api,
+        kgr:micromap.api,
         kgr:ncbitaxon.json,
         kgr:ncbitaxon.obo,
         kgr:ncbitaxon.owl,
@@ -19352,6 +19454,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:markerdb.api,
         kgr:markerdb.chemicals.tsv,
         kgr:microbiomekg.api,
+        kgr:micromap.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
         kgr:ncatsgardkg.graph,
@@ -19439,6 +19542,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:medgen.pubmed-links,
         kgr:medkg.site,
         kgr:metabokg.graph,
+        kgr:micromap.api,
         kgr:multiomics-kp.graph,
         kgr:myaura.graph,
         kgr:ncbigene.gene2pubmed,
@@ -19813,6 +19917,7 @@ kgr:reactome a schema1:DataSource ;
         kgr:kg-monarch.graph.rdf,
         kgr:mechreponet.kg,
         kgr:medkg.site,
+        kgr:micromap.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
         kgr:msigdb.downloads.human,
@@ -20869,6 +20974,7 @@ kgr:semmeddb a schema1:DataSource ;
     dcterms:modified "2026-01-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:epigraphdb.graph,
+        kgr:micromap.api,
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
@@ -25883,6 +25989,31 @@ kgr:bto.owl a schema1:OntologyProduct ;
     dcterms:description "BRENDA tissue / enzyme source in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/bto.owl> .
 
+kgr:bugsigdb.bugsigdbr a schema1:ProgrammingInterface ;
+    rdfs:label "bugsigdbr" ;
+    dcterms:description "bugsigdbr, an R/Bioconductor package for accessing published microbial signatures from BugSigDB" ;
+    schema1:url <https://bioconductor.org/packages/bugsigdbr/> .
+
+kgr:bugsigdb.full_dump a schema1:Product ;
+    rdfs:label "BugSigDB full dump" ;
+    dcterms:description "Hourly export of all complete BugSigDB studies, experiments and signatures as a single CSV file, with signature identifiers added" ;
+    schema1:url <https://raw.githubusercontent.com/waldronlab/BugSigDBExports/main/full_dump.csv> .
+
+kgr:bugsigdb.gmt a schema1:Product ;
+    rdfs:label "BugSigDB signature GMT files" ;
+    dcterms:description "Hourly exports of BugSigDB signatures as GMT gene-set files, one file per combination of taxonomic level (genus, species, mixed) and identifier type (NCBI Taxonomy, MetaPhlAn, taxon name)" ;
+    schema1:url <https://github.com/waldronlab/BugSigDBExports> .
+
+kgr:bugsigdb.site a schema1:GraphicalInterface ;
+    rdfs:label "BugSigDB web site" ;
+    dcterms:description "Semantic MediaWiki site for browsing, searching and curating published microbial signatures" ;
+    schema1:url <https://bugsigdb.org/> .
+
+kgr:bugsigdb.zenodo a schema1:Product ;
+    rdfs:label "BugSigDB stable releases" ;
+    dcterms:description "Periodic manually reviewed stable data releases of BugSigDB on Zenodo, under the concept DOI 10.5281/zenodo.5606165" ;
+    schema1:url <https://doi.org/10.5281/zenodo.5606165> .
+
 kgr:bv-brc.api a schema1:ProgrammingInterface ;
     rdfs:label "BV-BRC Data API" ;
     dcterms:description "Application Programming Interface for programmatic access to BV-BRC data" ;
@@ -30368,6 +30499,16 @@ kgr:glytoucan.sparql a schema1:ProgrammingInterface ;
     dcterms:description "SPARQL endpoint providing RDF access to the GlyTouCan glycan structure repository and its semantic annotations." ;
     schema1:url <https://ts.glytoucan.org/sparql> .
 
+kgr:gmrepo.api a schema1:ProgrammingInterface ;
+    rdfs:label "GMrepo RESTful API" ;
+    dcterms:description "RESTful API giving programmable access to most database contents, such as curated project lists, runs and taxa associated with a phenotype MeSH identifier, and full taxonomic profiles by run. Example clients in R, Perl and Python are in the GMrepoProgrammableAccess repository." ;
+    schema1:url <https://github.com/evolgeniusteam/GMrepoProgrammableAccess> .
+
+kgr:gmrepo.site a schema1:GraphicalInterface ;
+    rdfs:label "GMrepo web site" ;
+    dcterms:description "Web interface for browsing curated projects, runs, phenotypes, taxa and disease markers with graphical selectors and cross-dataset comparison" ;
+    schema1:url <https://gmrepo.humangut.info/> .
+
 kgr:gnis.download a schema1:Product ;
     rdfs:label "GNIS Data Download" ;
     dcterms:description "GNIS data download portal providing bulk geographic names files for the United States, individual states, and topical extracts." ;
@@ -30757,6 +30898,21 @@ kgr:gtrnadb.sifter a schema1:GraphicalInterface ;
     rdfs:label "tRNA Sifter" ;
     dcterms:description "Search tRNAs by species, amino acid isotype, anticodon, intron count, tRNA score, and structural features" ;
     schema1:url <https://gtrnadb.org/search.html> .
+
+kgr:gutmdisorder.literature_associations a schema1:Product ;
+    rdfs:label "gutMDisorder v2.0 literature associations" ;
+    dcterms:description "All literature-curated gut microbe associations with disorders and interventions from gutMDisorder v2.0, as an Excel workbook" ;
+    schema1:url <http://bio-annotation.cn/gutMDisorder/public/res/2.0-literature-associations.xlsx> .
+
+kgr:gutmdisorder.rawdata_associations a schema1:Product ;
+    rdfs:label "gutMDisorder v2.0 raw data associations" ;
+    dcterms:description "Gut microbe associations with disorders and interventions derived from re-annotated raw sequencing data in gutMDisorder v2.0, as an Excel workbook" ;
+    schema1:url <http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx> .
+
+kgr:gutmdisorder.site a schema1:GraphicalInterface ;
+    rdfs:label "gutMDisorder web site" ;
+    dcterms:description "Web interface for browsing and searching gut microbe associations with disorders and interventions, with a resource page listing the download files" ;
+    schema1:url <http://bio-annotation.cn/gutMDisorder/> .
 
 kgr:gutmgene.site a schema1:GraphicalInterface ;
     rdfs:label "GutMGene site" ;
@@ -32739,6 +32895,11 @@ kgr:maxo.owl a schema1:OntologyProduct ;
     dcterms:description "Medical Action Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/maxo.owl> .
 
+kgr:mbodymap.site a schema1:GraphicalInterface ;
+    rdfs:label "mBodyMap web site" ;
+    dcterms:description "Web interface for browsing microbes by body site, by health and disease phenotype and by taxon, with curated project and run pages and graphical comparisons of abundance and prevalence" ;
+    schema1:url <https://mbodymap.microbiome.cloud/> .
+
 kgr:mcgill-genepi a "Organization" ;
     rdfs:label "Richards Lab (Genetic Epidemiology), McGill University" .
 
@@ -33170,6 +33331,16 @@ kgr:micro.owl a schema1:OntologyProduct ;
     rdfs:label "micro.owl" ;
     dcterms:description "Ontology of Prokaryotic Phenotypic and Metabolic Characters in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/micro.owl> .
+
+kgr:micromap.mapforge a schema1:ProcessProduct ;
+    rdfs:label "MicroMap MapForge" ;
+    dcterms:description "MapForge, the reviewable ingestion pipeline for MicroMap. It profiles tabular sources (CSV, TSV, JSON, JSONL, Parquet, SQL dumps), resolves entities against the graph, emits deterministic parameterized Cypher bundles and writes them to Neo4j 5.x only after a reviewer approves the bundle. BioCypher adapters are supported through the import-kg path. Distributed as a Python package in the micromap-oss repository." ;
+    schema1:url <https://github.com/vkhangraphomics/micromap-oss/tree/main/micromap-mapforge> .
+
+kgr:micromap.schema a schema1:DataModelProduct ;
+    rdfs:label "MicroMap Neo4j Schema" ;
+    dcterms:description "Neo4j graph schema for MicroMap, defining the node labels (Taxon, Disease, Compound, Pathway, Gene, Drug, Protein, Paper, Study, BodySite, DrugClass), relationship types and indexes, as Cypher constraint and index statements." ;
+    schema1:url <https://github.com/vkhangraphomics/micromap-oss/blob/main/database/neo4j_microbiome_schema.cypher> .
 
 kgr:mint.advanced.search a schema1:GraphicalInterface ;
     rdfs:label "MINT Advanced Search" ;
@@ -45222,6 +45393,11 @@ kgr:kg-covid-19.graph a schema1:GraphProduct ;
     rdfs:label "KG-COVID-19 graph" ;
     dcterms:description "KGX nodes and edges for KG-COVID-19" ;
     schema1:url <https://kghub.io/kg-covid-19/> .
+
+kgr:micromap.api a schema1:ProgrammingInterface ;
+    rdfs:label "MicroMap API" ;
+    dcterms:description "REST API and MCP server over the production MicroMap Neo4j graph, with endpoints for taxa, diseases, metabolites, drugs, genes, proteins, pathways, biomarker signatures, papers, cross-feeding networks, provenance and graph traversal. Access requires a Graphomics API key. The API application code is in the open-source repository." ;
+    schema1:url <https://www.graphomics.com/docs> .
 
 kgr:multiomics-kp.graph a schema1:GraphProduct ;
     rdfs:label "Multiomics KP Knowledge Graph" ;
