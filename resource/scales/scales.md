@@ -51,6 +51,7 @@ products:
   name: SCALES TPF
   description: Triple Pattern Fragments endpoint for SCALES
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/scales
   original_source:
   - source: scales
@@ -68,7 +69,7 @@ products:
     relation_type: prov:wasDerivedFrom
   product_url: https://scales-okn.org/
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 SCALES
 

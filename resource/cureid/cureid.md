@@ -22,7 +22,7 @@ domains:
 - public health
 homepage_url: https://cure.ncats.io/
 id: cureid
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: CURE ID
 products:
@@ -50,6 +50,7 @@ products:
 - category: DocumentationProduct
   description: About page describing the CURE ID initiative, its NCATS/FDA partnership,
     and how clinicians can participate.
+  format: http
   id: cureid.about
   name: CURE ID About
   original_source:

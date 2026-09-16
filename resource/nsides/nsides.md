@@ -19,7 +19,7 @@ domains:
 homepage_url: https://nsides.io/
 id: nsides
 infores_id: nsides
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: nSIDES
 products:
@@ -62,6 +62,7 @@ products:
     product_url: http://tatonettilab-resources.s3-website-us-west-1.amazonaws.com/?p=nsides/
   - category: ProcessProduct
     description: Code repository for OnSIDES model training and data generation
+    format: python
     id: nsides.onsides.code
     name: OnSIDES Code
     original_source:
@@ -70,6 +71,7 @@ products:
     product_url: https://github.com/tatonetti-lab/onsides
   - category: ProcessProduct
     description: Code repository for KidSIDES pediatric adverse drug event database study
+    format: r
     id: nsides.kidsides.code
     name: KidSIDES Code
     original_source:

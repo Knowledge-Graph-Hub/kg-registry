@@ -22,7 +22,7 @@ domains:
 - pharmacology
 homepage_url: http://nlp.case.edu/public/data/treatKB/
 id: treatkb
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: TreatKB
 products:
@@ -30,6 +30,7 @@ products:
   description: Peer-reviewed publication from the Xu lab describing the large-scale
     text-mining method used to extract accurate drug-disease treatment pairs from
     biomedical literature, the approach underlying TreatKB.
+  format: http
   id: treatkb.publication
   name: TreatKB Method Publication
   original_source:

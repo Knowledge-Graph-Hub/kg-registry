@@ -13,7 +13,7 @@ domains:
   - biomedical
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 id: gp-kg
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -76,6 +76,7 @@ products:
     product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   - category: ProcessProduct
     description: A computational framework for drug repurposing, used with GP-KG
+    format: python
     id: gp-kg.process.kg-predict
     name: KG-Predict
     original_source:

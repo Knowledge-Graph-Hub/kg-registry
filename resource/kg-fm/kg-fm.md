@@ -15,7 +15,7 @@ domains:
   - other
 homepage_url: https://github.com/MontageBai/KGFM
 id: kg-fm
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -32,6 +32,7 @@ products:
   - category: GraphProduct
     description: Neo4j framework-materials knowledge graph constructed from Web of Science abstracts and publication metadata with LLM-assisted information extraction. The paper reports 2.53 million nodes and 4.01 million relationships covering materials, properties, structures, applications, and related literature.
     edge_count: 4010000
+    format: neo4j
     id: kg-fm.graph
     name: KG-FM Neo4j Knowledge Graph
     node_count: 2530000
@@ -58,6 +59,7 @@ products:
   - category: Product
     compression: zip
     description: Zipped abstract-text corpora for COF, HOF, and MOF literature used as input to KG-FM extraction and graph construction.
+    format: txt
     id: kg-fm.abstract_text
     name: KG-FM Abstract Text Files
     original_source:
@@ -69,6 +71,7 @@ products:
   - category: Product
     compression: zip
     description: Zipped JSON extraction files for COF, HOF, and MOF literature, produced from framework-material abstracts and used to import KG-FM nodes and relationships.
+    format: json
     id: kg-fm.json_extractions
     name: KG-FM JSON Extraction Files
     original_source:
@@ -90,6 +93,7 @@ products:
   - category: Product
     compression: zip
     description: Zipped answer-reference material for the KG-FM question-answering benchmark.
+    format: txt
     id: kg-fm.answer_references
     name: KG-FM Answer References
     original_source:

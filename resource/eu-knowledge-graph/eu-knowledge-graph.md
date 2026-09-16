@@ -32,7 +32,7 @@ domains:
 - general
 homepage_url: https://linkedopendata.eu/wiki/The_EU_Knowledge_Graph
 id: eu-knowledge-graph
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: EU Knowledge Graph
 products:
@@ -106,6 +106,7 @@ products:
 - category: GraphProduct
   description: Data exports of the EU Knowledge Graph, advertised on the instance's main
     page as available from data.linkedopendata.eu.
+  format: mixed
   id: eu-knowledge-graph.exports
   name: EU Knowledge Graph Data Exports
   original_source:
@@ -120,6 +121,7 @@ products:
 - category: ProcessProduct
   description: Wikibase configuration of the EU Knowledge Graph, published by the Commission's
     DORIS team, along with the issue tracker used for feature requests and bug reports.
+  format: mixed
   id: eu-knowledge-graph.wikibase-config
   name: EU Knowledge Graph Wikibase Configuration
   original_source:

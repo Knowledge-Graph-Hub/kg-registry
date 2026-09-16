@@ -16,7 +16,7 @@ domains:
 homepage_url: https://github.com/griffithlab/docm
 id: docm
 infores_id: docm
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -48,6 +48,7 @@ products:
   - category: ProcessProduct
     compression: gzip
     description: Complete DoCM database in SQL format for local installation
+    format: postgres
     id: docm.data.sql
     name: DoCM SQL Database
     original_source:

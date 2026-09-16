@@ -25,7 +25,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
 id: pubtator
 infores_id: pubtator
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -46,6 +46,7 @@ products:
 - category: Product
   description: Bulk downloads of annotated articles and extraction summaries for entities
     and relations
+  format: mixed
   id: pubtator.bulk
   name: PubTator 3.0 Bulk Downloads
   original_source:

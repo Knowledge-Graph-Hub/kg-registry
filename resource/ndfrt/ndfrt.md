@@ -11,12 +11,13 @@ domains:
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/vandf.html
 id: ndfrt
 infores_id: ndfrt
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Veterans Health Administration National Drug File
 products:
 - category: Product
   description: VANDF drug terminology data distributed through UMLS Metathesaurus
+  format: http
   id: ndfrt.umls
   name: VANDF in UMLS
   original_source:
@@ -28,6 +29,7 @@ products:
     source: umls
 - category: Product
   description: VANDF data integrated into RxNorm
+  format: http
   id: ndfrt.rxnorm
   name: VANDF in RxNorm
   original_source:
@@ -616,6 +618,7 @@ products:
 - category: Product
   compression: zip
   description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  format: mixed
   id: med-rt.core_dts
   name: Core MED-RT DTS Archive
   original_source:

@@ -20,7 +20,7 @@ domains:
 - microbiology
 homepage_url: http://bio-computing.hrbmu.edu.cn/gutmgene
 id: gutmgene
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: GutMGene
 products:
@@ -35,6 +35,7 @@ products:
   product_url: http://bio-computing.hrbmu.edu.cn/gutmgene
 - category: ProcessProduct
   description: Code for generating MGMLink
+  format: python
   id: mgmlink.code
   name: MGMLink code
   original_source:

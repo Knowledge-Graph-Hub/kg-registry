@@ -18,7 +18,7 @@ domains:
   - precision medicine
 homepage_url: https://doi.org/10.5281/zenodo.16025953
 id: cardiokg
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/
@@ -68,6 +68,8 @@ products:
     product_url: https://doi.org/10.5281/zenodo.16025953
   - category: Product
     description: Generated CardioKG embeddings for gene-disease and medication-disease association prediction tasks. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot.
+    dump_format: pickle
+    format: mixed
     id: cardiokg.embeddings
     name: CardioKG generated embeddings
     original_source:
@@ -76,6 +78,7 @@ products:
     product_url: https://doi.org/10.5281/zenodo.16025953
   - category: ProcessProduct
     description: Analysis notebooks and scripts for CardioKG graph construction, PageRank importance analysis, gene-disease association prediction, and drug repurposing. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot.
+    format: mixed
     id: cardiokg.workflow
     name: CardioKG analysis workflow
     original_source:
@@ -85,6 +88,7 @@ products:
   - category: Product
     compression: zip
     description: Archived CardioKG repository release on Zenodo.
+    format: mixed
     id: cardiokg.zenodo-archive
     name: CardioKG Zenodo archive
     original_source:

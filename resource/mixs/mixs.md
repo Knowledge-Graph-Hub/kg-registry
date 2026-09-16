@@ -22,7 +22,7 @@ domains:
 - environment
 homepage_url: https://w3id.org/mixs
 id: mixs
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -31,6 +31,7 @@ name: MIxS
 products:
 - category: DataModelProduct
   description: OWL release of mixs
+  format: ttl
   id: mixs.model
   name: MIxS OWL release
   original_source:

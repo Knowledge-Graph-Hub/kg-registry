@@ -15,12 +15,13 @@ domains:
   - proteomics
 homepage_url: https://activedriverdb.org/
 id: activedriverdb
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: ActiveDriverDB
 products:
   - category: GraphicalInterface
     description: Web interface for searching and browsing ActiveDriverDB proteins, mutations, pathways, and PTM-site annotations.
+    format: http
     id: activedriverdb.portal
     name: ActiveDriverDB Web Portal
     original_source:
@@ -40,6 +41,7 @@ products:
   - category: Product
     compression: zip
     description: Bulk downloadable ActiveDriverDB datasets, including cancer, disease, and population mutations affecting PTM sites and kinase-target site-specific networks.
+    format: tsv
     id: activedriverdb.downloads
     name: ActiveDriverDB Downloads
     original_source:

@@ -26,7 +26,7 @@ domains:
 homepage_url: https://bio2rdf.org
 id: bio2rdf
 infores_id: bio2rdf
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -79,6 +79,7 @@ products:
 - category: Product
   description: BioSearch semantic search engine for Bio2RDF providing full-text and
     semantic search across integrated biological databases
+  format: http
   id: bio2rdf.biosearch
   name: BioSearch Semantic Search Engine
   original_source:

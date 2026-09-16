@@ -18,7 +18,7 @@ domains:
 - biomedical
 homepage_url: https://www.ema.europa.eu/
 id: ema
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ema.europa.eu/en/about-us/about-website/legal-notice
@@ -59,6 +59,7 @@ products:
   product_url: https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/data-medicines-iso-idmp-standards-post-authorisation/public-data-article-57-database
 - category: Product
   description: EMA regulatory source extract from the medic v1.0.1 release
+  format: xlsx
   id: medi.ema
   latest_version: v1.0.1
   name: MeDI EMA Extract

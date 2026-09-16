@@ -13,7 +13,7 @@ domains:
 homepage_url: https://github.com/marcello-deluca/medic
 id: medi
 infores_id: medi
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -47,6 +47,7 @@ products:
   product_url: https://github.com/marcello-deluca/medic/releases/tag/v1.0.1
 - category: Product
   description: Matrix indication list spreadsheet from the medic v1.0.1 release
+  format: xlsx
   id: medi.matrix_indication_list
   latest_version: v1.0.1
   name: Matrix Indication List
@@ -94,6 +95,7 @@ products:
     source: rxnorm
 - category: Product
   description: EMA regulatory source extract from the medic v1.0.1 release
+  format: xlsx
   id: medi.ema
   latest_version: v1.0.1
   name: MeDI EMA Extract
@@ -107,6 +109,7 @@ products:
     source: ema
 - category: Product
   description: PMDA regulatory source extract from the medic v1.0.1 release
+  format: xlsx
   id: medi.pmda
   latest_version: v1.0.1
   name: MeDI PMDA Extract
@@ -120,6 +123,7 @@ products:
     source: pmda
 - category: Product
   description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
+  format: xlsx
   id: medi.orangebook
   latest_version: v1.0.1
   name: MeDI Orange Book Extract

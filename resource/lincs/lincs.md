@@ -25,7 +25,7 @@ domains:
 homepage_url: https://lincsportal.ccs.miami.edu/signatures/home
 id: lincs
 infores_id: lincs
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: LINCS
 products:
@@ -543,6 +543,7 @@ products:
     118 million relationships.
   dump_format: neo4j
   edge_count: 118000000
+  format: neo4j
   id: petagraph.graph
   name: Petagraph Knowledge Graph (Neo4J)
   node_count: 32000000

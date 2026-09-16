@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.gbif.org/
 id: gbif
 infores_id: gbif
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -67,6 +67,7 @@ products:
   compression: zip
   description: Darwin Core Archive format occurrence downloads from 81,000+ datasets
     with interpreted and verbatim data, metadata, and multimedia information
+  format: dwca
   id: gbif.dwc-archive
   name: GBIF Darwin Core Archive Downloads
   original_source:
@@ -80,6 +81,7 @@ products:
   compression: zip
   description: Simple CSV format occurrence downloads with interpreted data and commonly
     used columns, suitable for spreadsheet and programming analysis
+  format: csv
   id: gbif.csv-download
   name: GBIF Simple CSV Downloads
   original_source:
@@ -104,6 +106,7 @@ products:
   description: Integrated Publishing Toolkit (IPT) - free, open-source Java software
     for publishing Darwin Core formatted biodiversity datasets with web interface
     and automated data management capabilities
+  format: java
   id: gbif.ipt
   name: GBIF Integrated Publishing Toolkit (IPT)
   original_source:
@@ -117,6 +120,7 @@ products:
   description: Annual comprehensive Catalogue of Life releases (Base Release with
     expert curation and Extended Release with broader source integration) with permanent
     archiving and DOI assignment
+  format: mixed
   id: catalogue-of-life.annual-releases
   name: Annual Releases
   original_source:
@@ -131,6 +135,7 @@ products:
   description: Downloadable Catalogue of Life datasets in multiple standardized formats
     including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
     and MySQL dumps
+  format: mixed
   id: catalogue-of-life.downloads
   name: Data Downloads
   original_source:

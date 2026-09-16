@@ -15,12 +15,13 @@ domains:
   - biological systems
 homepage_url: https://biomics.lab.nycu.edu.tw/dbPTM/
 id: dbptm
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: dbPTM
 products:
   - category: GraphicalInterface
     description: dbPTM 2025 web portal for searching proteins, browsing PTM general information, and analyzing disease-associated PTMs, PTM crosstalk, drug-binding-associated PTM sites, and kinase activity profiles.
+    format: http
     id: dbptm.portal
     name: dbPTM Web Portal
     original_source:

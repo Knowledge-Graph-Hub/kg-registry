@@ -21,7 +21,7 @@ domains:
 homepage_url: https://www.try-db.org/TryWeb/Home.php
 id: try
 infores_id: try
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.try-db.org/TryWeb/TRY_Intellectual_Property_Guidelines.pdf
@@ -91,6 +91,7 @@ products:
   product_url: https://qlever.earthmetabolome.org/api/metrin-kg
 - category: GraphicalInterface
   description: Web-based SPARQL query editor for the EMI Knowledge Graph
+  format: http
   id: emikg.web
   name: EMI KG SPARQL Query Editor
   original_source:

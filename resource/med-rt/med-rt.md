@@ -12,7 +12,7 @@ domains:
 homepage_url: https://evs.nci.nih.gov/ftp1/MED-RT/
 id: med-rt
 infores_id: medrt-umls
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: MED-RT
 products:
@@ -30,6 +30,7 @@ products:
 - category: Product
   compression: zip
   description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  format: mixed
   id: med-rt.core_dts
   name: Core MED-RT DTS Archive
   original_source:
@@ -78,6 +79,7 @@ products:
   compression: zip
   description: Structured Product Labeling subset archive from the current MED-RT
     distribution.
+  format: txt
   id: med-rt.core_spl
   name: Core MED-RT SPL Archive
   original_source:
@@ -95,6 +97,7 @@ products:
 - category: Product
   compression: zip
   description: Accessory files for the current MED-RT release.
+  format: txt
   id: med-rt.accessory_files
   name: Core MED-RT Accessory Files
   original_source:

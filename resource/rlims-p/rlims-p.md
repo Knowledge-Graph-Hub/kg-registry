@@ -18,7 +18,7 @@ domains:
 - biological systems
 homepage_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/
 id: rlims-p
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: RLIMS-P
 products:
@@ -111,6 +111,7 @@ products:
     phosphorylation mentions, detecting protein-protein interaction mentions, and
     identifying temporal or causal relationships between phosphorylation and interaction
     events.
+  format: http
   id: efip.text-mining-system
   name: eFIP Text-Mining System
   original_source:

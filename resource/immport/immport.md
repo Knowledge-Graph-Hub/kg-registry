@@ -21,7 +21,7 @@ domains:
 - immunology
 homepage_url: https://immport.niaid.nih.gov/home
 id: immport
-last_modified_date: '2026-07-14T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://docs.immport.org/home/agreement/
@@ -77,6 +77,7 @@ products:
   description: The ImmPort Download Client, a cross-platform (Linux, macOS, Windows)
     command-line tool that batch-downloads files from a manifest using GA4GH DRS standard
     transfer methods. Requires a free ImmPort API key.
+  format: java
   id: immport.download-client
   name: ImmPort Download Client
   original_source:

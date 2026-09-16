@@ -30,7 +30,7 @@ fairsharing_id: FAIRsharing.3b36hk
 homepage_url: https://www.bindingdb.org/rwd/bind/index.jsp
 id: bindingdb
 infores_id: bindingdb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.bindingdb.org/rwd/bind/info.jsp
@@ -243,6 +243,7 @@ products:
   warnings: []
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to PubChem CIDs
+  format: tsv
   id: bindingdb.cid_mapping
   name: BindingDB-PubChem CID Mapping
   original_source:
@@ -252,6 +253,7 @@ products:
   warnings: []
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to PubChem SIDs
+  format: tsv
   id: bindingdb.sid_mapping
   name: BindingDB-PubChem SID Mapping
   original_source:
@@ -261,6 +263,7 @@ products:
   warnings: []
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to ChEBI IDs
+  format: tsv
   id: bindingdb.chebi_mapping
   name: BindingDB-ChEBI Mapping
   original_source:
@@ -270,6 +273,7 @@ products:
   warnings: []
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to DrugBank IDs
+  format: tsv
   id: bindingdb.drugbank_mapping
   name: BindingDB-DrugBank Mapping
   original_source:
@@ -279,6 +283,7 @@ products:
   warnings: []
 - category: MappingProduct
   description: Mapping of BindingDB polymer (single protein) IDs to UniProt IDs
+  format: tsv
   id: bindingdb.uniprot_mapping
   name: BindingDB-UniProt Mapping
   original_source:

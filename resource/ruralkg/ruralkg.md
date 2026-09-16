@@ -53,6 +53,7 @@ products:
   name: Rural Resilience KG TPF
   description: Triple Pattern Fragments endpoint for Rural Resilience KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/ruralkg
   original_source:
   - source: ruralkg
@@ -85,7 +86,7 @@ products:
     relation_type: prov:wasInfluencedBy
   product_url: https://frink.renci.org/registry/kgs/rural-kg/
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 Rural Resilience KG
 

@@ -19,7 +19,7 @@ domains:
 homepage_url: https://pcingola.github.io/SnpEff/
 id: snpeff
 infores_id: snpeff
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -27,7 +27,9 @@ license:
 name: SnpEff
 products:
   - category: ProgrammingInterface
+    compression: zip
     description: SnpEff core package with command-line interface for variant annotation and effect prediction
+    format: java
     id: snpeff.download
     name: SnpEff Download Package
     original_source:
@@ -54,6 +56,7 @@ products:
     product_url: https://pcingola.github.io/SnpEff/snpsift/introduction/
   - category: Product
     description: Over 38,000 pre-built genome databases available for automatic download and annotation
+    format: mixed
     id: snpeff.databases
     name: SnpEff Genome Databases
     original_source:
@@ -64,6 +67,7 @@ products:
       - Databases are automatically downloaded when running SnpEff; manual download is optional
   - category: ProgrammingInterface
     description: SnpEff source code repository on GitHub
+    format: java
     id: snpeff.github
     name: SnpEff GitHub Repository
     original_source:
@@ -72,6 +76,7 @@ products:
     product_url: https://github.com/pcingola/SnpEff
   - category: Product
     description: Historical releases and versions of SnpEff available on SourceForge
+    format: mixed
     id: snpeff.sourceforge
     name: SnpEff SourceForge Archive
     original_source:

@@ -26,7 +26,7 @@ domains:
 homepage_url: https://github.com/INCATools/ubergraph/
 id: ubergraph
 infores_id: ubergraph
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,6 +35,7 @@ name: Ubergraph
 products:
 - category: Product
   description: RDF of Ubergraph
+  format: http
   id: ubergraph.rdf
   name: Ubergraph RDF
   original_source:

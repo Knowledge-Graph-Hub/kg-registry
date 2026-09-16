@@ -22,7 +22,7 @@ domains:
 - agriculture
 homepage_url: https://sawgraph.github.io/
 id: sawgraph
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -53,6 +53,7 @@ products:
   product_url: https://apps.okn.us/sawgraph/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for SAWGraph PFAS KG
+  format: http
   id: sawgraph.tpf
   name: SAWGraph PFAS KG TPF
   original_source:

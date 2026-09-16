@@ -68,12 +68,13 @@ products:
   name: SAWGraph Spatial KG TPF
   description: Triple Pattern Fragments endpoint for SAWGraph Spatial KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/spatialkg
   original_source:
   - source: spatialkg
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 SAWGraph Spatial KG
 

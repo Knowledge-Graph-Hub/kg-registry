@@ -19,7 +19,7 @@ domains:
   - general
 homepage_url: https://epigraphdb.org/
 id: epigraphdb
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/MRCIEU/epigraphdb
@@ -59,6 +59,7 @@ products:
     repository: https://github.com/MRCIEU/epigraphdb-r
   - category: DocumentationProduct
     description: Example notebooks demonstrating EpiGraphDB use cases, including causal inference, pleiotropy assessment, drug target identification, literature triangulation, and metadata queries
+    format: mixed
     id: epigraphdb.examples
     name: EpiGraphDB Example Notebooks
     original_source:

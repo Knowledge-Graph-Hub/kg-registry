@@ -14,7 +14,7 @@ domains:
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/ddinter
 id: ddinter
 infores_id: ddinter
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: DDinter
 products:
@@ -22,6 +22,7 @@ products:
   description: Comprehensive drug-drug interaction annotations with mechanism descriptions,
     risk levels, management strategies, and alternative medication recommendations
     for clinical decision support.
+  format: csv
   id: ddinter.ddi_annotations
   name: DDInter Drug-Drug Interaction Annotations
   original_source:

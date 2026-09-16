@@ -20,7 +20,7 @@ domains:
 - biological systems
 homepage_url: http://phospho.elm.eu.org/
 id: phosphoelm
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Phospho.ELM
 products:
@@ -60,6 +60,7 @@ products:
 - category: ProcessProduct
   description: Phospho.ELM PhosphoBLAST search tool for comparing protein queries
     against the curated phosphorylated-peptide dataset.
+  format: http
   id: phosphoelm.phosphoblast
   name: Phospho.ELM PhosphoBLAST
   original_source:

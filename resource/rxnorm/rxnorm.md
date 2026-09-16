@@ -35,7 +35,7 @@ domains:
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/
 id: rxnorm
 infores_id: rxnorm
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: RxNorm
 products:
@@ -105,6 +105,7 @@ products:
   product_url: https://lhncbc.nlm.nih.gov/RxNav/applications/RxNav-in-a-Box.html
 - category: Product
   description: VANDF data integrated into RxNorm
+  format: http
   id: ndfrt.rxnorm
   name: VANDF in RxNorm
   original_source:
@@ -167,9 +168,11 @@ products:
   - relation_type: prov:wasInformedBy
     source: ndcd
 - category: Product
+  compression: zip
   description: Standardized and deduplicated version of FDA FAERS data with drug names
     mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed
     summary statistics for drug-outcome relationships.
+  format: csv
   id: aeolus.standardized_data
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -184,6 +187,7 @@ products:
 - category: Product
   compression: zip
   description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  format: mixed
   id: med-rt.core_dts
   name: Core MED-RT DTS Archive
   original_source:
@@ -232,6 +236,7 @@ products:
   compression: zip
   description: Structured Product Labeling subset archive from the current MED-RT
     distribution.
+  format: txt
   id: med-rt.core_spl
   name: Core MED-RT SPL Archive
   original_source:

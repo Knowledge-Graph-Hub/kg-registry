@@ -12,7 +12,7 @@ domains:
 - biological systems
 homepage_url: https://compartments.jensenlab.org/
 id: compartments
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -115,6 +115,7 @@ products:
   product_url: https://compartments.jensenlab.org/
 - category: Product
   description: Bulk data downloads of localization scores and evidence files.
+  format: tsv
   id: compartments.downloads
   name: COMPARTMENTS Bulk Downloads
   original_source:

@@ -15,7 +15,7 @@ domains:
 homepage_url: https://www.phosphosite.org/
 id: phosphositeplus
 infores_id: psite-plus
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: PhosphoSitePlus
 products:
@@ -744,6 +744,7 @@ products:
   compression: zip
   description: Bulk downloadable ActiveDriverDB datasets, including cancer, disease,
     and population mutations affecting PTM sites and kinase-target site-specific networks.
+  format: tsv
   id: activedriverdb.downloads
   name: ActiveDriverDB Downloads
   original_source:

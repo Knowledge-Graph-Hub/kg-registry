@@ -21,7 +21,7 @@ domains:
 - information technology
 homepage_url: https://gadm.org/
 id: gadm
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -31,6 +31,7 @@ products:
 - category: Product
   description: Download page for GADM administrative boundary spatial data by country,
     the recommended approach for obtaining GADM polygons.
+  format: mixed
   id: gadm.download_country
   name: GADM Data Download (by country)
   original_source:
@@ -40,6 +41,7 @@ products:
 - category: Product
   description: Download page for GADM administrative boundary spatial data covering
     the entire world.
+  format: mixed
   id: gadm.download_world
   name: GADM Data Download (world)
   original_source:
@@ -49,6 +51,7 @@ products:
 - category: DocumentationProduct
   description: Metadata documentation describing the GADM data, its structure, and
     administrative levels.
+  format: http
   id: gadm.metadata
   name: GADM Metadata
   original_source:

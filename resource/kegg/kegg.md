@@ -29,7 +29,7 @@ domains:
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
 infores_id: kegg
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.kegg.jp/feedback/copyright.html
@@ -656,6 +656,7 @@ products:
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.
+  format: mysql
   id: rampdb.database
   is_public: true
   name: RaMP-DB Integrated Database

@@ -42,6 +42,7 @@ products:
   name: SAWGraph Hydrology KG TPF
   description: Triple Pattern Fragments endpoint for SAWGraph Hydrology KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/hydrologykg
   original_source:
   - source: hydrologykg
@@ -66,7 +67,7 @@ products:
   - source: usgs-nhd
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 SAWGraph Hydrology KG
 

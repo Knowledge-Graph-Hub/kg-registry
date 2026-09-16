@@ -18,7 +18,7 @@ domains:
   - information technology
 homepage_url: https://cns-iu.github.io/myaura/
 id: myaura
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/
@@ -51,6 +51,7 @@ products:
     product_url: https://cns-iu.github.io/myaura/
   - category: ProcessProduct
     description: Open-source data processing workflow for building the myAURA knowledge graph and supporting application data.
+    format: python
     id: myaura.workflow
     name: myAURA data processing workflow
     original_source:

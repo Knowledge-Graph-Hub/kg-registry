@@ -20,7 +20,7 @@ domains:
 homepage_url: https://monarch-initiative.github.io/mondo
 id: mondo
 infores_id: mondo
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -1360,6 +1360,7 @@ products:
   product_url: https://raras.org/explorar
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:
@@ -2033,6 +2034,7 @@ products:
     source: mondo
 - category: Product
   description: Matrix indication list spreadsheet from the medic v1.0.1 release
+  format: xlsx
   id: medi.matrix_indication_list
   latest_version: v1.0.1
   name: Matrix Indication List

@@ -127,6 +127,7 @@ products:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   - category: ProcessProduct
     description: Scripts used to preprocess and accommodate biomedical datasets into the knowledge database behind the Bioteque repository
+    format: python
     id: bioteque.code
     license:
       id: https://opensource.org/licenses/MIT
@@ -138,6 +139,7 @@ products:
     product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
   - category: ProcessProduct
     description: BQsupports is a tool to uncover biomedical evidence behind experimental paired data.
+    format: http
     id: bioteque.bqsupports
     name: BQsupports
     original_source:
@@ -158,7 +160,7 @@ publications:
     year: '2022'
 repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 ## Bioteque Knowledge Graph

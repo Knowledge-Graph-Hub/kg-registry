@@ -14,12 +14,14 @@ domains:
 homepage_url: http://atgo.ucsd.edu/
 id: atgo
 infores_id: atgo
-last_modified_date: '2025-11-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Autophagy Ontology
 products:
   - category: OntologyProduct
+    compression: targz
     description: Second-generation hierarchical ontology of 220 autophagy functions built from 156,364 synthetic-lethal genetic interactions across autophagy-activating conditions in Saccharomyces cerevisiae.
+    format: mixed
     id: atgo.ontology
     name: ATGO Hierarchical Ontology
     original_source:

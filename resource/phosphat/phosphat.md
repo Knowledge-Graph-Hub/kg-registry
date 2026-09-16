@@ -22,7 +22,7 @@ domains:
 - biological systems
 homepage_url: https://phosphat.uni-hohenheim.de/
 id: phosphat
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: PhosPhAt
 products:
@@ -64,6 +64,7 @@ products:
 - category: ProcessProduct
   description: PhosPhAt plant-specific phosphorylation-site predictor trained on the
     experimental Arabidopsis serine, threonine, and tyrosine phosphorylation dataset.
+  format: http
   id: phosphat.predictor
   name: PhosPhAt Phosphorylation Site Predictor
   original_source:

@@ -24,7 +24,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/biobricks-ai/aopwikirdf-kg
 id: biobricks-aopwiki
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -49,6 +49,7 @@ products:
   product_url: https://apps.okn.us/biobricks-aopwiki/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for BioBricks AOP-Wiki
+  format: http
   id: biobricks-aopwiki.tpf
   name: BioBricks AOP-Wiki TPF
   original_source:

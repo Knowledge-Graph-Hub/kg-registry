@@ -32,12 +32,13 @@ domains:
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Expander-Agent
 id: arax
 infores_id: arax
-last_modified_date: '2025-11-21T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: ARAX Translator Reasoner
 products:
   - category: ProgrammingInterface
     description: TRAPI-compliant API endpoint for programmatic access to ARAX reasoning capabilities. Supports v1.3+ of the Translator Reasoner API standard. Provides /query, /asyncquery, and /entity endpoints.
+    format: http
     id: arax.api
     name: ARAX TRAPI API
     original_source:
@@ -55,6 +56,7 @@ products:
     product_url: https://arax.ncats.io/
   - category: DocumentationProduct
     description: ARAXi domain-specific language documentation for expressing knowledge graph analysis workflows.
+    format: markdown
     id: arax.araxi.docs
     name: ARAXi Documentation
     original_source:
@@ -64,6 +66,7 @@ products:
     product_url: https://github.com/RTXteam/RTX/blob/master/code/ARAX/Documentation/DSL_Documentation.md
   - category: ProgrammingInterface
     description: Source code repository for ARAX and the RTX system including ARAX-specific modules and RTX-KG2 knowledge graph.
+    format: python
     id: arax.github
     name: RTX GitHub Repository
     original_source:
@@ -72,6 +75,7 @@ products:
     product_url: https://github.com/RTXteam/RTX
   - category: DocumentationProduct
     description: Example queries and workflows demonstrating ARAX capabilities for various translational biomedicine use cases.
+    format: mixed
     id: arax.examples
     name: ARAX Examples
     original_source:

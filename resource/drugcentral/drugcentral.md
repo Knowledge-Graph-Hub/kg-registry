@@ -12,7 +12,7 @@ domains:
 homepage_url: https://drugcentral.org/
 id: drugcentral
 infores_id: drugcentral
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -832,6 +832,7 @@ products:
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous
     networks)
+  format: python
   id: hetionet.hetnetpy
   name: hetnetpy
   original_source:

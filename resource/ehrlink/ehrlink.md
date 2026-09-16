@@ -12,7 +12,7 @@ domains:
 - pharmacology
 homepage_url: https://github.com/dhimmel/indications/tree/gh-pages/ehrlink
 id: ehrlink
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: EHRLink
 products:
@@ -20,6 +20,7 @@ products:
   description: PharmacotherapyDB processing workspace for EHRLink medication-problem
     association data, including notebooks for converting, mapping, and preparing EHRLink-derived
     indications.
+  format: mixed
   id: ehrlink.pharmacotherapydb-processing
   name: EHRLink PharmacotherapyDB Processing Files
   original_source:

@@ -17,7 +17,7 @@ domains:
 homepage_url: https://github.com/jakelever/pgxmine
 id: pgxmine
 infores_id: pgxmine
-last_modified_date: '2026-09-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -59,6 +59,7 @@ products:
     product_url: https://doi.org/10.5281/zenodo.6617348
   - category: ProcessProduct
     description: Python codebase for extracting pharmacogenomic associations using text mining
+    format: python
     id: pgxmine.code
     name: PGxMine Code
     original_source:

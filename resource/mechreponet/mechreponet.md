@@ -11,7 +11,7 @@ domains:
 - pharmacology
 homepage_url: https://github.com/SuLab/MechRepoNet
 id: mechreponet
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -71,6 +71,7 @@ products:
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
 - description: Python code for building and analyzing the MechRepoNet knowledge graph
+  format: python
   id: mechreponet.code
   name: MechRepoNet Code
   original_source:

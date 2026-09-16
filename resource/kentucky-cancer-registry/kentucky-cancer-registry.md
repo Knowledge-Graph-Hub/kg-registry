@@ -22,7 +22,7 @@ domains:
 - biomedical
 homepage_url: https://www.kcr.uky.edu/
 id: kentucky-cancer-registry
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.kcr.uky.edu/research/how.php
@@ -32,6 +32,7 @@ products:
 - category: GraphicalInterface
   description: Researcher data-request and research resources portal describing how
     to request KCR cancer surveillance data for approved research projects.
+  format: http
   id: kentucky-cancer-registry.research
   name: KCR Research Data Request Portal
   original_source:
@@ -41,6 +42,7 @@ products:
 - category: GraphicalInterface
   description: Cancer-Rates.com interactive interface providing population-based cancer
     incidence and mortality statistics for Kentucky derived from KCR data.
+  format: http
   id: kentucky-cancer-registry.cancer-rates
   name: Cancer-Rates.com Kentucky Statistics
   original_source:

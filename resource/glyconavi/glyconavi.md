@@ -15,12 +15,13 @@ domains:
   - proteomics
 homepage_url: https://glyconavi.org/
 id: glyconavi
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: GlycoNAVI
 products:
   - category: GraphicalInterface
     description: GlycoNAVI integrated portal for glycoscience research, including glycan structures, glycoproteins, glycosylation sites, glycan-related genes, diseases, and glycan analysis tools.
+    format: http
     id: glyconavi.portal
     name: GlycoNAVI Portal
     original_source:

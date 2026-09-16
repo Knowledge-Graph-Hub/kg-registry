@@ -16,7 +16,7 @@ domains:
 homepage_url: http://robokop.renci.org
 id: robokop
 infores_id: robokop
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -26,6 +26,7 @@ products:
 - category: Product
   description: A biomedical knowledge graph containing ~10 million nodes and ~250
     million edges from ~30 biological data sources and bio-ontologies.
+  format: neo4j
   id: robokop.graph
   name: ROBOKOP Knowledge Graph (KG)
   original_source:

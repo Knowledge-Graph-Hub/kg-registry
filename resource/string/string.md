@@ -21,7 +21,7 @@ domains:
 homepage_url: https://string-db.org/
 id: string
 infores_id: string
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -3240,6 +3240,7 @@ products:
     118 million relationships.
   dump_format: neo4j
   edge_count: 118000000
+  format: neo4j
   id: petagraph.graph
   name: Petagraph Knowledge Graph (Neo4J)
   node_count: 32000000

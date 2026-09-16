@@ -16,7 +16,7 @@ domains:
   - immunology
 homepage_url: https://kchen-lab.github.io/immune-knowledgegraph.github.io/
 id: "ickg"
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -52,6 +52,7 @@ products:
     product_url: https://kchen-lab.github.io/immune-knowledgegraph.github.io/
   - category: ProcessProduct
     description: Source code and models used for constructing and using Immune Cell Knowledge Graphs.
+    format: mixed
     id: "ickg.code"
     name: ICKG code repository
     original_source:

@@ -18,7 +18,7 @@ domains:
   - proteomics
 homepage_url: https://maayanlab.cloud/Harmonizome/
 id: harmonizome
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -27,6 +27,7 @@ name: Harmonizome
 products:
   - category: GraphicalInterface
     description: Harmonizome 3.0 web portal for searching and exploring processed gene and protein datasets, resources, genes, attributes, and associations.
+    format: http
     id: harmonizome.portal
     name: Harmonizome Portal
     original_source:
@@ -133,6 +134,7 @@ products:
         source: wikipathways
   - category: DocumentationProduct
     description: Harmonizome documentation describing dataset pages, API access, downloads, and the Harmonizome knowledge graph API and graph serialization.
+    format: http
     id: harmonizome.documentation
     name: Harmonizome Documentation
     original_source:

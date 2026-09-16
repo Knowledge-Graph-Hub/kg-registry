@@ -17,7 +17,7 @@ domains:
 - biomedical
 homepage_url: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-495
 id: motifmap
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://web.archive.org/web/20160112094556/http://motifmap.ics.uci.edu/
@@ -28,6 +28,7 @@ products:
   description: Historical MotifMap web portal at UC Irvine for searching and browsing
     genome-wide predicted transcription factor binding site maps. The portal subdomain
     no longer resolves in DNS and the service is offline.
+  format: http
   id: motifmap.portal
   name: MotifMap Web Portal
   original_source:

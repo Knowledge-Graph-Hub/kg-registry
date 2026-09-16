@@ -21,7 +21,7 @@ domains:
 homepage_url: https://het.io/
 id: hetionet
 infores_id: hetionet
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -200,6 +200,7 @@ products:
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous
     networks)
+  format: python
   id: hetionet.hetnetpy
   name: hetnetpy
   original_source:

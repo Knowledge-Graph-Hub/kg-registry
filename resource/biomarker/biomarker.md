@@ -34,7 +34,7 @@ domains:
 - biological systems
 homepage_url: https://biomarkerkb.org/
 id: biomarker
-last_modified_date: '2026-07-15T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -267,6 +267,7 @@ products:
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
 - category: ProgrammingInterface
   description: SPARQL endpoint for BiomarkerKB KG
+  format: http
   id: biomarker.sparql
   name: BiomarkerKB KG SPARQL
   original_source:
@@ -275,6 +276,7 @@ products:
   product_url: https://apps.okn.us/biomarkerkg/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for BiomarkerKB KG
+  format: http
   id: biomarker.tpf
   name: BiomarkerKB KG TPF
   original_source:

@@ -66,6 +66,7 @@ products:
       - source: obis
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: dwca
     description: Complete biodiversity record exports in Darwin Core Archive format containing occurrence data with standardized metadata and EML documentation
     id: "obis.dca"
     name: OBIS Darwin Core Archive Downloads
@@ -74,6 +75,7 @@ products:
       - source: obis
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: parquet
     description: Cloud-native GeoParquet format biodiversity records available on AWS S3 for efficient large-scale spatial analysis without local downloads
     id: "obis.geoparquet"
     name: OBIS GeoParquet on AWS
@@ -82,6 +84,7 @@ products:
       - source: obis
         relation_type: prov:hadPrimarySource
   - category: Product
+    format: http
     description: OBIS-SEAMAP specialized database for marine megavertebrates containing distribution, abundance, and telemetry data for marine mammals, seabirds, and sea turtles
     id: "obis.seamap"
     name: OBIS-SEAMAP Marine Megavertebrates Database
@@ -110,7 +113,7 @@ taxon:
   - "NCBITaxon:2157"
   - "NCBITaxon:2158"
   - "NCBITaxon:2159"
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 # Ocean Biodiversity Information System (OBIS)

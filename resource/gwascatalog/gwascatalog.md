@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/gwas/
 id: gwascatalog
 infores_id: gwas-catalog
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use
@@ -735,6 +735,7 @@ products:
   product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:

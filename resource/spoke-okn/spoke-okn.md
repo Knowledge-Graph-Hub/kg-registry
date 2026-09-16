@@ -23,7 +23,7 @@ domains:
 - pharmacology
 homepage_url: https://spoke.ucsf.edu
 id: spoke-okn
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://spoke.rbvi.ucsf.edu/docs/licenses.html
@@ -146,6 +146,7 @@ products:
     source: spoke-okn
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for SPOKE GeneLab
+  format: http
   id: spoke-genelab.tpf
   name: SPOKE GeneLab TPF
   original_source:

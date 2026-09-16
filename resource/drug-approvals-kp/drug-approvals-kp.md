@@ -20,7 +20,7 @@ domains:
 - drug discovery
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Drug-Approvals-KP
 id: drug-approvals-kp
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -73,6 +73,7 @@ products:
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
 - category: ProcessProduct
   description: Code for the Drug Approvals KP
+  format: python
   id: drug-approvals-kp.code
   name: Drug Approvals KP code
   original_source:

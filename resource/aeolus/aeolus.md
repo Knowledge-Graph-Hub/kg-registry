@@ -22,7 +22,7 @@ domains:
 homepage_url: https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4
 id: aeolus
 infores_id: aeolus
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
@@ -30,7 +30,9 @@ layout: resource_detail
 name: Adverse Event Open Learning through Universal Standardization (AEOLUS)
 products:
   - category: Product
+    compression: zip
     description: Standardized and deduplicated version of FDA FAERS data with drug names mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed summary statistics for drug-outcome relationships.
+    format: csv
     id: aeolus.standardized_data
     license:
       id: https://creativecommons.org/publicdomain/zero/1.0/

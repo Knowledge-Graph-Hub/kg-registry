@@ -17,7 +17,7 @@ domains:
 - genomics
 homepage_url: https://www.alliancegenome.org/
 id: alliance
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.alliancegenome.org/privacy-warranty-licensing
@@ -89,6 +89,7 @@ products:
     and other formats) for genes, orthology, phenotypes, disease associations, alleles,
     and related integrated datasets; individual per-file products can be programmatically
     enumerated in future updates
+  format: mixed
   id: alliance.downloads
   name: Alliance Data Downloads (Root)
   original_source:

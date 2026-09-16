@@ -22,7 +22,7 @@ domains:
 - biological systems
 homepage_url: http://www.enhanceratlas.org/
 id: enhanceratlas
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: EnhancerAtlas
 products:
@@ -30,6 +30,7 @@ products:
   description: Downloadable enhancer annotation datasets covering 586 tissue and cell
     types across nine species, including predicted enhancer regions and enhancer-target
     gene interactions, available in BED and related tabular formats.
+  format: txt
   id: enhanceratlas.download
   name: EnhancerAtlas 2.0 Download
   original_source:
@@ -39,6 +40,7 @@ products:
 - category: GraphicalInterface
   description: A web-based browser for exploring and visualizing enhancer annotations
     by species, tissue, and cell type within the EnhancerAtlas resource.
+  format: http
   id: enhanceratlas.browse
   name: EnhancerAtlas 2.0 Browser
   original_source:

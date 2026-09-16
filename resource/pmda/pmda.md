@@ -14,7 +14,7 @@ domains:
   - clinical
 homepage_url: https://www.pmda.go.jp/english/
 id: "pmda"
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Pharmaceuticals and Medical Devices Agency
 products:
@@ -56,6 +56,7 @@ products:
     product_url: https://www.pmda.go.jp/english/safety/info-services/e-pack-ins/0001.html
   - category: Product
     description: PMDA regulatory source extract from the medic v1.0.1 release
+    format: xlsx
     id: "medi.pmda"
     latest_version: "v1.0.1"
     name: MeDI PMDA Extract

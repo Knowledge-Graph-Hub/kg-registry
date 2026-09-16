@@ -32,7 +32,7 @@ domains:
 homepage_url: https://www.snomed.org/
 id: snomedct
 infores_id: snomedct
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.snomed.org/snomed-ct/get-snomed
@@ -40,8 +40,10 @@ license:
 name: SNOMED CT
 products:
 - category: OntologyProduct
+  compression: zip
   description: The biannual release of the US Edition of SNOMED CT, combining content
     from both the US Extension and International releases.
+  format: tsv
   id: snomedct.us.content
   name: SNOMED CT US Edition
   original_source:
@@ -49,8 +51,10 @@ products:
     source: snomedct
   product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
 - category: OntologyProduct
+  compression: zip
   description: The monthly release of the International Edition of SNOMED CT, the
     core release from SNOMED International, as RF2 files.
+  format: tsv
   id: snomedct.international.content
   name: SNOMED CT International Edition
   original_source:
@@ -58,8 +62,10 @@ products:
     source: snomedct
   product_url: https://download.nlm.nih.gov/umls/kss/IHTSDO2025/IHTSDO20250601/SnomedCT_InternationalRF2_PRODUCTION_20250601T120000Z.zip
 - category: MappingProduct
+  compression: zip
   description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps
     SNOMED CT concepts to ICD-10-CM codes.
+  format: tsv
   id: snomedct.icd10cm.map
   name: SNOMED CT to ICD-10-CM Map
   original_source:
@@ -80,6 +86,7 @@ products:
 - category: OntologyProduct
   description: A frequently used subset of SNOMED CT concepts for nursing documentation
     in electronic health records. August 2017 release.
+  format: csv
   id: snomedct.nursing
   name: SNOMED CT Nursing Problem List Subset
   original_source:
@@ -627,6 +634,7 @@ products:
     stable direct public file URLs are not exposed.
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkg.site
   name: MedKG Site
   original_source:
@@ -666,9 +674,11 @@ products:
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
 - category: Product
+  compression: zip
   description: Standardized and deduplicated version of FDA FAERS data with drug names
     mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed
     summary statistics for drug-outcome relationships.
+  format: csv
   id: aeolus.standardized_data
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -683,6 +693,7 @@ products:
 - category: Product
   compression: zip
   description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  format: mixed
   id: med-rt.core_dts
   name: Core MED-RT DTS Archive
   original_source:

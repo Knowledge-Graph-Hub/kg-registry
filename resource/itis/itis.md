@@ -24,7 +24,7 @@ domains:
 - environment
 homepage_url: https://www.itis.gov/
 id: itis
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.itis.gov/access.html
@@ -141,6 +141,7 @@ products:
   description: Annual comprehensive Catalogue of Life releases (Base Release with
     expert curation and Extended Release with broader source integration) with permanent
     archiving and DOI assignment
+  format: mixed
   id: catalogue-of-life.annual-releases
   name: Annual Releases
   original_source:
@@ -155,6 +156,7 @@ products:
   description: Downloadable Catalogue of Life datasets in multiple standardized formats
     including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
     and MySQL dumps
+  format: mixed
   id: catalogue-of-life.downloads
   name: Data Downloads
   original_source:

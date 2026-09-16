@@ -23,7 +23,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/clinvar/
 id: clinvar
 infores_id: clinvar
-last_modified_date: '2026-09-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -1706,6 +1706,7 @@ products:
     118 million relationships.
   dump_format: neo4j
   edge_count: 118000000
+  format: neo4j
   id: petagraph.graph
   name: Petagraph Knowledge Graph (Neo4J)
   node_count: 32000000
@@ -2378,6 +2379,7 @@ products:
   compression: zip
   description: Bulk downloadable ActiveDriverDB datasets, including cancer, disease,
     and population mutations affecting PTM sites and kinase-target site-specific networks.
+  format: tsv
   id: activedriverdb.downloads
   name: ActiveDriverDB Downloads
   original_source:

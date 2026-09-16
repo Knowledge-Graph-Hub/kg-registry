@@ -41,6 +41,7 @@ products:
   name: Neighborhood Information KG TPF
   description: Triple Pattern Fragments endpoint for Neighborhood Information KG
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/nikg
   original_source:
   - source: nikg
@@ -66,7 +67,7 @@ products:
   - source: nij
     relation_type: prov:wasInfluencedBy
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 Neighborhood Information KG
 

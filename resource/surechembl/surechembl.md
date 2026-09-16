@@ -14,7 +14,7 @@ domains:
 - literature
 homepage_url: https://www.surechembl.org/
 id: surechembl
-last_modified_date: '2026-06-15T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -27,6 +27,7 @@ products:
     molecular weight), patent metadata, compound-to-patent mappings, and extracted
     biomedical entities. A new complete version is released every two weeks via the
     EMBL-EBI FTP server.
+  format: parquet
   id: surechembl.bulk-data
   name: SureChEMBL Bulk Data
   original_source:

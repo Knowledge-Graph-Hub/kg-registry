@@ -23,7 +23,7 @@ domains:
 homepage_url: https://clinicalgenome.org/
 id: clingen
 infores_id: clingen
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -102,6 +102,7 @@ products:
   description: Framework for standardized interpretation of genetic variants, including
     disease-specific modifications to the ACMG/AMP guidelines. These frameworks guide
     variant classification by expert panels and clinical laboratories.
+  format: http
   id: clingen.variant.frameworks
   name: Variant Interpretation Frameworks
   original_source:

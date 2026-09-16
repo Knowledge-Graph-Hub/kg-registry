@@ -8,13 +8,14 @@ domains:
   - toxicology
 id: "bioplanet"
 infores_id: "bioplanet"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: BioPlanet
 homepage_url: https://tripod.nih.gov/bioplanet/
 products:
   - category: Product
     description: Comprehensive integrated pathway resource that incorporates 1,658 distinct human pathways.
+    format: csv
     id: "bioplanet.data"
     name: BioPlanet Pathway Data
     original_source:

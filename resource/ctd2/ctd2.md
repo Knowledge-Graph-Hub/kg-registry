@@ -18,12 +18,13 @@ domains:
   - drug discovery
 homepage_url: https://www.cancer.gov/ccg/research/functional-genomics/ctd2
 id: ctd2
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: Cancer Target Discovery and Development Network
 products:
   - category: GraphicalInterface
     description: NCI CTD2 Data Portal listing CTD2 Network study datasets in the Index of NCI Studies for community access and reuse.
+    format: http
     id: ctd2.data-portal
     name: CTD2 Data Portal
     original_source:
@@ -32,6 +33,7 @@ products:
     product_url: https://www.cancer.gov/ccg/research/functional-genomics/ctd2/data-portal
   - category: GraphicalInterface
     description: Searchable CTD2 Dashboard interface for Network-generated observations and validated experimental findings associated with genes, proteins, compounds, biomarkers, and other studied subjects.
+    format: http
     id: ctd2.dashboard
     name: CTD2 Dashboard
     original_source:
@@ -42,6 +44,7 @@ products:
       - 'Dashboard host ctd2-dashboard.nci.nih.gov no longer resolves (no DNS record) as checked on 2026-06-27; the standalone CTD2 Dashboard application appears to have been decommissioned. NCI has consolidated CTD2 data access into the Index of NCI Studies / Study Catalog (https://studycatalog.cancer.gov), reachable via the CTD2 Data Portal product. No live replacement for the dashboard application itself was found.'
   - category: DocumentationProduct
     description: NCI guidance for accessing, using, and acknowledging CTD2 Network data and associated raw and analyzed datasets.
+    format: http
     id: ctd2.usage-guide
     name: Using CTD2 Data
     original_source:

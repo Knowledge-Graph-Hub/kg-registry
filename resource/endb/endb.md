@@ -23,13 +23,14 @@ domains:
 - biomedical
 homepage_url: http://www.licpathway.net/ENdb/
 id: endb
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: ENdb
 products:
 - category: GraphicalInterface
   description: Web interface for browsing manually curated, experimentally validated
     enhancers and their target genes and regulatory annotations in ENdb.
+  format: http
   id: endb.browse
   name: ENdb Browse
   original_source:
@@ -39,6 +40,7 @@ products:
 - category: Product
   description: Bulk download of the ENdb dataset of experimentally supported enhancer-target
     gene records and associated regulatory metadata.
+  format: csv
   id: endb.download
   name: ENdb Download
   original_source:

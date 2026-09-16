@@ -15,7 +15,7 @@ domains:
 - proteomics
 homepage_url: https://hocomoco.autosome.org
 id: hocomoco
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.wtfpl.net/
@@ -56,6 +56,7 @@ products:
 - category: GraphProduct
   description: Core TF–target regulon knowledge graph (multi-species) with confidence
     levels (A–E)
+  format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph
   original_source:

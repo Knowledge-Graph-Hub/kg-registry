@@ -20,7 +20,7 @@ domains:
 - drug discovery
 homepage_url: https://kgx-storage.rtx.ai/releases/
 id: translator
-last_modified_date: '2026-04-02T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/
@@ -822,6 +822,7 @@ products:
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP
 - category: ProcessProduct
   description: Code for the Drug Approvals KP
+  format: python
   id: drug-approvals-kp.code
   name: Drug Approvals KP code
   original_source:
@@ -899,6 +900,7 @@ products:
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
 - category: GraphProduct
   description: Release files for the Text Mining KP
+  format: kgx
   id: text-mining-kp.graph
   name: Text Mining KP Release Files
   original_source:

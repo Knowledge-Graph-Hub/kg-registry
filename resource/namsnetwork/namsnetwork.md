@@ -18,6 +18,7 @@ layout: resource_detail
 name: NAMs Network
 products:
   - category: GraphicalInterface
+    format: http
     description: NAMs Network web interface for exploring and searching New Approach Methodologies for chemical and material safety assessment
     id: namsnetwork.portal
     name: NAMs Network Portal
@@ -26,7 +27,7 @@ products:
       - source: namsnetwork
         relation_type: prov:hadPrimarySource
 creation_date: '2025-12-13T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-09-16T00:00:00Z'
 ---
 
 NAMs Network
