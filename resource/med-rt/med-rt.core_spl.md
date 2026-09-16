@@ -2,6 +2,7 @@
 category: Product
 compression: zip
 description: Structured Product Labeling subset archive from the current MED-RT distribution.
+format: txt
 id: med-rt.core_spl
 name: Core MED-RT SPL Archive
 original_source:

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for BioBricks AOP-Wiki
+format: http
 id: biobricks-aopwiki.tpf
 name: BioBricks AOP-Wiki TPF
 original_source:

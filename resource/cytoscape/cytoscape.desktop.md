@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Cross-platform Cytoscape desktop application for complex network visualization,
   molecular interaction analysis, and integration of network attribute data.
+format: java
 id: cytoscape.desktop
 name: Cytoscape Desktop
 original_source:

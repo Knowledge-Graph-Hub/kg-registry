@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: Phospho.ELM PhosphoBLAST search tool for comparing protein queries against
   the curated phosphorylated-peptide dataset.
+format: http
 id: phosphoelm.phosphoblast
 name: Phospho.ELM PhosphoBLAST
 original_source:

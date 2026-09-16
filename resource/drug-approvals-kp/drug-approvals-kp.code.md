@@ -1,6 +1,7 @@
 ---
 category: ProcessProduct
 description: Code for the Drug Approvals KP
+format: python
 id: drug-approvals-kp.code
 name: Drug Approvals KP code
 original_source:

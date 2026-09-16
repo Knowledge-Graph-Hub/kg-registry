@@ -1,6 +1,7 @@
 ---
 category: Product
 description: Matrix indication list spreadsheet from the medic v1.0.1 release
+format: xlsx
 id: medi.matrix_indication_list
 latest_version: v1.0.1
 name: Matrix Indication List

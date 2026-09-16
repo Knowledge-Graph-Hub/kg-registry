@@ -1,8 +1,9 @@
 ---
-category: DataProduct
+category: Product
 description: Downloadable enhancer annotation datasets covering 586 tissue and cell
   types across nine species, including predicted enhancer regions and enhancer-target
   gene interactions, available in BED and related tabular formats.
+format: txt
 id: enhanceratlas.download
 name: EnhancerAtlas 2.0 Download
 original_source:

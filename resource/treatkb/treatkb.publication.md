@@ -3,6 +3,7 @@ category: DocumentationProduct
 description: Peer-reviewed publication from the Xu lab describing the large-scale
   text-mining method used to extract accurate drug-disease treatment pairs from biomedical
   literature, the approach underlying TreatKB.
+format: http
 id: treatkb.publication
 name: TreatKB Method Publication
 original_source:

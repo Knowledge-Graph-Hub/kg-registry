@@ -3,6 +3,7 @@ category: Product
 description: PharmacotherapyDB processing workspace for EHRLink medication-problem
   association data, including notebooks for converting, mapping, and preparing EHRLink-derived
   indications.
+format: mixed
 id: ehrlink.pharmacotherapydb-processing
 name: EHRLink PharmacotherapyDB Processing Files
 original_source:

@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: eMERGE Network website describing network phases, study sites, working
   groups, genomic medicine implementation activities, and consortium resources.
+format: http
 id: emerge.portal
 name: eMERGE Network Website
 original_source:

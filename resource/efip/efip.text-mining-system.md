@@ -3,6 +3,7 @@ category: ProcessProduct
 description: eFIP text-mining workflow for retrieving protein literature, extracting
   phosphorylation mentions, detecting protein-protein interaction mentions, and identifying
   temporal or causal relationships between phosphorylation and interaction events.
+format: http
 id: efip.text-mining-system
 name: eFIP Text-Mining System
 original_source:

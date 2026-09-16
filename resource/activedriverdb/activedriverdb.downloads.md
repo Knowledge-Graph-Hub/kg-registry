@@ -3,6 +3,7 @@ category: Product
 compression: zip
 description: Bulk downloadable ActiveDriverDB datasets, including cancer, disease,
   and population mutations affecting PTM sites and kinase-target site-specific networks.
+format: tsv
 id: activedriverdb.downloads
 name: ActiveDriverDB Downloads
 original_source:

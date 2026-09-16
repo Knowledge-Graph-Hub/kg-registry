@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for BiomarkerKB KG
+format: http
 id: biomarker.tpf
 name: BiomarkerKB KG TPF
 original_source:

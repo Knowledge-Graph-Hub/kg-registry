@@ -3,6 +3,7 @@ category: Product
 compression: zip
 description: Archived release of the EmeraldMind repository and associated EmeraldGraph
   artifacts on Zenodo.
+format: mixed
 id: emeraldgraph.zenodo-archive
 name: EmeraldMind Zenodo archive
 original_source:

@@ -3,6 +3,7 @@ category: Product
 description: Integrated Publishing Toolkit (IPT) - free, open-source Java software
   for publishing Darwin Core formatted biodiversity datasets with web interface and
   automated data management capabilities
+format: java
 id: gbif.ipt
 name: GBIF Integrated Publishing Toolkit (IPT)
 original_source:

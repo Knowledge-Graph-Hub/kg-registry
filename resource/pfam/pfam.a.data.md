@@ -1,12 +1,14 @@
 ---
 category: Product
-description: The Pfam HMM data for Pfam-A families, used for searching protein sequences against Pfam.
+description: The Pfam HMM data for Pfam-A families, used for searching protein sequences
+  against Pfam.
+format: stockholm
 id: pfam.a.data
 name: Pfam-A HMM data
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: pfam
 product_file_size: 652678
 product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
 layout: product_detail
-original_source:
-  - source: pfam
-    relation_type: prov:hadPrimarySource
 ---

@@ -3,6 +3,7 @@ category: ProcessProduct
 description: The sc-nsforest-qc-nf Nextflow workflow, which runs the scsilhouette
   package and the JCVI NSForest method over each harvested dataset to produce marker
   genes, F-scores, and silhouette quality metrics consumed downstream by the ETL pipeline.
+format: mixed
 id: nlm-ckn.nsforest-qc
 name: sc-nsforest-qc-nf
 original_source:

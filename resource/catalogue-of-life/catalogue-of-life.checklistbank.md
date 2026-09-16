@@ -3,6 +3,7 @@ category: Product
 description: ChecklistBank repository infrastructure for publishing, discovery, and
   management of taxonomic datasets with data standardization to ColDP format and quality
   control workflows
+format: http
 id: catalogue-of-life.checklistbank
 name: ChecklistBank Repository
 original_source:

@@ -3,6 +3,7 @@ category: Product
 compression: zip
 description: Zenodo archive for the KinAce web portal and kinase-substrate interaction
   dataset
+format: csv
 id: kinace.zenodo_archive
 name: KinAce Zenodo Archive
 original_source:

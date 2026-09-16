@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: ICH MedDRA page describing the terminology, governance, MSSO maintenance,
   and regulatory use cases.
+format: http
 id: meddra.ich-page
 name: ICH MedDRA Documentation
 original_source:

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for Climate Models KG
+format: http
 id: climatemodelskg.tpf
 name: Climate Models KG TPF
 original_source:

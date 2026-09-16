@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Production BioMuta web interface hosted by the GW HIVE Lab for exploring
   cancer-associated mutation records.
+format: http
 id: biomuta.portal
 name: BioMuta Web Portal
 original_source:

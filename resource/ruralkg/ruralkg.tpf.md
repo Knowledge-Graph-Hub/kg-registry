@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for Rural Resilience KG
+format: http
 id: ruralkg.tpf
 name: Rural Resilience KG TPF
 original_source:

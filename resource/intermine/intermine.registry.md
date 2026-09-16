@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Public InterMine Registry listing deployed InterMine instances across
   organisms and life-science research areas.
+format: http
 id: intermine.registry
 name: InterMine Registry
 original_source:

@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: SCREEN (Search Candidate cis-Regulatory Elements by ENCODE) web portal
   for browsing and searching the registry of candidate cis-Regulatory Elements in
   the human and mouse genomes.
+format: http
 id: ccre.screen
 name: SCREEN Portal
 original_source:

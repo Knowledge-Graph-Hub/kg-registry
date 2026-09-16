@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for BiomarkerKB KG
+format: http
 id: biomarker.sparql
 name: BiomarkerKB KG SPARQL
 original_source:

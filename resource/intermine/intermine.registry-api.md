@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: InterMine Registry Swagger API for programmatically discovering public
   InterMine instances.
+format: http
 id: intermine.registry-api
 is_public: true
 name: InterMine Registry API

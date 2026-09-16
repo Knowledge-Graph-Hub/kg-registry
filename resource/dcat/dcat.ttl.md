@@ -1,6 +1,7 @@
 ---
 category: DataModelProduct
 description: Turtle serialization of the W3C Data Catalog Vocabulary namespace.
+format: ttl
 id: dcat.ttl
 latest_version: '3'
 name: DCAT Turtle Vocabulary

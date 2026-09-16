@@ -2,6 +2,7 @@
 category: Product
 compression: zip
 description: Accessory files for the current MED-RT release.
+format: txt
 id: med-rt.accessory_files
 name: Core MED-RT Accessory Files
 original_source:

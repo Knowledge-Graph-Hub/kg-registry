@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 description: CyREST-powered Cytoscape Automation interface for executing reproducible
   Cytoscape workflows from external tools such as Python, R, and Jupyter.
+format: http
 id: cytoscape.automation-api
 is_public: true
 name: Cytoscape Automation API

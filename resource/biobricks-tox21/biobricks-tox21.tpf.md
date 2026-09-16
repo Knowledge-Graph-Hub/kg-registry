@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for BioBricks Tox21
+format: http
 id: biobricks-tox21.tpf
 name: BioBricks Tox21 TPF
 original_source:

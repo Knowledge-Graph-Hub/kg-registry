@@ -4,6 +4,7 @@ description: Root directory for release-specific bulk data dumps (JSON, TSV, GAF
   and other formats) for genes, orthology, phenotypes, disease associations, alleles,
   and related integrated datasets; individual per-file products can be programmatically
   enumerated in future updates
+format: mixed
 id: alliance.downloads
 name: Alliance Data Downloads (Root)
 original_source:

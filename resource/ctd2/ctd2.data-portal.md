@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: NCI CTD2 Data Portal listing CTD2 Network study datasets in the Index
   of NCI Studies for community access and reuse.
+format: http
 id: ctd2.data-portal
 name: CTD2 Data Portal
 original_source:

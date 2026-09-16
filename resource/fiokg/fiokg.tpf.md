@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SAWGraph FRS KG
+format: http
 id: fiokg.tpf
 name: SAWGraph FRS KG TPF
 original_source:

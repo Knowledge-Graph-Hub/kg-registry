@@ -1,7 +1,8 @@
 ---
-category: DataProduct
+category: Product
 description: MaizeMine data warehouse downloads providing integrated and queryable
   maize genomics datasets.
+format: mixed
 id: maizegdb.maizemine
 name: MaizeMine Downloads
 original_source:

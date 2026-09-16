@@ -5,6 +5,7 @@ description: Bulk download of the entire annotated SureChEMBL database as a set 
   weight), patent metadata, compound-to-patent mappings, and extracted biomedical
   entities. A new complete version is released every two weeks via the EMBL-EBI FTP
   server.
+format: parquet
 id: surechembl.bulk-data
 name: SureChEMBL Bulk Data
 original_source:

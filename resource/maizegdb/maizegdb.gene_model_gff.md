@@ -1,7 +1,8 @@
 ---
-category: DataProduct
+category: Product
 description: Gene model annotation files in GFF format for maize genome assemblies
   hosted on the MaizeGDB download server.
+format: gff
 id: maizegdb.gene_model_gff
 name: MaizeGDB Gene Model GFF Files
 original_source:

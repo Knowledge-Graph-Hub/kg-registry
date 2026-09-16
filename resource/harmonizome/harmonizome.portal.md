@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: Harmonizome 3.0 web portal for searching and exploring processed gene
   and protein datasets, resources, genes, attributes, and associations.
+format: http
 id: harmonizome.portal
 name: Harmonizome Portal
 original_source:

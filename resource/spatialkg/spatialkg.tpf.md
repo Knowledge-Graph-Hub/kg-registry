@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SAWGraph Spatial KG
+format: http
 id: spatialkg.tpf
 name: SAWGraph Spatial KG TPF
 original_source:

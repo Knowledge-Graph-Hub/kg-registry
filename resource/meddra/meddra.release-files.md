@@ -2,6 +2,7 @@
 category: Product
 description: MedDRA terminology release files maintained and distributed by the MedDRA
   MSSO for subscribers, supporting regulatory coding and pharmacovigilance workflows.
+format: txt
 id: meddra.release-files
 name: MedDRA Terminology Release Files
 original_source:

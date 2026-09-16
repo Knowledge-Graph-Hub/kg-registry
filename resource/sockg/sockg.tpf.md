@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SOC-KG
+format: http
 id: sockg.tpf
 name: SOC-KG TPF
 original_source:

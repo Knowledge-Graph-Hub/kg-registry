@@ -2,6 +2,7 @@
 category: Product
 description: Download page for GADM administrative boundary spatial data covering
   the entire world.
+format: mixed
 id: gadm.download_world
 name: GADM Data Download (world)
 original_source:

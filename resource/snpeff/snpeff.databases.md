@@ -1,13 +1,15 @@
 ---
 category: Product
-description: Over 38,000 pre-built genome databases available for automatic download and annotation
+description: Over 38,000 pre-built genome databases available for automatic download
+  and annotation
+format: mixed
 id: snpeff.databases
 name: SnpEff Genome Databases
 original_source:
-  - source: snpeff
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: snpeff
 product_url: https://pcingola.github.io/SnpEff/download/
 warnings:
-  - Databases are automatically downloaded when running SnpEff; manual download is optional
+- Databases are automatically downloaded when running SnpEff; manual download is optional
 layout: product_detail
 ---

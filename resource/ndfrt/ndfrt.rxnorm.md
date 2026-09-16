@@ -1,14 +1,15 @@
 ---
 category: Product
 description: VANDF data integrated into RxNorm
+format: http
 id: ndfrt.rxnorm
 name: VANDF in RxNorm
 original_source:
-  - source: ndfrt
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: ndfrt
 product_url: https://www.nlm.nih.gov/research/umls/rxnorm/
 secondary_source:
-  - source: rxnorm
-    relation_type: prov:wasInfluencedBy
+- relation_type: prov:wasInfluencedBy
+  source: rxnorm
 layout: product_detail
 ---

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: EMA regulatory source extract from the medic v1.0.1 release
+format: xlsx
 id: medi.ema
 latest_version: v1.0.1
 name: MeDI EMA Extract

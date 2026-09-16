@@ -3,6 +3,7 @@ category: GraphicalInterface
 description: dbPTM 2025 web portal for searching proteins, browsing PTM general information,
   and analyzing disease-associated PTMs, PTM crosstalk, drug-binding-associated PTM
   sites, and kinase activity profiles.
+format: http
 id: dbptm.portal
 name: dbPTM Web Portal
 original_source:

@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for BioBricks MeSH
+format: http
 id: biobricks-mesh.tpf
 name: BioBricks MeSH TPF
 original_source:

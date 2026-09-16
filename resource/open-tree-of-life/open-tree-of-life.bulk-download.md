@@ -2,6 +2,7 @@
 category: Product
 description: Preprocessed source trees and taxonomy files available for bulk download
   in Newick, Nexus, and JSON formats
+format: mixed
 id: open-tree-of-life.bulk-download
 name: Open Tree of Life Bulk Downloads
 original_source:

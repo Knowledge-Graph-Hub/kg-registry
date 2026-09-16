@@ -2,6 +2,7 @@
 category: Product
 description: Complete phylesystem repository containing 4,500+ curated phylogenetic
   studies in NexSON JSON format with full version control history
+format: json
 id: open-tree-of-life.phylesystem
 name: Phylesystem Data Repository
 original_source:

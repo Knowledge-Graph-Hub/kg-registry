@@ -1,6 +1,7 @@
 ---
 category: GraphicalInterface
 description: Graphical interface for MedKG
+format: http
 id: medkg.site
 name: MedKG Site
 original_source:

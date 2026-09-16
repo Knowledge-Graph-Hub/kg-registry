@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: InterMine server documentation describing the biological data warehouse
   system, BlueGenes interface, data integration model, and web-service API.
+format: http
 id: intermine.documentation
 name: InterMine Documentation
 original_source:

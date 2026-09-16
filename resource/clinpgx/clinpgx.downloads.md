@@ -2,6 +2,7 @@
 category: DocumentationProduct
 description: Downloads page listing the bulk data files (formerly the PharmGKB downloads),
   with data usage policy and file descriptions
+format: http
 id: clinpgx.downloads
 is_public: true
 name: ClinPGx Downloads

@@ -2,6 +2,7 @@
 category: ProcessProduct
 description: P3DB PTM peptide BLAST and search tools for querying plant phosphopeptides
   and phosphorylation sites by sequence or accession.
+format: http
 id: p3db.ptm-search
 name: P3DB PTM Search and BLAST Tools
 original_source:

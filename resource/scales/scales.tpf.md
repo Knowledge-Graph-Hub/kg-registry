@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SCALES
+format: http
 id: scales.tpf
 name: SCALES TPF
 original_source:

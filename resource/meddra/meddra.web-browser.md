@@ -2,6 +2,7 @@
 category: GraphicalInterface
 description: MedDRA Web-Based Browser provided for MedDRA subscribers to search and
   view MedDRA terminology content.
+format: http
 id: meddra.web-browser
 name: MedDRA Web-Based Browser
 original_source:

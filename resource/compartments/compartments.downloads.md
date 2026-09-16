@@ -1,6 +1,7 @@
 ---
 category: Product
 description: Bulk data downloads of localization scores and evidence files.
+format: tsv
 id: compartments.downloads
 name: COMPARTMENTS Bulk Downloads
 original_source:
