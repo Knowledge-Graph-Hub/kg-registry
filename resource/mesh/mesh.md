@@ -2579,6 +2579,109 @@ products:
     source: wikidata
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- category: Product
+  compression: gzip
+  description: Curated chemical-gene and chemical-protein interactions with interaction
+    actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes
+    use NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also available
+    as CSV, flat XML, and a structured XML with an XSD.
+  format: tsv
+  id: ctd.chem_gene_ixns
+  name: CTD Chemical-Gene Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ncbitaxon
+  product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
+- category: Product
+  compression: gzip
+  description: Chemical-disease associations, both curated (direct evidence of a marker,
+    mechanism, or therapeutic relationship) and inferred through a shared gene, with
+    an inference score and PubMed evidence. Diseases use MeSH or OMIM identifiers.
+    Also available as CSV and XML.
+  format: tsv
+  id: ctd.chemicals_diseases
+  name: CTD Chemical-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
+- category: Product
+  compression: gzip
+  description: Gene-disease associations, both curated and inferred through a shared
+    chemical, with an inference score and PubMed evidence. This is the largest CTD
+    file at about 3 GB compressed. Also available as CSV and XML.
+  format: tsv
+  id: ctd.genes_diseases
+  name: CTD Gene-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
+- category: Product
+  compression: gzip
+  description: CTD's hierarchical chemical vocabulary, a modified subset of the MeSH
+    Chemicals and Drugs branch, with CAS Registry Numbers, definitions, parent terms,
+    tree numbers, and synonyms. Also available as CSV and XML.
+  format: tsv
+  id: ctd.chemicals
+  name: CTD Chemical Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  product_url: https://ctdbase.org/reports/CTD_chemicals.tsv.gz
+- category: OntologyProduct
+  compression: gzip
+  description: MEDIC, CTD's disease vocabulary, a modified subset of the MeSH Diseases
+    branch merged with genetic disorders from OMIM, with definitions, alternative
+    identifiers, parent terms, tree numbers, synonyms, and MEDIC-Slim category mappings.
+    Also available as CSV, TSV, and XML.
+  format: obo
+  id: ctd.medic
+  name: CTD Disease Vocabulary (MEDIC)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
+- category: Product
+  compression: gzip
+  description: CTD's anatomy vocabulary, a modified subset of the MeSH Anatomy branch
+    integrated by CTD curators with Uberon and the Cell Ontology, whose terms are
+    cross-referenced as synonyms. Also available as CSV and XML.
+  format: tsv
+  id: ctd.anatomy
+  name: CTD Anatomy Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
 publications:
 - authors:
   - Lipscomb CE

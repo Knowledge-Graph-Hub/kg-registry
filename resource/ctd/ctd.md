@@ -12,13 +12,331 @@ domains:
 homepage_url: https://ctdbase.org/
 id: ctd
 infores_id: ctd
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-21T00:00:00Z'
 layout: resource_detail
 license:
   id: https://ctdbase.org/about/legal.jsp
   label: Custom
 name: Comparative Toxicogenomics Database
 products:
+- category: Product
+  compression: gzip
+  description: Curated chemical-gene and chemical-protein interactions with interaction
+    actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes use
+    NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also available
+    as CSV, flat XML, and a structured XML with an XSD.
+  format: tsv
+  id: ctd.chem_gene_ixns
+  name: CTD Chemical-Gene Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ncbitaxon
+  product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
+- category: OntologyProduct
+  description: The hierarchical controlled vocabulary of chemical-gene interaction
+    types that CTD uses when curating interactions, with a code, description, and
+    parent for each type. Also available as CSV, TSV, and XML.
+  format: obo
+  id: ctd.chem_gene_ixn_types
+  name: CTD Chemical-Gene Interaction Types
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  product_url: https://ctdbase.org/reports/CTD_chem_gene_ixn_types.obo
+- category: Product
+  compression: gzip
+  description: Chemical-disease associations, both curated (direct evidence of a marker,
+    mechanism, or therapeutic relationship) and inferred through a shared gene, with
+    an inference score and PubMed evidence. Diseases use MeSH or OMIM identifiers.
+    Also available as CSV and XML.
+  format: tsv
+  id: ctd.chemicals_diseases
+  name: CTD Chemical-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
+- category: Product
+  compression: gzip
+  description: Gene Ontology terms statistically enriched among the genes and proteins
+    that interact with each chemical or its descendants, with p-values and match
+    counts. Also available as CSV and XML.
+  format: tsv
+  id: ctd.chem_go_enriched
+  name: CTD Chemical-GO Enriched Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_url: https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz
+- category: Product
+  compression: gzip
+  description: KEGG and Reactome pathways statistically enriched among the genes and
+    proteins that interact with each chemical, with p-values and match counts. Also
+    available as CSV and XML.
+  format: tsv
+  id: ctd.chem_pathways_enriched
+  name: CTD Chemical-Pathway Enriched Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
+- category: Product
+  compression: gzip
+  description: Gene-disease associations, both curated and inferred through a shared
+    chemical, with an inference score and PubMed evidence. This is the largest CTD
+    file at about 3 GB compressed. Also available as CSV and XML.
+  format: tsv
+  id: ctd.genes_diseases
+  name: CTD Gene-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
+- category: Product
+  compression: gzip
+  description: Gene-pathway associations linking NCBI Gene identifiers to KEGG and
+    Reactome pathways. Also available as CSV and XML.
+  format: tsv
+  id: ctd.genes_pathways
+  name: CTD Gene-Pathway Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz
+- category: Product
+  compression: gzip
+  description: Disease-pathway associations inferred through a shared gene, linking
+    MeSH or OMIM diseases to KEGG and Reactome pathways. Also available as CSV and
+    XML.
+  format: tsv
+  id: ctd.diseases_pathways
+  name: CTD Disease-Pathway Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz
+- category: Product
+  compression: gzip
+  description: Curated chemical-phenotype interactions, where phenotypes are Gene
+    Ontology terms, with co-mentioned terms, anatomy terms, organism, interaction
+    actions, and PubMed evidence. Also available as CSV and XML.
+  format: tsv
+  id: ctd.pheno_term_ixns
+  name: CTD Chemical-Phenotype Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_url: https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz
+- category: Product
+  compression: gzip
+  description: Curated exposure studies, one row per reference, with study factors,
+    exposure stressors, receptors, countries, mediums, exposure markers, diseases,
+    phenotypes, and an author summary. Also available as CSV and XML.
+  format: tsv
+  id: ctd.exposure_studies
+  name: CTD Exposure-Study Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  product_url: https://ctdbase.org/reports/CTD_exposure_studies.tsv.gz
+- category: Product
+  compression: gzip
+  description: Curated exposure events, one row per stressor-receptor-outcome measurement,
+    with stressor source, receptor demographics, assay methods, marker levels, location,
+    and disease or phenotype outcomes. Also available as CSV and XML.
+  format: tsv
+  id: ctd.exposure_events
+  name: CTD Exposure-Event Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  product_url: https://ctdbase.org/reports/CTD_exposure_events.tsv.gz
+- category: Product
+  compression: gzip
+  description: Inferred associations between Gene Ontology biological process terms
+    and diseases, with the chemicals and genes through which each association is
+    inferred. Also available as CSV and XML.
+  format: tsv
+  id: ctd.phenotype_disease_bp
+  name: CTD Phenotype-Disease Inference Network (Biological Process)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz
+- category: Product
+  compression: gzip
+  description: Inferred associations between Gene Ontology cellular component terms
+    and diseases, with the chemicals and genes through which each association is
+    inferred. Also available as CSV and XML.
+  format: tsv
+  id: ctd.phenotype_disease_cc
+  name: CTD Phenotype-Disease Inference Network (Cellular Component)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz
+- category: Product
+  compression: gzip
+  description: Inferred associations between Gene Ontology molecular function terms
+    and diseases, with the chemicals and genes through which each association is
+    inferred. Also available as CSV and XML.
+  format: tsv
+  id: ctd.phenotype_disease_mf
+  name: CTD Phenotype-Disease Inference Network (Molecular Function)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz
+- category: Product
+  compression: gzip
+  description: CTD's hierarchical chemical vocabulary, a modified subset of the MeSH
+    Chemicals and Drugs branch, with CAS Registry Numbers, definitions, parent terms,
+    tree numbers, and synonyms. Also available as CSV and XML.
+  format: tsv
+  id: ctd.chemicals
+  name: CTD Chemical Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  product_url: https://ctdbase.org/reports/CTD_chemicals.tsv.gz
+- category: OntologyProduct
+  compression: gzip
+  description: MEDIC, CTD's disease vocabulary, a modified subset of the MeSH Diseases
+    branch merged with genetic disorders from OMIM, with definitions, alternative
+    identifiers, parent terms, tree numbers, synonyms, and MEDIC-Slim category mappings.
+    Also available as CSV, TSV, and XML.
+  format: obo
+  id: ctd.medic
+  name: CTD Disease Vocabulary (MEDIC)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
+- category: Product
+  compression: gzip
+  description: CTD's anatomy vocabulary, a modified subset of the MeSH Anatomy branch
+    integrated by CTD curators with Uberon and the Cell Ontology, whose terms are
+    cross-referenced as synonyms. Also available as CSV and XML.
+  format: tsv
+  id: ctd.anatomy
+  name: CTD Anatomy Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
+- category: Product
+  compression: gzip
+  description: CTD's gene vocabulary, keyed by NCBI Gene identifier, with symbols,
+    names, synonyms, and cross-references to BioGRID, PharmGKB, and UniProt. Also
+    available as CSV and XML.
+  format: tsv
+  id: ctd.genes
+  name: CTD Gene Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  product_url: https://ctdbase.org/reports/CTD_genes.tsv.gz
+- category: Product
+  compression: gzip
+  description: CTD's pathway vocabulary, a list of pathway names with their KEGG or
+    Reactome identifiers. Also available as CSV and XML.
+  format: tsv
+  id: ctd.pathways
+  name: CTD Pathway Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
+- category: OntologyProduct
+  description: The draft Exposure Ontology (ExO) as distributed by CTD, which provides
+    exposure context for CTD's exposure data.
+  format: obo
+  id: ctd.exposure_ontology
+  name: CTD Exposure Ontology (ExO)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  product_url: https://ctdbase.org/reports/CTD_exposure_ontology.obo
+- category: GraphicalInterface
+  description: Web tool for retrieving customized CTD data sets by submitting a list
+    of chemicals, diseases, genes, pathways, GO terms, or references. Results can
+    be returned as CSV, TSV, XML, or JSON, and the query can also be driven by URL
+    for programmatic access.
+  format: http
+  id: ctd.batch_query
+  name: CTD Batch Query
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  product_url: https://ctdbase.org/tools/batchQuery.go
+- category: GraphicalInterface
+  description: Web query for CTD Tetramers, computationally inferred chemical-gene-phenotype-disease
+    four-way relationships built from curated CTD content.
+  format: http
+  id: ctd.tetramers
+  name: CTD Tetramers
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  product_url: https://ctdbase.org/query.go?type=tetramer
 - category: GraphProduct
   description: CTD Automat
   format: kgx-jsonl
