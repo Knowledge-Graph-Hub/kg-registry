@@ -11,8 +11,7 @@ def _write_resource(td, category, product_category, contact_category="Individual
     res_dir = Path(td) / "tmpres"
     res_dir.mkdir(parents=True, exist_ok=True)
     md_path = res_dir / "tmpres.md"
-    md_path.write_text(
-        f"""---
+    md_path.write_text(f"""---
 id: tmpres
 layout: resource_detail
 name: Temp Resource
@@ -30,8 +29,7 @@ products:
 ---
 
 Content
-"""
-    )
+""")
     return md_path
 
 
