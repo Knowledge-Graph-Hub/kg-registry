@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: GraphicalInterface
 description: Web portal for searching, browsing, and downloading functional genomics
   datasets archived in the Gene Expression Omnibus.
 format: http

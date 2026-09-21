@@ -19,6 +19,7 @@ from linkml.validator import Validator
 from linkml.validator.plugins import JsonschemaValidationPlugin
 from linkml_runtime.linkml_model.meta import SchemaDefinition
 from linkml_runtime.loaders import yaml_loader
+from linkml_runtime.utils.schemaview import SchemaView
 from yaml.parser import ParserError
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
@@ -89,6 +90,57 @@ def get_schema_validator():
     """
     schema = yaml_loader.load(str(SOURCE_SCHEMA_PATH), target_class=SchemaDefinition)
     return Validator(schema, validation_plugins=[JsonschemaValidationPlugin(closed=True)])
+
+
+@lru_cache(maxsize=1)
+def get_schema_view():
+    """Load a SchemaView over the combined schema, once per process."""
+    return SchemaView(str(SOURCE_SCHEMA_PATH))
+
+
+def check_category_classes(obj, target_class, path=""):
+    """
+    Check that every `category` value names a class the schema allows there.
+
+    The schema says `category` "should be identical to its class name", but the
+    slot is a plain string and `designates_type` is off, so the JSON Schema
+    validation accepts any text. This walks the object alongside the schema:
+    the root must be `target_class` or one of its descendants, and each nested
+    object under a slot with a class range must be that range or one of its
+    descendants. Returns a list of error strings.
+    """
+    sv = get_schema_view()
+    errors = []
+    if not isinstance(obj, dict):
+        return errors
+
+    allowed = sv.class_descendants(target_class)
+    category = obj.get("category")
+    effective_class = target_class
+    if category is not None and "category" in sv.class_slots(target_class):
+        if category in allowed:
+            effective_class = category
+        else:
+            where = f"{path}.category" if path else "category"
+            errors.append(
+                f"{where}: '{category}' is not a {target_class} class "
+                f"(expected one of: {', '.join(sorted(allowed))})"
+            )
+
+    for slot_name in sv.class_slots(effective_class):
+        slot = sv.induced_slot(slot_name, effective_class)
+        if slot.range not in sv.all_classes():
+            continue
+        value = obj.get(slot_name)
+        if value is None:
+            continue
+        child_path = f"{path}.{slot_name}" if path else slot_name
+        if isinstance(value, list):
+            for index, item in enumerate(value):
+                errors.extend(check_category_classes(item, slot.range, f"{child_path}[{index}]"))
+        else:
+            errors.extend(check_category_classes(value, slot.range, child_path))
+    return errors
 
 
 def main():
@@ -276,6 +328,9 @@ def validate_markdown(args):
             for result in report.results:
                 if result.severity == "ERROR":
                     errs.append(f"{fn}: {result.message}")
+
+        for message in check_category_classes(obj, target_class):
+            errs.append(f"{fn}: {message}")
 
         if not getattr(args, "skip_publication_reference_validation", False):
             publication_report = validate_publication_references(

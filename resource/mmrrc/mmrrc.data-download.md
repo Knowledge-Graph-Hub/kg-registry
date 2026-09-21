@@ -1,5 +1,5 @@
 ---
-category: Dataset
+category: Product
 description: Bulk data download of the MMRRC strain catalog, providing strain identifiers,
   designations, genes, mutations, phenotype (MPT) annotations, and linked PubMed identifiers.
 format: mixed

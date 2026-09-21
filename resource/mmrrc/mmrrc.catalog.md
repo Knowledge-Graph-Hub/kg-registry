@@ -1,5 +1,5 @@
 ---
-category: Database
+category: GraphicalInterface
 description: Searchable online catalog of MMRRC mouse strains, including allele, gene,
   mutation type, phenotype (MPT), and associated publication information.
 format: http

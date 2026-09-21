@@ -1,5 +1,5 @@
 ---
-category: Dataset
+category: Product
 description: Bulk datasets and resources distributed through Synapse platform
 format: http
 id: darkkinasekb.synapse

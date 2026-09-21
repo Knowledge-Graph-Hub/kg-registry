@@ -1,5 +1,5 @@
 ---
-category: DataProduct
+category: Product
 description: ORegAnno 3.0 regulatory annotation as a UCSC Genome Browser track and
   bulk download (human, hg38).
 format: gff

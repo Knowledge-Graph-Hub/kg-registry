@@ -22,7 +22,7 @@ last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: Monarch Initiative
 products:
-- category: KnowledgeGraph
+- category: GraphProduct
   description: Monarch Knowledge Graph integrating phenotype, disease, gene data across
     species
   format: mixed

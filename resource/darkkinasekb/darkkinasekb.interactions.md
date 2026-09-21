@@ -1,5 +1,5 @@
 ---
-category: Dataset
+category: Product
 description: Protein interaction networks for dark kinases from affinity purification mass spectrometry and proximity labeling experiments
 format: http
 id: darkkinasekb.interactions

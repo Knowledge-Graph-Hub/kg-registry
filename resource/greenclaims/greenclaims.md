@@ -22,7 +22,7 @@ license:
   label: MIT
 name: GreenClaims
 products:
-- category: DataDump
+- category: Product
   description: CSV dataset of company environmental claims, greenwashing accusations,
     company descriptions, environmental certificates, and source URLs, hosted in the
     GreenwashingDetectionDataset GitHub repository. No further commits have been pushed

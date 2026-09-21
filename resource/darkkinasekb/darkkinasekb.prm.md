@@ -1,5 +1,5 @@
 ---
-category: Dataset
+category: Product
 description: Parallel reaction monitoring (PRM) peptides for quantitative mass spectrometry of dark kinases with standard curves and detection limits
 format: http
 id: darkkinasekb.prm

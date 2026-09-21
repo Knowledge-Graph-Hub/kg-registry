@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: Dataset
+category: DataSource
 contacts:
 - category: Individual
   contact_details:

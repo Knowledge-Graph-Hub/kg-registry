@@ -652,7 +652,7 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
-- category: DatabaseProduct
+- category: Product
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.

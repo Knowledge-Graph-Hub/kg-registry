@@ -24,7 +24,7 @@ last_modified_date: '2026-07-02T00:00:00Z'
 layout: resource_detail
 name: VDJServer
 products:
-- category: DataSource
+- category: GraphicalInterface
   description: Cloud-based analysis portal and AIRR-compliant repository for searching,
     browsing, and downloading immune repertoire sequencing datasets.
   format: http

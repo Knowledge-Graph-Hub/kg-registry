@@ -2,12 +2,12 @@
 activity_status: active
 category: Ontology
 contacts:
-- category: Person
+- category: Individual
   contact_details:
   - contact_type: email
     value: mmartone@ucsd.edu
   label: Maryann E. Martone
-- category: Person
+- category: Individual
   contact_details:
   - contact_type: email
     value: sean.hill@camh.ca

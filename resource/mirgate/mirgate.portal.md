@@ -1,5 +1,5 @@
 ---
-category: Portal
+category: GraphicalInterface
 description: Web portal for querying and browsing miRNA-mRNA target predictions for
   human, mouse, and rat
 format: http

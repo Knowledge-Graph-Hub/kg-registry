@@ -1,5 +1,5 @@
 ---
-category: DataProduct
+category: GraphicalInterface
 description: Web portal interface for browsing and searching the curated Inxight Drugs
   database of drug substances, including approval status, mechanisms, and targets.
 format: http

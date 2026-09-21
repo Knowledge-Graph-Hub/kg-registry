@@ -516,7 +516,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-- category: DatabaseProduct
+- category: Product
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.

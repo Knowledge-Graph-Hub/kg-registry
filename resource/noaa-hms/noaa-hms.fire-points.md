@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: Product
 description: Daily HMS analyst-reviewed fire detection points over North America derived
   from geostationary and polar-orbiting satellite observations, provided as Shapefile
   and KML files via NOAA NESDIS data distribution.

@@ -1,5 +1,5 @@
 ---
-category: KnowledgeGraph
+category: GraphProduct
 description: Monarch Knowledge Graph integrating phenotype, disease, gene data across species
 format: mixed
 id: monarchinitiative.kg

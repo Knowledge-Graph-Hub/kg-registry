@@ -33,7 +33,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: t3db
   product_url: http://www.t3db.ca/
-- category: DataSource
+- category: Product
   description: Bulk downloads of the full T3DB dataset, including toxin records, toxin
     target records, and toxin-target associations in formats such as XML and SDF.
     Use is governed by the T3DB terms of use.

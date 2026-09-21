@@ -24,7 +24,7 @@ last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: Human Pancreas Analysis Program (HPAP)
 products:
-- category: DataSource
+- category: GraphicalInterface
   description: PANC-DB data portal for browsing and downloading HPAP donor-derived
     pancreas and islet multi-omic datasets.
   format: http

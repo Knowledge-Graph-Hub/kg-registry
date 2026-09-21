@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: Product
 description: Schmitt et al. (2016) compendium of chromatin contact maps and Frequently
   Interacting REgions, distributed via the PubMed Central article record and its supplementary
   data.

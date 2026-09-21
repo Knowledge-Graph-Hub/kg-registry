@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: GraphicalInterface
 description: Cloud-based analysis portal and AIRR-compliant repository for searching,
   browsing, and downloading immune repertoire sequencing datasets.
 format: http

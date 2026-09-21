@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: Database
+category: DataSource
 contacts:
   - category: Organization
     contact_details:
@@ -30,7 +30,7 @@ products:
   - id: rampdb.database
     name: RaMP-DB Integrated Database
     description: Multi-sourced relational database integrating metabolomic pathway information, biochemical reactions, ontologies, and chemical descriptors for genes, proteins, and metabolites with query and enrichment analysis capabilities.
-    category: DatabaseProduct
+    category: Product
     format: mysql
     product_url: https://rampdb.nih.gov/
     original_source:
