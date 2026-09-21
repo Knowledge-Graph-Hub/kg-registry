@@ -505,7 +505,7 @@ layout: default
             </td>
             <td>
               {% include product_category.html category=p.category %}
-              <span title="{{ p.category | default: "Product" }}" style="white-space: nowrap;"><i class="bi bi-{{ product_icon_name }}"></i> {{ product_category_name }}</span>
+              <span title="{{ p.category | default: "Product" }}" style="white-space: nowrap;"><i class="bi bi-{{ product_icon_name }} text-primary"></i> {{ product_category_name }}</span>
             </td>
             <td>
               {% if p.format %}
@@ -603,7 +603,7 @@ layout: default
             </td>
             <td>
               {% include product_category.html category=p.category %}
-              <span title="{{ p.category | default: "Product" }}" style="white-space: nowrap;"><i class="bi bi-{{ product_icon_name }}"></i> {{ product_category_name }}</span>
+              <span title="{{ p.category | default: "Product" }}" style="white-space: nowrap;"><i class="bi bi-{{ product_icon_name }} text-primary"></i> {{ product_category_name }}</span>
             </td>
             <td>
               {% if p.format %}
