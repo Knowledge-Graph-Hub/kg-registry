@@ -12,6 +12,7 @@ original_source:
   source: ctd
 - relation_type: prov:wasDerivedFrom
   source: go
+product_file_size: 5479380
 product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz
 layout: product_detail
 ---

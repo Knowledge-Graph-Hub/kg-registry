@@ -15,6 +15,7 @@ original_source:
   source: mesh
 - relation_type: prov:wasDerivedFrom
   source: omim
+product_file_size: 161914063
 product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
 layout: product_detail
 ---

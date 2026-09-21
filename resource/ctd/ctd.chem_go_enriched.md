@@ -12,6 +12,7 @@ original_source:
   source: ctd
 - relation_type: prov:wasDerivedFrom
   source: go
+product_file_size: 144377549
 product_url: https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz
 layout: product_detail
 ---

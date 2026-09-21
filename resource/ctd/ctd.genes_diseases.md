@@ -16,6 +16,7 @@ original_source:
   source: mesh
 - relation_type: prov:wasDerivedFrom
   source: omim
+product_file_size: 3214625237
 product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
 layout: product_detail
 ---

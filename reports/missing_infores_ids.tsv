@@ -564,7 +564,7 @@ pdro	The Prescription of Drugs Ontology	Ontology	https://github.com/OpenLHS/PDRO
 pdumdv	Platynereis Developmental Stages	Ontology	https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv	resource/pdumdv/pdumdv.md
 peco	Plant Experimental Conditions Ontology	Ontology	http://planteome.org/	resource/peco/peco.md
 petagraph	Petagraph	KnowledgeGraph	https://github.com/TaylorResearchLab/Petagraph	resource/petagraph/petagraph.md
-pf1600	pf1600 Dataset	Dataset	https://doi.org/10.5524/102323	resource/pf1600/pf1600.md
+pf1600	pf1600 Dataset	DataSource	https://doi.org/10.5524/102323	resource/pf1600/pf1600.md
 pgdso	Plant Growth and Development Stage	Ontology	http://www.plantontology.org	resource/pgdso/pgdso.md
 pgo	Pseudogene Ontology	Ontology	https://bioportal.bioontology.org/ontologies/pseudo	resource/pgo/pgo.md
 pharmacodb	PharmacoDB	DataSource	https://pharmacodb.ca/	resource/pharmacodb/pharmacodb.md

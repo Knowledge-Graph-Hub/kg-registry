@@ -87,16 +87,14 @@ products:
     source: bio2rdf
   product_url: https://biosemantics.org/biosearch
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-09-16: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
     to URL: HTTPSConnectionPool(host=''biosemantics.org'', port=443): Max retries
     exceeded with url: /biosearch (Caused by NewConnectionError("HTTPSConnection(host=''biosemantics.org'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
     and disease information for drug repositioning.
@@ -138,7 +136,7 @@ products:
     source: bio2rdf
 publications:
 - authors:
-  - François Belleau
+  - "Fran\xE7ois Belleau"
   - Marc-Alexandre Nolin
   - Nicole Tourigny
   - Philippe Rigault
@@ -151,7 +149,7 @@ publications:
   year: '2008'
 - authors:
   - Alison Callahan
-  - José Cruz-Toledo
+  - "Jos\xE9 Cruz-Toledo"
   - Peter Ansell
   - Michel Dumontier
   doi: 10.1007/978-3-642-38288-8_14

@@ -45,11 +45,6 @@ products:
     source: gutmdisorder
   product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-literature-associations.xlsx
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-16: Error connecting
-    to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries exceeded
-    with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx (Caused by
-    NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80): Failed
-    to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
     to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries exceeded
     with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx (Caused by
@@ -66,11 +61,6 @@ products:
     source: gutmdisorder
   product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-16: Error connecting
-    to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries exceeded
-    with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx (Caused by
-    NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80): Failed
-    to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
     to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries exceeded
     with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx (Caused by

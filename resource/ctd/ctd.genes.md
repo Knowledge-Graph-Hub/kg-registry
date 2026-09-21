@@ -12,6 +12,7 @@ original_source:
   source: ctd
 - relation_type: prov:wasDerivedFrom
   source: ncbigene
+product_file_size: 122926600
 product_url: https://ctdbase.org/reports/CTD_genes.tsv.gz
 layout: product_detail
 ---

@@ -15949,7 +15949,6 @@
       "kg-covid-19.graph",
       "kg-enp.graph",
       "kg-idg.graph",
-      "mirgate.portal",
       "mirnao.owl",
       "mirtarbase.archive",
       "mirtarbase.mti",
@@ -16106,7 +16105,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-09-21T16:06:04Z",
+  "generated_at": "2026-09-21T19:00:01Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 162,
     "with_evaluation_page": 127,
@@ -16114,10 +16113,10 @@
   },
   "links": {
     "broken_urls": 244,
-    "cache_hits": 4627,
+    "cache_hits": 4649,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 4405,
-    "live_checked_urls": 22,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 4649,
     "unchecked_urls": 0
@@ -16127,7 +16126,7 @@
     "missing_original_source": 0,
     "missing_product_url": 21,
     "total": 4187,
-    "with_retrieval_warning": 49
+    "with_retrieval_warning": 48
   },
   "resource_count": 1032,
   "resources": {

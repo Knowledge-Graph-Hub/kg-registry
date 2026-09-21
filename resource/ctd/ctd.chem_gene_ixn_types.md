@@ -9,6 +9,7 @@ name: CTD Chemical-Gene Interaction Types
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ctd
+product_file_size: 21245
 product_url: https://ctdbase.org/reports/CTD_chem_gene_ixn_types.obo
 layout: product_detail
 ---

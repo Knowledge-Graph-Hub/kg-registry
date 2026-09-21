@@ -12,6 +12,7 @@ original_source:
   source: ctd
 - relation_type: prov:wasDerivedFrom
   source: mesh
+product_file_size: 10644434
 product_url: https://ctdbase.org/reports/CTD_chemicals.tsv.gz
 layout: product_detail
 ---

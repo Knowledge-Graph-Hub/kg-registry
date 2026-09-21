@@ -12,6 +12,7 @@ original_source:
   source: ctd
 - relation_type: prov:wasDerivedFrom
   source: go
+product_file_size: 3114332
 product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz
 layout: product_detail
 ---

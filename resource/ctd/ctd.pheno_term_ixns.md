@@ -12,6 +12,7 @@ original_source:
   source: ctd
 - relation_type: prov:wasDerivedFrom
   source: go
+product_file_size: 23995148
 product_url: https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz
 layout: product_detail
 ---

@@ -12,6 +12,7 @@ original_source:
   source: ctd
 - relation_type: prov:wasDerivedFrom
   source: go
+product_file_size: 50288394
 product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz
 layout: product_detail
 ---

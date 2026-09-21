@@ -10,6 +10,7 @@ name: CTD Exposure-Event Associations
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ctd
+product_file_size: 4754821
 product_url: https://ctdbase.org/reports/CTD_exposure_events.tsv.gz
 layout: product_detail
 ---

@@ -14,6 +14,7 @@ original_source:
   source: kegg
 - relation_type: prov:wasDerivedFrom
   source: reactome
+product_file_size: 41367827
 product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
 layout: product_detail
 ---

@@ -10,6 +10,7 @@ name: CTD Exposure-Study Associations
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ctd
+product_file_size: 575829
 product_url: https://ctdbase.org/reports/CTD_exposure_studies.tsv.gz
 layout: product_detail
 ---
