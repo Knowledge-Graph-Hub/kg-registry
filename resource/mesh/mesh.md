@@ -346,8 +346,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2385,6 +2385,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
     SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -2597,6 +2599,7 @@ products:
     source: ncbigene
   - relation_type: prov:wasDerivedFrom
     source: ncbitaxon
+  product_file_size: 43053853
   product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
 - category: Product
   compression: gzip
@@ -2614,6 +2617,7 @@ products:
     source: mesh
   - relation_type: prov:wasDerivedFrom
     source: omim
+  product_file_size: 161914063
   product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
 - category: Product
   compression: gzip
@@ -2632,6 +2636,7 @@ products:
     source: mesh
   - relation_type: prov:wasDerivedFrom
     source: omim
+  product_file_size: 3214625237
   product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
 - category: Product
   compression: gzip
@@ -2646,6 +2651,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: mesh
+  product_file_size: 10644434
   product_url: https://ctdbase.org/reports/CTD_chemicals.tsv.gz
 - category: OntologyProduct
   compression: gzip
@@ -2663,6 +2669,7 @@ products:
     source: mesh
   - relation_type: prov:wasDerivedFrom
     source: omim
+  product_file_size: 1512711
   product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
 - category: Product
   compression: gzip
@@ -2681,6 +2688,7 @@ products:
     source: uberon
   - relation_type: prov:wasDerivedFrom
     source: cl
+  product_file_size: 324963
   product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
 publications:
 - authors:

@@ -33,6 +33,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: eVOC in OBO format
   format: obo
@@ -47,6 +49,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

@@ -3311,6 +3311,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 41367827
   product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
 - category: Product
   compression: gzip
@@ -3326,6 +3327,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 1091987
   product_url: https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz
 - category: Product
   compression: gzip
@@ -3342,6 +3344,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 6364748
   product_url: https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz
 - category: Product
   compression: gzip
@@ -3357,6 +3360,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 42574
   product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
 publications:
 - authors:

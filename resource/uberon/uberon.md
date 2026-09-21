@@ -3618,6 +3618,7 @@ products:
     source: uberon
   - relation_type: prov:wasDerivedFrom
     source: cl
+  product_file_size: 324963
   product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
 publications:
 - authors:

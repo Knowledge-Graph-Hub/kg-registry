@@ -3238,6 +3238,7 @@ kgr:cl a schema1:Ontology ;
         kgr:cl.kg-bioportal,
         kgr:cl.obo,
         kgr:cl.owl,
+        kgr:ctd.anatomy,
         kgr:drugmechdb.graph,
         kgr:efo.obo,
         kgr:efo.owl,
@@ -4355,7 +4356,7 @@ kgr:ctd a schema1:DataSource ;
     dcterms:identifier "ctd" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkae883> ;
     dcterms:license <https://ctdbase.org/about/legal.jsp> ;
-    dcterms:modified "2026-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-21T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aop-db.data,
         kgr:automat.ctd,
@@ -4363,6 +4364,28 @@ kgr:ctd a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:bioteque.embeddings,
         kgr:cam-kp.ctd-interactions,
+        kgr:ctd.anatomy,
+        kgr:ctd.batch_query,
+        kgr:ctd.chem_gene_ixn_types,
+        kgr:ctd.chem_gene_ixns,
+        kgr:ctd.chem_go_enriched,
+        kgr:ctd.chem_pathways_enriched,
+        kgr:ctd.chemicals,
+        kgr:ctd.chemicals_diseases,
+        kgr:ctd.diseases_pathways,
+        kgr:ctd.exposure_events,
+        kgr:ctd.exposure_ontology,
+        kgr:ctd.exposure_studies,
+        kgr:ctd.genes,
+        kgr:ctd.genes_diseases,
+        kgr:ctd.genes_pathways,
+        kgr:ctd.medic,
+        kgr:ctd.pathways,
+        kgr:ctd.pheno_term_ixns,
+        kgr:ctd.phenotype_disease_bp,
+        kgr:ctd.phenotype_disease_cc,
+        kgr:ctd.phenotype_disease_mf,
+        kgr:ctd.tetramers,
         kgr:genecards.web.interface,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
@@ -7350,7 +7373,8 @@ kgr:exo a schema1:Ontology ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/22324457> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:exo.kg-bioportal,
+    schema1:hasPart kgr:ctd.exposure_ontology,
+        kgr:exo.kg-bioportal,
         kgr:exo.obo,
         kgr:exo.owl ;
     schema1:name "Exposure ontology" ;
@@ -9058,6 +9082,11 @@ kgr:go a schema1:Ontology ;
         kgr:chr.model.owl,
         kgr:ckg.graph,
         kgr:clinicalkg.graph,
+        kgr:ctd.chem_go_enriched,
+        kgr:ctd.pheno_term_ixns,
+        kgr:ctd.phenotype_disease_bp,
+        kgr:ctd.phenotype_disease_cc,
+        kgr:ctd.phenotype_disease_mf,
         kgr:disprot.downloads,
         kgr:disprot.idpo,
         kgr:drugmechdb.graph,
@@ -11703,6 +11732,10 @@ kgr:kegg a schema1:DataSource ;
     schema1:hasPart kgr:cardiokg.neo4j,
         kgr:cfde-gse.genesets,
         kgr:cfde-gse.graph,
+        kgr:ctd.chem_pathways_enriched,
+        kgr:ctd.diseases_pathways,
+        kgr:ctd.genes_pathways,
+        kgr:ctd.pathways,
         kgr:enrichr-kg.graph,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
@@ -12001,7 +12034,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-16T21:57:35+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-21T15:56:29+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -13259,6 +13292,12 @@ kgr:mesh a schema1:Ontology ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:cardiokg.neo4j,
+        kgr:ctd.anatomy,
+        kgr:ctd.chem_gene_ixns,
+        kgr:ctd.chemicals,
+        kgr:ctd.chemicals_diseases,
+        kgr:ctd.genes_diseases,
+        kgr:ctd.medic,
         kgr:drugmechdb.graph,
         kgr:eram.downloads,
         kgr:eram.web,
@@ -14812,6 +14851,9 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
+        kgr:ctd.chem_gene_ixns,
+        kgr:ctd.genes,
+        kgr:ctd.genes_diseases,
         kgr:entrez.eutils,
         kgr:gencode.human.gtf,
         kgr:gencode.mouse.gtf,
@@ -14891,6 +14933,7 @@ kgr:ncbitaxon a schema1:Ontology ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:chr.model.owl,
+        kgr:ctd.chem_gene_ixns,
         kgr:drugmechdb.graph,
         kgr:eco-kg.graph,
         kgr:efo.obo,
@@ -16391,7 +16434,10 @@ kgr:omim a schema1:DataSource ;
     dcterms:license <https://www.omim.org/help/agreement> ;
     dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:eram.downloads,
+    schema1:hasPart kgr:ctd.chemicals_diseases,
+        kgr:ctd.genes_diseases,
+        kgr:ctd.medic,
+        kgr:eram.downloads,
         kgr:eram.web,
         kgr:genecards.disease.associations,
         kgr:genecards.gene.annotations,
@@ -19885,6 +19931,10 @@ kgr:reactome a schema1:DataSource ;
         kgr:cfde-gse.graph,
         kgr:ckg.graph,
         kgr:clinicalkg.graph,
+        kgr:ctd.chem_pathways_enriched,
+        kgr:ctd.diseases_pathways,
+        kgr:ctd.genes_pathways,
+        kgr:ctd.pathways,
         kgr:drugmechdb.graph,
         kgr:enrichr-kg.graph,
         kgr:epigraphdb.graph,
@@ -23251,6 +23301,7 @@ kgr:uberon a schema1:Ontology ;
         kgr:biobtree.graph.human-subgraph,
         kgr:biomarker.bkg.edges.anatomy,
         kgr:biomarker.bkg.nodes.anatomy,
+        kgr:ctd.anatomy,
         kgr:drugmechdb.graph,
         kgr:efo.obo,
         kgr:efo.owl,
@@ -27576,6 +27627,31 @@ kgr:cropland-data-layer.croplandcros a schema1:GraphicalInterface ;
     rdfs:label "CroplandCROS Viewer" ;
     dcterms:description "CroplandCROS web mapping application for interactive viewing, querying, and exporting Cropland Data Layer crop-type raster data." ;
     schema1:url <https://croplandcros.scinet.usda.gov/> .
+
+kgr:ctd.batch_query a schema1:GraphicalInterface ;
+    rdfs:label "CTD Batch Query" ;
+    dcterms:description "Web tool for retrieving customized CTD data sets by submitting a list of chemicals, diseases, genes, pathways, GO terms, or references. Results can be returned as CSV, TSV, XML, or JSON, and the query can also be driven by URL for programmatic access." ;
+    schema1:url <https://ctdbase.org/tools/batchQuery.go> .
+
+kgr:ctd.chem_gene_ixn_types a schema1:OntologyProduct ;
+    rdfs:label "CTD Chemical-Gene Interaction Types" ;
+    dcterms:description "The hierarchical controlled vocabulary of chemical-gene interaction types that CTD uses when curating interactions, with a code, description, and parent for each type. Also available as CSV, TSV, and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_chem_gene_ixn_types.obo> .
+
+kgr:ctd.exposure_events a schema1:Product ;
+    rdfs:label "CTD Exposure-Event Associations" ;
+    dcterms:description "Curated exposure events, one row per stressor-receptor-outcome measurement, with stressor source, receptor demographics, assay methods, marker levels, location, and disease or phenotype outcomes. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_exposure_events.tsv.gz> .
+
+kgr:ctd.exposure_studies a schema1:Product ;
+    rdfs:label "CTD Exposure-Study Associations" ;
+    dcterms:description "Curated exposure studies, one row per reference, with study factors, exposure stressors, receptors, countries, mediums, exposure markers, diseases, phenotypes, and an author summary. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_exposure_studies.tsv.gz> .
+
+kgr:ctd.tetramers a schema1:GraphicalInterface ;
+    rdfs:label "CTD Tetramers" ;
+    dcterms:description "Web query for CTD Tetramers, computationally inferred chemical-gene-phenotype-disease four-way relationships built from curated CTD content." ;
+    schema1:url <https://ctdbase.org/query.go?type=tetramer> .
 
 kgr:ctd2.dashboard a schema1:GraphicalInterface ;
     rdfs:label "CTD2 Dashboard" ;
@@ -41656,6 +41732,46 @@ kgr:connections-hypothesis-kp.graph a schema1:GraphProduct ;
     dcterms:description "Bayesian-network knowledge graph served by the Connections Hypothesis Provider over the Translator TRAPI interface. Inference is computed over a breast cancer dataset from The Cancer Genome Atlas (TCGA), supporting queries relating genetic, therapeutic, and patient clinical features to patient survival." ;
     schema1:url <https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f> .
 
+kgr:ctd.chem_go_enriched a schema1:Product ;
+    rdfs:label "CTD Chemical-GO Enriched Associations" ;
+    dcterms:description "Gene Ontology terms statistically enriched among the genes and proteins that interact with each chemical or its descendants, with p-values and match counts. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz> .
+
+kgr:ctd.chemicals a schema1:Product ;
+    rdfs:label "CTD Chemical Vocabulary" ;
+    dcterms:description "CTD's hierarchical chemical vocabulary, a modified subset of the MeSH Chemicals and Drugs branch, with CAS Registry Numbers, definitions, parent terms, tree numbers, and synonyms. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_chemicals.tsv.gz> .
+
+kgr:ctd.exposure_ontology a schema1:OntologyProduct ;
+    rdfs:label "CTD Exposure Ontology (ExO)" ;
+    dcterms:description "The draft Exposure Ontology (ExO) as distributed by CTD, which provides exposure context for CTD's exposure data." ;
+    schema1:url <https://ctdbase.org/reports/CTD_exposure_ontology.obo> .
+
+kgr:ctd.genes a schema1:Product ;
+    rdfs:label "CTD Gene Vocabulary" ;
+    dcterms:description "CTD's gene vocabulary, keyed by NCBI Gene identifier, with symbols, names, synonyms, and cross-references to BioGRID, PharmGKB, and UniProt. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_genes.tsv.gz> .
+
+kgr:ctd.pheno_term_ixns a schema1:Product ;
+    rdfs:label "CTD Chemical-Phenotype Interactions" ;
+    dcterms:description "Curated chemical-phenotype interactions, where phenotypes are Gene Ontology terms, with co-mentioned terms, anatomy terms, organism, interaction actions, and PubMed evidence. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz> .
+
+kgr:ctd.phenotype_disease_bp a schema1:Product ;
+    rdfs:label "CTD Phenotype-Disease Inference Network (Biological Process)" ;
+    dcterms:description "Inferred associations between Gene Ontology biological process terms and diseases, with the chemicals and genes through which each association is inferred. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz> .
+
+kgr:ctd.phenotype_disease_cc a schema1:Product ;
+    rdfs:label "CTD Phenotype-Disease Inference Network (Cellular Component)" ;
+    dcterms:description "Inferred associations between Gene Ontology cellular component terms and diseases, with the chemicals and genes through which each association is inferred. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz> .
+
+kgr:ctd.phenotype_disease_mf a schema1:Product ;
+    rdfs:label "CTD Phenotype-Disease Inference Network (Molecular Function)" ;
+    dcterms:description "Inferred associations between Gene Ontology molecular function terms and diseases, with the chemicals and genes through which each association is inferred. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz> .
+
 kgr:ctkp.docs a schema1:DocumentationProduct ;
     rdfs:label "Clinical Trials KP Documentation" ;
     dcterms:description "Translator wiki documentation for Clinical Trials KP, including source and access details." ;
@@ -43894,6 +44010,36 @@ kgr:cpathkg.code a schema1:ProcessProduct ;
     dcterms:description "This repository is a code reference for the C-Path Knowledge Graph project, to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph. Note that this is only a reference to scripts and queries associated with this project and is not provided as a runnable project because these workflows depend on an internal data catalog." ;
     schema1:url <https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration> .
 
+kgr:ctd.chem_pathways_enriched a schema1:Product ;
+    rdfs:label "CTD Chemical-Pathway Enriched Associations" ;
+    dcterms:description "KEGG and Reactome pathways statistically enriched among the genes and proteins that interact with each chemical, with p-values and match counts. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz> .
+
+kgr:ctd.chemicals_diseases a schema1:Product ;
+    rdfs:label "CTD Chemical-Disease Associations" ;
+    dcterms:description "Chemical-disease associations, both curated (direct evidence of a marker, mechanism, or therapeutic relationship) and inferred through a shared gene, with an inference score and PubMed evidence. Diseases use MeSH or OMIM identifiers. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz> .
+
+kgr:ctd.diseases_pathways a schema1:Product ;
+    rdfs:label "CTD Disease-Pathway Associations" ;
+    dcterms:description "Disease-pathway associations inferred through a shared gene, linking MeSH or OMIM diseases to KEGG and Reactome pathways. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz> .
+
+kgr:ctd.genes_pathways a schema1:Product ;
+    rdfs:label "CTD Gene-Pathway Associations" ;
+    dcterms:description "Gene-pathway associations linking NCBI Gene identifiers to KEGG and Reactome pathways. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz> .
+
+kgr:ctd.medic a schema1:OntologyProduct ;
+    rdfs:label "CTD Disease Vocabulary (MEDIC)" ;
+    dcterms:description "MEDIC, CTD's disease vocabulary, a modified subset of the MeSH Diseases branch merged with genetic disorders from OMIM, with definitions, alternative identifiers, parent terms, tree numbers, synonyms, and MEDIC-Slim category mappings. Also available as CSV, TSV, and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_diseases.obo.gz> .
+
+kgr:ctd.pathways a schema1:Product ;
+    rdfs:label "CTD Pathway Vocabulary" ;
+    dcterms:description "CTD's pathway vocabulary, a list of pathway names with their KEGG or Reactome identifiers. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_pathways.tsv.gz> .
+
 kgr:dbpedia.latest-core a schema1:GraphProduct ;
     rdfs:label "DBpedia Latest Core Collection" ;
     dcterms:description "Databus collection for the latest core DBpedia release used by the main SPARQL endpoint and linked data interface." ;
@@ -44296,6 +44442,21 @@ kgr:climatemodelskg.graph a schema1:GraphProduct ;
     rdfs:label "Climate Models KG Graph" ;
     dcterms:description "RDF/Turtle knowledge graph integrating climate model and dataset metadata (from ESGF, CMIP controlled vocabularies, and the NASA GCMD keyword taxonomy) with entities and relationships extracted from climate-science publications. Served through the FRINK federation and the SPARQL and TPF endpoints." ;
     schema1:url <https://frink.renci.org/registry/kgs/climatepub4-kg/> .
+
+kgr:ctd.anatomy a schema1:Product ;
+    rdfs:label "CTD Anatomy Vocabulary" ;
+    dcterms:description "CTD's anatomy vocabulary, a modified subset of the MeSH Anatomy branch integrated by CTD curators with Uberon and the Cell Ontology, whose terms are cross-referenced as synonyms. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_anatomy.tsv.gz> .
+
+kgr:ctd.chem_gene_ixns a schema1:Product ;
+    rdfs:label "CTD Chemical-Gene Interactions" ;
+    dcterms:description "Curated chemical-gene and chemical-protein interactions with interaction actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes use NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also available as CSV, flat XML, and a structured XML with an XSD." ;
+    schema1:url <https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz> .
+
+kgr:ctd.genes_diseases a schema1:Product ;
+    rdfs:label "CTD Gene-Disease Associations" ;
+    dcterms:description "Gene-disease associations, both curated and inferred through a shared chemical, with an inference score and PubMed evidence. This is the largest CTD file at about 3 GB compressed. Also available as CSV and XML." ;
+    schema1:url <https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz> .
 
 kgr:dailymed.spl_files a schema1:Product ;
     rdfs:label "DailyMed SPL Data Files" ;

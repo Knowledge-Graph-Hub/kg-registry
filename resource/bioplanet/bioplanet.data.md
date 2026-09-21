@@ -8,6 +8,7 @@ name: BioPlanet Pathway Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bioplanet
+product_file_size: 4696219
 product_url: https://tripod.nih.gov/bioplanet/download/pathway.csv
 layout: product_detail
 ---

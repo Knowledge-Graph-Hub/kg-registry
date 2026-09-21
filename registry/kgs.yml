@@ -7943,6 +7943,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
     description: Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki
@@ -9798,6 +9800,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -17629,6 +17633,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
 - activity_status: active
   category: KnowledgeGraph
@@ -17767,6 +17773,8 @@ resources:
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
 - activity_status: active
@@ -23875,6 +23883,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -26973,6 +26985,8 @@ resources:
     product_url: https://biothings.io/specs/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 204 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: https://biothings.ncats.io/gtrx/query
@@ -33224,6 +33238,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: ProcessProduct
     description: Python package that interrogates single-cell transcriptomics data
       against the CellPhoneDB database to statistically infer enriched ligand-receptor
@@ -38729,6 +38745,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -38772,6 +38790,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -41416,6 +41436,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -41641,6 +41663,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
   - category: GraphProduct
     description: Integrated rare-disease knowledge graph produced by the RD-Clust
@@ -46520,6 +46544,25 @@ resources:
       source: cl
     product_file_size: 2427165
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CL.tar.gz
+  - category: Product
+    compression: gzip
+    description: CTD's anatomy vocabulary, a modified subset of the MeSH Anatomy branch
+      integrated by CTD curators with Uberon and the Cell Ontology, whose terms are
+      cross-referenced as synonyms. Also available as CSV and XML.
+    format: tsv
+    id: ctd.anatomy
+    name: CTD Anatomy Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: uberon
+    - relation_type: prov:wasDerivedFrom
+      source: cl
+    product_file_size: 324963
+    product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
   publications:
   - authors:
     - Diehl AD
@@ -63386,13 +63429,351 @@ resources:
   homepage_url: https://ctdbase.org/
   id: ctd
   infores_id: ctd
-  last_modified_date: '2026-06-22T00:00:00Z'
+  last_modified_date: '2026-09-21T00:00:00Z'
   layout: resource_detail
   license:
     id: https://ctdbase.org/about/legal.jsp
     label: Custom
   name: Comparative Toxicogenomics Database
   products:
+  - category: Product
+    compression: gzip
+    description: Curated chemical-gene and chemical-protein interactions with interaction
+      actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes
+      use NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also
+      available as CSV, flat XML, and a structured XML with an XSD.
+    format: tsv
+    id: ctd.chem_gene_ixns
+    name: CTD Chemical-Gene Interactions
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    product_file_size: 43053853
+    product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
+  - category: OntologyProduct
+    description: The hierarchical controlled vocabulary of chemical-gene interaction
+      types that CTD uses when curating interactions, with a code, description, and
+      parent for each type. Also available as CSV, TSV, and XML.
+    format: obo
+    id: ctd.chem_gene_ixn_types
+    name: CTD Chemical-Gene Interaction Types
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    product_file_size: 21245
+    product_url: https://ctdbase.org/reports/CTD_chem_gene_ixn_types.obo
+  - category: Product
+    compression: gzip
+    description: Chemical-disease associations, both curated (direct evidence of a
+      marker, mechanism, or therapeutic relationship) and inferred through a shared
+      gene, with an inference score and PubMed evidence. Diseases use MeSH or OMIM
+      identifiers. Also available as CSV and XML.
+    format: tsv
+    id: ctd.chemicals_diseases
+    name: CTD Chemical-Disease Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 161914063
+    product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene Ontology terms statistically enriched among the genes and proteins
+      that interact with each chemical or its descendants, with p-values and match
+      counts. Also available as CSV and XML.
+    format: tsv
+    id: ctd.chem_go_enriched
+    name: CTD Chemical-GO Enriched Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 144377549
+    product_url: https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz
+  - category: Product
+    compression: gzip
+    description: KEGG and Reactome pathways statistically enriched among the genes
+      and proteins that interact with each chemical, with p-values and match counts.
+      Also available as CSV and XML.
+    format: tsv
+    id: ctd.chem_pathways_enriched
+    name: CTD Chemical-Pathway Enriched Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 41367827
+    product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene-disease associations, both curated and inferred through a shared
+      chemical, with an inference score and PubMed evidence. This is the largest CTD
+      file at about 3 GB compressed. Also available as CSV and XML.
+    format: tsv
+    id: ctd.genes_diseases
+    name: CTD Gene-Disease Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 3214625237
+    product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene-pathway associations linking NCBI Gene identifiers to KEGG and
+      Reactome pathways. Also available as CSV and XML.
+    format: tsv
+    id: ctd.genes_pathways
+    name: CTD Gene-Pathway Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 1091987
+    product_url: https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Disease-pathway associations inferred through a shared gene, linking
+      MeSH or OMIM diseases to KEGG and Reactome pathways. Also available as CSV and
+      XML.
+    format: tsv
+    id: ctd.diseases_pathways
+    name: CTD Disease-Pathway Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 6364748
+    product_url: https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Curated chemical-phenotype interactions, where phenotypes are Gene
+      Ontology terms, with co-mentioned terms, anatomy terms, organism, interaction
+      actions, and PubMed evidence. Also available as CSV and XML.
+    format: tsv
+    id: ctd.pheno_term_ixns
+    name: CTD Chemical-Phenotype Interactions
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 23995148
+    product_url: https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Curated exposure studies, one row per reference, with study factors,
+      exposure stressors, receptors, countries, mediums, exposure markers, diseases,
+      phenotypes, and an author summary. Also available as CSV and XML.
+    format: tsv
+    id: ctd.exposure_studies
+    name: CTD Exposure-Study Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    product_file_size: 575829
+    product_url: https://ctdbase.org/reports/CTD_exposure_studies.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Curated exposure events, one row per stressor-receptor-outcome measurement,
+      with stressor source, receptor demographics, assay methods, marker levels, location,
+      and disease or phenotype outcomes. Also available as CSV and XML.
+    format: tsv
+    id: ctd.exposure_events
+    name: CTD Exposure-Event Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    product_file_size: 4754821
+    product_url: https://ctdbase.org/reports/CTD_exposure_events.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Inferred associations between Gene Ontology biological process terms
+      and diseases, with the chemicals and genes through which each association is
+      inferred. Also available as CSV and XML.
+    format: tsv
+    id: ctd.phenotype_disease_bp
+    name: CTD Phenotype-Disease Inference Network (Biological Process)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 50288394
+    product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Inferred associations between Gene Ontology cellular component terms
+      and diseases, with the chemicals and genes through which each association is
+      inferred. Also available as CSV and XML.
+    format: tsv
+    id: ctd.phenotype_disease_cc
+    name: CTD Phenotype-Disease Inference Network (Cellular Component)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 3114332
+    product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Inferred associations between Gene Ontology molecular function terms
+      and diseases, with the chemicals and genes through which each association is
+      inferred. Also available as CSV and XML.
+    format: tsv
+    id: ctd.phenotype_disease_mf
+    name: CTD Phenotype-Disease Inference Network (Molecular Function)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 5479380
+    product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz
+  - category: Product
+    compression: gzip
+    description: CTD's hierarchical chemical vocabulary, a modified subset of the
+      MeSH Chemicals and Drugs branch, with CAS Registry Numbers, definitions, parent
+      terms, tree numbers, and synonyms. Also available as CSV and XML.
+    format: tsv
+    id: ctd.chemicals
+    name: CTD Chemical Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    product_file_size: 10644434
+    product_url: https://ctdbase.org/reports/CTD_chemicals.tsv.gz
+  - category: OntologyProduct
+    compression: gzip
+    description: MEDIC, CTD's disease vocabulary, a modified subset of the MeSH Diseases
+      branch merged with genetic disorders from OMIM, with definitions, alternative
+      identifiers, parent terms, tree numbers, synonyms, and MEDIC-Slim category mappings.
+      Also available as CSV, TSV, and XML.
+    format: obo
+    id: ctd.medic
+    name: CTD Disease Vocabulary (MEDIC)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 1512711
+    product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
+  - category: Product
+    compression: gzip
+    description: CTD's anatomy vocabulary, a modified subset of the MeSH Anatomy branch
+      integrated by CTD curators with Uberon and the Cell Ontology, whose terms are
+      cross-referenced as synonyms. Also available as CSV and XML.
+    format: tsv
+    id: ctd.anatomy
+    name: CTD Anatomy Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: uberon
+    - relation_type: prov:wasDerivedFrom
+      source: cl
+    product_file_size: 324963
+    product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
+  - category: Product
+    compression: gzip
+    description: CTD's gene vocabulary, keyed by NCBI Gene identifier, with symbols,
+      names, synonyms, and cross-references to BioGRID, PharmGKB, and UniProt. Also
+      available as CSV and XML.
+    format: tsv
+    id: ctd.genes
+    name: CTD Gene Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    product_file_size: 122926600
+    product_url: https://ctdbase.org/reports/CTD_genes.tsv.gz
+  - category: Product
+    compression: gzip
+    description: CTD's pathway vocabulary, a list of pathway names with their KEGG
+      or Reactome identifiers. Also available as CSV and XML.
+    format: tsv
+    id: ctd.pathways
+    name: CTD Pathway Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 42574
+    product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
+  - category: OntologyProduct
+    description: The draft Exposure Ontology (ExO) as distributed by CTD, which provides
+      exposure context for CTD's exposure data.
+    format: obo
+    id: ctd.exposure_ontology
+    name: CTD Exposure Ontology (ExO)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: exo
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    product_file_size: 61218
+    product_url: https://ctdbase.org/reports/CTD_exposure_ontology.obo
+  - category: GraphicalInterface
+    description: Web tool for retrieving customized CTD data sets by submitting a
+      list of chemicals, diseases, genes, pathways, GO terms, or references. Results
+      can be returned as CSV, TSV, XML, or JSON, and the query can also be driven
+      by URL for programmatic access.
+    format: http
+    id: ctd.batch_query
+    name: CTD Batch Query
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    product_url: https://ctdbase.org/tools/batchQuery.go
+  - category: GraphicalInterface
+    description: Web query for CTD Tetramers, computationally inferred chemical-gene-phenotype-disease
+      four-way relationships built from curated CTD content.
+    format: http
+    id: ctd.tetramers
+    name: CTD Tetramers
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    product_url: https://ctdbase.org/query.go?type=tetramer
   - category: GraphProduct
     description: CTD Automat
     format: kgx-jsonl
@@ -69781,6 +70162,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 500 error
+      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -79486,6 +79869,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -94594,6 +94981,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -94637,6 +95026,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -95622,6 +96013,8 @@ resources:
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -111727,6 +112120,19 @@ resources:
       source: exo
     product_file_size: 11882
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/EXO.tar.gz
+  - category: OntologyProduct
+    description: The draft Exposure Ontology (ExO) as distributed by CTD, which provides
+      exposure context for CTD's exposure data.
+    format: obo
+    id: ctd.exposure_ontology
+    name: CTD Exposure Ontology (ExO)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: exo
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    product_file_size: 61218
+    product_url: https://ctdbase.org/reports/CTD_exposure_ontology.obo
   publications:
   - authors:
     - Mattingly CJ
@@ -115571,6 +115977,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: FDA Orange Book preface describing publication structure, therapeutic
       equivalence codes, and interpretation of Orange Book listings.
@@ -115583,6 +115991,8 @@ resources:
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   - category: Product
     description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
@@ -133103,6 +133513,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
+      when accessing file'
   publications:
   - authors:
     - Mingxun Wang
@@ -139716,6 +140128,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -139759,6 +140173,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -140192,6 +140608,81 @@ resources:
       source: go
     product_file_size: 3797859
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GO.tar.gz
+  - category: Product
+    compression: gzip
+    description: Gene Ontology terms statistically enriched among the genes and proteins
+      that interact with each chemical or its descendants, with p-values and match
+      counts. Also available as CSV and XML.
+    format: tsv
+    id: ctd.chem_go_enriched
+    name: CTD Chemical-GO Enriched Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 144377549
+    product_url: https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Curated chemical-phenotype interactions, where phenotypes are Gene
+      Ontology terms, with co-mentioned terms, anatomy terms, organism, interaction
+      actions, and PubMed evidence. Also available as CSV and XML.
+    format: tsv
+    id: ctd.pheno_term_ixns
+    name: CTD Chemical-Phenotype Interactions
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 23995148
+    product_url: https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Inferred associations between Gene Ontology biological process terms
+      and diseases, with the chemicals and genes through which each association is
+      inferred. Also available as CSV and XML.
+    format: tsv
+    id: ctd.phenotype_disease_bp
+    name: CTD Phenotype-Disease Inference Network (Biological Process)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 50288394
+    product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Inferred associations between Gene Ontology cellular component terms
+      and diseases, with the chemicals and genes through which each association is
+      inferred. Also available as CSV and XML.
+    format: tsv
+    id: ctd.phenotype_disease_cc
+    name: CTD Phenotype-Disease Inference Network (Cellular Component)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 3114332
+    product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Inferred associations between Gene Ontology molecular function terms
+      and diseases, with the chemicals and genes through which each association is
+      inferred. Also available as CSV and XML.
+    format: tsv
+    id: ctd.phenotype_disease_mf
+    name: CTD Phenotype-Disease Inference Network (Molecular Function)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    product_file_size: 5479380
+    product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz
   publications:
   - authors:
     - Ashburner M
@@ -145876,6 +146367,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+      when accessing file'
   publications:
   - authors:
     - Mallory J. Owen
@@ -145955,6 +146448,11 @@ resources:
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
       Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: Product
     description: Gut microbe associations with disorders and interventions derived
       from re-annotated raw sequencing data in gutMDisorder v2.0, as an Excel workbook
@@ -145967,6 +146465,11 @@ resources:
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
@@ -163687,6 +164190,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -163730,6 +164235,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -165785,6 +166292,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -174904,9 +175413,9 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-03: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
@@ -179527,6 +180036,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -180719,6 +181232,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Noemi del Toro
@@ -188373,6 +188888,72 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: mbodymap
     product_url: https://www.graphomics.com/docs
+  - category: Product
+    compression: gzip
+    description: KEGG and Reactome pathways statistically enriched among the genes
+      and proteins that interact with each chemical, with p-values and match counts.
+      Also available as CSV and XML.
+    format: tsv
+    id: ctd.chem_pathways_enriched
+    name: CTD Chemical-Pathway Enriched Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 41367827
+    product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene-pathway associations linking NCBI Gene identifiers to KEGG and
+      Reactome pathways. Also available as CSV and XML.
+    format: tsv
+    id: ctd.genes_pathways
+    name: CTD Gene-Pathway Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 1091987
+    product_url: https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Disease-pathway associations inferred through a shared gene, linking
+      MeSH or OMIM diseases to KEGG and Reactome pathways. Also available as CSV and
+      XML.
+    format: tsv
+    id: ctd.diseases_pathways
+    name: CTD Disease-Pathway Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 6364748
+    product_url: https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz
+  - category: Product
+    compression: gzip
+    description: CTD's pathway vocabulary, a list of pathway names with their KEGG
+      or Reactome identifiers. Also available as CSV and XML.
+    format: tsv
+    id: ctd.pathways
+    name: CTD Pathway Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 42574
+    product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
   publications:
   - authors:
     - Minoru Kanehisa
@@ -188714,6 +189295,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
   category: KnowledgeGraph
@@ -188944,6 +189527,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
   - category: ProcessProduct
     description: Full ENPKG workflow repository for generating experimental natural
@@ -189206,6 +189791,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -189652,7 +190239,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-09-16T21:57:35Z'
+  last_modified_date: '2026-09-21T15:56:29Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -197767,6 +198354,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -207741,6 +208330,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -207935,6 +208526,115 @@ resources:
       source: wikidata
     - relation_type: prov:wasInfluencedBy
       source: wikipathways
+  - category: Product
+    compression: gzip
+    description: Curated chemical-gene and chemical-protein interactions with interaction
+      actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes
+      use NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also
+      available as CSV, flat XML, and a structured XML with an XSD.
+    format: tsv
+    id: ctd.chem_gene_ixns
+    name: CTD Chemical-Gene Interactions
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    product_file_size: 43053853
+    product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Chemical-disease associations, both curated (direct evidence of a
+      marker, mechanism, or therapeutic relationship) and inferred through a shared
+      gene, with an inference score and PubMed evidence. Diseases use MeSH or OMIM
+      identifiers. Also available as CSV and XML.
+    format: tsv
+    id: ctd.chemicals_diseases
+    name: CTD Chemical-Disease Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 161914063
+    product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene-disease associations, both curated and inferred through a shared
+      chemical, with an inference score and PubMed evidence. This is the largest CTD
+      file at about 3 GB compressed. Also available as CSV and XML.
+    format: tsv
+    id: ctd.genes_diseases
+    name: CTD Gene-Disease Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 3214625237
+    product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
+  - category: Product
+    compression: gzip
+    description: CTD's hierarchical chemical vocabulary, a modified subset of the
+      MeSH Chemicals and Drugs branch, with CAS Registry Numbers, definitions, parent
+      terms, tree numbers, and synonyms. Also available as CSV and XML.
+    format: tsv
+    id: ctd.chemicals
+    name: CTD Chemical Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    product_file_size: 10644434
+    product_url: https://ctdbase.org/reports/CTD_chemicals.tsv.gz
+  - category: OntologyProduct
+    compression: gzip
+    description: MEDIC, CTD's disease vocabulary, a modified subset of the MeSH Diseases
+      branch merged with genetic disorders from OMIM, with definitions, alternative
+      identifiers, parent terms, tree numbers, synonyms, and MEDIC-Slim category mappings.
+      Also available as CSV, TSV, and XML.
+    format: obo
+    id: ctd.medic
+    name: CTD Disease Vocabulary (MEDIC)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 1512711
+    product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
+  - category: Product
+    compression: gzip
+    description: CTD's anatomy vocabulary, a modified subset of the MeSH Anatomy branch
+      integrated by CTD curators with Uberon and the Cell Ontology, whose terms are
+      cross-referenced as synonyms. Also available as CSV and XML.
+    format: tsv
+    id: ctd.anatomy
+    name: CTD Anatomy Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: uberon
+    - relation_type: prov:wasDerivedFrom
+      source: cl
+    product_file_size: 324963
+    product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
   publications:
   - authors:
     - Lipscomb CE
@@ -213268,6 +213968,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -216444,6 +217148,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -216485,6 +217192,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -216526,6 +217236,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -216567,6 +217280,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -216608,6 +217324,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -221502,6 +222221,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+      when accessing file'
   - category: ProcessProduct
     description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
       and contraindications data and processing code
@@ -222261,6 +222982,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -222304,6 +223027,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -231903,6 +232628,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -232579,6 +233306,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -233083,6 +233812,60 @@ resources:
       source: uniprot
     product_url: https://github.com/marvinm2/AOPWikiRDF/tree/master/data
     repository: https://github.com/marvinm2/AOPWikiRDF
+  - category: Product
+    compression: gzip
+    description: Curated chemical-gene and chemical-protein interactions with interaction
+      actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes
+      use NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also
+      available as CSV, flat XML, and a structured XML with an XSD.
+    format: tsv
+    id: ctd.chem_gene_ixns
+    name: CTD Chemical-Gene Interactions
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    product_file_size: 43053853
+    product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene-disease associations, both curated and inferred through a shared
+      chemical, with an inference score and PubMed evidence. This is the largest CTD
+      file at about 3 GB compressed. Also available as CSV and XML.
+    format: tsv
+    id: ctd.genes_diseases
+    name: CTD Gene-Disease Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 3214625237
+    product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
+  - category: Product
+    compression: gzip
+    description: CTD's gene vocabulary, keyed by NCBI Gene identifier, with symbols,
+      names, synonyms, and cross-references to BioGRID, PharmGKB, and UniProt. Also
+      available as CSV and XML.
+    format: tsv
+    id: ctd.genes
+    name: CTD Gene Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    product_file_size: 122926600
+    product_url: https://ctdbase.org/reports/CTD_genes.tsv.gz
   publications:
   - authors:
     - Donna Maglott
@@ -235036,6 +235819,26 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: mbodymap
     product_url: https://www.graphomics.com/docs
+  - category: Product
+    compression: gzip
+    description: Curated chemical-gene and chemical-protein interactions with interaction
+      actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes
+      use NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also
+      available as CSV, flat XML, and a structured XML with an XSD.
+    format: tsv
+    id: ctd.chem_gene_ixns
+    name: CTD Chemical-Gene Interactions
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    product_file_size: 43053853
+    product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
   publications:
   - authors:
     - Schoch CL
@@ -238470,6 +239273,9 @@ resources:
     product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - category: GraphProduct
@@ -247070,6 +247876,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -251082,6 +251890,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -251543,6 +252353,61 @@ resources:
       source: wikidata
     - relation_type: prov:wasInfluencedBy
       source: wikipathways
+  - category: Product
+    compression: gzip
+    description: Chemical-disease associations, both curated (direct evidence of a
+      marker, mechanism, or therapeutic relationship) and inferred through a shared
+      gene, with an inference score and PubMed evidence. Diseases use MeSH or OMIM
+      identifiers. Also available as CSV and XML.
+    format: tsv
+    id: ctd.chemicals_diseases
+    name: CTD Chemical-Disease Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 161914063
+    product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene-disease associations, both curated and inferred through a shared
+      chemical, with an inference score and PubMed evidence. This is the largest CTD
+      file at about 3 GB compressed. Also available as CSV and XML.
+    format: tsv
+    id: ctd.genes_diseases
+    name: CTD Gene-Disease Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 3214625237
+    product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
+  - category: OntologyProduct
+    compression: gzip
+    description: MEDIC, CTD's disease vocabulary, a modified subset of the MeSH Diseases
+      branch merged with genetic disorders from OMIM, with definitions, alternative
+      identifiers, parent terms, tree numbers, synonyms, and MEDIC-Slim category mappings.
+      Also available as CSV, TSV, and XML.
+    format: obo
+    id: ctd.medic
+    name: CTD Disease Vocabulary (MEDIC)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: omim
+    product_file_size: 1512711
+    product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
   publications:
   - authors:
     - Joanna S Amberger
@@ -253459,6 +254324,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -257402,6 +258269,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -271030,6 +271899,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -289371,6 +290242,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: MarkerDB API documentation and endpoint examples for condition, chemical,
       genetic, protein, and karyotype biomarker records.
@@ -291555,6 +292428,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 500 error
+      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -295045,6 +295920,8 @@ resources:
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
       to URL'
   - category: GraphProduct
     compression: tar
@@ -301649,6 +302526,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -302254,6 +303133,72 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: mbodymap
     product_url: https://www.graphomics.com/docs
+  - category: Product
+    compression: gzip
+    description: KEGG and Reactome pathways statistically enriched among the genes
+      and proteins that interact with each chemical, with p-values and match counts.
+      Also available as CSV and XML.
+    format: tsv
+    id: ctd.chem_pathways_enriched
+    name: CTD Chemical-Pathway Enriched Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 41367827
+    product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Gene-pathway associations linking NCBI Gene identifiers to KEGG and
+      Reactome pathways. Also available as CSV and XML.
+    format: tsv
+    id: ctd.genes_pathways
+    name: CTD Gene-Pathway Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 1091987
+    product_url: https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Disease-pathway associations inferred through a shared gene, linking
+      MeSH or OMIM diseases to KEGG and Reactome pathways. Also available as CSV and
+      XML.
+    format: tsv
+    id: ctd.diseases_pathways
+    name: CTD Disease-Pathway Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 6364748
+    product_url: https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz
+  - category: Product
+    compression: gzip
+    description: CTD's pathway vocabulary, a list of pathway names with their KEGG
+      or Reactome identifiers. Also available as CSV and XML.
+    format: tsv
+    id: ctd.pathways
+    name: CTD Pathway Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: kegg
+    - relation_type: prov:wasDerivedFrom
+      source: reactome
+    product_file_size: 42574
+    product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
   publications:
   - authors:
     - Marc Gillespie
@@ -331710,6 +332655,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
       30+ environmental and geospatial data layers accessible through SPARQL endpoint
@@ -336344,6 +337291,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -336387,6 +337336,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -341503,6 +342454,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
+      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -342583,6 +343536,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -349236,6 +350191,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -353318,6 +354275,25 @@ resources:
       source: uberon
     product_file_size: 3604979
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/UBERON.tar.gz
+  - category: Product
+    compression: gzip
+    description: CTD's anatomy vocabulary, a modified subset of the MeSH Anatomy branch
+      integrated by CTD curators with Uberon and the Cell Ontology, whose terms are
+      cross-referenced as synonyms. Also available as CSV and XML.
+    format: tsv
+    id: ctd.anatomy
+    name: CTD Anatomy Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    - relation_type: prov:wasDerivedFrom
+      source: uberon
+    - relation_type: prov:wasDerivedFrom
+      source: cl
+    product_file_size: 324963
+    product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
   publications:
   - authors:
     - Mungall CJ
@@ -361926,6 +362902,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 500 error
+      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -362946,6 +363924,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -368325,6 +369305,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -379336,6 +380318,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -379474,6 +380458,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -381193,6 +382179,8 @@ resources:
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -381367,6 +382355,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications: []
   use_instead:
   - go
@@ -382052,6 +383042,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -382524,6 +383516,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Wang LL
@@ -382767,6 +383761,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications: []
   taxon:
   - all
@@ -383482,6 +384478,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Plant Environment Ontology in OBO format
     format: obo
@@ -383493,6 +384491,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -383545,6 +384545,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -383711,6 +384713,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -383725,6 +384729,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -385139,6 +386145,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/intact/ws
     description: IntAct web service and URL-based programmatic interface for retrieving
@@ -385327,6 +386337,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
     format: http
@@ -385343,6 +386355,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
     format: http
@@ -385359,6 +386373,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
+      when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
       and binding motifs
@@ -387165,6 +388181,11 @@ resources:
     product_url: http://www.inoh.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: Error connecting
+      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
+      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
+      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
+      name resolution)"))'
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
       port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
@@ -389731,6 +390752,11 @@ resources:
       exceeded with url_ / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
       object at 0x7fd68a510490>_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno
       -2] Name or service not known)"))
+    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+      to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'', port=80): Max retries
+      exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''mirgate.bioinfo.cnio.es'',
+      port=80): Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno -2] Name or
+      service not known)"))'
   - category: ProgrammingInterface
     description: REST API for programmatic access to miRNA-mRNA target prediction
       data
@@ -389796,6 +390822,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/mirnao.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -389912,6 +390940,8 @@ resources:
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -390102,6 +391132,8 @@ resources:
     product_url: http://www.netpath.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -390612,6 +391644,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -390706,6 +391740,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -390829,6 +391865,8 @@ resources:
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -394130,6 +395168,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -396605,6 +397645,8 @@ resources:
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
@@ -400451,6 +401493,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

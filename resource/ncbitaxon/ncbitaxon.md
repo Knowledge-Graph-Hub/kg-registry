@@ -1957,6 +1957,7 @@ products:
     source: ncbigene
   - relation_type: prov:wasDerivedFrom
     source: ncbitaxon
+  product_file_size: 43053853
   product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
 publications:
 - authors:

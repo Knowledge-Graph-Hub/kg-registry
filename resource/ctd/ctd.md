@@ -22,8 +22,8 @@ products:
 - category: Product
   compression: gzip
   description: Curated chemical-gene and chemical-protein interactions with interaction
-    actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes use
-    NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also available
+    actions, organism, and PubMed evidence. Chemicals use MeSH identifiers, genes
+    use NCBI Gene identifiers, and organisms use NCBI Taxonomy identifiers. Also available
     as CSV, flat XML, and a structured XML with an XSD.
   format: tsv
   id: ctd.chem_gene_ixns
@@ -37,6 +37,7 @@ products:
     source: ncbigene
   - relation_type: prov:wasDerivedFrom
     source: ncbitaxon
+  product_file_size: 43053853
   product_url: https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz
 - category: OntologyProduct
   description: The hierarchical controlled vocabulary of chemical-gene interaction
@@ -48,6 +49,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ctd
+  product_file_size: 21245
   product_url: https://ctdbase.org/reports/CTD_chem_gene_ixn_types.obo
 - category: Product
   compression: gzip
@@ -65,12 +67,13 @@ products:
     source: mesh
   - relation_type: prov:wasDerivedFrom
     source: omim
+  product_file_size: 161914063
   product_url: https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz
 - category: Product
   compression: gzip
   description: Gene Ontology terms statistically enriched among the genes and proteins
-    that interact with each chemical or its descendants, with p-values and match
-    counts. Also available as CSV and XML.
+    that interact with each chemical or its descendants, with p-values and match counts.
+    Also available as CSV and XML.
   format: tsv
   id: ctd.chem_go_enriched
   name: CTD Chemical-GO Enriched Associations
@@ -79,6 +82,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 144377549
   product_url: https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz
 - category: Product
   compression: gzip
@@ -95,6 +99,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 41367827
   product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
 - category: Product
   compression: gzip
@@ -113,6 +118,7 @@ products:
     source: mesh
   - relation_type: prov:wasDerivedFrom
     source: omim
+  product_file_size: 3214625237
   product_url: https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz
 - category: Product
   compression: gzip
@@ -128,6 +134,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 1091987
   product_url: https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz
 - category: Product
   compression: gzip
@@ -144,6 +151,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 6364748
   product_url: https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz
 - category: Product
   compression: gzip
@@ -158,6 +166,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 23995148
   product_url: https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz
 - category: Product
   compression: gzip
@@ -170,6 +179,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ctd
+  product_file_size: 575829
   product_url: https://ctdbase.org/reports/CTD_exposure_studies.tsv.gz
 - category: Product
   compression: gzip
@@ -182,12 +192,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ctd
+  product_file_size: 4754821
   product_url: https://ctdbase.org/reports/CTD_exposure_events.tsv.gz
 - category: Product
   compression: gzip
   description: Inferred associations between Gene Ontology biological process terms
-    and diseases, with the chemicals and genes through which each association is
-    inferred. Also available as CSV and XML.
+    and diseases, with the chemicals and genes through which each association is inferred.
+    Also available as CSV and XML.
   format: tsv
   id: ctd.phenotype_disease_bp
   name: CTD Phenotype-Disease Inference Network (Biological Process)
@@ -196,12 +207,13 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 50288394
   product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz
 - category: Product
   compression: gzip
   description: Inferred associations between Gene Ontology cellular component terms
-    and diseases, with the chemicals and genes through which each association is
-    inferred. Also available as CSV and XML.
+    and diseases, with the chemicals and genes through which each association is inferred.
+    Also available as CSV and XML.
   format: tsv
   id: ctd.phenotype_disease_cc
   name: CTD Phenotype-Disease Inference Network (Cellular Component)
@@ -210,12 +222,13 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 3114332
   product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz
 - category: Product
   compression: gzip
   description: Inferred associations between Gene Ontology molecular function terms
-    and diseases, with the chemicals and genes through which each association is
-    inferred. Also available as CSV and XML.
+    and diseases, with the chemicals and genes through which each association is inferred.
+    Also available as CSV and XML.
   format: tsv
   id: ctd.phenotype_disease_mf
   name: CTD Phenotype-Disease Inference Network (Molecular Function)
@@ -224,6 +237,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 5479380
   product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz
 - category: Product
   compression: gzip
@@ -238,6 +252,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: mesh
+  product_file_size: 10644434
   product_url: https://ctdbase.org/reports/CTD_chemicals.tsv.gz
 - category: OntologyProduct
   compression: gzip
@@ -255,6 +270,7 @@ products:
     source: mesh
   - relation_type: prov:wasDerivedFrom
     source: omim
+  product_file_size: 1512711
   product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
 - category: Product
   compression: gzip
@@ -273,6 +289,7 @@ products:
     source: uberon
   - relation_type: prov:wasDerivedFrom
     source: cl
+  product_file_size: 324963
   product_url: https://ctdbase.org/reports/CTD_anatomy.tsv.gz
 - category: Product
   compression: gzip
@@ -287,6 +304,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: ncbigene
+  product_file_size: 122926600
   product_url: https://ctdbase.org/reports/CTD_genes.tsv.gz
 - category: Product
   compression: gzip
@@ -302,6 +320,7 @@ products:
     source: kegg
   - relation_type: prov:wasDerivedFrom
     source: reactome
+  product_file_size: 42574
   product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
 - category: OntologyProduct
   description: The draft Exposure Ontology (ExO) as distributed by CTD, which provides
@@ -314,6 +333,7 @@ products:
     source: exo
   - relation_type: prov:hadPrimarySource
     source: ctd
+  product_file_size: 61218
   product_url: https://ctdbase.org/reports/CTD_exposure_ontology.obo
 - category: GraphicalInterface
   description: Web tool for retrieving customized CTD data sets by submitting a list

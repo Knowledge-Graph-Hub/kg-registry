@@ -3902,8 +3902,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -6585,12 +6585,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-09-16: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -6634,6 +6636,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV
     file
@@ -7080,6 +7084,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 144377549
   product_url: https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz
 - category: Product
   compression: gzip
@@ -7094,6 +7099,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 23995148
   product_url: https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz
 - category: Product
   compression: gzip
@@ -7108,6 +7114,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 50288394
   product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz
 - category: Product
   compression: gzip
@@ -7122,6 +7129,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 3114332
   product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz
 - category: Product
   compression: gzip
@@ -7136,6 +7144,7 @@ products:
     source: ctd
   - relation_type: prov:wasDerivedFrom
     source: go
+  product_file_size: 5479380
   product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz
 publications:
 - authors:

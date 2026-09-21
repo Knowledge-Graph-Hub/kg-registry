@@ -73,6 +73,7 @@ products:
     source: exo
   - relation_type: prov:hadPrimarySource
     source: ctd
+  product_file_size: 61218
   product_url: https://ctdbase.org/reports/CTD_exposure_ontology.obo
 publications:
 - authors:
