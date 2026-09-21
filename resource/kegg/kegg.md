@@ -3296,6 +3296,68 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: mbodymap
   product_url: https://www.graphomics.com/docs
+- category: Product
+  compression: gzip
+  description: KEGG and Reactome pathways statistically enriched among the genes and
+    proteins that interact with each chemical, with p-values and match counts. Also
+    available as CSV and XML.
+  format: tsv
+  id: ctd.chem_pathways_enriched
+  name: CTD Chemical-Pathway Enriched Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz
+- category: Product
+  compression: gzip
+  description: Gene-pathway associations linking NCBI Gene identifiers to KEGG and
+    Reactome pathways. Also available as CSV and XML.
+  format: tsv
+  id: ctd.genes_pathways
+  name: CTD Gene-Pathway Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz
+- category: Product
+  compression: gzip
+  description: Disease-pathway associations inferred through a shared gene, linking
+    MeSH or OMIM diseases to KEGG and Reactome pathways. Also available as CSV and
+    XML.
+  format: tsv
+  id: ctd.diseases_pathways
+  name: CTD Disease-Pathway Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz
+- category: Product
+  compression: gzip
+  description: CTD's pathway vocabulary, a list of pathway names with their KEGG or
+    Reactome identifiers. Also available as CSV and XML.
+  format: tsv
+  id: ctd.pathways
+  name: CTD Pathway Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
 publications:
 - authors:
   - Minoru Kanehisa
