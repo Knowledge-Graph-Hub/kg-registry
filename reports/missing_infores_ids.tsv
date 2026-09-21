@@ -526,6 +526,7 @@ omnipath	OmniPath	Aggregator	https://omnipathdb.org/	resource/omnipath/omnipath.
 omo	OBO Metadata Ontology	Ontology	https://github.com/information-artifact-ontology/ontology-metadata	resource/omo/omo.md
 omp	Ontology of Microbial Phenotypes	Ontology	http://microbialphenotypes.org	resource/omp/omp.md
 omrse	Ontology for Modeling and Representation of Social Entities	Ontology	https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview	resource/omrse/omrse.md
+onco	OnCo	KnowledgeGraph	https://onco.cc/	resource/onco/onco.md
 one	Ontology for Nutritional Epidemiology	Ontology	https://github.com/cyang0128/Nutritional-epidemiologic-ontologies	resource/one/one.md
 ons	Ontology for Nutritional Studies	Ontology	https://github.com/enpadasi/Ontology-for-Nutritional-Studies	resource/ons/ons.md
 ontoavida	OntoAvida: ontology for Avida digital evolution platform	Ontology	https://gitlab.com/fortunalab/ontoavida	resource/ontoavida/ontoavida.md

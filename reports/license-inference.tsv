@@ -157,6 +157,7 @@ ohdsi	Aggregator	inferred			https://loinc.org/license/	custom	athena
 okn-void	KnowledgeGraph	no-upstream						
 ols	Aggregator	no-upstream						
 omnipath	Aggregator	no-upstream						
+onco	KnowledgeGraph	declared	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://creativecommons.org/publicdomain/zero/1.0/	public domain	clinicaltrialsgov|openalex|pubchem|wikidata	pdb
 ontology-kp	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	ubergraph	
 openbiodiv	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/3.0/	permissive	doco|gbif|proton|skos	fabio
 openpredict	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	https://www.kegg.jp/feedback/copyright.html	custom	kegg	

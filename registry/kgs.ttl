@@ -3437,6 +3437,7 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
         kgr:obo-db-ingest.clinicaltrialsgov.owl,
         kgr:obo-db-ingest.clinicaltrialsgov.sssom.tsv,
         kgr:obo-db-ingest.clinicaltrialsgov.tsv,
+        kgr:onco.all_json,
         kgr:repodb.full_dataset,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
@@ -12034,7 +12035,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-21T18:52:43+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-09-21T19:23:24+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -16620,6 +16621,30 @@ kgr:omrse a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview> .
 
+kgr:onco a schema1:KnowledgeGraph ;
+    rdfs:label "OnCo" ;
+    dcterms:created "2026-09-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "OnCo is a public, cited knowledge graph of oncology. It holds one record per cancer, front, technology, target, treatment or test, company, institution, person, pathway, trial, key paper, journal, pairing, roadmap, bottleneck and idea, with links in every direction and a plain-English summary before the technical layer. Every record carries a date of last check and links to a primary source. The corpus is built from TypeScript records in a public repository and refreshed from PubChem, RCSB PDB, Wikidata, OpenAlex, GLOBOCAN, ClinicalTrials.gov, Europe PMC and openFDA. The same corpus ships as a website, a static JSON API with NDJSON, RDF N-Triples and JSON Schema downloads, per-record Markdown context files, a command-line tool and a Model Context Protocol server. The code is MIT and the data are CC BY-NC 4.0." ;
+    dcterms:identifier "onco" ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    dcterms:modified "2026-09-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:onco.all_json,
+        kgr:onco.all_ndjson,
+        kgr:onco.api,
+        kgr:onco.mcp,
+        kgr:onco.ntriples,
+        kgr:onco.schema,
+        kgr:onco.site ;
+    schema1:name "OnCo" ;
+    doap:repository <https://github.com/judegomila/OnCo> ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "drug discovery",
+        "precision medicine" ;
+    adms:status "Active" ;
+    foaf:homepage <https://onco.cc/> .
+
 kgr:oncokb a schema1:DataSource ;
     rdfs:label "OncoKB" ;
     dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
@@ -16782,7 +16807,8 @@ kgr:openalex a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.48550/arXiv.2205.01833> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:openalex.api,
+    schema1:hasPart kgr:onco.all_json,
+        kgr:openalex.api,
         kgr:openalex.snapshot,
         kgr:semopenalex.graph ;
     schema1:name "OpenAlex" ;
@@ -17655,6 +17681,7 @@ kgr:pdb a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:genecards.web.interface,
         kgr:nde.graph,
+        kgr:onco.all_json,
         kgr:pdb.archive,
         kgr:pdb.data-api,
         kgr:pdb.portal,
@@ -19504,6 +19531,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
         kgr:ncatsgardkg.graph,
+        kgr:onco.all_json,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
         kgr:pharmebinet.neo4j,
@@ -24301,6 +24329,7 @@ kgr:wikidata a schema1:KnowledgeGraph ;
         kgr:identifier-mappings.tpf,
         kgr:kg-enp.graph,
         kgr:knowwheregraph.graph,
+        kgr:onco.all_json,
         kgr:orkg.dump,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
@@ -35966,6 +35995,36 @@ kgr:omrse.owl a schema1:OntologyProduct ;
     dcterms:description "Ontology for Modeling and Representation of Social Entities in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/omrse.owl> .
 
+kgr:onco.all_ndjson a schema1:GraphProduct ;
+    rdfs:label "OnCo full corpus (NDJSON)" ;
+    dcterms:description "Every OnCo record as newline-delimited JSON, one record per line." ;
+    schema1:url <https://onco.cc/api/v1/all.ndjson> .
+
+kgr:onco.api a schema1:ProgrammingInterface ;
+    rdfs:label "OnCo static API" ;
+    dcterms:description "Static JSON API served with CORS. Provides per-kind JSON and CSV files, one JSON file per record with its neighbours, a search index, per-record Markdown context files, Atom feeds and an OpenAPI 3.1 description." ;
+    schema1:url <https://onco.cc/api/> .
+
+kgr:onco.mcp a schema1:ProgrammingInterface ;
+    rdfs:label "OnCo MCP server and CLI" ;
+    dcterms:description "Model Context Protocol server (npm package onco-mcp) exposing search, entity lookup, listing by kind, question answering, context retrieval and comparison over the OnCo corpus to AI assistants. A command-line tool (npm package onco) offers the same operations from the shell." ;
+    schema1:url <https://github.com/judegomila/OnCo/tree/main/packages> .
+
+kgr:onco.ntriples a schema1:GraphProduct ;
+    rdfs:label "OnCo RDF triples" ;
+    dcterms:description "The OnCo corpus as RDF N-Triples. Records are typed with schema.org classes and linked through the onco.cc namespace." ;
+    schema1:url <https://onco.cc/api/v1/onco.nt> .
+
+kgr:onco.schema a schema1:DataModelProduct ;
+    rdfs:label "OnCo entity JSON Schema" ;
+    dcterms:description "JSON Schema for OnCo entity records, covering every kind in the corpus and its relationship fields." ;
+    schema1:url <https://onco.cc/api/v1/schema.json> .
+
+kgr:onco.site a schema1:GraphicalInterface ;
+    rdfs:label "OnCo website" ;
+    dcterms:description "The OnCo website. One page per record with filterable tables, tooltips on technical terms, molecule and target renderings, a graph explorer, a body map, a timeline and question answering." ;
+    schema1:url <https://onco.cc/> .
+
 kgr:oncokb.annotator a schema1:ProcessProduct ;
     rdfs:label "OncoKB Annotator" ;
     dcterms:description "Python-based annotation tool for annotating MAF files, copy number alterations, fusions, and structural variants with OncoKB therapeutic and biological annotations" ;
@@ -45021,6 +45080,11 @@ kgr:obo-db-ingest.bigg.metabolite.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "bigg.metabolite SSSOM" ;
     dcterms:description "bigg.metabolite SSSOM" ;
     schema1:url <https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv> .
+
+kgr:onco.all_json a schema1:GraphProduct ;
+    rdfs:label "OnCo full corpus (JSON)" ;
+    dcterms:description "Every OnCo record in one JSON file, each with its plain-English summary, technical summary, dated facts, relationship fields and source links." ;
+    schema1:url <https://onco.cc/api/v1/all.json> .
 
 kgr:pankgraph.graph a schema1:GraphProduct ;
     rdfs:label "PanKgraph Knowledge Graph" ;

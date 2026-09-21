@@ -50094,6 +50094,27 @@ resources:
       source: ttd
     - relation_type: prov:wasInfluencedBy
       source: pubmed
+  - category: GraphProduct
+    description: Every OnCo record in one JSON file, each with its plain-English summary,
+      technical summary, dated facts, relationship fields and source links.
+    format: json
+    id: onco.all_json
+    name: OnCo full corpus (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: openalex
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_file_size: 31490277
+    product_url: https://onco.cc/api/v1/all.json
   publications:
   - authors:
     - Zarin DA
@@ -175349,8 +175370,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-09-16: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
       to URL'
   - category: DocumentationProduct
@@ -190163,7 +190182,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-09-21T18:52:43Z'
+  last_modified_date: '2026-09-21T19:23:24Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -253268,6 +253287,133 @@ resources:
   taxon:
   - NCBITaxon:9606
 - activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: github
+      value: judegomila
+    - contact_type: url
+      value: https://judegomila.com
+    label: Jude Gomila
+  creation_date: '2026-09-21T00:00:00Z'
+  description: OnCo is a public, cited knowledge graph of oncology. It holds one record
+    per cancer, front, technology, target, treatment or test, company, institution,
+    person, pathway, trial, key paper, journal, pairing, roadmap, bottleneck and idea,
+    with links in every direction and a plain-English summary before the technical
+    layer. Every record carries a date of last check and links to a primary source.
+    The corpus is built from TypeScript records in a public repository and refreshed
+    from PubChem, RCSB PDB, Wikidata, OpenAlex, GLOBOCAN, ClinicalTrials.gov, Europe
+    PMC and openFDA. The same corpus ships as a website, a static JSON API with NDJSON,
+    RDF N-Triples and JSON Schema downloads, per-record Markdown context files, a
+    command-line tool and a Model Context Protocol server. The code is MIT and the
+    data are CC BY-NC 4.0.
+  domains:
+  - biomedical
+  - clinical
+  - drug discovery
+  - precision medicine
+  homepage_url: https://onco.cc/
+  id: onco
+  last_modified_date: '2026-09-21T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC-4.0
+  name: OnCo
+  products:
+  - category: GraphProduct
+    description: Every OnCo record in one JSON file, each with its plain-English summary,
+      technical summary, dated facts, relationship fields and source links.
+    format: json
+    id: onco.all_json
+    name: OnCo full corpus (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: openalex
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_file_size: 31490277
+    product_url: https://onco.cc/api/v1/all.json
+  - category: GraphProduct
+    description: Every OnCo record as newline-delimited JSON, one record per line.
+    format: json
+    id: onco.all_ndjson
+    name: OnCo full corpus (NDJSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    product_file_size: 27503450
+    product_url: https://onco.cc/api/v1/all.ndjson
+  - category: GraphProduct
+    description: The OnCo corpus as RDF N-Triples. Records are typed with schema.org
+      classes and linked through the onco.cc namespace.
+    format: ntriples
+    id: onco.ntriples
+    name: OnCo RDF triples
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    product_file_size: 31755993
+    product_url: https://onco.cc/api/v1/onco.nt
+  - category: DataModelProduct
+    description: JSON Schema for OnCo entity records, covering every kind in the corpus
+      and its relationship fields.
+    format: json
+    id: onco.schema
+    name: OnCo entity JSON Schema
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    product_file_size: 78692
+    product_url: https://onco.cc/api/v1/schema.json
+  - category: ProgrammingInterface
+    description: Static JSON API served with CORS. Provides per-kind JSON and CSV
+      files, one JSON file per record with its neighbours, a search index, per-record
+      Markdown context files, Atom feeds and an OpenAPI 3.1 description.
+    format: http
+    id: onco.api
+    name: OnCo static API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    product_url: https://onco.cc/api/
+  - category: ProgrammingInterface
+    description: Model Context Protocol server (npm package onco-mcp) exposing search,
+      entity lookup, listing by kind, question answering, context retrieval and comparison
+      over the OnCo corpus to AI assistants. A command-line tool (npm package onco)
+      offers the same operations from the shell.
+    format: http
+    id: onco.mcp
+    name: OnCo MCP server and CLI
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    product_url: https://github.com/judegomila/OnCo/tree/main/packages
+    repository: https://github.com/judegomila/OnCo
+  - category: GraphicalInterface
+    description: The OnCo website. One page per record with filterable tables, tooltips
+      on technical terms, molecule and target renderings, a graph explorer, a body
+      map, a timeline and question answering.
+    format: http
+    id: onco.site
+    name: OnCo website
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    product_url: https://onco.cc/
+  repository: https://github.com/judegomila/OnCo
+  taxon:
+  - NCBITaxon:9606
+- activity_status: active
   category: DataSource
   contacts:
   - category: Organization
@@ -254339,6 +254485,27 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: openalex
     product_url: https://github.com/metaphacts/semopenalex
+  - category: GraphProduct
+    description: Every OnCo record in one JSON file, each with its plain-English summary,
+      technical summary, dated facts, relationship fields and source links.
+    format: json
+    id: onco.all_json
+    name: OnCo full corpus (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: openalex
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_file_size: 31490277
+    product_url: https://onco.cc/api/v1/all.json
   publications:
   - authors:
     - Jason Priem
@@ -266999,6 +267166,27 @@ resources:
       source: pdb
     - relation_type: prov:wasInfluencedBy
       source: lincs
+  - category: GraphProduct
+    description: Every OnCo record in one JSON file, each with its plain-English summary,
+      technical summary, dated facts, relationship fields and source links.
+    format: json
+    id: onco.all_json
+    name: OnCo full corpus (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: openalex
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_file_size: 31490277
+    product_url: https://onco.cc/api/v1/all.json
   publications:
   - authors:
     - wwPDB consortium
@@ -291262,6 +291450,27 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: mbodymap
     product_url: https://www.graphomics.com/docs
+  - category: GraphProduct
+    description: Every OnCo record in one JSON file, each with its plain-English summary,
+      technical summary, dated facts, relationship fields and source links.
+    format: json
+    id: onco.all_json
+    name: OnCo full corpus (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: openalex
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_file_size: 31490277
+    product_url: https://onco.cc/api/v1/all.json
   publications:
   - authors:
     - Kim S
@@ -369270,6 +369479,27 @@ resources:
       source: wikidata
     - relation_type: prov:wasInfluencedBy
       source: wikipathways
+  - category: GraphProduct
+    description: Every OnCo record in one JSON file, each with its plain-English summary,
+      technical summary, dated facts, relationship fields and source links.
+    format: json
+    id: onco.all_json
+    name: OnCo full corpus (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: openalex
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_file_size: 31490277
+    product_url: https://onco.cc/api/v1/all.json
   repository: https://www.mediawiki.org/wiki/Wikibase
   synonyms:
   - Wikidata
@@ -390439,8 +390669,7 @@ resources:
   layout: resource_detail
   name: miRGate
   products:
-  - _replace_warnings: true
-    category: GraphicalInterface
+  - category: GraphicalInterface
     description: Web portal for querying and browsing miRNA-mRNA target predictions
       for human, mouse, and rat
     format: http

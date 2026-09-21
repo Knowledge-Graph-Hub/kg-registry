@@ -8139,111 +8139,133 @@ https://ctdbase.org/query.go?type=tetramer:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 302
 https://ctdbase.org/reports/CTD_Phenotype-Disease_biological_process_associations.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_Phenotype-Disease_cellular_component_associations.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_anatomy.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_chem_gene_ixn_types.obo:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_chem_gene_ixns.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_chem_go_enriched.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_chem_pathways_enriched.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_chemicals.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_diseases.obo.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_diseases_pathways.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_exposure_events.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_exposure_ontology.obo:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_exposure_studies.tsv.gz:
   checked_at: '2026-09-21T16:06:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_genes.tsv.gz:
   checked_at: '2026-09-21T16:06:10Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_genes_diseases.tsv.gz:
   checked_at: '2026-09-21T16:06:10Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_genes_pathways.tsv.gz:
   checked_at: '2026-09-21T16:06:10Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_pathways.tsv.gz:
   checked_at: '2026-09-21T16:06:10Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/reports/CTD_pheno_term_ixns.tsv.gz:
   checked_at: '2026-09-21T16:06:10Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ctdbase.org/tools/batchQuery.go:
   checked_at: '2026-09-21T16:06:10Z'
   error: null
   ok: true
+  source: cache
   status_code: 302
 https://cultural-opposition.eu/:
   checked_at: '2026-09-16T20:20:19Z'
@@ -15454,6 +15476,16 @@ https://github.com/jannahastings/mental-functioning-ontology:
   ok: true
   source: cache
   status_code: 200
+https://github.com/judegomila/OnCo:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/judegomila/OnCo/tree/main/packages:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/kids-first/:
   checked_at: '2026-09-16T20:21:23Z'
   error: null
@@ -21169,6 +21201,36 @@ https://omnipathdb.org/queries:
   ok: false
   source: cache
   status_code: 500
+https://onco.cc/:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
+https://onco.cc/api/:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
+https://onco.cc/api/v1/all.json:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
+https://onco.cc/api/v1/all.ndjson:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
+https://onco.cc/api/v1/onco.nt:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
+https://onco.cc/api/v1/schema.json:
+  checked_at: '2026-09-21T19:28:48Z'
+  error: null
+  ok: true
+  status_code: 200
 https://ontobee.org/ontology/AFO:
   checked_at: '2026-09-16T20:22:36Z'
   error: null
