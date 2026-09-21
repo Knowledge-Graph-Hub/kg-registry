@@ -3,28 +3,9 @@ layout: default
 ---
 
 <div class="row">
-  {% assign category = page.category %}
-  {% assign category_icons = "GraphProduct:globe:Graph,Product:box:Product,MappingProduct:map:Mapping,ProcessProduct:gear:Process,DataModelProduct:diagram-3:Data Model,OntologyProduct:diagram-2:Ontology,GraphicalInterface:window:Graphical Interface,ProgrammingInterface:code-square:Programming Interface,DocumentationProduct:journal-text:Documentation Product" | split: "," %}
-
-  {% assign icon_name = "" %}
-  {% assign category_name = "" %}
-  {% assign found_category = false %}
-
-  {% for item in category_icons %}
-  {% assign parts = item | split: ":" %}
-  {% assign category_key = parts[0] | strip %}
-  {% if category_key == category %}
-  {% assign icon_name = parts[1] | strip %}
-  {% assign category_name = parts[2] | strip %}
-  {% assign found_category = true %}
-  {% break %}
-  {% endif %}
-  {% endfor %}
-  
-  {% if found_category != true %}
-  {% assign icon_name = "box" %}
-  {% assign category_name = "Product" %}
-  {% endif %}
+  {% include product_category.html category=page.category %}
+  {% assign icon_name = product_icon_name %}
+  {% assign category_name = product_category_name %}
 
   <h1>
     {% if page.depicted_by %}

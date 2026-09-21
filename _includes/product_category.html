@@ -1,0 +1,19 @@
+{% comment %}
+  Resolve a Product category class name (e.g. OntologyProduct) to a Bootstrap
+  icon and a human-readable name. Sets product_icon_name and
+  product_category_name in the caller's scope.
+
+  Usage: {% include product_category.html category=p.category %}
+{% endcomment %}
+{% assign product_category_icons = "GraphProduct:globe:Graph,Product:box:Product,MappingProduct:map:Mapping,ProcessProduct:gear:Process,DataModelProduct:diagram-3:Data Model,OntologyProduct:diagram-2:Ontology,GraphicalInterface:window:Graphical Interface,ProgrammingInterface:code-square:Programming Interface,DocumentationProduct:journal-text:Documentation" | split: "," %}
+{% assign product_icon_name = "box" %}
+{% assign product_category_name = "Product" %}
+{% for product_category_item in product_category_icons %}
+  {% assign product_category_parts = product_category_item | split: ":" %}
+  {% assign product_category_key = product_category_parts[0] | strip %}
+  {% if product_category_key == include.category %}
+    {% assign product_icon_name = product_category_parts[1] | strip %}
+    {% assign product_category_name = product_category_parts[2] | strip %}
+    {% break %}
+  {% endif %}
+{% endfor %}
