@@ -30,7 +30,7 @@ license:
   label: MMRRC data download terms (attribution required; all rights reserved)
 name: Mutant Mouse Resource and Research Centers
 products:
-- category: Database
+- category: GraphicalInterface
   description: Searchable online catalog of MMRRC mouse strains, including allele,
     gene, mutation type, phenotype (MPT), and associated publication information.
   format: http
@@ -40,7 +40,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mmrrc
   product_url: https://www.mmrrc.org/catalog/StrainCatalogSearchForm.php
-- category: Dataset
+- category: Product
   description: Bulk data download of the MMRRC strain catalog, providing strain identifiers,
     designations, genes, mutations, phenotype (MPT) annotations, and linked PubMed
     identifiers.

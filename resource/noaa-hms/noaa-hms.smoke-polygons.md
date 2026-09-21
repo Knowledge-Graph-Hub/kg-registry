@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: Product
 description: Daily HMS smoke plume polygons over North America, classified by smoke
   density, provided as Shapefile and KML files via NOAA NESDIS data distribution.
 format: mixed

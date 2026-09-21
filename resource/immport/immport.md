@@ -28,7 +28,7 @@ license:
   label: ImmPort User Agreement (custom data use agreement)
 name: ImmPort
 products:
-- category: DataSource
+- category: GraphicalInterface
   description: Web portal for searching, browsing, and downloading immunology research
     datasets shared through ImmPort.
   format: http

@@ -34,7 +34,7 @@ license:
   label: Public Domain (NCATS states all facts in these datasets are in the public domain)
 name: 'Inxight: Drugs'
 products:
-- category: DataProduct
+- category: ProgrammingInterface
   description: Public REST API providing programmatic access to curated drug substances,
     approval and development status, mechanisms, targets, and related metadata in
     the Inxight Drugs database.
@@ -46,7 +46,7 @@ products:
     source: inxight-drugs
   product_file_size: 39857
   product_url: https://drugs.ncats.io/api/v1/substances
-- category: DataProduct
+- category: GraphicalInterface
   description: Web portal interface for browsing and searching the curated Inxight
     Drugs database of drug substances, including approval status, mechanisms, and
     targets.

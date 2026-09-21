@@ -18,7 +18,7 @@ last_modified_date: '2025-11-17T00:00:00Z'
 layout: resource_detail
 name: miRGate
 products:
-- category: Portal
+- category: GraphicalInterface
   description: Web portal for querying and browsing miRNA-mRNA target predictions
     for human, mouse, and rat
   format: http

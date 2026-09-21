@@ -1,5 +1,5 @@
 ---
-category: DataProduct
+category: DocumentationProduct
 description: AI2 data landing page describing the CORD-19 corpus, its structure, and
   access to historical releases.
 format: http

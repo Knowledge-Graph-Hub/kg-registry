@@ -1,5 +1,5 @@
 ---
-category: DataProduct
+category: Product
 description: Philadelphia crime incidents dataset, recording reported crimes with
   time, category, coordinate, and ZIP-code attributes.
 format: http

@@ -19,7 +19,7 @@ last_modified_date: '2026-06-27T00:00:00Z'
 layout: resource_detail
 name: Dark Kinase Knowledgebase
 products:
-- category: Portal
+- category: GraphicalInterface
   description: Main web portal for Dark Kinase Knowledgebase providing comprehensive
     data on 162 understudied kinases including tool compounds, PRM peptides, protein
     interactions, and expression profiles
@@ -30,7 +30,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
   product_url: https://darkkinome.org
-- category: Browser
+- category: GraphicalInterface
   description: Expression browser data and source code showing tissue-specific expression
     of dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide
     comparisons. The hosted Shiny application formerly at expression.darkkinome.org
@@ -43,7 +43,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
   product_url: https://github.com/IDG-Kinase/kinase_expression
-- category: Dataset
+- category: Product
   description: Parallel reaction monitoring (PRM) peptides for quantitative mass spectrometry
     of dark kinases with standard curves and detection limits
   format: http
@@ -53,7 +53,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
   product_url: https://darkkinome.org/PRM_params
-- category: Dataset
+- category: Product
   description: Tool compounds for dark kinases with kinome-wide selectivity profiles
     and NanoBRET validation
   format: http
@@ -63,7 +63,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
   product_url: https://darkkinome.org/compounds
-- category: Dataset
+- category: Product
   description: Protein interaction networks for dark kinases from affinity purification
     mass spectrometry and proximity labeling experiments
   format: http
@@ -73,7 +73,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
   product_url: https://darkkinome.org
-- category: Repository
+- category: Product
   description: GitHub repository containing source code for Dark Kinase Knowledgebase
     website
   format: http
@@ -83,7 +83,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
   product_url: https://github.com/IDG-Kinase/darkkinasekb
-- category: Dataset
+- category: Product
   description: Bulk datasets and resources distributed through Synapse platform
   format: http
   id: darkkinasekb.synapse

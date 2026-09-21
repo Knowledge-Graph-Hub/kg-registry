@@ -2,12 +2,12 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Person
+- category: Individual
   contact_details:
   - contact_type: email
     value: fiehn@ucdavis.edu
   label: Oliver Fiehn
-- category: Person
+- category: Individual
   contact_details:
   - contact_type: email
     value: shankar@sdsc.edu

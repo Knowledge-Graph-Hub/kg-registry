@@ -23,7 +23,7 @@ last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: Integrated Islet Distribution Program (IIDP)
 products:
-- category: DataSource
+- category: GraphicalInterface
   description: Web portal for requesting human pancreatic islets and accessing associated
     islet characterization data distributed by the IIDP.
   format: http

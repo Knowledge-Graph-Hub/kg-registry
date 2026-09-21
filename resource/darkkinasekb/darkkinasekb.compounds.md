@@ -1,5 +1,5 @@
 ---
-category: Dataset
+category: Product
 description: Tool compounds for dark kinases with kinome-wide selectivity profiles and NanoBRET validation
 format: http
 id: darkkinasekb.compounds

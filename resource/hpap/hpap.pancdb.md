@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: GraphicalInterface
 description: PANC-DB data portal for browsing and downloading HPAP donor-derived pancreas
   and islet multi-omic datasets.
 format: http

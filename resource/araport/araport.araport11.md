@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: Product
 description: The Araport11 reannotation of the Arabidopsis thaliana Col-0 reference
   genome (gene models, transcripts, and non-coding RNAs), distributed through the
   JGI Phytozome plant genomics portal.

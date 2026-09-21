@@ -1,5 +1,5 @@
 ---
-category: Repository
+category: Product
 description: GitHub repository containing source code for Dark Kinase Knowledgebase website
 format: http
 id: darkkinasekb.github

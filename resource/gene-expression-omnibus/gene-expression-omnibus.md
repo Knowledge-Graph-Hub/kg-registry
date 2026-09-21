@@ -24,7 +24,7 @@ last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: Gene Expression Omnibus (GEO)
 products:
-- category: DataSource
+- category: GraphicalInterface
   description: Web portal for searching, browsing, and downloading functional genomics
     datasets archived in the Gene Expression Omnibus.
   format: http

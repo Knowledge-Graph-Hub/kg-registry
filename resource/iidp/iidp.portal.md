@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: GraphicalInterface
 description: Web portal for requesting human pancreatic islets and accessing associated
   islet characterization data distributed by the IIDP.
 format: http

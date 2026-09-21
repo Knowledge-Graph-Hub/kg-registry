@@ -29,7 +29,7 @@ license:
   label: U.S. Government Work (public domain)
 name: NOAA Hazard Mapping System Fire and Smoke Product
 products:
-- category: DataSource
+- category: Product
   description: Daily HMS smoke plume polygons over North America, classified by smoke
     density, provided as Shapefile and KML files via NOAA NESDIS data distribution.
   format: mixed
@@ -40,7 +40,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: noaa-hms
   product_url: https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Smoke_Polygons/
-- category: DataSource
+- category: Product
   description: Daily HMS analyst-reviewed fire detection points over North America
     derived from geostationary and polar-orbiting satellite observations, provided
     as Shapefile and KML files via NOAA NESDIS data distribution.

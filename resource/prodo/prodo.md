@@ -22,7 +22,7 @@ last_modified_date: '2026-07-01T00:00:00Z'
 layout: resource_detail
 name: Prodo Laboratories
 products:
-- category: DataSource
+- category: GraphicalInterface
   description: Product catalog and ordering site for Prodo Laboratories human islet
     and pancreatic tissue products.
   format: http

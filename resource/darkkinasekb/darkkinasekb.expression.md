@@ -1,5 +1,5 @@
 ---
-category: Browser
+category: GraphicalInterface
 description: Expression browser data and source code showing tissue-specific expression
   of dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide
   comparisons. The hosted Shiny application formerly at expression.darkkinome.org

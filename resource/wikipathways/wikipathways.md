@@ -705,7 +705,7 @@ products:
     source: wikipathways
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
   warnings: []
-- category: DatabaseProduct
+- category: Product
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.

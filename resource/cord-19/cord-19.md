@@ -34,7 +34,7 @@ license:
   label: CORD-19 dataset license (per-article licenses; see dataset license agreement)
 name: COVID-19 Open Research Dataset
 products:
-- category: Dataset
+- category: Product
   description: The CORD-19 corpus, comprising article metadata, machine-readable full
     text, and precomputed document embeddings. Releases were distributed as compressed
     archives; historical releases (first 2020-03-13, final 2022-06-02) remain hosted
@@ -46,7 +46,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cord-19
   product_url: https://github.com/allenai/cord19
-- category: DataProduct
+- category: DocumentationProduct
   description: AI2 data landing page describing the CORD-19 corpus, its structure,
     and access to historical releases.
   format: http

@@ -1,5 +1,5 @@
 ---
-category: Dataset
+category: Product
 description: The CORD-19 corpus, comprising article metadata, machine-readable full
   text, and precomputed document embeddings. Releases were distributed as compressed
   archives; historical releases (first 2020-03-13, final 2022-06-02) remain hosted

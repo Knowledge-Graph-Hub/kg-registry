@@ -1,5 +1,5 @@
 ---
-category: DataSource
+category: GraphicalInterface
 description: Web portal for searching, browsing, and downloading immunology research
   datasets shared through ImmPort.
 format: http
