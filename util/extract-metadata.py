@@ -143,6 +143,28 @@ def check_category_classes(obj, target_class, path=""):
     return errors
 
 
+def check_domain_parents(obj):
+    """
+    Check that every specific domain is accompanied by its broader domain.
+
+    DomainEnum is a two-level hierarchy: a specific value (e.g.
+    "neurodegenerative disease") names its broader value ("neuroscience") with
+    `is_a`. Pages list both, so filters and comparisons on the broad domain
+    still find the resource. Returns a list of error strings.
+    """
+    if not isinstance(obj, dict) or not isinstance(obj.get("domains"), list):
+        return []
+    permissible = get_schema_view().get_enum("DomainEnum").permissible_values
+    listed = set(obj["domains"])
+    errors = []
+    for domain in obj["domains"]:
+        pv = permissible.get(domain)
+        parent = pv.is_a if pv is not None else None
+        if parent and parent not in listed:
+            errors.append(f"domains: '{domain}' is a '{parent}' domain, so '{parent}' must also be listed")
+    return errors
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Helper utils for KG-Registry",
@@ -330,6 +352,9 @@ def validate_markdown(args):
                     errs.append(f"{fn}: {result.message}")
 
         for message in check_category_classes(obj, target_class):
+            errs.append(f"{fn}: {message}")
+
+        for message in check_domain_parents(obj):
             errs.append(f"{fn}: {message}")
 
         if not getattr(args, "skip_publication_reference_validation", False):
