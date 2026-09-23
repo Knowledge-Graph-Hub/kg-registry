@@ -10,9 +10,8 @@ description: Global Biotic Interactions (GloBI) integrates and normalizes specie
   interaction records with taxonomic resolution and provenance.
 domains:
 - environment
-- biological systems
-- public health
 - ecology
+- organisms
 homepage_url: https://www.globalbioticinteractions.org/
 id: globi
 last_modified_date: '2026-09-23T00:00:00Z'

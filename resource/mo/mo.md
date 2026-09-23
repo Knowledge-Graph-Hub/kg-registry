@@ -15,10 +15,10 @@ description: A standardized description of a microarray experiment in support of
   v.1.
 domains:
 - biomedical
-- general
+- genomics
 homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
 id: mo
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Microarray experimental conditions
 products:

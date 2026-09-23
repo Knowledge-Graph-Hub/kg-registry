@@ -16,7 +16,6 @@ creation_date: '2025-06-25T00:00:00Z'
 description: Ontology to establish data exchange standards and common data elements
   in the microRNA (miR) domain
 domains:
-- chemistry and biochemistry
 - genomics
 - non-coding RNA
 homepage_url: http://omit.cis.usouthal.edu/

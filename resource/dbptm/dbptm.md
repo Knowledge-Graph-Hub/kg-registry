@@ -12,7 +12,6 @@ description: dbPTM is an integrated protein post-translational modification reso
 domains:
   - biomedical
   - proteomics
-  - biological systems
   - post-translational modification
 homepage_url: https://biomics.lab.nycu.edu.tw/dbPTM/
 id: dbptm

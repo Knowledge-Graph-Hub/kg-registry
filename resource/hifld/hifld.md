@@ -19,7 +19,6 @@ description: Homeland Infrastructure Foundation-Level Data (HIFLD) is a U.S. Dep
 domains:
 - public health
 - transportation
-- general
 - information technology
 - disasters
 - environment

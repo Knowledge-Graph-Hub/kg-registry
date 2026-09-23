@@ -17,7 +17,6 @@ collection:
 creation_date: '2025-09-09T00:00:00Z'
 description: Greengenes2 is a comprehensive reference database and phylogenetic tree for 16S rRNA gene sequences that unifies microbial data from multiple sources into a single coherent framework. It provides standardized taxonomic assignments and phylogenetic placement for microbiome research and enables consistent analysis across different studies and sequencing platforms.
 domains:
-  - biomedical
   - microbiology
   - organisms
   - microbiome

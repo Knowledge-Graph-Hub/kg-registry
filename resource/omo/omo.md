@@ -17,7 +17,6 @@ description: An ontology specifies terms that are used to annotate ontology term
   for all OBO ontologies. The ontology was developed as part of Information Artifact
   Ontology (IAO).
 domains:
-- biomedical
 - information technology
 - metadata
 homepage_url: https://github.com/information-artifact-ontology/ontology-metadata

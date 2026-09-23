@@ -20,7 +20,6 @@ description: TRRUST (Transcriptional Regulatory Relationships Unraveled by Sente
 domains:
 - genomics
 - systems biology
-- biological systems
 - gene regulation
 - literature
 - natural language processing

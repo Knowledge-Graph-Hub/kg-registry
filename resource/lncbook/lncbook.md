@@ -11,7 +11,6 @@ description: LncBook is a comprehensive database of human long non-coding RNAs (
   lncRNA-encoded small proteins, lncRNA-protein interactions, and lncRNA-miRNA interactions.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: https://ngdc.cncb.ac.cn/lncbook/home
 id: lncbook

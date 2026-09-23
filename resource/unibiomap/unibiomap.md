@@ -23,7 +23,6 @@ domains:
 - drug discovery
 - genomics
 - pathways
-- biological systems
 - systems biology
 - phenotype
 - proteomics

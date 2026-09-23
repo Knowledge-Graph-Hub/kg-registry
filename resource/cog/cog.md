@@ -9,7 +9,6 @@ description: A resource for orthology-based functional classification of protein
 domains:
 - genomics
 - microbiology
-- biological systems
 - molecular evolution
 homepage_url: https://www.ncbi.nlm.nih.gov/research/cog-project/
 id: cog

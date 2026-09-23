@@ -15,7 +15,6 @@ description: A comprehensive database dedicated to long non-coding RNA (lncRNA) 
   across 39 species (16 animals and 23 plants)
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: http://www.noncode.org/
 id: noncode

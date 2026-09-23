@@ -11,6 +11,8 @@ domains:
 - chemistry and biochemistry
 - environment
 - environmental exposure
+- toxicology
+- genomics
 homepage_url: https://ctdbase.org/
 id: ctd
 infores_id: ctd

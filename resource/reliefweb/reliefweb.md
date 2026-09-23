@@ -18,7 +18,6 @@ description: ReliefWeb is the humanitarian information service operated by the U
 domains:
 - public health
 - environment
-- general
 - disasters
 homepage_url: https://reliefweb.int/
 id: reliefweb

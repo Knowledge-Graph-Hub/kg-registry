@@ -18,7 +18,6 @@ description: The National Directory of Mental Health Treatment Facilities is a d
 domains:
 - public health
 - clinical
-- general
 - neuroscience
 - mental disorders
 homepage_url: https://www.samhsa.gov/data/report/national-directory-mental-health-treatment-facilities

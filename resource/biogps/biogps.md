@@ -15,8 +15,6 @@ description: BioGPS is an extensible and customizable gene annotation portal tha
   types and provides programmatic and bulk access to underlying annotation tables.
 domains:
 - genomics
-- biomedical
-- biological systems
 - gene expression profiling
 homepage_url: http://biogps.org/
 id: biogps

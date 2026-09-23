@@ -4,7 +4,6 @@ category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
 description: The Ribosomal Database Project (RDP) provided ribosome-related data services, including quality-controlled, aligned and annotated rRNA sequences, phylogenetic trees, and analysis tools for Bacterial, Archaeal, and Fungal rRNA. The RDP website is no longer available, but stand-alone tools and classifiers remain accessible via Sourceforge and community tutorials.
 domains:
-  - biological systems
   - genomics
   - non-coding RNA
 homepage_url: https://github.com/rdpstaff/RDPTools

@@ -14,7 +14,6 @@ description: The eQTLGen Consortium conducts large-scale meta-analyses of expres
   of complex traits.
 domains:
 - genomics
-- biological systems
 - genome-wide association studies
 homepage_url: https://www.eqtlgen.org/
 id: eqtlgen

@@ -20,7 +20,6 @@ description: The Arabidopsis Information Resource (TAIR) maintains a comprehensi
   data is updated weekly from published research and community submissions.
 domains:
 - genomics
-- biological systems
 - organisms
 - model organisms
 - plants

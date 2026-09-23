@@ -20,7 +20,6 @@ description: The NOAA National Centers for Environmental Information (NCEI) is t
 domains:
 - environment
 - public health
-- general
 - climate
 homepage_url: https://www.ncei.noaa.gov/
 id: noaa-ncei

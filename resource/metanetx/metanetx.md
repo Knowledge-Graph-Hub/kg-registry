@@ -15,7 +15,6 @@ description: MetaNetX is an online platform for accessing, analyzing, and manipu
   genome-scale metabolic networks (GSM) and biochemical pathways, integrating data
   from multiple sources with a unified namespace for metabolites and biochemical reactions.
 domains:
-- biological systems
 - chemistry and biochemistry
 - pathways
 - metabolism

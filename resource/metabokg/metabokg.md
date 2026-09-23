@@ -15,7 +15,6 @@ description: MetaboKG is an analysis-centric knowledge graph framework for untar
   and their analytical artifacts, samples, and studies.
 domains:
 - chemistry and biochemistry
-- biomedical
 - microbiology
 - environment
 - metabolomics

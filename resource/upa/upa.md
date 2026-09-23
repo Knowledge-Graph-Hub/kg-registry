@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: A manually curated resource for the representation and annotation of
   metabolic pathways
 domains:
-- biological systems
 - pathways
 - metabolism
 homepage_url: https://github.com/geneontology/unipathway

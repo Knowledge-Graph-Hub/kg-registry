@@ -12,7 +12,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
-- biological systems
 - organisms
 - biodiversity
 homepage_url: http://www.animaldiversity.org

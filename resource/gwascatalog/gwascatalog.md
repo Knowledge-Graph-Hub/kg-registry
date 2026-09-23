@@ -19,7 +19,6 @@ description: The NHGRI-EBI GWAS Catalog is a curated, searchable, and freely ava
 domains:
 - genomics
 - biomedical
-- general
 - genome-wide association studies
 homepage_url: https://www.ebi.ac.uk/gwas/
 id: gwascatalog

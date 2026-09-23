@@ -15,7 +15,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domains:
-- biological systems
 - phenotype
 - organisms
 - plants

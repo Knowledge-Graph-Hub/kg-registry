@@ -11,9 +11,9 @@ creation_date: '2025-03-09T00:00:00Z'
 description: The Saccharomyces Genome Database (SGD) project collects information
   and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.
 domains:
-- biological systems
 - organisms
 - model organisms
+- genomics
 homepage_url: https://www.yeastgenome.org/
 id: sgd
 infores_id: sgd

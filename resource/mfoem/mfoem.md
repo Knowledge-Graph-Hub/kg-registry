@@ -17,9 +17,10 @@ description: An ontology of affective phenomena such as emotions, moods, apprais
   and subjective feelings.
 domains:
 - biomedical
+- neuroscience
 homepage_url: https://github.com/jannahastings/emotion-ontology
 id: mfoem
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

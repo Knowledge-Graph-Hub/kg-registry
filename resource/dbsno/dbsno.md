@@ -14,7 +14,6 @@ description: dbSNO is a protein S-nitrosylation database that curates experiment
 domains:
 - biomedical
 - proteomics
-- biological systems
 - post-translational modification
 homepage_url: https://biomics.lab.nycu.edu.tw/dbSNO/index.php
 id: dbsno

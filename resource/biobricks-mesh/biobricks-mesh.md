@@ -21,9 +21,10 @@ description: BioBricks MeSH is an open knowledge graph of Medical Subject Headin
   (MeSH) biomedical vocabulary.
 domains:
 - biomedical
+- literature
 homepage_url: https://github.com/biobricks-ai/mesh-kg
 id: biobricks-mesh
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

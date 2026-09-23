@@ -16,7 +16,6 @@ description: MetaCyc is a curated database of experimentally elucidated metaboli
   and genes. The goal of MetaCyc is to catalog the universe of metabolism by storing
   a representative sample of each experimentally elucidated pathway.
 domains:
-- biological systems
 - pathways
 - metabolism
 homepage_url: https://metacyc.org/

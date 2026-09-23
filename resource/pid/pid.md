@@ -45,7 +45,6 @@ description: The Pathway Interaction Database (PID) was a highly curated collect
   for the research community.
 domains:
 - pathways
-- biological systems
 - signal transduction
 homepage_url: http://pid.nci.nih.gov/
 id: pid

@@ -15,7 +15,6 @@ domains:
   - biomedical
   - genomics
   - precision medicine
-  - biological systems
   - genetic variation
 homepage_url: https://pcingola.github.io/SnpEff/
 id: snpeff

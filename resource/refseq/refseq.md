@@ -17,11 +17,9 @@ description: The NCBI Reference Sequence Database (RefSeq) provides a comprehens
   dogma.
 domains:
 - genomics
-- biomedical
-- biological systems
 homepage_url: https://www.ncbi.nlm.nih.gov/refseq/
 id: refseq
-last_modified_date: '2025-08-07T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: RefSeq
 products:

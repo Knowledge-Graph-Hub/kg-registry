@@ -16,6 +16,7 @@ domains:
 - anatomy and development
 - biological systems
 - cell biology
+- immunology
 homepage_url: http://www.dukeontologygroup.org/Projects.html
 id: dc_cl
 last_modified_date: '2026-09-23T00:00:00Z'

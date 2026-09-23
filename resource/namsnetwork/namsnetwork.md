@@ -11,7 +11,6 @@ description: NAMs.network is the first database of regulatory-relevant New Appro
 domains:
   - toxicology
   - chemistry and biochemistry
-  - general
 homepage_url: https://nams.network/
 id: namsnetwork
 layout: resource_detail
@@ -27,7 +26,7 @@ products:
       - source: namsnetwork
         relation_type: prov:hadPrimarySource
 creation_date: '2025-12-13T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 NAMs Network

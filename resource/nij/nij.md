@@ -17,7 +17,6 @@ description: The National Institute of Justice (NIJ) is the research, developmen
   data.
 domains:
 - public health
-- general
 - criminal justice
 homepage_url: https://nij.ojp.gov/
 id: nij

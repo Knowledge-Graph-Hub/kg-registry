@@ -21,7 +21,6 @@ description: PROGENy (Pathway RespOnsive GENes for activity inference) is a reso
 domains:
 - genomics
 - systems biology
-- biomedical
 - pathways
 - signal transduction
 homepage_url: https://saezlab.github.io/progeny/

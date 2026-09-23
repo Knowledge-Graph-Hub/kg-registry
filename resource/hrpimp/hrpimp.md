@@ -14,7 +14,6 @@ domains:
 - proteomics
 - systems biology
 - biomedical
-- biological systems
 - protein interactions
 homepage_url: https://www.interactome-atlas.org/
 id: hrpimp

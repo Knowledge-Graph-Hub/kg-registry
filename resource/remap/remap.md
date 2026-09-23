@@ -14,7 +14,6 @@ description: ReMap is a curated regulatory genomics resource that integrates pub
 domains:
 - genomics
 - systems biology
-- biological systems
 - gene regulation
 homepage_url: https://remap.univ-amu.fr/
 id: remap

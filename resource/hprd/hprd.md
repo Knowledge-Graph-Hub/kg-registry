@@ -28,7 +28,6 @@ description: The Human Protein Reference Database (HPRD) was a comprehensive, ma
 domains:
 - biomedical
 - proteomics
-- biological systems
 - systems biology
 - protein interactions
 - post-translational modification

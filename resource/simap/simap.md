@@ -15,7 +15,6 @@ description: SIMAP (Similarity Matrix of Proteins) was a comprehensive database 
 domains:
 - proteomics
 - genomics
-- biological systems
 - protein domains
 homepage_url: http://mips.helmholtz-muenchen.de/simap/
 id: simap

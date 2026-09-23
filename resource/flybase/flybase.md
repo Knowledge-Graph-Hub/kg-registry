@@ -19,7 +19,6 @@ description: FlyBase is a comprehensive database of genomic and genetic data for
 domains:
 - genomics
 - organisms
-- biological systems
 - model organisms
 - insects
 homepage_url: https://flybase.org/

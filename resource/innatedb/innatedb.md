@@ -14,7 +14,6 @@ description: InnateDB is a publicly available database of genes, proteins, exper
   and integrated bioinformatics and visualization tools for systems-level analysis.
 domains:
 - immunology
-- biological systems
 - systems biology
 - microbiology
 - host-pathogen interactions

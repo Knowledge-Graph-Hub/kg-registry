@@ -9,7 +9,6 @@ contacts:
 creation_date: '2025-03-09T00:00:00Z'
 description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
 domains:
-- biological systems
 - systems biology
 - pathways
 - information technology

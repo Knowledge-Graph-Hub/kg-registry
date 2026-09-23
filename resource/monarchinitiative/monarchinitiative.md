@@ -14,7 +14,6 @@ description: The Monarch Initiative is an international consortium that integrat
   data to improve understanding of genetic disease and support translational research.
 domains:
 - genomics
-- biological systems
 - organisms
 - model organisms
 homepage_url: https://monarchinitiative.org/

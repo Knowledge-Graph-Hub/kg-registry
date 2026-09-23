@@ -16,7 +16,6 @@ creation_date: '2025-09-04T00:00:00Z'
 description: An integrated ontology for representing the genetic variations described
   in genotypes, and their causal relationships to phenotype and diseases.
 domains:
-- biological systems
 - genomics
 - genetic variation
 homepage_url: https://github.com/monarch-initiative/GENO-ontology/

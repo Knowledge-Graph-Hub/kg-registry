@@ -19,7 +19,6 @@ description: The ENCODE Registry of candidate cis-Regulatory Elements (cCREs) is
   upstream source for downstream resources such as GenomicKB.
 domains:
 - genomics
-- biological systems
 - systems biology
 - gene regulation
 - epigenomics

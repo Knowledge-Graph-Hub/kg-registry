@@ -16,10 +16,9 @@ description: 'The Toxicological Effect and Risk Assessment (TERA) Knowledge Grap
 domains:
   - toxicology
   - environment
-  - biological systems
 homepage_url: https://niva-knowledge-graph.github.io/TERA/
 id: tera
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

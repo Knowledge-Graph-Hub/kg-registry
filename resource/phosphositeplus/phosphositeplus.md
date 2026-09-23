@@ -11,7 +11,6 @@ description: "PhosphoSitePlus is a comprehensive resource for experimentally val
 domains:
 - proteomics
 - biomedical
-- biological systems
 - post-translational modification
 homepage_url: https://www.phosphosite.org/
 id: phosphositeplus

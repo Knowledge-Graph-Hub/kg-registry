@@ -19,7 +19,6 @@ description: The Rat Genome Database (RGD) curates and integrates rat genomic an
   and disease relationships.
 domains:
 - genomics
-- biological systems
 - organisms
 - model organisms
 homepage_url: https://rgd.mcw.edu/

@@ -20,7 +20,6 @@ description: Ontology of plant gall phenotypes. Plant galls are novel plant stru
   mechanisms responsible for such phenotypes. The ontology can also be used as a controlled
   vocabulary for natural language descriptions of plant galls.
 domains:
-- biological systems
 - phenotype
 - organisms
 - plants

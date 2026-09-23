@@ -8,7 +8,6 @@ description: iRefIndex is a consolidated protein interaction database that aggre
   provenance information.
 domains:
 - proteomics
-- biological systems
 - protein interactions
 homepage_url: https://irefindex.vib.be/
 id: irefindex

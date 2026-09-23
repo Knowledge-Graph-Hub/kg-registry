@@ -21,14 +21,13 @@ description: The Molecular Transducers of Physical Activity Consortium (MoTrPAC)
   quality control metrics, and quantitative results to enable comprehensive analysis
   of the temporal dynamics of multi-omic responses to endurance exercise training.
 domains:
-- biological systems
 - biomedical
 - proteomics
 - genomics
 - systems biology
 homepage_url: https://motrpac-data.org/
 id: motrpac
-last_modified_date: '2026-07-28T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

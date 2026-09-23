@@ -15,7 +15,6 @@ description: InterPro is a database of protein families, domains and functional 
   in which identifiable features found in known proteins can be applied to unknown
   protein sequences.
 domains:
-- biological systems
 - proteomics
 - genomics
 - drug discovery

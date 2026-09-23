@@ -17,7 +17,6 @@ description: INOH (Integrating Network Objects with Hierarchies) is a highly str
   pathway aggregators. The project appears to be no longer actively maintained.
 domains:
 - pathways
-- biological systems
 - systems biology
 - signal transduction
 homepage_url: http://www.inoh.org/

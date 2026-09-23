@@ -8,7 +8,6 @@ description: snOPY (snoRNA Orthological Gene Database) provides comprehensive in
   target RNA conservation rather than snoRNA sequence similarity.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
 id: snopy

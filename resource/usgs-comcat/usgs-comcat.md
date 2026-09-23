@@ -17,11 +17,10 @@ description: The Advanced National Seismic System (ANSS) Comprehensive Earthquak
   source for the KnowWhereGraph.
 domains:
 - environment
-- general
 - information technology
 homepage_url: https://earthquake.usgs.gov/data/comcat/
 id: usgs-comcat
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

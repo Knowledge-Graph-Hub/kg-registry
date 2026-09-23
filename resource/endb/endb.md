@@ -20,7 +20,6 @@ description: ENdb is a manually curated database of experimentally validated enh
 domains:
 - genomics
 - systems biology
-- biomedical
 - gene regulation
 homepage_url: http://www.licpathway.net/ENdb/
 id: endb

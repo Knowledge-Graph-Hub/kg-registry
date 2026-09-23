@@ -8,7 +8,6 @@ description: MirGeneDB is a manually curated database of microRNA genes, providi
   data for all species and families.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: https://mirgenedb.org/
 id: mirgenedb

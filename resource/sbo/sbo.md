@@ -16,10 +16,10 @@ creation_date: '2025-06-04T00:00:00Z'
 description: Terms commonly used in Systems Biology, and in particular in computational
   modeling.
 domains:
-- chemistry and biochemistry
+- systems biology
 homepage_url: http://www.ebi.ac.uk/sbo/
 id: sbo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://opensource.org/licenses/Artistic-2.0

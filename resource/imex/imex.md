@@ -15,7 +15,6 @@ description: IMEx Consortium is an international collaboration of public molecul
 domains:
 - proteomics
 - systems biology
-- biological systems
 - protein interactions
 homepage_url: https://www.imexconsortium.org/
 id: imex

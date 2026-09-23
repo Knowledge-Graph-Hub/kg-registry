@@ -25,7 +25,6 @@ description: Expression Atlas is EMBL-EBI's open science resource that provides 
   expression analysis results through standardized processing pipelines.
 domains:
 - genomics
-- biological systems
 - organisms
 - gene expression profiling
 homepage_url: https://www.ebi.ac.uk/gxa/home

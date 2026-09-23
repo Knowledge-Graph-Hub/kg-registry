@@ -14,7 +14,6 @@ description: TRED (Transcriptional Regulatory Element Database) was a curated da
 domains:
 - genomics
 - systems biology
-- biological systems
 - gene regulation
 homepage_url: https://rulai.cshl.edu/TRED/
 id: tred

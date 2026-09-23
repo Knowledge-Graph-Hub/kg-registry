@@ -17,7 +17,6 @@ description: The National Water Information System (NWIS) is the U.S. Geological
   National Aquifer reference features.
 domains:
 - environment
-- general
 - water resources
 homepage_url: https://waterdata.usgs.gov/nwis
 id: usgs-nwis

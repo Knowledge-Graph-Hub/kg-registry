@@ -9,10 +9,9 @@ description: ProteomeHD is a proteomics resource centered on protein co-regulati
 domains:
 - proteomics
 - systems biology
-- biomedical
 homepage_url: https://github.com/Rappsilber-Laboratory/ProteomeHD
 id: proteomehd
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: ProteomeHD
 products:

@@ -13,7 +13,6 @@ creation_date: '2025-12-15T00:00:00Z'
 description: mangal.io is a collaborative database and analysis platform for ecological networks, providing a comprehensive collection of species interaction networks (food webs, pollination networks, plant-herbivore networks) with tools for visualization, analysis, and reuse of published ecological data.
 domains:
   - environment
-  - biological systems
   - ecology
 homepage_url: https://mangal.io/
 id: mangal

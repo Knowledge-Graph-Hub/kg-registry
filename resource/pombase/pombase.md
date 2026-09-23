@@ -14,6 +14,7 @@ description: PomBase is a comprehensive database for the fission yeast Schizosac
 domains:
 - organisms
 - model organisms
+- genomics
 homepage_url: https://www.pombase.org/
 id: pombase
 infores_id: pombase

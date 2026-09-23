@@ -17,7 +17,6 @@ description: OpenFEMA is the U.S. Federal Emergency Management Agency's open-dat
 domains:
 - public health
 - environment
-- general
 - disasters
 homepage_url: https://www.fema.gov/about/openfema
 id: openfema

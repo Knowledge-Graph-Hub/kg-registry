@@ -18,11 +18,9 @@ description: HumanNet is a probabilistic functional gene network for Homo sapien
 domains:
 - genomics
 - systems biology
-- biomedical
-- biological systems
 homepage_url: https://www.inetbio.org/humannetv3/
 id: humannet
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by-sa/4.0/

@@ -14,7 +14,6 @@ description: BRENDA (BRaunschweig ENzyme DAtabase) is the main collection of enz
 domains:
 - chemistry and biochemistry
 - pathways
-- biomedical
 - enzymes
 homepage_url: https://www.brenda-enzymes.org/
 id: brenda

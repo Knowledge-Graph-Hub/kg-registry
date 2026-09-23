@@ -16,7 +16,6 @@ description: PACER (Public Access to Court Electronic Records) is the U.S. feder
   usage fee. PACER is the primary upstream source of federal court records used by
   downstream projects such as SCALES.
 domains:
-- general
 - public health
 - criminal justice
 homepage_url: https://pacer.uscourts.gov/

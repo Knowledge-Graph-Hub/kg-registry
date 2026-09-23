@@ -11,7 +11,6 @@ description: DIANA-LncBase is a comprehensive repository of experimentally suppo
   data.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: http://www.microrna.gr/LncBase
 id: lncbase

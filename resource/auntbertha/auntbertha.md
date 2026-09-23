@@ -15,7 +15,6 @@ description: Aunt Bertha (now operating as findhelp) is a nationwide social care
   hours, and service types.
 domains:
 - public health
-- general
 - social determinants of health
 homepage_url: https://www.findhelp.org/
 id: auntbertha

@@ -18,7 +18,6 @@ description: OHPI is a community-driven ontology of host-pathogen interactions (
   database become less virulence inside a host organism or host cells. It is developed
   to represent manually curated HPI knowledge available in the PHIDIAS resource.
 domains:
-- biological systems
 - microbiology
 - host-pathogen interactions
 homepage_url: https://github.com/OHPI/ohpi

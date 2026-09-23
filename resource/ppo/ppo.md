@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for describing the phenology of individual plants and populations
   of plants, and for integrating plant phenological data across sources and scales.
 domains:
-- biological systems
 - phenotype
 - organisms
 - plants

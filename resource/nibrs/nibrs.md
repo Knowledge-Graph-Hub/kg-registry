@@ -18,7 +18,6 @@ description: The National Incident-Based Reporting System (NIBRS) is the crime d
   and are published through the FBI Crime Data Explorer.
 domains:
 - public health
-- general
 - criminal justice
 homepage_url: https://cde.ucr.cjis.gov/
 id: nibrs

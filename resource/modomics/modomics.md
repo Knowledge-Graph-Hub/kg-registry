@@ -8,7 +8,6 @@ description: MODOMICS is a comprehensive database of RNA modifications that prov
   RNA modifying enzymes, and associated human diseases.
 domains:
 - genomics
-- biological systems
 - chemistry and biochemistry
 - non-coding RNA
 homepage_url: https://genesilico.pl/modomics/

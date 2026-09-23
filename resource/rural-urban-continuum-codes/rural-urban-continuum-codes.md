@@ -19,7 +19,6 @@ description: The Rural-Urban Continuum Codes (RUCC) are a classification scheme 
 domains:
 - public health
 - agriculture
-- general
 - social determinants of health
 homepage_url: https://www.ers.usda.gov/data-products/rural-urban-continuum-codes
 id: rural-urban-continuum-codes

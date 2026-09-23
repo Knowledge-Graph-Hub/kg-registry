@@ -16,8 +16,6 @@ creation_date: '2025-06-04T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of experiments
   concerned with protein-protein interactions.
 domains:
-- biomedical
-- general
 - proteomics
 - protein interactions
 homepage_url: https://github.com/HUPO-PSI/psi-mi-CV

@@ -14,10 +14,9 @@ description: neXtProt is a human protein knowledge platform that integrates manu
 domains:
 - proteomics
 - genomics
-- biomedical
 homepage_url: https://www.nextprot.org/
 id: nextprot
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: neXtProt
 products:

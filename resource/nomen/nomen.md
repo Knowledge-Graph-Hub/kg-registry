@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
   encodes the goverened rules of nomenclature.
 domains:
-- biomedical
 - information technology
 - organisms
 - taxonomy

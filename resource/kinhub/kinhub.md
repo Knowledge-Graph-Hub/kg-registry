@@ -8,10 +8,10 @@ description: A comprehensive resource for human protein kinases featuring KinMap
   naming scheme
 domains:
 - genomics
-- biological systems
+- proteomics
 homepage_url: http://www.kinhub.org/
 id: kinhub
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: KinHub
 products:

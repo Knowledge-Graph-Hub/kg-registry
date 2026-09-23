@@ -14,7 +14,6 @@ creation_date: '2025-05-07T00:00:00Z'
 description: GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite
   and glycan information, with data on various species, tissues, and disease associations.
 domains:
-- biological systems
 - chemistry and biochemistry
 - glycomics
 homepage_url: https://glyconnect.expasy.org/

@@ -18,11 +18,10 @@ description: FuTRES Ontology of Vertebrate Traits is an application ontology use
   Ontology (BCO) to link observations of individual specimens to their trait values.
   Traits are defined in the Ontology of Biological Attributes (OBA).
 domains:
-- biological systems
 - phenotype
 homepage_url: https://github.com/futres/fovt
 id: fovt
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

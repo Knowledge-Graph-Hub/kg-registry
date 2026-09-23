@@ -15,7 +15,6 @@ description: Bgee is a database for retrieval and comparison of gene expression 
   across multiple animal species, providing information about gene expression in different
   anatomical structures, developmental stages, and species.
 domains:
-- biological systems
 - organisms
 - genomics
 - gene expression profiling

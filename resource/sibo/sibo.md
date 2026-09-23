@@ -13,7 +13,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: Social Behavior in insects
 domains:
-- biological systems
 - organisms
 - insects
 homepage_url: https://github.com/obophenotype/sibo

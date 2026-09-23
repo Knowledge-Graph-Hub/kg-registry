@@ -17,7 +17,6 @@ description: The National Survey on Drug Use and Health (NSDUH) is an annual sur
   behavioral health analysis.
 domains:
 - public health
-- general
 - neuroscience
 - mental disorders
 homepage_url: https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health

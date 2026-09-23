@@ -14,7 +14,6 @@ description: PANTHER is a Protein ANalysis THrough Evolutionary Relationships Cl
   gene families, particularly protein phylogeny, function and genetic variation impacting
   that function.
 domains:
-- biological systems
 - genomics
 - molecular evolution
 - proteomics

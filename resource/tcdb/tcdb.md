@@ -6,11 +6,10 @@ description: A curated classification database of membrane transport proteins, o
   by the Transporter Classification (TC) system and supporting sequence- and family-level
   exploration.
 domains:
-- biological systems
 - proteomics
 homepage_url: https://www.tcdb.org/
 id: tcdb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Transporter Classification Database (TCDB)
 products:

@@ -19,7 +19,6 @@ description: The Ontology of Host-Microbiome Interactions aims to ontologically 
   host organisms (e.g., human and mouse), and the interactions between the hosts and
   microbiomes at different conditions.
 domains:
-- biological systems
 - organisms
 - microbiology
 - microbiome

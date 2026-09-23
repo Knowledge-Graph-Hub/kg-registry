@@ -11,7 +11,6 @@ curators:
 description: The Zasha Weinberg Data repository is a collection of RNA sequence and structure data, including information about regulatory RNA elements, riboswitches, and non-coding RNAs. This data source contributes to the RNAcentral aggregator and focuses on structured RNA data from computational and comparative genomics analyses.
 domains:
   - genomics
-  - biological systems
   - non-coding RNA
 homepage_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
 id: zwd

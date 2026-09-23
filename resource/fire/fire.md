@@ -25,7 +25,6 @@ description: FIRE (Frequently Interacting REgions) are genomic regions that part
 domains:
 - genomics
 - systems biology
-- biomedical
 - epigenomics
 homepage_url: https://doi.org/10.1016/j.celrep.2016.10.061
 id: fire

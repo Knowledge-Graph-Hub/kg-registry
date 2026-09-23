@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
   and of other taxa referred to in FlyBase.
 domains:
-- biological systems
 - organisms
 - insects
 - taxonomy

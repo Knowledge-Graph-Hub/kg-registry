@@ -21,7 +21,6 @@ contacts:
 description: SCALES is an integrated justice platform to connect criminal justice
   data across data silos.
 domains:
-- general
 - public health
 - criminal justice
 homepage_url: https://scales-okn.org/

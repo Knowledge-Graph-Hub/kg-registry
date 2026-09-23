@@ -16,10 +16,9 @@ description: The Global Change Master Directory (GCMD) Keywords are NASA's hiera
 domains:
 - environment
 - information technology
-- general
 homepage_url: https://gcmd.earthdata.nasa.gov/
 id: gcmd
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: NASA Global Change Master Directory (GCMD) Keywords
 products:

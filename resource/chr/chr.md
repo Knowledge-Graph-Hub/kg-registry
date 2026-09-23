@@ -15,10 +15,10 @@ description: Monochrom, also known as Chromo or CHR, is an automatic translation
   UCSC chromosome bands to OWL classes. Each chromosome and chromosomal region is
   represented as an OWL class.
 domains:
-- chemistry and biochemistry
+- genomics
 homepage_url: https://monarch-initiative.github.io/monochrom/
 id: chr
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Vertebrate Breed Ontology is an ontology created to serve as a single
   computable resource for vertebrate breed names.
 domains:
-- biological systems
 - organisms
 - domestic animals
 homepage_url: https://github.com/monarch-initiative/vertebrate-breed-ontology

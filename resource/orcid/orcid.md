@@ -8,7 +8,6 @@ creation_date: '2025-03-09T00:00:00Z'
 description: ORCID is a free, unique, persistent identifier (PID) for individuals
   to use as they engage in research, scholarship, and innovation activities.
 domains:
-- other
 - literature
 - scholarly communication
 homepage_url: https://orcid.org/

@@ -23,11 +23,10 @@ description: Pathway Commons is a centralized web resource that aggregates biolo
 domains:
 - pathways
 - systems biology
-- biomedical
 homepage_url: https://www.pathwaycommons.org/
 id: pathwaycommons
 infores_id: pathway-commons
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/

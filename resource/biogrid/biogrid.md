@@ -18,7 +18,6 @@ description: The Biological General Repository for Interaction Datasets (BioGRID
   curation project datasets spanning model organisms and human, freely available under
   the MIT License.
 domains:
-- biomedical
 - proteomics
 - genomics
 - systems biology

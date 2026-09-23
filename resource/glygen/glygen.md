@@ -13,7 +13,6 @@ description: GlyGen is an integrated, data-driven resource for glycoproteins, gl
   data on glycobiology.
 domains:
 - chemistry and biochemistry
-- biological systems
 - glycomics
 homepage_url: https://glygen.org/
 id: glygen

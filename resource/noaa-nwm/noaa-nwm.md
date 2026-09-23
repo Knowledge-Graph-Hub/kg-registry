@@ -18,7 +18,6 @@ description: The NOAA National Water Model (NWM) is an operational hydrologic mo
   national-scale forecast source that drives its real-time flood-risk information.
 domains:
 - environment
-- general
 - information technology
 - water resources
 homepage_url: https://water.noaa.gov/about/nwm

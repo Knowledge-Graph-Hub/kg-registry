@@ -14,7 +14,6 @@ description: MotifMap is a system from UC Irvine that provides integrative genom
 domains:
 - genomics
 - systems biology
-- biomedical
 - gene regulation
 homepage_url: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-495
 id: motifmap

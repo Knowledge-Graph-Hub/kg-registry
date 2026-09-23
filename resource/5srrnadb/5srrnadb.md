@@ -18,7 +18,6 @@ description: 5SRNAdb (5S rRNA Database) is a curated repository of unique full-l
   and downloadable custom or global alignments for comparative and structural studies.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: http://www.combio.pl/rrna/
 id: 5srrnadb

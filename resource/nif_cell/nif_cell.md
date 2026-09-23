@@ -14,6 +14,7 @@ domains:
 - anatomy and development
 - biological systems
 - cell biology
+- neuroscience
 contacts:
 - category: Individual
   label: Fahim Imam

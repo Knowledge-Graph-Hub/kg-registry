@@ -17,9 +17,10 @@ description: Ontology to reproducibly study visualizations of clinical performan
 domains:
 - biomedical
 - information technology
+- clinical
 homepage_url: https://github.com/Display-Lab/psdo
 id: psdo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

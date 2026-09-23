@@ -21,7 +21,6 @@ description: The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge
   (OSDR/GeneLab), which hosts results from spaceflight experiments.
 domains:
 - genomics
-- biological systems
 homepage_url: https://github.com/BaranziniLab/spoke_genelab
 id: spoke-genelab
 layout: resource_detail
@@ -53,7 +52,7 @@ products:
     relation_type: prov:wasInfluencedBy
 repository: https://github.com/BaranziniLab/spoke_genelab
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 SPOKE GeneLab
 

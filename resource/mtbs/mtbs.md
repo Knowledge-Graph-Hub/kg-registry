@@ -17,7 +17,6 @@ description: Monitoring Trends in Burn Severity (MTBS) is an interagency program
   and the USDA Forest Service. MTBS data serve as an upstream source for KnowWhereGraph.
 domains:
 - environment
-- general
 - wildfires
 homepage_url: https://www.mtbs.gov/
 id: mtbs

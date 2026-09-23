@@ -14,9 +14,10 @@ creation_date: '2025-03-09T00:00:00Z'
 description: a Knowledge Graph for Illuminating the Druggable Genome
 domains:
 - biomedical
+- drug discovery
 homepage_url: https://kghub.org/kg-idg/index.html
 id: kg-idg
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause

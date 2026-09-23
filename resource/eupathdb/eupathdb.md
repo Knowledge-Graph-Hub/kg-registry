@@ -8,7 +8,6 @@ description: The Eukaryotic Pathogen Database (EuPathDB) is an integrated genomi
   from human and veterinary parasites, now known as VEuPathDB (Vectorbase and EuPathDB).
 domains:
 - genomics
-- biological systems
 - organisms
 - biomedical
 - infectious disease

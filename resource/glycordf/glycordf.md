@@ -31,8 +31,6 @@ description: 'GlycoRDF is a standardized ontology for representing glycomics dat
   '
 domains:
 - chemistry and biochemistry
-- biological systems
-- biomedical
 - glycomics
 homepage_url: https://www.glycoinfo.org/GlycoRDF/
 id: glycordf

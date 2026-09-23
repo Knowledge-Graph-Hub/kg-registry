@@ -16,12 +16,11 @@ creation_date: '2025-09-29T00:00:00Z'
 description: The uPheno ontology integrates multiple phenotype ontologies into a unified
   cross-species phenotype ontology.
 domains:
-- biological systems
 - phenotype
 homepage_url: https://github.com/obophenotype/upheno
 id: upheno
 infores_id: upheno
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

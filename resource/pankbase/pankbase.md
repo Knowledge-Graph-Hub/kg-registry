@@ -21,7 +21,6 @@ description: PanKbase is a comprehensive, centralized resource for the study of 
   data hub. Part of the NIH/NIDDK Human Islet Research Network (HIRN).
 domains:
 - biomedical
-- biological systems
 - genomics
 - clinical
 - precision medicine

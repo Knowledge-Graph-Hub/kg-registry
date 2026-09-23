@@ -19,7 +19,6 @@ description: PhosPhAt is the Arabidopsis Protein Phosphorylation Site Database, 
 domains:
 - agriculture
 - proteomics
-- biological systems
 - post-translational modification
 - organisms
 - plants

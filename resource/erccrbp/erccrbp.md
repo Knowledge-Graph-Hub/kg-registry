@@ -14,7 +14,6 @@ description: ERCC RNA Binding Protein dataset (ERCCRBP) is a collection of data 
   provides insights into the protein-RNA interactions important for exRNA stability,
   transport, and signaling.
 domains:
-- biomedical
 - genomics
 - chemistry and biochemistry
 - non-coding RNA

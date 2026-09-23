@@ -15,8 +15,6 @@ description: IID is the Integrated Interactions Database, an online database of 
   animal species, with context annotations for tissues, developmental stages, conservation,
   druggability, directionality, duration, mutations, and protein complexes.
 domains:
-- biological systems
-- biomedical
 - proteomics
 - protein interactions
 homepage_url: https://iid.ophid.utoronto.ca/

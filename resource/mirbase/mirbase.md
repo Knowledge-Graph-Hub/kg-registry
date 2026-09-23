@@ -15,7 +15,6 @@ description: miRBase is the primary online repository for microRNA sequences and
   and deep sequencing evidence.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: https://www.mirbase.org/
 id: mirbase

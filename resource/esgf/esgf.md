@@ -16,7 +16,6 @@ description: The Earth System Grid Federation (ESGF) is an international, distri
 domains:
 - environment
 - information technology
-- general
 - climate
 homepage_url: https://esgf.llnl.gov/
 id: esgf

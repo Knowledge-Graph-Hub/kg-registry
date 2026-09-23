@@ -17,7 +17,6 @@ description: NetPath is a public, manually curated resource of human signal tran
   The project is no longer actively maintained.
 domains:
 - pathways
-- biological systems
 - immunology
 - systems biology
 - signal transduction

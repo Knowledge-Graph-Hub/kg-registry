@@ -10,7 +10,6 @@ description: miRGate is a curated database of computationally predicted and expe
   both a web interface and a REST API for programmatic access.
 domains:
 - genomics
-- biomedical
 - non-coding RNA
 homepage_url: http://mirgate.bioinfo.cnio.es
 id: mirgate

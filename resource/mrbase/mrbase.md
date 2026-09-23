@@ -15,7 +15,6 @@ description: MR-Base is a platform that integrates a large database of harmonize
 domains:
 - biomedical
 - genomics
-- general
 - genome-wide association studies
 homepage_url: https://gwas.mrcieu.ac.uk/
 id: mrbase

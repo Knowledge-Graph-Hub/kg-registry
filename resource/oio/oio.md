@@ -17,11 +17,11 @@ description: The OBO Interoperability Ontology (OIO) was a set of annotation pro
   metadata terms that were widely used in early OBO ontologies for describing ontology
   versioning, imports, and other metadata.
 domains:
-- biological systems
 - general
+- information technology
 homepage_url: https://www.ebi.ac.uk/ols4/ontologies/oio
 id: oio
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

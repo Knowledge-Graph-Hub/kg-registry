@@ -15,7 +15,6 @@ description: OrthoDB is a comprehensive database of orthologous protein-coding g
   across multiple species, providing evolutionary and functional annotations of orthologous
   groups.
 domains:
-- biological systems
 - organisms
 - genomics
 - molecular evolution

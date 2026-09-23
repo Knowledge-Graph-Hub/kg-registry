@@ -13,8 +13,6 @@ description: The Enzyme Commission classification system provides a hierarchical
   scheme for enzymes based on the chemical reactions they catalyze, maintained by
   the IUBMB.
 domains:
-- systems biology
-- biological systems
 - chemistry and biochemistry
 - enzymes
 homepage_url: https://www.enzyme-database.org/

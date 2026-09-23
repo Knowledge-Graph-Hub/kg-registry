@@ -5,7 +5,6 @@ creation_date: '2026-01-30T00:00:00Z'
 description: The global archive of experimentally determined three-dimensional structures
   of proteins, nucleic acids, and macromolecular complexes.
 domains:
-- biological systems
 - proteomics
 - protein structure
 homepage_url: https://www.rcsb.org/

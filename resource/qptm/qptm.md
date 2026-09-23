@@ -5,7 +5,6 @@ creation_date: '2026-05-29T00:00:00Z'
 description: qPTM is a quantitative post-translational modification resource supporting
   analysis of PTM-related biological knowledge.
 domains:
-- biomedical
 - proteomics
 - post-translational modification
 homepage_url: http://qptm.omicsbio.info/index.php

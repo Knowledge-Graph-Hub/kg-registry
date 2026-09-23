@@ -19,8 +19,6 @@ description: The Human Reference Interactome (HuRI) is a comprehensive map of bi
   of human protein interactions and serves as a foundational resource for understanding
   cellular networks and disease mechanisms.
 domains:
-- biomedical
-- biological systems
 - proteomics
 - systems biology
 - protein interactions

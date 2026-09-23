@@ -15,8 +15,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for non-coding RNA, both of biological origin, and engineered.
 domains:
-- biomedical
-- general
 - genomics
 - non-coding RNA
 homepage_url: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology

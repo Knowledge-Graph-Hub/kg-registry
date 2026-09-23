@@ -16,10 +16,9 @@ creation_date: '2025-07-10T00:00:00Z'
 description: A structured, controlled vocabulary which describes the treatments, growing
   conditions, and/or study types used in plant biology experiments.
 domains:
-- biomedical
-- general
 - organisms
 - plants
+- agriculture
 homepage_url: http://planteome.org/
 id: peco
 last_modified_date: '2026-09-23T00:00:00Z'

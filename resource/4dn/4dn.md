@@ -22,8 +22,6 @@ description: The 4D Nucleome (4DN) Network aims to understand the principles und
   by the 4DN Network and other reference datasets.
 domains:
 - genomics
-- biological systems
-- biomedical
 - medical imaging
 - epigenomics
 homepage_url: https://data.4dnucleome.org/

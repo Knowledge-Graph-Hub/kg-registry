@@ -7,8 +7,6 @@ description: HIPPIE is a human protein-protein interaction reference resource in
   databases and assigning confidence scores based on the type, number, and quality
   of supporting experiments.
 domains:
-- biological systems
-- biomedical
 - proteomics
 - protein interactions
 homepage_url: http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/index.php

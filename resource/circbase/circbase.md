@@ -8,8 +8,6 @@ description: circBase is a database and exploration portal for circular RNAs (ci
   and downloadable data plus scripts for circRNA discovery.
 domains:
 - genomics
-- biological systems
-- organisms
 - non-coding RNA
 homepage_url: https://www.circbase.org/
 id: circbase

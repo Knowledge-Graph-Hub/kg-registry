@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
   Genomics Resource (VEuPathDB; https://veupathdb.org).
 domains:
-- biological systems
 - organisms
 - biomedical
 - infectious disease

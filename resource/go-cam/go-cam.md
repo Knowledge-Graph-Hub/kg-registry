@@ -21,14 +21,13 @@ creation_date: '2025-03-09T00:00:00Z'
 description: A structured framework for integrating Gene Ontology annotations into
   computable models of biological functions.
 domains:
-- biological systems
 - genomics
 - pathways
 - proteomics
 homepage_url: http://geneontology.org/go-cam/docs
 id: go-cam
 infores_id: go-cam
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

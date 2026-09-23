@@ -18,7 +18,6 @@ description: STELLAR is a geometric deep learning method for cell type discovery
   cells to known cell types and discovers novel cell types by transferring annotations
   across different dissection regions, tissues, and donors.
 domains:
-- biomedical
 - genomics
 - biological systems
 - single-cell analysis

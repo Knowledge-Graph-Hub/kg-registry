@@ -12,7 +12,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
-- chemistry and biochemistry
 - genomics
 - gene regulation
 homepage_url: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html

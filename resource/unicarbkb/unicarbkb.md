@@ -8,8 +8,6 @@ description: UniCarbKB is a glycomics and glycoproteomics knowledge platform tha
 domains:
 - chemistry and biochemistry
 - proteomics
-- biomedical
-- biological systems
 - glycomics
 homepage_url: https://www.unicarbkb.org
 id: unicarbkb

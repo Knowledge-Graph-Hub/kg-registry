@@ -15,7 +15,6 @@ contacts:
 creation_date: '2025-06-25T00:00:00Z'
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domains:
-- biological systems
 - phenotype
 - organisms
 - plants

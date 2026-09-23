@@ -34,6 +34,7 @@ domains:
 - biomedical
 - clinical
 - clinical coding
+- pharmacology
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/
 id: rxnorm
 infores_id: rxnorm

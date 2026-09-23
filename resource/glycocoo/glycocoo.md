@@ -37,8 +37,6 @@ description: The Glycoconjugate Ontology (GlycoCoO) is a standard semantic frame
   glycoconjugates from multiple publications and experimental contexts.
 domains:
 - chemistry and biochemistry
-- biological systems
-- biomedical
 - glycomics
 homepage_url: https://github.com/glycoinfo/GlycoCoO
 id: glycocoo

@@ -15,7 +15,6 @@ domains:
 - biomedical
 - literature
 - proteomics
-- biological systems
 - post-translational modification
 - natural language processing
 homepage_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/

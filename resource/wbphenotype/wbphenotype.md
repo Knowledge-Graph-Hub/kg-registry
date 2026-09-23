@@ -15,12 +15,11 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domains:
-- biological systems
 - phenotype
 homepage_url: https://github.com/obophenotype/c-elegans-phenotype-ontology
 id: wbphenotype
 infores_id: wbphenotype
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

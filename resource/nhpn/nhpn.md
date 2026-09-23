@@ -21,7 +21,6 @@ domains:
 - transportation
 - environment
 - information technology
-- general
 - geographic information systems
 homepage_url: https://www.fhwa.dot.gov/planning/processes/tools/nhpn/
 id: nhpn

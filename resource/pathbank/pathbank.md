@@ -14,7 +14,6 @@ description: PathBank is an interactive, visual pathway database that provides m
   diagrams, pathway analysis tools, and downloads in tabular, image, sequence, and
   pathway-exchange formats.
 domains:
-- biological systems
 - pathways
 - systems biology
 - biomedical

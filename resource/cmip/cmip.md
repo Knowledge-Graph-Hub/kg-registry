@@ -16,7 +16,6 @@ description: The Coupled Model Intercomparison Project (CMIP) is a coordinated c
 domains:
 - environment
 - information technology
-- general
 - climate
 homepage_url: https://github.com/WCRP-CMIP/CMIP6_CVs
 id: cmip

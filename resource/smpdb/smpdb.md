@@ -23,7 +23,6 @@ description: The Small Molecule Pathway Database (SMPDB) is an interactive, visu
   is hyperlinked to HMDB or DrugBank and each protein is hyperlinked to UniProt.
 domains:
 - pathways
-- biological systems
 - drug discovery
 - chemistry and biochemistry
 - metabolism

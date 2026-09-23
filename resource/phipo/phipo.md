@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: PHIPO is a formal ontology of species-neutral phenotypes observed in
   pathogen-host interactions.
 domains:
-- biological systems
 - phenotype
 - microbiology
 - host-pathogen interactions

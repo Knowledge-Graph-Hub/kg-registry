@@ -13,7 +13,6 @@ description: Wikispecies is a free, collaboratively edited Wikimedia species dir
   organisms.
 domains:
 - organisms
-- general
 - biodiversity
 - taxonomy
 homepage_url: https://species.wikimedia.org/wiki/Main_Page

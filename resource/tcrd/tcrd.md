@@ -45,11 +45,12 @@ description: The Target Central Resource Database (TCRD) is a comprehensive mult
 domains:
 - drug discovery
 - genomics
-- biological systems
+- proteomics
+- pharmacology
 homepage_url: https://datascience.unm.edu/tcrd/
 id: tcrd
 infores_id: tcrd
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

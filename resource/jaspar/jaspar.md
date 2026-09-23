@@ -11,7 +11,6 @@ description: JASPAR is an open-access database of curated, non-redundant transcr
 domains:
 - genomics
 - systems biology
-- biological systems
 - gene regulation
 homepage_url: https://jaspar.elixir.no/
 id: jaspar

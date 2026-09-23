@@ -13,7 +13,6 @@ domains:
 - proteomics
 - systems biology
 - biomedical
-- biological systems
 - chemistry and biochemistry
 - protein interactions
 homepage_url: http://cpdb.molgen.mpg.de/

@@ -10,7 +10,6 @@ contacts:
 creation_date: '2025-03-09T00:00:00Z'
 description: Zebrafish Information Network, including the Zebrafish Anatomical Ontology
 domains:
-- biological systems
 - genomics
 - organisms
 - anatomy and development

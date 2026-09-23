@@ -14,7 +14,6 @@ description: P3DB, the Plant Protein Phosphorylation Database, is a plant phosph
 domains:
   - agriculture
   - proteomics
-  - biological systems
   - post-translational modification
   - organisms
   - plants

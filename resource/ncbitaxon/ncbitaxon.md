@@ -16,7 +16,6 @@ contacts:
 creation_date: '2025-05-28T00:00:00Z'
 description: An ontology representation of the NCBI organismal taxonomy
 domains:
-- biological systems
 - organisms
 - taxonomy
 homepage_url: https://github.com/obophenotype/ncbitaxon

@@ -13,7 +13,6 @@ description: PLncDB (Plant Long noncoding RNA Database) is a comprehensive encyc
   EVLncRNAs and plant lncRNA candidates from RNAcentral.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 - organisms
 - plants

@@ -16,7 +16,6 @@ description: STRING is a database of known and predicted protein-protein interac
   interactions aggregated from other primary databases.
 domains:
 - genomics
-- biomedical
 - proteomics
 - protein interactions
 homepage_url: https://string-db.org/

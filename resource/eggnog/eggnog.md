@@ -6,7 +6,6 @@ description: A database of orthologous groups and functional annotations derived
   comparative genomics, supporting cross-species gene function inference.
 domains:
 - genomics
-- biological systems
 - molecular evolution
 homepage_url: https://eggnogdb.org/
 id: eggnog

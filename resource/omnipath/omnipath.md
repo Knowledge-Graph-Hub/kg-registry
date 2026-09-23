@@ -20,7 +20,6 @@ description: OmniPath is a comprehensive prior knowledge resource that integrate
   web services, R/Bioconductor packages, Python clients, and Cytoscape plugins.
 domains:
 - systems biology
-- biological systems
 - proteomics
 - pathways
 - protein interactions

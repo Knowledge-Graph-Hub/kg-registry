@@ -18,7 +18,6 @@ description: The Protein Common Interface Database (ProtCID) provides comprehens
 domains:
 - proteomics
 - chemistry and biochemistry
-- biological systems
 - protein interactions
 - protein structure
 homepage_url: https://dunbrack2.fccc.edu/ProtCiD/Default.aspx

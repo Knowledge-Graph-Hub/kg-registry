@@ -15,9 +15,7 @@ description: Phospho.ELM is a manually curated database of experimentally verifi
   phosphorylation instances to kinases, species, sequence accessions, and literature
   references.
 domains:
-- biomedical
 - proteomics
-- biological systems
 - post-translational modification
 homepage_url: http://phospho.elm.eu.org/
 id: phosphoelm

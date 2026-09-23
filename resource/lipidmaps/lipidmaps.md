@@ -17,7 +17,6 @@ description: LIPID MAPS is the LIPID MAPS Lipidomics Gateway, a community resour
   through a web gateway, bulk downloads, and a REST API.
 domains:
 - chemistry and biochemistry
-- biomedical
 - nutrition
 - metabolomics
 homepage_url: https://www.lipidmaps.org/

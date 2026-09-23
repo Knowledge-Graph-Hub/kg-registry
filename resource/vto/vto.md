@@ -15,7 +15,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
 domains:
-- biological systems
 - organisms
 - taxonomy
 homepage_url: https://github.com/phenoscape/vertebrate-taxonomy-ontology

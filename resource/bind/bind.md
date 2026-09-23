@@ -7,7 +7,6 @@ description: The Biomolecular Interaction Network Database (BIND) was a database
   is no longer active as a standalone resource but its data has been incorporated
   into other databases like BOND and iRefIndex.
 domains:
-- biomedical
 - pathways
 - proteomics
 - protein interactions

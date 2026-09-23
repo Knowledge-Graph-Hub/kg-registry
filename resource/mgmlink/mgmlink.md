@@ -11,7 +11,6 @@ contacts:
     label: Brook Santangelo
 description: A knowledge graph of linked microbes, genes and metabolites.
 domains:
-  - biological systems
   - microbiology
   - microbiome
 homepage_url: https://github.com/bsantan/MGMLink

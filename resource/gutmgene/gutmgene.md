@@ -16,7 +16,6 @@ creation_date: '2025-04-13T00:00:00Z'
 description: A manually curated database of target genes of gut microbes and microbial
   metabolites in humans and mice.
 domains:
-- biological systems
 - microbiology
 - microbiome
 homepage_url: http://bio-computing.hrbmu.edu.cn/gutmgene

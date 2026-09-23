@@ -18,10 +18,9 @@ description: BacDive (Bacterial Diversity Metadatabase) is the world's largest d
   standardized information with Digital Object Identifiers for each strain.
 domains:
 - microbiology
-- biological systems
 homepage_url: https://bacdive.dsmz.de/
 id: bacdive
-last_modified_date: '2026-06-24T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

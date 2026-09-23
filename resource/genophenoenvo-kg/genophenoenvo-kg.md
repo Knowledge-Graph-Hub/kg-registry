@@ -10,8 +10,6 @@ domains:
   - environment
   - phenotype
   - systems biology
-  - biological systems
-  - biomedical
   - organisms
   - plants
 homepage_url: https://github.com/genophenoenvo/knowledge-graph

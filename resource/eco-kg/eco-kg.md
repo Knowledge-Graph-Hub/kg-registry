@@ -23,7 +23,6 @@ description: A knowledge graph of plant traits starting with Planteome and EOL T
 domains:
   - organisms
   - environment
-  - biological systems
   - plants
   - ecology
 homepage_url: https://github.com/Knowledge-Graph-Hub/eco-kg

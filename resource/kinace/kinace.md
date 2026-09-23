@@ -6,8 +6,6 @@ description: KiNet is a web portal and dataset, originally deposited as KinAce, 
 domains:
   - proteomics
   - systems biology
-  - biomedical
-  - biological systems
   - post-translational modification
 homepage_url: https://kinet.kinametrix.com/
 id: "kinace"

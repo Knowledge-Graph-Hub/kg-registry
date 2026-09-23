@@ -17,7 +17,6 @@ description: KPIs for ESG is a standardized framework of Key Performance Indicat
   reporting. It provides the controlled KPI vocabulary used by EmeraldGraph/EmeraldMind.
 domains:
 - environment
-- general
 - public health
 - sustainability
 homepage_url: https://effas.com/

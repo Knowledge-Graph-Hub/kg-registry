@@ -20,12 +20,11 @@ description: 'The Gene Ontology Annotation (GOA) Database provides high-quality 
   '
 domains:
 - genomics
-- biological systems
 - proteomics
 homepage_url: https://www.ebi.ac.uk/GOA/
 id: goa
 infores_id: goa
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use

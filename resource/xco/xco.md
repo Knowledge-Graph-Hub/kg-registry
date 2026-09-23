@@ -17,9 +17,10 @@ description: Conditions under which physiological and morphological measurements
   made both in the clinic and in studies involving humans or model organisms.
 domains:
 - biomedical
+- phenotype
 homepage_url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 id: xco
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

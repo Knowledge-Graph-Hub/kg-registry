@@ -17,7 +17,6 @@ description: Open Tree of Life (OToL) is a comprehensive, collaborative online p
   a dynamic tree of life with 2.4 million tips representing species and infraspecific
   taxa.
 domains:
-- biological systems
 - organisms
 - taxonomy
 homepage_url: https://tree.opentreeoflife.org/

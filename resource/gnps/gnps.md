@@ -14,7 +14,6 @@ description: Global Natural Products Social Molecular Networking (GNPS) is a web
   data.
 domains:
 - chemistry and biochemistry
-- biomedical
 - microbiology
 - natural products
 - metabolomics

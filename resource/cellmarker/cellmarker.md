@@ -22,7 +22,6 @@ domains:
 - biomedical
 - genomics
 - biological systems
-- organisms
 - cell biology
 - single-cell analysis
 homepage_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/

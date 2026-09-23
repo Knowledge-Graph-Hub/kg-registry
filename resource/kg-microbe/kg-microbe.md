@@ -16,7 +16,6 @@ domains:
   - microbiology
   - organisms
   - phenotype
-  - biological systems
 homepage_url: https://kghub.org/kg-microbe/index.html
 id: kg-microbe
 layout: resource_detail
@@ -246,7 +245,7 @@ taxon:
   - NCBITaxon:2
   - NCBITaxon:2759
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 KG-Microbe.

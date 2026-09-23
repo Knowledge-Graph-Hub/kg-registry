@@ -18,9 +18,10 @@ description: PREFER is an ontology designed to integrate high-throughput bioproc
   scales of a precision fermentation process, to accelerate the development and scaling
   of biosustainable production processes.
 domains:
-- general
 - environment
 - sustainability
+- chemistry and biochemistry
+- microbiology
 homepage_url: https://github.com/Multiomics-Analytics-Group/prefer_ontology
 id: prefer
 last_modified_date: '2026-09-23T00:00:00Z'

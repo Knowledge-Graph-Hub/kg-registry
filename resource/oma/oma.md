@@ -23,7 +23,6 @@ creation_date: '2025-05-07T00:00:00Z'
 description: OMA (Orthologous MAtrix) is a database of orthologous genes among multiple
   species, providing a systematic classification of orthologs across complete genomes.
 domains:
-- biological systems
 - organisms
 - genomics
 - molecular evolution

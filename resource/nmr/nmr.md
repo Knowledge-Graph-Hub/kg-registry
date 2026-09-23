@@ -13,8 +13,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic
   Resonance (NMR) component in a metabolomics investigation.
 domains:
-- biomedical
-- general
 - chemistry and biochemistry
 - metabolomics
 homepage_url: http://msi-ontology.sourceforge.net/

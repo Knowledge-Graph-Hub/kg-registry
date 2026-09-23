@@ -18,7 +18,6 @@ description: snoDB is a specialized database of human small nucleolar RNAs (snoR
   data across tissues and cancer cells.
 domains:
 - genomics
-- biological systems
 - non-coding RNA
 homepage_url: https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/
 id: snodb

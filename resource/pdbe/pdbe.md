@@ -8,7 +8,6 @@ description: PDBe-KB (Protein Data Bank in Europe - Knowledge Base) is an open, 
   macromolecular structure data integrated with functional annotations from multiple
   sources.
 domains:
-- biomedical
 - genomics
 - proteomics
 - anatomy and development

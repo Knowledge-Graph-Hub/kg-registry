@@ -17,7 +17,6 @@ description: The Human Ancestry Ontology (HANCESTRO) provides a systematic descr
   of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
   association studies.
 domains:
-- biological systems
 - organisms
 - genomics
 - population genetics

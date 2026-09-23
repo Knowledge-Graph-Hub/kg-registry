@@ -20,7 +20,6 @@ description: EcoCyc captures information from 44,000 publications for Escherichi
 domains:
 - microbiology
 - genomics
-- biological systems
 - pathways
 - metabolism
 homepage_url: https://ecocyc.org/

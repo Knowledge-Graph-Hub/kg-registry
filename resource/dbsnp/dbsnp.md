@@ -16,7 +16,6 @@ description: dbSNP contains human single nucleotide variations, microsatellites,
   molecular consequence, and genomic and RefSeq mapping information for both common
   variations and clinical mutations.
 domains:
-- biological systems
 - biomedical
 - genomics
 - genetic variation

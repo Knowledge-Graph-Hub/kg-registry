@@ -15,7 +15,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domains:
-- biological systems
 - phenotype
 - organisms
 - insects

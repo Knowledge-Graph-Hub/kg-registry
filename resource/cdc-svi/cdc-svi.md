@@ -20,7 +20,6 @@ description: The CDC/ATSDR Social Vulnerability Index (SVI) measures the relativ
 domains:
 - public health
 - environment
-- general
 - social determinants of health
 - disasters
 homepage_url: https://www.atsdr.cdc.gov/place-health/php/svi/

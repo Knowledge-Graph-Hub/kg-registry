@@ -11,11 +11,10 @@ description: Gene-List Network Enrichment Analysis (GeLiNEA) is a computational 
 domains:
 - genomics
 - systems biology
-- biomedical
 homepage_url: https://github.com/broadinstitute/GeLiNEA
 id: gelinea
 infores_id: gelinea
-last_modified_date: '2025-11-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

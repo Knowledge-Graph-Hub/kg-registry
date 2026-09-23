@@ -16,7 +16,6 @@ creation_date: '2025-09-29T00:00:00Z'
 description: a formalization of concepts and relations relevant to evolutionary comparative
   analysis
 domains:
-- biological systems
 - organisms
 - genomics
 - molecular evolution

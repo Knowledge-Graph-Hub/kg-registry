@@ -10,12 +10,11 @@ contacts:
 creation_date: '2026-06-02T00:00:00Z'
 description: InterMine is an open-source biological data warehouse system for integrating heterogeneous biological data sources and exposing them through customizable web interfaces, query templates, and RESTful web-service APIs.
 domains:
-  - biomedical
   - genomics
   - information technology
 homepage_url: https://intermine.org/
 id: intermine
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html

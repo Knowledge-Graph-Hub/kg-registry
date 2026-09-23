@@ -14,10 +14,12 @@ description: ChEMBL is a manually curated database of bioactive molecules with d
   translation of genomic information into effective new drugs.
 domains:
 - chemistry and biochemistry
+- drug discovery
+- pharmacology
 homepage_url: https://www.ebi.ac.uk/chembl/
 id: chembl
 infores_id: chembl
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/

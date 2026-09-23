@@ -17,7 +17,6 @@ description: LOTUS (naturaL prOducTs occUrrence databaSe) is an open knowledge b
   tabular snapshots on Zenodo.
 domains:
 - chemistry and biochemistry
-- biomedical
 - natural products
 homepage_url: https://lotus.naturalproducts.net/
 id: lotus

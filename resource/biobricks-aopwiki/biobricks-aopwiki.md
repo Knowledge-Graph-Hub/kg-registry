@@ -21,7 +21,6 @@ description: BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome P
   from the AOP-Wiki.
 domains:
 - toxicology
-- biological systems
 - adverse outcome pathways
 homepage_url: https://github.com/biobricks-ai/aopwikirdf-kg
 id: biobricks-aopwiki

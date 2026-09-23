@@ -16,7 +16,6 @@ description: EpiGraphDB is an analytical platform and graph database for health 
 domains:
   - biomedical
   - genomics
-  - general
   - public health
   - epidemiology
   - genome-wide association studies

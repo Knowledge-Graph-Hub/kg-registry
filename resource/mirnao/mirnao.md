@@ -12,7 +12,6 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology for use with miRNA databases.
 domains:
-- chemistry and biochemistry
 - genomics
 - non-coding RNA
 homepage_url: http://code.google.com/p/mirna-ontology/

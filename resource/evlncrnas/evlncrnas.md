@@ -5,7 +5,6 @@ creation_date: '2018-01-05T00:00:00Z'
 description: EVLncRNAs is a comprehensive database of experimentally validated functional long non-coding RNAs (lncRNAs) curated manually from low-throughput experimental studies. The database covers functional lncRNAs from 162 species, including disease associations, biological functions, interaction partners, structures, circular RNAs, exosomal lncRNAs, peptide-coding lncRNAs, and resistant lncRNAs. EVLncRNAs provides functional classifications based on Gene Ontology categories (biological processes, cellular components, molecular functions, and clinical applications), detailed interaction pathways, and integration with homologous lncRNAs, subcellular localization, phase separation, COVID-19, and organoid-related data.
 domains:
   - genomics
-  - biological systems
   - non-coding RNA
 homepage_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/
 id: evlncrnas
