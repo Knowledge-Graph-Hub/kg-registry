@@ -40,6 +40,22 @@
     return new Set((resource && Array.isArray(resource.domains) ? resource.domains : []).filter(Boolean).map(domain => String(domain).trim()));
   }
 
+  // A shared specific domain (one with a broader is_a parent, such as
+  // "neurodegenerative disease") says more about two resources than a shared
+  // broad domain such as "biomedical", so it carries twice the weight.
+  function domainWeight(domain) {
+    const parents = window.kgRegistryDomainParents || {};
+    return Object.prototype.hasOwnProperty.call(parents, domain) ? 4 : 2;
+  }
+
+  function weightedDomainCount(domains) {
+    let total = 0;
+    domains.forEach(domain => {
+      total += domainWeight(domain);
+    });
+    return total;
+  }
+
   function isProductOwnedByResource(resourceId, product) {
     if (typeof resourceId !== 'string' || !resourceId.trim()) return false;
     if (!product || typeof product.id !== 'string') return false;
@@ -98,8 +114,8 @@
     const sourceUnion = setUnion(leftSources, rightSources);
     const categoryUnionSize = sharedCategory ? 1 : 2;
 
-    const weightedShared = sharedDomains.length * 2 + sharedOriginalSources.length * 3 + (sharedCategory ? 4 : 0);
-    const weightedUnion = domainUnion.size * 2 + sourceUnion.size * 3 + categoryUnionSize * 4;
+    const weightedShared = weightedDomainCount(sharedDomains) + sharedOriginalSources.length * 3 + (sharedCategory ? 4 : 0);
+    const weightedUnion = weightedDomainCount(domainUnion) + sourceUnion.size * 3 + categoryUnionSize * 4;
     const similarityScore = weightedUnion ? Number(((weightedShared / weightedUnion) * 100).toFixed(1)) : 0;
 
     return {
