@@ -33,8 +33,12 @@ globalThis.jsyaml = {{ load() {{ return {{ resources: [] }}; }} }};
 
 {source}
 
-const result = globalThis.__resourceCompareTestHooks.compareResources({json.dumps(left)}, {json.dumps(right)});
-console.log(JSON.stringify({{ similarityScore: result.similarityScore, sharedDomains: result.sharedDomains }}));
+const hooks = globalThis.__resourceCompareTestHooks;
+const result = hooks.compareResources({json.dumps(left)}, {json.dumps(right)});
+console.log(JSON.stringify({{
+  similarityScore: result.similarityScore,
+  sharedDomains: result.sharedDomains,
+}}));
 """
     result = subprocess.run(
         ["node", "-"], input=script, text=True, capture_output=True, check=True, cwd=repo_root
@@ -47,8 +51,16 @@ PARENTS = {"neurodegenerative disease": "neuroscience", "cancer": "biomedical"}
 
 def test_shared_specific_domain_outweighs_shared_broad_domain() -> None:
     specific = _compare(
-        {"id": "a", "category": "KnowledgeGraph", "domains": ["neuroscience", "neurodegenerative disease"]},
-        {"id": "b", "category": "Ontology", "domains": ["neuroscience", "neurodegenerative disease"]},
+        {
+            "id": "a",
+            "category": "KnowledgeGraph",
+            "domains": ["neuroscience", "neurodegenerative disease"],
+        },
+        {
+            "id": "b",
+            "category": "Ontology",
+            "domains": ["neuroscience", "neurodegenerative disease"],
+        },
         PARENTS,
     )
     broad = _compare(
@@ -64,8 +76,16 @@ def test_shared_specific_domain_outweighs_shared_broad_domain() -> None:
 
 def test_without_hierarchy_every_domain_weighs_the_same() -> None:
     result = _compare(
-        {"id": "a", "category": "KnowledgeGraph", "domains": ["neuroscience", "neurodegenerative disease"]},
-        {"id": "b", "category": "Ontology", "domains": ["neuroscience", "neurodegenerative disease"]},
+        {
+            "id": "a",
+            "category": "KnowledgeGraph",
+            "domains": ["neuroscience", "neurodegenerative disease"],
+        },
+        {
+            "id": "b",
+            "category": "Ontology",
+            "domains": ["neuroscience", "neurodegenerative disease"],
+        },
         {},
     )
     assert result["similarityScore"] == 33.3
