@@ -5,19 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jingshan Huang
+  orcid: 0000-0003-2408-2883
   contact_details:
   - contact_type: email
     value: huang@southalabama.edu
   - contact_type: github
     value: Huang-OMIT
-  label: Jingshan Huang
-  orcid: 0000-0003-2408-2883
 creation_date: '2025-06-25T00:00:00Z'
 description: Ontology to establish data exchange standards and common data elements
   in the microRNA (miR) domain
 domains:
 - genomics
 - non-coding RNA
+- chemistry and biochemistry
 homepage_url: http://omit.cis.usouthal.edu/
 id: omit
 last_modified_date: '2026-09-23T00:00:00Z'

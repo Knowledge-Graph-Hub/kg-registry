@@ -16,6 +16,7 @@ creation_date: '2025-09-29T00:00:00Z'
 description: A formal ontology of genes and genomes of biological organisms.
 domains:
 - genomics
+- biological systems
 homepage_url: https://bitbucket.org/hegroup/ogg
 id: ogg
 last_modified_date: '2026-09-23T00:00:00Z'

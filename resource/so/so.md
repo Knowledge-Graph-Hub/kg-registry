@@ -5,18 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Karen Eilbeck
+  orcid: 0000-0002-0831-6427
   contact_details:
   - contact_type: email
     value: keilbeck@genetics.utah.edu
   - contact_type: github
     value: keilbeck
-  label: Karen Eilbeck
-  orcid: 0000-0002-0831-6427
 creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary for sequence annotation, for the exchange
   of annotation data and for the description of sequence objects in databases.
 domains:
 - genomics
+- chemistry and biochemistry
 homepage_url: http://www.sequenceontology.org/
 id: so
 infores_id: so

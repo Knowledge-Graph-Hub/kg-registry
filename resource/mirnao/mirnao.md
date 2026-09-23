@@ -14,6 +14,7 @@ description: An application ontology for use with miRNA databases.
 domains:
 - genomics
 - non-coding RNA
+- chemistry and biochemistry
 homepage_url: http://code.google.com/p/mirna-ontology/
 id: mirnao
 last_modified_date: '2026-09-23T00:00:00Z'
@@ -35,6 +36,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/mirnao.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compression: targz

@@ -5,18 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Rebecca Jackson
+  orcid: 0000-0003-4871-5569
   contact_details:
   - contact_type: email
     value: rbca.jackson@gmail.com
   - contact_type: github
     value: beckyjackson
-  label: Rebecca Jackson
-  orcid: 0000-0003-4871-5569
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to represent genomics cohort attributes
 domains:
 - genomics
 - biomedical
+- organisms
 homepage_url: https://github.com/IHCC-cohorts/GECKO
 id: gecko
 last_modified_date: '2026-09-23T00:00:00Z'

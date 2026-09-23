@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Txell Amig
+  orcid: 0009-0009-0018-4253
   contact_details:
   - contact_type: email
     value: txellmgsol@gmail.com
   - contact_type: github
     value: txellext
-  label: Txell Amig
-  orcid: 0009-0009-0018-4253
 creation_date: '2026-06-12T00:00:00Z'
 description: PREFER is an ontology designed to integrate high-throughput bioprocess
   data, covering operational, environmental and process parameters across different
@@ -22,6 +22,7 @@ domains:
 - sustainability
 - chemistry and biochemistry
 - microbiology
+- general
 homepage_url: https://github.com/Multiomics-Analytics-Group/prefer_ontology
 id: prefer
 last_modified_date: '2026-09-23T00:00:00Z'

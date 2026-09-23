@@ -5,19 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Stephen Fisher
+  orcid: 0000-0001-8034-7685
   contact_details:
   - contact_type: email
     value: safisher@upenn.edu
   - contact_type: github
     value: safisher
-  label: Stephen Fisher
-  orcid: 0000-0001-8034-7685
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology designed to annotate next-generation sequencing
   experiments performed on RNA.
 domains:
 - biomedical
 - genomics
+- general
 homepage_url: http://kim.bio.upenn.edu/software/ornaseq.shtml
 id: ornaseq
 last_modified_date: '2026-09-23T00:00:00Z'

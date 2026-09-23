@@ -5,19 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Luana Licata
+  orcid: 0000-0001-5084-9000
   contact_details:
   - contact_type: email
     value: luana.licata@gmail.com
   - contact_type: github
     value: luanalicata
-  label: Luana Licata
-  orcid: 0000-0001-5084-9000
 creation_date: '2025-06-04T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of experiments
   concerned with protein-protein interactions.
 domains:
 - proteomics
 - protein interactions
+- general
 homepage_url: https://github.com/HUPO-PSI/psi-mi-CV
 id: mi
 infores_id: mi

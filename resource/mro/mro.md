@@ -5,18 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Bjoern Peters
+  orcid: 0000-0002-8457-6693
   contact_details:
   - contact_type: email
     value: bpeters@lji.org
   - contact_type: github
     value: bpeters42
-  label: Bjoern Peters
-  orcid: 0000-0002-8457-6693
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for Major Histocompatibility Complex (MHC) restriction in
   experiments
 domains:
 - immunology
+- chemistry and biochemistry
 homepage_url: https://github.com/IEDB/MRO
 id: mro
 last_modified_date: '2026-09-23T00:00:00Z'

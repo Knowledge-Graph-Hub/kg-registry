@@ -15,6 +15,7 @@ description: Descriptors relevant to the experimental conditions of the Nuclear 
 domains:
 - chemistry and biochemistry
 - metabolomics
+- general
 homepage_url: http://msi-ontology.sourceforge.net/
 id: nmr
 last_modified_date: '2026-09-23T00:00:00Z'
@@ -36,6 +37,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by KG-Bioportal

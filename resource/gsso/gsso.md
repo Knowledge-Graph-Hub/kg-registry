@@ -19,6 +19,7 @@ description: The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms f
 domains:
 - biomedical
 - public health
+- organisms
 homepage_url: https://gsso.research.cchmc.org/
 id: gsso
 last_modified_date: '2026-09-23T00:00:00Z'

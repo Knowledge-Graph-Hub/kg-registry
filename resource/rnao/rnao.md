@@ -5,17 +5,18 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Colin Batchelor
+  orcid: 0000-0001-5985-7429
   contact_details:
   - contact_type: email
     value: BatchelorC@rsc.org
-  label: Colin Batchelor
-  orcid: 0000-0001-5985-7429
 creation_date: '2025-09-29T00:00:00Z'
 description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
   secondary and three-dimensional structures.
 domains:
 - genomics
 - non-coding RNA
+- chemistry and biochemistry
 homepage_url: https://github.com/bgsu-rna/rnao
 id: rnao
 last_modified_date: '2026-09-23T00:00:00Z'

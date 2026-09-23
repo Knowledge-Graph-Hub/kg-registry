@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Citlalli Mej a-Almonte
+  orcid: 0000-0002-0142-5591
   contact_details:
   - contact_type: email
     value: citlalli.mejiaalmonte@gmail.com
   - contact_type: github
     value: citmejia
-  label: Citlalli Mej a-Almonte
-  orcid: 0000-0002-0142-5591
 - category: Individual
   contact_details:
   - contact_type: email
@@ -25,6 +25,7 @@ description: Microbial Conditions Ontology is an ontology...
 domains:
 - biomedical
 - microbiology
+- general
 homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 id: mco
 last_modified_date: '2026-09-23T00:00:00Z'

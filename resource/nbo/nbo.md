@@ -5,18 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: George Gkoutos
+  orcid: 0000-0002-2061-091X
   contact_details:
   - contact_type: email
     value: g.gkoutos@bham.ac.uk
   - contact_type: github
     value: gkoutos
-  label: George Gkoutos
-  orcid: 0000-0002-2061-091X
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of human and animal behaviours and behavioural phenotypes
 domains:
 - phenotype
 - neuroscience
+- biological systems
 homepage_url: https://github.com/obo-behavior/behavior-ontology/
 id: nbo
 infores_id: nbo

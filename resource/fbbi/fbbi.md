@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Damien Goutte-Gattat
+  orcid: 0000-0002-6095-8718
   contact_details:
   - contact_type: email
     value: damien@gerbi-gmb.de
   - contact_type: github
     value: gouttegd
-  label: Damien Goutte-Gattat
-  orcid: 0000-0002-6095-8718
 - category: Individual
   contact_details:
   - contact_type: email
@@ -25,6 +25,7 @@ description: An ontology for the description of sample preparation, visualizatio
   and imaging methods used in biomedical research.
 domains:
 - biomedical
+- general
 homepage_url: https://github.com/foundingGIDE/fbbi
 id: fbbi
 last_modified_date: '2026-09-23T00:00:00Z'

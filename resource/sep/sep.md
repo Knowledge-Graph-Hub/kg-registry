@@ -15,6 +15,7 @@ description: A structured controlled vocabulary for the annotation of sample pro
 domains:
 - biomedical
 - chemistry and biochemistry
+- general
 homepage_url: http://psidev.info/index.php?q=node/312
 id: sep
 last_modified_date: '2026-09-23T00:00:00Z'

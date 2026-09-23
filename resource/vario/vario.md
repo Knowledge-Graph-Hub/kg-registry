@@ -5,19 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Mauno Vihinen
+  orcid: 0000-0002-9614-7976
   contact_details:
   - contact_type: email
     value: mauno.vihinen@med.lu.se
   - contact_type: github
     value: maunov
-  label: Mauno Vihinen
-  orcid: 0000-0002-9614-7976
 creation_date: '2025-09-29T00:00:00Z'
 description: Variation Ontology, VariO, is an ontology for standardized, systematic
   description of effects, consequences and mechanisms of variations.
 domains:
 - genomics
 - genetic variation
+- biological systems
 homepage_url: http://variationontology.org
 id: vario
 last_modified_date: '2026-09-23T00:00:00Z'

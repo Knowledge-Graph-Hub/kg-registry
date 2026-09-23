@@ -14,6 +14,7 @@ description: Description unavailable.
 domains:
 - genomics
 - gene regulation
+- chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
 id: bootstrep
 last_modified_date: '2026-09-23T00:00:00Z'
@@ -35,6 +36,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    when accessing file'
 publications: []
 use_instead:
 - go

@@ -16,6 +16,7 @@ description: A standardized description of a microarray experiment in support of
 domains:
 - biomedical
 - genomics
+- general
 homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
 id: mo
 last_modified_date: '2026-09-23T00:00:00Z'
@@ -32,11 +33,13 @@ products:
     source: mo
   product_url: http://purl.obolibrary.org/obo/mo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-    when accessing file'
   - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
     (HTTP 404); product_url now points to a Wayback Machine archived snapshot of the
     MGED Ontology OWL.
+  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of Microarray and Gene Expression Data Ontology (MO),

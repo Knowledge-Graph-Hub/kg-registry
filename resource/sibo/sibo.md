@@ -5,16 +5,17 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
 creation_date: '2025-09-29T00:00:00Z'
 description: Social Behavior in insects
 domains:
 - organisms
 - insects
+- biological systems
 homepage_url: https://github.com/obophenotype/sibo
 id: sibo
 last_modified_date: '2026-09-23T00:00:00Z'

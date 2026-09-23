@@ -5,12 +5,12 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Jim Balhoff
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
 - category: Individual
   contact_details:
   - contact_type: email
@@ -23,7 +23,6 @@ creation_date: '2025-03-09T00:00:00Z'
 description: Integrated suite of OBO ontologies with precomputed inferred relationships
 domains:
 - biological systems
-- general
 homepage_url: https://github.com/INCATools/ubergraph/
 id: ubergraph
 infores_id: ubergraph
@@ -105,8 +104,8 @@ products:
   id: ubergraph.sparql
   name: Ubergraph SPARQL
   original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ubergraph
+  - source: ubergraph
+    relation_type: prov:hadPrimarySource
   product_url: https://apps.okn.us/ubergraph/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for Ubergraph
@@ -114,8 +113,8 @@ products:
   id: ubergraph.tpf
   name: Ubergraph TPF
   original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ubergraph
+  - source: ubergraph
+    relation_type: prov:hadPrimarySource
   product_url: https://apps.okn.us/ldf/ubergraph
 - category: GraphProduct
   compatibility:

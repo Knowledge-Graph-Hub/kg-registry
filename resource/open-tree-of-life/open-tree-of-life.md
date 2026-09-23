@@ -122,6 +122,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+    when accessing file'
 publications:
 - authors:
   - Hinchliff CE
@@ -166,7 +168,7 @@ publications:
   year: '2015'
 - authors:
   - Emily Jane Mctavish
-  - "Luna Luisa S\xE1nchez-Reyes"
+  - Luna Luisa Sánchez-Reyes
   - Mark T Holder
   doi: 10.1093/sysbio/syab033
   id: doi:10.1093/sysbio/syab033

@@ -5,17 +5,18 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of interactions and interaction networks
 domains:
 - systems biology
+- biological systems
 homepage_url: https://github.com/INO-ontology/ino
 id: ino
 infores_id: ino

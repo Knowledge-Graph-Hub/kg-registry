@@ -16,6 +16,7 @@ creation_date: '2025-06-25T00:00:00Z'
 description: An ontological representation of protein-related entities
 domains:
 - proteomics
+- chemistry and biochemistry
 homepage_url: http://proconsortium.org
 id: pr
 infores_id: pr

@@ -13,6 +13,7 @@ last_modified_date: '2026-09-23T00:00:00Z'
 domains:
 - proteomics
 - protein domains
+- chemistry and biochemistry
 contacts:
 - category: Individual
   label: InterPro Help

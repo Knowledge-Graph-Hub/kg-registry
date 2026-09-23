@@ -17,6 +17,7 @@ description: An ontology that formalizes the genomic element by defining an uppe
   class genetic interval
 domains:
 - genomics
+- chemistry and biochemistry
 homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
 id: ogi
 last_modified_date: '2026-09-23T00:00:00Z'
@@ -34,6 +35,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/ogi.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compression: targz

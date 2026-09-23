@@ -5,18 +5,19 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Rahuman Sheriff
+  orcid: 0000-0003-0705-9809
   contact_details:
   - contact_type: email
     value: sheriff@ebi.ac.uk
   - contact_type: github
     value: rsmsheriff
-  label: Rahuman Sheriff
-  orcid: 0000-0003-0705-9809
 creation_date: '2025-06-04T00:00:00Z'
 description: Terms commonly used in Systems Biology, and in particular in computational
   modeling.
 domains:
 - systems biology
+- chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/sbo/
 id: sbo
 last_modified_date: '2026-09-23T00:00:00Z'

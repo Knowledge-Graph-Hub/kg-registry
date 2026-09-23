@@ -5,17 +5,18 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: G. Thomas Hayman
+  orcid: 0000-0002-9553-7227
   contact_details:
   - contact_type: email
     value: gthayman@mcw.edu
   - contact_type: github
     value: gthayman
-  label: G. Thomas Hayman
-  orcid: 0000-0002-9553-7227
 creation_date: '2025-08-20T00:00:00Z'
 description: A controlled vocabulary for annotating gene products to pathways.
 domains:
 - pathways
+- biological systems
 homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
 id: pw
 last_modified_date: '2026-09-23T00:00:00Z'
