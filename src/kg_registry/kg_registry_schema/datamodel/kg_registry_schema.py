@@ -536,15 +536,31 @@ class ContactTypeEnum(str, Enum):
 
 class DomainEnum(str, Enum):
     """
-    A domain that a resource is relevant to. Each domain maps, where possible, to a concept in an external controlled vocabulary (Medical Subject Headings, MeSH; or the NCI Thesaurus, NCIT) via the permissible value's `meaning`.
+    A domain that a resource is relevant to. Each domain maps, where possible, to a concept in an external controlled vocabulary (Medical Subject Headings, MeSH; the NCI Thesaurus, NCIT; or EDAM) via the permissible value's `meaning`. Domains form a two-level hierarchy. A specific domain names its broader domain with `is_a`, and a resource that lists a specific domain also lists the broader one.
+    """
+    adverse_outcome_pathways = "adverse outcome pathways"
+    """
+    Adverse outcome pathways linking molecular initiating events to adverse outcomes.
+    """
+    aging = "aging"
+    """
+    Aging and longevity, including cellular senescence.
     """
     agriculture = "agriculture"
     """
     The agricultural and food sciences, including crop and animal production, plant science, and food production, processing, and preservation.
     """
+    air_pollution = "air pollution"
+    """
+    Air quality and emissions to air.
+    """
     anatomy_and_development = "anatomy and development"
     """
     The anatomy and development of organisms, including their structure, morphology, and developmental biology.
+    """
+    biodiversity = "biodiversity"
+    """
+    The variety of life, including species occurrence, conservation status, and invasive species.
     """
     biological_systems = "biological systems"
     """
@@ -554,29 +570,149 @@ class DomainEnum(str, Enum):
     """
     The biomedical sciences broadly, spanning the study of biological systems in the context of health and disease. Use a more specific domain (e.g., clinical) where one applies.
     """
+    cancer = "cancer"
+    """
+    Cancer and other neoplasms, including tumor genomics, cancer cell lines, oncology treatment, and cancer registries.
+    """
+    cardiovascular_disease = "cardiovascular disease"
+    """
+    Diseases of the heart and blood vessels, including hypertension.
+    """
+    cell_biology = "cell biology"
+    """
+    Cells and cell types, including cell lines, cell markers, and subcellular structures.
+    """
+    cheminformatics = "cheminformatics"
+    """
+    Computational representation, identification, and classification of chemical structures.
+    """
     chemistry_and_biochemistry = "chemistry and biochemistry"
     """
     The chemical and biochemical sciences, including the structure, properties, and reactions of chemical compounds.
+    """
+    climate = "climate"
+    """
+    Climate and climate change, including climate models and drought.
     """
     clinical = "clinical"
     """
     The clinical sciences concerned with the care of patients, including clinical trials, patient data, and diagnosis and treatment of disease.
     """
+    clinical_coding = "clinical coding"
+    """
+    Clinical terminologies and code sets for diagnoses, procedures, observations, and medications.
+    """
+    clinical_trials = "clinical trials"
+    """
+    Clinical trials, including trial registries and the data standards used to report them.
+    """
+    criminal_justice = "criminal justice"
+    """
+    Crime, courts, and the justice system, including crime reporting and court records.
+    """
+    diabetes_mellitus = "diabetes mellitus"
+    """
+    Diabetes mellitus, including type 1 and type 2 diabetes and the pancreatic islet biology that underlies them.
+    """
+    disasters = "disasters"
+    """
+    Disasters and emergencies, including disaster declarations, humanitarian response, and critical infrastructure.
+    """
+    disease_registries = "disease registries"
+    """
+    Population-based registries of disease cases, such as cancer registries.
+    """
+    domestic_animals = "domestic animals"
+    """
+    Domestic animals, including companion animals and livestock breeds.
+    """
     drug_discovery = "drug discovery"
     """
     The process of identifying and developing new candidate medications, including target identification, validation, and compound screening.
+    """
+    drug_interactions = "drug interactions"
+    """
+    Interactions between drugs and between drugs and foods or natural products.
+    """
+    drug_repositioning = "drug repositioning"
+    """
+    The discovery of new indications for existing drugs, including computational repurposing methods and their benchmarks.
+    """
+    ecology = "ecology"
+    """
+    The interactions of organisms with each other and their environment, including ecological networks.
+    """
+    electronic_health_records = "electronic health records"
+    """
+    Electronic health records and observational health data derived from them.
     """
     environment = "environment"
     """
     The environment and ecosystems, including ecology and environmental health.
     """
+    environmental_exposure = "environmental exposure"
+    """
+    Exposure of people and organisms to environmental agents and the health effects of those exposures.
+    """
+    enzymes = "enzymes"
+    """
+    Enzymes, including their classification, reactions, and catalytic mechanisms.
+    """
+    epidemiology = "epidemiology"
+    """
+    The distribution and determinants of disease in populations, including disease surveillance and outbreaks.
+    """
+    epigenomics = "epigenomics"
+    """
+    Genome-wide chromatin state and organization, including chromatin conformation and regulatory element annotation.
+    """
+    food = "food"
+    """
+    Foods, their composition, and their relationship to diet and health.
+    """
+    gene_expression_profiling = "gene expression profiling"
+    """
+    Measurement of gene expression across tissues, cells, and conditions, including transcriptomic signatures.
+    """
+    gene_regulation = "gene regulation"
+    """
+    The regulation of gene expression, including transcription factors, their binding sites, promoters, and enhancers.
+    """
     general = "general"
     """
     A general domain, not specific to any other category. It concerns resources that are broadly applicable across multiple domains, including upper-level and cross-domain resources.
     """
+    genetic_variation = "genetic variation"
+    """
+    Germline and somatic genetic variants, including their frequencies, effects, and clinical interpretation.
+    """
+    genome_wide_association_studies = "genome-wide association studies"
+    """
+    Genome-wide association studies and related statistical genetics, including QTL and Mendelian randomization analyses.
+    """
     genomics = "genomics"
     """
     The study of genomes, including genome structure, evolution, function, mapping, and editing.
+    """
+    geographic_information_systems = "geographic information systems"
+    """
+    Geospatial data, including place names, administrative boundaries, and infrastructure maps.
+    """
+    glycomics = "glycomics"
+    """
+    The study of glycans and glycoconjugates.
+    """
+    high_throughput_screening = "high-throughput screening"
+    """
+    Large-scale screening of chemical or genetic perturbations, including cell line sensitivity and perturbation profiling.
+    """
+    host_pathogen_interactions = "host-pathogen interactions"
+    """
+    Interactions between pathogens and their hosts, including pathogen genomics and virulence.
+    """
+    human_populations = "human populations"
+    """
+    Human population groups, including ancestry, ethnicity, and demographic groups.
     """
     humanities_and_cultural_heritage = "humanities and cultural heritage"
     """
@@ -586,25 +722,81 @@ class DomainEnum(str, Enum):
     """
     The study of the immune system, including its structure and function, disorders, and therapeutic applications.
     """
+    infectious_disease = "infectious disease"
+    """
+    Infectious diseases, including their pathogens, transmission, epidemiology, diagnosis, and treatment.
+    """
     information_technology = "information technology"
     """
     The information technology and informatics sciences, including software, computational methods, simulation and modeling, and digital health technologies.
+    """
+    insects = "insects"
+    """
+    Insects, including their anatomy, behavior, and genomics.
     """
     literature = "literature"
     """
     The literature and publications of a domain.
     """
+    machine_learning = "machine learning"
+    """
+    Machine learning and artificial intelligence, including AI-ready data and models.
+    """
     medical_imaging = "medical imaging"
     """
     Techniques and processes for creating visual representations of the interior of a body for clinical analysis and medical intervention.
+    """
+    mental_disorders = "mental disorders"
+    """
+    Mental and psychiatric disorders, including substance use disorders.
+    """
+    metabolism = "metabolism"
+    """
+    Metabolic pathways and genome-scale metabolic network reconstructions.
+    """
+    metabolomics = "metabolomics"
+    """
+    The large-scale study of metabolites and lipids, including mass spectrometry and NMR data.
+    """
+    metadata = "metadata"
+    """
+    Metadata vocabularies and standards for describing resources, datasets, and provenance.
     """
     microbiology = "microbiology"
     """
     The microbiological sciences, including the study of microbial communities (microbiomes) and their influence on hosts and environments.
     """
+    microbiome = "microbiome"
+    """
+    Microbial communities, including host-associated microbiomes and metagenomes.
+    """
+    model_organisms = "model organisms"
+    """
+    Model organisms and the databases that serve their research communities.
+    """
+    molecular_evolution = "molecular evolution"
+    """
+    The evolution of genes and proteins, including orthology, gene families, and comparative analysis.
+    """
+    natural_language_processing = "natural language processing"
+    """
+    Text mining and natural language processing of the literature, including text-mined knowledge graphs and annotated corpora.
+    """
+    natural_products = "natural products"
+    """
+    Compounds derived from plants, microorganisms, or animals, including traditional medicines.
+    """
+    neurodegenerative_disease = "neurodegenerative disease"
+    """
+    Neurodegenerative diseases, including Alzheimer disease and related dementias.
+    """
     neuroscience = "neuroscience"
     """
     The scientific study of the nervous system, including brain structure, function, and disorders.
+    """
+    non_coding_RNA = "non-coding RNA"
+    """
+    RNAs that are not translated into protein, including microRNAs, long non-coding RNAs, and ribosomal and transfer RNAs.
     """
     nutrition = "nutrition"
     """
@@ -622,17 +814,49 @@ class DomainEnum(str, Enum):
     """
     Biological pathways, including metabolic, signaling, and regulatory networks that control cellular processes.
     """
+    pharmacogenomics = "pharmacogenomics"
+    """
+    The influence of genetic variation on drug response.
+    """
     pharmacology = "pharmacology"
     """
     The study of how drugs interact with biological systems, including drug discovery, development, and therapeutic uses.
+    """
+    pharmacovigilance = "pharmacovigilance"
+    """
+    The monitoring of drug and device safety, including adverse event reports and side effects.
     """
     phenotype = "phenotype"
     """
     The phenotypes of organisms.
     """
+    plants = "plants"
+    """
+    Plants, including crops and their anatomy, traits, and genomics.
+    """
+    population_genetics = "population genetics"
+    """
+    Genetic variation within and between populations, including human ancestry.
+    """
+    post_translational_modification = "post-translational modification"
+    """
+    Post-translational modifications of proteins, such as phosphorylation.
+    """
     precision_medicine = "precision medicine"
     """
     An approach to disease treatment and prevention that takes into account individual variability in genes, environment, and lifestyle.
+    """
+    protein_domains = "protein domains"
+    """
+    Protein families, domains, and functional sites.
+    """
+    protein_interactions = "protein interactions"
+    """
+    Physical interactions between proteins, including protein complexes.
+    """
+    protein_structure = "protein structure"
+    """
+    The three-dimensional structure of proteins, whether determined experimentally or predicted.
     """
     proteomics = "proteomics"
     """
@@ -642,13 +866,45 @@ class DomainEnum(str, Enum):
     """
     The science of protecting and improving the health of people and their communities, including epidemiology, population health, and the social determinants of health.
     """
+    rare_disease = "rare disease"
+    """
+    Rare diseases, including rare Mendelian and other genetic disorders, their phenotypes, genes, and treatments.
+    """
     research_funding = "research funding"
     """
     The funding and administration of research, including research projects, grants and their payments, funding programmes, the organizations that fund or carry out research, and the outputs attributed to that funding.
     """
+    scholarly_communication = "scholarly communication"
+    """
+    Scholarly publications and their metadata, including citations, authors, and research contributions.
+    """
+    signal_transduction = "signal transduction"
+    """
+    Signaling pathways and networks that transmit signals within and between cells.
+    """
+    single_cell_analysis = "single-cell analysis"
+    """
+    Data and methods that measure molecules in individual cells, including single-cell and spatial atlases.
+    """
+    social_determinants_of_health = "social determinants of health"
+    """
+    The social and economic conditions that shape health, including housing, income, services, and rurality.
+    """
+    software = "software"
+    """
+    Software, including package registries, software supply chains, and vulnerabilities.
+    """
+    sustainability = "sustainability"
+    """
+    Sustainability and environmental, social, and governance (ESG) reporting.
+    """
     systems_biology = "systems biology"
     """
     The computational and mathematical analysis of complex biological systems and their interactions.
+    """
+    taxonomy = "taxonomy"
+    """
+    The naming and classification of organisms and the relationships among taxa.
     """
     toxicology = "toxicology"
     """
@@ -657,6 +913,18 @@ class DomainEnum(str, Enum):
     transportation = "transportation"
     """
     Transportation and transport infrastructure, including railway, road, air, and maritime networks, the assets and parameters that describe them, and the movement of people and goods over them.
+    """
+    vaccines = "vaccines"
+    """
+    Vaccines and vaccination, including vaccine adverse events.
+    """
+    water_resources = "water resources"
+    """
+    Surface water, groundwater, drinking water, and hydrology.
+    """
+    wildfires = "wildfires"
+    """
+    Wildfires and their burn severity and smoke.
     """
     stub = "stub"
     """
