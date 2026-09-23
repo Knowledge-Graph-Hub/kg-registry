@@ -9,9 +9,10 @@ description: snOPY (snoRNA Orthological Gene Database) provides comprehensive in
 domains:
 - genomics
 - biological systems
+- non-coding RNA
 homepage_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
 id: snopy
-last_modified_date: '2025-10-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: snOPY
 products:

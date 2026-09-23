@@ -26,10 +26,11 @@ domains:
   - genomics
   - biomedical
   - drug discovery
+  - genome-wide association studies
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Richards-Effector-Gene-List
 id: regl
 infores_id: regl
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Richards Effector Gene List
 products:

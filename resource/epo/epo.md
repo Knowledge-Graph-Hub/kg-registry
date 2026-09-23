@@ -9,9 +9,11 @@ description: An ontology designed to support the semantic annotation of epidemio
   resources
 domains:
 - biomedical
+- public health
+- epidemiology
 homepage_url: https://code.google.com/p/epidemiology-ontology/
 id: epo
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Epidemiology Ontology
 products:

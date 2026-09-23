@@ -15,9 +15,10 @@ description: PROSITE is a database of protein families and domains. It consists 
 domains:
 - proteomics
 - chemistry and biochemistry
+- protein domains
 homepage_url: https://prosite.expasy.org/
 id: prosite
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-nd/4.0/

@@ -14,9 +14,10 @@ description: Raras is a Brazilian Portuguese-language rare disease knowledge pla
 domains:
   - biomedical
   - genomics
+  - rare disease
 homepage_url: https://raras.org/
 id: raras
-last_modified_date: '2026-05-26T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/

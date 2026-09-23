@@ -13,10 +13,11 @@ domains:
 - genomics
 - organisms
 - phenotype
+- model organisms
 homepage_url: https://xenbase.org/xenbase/
 id: xenbase
 infores_id: xenbase
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://xenbase.org/xenbase/

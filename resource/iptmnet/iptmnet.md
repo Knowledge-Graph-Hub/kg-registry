@@ -9,10 +9,11 @@ description: iPTMnet is an integrated resource for protein post-translational mo
   interactions (PPIs), and PTM conservation across species.
 domains:
 - proteomics
+- post-translational modification
 homepage_url: https://research.bioinformatics.udel.edu/iptmnet/
 id: iptmnet
 infores_id: iptmnet
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/

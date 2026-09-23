@@ -14,9 +14,10 @@ description: mangal.io is a collaborative database and analysis platform for eco
 domains:
   - environment
   - biological systems
+  - ecology
 homepage_url: https://mangal.io/
 id: mangal
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

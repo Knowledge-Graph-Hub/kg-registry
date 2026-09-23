@@ -18,9 +18,10 @@ description: An ontology representing the disease transmission process during wh
   susceptible host or source to a new host.
 domains:
 - biomedical
+- infectious disease
 homepage_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 id: trans
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

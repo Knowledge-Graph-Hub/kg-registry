@@ -20,9 +20,11 @@ description: A classification of the diverse roles performed in the work leading
 domains:
 - biomedical
 - information technology
+- literature
+- scholarly communication
 homepage_url: https://github.com/data2health/contributor-role-ontology
 id: cro
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/2.0/

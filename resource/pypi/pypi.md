@@ -13,9 +13,10 @@ description: The Python Package Index (PyPI) is the official third-party softwar
   artifacts for Python packages.
 domains:
 - information technology
+- software
 homepage_url: https://pypi.org/
 id: pypi
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Python Package Index (PyPI)
 products:

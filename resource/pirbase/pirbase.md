@@ -6,9 +6,10 @@ description: piRBase is a manually curated database for PIWI-interacting RNAs (p
 domains:
   - genomics
   - biological systems
+  - non-coding RNA
 homepage_url: http://bigdata.ibp.ac.cn/piRBase
 id: pirbase
-last_modified_date: '2025-10-21T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: piRBase
 products:

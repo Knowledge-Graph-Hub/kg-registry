@@ -17,9 +17,11 @@ description: An ontology to describe and classify mental diseases such as schizo
   annotated with DSM-IV and ICD codes where applicable
 domains:
 - biomedical
+- neuroscience
+- mental disorders
 homepage_url: https://github.com/jannahastings/mental-functioning-ontology
 id: mfomd
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

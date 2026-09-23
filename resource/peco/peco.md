@@ -18,9 +18,11 @@ description: A structured, controlled vocabulary which describes the treatments,
 domains:
 - biomedical
 - general
+- organisms
+- plants
 homepage_url: http://planteome.org/
 id: peco
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

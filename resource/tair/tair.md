@@ -22,9 +22,11 @@ domains:
 - genomics
 - biological systems
 - organisms
+- model organisms
+- plants
 homepage_url: https://www.arabidopsis.org/
 id: tair
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: The Arabidopsis Information Resource
 products:

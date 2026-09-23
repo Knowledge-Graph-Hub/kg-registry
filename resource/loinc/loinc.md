@@ -18,10 +18,11 @@ domains:
 - clinical
 - biomedical
 - genomics
+- clinical coding
 homepage_url: https://loinc.org/
 id: loinc
 infores_id: loinc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://loinc.org/license/

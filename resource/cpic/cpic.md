@@ -22,9 +22,11 @@ domains:
 - biomedical
 - clinical
 - drug discovery
+- pharmacology
+- pharmacogenomics
 homepage_url: https://www.clinpgx.org/cpic
 id: cpic
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

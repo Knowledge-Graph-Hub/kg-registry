@@ -22,10 +22,11 @@ description: A broadly scoped ontology representing entities which bear a  food 
 domains:
 - chemistry and biochemistry
 - nutrition
+- food
 homepage_url: https://foodon.org/
 id: foodon
 infores_id: foodon
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

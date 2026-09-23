@@ -7,9 +7,12 @@ domains:
   - biomedical
   - genomics
   - drug discovery
+  - cancer
+  - information technology
+  - machine learning
 homepage_url: https://github.com/JieZheng-ShanghaiTech/KG4SL
 id: kg4sl
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: KG4SL
 products:

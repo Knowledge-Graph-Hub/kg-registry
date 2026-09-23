@@ -16,10 +16,11 @@ domains:
 - genomics
 - organisms
 - anatomy and development
+- model organisms
 homepage_url: https://wormbase.org/
 id: wormbase
 infores_id: wormbase
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

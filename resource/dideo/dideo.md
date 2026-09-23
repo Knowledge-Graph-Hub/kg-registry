@@ -17,9 +17,11 @@ description: The Potential Drug-drug Interaction and Potential Drug-drug Interac
   Evidence Ontology
 domains:
 - chemistry and biochemistry
+- pharmacology
+- drug interactions
 homepage_url: https://github.com/DIDEO/DIDEO
 id: dideo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

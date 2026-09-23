@@ -20,9 +20,10 @@ domains:
 - biological systems
 - immunology
 - systems biology
+- signal transduction
 homepage_url: http://www.netpath.org/
 id: netpath
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.netpath.org/

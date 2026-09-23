@@ -16,9 +16,10 @@ description: The Conserved Domain Database (CDD) is a resource for the annotatio
 domains:
 - proteomics
 - genomics
+- protein domains
 homepage_url: https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml
 id: cdd
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Conserved Domain Database
 products:

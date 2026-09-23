@@ -12,6 +12,7 @@ contacts:
 description: Comprehensive information on scientific publications and related entities.
 domains:
 - literature
+- scholarly communication
 homepage_url: https://semopenalex.org/
 id: semopenalex
 layout: resource_detail
@@ -59,7 +60,7 @@ products:
     relation_type: prov:wasDerivedFrom
   product_url: https://github.com/metaphacts/semopenalex
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 SemOpenAlex
 

@@ -17,9 +17,11 @@ description: PSI-MOD is an ontology consisting of terms that describe protein ch
   modifications
 domains:
 - chemistry and biochemistry
+- proteomics
+- post-translational modification
 homepage_url: http://www.psidev.info/MOD
 id: mod
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

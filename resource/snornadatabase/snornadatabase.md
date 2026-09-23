@@ -5,9 +5,10 @@ creation_date: '2025-09-09T00:00:00Z'
 description: snoRNABase (also known as snoRNA-LBME-db) is a comprehensive database of human C/D box and H/ACA box small nucleolar RNAs (snoRNAs) and small Cajal body-specific RNAs (scaRNAs). The database contains 361 entries including 257 C/D box snoRNAs, 86 H/ACA snoRNAs, and 18 scaRNAs. It provides detailed information on snoRNA sequences, their genomic locations, host genes, target RNAs (rRNAs and spliceosomal RNAs), predicted base-pairing interactions with target nucleotides, and modification sites (2'-O-ribose methylation and pseudouridylation). Each entry includes literature references, GenBank accession numbers, and links to the UCSC Genome Browser. The database features search, browse, and "Find guide RNA" functions to identify snoRNAs that guide modifications of specific nucleotides in rRNAs (28S, 18S, 5.8S) and spliceosomal RNAs (U1, U2, U4, U5, U6, U12).
 domains:
   - genomics
+  - non-coding RNA
 homepage_url: https://www-snorna.biotoul.fr/
 id: snornadatabase
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: snoRNABase
 products:

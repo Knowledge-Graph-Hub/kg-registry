@@ -27,9 +27,10 @@ domains:
 - genomics
 - biological systems
 - organisms
+- gene expression profiling
 homepage_url: https://www.ebi.ac.uk/gxa/home
 id: expressionatlas
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -15,9 +15,11 @@ description: The Alliance of Genome Resources (Alliance) is a collaborative plat
   and variant data for cross-species research and translation.
 domains:
 - genomics
+- organisms
+- model organisms
 homepage_url: https://www.alliancegenome.org/
 id: alliance
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.alliancegenome.org/privacy-warranty-licensing

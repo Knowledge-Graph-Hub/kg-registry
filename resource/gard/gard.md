@@ -12,9 +12,10 @@ description: The Genetic and Rare Diseases Information Center provides free, rel
   and easy-to-understand information and resources about rare and genetic diseases.
 domains:
 - biomedical
+- rare disease
 homepage_url: https://rarediseases.info.nih.gov/
 id: gard
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Genetic and Rare Diseases Information Center
 products:

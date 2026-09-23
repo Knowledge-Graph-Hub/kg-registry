@@ -20,10 +20,12 @@ domains:
 - genomics
 - organisms
 - biological systems
+- model organisms
+- insects
 homepage_url: https://flybase.org/
 id: flybase
 infores_id: flybase
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

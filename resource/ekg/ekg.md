@@ -13,9 +13,13 @@ description: eKG is an epidemiological knowledge graph extracted from the World 
 domains:
   - biomedical
   - public health
+  - infectious disease
+  - epidemiology
+  - literature
+  - natural language processing
 homepage_url: https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601
 id: ekg
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

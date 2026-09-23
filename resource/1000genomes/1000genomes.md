@@ -18,9 +18,13 @@ description: The International Genome Sample Resource (IGSR) maintains and share
   and guidance for proper reuse and citation.
 domains:
 - genomics
+- genetic variation
+- population genetics
+- organisms
+- human populations
 homepage_url: https://www.internationalgenome.org/
 id: 1000genomes
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.internationalgenome.org/IGSR_disclaimer

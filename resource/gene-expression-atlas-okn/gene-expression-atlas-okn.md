@@ -65,10 +65,11 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 domains:
 - biomedical
 - genomics
+- gene expression profiling
 ---
 Gene Expression Atlas
 

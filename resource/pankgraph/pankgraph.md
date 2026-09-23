@@ -73,7 +73,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 contacts:
 - category: Individual
   label: Jie Liu
@@ -85,6 +85,7 @@ contacts:
 domains:
 - biomedical
 - genomics
+- diabetes mellitus
 ---
 PanKgraph
 

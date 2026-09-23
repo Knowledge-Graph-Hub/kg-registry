@@ -13,6 +13,8 @@ description: Plant Reactome is a freely-accessible, open-source pathway knowledg
 domains:
   - pathways
   - systems biology
+  - organisms
+  - plants
 funding:
   - Gramene
 homepage_url: https://plantreactome.gramene.org/
@@ -205,7 +207,7 @@ warnings:
   - The INFORES catalog did not contain an exact Plant Reactome entry on 2026-06-02, so no infores_id is asserted.
   - Plant Reactome pages identify the April 2025 release as Version 24, but the homepage text says Gramene r69 while the release summary heading and stats widget say Gramene 68/r68.
   - The Plant Reactome license page states CC BY 3.0 for Plant Reactome content, while annotations and external data remain under the licenses of their source providers unless specified.
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 # Plant Reactome

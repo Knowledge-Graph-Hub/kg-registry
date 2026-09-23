@@ -12,10 +12,12 @@ description: GenAge is a curated database of genes related to ageing and longevi
 domains:
   - genomics
   - biomedical
+  - biological systems
+  - aging
 homepage_url: http://genomics.senescence.info/genes/
 id: genage
 infores_id: genage
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: GenAge Database of Ageing-Related Genes
 products:

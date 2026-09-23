@@ -13,9 +13,11 @@ domains:
   - biomedical
   - genomics
   - precision medicine
+  - cancer
+  - genetic variation
 homepage_url: https://hivelab.biochemistry.gwu.edu/biomuta
 id: biomuta
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: BioMuta
 products:

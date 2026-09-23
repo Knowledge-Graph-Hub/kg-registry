@@ -11,9 +11,10 @@ domains:
 - genomics
 - clinical
 - phenotype
+- genome-wide association studies
 homepage_url: https://www.ukbiobank.ac.uk/
 id: ukbiobank
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ukbiobank.ac.uk/terms-and-conditions/

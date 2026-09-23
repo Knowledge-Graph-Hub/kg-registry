@@ -18,9 +18,10 @@ description: LOTUS (naturaL prOducTs occUrrence databaSe) is an open knowledge b
 domains:
 - chemistry and biochemistry
 - biomedical
+- natural products
 homepage_url: https://lotus.naturalproducts.net/
 id: lotus
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/legalcode

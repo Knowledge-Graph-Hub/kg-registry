@@ -23,9 +23,12 @@ description: The LINCS L1000 is a high-throughput, reduced representation gene e
   and time points.
 domains:
 - drug discovery
+- high-throughput screening
+- genomics
+- gene expression profiling
 homepage_url: https://lincsproject.org/LINCS/
 id: lincs-l1000
-last_modified_date: '2025-11-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: LINCS L1000
 products:

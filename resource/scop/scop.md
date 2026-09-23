@@ -14,9 +14,10 @@ description: SCOP (Structural Classification of Proteins) is a classification of
   similarity and evolutionary origin.
 domains:
 - proteomics
+- protein structure
 homepage_url: https://scop.mrc-lmb.cam.ac.uk/
 id: scop
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: SCOP
 products:

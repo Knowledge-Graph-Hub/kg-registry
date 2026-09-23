@@ -18,9 +18,10 @@ description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domains:
 - biological systems
 - organisms
+- taxonomy
 homepage_url: https://github.com/phenoscape/taxrank
 id: taxrank
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

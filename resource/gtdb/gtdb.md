@@ -15,9 +15,11 @@ description: The Genome Taxonomy Database provides a standardized bacterial and 
 domains:
 - genomics
 - microbiology
+- organisms
+- taxonomy
 homepage_url: https://gtdb.ecogenomic.org/
 id: gtdb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

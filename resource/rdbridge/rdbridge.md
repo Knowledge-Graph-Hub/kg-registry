@@ -12,6 +12,7 @@ domains:
   - biomedical
   - precision medicine
   - clinical
+  - rare disease
 homepage_url: http://rdb.lifesynther.com/
 id: rdbridge
 layout: resource_detail
@@ -74,7 +75,7 @@ taxon:
 warnings:
   - Homepage may be inaccessible (March 5 2025)
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 ## Automated Evaluation

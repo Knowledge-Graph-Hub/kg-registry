@@ -18,9 +18,10 @@ description: Ecocore is a community ontology for the concise and controlled desc
   of ecological traits of organisms.
 domains:
 - environment
+- ecology
 homepage_url: https://github.com/EcologicalSemantics/ecocore
 id: ecocore
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

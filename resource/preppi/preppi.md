@@ -40,10 +40,12 @@ description: 'PrePPI (Predicting Protein-Protein Interactions) is a computationa
 domains:
 - proteomics
 - chemistry and biochemistry
+- protein interactions
+- protein structure
 homepage_url: https://honiglab.c2b2.columbia.edu/PrePPI/
 id: preppi
 infores_id: preppi
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PrePPI
 products:

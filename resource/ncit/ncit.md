@@ -19,10 +19,11 @@ description: NCI Thesaurus (NCIt)is a reference terminology that includes broad 
   NCIt OBO Edition releases should be considered experimental.
 domains:
 - biomedical
+- cancer
 homepage_url: https://github.com/ncit-obo-org/ncit-obo-edition
 id: ncit
 infores_id: ncit
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

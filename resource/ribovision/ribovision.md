@@ -14,9 +14,10 @@ description: RiboVision is a comprehensive webserver suite for visualization and
 domains:
   - genomics
   - biological systems
+  - non-coding RNA
 homepage_url: https://ribovision2.chemistry.gatech.edu/
 id: ribovision
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/

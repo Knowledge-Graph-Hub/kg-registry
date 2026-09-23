@@ -16,9 +16,10 @@ description: Prodo Laboratories, Inc. is a commercial supplier of human pancreat
 domains:
 - biomedical
 - genomics
+- diabetes mellitus
 homepage_url: https://prodolabs.com/
 id: prodo
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Prodo Laboratories
 products:

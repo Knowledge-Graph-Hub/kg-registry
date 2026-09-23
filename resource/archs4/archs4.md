@@ -17,9 +17,10 @@ description: ARCHS4 is a Ma'ayan Lab resource for uniformly processed public RNA
 domains:
 - biomedical
 - genomics
+- gene expression profiling
 homepage_url: https://archs4.org/
 id: archs4
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/

@@ -16,9 +16,11 @@ description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at
   adverse events
 domains:
 - biomedical
+- pharmacology
+- pharmacovigilance
 homepage_url: http://purl.obolibrary.org/obo/aero
 id: aero
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

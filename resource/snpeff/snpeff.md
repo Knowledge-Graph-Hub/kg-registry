@@ -16,10 +16,11 @@ domains:
   - genomics
   - precision medicine
   - biological systems
+  - genetic variation
 homepage_url: https://pcingola.github.io/SnpEff/
 id: snpeff
 infores_id: snpeff
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

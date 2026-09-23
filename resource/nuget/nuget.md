@@ -12,9 +12,10 @@ description: NuGet is the package registry for the .NET ecosystem, hosting metad
   and distributable artifacts for .NET libraries and tools.
 domains:
 - information technology
+- software
 homepage_url: https://www.nuget.org/
 id: nuget
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: NuGet Gallery
 products:

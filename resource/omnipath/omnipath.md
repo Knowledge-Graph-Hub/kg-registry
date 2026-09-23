@@ -23,9 +23,11 @@ domains:
 - biological systems
 - proteomics
 - pathways
+- protein interactions
+- signal transduction
 homepage_url: https://omnipathdb.org/
 id: omnipath
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: OmniPath
 products:

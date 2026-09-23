@@ -10,6 +10,7 @@ domains:
   - biomedical
   - anatomy and development
   - biological systems
+  - single-cell analysis
 homepage_url: https://apps.humanatlas.io/dashboard/data
 id: hra-kg
 layout: resource_detail
@@ -170,7 +171,7 @@ products:
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
 repository: https://github.com/hubmapconsortium/hra-kg
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 ### Human Reference Atlas Knowledge Graph (HRA KG)

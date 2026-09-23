@@ -42,10 +42,13 @@ description: The Cancer Therapeutics Response Portal (CTRP) is a comprehensive c
 domains:
 - pharmacology
 - drug discovery
+- biomedical
+- cancer
+- high-throughput screening
 homepage_url: https://portals.broadinstitute.org/ctrp/
 id: ctrp
 infores_id: ctrp
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Cancer Therapeutics Response Portal
 products:

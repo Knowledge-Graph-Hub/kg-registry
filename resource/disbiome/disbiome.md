@@ -8,9 +8,10 @@ domains:
 - microbiology
 - biomedical
 - clinical
+- microbiome
 homepage_url: https://disbiome.ugent.be/
 id: disbiome
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Disbiome
 products:

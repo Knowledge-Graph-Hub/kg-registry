@@ -18,9 +18,10 @@ domains:
 - pharmacology
 - genomics
 - phenotype
+- drug repositioning
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 id: kg-predict
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.elsevier.com/open-access/userlicense/1.0/

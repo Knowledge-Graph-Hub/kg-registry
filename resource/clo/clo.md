@@ -17,9 +17,11 @@ description: An ontology to standardize and integrate cell line information and 
   support computer-assisted reasoning.
 domains:
 - anatomy and development
+- biological systems
+- cell biology
 homepage_url: https://github.com/CLO-Ontology/CLO
 id: clo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

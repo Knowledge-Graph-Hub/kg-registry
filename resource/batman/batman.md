@@ -21,9 +21,11 @@ domains:
 - pharmacology
 - drug discovery
 - pathways
+- chemistry and biochemistry
+- natural products
 homepage_url: http://bionet.ncpsb.org.cn/batman-tcm/
 id: batman
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: BATMAN-TCM
 products:

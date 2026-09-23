@@ -20,7 +20,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 contacts:
 - category: Individual
   contact_details:
@@ -50,6 +50,7 @@ products:
 domains:
 - biomedical
 - clinical
+- rare disease
 ---
 Rare Disease Knowledge Graph
 

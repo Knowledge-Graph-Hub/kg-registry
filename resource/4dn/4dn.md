@@ -25,9 +25,10 @@ domains:
 - biological systems
 - biomedical
 - medical imaging
+- epigenomics
 homepage_url: https://data.4dnucleome.org/
 id: 4dn
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal

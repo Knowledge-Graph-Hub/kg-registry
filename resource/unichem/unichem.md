@@ -23,10 +23,11 @@ domains:
 - chemistry and biochemistry
 - drug discovery
 - pharmacology
+- cheminformatics
 homepage_url: https://www.ebi.ac.uk/unichem/
 id: unichem
 infores_id: unichem
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use/

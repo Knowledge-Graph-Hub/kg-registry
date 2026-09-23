@@ -21,10 +21,11 @@ domains:
 - drug discovery
 - genomics
 - pharmacology
+- natural language processing
 homepage_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_download.html
 id: semmeddb
 infores_id: semmeddb
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/web_policies.html

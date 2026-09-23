@@ -12,6 +12,8 @@ creation_date: '2025-12-17T00:00:00Z'
 description: OpenBiodiv is an open-access biodiversity knowledge graph that extracts, integrates, and provides semantic access to linked open biodiversity data from scientific literature and established taxonomic backbones. It converts narrative biodiversity information into computable semantic form and maintains a comprehensive knowledge management system for biodiversity science.
 domains:
   - literature
+  - organisms
+  - biodiversity
 homepage_url: https://openbiodiv.net/
 id: openbiodiv
 infores_id: openbiodiv
@@ -115,7 +117,7 @@ publications:
 repository: https://github.com/pensoft/OpenBiodiv
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 # OpenBiodiv

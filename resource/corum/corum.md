@@ -18,9 +18,10 @@ domains:
 - proteomics
 - biomedical
 - chemistry and biochemistry
+- protein interactions
 homepage_url: https://mips.helmholtz-muenchen.de/corum/
 id: corum
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

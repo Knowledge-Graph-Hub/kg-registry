@@ -22,9 +22,11 @@ description: The Integrated Taxonomic Information System (ITIS) provides authori
 domains:
 - organisms
 - environment
+- biodiversity
+- taxonomy
 homepage_url: https://www.itis.gov/
 id: itis
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.itis.gov/access.html

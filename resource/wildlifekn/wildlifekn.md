@@ -21,6 +21,8 @@ description: This project seeks to create a comprehensive, integrative knowledge
 domains:
 - environment
 - organisms
+- biodiversity
+- climate
 homepage_url: https://sites.nd.edu/kn-wildlife/
 id: wildlifekn
 layout: resource_detail
@@ -95,7 +97,7 @@ products:
 taxon:
 - NCBITaxon:131567
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 Wildlife-KN is an open knowledge network for wildlife management under climate
 change, developed to support exploration of species observations in relation to

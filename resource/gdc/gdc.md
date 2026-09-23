@@ -8,9 +8,10 @@ domains:
   - precision medicine
   - clinical
   - biomedical
+  - cancer
 id: gdc
 infores_id: gdc
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: National Cancer Institute Genomic Data Commons Data Portal
 homepage_url: https://portal.gdc.cancer.gov

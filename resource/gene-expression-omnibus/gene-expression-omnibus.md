@@ -18,9 +18,10 @@ description: The Gene Expression Omnibus (GEO) is a public functional genomics d
 domains:
 - biomedical
 - genomics
+- gene expression profiling
 homepage_url: https://www.ncbi.nlm.nih.gov/geo/
 id: gene-expression-omnibus
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Gene Expression Omnibus (GEO)
 products:

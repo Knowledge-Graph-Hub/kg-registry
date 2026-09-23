@@ -19,9 +19,11 @@ description: The health Surveillance Ontology (HSO) focuses on "surveillance sys
   covering animal health, public health and food safety surveillance.
 domains:
 - biomedical
+- public health
+- epidemiology
 homepage_url: https://w3id.org/hso
 id: hso
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

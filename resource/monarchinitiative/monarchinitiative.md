@@ -15,10 +15,12 @@ description: The Monarch Initiative is an international consortium that integrat
 domains:
 - genomics
 - biological systems
+- organisms
+- model organisms
 homepage_url: https://monarchinitiative.org/
 id: monarchinitiative
 infores_id: monarchinitiative
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Monarch Initiative
 products:

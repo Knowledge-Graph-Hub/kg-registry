@@ -11,13 +11,14 @@ creation_date: '2026-03-11T00:00:00Z'
 description: The Open Research Knowledge Graph (ORKG) aims to describe research papers in a structured manner. It represents research papers and their contributions as structured, machine-readable descriptions that can be explored, compared, and reused through the ORKG portal and API.
 domains:
   - literature
+  - scholarly communication
 homepage_url: https://orkg.org/
 id: orkg
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
   label: CC BY-SA 4.0
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 name: Open Research Knowledge Graph
 repository: https://gitlab.com/TIBHannover/orkg/orkg-frontend/
 products:

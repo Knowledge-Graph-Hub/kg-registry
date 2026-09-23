@@ -17,9 +17,10 @@ description: An ontology covering the taxonomy of teleosts (bony fish)
 domains:
 - biological systems
 - organisms
+- taxonomy
 homepage_url: https://github.com/phenoscape/teleost-taxonomy-ontology
 id: tto
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

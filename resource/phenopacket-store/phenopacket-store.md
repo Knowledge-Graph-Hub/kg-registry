@@ -20,10 +20,12 @@ domains:
 - clinical
 - genomics
 - precision medicine
+- biomedical
+- rare disease
 homepage_url: https://github.com/monarch-initiative/phenopacket-store
 id: phenopacket-store
 infores_id: phenopacket-store
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/BSD-3-Clause

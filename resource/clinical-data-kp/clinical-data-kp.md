@@ -22,9 +22,10 @@ domains:
   - clinical
   - information technology
   - medical imaging
+  - electronic health records
 homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
 id: clinical-data-kp
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/

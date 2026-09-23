@@ -30,11 +30,12 @@ domains:
 - public health
 - drug discovery
 - precision medicine
+- clinical trials
 fairsharing_id: FAIRsharing.mewhad
 homepage_url: https://clinicaltrials.gov/
 id: clinicaltrialsgov
 infores_id: clinicaltrials
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions

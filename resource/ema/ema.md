@@ -16,9 +16,10 @@ domains:
 - pharmacology
 - clinical
 - biomedical
+- pharmacovigilance
 homepage_url: https://www.ema.europa.eu/
 id: ema
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ema.europa.eu/en/about-us/about-website/legal-notice

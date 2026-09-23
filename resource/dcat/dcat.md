@@ -13,9 +13,10 @@ description: The Data Catalog Vocabulary (DCAT) is a W3C RDF vocabulary designed
 domains:
 - information technology
 - general
+- metadata
 homepage_url: https://www.w3.org/TR/vocab-dcat-3/
 id: dcat
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Data Catalog Vocabulary
 products:

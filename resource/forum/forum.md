@@ -10,9 +10,10 @@ description: FORUM is a Knowledge Graph providing a semantic representation of r
 domains:
 - chemistry and biochemistry
 - biomedical
+- metabolomics
 homepage_url: https://forum-webapp.semantic-metabolomics.fr/
 id: forum
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

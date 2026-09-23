@@ -13,9 +13,10 @@ description: PROV-O is the W3C PROV Ontology, an OWL2 ontology for representing 
 domains:
 - information technology
 - general
+- metadata
 homepage_url: https://www.w3.org/TR/prov-o/
 id: prov-o
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PROV-O
 products:

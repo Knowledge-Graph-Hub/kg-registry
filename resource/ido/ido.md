@@ -19,9 +19,10 @@ description: A set of interoperable ontologies that will together provide covera
   to specific to a particular part of the domain.
 domains:
 - biomedical
+- infectious disease
 homepage_url: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
 id: ido
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/

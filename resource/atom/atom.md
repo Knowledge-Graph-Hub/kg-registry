@@ -14,9 +14,11 @@ domains:
   - drug discovery
   - literature
   - information technology
+  - cancer
+  - natural language processing
 homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
 id: atom
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

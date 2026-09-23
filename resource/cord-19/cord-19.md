@@ -24,10 +24,12 @@ domains:
 - biomedical
 - public health
 - information technology
+- infectious disease
+- natural language processing
 homepage_url: https://allenai.org/data/cord-19
 id: cord-19
 infores_id: cord19
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

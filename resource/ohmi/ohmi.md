@@ -21,9 +21,11 @@ description: The Ontology of Host-Microbiome Interactions aims to ontologically 
 domains:
 - biological systems
 - organisms
+- microbiology
+- microbiome
 homepage_url: https://github.com/ohmi-ontology/ohmi
 id: ohmi
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

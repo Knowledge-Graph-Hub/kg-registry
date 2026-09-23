@@ -25,9 +25,10 @@ domains:
 - genomics
 - clinical
 - precision medicine
+- diabetes mellitus
 homepage_url: https://pankbase.org/
 id: pankbase
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

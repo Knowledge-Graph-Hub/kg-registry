@@ -19,9 +19,10 @@ description: The PRS Atlas is a comprehensive resource analyzing 162 polygenic r
 domains:
 - genomics
 - biomedical
+- genome-wide association studies
 homepage_url: https://datadryad.org/dataset/doi:10.5061/dryad.h18c66b
 id: prsatlas
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://spdx.org/licenses/CC0-1.0.html

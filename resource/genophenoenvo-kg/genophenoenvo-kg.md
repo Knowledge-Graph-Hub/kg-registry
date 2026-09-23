@@ -12,9 +12,11 @@ domains:
   - systems biology
   - biological systems
   - biomedical
+  - organisms
+  - plants
 homepage_url: https://github.com/genophenoenvo/knowledge-graph
 id: genophenoenvo-kg
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/BSD-3-Clause

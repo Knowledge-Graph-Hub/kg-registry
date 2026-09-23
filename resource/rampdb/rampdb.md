@@ -16,9 +16,12 @@ domains:
   - systems biology
   - pathways
   - biomedical
+  - chemistry and biochemistry
+  - metabolomics
+  - metabolism
 id: rampdb
 infores_id: rampdb
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: RaMPDB
 homepage_url: https://rampdb.nih.gov/

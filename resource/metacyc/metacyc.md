@@ -17,10 +17,12 @@ description: MetaCyc is a curated database of experimentally elucidated metaboli
   a representative sample of each experimentally elucidated pathway.
 domains:
 - biological systems
+- pathways
+- metabolism
 homepage_url: https://metacyc.org/
 id: metacyc
 infores_id: metacyc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://metacyc.org/download.shtml

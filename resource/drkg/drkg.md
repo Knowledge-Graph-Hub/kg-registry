@@ -14,9 +14,11 @@ description: Drug Repurposing Knowledge Graph (DRKG) is a comprehensive biologic
   effects and symptoms.
 domains:
 - biomedical
+- drug discovery
+- drug repositioning
 homepage_url: https://github.com/gnn4dr/DRKG
 id: drkg
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

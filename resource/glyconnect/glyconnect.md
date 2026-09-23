@@ -16,9 +16,10 @@ description: GlyConnect is a knowledgebase of glycoproteins spanning protein, gl
 domains:
 - biological systems
 - chemistry and biochemistry
+- glycomics
 homepage_url: https://glyconnect.expasy.org/
 id: glyconnect
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

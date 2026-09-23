@@ -19,9 +19,11 @@ description: The Coleoptera Anatomy Ontology contains terms used for describing 
   system (AISM) as a backbone.
 domains:
 - anatomy and development
+- organisms
+- insects
 homepage_url: https://github.com/insect-morphology/colao
 id: colao
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

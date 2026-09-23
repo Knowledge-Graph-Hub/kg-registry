@@ -27,6 +27,7 @@ description: Ocean Biodiversity Information System (OBIS) is a global open-acces
 domains:
   - environment
   - organisms
+  - biodiversity
 homepage_url: https://obis.org/
 id: "obis"
 infores_id: "obis"
@@ -113,7 +114,7 @@ taxon:
   - "NCBITaxon:2157"
   - "NCBITaxon:2158"
   - "NCBITaxon:2159"
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 # Ocean Biodiversity Information System (OBIS)

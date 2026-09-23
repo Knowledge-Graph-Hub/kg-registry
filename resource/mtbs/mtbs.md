@@ -18,9 +18,10 @@ description: Monitoring Trends in Burn Severity (MTBS) is an interagency program
 domains:
 - environment
 - general
+- wildfires
 homepage_url: https://www.mtbs.gov/
 id: mtbs
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Monitoring Trends in Burn Severity
 products:

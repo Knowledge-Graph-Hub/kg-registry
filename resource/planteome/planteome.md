@@ -24,9 +24,10 @@ domains:
 - organisms
 - agriculture
 - phenotype
+- plants
 homepage_url: https://planteome.org
 id: planteome
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

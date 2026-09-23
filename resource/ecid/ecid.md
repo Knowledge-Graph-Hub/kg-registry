@@ -20,6 +20,7 @@ domains:
   - biomedical
   - chemistry and biochemistry
   - public health
+  - environmental exposure
 homepage_url: https://www.ecidbase.org/
 id: ecid
 layout: resource_detail
@@ -142,7 +143,7 @@ products:
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-05-12T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 # Exposome Correlation and Interpretation Database (ECID)

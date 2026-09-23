@@ -12,9 +12,10 @@ description: Maven Central is the default public repository for the Java and JVM
   hosting metadata and distributable artifacts for Maven-compatible packages.
 domains:
 - information technology
+- software
 homepage_url: https://central.sonatype.com/
 id: maven-central
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Maven Central Repository
 products:

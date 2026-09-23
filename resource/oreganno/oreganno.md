@@ -13,9 +13,10 @@ description: ORegAnno (the Open Regulatory Annotation database) is a community-d
 domains:
 - genomics
 - systems biology
+- gene regulation
 homepage_url: https://genome.ucsc.edu/cgi-bin/hgTrackUi?org=Human&g=oreganno
 id: oreganno
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/lgpl.html

@@ -12,9 +12,10 @@ description: The Zasha Weinberg Data repository is a collection of RNA sequence 
 domains:
   - genomics
   - biological systems
+  - non-coding RNA
 homepage_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
 id: zwd
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Zasha Weinberg Data
 products:

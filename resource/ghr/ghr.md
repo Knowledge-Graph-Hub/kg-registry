@@ -13,10 +13,11 @@ description: Consumer health resource about genetic conditions from the US Natio
 domains:
   - biomedical
   - genomics
+  - rare disease
 homepage_url: https://medlineplus.gov/genetics/
 id: ghr
 infores_id: ghr
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Genetics Home Reference
 synonyms:

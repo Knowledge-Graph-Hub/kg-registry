@@ -23,12 +23,13 @@ description: KnowWhereGraph is a large-scale geospatial and environmental knowle
 domains:
 - environment
 - public health
+- geographic information systems
 funding:
 - National Science Foundation (NSF) - Convergence Accelerated Program (OIA-2033521)
 homepage_url: https://knowwheregraph.org/
 id: knowwheregraph
 infores_id: knowwheregraph
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

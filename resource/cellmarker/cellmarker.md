@@ -23,10 +23,12 @@ domains:
 - genomics
 - biological systems
 - organisms
+- cell biology
+- single-cell analysis
 homepage_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/
 id: cellmarker
 infores_id: cellmarker
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: CellMarker
 products:

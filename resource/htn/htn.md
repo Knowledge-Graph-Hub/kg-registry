@@ -17,9 +17,10 @@ description: An ontology for representing clinical data about hypertension, inte
   to support classification of patients according to various diagnostic guidelines
 domains:
 - biomedical
+- cardiovascular disease
 homepage_url: https://github.com/aellenhicks/htn_owl
 id: htn
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

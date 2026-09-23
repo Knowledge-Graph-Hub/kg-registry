@@ -25,10 +25,11 @@ description: EPSD (Eukaryotic Phosphorylation Site Database) is a comprehensive 
 domains:
 - genomics
 - proteomics
+- post-translational modification
 homepage_url: https://epsd.biocuckoo.cn
 id: epsd
 infores_id: epsd
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Eukaryotic Phosphorylation Site Database 2.0
 products:

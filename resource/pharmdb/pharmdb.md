@@ -8,9 +8,10 @@ description: PharmDB (PharmDB-K) is a pharmacological knowledge graph integratin
 domains:
 - drug discovery
 - biomedical
+- drug repositioning
 homepage_url: http://www.pharmdb-k.org/
 id: pharmdb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

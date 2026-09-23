@@ -17,9 +17,10 @@ description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
 domains:
 - biological systems
 - organisms
+- taxonomy
 homepage_url: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 id: vto
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

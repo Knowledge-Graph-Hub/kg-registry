@@ -15,9 +15,10 @@ description: LncRNADisease is a database of experimentally supported and predict
 domains:
 - genomics
 - clinical
+- non-coding RNA
 homepage_url: http://www.rnanut.net/lncrnadisease/
 id: lncrnadisease
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: LncRNADisease
 products:

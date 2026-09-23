@@ -16,9 +16,10 @@ creation_date: '2025-09-29T00:00:00Z'
 description: A gazetteer constructed on ontological principles. The countries are actively maintained.
 domains:
   - environment
+  - geographic information systems
 homepage_url: http://environmentontology.github.io/gaz/
 id: gaz
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

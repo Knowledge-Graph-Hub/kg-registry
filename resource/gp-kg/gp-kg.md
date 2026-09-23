@@ -11,9 +11,11 @@ creation_date: '2025-03-09T00:00:00Z'
 description: A knowledge graph for drug repurposing
 domains:
   - biomedical
+  - drug discovery
+  - drug repositioning
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 id: gp-kg
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

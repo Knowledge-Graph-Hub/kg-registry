@@ -20,10 +20,11 @@ description: Translator Text Mining Provider that produces knowledge-graph asser
 domains:
 - biomedical
 - literature
+- natural language processing
 homepage_url: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
 id: text-mining-kp
 infores_id: textmining-kp
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

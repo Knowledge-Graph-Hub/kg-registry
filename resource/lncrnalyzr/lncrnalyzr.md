@@ -15,9 +15,10 @@ domains:
   - biomedical
   - genomics
   - systems biology
+  - non-coding RNA
 homepage_url: https://lncrnalyzr.maayanlab.cloud/
 id: lncrnalyzr
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/

@@ -7,9 +7,10 @@ description: The global archive of experimentally determined three-dimensional s
 domains:
 - biological systems
 - proteomics
+- protein structure
 homepage_url: https://www.rcsb.org/
 id: pdb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Protein Data Bank (PDB)
 products:

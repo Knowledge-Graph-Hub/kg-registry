@@ -15,9 +15,10 @@ domains:
 - biomedical
 - proteomics
 - biological systems
+- post-translational modification
 homepage_url: https://biomics.lab.nycu.edu.tw/dbSNO/index.php
 id: dbsno
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: dbSNO
 products:

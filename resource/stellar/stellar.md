@@ -20,9 +20,13 @@ description: STELLAR is a geometric deep learning method for cell type discovery
 domains:
 - biomedical
 - genomics
+- biological systems
+- single-cell analysis
+- information technology
+- machine learning
 homepage_url: https://snap.stanford.edu/stellar/
 id: stellar
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

@@ -15,9 +15,12 @@ domains:
   - clinical
   - biomedical
   - public health
+  - clinical coding
+  - immunology
+  - vaccines
 homepage_url: https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx
 id: "cvx"
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Vaccine Administered Code Set (CVX)
 products:

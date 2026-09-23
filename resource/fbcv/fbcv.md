@@ -18,10 +18,11 @@ description: A structured controlled vocabulary used for various aspects of anno
 domains:
 - biological systems
 - organisms
+- insects
 homepage_url: http://purl.obolibrary.org/obo/fbcv
 id: fbcv
 infores_id: fbcv
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

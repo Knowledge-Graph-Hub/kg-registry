@@ -18,9 +18,13 @@ description: An ontology is developed to support Eukaryotic Pathogen, Host & Vec
 domains:
 - biological systems
 - organisms
+- biomedical
+- infectious disease
+- microbiology
+- host-pathogen interactions
 homepage_url: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 id: eupath
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

@@ -14,9 +14,10 @@ description: PIRSF (Protein Information Resource SuperFamily) is a network class
   relationships among protein families.
 domains:
 - proteomics
+- protein domains
 homepage_url: https://proteininformationresource.org/pirsf/
 id: pirsf
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PIRSF
 products:

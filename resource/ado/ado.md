@@ -20,9 +20,11 @@ description: Alzheimer's Disease Ontology is a knowledge-based ontology that enc
   be readily applied for text mining.
 domains:
 - biomedical
+- neuroscience
+- neurodegenerative disease
 homepage_url: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
 id: ado
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

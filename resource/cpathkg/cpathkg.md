@@ -16,6 +16,7 @@ contacts:
 description: The C-Path Knowledge Graph project is intended to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph.
 domains:
   - biomedical
+  - rare disease
 homepage_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
 id: cpathkg
 layout: resource_detail
@@ -61,7 +62,7 @@ publications:
   title: Increased discoverability of rare disease datasets through knowledge graph integration
   year: '2024'
 creation_date: '2025-04-11T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 C-Path KG

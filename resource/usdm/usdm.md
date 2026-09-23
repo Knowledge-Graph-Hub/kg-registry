@@ -21,9 +21,10 @@ domains:
 - environment
 - agriculture
 - public health
+- climate
 homepage_url: https://droughtmonitor.unl.edu/
 id: usdm
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: U.S. Drought Monitor
 products:

@@ -17,9 +17,12 @@ description: AfPO is an ontology that can be used in the study of diverse popula
 domains:
   - biological systems
   - organisms
+  - genomics
+  - population genetics
+  - human populations
 homepage_url: https://github.com/h3abionet/afpo
 id: afpo
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

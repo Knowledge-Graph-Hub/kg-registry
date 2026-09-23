@@ -13,9 +13,11 @@ domains:
 - environment
 - public health
 - biomedical
+- drug discovery
+- high-throughput screening
 homepage_url: https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast
 id: toxcast
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/privacy/privacy-and-security-notice

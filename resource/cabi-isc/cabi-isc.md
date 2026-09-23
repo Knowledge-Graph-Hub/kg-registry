@@ -17,9 +17,10 @@ domains:
 - organisms
 - environment
 - agriculture
+- biodiversity
 homepage_url: https://www.cabidigitallibrary.org/product/qi
 id: cabi-isc
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.cabidigitallibrary.org/terms-and-conditions

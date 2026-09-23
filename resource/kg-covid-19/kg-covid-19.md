@@ -14,9 +14,10 @@ domains:
 - biomedical
 - microbiology
 - public health
+- infectious disease
 homepage_url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
 id: kg-covid-19
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause

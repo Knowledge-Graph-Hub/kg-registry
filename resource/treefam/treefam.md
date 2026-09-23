@@ -15,9 +15,10 @@ description: TreeFam (Tree families database) is a database of phylogenetic tree
 domains:
 - genomics
 - organisms
+- molecular evolution
 homepage_url: http://www.treefam.org/
 id: treefam
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: TreeFam
 products:

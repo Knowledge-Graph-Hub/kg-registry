@@ -17,9 +17,12 @@ description: An OWL2 ontology of phenomena in infectious disease epidemiology an
   population biology for use in epidemic simulation.
 domains:
 - biomedical
+- infectious disease
+- public health
+- epidemiology
 homepage_url: https://github.com/ApolloDev/apollo-sv
 id: apollo_sv
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

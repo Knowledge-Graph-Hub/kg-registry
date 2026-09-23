@@ -15,9 +15,11 @@ description: Controlled vocabulary pertaining to RNA function and based on RNA s
   secondary and three-dimensional structures.
 domains:
 - chemistry and biochemistry
+- genomics
+- non-coding RNA
 homepage_url: https://github.com/bgsu-rna/rnao
 id: rnao
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

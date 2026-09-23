@@ -14,9 +14,10 @@ description: Semantic Scholar is a free, AI-powered research tool and scholarly 
 domains:
 - literature
 - information technology
+- scholarly communication
 homepage_url: https://www.semanticscholar.org/
 id: semantic-scholar
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Semantic Scholar
 products:

@@ -15,9 +15,10 @@ description: The Colorado Richly Annotated Full-Text (CRAFT) Corpus is a manuall
 domains:
 - literature
 - biomedical
+- natural language processing
 homepage_url: https://github.com/UCDenver-ccp/CRAFT
 id: craft
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

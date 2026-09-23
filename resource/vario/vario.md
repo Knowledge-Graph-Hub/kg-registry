@@ -17,9 +17,11 @@ description: Variation Ontology, VariO, is an ontology for standardized, systema
   description of effects, consequences and mechanisms of variations.
 domains:
 - biological systems
+- genomics
+- genetic variation
 homepage_url: http://variationontology.org
 id: vario
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

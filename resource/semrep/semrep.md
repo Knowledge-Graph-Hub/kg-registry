@@ -20,9 +20,10 @@ domains:
 - biomedical
 - literature
 - information technology
+- natural language processing
 homepage_url: https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR.html
 id: semrep
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://uts.nlm.nih.gov/license.html

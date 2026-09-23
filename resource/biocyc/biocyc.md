@@ -16,9 +16,11 @@ description: BioCyc is a collection of 20,070 Pathway/Genome Databases (PGDBs) f
   publications.
 domains:
 - biological systems
+- pathways
+- metabolism
 homepage_url: https://biocyc.org/
 id: biocyc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://biocyc.org/download.shtml

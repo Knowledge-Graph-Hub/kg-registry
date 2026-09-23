@@ -16,10 +16,12 @@ domains:
 - immunology
 - biological systems
 - systems biology
+- microbiology
+- host-pathogen interactions
 homepage_url: https://www.innatedb.com/
 id: innatedb
 infores_id: innatedb
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.innatedb.com/

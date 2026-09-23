@@ -27,9 +27,11 @@ domains:
 - systems biology
 - phenotype
 - proteomics
+- information technology
+- machine learning
 homepage_url: https://zhanggroup.org/UniBioMap/
 id: unibiomap
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

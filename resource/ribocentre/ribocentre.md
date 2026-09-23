@@ -17,9 +17,10 @@ description: Ribocentre is a comprehensive database containing information about
 domains:
   - genomics
   - biological systems
+  - non-coding RNA
 homepage_url: https://www.ribocentre.org/
 id: ribocentre
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Ribocentre
 products:

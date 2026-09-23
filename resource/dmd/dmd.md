@@ -15,9 +15,10 @@ domains:
 - clinical
 - biomedical
 - pharmacology
+- clinical coding
 homepage_url: https://digital.nhs.uk/services/terminology-and-classifications/dm-d
 id: dmd
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: NHS dictionary of medicines and devices
 products:

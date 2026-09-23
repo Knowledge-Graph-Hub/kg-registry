@@ -16,9 +16,10 @@ creation_date: '2025-09-29T00:00:00Z'
 description: GlyTouCan provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). GNOme organizes these stable accessions for interative browsing, for text-based searching, and for automated reasoning with well-defined characterization levels.
 domains:
   - chemistry and biochemistry
+  - glycomics
 homepage_url: https://gnome.glyomics.org/
 id: gno
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

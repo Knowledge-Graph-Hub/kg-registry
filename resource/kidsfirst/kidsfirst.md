@@ -23,9 +23,10 @@ domains:
 - biomedical
 - genomics
 - clinical
+- cancer
 homepage_url: https://kidsfirstdrc.org/
 id: kidsfirst
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Kids First Data Resource Center
 products:

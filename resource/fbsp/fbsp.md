@@ -18,9 +18,11 @@ description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baec
 domains:
 - biological systems
 - organisms
+- insects
+- taxonomy
 homepage_url: http://www.flybase.org/
 id: fbsp
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Fly taxonomy
 products:

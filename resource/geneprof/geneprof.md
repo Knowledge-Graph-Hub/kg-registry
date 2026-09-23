@@ -5,9 +5,10 @@ creation_date: '2025-10-30T00:00:00Z'
 description: GeneProf was a database resource for gene expression profiles and functional genomics data. The underlying resource is currently inaccessible (404 error), indicating the resource is likely inactive or deprecated.
 domains:
   - genomics
+  - gene expression profiling
 id: "geneprof"
 infores_id: "geneprof"
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: GeneProf
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/GeneProf

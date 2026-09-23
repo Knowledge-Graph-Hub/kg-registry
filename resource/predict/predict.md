@@ -17,9 +17,10 @@ domains:
 - drug discovery
 - pharmacology
 - biomedical
+- drug repositioning
 homepage_url: https://www.embopress.org/doi/abs/10.1038/msb.2011.26
 id: predict
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/3.0/

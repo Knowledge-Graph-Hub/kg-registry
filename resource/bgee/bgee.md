@@ -17,10 +17,12 @@ description: Bgee is a database for retrieval and comparison of gene expression 
 domains:
 - biological systems
 - organisms
+- genomics
+- gene expression profiling
 homepage_url: https://www.bgee.org/
 id: bgee
 infores_id: bgee
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

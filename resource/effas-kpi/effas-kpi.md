@@ -19,9 +19,10 @@ domains:
 - environment
 - general
 - public health
+- sustainability
 homepage_url: https://effas.com/
 id: effas-kpi
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://effas.com/legal-notice/

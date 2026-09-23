@@ -9,9 +9,11 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 domains:
 - chemistry and biochemistry
+- proteomics
+- protein domains
 contacts:
 - category: Individual
   label: InterPro Help

@@ -16,9 +16,10 @@ creation_date: '2025-03-09T00:00:00Z'
 description: Ontology rendering of the EcoSIM Land System Model
 domains:
 - environment
+- ecology
 homepage_url: https://github.com/bioepic-data/ecosim-ontology
 id: ecosim
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: ecosim
 products:

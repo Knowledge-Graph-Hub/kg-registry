@@ -14,6 +14,7 @@ domains:
   - biomedical
   - drug discovery
   - pharmacology
+  - drug repositioning
 homepage_url: https://github.com/MindRank-Biotech/PharmKG
 id: pharmkg
 layout: resource_detail
@@ -76,7 +77,7 @@ repository: https://github.com/MindRank-Biotech/PharmKG
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-08-12T00:00:00Z'
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 PharmKG

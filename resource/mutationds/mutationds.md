@@ -18,9 +18,11 @@ description: The Catalog of Validated Oncogenic Mutations is part of the Cancer 
 domains:
 - genomics
 - biomedical
+- cancer
+- genetic variation
 homepage_url: https://www.cancergenomeinterpreter.org/mutations
 id: mutationds
-last_modified_date: '2026-01-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Catalog of Validated Oncogenic Mutations
 products:

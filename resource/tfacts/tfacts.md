@@ -14,9 +14,10 @@ domains:
 - genomics
 - systems biology
 - pathways
+- gene regulation
 homepage_url: http://www.tfacts.org/
 id: tfacts
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: TFactS
 products:

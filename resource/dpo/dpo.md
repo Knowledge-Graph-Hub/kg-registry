@@ -17,9 +17,11 @@ description: An ontology of commonly encountered and/or high level Drosophila ph
 domains:
 - biological systems
 - phenotype
+- organisms
+- insects
 homepage_url: http://purl.obolibrary.org/obo/fbcv
 id: dpo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
