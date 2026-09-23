@@ -13,8 +13,9 @@ Describes resource availability:
 
 ## DomainEnum
 Scientific domains describing the information a resource provides. Each value
-maps, where possible, to a controlled vocabulary concept (MeSH or NCIT) via its
-`meaning`. Examples:
+maps, where possible, to a controlled vocabulary concept (MeSH, NCIT, or EDAM) via its
+`meaning`. Broad domains have specific domains beneath them, linked by `is_a`
+(for example, `neurodegenerative disease` is a `neuroscience` domain). Examples:
 - Biomedical
 - Clinical
 - Genomics
