@@ -15,12 +15,11 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.
 domains:
-  - biological systems
   - phenotype
 homepage_url: https://github.com/obophenotype/zebrafish-phenotype-ontology
 id: "zp"
 infores_id: "zp"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: "http://creativecommons.org/licenses/by/3.0/"

@@ -16,12 +16,11 @@ creation_date: '2025-06-25T00:00:00Z'
 description: A collection of biological attributes (traits) covering all kingdoms
   of life.
 domains:
-- biological systems
 - phenotype
 homepage_url: https://github.com/obophenotype/bio-attribute-ontology
 id: oba
 infores_id: oba
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

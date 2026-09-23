@@ -17,10 +17,9 @@ creation_date: '2025-09-09T00:00:00Z'
 description: REDIportal is a specialized database of A-to-I RNA editing events, integrating ~16 million sites from GTEx and TCGA with links to Ensembl, RNAcentral, UniProt, and PRIDE. The portal supports search by genomic position, sample (GTEx/TCGA), dsRNA modules, and gene view, and reports AEI/REI indices and a deep-learning-based reliability score (REDInet).
 domains:
   - genomics
-  - biological systems
 homepage_url: https://rediportal.cloud.ba.infn.it/atlas/
 id: rediportal
-last_modified_date: '2025-10-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: REDIportal
 products:

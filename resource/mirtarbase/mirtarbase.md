@@ -8,10 +8,10 @@ description: miRTarBase is a comprehensive database of experimentally validated 
   qPCR, microarray, and high-throughput experiments such as CLIP-Seq.
 domains:
 - genomics
-- biological systems
+- non-coding RNA
 homepage_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/index.php
 id: mirtarbase
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: miRTarBase
 products:

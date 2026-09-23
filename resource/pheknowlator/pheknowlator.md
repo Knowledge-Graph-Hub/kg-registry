@@ -15,12 +15,11 @@ description: PheKnowLator (Phenotype Knowledge Translator; pkt_kg) is a customiz
   provides configurable build recipes (e.g., OWL, property graph), reproducible pipelines,
   and documentation for deployment and usage in the GitHub Wiki.
 domains:
-- organisms
 - biomedical
 - genomics
 homepage_url: https://github.com/callahantiff/PheKnowLator
 id: pheknowlator
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0

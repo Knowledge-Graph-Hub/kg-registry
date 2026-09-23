@@ -20,10 +20,11 @@ domains:
 - genomics
 - clinical
 - precision medicine
+- genetic variation
 homepage_url: https://www.ncbi.nlm.nih.gov/clinvar/
 id: clinvar
 infores_id: clinvar
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/

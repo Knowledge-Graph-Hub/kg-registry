@@ -21,12 +21,11 @@ description: SILVA is a comprehensive online resource for quality checked and al
 domains:
 - microbiology
 - genomics
-- biological systems
 - organisms
-- biomedical
+- non-coding RNA
 homepage_url: https://www.arb-silva.de/
 id: silva
-last_modified_date: '2025-09-24T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: SILVA
 products:

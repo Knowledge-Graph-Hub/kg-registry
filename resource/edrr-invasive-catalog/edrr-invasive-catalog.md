@@ -15,9 +15,10 @@ description: The Catalog of U.S. Federal Early Detection/Rapid Response (EDRR) I
 domains:
 - organisms
 - environment
+- biodiversity
 homepage_url: https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6
 id: edrr-invasive-catalog
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases
   and Tools

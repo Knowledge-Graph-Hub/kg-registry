@@ -14,9 +14,11 @@ creation_date: '2025-09-29T00:00:00Z'
 description: For the description of covalent bonds in proteins.
 domains:
 - chemistry and biochemistry
+- proteomics
+- post-translational modification
 homepage_url: http://www.ebi.ac.uk/RESID/
 id: resid
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Protein covalent bond
 products:

@@ -17,11 +17,13 @@ description: The Human Ancestry Ontology (HANCESTRO) provides a systematic descr
   of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
   association studies.
 domains:
-- biological systems
 - organisms
+- genomics
+- population genetics
+- human populations
 homepage_url: https://ebispot.github.io/hancestro/
 id: hancestro
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

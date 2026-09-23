@@ -18,9 +18,11 @@ description: FOBI (Food-Biomarker Ontology) is an ontology to represent food int
 domains:
 - chemistry and biochemistry
 - nutrition
+- metabolomics
+- food
 homepage_url: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 id: fobi
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

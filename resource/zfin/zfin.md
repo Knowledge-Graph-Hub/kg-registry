@@ -10,14 +10,14 @@ contacts:
 creation_date: '2025-03-09T00:00:00Z'
 description: Zebrafish Information Network, including the Zebrafish Anatomical Ontology
 domains:
-- biological systems
 - genomics
 - organisms
 - anatomy and development
+- model organisms
 homepage_url: https://zfin.org/
 id: zfin
 infores_id: zfin
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

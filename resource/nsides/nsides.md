@@ -16,10 +16,11 @@ domains:
   - drug discovery
   - biomedical
   - precision medicine
+  - pharmacovigilance
 homepage_url: https://nsides.io/
 id: nsides
 infores_id: nsides
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: nSIDES
 products:

@@ -42,10 +42,12 @@ description: The Mouse Genome Database (MGD) is the international database resou
   the global mouse research community providing standardized, expert-curated knowledge.
 domains:
 - genomics
+- organisms
+- model organisms
 homepage_url: https://www.informatics.jax.org/
 id: mgd
 infores_id: mgi
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Mouse Genome Database
 products:

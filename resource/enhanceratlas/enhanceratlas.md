@@ -19,10 +19,10 @@ description: EnhancerAtlas is a genome-wide atlas of enhancer annotations spanni
 domains:
 - genomics
 - systems biology
-- biological systems
+- gene regulation
 homepage_url: http://www.enhanceratlas.org/
 id: enhanceratlas
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: EnhancerAtlas
 products:

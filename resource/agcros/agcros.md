@@ -21,10 +21,9 @@ description: The Agricultural Collaborative Research Outcomes System (AgCROS) is
 domains:
 - agriculture
 - environment
-- general
 homepage_url: https://agcros-usdaars.opendata.arcgis.com/
 id: agcros
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

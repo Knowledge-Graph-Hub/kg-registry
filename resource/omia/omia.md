@@ -15,9 +15,11 @@ domains:
 - genomics
 - phenotype
 - agriculture
+- genetic variation
+- domestic animals
 homepage_url: https://omia.org/
 id: omia
-last_modified_date: '2026-08-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Online Mendelian Inheritance in Animals (OMIA)
 products:

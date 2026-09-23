@@ -20,10 +20,9 @@ domains:
 - environment
 - microbiology
 - genomics
-- biological systems
 homepage_url: https://gold.jgi.doe.gov/
 id: goldterms
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/cmungall/gold-ontology/blob/main/LICENSE

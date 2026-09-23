@@ -18,10 +18,10 @@ description: The National Hydrography Dataset (NHD) is the U.S. Geological Surve
   PFAS observations.
 domains:
 - environment
-- general
+- water resources
 homepage_url: https://www.usgs.gov/national-hydrography/national-hydrography-dataset
 id: usgs-nhd
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

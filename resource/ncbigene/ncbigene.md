@@ -19,11 +19,11 @@ description: NCBI Gene integrates information from a wide range of species. A re
   may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations,
   phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide.
 domains:
-- biological systems
+- genomics
 homepage_url: https://www.ncbi.nlm.nih.gov/gene/
 id: ncbigene
 infores_id: ncbi-gene
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

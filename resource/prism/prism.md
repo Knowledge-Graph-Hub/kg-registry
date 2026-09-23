@@ -21,9 +21,11 @@ domains:
 - pharmacology
 - biomedical
 - precision medicine
+- cancer
+- high-throughput screening
 homepage_url: https://depmap.org/repurposing/
 id: prism
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PRISM
 products:

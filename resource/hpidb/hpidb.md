@@ -20,11 +20,13 @@ domains:
 - immunology
 - microbiology
 - proteomics
+- protein interactions
+- host-pathogen interactions
 fairsharing_id: FAIRsharing.fk0z49
 homepage_url: https://hpidb.igbb.msstate.edu/
 id: hpidb
 infores_id: hpidb
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Host-Pathogen Interaction Database
 products:

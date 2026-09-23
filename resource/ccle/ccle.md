@@ -9,9 +9,10 @@ description: CCLE is the Cancer Cell Line Encyclopedia, a collaboration between 
   Broad Institute and the Novartis Institutes for Biomedical Research.
 domains:
 - biomedical
+- cancer
 homepage_url: https://sites.broadinstitute.org/ccle/
 id: ccle
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

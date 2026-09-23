@@ -8,9 +8,10 @@ domains:
   - biomedical
   - phenotype
   - precision medicine
+  - rare disease
 id: eram
 infores_id: eram
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://119.3.41.228/eram/download.php

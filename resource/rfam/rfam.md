@@ -20,10 +20,10 @@ description: Rfam is a comprehensive database of RNA families, each represented 
   enhanced Gene Ontology annotations, and comprehensive viral RNA families.
 domains:
 - genomics
-- biological systems
+- non-coding RNA
 homepage_url: https://rfam.org/
 id: rfam
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

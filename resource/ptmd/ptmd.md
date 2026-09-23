@@ -19,9 +19,10 @@ description: PTMD 2.0 is a human post-translational modification and disease ass
 domains:
 - biomedical
 - proteomics
+- post-translational modification
 homepage_url: https://ptmd.biocuckoo.cn/
 id: ptmd
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PTMD
 products:

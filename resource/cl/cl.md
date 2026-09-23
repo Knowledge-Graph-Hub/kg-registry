@@ -17,10 +17,12 @@ description: The Cell Ontology is a structured controlled vocabulary for cell ty
   in animals.
 domains:
 - anatomy and development
+- biological systems
+- cell biology
 homepage_url: https://obophenotype.github.io/cell-ontology/
 id: cl
 infores_id: cl
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

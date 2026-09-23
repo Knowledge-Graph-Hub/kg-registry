@@ -14,10 +14,9 @@ description: The UCSC Genome Browser is a web-based tool and data resource provi
   bulk data download, and programmatic access to genomic annotations.
 domains:
 - genomics
-- biomedical
 homepage_url: https://genome.ucsc.edu/
 id: ucsc
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://genome.ucsc.edu/license/

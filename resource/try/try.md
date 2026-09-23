@@ -17,11 +17,13 @@ description: The TRY Plant Trait Database aggregates global plant trait measurem
   contributed by researchers and institutions, widely used for ecological and metabolomic
   analyses.
 domains:
-- biological systems
+- organisms
+- plants
+- environment
 homepage_url: https://www.try-db.org/TryWeb/Home.php
 id: try
 infores_id: try
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.try-db.org/TryWeb/TRY_Intellectual_Property_Guidelines.pdf

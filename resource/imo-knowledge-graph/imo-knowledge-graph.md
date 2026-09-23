@@ -30,9 +30,10 @@ domains:
 - clinical
 - biomedical
 - pharmacology
+- clinical coding
 homepage_url: https://www.imohealth.com/knowledge-graph/
 id: imo-knowledge-graph
-last_modified_date: '2026-07-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.imohealth.com/terms-of-use/

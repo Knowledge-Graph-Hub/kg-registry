@@ -4,11 +4,11 @@ category: Aggregator
 creation_date: '2025-09-09T00:00:00Z'
 description: The Comparative RNA Database (CRD) is an aggregator of comparative RNA sequence and secondary structure data, covering ribosomal, intron, and other RNAs. It is published through the Comparative RNA Web (CRW) Site, which relocated from its original University of Texas host to CRW2 (Comparative RNA Web-2).
 domains:
-  - biological systems
   - genomics
+  - non-coding RNA
 homepage_url: https://crw2-comparative-rna-web.org/
 id: crd
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Comparative RNA Database (CRD)
 products:

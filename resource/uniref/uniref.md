@@ -14,12 +14,10 @@ creation_date: '2025-10-31T00:00:00Z'
 description: UniRef (Universal Protein Resource Reference Clusters) provides clustered sets of protein sequences from the UniProt Knowledgebase and selected UniParc records to obtain complete coverage. UniRef100 combines identical sequences and sub-fragments into a single UniRef entry, UniRef90 clusters sequences with 90% sequence identity, and UniRef50 clusters sequences with 50% sequence identity, providing speed and coverage tradeoffs for similarity searches.
 domains:
   - proteomics
-  - biomedical
-  - biological systems
 homepage_url: https://www.uniprot.org/help/uniref
 id: uniref
 infores_id: uniref
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

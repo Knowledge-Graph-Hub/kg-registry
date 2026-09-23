@@ -20,9 +20,11 @@ description: 'MIxS, or the Minimum Information about any (X) Sequence is a stand
   was the sample collected? What methods were utilized to process the sample?'
 domains:
 - environment
+- genomics
+- microbiology
 homepage_url: https://w3id.org/mixs
 id: mixs
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

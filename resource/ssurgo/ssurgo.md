@@ -20,10 +20,9 @@ description: The Soil Survey Geographic Database (SSURGO) is a detailed digital 
 domains:
 - agriculture
 - environment
-- general
 homepage_url: https://websoilsurvey.nrcs.usda.gov/
 id: ssurgo
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works

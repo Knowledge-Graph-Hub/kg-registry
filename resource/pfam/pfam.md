@@ -16,10 +16,11 @@ description: Pfam is a large collection of protein families, each represented by
   domains and functional sites.
 domains:
 - proteomics
+- protein domains
 homepage_url: https://www.ebi.ac.uk/interpro/entry/pfam/
 id: pfam
 infores_id: pfam
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

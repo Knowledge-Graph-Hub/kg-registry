@@ -9,10 +9,14 @@ description: CTD is a robust, publicly available database that aims to advance u
   about how environmental exposures affect human health.
 domains:
 - chemistry and biochemistry
+- environment
+- environmental exposure
+- toxicology
+- genomics
 homepage_url: https://ctdbase.org/
 id: ctd
 infores_id: ctd
-last_modified_date: '2026-09-21T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://ctdbase.org/about/legal.jsp

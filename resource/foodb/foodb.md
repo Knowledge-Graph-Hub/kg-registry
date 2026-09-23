@@ -26,10 +26,11 @@ domains:
 - biomedical
 - agriculture
 - nutrition
+- food
 homepage_url: https://foodb.ca/
 id: foodb
 infores_id: foodb
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

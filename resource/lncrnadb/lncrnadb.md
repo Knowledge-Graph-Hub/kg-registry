@@ -5,10 +5,10 @@ creation_date: '2010-11-25T00:00:00Z'
 description: A reference database for long noncoding RNAs (lncRNAs) that have been shown to have, or be associated with, biological functions in eukaryotes. Contained over 150 lncRNAs from around 60 different species with comprehensive annotations including sequences, structural information, genomic context, expression, subcellular localization, conservation, and functional evidence.
 domains:
   - genomics
-  - biological systems
+  - non-coding RNA
 homepage_url: http://www.lncrnadb.org/
 id: lncrnadb
-last_modified_date: '2025-10-21T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: lncRNAdb
 products:

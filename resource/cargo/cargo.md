@@ -12,9 +12,10 @@ description: crates.io is the official package registry for the Rust ecosystem, 
   metadata and distributable artifacts (crates) for Rust libraries.
 domains:
 - information technology
+- software
 homepage_url: https://crates.io/
 id: cargo
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: crates.io (Cargo)
 products:

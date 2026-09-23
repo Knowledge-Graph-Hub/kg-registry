@@ -13,11 +13,11 @@ description: Campbell Biology (by Reece, Urry, Cain, Wasserman, Minorsky, and Ja
   It is the source text encoded by SRI International's AURA / Project Halo effort
   to produce the KB Bio 101 knowledge base.
 domains:
-- general
-- biomedical
+- biological systems
+- literature
 homepage_url: https://openlibrary.org/isbn/9780134093413
 id: campbell-biology
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.pearson.com/en-us/legal-information/terms-of-use.html

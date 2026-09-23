@@ -14,9 +14,12 @@ description: A harmonized and imputed canine variant atlas, unifying genotypes f
 domains:
 - genomics
 - organisms
+- genetic variation
+- population genetics
+- domestic animals
 homepage_url: https://github.com/Brundage-VAIL/CanVAS
 id: canvas
-last_modified_date: '2026-08-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

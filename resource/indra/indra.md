@@ -21,9 +21,11 @@ description: INDRA (Integrated Network and Dynamical Reasoning Assembler) is an 
 domains:
 - biomedical
 - systems biology
+- literature
+- natural language processing
 homepage_url: https://www.indra.bio/
 id: indra
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/BSD-2-Clause

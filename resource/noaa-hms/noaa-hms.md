@@ -20,9 +20,11 @@ description: The NOAA Hazard Mapping System (HMS) Fire and Smoke Product is a sa
 domains:
 - environment
 - public health
+- wildfires
+- air pollution
 homepage_url: https://www.ospo.noaa.gov/products/land/hms.html
 id: noaa-hms
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

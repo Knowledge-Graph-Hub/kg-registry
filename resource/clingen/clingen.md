@@ -20,10 +20,11 @@ domains:
 - genomics
 - biomedical
 - clinical
+- genetic variation
 homepage_url: https://clinicalgenome.org/
 id: clingen
 infores_id: clingen
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -16,11 +16,11 @@ creation_date: '2025-10-30T00:00:00Z'
 description: DisProt is a manually curated database of experimentally validated intrinsically disordered proteins (IDPs) and intrinsically disordered regions (IDRs), providing annotations for structural disorder and functional aspects of protein disorder.
 domains:
   - proteomics
-  - biological systems
+  - protein structure
 homepage_url: https://www.disprot.org
 id: disprot
 infores_id: disprot
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

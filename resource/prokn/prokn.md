@@ -21,11 +21,10 @@ description: The Protein Knowledge Network (ProKN) integrates protein-centric da
 domains:
 - proteomics
 - genomics
-- biomedical
 - systems biology
 homepage_url: https://research.bioinformatics.udel.edu/ProKN/
 id: prokn
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

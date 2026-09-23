@@ -22,9 +22,10 @@ description: 'Mechanistic Repositioning Network with Indications (MIND) is a kno
 domains:
 - drug discovery
 - biomedical
+- drug repositioning
 homepage_url: https://zenodo.org/records/8117748
 id: mind
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

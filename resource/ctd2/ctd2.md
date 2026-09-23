@@ -16,9 +16,10 @@ domains:
   - genomics
   - precision medicine
   - drug discovery
+  - cancer
 homepage_url: https://www.cancer.gov/ccg/research/functional-genomics/ctd2
 id: ctd2
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Cancer Target Discovery and Development Network
 products:

@@ -16,10 +16,12 @@ description: EpiGraphDB is an analytical platform and graph database for health 
 domains:
   - biomedical
   - genomics
-  - general
+  - public health
+  - epidemiology
+  - genome-wide association studies
 homepage_url: https://epigraphdb.org/
 id: epigraphdb
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/MRCIEU/epigraphdb

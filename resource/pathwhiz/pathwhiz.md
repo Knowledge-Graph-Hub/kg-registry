@@ -21,13 +21,12 @@ description: PathWhiz is a web-based pathway drawing and visualization tool desi
   as well as high-resolution images.
 domains:
 - pathways
-- biological systems
 - biomedical
 - drug discovery
 homepage_url: https://pathbank.org/pathwhiz
 id: pathwhiz
 infores_id: pathwhiz
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PathWhiz
 products:

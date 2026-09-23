@@ -8,10 +8,12 @@ description: The Veterans Health Administration National Drug File (VANDF) is a 
   distributed through UMLS and RxNorm.
 domains:
 - pharmacology
+- clinical
+- clinical coding
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/vandf.html
 id: ndfrt
 infores_id: ndfrt
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Veterans Health Administration National Drug File
 products:

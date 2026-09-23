@@ -12,10 +12,10 @@ contacts:
     orcid: 0000-0002-7334-7852
 description: Representation of entities in Reactome
 domains:
-  - biological systems
+  - pathways
 homepage_url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 id: reacto
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Reactome Entity Ontology (REACTO)
 products:

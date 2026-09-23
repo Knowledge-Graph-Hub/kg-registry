@@ -17,9 +17,10 @@ description: An ontology for representing treatment of disease and diagnosis and
   carcinomas and other pathological entities
 domains:
 - biomedical
+- clinical
 homepage_url: https://github.com/OGMS/ogms
 id: ogms
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

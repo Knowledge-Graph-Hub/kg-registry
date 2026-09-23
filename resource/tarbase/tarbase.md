@@ -8,10 +8,10 @@ description: TarBase v9.0 is a comprehensive database of experimentally supporte
   validation, all uniformly analyzed and manually curated with rich metadata.
 domains:
 - genomics
-- biological systems
+- non-coding RNA
 homepage_url: https://dianalab.e-ce.uth.gr/tarbasev9
 id: tarbase
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: TarBase
 products:

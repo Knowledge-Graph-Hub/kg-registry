@@ -15,9 +15,10 @@ description: The FABRIC (Functional Alteration Bias Recovery In Coding regions) 
 domains:
 - genomics
 - biomedical
+- cancer
 homepage_url: https://fabric-cancer.huji.ac.il/
 id: fabric
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: FABRIC Cancer Portal
 products:

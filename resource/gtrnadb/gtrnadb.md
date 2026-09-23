@@ -16,10 +16,10 @@ description: The Genomic tRNA Database (GtRNAdb) is a comprehensive repository o
   sequence similarity via BLAST.
 domains:
 - genomics
-- biological systems
+- non-coding RNA
 homepage_url: https://gtrnadb.org/
 id: gtrnadb
-last_modified_date: '2025-10-21T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: GtRNAdb
 products:

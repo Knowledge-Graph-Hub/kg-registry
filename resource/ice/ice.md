@@ -22,9 +22,10 @@ domains:
 - toxicology
 - biomedical
 - environment
+- environmental exposure
 homepage_url: https://ice.ntp.niehs.nih.gov/
 id: ice
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

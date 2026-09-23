@@ -15,6 +15,7 @@ description: Geoconnex is an open, community-driven knowledge graph linking U.S.
   features to enable seamless water data discovery, access, and collaborative monitoring.
 domains:
 - environment
+- water resources
 homepage_url: https://docs.geoconnex.us/about/intro
 id: geoconnex
 layout: resource_detail
@@ -66,7 +67,7 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: us-census
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 GEOCONNEX
 

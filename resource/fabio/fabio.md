@@ -11,9 +11,10 @@ description: FABIO (Functional Requirements for Bibliographic Records Object) is
 domains:
 - literature
 - general
+- scholarly communication
 homepage_url: https://sparontologies.github.io/fabio/current/fabio.html
 id: fabio
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: FABIO
 products:

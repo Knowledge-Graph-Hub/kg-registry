@@ -9,10 +9,11 @@ description: STARGEO is a gene expression search application that enables resear
 domains:
 - genomics
 - biomedical
+- gene expression profiling
 homepage_url: https://stargeo.org/
 id: startgeo
 infores_id: startgeo
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: STAR GEO Search Application
 products:

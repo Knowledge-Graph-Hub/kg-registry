@@ -16,10 +16,10 @@ creation_date: '2025-09-29T00:00:00Z'
 description: An ontology that formalizes the genomic element by defining an upper
   class genetic interval
 domains:
-- chemistry and biochemistry
+- genomics
 homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
 id: ogi
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Ontology for genetic interval
 products:

@@ -9,9 +9,11 @@ description: PsyGeNET is a knowledge resource on psychiatric disorders and their
 domains:
 - biomedical
 - genomics
+- neuroscience
+- mental disorders
 homepage_url: https://www.psygenet.org/
 id: psygenet
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PsyGeNET
 products:

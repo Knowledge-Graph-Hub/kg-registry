@@ -25,10 +25,9 @@ description: An ontology for the description of sample preparation, visualizatio
   and imaging methods used in biomedical research.
 domains:
 - biomedical
-- general
 homepage_url: https://github.com/foundingGIDE/fbbi
 id: fbbi
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

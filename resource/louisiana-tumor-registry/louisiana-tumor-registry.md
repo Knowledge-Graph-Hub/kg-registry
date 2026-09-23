@@ -20,9 +20,11 @@ domains:
 - public health
 - clinical
 - biomedical
+- cancer
+- disease registries
 homepage_url: https://publichealth.lsuhsc.edu/louisiana-tumor-registry/
 id: louisiana-tumor-registry
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://publichealth.lsuhsc.edu/louisiana-tumor-registry/data-usestatistics/data-request.aspx

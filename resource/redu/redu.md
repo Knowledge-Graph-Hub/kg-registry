@@ -14,11 +14,11 @@ description: ReDU (Reanalysis of Data User Interface) is a metadata-driven resou
   datasets and harmonized sample metadata.
 domains:
 - chemistry and biochemistry
-- biomedical
 - microbiology
+- metabolomics
 homepage_url: https://redu.gnps2.org/selection/
 id: redu
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: ReDU
 products:

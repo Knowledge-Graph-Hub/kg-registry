@@ -13,9 +13,10 @@ description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an interna
   chicken genes.
 domains:
 - organisms
+- domestic animals
 homepage_url: https://birdgenenames.org/index.jsp
 id: cgnc
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: CGNC
 products:

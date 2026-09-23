@@ -14,10 +14,11 @@ domains:
   - neuroscience
   - drug discovery
   - biomedical
+  - high-throughput screening
 homepage_url: https://pdsp.unc.edu/
 id: pdsp
 infores_id: pdsp
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Psychoactive Drug Screening Program
 products:

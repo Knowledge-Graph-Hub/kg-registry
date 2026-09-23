@@ -18,6 +18,7 @@ description: The SAWGraph Spatial KG is part of the Safe Agricultural Products a
   states in the U.S.
 domains:
 - environment
+- geographic information systems
 homepage_url: https://sawgraph.github.io/
 id: spatialkg
 layout: resource_detail
@@ -74,7 +75,7 @@ products:
   - source: spatialkg
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 SAWGraph Spatial KG
 

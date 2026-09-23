@@ -14,9 +14,10 @@ description: LncIPedia is a comprehensive public database for human long non-cod
 domains:
 - genomics
 - literature
+- non-coding RNA
 homepage_url: https://lncipedia.org/
 id: lncipedia
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

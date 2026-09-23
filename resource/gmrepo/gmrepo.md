@@ -19,9 +19,10 @@ description: GMrepo (Gut Microbiome Data Repository) is a curated and consistent
 domains:
 - biomedical
 - microbiology
+- microbiome
 homepage_url: https://gmrepo.humangut.info/
 id: gmrepo
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: GMrepo
 products:

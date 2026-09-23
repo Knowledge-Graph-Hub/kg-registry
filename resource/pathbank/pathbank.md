@@ -14,14 +14,14 @@ description: PathBank is an interactive, visual pathway database that provides m
   diagrams, pathway analysis tools, and downloads in tabular, image, sequence, and
   pathway-exchange formats.
 domains:
-- biological systems
 - pathways
 - systems biology
 - biomedical
+- metabolism
 fairsharing_id: FAIRsharing.3xwMon
 homepage_url: https://pathbank.org/
 id: pathbank
-last_modified_date: '2026-04-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opendatacommons.org/licenses/odbl/1-0/

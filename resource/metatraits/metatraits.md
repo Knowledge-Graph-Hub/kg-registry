@@ -26,10 +26,9 @@ description: metaTraits is a unified and accessible microbial trait resource tha
 domains:
 - microbiology
 - genomics
-- biological systems
 homepage_url: https://metatraits.embl.de/
 id: metatraits
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by-sa/4.0/

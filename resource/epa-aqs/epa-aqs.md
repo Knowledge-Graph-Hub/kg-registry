@@ -21,9 +21,10 @@ description: The Air Quality System (AQS) is the US Environmental Protection Age
 domains:
 - environment
 - public health
+- air pollution
 homepage_url: https://www.epa.gov/aqs
 id: epa-aqs
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

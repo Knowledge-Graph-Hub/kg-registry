@@ -9,10 +9,11 @@ domains:
 - pharmacology
 - clinical
 - biomedical
+- clinical coding
 homepage_url: https://evs.nci.nih.gov/ftp1/MED-RT/
 id: med-rt
 infores_id: medrt-umls
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: MED-RT
 products:

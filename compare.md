@@ -125,6 +125,14 @@ permalink: /compare/
 
 <script>
   window.kgRegistryBaseUrl = {{ site.baseurl | jsonify }};
+  // Specific domains and the broad domain each one belongs to (DomainEnum is_a).
+  window.kgRegistryDomainParents = {
+    {%- for pv in site.data.schema.enums.DomainEnum.permissible_values -%}
+    {%- if pv[1].is_a %}
+    {{ pv[0] | jsonify }}: {{ pv[1].is_a | jsonify }},
+    {%- endif -%}
+    {%- endfor %}
+  };
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 <script src="{{ '/assets/js/resource-compare.js' | relative_url }}"></script>

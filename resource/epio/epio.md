@@ -16,9 +16,11 @@ creation_date: '2025-09-29T00:00:00Z'
 description: A application driven Epilepsy Ontology with official terms from the ILAE.
 domains:
 - biomedical
+- neuroscience
+- clinical
 homepage_url: https://github.com/SCAI-BIO/EpilepsyOntology
 id: epio
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

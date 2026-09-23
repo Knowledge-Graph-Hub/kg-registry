@@ -15,9 +15,10 @@ description: Proteopedia is a collaborative, 3D web-encyclopedia of proteins and
 domains:
 - proteomics
 - chemistry and biochemistry
+- protein structure
 homepage_url: https://proteopedia.org/
 id: proteopedia
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Proteopedia
 products:

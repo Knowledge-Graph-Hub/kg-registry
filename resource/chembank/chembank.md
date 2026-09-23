@@ -21,10 +21,11 @@ domains:
 - chemistry and biochemistry
 - drug discovery
 - pharmacology
+- high-throughput screening
 homepage_url: http://chembank.broadinstitute.org/
 id: chembank
 infores_id: chembank
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: ChemBank
 products:

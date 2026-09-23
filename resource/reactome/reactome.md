@@ -25,14 +25,13 @@ description: Reactome is a comprehensive, curated, and peer-reviewed pathway dat
   systems biology, functional genomics, drug discovery, and biomedical research, providing
   insights into gene function in the context of cellular and organismal processes.
 domains:
-- biological systems
 - pathways
 - systems biology
 - biomedical
 homepage_url: https://reactome.org
 id: reactome
 infores_id: reactome
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

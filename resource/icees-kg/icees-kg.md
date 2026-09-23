@@ -22,10 +22,13 @@ domains:
 - biomedical
 - clinical
 - public health
+- electronic health records
+- environment
+- environmental exposure
 homepage_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg
 id: icees-kg
 infores_id: icees-kg
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

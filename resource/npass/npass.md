@@ -13,9 +13,11 @@ description: NPASS is a natural products database that integrates species source
   information.
 domains:
 - drug discovery
+- chemistry and biochemistry
+- natural products
 homepage_url: https://bidd.group/NPASS/
 id: npass
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: NPASS
 publications:

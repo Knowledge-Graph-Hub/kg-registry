@@ -15,10 +15,11 @@ domains:
 - biomedical
 - clinical
 - genomics
+- rare disease
 homepage_url: https://www.omim.org/
 id: omim
 infores_id: omim
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.omim.org/help/agreement

@@ -18,9 +18,10 @@ description: An ontology about groups of interacting organisms such as populatio
   and communities
 domains:
 - environment
+- ecology
 homepage_url: https://github.com/PopulationAndCommunityOntology/pco
 id: pco
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

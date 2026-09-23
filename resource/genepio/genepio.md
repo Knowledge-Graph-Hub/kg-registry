@@ -17,10 +17,13 @@ description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary neces
   to identify, document and research foodborne pathogens and associated outbreaks.
 domains:
 - biomedical
+- infectious disease
+- public health
+- epidemiology
 homepage_url: http://genepio.org/
 id: genepio
 infores_id: genepio
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

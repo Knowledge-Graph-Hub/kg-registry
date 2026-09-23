@@ -18,9 +18,11 @@ description: Ontology for drivers and triggers of human diseases, built to class
   with EnvO, ExO, ECTO and ChEBI.
 domains:
 - biomedical
+- environment
+- environmental exposure
 homepage_url: https://disease-ontology.org/
 id: disdriv
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

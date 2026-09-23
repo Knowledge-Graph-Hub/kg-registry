@@ -16,10 +16,12 @@ description: Open Targets is a collaborative effort to systematically identify a
   prioritise the best targets to safely and effectively treat rare and common diseases.
 domains:
 - biomedical
+- drug discovery
+- genomics
 homepage_url: https://www.opentargets.org/
 id: opentargets
 infores_id: open-targets
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0

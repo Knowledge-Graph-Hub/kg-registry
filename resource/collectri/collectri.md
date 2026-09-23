@@ -12,9 +12,10 @@ domains:
 - systems biology
 - genomics
 - pathways
+- gene regulation
 homepage_url: https://github.com/saezlab/CollecTRI
 id: collectri
-last_modified_date: '2026-06-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/gpl-3.0.en.html

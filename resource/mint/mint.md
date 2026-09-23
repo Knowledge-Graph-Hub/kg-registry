@@ -15,13 +15,12 @@ description: MINT (The Molecular INTeraction database) is a public and open sour
   Resource.
 domains:
 - proteomics
-- biomedical
 - systems biology
-- biological systems
+- protein interactions
 homepage_url: https://mint.bio.uniroma2.it/
 id: mint
 infores_id: mint
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

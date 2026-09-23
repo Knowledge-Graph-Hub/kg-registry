@@ -15,14 +15,14 @@ description: InterPro is a database of protein families, domains and functional 
   in which identifiable features found in known proteins can be applied to unknown
   protein sequences.
 domains:
-- biological systems
 - proteomics
 - genomics
 - drug discovery
+- protein domains
 homepage_url: https://www.ebi.ac.uk/interpro/
 id: interpro
 infores_id: interpro
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

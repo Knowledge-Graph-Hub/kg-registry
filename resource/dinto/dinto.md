@@ -14,9 +14,11 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 domains:
   - biomedical
+  - pharmacology
+  - drug interactions
 contacts:
   - category: Individual
     label: Maria Herrero

@@ -24,9 +24,11 @@ domains:
 - genomics
 - organisms
 - agriculture
+- model organisms
+- plants
 homepage_url: https://www.araport.org/
 id: araport
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Araport (Arabidopsis Information Portal)
 products:

@@ -15,9 +15,10 @@ domains:
 - clinical
 - biomedical
 - pharmacology
+- clinical coding
 homepage_url: https://help.visionhealth.co.uk/Vision_Consultation_Manager_Help_Centre/Content/ConMgr/Gemscript/Gemscript_Drug_Dictionary.htm
 id: gemscript
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Gemscript
 products:

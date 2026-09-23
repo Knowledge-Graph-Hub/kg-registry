@@ -8,10 +8,12 @@ collection:
 - okn
 domains:
 - biomedical
+- biological systems
+- aging
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-04-02T00:00:00Z'
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 contacts:
 - category: Individual
   label: John Beverley

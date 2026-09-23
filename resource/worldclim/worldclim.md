@@ -15,10 +15,10 @@ description: WorldClim is a set of global climate layers (gridded climate data) 
   ecological and environmental applications.
 domains:
 - environment
-- general
+- climate
 homepage_url: https://www.worldclim.org/
 id: worldclim
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: WorldClim
 products:

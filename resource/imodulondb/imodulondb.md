@@ -20,9 +20,13 @@ description: 'iModulonDB is a knowledgebase of microbial transcriptional regulat
 domains:
   - systems biology
   - microbiology
+  - genomics
+  - gene regulation
+  - information technology
+  - machine learning
 homepage_url: https://imodulondb.org/
 id: "imodulondb"
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 name: iModulonDB
 products:
   - category: GraphicalInterface

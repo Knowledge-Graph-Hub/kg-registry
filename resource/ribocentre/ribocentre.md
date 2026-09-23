@@ -16,10 +16,10 @@ creation_date: '2025-09-09T00:00:00Z'
 description: Ribocentre is a comprehensive database containing information about natural ribozymes, including sequences, structures, catalytic mechanisms, and applications. It provides searchable and browsable access to ribozyme research data with interactive 2D and 3D visualizations.
 domains:
   - genomics
-  - biological systems
+  - non-coding RNA
 homepage_url: https://www.ribocentre.org/
 id: ribocentre
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Ribocentre
 products:

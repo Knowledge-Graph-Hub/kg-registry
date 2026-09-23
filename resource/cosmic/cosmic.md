@@ -15,10 +15,12 @@ description: COSMIC (Catalogue Of Somatic Mutations In Cancer) is a comprehensiv
 domains:
 - genomics
 - biomedical
+- cancer
+- genetic variation
 homepage_url: https://cancer.sanger.ac.uk/cosmic
 id: cosmic
 infores_id: cosmic
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://cancer.sanger.ac.uk/cosmic/license

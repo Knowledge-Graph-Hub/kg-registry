@@ -19,11 +19,12 @@ description: The ENCODE Registry of candidate cis-Regulatory Elements (cCREs) is
   upstream source for downstream resources such as GenomicKB.
 domains:
 - genomics
-- biological systems
 - systems biology
+- gene regulation
+- epigenomics
 homepage_url: https://screen.encodeproject.org/
 id: ccre
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

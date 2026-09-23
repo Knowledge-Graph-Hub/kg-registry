@@ -14,10 +14,9 @@ description: ChemIDplus was a National Library of Medicine chemical identificati
 domains:
 - chemistry and biochemistry
 - environment
-- biomedical
 homepage_url: https://pubchem.ncbi.nlm.nih.gov/source/ChemIDplus
 id: chemid
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/copyright.html

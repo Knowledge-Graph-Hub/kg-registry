@@ -19,10 +19,11 @@ domains:
   - pharmacology
   - drug discovery
   - biomedical
+  - pharmacovigilance
 homepage_url: https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4
 id: aeolus
 infores_id: aeolus
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

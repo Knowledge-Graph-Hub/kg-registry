@@ -15,10 +15,10 @@ contacts:
 creation_date: '2025-08-20T00:00:00Z'
 description: A controlled vocabulary for annotating gene products to pathways.
 domains:
-- biological systems
+- pathways
 homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
 id: pw
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

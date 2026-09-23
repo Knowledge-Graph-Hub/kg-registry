@@ -11,9 +11,10 @@ creation_date: '2026-02-26T00:00:00Z'
 description: The SPDX License List is a standardized catalog of license and exception identifiers used by the SPDX specification to support consistent software, data, hardware, and documentation licensing metadata.
 domains:
   - information technology
+  - software
 homepage_url: https://spdx.org/licenses/
 id: "spdx"
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: SPDX License List
 synonyms:

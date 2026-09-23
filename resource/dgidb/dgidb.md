@@ -20,10 +20,11 @@ domains:
 - drug discovery
 - genomics
 - precision medicine
+- drug repositioning
 homepage_url: https://dgidb.org
 id: dgidb
 infores_id: dgidb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

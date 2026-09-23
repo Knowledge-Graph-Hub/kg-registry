@@ -40,11 +40,12 @@ description: The Database of Interacting Proteins (DIP) is a curated biological 
   foundational resource for systems biology, network analysis, and protein function
   prediction studies.
 domains:
-- biological systems
+- proteomics
+- protein interactions
 homepage_url: https://dip.doe-mbi.ucla.edu/
 id: dip
 infores_id: dip
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://dip.doe-mbi.ucla.edu/dip/Download.cgi

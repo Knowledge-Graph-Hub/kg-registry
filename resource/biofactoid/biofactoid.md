@@ -15,11 +15,10 @@ description: Biofactoid is a web-based system that empowers authors to capture a
   in computable formats for reuse in pathway and network analysis.
 domains:
 - pathways
-- biological systems
 - systems biology
 homepage_url: https://biofactoid.org/
 id: biofactoid
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

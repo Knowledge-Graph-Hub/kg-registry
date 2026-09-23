@@ -15,10 +15,11 @@ domains:
 - clinical
 - public health
 - biomedical
+- clinical trials
 homepage_url: https://aact.ctti-clinicaltrials.org/
 id: aact
 infores_id: aact
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

@@ -6,10 +6,10 @@ description: A protein structure homology-modeling resource providing automated 
   generation workflows and a repository of precomputed structural models.
 domains:
 - proteomics
-- biological systems
+- protein structure
 homepage_url: https://swissmodel.expasy.org/
 id: swissmodel
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: SWISS-MODEL
 products:

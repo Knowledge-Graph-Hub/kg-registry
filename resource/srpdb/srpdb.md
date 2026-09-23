@@ -9,10 +9,10 @@ description: SRPDB (Signal Recognition Particle Database) provides aligned, anno
   based on comparative sequence analysis.
 domains:
 - genomics
-- biological systems
+- non-coding RNA
 homepage_url: https://rth.dk/resources/rnp/SRPDB/
 id: srpdb
-last_modified_date: '2025-10-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: SRPDB
 products:

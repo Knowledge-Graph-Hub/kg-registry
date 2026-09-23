@@ -16,6 +16,8 @@ contacts:
 description: A knowledge graph of biological entities and their associations that integrates and formats biomedical data as pre-calculated knowledge graph embeddings
 domains:
   - biomedical
+  - information technology
+  - machine learning
 homepage_url: https://bioteque.irbbarcelona.org/
 id: bioteque
 layout: resource_detail
@@ -160,7 +162,7 @@ publications:
     year: '2022'
 repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 ## Bioteque Knowledge Graph

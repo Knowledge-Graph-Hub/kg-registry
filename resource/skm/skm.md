@@ -25,6 +25,7 @@ domains:
   - organisms
   - systems biology
   - pathways
+  - plants
 homepage_url: https://skm.nib.si/
 id: skm
 language: en
@@ -435,7 +436,7 @@ taxon:
   - NCBITaxon:33090
 version: '1.0'
 creation_date: '2025-06-17T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 # Stress Knowledge Map

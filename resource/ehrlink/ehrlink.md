@@ -10,9 +10,10 @@ domains:
 - clinical
 - biomedical
 - pharmacology
+- electronic health records
 homepage_url: https://github.com/dhimmel/indications/tree/gh-pages/ehrlink
 id: ehrlink
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: EHRLink
 products:

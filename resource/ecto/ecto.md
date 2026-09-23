@@ -24,10 +24,11 @@ description: ECTO describes exposures to experimental treatments of plants and m
   clinical exposures (although these may better be handled by a more specialized ontology).
 domains:
 - environment
+- environmental exposure
 homepage_url: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 id: ecto
 infores_id: ecto
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -21,13 +21,13 @@ description: PanKbase is a comprehensive, centralized resource for the study of 
   data hub. Part of the NIH/NIDDK Human Islet Research Network (HIRN).
 domains:
 - biomedical
-- biological systems
 - genomics
 - clinical
 - precision medicine
+- diabetes mellitus
 homepage_url: https://pankbase.org/
 id: pankbase
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

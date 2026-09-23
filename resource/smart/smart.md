@@ -7,10 +7,10 @@ description: A protein domain annotation and architecture analysis resource cove
 domains:
 - proteomics
 - genomics
-- biological systems
+- protein domains
 homepage_url: https://smart.embl.de/
 id: smart
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: SMART
 products:

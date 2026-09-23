@@ -19,9 +19,10 @@ domains:
 - research funding
 - information technology
 - general
+- scholarly communication
 homepage_url: https://openalex.org/
 id: openalex
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

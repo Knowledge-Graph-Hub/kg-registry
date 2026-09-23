@@ -11,11 +11,13 @@ description: The AlphaFold Protein Structure Database (AlphaFold DB) is a freely
   and predicted aligned error (PAE) metrics.
 domains:
 - proteomics
-- biomedical
 - systems biology
+- protein structure
+- information technology
+- machine learning
 homepage_url: https://alphafold.ebi.ac.uk/
 id: alphafold
-last_modified_date: '2026-06-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

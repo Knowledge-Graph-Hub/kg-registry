@@ -14,10 +14,11 @@ description: The Target Illumination GWAS Analytics (TIGA) database is a manuall
 domains:
   - genomics
   - biomedical
+  - genome-wide association studies
 homepage_url: https://datascience.unm.edu/tiga/
 id: "tiga"
 infores_id: "tiga"
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Target Illumination GWAS Analytics
 synonyms:

@@ -15,12 +15,10 @@ contacts:
 creation_date: '2025-03-20T00:00:00Z'
 description: Genomic Knowledgebase (GenomicKB) is a database that uses a knowledge graph to consolidate genomic datasets and annotations. GenomicKB integrates data from more than 30 consortia, in which the genomic entities and relationships are represented as diverse nodes and edges with properties.
 domains:
-  - biological systems
   - genomics
-  - biomedical
 homepage_url: https://gkb.dcmb.med.umich.edu/
 id: genomickb
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome#modal-licence-preview

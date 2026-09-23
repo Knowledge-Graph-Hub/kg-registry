@@ -17,10 +17,10 @@ description: NIFC Open Data is the public geospatial data hub of the National In
   such as KnowWhereGraph.
 domains:
 - environment
-- general
+- wildfires
 homepage_url: https://data-nifc.opendata.arcgis.com/
 id: nifc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

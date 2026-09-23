@@ -43,10 +43,12 @@ domains:
 - genomics
 - drug discovery
 - pharmacology
+- high-throughput screening
+- gene expression profiling
 homepage_url: https://clue.io/
 id: cmap
 infores_id: cmap
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://clue.io/connectopedia/terms

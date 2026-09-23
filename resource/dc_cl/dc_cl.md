@@ -14,9 +14,12 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
+- biological systems
+- cell biology
+- immunology
 homepage_url: http://www.dukeontologygroup.org/Projects.html
 id: dc_cl
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Dendritic cell
 products:

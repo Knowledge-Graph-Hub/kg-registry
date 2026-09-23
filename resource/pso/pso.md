@@ -18,9 +18,11 @@ description: The Plant Stress Ontology describes biotic and abiotic stresses tha
   a plant may encounter.
 domains:
 - agriculture
+- organisms
+- plants
 homepage_url: https://github.com/Planteome/plant-stress-ontology
 id: pso
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

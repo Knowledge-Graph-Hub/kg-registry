@@ -15,11 +15,11 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology to formalize annotation of phylogenetic data.
 domains:
-- biomedical
 - information technology
+- genomics
 homepage_url: http://www.evoio.org/wiki/MIAPA
 id: miapa
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

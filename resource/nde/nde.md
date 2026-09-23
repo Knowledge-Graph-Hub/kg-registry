@@ -26,6 +26,7 @@ description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-me
 domains:
 - biomedical
 - immunology
+- infectious disease
 homepage_url: https://data.niaid.nih.gov/
 id: nde
 layout: resource_detail
@@ -117,7 +118,7 @@ repository: https://github.com/NIAID-Data-Ecosystem/nde-crawlers
 taxon:
 - NCBITaxon:9606
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 NIAID Data Ecosystem KG
 

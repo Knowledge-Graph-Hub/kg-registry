@@ -18,10 +18,11 @@ domains:
   - biomedical
   - systems biology
   - microbiology
+  - microbiome
 homepage_url: https://multiomics.transltr.io/mbkp
 id: microbiomekg
 infores_id: multiomics-microbiome
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

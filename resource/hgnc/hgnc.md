@@ -11,12 +11,12 @@ creation_date: '2025-03-09T00:00:00Z'
 description: HGNC is the HUGO Gene Nomenclature Committee. It is a resource for approved
   human gene names.
 domains:
-- biological systems
+- genomics
 fairsharing_id: FAIRsharing.amcv1e
 homepage_url: https://www.genenames.org/
 id: hgnc
 infores_id: hgnc
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

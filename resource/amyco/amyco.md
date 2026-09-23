@@ -6,9 +6,10 @@ description: The Amyloidoses Collection (AmyCo) database contains manually curat
 domains:
   - biomedical
   - clinical
+  - rare disease
 id: amyco
 infores_id: amyco
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: The Amyloidoses Collection (AmyCo) Database
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/AmyCo

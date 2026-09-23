@@ -20,9 +20,11 @@ description: The core Ontology of Clinical Trials (CTO) will serve as a structur
   documents from clinical trials.
 domains:
 - biomedical
+- clinical
+- clinical trials
 homepage_url: https://github.com/ClinicalTrialOntology/CTO/
 id: cto
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

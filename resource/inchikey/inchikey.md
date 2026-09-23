@@ -8,9 +8,10 @@ description: InChIKey is a fixed-length hashed representation of the IUPAC Inter
 domains:
 - chemistry and biochemistry
 - drug discovery
+- cheminformatics
 homepage_url: https://www.inchi-trust.org/
 id: inchikey
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/IUPAC-InChI/InChI/blob/main/LICENSE

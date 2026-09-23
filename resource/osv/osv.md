@@ -13,9 +13,10 @@ description: OSV (Open Source Vulnerabilities) is an open, distributed vulnerabi
   in open-source software, including affected version ranges and fix metadata.
 domains:
 - information technology
+- software
 homepage_url: https://osv.dev/
 id: osv
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/Apache-2.0

@@ -20,9 +20,11 @@ domains:
 - environment
 - chemistry and biochemistry
 - agriculture
+- water resources
+- environmental exposure
 homepage_url: https://sawgraph.github.io/
 id: sawgraph
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

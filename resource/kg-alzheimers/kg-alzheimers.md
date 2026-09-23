@@ -17,9 +17,12 @@ description: A Knowledge Graph for integrating data related to Alzheimer's disea
 domains:
 - biomedical
 - neuroscience
+- neurodegenerative disease
+- information technology
+- machine learning
 homepage_url: https://kghub.org/kg-alzheimers/index.html
 id: kg-alzheimers
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

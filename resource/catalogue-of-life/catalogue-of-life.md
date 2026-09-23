@@ -31,10 +31,12 @@ description: Catalogue of Life is the most comprehensive global taxonomic resour
   worldwide, with both static annual releases and dynamic monthly updates.
 domains:
 - organisms
+- biodiversity
+- taxonomy
 homepage_url: https://www.catalogueoflife.org/
 id: catalogue-of-life
 infores_id: catalogue-of-life
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

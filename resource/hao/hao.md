@@ -17,9 +17,11 @@ description: A structured controlled vocabulary of the anatomy of the Hymenopter
   (bees, wasps, and ants)
 domains:
 - anatomy and development
+- organisms
+- insects
 homepage_url: http://hymao.org
 id: hao
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

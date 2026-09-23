@@ -9,7 +9,9 @@ contacts:
         value: drjieliu@umich.edu
 description: The Genomic Literature Knowledge Base (GLKB) is a comprehensive and powerful resource that integrates over 263 million biomedical terms and more than 14.6 million biomedical relationships. This collection is curated from 33 million PubMed abstracts and nine well-established biomedical repositories, offering an unparalleled wealth of knowledge for researchers and practitioners in the field.
 domains:
-  - biological systems
+  - literature
+  - natural language processing
+  - genomics
 homepage_url: https://glkb.org/
 id: glkb
 layout: resource_detail
@@ -60,7 +62,7 @@ publications:
   title: Building a literature knowledge base towards transparent biomedical AI
   year: '2024'
 creation_date: '2025-03-20T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 GLKB is a literature-grounded biomedical knowledge interface that lets users ask natural-language questions over a large corpus of PubMed-derived relationships and supporting source papers. The current canonical public site is https://glkb.org/, which supersedes the earlier University of Michigan host.

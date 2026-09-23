@@ -29,10 +29,11 @@ description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is
 domains:
 - biomedical
 - clinical
+- clinical coding
 homepage_url: https://www.snomed.org/
 id: snomedct
 infores_id: snomedct
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.snomed.org/snomed-ct/get-snomed

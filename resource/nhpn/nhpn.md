@@ -21,10 +21,10 @@ domains:
 - transportation
 - environment
 - information technology
-- general
+- geographic information systems
 homepage_url: https://www.fhwa.dot.gov/planning/processes/tools/nhpn/
 id: nhpn
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works

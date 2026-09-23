@@ -17,10 +17,11 @@ domains:
 - genomics
 - proteomics
 - anatomy and development
+- gene expression profiling
 homepage_url: https://tissues.jensenlab.org/
 id: tissues
 infores_id: tissues
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -18,10 +18,11 @@ description: The Medical Action Ontology (MAxO) provides a broad view of medical
   and recommendations.
 domains:
 - biomedical
+- clinical
 homepage_url: https://github.com/monarch-initiative/MAxO
 id: maxo
 infores_id: maxo
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

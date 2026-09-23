@@ -20,9 +20,11 @@ domains:
 - environment
 - public health
 - information technology
+- wildfires
+- air pollution
 homepage_url: https://www.airfire.org/
 id: bluesky
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: BlueSky Smoke Modeling Framework
 products:

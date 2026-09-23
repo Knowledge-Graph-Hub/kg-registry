@@ -18,10 +18,12 @@ description: The Cancer Genome Atlas (TCGA) is a landmark cancer genomics progra
   the Genomic Data Commons for anyone in the research community to use.
 domains:
 - genomics
+- biomedical
+- cancer
 homepage_url: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
 id: tcga
 infores_id: tcga
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: The Cancer Genome Atlas
 products:

@@ -40,9 +40,12 @@ description: PharmacoDB is a comprehensive integrative pharmacogenomics database
 domains:
 - genomics
 - pharmacology
+- biomedical
+- cancer
+- pharmacogenomics
 homepage_url: https://pharmacodb.ca/
 id: pharmacodb
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/gpl-3.0.en.html

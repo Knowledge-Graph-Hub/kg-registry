@@ -11,9 +11,10 @@ contacts:
 description: A Translator Knowledge Provider incorporating multiomics data.
 domains:
   - biomedical
+  - genomics
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-Provider
 id: multiomics-kp
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

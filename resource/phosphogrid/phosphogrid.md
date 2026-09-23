@@ -13,11 +13,10 @@ creation_date: '2026-06-02T00:00:00Z'
 description: PhosphoGRID is a curated resource of experimentally verified in vivo protein phosphorylation sites in Saccharomyces cerevisiae, including kinase and phosphatase annotations, experimental conditions, functional effects, and links to yeast resources.
 domains:
   - proteomics
-  - biological systems
-  - biomedical
+  - post-translational modification
 homepage_url: https://phosphogrid.org/
 id: phosphogrid
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PhosphoGRID
 products:

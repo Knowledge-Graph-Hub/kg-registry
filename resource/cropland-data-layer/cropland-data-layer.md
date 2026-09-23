@@ -20,10 +20,9 @@ description: The Cropland Data Layer (CDL) is an annual, georeferenced, crop-spe
 domains:
 - agriculture
 - environment
-- general
 homepage_url: https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php
 id: cropland-data-layer
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

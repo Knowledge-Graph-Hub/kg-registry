@@ -25,10 +25,9 @@ domains:
 - biomedical
 - genomics
 - systems biology
-- biological systems
 homepage_url: https://gse.cfde.cloud/
 id: cfde-gse
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

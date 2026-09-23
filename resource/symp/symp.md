@@ -18,10 +18,11 @@ description: An ontology of disease symptoms, with symptoms encompasing perceive
   a disease.
 domains:
 - biomedical
+- clinical
 homepage_url: https://github.com/DiseaseOntology/SymptomOntology
 id: symp
 infores_id: symp
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

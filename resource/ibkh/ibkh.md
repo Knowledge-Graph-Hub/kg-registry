@@ -17,6 +17,7 @@ domains:
   - biomedical
   - drug discovery
   - systems biology
+  - drug repositioning
 homepage_url: https://pubmed.ncbi.nlm.nih.gov/37020958/
 id: ibkh
 layout: resource_detail
@@ -106,7 +107,7 @@ publications:
 synonyms:
   - iBKH
 creation_date: '2025-11-19T00:00:00Z'
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 The integrative Biomedical Knowledge Hub (iBKH) is a comprehensive biomedical knowledge graph created by harmonizing and integrating information from diverse biomedical resources. It provides an efficient and effective way to manage abundant knowledge in biomedical and life science.

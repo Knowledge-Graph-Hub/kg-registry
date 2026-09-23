@@ -13,12 +13,12 @@ description: ERCC Regulatory Element dataset (erccreg) is a collection of data r
   RNA Communication Consortium (ERCC) program. This dataset focuses on RNA-based regulatory
   mechanisms involved in extracellular communication.
 domains:
-- biomedical
 - genomics
 - chemistry and biochemistry
+- non-coding RNA
 homepage_url: https://exrna.org/
 id: erccreg
-last_modified_date: '2025-10-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

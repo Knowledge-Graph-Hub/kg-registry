@@ -29,10 +29,12 @@ domains:
 - drug discovery
 - genomics
 - pharmacology
+- cancer
+- high-throughput screening
 homepage_url: https://www.sanger.ac.uk/tool/gdsc-genomics-drug-sensitivity-cancer/
 id: gdsc
 infores_id: gdsc
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.sanger.ac.uk/tool/gdsc-genomics-drug-sensitivity-cancer/

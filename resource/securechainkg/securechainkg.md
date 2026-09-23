@@ -13,6 +13,7 @@ description: SecureChain is a knowledge graph for resilient, trustworthy, and se
   software supply chains.
 domains:
 - information technology
+- software
 homepage_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
 id: securechainkg
 layout: resource_detail
@@ -66,7 +67,7 @@ products:
   - source: osv
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 SecureChain KG
 

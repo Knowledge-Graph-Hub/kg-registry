@@ -15,9 +15,11 @@ description: The Structure-Function Linkage Database (SFLD) is a resource that l
 domains:
 - proteomics
 - chemistry and biochemistry
+- enzymes
+- protein domains
 homepage_url: http://sfld.rbvi.ucsf.edu/
 id: sfld
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Structure-Function Linkage Database
 products:

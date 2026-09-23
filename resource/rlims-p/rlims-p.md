@@ -15,10 +15,11 @@ domains:
 - biomedical
 - literature
 - proteomics
-- biological systems
+- post-translational modification
+- natural language processing
 homepage_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/
 id: rlims-p
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: RLIMS-P
 products:

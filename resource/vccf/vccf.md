@@ -21,10 +21,9 @@ description: The Vasculature Common Coordinate Framework (VCCF) is a vasculature
 domains:
 - anatomy and development
 - biomedical
-- biological systems
 homepage_url: https://purl.humanatlas.io/vccf
 id: vccf
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

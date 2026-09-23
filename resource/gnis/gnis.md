@@ -21,9 +21,10 @@ domains:
 - general
 - information technology
 - environment
+- geographic information systems
 homepage_url: https://www.usgs.gov/tools/geographic-names-information-system-gnis
 id: gnis
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works

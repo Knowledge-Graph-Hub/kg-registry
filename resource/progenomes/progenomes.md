@@ -16,10 +16,9 @@ description: A large-scale microbial genome resource with consistent annotation,
 domains:
 - genomics
 - microbiology
-- biological systems
 homepage_url: https://progenomes.embl.de/
 id: progenomes
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://progenomes.embl.de/other.cgi

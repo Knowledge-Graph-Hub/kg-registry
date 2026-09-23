@@ -28,10 +28,12 @@ description: DailyMed is the National Library of Medicine's official provider of
   populations, clinical pharmacology, and how the drug is supplied.
 domains:
 - biomedical
+- pharmacology
+- clinical
 homepage_url: https://dailymed.nlm.nih.gov/dailymed/
 id: dailymed
 infores_id: dailymed
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: DailyMed
 products:

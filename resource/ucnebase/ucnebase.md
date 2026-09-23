@@ -14,9 +14,10 @@ description: UCNEbase is a database of ultraconserved non-coding elements (UCNEs
   regulatory blocks.
 domains:
 - genomics
+- gene regulation
 homepage_url: https://ccg.epfl.ch/UCNEbase/
 id: ucnebase
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: UCNEbase
 products:

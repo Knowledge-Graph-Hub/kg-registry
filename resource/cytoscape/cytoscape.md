@@ -10,13 +10,11 @@ contacts:
 creation_date: '2026-06-02T00:00:00Z'
 description: Cytoscape is an open-source platform for visualizing, analyzing, and integrating complex networks with biological and other attribute data.
 domains:
-  - biomedical
-  - biological systems
   - information technology
   - pathways
 homepage_url: https://cytoscape.org/
 id: cytoscape
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/lgpl-2.1.html

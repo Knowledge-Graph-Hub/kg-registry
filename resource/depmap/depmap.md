@@ -21,10 +21,12 @@ domains:
 - genomics
 - drug discovery
 - precision medicine
+- cancer
+- high-throughput screening
 homepage_url: https://depmap.org/portal/
 id: depmap
 infores_id: depmap
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://depmap.org/portal/terms/

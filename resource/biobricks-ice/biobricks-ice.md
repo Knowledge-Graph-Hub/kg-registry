@@ -21,6 +21,7 @@ description: BioBricks ICE (Integrated Chemical Environment) is an open knowledg
 domains:
 - chemistry and biochemistry
 - toxicology
+- cheminformatics
 homepage_url: https://github.com/biobricks-ai/biobricks-okg
 id: biobricks-ice
 layout: resource_detail
@@ -62,7 +63,7 @@ products:
     relation_type: prov:wasDerivedFrom
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 BioBricks ICE
 

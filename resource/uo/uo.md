@@ -15,11 +15,10 @@ contacts:
 creation_date: '2025-06-04T00:00:00Z'
 description: Metrical units for use in conjunction with PATO
 domains:
-- biological systems
-- phenotype
+- general
 homepage_url: https://github.com/bio-ontology-research-group/unit-ontology
 id: uo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

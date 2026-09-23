@@ -17,10 +17,9 @@ description: A pathway mapping and harmonization framework for integrating and c
   pathway knowledge across multiple pathway databases.
 domains:
 - pathways
-- biological systems
 homepage_url: https://compath.scai.fraunhofer.de/
 id: compath
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

@@ -10,6 +10,7 @@ contacts:
 description: A knowledge graph containing connections between researchers, projects, and publications centering on members of the Bridge2AI Consortium and the Cell Maps for AI (CM4AI) project.
 domains:
   - literature
+  - scholarly communication
 homepage_url: https://cm4aikg.vercel.app/
 id: cm4ai_talent_kg
 layout: resource_detail
@@ -56,7 +57,7 @@ products:
         relation_type: prov:wasInfluencedBy
     product_url: https://cm4aikg.vercel.app/
 creation_date: '2025-07-16T00:00:00Z'
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 A knowledge graph containing connections between researchers, projects, and publications centering on members of the Bridge2AI Consortium and the Cell Maps for AI (CM4AI) project.

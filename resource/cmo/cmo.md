@@ -17,9 +17,11 @@ description: Morphological and physiological measurement records generated from 
   and model organism research and health programs.
 domains:
 - biomedical
+- clinical
+- phenotype
 homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
 id: cmo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/

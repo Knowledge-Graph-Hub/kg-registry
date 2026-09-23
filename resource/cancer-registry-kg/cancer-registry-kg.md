@@ -6,9 +6,12 @@ description: A semantic web-based knowledge graph integrating cancer registry da
 domains:
   - clinical
   - biomedical
+  - cancer
+  - public health
+  - disease registries
 homepage_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
 id: cancer-registry-kg
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.hhs.gov/open/public-access-guiding-principles/index.html

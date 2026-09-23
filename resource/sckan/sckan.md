@@ -9,11 +9,11 @@ description: SCKAN (SPARC Connectivity Knowledge base of the Autonomic Nervous s
   system-end organ circuitry, including detailed ApiNATOMY models for organs such
   as bladder, heart, colon, stomach, spleen, pancreas, and airways.
 domains:
-- biological systems
 - anatomy and development
+- neuroscience
 homepage_url: https://docs.sparc.science/docs/sckan
 id: sckan
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: SCKAN
 products:

@@ -16,10 +16,10 @@ description: GlyTouCan is the international glycan structure repository, assigni
 domains:
 - chemistry and biochemistry
 - proteomics
-- biological systems
+- glycomics
 homepage_url: https://glytoucan.org/
 id: glytoucan
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

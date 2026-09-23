@@ -14,9 +14,11 @@ description: An ontology-based KG for representing interactions involving RNA mo
 domains:
   - drug discovery
   - biomedical
+  - genomics
+  - non-coding RNA
 homepage_url: https://RNA-KG.biodata.di.unimi.it
 id: rna-kg
-last_modified_date: '2025-08-25T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0

@@ -18,11 +18,11 @@ contacts:
 creation_date: '2025-05-20T00:00:00Z'
 description: A knowledge graph version of the Earth Metabolome Initiative (EMI) Ontology, containing over 413 million triples derived from metabolomic datasets. It provides a structured representation of metabolomic data within a semantic framework.
 domains:
-  - biological systems
   - chemistry and biochemistry
+  - metabolomics
 homepage_url: https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology
 id: emikg
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

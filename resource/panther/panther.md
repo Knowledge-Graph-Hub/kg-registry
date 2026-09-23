@@ -14,11 +14,14 @@ description: PANTHER is a Protein ANalysis THrough Evolutionary Relationships Cl
   gene families, particularly protein phylogeny, function and genetic variation impacting
   that function.
 domains:
-- biological systems
+- genomics
+- molecular evolution
+- proteomics
+- protein domains
 homepage_url: https://www.pantherdb.org/
 id: panther
 infores_id: panther
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: PANTHER
 products:

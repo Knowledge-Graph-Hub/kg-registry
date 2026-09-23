@@ -20,10 +20,10 @@ description: 'The Next Generation Biobanking Ontology (NGBO) is an open applicat
   interpret data, and data management.'
 domains:
 - biomedical
-- general
+- genomics
 homepage_url: https://github.com/Dalalghamdi/NGBO
 id: ngbo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

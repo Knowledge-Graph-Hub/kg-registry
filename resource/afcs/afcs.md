@@ -18,12 +18,14 @@ description: The Alliance for Cellular Signaling (AfCS) was a large-scale collab
   and function. IntAct preserves an AFCS interaction dataset as part of its computationally
   maintained datasets.
 domains:
-- biological systems
 - proteomics
 - systems biology
+- protein interactions
+- pathways
+- signal transduction
 homepage_url: https://web.archive.org/web/20220315092731/http://www.signaling-gateway.org/molecule/
 id: afcs
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Alliance for Cellular Signaling
 products:

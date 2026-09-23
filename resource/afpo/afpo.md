@@ -15,11 +15,13 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: AfPO is an ontology that can be used in the study of diverse populations across Africa. It brings together publicly available demographic, anthropological and genetic data relating to African people in a standardised and structured format. The AfPO can be employed to classify African study participants comprehensively in prospective research studies. It can also be used to classify past study participants by mapping them using a language or ethnicity identifier or synonyms.
 domains:
-  - biological systems
   - organisms
+  - genomics
+  - population genetics
+  - human populations
 homepage_url: https://github.com/h3abionet/afpo
 id: afpo
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

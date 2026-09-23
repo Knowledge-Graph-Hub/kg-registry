@@ -12,9 +12,10 @@ domains:
   - biomedical
   - clinical
   - genomics
+  - rare disease
 homepage_url: https://github.com/ncats/RD-Clust
 id: ncatsgardkg
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: NCATS GARD KG
 publications:

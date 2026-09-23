@@ -22,9 +22,11 @@ creation_date: '2025-03-09T00:00:00Z'
 description: The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components.
 domains:
   - biomedical
+  - genomics
+  - phenotype
 homepage_url: https://monarchinitiative.org/kg/downloads
 id: kg-monarch
-last_modified_date: '2026-09-21T19:23:24Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

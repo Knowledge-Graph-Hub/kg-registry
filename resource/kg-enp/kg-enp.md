@@ -16,9 +16,11 @@ description: ENP-KG is a specialized knowledge graph for experimental natural pr
 domains:
 - organisms
 - drug discovery
+- chemistry and biochemistry
+- natural products
 homepage_url: https://enpkg.commons-lab.org/
 id: kg-enp
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/legalcode

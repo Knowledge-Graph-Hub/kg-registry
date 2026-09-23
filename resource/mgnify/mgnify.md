@@ -6,13 +6,14 @@ collection:
 creation_date: '2025-09-09T00:00:00Z'
 description: MGnify is an active aggregator and analysis platform for microbiome and metagenomic data, providing tools for submission, analysis, visualization, and discovery of microbiome datasets from diverse biomes and environments. It is operated by EMBL-EBI and is an ELIXIR Core Data Resource.
 domains:
-  - biological systems
   - genomics
   - environment
   - clinical
+  - microbiology
+  - microbiome
 homepage_url: https://www.ebi.ac.uk/metagenomics
 id: mgnify
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: MGnify
 products:

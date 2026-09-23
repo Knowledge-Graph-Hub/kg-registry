@@ -21,9 +21,10 @@ domains:
 - clinical
 - biomedical
 - pharmacology
+- clinical coding
 homepage_url: https://www.wolterskluwer.com/en/solutions/medi-span/about/gpi
 id: medispan-gpi
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Medi-Span Generic Product Identifier
 products:

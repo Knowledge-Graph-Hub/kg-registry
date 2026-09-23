@@ -11,6 +11,8 @@ domains:
   - biomedical
   - clinical
   - systems biology
+  - cancer
+  - pharmacovigilance
 homepage_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full
 repository: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
 publications:
@@ -37,7 +39,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 creation_date: '2025-11-22T00:00:00Z'
-last_modified_date: '2026-07-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 products:
   - id: tbkg.data
     name: TBKG Knowledge Graph Data

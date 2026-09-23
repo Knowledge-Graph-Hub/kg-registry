@@ -15,10 +15,9 @@ description: ProteomicsDB is a multi-omics and multi-organism resource for life 
   tools.
 domains:
 - proteomics
-- biomedical
 homepage_url: https://www.proteomicsdb.org/
 id: proteomicsdb
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: ProteomicsDB
 products:

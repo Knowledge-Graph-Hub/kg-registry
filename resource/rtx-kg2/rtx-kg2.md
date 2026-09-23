@@ -15,7 +15,6 @@ contacts:
 description: RTX-KG2 is a comprehensive biomedical knowledge graph that integrates information from over 80 structured knowledge sources into a semantically standardized model, supporting translational biomedicine and the ARAX biomedical reasoning system.
 domains:
   - biomedical
-  - biological systems
   - genomics
   - pharmacology
 homepage_url: https://github.com/RTXteam/RTX-KG2
@@ -225,7 +224,7 @@ publications:
 repository: https://github.com/RTXteam/RTX-KG2
 infores_id: rtx-kg2
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 ## RTX-KG2: A Semantically Standardized Knowledge Graph for Translational Biomedicine

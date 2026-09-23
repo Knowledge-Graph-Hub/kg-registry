@@ -15,10 +15,11 @@ description: RNAcentral is the international non-coding RNA (ncRNA) sequence dat
   access, and bulk downloads for sequences, secondary structures, and cross-references.
 domains:
 - genomics
+- non-coding RNA
 homepage_url: https://rnacentral.org/
 id: rnacentral
 infores_id: rnacentral
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

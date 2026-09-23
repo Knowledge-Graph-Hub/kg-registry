@@ -19,10 +19,11 @@ domains:
 - literature
 - biomedical
 - systems biology
+- natural language processing
 homepage_url: https://pfocr.wikipathways.org/
 id: pfocr
 infores_id: pfocr
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -15,9 +15,10 @@ description: dbSUPER is an integrated and interactive database of super-enhancer
 domains:
 - genomics
 - systems biology
+- gene regulation
 homepage_url: https://asntech.org/dbsuper/
 id: dbsuper
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: dbSUPER
 products:

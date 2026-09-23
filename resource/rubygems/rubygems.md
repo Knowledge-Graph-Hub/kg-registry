@@ -12,9 +12,10 @@ description: RubyGems.org is the community package registry for the Ruby ecosyst
   hosting metadata and distributable artifacts (gems) for Ruby libraries.
 domains:
 - information technology
+- software
 homepage_url: https://rubygems.org/
 id: rubygems
-last_modified_date: '2026-07-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: RubyGems.org
 products:

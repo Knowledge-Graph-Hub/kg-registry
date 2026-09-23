@@ -5,11 +5,10 @@ creation_date: '2025-08-20T00:00:00Z'
 description: GeneMANIA is a gene function prediction resource that integrates many types of functional association networks (co-expression, protein and genetic interactions, pathways, co-localization, and shared protein domains) and uses adaptive network weighting with label propagation to prioritize related genes and expand gene lists.
 domains:
   - genomics
-  - biomedical
   - proteomics
 homepage_url: https://genemania.org/
 id: genemania
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: GeneMANIA
 products:

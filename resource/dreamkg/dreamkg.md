@@ -21,6 +21,9 @@ description: Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge G
 domains:
 - public health
 - biomedical
+- social determinants of health
+- information technology
+- machine learning
 homepage_url: https://dreamkg.com/
 id: dreamkg
 layout: resource_detail
@@ -64,7 +67,7 @@ products:
   - source: opendataphilly
     relation_type: prov:wasInfluencedBy
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 DREAM-KG
 

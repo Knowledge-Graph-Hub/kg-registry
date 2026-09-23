@@ -16,10 +16,11 @@ domains:
 - drug discovery
 - pharmacology
 - biomedical
+- high-throughput screening
 homepage_url: https://lincs.hms.harvard.edu/kinomescan/
 id: kinomescan
 infores_id: kinomescan
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: KINOMEscan
 products:

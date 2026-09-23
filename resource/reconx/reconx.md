@@ -20,9 +20,10 @@ domains:
 - chemistry and biochemistry
 - systems biology
 - genomics
+- metabolism
 homepage_url: https://www.vmh.life/
 id: reconx
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

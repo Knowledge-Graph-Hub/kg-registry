@@ -18,12 +18,12 @@ description: HomoloGene was NCBI's database of homologs (genes with common ances
   in NCBI RefSeq and Gene. Historical data from build 68 remains available on FTP
   for archival purposes only.
 domains:
-- biological systems
 - genomics
+- molecular evolution
 homepage_url: https://www.ncbi.nlm.nih.gov/homologene
 id: homologene
 infores_id: homologene
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/

@@ -13,6 +13,7 @@ description: The Hydrology KG is the part of the SAWGraph project that describes
   waterbodies and wells and their locations.
 domains:
 - environment
+- water resources
 homepage_url: https://sawgraph.github.io/
 id: hydrologykg
 layout: resource_detail
@@ -67,7 +68,7 @@ products:
   - source: usgs-nhd
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 SAWGraph Hydrology KG
 

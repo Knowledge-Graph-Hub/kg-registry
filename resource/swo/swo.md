@@ -20,9 +20,10 @@ description: The Software Ontology (SWO) is a resource for describing software t
 domains:
 - biomedical
 - information technology
+- software
 homepage_url: https://github.com/allysonlister/swo
 id: swo
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

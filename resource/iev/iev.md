@@ -7,10 +7,10 @@ contacts: []
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
-- chemistry and biochemistry
+- pathways
 homepage_url: http://www.inoh.org
 id: iev
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Event (INOH pathway ontology)
 products:

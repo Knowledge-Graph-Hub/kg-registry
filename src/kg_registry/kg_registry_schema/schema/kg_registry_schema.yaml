@@ -985,20 +985,45 @@ enums:
     description: >-
       A domain that a resource is relevant to. Each domain maps,
       where possible, to a concept in an external controlled
-      vocabulary (Medical Subject Headings, MeSH; or the NCI
-      Thesaurus, NCIT) via the permissible value's `meaning`.
+      vocabulary (Medical Subject Headings, MeSH; the NCI
+      Thesaurus, NCIT; or EDAM) via the permissible value's `meaning`.
+      Domains form a two-level hierarchy. A specific domain names its
+      broader domain with `is_a`, and a resource that lists a
+      specific domain also lists the broader one.
     permissible_values:
+      adverse outcome pathways:
+        description: >-
+          Adverse outcome pathways linking molecular initiating
+          events to adverse outcomes.
+        meaning: MESH:D000073931
+        is_a: toxicology
+      aging:
+        description: >-
+          Aging and longevity, including cellular senescence.
+        meaning: MESH:D000375
+        is_a: biological systems
       agriculture:
         description: >-
           The agricultural and food sciences, including crop and
           animal production, plant science, and food production,
           processing, and preservation.
         meaning: MESH:D000383
+      air pollution:
+        description: >-
+          Air quality and emissions to air.
+        meaning: MESH:D000397
+        is_a: environment
       anatomy and development:
         description: >-
           The anatomy and development of organisms, including their
           structure, morphology, and developmental biology.
         meaning: MESH:D000715
+      biodiversity:
+        description: >-
+          The variety of life, including species occurrence,
+          conservation status, and invasive species.
+        meaning: MESH:D044822
+        is_a: organisms
       biological systems:
         description: >-
           The biological sciences broadly, including cellular and
@@ -1011,38 +1036,226 @@ enums:
           biological systems in the context of health and disease.
           Use a more specific domain (e.g., clinical) where one applies.
         meaning: MESH:D035843
+      cancer:
+        description: >-
+          Cancer and other neoplasms, including tumor genomics,
+          cancer cell lines, oncology treatment, and cancer
+          registries.
+        meaning: MESH:D009369
+        is_a: biomedical
+      cardiovascular disease:
+        description: >-
+          Diseases of the heart and blood vessels, including
+          hypertension.
+        meaning: MESH:D002318
+        is_a: biomedical
+      cell biology:
+        description: >-
+          Cells and cell types, including cell lines, cell
+          markers, and subcellular structures.
+        meaning: MESH:D003585
+        is_a: biological systems
+      cheminformatics:
+        description: >-
+          Computational representation, identification, and
+          classification of chemical structures.
+        meaning: MESH:D000080911
+        is_a: chemistry and biochemistry
       chemistry and biochemistry:
         description: >-
           The chemical and biochemical sciences, including the
           structure, properties, and reactions of chemical compounds.
         meaning: MESH:D002621
+      climate:
+        description: >-
+          Climate and climate change, including climate models
+          and drought.
+        meaning: MESH:D002980
+        is_a: environment
       clinical:
         description: >-
           The clinical sciences concerned with the care of patients,
           including clinical trials, patient data, and diagnosis and
           treatment of disease.
         meaning: MESH:D015510
+      clinical coding:
+        description: >-
+          Clinical terminologies and code sets for diagnoses,
+          procedures, observations, and medications.
+        meaning: MESH:D059019
+        is_a: clinical
+      clinical trials:
+        description: >-
+          Clinical trials, including trial registries and the
+          data standards used to report them.
+        meaning: MESH:D002986
+        is_a: clinical
+      criminal justice:
+        description: >-
+          Crime, courts, and the justice system, including crime
+          reporting and court records.
+        meaning: MESH:D003416
+        is_a: public health
+      diabetes mellitus:
+        description: >-
+          Diabetes mellitus, including type 1 and type 2
+          diabetes and the pancreatic islet biology that
+          underlies them.
+        meaning: MESH:D003920
+        is_a: biomedical
+      disasters:
+        description: >-
+          Disasters and emergencies, including disaster
+          declarations, humanitarian response, and critical
+          infrastructure.
+        meaning: MESH:D004190
+        is_a: public health
+      disease registries:
+        description: >-
+          Population-based registries of disease cases, such as
+          cancer registries.
+        meaning: MESH:D012042
+        is_a: public health
+      domestic animals:
+        description: >-
+          Domestic animals, including companion animals and
+          livestock breeds.
+        meaning: MESH:D000829
+        is_a: organisms
       drug discovery:
         description: >-
           The process of identifying and developing new candidate medications, including
           target identification, validation, and compound screening.
         meaning: MESH:D055808
+      drug interactions:
+        description: >-
+          Interactions between drugs and between drugs and foods
+          or natural products.
+        meaning: MESH:D004347
+        is_a: pharmacology
+      drug repositioning:
+        description: >-
+          The discovery of new indications for existing drugs,
+          including computational repurposing methods and their
+          benchmarks.
+        meaning: MESH:D058492
+        is_a: drug discovery
+      ecology:
+        description: >-
+          The interactions of organisms with each other and
+          their environment, including ecological networks.
+        meaning: MESH:D004463
+        is_a: environment
+      electronic health records:
+        description: >-
+          Electronic health records and observational health
+          data derived from them.
+        meaning: MESH:D057286
+        is_a: clinical
       environment:
         description: >-
           The environment and ecosystems, including ecology and
           environmental health.
         meaning: MESH:D004777
+      environmental exposure:
+        description: >-
+          Exposure of people and organisms to environmental
+          agents and the health effects of those exposures.
+        meaning: MESH:D004781
+        is_a: environment
+      enzymes:
+        description: >-
+          Enzymes, including their classification, reactions,
+          and catalytic mechanisms.
+        meaning: MESH:D004798
+        is_a: chemistry and biochemistry
+      epidemiology:
+        description: >-
+          The distribution and determinants of disease in
+          populations, including disease surveillance and
+          outbreaks.
+        meaning: MESH:D004813
+        is_a: public health
+      epigenomics:
+        description: >-
+          Genome-wide chromatin state and organization,
+          including chromatin conformation and regulatory
+          element annotation.
+        meaning: MESH:D057890
+        is_a: genomics
+      food:
+        description: >-
+          Foods, their composition, and their relationship to
+          diet and health.
+        meaning: MESH:D005502
+        is_a: nutrition
+      gene expression profiling:
+        description: >-
+          Measurement of gene expression across tissues, cells,
+          and conditions, including transcriptomic signatures.
+        meaning: MESH:D020869
+        is_a: genomics
+      gene regulation:
+        description: >-
+          The regulation of gene expression, including
+          transcription factors, their binding sites, promoters,
+          and enhancers.
+        meaning: MESH:D005786
+        is_a: genomics
       general:
         description: >-
           A general domain, not specific to any other category.
           It concerns resources that are broadly applicable across
           multiple domains, including upper-level and cross-domain
           resources.
+      genetic variation:
+        description: >-
+          Germline and somatic genetic variants, including their
+          frequencies, effects, and clinical interpretation.
+        meaning: MESH:D014644
+        is_a: genomics
+      genome-wide association studies:
+        description: >-
+          Genome-wide association studies and related
+          statistical genetics, including QTL and Mendelian
+          randomization analyses.
+        meaning: MESH:D055106
+        is_a: genomics
       genomics:
         description: >-
           The study of genomes, including genome structure, evolution,
           function, mapping, and editing.
         meaning: MESH:D023281
+      geographic information systems:
+        description: >-
+          Geospatial data, including place names, administrative
+          boundaries, and infrastructure maps.
+        meaning: MESH:D040362
+        is_a: environment
+      glycomics:
+        description: >-
+          The study of glycans and glycoconjugates.
+        meaning: MESH:D054794
+        is_a: chemistry and biochemistry
+      high-throughput screening:
+        description: >-
+          Large-scale screening of chemical or genetic
+          perturbations, including cell line sensitivity and
+          perturbation profiling.
+        meaning: MESH:D057166
+        is_a: drug discovery
+      host-pathogen interactions:
+        description: >-
+          Interactions between pathogens and their hosts,
+          including pathogen genomics and virulence.
+        meaning: MESH:D054884
+        is_a: microbiology
+      human populations:
+        description: >-
+          Human population groups, including ancestry,
+          ethnicity, and demographic groups.
+        meaning: MESH:D044382
+        is_a: organisms
       humanities and cultural heritage:
         description: >-
           The humanities and the cultural heritage domain, including art history,
@@ -1055,32 +1268,118 @@ enums:
           The study of the immune system, including its structure and function,
           disorders, and therapeutic applications.
         meaning: MESH:D000486
+      infectious disease:
+        description: >-
+          Infectious diseases, including their pathogens,
+          transmission, epidemiology, diagnosis, and treatment.
+        meaning: MESH:D003141
+        is_a: biomedical
       information technology:
         description: >-
           The information technology and informatics sciences,
           including software, computational methods, simulation and
           modeling, and digital health technologies.
         meaning: MESH:D000073256
+      insects:
+        description: >-
+          Insects, including their anatomy, behavior, and
+          genomics.
+        meaning: MESH:D007313
+        is_a: organisms
       literature:
         description: >-
           The literature and publications of a domain.
         meaning: MESH:D011642
+      machine learning:
+        description: >-
+          Machine learning and artificial intelligence,
+          including AI-ready data and models.
+        meaning: MESH:D000069550
+        is_a: information technology
       medical imaging:
         description: >-
           Techniques and processes for creating visual representations of the interior
           of a body for clinical analysis and medical intervention.
         meaning: MESH:D003952
+      mental disorders:
+        description: >-
+          Mental and psychiatric disorders, including substance
+          use disorders.
+        meaning: MESH:D001523
+        is_a: neuroscience
+      metabolism:
+        description: >-
+          Metabolic pathways and genome-scale metabolic network
+          reconstructions.
+        meaning: MESH:D008660
+        is_a: pathways
+      metabolomics:
+        description: >-
+          The large-scale study of metabolites and lipids,
+          including mass spectrometry and NMR data.
+        meaning: MESH:D055432
+        is_a: chemistry and biochemistry
+      metadata:
+        description: >-
+          Metadata vocabularies and standards for describing
+          resources, datasets, and provenance.
+        meaning: MESH:D000071253
+        is_a: information technology
       microbiology:
         description: >-
           The microbiological sciences, including the study of microbial
           communities (microbiomes) and their influence on hosts and
           environments.
         meaning: MESH:D008829
+      microbiome:
+        description: >-
+          Microbial communities, including host-associated
+          microbiomes and metagenomes.
+        meaning: MESH:D064307
+        is_a: microbiology
+      model organisms:
+        description: >-
+          Model organisms and the databases that serve their
+          research communities.
+        meaning: edam:topic_0621
+        is_a: organisms
+      molecular evolution:
+        description: >-
+          The evolution of genes and proteins, including
+          orthology, gene families, and comparative analysis.
+        meaning: MESH:D019143
+        is_a: genomics
+      natural language processing:
+        description: >-
+          Text mining and natural language processing of the
+          literature, including text-mined knowledge graphs and
+          annotated corpora.
+        meaning: MESH:D009323
+        is_a: literature
+      natural products:
+        description: >-
+          Compounds derived from plants, microorganisms, or
+          animals, including traditional medicines.
+        meaning: NCIT:C1907
+        is_a: chemistry and biochemistry
+      neurodegenerative disease:
+        description: >-
+          Neurodegenerative diseases, including Alzheimer
+          disease and related dementias.
+        meaning: MESH:D019636
+        is_a: neuroscience
       neuroscience:
         description: >-
           The scientific study of the nervous system, including
           brain structure, function, and disorders.
         meaning: MESH:D009488
+      non-coding RNA:
+        description: >-
+          RNAs that are not translated into protein, including
+          microRNAs, long non-coding RNAs, and ribosomal and
+          transfer RNAs.
+        meaning: MESH:D022661
+        is_a: genomics
       nutrition:
         description: >-
           The nutritional sciences, including diet and metabolomics.
@@ -1097,20 +1396,66 @@ enums:
           Biological pathways, including metabolic, signaling, and regulatory networks
           that control cellular processes.
         meaning: MESH:D053858
+      pharmacogenomics:
+        description: >-
+          The influence of genetic variation on drug response.
+        meaning: MESH:D010597
+        is_a: pharmacology
       pharmacology:
         description: >-
           The study of how drugs interact with biological systems, including
           drug discovery, development, and therapeutic uses.
         meaning: MESH:D010600
+      pharmacovigilance:
+        description: >-
+          The monitoring of drug and device safety, including
+          adverse event reports and side effects.
+        meaning: MESH:D060735
+        is_a: pharmacology
       phenotype:
         description: >-
           The phenotypes of organisms.
         meaning: MESH:D010641
+      plants:
+        description: >-
+          Plants, including crops and their anatomy, traits, and
+          genomics.
+        meaning: MESH:D010944
+        is_a: organisms
+      population genetics:
+        description: >-
+          Genetic variation within and between populations,
+          including human ancestry.
+        meaning: MESH:D005828
+        is_a: genomics
+      post-translational modification:
+        description: >-
+          Post-translational modifications of proteins, such as
+          phosphorylation.
+        meaning: MESH:D011499
+        is_a: proteomics
       precision medicine:
         description: >-
           An approach to disease treatment and prevention that takes into account
           individual variability in genes, environment, and lifestyle.
         meaning: MESH:D057285
+      protein domains:
+        description: >-
+          Protein families, domains, and functional sites.
+        meaning: MESH:D000072417
+        is_a: proteomics
+      protein interactions:
+        description: >-
+          Physical interactions between proteins, including
+          protein complexes.
+        meaning: MESH:D060066
+        is_a: proteomics
+      protein structure:
+        description: >-
+          The three-dimensional structure of proteins, whether
+          determined experimentally or predicted.
+        meaning: MESH:D011487
+        is_a: proteomics
       proteomics:
         description: >-
           The large-scale study of proteins, their structures,
@@ -1122,17 +1467,66 @@ enums:
           communities, including epidemiology, population health, and the social
           determinants of health.
         meaning: MESH:D011634
+      rare disease:
+        description: >-
+          Rare diseases, including rare Mendelian and other
+          genetic disorders, their phenotypes, genes, and
+          treatments.
+        meaning: MESH:D035583
+        is_a: biomedical
       research funding:
         description: >-
           The funding and administration of research, including research projects,
           grants and their payments, funding programmes, the organizations that
           fund or carry out research, and the outputs attributed to that funding.
         meaning: NCIT:C17090
+      scholarly communication:
+        description: >-
+          Scholarly publications and their metadata, including
+          citations, authors, and research contributions.
+        meaning: MESH:D000073820
+        is_a: literature
+      signal transduction:
+        description: >-
+          Signaling pathways and networks that transmit signals
+          within and between cells.
+        meaning: MESH:D015398
+        is_a: pathways
+      single-cell analysis:
+        description: >-
+          Data and methods that measure molecules in individual
+          cells, including single-cell and spatial atlases.
+        meaning: MESH:D059010
+        is_a: biological systems
+      social determinants of health:
+        description: >-
+          The social and economic conditions that shape health,
+          including housing, income, services, and rurality.
+        meaning: MESH:D064890
+        is_a: public health
+      software:
+        description: >-
+          Software, including package registries, software
+          supply chains, and vulnerabilities.
+        meaning: MESH:D012984
+        is_a: information technology
+      sustainability:
+        description: >-
+          Sustainability and environmental, social, and
+          governance (ESG) reporting.
+        meaning: MESH:D000076502
+        is_a: environment
       systems biology:
         description: >-
           The computational and mathematical analysis of complex biological systems
           and their interactions.
         meaning: MESH:D049490
+      taxonomy:
+        description: >-
+          The naming and classification of organisms and the
+          relationships among taxa.
+        meaning: NCIT:C17469
+        is_a: organisms
       toxicology:
         description: >-
           The study of the adverse effects of chemicals on living organisms.
@@ -1143,6 +1537,23 @@ enums:
           air, and maritime networks, the assets and parameters that describe
           them, and the movement of people and goods over them.
         meaning: MESH:D014186
+      vaccines:
+        description: >-
+          Vaccines and vaccination, including vaccine adverse
+          events.
+        meaning: MESH:D014612
+        is_a: immunology
+      water resources:
+        description: >-
+          Surface water, groundwater, drinking water, and
+          hydrology.
+        meaning: MESH:D062066
+        is_a: environment
+      wildfires:
+        description: >-
+          Wildfires and their burn severity and smoke.
+        meaning: MESH:D000075923
+        is_a: environment
       stub:
         description: >-
           This is not a domain, but rather a category for

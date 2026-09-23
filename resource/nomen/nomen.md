@@ -16,11 +16,12 @@ creation_date: '2025-09-29T00:00:00Z'
 description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
   encodes the goverened rules of nomenclature.
 domains:
-- biomedical
 - information technology
+- organisms
+- taxonomy
 homepage_url: https://github.com/SpeciesFileGroup/nomen
 id: nomen
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

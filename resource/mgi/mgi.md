@@ -15,10 +15,12 @@ description: Mouse Genome Informatics is the international database resource for
   support studies of human health and disease.
 domains:
 - genomics
+- organisms
+- model organisms
 homepage_url: https://www.informatics.jax.org/
 id: mgi
 infores_id: mgi
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

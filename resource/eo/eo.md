@@ -18,9 +18,11 @@ description: A structured, controlled vocabulary which describes the treatments,
   conditions, and/or study types used in plant biology experiments.
 domains:
 - environment
+- organisms
+- plants
 homepage_url: http://planteome.org/
 id: eo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

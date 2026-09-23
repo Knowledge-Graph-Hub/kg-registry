@@ -14,6 +14,8 @@ contacts:
 description: An ingest of EMBL-EBI's Gene2Phenotype resource, for Translator use (output in Translator standards and NodeNormed, using own custom pipeline)
 domains:
   - biomedical
+  - genomics
+  - phenotype
 homepage_url: https://www.ebi.ac.uk/gene2phenotype/
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use/
@@ -117,7 +119,7 @@ publications:
       with Ensembl VEP
     year: '2019'
 creation_date: '2025-05-07T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 ## Automated Evaluation

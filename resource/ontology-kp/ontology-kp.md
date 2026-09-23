@@ -9,10 +9,11 @@ contacts:
 creation_date: '2025-03-09T00:00:00Z'
 description: A Translator Knowledge Provider dedicated to ontology-based services.
 domains:
-- other
+- biomedical
+- information technology
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SRI-Ontology-Service
 id: ontology-kp
-last_modified_date: '2026-09-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

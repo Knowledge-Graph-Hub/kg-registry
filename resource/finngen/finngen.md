@@ -17,9 +17,12 @@ domains:
 - biomedical
 - precision medicine
 - clinical
+- electronic health records
+- genome-wide association studies
+- population genetics
 homepage_url: https://www.finngen.fi/en
 id: finngen
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

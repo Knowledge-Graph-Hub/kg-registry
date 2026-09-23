@@ -15,10 +15,12 @@ description: LitVar is a comprehensive NCBI web service for searching and retrie
 domains:
   - genomics
   - literature
+  - genetic variation
+  - natural language processing
 homepage_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
 id: litvar
 infores_id: litvar
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: LitVar
 products:

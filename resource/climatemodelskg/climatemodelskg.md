@@ -22,6 +22,7 @@ description: Climate Models KG is a knowledge graph to support evaluation and de
 domains:
 - environment
 - information technology
+- climate
 homepage_url: https://frink.renci.org/registry/kgs/climatepub4-kg/
 id: climatemodelskg
 layout: resource_detail
@@ -65,7 +66,7 @@ products:
   - source: gcmd
     relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 Climate Models KG
 

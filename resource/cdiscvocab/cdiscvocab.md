@@ -23,9 +23,11 @@ domains:
 - clinical
 - biomedical
 - information technology
+- clinical trials
+- clinical coding
 homepage_url: https://www.cdisc.org/standards/terminology/controlled-terminology
 id: cdiscvocab
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: CDISC Controlled Terminology
 products:

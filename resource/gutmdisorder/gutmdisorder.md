@@ -18,9 +18,10 @@ description: gutMDisorder is a manually curated database of dysbiosis of the gut
 domains:
 - biomedical
 - microbiology
+- microbiome
 homepage_url: http://bio-annotation.cn/gutMDisorder/
 id: gutmdisorder
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: gutMDisorder
 products:

@@ -10,11 +10,10 @@ description: "DoRothEA is a curated resource of transcription factor (TF) \u2013
   \ species. Frequently used with PROGENy to estimate pathway and TF activities."
 domains:
 - genomics
-- biological systems
-- biomedical
+- gene regulation
 homepage_url: https://saezlab.github.io/dorothea/
 id: dorothea
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/saezlab/dorothea/blob/master/LICENSE

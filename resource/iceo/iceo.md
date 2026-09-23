@@ -15,10 +15,11 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: ICEO is an integrated biological ontology for the description of bacterial integrative and conjugative elements (ICEs).
 domains:
-  - biological systems
+  - microbiology
+  - genomics
 homepage_url: https://github.com/ontoice/ICEO
 id: iceo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

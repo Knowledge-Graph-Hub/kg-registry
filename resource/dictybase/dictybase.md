@@ -10,11 +10,11 @@ description: dictyBase is a comprehensive genomic database for the social amoeba
 domains:
 - genomics
 - organisms
-- biological systems
+- model organisms
 homepage_url: https://dictybase.dev/
 id: dictybase
 infores_id: dictybase
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: dictyBase
 products:

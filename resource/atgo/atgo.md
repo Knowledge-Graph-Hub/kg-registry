@@ -9,12 +9,11 @@ contacts:
 creation_date: '2025-10-30T00:00:00Z'
 description: ATGO (Autophagy Ontology) is a hierarchical functional ontology of autophagy processes built through Active Interaction Mapping of genetic interaction data from Saccharomyces cerevisiae. The second-generation ontology contains 220 functions representing autophagy organization including vesicle transport, cell cycle, and stress response pathways.
 domains:
-  - biological systems
   - systems biology
 homepage_url: http://atgo.ucsd.edu/
 id: atgo
 infores_id: atgo
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Autophagy Ontology
 products:

@@ -16,12 +16,12 @@ contacts:
 creation_date: '2025-05-28T00:00:00Z'
 description: An ontology representation of the NCBI organismal taxonomy
 domains:
-- biological systems
 - organisms
+- taxonomy
 homepage_url: https://github.com/obophenotype/ncbitaxon
 id: ncbitaxon
 infores_id: ncbi-taxon
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

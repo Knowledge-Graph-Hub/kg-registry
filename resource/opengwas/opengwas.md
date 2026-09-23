@@ -15,9 +15,10 @@ domains:
 - genomics
 - biomedical
 - precision medicine
+- genome-wide association studies
 homepage_url: https://opengwas.io/
 id: opengwas
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: IEU OpenGWAS
 products:

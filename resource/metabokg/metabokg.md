@@ -15,12 +15,12 @@ description: MetaboKG is an analysis-centric knowledge graph framework for untar
   and their analytical artifacts, samples, and studies.
 domains:
 - chemistry and biochemistry
-- biomedical
 - microbiology
 - environment
+- metabolomics
 homepage_url: https://github.com/HolobiomicsLab/MetaBoKG
 id: metabokg
-last_modified_date: '2026-06-22T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0

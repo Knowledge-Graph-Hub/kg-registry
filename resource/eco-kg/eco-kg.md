@@ -23,7 +23,8 @@ description: A knowledge graph of plant traits starting with Planteome and EOL T
 domains:
   - organisms
   - environment
-  - biological systems
+  - plants
+  - ecology
 homepage_url: https://github.com/Knowledge-Graph-Hub/eco-kg
 id: eco-kg
 layout: resource_detail
@@ -66,7 +67,7 @@ tags:
 taxon:
   - NCBITaxon:33090
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 ---
 
 eco-KG: a knowledge graph of plant traits starting with Planteome and EOL TraitBank. The graph integrates data from various sources related to plant phenotypes, traits, and ecological relationships.

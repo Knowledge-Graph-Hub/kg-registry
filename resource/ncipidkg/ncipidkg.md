@@ -17,7 +17,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 products:
 - id: ncipidkg.graph.ttl
   name: NCI-PID 2.0 KG RDF graph
@@ -55,6 +55,7 @@ products:
 domains:
 - biomedical
 - pathways
+- signal transduction
 ---
 NCI-PID 2.0 KG
 

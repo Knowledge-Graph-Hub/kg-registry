@@ -19,9 +19,10 @@ domains:
 - biomedical
 - clinical
 - information technology
+- machine learning
 homepage_url: https://bridge2ai.org/
 id: bridge2ai
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Bridge to Artificial Intelligence (Bridge2AI)
 products:

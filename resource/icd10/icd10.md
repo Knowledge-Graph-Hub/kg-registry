@@ -41,10 +41,11 @@ description: The International Classification of Diseases, 10th Revision (ICD-10
   SNOMED CT, MedDRA, and LOINC.
 domains:
 - clinical
+- clinical coding
 homepage_url: https://icd.who.int/browse10
 id: icd10
 infores_id: icd10
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: ICD-10
 products:

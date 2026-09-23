@@ -16,9 +16,10 @@ description: An ingest of Jensen Lab's DISEASES resource, for Translator use (ou
   in Translator standards and NodeNormed, using own custom pipeline)
 domains:
 - biomedical
+- genomics
 homepage_url: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 id: kg-jensenlab-diseases
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive

@@ -15,11 +15,12 @@ contacts:
 creation_date: '2025-06-25T00:00:00Z'
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domains:
-- biological systems
 - phenotype
+- organisms
+- plants
 homepage_url: http://browser.planteome.org/amigo
 id: to
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

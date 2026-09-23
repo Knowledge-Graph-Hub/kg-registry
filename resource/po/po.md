@@ -17,9 +17,11 @@ description: The Plant Ontology is a structured vocabulary and database resource
   links plant anatomy, morphology and growth and development to plant genomics data.
 domains:
 - anatomy and development
+- organisms
+- plants
 homepage_url: http://browser.planteome.org/amigo
 id: po
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

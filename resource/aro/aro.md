@@ -15,10 +15,11 @@ contacts:
 creation_date: '2025-09-29T00:00:00Z'
 description: Antibiotic resistance genes and mutations
 domains:
-- biological systems
+- microbiology
+- pharmacology
 homepage_url: https://github.com/arpcard/aro
 id: aro
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

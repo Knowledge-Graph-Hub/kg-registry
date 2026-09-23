@@ -16,10 +16,12 @@ creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domains:
 - anatomy and development
+- organisms
+- insects
 homepage_url: http://purl.obolibrary.org/obo/fbdv
 id: fbdv
 infores_id: fbdv
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

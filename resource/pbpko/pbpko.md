@@ -17,9 +17,10 @@ description: An ontology for modeling and understanding of pharmacokinetics in b
   systems.
 domains:
 - chemistry and biochemistry
+- pharmacology
 homepage_url: https://github.com/InSilicoVida-Research-Lab/pbpko
 id: pbpko
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

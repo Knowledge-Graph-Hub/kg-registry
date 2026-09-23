@@ -14,10 +14,11 @@ description: Genebass is a comprehensive resource of exome-based gene-level and 
 domains:
 - genomics
 - biomedical
+- genome-wide association studies
 homepage_url: https://genebass.org/
 id: genebass
 infores_id: genebass
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: 'Genebass: Gene-based association summary statistics'
 products:

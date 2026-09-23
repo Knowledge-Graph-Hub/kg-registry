@@ -17,12 +17,13 @@ collection:
 creation_date: '2025-09-09T00:00:00Z'
 description: Greengenes2 is a comprehensive reference database and phylogenetic tree for 16S rRNA gene sequences that unifies microbial data from multiple sources into a single coherent framework. It provides standardized taxonomic assignments and phylogenetic placement for microbiome research and enables consistent analysis across different studies and sequencing platforms.
 domains:
-  - biomedical
   - microbiology
   - organisms
+  - microbiome
+  - taxonomy
 homepage_url: https://greengenes2.ucsd.edu/
 id: greengenes
-last_modified_date: '2025-09-24T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Greengenes2
 products:

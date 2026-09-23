@@ -15,11 +15,12 @@ description: OrthoDB is a comprehensive database of orthologous protein-coding g
   across multiple species, providing evolutionary and functional annotations of orthologous
   groups.
 domains:
-- biological systems
 - organisms
+- genomics
+- molecular evolution
 homepage_url: https://www.orthodb.org/
 id: orthodb
-last_modified_date: '2026-05-23T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

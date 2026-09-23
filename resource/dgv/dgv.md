@@ -16,9 +16,11 @@ description: The Database of Genomic Variants (DGV) provides a curated catalogue
 domains:
 - genomics
 - clinical
+- genetic variation
+- population genetics
 homepage_url: http://dgv.tcag.ca/dgv/app/home
 id: dgv
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Database of Genomic Variants
 products:

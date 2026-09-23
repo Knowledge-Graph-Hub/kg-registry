@@ -12,9 +12,10 @@ creation_date: '2025-12-17T00:00:00Z'
 description: DOCO (Document Components Ontology) is an OWL ontology for describing the structural and rhetorical components of documents. It is part of the SPAR (Semantic Publishing and Referencing) Ontologies suite and provides a vocabulary for semantic annotation of document structure.
 domains:
   - literature
+  - scholarly communication
 homepage_url: https://github.com/SPAROntologies/doco
 id: "doco"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   id: "http://creativecommons.org/licenses/by/4.0/"
