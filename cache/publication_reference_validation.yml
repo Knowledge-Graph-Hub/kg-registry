@@ -5723,6 +5723,15 @@ entries:
     source_path: resource/oregano/oregano.md
     status: valid
     warnings: []
+  resource/organoiddb/organoiddb.md#publication[0]#PMID:36271792:
+    checked_at: '2026-10-02T21:17:31Z'
+    errors: []
+    fingerprint: 63311577dff833142c3cf55c923e98cb2acff97cd2d1b0bec471a79e89b6f60a
+    publication_index: 0
+    reference_id: PMID:36271792
+    source_path: resource/organoiddb/organoiddb.md
+    status: valid
+    warnings: []
   resource/orkg/orkg.md#publication[0]#DOI:10.1145/3360901.3364435:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
