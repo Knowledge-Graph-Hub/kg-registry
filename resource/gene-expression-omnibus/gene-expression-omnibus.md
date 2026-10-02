@@ -87,6 +87,45 @@ products:
     source: pdb
   - relation_type: prov:wasInfluencedBy
     source: lincs
+- category: Product
+  description: Sample metadata for every organoid sample in OrganoidDB, with study
+    and sample accessions, tissue, platform, species, PubMed ID and sample characteristics.
+  format: csv
+  id: organoiddb.all-organoid-samples
+  name: OrganoidDB all organoid samples
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: organoiddb
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_file_size: 3258002
+  product_url: http://www.inbirg.com/organoid_db/download/all_org_samples
+- category: Product
+  description: Sample metadata for the organoid samples used by the OrganoidDB organoid
+    specificity search.
+  format: csv
+  id: organoiddb.organoid-specificity-samples
+  name: OrganoidDB organoid specificity samples
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: organoiddb
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_file_size: 257601
+  product_url: http://www.inbirg.com/organoid_db/download/org_specificity_samples
+- category: Product
+  description: Sample metadata for the primary tissue and cell line samples that OrganoidDB
+    uses for comparison with organoids.
+  format: csv
+  id: organoiddb.general-samples
+  name: OrganoidDB general samples
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: organoiddb
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_file_size: 94026
+  product_url: http://www.inbirg.com/organoid_db/download/general_samples
 ---
 Gene Expression Omnibus (GEO)
 
