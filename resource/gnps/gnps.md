@@ -168,9 +168,9 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 406 error
     when accessing file'
 publications:
 - authors:

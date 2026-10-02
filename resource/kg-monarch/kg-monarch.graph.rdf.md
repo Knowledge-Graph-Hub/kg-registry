@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: RDF Distribution of KG-Monarch
-edge_count: 16107480
+edge_count: 16418621
 format: rdfxml
 id: kg-monarch.graph.rdf
 name: RDF Distribution of KG-Monarch

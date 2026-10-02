@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: KGX JSON-Lines Distribution of KG-Monarch
-edge_count: 16107480
+edge_count: 16418621
 format: kgx-jsonl
 id: kg-monarch.graph.jsonl
 name: KGX JSON-L Distribution of KG-Monarch

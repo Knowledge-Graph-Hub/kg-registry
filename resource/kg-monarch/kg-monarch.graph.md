@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: KGX Distribution of KG-Monarch
-edge_count: 16107480
+edge_count: 16418621
 format: kgx
 id: kg-monarch.graph
 name: KGX Distribution of KG-Monarch

@@ -4062,7 +4062,7 @@ resources:
       header found
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -4192,7 +4192,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -4322,7 +4322,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -4453,7 +4453,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -4584,7 +4584,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -4715,7 +4715,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -4846,7 +4846,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -4976,7 +4976,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -5106,7 +5106,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -8009,9 +8009,9 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
@@ -9871,12 +9871,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -12702,7 +12702,7 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -12832,7 +12832,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -12962,7 +12962,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -13093,7 +13093,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -13224,7 +13224,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -13355,7 +13355,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -13486,7 +13486,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -13616,7 +13616,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -13746,7 +13746,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -17710,9 +17710,9 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
 - activity_status: active
@@ -17853,9 +17853,9 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
 - activity_status: active
@@ -21063,7 +21063,7 @@ resources:
     product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -21193,7 +21193,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -21323,7 +21323,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -21454,7 +21454,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -21585,7 +21585,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -21716,7 +21716,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -21847,7 +21847,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -21977,7 +21977,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -22107,7 +22107,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -23959,7 +23959,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -23967,7 +23967,7 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -27073,9 +27073,9 @@ resources:
       source: biothings
     product_url: https://biothings.io/specs/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 204 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 204 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: https://biothings.ncats.io/gtrx/query
@@ -33359,9 +33359,9 @@ resources:
       source: cellphonedb
     product_url: https://www.cellphonedb.org/downloads
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: Python package that interrogates single-cell transcriptomics data
@@ -38867,13 +38867,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
@@ -38913,12 +38913,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -41560,13 +41560,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -41792,9 +41792,9 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 406 error
       when accessing file'
   - category: GraphProduct
     description: Integrated rare-disease knowledge graph produced by the RD-Clust
@@ -47292,7 +47292,7 @@ resources:
     product_url: https://www.disgenet.com/
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -47422,7 +47422,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -47552,7 +47552,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -47683,7 +47683,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -47814,7 +47814,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -47945,7 +47945,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -48076,7 +48076,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -48206,7 +48206,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -48336,7 +48336,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -50742,7 +50742,7 @@ resources:
     product_url: https://www.disgenet.com/
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -50872,7 +50872,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -51002,7 +51002,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -51133,7 +51133,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -51264,7 +51264,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -51463,7 +51463,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -51594,7 +51594,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -51724,7 +51724,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -51854,7 +51854,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -64117,7 +64117,7 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -64247,7 +64247,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -64377,7 +64377,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -64508,7 +64508,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -64639,7 +64639,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -64838,7 +64838,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -64969,7 +64969,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -65099,7 +65099,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -65229,7 +65229,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -70373,13 +70373,13 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 500 error
       when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
@@ -77532,7 +77532,7 @@ resources:
     product_url: https://rnacentral.org/help/public-database
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -77662,7 +77662,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -77792,7 +77792,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -77923,7 +77923,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -78054,7 +78054,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -78185,7 +78185,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -78316,7 +78316,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -78446,7 +78446,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -78576,7 +78576,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -80096,7 +80096,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -80104,7 +80104,7 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -95227,13 +95227,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
@@ -95273,12 +95273,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -96266,9 +96266,9 @@ resources:
       source: dsstox
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -116270,9 +116270,9 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: FDA Orange Book preface describing publication structure, therapeutic
@@ -116285,9 +116285,9 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: Product
     description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
@@ -125901,6 +125901,45 @@ resources:
       source: pdb
     - relation_type: prov:wasInfluencedBy
       source: lincs
+  - category: Product
+    description: Sample metadata for every organoid sample in OrganoidDB, with study
+      and sample accessions, tissue, platform, species, PubMed ID and sample characteristics.
+    format: csv
+    id: organoiddb.all-organoid-samples
+    name: OrganoidDB all organoid samples
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: organoiddb
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 3258002
+    product_url: http://www.inbirg.com/organoid_db/download/all_org_samples
+  - category: Product
+    description: Sample metadata for the organoid samples used by the OrganoidDB organoid
+      specificity search.
+    format: csv
+    id: organoiddb.organoid-specificity-samples
+    name: OrganoidDB organoid specificity samples
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: organoiddb
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 257601
+    product_url: http://www.inbirg.com/organoid_db/download/org_specificity_samples
+  - category: Product
+    description: Sample metadata for the primary tissue and cell line samples that
+      OrganoidDB uses for comparison with organoids.
+    format: csv
+    id: organoiddb.general-samples
+    name: OrganoidDB general samples
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: organoiddb
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 94026
+    product_url: http://www.inbirg.com/organoid_db/download/general_samples
 - activity_status: active
   category: DataSource
   contacts:
@@ -133849,9 +133888,9 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -134254,7 +134293,7 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -134384,7 +134423,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -134514,7 +134553,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -134645,7 +134684,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -134776,7 +134815,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -134907,7 +134946,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -135038,7 +135077,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -135168,7 +135207,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -135298,7 +135337,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -140459,13 +140498,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
@@ -140505,12 +140544,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
@@ -146707,11 +146746,11 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 502 error
       when accessing file'
   publications:
   - authors:
@@ -146788,12 +146827,12 @@ resources:
       source: gutmdisorder
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-literature-associations.xlsx
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
       Failed to establish a new connection: [Errno 111] Connection refused"))'
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
@@ -146809,12 +146848,12 @@ resources:
       source: gutmdisorder
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
       Failed to establish a new connection: [Errno 111] Connection refused"))'
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
@@ -159832,7 +159871,7 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -159962,7 +160001,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -160092,7 +160131,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -160223,7 +160262,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -160354,7 +160393,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -160485,7 +160524,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -160616,7 +160655,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -160746,7 +160785,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -160876,7 +160915,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -164540,13 +164579,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
@@ -164586,12 +164625,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
@@ -166644,12 +166683,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
@@ -175796,11 +175835,11 @@ resources:
       source: imo-knowledge-graph
     product_url: https://developer.imohealth.com/
     warnings:
+    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Timeout connecting
       to URL'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
@@ -180425,7 +180464,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -180433,7 +180472,7 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -181623,13 +181662,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -189694,13 +189733,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
@@ -189935,9 +189974,9 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 406 error
       when accessing file'
   - category: ProcessProduct
     description: Full ENPKG workflow repository for generating experimental natural
@@ -190196,12 +190235,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
@@ -190651,7 +190690,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-09-23T16:02:48Z'
+  last_modified_date: '2026-10-02T21:26:44Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -190661,7 +190700,7 @@ resources:
   products:
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -190792,7 +190831,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -190923,7 +190962,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -191053,7 +191092,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -191183,7 +191222,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -191313,7 +191352,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -191443,7 +191482,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -191590,7 +191629,7 @@ resources:
     product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -191721,7 +191760,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -198782,9 +198821,9 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -201643,7 +201682,7 @@ resources:
     product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.json
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -201773,7 +201812,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -201903,7 +201942,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -202034,7 +202073,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -202165,7 +202204,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -202296,7 +202335,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -202427,7 +202466,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -202557,7 +202596,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -202687,7 +202726,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -208774,9 +208813,9 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
@@ -214418,7 +214457,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -214426,7 +214465,7 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -217577,7 +217616,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -217607,7 +217646,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - category: Product
@@ -217621,7 +217660,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -217651,7 +217690,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - category: Product
@@ -217665,7 +217704,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -217695,7 +217734,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - category: Product
@@ -217709,7 +217748,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -217739,7 +217778,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - category: Product
@@ -217753,7 +217792,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -217783,7 +217822,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - description: The MechRepoNet knowledge graph in its original format
@@ -222685,11 +222724,11 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 502 error
       when accessing file'
   - category: ProcessProduct
     description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
@@ -223444,13 +223483,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
@@ -223490,12 +223529,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
@@ -233105,11 +233144,11 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 502 error
       when accessing file'
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
@@ -233781,13 +233820,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
@@ -239764,10 +239803,10 @@ resources:
       source: noaa-ncei
     product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - category: GraphProduct
@@ -248382,12 +248421,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -252406,12 +252445,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
@@ -254982,9 +255021,9 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -257623,6 +257662,112 @@ resources:
     year: '2023'
   repository: https://gitub.u-bordeaux.fr/erias/oregano
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: panjianbo@cqmu.edu.cn
+    label: Jianbo Pan
+  creation_date: '2026-10-02T00:00:00Z'
+  description: OrganoidDB is a database of curated bulk and single-cell transcriptome
+    profiles of organoids. It holds 16,218 organoid samples (12,911 human and 3,307
+    mouse) collected from GEO and ArrayExpress and organized into 1,069 datasets,
+    145 of them single-cell RNA-seq. Primary tissue and cell line samples are included
+    so that organoids can be compared against them, with GTEx and the Human Protein
+    Atlas linked as references. The web interface supports gene expression search
+    across organoid types, culture sources and protocols, sample types and developmental
+    stages, plus correlation analysis, and datasets can be browsed with culture details,
+    differentially expressed genes, enriched pathways and single-cell clusters. It
+    is run by the Intelligent Bioinformatics Research Group at the Institute of Life
+    Sciences, Chongqing Medical University.
+  domains:
+  - biomedical
+  - genomics
+  - gene expression profiling
+  - biological systems
+  - single-cell analysis
+  - anatomy and development
+  homepage_url: http://www.inbirg.com/organoid_db/
+  id: organoiddb
+  last_modified_date: '2026-10-02T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: http://www.inbirg.com/organoid_db/
+    label: Copyright Intelligent Bioinformatics Research Group, Chongqing Medical
+      University (all rights reserved)
+  name: OrganoidDB
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching gene expression across organoid types,
+      culture sources and protocols, sample types and developmental stages, with correlation
+      analysis and dataset pages showing culture details, differentially expressed
+      genes, enriched pathways and single-cell clusters.
+    format: http
+    id: organoiddb.portal
+    name: OrganoidDB web portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: organoiddb
+    product_url: http://www.inbirg.com/organoid_db/genes
+  - category: Product
+    description: Sample metadata for every organoid sample in OrganoidDB, with study
+      and sample accessions, tissue, platform, species, PubMed ID and sample characteristics.
+    format: csv
+    id: organoiddb.all-organoid-samples
+    name: OrganoidDB all organoid samples
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: organoiddb
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 3258002
+    product_url: http://www.inbirg.com/organoid_db/download/all_org_samples
+  - category: Product
+    description: Sample metadata for the organoid samples used by the OrganoidDB organoid
+      specificity search.
+    format: csv
+    id: organoiddb.organoid-specificity-samples
+    name: OrganoidDB organoid specificity samples
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: organoiddb
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 257601
+    product_url: http://www.inbirg.com/organoid_db/download/org_specificity_samples
+  - category: Product
+    description: Sample metadata for the primary tissue and cell line samples that
+      OrganoidDB uses for comparison with organoids.
+    format: csv
+    id: organoiddb.general-samples
+    name: OrganoidDB general samples
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: organoiddb
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 94026
+    product_url: http://www.inbirg.com/organoid_db/download/general_samples
+  publications:
+  - authors:
+    - Qinfeng Ma
+    - Haodong Tao
+    - Qiang Li
+    - Zhaoyu Zhai
+    - Xuelu Zhang
+    - Zhewei Lin
+    - Ni Kuang
+    - Jianbo Pan
+    doi: 10.1093/nar/gkac942
+    id: https://pubmed.ncbi.nlm.nih.gov/36271792/
+    journal: Nucleic Acids Res
+    preferred: true
+    title: 'OrganoidDB: a comprehensive organoid database for the multi-perspective
+      exploration of bulk and single-cell transcriptomic profiles of organoids'
+    year: '2023'
+  version: '1.0'
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Organization
@@ -258960,12 +259105,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
@@ -259886,7 +260031,7 @@ resources:
   products:
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -260016,7 +260161,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -260146,7 +260291,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -260277,7 +260422,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -260408,7 +260553,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -260551,7 +260696,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -260682,7 +260827,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -260812,7 +260957,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -260942,7 +261087,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -272642,12 +272787,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -273318,7 +273463,7 @@ resources:
     repository: https://github.com/Knowledge-Graph-Hub/kg-phenio
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -273448,7 +273593,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -273578,7 +273723,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -273709,7 +273854,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -273840,7 +273985,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -273971,7 +274116,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -274102,7 +274247,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -274232,7 +274377,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -274362,7 +274507,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -280178,7 +280323,7 @@ resources:
     product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -280308,7 +280453,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -280438,7 +280583,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -280569,7 +280714,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -280700,7 +280845,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -280831,7 +280976,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -280962,7 +281107,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -281092,7 +281237,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -281222,7 +281367,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -291020,11 +291165,11 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 502 error
       when accessing file'
   - category: ProgrammingInterface
     description: MarkerDB API documentation and endpoint examples for condition, chemical,
@@ -293225,13 +293370,13 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 500 error
       when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
@@ -296730,9 +296875,9 @@ resources:
       source: rapdb
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-02: Timeout connecting
       to URL'
   - category: GraphProduct
     compression: tar
@@ -298176,7 +298321,7 @@ resources:
     - '1.0'
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -298306,7 +298451,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -298436,7 +298581,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -298567,7 +298712,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -298698,7 +298843,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -299029,7 +299174,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -299160,7 +299305,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -299290,7 +299435,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -299420,7 +299565,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -303333,12 +303478,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -333500,9 +333645,9 @@ resources:
       source: ssurgo
     product_url: https://nrcs.app.box.com/v/soils
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
@@ -335429,7 +335574,7 @@ resources:
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -335559,7 +335704,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -335689,7 +335834,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -335820,7 +335965,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -335951,7 +336096,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -336161,7 +336306,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -336292,7 +336437,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -336422,7 +336567,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -336552,7 +336697,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -338135,13 +338280,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
@@ -338181,12 +338326,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
@@ -343301,7 +343446,7 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 500 error
       when accessing file'
@@ -343309,7 +343454,7 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Timeout connecting
       to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
@@ -344389,12 +344534,12 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -351060,13 +351205,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
@@ -363774,13 +363919,13 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 500 error
       when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
@@ -364796,13 +364941,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
@@ -370182,9 +370327,9 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 406 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -376080,7 +376225,7 @@ resources:
     product_url: https://xenbase.org/xenbase/static/apis-links.jsp
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -376210,7 +376355,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -376340,7 +376485,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -376471,7 +376616,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -376602,7 +376747,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -376733,7 +376878,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -376864,7 +377009,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -376994,7 +377139,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -377124,7 +377269,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -378473,7 +378618,7 @@ resources:
     product_url: https://zfin.org/downloads/gene_publication.txt
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -378603,7 +378748,7 @@ resources:
     product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
@@ -378733,7 +378878,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -378864,7 +379009,7 @@ resources:
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
@@ -378995,7 +379140,7 @@ resources:
     warnings: []
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 16107480
+    edge_count: 16418621
     format: mixed
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
@@ -379126,7 +379271,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -379257,7 +379402,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-    edge_count: 16107480
+    edge_count: 16418621
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -379387,7 +379532,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -379517,7 +379662,7 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
-    edge_count: 16107480
+    edge_count: 16418621
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -381220,11 +381365,11 @@ resources:
       source: aao
     product_url: http://purl.obolibrary.org/obo/aao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications: []
   taxon:
@@ -381366,9 +381511,9 @@ resources:
       source: adw
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -383091,7 +383236,7 @@ resources:
       source: bio2rdf
     product_url: https://biosemantics.org/biosearch
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
       to URL: HTTPSConnectionPool(host=''biosemantics.org'', port=443): Max retries
@@ -383099,7 +383244,7 @@ resources:
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Timeout connecting
       to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
@@ -383273,11 +383418,11 @@ resources:
       source: bootstrep
     product_url: http://purl.obolibrary.org/obo/bootstrep.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications: []
   use_instead:
@@ -383961,11 +384106,11 @@ resources:
       source: cmf
     product_url: http://purl.obolibrary.org/obo/cmf.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications: []
 - activity_status: inactive
@@ -384437,13 +384582,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -384687,11 +384832,11 @@ resources:
       source: dc_cl
     product_url: http://purl.obolibrary.org/obo/dc_cl.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications: []
   taxon:
@@ -385415,9 +385560,9 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: Plant Environment Ontology in OBO format
@@ -385429,9 +385574,9 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -385482,11 +385627,11 @@ resources:
       source: epo
     product_url: http://purl.obolibrary.org/obo/epo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications: []
 - activity_status: inactive
@@ -385653,11 +385798,11 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
@@ -385669,11 +385814,11 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   publications: []
 - activity_status: inactive
@@ -387090,7 +387235,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -387098,7 +387243,7 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -387285,13 +387430,13 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
@@ -387303,13 +387448,13 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
@@ -387321,13 +387466,13 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 503 error
       when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
@@ -389137,12 +389282,12 @@ resources:
       source: inoh
     product_url: http://www.inoh.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
       port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
       name resolution)"))'
-    - 'File was not able to be retrieved when checked on 2026-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
       port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
@@ -391774,9 +391919,9 @@ resources:
       source: mirnao
     product_url: http://purl.obolibrary.org/obo/mirnao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -391891,12 +392036,12 @@ resources:
       source: mo
     product_url: http://purl.obolibrary.org/obo/mo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -392087,9 +392232,9 @@ resources:
       source: netpath
     product_url: http://www.netpath.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 503 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -392602,11 +392747,11 @@ resources:
       source: nmr
     product_url: http://purl.obolibrary.org/obo/nmr.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -392702,9 +392847,9 @@ resources:
       source: ogi
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -392823,13 +392968,13 @@ resources:
       source: oio
     product_url: http://purl.obolibrary.org/obo/oio.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
@@ -396138,13 +396283,13 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -398623,9 +398768,9 @@ resources:
     product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-09-23: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
@@ -402481,11 +402626,11 @@ resources:
       source: simap
     product_url: http://mips.helmholtz-muenchen.de/simap/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-02: Timeout connecting
       to URL'
   - category: GraphProduct
     compression: gzip

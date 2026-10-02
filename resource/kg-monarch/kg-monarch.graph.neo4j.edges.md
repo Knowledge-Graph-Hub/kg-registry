@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: Neo4j Dump of KG-Monarch Edges
-edge_count: 16107480
+edge_count: 16418621
 format: neo4j
 id: kg-monarch.graph.neo4j.edges
 name: Neo4j Dump of KG-Monarch Edges

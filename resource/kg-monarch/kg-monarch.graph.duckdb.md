@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: DuckDB database of KG-Monarch
-edge_count: 16107480
+edge_count: 16418621
 format: mixed
 id: kg-monarch.graph.duckdb
 name: DuckDB database of KG-Monarch

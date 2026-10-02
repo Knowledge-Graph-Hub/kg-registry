@@ -51,9 +51,9 @@ products:
     source: rapdb
   product_url: https://rapdb.dna.affrc.go.jp/download/index.html
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-09-21: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-09-23: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-02: Timeout connecting
     to URL'
 - category: GraphProduct
   compression: tar

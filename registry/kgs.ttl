@@ -8652,6 +8652,9 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gene-expression-omnibus.portal,
         kgr:nde.graph,
+        kgr:organoiddb.all-organoid-samples,
+        kgr:organoiddb.general-samples,
+        kgr:organoiddb.organoid-specificity-samples,
         kgr:pankgraph.graph ;
     schema1:name "Gene Expression Omnibus (GEO)" ;
     skos:inScheme "biomedical",
@@ -12436,7 +12439,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-23T16:02:48+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-02T21:26:44+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -17632,6 +17635,29 @@ kgr:oregano a schema1:KnowledgeGraph ;
         "pharmacology" ;
     adms:status "Active" ;
     foaf:homepage <https://gitub.u-bordeaux.fr/erias/oregano> .
+
+kgr:organoiddb a schema1:DataSource ;
+    rdfs:label "OrganoidDB" ;
+    dcterms:created "2026-10-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "OrganoidDB is a database of curated bulk and single-cell transcriptome profiles of organoids. It holds 16,218 organoid samples (12,911 human and 3,307 mouse) collected from GEO and ArrayExpress and organized into 1,069 datasets, 145 of them single-cell RNA-seq. Primary tissue and cell line samples are included so that organoids can be compared against them, with GTEx and the Human Protein Atlas linked as references. The web interface supports gene expression search across organoid types, culture sources and protocols, sample types and developmental stages, plus correlation analysis, and datasets can be browsed with culture details, differentially expressed genes, enriched pathways and single-cell clusters. It is run by the Intelligent Bioinformatics Research Group at the Institute of Life Sciences, Chongqing Medical University." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:identifier "organoiddb" ;
+    dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/36271792/> ;
+    dcterms:license <http://www.inbirg.com/organoid_db/> ;
+    dcterms:modified "2026-10-02T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:organoiddb.all-organoid-samples,
+        kgr:organoiddb.general-samples,
+        kgr:organoiddb.organoid-specificity-samples,
+        kgr:organoiddb.portal ;
+    schema1:name "OrganoidDB" ;
+    skos:inScheme "anatomy and development",
+        "biological systems",
+        "biomedical",
+        "gene expression profiling",
+        "genomics",
+        "single-cell analysis" ;
+    adms:status "Active" ;
+    foaf:homepage <http://www.inbirg.com/organoid_db/> .
 
 kgr:orkg a schema1:KnowledgeGraph ;
     rdfs:label "Open Research Knowledge Graph" ;
@@ -37017,6 +37043,11 @@ kgr:oregano.sparql a schema1:GraphProduct ;
     dcterms:description "OREGANO knowledge graph data download on Zenodo (record 10103842, v3). Provides the integrated graph as TSV triples (OREGANO_V2.1.tsv) plus per-entity TSV files and a Turtle (.ttl) metadata file with entity names and cross-references. This download replaces the former public SPARQL endpoint, which is no longer available." ;
     schema1:url <https://zenodo.org/records/10103842> .
 
+kgr:organoiddb.portal a schema1:GraphicalInterface ;
+    rdfs:label "OrganoidDB web portal" ;
+    dcterms:description "Web interface for searching gene expression across organoid types, culture sources and protocols, sample types and developmental stages, with correlation analysis and dataset pages showing culture details, differentially expressed genes, enriched pathways and single-cell clusters." ;
+    schema1:url <http://www.inbirg.com/organoid_db/genes> .
+
 kgr:orkg.api a schema1:ProgrammingInterface ;
     rdfs:label "ORKG REST API" ;
     dcterms:description "Public REST API for programmatic access to ORKG resources, comparisons, papers, and other structured scholarly content." ;
@@ -43884,6 +43915,21 @@ kgr:opengwas.portal a schema1:GraphicalInterface ;
     rdfs:label "IEU OpenGWAS Portal" ;
     dcterms:description "IEU OpenGWAS browser for exploring the harmonized GWAS dataset catalog now used by MR-Base-related tooling" ;
     schema1:url <https://opengwas.io/> .
+
+kgr:organoiddb.all-organoid-samples a schema1:Product ;
+    rdfs:label "OrganoidDB all organoid samples" ;
+    dcterms:description "Sample metadata for every organoid sample in OrganoidDB, with study and sample accessions, tissue, platform, species, PubMed ID and sample characteristics." ;
+    schema1:url <http://www.inbirg.com/organoid_db/download/all_org_samples> .
+
+kgr:organoiddb.general-samples a schema1:Product ;
+    rdfs:label "OrganoidDB general samples" ;
+    dcterms:description "Sample metadata for the primary tissue and cell line samples that OrganoidDB uses for comparison with organoids." ;
+    schema1:url <http://www.inbirg.com/organoid_db/download/general_samples> .
+
+kgr:organoiddb.organoid-specificity-samples a schema1:Product ;
+    rdfs:label "OrganoidDB organoid specificity samples" ;
+    dcterms:description "Sample metadata for the organoid samples used by the OrganoidDB organoid specificity search." ;
+    schema1:url <http://www.inbirg.com/organoid_db/download/org_specificity_samples> .
 
 kgr:orphanet.ordo_release a schema1:DocumentationProduct ;
     rdfs:label "ORDO Release Page" ;
