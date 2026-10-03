@@ -971,6 +971,15 @@ entries:
     source_path: resource/cellmarker/cellmarker.md
     status: valid
     warnings: []
+  resource/cellmodelpassports/cellmodelpassports.md#publication[0]#DOI:10.1093/nar/gky872:
+    checked_at: '2026-10-03T17:29:29Z'
+    errors: []
+    fingerprint: 074b88ffce382458dd7da3dc7c9c9bc2c4be73c55cef0122c085c11863a0f572
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky872
+    source_path: resource/cellmodelpassports/cellmodelpassports.md
+    status: valid
+    warnings: []
   resource/cellosaurus/cellosaurus.md#publication[0]#DOI:10.7171/jbt.18-2902-002:
     checked_at: '2026-06-22T16:25:27Z'
     errors: []
