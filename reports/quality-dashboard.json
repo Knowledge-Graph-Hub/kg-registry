@@ -1,6 +1,6 @@
 {
   "citations": {
-    "publication_entries_total": 908,
+    "publication_entries_total": 910,
     "publication_entries_with_issues": 37,
     "resources_with_citation_issues": 30,
     "resources_without_publications": 359,
@@ -12,8 +12,8 @@
     "missing_last_modified_date": 0,
     "modified_after_creation": 1014,
     "stale_over_365_days": 3,
-    "unchanged_since_creation": 22,
-    "with_both_dates": 1036
+    "unchanged_since_creation": 23,
+    "with_both_dates": 1037
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -924,6 +924,7 @@
       "mp",
       "mpath",
       "mpio",
+      "mps-db",
       "mro",
       "ms",
       "mtbs",
@@ -3910,6 +3911,9 @@
       "mpio",
       "mpio.kg-bioportal",
       "mpio.owl",
+      "mps-db",
+      "mps-db.eveanalytics",
+      "mps-db.portal",
       "mrbase",
       "mrbase.api",
       "mrbase.home",
@@ -7095,6 +7099,7 @@
       "mp",
       "mpath",
       "mpio",
+      "mps-db",
       "mrbase",
       "mro",
       "ms",
@@ -7978,6 +7983,7 @@
       "motifmap",
       "motrpac",
       "mpio",
+      "mps-db",
       "mrbase",
       "mro",
       "ms",
@@ -9001,6 +9007,7 @@
       "modomics",
       "motifmap",
       "mousemine",
+      "mps-db",
       "mrbase",
       "msigdb",
       "mtbs",
@@ -12502,6 +12509,8 @@
       "mpath.owl",
       "mpio.kg-bioportal",
       "mpio.owl",
+      "mps-db.eveanalytics",
+      "mps-db.portal",
       "mrbase.api",
       "mrbase.home",
       "mrbase.mrinstruments",
@@ -15102,6 +15111,7 @@
       "mp",
       "mpath",
       "mpio",
+      "mps-db",
       "mrbase",
       "mro",
       "ms",
@@ -16179,6 +16189,7 @@
       "google-reviews",
       "imgt",
       "kg-bioportal",
+      "mps-db",
       "naics",
       "obci",
       "opendataphilly",
@@ -16190,7 +16201,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-10-03T20:11:36Z",
+  "generated_at": "2026-10-03T21:05:19Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 163,
     "with_evaluation_page": 127,
@@ -16198,40 +16209,40 @@
   },
   "links": {
     "broken_urls": 245,
-    "cache_hits": 4679,
+    "cache_hits": 4683,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4438,
-    "live_checked_urls": 4,
+    "healthy_urls": 4440,
+    "live_checked_urls": 2,
     "mode": "live",
-    "total_unique_urls": 4683,
+    "total_unique_urls": 4685,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 15,
     "missing_original_source": 0,
     "missing_product_url": 21,
-    "total": 4218,
+    "total": 4220,
     "with_retrieval_warning": 48
   },
-  "resource_count": 1036,
+  "resource_count": 1037,
   "resources": {
     "contacts_with_org_connection": 250,
-    "contacts_without_org_connection": 652,
+    "contacts_without_org_connection": 653,
     "missing_contacts": 134,
     "missing_description": 0,
-    "missing_fairsharing_id": 1028,
+    "missing_fairsharing_id": 1029,
     "missing_homepage_url": 0,
-    "missing_infores_id": 775,
+    "missing_infores_id": 776,
     "missing_license": 386,
-    "missing_repository": 525,
+    "missing_repository": 526,
     "status_counts": {
       "active": 892,
-      "inactive": 128,
+      "inactive": 129,
       "orphaned": 12,
       "unresponsive": 4
     },
     "stub_count": 0,
-    "total": 1036,
+    "total": 1037,
     "with_broken_links": 166,
     "with_citation_issues": 30,
     "without_products": 10,
@@ -16240,7 +16251,7 @@
   "scoring": {
     "average_score": 6.67,
     "median_score": 6.0,
-    "resources_with_issues": 996,
+    "resources_with_issues": 997,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],

@@ -449,6 +449,7 @@ molecular-data-kp	MolePro	KnowledgeGraph	https://github.com/broadinstitute/molec
 motifmap	MotifMap	DataSource	https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-495	resource/motifmap/motifmap.md
 motrpac	Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub	DataSource	https://motrpac-data.org/	resource/motrpac/motrpac.md
 mpio	Minimum PDDI Information Ontology	Ontology	https://github.com/MPIO-Developers/MPIO	resource/mpio/mpio.md
+mps-db	Microphysiology Systems Database	DataSource	https://mps.csb.pitt.edu/	resource/mps-db/mps-db.md
 mrbase	MR-Base	DataSource	https://gwas.mrcieu.ac.uk/	resource/mrbase/mrbase.md
 mro	MHC Restriction Ontology	Ontology	https://github.com/IEDB/MRO	resource/mro/mro.md
 ms	Mass spectrometry ontology	Ontology	http://www.psidev.info/groups/controlled-vocabularies	resource/ms/ms.md

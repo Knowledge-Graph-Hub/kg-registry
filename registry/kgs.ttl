@@ -3087,6 +3087,7 @@ kgr:chembl a schema1:DataSource ;
         kgr:micromap.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
+        kgr:mps-db.portal,
         kgr:ncatsgardkg.graph,
         kgr:obo-db-ingest.chembl.compound.tsv,
         kgr:obo-db-ingest.chembl.target.tsv,
@@ -6033,6 +6034,7 @@ kgr:drugbank a schema1:DataSource ;
         kgr:microbiomekg.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
+        kgr:mps-db.portal,
         kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
         kgr:openpredict.api,
@@ -7836,6 +7838,7 @@ kgr:faers a schema1:DataSource ;
         kgr:faers.quarterly_data_xml,
         kgr:gp-kg.graph,
         kgr:kg-predict.gpkg,
+        kgr:mps-db.portal,
         kgr:multiomics-kp.graph ;
     schema1:identifier "faers" ;
     schema1:name "FDA Adverse Event Reporting System" ;
@@ -12528,7 +12531,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-03T20:06:06+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T20:55:35+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15000,6 +15003,29 @@ kgr:mpio a schema1:Ontology ;
         "pharmacology" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/MPIO-Developers/MPIO> .
+
+kgr:mps-db a schema1:DataSource ;
+    rdfs:label "Microphysiology Systems Database" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Microphysiology Systems Database (MPS-Db) was a web-based database developed at the University of Pittsburgh Drug Discovery Institute and Department of Computational and Systems Biology for capturing, managing, analyzing and sharing experimental data from microphysiology systems, from static microplate models to multi-organ microfluidic organ-on-chip models. It linked these data to reference chemical, bioactivity, preclinical, clinical and post-marketing data from ChEMBL, PubChem, DrugBank, UniChem, OpenFDA and FAERS, and served as the data platform for the NCATS Tissue Chip Testing Center program. The Pitt-hosted MPS-Db is no longer available in its published form - its homepage now redirects to EveAnalytics, a login-only commercial successor platform operated under license from the University of Pittsburgh." ;
+    dcterms:identifier "mps-db" ;
+    dcterms:isReferencedBy <doi:10.1039/c9lc01047e>,
+        <doi:10.1089/aivt.2016.0011> ;
+    dcterms:license <https://doi.org/10.1039/c9lc01047e> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:mps-db.eveanalytics,
+        kgr:mps-db.portal ;
+    schema1:name "Microphysiology Systems Database" ;
+    skos:altLabel "BioSystics Analytics Platform",
+        "BioSystics-AP",
+        "MPS Database",
+        "MPS-Db" ;
+    skos:inScheme "anatomy and development",
+        "drug discovery",
+        "pharmacology",
+        "toxicology" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://mps.csb.pitt.edu/> .
 
 kgr:mrbase a schema1:DataSource ;
     rdfs:label "MR-Base" ;
@@ -20280,6 +20306,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:micromap.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
+        kgr:mps-db.portal,
         kgr:ncatsgardkg.graph,
         kgr:onco.all_json,
         kgr:pharmebinet.graphml,
@@ -24482,6 +24509,7 @@ kgr:unichem a schema1:Aggregator ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
+        kgr:mps-db.portal,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
         kgr:pathwaycommons.gmt,
@@ -34919,6 +34947,11 @@ kgr:mpio.owl a schema1:OntologyProduct ;
     rdfs:label "mpio.owl" ;
     dcterms:description "Minimum PDDI Information Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/mpio.owl> .
+
+kgr:mps-db.eveanalytics a schema1:GraphicalInterface ;
+    rdfs:label "EveAnalytics" ;
+    dcterms:description "EveAnalytics, the commercial successor to the MPS-Db (formerly the BioSystics Analytics Platform), aggregating microphysiology system data with linked preclinical and clinical databases. Operated under license from the University of Pittsburgh." ;
+    schema1:url <https://eveanalytics.com/> .
 
 kgr:mrbase.home a schema1:GraphicalInterface ;
     rdfs:label "MR-Base Website" ;
@@ -46061,6 +46094,11 @@ kgr:metatraits.ncbi.species-summary a schema1:Product ;
     rdfs:label "metaTraits NCBI Species Summary" ;
     dcterms:description "Species-level harmonized trait annotations aggregated for NCBI taxonomy in compressed TSV format." ;
     schema1:url <https://www.bork.embl.de/~robbani/metatraits/ncbi_species_summary_no_predictions.tsv.gz> .
+
+kgr:mps-db.portal a schema1:GraphicalInterface ;
+    rdfs:label "MPS-Db Web Portal" ;
+    dcterms:description "MPS-Db web portal for browsing, analyzing and sharing microphysiology system study data alongside reference compound, bioactivity, preclinical and clinical data drawn from ChEMBL, PubChem, DrugBank, UniChem and FAERS (via OpenFDA)." ;
+    schema1:url <https://mps.csb.pitt.edu/> .
 
 kgr:obo-db-ingest.bigg.metabolite.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "bigg.metabolite SSSOM" ;
