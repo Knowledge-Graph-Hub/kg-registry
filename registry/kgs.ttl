@@ -881,6 +881,37 @@ kgr:aro a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/arpcard/aro> .
 
+kgr:arrayexpress a schema1:DataSource ;
+    rdfs:label "ArrayExpress" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ArrayExpress is EMBL-EBI's archive of functional genomics experiments, holding raw and processed data and MIAME/MINSEQE-compliant metadata from microarray and high-throughput sequencing studies, including bulk and single-cell RNA-seq. Since 2021 it has been served as a collection within BioStudies, and its accessions keep the E-XXXX-n form. It is the European counterpart of NCBI GEO and supplies the experiments reanalyzed by Expression Atlas." ;
+    dcterms:identifier "arrayexpress" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkaa1062>,
+        <doi:10.1093/nar/gky964> ;
+    dcterms:license <https://www.ebi.ac.uk/about/terms-of-use> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:arrayexpress.annotare,
+        kgr:arrayexpress.api,
+        kgr:arrayexpress.ftp,
+        kgr:arrayexpress.portal,
+        kgr:europepmc.textmined-terms,
+        kgr:expressionatlas.baseline-summary,
+        kgr:expressionatlas.differential-results,
+        kgr:expressionatlas.experiment-downloads,
+        kgr:expressionatlas.ftp-bulk,
+        kgr:expressionatlas.r-objects,
+        kgr:organoiddb.all-organoid-samples,
+        kgr:organoiddb.general-samples,
+        kgr:organoiddb.organoid-specificity-samples ;
+    schema1:name "ArrayExpress" ;
+    skos:altLabel "AE" ;
+    skos:inScheme "biological systems",
+        "gene expression profiling",
+        "genomics",
+        "single-cell analysis" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ebi.ac.uk/biostudies/arrayexpress> .
+
 kgr:ars a schema1:DataSource ;
     rdfs:label "Autonomous Relay System" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -7602,7 +7633,7 @@ kgr:europepmc a schema1:Aggregator ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkaa994>,
         <doi:10.1093/nar/gkad1085>,
         <doi:10.1093/nar/gku1061> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://www.ebi.ac.uk/about/terms-of-use> ;
     dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:europepmc.annotations-api,
         kgr:europepmc.ftp,
@@ -7718,23 +7749,6 @@ kgr:exo a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/CTDbase/exposure-ontology> .
 
-kgr:expression-atlas a schema1:DataSource ;
-    rdfs:label "Expression Atlas" ;
-    dcterms:created "2026-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Expression Atlas is EMBL-EBI's open resource for exploring gene and protein expression across species, tissues, cell types, developmental stages, and experimental conditions. It is organized into a Baseline Atlas, reporting where genes and proteins are expressed under normal conditions, and a Differential Atlas, reporting how expression changes between conditions (for example disease versus control or treatment versus control). Its content is built from thousands of curated and consistently reanalyzed RNA-seq and microarray studies, including single-cell RNA-seq experiments." ;
-    dcterms:identifier "expression-atlas" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkz947> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:expression-atlas.downloads,
-        kgr:gene-expression-atlas-okn.graph ;
-    schema1:name "Expression Atlas" ;
-    skos:inScheme "biomedical",
-        "gene expression profiling",
-        "genomics" ;
-    adms:status "Active" ;
-    foaf:homepage <https://www.ebi.ac.uk/gxa/home> .
-
 kgr:expressionatlas a schema1:Aggregator ;
     rdfs:label "Expression Atlas" ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -7743,7 +7757,7 @@ kgr:expressionatlas a schema1:Aggregator ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkad1021>,
         <https://doi.org/10.1093/nar/gkz947> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:eco-kg.graph,
@@ -7756,13 +7770,15 @@ kgr:expressionatlas a schema1:Aggregator ;
         kgr:expressionatlas.portal,
         kgr:expressionatlas.r-objects,
         kgr:expressionatlas.single-cell,
+        kgr:gene-expression-atlas-okn.graph,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
     schema1:name "Expression Atlas" ;
     doap:repository <https://github.com/ebi-gene-expression-group> ;
-    skos:inScheme "gene expression profiling",
+    skos:inScheme "biomedical",
+        "gene expression profiling",
         "genomics",
         "organisms" ;
     adms:status "Active" ;
@@ -12512,7 +12528,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-03T18:44:15+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T20:06:06+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -17719,7 +17735,7 @@ kgr:organoiddb a schema1:DataSource ;
     dcterms:identifier "organoiddb" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/36271792/> ;
     dcterms:license <http://www.inbirg.com/organoid_db/> ;
-    dcterms:modified "2026-10-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:organoiddb.all-organoid-samples,
         kgr:organoiddb.general-samples,
         kgr:organoiddb.organoid-specificity-samples,
@@ -26208,6 +26224,26 @@ kgr:aro.owl a schema1:OntologyProduct ;
     dcterms:description "Antibiotic Resistance Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/aro.owl> .
 
+kgr:arrayexpress.annotare a schema1:GraphicalInterface ;
+    rdfs:label "Annotare Submission Tool" ;
+    dcterms:description "Annotare, the web-based submission tool for depositing microarray and sequencing experiments and their metadata into ArrayExpress." ;
+    schema1:url <https://www.ebi.ac.uk/fg/annotare/> .
+
+kgr:arrayexpress.api a schema1:ProgrammingInterface ;
+    rdfs:label "ArrayExpress Search API" ;
+    dcterms:description "BioStudies REST API endpoint for searching ArrayExpress studies, returning JSON; per-study metadata and file listings are available from the BioStudies studies endpoints." ;
+    schema1:url <https://www.ebi.ac.uk/biostudies/api/v1/arrayexpress/search> .
+
+kgr:arrayexpress.ftp a schema1:Product ;
+    rdfs:label "ArrayExpress FTP Archive" ;
+    dcterms:description "FTP/HTTPS archive of ArrayExpress study files, organized by accession prefix, including IDF and SDRF (MAGE-TAB) metadata, raw data and processed data files." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/biostudies/> .
+
+kgr:arrayexpress.portal a schema1:GraphicalInterface ;
+    rdfs:label "ArrayExpress Web Interface" ;
+    dcterms:description "Searchable web interface for browsing ArrayExpress functional genomics studies, their sample and protocol metadata, and their data files." ;
+    schema1:url <https://www.ebi.ac.uk/biostudies/arrayexpress> .
+
 kgr:ars.api a schema1:ProgrammingInterface ;
     rdfs:label "ARS API" ;
     dcterms:description "TRAPI-compatible ARS endpoint for asynchronous query submission." ;
@@ -30405,50 +30441,20 @@ kgr:exo.owl a schema1:OntologyProduct ;
     dcterms:description "Exposure ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/exo.owl> .
 
-kgr:expression-atlas.downloads a schema1:Product ;
-    rdfs:label "Expression Atlas Data Downloads" ;
-    dcterms:description "Bulk data downloads for Expression Atlas experiments, providing per-study expression matrices and analytics as tab-separated files via the EMBL-EBI public FTP archive." ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/> .
-
 kgr:expressionatlas.api a schema1:ProgrammingInterface ;
     rdfs:label "Expression Atlas JSON Web API" ;
     dcterms:description "JSON web API for programmatic access to expression data, experiment metadata, and differential expression results" ;
     schema1:url <https://www.ebi.ac.uk/gxa/json/experiments> .
-
-kgr:expressionatlas.baseline-summary a schema1:Product ;
-    rdfs:label "Expression Atlas Baseline Summary" ;
-    dcterms:description "Baseline expression summary data across human tissues and cell types from GTEx, Human Protein Atlas and other major studies" ;
-    schema1:url <https://www.ebi.ac.uk/gxa/baseline/experiments> .
-
-kgr:expressionatlas.differential-results a schema1:Product ;
-    rdfs:label "Expression Atlas Differential Results" ;
-    dcterms:description "Differential gene expression results across diseases, perturbations, and comparative studies with statistical significance metrics" ;
-    schema1:url <https://www.ebi.ac.uk/gxa/experiments?experimentType=differential> .
 
 kgr:expressionatlas.documentation a schema1:DocumentationProduct ;
     rdfs:label "Expression Atlas Help Documentation" ;
     dcterms:description "Comprehensive help documentation covering data access, analysis methods, API usage, and interpretation guidelines" ;
     schema1:url <https://www.ebi.ac.uk/gxa/help/index.html> .
 
-kgr:expressionatlas.experiment-downloads a schema1:Product ;
-    rdfs:label "Expression Atlas Experiment Downloads" ;
-    dcterms:description "Individual experiment data downloads in TSV format containing expression matrices and statistical results" ;
-    schema1:url <https://www.ebi.ac.uk/gxa/download> .
-
-kgr:expressionatlas.ftp-bulk a schema1:Product ;
-    rdfs:label "Expression Atlas FTP (Bulk Data)" ;
-    dcterms:description "FTP archive containing processed expression data files, experiment metadata, and analysis results for bulk RNA-seq experiments" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/> .
-
 kgr:expressionatlas.portal a schema1:GraphicalInterface ;
     rdfs:label "Expression Atlas Portal" ;
     dcterms:description "Main web portal for searching and exploring gene expression data across species, tissues, and experimental conditions with interactive heatmaps and visualizations" ;
     schema1:url <https://www.ebi.ac.uk/gxa/home> .
-
-kgr:expressionatlas.r-objects a schema1:Product ;
-    rdfs:label "Expression Atlas R Data Objects" ;
-    dcterms:description "Normalized gene expression data and raw count matrices delivered as R SummarizedExperiment objects via the ExpressionAtlas Bioconductor package, which downloads and imports Expression Atlas experiment data into R for computational analysis" ;
-    schema1:url <https://bioconductor.org/packages/ExpressionAtlas/> .
 
 kgr:expressionatlas.single-cell a schema1:GraphicalInterface ;
     rdfs:label "Single Cell Expression Atlas" ;
@@ -42808,6 +42814,31 @@ kgr:europepmc.oa-fulltext a schema1:Product ;
     dcterms:description "Bulk download of the Europe PMC open access full-text subset as gzipped JATS XML files grouped by PMCID range." ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/oa/> .
 
+kgr:expressionatlas.baseline-summary a schema1:Product ;
+    rdfs:label "Expression Atlas Baseline Summary" ;
+    dcterms:description "Baseline expression summary data across human tissues and cell types from GTEx, Human Protein Atlas and other major studies" ;
+    schema1:url <https://www.ebi.ac.uk/gxa/baseline/experiments> .
+
+kgr:expressionatlas.differential-results a schema1:Product ;
+    rdfs:label "Expression Atlas Differential Results" ;
+    dcterms:description "Differential gene expression results across diseases, perturbations, and comparative studies with statistical significance metrics" ;
+    schema1:url <https://www.ebi.ac.uk/gxa/experiments?experimentType=differential> .
+
+kgr:expressionatlas.experiment-downloads a schema1:Product ;
+    rdfs:label "Expression Atlas Experiment Downloads" ;
+    dcterms:description "Individual experiment data downloads in TSV format containing expression matrices and statistical results" ;
+    schema1:url <https://www.ebi.ac.uk/gxa/download> .
+
+kgr:expressionatlas.ftp-bulk a schema1:Product ;
+    rdfs:label "Expression Atlas FTP (Bulk Data)" ;
+    dcterms:description "FTP archive containing processed expression data files, experiment metadata, and analysis results for bulk RNA-seq experiments" ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/> .
+
+kgr:expressionatlas.r-objects a schema1:Product ;
+    rdfs:label "Expression Atlas R Data Objects" ;
+    dcterms:description "Normalized gene expression data and raw count matrices delivered as R SummarizedExperiment objects via the ExpressionAtlas Bioconductor package, which downloads and imports Expression Atlas experiment data into R for computational analysis" ;
+    schema1:url <https://bioconductor.org/packages/ExpressionAtlas/> .
+
 kgr:faers.quarterly_data_ascii a schema1:Product ;
     rdfs:label "FAERS Quarterly Data Files (ASCII)" ;
     dcterms:description "Quarterly data extracts in ASCII format containing demographic, drug, reaction, outcome, and source information for reported adverse events" ;
@@ -44057,21 +44088,6 @@ kgr:opengwas.portal a schema1:GraphicalInterface ;
     dcterms:description "IEU OpenGWAS browser for exploring the harmonized GWAS dataset catalog now used by MR-Base-related tooling" ;
     schema1:url <https://opengwas.io/> .
 
-kgr:organoiddb.all-organoid-samples a schema1:Product ;
-    rdfs:label "OrganoidDB all organoid samples" ;
-    dcterms:description "Sample metadata for every organoid sample in OrganoidDB, with study and sample accessions, tissue, platform, species, PubMed ID and sample characteristics." ;
-    schema1:url <http://www.inbirg.com/organoid_db/download/all_org_samples> .
-
-kgr:organoiddb.general-samples a schema1:Product ;
-    rdfs:label "OrganoidDB general samples" ;
-    dcterms:description "Sample metadata for the primary tissue and cell line samples that OrganoidDB uses for comparison with organoids." ;
-    schema1:url <http://www.inbirg.com/organoid_db/download/general_samples> .
-
-kgr:organoiddb.organoid-specificity-samples a schema1:Product ;
-    rdfs:label "OrganoidDB organoid specificity samples" ;
-    dcterms:description "Sample metadata for the organoid samples used by the OrganoidDB organoid specificity search." ;
-    schema1:url <http://www.inbirg.com/organoid_db/download/org_specificity_samples> .
-
 kgr:orphanet.ordo_release a schema1:DocumentationProduct ;
     rdfs:label "ORDO Release Page" ;
     dcterms:description "Current Orphadata Science page for the Orphanet Rare Disease Ontology release, including ORDO 4.8 OWL downloads and release notes" ;
@@ -45267,6 +45283,21 @@ kgr:omnicorp.cooccurrence a schema1:Product ;
     dcterms:description "Co-occurrence database generated from public PubMed abstracts with entity normalization for Biolink-relevant biomedical concepts" ;
     schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp> .
 
+kgr:organoiddb.all-organoid-samples a schema1:Product ;
+    rdfs:label "OrganoidDB all organoid samples" ;
+    dcterms:description "Sample metadata for every organoid sample in OrganoidDB, with study and sample accessions, tissue, platform, species, PubMed ID and sample characteristics." ;
+    schema1:url <http://www.inbirg.com/organoid_db/download/all_org_samples> .
+
+kgr:organoiddb.general-samples a schema1:Product ;
+    rdfs:label "OrganoidDB general samples" ;
+    dcterms:description "Sample metadata for the primary tissue and cell line samples that OrganoidDB uses for comparison with organoids." ;
+    schema1:url <http://www.inbirg.com/organoid_db/download/general_samples> .
+
+kgr:organoiddb.organoid-specificity-samples a schema1:Product ;
+    rdfs:label "OrganoidDB organoid specificity samples" ;
+    dcterms:description "Sample metadata for the organoid samples used by the OrganoidDB organoid specificity search." ;
+    schema1:url <http://www.inbirg.com/organoid_db/download/org_specificity_samples> .
+
 kgr:phewascat.associations a schema1:Product ;
     rdfs:label "PheWAS Association Data" ;
     dcterms:description "PheWAS association results for SNPs from GWAS Catalog analyzed against EMR-derived phenotypes" ;
@@ -45782,11 +45813,6 @@ kgr:epsd.download a schema1:Product ;
     dcterms:description "Download page for complete phosphorylation site datasets and annotation data from EPSD 2.0" ;
     schema1:url <https://epsd.biocuckoo.cn/Download.php> .
 
-kgr:europepmc.textmined-terms a schema1:MappingProduct ;
-    rdfs:label "Europe PMC Text-Mined Database Accession Links" ;
-    dcterms:description "CSV files, one per database, linking Europe PMC articles to accessions text-mined from their full text, covering ArrayExpress, BioStudies, ChEBI, Cellosaurus, AlphaFold DB, BioProject, BioSample, BRENDA, CATH and others." ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/TextMinedTerms/> .
-
 kgr:fiokg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph FRS Knowledge Graph" ;
     dcterms:description "The SAWGraph Facilities and Industries Ontology (FIO) / Facility Registry Service (FRS) knowledge graph, an RDF (Turtle) graph representing US facilities from EPA's Facility Registry Service together with their NAICS and SIC industry classifications and spatial locations. It is served through the SAWGraph FRS SPARQL and Triple Pattern Fragments endpoints." ;
@@ -45990,6 +46016,11 @@ kgr:cellmodelpassports.model_list a schema1:MappingProduct ;
     rdfs:label "Cell Model Passports Model List" ;
     dcterms:description "Annotated list of all cell line and organoid models with tissue, cancer type (NCIt), clinical and patient annotation, and cross-references to Cellosaurus RRIDs, COSMIC IDs, DepMap (Broad) IDs and CCLE names." ;
     schema1:url <https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv> .
+
+kgr:europepmc.textmined-terms a schema1:MappingProduct ;
+    rdfs:label "Europe PMC Text-Mined Database Accession Links" ;
+    dcterms:description "CSV files, one per database, linking Europe PMC articles to accessions text-mined from their full text, covering ArrayExpress, BioStudies, ChEBI, Cellosaurus, AlphaFold DB, BioProject, BioSample, BRENDA, CATH and others." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/TextMinedTerms/> .
 
 kgr:genecards.disease.associations a schema1:Product ;
     rdfs:label "GeneCards Disease Associations" ;

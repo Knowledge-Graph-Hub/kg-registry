@@ -5719,6 +5719,7 @@ https://api.cellmodelpassports.sanger.ac.uk/swagger:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.cellosaurus.org/:
   checked_at: '2026-10-02T21:37:20Z'
@@ -7607,11 +7608,13 @@ https://cellmodelpassports.sanger.ac.uk/:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cellmodelpassports.sanger.ac.uk/downloads:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cellular-semantics.github.io/CL_KG/:
   checked_at: '2026-10-02T21:38:23Z'
@@ -7893,6 +7896,7 @@ https://cmp.cog.sanger.ac.uk/download/GDSC2_fitted_dose_response_27Oct23.xlsx:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cns-iu.github.io/myaura/:
   checked_at: '2026-10-02T21:38:24Z'
@@ -7922,31 +7926,37 @@ https://cog.sanger.ac.uk/cmp/download/Project_Score2_fitness_scores_Sanger_v2_Br
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cog.sanger.ac.uk/cmp/download/Proteomics_20250211.zip:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cog.sanger.ac.uk/cmp/download/mutations_all_20260724.zip:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20260323.zip:
   checked_at: '2026-10-03T18:50:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cohd-api.ci.transltr.io/:
   checked_at: '2026-10-02T21:38:24Z'
@@ -11466,6 +11476,11 @@ https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/full_alignments/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/biostudies/:
+  checked_at: '2026-10-03T20:11:39Z'
+  error: null
+  ok: true
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/:
   checked_at: '2026-10-02T21:39:02Z'
@@ -28899,6 +28914,16 @@ https://www.ebi.ac.uk/QuickGO/api/:
   ok: true
   source: cache
   status_code: 200
+https://www.ebi.ac.uk/biostudies/api/v1/arrayexpress/search:
+  checked_at: '2026-10-03T20:11:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.ebi.ac.uk/biostudies/arrayexpress:
+  checked_at: '2026-10-03T20:11:39Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ebi.ac.uk/chembl/:
   checked_at: '2026-10-02T21:41:38Z'
   error: null
@@ -28995,6 +29020,11 @@ https://www.ebi.ac.uk/europepmc/webservices/rest/:
   ok: false
   source: cache
   status_code: 404
+https://www.ebi.ac.uk/fg/annotare/:
+  checked_at: '2026-10-03T20:11:39Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ebi.ac.uk/gene2phenotype/:
   checked_at: '2026-10-02T21:41:39Z'
   error: null

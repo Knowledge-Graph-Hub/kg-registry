@@ -32,6 +32,7 @@ apollo_sv	Apollo Structured Vocabulary	Ontology	https://github.com/ApolloDev/apo
 araport	Araport (Arabidopsis Information Portal)	DataSource	https://www.araport.org/	resource/araport/araport.md
 archs4	ARCHS4	DataSource	https://archs4.org/	resource/archs4/archs4.md
 aro	Antibiotic Resistance Ontology	Ontology	https://github.com/arpcard/aro	resource/aro/aro.md
+arrayexpress	ArrayExpress	DataSource	https://www.ebi.ac.uk/biostudies/arrayexpress	resource/arrayexpress/arrayexpress.md
 atc	Anatomical Therapeutic Chemical Classification System	DataSource	https://atcddd.fhi.no/atc_ddd_index/	resource/atc/atc.md
 ato	Amphibian taxonomy	Ontology	http://www.amphibanat.org	resource/ato/ato.md
 atom	ATOM	KnowledgeGraph	https://doi.org/10.1109/BIBM47256.2019.8983062	resource/atom/atom.md
@@ -243,7 +244,6 @@ evlncrnas	EVLncRNAs	DataSource	https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/
 evoweb	EvoWeb	KnowledgeGraph	https://data.niaid.nih.gov/	resource/evoweb/evoweb.md
 exmo	Exercise Medicine Ontology	Ontology	https://github.com/Exercise-Medicine-Ontology/EXMO	resource/exmo/exmo.md
 exo	Exposure ontology	Ontology	https://github.com/CTDbase/exposure-ontology	resource/exo/exo.md
-expression-atlas	Expression Atlas	DataSource	https://www.ebi.ac.uk/gxa/home	resource/expression-atlas/expression-atlas.md
 expressionatlas	Expression Atlas	Aggregator	https://www.ebi.ac.uk/gxa/home	resource/expressionatlas/expressionatlas.md
 fabio	FABIO	Ontology	https://sparontologies.github.io/fabio/current/fabio.html	resource/fabio/fabio.md
 fabric	FABRIC Cancer Portal	DataSource	https://fabric-cancer.huji.ac.il/	resource/fabric/fabric.md

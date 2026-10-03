@@ -30,6 +30,7 @@ aragorn,active,PASS
 arax,active,PASS
 archs4,active,PASS
 aro,active,PASS
+arrayexpress,active,PASS
 ars,active,PASS
 atc,active,PASS
 athena,active,PASS
@@ -271,7 +272,6 @@ evlncrnas,active,PASS
 evoweb,active,PASS
 exmo,active,PASS
 exo,active,PASS
-expression-atlas,active,PASS
 expressionatlas,active,PASS
 fabio,active,PASS
 fabric,active,PASS

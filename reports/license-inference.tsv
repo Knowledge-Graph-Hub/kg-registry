@@ -69,12 +69,12 @@ epigraphdb	KnowledgeGraph	declared	https://github.com/MRCIEU/epigraphdb	custom	h
 era-kg	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 eu-knowledge-graph	KnowledgeGraph	no-upstream						
 eurio	KnowledgeGraph	no-upstream						
-europepmc	Aggregator	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	alphafold|brenda|cellosaurus|chebi	pmc
+europepmc	Aggregator	inferred			https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress	pmc
 evoweb	KnowledgeGraph	no-upstream						
-expressionatlas	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
+expressionatlas	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress	
 fiokg	KnowledgeGraph	inferred			US federal government public domain	public domain	epa-frs|sawgraph	
 forum	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	chebi|dc|mesh|skos	chemont|cito|fabio
-gene-expression-atlas-okn	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	expression-atlas	
+gene-expression-atlas-okn	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	expressionatlas	
 gene-expression-omnibus	Aggregator	no-upstream						
 genecards	Aggregator	conflict	https://www.lifemapsc.com/genecards-suite-terms-of-use/	non-commercial	https://www.alliancegenome.org/privacy-warranty-licensing	custom	alliance|biocyc|cosmic|ctd|disgenet|gtex|iid|innatedb|medgen|snomedct|umls	5srrnadb|aminode|biogps|bitterdb|cdd|dbsuper|dgv|ena|epd|fabric|gard|geneorganizer|genomernai|gtrnadb|icd10|icd11|lncbase|lncbook|lncrnadisease|malacards|medlineplus|mirgenedb|mirtarbase|modomics|panther|paxdb|pdb|pid|pirsf|proteomicsdb|proteopedia|refseq|rgd|scop|sfld|silva|simap|smart|snodb|snopy|srpdb|tair|tarbase|treefam|ucnebase|vista
 genetics-kp	KnowledgeGraph	unresolved						
@@ -158,7 +158,7 @@ ohdsi	Aggregator	inferred			https://loinc.org/license/	custom	athena
 okn-void	KnowledgeGraph	no-upstream						
 ols	Aggregator	no-upstream						
 omnipath	Aggregator	no-upstream						
-onco	KnowledgeGraph	declared	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://creativecommons.org/licenses/by/4.0/	permissive	europepmc	pdb
+onco	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://www.ebi.ac.uk/about/terms-of-use	custom	europepmc	pdb
 ontology-kp	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	ubergraph	
 openbiodiv	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/3.0/	permissive	doco|gbif|proton|skos	fabio
 openpredict	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	https://www.kegg.jp/feedback/copyright.html	custom	kegg	
