@@ -2568,15 +2568,6 @@ entries:
     source_path: resource/exo/exo.md
     status: valid
     warnings: []
-  resource/expression-atlas/expression-atlas.md#publication[0]#DOI:10.1093/nar/gkz947:
-    checked_at: '2026-08-06T18:17:19Z'
-    errors: []
-    fingerprint: d3d009b041a8b603222647300cc7d17479f95dee2b08b090b4ae6504c3e0b8b1
-    publication_index: 0
-    reference_id: DOI:10.1093/nar/gkz947
-    source_path: resource/expression-atlas/expression-atlas.md
-    status: valid
-    warnings: []
   resource/expressionatlas/expressionatlas.md#publication[0]#DOI:10.1093/nar/gkad1021:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
