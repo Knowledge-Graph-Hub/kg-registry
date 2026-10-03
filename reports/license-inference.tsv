@@ -69,7 +69,7 @@ epigraphdb	KnowledgeGraph	declared	https://github.com/MRCIEU/epigraphdb	custom	h
 era-kg	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 eu-knowledge-graph	KnowledgeGraph	no-upstream						
 eurio	KnowledgeGraph	no-upstream						
-europepmc	Aggregator	inferred			https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress	pmc
+europepmc	Aggregator	inferred			https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress|biostudies	pmc
 evoweb	KnowledgeGraph	no-upstream						
 expressionatlas	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress	
 fiokg	KnowledgeGraph	inferred			US federal government public domain	public domain	epa-frs|sawgraph	

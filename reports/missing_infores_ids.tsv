@@ -62,6 +62,7 @@ biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resourc
 biomarker	BiomarkerKB	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarker/biomarker.md
 biomarkerkg	BiomarkerKB KG	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarkerkg/biomarkerkg.md
 biomuta	BioMuta	DataSource	https://hivelab.biochemistry.gwu.edu/biomuta	resource/biomuta/biomuta.md
+biostudies	BioStudies	DataSource	https://www.ebi.ac.uk/biostudies/	resource/biostudies/biostudies.md
 bioteque	Bioteque	KnowledgeGraph	https://bioteque.irbbarcelona.org/	resource/bioteque/bioteque.md
 biothings	BioThings	DataSource	https://biothings.io/	resource/biothings/biothings.md
 bitterdb	BitterDB	DataSource	https://bitterdb.agri.huji.ac.il/dbbitter.php	resource/bitterdb/bitterdb.md

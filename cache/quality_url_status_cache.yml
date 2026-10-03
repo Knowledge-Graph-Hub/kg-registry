@@ -13019,6 +13019,11 @@ https://github.com/EBI-IntAct/intact-data-exchange:
   ok: false
   source: cache
   status_code: 404
+https://github.com/EBIBioStudies:
+  checked_at: '2026-10-03T23:08:45Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/EBISPOT/DUO:
   checked_at: '2026-10-02T21:39:10Z'
   error: null
@@ -28945,17 +28950,32 @@ https://www.ebi.ac.uk/QuickGO/api/:
   ok: true
   source: cache
   status_code: 200
+https://www.ebi.ac.uk/biostudies/:
+  checked_at: '2026-10-03T23:08:45Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ebi.ac.uk/biostudies/api/v1/arrayexpress/search:
   checked_at: '2026-10-03T20:11:39Z'
   error: null
   ok: true
   source: cache
   status_code: 200
+https://www.ebi.ac.uk/biostudies/api/v1/search:
+  checked_at: '2026-10-03T23:08:45Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ebi.ac.uk/biostudies/arrayexpress:
   checked_at: '2026-10-03T20:11:39Z'
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://www.ebi.ac.uk/biostudies/submissions/:
+  checked_at: '2026-10-03T23:08:45Z'
+  error: null
+  ok: true
   status_code: 200
 https://www.ebi.ac.uk/chembl/:
   checked_at: '2026-10-02T21:41:38Z'
@@ -32077,21 +32097,25 @@ https://zebrafish.org/:
   checked_at: '2026-10-03T22:16:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zebrafish.org/abs/absAll.php:
   checked_at: '2026-10-03T22:16:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zebrafish.org/est/estAll.php:
   checked_at: '2026-10-03T22:16:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zebrafish.org/fish/lineAll.php:
   checked_at: '2026-10-03T22:16:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zenodo.org/api/records/10212986/files/KinAce.zip/content:
   checked_at: '2026-10-02T21:42:01Z'

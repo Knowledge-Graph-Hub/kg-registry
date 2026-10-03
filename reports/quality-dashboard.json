@@ -1,6 +1,6 @@
 {
   "citations": {
-    "publication_entries_total": 914,
+    "publication_entries_total": 917,
     "publication_entries_with_issues": 37,
     "resources_with_citation_issues": 30,
     "resources_without_publications": 359,
@@ -12,8 +12,8 @@
     "missing_last_modified_date": 0,
     "modified_after_creation": 1014,
     "stale_over_365_days": 3,
-    "unchanged_since_creation": 25,
-    "with_both_dates": 1039
+    "unchanged_since_creation": 26,
+    "with_both_dates": 1040
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -610,6 +610,7 @@
       "biolink",
       "biomuta",
       "bioportal",
+      "biostudies",
       "biothings",
       "bitterdb",
       "bluesky",
@@ -1560,6 +1561,11 @@
       "bioportal",
       "bioportal.api",
       "bioportal.portal",
+      "biostudies",
+      "biostudies.api",
+      "biostudies.ftp",
+      "biostudies.portal",
+      "biostudies.submission",
       "bioteque",
       "bioteque.bqsupports",
       "bioteque.code",
@@ -6589,6 +6595,7 @@
       "biomuta",
       "bioplanet",
       "bioportal",
+      "biostudies",
       "bioteque",
       "biothings",
       "bitterdb",
@@ -7607,6 +7614,7 @@
       "biomarker",
       "biomarkerkg",
       "biomuta",
+      "biostudies",
       "bioteque",
       "biothings",
       "bitterdb",
@@ -10555,6 +10563,10 @@
       "bioplanet.data",
       "bioportal.api",
       "bioportal.portal",
+      "biostudies.api",
+      "biostudies.ftp",
+      "biostudies.portal",
+      "biostudies.submission",
       "bioteque.bqsupports",
       "bioteque.code",
       "bioteque.embeddings",
@@ -14608,6 +14620,7 @@
       "biomuta",
       "bioplanet",
       "bioportal",
+      "biostudies",
       "bioteque",
       "biothings",
       "bitterdb",
@@ -16200,6 +16213,7 @@
     "unchanged_since_creation_resource_ids": [
       "acukg",
       "arrayexpress",
+      "biostudies",
       "bitterdb",
       "cellmodelpassports",
       "cgc",
@@ -16226,7 +16240,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-10-03T22:16:23Z",
+  "generated_at": "2026-10-03T23:08:40Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 163,
     "with_evaluation_page": 127,
@@ -16234,40 +16248,40 @@
   },
   "links": {
     "broken_urls": 245,
-    "cache_hits": 4688,
+    "cache_hits": 4692,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4447,
+    "healthy_urls": 4451,
     "live_checked_urls": 4,
     "mode": "live",
-    "total_unique_urls": 4692,
+    "total_unique_urls": 4696,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 15,
     "missing_original_source": 0,
     "missing_product_url": 21,
-    "total": 4225,
+    "total": 4229,
     "with_retrieval_warning": 48
   },
-  "resource_count": 1039,
+  "resource_count": 1040,
   "resources": {
     "contacts_with_org_connection": 250,
-    "contacts_without_org_connection": 655,
+    "contacts_without_org_connection": 656,
     "missing_contacts": 134,
     "missing_description": 0,
-    "missing_fairsharing_id": 1031,
+    "missing_fairsharing_id": 1032,
     "missing_homepage_url": 0,
-    "missing_infores_id": 778,
+    "missing_infores_id": 779,
     "missing_license": 387,
     "missing_repository": 528,
     "status_counts": {
-      "active": 894,
+      "active": 895,
       "inactive": 129,
       "orphaned": 12,
       "unresponsive": 4
     },
     "stub_count": 0,
-    "total": 1039,
+    "total": 1040,
     "with_broken_links": 166,
     "with_citation_issues": 30,
     "without_products": 10,
@@ -16276,7 +16290,7 @@
   "scoring": {
     "average_score": 6.67,
     "median_score": 6.0,
-    "resources_with_issues": 999,
+    "resources_with_issues": 1000,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],

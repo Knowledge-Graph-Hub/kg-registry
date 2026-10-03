@@ -894,6 +894,7 @@ kgr:arrayexpress a schema1:DataSource ;
         kgr:arrayexpress.api,
         kgr:arrayexpress.ftp,
         kgr:arrayexpress.portal,
+        kgr:biostudies.ftp,
         kgr:europepmc.textmined-terms,
         kgr:expressionatlas.baseline-summary,
         kgr:expressionatlas.differential-results,
@@ -1958,6 +1959,32 @@ kgr:bioportal a schema1:Aggregator ;
         "information technology" ;
     adms:status "Active" ;
     foaf:homepage <https://bioportal.bioontology.org/> .
+
+kgr:biostudies a schema1:DataSource ;
+    rdfs:label "BioStudies" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "BioStudies is an EMBL-EBI repository for descriptions of biological studies. It links each study to its associated data, whether held in other EMBL-EBI databases, in external resources, or in BioStudies itself, and accepts data that do not fit into specialised archives. Studies are organised into collections with their own metadata guidelines; the largest holds supplementary data imported from Europe PMC articles, and ArrayExpress has been served as a BioStudies collection since 2021." ;
+    dcterms:identifier "biostudies" ;
+    dcterms:isReferencedBy <doi:10.1016/j.jmb.2026.169874>,
+        <doi:10.1093/nar/gkx965>,
+        <doi:10.15252/msb.20156658> ;
+    dcterms:license <https://www.ebi.ac.uk/about/terms-of-use> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:arrayexpress.api,
+        kgr:biostudies.api,
+        kgr:biostudies.ftp,
+        kgr:biostudies.portal,
+        kgr:biostudies.submission,
+        kgr:europepmc.textmined-terms ;
+    schema1:name "BioStudies" ;
+    doap:repository <https://github.com/EBIBioStudies> ;
+    skos:inScheme "general",
+        "information technology",
+        "literature",
+        "metadata",
+        "scholarly communication" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ebi.ac.uk/biostudies/> .
 
 kgr:bioteque a schema1:KnowledgeGraph ;
     rdfs:label "Bioteque" ;
@@ -7657,7 +7684,9 @@ kgr:europepmc a schema1:Aggregator ;
         <doi:10.1093/nar/gku1061> ;
     dcterms:license <https://www.ebi.ac.uk/about/terms-of-use> ;
     dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:europepmc.annotations-api,
+    schema1:hasPart kgr:biostudies.api,
+        kgr:biostudies.ftp,
+        kgr:europepmc.annotations-api,
         kgr:europepmc.ftp,
         kgr:europepmc.grants-api,
         kgr:europepmc.oa-fulltext,
@@ -12551,7 +12580,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-03T22:08:21+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T22:59:37+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -26302,11 +26331,6 @@ kgr:arrayexpress.annotare a schema1:GraphicalInterface ;
     dcterms:description "Annotare, the web-based submission tool for depositing microarray and sequencing experiments and their metadata into ArrayExpress." ;
     schema1:url <https://www.ebi.ac.uk/fg/annotare/> .
 
-kgr:arrayexpress.api a schema1:ProgrammingInterface ;
-    rdfs:label "ArrayExpress Search API" ;
-    dcterms:description "BioStudies REST API endpoint for searching ArrayExpress studies, returning JSON; per-study metadata and file listings are available from the BioStudies studies endpoints." ;
-    schema1:url <https://www.ebi.ac.uk/biostudies/api/v1/arrayexpress/search> .
-
 kgr:arrayexpress.ftp a schema1:Product ;
     rdfs:label "ArrayExpress FTP Archive" ;
     dcterms:description "FTP/HTTPS archive of ArrayExpress study files, organized by accession prefix, including IDF and SDRF (MAGE-TAB) metadata, raw data and processed data files." ;
@@ -26893,6 +26917,16 @@ kgr:bioportal.portal a schema1:GraphicalInterface ;
     rdfs:label "BioPortal Portal" ;
     dcterms:description "Web portal for searching, browsing, and visualizing biomedical ontologies and mappings" ;
     schema1:url <https://bioportal.bioontology.org/> .
+
+kgr:biostudies.portal a schema1:GraphicalInterface ;
+    rdfs:label "BioStudies Web Interface" ;
+    dcterms:description "Web interface for searching and browsing BioStudies studies and collections, with study descriptions, links to associated data in other resources, and downloadable files." ;
+    schema1:url <https://www.ebi.ac.uk/biostudies/> .
+
+kgr:biostudies.submission a schema1:GraphicalInterface ;
+    rdfs:label "BioStudies Submission Tool" ;
+    dcterms:description "BioStudies submission tool for depositing study descriptions and data files." ;
+    schema1:url <https://www.ebi.ac.uk/biostudies/submissions/> .
 
 kgr:bioteque.bqsupports a schema1:ProcessProduct ;
     rdfs:label "BQsupports" ;
@@ -42515,6 +42549,11 @@ kgr:aopwiki-rdf.void a schema1:Product ;
     dcterms:description "VoID metadata describing the AOP-Wiki RDF dataset, its triple counts, licence, provenance, update frequency and SPARQL endpoint." ;
     schema1:url <https://raw.githubusercontent.com/marvinm2/AOPWikiRDF/master/data/AOPWikiRDF-Void.ttl> .
 
+kgr:arrayexpress.api a schema1:ProgrammingInterface ;
+    rdfs:label "ArrayExpress Search API" ;
+    dcterms:description "BioStudies REST API endpoint for searching ArrayExpress studies, returning JSON; per-study metadata and file listings are available from the BioStudies studies endpoints." ;
+    schema1:url <https://www.ebi.ac.uk/biostudies/api/v1/arrayexpress/search> .
+
 kgr:atom.kg a schema1:GraphProduct ;
     rdfs:label "ATOM Knowledge Graph" ;
     dcterms:description "Anti-tumor biomaterial knowledge graph constructed from biomedicine literature, containing structured relationships among anti-tumor entities extracted through entity recognition, sentence simplification, triple extraction, and predicate mapping." ;
@@ -42709,6 +42748,11 @@ kgr:biomarker.kg a schema1:GraphProduct ;
     rdfs:label "BiomarkerKB Knowledge Graph" ;
     dcterms:description "Neo4j knowledge graph built from curated BiomarkerKB data and integrated into the CFDE Unified Biomedical Knowledge Graph (UBKG). The initial release comprises over 300,000 nodes and 1.2 million edges." ;
     schema1:url <https://github.com/clinical-biomarkers/Knowledge-Graph> .
+
+kgr:biostudies.api a schema1:ProgrammingInterface ;
+    rdfs:label "BioStudies REST API" ;
+    dcterms:description "REST API returning JSON for searching BioStudies, with per-collection search endpoints and per-study metadata and file listings. Covers all collections, including supplementary data imported from Europe PMC." ;
+    schema1:url <https://www.ebi.ac.uk/biostudies/api/v1/search> .
 
 kgr:cam-kp.go-cams a schema1:Product ;
     rdfs:label "Gene Ontology CAMs" ;
@@ -45053,6 +45097,11 @@ kgr:amyco.annotations a schema1:Product ;
     rdfs:label "AmyCo Curated Annotations" ;
     dcterms:description "Manually curated disease-gene associations and annotations for amyloidoses and amyloid deposition-related diseases extracted from biomedical literature." .
 
+kgr:biostudies.ftp a schema1:Product ;
+    rdfs:label "BioStudies FTP Archive" ;
+    dcterms:description "FTP/HTTPS archive of BioStudies study files, organized by accession prefix, including Europe PMC supplementary data and ArrayExpress experiment files." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/biostudies/> .
+
 kgr:cam-kp.ctd-interactions a schema1:Product ;
     rdfs:label "CTD Chemical-Gene Models" ;
     dcterms:description "Chemical-gene interaction models and toxicological pathways derived from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals and 55,400 genes" .
@@ -46120,11 +46169,6 @@ kgr:cellmodelpassports.model_list a schema1:MappingProduct ;
     dcterms:description "Annotated list of all cell line and organoid models with tissue, cancer type (NCIt), clinical and patient annotation, and cross-references to Cellosaurus RRIDs, COSMIC IDs, DepMap (Broad) IDs and CCLE names." ;
     schema1:url <https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv> .
 
-kgr:europepmc.textmined-terms a schema1:MappingProduct ;
-    rdfs:label "Europe PMC Text-Mined Database Accession Links" ;
-    dcterms:description "CSV files, one per database, linking Europe PMC articles to accessions text-mined from their full text, covering ArrayExpress, BioStudies, ChEBI, Cellosaurus, AlphaFold DB, BioProject, BioSample, BRENDA, CATH and others." ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/TextMinedTerms/> .
-
 kgr:genecards.disease.associations a schema1:Product ;
     rdfs:label "GeneCards Disease Associations" ;
     dcterms:description "Disease association data integrated from OMIM, MalaCards, ClinVar, Orphanet, DisGeNET and other disease databases" ;
@@ -46209,6 +46253,11 @@ kgr:drkg.graph a schema1:GraphProduct ;
     rdfs:label "DRKG graph" ;
     dcterms:description "DRKG graph files, including a TSV of triples, embeddings, ID mappings, and a glossary of relation types." ;
     schema1:url <https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz> .
+
+kgr:europepmc.textmined-terms a schema1:MappingProduct ;
+    rdfs:label "Europe PMC Text-Mined Database Accession Links" ;
+    dcterms:description "CSV files, one per database, linking Europe PMC articles to accessions text-mined from their full text, covering ArrayExpress, BioStudies, ChEBI, Cellosaurus, AlphaFold DB, BioProject, BioSample, BRENDA, CATH and others." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/TextMinedTerms/> .
 
 kgr:genecards.gene.annotations a schema1:Product ;
     rdfs:label "GeneCards Gene Annotations" ;
