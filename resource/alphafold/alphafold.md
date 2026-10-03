@@ -653,6 +653,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: europepmc
   - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  - relation_type: prov:hadPrimarySource
     source: chebi
   - relation_type: prov:hadPrimarySource
     source: cellosaurus

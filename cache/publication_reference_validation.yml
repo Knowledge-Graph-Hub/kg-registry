@@ -306,6 +306,24 @@ entries:
     source_path: resource/aro/aro.md
     status: valid
     warnings: []
+  resource/arrayexpress/arrayexpress.md#publication[0]#DOI:10.1093/nar/gkaa1062:
+    checked_at: '2026-10-03T18:38:36Z'
+    errors: []
+    fingerprint: d9c5dfd49a33459bbd021bdbb7d0b4a6d8884e9808790832b7eb3afe099272d8
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaa1062
+    source_path: resource/arrayexpress/arrayexpress.md
+    status: valid
+    warnings: []
+  resource/arrayexpress/arrayexpress.md#publication[1]#DOI:10.1093/nar/gky964:
+    checked_at: '2026-10-03T18:38:38Z'
+    errors: []
+    fingerprint: eeffd2ff1a8da40ad90793df31128867699cb561cffe6a8d9bf30653bbefe898
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gky964
+    source_path: resource/arrayexpress/arrayexpress.md
+    status: valid
+    warnings: []
   resource/atgo/atgo.md#publication[0]#PMID:28132844:
     checked_at: '2026-06-22T16:53:13Z'
     errors: []
