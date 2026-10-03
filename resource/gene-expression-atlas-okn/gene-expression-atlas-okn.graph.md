@@ -9,7 +9,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: gene-expression-atlas-okn
 - relation_type: prov:wasDerivedFrom
-  source: expression-atlas
+  source: expressionatlas
 product_url: https://frink.apps.renci.org/gene-expression-atlas-okn
 layout: product_detail
 ---

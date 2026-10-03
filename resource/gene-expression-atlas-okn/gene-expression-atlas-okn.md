@@ -2,11 +2,11 @@
 id: gene-expression-atlas-okn
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (permissive) among its sources: expression-atlas.'
+    license (permissive) among its sources: expressionatlas.'
   id: https://creativecommons.org/licenses/by/4.0/
   inferred_from:
-  - expression-atlas
-  label: CC BY 4.0
+  - expressionatlas
+  label: CC-BY-4.0
   restrictiveness: permissive
   status: inferred
   unresolved_sources: []
@@ -40,7 +40,7 @@ products:
   original_source:
   - source: gene-expression-atlas-okn
     relation_type: prov:hadPrimarySource
-  - source: expression-atlas
+  - source: expressionatlas
     relation_type: prov:wasDerivedFrom
 - id: gene-expression-atlas-okn.sparql
   name: Gene Expression Atlas SPARQL
