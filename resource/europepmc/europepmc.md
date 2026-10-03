@@ -32,11 +32,12 @@ last_modified_date: '2026-10-03T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (custom) among its sources: arrayexpress. Not accounted for, no known
-    license: pmc.'
+    license (custom) among its sources: arrayexpress, biostudies. Not accounted for,
+    no known license: pmc.'
   id: https://www.ebi.ac.uk/about/terms-of-use
   inferred_from:
   - arrayexpress
+  - biostudies
   label: EMBL-EBI Terms of Use
   restrictiveness: custom
   status: inferred
@@ -122,6 +123,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: europepmc
   - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
     source: arrayexpress
   - relation_type: prov:hadPrimarySource
     source: chebi
@@ -166,6 +169,35 @@ products:
     source: wikidata
   product_file_size: 31490277
   product_url: https://onco.cc/api/v1/all.json
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/biostudies/api/v1/search
+  description: REST API returning JSON for searching BioStudies, with per-collection
+    search endpoints and per-study metadata and file listings. Covers all collections,
+    including supplementary data imported from Europe PMC.
+  format: http
+  id: biostudies.api
+  is_public: true
+  name: BioStudies REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
+    source: europepmc
+  product_url: https://www.ebi.ac.uk/biostudies/api/v1/search
+- category: Product
+  description: FTP/HTTPS archive of BioStudies study files, organized by accession
+    prefix, including Europe PMC supplementary data and ArrayExpress experiment files.
+  format: mixed
+  id: biostudies.ftp
+  name: BioStudies FTP Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
+    source: europepmc
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://ftp.ebi.ac.uk/pub/databases/biostudies/
 publications:
 - authors:
   - Summer Rosonovski
