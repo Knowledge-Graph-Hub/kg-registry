@@ -4995,6 +4995,24 @@ entries:
     source_path: resource/mpio/mpio.md
     status: valid
     warnings: []
+  resource/mps-db/mps-db.md#publication[0]#DOI:10.1089/aivt.2016.0011:
+    checked_at: '2026-10-03T20:12:05Z'
+    errors: []
+    fingerprint: e3936d4889fcb44b7cc4fc9d3585282c75d234cc03374ce70281102654ab1dad
+    publication_index: 0
+    reference_id: DOI:10.1089/aivt.2016.0011
+    source_path: resource/mps-db/mps-db.md
+    status: valid
+    warnings: []
+  resource/mps-db/mps-db.md#publication[1]#DOI:10.1039/c9lc01047e:
+    checked_at: '2026-10-03T20:12:07Z'
+    errors: []
+    fingerprint: 9815798dc3d0acf956efe70d72bad80c78372992d59056bcda9d40326ce5028c
+    publication_index: 1
+    reference_id: DOI:10.1039/c9lc01047e
+    source_path: resource/mps-db/mps-db.md
+    status: valid
+    warnings: []
   resource/mrbase/mrbase.md#publication[0]#DOI:10.7554/eLife.34408:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
