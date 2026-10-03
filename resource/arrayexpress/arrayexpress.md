@@ -140,10 +140,72 @@ products:
     source: arrayexpress
   product_file_size: 94026
   product_url: http://www.inbirg.com/organoid_db/download/general_samples
+- category: Product
+  description: FTP archive containing processed expression data files, experiment
+    metadata, and analysis results for bulk RNA-seq experiments
+  format: http
+  id: expressionatlas.ftp-bulk
+  name: Expression Atlas FTP (Bulk Data)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/
+- category: Product
+  description: Individual experiment data downloads in TSV format containing expression
+    matrices and statistical results
+  format: tsv
+  id: expressionatlas.experiment-downloads
+  name: Expression Atlas Experiment Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://www.ebi.ac.uk/gxa/download
+- category: Product
+  description: Normalized gene expression data and raw count matrices delivered as
+    R SummarizedExperiment objects via the ExpressionAtlas Bioconductor package, which
+    downloads and imports Expression Atlas experiment data into R for computational
+    analysis
+  format: mixed
+  id: expressionatlas.r-objects
+  name: Expression Atlas R Data Objects
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://bioconductor.org/packages/ExpressionAtlas/
+- category: Product
+  description: Baseline expression summary data across human tissues and cell types
+    from GTEx, Human Protein Atlas and other major studies
+  format: tsv
+  id: expressionatlas.baseline-summary
+  name: Expression Atlas Baseline Summary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://www.ebi.ac.uk/gxa/baseline/experiments
+- category: Product
+  description: Differential gene expression results across diseases, perturbations,
+    and comparative studies with statistical significance metrics
+  format: tsv
+  id: expressionatlas.differential-results
+  name: Expression Atlas Differential Results
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://www.ebi.ac.uk/gxa/experiments?experimentType=differential
 publications:
 - authors:
   - Ugis Sarkans
-  - "Anja F\xFCllgrabe"
+  - Anja Füllgrabe
   - Ahmed Ali
   - Awais Athar
   - Ehsan Behrangi
@@ -164,7 +226,7 @@ publications:
   year: '2021'
 - authors:
   - Awais Athar
-  - "Anja F\xFCllgrabe"
+  - Anja Füllgrabe
   - Nancy George
   - Haider Iqbal
   - Laura Huerta

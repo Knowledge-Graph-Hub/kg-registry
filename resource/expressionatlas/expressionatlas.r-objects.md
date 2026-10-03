@@ -10,6 +10,8 @@ name: Expression Atlas R Data Objects
 original_source:
 - relation_type: prov:hadPrimarySource
   source: expressionatlas
+- relation_type: prov:hadPrimarySource
+  source: arrayexpress
 product_url: https://bioconductor.org/packages/ExpressionAtlas/
 layout: product_detail
 ---

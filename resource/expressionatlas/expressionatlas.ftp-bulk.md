@@ -1,12 +1,15 @@
 ---
 category: Product
-description: FTP archive containing processed expression data files, experiment metadata, and analysis results for bulk RNA-seq experiments
+description: FTP archive containing processed expression data files, experiment metadata,
+  and analysis results for bulk RNA-seq experiments
 format: http
 id: expressionatlas.ftp-bulk
 name: Expression Atlas FTP (Bulk Data)
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: expressionatlas
+- relation_type: prov:hadPrimarySource
+  source: arrayexpress
 product_url: https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/
 layout: product_detail
-original_source:
-  - source: expressionatlas
-    relation_type: prov:hadPrimarySource
 ---
