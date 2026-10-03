@@ -238,10 +238,59 @@ products:
     source: unichem
   - relation_type: prov:hadPrimarySource
     source: faers
+  - relation_type: prov:hadPrimarySource
+    source: openfda
   product_url: https://mps.csb.pitt.edu/
   warnings:
   - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
     the commercial successor platform; the Pitt-hosted portal is no longer available.
+- category: ProgrammingInterface
+  connection_url: https://api.fda.gov/
+  description: JSON REST APIs (Elasticsearch query syntax) for FDA drug, device, food,
+    animal and veterinary, cosmetic, tobacco and other datasets, including drug adverse
+    events (FAERS), device adverse events (MAUDE), the National Drug Code directory,
+    the Orange Book, UNII substance data, labeling, recalls and enforcement reports.
+  format: http
+  id: openfda.apis
+  is_public: true
+  name: openFDA APIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openfda
+  - relation_type: prov:hadPrimarySource
+    source: faers
+  - relation_type: prov:hadPrimarySource
+    source: maude
+  - relation_type: prov:hadPrimarySource
+    source: ndcd
+  - relation_type: prov:hadPrimarySource
+    source: fda-orange-book
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  product_url: https://open.fda.gov/apis/
+- category: Product
+  compression: zip
+  description: Bulk downloads of every openFDA endpoint as zipped JSON files, split
+    into partitions for large datasets such as drug adverse events (FAERS) and device
+    adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json
+    listing each endpoint's export date and file partitions.
+  format: json
+  id: openfda.downloads
+  name: openFDA Bulk Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openfda
+  - relation_type: prov:hadPrimarySource
+    source: faers
+  - relation_type: prov:hadPrimarySource
+    source: maude
+  - relation_type: prov:hadPrimarySource
+    source: ndcd
+  - relation_type: prov:hadPrimarySource
+    source: fda-orange-book
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  product_url: https://open.fda.gov/data/downloads/
 synonyms:
 - AEMS
 - FDA Adverse Event Monitoring System

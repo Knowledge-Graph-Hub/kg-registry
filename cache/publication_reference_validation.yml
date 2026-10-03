@@ -5723,6 +5723,15 @@ entries:
     source_path: resource/openbiodiv/openbiodiv.md
     status: valid
     warnings: []
+  resource/openfda/openfda.md#publication[0]#DOI:10.1093/jamia/ocv153:
+    checked_at: '2026-10-03T23:13:35Z'
+    errors: []
+    fingerprint: 045c06ed8d5fa64c2222a07e9287268eb45c1b83dae8d9747c3dec3339f8f8d9
+    publication_index: 0
+    reference_id: DOI:10.1093/jamia/ocv153
+    source_path: resource/openfda/openfda.md
+    status: valid
+    warnings: []
   resource/opengwas/opengwas.md#publication[0]#DOI:10.1101/2020.08.10.244293:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []

@@ -2178,6 +2178,8 @@ products:
     source: unichem
   - relation_type: prov:hadPrimarySource
     source: faers
+  - relation_type: prov:hadPrimarySource
+    source: openfda
   product_url: https://mps.csb.pitt.edu/
   warnings:
   - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),

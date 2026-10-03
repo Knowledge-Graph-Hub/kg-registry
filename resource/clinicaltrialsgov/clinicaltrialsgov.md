@@ -1345,6 +1345,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: wikidata
+  - relation_type: prov:hadPrimarySource
+    source: openfda
   product_file_size: 31490277
   product_url: https://onco.cc/api/v1/all.json
 publications:
