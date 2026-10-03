@@ -8489,6 +8489,33 @@ entries:
     source_path: resource/zfin/zfin.md
     status: valid
     warnings: []
+  resource/zirc/zirc.md#publication[0]#DOI:10.1201/9781315100999-7:
+    checked_at: '2026-10-03T21:21:03Z'
+    errors: []
+    fingerprint: f8eb727a1652306f8cf2f8457da94e57e4e2cbf28f040f7002fd92ad9318093b
+    publication_index: 0
+    reference_id: DOI:10.1201/9781315100999-7
+    source_path: resource/zirc/zirc.md
+    status: valid
+    warnings: []
+  resource/zirc/zirc.md#publication[1]#DOI:10.1089/zeb.2015.1206:
+    checked_at: '2026-10-03T21:21:05Z'
+    errors: []
+    fingerprint: 313a3d7e9911b9bb790d81d7f53f6d38a66938ab6ca2274d8a25dd092f1de563
+    publication_index: 1
+    reference_id: DOI:10.1089/zeb.2015.1206
+    source_path: resource/zirc/zirc.md
+    status: valid
+    warnings: []
+  resource/zirc/zirc.md#publication[2]#DOI:10.1016/bs.mcb.2016.01.007:
+    checked_at: '2026-10-03T21:21:07Z'
+    errors: []
+    fingerprint: 52d99d7b2ba37ad3f5d978ac4eb1fddefc5910bd9cb8987021ad1253ed01440d
+    publication_index: 2
+    reference_id: DOI:10.1016/bs.mcb.2016.01.007
+    source_path: resource/zirc/zirc.md
+    status: valid
+    warnings: []
   resource/zp/zp.md#publication[0]#PMID:24358873:
     checked_at: '2026-08-06T18:19:27Z'
     errors: []
