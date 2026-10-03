@@ -19,7 +19,7 @@ domains:
   - cancer
 homepage_url: https://onco.cc/
 id: onco
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-03T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -36,6 +36,8 @@ products:
         source: onco
       - relation_type: prov:hadPrimarySource
         source: clinicaltrialsgov
+      - relation_type: prov:hadPrimarySource
+        source: europepmc
       - relation_type: prov:hadPrimarySource
         source: openalex
       - relation_type: prov:hadPrimarySource

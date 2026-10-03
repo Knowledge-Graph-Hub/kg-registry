@@ -2673,6 +2673,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
+    source: europepmc
+  - relation_type: prov:hadPrimarySource
     source: openalex
   - relation_type: prov:hadPrimarySource
     source: pdb
