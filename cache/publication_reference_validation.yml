@@ -2496,6 +2496,33 @@ entries:
     source_path: resource/eupathdb/eupathdb.md
     status: valid
     warnings: []
+  resource/europepmc/europepmc.md#publication[0]#DOI:10.1093/nar/gkad1085:
+    checked_at: '2026-10-03T03:11:05Z'
+    errors: []
+    fingerprint: 9938507769dbc4c23a7b8d6304974b87103364f79008602bd6a2bf4c952df59b
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad1085
+    source_path: resource/europepmc/europepmc.md
+    status: valid
+    warnings: []
+  resource/europepmc/europepmc.md#publication[1]#DOI:10.1093/nar/gkaa994:
+    checked_at: '2026-10-03T03:11:07Z'
+    errors: []
+    fingerprint: 577352cf240f79133e25b383e5d8a0975e8723096da5bb060fe30a516c8284f9
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkaa994
+    source_path: resource/europepmc/europepmc.md
+    status: valid
+    warnings: []
+  resource/europepmc/europepmc.md#publication[2]#DOI:10.1093/nar/gku1061:
+    checked_at: '2026-10-03T03:11:08Z'
+    errors: []
+    fingerprint: 5c43a2310f6e1534f16887a73c9fb44d8fe0e872ec5531238873365861088862
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gku1061
+    source_path: resource/europepmc/europepmc.md
+    status: valid
+    warnings: []
   resource/evlncrnas/evlncrnas.md#publication[0]#DOI:10.1093/nar/gkad1057:
     checked_at: '2026-06-22T16:26:35Z'
     errors: []
