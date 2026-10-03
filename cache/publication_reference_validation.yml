@@ -630,6 +630,33 @@ entries:
     source_path: resource/bioportal/bioportal.md
     status: valid
     warnings: []
+  resource/biostudies/biostudies.md#publication[0]#DOI:10.1016/j.jmb.2026.169874:
+    checked_at: '2026-10-03T22:23:30Z'
+    errors: []
+    fingerprint: 61b39c76318487804bc0a7abbc1004d85f331d58e3355ad1a5459bfa79c82438
+    publication_index: 0
+    reference_id: DOI:10.1016/j.jmb.2026.169874
+    source_path: resource/biostudies/biostudies.md
+    status: valid
+    warnings: []
+  resource/biostudies/biostudies.md#publication[1]#DOI:10.1093/nar/gkx965:
+    checked_at: '2026-10-03T22:25:18Z'
+    errors: []
+    fingerprint: 0013606b2cad608f917d648e772e9d7231441f78fc7c652b2181b9ad0007b64d
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkx965
+    source_path: resource/biostudies/biostudies.md
+    status: valid
+    warnings: []
+  resource/biostudies/biostudies.md#publication[2]#DOI:10.15252/msb.20156658:
+    checked_at: '2026-10-03T22:23:34Z'
+    errors: []
+    fingerprint: 9ae15f91cf65bfd4159e7b8407fe3fc2ded2cbea9e7e9bf0a83c2ec1aea6b7e8
+    publication_index: 2
+    reference_id: DOI:10.15252/msb.20156658
+    source_path: resource/biostudies/biostudies.md
+    status: valid
+    warnings: []
   resource/bioteque/bioteque.md#publication[0]#DOI:10.1038/s41467-022-33026-0:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []

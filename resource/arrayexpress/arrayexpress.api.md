@@ -11,6 +11,8 @@ name: ArrayExpress Search API
 original_source:
 - relation_type: prov:hadPrimarySource
   source: arrayexpress
+- relation_type: prov:hadPrimarySource
+  source: biostudies
 product_url: https://www.ebi.ac.uk/biostudies/api/v1/arrayexpress/search
 layout: product_detail
 ---

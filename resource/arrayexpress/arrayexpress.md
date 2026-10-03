@@ -52,6 +52,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: arrayexpress
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
   product_url: https://www.ebi.ac.uk/biostudies/api/v1/arrayexpress/search
 - category: Product
   description: FTP/HTTPS archive of ArrayExpress study files, organized by accession
@@ -84,6 +86,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: europepmc
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
   - relation_type: prov:hadPrimarySource
     source: arrayexpress
   - relation_type: prov:hadPrimarySource
@@ -202,6 +206,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: arrayexpress
   product_url: https://www.ebi.ac.uk/gxa/experiments?experimentType=differential
+- category: Product
+  description: FTP/HTTPS archive of BioStudies study files, organized by accession
+    prefix, including Europe PMC supplementary data and ArrayExpress experiment files.
+  format: mixed
+  id: biostudies.ftp
+  name: BioStudies FTP Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
+    source: europepmc
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://ftp.ebi.ac.uk/pub/databases/biostudies/
 publications:
 - authors:
   - Ugis Sarkans
