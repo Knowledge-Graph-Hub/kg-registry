@@ -1046,6 +1046,15 @@ entries:
     status: warning
     warnings:
     - DOI:10.1038/s41467-2022-28631-3 has no cached reference at references_cache/DOI_10.1038_s41467-2022-28631-3.md
+  resource/cgc/cgc.md#publication[0]#DOI:10.1073/pnas.2522808122:
+    checked_at: '2026-10-03T21:02:16Z'
+    errors: []
+    fingerprint: ea005e543ffbff5f4e203cfeb7ac9067985fd7395dac5085fc250e1d57f5e78e
+    publication_index: 0
+    reference_id: DOI:10.1073/pnas.2522808122
+    source_path: resource/cgc/cgc.md
+    status: valid
+    warnings: []
   resource/cgnc/cgnc.md#publication[0]#DOI:10.1186/1471-2164-10-S2-S5:
     checked_at: '2026-06-22T16:25:32Z'
     errors: []
