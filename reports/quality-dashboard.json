@@ -1,6 +1,6 @@
 {
   "citations": {
-    "publication_entries_total": 903,
+    "publication_entries_total": 906,
     "publication_entries_with_issues": 37,
     "resources_with_citation_issues": 30,
     "resources_without_publications": 359,
@@ -12,8 +12,8 @@
     "missing_last_modified_date": 0,
     "modified_after_creation": 1014,
     "stale_over_365_days": 3,
-    "unchanged_since_creation": 20,
-    "with_both_dates": 1034
+    "unchanged_since_creation": 21,
+    "with_both_dates": 1035
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -102,6 +102,8 @@
       "era-kg.api",
       "era-kg.ontology",
       "era-kg.sparql",
+      "europepmc.annotations-api",
+      "europepmc.rest-api",
       "evoweb.sparql",
       "faers",
       "faers.electronic_submissions",
@@ -741,6 +743,7 @@
       "eu-knowledge-graph",
       "eupath",
       "eurio",
+      "europepmc",
       "ev",
       "evoweb",
       "exmo",
@@ -2531,6 +2534,12 @@
       "eurio.projects-graph",
       "eurio.results-graph",
       "eurio.sparql",
+      "europepmc",
+      "europepmc.ftp",
+      "europepmc.grants-api",
+      "europepmc.oa-fulltext",
+      "europepmc.portal",
+      "europepmc.textmined-terms",
       "ev",
       "ev.obo",
       "ev.owl",
@@ -6779,6 +6788,7 @@
       "eupath",
       "eupathdb",
       "eurio",
+      "europepmc",
       "ev",
       "evlncrnas",
       "evoweb",
@@ -7739,6 +7749,7 @@
       "eupath",
       "eupathdb",
       "eurio",
+      "europepmc",
       "ev",
       "evlncrnas",
       "evoweb",
@@ -8393,6 +8404,7 @@
       "eu-knowledge-graph",
       "eupathdb",
       "eurio",
+      "europepmc",
       "ev",
       "evlncrnas",
       "evoweb",
@@ -11300,6 +11312,13 @@
       "eurio.projects-graph",
       "eurio.results-graph",
       "eurio.sparql",
+      "europepmc.annotations-api",
+      "europepmc.ftp",
+      "europepmc.grants-api",
+      "europepmc.oa-fulltext",
+      "europepmc.portal",
+      "europepmc.rest-api",
+      "europepmc.textmined-terms",
       "ev.obo",
       "ev.owl",
       "evlncrnas.circrnas",
@@ -14758,6 +14777,7 @@
       "eupath",
       "eupathdb",
       "eurio",
+      "europepmc",
       "ev",
       "evlncrnas",
       "evoweb",
@@ -15533,6 +15553,7 @@
       "eo",
       "epo",
       "era-kg",
+      "europepmc",
       "evoweb",
       "faers",
       "faldo",
@@ -16118,6 +16139,7 @@
       "culture-knowledge-graph",
       "epa-echo",
       "era-kg",
+      "europepmc",
       "geneorganizer",
       "genomernai",
       "google-reviews",
@@ -16135,57 +16157,57 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-10-02T21:36:29Z",
+  "generated_at": "2026-10-03T17:32:02Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 163,
     "with_evaluation_page": 127,
     "without_evaluation_page": 36
   },
   "links": {
-    "broken_urls": 243,
-    "cache_hits": 30,
+    "broken_urls": 245,
+    "cache_hits": 4662,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 4419,
-    "live_checked_urls": 4632,
+    "healthy_urls": 4425,
+    "live_checked_urls": 8,
     "mode": "live",
-    "total_unique_urls": 4662,
+    "total_unique_urls": 4670,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 15,
     "missing_original_source": 0,
     "missing_product_url": 21,
-    "total": 4198,
+    "total": 4205,
     "with_retrieval_warning": 48
   },
-  "resource_count": 1034,
+  "resource_count": 1035,
   "resources": {
     "contacts_with_org_connection": 250,
-    "contacts_without_org_connection": 650,
+    "contacts_without_org_connection": 651,
     "missing_contacts": 134,
     "missing_description": 0,
-    "missing_fairsharing_id": 1026,
+    "missing_fairsharing_id": 1027,
     "missing_homepage_url": 0,
-    "missing_infores_id": 773,
-    "missing_license": 385,
+    "missing_infores_id": 774,
+    "missing_license": 386,
     "missing_repository": 524,
     "status_counts": {
-      "active": 890,
+      "active": 891,
       "inactive": 128,
       "orphaned": 12,
       "unresponsive": 4
     },
     "stub_count": 0,
-    "total": 1034,
-    "with_broken_links": 165,
+    "total": 1035,
+    "with_broken_links": 166,
     "with_citation_issues": 30,
     "without_products": 10,
     "without_publications": 359
   },
   "scoring": {
-    "average_score": 6.66,
+    "average_score": 6.67,
     "median_score": 6.0,
-    "resources_with_issues": 994,
+    "resources_with_issues": 995,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -16218,181 +16240,181 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/alliance/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bgee/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bindingdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/chembl/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/cohd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dakp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dgidb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/diseases/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drugcentral/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/geneticskp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/go_cam/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/goa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gtopdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/hpoa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/icees/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/intact/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/panther/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/pathbank/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/semmeddb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/sider/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/signor/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/tmkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/translator_kg/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ttd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ubergraph/latest/"
         }
@@ -16434,37 +16456,37 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/crosswalks"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/knowledge-graph"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/terminology-server-api"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/value-sets-graphql"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/mcp-server"
         }
@@ -16517,7 +16539,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
         }
@@ -16576,7 +16598,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html"
         }
@@ -16635,31 +16657,31 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://compath.scai.fraunhofer.de/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://compath.scai.fraunhofer.de/catalog"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://compath.scai.fraunhofer.de/curation_protocol"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://compath.scai.fraunhofer.de/overview"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://compath.scai.fraunhofer.de/similarity"
         }
@@ -16694,7 +16716,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.inoh.org"
         }
@@ -16747,7 +16769,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html"
         }
@@ -16800,7 +16822,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.obofoundry.org/ro"
         }
@@ -16853,7 +16875,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://4dx.embl.de/platy"
         }

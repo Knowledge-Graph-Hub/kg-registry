@@ -236,6 +236,7 @@ eu-knowledge-graph	EU Knowledge Graph	KnowledgeGraph	https://linkedopendata.eu/w
 eupath	VEuPathDB ontology	Ontology	https://github.com/VEuPathDB-ontology/VEuPathDB-ontology	resource/eupath/eupath.md
 eupathdb	Eukaryotic Pathogen Database (EuPathDB)	DataSource	https://veupathdb.org/	resource/eupathdb/eupathdb.md
 eurio	EURIO Knowledge Graph	KnowledgeGraph	https://cordis.europa.eu/datalab	resource/eurio/eurio.md
+europepmc	Europe PMC	Aggregator	https://europepmc.org/	resource/europepmc/europepmc.md
 ev	eVOC (Expressed Sequence Annotation for Humans)	Ontology	https://obofoundry.org/ontology/ev	resource/ev/ev.md
 evlncrnas	EVLncRNAs	DataSource	https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/	resource/evlncrnas/evlncrnas.md
 evoweb	EvoWeb	KnowledgeGraph	https://data.niaid.nih.gov/	resource/evoweb/evoweb.md

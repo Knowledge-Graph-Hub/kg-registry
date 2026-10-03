@@ -69,6 +69,7 @@ epigraphdb	KnowledgeGraph	declared	https://github.com/MRCIEU/epigraphdb	custom	h
 era-kg	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 eu-knowledge-graph	KnowledgeGraph	no-upstream						
 eurio	KnowledgeGraph	no-upstream						
+europepmc	Aggregator	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	alphafold|brenda|cellosaurus|chebi	pmc
 evoweb	KnowledgeGraph	no-upstream						
 expressionatlas	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 fiokg	KnowledgeGraph	inferred			US federal government public domain	public domain	epa-frs|sawgraph	
@@ -157,7 +158,7 @@ ohdsi	Aggregator	inferred			https://loinc.org/license/	custom	athena
 okn-void	KnowledgeGraph	no-upstream						
 ols	Aggregator	no-upstream						
 omnipath	Aggregator	no-upstream						
-onco	KnowledgeGraph	declared	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://creativecommons.org/publicdomain/zero/1.0/	public domain	clinicaltrialsgov|openalex|pubchem|wikidata	pdb
+onco	KnowledgeGraph	declared	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://creativecommons.org/licenses/by/4.0/	permissive	europepmc	pdb
 ontology-kp	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	ubergraph	
 openbiodiv	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/3.0/	permissive	doco|gbif|proton|skos	fabio
 openpredict	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	https://www.kegg.jp/feedback/copyright.html	custom	kegg	

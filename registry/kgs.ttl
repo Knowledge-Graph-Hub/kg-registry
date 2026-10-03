@@ -498,6 +498,7 @@ kgr:alphafold a schema1:DataSource ;
         kgr:alphafold.web,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:europepmc.textmined-terms,
         kgr:genecards.web.interface ;
     schema1:name "AlphaFold Protein Structure Database" ;
     doap:repository <https://github.com/google-deepmind/alphafold> ;
@@ -2045,6 +2046,7 @@ kgr:brenda a schema1:DataSource ;
         kgr:brenda.sparql,
         kgr:brenda.textfile,
         kgr:brenda.web,
+        kgr:europepmc.textmined-terms,
         kgr:ibkh.graph ;
     schema1:name "BRENDA" ;
     skos:inScheme "chemistry and biochemistry",
@@ -2675,7 +2677,8 @@ kgr:cellosaurus a schema1:DataSource ;
         kgr:cellosaurus.site,
         kgr:cellosaurus.txt,
         kgr:cellosaurus.xml,
-        kgr:cellosaurus.xrefs ;
+        kgr:cellosaurus.xrefs,
+        kgr:europepmc.textmined-terms ;
     schema1:name "Cellosaurus" ;
     doap:repository <https://github.com/calipho-sib/cellosaurus> ;
     skos:inScheme "biological systems",
@@ -2881,6 +2884,7 @@ kgr:chebi a schema1:Ontology ;
         kgr:drugmechdb.graph,
         kgr:efo.obo,
         kgr:efo.owl,
+        kgr:europepmc.textmined-terms,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
         kgr:foodb.data.mysql,
@@ -7552,6 +7556,36 @@ kgr:eurio a schema1:KnowledgeGraph ;
         "scholarly communication" ;
     adms:status "Active" ;
     foaf:homepage <https://cordis.europa.eu/datalab> .
+
+kgr:europepmc a schema1:Aggregator ;
+    rdfs:label "Europe PMC" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Europe PMC is an open life sciences literature database run by EMBL-EBI. It brings together PubMed abstracts, full-text articles from PubMed Central, author manuscripts, preprints, Agricola records, patents, theses and other sources under one search, and links publications to research grants, data citations and database records. Text-mined annotations of genes and proteins, organisms, diseases, chemicals, GO terms, accession numbers and other entity types are served through SciLite and the Annotations API. Data are available through the website, REST APIs and bulk FTP downloads." ;
+    dcterms:identifier "europepmc" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkaa994>,
+        <doi:10.1093/nar/gkad1085>,
+        <doi:10.1093/nar/gku1061> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:europepmc.annotations-api,
+        kgr:europepmc.ftp,
+        kgr:europepmc.grants-api,
+        kgr:europepmc.oa-fulltext,
+        kgr:europepmc.portal,
+        kgr:europepmc.rest-api,
+        kgr:europepmc.textmined-terms,
+        kgr:onco.all_json ;
+    schema1:name "Europe PMC" ;
+    doap:repository <https://github.com/EuropePMC> ;
+    skos:altLabel "Europe PubMed Central",
+        "EuropePMC" ;
+    skos:inScheme "biomedical",
+        "literature",
+        "natural language processing",
+        "research funding",
+        "scholarly communication" ;
+    adms:status "Active" ;
+    foaf:homepage <https://europepmc.org/> .
 
 kgr:ev a schema1:Ontology ;
     rdfs:label "eVOC (Expressed Sequence Annotation for Humans)" ;
@@ -12439,7 +12473,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-02T21:26:44+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T17:26:20+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -17158,7 +17192,7 @@ kgr:onco a schema1:KnowledgeGraph ;
     dcterms:description "OnCo is a public, cited knowledge graph of oncology. It holds one record per cancer, front, technology, target, treatment or test, company, institution, person, pathway, trial, key paper, journal, pairing, roadmap, bottleneck and idea, with links in every direction and a plain-English summary before the technical layer. Every record carries a date of last check and links to a primary source. The corpus is built from TypeScript records in a public repository and refreshed from PubChem, RCSB PDB, Wikidata, OpenAlex, GLOBOCAN, ClinicalTrials.gov, Europe PMC and openFDA. The same corpus ships as a website, a static JSON API with NDJSON, RDF N-Triples and JSON Schema downloads, per-record Markdown context files, a command-line tool and a Model Context Protocol server. The code is MIT and the data are CC BY-NC 4.0." ;
     dcterms:identifier "onco" ;
     dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:onco.all_json,
         kgr:onco.all_ndjson,
@@ -19343,7 +19377,10 @@ kgr:pmc a schema1:DataSource ;
     dcterms:description "PubMed Central (PMC) is NCBI's free full-text archive of biomedical and life-sciences journal literature, including article display, searchable records, article datasets, and controlled automated retrieval services for reusable PMC content." ;
     dcterms:identifier "pmc" ;
     dcterms:modified "2026-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:litvar.api,
+    schema1:hasPart kgr:europepmc.oa-fulltext,
+        kgr:europepmc.portal,
+        kgr:europepmc.rest-api,
+        kgr:litvar.api,
         kgr:litvar.web_interface,
         kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
@@ -20238,6 +20275,8 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
         kgr:entrez.eutils,
+        kgr:europepmc.portal,
+        kgr:europepmc.rest-api,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
         kgr:foodb.data.mysql,
@@ -30183,6 +30222,21 @@ kgr:eurio.sparql a schema1:ProgrammingInterface ;
     rdfs:label "EURIO SPARQL Endpoint" ;
     dcterms:description "Public Virtuoso SPARQL endpoint over the EURIO Knowledge Graph. Verified queryable on 2026-08-06, when the graph reported 26,429,912 triples. The CORDIS Datalab provides a query interface over the same endpoint at https://cordis.europa.eu/datalab/sparql-endpoint/en." ;
     schema1:url <https://cordis.europa.eu/datalab/sparql> .
+
+kgr:europepmc.annotations-api a schema1:ProgrammingInterface ;
+    rdfs:label "Europe PMC Annotations API" ;
+    dcterms:description "REST API serving text-mined entity annotations (genes and proteins, organisms, diseases, chemicals, GO terms, accession numbers and other types) for Europe PMC articles, produced by Europe PMC and community text-mining pipelines." ;
+    schema1:url <https://www.ebi.ac.uk/europepmc/annotations_api/> .
+
+kgr:europepmc.ftp a schema1:Product ;
+    rdfs:label "Europe PMC FTP Downloads" ;
+    dcterms:description "Europe PMC FTP root holding author manuscripts, preprints and preprint abstracts, PDFs, DOI mappings and lightweight metadata files alongside the open access and text-mined term downloads." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/> .
+
+kgr:europepmc.grants-api a schema1:ProgrammingInterface ;
+    rdfs:label "Europe PMC Grants API" ;
+    dcterms:description "REST API (GRIST) for searching research grants from Europe PMC funders and the publications linked to them." ;
+    schema1:url <https://www.ebi.ac.uk/europepmc/GristAPI/rest/> .
 
 kgr:ev.obo a schema1:OntologyProduct ;
     rdfs:label "ev.obo" ;
@@ -42667,6 +42721,11 @@ kgr:enrichr-kg.portal a schema1:GraphicalInterface ;
 kgr:european-molecular-biology-laboratory-embl a "Organization" ;
     rdfs:label "EMBL" .
 
+kgr:europepmc.oa-fulltext a schema1:Product ;
+    rdfs:label "Europe PMC Open Access Full Text" ;
+    dcterms:description "Bulk download of the Europe PMC open access full-text subset as gzipped JATS XML files grouped by PMCID range." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/oa/> .
+
 kgr:faers.quarterly_data_ascii a schema1:Product ;
     rdfs:label "FAERS Quarterly Data Files (ASCII)" ;
     dcterms:description "Quarterly data extracts in ASCII format containing demographic, drug, reaction, outcome, and source information for reported adverse events" ;
@@ -44932,6 +44991,16 @@ kgr:enrichr-kg.edges-csv a schema1:Product ;
     dcterms:description "Edge-table CSV snapshot from the Enrichr-KG downloads page using source.relation.target edge triples" ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/GO_Biological_Process_2021.GO_BP.Gene.edges.csv> .
 
+kgr:europepmc.portal a schema1:GraphicalInterface ;
+    rdfs:label "Europe PMC Website" ;
+    dcterms:description "Europe PMC website for searching and reading life sciences literature, including abstracts, full text, preprints, patents and theses, with SciLite text-mined annotations and links to grants, data citations and database records." ;
+    schema1:url <https://europepmc.org/> .
+
+kgr:europepmc.rest-api a schema1:ProgrammingInterface ;
+    rdfs:label "Europe PMC Articles RESTful API" ;
+    dcterms:description "REST API for searching Europe PMC and retrieving article metadata, abstracts, open access full text (XML), references, citations and database cross-references." ;
+    schema1:url <https://www.ebi.ac.uk/europepmc/webservices/rest/> .
+
 kgr:gendr.data a schema1:Product ;
     rdfs:label "GenDR Data Download" ;
     dcterms:description "Downloadable dataset of dietary restriction-related genes" ;
@@ -45631,6 +45700,11 @@ kgr:epsd.download a schema1:Product ;
     dcterms:description "Download page for complete phosphorylation site datasets and annotation data from EPSD 2.0" ;
     schema1:url <https://epsd.biocuckoo.cn/Download.php> .
 
+kgr:europepmc.textmined-terms a schema1:MappingProduct ;
+    rdfs:label "Europe PMC Text-Mined Database Accession Links" ;
+    dcterms:description "CSV files, one per database, linking Europe PMC articles to accessions text-mined from their full text, covering ArrayExpress, BioStudies, ChEBI, Cellosaurus, AlphaFold DB, BioProject, BioSample, BRENDA, CATH and others." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/pmc/TextMinedTerms/> .
+
 kgr:fiokg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph FRS Knowledge Graph" ;
     dcterms:description "The SAWGraph Facilities and Industries Ontology (FIO) / Facility Registry Service (FRS) knowledge graph, an RDF (Turtle) graph representing US facilities from EPA's Facility Registry Service together with their NAICS and SIC industry classifications and spatial locations. It is served through the SAWGraph FRS SPARQL and Triple Pattern Fragments endpoints." ;
@@ -45870,11 +45944,6 @@ kgr:obo-db-ingest.bigg.metabolite.sssom.tsv a schema1:MappingProduct ;
     dcterms:description "bigg.metabolite SSSOM" ;
     schema1:url <https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv> .
 
-kgr:onco.all_json a schema1:GraphProduct ;
-    rdfs:label "OnCo full corpus (JSON)" ;
-    dcterms:description "Every OnCo record in one JSON file, each with its plain-English summary, technical summary, dated facts, relationship fields and source links." ;
-    schema1:url <https://onco.cc/api/v1/all.json> .
-
 kgr:pankgraph.graph a schema1:GraphProduct ;
     rdfs:label "PanKgraph Knowledge Graph" ;
     dcterms:description "Pancreas-focused knowledge graph integrating genes, SNPs, pancreatic expression QTLs, and donor-derived islet datasets harmonized within PanKbase." ;
@@ -45973,6 +46042,11 @@ kgr:obo-db-ingest.rhea.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "rhea SSSOM" ;
     dcterms:description "rhea SSSOM" ;
     schema1:url <https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv> .
+
+kgr:onco.all_json a schema1:GraphProduct ;
+    rdfs:label "OnCo full corpus (JSON)" ;
+    dcterms:description "Every OnCo record in one JSON file, each with its plain-English summary, technical summary, dated facts, relationship fields and source links." ;
+    schema1:url <https://onco.cc/api/v1/all.json> .
 
 kgr:openpredict.predictions a schema1:Product ;
     rdfs:label "OpenPredict Prediction Data" ;
