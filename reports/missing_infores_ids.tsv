@@ -775,4 +775,5 @@ xlmod	HUPO-PSI cross-linking and derivatization reagents controlled vocabulary	O
 ypo	Yeast phenotypes	Ontology	http://www.yeastgenome.org/	resource/ypo/ypo.md
 zea	Maize gross anatomy	Ontology	http://www.maizemap.org/	resource/zea/zea.md
 zeco	Zebrafish Experimental Conditions Ontology	Ontology	https://github.com/ybradford/zebrafish-experimental-conditions-ontology	resource/zeco/zeco.md
+zirc	Zebrafish International Resource Center	DataSource	https://zebrafish.org/	resource/zirc/zirc.md
 zwd	Zasha Weinberg Data	DataSource	https://bitbucket.org/zashaw/zashaweinbergdata/src/master/	resource/zwd/zwd.md

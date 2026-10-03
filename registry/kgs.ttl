@@ -12551,7 +12551,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-03T21:13:02+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T22:08:21+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -25694,7 +25694,8 @@ kgr:zfin a schema1:DataSource ;
         kgr:zfin.downloads,
         kgr:zfin.gene-to-phenotype,
         kgr:zfin.gene-to-publication,
-        kgr:zfin.zfa ;
+        kgr:zfin.zfa,
+        kgr:zirc.fish-catalog ;
     schema1:identifier "zfin" ;
     schema1:name "ZFIN" ;
     doap:repository <https://github.com/ZFIN/> ;
@@ -25723,6 +25724,30 @@ kgr:zfs a schema1:Ontology ;
     skos:inScheme "anatomy and development" ;
     adms:status "Active" ;
     foaf:homepage <https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources> .
+
+kgr:zirc a schema1:DataSource ;
+    rdfs:label "Zebrafish International Resource Center" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Zebrafish International Resource Center (ZIRC) is a central repository for wild-type, mutant and transgenic strains of zebrafish (Danio rerio), maintained as live stocks or cryopreserved sperm and distributed as live adults or embryos. ZIRC also distributes antibodies, ESTs/cDNAs and gene probes, and provides health services including diagnostic pathology for zebrafish and other small laboratory fish. It is housed at the University of Oregon and is a sister organization to ZFIN, whose allele and feature pages list ZIRC as a source when a line is available there." ;
+    dcterms:identifier "zirc" ;
+    dcterms:isReferencedBy <doi:10.1016/bs.mcb.2016.01.007>,
+        <doi:10.1089/zeb.2015.1206>,
+        <doi:10.1201/9781315100999-7> ;
+    dcterms:license <https://zebrafish.org/documents/terms_of_use.php> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:7955> ;
+    schema1:hasPart kgr:zirc.antibody-catalog,
+        kgr:zirc.est-catalog,
+        kgr:zirc.fish-catalog ;
+    schema1:name "Zebrafish International Resource Center" ;
+    skos:altLabel "ZIRC" ;
+    skos:inScheme "genetic variation",
+        "genomics",
+        "model organisms",
+        "organisms",
+        "phenotype" ;
+    adms:status "Active" ;
+    foaf:homepage <https://zebrafish.org/> .
 
 kgr:zp a schema1:Ontology ;
     rdfs:label "Zebrafish Phenotype Ontology" ;
@@ -42395,6 +42420,16 @@ kgr:zfs.owl a schema1:OntologyProduct ;
 kgr:zhenglab a "Organization" ;
     rdfs:label "Zheng Lab, School of Information Science and Technology, ShanghaiTech University" .
 
+kgr:zirc.antibody-catalog a schema1:GraphicalInterface ;
+    rdfs:label "ZIRC Antibodies Catalog" ;
+    dcterms:description "Web catalog of zebrafish antibodies available from ZIRC." ;
+    schema1:url <https://zebrafish.org/abs/absAll.php> .
+
+kgr:zirc.est-catalog a schema1:GraphicalInterface ;
+    rdfs:label "ZIRC ESTs/cDNAs Catalog" ;
+    dcterms:description "Web catalog of zebrafish ESTs and cDNA clones available from ZIRC." ;
+    schema1:url <https://zebrafish.org/est/estAll.php> .
+
 kgr:zp.obo a schema1:OntologyProduct ;
     rdfs:label "zp.obo" ;
     dcterms:description "Zebrafish Phenotype Ontology in OBO format" ;
@@ -45008,6 +45043,11 @@ kgr:unibiomap.protein_desc a schema1:GraphProduct ;
 
 kgr:wikimedia a "Organization" ;
     rdfs:label "Wikimedia Foundation" .
+
+kgr:zirc.fish-catalog a schema1:GraphicalInterface ;
+    rdfs:label "ZIRC Zebrafish Lines Catalog" ;
+    dcterms:description "Searchable web catalog of wild-type, mutant and transgenic zebrafish lines held at ZIRC, with genotype, allele, construct, affected gene, phenotype and availability, linked to the corresponding ZFIN records." ;
+    schema1:url <https://zebrafish.org/fish/lineAll.php> .
 
 kgr:amyco.annotations a schema1:Product ;
     rdfs:label "AmyCo Curated Annotations" ;

@@ -7686,16 +7686,19 @@ https://cgc.umn.edu/:
   checked_at: '2026-10-03T21:22:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cgc.umn.edu/static/cgc-strains.txt:
   checked_at: '2026-10-03T21:22:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cgc.umn.edu/strain/search:
   checked_at: '2026-10-03T21:22:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chanzuckerberg.github.io/cellxgene-census/:
   checked_at: '2026-10-02T21:38:23Z'
@@ -32069,6 +32072,26 @@ https://xenbase.org/xenbase/static/apis-links.jsp:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://zebrafish.org/:
+  checked_at: '2026-10-03T22:16:28Z'
+  error: null
+  ok: true
+  status_code: 200
+https://zebrafish.org/abs/absAll.php:
+  checked_at: '2026-10-03T22:16:28Z'
+  error: null
+  ok: true
+  status_code: 200
+https://zebrafish.org/est/estAll.php:
+  checked_at: '2026-10-03T22:16:28Z'
+  error: null
+  ok: true
+  status_code: 200
+https://zebrafish.org/fish/lineAll.php:
+  checked_at: '2026-10-03T22:16:28Z'
+  error: null
+  ok: true
   status_code: 200
 https://zenodo.org/api/records/10212986/files/KinAce.zip/content:
   checked_at: '2026-10-02T21:42:01Z'

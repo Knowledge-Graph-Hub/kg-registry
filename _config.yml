@@ -191684,7 +191684,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-03T21:13:02Z'
+  last_modified_date: '2026-10-03T22:08:21Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -381573,6 +381573,19 @@ resources:
       source: phenopacket-store
     product_file_size: 230046094
     product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  - category: GraphicalInterface
+    description: Searchable web catalog of wild-type, mutant and transgenic zebrafish
+      lines held at ZIRC, with genotype, allele, construct, affected gene, phenotype
+      and availability, linked to the corresponding ZFIN records.
+    format: http
+    id: zirc.fish-catalog
+    name: ZIRC Zebrafish Lines Catalog
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: zirc
+    - relation_type: prov:hadPrimarySource
+      source: zfin
+    product_url: https://zebrafish.org/fish/lineAll.php
   publications:
   - authors:
     - Bradford YM
@@ -381815,6 +381828,111 @@ resources:
   repository: https://github.com/cerivs/zebrafish-anatomical-ontology
   taxon:
   - NCBITaxon:7954
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: zirc@zebrafish.org
+    - contact_type: url
+      value: https://zebrafish.org/home/contact.php
+    label: Zebrafish International Resource Center
+  creation_date: '2026-10-03T00:00:00Z'
+  description: The Zebrafish International Resource Center (ZIRC) is a central repository
+    for wild-type, mutant and transgenic strains of zebrafish (Danio rerio), maintained
+    as live stocks or cryopreserved sperm and distributed as live adults or embryos.
+    ZIRC also distributes antibodies, ESTs/cDNAs and gene probes, and provides health
+    services including diagnostic pathology for zebrafish and other small laboratory
+    fish. It is housed at the University of Oregon and is a sister organization to
+    ZFIN, whose allele and feature pages list ZIRC as a source when a line is available
+    there.
+  domains:
+  - model organisms
+  - organisms
+  - genetic variation
+  - phenotype
+  - genomics
+  homepage_url: https://zebrafish.org/
+  id: zirc
+  last_modified_date: '2026-10-03T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://zebrafish.org/documents/terms_of_use.php
+    label: ZIRC Terms of Use (non-commercial personal use only)
+  name: Zebrafish International Resource Center
+  products:
+  - category: GraphicalInterface
+    description: Searchable web catalog of wild-type, mutant and transgenic zebrafish
+      lines held at ZIRC, with genotype, allele, construct, affected gene, phenotype
+      and availability, linked to the corresponding ZFIN records.
+    format: http
+    id: zirc.fish-catalog
+    name: ZIRC Zebrafish Lines Catalog
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: zirc
+    - relation_type: prov:hadPrimarySource
+      source: zfin
+    product_url: https://zebrafish.org/fish/lineAll.php
+  - category: GraphicalInterface
+    description: Web catalog of zebrafish antibodies available from ZIRC.
+    format: http
+    id: zirc.antibody-catalog
+    name: ZIRC Antibodies Catalog
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: zirc
+    product_url: https://zebrafish.org/abs/absAll.php
+  - category: GraphicalInterface
+    description: Web catalog of zebrafish ESTs and cDNA clones available from ZIRC.
+    format: http
+    id: zirc.est-catalog
+    name: ZIRC ESTs/cDNAs Catalog
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: zirc
+    product_url: https://zebrafish.org/est/estAll.php
+  publications:
+  - authors:
+    - April Freeman
+    - Ron Holland
+    - Jen-Jen Hwang-Shum
+    - David Lains
+    - Jennifer Matthews
+    - Katrina Murray
+    - Andrzej Nasiadka
+    - Erin Quinn
+    - Zoltán M. Varga
+    - Monte Westerfield
+    doi: 10.1201/9781315100999-7
+    id: doi:10.1201/9781315100999-7
+    journal: The Biological Resources of Model Organisms
+    preferred: true
+    title: The Zebrafish International Resource Center
+    year: '2019'
+  - authors:
+    - Katrina N Murray
+    - Zoltán M Varga
+    - Michael L Kent
+    doi: 10.1089/zeb.2015.1206
+    id: doi:10.1089/zeb.2015.1206
+    journal: Zebrafish
+    title: Biosecurity and Health Monitoring at the Zebrafish International Resource
+      Center
+    year: '2016'
+  - authors:
+    - Zoltán M Varga
+    doi: 10.1016/bs.mcb.2016.01.007
+    id: doi:10.1016/bs.mcb.2016.01.007
+    journal: Methods in Cell Biology
+    title: Aquaculture, husbandry, and shipping at the Zebrafish International Resource
+      Center
+    year: '2016'
+  synonyms:
+  - ZIRC
+  taxon:
+  - NCBITaxon:7955
 - activity_status: active
   category: Ontology
   collection:
