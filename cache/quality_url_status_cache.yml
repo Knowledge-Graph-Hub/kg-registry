@@ -7682,6 +7682,21 @@ https://cfdeknowledge.org/r/cfde_reveal:
   ok: true
   source: cache
   status_code: 200
+https://cgc.umn.edu/:
+  checked_at: '2026-10-03T21:22:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cgc.umn.edu/static/cgc-strains.txt:
+  checked_at: '2026-10-03T21:22:03Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cgc.umn.edu/strain/search:
+  checked_at: '2026-10-03T21:22:03Z'
+  error: null
+  ok: true
+  status_code: 200
 https://chanzuckerberg.github.io/cellxgene-census/:
   checked_at: '2026-10-02T21:38:23Z'
   error: null
@@ -10485,6 +10500,7 @@ https://eveanalytics.com/:
   checked_at: '2026-10-03T21:05:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://evs.nci.nih.gov/ftp1/CDISC/ADaM/:
   checked_at: '2026-10-02T21:38:58Z'
@@ -20599,6 +20615,7 @@ https://mps.csb.pitt.edu/:
   checked_at: '2026-10-03T21:05:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mrcieu.github.io/TwoSampleMR/:
   checked_at: '2026-10-02T21:40:26Z'

@@ -2854,6 +2854,26 @@ kgr:cfde-gse a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://gse.cfde.cloud/> .
 
+kgr:cgc a schema1:DataSource ;
+    rdfs:label "Caenorhabditis Genetics Center" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Caenorhabditis Genetics Center (CGC) collects, maintains and distributes genetic stocks (strains) of the nematode Caenorhabditis elegans and related species, aiming to hold a null mutation for every C. elegans gene along with strains that serve as genetic and molecular tools, such as chromosome rearrangements, endogenously tagged loci and expression tools. Each strain record gives the genotype, description, mutagen, outcrossing and provenance. The CGC is based at the University of Minnesota and funded by the NIH Office of Research Infrastructure Programs." ;
+    dcterms:identifier "cgc" ;
+    dcterms:isReferencedBy <doi:10.1073/pnas.2522808122> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:6237> ;
+    schema1:hasPart kgr:cgc.strain-list,
+        kgr:cgc.strain-search ;
+    schema1:name "Caenorhabditis Genetics Center" ;
+    skos:altLabel "CGC" ;
+    skos:inScheme "genetic variation",
+        "genomics",
+        "model organisms",
+        "organisms",
+        "phenotype" ;
+    adms:status "Active" ;
+    foaf:homepage <https://cgc.umn.edu/> .
+
 kgr:cgnc a schema1:DataSource ;
     rdfs:label "CGNC" ;
     dcterms:created "2025-03-24T00:00:00+00:00"^^xsd:dateTime ;
@@ -12531,7 +12551,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-03T20:55:35+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T21:13:02+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -27469,6 +27489,16 @@ kgr:cfde-gse.portal a schema1:GraphicalInterface ;
     rdfs:label "CFDE Gene Set Enrichment Portal" ;
     dcterms:description "Interactive web interface for cross-program gene set enrichment analysis across Common Fund datasets" ;
     schema1:url <https://gse.cfde.cloud/> .
+
+kgr:cgc.strain-list a schema1:Product ;
+    rdfs:label "CGC Strain List" ;
+    dcterms:description "Plain-text dump of all CGC strain records in a key/value record layout, with fields for strain, species, genotype, description, mutagen, outcrossed, made by and received." ;
+    schema1:url <https://cgc.umn.edu/static/cgc-strains.txt> .
+
+kgr:cgc.strain-search a schema1:GraphicalInterface ;
+    rdfs:label "CGC Strain Search" ;
+    dcterms:description "Web search over CGC strains by genotype, description, mutagen and maker, with strain pages and CSV export of full search results." ;
+    schema1:url <https://cgc.umn.edu/strain/search> .
 
 kgr:cgi-team a "Organization" ;
     rdfs:label "Cancer Genome Interpreter Team" .

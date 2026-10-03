@@ -34919,6 +34919,82 @@ resources:
   - category: Organization
     contact_details:
     - contact_type: email
+      value: cgc@umn.edu
+    - contact_type: url
+      value: https://cgc.umn.edu/
+    label: Caenorhabditis Genetics Center
+  creation_date: '2026-10-03T00:00:00Z'
+  description: The Caenorhabditis Genetics Center (CGC) collects, maintains and distributes
+    genetic stocks (strains) of the nematode Caenorhabditis elegans and related species,
+    aiming to hold a null mutation for every C. elegans gene along with strains that
+    serve as genetic and molecular tools, such as chromosome rearrangements, endogenously
+    tagged loci and expression tools. Each strain record gives the genotype, description,
+    mutagen, outcrossing and provenance. The CGC is based at the University of Minnesota
+    and funded by the NIH Office of Research Infrastructure Programs.
+  domains:
+  - model organisms
+  - organisms
+  - genetic variation
+  - genomics
+  - phenotype
+  homepage_url: https://cgc.umn.edu/
+  id: cgc
+  last_modified_date: '2026-10-03T00:00:00Z'
+  layout: resource_detail
+  name: Caenorhabditis Genetics Center
+  products:
+  - category: Product
+    description: Plain-text dump of all CGC strain records in a key/value record layout,
+      with fields for strain, species, genotype, description, mutagen, outcrossed,
+      made by and received.
+    format: txt
+    id: cgc.strain-list
+    name: CGC Strain List
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cgc
+    product_file_size: 18535807
+    product_url: https://cgc.umn.edu/static/cgc-strains.txt
+  - category: GraphicalInterface
+    description: Web search over CGC strains by genotype, description, mutagen and
+      maker, with strain pages and CSV export of full search results.
+    format: http
+    id: cgc.strain-search
+    name: CGC Strain Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cgc
+    product_url: https://cgc.umn.edu/strain/search
+  publications:
+  - authors:
+    - Victor R Ambros
+    - Martin Chalfie
+    - Aric L Daul
+    - Andrew Z Fire
+    - David H Hall
+    - H Robert Horvitz
+    - Craig C Mello
+    - Gary Ruvkun
+    - Nathan E Schroeder
+    - Paul W Sternberg
+    - Ann E Rougvie
+    doi: 10.1073/pnas.2522808122
+    id: doi:10.1073/pnas.2522808122
+    journal: Proceedings of the National Academy of Sciences
+    preferred: true
+    title: 'From nematode to Nobel: How community-shared resources fueled the rise
+      of Caenorhabditis elegans as a research organism'
+    year: '2025'
+  synonyms:
+  - CGC
+  taxon:
+  - NCBITaxon:6237
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
       value: agbase@email.arizona.edu
     label: CGNC
   creation_date: '2025-03-24T00:00:00Z'
@@ -191608,7 +191684,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-03T20:55:35Z'
+  last_modified_date: '2026-10-03T21:13:02Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
