@@ -5715,6 +5715,11 @@ https://api.catalogueoflife.org/:
   ok: true
   source: cache
   status_code: 200
+https://api.cellmodelpassports.sanger.ac.uk/swagger:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
 https://api.cellosaurus.org/:
   checked_at: '2026-10-02T21:37:20Z'
   error: null
@@ -7598,6 +7603,16 @@ https://cebs.niehs.nih.gov/cebs/support/download/Citing-CEBS.pdf:
   ok: true
   source: cache
   status_code: 200
+https://cellmodelpassports.sanger.ac.uk/:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cellmodelpassports.sanger.ac.uk/downloads:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
 https://cellular-semantics.github.io/CL_KG/:
   checked_at: '2026-10-02T21:38:23Z'
   error: null
@@ -7874,6 +7889,11 @@ https://cmapbq.readthedocs.io/:
   ok: true
   source: cache
   status_code: 200
+https://cmp.cog.sanger.ac.uk/download/GDSC2_fitted_dose_response_27Oct23.xlsx:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
 https://cns-iu.github.io/myaura/:
   checked_at: '2026-10-02T21:38:24Z'
   error: null
@@ -7897,6 +7917,36 @@ https://code.google.com/p/ontology-for-genetic-interval/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://cog.sanger.ac.uk/cmp/download/Project_Score2_fitness_scores_Sanger_v2_Broad_21Q2_20250624.zip:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cog.sanger.ac.uk/cmp/download/Proteomics_20250211.zip:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cog.sanger.ac.uk/cmp/download/mutations_all_20260724.zip:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
+  status_code: 200
+https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20260323.zip:
+  checked_at: '2026-10-03T18:50:00Z'
+  error: null
+  ok: true
   status_code: 200
 https://cohd-api.ci.transltr.io/:
   checked_at: '2026-10-02T21:38:24Z'
@@ -10419,6 +10469,7 @@ https://europepmc.org/:
   checked_at: '2026-10-03T17:32:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://evs.nci.nih.gov/ftp1/CDISC/ADaM/:
   checked_at: '2026-10-02T21:38:58Z'
@@ -11870,16 +11921,19 @@ https://ftp.ebi.ac.uk/pub/databases/pmc/:
   checked_at: '2026-10-03T17:32:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/pmc/TextMinedTerms/:
   checked_at: '2026-10-03T17:32:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/pmc/oa/:
   checked_at: '2026-10-03T17:32:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/spot/ols/:
   checked_at: '2026-10-02T21:39:05Z'
@@ -13031,6 +13085,7 @@ https://github.com/EuropePMC:
   checked_at: '2026-10-03T17:32:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/Exercise-Medicine-Ontology/EXMO:
   checked_at: '2026-10-02T21:39:10Z'
@@ -28926,16 +28981,19 @@ https://www.ebi.ac.uk/europepmc/GristAPI/rest/:
   checked_at: '2026-10-03T17:32:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 401
 https://www.ebi.ac.uk/europepmc/annotations_api/:
   checked_at: '2026-10-03T17:32:05Z'
   error: GET returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 https://www.ebi.ac.uk/europepmc/webservices/rest/:
   checked_at: '2026-10-03T17:32:05Z'
   error: GET returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 https://www.ebi.ac.uk/gene2phenotype/:
   checked_at: '2026-10-02T21:41:39Z'
