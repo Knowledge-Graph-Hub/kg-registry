@@ -1918,6 +1918,37 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: mbodymap
   product_url: https://www.graphomics.com/docs
+- category: GraphicalInterface
+  description: Europe PMC website for searching and reading life sciences literature,
+    including abstracts, full text, preprints, patents and theses, with SciLite text-mined
+    annotations and links to grants, data citations and database records.
+  format: http
+  id: europepmc.portal
+  name: Europe PMC Website
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: europepmc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  product_url: https://europepmc.org/
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/europepmc/webservices/rest/search
+  description: REST API for searching Europe PMC and retrieving article metadata,
+    abstracts, open access full text (XML), references, citations and database cross-references.
+  format: http
+  id: europepmc.rest-api
+  is_public: true
+  name: Europe PMC Articles RESTful API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: europepmc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  product_url: https://www.ebi.ac.uk/europepmc/webservices/rest/
 publications:
 - authors:
   - Eric W Sayers

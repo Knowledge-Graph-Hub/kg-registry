@@ -30,6 +30,21 @@ homepage_url: https://europepmc.org/
 id: europepmc
 last_modified_date: '2026-10-03T00:00:00Z'
 layout: resource_detail
+license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (permissive) among its sources: alphafold, brenda, cellosaurus, chebi.
+    Not accounted for, no known license: pmc.'
+  id: https://creativecommons.org/licenses/by/4.0/
+  inferred_from:
+  - alphafold
+  - brenda
+  - cellosaurus
+  - chebi
+  label: CC BY 4.0
+  restrictiveness: permissive
+  status: inferred
+  unresolved_sources:
+  - pmc
 name: Europe PMC
 products:
 - category: GraphicalInterface
@@ -129,6 +144,29 @@ products:
   - relation_type: prov:hadPrimarySource
     source: europepmc
   product_url: https://ftp.ebi.ac.uk/pub/databases/pmc/
+- category: GraphProduct
+  description: Every OnCo record in one JSON file, each with its plain-English summary,
+    technical summary, dated facts, relationship fields and source links.
+  format: json
+  id: onco.all_json
+  name: OnCo full corpus (JSON)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: onco
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: europepmc
+  - relation_type: prov:hadPrimarySource
+    source: openalex
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: wikidata
+  product_file_size: 31490277
+  product_url: https://onco.cc/api/v1/all.json
 publications:
 - authors:
   - Summer Rosonovski
