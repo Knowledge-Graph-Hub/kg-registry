@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: http://www.inbirg.com/organoid_db/
 id: organoiddb
-last_modified_date: '2026-10-02T00:00:00Z'
+last_modified_date: '2026-10-03T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.inbirg.com/organoid_db/
@@ -44,6 +44,8 @@ products:
         source: organoiddb
       - relation_type: prov:hadPrimarySource
         source: gene-expression-omnibus
+      - relation_type: prov:hadPrimarySource
+        source: arrayexpress
     product_file_size: 3258002
     product_url: http://www.inbirg.com/organoid_db/download/all_org_samples
   - category: Product
@@ -56,6 +58,8 @@ products:
         source: organoiddb
       - relation_type: prov:hadPrimarySource
         source: gene-expression-omnibus
+      - relation_type: prov:hadPrimarySource
+        source: arrayexpress
     product_file_size: 257601
     product_url: http://www.inbirg.com/organoid_db/download/org_specificity_samples
   - category: Product
@@ -68,6 +72,8 @@ products:
         source: organoiddb
       - relation_type: prov:hadPrimarySource
         source: gene-expression-omnibus
+      - relation_type: prov:hadPrimarySource
+        source: arrayexpress
     product_file_size: 94026
     product_url: http://www.inbirg.com/organoid_db/download/general_samples
 publications:

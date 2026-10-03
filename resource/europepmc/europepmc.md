@@ -32,16 +32,13 @@ last_modified_date: '2026-10-03T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (permissive) among its sources: alphafold, brenda, cellosaurus, chebi.
-    Not accounted for, no known license: pmc.'
-  id: https://creativecommons.org/licenses/by/4.0/
+    license (custom) among its sources: arrayexpress. Not accounted for, no known
+    license: pmc.'
+  id: https://www.ebi.ac.uk/about/terms-of-use
   inferred_from:
-  - alphafold
-  - brenda
-  - cellosaurus
-  - chebi
-  label: CC BY 4.0
-  restrictiveness: permissive
+  - arrayexpress
+  label: EMBL-EBI Terms of Use
+  restrictiveness: custom
   status: inferred
   unresolved_sources:
   - pmc
@@ -124,6 +121,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: europepmc
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
   - relation_type: prov:hadPrimarySource
     source: chebi
   - relation_type: prov:hadPrimarySource

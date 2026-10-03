@@ -77,6 +77,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
   product_url: https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/
 - category: Product
   description: Individual experiment data downloads in TSV format containing expression
@@ -87,6 +89,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
   product_url: https://www.ebi.ac.uk/gxa/download
 - category: Product
   description: Normalized gene expression data and raw count matrices delivered as R
@@ -99,6 +103,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
   product_url: https://bioconductor.org/packages/ExpressionAtlas/
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
@@ -109,6 +115,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
   product_url: https://www.ebi.ac.uk/gxa/baseline/experiments
 - category: Product
   description: Differential gene expression results across diseases, perturbations,
@@ -119,6 +127,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
   product_url: https://www.ebi.ac.uk/gxa/experiments?experimentType=differential
 - category: DocumentationProduct
   description: Comprehensive help documentation covering data access, analysis methods,

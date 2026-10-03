@@ -10,6 +10,8 @@ original_source:
   source: organoiddb
 - relation_type: prov:hadPrimarySource
   source: gene-expression-omnibus
+- relation_type: prov:hadPrimarySource
+  source: arrayexpress
 product_file_size: 257601
 product_url: http://www.inbirg.com/organoid_db/download/org_specificity_samples
 layout: product_detail
