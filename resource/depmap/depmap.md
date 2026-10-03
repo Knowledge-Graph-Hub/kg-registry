@@ -745,6 +745,56 @@ products:
     source: probe-miner
   product_file_size: 20140191116
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
+- category: MappingProduct
+  description: Annotated list of all cell line and organoid models with tissue, cancer
+    type (NCIt), clinical and patient annotation, and cross-references to Cellosaurus
+    RRIDs, COSMIC IDs, DepMap (Broad) IDs and CCLE names.
+  format: csv
+  id: cellmodelpassports.model_list
+  name: Cell Model Passports Model List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellmodelpassports
+  - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  product_file_size: 957555
+  product_url: https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv
+- category: Product
+  compression: zip
+  description: Processed RNA-seq gene expression for Sanger and Broad DepMap models,
+    merged into a single dataset.
+  format: csv
+  id: cellmodelpassports.rnaseq_merged
+  name: Cell Model Passports Merged RNA-seq Expression
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellmodelpassports
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_file_size: 1291769946
+  product_url: https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20260323.zip
+- category: Product
+  compression: zip
+  description: Project Score CRISPR knockout gene fitness scores for Sanger and Broad
+    DepMap (21Q2) cell line screens.
+  format: csv
+  id: cellmodelpassports.crispr_fitness_scores
+  name: Cell Model Passports CRISPR Fitness Scores
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellmodelpassports
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_file_size: 198873260
+  product_url: https://cog.sanger.ac.uk/cmp/download/Project_Score2_fitness_scores_Sanger_v2_Broad_21Q2_20250624.zip
 publications:
 - authors:
   - Meyers RM

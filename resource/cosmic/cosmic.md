@@ -846,6 +846,49 @@ products:
     source: medlineplus
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
+- category: MappingProduct
+  description: Annotated list of all cell line and organoid models with tissue, cancer
+    type (NCIt), clinical and patient annotation, and cross-references to Cellosaurus
+    RRIDs, COSMIC IDs, DepMap (Broad) IDs and CCLE names.
+  format: csv
+  id: cellmodelpassports.model_list
+  name: Cell Model Passports Model List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellmodelpassports
+  - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  product_file_size: 957555
+  product_url: https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv
+- category: MappingProduct
+  description: Gene identifier table mapping Cell Model Passports gene IDs to HGNC,
+    Ensembl, Entrez Gene, RefSeq, CCDS, COSMIC and UniProt identifiers.
+  format: csv
+  id: cellmodelpassports.gene_identifiers
+  name: Cell Model Passports Gene Identifiers
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellmodelpassports
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  product_file_size: 3873087
+  product_url: https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv
 publications:
 - authors:
   - Tate JG
