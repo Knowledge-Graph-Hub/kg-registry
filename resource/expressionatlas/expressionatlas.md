@@ -27,9 +27,10 @@ domains:
 - genomics
 - organisms
 - gene expression profiling
+- biomedical
 homepage_url: https://www.ebi.ac.uk/gxa/home
 id: expressionatlas
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-03T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -857,6 +858,18 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rapdb
   product_url: https://github.com/Knowledge-Graph-Hub/eco-kg
+- category: GraphProduct
+  description: RDF graph of the Gene Expression Atlas OKN knowledge graph, served
+    via the FRINK federated knowledge network.
+  format: ttl
+  id: gene-expression-atlas-okn.graph
+  name: Gene Expression Atlas OKN Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-atlas-okn
+  - relation_type: prov:wasDerivedFrom
+    source: expressionatlas
+  product_url: https://frink.apps.renci.org/gene-expression-atlas-okn
 publications:
 - authors:
   - Nancy George
@@ -933,6 +946,10 @@ Expression Atlas is EMBL-EBI's comprehensive knowledgebase for gene and protein 
 
 ### Multi-Species Coverage
 Expression Atlas covers over 40 different organisms including human, mouse, rat, and various plant species, with data from more than 4,500 studies encompassing over 160,000 assays.
+
+### Baseline and Differential Atlases
+- **Baseline Atlas**: where genes and proteins are expressed under normal conditions, across tissues, cell types and developmental stages
+- **Differential Atlas**: how expression changes between compared conditions, for example disease versus control or treatment versus control
 
 ### Dual Analysis Platforms
 - **Bulk Expression Atlas**: Traditional RNA-seq and microarray data analysis with baseline and differential expression results

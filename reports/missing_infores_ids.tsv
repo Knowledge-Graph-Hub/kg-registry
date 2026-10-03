@@ -89,6 +89,7 @@ cdc-svi	CDC/ATSDR Social Vulnerability Index	DataSource	https://www.atsdr.cdc.go
 cdd	Conserved Domain Database	DataSource	https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml	resource/cdd/cdd.md
 cdiscvocab	CDISC Controlled Terminology	Aggregator	https://www.cdisc.org/standards/terminology/controlled-terminology	resource/cdiscvocab/cdiscvocab.md
 cdno	Compositional Dietary Nutrition Ontology	Ontology	https://cdno.info/	resource/cdno/cdno.md
+cellmodelpassports	Cell Model Passports	DataSource	https://cellmodelpassports.sanger.ac.uk/	resource/cellmodelpassports/cellmodelpassports.md
 cellosaurus	Cellosaurus	DataSource	https://www.cellosaurus.org/	resource/cellosaurus/cellosaurus.md
 cellphonedb	CellPhoneDB	DataSource	https://www.cellphonedb.org/	resource/cellphonedb/cellphonedb.md
 cellxgene	CZ CELLxGENE	DataSource	https://cellxgene.cziscience.com/	resource/cellxgene/cellxgene.md

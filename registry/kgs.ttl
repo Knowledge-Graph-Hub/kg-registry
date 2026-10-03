@@ -2452,6 +2452,7 @@ kgr:ccle a schema1:DataSource ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:ccle.datasets,
         kgr:ccle.docs,
+        kgr:cellmodelpassports.model_list,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:indra.cogex.code,
@@ -2661,6 +2662,35 @@ kgr:cellmarker a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://bio-bigdata.hrbmu.edu.cn/CellMarker/> .
 
+kgr:cellmodelpassports a schema1:DataSource ;
+    rdfs:label "Cell Model Passports" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Cell Model Passports is a curated database of preclinical cancer models, including cell lines and organoids, run by the Wellcome Sanger Institute as part of the Cancer Dependency Map at Sanger. For each model it holds relationships to other models, patient and clinical annotation, and genomic and functional datasets including mutations, copy number, RNA-seq expression, methylation, proteomics, CRISPR knockout screens, drug response, gene fusions and growth rates." ;
+    dcterms:identifier "cellmodelpassports" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gky872> ;
+    dcterms:license <https://depmap.sanger.ac.uk/documentation/data-usage-policy/> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cellmodelpassports.api,
+        kgr:cellmodelpassports.crispr_fitness_scores,
+        kgr:cellmodelpassports.downloads,
+        kgr:cellmodelpassports.gdsc2_dose_response,
+        kgr:cellmodelpassports.gene_identifiers,
+        kgr:cellmodelpassports.model_list,
+        kgr:cellmodelpassports.mutations_all,
+        kgr:cellmodelpassports.portal,
+        kgr:cellmodelpassports.proteomics,
+        kgr:cellmodelpassports.rnaseq_merged ;
+    schema1:name "Cell Model Passports" ;
+    skos:altLabel "CMP" ;
+    skos:inScheme "biomedical",
+        "cancer",
+        "gene expression profiling",
+        "genomics",
+        "pharmacology",
+        "precision medicine" ;
+    adms:status "Active" ;
+    foaf:homepage <https://cellmodelpassports.sanger.ac.uk/> .
+
 kgr:cellosaurus a schema1:DataSource ;
     rdfs:label "Cellosaurus" ;
     dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
@@ -2671,6 +2701,7 @@ kgr:cellosaurus a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
+        kgr:cellmodelpassports.model_list,
         kgr:cellosaurus.api.rest,
         kgr:cellosaurus.api.sparql,
         kgr:cellosaurus.clastr,
@@ -4243,6 +4274,8 @@ kgr:cosmic a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:biomuta.dataset,
         kgr:bioteque.embeddings,
+        kgr:cellmodelpassports.gene_identifiers,
+        kgr:cellmodelpassports.model_list,
         kgr:cosmic.downloads,
         kgr:cosmic.kb.overview,
         kgr:cosmic.portal,
@@ -5240,6 +5273,9 @@ kgr:depmap a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:achilles.downloads,
         kgr:bioteque.embeddings,
+        kgr:cellmodelpassports.crispr_fitness_scores,
+        kgr:cellmodelpassports.model_list,
+        kgr:cellmodelpassports.rnaseq_merged,
         kgr:depmap.api,
         kgr:depmap.cell_line_info,
         kgr:depmap.cell_line_selector,
@@ -6955,6 +6991,7 @@ kgr:ensembl a schema1:DataSource ;
         kgr:archs4.zoo,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:cellmodelpassports.gene_identifiers,
         kgr:ensembl.api.perl,
         kgr:ensembl.api.rest,
         kgr:ensembl.biomart,
@@ -8477,6 +8514,7 @@ kgr:gdsc a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
+        kgr:cellmodelpassports.gdsc2_dose_response,
         kgr:depmap.drug_sensitivity,
         kgr:gdsc.site,
         kgr:harmonizome.downloads,
@@ -10240,6 +10278,7 @@ kgr:hgnc a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
+        kgr:cellmodelpassports.gene_identifiers,
         kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:gencode.human.gtf,
@@ -12473,7 +12512,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-03T17:26:20+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T18:44:15+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15366,6 +15405,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
+        kgr:cellmodelpassports.gene_identifiers,
         kgr:ctd.chem_gene_ixns,
         kgr:ctd.genes,
         kgr:ctd.genes_diseases,
@@ -15518,7 +15558,8 @@ kgr:ncit a schema1:Ontology ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/16697710> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:efo.obo,
+    schema1:hasPart kgr:cellmodelpassports.model_list,
+        kgr:efo.obo,
         kgr:efo.owl,
         kgr:genecards.web.interface,
         kgr:metabokg.graph,
@@ -24499,6 +24540,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:biogrid.identifiers,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cardiokg.neo4j,
+        kgr:cellmodelpassports.gene_identifiers,
         kgr:chembl.map_to_uniprot,
         kgr:ckg.graph,
         kgr:clinicalkg.graph,
@@ -27223,6 +27265,31 @@ kgr:cellmarker.singlecell a schema1:Product ;
     rdfs:label "Single Cell Markers" ;
     dcterms:description "CellMarker 2.0 marker dataset derived from single-cell sequencing studies in human and mouse" ;
     schema1:url <http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx> .
+
+kgr:cellmodelpassports.api a schema1:ProgrammingInterface ;
+    rdfs:label "Cell Model Passports API" ;
+    dcterms:description "JSON:API (v1.0) REST API for models, genes and datasets such as mutations, with Swagger documentation." ;
+    schema1:url <https://api.cellmodelpassports.sanger.ac.uk/swagger> .
+
+kgr:cellmodelpassports.downloads a schema1:Product ;
+    rdfs:label "Cell Model Passports Downloads" ;
+    dcterms:description "Downloads page listing current and archived bulk files of model annotation and processed genomic and functional datasets (model lists, mutations, copy number, expression, proteomics, CRISPR screens, drug response)." ;
+    schema1:url <https://cellmodelpassports.sanger.ac.uk/downloads> .
+
+kgr:cellmodelpassports.mutations_all a schema1:Product ;
+    rdfs:label "Cell Model Passports All Mutations" ;
+    dcterms:description "Combined somatic mutation calls from whole-exome, whole-genome and targeted sequencing of all models." ;
+    schema1:url <https://cog.sanger.ac.uk/cmp/download/mutations_all_20260724.zip> .
+
+kgr:cellmodelpassports.portal a schema1:GraphicalInterface ;
+    rdfs:label "Cell Model Passports Web Portal" ;
+    dcterms:description "Cell Model Passports web portal for searching and browsing cancer cell line and organoid models, their clinical annotation and available genomic and functional datasets." ;
+    schema1:url <https://cellmodelpassports.sanger.ac.uk/> .
+
+kgr:cellmodelpassports.proteomics a schema1:Product ;
+    rdfs:label "Cell Model Passports Proteomics" ;
+    dcterms:description "Processed protein abundance (proteomics) data for cancer cell line models." ;
+    schema1:url <https://cog.sanger.ac.uk/cmp/download/Proteomics_20250211.zip> .
 
 kgr:cellosaurus.api.rest a schema1:ProgrammingInterface ;
     rdfs:label "Cellosaurus API" ;
@@ -42553,6 +42620,21 @@ kgr:cardiokg.data a schema1:Product ;
     dcterms:description "CardioKG supporting data tables for anatomy and cardiac magnetic resonance anatomy mappings. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
     schema1:url <https://doi.org/10.5281/zenodo.16025953> .
 
+kgr:cellmodelpassports.crispr_fitness_scores a schema1:Product ;
+    rdfs:label "Cell Model Passports CRISPR Fitness Scores" ;
+    dcterms:description "Project Score CRISPR knockout gene fitness scores for Sanger and Broad DepMap (21Q2) cell line screens." ;
+    schema1:url <https://cog.sanger.ac.uk/cmp/download/Project_Score2_fitness_scores_Sanger_v2_Broad_21Q2_20250624.zip> .
+
+kgr:cellmodelpassports.gdsc2_dose_response a schema1:Product ;
+    rdfs:label "GDSC2 Fitted Dose Response" ;
+    dcterms:description "GDSC2 fitted drug dose response values (IC50, AUC) for cancer cell lines, distributed through the Cell Model Passports downloads." ;
+    schema1:url <https://cmp.cog.sanger.ac.uk/download/GDSC2_fitted_dose_response_27Oct23.xlsx> .
+
+kgr:cellmodelpassports.rnaseq_merged a schema1:Product ;
+    rdfs:label "Cell Model Passports Merged RNA-seq Expression" ;
+    dcterms:description "Processed RNA-seq gene expression for Sanger and Broad DepMap models, merged into a single dataset." ;
+    schema1:url <https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20260323.zip> .
+
 kgr:chea-kg.api a schema1:ProgrammingInterface ;
     rdfs:label "ChEA-KG API" ;
     dcterms:description "ChEA3 API endpoint for submitting gene sets and retrieving transcription factor enrichment results as JSON" ;
@@ -45898,6 +45980,16 @@ kgr:biogrid.identifiers a schema1:MappingProduct ;
     rdfs:label "BIOGRID-IDENTIFIERS-LATEST.tab.zip" ;
     dcterms:description "A single delimited text file format containing a list of mappings between different identifiers stored in BioGRID and the identifiers used in downloads." ;
     schema1:url <https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip> .
+
+kgr:cellmodelpassports.gene_identifiers a schema1:MappingProduct ;
+    rdfs:label "Cell Model Passports Gene Identifiers" ;
+    dcterms:description "Gene identifier table mapping Cell Model Passports gene IDs to HGNC, Ensembl, Entrez Gene, RefSeq, CCDS, COSMIC and UniProt identifiers." ;
+    schema1:url <https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv> .
+
+kgr:cellmodelpassports.model_list a schema1:MappingProduct ;
+    rdfs:label "Cell Model Passports Model List" ;
+    dcterms:description "Annotated list of all cell line and organoid models with tissue, cancer type (NCIt), clinical and patient annotation, and cross-references to Cellosaurus RRIDs, COSMIC IDs, DepMap (Broad) IDs and CCLE names." ;
+    schema1:url <https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv> .
 
 kgr:genecards.disease.associations a schema1:Product ;
     rdfs:label "GeneCards Disease Associations" ;
