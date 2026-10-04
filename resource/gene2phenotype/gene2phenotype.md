@@ -321,6 +321,12 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:hadPrimarySource
+    source: fooddata-central
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/39506859

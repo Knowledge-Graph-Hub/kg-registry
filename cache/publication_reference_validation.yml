@@ -2849,6 +2849,15 @@ entries:
     source_path: resource/foodb/foodb.md
     status: valid
     warnings: []
+  resource/fooddata-central/fooddata-central.md#publication[0]#DOI:10.1093/ajcn/nqab397:
+    checked_at: '2026-10-04T17:48:06Z'
+    errors: []
+    fingerprint: 33a9f7a9073053c4f449174cbb0dd655a16ab6f3fe39830b017d352b0c7173d1
+    publication_index: 0
+    reference_id: DOI:10.1093/ajcn/nqab397
+    source_path: resource/fooddata-central/fooddata-central.md
+    status: valid
+    warnings: []
   resource/foodon/foodon.md#publication[0]#PMID:31304272:
     checked_at: '2026-08-06T18:17:23Z'
     errors: []
@@ -3238,6 +3247,15 @@ entries:
     publication_index: 1
     reference_id: PMID:33290552
     source_path: resource/go/go.md
+    status: valid
+    warnings: []
+  resource/goldbook/goldbook.md#publication[0]#DOI:10.1351/goldbook:
+    checked_at: '2026-10-04T17:48:07Z'
+    errors: []
+    fingerprint: 741697346eda4250b731382441f83104ca70ea7cb4608492ba9c1646327a92c0
+    publication_index: 0
+    reference_id: DOI:10.1351/goldbook
+    source_path: resource/goldbook/goldbook.md
     status: valid
     warnings: []
   resource/gomapman/gomapman.md#publication[0]#PMID:24194592:
@@ -5193,6 +5211,24 @@ entries:
     source_path: resource/myaura/myaura.md
     status: valid
     warnings: []
+  resource/mydisease/mydisease.md#publication[0]#DOI:10.1093/bioinformatics/btac017:
+    checked_at: '2026-10-04T17:42:01Z'
+    errors: []
+    fingerprint: 28717f944df21e995f678455c3735b177505a4444ff32411f2c6566dbdaeb60e
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btac017
+    source_path: resource/mydisease/mydisease.md
+    status: valid
+    warnings: []
+  resource/myvariant/myvariant.md#publication[0]#DOI:10.1186/s13059-016-0953-9:
+    checked_at: '2026-10-04T17:48:05Z'
+    errors: []
+    fingerprint: b6eb2bbdbf9e25d7d933e8d220936b4237d6718ed718cbc47454b18aba3e9006
+    publication_index: 0
+    reference_id: DOI:10.1186/s13059-016-0953-9
+    source_path: resource/myvariant/myvariant.md
+    status: valid
+    warnings: []
   resource/nanopublications/nanopublications.md#publication[0]#DOI:10.3233/ds-170010:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6733,6 +6769,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1016/j.jmb.2023.168052
     source_path: resource/preppi/preppi.md
+    status: valid
+    warnings: []
+  resource/pride/pride.md#publication[0]#DOI:10.1093/nar/gkae1011:
+    checked_at: '2026-10-04T17:49:18Z'
+    errors: []
+    fingerprint: 76967eb946c8d32f3aaf46e934c803b6b93bfccc4158e1beaad826dfa65eb070
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1011
+    source_path: resource/pride/pride.md
+    status: valid
+    warnings: []
+  resource/pride/pride.md#publication[1]#DOI:10.1093/nar/gkab1038:
+    checked_at: '2026-10-04T17:49:18Z'
+    errors: []
+    fingerprint: dd445c08f9cab5fcde69b49d6cd623a0724ddba8eb61250857ae6851719886a9
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkab1038
+    source_path: resource/pride/pride.md
     status: valid
     warnings: []
   resource/prism/prism.md#publication[0]#DOI:10.1038/s43018-019-0018-6:

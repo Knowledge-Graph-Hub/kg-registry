@@ -10,6 +10,8 @@ name: goldbook OWL
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: goldbook
 product_file_size: 1783953
 product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.owl
 layout: product_detail
