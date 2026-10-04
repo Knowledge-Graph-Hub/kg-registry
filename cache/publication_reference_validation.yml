@@ -7971,6 +7971,15 @@ entries:
     source_path: resource/to/to.md
     status: valid
     warnings: []
+  resource/togows/togows.md#publication[0]#DOI:10.1093/nar/gkq386:
+    checked_at: '2026-10-03T23:27:52Z'
+    errors: []
+    fingerprint: e23a15664c95a06b6b501f56f7b624f0cdb84a167f3bb3034278176167bb02fd
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkq386
+    source_path: resource/togows/togows.md
+    status: valid
+    warnings: []
   resource/topmed/topmed.md#publication[0]#DOI:10.1038/s41586-021-03205-y:
     checked_at: '2026-06-22T16:29:13Z'
     errors: []

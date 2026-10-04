@@ -330,6 +330,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: ProgrammingInterface
+  connection_url: http://togows.org/api/ucsc
+  description: REST API over the public UCSC Genome Browser MySQL databases, for listing
+    genome assemblies, tables and columns, querying table rows by column values, and
+    retrieving genomic sequence ranges.
+  format: http
+  id: togows.ucsc-api
+  is_public: true
+  name: TogoWS UCSC API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: togows
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  product_url: http://togows.org/help/
 publications:
 - authors:
   - W. James Kent
