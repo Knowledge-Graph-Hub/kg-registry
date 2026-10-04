@@ -287,7 +287,7 @@ genophenoenvo-kg	GenoPhenoEnvo Knowledge Graph	KnowledgeGraph	https://github.com
 geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-entity-ontology/wiki	resource/geo/geo.md
 geoconnex	GEOCONNEX	KnowledgeGraph	https://docs.geoconnex.us/about/intro	resource/geoconnex/geoconnex.md
 geonames	GeoNames	DataSource	https://www.geonames.org/	resource/geonames/geonames.md
-gff	GFF	DataModel	http://www.sequenceontology.org/gff3.shtml	resource/gff/gff.md
+gff	GFF	DataModel	https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md	resource/gff/gff.md
 glkb	GLKB	DataSource	https://glkb.org/	resource/glkb/glkb.md
 globi	Global Biotic Interactions (GloBI)	KnowledgeGraph	https://www.globalbioticinteractions.org/	resource/globi/globi.md
 glycocoo	GlycoConjugate Ontology (GlycoCoO)	Ontology	https://github.com/glycoinfo/GlycoCoO	resource/glycocoo/glycocoo.md
@@ -625,7 +625,6 @@ pso	Plant Stress Ontology	Ontology	https://github.com/Planteome/plant-stress-ont
 psygenet	PsyGeNET	DataSource	https://www.psygenet.org/	resource/psygenet/psygenet.md
 ptmd	PTMD	DataSource	https://ptmd.biocuckoo.cn/	resource/ptmd/ptmd.md
 pubmed-knowledge-graph	PubMed Knowledge Graph	KnowledgeGraph	https://pubmedkg.github.io/	resource/pubmed-knowledge-graph/pubmed-knowledge-graph.md
-pubmedcentral	PubMed Central (PMC)	DataSource	https://pmc.ncbi.nlm.nih.gov/	resource/pubmedcentral/pubmedcentral.md
 pw	Pathway ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/search.html	resource/pw/pw.md
 pypi	Python Package Index (PyPI)	DataSource	https://pypi.org/	resource/pypi/pypi.md
 qptm	qPTM	DataSource	http://qptm.omicsbio.info/index.php	resource/qptm/qptm.md
