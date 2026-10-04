@@ -603,6 +603,15 @@ entries:
     source_path: resource/biomarker/biomarker.md
     status: valid
     warnings: []
+  resource/biomodels/biomodels.md#publication[0]#DOI:10.1093/nar/gkz1055:
+    checked_at: '2026-10-04T18:06:38Z'
+    errors: []
+    fingerprint: abf798fcc00d93fb66f03b89281b104b71df1cbb47c051bd2c2239fe6adee058
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkz1055
+    source_path: resource/biomodels/biomodels.md
+    status: valid
+    warnings: []
   resource/biomuta/biomuta.md#publication[0]#DOI:10.1093/nar/gkx907:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1707,6 +1716,24 @@ entries:
     source_path: resource/date/date.md
     status: valid
     warnings: []
+  resource/dbgap/dbgap.md#publication[0]#DOI:10.1038/ng1007-1181:
+    checked_at: '2026-10-04T18:06:37Z'
+    errors: []
+    fingerprint: b3975b2c8b4d71e1019b813f1aca17cedb82faa2762f597f3c5073234fb01f59
+    publication_index: 0
+    reference_id: DOI:10.1038/ng1007-1181
+    source_path: resource/dbgap/dbgap.md
+    status: valid
+    warnings: []
+  resource/dbgap/dbgap.md#publication[1]#DOI:10.1093/nar/gkt1211:
+    checked_at: '2026-10-04T18:06:37Z'
+    errors: []
+    fingerprint: b570222a0c326b4a25024dbe3f1693e990818db3a12d03f5b74599f6876595ce
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkt1211
+    source_path: resource/dbgap/dbgap.md
+    status: valid
+    warnings: []
   resource/dbpedia/dbpedia.md#publication[0]#DOI:10.1007/978-3-540-76298-0_52:
     checked_at: '2026-08-06T18:17:00Z'
     errors: []
@@ -2264,6 +2291,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/bioinformatics/btq099
     source_path: resource/efo/efo.md
+    status: valid
+    warnings: []
+  resource/ega/ega.md#publication[0]#DOI:10.1093/nar/gkab1059:
+    checked_at: '2026-10-04T18:06:36Z'
+    errors: []
+    fingerprint: 3ac06c3782393a1e453d5a170309990812aa6c37179ebaff2718f5a09c9e123d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkab1059
+    source_path: resource/ega/ega.md
     status: valid
     warnings: []
   resource/eggnog/eggnog.md#publication[0]#PMID:36399505:
@@ -4638,6 +4674,24 @@ entries:
     source_path: resource/metabokg/metabokg.md
     status: valid
     warnings: []
+  resource/metabolights/metabolights.md#publication[0]#DOI:10.1093/nar/gkad1045:
+    checked_at: '2026-10-04T17:59:21Z'
+    errors: []
+    fingerprint: 009555446425a5cead60ee6308d6f84d16a23d55d7d84eb8828a5caf4176b18c
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad1045
+    source_path: resource/metabolights/metabolights.md
+    status: valid
+    warnings: []
+  resource/metabolights/metabolights.md#publication[1]#DOI:10.1093/nar/gks1004:
+    checked_at: '2026-10-04T18:06:35Z'
+    errors: []
+    fingerprint: 44b357f89f4506e2e7458d8a0e8010f9bc5b0c612299a0112a3deab287d43535
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gks1004
+    source_path: resource/metabolights/metabolights.md
+    status: valid
+    warnings: []
   resource/metacyc/metacyc.md#publication[0]#PMID:31586394:
     checked_at: '2026-08-06T18:18:04Z'
     errors: []
@@ -6243,6 +6297,33 @@ entries:
     publication_index: 0
     reference_id: PMID:29186578
     source_path: resource/peco/peco.md
+    status: valid
+    warnings: []
+  resource/peptideatlas/peptideatlas.md#publication[0]#DOI:10.1093/nar/gkj040:
+    checked_at: '2026-10-04T18:06:32Z'
+    errors: []
+    fingerprint: 0699c0afc1df385b7f73a7b23942419b0024eb8a7868344ec3d09c09e71ba6ae
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkj040
+    source_path: resource/peptideatlas/peptideatlas.md
+    status: valid
+    warnings: []
+  resource/peptideatlas/peptideatlas.md#publication[1]#DOI:10.1038/embor.2008.56:
+    checked_at: '2026-10-04T18:06:33Z'
+    errors: []
+    fingerprint: 39461a448d8058ef1606b50c9b458e06e919de4b596554636b9f5e3c6c632699
+    publication_index: 1
+    reference_id: DOI:10.1038/embor.2008.56
+    source_path: resource/peptideatlas/peptideatlas.md
+    status: valid
+    warnings: []
+  resource/peptideatlas/peptideatlas.md#publication[2]#DOI:10.1016/j.cell.2016.06.041:
+    checked_at: '2026-10-04T18:06:34Z'
+    errors: []
+    fingerprint: 1bc07e8fd21c84506998a1c1de6f73a55318ac52234e7a0dfdfc0fbea3c91e02
+    publication_index: 2
+    reference_id: DOI:10.1016/j.cell.2016.06.041
+    source_path: resource/peptideatlas/peptideatlas.md
     status: valid
     warnings: []
   resource/petagraph/petagraph.md#publication[0]#DOI:10.1038/s41597-024-04070-w:
