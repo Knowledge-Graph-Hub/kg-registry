@@ -6220,6 +6220,7 @@ https://api.triplydb.com/datasets/ontotext/proton/download.ttl.gz:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://apollo2.chemistry.gatech.edu/AboutRiboVision2/Advanced_Features/:
   checked_at: '2026-10-02T21:37:22Z'
@@ -6933,6 +6934,7 @@ https://ars-prod.transltr.io/ars/api/:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ars-prod.transltr.io/ars/api/submit:
   checked_at: '2026-10-02T21:38:13Z'
@@ -7459,6 +7461,7 @@ https://bte.transltr.io/v1/team/Service%20Provider:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bugsigdb.org/:
   checked_at: '2026-10-02T21:38:20Z'
@@ -7476,6 +7479,7 @@ https://cacao.wiki/:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cam-kp-api-dev.renci.org/1.2.0/query:
   checked_at: '2026-05-19T18:50:20Z'
@@ -8072,6 +8076,11 @@ https://cohd.io/api:
   ok: false
   source: cache
   status_code: null
+https://commondatastorage.googleapis.com/freebase-public/rdf/freebase-rdf-latest.gz:
+  checked_at: '2026-10-04T13:19:25Z'
+  error: null
+  ok: true
+  status_code: 403
 https://compartments.jensenlab.org/:
   checked_at: '2026-10-02T21:38:25Z'
   error: GET returned HTTP 503
@@ -9295,6 +9304,11 @@ https://developer.imohealth.com/mcp-server:
   ok: false
   source: cache
   status_code: null
+https://developers.google.com/freebase:
+  checked_at: '2026-10-04T13:19:25Z'
+  error: null
+  ok: true
+  status_code: 200
 https://dgidb.org:
   checked_at: '2026-10-02T21:38:41Z'
   error: null
@@ -13859,6 +13873,7 @@ https://github.com/NCATSTranslator/Relay:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap:
   checked_at: '2026-10-02T21:39:14Z'
@@ -18681,6 +18696,7 @@ https://gowiki.tamu.edu/wiki/index.php/Category:CACAO:
     Read timed out. (read timeout=8.0); GET request failed: HTTPSConnectionPool(host=''gowiki.tamu.edu'',
     port=443): Read timed out. (read timeout=8.0)'
   ok: false
+  source: cache
   status_code: null
 https://graph.data.era.europa.eu/:
   checked_at: '2026-10-02T21:39:39Z'
@@ -24152,6 +24168,7 @@ https://retriever.transltr.io/:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rfam.org/:
   checked_at: '2026-10-02T21:40:56Z'
@@ -25505,6 +25522,16 @@ https://stko-kwg.geog.ucsb.edu/sparql:
   ok: false
   source: cache
   status_code: 500
+https://storage.googleapis.com/freebase-public/deleted_freebase.tar.gz:
+  checked_at: '2026-10-04T13:19:25Z'
+  error: null
+  ok: true
+  status_code: 403
+https://storage.googleapis.com/freebase-public/fb2w.nt.gz:
+  checked_at: '2026-10-04T13:19:25Z'
+  error: null
+  ok: true
+  status_code: 403
 https://storage.googleapis.com/translator-text-workflow-dev-public/:
   checked_at: '2026-10-02T21:41:06Z'
   error: null
@@ -26784,26 +26811,31 @@ https://w3id.org/biopragmatics/resources/goldbook/goldbook.json:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/goldbook/goldbook.obo:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/goldbook/goldbook.owl:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/goldbook/goldbook.sssom.tsv:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/gtdb/gtdb.json:
   checked_at: '2026-02-16T22:13:30Z'
@@ -29191,6 +29223,7 @@ https://www.ebi.ac.uk/QuickGO/annotations?assignedBy=CACAO:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/QuickGO/api/:
   checked_at: '2026-02-16T22:13:45Z'

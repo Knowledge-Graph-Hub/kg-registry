@@ -10,6 +10,7 @@ name: goldbook SSSOM
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obo-db-ingest
+product_file_size: 231373
 product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.sssom.tsv
 layout: product_detail
 ---

@@ -264,6 +264,7 @@ fma	Foundational Model of Anatomy Ontology (subset)	Ontology	http://si.washingto
 fobi	Food-Biomarker Ontology	Ontology	https://github.com/pcastellanoescuder/FoodBiomarkerOntology	resource/fobi/fobi.md
 forum	FORUM	KnowledgeGraph	https://forum-webapp.semantic-metabolomics.fr/	resource/forum/forum.md
 fovt	FuTRES Ontology of Vertebrate Traits	Ontology	https://github.com/futres/fovt	resource/fovt/fovt.md
+freebase	Freebase	KnowledgeGraph	https://developers.google.com/freebase	resource/freebase/freebase.md
 gad	Genetic Association Database	DataSource	https://geneticassociationdb.nih.gov/	resource/gad/gad.md
 gadm	GADM	DataSource	https://gadm.org/	resource/gadm/gadm.md
 gallont	Plant Gall Ontology	Ontology	https://adeans.github.io/gallont/	resource/gallont/gallont.md

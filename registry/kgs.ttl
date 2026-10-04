@@ -8546,6 +8546,25 @@ kgr:fovt a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/futres/fovt> .
 
+kgr:freebase a schema1:KnowledgeGraph ;
+    rdfs:label "Freebase" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Freebase was a large collaborative knowledge base of structured general knowledge, started by Metaweb Technologies in 2007 and acquired by Google in 2010. Its graph of topics, types and properties (about 1.9 billion triples in the final RDF dump) was used as a source for the Google Knowledge Graph and for many linked data and NLP projects. Freebase was shut down in 2016 and much of its content migrated to Wikidata. Google still documents the final data dumps, but the download links denied anonymous access when checked on 2026-10-04." ;
+    dcterms:identifier "freebase" ;
+    dcterms:isReferencedBy <doi:10.1145/1376616.1376746> ;
+    dcterms:license <https://creativecommons.org/licenses/by/2.5/> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:freebase.deleted-triples,
+        kgr:freebase.docs,
+        kgr:freebase.rdf,
+        kgr:freebase.wikidata-mappings,
+        kgr:proton.ontology ;
+    schema1:name "Freebase" ;
+    skos:altLabel "Metaweb Freebase" ;
+    skos:inScheme "general" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://developers.google.com/freebase> .
+
 kgr:fypo a schema1:Ontology ;
     rdfs:label "Fission Yeast Phenotype Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -12775,7 +12794,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-04T12:23:45+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T13:13:38+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -25833,6 +25852,7 @@ kgr:wikidata a schema1:KnowledgeGraph ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dbpedia.latest-core,
+        kgr:freebase.wikidata-mappings,
         kgr:identifier-mappings.graph,
         kgr:identifier-mappings.sparql,
         kgr:identifier-mappings.tpf,
@@ -31530,6 +31550,21 @@ kgr:fovt.owl a schema1:OntologyProduct ;
     rdfs:label "fovt.owl" ;
     dcterms:description "FuTRES Ontology of Vertebrate Traits in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/fovt.owl> .
+
+kgr:freebase.deleted-triples a schema1:Product ;
+    rdfs:label "Freebase Deleted Triples" ;
+    dcterms:description "One-time dump of about 63 million triples deleted from Freebase through March 2013, in a CSV-like format split across 20 files (about 2 GB compressed)." ;
+    schema1:url <https://storage.googleapis.com/freebase-public/deleted_freebase.tar.gz> .
+
+kgr:freebase.docs a schema1:DocumentationProduct ;
+    rdfs:label "Freebase Data Dumps Documentation" ;
+    dcterms:description "Google Developers page describing the Freebase data dumps, their formats and license terms, and how to cite them." ;
+    schema1:url <https://developers.google.com/freebase> .
+
+kgr:freebase.rdf a schema1:GraphProduct ;
+    rdfs:label "Freebase Triples" ;
+    dcterms:description "Final Freebase RDF dump with every fact in Freebase at shutdown, about 1.9 billion triples serialized as N-Triples (about 22 GB compressed, 250 GB uncompressed)." ;
+    schema1:url <https://commondatastorage.googleapis.com/freebase-public/rdf/freebase-rdf-latest.gz> .
 
 kgr:fypo.obo a schema1:OntologyProduct ;
     rdfs:label "fypo.obo" ;
@@ -42668,6 +42703,11 @@ kgr:fda a "Organization" ;
     rdfs:label "FDA Center for Drug Evaluation and Research",
         "FDA Substance Registration System Team" .
 
+kgr:freebase.wikidata-mappings a schema1:MappingProduct ;
+    rdfs:label "Freebase/Wikidata Mappings" ;
+    dcterms:description "About 2.1 million owl sameAs links between Freebase MIDs and Wikidata items, built from the Wikidata dump of 2013-10-28 using shared Wikipedia links, released under CC0." ;
+    schema1:url <https://storage.googleapis.com/freebase-public/fb2w.nt.gz> .
+
 kgr:gemscript.bulletin a schema1:DocumentationProduct ;
     rdfs:label "Gemscript Monthly Bulletin" ;
     dcterms:description "Monthly Gemscript bulletin summarizing additions, deletions, name changes, and drug class changes in the active dictionary" ;
@@ -45258,11 +45298,6 @@ kgr:proteomehd.uniprot_annotations a schema1:Product ;
     dcterms:description "Reviewed UniProt protein annotation file used in ProteomeHD analyses" ;
     schema1:url <https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/uniprot-all.7z> .
 
-kgr:proton.ontology a schema1:DocumentationProduct ;
-    rdfs:label "PROTON 3.0 Beta Specification" ;
-    dcterms:description "PDF specification of PROTON 3.0 Beta, describing the System, Top, Extent and Knowledge Management modules and their classes and properties." ;
-    schema1:url <https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf> .
-
 kgr:proton.top a schema1:OntologyProduct ;
     rdfs:label "PROTON Top Module" ;
     dcterms:description "PROTON Top module (version 3.0) in Turtle, as mirrored on TriplyDB, with core entity types such as Person, Location and Organization plus temporal, quantitative and abstract concepts." ;
@@ -46050,6 +46085,11 @@ kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges a schema1:GraphProduc
     rdfs:label "ProKN PIR Mouse Gene Product Edges" ;
     dcterms:description "PIR IMPC mouse gene has gene product protein edges" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.ImpcMouseGene.BIOLINK_HAS_GENE_PRODUCT.Protein.edges.csv> .
+
+kgr:proton.ontology a schema1:DocumentationProduct ;
+    rdfs:label "PROTON 3.0 Beta Specification" ;
+    dcterms:description "PDF specification of PROTON 3.0 Beta, describing the System, Top, Extent and Knowledge Management modules and their classes and properties." ;
+    schema1:url <https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf> .
 
 kgr:prsatlas.dryad a schema1:Product ;
     rdfs:label "PRS Atlas Dryad Archive" ;

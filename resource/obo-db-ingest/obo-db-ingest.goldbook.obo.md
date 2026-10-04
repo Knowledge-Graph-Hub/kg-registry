@@ -10,6 +10,7 @@ name: goldbook OBO
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obo-db-ingest
+product_file_size: 1560100
 product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.obo
 layout: product_detail
 ---

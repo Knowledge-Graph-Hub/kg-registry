@@ -10,6 +10,7 @@ name: goldbook Nodes TSV
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obo-db-ingest
+product_file_size: 977459
 product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv
 layout: product_detail
 ---
