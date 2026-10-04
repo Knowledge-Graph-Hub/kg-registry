@@ -1942,6 +1942,51 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+- category: Product
+  description: dictybase.gene OBO
+  format: obo
+  id: obo-db-ingest.dictybase.gene.obo
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: dictybase.gene OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  product_file_size: 235530
+  product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.obo
+- category: Product
+  description: dictybase.gene OWL
+  format: owl
+  id: obo-db-ingest.dictybase.gene.owl
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: dictybase.gene OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  product_file_size: 366700
+  product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.owl
+- category: Product
+  description: dictybase.gene OBO Graph JSON
+  format: json
+  id: obo-db-ingest.dictybase.gene.json
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: dictybase.gene OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  product_file_size: 306419
+  product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.json
 publications:
 - authors:
   - Basu S

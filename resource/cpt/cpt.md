@@ -79,6 +79,54 @@ products:
   warnings:
   - The knowledge graph content is proprietary and is not available as a public bulk
     download. Access requires a commercial agreement with IMO Health.
+- category: Product
+  description: cpt OBO
+  format: obo
+  id: obo-db-ingest.cpt.obo
+  name: cpt OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: cpt
+  product_file_size: 6117
+  product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.obo
+- category: Product
+  description: cpt OWL
+  format: owl
+  id: obo-db-ingest.cpt.owl
+  name: cpt OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: cpt
+  product_file_size: 7552
+  product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.owl
+- category: Product
+  description: cpt OBO Graph JSON
+  format: json
+  id: obo-db-ingest.cpt.json
+  name: cpt OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: cpt
+  product_file_size: 6848
+  product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.json
+- category: MappingProduct
+  description: cpt SSSOM
+  format: sssom
+  id: obo-db-ingest.cpt.sssom.tsv
+  name: cpt SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: cpt
+  product_file_size: 977
+  product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.sssom.tsv
 ---
 # Current Procedural Terminology
 

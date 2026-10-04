@@ -54,6 +54,69 @@ products:
         source: ror
     product_file_size: 5381101
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
+
+  - category: Product
+    description: ror OBO
+    format: obo
+    id: obo-db-ingest.ror.obo
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: ror OBO
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obo-db-ingest
+    - relation_type: prov:hadPrimarySource
+      source: ror
+    product_file_size: 9684743
+    product_url: https://w3id.org/biopragmatics/resources/ror/ror.obo
+  - category: Product
+    compression: gzip
+    description: ror OWL
+    format: owl
+    id: obo-db-ingest.ror.owl
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: ror OWL
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obo-db-ingest
+    - relation_type: prov:hadPrimarySource
+      source: ror
+    product_file_size: 14168326
+    product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl.gz
+  - category: Product
+    compression: gzip
+    description: ror OBO Graph JSON
+    format: json
+    id: obo-db-ingest.ror.json
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: ror OBO Graph JSON
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obo-db-ingest
+    - relation_type: prov:hadPrimarySource
+      source: ror
+    product_file_size: 13799938
+    product_url: https://w3id.org/biopragmatics/resources/ror/ror.json.gz
+  - category: MappingProduct
+    description: ror SSSOM
+    format: sssom
+    id: obo-db-ingest.ror.sssom.tsv
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: ror SSSOM
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obo-db-ingest
+    - relation_type: prov:hadPrimarySource
+      source: ror
+    product_file_size: 2333177
+    product_url: https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv
 ---
 
 # Research Organization Registry

@@ -7152,6 +7152,263 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+- category: GraphicalInterface
+  description: CACAO annotation competition platform (relaunched 2024), where students
+    create and review GO annotations.
+  format: http
+  id: cacao.portal
+  name: CACAO Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://cacao.wiki/
+- category: Product
+  description: GO annotations contributed by CACAO curators and distributed through
+    the Gene Ontology and GOA (assigned_by CACAO); browsable in QuickGO.
+  format: http
+  id: cacao.go-annotations
+  name: CACAO GO Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://www.ebi.ac.uk/QuickGO/annotations?assignedBy=CACAO
+- category: GraphicalInterface
+  description: Archived GONUTS wiki category for the original CACAO competitions (2010-2020).
+  format: http
+  id: cacao.gowiki
+  name: CACAO GO Wiki Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://gowiki.tamu.edu/wiki/index.php/Category:CACAO
+- category: ProgrammingInterface
+  connection_url: https://gowiki.tamu.edu/wiki/api.php
+  description: MediaWiki API endpoint for accessing CACAO and related GO Wiki content
+    programmatically.
+  format: http
+  id: cacao.api
+  is_public: true
+  name: GONUTS MediaWiki API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://gowiki.tamu.edu/wiki/api.php
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing definitions and descriptions
+    with gzip compression
+  format: txt
+  id: medgen.mgdef
+  name: MGDEF (Definitions)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 5305829
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+- category: Product
+  description: CSV format data files directory with additional data exports
+  format: csv
+  id: medgen.csv
+  name: CSV Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
+- category: ProgrammingInterface
+  description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,
+    querying the BioThings and other APIs registered to the team in SmartAPI.
+  format: http
+  id: service-kp.trapi
+  is_public: true
+  name: Service Provider TRAPI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: service-kp
+  - relation_type: prov:hadPrimarySource
+    source: biothings
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: bioplanet
+  - relation_type: prov:hadPrimarySource
+    source: ddinter
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: aeolus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://bte.transltr.io/v1/team/Service%20Provider
 publications:
 - authors:
   - Ashburner M

@@ -8,10 +8,12 @@ license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
 name: ror OWL
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: ror
 product_file_size: 14168326
 product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl.gz
 layout: product_detail
-original_source:
-  - source: obo-db-ingest
-    relation_type: prov:hadPrimarySource
 ---

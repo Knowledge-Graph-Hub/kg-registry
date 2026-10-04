@@ -3044,6 +3044,51 @@ products:
     source: wikipathways
   product_file_size: 3158
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/WIKIPATHWAYS.tar.gz
+- category: Product
+  description: wikipathways OBO
+  format: obo
+  id: obo-db-ingest.wikipathways.obo
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: wikipathways OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_file_size: 300327
+  product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.obo
+- category: Product
+  description: wikipathways OWL
+  format: owl
+  id: obo-db-ingest.wikipathways.owl
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: wikipathways OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_file_size: 495634
+  product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl
+- category: Product
+  description: wikipathways OBO Graph JSON
+  format: json
+  id: obo-db-ingest.wikipathways.json
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: wikipathways OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_file_size: 394845
+  product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json
 publications:
 - authors:
   - Agrawal A

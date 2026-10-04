@@ -22,32 +22,129 @@ license:
   label: MIT
 name: ARAGORN
 products:
-  - category: ProgrammingInterface
-    description: TRAPI-compliant API documentation for biomedical question answering
-    format: http
-    id: aragorn.api
-    name: ARAGORN API
-    original_source:
-      - source: aragorn
-        relation_type: prov:hadPrimarySource
-    product_url: https://aragorn.renci.org/docs
-  - category: GraphicalInterface
-    description: Web interface for querying ARAGORN
-    format: http
-    id: aragorn.ui
-    name: ARAGORN User Interface
-    original_source:
-      - source: aragorn
-        relation_type: prov:hadPrimarySource
-    product_url: https://ui.transltr.io/
+- category: ProgrammingInterface
+  description: TRAPI-compliant API documentation for biomedical question answering
+  format: http
+  id: aragorn.api
+  name: ARAGORN API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aragorn
+  product_url: https://aragorn.renci.org/docs
+- category: GraphicalInterface
+  description: Web interface for querying ARAGORN
+  format: http
+  id: aragorn.ui
+  name: ARAGORN User Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aragorn
+  product_url: https://ui.transltr.io/
+- category: GraphicalInterface
+  description: JSON index of the ARS production relay server and its registered agent
+    endpoints.
+  format: http
+  id: ars.portal
+  name: ARS Production Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/
+- category: ProgrammingInterface
+  connection_url: https://ars-prod.transltr.io/ars/api
+  description: TRAPI-compatible ARS endpoint for asynchronous query submission.
+  format: http
+  id: ars.api
+  is_public: true
+  name: ARS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/ars/api/
+- category: ProcessProduct
+  description: Source code and templates implementing Curated Query Service inference
+    logic.
+  format: http
+  id: cqs.code
+  name: CQS Source Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: rtx-kg2
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: text-mining-kp
+  - relation_type: prov:wasInformedBy
+    source: service-kp
+  - relation_type: prov:wasInformedBy
+    source: ctkp
+  - relation_type: prov:wasInformedBy
+    source: multiomics-kp
+  product_url: https://github.com/TranslatorSRI/CQS
+  warnings:
+  - As of 2026-10-04 no CQS deployment responded (the transltr.io production host
+    was unreachable; ci, test and RENCI dev hosts returned HTTP 404) and the repository
+    had no commits since 2024-11-15, although the ARS production configuration still
+    lists ara-cqs as an active agent.
 repository: https://github.com/ranking-agent/aragorn
 synonyms:
-  - ARAGORN
-  - Autonomous Relay Agent for Generation Of Ranked Networks
+- ARAGORN
+- Autonomous Relay Agent for Generation Of Ranked Networks
 tags:
-  - translator
+- translator
 ---
-
 # ARAGORN
 
 ## Overview

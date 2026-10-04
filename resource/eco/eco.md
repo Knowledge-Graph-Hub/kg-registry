@@ -571,6 +571,79 @@ products:
     source: eco
   product_file_size: 128184
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECO.tar.gz
+- category: GraphicalInterface
+  description: CACAO annotation competition platform (relaunched 2024), where students
+    create and review GO annotations.
+  format: http
+  id: cacao.portal
+  name: CACAO Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://cacao.wiki/
+- category: Product
+  description: GO annotations contributed by CACAO curators and distributed through
+    the Gene Ontology and GOA (assigned_by CACAO); browsable in QuickGO.
+  format: http
+  id: cacao.go-annotations
+  name: CACAO GO Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://www.ebi.ac.uk/QuickGO/annotations?assignedBy=CACAO
+- category: GraphicalInterface
+  description: Archived GONUTS wiki category for the original CACAO competitions (2010-2020).
+  format: http
+  id: cacao.gowiki
+  name: CACAO GO Wiki Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://gowiki.tamu.edu/wiki/index.php/Category:CACAO
+- category: ProgrammingInterface
+  connection_url: https://gowiki.tamu.edu/wiki/api.php
+  description: MediaWiki API endpoint for accessing CACAO and related GO Wiki content
+    programmatically.
+  format: http
+  id: cacao.api
+  is_public: true
+  name: GONUTS MediaWiki API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://gowiki.tamu.edu/wiki/api.php
 publications:
 - authors:
   - Nadendla S

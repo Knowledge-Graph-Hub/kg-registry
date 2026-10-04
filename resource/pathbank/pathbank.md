@@ -553,6 +553,69 @@ products:
     source: innatedb
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
+- category: Product
+  compression: gzip
+  description: pathbank OBO
+  format: obo
+  id: obo-db-ingest.pathbank.obo
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL-1.0
+  name: pathbank OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  product_file_size: 1849960
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz
+- category: Product
+  compression: gzip
+  description: pathbank OWL
+  format: owl
+  id: obo-db-ingest.pathbank.owl
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL-1.0
+  name: pathbank OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  product_file_size: 6878307
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl.gz
+- category: Product
+  compression: gzip
+  description: pathbank OBO Graph JSON
+  format: json
+  id: obo-db-ingest.pathbank.json
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL-1.0
+  name: pathbank OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  product_file_size: 8672175
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json.gz
+- category: MappingProduct
+  description: pathbank SSSOM
+  format: sssom
+  id: obo-db-ingest.pathbank.sssom.tsv
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL-1.0
+  name: pathbank SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  product_file_size: 570276
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.sssom.tsv
 publications:
 - authors:
   - David S Wishart

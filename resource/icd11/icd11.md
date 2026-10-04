@@ -518,6 +518,66 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: Product
+  description: icd11 OBO
+  format: obo
+  id: obo-db-ingest.icd11.obo
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
+    label: CC-BY-ND-3.0-IGO
+  name: icd11 OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  product_file_size: 4730644
+  product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.obo
+- category: Product
+  description: icd11 OWL
+  format: owl
+  id: obo-db-ingest.icd11.owl
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
+    label: CC-BY-ND-3.0-IGO
+  name: icd11 OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  product_file_size: 5693402
+  product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.owl
+- category: Product
+  description: icd11 OBO Graph JSON
+  format: json
+  id: obo-db-ingest.icd11.json
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
+    label: CC-BY-ND-3.0-IGO
+  name: icd11 OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  product_file_size: 5594646
+  product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.json
+- category: MappingProduct
+  description: icd11 SSSOM
+  format: sssom
+  id: obo-db-ingest.icd11.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
+    label: CC-BY-ND-3.0-IGO
+  name: icd11 SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  product_file_size: 297909
+  product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.sssom.tsv
 publications:
 - authors:
   - Harrison JE

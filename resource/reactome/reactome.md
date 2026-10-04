@@ -7308,6 +7308,187 @@ products:
   - relation_type: prov:hadPrimarySource
     source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+- category: Product
+  compression: zip
+  description: 'ZIP with two TSV files: Drug_target_reactome_pathway.tsv (611,655
+    rows) and Drug_target_reactome_pathway_filtered.tsv (238,317 rows, parent pathways
+    removed), with columns for expression dataset, drug name and STITCH ID, tissue,
+    cell line, target UniProt ID and symbol, target class, pathway and pathway size.'
+  dump_format: other
+  format: tsv
+  id: date.archive
+  name: DATE Archive ZIP
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: date
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_file_size: 7261526
+  product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
+- category: Product
+  description: reactome OBO
+  format: obo
+  id: obo-db-ingest.reactome.obo
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: reactome OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  product_file_size: 4695236
+  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
+- category: Product
+  compression: gzip
+  description: reactome OWL
+  format: owl
+  id: obo-db-ingest.reactome.owl
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: reactome OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  product_file_size: 5333931
+  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl.gz
+- category: Product
+  compression: gzip
+  description: reactome OBO Graph JSON
+  format: json
+  id: obo-db-ingest.reactome.json
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: reactome OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  product_file_size: 5919602
+  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json.gz
+- category: ProgrammingInterface
+  description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,
+    querying the BioThings and other APIs registered to the team in SmartAPI.
+  format: http
+  id: service-kp.trapi
+  is_public: true
+  name: Service Provider TRAPI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: service-kp
+  - relation_type: prov:hadPrimarySource
+    source: biothings
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: bioplanet
+  - relation_type: prov:hadPrimarySource
+    source: ddinter
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: aeolus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://bte.transltr.io/v1/team/Service%20Provider
 publications:
 - authors:
   - Marc Gillespie

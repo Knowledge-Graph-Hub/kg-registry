@@ -7,10 +7,12 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: sgd OBO
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: sgd
 product_file_size: 544985
 product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
 layout: product_detail
-original_source:
-  - source: obo-db-ingest
-    relation_type: prov:hadPrimarySource
 ---

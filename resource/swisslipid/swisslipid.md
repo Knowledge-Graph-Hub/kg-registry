@@ -439,6 +439,69 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- category: Product
+  compression: gzip
+  description: swisslipid OBO
+  format: obo
+  id: obo-db-ingest.swisslipid.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: swisslipid OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: swisslipid
+  product_file_size: 48029397
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo.gz
+- category: Product
+  compression: gzip
+  description: swisslipid OWL
+  format: owl
+  id: obo-db-ingest.swisslipid.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: swisslipid OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: swisslipid
+  product_file_size: 61858122
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl.gz
+- category: Product
+  compression: gzip
+  description: swisslipid OBO Graph JSON
+  format: json
+  id: obo-db-ingest.swisslipid.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: swisslipid OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: swisslipid
+  product_file_size: 53629121
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.json.gz
+- category: MappingProduct
+  description: swisslipid SSSOM
+  format: sssom
+  id: obo-db-ingest.swisslipid.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: swisslipid SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: swisslipid
+  product_file_size: 10965328
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv
 publications:
 - authors:
   - Aimo L

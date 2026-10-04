@@ -7,10 +7,12 @@ license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
 name: ror SSSOM
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: ror
 product_file_size: 2333177
 product_url: https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv
 layout: product_detail
-original_source:
-  - source: obo-db-ingest
-    relation_type: prov:hadPrimarySource
 ---

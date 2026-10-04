@@ -2579,6 +2579,231 @@ products:
   - relation_type: prov:hadPrimarySource
     source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+- category: Product
+  description: chembl.compound OBO
+  format: obo
+  id: obo-db-ingest.chembl.compound.obo
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.compound OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 5380016
+  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.obo
+- category: Product
+  description: chembl.compound OWL
+  format: owl
+  id: obo-db-ingest.chembl.compound.owl
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.compound OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 5800822
+  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.owl
+- category: Product
+  description: chembl.compound OBO Graph JSON
+  format: json
+  id: obo-db-ingest.chembl.compound.json
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.compound OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 5732141
+  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.json
+- category: MappingProduct
+  description: chembl.compound SSSOM
+  format: sssom
+  id: obo-db-ingest.chembl.compound.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.compound SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 767775
+  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.sssom.tsv
+- category: Product
+  description: chembl.target OBO
+  format: obo
+  id: obo-db-ingest.chembl.target.obo
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.target OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 387199
+  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.obo
+- category: Product
+  description: chembl.target OWL
+  format: owl
+  id: obo-db-ingest.chembl.target.owl
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.target OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 546755
+  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.owl
+- category: Product
+  description: chembl.target OBO Graph JSON
+  format: json
+  id: obo-db-ingest.chembl.target.json
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.target OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 495605
+  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.json
+- category: MappingProduct
+  description: chembl.target SSSOM
+  format: sssom
+  id: obo-db-ingest.chembl.target.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.target SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  product_file_size: 72721
+  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.sssom.tsv
+- category: ProgrammingInterface
+  description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,
+    querying the BioThings and other APIs registered to the team in SmartAPI.
+  format: http
+  id: service-kp.trapi
+  is_public: true
+  name: Service Provider TRAPI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: service-kp
+  - relation_type: prov:hadPrimarySource
+    source: biothings
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: bioplanet
+  - relation_type: prov:hadPrimarySource
+    source: ddinter
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: aeolus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://bte.transltr.io/v1/team/Service%20Provider
 publications:
 - authors:
   - Zdrazil B

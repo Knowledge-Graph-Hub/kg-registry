@@ -5445,6 +5445,336 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+- category: GraphicalInterface
+  description: CACAO annotation competition platform (relaunched 2024), where students
+    create and review GO annotations.
+  format: http
+  id: cacao.portal
+  name: CACAO Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://cacao.wiki/
+- category: Product
+  description: GO annotations contributed by CACAO curators and distributed through
+    the Gene Ontology and GOA (assigned_by CACAO); browsable in QuickGO.
+  format: http
+  id: cacao.go-annotations
+  name: CACAO GO Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://www.ebi.ac.uk/QuickGO/annotations?assignedBy=CACAO
+- category: GraphicalInterface
+  description: Archived GONUTS wiki category for the original CACAO competitions (2010-2020).
+  format: http
+  id: cacao.gowiki
+  name: CACAO GO Wiki Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://gowiki.tamu.edu/wiki/index.php/Category:CACAO
+- category: ProgrammingInterface
+  connection_url: https://gowiki.tamu.edu/wiki/api.php
+  description: MediaWiki API endpoint for accessing CACAO and related GO Wiki content
+    programmatically.
+  format: http
+  id: cacao.api
+  is_public: true
+  name: GONUTS MediaWiki API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cacao
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  product_url: https://gowiki.tamu.edu/wiki/api.php
+- category: Product
+  compression: zip
+  description: 'ZIP with two TSV files: Drug_target_reactome_pathway.tsv (611,655
+    rows) and Drug_target_reactome_pathway_filtered.tsv (238,317 rows, parent pathways
+    removed), with columns for expression dataset, drug name and STITCH ID, tissue,
+    cell line, target UniProt ID and symbol, target class, pathway and pathway size.'
+  dump_format: other
+  format: tsv
+  id: date.archive
+  name: DATE Archive ZIP
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: date
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_file_size: 7261526
+  product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
+- category: Product
+  compression: gzip
+  description: uniprot OBO
+  format: obo
+  id: obo-db-ingest.uniprot.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 25430978
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz
+- category: Product
+  compression: gzip
+  description: uniprot OWL
+  format: owl
+  id: obo-db-ingest.uniprot.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 36283492
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl.gz
+- category: Product
+  compression: gzip
+  description: uniprot OBO Graph JSON
+  format: json
+  id: obo-db-ingest.uniprot.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 38595991
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json.gz
+- category: MappingProduct
+  description: uniprot SSSOM
+  format: sssom
+  id: obo-db-ingest.uniprot.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 1503008
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom.tsv
+- category: Product
+  description: uniprot.ptm OBO
+  format: obo
+  id: obo-db-ingest.uniprot.ptm.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot.ptm OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 13150
+  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.obo
+- category: Product
+  description: uniprot.ptm OWL
+  format: owl
+  id: obo-db-ingest.uniprot.ptm.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot.ptm OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 19031
+  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.owl
+- category: Product
+  description: uniprot.ptm OBO Graph JSON
+  format: json
+  id: obo-db-ingest.uniprot.ptm.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot.ptm OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 17583
+  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.json
+- category: MappingProduct
+  description: uniprot.ptm SSSOM
+  format: sssom
+  id: obo-db-ingest.uniprot.ptm.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot.ptm SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 8833
+  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.sssom.tsv
+- category: ProgrammingInterface
+  description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,
+    querying the BioThings and other APIs registered to the team in SmartAPI.
+  format: http
+  id: service-kp.trapi
+  is_public: true
+  name: Service Provider TRAPI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: service-kp
+  - relation_type: prov:hadPrimarySource
+    source: biothings
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: bioplanet
+  - relation_type: prov:hadPrimarySource
+    source: ddinter
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: aeolus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://bte.transltr.io/v1/team/Service%20Provider
 publications:
 - authors:
   - Alex Bateman

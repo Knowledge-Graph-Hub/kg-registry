@@ -7,8 +7,28 @@ id: ars.api
 is_public: true
 name: ARS API
 original_source:
-  - source: ars
-    relation_type: prov:hadPrimarySource
-product_url: https://ars-prod.transltr.io/ars/api/submit
+- relation_type: prov:hadPrimarySource
+  source: ars
+- relation_type: prov:wasInformedBy
+  source: aragorn
+- relation_type: prov:wasInformedBy
+  source: arax
+- relation_type: prov:wasInformedBy
+  source: cqs
+- relation_type: prov:wasInformedBy
+  source: molepro
+- relation_type: prov:wasInformedBy
+  source: cam-kp
+- relation_type: prov:wasInformedBy
+  source: openpredict
+- relation_type: prov:wasInformedBy
+  source: cohd
+- relation_type: prov:wasInformedBy
+  source: icees-kg
+- relation_type: prov:wasInformedBy
+  source: genetics-kp
+- relation_type: prov:wasInformedBy
+  source: connections-hypothesis-kp
+product_url: https://ars-prod.transltr.io/ars/api/
 layout: product_detail
 ---

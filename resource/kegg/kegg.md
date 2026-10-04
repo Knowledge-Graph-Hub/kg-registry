@@ -94,6 +94,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: kegg
   product_file_size: 198714
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.obo
 - category: Product
@@ -107,6 +109,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: kegg
   product_file_size: 192384
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.owl
 - category: Product
@@ -120,6 +124,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: kegg
   product_file_size: 20525
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
 - category: GraphicalInterface

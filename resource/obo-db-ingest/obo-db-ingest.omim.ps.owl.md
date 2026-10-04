@@ -7,10 +7,12 @@ license:
   id: https://www.omim.org/help/agreement
   label: Custom
 name: omim.ps OWL
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: omim
 product_file_size: 13894
 product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.owl
 layout: product_detail
-original_source:
-  - source: obo-db-ingest
-    relation_type: prov:hadPrimarySource
 ---

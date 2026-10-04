@@ -5,11 +5,13 @@ format: txt
 id: medgen.ordo-history
 name: ORDO CUI History
 original_source:
-  - source: medgen
-    relation_type: prov:hadPrimarySource
-  - source: orphanet
-    relation_type: prov:hadPrimarySource
-product_file_size: 1130936
+- relation_type: prov:hadPrimarySource
+  source: medgen
+- relation_type: prov:hadPrimarySource
+  source: orphanet
+- relation_type: prov:hadPrimarySource
+  source: ordo
+product_file_size: 1131602
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt
 layout: product_detail
 ---

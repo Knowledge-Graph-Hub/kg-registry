@@ -151,11 +151,71 @@ products:
   name: ncbi.gc Nodes TSV
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: ncbi.gc
+    source: ncbi
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
   product_file_size: 531
   product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv
+- category: Product
+  description: ncbi.gc OBO
+  format: obo
+  id: obo-db-ingest.ncbi.gc.obo
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: ncbi.gc OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_file_size: 1425
+  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.obo
+- category: Product
+  description: ncbi.gc OWL
+  format: owl
+  id: obo-db-ingest.ncbi.gc.owl
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: ncbi.gc OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_file_size: 2223
+  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.owl
+- category: Product
+  description: ncbi.gc OBO Graph JSON
+  format: json
+  id: obo-db-ingest.ncbi.gc.json
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: ncbi.gc OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_file_size: 1886
+  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.json
+- category: MappingProduct
+  description: ncbi.gc SSSOM
+  format: sssom
+  id: obo-db-ingest.ncbi.gc.sssom.tsv
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: ncbi.gc SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_file_size: 191
+  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv
 ---
 # National Center for Biotechnology Information
 

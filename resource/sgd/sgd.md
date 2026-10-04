@@ -1723,6 +1723,51 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+- category: Product
+  description: sgd OBO
+  format: obo
+  id: obo-db-ingest.sgd.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: sgd OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  product_file_size: 544985
+  product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
+- category: Product
+  description: sgd OWL
+  format: owl
+  id: obo-db-ingest.sgd.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: sgd OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  product_file_size: 680487
+  product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
+- category: Product
+  description: sgd OBO Graph JSON
+  format: json
+  id: obo-db-ingest.sgd.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: sgd OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  product_file_size: 628568
+  product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.json
 publications:
 - authors:
   - Cherry JM

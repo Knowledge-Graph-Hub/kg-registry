@@ -1017,6 +1017,66 @@ products:
     source: genetics-kp
   product_file_size: 2127877
   product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+- category: Product
+  description: depmap OBO
+  format: obo
+  id: obo-db-ingest.depmap.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: depmap OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_file_size: 34421
+  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.obo
+- category: Product
+  description: depmap OWL
+  format: owl
+  id: obo-db-ingest.depmap.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: depmap OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_file_size: 45537
+  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.owl
+- category: Product
+  description: depmap OBO Graph JSON
+  format: json
+  id: obo-db-ingest.depmap.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: depmap OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_file_size: 42021
+  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.json
+- category: MappingProduct
+  description: depmap SSSOM
+  format: sssom
+  id: obo-db-ingest.depmap.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: depmap SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_file_size: 16632
+  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv
 publications:
 - authors:
   - Meyers RM

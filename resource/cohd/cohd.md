@@ -191,6 +191,102 @@ products:
   - relation_type: prov:wasInformedBy
     source: ubergraph
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/COHD_Automat/
+- category: GraphicalInterface
+  description: JSON index of the ARS production relay server and its registered agent endpoints.
+  format: http
+  id: ars.portal
+  name: ARS Production Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/
+- category: ProgrammingInterface
+  connection_url: https://ars-prod.transltr.io/ars/api
+  description: TRAPI-compatible ARS endpoint for asynchronous query submission.
+  format: http
+  id: ars.api
+  is_public: true
+  name: ARS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/ars/api/
+- category: ProcessProduct
+  description: Source code and templates implementing Curated Query Service inference logic.
+  format: http
+  id: cqs.code
+  name: CQS Source Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: rtx-kg2
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: text-mining-kp
+  - relation_type: prov:wasInformedBy
+    source: service-kp
+  - relation_type: prov:wasInformedBy
+    source: ctkp
+  - relation_type: prov:wasInformedBy
+    source: multiomics-kp
+  product_url: https://github.com/TranslatorSRI/CQS
+  warnings:
+  - As of 2026-10-04 no CQS deployment responded (the transltr.io production host was unreachable;
+    ci, test and RENCI dev hosts returned HTTP 404) and the repository had no commits since
+    2024-11-15, although the ARS production configuration still lists ara-cqs as an active
+    agent.
 repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 publications:
 - authors:

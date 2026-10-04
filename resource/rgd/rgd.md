@@ -1033,6 +1033,68 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+- category: Product
+  description: rgd OBO
+  format: obo
+  id: obo-db-ingest.rgd.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: rgd OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  product_file_size: 3728799
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.obo
+- category: Product
+  compression: gzip
+  description: rgd OWL
+  format: owl
+  id: obo-db-ingest.rgd.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: rgd OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  product_file_size: 6347162
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.owl.gz
+- category: Product
+  compression: gzip
+  description: rgd OBO Graph JSON
+  format: json
+  id: obo-db-ingest.rgd.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: rgd OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  product_file_size: 4392993
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.json.gz
+- category: MappingProduct
+  description: rgd SSSOM
+  format: sssom
+  id: obo-db-ingest.rgd.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: rgd SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  product_file_size: 632341
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv
 publications:
 - authors:
   - Smith JR

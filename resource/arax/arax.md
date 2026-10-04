@@ -36,52 +36,120 @@ last_modified_date: '2026-09-16T00:00:00Z'
 layout: resource_detail
 name: ARAX Translator Reasoner
 products:
-  - category: ProgrammingInterface
-    description: TRAPI-compliant API endpoint for programmatic access to ARAX reasoning capabilities. Supports v1.3+ of the Translator Reasoner API standard. Provides /query, /asyncquery, and /entity endpoints.
-    format: http
-    id: arax.api
-    name: ARAX TRAPI API
-    original_source:
-      - source: arax
-        relation_type: prov:hadPrimarySource
-    product_url: https://arax.ncats.io/api/arax/v1.4/ui/
-  - category: GraphicalInterface
-    description: Web browser interface for querying ARAX and exploring answers. Provides interactive visual query graph builder, TRAPI operations input, TRAPI JSON input, and ARAXi workflow language input methods.
-    format: http
-    id: arax.ui
-    name: ARAX Web UI
-    original_source:
-      - source: arax
-        relation_type: prov:hadPrimarySource
-    product_url: https://arax.ncats.io/
-  - category: DocumentationProduct
-    description: ARAXi domain-specific language documentation for expressing knowledge graph analysis workflows.
-    format: markdown
-    id: arax.araxi.docs
-    name: ARAXi Documentation
-    original_source:
-      - source: arax
-        relation_type: prov:hadPrimarySource
-    product_file_size: 12191
-    product_url: https://github.com/RTXteam/RTX/blob/master/code/ARAX/Documentation/DSL_Documentation.md
-  - category: ProgrammingInterface
-    description: Source code repository for ARAX and the RTX system including ARAX-specific modules and RTX-KG2 knowledge graph.
-    format: python
-    id: arax.github
-    name: RTX GitHub Repository
-    original_source:
-      - source: arax
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/RTXteam/RTX
-  - category: DocumentationProduct
-    description: Example queries and workflows demonstrating ARAX capabilities for various translational biomedicine use cases.
-    format: mixed
-    id: arax.examples
-    name: ARAX Examples
-    original_source:
-      - source: arax
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/RTXteam/RTX/tree/master/code/ARAX/Examples
+- category: ProgrammingInterface
+  description: TRAPI-compliant API endpoint for programmatic access to ARAX reasoning
+    capabilities. Supports v1.3+ of the Translator Reasoner API standard. Provides
+    /query, /asyncquery, and /entity endpoints.
+  format: http
+  id: arax.api
+  name: ARAX TRAPI API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: arax
+  product_url: https://arax.ncats.io/api/arax/v1.4/ui/
+- category: GraphicalInterface
+  description: Web browser interface for querying ARAX and exploring answers. Provides
+    interactive visual query graph builder, TRAPI operations input, TRAPI JSON input,
+    and ARAXi workflow language input methods.
+  format: http
+  id: arax.ui
+  name: ARAX Web UI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: arax
+  product_url: https://arax.ncats.io/
+- category: DocumentationProduct
+  description: ARAXi domain-specific language documentation for expressing knowledge
+    graph analysis workflows.
+  format: markdown
+  id: arax.araxi.docs
+  name: ARAXi Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: arax
+  product_file_size: 12191
+  product_url: https://github.com/RTXteam/RTX/blob/master/code/ARAX/Documentation/DSL_Documentation.md
+- category: ProgrammingInterface
+  description: Source code repository for ARAX and the RTX system including ARAX-specific
+    modules and RTX-KG2 knowledge graph.
+  format: python
+  id: arax.github
+  name: RTX GitHub Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: arax
+  product_url: https://github.com/RTXteam/RTX
+- category: DocumentationProduct
+  description: Example queries and workflows demonstrating ARAX capabilities for various
+    translational biomedicine use cases.
+  format: mixed
+  id: arax.examples
+  name: ARAX Examples
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: arax
+  product_url: https://github.com/RTXteam/RTX/tree/master/code/ARAX/Examples
+- category: GraphicalInterface
+  description: JSON index of the ARS production relay server and its registered agent
+    endpoints.
+  format: http
+  id: ars.portal
+  name: ARS Production Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/
+- category: ProgrammingInterface
+  connection_url: https://ars-prod.transltr.io/ars/api
+  description: TRAPI-compatible ARS endpoint for asynchronous query submission.
+  format: http
+  id: ars.api
+  is_public: true
+  name: ARS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/ars/api/
 publications:
 - authors:
   - Amy K Glen

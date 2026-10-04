@@ -184,11 +184,133 @@ products:
   name: geonames.feature Nodes TSV
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: geonames.feature
+    source: geonames
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
   product_file_size: 20951
   product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.tsv
+- category: Product
+  description: geonames OBO
+  format: obo
+  id: obo-db-ingest.geonames.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: geonames OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  product_file_size: 1082501
+  product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.obo
+- category: Product
+  description: geonames OWL
+  format: owl
+  id: obo-db-ingest.geonames.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: geonames OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  product_file_size: 1720320
+  product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.owl
+- category: Product
+  description: geonames OBO Graph JSON
+  format: json
+  id: obo-db-ingest.geonames.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: geonames OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  product_file_size: 1475667
+  product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.json
+- category: Product
+  description: geonames.feature OBO
+  format: obo
+  id: obo-db-ingest.geonames.feature.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: geonames.feature OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  product_file_size: 22380
+  product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.obo
+- category: Product
+  description: geonames.feature OWL
+  format: owl
+  id: obo-db-ingest.geonames.feature.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: geonames.feature OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  product_file_size: 28833
+  product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.owl
+- category: Product
+  description: geonames.feature OBO Graph JSON
+  format: json
+  id: obo-db-ingest.geonames.feature.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: geonames.feature OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  product_file_size: 28938
+  product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.json
+- category: DocumentationProduct
+  description: PDF specification of PROTON 3.0 Beta, describing the System, Top, Extent
+    and Knowledge Management modules and their classes and properties.
+  format: pdf
+  id: proton.ontology
+  is_public: true
+  name: PROTON 3.0 Beta Specification
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proton
+  - relation_type: prov:wasInfluencedBy
+    source: geonames
+  product_file_size: 725192
+  product_url: https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf
+  warnings:
+  - Could not be retrieved when checked on 2026-10-04 because the Ontotext site served
+    a CAPTCHA page instead of the file.
+- category: OntologyProduct
+  compression: gzip
+  description: PROTON Top module (version 3.0) in Turtle, as mirrored on TriplyDB,
+    with core entity types such as Person, Location and Organization plus temporal,
+    quantitative and abstract concepts.
+  format: ttl
+  id: proton.top
+  is_public: true
+  name: PROTON Top Module
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proton
+  - relation_type: prov:wasInfluencedBy
+    source: geonames
+  product_url: https://api.triplydb.com/datasets/ontotext/proton/download.ttl.gz
 ---
 # GeoNames
 

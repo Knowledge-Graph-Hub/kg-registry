@@ -11,6 +11,8 @@ name: swisslipid OBO
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: swisslipid
 product_file_size: 48029397
 product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo.gz
 layout: product_detail
