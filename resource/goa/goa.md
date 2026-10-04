@@ -250,11 +250,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: gene2phenotype
   - relation_type: prov:hadPrimarySource
-    source: geneticskp
+    source: genetics-kp
   - relation_type: prov:hadPrimarySource
     source: go-cam
   - relation_type: prov:hadPrimarySource

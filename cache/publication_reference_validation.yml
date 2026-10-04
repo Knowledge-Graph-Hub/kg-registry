@@ -1244,15 +1244,6 @@ entries:
     source_path: resource/civic/civic.md
     status: valid
     warnings: []
-  resource/ckg/ckg.md#publication[0]#DOI:10.1038/s41587-021-01145-6:
-    checked_at: '2026-06-12T20:32:32Z'
-    errors: []
-    fingerprint: fd95073f94a0c1bc9e25a399c312187c34f6e37b3cdc14d8037730b4a30c157d
-    publication_index: 0
-    reference_id: DOI:10.1038/s41587-021-01145-6
-    source_path: resource/ckg/ckg.md
-    status: valid
-    warnings: []
   resource/cl/cl.md#publication[0]#PMID:27377652:
     checked_at: '2026-08-06T18:16:49Z'
     errors: []
@@ -1299,6 +1290,15 @@ entries:
     source_path: resource/clinicalkg/clinicalkg.md
     status: valid
     warnings: []
+  resource/clinicalkg/clinicalkg.md#publication[1]#DOI:10.1038/s41587-021-01145-6:
+    checked_at: '2026-10-04T03:29:50Z'
+    errors: []
+    fingerprint: fd95073f94a0c1bc9e25a399c312187c34f6e37b3cdc14d8037730b4a30c157d
+    publication_index: 1
+    reference_id: DOI:10.1038/s41587-021-01145-6
+    source_path: resource/clinicalkg/clinicalkg.md
+    status: valid
+    warnings: []
   resource/clinicaltrialsgov/clinicaltrialsgov.md#publication[0]#PMID:21366476:
     checked_at: '2026-06-22T16:53:31Z'
     errors: []
@@ -1341,6 +1341,15 @@ entries:
     fingerprint: efef9c668369549986b7648d027ac5cd09d9b1dfdcb80764dad299e90fb3d7ca
     publication_index: 0
     reference_id: DOI:10.1016/j.cell.2017.10.049
+    source_path: resource/cmap/cmap.md
+    status: valid
+    warnings: []
+  resource/cmap/cmap.md#publication[1]#DOI:10.1126/science.1132939:
+    checked_at: '2026-10-04T03:29:46Z'
+    errors: []
+    fingerprint: 906f362376636641d03be7b97184dc73535165953201f7016972c9894d01a401
+    publication_index: 1
+    reference_id: DOI:10.1126/science.1132939
     source_path: resource/cmap/cmap.md
     status: valid
     warnings: []
@@ -1432,15 +1441,6 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/nar/gku975
     source_path: resource/complexportal/complexportal.md
-    status: valid
-    warnings: []
-  resource/connectivitymap/connectivitymap.md#publication[0]#DOI:10.1126/science.1132939:
-    checked_at: '2026-08-06T18:16:55Z'
-    errors: []
-    fingerprint: 906f362376636641d03be7b97184dc73535165953201f7016972c9894d01a401
-    publication_index: 0
-    reference_id: DOI:10.1126/science.1132939
-    source_path: resource/connectivitymap/connectivitymap.md
     status: valid
     warnings: []
   resource/cord-19/cord-19.md#publication[0]#PMID:32510522:
@@ -2101,30 +2101,21 @@ entries:
     source_path: resource/drugmechdb/drugmechdb.md
     status: valid
     warnings: []
-  resource/drugrephub/drugrephub.md#publication[0]#DOI:10.1038/nm.4306:
-    checked_at: '2026-06-12T20:32:32Z'
-    errors: []
-    fingerprint: d9e0519864d588cf4f01071a24bd1adedb24d9f80ac645766453738bb7959530
-    publication_index: 0
-    reference_id: DOI:10.1038/nm.4306
-    source_path: resource/drugrephub/drugrephub.md
-    status: valid
-    warnings: []
-  resource/dsstox/dsstox.md#publication[0]#DOI:10.1186/s13321-017-0247-6:
-    checked_at: '2026-06-12T20:32:32Z'
-    errors: []
-    fingerprint: 7f4c0723d14e5cc347304d714ff65a753a58ef9783b1dddf0abb74c368df8d0c
-    publication_index: 0
-    reference_id: DOI:10.1186/s13321-017-0247-6
-    source_path: resource/dsstox/dsstox.md
-    status: valid
-    warnings: []
   resource/dsstoxdb/dsstoxdb.md#publication[0]#PMID:33426407:
     checked_at: '2026-08-06T18:17:11Z'
     errors: []
     fingerprint: 9d42b7156c887dd0845541e307b74e794c750675b58c01b73873e15bb9c223d7
     publication_index: 0
     reference_id: PMID:33426407
+    source_path: resource/dsstoxdb/dsstoxdb.md
+    status: valid
+    warnings: []
+  resource/dsstoxdb/dsstoxdb.md#publication[1]#DOI:10.1186/s13321-017-0247-6:
+    checked_at: '2026-10-04T03:29:54Z'
+    errors: []
+    fingerprint: b8b8843f7f4bbd453aca259db01927cdb7ea84894e3602bf42d3fe8083775add
+    publication_index: 1
+    reference_id: DOI:10.1186/s13321-017-0247-6
     source_path: resource/dsstoxdb/dsstoxdb.md
     status: valid
     warnings: []
@@ -2956,7 +2947,7 @@ entries:
     status: valid
     warnings: []
   resource/gene2phenotype/gene2phenotype.md#publication[0]#PMID:39506859:
-    checked_at: '2026-10-04T02:36:28Z'
+    checked_at: '2026-10-04T03:38:18Z'
     errors: []
     fingerprint: 947e995312837fcbf190a95bcb6177e484c3e2c7f277b03b1abb3a25d459db6a
     publication_index: 0
@@ -2964,9 +2955,9 @@ entries:
     source_path: resource/gene2phenotype/gene2phenotype.md
     status: warning
     warnings:
-    - PMID:39506859 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_39506859.md
+    - PMID:39506859 has no cached reference at references_cache/PMID_39506859.md
   resource/gene2phenotype/gene2phenotype.md#publication[1]#PMID:31147538:
-    checked_at: '2026-10-04T02:36:28Z'
+    checked_at: '2026-10-04T03:38:18Z'
     errors: []
     fingerprint: c8e2e49f7b17d26f8c9e7fa373735db02ab14925fbc985aa83c841a39b8f0aac
     publication_index: 1
@@ -2974,7 +2965,7 @@ entries:
     source_path: resource/gene2phenotype/gene2phenotype.md
     status: warning
     warnings:
-    - PMID:31147538 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_31147538.md
+    - PMID:31147538 has no cached reference at references_cache/PMID_31147538.md
   resource/genebass/genebass.md#publication[0]#DOI:10.1016/j.xgen.2022.100168:
     checked_at: '2026-06-22T16:26:48Z'
     errors: []
@@ -3589,7 +3580,7 @@ entries:
     status: valid
     warnings: []
   resource/hubmap/hubmap.md#publication[0]#DOI:10.1038/s41592-025-02120-1:
-    checked_at: '2026-10-04T02:36:28Z'
+    checked_at: '2026-10-04T03:40:02Z'
     errors: []
     fingerprint: 2c87855a1d9096ddc1123fbfbdc5784aae2352e0ee873f0b87fc96faf79f2fee
     publication_index: 0
@@ -3597,9 +3588,9 @@ entries:
     source_path: resource/hubmap/hubmap.md
     status: warning
     warnings:
-    - DOI:10.1038/s41592-025-02120-1 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1038_s41592-025-02120-1.md
+    - DOI:10.1038/s41592-025-02120-1 has no cached reference at references_cache/DOI_10.1038_s41592-025-02120-1.md
   resource/hubmap/hubmap.md#publication[1]#DOI:10.1038/s41592-024-02497-x:
-    checked_at: '2026-10-04T02:36:28Z'
+    checked_at: '2026-10-04T03:40:02Z'
     errors: []
     fingerprint: ed5aff45bf2c393ec930b5ebdc91e9555d25d495ccf32794879cbcb890df6233
     publication_index: 1
@@ -3607,7 +3598,7 @@ entries:
     source_path: resource/hubmap/hubmap.md
     status: warning
     warnings:
-    - DOI:10.1038/s41592-024-02497-x has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1038_s41592-024-02497-x.md
+    - DOI:10.1038/s41592-024-02497-x has no cached reference at references_cache/DOI_10.1038_s41592-024-02497-x.md
   resource/humancyc/humancyc.md#publication[0]#DOI:10.1186/gb-2004-6-1-r2:
     checked_at: '2026-08-06T18:17:45Z'
     errors: []
@@ -8035,7 +8026,7 @@ entries:
     status: valid
     warnings: []
   resource/translator/translator.md#publication[0]#PMID:30412337:
-    checked_at: '2026-10-04T02:36:28Z'
+    checked_at: '2026-10-04T03:45:24Z'
     errors: []
     fingerprint: 73fd96eb54eb7957e9979209714f352f5ee341dec7365c1b43e01613c695bbe2
     publication_index: 0
@@ -8043,9 +8034,9 @@ entries:
     source_path: resource/translator/translator.md
     status: warning
     warnings:
-    - PMID:30412337 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_30412337.md
+    - PMID:30412337 has no cached reference at references_cache/PMID_30412337.md
   resource/translator/translator.md#publication[1]#PMID:30412340:
-    checked_at: '2026-10-04T02:36:28Z'
+    checked_at: '2026-10-04T03:45:24Z'
     errors: []
     fingerprint: 913a6e530a66a6fd49a59ec112af8a52710e3e66428617086af3a9f2c8f5bd17
     publication_index: 1
@@ -8053,7 +8044,7 @@ entries:
     source_path: resource/translator/translator.md
     status: warning
     warnings:
-    - PMID:30412340 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_30412340.md
+    - PMID:30412340 has no cached reference at references_cache/PMID_30412340.md
   resource/treatkb/treatkb.md#publication[0]#DOI:10.1186/1471-2105-14-181:
     checked_at: '2026-08-06T18:19:13Z'
     errors: []

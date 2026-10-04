@@ -196,7 +196,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource
@@ -276,7 +276,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource

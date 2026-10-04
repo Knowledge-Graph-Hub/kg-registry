@@ -219,7 +219,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugbank
   - relation_type: prov:hadPrimarySource
-    source: dsstox
+    source: dsstoxdb
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -271,7 +271,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugbank
   - relation_type: prov:hadPrimarySource
-    source: dsstox
+    source: dsstoxdb
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -316,7 +316,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biogps
   - relation_type: prov:hadPrimarySource
-    source: connectivitymap
+    source: cmap
   - relation_type: prov:hadPrimarySource
     source: drugbank
   - relation_type: prov:hadPrimarySource
@@ -1458,11 +1458,11 @@ products:
     catalog numbers, SMILES, InChIKey, and PubChem IDs (listed as version 2025-08-19
     on the site).
   format: tsv
-  id: drugrephub.sample-info.tsv
+  id: repohub.sample-info.tsv
   name: Drug Repurposing Hub Sample Information TSV
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   product_file_size: 4072927
   product_url: https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt
   secondary_source:
@@ -2464,7 +2464,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource
@@ -2544,7 +2544,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource

@@ -2,11 +2,11 @@
 category: DocumentationProduct
 description: Documentation for the DSSTox database
 format: docx
-id: dsstox.description
+id: dsstoxdb.description
 name: DSSToxDB Description
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: dsstox
+  source: dsstoxdb
 product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
 warnings:
 - File was not able to be retrieved when checked on 2026-10-04_ HTTP 404 error when

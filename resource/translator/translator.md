@@ -295,7 +295,7 @@ products:
   node_count: 8842
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: translator
   product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
@@ -370,7 +370,7 @@ products:
   node_count: 28023
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: geneticskp
+    source: genetics-kp
   - relation_type: prov:hadPrimarySource
     source: translator
   product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
@@ -717,11 +717,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: gene2phenotype
   - relation_type: prov:hadPrimarySource
-    source: geneticskp
+    source: genetics-kp
   - relation_type: prov:hadPrimarySource
     source: go-cam
   - relation_type: prov:hadPrimarySource
@@ -834,11 +834,11 @@ products:
 - category: ProgrammingInterface
   description: Translator Reasoner API endpoint for Genetics KP.
   format: http
-  id: geneticskp.trapi
+  id: genetics-kp.trapi
   name: Genetics KP TRAPI Endpoint
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: geneticskp
+    source: genetics-kp
   - relation_type: prov:hadPrimarySource
     source: translator
   product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/
@@ -924,18 +924,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: translator
   product_url: https://smart-api.info/registry?q=e51073371d7049b9643e1edbdd61bcbd
-- category: DocumentationProduct
-  description: Translator wiki overview for Genetics KP, including team contacts,
-    public API entrypoint, upstream data resources, and method references.
-  format: http
-  id: geneticskp.docs
-  name: Genetics KP Documentation
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: geneticskp
-  - relation_type: prov:hadPrimarySource
-    source: translator
-  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 publications:
 - authors:
   - The Biomedical Data Translator Consortium

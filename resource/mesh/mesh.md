@@ -141,7 +141,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugbank
   - relation_type: prov:hadPrimarySource
-    source: dsstox
+    source: dsstoxdb
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -193,7 +193,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugbank
   - relation_type: prov:hadPrimarySource
-    source: dsstox
+    source: dsstoxdb
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -318,7 +318,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biogps
   - relation_type: prov:hadPrimarySource
-    source: connectivitymap
+    source: cmap
   - relation_type: prov:hadPrimarySource
     source: drugbank
   - relation_type: prov:hadPrimarySource

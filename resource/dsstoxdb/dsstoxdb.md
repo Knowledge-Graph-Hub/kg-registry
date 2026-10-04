@@ -1,6 +1,12 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: EPA_ComptoxTools@epa.gov
+  label: EPA CCTE
 creation_date: '2025-11-19T00:00:00Z'
 description: EPA's Distributed Structure-Searchable Toxicity (DSSTox) database provides
   high-quality chemical and chemistry data underpinning several publicly available
@@ -18,10 +24,11 @@ domains:
 - toxicology
 - chemistry and biochemistry
 - environment
+- biomedical
 homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 id: dsstoxdb
 infores_id: dsstoxdb
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -70,6 +77,28 @@ products:
   - relation_type: prov:hadPrimarySource
     source: dsstoxdb
   product_url: https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis
+- category: ProgrammingInterface
+  description: Public API for programmatic access to DSSTox data
+  format: http
+  id: dsstoxdb.chemical-api
+  is_public: true
+  name: CompTox API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  product_url: https://comptox.epa.gov/ctx-api/docs/chemical.html
+- category: DocumentationProduct
+  description: Documentation for the DSSTox database
+  format: docx
+  id: dsstoxdb.description
+  name: DSSToxDB Description
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -141,7 +170,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource
@@ -221,7 +250,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource
@@ -230,6 +259,110 @@ products:
     source: probe-miner
   product_file_size: 20140191116
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
+  - relation_type: prov:hadPrimarySource
+    source: aop-db
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://alzkb.ai:7473/login
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  format: mixed
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
+  - relation_type: prov:hadPrimarySource
+    source: aop-db
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hetionet
 publications:
 - authors:
   - Grulke CM
@@ -243,6 +376,24 @@ publications:
   title: 'EPA''s DSSTox database: History of development of a curated chemistry resource
     supporting computational toxicology research'
   year: '2019'
+- authors:
+  - Williams AJ
+  - Grulke CM
+  - Edwards J
+  - McEachran AD
+  - Mansouri K
+  - Baker NC
+  - Patlewicz G
+  - Shah I
+  - Wambaugh JF
+  - Judson RS
+  - Richard AM
+  doi: 10.1186/s13321-017-0247-6
+  id: doi:10.1186/s13321-017-0247-6
+  journal: Journal of Cheminformatics
+  title: 'The CompTox Chemistry Dashboard: a community data resource for environmental
+    chemistry'
+  year: '2017'
 ---
 # Distributed Structure-Searchable Toxicity (DSSTox) Database
 

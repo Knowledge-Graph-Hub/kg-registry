@@ -14,7 +14,7 @@ license:
 name: Translator Genetics KP KGX Graph
 node_count: 28023
 original_source:
-  - source: geneticskp
+  - source: genetics-kp
     relation_type: prov:hadPrimarySource
   - source: translator
     relation_type: prov:hadPrimarySource
