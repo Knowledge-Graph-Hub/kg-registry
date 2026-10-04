@@ -299,7 +299,8 @@ kgr:aeolus a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:aeolus.standardized_data ;
+    schema1:hasPart kgr:aeolus.standardized_data,
+        kgr:service-kp.trapi ;
     schema1:identifier "aeolus" ;
     schema1:name "Adverse Event Open Learning through Universal Standardization (AEOLUS)" ;
     skos:altLabel "AEOLUS" ;
@@ -475,6 +476,7 @@ kgr:alliance a schema1:Aggregator ;
         kgr:kg-monarch.graph.neo4j.edges,
         kgr:kg-monarch.graph.neo4j.nodes,
         kgr:kg-monarch.graph.rdf,
+        kgr:service-kp.trapi,
         kgr:sri-reference-kg.graph,
         kgr:translator.alliance.graph,
         kgr:translator.translator_kg.graph ;
@@ -768,7 +770,10 @@ kgr:aragorn a schema1:Aggregator ;
     dcterms:license <https://opensource.org/license/mit/> ;
     dcterms:modified "2026-06-01T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:aragorn.api,
-        kgr:aragorn.ui ;
+        kgr:aragorn.ui,
+        kgr:ars.api,
+        kgr:ars.portal,
+        kgr:cqs.code ;
     schema1:identifier "aragorn" ;
     schema1:name "ARAGORN" ;
     doap:repository <https://github.com/ranking-agent/aragorn> ;
@@ -823,7 +828,9 @@ kgr:arax a schema1:Aggregator ;
         kgr:arax.araxi.docs,
         kgr:arax.examples,
         kgr:arax.github,
-        kgr:arax.ui ;
+        kgr:arax.ui,
+        kgr:ars.api,
+        kgr:ars.portal ;
     schema1:identifier "arax" ;
     schema1:name "ARAX Translator Reasoner" ;
     skos:altLabel "ARAX",
@@ -903,6 +910,8 @@ kgr:arrayexpress a schema1:DataSource ;
         kgr:expressionatlas.experiment-downloads,
         kgr:expressionatlas.ftp-bulk,
         kgr:expressionatlas.r-objects,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:organoiddb.all-organoid-samples,
         kgr:organoiddb.general-samples,
         kgr:organoiddb.organoid-specificity-samples ;
@@ -915,16 +924,18 @@ kgr:arrayexpress a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.ebi.ac.uk/biostudies/arrayexpress> .
 
-kgr:ars a schema1:DataSource ;
+kgr:ars a schema1:Aggregator ;
     rdfs:label "Autonomous Relay System" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Autonomous Relay System (ARS) is the primary interface and query routing service for the NCATS Biomedical Data Translator, orchestrating queries across multiple knowledge providers and reasoning agents." ;
     dcterms:identifier "ars" ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ars.api,
         kgr:ars.portal ;
     schema1:identifier "ars" ;
     schema1:name "Autonomous Relay System" ;
+    doap:repository <https://github.com/NCATSTranslator/Relay> ;
     skos:altLabel "ARS",
         "Translator ARS" ;
     skos:inScheme "biomedical" ;
@@ -1456,6 +1467,7 @@ kgr:bindingdb a schema1:DataSource ;
         kgr:pharmebinet.tsv,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:translator.bindingdb.graph,
@@ -1731,6 +1743,7 @@ kgr:biogps a schema1:Aggregator ;
         kgr:biogps.downloads,
         kgr:biogps.faq,
         kgr:biogps.portal,
+        kgr:date.archive,
         kgr:genecards.expression.data,
         kgr:genecards.web.interface,
         kgr:harmonizome.downloads,
@@ -1945,7 +1958,8 @@ kgr:bioplanet a schema1:DataSource ;
     dcterms:identifier "bioplanet" ;
     dcterms:isReferencedBy <doi:10.3389/fphar.2019.00445> ;
     dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:bioplanet.data ;
+    schema1:hasPart kgr:bioplanet.data,
+        kgr:service-kp.trapi ;
     schema1:identifier "bioplanet" ;
     schema1:name "BioPlanet" ;
     skos:inScheme "pathways",
@@ -2000,7 +2014,9 @@ kgr:biostudies a schema1:DataSource ;
         kgr:biostudies.ftp,
         kgr:biostudies.portal,
         kgr:biostudies.submission,
-        kgr:europepmc.textmined-terms ;
+        kgr:europepmc.textmined-terms,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal ;
     schema1:name "BioStudies" ;
     doap:repository <https://github.com/EBIBioStudies> ;
     skos:inScheme "general",
@@ -2041,7 +2057,10 @@ kgr:biothings a schema1:DataSource ;
     schema1:hasPart kgr:biothings.api-specs,
         kgr:biothings.portal,
         kgr:biothings.sdk,
-        kgr:gtrx.api ;
+        kgr:gtrx.api,
+        kgr:service-kp.code,
+        kgr:service-kp.portal,
+        kgr:service-kp.trapi ;
     schema1:name "BioThings" ;
     doap:repository <https://github.com/biothings/biothings.api> ;
     skos:inScheme "biomedical",
@@ -2284,19 +2303,25 @@ kgr:cabi-isc a schema1:DataSource ;
     foaf:homepage <https://www.cabidigitallibrary.org/product/qi> .
 
 kgr:cacao a schema1:DataSource ;
-    rdfs:label "Community Assessment of Community Annotation with Ontologies" ;
+    rdfs:label "CACAO" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "CACAO (Community Assessment of Community Annotation with Ontologies) was a collaborative annotation project where undergraduate students used the Gene Ontology to annotate proteins based on evidence from scientific papers. The project appears to be inactive as the website is no longer accessible." ;
+    dcterms:description "CACAO is a Gene Ontology annotation competition from Texas A&M University in which students curate GO annotations for UniProt proteins from published papers, with evidence codes from the Evidence and Conclusion Ontology. Run from 2010 to 2020 as the Community Assessment of Community Annotation with Ontologies on the GONUTS wiki, it relaunched in 2024 as Creating Annotations through Critical Analysis of Original research at cacao.wiki. Accepted annotations are contributed to the Gene Ontology Consortium; QuickGO lists 4,373 annotations assigned by CACAO." ;
     dcterms:identifier "cacao" ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkr907>,
+        <doi:10.1371/journal.pcbi.1009463> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cacao.api,
-        kgr:cacao.gowiki ;
+        kgr:cacao.go-annotations,
+        kgr:cacao.gowiki,
+        kgr:cacao.portal ;
     schema1:identifier "cacao" ;
-    schema1:name "Community Assessment of Community Annotation with Ontologies" ;
-    skos:altLabel "CACAO" ;
+    schema1:name "CACAO" ;
+    skos:altLabel "CACAO",
+        "Community Assessment of Community Annotation with Ontologies",
+        "Creating Annotations through Critical Analysis of Original research" ;
     skos:inScheme "genomics" ;
-    adms:status "Inactive" ;
-    foaf:homepage <http://gowiki.tamu.edu/wiki/index.php/Category:CACAO> .
+    adms:status "Active" ;
+    foaf:homepage <https://cacao.wiki/> .
 
 kgr:cam-kp a schema1:KnowledgeGraph ;
     rdfs:label "CAM-KP (Causal Activity Models Knowledge Provider)" ;
@@ -2309,14 +2334,17 @@ kgr:cam-kp a schema1:KnowledgeGraph ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
-    schema1:hasPart kgr:automat.camkp,
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:automat.camkp,
         kgr:cam-kp.api,
         kgr:cam-kp.automat,
         kgr:cam-kp.ctd-interactions,
         kgr:cam-kp.documentation,
         kgr:cam-kp.go-cams,
         kgr:cam-kp.reactome-cams,
-        kgr:cam-kp.sparql ;
+        kgr:cam-kp.sparql,
+        kgr:cqs.code ;
     schema1:identifier "cam-kp" ;
     schema1:name "CAM-KP (Causal Activity Models Knowledge Provider)" ;
     doap:repository <https://github.com/ExposuresProvider/cam-kp-api> ;
@@ -3079,6 +3107,7 @@ kgr:chebi a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:skm.ckn.v1.annotations,
         kgr:skm.ckn.v1.graph,
         kgr:skm.ckn.v2.annotations,
@@ -3172,7 +3201,15 @@ kgr:chembl a schema1:DataSource ;
         kgr:molepro.trapi,
         kgr:mps-db.portal,
         kgr:ncatsgardkg.graph,
+        kgr:obo-db-ingest.chembl.compound.json,
+        kgr:obo-db-ingest.chembl.compound.obo,
+        kgr:obo-db-ingest.chembl.compound.owl,
+        kgr:obo-db-ingest.chembl.compound.sssom.tsv,
         kgr:obo-db-ingest.chembl.compound.tsv,
+        kgr:obo-db-ingest.chembl.target.json,
+        kgr:obo-db-ingest.chembl.target.obo,
+        kgr:obo-db-ingest.chembl.target.owl,
+        kgr:obo-db-ingest.chembl.target.sssom.tsv,
         kgr:obo-db-ingest.chembl.target.tsv,
         kgr:pharmdb.graph,
         kgr:pubchem.substances.asn,
@@ -3180,6 +3217,7 @@ kgr:chembl a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:stitch.api,
@@ -3451,7 +3489,12 @@ kgr:civic a schema1:DataSource ;
         kgr:civic.data.variants,
         kgr:civic.site,
         kgr:genecards.web.interface,
+        kgr:obo-db-ingest.civic.gid.json,
+        kgr:obo-db-ingest.civic.gid.obo,
+        kgr:obo-db-ingest.civic.gid.owl,
+        kgr:obo-db-ingest.civic.gid.sssom.tsv,
         kgr:obo-db-ingest.civic.gid.tsv,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph ;
     schema1:identifier "civic" ;
@@ -3605,6 +3648,7 @@ kgr:clingen a schema1:DataSource ;
         kgr:kg-monarch.graph.rdf,
         kgr:litvar.api,
         kgr:litvar.web_interface,
+        kgr:service-kp.trapi,
         kgr:sri-reference-kg.graph,
         kgr:translator.geneticskp.graph,
         kgr:ubkg.csv,
@@ -3732,7 +3776,9 @@ kgr:clinpgx a schema1:Resource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:clinpgx.api,
         kgr:clinpgx.downloads,
-        kgr:clinpgx.portal ;
+        kgr:clinpgx.portal,
+        kgr:medgen.csv,
+        kgr:medgen.mgdef ;
     schema1:name "ClinPGx" ;
     skos:inScheme "biomedical",
         "chemistry and biochemistry",
@@ -3793,6 +3839,7 @@ kgr:clinvar a schema1:DataSource ;
         kgr:pubchem.substances.sdf,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
+        kgr:service-kp.trapi,
         kgr:sniff.federation-edges,
         kgr:sniff.federation-nodes,
         kgr:sri-reference-kg.graph,
@@ -4051,11 +4098,14 @@ kgr:cohd a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1038/sdata.2018.273> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:automat.cohd,
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:automat.cohd,
         kgr:cohd.api,
         kgr:cohd.docs,
         kgr:cohd.notebooks,
         kgr:cohd.portal,
+        kgr:cqs.code,
         kgr:translator.cohd.graph,
         kgr:translator.translator_kg.graph ;
     schema1:identifier "cohd" ;
@@ -4249,7 +4299,12 @@ kgr:complexportal a schema1:DataSource ;
         kgr:complexportal.zebrafish.complextab,
         kgr:goa.ftp,
         kgr:mechreponet.kg,
-        kgr:obo-db-ingest.complexportal.tsv ;
+        kgr:obo-db-ingest.complexportal.json,
+        kgr:obo-db-ingest.complexportal.obo,
+        kgr:obo-db-ingest.complexportal.owl,
+        kgr:obo-db-ingest.complexportal.sssom.tsv,
+        kgr:obo-db-ingest.complexportal.tsv,
+        kgr:service-kp.trapi ;
     schema1:identifier "complex-portal" ;
     schema1:name "Complex Portal" ;
     skos:inScheme "protein interactions",
@@ -4266,7 +4321,9 @@ kgr:connections-hypothesis-kp a schema1:KnowledgeGraph ;
     dcterms:identifier "connections-hypothesis-kp" ;
     dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
     dcterms:modified "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:connections-hypothesis-kp.code,
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:connections-hypothesis-kp.code,
         kgr:connections-hypothesis-kp.graph,
         kgr:connections-hypothesis-kp.smartapi ;
     schema1:name "Connections Hypothesis KP" ;
@@ -4439,7 +4496,8 @@ kgr:cpdb a schema1:Aggregator ;
     schema1:hasPart kgr:cpdb.downloads,
         kgr:cpdb.web,
         kgr:cpdb.wsdl,
-        kgr:rdbridge.graph ;
+        kgr:rdbridge.graph,
+        kgr:service-kp.trapi ;
     schema1:identifier "cpdb" ;
     schema1:name "ConsensusPathDB" ;
     skos:altLabel "CPDB",
@@ -4493,6 +4551,10 @@ kgr:cpt a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpt.spec,
         kgr:imo-knowledge-graph.data,
+        kgr:obo-db-ingest.cpt.json,
+        kgr:obo-db-ingest.cpt.obo,
+        kgr:obo-db-ingest.cpt.owl,
+        kgr:obo-db-ingest.cpt.sssom.tsv,
         kgr:obo-db-ingest.cpt.tsv ;
     schema1:name "Current Procedural Terminology" ;
     skos:inScheme "biomedical",
@@ -4502,16 +4564,20 @@ kgr:cpt a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.ama-assn.org/practice-management/cpt> .
 
-kgr:cqs a schema1:DataSource ;
+kgr:cqs a schema1:Aggregator ;
     rdfs:label "Translator Curated Query Service" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Translator Curated Query Service (CQS) is an SRI service providing ARA-like reasoning capabilities through customizable inference rules captured as templates, generating predicted edges with provenance metadata and scoring." ;
     dcterms:identifier "cqs" ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:cqs.code,
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:cqs.code,
         kgr:cqs.docs ;
     schema1:identifier "cqs" ;
     schema1:name "Translator Curated Query Service" ;
+    doap:repository <https://github.com/TranslatorSRI/CQS> ;
     skos:altLabel "CQS",
         "Curated Query Service" ;
     skos:inScheme "biomedical" ;
@@ -4562,6 +4628,9 @@ kgr:credit a schema1:Ontology ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:credit.spec,
+        kgr:obo-db-ingest.credit.json,
+        kgr:obo-db-ingest.credit.obo,
+        kgr:obo-db-ingest.credit.owl,
         kgr:obo-db-ingest.credit.sssom.tsv,
         kgr:obo-db-ingest.credit.tsv ;
     schema1:name "Credit" ;
@@ -4712,6 +4781,7 @@ kgr:ctd a schema1:DataSource ;
         kgr:pheknowlator.graph,
         kgr:primekg.graph,
         kgr:psygenet.genedisease,
+        kgr:service-kp.trapi,
         kgr:sri-reference-kg.graph,
         kgr:stitch.api,
         kgr:stitch.downloads,
@@ -4779,6 +4849,7 @@ kgr:ctkp a schema1:KnowledgeGraph ;
     dcterms:license <https://opensource.org/license/mit/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.ctkp,
+        kgr:cqs.code,
         kgr:ctkp.docs,
         kgr:ctkp.smartapi,
         kgr:translator.ctkp.graph,
@@ -4904,6 +4975,10 @@ kgr:cvx a schema1:DataSource ;
     dcterms:identifier "cvx" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cvx.docs,
+        kgr:obo-db-ingest.cvx.json,
+        kgr:obo-db-ingest.cvx.obo,
+        kgr:obo-db-ingest.cvx.owl,
+        kgr:obo-db-ingest.cvx.sssom.tsv,
         kgr:obo-db-ingest.cvx.tsv ;
     schema1:name "Vaccine Administered Code Set (CVX)" ;
     skos:inScheme "biomedical",
@@ -5014,9 +5089,10 @@ kgr:darwins-ark a schema1:DataSource ;
 kgr:date a schema1:DataSource ;
     rdfs:label "Drugs to target pAthways by the Tissue Expression" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "DATE (Drugs to target pAthways by the Tissue Expression) was a computational resource integrating drug targets with pathway information and tissue-specific gene expression to predict drug effects and therapeutic opportunities. The resource appears to be archived." ;
+    dcterms:description "DATE (Drugs to target pAthways by the Tissue Expression) is a dataset from the Tatonetti lab connecting 1,034 drugs to 954 Reactome pathways in 259 human tissues and cell lines. It combines DrugBank drug-target pairs with tissue expression from GTEx, the GNF U133A gene atlas, the NCI-60 cell lines and the Human Proteome Map. It has not been updated since 2018." ;
     dcterms:identifier "date" ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1002/psp4.12305> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:date.archive ;
     schema1:identifier "date" ;
     schema1:name "Drugs to target pAthways by the Tissue Expression" ;
@@ -5118,6 +5194,7 @@ kgr:dbsnp a schema1:DataSource ;
         kgr:rna-kg.kg.edges,
         kgr:rna-kg.kg.neo4j,
         kgr:rna-kg.kg.nodes,
+        kgr:service-kp.trapi,
         kgr:togows.rest-api ;
     schema1:identifier "dbsnp" ;
     schema1:name "dbSNP" ;
@@ -5307,7 +5384,8 @@ kgr:ddinter a schema1:DataSource ;
         kgr:pharmebinet.json,
         kgr:pharmebinet.neo4j,
         kgr:pharmebinet.neo4j.dump,
-        kgr:pharmebinet.tsv ;
+        kgr:pharmebinet.tsv,
+        kgr:service-kp.trapi ;
     schema1:identifier "ddinter" ;
     schema1:name "DDinter" ;
     skos:altLabel "DDInter" ;
@@ -5400,6 +5478,10 @@ kgr:depmap a schema1:DataSource ;
         kgr:molepro.graph.edges,
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
+        kgr:obo-db-ingest.depmap.json,
+        kgr:obo-db-ingest.depmap.obo,
+        kgr:obo-db-ingest.depmap.owl,
+        kgr:obo-db-ingest.depmap.sssom.tsv,
         kgr:obo-db-ingest.depmap.tsv,
         kgr:prism.datasets,
         kgr:prism.primary_screen_lfc,
@@ -5442,6 +5524,7 @@ kgr:dgidb a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:translator.dgidb.graph,
         kgr:translator.translator_kg.graph ;
     schema1:identifier "dgidb" ;
@@ -5500,6 +5583,9 @@ kgr:dictybase a schema1:DataSource ;
         kgr:kg-monarch.graph.rdf,
         kgr:neo.model,
         kgr:neo.obo,
+        kgr:obo-db-ingest.dictybase.gene.json,
+        kgr:obo-db-ingest.dictybase.gene.obo,
+        kgr:obo-db-ingest.dictybase.gene.owl,
         kgr:obo-db-ingest.dictybase.gene.tsv,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
@@ -5689,6 +5775,7 @@ kgr:diseases a schema1:Aggregator ;
         kgr:pharmebinet.neo4j,
         kgr:pharmebinet.neo4j.dump,
         kgr:pharmebinet.tsv,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:string.cog.links,
@@ -5750,6 +5837,7 @@ kgr:disgenet a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "disgenet" ;
@@ -5941,6 +6029,7 @@ kgr:doid a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
@@ -6084,6 +6173,7 @@ kgr:drugbank a schema1:DataSource ;
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cardiokg.neo4j,
         kgr:clinicalkg.graph,
+        kgr:date.archive,
         kgr:drkg.graph,
         kgr:drugbank.academic,
         kgr:drugbank.clinical.api,
@@ -6196,6 +6286,10 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:multiomics-kp.graph,
+        kgr:obo-db-ingest.drugcentral.json,
+        kgr:obo-db-ingest.drugcentral.obo,
+        kgr:obo-db-ingest.drugcentral.owl,
+        kgr:obo-db-ingest.drugcentral.sssom.tsv,
         kgr:obo-db-ingest.drugcentral.tsv,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
@@ -6209,6 +6303,7 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:tcrd.api,
@@ -6323,6 +6418,10 @@ kgr:ec a schema1:Ontology ;
         kgr:kg-microbe.graph.core,
         kgr:kg-microbe.graph.function,
         kgr:kg-microbe.graph.raw,
+        kgr:obo-db-ingest.ec.json,
+        kgr:obo-db-ingest.ec.obo,
+        kgr:obo-db-ingest.ec.owl,
+        kgr:obo-db-ingest.ec.sssom.tsv,
         kgr:obo-db-ingest.ec.tsv ;
     schema1:name "Enzyme Commission" ;
     skos:altLabel "EC",
@@ -6392,6 +6491,10 @@ kgr:eco a schema1:Ontology ;
     dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:cacao.api,
+        kgr:cacao.go-annotations,
+        kgr:cacao.gowiki,
+        kgr:cacao.portal,
         kgr:disprot.downloads,
         kgr:disprot.idpo,
         kgr:eco.kg-bioportal,
@@ -6925,6 +7028,8 @@ kgr:ena a schema1:DataSource ;
         kgr:ena.ftp,
         kgr:ena.training,
         kgr:genecards.web.interface,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
@@ -7826,6 +7931,8 @@ kgr:expressionatlas a schema1:Aggregator ;
         kgr:expressionatlas.r-objects,
         kgr:expressionatlas.single-cell,
         kgr:gene-expression-atlas-okn.graph,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
@@ -8256,6 +8363,9 @@ kgr:flybase a schema1:DataSource ;
         kgr:kg-alzheimers.graph,
         kgr:neo.model,
         kgr:neo.obo,
+        kgr:obo-db-ingest.flybase.json,
+        kgr:obo-db-ingest.flybase.obo,
+        kgr:obo-db-ingest.flybase.owl,
         kgr:obo-db-ingest.flybase.tsv,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
@@ -8356,6 +8466,7 @@ kgr:foodb a schema1:DataSource ;
         kgr:foodb.data.predicted_msms_peak_lists,
         kgr:foodb.data.xml,
         kgr:foodb.web,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:unibiomap.auxs,
@@ -8517,7 +8628,12 @@ kgr:gard a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gard.portal,
         kgr:genecards.web.interface,
+        kgr:medgen.csv,
+        kgr:medgen.id-mappings,
         kgr:ncatsgardkg.graph,
+        kgr:obo-db-ingest.gard.json,
+        kgr:obo-db-ingest.gard.obo,
+        kgr:obo-db-ingest.gard.owl,
         kgr:obo-db-ingest.gard.tsv ;
     schema1:name "Genetic and Rare Diseases Information Center" ;
     skos:inScheme "biomedical",
@@ -8600,6 +8716,7 @@ kgr:gdsc a schema1:DataSource ;
         kgr:pharmacodb.api,
         kgr:pharmacodb.documentation,
         kgr:pharmacodb.portal,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph ;
     schema1:identifier "gdsc" ;
@@ -8805,6 +8922,8 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
     schema1:hasPart kgr:gene-expression-omnibus.portal,
         kgr:klocd.portal,
         kgr:nde.graph,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:organoiddb.all-organoid-samples,
         kgr:organoiddb.general-samples,
         kgr:organoiddb.organoid-specificity-samples,
@@ -8831,6 +8950,7 @@ kgr:gene2phenotype a schema1:DataSource ;
         kgr:kg-ebi-gene2pheno.edges.kgx,
         kgr:kg-ebi-gene2pheno.edges.trapi,
         kgr:kg-ebi-gene2pheno.nodes.kgx,
+        kgr:service-kp.trapi,
         kgr:translator.gene2phenotype.graph,
         kgr:translator.translator_kg.graph ;
     schema1:identifier "gene2phenotype" ;
@@ -8975,7 +9095,9 @@ kgr:genetics-kp a schema1:KnowledgeGraph ;
     dcterms:identifier "genetics-kp" ;
     dcterms:license <https://opensource.org/license/mit/> ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:genetics-kp.code,
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:genetics-kp.code,
         kgr:genetics-kp.docs,
         kgr:genetics-kp.graph,
         kgr:genetics-kp.trapi,
@@ -9131,9 +9253,17 @@ kgr:geonames a schema1:DataSource ;
         kgr:geonames.api,
         kgr:geonames.export,
         kgr:geonames.feature-codes,
+        kgr:obo-db-ingest.geonames.feature.json,
+        kgr:obo-db-ingest.geonames.feature.obo,
+        kgr:obo-db-ingest.geonames.feature.owl,
         kgr:obo-db-ingest.geonames.feature.tsv,
+        kgr:obo-db-ingest.geonames.json,
+        kgr:obo-db-ingest.geonames.obo,
+        kgr:obo-db-ingest.geonames.owl,
         kgr:obo-db-ingest.geonames.tsv,
-        kgr:orkg.dump ;
+        kgr:orkg.dump,
+        kgr:proton.ontology,
+        kgr:proton.top ;
     schema1:name "GeoNames" ;
     skos:inScheme "environment",
         "general",
@@ -9168,7 +9298,9 @@ kgr:ghr a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ghr.conditions,
         kgr:ghr.gene-catalog,
-        kgr:ghr.portal ;
+        kgr:ghr.portal,
+        kgr:medgen.csv,
+        kgr:medgen.mgdef ;
     schema1:identifier "ghr" ;
     schema1:name "Genetics Home Reference" ;
     skos:altLabel "GHR" ;
@@ -9515,6 +9647,8 @@ kgr:gnps a schema1:DataSource ;
         kgr:kg-enp.graph,
         kgr:metabokg.graph,
         kgr:metabokg.rml_mappings,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:redu.dashboard ;
     schema1:name "Global Natural Products Social Molecular Networking" ;
     doap:repository <https://github.com/CCMS-UCSD/GNPSDocumentation> ;
@@ -9542,6 +9676,10 @@ kgr:go a schema1:Ontology ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:bioteque.embeddings,
+        kgr:cacao.api,
+        kgr:cacao.go-annotations,
+        kgr:cacao.gowiki,
+        kgr:cacao.portal,
         kgr:cam-kp.go-cams,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:chr.model.owl,
@@ -9620,6 +9758,8 @@ kgr:go a schema1:Ontology ;
         kgr:kg-predict.gpkg,
         kgr:lncrnalyzr.graph,
         kgr:mechreponet.kg,
+        kgr:medgen.csv,
+        kgr:medgen.mgdef,
         kgr:medkg.site,
         kgr:microbiomekg.api,
         kgr:msigdb.downloads.human,
@@ -9675,6 +9815,7 @@ kgr:go a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
@@ -9947,6 +10088,10 @@ kgr:gtdb a schema1:DataSource ;
         kgr:metatraits.gtdb.species-summary,
         kgr:metatraits.gtdb2ncbi,
         kgr:metatraits.ncbi2gtdb,
+        kgr:obo-db-ingest.gtdb.json,
+        kgr:obo-db-ingest.gtdb.obo,
+        kgr:obo-db-ingest.gtdb.owl,
+        kgr:obo-db-ingest.gtdb.sssom.tsv,
         kgr:obo-db-ingest.gtdb.tsv ;
     schema1:name "Genome Taxonomy Database" ;
     skos:inScheme "genomics",
@@ -9974,6 +10119,7 @@ kgr:gtex a schema1:DataSource ;
         kgr:chea-kg.graph,
         kgr:chea-kg.libraries,
         kgr:chea.libraries,
+        kgr:date.archive,
         kgr:digcfdekg.graph,
         kgr:dorothea.graph,
         kgr:enrichr-kg.graph,
@@ -10023,6 +10169,7 @@ kgr:gtopdb a schema1:DataSource ;
     dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.gtopdb,
         kgr:automat.robokopkg,
+        kgr:date.archive,
         kgr:genecards.web.interface,
         kgr:gtopdb.api.rest,
         kgr:gtopdb.approved_drugs.csv,
@@ -10095,7 +10242,8 @@ kgr:gtrx a schema1:Aggregator ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:gtrx.api,
-        kgr:gtrx.data ;
+        kgr:gtrx.data,
+        kgr:service-kp.trapi ;
     schema1:identifier "gtrx" ;
     schema1:name "Genome-to-Treatment" ;
     doap:repository <https://github.com/biothings/GTRx> ;
@@ -10686,9 +10834,16 @@ kgr:hp a schema1:Ontology ;
         kgr:kg-monarch.graph.rdf,
         kgr:kg-predict.gpkg,
         kgr:mechreponet.kg,
+        kgr:medgen.csv,
         kgr:medgen.hpo-history,
         kgr:medgen.hpo-mapping,
         kgr:medgen.hpo-omim-mapping,
+        kgr:medgen.id-mappings,
+        kgr:medgen.mgconso,
+        kgr:medgen.mgdef,
+        kgr:medgen.mgrel,
+        kgr:medgen.mgsat,
+        kgr:medgen.names,
         kgr:mondo.sssom,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
@@ -10715,6 +10870,7 @@ kgr:hp a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:sri-reference-kg.graph,
         kgr:translator.hpoa.graph,
         kgr:translator.translator_kg.graph,
@@ -11232,6 +11388,9 @@ kgr:icd10 a schema1:DataSource ;
         kgr:icd10.downloads,
         kgr:icd10.training,
         kgr:imo-knowledge-graph.data,
+        kgr:obo-db-ingest.icd10.json,
+        kgr:obo-db-ingest.icd10.obo,
+        kgr:obo-db-ingest.icd10.owl,
         kgr:obo-db-ingest.icd10.tsv,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
@@ -11284,6 +11443,10 @@ kgr:icd11 a schema1:DataSource ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:icd11.api,
         kgr:icd11.browser,
+        kgr:obo-db-ingest.icd11.json,
+        kgr:obo-db-ingest.icd11.obo,
+        kgr:obo-db-ingest.icd11.owl,
+        kgr:obo-db-ingest.icd11.sssom.tsv,
         kgr:obo-db-ingest.icd11.tsv,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
@@ -11325,7 +11488,10 @@ kgr:icees-kg a schema1:KnowledgeGraph ;
     dcterms:license <https://uts.nlm.nih.gov/uts/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:icees-kg.graph,
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:cqs.code,
+        kgr:icees-kg.graph,
         kgr:icees-kg.metadata,
         kgr:icees-kg.trapi,
         kgr:translator.icees.graph,
@@ -11462,7 +11628,8 @@ kgr:idisk a schema1:KnowledgeGraph ;
     dcterms:isReferencedBy <doi:10.1093/jamia/ocz216> ;
     dcterms:license <https://conservancy.umn.edu/handle/11299/204783> ;
     dcterms:modified "2026-05-28T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:ibkh.graph ;
+    schema1:hasPart kgr:ibkh.graph,
+        kgr:service-kp.trapi ;
     schema1:identifier "idisk" ;
     schema1:name "integrated Dietary Supplement Knowledge Base" ;
     doap:repository <https://github.com/zhang-informatics/iDISK> ;
@@ -11841,7 +12008,8 @@ kgr:innatedb a schema1:DataSource ;
         kgr:pathwaycommons.downloads,
         kgr:pathwaycommons.gmt,
         kgr:pathwaycommons.sif,
-        kgr:pathwaycommons.txt ;
+        kgr:pathwaycommons.txt,
+        kgr:service-kp.trapi ;
     schema1:identifier "innatedb" ;
     schema1:name "InnateDB" ;
     skos:altLabel "InnateDB" ;
@@ -12607,7 +12775,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-04T04:17:06+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T12:23:45+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -12958,6 +13126,8 @@ kgr:lincs a schema1:DataSource ;
         kgr:lincs.api,
         kgr:lincs.portal,
         kgr:nde.graph,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:petagraph.graph,
         kgr:prokn.lincs.compound.in_similarity_relationship_with.compound.edges,
         kgr:prokn.lincs.compound.negatively_regulates.gene.edges,
@@ -13055,7 +13225,8 @@ kgr:litvar a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:litvar.api,
         kgr:litvar.api_documentation,
-        kgr:litvar.web_interface ;
+        kgr:litvar.web_interface,
+        kgr:service-kp.trapi ;
     schema1:identifier "litvar" ;
     schema1:name "LitVar" ;
     skos:inScheme "genetic variation",
@@ -13498,6 +13669,8 @@ kgr:massive a schema1:DataSource ;
         kgr:metabokg.graph,
         kgr:metabokg.rml_mappings,
         kgr:nde.graph,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:redu.dashboard ;
     schema1:name "MassIVE" ;
     skos:altLabel "Mass Spectrometry Interactive Virtual Environment",
@@ -13753,10 +13926,11 @@ kgr:meddra a schema1:DataSource ;
 kgr:medgen a schema1:Aggregator ;
     rdfs:label "MedGen" ;
     dcterms:created "2025-07-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "NCBI's portal to information about conditions, phenotypes, and findings in humans related to medical genetics. Aggregates and organizes data from multiple authoritative sources including UMLS, OMIM, HPO, Mondo, Orphanet, GeneReviews, PharmGKB, and community submissions to GTR and ClinVar. Each concept is assigned a distinct Concept Unique Identifier (CUI) and integrated with related information from clinical resources, genetic testing registries, medical literature, and molecular resources." ;
+    dcterms:description "NCBI's portal to information about conditions, phenotypes, and findings in humans related to medical genetics. Aggregates and organizes data from multiple authoritative sources including UMLS, OMIM, HPO, Mondo, Orphanet, GeneReviews, ClinPGx (formerly PharmGKB), and community submissions to GTR and ClinVar. Each concept is assigned a distinct Concept Unique Identifier (CUI) and integrated with related information from clinical resources, genetic testing registries, medical literature, and molecular resources." ;
     dcterms:identifier "medgen" ;
+    dcterms:isReferencedBy <doi:10.1080/02763869.2020.1726152> ;
     dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:medgen.csv,
@@ -13902,6 +14076,8 @@ kgr:medlineplus a schema1:DataSource ;
         kgr:kg-jensenlab-diseases.edges.kgx,
         kgr:kg-jensenlab-diseases.edges.trapi,
         kgr:kg-jensenlab-diseases.nodes.kgx,
+        kgr:medgen.csv,
+        kgr:medgen.mgdef,
         kgr:medlineplus.connect_api,
         kgr:medlineplus.genetics_api,
         kgr:medlineplus.kg-bioportal,
@@ -13962,6 +14138,13 @@ kgr:mesh a schema1:Ontology ;
         kgr:kg-alzheimers.graph,
         kgr:med-rt.core_dts,
         kgr:med-rt.core_xml,
+        kgr:medgen.csv,
+        kgr:medgen.id-mappings,
+        kgr:medgen.mgconso,
+        kgr:medgen.mgdef,
+        kgr:medgen.mgrel,
+        kgr:medgen.mgsat,
+        kgr:medgen.names,
         kgr:medkg.site,
         kgr:mesh.api.eutilities,
         kgr:mesh.api.rdf,
@@ -13979,6 +14162,9 @@ kgr:mesh a schema1:Ontology ;
         kgr:mind.test,
         kgr:mind.train,
         kgr:mind.valid,
+        kgr:obo-db-ingest.mesh.json,
+        kgr:obo-db-ingest.mesh.obo,
+        kgr:obo-db-ingest.mesh.owl,
         kgr:obo-db-ingest.mesh.tsv,
         kgr:openpredict.api,
         kgr:openpredict.predictions,
@@ -14262,7 +14448,12 @@ kgr:mgi a schema1:DataSource ;
         kgr:mousemine.web,
         kgr:neo.model,
         kgr:neo.obo,
+        kgr:obo-db-ingest.mgi.json,
+        kgr:obo-db-ingest.mgi.obo,
+        kgr:obo-db-ingest.mgi.owl,
+        kgr:obo-db-ingest.mgi.sssom.tsv,
         kgr:obo-db-ingest.mgi.tsv,
+        kgr:service-kp.trapi,
         kgr:sri-reference-kg.graph ;
     schema1:identifier "mgi" ;
     schema1:name "Mouse Genome Informatics" ;
@@ -14528,8 +14719,18 @@ kgr:mirbase a schema1:Aggregator ;
         kgr:mirbase.tissue-search,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
+        kgr:obo-db-ingest.mirbase.family.json,
+        kgr:obo-db-ingest.mirbase.family.obo,
+        kgr:obo-db-ingest.mirbase.family.owl,
         kgr:obo-db-ingest.mirbase.family.tsv,
+        kgr:obo-db-ingest.mirbase.json,
+        kgr:obo-db-ingest.mirbase.mature.json,
+        kgr:obo-db-ingest.mirbase.mature.obo,
+        kgr:obo-db-ingest.mirbase.mature.owl,
         kgr:obo-db-ingest.mirbase.mature.tsv,
+        kgr:obo-db-ingest.mirbase.obo,
+        kgr:obo-db-ingest.mirbase.owl,
+        kgr:obo-db-ingest.mirbase.sssom.tsv,
         kgr:obo-db-ingest.mirbase.tsv,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
@@ -14822,7 +15023,10 @@ kgr:molepro a schema1:Aggregator ;
     dcterms:identifier "molepro" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:automat.molepro,
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:automat.molepro,
+        kgr:cqs.code,
         kgr:molepro.api,
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
@@ -14874,7 +15078,14 @@ kgr:mondo a schema1:Ontology ;
         kgr:kg-microbe.graph.core,
         kgr:kg-microbe.graph.function,
         kgr:kg-microbe.graph.raw,
+        kgr:medgen.csv,
+        kgr:medgen.id-mappings,
+        kgr:medgen.mgconso,
+        kgr:medgen.mgdef,
+        kgr:medgen.mgrel,
+        kgr:medgen.mgsat,
         kgr:medgen.mondo-history,
+        kgr:medgen.names,
         kgr:medi.github,
         kgr:medi.matrix_indication_list,
         kgr:medkg.site,
@@ -14908,6 +15119,7 @@ kgr:mondo a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:sniff.federation-edges,
         kgr:sniff.federation-nodes,
         kgr:sri-reference-kg.graph,
@@ -15222,6 +15434,10 @@ kgr:msigdb a schema1:DataSource ;
         kgr:msigdb.downloads.mouse,
         kgr:msigdb.gene_families,
         kgr:msigdb.investigate,
+        kgr:obo-db-ingest.msigdb.json,
+        kgr:obo-db-ingest.msigdb.obo,
+        kgr:obo-db-ingest.msigdb.owl,
+        kgr:obo-db-ingest.msigdb.sssom.tsv,
         kgr:obo-db-ingest.msigdb.tsv,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
@@ -15268,9 +15484,11 @@ kgr:multiomics-kp a schema1:KnowledgeGraph ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.ehr-clinical-connections,
         kgr:automat.maytreatkp,
+        kgr:cqs.code,
         kgr:multiomics-kp.code,
         kgr:multiomics-kp.docs,
-        kgr:multiomics-kp.graph ;
+        kgr:multiomics-kp.graph,
+        kgr:service-kp.trapi ;
     schema1:name "Multiomics KP" ;
     skos:inScheme "biomedical",
         "genomics" ;
@@ -15306,6 +15524,8 @@ kgr:mw a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:digcfdekg.graph,
         kgr:mw.portal,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "Metabolomics Workbench" ;
@@ -15602,6 +15822,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
@@ -15704,6 +15925,12 @@ kgr:ncit a schema1:Ontology ;
         kgr:efo.obo,
         kgr:efo.owl,
         kgr:genecards.web.interface,
+        kgr:medgen.csv,
+        kgr:medgen.mgconso,
+        kgr:medgen.mgdef,
+        kgr:medgen.mgrel,
+        kgr:medgen.mgsat,
+        kgr:medgen.names,
         kgr:metabokg.graph,
         kgr:metabokg.schema,
         kgr:microbiomekg.api,
@@ -16001,6 +16228,9 @@ kgr:nihreporter a schema1:DataSource ;
         kgr:nihreporter.portal,
         kgr:nihreporter.projects,
         kgr:nihreporter.publications,
+        kgr:obo-db-ingest.nihreporter.project.json,
+        kgr:obo-db-ingest.nihreporter.project.obo,
+        kgr:obo-db-ingest.nihreporter.project.owl,
         kgr:obo-db-ingest.nihreporter.project.tsv,
         kgr:stitch.api,
         kgr:stitch.downloads,
@@ -16050,8 +16280,15 @@ kgr:nlm a schema1:DataSource ;
     dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
     dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nlm.portal,
+        kgr:obo-db-ingest.nlm.json,
+        kgr:obo-db-ingest.nlm.obo,
+        kgr:obo-db-ingest.nlm.owl,
+        kgr:obo-db-ingest.nlm.publisher.json,
+        kgr:obo-db-ingest.nlm.publisher.obo,
+        kgr:obo-db-ingest.nlm.publisher.owl,
         kgr:obo-db-ingest.nlm.publisher.sssom.tsv,
         kgr:obo-db-ingest.nlm.publisher.tsv,
+        kgr:obo-db-ingest.nlm.sssom.tsv,
         kgr:obo-db-ingest.nlm.tsv ;
     schema1:name "National Library of Medicine" ;
     skos:inScheme "biomedical",
@@ -16231,6 +16468,10 @@ kgr:npass a schema1:DataSource ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/36624664> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:npass.portal,
+        kgr:obo-db-ingest.npass.json,
+        kgr:obo-db-ingest.npass.obo,
+        kgr:obo-db-ingest.npass.owl,
+        kgr:obo-db-ingest.npass.sssom.tsv,
         kgr:obo-db-ingest.npass.tsv,
         kgr:oregano.graph ;
     schema1:name "NPASS" ;
@@ -16530,8 +16771,9 @@ kgr:obo-db-ingest a schema1:Aggregator ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A set of databases formalized in OBO, OWL, and OBO Graph JSON formats, as well as mappings and nodelists." ;
     dcterms:identifier "obo-db-ingest" ;
+    dcterms:isReferencedBy <doi:10.5281/zenodo.10829095> ;
     dcterms:license <https://biopragmatics.github.io/obo-db-ingest/> ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.bigg.compartment.json,
         kgr:obo-db-ingest.bigg.compartment.obo,
         kgr:obo-db-ingest.bigg.compartment.owl,
@@ -16636,6 +16878,11 @@ kgr:obo-db-ingest a schema1:Aggregator ;
         kgr:obo-db-ingest.geonames.obo,
         kgr:obo-db-ingest.geonames.owl,
         kgr:obo-db-ingest.geonames.tsv,
+        kgr:obo-db-ingest.goldbook.json,
+        kgr:obo-db-ingest.goldbook.obo,
+        kgr:obo-db-ingest.goldbook.owl,
+        kgr:obo-db-ingest.goldbook.sssom.tsv,
+        kgr:obo-db-ingest.goldbook.tsv,
         kgr:obo-db-ingest.gtdb.json,
         kgr:obo-db-ingest.gtdb.obo,
         kgr:obo-db-ingest.gtdb.owl,
@@ -17074,7 +17321,8 @@ kgr:ols a schema1:Aggregator ;
         kgr:ols.json-linked,
         kgr:ols.mappings,
         kgr:ols.mcp,
-        kgr:ols.portal ;
+        kgr:ols.portal,
+        kgr:service-kp.trapi ;
     schema1:identifier "ols" ;
     schema1:name "Ontology Lookup Service" ;
     doap:repository <https://github.com/EBISPOT/ols4> ;
@@ -17159,13 +17407,16 @@ kgr:omiabis a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <https://github.com/OMIABIS/omiabis-dev> .
 
-kgr:omicsdi a schema1:DataSource ;
+kgr:omicsdi a schema1:Aggregator ;
     rdfs:label "OmicsDI" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets across multiple repositories, providing a unified search interface for genomics, proteomics, metabolomics, and transcriptomics data." ;
+    dcterms:description "OmicsDI (Omics Discovery Index) is an EMBL-EBI index of dataset metadata from public omics repositories. As of October 2026 it indexes about 4.9 million datasets from 28 repositories, covering genomics, transcriptomics, proteomics, metabolomics, computational models and clinical studies, plus BioStudies literature records, and provides a unified search portal and REST API." ;
     dcterms:identifier "omicsdi" ;
-    dcterms:isReferencedBy <doi:10.1038/nbt.3790> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1038/nbt.3790>,
+        <doi:10.1038/s41467-019-11461-w>,
+        <doi:10.1093/nar/gkaa326> ;
+    dcterms:license <https://www.ebi.ac.uk/about/terms-of-use/> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nde.graph,
         kgr:omicsdi.api,
         kgr:omicsdi.portal ;
@@ -17173,7 +17424,9 @@ kgr:omicsdi a schema1:DataSource ;
     schema1:name "OmicsDI" ;
     skos:altLabel "Omics Discovery Index",
         "OmicsDI" ;
-    skos:inScheme "genomics",
+    skos:inScheme "chemistry and biochemistry",
+        "genomics",
+        "metabolomics",
         "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.omicsdi.org/> ;
@@ -17207,9 +17460,19 @@ kgr:omim a schema1:DataSource ;
         kgr:kg-predict.gpkg,
         kgr:markerdb.api,
         kgr:markerdb.sequence_variants.tsv,
+        kgr:medgen.csv,
         kgr:medgen.hpo-omim-mapping,
+        kgr:medgen.id-mappings,
+        kgr:medgen.mgconso,
+        kgr:medgen.mgdef,
+        kgr:medgen.mgrel,
+        kgr:medgen.mgsat,
+        kgr:medgen.names,
         kgr:medkg.site,
         kgr:ncbigene.mim2gene_medgen,
+        kgr:obo-db-ingest.omim.ps.json,
+        kgr:obo-db-ingest.omim.ps.obo,
+        kgr:obo-db-ingest.omim.ps.owl,
         kgr:obo-db-ingest.omim.ps.tsv,
         kgr:omim.api,
         kgr:omim.mim2gene,
@@ -17712,7 +17975,10 @@ kgr:openpredict a schema1:Aggregator ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:openpredict.api,
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal,
+        kgr:cqs.code,
+        kgr:openpredict.api,
         kgr:openpredict.openapi,
         kgr:openpredict.predictions,
         kgr:openpredict.ui ;
@@ -17841,6 +18107,13 @@ kgr:ordo a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:efo.obo,
         kgr:efo.owl,
+        kgr:medgen.csv,
+        kgr:medgen.mgconso,
+        kgr:medgen.mgdef,
+        kgr:medgen.mgrel,
+        kgr:medgen.mgsat,
+        kgr:medgen.names,
+        kgr:medgen.ordo-history,
         kgr:ordo.kg-bioportal,
         kgr:ordo.owl,
         kgr:ordo.sparql,
@@ -17981,6 +18254,9 @@ kgr:orphanet a schema1:DataSource ;
         kgr:kg-ebi-gene2pheno.edges.trapi,
         kgr:kg-ebi-gene2pheno.nodes.kgx,
         kgr:kg-idg.graph,
+        kgr:medgen.csv,
+        kgr:medgen.id-mappings,
+        kgr:medgen.mgdef,
         kgr:medgen.ordo-history,
         kgr:ncatsgardkg.graph,
         kgr:oregano.graph,
@@ -18230,6 +18506,7 @@ kgr:panther a schema1:Resource ;
         kgr:pathwaycommons.gmt,
         kgr:pathwaycommons.sif,
         kgr:pathwaycommons.txt,
+        kgr:service-kp.trapi,
         kgr:sri-reference-kg.graph,
         kgr:translator.panther.graph,
         kgr:translator.translator_kg.graph ;
@@ -18271,7 +18548,11 @@ kgr:pathbank a schema1:DataSource ;
         <doi:10.1093/nar/gkz861> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:obo-db-ingest.pathbank.tsv,
+    schema1:hasPart kgr:obo-db-ingest.pathbank.json,
+        kgr:obo-db-ingest.pathbank.obo,
+        kgr:obo-db-ingest.pathbank.owl,
+        kgr:obo-db-ingest.pathbank.sssom.tsv,
+        kgr:obo-db-ingest.pathbank.tsv,
         kgr:pathbank.biopax,
         kgr:pathbank.downloads,
         kgr:pathbank.pathways.csv,
@@ -18447,6 +18728,8 @@ kgr:paxdb a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkaf1066> ;
     dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal,
         kgr:paxdb.downloads,
         kgr:paxdb.site ;
     schema1:name "PaxDb" ;
@@ -18746,7 +19029,13 @@ kgr:pfam a schema1:DataSource ;
         kgr:drugmechdb.graph,
         kgr:enrichr-kg.graph,
         kgr:genecards.web.interface,
+        kgr:obo-db-ingest.pfam.clan.json,
+        kgr:obo-db-ingest.pfam.clan.obo,
+        kgr:obo-db-ingest.pfam.clan.owl,
         kgr:obo-db-ingest.pfam.clan.tsv,
+        kgr:obo-db-ingest.pfam.json,
+        kgr:obo-db-ingest.pfam.obo,
+        kgr:obo-db-ingest.pfam.owl,
         kgr:obo-db-ingest.pfam.tsv,
         kgr:pfam.a.data,
         kgr:pfam.a.fullalignment,
@@ -18789,7 +19078,8 @@ kgr:pfocr a schema1:DataSource ;
         kgr:pfocr.figure_info_json,
         kgr:pfocr.gmt,
         kgr:pfocr.search_json,
-        kgr:pfocr.web ;
+        kgr:pfocr.web,
+        kgr:service-kp.trapi ;
     schema1:identifier "pfocr" ;
     schema1:name "PFOCR" ;
     doap:repository <https://github.com/wikipathways/pfocr-database> ;
@@ -19375,6 +19665,9 @@ kgr:pid a schema1:DataSource ;
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
         kgr:ncipidkg.graph.ttl,
+        kgr:obo-db-ingest.pid.pathway.json,
+        kgr:obo-db-ingest.pid.pathway.obo,
+        kgr:obo-db-ingest.pid.pathway.owl,
         kgr:obo-db-ingest.pid.pathway.tsv,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
@@ -19741,6 +20034,9 @@ kgr:pombase a schema1:Resource ;
         kgr:kg-monarch.graph.rdf,
         kgr:neo.model,
         kgr:neo.obo,
+        kgr:obo-db-ingest.pombase.json,
+        kgr:obo-db-ingest.pombase.obo,
+        kgr:obo-db-ingest.pombase.owl,
         kgr:obo-db-ingest.pombase.tsv,
         kgr:pombase.genes,
         kgr:pombase.genes-products,
@@ -20304,23 +20600,23 @@ kgr:proteopedia a schema1:DataSource ;
 kgr:proton a schema1:Ontology ;
     rdfs:label "PROTON (PROTo ONtology)" ;
     dcterms:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "PROTON (PROTo ONtology) is a lightweight upper-level ontology serving as a foundational modeling basis for semantic web applications. It provides a modular framework with approximately 542 entity classes and 183 properties, covering named entities, temporal concepts, quantitative domains, and abstract concepts. Designed for information extraction, semantic annotation, knowledge management, and linked data integration." ;
+    dcterms:description "PROTON (PROTo ONtology) is a lightweight upper-level ontology developed by Ontotext in the EU SEKT project. It is split into System, Top, Extent and Knowledge Management modules, covering named entities such as people, organizations and locations, temporal and quantitative concepts, and information resources, and was used for information extraction, semantic annotation and linked data integration. Version 3.0 (Beta) added a Linked Open Data extension mapped to DBpedia, Freebase and GeoNames. It has not been updated since about 2012, and the Ontotext homepage now redirects to a missing page on graphwise.ai." ;
     dcterms:hasVersion "3.0 Beta" ;
     dcterms:identifier "proton" ;
+    dcterms:isReferencedBy <doi:10.1007/978-3-642-15431-7_31> ;
     dcterms:license <https://creativecommons.org/licenses/by/3.0/> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:openbiodiv.ontology.ttl,
         kgr:proton.browser,
         kgr:proton.documentation,
         kgr:proton.ontology,
         kgr:proton.top ;
     schema1:name "PROTON (PROTo ONtology)" ;
-    doap:repository <https://github.com/Ontotext-AD/proton> ;
     skos:altLabel "PROTON 3.0",
         "PROTON Top",
         "PROTo ONtology" ;
     skos:inScheme "general" ;
-    adms:status "Active" ;
+    adms:status "Inactive" ;
     foaf:homepage <https://www.ontotext.com/products/proton/> ;
     foaf:maker kgr:ontotext .
 
@@ -20546,6 +20842,10 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:amyco.annotations,
         kgr:atom.kg,
         kgr:atom.pipeline,
+        kgr:cacao.api,
+        kgr:cacao.go-annotations,
+        kgr:cacao.gowiki,
+        kgr:cacao.portal,
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
         kgr:entrez.eutils,
@@ -20583,6 +20883,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:klocd.portal,
         kgr:litvar.api,
         kgr:litvar.web_interface,
+        kgr:medgen.csv,
         kgr:medgen.pubmed-links,
         kgr:medkg.site,
         kgr:metabokg.graph,
@@ -20611,6 +20912,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:reprotox-kg.portal,
         kgr:rlims-p.portal,
         kgr:rlims-p.text-mining-service,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:stitch.api,
@@ -20924,6 +21226,7 @@ kgr:reactome a schema1:DataSource ;
         kgr:ctd.diseases_pathways,
         kgr:ctd.genes_pathways,
         kgr:ctd.pathways,
+        kgr:date.archive,
         kgr:drugmechdb.graph,
         kgr:enrichr-kg.graph,
         kgr:epigraphdb.graph,
@@ -20965,6 +21268,9 @@ kgr:reactome a schema1:DataSource ;
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
         kgr:obo-db-ingest.bigg.metabolite.sssom.tsv,
+        kgr:obo-db-ingest.reactome.json,
+        kgr:obo-db-ingest.reactome.obo,
+        kgr:obo-db-ingest.reactome.owl,
         kgr:obo-db-ingest.reactome.tsv,
         kgr:obo-db-ingest.rhea.sssom.tsv,
         kgr:oregano.graph,
@@ -21012,6 +21318,7 @@ kgr:reactome a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
@@ -21245,7 +21552,8 @@ kgr:repodb a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:repodb.full_dataset,
-        kgr:repodb.web_interface ;
+        kgr:repodb.web_interface,
+        kgr:service-kp.trapi ;
     schema1:identifier "repodb" ;
     schema1:name "RepoDB" ;
     skos:inScheme "biomedical",
@@ -21334,10 +21642,12 @@ kgr:resid a schema1:Ontology ;
 kgr:retriever a schema1:Aggregator ;
     rdfs:label "BioPack Retriever" ;
     dcterms:created "2025-12-03T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Retriever is an NCATS Translator component that serves as a TRAPI (Translator Reasoner API) access layer and intermediary between Knowledge Providers and the Shepherd ARA. Retriever deduplicates subquery operations, provides a cache layer, and centralizes normalization calls for improved efficiency in querying multiple knowledge graph backends. It aggregates TRAPI query responses from DogPark Knowledge Providers, using external database backends to serve integrated biomedical knowledge." ;
+    dcterms:description "Retriever is an NCATS Biomedical Data Translator Knowledge Provider (infores:retriever) from the DOGSURF team that answers TRAPI queries directly against two data tiers: a Tier 0 graph engine (Gandalf) and a Tier 1 Elasticsearch index built from the merged Translator KG. It serves as an intermediary for the Shepherd reasoning system, deduplicating subqueries, caching results and centralizing identifier normalization." ;
     dcterms:identifier "retriever" ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:retriever.code,
+    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:retriever.api,
+        kgr:retriever.code,
         kgr:retriever.docs ;
     schema1:identifier "retriever" ;
     schema1:name "BioPack Retriever" ;
@@ -21404,6 +21714,10 @@ kgr:rgd a schema1:DataSource ;
         kgr:kg-alzheimers.graph,
         kgr:neo.model,
         kgr:neo.obo,
+        kgr:obo-db-ingest.rgd.json,
+        kgr:obo-db-ingest.rgd.obo,
+        kgr:obo-db-ingest.rgd.owl,
+        kgr:obo-db-ingest.rgd.sssom.tsv,
         kgr:obo-db-ingest.rgd.tsv,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
@@ -21441,6 +21755,7 @@ kgr:rhea a schema1:DataSource ;
         kgr:obo-db-ingest.rhea.owl,
         kgr:obo-db-ingest.rhea.sssom.tsv,
         kgr:obo-db-ingest.rhea.tsv,
+        kgr:service-kp.trapi,
         kgr:swisslipid.enzymes ;
     schema1:identifier "rhea" ;
     schema1:name "Rhea" ;
@@ -21706,7 +22021,11 @@ kgr:ror a schema1:DataSource ;
     dcterms:identifier "ror" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:obo-db-ingest.ror.tsv,
+    schema1:hasPart kgr:obo-db-ingest.ror.json,
+        kgr:obo-db-ingest.ror.obo,
+        kgr:obo-db-ingest.ror.owl,
+        kgr:obo-db-ingest.ror.sssom.tsv,
+        kgr:obo-db-ingest.ror.tsv,
         kgr:ror.api,
         kgr:ror.data-dump ;
     schema1:name "Research Organization Registry" ;
@@ -21741,7 +22060,8 @@ kgr:rtx-kg2 a schema1:KnowledgeGraph ;
     dcterms:isReferencedBy <https://doi.org/10.1186/s12859-022-04932-3> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:rtx-kg2.code,
+    schema1:hasPart kgr:cqs.code,
+        kgr:rtx-kg2.code,
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j ;
@@ -22064,6 +22384,7 @@ kgr:semmeddb a schema1:DataSource ;
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
         kgr:semmeddb.semrep.tool,
+        kgr:service-kp.trapi,
         kgr:translator.semmeddb.graph,
         kgr:translator.translator_kg.graph ;
     schema1:identifier "semmeddb" ;
@@ -22175,14 +22496,18 @@ kgr:sepio a schema1:Ontology ;
 kgr:service-kp a schema1:KnowledgeGraph ;
     rdfs:label "Service KP" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "A Translator Knowledge Provider" ;
+    dcterms:description "The NCATS Translator Service Provider KP, run by the Su and Wu labs at Scripps Research, builds and hosts BioThings-based knowledge provider APIs such as MyGene.info, MyChem.info, MyDisease.info and MyVariant.info, plus about 30 other wrapped data sources. They are exposed together as one TRAPI service through the BioThings Explorer Service Provider team endpoint." ;
     dcterms:identifier "service-kp" ;
-    dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/35020801> ;
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btad570>,
+        <https://www.ncbi.nlm.nih.gov/pubmed/35020801> ;
     dcterms:license <https://opensource.org/licenses/Apache-2.0> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:service-kp.code,
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cqs.code,
+        kgr:service-kp.code,
         kgr:service-kp.docs,
-        kgr:service-kp.portal ;
+        kgr:service-kp.portal,
+        kgr:service-kp.trapi ;
+    schema1:identifier "service-provider-trapi" ;
     schema1:name "Service KP" ;
     doap:repository <https://github.com/biothings/biothings.api> ;
     skos:inScheme "biomedical" ;
@@ -22220,6 +22545,9 @@ kgr:sgd a schema1:DataSource ;
         kgr:kg-alzheimers.graph,
         kgr:neo.model,
         kgr:neo.obo,
+        kgr:obo-db-ingest.sgd.json,
+        kgr:obo-db-ingest.sgd.obo,
+        kgr:obo-db-ingest.sgd.owl,
         kgr:obo-db-ingest.sgd.tsv,
         kgr:phosphogrid.portal,
         kgr:rnacentral.api,
@@ -22376,6 +22704,9 @@ kgr:signor a schema1:DataSource ;
         kgr:clinicalkg.graph,
         kgr:genecards.web.interface,
         kgr:iptmnet.ptm,
+        kgr:obo-db-ingest.signor.json,
+        kgr:obo-db-ingest.signor.obo,
+        kgr:obo-db-ingest.signor.owl,
         kgr:obo-db-ingest.signor.tsv,
         kgr:signor.api,
         kgr:signor.complete,
@@ -22726,6 +23057,13 @@ kgr:snomedct a schema1:Ontology ;
         kgr:imo-knowledge-graph.data,
         kgr:med-rt.core_dts,
         kgr:med-rt.core_xml,
+        kgr:medgen.csv,
+        kgr:medgen.id-mappings,
+        kgr:medgen.mgconso,
+        kgr:medgen.mgdef,
+        kgr:medgen.mgrel,
+        kgr:medgen.mgsat,
+        kgr:medgen.names,
         kgr:medkg.site,
         kgr:snomedct.browser,
         kgr:snomedct.icd10cm.map,
@@ -23217,6 +23555,7 @@ kgr:stitch a schema1:DataSource ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
+        kgr:date.archive,
         kgr:molepro.api,
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
@@ -23348,7 +23687,12 @@ kgr:sty a schema1:Ontology ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/18629109> ;
     dcterms:license <https://lhncbc.nlm.nih.gov/semanticnetwork/> ;
     dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:obo-db-ingest.sty.tsv,
+    schema1:hasPart kgr:medgen.csv,
+        kgr:medgen.mgsty,
+        kgr:obo-db-ingest.sty.json,
+        kgr:obo-db-ingest.sty.obo,
+        kgr:obo-db-ingest.sty.owl,
+        kgr:obo-db-ingest.sty.tsv,
         kgr:sty.docs,
         kgr:sty.kg-bioportal,
         kgr:sty.semantic-groups,
@@ -23385,7 +23729,8 @@ kgr:suppkg a schema1:KnowledgeGraph ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:suppkg.docs,
+    schema1:hasPart kgr:service-kp.trapi,
+        kgr:suppkg.docs,
         kgr:suppkg.source-data ;
     schema1:identifier "suppkg" ;
     schema1:name "SuppKG" ;
@@ -23426,6 +23771,10 @@ kgr:swisslipid a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:obo-db-ingest.swisslipid.json,
+        kgr:obo-db-ingest.swisslipid.obo,
+        kgr:obo-db-ingest.swisslipid.owl,
+        kgr:obo-db-ingest.swisslipid.sssom.tsv,
         kgr:obo-db-ingest.swisslipid.tsv,
         kgr:swisslipid.api,
         kgr:swisslipid.enzymes,
@@ -23873,6 +24222,8 @@ kgr:text-mining-kp a schema1:KnowledgeGraph ;
     schema1:hasPart kgr:automat.robokopkg,
         kgr:automat.robokopplus,
         kgr:automat.tmkp,
+        kgr:cqs.code,
+        kgr:service-kp.trapi,
         kgr:text-mining-kp.graph,
         kgr:translator.tmkp.graph,
         kgr:translator.translator_kg.graph ;
@@ -24170,6 +24521,7 @@ kgr:translator a schema1:Aggregator ;
         kgr:genetics-kp.trapi,
         kgr:icees-kg.metadata,
         kgr:icees-kg.trapi,
+        kgr:retriever.api,
         kgr:text-mining-kp.graph,
         kgr:translator.alliance.graph,
         kgr:translator.bgee.graph,
@@ -24326,6 +24678,7 @@ kgr:ttd a schema1:Aggregator ;
         kgr:pharmebinet.neo4j.dump,
         kgr:pharmebinet.tsv,
         kgr:pharmkg.graph,
+        kgr:service-kp.trapi,
         kgr:stitch.api,
         kgr:stitch.downloads,
         kgr:stitch.portal,
@@ -24492,6 +24845,7 @@ kgr:uberon a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
@@ -24649,6 +25003,7 @@ kgr:umls a schema1:Aggregator ;
         kgr:med-rt.core_dts,
         kgr:med-rt.core_spl,
         kgr:med-rt.core_xml,
+        kgr:medgen.csv,
         kgr:medgen.merged,
         kgr:medgen.mgconso,
         kgr:medgen.mgdef,
@@ -24836,11 +25191,16 @@ kgr:uniprot a schema1:DataSource ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
+        kgr:cacao.api,
+        kgr:cacao.go-annotations,
+        kgr:cacao.gowiki,
+        kgr:cacao.portal,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cardiokg.neo4j,
         kgr:cellmodelpassports.gene_identifiers,
         kgr:chembl.map_to_uniprot,
         kgr:clinicalkg.graph,
+        kgr:date.archive,
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
         kgr:disgenet.data,
@@ -24887,7 +25247,15 @@ kgr:uniprot a schema1:DataSource ;
         kgr:nextprot.downloads,
         kgr:nextprot.portal,
         kgr:nextprot.sparql,
+        kgr:obo-db-ingest.uniprot.json,
+        kgr:obo-db-ingest.uniprot.obo,
+        kgr:obo-db-ingest.uniprot.owl,
+        kgr:obo-db-ingest.uniprot.ptm.json,
+        kgr:obo-db-ingest.uniprot.ptm.obo,
+        kgr:obo-db-ingest.uniprot.ptm.owl,
+        kgr:obo-db-ingest.uniprot.ptm.sssom.tsv,
         kgr:obo-db-ingest.uniprot.ptm.tsv,
+        kgr:obo-db-ingest.uniprot.sssom.tsv,
         kgr:obo-db-ingest.uniprot.tsv,
         kgr:oma.mapping.uniprot,
         kgr:oregano.graph,
@@ -24916,6 +25284,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:string.cog.links,
@@ -25528,6 +25897,9 @@ kgr:wikipathways a schema1:DataSource ;
         kgr:indra.cogex.code,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
+        kgr:obo-db-ingest.wikipathways.json,
+        kgr:obo-db-ingest.wikipathways.obo,
+        kgr:obo-db-ingest.wikipathways.owl,
         kgr:obo-db-ingest.wikipathways.tsv,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
@@ -26557,16 +26929,6 @@ kgr:arrayexpress.portal a schema1:GraphicalInterface ;
     dcterms:description "Searchable web interface for browsing ArrayExpress functional genomics studies, their sample and protocol metadata, and their data files." ;
     schema1:url <https://www.ebi.ac.uk/biostudies/arrayexpress> .
 
-kgr:ars.api a schema1:ProgrammingInterface ;
-    rdfs:label "ARS API" ;
-    dcterms:description "TRAPI-compatible ARS endpoint for asynchronous query submission." ;
-    schema1:url <https://ars-prod.transltr.io/ars/api/submit> .
-
-kgr:ars.portal a schema1:GraphicalInterface ;
-    rdfs:label "ARS Production Portal" ;
-    dcterms:description "Primary web entry point for submitting and tracking Translator ARS queries." ;
-    schema1:url <https://ars-prod.transltr.io/> .
-
 kgr:atc.classification a schema1:DocumentationProduct ;
     rdfs:label "WHO ATC Classification Documentation" ;
     dcterms:description "WHO ATC/DDD Toolkit page describing the ATC classification structure, levels, and classification principles." ;
@@ -27314,16 +27676,6 @@ kgr:cabi-isc.portal a schema1:GraphicalInterface ;
     rdfs:label "CABI Invasive Species Compendium Portal" ;
     dcterms:description "Web portal for the CABI Invasive Species Compendium providing species datasheets, distribution and host information, and bibliographic references on invasive species." ;
     schema1:url <https://www.cabidigitallibrary.org/product/qi> .
-
-kgr:cacao.api a schema1:ProgrammingInterface ;
-    rdfs:label "GO Wiki API" ;
-    dcterms:description "MediaWiki API endpoint for accessing CACAO and related GO Wiki content programmatically." ;
-    schema1:url <https://gowiki.tamu.edu/wiki/api.php> .
-
-kgr:cacao.gowiki a schema1:GraphicalInterface ;
-    rdfs:label "CACAO GO Wiki Page" ;
-    dcterms:description "GO Wiki page for CACAO project information and annotation competition content." ;
-    schema1:url <http://gowiki.tamu.edu/wiki/index.php/Category:CACAO> .
 
 kgr:cam-kp.api a schema1:ProgrammingInterface ;
     rdfs:label "CAM-KP REST API" ;
@@ -28807,11 +29159,6 @@ kgr:cpt.spec a schema1:DocumentationProduct ;
     dcterms:description "Official American Medical Association CPT overview and guidance page for the Current Procedural Terminology code set." ;
     schema1:url <https://www.ama-assn.org/practice-management/cpt> .
 
-kgr:cqs.code a schema1:ProcessProduct ;
-    rdfs:label "CQS Source Repository" ;
-    dcterms:description "Source code and templates implementing Curated Query Service inference logic." ;
-    schema1:url <https://github.com/TranslatorSRI/CQS> .
-
 kgr:cqs.docs a schema1:DocumentationProduct ;
     rdfs:label "CQS Documentation" ;
     dcterms:description "Service overview and usage guidance for CQS in the Translator wiki." ;
@@ -29101,11 +29448,6 @@ kgr:darwins-ark.website a schema1:GraphicalInterface ;
     rdfs:label "Darwin's Ark website" ;
     dcterms:description "The Darwin's Ark website, where owners enroll dogs, complete behavioral surveys, and browse project results." ;
     schema1:url <https://darwinsark.org/> .
-
-kgr:date.archive a schema1:Product ;
-    rdfs:label "DATE Archive ZIP" ;
-    dcterms:description "Archived DATE ZIP package for tissue-specific drug-target-pathway analyses." ;
-    schema1:url <https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip> .
 
 kgr:dbpedia.ontology a schema1:OntologyProduct ;
     rdfs:label "DBpedia Ontology" ;
@@ -34280,11 +34622,6 @@ kgr:meddra.web-browser a schema1:GraphicalInterface ;
     dcterms:description "MedDRA Web-Based Browser provided for MedDRA subscribers to search and view MedDRA terminology content." ;
     schema1:url <https://mssotools.com/MSSOWeb/wbb/wbb_index.html> .
 
-kgr:medgen.csv a schema1:Product ;
-    rdfs:label "CSV Data Files" ;
-    dcterms:description "CSV format data files directory with additional data exports" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/> .
-
 kgr:medgen.cui-history a schema1:Product ;
     rdfs:label "MedGen CUI History" ;
     dcterms:description "History file tracking changes to MedGen CUIs" ;
@@ -34299,11 +34636,6 @@ kgr:medgen.help a schema1:DocumentationProduct ;
     rdfs:label "MedGen Documentation" ;
     dcterms:description "Documentation, help pages, and user guides for MedGen" ;
     schema1:url <https://www.ncbi.nlm.nih.gov/medgen/docs/overview/> .
-
-kgr:medgen.id-mappings a schema1:MappingProduct ;
-    rdfs:label "MedGen ID Mappings" ;
-    dcterms:description "Mappings between MedGen CUIs and external source identifiers with gzip compression" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGenIDMappings.txt.gz> .
 
 kgr:medgen.portal a schema1:GraphicalInterface ;
     rdfs:label "MedGen Portal" ;
@@ -35965,795 +36297,30 @@ kgr:obis.seamap a schema1:Product ;
     dcterms:description "OBIS-SEAMAP specialized database for marine megavertebrates containing distribution, abundance, and telemetry data for marine mammals, seabirds, and sea turtles" ;
     schema1:url <https://seamap.env.duke.edu/> .
 
-kgr:obo-db-ingest.chembl.compound.json a schema1:Product ;
-    rdfs:label "chembl.compound OBO Graph JSON" ;
-    dcterms:description "chembl.compound OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.json> .
-
-kgr:obo-db-ingest.chembl.compound.obo a schema1:Product ;
-    rdfs:label "chembl.compound OBO" ;
-    dcterms:description "chembl.compound OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.obo> .
-
-kgr:obo-db-ingest.chembl.compound.owl a schema1:Product ;
-    rdfs:label "chembl.compound OWL" ;
-    dcterms:description "chembl.compound OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.owl> .
-
-kgr:obo-db-ingest.chembl.compound.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "chembl.compound SSSOM" ;
-    dcterms:description "chembl.compound SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.sssom.tsv> .
-
-kgr:obo-db-ingest.chembl.target.json a schema1:Product ;
-    rdfs:label "chembl.target OBO Graph JSON" ;
-    dcterms:description "chembl.target OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.json> .
-
-kgr:obo-db-ingest.chembl.target.obo a schema1:Product ;
-    rdfs:label "chembl.target OBO" ;
-    dcterms:description "chembl.target OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.obo> .
-
-kgr:obo-db-ingest.chembl.target.owl a schema1:Product ;
-    rdfs:label "chembl.target OWL" ;
-    dcterms:description "chembl.target OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.owl> .
-
-kgr:obo-db-ingest.chembl.target.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "chembl.target SSSOM" ;
-    dcterms:description "chembl.target SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.sssom.tsv> .
-
-kgr:obo-db-ingest.civic.gid.json a schema1:Product ;
-    rdfs:label "civic.gid OBO Graph JSON" ;
-    dcterms:description "civic.gid OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.json> .
-
-kgr:obo-db-ingest.civic.gid.obo a schema1:Product ;
-    rdfs:label "civic.gid OBO" ;
-    dcterms:description "civic.gid OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.obo> .
-
-kgr:obo-db-ingest.civic.gid.owl a schema1:Product ;
-    rdfs:label "civic.gid OWL" ;
-    dcterms:description "civic.gid OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.owl> .
-
-kgr:obo-db-ingest.civic.gid.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "civic.gid SSSOM" ;
-    dcterms:description "civic.gid SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.sssom.tsv> .
-
-kgr:obo-db-ingest.complexportal.json a schema1:Product ;
-    rdfs:label "complexportal OBO Graph JSON" ;
-    dcterms:description "complexportal OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.json> .
-
-kgr:obo-db-ingest.complexportal.obo a schema1:Product ;
-    rdfs:label "complexportal OBO" ;
-    dcterms:description "complexportal OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.obo> .
-
-kgr:obo-db-ingest.complexportal.owl a schema1:Product ;
-    rdfs:label "complexportal OWL" ;
-    dcterms:description "complexportal OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.owl> .
-
-kgr:obo-db-ingest.complexportal.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "complexportal SSSOM" ;
-    dcterms:description "complexportal SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.sssom.tsv> .
-
-kgr:obo-db-ingest.cpt.json a schema1:Product ;
-    rdfs:label "cpt OBO Graph JSON" ;
-    dcterms:description "cpt OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.json> .
-
-kgr:obo-db-ingest.cpt.obo a schema1:Product ;
-    rdfs:label "cpt OBO" ;
-    dcterms:description "cpt OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.obo> .
-
-kgr:obo-db-ingest.cpt.owl a schema1:Product ;
-    rdfs:label "cpt OWL" ;
-    dcterms:description "cpt OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.owl> .
-
-kgr:obo-db-ingest.cpt.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "cpt SSSOM" ;
-    dcterms:description "cpt SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.sssom.tsv> .
-
-kgr:obo-db-ingest.credit.json a schema1:Product ;
-    rdfs:label "credit OBO Graph JSON" ;
-    dcterms:description "credit OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/credit/credit.json> .
-
-kgr:obo-db-ingest.credit.obo a schema1:Product ;
-    rdfs:label "credit OBO" ;
-    dcterms:description "credit OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/credit/credit.obo> .
-
-kgr:obo-db-ingest.credit.owl a schema1:Product ;
-    rdfs:label "credit OWL" ;
-    dcterms:description "credit OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/credit/credit.owl> .
-
-kgr:obo-db-ingest.cvx.json a schema1:Product ;
-    rdfs:label "cvx OBO Graph JSON" ;
-    dcterms:description "cvx OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.json> .
-
-kgr:obo-db-ingest.cvx.obo a schema1:Product ;
-    rdfs:label "cvx OBO" ;
-    dcterms:description "cvx OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.obo> .
-
-kgr:obo-db-ingest.cvx.owl a schema1:Product ;
-    rdfs:label "cvx OWL" ;
-    dcterms:description "cvx OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.owl> .
-
-kgr:obo-db-ingest.cvx.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "cvx SSSOM" ;
-    dcterms:description "cvx SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.sssom.tsv> .
-
-kgr:obo-db-ingest.depmap.json a schema1:Product ;
-    rdfs:label "depmap OBO Graph JSON" ;
-    dcterms:description "depmap OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.json> .
-
-kgr:obo-db-ingest.depmap.obo a schema1:Product ;
-    rdfs:label "depmap OBO" ;
-    dcterms:description "depmap OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.obo> .
-
-kgr:obo-db-ingest.depmap.owl a schema1:Product ;
-    rdfs:label "depmap OWL" ;
-    dcterms:description "depmap OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.owl> .
-
-kgr:obo-db-ingest.depmap.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "depmap SSSOM" ;
-    dcterms:description "depmap SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv> .
-
-kgr:obo-db-ingest.dictybase.gene.json a schema1:Product ;
-    rdfs:label "dictybase.gene OBO Graph JSON" ;
-    dcterms:description "dictybase.gene OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.json> .
-
-kgr:obo-db-ingest.dictybase.gene.obo a schema1:Product ;
-    rdfs:label "dictybase.gene OBO" ;
-    dcterms:description "dictybase.gene OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.obo> .
-
-kgr:obo-db-ingest.dictybase.gene.owl a schema1:Product ;
-    rdfs:label "dictybase.gene OWL" ;
-    dcterms:description "dictybase.gene OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.owl> .
-
-kgr:obo-db-ingest.drugcentral.json a schema1:Product ;
-    rdfs:label "drugcentral OBO Graph JSON" ;
-    dcterms:description "drugcentral OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.json> .
-
-kgr:obo-db-ingest.drugcentral.obo a schema1:Product ;
-    rdfs:label "drugcentral OBO" ;
-    dcterms:description "drugcentral OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.obo> .
-
-kgr:obo-db-ingest.drugcentral.owl a schema1:Product ;
-    rdfs:label "drugcentral OWL" ;
-    dcterms:description "drugcentral OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.owl> .
-
-kgr:obo-db-ingest.drugcentral.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "drugcentral SSSOM" ;
-    dcterms:description "drugcentral SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.sssom.tsv> .
-
-kgr:obo-db-ingest.ec.json a schema1:Product ;
-    rdfs:label "ec OBO Graph JSON" ;
-    dcterms:description "ec OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.json> .
-
-kgr:obo-db-ingest.ec.obo a schema1:Product ;
-    rdfs:label "ec OBO" ;
-    dcterms:description "ec OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.obo> .
-
-kgr:obo-db-ingest.ec.owl a schema1:Product ;
-    rdfs:label "ec OWL" ;
-    dcterms:description "ec OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.owl> .
-
-kgr:obo-db-ingest.ec.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "ec SSSOM" ;
-    dcterms:description "ec SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.sssom.tsv> .
-
-kgr:obo-db-ingest.flybase.json a schema1:Product ;
-    rdfs:label "flybase OBO Graph JSON" ;
-    dcterms:description "flybase OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/flybase/flybase.json> .
-
-kgr:obo-db-ingest.flybase.obo a schema1:Product ;
-    rdfs:label "flybase OBO" ;
-    dcterms:description "flybase OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/flybase/flybase.obo> .
-
-kgr:obo-db-ingest.flybase.owl a schema1:Product ;
-    rdfs:label "flybase OWL" ;
-    dcterms:description "flybase OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/flybase/flybase.owl> .
-
-kgr:obo-db-ingest.gard.json a schema1:Product ;
-    rdfs:label "gard OBO Graph JSON" ;
-    dcterms:description "gard OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/gard/gard.json> .
-
-kgr:obo-db-ingest.gard.obo a schema1:Product ;
-    rdfs:label "gard OBO" ;
-    dcterms:description "gard OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/gard/gard.obo> .
-
-kgr:obo-db-ingest.gard.owl a schema1:Product ;
-    rdfs:label "gard OWL" ;
-    dcterms:description "gard OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/gard/gard.owl> .
-
-kgr:obo-db-ingest.geonames.feature.json a schema1:Product ;
-    rdfs:label "geonames.feature OBO Graph JSON" ;
-    dcterms:description "geonames.feature OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.json> .
-
-kgr:obo-db-ingest.geonames.feature.obo a schema1:Product ;
-    rdfs:label "geonames.feature OBO" ;
-    dcterms:description "geonames.feature OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.obo> .
-
-kgr:obo-db-ingest.geonames.feature.owl a schema1:Product ;
-    rdfs:label "geonames.feature OWL" ;
-    dcterms:description "geonames.feature OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.owl> .
-
-kgr:obo-db-ingest.geonames.json a schema1:Product ;
-    rdfs:label "geonames OBO Graph JSON" ;
-    dcterms:description "geonames OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/geonames/geonames.json> .
-
-kgr:obo-db-ingest.geonames.obo a schema1:Product ;
-    rdfs:label "geonames OBO" ;
-    dcterms:description "geonames OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/geonames/geonames.obo> .
-
-kgr:obo-db-ingest.geonames.owl a schema1:Product ;
-    rdfs:label "geonames OWL" ;
-    dcterms:description "geonames OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/geonames/geonames.owl> .
-
-kgr:obo-db-ingest.gtdb.json a schema1:Product ;
-    rdfs:label "gtdb OBO Graph JSON" ;
-    dcterms:description "gtdb OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz> .
-
-kgr:obo-db-ingest.gtdb.obo a schema1:Product ;
-    rdfs:label "gtdb OBO" ;
-    dcterms:description "gtdb OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo.gz> .
-
-kgr:obo-db-ingest.gtdb.owl a schema1:Product ;
-    rdfs:label "gtdb OWL" ;
-    dcterms:description "gtdb OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.owl> .
-
-kgr:obo-db-ingest.gtdb.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "gtdb SSSOM" ;
-    dcterms:description "gtdb SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv> .
-
-kgr:obo-db-ingest.icd10.json a schema1:Product ;
-    rdfs:label "icd10 OBO Graph JSON" ;
-    dcterms:description "icd10 OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/icd10/icd10.json> .
-
-kgr:obo-db-ingest.icd10.obo a schema1:Product ;
-    rdfs:label "icd10 OBO" ;
-    dcterms:description "icd10 OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/icd10/icd10.obo> .
-
-kgr:obo-db-ingest.icd10.owl a schema1:Product ;
-    rdfs:label "icd10 OWL" ;
-    dcterms:description "icd10 OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/icd10/icd10.owl> .
-
-kgr:obo-db-ingest.icd11.json a schema1:Product ;
-    rdfs:label "icd11 OBO Graph JSON" ;
-    dcterms:description "icd11 OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.json> .
-
-kgr:obo-db-ingest.icd11.obo a schema1:Product ;
-    rdfs:label "icd11 OBO" ;
-    dcterms:description "icd11 OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.obo> .
-
-kgr:obo-db-ingest.icd11.owl a schema1:Product ;
-    rdfs:label "icd11 OWL" ;
-    dcterms:description "icd11 OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.owl> .
-
-kgr:obo-db-ingest.icd11.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "icd11 SSSOM" ;
-    dcterms:description "icd11 SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.sssom.tsv> .
-
-kgr:obo-db-ingest.mesh.json a schema1:Product ;
-    rdfs:label "mesh OBO Graph JSON" ;
-    dcterms:description "mesh OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mesh/mesh.json.gz> .
-
-kgr:obo-db-ingest.mesh.obo a schema1:Product ;
-    rdfs:label "mesh OBO" ;
-    dcterms:description "mesh OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mesh/mesh.obo> .
-
-kgr:obo-db-ingest.mesh.owl a schema1:Product ;
-    rdfs:label "mesh OWL" ;
-    dcterms:description "mesh OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mesh/mesh.owl.gz> .
-
-kgr:obo-db-ingest.mgi.json a schema1:Product ;
-    rdfs:label "mgi OBO Graph JSON" ;
-    dcterms:description "mgi OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.json.gz> .
-
-kgr:obo-db-ingest.mgi.obo a schema1:Product ;
-    rdfs:label "mgi OBO" ;
-    dcterms:description "mgi OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.obo.gz> .
-
-kgr:obo-db-ingest.mgi.owl a schema1:Product ;
-    rdfs:label "mgi OWL" ;
-    dcterms:description "mgi OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.owl.gz> .
-
-kgr:obo-db-ingest.mgi.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "mgi SSSOM" ;
-    dcterms:description "mgi SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.sssom.tsv> .
-
-kgr:obo-db-ingest.mirbase.family.json a schema1:Product ;
-    rdfs:label "mirbase.family OBO Graph JSON" ;
-    dcterms:description "mirbase.family OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.json> .
-
-kgr:obo-db-ingest.mirbase.family.obo a schema1:Product ;
-    rdfs:label "mirbase.family OBO" ;
-    dcterms:description "mirbase.family OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.obo> .
-
-kgr:obo-db-ingest.mirbase.family.owl a schema1:Product ;
-    rdfs:label "mirbase.family OWL" ;
-    dcterms:description "mirbase.family OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.owl> .
-
-kgr:obo-db-ingest.mirbase.json a schema1:Product ;
-    rdfs:label "mirbase OBO Graph JSON" ;
-    dcterms:description "mirbase OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.json> .
-
-kgr:obo-db-ingest.mirbase.mature.json a schema1:Product ;
-    rdfs:label "mirbase.mature OBO Graph JSON" ;
-    dcterms:description "mirbase.mature OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.json> .
-
-kgr:obo-db-ingest.mirbase.mature.obo a schema1:Product ;
-    rdfs:label "mirbase.mature OBO" ;
-    dcterms:description "mirbase.mature OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo> .
-
-kgr:obo-db-ingest.mirbase.mature.owl a schema1:Product ;
-    rdfs:label "mirbase.mature OWL" ;
-    dcterms:description "mirbase.mature OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.owl> .
-
-kgr:obo-db-ingest.mirbase.obo a schema1:Product ;
-    rdfs:label "mirbase OBO" ;
-    dcterms:description "mirbase OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.obo> .
-
-kgr:obo-db-ingest.mirbase.owl a schema1:Product ;
-    rdfs:label "mirbase OWL" ;
-    dcterms:description "mirbase OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.owl> .
-
-kgr:obo-db-ingest.mirbase.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "mirbase SSSOM" ;
-    dcterms:description "mirbase SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.sssom.tsv> .
-
-kgr:obo-db-ingest.msigdb.json a schema1:Product ;
-    rdfs:label "msigdb OBO Graph JSON" ;
-    dcterms:description "msigdb OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.json.gz> .
-
-kgr:obo-db-ingest.msigdb.obo a schema1:Product ;
-    rdfs:label "msigdb OBO" ;
-    dcterms:description "msigdb OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo.gz> .
-
-kgr:obo-db-ingest.msigdb.owl a schema1:Product ;
-    rdfs:label "msigdb OWL" ;
-    dcterms:description "msigdb OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl.gz> .
-
-kgr:obo-db-ingest.msigdb.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "msigdb SSSOM" ;
-    dcterms:description "msigdb SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.sssom.tsv> .
-
-kgr:obo-db-ingest.ncbi.gc.json a schema1:Product ;
-    rdfs:label "ncbi.gc OBO Graph JSON" ;
-    dcterms:description "ncbi.gc OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.json> .
-
-kgr:obo-db-ingest.ncbi.gc.obo a schema1:Product ;
-    rdfs:label "ncbi.gc OBO" ;
-    dcterms:description "ncbi.gc OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.obo> .
-
-kgr:obo-db-ingest.ncbi.gc.owl a schema1:Product ;
-    rdfs:label "ncbi.gc OWL" ;
-    dcterms:description "ncbi.gc OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.owl> .
-
-kgr:obo-db-ingest.ncbi.gc.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "ncbi.gc SSSOM" ;
-    dcterms:description "ncbi.gc SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv> .
-
-kgr:obo-db-ingest.nihreporter.project.json a schema1:Product ;
-    rdfs:label "nihreporter.project OBO Graph JSON" ;
-    dcterms:description "nihreporter.project OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json.gz> .
-
-kgr:obo-db-ingest.nihreporter.project.obo a schema1:Product ;
-    rdfs:label "nihreporter.project OBO" ;
-    dcterms:description "nihreporter.project OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo.gz> .
-
-kgr:obo-db-ingest.nihreporter.project.owl a schema1:Product ;
-    rdfs:label "nihreporter.project OWL" ;
-    dcterms:description "nihreporter.project OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl.gz> .
-
-kgr:obo-db-ingest.nlm.json a schema1:Product ;
-    rdfs:label "nlm OBO Graph JSON" ;
-    dcterms:description "nlm OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.json> .
-
-kgr:obo-db-ingest.nlm.obo a schema1:Product ;
-    rdfs:label "nlm OBO" ;
-    dcterms:description "nlm OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.obo> .
-
-kgr:obo-db-ingest.nlm.owl a schema1:Product ;
-    rdfs:label "nlm OWL" ;
-    dcterms:description "nlm OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.owl> .
-
-kgr:obo-db-ingest.nlm.publisher.json a schema1:Product ;
-    rdfs:label "nlm.publisher OBO Graph JSON" ;
-    dcterms:description "nlm.publisher OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.json> .
-
-kgr:obo-db-ingest.nlm.publisher.obo a schema1:Product ;
-    rdfs:label "nlm.publisher OBO" ;
-    dcterms:description "nlm.publisher OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.obo> .
-
-kgr:obo-db-ingest.nlm.publisher.owl a schema1:Product ;
-    rdfs:label "nlm.publisher OWL" ;
-    dcterms:description "nlm.publisher OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.owl> .
-
-kgr:obo-db-ingest.nlm.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "nlm SSSOM" ;
-    dcterms:description "nlm SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.sssom.tsv> .
-
-kgr:obo-db-ingest.npass.json a schema1:Product ;
-    rdfs:label "npass OBO Graph JSON" ;
-    dcterms:description "npass OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.json> .
-
-kgr:obo-db-ingest.npass.obo a schema1:Product ;
-    rdfs:label "npass OBO" ;
-    dcterms:description "npass OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.obo> .
-
-kgr:obo-db-ingest.npass.owl a schema1:Product ;
-    rdfs:label "npass OWL" ;
-    dcterms:description "npass OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.owl> .
-
-kgr:obo-db-ingest.npass.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "npass SSSOM" ;
-    dcterms:description "npass SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.sssom.tsv> .
-
-kgr:obo-db-ingest.omim.ps.json a schema1:Product ;
-    rdfs:label "omim.ps OBO Graph JSON" ;
-    dcterms:description "omim.ps OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json> .
-
-kgr:obo-db-ingest.omim.ps.obo a schema1:Product ;
-    rdfs:label "omim.ps OBO" ;
-    dcterms:description "omim.ps OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.obo> .
-
-kgr:obo-db-ingest.omim.ps.owl a schema1:Product ;
-    rdfs:label "omim.ps OWL" ;
-    dcterms:description "omim.ps OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.owl> .
-
-kgr:obo-db-ingest.pathbank.json a schema1:Product ;
-    rdfs:label "pathbank OBO Graph JSON" ;
-    dcterms:description "pathbank OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.json.gz> .
-
-kgr:obo-db-ingest.pathbank.obo a schema1:Product ;
-    rdfs:label "pathbank OBO" ;
-    dcterms:description "pathbank OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz> .
-
-kgr:obo-db-ingest.pathbank.owl a schema1:Product ;
-    rdfs:label "pathbank OWL" ;
-    dcterms:description "pathbank OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl.gz> .
-
-kgr:obo-db-ingest.pathbank.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "pathbank SSSOM" ;
-    dcterms:description "pathbank SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.sssom.tsv> .
-
-kgr:obo-db-ingest.pfam.clan.json a schema1:Product ;
-    rdfs:label "pfam.clan OBO Graph JSON" ;
-    dcterms:description "pfam.clan OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.json> .
-
-kgr:obo-db-ingest.pfam.clan.obo a schema1:Product ;
-    rdfs:label "pfam.clan OBO" ;
-    dcterms:description "pfam.clan OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.obo> .
-
-kgr:obo-db-ingest.pfam.clan.owl a schema1:Product ;
-    rdfs:label "pfam.clan OWL" ;
-    dcterms:description "pfam.clan OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.owl> .
-
-kgr:obo-db-ingest.pfam.json a schema1:Product ;
-    rdfs:label "pfam OBO Graph JSON" ;
-    dcterms:description "pfam OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pfam/pfam.json> .
-
-kgr:obo-db-ingest.pfam.obo a schema1:Product ;
-    rdfs:label "pfam OBO" ;
-    dcterms:description "pfam OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pfam/pfam.obo> .
-
-kgr:obo-db-ingest.pfam.owl a schema1:Product ;
-    rdfs:label "pfam OWL" ;
-    dcterms:description "pfam OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pfam/pfam.owl> .
-
-kgr:obo-db-ingest.pid.pathway.json a schema1:Product ;
-    rdfs:label "pid.pathway OBO Graph JSON" ;
-    dcterms:description "pid.pathway OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.json> .
-
-kgr:obo-db-ingest.pid.pathway.obo a schema1:Product ;
-    rdfs:label "pid.pathway OBO" ;
-    dcterms:description "pid.pathway OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.obo> .
-
-kgr:obo-db-ingest.pid.pathway.owl a schema1:Product ;
-    rdfs:label "pid.pathway OWL" ;
-    dcterms:description "pid.pathway OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.owl> .
-
-kgr:obo-db-ingest.pombase.json a schema1:Product ;
-    rdfs:label "pombase OBO Graph JSON" ;
-    dcterms:description "pombase OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pombase/pombase.json> .
-
-kgr:obo-db-ingest.pombase.obo a schema1:Product ;
-    rdfs:label "pombase OBO" ;
-    dcterms:description "pombase OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pombase/pombase.obo> .
-
-kgr:obo-db-ingest.pombase.owl a schema1:Product ;
-    rdfs:label "pombase OWL" ;
-    dcterms:description "pombase OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/pombase/pombase.owl> .
-
-kgr:obo-db-ingest.reactome.json a schema1:Product ;
-    rdfs:label "reactome OBO Graph JSON" ;
-    dcterms:description "reactome OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/reactome/reactome.json.gz> .
-
-kgr:obo-db-ingest.reactome.obo a schema1:Product ;
-    rdfs:label "reactome OBO" ;
-    dcterms:description "reactome OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/reactome/reactome.obo> .
-
-kgr:obo-db-ingest.reactome.owl a schema1:Product ;
-    rdfs:label "reactome OWL" ;
-    dcterms:description "reactome OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/reactome/reactome.owl.gz> .
-
-kgr:obo-db-ingest.rgd.json a schema1:Product ;
-    rdfs:label "rgd OBO Graph JSON" ;
-    dcterms:description "rgd OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.json.gz> .
-
-kgr:obo-db-ingest.rgd.obo a schema1:Product ;
-    rdfs:label "rgd OBO" ;
-    dcterms:description "rgd OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.obo> .
-
-kgr:obo-db-ingest.rgd.owl a schema1:Product ;
-    rdfs:label "rgd OWL" ;
-    dcterms:description "rgd OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.owl.gz> .
-
-kgr:obo-db-ingest.rgd.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "rgd SSSOM" ;
-    dcterms:description "rgd SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv> .
-
-kgr:obo-db-ingest.ror.json a schema1:Product ;
-    rdfs:label "ror OBO Graph JSON" ;
-    dcterms:description "ror OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.json.gz> .
-
-kgr:obo-db-ingest.ror.obo a schema1:Product ;
-    rdfs:label "ror OBO" ;
-    dcterms:description "ror OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.obo> .
-
-kgr:obo-db-ingest.ror.owl a schema1:Product ;
-    rdfs:label "ror OWL" ;
-    dcterms:description "ror OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.owl.gz> .
-
-kgr:obo-db-ingest.ror.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "ror SSSOM" ;
-    dcterms:description "ror SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv> .
-
-kgr:obo-db-ingest.sgd.json a schema1:Product ;
-    rdfs:label "sgd OBO Graph JSON" ;
-    dcterms:description "sgd OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/sgd/sgd.json> .
-
-kgr:obo-db-ingest.sgd.obo a schema1:Product ;
-    rdfs:label "sgd OBO" ;
-    dcterms:description "sgd OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/sgd/sgd.obo> .
-
-kgr:obo-db-ingest.sgd.owl a schema1:Product ;
-    rdfs:label "sgd OWL" ;
-    dcterms:description "sgd OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/sgd/sgd.owl> .
-
-kgr:obo-db-ingest.signor.json a schema1:Product ;
-    rdfs:label "signor OBO Graph JSON" ;
-    dcterms:description "signor OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.json> .
-
-kgr:obo-db-ingest.signor.obo a schema1:Product ;
-    rdfs:label "signor OBO" ;
-    dcterms:description "signor OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.obo> .
-
-kgr:obo-db-ingest.signor.owl a schema1:Product ;
-    rdfs:label "signor OWL" ;
-    dcterms:description "signor OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.owl> .
-
-kgr:obo-db-ingest.sty.json a schema1:Product ;
-    rdfs:label "sty OBO Graph JSON" ;
-    dcterms:description "sty OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.json> .
-
-kgr:obo-db-ingest.sty.obo a schema1:Product ;
-    rdfs:label "sty OBO" ;
-    dcterms:description "sty OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.obo> .
-
-kgr:obo-db-ingest.sty.owl a schema1:Product ;
-    rdfs:label "sty OWL" ;
-    dcterms:description "sty OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.owl> .
-
-kgr:obo-db-ingest.swisslipid.json a schema1:Product ;
-    rdfs:label "swisslipid OBO Graph JSON" ;
-    dcterms:description "swisslipid OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.json.gz> .
-
-kgr:obo-db-ingest.swisslipid.obo a schema1:Product ;
-    rdfs:label "swisslipid OBO" ;
-    dcterms:description "swisslipid OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.obo.gz> .
-
-kgr:obo-db-ingest.swisslipid.owl a schema1:Product ;
-    rdfs:label "swisslipid OWL" ;
-    dcterms:description "swisslipid OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.owl.gz> .
-
-kgr:obo-db-ingest.swisslipid.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "swisslipid SSSOM" ;
-    dcterms:description "swisslipid SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv> .
-
-kgr:obo-db-ingest.uniprot.json a schema1:Product ;
-    rdfs:label "uniprot OBO Graph JSON" ;
-    dcterms:description "uniprot OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.json.gz> .
-
-kgr:obo-db-ingest.uniprot.obo a schema1:Product ;
-    rdfs:label "uniprot OBO" ;
-    dcterms:description "uniprot OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz> .
-
-kgr:obo-db-ingest.uniprot.owl a schema1:Product ;
-    rdfs:label "uniprot OWL" ;
-    dcterms:description "uniprot OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl.gz> .
-
-kgr:obo-db-ingest.uniprot.ptm.json a schema1:Product ;
-    rdfs:label "uniprot.ptm OBO Graph JSON" ;
-    dcterms:description "uniprot.ptm OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.json> .
-
-kgr:obo-db-ingest.uniprot.ptm.obo a schema1:Product ;
-    rdfs:label "uniprot.ptm OBO" ;
-    dcterms:description "uniprot.ptm OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.obo> .
-
-kgr:obo-db-ingest.uniprot.ptm.owl a schema1:Product ;
-    rdfs:label "uniprot.ptm OWL" ;
-    dcterms:description "uniprot.ptm OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.owl> .
-
-kgr:obo-db-ingest.uniprot.ptm.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "uniprot.ptm SSSOM" ;
-    dcterms:description "uniprot.ptm SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.sssom.tsv> .
-
-kgr:obo-db-ingest.uniprot.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "uniprot SSSOM" ;
-    dcterms:description "uniprot SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom.tsv> .
-
-kgr:obo-db-ingest.wikipathways.json a schema1:Product ;
-    rdfs:label "wikipathways OBO Graph JSON" ;
-    dcterms:description "wikipathways OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json> .
-
-kgr:obo-db-ingest.wikipathways.obo a schema1:Product ;
-    rdfs:label "wikipathways OBO" ;
-    dcterms:description "wikipathways OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.obo> .
-
-kgr:obo-db-ingest.wikipathways.owl a schema1:Product ;
-    rdfs:label "wikipathways OWL" ;
-    dcterms:description "wikipathways OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl> .
+kgr:obo-db-ingest.goldbook.json a schema1:Product ;
+    rdfs:label "goldbook OBO Graph JSON" ;
+    dcterms:description "IUPAC Gold Book (Compendium of Chemical Terminology) OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/goldbook/goldbook.json> .
+
+kgr:obo-db-ingest.goldbook.obo a schema1:Product ;
+    rdfs:label "goldbook OBO" ;
+    dcterms:description "IUPAC Gold Book (Compendium of Chemical Terminology) OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/goldbook/goldbook.obo> .
+
+kgr:obo-db-ingest.goldbook.owl a schema1:Product ;
+    rdfs:label "goldbook OWL" ;
+    dcterms:description "IUPAC Gold Book (Compendium of Chemical Terminology) OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/goldbook/goldbook.owl> .
+
+kgr:obo-db-ingest.goldbook.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "goldbook SSSOM" ;
+    dcterms:description "IUPAC Gold Book (Compendium of Chemical Terminology) SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/goldbook/goldbook.sssom.tsv> .
+
+kgr:obo-db-ingest.goldbook.tsv a schema1:Product ;
+    rdfs:label "goldbook Nodes TSV" ;
+    dcterms:description "IUPAC Gold Book (Compendium of Chemical Terminology) Nodes TSV" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv> .
 
 kgr:occo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "OCCO KGX graph (KG-Bioportal)" ;
@@ -37071,16 +36638,6 @@ kgr:omiabis.owl a schema1:OntologyProduct ;
     rdfs:label "omiabis.owl" ;
     dcterms:description "Ontologized MIABIS in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/omiabis.owl> .
-
-kgr:omicsdi.api a schema1:ProgrammingInterface ;
-    rdfs:label "OmicsDI API" ;
-    dcterms:description "Swagger-documented web service for programmatic querying of OmicsDI dataset metadata." ;
-    schema1:url <https://www.omicsdi.org/ws/swagger-ui/index.html> .
-
-kgr:omicsdi.portal a schema1:GraphicalInterface ;
-    rdfs:label "OmicsDI Portal" ;
-    dcterms:description "Web portal for searching and browsing integrated omics dataset metadata across repositories." ;
-    schema1:url <https://www.omicsdi.org/> .
 
 kgr:omim.api a schema1:ProgrammingInterface ;
     rdfs:label "OMIM API" ;
@@ -38964,16 +38521,6 @@ kgr:proton.documentation a schema1:DocumentationProduct ;
     dcterms:description "Comprehensive technical documentation and class reference for PROTON ontology covering all modules, properties, and usage guidelines" ;
     schema1:url <https://www.ontotext.com/documents/proton/proton-doc.htm> .
 
-kgr:proton.ontology a schema1:OntologyProduct ;
-    rdfs:label "PROTON Ontology OWL Distribution" ;
-    dcterms:description "Complete PROTON 3.0 Beta ontology specification in OWL Lite/RDF-XML format, including all four modules (System, Top, Extent, KM) with comprehensive entity class definitions and properties" ;
-    schema1:url <https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf> .
-
-kgr:proton.top a schema1:OntologyProduct ;
-    rdfs:label "PROTON Top Module" ;
-    dcterms:description "PROTON Top Module - the primary upper-level ontology module containing core entity types (Person, Location, Organization), temporal concepts, quantitative domains, and abstract concepts" ;
-    schema1:url <http://www.ontotext.com/proton/protontop> .
-
 kgr:prov-o.owl a schema1:OntologyProduct ;
     rdfs:label "PROV-O OWL" ;
     dcterms:description "OWL serialization of the W3C PROV Ontology." ;
@@ -39925,20 +39472,10 @@ kgr:sepio.owl a schema1:OntologyProduct ;
 kgr:sequence-ontology a "Organization" ;
     rdfs:label "Sequence Ontology Consortium" .
 
-kgr:service-kp.code a schema1:ProcessProduct ;
-    rdfs:label "Service KP Source Code" ;
-    dcterms:description "BioThings API stack source repository used by the Service Provider team." ;
-    schema1:url <https://github.com/biothings/biothings.api> .
-
 kgr:service-kp.docs a schema1:DocumentationProduct ;
     rdfs:label "Service KP Documentation" ;
     dcterms:description "Team documentation for the Translator Service Provider." ;
     schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/Service-Provider> .
-
-kgr:service-kp.portal a schema1:GraphicalInterface ;
-    rdfs:label "Service KP SmartAPI Portal" ;
-    dcterms:description "SmartAPI Translator portal for browsing registered Translator APIs." ;
-    schema1:url <https://smart-api.info/portal/translator> .
 
 kgr:sfld.site a schema1:GraphicalInterface ;
     rdfs:label "SFLD Website" ;
@@ -43446,45 +42983,10 @@ kgr:medgen.merged a schema1:Product ;
     dcterms:description "Merged CUI mappings showing concept consolidations with gzip compression" ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz> .
 
-kgr:medgen.mgconso a schema1:Product ;
-    rdfs:label "MGCONSO (Concept Names)" ;
-    dcterms:description "Rich Release Format (RRF) file containing concept names and source identifiers with gzip compression" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz> .
-
-kgr:medgen.mgdef a schema1:Product ;
-    rdfs:label "MGDEF (Definitions)" ;
-    dcterms:description "Rich Release Format (RRF) file containing definitions and descriptions with gzip compression" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz> .
-
-kgr:medgen.mgrel a schema1:MappingProduct ;
-    rdfs:label "MGREL (Relationships)" ;
-    dcterms:description "Rich Release Format (RRF) file containing relationships between concepts with gzip compression" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz> .
-
-kgr:medgen.mgsat a schema1:Product ;
-    rdfs:label "MGSAT (Attributes)" ;
-    dcterms:description "Rich Release Format (RRF) file containing attributes and properties with gzip compression" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz> .
-
-kgr:medgen.mgsty a schema1:Product ;
-    rdfs:label "MGSTY (Semantic Types)" ;
-    dcterms:description "Rich Release Format (RRF) file containing semantic type assignments with gzip compression" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz> .
-
 kgr:medgen.mondo-history a schema1:Product ;
     rdfs:label "Mondo CUI History" ;
     dcterms:description "History file tracking changes to Mondo term mappings to CUIs" ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt> .
-
-kgr:medgen.names a schema1:Product ;
-    rdfs:label "NAMES" ;
-    dcterms:description "Rich Release Format (RRF) file containing concept names for search with gzip compression" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz> .
-
-kgr:medgen.ordo-history a schema1:Product ;
-    rdfs:label "ORDO CUI History" ;
-    dcterms:description "History file tracking changes to Orphanet term mappings to CUIs" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt> .
 
 kgr:medgen.pubmed-links a schema1:Product ;
     rdfs:label "MedGen PubMed Links" ;
@@ -43731,15 +43233,75 @@ kgr:obo-db-ingest.cgnc.tsv a schema1:Product ;
     dcterms:description "cgnc Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/cgnc/cgnc.tsv> .
 
+kgr:obo-db-ingest.chembl.compound.json a schema1:Product ;
+    rdfs:label "chembl.compound OBO Graph JSON" ;
+    dcterms:description "chembl.compound OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.json> .
+
+kgr:obo-db-ingest.chembl.compound.obo a schema1:Product ;
+    rdfs:label "chembl.compound OBO" ;
+    dcterms:description "chembl.compound OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.obo> .
+
+kgr:obo-db-ingest.chembl.compound.owl a schema1:Product ;
+    rdfs:label "chembl.compound OWL" ;
+    dcterms:description "chembl.compound OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.owl> .
+
+kgr:obo-db-ingest.chembl.compound.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "chembl.compound SSSOM" ;
+    dcterms:description "chembl.compound SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.sssom.tsv> .
+
 kgr:obo-db-ingest.chembl.compound.tsv a schema1:Product ;
     rdfs:label "chembl.compound Nodes TSV" ;
     dcterms:description "chembl.compound Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv> .
 
+kgr:obo-db-ingest.chembl.target.json a schema1:Product ;
+    rdfs:label "chembl.target OBO Graph JSON" ;
+    dcterms:description "chembl.target OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.json> .
+
+kgr:obo-db-ingest.chembl.target.obo a schema1:Product ;
+    rdfs:label "chembl.target OBO" ;
+    dcterms:description "chembl.target OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.obo> .
+
+kgr:obo-db-ingest.chembl.target.owl a schema1:Product ;
+    rdfs:label "chembl.target OWL" ;
+    dcterms:description "chembl.target OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.owl> .
+
+kgr:obo-db-ingest.chembl.target.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "chembl.target SSSOM" ;
+    dcterms:description "chembl.target SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.sssom.tsv> .
+
 kgr:obo-db-ingest.chembl.target.tsv a schema1:Product ;
     rdfs:label "chembl.target Nodes TSV" ;
     dcterms:description "chembl.target Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.tsv> .
+
+kgr:obo-db-ingest.civic.gid.json a schema1:Product ;
+    rdfs:label "civic.gid OBO Graph JSON" ;
+    dcterms:description "civic.gid OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.json> .
+
+kgr:obo-db-ingest.civic.gid.obo a schema1:Product ;
+    rdfs:label "civic.gid OBO" ;
+    dcterms:description "civic.gid OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.obo> .
+
+kgr:obo-db-ingest.civic.gid.owl a schema1:Product ;
+    rdfs:label "civic.gid OWL" ;
+    dcterms:description "civic.gid OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.owl> .
+
+kgr:obo-db-ingest.civic.gid.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "civic.gid SSSOM" ;
+    dcterms:description "civic.gid SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.sssom.tsv> .
 
 kgr:obo-db-ingest.civic.gid.tsv a schema1:Product ;
     rdfs:label "civic.gid Nodes TSV" ;
@@ -43771,15 +43333,70 @@ kgr:obo-db-ingest.clinicaltrialsgov.tsv a schema1:Product ;
     dcterms:description "clinicaltrials Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv> .
 
+kgr:obo-db-ingest.complexportal.json a schema1:Product ;
+    rdfs:label "complexportal OBO Graph JSON" ;
+    dcterms:description "complexportal OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.json> .
+
+kgr:obo-db-ingest.complexportal.obo a schema1:Product ;
+    rdfs:label "complexportal OBO" ;
+    dcterms:description "complexportal OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.obo> .
+
+kgr:obo-db-ingest.complexportal.owl a schema1:Product ;
+    rdfs:label "complexportal OWL" ;
+    dcterms:description "complexportal OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.owl> .
+
+kgr:obo-db-ingest.complexportal.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "complexportal SSSOM" ;
+    dcterms:description "complexportal SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.sssom.tsv> .
+
 kgr:obo-db-ingest.complexportal.tsv a schema1:Product ;
     rdfs:label "complexportal Nodes TSV" ;
     dcterms:description "complexportal Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/complexportal/complexportal.tsv> .
 
+kgr:obo-db-ingest.cpt.json a schema1:Product ;
+    rdfs:label "cpt OBO Graph JSON" ;
+    dcterms:description "cpt OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.json> .
+
+kgr:obo-db-ingest.cpt.obo a schema1:Product ;
+    rdfs:label "cpt OBO" ;
+    dcterms:description "cpt OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.obo> .
+
+kgr:obo-db-ingest.cpt.owl a schema1:Product ;
+    rdfs:label "cpt OWL" ;
+    dcterms:description "cpt OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.owl> .
+
+kgr:obo-db-ingest.cpt.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "cpt SSSOM" ;
+    dcterms:description "cpt SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.sssom.tsv> .
+
 kgr:obo-db-ingest.cpt.tsv a schema1:Product ;
     rdfs:label "cpt Nodes TSV" ;
     dcterms:description "cpt Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/cpt/cpt.tsv> .
+
+kgr:obo-db-ingest.credit.json a schema1:Product ;
+    rdfs:label "credit OBO Graph JSON" ;
+    dcterms:description "credit OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/credit/credit.json> .
+
+kgr:obo-db-ingest.credit.obo a schema1:Product ;
+    rdfs:label "credit OBO" ;
+    dcterms:description "credit OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/credit/credit.obo> .
+
+kgr:obo-db-ingest.credit.owl a schema1:Product ;
+    rdfs:label "credit OWL" ;
+    dcterms:description "credit OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/credit/credit.owl> .
 
 kgr:obo-db-ingest.credit.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "credit SSSOM" ;
@@ -43791,50 +43408,225 @@ kgr:obo-db-ingest.credit.tsv a schema1:Product ;
     dcterms:description "credit Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/credit/credit.tsv> .
 
+kgr:obo-db-ingest.cvx.json a schema1:Product ;
+    rdfs:label "cvx OBO Graph JSON" ;
+    dcterms:description "cvx OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.json> .
+
+kgr:obo-db-ingest.cvx.obo a schema1:Product ;
+    rdfs:label "cvx OBO" ;
+    dcterms:description "cvx OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.obo> .
+
+kgr:obo-db-ingest.cvx.owl a schema1:Product ;
+    rdfs:label "cvx OWL" ;
+    dcterms:description "cvx OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.owl> .
+
+kgr:obo-db-ingest.cvx.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "cvx SSSOM" ;
+    dcterms:description "cvx SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.sssom.tsv> .
+
 kgr:obo-db-ingest.cvx.tsv a schema1:Product ;
     rdfs:label "cvx Nodes TSV" ;
     dcterms:description "cvx Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/cvx/cvx.tsv> .
+
+kgr:obo-db-ingest.depmap.json a schema1:Product ;
+    rdfs:label "depmap OBO Graph JSON" ;
+    dcterms:description "depmap OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.json> .
+
+kgr:obo-db-ingest.depmap.obo a schema1:Product ;
+    rdfs:label "depmap OBO" ;
+    dcterms:description "depmap OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.obo> .
+
+kgr:obo-db-ingest.depmap.owl a schema1:Product ;
+    rdfs:label "depmap OWL" ;
+    dcterms:description "depmap OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.owl> .
+
+kgr:obo-db-ingest.depmap.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "depmap SSSOM" ;
+    dcterms:description "depmap SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv> .
 
 kgr:obo-db-ingest.depmap.tsv a schema1:Product ;
     rdfs:label "depmap Nodes TSV" ;
     dcterms:description "depmap Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/depmap/depmap.tsv> .
 
+kgr:obo-db-ingest.dictybase.gene.json a schema1:Product ;
+    rdfs:label "dictybase.gene OBO Graph JSON" ;
+    dcterms:description "dictybase.gene OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.json> .
+
+kgr:obo-db-ingest.dictybase.gene.obo a schema1:Product ;
+    rdfs:label "dictybase.gene OBO" ;
+    dcterms:description "dictybase.gene OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.obo> .
+
+kgr:obo-db-ingest.dictybase.gene.owl a schema1:Product ;
+    rdfs:label "dictybase.gene OWL" ;
+    dcterms:description "dictybase.gene OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.owl> .
+
 kgr:obo-db-ingest.dictybase.gene.tsv a schema1:Product ;
     rdfs:label "dictybase.gene Nodes TSV" ;
     dcterms:description "dictybase.gene Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.tsv> .
+
+kgr:obo-db-ingest.drugcentral.json a schema1:Product ;
+    rdfs:label "drugcentral OBO Graph JSON" ;
+    dcterms:description "drugcentral OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.json> .
+
+kgr:obo-db-ingest.drugcentral.obo a schema1:Product ;
+    rdfs:label "drugcentral OBO" ;
+    dcterms:description "drugcentral OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.obo> .
+
+kgr:obo-db-ingest.drugcentral.owl a schema1:Product ;
+    rdfs:label "drugcentral OWL" ;
+    dcterms:description "drugcentral OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.owl> .
+
+kgr:obo-db-ingest.drugcentral.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "drugcentral SSSOM" ;
+    dcterms:description "drugcentral SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.sssom.tsv> .
 
 kgr:obo-db-ingest.drugcentral.tsv a schema1:Product ;
     rdfs:label "drugcentral Nodes TSV" ;
     dcterms:description "drugcentral Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.tsv> .
 
+kgr:obo-db-ingest.ec.json a schema1:Product ;
+    rdfs:label "ec OBO Graph JSON" ;
+    dcterms:description "ec OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.json> .
+
+kgr:obo-db-ingest.ec.obo a schema1:Product ;
+    rdfs:label "ec OBO" ;
+    dcterms:description "ec OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.obo> .
+
+kgr:obo-db-ingest.ec.owl a schema1:Product ;
+    rdfs:label "ec OWL" ;
+    dcterms:description "ec OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.owl> .
+
+kgr:obo-db-ingest.ec.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "ec SSSOM" ;
+    dcterms:description "ec SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.sssom.tsv> .
+
 kgr:obo-db-ingest.ec.tsv a schema1:Product ;
     rdfs:label "ec Nodes TSV" ;
     dcterms:description "ec Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/ec/ec.tsv> .
+
+kgr:obo-db-ingest.flybase.json a schema1:Product ;
+    rdfs:label "flybase OBO Graph JSON" ;
+    dcterms:description "flybase OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/flybase/flybase.json> .
+
+kgr:obo-db-ingest.flybase.obo a schema1:Product ;
+    rdfs:label "flybase OBO" ;
+    dcterms:description "flybase OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/flybase/flybase.obo> .
+
+kgr:obo-db-ingest.flybase.owl a schema1:Product ;
+    rdfs:label "flybase OWL" ;
+    dcterms:description "flybase OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/flybase/flybase.owl> .
 
 kgr:obo-db-ingest.flybase.tsv a schema1:Product ;
     rdfs:label "flybase Nodes TSV" ;
     dcterms:description "flybase Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/flybase/flybase.tsv> .
 
+kgr:obo-db-ingest.gard.json a schema1:Product ;
+    rdfs:label "gard OBO Graph JSON" ;
+    dcterms:description "gard OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/gard/gard.json> .
+
+kgr:obo-db-ingest.gard.obo a schema1:Product ;
+    rdfs:label "gard OBO" ;
+    dcterms:description "gard OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/gard/gard.obo> .
+
+kgr:obo-db-ingest.gard.owl a schema1:Product ;
+    rdfs:label "gard OWL" ;
+    dcterms:description "gard OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/gard/gard.owl> .
+
 kgr:obo-db-ingest.gard.tsv a schema1:Product ;
     rdfs:label "gard Nodes TSV" ;
     dcterms:description "gard Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/gard/gard.tsv> .
+
+kgr:obo-db-ingest.geonames.feature.json a schema1:Product ;
+    rdfs:label "geonames.feature OBO Graph JSON" ;
+    dcterms:description "geonames.feature OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.json> .
+
+kgr:obo-db-ingest.geonames.feature.obo a schema1:Product ;
+    rdfs:label "geonames.feature OBO" ;
+    dcterms:description "geonames.feature OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.obo> .
+
+kgr:obo-db-ingest.geonames.feature.owl a schema1:Product ;
+    rdfs:label "geonames.feature OWL" ;
+    dcterms:description "geonames.feature OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.owl> .
 
 kgr:obo-db-ingest.geonames.feature.tsv a schema1:Product ;
     rdfs:label "geonames.feature Nodes TSV" ;
     dcterms:description "geonames.feature Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.tsv> .
 
+kgr:obo-db-ingest.geonames.json a schema1:Product ;
+    rdfs:label "geonames OBO Graph JSON" ;
+    dcterms:description "geonames OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/geonames/geonames.json> .
+
+kgr:obo-db-ingest.geonames.obo a schema1:Product ;
+    rdfs:label "geonames OBO" ;
+    dcterms:description "geonames OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/geonames/geonames.obo> .
+
+kgr:obo-db-ingest.geonames.owl a schema1:Product ;
+    rdfs:label "geonames OWL" ;
+    dcterms:description "geonames OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/geonames/geonames.owl> .
+
 kgr:obo-db-ingest.geonames.tsv a schema1:Product ;
     rdfs:label "geonames Nodes TSV" ;
     dcterms:description "geonames Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/geonames/geonames.tsv> .
+
+kgr:obo-db-ingest.gtdb.json a schema1:Product ;
+    rdfs:label "gtdb OBO Graph JSON" ;
+    dcterms:description "gtdb OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz> .
+
+kgr:obo-db-ingest.gtdb.obo a schema1:Product ;
+    rdfs:label "gtdb OBO" ;
+    dcterms:description "gtdb OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo.gz> .
+
+kgr:obo-db-ingest.gtdb.owl a schema1:Product ;
+    rdfs:label "gtdb OWL" ;
+    dcterms:description "gtdb OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.owl> .
+
+kgr:obo-db-ingest.gtdb.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "gtdb SSSOM" ;
+    dcterms:description "gtdb SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv> .
 
 kgr:obo-db-ingest.gtdb.tsv a schema1:Product ;
     rdfs:label "gtdb Nodes TSV" ;
@@ -43886,10 +43678,45 @@ kgr:obo-db-ingest.hgnc.tsv a schema1:Product ;
     dcterms:description "hgnc Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/hgnc/hgnc.tsv> .
 
+kgr:obo-db-ingest.icd10.json a schema1:Product ;
+    rdfs:label "icd10 OBO Graph JSON" ;
+    dcterms:description "icd10 OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/icd10/icd10.json> .
+
+kgr:obo-db-ingest.icd10.obo a schema1:Product ;
+    rdfs:label "icd10 OBO" ;
+    dcterms:description "icd10 OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/icd10/icd10.obo> .
+
+kgr:obo-db-ingest.icd10.owl a schema1:Product ;
+    rdfs:label "icd10 OWL" ;
+    dcterms:description "icd10 OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/icd10/icd10.owl> .
+
 kgr:obo-db-ingest.icd10.tsv a schema1:Product ;
     rdfs:label "icd10 Nodes TSV" ;
     dcterms:description "icd10 Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/icd10/icd10.tsv> .
+
+kgr:obo-db-ingest.icd11.json a schema1:Product ;
+    rdfs:label "icd11 OBO Graph JSON" ;
+    dcterms:description "icd11 OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.json> .
+
+kgr:obo-db-ingest.icd11.obo a schema1:Product ;
+    rdfs:label "icd11 OBO" ;
+    dcterms:description "icd11 OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.obo> .
+
+kgr:obo-db-ingest.icd11.owl a schema1:Product ;
+    rdfs:label "icd11 OWL" ;
+    dcterms:description "icd11 OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.owl> .
+
+kgr:obo-db-ingest.icd11.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "icd11 SSSOM" ;
+    dcterms:description "icd11 SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/icd11/icd11.sssom.tsv> .
 
 kgr:obo-db-ingest.icd11.tsv a schema1:Product ;
     rdfs:label "icd11 Nodes TSV" ;
@@ -43976,45 +43803,215 @@ kgr:obo-db-ingest.kegg.genome.tsv a schema1:Product ;
     dcterms:description "kegg.genome Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv> .
 
+kgr:obo-db-ingest.mesh.json a schema1:Product ;
+    rdfs:label "mesh OBO Graph JSON" ;
+    dcterms:description "mesh OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mesh/mesh.json.gz> .
+
+kgr:obo-db-ingest.mesh.obo a schema1:Product ;
+    rdfs:label "mesh OBO" ;
+    dcterms:description "mesh OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mesh/mesh.obo> .
+
+kgr:obo-db-ingest.mesh.owl a schema1:Product ;
+    rdfs:label "mesh OWL" ;
+    dcterms:description "mesh OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mesh/mesh.owl.gz> .
+
 kgr:obo-db-ingest.mesh.tsv a schema1:Product ;
     rdfs:label "mesh Nodes TSV" ;
     dcterms:description "mesh Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/mesh/mesh.tsv> .
+
+kgr:obo-db-ingest.mgi.json a schema1:Product ;
+    rdfs:label "mgi OBO Graph JSON" ;
+    dcterms:description "mgi OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.json.gz> .
+
+kgr:obo-db-ingest.mgi.obo a schema1:Product ;
+    rdfs:label "mgi OBO" ;
+    dcterms:description "mgi OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.obo.gz> .
+
+kgr:obo-db-ingest.mgi.owl a schema1:Product ;
+    rdfs:label "mgi OWL" ;
+    dcterms:description "mgi OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.owl.gz> .
+
+kgr:obo-db-ingest.mgi.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "mgi SSSOM" ;
+    dcterms:description "mgi SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.sssom.tsv> .
 
 kgr:obo-db-ingest.mgi.tsv a schema1:Product ;
     rdfs:label "mgi Nodes TSV" ;
     dcterms:description "mgi Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/mgi/mgi.tsv> .
 
+kgr:obo-db-ingest.mirbase.family.json a schema1:Product ;
+    rdfs:label "mirbase.family OBO Graph JSON" ;
+    dcterms:description "mirbase.family OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.json> .
+
+kgr:obo-db-ingest.mirbase.family.obo a schema1:Product ;
+    rdfs:label "mirbase.family OBO" ;
+    dcterms:description "mirbase.family OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.obo> .
+
+kgr:obo-db-ingest.mirbase.family.owl a schema1:Product ;
+    rdfs:label "mirbase.family OWL" ;
+    dcterms:description "mirbase.family OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.owl> .
+
 kgr:obo-db-ingest.mirbase.family.tsv a schema1:Product ;
     rdfs:label "mirbase.family Nodes TSV" ;
     dcterms:description "mirbase.family Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.tsv> .
+
+kgr:obo-db-ingest.mirbase.json a schema1:Product ;
+    rdfs:label "mirbase OBO Graph JSON" ;
+    dcterms:description "mirbase OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.json> .
+
+kgr:obo-db-ingest.mirbase.mature.json a schema1:Product ;
+    rdfs:label "mirbase.mature OBO Graph JSON" ;
+    dcterms:description "mirbase.mature OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.json> .
+
+kgr:obo-db-ingest.mirbase.mature.obo a schema1:Product ;
+    rdfs:label "mirbase.mature OBO" ;
+    dcterms:description "mirbase.mature OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo> .
+
+kgr:obo-db-ingest.mirbase.mature.owl a schema1:Product ;
+    rdfs:label "mirbase.mature OWL" ;
+    dcterms:description "mirbase.mature OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.owl> .
 
 kgr:obo-db-ingest.mirbase.mature.tsv a schema1:Product ;
     rdfs:label "mirbase.mature Nodes TSV" ;
     dcterms:description "mirbase.mature Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.tsv> .
 
+kgr:obo-db-ingest.mirbase.obo a schema1:Product ;
+    rdfs:label "mirbase OBO" ;
+    dcterms:description "mirbase OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.obo> .
+
+kgr:obo-db-ingest.mirbase.owl a schema1:Product ;
+    rdfs:label "mirbase OWL" ;
+    dcterms:description "mirbase OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.owl> .
+
+kgr:obo-db-ingest.mirbase.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "mirbase SSSOM" ;
+    dcterms:description "mirbase SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.sssom.tsv> .
+
 kgr:obo-db-ingest.mirbase.tsv a schema1:Product ;
     rdfs:label "mirbase Nodes TSV" ;
     dcterms:description "mirbase Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/mirbase/mirbase.tsv> .
+
+kgr:obo-db-ingest.msigdb.json a schema1:Product ;
+    rdfs:label "msigdb OBO Graph JSON" ;
+    dcterms:description "msigdb OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.json.gz> .
+
+kgr:obo-db-ingest.msigdb.obo a schema1:Product ;
+    rdfs:label "msigdb OBO" ;
+    dcterms:description "msigdb OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo.gz> .
+
+kgr:obo-db-ingest.msigdb.owl a schema1:Product ;
+    rdfs:label "msigdb OWL" ;
+    dcterms:description "msigdb OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl.gz> .
+
+kgr:obo-db-ingest.msigdb.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "msigdb SSSOM" ;
+    dcterms:description "msigdb SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.sssom.tsv> .
 
 kgr:obo-db-ingest.msigdb.tsv a schema1:Product ;
     rdfs:label "msigdb Nodes TSV" ;
     dcterms:description "msigdb Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv> .
 
+kgr:obo-db-ingest.ncbi.gc.json a schema1:Product ;
+    rdfs:label "ncbi.gc OBO Graph JSON" ;
+    dcterms:description "ncbi.gc OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.json> .
+
+kgr:obo-db-ingest.ncbi.gc.obo a schema1:Product ;
+    rdfs:label "ncbi.gc OBO" ;
+    dcterms:description "ncbi.gc OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.obo> .
+
+kgr:obo-db-ingest.ncbi.gc.owl a schema1:Product ;
+    rdfs:label "ncbi.gc OWL" ;
+    dcterms:description "ncbi.gc OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.owl> .
+
+kgr:obo-db-ingest.ncbi.gc.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "ncbi.gc SSSOM" ;
+    dcterms:description "ncbi.gc SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv> .
+
 kgr:obo-db-ingest.ncbi.gc.tsv a schema1:Product ;
     rdfs:label "ncbi.gc Nodes TSV" ;
     dcterms:description "ncbi.gc Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv> .
 
+kgr:obo-db-ingest.nihreporter.project.json a schema1:Product ;
+    rdfs:label "nihreporter.project OBO Graph JSON" ;
+    dcterms:description "nihreporter.project OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json.gz> .
+
+kgr:obo-db-ingest.nihreporter.project.obo a schema1:Product ;
+    rdfs:label "nihreporter.project OBO" ;
+    dcterms:description "nihreporter.project OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo.gz> .
+
+kgr:obo-db-ingest.nihreporter.project.owl a schema1:Product ;
+    rdfs:label "nihreporter.project OWL" ;
+    dcterms:description "nihreporter.project OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl.gz> .
+
 kgr:obo-db-ingest.nihreporter.project.tsv a schema1:Product ;
     rdfs:label "nihreporter.project Nodes TSV" ;
     dcterms:description "nihreporter.project Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.tsv.gz> .
+
+kgr:obo-db-ingest.nlm.json a schema1:Product ;
+    rdfs:label "nlm OBO Graph JSON" ;
+    dcterms:description "nlm OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.json> .
+
+kgr:obo-db-ingest.nlm.obo a schema1:Product ;
+    rdfs:label "nlm OBO" ;
+    dcterms:description "nlm OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.obo> .
+
+kgr:obo-db-ingest.nlm.owl a schema1:Product ;
+    rdfs:label "nlm OWL" ;
+    dcterms:description "nlm OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.owl> .
+
+kgr:obo-db-ingest.nlm.publisher.json a schema1:Product ;
+    rdfs:label "nlm.publisher OBO Graph JSON" ;
+    dcterms:description "nlm.publisher OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.json> .
+
+kgr:obo-db-ingest.nlm.publisher.obo a schema1:Product ;
+    rdfs:label "nlm.publisher OBO" ;
+    dcterms:description "nlm.publisher OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.obo> .
+
+kgr:obo-db-ingest.nlm.publisher.owl a schema1:Product ;
+    rdfs:label "nlm.publisher OWL" ;
+    dcterms:description "nlm.publisher OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.owl> .
 
 kgr:obo-db-ingest.nlm.publisher.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "nlm.publisher SSSOM" ;
@@ -44026,30 +44023,120 @@ kgr:obo-db-ingest.nlm.publisher.tsv a schema1:Product ;
     dcterms:description "nlm.publisher Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.tsv> .
 
+kgr:obo-db-ingest.nlm.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "nlm SSSOM" ;
+    dcterms:description "nlm SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.sssom.tsv> .
+
 kgr:obo-db-ingest.nlm.tsv a schema1:Product ;
     rdfs:label "nlm Nodes TSV" ;
     dcterms:description "nlm Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/nlm/nlm.tsv> .
+
+kgr:obo-db-ingest.npass.json a schema1:Product ;
+    rdfs:label "npass OBO Graph JSON" ;
+    dcterms:description "npass OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.json> .
+
+kgr:obo-db-ingest.npass.obo a schema1:Product ;
+    rdfs:label "npass OBO" ;
+    dcterms:description "npass OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.obo> .
+
+kgr:obo-db-ingest.npass.owl a schema1:Product ;
+    rdfs:label "npass OWL" ;
+    dcterms:description "npass OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.owl> .
+
+kgr:obo-db-ingest.npass.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "npass SSSOM" ;
+    dcterms:description "npass SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.sssom.tsv> .
 
 kgr:obo-db-ingest.npass.tsv a schema1:Product ;
     rdfs:label "npass Nodes TSV" ;
     dcterms:description "npass Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/npass/npass.tsv> .
 
+kgr:obo-db-ingest.omim.ps.json a schema1:Product ;
+    rdfs:label "omim.ps OBO Graph JSON" ;
+    dcterms:description "omim.ps OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json> .
+
+kgr:obo-db-ingest.omim.ps.obo a schema1:Product ;
+    rdfs:label "omim.ps OBO" ;
+    dcterms:description "omim.ps OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.obo> .
+
+kgr:obo-db-ingest.omim.ps.owl a schema1:Product ;
+    rdfs:label "omim.ps OWL" ;
+    dcterms:description "omim.ps OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.owl> .
+
 kgr:obo-db-ingest.omim.ps.tsv a schema1:Product ;
     rdfs:label "omim.ps Nodes TSV" ;
     dcterms:description "omim.ps Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv> .
+
+kgr:obo-db-ingest.pathbank.json a schema1:Product ;
+    rdfs:label "pathbank OBO Graph JSON" ;
+    dcterms:description "pathbank OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.json.gz> .
+
+kgr:obo-db-ingest.pathbank.obo a schema1:Product ;
+    rdfs:label "pathbank OBO" ;
+    dcterms:description "pathbank OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz> .
+
+kgr:obo-db-ingest.pathbank.owl a schema1:Product ;
+    rdfs:label "pathbank OWL" ;
+    dcterms:description "pathbank OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl.gz> .
+
+kgr:obo-db-ingest.pathbank.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "pathbank SSSOM" ;
+    dcterms:description "pathbank SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.sssom.tsv> .
 
 kgr:obo-db-ingest.pathbank.tsv a schema1:Product ;
     rdfs:label "pathbank Nodes TSV" ;
     dcterms:description "pathbank Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/pathbank/pathbank.tsv> .
 
+kgr:obo-db-ingest.pfam.clan.json a schema1:Product ;
+    rdfs:label "pfam.clan OBO Graph JSON" ;
+    dcterms:description "pfam.clan OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.json> .
+
+kgr:obo-db-ingest.pfam.clan.obo a schema1:Product ;
+    rdfs:label "pfam.clan OBO" ;
+    dcterms:description "pfam.clan OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.obo> .
+
+kgr:obo-db-ingest.pfam.clan.owl a schema1:Product ;
+    rdfs:label "pfam.clan OWL" ;
+    dcterms:description "pfam.clan OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.owl> .
+
 kgr:obo-db-ingest.pfam.clan.tsv a schema1:Product ;
     rdfs:label "pfam.clan Nodes TSV" ;
     dcterms:description "pfam.clan Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.tsv> .
+
+kgr:obo-db-ingest.pfam.json a schema1:Product ;
+    rdfs:label "pfam OBO Graph JSON" ;
+    dcterms:description "pfam OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pfam/pfam.json> .
+
+kgr:obo-db-ingest.pfam.obo a schema1:Product ;
+    rdfs:label "pfam OBO" ;
+    dcterms:description "pfam OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pfam/pfam.obo> .
+
+kgr:obo-db-ingest.pfam.owl a schema1:Product ;
+    rdfs:label "pfam OWL" ;
+    dcterms:description "pfam OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pfam/pfam.owl> .
 
 kgr:obo-db-ingest.pfam.tsv a schema1:Product ;
     rdfs:label "pfam Nodes TSV" ;
@@ -44176,20 +44263,85 @@ kgr:obo-db-ingest.pharmgkb.variant.tsv a schema1:Product ;
     dcterms:description "pharmgkb.variant Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.tsv> .
 
+kgr:obo-db-ingest.pid.pathway.json a schema1:Product ;
+    rdfs:label "pid.pathway OBO Graph JSON" ;
+    dcterms:description "pid.pathway OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.json> .
+
+kgr:obo-db-ingest.pid.pathway.obo a schema1:Product ;
+    rdfs:label "pid.pathway OBO" ;
+    dcterms:description "pid.pathway OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.obo> .
+
+kgr:obo-db-ingest.pid.pathway.owl a schema1:Product ;
+    rdfs:label "pid.pathway OWL" ;
+    dcterms:description "pid.pathway OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.owl> .
+
 kgr:obo-db-ingest.pid.pathway.tsv a schema1:Product ;
     rdfs:label "pid.pathway Nodes TSV" ;
     dcterms:description "pid.pathway Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.tsv> .
+
+kgr:obo-db-ingest.pombase.json a schema1:Product ;
+    rdfs:label "pombase OBO Graph JSON" ;
+    dcterms:description "pombase OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pombase/pombase.json> .
+
+kgr:obo-db-ingest.pombase.obo a schema1:Product ;
+    rdfs:label "pombase OBO" ;
+    dcterms:description "pombase OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pombase/pombase.obo> .
+
+kgr:obo-db-ingest.pombase.owl a schema1:Product ;
+    rdfs:label "pombase OWL" ;
+    dcterms:description "pombase OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/pombase/pombase.owl> .
 
 kgr:obo-db-ingest.pombase.tsv a schema1:Product ;
     rdfs:label "pombase Nodes TSV" ;
     dcterms:description "pombase Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/pombase/pombase.tsv> .
 
+kgr:obo-db-ingest.reactome.json a schema1:Product ;
+    rdfs:label "reactome OBO Graph JSON" ;
+    dcterms:description "reactome OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/reactome/reactome.json.gz> .
+
+kgr:obo-db-ingest.reactome.obo a schema1:Product ;
+    rdfs:label "reactome OBO" ;
+    dcterms:description "reactome OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/reactome/reactome.obo> .
+
+kgr:obo-db-ingest.reactome.owl a schema1:Product ;
+    rdfs:label "reactome OWL" ;
+    dcterms:description "reactome OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/reactome/reactome.owl.gz> .
+
 kgr:obo-db-ingest.reactome.tsv a schema1:Product ;
     rdfs:label "reactome Nodes TSV" ;
     dcterms:description "reactome Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/reactome/reactome.tsv> .
+
+kgr:obo-db-ingest.rgd.json a schema1:Product ;
+    rdfs:label "rgd OBO Graph JSON" ;
+    dcterms:description "rgd OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.json.gz> .
+
+kgr:obo-db-ingest.rgd.obo a schema1:Product ;
+    rdfs:label "rgd OBO" ;
+    dcterms:description "rgd OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.obo> .
+
+kgr:obo-db-ingest.rgd.owl a schema1:Product ;
+    rdfs:label "rgd OWL" ;
+    dcterms:description "rgd OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.owl.gz> .
+
+kgr:obo-db-ingest.rgd.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "rgd SSSOM" ;
+    dcterms:description "rgd SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv> .
 
 kgr:obo-db-ingest.rgd.tsv a schema1:Product ;
     rdfs:label "rgd Nodes TSV" ;
@@ -44216,15 +44368,65 @@ kgr:obo-db-ingest.rhea.tsv a schema1:Product ;
     dcterms:description "rhea Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/rhea/rhea.tsv> .
 
+kgr:obo-db-ingest.ror.json a schema1:Product ;
+    rdfs:label "ror OBO Graph JSON" ;
+    dcterms:description "ror OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.json.gz> .
+
+kgr:obo-db-ingest.ror.obo a schema1:Product ;
+    rdfs:label "ror OBO" ;
+    dcterms:description "ror OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.obo> .
+
+kgr:obo-db-ingest.ror.owl a schema1:Product ;
+    rdfs:label "ror OWL" ;
+    dcterms:description "ror OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.owl.gz> .
+
+kgr:obo-db-ingest.ror.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "ror SSSOM" ;
+    dcterms:description "ror SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv> .
+
 kgr:obo-db-ingest.ror.tsv a schema1:Product ;
     rdfs:label "ror Nodes TSV" ;
     dcterms:description "ror Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/ror/ror.tsv> .
 
+kgr:obo-db-ingest.sgd.json a schema1:Product ;
+    rdfs:label "sgd OBO Graph JSON" ;
+    dcterms:description "sgd OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/sgd/sgd.json> .
+
+kgr:obo-db-ingest.sgd.obo a schema1:Product ;
+    rdfs:label "sgd OBO" ;
+    dcterms:description "sgd OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/sgd/sgd.obo> .
+
+kgr:obo-db-ingest.sgd.owl a schema1:Product ;
+    rdfs:label "sgd OWL" ;
+    dcterms:description "sgd OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/sgd/sgd.owl> .
+
 kgr:obo-db-ingest.sgd.tsv a schema1:Product ;
     rdfs:label "sgd Nodes TSV" ;
     dcterms:description "sgd Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/sgd/sgd.tsv> .
+
+kgr:obo-db-ingest.signor.json a schema1:Product ;
+    rdfs:label "signor OBO Graph JSON" ;
+    dcterms:description "signor OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.json> .
+
+kgr:obo-db-ingest.signor.obo a schema1:Product ;
+    rdfs:label "signor OBO" ;
+    dcterms:description "signor OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.obo> .
+
+kgr:obo-db-ingest.signor.owl a schema1:Product ;
+    rdfs:label "signor OWL" ;
+    dcterms:description "signor OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.owl> .
 
 kgr:obo-db-ingest.signor.tsv a schema1:Product ;
     rdfs:label "signor Nodes TSV" ;
@@ -44251,25 +44453,115 @@ kgr:obo-db-ingest.spdx.tsv a schema1:Product ;
     dcterms:description "spdx Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/spdx/spdx.tsv> .
 
+kgr:obo-db-ingest.sty.json a schema1:Product ;
+    rdfs:label "sty OBO Graph JSON" ;
+    dcterms:description "sty OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.json> .
+
+kgr:obo-db-ingest.sty.obo a schema1:Product ;
+    rdfs:label "sty OBO" ;
+    dcterms:description "sty OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.obo> .
+
+kgr:obo-db-ingest.sty.owl a schema1:Product ;
+    rdfs:label "sty OWL" ;
+    dcterms:description "sty OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.owl> .
+
 kgr:obo-db-ingest.sty.tsv a schema1:Product ;
     rdfs:label "sty Nodes TSV" ;
     dcterms:description "sty Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.tsv> .
+
+kgr:obo-db-ingest.swisslipid.json a schema1:Product ;
+    rdfs:label "swisslipid OBO Graph JSON" ;
+    dcterms:description "swisslipid OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.json.gz> .
+
+kgr:obo-db-ingest.swisslipid.obo a schema1:Product ;
+    rdfs:label "swisslipid OBO" ;
+    dcterms:description "swisslipid OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.obo.gz> .
+
+kgr:obo-db-ingest.swisslipid.owl a schema1:Product ;
+    rdfs:label "swisslipid OWL" ;
+    dcterms:description "swisslipid OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.owl.gz> .
+
+kgr:obo-db-ingest.swisslipid.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "swisslipid SSSOM" ;
+    dcterms:description "swisslipid SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv> .
 
 kgr:obo-db-ingest.swisslipid.tsv a schema1:Product ;
     rdfs:label "swisslipid Nodes TSV" ;
     dcterms:description "swisslipid Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz> .
 
+kgr:obo-db-ingest.uniprot.json a schema1:Product ;
+    rdfs:label "uniprot OBO Graph JSON" ;
+    dcterms:description "uniprot OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.json.gz> .
+
+kgr:obo-db-ingest.uniprot.obo a schema1:Product ;
+    rdfs:label "uniprot OBO" ;
+    dcterms:description "uniprot OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz> .
+
+kgr:obo-db-ingest.uniprot.owl a schema1:Product ;
+    rdfs:label "uniprot OWL" ;
+    dcterms:description "uniprot OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl.gz> .
+
+kgr:obo-db-ingest.uniprot.ptm.json a schema1:Product ;
+    rdfs:label "uniprot.ptm OBO Graph JSON" ;
+    dcterms:description "uniprot.ptm OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.json> .
+
+kgr:obo-db-ingest.uniprot.ptm.obo a schema1:Product ;
+    rdfs:label "uniprot.ptm OBO" ;
+    dcterms:description "uniprot.ptm OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.obo> .
+
+kgr:obo-db-ingest.uniprot.ptm.owl a schema1:Product ;
+    rdfs:label "uniprot.ptm OWL" ;
+    dcterms:description "uniprot.ptm OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.owl> .
+
+kgr:obo-db-ingest.uniprot.ptm.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "uniprot.ptm SSSOM" ;
+    dcterms:description "uniprot.ptm SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.sssom.tsv> .
+
 kgr:obo-db-ingest.uniprot.ptm.tsv a schema1:Product ;
     rdfs:label "uniprot.ptm Nodes TSV" ;
     dcterms:description "uniprot.ptm Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv> .
 
+kgr:obo-db-ingest.uniprot.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "uniprot SSSOM" ;
+    dcterms:description "uniprot SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom.tsv> .
+
 kgr:obo-db-ingest.uniprot.tsv a schema1:Product ;
     rdfs:label "uniprot Nodes TSV" ;
     dcterms:description "uniprot Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/uniprot/uniprot.tsv> .
+
+kgr:obo-db-ingest.wikipathways.json a schema1:Product ;
+    rdfs:label "wikipathways OBO Graph JSON" ;
+    dcterms:description "wikipathways OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json> .
+
+kgr:obo-db-ingest.wikipathways.obo a schema1:Product ;
+    rdfs:label "wikipathways OBO" ;
+    dcterms:description "wikipathways OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.obo> .
+
+kgr:obo-db-ingest.wikipathways.owl a schema1:Product ;
+    rdfs:label "wikipathways OWL" ;
+    dcterms:description "wikipathways OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl> .
 
 kgr:obo-db-ingest.wikipathways.tsv a schema1:Product ;
     rdfs:label "wikipathways Nodes TSV" ;
@@ -44966,6 +45258,16 @@ kgr:proteomehd.uniprot_annotations a schema1:Product ;
     dcterms:description "Reviewed UniProt protein annotation file used in ProteomeHD analyses" ;
     schema1:url <https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/uniprot-all.7z> .
 
+kgr:proton.ontology a schema1:DocumentationProduct ;
+    rdfs:label "PROTON 3.0 Beta Specification" ;
+    dcterms:description "PDF specification of PROTON 3.0 Beta, describing the System, Top, Extent and Knowledge Management modules and their classes and properties." ;
+    schema1:url <https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf> .
+
+kgr:proton.top a schema1:OntologyProduct ;
+    rdfs:label "PROTON Top Module" ;
+    dcterms:description "PROTON Top module (version 3.0) in Turtle, as mirrored on TriplyDB, with core entity types such as Person, Location and Organization plus temporal, quantitative and abstract concepts." ;
+    schema1:url <https://api.triplydb.com/datasets/ontotext/proton/download.ttl.gz> .
+
 kgr:ptmd.phosphorylation_pda a schema1:Product ;
     rdfs:label "PTMD Phosphorylation PTM-Disease Associations" ;
     dcterms:description "PTMD 2.0 PTM-disease association subset for phosphorylation modification events" ;
@@ -44990,6 +45292,11 @@ kgr:repohub.sample-info.tsv a schema1:Product ;
     rdfs:label "Drug Repurposing Hub Sample Information TSV" ;
     dcterms:description "Latest physical sample-level metadata including Broad sample IDs, vendor catalog numbers, SMILES, InChIKey, and PubChem IDs (listed as version 2025-08-19 on the site)." ;
     schema1:url <https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt> .
+
+kgr:retriever.api a schema1:ProgrammingInterface ;
+    rdfs:label "Retriever TRAPI API" ;
+    dcterms:description "Production TRAPI 1.6 Knowledge Provider endpoint (/query, /asyncquery, /meta_knowledge_graph)." ;
+    schema1:url <https://retriever.transltr.io/> .
 
 kgr:ribocentre.search a schema1:GraphicalInterface ;
     rdfs:label "Sequence Search" ;
@@ -45020,6 +45327,16 @@ kgr:semopenalex.graph a schema1:GraphProduct ;
     rdfs:label "SemOpenAlex RDF Graph" ;
     dcterms:description "RDF graph representation of the OpenAlex scholarly data as Linked Open Data, distributed as Turtle (TTL) snapshots via the SemOpenAlex code and data repository." ;
     schema1:url <https://github.com/metaphacts/semopenalex> .
+
+kgr:service-kp.code a schema1:ProcessProduct ;
+    rdfs:label "Service KP Source Code" ;
+    dcterms:description "BioThings API stack source repository used by the Service Provider team." ;
+    schema1:url <https://github.com/biothings/biothings.api> .
+
+kgr:service-kp.portal a schema1:GraphicalInterface ;
+    rdfs:label "Service KP SmartAPI Portal" ;
+    dcterms:description "SmartAPI Translator portal for browsing registered Translator APIs." ;
+    schema1:url <https://smart-api.info/portal/translator> .
 
 kgr:sldb.data a schema1:Product ;
     rdfs:label "SLDB Interaction Table" ;
@@ -45547,6 +45864,16 @@ kgr:medgen.hpo-omim-mapping a schema1:MappingProduct ;
     dcterms:description "Combined mappings between MedGen, HPO, and OMIM with gzip compression" ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_OMIM_Mapping.txt.gz> .
 
+kgr:medgen.mgsty a schema1:Product ;
+    rdfs:label "MGSTY (Semantic Types)" ;
+    dcterms:description "Rich Release Format (RRF) file containing semantic type assignments with gzip compression" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz> .
+
+kgr:medgen.ordo-history a schema1:Product ;
+    rdfs:label "ORDO CUI History" ;
+    dcterms:description "History file tracking changes to Orphanet term mappings to CUIs" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt> .
+
 kgr:medi.drug_list_flexible a schema1:Product ;
     rdfs:label "MeDI Flexible Drug List" ;
     dcterms:description "Flexible drug list CSV from the medic v1.0.1 release" ;
@@ -45585,7 +45912,8 @@ kgr:monarchinitiative a schema1:Aggregator,
         kgr:kg-alzheimers.graph,
         kgr:monarchinitiative.api,
         kgr:monarchinitiative.kg,
-        kgr:monarchinitiative.portal ;
+        kgr:monarchinitiative.portal,
+        kgr:service-kp.trapi ;
     schema1:identifier "monarchinitiative" ;
     schema1:name "Monarch Initiative" ;
     doap:repository <https://github.com/monarch-initiative> ;
@@ -46168,6 +46496,26 @@ kgr:biomuta.dataset a schema1:Product ;
     dcterms:description "Unified BioMuta cancer mutation dataset produced by combining mutation records from TCGA, ICGC, CIViC, and COSMIC into a common field structure." ;
     schema1:url <https://biomuta.readthedocs.io/en/latest/> .
 
+kgr:cacao.api a schema1:ProgrammingInterface ;
+    rdfs:label "GONUTS MediaWiki API" ;
+    dcterms:description "MediaWiki API endpoint for accessing CACAO and related GO Wiki content programmatically." ;
+    schema1:url <https://gowiki.tamu.edu/wiki/api.php> .
+
+kgr:cacao.go-annotations a schema1:Product ;
+    rdfs:label "CACAO GO Annotations" ;
+    dcterms:description "GO annotations contributed by CACAO curators and distributed through the Gene Ontology and GOA (assigned_by CACAO); browsable in QuickGO." ;
+    schema1:url <https://www.ebi.ac.uk/QuickGO/annotations?assignedBy=CACAO> .
+
+kgr:cacao.gowiki a schema1:GraphicalInterface ;
+    rdfs:label "CACAO GO Wiki Page" ;
+    dcterms:description "Archived GONUTS wiki category for the original CACAO competitions (2010-2020)." ;
+    schema1:url <https://gowiki.tamu.edu/wiki/index.php/Category:CACAO> .
+
+kgr:cacao.portal a schema1:GraphicalInterface ;
+    rdfs:label "CACAO Platform" ;
+    dcterms:description "CACAO annotation competition platform (relaunched 2024), where students create and review GO annotations." ;
+    schema1:url <https://cacao.wiki/> .
+
 kgr:cm4ai_talent_kg.graph a schema1:GraphProduct ;
     rdfs:label "CM4AI Talent Knowledge Graph" ;
     dcterms:description "The CM4AI Talent Knowledge Graph connecting Bridge2AI and CM4AI researchers, projects, publications, datasets, and bio-entities." ;
@@ -46639,6 +46987,11 @@ kgr:chr.model.owl a schema1:OntologyProduct ;
     dcterms:description "OWL release of Monochrom Ontology" ;
     schema1:url <https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl> .
 
+kgr:date.archive a schema1:Product ;
+    rdfs:label "DATE Archive ZIP" ;
+    dcterms:description "ZIP with two TSV files: Drug_target_reactome_pathway.tsv (611,655 rows) and Drug_target_reactome_pathway_filtered.tsv (238,317 rows, parent pathways removed), with columns for expression dataset, drug name and STITCH ID, tissue, cell line, target UniProt ID and symbol, target class, pathway and pathway size." ;
+    schema1:url <https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip> .
+
 kgr:eram.downloads a schema1:Product ;
     rdfs:label "eRAM Data Downloads" ;
     dcterms:description "Downloadable data files containing rare disease annotations, phenotypes, symptoms, genes, and genotypes" ;
@@ -46693,6 +47046,11 @@ kgr:lncrnalyzr.graph a schema1:GraphProduct ;
     rdfs:label "lncRNAlyzr Knowledge Graph" ;
     dcterms:description "Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory interactions, and disease associations" ;
     schema1:url <https://github.com/MaayanLab/lncRNAlyzr> .
+
+kgr:medgen.id-mappings a schema1:MappingProduct ;
+    rdfs:label "MedGen ID Mappings" ;
+    dcterms:description "Mappings between MedGen CUIs and external source identifiers with gzip compression" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGenIDMappings.txt.gz> .
 
 kgr:msigdb.downloads.human a schema1:Product ;
     rdfs:label "MSigDB Human Gene Sets Downloads" ;
@@ -46808,6 +47166,26 @@ kgr:icees-kg.graph a schema1:GraphProduct ;
     dcterms:description "KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/> .
 
+kgr:medgen.mgconso a schema1:Product ;
+    rdfs:label "MGCONSO (Concept Names)" ;
+    dcterms:description "Rich Release Format (RRF) file containing concept names and source identifiers with gzip compression" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz> .
+
+kgr:medgen.mgrel a schema1:MappingProduct ;
+    rdfs:label "MGREL (Relationships)" ;
+    dcterms:description "Rich Release Format (RRF) file containing relationships between concepts with gzip compression" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz> .
+
+kgr:medgen.mgsat a schema1:Product ;
+    rdfs:label "MGSAT (Attributes)" ;
+    dcterms:description "Rich Release Format (RRF) file containing attributes and properties with gzip compression" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz> .
+
+kgr:medgen.names a schema1:Product ;
+    rdfs:label "NAMES" ;
+    dcterms:description "Rich Release Format (RRF) file containing concept names for search with gzip compression" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz> .
+
 kgr:togows.rest-api a schema1:ProgrammingInterface ;
     rdfs:label "TogoWS REST API" ;
     dcterms:description "REST API for retrieving entries, or individual fields of entries, from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP, PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA output." ;
@@ -46892,6 +47270,16 @@ kgr:skm.ckn.v2.graph a schema1:GraphProduct ;
     dcterms:description "Comprehensive Knowledge Network v2 in SIF/LGL format with 26,234 entities and ~500,000 interactions" ;
     schema1:url <https://skm.nib.si/downloads/ckn/v2-2023.06/edges> .
 
+kgr:ars.api a schema1:ProgrammingInterface ;
+    rdfs:label "ARS API" ;
+    dcterms:description "TRAPI-compatible ARS endpoint for asynchronous query submission." ;
+    schema1:url <https://ars-prod.transltr.io/ars/api/> .
+
+kgr:ars.portal a schema1:GraphicalInterface ;
+    rdfs:label "ARS Production Portal" ;
+    dcterms:description "JSON index of the ARS production relay server and its registered agent endpoints." ;
+    schema1:url <https://ars-prod.transltr.io/> .
+
 kgr:cardiokg.neo4j a schema1:GraphProduct ;
     rdfs:label "CardioKG Neo4j graph construction scripts" ;
     dcterms:description "Neo4j construction artifacts for CardioKG, including Cypher scripts to create graph nodes and add edges. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
@@ -46937,10 +47325,25 @@ kgr:kinace.portal a schema1:GraphicalInterface ;
     dcterms:description "Interactive Shiny web interface for exploring and visualizing human kinase-substrate interactions" ;
     schema1:url <https://kinet.kinametrix.com/> .
 
+kgr:omicsdi.api a schema1:ProgrammingInterface ;
+    rdfs:label "OmicsDI API" ;
+    dcterms:description "Swagger-documented web service for programmatic querying of OmicsDI dataset metadata." ;
+    schema1:url <https://www.omicsdi.org/ws/swagger-ui/index.html> .
+
+kgr:omicsdi.portal a schema1:GraphicalInterface ;
+    rdfs:label "OmicsDI Portal" ;
+    dcterms:description "Web portal for searching and browsing integrated omics dataset metadata across repositories." ;
+    schema1:url <https://www.omicsdi.org/> .
+
 kgr:athena.vocabularies a schema1:Product ;
     rdfs:label "Athena Vocabulary Downloads" ;
     dcterms:description "Downloadable standardized vocabulary bundles for OMOP CDM assembled through the authenticated Athena web application" ;
     schema1:url <https://athena.ohdsi.org/vocabulary/list> .
+
+kgr:cqs.code a schema1:ProcessProduct ;
+    rdfs:label "CQS Source Repository" ;
+    dcterms:description "Source code and templates implementing Curated Query Service inference logic." ;
+    schema1:url <https://github.com/TranslatorSRI/CQS> .
 
 kgr:digcfdekg.graph a schema1:GraphProduct ;
     rdfs:label "CFDE REVEAL Knowledge Graph" ;
@@ -47022,6 +47425,11 @@ kgr:klocd.portal a schema1:GraphicalInterface ;
     dcterms:description "KLOCD web interface for searching its drug, chemical, gene expression dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases, built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov, AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology, among other public sources." ;
     schema1:url <http://www.organchip.cn/> .
 
+kgr:medgen.mgdef a schema1:Product ;
+    rdfs:label "MGDEF (Definitions)" ;
+    dcterms:description "Rich Release Format (RRF) file containing definitions and descriptions with gzip compression" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz> .
+
 kgr:micromap.api a schema1:ProgrammingInterface ;
     rdfs:label "MicroMap API" ;
     dcterms:description "REST API and MCP server over the production MicroMap Neo4j graph, with endpoints for taxa, diseases, metabolites, drugs, genes, proteins, pathways, biomarker signatures, papers, cross-feeding networks, provenance and graph traversal. Access requires a Graphomics API key. The API application code is in the open-source repository." ;
@@ -47100,6 +47508,11 @@ kgr:epigraphdb.graph a schema1:GraphProduct ;
     rdfs:label "EpiGraphDB Graph Database" ;
     dcterms:description "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)" ;
     schema1:url <https://docs.epigraphdb.org/graph-database/> .
+
+kgr:medgen.csv a schema1:Product ;
+    rdfs:label "CSV Data Files" ;
+    dcterms:description "CSV format data files directory with additional data exports" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/> .
 
 kgr:medkg.site a schema1:GraphicalInterface ;
     rdfs:label "MedKG Site" ;
@@ -47243,6 +47656,10 @@ kgr:ncbi a schema1:DataSource,
         kgr:metatraits.ncbi2gtdb,
         kgr:ncbi.datasets-api,
         kgr:ncbi.gc,
+        kgr:obo-db-ingest.ncbi.gc.json,
+        kgr:obo-db-ingest.ncbi.gc.obo,
+        kgr:obo-db-ingest.ncbi.gc.owl,
+        kgr:obo-db-ingest.ncbi.gc.sssom.tsv,
         kgr:obo-db-ingest.ncbi.gc.tsv ;
     schema1:name "National Center for Biotechnology Information" ;
     skos:inScheme "biomedical",
@@ -47523,6 +47940,11 @@ kgr:rnacentral.public-db a schema1:DataModelProduct ;
     rdfs:label "RNAcentral Public Postgres Database" ;
     dcterms:description "Public PostgreSQL database for direct SQL access to RNAcentral data" ;
     schema1:url <https://rnacentral.org/help/public-database> .
+
+kgr:service-kp.trapi a schema1:ProgrammingInterface ;
+    rdfs:label "Service Provider TRAPI" ;
+    dcterms:description "TRAPI endpoint for the Service Provider team, served by BioThings Explorer, querying the BioThings and other APIs registered to the team in SmartAPI." ;
+    schema1:url <https://bte.transltr.io/v1/team/Service%20Provider> .
 
 kgr:pharmebinet.graphml a schema1:GraphProduct ;
     rdfs:label "PharMeBINet GraphML Release" ;

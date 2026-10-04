@@ -671,7 +671,6 @@ semrep	SemRep	DataSource	https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR
 sennet	SenNet	DataSource	https://sennetconsortium.org/	resource/sennet/sennet.md
 sep	Sample processing and separation techniques	Ontology	http://psidev.info/index.php?q=node/312	resource/sep/sep.md
 sepio	Scientific Evidence and Provenance Information Ontology	Ontology	https://github.com/monarch-initiative/SEPIO-ontology	resource/sepio/sepio.md
-service-kp	Service KP	KnowledgeGraph	https://github.com/NCATSTranslator/Translator-All/wiki/Service-Provider	resource/service-kp/service-kp.md
 sfld	Structure-Function Linkage Database	DataSource	http://sfld.rbvi.ucsf.edu/	resource/sfld/sfld.md
 sibils	SIBiLS	DataSource	https://sibils.org/	resource/sibils/sibils.md
 sibo	Social Insect Behavior Ontology	Ontology	https://github.com/obophenotype/sibo	resource/sibo/sibo.md

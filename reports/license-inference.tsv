@@ -8,6 +8,7 @@ aop-db	Aggregator	declared	https://www.epa.gov/healthresearch/adverse-outcome-pa
 aopwiki-rdf	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-sa/4.0/	copyleft	https://aopwiki.org/	custom	aop-wiki	
 aragorn	Aggregator	no-upstream	https://opensource.org/license/mit/	permissive				
 arax	Aggregator	no-upstream						
+ars	Aggregator	no-upstream	https://opensource.org/licenses/MIT	permissive				
 athena	Aggregator	inferred			https://loinc.org/license/	custom	loinc|snomedct	cdiscvocab|gemscript|icd10|medispan-gpi|rxnorm
 atom	KnowledgeGraph	inferred			https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 automat	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	https://www.alliancegenome.org/privacy-warranty-licensing	custom	alliance|cord-19|ctd|goa|gtex|multiomics-kp|sri-reference-kg	cebs|cohd|monarchinitiative|panther
@@ -45,6 +46,7 @@ connections-hypothesis-kp	KnowledgeGraph	declared	https://www.apache.org/license
 courage	KnowledgeGraph	no-upstream	https://opendatacommons.org/licenses/by/1-0/	permissive				
 cpathkg	KnowledgeGraph	inferred			https://creativecommons.org/publicdomain/zero/1.0/	public domain	biolink|kg-monarch	
 cpdb	Aggregator	no-upstream	http://cpdb.molgen.mpg.de/	non-commercial				
+cqs	Aggregator	no-upstream	https://opensource.org/licenses/MIT	permissive				
 crd	Aggregator	no-upstream						
 ctkp	KnowledgeGraph	inferred			https://opensource.org/license/mit/	permissive	translator	
 culture-knowledge-graph	KnowledgeGraph	no-upstream						
@@ -125,7 +127,7 @@ malacards	Aggregator	no-upstream
 mangal	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	catalogue-of-life|gbif	
 maudekg	KnowledgeGraph	inferred			https://www.usa.gov/government-works	public domain	maude	
 mechreponet	KnowledgeGraph	inferred			https://ctdbase.org/about/legal.jsp	custom	ctd	mirtarbase|unii
-medgen	Aggregator	declared	https://www.ncbi.nlm.nih.gov/home/about/policies/	custom	https://uts.nlm.nih.gov/uts/	custom	umls	
+medgen	Aggregator	declared	https://www.ncbi.nlm.nih.gov/home/about/policies/	custom	https://www.snomed.org/snomed-ct/get-snomed	custom	snomedct|umls	gard|ghr|medlineplus
 medkg	KnowledgeGraph	inferred			https://www.snomed.org/snomed-ct/get-snomed	custom	snomedct	
 metabokg	KnowledgeGraph	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	afo|chebi|chmo|ms|ncit|sio|uberon	dcat|gnps|massive|pmc|prov-o|redu
 metatraits	KnowledgeGraph	conflict	http://creativecommons.org/licenses/by-sa/4.0/	copyleft	https://www.bv-brc.org/about	custom	bv-brc	
@@ -155,6 +157,7 @@ obo-db-ingest	Aggregator	declared	https://biopragmatics.github.io/obo-db-ingest/
 ohdsi	Aggregator	inferred			https://loinc.org/license/	custom	athena	
 okn-void	KnowledgeGraph	no-upstream						
 ols	Aggregator	no-upstream	https://www.apache.org/licenses/LICENSE-2.0	permissive				
+omicsdi	Aggregator	declared	https://www.ebi.ac.uk/about/terms-of-use/	custom	https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress|biostudies	ena|gene-expression-omnibus|gnps|lincs|massive|mw|paxdb
 omnipath	Aggregator	no-upstream						
 onco	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://www.ebi.ac.uk/about/terms-of-use	custom	europepmc	pdb
 ontology-kp	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	ubergraph	
@@ -189,7 +192,7 @@ rdkg	KnowledgeGraph	inferred			https://uts.nlm.nih.gov/uts/	custom	umls
 redrugs	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://cancer.sanger.ac.uk/cosmic/license	custom	cosmic|irefindex	
 redu	Aggregator	no-upstream						
 reprotox-kg	KnowledgeGraph	declared	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubchem|pubmed	
-retriever	Aggregator	no-upstream						
+retriever	Aggregator	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://opensource.org/license/mit/	permissive	translator	
 rna-kg	KnowledgeGraph	conflict	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://cancer.sanger.ac.uk/cosmic/license	custom	circbase|cosmic	
 rnacentral	Aggregator	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	genecards|lncipedia|noncode	5srrnadb|crd|dictybase|ena|evlncrnas|greengenes|gtrnadb|lncbase|lncbook|lncrnadb|malacards|mgnify|mirgenedb|modomics|pirbase|plncdb|rediportal|rgd|silva|snodb|snopy|snornadatabase|srpdb|tair|tarbase|zwd
 robokop	KnowledgeGraph	no-upstream	https://opensource.org/licenses/MIT	permissive				
@@ -199,7 +202,7 @@ sawgraph	KnowledgeGraph	inferred			US federal government public domain	public do
 scales	KnowledgeGraph	inferred			U.S. Government Work (public domain records; PACER access subject to per-page usage fees)	public domain	pacer	
 securechainkg	KnowledgeGraph	declared	https://opensource.org/licenses/Apache-2.0	permissive	https://opensource.org/licenses/Apache-2.0	permissive	osv	cargo|maven-central|npm|nuget|pypi|rubygems
 semopenalex	KnowledgeGraph	inferred			https://creativecommons.org/publicdomain/zero/1.0/	public domain	openalex	
-service-kp	KnowledgeGraph	no-upstream	https://opensource.org/licenses/Apache-2.0	permissive				
+service-kp	KnowledgeGraph	conflict	https://opensource.org/licenses/Apache-2.0	permissive	https://www.alliancegenome.org/privacy-warranty-licensing	custom	alliance|ctd|disgenet|gene2phenotype|idisk|innatedb|multiomics-kp|semmeddb	bioplanet|ddinter|monarchinitiative|panther
 skm	KnowledgeGraph	conflict	http://creativecommons.org/licenses/by-nc-sa/3.0/	non-commercial	https://biocyc.org/download.shtml	custom	biocyc|kegg|metacyc	araport|tair
 sldb	KnowledgeGraph	no-upstream						
 sniff	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	http://creativecommons.org/licenses/by/4.0/	permissive	canvas|ensembl|mondo	darwins-ark|dog10k

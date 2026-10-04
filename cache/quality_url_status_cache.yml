@@ -2215,6 +2215,7 @@ http://purl.obolibrary.org/obo/go/noctua/neo.obo:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://purl.obolibrary.org/obo/go/noctua/neo.owl:
   checked_at: '2026-10-02T21:36:57Z'
@@ -6213,6 +6214,12 @@ https://api.reporter.nih.gov/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
+  status_code: 200
+https://api.triplydb.com/datasets/ontotext/proton/download.ttl.gz:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
   status_code: 200
 https://apollo2.chemistry.gatech.edu/AboutRiboVision2/Advanced_Features/:
   checked_at: '2026-10-02T21:37:22Z'
@@ -6922,6 +6929,11 @@ https://ars-prod.transltr.io/:
   ok: true
   source: cache
   status_code: 200
+https://ars-prod.transltr.io/ars/api/:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
 https://ars-prod.transltr.io/ars/api/submit:
   checked_at: '2026-10-02T21:38:13Z'
   error: null
@@ -7443,6 +7455,11 @@ https://browser.planteome.org/amigo:
   ok: true
   source: cache
   status_code: 200
+https://bte.transltr.io/v1/team/Service%20Provider:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
 https://bugsigdb.org/:
   checked_at: '2026-10-02T21:38:20Z'
   error: null
@@ -7454,6 +7471,11 @@ https://burnseverity.cr.usgs.gov/viewer/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://cacao.wiki/:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
   status_code: 200
 https://cam-kp-api-dev.renci.org/1.2.0/query:
   checked_at: '2026-05-19T18:50:20Z'
@@ -8600,6 +8622,7 @@ https://data.bioontology.org/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.cdc.gov/browse?category=500+Cities+%26+Places:
   checked_at: '2026-10-02T21:38:37Z'
@@ -12024,11 +12047,13 @@ https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl:
   checked_at: '2026-06-27T13:24:56Z'
@@ -13830,6 +13855,11 @@ https://github.com/NCATSTranslator:
   ok: true
   source: cache
   status_code: 200
+https://github.com/NCATSTranslator/Relay:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap:
   checked_at: '2026-10-02T21:39:14Z'
   error: null
@@ -14362,6 +14392,7 @@ https://github.com/RENCI-AUTOMAT/automat-server:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/RTXteam/RTX:
   checked_at: '2026-10-02T21:39:18Z'
@@ -14595,11 +14626,13 @@ https://github.com/The-Sequence-Ontology/Specifications:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/TranslatorSRI/CQS:
   checked_at: '2026-10-02T21:39:19Z'
@@ -18642,6 +18675,13 @@ https://gowiki.tamu.edu/wiki/api.php:
   ok: false
   source: cache
   status_code: null
+https://gowiki.tamu.edu/wiki/index.php/Category:CACAO:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: 'HEAD request failed: HTTPSConnectionPool(host=''gowiki.tamu.edu'', port=443):
+    Read timed out. (read timeout=8.0); GET request failed: HTTPSConnectionPool(host=''gowiki.tamu.edu'',
+    port=443): Read timed out. (read timeout=8.0)'
+  ok: false
+  status_code: null
 https://graph.data.era.europa.eu/:
   checked_at: '2026-10-02T21:39:39Z'
   error: null
@@ -22134,6 +22174,7 @@ https://pmc.ncbi.nlm.nih.gov/tools/cloud/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pmc.ncbi.nlm.nih.gov/tools/developers/:
   checked_at: '2026-10-02T21:40:44Z'
@@ -23021,6 +23062,7 @@ https://reporter.nih.gov/exporter/crisp:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://reporter.nih.gov/exporter/linktables:
   checked_at: '2026-10-02T21:40:51Z'
@@ -24106,6 +24148,11 @@ https://rest.ensembl.org/:
   ok: true
   source: cache
   status_code: 200
+https://retriever.transltr.io/:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
 https://rfam.org/:
   checked_at: '2026-10-02T21:40:56Z'
   error: null
@@ -25120,16 +25167,19 @@ https://stars.renci.org/var/plater/bl-4.2.1/BINDING_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/CAMKP_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/COHD_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/CTD_Automat/f92c663160ec5e36/:
   checked_at: '2026-10-02T21:41:05Z'
@@ -25141,6 +25191,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/CTKP_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/DrugCentral_Automat/dec0617490b49c7a/:
   checked_at: '2026-10-02T21:41:05Z'
@@ -25152,6 +25203,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/EHR_Clinical_Connections_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/:
   checked_at: '2026-10-02T21:41:05Z'
@@ -25169,6 +25221,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/GenomeAllianceOrthologs_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/GtoPdb_Automat/0ea6074c824c2236/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -25210,11 +25263,13 @@ https://stars.renci.org/var/plater/bl-4.2.1/MayTreatKP_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/MolePro_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -25232,6 +25287,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/Reactome_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -25249,6 +25305,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/TMKP_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -25260,6 +25317,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/ViralProteome_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -25271,6 +25329,7 @@ https://stars.renci.org/var/plater/bl-4.2.6/CEBS_Automat/:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/translator/releases/alliance/2025_12_15/:
   checked_at: '2026-03-30T20:13:49Z'
@@ -26720,6 +26779,31 @@ https://w3id.org/biopragmatics/resources/geonames/geonames.tsv:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://w3id.org/biopragmatics/resources/goldbook/goldbook.json:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://w3id.org/biopragmatics/resources/goldbook/goldbook.obo:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://w3id.org/biopragmatics/resources/goldbook/goldbook.owl:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://w3id.org/biopragmatics/resources/goldbook/goldbook.sssom.tsv:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
   status_code: 200
 https://w3id.org/biopragmatics/resources/gtdb/gtdb.json:
   checked_at: '2026-02-16T22:13:30Z'
@@ -29103,6 +29187,11 @@ https://www.ebi.ac.uk/QuickGO/:
   ok: true
   source: cache
   status_code: 200
+https://www.ebi.ac.uk/QuickGO/annotations?assignedBy=CACAO:
+  checked_at: '2026-10-04T12:32:33Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ebi.ac.uk/QuickGO/api/:
   checked_at: '2026-02-16T22:13:45Z'
   error: null
@@ -29449,6 +29538,7 @@ https://www.ebi.ac.uk/ols4/mcp:
   checked_at: '2026-10-04T03:43:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/ols4/ontologies/oio:
   checked_at: '2026-10-02T21:41:40Z'

@@ -76,6 +76,7 @@ bto,active,PASS
 bugsigdb,active,PASS
 bv-brc,active,PASS
 cabi-isc,active,PASS
+cacao,active,PASS
 campbell-biology,active,PASS
 cancer-genome-interpreter,active,PASS
 cancer-registry-kg,active,PASS
@@ -699,7 +700,6 @@ protcid,active,PASS
 proteomehd,active,PASS
 proteomicsdb,active,PASS
 proteopedia,active,PASS
-proton,active,PASS
 prov-o,active,PASS
 psdo,active,PASS
 pso,active,PASS
@@ -908,7 +908,6 @@ bind,inactive,PASS
 bio2rdf,inactive,PASS
 biomarkerkg,inactive,PASS
 bootstrep,inactive,PASS
-cacao,inactive,PASS
 cam-kp,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
@@ -1003,6 +1002,7 @@ pid,inactive,PASS
 plo,inactive,PASS
 predict,inactive,PASS
 propreo,inactive,PASS
+proton,inactive,PASS
 prsatlas,inactive,PASS
 psygenet,inactive,PASS
 rdbridge,unresponsive,PASS
