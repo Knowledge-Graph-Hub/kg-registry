@@ -686,6 +686,15 @@ entries:
     source_path: resource/bioteque/bioteque.md
     status: valid
     warnings: []
+  resource/biothings-explorer/biothings-explorer.md#publication[0]#DOI:10.1093/bioinformatics/btad570:
+    checked_at: '2026-10-04T17:13:51Z'
+    errors: []
+    fingerprint: a03a7a54c1dd32882da0f08fc4b7268e89a4143e05ed32c919b313abb0334c39
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btad570
+    source_path: resource/biothings-explorer/biothings-explorer.md
+    status: valid
+    warnings: []
   resource/biothings/biothings.md#publication[0]#DOI:10.1093/bioinformatics/btac017:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3078,6 +3087,24 @@ entries:
     source_path: resource/genophenoenvo-kg/genophenoenvo-kg.md
     status: valid
     warnings: []
+  resource/glida/glida.md#publication[0]#DOI:10.1093/nar/gkj028:
+    checked_at: '2026-10-04T17:14:55Z'
+    errors: []
+    fingerprint: a50cd5084c885cf2871ce04f0cfeb1fd2d5ab1ec709b4a66e1a9f85dba08c5cc
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkj028
+    source_path: resource/glida/glida.md
+    status: valid
+    warnings: []
+  resource/glida/glida.md#publication[1]#DOI:10.1093/nar/gkm948:
+    checked_at: '2026-10-04T17:14:56Z'
+    errors: []
+    fingerprint: f6c63ab9b1702b53ba0854c02f03f54d314379af7d6865da190cba338e9083be
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkm948
+    source_path: resource/glida/glida.md
+    status: valid
+    warnings: []
   resource/glkb/glkb.md#publication[0]#DOI:10.1101/2024.09.22.614323:
     checked_at: '2026-06-22T16:26:53Z'
     errors: []
@@ -3310,6 +3337,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad944
     source_path: resource/gtopdb/gtopdb.md
+    status: valid
+    warnings: []
+  resource/gtr/gtr.md#publication[0]#DOI:10.1093/nar/gks1173:
+    checked_at: '2026-10-04T17:14:57Z'
+    errors: []
+    fingerprint: 96b845052629d1157cc5a761d2ec5cd87624b916539f54f8f6e339c4537e8828
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gks1173
+    source_path: resource/gtr/gtr.md
     status: valid
     warnings: []
   resource/gtrnadb/gtrnadb.md#publication[0]#DOI:10.1093/nar/gkv1309:

@@ -28,6 +28,8 @@ original_source:
   source: genetics-kp
 - relation_type: prov:wasInformedBy
   source: connections-hypothesis-kp
+- relation_type: prov:wasInformedBy
+  source: biothings-explorer
 product_url: https://ars-prod.transltr.io/
 layout: product_detail
 ---

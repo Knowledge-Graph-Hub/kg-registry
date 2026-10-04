@@ -219,6 +219,8 @@ products:
     source: genetics-kp
   - relation_type: prov:wasInformedBy
     source: connections-hypothesis-kp
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
   product_url: https://ars-prod.transltr.io/
 - category: ProgrammingInterface
   connection_url: https://ars-prod.transltr.io/ars/api
@@ -250,6 +252,8 @@ products:
     source: genetics-kp
   - relation_type: prov:wasInformedBy
     source: connections-hypothesis-kp
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
   product_url: https://ars-prod.transltr.io/ars/api/
 - category: ProcessProduct
   description: Source code and templates implementing Curated Query Service inference logic.

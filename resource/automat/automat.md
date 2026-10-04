@@ -425,6 +425,32 @@ products:
       - source: ubergraph
         relation_type: prov:wasInformedBy
     product_url: https://stars.renci.org/var/plater/bl-4.2.6/CEBS_Automat/
+  - category: GraphProduct
+    description: 'OHD Carolina Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.ohd-carolina
+    name: OHD_Carolina_Automat
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: automat
+      - relation_type: prov:hadPrimarySource
+        source: ohd-carolina
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/
+  - category: ProgrammingInterface
+    description: Automat TRAPI endpoint for OHD@Carolina, with query, meta knowledge graph,
+      Cypher and node lookup operations (Biolink 4.2.1).
+    format: http
+    id: ohd-carolina.trapi
+    infores_id: automat-openhealthdata-carolina
+    name: OHD@Carolina Automat TRAPI API
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: ohd-carolina
+      - relation_type: prov:hadPrimarySource
+        source: automat
+      - relation_type: prov:hadPrimarySource
+        source: translator
+    product_url: https://automat.renci.org/ohd/docs
 repository: https://github.com/RENCI-AUTOMAT/automat-server
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-10-04T00:00:00Z'

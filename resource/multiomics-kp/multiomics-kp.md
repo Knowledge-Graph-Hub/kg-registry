@@ -254,6 +254,8 @@ products:
       source: gdsc
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:wasInformedBy
+      source: biothings-explorer
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
 creation_date: '2025-03-09T00:00:00Z'
 ---

@@ -3468,6 +3468,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
@@ -3512,6 +3514,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
@@ -3557,6 +3561,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: Product
   compression: gzip
@@ -3820,6 +3826,25 @@ products:
     source: omim
   product_file_size: 11140
   product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json
+- category: Product
+  description: Tab-delimited listing of every registered test and the conditions and
+    genes it targets, updated daily. Conditions carry MedGen concept IDs, OMIM numbers
+    and SNOMED CT IDs where available; genes carry NCBI Gene IDs and symbols.
+  format: tsv
+  id: gtr.test_condition_gene
+  name: GTR Test, Condition and Gene Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtr
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_condition_gene.txt
 publications:
 - authors:
   - Joanna S Amberger
