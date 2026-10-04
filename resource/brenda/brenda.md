@@ -468,9 +468,9 @@ publications:
 - authors:
   - Hauenstein, J.
   - Jeske, L.
-  - "J\xE4de, A."
+  - Jäde, A.
   - Krull, M.
-  - "D\xFCmmer, K."
+  - Dümmer, K.
   - Koblitz, J.
   - Tietz, A.
   - Jahn, D.

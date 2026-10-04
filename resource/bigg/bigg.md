@@ -482,7 +482,7 @@ publications:
 - authors:
   - King ZA
   - Lu JS
-  - "Dr\xE4ger A"
+  - Dräger A
   - Miller PC
   - Federowicz S
   - Lerman JA

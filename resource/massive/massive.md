@@ -175,10 +175,10 @@ publications:
   - Alexey V Melnik
   - Michael J Meehan
   - Wei-Ting Liu
-  - "Max Cr\xFCsemann"
+  - Max Crüsemann
   - Paul D Boudreau
   - Eduardo Esquenazi
-  - "Mario Sandoval-Calder\xF3n"
+  - Mario Sandoval-Calderón
   - Roland D Kersten
   - Laura A Pace
   - Robert A Quinn
@@ -198,7 +198,7 @@ publications:
   - Pavel Pevzner
   - Anna Edlund
   - Jeffrey McLean
-  - "J\xF6rn Piel"
+  - Jörn Piel
   - Brian T Murphy
   - Lena Gerwick
   - Chih-Chuang Liaw
@@ -252,7 +252,7 @@ publications:
   - Jingqui Dai
   - Ram Neupane
   - Joshua Gurr
-  - "Andr\xE9s M C Rodr\xEDguez"
+  - Andrés M C Rodríguez
   - Anne Lamsa
   - Chen Zhang
   - Kathleen Dorrestein
@@ -271,17 +271,17 @@ publications:
   - Danielle VanLeer
   - Paul Shinn
   - Ajit Jadhav
-  - "Rolf M\xFCller"
+  - Rolf Müller
   - Katrina M Waters
   - Wenyuan Shi
   - Xueting Liu
   - Lixin Zhang
   - Rob Knight
   - Paul R Jensen
-  - "Bernhard \xD8 Palsson"
+  - Bernhard Ø Palsson
   - Kit Pogliano
   - Roger G Linington
-  - "Marcelino Guti\xE9rrez"
+  - Marcelino Gutiérrez
   - Norberto P Lopes
   - William H Gerwick
   - Bradley S Moore

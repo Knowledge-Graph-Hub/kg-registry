@@ -240,12 +240,12 @@ publications:
   - Laura Harris
   - Arwa Ibrahim
   - Julius O.B. Jacobsen
-  - "Sebastian K\xF6hler"
+  - Sebastian Köhler
   - Julie A. McMurry
   - Violeta Munoz-Fuentes
   - Monica C. Munoz-Torres
   - Helen Parkinson
-  - "Zo\xEB M Pendlington"
+  - Zoë M Pendlington
   - Clare Pilgrim
   - Sofia MC Robb
   - Peter N. Robinson

@@ -721,7 +721,7 @@ publications:
   - Koleti A
   - Vidovic D
   - Chung C
-  - "Sch\xFCrer SC"
+  - Schürer SC
   - Vasiliauskas J
   - Pilarczyk M
   - Shamsaei B
@@ -845,7 +845,7 @@ publications:
   - Medvedovic M
   - Ma'ayan A
   - Pillai A
-  - "Sch\xFCrer SC"
+  - Schürer SC
   doi: doi:10.1093/nar/gkx1063
   id: https://doi.org/10.1093/nar/gkx1063
   journal: Nucleic Acids Research
@@ -876,8 +876,8 @@ publications:
   - Amar Koleti
   - Dusica Vidovic
   - Daniel J. B. Clarke
-  - "Stephan C. Sch\xFCrer"
-  - "Avi Ma\u2019ayan"
+  - Stephan C. Schürer
+  - Avi Ma’ayan
   - Jarek Meller
   - Mario Medvedovic
   doi: 10.1038/s41467-022-32205-3

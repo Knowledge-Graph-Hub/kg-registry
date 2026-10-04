@@ -9,7 +9,7 @@ contacts:
   - contact_type: email
     value: Michelle.Scott@USherbrooke.ca
   id: scott-lab-universite-de-sherbrooke
-  label: "Scott Lab, Department of Biochemistry and Functional Genomics, Universit\xE9 de Sherbrooke"
+  label: Scott Lab, Department of Biochemistry and Functional Genomics, Université de Sherbrooke
 creation_date: '2025-10-27T00:00:00Z'
 description: snoDB is a specialized database of human small nucleolar RNAs (snoRNAs),
   integrating data from established databases with manually curated literature. It
@@ -891,7 +891,7 @@ publications:
   - Paraqindes
   - Fafard-Couture
   - Deschamps-Francoeur
-  - "Faucher-Gigu\xE8re"
+  - Faucher-Giguère
   - Bouchard-Bourelle
   - Abou Elela
   - Catez

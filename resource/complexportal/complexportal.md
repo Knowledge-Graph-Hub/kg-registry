@@ -593,14 +593,14 @@ publications:
 - authors:
   - Birgit H M Meldal
   - Hema Bye-A-Jee
-  - "Luk\xE1\u0161 Gajdo\u0161"
-  - "Zuzana Hammerov\xE1"
-  - "Aneta Hor\xE1\u010Dkov\xE1"
+  - Lukáš Gajdoš
+  - Zuzana Hammerová
+  - Aneta Horáčková
   - Filip Melicher
   - Livia Perfetto
-  - "Daniel Pokorn\xFD"
+  - Daniel Pokorný
   - Milagros Rodriguez Lopez
-  - "Al\u017Eb\u011Bta T\xFCrkov\xE1"
+  - Alžběta Türková
   - Edith D Wong
   - Zengyan Xie
   - Elisabeth Barrera Casanova
@@ -622,7 +622,7 @@ publications:
   doi: 10.1093/nar/gku975
   id: doi:10.1093/nar/gku975
   journal: Nucleic Acids Research
-  title: "The complex portal\u2013an encyclopaedia of macromolecular complexes"
+  title: The complex portal–an encyclopaedia of macromolecular complexes
   year: '2015'
 taxon:
 - NCBITaxon:562

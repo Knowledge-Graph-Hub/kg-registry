@@ -1485,7 +1485,7 @@ publications:
   - Castanza AS
   - Recla JM
   - Eby D
-  - "Thorvaldsd\xF3ttir H"
+  - Thorvaldsdóttir H
   - Bult CJ
   - Mesirov JP
   category: Publication

@@ -2,12 +2,12 @@
 activity_status: active
 category: Aggregator
 creation_date: '2025-08-12T00:00:00Z'
-description: "PhosphoSitePlus is a comprehensive resource for experimentally validated\
-  \ post-translational modifications (PTMs) with emphasis on phosphorylation, ubiquitination,\
-  \ acetylation, methylation and more. It aggregates curated site-specific modification\
-  \ data, kinase\u2013substrate relationships, protein domains, mutation impact annotations,\
-  \ sequence motifs, and pathway/interaction context to support signaling, proteomics,\
-  \ and systems biology research."
+description: PhosphoSitePlus is a comprehensive resource for experimentally validated
+  post-translational modifications (PTMs) with emphasis on phosphorylation, ubiquitination,
+  acetylation, methylation and more. It aggregates curated site-specific modification
+  data, kinase–substrate relationships, protein domains, mutation impact annotations,
+  sequence motifs, and pathway/interaction context to support signaling, proteomics,
+  and systems biology research.
 domains:
 - proteomics
 - biomedical
@@ -20,8 +20,8 @@ layout: resource_detail
 name: PhosphoSitePlus
 products:
 - category: GraphicalInterface
-  description: "Web portal for browsing PTM sites, kinase\u2013substrate relationships,\
-    \ motifs, mutations and protein pages"
+  description: Web portal for browsing PTM sites, kinase–substrate relationships,
+    motifs, mutations and protein pages
   format: http
   id: phosphositeplus.portal
   name: PhosphoSitePlus Portal
@@ -30,8 +30,8 @@ products:
     source: phosphositeplus
   product_url: https://www.phosphosite.org/
 - category: Product
-  description: "Bulk data downloads (PTM site tables, kinase\u2013substrate data,\
-    \ regulatory sites, disease-associated mutations) requiring agreement to terms"
+  description: Bulk data downloads (PTM site tables, kinase–substrate data, regulatory
+    sites, disease-associated mutations) requiring agreement to terms
   format: http
   id: phosphositeplus.downloads
   name: PhosphoSitePlus Downloads

@@ -219,7 +219,7 @@ def write_resource_file(resource: Dict) -> bool:
         # Rebuild content with updated frontmatter
         parts = content.split('---', 2)
         if len(parts) >= 3:
-            new_yaml = yaml.dump(frontmatter, default_flow_style=False, sort_keys=False)
+            new_yaml = yaml.dump(frontmatter, default_flow_style=False, sort_keys=False, allow_unicode=True)
             new_content = f"---\n{new_yaml}---{parts[2]}"
 
             with open(path, 'w', encoding='utf-8') as f:

@@ -1687,7 +1687,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 publications:
 - authors:
-  - "\xD6zt\xFCrk-\xC7olak A"
+  - Öztürk-Çolak A
   - Marygold SJ
   - Antonazzo G
   - Attrill H

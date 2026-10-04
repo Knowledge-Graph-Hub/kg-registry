@@ -1331,8 +1331,8 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 - category: GraphProduct
-  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
-    \ levels (A\u2013E)"
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
   format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph
@@ -1531,7 +1531,7 @@ products:
     source: pubmed
 publications:
 - authors:
-  - "Fran\xE7ois Aguet"
+  - François Aguet
   - GTEx Consortium
   doi: 10.1126/science.aaz1776
   id: doi:10.1126/science.aaz1776

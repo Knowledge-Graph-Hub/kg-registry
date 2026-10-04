@@ -2487,7 +2487,7 @@ publications:
   year: '2022'
 - authors:
   - Pletscher-Frankild S
-  - "Pallej\xE0 A"
+  - Pallejà A
   - Tsafou K
   - Binder JX
   - Jensen LJ

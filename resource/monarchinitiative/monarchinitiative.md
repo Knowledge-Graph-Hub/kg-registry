@@ -116,7 +116,7 @@ publications:
 - authors:
   - Christopher J. Mungall
   - Julie A. McMurry
-  - "Sebastian K\xF6hler"
+  - Sebastian Köhler
   - James P. Balhoff
   - Charles Borromeo
   - Matthew Brush

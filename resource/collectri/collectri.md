@@ -365,14 +365,14 @@ products:
   product_url: https://zenodo.org/records/20816742
 publications:
 - authors:
-  - "Sophia M\xFCller-Dott"
+  - Sophia Müller-Dott
   - Eirini Tsirvouli
   - Miguel Vazquez
   - Ricardo O Ramirez Flores
   - Pau Badia-i-Mompel
   - Robin Fallegger
-  - "D\xE9nes T\xFCrei"
-  - "Astrid L\xE6greid"
+  - Dénes Türei
+  - Astrid Lægreid
   - Julio Saez-Rodriguez
   doi: doi:10.1093/nar/gkad841
   id: doi:10.1093/nar/gkad841

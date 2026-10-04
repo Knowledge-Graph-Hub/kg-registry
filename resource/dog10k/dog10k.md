@@ -114,15 +114,15 @@ publications:
   - Kerstin Lindblad-Toh
   - Catarina Ginja
   - Kadek Karang Agustina
-  - "Catherine Andr\xE9"
+  - Catherine André
   - Adam R. Boyko
   - Brian W. Davis
-  - "Michaela Dr\xF6gem\xFCller"
+  - Michaela Drögemüller
   - Xin-Yao Feng
   - Konstantinos Gkagkavouzis
   - Giorgos Iliopoulos
   - Alexander C. Harris
-  - "Marjo K. Hyt\xF6nen"
+  - Marjo K. Hytönen
   - Daniela C. Kalthoff
   - Yan-Hu Liu
   - Petros Lymberakis

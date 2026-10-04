@@ -572,7 +572,7 @@ publications:
   - Carin Li
   - Kristen Yee
   - Christiana Garros
-  - "Dorsa\_Yahya Rayat"
+  - Dorsa Yahya Rayat
   - Jeanne Coleongco
   - Tharuni Nandyala
   - Vasuk Gautam
@@ -595,7 +595,7 @@ publications:
   - Xuan Cao
   - Eponine Oler
   - Krissa Li
-  - "Ma\xEFlys Paccoud"
+  - Maïlys Paccoud
   - Chelsea Hong
   - An C Guo
   - Christopher Chan

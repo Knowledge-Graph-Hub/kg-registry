@@ -298,7 +298,7 @@ publications:
   - Rimorin C
   - Rivkin A
   - Romanow WJ
-  - "Sede\xF1o-Cort\xE9s AE"
+  - Sedeño-Cortés AE
   - Siletti K
   - Somasundaram S
   - Sulc J
@@ -317,7 +317,7 @@ publications:
   - Gillis J
   - Hertzano R
   - Hof PR
-  - "H\xF6llt T"
+  - Höllt T
   - Horwitz GD
   - Keene CD
   - Kharchenko PV
@@ -363,7 +363,7 @@ publications:
   - Penn O
   - Yao Z
   - Eggermont J
-  - "H\xF6llt T"
+  - Höllt T
   - Levi BP
   - Shehata SI
   - Aevermann B

@@ -94,7 +94,7 @@ publications:
   - Laurent C. Francioli
   - Grace Tiao
   - Beryl B. Cummings
-  - "Jessica Alf\xF6ldi"
+  - Jessica Alföldi
   - Qingbo Wang
   - Ryan L. Collins
   - Kristen M. Laricchia
@@ -121,7 +121,7 @@ publications:
   - Kaitlin E. Samocha
   - Emma Pierce-Hoffman
   - Zachary Zappala
-  - "Anne H. O\u2019Donnell-Luria"
+  - Anne H. O’Donnell-Luria
   - Eric Vallabh Minikel
   - Ben Weisburd
   - Monkol Lek
@@ -176,12 +176,12 @@ publications:
   - Mark J. Daly
   - Dawood Darbar
   - Ravindranath Duggirala
-  - "Jos\xE9e Dupuis"
+  - Josée Dupuis
   - Patrick T. Ellinor
   - Roberto Elosua
   - Jeanette Erdmann
-  - "T\xF5nu Esko"
-  - "Martti F\xE4rkkil\xE4"
+  - Tõnu Esko
+  - Martti Färkkilä
   - Jose Florez
   - Andre Franke
   - Gad Getz
@@ -208,7 +208,7 @@ publications:
   - Subra Kugathasan
   - Soo Heon Kwak
   - Markku Laakso
-  - "Terho Lehtim\xE4ki"
+  - Terho Lehtimäki
   - Ruth J. F. Loos
   - Steven A. Lubitz
   - Ronald C. W. Ma
@@ -224,7 +224,7 @@ publications:
   - Andres Metspalu
   - Benjamin M. Neale
   - Peter M. Nilsson
-  - "Michael C. O\u2019Donovan"
+  - Michael C. O’Donovan
   - Dost Ongur
   - Lorena Orozco
   - Michael J. Owen

@@ -464,7 +464,7 @@ publications:
 - authors:
   - Schober I
   - Koblitz J
-  - "Sard\xE0 Carbasse J"
+  - Sardà Carbasse J
   - Ebeling C
   - Schmidt ML
   - Podstawka A

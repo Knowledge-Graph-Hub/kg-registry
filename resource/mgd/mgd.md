@@ -178,7 +178,7 @@ publications:
   - Richard Baldarelli
   - James A Kadin
   - Joel E Richardson
-  - "Cynthia\_L Smith"
+  - Cynthia L Smith
   - Carol J Bult
   - Anna V Anagnostopoulos
   - Jon S Beal
@@ -210,7 +210,7 @@ publications:
   - Dmitry Sitnikov
   - Monika Tomczuk
   - Lauren Wilming
-  - "Yunxia \u2018Sophia\u2019 Zhu"
+  - Yunxia ‘Sophia’ Zhu
   doi: 10.1093/nar/gkaa1083
   id: https://doi.org/10.1093/nar/gkaa1083
   journal: Nucleic Acids Research

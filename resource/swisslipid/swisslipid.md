@@ -446,7 +446,7 @@ publications:
   - Hyka-Nouspikel N
   - Niknejad A
   - Gleizes A
-  - "G\xF6tz L"
+  - Götz L
   - Kuznetsov D
   - David FPA
   - van der Goot FG

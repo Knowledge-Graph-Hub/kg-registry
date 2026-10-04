@@ -736,8 +736,8 @@ publications:
   id: https://doi.org/10.1038/s41587-025-02659-z
   journal: Nature Biotechnology
   preferred: true
-  title: "A tissue-specific atlas of protein\u2013protein associations enables prioritization\
-    \ of candidate disease genes"
+  title: A tissue-specific atlas of protein–protein associations enables prioritization
+    of candidate disease genes
   year: '2026'
 - authors:
   - Carlos Cruz-Castillo

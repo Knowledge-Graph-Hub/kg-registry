@@ -10,7 +10,7 @@ contacts:
     value: gglusman@isbscience.org
   - contact_type: github
     value: gglusman
-  label: "Gw\xEAnlyn Glusman"
+  label: Gwênlyn Glusman
 creation_date: '2025-04-22T00:00:00Z'
 description: A Translator knowledge provider focused on drug approval status and other
   drug-related metadata.

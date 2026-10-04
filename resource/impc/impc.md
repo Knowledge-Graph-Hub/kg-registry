@@ -423,7 +423,7 @@ publications:
   - Groza T
   - Gomez FL
   - Mashhadi HH
-  - "Mu\xF1oz-Fuentes V"
+  - Muñoz-Fuentes V
   - Gunes O
   - Wilson R
   - Cacheiro P

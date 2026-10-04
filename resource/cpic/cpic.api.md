@@ -1,8 +1,8 @@
 ---
 category: ProgrammingInterface
 connection_url: https://api.cpicpgx.org/
-description: "Structured data (database and API) for CPIC guideline-derived gene\u2013\
-  drug relationships, allele function, and standardized terms"
+description: Structured data (database and API) for CPIC guideline-derived gene–drug
+  relationships, allele function, and standardized terms
 format: json
 id: cpic.api
 is_public: true

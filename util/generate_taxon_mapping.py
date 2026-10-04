@@ -248,12 +248,13 @@ def main():
     )
 
     # Write to YAML file
-    with open(args.output, "w") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         yaml.dump(
             {"taxon_hierarchy": mapping},
             f,
             default_flow_style=False,
             sort_keys=True,
+            allow_unicode=True,
         )
 
     print(f"Taxon mapping written to {args.output}", file=sys.stderr)

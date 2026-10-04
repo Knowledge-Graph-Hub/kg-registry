@@ -192,7 +192,7 @@ publications:
   - Campos-Laborie FJ
   - Charloteaux B
   - Choi D
-  - "Cot\xE9 AG"
+  - Coté AG
   - Daley M
   - Deimling S
   - Desbuleux A
@@ -201,7 +201,7 @@ publications:
   - Hardy MF
   - Kishore N
   - Knapp JJ
-  - "Kov\xE1cs IA"
+  - Kovács IA
   - Lemmens I
   - Mee MW
   - Mellor JC
@@ -247,7 +247,7 @@ publications:
   - Sheykhkarimli D
   - Sheynkman GM
   - Simonovsky E
-  - "Ta\u015Fan M"
+  - Taşan M
   - Tejeda A
   - Tropepe V
   - Twizere JC

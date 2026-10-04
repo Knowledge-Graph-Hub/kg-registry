@@ -9,7 +9,7 @@ contacts:
   - contact_type: url
     value: https://www.univ-lorraine.fr/
   id: univ-lorraine
-  label: "Universit\xE9 de Lorraine"
+  label: Université de Lorraine
 creation_date: '2025-11-25T00:00:00Z'
 description: A comprehensive database of bacterial phenotypic traits including morphology,
   physiology, ecology, and growth characteristics for thousands of bacterial species.
@@ -244,7 +244,7 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
 publications:
 - authors:
-  - "C\xE9bron A"
+  - Cébron A
   - Zeghal E
   - Usseglio-Polatera P
   - Meyer A

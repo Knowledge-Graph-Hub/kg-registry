@@ -731,11 +731,11 @@ products:
 publications:
 - authors:
   - Clarke AW
-  - "H\xF8ye E"
+  - Høye E
   - Hembrom AA
   - Paynter VM
   - Vinther J
-  - "Wyro\u017Cemski \u0141"
+  - Wyrożemski Ł
   - Biryukova I
   - Formaggioni A
   - Ovchinnikov V

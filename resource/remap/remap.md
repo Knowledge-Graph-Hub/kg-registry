@@ -133,8 +133,8 @@ products:
     source: tcga
   product_url: https://maayanlab.cloud/chea3/index.html#content4-13
 - category: GraphProduct
-  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
-    \ levels (A\u2013E)"
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
   format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph

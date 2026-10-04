@@ -328,7 +328,7 @@ publications:
   - Lee PJ
   - Benz CC
   - Blood P
-  - "B\xF6rner K"
+  - Börner K
   - Campisi J
   - Chen F
   - Daldrup-Link H

@@ -184,7 +184,7 @@ products:
     source: itis
 publications:
 - authors:
-  - "Olaf B\xE1nki"
+  - Olaf Bánki
   doi: 10.3897/biss.6.94040
   id: doi:10.3897/biss.6.94040
   journal: Biodiversity Information Science and Standards

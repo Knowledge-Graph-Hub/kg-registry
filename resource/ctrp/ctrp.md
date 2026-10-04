@@ -305,7 +305,7 @@ publications:
   - C Suk-Yee Hon
   - Benito Munoz
   - Ted Liefeld
-  - "Vlado Dan\u010D\xEDk"
+  - Vlado Dančík
   - Daniel A Haber
   - Clary B Clish
   - Joshua A Bittker
@@ -340,7 +340,7 @@ publications:
   - C. Suk-Yee Hon
   - Benito Munoz
   - Ted Liefeld
-  - "Vlado Dan\u010D\xEDk"
+  - Vlado Dančík
   - Joshua A. Bittker
   - Michelle Palmer
   - James E. Bradner
@@ -354,34 +354,34 @@ publications:
   year: '2015'
 - authors:
   - Amrita Basu
-  - "Nicole\_E. Bodycombe"
-  - "Jaime\_H. Cheah"
-  - "Edmund\_V. Price"
+  - Nicole E. Bodycombe
+  - Jaime H. Cheah
+  - Edmund V. Price
   - Ke Liu
-  - "Giannina\_I. Schaefer"
-  - "Richard\_Y. Ebright"
-  - "Michelle\_L. Stewart"
+  - Giannina I. Schaefer
+  - Richard Y. Ebright
+  - Michelle L. Stewart
   - Daisuke Ito
   - Stephanie Wang
-  - "Abigail\_L. Bracha"
+  - Abigail L. Bracha
   - Ted Liefeld
   - Mathias Wawer
-  - "Joshua\_C. Gilbert"
-  - "Andrew\_J. Wilson"
+  - Joshua C. Gilbert
+  - Andrew J. Wilson
   - Nicolas Stransky
-  - "Gregory\_V. Kryukov"
+  - Gregory V. Kryukov
   - Vlado Dancik
   - Jordi Barretina
-  - "Levi\_A. Garraway"
-  - "C.\_Suk-Yee Hon"
+  - Levi A. Garraway
+  - C. Suk-Yee Hon
   - Benito Munoz
-  - "Joshua\_A. Bittker"
-  - "Brent\_R. Stockwell"
+  - Joshua A. Bittker
+  - Brent R. Stockwell
   - Dineo Khabele
-  - "Andrew\_M. Stern"
-  - "Paul\_A. Clemons"
-  - "Alykhan\_F. Shamji"
-  - "Stuart\_L. Schreiber"
+  - Andrew M. Stern
+  - Paul A. Clemons
+  - Alykhan F. Shamji
+  - Stuart L. Schreiber
   doi: 10.1016/j.cell.2013.08.003
   id: https://doi.org/10.1016/j.cell.2013.08.003
   journal: Cell

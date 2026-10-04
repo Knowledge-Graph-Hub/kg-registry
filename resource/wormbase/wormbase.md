@@ -1224,7 +1224,7 @@ publications:
   - Han M
   - Kishore R
   - Lee R
-  - "M\xFCller HM"
+  - Müller HM
   - Nakamura C
   - Ozersky P
   - Petcherski A

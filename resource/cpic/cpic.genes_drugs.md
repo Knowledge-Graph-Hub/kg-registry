@@ -1,7 +1,7 @@
 ---
 category: Product
-description: "Curated gene\u2013drug pair tables linking pharmacogenes with affected\
-  \ medications and guideline recommendations"
+description: Curated gene–drug pair tables linking pharmacogenes with affected medications
+  and guideline recommendations
 format: http
 id: cpic.genes_drugs
 is_public: true

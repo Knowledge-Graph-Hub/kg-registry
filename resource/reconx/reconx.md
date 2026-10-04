@@ -375,7 +375,7 @@ publications:
   - Monica L. Mo
   - Thuy D. Vo
   - Rohith Srivas
-  - "Bernhard \xD8. Palsson"
+  - Bernhard Ø. Palsson
   doi: 10.1073/pnas.0610772104
   id: https://doi.org/10.1073/pnas.0610772104
   journal: Proceedings of the National Academy of Sciences

@@ -205,7 +205,7 @@ publications:
   - Katherine S Gustilo
   - Ellen M. Quardokus
   - Bruce W. Herr II
-  - "Katy B\xF6rner"
+  - Katy Börner
   - Griffin M. Weber
   doi: 10.1038/s41597-023-02018-0
   id: https://doi.org/10.1038/s41597-023-02018-0

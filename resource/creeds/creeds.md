@@ -210,7 +210,7 @@ publications:
   - Fabio M R. Amaral
   - Gregory L. Szeto
   - Oliver Fuchs
-  - "Sophia M. Sch\xFCssler-Fiorenza Rose"
+  - Sophia M. Schüssler-Fiorenza Rose
   - Shvetank Sharma
   - Uwe Schwartz
   - Xabier Bengoetxea Bausela
@@ -227,7 +227,7 @@ publications:
   - Carl T. Fulp
   - John A. Galindo
   - Ruta Motiejunaite
-  - "Christoph J\xFCschke"
+  - Christoph Jüschke
   - Philip C. Dishuck
   - Katharina Lahl
   - Mohieddin Jafari
@@ -238,8 +238,8 @@ publications:
   - Pablo Gamallo
   - Fernando de Andres Segura
   - Tyler Dae Devlin
-  - "Vicente P\xE9rez-Garc\xEDa"
-  - "Avi Ma\u2019ayan"
+  - Vicente Pérez-García
+  - Avi Ma’ayan
   doi: 10.1038/ncomms12846
   id: doi:10.1038/ncomms12846
   journal: Nature Communications

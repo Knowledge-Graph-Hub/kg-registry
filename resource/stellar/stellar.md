@@ -11,7 +11,7 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://cs.stanford.edu/~mbrbic/
-  label: "Maria Brbi\u0107"
+  label: Maria Brbić
 creation_date: '2025-06-04T00:00:00Z'
 description: STELLAR is a geometric deep learning method for cell type discovery and
   identification in spatially resolved single-cell datasets. It automatically assigns
@@ -294,7 +294,7 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
 publications:
 - authors:
-  - "Brbi\u0107 M"
+  - Brbić M
   - Cao K
   - Hickey JW
   - Tan Y

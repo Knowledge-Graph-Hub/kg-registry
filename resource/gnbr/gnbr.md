@@ -31,8 +31,8 @@ license:
 name: GNBR
 products:
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   id: gnbr.graph
   format: http
   name: GNBR graph
