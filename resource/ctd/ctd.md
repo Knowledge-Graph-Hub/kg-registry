@@ -2397,11 +2397,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: gene2phenotype
   - relation_type: prov:hadPrimarySource
-    source: geneticskp
+    source: genetics-kp
   - relation_type: prov:hadPrimarySource
     source: go-cam
   - relation_type: prov:hadPrimarySource
@@ -4220,11 +4220,11 @@ products:
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
-  id: molecular-data-kp.graph.nodes
+  id: molepro.graph.nodes
   name: Nodes for Molecular Data KP
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: molecular-data-kp
+    source: molepro
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -4288,7 +4288,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource
@@ -4300,11 +4300,11 @@ products:
 - category: GraphProduct
   description: KGX edges for Molecular Data KP
   format: kgx
-  id: molecular-data-kp.graph.edges
+  id: molepro.graph.edges
   name: Edges for Molecular Data KP
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: molecular-data-kp
+    source: molepro
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -4368,7 +4368,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource

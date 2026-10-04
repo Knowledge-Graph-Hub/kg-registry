@@ -14,7 +14,7 @@ license:
 name: Translator Drug Repurposing Hub KGX Graph
 node_count: 8842
 original_source:
-  - source: drugrephub
+  - source: repohub
     relation_type: prov:hadPrimarySource
   - source: translator
     relation_type: prov:hadPrimarySource

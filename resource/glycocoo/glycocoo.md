@@ -138,7 +138,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinvar
   - relation_type: prov:hadPrimarySource
-    source: connectivitymap
+    source: cmap
   - relation_type: prov:hadPrimarySource
     source: dct
   - relation_type: prov:hadPrimarySource
@@ -252,7 +252,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinvar
   - relation_type: prov:hadPrimarySource
-    source: connectivitymap
+    source: cmap
   - relation_type: prov:hadPrimarySource
     source: dct
   - relation_type: prov:hadPrimarySource

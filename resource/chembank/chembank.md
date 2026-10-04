@@ -16,7 +16,7 @@ description: 'ChemBank was a public, freely available collection of small-molecu
   relate small molecules to their effects on biological systems. ChemBank is no longer
   maintained: its homepage at chembank.broadinstitute.org is defunct and now redirects
   away from the original database. It served as an upstream primary source for the
-  Molecular Data Provider (MolePro) and the molecular-data-kp knowledge provider.'
+  Molecular Data Provider (MolePro) knowledge provider.'
 domains:
 - chemistry and biochemistry
 - drug discovery
@@ -54,11 +54,11 @@ products:
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
-  id: molecular-data-kp.graph.nodes
+  id: molepro.graph.nodes
   name: Nodes for Molecular Data KP
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: molecular-data-kp
+    source: molepro
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -122,7 +122,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource
@@ -134,11 +134,11 @@ products:
 - category: GraphProduct
   description: KGX edges for Molecular Data KP
   format: kgx
-  id: molecular-data-kp.graph.edges
+  id: molepro.graph.edges
   name: Edges for Molecular Data KP
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: molecular-data-kp
+    source: molepro
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -202,7 +202,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: repohub
   - relation_type: prov:hadPrimarySource
     source: chembank
   - relation_type: prov:hadPrimarySource
@@ -473,5 +473,5 @@ the Internet Archive Wayback Machine, and the original Nucleic Acids Research
 publication remains the canonical description of the resource.
 
 In KG-Registry, ChemBank is retained as a historical primary source. It served
-upstream of the Molecular Data Provider (MolePro) / molecular-data-kp, which
+upstream of the Molecular Data Provider (MolePro), which
 transformed and integrated ChemBank content for downstream knowledge-graph use.

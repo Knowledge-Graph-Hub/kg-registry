@@ -12,6 +12,7 @@ domains:
   - clinical
   - proteomics
   - biomedical
+  - precision medicine
 homepage_url: https://ckg.readthedocs.io/
 id: clinicalkg
 layout: resource_detail
@@ -122,11 +123,29 @@ publications:
     journal: bioRxiv
     title: Clinical Knowledge Graph Integrates Proteomics Data into Clinical Decision-Making
     year: '2020'
+  - authors:
+      - Alberto Santos
+      - Ana R. Colaço
+      - Annelaura B. Nielsen
+      - Lili Niu
+      - Maximilian Strauss
+      - Philipp E. Geyer
+      - Fabian Coscia
+      - Nicolai J. Wewer Albrechtsen
+      - Filip Mundt
+      - Lars Juhl Jensen
+      - Matthias Mann
+    doi: 10.1038/s41587-021-01145-6
+    id: doi:10.1038/s41587-021-01145-6
+    journal: Nature Biotechnology
+    preferred: true
+    title: A knowledge graph to interpret clinical proteomics data
+    year: '2022'
 repository: https://github.com/MannLabs/CKG
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-08-12T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 ---
 
 Clinical Knowledge Graph

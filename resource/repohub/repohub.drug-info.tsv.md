@@ -3,11 +3,11 @@ category: Product
 description: Latest drug-level annotations including compound names, clinical phase,
   mechanism of action, and protein targets (listed as version 2025-08-19 on the site).
 format: tsv
-id: drugrephub.drug-info.tsv
+id: repohub.drug-info.tsv
 name: Drug Repurposing Hub Drug Information TSV
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: drugrephub
+  source: repohub
 product_file_size: 661900
 product_url: https://repo-hub.broadinstitute.org/public/data/repo-drug-annotation-20200324.txt
 warnings:

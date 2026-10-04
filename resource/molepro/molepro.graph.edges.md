@@ -1,87 +1,83 @@
 ---
 category: GraphProduct
-description: Graph database dump and additional relationship files for the Clinical
-  Knowledge Graph.
-format: neo4j
-id: ckg.graph
-latest_version: '1'
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-name: CKG Graph Database Dump
+description: KGX edges for Molecular Data KP
+format: kgx
+id: molepro.graph.edges
+name: Edges for Molecular Data KP
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: bto
+  source: molepro
 - relation_type: prov:hadPrimarySource
-  source: cancer-genome-interpreter
-- relation_type: prov:hadPrimarySource
-  source: ckg
-- relation_type: prov:hadPrimarySource
-  source: corum
-- relation_type: prov:hadPrimarySource
-  source: dgidb
-- relation_type: prov:hadPrimarySource
-  source: diseases
-- relation_type: prov:hadPrimarySource
-  source: disgenet
-- relation_type: prov:hadPrimarySource
-  source: doid
+  source: chembl
 - relation_type: prov:hadPrimarySource
   source: drugbank
 - relation_type: prov:hadPrimarySource
-  source: efo
+  source: dgidb
 - relation_type: prov:hadPrimarySource
-  source: foodb
+  source: ctd
 - relation_type: prov:hadPrimarySource
-  source: go
+  source: pubchem
 - relation_type: prov:hadPrimarySource
-  source: gwascatalog
-- relation_type: prov:hadPrimarySource
-  source: hgnc
+  source: drugcentral
 - relation_type: prov:hadPrimarySource
   source: hmdb
 - relation_type: prov:hadPrimarySource
-  source: hp
+  source: gtopdb
 - relation_type: prov:hadPrimarySource
-  source: hpa
+  source: pharos
 - relation_type: prov:hadPrimarySource
-  source: intact
-- relation_type: prov:hadPrimarySource
-  source: mi
-- relation_type: prov:hadPrimarySource
-  source: mod
-- relation_type: prov:hadPrimarySource
-  source: ms
-- relation_type: prov:hadPrimarySource
-  source: mutationds
-- relation_type: prov:hadPrimarySource
-  source: oncokb
-- relation_type: prov:hadPrimarySource
-  source: pfam
-- relation_type: prov:hadPrimarySource
-  source: phosphositeplus
-- relation_type: prov:hadPrimarySource
-  source: reactome
-- relation_type: prov:hadPrimarySource
-  source: refseq
+  source: tcrd
 - relation_type: prov:hadPrimarySource
   source: sider
 - relation_type: prov:hadPrimarySource
-  source: signor
+  source: reactome
 - relation_type: prov:hadPrimarySource
-  source: smpdb
+  source: unichem
 - relation_type: prov:hadPrimarySource
-  source: snomedct
+  source: msigdb
+- relation_type: prov:hadPrimarySource
+  source: chebi
+- relation_type: prov:hadPrimarySource
+  source: inchikey
+- relation_type: prov:hadPrimarySource
+  source: bindingdb
 - relation_type: prov:hadPrimarySource
   source: stitch
 - relation_type: prov:hadPrimarySource
   source: string
 - relation_type: prov:hadPrimarySource
-  source: tissues
-- relation_type: prov:hadPrimarySource
   source: uniprot
 - relation_type: prov:hadPrimarySource
-  source: uo
-product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  source: hgnc
+- relation_type: prov:hadPrimarySource
+  source: rxnorm
+- relation_type: prov:hadPrimarySource
+  source: pharmgkb
+- relation_type: prov:hadPrimarySource
+  source: bigg
+- relation_type: prov:hadPrimarySource
+  source: depmap
+- relation_type: prov:hadPrimarySource
+  source: ctrp
+- relation_type: prov:hadPrimarySource
+  source: cmap
+- relation_type: prov:hadPrimarySource
+  source: kinomescan
+- relation_type: prov:hadPrimarySource
+  source: dsstoxdb
+- relation_type: prov:hadPrimarySource
+  source: gelinea
+- relation_type: prov:hadPrimarySource
+  source: gwascatalog
+- relation_type: prov:hadPrimarySource
+  source: repohub
+- relation_type: prov:hadPrimarySource
+  source: chembank
+- relation_type: prov:hadPrimarySource
+  source: inxight-drugs
+- relation_type: prov:hadPrimarySource
+  source: probe-miner
+product_file_size: 20140191116
+product_url: https://molepro.s3.amazonaws.com/edges.tsv
 layout: product_detail
 ---
