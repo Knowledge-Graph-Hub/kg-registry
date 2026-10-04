@@ -1592,6 +1592,45 @@ resources:
       source: ttd
     - relation_type: prov:wasInfluencedBy
       source: pubmed
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Asba Tasneem
@@ -42904,6 +42943,45 @@ resources:
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
       the commercial successor platform; the Pitt-hosted portal is no longer available.
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Zdrazil B
@@ -51130,6 +51208,45 @@ resources:
       source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Zarin DA
@@ -69110,6 +69227,45 @@ resources:
       source: phenopacket-store
     product_file_size: 230046094
     product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Davis AP
@@ -89884,6 +90040,45 @@ resources:
       source: doid
     product_file_size: 1167920
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/DOID.tar.gz
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Kibbe WA
@@ -94545,6 +94740,45 @@ resources:
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
       the commercial successor platform; the Pitt-hosted portal is no longer available.
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Craig Knox
@@ -103079,6 +103313,45 @@ resources:
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ema
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   synonyms:
   - EMA
 - activity_status: active
@@ -127355,6 +127628,45 @@ resources:
       source: arrayexpress
     product_file_size: 94026
     product_url: http://www.inbirg.com/organoid_db/download/general_samples
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
 - activity_status: active
   category: DataSource
   contacts:
@@ -177249,8 +177561,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-10-03: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
       to URL'
   - category: DocumentationProduct
@@ -192126,7 +192436,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-04T01:11:42Z'
+  last_modified_date: '2026-10-04T02:26:29Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -195001,6 +195311,153 @@ resources:
     title: Controlled vocabularies and semantics in systems biology
     year: '2011'
   repository: https://github.com/SED-ML/KiSAO
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: url
+      value: http://www.organchip.cn/about
+    label: Zhongze Gu
+  creation_date: '2026-10-04T00:00:00Z'
+  description: The Knowledge Graph & Large Language Model-Enhanced Organ on a Chip
+    Database (KLOCD) is a web platform for organ-on-a-chip research, drug discovery
+    and toxicology from Professor Zhongze Gu's team at Southeast University (Nanjing,
+    China). It consolidates data from public sources into sub-databases of drugs,
+    chemicals, gene expression datasets, diseases, toxicants, literature, patents
+    and organ-on-chip models. At its core is OCKG, an organ-on-chip knowledge graph
+    linking organ chips, diseases, genes and compounds, which supports a drug repurposing
+    tool and a retrieval-augmented natural language question answering assistant.
+    KLOCD succeeds the Organ-on-a-Chip Database (Ocdb) previously served at the same
+    address.
+  domains:
+  - drug discovery
+  - drug repositioning
+  - toxicology
+  - biomedical
+  - machine learning
+  - information technology
+  homepage_url: http://www.organchip.cn/
+  id: klocd
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    display_note: 'No license is declared for this resource. This is the most restrictive
+      license (custom) among its sources: ctd, togows, unichem. Not accounted for,
+      no known license: gene-expression-omnibus.'
+    id: https://ctdbase.org/about/legal.jsp
+    inferred_from:
+    - ctd
+    - togows
+    - unichem
+    label: Custom
+    restrictiveness: custom
+    status: inferred
+    unresolved_sources:
+    - gene-expression-omnibus
+  name: Knowledge Graph & Large Language Model-Enhanced Organ on a Chip Database
+  products:
+  - category: GraphProduct
+    description: Organ-on-Chip Knowledge Graph (OCKG) linking organ-on-chip models
+      with diseases, genes, compounds and other biomedical entities. Version 1.0 has
+      76,540 nodes of 17 types and 2,315,561 relationships of 21 types. It is browsable
+      through the KLOCD web interface and underlies its drug repurposing and question
+      answering tools.
+    format: http
+    id: klocd.ockg
+    latest_version: '1.0'
+    name: Organ-on-Chip Knowledge Graph (OCKG)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    product_url: http://www.organchip.cn/search/tools
+    versions:
+    - '1.0'
+    warnings:
+    - No bulk download or API is offered; OCKG is available only through the KLOCD
+      web interface, and some features require a login.
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
+  - category: GraphicalInterface
+    description: Drug repurposing tool that uses link prediction and reinforcement
+      learning over OCKG to suggest drug candidates for diseases.
+    format: http
+    id: klocd.drug-repurposing
+    name: KLOCD Drug Repurposing
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    product_url: http://www.organchip.cn/search/tools
+  - category: GraphicalInterface
+    description: Retrieval-augmented question answering assistant that combines OCKG
+      data with large language models to answer biomedical questions in natural language.
+    format: http
+    id: klocd.qa-assistant
+    name: KLOCD Intelligent Assistant
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    product_url: http://www.organchip.cn/search/tools
+  publications:
+  - authors:
+    - Lincao Jiang
+    - Qiwei Li
+    - Weicheng Liang
+    - Xuan Du
+    - Yi Yang
+    - Zilin Zhang
+    - Lili Xu
+    - Jing Zhang
+    - Jian Li
+    - Zaozao Chen
+    - Zhongze Gu
+    doi: 10.3390/bioengineering9110685
+    id: doi:10.3390/bioengineering9110685
+    journal: Bioengineering
+    preferred: true
+    title: Organ-On-A-Chip Database Revealed - Achieving the Human Avatar in Silicon
+    year: '2022'
+  synonyms:
+  - KLOCD
+  - Ocdb
+  - Organ-on-a-Chip Database
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -257170,6 +257627,45 @@ resources:
       source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Taha A Kass-Hout
@@ -294254,6 +294750,45 @@ resources:
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
       the commercial successor platform; the Pitt-hosted portal is no longer available.
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Kim S
@@ -296265,6 +296800,45 @@ resources:
       HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
       (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
       responded normally.
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Eric W Sayers
@@ -349405,6 +349979,45 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: togows
     product_url: http://togows.org/help/
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Toshiaki Katayama
@@ -362240,6 +362853,45 @@ resources:
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
       the commercial successor platform; the Pitt-hosted portal is no longer available.
+  - category: GraphicalInterface
+    description: KLOCD web interface for searching its drug, chemical, gene expression
+      dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases,
+      built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov,
+      AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology,
+      among other public sources.
+    format: http
+    id: klocd.portal
+    name: KLOCD Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: klocd
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: aact
+    - relation_type: prov:hadPrimarySource
+      source: ema
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    product_url: http://www.organchip.cn/
   publications:
   - authors:
     - Jon Chambers

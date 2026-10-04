@@ -110,6 +110,7 @@ kgr:aact a schema1:Aggregator ;
         kgr:aact.playground,
         kgr:aact.schema,
         kgr:clinicaltrialsgov.aact,
+        kgr:klocd.portal,
         kgr:multiomics-kp.graph,
         kgr:translator.ctkp.graph ;
     schema1:identifier "aact" ;
@@ -3131,6 +3132,7 @@ kgr:chembl a schema1:DataSource ;
         kgr:indra.cogex.code,
         kgr:kg-covid-19.graph,
         kgr:kg-enp.graph,
+        kgr:klocd.portal,
         kgr:micromap.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
@@ -3667,6 +3669,7 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
         kgr:indra.cogex.code,
         kgr:kg-predict.ad_nct_evidence,
         kgr:kg-predict.ad_predictions,
+        kgr:klocd.portal,
         kgr:multiomics-kp.graph,
         kgr:myaura.graph,
         kgr:obo-db-ingest.clinicaltrialsgov.json,
@@ -4680,6 +4683,7 @@ kgr:ctd a schema1:DataSource ;
         kgr:kg-monarch.graph.neo4j.edges,
         kgr:kg-monarch.graph.neo4j.nodes,
         kgr:kg-monarch.graph.rdf,
+        kgr:klocd.portal,
         kgr:mechreponet.kg,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
@@ -5901,6 +5905,7 @@ kgr:doid a schema1:Ontology ;
         kgr:kg-jensenlab-diseases.edges.kgx,
         kgr:kg-jensenlab-diseases.edges.trapi,
         kgr:kg-jensenlab-diseases.nodes.kgx,
+        kgr:klocd.portal,
         kgr:lncrnalyzr.graph,
         kgr:mechreponet.kg,
         kgr:medkg.site,
@@ -6078,6 +6083,7 @@ kgr:drugbank a schema1:DataSource ;
         kgr:hetionet.search,
         kgr:ibkh.graph,
         kgr:kg-predict.gpkg,
+        kgr:klocd.portal,
         kgr:medkg.site,
         kgr:microbiomekg.api,
         kgr:molecular-data-kp.graph.edges,
@@ -6745,6 +6751,7 @@ kgr:ema a schema1:DataSource ;
     schema1:hasPart kgr:ema.article-57,
         kgr:ema.medicine-data,
         kgr:ema.medicines,
+        kgr:klocd.portal,
         kgr:medi.ema ;
     schema1:name "European Medicines Agency" ;
     skos:altLabel "EMA" ;
@@ -8797,6 +8804,7 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
     dcterms:identifier "gene-expression-omnibus" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gene-expression-omnibus.portal,
+        kgr:klocd.portal,
         kgr:nde.graph,
         kgr:organoiddb.all-organoid-samples,
         kgr:organoiddb.general-samples,
@@ -12587,7 +12595,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-04T01:11:42+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T02:26:29+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -12805,6 +12813,31 @@ kgr:kisao a schema1:Ontology ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/SED-ML/KiSAO> .
+
+kgr:klocd a schema1:KnowledgeGraph ;
+    rdfs:label "Knowledge Graph & Large Language Model-Enhanced Organ on a Chip Database" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Knowledge Graph & Large Language Model-Enhanced Organ on a Chip Database (KLOCD) is a web platform for organ-on-a-chip research, drug discovery and toxicology from Professor Zhongze Gu's team at Southeast University (Nanjing, China). It consolidates data from public sources into sub-databases of drugs, chemicals, gene expression datasets, diseases, toxicants, literature, patents and organ-on-chip models. At its core is OCKG, an organ-on-chip knowledge graph linking organ chips, diseases, genes and compounds, which supports a drug repurposing tool and a retrieval-augmented natural language question answering assistant. KLOCD succeeds the Organ-on-a-Chip Database (Ocdb) previously served at the same address." ;
+    dcterms:identifier "klocd" ;
+    dcterms:isReferencedBy <doi:10.3390/bioengineering9110685> ;
+    dcterms:license <https://ctdbase.org/about/legal.jsp> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:klocd.drug-repurposing,
+        kgr:klocd.ockg,
+        kgr:klocd.portal,
+        kgr:klocd.qa-assistant ;
+    schema1:name "Knowledge Graph & Large Language Model-Enhanced Organ on a Chip Database" ;
+    skos:altLabel "KLOCD",
+        "Ocdb",
+        "Organ-on-a-Chip Database" ;
+    skos:inScheme "biomedical",
+        "drug discovery",
+        "drug repositioning",
+        "information technology",
+        "machine learning",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <http://www.organchip.cn/> .
 
 kgr:knowwheregraph a schema1:KnowledgeGraph ;
     rdfs:label "KnowWhereGraph" ;
@@ -17585,7 +17618,8 @@ kgr:openfda a schema1:Aggregator ;
     dcterms:isReferencedBy <doi:10.1093/jamia/ocv153> ;
     dcterms:license <https://open.fda.gov/license/> ;
     dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:maude.data,
+    schema1:hasPart kgr:klocd.portal,
+        kgr:maude.data,
         kgr:mps-db.portal,
         kgr:ndcd.api,
         kgr:onco.all_json,
@@ -20391,6 +20425,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:icees-kg.graph,
         kgr:icees-kg.metadata,
         kgr:icees-kg.trapi,
+        kgr:klocd.portal,
         kgr:markerdb.api,
         kgr:markerdb.chemicals.tsv,
         kgr:microbiomekg.api,
@@ -20481,6 +20516,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:ikraph.graphdata,
         kgr:ikraph.site,
         kgr:indra.cogex.code,
+        kgr:klocd.portal,
         kgr:litvar.api,
         kgr:litvar.web_interface,
         kgr:medgen.pubmed-links,
@@ -23920,7 +23956,8 @@ kgr:togows a schema1:Aggregator ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkq386> ;
     dcterms:license <https://www.kegg.jp/feedback/copyright.html> ;
     dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:togows.convert,
+    schema1:hasPart kgr:klocd.portal,
+        kgr:togows.convert,
         kgr:togows.rest-api,
         kgr:togows.ucsc-api ;
     schema1:name "TogoWS" ;
@@ -24619,7 +24656,8 @@ kgr:unichem a schema1:Aggregator ;
     dcterms:isReferencedBy <https://doi.org/10.1186/1758-2946-5-3> ;
     dcterms:license <https://www.ebi.ac.uk/about/terms-of-use/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:molecular-data-kp.graph.edges,
+    schema1:hasPart kgr:klocd.portal,
+        kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes,
         kgr:mps-db.portal,
         kgr:pathwaycommons.biopax,
@@ -33616,6 +33654,21 @@ kgr:kisao.owl a schema1:OntologyProduct ;
     rdfs:label "kisao.owl" ;
     dcterms:description "Kinetic Simulation Algorithm Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/kisao.owl> .
+
+kgr:klocd.drug-repurposing a schema1:GraphicalInterface ;
+    rdfs:label "KLOCD Drug Repurposing" ;
+    dcterms:description "Drug repurposing tool that uses link prediction and reinforcement learning over OCKG to suggest drug candidates for diseases." ;
+    schema1:url <http://www.organchip.cn/search/tools> .
+
+kgr:klocd.ockg a schema1:GraphProduct ;
+    rdfs:label "Organ-on-Chip Knowledge Graph (OCKG)" ;
+    dcterms:description "Organ-on-Chip Knowledge Graph (OCKG) linking organ-on-chip models with diseases, genes, compounds and other biomedical entities. Version 1.0 has 76,540 nodes of 17 types and 2,315,561 relationships of 21 types. It is browsable through the KLOCD web interface and underlies its drug repurposing and question answering tools." ;
+    schema1:url <http://www.organchip.cn/search/tools> .
+
+kgr:klocd.qa-assistant a schema1:GraphicalInterface ;
+    rdfs:label "KLOCD Intelligent Assistant" ;
+    dcterms:description "Retrieval-augmented question answering assistant that combines OCKG data with large language models to answer biomedical questions in natural language." ;
+    schema1:url <http://www.organchip.cn/search/tools> .
 
 kgr:knowwheregraph.explorer a schema1:GraphicalInterface ;
     rdfs:label "KnowWhereGraph Knowledge Explorer" ;
@@ -46859,6 +46912,11 @@ kgr:kg-covid-19.graph a schema1:GraphProduct ;
     rdfs:label "KG-COVID-19 graph" ;
     dcterms:description "KGX nodes and edges for KG-COVID-19" ;
     schema1:url <https://kghub.io/kg-covid-19/> .
+
+kgr:klocd.portal a schema1:GraphicalInterface ;
+    rdfs:label "KLOCD Web Interface" ;
+    dcterms:description "KLOCD web interface for searching its drug, chemical, gene expression dataset, disease, toxicant, literature, patent and organ-on-chip model sub-databases, built from PubMed, PubChem, TogoWS, UniChem, DrugBank, ChEMBL, ClinicalTrials.gov, AACT, the European Medicines Agency, CTD, NCBI GEO, openFDA and Disease Ontology, among other public sources." ;
+    schema1:url <http://www.organchip.cn/> .
 
 kgr:micromap.api a schema1:ProgrammingInterface ;
     rdfs:label "MicroMap API" ;

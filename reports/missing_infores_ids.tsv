@@ -381,6 +381,7 @@ kgcl	Knowledge Graph Change Language	DataModel	https://incatools.github.io/kgcl/
 kidsfirst	Kids First Data Resource Center	DataSource	https://kidsfirstdrc.org/	resource/kidsfirst/kidsfirst.md
 kinhub	KinHub	DataSource	http://www.kinhub.org/	resource/kinhub/kinhub.md
 kisao	Kinetic Simulation Algorithm Ontology	Ontology	https://github.com/SED-ML/KiSAO	resource/kisao/kisao.md
+klocd	Knowledge Graph & Large Language Model-Enhanced Organ on a Chip Database	KnowledgeGraph	http://www.organchip.cn/	resource/klocd/klocd.md
 labeledin	LabeledIn	DataSource	https://doi.org/10.1016/j.jbi.2014.08.004	resource/labeledin/labeledin.md
 labo	clinical LABoratory Ontology	Ontology	https://github.com/OpenLHS/LABO	resource/labo/labo.md
 lepao	Lepidoptera Anatomy Ontology	Ontology	https://github.com/insect-morphology/lepao	resource/lepao/lepao.md

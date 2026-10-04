@@ -120,6 +120,7 @@ kg-monarch	KnowledgeGraph	conflict	https://creativecommons.org/publicdomain/zero
 kg-predict	KnowledgeGraph	declared	https://www.elsevier.com/open-access/userlicense/1.0/	custom	https://www.gtexportal.org/home/license	custom	gtex|umls	faers
 kg4sl	KnowledgeGraph	unresolved						
 kinace	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.kegg.jp/feedback/copyright.html	custom	kegg	coralkinome|darkkinasekb|kinhub|phosphositeplus
+klocd	KnowledgeGraph	inferred			https://ctdbase.org/about/legal.jsp	custom	ctd|togows|unichem	gene-expression-omnibus
 knowwheregraph	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	GADM license (free for academic/non-commercial use)	non-commercial	gadm	bluesky|hifld|mtbs|usdm
 lncrnalyzr	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial	https://www.gtexportal.org/home/license	custom	gtex|kegg	
 malacards	Aggregator	no-upstream						
