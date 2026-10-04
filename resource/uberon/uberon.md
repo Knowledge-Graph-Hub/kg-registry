@@ -1535,6 +1535,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
     source: pr
   - relation_type: prov:hadPrimarySource
     source: reactome
@@ -1542,6 +1544,10 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: drugcentral
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
@@ -2464,7 +2470,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: gnps
   - relation_type: prov:hadPrimarySource

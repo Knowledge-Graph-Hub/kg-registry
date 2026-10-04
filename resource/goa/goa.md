@@ -483,6 +483,162 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: GraphProduct
+  description: Robokop KG (Automat)
+  format: kgx-jsonl
+  id: automat.robokopkg
+  name: robokopkg
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: robokop
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: drugmechdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
+- category: GraphProduct
+  description: 'Viral Proteome Automat: per-source KGX knowledge graph download (Biolink
+    4.2.1).'
+  format: kgx-jsonl
+  id: automat.viralproteome
+  name: ViralProteome_Automat
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:wasInformedBy
+    source: ubergraph
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/ViralProteome_Automat/
+- category: OntologyProduct
+  description: OWL release of neo
+  format: owl
+  id: neo.model
+  name: neo OWL release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: neo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: ecocyc
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_file_size: 2142188184
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+- category: OntologyProduct
+  description: OBO format release of NEO, built from the same weekly GPI-based build
+    as neo.owl.
+  format: obo
+  id: neo.obo
+  name: NEO (OBO format)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: neo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: ecocyc
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_file_size: 681668343
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
 ---
 ## Overview
 

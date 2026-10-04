@@ -1857,6 +1857,20 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: GraphProduct
+  description: 'Alliance of Genome Resources Orthologs Automat: per-source KGX knowledge
+    graph download (Biolink 4.2.1).'
+  format: kgx-jsonl
+  id: automat.alliance-orthologs
+  name: GenomeAllianceOrthologs_Automat
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:wasInformedBy
+    source: ubergraph
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/GenomeAllianceOrthologs_Automat/
 taxon:
 - NCBITaxon:6239
 - NCBITaxon:7227

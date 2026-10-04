@@ -88,7 +88,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -165,7 +165,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -243,7 +243,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -320,7 +320,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -397,7 +397,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -475,7 +475,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -552,7 +552,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -629,7 +629,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -706,7 +706,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource

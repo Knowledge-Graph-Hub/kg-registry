@@ -158,6 +158,89 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+- category: GraphProduct
+  description: Robokop KG (Automat)
+  format: kgx-jsonl
+  id: automat.robokopkg
+  name: robokopkg
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: robokop
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: drugmechdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
+- category: GraphProduct
+  description: 'Robokop Plus: the ROBOKOP KG extended with CORD-19 and text-mined
+    assertions (2023 data, Biolink 3.1.2; legacy).'
+  format: kgx-jsonl
+  id: automat.robokopplus
+  name: robokopplus
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: robokop
+  - relation_type: prov:hadPrimarySource
+    source: cord-19
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
+- category: GraphProduct
+  description: 'Text Mining KP Automat: per-source KGX knowledge graph download (Biolink
+    4.2.1).'
+  format: kgx-jsonl
+  id: automat.tmkp
+  name: TMKP_Automat
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:wasInformedBy
+    source: ubergraph
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/TMKP_Automat/
 repository: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
 synonyms:
 - tmkp
