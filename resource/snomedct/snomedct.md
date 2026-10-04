@@ -1012,6 +1012,223 @@ products:
   warnings:
   - The knowledge graph content is proprietary and is not available as a public bulk
     download. Access requires a commercial agreement with IMO Health.
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing concept names and source
+    identifiers with gzip compression
+  format: txt
+  id: medgen.mgconso
+  name: MGCONSO (Concept Names)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 15816874
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing definitions and descriptions
+    with gzip compression
+  format: txt
+  id: medgen.mgdef
+  name: MGDEF (Definitions)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 5305829
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+- category: MappingProduct
+  compression: gzip
+  description: Rich Release Format (RRF) file containing relationships between concepts
+    with gzip compression
+  format: txt
+  id: medgen.mgrel
+  name: MGREL (Relationships)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 16060333
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing attributes and properties
+    with gzip compression
+  format: txt
+  id: medgen.mgsat
+  name: MGSAT (Attributes)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 11628774
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing concept names for search
+    with gzip compression
+  format: txt
+  id: medgen.names
+  name: NAMES
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 3143285
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
+- category: MappingProduct
+  compression: gzip
+  description: Mappings between MedGen CUIs and external source identifiers with gzip
+    compression
+  format: txt
+  id: medgen.id-mappings
+  name: MedGen ID Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_file_size: 5806282
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGenIDMappings.txt.gz
+- category: Product
+  description: CSV format data files directory with additional data exports
+  format: csv
+  id: medgen.csv
+  name: CSV Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
 repository: https://browser.ihtsdotools.org/
 taxon:
 - NCBITaxon:9606

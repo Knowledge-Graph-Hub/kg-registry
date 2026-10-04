@@ -13,10 +13,11 @@ contacts:
 creation_date: '2025-07-17T00:00:00Z'
 description: NCBI's portal to information about conditions, phenotypes, and findings
   in humans related to medical genetics. Aggregates and organizes data from multiple
-  authoritative sources including UMLS, OMIM, HPO, Mondo, Orphanet, GeneReviews, PharmGKB,
-  and community submissions to GTR and ClinVar. Each concept is assigned a distinct
-  Concept Unique Identifier (CUI) and integrated with related information from clinical
-  resources, genetic testing registries, medical literature, and molecular resources.
+  authoritative sources including UMLS, OMIM, HPO, Mondo, Orphanet, GeneReviews, ClinPGx
+  (formerly PharmGKB), and community submissions to GTR and ClinVar. Each concept
+  is assigned a distinct Concept Unique Identifier (CUI) and integrated with related
+  information from clinical resources, genetic testing registries, medical literature,
+  and molecular resources.
 domains:
 - genomics
 - clinical
@@ -24,7 +25,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/medgen/
 id: medgen
 infores_id: medgen
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -63,7 +64,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 15843494
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 15816874
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
 - category: Product
   compression: gzip
@@ -77,7 +92,31 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 5062289
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 5305829
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
 - category: MappingProduct
   compression: gzip
@@ -91,7 +130,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 15661303
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 16060333
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
 - category: Product
   compression: gzip
@@ -105,7 +158,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 11710268
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 11628774
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz
 - category: Product
   compression: gzip
@@ -119,7 +186,9 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 1644564
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  product_file_size: 1667323
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
 - category: Product
   compression: gzip
@@ -133,7 +202,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 3097271
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 3143285
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
 - category: MappingProduct
   compression: gzip
@@ -145,7 +228,21 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: medgen
-  product_file_size: 5955308
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_file_size: 5806282
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGenIDMappings.txt.gz
 - category: MappingProduct
   compression: gzip
@@ -159,7 +256,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: hp
-  product_file_size: 389609
+  product_file_size: 398282
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_Mapping.txt.gz
 - category: MappingProduct
   compression: gzip
@@ -174,7 +271,7 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: omim
-  product_file_size: 4125863
+  product_file_size: 4271791
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_OMIM_Mapping.txt.gz
 - category: Product
   compression: gzip
@@ -187,7 +284,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: pubmed
-  product_file_size: 239947326
+  product_file_size: 85609755
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/medgen_pubmed_lnk.txt.gz
 - category: Product
   description: History file tracking changes to MedGen CUIs
@@ -197,7 +294,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: medgen
-  product_file_size: 88702
+  product_file_size: 91337
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_CUI_history.txt
 - category: Product
   description: History of mappings between MedGen UIDs and CUIs over time
@@ -207,7 +304,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: medgen
-  product_file_size: 59225507
+  product_file_size: 59606723
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_UID_CUI_history.txt
 - category: Product
   description: History file tracking changes to HPO term mappings to CUIs
@@ -219,7 +316,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: hp
-  product_file_size: 1299018
+  product_file_size: 1327088
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/HPO_CUI_history.txt
 - category: Product
   description: History file tracking changes to Mondo term mappings to CUIs
@@ -231,7 +328,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: mondo
-  product_file_size: 1012883
+  product_file_size: 1031655
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs
@@ -243,7 +340,9 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: orphanet
-  product_file_size: 1130936
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 1131602
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt
 - category: Product
   description: Information about source databases and their contributions to MedGen
@@ -253,7 +352,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: medgen
-  product_file_size: 10385
+  product_file_size: 10294
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_Sources.txt
 - category: Product
   compression: gzip
@@ -266,7 +365,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 47602
+  product_file_size: 50681
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
 - category: Product
   description: CSV format data files directory with additional data exports
@@ -276,6 +375,38 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  - relation_type: prov:hadPrimarySource
+    source: umls
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
 - category: DocumentationProduct
   description: Documentation, help pages, and user guides for MedGen
@@ -958,6 +1089,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Louden DN
+  doi: 10.1080/02763869.2020.1726152
+  id: doi:10.1080/02763869.2020.1726152
+  journal: Medical Reference Services Quarterly
+  title: 'MedGen: NCBI''s Portal to Information on Medical Conditions with a Genetic
+    Component'
+  year: '2020'
 taxon:
 - NCBITaxon:9606
 ---

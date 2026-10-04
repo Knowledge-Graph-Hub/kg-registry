@@ -2,56 +2,137 @@
 activity_status: inactive
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.nlm.nih.gov/
-    id: ncbi
-    label: US National Library of Medicine
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.nlm.nih.gov/
+  id: ncbi
+  label: US National Library of Medicine
 creation_date: '2025-10-30T00:00:00Z'
-description: Consumer health resource about genetic conditions from the US National Library of Medicine. This resource has been merged into MedlinePlus Genetics as of 2020.
+description: Consumer health resource about genetic conditions from the US National
+  Library of Medicine. This resource has been merged into MedlinePlus Genetics as
+  of 2020.
 domains:
-  - biomedical
-  - genomics
-  - rare disease
+- biomedical
+- genomics
+- rare disease
 homepage_url: https://medlineplus.gov/genetics/
 id: ghr
 infores_id: ghr
 last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 name: Genetics Home Reference
-synonyms:
-  - GHR
 products:
-  - category: GraphicalInterface
-    description: MedlinePlus Genetics portal containing migrated Genetics Home Reference content.
-    format: http
-    id: ghr.portal
-    name: MedlinePlus Genetics Portal
-    original_source:
-      - source: ghr
-        relation_type: prov:hadPrimarySource
-    product_url: https://medlineplus.gov/genetics/
-  - category: GraphicalInterface
-    description: Browse page for genetic conditions from the MedlinePlus Genetics migration.
-    format: http
-    id: ghr.conditions
-    name: MedlinePlus Genetics Conditions
-    original_source:
-      - source: ghr
-        relation_type: prov:hadPrimarySource
-    product_url: https://medlineplus.gov/genetics/condition/
-  - category: GraphicalInterface
-    description: Browse page for gene summaries from the MedlinePlus Genetics migration.
-    format: http
-    id: ghr.gene-catalog
-    name: MedlinePlus Genetics Gene Catalog
-    original_source:
-      - source: ghr
-        relation_type: prov:hadPrimarySource
-    product_url: https://medlineplus.gov/genetics/gene/
+- category: GraphicalInterface
+  description: MedlinePlus Genetics portal containing migrated Genetics Home Reference
+    content.
+  format: http
+  id: ghr.portal
+  name: MedlinePlus Genetics Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  product_url: https://medlineplus.gov/genetics/
+- category: GraphicalInterface
+  description: Browse page for genetic conditions from the MedlinePlus Genetics migration.
+  format: http
+  id: ghr.conditions
+  name: MedlinePlus Genetics Conditions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  product_url: https://medlineplus.gov/genetics/condition/
+- category: GraphicalInterface
+  description: Browse page for gene summaries from the MedlinePlus Genetics migration.
+  format: http
+  id: ghr.gene-catalog
+  name: MedlinePlus Genetics Gene Catalog
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  product_url: https://medlineplus.gov/genetics/gene/
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing definitions and descriptions
+    with gzip compression
+  format: txt
+  id: medgen.mgdef
+  name: MGDEF (Definitions)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 5305829
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+- category: Product
+  description: CSV format data files directory with additional data exports
+  format: csv
+  id: medgen.csv
+  name: CSV Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
+synonyms:
+- GHR
 ---
-
 # Genetics Home Reference
 
 ## Overview

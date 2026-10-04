@@ -749,6 +749,51 @@ products:
   warnings:
   - The knowledge graph content is proprietary and is not available as a public bulk
     download. Access requires a commercial agreement with IMO Health.
+- category: Product
+  description: icd10 OBO
+  format: obo
+  id: obo-db-ingest.icd10.obo
+  license:
+    id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
+    label: Custom
+  name: icd10 OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  product_file_size: 51152
+  product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.obo
+- category: Product
+  description: icd10 OWL
+  format: owl
+  id: obo-db-ingest.icd10.owl
+  license:
+    id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
+    label: Custom
+  name: icd10 OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  product_file_size: 53028
+  product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.owl
+- category: Product
+  description: icd10 OBO Graph JSON
+  format: json
+  id: obo-db-ingest.icd10.json
+  license:
+    id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
+    label: Custom
+  name: icd10 OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  product_file_size: 52408
+  product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.json
 publications:
 - authors:
   - James E. Harrison

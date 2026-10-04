@@ -81,6 +81,99 @@ products:
     source: sty
   product_file_size: 1363
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STY.tar.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing semantic type assignments
+    with gzip compression
+  format: txt
+  id: medgen.mgsty
+  name: MGSTY (Semantic Types)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  product_file_size: 1667323
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
+- category: Product
+  description: CSV format data files directory with additional data exports
+  format: csv
+  id: medgen.csv
+  name: CSV Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
+- category: Product
+  description: sty OBO
+  format: obo
+  id: obo-db-ingest.sty.obo
+  name: sty OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  product_file_size: 2265
+  product_url: https://w3id.org/biopragmatics/resources/sty/sty.obo
+- category: Product
+  description: sty OWL
+  format: owl
+  id: obo-db-ingest.sty.owl
+  name: sty OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  product_file_size: 3613
+  product_url: https://w3id.org/biopragmatics/resources/sty/sty.owl
+- category: Product
+  description: sty OBO Graph JSON
+  format: json
+  id: obo-db-ingest.sty.json
+  name: sty OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  product_file_size: 3145
+  product_url: https://w3id.org/biopragmatics/resources/sty/sty.json
 publications:
 - authors:
   - McCray AT

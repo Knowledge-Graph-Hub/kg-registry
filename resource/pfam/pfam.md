@@ -1502,6 +1502,96 @@ products:
   - 2.0.0
   - 1.0.2
   - '1.0'
+- category: Product
+  description: pfam OBO
+  format: obo
+  id: obo-db-ingest.pfam.obo
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  product_file_size: 510198
+  product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.obo
+- category: Product
+  description: pfam OWL
+  format: owl
+  id: obo-db-ingest.pfam.owl
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  product_file_size: 656714
+  product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.owl
+- category: Product
+  description: pfam OBO Graph JSON
+  format: json
+  id: obo-db-ingest.pfam.json
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  product_file_size: 595575
+  product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.json
+- category: Product
+  description: pfam.clan OBO
+  format: obo
+  id: obo-db-ingest.pfam.clan.obo
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam.clan OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  product_file_size: 7122
+  product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.obo
+- category: Product
+  description: pfam.clan OWL
+  format: owl
+  id: obo-db-ingest.pfam.clan.owl
+  license:
+    id: https://creativecommons.org.publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam.clan OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  product_file_size: 11064
+  product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.owl
+- category: Product
+  description: pfam.clan OBO Graph JSON
+  format: json
+  id: obo-db-ingest.pfam.clan.json
+  license:
+    id: https://creativecommons.org.publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam.clan OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  product_file_size: 7820
+  product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.json
 publications:
 - authors:
   - T. Paysan-Lafosse

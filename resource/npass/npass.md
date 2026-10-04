@@ -113,6 +113,67 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: bio2rdf
+
+- category: Product
+  description: npass OBO
+  format: obo
+  id: obo-db-ingest.npass.obo
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC
+  name: npass OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: npass
+  product_file_size: 3336518
+  product_url: https://w3id.org/biopragmatics/resources/npass/npass.obo
+- category: Product
+  description: npass OWL
+  format: owl
+  id: obo-db-ingest.npass.owl
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC
+  name: npass OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: npass
+  product_file_size: 4085393
+  product_url: https://w3id.org/biopragmatics/resources/npass/npass.owl
+- category: Product
+  description: npass OBO Graph JSON
+  format: json
+  id: obo-db-ingest.npass.json
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC
+  name: npass OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: npass
+  product_file_size: 3814506
+  product_url: https://w3id.org/biopragmatics/resources/npass/npass.json
+- category: MappingProduct
+  description: npass SSSOM
+  format: sssom
+  id: obo-db-ingest.npass.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC
+  name: npass SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: npass
+  product_file_size: 833693
+  product_url: https://w3id.org/biopragmatics/resources/npass/npass.sssom.tsv
 ---
 # NPASS
 

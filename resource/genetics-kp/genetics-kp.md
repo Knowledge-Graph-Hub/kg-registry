@@ -422,6 +422,67 @@ products:
   versions:
   - '2026_03_27'
   - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
+- category: GraphicalInterface
+  description: JSON index of the ARS production relay server and its registered agent
+    endpoints.
+  format: http
+  id: ars.portal
+  name: ARS Production Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/
+- category: ProgrammingInterface
+  connection_url: https://ars-prod.transltr.io/ars/api
+  description: TRAPI-compatible ARS endpoint for asynchronous query submission.
+  format: http
+  id: ars.api
+  is_public: true
+  name: ARS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ars
+  - relation_type: prov:wasInformedBy
+    source: aragorn
+  - relation_type: prov:wasInformedBy
+    source: arax
+  - relation_type: prov:wasInformedBy
+    source: cqs
+  - relation_type: prov:wasInformedBy
+    source: molepro
+  - relation_type: prov:wasInformedBy
+    source: cam-kp
+  - relation_type: prov:wasInformedBy
+    source: openpredict
+  - relation_type: prov:wasInformedBy
+    source: cohd
+  - relation_type: prov:wasInformedBy
+    source: icees-kg
+  - relation_type: prov:wasInformedBy
+    source: genetics-kp
+  - relation_type: prov:wasInformedBy
+    source: connections-hypothesis-kp
+  product_url: https://ars-prod.transltr.io/ars/api/
 repository: https://github.com/broadinstitute/genetics-kp-dev
 ---
 A Translator Knowledge Provider focusing on genetic data.

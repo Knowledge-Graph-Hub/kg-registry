@@ -495,7 +495,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 15843494
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 15816874
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
 - category: Product
   compression: gzip
@@ -509,7 +523,31 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 5062289
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 5305829
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
 - category: MappingProduct
   compression: gzip
@@ -523,7 +561,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 15661303
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 16060333
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
 - category: Product
   compression: gzip
@@ -537,7 +589,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 11710268
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 11628774
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz
 - category: Product
   compression: gzip
@@ -551,7 +617,9 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 1644564
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  product_file_size: 1667323
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
 - category: Product
   compression: gzip
@@ -565,7 +633,21 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 3097271
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_file_size: 3143285
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
 - category: Product
   compression: gzip
@@ -578,7 +660,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: umls
-  product_file_size: 47602
+  product_file_size: 50681
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
 - category: GraphicalInterface
   description: Interactive web interface for browsing and querying Data Distillery
@@ -1867,6 +1949,47 @@ products:
   - relation_type: prov:hadPrimarySource
     source: umls
   product_url: https://data.bioontology.org/
+- category: Product
+  description: CSV format data files directory with additional data exports
+  format: csv
+  id: medgen.csv
+  name: CSV Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
 publications:
 - authors:
   - Bodenreider O

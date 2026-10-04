@@ -1554,6 +1554,42 @@ products:
   - relation_type: prov:hadPrimarySource
     source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+- category: Product
+  description: pid.pathway OBO
+  format: obo
+  id: obo-db-ingest.pid.pathway.obo
+  name: pid.pathway OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  product_file_size: 53872
+  product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.obo
+- category: Product
+  description: pid.pathway OWL
+  format: owl
+  id: obo-db-ingest.pid.pathway.owl
+  name: pid.pathway OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  product_file_size: 54779
+  product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.owl
+- category: Product
+  description: pid.pathway OBO Graph JSON
+  format: json
+  id: obo-db-ingest.pid.pathway.json
+  name: pid.pathway OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  product_file_size: 47185
+  product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.json
 publications:
 - authors:
   - Carl F. Schaefer

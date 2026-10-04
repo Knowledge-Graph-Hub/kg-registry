@@ -1,13 +1,13 @@
 ---
 activity_status: active
-category: DataSource
+category: Aggregator
 creation_date: '2025-10-30T00:00:00Z'
 description: The Autonomous Relay System (ARS) is the primary interface and query routing service for the NCATS Biomedical Data Translator, orchestrating queries across multiple knowledge providers and reasoning agents.
 domains:
   - biomedical
 id: "ars"
 infores_id: "ars"
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 name: Autonomous Relay System
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Autonomous-Relay-System-(ARS)
@@ -22,13 +22,33 @@ contacts:
         value: "https://ncats.nih.gov/translator"
 products:
   - category: GraphicalInterface
-    description: Primary web entry point for submitting and tracking Translator ARS queries.
+    description: JSON index of the ARS production relay server and its registered agent endpoints.
     format: http
     id: ars.portal
     name: ARS Production Portal
     original_source:
       - source: ars
         relation_type: prov:hadPrimarySource
+      - source: aragorn
+        relation_type: prov:wasInformedBy
+      - source: arax
+        relation_type: prov:wasInformedBy
+      - source: cqs
+        relation_type: prov:wasInformedBy
+      - source: molepro
+        relation_type: prov:wasInformedBy
+      - source: cam-kp
+        relation_type: prov:wasInformedBy
+      - source: openpredict
+        relation_type: prov:wasInformedBy
+      - source: cohd
+        relation_type: prov:wasInformedBy
+      - source: icees-kg
+        relation_type: prov:wasInformedBy
+      - source: genetics-kp
+        relation_type: prov:wasInformedBy
+      - source: connections-hypothesis-kp
+        relation_type: prov:wasInformedBy
     product_url: https://ars-prod.transltr.io/
   - category: ProgrammingInterface
     connection_url: https://ars-prod.transltr.io/ars/api
@@ -40,7 +60,31 @@ products:
     original_source:
       - source: ars
         relation_type: prov:hadPrimarySource
-    product_url: https://ars-prod.transltr.io/ars/api/submit
+      - source: aragorn
+        relation_type: prov:wasInformedBy
+      - source: arax
+        relation_type: prov:wasInformedBy
+      - source: cqs
+        relation_type: prov:wasInformedBy
+      - source: molepro
+        relation_type: prov:wasInformedBy
+      - source: cam-kp
+        relation_type: prov:wasInformedBy
+      - source: openpredict
+        relation_type: prov:wasInformedBy
+      - source: cohd
+        relation_type: prov:wasInformedBy
+      - source: icees-kg
+        relation_type: prov:wasInformedBy
+      - source: genetics-kp
+        relation_type: prov:wasInformedBy
+      - source: connections-hypothesis-kp
+        relation_type: prov:wasInformedBy
+    product_url: https://ars-prod.transltr.io/ars/api/
+repository: https://github.com/NCATSTranslator/Relay
+license:
+  id: https://opensource.org/licenses/MIT
+  label: MIT License
 ---
 
 # Autonomous Relay System

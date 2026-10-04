@@ -1774,6 +1774,51 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+- category: Product
+  description: flybase OBO
+  format: obo
+  id: obo-db-ingest.flybase.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: flybase OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  product_file_size: 2092908
+  product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.obo
+- category: Product
+  description: flybase OWL
+  format: owl
+  id: obo-db-ingest.flybase.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: flybase OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  product_file_size: 1959979
+  product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.owl
+- category: Product
+  description: flybase OBO Graph JSON
+  format: json
+  id: obo-db-ingest.flybase.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: flybase OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  product_file_size: 1883340
+  product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.json
 publications:
 - authors:
   - Öztürk-Çolak A

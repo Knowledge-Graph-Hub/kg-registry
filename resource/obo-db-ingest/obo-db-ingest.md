@@ -16,7 +16,7 @@ domains:
   - general
 homepage_url: https://biopragmatics.github.io/obo-db-ingest/
 id: obo-db-ingest
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://biopragmatics.github.io/obo-db-ingest/
@@ -481,6 +481,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: Product
     description: chembl.compound OWL
     format: owl
@@ -494,6 +496,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: Product
     description: chembl.compound OBO Graph JSON
     format: json
@@ -507,6 +511,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: MappingProduct
     description: chembl.compound SSSOM
     format: sssom
@@ -520,6 +526,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: Product
     description: chembl.compound Nodes TSV
     format: tsv
@@ -548,6 +556,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: Product
     description: chembl.target OWL
     format: owl
@@ -561,6 +571,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: Product
     description: chembl.target OBO Graph JSON
     format: json
@@ -574,6 +586,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: MappingProduct
     description: chembl.target SSSOM
     format: sssom
@@ -587,6 +601,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: chembl
   - category: Product
     description: chembl.target Nodes TSV
     format: tsv
@@ -615,6 +631,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: civic
   - category: Product
     description: civic.gid OWL
     format: owl
@@ -628,6 +646,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: civic
   - category: Product
     description: civic.gid OBO Graph JSON
     format: json
@@ -641,6 +661,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: civic
   - category: MappingProduct
     description: civic.gid SSSOM
     format: sssom
@@ -654,6 +676,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: civic
   - category: Product
     description: civic.gid Nodes TSV
     format: tsv
@@ -760,6 +784,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: complexportal
   - category: Product
     description: complexportal OWL
     format: owl
@@ -773,6 +799,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: complexportal
   - category: Product
     description: complexportal OBO Graph JSON
     format: json
@@ -786,6 +814,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: complexportal
   - category: MappingProduct
     description: complexportal SSSOM
     format: sssom
@@ -799,6 +829,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: complexportal
   - category: Product
     description: complexportal Nodes TSV
     format: tsv
@@ -824,6 +856,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cpt
   - category: Product
     description: cpt OWL
     format: owl
@@ -834,6 +868,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cpt
   - category: Product
     description: cpt OBO Graph JSON
     format: json
@@ -844,6 +880,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cpt
   - category: MappingProduct
     description: cpt SSSOM
     format: sssom
@@ -854,6 +892,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cpt
   - category: Product
     description: cpt Nodes TSV
     format: tsv
@@ -879,6 +919,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: credit
   - category: Product
     description: credit OWL
     format: owl
@@ -892,6 +934,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: credit
   - category: Product
     description: credit OBO Graph JSON
     format: json
@@ -905,6 +949,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: credit
   - category: MappingProduct
     description: credit SSSOM
     format: sssom
@@ -945,6 +991,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cvx
   - category: Product
     description: cvx OWL
     format: owl
@@ -955,6 +1003,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cvx
   - category: Product
     description: cvx OBO Graph JSON
     format: json
@@ -965,6 +1015,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cvx
   - category: MappingProduct
     description: cvx SSSOM
     format: sssom
@@ -975,6 +1027,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cvx
   - category: Product
     description: cvx Nodes TSV
     format: tsv
@@ -1000,6 +1054,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: depmap
   - category: Product
     description: depmap OWL
     format: owl
@@ -1013,6 +1069,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: depmap
   - category: Product
     description: depmap OBO Graph JSON
     format: json
@@ -1026,6 +1084,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: depmap
   - category: MappingProduct
     description: depmap SSSOM
     format: sssom
@@ -1039,6 +1099,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: depmap
   - category: Product
     description: depmap Nodes TSV
     format: tsv
@@ -1067,6 +1129,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: dictybase
   - category: Product
     description: dictybase.gene OWL
     format: owl
@@ -1080,6 +1144,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: dictybase
   - category: Product
     description: dictybase.gene OBO Graph JSON
     format: json
@@ -1093,6 +1159,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: dictybase
   - category: Product
     description: dictybase.gene Nodes TSV
     format: tsv
@@ -1121,6 +1189,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: drugcentral
   - category: Product
     description: drugcentral OWL
     format: owl
@@ -1134,6 +1204,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: drugcentral
   - category: Product
     description: drugcentral OBO Graph JSON
     format: json
@@ -1147,6 +1219,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: drugcentral
   - category: MappingProduct
     description: drugcentral SSSOM
     format: sssom
@@ -1160,6 +1234,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: drugcentral
   - category: Product
     description: drugcentral Nodes TSV
     format: tsv
@@ -1188,6 +1264,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ec
   - category: Product
     description: ec OWL
     format: owl
@@ -1201,6 +1279,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ec
   - category: Product
     description: ec OBO Graph JSON
     format: json
@@ -1214,6 +1294,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ec
   - category: MappingProduct
     description: ec SSSOM
     format: sssom
@@ -1227,6 +1309,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ec
   - category: Product
     description: ec Nodes TSV
     format: tsv
@@ -1255,6 +1339,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: flybase
   - category: Product
     description: flybase OWL
     format: owl
@@ -1268,6 +1354,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: flybase
   - category: Product
     description: flybase OBO Graph JSON
     format: json
@@ -1281,6 +1369,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: flybase
   - category: Product
     description: flybase Nodes TSV
     format: tsv
@@ -1306,6 +1396,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: gard
   - category: Product
     description: gard OWL
     format: owl
@@ -1316,6 +1408,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: gard
   - category: Product
     description: gard OBO Graph JSON
     format: json
@@ -1326,6 +1420,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: gard
   - category: Product
     description: gard Nodes TSV
     format: tsv
@@ -1351,6 +1447,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: geonames
   - category: Product
     description: geonames OWL
     format: owl
@@ -1364,6 +1462,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: geonames
   - category: Product
     description: geonames OBO Graph JSON
     format: json
@@ -1377,6 +1477,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: geonames
   - category: Product
     description: geonames Nodes TSV
     format: tsv
@@ -1405,6 +1507,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: geonames
   - category: Product
     description: geonames.feature OWL
     format: owl
@@ -1418,6 +1522,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: geonames
   - category: Product
     description: geonames.feature OBO Graph JSON
     format: json
@@ -1431,6 +1537,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: geonames
   - category: Product
     description: geonames.feature Nodes TSV
     format: tsv
@@ -1440,7 +1548,7 @@ products:
       label: CC-BY-4.0
     name: geonames.feature Nodes TSV
     original_source:
-      - source: geonames.feature
+      - source: geonames
         relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
@@ -1460,6 +1568,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: gtdb
   - category: Product
     description: gtdb OWL
     format: owl
@@ -1473,6 +1583,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: gtdb
   - category: Product
     compression: gzip
     description: gtdb OBO Graph JSON
@@ -1487,6 +1599,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: gtdb
   - category: MappingProduct
     description: gtdb SSSOM
     format: sssom
@@ -1500,6 +1614,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: gtdb
   - category: Product
     compression: gzip
     description: gtdb Nodes TSV
@@ -1666,6 +1782,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: icd10
   - category: Product
     description: icd10 OWL
     format: owl
@@ -1679,6 +1797,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: icd10
   - category: Product
     description: icd10 OBO Graph JSON
     format: json
@@ -1692,6 +1812,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: icd10
   - category: Product
     description: icd10 Nodes TSV
     format: tsv
@@ -1720,6 +1842,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: icd11
   - category: Product
     description: icd11 OWL
     format: owl
@@ -1733,6 +1857,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: icd11
   - category: Product
     description: icd11 OBO Graph JSON
     format: json
@@ -1746,6 +1872,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: icd11
   - category: MappingProduct
     description: icd11 SSSOM
     format: sssom
@@ -1759,6 +1887,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: icd11
   - category: Product
     description: icd11 Nodes TSV
     format: tsv
@@ -1957,6 +2087,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: kegg
   - category: Product
     description: kegg.genome OWL
     format: owl
@@ -1970,6 +2102,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: kegg
   - category: Product
     description: kegg.genome OBO Graph JSON
     format: json
@@ -1983,6 +2117,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: kegg
   - category: Product
     description: kegg.genome Nodes TSV
     format: tsv
@@ -2011,6 +2147,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mesh
   - category: Product
     compression: gzip
     description: mesh OWL
@@ -2025,6 +2163,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mesh
   - category: Product
     compression: gzip
     description: mesh OBO Graph JSON
@@ -2039,6 +2179,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mesh
   - category: Product
     description: mesh Nodes TSV
     format: tsv
@@ -2068,6 +2210,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mgi
   - category: Product
     compression: gzip
     description: mgi OWL
@@ -2082,6 +2226,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mgi
   - category: Product
     compression: gzip
     description: mgi OBO Graph JSON
@@ -2096,6 +2242,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mgi
   - category: MappingProduct
     description: mgi SSSOM
     format: sssom
@@ -2109,6 +2257,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mgi
   - category: Product
     description: mgi Nodes TSV
     format: tsv
@@ -2137,6 +2287,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase OWL
     format: owl
@@ -2150,6 +2302,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase OBO Graph JSON
     format: json
@@ -2163,6 +2317,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: MappingProduct
     description: mirbase SSSOM
     format: sssom
@@ -2176,6 +2332,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase Nodes TSV
     format: tsv
@@ -2204,6 +2362,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase.family OWL
     format: owl
@@ -2217,6 +2377,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase.family OBO Graph JSON
     format: json
@@ -2230,6 +2392,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase.family Nodes TSV
     format: tsv
@@ -2258,6 +2422,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase.mature OWL
     format: owl
@@ -2271,6 +2437,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase.mature OBO Graph JSON
     format: json
@@ -2284,6 +2452,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: mirbase
   - category: Product
     description: mirbase.mature Nodes TSV
     format: tsv
@@ -2313,6 +2483,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
   - category: Product
     compression: gzip
     description: msigdb OWL
@@ -2327,6 +2499,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
   - category: Product
     compression: gzip
     description: msigdb OBO Graph JSON
@@ -2341,6 +2515,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
   - category: MappingProduct
     description: msigdb SSSOM
     format: sssom
@@ -2354,6 +2530,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
   - category: Product
     description: msigdb Nodes TSV
     format: tsv
@@ -2382,6 +2560,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ncbi
   - category: Product
     description: ncbi.gc OWL
     format: owl
@@ -2395,6 +2575,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ncbi
   - category: Product
     description: ncbi.gc OBO Graph JSON
     format: json
@@ -2408,6 +2590,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ncbi
   - category: MappingProduct
     description: ncbi.gc SSSOM
     format: sssom
@@ -2421,6 +2605,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ncbi
   - category: Product
     description: ncbi.gc Nodes TSV
     format: tsv
@@ -2430,7 +2616,7 @@ products:
       label: public domain
     name: ncbi.gc Nodes TSV
     original_source:
-      - source: ncbi.gc
+      - source: ncbi
         relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
@@ -2447,6 +2633,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nihreporter
   - category: Product
     compression: gzip
     description: nihreporter.project OWL
@@ -2458,6 +2646,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nihreporter
   - category: Product
     compression: gzip
     description: nihreporter.project OBO Graph JSON
@@ -2469,6 +2659,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nihreporter
   - category: Product
     compression: gzip
     description: nihreporter.project Nodes TSV
@@ -2495,6 +2687,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nlm
   - category: Product
     description: nlm OWL
     format: owl
@@ -2508,6 +2702,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nlm
   - category: Product
     description: nlm OBO Graph JSON
     format: json
@@ -2521,6 +2717,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nlm
   - category: MappingProduct
     description: nlm SSSOM
     format: sssom
@@ -2534,6 +2732,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nlm
   - category: Product
     description: nlm Nodes TSV
     format: tsv
@@ -2562,6 +2762,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nlm
   - category: Product
     description: nlm.publisher OWL
     format: owl
@@ -2575,6 +2777,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nlm
   - category: Product
     description: nlm.publisher OBO Graph JSON
     format: json
@@ -2588,6 +2792,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: nlm
   - category: MappingProduct
     description: nlm.publisher SSSOM
     format: sssom
@@ -2597,7 +2803,7 @@ products:
       label: public domain
     name: nlm.publisher SSSOM
     original_source:
-      - source: nlm.publisher
+      - source: nlm
         relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
@@ -2612,7 +2818,7 @@ products:
       label: public domain
     name: nlm.publisher Nodes TSV
     original_source:
-      - source: nlm.publisher
+      - source: nlm
         relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
@@ -2631,6 +2837,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: npass
   - category: Product
     description: npass OWL
     format: owl
@@ -2644,6 +2852,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: npass
   - category: Product
     description: npass OBO Graph JSON
     format: json
@@ -2657,6 +2867,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: npass
   - category: MappingProduct
     description: npass SSSOM
     format: sssom
@@ -2670,6 +2882,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: npass
   - category: Product
     description: npass Nodes TSV
     format: tsv
@@ -2698,6 +2912,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: omim
   - category: Product
     description: omim.ps OWL
     format: owl
@@ -2711,6 +2927,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: omim
   - category: Product
     description: omim.ps OBO Graph JSON
     format: json
@@ -2724,6 +2942,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: omim
   - category: Product
     description: omim.ps Nodes TSV
     format: tsv
@@ -2753,6 +2973,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pathbank
   - category: Product
     compression: gzip
     description: pathbank OWL
@@ -2767,6 +2989,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pathbank
   - category: Product
     compression: gzip
     description: pathbank OBO Graph JSON
@@ -2781,6 +3005,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pathbank
   - category: MappingProduct
     description: pathbank SSSOM
     format: sssom
@@ -2794,6 +3020,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pathbank
   - category: Product
     description: pathbank Nodes TSV
     format: tsv
@@ -2822,6 +3050,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pfam
   - category: Product
     description: pfam OWL
     format: owl
@@ -2835,6 +3065,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pfam
   - category: Product
     description: pfam OBO Graph JSON
     format: json
@@ -2848,6 +3080,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pfam
   - category: Product
     description: pfam Nodes TSV
     format: tsv
@@ -2876,6 +3110,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pfam
   - category: Product
     description: pfam.clan OWL
     format: owl
@@ -2889,6 +3125,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pfam
   - category: Product
     description: pfam.clan OBO Graph JSON
     format: json
@@ -2902,6 +3140,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pfam
   - category: Product
     description: pfam.clan Nodes TSV
     format: tsv
@@ -3287,6 +3527,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pid
   - category: Product
     description: pid.pathway OWL
     format: owl
@@ -3297,6 +3539,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pid
   - category: Product
     description: pid.pathway OBO Graph JSON
     format: json
@@ -3307,6 +3551,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pid
   - category: Product
     description: pid.pathway Nodes TSV
     format: tsv
@@ -3332,6 +3578,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pombase
   - category: Product
     description: pombase OWL
     format: owl
@@ -3345,6 +3593,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pombase
   - category: Product
     description: pombase OBO Graph JSON
     format: json
@@ -3358,6 +3608,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: pombase
   - category: Product
     description: pombase Nodes TSV
     format: tsv
@@ -3386,6 +3638,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: reactome
   - category: Product
     compression: gzip
     description: reactome OWL
@@ -3400,6 +3654,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: reactome
   - category: Product
     compression: gzip
     description: reactome OBO Graph JSON
@@ -3414,6 +3670,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: reactome
   - category: Product
     description: reactome Nodes TSV
     format: tsv
@@ -3442,6 +3700,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: rgd
   - category: Product
     compression: gzip
     description: rgd OWL
@@ -3456,6 +3716,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: rgd
   - category: Product
     compression: gzip
     description: rgd OBO Graph JSON
@@ -3470,6 +3732,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: rgd
   - category: MappingProduct
     description: rgd SSSOM
     format: sssom
@@ -3483,6 +3747,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: rgd
   - category: Product
     description: rgd Nodes TSV
     format: tsv
@@ -3598,6 +3864,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ror
   - category: Product
     compression: gzip
     description: ror OWL
@@ -3612,6 +3880,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ror
   - category: Product
     compression: gzip
     description: ror OBO Graph JSON
@@ -3626,6 +3896,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ror
   - category: MappingProduct
     description: ror SSSOM
     format: sssom
@@ -3639,6 +3911,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: ror
   - category: Product
     description: ror Nodes TSV
     format: tsv
@@ -3667,6 +3941,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: sgd
   - category: Product
     description: sgd OWL
     format: owl
@@ -3680,6 +3956,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: sgd
   - category: Product
     description: sgd OBO Graph JSON
     format: json
@@ -3693,6 +3971,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: sgd
   - category: Product
     description: sgd Nodes TSV
     format: tsv
@@ -3721,6 +4001,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: signor
   - category: Product
     description: signor OWL
     format: owl
@@ -3734,6 +4016,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: signor
   - category: Product
     description: signor OBO Graph JSON
     format: json
@@ -3747,6 +4031,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: signor
   - category: Product
     description: signor Nodes TSV
     format: tsv
@@ -3776,6 +4062,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: swisslipid
   - category: Product
     compression: gzip
     description: swisslipid OWL
@@ -3790,6 +4078,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: swisslipid
   - category: Product
     compression: gzip
     description: swisslipid OBO Graph JSON
@@ -3804,6 +4094,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: swisslipid
   - category: MappingProduct
     description: swisslipid SSSOM
     format: sssom
@@ -3817,6 +4109,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: swisslipid
   - category: Product
     compression: gzip
     description: swisslipid Nodes TSV
@@ -3891,6 +4185,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: sty
   - category: Product
     description: sty OWL
     format: owl
@@ -3901,6 +4197,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: sty
   - category: Product
     description: sty OBO Graph JSON
     format: json
@@ -3911,6 +4209,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: sty
   - category: Product
     description: sty Nodes TSV
     format: tsv
@@ -3937,6 +4237,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: Product
     compression: gzip
     description: uniprot OWL
@@ -3951,6 +4253,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: Product
     compression: gzip
     description: uniprot OBO Graph JSON
@@ -3965,6 +4269,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: MappingProduct
     description: uniprot SSSOM
     format: sssom
@@ -3978,6 +4284,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: Product
     description: uniprot Nodes TSV
     format: tsv
@@ -4006,6 +4314,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: Product
     description: uniprot.ptm OWL
     format: owl
@@ -4019,6 +4329,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: Product
     description: uniprot.ptm OBO Graph JSON
     format: json
@@ -4032,6 +4344,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: MappingProduct
     description: uniprot.ptm SSSOM
     format: sssom
@@ -4045,6 +4359,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
   - category: Product
     description: uniprot.ptm Nodes TSV
     format: tsv
@@ -4073,6 +4389,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: wikipathways
   - category: Product
     description: wikipathways OWL
     format: owl
@@ -4086,6 +4404,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: wikipathways
   - category: Product
     description: wikipathways OBO Graph JSON
     format: json
@@ -4099,6 +4419,8 @@ products:
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: wikipathways
   - category: Product
     description: wikipathways Nodes TSV
     format: tsv
@@ -4191,7 +4513,75 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1884582
     product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.tsv
+  - category: Product
+    description: IUPAC Gold Book (Compendium of Chemical Terminology) OBO
+    format: obo
+    id: obo-db-ingest.goldbook.obo
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: goldbook OBO
+    original_source:
+      - source: obo-db-ingest
+        relation_type: prov:hadPrimarySource
+    product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.obo
+  - category: Product
+    description: IUPAC Gold Book (Compendium of Chemical Terminology) OWL
+    format: owl
+    id: obo-db-ingest.goldbook.owl
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: goldbook OWL
+    original_source:
+      - source: obo-db-ingest
+        relation_type: prov:hadPrimarySource
+    product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.owl
+  - category: Product
+    description: IUPAC Gold Book (Compendium of Chemical Terminology) OBO Graph JSON
+    format: json
+    id: obo-db-ingest.goldbook.json
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: goldbook OBO Graph JSON
+    original_source:
+      - source: obo-db-ingest
+        relation_type: prov:hadPrimarySource
+    product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.json
+  - category: MappingProduct
+    description: IUPAC Gold Book (Compendium of Chemical Terminology) SSSOM
+    format: sssom
+    id: obo-db-ingest.goldbook.sssom.tsv
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: goldbook SSSOM
+    original_source:
+      - source: obo-db-ingest
+        relation_type: prov:hadPrimarySource
+    product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.sssom.tsv
+  - category: Product
+    description: IUPAC Gold Book (Compendium of Chemical Terminology) Nodes TSV
+    format: tsv
+    id: obo-db-ingest.goldbook.tsv
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: goldbook Nodes TSV
+    original_source:
+      - source: obo-db-ingest
+        relation_type: prov:hadPrimarySource
+    product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv
 repository: https://github.com/biopragmatics/obo-db-ingest
+publications:
+  - authors:
+      - Charles Tapley Hoyt
+    doi: 10.5281/zenodo.10829095
+    id: doi:10.5281/zenodo.10829095
+    journal: Zenodo
+    title: biopragmatics/obo-db-ingest
+    year: '2025'
 ---
 
 OBO Database Ingestion

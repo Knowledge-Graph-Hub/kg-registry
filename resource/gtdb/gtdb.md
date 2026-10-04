@@ -149,6 +149,68 @@ products:
     source: progenomes
   product_file_size: 12570522
   product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_species_summary_no_predictions.tsv.gz
+- category: Product
+  compression: gzip
+  description: gtdb OBO
+  format: obo
+  id: obo-db-ingest.gtdb.obo
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: gtdb OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: gtdb
+  product_file_size: 6294776
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo.gz
+- category: Product
+  description: gtdb OWL
+  format: owl
+  id: obo-db-ingest.gtdb.owl
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: gtdb OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: gtdb
+  product_file_size: 3186823
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.owl
+- category: Product
+  compression: gzip
+  description: gtdb OBO Graph JSON
+  format: json
+  id: obo-db-ingest.gtdb.json
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: gtdb OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: gtdb
+  product_file_size: 4213217
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz
+- category: MappingProduct
+  description: gtdb SSSOM
+  format: sssom
+  id: obo-db-ingest.gtdb.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: gtdb SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: gtdb
+  product_file_size: 1667414
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
 publications:
 - authors:
   - Parks DH

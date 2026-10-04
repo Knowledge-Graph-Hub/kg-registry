@@ -8,10 +8,10 @@ license:
   label: public domain
 name: nlm.publisher SSSOM
 original_source:
-  - source: nlm.publisher
-    relation_type: prov:hadPrimarySource
-  - source: obo-db-ingest
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: nlm
+- relation_type: prov:hadPrimarySource
+  source: obo-db-ingest
 product_file_size: 140
 product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.sssom.tsv
 layout: product_detail

@@ -1545,6 +1545,156 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: Product
+  description: mirbase OBO
+  format: obo
+  id: obo-db-ingest.mirbase.obo
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 715053
+  product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.obo
+- category: Product
+  description: mirbase OWL
+  format: owl
+  id: obo-db-ingest.mirbase.owl
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 1062694
+  product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.owl
+- category: Product
+  description: mirbase OBO Graph JSON
+  format: json
+  id: obo-db-ingest.mirbase.json
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 825009
+  product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.json
+- category: MappingProduct
+  description: mirbase SSSOM
+  format: sssom
+  id: obo-db-ingest.mirbase.sssom.tsv
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 53837
+  product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.sssom.tsv
+- category: Product
+  description: mirbase.family OBO
+  format: obo
+  id: obo-db-ingest.mirbase.family.obo
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase.family OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 175105
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.obo
+- category: Product
+  description: mirbase.family OWL
+  format: owl
+  id: obo-db-ingest.mirbase.family.owl
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase.family OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 248775
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.owl
+- category: Product
+  description: mirbase.family OBO Graph JSON
+  format: json
+  id: obo-db-ingest.mirbase.family.json
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase.family OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 113961
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.json
+- category: Product
+  description: mirbase.mature OBO
+  format: obo
+  id: obo-db-ingest.mirbase.mature.obo
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase.mature OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 329057
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo
+- category: Product
+  description: mirbase.mature OWL
+  format: owl
+  id: obo-db-ingest.mirbase.mature.owl
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase.mature OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 549748
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.owl
+- category: Product
+  description: mirbase.mature OBO Graph JSON
+  format: json
+  id: obo-db-ingest.mirbase.mature.json
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: mirbase.mature OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_file_size: 373573
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.json
 publications:
 - authors:
   - Kozomara

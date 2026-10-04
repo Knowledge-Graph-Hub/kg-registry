@@ -1,5 +1,5 @@
 ---
-activity_status: active
+activity_status: inactive
 category: Ontology
 contacts:
 - category: Organization
@@ -9,51 +9,57 @@ contacts:
   id: ontotext
   label: Ontotext Lab, Sirma Group
 creation_date: '2025-12-17T00:00:00Z'
-description: PROTON (PROTo ONtology) is a lightweight upper-level ontology serving
-  as a foundational modeling basis for semantic web applications. It provides a modular
-  framework with approximately 542 entity classes and 183 properties, covering named
-  entities, temporal concepts, quantitative domains, and abstract concepts. Designed
-  for information extraction, semantic annotation, knowledge management, and linked
-  data integration.
+description: PROTON (PROTo ONtology) is a lightweight upper-level ontology developed
+  by Ontotext in the EU SEKT project. It is split into System, Top, Extent and Knowledge
+  Management modules, covering named entities such as people, organizations and locations,
+  temporal and quantitative concepts, and information resources, and was used for
+  information extraction, semantic annotation and linked data integration. Version
+  3.0 (Beta) added a Linked Open Data extension mapped to DBpedia, Freebase and GeoNames.
+  It has not been updated since about 2012, and the Ontotext homepage now redirects
+  to a missing page on graphwise.ai.
 domains:
 - general
 homepage_url: https://www.ontotext.com/products/proton/
 id: proton
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 name: PROTON (PROTo ONtology)
 products:
-- category: OntologyProduct
-  description: Complete PROTON 3.0 Beta ontology specification in OWL Lite/RDF-XML
-    format, including all four modules (System, Top, Extent, KM) with comprehensive
-    entity class definitions and properties
-  format: owl
+- category: DocumentationProduct
+  description: PDF specification of PROTON 3.0 Beta, describing the System, Top, Extent
+    and Knowledge Management modules and their classes and properties.
+  format: pdf
   id: proton.ontology
   is_public: true
-  name: PROTON Ontology OWL Distribution
+  name: PROTON 3.0 Beta Specification
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proton
+  - relation_type: prov:wasInfluencedBy
+    source: geonames
   product_file_size: 725192
   product_url: https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf
+  warnings:
+  - Could not be retrieved when checked on 2026-10-04 because the Ontotext site served
+    a CAPTCHA page instead of the file.
 - category: OntologyProduct
-  description: PROTON Top Module - the primary upper-level ontology module containing
-    core entity types (Person, Location, Organization), temporal concepts, quantitative
-    domains, and abstract concepts
-  format: owl
+  compression: gzip
+  description: PROTON Top module (version 3.0) in Turtle, as mirrored on TriplyDB,
+    with core entity types such as Person, Location and Organization plus temporal,
+    quantitative and abstract concepts.
+  format: ttl
   id: proton.top
   is_public: true
   name: PROTON Top Module
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proton
-  product_url: http://www.ontotext.com/proton/protontop
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - relation_type: prov:wasInfluencedBy
+    source: geonames
+  product_url: https://api.triplydb.com/datasets/ontotext/proton/download.ttl.gz
 - category: DocumentationProduct
   description: Comprehensive technical documentation and class reference for PROTON
     ontology covering all modules, properties, and usage guidelines
@@ -65,6 +71,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proton
   product_url: https://www.ontotext.com/documents/proton/proton-doc.htm
+  warnings:
+  - Could not be retrieved when checked on 2026-10-04 because the Ontotext site served
+    a CAPTCHA page instead of the file.
 - category: GraphicalInterface
   description: Interactive browser for exploring and navigating PROTON ontology structure,
     classes, and relationships on TriplyDB platform
@@ -95,12 +104,24 @@ products:
     source: openbiodiv
   product_file_size: 8176
   product_url: https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl
-repository: https://github.com/Ontotext-AD/proton
+publications:
+- authors:
+  - Mariana Damova
+  - Svetoslav Petrov
+  - Kiril Simov
+  doi: 10.1007/978-3-642-15431-7_31
+  id: doi:10.1007/978-3-642-15431-7_31
+  journal: Lecture Notes in Computer Science
+  title: Mapping Data Driven and Upper Level Ontology
+  year: '2010'
 synonyms:
 - PROTo ONtology
 - PROTON 3.0
 - PROTON Top
 version: 3.0 Beta
+warnings:
+- The homepage redirected to a missing page on graphwise.ai (HTTP 404) when checked
+  on 2026-10-04, after Ontotext became Graphwise.
 ---
 # PROTON (PROTo ONtology)
 
@@ -190,7 +211,7 @@ PROTON's architecture is based on stratification principles derived from DOLCE (
 
 **RDF/Semantic Web Access:**
 - Direct RDF: http://www.ontotext.com/proton/protontop
-- Alternative RDF endpoints: http://proton.semanticweb.org/2005/04/protons and protonext
+- Historical namespace: http://proton.semanticweb.org/2005/04/protons (no longer resolves)
 
 **Interactive Browsing:**
 - TriplyDB Browser: https://triplydb.com/ontotext/proton/browser
@@ -205,8 +226,8 @@ PROTON's architecture is based on stratification principles derived from DOLCE (
 PROTON integrates seamlessly with:
 
 - **Semantic Publishing:** SPAR (Semantic Publishing and Referencing) Ontologies
-- **Biodiversity Standards:** Darwin Core, OpenBiodiv-O, NOMEN, TaxPub
-- **Linked Open Data:** DBPedia, GeoNames, Wikidata, and other major LOD datasets
+- **Biodiversity:** reused by the OpenBiodiv-O ontology
+- **Linked Open Data:** the PROTON 3.0 extension was mapped to DBpedia, Freebase and GeoNames
 - **Knowledge Management Systems:** GraphDB and OWLIM semantic repositories
 - **Information Extraction:** Text analysis and Natural Language Processing pipelines
 
@@ -247,8 +268,7 @@ PROTON adheres to and integrates with:
 
 - **W3C Standards:** OWL, RDF, SPARQL
 - **Semantic Web:** Linked Data principles (5-star open data)
-- **Interoperability:** Compatible with major semantic frameworks (UMBEL, DOLCE, SUMO)
-- **Biodiversity Standards:** Darwin Core, GBIF requirements
+- **Interoperability:** aligned with UMBEL; its top-level split follows DOLCE
 - **Domain Standards:** Specialized alignments with discipline-specific ontologies
 
 ## Historical Context
@@ -267,7 +287,7 @@ Original creators:
 
 **Current Maintainer:** Ontotext Lab, Sirma Group
 
-The ontology continues to be maintained and extended through integration with modern linked data ecosystems and semantic web applications. It remains a reference upper-level ontology in the semantic web community.
+PROTON has not been updated since version 3.0 Beta (about 2012). The Ontotext pages are no longer reliably reachable, but the Top module remains available on TriplyDB.
 
 ## Citation and Usage
 

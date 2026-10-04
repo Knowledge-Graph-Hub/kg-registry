@@ -340,6 +340,109 @@ products:
     source: pubchem
   - relation_type: prov:wasInfluencedBy
     source: pathwaycommons
+- category: MappingProduct
+  compression: gzip
+  description: Mappings between MedGen CUIs and external source identifiers with gzip
+    compression
+  format: txt
+  id: medgen.id-mappings
+  name: MedGen ID Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_file_size: 5806282
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGenIDMappings.txt.gz
+- category: Product
+  description: CSV format data files directory with additional data exports
+  format: csv
+  id: medgen.csv
+  name: CSV Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: clinpgx
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: sty
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
+- category: Product
+  description: gard OBO
+  format: obo
+  id: obo-db-ingest.gard.obo
+  name: gard OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  product_file_size: 275262
+  product_url: https://w3id.org/biopragmatics/resources/gard/gard.obo
+- category: Product
+  description: gard OWL
+  format: owl
+  id: obo-db-ingest.gard.owl
+  name: gard OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  product_file_size: 340996
+  product_url: https://w3id.org/biopragmatics/resources/gard/gard.owl
+- category: Product
+  description: gard OBO Graph JSON
+  format: json
+  id: obo-db-ingest.gard.json
+  name: gard OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  product_file_size: 333132
+  product_url: https://w3id.org/biopragmatics/resources/gard/gard.json
 ---
 # Genetic and Rare Diseases Information Center
 

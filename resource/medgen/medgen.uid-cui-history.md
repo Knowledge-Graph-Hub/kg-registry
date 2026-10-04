@@ -5,9 +5,9 @@ format: txt
 id: medgen.uid-cui-history
 name: MedGen UID CUI History
 original_source:
-  - source: medgen
-    relation_type: prov:hadPrimarySource
-product_file_size: 59225507
+- relation_type: prov:hadPrimarySource
+  source: medgen
+product_file_size: 59606723
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_UID_CUI_history.txt
 layout: product_detail
 ---

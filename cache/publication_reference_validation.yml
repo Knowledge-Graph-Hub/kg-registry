@@ -768,6 +768,24 @@ entries:
     source_path: resource/bv-brc/bv-brc.md
     status: valid
     warnings: []
+  resource/cacao/cacao.md#publication[0]#DOI:10.1371/journal.pcbi.1009463:
+    checked_at: '2026-10-04T04:28:53Z'
+    errors: []
+    fingerprint: d15b0c4e88eaab5af35b9dbaa064821be611bd76c7740a066bd1076174c8ee98
+    publication_index: 0
+    reference_id: DOI:10.1371/journal.pcbi.1009463
+    source_path: resource/cacao/cacao.md
+    status: valid
+    warnings: []
+  resource/cacao/cacao.md#publication[1]#DOI:10.1093/nar/gkr907:
+    checked_at: '2026-10-04T04:28:55Z'
+    errors: []
+    fingerprint: 30cafe9825a408c15a549df147c6c33e0319726471b67279b35b5b9bed549c8b
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkr907
+    source_path: resource/cacao/cacao.md
+    status: valid
+    warnings: []
   resource/cam-kp/cam-kp.md#publication[0]#ARXIV:2004.01269:
     checked_at: '2026-06-22T16:42:57Z'
     errors: []
@@ -1678,6 +1696,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1073/pnas.2421752122
     source_path: resource/darwins-ark/darwins-ark.md
+    status: valid
+    warnings: []
+  resource/date/date.md#publication[0]#DOI:10.1002/psp4.12305:
+    checked_at: '2026-10-04T04:28:47Z'
+    errors: []
+    fingerprint: b5207ae21a2324ceb89c472af9e38281d778be2483dbb9f9ea0211d425e4be13
+    publication_index: 0
+    reference_id: DOI:10.1002/psp4.12305
+    source_path: resource/date/date.md
     status: valid
     warnings: []
   resource/dbpedia/dbpedia.md#publication[0]#DOI:10.1007/978-3-540-76298-0_52:
@@ -4545,6 +4572,15 @@ entries:
     source_path: resource/meddra/meddra.md
     status: valid
     warnings: []
+  resource/medgen/medgen.md#publication[0]#DOI:10.1080/02763869.2020.1726152:
+    checked_at: '2026-10-04T04:29:01Z'
+    errors: []
+    fingerprint: c5d62239f981363568fe8fb2c8bed8a3b57bc660388ddb66fd3fe1deaf7ae043
+    publication_index: 0
+    reference_id: DOI:10.1080/02763869.2020.1726152
+    source_path: resource/medgen/medgen.md
+    status: valid
+    warnings: []
   resource/mediadive/mediadive.md#publication[0]#DOI:10.1093/nar/gkac803:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5420,6 +5456,15 @@ entries:
     status: warning
     warnings:
     - obis-data has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/obis-data.md
+  resource/obo-db-ingest/obo-db-ingest.md#publication[0]#DOI:10.5281/zenodo.10829095:
+    checked_at: '2026-10-04T04:31:35Z'
+    errors: []
+    fingerprint: 34e23146f3b4edb82765232bec3bb7e28c354c213fd68ea0045162618635a779
+    publication_index: 0
+    reference_id: DOI:10.5281/zenodo.10829095
+    source_path: resource/obo-db-ingest/obo-db-ingest.md
+    status: valid
+    warnings: []
   resource/obo_rel/obo_rel.md#publication[0]#PMID:15892874:
     checked_at: '2026-08-06T18:18:22Z'
     errors: []
@@ -5548,6 +5593,24 @@ entries:
     fingerprint: 9b45ebaf38a6c33be249a428de014d5cad1c90ffa9e8481e68364f892fe30db7
     publication_index: 0
     reference_id: DOI:10.1038/nbt.3790
+    source_path: resource/omicsdi/omicsdi.md
+    status: valid
+    warnings: []
+  resource/omicsdi/omicsdi.md#publication[1]#DOI:10.1093/nar/gkaa326:
+    checked_at: '2026-10-04T04:31:28Z'
+    errors: []
+    fingerprint: 045da4aed341cf263fa6b1bb4f2e257cdfc119d79696690965c4a3e8998b5840
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkaa326
+    source_path: resource/omicsdi/omicsdi.md
+    status: valid
+    warnings: []
+  resource/omicsdi/omicsdi.md#publication[2]#DOI:10.1038/s41467-019-11461-w:
+    checked_at: '2026-10-04T04:31:28Z'
+    errors: []
+    fingerprint: a32e11efcdb4c15bf86c461ad3f164a3f972a57eaaa4449c6d5f37a01002b972
+    publication_index: 2
+    reference_id: DOI:10.1038/s41467-019-11461-w
     source_path: resource/omicsdi/omicsdi.md
     status: valid
     warnings: []
@@ -6788,6 +6851,15 @@ entries:
     source_path: resource/proteopedia/proteopedia.md
     status: valid
     warnings: []
+  resource/proton/proton.md#publication[0]#DOI:10.1007/978-3-642-15431-7_31:
+    checked_at: '2026-10-04T04:29:27Z'
+    errors: []
+    fingerprint: c48668b784cc0590ce22370536cd9dfd6f7cbadc13ec7b26c02a6d82ced323cf
+    publication_index: 0
+    reference_id: DOI:10.1007/978-3-642-15431-7_31
+    source_path: resource/proton/proton.md
+    status: valid
+    warnings: []
   resource/prov-o/prov-o.md#publication[0]#url:https://www.w3.org/TR/prov-o/:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -7377,15 +7449,23 @@ entries:
     status: valid
     warnings: []
   resource/service-kp/service-kp.md#publication[0]#PMID:35020801:
-    checked_at: '2026-10-04T03:43:19Z'
+    checked_at: '2026-10-04T04:29:12Z'
     errors: []
-    fingerprint: f50d0004a6f1f2f604f96e8fb20f250ccfa4a619d86cefa106678fd0dc104aca
+    fingerprint: 22a2740144bb6fdcc871fbf9b48f89cf16e4eb1af6f1bd751a1d4305b2fd5c05
     publication_index: 0
     reference_id: PMID:35020801
     source_path: resource/service-kp/service-kp.md
-    status: warning
-    warnings:
-    - PMID:35020801 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_35020801.md
+    status: valid
+    warnings: []
+  resource/service-kp/service-kp.md#publication[1]#DOI:10.1093/bioinformatics/btad570:
+    checked_at: '2026-10-04T04:29:14Z'
+    errors: []
+    fingerprint: a9a05c04ce3b5b8bd529072f0d896f7305ef728150e14ef7becf6e157548fb74
+    publication_index: 1
+    reference_id: DOI:10.1093/bioinformatics/btad570
+    source_path: resource/service-kp/service-kp.md
+    status: valid
+    warnings: []
   resource/sfld/sfld.md#publication[0]#DOI:10.1093/nar/gkt1130:
     checked_at: '2026-06-17T14:07:36Z'
     errors: []

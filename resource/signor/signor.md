@@ -989,6 +989,51 @@ products:
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
+- category: Product
+  description: signor OBO
+  format: obo
+  id: obo-db-ingest.signor.obo
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC-4.0
+  name: signor OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  product_file_size: 45847
+  product_url: https://w3id.org/biopragmatics/resources/signor/signor.obo
+- category: Product
+  description: signor OWL
+  format: owl
+  id: obo-db-ingest.signor.owl
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC-4.0
+  name: signor OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  product_file_size: 71729
+  product_url: https://w3id.org/biopragmatics/resources/signor/signor.owl
+- category: Product
+  description: signor OBO Graph JSON
+  format: json
+  id: obo-db-ingest.signor.json
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC-4.0
+  name: signor OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  product_file_size: 50966
+  product_url: https://w3id.org/biopragmatics/resources/signor/signor.json
 publications:
 - authors:
   - Prisca Lo Surdo

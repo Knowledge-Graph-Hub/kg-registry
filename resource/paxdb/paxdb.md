@@ -304,12 +304,74 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: GraphicalInterface
+  description: Web portal for searching and browsing integrated omics dataset metadata
+    across repositories.
+  format: http
+  id: omicsdi.portal
+  name: OmicsDI Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omicsdi
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  product_url: https://www.omicsdi.org/
+- category: ProgrammingInterface
+  connection_url: https://www.omicsdi.org/ws
+  description: Swagger-documented web service for programmatic querying of OmicsDI
+    dataset metadata.
+  format: http
+  id: omicsdi.api
+  is_public: true
+  name: OmicsDI API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omicsdi
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 publications:
 - authors:
   - Qingyao Huang
   - Damian Szklarczyk
   - John Oehninger
-  - "Christian von\_Mering"
+  - Christian von Mering
   doi: 10.1093/nar/gkaf1066
   id: https://doi.org/10.1093/nar/gkaf1066
   journal: Nucleic Acids Research

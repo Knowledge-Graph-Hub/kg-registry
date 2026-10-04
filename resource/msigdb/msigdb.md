@@ -1702,6 +1702,69 @@ products:
     source: genetics-kp
   product_file_size: 2127877
   product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+- category: Product
+  compression: gzip
+  description: msigdb OBO
+  format: obo
+  id: obo-db-ingest.msigdb.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: msigdb OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_file_size: 19115104
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo.gz
+- category: Product
+  compression: gzip
+  description: msigdb OWL
+  format: owl
+  id: obo-db-ingest.msigdb.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: msigdb OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_file_size: 18147081
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl.gz
+- category: Product
+  compression: gzip
+  description: msigdb OBO Graph JSON
+  format: json
+  id: obo-db-ingest.msigdb.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: msigdb OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_file_size: 19170792
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json.gz
+- category: MappingProduct
+  description: msigdb SSSOM
+  format: sssom
+  id: obo-db-ingest.msigdb.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: msigdb SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_file_size: 92467
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.sssom.tsv
 publications:
 - authors:
   - Castanza AS

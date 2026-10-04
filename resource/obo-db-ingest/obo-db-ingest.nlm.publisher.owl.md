@@ -7,10 +7,12 @@ license:
   id: https://creativecommons.org/public-domain/pdm/
   label: public domain
 name: nlm.publisher OWL
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: nlm
 product_file_size: 12531
 product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.owl
 layout: product_detail
-original_source:
-  - source: obo-db-ingest
-    relation_type: prov:hadPrimarySource
 ---

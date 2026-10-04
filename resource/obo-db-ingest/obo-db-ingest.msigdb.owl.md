@@ -8,10 +8,12 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: msigdb OWL
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: obo-db-ingest
+- relation_type: prov:hadPrimarySource
+  source: msigdb
 product_file_size: 18147081
 product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl.gz
 layout: product_detail
-original_source:
-  - source: obo-db-ingest
-    relation_type: prov:hadPrimarySource
 ---

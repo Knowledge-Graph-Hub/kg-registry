@@ -1,18 +1,18 @@
 ---
 category: OntologyProduct
-description: PROTON Top Module - the primary upper-level ontology module containing
-  core entity types (Person, Location, Organization), temporal concepts, quantitative
-  domains, and abstract concepts
-format: owl
+compression: gzip
+description: PROTON Top module (version 3.0) in Turtle, as mirrored on TriplyDB, with
+  core entity types such as Person, Location and Organization plus temporal, quantitative
+  and abstract concepts.
+format: ttl
 id: proton.top
 is_public: true
 name: PROTON Top Module
 original_source:
 - relation_type: prov:hadPrimarySource
   source: proton
-product_url: http://www.ontotext.com/proton/protontop
-warnings:
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-  accessing file
+- relation_type: prov:wasInfluencedBy
+  source: geonames
+product_url: https://api.triplydb.com/datasets/ontotext/proton/download.ttl.gz
 layout: product_detail
 ---

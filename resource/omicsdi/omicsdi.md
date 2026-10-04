@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataSource
+category: Aggregator
 contacts:
 - category: Organization
   contact_details:
@@ -9,17 +9,24 @@ contacts:
   id: ebi
   label: EMBL-EBI
 creation_date: '2025-10-30T00:00:00Z'
-description: OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets
-  across multiple repositories, providing a unified search interface for genomics,
-  proteomics, metabolomics, and transcriptomics data.
+description: OmicsDI (Omics Discovery Index) is an EMBL-EBI index of dataset metadata
+  from public omics repositories. As of October 2026 it indexes about 4.9 million
+  datasets from 28 repositories, covering genomics, transcriptomics, proteomics, metabolomics,
+  computational models and clinical studies, plus BioStudies literature records, and
+  provides a unified search portal and REST API.
 domains:
 - genomics
 - proteomics
+- metabolomics
+- chemistry and biochemistry
 homepage_url: https://www.omicsdi.org/
 id: omicsdi
 infores_id: omicsdi
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ebi.ac.uk/about/terms-of-use/
+  label: EMBL-EBI Terms of Use
 name: OmicsDI
 products:
 - category: GraphicalInterface
@@ -31,6 +38,26 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: omicsdi
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: lincs
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -43,6 +70,26 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: omicsdi
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: lincs
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 - category: GraphProduct
   description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
@@ -118,6 +165,37 @@ publications:
   title: Discovering and linking public omics data sets using the Omics Discovery
     Index
   year: '2017'
+- authors:
+  - Gaurhari Dass
+  - Manh-Tu Vu
+  - Pan Xu
+  - Enrique Audain
+  - Marc-Phillip Hitz
+  - Björn A Grüning
+  - Henning Hermjakob
+  - Yasset Perez-Riverol
+  doi: 10.1093/nar/gkaa326
+  id: doi:10.1093/nar/gkaa326
+  journal: Nucleic Acids Research
+  title: The omics discovery REST interface
+  year: '2020'
+- authors:
+  - Yasset Perez-Riverol
+  - Andrey Zorin
+  - Gaurhari Dass
+  - Manh-Tu Vu
+  - Pan Xu
+  - Mihai Glont
+  - Juan Antonio Vizcaíno
+  - Andrew F. Jarnuczak
+  - Robert Petryszak
+  - Peipei Ping
+  - Henning Hermjakob
+  doi: 10.1038/s41467-019-11461-w
+  id: doi:10.1038/s41467-019-11461-w
+  journal: Nature Communications
+  title: Quantifying the impact of public omics data
+  year: '2019'
 synonyms:
 - OmicsDI
 - Omics Discovery Index
@@ -147,22 +225,36 @@ OmicsDI aggregates data from major omics repositories:
 - GEO (Gene Expression Omnibus)
 - ENA (European Nucleotide Archive)
 - dbGaP
+- EGA (European Genome-phenome Archive)
+- EVA (European Variation Archive)
+- NODE (National Omics Data Encyclopedia)
+- LINCS
 
 ### Proteomics
 - PRIDE (Proteomics Identifications Database)
 - PeptideAtlas
 - MassIVE
 - jPOST
+- iProX
+- Panorama Public
+- GPMDB
+- PaxDb
 
 ### Metabolomics
 - MetaboLights
 - Metabolomics Workbench
-- MetabolomeXchange
+- GNPS
+
+### Models
+- BioModels
+- FAIRDOMHub
+- Physiome Model Repository
+- Cell Collective
 
 ### Other Data Types
 - Expression Atlas
-- Genome-wide association studies (GWAS)
-- Epigenomics datasets
+- BioStudies (including BioImages and literature records)
+- ECRIN MDR (clinical studies)
 
 ## Data Content
 
@@ -208,7 +300,6 @@ OmicsDI aggregates data from major omics repositories:
 - Boolean operators and filters
 - Related dataset recommendations
 - Export and download of search results
-- Saved searches and alerts
 
 ## API and Programmatic Access
 
@@ -216,7 +307,6 @@ OmicsDI provides:
 - RESTful API for dataset queries
 - Bulk metadata download
 - Integration with computational workflows
-- R and Python client libraries
 
 ## Information Resource ID
 
@@ -225,7 +315,7 @@ This resource has the Information Resource identifier: `infores:omicsdi`
 ## Access
 
 - **Web Interface**: https://www.omicsdi.org/
-- **API Documentation**: https://www.omicsdi.org/api
+- **API Documentation**: https://www.omicsdi.org/help/api
 - **Help and Tutorials**: https://www.omicsdi.org/about
 
 ## Governance
