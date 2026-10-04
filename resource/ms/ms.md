@@ -316,6 +316,39 @@ products:
     source: ms
   product_file_size: 237776
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MS.tar.gz
+- category: Product
+  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB Archive,
+    one directory per JPST dataset.
+  format: ttl
+  id: jpost.rdf
+  name: jPOSTdb RDF Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/data/rdf/
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+  - relation_type: prov:used
+    source: ms
+  - relation_type: prov:used
+    source: faldo
+- category: OntologyProduct
+  description: jPOST ontology (Turtle serialization at an .owl URL) defining the classes and
+    properties of the jPOST database RDF, importing SIO and reusing PSI-MS, UniProt core,
+    Unimod and FALDO terms.
+  format: ttl
+  id: jpost.ontology
+  name: jPOST Ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: http://rdf.jpostdb.org/ontology/jpost.owl
+  secondary_source:
+  - relation_type: prov:used
+    source: sio
+  - relation_type: prov:used
+    source: ms
 publications:
 - authors:
   - Mayer G

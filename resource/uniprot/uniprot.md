@@ -5775,6 +5775,53 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: Product
+  compression: zip
+  description: jPOSTdb identified protein table from the NBDC LSDB Archive, with UniProt
+    accession, symbol, name, protein type and peptide and PSM counts for reanalyzed
+    datasets (about 12 MB, file dated 2021-07-29).
+  format: csv
+  id: jpost.protein
+  name: jPOSTdb Identified Protein Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_protein.zip
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  compression: zip
+  description: jPOSTdb peptide spectrum match (PSM) table from the NBDC LSDB Archive,
+    with peptide sequence, UniProt accession, experimental and calculated m/z, charge
+    and jPOST score (about 68 MB, file dated 2021-07-29).
+  format: csv
+  id: jpost.psm
+  name: jPOSTdb PSM Peptide Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm.zip
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB
+    Archive, one directory per JPST dataset.
+  format: ttl
+  id: jpost.rdf
+  name: jPOSTdb RDF Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/data/rdf/
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+  - relation_type: prov:used
+    source: ms
+  - relation_type: prov:used
+    source: faldo
 publications:
 - authors:
   - Alex Bateman

@@ -2624,6 +2624,15 @@ entries:
     source_path: resource/europepmc/europepmc.md
     status: valid
     warnings: []
+  resource/eva/eva.md#publication[0]#DOI:10.1093/nar/gkab960:
+    checked_at: '2026-10-04T18:18:41Z'
+    errors: []
+    fingerprint: 7d5af34cb2f18148d5d85093aac9c2ac9176fe5b6713ef47c979f612a8f47b67
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkab960
+    source_path: resource/eva/eva.md
+    status: valid
+    warnings: []
   resource/evlncrnas/evlncrnas.md#publication[0]#DOI:10.1093/nar/gkad1057:
     checked_at: '2026-06-22T16:26:35Z'
     errors: []
@@ -2694,6 +2703,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkz546
     source_path: resource/fabric/fabric.md
+    status: valid
+    warnings: []
+  resource/fairdomhub/fairdomhub.md#publication[0]#DOI:10.1093/nar/gkw1032:
+    checked_at: '2026-10-04T18:18:44Z'
+    errors: []
+    fingerprint: 2545c6756701c9e21b49380e19a310071c8c79aa18d071e68583eb68aeeb7a4d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkw1032
+    source_path: resource/fairdomhub/fairdomhub.md
     status: valid
     warnings: []
   resource/fantom5/fantom5.md#publication[0]#DOI:10.1038/nature13182:
@@ -4019,6 +4037,24 @@ entries:
     status: warning
     warnings:
     - PMID:15022647 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_15022647.md
+  resource/iprox/iprox.md#publication[0]#DOI:10.1093/nar/gky869:
+    checked_at: '2026-10-04T18:18:42Z'
+    errors: []
+    fingerprint: 560d9738728dd00aa6ca3938d1326c6b5fbbf33f61bf265ae70728a659bfefac
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky869
+    source_path: resource/iprox/iprox.md
+    status: valid
+    warnings: []
+  resource/iprox/iprox.md#publication[1]#DOI:10.1093/nar/gkab1081:
+    checked_at: '2026-10-04T18:18:43Z'
+    errors: []
+    fingerprint: 5153ab3537be744004a5b9f4b4156f2333a4a6740b1b797e8cffdd0fdb64f4ee
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkab1081
+    source_path: resource/iprox/iprox.md
+    status: valid
+    warnings: []
   resource/iptmnet/iptmnet.md#publication[0]#DOI:10.1093/nar/gkx1104:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4062,6 +4098,33 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad1059
     source_path: resource/jaspar/jaspar.md
+    status: valid
+    warnings: []
+  resource/jpost/jpost.md#publication[0]#DOI:10.1093/nar/gkae1032:
+    checked_at: '2026-10-04T18:18:38Z'
+    errors: []
+    fingerprint: 0f95430e163471ea53947e5d12e6b36973c465ac29e8aa98f08b3f0b4351580d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1032
+    source_path: resource/jpost/jpost.md
+    status: valid
+    warnings: []
+  resource/jpost/jpost.md#publication[1]#DOI:10.1093/nar/gky899:
+    checked_at: '2026-10-04T18:18:39Z'
+    errors: []
+    fingerprint: ccca652cf094090aa46045ed2be44260207ad7c8ab7932516286c852cee5be0f
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gky899
+    source_path: resource/jpost/jpost.md
+    status: valid
+    warnings: []
+  resource/jpost/jpost.md#publication[2]#DOI:10.1093/nar/gkw1080:
+    checked_at: '2026-10-04T18:18:40Z'
+    errors: []
+    fingerprint: 441c7f0fe7fc349aef84aa717c4cc4b4c99c9b4e80a172e3e8b6b674b4896244
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkw1080
+    source_path: resource/jpost/jpost.md
     status: valid
     warnings: []
   resource/kegg/kegg.md#publication[0]#DOI:10.1093/nar/gkae909:
