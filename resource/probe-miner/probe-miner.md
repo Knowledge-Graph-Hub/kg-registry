@@ -44,11 +44,11 @@ products:
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
-  id: molecular-data-kp.graph.nodes
+  id: molepro.graph.nodes
   name: Nodes for Molecular Data KP
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: molecular-data-kp
+    source: molepro
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -124,11 +124,11 @@ products:
 - category: GraphProduct
   description: KGX edges for Molecular Data KP
   format: kgx
-  id: molecular-data-kp.graph.edges
+  id: molepro.graph.edges
   name: Edges for Molecular Data KP
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: molecular-data-kp
+    source: molepro
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -456,7 +456,7 @@ Probe Miner is a public, data-driven resource developed at the Institute of Canc
 - Selecting high-quality chemical probes for target validation
 - Avoiding poor-quality or non-selective probes in chemical biology experiments
 - Comparing candidate compounds for a protein target of interest
-- Providing upstream probe-assessment data to integrative knowledge graphs (e.g., MolePro / molecular-data-kp)
+- Providing upstream probe-assessment data to integrative knowledge graphs (e.g., MolePro)
 
 ## Access
 
