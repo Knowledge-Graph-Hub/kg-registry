@@ -9,6 +9,8 @@ original_source:
   source: service-kp
 - relation_type: prov:hadPrimarySource
   source: biothings
+- relation_type: prov:hadPrimarySource
+  source: smartapi
 product_url: https://smart-api.info/portal/translator
 layout: product_detail
 ---

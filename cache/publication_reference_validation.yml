@@ -44,6 +44,24 @@ entries:
     source_path: resource/aact/aact.md
     status: valid
     warnings: []
+  resource/aberowl/aberowl.md#publication[0]#DOI:10.1186/s12859-015-0456-9:
+    checked_at: '2026-10-04T19:23:34Z'
+    errors: []
+    fingerprint: da545adf829f16e54345d0378d1f8536ef6f93c41c21363abd833da8fee4cd4b
+    publication_index: 0
+    reference_id: DOI:10.1186/s12859-015-0456-9
+    source_path: resource/aberowl/aberowl.md
+    status: valid
+    warnings: []
+  resource/aberowl/aberowl.md#publication[1]#DOI:10.1186/s13326-016-0090-0:
+    checked_at: '2026-10-04T19:23:35Z'
+    errors: []
+    fingerprint: c64e9e624681c5ccb7f37a960b8e309d5fb43ade24588010fabd7ad1c54e24af
+    publication_index: 1
+    reference_id: DOI:10.1186/s13326-016-0090-0
+    source_path: resource/aberowl/aberowl.md
+    status: valid
+    warnings: []
   resource/achilles/achilles.md#publication[0]#DOI:10.1016/j.cell.2017.06.010:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1052,6 +1070,33 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/nar/gky900
     source_path: resource/cellmarker/cellmarker.md
+    status: valid
+    warnings: []
+  resource/cellminer/cellminer.md#publication[0]#DOI:10.1158/0008-5472.CAN-12-1370:
+    checked_at: '2026-10-04T19:23:40Z'
+    errors: []
+    fingerprint: aa202b0bd7fd23768c4606dacc1c1a76bc7208afe3fcfc1eb96389100560b7ec
+    publication_index: 0
+    reference_id: DOI:10.1158/0008-5472.CAN-12-1370
+    source_path: resource/cellminer/cellminer.md
+    status: valid
+    warnings: []
+  resource/cellminer/cellminer.md#publication[1]#DOI:10.1016/j.isci.2018.11.029:
+    checked_at: '2026-10-04T19:23:41Z'
+    errors: []
+    fingerprint: 86cd7a2e1e00f75e8ed50850ff91764a305a803f335c94bc186edbc3a3cfb77d
+    publication_index: 1
+    reference_id: DOI:10.1016/j.isci.2018.11.029
+    source_path: resource/cellminer/cellminer.md
+    status: valid
+    warnings: []
+  resource/cellminer/cellminer.md#publication[2]#DOI:10.1093/bioinformatics/btv701:
+    checked_at: '2026-10-04T19:23:42Z'
+    errors: []
+    fingerprint: c08fc8f12f8e1997bf19c06f8e013254514675b5c9099709a171727a7a92703a
+    publication_index: 2
+    reference_id: DOI:10.1093/bioinformatics/btv701
+    source_path: resource/cellminer/cellminer.md
     status: valid
     warnings: []
   resource/cellmodelpassports/cellmodelpassports.md#publication[0]#DOI:10.1093/nar/gky872:
@@ -2229,6 +2274,33 @@ entries:
     source_path: resource/ecocyc/ecocyc.md
     status: valid
     warnings: []
+  resource/ecoportal/ecoportal.md#publication[0]#DOI:10.3233/FC-240002:
+    checked_at: '2026-10-04T19:23:28Z'
+    errors: []
+    fingerprint: 50f4633f5ce0120693a29bf4d98d42d9ce748c8460f5f5744cce5cde7856d3c2
+    publication_index: 0
+    reference_id: DOI:10.3233/FC-240002
+    source_path: resource/ecoportal/ecoportal.md
+    status: valid
+    warnings: []
+  resource/ecoportal/ecoportal.md#publication[1]#url:https://ceur-ws.org/Vol-2969/paper6-s4biodiv.pdf:
+    checked_at: '2026-10-04T19:24:30Z'
+    errors: []
+    fingerprint: e065922810fd78c1f56f2984b12a956837a4af7b8aa22a74c14cce9471e9fc5f
+    publication_index: 1
+    reference_id: url:https://ceur-ws.org/Vol-2969/paper6-s4biodiv.pdf
+    source_path: resource/ecoportal/ecoportal.md
+    status: valid
+    warnings: []
+  resource/ecoportal/ecoportal.md#publication[2]#DOI:10.1038/s41597-024-03669-3:
+    checked_at: '2026-10-04T19:23:33Z'
+    errors: []
+    fingerprint: 5c9e5b20d20009c685a2256104b4a791e55917784457b8fe69eff3aa8042ee6d
+    publication_index: 2
+    reference_id: DOI:10.1038/s41597-024-03669-3
+    source_path: resource/ecoportal/ecoportal.md
+    status: valid
+    warnings: []
   resource/edam/edam.md#publication[0]#DOI:10.1093/bioinformatics/btt113:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3256,6 +3328,33 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1016/j.jbi.2022.104133
     source_path: resource/gp-kg/gp-kg.md
+    status: valid
+    warnings: []
+  resource/gpcrdb/gpcrdb.md#publication[0]#DOI:10.1093/nar/gkac1013:
+    checked_at: '2026-10-04T19:23:36Z'
+    errors: []
+    fingerprint: 45ebcfad4765035f07b7ec66657f6032d13d64e3361417e9677d71d1c9fd7e34
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkac1013
+    source_path: resource/gpcrdb/gpcrdb.md
+    status: valid
+    warnings: []
+  resource/gpcrdb/gpcrdb.md#publication[1]#DOI:10.1093/nar/gkaa1080:
+    checked_at: '2026-10-04T19:23:37Z'
+    errors: []
+    fingerprint: 3dbfd756c731a69da940988708139c4e45b7de52105c5df4f067df1941350151
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkaa1080
+    source_path: resource/gpcrdb/gpcrdb.md
+    status: valid
+    warnings: []
+  resource/gpcrdb/gpcrdb.md#publication[2]#DOI:10.1093/nar/gkx1109:
+    checked_at: '2026-10-04T19:23:38Z'
+    errors: []
+    fingerprint: 912d077eede6746b7f61d37c199caf7c68f38dd5837a193768e7354e54d5611b
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkx1109
+    source_path: resource/gpcrdb/gpcrdb.md
     status: valid
     warnings: []
   resource/greengenes/greengenes.md#publication[0]#DOI:10.1038/s41587-023-01845-1:
@@ -7593,6 +7692,15 @@ entries:
     publication_index: 0
     reference_id: PMID:33104802
     source_path: resource/smart/smart.md
+    status: valid
+    warnings: []
+  resource/smartapi/smartapi.md#publication[0]#DOI:10.1007/978-3-319-58451-5_11:
+    checked_at: '2026-10-04T19:23:39Z'
+    errors: []
+    fingerprint: 0e0e42ead2fa9e6627d3bd9446f8d5478a5eb5374020a75597b1fc6514ea4f2e
+    publication_index: 0
+    reference_id: DOI:10.1007/978-3-319-58451-5_11
+    source_path: resource/smartapi/smartapi.md
     status: valid
     warnings: []
   resource/smpdb/smpdb.md#publication[0]#DOI:10.1093/nar/gkp1002:

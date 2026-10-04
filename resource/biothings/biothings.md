@@ -83,6 +83,8 @@ products:
     source: service-kp
   - relation_type: prov:hadPrimarySource
     source: biothings
+  - relation_type: prov:hadPrimarySource
+    source: smartapi
   product_url: https://smart-api.info/portal/translator
 - category: ProcessProduct
   description: BioThings API stack source repository used by the Service Provider

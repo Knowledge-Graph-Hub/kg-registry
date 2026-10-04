@@ -16,7 +16,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://obofoundry.org/ontology/lipro.html
 id: lipro
-last_modified_date: '2026-09-08T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 name: Lipid Ontology
 products:
@@ -30,8 +30,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lipro
+  - relation_type: prov:wasDerivedFrom
+    source: aberowl
   product_file_size: 50539
   product_url: http://aber-owl.net/media/ontologies/LIPRO/4/lipro.owl
+  warnings:
+  - File was not able to be retrieved when checked on 2026-10-04. The AberOWL mirror
+    returned HTTP 404 and LIPRO no longer appears in the AberOWL ontology list.
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of Lipid Ontology (LIPRO), produced by KG-Bioportal

@@ -264,6 +264,78 @@ products:
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: bioportal
+- category: GraphicalInterface
+  description: Web portal for searching and browsing the AberOWL ontology repository,
+    viewing class hierarchies and metadata, and running DL and SPARQL-rewriting queries.
+  format: http
+  id: aberowl.portal
+  is_public: true
+  name: AberOWL Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aberowl
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  product_url: https://aber-owl.net/
+- category: ProgrammingInterface
+  description: REST API (FastAPI, documented with Swagger UI) for listing ontologies,
+    retrieving classes, full-text search and DL queries (subclass, superclass, equivalent)
+    across the AberOWL repository.
+  format: http
+  id: aberowl.api
+  is_public: true
+  name: AberOWL REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aberowl
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  product_url: https://aber-owl.net/api/docs
+  warnings:
+  - When checked on 2026-10-04, listing, search and statistics endpoints responded,
+    but DL query endpoints (/api/dlquery, /api/dlquery_all) returned "API server is
+    down!".
+- category: Product
+  description: JSON listing of all ontologies in AberOWL with metadata, reasoner status,
+    class counts and relative download URLs for the mirrored OWL files.
+  format: json
+  id: aberowl.ontology-list
+  is_public: true
+  name: AberOWL Ontology Listing
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aberowl
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  product_url: https://aber-owl.net/api/listOntologies
+- category: GraphicalInterface
+  description: Web portal for searching, browsing and visualizing ecological ontologies,
+    thesauri and their mappings, with ontology recommender, text annotator and submission
+    of new semantic artefacts.
+  format: http
+  id: ecoportal.portal
+  name: EcoPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecoportal
+  product_url: https://ecoportal.lifewatch.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: ProgrammingInterface
+  description: OntoPortal REST API for EcoPortal ontologies, classes, search, mappings,
+    metrics, annotation and downloads. Requests require an API key, available free
+    with an EcoPortal account.
+  format: http
+  id: ecoportal.api
+  name: EcoPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecoportal
+  product_url: https://data.ecoportal.lifewatch.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
 publications:
 - authors:
   - Jennifer Vendetti

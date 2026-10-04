@@ -2804,6 +2804,68 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: GraphicalInterface
+  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence
+    alignments, structures and structure models, ligands and bioactivities, mutations,
+    drugs and signaling proteins, with interactive diagrams such as snake plots and
+    phylogenetic trees.
+  format: http
+  id: gpcrdb.portal
+  name: GPCRdb Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/
+- category: ProgrammingInterface
+  description: REST API returning JSON for most GPCRdb data, including proteins, families,
+    alignments, residues, structures, ligands, mutations and signaling proteins.
+  format: http
+  id: gpcrdb.api
+  name: GPCRdb REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/services/reference/
+- category: Product
+  description: GitHub repository collecting the reference data used to build GPCRdb,
+    including protein, structure, ligand, mutant, drug, G protein, arrestin and residue
+    data files, plus a PDSP Ki data backup.
+  format: mixed
+  id: gpcrdb.data
+  name: GPCRdb Reference Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  product_url: https://github.com/protwis/gpcrdb_data
+  warnings:
+  - The repository has no license file; the GPCRdb legal notice states that GPCRdb
+    data are available under CC BY 4.0.
 publications:
 - authors:
   - Zdrazil B

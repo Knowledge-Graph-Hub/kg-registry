@@ -1355,6 +1355,8 @@ products:
     source: ubkg
   - relation_type: prov:hadPrimarySource
     source: umls
+  - relation_type: prov:wasInfluencedBy
+    source: smartapi
   product_url: https://smart-api.info/ui/96e5b5c0b0efeef5b93ea98ac2794837
 - category: GraphicalInterface
   description: Guesdt (Graphing UMLS Enables Search In Dynamic Trees) application

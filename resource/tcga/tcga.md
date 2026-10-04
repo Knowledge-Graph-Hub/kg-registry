@@ -387,6 +387,8 @@ products:
     source: connections-hypothesis-kp
   - relation_type: prov:hadPrimarySource
     source: tcga
+  - relation_type: prov:wasInfluencedBy
+    source: smartapi
   product_url: https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f
 - category: GraphProduct
   description: Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse
