@@ -338,7 +338,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: gnps
   - relation_type: prov:hadPrimarySource

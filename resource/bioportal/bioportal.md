@@ -13,7 +13,9 @@ creation_date: '2025-08-20T00:00:00Z'
 description: BioPortal is a comprehensive open repository and portal for biomedical
   ontologies and terminologies, providing search, browsing, mappings, versioned downloads,
   REST APIs, widgets, and analytics to support data integration, annotation, and semantic
-  interoperability in the life and health sciences.
+  interoperability in the life and health sciences. As of 2025 it hosted 1,549 ontologies
+  (1,182 public), including all OBO Foundry ontologies, which it pulls automatically,
+  and selected UMLS vocabularies.
 domains:
 - biomedical
 - clinical
@@ -22,7 +24,7 @@ domains:
 homepage_url: https://bioportal.bioontology.org/
 id: bioportal
 infores_id: bioportal
-last_modified_date: '2025-09-16T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.bioontology.org/terms/
@@ -38,16 +40,21 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bioportal
+  - relation_type: prov:hadPrimarySource
+    source: umls
   product_url: https://bioportal.bioontology.org/
 - category: ProgrammingInterface
-  description: REST API for ontology concepts, search, mappings, metrics, and downloads
+  description: REST API for ontology concepts, search, mappings, metrics, and downloads.
+    Most endpoints require a free BioPortal API key.
   format: http
   id: bioportal.api
   name: BioPortal REST API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bioportal
-  product_url: http://data.bioontology.org/
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://data.bioontology.org/
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.
@@ -276,9 +283,18 @@ publications:
   title: 'BioPortal: an open community resource for sharing, searching, and utilizing
     biomedical ontologies'
   year: '2025'
+- doi: 10.1093/nar/gkr469
+  id: doi:10.1093/nar/gkr469
+  journal: Nucleic Acids Research
+  title: 'BioPortal: enhanced functionality via new Web services from the National
+    Center for Biomedical Ontology to access and use ontologies in software applications'
+  year: '2011'
+- doi: 10.1093/nar/gkp440
+  id: doi:10.1093/nar/gkp440
+  journal: Nucleic Acids Research
+  title: 'BioPortal: ontologies and integrated data resources at the click of a mouse'
+  year: '2009'
 repository: https://github.com/ncbo
-taxon:
-- NCBITaxon:9606
 warnings:
 - Some ontologies have distinct licenses; review individual ontology license metadata
   before reuse.

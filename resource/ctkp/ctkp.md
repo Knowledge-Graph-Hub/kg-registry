@@ -164,6 +164,20 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+- category: GraphProduct
+  description: 'Clinical Trials KP Automat: per-source KGX knowledge graph download
+    (Biolink 4.2.1).'
+  format: kgx-jsonl
+  id: automat.ctkp
+  name: CTKP_Automat
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:wasInformedBy
+    source: ubergraph
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/CTKP_Automat/
 repository: https://github.com/multiomicsKP/clinical_trials_kp
 tags:
 - translator

@@ -785,6 +785,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
     source: pr
   - relation_type: prov:hadPrimarySource
     source: reactome
@@ -792,6 +794,10 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: drugcentral
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
@@ -1698,7 +1704,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -1775,7 +1781,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -1853,7 +1859,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -1930,7 +1936,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2007,7 +2013,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2085,7 +2091,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2162,7 +2168,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2239,7 +2245,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2316,7 +2322,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -5212,6 +5218,317 @@ products:
     HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
     (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search) responded
     normally.
+- category: ProgrammingInterface
+  description: MolePro API providing access to the knowledge graph of chemical entities
+    and biological targets
+  format: http
+  id: molepro.api
+  name: MolePro API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_url: https://molepro.transltr.io/molecular_data_provider/api
+- category: ProgrammingInterface
+  description: TRAPI-compliant interface for MolePro knowledge graph following the
+    Translator Reasoner API standard
+  format: http
+  id: molepro.trapi
+  name: MolePro TRAPI Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_url: https://molepro-trapi.transltr.io/molepro/trapi/v1.5/ui/
+- category: Product
+  description: Catalog of MolePro knowledge sources in JSON format
+  format: json
+  id: molepro.catalog
+  name: MolePro Knowledge Sources Catalog
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_file_size: 2127877
+  product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+- category: OntologyProduct
+  description: OWL release of neo
+  format: owl
+  id: neo.model
+  name: neo OWL release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: neo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: ecocyc
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_file_size: 2142188184
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+- category: OntologyProduct
+  description: OBO format release of NEO, built from the same weekly GPI-based build
+    as neo.owl.
+  format: obo
+  id: neo.obo
+  name: NEO (OBO format)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: neo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: ecocyc
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_file_size: 681668343
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
 publications:
 - authors:
   - Alex Bateman

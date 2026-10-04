@@ -12,15 +12,15 @@ contacts:
         value: YaphetKG
     label: Yaphet Kebede
     orcid: 0000-0002-5046-0246
-description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
+description: A RENCI service that proxies Plater-based TRAPI endpoints for individual knowledge graphs (such as the ROBOKOP KG, Ubergraph, CAM-KP and COHD) and publishes per-source knowledge graphs, built with ORION, as KGX downloads. Part of NCATS Biomedical Data Translator.
 domains:
   - biomedical
 homepage_url: https://robokop.renci.org/api-docs/docs/category/automat
 id: automat
 layout: resource_detail
 license:
-  id: https://biopragmatics.github.io/obo-db-ingest/
-  label: Varies
+  id: https://opensource.org/licenses/MIT
+  label: MIT License (software; graph data carries the licenses of its sources)
 name: Automat
 products:
   - category: GraphProduct
@@ -33,9 +33,51 @@ products:
         relation_type: prov:hadPrimarySource
       - source: robokop
         relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: drugmechdb
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: monarchinitiative
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: panther
+        relation_type: prov:hadPrimarySource
+      - source: pharos
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: text-mining-kp
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
     product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
   - category: GraphProduct
-    description: Robokop Plus
+    description: 'Robokop Plus: the ROBOKOP KG extended with CORD-19 and text-mined assertions (2023 data, Biolink 3.1.2; legacy).'
     format: kgx-jsonl
     id: automat.robokopplus
     name: robokopplus
@@ -44,16 +86,22 @@ products:
         relation_type: prov:hadPrimarySource
       - source: robokop
         relation_type: prov:hadPrimarySource
+      - source: cord-19
+        relation_type: prov:hadPrimarySource
+      - source: text-mining-kp
+        relation_type: prov:hadPrimarySource
     product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
   - category: GraphProduct
-    description: Biolink Automat
+    description: 'Biolink Automat: graph based on the Monarch API, from the SRI Reference KG (2021 data, Biolink 3.1.2; legacy).'
     format: kgx-jsonl
     id: automat.biolink
     name: biolink_automat
     original_source:
       - source: automat
         relation_type: prov:hadPrimarySource
-      - source: biolink
+      - source: sri-reference-kg
+        relation_type: prov:hadPrimarySource
+      - source: monarchinitiative
         relation_type: prov:hadPrimarySource
     product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/329f8c92051c18d4/
   - category: GraphProduct
@@ -221,9 +269,165 @@ products:
       - source: ubergraph
         relation_type: prov:hadPrimarySource
     product_url: https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/
-repository: https://github.com/RobokopU24/
+  - category: GraphProduct
+    description: 'BindingDB Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.binding
+    name: BINDING_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/BINDING_Automat/
+  - category: GraphProduct
+    description: 'CAM-KP Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.camkp
+    name: CAMKP_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/CAMKP_Automat/
+  - category: GraphProduct
+    description: 'COHD Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.cohd
+    name: COHD_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: cohd
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/COHD_Automat/
+  - category: GraphProduct
+    description: 'Clinical Trials KP Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.ctkp
+    name: CTKP_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: ctkp
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/CTKP_Automat/
+  - category: GraphProduct
+    description: 'EHR Clinical Connections Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.ehr-clinical-connections
+    name: EHR_Clinical_Connections_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: multiomics-kp
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/EHR_Clinical_Connections_Automat/
+  - category: GraphProduct
+    description: 'EHR May Treat KP Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.maytreatkp
+    name: MayTreatKP_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: multiomics-kp
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/MayTreatKP_Automat/
+  - category: GraphProduct
+    description: 'Alliance of Genome Resources Orthologs Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.alliance-orthologs
+    name: GenomeAllianceOrthologs_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: alliance
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/GenomeAllianceOrthologs_Automat/
+  - category: GraphProduct
+    description: 'MolePro Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.molepro
+    name: MolePro_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: molepro
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/MolePro_Automat/
+  - category: GraphProduct
+    description: 'Reactome Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.reactome
+    name: Reactome_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/Reactome_Automat/
+  - category: GraphProduct
+    description: 'Text Mining KP Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.tmkp
+    name: TMKP_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: text-mining-kp
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/TMKP_Automat/
+  - category: GraphProduct
+    description: 'Viral Proteome Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.viralproteome
+    name: ViralProteome_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/ViralProteome_Automat/
+  - category: GraphProduct
+    description: 'CEBS Automat: per-source KGX knowledge graph download (Biolink 4.2.6).'
+    format: kgx-jsonl
+    id: automat.cebs
+    name: CEBS_Automat
+    original_source:
+      - source: automat
+        relation_type: prov:hadPrimarySource
+      - source: cebs
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:wasInformedBy
+    product_url: https://stars.renci.org/var/plater/bl-4.2.6/CEBS_Automat/
+repository: https://github.com/RENCI-AUTOMAT/automat-server
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 ---
 
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.

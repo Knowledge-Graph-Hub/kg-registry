@@ -2533,7 +2533,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2610,7 +2610,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2688,7 +2688,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2765,7 +2765,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2842,7 +2842,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2920,7 +2920,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -2997,7 +2997,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -3074,7 +3074,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -3151,7 +3151,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -3928,6 +3928,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
     source: pr
   - relation_type: prov:hadPrimarySource
     source: reactome
@@ -3935,6 +3937,10 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: drugcentral
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
@@ -7141,6 +7147,95 @@ products:
     source: go
   product_file_size: 5479380
   product_url: https://ctdbase.org/reports/CTD_Phenotype-Disease_molecular_function_associations.tsv.gz
+- category: OntologyProduct
+  description: OWL release of neo
+  format: owl
+  id: neo.model
+  name: neo OWL release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: neo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: ecocyc
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_file_size: 2142188184
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+- category: OntologyProduct
+  description: OBO format release of NEO, built from the same weekly GPI-based build
+    as neo.owl.
+  format: obo
+  id: neo.obo
+  name: NEO (OBO format)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: neo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: xenbase
+  - relation_type: prov:hadPrimarySource
+    source: ecocyc
+  - relation_type: prov:hadPrimarySource
+    source: kg-covid-19
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_file_size: 681668343
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
 publications:
 - authors:
   - Ashburner M

@@ -7,20 +7,21 @@ contacts:
   - contact_type: url
     value: https://report.nih.gov/contactus
   - contact_type: email
-    value: reporter@od.nih.gov
+    value: report@mail.nih.gov
   label: NIH Office of Extramural Research
 creation_date: '2025-07-20T00:00:00Z'
-description: NIH Reporter (RePORTER) is a comprehensive data source providing access
-  to information about NIH-funded research projects, including both intramural and
-  extramural research activities. It serves as an electronic repository for NIH research
-  project data, publications, and patents resulting from NIH funding since fiscal
-  year 1985.
+description: NIH Reporter (RePORTER) is a searchable repository of federally funded
+  biomedical research projects, covering NIH intramural and extramural research as
+  well as projects funded by CDC, AHRQ, HRSA, ACF and the VA. It links projects (from
+  fiscal year 1985) to publications (from 1980), patents and clinical studies, and
+  offers a web interface, a public REST API and bulk ExPORTER downloads refreshed
+  weekly.
 domains:
 - biomedical
 - clinical
 homepage_url: https://reporter.nih.gov/
 id: nihreporter
-last_modified_date: '2025-09-24T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works
@@ -38,6 +39,7 @@ products:
     source: nihreporter
   product_url: https://reporter.nih.gov/
 - category: Product
+  compression: zip
   description: Bulk download of NIH research project data in structured format
   format: csv
   id: nihreporter.projects
@@ -47,17 +49,19 @@ products:
     source: nihreporter
   product_url: https://reporter.nih.gov/exporter/projects
 - category: ProgrammingInterface
-  description: API access to NIH research project data and search functionality
+  description: Public REST API (no key required) returning JSON for searching projects
+    (v2 projects endpoint) and project-linked publications
   format: http
   id: nihreporter.api
   name: NIH Reporter API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
-  product_url: https://reporter.nih.gov/
+  product_url: https://api.reporter.nih.gov/
 - category: Product
+  compression: zip
   description: Database of abstracts linked to NIH-funded research projects
-  format: json
+  format: csv
   id: nihreporter.abstracts
   name: NIH-Funded Project Abstracts
   original_source:
@@ -66,8 +70,8 @@ products:
   product_url: https://reporter.nih.gov/exporter/abstracts
 - category: Product
   description: Database of patents linked to NIH-funded research projects
-  id: nihreporter.patents
   format: csv
+  id: nihreporter.patents
   name: NIH-Funded Project Patents
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -75,31 +79,53 @@ products:
   product_url: https://reporter.nih.gov/exporter/patents
 - category: Product
   description: Database of clinical studies linked to NIH-funded research projects
-  id: nihreporter.clinicalstudies
   format: csv
+  id: nihreporter.clinicalstudies
   name: NIH-Funded Project Clinical Studies
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
   product_url: https://reporter.nih.gov/exporter/clinicalstudies
 - category: Product
+  compression: zip
   description: Database of publications linked to NIH-funded research projects
-  format: json
+  format: csv
   id: nihreporter.publications
   name: NIH-Funded Publications Database
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
   product_url: https://reporter.nih.gov/exporter/publications
 - category: Product
   description: Database of publication link tables for NIH-funded research projects
-  id: nihreporter.linktables
   format: csv
+  id: nihreporter.linktables
   name: NIH-Funded Publications Link Tables
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
   product_url: https://reporter.nih.gov/exporter/linktables
+- category: Product
+  compression: zip
+  description: Legacy CRISP (Computer Retrieval of Information on Scientific Projects)
+    project and abstract data for fiscal years 1970 to 2009, in CSV and XML.
+  format: csv
+  id: nihreporter.crisp
+  name: NIH Reporter Legacy CRISP Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/exporter/crisp
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
@@ -152,6 +178,140 @@ products:
     source: obo-db-ingest
   product_file_size: 65861949
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.tsv.gz
+- category: Product
+  description: Web interface for searching and visualizing chemical-protein interactions
+    across organisms
+  format: http
+  id: stitch.portal
+  is_public: true
+  name: STITCH Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_url: http://stitch-db.org/
+- category: Product
+  description: Downloadable data files containing chemical-protein interaction networks
+  format: tsv
+  id: stitch.downloads
+  is_public: true
+  name: STITCH Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_url: http://stitch-db.org/cgi/download.pl
+- category: ProgrammingInterface
+  description: API for programmatic access to STITCH chemical-protein interaction
+    data
+  format: http
+  id: stitch.api
+  is_public: true
+  name: STITCH API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 taxon:
 - NCBITaxon:9606
 ---
@@ -177,7 +337,6 @@ NIH Reporter (RePORTER - RePORT Expenditures and Results) is a comprehensive dat
 ### Publications and Patents Tracking
 - Links NIH-funded projects to resulting publications in PubMed
 - Tracks patents and intellectual property arising from NIH funding
-- Provides impact metrics and citation tracking for research outcomes
 - Enables assessment of research productivity and translation
 
 ## Data Coverage
@@ -192,14 +351,12 @@ NIH Reporter (RePORTER - RePORT Expenditures and Results) is a comprehensive dat
 ### Institutional Data
 - Grantee organization information and contact details
 - Geographic distribution of funding by state and institution
-- Institutional capacity and research focus areas
-- Historical funding patterns and success rates
+- Historical funding patterns
 
 ### Financial Information
 - Budget periods and funding amounts by fiscal year
 - Direct and indirect cost breakdowns
-- Cost sharing and matching fund requirements
-- Success rates and funding trend analyses
+- Funding trend analyses
 
 ### Research Outcomes
 - Publications linked to specific grant numbers
@@ -218,7 +375,7 @@ NIH Reporter (RePORTER - RePORT Expenditures and Results) is a comprehensive dat
 ### Grant Management and Compliance
 - Monitor active grants and their progress
 - Track publication and reporting requirements
-- Assess research productivity and impact metrics
+- Assess research productivity
 - Support grant renewal and continuation applications
 
 ### Policy Analysis and Oversight
@@ -243,7 +400,7 @@ NIH Reporter (RePORTER - RePORT Expenditures and Results) is a comprehensive dat
 
 ### Data Export and APIs
 - Bulk data downloads through ExPORTER functionality
-- Structured data formats (CSV, XML, JSON) for analysis
+- Bulk ExPORTER files as zipped CSV (XML is also available for legacy CRISP data); the API returns JSON
 - API endpoints for programmatic access to project data
 - Integration capabilities with institutional research systems
 
