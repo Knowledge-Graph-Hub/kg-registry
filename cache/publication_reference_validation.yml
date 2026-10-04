@@ -650,6 +650,15 @@ entries:
     status: warning
     warnings:
     - authors missing; cached authors are available in references_cache/DOI_10.1093_nar_gkp440.md
+  resource/bioregistry/bioregistry.md#publication[0]#DOI:10.1038/s41597-022-01807-3:
+    checked_at: '2026-10-04T17:02:05Z'
+    errors: []
+    fingerprint: fc6ffbff6541e5f2895df20fd76f9999df56d3cffb2c6099b57d175578d63c92
+    publication_index: 0
+    reference_id: DOI:10.1038/s41597-022-01807-3
+    source_path: resource/bioregistry/bioregistry.md
+    status: valid
+    warnings: []
   resource/biostudies/biostudies.md#publication[0]#DOI:10.1016/j.jmb.2026.169874:
     checked_at: '2026-10-03T22:23:30Z'
     errors: []
@@ -5330,6 +5339,15 @@ entries:
     source_path: resource/ngbo/ngbo.md
     status: valid
     warnings: []
+  resource/node-normalizer/node-normalizer.md#publication[0]#DOI:10.48550/arXiv.2601.10008:
+    checked_at: '2026-10-04T17:01:59Z'
+    errors: []
+    fingerprint: 309051a2efa7f030c5fc43377619e9bb1178792c0a3f7b4e8f6e199756d8a86e
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2601.10008
+    source_path: resource/node-normalizer/node-normalizer.md
+    status: valid
+    warnings: []
   resource/noncode/noncode.md#publication[0]#DOI:10.1093/nar/gkaa1046:
     checked_at: '2026-06-22T16:51:11Z'
     errors: []
@@ -5483,6 +5501,24 @@ entries:
     publication_index: 0
     reference_id: PMID:15892874
     source_path: resource/obo_rel/obo_rel.md
+    status: valid
+    warnings: []
+  resource/obofoundry/obofoundry.md#publication[0]#DOI:10.1093/database/baab069:
+    checked_at: '2026-10-04T17:02:08Z'
+    errors: []
+    fingerprint: 4f0d3d6081eccee48b0dda17a88aac943005503885071868c5fd34fe50c66035
+    publication_index: 0
+    reference_id: DOI:10.1093/database/baab069
+    source_path: resource/obofoundry/obofoundry.md
+    status: valid
+    warnings: []
+  resource/obofoundry/obofoundry.md#publication[1]#DOI:10.1038/nbt1346:
+    checked_at: '2026-10-04T17:02:09Z'
+    errors: []
+    fingerprint: 9cf1faef773c057c4f716e2744a56ec33bf89c127f0f123d38a8cceba98766e1
+    publication_index: 1
+    reference_id: DOI:10.1038/nbt1346
+    source_path: resource/obofoundry/obofoundry.md
     status: valid
     warnings: []
   resource/occo/occo.md#publication[0]#url:https://ceur-ws.org/Vol-3805/ICBO-2022_paper_5061.pdf:

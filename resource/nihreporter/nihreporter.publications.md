@@ -12,6 +12,8 @@ original_source:
   source: pubmed
 - relation_type: prov:hadPrimarySource
   source: pmc
+- relation_type: prov:wasDerivedFrom
+  source: nih-era
 product_url: https://reporter.nih.gov/exporter/publications
 layout: product_detail
 ---

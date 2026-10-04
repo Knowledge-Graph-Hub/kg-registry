@@ -8,6 +8,8 @@ name: NIH Reporter API
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nihreporter
+- relation_type: prov:wasDerivedFrom
+  source: nih-era
 product_url: https://api.reporter.nih.gov/
 layout: product_detail
 ---

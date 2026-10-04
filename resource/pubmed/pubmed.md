@@ -2034,6 +2034,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/publications
 - category: Product
   description: Database of publication link tables for NIH-funded research projects
@@ -2047,6 +2049,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/linktables
 - category: Product
   description: Web interface for searching and visualizing chemical-protein interactions
