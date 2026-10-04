@@ -3325,7 +3325,7 @@ publications:
   - Eric Hurwitz
   - Julius O B Jacobsen
   - Atsuo Kikuchi
-  - "Sebastian K\xF6hler"
+  - Sebastian Köhler
   - Daniel R Korn
   - David Lagorce
   - Bryan J Laraway
@@ -3345,7 +3345,7 @@ publications:
   - David Osumi-Sutherland
   - Kelley Paris
   - Helen E Parkinson
-  - "Zo\xEB M Pendlington"
+  - Zoë M Pendlington
   - Xiao P Peng
   - Amy Pizzino
   - Sharon E Plon

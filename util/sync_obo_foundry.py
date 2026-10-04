@@ -182,8 +182,8 @@ class OBOFoundrySync:
     def _save_to_cache(self, data: List[Dict[str, Any]]) -> None:
         """Save OBO Foundry data to cache"""
         try:
-            with open(self.cache_file, 'w') as f:
-                yaml.dump(data, f, default_flow_style=False, sort_keys=False)
+            with open(self.cache_file, 'w', encoding="utf-8") as f:
+                yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
             logger.info(f"Cached {len(data)} ontologies to {self.cache_file}")
         except Exception as e:
             logger.warning(f"Failed to save cache: {e}")
@@ -880,7 +880,7 @@ class OBOFoundrySync:
         frontmatter = {k: v for k, v in frontmatter.items() if v is not None}
 
         # Convert to YAML string
-        yaml_content = yaml.dump(frontmatter, default_flow_style=False, sort_keys=False)
+        yaml_content = yaml.dump(frontmatter, default_flow_style=False, sort_keys=False, allow_unicode=True)
 
         # Markdown content
         markdown_content = f"""---

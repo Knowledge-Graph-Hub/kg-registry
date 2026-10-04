@@ -8,7 +8,7 @@ contacts:
   contact_details:
   - contact_type: github
     value: gglusman
-  label: "Gw\xEAnlyn Glusman"
+  label: Gwênlyn Glusman
 creation_date: '2026-02-18T00:00:00Z'
 description: Clinical Trials Knowledge Provider (CTKP) is a Translator knowledge provider
   maintained by the Multiomics Provider that exposes clinical trial-derived associations

@@ -3,7 +3,7 @@ activity_status: active
 category: DataModel
 contacts:
 - category: Individual
-  label: "Katy B\xF6rner"
+  label: Katy Börner
   orcid: 0000-0002-3321-6137
 creation_date: '2025-11-05T00:00:00Z'
 description: The Human Reference Atlas (HRA) is a comprehensive 3D spatial framework

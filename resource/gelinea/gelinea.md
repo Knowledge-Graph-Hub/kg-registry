@@ -208,7 +208,7 @@ publications:
   - Wan Wang
   - Jocelyn Fairman
   - Hillary R Keys
-  - "Vlado Dan\u010D\xEDk"
+  - Vlado Dančík
   - Clary B Clish
   - Paul A Clemons
   - Paula T Hammond

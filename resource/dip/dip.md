@@ -1328,7 +1328,7 @@ publications:
   - Sylvie Ricard-Blum
   - Bernd Roechert
   - Lukasz Salwinski
-  - "Volker St\xFCmpflen"
+  - Volker Stümpflen
   - Mike Tyers
   - Peter Uetz
   - Ioannis Xenarios

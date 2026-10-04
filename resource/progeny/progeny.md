@@ -142,12 +142,12 @@ publications:
 - authors:
   - Michael Schubert
   - Bertram Klinger
-  - "Martina Kl\xFCnemann"
+  - Martina Klünemann
   - Anja Sieber
   - Florian Uhlitz
   - Sascha Sauer
   - Mathew J Garnett
-  - "Nils Bl\xFCthgen"
+  - Nils Blüthgen
   - Julio Saez-Rodriguez
   doi: 10.1038/s41467-017-02391-6
   id: PMID:29295995
@@ -157,7 +157,7 @@ publications:
 - authors:
   - Christian H. Holland
   - Jovan Tanevski
-  - "Javier Perales-Pat\xF3n"
+  - Javier Perales-Patón
   - Jan Gleixner
   - Manu P. Kumar
   - Elisabetta Mereu

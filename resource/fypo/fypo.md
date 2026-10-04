@@ -201,7 +201,7 @@ publications:
 - authors:
   - Harris MA
   - Lock A
-  - "B\xE4hler J"
+  - Bähler J
   - Oliver SG
   - Wood V
   doi: 10.1093/bioinformatics/btt266

@@ -385,7 +385,7 @@ publications:
   - Guido Novati
   - Joshua Pan
   - Clare Bycroft
-  - "Akvil\u0117 \u017Demgulyt\u0117"
+  - Akvilė Žemgulytė
   - Taylor Applebaum
   - Alexander Pritzel
   - Lai Hong Wong
@@ -396,7 +396,7 @@ publications:
   - John Jumper
   - Demis Hassabis
   - Pushmeet Kohli
-  - "\u017Diga Avsec"
+  - Žiga Avsec
   doi: doi:10.1126/science.adg7492
   id: doi:10.1126/science.adg7492
   journal: Science

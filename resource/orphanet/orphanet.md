@@ -1318,7 +1318,7 @@ publications:
   - Pavan S
   - Rommel K
   - Mateo Marquina ME
-  - "H\xF6hn S"
+  - Höhn S
   - Lanneau V
   - Rath A
   doi: 10.1371/journal.pone.0170365

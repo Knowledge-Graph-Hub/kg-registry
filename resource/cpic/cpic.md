@@ -55,8 +55,8 @@ products:
     source: cpic
   product_url: https://www.clinpgx.org/cpic/guidelines
 - category: Product
-  description: "Curated gene\u2013drug pair tables linking pharmacogenes with affected\
-    \ medications and guideline recommendations"
+  description: Curated gene–drug pair tables linking pharmacogenes with affected medications
+    and guideline recommendations
   format: http
   id: cpic.genes_drugs
   is_public: true
@@ -78,8 +78,8 @@ products:
   product_url: https://www.clinpgx.org/page/cpicResources#guideline-alleles
 - category: ProgrammingInterface
   connection_url: https://api.cpicpgx.org/
-  description: "Structured data (database and API) for CPIC guideline-derived gene\u2013\
-    drug relationships, allele function, and standardized terms"
+  description: Structured data (database and API) for CPIC guideline-derived gene–drug
+    relationships, allele function, and standardized terms
   format: json
   id: cpic.api
   is_public: true

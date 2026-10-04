@@ -1648,7 +1648,7 @@ publications:
   doi: 10.1093/nar/gkj141
   id: https://doi.org/10.1093/nar/gkj141
   journal: Nucleic Acids Research
-  title: "Human protein reference database\u20142006 update"
+  title: Human protein reference database—2006 update
   year: '2006'
 - authors:
   - Peri S

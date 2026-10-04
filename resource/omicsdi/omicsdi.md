@@ -103,12 +103,12 @@ publications:
   - Manish Sud
   - Shankar Subramaniam
   - Ariana Barbera
-  - "Rafael C Jim\xE9nez"
+  - Rafael C Jiménez
   - Alexey I Nesvizhskii
   - Susanna-Assunta Sansone
   - Christoph Steinbeck
   - Rodrigo Lopez
-  - "Juan A Vizca\xEDno"
+  - Juan A Vizcaíno
   - Peipei Ping
   - Henning Hermjakob
   doi: 10.1038/nbt.3790

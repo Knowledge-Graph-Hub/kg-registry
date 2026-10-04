@@ -1545,7 +1545,7 @@ publications:
   - B. Lazaro Pinto
   - G.A. Salazar
   - M.L. Bileschi
-  - "F. Llinares-L\xF3pez"
+  - F. Llinares-López
   - L. Meng-Papaxanthos
   - L.J. Colwell
   - NV. Grishin

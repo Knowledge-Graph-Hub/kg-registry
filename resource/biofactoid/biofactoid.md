@@ -381,7 +381,7 @@ publications:
   - Augustin Luna
   - John Giorgi
   - Igor Rodchenkov
-  - "\xD6zg\xFCn Babur"
+  - Özgün Babur
   - John A Bachman
   - Benjamin M Gyori
   - Emek Demir

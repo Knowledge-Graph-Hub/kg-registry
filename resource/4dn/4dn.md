@@ -402,7 +402,7 @@ publications:
   - Cosolo A
   - Bakken TE
   - Hodge RD
-  - "Cort\xE9s-Ciriano I"
+  - Cortés-Ciriano I
   - et al.
   doi: doi:10.1038/s41467-022-29697-4
   id: https://doi.org/10.1038/s41467-022-29697-4

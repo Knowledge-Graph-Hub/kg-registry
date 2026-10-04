@@ -771,8 +771,8 @@ publications:
   - Jan Gerken
   - Timmy Schweer
   - Pablo Yarza
-  - "J\xF6rg Peplies"
-  - "Frank Oliver Gl\xF6ckner"
+  - Jörg Peplies
+  - Frank Oliver Glöckner
   doi: 10.1093/nar/gks1219
   id: doi:10.1093/nar/gks1219
   journal: Nucleic Acids Research
@@ -787,9 +787,9 @@ publications:
   - Elmar Pruesse
   - Christian Quast
   - Timmy Schweer
-  - "J\xF6rg Peplies"
+  - Jörg Peplies
   - Wolfgang Ludwig
-  - "Frank Oliver Gl\xF6ckner"
+  - Frank Oliver Glöckner
   doi: 10.1093/nar/gkt1209
   id: doi:10.1093/nar/gkt1209
   journal: Nucleic Acids Research

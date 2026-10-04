@@ -4322,7 +4322,7 @@ publications:
   - Rose Oughtred
   - Jennifer Rust
   - Christie Chang
-  - "Bobby\u2010Joe Breitkreutz"
+  - Bobby‐Joe Breitkreutz
   - Chris Stark
   - Andrew Willems
   - Lorrie Boucher
@@ -4330,16 +4330,16 @@ publications:
   - Nadine Kolas
   - Frederick Zhang
   - Sonam Dolma
-  - "Jasmin Coulombe\u2010Huntington"
-  - "Andrew Chatr\u2010aryamontri"
+  - Jasmin Coulombe‐Huntington
+  - Andrew Chatr‐aryamontri
   - Kara Dolinski
   - Mike Tyers
   doi: 10.1002/pro.3978
   id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
-    \ protein, genetic, and chemical interactions"
+  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
+    genetic, and chemical interactions
   year: '2021'
 - authors:
   - Rose Oughtred
@@ -4349,7 +4349,7 @@ publications:
   - Lorrie Boucher
   - Christie Chang
   - Nadine Kolas
-  - "Lara O\u2019Donnell"
+  - Lara O’Donnell
   - Genie Leung
   - Rochelle McAdam
   - Frederick Zhang

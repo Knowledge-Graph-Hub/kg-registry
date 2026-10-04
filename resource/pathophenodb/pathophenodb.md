@@ -229,7 +229,7 @@ products:
     source: wikipathways
 publications:
 - authors:
-  - "\u015Eenay Kafkas"
+  - Şenay Kafkas
   - Marwa Abdelhakim
   - Yasmeen Hashish
   - Maxat Kulmanov

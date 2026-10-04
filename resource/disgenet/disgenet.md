@@ -2050,9 +2050,9 @@ products:
     to URL
 publications:
 - authors:
-  - "Janet Pi\xF1ero"
-  - "Juan Manuel Ram\xEDrez-Anguita"
-  - "Josep Sa\xFCch-Pitarch"
+  - Janet Piñero
+  - Juan Manuel Ramírez-Anguita
+  - Josep Saüch-Pitarch
   - Francesco Ronzano
   - Emilio Centeno
   - Ferran Sanz

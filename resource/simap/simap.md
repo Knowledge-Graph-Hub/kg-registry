@@ -999,8 +999,8 @@ publications:
 - authors:
   - Thomas Rattei
   - Patrick Tischler
-  - "Stefan G\xF6tz"
-  - "Marc-Andr\xE9 Jehl"
+  - Stefan Götz
+  - Marc-André Jehl
   - Jonathan Hoser
   - Roland Arnold
   - Ana Conesa
@@ -1009,8 +1009,8 @@ publications:
   id: doi:10.1093/nar/gkp949
   journal: Nucleic Acids Research
   preferred: true
-  title: "SIMAP\u2014a comprehensive database of pre-calculated protein sequence similarities,\
-    \ domains, annotations and clusters"
+  title: SIMAP—a comprehensive database of pre-calculated protein sequence similarities,
+    domains, annotations and clusters
   year: '2010'
 warnings:
 - 'SIMAP appears discontinued: the historical MIPS/Helmholtz Munich portal and the

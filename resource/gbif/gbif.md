@@ -277,7 +277,7 @@ products:
 publications:
 - authors:
   - Robertson T
-  - "D\xF6ring M"
+  - Döring M
   - Guralnick R
   - Bloom D
   - Wieczorek J

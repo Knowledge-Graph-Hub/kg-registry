@@ -1914,7 +1914,7 @@ products:
 publications:
 - authors:
   - Rutherford KM
-  - "Lera-Ram\xEDrez M"
+  - Lera-Ramírez M
   - Wood V
   doi: 10.1093/genetics/iyae007
   id: https://www.ncbi.nlm.nih.gov/pubmed/38376816

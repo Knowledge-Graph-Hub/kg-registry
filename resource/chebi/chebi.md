@@ -1743,8 +1743,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -4849,12 +4849,12 @@ publications:
   - Muhammad Arsalan
   - Carlos Moreno
   - Juan Mosquera
-  - "Eloy F\xE9lix"
-  - "Tevfik Kizil\xF6ren"
+  - Eloy Félix
+  - Tevfik Kizilören
   - Venkatesh Muthukrishnan
   - Barbara Zdrazil
   - Andrew R Leach
-  - "Noel M O\u2019Boyle"
+  - Noel M O’Boyle
   doi: 10.1093/nar/gkaf1271
   id: https://doi.org/10.1093/nar/gkaf1271
   journal: Nucleic Acids Research

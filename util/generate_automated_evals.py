@@ -267,7 +267,7 @@ def create_automated_evaluation_pages():
                 }
                 fm = {k: v for k, v in fm.items() if v is not None}
                 ef.write("---\n")
-                yaml.dump(fm, ef)
+                yaml.dump(fm, ef, allow_unicode=True)
                 ef.write("---\n\n")
                 ef.write(content)
 
@@ -282,7 +282,7 @@ def create_automated_evaluation_pages():
                     md_update = md.rstrip() + "\n\n## Automated Evaluation\n\n- View the automated evaluation: " + link_snippet + "\n"
                     with open(res_file, 'w', encoding='utf-8') as rf:
                         rf.write("---\n")
-                        yaml.dump(metadata, rf)
+                        yaml.dump(metadata, rf, allow_unicode=True)
                         rf.write("---\n")
                         rf.write(md_update)
                     updated_links += 1

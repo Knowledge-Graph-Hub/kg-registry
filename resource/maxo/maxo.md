@@ -1428,7 +1428,7 @@ publications:
   - Megan L Kraus
   - Markus S Ladewig
   - David Lewis-Smith
-  - "Hanns Lochm\xFCller"
+  - Hanns Lochmüller
   - Nicolas A Matentzoglu
   - Monica C Munoz-Torres
   - Catharina Schuetz

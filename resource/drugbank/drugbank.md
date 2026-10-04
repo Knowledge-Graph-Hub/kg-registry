@@ -623,8 +623,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3766,14 +3766,14 @@ publications:
 - authors:
   - Craig Knox
   - Mike Wilson
-  - "Christen\_M Klinger"
+  - Christen M Klinger
   - Mark Franklin
   - Eponine Oler
   - Alex Wilson
   - Allison Pon
   - Jordan Cox
-  - "Na Eun\_(Lucy) Chin"
-  - "Seth\_A Strawbridge"
+  - Na Eun (Lucy) Chin
+  - Seth A Strawbridge
   - Marysol Garcia-Patino
   - Ray Kruger
   - Aadhavya Sivakumaran
@@ -3783,7 +3783,7 @@ publications:
   - Omolola Fatokun
   - Daphnee Doucet
   - Ashley Zubkowski
-  - "Dorsa\_Yahya Rayat"
+  - Dorsa Yahya Rayat
   - Hayley Jackson
   - Karxena Harford
   - Afia Anjum
@@ -3793,11 +3793,11 @@ publications:
   - Brian Lee
   - Jaanus Liigand
   - Harrison Peters
-  - "Ruo Qi\_(Rachel) Wang"
+  - Ruo Qi (Rachel) Wang
   - Tue Nguyen
   - Denise So
   - Matthew Sharp
-  - "Rodolfo da\_Silva"
+  - Rodolfo da Silva
   - Cyrella Gabriel
   - Joshua Scantlebury
   - Marissa Jasinski
@@ -3805,7 +3805,7 @@ publications:
   - Timothy Jewison
   - Tanvir Sajed
   - Vasuk Gautam
-  - "David\_S Wishart"
+  - David S Wishart
   doi: 10.1093/nar/gkad976
   id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

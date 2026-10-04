@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
-description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
-  \ levels (A\u2013E)"
+description: Core TF–target regulon knowledge graph (multi-species) with confidence
+  levels (A–E)
 format: r
 id: dorothea.graph
 name: DoRothEA Regulon Graph

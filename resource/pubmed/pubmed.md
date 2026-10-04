@@ -416,8 +416,8 @@ products:
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   format: http
   id: gnbr.graph
   name: GNBR graph

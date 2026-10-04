@@ -429,16 +429,16 @@ publications:
   - Dac-Trung Nguyen
   - Cristian G Bologa
   - Lars Juhl Jensen
-  - "Du\u0161ica Vidovi\u0107"
+  - Dušica Vidović
   - Amar Koleti
-  - "Stephan C Sch\xFCrer"
+  - Stephan C Schürer
   - Anna Waller
   - Jeremy J Yang
   - Jayme Holmes
   - Giovanni Bocci
   - Noel Southall
   - Poorva Dharkar
-  - "Ewy Math\xE9"
+  - Ewy Mathé
   - Anton Simeonov
   - Tudor I Oprea
   doi: 10.1093/nar/gkaa993
@@ -465,7 +465,7 @@ publications:
   - John Overington
   - Juhee Patel
   - Andrew D. Rouillard
-  - "Stephan Sch\xFCrer"
+  - Stephan Schürer
   - Timothy Sheils
   - Anton Simeonov
   - Larry A. Sklar

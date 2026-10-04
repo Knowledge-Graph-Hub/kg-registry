@@ -88,12 +88,12 @@ products:
   product_url: https://www.disgenet.com/
 publications:
 - authors:
-  - "Alba Guti\xE9rrez-Sacrist\xE1n"
-  - "Sol\xE8ne Grosdidier"
+  - Alba Gutiérrez-Sacristán
+  - Solène Grosdidier
   - Olga Valverde
   - Marta Torrens
-  - "\xC0lex Bravo"
-  - "Janet Pi\xF1ero"
+  - Àlex Bravo
+  - Janet Piñero
   - Ferran Sanz
   - Laura I. Furlong
   doi: 10.1093/bioinformatics/btv301

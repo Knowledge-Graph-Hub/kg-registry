@@ -182,9 +182,8 @@ products:
   product_url: https://open.fda.gov/data/downloads/
 publications:
 - id: https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
-  title: "FDA\u2019s Global Substance Registration System (GSRS) Unique Ingredient\
-    \ Identifiers (UNIIs) uniquely define substances in FDA-regulated products - 06/08/2023\
-    \ | FDA"
+  title: FDA’s Global Substance Registration System (GSRS) Unique Ingredient Identifiers
+    (UNIIs) uniquely define substances in FDA-regulated products - 06/08/2023 | FDA
 repository: https://ginas.ncats.nih.gov/ginas/app
 taxon:
 - NCBITaxon:9606

@@ -655,7 +655,7 @@ publications:
   - Menden MP
   - Schubert M
   - Aben N
-  - "Gon\xE7alves E"
+  - Gonçalves E
   - Barthorpe S
   - Lightfoot H
   - Cokelaer T

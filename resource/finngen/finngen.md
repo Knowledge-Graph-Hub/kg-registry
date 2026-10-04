@@ -109,7 +109,7 @@ products:
 publications:
 - authors:
   - Sean J. Jurgens
-  - "Joel T. R\xE4m\xF6"
+  - Joel T. Rämö
   - Daria R. Kramarenko
   - Leonoor F. J. M. Wijdeveld
   - Jan Haas
@@ -122,9 +122,9 @@ publications:
   - Albert Henry
   - Jennifer E. Huffman
   - Saketh Challa
-  - "Frank R\xFChle"
+  - Frank Rühle
   - Carmen Diaz Verdugo
-  - "Christian Krijger Ju\xE1rez"
+  - Christian Krijger Juárez
   - Shinwan Kany
   - Constance A. van Orsouw
   - Kiran Biddinger
@@ -136,9 +136,9 @@ publications:
   - Satoshi Koyama
   - Leander Beekman
   - Dominic S. Zimmerman
-  - "Jean-Fran\xE7ois Deleuze"
+  - Jean-François Deleuze
   - Eric Villard
-  - "David-Alexandre Tr\xE9gou\xEBt"
+  - David-Alexandre Trégouët
   - Richard Isnard
   - Dorret I. Boomsma
   - Eco J. C. de Geus
@@ -178,8 +178,8 @@ publications:
   - Samuel E. Jones
   - Shea J. Andrews
   - Juha Karjalainen
-  - "Beatriz Cort\xE9s"
-  - "Heath E. O\u2019Brien"
+  - Beatriz Cortés
+  - Heath E. O’Brien
   - Ana Ochoa-Guzman
   - Brian E. Fulton-Howard
   - Martin Broberg
@@ -206,14 +206,14 @@ publications:
   - Celia B. Sequeros
   - Thomas W. Winkler
   - Daniel M. Jordan
-  - "Raimonds Re\u0161cenko"
+  - Raimonds Rešcenko
   - Lorenzo Miano
   - Jacqueline M. Lane
   - Ryan K. Chung
   - Beatriz Guillen-Guio
   - Olivia C. Leavy
   - Laura Carvajal-Silva
-  - "Kevin Aguilar-Vald\xE9s"
+  - Kevin Aguilar-Valdés
   - Erika Frangione
   - Lindsay Guare
   - Ekaterina Vergasova
@@ -246,7 +246,7 @@ publications:
   - Julia Heggemann
   - Sonja Schultz
   - Pari Behzad
-  - "Markus M. N\xF6then"
+  - Markus M. Nöthen
   - Abigail Miller
   - Max C. Pensel
   - Carlo Maj
@@ -256,7 +256,7 @@ publications:
   - Carlos A. Aguilar Salinas
   - Seung Hyuk T. Lee
   - Hortensia Moreno-Macias
-  - "P\xE4ivi Pajukanta"
+  - Päivi Pajukanta
   - Michelle Duran-Gomez
   - Lill Trogstad
   - Daniel J. Rader
@@ -291,53 +291,53 @@ publications:
   - Yolanda Espinosa-Parrilla
   - Juan M. Saez Hidalgo
   - Estefania Nova-Lamperti
-  - "Scarlett Guti\xE9rrez-Richards"
+  - Scarlett Gutiérrez-Richards
   - Gerardo Donoso
   - Leslie C. Cerpa
   - Cesar A. Echeverria
   - Camilo Cabrera
   - Pamela Bocchieri
   - Macarena Fuentes-Guajardo
-  - "Christian A. Mu\xF1oz"
-  - "Karen Y. Or\xF3stica"
+  - Christian A. Muñoz
+  - Karen Y. Oróstica
   - Alvaro Figueroa
   - Lissette G. Guajardo
   - Iskra A. Signore
-  - "Virginia A. Monardes-Ram\xEDrez"
+  - Virginia A. Monardes-Ramírez
   - Eduardo A. Tobar-Calfucoy
-  - "Luis A. Qui\xF1ones"
-  - "Cristian E. Y\xE1\xF1ez"
+  - Luis A. Quiñones
+  - Cristian E. Yáñez
   - Daniela Zapata-Contreras
-  - "Paula Zu\xF1iga-Pacheco"
+  - Paula Zuñiga-Pacheco
   - Romina Quiroga
-  - "Mat\xEDas F. Mart\xEDnez"
+  - Matías F. Martínez
   - Teresa A. Alarcon
   - Andrea X. Silva
   - Carolina S. Selman
   - Sergio Sanhueza
-  - "Roc\xEDo Retamales-Ortega"
-  - "Tamara V. Ar\xE9valo"
+  - Rocío Retamales-Ortega
+  - Tamara V. Arévalo
   - Eduardo Lamoza
-  - "H\xE9ctor Valenzuela-Jorquera"
+  - Héctor Valenzuela-Jorquera
   - Maria Sophia Donaire
   - Sannidhi Sarvadhavabhatla
   - Sisse R. Ostrowski
-  - "S\xF8ren Brunak"
+  - Søren Brunak
   - David Westergaard
   - Bjarke Feenstra
   - Anne Sofie B. Mortensen
   - Anna L. Guyatt
   - Rafael de Cid
-  - "Susana Iraola-Guzm\xE1n"
+  - Susana Iraola-Guzmán
   - Gemma Moncunill
   - Alba Blasco
   - Judith Garcia-Aymerich
   - Natalia Blay
-  - "Carlota Doba\xF1o"
+  - Carlota Dobaño
   - Anna Carreras
-  - "Xavier Farr\xE9"
+  - Xavier Farré
   - Manolis Kogevinas
-  - "Gemma Casta\xF1o-Vinyals"
+  - Gemma Castaño-Vinyals
   - Simone Furini
   - Chiara Fallerini
   - Kristina Zguro
@@ -384,7 +384,7 @@ publications:
   - Vita Rovite
   - Peculis Raitis
   - Monta Briviba
-  - "Janis Klovin\u0161"
+  - Janis Klovinš
   - Richa Saxena
   - Angus C. Burns
   - Jakob M. Cherry
@@ -440,7 +440,7 @@ publications:
   - Rafael de Cid
   - Ahmadreza Niavarani
   - Erik Abner
-  - "Teresa Tusi\xE9-Luna"
+  - Teresa Tusié-Luna
   - Shefali S. Verma
   - George Davey Smith
   - Nicholas J. Timpson
@@ -451,7 +451,7 @@ publications:
   - Eva C. Schulte
   - J. Brent Richards
   - Kerstin U. Ludwig
-  - "Michael Marks-Hultstr\xF6m"
+  - Michael Marks-Hultström
   - Hugo Zeberg
   - Hanna M. Ollila
   doi: 10.1038/s41588-025-02100-w

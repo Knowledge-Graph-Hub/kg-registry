@@ -8,7 +8,7 @@ contacts:
     value: https://www.helmholtz-munich.de/
   - contact_type: email
     value: corum@helmholtz-muenchen.de
-  label: "Helmholtz Zentrum M\xFCnchen"
+  label: Helmholtz Zentrum München
 creation_date: '2025-07-22T00:00:00Z'
 description: CORUM (Comprehensive Resource of Mammalian Protein Complexes) is a curated
   database of experimentally characterized protein complexes from mammalian organisms,
@@ -1319,7 +1319,7 @@ publications:
   id: doi:10.1093/nar/gkac1015
   journal: Nucleic Acids Research
   preferred: true
-  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20132022"
+  title: 'CORUM: the comprehensive resource of mammalian protein complexes–2022'
   year: '2023'
 - authors:
   - Madalina Giurgiu
@@ -1333,7 +1333,7 @@ publications:
   doi: 10.1093/nar/gky973
   id: doi:10.1093/nar/gky973
   journal: Nucleic Acids Research
-  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142019"
+  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2019'
   year: '2019'
 - authors:
   - Andreas Ruepp
@@ -1345,12 +1345,12 @@ publications:
   - Brigitte Waegele
   - Thorsten Schmidt
   - Octave Noubibou Doudieu
-  - "Volker St\xFCmpflen"
+  - Volker Stümpflen
   - Hans-Werner Mewes
   doi: 10.1093/nar/gkp914
   id: doi:10.1093/nar/gkp914
   journal: Nucleic Acids Research
-  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142009"
+  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2009'
   year: '2010'
 repository: https://mips.helmholtz-muenchen.de/corum/download
 taxon:

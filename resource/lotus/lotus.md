@@ -94,7 +94,7 @@ publications:
   - James G Graham
   - Ralf Stephan
   - Roderic Page
-  - "Ji\u0159\xED Vondr\xE1\u0161ek"
+  - Jiří Vondrášek
   - Christoph Steinbeck
   - Guido F Pauli
   - Jean-Luc Wolfender

@@ -166,7 +166,7 @@ publications:
   year: '2015'
 - authors:
   - Emily Jane Mctavish
-  - "Luna Luisa S\xE1nchez-Reyes"
+  - Luna Luisa Sánchez-Reyes
   - Mark T Holder
   doi: 10.1093/sysbio/syab033
   id: doi:10.1093/sysbio/syab033

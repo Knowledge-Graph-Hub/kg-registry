@@ -364,9 +364,9 @@ products:
   product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
 publications:
 - authors:
-  - "Ren\xE9 Dreos"
+  - René Dreos
   - Giovanna Ambrosini
-  - "Rouayda Cavin P\xE9rier"
+  - Rouayda Cavin Périer
   - Philipp Bucher
   doi: 10.1093/nar/gku1111
   id: https://doi.org/10.1093/nar/gku1111

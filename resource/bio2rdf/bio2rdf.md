@@ -136,7 +136,7 @@ products:
     source: bio2rdf
 publications:
 - authors:
-  - "Fran\xE7ois Belleau"
+  - François Belleau
   - Marc-Alexandre Nolin
   - Nicole Tourigny
   - Philippe Rigault
@@ -149,7 +149,7 @@ publications:
   year: '2008'
 - authors:
   - Alison Callahan
-  - "Jos\xE9 Cruz-Toledo"
+  - José Cruz-Toledo
   - Peter Ansell
   - Michel Dumontier
   doi: 10.1007/978-3-642-38288-8_14

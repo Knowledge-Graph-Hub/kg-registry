@@ -315,18 +315,18 @@ products:
 publications:
 - authors:
   - Marie-Paule Lefranc
-  - "V\xE9ronique Giudicelli"
+  - Véronique Giudicelli
   - Patrice Duroux
   - Joumana Jabado-Michaloud
-  - "G\xE9raldine Folch"
+  - Géraldine Folch
   - Safa Aouinti
   - Emilie Carillon
   - Hugo Duvergey
-  - "Am\xE9lie Houles"
+  - Amélie Houles
   - Typhaine Paysan-Lafosse
   - Saida Hadi-Saljoqi
   - Souphatta Sasorith
-  - "G\xE9rard Lefranc"
+  - Gérard Lefranc
   - Sofia Kossida
   doi: 10.1093/nar/gku1056
   id: https://doi.org/10.1093/nar/gku1056

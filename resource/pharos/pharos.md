@@ -372,14 +372,14 @@ publications:
   - Siramshetty VB
   - Nguyen DT
   - Jensen LJ
-  - "Vidovi\u0107 D"
-  - "Sch\xFCrer SC"
+  - Vidović D
+  - Schürer SC
   - Holmes J
   - Sharma A
   - Pillai A
   - Bologa CG
   - Edwards L
-  - "Math\xE9 E"
+  - Mathé E
   - Oprea TI
   doi: 10.1093/nar/gkac1033
   id: doi:10.1093/nar/gkac1033
@@ -406,7 +406,7 @@ publications:
   - Overington J
   - Patel J
   - Rouillard AD
-  - "Sch\xFCrer S"
+  - Schürer S
   - Sheils T
   - Simeonov A
   - Sklar LA
@@ -431,16 +431,16 @@ publications:
   - Nguyen DT
   - Bologa CG
   - Jensen LJ
-  - "Vidovi\u0107 D"
+  - Vidović D
   - Koleti A
-  - "Sch\xFCrer SC"
+  - Schürer SC
   - Waller A
   - Yang JJ
   - Holmes J
   - Bocci G
   - Southall N
   - Dharuri H
-  - "Math\xE9 E"
+  - Mathé E
   - Simeonov A
   - Oprea TI
   doi: 10.1093/nar/gkaa993

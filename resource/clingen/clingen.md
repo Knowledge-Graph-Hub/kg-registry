@@ -1809,7 +1809,7 @@ publications:
   id: https://doi.org/10.1056/NEJMsr1406261
   journal: New England Journal of Medicine
   preferred: true
-  title: "ClinGen \u2014 The Clinical Genome Resource"
+  title: ClinGen — The Clinical Genome Resource
   year: '2015'
 - authors:
   - Erica F. Andersen

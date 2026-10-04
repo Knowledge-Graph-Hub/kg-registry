@@ -76,7 +76,7 @@ products:
   product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
 publications:
 - authors:
-  - "Rodr\xEDguez-Garc\xEDa M\xC1"
+  - Rodríguez-García MÁ
   - Gkoutos GV
   - Schofield PN
   - Hoehndorf R

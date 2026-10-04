@@ -2199,7 +2199,7 @@ publications:
   - Magarinos MP
   - Bosc N
   - Arcila R
-  - "Kizil\xF6ren T"
+  - Kizilören T
   - Gaulton A
   - Bento AP
   - Adasme MF

@@ -372,8 +372,8 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_url: https://zenodo.org/records/20816742
 - category: GraphProduct
-  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
-    \ levels (A\u2013E)"
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
   format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph
@@ -406,8 +406,8 @@ publications:
   - Katalin Ferenc
   - Vipin Kumar
   - Roza Berhanu Lemma
-  - "J\xE9r\xE9my Lucas"
-  - "Jeanne Ch\xE8neby"
+  - Jérémy Lucas
+  - Jeanne Chèneby
   - Damir Baranasic
   - Aziz Khan
   - Oriol Fornes
@@ -417,7 +417,7 @@ publications:
   - Boris Lenhard
   - Albin Sandelin
   - Wyeth W Wasserman
-  - "Fran\xE7ois Parcy"
+  - François Parcy
   - Anthony Mathelier
   doi: doi:10.1093/nar/gkad1059
   id: doi:10.1093/nar/gkad1059

@@ -1575,9 +1575,9 @@ products:
     source: wikipathways
 publications:
 - authors:
-  - "Uhl\xE9n M"
+  - Uhlén M
   - Fagerberg L
-  - "Hallstr\xF6m BM"
+  - Hallström BM
   - Lindskog C
   - Oksvold P
   - Mardinoglu A

@@ -823,7 +823,7 @@ products:
     source: lincs
 publications:
 - authors:
-  - "Katy B\xF6rner"
+  - Katy Börner
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1

@@ -324,7 +324,7 @@ publications:
   - Christian J. A. Sigrist
   - Edouard de Castro
   - Lorenzo Cerutti
-  - "B\xE9atrice A. Cuche"
+  - Béatrice A. Cuche
   - Nicolas Hulo
   - Alan Bridge
   - Lydie Bougueleret

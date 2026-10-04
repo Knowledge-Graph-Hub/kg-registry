@@ -2,12 +2,12 @@
 activity_status: active
 category: KnowledgeGraph
 creation_date: '2025-09-11T00:00:00Z'
-description: "DoRothEA is a curated resource of transcription factor (TF) \u2013 target\
-  \ gene (regulon) interactions with confidence scoring, enabling inference of TF\
-  \ activity from gene expression data. It integrates literature-curated interactions\
-  \ and various experimental evidence (e.g. ChIP-seq, TF binding motifs, perturbation\
-  \ data) to build context-agnostic and confidence-stratified regulons for multiple\
-  \ species. Frequently used with PROGENy to estimate pathway and TF activities."
+description: DoRothEA is a curated resource of transcription factor (TF) – target
+  gene (regulon) interactions with confidence scoring, enabling inference of TF activity
+  from gene expression data. It integrates literature-curated interactions and various
+  experimental evidence (e.g. ChIP-seq, TF binding motifs, perturbation data) to build
+  context-agnostic and confidence-stratified regulons for multiple species. Frequently
+  used with PROGENy to estimate pathway and TF activities.
 domains:
 - genomics
 - gene regulation
@@ -21,8 +21,8 @@ license:
 name: DoRothEA
 products:
 - category: GraphProduct
-  description: "Core TF\u2013target regulon knowledge graph (multi-species) with confidence\
-    \ levels (A\u2013E)"
+  description: Core TF–target regulon knowledge graph (multi-species) with confidence
+    levels (A–E)
   format: r
   id: dorothea.graph
   name: DoRothEA Regulon Graph
@@ -164,13 +164,13 @@ publications:
     factor activities
   year: '2019'
 - authors:
-  - "Sophia M\xFCller-Dott"
+  - Sophia Müller-Dott
   - Eirini Tsirvouli
-  - "Miguel V\xE1zquez"
+  - Miguel Vázquez
   - Ricardo O. Ramirez Flores
   - Pau Badia-i-Mompel
   - Robin Fallegger
-  - "Astrid L\xE6greid"
+  - Astrid Lægreid
   - Julio Saez-Rodriguez
   doi: 10.1101/2023.03.30.534849
   id: doi:10.1101/2023.03.30.534849

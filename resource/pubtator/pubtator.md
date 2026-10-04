@@ -66,8 +66,8 @@ products:
     source: pubtator
   product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   format: http
   id: gnbr.graph
   name: GNBR graph
