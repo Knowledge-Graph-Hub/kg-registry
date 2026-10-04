@@ -293,6 +293,10 @@ products:
     source: geonames
   - relation_type: prov:wasInfluencedBy
     source: freebase
+  - relation_type: prov:wasInfluencedBy
+    source: wordnet
+  - relation_type: prov:wasInfluencedBy
+    source: dolce
   product_file_size: 725192
   product_url: https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf
   warnings:
@@ -312,6 +316,8 @@ products:
     source: proton
   - relation_type: prov:wasInfluencedBy
     source: geonames
+  - relation_type: prov:wasInfluencedBy
+    source: dolce
   product_file_size: 12036
   product_url: https://api.triplydb.com/datasets/ontotext/proton/download.ttl.gz
 ---
