@@ -2867,6 +2867,15 @@ entries:
     source_path: resource/forum/forum.md
     status: valid
     warnings: []
+  resource/freebase/freebase.md#publication[0]#DOI:10.1145/1376616.1376746:
+    checked_at: '2026-10-04T13:02:05Z'
+    errors: []
+    fingerprint: cd0a6172714fa839a67e6cc72d51c9b9e1a632bbf3812a7e0f7a7cbea2c5266f
+    publication_index: 0
+    reference_id: DOI:10.1145/1376616.1376746
+    source_path: resource/freebase/freebase.md
+    status: valid
+    warnings: []
   resource/fypo/fypo.md#publication[0]#PMID:23658422:
     checked_at: '2026-08-06T18:17:23Z'
     errors: []
