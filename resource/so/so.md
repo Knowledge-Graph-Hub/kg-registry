@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Karen Eilbeck
-  orcid: 0000-0002-0831-6427
   contact_details:
   - contact_type: email
     value: keilbeck@genetics.utah.edu
   - contact_type: github
     value: keilbeck
+  label: Karen Eilbeck
+  orcid: 0000-0002-0831-6427
 creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary for sequence annotation, for the exchange
   of annotation data and for the description of sequence objects in databases.
@@ -600,6 +600,22 @@ products:
     source: so
   product_file_size: 136152
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SO.tar.gz
+- category: DocumentationProduct
+  description: GFF3 specification (version 1.26, 18 August 2020, by Lincoln Stein),
+    maintained in the Sequence Ontology Specifications repository. Column 3 feature
+    types must be Sequence Ontology terms or accessions.
+  format: http
+  id: gff.specification
+  is_public: true
+  latest_version: '1.26'
+  name: GFF3 Specification
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gff
+  - relation_type: prov:hadPrimarySource
+    source: so
+  product_file_size: 17111
+  product_url: https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md
 publications:
 - authors:
   - Eilbeck K

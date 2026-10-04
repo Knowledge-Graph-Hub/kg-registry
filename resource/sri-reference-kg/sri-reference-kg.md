@@ -216,6 +216,20 @@ products:
         relation_type: prov:hadPrimarySource
       - source: phenopacket-store
         relation_type: prov:hadPrimarySource
+  - category: GraphProduct
+    description: 'Biolink Automat: graph based on the Monarch API, from the SRI Reference
+      KG (2021 data, Biolink 3.1.2; legacy).'
+    format: kgx-jsonl
+    id: automat.biolink
+    name: biolink_automat
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: automat
+    - relation_type: prov:hadPrimarySource
+      source: sri-reference-kg
+    - relation_type: prov:hadPrimarySource
+      source: monarchinitiative
+    product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/329f8c92051c18d4/
 repository: https://github.com/monarch-initiative/monarch-app
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-09-23T00:00:00Z'

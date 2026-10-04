@@ -1,13 +1,13 @@
 ---
 category: MappingProduct
-compression: gzip
+compression: targz
 description: Ontology mappings extracted from all ontologies in SSSOM TSV format
-format: tsv
+format: sssom
 id: ols.mappings
 name: OLS SSSOM Mappings
 original_source:
-  - source: ols
-    relation_type: prov:hadPrimarySource
-product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+- relation_type: prov:hadPrimarySource
+  source: ols
+product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
 layout: product_detail
 ---

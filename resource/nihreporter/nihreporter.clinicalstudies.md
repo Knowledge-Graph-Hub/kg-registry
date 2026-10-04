@@ -7,6 +7,8 @@ name: NIH-Funded Project Clinical Studies
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nihreporter
+- relation_type: prov:hadPrimarySource
+  source: clinicaltrialsgov
 product_url: https://reporter.nih.gov/exporter/clinicalstudies
 layout: product_detail
 ---

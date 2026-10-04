@@ -2211,6 +2211,11 @@ http://purl.obolibrary.org/obo/go/go-basic.obo:
   ok: true
   source: cache
   status_code: 200
+http://purl.obolibrary.org/obo/go/noctua/neo.obo:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 http://purl.obolibrary.org/obo/go/noctua/neo.owl:
   checked_at: '2026-10-02T21:36:57Z'
   error: null
@@ -5157,11 +5162,13 @@ http://www.organchip.cn/:
   checked_at: '2026-10-04T02:36:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.organchip.cn/search/tools:
   checked_at: '2026-10-04T02:36:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.pathbase.net:
   checked_at: '2026-10-02T21:37:14Z'
@@ -6202,6 +6209,11 @@ https://api.reliefweb.int/v2/:
   ok: false
   source: cache
   status_code: 400
+https://api.reporter.nih.gov/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://apollo2.chemistry.gatech.edu/AboutRiboVision2/Advanced_Features/:
   checked_at: '2026-10-02T21:37:22Z'
   error: null
@@ -8583,6 +8595,11 @@ https://data.biomarkerkb.org/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://data.bioontology.org/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://data.cdc.gov/browse?category=500+Cities+%26+Places:
   checked_at: '2026-10-02T21:38:37Z'
@@ -12003,6 +12020,16 @@ https://ftp.ebi.ac.uk/pub/databases/spot/ols/:
   ok: true
   source: cache
   status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl:
   checked_at: '2026-06-27T13:24:56Z'
   error: get 404
@@ -14331,6 +14358,11 @@ https://github.com/RDruzinsky/feedontology:
   ok: true
   source: cache
   status_code: 200
+https://github.com/RENCI-AUTOMAT/automat-server:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/RTXteam/RTX:
   checked_at: '2026-10-02T21:39:18Z'
   error: null
@@ -14558,6 +14590,16 @@ https://github.com/The-Sequence-Ontology/SO-Ontologies:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/The-Sequence-Ontology/Specifications:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/TranslatorSRI/CQS:
   checked_at: '2026-10-02T21:39:19Z'
@@ -22088,6 +22130,11 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/:
   ok: true
   source: cache
   status_code: 200
+https://pmc.ncbi.nlm.nih.gov/tools/cloud/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://pmc.ncbi.nlm.nih.gov/tools/developers/:
   checked_at: '2026-10-02T21:40:44Z'
   error: null
@@ -22969,6 +23016,11 @@ https://reporter.nih.gov/exporter/clinicalstudies:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://reporter.nih.gov/exporter/crisp:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://reporter.nih.gov/exporter/linktables:
   checked_at: '2026-10-02T21:40:51Z'
@@ -25064,17 +25116,42 @@ https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_fil
   ok: true
   source: cache
   status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/BINDING_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/CAMKP_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/COHD_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/CTD_Automat/f92c663160ec5e36/:
   checked_at: '2026-10-02T21:41:05Z'
   error: null
   ok: true
   source: cache
   status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/CTKP_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/DrugCentral_Automat/dec0617490b49c7a/:
   checked_at: '2026-10-02T21:41:05Z'
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/EHR_Clinical_Connections_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/:
   checked_at: '2026-10-02T21:41:05Z'
@@ -25087,6 +25164,11 @@ https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/GenomeAllianceOrthologs_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/GtoPdb_Automat/0ea6074c824c2236/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -25124,6 +25206,16 @@ https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/:
   ok: true
   source: cache
   status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/MayTreatKP_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/MolePro_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/:
   checked_at: '2026-10-02T21:41:06Z'
   error: null
@@ -25135,6 +25227,11 @@ https://stars.renci.org/var/plater/bl-4.2.1/PHAROS_Automat/d3068b509bf17ff3/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/Reactome_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -25148,17 +25245,32 @@ https://stars.renci.org/var/plater/bl-4.2.1/STRING-DB_Automat/4ca5a0ce557e2c18/:
   ok: true
   source: cache
   status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/TMKP_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/:
   checked_at: '2026-10-02T21:41:06Z'
   error: null
   ok: true
   source: cache
   status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.1/ViralProteome_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/:
   checked_at: '2026-10-02T21:41:06Z'
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://stars.renci.org/var/plater/bl-4.2.6/CEBS_Automat/:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://stars.renci.org/var/translator/releases/alliance/2025_12_15/:
   checked_at: '2026-03-30T20:13:49Z'
@@ -29332,6 +29444,11 @@ https://www.ebi.ac.uk/ols4/api-docs:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://www.ebi.ac.uk/ols4/mcp:
+  checked_at: '2026-10-04T03:43:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://www.ebi.ac.uk/ols4/ontologies/oio:
   checked_at: '2026-10-02T21:41:40Z'

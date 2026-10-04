@@ -11,14 +11,16 @@ contacts:
   id: stringdb
   label: STRING/EMBL Team
 creation_date: '2025-11-17T00:00:00Z'
-description: STITCH (Search Tool for Interactions of Chemicals) is a database of known
-  and predicted interactions between chemicals and proteins across 2,031 organisms.
-  The resource integrates chemical-protein interactions from five main sources - genomic
-  context predictions, high-throughput experimental data, conserved co-expression
-  patterns, automated text mining, and curated knowledge from databases. STITCH covers
-  9.6 million proteins and 500,000 chemicals with 1.6 billion interactions, combining
-  direct physical and indirect functional associations. Version 5 was released in
-  2016 and is no longer actively maintained (marked as unsupported).
+description: 'STITCH (Search Tool for Interacting Chemicals) is a database of known
+  and predicted interactions between chemicals and proteins, from the STRING team.
+  Evidence comes from four channels: experiments (ChEMBL, PDSP Ki, PDB and large-scale
+  kinase-ligand screens), curated databases (DrugBank, GLIDA, Matador, TTD, CTD, KEGG,
+  NCI/Nature PID, Reactome and BioCyc), text mining (MEDLINE abstracts, PubMed Central
+  open-access full text, OMIM and NIH RePORTER grant abstracts) and structure-based
+  predictions, with transfer between organisms by orthology. Chemicals are derived
+  from PubChem and proteins from STRING. Version 5.0 (data from 2015, published 2016)
+  covers about 0.5 million chemicals and 9.6 million proteins in 2,031 organisms.
+  STITCH is no longer updated or supported.'
 domains:
 - drug discovery
 - systems biology
@@ -26,7 +28,7 @@ domains:
 homepage_url: http://stitch-db.org/
 id: stitch
 infores_id: stitch
-last_modified_date: '2026-01-15T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: http://stitch-db.org/download/STITCHacademiclicense.pdf
@@ -43,6 +45,40 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
@@ -53,6 +89,40 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
@@ -64,6 +134,40 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
@@ -685,6 +789,228 @@ products:
     source: probe-miner
   product_file_size: 20140191116
   product_url: https://molepro.s3.amazonaws.com/edges.tsv
+- category: ProgrammingInterface
+  description: MolePro API providing access to the knowledge graph of chemical entities
+    and biological targets
+  format: http
+  id: molepro.api
+  name: MolePro API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_url: https://molepro.transltr.io/molecular_data_provider/api
+- category: ProgrammingInterface
+  description: TRAPI-compliant interface for MolePro knowledge graph following the
+    Translator Reasoner API standard
+  format: http
+  id: molepro.trapi
+  name: MolePro TRAPI Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_url: https://molepro-trapi.transltr.io/molepro/trapi/v1.5/ui/
+- category: Product
+  description: Catalog of MolePro knowledge sources in JSON format
+  format: json
+  id: molepro.catalog
+  name: MolePro Knowledge Sources Catalog
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_file_size: 2127877
+  product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
 publications:
 - authors:
   - Damian Szklarczyk
@@ -699,6 +1025,26 @@ publications:
   title: 'STITCH 5: augmenting protein-chemical interaction networks with tissue and
     affinity data'
   year: '2016'
+- doi: 10.1093/nar/gkt1207
+  id: doi:10.1093/nar/gkt1207
+  journal: Nucleic Acids Research
+  title: 'STITCH 4: integration of protein-chemical interactions with user data'
+  year: '2014'
+- doi: 10.1093/nar/gkr1011
+  id: doi:10.1093/nar/gkr1011
+  journal: Nucleic Acids Research
+  title: 'STITCH 3: zooming in on protein-chemical interactions'
+  year: '2012'
+- doi: 10.1093/nar/gkp937
+  id: doi:10.1093/nar/gkp937
+  journal: Nucleic Acids Research
+  title: 'STITCH 2: an interaction network database for small molecules and proteins'
+  year: '2010'
+- doi: 10.1093/nar/gkm795
+  id: doi:10.1093/nar/gkm795
+  journal: Nucleic Acids Research
+  title: 'STITCH: interaction networks of chemicals and proteins'
+  year: '2007'
 taxon:
 - NCBITaxon:1
 warnings:

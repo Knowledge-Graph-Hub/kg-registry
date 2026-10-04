@@ -1770,6 +1770,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
     source: pr
   - relation_type: prov:hadPrimarySource
     source: reactome
@@ -1777,6 +1779,10 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: drugcentral
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
@@ -2651,7 +2657,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: gnps
   - relation_type: prov:hadPrimarySource
@@ -4843,6 +4849,281 @@ products:
   - relation_type: prov:hadPrimarySource
     source: brenda
   product_url: https://ftp.ebi.ac.uk/pub/databases/pmc/TextMinedTerms/
+- category: GraphProduct
+  description: Robokop KG (Automat)
+  format: kgx-jsonl
+  id: automat.robokopkg
+  name: robokopkg
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: robokop
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: drugmechdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
+- category: ProgrammingInterface
+  description: MolePro API providing access to the knowledge graph of chemical entities
+    and biological targets
+  format: http
+  id: molepro.api
+  name: MolePro API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_url: https://molepro.transltr.io/molecular_data_provider/api
+- category: ProgrammingInterface
+  description: TRAPI-compliant interface for MolePro knowledge graph following the
+    Translator Reasoner API standard
+  format: http
+  id: molepro.trapi
+  name: MolePro TRAPI Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_url: https://molepro-trapi.transltr.io/molepro/trapi/v1.5/ui/
+- category: Product
+  description: Catalog of MolePro knowledge sources in JSON format
+  format: json
+  id: molepro.catalog
+  name: MolePro Knowledge Sources Catalog
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: bigg
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembank
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: inxight-drugs
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: probe-miner
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  product_file_size: 2127877
+  product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
 publications:
 - authors:
   - Adnan Malik

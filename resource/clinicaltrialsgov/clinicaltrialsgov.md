@@ -1388,6 +1388,17 @@ products:
   - relation_type: prov:hadPrimarySource
     source: doid
   product_url: http://www.organchip.cn/
+- category: Product
+  description: Database of clinical studies linked to NIH-funded research projects
+  format: csv
+  id: nihreporter.clinicalstudies
+  name: NIH-Funded Project Clinical Studies
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://reporter.nih.gov/exporter/clinicalstudies
 publications:
 - authors:
   - Zarin DA

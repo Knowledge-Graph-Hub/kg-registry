@@ -1,12 +1,15 @@
 ---
 category: ProgrammingInterface
-description: REST API for ontology concepts, search, mappings, metrics, and downloads
+description: REST API for ontology concepts, search, mappings, metrics, and downloads.
+  Most endpoints require a free BioPortal API key.
 format: http
 id: bioportal.api
 name: BioPortal REST API
-product_url: http://data.bioontology.org/
-layout: product_detail
 original_source:
-  - source: bioportal
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: bioportal
+- relation_type: prov:hadPrimarySource
+  source: umls
+product_url: https://data.bioontology.org/
+layout: product_detail
 ---

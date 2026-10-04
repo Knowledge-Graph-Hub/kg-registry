@@ -86,6 +86,34 @@ products:
       - source: pubmed
         relation_type: prov:wasInfluencedBy
     product_url: https://biothings.transltr.io/biggim_drugresponse_kp/metadata
+  - category: GraphProduct
+    description: 'EHR Clinical Connections Automat: per-source KGX knowledge graph download
+      (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.ehr-clinical-connections
+    name: EHR_Clinical_Connections_Automat
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: automat
+    - relation_type: prov:hadPrimarySource
+      source: multiomics-kp
+    - relation_type: prov:wasInformedBy
+      source: ubergraph
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/EHR_Clinical_Connections_Automat/
+  - category: GraphProduct
+    description: 'EHR May Treat KP Automat: per-source KGX knowledge graph download
+      (Biolink 4.2.1).'
+    format: kgx-jsonl
+    id: automat.maytreatkp
+    name: MayTreatKP_Automat
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: automat
+    - relation_type: prov:hadPrimarySource
+      source: multiomics-kp
+    - relation_type: prov:wasInformedBy
+      source: ubergraph
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/MayTreatKP_Automat/
 creation_date: '2025-03-09T00:00:00Z'
 ---
 

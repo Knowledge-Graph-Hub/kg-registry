@@ -1843,6 +1843,30 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing biomedical ontologies
+    and mappings
+  format: http
+  id: bioportal.portal
+  name: BioPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://bioportal.bioontology.org/
+- category: ProgrammingInterface
+  description: REST API for ontology concepts, search, mappings, metrics, and downloads.
+    Most endpoints require a free BioPortal API key.
+  format: http
+  id: bioportal.api
+  name: BioPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://data.bioontology.org/
 publications:
 - authors:
   - Bodenreider O

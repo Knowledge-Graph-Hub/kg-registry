@@ -1,12 +1,13 @@
 ---
 category: ProgrammingInterface
-description: API access to NIH research project data and search functionality
+description: Public REST API (no key required) returning JSON for searching projects
+  (v2 projects endpoint) and project-linked publications
 format: http
 id: nihreporter.api
 name: NIH Reporter API
-product_url: https://reporter.nih.gov/
-layout: product_detail
 original_source:
-  - source: nihreporter
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: nihreporter
+product_url: https://api.reporter.nih.gov/
+layout: product_detail
 ---

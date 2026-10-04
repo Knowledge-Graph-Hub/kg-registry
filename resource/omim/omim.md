@@ -590,7 +590,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -667,7 +667,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -745,7 +745,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -822,7 +822,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -899,7 +899,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -977,7 +977,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -1054,7 +1054,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -1131,7 +1131,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -1208,7 +1208,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
-    source: pubmedcentral
+    source: pmc
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
@@ -3424,6 +3424,140 @@ products:
     HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
     (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search) responded
     normally.
+- category: Product
+  description: Web interface for searching and visualizing chemical-protein interactions
+    across organisms
+  format: http
+  id: stitch.portal
+  is_public: true
+  name: STITCH Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_url: http://stitch-db.org/
+- category: Product
+  description: Downloadable data files containing chemical-protein interaction networks
+  format: tsv
+  id: stitch.downloads
+  is_public: true
+  name: STITCH Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_url: http://stitch-db.org/cgi/download.pl
+- category: ProgrammingInterface
+  description: API for programmatic access to STITCH chemical-protein interaction
+    data
+  format: http
+  id: stitch.api
+  is_public: true
+  name: STITCH API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: matador
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 publications:
 - authors:
   - Joanna S Amberger

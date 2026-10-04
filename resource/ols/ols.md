@@ -11,7 +11,7 @@ contacts:
     id: ebi
     label: EMBL-EBI Samples, Phenotypes and Ontologies Team
 creation_date: '2025-10-30T00:00:00Z'
-description: The Ontology Lookup Service (OLS) is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions. Users can browse ontologies through the website and programmatically via the OLS API. Maintained by the Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI.
+description: The Ontology Lookup Service (OLS) is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions. Users can browse ontologies through the website and programmatically via the OLS REST API and an MCP server. As of 2026-09-30 it served 287 ontologies with about 10.8 million classes, loaded from the OBO Foundry registry plus ontologies curated by EMBL-EBI. Maintained by the Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI.
 domains:
   - biomedical
   - biological systems
@@ -19,7 +19,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/ols4/
 id: ols
 infores_id: ols
-last_modified_date: '2026-01-15T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 name: Ontology Lookup Service
 products:
@@ -44,42 +44,47 @@ products:
         relation_type: prov:hadPrimarySource
     is_public: true
   - category: Product
-    compression: gzip
-    description: Internal JSON representation of all loaded ontologies (approximately 50 GB uncompressed)
+    compression: targz
+    description: Gzipped tar archive (ontology_jsons.tgz, about 2 GB) of all ontologies loaded into OLS, in OLS JSON format.
     format: json
     id: ols.json
     name: OLS Ontologies JSON
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
-    original_source:
-      - source: ols
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    compression: tar
-    description: Neo4j database with linked ontology data including cross-references between ontologies and external databases (approximately 150 GB)
-    dump_format: neo4j
-    format: neo4j
-    id: ols.neo4j
-    name: OLS Neo4j Database
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
     original_source:
       - source: ols
         relation_type: prov:hadPrimarySource
   - category: Product
-    compression: tar
-    description: Solr search index database for ontology searching (requires Solr 9.0.0)
-    id: ols.solr
-    name: OLS Solr Database
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
-    original_source:
-      - source: ols
-        relation_type: prov:hadPrimarySource
+    compression: targz
+    description: Gzipped tar archive (ontology_jsons_linked.tgz) of OLS ontology JSON with added cross-ontology and external database links.
+    format: json
+    id: ols.json-linked
+    name: OLS Linked Ontology JSON
+    original_source: &id001
+      - relation_type: prov:hadPrimarySource
+        source: ols
+    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
+  - category: Product
+    description: Precomputed ontology term embeddings (full, PCA and UMAP projections) from multiple language models, used for semantic search in OLS.
+    format: parquet
+    id: ols.embeddings
+    name: OLS Term Embeddings
+    original_source: *id001
+    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/
+  - category: ProgrammingInterface
+    description: Model Context Protocol (MCP) server for querying OLS from AI assistants over Streamable HTTP.
+    format: http
+    id: ols.mcp
+    is_public: true
+    name: OLS MCP Server
+    original_source: *id001
+    product_url: https://www.ebi.ac.uk/ols4/mcp
   - category: MappingProduct
-    compression: gzip
+    compression: targz
     description: Ontology mappings extracted from all ontologies in SSSOM TSV format
-    format: tsv
+    format: sssom
     id: ols.mappings
     name: OLS SSSOM Mappings
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
     original_source:
       - source: ols
         relation_type: prov:hadPrimarySource
@@ -100,6 +105,9 @@ repository: https://github.com/EBISPOT/ols4
 synonyms:
   - OLS
   - OLS4
+license:
+  id: https://www.apache.org/licenses/LICENSE-2.0
+  label: Apache License 2.0 (software; loaded ontologies carry their own licenses)
 ---
 
 # Ontology Lookup Service
@@ -131,7 +139,7 @@ The service provides:
 - **REST API**: Comprehensive programmatic access to all ontology data
 - **Search Capabilities**: Full-text search with exact match and obsolete term options
 - **Cross-References**: Linked data between different ontologies and external databases
-- **Multiple Formats**: Data available in JSON, Neo4j, Solr, and SSSOM formats
+- **Multiple Formats**: Data available as OLS JSON, linked JSON, SSSOM mappings and term embeddings
 - **Regular Updates**: Continuous integration of latest ontology versions
 - **SSSOM Mappings**: Standardized ontology-to-ontology mappings
 
@@ -140,7 +148,7 @@ The service provides:
 - **Web Portal**: Browse and search through https://www.ebi.ac.uk/ols4/
 - **REST API**: Programmatic access documented at https://www.ebi.ac.uk/ols4/api-docs
 - **FTP Downloads**: Data dumps available at https://ftp.ebi.ac.uk/pub/databases/spot/ols/
-- **Database Exports**: Neo4j and Solr databases for local deployment
+- **MCP Server**: Model Context Protocol access for AI assistants
 - **MCP Server**: Model Context Protocol server for AI integration
 
 ## Data Formats
@@ -149,8 +157,7 @@ OLS provides data in multiple formats:
 
 1. **JSON**: Internal ontology representation (~50 GB uncompressed)
 2. **Linked JSON**: With cross-references added (~150 GB uncompressed)
-3. **Neo4j**: Graph database format (requires Neo4j community 2025.03.0)
-4. **Solr**: Search index database (requires Solr 9.0.0)
+3. **Embeddings**: Precomputed term embeddings in Parquet format
 5. **SSSOM**: Standard Simple Standard for Ontology Mappings format
 
 ## Use Cases
@@ -199,4 +206,4 @@ OLS has been supported by:
 
 ## Citation
 
-Please cite: OLS4: a new Ontology Lookup Service for a growing interdisciplinary knowledge ecosystem. *Bioinformatics*, Volume 41, Issue 5, May 2025, btaf279. PMID: 39913645
+Please cite: OLS4: a new Ontology Lookup Service for a growing interdisciplinary knowledge ecosystem. *Bioinformatics*, Volume 41, Issue 5, May 2025, btaf279. PMID: 40323307

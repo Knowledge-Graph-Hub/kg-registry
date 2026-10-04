@@ -7,6 +7,10 @@ name: NIH-Funded Publications Link Tables
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nihreporter
+- relation_type: prov:hadPrimarySource
+  source: pubmed
+- relation_type: prov:hadPrimarySource
+  source: pmc
 product_url: https://reporter.nih.gov/exporter/linktables
 layout: product_detail
 ---
