@@ -4127,6 +4127,15 @@ entries:
     source_path: resource/kisao/kisao.md
     status: valid
     warnings: []
+  resource/klocd/klocd.md#publication[0]#DOI:10.3390/bioengineering9110685:
+    checked_at: '2026-10-04T02:16:12Z'
+    errors: []
+    fingerprint: a2492903e913cb8dcb417aa5a45285f8aafad46f647b7f5da34fc191ab3d16aa
+    publication_index: 0
+    reference_id: DOI:10.3390/bioengineering9110685
+    source_path: resource/klocd/klocd.md
+    status: valid
+    warnings: []
   resource/knowwheregraph/knowwheregraph.md#publication[0]#ARXIV:2502.13874:
     checked_at: '2026-06-22T16:43:23Z'
     errors: []
