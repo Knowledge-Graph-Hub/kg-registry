@@ -13,6 +13,7 @@ original_source:
   source: gff
 - relation_type: prov:hadPrimarySource
   source: so
+product_file_size: 17111
 product_url: https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md
 layout: product_detail
 ---

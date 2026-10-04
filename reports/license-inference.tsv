@@ -36,7 +36,6 @@ cfde-gse	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	pe
 chea-kg	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial	https://www.gtexportal.org/home/license	custom	gtex	tcga
 ciel	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 circbase	Aggregator	no-upstream	http://www.circbase.org/	custom				
-ckg	KnowledgeGraph	conflict	https://opensource.org/licenses/MIT	permissive	https://www.cancergenomeinterpreter.org/conditions#license	custom	cancer-genome-interpreter|disgenet|snomedct	mutationds|oncokb|phosphositeplus|refseq|smpdb
 cl-kg	KnowledgeGraph	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	http://creativecommons.org/licenses/by/4.0/	permissive	cellxgene|cl	
 climatemodelskg	KnowledgeGraph	unresolved						
 clinical-data-kp	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial				
@@ -77,8 +76,7 @@ forum	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	per
 gene-expression-atlas-okn	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	expressionatlas	
 gene-expression-omnibus	Aggregator	no-upstream						
 genecards	Aggregator	conflict	https://www.lifemapsc.com/genecards-suite-terms-of-use/	non-commercial	https://www.alliancegenome.org/privacy-warranty-licensing	custom	alliance|biocyc|cosmic|ctd|disgenet|gtex|iid|innatedb|medgen|snomedct|umls	5srrnadb|aminode|biogps|bitterdb|cdd|dbsuper|dgv|ena|epd|fabric|gard|geneorganizer|genomernai|gtrnadb|icd10|icd11|lncbase|lncbook|lncrnadisease|malacards|medlineplus|mirgenedb|mirtarbase|modomics|panther|paxdb|pdb|pid|pirsf|proteomicsdb|proteopedia|refseq|rgd|scop|sfld|silva|simap|smart|snodb|snopy|srpdb|tair|tarbase|treefam|ucnebase|vista
-genetics-kp	KnowledgeGraph	unresolved						
-geneticskp	KnowledgeGraph	inferred			https://opensource.org/license/mit/	permissive	translator	
+genetics-kp	KnowledgeGraph	inferred			https://opensource.org/license/mit/	permissive	translator	genebass
 genomickb	KnowledgeGraph	conflict	https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome#modal-licence-preview	non-commercial	https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal	custom	4dn|gtex	dbsuper|dgv|endb|enhanceratlas|epd
 genophenoenvo-kg	KnowledgeGraph	declared	https://opensource.org/licenses/BSD-3-Clause	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	go|peco|po|to	tair
 geoconnex	KnowledgeGraph	declared	https://creativecommons.org/publicdomain/zero/1.0/	public domain	U.S. federal government public domain	public domain	usgs-nhd|usgs-nwis	
@@ -139,8 +137,7 @@ micromap	KnowledgeGraph	conflict	https://opensource.org/license/mit/	permissive	
 mind	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://ctdbase.org/about/legal.jsp	custom	mechreponet|umls	
 mint	Aggregator	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	mi	
 mirbase	Aggregator	no-upstream	https://creativecommons.org/publicdomain/zero/1.0/	public domain				
-molecular-data-kp	KnowledgeGraph	conflict	https://opensource.org/licenses/MIT	permissive	http://bigg.ucsd.edu/license#license	custom	bigg|cmap|ctd|depmap|msigdb|unichem	chembank|ctrp|kinomescan|rxnorm
-molepro	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	http://bigg.ucsd.edu/license#license	custom	bigg|cmap|ctd|depmap|msigdb	chembank|ctrp|genetics-kp|kinomescan|rxnorm
+molepro	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	http://bigg.ucsd.edu/license#license	custom	bigg|cmap|ctd|depmap|msigdb|unichem	chembank|ctrp|kinomescan|rxnorm
 monarchinitiative	Aggregator	no-upstream						
 mousemine	Aggregator	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	mgi	
 multiomics-kp	KnowledgeGraph	inferred			https://www.gtexportal.org/home/license	custom	gtex	dailymed|faers|tcga
@@ -174,7 +171,7 @@ pdbe	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permiss
 petagraph	KnowledgeGraph	declared	https://www.nlm.nih.gov/databases/umls.html	custom	https://www.gtexportal.org/home/license	custom	gtex|ubkg|umls	lincs
 pharmdb	KnowledgeGraph	inferred			https://ctdbase.org/about/legal.jsp	custom	ctd|dip	dcdb|gad
 pharmebinet	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://dip.doe-mbi.ucla.edu/dip/Download.cgi	custom	ctd|disgenet|hippie|iid|ptmd	adrecs|atc|ddinter|med-rt|ndfrt|qptm|refseq|rnadisease|rnainter|smpdb
-pharmkg	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial	drugbank|omim|sider|ttd	biogps|connectivitymap
+pharmkg	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://clue.io/connectopedia/terms	custom	cmap	biogps
 pharos	Aggregator	no-upstream						
 phaseskg	KnowledgeGraph	no-upstream						
 pheknowlator	KnowledgeGraph	conflict	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://www.bioontology.org/terms/	custom	bioportal|ctd|disgenet|medgen	
@@ -223,7 +220,7 @@ toxin	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	pe
 translator	Aggregator	conflict	https://opensource.org/license/mit/	permissive	https://www.ebi.ac.uk/about/terms-of-use/	custom	alliance|ctd|gene2phenotype|goa|icees-kg|semmeddb	cohd|panther
 ttd	Aggregator	conflict	https://idrblab.org/ttd/	non-commercial	https://www.kegg.jp/feedback/copyright.html	custom	kegg	
 ubergraph	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
-ubkg	KnowledgeGraph	declared	https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf	custom	https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal	custom	4dn|disgenet|gtex|loinc|msigdb|snomedct|umls	connectivitymap|glycocoo|glycordf|icd10|kidsfirst|lincs|mw|npo|pgo|sckan|sennet
+ubkg	KnowledgeGraph	declared	https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf	custom	https://clue.io/connectopedia/terms	custom	4dn|cmap|disgenet|gtex|loinc|msigdb|snomedct|umls	glycocoo|glycordf|icd10|kidsfirst|lincs|mw|npo|pgo|sckan|sennet
 uf-okn	KnowledgeGraph	inferred			Open Database License (ODbL) 1.0	copyleft	openstreetmap	
 umls	Aggregator	no-upstream	https://uts.nlm.nih.gov/uts/	custom				
 unibiomap	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://ctdbase.org/about/legal.jsp	custom	ctd|kegg|medgen|umls|unichem	batman|phosphositeplus|smpdb|tcdb

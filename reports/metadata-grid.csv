@@ -118,7 +118,6 @@ cio,active,PASS
 circbase,active,PASS
 cito,active,PASS
 civic,active,PASS
-ckg,active,PASS
 cl,active,PASS
 cl-kg,active,PASS
 clao,active,PASS
@@ -211,8 +210,6 @@ drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
 drugmechdb,active,PASS
-drugrephub,active,PASS
-dsstox,active,PASS
 dsstoxdb,active,PASS
 duo,active,PASS
 ebrains,active,PASS
@@ -321,7 +318,6 @@ genemania,active,PASS
 geneorganizer,active,PASS
 genepio,active,PASS
 genetics-kp,active,PASS
-geneticskp,active,PASS
 geno,active,PASS
 genomernai,active,PASS
 genomickb,active,PASS
@@ -513,7 +509,6 @@ mmrrc,active,PASS
 mmusdv,active,PASS
 mod,active,PASS
 modomics,active,PASS
-molecular-data-kp,active,PASS
 molepro,active,PASS
 monarchinitiative,active,PASS
 mondo,active,PASS
@@ -920,7 +915,6 @@ ceph,inactive,PASS
 chembank,inactive,PASS
 chemid,inactive,PASS
 cmf,inactive,PASS
-connectivitymap,inactive,PASS
 coralkinome,inactive,PASS
 cord-19,inactive,PASS
 courage,orphaned,PASS
