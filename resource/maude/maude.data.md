@@ -9,6 +9,8 @@ name: MAUDE Database and Downloadable Data Files
 original_source:
 - relation_type: prov:hadPrimarySource
   source: maude
+- relation_type: prov:hadPrimarySource
+  source: openfda
 product_url: https://open.fda.gov/apis/device/event/
 layout: product_detail
 ---
