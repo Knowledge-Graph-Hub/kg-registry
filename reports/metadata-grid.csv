@@ -617,6 +617,7 @@ open-tree-of-life,active,PASS
 openalex,active,PASS
 openbiodiv,active,PASS
 opendataphilly,active,PASS
+openfda,active,PASS
 openfema,active,PASS
 opengwas,active,PASS
 openpredict,active,PASS
@@ -826,6 +827,7 @@ text-mining-kp,active,PASS
 tiga,active,PASS
 tissues,active,PASS
 to,active,PASS
+togows,active,PASS
 topmed,active,PASS
 tox21,active,PASS
 toxcast,active,PASS

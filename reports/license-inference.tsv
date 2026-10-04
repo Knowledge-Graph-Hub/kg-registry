@@ -161,6 +161,7 @@ omnipath	Aggregator	no-upstream
 onco	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://www.ebi.ac.uk/about/terms-of-use	custom	europepmc	pdb
 ontology-kp	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	ubergraph	
 openbiodiv	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/3.0/	permissive	doco|gbif|proton|skos	fabio
+openfda	Aggregator	declared	https://open.fda.gov/license/	public domain	https://www.usa.gov/government-works	public domain	fda-orange-book|maude|ndcd	faers|unii
 openpredict	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	https://www.kegg.jp/feedback/copyright.html	custom	kegg	
 opentargets	KnowledgeGraph	no-upstream	https://www.apache.org/licenses/LICENSE-2.0	permissive				
 oregano	KnowledgeGraph	inferred			https://ctdbase.org/about/legal.jsp	custom	ctd|umls	cmaup|npass
@@ -216,6 +217,7 @@ tbkg	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permis
 tera	KnowledgeGraph	declared	https://opensource.org/licenses/MIT	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	chebi|mesh	
 text-mining-kp	KnowledgeGraph	inferred			https://opensource.org/license/mit/	permissive	translator	
 tissues	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
+togows	Aggregator	inferred			https://www.kegg.jp/feedback/copyright.html	custom	kegg	ena|pdb
 toxin	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 translator	Aggregator	conflict	https://opensource.org/license/mit/	permissive	https://www.ebi.ac.uk/about/terms-of-use/	custom	alliance|ctd|gene2phenotype|goa|icees-kg|semmeddb	cohd|panther
 ttd	Aggregator	conflict	https://idrblab.org/ttd/	non-commercial	https://www.kegg.jp/feedback/copyright.html	custom	kegg	

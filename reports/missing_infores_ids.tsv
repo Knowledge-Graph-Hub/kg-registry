@@ -540,6 +540,7 @@ ontoneo	Obstetric and Neonatal Ontology	Ontology	https://ontoneo.com/	resource/o
 oostt	Ontology of Organizational Structures of Trauma centers and Trauma systems	Ontology	https://github.com/OOSTT/OOSTT	resource/oostt/oostt.md
 openalex	OpenAlex	DataSource	https://openalex.org/	resource/openalex/openalex.md
 opendataphilly	OpenDataPhilly	DataSource	https://opendataphilly.org/	resource/opendataphilly/opendataphilly.md
+openfda	openFDA	Aggregator	https://open.fda.gov/	resource/openfda/openfda.md
 openfema	OpenFEMA	DataSource	https://www.fema.gov/about/openfema	resource/openfema/openfema.md
 opengwas	IEU OpenGWAS	DataSource	https://opengwas.io/	resource/opengwas/opengwas.md
 openstreetmap	OpenStreetMap	DataSource	https://www.openstreetmap.org/	resource/openstreetmap/openstreetmap.md
@@ -726,6 +727,7 @@ tfacts	TFactS	DataSource	http://www.tfacts.org/	resource/tfacts/tfacts.md
 tgma	Mosquito gross anatomy ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/tgma/tgma.md
 tmrnawebsite	The tmRNA Website	DataSource	https://rnacentral.org/expert-database/tmrna-website	resource/tmrnawebsite/tmrnawebsite.md
 to	Plant Trait Ontology	Ontology	http://browser.planteome.org/amigo	resource/to/to.md
+togows	TogoWS	Aggregator	http://togows.org/	resource/togows/togows.md
 tox21	Tox21 (Toxicology in the 21st Century)	DataSource	https://tox21.gov/	resource/tox21/tox21.md
 toxcast	ToxCast	DataSource	https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast	resource/toxcast/toxcast.md
 toxin	TOXIN	KnowledgeGraph	https://toxin-search.netlify.app/	resource/toxin/toxin.md

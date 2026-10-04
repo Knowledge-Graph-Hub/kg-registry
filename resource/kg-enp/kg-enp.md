@@ -108,6 +108,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+    when accessing file'
 - category: ProcessProduct
   description: Full ENPKG workflow repository for generating experimental natural
     products knowledge graphs from metabolomics datasets.

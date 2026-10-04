@@ -8034,6 +8034,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
     description: Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki
@@ -10161,6 +10163,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -17995,6 +17999,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
 - activity_status: active
   category: KnowledgeGraph
@@ -18135,6 +18141,8 @@ resources:
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
 - activity_status: active
@@ -24246,6 +24254,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -27515,6 +27527,8 @@ resources:
     product_url: https://biothings.io/specs/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 204 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: https://biothings.ncats.io/gtrx/query
@@ -34084,6 +34098,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: ProcessProduct
     description: Python package that interrogates single-cell transcriptomics data
       against the CellPhoneDB database to statistically infer enriched ligand-receptor
@@ -39670,6 +39686,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -39713,6 +39731,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -42382,6 +42402,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -42607,6 +42629,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
       when accessing file'
   - category: GraphProduct
     description: Integrated rare-disease knowledge graph produced by the RD-Clust
@@ -42898,6 +42922,8 @@ resources:
       source: unichem
     - relation_type: prov:hadPrimarySource
       source: faers
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://mps.csb.pitt.edu/
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
@@ -51124,6 +51150,8 @@ resources:
       source: pubchem
     - relation_type: prov:hadPrimarySource
       source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
   publications:
@@ -71260,6 +71288,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 500 error
+      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -72919,6 +72949,42 @@ resources:
       source: wikidata
     - relation_type: prov:wasInfluencedBy
       source: wikipathways
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - S. T. Sherry
@@ -81033,6 +81099,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -94499,6 +94569,8 @@ resources:
       source: unichem
     - relation_type: prov:hadPrimarySource
       source: faers
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://mps.csb.pitt.edu/
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
@@ -96182,6 +96254,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -96225,6 +96299,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -97212,6 +97288,8 @@ resources:
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -104560,6 +104638,42 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wormbase
     product_url: https://www.genecards.org/
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - Burgin J
@@ -112802,6 +112916,8 @@ resources:
       source: pubchem
     - relation_type: prov:hadPrimarySource
       source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
   - category: ProgrammingInterface
@@ -115288,10 +115404,60 @@ resources:
       source: unichem
     - relation_type: prov:hadPrimarySource
       source: faers
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://mps.csb.pitt.edu/
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
       the commercial successor platform; the Pitt-hosted portal is no longer available.
+  - category: ProgrammingInterface
+    connection_url: https://api.fda.gov/
+    description: JSON REST APIs (Elasticsearch query syntax) for FDA drug, device,
+      food, animal and veterinary, cosmetic, tobacco and other datasets, including
+      drug adverse events (FAERS), device adverse events (MAUDE), the National Drug
+      Code directory, the Orange Book, UNII substance data, labeling, recalls and
+      enforcement reports.
+    format: http
+    id: openfda.apis
+    is_public: true
+    name: openFDA APIs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/apis/
+  - category: Product
+    compression: zip
+    description: Bulk downloads of every openFDA endpoint as zipped JSON files, split
+      into partitions for large datasets such as drug adverse events (FAERS) and device
+      adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json
+      listing each endpoint's export date and file partitions.
+    format: json
+    id: openfda.downloads
+    name: openFDA Bulk Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/data/downloads/
   synonyms:
   - AEMS
   - FDA Adverse Event Monitoring System
@@ -117494,6 +117660,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: FDA Orange Book preface describing publication structure, therapeutic
       equivalence codes, and interpretation of Orange Book listings.
@@ -117506,6 +117674,8 @@ resources:
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
   - category: Product
     description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
@@ -117521,6 +117691,54 @@ resources:
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: fda-orange-book
+  - category: ProgrammingInterface
+    connection_url: https://api.fda.gov/
+    description: JSON REST APIs (Elasticsearch query syntax) for FDA drug, device,
+      food, animal and veterinary, cosmetic, tobacco and other datasets, including
+      drug adverse events (FAERS), device adverse events (MAUDE), the National Drug
+      Code directory, the Orange Book, UNII substance data, labeling, recalls and
+      enforcement reports.
+    format: http
+    id: openfda.apis
+    is_public: true
+    name: openFDA APIs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/apis/
+  - category: Product
+    compression: zip
+    description: Bulk downloads of every openFDA endpoint as zipped JSON files, split
+      into partitions for large datasets such as drug adverse events (FAERS) and device
+      adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json
+      listing each endpoint's export date and file partitions.
+    format: json
+    id: openfda.downloads
+    name: openFDA Bulk Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/data/downloads/
   synonyms:
   - Approved Drug Products with Therapeutic Equivalence Evaluations
   - Orange Book
@@ -135127,6 +135345,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
   publications:
   - authors:
     - Mingxun Wang
@@ -141739,6 +141959,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -141782,6 +142004,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -147981,6 +148205,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+      when accessing file'
   publications:
   - authors:
     - Mallory J. Owen
@@ -148061,6 +148287,11 @@ resources:
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
       Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: Product
     description: Gut microbe associations with disorders and interventions derived
       from re-annotated raw sequencing data in gutMDisorder v2.0, as an Excel workbook
@@ -148073,6 +148304,11 @@ resources:
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
@@ -165825,6 +166061,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -165868,6 +166106,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -167924,6 +168164,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -177073,6 +177315,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2026-09-21: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
       context layer, curation model, and use in grounding clinical AI.
@@ -181704,6 +181948,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -182896,6 +183144,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Noemi del Toro
@@ -190618,6 +190868,42 @@ resources:
       source: reactome
     product_file_size: 42574
     product_url: https://ctdbase.org/reports/CTD_pathways.tsv.gz
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - Minoru Kanehisa
@@ -190965,6 +191251,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
   category: KnowledgeGraph
@@ -191199,6 +191487,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
       when accessing file'
   - category: ProcessProduct
     description: Full ENPKG workflow repository for generating experimental natural
@@ -191462,6 +191752,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -191910,7 +192202,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-03T22:59:37Z'
+  last_modified_date: '2026-10-04T00:13:03Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -200043,6 +200335,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
   publications:
   - authors:
     - Adriano Rutz
@@ -202655,7 +202949,7 @@ resources:
   - pharmacovigilance
   homepage_url: https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database
   id: maude
-  last_modified_date: '2026-09-23T00:00:00Z'
+  last_modified_date: '2026-10-03T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.usa.gov/government-works
@@ -202672,6 +202966,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: maude
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://open.fda.gov/apis/device/event/
   - category: GraphProduct
     description: RDF knowledge graph constructed from FDA MAUDE medical-device adverse
@@ -202685,6 +202981,54 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: maude
     product_url: https://frink.renci.org/maudekg
+  - category: ProgrammingInterface
+    connection_url: https://api.fda.gov/
+    description: JSON REST APIs (Elasticsearch query syntax) for FDA drug, device,
+      food, animal and veterinary, cosmetic, tobacco and other datasets, including
+      drug adverse events (FAERS), device adverse events (MAUDE), the National Drug
+      Code directory, the Orange Book, UNII substance data, labeling, recalls and
+      enforcement reports.
+    format: http
+    id: openfda.apis
+    is_public: true
+    name: openFDA APIs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/apis/
+  - category: Product
+    compression: zip
+    description: Bulk downloads of every openFDA endpoint as zipped JSON files, split
+      into partitions for large datasets such as drug adverse events (FAERS) and device
+      adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json
+      listing each endpoint's export date and file partitions.
+    format: json
+    id: openfda.downloads
+    name: openFDA Bulk Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/data/downloads/
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -210033,6 +210377,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -215681,6 +216027,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -218858,6 +219208,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -218899,6 +219252,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -218940,6 +219296,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -218981,6 +219340,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -219022,6 +219384,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -223925,6 +224290,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+      when accessing file'
   - category: ProcessProduct
     description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
       and contraindications data and processing code
@@ -224684,6 +225051,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -224727,6 +225096,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -234339,6 +234710,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -235015,6 +235388,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -235594,6 +235969,42 @@ resources:
       source: cosmic
     product_file_size: 3873087
     product_url: https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - Donna Maglott
@@ -238617,7 +239028,7 @@ resources:
   homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
   id: ndcd
   infores_id: ndcd
-  last_modified_date: '2026-09-16T00:00:00Z'
+  last_modified_date: '2026-10-03T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.fda.gov/about-fda/about-website/website-policies
@@ -238668,6 +239079,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://open.fda.gov/apis/drug/ndc/
   - category: Product
     description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
@@ -238721,6 +239134,54 @@ resources:
       source: unii
     - relation_type: prov:wasInformedBy
       source: ndcd
+  - category: ProgrammingInterface
+    connection_url: https://api.fda.gov/
+    description: JSON REST APIs (Elasticsearch query syntax) for FDA drug, device,
+      food, animal and veterinary, cosmetic, tobacco and other datasets, including
+      drug adverse events (FAERS), device adverse events (MAUDE), the National Drug
+      Code directory, the Orange Book, UNII substance data, labeling, recalls and
+      enforcement reports.
+    format: http
+    id: openfda.apis
+    is_public: true
+    name: openFDA APIs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/apis/
+  - category: Product
+    compression: zip
+    description: Bulk downloads of every openFDA endpoint as zipped JSON files, split
+      into partitions for large datasets such as drug adverse events (FAERS) and device
+      adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json
+      listing each endpoint's export date and file partitions.
+    format: json
+    id: openfda.downloads
+    name: openFDA Bulk Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/data/downloads/
   synonyms:
   - NDC
   - NDCD
@@ -241034,6 +241495,9 @@ resources:
     product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
   - category: GraphProduct
@@ -249653,6 +250117,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -253675,6 +254141,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -254191,6 +254659,42 @@ resources:
       source: omim
     product_file_size: 1512711
     product_url: https://ctdbase.org/reports/CTD_diseases.obo.gz
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - Joanna S Amberger
@@ -255228,6 +255732,8 @@ resources:
       source: pubchem
     - relation_type: prov:hadPrimarySource
       source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
   - category: GraphProduct
@@ -256248,6 +256754,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
   publications:
   - authors:
     - Hinchliff CE
@@ -256400,6 +256908,8 @@ resources:
       source: pubchem
     - relation_type: prov:hadPrimarySource
       source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
   publications:
@@ -256609,6 +257119,195 @@ resources:
     secondary_source:
     - relation_type: prov:wasInfluencedBy
       source: opendataphilly
+- activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: open@fda.hhs.gov
+    - contact_type: url
+      value: https://open.fda.gov/
+    label: openFDA, U.S. Food and Drug Administration
+  creation_date: '2026-10-03T00:00:00Z'
+  description: openFDA is the U.S. Food and Drug Administration's platform for public
+    access to FDA datasets through Elasticsearch-based JSON APIs and bulk downloads.
+    It covers drugs, devices, foods, animal and veterinary products, cosmetics and
+    tobacco, serving adverse event reports (FAERS for drugs, MAUDE for devices, CAERS
+    for foods), product labeling, recalls and enforcement reports, the National Drug
+    Code directory, Drugs@FDA, the Orange Book, drug shortages, device 510(k), PMA,
+    classification, registration and UDI data, and substance and UNII data.
+  domains:
+  - pharmacovigilance
+  - pharmacology
+  - public health
+  - biomedical
+  - clinical
+  - food
+  - nutrition
+  homepage_url: https://open.fda.gov/
+  id: openfda
+  last_modified_date: '2026-10-03T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://open.fda.gov/license/
+    label: CC0 1.0 Universal
+  name: openFDA
+  products:
+  - category: ProgrammingInterface
+    connection_url: https://api.fda.gov/
+    description: JSON REST APIs (Elasticsearch query syntax) for FDA drug, device,
+      food, animal and veterinary, cosmetic, tobacco and other datasets, including
+      drug adverse events (FAERS), device adverse events (MAUDE), the National Drug
+      Code directory, the Orange Book, UNII substance data, labeling, recalls and
+      enforcement reports.
+    format: http
+    id: openfda.apis
+    is_public: true
+    name: openFDA APIs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/apis/
+  - category: Product
+    compression: zip
+    description: Bulk downloads of every openFDA endpoint as zipped JSON files, split
+      into partitions for large datasets such as drug adverse events (FAERS) and device
+      adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json
+      listing each endpoint's export date and file partitions.
+    format: json
+    id: openfda.downloads
+    name: openFDA Bulk Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/data/downloads/
+  - category: GraphicalInterface
+    description: openFDA website with API documentation, interactive query explorers
+      and dataset overviews for each endpoint.
+    format: http
+    id: openfda.portal
+    name: openFDA Website
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    product_url: https://open.fda.gov/
+  - category: Product
+    description: The MAUDE medical device adverse event reports, accessible through
+      the searchable web database and as downloadable data files, including via the
+      openFDA device adverse event API endpoint.
+    format: http
+    id: maude.data
+    name: MAUDE Database and Downloadable Data Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    product_url: https://open.fda.gov/apis/device/event/
+  - category: GraphicalInterface
+    description: MPS-Db web portal for browsing, analyzing and sharing microphysiology
+      system study data alongside reference compound, bioactivity, preclinical and
+      clinical data drawn from ChEMBL, PubChem, DrugBank, UniChem and FAERS (via OpenFDA).
+    format: http
+    id: mps-db.portal
+    name: MPS-Db Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mps-db
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: drugbank
+    - relation_type: prov:hadPrimarySource
+      source: unichem
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    product_url: https://mps.csb.pitt.edu/
+    warnings:
+    - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
+      the commercial successor platform; the Pitt-hosted portal is no longer available.
+  - category: ProgrammingInterface
+    description: REST API providing programmatic access to National Drug Code data
+      through the openFDA platform
+    format: http
+    id: ndcd.api
+    name: NDC API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    product_url: https://open.fda.gov/apis/drug/ndc/
+  - category: GraphProduct
+    description: Every OnCo record in one JSON file, each with its plain-English summary,
+      technical summary, dated facts, relationship fields and source links.
+    format: json
+    id: onco.all_json
+    name: OnCo full corpus (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: onco
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: europepmc
+    - relation_type: prov:hadPrimarySource
+      source: openalex
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    product_file_size: 31490277
+    product_url: https://onco.cc/api/v1/all.json
+  publications:
+  - authors:
+    - Taha A Kass-Hout
+    - Zhiheng Xu
+    - Matthew Mohebbi
+    - Hans Nelsen
+    - Adam Baker
+    - Jonathan Levine
+    - Elaine Johanson
+    - Roselie A Bright
+    doi: 10.1093/jamia/ocv153
+    id: doi:10.1093/jamia/ocv153
+    journal: Journal of the American Medical Informatics Association
+    preferred: true
+    title: 'OpenFDA: an innovative platform providing access to a wealth of FDA''s
+      publicly available data'
+    year: '2016'
+  repository: https://github.com/FDA/openfda
+  synonyms:
+  - OpenFDA
 - activity_status: active
   category: DataSource
   contacts:
@@ -260341,6 +261040,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -269226,8 +269927,46 @@ resources:
       source: pubchem
     - relation_type: prov:hadPrimarySource
       source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - wwPDB consortium
@@ -274023,6 +274762,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -292442,6 +293183,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: MarkerDB API documentation and endpoint examples for condition, chemical,
       genetic, protein, and karyotype biomarker records.
@@ -293605,6 +294348,8 @@ resources:
       source: pubchem
     - relation_type: prov:hadPrimarySource
       source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
   - category: GraphicalInterface
@@ -293627,6 +294372,8 @@ resources:
       source: unichem
     - relation_type: prov:hadPrimarySource
       source: faers
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://mps.csb.pitt.edu/
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
@@ -294673,6 +295420,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 500 error
+      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -295606,6 +296355,42 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pmc
     product_url: https://www.ebi.ac.uk/europepmc/webservices/rest/
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - Eric W Sayers
@@ -298202,6 +298987,8 @@ resources:
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
       to URL'
   - category: GraphProduct
     compression: tar
@@ -304807,6 +305594,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -334969,6 +335758,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
       30+ environmental and geospatial data layers accessible through SPARQL endpoint
@@ -339606,6 +340397,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -339649,6 +340442,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -344770,6 +345565,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -345853,6 +346650,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -348637,6 +349436,127 @@ resources:
   repository: https://github.com/Planteome/plant-trait-ontology
   taxon:
   - NCBITaxon:33090
+- activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: http://dbcls.rois.ac.jp/en/contact
+    label: Database Center for Life Science (DBCLS)
+  - category: Individual
+    contact_details:
+    - contact_type: url
+      value: http://togows.org/
+    label: Toshiaki Katayama
+  creation_date: '2026-10-03T00:00:00Z'
+  description: TogoWS is a set of uniform REST web services from the Database Center
+    for Life Science (DBCLS, Japan) for retrieving, searching and converting entries
+    from major bioinformatics databases, including UniProt, ENA, DDBJ, NCBI Nucleotide,
+    NCBI Gene, dbSNP, PubMed, PDB, OMIM and KEGG, plus a REST API over the UCSC Genome
+    Browser databases. Entries are fetched from the upstream databases on request
+    and returned in formats such as JSON, Turtle, XML, GFF and FASTA. It was originally
+    built to unify the REST and SOAP services of NCBI, EBI, DDBJ, PDB and KEGG.
+  domains:
+  - genomics
+  - biomedical
+  - software
+  - information technology
+  homepage_url: http://togows.org/
+  id: togows
+  last_modified_date: '2026-10-03T00:00:00Z'
+  layout: resource_detail
+  license:
+    display_note: 'No license is declared for this resource. This is the most restrictive
+      license (custom) among its sources: kegg. Not accounted for, no known license:
+      ena, pdb.'
+    id: https://www.kegg.jp/feedback/copyright.html
+    inferred_from:
+    - kegg
+    label: By request
+    restrictiveness: custom
+    status: inferred
+    unresolved_sources:
+    - ena
+    - pdb
+  name: TogoWS
+  products:
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/api/ucsc
+    description: REST API over the public UCSC Genome Browser MySQL databases, for
+      listing genome assemblies, tables and columns, querying table rows by column
+      values, and retrieving genomic sequence ranges.
+    format: http
+    id: togows.ucsc-api
+    is_public: true
+    name: TogoWS UCSC API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: ucsc
+    product_url: http://togows.org/help/
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/convert/
+    description: REST service (HTTP POST) for converting between sequence, alignment
+      and annotation formats such as GenBank, EMBL/ENA, DDBJ, FASTA, GFF and BLAST
+      or HMMER output, and RDF serializations.
+    format: http
+    id: togows.convert
+    is_public: true
+    name: TogoWS Format Conversion
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    product_url: http://togows.org/help/
+  publications:
+  - authors:
+    - Toshiaki Katayama
+    - Mitsuteru Nakao
+    - Toshihisa Takagi
+    doi: 10.1093/nar/gkq386
+    id: doi:10.1093/nar/gkq386
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'TogoWS: integrated SOAP and REST APIs for interoperable bioinformatics
+      Web services'
+    year: '2010'
 - activity_status: active
   category: DataSource
   contacts:
@@ -352523,6 +353443,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -357671,6 +358593,21 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wormbase
     product_url: https://www.genecards.org/
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/api/ucsc
+    description: REST API over the public UCSC Genome Browser MySQL databases, for
+      listing genome assemblies, tables and columns, querying table rows by column
+      values, and retrieving genomic sequence ranges.
+    format: http
+    id: togows.ucsc-api
+    is_public: true
+    name: TogoWS UCSC API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: ucsc
+    product_url: http://togows.org/help/
   publications:
   - authors:
     - W. James Kent
@@ -361439,6 +362376,8 @@ resources:
       source: unichem
     - relation_type: prov:hadPrimarySource
       source: faers
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://mps.csb.pitt.edu/
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
@@ -361597,6 +362536,54 @@ resources:
       source: unii
     - relation_type: prov:wasInformedBy
       source: ndcd
+  - category: ProgrammingInterface
+    connection_url: https://api.fda.gov/
+    description: JSON REST APIs (Elasticsearch query syntax) for FDA drug, device,
+      food, animal and veterinary, cosmetic, tobacco and other datasets, including
+      drug adverse events (FAERS), device adverse events (MAUDE), the National Drug
+      Code directory, the Orange Book, UNII substance data, labeling, recalls and
+      enforcement reports.
+    format: http
+    id: openfda.apis
+    is_public: true
+    name: openFDA APIs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/apis/
+  - category: Product
+    compression: zip
+    description: Bulk downloads of every openFDA endpoint as zipped JSON files, split
+      into partitions for large datasets such as drug adverse events (FAERS) and device
+      adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json
+      listing each endpoint's export date and file partitions.
+    format: json
+    id: openfda.downloads
+    name: openFDA Bulk Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: openfda
+    - relation_type: prov:hadPrimarySource
+      source: faers
+    - relation_type: prov:hadPrimarySource
+      source: maude
+    - relation_type: prov:hadPrimarySource
+      source: ndcd
+    - relation_type: prov:hadPrimarySource
+      source: fda-orange-book
+    - relation_type: prov:hadPrimarySource
+      source: unii
+    product_url: https://open.fda.gov/data/downloads/
   publications:
   - id: https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
     title: FDA’s Global Substance Registration System (GSRS) Unique Ingredient Identifiers
@@ -365259,6 +366246,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 500 error
+      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -366279,6 +367268,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -366790,6 +367781,42 @@ resources:
       source: cosmic
     product_file_size: 3873087
     product_url: https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv
+  - category: ProgrammingInterface
+    connection_url: http://togows.org/
+    description: REST API for retrieving entries, or individual fields of entries,
+      from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and
+      KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP,
+      PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA
+      output.
+    format: http
+    id: togows.rest-api
+    is_public: true
+    name: TogoWS REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: togows
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: http://togows.org/help/
+    warnings:
+    - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
+      HTTP 500 and dbSNP entry retrieval returned HTTP 404; the other databases tested
+      (UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, PubMed, KEGG, OMIM search)
+      responded normally.
   publications:
   - authors:
     - Alex Bateman
@@ -371680,6 +372707,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: PubChem substance information in ASN.1 format
@@ -371811,6 +372840,8 @@ resources:
       source: pubchem
     - relation_type: prov:hadPrimarySource
       source: wikidata
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_file_size: 31490277
     product_url: https://onco.cc/api/v1/all.json
   repository: https://www.mediawiki.org/wiki/Wikibase
@@ -382838,6 +383869,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -382979,6 +384012,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -384709,6 +385744,8 @@ resources:
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -384885,6 +385922,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications: []
   use_instead:
   - go
@@ -385571,6 +386610,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -386047,6 +387088,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Wang LL
@@ -386293,6 +387336,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications: []
   taxon:
   - all
@@ -387017,6 +388062,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Plant Environment Ontology in OBO format
     format: obo
@@ -387028,6 +388075,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -387082,6 +388131,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -387251,6 +388302,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -387265,6 +388318,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -388688,6 +389743,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/intact/ws
     description: IntAct web service and URL-based programmatic interface for retrieving
@@ -388877,6 +389936,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
     format: http
@@ -388893,6 +389954,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
     format: http
@@ -388909,6 +389972,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
+      when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
       and binding motifs
@@ -390718,6 +391783,11 @@ resources:
     product_url: http://www.inoh.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: Error connecting
+      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
+      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
+      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
+      name resolution)"))'
+    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
       port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
@@ -393351,6 +394421,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of MicroRNA Ontology (MIRNAO), produced by KG-Bioportal
@@ -393469,6 +394541,8 @@ resources:
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -393679,6 +394753,8 @@ resources:
       source: unichem
     - relation_type: prov:hadPrimarySource
       source: faers
+    - relation_type: prov:hadPrimarySource
+      source: openfda
     product_url: https://mps.csb.pitt.edu/
     warnings:
     - As of 2026-10-03 this URL redirects (HTTP 302) to EveAnalytics (eveanalytics.com),
@@ -393774,6 +394850,8 @@ resources:
     product_url: http://www.netpath.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -394290,6 +395368,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -394385,6 +395465,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -394509,6 +395591,8 @@ resources:
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -397822,6 +398906,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -400300,6 +401386,8 @@ resources:
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-03: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
@@ -404159,6 +405247,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

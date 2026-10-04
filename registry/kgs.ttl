@@ -5096,7 +5096,8 @@ kgr:dbsnp a schema1:DataSource ;
         kgr:pubchem.substances.sdf,
         kgr:rna-kg.kg.edges,
         kgr:rna-kg.kg.neo4j,
-        kgr:rna-kg.kg.nodes ;
+        kgr:rna-kg.kg.nodes,
+        kgr:togows.rest-api ;
     schema1:identifier "dbsnp" ;
     schema1:name "dbSNP" ;
     doap:repository <https://github.com/ncbi/dbsnp> ;
@@ -6925,7 +6926,8 @@ kgr:ena a schema1:DataSource ;
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
-        kgr:rnacentral.public-db ;
+        kgr:rnacentral.public-db,
+        kgr:togows.rest-api ;
     schema1:name "European Nucleotide Archive (ENA)" ;
     skos:inScheme "genomics" ;
     adms:status "Active" ;
@@ -7888,7 +7890,9 @@ kgr:faers a schema1:DataSource ;
         kgr:gp-kg.graph,
         kgr:kg-predict.gpkg,
         kgr:mps-db.portal,
-        kgr:multiomics-kp.graph ;
+        kgr:multiomics-kp.graph,
+        kgr:openfda.apis,
+        kgr:openfda.downloads ;
     schema1:identifier "faers" ;
     schema1:name "FDA Adverse Event Reporting System" ;
     skos:altLabel "AEMS",
@@ -8086,7 +8090,9 @@ kgr:fda-orange-book a schema1:DataSource ;
     schema1:hasPart kgr:fda-orange-book.data-files,
         kgr:fda-orange-book.preface,
         kgr:fda-orange-book.search,
-        kgr:medi.orangebook ;
+        kgr:medi.orangebook,
+        kgr:openfda.apis,
+        kgr:openfda.downloads ;
     schema1:name "FDA Orange Book" ;
     skos:altLabel "Approved Drug Products with Therapeutic Equivalence Evaluations",
         "Orange Book" ;
@@ -12352,6 +12358,7 @@ kgr:kegg a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full,
+        kgr:togows.rest-api,
         kgr:ttd.kegg-pathways,
         kgr:unibiomap.auxs,
         kgr:unibiomap.links,
@@ -12580,7 +12587,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-03T22:59:37+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:13:03+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -13487,9 +13494,11 @@ kgr:maude a schema1:DataSource ;
     dcterms:description "The U.S. FDA database of medical device adverse event reports. It houses mandatory reports submitted by device manufacturers, importers, and device user facilities, along with voluntary reports from healthcare professionals, patients, and consumers. The data are searchable through a public web interface and are also released as downloadable data files and via an API." ;
     dcterms:identifier "maude" ;
     dcterms:license <https://www.usa.gov/government-works> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:maude.data,
-        kgr:maudekg.graph ;
+        kgr:maudekg.graph,
+        kgr:openfda.apis,
+        kgr:openfda.downloads ;
     schema1:name "MAUDE (Manufacturer and User Facility Device Experience)" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -15555,6 +15564,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
+        kgr:togows.rest-api,
         kgr:translator.translator_kg.graph,
         kgr:unibiomap.auxs,
         kgr:unibiomap.links,
@@ -15692,14 +15702,16 @@ kgr:ndcd a schema1:DataSource ;
     dcterms:description "The FDA National Drug Code Directory is a comprehensive database maintained by the U.S. Food and Drug Administration containing information about finished drug products, unfinished drugs, and compounded drug products. Drug establishments are required to provide FDA with current lists of all drugs using unique three-segment National Drug Code (NDC) numbers. The directory includes prescription and over-the-counter drugs, approved and unapproved drugs, and repackaged and relabeled drugs. The database is updated daily and provides essential drug identification and regulatory information for healthcare professionals, researchers, and regulatory compliance." ;
     dcterms:identifier "ndcd" ;
     dcterms:license <https://www.fda.gov/about-fda/about-website/website-policies> ;
-    dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:athena.vocabularies,
         kgr:dailymed.spl_files,
         kgr:ndcd.api,
         kgr:ndcd.excel,
         kgr:ndcd.search,
-        kgr:ndcd.text ;
+        kgr:ndcd.text,
+        kgr:openfda.apis,
+        kgr:openfda.downloads ;
     schema1:identifier "ndcd" ;
     schema1:name "National Drug Code Directory" ;
     skos:altLabel "NDC",
@@ -17187,6 +17199,7 @@ kgr:omim a schema1:DataSource ;
         kgr:tcrd.api,
         kgr:tcrd.database_download,
         kgr:tcrd.documentation,
+        kgr:togows.rest-api,
         kgr:unibiomap.auxs,
         kgr:unibiomap.disease_desc,
         kgr:unibiomap.links,
@@ -17563,6 +17576,34 @@ kgr:opendataphilly a schema1:DataSource ;
         "public health" ;
     adms:status "Active" ;
     foaf:homepage <https://opendataphilly.org/> .
+
+kgr:openfda a schema1:Aggregator ;
+    rdfs:label "openFDA" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "openFDA is the U.S. Food and Drug Administration's platform for public access to FDA datasets through Elasticsearch-based JSON APIs and bulk downloads. It covers drugs, devices, foods, animal and veterinary products, cosmetics and tobacco, serving adverse event reports (FAERS for drugs, MAUDE for devices, CAERS for foods), product labeling, recalls and enforcement reports, the National Drug Code directory, Drugs@FDA, the Orange Book, drug shortages, device 510(k), PMA, classification, registration and UDI data, and substance and UNII data." ;
+    dcterms:identifier "openfda" ;
+    dcterms:isReferencedBy <doi:10.1093/jamia/ocv153> ;
+    dcterms:license <https://open.fda.gov/license/> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:maude.data,
+        kgr:mps-db.portal,
+        kgr:ndcd.api,
+        kgr:onco.all_json,
+        kgr:openfda.apis,
+        kgr:openfda.downloads,
+        kgr:openfda.portal ;
+    schema1:name "openFDA" ;
+    doap:repository <https://github.com/FDA/openfda> ;
+    skos:altLabel "OpenFDA" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "food",
+        "nutrition",
+        "pharmacology",
+        "pharmacovigilance",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://open.fda.gov/> .
 
 kgr:openfema a schema1:DataSource ;
     rdfs:label "OpenFEMA" ;
@@ -18458,7 +18499,8 @@ kgr:pdb a schema1:DataSource ;
         kgr:string.protein.links.full,
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
-        kgr:string.protein.physical.links.full ;
+        kgr:string.protein.physical.links.full,
+        kgr:togows.rest-api ;
     schema1:name "Protein Data Bank (PDB)" ;
     skos:altLabel "PDB",
         "Protein Data Bank" ;
@@ -20473,6 +20515,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:suppkg.source-data,
         kgr:tbkg.data,
         kgr:tbkg.osimertinib_case_study,
+        kgr:togows.rest-api,
         kgr:ttd.biomarker-disease,
         kgr:ttd.drug-disease,
         kgr:ttd.target-compound,
@@ -23869,6 +23912,25 @@ kgr:to a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <http://browser.planteome.org/amigo> .
 
+kgr:togows a schema1:Aggregator ;
+    rdfs:label "TogoWS" ;
+    dcterms:created "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "TogoWS is a set of uniform REST web services from the Database Center for Life Science (DBCLS, Japan) for retrieving, searching and converting entries from major bioinformatics databases, including UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB, OMIM and KEGG, plus a REST API over the UCSC Genome Browser databases. Entries are fetched from the upstream databases on request and returned in formats such as JSON, Turtle, XML, GFF and FASTA. It was originally built to unify the REST and SOAP services of NCBI, EBI, DDBJ, PDB and KEGG." ;
+    dcterms:identifier "togows" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkq386> ;
+    dcterms:license <https://www.kegg.jp/feedback/copyright.html> ;
+    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:togows.convert,
+        kgr:togows.rest-api,
+        kgr:togows.ucsc-api ;
+    schema1:name "TogoWS" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "information technology",
+        "software" ;
+    adms:status "Active" ;
+    foaf:homepage <http://togows.org/> .
+
 kgr:topmed a schema1:DataSource ;
     rdfs:label "NHLBI Trans-Omics for Precision Medicine" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -24362,6 +24424,7 @@ kgr:ucsc a schema1:DataSource ;
     dcterms:license <https://genome.ucsc.edu/license/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:togows.ucsc-api,
         kgr:ucsc.api,
         kgr:ucsc.browser,
         kgr:ucsc.downloads,
@@ -24596,6 +24659,8 @@ kgr:unii a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:dailymed.spl_files,
         kgr:mechreponet.kg,
+        kgr:openfda.apis,
+        kgr:openfda.downloads,
         kgr:unii.data,
         kgr:unii.legacy,
         kgr:unii.list,
@@ -24724,6 +24789,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:tcrd.api,
         kgr:tcrd.database_download,
         kgr:tcrd.documentation,
+        kgr:togows.rest-api,
         kgr:ttd.uniprot-all,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j,
@@ -33961,11 +34027,6 @@ kgr:matador.publication a schema1:DocumentationProduct ;
     dcterms:description "Publication describing SuperTarget and MATADOR resources for exploring drug-target relationships, the primary stable reference for the MATADOR dataset." ;
     schema1:url <https://doi.org/10.1093/nar/gkm862> .
 
-kgr:maude.data a schema1:Product ;
-    rdfs:label "MAUDE Database and Downloadable Data Files" ;
-    dcterms:description "The MAUDE medical device adverse event reports, accessible through the searchable web database and as downloadable data files, including via the openFDA device adverse event API endpoint." ;
-    schema1:url <https://open.fda.gov/apis/device/event/> .
-
 kgr:maudekg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "FDA MAUDE Adverse Event Knowledge Graph SPARQL" ;
     dcterms:description "SPARQL endpoint for FDA MAUDE Adverse Event Knowledge Graph" ;
@@ -35353,11 +35414,6 @@ kgr:ncro.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "NCRO KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Non-coding RNA Ontology (NCRO), produced by KG-Bioportal from the BioPortal submission. The archive contains NCRO_nodes.tsv and NCRO_edges.tsv." ;
     schema1:url <https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/NCRO.tar.gz> .
-
-kgr:ndcd.api a schema1:ProgrammingInterface ;
-    rdfs:label "NDC API" ;
-    dcterms:description "REST API providing programmatic access to National Drug Code data through the openFDA platform" ;
-    schema1:url <https://open.fda.gov/apis/drug/ndc/> .
 
 kgr:ndcd.excel a schema1:Product ;
     rdfs:label "NDC Database Excel File" ;
@@ -37186,6 +37242,11 @@ kgr:opendataphilly.site a schema1:GraphicalInterface ;
     rdfs:label "OpenDataPhilly Portal" ;
     dcterms:description "Open data portal cataloging public datasets, APIs, and applications for the Philadelphia region." ;
     schema1:url <https://opendataphilly.org/> .
+
+kgr:openfda.portal a schema1:GraphicalInterface ;
+    rdfs:label "openFDA Website" ;
+    dcterms:description "openFDA website with API documentation, interactive query explorers and dataset overviews for each endpoint." ;
+    schema1:url <https://open.fda.gov/> .
 
 kgr:openfema.api a schema1:ProgrammingInterface ;
     rdfs:label "OpenFEMA API" ;
@@ -41242,6 +41303,11 @@ kgr:to.owl a schema1:OntologyProduct ;
     dcterms:description "Plant Trait Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/to.owl> .
 
+kgr:togows.convert a schema1:ProgrammingInterface ;
+    rdfs:label "TogoWS Format Conversion" ;
+    dcterms:description "REST service (HTTP POST) for converting between sequence, alignment and annotation formats such as GenBank, EMBL/ENA, DDBJ, FASTA, GFF and BLAST or HMMER output, and RDF serializations." ;
+    schema1:url <http://togows.org/help/> .
+
 kgr:topmed.data-access a schema1:GraphicalInterface ;
     rdfs:label "TOPMed Data Access" ;
     dcterms:description "TOPMed data access page with instructions and links for controlled-access data workflows." ;
@@ -43285,6 +43351,11 @@ kgr:markerdb.proteins.tsv a schema1:Product ;
     dcterms:description "TSV export of MarkerDB protein biomarkers with associated conditions and concentration data." ;
     schema1:url <https://markerdb.ca/pages/download_all_proteins?format=tsv> .
 
+kgr:maude.data a schema1:Product ;
+    rdfs:label "MAUDE Database and Downloadable Data Files" ;
+    dcterms:description "The MAUDE medical device adverse event reports, accessible through the searchable web database and as downloadable data files, including via the openFDA device adverse event API endpoint." ;
+    schema1:url <https://open.fda.gov/apis/device/event/> .
+
 kgr:maudekg.graph a schema1:GraphProduct ;
     rdfs:label "FDA MAUDE Adverse Event Knowledge Graph" ;
     dcterms:description "RDF knowledge graph constructed from FDA MAUDE medical-device adverse event reports using standardized FDA product codes." ;
@@ -43414,6 +43485,11 @@ kgr:ncbigene.gene2refseq a schema1:MappingProduct ;
     rdfs:label "Gene to RefSeq Mapping" ;
     dcterms:description "Gene to RefSeq mapping data providing links between gene records and RefSeq sequence identifiers" ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2refseq.gz> .
+
+kgr:ndcd.api a schema1:ProgrammingInterface ;
+    rdfs:label "NDC API" ;
+    dcterms:description "REST API providing programmatic access to National Drug Code data through the openFDA platform" ;
+    schema1:url <https://open.fda.gov/apis/drug/ndc/> .
 
 kgr:ndfrt.rxnorm a schema1:Product ;
     rdfs:label "VANDF in RxNorm" ;
@@ -44920,6 +44996,11 @@ kgr:text-mining-kp.graph a schema1:GraphProduct ;
     dcterms:description "Release files for the Text Mining KP" ;
     schema1:url <https://storage.googleapis.com/translator-text-workflow-dev-public/> .
 
+kgr:togows.ucsc-api a schema1:ProgrammingInterface ;
+    rdfs:label "TogoWS UCSC API" ;
+    dcterms:description "REST API over the public UCSC Genome Browser MySQL databases, for listing genome assemblies, tables and columns, querying table rows by column values, and retrieving genomic sequence ranges." ;
+    schema1:url <http://togows.org/help/> .
+
 kgr:translator.alliance.graph a schema1:GraphProduct ;
     rdfs:label "Translator Alliance KGX Graph" ;
     dcterms:description "KGX JSONL graph package for Alliance of Genome Resources distributed via the NCATS Translator release site (release 2026_03_06; build alliance_8.3.0_2023bb02_2025sep1_4.3.6; source version 8.3.0; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
@@ -46209,15 +46290,20 @@ kgr:metatraits.ncbi.species-summary a schema1:Product ;
     dcterms:description "Species-level harmonized trait annotations aggregated for NCBI taxonomy in compressed TSV format." ;
     schema1:url <https://www.bork.embl.de/~robbani/metatraits/ncbi_species_summary_no_predictions.tsv.gz> .
 
-kgr:mps-db.portal a schema1:GraphicalInterface ;
-    rdfs:label "MPS-Db Web Portal" ;
-    dcterms:description "MPS-Db web portal for browsing, analyzing and sharing microphysiology system study data alongside reference compound, bioactivity, preclinical and clinical data drawn from ChEMBL, PubChem, DrugBank, UniChem and FAERS (via OpenFDA)." ;
-    schema1:url <https://mps.csb.pitt.edu/> .
-
 kgr:obo-db-ingest.bigg.metabolite.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "bigg.metabolite SSSOM" ;
     dcterms:description "bigg.metabolite SSSOM" ;
     schema1:url <https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv> .
+
+kgr:openfda.apis a schema1:ProgrammingInterface ;
+    rdfs:label "openFDA APIs" ;
+    dcterms:description "JSON REST APIs (Elasticsearch query syntax) for FDA drug, device, food, animal and veterinary, cosmetic, tobacco and other datasets, including drug adverse events (FAERS), device adverse events (MAUDE), the National Drug Code directory, the Orange Book, UNII substance data, labeling, recalls and enforcement reports." ;
+    schema1:url <https://open.fda.gov/apis/> .
+
+kgr:openfda.downloads a schema1:Product ;
+    rdfs:label "openFDA Bulk Downloads" ;
+    dcterms:description "Bulk downloads of every openFDA endpoint as zipped JSON files, split into partitions for large datasets such as drug adverse events (FAERS) and device adverse events (MAUDE), with a machine-readable manifest at https://api.fda.gov/download.json listing each endpoint's export date and file partitions." ;
+    schema1:url <https://open.fda.gov/data/downloads/> .
 
 kgr:pankgraph.graph a schema1:GraphProduct ;
     rdfs:label "PanKgraph Knowledge Graph" ;
@@ -46318,15 +46404,15 @@ kgr:med-rt.core_xml a schema1:Product ;
     dcterms:description "Current MED-RT XML release archive from the NCI EVS MED-RT distribution." ;
     schema1:url <https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_XML.zip> .
 
+kgr:mps-db.portal a schema1:GraphicalInterface ;
+    rdfs:label "MPS-Db Web Portal" ;
+    dcterms:description "MPS-Db web portal for browsing, analyzing and sharing microphysiology system study data alongside reference compound, bioactivity, preclinical and clinical data drawn from ChEMBL, PubChem, DrugBank, UniChem and FAERS (via OpenFDA)." ;
+    schema1:url <https://mps.csb.pitt.edu/> .
+
 kgr:obo-db-ingest.rhea.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "rhea SSSOM" ;
     dcterms:description "rhea SSSOM" ;
     schema1:url <https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv> .
-
-kgr:onco.all_json a schema1:GraphProduct ;
-    rdfs:label "OnCo full corpus (JSON)" ;
-    dcterms:description "Every OnCo record in one JSON file, each with its plain-English summary, technical summary, dated facts, relationship fields and source links." ;
-    schema1:url <https://onco.cc/api/v1/all.json> .
 
 kgr:openpredict.predictions a schema1:Product ;
     rdfs:label "OpenPredict Prediction Data" ;
@@ -46452,6 +46538,11 @@ kgr:nlm-ckn.graph a schema1:GraphProduct ;
     dcterms:description "The NLM-CKN knowledge graph of cellular phenotypes. It is built from triple assertions (subject-predicate-object) that link single-cell genomics experimental data (from the CELLxGENE Census) and computationally derived NS-Forest marker genes to the Cell Ontology and other reference ontologies, augmented with literature-derived assertions from text mining/NLP. The graph is produced by the NLM-CKN ETL pipeline as an ArangoDB archive and served via the web application at https://nlm-ckn.org." ;
     schema1:url <https://nlm-ckn.org> .
 
+kgr:onco.all_json a schema1:GraphProduct ;
+    rdfs:label "OnCo full corpus (JSON)" ;
+    dcterms:description "Every OnCo record in one JSON file, each with its plain-English summary, technical summary, dated facts, relationship fields and source links." ;
+    schema1:url <https://onco.cc/api/v1/all.json> .
+
 kgr:openpredict.api a schema1:ProgrammingInterface ;
     rdfs:label "OpenPredict API" ;
     dcterms:description "TRAPI 1.4 API for predicted drug treatments, drug-disease associations, similar entities, model metadata, and explanation endpoints" ;
@@ -46554,6 +46645,11 @@ kgr:icees-kg.graph a schema1:GraphProduct ;
     rdfs:label "KGX distribution of the ICEES Exposures KP" ;
     dcterms:description "KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/> .
+
+kgr:togows.rest-api a schema1:ProgrammingInterface ;
+    rdfs:label "TogoWS REST API" ;
+    dcterms:description "REST API for retrieving entries, or individual fields of entries, from UniProt, ENA, DDBJ, NCBI Nucleotide, NCBI Gene, dbSNP, PubMed, PDB and KEGG (entry endpoint), and for searching UniProt, ENA, NCBI Nucleotide, dbSNP, PubMed, OMIM and PDB (search endpoint), with JSON, Turtle, XML, GFF or FASTA output." ;
+    schema1:url <http://togows.org/help/> .
 
 kgr:aop-db.data a schema1:Product ;
     rdfs:label "AOP-DB Data" ;
