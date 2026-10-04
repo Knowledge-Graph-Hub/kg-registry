@@ -1335,10 +1335,10 @@ kgr:bigg a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkv1049> ;
     dcterms:license <http://bigg.ucsd.edu/license#license> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
-        kgr:molepro.api,
+    schema1:hasPart kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:obo-db-ingest.bigg.compartment.json,
         kgr:obo-db-ingest.bigg.compartment.obo,
@@ -1444,10 +1444,10 @@ kgr:bindingdb a schema1:DataSource ;
         kgr:bindingdb.uniprot_mapping,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
@@ -2192,7 +2192,6 @@ kgr:bto a schema1:Ontology ;
         kgr:bto.obo,
         kgr:bto.owl,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:efo.obo,
         kgr:efo.owl,
@@ -2353,7 +2352,6 @@ kgr:cancer-genome-interpreter a schema1:DataSource ;
     schema1:hasPart kgr:cancer-genome-interpreter.api,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cancer-genome-interpreter.portal,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph ;
     schema1:name "Cancer Genome Interpreter" ;
     skos:inScheme "biomedical",
@@ -3052,10 +3050,10 @@ kgr:chebi a schema1:Ontology ;
         kgr:metabokg.graph,
         kgr:metabokg.schema,
         kgr:microbiomekg.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:ncatsgardkg.graph,
         kgr:np-kg.graph.networkx,
@@ -3116,16 +3114,16 @@ kgr:chebi a schema1:Ontology ;
 kgr:chembank a schema1:DataSource ;
     rdfs:label "ChemBank" ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "ChemBank was a public, freely available collection of small-molecule screening data and cheminformatics resources developed by the Chemical Biology Program (formerly the Initiative for Chemical Genetics) at the Broad Institute. It assembled biological activity measurements from high-throughput screens together with chemical structures, compound annotations, and analysis tools, with the aim of helping researchers relate small molecules to their effects on biological systems. ChemBank is no longer maintained: its homepage at chembank.broadinstitute.org is defunct and now redirects away from the original database. It served as an upstream primary source for the Molecular Data Provider (MolePro) and the molecular-data-kp knowledge provider." ;
+    dcterms:description "ChemBank was a public, freely available collection of small-molecule screening data and cheminformatics resources developed by the Chemical Biology Program (formerly the Initiative for Chemical Genetics) at the Broad Institute. It assembled biological activity measurements from high-throughput screens together with chemical structures, compound annotations, and analysis tools, with the aim of helping researchers relate small molecules to their effects on biological systems. ChemBank is no longer maintained: its homepage at chembank.broadinstitute.org is defunct and now redirects away from the original database. It served as an upstream primary source for the Molecular Data Provider (MolePro) knowledge provider." ;
     dcterms:identifier "chembank" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/17947324> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:chembank.publication,
         kgr:chembank.wayback,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi ;
     schema1:identifier "chembank" ;
     schema1:name "ChemBank" ;
@@ -3167,10 +3165,10 @@ kgr:chembl a schema1:DataSource ;
         kgr:kg-enp.graph,
         kgr:klocd.portal,
         kgr:micromap.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:mps-db.portal,
         kgr:ncatsgardkg.graph,
@@ -3467,26 +3465,6 @@ kgr:civic a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://civicdb.org/> .
 
-kgr:ckg a schema1:KnowledgeGraph ;
-    rdfs:label "Clinical Knowledge Graph" ;
-    dcterms:created "2026-04-06T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Clinical Knowledge Graph (CKG) is an open-source biomedical knowledge graph platform that integrates proteomics data, clinical data, biomedical databases, and literature to support clinically meaningful querying, analysis, and hypothesis generation. CKG has been integrated into the BioCypher framework while its original repository, documentation, and graph database dump remain available." ;
-    dcterms:identifier "ckg" ;
-    dcterms:isReferencedBy <doi:10.1038/s41587-021-01145-6> ;
-    dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2026-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:ckg.docs,
-        kgr:ckg.graph ;
-    schema1:name "Clinical Knowledge Graph" ;
-    doap:repository <https://github.com/MannLabs/CKG> ;
-    skos:inScheme "biomedical",
-        "clinical",
-        "precision medicine",
-        "proteomics" ;
-    adms:status "Active" ;
-    foaf:homepage <https://ckg.readthedocs.io/> .
-
 kgr:cl a schema1:Ontology ;
     rdfs:label "Cell Ontology" ;
     dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
@@ -3666,9 +3644,10 @@ kgr:clinicalkg a schema1:KnowledgeGraph ;
     dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Clinical Knowledge Graph (CKG) is an open-source platform that integrates proteomics and clinical data with knowledge from diverse biomedical databases and literature to support precision medicine. The CKG has reported scale of ~16 million nodes and ~220 million relationships and provides tooling for analysis, reporting, and knowledge discovery." ;
     dcterms:identifier "clinicalkg" ;
-    dcterms:isReferencedBy <doi:10.1101/2020.05.09.084897> ;
+    dcterms:isReferencedBy <doi:10.1038/s41587-021-01145-6>,
+        <doi:10.1101/2020.05.09.084897> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:clinicalkg.docs,
         kgr:clinicalkg.graph ;
@@ -3676,6 +3655,7 @@ kgr:clinicalkg a schema1:KnowledgeGraph ;
     doap:repository <https://github.com/MannLabs/CKG> ;
     skos:inScheme "biomedical",
         "clinical",
+        "precision medicine",
         "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://ckg.readthedocs.io/> .
@@ -3909,9 +3889,10 @@ kgr:cmap a schema1:DataSource ;
     dcterms:created "2025-01-10T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Connectivity Map (CMap) is a groundbreaking genome-scale perturbation resource containing over 3 million gene expression profiles cataloging transcriptional responses to chemical, genetic, and disease perturbations across multiple cancer cell types. Developed by the Broad Institute as part of the NIH Library of Integrated Network-Based Cellular Signatures (LINCS) program, CMap addresses fundamental challenges in understanding protein function and small molecule mechanisms of action by creating a comprehensive catalog of cellular signatures representing systematic perturbation. The database employs the L1000 high-throughput gene expression assay, which directly measures ~978 landmark genes and computationally infers expression of ~11,350 additional genes using inference algorithms, providing a cost-effective reduced representation of the transcriptome. CMap contains signatures from approximately 5,000 small-molecule compounds, 3,000 genetic reagents including shRNAs, CRISPR knockdowns, and overexpression constructs, tested primarily across nine core cancer cell lines that include A375, A549, HA1E, HCC515, HT29, HEPG2, MCF7, PC3, and VCAP. The resource enables researchers to query with their own gene expression signatures to identify perturbagens that induce similar or opposing transcriptional responses, thereby discovering unexpected connections between diseases, drug mechanisms, and protein functions. CMap data is accessible through CLUE, a cloud-based unified environment providing user-friendly web applications including query tools, data browsers, metadata search, and visualization apps for exploring perturbation-driven gene expression patterns. The database supports diverse research applications including drug repurposing by identifying compounds with similar mechanisms, target identification by finding small molecules that mimic genetic perturbations, disease mechanism understanding by connecting disease signatures to perturbagen responses, and biomarker discovery through systematic analysis of transcriptional responses. While personalized support ended in July 2022, all data, tools, and extensive documentation through Connectopedia remain fully accessible, with over 1.5 million replicate-collapsed signatures and 3 million profiles available for download and programmatic access via Python libraries and APIs." ;
     dcterms:identifier "cmap" ;
-    dcterms:isReferencedBy <https://doi.org/10.1016/j.cell.2017.10.049> ;
+    dcterms:isReferencedBy <https://doi.org/10.1016/j.cell.2017.10.049>,
+        <https://doi.org/10.1126/science.1132939> ;
     dcterms:license <https://clue.io/connectopedia/terms> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:cmap.clue,
         kgr:cmap.connectopedia,
@@ -3920,18 +3901,22 @@ kgr:cmap a schema1:DataSource ;
         kgr:cmap.query_app,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
-        kgr:molepro.trapi ;
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
+        kgr:molepro.trapi,
+        kgr:pharmkg.graph,
+        kgr:ubkg.csv,
+        kgr:ubkg.neo4j ;
     schema1:identifier "cmap" ;
     schema1:name "Connectivity Map" ;
     doap:repository <https://github.com/cmap> ;
     skos:altLabel "CMap",
         "Connectivity Map",
         "LINCS L1000" ;
-    skos:inScheme "drug discovery",
+    skos:inScheme "biomedical",
+        "drug discovery",
         "gene expression profiling",
         "genomics",
         "high-throughput screening",
@@ -4289,29 +4274,6 @@ kgr:connections-hypothesis-kp a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/di2ag/chp_api> .
 
-kgr:connectivitymap a schema1:DataSource ;
-    rdfs:label "Connectivity Map" ;
-    dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Connectivity Map (CMap) is a collection of genome-wide transcriptional expression data from cultured human cells treated with bioactive small molecules and simple pattern-matching algorithms that together enable the discovery of functional connections between drugs, genes, and diseases through common gene-expression changes. The original CMap resource is now integrated into the CLUE platform." ;
-    dcterms:identifier "connectivitymap" ;
-    dcterms:isReferencedBy <https://doi.org/10.1126/science.1132939> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:pharmkg.graph,
-        kgr:ubkg.csv,
-        kgr:ubkg.neo4j ;
-    schema1:identifier "cmap" ;
-    schema1:name "Connectivity Map" ;
-    doap:repository <https://clue.io/about> ;
-    skos:inScheme "biomedical",
-        "drug discovery",
-        "gene expression profiling",
-        "genomics",
-        "high-throughput screening" ;
-    adms:status "Inactive" ;
-    foaf:homepage <https://www.broadinstitute.org/connectivity-map-cmap> ;
-    foaf:maker kgr:broad .
-
 kgr:coralkinome a schema1:DataSource ;
     rdfs:label "CoralKinome" ;
     dcterms:created "2025-11-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -4369,7 +4331,6 @@ kgr:corum a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:corum.all_complexes,
         kgr:corum.core_complexes,
@@ -4731,10 +4692,10 @@ kgr:ctd a schema1:DataSource ;
         kgr:kg-monarch.graph.rdf,
         kgr:klocd.portal,
         kgr:mechreponet.kg,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:oregano.graph,
         kgr:pathwaycommons.biopax,
@@ -4860,10 +4821,10 @@ kgr:ctrp a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:ctrp.data,
         kgr:ctrp.portal,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:pharmacodb.api,
         kgr:pharmacodb.documentation,
@@ -5434,10 +5395,10 @@ kgr:depmap a schema1:DataSource ;
         kgr:enrichr-kg.graph,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:obo-db-ingest.depmap.tsv,
         kgr:prism.datasets,
@@ -5467,15 +5428,14 @@ kgr:dgidb a schema1:DataSource ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:dgidb.api,
         kgr:drkg.graph,
         kgr:genecards.web.interface,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
@@ -5708,7 +5668,6 @@ kgr:diseases a schema1:Aggregator ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:amyco.annotations,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:diseases.dictionary,
         kgr:diseases.experiments-filtered,
@@ -5771,7 +5730,6 @@ kgr:disgenet a schema1:DataSource ;
         kgr:cardiokg.neo4j,
         kgr:cfde-gse.genesets,
         kgr:cfde-gse.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:disgenet.api,
         kgr:disgenet.browser,
@@ -5946,7 +5904,6 @@ kgr:doid a schema1:Ontology ;
         kgr:biomarker.bkg.nodes.condition,
         kgr:cam-kp.ctd-interactions,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:doid.kg-bioportal,
         kgr:doid.obo,
@@ -6126,7 +6083,6 @@ kgr:drugbank a schema1:DataSource ;
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cardiokg.neo4j,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:drkg.graph,
         kgr:drugbank.academic,
@@ -6150,10 +6106,10 @@ kgr:drugbank a schema1:DataSource ;
         kgr:klocd.portal,
         kgr:medkg.site,
         kgr:microbiomekg.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:mps-db.portal,
         kgr:np-kg.graph.networkx,
@@ -6234,10 +6190,10 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:mind.test,
         kgr:mind.train,
         kgr:mind.valid,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:multiomics-kp.graph,
         kgr:obo-db-ingest.drugcentral.tsv,
@@ -6291,72 +6247,31 @@ kgr:drugmechdb a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://sulab.github.io/DrugMechDB/> .
 
-kgr:drugrephub a schema1:DataSource ;
-    rdfs:label "Drug Repurposing Hub" ;
-    dcterms:created "2026-01-22T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Curated collection of approved, clinical, and pre-clinical compounds with detailed annotations and sample metadata to support drug repurposing screens and analyses." ;
-    dcterms:identifier "drugrephub" ;
-    dcterms:isReferencedBy <doi:10.1038/nm.4306> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:drugrephub.drug-info.tsv,
-        kgr:drugrephub.sample-info.tsv,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
-        kgr:translator.drug_rep_hub.graph,
-        kgr:translator.translator_kg.graph ;
-    schema1:identifier "drug-repurposing-hub" ;
-    schema1:name "Drug Repurposing Hub" ;
-    skos:inScheme "biomedical",
-        "drug discovery",
-        "drug repositioning",
-        "pharmacology" ;
-    adms:status "Active" ;
-    foaf:homepage <https://repo-hub.broadinstitute.org/repurposing> ;
-    foaf:maker kgr:broad-cdot,
-        kgr:broad-institute .
-
-kgr:dsstox a schema1:DataSource ;
-    rdfs:label "DSSTox" ;
-    dcterms:created "2025-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "EPA's Distributed Structure-Searchable Toxicity (DSSTox) Database contains curated chemical substances mapped to data including chemical identifiers and structure representations, providing the chemical underpinning for EPA's computational toxicology tools." ;
-    dcterms:identifier "dsstox" ;
-    dcterms:isReferencedBy <doi:10.1186/s13321-017-0247-6> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:alzkb.browser,
-        kgr:alzkb.data,
-        kgr:dsstox.api,
-        kgr:dsstox.complete,
-        kgr:dsstox.dashboard,
-        kgr:dsstox.description ;
-    schema1:name "DSSTox" ;
-    skos:inScheme "biomedical",
-        "chemistry and biochemistry",
-        "environment",
-        "toxicology" ;
-    adms:status "Active" ;
-    foaf:homepage <https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database> .
-
 kgr:dsstoxdb a schema1:DataSource ;
     rdfs:label "Distributed Structure-Searchable Toxicity (DSSTox) Database" ;
     dcterms:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "EPA's Distributed Structure-Searchable Toxicity (DSSTox) database provides high-quality chemical and chemistry data underpinning several publicly available computational toxicology applications. DSSTox contains curated chemical substances mapped to chemical identifiers including CAS Registry Numbers, IUPAC names, SMILES, and InChIKeys. The database currently exceeds 1.2 million substances which includes chemical lists of interest to EPA, other federal agencies, states, tribes, industry and stakeholder groups. DSSTox provides accurate linkages of chemical structures to source substance identifiers, allowing high-quality association of chemicals to existing toxicity data, bioactivity data, experimental chemical property data and enabling structure-based predictive modeling. The database supports the CompTox Chemicals Dashboard, EcoTox Knowledgebase, Chemical Exposure Knowledgebase, and other EPA tools." ;
     dcterms:identifier "dsstoxdb" ;
-    dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/33426407> ;
+    dcterms:isReferencedBy <doi:10.1186/s13321-017-0247-6>,
+        <https://pubmed.ncbi.nlm.nih.gov/33426407> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:dsstoxdb.api,
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:alzkb.browser,
+        kgr:alzkb.data,
+        kgr:dsstoxdb.api,
+        kgr:dsstoxdb.chemical-api,
         kgr:dsstoxdb.dashboard,
+        kgr:dsstoxdb.description,
         kgr:dsstoxdb.downloads,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi ;
     schema1:identifier "dsstoxdb" ;
     schema1:name "Distributed Structure-Searchable Toxicity (DSSTox) Database" ;
-    skos:inScheme "chemistry and biochemistry",
+    skos:inScheme "biomedical",
+        "chemistry and biochemistry",
         "environment",
         "toxicology" ;
     adms:status "Active" ;
@@ -6673,7 +6588,6 @@ kgr:efo a schema1:Ontology ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:clo.owl,
         kgr:efo.obo,
@@ -8424,7 +8338,6 @@ kgr:foodb a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:foodb.data.csv,
         kgr:foodb.data.experimental_cms,
@@ -8727,10 +8640,10 @@ kgr:gelinea a schema1:DataSource ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gelinea.tool,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi ;
     schema1:identifier "gelinea" ;
     schema1:name "GeLiNEA" ;
@@ -9058,31 +8971,17 @@ kgr:geneprof a schema1:DataSource ;
 kgr:genetics-kp a schema1:KnowledgeGraph ;
     rdfs:label "Genetics KP" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "A Translator Knowledge Provider focusing on genetic data." ;
+    dcterms:description "Genetics KP is a Translator knowledge provider focused on integrating genetic association evidence (including GWAS-derived signals) into a unified framework for gene-disease relationship analysis." ;
     dcterms:identifier "genetics-kp" ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://opensource.org/license/mit/> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genetics-kp.code,
         kgr:genetics-kp.docs,
         kgr:genetics-kp.graph,
+        kgr:genetics-kp.trapi,
         kgr:molepro.api,
         kgr:molepro.catalog,
-        kgr:molepro.trapi ;
-    schema1:identifier "genetics-data-provider" ;
-    schema1:name "Genetics KP" ;
-    skos:inScheme "biomedical",
-        "genomics" ;
-    adms:status "Active" ;
-    foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider> .
-
-kgr:geneticskp a schema1:KnowledgeGraph ;
-    rdfs:label "Genetics KP" ;
-    dcterms:created "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Genetics KP is a Translator knowledge provider focused on integrating genetic association evidence (including GWAS-derived signals) into a unified framework for gene-disease relationship analysis." ;
-    dcterms:identifier "geneticskp" ;
-    dcterms:license <https://opensource.org/license/mit/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:geneticskp.docs,
-        kgr:geneticskp.trapi,
+        kgr:molepro.trapi,
         kgr:translator.geneticskp.graph,
         kgr:translator.translator_kg.graph ;
     schema1:identifier "genetics-data-provider" ;
@@ -9091,7 +8990,6 @@ kgr:geneticskp a schema1:KnowledgeGraph ;
     skos:inScheme "biomedical",
         "genome-wide association studies",
         "genomics" ;
-    skos:related "translator" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider> .
 
@@ -9647,7 +9545,6 @@ kgr:go a schema1:Ontology ;
         kgr:cam-kp.go-cams,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:chr.model.owl,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:ctd.chem_go_enriched,
         kgr:ctd.pheno_term_ixns,
@@ -10138,10 +10035,10 @@ kgr:gtopdb a schema1:DataSource ;
         kgr:gtopdb.malaria,
         kgr:gtopdb.targets.csv,
         kgr:gtopdb.web,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
@@ -10266,7 +10163,6 @@ kgr:gwascatalog a schema1:DataSource ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:disgenet.data,
         kgr:enrichr-kg.graph,
@@ -10287,8 +10183,8 @@ kgr:gwascatalog a schema1:DataSource ;
         kgr:markerdb.api,
         kgr:markerdb.sequence_variants.tsv,
         kgr:medkg.site,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
         kgr:pharmebinet.neo4j,
@@ -10466,7 +10362,6 @@ kgr:hgnc a schema1:DataSource ;
         kgr:biogrid.identifiers,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cellmodelpassports.gene_identifiers,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:gencode.human.gtf,
         kgr:genecards.gene.annotations,
@@ -10487,10 +10382,10 @@ kgr:hgnc a schema1:DataSource ;
         kgr:kinace.portal,
         kgr:medkg.site,
         kgr:microbiomekg.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:mondo.sssom,
         kgr:obo-db-ingest.hgnc.genegroup.json,
@@ -10594,7 +10489,6 @@ kgr:hmdb a schema1:Aggregator ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
@@ -10636,10 +10530,10 @@ kgr:hmdb a schema1:Aggregator ;
         kgr:markerdb.chemicals.tsv,
         kgr:medkg.site,
         kgr:micromap.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:pathwhiz.pathways,
         kgr:pharmebinet.graphml,
@@ -10736,7 +10630,6 @@ kgr:hp a schema1:Ontology ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:disgenet.data,
         kgr:drug-approvals-kp.graph.edges,
@@ -10853,7 +10746,6 @@ kgr:hpa a schema1:Aggregator ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:genecards.web.interface,
         kgr:harmonizome.downloads,
@@ -11893,8 +11785,8 @@ kgr:inchikey a schema1:DataModel ;
     schema1:hasPart kgr:inchikey.docs,
         kgr:inchikey.inchi_software,
         kgr:inchikey.web_demo,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:unibiomap.auxs,
         kgr:unibiomap.compound_desc,
         kgr:unibiomap.links,
@@ -12034,7 +11926,6 @@ kgr:intact a schema1:Aggregator ;
         kgr:biobtree.graph.human-subgraph,
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:drkg.graph,
         kgr:epigraphdb.graph,
@@ -12199,10 +12090,10 @@ kgr:inxight-drugs a schema1:DataSource ;
     dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:inxight-drugs.api,
         kgr:inxight-drugs.portal,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi ;
     schema1:identifier "inxight-drugs" ;
     schema1:name "Inxight: Drugs" ;
@@ -12716,7 +12607,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-04T03:33:02+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T04:17:06+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -12907,10 +12798,10 @@ kgr:kinomescan a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kinomescan.portal,
         kgr:kinomescan.spreadsheet,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi ;
     schema1:identifier "kinomescan" ;
     schema1:name "KINOMEscan" ;
@@ -14435,7 +14326,6 @@ kgr:mi a schema1:Ontology ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:mi.kg-bioportal,
         kgr:mi.obo,
@@ -14881,7 +14771,6 @@ kgr:mod a schema1:Ontology ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:mod.obo,
         kgr:mod.owl ;
@@ -14926,24 +14815,6 @@ kgr:modomics a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://genesilico.pl/modomics/> .
 
-kgr:molecular-data-kp a schema1:KnowledgeGraph ;
-    rdfs:label "MolePro" ;
-    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "MolePro is a Molecular Data Provider translating molecular scale to systems scale through a Reasoner API. It is a Translator Knowledge Provider." ;
-    dcterms:identifier "molecular-data-kp" ;
-    dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:molecular-data-kp.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes ;
-    schema1:name "MolePro" ;
-    doap:repository <https://github.com/broadinstitute/molecular-data-provider/> ;
-    skos:inScheme "biomedical",
-        "chemistry and biochemistry",
-        "drug discovery" ;
-    adms:status "Active" ;
-    foaf:homepage <https://github.com/broadinstitute/molecular-data-provider/> .
-
 kgr:molepro a schema1:Aggregator ;
     rdfs:label "Molecular Data Provider" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -14954,6 +14825,8 @@ kgr:molepro a schema1:Aggregator ;
     schema1:hasPart kgr:automat.molepro,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi ;
     schema1:identifier "molepro" ;
     schema1:name "Molecular Data Provider" ;
@@ -15306,7 +15179,6 @@ kgr:ms a schema1:Ontology ;
     dcterms:license <https://creativecommons.org/licenses/by/3.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:metabokg.graph,
         kgr:metabokg.schema,
@@ -15338,10 +15210,10 @@ kgr:msigdb a schema1:DataSource ;
         kgr:cfde-gse.graph,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:msigdb.browser,
         kgr:msigdb.collections.human,
@@ -15413,7 +15285,6 @@ kgr:mutationds a schema1:DataSource ;
     dcterms:isReferencedBy <PMID:29592813> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph ;
     schema1:name "Catalog of Validated Oncogenic Mutations" ;
     skos:altLabel "CGI Mutations",
@@ -17548,7 +17419,6 @@ kgr:oncokb a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:oncokb.annotator,
         kgr:oncokb.api,
@@ -18872,7 +18742,6 @@ kgr:pfam a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:drugmechdb.graph,
         kgr:enrichr-kg.graph,
@@ -19099,10 +18968,10 @@ kgr:pharmgkb a schema1:Resource ;
         kgr:genecards.web.interface,
         kgr:ibkh.graph,
         kgr:kg-covid-19.graph,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:obo-db-ingest.pharmgkb.disease.json,
         kgr:obo-db-ingest.pharmgkb.disease.obo,
@@ -19202,10 +19071,10 @@ kgr:pharos a schema1:Aggregator ;
     schema1:hasPart kgr:automat.pharos,
         kgr:automat.robokopkg,
         kgr:kg-idg.graph,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:ncatsgardkg.graph,
         kgr:pharos.api,
@@ -19454,7 +19323,6 @@ kgr:phosphositeplus a schema1:Aggregator ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:activedriverdb.downloads,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:epsd.download,
         kgr:harmonizome.downloads,
@@ -20083,10 +19951,10 @@ kgr:probe-miner a schema1:DataSource ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/29249694/> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
-        kgr:molepro.api,
+    schema1:hasPart kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:probe-miner.website ;
     schema1:identifier "probe-miner" ;
@@ -20598,7 +20466,6 @@ kgr:pubchem a schema1:DataSource ;
         kgr:biomarker.bkg.nodes.compound,
         kgr:chemid.pubchem-guide,
         kgr:chemid.pubchem-source,
-        kgr:drugrephub.sample-info.tsv,
         kgr:dsstoxdb.downloads,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
@@ -20620,10 +20487,10 @@ kgr:pubchem a schema1:DataSource ;
         kgr:markerdb.chemicals.tsv,
         kgr:microbiomekg.api,
         kgr:micromap.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:mps-db.portal,
         kgr:ncatsgardkg.graph,
@@ -20641,6 +20508,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:pubchem.pug.rest,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
+        kgr:repohub.sample-info.tsv,
         kgr:reprotox-kg.data,
         kgr:reprotox-kg.portal,
         kgr:stitch.api,
@@ -21051,7 +20919,6 @@ kgr:reactome a schema1:DataSource ;
         kgr:cardiokg.neo4j,
         kgr:cfde-gse.genesets,
         kgr:cfde-gse.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:ctd.chem_pathways_enriched,
         kgr:ctd.diseases_pathways,
@@ -21090,10 +20957,10 @@ kgr:reactome a schema1:DataSource ;
         kgr:mechreponet.kg,
         kgr:medkg.site,
         kgr:micromap.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
@@ -21277,7 +21144,6 @@ kgr:refseq a schema1:DataSource ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
@@ -21397,23 +21263,29 @@ kgr:repohub a schema1:DataSource ;
     dcterms:identifier "repohub" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/nm.4306> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:repohub.about,
         kgr:repohub.case-studies,
         kgr:repohub.data-portal,
         kgr:repohub.drug-info,
+        kgr:repohub.drug-info.tsv,
         kgr:repohub.followup-compounds,
         kgr:repohub.intake-policy,
         kgr:repohub.portal,
         kgr:repohub.repo1-library,
         kgr:repohub.sample-info,
+        kgr:repohub.sample-info.tsv,
         kgr:repohub.screening-info,
-        kgr:repohub.screening-library ;
+        kgr:repohub.screening-library,
+        kgr:translator.drug_rep_hub.graph,
+        kgr:translator.translator_kg.graph ;
     schema1:identifier "drug-repurposing-hub" ;
     schema1:name "Drug Repurposing Hub" ;
     skos:inScheme "biomedical",
@@ -21421,7 +21293,9 @@ kgr:repohub a schema1:DataSource ;
         "drug repositioning",
         "pharmacology" ;
     adms:status "Active" ;
-    foaf:homepage <https://repo-hub.broadinstitute.org/repurposing> .
+    foaf:homepage <https://repo-hub.broadinstitute.org/repurposing> ;
+    foaf:maker kgr:broad-cdot,
+        kgr:broad-institute .
 
 kgr:reprotox-kg a schema1:KnowledgeGraph ;
     rdfs:label "ReproTox-KG" ;
@@ -21962,10 +21836,10 @@ kgr:rxnorm a schema1:DataSource ;
         kgr:med-rt.core_xml,
         kgr:medi.drug_list_flexible,
         kgr:medi.drug_list_stringent,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:ndfrt.rxnorm,
         kgr:rxnorm.api,
@@ -22437,7 +22311,6 @@ kgr:sider a schema1:DataSource ;
         kgr:alzkb.data,
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:hetionet.data.edges,
         kgr:hetionet.data.json,
@@ -22448,10 +22321,10 @@ kgr:sider a schema1:DataSource ;
         kgr:hetionet.search,
         kgr:ibkh.graph,
         kgr:indra.cogex.code,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:oregano.graph,
         kgr:pharmdb.graph,
@@ -22500,7 +22373,6 @@ kgr:signor a schema1:DataSource ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:genecards.web.interface,
         kgr:iptmnet.ptm,
@@ -22741,7 +22613,6 @@ kgr:smpdb a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
@@ -22850,7 +22721,6 @@ kgr:snomedct a schema1:Ontology ;
         kgr:athena.mappings,
         kgr:athena.vocabularies,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:genecards.web.interface,
         kgr:imo-knowledge-graph.data,
@@ -23346,12 +23216,11 @@ kgr:stitch a schema1:DataSource ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:stitch.api,
         kgr:stitch.downloads,
@@ -23386,7 +23255,6 @@ kgr:string a schema1:DataSource ;
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cardiokg.neo4j,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:drkg.graph,
         kgr:epigraphdb.graph,
@@ -23410,10 +23278,10 @@ kgr:string a schema1:DataSource ;
         kgr:kg-monarch.graph.neo4j.nodes,
         kgr:kg-monarch.graph.rdf,
         kgr:kg-predict.gpkg,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:petagraph.graph,
         kgr:pheknowlator.graph,
@@ -23942,8 +23810,8 @@ kgr:tcrd a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:digcfdekg.graph,
         kgr:kg-idg.graph,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:prokn.idgd.compound.indication.diseaseorphenotype.edges,
         kgr:prokn.idgd.compound.nodes,
         kgr:prokn.idgp.compound.bioactivity.protein.edges,
@@ -24087,7 +23955,6 @@ kgr:tissues a schema1:Aggregator ;
         kgr:alzkb.data,
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:genecards.web.interface,
         kgr:harmonizome.downloads,
@@ -24300,8 +24167,7 @@ kgr:translator a schema1:Aggregator ;
     schema1:hasPart kgr:ctkp.docs,
         kgr:ctkp.smartapi,
         kgr:drug-approvals-kp.code,
-        kgr:geneticskp.docs,
-        kgr:geneticskp.trapi,
+        kgr:genetics-kp.trapi,
         kgr:icees-kg.metadata,
         kgr:icees-kg.trapi,
         kgr:text-mining-kp.graph,
@@ -24893,8 +24759,8 @@ kgr:unichem a schema1:Aggregator ;
     dcterms:license <https://www.ebi.ac.uk/about/terms-of-use/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:klocd.portal,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:mps-db.portal,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
@@ -24974,7 +24840,6 @@ kgr:uniprot a schema1:DataSource ;
         kgr:cardiokg.neo4j,
         kgr:cellmodelpassports.gene_identifiers,
         kgr:chembl.map_to_uniprot,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
@@ -25010,10 +24875,10 @@ kgr:uniprot a schema1:DataSource ;
         kgr:markerdb.proteins.tsv,
         kgr:medkg.site,
         kgr:microbiomekg.api,
-        kgr:molecular-data-kp.graph.edges,
-        kgr:molecular-data-kp.graph.nodes,
         kgr:molepro.api,
         kgr:molepro.catalog,
+        kgr:molepro.graph.edges,
+        kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:ncbigene.gene_refseq_uniprotkb_collab,
         kgr:neo.model,
@@ -25126,7 +24991,6 @@ kgr:uo a schema1:Ontology ;
     dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
-        kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:efo.obo,
         kgr:efo.owl,
@@ -28204,11 +28068,6 @@ kgr:civic.site a schema1:GraphicalInterface ;
     dcterms:description "Web interface that allows searching, browsing, and curating content in the CIViC database." ;
     schema1:url <https://civicdb.org/> .
 
-kgr:ckg.docs a schema1:DocumentationProduct ;
-    rdfs:label "CKG Documentation" ;
-    dcterms:description "Project documentation for installing, building, and querying the Clinical Knowledge Graph." ;
-    schema1:url <https://ckg.readthedocs.io/> .
-
 kgr:cl.cl-base.json a schema1:OntologyProduct ;
     rdfs:label "CL base module (OBOGraph-JSON version)" ;
     dcterms:description "complete CL but with no imports or external axioms" ;
@@ -29813,43 +29672,28 @@ kgr:drugmechdb.web a schema1:GraphicalInterface ;
     dcterms:description "Web interface for exploring curated DrugMechDB paths by drug and disease." ;
     schema1:url <https://sulab.github.io/DrugMechDB/> .
 
-kgr:drugrephub.drug-info.tsv a schema1:Product ;
-    rdfs:label "Drug Repurposing Hub Drug Information TSV" ;
-    dcterms:description "Latest drug-level annotations including compound names, clinical phase, mechanism of action, and protein targets (listed as version 2025-08-19 on the site)." ;
-    schema1:url <https://repo-hub.broadinstitute.org/public/data/repo-drug-annotation-20200324.txt> .
-
 kgr:dsmz-leibniz-institute-dsmz-german-collection-of-m a "Organization" ;
     rdfs:label "BacDive" .
-
-kgr:dsstox.api a schema1:ProgrammingInterface ;
-    rdfs:label "CompTox API" ;
-    dcterms:description "Public API for programmatic access to DSSTox data" ;
-    schema1:url <https://comptox.epa.gov/ctx-api/docs/chemical.html> .
-
-kgr:dsstox.complete a schema1:Product ;
-    rdfs:label "DSSTox Complete Database" ;
-    dcterms:description "The complete DSSTox database containing over 1.2 million chemical substances with identifiers and structures" ;
-    schema1:url <https://doi.org/10.23645/epacomptox.5588566> .
-
-kgr:dsstox.dashboard a schema1:GraphicalInterface ;
-    rdfs:label "CompTox Chemicals Dashboard" ;
-    dcterms:description "The CompTox Chemicals Dashboard provides access to the DSSTox database through a web interface" ;
-    schema1:url <https://comptox.epa.gov/dashboard> .
-
-kgr:dsstox.description a schema1:DocumentationProduct ;
-    rdfs:label "DSSToxDB Description" ;
-    dcterms:description "Documentation for the DSSTox database" ;
-    schema1:url <https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f> .
 
 kgr:dsstoxdb.api a schema1:ProgrammingInterface ;
     rdfs:label "EPA CompTox API" ;
     dcterms:description "Public CTX API documentation for programmatic access to DSSTox chemical data and computational toxicology information; individual API keys are required" ;
     schema1:url <https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis> .
 
+kgr:dsstoxdb.chemical-api a schema1:ProgrammingInterface ;
+    rdfs:label "CompTox API" ;
+    dcterms:description "Public API for programmatic access to DSSTox data" ;
+    schema1:url <https://comptox.epa.gov/ctx-api/docs/chemical.html> .
+
 kgr:dsstoxdb.dashboard a schema1:GraphicalInterface ;
     rdfs:label "CompTox Chemicals Dashboard" ;
     dcterms:description "Web-based interface for searching over 1.2 million chemicals with integrated toxicity, bioactivity, and exposure data" ;
     schema1:url <https://comptox.epa.gov/dashboard/> .
+
+kgr:dsstoxdb.description a schema1:DocumentationProduct ;
+    rdfs:label "DSSToxDB Description" ;
+    dcterms:description "Documentation for the DSSTox database" ;
+    schema1:url <https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f> .
 
 kgr:duo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "DUO KGX graph (KG-Bioportal)" ;
@@ -35154,11 +34998,6 @@ kgr:modomics.search a schema1:GraphicalInterface ;
     dcterms:description "Advanced search interface for querying modifications, pathways, sequences, and proteins." ;
     schema1:url <https://genesilico.pl/modomics/search/advance/> .
 
-kgr:molecular-data-kp.api a schema1:ProgrammingInterface ;
-    rdfs:label "Open API for Molecular Data KP" ;
-    dcterms:description "Open API for Molecular Data KP" ;
-    schema1:url <https://translator.broadinstitute.org/molecular_data_provider/api> .
-
 kgr:monarchinitiative.api a schema1:ProgrammingInterface ;
     rdfs:label "Monarch API" ;
     dcterms:description "Monarch API for programmatic access to integrated data" ;
@@ -39507,6 +39346,11 @@ kgr:repohub.drug-info a schema1:Product ;
     dcterms:description "Downloadable drug information file with compound metadata including names, structures, targets, mechanisms, and indications" ;
     schema1:url <https://repo-hub.broadinstitute.org/repurposing#download> .
 
+kgr:repohub.drug-info.tsv a schema1:Product ;
+    rdfs:label "Drug Repurposing Hub Drug Information TSV" ;
+    dcterms:description "Latest drug-level annotations including compound names, clinical phase, mechanism of action, and protein targets (listed as version 2025-08-19 on the site)." ;
+    schema1:url <https://repo-hub.broadinstitute.org/public/data/repo-drug-annotation-20200324.txt> .
+
 kgr:repohub.followup-compounds a schema1:Product ;
     rdfs:label "Follow-up Compound Collection" ;
     dcterms:description "Follow-up compound collection of approximately 2,400 compounds available for secondary studies" ;
@@ -43200,11 +43044,6 @@ kgr:drug-approvals-kp.code a schema1:ProcessProduct ;
     dcterms:description "Code for the Drug Approvals KP" ;
     schema1:url <https://github.com/multiomicsKP/drug_approvals_kp> .
 
-kgr:drugrephub.sample-info.tsv a schema1:Product ;
-    rdfs:label "Drug Repurposing Hub Sample Information TSV" ;
-    dcterms:description "Latest physical sample-level metadata including Broad sample IDs, vendor catalog numbers, SMILES, InChIKey, and PubChem IDs (listed as version 2025-08-19 on the site)." ;
-    schema1:url <https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt> .
-
 kgr:efip.text-mining-system a schema1:ProcessProduct ;
     rdfs:label "eFIP Text-Mining System" ;
     dcterms:description "eFIP text-mining workflow for retrieving protein literature, extracting phosphorylation mentions, detecting protein-protein interaction mentions, and identifying temporal or causal relationships between phosphorylation and interaction events." ;
@@ -43337,12 +43176,7 @@ kgr:genemania.cytoscape-app a schema1:Product ;
     dcterms:description "Open-source Cytoscape app that brings GeneMANIA gene function prediction, downloadable data sets, command-line tools, and Cytoscape Automation support to desktop network analysis workflows" ;
     schema1:url <https://apps.cytoscape.org/apps/genemania> .
 
-kgr:geneticskp.docs a schema1:DocumentationProduct ;
-    rdfs:label "Genetics KP Documentation" ;
-    dcterms:description "Translator wiki overview for Genetics KP, including team contacts, public API entrypoint, upstream data resources, and method references." ;
-    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider> .
-
-kgr:geneticskp.trapi a schema1:ProgrammingInterface ;
+kgr:genetics-kp.trapi a schema1:ProgrammingInterface ;
     rdfs:label "Genetics KP TRAPI Endpoint" ;
     dcterms:description "Translator Reasoner API endpoint for Genetics KP." ;
     schema1:url <https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/> .
@@ -45152,6 +44986,11 @@ kgr:reactome.pathways.go-terms.txt a schema1:Product ;
     dcterms:description "Mapping from Reactome pathways to Gene Ontology terms" ;
     schema1:url <https://download.reactome.org/96/Pathways2GoTerms_human.txt> .
 
+kgr:repohub.sample-info.tsv a schema1:Product ;
+    rdfs:label "Drug Repurposing Hub Sample Information TSV" ;
+    dcterms:description "Latest physical sample-level metadata including Broad sample IDs, vendor catalog numbers, SMILES, InChIKey, and PubChem IDs (listed as version 2025-08-19 on the site)." ;
+    schema1:url <https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt> .
+
 kgr:ribocentre.search a schema1:GraphicalInterface ;
     rdfs:label "Sequence Search" ;
     dcterms:description "Search functionality integrated with RNAcentral for sequence searching" ;
@@ -46781,6 +46620,15 @@ kgr:athena.mappings a schema1:MappingProduct ;
     dcterms:description "Concept mappings between different terminology systems" ;
     schema1:url <https://athena.ohdsi.org/search-terms/start> .
 
+kgr:broad a "Organization" ;
+    rdfs:label "Broad Institute",
+        "Broad Institute Center for the Science of Therapeutics",
+        "Broad Institute LINCS Transcriptomics Center",
+        "Broad Institute Translator Team",
+        "Broad Institute of MIT and Harvard",
+        "DepMap Team, Broad Institute",
+        "Project Achilles, Broad Institute" .
+
 kgr:chea.libraries a schema1:Product ;
     rdfs:label "ChEA Library Downloads" ;
     dcterms:description "Download catalog for ChEA3 transcription factor target libraries and benchmark datasets" ;
@@ -46940,15 +46788,6 @@ kgr:skm.pss.live.sif.projection.graph a schema1:GraphProduct ;
     rdfs:label "PSS Live Download, projection (SIF/LGL)" ;
     dcterms:description "Current PSS model in Simple Interaction Format compatible with Cytoscape. Reactions are collapsed to edges." ;
     schema1:url <https://skm.nib.si/downloads/pss/public/rxn-edges> .
-
-kgr:broad a "Organization" ;
-    rdfs:label "Broad Institute",
-        "Broad Institute Center for the Science of Therapeutics",
-        "Broad Institute LINCS Transcriptomics Center",
-        "Broad Institute Translator Team",
-        "Broad Institute of MIT and Harvard",
-        "DepMap Team, Broad Institute",
-        "Project Achilles, Broad Institute" .
 
 kgr:chea-kg.graph a schema1:GraphProduct ;
     rdfs:label "ChEA-KG Database" ;
@@ -47615,22 +47454,17 @@ kgr:cancer-genome-interpreter.clinicalkg.graph a schema1:GraphProduct ;
     dcterms:description "Neo4j database dump of the Clinical Knowledge Graph and additional relationships" ;
     schema1:url <https://data.mendeley.com/datasets/mrcf7f4tc2/1> .
 
-kgr:ckg.graph a schema1:GraphProduct ;
-    rdfs:label "CKG Graph Database Dump" ;
-    dcterms:description "Graph database dump and additional relationship files for the Clinical Knowledge Graph." ;
-    schema1:url <https://data.mendeley.com/datasets/mrcf7f4tc2/1> .
-
 kgr:clinicalkg.graph a schema1:GraphProduct ;
     rdfs:label "CKG Graph Dump" ;
     dcterms:description "Neo4j database dump of the Clinical Knowledge Graph and additional relationships" ;
     schema1:url <https://data.mendeley.com/datasets/mrcf7f4tc2/1> .
 
-kgr:molecular-data-kp.graph.edges a schema1:GraphProduct ;
+kgr:molepro.graph.edges a schema1:GraphProduct ;
     rdfs:label "Edges for Molecular Data KP" ;
     dcterms:description "KGX edges for Molecular Data KP" ;
     schema1:url <https://molepro.s3.amazonaws.com/edges.tsv> .
 
-kgr:molecular-data-kp.graph.nodes a schema1:GraphProduct ;
+kgr:molepro.graph.nodes a schema1:GraphProduct ;
     rdfs:label "Nodes for Molecular Data KP" ;
     dcterms:description "KGX nodes for Molecular Data KP" ;
     schema1:url <https://molepro.s3.amazonaws.com/nodes.tsv> .

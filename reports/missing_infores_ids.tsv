@@ -114,7 +114,6 @@ ciel	CIEL	Aggregator	https://openconceptlab.org/project/ciel/	resource/ciel/ciel
 cio	Confidence Information Ontology	Ontology	https://github.com/BgeeDB/confidence-information-ontology	resource/cio/cio.md
 circbase	circBase	Aggregator	https://www.circbase.org/	resource/circbase/circbase.md
 cito	CiTO	Ontology	https://sparontologies.github.io/cito/current/cito.html	resource/cito/cito.md
-ckg	Clinical Knowledge Graph	KnowledgeGraph	https://ckg.readthedocs.io/	resource/ckg/ckg.md
 cl-kg	Cell Ontology Knowledge Graph (CL-KG)	KnowledgeGraph	https://cellular-semantics.github.io/CL_KG/	resource/cl-kg/cl-kg.md
 clao	Collembola Anatomy Ontology	Ontology	https://github.com/luis-gonzalez-m/Collembola	resource/clao/clao.md
 climatemodelskg	Climate Models KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/climatepub4-kg/	resource/climatemodelskg/climatemodelskg.md
@@ -185,7 +184,6 @@ dreamkg	DREAM-KG	KnowledgeGraph	https://dreamkg.com/	resource/dreamkg/dreamkg.md
 drkg	Drug Repurposing Knowledge Graph	KnowledgeGraph	https://github.com/gnn4dr/DRKG	resource/drkg/drkg.md
 dron	The Drug Ontology	Ontology	https://github.com/ufbmi/dron	resource/dron/dron.md
 drug-approvals-kp	Drug Approvals KP	KnowledgeGraph	https://github.com/NCATSTranslator/Translator-All/wiki/Drug-Approvals-KP	resource/drug-approvals-kp/drug-approvals-kp.md
-dsstox	DSSTox	DataSource	https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database	resource/dsstox/dsstox.md
 duo	Data Use Ontology	Ontology	https://github.com/EBISPOT/DUO	resource/duo/duo.md
 ebrains	EBRAINS Knowledge Graph	KnowledgeGraph	https://docs.kg.ebrains.eu/	resource/ebrains/ebrains.md
 ec	Enzyme Commission	Ontology	https://www.enzyme-database.org/	resource/ec/ec.md
@@ -448,7 +446,6 @@ mmusdv	Mouse Developmental Stages	Ontology	https://github.com/obophenotype/devel
 mo	Microarray experimental conditions	Ontology	http://mged.sourceforge.net/ontologies/MGEDontology.php	resource/mo/mo.md
 mod	Protein modification	Ontology	http://www.psidev.info/MOD	resource/mod/mod.md
 modomics	MODOMICS	DataSource	https://genesilico.pl/modomics/	resource/modomics/modomics.md
-molecular-data-kp	MolePro	KnowledgeGraph	https://github.com/broadinstitute/molecular-data-provider/	resource/molecular-data-kp/molecular-data-kp.md
 motifmap	MotifMap	DataSource	https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-495	resource/motifmap/motifmap.md
 motrpac	Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub	DataSource	https://motrpac-data.org/	resource/motrpac/motrpac.md
 mpio	Minimum PDDI Information Ontology	Ontology	https://github.com/MPIO-Developers/MPIO	resource/mpio/mpio.md
