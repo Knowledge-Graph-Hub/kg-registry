@@ -3594,6 +3594,8 @@ products:
     source: clinpgx
   - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
   product_file_size: 5305829
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
 - category: Product
@@ -3689,6 +3691,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
   product_file_size: 15816874
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
 - category: MappingProduct
@@ -3820,6 +3824,18 @@ products:
     source: omim
   product_file_size: 11140
   product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json
+- category: MappingProduct
+  description: Tab-delimited mapping of GeneReviews chapters (NBK id and short name)
+    to OMIM numbers, updated weekly.
+  format: tsv
+  id: genereviews.omim
+  name: GeneReviews to OMIM Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_OMIM.txt
 publications:
 - authors:
   - Joanna S Amberger

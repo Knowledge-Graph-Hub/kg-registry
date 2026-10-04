@@ -78,6 +78,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
   product_file_size: 15816874
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
 - category: Product
@@ -116,6 +118,8 @@ products:
     source: clinpgx
   - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
   product_file_size: 5305829
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
 - category: MappingProduct

@@ -2400,7 +2400,23 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: Product
+  description: Tab-delimited list of GeneReviews chapters with short name, chapter
+    title, NCBI Bookshelf (NBK) id and PubMed id, updated weekly.
+  format: tsv
+  id: genereviews.titles
+  name: GeneReviews Titles
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRtitle_shortname_NBKid.txt
 publications:
 - authors:
   - Eric W Sayers

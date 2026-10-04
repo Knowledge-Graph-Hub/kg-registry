@@ -321,6 +321,10 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/39506859
