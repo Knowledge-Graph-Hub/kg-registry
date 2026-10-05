@@ -342,6 +342,15 @@ entries:
     source_path: resource/atom/atom.md
     status: valid
     warnings: []
+  resource/babel/babel.md#publication[0]#DOI:10.48550/arXiv.2601.10008:
+    checked_at: '2026-10-04T18:55:29Z'
+    errors: []
+    fingerprint: a02a1bb63134f028258c3b2a372fb1508c95d9cbeea93e7e1a4235a5ce9dffec
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2601.10008
+    source_path: resource/babel/babel.md
+    status: valid
+    warnings: []
   resource/bacdive/bacdive.md#publication[0]#DOI:10.1093/nar/gkae959:
     checked_at: '2026-06-22T16:35:49Z'
     errors: []
@@ -2130,6 +2139,15 @@ entries:
     source_path: resource/doid/doid.md
     status: valid
     warnings: []
+  resource/dolce/dolce.md#publication[0]#DOI:10.3233/AO-210259:
+    checked_at: '2026-10-04T18:54:55Z'
+    errors: []
+    fingerprint: 2218c9b70eadd8e7fa0b968fca58c163995202a63a861dbc9662f6daf8bf2612
+    publication_index: 0
+    reference_id: DOI:10.3233/AO-210259
+    source_path: resource/dolce/dolce.md
+    status: valid
+    warnings: []
   resource/dorothea/dorothea.md#publication[0]#DOI:10.1101/gr.240663.118:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3870,6 +3888,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41586-020-2188-x
     source_path: resource/huri/huri.md
+    status: valid
+    warnings: []
+  resource/iana-mediatype/iana-mediatype.md#publication[0]#DOI:10.17487/RFC6838:
+    checked_at: '2026-10-04T18:55:26Z'
+    errors: []
+    fingerprint: 4b056fdb63610b5aa754eed0161c8186cb729fe2b8a82462c595b91283ae5bb7
+    publication_index: 0
+    reference_id: DOI:10.17487/RFC6838
+    source_path: resource/iana-mediatype/iana-mediatype.md
     status: valid
     warnings: []
   resource/iao/iao.md#publication[0]#PMID:22874154:
@@ -8257,6 +8284,15 @@ entries:
     status: warning
     warnings:
     - DOI:10.1007/978-3-031-71637-9_21 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1007_978-3-031-71637-9_21.md
+  resource/sugi-atlas/sugi-atlas.md#publication[0]#DOI:10.5281/zenodo.20569200:
+    checked_at: '2026-10-04T18:55:28Z'
+    errors: []
+    fingerprint: 7bd571cc4f7e7d723e83f2138c6552c6bb02744664135ae3f413e97b682673e8
+    publication_index: 0
+    reference_id: DOI:10.5281/zenodo.20569200
+    source_path: resource/sugi-atlas/sugi-atlas.md
+    status: valid
+    warnings: []
   resource/suppkg/suppkg.md#publication[0]#DOI:10.1016/j.jbi.2022.104120:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -8995,6 +9031,15 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/NAR/gkaa1024
     source_path: resource/wikipathways/wikipathways.md
+    status: valid
+    warnings: []
+  resource/wordnet/wordnet.md#publication[0]#DOI:10.1145/219717.219748:
+    checked_at: '2026-10-04T18:54:56Z'
+    errors: []
+    fingerprint: eb5b206fd4f1b65b68ff207f8ace36c9736cfce7c2710ba993db6215c84f908f
+    publication_index: 0
+    reference_id: DOI:10.1145/219717.219748
+    source_path: resource/wordnet/wordnet.md
     status: valid
     warnings: []
   resource/wormbase/wormbase.md#publication[0]#PMID:19910365:

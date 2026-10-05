@@ -4589,6 +4589,76 @@ products:
     source: goldbook
   product_file_size: 977459
   product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv
+- category: Product
+  description: IANA Media Types OBO
+  format: obo
+  id: obo-db-ingest.iana.mediatype.obo
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: iana.mediatype OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: iana-mediatype
+  product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.obo
+- category: Product
+  description: IANA Media Types OWL
+  format: owl
+  id: obo-db-ingest.iana.mediatype.owl
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: iana.mediatype OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: iana-mediatype
+  product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.owl
+- category: Product
+  description: IANA Media Types OBO Graph JSON
+  format: json
+  id: obo-db-ingest.iana.mediatype.json
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: iana.mediatype OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: iana-mediatype
+  product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.json
+- category: MappingProduct
+  description: IANA Media Types SSSOM
+  format: sssom
+  id: obo-db-ingest.iana.mediatype.sssom.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: iana.mediatype SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: iana-mediatype
+  product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.sssom.tsv
+- category: Product
+  description: IANA Media Types Nodes TSV
+  format: tsv
+  id: obo-db-ingest.iana.mediatype.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: iana.mediatype Nodes TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: iana-mediatype
+  product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.tsv
 publications:
 - authors:
   - Charles Tapley Hoyt

@@ -357,6 +357,37 @@ products:
       - relation_type: prov:hadPrimarySource
         source: biobtree
     product_url: https://github.com/tamerh/biobtree
+  - category: GraphicalInterface
+    description: Sugi Atlas web site with search and one static reference page per human gene,
+      drug and disease (for example /atlas/gene/TP53/). Each page also has a Markdown version
+      at index.md and embeds a schema.org JSON-LD record.
+    format: http
+    id: sugi-atlas.portal
+    name: Sugi Atlas Web Site
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: sugi-atlas
+      - relation_type: prov:wasDerivedFrom
+        source: biobtree
+      - relation_type: prov:wasDerivedFrom
+        source: hgnc
+      - relation_type: prov:wasDerivedFrom
+        source: mondo
+      - relation_type: prov:wasDerivedFrom
+        source: chembl
+    product_url: https://sugi.bio/atlas/
+  - category: Product
+    description: JSON manifest of the atlas corpus, mapping page slugs to canonical names and
+      synonyms for genes, drugs, diseases and pathways (about 12.8 MB when checked on 2026-10-04).
+    format: json
+    id: sugi-atlas.manifest
+    name: Sugi Atlas Manifest
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: sugi-atlas
+      - relation_type: prov:wasDerivedFrom
+        source: biobtree
+    product_url: https://sugi.bio/atlas/manifest.json
 publications:
   - authors:
       - Tamer Gur
