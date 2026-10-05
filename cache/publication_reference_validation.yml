@@ -540,6 +540,15 @@ entries:
     source_path: resource/biocyc/biocyc.md
     status: valid
     warnings: []
+  resource/biodivportal/biodivportal.md#publication[0]#DOI:10.1007/s13222-024-00474-5:
+    checked_at: '2026-10-05T16:39:56Z'
+    errors: []
+    fingerprint: 5589ec7ec0c64e66b827e3749d382bf588bfa09b284842c1d773ad8f23e61ca9
+    publication_index: 0
+    reference_id: DOI:10.1007/s13222-024-00474-5
+    source_path: resource/biodivportal/biodivportal.md
+    status: valid
+    warnings: []
   resource/biofactoid/biofactoid.md#publication[0]#DOI:10.7554/eLife.68292:
     checked_at: '2026-06-22T16:25:07Z'
     errors: []
@@ -2211,6 +2220,15 @@ entries:
     source_path: resource/duo/duo.md
     status: valid
     warnings: []
+  resource/earthportal/earthportal.md#publication[0]#DOI:10.3897/aca.8.e151393:
+    checked_at: '2026-10-05T16:39:57Z'
+    errors: []
+    fingerprint: 23b448cceaa084d0fdbdfbd6adbaf78d8ceb9e92361da6ff0f37d8d2fb9a9541
+    publication_index: 0
+    reference_id: DOI:10.3897/aca.8.e151393
+    source_path: resource/earthportal/earthportal.md
+    status: valid
+    warnings: []
   resource/ecao/ecao.md#publication[0]#PMID:41717723:
     checked_at: '2026-08-06T18:17:12Z'
     errors: []
@@ -2523,6 +2541,15 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1186/s13326-016-0097-6
     source_path: resource/envo/envo.md
+    status: valid
+    warnings: []
+  resource/envthes/envthes.md#publication[0]#url:https://dl.gi.de/handle/20.500.12116/25815:
+    checked_at: '2026-10-05T16:40:16Z'
+    errors: []
+    fingerprint: 756b3a07978cb240c00d6f4b237ee112a3f86d0f1dacc67e23b93bda2d8eac93
+    publication_index: 0
+    reference_id: url:https://dl.gi.de/handle/20.500.12116/25815
+    source_path: resource/envthes/envthes.md
     status: valid
     warnings: []
   resource/eo/eo.md#publication[0]#PMID:22847540:
@@ -3735,6 +3762,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41586-020-2188-x
     source_path: resource/huri/huri.md
+    status: valid
+    warnings: []
+  resource/i-adopt/i-adopt.md#publication[0]#DOI:10.15497/RDA00071:
+    checked_at: '2026-10-05T16:39:53Z'
+    errors: []
+    fingerprint: 00f964036a77a8802c6b0e72e8ebd2cec4dda2ce27b8f0f2d30731b82341d7c8
+    publication_index: 0
+    reference_id: DOI:10.15497/RDA00071
+    source_path: resource/i-adopt/i-adopt.md
+    status: valid
+    warnings: []
+  resource/i-adopt/i-adopt.md#publication[1]#DOI:10.48550/arXiv.2107.06547:
+    checked_at: '2026-10-05T16:39:55Z'
+    errors: []
+    fingerprint: 6ad86f1557ad71fbb768dc0c639d106cc68b7f5af7d5cdbb68ecc95b7307e43b
+    publication_index: 1
+    reference_id: DOI:10.48550/arXiv.2107.06547
+    source_path: resource/i-adopt/i-adopt.md
     status: valid
     warnings: []
   resource/iao/iao.md#publication[0]#PMID:22874154:
@@ -5555,6 +5600,15 @@ entries:
     publication_index: 0
     reference_id: PMID:15892874
     source_path: resource/obo_rel/obo_rel.md
+    status: valid
+    warnings: []
+  resource/oboe/oboe.md#publication[0]#DOI:10.1016/j.ecoinf.2007.05.004:
+    checked_at: '2026-10-05T16:39:43Z'
+    errors: []
+    fingerprint: 141cfeef129848cfed3e29fd6926662ffed22bd0e166689dad8bf6ba661024a8
+    publication_index: 0
+    reference_id: DOI:10.1016/j.ecoinf.2007.05.004
+    source_path: resource/oboe/oboe.md
     status: valid
     warnings: []
   resource/obofoundry/obofoundry.md#publication[0]#DOI:10.1093/database/baab069:
