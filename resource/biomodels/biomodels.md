@@ -141,6 +141,8 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -183,6 +185,8 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 publications:
 - authors:

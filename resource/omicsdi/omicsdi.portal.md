@@ -38,6 +38,8 @@ original_source:
   source: peptideatlas
 - relation_type: prov:hadPrimarySource
   source: biomodels
+- relation_type: prov:hadPrimarySource
+  source: proteomexchange
 product_url: https://www.omicsdi.org/
 layout: product_detail
 ---
