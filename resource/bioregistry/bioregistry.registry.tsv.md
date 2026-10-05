@@ -7,6 +7,7 @@ name: Bioregistry TSV Export
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bioregistry
+product_file_size: 411960
 product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.tsv
 layout: product_detail
 ---

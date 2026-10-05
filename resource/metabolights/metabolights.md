@@ -71,6 +71,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: metabolights
+  product_file_size: 370291873
   product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_complete.xml
 - category: Product
   description: EB-eye XML export of MetaboLights study records only, regenerated daily
@@ -81,6 +82,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: metabolights
+  product_file_size: 344727382
   product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_studies.xml
 - category: MappingProduct
   description: JSON mapping from MetaboLights studies to the metabolites (ChEBI identifiers)
@@ -93,6 +95,7 @@ products:
     source: metabolights
   - relation_type: prov:hadPrimarySource
     source: chebi
+  product_file_size: 137433775
   product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json
 - category: Product
   description: JSON list of the ChEBI identifiers of metabolites in the MetaboLights
@@ -105,6 +108,7 @@ products:
     source: metabolights
   - relation_type: prov:hadPrimarySource
     source: chebi
+  product_file_size: 341671
   product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/metabolites_complete.json
 - category: DocumentationProduct
   description: MetaboLights help guides covering study submission, ISA-Tab metadata,

@@ -9,6 +9,7 @@ name: Bioregistry JSON-LD Context
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bioregistry
+product_file_size: 40691
 product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/contexts/bioregistry.context.jsonld
 layout: product_detail
 ---

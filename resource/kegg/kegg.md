@@ -3537,14 +3537,28 @@ products:
     source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: Product
+  description: LSDB Archive copy of KEGG MEDICUS, the KEGG resource for drugs, diseases
+    and drug labels, in dated releases (2014 to 2023), licensed CC BY-SA 4.0.
+  format: mixed
+  id: lsdb-archive.kegg-medicus
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: KEGG MEDICUS (LSDB Archive)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lsdb-archive
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  product_url: https://dbarchive.biosciencedbc.jp/data/kegg-medicus/
+- category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
-    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
-    column descriptions and the search_dbNSFP Java program. Variant tables are also
-    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
-    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
-    use. Free for academic and non-commercial users after registration with an institutional
-    email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
+    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
+    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
+    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
+    upstream scores that are free for academic use. Free for academic and non-commercial users
+    after registration with an institutional email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -3609,10 +3623,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
-    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
-    PrimateAI and RGC Million Exome data, whose authors require separate commercial
-    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
+    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
+    and RGC Million Exome data, whose authors require separate commercial licenses. Available
+    to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:
