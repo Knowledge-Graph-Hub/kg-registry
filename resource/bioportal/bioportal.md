@@ -328,6 +328,60 @@ products:
     source: biolink
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing agri-food ontologies and
+    semantic artefacts, their metadata, FAIRness scores, and mappings. The former address
+    https://agroportal.lirmm.fr/ redirects here.
+  format: http
+  id: agroportal.portal
+  name: AgroPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://agroportal.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: ProgrammingInterface
+  description: REST API for ontologies, classes, search, mappings, metrics, annotation, and
+    downloads of hosted semantic artefacts. Requests require a free API key, obtained by creating
+    an AgroPortal account. The former address https://data.agroportal.lirmm.fr/ redirects
+    here.
+  format: http
+  id: agroportal.api
+  name: AgroPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://data.agroportal.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: GraphicalInterface
+  description: Annotator service that tags free text with terms from AgroPortal ontologies.
+  format: http
+  id: agroportal.annotator
+  name: AgroPortal Annotator
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://agroportal.eu/annotator
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: DocumentationProduct
+  description: Documentation for the OntoPortal software that AgroPortal runs on, covering
+    installation, administration, and use of OntoPortal-based portals.
+  format: http
+  id: agroportal.ontoportal-docs
+  name: OntoPortal Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://ontoportal.github.io/documentation/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
 publications:
 - authors:
   - Jennifer Vendetti
