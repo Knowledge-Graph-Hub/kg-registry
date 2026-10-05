@@ -512,6 +512,28 @@ products:
     source: ncit
   product_file_size: 957555
   product_url: https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv
+- category: GraphicalInterface
+  description: CellMinerCDB web application for integrative cross-database genomics
+    and pharmacogenomics analysis of cancer cell lines, combining NCI-60 data with
+    CCLE, GDSC, CTRP, PRISM, Project Achilles, NCI-DTP SCLC, MD Anderson and NCATS
+    datasets.
+  format: http
+  id: cellminer.cellminercdb
+  name: CellMinerCDB
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  product_url: https://discover.nci.nih.gov/cellminercdb/
 publications:
 - authors:
   - Barretina J

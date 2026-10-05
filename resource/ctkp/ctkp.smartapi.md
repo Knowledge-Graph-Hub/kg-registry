@@ -10,6 +10,8 @@ original_source:
   source: ctkp
 - relation_type: prov:hadPrimarySource
   source: translator
+- relation_type: prov:wasInfluencedBy
+  source: smartapi
 product_url: https://smart-api.info/registry?q=e51073371d7049b9643e1edbdd61bcbd
 layout: product_detail
 ---
