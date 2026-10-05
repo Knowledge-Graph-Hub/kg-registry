@@ -8,6 +8,7 @@ name: LSDB Archive Database Catalog (CSV)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: lsdb-archive
+product_file_size: 0
 product_url: https://dbarchive.biosciencedbc.jp/en/databases.csv
 layout: product_detail
 ---

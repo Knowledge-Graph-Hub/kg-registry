@@ -15,6 +15,7 @@ name: GINsim Software
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ginsim-models
+product_file_size: 40731588
 product_url: https://ginsim.github.io/install/GINsim-3.1-with-deps.jar
 repository: https://github.com/GINsim/GINsim
 layout: product_detail

@@ -13025,7 +13025,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-05T16:04:15+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-05T17:32:11+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -16949,6 +16949,38 @@ kgr:nsides a schema1:DataSource ;
         "precision medicine" ;
     adms:status "Active" ;
     foaf:homepage <https://nsides.io/> .
+
+kgr:nsrr a schema1:DataSource ;
+    rdfs:label "National Sleep Research Resource" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The National Sleep Research Resource (NSRR) is an NHLBI-supported repository, launched in April 2014, that shares de-identified sleep data from cohort studies, clinical trials and other sources. It hosts tens of thousands of polysomnography and actigraphy recordings (mostly as EDF signal files with annotations) plus questionnaire, demographic and clinical covariate data from more than 50 datasets, such as the Sleep Heart Health Study, MESA Sleep, MrOS Sleep and CHAT. Core variables are harmonized across datasets, and data are downloaded after an approved data access request. NSRR is integrating its data into NHLBI BioData Catalyst." ;
+    dcterms:identifier "nsrr" ;
+    dcterms:isReferencedBy <doi:10.1093/jamia/ocy064>,
+        <doi:10.5665/sleep.5774> ;
+    dcterms:license <https://sleepdata.org/datasets> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:nsrr.cross-dataset-mapping,
+        kgr:nsrr.data-request,
+        kgr:nsrr.dataset-discovery,
+        kgr:nsrr.datasets,
+        kgr:nsrr.docs,
+        kgr:nsrr.edf-editor-translator,
+        kgr:nsrr.edf-viewer,
+        kgr:nsrr.gem,
+        kgr:nsrr.harmonization,
+        kgr:nsrr.luna,
+        kgr:nsrr.portal,
+        kgr:nsrr.r-package,
+        kgr:nsrr.tools ;
+    schema1:name "National Sleep Research Resource" ;
+    doap:repository <https://github.com/nsrr> ;
+    skos:altLabel "NSRR",
+        "sleepdata.org" ;
+    skos:inScheme "biomedical",
+        "clinical" ;
+    adms:status "Active" ;
+    foaf:homepage <https://sleepdata.org/> .
 
 kgr:nuget a schema1:DataSource ;
     rdfs:label "NuGet Gallery" ;
@@ -36996,6 +37028,71 @@ kgr:nsides.pdsportal a schema1:GraphicalInterface ;
     rdfs:label "PDSPortal" ;
     dcterms:description "Interactive RShiny web portal for browsing pediatric drug safety signals" ;
     schema1:url <https://pdsportal.shinyapps.io/pdsportal/> .
+
+kgr:nsrr.cross-dataset-mapping a schema1:MappingProduct ;
+    rdfs:label "NSRR Cross-Dataset Mapping" ;
+    dcterms:description "Version-controlled NSRR canonical data dictionary and mapping files linking variables across NSRR datasets." ;
+    schema1:url <https://github.com/nsrr/cross-dataset-mapping> .
+
+kgr:nsrr.data-request a schema1:ProcessProduct ;
+    rdfs:label "NSRR Data Access Request" ;
+    dcterms:description "Online data access request process. Users sign in, complete a request describing the intended use, and agree to the dataset's Data Access and Use Agreement; the NSRR team reviews requests, which can take up to two weeks. This example URL starts a request for the Sleep Heart Health Study." ;
+    schema1:url <https://sleepdata.org/data/requests/shhs/start> .
+
+kgr:nsrr.dataset-discovery a schema1:GraphicalInterface ;
+    rdfs:label "NSRR Dataset Discovery" ;
+    dcterms:description "NSRR Dataset Discovery tool (cohort matrix) for finding datasets by keyword or data modality, including subject type, sleep study data category and signal channel labels." ;
+    schema1:url <https://matrix.sleepdata.org/> .
+
+kgr:nsrr.datasets a schema1:Product ;
+    rdfs:label "NSRR Datasets" ;
+    dcterms:description "Catalog of more than 50 sleep datasets (polysomnography, actigraphy and questionnaire data from children and adults, plus a few animal studies), each with documentation, file listings, a variable data dictionary and a data access request link. Files can be downloaded only after an access request is approved." ;
+    schema1:url <https://sleepdata.org/datasets> .
+
+kgr:nsrr.docs a schema1:DocumentationProduct ;
+    rdfs:label "About the NSRR" ;
+    dcterms:description "About page describing the NSRR mission, datasets, data harmonization, analysis tools and the collaboration with NHLBI BioData Catalyst." ;
+    schema1:url <https://sleepdata.org/pages/about> .
+
+kgr:nsrr.edf-editor-translator a schema1:GraphicalInterface ;
+    rdfs:label "NSRR EDF Editor and Translator" ;
+    dcterms:description "Source code for the NSRR EDF Editor and Translator, a tool for working with European Data Format (EDF) sleep signal files and their annotations." ;
+    schema1:url <https://github.com/nsrr/edf-editor-translator> .
+
+kgr:nsrr.edf-viewer a schema1:GraphicalInterface ;
+    rdfs:label "NSRR EDF Viewer" ;
+    dcterms:description "MATLAB viewer for EDF polysomnography signal files and their NSRR annotations." ;
+    schema1:url <https://github.com/nsrr/edf-viewer> .
+
+kgr:nsrr.gem a schema1:ProgrammingInterface ;
+    rdfs:label "NSRR Ruby Gem" ;
+    dcterms:description "NSRR Ruby gem and command-line tool for downloading NSRR files with a user token, integrating data dictionaries, and building custom Ruby applications." ;
+    schema1:url <https://github.com/nsrr/nsrr-gem> .
+
+kgr:nsrr.harmonization a schema1:DocumentationProduct ;
+    rdfs:label "NSRR Data Harmonization" ;
+    dcterms:description "Documentation and scripts for NSRR harmonized variables, covering non-sleep phenotypes, polysomnography and polygraphy, actigraphy and sleep questionnaires, with JSON definitions of harmonized variables and coded domains." ;
+    schema1:url <https://github.com/nsrr/nsrr_data_harmonization> .
+
+kgr:nsrr.luna a schema1:ProgrammingInterface ;
+    rdfs:label "Luna" ;
+    dcterms:description "Luna, an open-source C/C++ library and command-line tool for analyzing large numbers of sleep studies, on which the NSRR signal processing pipeline is based." ;
+    schema1:url <https://github.com/remnrem/luna-base> .
+
+kgr:nsrr.portal a schema1:GraphicalInterface ;
+    rdfs:label "NSRR Portal" ;
+    dcterms:description "NSRR web portal for browsing datasets, searching variables, reading documentation and forum posts, and requesting and downloading sleep study data." ;
+    schema1:url <https://sleepdata.org/> .
+
+kgr:nsrr.r-package a schema1:ProgrammingInterface ;
+    rdfs:label "nsrr R Package" ;
+    dcterms:description "R package, contributed by John Muschelli and Ciprian Crainiceanu, for listing and downloading NSRR files directly from R." ;
+    schema1:url <https://cran.r-project.org/web/packages/nsrr/index.html> .
+
+kgr:nsrr.tools a schema1:DocumentationProduct ;
+    rdfs:label "NSRR Tools" ;
+    dcterms:description "NSRR tools page listing analysis software, the NSRR gem, Spout data dictionary tooling and other utilities for working with NSRR data." ;
+    schema1:url <https://sleepdata.org/tools> .
 
 kgr:nuget.website a schema1:GraphicalInterface ;
     rdfs:label "NuGet Gallery website" ;

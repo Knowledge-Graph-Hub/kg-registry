@@ -509,6 +509,7 @@ npass	NPASS	DataSource	https://bidd.group/NPASS/	resource/npass/npass.md
 npm	npm registry	DataSource	https://www.npmjs.com/	resource/npm/npm.md
 npo	Neuron Phenotype Ontology	Ontology	https://bioportal.bioontology.org/ontologies/NPOKB	resource/npo/npo.md
 nsduh	National Survey on Drug Use and Health	DataSource	https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health	resource/nsduh/nsduh.md
+nsrr	National Sleep Research Resource	DataSource	https://sleepdata.org/	resource/nsrr/nsrr.md
 nuget	NuGet Gallery	DataSource	https://www.nuget.org/	resource/nuget/nuget.md
 oae	Ontology of Adverse Events	Ontology	https://github.com/OAE-ontology/OAE/	resource/oae/oae.md
 oarcs	Ontology of Arthropod Circulatory Systems	Ontology	https://github.com/aszool/oarcs	resource/oarcs/oarcs.md

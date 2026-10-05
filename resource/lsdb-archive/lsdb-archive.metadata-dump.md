@@ -10,6 +10,7 @@ name: LSDB Archive Metadata Export
 original_source:
 - relation_type: prov:hadPrimarySource
   source: lsdb-archive
+product_file_size: 0
 product_url: https://dbarchive.biosciencedbc.jp/en/databases/download.json
 layout: product_detail
 ---

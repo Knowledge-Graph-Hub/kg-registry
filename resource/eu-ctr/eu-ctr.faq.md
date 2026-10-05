@@ -9,6 +9,7 @@ name: EU Clinical Trials Register FAQ
 original_source:
 - relation_type: prov:hadPrimarySource
   source: eu-ctr
+product_file_size: 184110
 product_url: https://www.clinicaltrialsregister.eu/doc/EU_CTR_FAQ.pdf
 layout: product_detail
 ---
