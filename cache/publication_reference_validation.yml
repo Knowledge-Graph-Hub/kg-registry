@@ -1063,6 +1063,15 @@ entries:
     source_path: resource/cebs/cebs.md
     status: valid
     warnings: []
+  resource/cellcollective/cellcollective.md#publication[0]#DOI:10.1186/1752-0509-6-96:
+    checked_at: '2026-10-04T18:39:04Z'
+    errors: []
+    fingerprint: ea4620bbdc9745c9d1405dba5eb6ee34ede7a6da99737e399d7af3227c95669b
+    publication_index: 0
+    reference_id: DOI:10.1186/1752-0509-6-96
+    source_path: resource/cellcollective/cellcollective.md
+    status: valid
+    warnings: []
   resource/cellmarker/cellmarker.md#publication[0]#DOI:10.1093/nar/gkac947:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2274,6 +2283,24 @@ entries:
     source_path: resource/ecocyc/ecocyc.md
     status: valid
     warnings: []
+  resource/ecrin-mdr/ecrin-mdr.md#publication[0]#DOI:10.12688/openreseurope.17131.2:
+    checked_at: '2026-10-04T18:39:00Z'
+    errors: []
+    fingerprint: 456a7a77c631bd7d6373d8c9b777385de7ad7ca6ad35b48b46f9aade984af04a
+    publication_index: 0
+    reference_id: DOI:10.12688/openreseurope.17131.2
+    source_path: resource/ecrin-mdr/ecrin-mdr.md
+    status: valid
+    warnings: []
+  resource/ecrin-mdr/ecrin-mdr.md#publication[1]#DOI:10.1186/s13063-016-1686-5:
+    checked_at: '2026-10-04T18:39:01Z'
+    errors: []
+    fingerprint: 8f5920bd758c5918b9db7c887b6ffa94eb3610a94626c7673fe0ba0b5cee0cae
+    publication_index: 1
+    reference_id: DOI:10.1186/s13063-016-1686-5
+    source_path: resource/ecrin-mdr/ecrin-mdr.md
+    status: valid
+    warnings: []
   resource/edam/edam.md#publication[0]#DOI:10.1093/bioinformatics/btt113:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3373,6 +3400,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1016/j.jbi.2022.104133
     source_path: resource/gp-kg/gp-kg.md
+    status: valid
+    warnings: []
+  resource/gpmdb/gpmdb.md#publication[0]#DOI:10.1021/pr049882h:
+    checked_at: '2026-10-04T18:39:02Z'
+    errors: []
+    fingerprint: d30e4ad7867989b8f30dbf65e63a8a7690a9f60e913745345e940356a784b892
+    publication_index: 0
+    reference_id: DOI:10.1021/pr049882h
+    source_path: resource/gpmdb/gpmdb.md
+    status: valid
+    warnings: []
+  resource/gpmdb/gpmdb.md#publication[1]#DOI:10.1093/bioinformatics/bth092:
+    checked_at: '2026-10-04T18:39:03Z'
+    errors: []
+    fingerprint: 03ce6df7d0feafdc1fdae19a43ac8dbb284029890e513d0fad6aacb6988466f1
+    publication_index: 1
+    reference_id: DOI:10.1093/bioinformatics/bth092
+    source_path: resource/gpmdb/gpmdb.md
     status: valid
     warnings: []
   resource/greengenes/greengenes.md#publication[0]#DOI:10.1038/s41587-023-01845-1:
@@ -6295,6 +6340,15 @@ entries:
     status: warning
     warnings:
     - PMID:42327171 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_42327171.md
+  resource/panorama-public/panorama-public.md#publication[0]#DOI:10.1074/mcp.ra117.000543:
+    checked_at: '2026-10-04T18:39:02Z'
+    errors: []
+    fingerprint: f0ae5e4ac0d8d2240394ac29af342e9e28becf264f4b615a96796522dec9b421
+    publication_index: 0
+    reference_id: DOI:10.1074/mcp.ra117.000543
+    source_path: resource/panorama-public/panorama-public.md
+    status: valid
+    warnings: []
   resource/panther/panther.md#publication[0]#PMID:34717010:
     checked_at: '2026-08-06T18:18:28Z'
     errors: []
@@ -6837,6 +6891,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gku1267
     source_path: resource/phosphositeplus/phosphositeplus.md
+    status: valid
+    warnings: []
+  resource/physiome-model-repository/physiome-model-repository.md#publication[0]#DOI:10.1093/bioinformatics/btq723:
+    checked_at: '2026-10-04T18:38:58Z'
+    errors: []
+    fingerprint: 8f09d9e1bffa2cfd866b1de2ce4639f95fc500b83b8d0efce0f73a22e014a650
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btq723
+    source_path: resource/physiome-model-repository/physiome-model-repository.md
+    status: valid
+    warnings: []
+  resource/physiome-model-repository/physiome-model-repository.md#publication[1]#DOI:10.1186/s12859-019-2987-y:
+    checked_at: '2026-10-04T18:38:59Z'
+    errors: []
+    fingerprint: 7487134da7bee99c493986b25f376821278cc70ba519ee76159602101eb75e9a
+    publication_index: 1
+    reference_id: DOI:10.1186/s12859-019-2987-y
+    source_path: resource/physiome-model-repository/physiome-model-repository.md
     status: valid
     warnings: []
   resource/pid/pid.md#publication[0]#DOI:10.1093/nar/gkn653:

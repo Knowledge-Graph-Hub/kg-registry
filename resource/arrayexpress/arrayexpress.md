@@ -271,6 +271,16 @@ products:
     source: node-omics
   - relation_type: prov:hadPrimarySource
     source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -325,6 +335,16 @@ products:
     source: node-omics
   - relation_type: prov:hadPrimarySource
     source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 publications:
 - authors:
