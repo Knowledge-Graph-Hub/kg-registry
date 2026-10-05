@@ -53,22 +53,28 @@ products:
     original_source:
       - source: ols
         relation_type: prov:hadPrimarySource
+      - source: obofoundry
+        relation_type: prov:wasDerivedFrom
   - category: Product
     compression: targz
     description: Gzipped tar archive (ontology_jsons_linked.tgz) of OLS ontology JSON with added cross-ontology and external database links.
     format: json
     id: ols.json-linked
     name: OLS Linked Ontology JSON
-    original_source: &id001
+    original_source:
       - relation_type: prov:hadPrimarySource
         source: ols
+      - relation_type: prov:wasDerivedFrom
+        source: obofoundry
     product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
   - category: Product
     description: Precomputed ontology term embeddings (full, PCA and UMAP projections) from multiple language models, used for semantic search in OLS.
     format: parquet
     id: ols.embeddings
     name: OLS Term Embeddings
-    original_source: *id001
+    original_source: &id001
+      - relation_type: prov:hadPrimarySource
+        source: ols
     product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/
   - category: ProgrammingInterface
     description: Model Context Protocol (MCP) server for querying OLS from AI assistants over Streamable HTTP.
@@ -193,6 +199,60 @@ products:
     - relation_type: prov:hadPrimarySource
       source: pubmed
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including names, synonyms, URI formats, local identifier patterns, providers and mappings to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: bioregistry
+      - relation_type: prov:wasInfluencedBy
+        source: obofoundry
+      - relation_type: prov:wasInfluencedBy
+        source: bioportal
+      - relation_type: prov:wasInfluencedBy
+        source: ols
+      - relation_type: prov:wasInfluencedBy
+        source: wikidata
+      - relation_type: prov:wasInfluencedBy
+        source: go
+      - relation_type: prov:wasInfluencedBy
+        source: cellosaurus
+      - relation_type: prov:wasInfluencedBy
+        source: uniprot
+      - relation_type: prov:wasInfluencedBy
+        source: ncbi
+      - relation_type: prov:wasInfluencedBy
+        source: biolink
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: bioregistry
+      - relation_type: prov:wasInfluencedBy
+        source: obofoundry
+      - relation_type: prov:wasInfluencedBy
+        source: bioportal
+      - relation_type: prov:wasInfluencedBy
+        source: ols
+      - relation_type: prov:wasInfluencedBy
+        source: wikidata
+      - relation_type: prov:wasInfluencedBy
+        source: go
+      - relation_type: prov:wasInfluencedBy
+        source: cellosaurus
+      - relation_type: prov:wasInfluencedBy
+        source: uniprot
+      - relation_type: prov:wasInfluencedBy
+        source: ncbi
+      - relation_type: prov:wasInfluencedBy
+        source: biolink
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 publications:
   - authors:
       - James McLaughlin

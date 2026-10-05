@@ -10,6 +10,8 @@ original_source:
   source: bioportal
 - relation_type: prov:hadPrimarySource
   source: umls
+- relation_type: prov:wasDerivedFrom
+  source: obofoundry
 product_url: https://data.bioontology.org/
 layout: product_detail
 ---

@@ -1,9 +1,11 @@
 ---
 category: GraphProduct
 compatibility:
-  - standard: biolink
-    version: 4.3.6
-description: KGX JSONL graph package for GO-CAM distributed via the NCATS Translator release site (release 2026_03_06; build go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6; source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1).
+- standard: biolink
+  version: 4.3.6
+description: KGX JSONL graph package for GO-CAM distributed via the NCATS Translator
+  release site (release 2026_03_06; build go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6;
+  source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1).
 edge_count: 4539
 format: kgx-jsonl
 id: translator.go_cam.graph
@@ -14,13 +16,15 @@ license:
 name: Translator GO-CAM KGX Graph
 node_count: 3181
 original_source:
-  - source: go-cam
-    relation_type: prov:hadPrimarySource
-  - source: translator
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: go-cam
+- relation_type: prov:hadPrimarySource
+  source: translator
+- relation_type: prov:wasInfluencedBy
+  source: node-normalizer
 product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
 versions:
-  - '2026_03_06'
-  - go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6
+- '2026_03_06'
+- go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6
 layout: product_detail
 ---
