@@ -39,11 +39,6 @@ products:
     source: inoh
   product_url: http://www.inoh.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
-    to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
-    with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
-    port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
-    name resolution)"))'
   - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
     to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
     with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
@@ -363,6 +358,21 @@ products:
     source: innatedb
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
+- category: Product
+  description: LSDB Archive copy of the INOH pathway database, in dated releases (2011 to
+    2017), licensed CC BY-SA 2.1 Japan.
+  format: mixed
+  id: lsdb-archive.inoh
+  license:
+    id: https://creativecommons.org/licenses/by-sa/2.1/jp/
+    label: CC BY-SA 2.1 JP
+  name: INOH (LSDB Archive)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lsdb-archive
+  - relation_type: prov:hadPrimarySource
+    source: inoh
+  product_url: https://dbarchive.biosciencedbc.jp/data/inoh/
 publications:
 - authors:
   - S. Yamamoto

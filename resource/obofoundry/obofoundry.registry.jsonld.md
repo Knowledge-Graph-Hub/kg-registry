@@ -10,6 +10,7 @@ name: OBO Foundry Registry Metadata (JSON-LD)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obofoundry
+product_file_size: 85640
 product_url: https://obofoundry.org/registry/ontologies.jsonld
 layout: product_detail
 ---

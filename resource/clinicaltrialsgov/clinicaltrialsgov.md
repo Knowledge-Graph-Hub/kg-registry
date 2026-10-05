@@ -16,7 +16,13 @@ contacts:
     value: register@clinicaltrials.gov
   label: ClinicalTrials.gov Help Desk
 creation_date: '2025-05-28T00:00:00Z'
-description: ClinicalTrials.gov is a database of privately and publicly funded clinical
+description: ClinicalTrials.gov is a database of privately and publicly funded clinical studies
+  conducted around the world, maintained by the National Library of Medicine (NLM) at the
+  National Institutes of Health (NIH). The registry contains information on over 400,000 studies
+  covering a wide range of diseases and conditions, providing details about study design,
+  locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov
+  serves as the primary registry for clinical trials required by the FDA Amendments Act and
+  is a data provider to the WHO International Clinical Trials Registry Platform (ICTRP).
   studies conducted around the world, maintained by the National Library of Medicine
   (NLM) at the National Institutes of Health (NIH). The registry contains information
   on over 400,000 studies covering a wide range of diseases and conditions, providing
@@ -35,7 +41,7 @@ fairsharing_id: FAIRsharing.mewhad
 homepage_url: https://clinicaltrials.gov/
 id: clinicaltrialsgov
 infores_id: clinicaltrials
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions
@@ -1404,9 +1410,62 @@ products:
     source: nih-era
   product_url: https://reporter.nih.gov/exporter/clinicalstudies
 - category: GraphicalInterface
-  description: Web portal for searching clinical studies and their data objects by
-    keyword, registry identifier, PubMed ID or country, with CSV and JSON export of
-    results.
+  description: ICTRP Search Portal for searching trial registration records from all ICTRP
+    data providers, with basic and advanced search, filters for phase, results, children,
+    COVID-19, rare diseases and genome editing, browsing by health topic and country, and
+    links to the original registry records.
+  format: http
+  id: who-ictrp.portal
+  name: ICTRP Search Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  product_url: https://trialsearch.who.int/
+- category: Product
+  description: Export of ICTRP search results (selected records or all records of a search)
+    from the Search Portal in XML or CSV format, free of charge under the WHO ICTRP data terms
+    and conditions.
+  format: xml
+  id: who-ictrp.search-export
+  name: ICTRP Search Results Export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database
+- category: ProgrammingInterface
+  connection_url: https://trialsearch.who.int/TrialService.asmx
+  description: ICTRP Search Portal Web Service, a SOAP/XML web service (operations include
+    GetTrials and GetTrialDetails) for querying the ICTRP database in real time. Access is
+    granted to agreed partners for research purposes, and WHO may charge to recoup costs.
+  format: xml
+  id: who-ictrp.web-service
+  is_public: false
+  name: ICTRP Search Portal Web Service
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  product_url: https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service
+- category: GraphicalInterface
+  description: Web portal for searching clinical studies and their data objects by keyword,
+    registry identifier, PubMed ID or country, with CSV and JSON export of results.
   format: http
   id: ecrin-mdr.portal
   name: ECRIN MDR Portal
@@ -1419,9 +1478,9 @@ products:
     source: pubmed
   product_url: https://newmdr.ecrin.org/
 - category: ProgrammingInterface
-  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints
-    for study search, lookup by registry ID or PubMed ID, full study and object details,
-    summary statistics and an OmicsDI export feed. Documented with Swagger/OpenAPI.
+  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints for study
+    search, lookup by registry ID or PubMed ID, full study and object details, summary statistics
+    and an OmicsDI export feed. Documented with Swagger/OpenAPI.
   format: http
   id: ecrin-mdr.api
   name: ECRIN MDR API
