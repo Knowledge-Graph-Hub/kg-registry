@@ -160,6 +160,16 @@ products:
     source: biomodels
   - relation_type: prov:hadPrimarySource
     source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -204,6 +214,16 @@ products:
     source: biomodels
   - relation_type: prov:hadPrimarySource
     source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 publications:
 - authors:
