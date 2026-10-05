@@ -408,6 +408,8 @@ products:
     source: diseases
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
   versions:
   - '2026_03_19'
@@ -1184,6 +1186,8 @@ products:
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ubergraph
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
   versions:
   - '2026_03_27'
@@ -2250,6 +2254,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 130
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
 - category: GraphProduct
@@ -2274,6 +2280,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 - category: GraphProduct
@@ -2298,6 +2306,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 - category: GraphProduct

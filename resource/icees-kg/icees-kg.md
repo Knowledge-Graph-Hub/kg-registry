@@ -146,6 +146,8 @@ products:
     source: icees-kg
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
   versions:
   - '2026_03_12'
@@ -227,6 +229,8 @@ products:
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ubergraph
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
   versions:
   - '2026_03_27'
@@ -349,7 +353,8 @@ publications:
   doi: 10.1093/jamia/ocz042
   id: https://doi.org/10.1093/jamia/ocz042
   journal: Journal of the American Medical Informatics Association
-  title: 'A novel approach for exposing and sharing clinical data: the Translator Integrated Clinical and Environmental Exposures Service'
+  title: 'A novel approach for exposing and sharing clinical data: the Translator
+    Integrated Clinical and Environmental Exposures Service'
   year: '2019'
 - authors:
   - Steven Cox
@@ -365,7 +370,8 @@ publications:
   doi: 10.2196/17964
   id: https://doi.org/10.2196/17964
   journal: JMIR Medical Informatics
-  title: 'Visualization Environment for Federated Knowledge Graphs: Development of an Interactive Biomedical Query Language and Web Application Interface'
+  title: 'Visualization Environment for Federated Knowledge Graphs: Development of
+    an Interactive Biomedical Query Language and Web Application Interface'
   year: '2020'
 repository: https://github.com/NCATSTranslator/Translator-All/wiki/Exposures-Provider-ICEES
 tags:

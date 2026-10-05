@@ -194,6 +194,8 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
   versions:
   - '2026_03_06'
@@ -287,6 +289,8 @@ products:
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ubergraph
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
   versions:
   - '2026_03_27'

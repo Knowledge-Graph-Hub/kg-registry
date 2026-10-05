@@ -170,6 +170,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing integrated omics dataset metadata
     across repositories.
@@ -199,6 +201,16 @@ products:
     source: paxdb
   - relation_type: prov:hadPrimarySource
     source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: ega
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: biomodels
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -231,6 +243,16 @@ products:
     source: paxdb
   - relation_type: prov:hadPrimarySource
     source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: ega
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: biomodels
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 publications:
 - authors:

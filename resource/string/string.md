@@ -4025,12 +4025,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -4074,6 +4076,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
   format: kgx-jsonl
@@ -4096,6 +4100,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 130
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
 - category: GraphProduct
@@ -4120,6 +4126,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 - category: GraphProduct
@@ -4144,6 +4152,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 - category: GraphProduct

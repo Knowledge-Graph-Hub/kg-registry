@@ -2,221 +2,298 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: github
-        value: EBISPOT/ols4
-      - contact_type: email
-        value: ols-support@ebi.ac.uk
-    id: ebi
-    label: EMBL-EBI Samples, Phenotypes and Ontologies Team
+- category: Organization
+  contact_details:
+  - contact_type: github
+    value: EBISPOT/ols4
+  - contact_type: email
+    value: ols-support@ebi.ac.uk
+  id: ebi
+  label: EMBL-EBI Samples, Phenotypes and Ontologies Team
 creation_date: '2025-10-30T00:00:00Z'
-description: The Ontology Lookup Service (OLS) is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions. Users can browse ontologies through the website and programmatically via the OLS REST API and an MCP server. As of 2026-09-30 it served 287 ontologies with about 10.8 million classes, loaded from the OBO Foundry registry plus ontologies curated by EMBL-EBI. Maintained by the Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI.
+description: The Ontology Lookup Service (OLS) is a repository for biomedical ontologies
+  that aims to provide a single point of access to the latest ontology versions. Users
+  can browse ontologies through the website and programmatically via the OLS REST
+  API and an MCP server. As of 2026-09-30 it served 287 ontologies with about 10.8
+  million classes, loaded from the OBO Foundry registry plus ontologies curated by
+  EMBL-EBI. Maintained by the Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI.
 domains:
-  - biomedical
-  - biological systems
-  - information technology
+- biomedical
+- biological systems
+- information technology
 homepage_url: https://www.ebi.ac.uk/ols4/
 id: ols
 infores_id: ols
 last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
-name: Ontology Lookup Service
-products:
-  - category: GraphicalInterface
-    description: Web interface for browsing and searching biomedical ontologies with exact match and obsolete term filtering
-    format: http
-    id: ols.portal
-    name: OLS Web Portal
-    product_url: https://www.ebi.ac.uk/ols4/
-    original_source:
-      - source: ols
-        relation_type: prov:hadPrimarySource
-    is_public: true
-  - category: ProgrammingInterface
-    description: RESTful API for programmatic access to ontology data including terms, properties, and relationships
-    format: http
-    id: ols.api
-    name: OLS REST API
-    product_url: https://www.ebi.ac.uk/ols4/api-docs
-    original_source:
-      - source: ols
-        relation_type: prov:hadPrimarySource
-    is_public: true
-  - category: Product
-    compression: targz
-    description: Gzipped tar archive (ontology_jsons.tgz, about 2 GB) of all ontologies loaded into OLS, in OLS JSON format.
-    format: json
-    id: ols.json
-    name: OLS Ontologies JSON
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
-    original_source:
-      - source: ols
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    compression: targz
-    description: Gzipped tar archive (ontology_jsons_linked.tgz) of OLS ontology JSON with added cross-ontology and external database links.
-    format: json
-    id: ols.json-linked
-    name: OLS Linked Ontology JSON
-    original_source: &id001
-      - relation_type: prov:hadPrimarySource
-        source: ols
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
-  - category: Product
-    description: Precomputed ontology term embeddings (full, PCA and UMAP projections) from multiple language models, used for semantic search in OLS.
-    format: parquet
-    id: ols.embeddings
-    name: OLS Term Embeddings
-    original_source: *id001
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/
-  - category: ProgrammingInterface
-    description: Model Context Protocol (MCP) server for querying OLS from AI assistants over Streamable HTTP.
-    format: http
-    id: ols.mcp
-    is_public: true
-    name: OLS MCP Server
-    original_source: *id001
-    product_url: https://www.ebi.ac.uk/ols4/mcp
-  - category: MappingProduct
-    compression: targz
-    description: Ontology mappings extracted from all ontologies in SSSOM TSV format
-    format: sssom
-    id: ols.mappings
-    name: OLS SSSOM Mappings
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
-    original_source:
-      - source: ols
-        relation_type: prov:hadPrimarySource
-  - category: ProgrammingInterface
-    description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,
-      querying the BioThings and other APIs registered to the team in SmartAPI.
-    format: http
-    id: service-kp.trapi
-    is_public: true
-    name: Service Provider TRAPI
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: service-kp
-    - relation_type: prov:hadPrimarySource
-      source: biothings
-    - relation_type: prov:hadPrimarySource
-      source: monarchinitiative
-    - relation_type: prov:hadPrimarySource
-      source: ctd
-    - relation_type: prov:hadPrimarySource
-      source: complexportal
-    - relation_type: prov:hadPrimarySource
-      source: uniprot
-    - relation_type: prov:hadPrimarySource
-      source: litvar
-    - relation_type: prov:hadPrimarySource
-      source: go
-    - relation_type: prov:hadPrimarySource
-      source: ols
-    - relation_type: prov:hadPrimarySource
-      source: alliance
-    - relation_type: prov:hadPrimarySource
-      source: bindingdb
-    - relation_type: prov:hadPrimarySource
-      source: bioplanet
-    - relation_type: prov:hadPrimarySource
-      source: ddinter
-    - relation_type: prov:hadPrimarySource
-      source: dgidb
-    - relation_type: prov:hadPrimarySource
-      source: diseases
-    - relation_type: prov:hadPrimarySource
-      source: gene2phenotype
-    - relation_type: prov:hadPrimarySource
-      source: foodb
-    - relation_type: prov:hadPrimarySource
-      source: gtrx
-    - relation_type: prov:hadPrimarySource
-      source: hp
-    - relation_type: prov:hadPrimarySource
-      source: idisk
-    - relation_type: prov:hadPrimarySource
-      source: innatedb
-    - relation_type: prov:hadPrimarySource
-      source: mgi
-    - relation_type: prov:hadPrimarySource
-      source: pfocr
-    - relation_type: prov:hadPrimarySource
-      source: repodb
-    - relation_type: prov:hadPrimarySource
-      source: rhea
-    - relation_type: prov:hadPrimarySource
-      source: semmeddb
-    - relation_type: prov:hadPrimarySource
-      source: suppkg
-    - relation_type: prov:hadPrimarySource
-      source: ttd
-    - relation_type: prov:hadPrimarySource
-      source: uberon
-    - relation_type: prov:hadPrimarySource
-      source: ncbigene
-    - relation_type: prov:hadPrimarySource
-      source: clingen
-    - relation_type: prov:hadPrimarySource
-      source: cpdb
-    - relation_type: prov:hadPrimarySource
-      source: panther
-    - relation_type: prov:hadPrimarySource
-      source: reactome
-    - relation_type: prov:hadPrimarySource
-      source: aeolus
-    - relation_type: prov:hadPrimarySource
-      source: chebi
-    - relation_type: prov:hadPrimarySource
-      source: chembl
-    - relation_type: prov:hadPrimarySource
-      source: drugcentral
-    - relation_type: prov:hadPrimarySource
-      source: disgenet
-    - relation_type: prov:hadPrimarySource
-      source: mondo
-    - relation_type: prov:hadPrimarySource
-      source: civic
-    - relation_type: prov:hadPrimarySource
-      source: clinvar
-    - relation_type: prov:hadPrimarySource
-      source: dbsnp
-    - relation_type: prov:hadPrimarySource
-      source: doid
-    - relation_type: prov:hadPrimarySource
-      source: multiomics-kp
-    - relation_type: prov:hadPrimarySource
-      source: text-mining-kp
-    - relation_type: prov:hadPrimarySource
-      source: gdsc
-    - relation_type: prov:hadPrimarySource
-      source: pubmed
-    - relation_type: prov:wasInformedBy
-      source: biothings-explorer
-    product_url: https://bte.transltr.io/v1/team/Service%20Provider
-publications:
-  - authors:
-      - James McLaughlin
-      - Josh Lagrimas
-      - Haider Iqbal
-      - Helen Parkinson
-      - Henriette Harmse
-    doi: 10.1093/bioinformatics/btaf279
-    id: PMID:40323307
-    journal: Bioinformatics
-    preferred: true
-    title: 'OLS4: a new Ontology Lookup Service for a growing interdisciplinary knowledge ecosystem'
-    year: '2025'
-repository: https://github.com/EBISPOT/ols4
-synonyms:
-  - OLS
-  - OLS4
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
   label: Apache License 2.0 (software; loaded ontologies carry their own licenses)
+name: Ontology Lookup Service
+products:
+- category: GraphicalInterface
+  description: Web interface for browsing and searching biomedical ontologies with
+    exact match and obsolete term filtering
+  format: http
+  id: ols.portal
+  is_public: true
+  name: OLS Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  product_url: https://www.ebi.ac.uk/ols4/
+- category: ProgrammingInterface
+  description: RESTful API for programmatic access to ontology data including terms,
+    properties, and relationships
+  format: http
+  id: ols.api
+  is_public: true
+  name: OLS REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  product_url: https://www.ebi.ac.uk/ols4/api-docs
+- category: Product
+  compression: targz
+  description: Gzipped tar archive (ontology_jsons.tgz, about 2 GB) of all ontologies
+    loaded into OLS, in OLS JSON format.
+  format: json
+  id: ols.json
+  name: OLS Ontologies JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  - relation_type: prov:wasDerivedFrom
+    source: obofoundry
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
+- category: Product
+  compression: targz
+  description: Gzipped tar archive (ontology_jsons_linked.tgz) of OLS ontology JSON
+    with added cross-ontology and external database links.
+  format: json
+  id: ols.json-linked
+  name: OLS Linked Ontology JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  - relation_type: prov:wasDerivedFrom
+    source: obofoundry
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
+- category: Product
+  description: Precomputed ontology term embeddings (full, PCA and UMAP projections)
+    from multiple language models, used for semantic search in OLS.
+  format: parquet
+  id: ols.embeddings
+  name: OLS Term Embeddings
+  original_source: &id001
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/
+- category: ProgrammingInterface
+  description: Model Context Protocol (MCP) server for querying OLS from AI assistants
+    over Streamable HTTP.
+  format: http
+  id: ols.mcp
+  is_public: true
+  name: OLS MCP Server
+  original_source: *id001
+  product_url: https://www.ebi.ac.uk/ols4/mcp
+- category: MappingProduct
+  compression: targz
+  description: Ontology mappings extracted from all ontologies in SSSOM TSV format
+  format: sssom
+  id: ols.mappings
+  name: OLS SSSOM Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
+- category: ProgrammingInterface
+  description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,
+    querying the BioThings and other APIs registered to the team in SmartAPI.
+  format: http
+  id: service-kp.trapi
+  is_public: true
+  name: Service Provider TRAPI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: service-kp
+  - relation_type: prov:hadPrimarySource
+    source: biothings
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ols
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: bioplanet
+  - relation_type: prov:hadPrimarySource
+    source: ddinter
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: aeolus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
+  product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: Product
+  description: Full Bioregistry export as JSON, with every prefix record including
+    names, synonyms, URI formats, local identifier patterns, providers and mappings
+    to the prefixes of other registries.
+  format: json
+  id: bioregistry.registry.json
+  name: Bioregistry JSON Export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioregistry
+  - relation_type: prov:wasInfluencedBy
+    source: obofoundry
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: ols
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: cellosaurus
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  - relation_type: prov:wasInfluencedBy
+    source: biolink
+  product_file_size: 786637
+  product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+- category: MappingProduct
+  description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+    in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology
+    registry, Cellosaurus, UniProt and NCBI.
+  format: sssom
+  id: bioregistry.sssom
+  name: Bioregistry SSSOM Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioregistry
+  - relation_type: prov:wasInfluencedBy
+    source: obofoundry
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: ols
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: cellosaurus
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  - relation_type: prov:wasInfluencedBy
+    source: biolink
+  product_file_size: 136267
+  product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+publications:
+- authors:
+  - James McLaughlin
+  - Josh Lagrimas
+  - Haider Iqbal
+  - Helen Parkinson
+  - Henriette Harmse
+  doi: 10.1093/bioinformatics/btaf279
+  id: PMID:40323307
+  journal: Bioinformatics
+  preferred: true
+  title: 'OLS4: a new Ontology Lookup Service for a growing interdisciplinary knowledge
+    ecosystem'
+  year: '2025'
+repository: https://github.com/EBISPOT/ols4
+synonyms:
+- OLS
+- OLS4
 ---
-
 # Ontology Lookup Service
 
 ## Overview
