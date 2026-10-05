@@ -27,6 +27,7 @@ original_source:
   source: ncbi
 - relation_type: prov:wasInfluencedBy
   source: biolink
+product_file_size: 786637
 product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 layout: product_detail
 ---

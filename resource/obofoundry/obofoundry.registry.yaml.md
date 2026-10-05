@@ -12,6 +12,7 @@ name: OBO Foundry Registry Metadata (YAML)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obofoundry
+product_file_size: 76313
 product_url: https://obofoundry.org/registry/ontologies.yml
 layout: product_detail
 ---

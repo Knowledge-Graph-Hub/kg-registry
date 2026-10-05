@@ -8,6 +8,7 @@ name: MetaboLights EB-eye Studies Export
 original_source:
 - relation_type: prov:hadPrimarySource
   source: metabolights
+product_file_size: 344727382
 product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_studies.xml
 layout: product_detail
 ---
