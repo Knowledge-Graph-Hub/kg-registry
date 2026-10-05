@@ -302,6 +302,54 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biomodels
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: Product
+  description: ArrayExpress record E-MTAB-797, Open TG-GATEs gene expression data from rat
+    primary hepatocytes treated in vitro (Affymetrix Rat Genome 230 2.0).
+  format: http
+  id: open-tggates.arrayexpress-rat-in-vitro
+  name: Open TG-GATEs in ArrayExpress (Rat In Vitro)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tggates
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-797
+- category: Product
+  description: ArrayExpress record E-MTAB-798, Open TG-GATEs gene expression data from human
+    primary hepatocytes treated in vitro (Affymetrix Human Genome U133 Plus 2.0).
+  format: http
+  id: open-tggates.arrayexpress-human-in-vitro
+  name: Open TG-GATEs in ArrayExpress (Human In Vitro)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tggates
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-798
+- category: Product
+  description: ArrayExpress record E-MTAB-799, Open TG-GATEs gene expression data from rat
+    liver and kidney after single-dose in vivo exposure (Affymetrix Rat Genome 230 2.0).
+  format: http
+  id: open-tggates.arrayexpress-rat-single-dose
+  name: Open TG-GATEs in ArrayExpress (Rat In Vivo Single Dose)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tggates
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-799
+- category: Product
+  description: ArrayExpress record E-MTAB-800, Open TG-GATEs gene expression data from rat
+    liver and kidney after repeated-dose in vivo exposure (Affymetrix Rat Genome 230 2.0).
+  format: http
+  id: open-tggates.arrayexpress-rat-repeat-dose
+  name: Open TG-GATEs in ArrayExpress (Rat In Vivo Repeated Dose)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tggates
+  - relation_type: prov:hadPrimarySource
+    source: arrayexpress
+  product_url: https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-800
 publications:
 - authors:
   - Ugis Sarkans

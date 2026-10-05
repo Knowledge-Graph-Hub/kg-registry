@@ -296,6 +296,8 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
@@ -326,8 +328,65 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+- category: GraphicalInterface
+  description: NCBO BioPortal entry for browsing and searching ECSO
+  format: http
+  id: ecso.bioportal
+  name: ECSO BioPortal Entry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecso
+  product_url: https://bioportal.bioontology.org/ontologies/ECSO
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  warnings:
+  - Page returned HTTP 403 to automated requests when checked on 2026-10-05. The BioPortal
+    REST API still lists the ontology.
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing French biomedical
+    ontologies and terminologies and the mappings between them, with recommender and
+    landscape views.
+  format: http
+  id: sifr-bioportal.portal
+  name: SIFR BioPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sifr-bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://bioportal.lirmm.fr/
+- category: ProgrammingInterface
+  description: OntoPortal REST API for ontologies, classes, search, mappings, metrics,
+    submissions, and the annotator. Endpoints require a free SIFR BioPortal API key.
+  format: http
+  id: sifr-bioportal.api
+  name: SIFR BioPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sifr-bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://data.bioportal.lirmm.fr/
+- category: ProcessProduct
+  description: SIFR Annotator, a semantic annotation service for French biomedical
+    text and clinical notes that tags text with concepts from the ontologies hosted
+    in SIFR BioPortal. It ports the NCBO Annotator to French, adding lemmatization,
+    negation, experiencer and temporality detection, and scoring. Available as a web
+    form and through the REST API (/annotator, API key required).
+  format: http
+  id: sifr-bioportal.annotator
+  name: SIFR Annotator
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sifr-bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://bioportal.lirmm.fr/annotator
 publications:
 - authors:
   - Jennifer Vendetti

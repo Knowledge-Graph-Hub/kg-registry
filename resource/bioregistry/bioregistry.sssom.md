@@ -27,6 +27,9 @@ original_source:
   source: ncbi
 - relation_type: prov:wasInfluencedBy
   source: biolink
+- relation_type: prov:wasInfluencedBy
+  source: n2t
+product_file_size: 136267
 product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 layout: product_detail
 ---

@@ -540,6 +540,15 @@ entries:
     source_path: resource/biocyc/biocyc.md
     status: valid
     warnings: []
+  resource/biodata-catalyst/biodata-catalyst.md#publication[0]#DOI:10.1093/jamia/ocad048:
+    checked_at: '2026-10-05T16:28:54Z'
+    errors: []
+    fingerprint: c640cfd5198794cd5ee4382b698b891ee794717e88854943e60fbb1f40efc3eb
+    publication_index: 0
+    reference_id: DOI:10.1093/jamia/ocad048
+    source_path: resource/biodata-catalyst/biodata-catalyst.md
+    status: valid
+    warnings: []
   resource/biofactoid/biofactoid.md#publication[0]#DOI:10.7554/eLife.68292:
     checked_at: '2026-06-22T16:25:07Z'
     errors: []
@@ -5256,6 +5265,15 @@ entries:
     source_path: resource/myaura/myaura.md
     status: valid
     warnings: []
+  resource/n2t/n2t.md#publication[0]#DOI:10.1038/sdata.2018.29:
+    checked_at: '2026-10-05T16:29:24Z'
+    errors: []
+    fingerprint: 6830a82310999f627093a9d319fe502a8114675b7a1120f58aeb7a356a0374fe
+    publication_index: 0
+    reference_id: DOI:10.1038/sdata.2018.29
+    source_path: resource/n2t/n2t.md
+    status: valid
+    warnings: []
   resource/nanopublications/nanopublications.md#publication[0]#DOI:10.3233/ds-170010:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5842,6 +5860,15 @@ entries:
     publication_index: 0
     reference_id: url:https://ceur-ws.org/Vol-1747/IT504_ICBO2016.pdf
     source_path: resource/oostt/oostt.md
+    status: valid
+    warnings: []
+  resource/open-tggates/open-tggates.md#publication[0]#DOI:10.1093/nar/gku955:
+    checked_at: '2026-10-05T16:28:53Z'
+    errors: []
+    fingerprint: 65ba882f6b55cc7d43d2b518cbc67ef027a402f10cc6dc91dd4170b0261c37f1
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gku955
+    source_path: resource/open-tggates/open-tggates.md
     status: valid
     warnings: []
   resource/open-tree-of-life/open-tree-of-life.md#publication[0]#DOI:10.1073/pnas.1423041112:
@@ -7637,6 +7664,15 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1038/msb.2009.98
     source_path: resource/sider/sider.md
+    status: valid
+    warnings: []
+  resource/sifr-bioportal/sifr-bioportal.md#publication[0]#DOI:10.1186/s12859-018-2429-2:
+    checked_at: '2026-10-05T16:29:23Z'
+    errors: []
+    fingerprint: 6927ee8305148b5c8387834de226bd02e78151bbc4d7a6dc2f77e2b832c91270
+    publication_index: 0
+    reference_id: DOI:10.1186/s12859-018-2429-2
+    source_path: resource/sifr-bioportal/sifr-bioportal.md
     status: valid
     warnings: []
   resource/signor/signor.md#publication[0]#DOI:10.1093/nar/gkac883:
