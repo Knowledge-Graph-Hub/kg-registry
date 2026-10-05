@@ -38,6 +38,16 @@ original_source:
   source: peptideatlas
 - relation_type: prov:hadPrimarySource
   source: biomodels
+- relation_type: prov:hadPrimarySource
+  source: gpmdb
+- relation_type: prov:hadPrimarySource
+  source: cellcollective
+- relation_type: prov:hadPrimarySource
+  source: ecrin-mdr
+- relation_type: prov:hadPrimarySource
+  source: panorama-public
+- relation_type: prov:hadPrimarySource
+  source: physiome-model-repository
 product_url: https://www.omicsdi.org/
 layout: product_detail
 ---
