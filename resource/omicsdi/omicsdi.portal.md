@@ -28,6 +28,8 @@ original_source:
   source: paxdb
 - relation_type: prov:hadPrimarySource
   source: lincs
+- relation_type: prov:hadPrimarySource
+  source: proteomexchange
 product_url: https://www.omicsdi.org/
 layout: product_detail
 ---
