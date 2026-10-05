@@ -260,6 +260,12 @@ products:
       source: mygene
     - relation_type: prov:hadPrimarySource
       source: mychem
+    - relation_type: prov:hadPrimarySource
+      source: mydisease
+    - relation_type: prov:hadPrimarySource
+      source: fooddata-central
+    - relation_type: prov:hadPrimarySource
+      source: myvariant
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
 creation_date: '2025-03-09T00:00:00Z'
 ---

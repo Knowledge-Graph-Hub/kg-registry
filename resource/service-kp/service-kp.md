@@ -171,6 +171,12 @@ products:
     source: mygene
   - relation_type: prov:hadPrimarySource
     source: mychem
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:hadPrimarySource
+    source: fooddata-central
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: ProcessProduct
   description: Source code and templates implementing Curated Query Service inference

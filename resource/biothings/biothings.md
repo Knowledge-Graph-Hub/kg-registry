@@ -206,6 +206,12 @@ products:
     source: mygene
   - relation_type: prov:hadPrimarySource
     source: mychem
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:hadPrimarySource
+    source: fooddata-central
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: ProcessProduct
   description: Source code of the MyGene.info web service and its data plugins, built with
@@ -219,6 +225,30 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: biothings
   product_url: https://github.com/biothings/mygene.info
+- category: ProcessProduct
+  description: Source code for the MyDisease.info data parsers and web service, built with
+    the BioThings SDK.
+  format: python
+  id: mydisease.code
+  name: MyDisease.info Source Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:wasInfluencedBy
+    source: biothings
+  product_url: https://github.com/biothings/mydisease.info
+- category: ProcessProduct
+  description: Source code for the MyVariant.info service, including the BioThings data plugins
+    and parsers that build the variant index.
+  format: python
+  id: myvariant.code
+  name: MyVariant.info Source Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
+  - relation_type: prov:wasInfluencedBy
+    source: biothings
+  product_url: https://github.com/biothings/myvariant.info
 publications:
 - authors:
   - Sebastien Lelong

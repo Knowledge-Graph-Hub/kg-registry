@@ -143,6 +143,8 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -185,6 +187,8 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 - category: GraphProduct
   compression: targz

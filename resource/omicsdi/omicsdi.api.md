@@ -40,6 +40,8 @@ original_source:
   source: peptideatlas
 - relation_type: prov:hadPrimarySource
   source: biomodels
+- relation_type: prov:hadPrimarySource
+  source: pride
 product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 layout: product_detail
 ---

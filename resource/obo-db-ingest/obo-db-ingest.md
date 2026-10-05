@@ -4525,6 +4525,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: goldbook
   product_file_size: 1560100
   product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.obo
 - category: Product
@@ -4538,6 +4540,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: goldbook
   product_file_size: 1783953
   product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.owl
 - category: Product
@@ -4551,6 +4555,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: goldbook
   product_file_size: 1802012
   product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.json
 - category: MappingProduct
@@ -4564,6 +4570,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: goldbook
   product_file_size: 231373
   product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.sssom.tsv
 - category: Product
@@ -4577,6 +4585,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: goldbook
   product_file_size: 977459
   product_url: https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv
 publications:
