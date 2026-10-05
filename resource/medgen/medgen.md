@@ -1240,6 +1240,47 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for NCBI- and NLM-derived RDF datasets, including ClinVar,
+    MedGen, MeSH, NCBI Gene, NLM Catalog, PubMed and PubTator Central.
+  format: http
+  id: rdf-portal.sparql.ncbi
+  name: RDF Portal NCBI SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: medgen
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  product_url: https://rdfportal.org/ncbi/sparql
+- category: ProgrammingInterface
+  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed by DBCLS,
+    with a GraphiQL interface in the browser. When checked it covered UniProt, ChEBI, ChEMBL
+    and MedGen.
+  format: http
+  id: rdf-portal.graphql
+  name: RDF Portal GraphQL API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: chembl
+  - relation_type: prov:wasDerivedFrom
+    source: medgen
+  product_url: https://rdfportal.org/grasp
 publications:
 - authors:
   - Louden DN

@@ -1684,6 +1684,17 @@ products:
   warnings:
   - The repository has no license file; the GPCRdb legal notice states that GPCRdb data are
     available under CC BY 4.0.
+- category: ProgrammingInterface
+  description: SPARQL endpoint for Protein Data Bank RDF datasets (wwPDB/RDF and BMRB/RDF).
+  format: http
+  id: rdf-portal.sparql.pdb
+  name: RDF Portal PDB SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: pdb
+  product_url: https://rdfportal.org/pdb/sparql
 publications:
 - authors:
   - wwPDB consortium
