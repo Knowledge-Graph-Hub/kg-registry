@@ -9,6 +9,8 @@ original_source:
   source: nihreporter
 - relation_type: prov:hadPrimarySource
   source: clinicaltrialsgov
+- relation_type: prov:wasDerivedFrom
+  source: nih-era
 product_url: https://reporter.nih.gov/exporter/clinicalstudies
 layout: product_detail
 ---

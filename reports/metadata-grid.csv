@@ -63,6 +63,7 @@ biomarker,active,PASS
 biomuta,active,PASS
 bioplanet,active,PASS
 bioportal,active,PASS
+bioregistry,active,PASS
 biostudies,active,PASS
 bioteque,active,PASS
 biothings,active,PASS
@@ -399,6 +400,7 @@ iconclass,active,PASS
 identifier-mappings,active,PASS
 idisk,active,PASS
 ido,active,PASS
+iedison,active,PASS
 iid,active,PASS
 iidp,active,PASS
 ikraph,active,PASS
@@ -554,6 +556,7 @@ ngbo,active,PASS
 nhpn,active,PASS
 nibrs,active,PASS
 nifc,active,PASS
+nih-era,active,PASS
 nihreporter,active,PASS
 nij,active,PASS
 nikg,active,PASS
@@ -562,6 +565,7 @@ nlm-ckn,active,PASS
 noaa-hms,active,PASS
 noaa-ncei,active,PASS
 noaa-nwm,active,PASS
+node-normalizer,active,PASS
 nomen,active,PASS
 noncode,active,PASS
 np-kg,active,PASS
@@ -582,6 +586,7 @@ obi,active,PASS
 obib,active,PASS
 obis,active,PASS
 obo-db-ingest,active,PASS
+obofoundry,active,PASS
 occo,active,PASS
 offsides,active,PASS
 ogg,active,PASS

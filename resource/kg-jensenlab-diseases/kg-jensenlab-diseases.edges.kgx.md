@@ -21,6 +21,8 @@ original_source:
   source: cosmic
 - relation_type: prov:hadPrimarySource
   source: medlineplus
+- relation_type: prov:wasInfluencedBy
+  source: node-normalizer
 product_file_size: 132
 product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 layout: product_detail

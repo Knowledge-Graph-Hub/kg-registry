@@ -31,15 +31,15 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: lincs
 - relation_type: prov:hadPrimarySource
-  source: iprox
+  source: metabolights
 - relation_type: prov:hadPrimarySource
-  source: fairdomhub
+  source: ega
 - relation_type: prov:hadPrimarySource
-  source: eva
+  source: dbgap
 - relation_type: prov:hadPrimarySource
-  source: node-omics
+  source: peptideatlas
 - relation_type: prov:hadPrimarySource
-  source: jpost
+  source: biomodels
 product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 layout: product_detail
 ---
