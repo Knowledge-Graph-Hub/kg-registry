@@ -17,11 +17,11 @@ description: The Yale University Open Data Access (YODA) Project is an independe
   participant-level clinical trial data and clinical study reports held by industry
   and academic Data Partners, including Johnson & Johnson (Janssen and J&J MedTech),
   Kenvue, SI-BONE and Queen Mary University of London, with Medtronic as an earlier
-  partner. Data Partners transfer full jurisdiction over access decisions to the
-  YODA Project. Its searchable catalog listed 513 trials as available when checked
-  on 2026-10-05. Approved requestors sign a Data Partner-specific data use agreement
-  and analyze data on a secure data sharing platform or receive them through Yale
-  Secure File Transfer.
+  partner. Data Partners transfer full jurisdiction over access decisions to the YODA
+  Project. Its searchable catalog listed 513 trials as available when checked on 2026-10-05.
+  Approved requestors sign a Data Partner-specific data use agreement and analyze
+  data on a secure data sharing platform or receive them through Yale Secure File
+  Transfer.
 domains:
 - clinical
 - biomedical
@@ -47,9 +47,9 @@ products:
   product_url: https://yoda.yale.edu/
 - category: GraphicalInterface
   description: Searchable, filterable catalog of clinical trials whose individual
-    participant-level data and clinical study reports are available for request,
-    listed by ClinicalTrials.gov NCT number and filterable by Data Partner and generic
-    drug or device name.
+    participant-level data and clinical study reports are available for request, listed
+    by ClinicalTrials.gov NCT number and filterable by Data Partner and generic drug
+    or device name.
   format: http
   id: yoda.trial-catalog
   name: YODA Trial Catalog
@@ -89,6 +89,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: yoda
+  product_file_size: 193269
   product_url: https://yoda.yale.edu/wp-content/uploads/2022/11/YODA-Project-Data-Release-Procedures-January-2025.pdf
 - category: DocumentationProduct
   description: Data use agreements for each Data Partner (Janssen Pharmaceuticals,
@@ -103,8 +104,8 @@ products:
     source: yoda
   product_url: https://yoda.yale.edu/about/policies-procedures/data-use-agreement/
 - category: Product
-  description: Metrics on YODA Project activity, including submitted requests to
-    use Johnson & Johnson data, details of each data request, clinical trial inquiries,
+  description: Metrics on YODA Project activity, including submitted requests to use
+    Johnson & Johnson data, details of each data request, clinical trial inquiries,
     clinical study report summary requests and trials determined to be unavailable.
   format: http
   id: yoda.metrics
@@ -114,8 +115,9 @@ products:
     source: yoda
   product_url: https://yoda.yale.edu/metrics/
 - category: GraphicalInterface
-  description: Web portal for searching clinical studies and their data objects by keyword,
-    registry identifier, PubMed ID or country, with CSV and JSON export of results.
+  description: Web portal for searching clinical studies and their data objects by
+    keyword, registry identifier, PubMed ID or country, with CSV and JSON export of
+    results.
   format: http
   id: ecrin-mdr.portal
   name: ECRIN MDR Portal
@@ -138,9 +140,9 @@ products:
     source: yoda
   product_url: https://newmdr.ecrin.org/
 - category: ProgrammingInterface
-  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints for study
-    search, lookup by registry ID or PubMed ID, full study and object details, summary statistics
-    and an OmicsDI export feed. Documented with Swagger/OpenAPI.
+  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints
+    for study search, lookup by registry ID or PubMed ID, full study and object details,
+    summary statistics and an OmicsDI export feed. Documented with Swagger/OpenAPI.
   format: http
   id: ecrin-mdr.api
   name: ECRIN MDR API

@@ -120,8 +120,9 @@ products:
     source: oboe
   product_url: https://github.com/NCEAS/oboe
 - category: OntologyProduct
-  description: Current OWL release of ECSO (ECSO8.owl, version 0.10.0) in the DataONE sem-prov-ontologies
-    repository, with merged imports of ENVO, PATO, CHEBI, RO, IAO and BFO terms
+  description: Current OWL release of ECSO (ECSO8.owl, version 0.10.0) in the DataONE
+    sem-prov-ontologies repository, with merged imports of ENVO, PATO, CHEBI, RO,
+    IAO and BFO terms
   format: owl
   id: ecso.owl
   name: ECSO OWL
@@ -145,6 +146,22 @@ products:
     source: iao
   - relation_type: prov:used
     source: bfo
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of The Extensible Observation Ontology (OBOE), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains OBOE_nodes.tsv
+    and OBOE_edges.tsv.
+  edge_count: 3
+  format: kgx
+  id: oboe.kg-bioportal
+  latest_version: Version 1.2
+  name: OBOE KGX graph (KG-Bioportal)
+  node_count: 4
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oboe
+  product_file_size: 463
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOE.tar.gz
 publications:
 - authors:
   - Joshua Madin

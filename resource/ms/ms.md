@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Joshua Klein
-  orcid: 0000-0003-1279-6838
   contact_details:
   - contact_type: email
     value: joshua.adam.klein@gmail.com
   - contact_type: github
     value: mobiusklein
+  label: Joshua Klein
+  orcid: 0000-0003-1279-6838
 creation_date: '2025-08-12T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of experiments
   concerned with proteomics mass spectrometry.
@@ -317,8 +317,8 @@ products:
   product_file_size: 237776
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MS.tar.gz
 - category: Product
-  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB Archive,
-    one directory per JPST dataset.
+  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB
+    Archive, one directory per JPST dataset.
   format: ttl
   id: jpost.rdf
   name: jPOSTdb RDF Files
@@ -334,15 +334,16 @@ products:
   - relation_type: prov:used
     source: faldo
 - category: OntologyProduct
-  description: jPOST ontology (Turtle serialization at an .owl URL) defining the classes and
-    properties of the jPOST database RDF, importing SIO and reusing PSI-MS, UniProt core,
-    Unimod and FALDO terms.
+  description: jPOST ontology (Turtle serialization at an .owl URL) defining the classes
+    and properties of the jPOST database RDF, importing SIO and reusing PSI-MS, UniProt
+    core, Unimod and FALDO terms.
   format: ttl
   id: jpost.ontology
   name: jPOST Ontology
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 47218
   product_url: http://rdf.jpostdb.org/ontology/jpost.owl
   secondary_source:
   - relation_type: prov:used

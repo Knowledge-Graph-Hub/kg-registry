@@ -242,6 +242,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 359471390
   product_url: https://chip-atlas.dbcls.jp/data/metadata/experimentList.tab
 - category: Product
   description: Peak calls (MACS2, BED4 and BigBed) and coverage tracks (BigWig) for
@@ -271,6 +272,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 637430253
   product_url: https://chip-atlas.dbcls.jp/data/hg19/assembled/Oth.ALL.05.GATA2.AllCell.bed
 - category: Product
   compression: gzip
@@ -285,6 +287,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 21398659343
   product_url: https://chip-atlas.dbcls.jp/data/hg38/allPeaks_light/allPeaks_light.hg38.05.bed.gz
 - category: Product
   description: Predicted target genes of each transcription factor or other DNA-binding
@@ -299,6 +302,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 2603130
   product_url: https://chip-atlas.dbcls.jp/data/hg19/target/POU5F1.5.tsv
 - category: Product
   description: Colocalization scores between pairs of transcription factors or other
@@ -313,6 +317,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 270398
   product_url: https://chip-atlas.dbcls.jp/data/hg19/colo/POU5F1.Pluripotent_stem_cell.tsv
 - category: Product
   description: DDBJ Sequence Read Archive (DRA) download area with FASTQ, SRA and

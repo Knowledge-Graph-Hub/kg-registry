@@ -65,6 +65,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellml
+  product_file_size: 1
   product_url: https://www.cellml.org/specifications/cellml_1.1
 - category: DataModelProduct
   description: Document type definition (DTD) corresponding to the syntax rules of
@@ -86,6 +87,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellml
+  product_file_size: 1
   product_url: https://www.cellml.org/specifications/cellml_1.0
 - category: DataModelProduct
   description: Document type definition (DTD) corresponding to the syntax rules of
@@ -132,11 +134,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellml
+  product_file_size: 1
   product_url: https://www.cellml.org/specifications
 - category: GraphicalInterface
-  description: Listing of exposures, the published and annotated views of CellML, FieldML
-    and SED-ML models, each tied to a specific workspace revision, with model documentation,
-    metadata and downloads.
+  description: Listing of exposures, the published and annotated views of CellML,
+    FieldML and SED-ML models, each tied to a specific workspace revision, with model
+    documentation, metadata and downloads.
   format: http
   id: physiome-model-repository.exposures
   name: PMR Exposures
@@ -147,9 +150,9 @@ products:
     source: cellml
   product_url: https://models.physiomeproject.org/exposure
 - category: Product
-  description: Listing of version-controlled model workspaces. Each workspace is a Git repository
-    holding model files (CellML, FieldML, SED-ML, documentation) that can be cloned with git
-    clone using the workspace URI.
+  description: Listing of version-controlled model workspaces. Each workspace is a
+    Git repository holding model files (CellML, FieldML, SED-ML, documentation) that
+    can be cloned with git clone using the workspace URI.
   format: mixed
   id: physiome-model-repository.workspaces
   name: PMR Workspaces
@@ -158,6 +161,7 @@ products:
     source: physiome-model-repository
   - relation_type: prov:wasInfluencedBy
     source: cellml
+  product_file_size: 1
   product_url: https://models.physiomeproject.org/workspace
 publications:
 - authors:

@@ -58,6 +58,7 @@ products:
     source: genereviews
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  product_file_size: 21527
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRtitle_shortname_NBKid.txt
 - category: MappingProduct
   description: Tab-delimited mapping of GeneReviews chapters (NBK id and short name)
@@ -70,6 +71,7 @@ products:
     source: genereviews
   - relation_type: prov:hadPrimarySource
     source: omim
+  product_file_size: 24971
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_OMIM.txt
 - category: MappingProduct
   description: Tab-delimited mapping of GeneReviews chapters (NBK id and short name)
@@ -82,6 +84,7 @@ products:
     source: genereviews
   - relation_type: prov:hadPrimarySource
     source: hgnc
+  product_file_size: 17484
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol.txt
 - category: MappingProduct
   description: Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt
@@ -96,6 +99,7 @@ products:
     source: hgnc
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  product_file_size: 24053
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt
 - category: MappingProduct
   description: Pipe-delimited mapping of GeneReviews short names and NBK ids to gene
@@ -108,6 +112,7 @@ products:
     source: genereviews
   - relation_type: prov:hadPrimarySource
     source: hgnc
+  product_file_size: 29333
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRshortname_NBKid_genesymbol_dzname.txt
 - category: DocumentationProduct
   description: README for the GeneReviews data reports on the NCBI FTP site.

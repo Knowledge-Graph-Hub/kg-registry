@@ -14,8 +14,8 @@ description: FoodKG is a food knowledge graph built at Rensselaer Polytechnic In
   as part of the HEALS project with IBM Research. It links about one million recipes
   from the Recipe1M dataset, their ingredients, USDA nutrient data and the FoodOn
   food ontology, with provenance for each statement, to support food recommendation
-  and question answering. The project releases its build scripts, mapping files
-  and supporting ontologies rather than full RDF dumps; the full graph (about 67 million
+  and question answering. The project releases its build scripts, mapping files and
+  supporting ontologies rather than full RDF dumps; the full graph (about 67 million
   triples) is generated locally or queried through a public SPARQL endpoint, which
   returned HTTP 502 when checked on 2026-10-04.
 domains:
@@ -42,11 +42,11 @@ products:
     source: foodkg
   product_url: https://foodkg.github.io/
 - category: ProcessProduct
-  description: Python scripts that build FoodKG from the Recipe1M recipe dataset
-    (layer1.json and det_ingrs.json, acquired manually), USDA nutrient data and FoodOn
-    (downloaded automatically). Outputs are three TriG files, usda-links.trig (about
-    4.1 million triples), foodon-links.trig (about 30 thousand triples) and foodkg-core.trig
-    (about 63 million triples), intended for loading into Blazegraph.
+  description: Python scripts that build FoodKG from the Recipe1M recipe dataset (layer1.json
+    and det_ingrs.json, acquired manually), USDA nutrient data and FoodOn (downloaded
+    automatically). Outputs are three TriG files, usda-links.trig (about 4.1 million
+    triples), foodon-links.trig (about 30 thousand triples) and foodkg-core.trig (about
+    63 million triples), intended for loading into Blazegraph.
   format: python
   id: foodkg.build-scripts
   license:
@@ -113,6 +113,7 @@ products:
     source: uo
   - relation_type: prov:wasDerivedFrom
     source: fooddata-central
+  product_file_size: 1066
   product_url: https://foodkg.github.io/sdd/usdaDM.csv
 - category: OntologyProduct
   description: Food component of the WhatToMake ontology, containing the base classes
@@ -127,6 +128,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: foodkg
+  product_file_size: 6542
   product_url: http://purl.org/heals/food
 - category: OntologyProduct
   description: FoodOn component of the WhatToMake ontology, containing the classes
@@ -142,6 +144,7 @@ products:
     source: foodkg
   - relation_type: prov:hadPrimarySource
     source: foodon
+  product_file_size: 15252
   product_url: http://purl.org/heals/foodon
 - category: GraphProduct
   description: Ingredient component of the WhatToMake ontology, containing the individuals
@@ -155,6 +158,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: foodkg
+  product_file_size: 14373
   product_url: http://purl.org/heals/ingredient
 - category: OntologyProduct
   description: Dietary Guideline Ontology (heals-guidelines), an OWL ontology modeling
@@ -168,6 +172,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: foodkg
+  product_file_size: 3687
   product_url: https://foodkg.github.io/ontologies/dgo.owl
 publications:
 - authors:

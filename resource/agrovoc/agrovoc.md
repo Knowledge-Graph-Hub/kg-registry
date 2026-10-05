@@ -75,6 +75,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: agrovoc
+  product_file_size: 73760195
   product_url: https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.nt.zip
 - category: OntologyProduct
   compression: zip
@@ -86,6 +87,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: agrovoc
+  product_file_size: 73279691
   product_url: https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.rdf.zip
 - category: GraphProduct
   compression: zip
@@ -122,6 +124,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: agrovoc
+  product_file_size: 113231
   product_url: https://aims.fao.org/aos/agrovoc/void.ttl
 - category: DocumentationProduct
   description: AGROVOC documentation on access options (Skosmos, SPARQL, REST API

@@ -28,13 +28,16 @@ last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (custom) among its sources: icgc, medgen. Not accounted for, no known
-    license: pdb.'
-  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    license (custom) among its sources: ddbj, icgc, medgen. Not accounted for, no
+    known license: pdb.'
+  id: https://www.ddbj.nig.ac.jp/policies-e.html
   inferred_from:
+  - ddbj
   - icgc
   - medgen
-  label: NCBI and NLM Data Usage Policies and Disclaimers
+  label: DDBJ (NIG BioData Science Initiative) Terms of Use; INSDC data are unrestricted-access
+    and may be freely used, redistributed and modified, while JGA data are controlled-access
+    under the NBDC Human Data Sharing Guidelines
   restrictiveness: custom
   status: inferred
   unresolved_sources:

@@ -124,12 +124,13 @@ products:
   product_url: https://myvariant.info/v1/query
 - category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
-    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
-    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
-    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
-    upstream scores that are free for academic use. Free for academic and non-commercial users
-    after registration with an institutional email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
+    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
+    column descriptions and the search_dbNSFP Java program. Variant tables are also
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    use. Free for academic and non-commercial users after registration with an institutional
+    email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -194,10 +195,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
-    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
-    and RGC Million Exome data, whose authors require separate commercial licenses. Available
-    to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
+    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
+    PrimateAI and RGC Million Exome data, whose authors require separate commercial
+    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:
@@ -262,8 +263,8 @@ products:
   product_url: https://www.dbnsfp.org/license
 - category: Product
   compression: gzip
-  description: CADD v1.7 scores for small insertions and deletions observed in gnomAD v4.0
-    genomes, on GRCh38, tab-separated and bgzip-compressed with a tabix index.
+  description: CADD v1.7 scores for small insertions and deletions observed in gnomAD
+    v4.0 genomes, on GRCh38, tab-separated and bgzip-compressed with a tabix index.
   format: tsv
   id: cadd.gnomad-indels.grch38
   name: CADD v1.7 gnomAD v4.0 InDel Scores (GRCh38)
@@ -276,9 +277,9 @@ products:
   product_url: https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/gnomad.genomes.r4.0.indel.tsv.gz
 - category: ProgrammingInterface
   connection_url: https://pavs.phenomebrowser.net/sparql
-  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing Saudi
-    case records, gene annotations, HPO disease annotations, HPO information content values
-    and literature phenopackets as RDF named graphs.
+  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing
+    Saudi case records, gene annotations, HPO disease annotations, HPO information
+    content values and literature phenopackets as RDF named graphs.
   format: http
   id: pavs-kg.sparql
   is_public: true
@@ -329,8 +330,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/sparql
 - category: GraphicalInterface
-  description: PAVS web portal with phenotype-based semantic similarity search, gene and variant
-    browsers, and an HPO hierarchy explorer over the knowledge graph.
+  description: PAVS web portal with phenotype-based semantic similarity search, gene
+    and variant browsers, and an HPO hierarchy explorer over the knowledge graph.
   format: http
   id: pavs-kg.portal
   name: PAVS Web Portal
@@ -377,8 +378,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/
 - category: ProgrammingInterface
-  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation, for case
-    search and SPARQL-backed queries.
+  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation,
+    for case search and SPARQL-backed queries.
   format: http
   id: pavs-kg.api
   name: PAVS REST API
@@ -425,8 +426,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/api/docs
 - category: Product
-  description: Combined GA4GH Phenopackets v2 JSON file of all PAVS cases, with HPO phenotypes,
-    variants, genes, zygosity, pathogenicity and disease diagnoses.
+  description: Combined GA4GH Phenopackets v2 JSON file of all PAVS cases, with HPO
+    phenotypes, variants, genes, zygosity, pathogenicity and disease diagnoses.
   format: json
   id: pavs-kg.phenopackets
   license:
@@ -460,6 +461,7 @@ products:
     source: ncit
   - relation_type: prov:hadPrimarySource
     source: omim
+  product_file_size: 1921927
   product_url: https://raw.githubusercontent.com/bio-ontology-research-group/pavs-knowledge-graph/master/data/PAVS_phenopackets.json
 publications:
 - authors:

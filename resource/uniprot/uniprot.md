@@ -5888,8 +5888,8 @@ products:
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: MappingProduct
-  description: Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt accessions,
-    updated weekly.
+  description: Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt
+    accessions, updated weekly.
   format: tsv
   id: genereviews.genes-uniprot
   name: GeneReviews to Gene Symbol and UniProt Mapping
@@ -5900,11 +5900,12 @@ products:
     source: hgnc
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  product_file_size: 24053
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt
 - category: ProgrammingInterface
-  description: MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez
-    or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents
-    merged from the integrated sources.
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
+    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
+    JSON documents merged from the integrated sources.
   format: http
   id: mygene.api
   infores_id: mygene-info
@@ -5963,37 +5964,39 @@ products:
   product_url: https://mygene.info/v3/api
 - category: Product
   compression: zip
-  description: jPOSTdb identified protein table from the NBDC LSDB Archive, with UniProt accession,
-    symbol, name, protein type and peptide and PSM counts for reanalyzed datasets (about 12
-    MB, file dated 2021-07-29).
+  description: jPOSTdb identified protein table from the NBDC LSDB Archive, with UniProt
+    accession, symbol, name, protein type and peptide and PSM counts for reanalyzed
+    datasets (about 12 MB, file dated 2021-07-29).
   format: csv
   id: jpost.protein
   name: jPOSTdb Identified Protein Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 12474382
   product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_protein.zip
   secondary_source:
   - relation_type: prov:used
     source: uniprot
 - category: Product
   compression: zip
-  description: jPOSTdb peptide spectrum match (PSM) table from the NBDC LSDB Archive, with
-    peptide sequence, UniProt accession, experimental and calculated m/z, charge and jPOST
-    score (about 68 MB, file dated 2021-07-29).
+  description: jPOSTdb peptide spectrum match (PSM) table from the NBDC LSDB Archive,
+    with peptide sequence, UniProt accession, experimental and calculated m/z, charge
+    and jPOST score (about 68 MB, file dated 2021-07-29).
   format: csv
   id: jpost.psm
   name: jPOSTdb PSM Peptide Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 67761000
   product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm.zip
   secondary_source:
   - relation_type: prov:used
     source: uniprot
 - category: Product
-  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB Archive,
-    one directory per JPST dataset.
+  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB
+    Archive, one directory per JPST dataset.
   format: ttl
   id: jpost.rdf
   name: jPOSTdb RDF Files
@@ -6009,11 +6012,11 @@ products:
   - relation_type: prov:used
     source: faldo
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -6121,9 +6124,10 @@ products:
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: GraphicalInterface
-  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence alignments,
-    structures and structure models, ligands and bioactivities, mutations, drugs and signaling
-    proteins, with interactive diagrams such as snake plots and phylogenetic trees.
+  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence
+    alignments, structures and structure models, ligands and bioactivities, mutations,
+    drugs and signaling proteins, with interactive diagrams such as snake plots and
+    phylogenetic trees.
   format: http
   id: gpcrdb.portal
   name: GPCRdb Web Portal
@@ -6158,9 +6162,9 @@ products:
     source: gtopdb
   product_url: https://gpcrdb.org/services/reference/
 - category: Product
-  description: GitHub repository collecting the reference data used to build GPCRdb, including
-    protein, structure, ligand, mutant, drug, G protein, arrestin and residue data files,
-    plus a PDSP Ki data backup.
+  description: GitHub repository collecting the reference data used to build GPCRdb,
+    including protein, structure, ligand, mutant, drug, G protein, arrestin and residue
+    data files, plus a PDSP Ki data backup.
   format: mixed
   id: gpcrdb.data
   name: GPCRdb Reference Data Repository
@@ -6179,16 +6183,17 @@ products:
     source: pdsp
   product_url: https://github.com/protwis/gpcrdb_data
   warnings:
-  - The repository has no license file; the GPCRdb legal notice states that GPCRdb data are
-    available under CC BY 4.0.
+  - The repository has no license file; the GPCRdb legal notice states that GPCRdb
+    data are available under CC BY 4.0.
 - category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
-    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
-    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
-    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
-    upstream scores that are free for academic use. Free for academic and non-commercial users
-    after registration with an institutional email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
+    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
+    column descriptions and the search_dbNSFP Java program. Variant tables are also
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    use. Free for academic and non-commercial users after registration with an institutional
+    email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -6253,10 +6258,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
-    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
-    and RGC Million Exome data, whose authors require separate commercial licenses. Available
-    to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
+    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
+    PrimateAI and RGC Million Exome data, whose authors require separate commercial
+    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:
@@ -6340,9 +6345,9 @@ products:
     source: uniprot
   product_url: https://rdfportal.org/sib/sparql
 - category: ProgrammingInterface
-  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed by DBCLS,
-    with a GraphiQL interface in the browser. When checked it covered UniProt, ChEBI, ChEMBL
-    and MedGen.
+  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed
+    by DBCLS, with a GraphiQL interface in the browser. When checked it covered UniProt,
+    ChEBI, ChEMBL and MedGen.
   format: http
   id: rdf-portal.graphql
   name: RDF Portal GraphQL API

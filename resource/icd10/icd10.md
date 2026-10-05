@@ -809,6 +809,7 @@ products:
     source: icd10
   - relation_type: prov:wasInfluencedBy
     source: orphanet
+  product_file_size: 0
   product_url: https://directory.bbmri-eric.eu/ERIC/api/zip
 - category: GraphProduct
   description: RDF export of the Directory's ERIC schema serialized as Turtle, generated
@@ -823,6 +824,7 @@ products:
     source: icd10
   - relation_type: prov:wasInfluencedBy
     source: orphanet
+  product_file_size: 0
   product_url: https://directory.bbmri-eric.eu/ERIC/api/ttl
 publications:
 - authors:

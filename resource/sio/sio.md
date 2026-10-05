@@ -158,6 +158,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 47218
   product_url: http://rdf.jpostdb.org/ontology/jpost.owl
   secondary_source:
   - relation_type: prov:used

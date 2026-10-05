@@ -4201,6 +4201,7 @@ products:
     source: genereviews
   - relation_type: prov:hadPrimarySource
     source: hgnc
+  product_file_size: 17484
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol.txt
 - category: MappingProduct
   description: Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt
@@ -4215,6 +4216,7 @@ products:
     source: hgnc
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  product_file_size: 24053
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt
 - category: MappingProduct
   description: Pipe-delimited mapping of GeneReviews short names and NBK ids to gene
@@ -4227,13 +4229,14 @@ products:
     source: genereviews
   - relation_type: prov:hadPrimarySource
     source: hgnc
+  product_file_size: 29333
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRshortname_NBKid_genesymbol_dzname.txt
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -4341,9 +4344,9 @@ products:
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: GraphicalInterface
-  description: Sugi Atlas web site with search and one static reference page per human gene,
-    drug and disease (for example /atlas/gene/TP53/). Each page also has a Markdown version
-    at index.md and embeds a schema.org JSON-LD record.
+  description: Sugi Atlas web site with search and one static reference page per human
+    gene, drug and disease (for example /atlas/gene/TP53/). Each page also has a Markdown
+    version at index.md and embeds a schema.org JSON-LD record.
   format: http
   id: sugi-atlas.portal
   name: Sugi Atlas Web Site
@@ -4361,12 +4364,13 @@ products:
   product_url: https://sugi.bio/atlas/
 - category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
-    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
-    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
-    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
-    upstream scores that are free for academic use. Free for academic and non-commercial users
-    after registration with an institutional email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
+    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
+    column descriptions and the search_dbNSFP Java program. Variant tables are also
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    use. Free for academic and non-commercial users after registration with an institutional
+    email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -4431,10 +4435,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
-    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
-    and RGC Million Exome data, whose authors require separate commercial licenses. Available
-    to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
+    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
+    PrimateAI and RGC Million Exome data, whose authors require separate commercial
+    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:
@@ -4498,9 +4502,9 @@ products:
     source: zfin
   product_url: https://www.dbnsfp.org/license
 - category: ProgrammingInterface
-  description: SPARQL endpoint for the primary RDF Portal datasets, mostly from Japanese projects
-    and partner databases (for example BacDive, BRENDA, GlyTouCan, GTDB, HGNC, HomoloGene,
-    ICGC, jPOST, MediaDive, NANDO, PubCaseFinder and TogoID).
+  description: SPARQL endpoint for the primary RDF Portal datasets, mostly from Japanese
+    projects and partner databases (for example BacDive, BRENDA, GlyTouCan, GTDB,
+    HGNC, HomoloGene, ICGC, jPOST, MediaDive, NANDO, PubCaseFinder and TogoID).
   format: http
   id: rdf-portal.sparql.primary
   name: RDF Portal Primary SPARQL Endpoint

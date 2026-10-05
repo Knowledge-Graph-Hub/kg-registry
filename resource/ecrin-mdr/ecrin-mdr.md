@@ -27,15 +27,17 @@ last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (public domain) among its sources: clinicaltrialsgov, pubmed.'
-  id: https://clinicaltrials.gov/about-site/terms-conditions
+    license (custom) among its sources: who-ictrp, yoda. Not accounted for, no known
+    license: biolincc.'
+  id: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database
   inferred_from:
-  - clinicaltrialsgov
-  - pubmed
-  label: Public Domain
-  restrictiveness: public domain
+  - who-ictrp
+  - yoda
+  label: WHO ICTRP Terms and Conditions for Use of Data
+  restrictiveness: custom
   status: inferred
-  unresolved_sources: []
+  unresolved_sources:
+  - biolincc
 name: ECRIN Clinical Research Metadata Repository
 products:
 - category: GraphicalInterface

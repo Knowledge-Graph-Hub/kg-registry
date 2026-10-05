@@ -72,10 +72,14 @@ products:
   - relation_type: prov:hadPrimarySource
     source: fda-orphan-drugs
   product_url: https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions/designating-orphan-product-drugs-and-biological-products
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
-  description: MyChem.info REST API (v1) for querying chemical and drug annotation records
-    by keyword, field or identifier (InChIKey, ChEMBL, DrugBank, PubChem, ChEBI and UNII IDs),
-    with batch queries over POST. Data in each record keep the license of their original source.
+  description: MyChem.info REST API (v1) for querying chemical and drug annotation
+    records by keyword, field or identifier (InChIKey, ChEMBL, DrugBank, PubChem,
+    ChEBI and UNII IDs), with batch queries over POST. Data in each record keep the
+    license of their original source.
   format: json
   id: mychem.api
   infores_id: mychem-info

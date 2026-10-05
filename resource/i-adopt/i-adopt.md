@@ -17,10 +17,10 @@ creation_date: '2026-10-05T00:00:00Z'
 description: The I-ADOPT Framework ontology, developed by the Research Data Alliance
   I-ADOPT Working Group, decomposes descriptions of observable properties (variables)
   into atomic components such as the property, the object of interest, the matrix,
-  the context object and constraints. These components can be mapped to terms in
-  existing FAIR vocabularies, which helps align environmental and other scientific
-  variable terminologies and supports machine-readable variable descriptions. The
-  ontology is released under CC BY 4.0.
+  the context object and constraints. These components can be mapped to terms in existing
+  FAIR vocabularies, which helps align environmental and other scientific variable
+  terminologies and supports machine-readable variable descriptions. The ontology
+  is released under CC BY 4.0.
 domains:
 - environment
 - information technology
@@ -46,8 +46,8 @@ products:
   product_file_size: 21645
   product_url: https://i-adopt.github.io/ontology/ontology.ttl
 - category: OntologyProduct
-  description: I-ADOPT Framework ontology in OWL (RDF/XML) format, as published
-    at the w3id.org/iadopt/ont namespace.
+  description: I-ADOPT Framework ontology in OWL (RDF/XML) format, as published at
+    the w3id.org/iadopt/ont namespace.
   format: owl
   id: i-adopt.owl
   name: I-ADOPT Framework Ontology (OWL)
@@ -57,8 +57,8 @@ products:
   product_file_size: 20255
   product_url: https://i-adopt.github.io/ontology/ontology.owl
 - category: OntologyProduct
-  description: I-ADOPT Framework ontology in JSON-LD format, as published at the
-    w3id.org/iadopt/ont namespace.
+  description: I-ADOPT Framework ontology in JSON-LD format, as published at the w3id.org/iadopt/ont
+    namespace.
   format: jsonld
   id: i-adopt.jsonld
   name: I-ADOPT Framework Ontology (JSON-LD)
@@ -87,6 +87,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: i-adopt
+  product_file_size: 3227
   product_url: https://w3id.org/iadopt/ont
 - category: DocumentationProduct
   description: RDA-endorsed I-ADOPT WG Outputs and Recommendations document (2022),
@@ -104,9 +105,9 @@ products:
   product_file_size: 532093
   product_url: https://zenodo.org/records/6520132/files/I_ADOPT_recommendations.pdf
 - category: ProcessProduct
-  description: GitHub repository holding the I-ADOPT ontology sources, archived
-    versions, extension proposals and the scripts and WIDOCO configuration used to
-    build the documentation.
+  description: GitHub repository holding the I-ADOPT ontology sources, archived versions,
+    extension proposals and the scripts and WIDOCO configuration used to build the
+    documentation.
   format: http
   id: i-adopt.repo
   name: I-ADOPT Ontology GitHub Repository
@@ -114,6 +115,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: i-adopt
   product_url: https://github.com/i-adopt/ontology
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of I-ADOPT Framework Ontology (I-ADOPT), produced
+    by KG-Bioportal from the BioPortal submission. The archive contains I-ADOPT_nodes.tsv
+    and I-ADOPT_edges.tsv.
+  edge_count: 48
+  format: kgx
+  id: i-adopt.kg-bioportal
+  latest_version: 1.1.0
+  name: I-ADOPT KGX graph (KG-Bioportal)
+  node_count: 51
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: i-adopt
+  product_file_size: 1514
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/I-ADOPT.tar.gz
 publications:
 - authors:
   - Barbara Magagna
@@ -141,8 +158,7 @@ publications:
   doi: 10.48550/arXiv.2107.06547
   id: doi:10.48550/arXiv.2107.06547
   journal: arXiv
-  title: The I-ADOPT Interoperability Framework for FAIRer data descriptions of
-    biodiversity
+  title: The I-ADOPT Interoperability Framework for FAIRer data descriptions of biodiversity
   year: '2021'
 repository: https://github.com/i-adopt/ontology
 synonyms:

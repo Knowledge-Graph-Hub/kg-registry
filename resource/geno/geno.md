@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Matthew Brush
-  orcid: 0000-0002-1048-5019
   contact_details:
   - contact_type: email
     value: mhb120@gmail.com
   - contact_type: github
     value: mbrush
+  label: Matthew Brush
+  orcid: 0000-0002-1048-5019
 creation_date: '2025-09-04T00:00:00Z'
 description: An integrated ontology for representing the genetic variations described
   in genotypes, and their causal relationships to phenotype and diseases.
@@ -80,9 +80,9 @@ products:
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/GENO.tar.gz
 - category: ProgrammingInterface
   connection_url: https://pavs.phenomebrowser.net/sparql
-  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing Saudi
-    case records, gene annotations, HPO disease annotations, HPO information content values
-    and literature phenopackets as RDF named graphs.
+  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing
+    Saudi case records, gene annotations, HPO disease annotations, HPO information
+    content values and literature phenopackets as RDF named graphs.
   format: http
   id: pavs-kg.sparql
   is_public: true
@@ -133,8 +133,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/sparql
 - category: GraphicalInterface
-  description: PAVS web portal with phenotype-based semantic similarity search, gene and variant
-    browsers, and an HPO hierarchy explorer over the knowledge graph.
+  description: PAVS web portal with phenotype-based semantic similarity search, gene
+    and variant browsers, and an HPO hierarchy explorer over the knowledge graph.
   format: http
   id: pavs-kg.portal
   name: PAVS Web Portal
@@ -181,8 +181,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/
 - category: ProgrammingInterface
-  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation, for case
-    search and SPARQL-backed queries.
+  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation,
+    for case search and SPARQL-backed queries.
   format: http
   id: pavs-kg.api
   name: PAVS REST API
@@ -229,8 +229,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/api/docs
 - category: Product
-  description: Combined GA4GH Phenopackets v2 JSON file of all PAVS cases, with HPO phenotypes,
-    variants, genes, zygosity, pathogenicity and disease diagnoses.
+  description: Combined GA4GH Phenopackets v2 JSON file of all PAVS cases, with HPO
+    phenotypes, variants, genes, zygosity, pathogenicity and disease diagnoses.
   format: json
   id: pavs-kg.phenopackets
   license:
@@ -264,6 +264,7 @@ products:
     source: ncit
   - relation_type: prov:hadPrimarySource
     source: omim
+  product_file_size: 1921927
   product_url: https://raw.githubusercontent.com/bio-ontology-research-group/pavs-knowledge-graph/master/data/PAVS_phenopackets.json
 publications: []
 repository: https://github.com/monarch-initiative/GENO-ontology

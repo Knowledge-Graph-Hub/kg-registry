@@ -65,6 +65,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: fairsharing
   product_url: https://fairsharing.org/API_doc
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
+    to URL'
 - category: DocumentationProduct
   description: User guide for FAIRsharing covering record types, curation, searching,
     collections, and how to register and maintain records.
@@ -102,9 +105,9 @@ products:
     source: fairsharing
   product_url: https://github.com/FAIRsharing/fairsharing-mcp
 - category: Product
-  description: Full Bioregistry export as JSON, with every prefix record including names,
-    synonyms, URI formats, local identifier patterns, providers and mappings to the prefixes
-    of other registries.
+  description: Full Bioregistry export as JSON, with every prefix record including
+    names, synonyms, URI formats, local identifier patterns, providers and mappings
+    to the prefixes of other registries.
   format: json
   id: bioregistry.registry.json
   name: Bioregistry JSON Export
@@ -146,9 +149,9 @@ products:
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
-  description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes in
-    other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology registry,
-    Cellosaurus, UniProt and NCBI.
+  description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+    in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology
+    registry, Cellosaurus, UniProt and NCBI.
   format: sssom
   id: bioregistry.sssom
   name: Bioregistry SSSOM Mappings

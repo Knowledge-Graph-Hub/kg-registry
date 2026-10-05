@@ -842,6 +842,7 @@ products:
     source: uo
   - relation_type: prov:wasDerivedFrom
     source: fooddata-central
+  product_file_size: 1066
   product_url: https://foodkg.github.io/sdd/usdaDM.csv
 - category: OntologyProduct
   description: FoodOn component of the WhatToMake ontology, containing the classes
@@ -857,6 +858,7 @@ products:
     source: foodkg
   - relation_type: prov:hadPrimarySource
     source: foodon
+  product_file_size: 15252
   product_url: http://purl.org/heals/foodon
 publications:
 - authors:

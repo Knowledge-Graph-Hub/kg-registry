@@ -2,21 +2,26 @@
 activity_status: active
 category: Aggregator
 collection:
-  - omop
+- omop
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.ohdsi.org/
-    id: ohdsi
-    label: OHDSI
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.ohdsi.org/
+  id: ohdsi
+  label: OHDSI
 creation_date: '2026-04-10T00:00:00Z'
-description: Observational Health Data Sciences and Informatics (OHDSI) is an open, international collaborative that develops and maintains the OMOP Common Data Model, standardized clinical vocabularies, and open-source analytics tooling for observational health research. In KG-Registry, this entry represents the parent OHDSI ecosystem that publishes OMOP specifications and distributes standardized vocabulary access through Athena.
+description: Observational Health Data Sciences and Informatics (OHDSI) is an open,
+  international collaborative that develops and maintains the OMOP Common Data Model,
+  standardized clinical vocabularies, and open-source analytics tooling for observational
+  health research. In KG-Registry, this entry represents the parent OHDSI ecosystem
+  that publishes OMOP specifications and distributes standardized vocabulary access
+  through Athena.
 domains:
-  - clinical
-  - biomedical
-  - information technology
-  - electronic health records
+- clinical
+- biomedical
+- information technology
+- electronic health records
 homepage_url: https://www.ohdsi.org/
 id: ohdsi
 last_modified_date: '2026-09-23T00:00:00Z'
@@ -33,204 +38,219 @@ license:
   unresolved_sources: []
 name: OHDSI
 products:
-  - category: GraphicalInterface
-    description: Main OHDSI web portal for community, documentation, working groups, and software resources
-    format: http
-    id: ohdsi.portal
-    name: OHDSI Web Portal
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.ohdsi.org/
-  - category: DataModelProduct
-    description: OMOP Common Data Model specification and downloadable DDL artifacts maintained by the OHDSI community
-    format: http
-    id: ohdsi.omop_cdm
-    name: OMOP Common Data Model
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: athena
-        relation_type: prov:wasInformedBy
-    product_url: https://ohdsi.github.io/CommonDataModel/
-    repository: https://github.com/OHDSI/CommonDataModel
-  - category: GraphicalInterface
-    description: Athena web application for searching OHDSI standardized vocabularies and preparing OMOP vocabulary downloads
-    format: http
-    id: ohdsi.athena
-    name: OHDSI Athena Vocabulary Browser
-    original_source:
-      - source: athena
-        relation_type: prov:hadPrimarySource
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://athena.ohdsi.org/search-terms/start
-    warnings:
-      - Athena is an authenticated web application; access to vocabulary download workflows requires login.
-  - category: Product
-    description: Standardized vocabulary bundles for OMOP CDM assembled through the Athena authenticated web application
-    format: csv
-    id: ohdsi.athena_vocabularies
-    name: OHDSI Standardized Vocabulary Downloads
-    original_source:
-      - source: athena
-        relation_type: prov:hadPrimarySource
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://athena.ohdsi.org/vocabulary/list
-    warnings:
-      - Athena vocabulary downloads are prepared through the logged-in web application; stable direct public file URLs are not exposed.
-  - category: ProcessProduct
-    description: OHDSI methods suite for standardized analytics on OMOP CDM data, including characterization, population-level effect estimation, and patient-level prediction
-    format: http
-    id: ohdsi.hades
-    name: HADES
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://ohdsi.github.io/Hades/
-    repository: https://github.com/OHDSI/Hades
-  - category: ProcessProduct
-    description: R package used to dynamically generate OMOP CDM documentation and DDL scripts for supported SQL dialects
-    format: http
-    id: ohdsi.cdm_r_package
-    name: CDM R Package
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/OHDSI/CommonDataModel/
-    repository: https://github.com/OHDSI/CommonDataModel
-  - category: ProcessProduct
-    description: Tool that runs more than 3,500 data quality checks against an OMOP CDM instance
-    format: http
-    id: ohdsi.data_quality_dashboard
-    name: Data Quality Dashboard
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/OHDSI/DataQualityDashboard
-    repository: https://github.com/OHDSI/DataQualityDashboard
-  - category: ProcessProduct
-    description: Package for broad database characterization against an OMOP CDM instance
-    format: http
-    id: ohdsi.achilles
-    name: Achilles
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/OHDSI/Achilles
-    repository: https://github.com/OHDSI/Achilles
-  - category: ProcessProduct
-    description: Application for displaying results from Achilles and Data Quality Dashboard to support data quality and characterization research
-    format: http
-    id: ohdsi.ares
-    name: ARES
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/OHDSI/Ares
-    repository: https://github.com/OHDSI/Ares
-  - category: ProcessProduct
-    description: Open-source software for conducting scientific analyses on standardized observational data
-    format: http
-    id: ohdsi.atlas
-    name: ATLAS
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://atlas-demo.ohdsi.org/
-    repository: https://github.com/OHDSI/Atlas
-  - category: ProcessProduct
-    description: Interactive ETL design application for mapping source data into the OMOP Common Data Model using WhiteRabbit scan results
-    format: http
-    id: ohdsi.rabbit_in_a_hat
-    name: Rabbit-In-A-Hat
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/OHDSI/WhiteRabbit
-    repository: https://github.com/OHDSI/WhiteRabbit
-  - category: ProcessProduct
-    description: Package for generating cohort covariates and other features from OMOP CDM data
-    format: http
-    id: ohdsi.feature_extraction
-    name: Feature Extraction
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/OHDSI/FeatureExtraction
-    repository: https://github.com/OHDSI/FeatureExtraction
-  - category: ProcessProduct
-    description: Package for evaluating and diagnosing cohort phenotype definitions built on OMOP CDM data
-    format: http
-    id: ohdsi.cohort_diagnostics
-    name: Cohort Diagnostics
-    original_source:
-      - source: ohdsi
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/OHDSI/CohortDiagnostics
-    repository: https://github.com/OHDSI/CohortDiagnostics
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.2.1
-    description: KGX JSONL nodes and edges files for the OHD@Carolina Automat graph (build f627ebbefd242454,
-      source version 2024-11-18, published 2025-10-06), with 27,356 nodes and 22,732,570 edges.
-      Edges use biolink:positively_correlated_with (22,352,823) and biolink:negatively_correlated_with
-      (379,747).
-    edge_count: 22732570
-    format: kgx-jsonl
-    id: ohd-carolina.graph
-    infores_id: automat-openhealthdata-carolina
-    name: OHD@Carolina Automat KGX Graph
-    node_categories:
-      - biolink:Disease
-      - biolink:PhenotypicFeature
-      - biolink:Drug
-      - biolink:SmallMolecule
-      - biolink:MolecularMixture
-      - biolink:ChemicalEntity
-      - biolink:Protein
-      - biolink:OrganismTaxon
-      - biolink:ComplexMolecularMixture
-      - biolink:Gene
-      - biolink:InformationContentEntity
-    node_count: 27356
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: ohd-carolina
-      - relation_type: prov:wasInfluencedBy
-        source: ohdsi
-    predicates:
-      - biolink:positively_correlated_with
-      - biolink:negatively_correlated_with
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/
-    versions:
-      - f627ebbefd242454
-  - category: Product
-    compression: zip
-    description: Source edge table (unc_omop_2018_2022_kg.csv, about 2 GB zipped) of concept
-      pair associations from the UNC Health OMOP cohort, with chi-squared p-values, log odds
-      ratios, scores and sample sizes, as ingested by the ORION OHD parser (build 2024-11-18).
-    format: csv
-    id: ohd-carolina.source-edges
-    infores_id: openhealthdata-carolina
-    name: OHD@Carolina Source Edge Table
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: ohd-carolina
-      - relation_type: prov:wasInfluencedBy
-        source: ohdsi
-    product_url: https://stars.renci.org/var/data_services/ohd/unc_omop_2018_2022_kg.zip
-    versions:
-      - '2024-11-18'
+- category: GraphicalInterface
+  description: Main OHDSI web portal for community, documentation, working groups,
+    and software resources
+  format: http
+  id: ohdsi.portal
+  name: OHDSI Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://www.ohdsi.org/
+- category: DataModelProduct
+  description: OMOP Common Data Model specification and downloadable DDL artifacts
+    maintained by the OHDSI community
+  format: http
+  id: ohdsi.omop_cdm
+  name: OMOP Common Data Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://ohdsi.github.io/CommonDataModel/
+  repository: https://github.com/OHDSI/CommonDataModel
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: athena
+- category: GraphicalInterface
+  description: Athena web application for searching OHDSI standardized vocabularies
+    and preparing OMOP vocabulary downloads
+  format: http
+  id: ohdsi.athena
+  name: OHDSI Athena Vocabulary Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: athena
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://athena.ohdsi.org/search-terms/start
+  warnings:
+  - Athena is an authenticated web application; access to vocabulary download workflows
+    requires login.
+- category: Product
+  description: Standardized vocabulary bundles for OMOP CDM assembled through the
+    Athena authenticated web application
+  format: csv
+  id: ohdsi.athena_vocabularies
+  name: OHDSI Standardized Vocabulary Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: athena
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://athena.ohdsi.org/vocabulary/list
+  warnings:
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
+- category: ProcessProduct
+  description: OHDSI methods suite for standardized analytics on OMOP CDM data, including
+    characterization, population-level effect estimation, and patient-level prediction
+  format: http
+  id: ohdsi.hades
+  name: HADES
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://ohdsi.github.io/Hades/
+  repository: https://github.com/OHDSI/Hades
+- category: ProcessProduct
+  description: R package used to dynamically generate OMOP CDM documentation and DDL
+    scripts for supported SQL dialects
+  format: http
+  id: ohdsi.cdm_r_package
+  name: CDM R Package
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://github.com/OHDSI/CommonDataModel/
+  repository: https://github.com/OHDSI/CommonDataModel
+- category: ProcessProduct
+  description: Tool that runs more than 3,500 data quality checks against an OMOP
+    CDM instance
+  format: http
+  id: ohdsi.data_quality_dashboard
+  name: Data Quality Dashboard
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://github.com/OHDSI/DataQualityDashboard
+  repository: https://github.com/OHDSI/DataQualityDashboard
+- category: ProcessProduct
+  description: Package for broad database characterization against an OMOP CDM instance
+  format: http
+  id: ohdsi.achilles
+  name: Achilles
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://github.com/OHDSI/Achilles
+  repository: https://github.com/OHDSI/Achilles
+- category: ProcessProduct
+  description: Application for displaying results from Achilles and Data Quality Dashboard
+    to support data quality and characterization research
+  format: http
+  id: ohdsi.ares
+  name: ARES
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://github.com/OHDSI/Ares
+  repository: https://github.com/OHDSI/Ares
+- category: ProcessProduct
+  description: Open-source software for conducting scientific analyses on standardized
+    observational data
+  format: http
+  id: ohdsi.atlas
+  name: ATLAS
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://atlas-demo.ohdsi.org/
+  repository: https://github.com/OHDSI/Atlas
+- category: ProcessProduct
+  description: Interactive ETL design application for mapping source data into the
+    OMOP Common Data Model using WhiteRabbit scan results
+  format: http
+  id: ohdsi.rabbit_in_a_hat
+  name: Rabbit-In-A-Hat
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://github.com/OHDSI/WhiteRabbit
+  repository: https://github.com/OHDSI/WhiteRabbit
+- category: ProcessProduct
+  description: Package for generating cohort covariates and other features from OMOP
+    CDM data
+  format: http
+  id: ohdsi.feature_extraction
+  name: Feature Extraction
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://github.com/OHDSI/FeatureExtraction
+  repository: https://github.com/OHDSI/FeatureExtraction
+- category: ProcessProduct
+  description: Package for evaluating and diagnosing cohort phenotype definitions
+    built on OMOP CDM data
+  format: http
+  id: ohdsi.cohort_diagnostics
+  name: Cohort Diagnostics
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohdsi
+  product_url: https://github.com/OHDSI/CohortDiagnostics
+  repository: https://github.com/OHDSI/CohortDiagnostics
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.2.1
+  description: KGX JSONL nodes and edges files for the OHD@Carolina Automat graph
+    (build f627ebbefd242454, source version 2024-11-18, published 2025-10-06), with
+    27,356 nodes and 22,732,570 edges. Edges use biolink:positively_correlated_with
+    (22,352,823) and biolink:negatively_correlated_with (379,747).
+  edge_count: 22732570
+  format: kgx-jsonl
+  id: ohd-carolina.graph
+  infores_id: automat-openhealthdata-carolina
+  name: OHD@Carolina Automat KGX Graph
+  node_categories:
+  - biolink:Disease
+  - biolink:PhenotypicFeature
+  - biolink:Drug
+  - biolink:SmallMolecule
+  - biolink:MolecularMixture
+  - biolink:ChemicalEntity
+  - biolink:Protein
+  - biolink:OrganismTaxon
+  - biolink:ComplexMolecularMixture
+  - biolink:Gene
+  - biolink:InformationContentEntity
+  node_count: 27356
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohd-carolina
+  - relation_type: prov:wasInfluencedBy
+    source: ohdsi
+  predicates:
+  - biolink:positively_correlated_with
+  - biolink:negatively_correlated_with
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/
+  versions:
+  - f627ebbefd242454
+- category: Product
+  compression: zip
+  description: Source edge table (unc_omop_2018_2022_kg.csv, about 2 GB zipped) of
+    concept pair associations from the UNC Health OMOP cohort, with chi-squared p-values,
+    log odds ratios, scores and sample sizes, as ingested by the ORION OHD parser
+    (build 2024-11-18).
+  format: csv
+  id: ohd-carolina.source-edges
+  infores_id: openhealthdata-carolina
+  name: OHD@Carolina Source Edge Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ohd-carolina
+  - relation_type: prov:wasInfluencedBy
+    source: ohdsi
+  product_file_size: 2001145655
+  product_url: https://stars.renci.org/var/data_services/ohd/unc_omop_2018_2022_kg.zip
+  versions:
+  - '2024-11-18'
 synonyms:
-  - Observational Health Data Sciences and Informatics
+- Observational Health Data Sciences and Informatics
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # OHDSI
 
 ## Overview

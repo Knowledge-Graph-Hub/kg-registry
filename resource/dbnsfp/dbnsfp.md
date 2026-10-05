@@ -56,8 +56,8 @@ products:
   description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
     a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
     column descriptions and the search_dbNSFP Java program. Variant tables are also
-    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38) for
-    Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
     use. Free for academic and non-commercial users after registration with an institutional
     email; download links are issued on request.
   format: tsv
@@ -244,10 +244,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: dbnsfp
   product_url: https://usf.box.com/shared/static/ffwlywsat3q5ijypvunno3rg6steqfs8
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
-  description: MyVariant.info REST API (v1) for variant query and annotation retrieval by
-    HGVS id or rsid, with batch POST queries and field filtering. Returns JSON documents merged
-    from the integrated sources, on hg19 and hg38.
+  description: MyVariant.info REST API (v1) for variant query and annotation retrieval
+    by HGVS id or rsid, with batch POST queries and field filtering. Returns JSON
+    documents merged from the integrated sources, on hg19 and hg38.
   format: http
   id: myvariant.api
   infores_id: myvariant-info

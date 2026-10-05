@@ -416,6 +416,7 @@ products:
     source: ncit
   - relation_type: prov:hadPrimarySource
     source: omim
+  product_file_size: 1921927
   product_url: https://raw.githubusercontent.com/bio-ontology-research-group/pavs-knowledge-graph/master/data/PAVS_phenopackets.json
 publications:
 - authors:

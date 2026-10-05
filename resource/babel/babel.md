@@ -213,12 +213,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: babel
+  product_file_size: 5926
   product_url: https://github.com/NCATSTranslator/Babel/blob/main/docs/DataFormats.md
 - category: ProgrammingInterface
   connection_url: https://name-resolution-sri.renci.org/
-  description: RENCI-hosted Name Resolver REST API (version 1.7.0 when checked) with lookup,
-    autocomplete, bulk-lookup, synonyms and reverse_lookup endpoints for mapping biomedical
-    concept names to normalized CURIEs, documented with an OpenAPI/Swagger page.
+  description: RENCI-hosted Name Resolver REST API (version 1.7.0 when checked) with
+    lookup, autocomplete, bulk-lookup, synonyms and reverse_lookup endpoints for mapping
+    biomedical concept names to normalized CURIEs, documented with an OpenAPI/Swagger
+    page.
   format: http
   id: name-resolver.api
   is_public: true
@@ -231,9 +233,9 @@ products:
   product_url: https://name-resolution-sri.renci.org/docs
 - category: ProgrammingInterface
   connection_url: https://name-lookup.transltr.io/
-  description: NCATS Translator production deployment of the Name Resolver REST API (version
-    1.4.5 when checked), offering the same lookup, synonyms and reverse lookup endpoints for
-    Translator tools and user interfaces.
+  description: NCATS Translator production deployment of the Name Resolver REST API
+    (version 1.4.5 when checked), offering the same lookup, synonyms and reverse lookup
+    endpoints for Translator tools and user interfaces.
   format: http
   id: name-resolver.translator-api
   is_public: true
@@ -247,10 +249,11 @@ products:
 - category: ProgrammingInterface
   compatibility:
   - standard: biolink
-  description: Node Normalization REST API hosted by RENCI (OpenAPI version 2.5.1, TRAPI 1.5
-    annotate_nodes operation). Endpoints include /get_normalized_nodes, /get_semantic_types,
-    /get_curie_prefixes, /get_allowed_conflations, /get_setid and TRAPI /query and /asyncquery.
-    The OpenAPI servers block labels this deployment development maturity.
+  description: Node Normalization REST API hosted by RENCI (OpenAPI version 2.5.1,
+    TRAPI 1.5 annotate_nodes operation). Endpoints include /get_normalized_nodes,
+    /get_semantic_types, /get_curie_prefixes, /get_allowed_conflations, /get_setid
+    and TRAPI /query and /asyncquery. The OpenAPI servers block labels this deployment
+    development maturity.
   format: http
   id: node-normalizer.api
   is_public: true

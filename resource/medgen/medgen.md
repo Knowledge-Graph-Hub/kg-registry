@@ -1108,6 +1108,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  product_file_size: 195005473
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/gtr_ftp.xml.gz
 - category: Product
   description: Tab-delimited listing of every registered test and the conditions and
@@ -1129,11 +1130,11 @@ products:
     source: ncbigene
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_condition_gene.txt
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -1263,9 +1264,9 @@ products:
     source: pubtator
   product_url: https://rdfportal.org/ncbi/sparql
 - category: ProgrammingInterface
-  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed by DBCLS,
-    with a GraphiQL interface in the browser. When checked it covered UniProt, ChEBI, ChEMBL
-    and MedGen.
+  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed
+    by DBCLS, with a GraphiQL interface in the browser. When checked it covered UniProt,
+    ChEBI, ChEMBL and MedGen.
   format: http
   id: rdf-portal.graphql
   name: RDF Portal GraphQL API

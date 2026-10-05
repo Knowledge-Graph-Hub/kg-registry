@@ -58,6 +58,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 359471390
   product_url: https://chip-atlas.dbcls.jp/data/metadata/experimentList.tab
 - category: Product
   description: Table listing the assembled peak-call BED files used by the Peak Browser,
@@ -68,6 +69,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chip-atlas
+  product_file_size: 126917161
   product_url: https://chip-atlas.dbcls.jp/data/metadata/fileList.tab
 - category: Product
   description: Peak calls (MACS2, BED4 and BigBed) and coverage tracks (BigWig) for
@@ -87,8 +89,8 @@ products:
 - category: Product
   description: Assembled BED9 peak-call files used in the Peak Browser, concatenating
     peaks across experiments by antigen or track type and cell type class, with sample
-    metadata in GFF3-style attributes for display in IGV. Files are named
-    as listed in fileList.tab; the URL given is one example file.
+    metadata in GFF3-style attributes for display in IGV. Files are named as listed
+    in fileList.tab; the URL given is one example file.
   format: txt
   id: chip-atlas.peaks.assembled
   name: ChIP-Atlas Assembled Peak-call Data
@@ -97,6 +99,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 637430253
   product_url: https://chip-atlas.dbcls.jp/data/hg19/assembled/Oth.ALL.05.GATA2.AllCell.bed
 - category: Product
   compression: gzip
@@ -111,6 +114,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 21398659343
   product_url: https://chip-atlas.dbcls.jp/data/hg38/allPeaks_light/allPeaks_light.hg38.05.bed.gz
 - category: Product
   description: Predicted target genes of each transcription factor or other DNA-binding
@@ -125,6 +129,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 2603130
   product_url: https://chip-atlas.dbcls.jp/data/hg19/target/POU5F1.5.tsv
 - category: Product
   description: Colocalization scores between pairs of transcription factors or other
@@ -139,6 +144,7 @@ products:
     source: chip-atlas
   - relation_type: prov:hadPrimarySource
     source: sra
+  product_file_size: 270398
   product_url: https://chip-atlas.dbcls.jp/data/hg19/colo/POU5F1.Pluripotent_stem_cell.tsv
 - category: ProgrammingInterface
   description: Programmatic access to ChIP-Atlas Enrichment Analysis and Diff Analysis

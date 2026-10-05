@@ -69,6 +69,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biolincc
   product_url: https://biolincc.nhlbi.nih.gov/studies/?_export
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
+    exceeded with url: /studies/?_export (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
+    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
 - category: Product
   description: Teaching datasets derived from the Framingham Heart Study, the Digitalis
     Investigation Group trial and the Childhood Asthma Management Program, anonymized
@@ -82,6 +87,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biolincc
   product_url: https://biolincc.nhlbi.nih.gov/teaching/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
+    exceeded with url: /teaching/ (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
+    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
 - category: DocumentationProduct
   description: BioLINCC Users Guide describing how to search for and request study
     datasets and biospecimens, the review process, required IRB documentation and
@@ -93,6 +103,11 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biolincc
   product_url: https://biolincc.nhlbi.nih.gov/media/BioLINCC_User_Guide_05Jan2026.pdf
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
+    exceeded with url: /media/BioLINCC_User_Guide_05Jan2026.pdf (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
+    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
 - category: DocumentationProduct
   description: Frequently asked questions on account registration, request requirements,
     costs, de-identification and redaction, request timelines and terms of use for
@@ -104,9 +119,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biolincc
   product_url: https://biolincc.nhlbi.nih.gov/faq/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
+    exceeded with url: /faq/ (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
+    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
 - category: GraphicalInterface
-  description: Web portal for searching clinical studies and their data objects by keyword,
-    registry identifier, PubMed ID or country, with CSV and JSON export of results.
+  description: Web portal for searching clinical studies and their data objects by
+    keyword, registry identifier, PubMed ID or country, with CSV and JSON export of
+    results.
   format: http
   id: ecrin-mdr.portal
   name: ECRIN MDR Portal
@@ -129,9 +150,9 @@ products:
     source: yoda
   product_url: https://newmdr.ecrin.org/
 - category: ProgrammingInterface
-  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints for study
-    search, lookup by registry ID or PubMed ID, full study and object details, summary statistics
-    and an OmicsDI export feed. Documented with Swagger/OpenAPI.
+  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints
+    for study search, lookup by registry ID or PubMed ID, full study and object details,
+    summary statistics and an OmicsDI export feed. Documented with Swagger/OpenAPI.
   format: http
   id: ecrin-mdr.api
   name: ECRIN MDR API

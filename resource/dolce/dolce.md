@@ -35,6 +35,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dolce
+  product_file_size: 37374
   product_url: https://standards.iso.org/iso-iec/21838/-3/ed-1/en/Dolce.owl
 - category: OntologyProduct
   description: Common Logic (CLIF) axiomatization of DOLCE Simple published as an
@@ -46,6 +47,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dolce
+  product_file_size: 16050
   product_url: https://standards.iso.org/iso-iec/21838/-3/ed-1/en/dolce_simple_clif.p
 - category: OntologyProduct
   description: DOLCE-Lite, an OWL (RDF/XML) re-engineering of DOLCE by Aldo Gangemi
@@ -56,6 +58,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dolce
+  product_file_size: 106827
   product_url: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl
 - category: OntologyProduct
   compression: zip
@@ -68,6 +71,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dolce
+  product_file_size: 261017
   product_url: http://www.loa.istc.cnr.it/ontologies/DLP3971.zip
 - category: OntologyProduct
   description: DOLCE+DnS Ultralite (DUL) version 4.2, a lightweight, pattern-based
@@ -80,6 +84,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dolce
+  product_file_size: 186902
   product_url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
 - category: DocumentationProduct
   description: WonderWeb Deliverable D18, the final first-order axiomatization of
@@ -91,6 +96,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dolce
+  product_file_size: 1789764
   product_url: http://www.loa.istc.cnr.it/old/Papers/D18.pdf
 - category: DocumentationProduct
   description: LOA overview page for DOLCE, with links to its formalizations, documentation

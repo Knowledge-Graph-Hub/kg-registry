@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: George Gkoutos
-  orcid: 0000-0002-2061-091X
   contact_details:
   - contact_type: email
     value: g.gkoutos@gmail.com
   - contact_type: github
     value: gkoutos
+  label: George Gkoutos
+  orcid: 0000-0002-2061-091X
 creation_date: '2025-06-04T00:00:00Z'
 description: Metrical units for use in conjunction with PATO
 domains:
@@ -692,10 +692,10 @@ products:
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/UO.tar.gz
 - category: ProcessProduct
   description: Python scripts that build FoodKG from the Recipe1M recipe dataset (layer1.json
-    and det_ingrs.json, acquired manually), USDA nutrient data and FoodOn (downloaded automatically).
-    Outputs are three TriG files, usda-links.trig (about 4.1 million triples), foodon-links.trig
-    (about 30 thousand triples) and foodkg-core.trig (about 63 million triples), intended
-    for loading into Blazegraph.
+    and det_ingrs.json, acquired manually), USDA nutrient data and FoodOn (downloaded
+    automatically). Outputs are three TriG files, usda-links.trig (about 4.1 million
+    triples), foodon-links.trig (about 30 thousand triples) and foodkg-core.trig (about
+    63 million triples), intended for loading into Blazegraph.
   format: python
   id: foodkg.build-scripts
   license:
@@ -713,8 +713,8 @@ products:
     source: fooddata-central
   product_url: https://github.com/foodkg/foodkg.github.io/tree/master/src
 - category: GraphProduct
-  description: Sample of FoodKG containing the USDA nutrient data mappings, generated with
-    the Semantic Data Dictionary process (usda.rdf, hosted on Google Drive).
+  description: Sample of FoodKG containing the USDA nutrient data mappings, generated
+    with the Semantic Data Dictionary process (usda.rdf, hosted on Google Drive).
   format: rdfxml
   id: foodkg.usda-sample
   name: FoodKG USDA Mappings Sample
@@ -729,9 +729,9 @@ products:
     source: fooddata-central
   product_url: https://drive.google.com/open?id=1hkitCcxnM_7R6OYuvC5zakWojlN2Xuog
 - category: MappingProduct
-  description: Semantic Data Dictionary mapping file specifying how USDA nutrient data columns
-    are linked to external ontologies such as FoodOn and the Units of Measurement Ontology
-    when building FoodKG.
+  description: Semantic Data Dictionary mapping file specifying how USDA nutrient
+    data columns are linked to external ontologies such as FoodOn and the Units of
+    Measurement Ontology when building FoodKG.
   format: csv
   id: foodkg.sdd-dictionary
   license:
@@ -747,6 +747,7 @@ products:
     source: uo
   - relation_type: prov:wasDerivedFrom
     source: fooddata-central
+  product_file_size: 1066
   product_url: https://foodkg.github.io/sdd/usdaDM.csv
 publications:
 - authors:

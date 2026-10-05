@@ -2426,8 +2426,8 @@ products:
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: Product
-  description: Tab-delimited list of GeneReviews chapters with short name, chapter title,
-    NCBI Bookshelf (NBK) id and PubMed id, updated weekly.
+  description: Tab-delimited list of GeneReviews chapters with short name, chapter
+    title, NCBI Bookshelf (NBK) id and PubMed id, updated weekly.
   format: tsv
   id: genereviews.titles
   name: GeneReviews Titles
@@ -2436,10 +2436,12 @@ products:
     source: genereviews
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  product_file_size: 21527
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRtitle_shortname_NBKid.txt
 - category: GraphicalInterface
-  description: Web portal for searching clinical studies and their data objects by keyword,
-    registry identifier, PubMed ID or country, with CSV and JSON export of results.
+  description: Web portal for searching clinical studies and their data objects by
+    keyword, registry identifier, PubMed ID or country, with CSV and JSON export of
+    results.
   format: http
   id: ecrin-mdr.portal
   name: ECRIN MDR Portal
@@ -2462,9 +2464,9 @@ products:
     source: yoda
   product_url: https://newmdr.ecrin.org/
 - category: ProgrammingInterface
-  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints for study
-    search, lookup by registry ID or PubMed ID, full study and object details, summary statistics
-    and an OmicsDI export feed. Documented with Swagger/OpenAPI.
+  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints
+    for study search, lookup by registry ID or PubMed ID, full study and object details,
+    summary statistics and an OmicsDI export feed. Documented with Swagger/OpenAPI.
   format: http
   id: ecrin-mdr.api
   name: ECRIN MDR API
@@ -2487,11 +2489,11 @@ products:
     source: yoda
   product_url: https://newmdr.ecrin.org/swagger/index.html
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22

@@ -13,10 +13,10 @@ creation_date: '2026-10-05T00:00:00Z'
 description: JWS Online is a repository of curated kinetic models of biological systems
   with a browser-based simulation platform, developed by Jacky Snoep's group at Stellenbosch
   University with mirrors in Amsterdam and Manchester. It holds over 800 curated models
-  (SBML-compliant, with downloads in SBML, Mathematica, JWS and PySCeS formats), a database
-  of curated SED-ML simulation experiments for reproducing published figures, a model
-  builder, and a REST API. Its models are shared with BioModels and integrated into
-  FAIRDOMHub and FAIRDOM-SEEK.
+  (SBML-compliant, with downloads in SBML, Mathematica, JWS and PySCeS formats), a
+  database of curated SED-ML simulation experiments for reproducing published figures,
+  a model builder, and a REST API. Its models are shared with BioModels and integrated
+  into FAIRDOMHub and FAIRDOM-SEEK.
 domains:
 - systems biology
 - biological systems
@@ -29,9 +29,9 @@ layout: resource_detail
 name: JWS Online
 products:
 - category: GraphicalInterface
-  description: Web interface to browse the JWS Online database of curated kinetic models,
-    filterable by organism, tissue, process and model type, with links to each model's
-    detail page, schema and online simulator.
+  description: Web interface to browse the JWS Online database of curated kinetic
+    models, filterable by organism, tissue, process and model type, with links to
+    each model's detail page, schema and online simulator.
   format: http
   id: jws-online.models
   name: JWS Online Model Database
@@ -49,6 +49,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jws-online
+  product_file_size: 83967
   product_url: https://jjj.biochem.sun.ac.za/models/achcar1/sbml/?download=1
 - category: GraphicalInterface
   description: Database of curated simulation experiments (SED-ML) linked to JWS Online
@@ -73,9 +74,9 @@ products:
   product_url: https://jjj.biochem.sun.ac.za/models/manuscripts/
 - category: ProgrammingInterface
   description: REST API for listing and searching models and simulation experiments
-    (by species or reaction ID), retrieving model and manuscript details as JSON, running
-    time-course and steady-state analyses, and exporting or uploading models and simulations.
-    Mostly usable without authentication.
+    (by species or reaction ID), retrieving model and manuscript details as JSON,
+    running time-course and steady-state analyses, and exporting or uploading models
+    and simulations. Mostly usable without authentication.
   format: json
   id: jws-online.api
   is_public: true

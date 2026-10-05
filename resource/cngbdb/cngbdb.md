@@ -58,8 +58,8 @@ products:
     source: cngbdb
   product_url: https://db.cngb.org/cnsa/
 - category: Product
-  description: Public FTP/HTTPS download area for CNSA data files, split across
-    data1 to data7 subdirectories.
+  description: Public FTP/HTTPS download area for CNSA data files, split across data1
+    to data7 subdirectories.
   format: mixed
   id: cngbdb.cnsa.ftp
   name: CNSA Data Download
@@ -86,6 +86,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cngbdb
+  product_file_size: 1131662
   product_url: https://db.cngb.org/dc_assets/data/dc_cnsa/doc/cnsa_handbook_en.pdf
 publications:
 - authors:

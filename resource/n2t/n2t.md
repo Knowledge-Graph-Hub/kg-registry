@@ -53,6 +53,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: n2t
+  product_file_size: 31248
   product_url: https://n2t.net/.info?valid=1
 - category: Product
   description: Full YAML list of N2T prefix records with their names, redirect rules,

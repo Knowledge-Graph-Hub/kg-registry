@@ -53,6 +53,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  product_file_size: 195005473
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/gtr_ftp.xml.gz
 - category: Product
   description: Tab-delimited listing of every registered test and the conditions and
@@ -76,14 +77,15 @@ products:
 - category: Product
   compression: gzip
   description: Tab-delimited test version history for all publicly available GTR tests,
-    with laboratory, location, CLIA number, conditions, methods, platforms, genes and
-    status fields for each test version.
+    with laboratory, location, CLIA number, conditions, methods, platforms, genes
+    and status fields for each test version.
   format: tsv
   id: gtr.test_version
   name: GTR Test Version History
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtr
+  product_file_size: 13064784
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_version.gz
 - category: DocumentationProduct
   description: GTR documentation pages describing the registry, its data model and

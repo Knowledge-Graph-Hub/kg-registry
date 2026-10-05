@@ -52,6 +52,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nci60
+  product_file_size: 39004593
   product_url: https://wiki.nci.nih.gov/download/attachments/147193864/GI50.zip
 - category: Product
   compression: zip
@@ -63,6 +64,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nci60
+  product_file_size: 34477901
   product_url: https://wiki.nci.nih.gov/download/attachments/147193864/TGI.zip
 - category: Product
   compression: zip
@@ -74,6 +76,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nci60
+  product_file_size: 30570051
   product_url: https://wiki.nci.nih.gov/download/attachments/147193864/LC50.zip
 - category: Product
   compression: zip
@@ -85,6 +88,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nci60
+  product_file_size: 37078627
   product_url: https://wiki.nci.nih.gov/download/attachments/147193864/IC50.zip
 - category: Product
   compression: zip
@@ -97,6 +101,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nci60
+  product_file_size: 347853412
   product_url: https://wiki.nci.nih.gov/download/attachments/147193864/DOSERESP.zip
 - category: Product
   compression: zip
@@ -108,6 +113,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nci60
+  product_file_size: 54777377
   product_url: https://wiki.nci.nih.gov/download/attachments/147193864/ONECONC.zip
 - category: Product
   description: List of public NSC compound numbers covered by the NCI-60 data release.
@@ -117,6 +123,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nci60
+  product_file_size: 2574659
   product_url: https://wiki.nci.nih.gov/download/attachments/147193864/public_nscs.csv
 - category: DocumentationProduct
   description: NCI DTP Data wiki page for the NCI-60 growth inhibition download, with

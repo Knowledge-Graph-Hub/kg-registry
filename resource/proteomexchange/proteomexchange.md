@@ -22,6 +22,18 @@ homepage_url: https://www.proteomexchange.org/
 id: proteomexchange
 last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
+license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: pride. Not accounted for, no known license:
+    massive.'
+  id: https://www.ebi.ac.uk/about/terms-of-use
+  inferred_from:
+  - pride
+  label: EMBL-EBI Terms of Use
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - massive
 name: ProteomeXchange
 products:
 - category: GraphicalInterface
@@ -131,6 +143,8 @@ products:
   warnings:
   - Feed was not able to be retrieved when checked on 2026-10-04. The URL listed on
     the ProteomeXchange subscription page returned HTTP 404.
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: ProteomeXchange data submission and dissemination guidelines for partner
     repositories and submitters.
@@ -140,6 +154,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proteomexchange
+  product_file_size: 319114
   product_url: https://www.proteomexchange.org/docs/guidelines_px.pdf
 - category: DocumentationProduct
   description: Instructions for submitting datasets to ProteomeXchange through its

@@ -53,6 +53,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: iana-mediatype
+  product_file_size: 549998
   product_url: https://www.iana.org/assignments/media-types/media-types.txt
 - category: Product
   description: CSV of the 1807 registered `application/*` media types (name, template,
@@ -167,6 +168,7 @@ products:
     source: obo-db-ingest
   - relation_type: prov:hadPrimarySource
     source: iana-mediatype
+  product_file_size: 46917
   product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.obo
 - category: Product
   description: IANA Media Types OWL
@@ -181,6 +183,7 @@ products:
     source: obo-db-ingest
   - relation_type: prov:hadPrimarySource
     source: iana-mediatype
+  product_file_size: 69907
   product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.owl
 - category: Product
   description: IANA Media Types OBO Graph JSON
@@ -195,6 +198,7 @@ products:
     source: obo-db-ingest
   - relation_type: prov:hadPrimarySource
     source: iana-mediatype
+  product_file_size: 69693
   product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.json
 - category: MappingProduct
   description: IANA Media Types SSSOM
@@ -209,6 +213,7 @@ products:
     source: obo-db-ingest
   - relation_type: prov:hadPrimarySource
     source: iana-mediatype
+  product_file_size: 383
   product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.sssom.tsv
 - category: Product
   description: IANA Media Types Nodes TSV
@@ -223,6 +228,7 @@ products:
     source: obo-db-ingest
   - relation_type: prov:hadPrimarySource
     source: iana-mediatype
+  product_file_size: 28305
   product_url: https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.tsv
 publications:
 - authors:

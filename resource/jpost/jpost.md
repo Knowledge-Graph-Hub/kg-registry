@@ -68,6 +68,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 12474382
   product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_protein.zip
   secondary_source:
   - relation_type: prov:used
@@ -83,6 +84,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 67761000
   product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm.zip
   secondary_source:
   - relation_type: prov:used
@@ -98,6 +100,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 16805069
   product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm_modification.zip
 - category: Product
   description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB
@@ -142,6 +145,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: jpost
+  product_file_size: 47218
   product_url: http://rdf.jpostdb.org/ontology/jpost.owl
   secondary_source:
   - relation_type: prov:used

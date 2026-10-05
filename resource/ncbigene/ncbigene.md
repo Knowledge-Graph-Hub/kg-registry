@@ -3661,6 +3661,7 @@ products:
     source: medgen
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  product_file_size: 195005473
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/gtr_ftp.xml.gz
 - category: Product
   description: Tab-delimited listing of every registered test and the conditions and
@@ -3682,9 +3683,9 @@ products:
     source: ncbigene
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_condition_gene.txt
 - category: ProgrammingInterface
-  description: MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez
-    or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents
-    merged from the integrated sources.
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
+    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
+    JSON documents merged from the integrated sources.
   format: http
   id: mygene.api
   infores_id: mygene-info
@@ -3742,11 +3743,11 @@ products:
     source: wikipedia
   product_url: https://mygene.info/v3/api
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -3877,9 +3878,9 @@ products:
   product_url: https://rdfportal.org/ncbi/sparql
 - category: ProgrammingInterface
   connection_url: https://pavs.phenomebrowser.net/sparql
-  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing Saudi
-    case records, gene annotations, HPO disease annotations, HPO information content values
-    and literature phenopackets as RDF named graphs.
+  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing
+    Saudi case records, gene annotations, HPO disease annotations, HPO information
+    content values and literature phenopackets as RDF named graphs.
   format: http
   id: pavs-kg.sparql
   is_public: true
@@ -3930,8 +3931,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/sparql
 - category: GraphicalInterface
-  description: PAVS web portal with phenotype-based semantic similarity search, gene and variant
-    browsers, and an HPO hierarchy explorer over the knowledge graph.
+  description: PAVS web portal with phenotype-based semantic similarity search, gene
+    and variant browsers, and an HPO hierarchy explorer over the knowledge graph.
   format: http
   id: pavs-kg.portal
   name: PAVS Web Portal
@@ -3978,8 +3979,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/
 - category: ProgrammingInterface
-  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation, for case
-    search and SPARQL-backed queries.
+  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation,
+    for case search and SPARQL-backed queries.
   format: http
   id: pavs-kg.api
   name: PAVS REST API

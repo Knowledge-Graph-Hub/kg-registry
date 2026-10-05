@@ -96,6 +96,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ohd-carolina
+  product_file_size: 1667867094
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/graph_f627ebbefd242454.db.dump
 - category: ProgrammingInterface
   description: Automat TRAPI endpoint for OHD@Carolina, with query, meta knowledge
@@ -121,6 +122,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ohd-carolina
+  product_file_size: 560260
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/meta_knowledge_graph.json
 - category: Product
   compression: zip
@@ -137,6 +139,7 @@ products:
     source: ohd-carolina
   - relation_type: prov:wasInfluencedBy
     source: ohdsi
+  product_file_size: 2001145655
   product_url: https://stars.renci.org/var/data_services/ohd/unc_omop_2018_2022_kg.zip
   versions:
   - '2024-11-18'

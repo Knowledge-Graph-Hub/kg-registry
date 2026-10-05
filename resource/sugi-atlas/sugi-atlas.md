@@ -16,8 +16,8 @@ description: Sugi Atlas is a deterministic biomedical reference atlas with one c
   by template, with no language model in the loop, so every figure traces to its source.
   Each page is published as static HTML with a Markdown version and a schema.org JSON-LD
   record, for both human readers and AI agents. Gene, drug and disease pages are seeded
-  from HGNC, Mondo and ChEMBL identifiers and are rebuilt at least monthly against new
-  BioBTree releases.
+  from HGNC, Mondo and ChEMBL identifiers and are rebuilt at least monthly against
+  new BioBTree releases.
 domains:
 - biomedical
 - genomics
@@ -52,9 +52,9 @@ products:
     source: chembl
   product_url: https://sugi.bio/atlas/
 - category: Product
-  description: JSON manifest of the atlas corpus, mapping page slugs to canonical names
-    and synonyms for genes, drugs, diseases and pathways (about 12.8 MB when checked
-    on 2026-10-04).
+  description: JSON manifest of the atlas corpus, mapping page slugs to canonical
+    names and synonyms for genes, drugs, diseases and pathways (about 12.8 MB when
+    checked on 2026-10-04).
   format: json
   id: sugi-atlas.manifest
   name: Sugi Atlas Manifest
@@ -63,6 +63,7 @@ products:
     source: sugi-atlas
   - relation_type: prov:wasDerivedFrom
     source: biobtree
+  product_file_size: 12797962
   product_url: https://sugi.bio/atlas/manifest.json
 - category: ProcessProduct
   description: Python pipeline that queries BioBTree and builds, tests and releases
@@ -70,6 +71,7 @@ products:
     to releases.
   format: python
   id: sugi-atlas.code
+  latest_version: v1.11.0
   license:
     id: https://opensource.org/licenses/MIT
     label: MIT
@@ -79,7 +81,6 @@ products:
     source: sugi-atlas
   product_url: https://github.com/tamerh/sugi-atlas
   repository: https://github.com/tamerh/sugi-atlas
-  latest_version: v1.11.0
 - category: DocumentationProduct
   description: HTML version of the Sugi Atlas preprint describing the build method,
     page contract, cross-entity mesh and corpus statistics.

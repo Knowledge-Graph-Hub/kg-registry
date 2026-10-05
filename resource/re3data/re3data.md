@@ -55,9 +55,9 @@ products:
   product_url: https://www.re3data.org/api/doc
 - category: Product
   compression: zip
-  description: Daily export of all online re3data repository records as XML files in
-    a single zip archive (about 7 MB), with monthly archived snapshots also listed on
-    the data download page.
+  description: Daily export of all online re3data repository records as XML files
+    in a single zip archive (about 7 MB), with monthly archived snapshots also listed
+    on the data download page.
   format: xml
   id: re3data.export
   license:
@@ -78,6 +78,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: re3data
+  product_file_size: 160310
   product_url: https://schema.re3data.org/4-0/re3dataV4-0.xsd
 - category: DocumentationProduct
   description: Documentation of version 4.0 of the re3data Metadata Schema for the
@@ -90,6 +91,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: re3data
   product_url: https://doi.org/10.48440/re3.014
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
+    to URL'
 - category: DocumentationProduct
   description: re3data API documentation describing the OpenSearch and RESTful interfaces,
     versioning and the metadata schema versions served.
@@ -101,9 +105,9 @@ products:
     source: re3data
   product_url: https://www.re3data.org/api/doc
 - category: Product
-  description: Full Bioregistry export as JSON, with every prefix record including names,
-    synonyms, URI formats, local identifier patterns, providers and mappings to the prefixes
-    of other registries.
+  description: Full Bioregistry export as JSON, with every prefix record including
+    names, synonyms, URI formats, local identifier patterns, providers and mappings
+    to the prefixes of other registries.
   format: json
   id: bioregistry.registry.json
   name: Bioregistry JSON Export
@@ -145,9 +149,9 @@ products:
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
-  description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes in
-    other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology registry,
-    Cellosaurus, UniProt and NCBI.
+  description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+    in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology
+    registry, Cellosaurus, UniProt and NCBI.
   format: sssom
   id: bioregistry.sssom
   name: Bioregistry SSSOM Mappings
