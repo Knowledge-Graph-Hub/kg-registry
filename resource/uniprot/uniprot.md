@@ -5775,6 +5775,45 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: ProgrammingInterface
+  description: SPARQL endpoint for SIB-derived RDF datasets, including Bgee, Cellosaurus,
+    OMA, Rhea and UniProt.
+  format: http
+  id: rdf-portal.sparql.sib
+  name: RDF Portal SIB SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: bgee
+  - relation_type: prov:wasDerivedFrom
+    source: cellosaurus
+  - relation_type: prov:wasDerivedFrom
+    source: oma
+  - relation_type: prov:wasDerivedFrom
+    source: rhea
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  product_url: https://rdfportal.org/sib/sparql
+- category: ProgrammingInterface
+  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed
+    by DBCLS, with a GraphiQL interface in the browser. When checked it covered UniProt,
+    ChEBI, ChEMBL and MedGen.
+  format: http
+  id: rdf-portal.graphql
+  name: RDF Portal GraphQL API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: chembl
+  - relation_type: prov:wasDerivedFrom
+    source: medgen
+  product_url: https://rdfportal.org/grasp
 publications:
 - authors:
   - Alex Bateman

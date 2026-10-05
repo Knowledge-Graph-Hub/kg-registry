@@ -786,6 +786,33 @@ entries:
     source_path: resource/cacao/cacao.md
     status: valid
     warnings: []
+  resource/cadd/cadd.md#publication[0]#DOI:10.1093/nar/gky1016:
+    checked_at: '2026-10-05T15:12:56Z'
+    errors: []
+    fingerprint: 8063ccd3d6448f099225031fe7190c8b1d0541a74066b397dfbc430c18282483
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky1016
+    source_path: resource/cadd/cadd.md
+    status: valid
+    warnings: []
+  resource/cadd/cadd.md#publication[1]#DOI:10.1038/ng.2892:
+    checked_at: '2026-10-05T15:12:57Z'
+    errors: []
+    fingerprint: dafde1046f2c65d31729eea55925181af4bb1fbc73cba9477e91931157de6a0f
+    publication_index: 1
+    reference_id: DOI:10.1038/ng.2892
+    source_path: resource/cadd/cadd.md
+    status: valid
+    warnings: []
+  resource/cadd/cadd.md#publication[2]#DOI:10.1093/nar/gkad989:
+    checked_at: '2026-10-05T15:13:27Z'
+    errors: []
+    fingerprint: f0de6c231eebaee193793eab9a8eff8bce15ca710876991b9b35dd160fd19a3a
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkad989
+    source_path: resource/cadd/cadd.md
+    status: valid
+    warnings: []
   resource/cam-kp/cam-kp.md#publication[0]#ARXIV:2004.01269:
     checked_at: '2026-06-22T16:42:57Z'
     errors: []
@@ -1416,6 +1443,24 @@ entries:
     publication_index: 1
     reference_id: PMID:24103152
     source_path: resource/cmo/cmo.md
+    status: valid
+    warnings: []
+  resource/cngbdb/cngbdb.md#publication[0]#DOI:10.1093/database/baaa055:
+    checked_at: '2026-10-05T15:13:36Z'
+    errors: []
+    fingerprint: f37a809cd9d930441c01cbca56e4b1973ff7d7f92411b4d70a20d8e383db8efb
+    publication_index: 0
+    reference_id: DOI:10.1093/database/baaa055
+    source_path: resource/cngbdb/cngbdb.md
+    status: valid
+    warnings: []
+  resource/cngbdb/cngbdb.md#publication[1]#DOI:10.1093/hr/uhaf036:
+    checked_at: '2026-10-05T15:14:05Z'
+    errors: []
+    fingerprint: 4ecf5b733fcd7cb6c45778abcb545cca8302fb3a642d6b6c2eb0d0625f9a254e
+    publication_index: 1
+    reference_id: DOI:10.1093/hr/uhaf036
+    source_path: resource/cngbdb/cngbdb.md
     status: valid
     warnings: []
   resource/cog/cog.md#publication[0]#PMID:33167031:
@@ -4064,6 +4109,24 @@ entries:
     source_path: resource/jaspar/jaspar.md
     status: valid
     warnings: []
+  resource/jws-online/jws-online.md#publication[0]#DOI:10.1093/bioinformatics/bth200:
+    checked_at: '2026-10-05T15:13:28Z'
+    errors: []
+    fingerprint: dc48f7cf8b9bfabd806c9517ae37f9faeabec67a4cb2162a33024aa826a225a6
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/bth200
+    source_path: resource/jws-online/jws-online.md
+    status: valid
+    warnings: []
+  resource/jws-online/jws-online.md#publication[1]#DOI:10.1093/bioinformatics/btw831:
+    checked_at: '2026-10-05T15:13:29Z'
+    errors: []
+    fingerprint: 8c28581c595ee273dda7cbf2cd765374688a684055f31d08d86b4837298a7954
+    publication_index: 1
+    reference_id: DOI:10.1093/bioinformatics/btw831
+    source_path: resource/jws-online/jws-online.md
+    status: valid
+    warnings: []
   resource/kegg/kegg.md#publication[0]#DOI:10.1093/nar/gkae909:
     checked_at: '2026-08-06T18:17:54Z'
     errors: []
@@ -5328,6 +5391,51 @@ entries:
     publication_index: 0
     reference_id: PMID:40799495
     source_path: resource/ngbo/ngbo.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[0]#DOI:10.1093/nar/gkaf1172:
+    checked_at: '2026-10-05T15:14:23Z'
+    errors: []
+    fingerprint: 08aac8dc8e5bfea7ebdcffab41d44c075b58e5a2591b74c9afe7eca78212f19d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1172
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[1]#DOI:10.1093/nar/gkae978:
+    checked_at: '2026-10-05T15:14:23Z'
+    errors: []
+    fingerprint: 862719312d7aeda745c9ced5c36530906ef56b5a19c87d9e328c188f8dcf961d
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkae978
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[2]#DOI:10.1093/nar/gkad1078:
+    checked_at: '2026-10-05T15:14:23Z'
+    errors: []
+    fingerprint: 3951659c6ef44ae4bcc3d9b7bcda72528c63836842f864c5964c93436d36d5f3
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkad1078
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[3]#DOI:10.1093/gpbjnl/qzaf072:
+    checked_at: '2026-10-05T15:13:33Z'
+    errors: []
+    fingerprint: 42ced1d7c56f4380dcf82ef9805a6fa6fda9b7ddaab66a6db3873825b1b8be77
+    publication_index: 3
+    reference_id: DOI:10.1093/gpbjnl/qzaf072
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[4]#DOI:10.1016/j.gpb.2021.08.001:
+    checked_at: '2026-10-05T15:13:35Z'
+    errors: []
+    fingerprint: bd5a61eecab0caf3ee9543dc78b4176fbd6fbde3c42bf2d4679fb4c4f8db409f
+    publication_index: 4
+    reference_id: DOI:10.1016/j.gpb.2021.08.001
+    source_path: resource/ngdc/ngdc.md
     status: valid
     warnings: []
   resource/noncode/noncode.md#publication[0]#DOI:10.1093/nar/gkaa1046:
@@ -7022,6 +7130,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/bioinformatics/btad440
     source_path: resource/rdbridge/rdbridge.md
+    status: valid
+    warnings: []
+  resource/rdf-portal/rdf-portal.md#publication[0]#DOI:10.1093/database/bay123:
+    checked_at: '2026-10-05T15:14:07Z'
+    errors: []
+    fingerprint: 5aa17a8028d51edce077e5d634fdea8788ffd085d855204cd952946890c61e8d
+    publication_index: 0
+    reference_id: DOI:10.1093/database/bay123
+    source_path: resource/rdf-portal/rdf-portal.md
     status: valid
     warnings: []
   resource/rdp/rdp.md#publication[0]#PMID:24288368:

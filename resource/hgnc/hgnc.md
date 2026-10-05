@@ -4190,6 +4190,33 @@ products:
     source: genetics-kp
   product_file_size: 2127877
   product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+- category: ProgrammingInterface
+  description: SPARQL endpoint for the primary RDF Portal datasets, mostly from Japanese
+    projects and partner databases (for example BacDive, BRENDA, GlyTouCan, GTDB,
+    HGNC, HomoloGene, ICGC, jPOST, MediaDive, NANDO, PubCaseFinder and TogoID).
+  format: http
+  id: rdf-portal.sparql.primary
+  name: RDF Portal Primary SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: brenda
+  - relation_type: prov:wasDerivedFrom
+    source: glytoucan
+  - relation_type: prov:wasDerivedFrom
+    source: gtdb
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: homologene
+  - relation_type: prov:wasDerivedFrom
+    source: icgc
+  - relation_type: prov:wasDerivedFrom
+    source: mediadive
+  product_url: https://rdfportal.org/primary/sparql
 publications:
 - authors:
   - Seal RL

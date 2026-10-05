@@ -2696,6 +2696,66 @@ products:
     source: cosmic
   product_file_size: 3873087
   product_url: https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv
+- category: Product
+  compression: gzip
+  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible
+    single nucleotide variants in the GRCh38 human reference genome, tab-separated
+    and bgzip-compressed with a tabix index. A larger version including all annotations
+    is also offered.
+  format: tsv
+  id: cadd.snvs.grch38
+  name: CADD v1.7 Whole-Genome SNV Scores (GRCh38)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cadd
+  - relation_type: prov:wasInfluencedBy
+    source: ensembl
+  - relation_type: prov:wasInfluencedBy
+    source: ucsc
+  - relation_type: prov:wasInfluencedBy
+    source: encode
+  product_file_size: 87473403655
+  product_url: https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz
+- category: Product
+  compression: gzip
+  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible
+    single nucleotide variants in the GRCh37 human reference genome, tab-separated
+    and bgzip-compressed with a tabix index.
+  format: tsv
+  id: cadd.snvs.grch37
+  name: CADD v1.7 Whole-Genome SNV Scores (GRCh37)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cadd
+  - relation_type: prov:wasInfluencedBy
+    source: ensembl
+  - relation_type: prov:wasInfluencedBy
+    source: ucsc
+  - relation_type: prov:wasInfluencedBy
+    source: encode
+  product_file_size: 85228947819
+  product_url: https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh37/whole_genome_SNVs.tsv.gz
+- category: ProgrammingInterface
+  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal,
+    BioModels, BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog
+    and Reactome.
+  format: http
+  id: rdf-portal.sparql.ebi
+  name: RDF Portal EBI SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: chembl
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://rdfportal.org/ebi/sparql
 publications:
 - authors:
   - Dyer SC

@@ -3105,6 +3105,17 @@ products:
   - relation_type: prov:hadPrimarySource
     source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+- category: ProgrammingInterface
+  description: SPARQL endpoint for PubChem RDF.
+  format: http
+  id: rdf-portal.sparql.pubchem
+  name: RDF Portal PubChem SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  product_url: https://rdfportal.org/pubchem/sparql
 publications:
 - authors:
   - Kim S
