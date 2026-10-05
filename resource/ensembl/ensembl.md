@@ -2533,6 +2533,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 130
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
 - category: GraphProduct
@@ -2557,6 +2559,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 - category: GraphProduct
@@ -2581,6 +2585,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 - category: GraphProduct
@@ -2696,12 +2702,23 @@ products:
     source: cosmic
   product_file_size: 3873087
   product_url: https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv
+- category: MappingProduct
+  description: Mapping of Human 2026-01 PeptideAtlas peptides to Ensembl proteins.
+  format: tsv
+  id: peptideatlas.human.ensembl-mapping
+  latest_version: 2026-01
+  name: PeptideAtlas Human Peptide to Ensembl Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_url: https://peptideatlas.org/builds/human/202601/APD_ensembl_hits.tsv
 - category: Product
   compression: gzip
-  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible
-    single nucleotide variants in the GRCh38 human reference genome, tab-separated
-    and bgzip-compressed with a tabix index. A larger version including all annotations
-    is also offered.
+  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible single nucleotide
+    variants in the GRCh38 human reference genome, tab-separated and bgzip-compressed with
+    a tabix index. A larger version including all annotations is also offered.
   format: tsv
   id: cadd.snvs.grch38
   name: CADD v1.7 Whole-Genome SNV Scores (GRCh38)
@@ -2718,9 +2735,9 @@ products:
   product_url: https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz
 - category: Product
   compression: gzip
-  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible
-    single nucleotide variants in the GRCh37 human reference genome, tab-separated
-    and bgzip-compressed with a tabix index.
+  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible single nucleotide
+    variants in the GRCh37 human reference genome, tab-separated and bgzip-compressed with
+    a tabix index.
   format: tsv
   id: cadd.snvs.grch37
   name: CADD v1.7 Whole-Genome SNV Scores (GRCh37)
@@ -2736,9 +2753,8 @@ products:
   product_file_size: 85228947819
   product_url: https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh37/whole_genome_SNVs.tsv.gz
 - category: ProgrammingInterface
-  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal,
-    BioModels, BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog
-    and Reactome.
+  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal, BioModels,
+    BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog and Reactome.
   format: http
   id: rdf-portal.sparql.ebi
   name: RDF Portal EBI SPARQL Endpoint

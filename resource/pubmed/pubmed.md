@@ -1017,6 +1017,8 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed
@@ -2034,6 +2036,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/publications
 - category: Product
   description: Database of publication link tables for NIH-funded research projects
@@ -2047,6 +2051,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/linktables
 - category: Product
   description: Web interface for searching and visualizing chemical-protein interactions
