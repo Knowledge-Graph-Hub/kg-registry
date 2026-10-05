@@ -24,7 +24,7 @@ domains:
 fairsharing_id: FAIRsharing.paz6mh
 homepage_url: https://www.ebi.ac.uk/biomodels/
 id: biomodels
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -65,6 +65,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  product_file_size: 192581610
   product_url: https://ftp.ebi.ac.uk/pub/databases/biomodels/releases/latest/BioModels_Database-r31_pub-sbml_files.tar.bz2
   warnings:
   - The latest numbered release on the FTP site is release 31 from 2017; current models
@@ -81,6 +82,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  product_file_size: 29724674
   product_url: https://ftp.ebi.ac.uk/pub/databases/biomodels/rdf/BioModels-RDF-export-latest.tar.bz2
 - category: DocumentationProduct
   description: BioModels user guide covering model submission, curation, annotation
@@ -184,6 +186,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biomodels
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: GraphProduct
+  compression: targz
+  description: KGX TSV transform of BioModels Ontology (BIOMODELS), produced by KG-Bioportal
+    from the BioPortal submission. The archive contains BIOMODELS_nodes.tsv and BIOMODELS_edges.tsv.
+  edge_count: 452200
+  format: kgx
+  id: biomodels.kg-bioportal
+  latest_version: '21'
+  name: BIOMODELS KGX graph (KG-Bioportal)
+  node_count: 257551
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomodels
+  product_file_size: 13416212
+  product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOMODELS.tar.gz
 publications:
 - authors:
   - Rahuman S Malik-Sheriff

@@ -10,6 +10,7 @@ original_source:
   source: metabolights
 - relation_type: prov:hadPrimarySource
   source: chebi
+product_file_size: 137433775
 product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json
 layout: product_detail
 ---

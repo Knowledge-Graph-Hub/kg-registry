@@ -3536,10 +3536,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+- category: Product
+  description: LSDB Archive copy of KEGG MEDICUS, the KEGG resource for drugs, diseases
+    and drug labels, in dated releases (2014 to 2023), licensed CC BY-SA 4.0.
+  format: mixed
+  id: lsdb-archive.kegg-medicus
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: KEGG MEDICUS (LSDB Archive)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lsdb-archive
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  product_url: https://dbarchive.biosciencedbc.jp/data/kegg-medicus/
 - category: ProgrammingInterface
-  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
-    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
-    JSON documents merged from the integrated sources.
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez
+    or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents
+    merged from the integrated sources.
   format: http
   id: mygene.api
   infores_id: mygene-info
