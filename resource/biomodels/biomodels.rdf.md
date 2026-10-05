@@ -11,6 +11,7 @@ name: BioModels RDF Export
 original_source:
 - relation_type: prov:hadPrimarySource
   source: biomodels
+product_file_size: 29724674
 product_url: https://ftp.ebi.ac.uk/pub/databases/biomodels/rdf/BioModels-RDF-export-latest.tar.bz2
 layout: product_detail
 ---

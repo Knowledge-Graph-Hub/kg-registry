@@ -10,6 +10,7 @@ name: OBO Foundry Registry Metadata (Turtle)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: obofoundry
+product_file_size: 537368
 product_url: https://obofoundry.org/registry/ontologies.ttl
 layout: product_detail
 ---
