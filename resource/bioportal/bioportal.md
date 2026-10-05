@@ -511,6 +511,68 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
   product_url: https://bioportal.lirmm.fr/annotator
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing biodiversity ontologies
+    and semantic artefacts, with mappings, a recommender, and a landscape view of the catalogue.
+  format: http
+  id: biodivportal.portal
+  name: BiodivPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodivportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://biodivportal.gfbio.org/
+- category: ProgrammingInterface
+  description: OntoPortal REST API for artefact metadata, concepts, search, mappings, annotation,
+    recommendation, and downloads. Requests require a BiodivPortal API key, available with
+    a free account.
+  format: http
+  id: biodivportal.api
+  name: BiodivPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodivportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://data.biodivportal.gfbio.org/
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing Earth and environmental
+    science ontologies and semantic artefacts, with mappings, a recommender, and a landscape
+    view of the catalogue.
+  format: http
+  id: earthportal.portal
+  name: EarthPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: earthportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://earthportal.eu/
+- category: ProgrammingInterface
+  description: OntoPortal REST API for artefact metadata, concepts, search, mappings, annotation,
+    and downloads. Requests require an EarthPortal API key, available with a free account.
+  format: http
+  id: earthportal.api
+  name: EarthPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: earthportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://data.earthportal.eu/
+- category: GraphicalInterface
+  description: BioPortal page for OBOE (acronym OBOE), providing browsing, search, and download
+    of the ontology. The latest submission is version 1.2, released 2019-09-17.
+  format: http
+  id: oboe.bioportal
+  name: OBOE on BioPortal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oboe
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://bioportal.bioontology.org/ontologies/OBOE
 publications:
 - authors:
   - Jennifer Vendetti
