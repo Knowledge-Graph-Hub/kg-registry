@@ -7324,16 +7324,19 @@ https://bioregistry.io/:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioregistry.io/apidocs:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioregistry.readthedocs.io/:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://biosemantics.org/biosearch:
   checked_at: '2026-10-02T21:38:17Z'
@@ -9158,6 +9161,26 @@ https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv:
   ok: true
   source: cache
   status_code: 200
+https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetPeptides:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/main.cgi?output_format=json:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/metadata:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://dd-kg-ui.cfde.cloud/:
   checked_at: '2026-10-02T21:38:41Z'
   error: null
@@ -10388,6 +10411,21 @@ https://effas.com/wp-content/uploads/2021/09/KPIs_for_ESG_3_0_Final.pdf:
   ok: false
   source: cache
   status_code: 404
+https://ega-archive.org/:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ega-archive.org/about/projects-and-funders/federated-ega/:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ega-archive.org/discovery/metadata/public-metadata-api/:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://eggnogdb.org/:
   checked_at: '2026-10-02T21:38:56Z'
   error: null
@@ -11594,6 +11632,16 @@ https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/full_alignments/:
   ok: true
   source: cache
   status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/biomodels/rdf/BioModels-RDF-export-latest.tar.bz2:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/biomodels/releases/latest/BioModels_Database-r31_pub-sbml_files.tar.bz2:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/biostudies/:
   checked_at: '2026-10-03T20:11:39Z'
   error: null
@@ -12032,6 +12080,31 @@ https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.g
   ok: true
   source: cache
   status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_complete.xml:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_studies.xml:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/metabolites_complete.json:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/:
   checked_at: '2026-10-02T21:39:05Z'
   error: null
@@ -12229,6 +12302,16 @@ https://ftp.ncbi.nih.gov/snp/latest_release/JSON/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://ftp.ncbi.nlm.nih.gov/dbgap/gwas_analysis/:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ftp.ncbi.nlm.nih.gov/dbgap/studies/:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/gene/:
   checked_at: '2026-10-02T21:39:05Z'
@@ -13106,11 +13189,21 @@ https://github.com/DizzyPanda1/GreenwashingDetectionDataset:
   ok: true
   source: cache
   status_code: 200
+https://github.com/EBI-BioModels:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/EBI-BioModels/SBO:
   checked_at: '2026-10-02T21:39:10Z'
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/EBI-BioModels/user-guide:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/EBI-G2P/gene2phenotype_api:
   checked_at: '2026-10-02T21:39:10Z'
@@ -13124,6 +13217,11 @@ https://github.com/EBI-IntAct/intact-data-exchange:
   ok: false
   source: cache
   status_code: 404
+https://github.com/EBI-Metabolights:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/EBIBioStudies:
   checked_at: '2026-10-03T23:08:45Z'
   error: null
@@ -13177,6 +13275,16 @@ https://github.com/EBISPOT/oxo2:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/EGA-archive:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/EGA-archive/ega-download-client:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/ENCODE-DCC/encoded:
   checked_at: '2026-10-02T21:39:10Z'
@@ -13890,11 +13998,13 @@ https://github.com/NCATSTranslator/NodeNormalization:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/NodeNormalization/blob/master/documentation/API.md:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/Relay:
   checked_at: '2026-10-04T12:32:33Z'
@@ -14140,6 +14250,7 @@ https://github.com/OBOFoundry/OBOFoundry.github.io:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/OBioFoundry/FALDO:
   checked_at: '2026-10-02T21:39:16Z'
@@ -14967,6 +15078,7 @@ https://github.com/biopragmatics/bioregistry:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biopragmatics/obo-db-ingest:
   checked_at: '2026-10-02T21:39:21Z'
@@ -16162,6 +16274,11 @@ https://github.com/ncbi/AIONER:
   ok: true
   source: cache
   status_code: 429
+https://github.com/ncbi/DbGaP-FHIR-API-Docs:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/ncbi/NCBI-Datasets:
   checked_at: '2026-06-27T13:24:56Z'
   error: get 404
@@ -16287,6 +16404,11 @@ https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOLINK.tar.
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOMODELS.tar.gz:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BMONT.tar.gz:
   checked_at: '2026-10-02T21:39:28Z'
@@ -18314,6 +18436,7 @@ https://github.com/usnistgov/iEdison-API-Documentation:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/vaccineontology/VO:
   checked_at: '2026-10-02T21:39:37Z'
@@ -19277,11 +19400,13 @@ https://iedison.nist.gov/:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://iedison.nist.gov/iedison/swagger.json:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://iid.ophid.utoronto.ca/:
   checked_at: '2026-10-02T21:39:47Z'
@@ -20473,6 +20598,11 @@ https://metacyc.org/web-services.shtml:
   ok: true
   source: cache
   status_code: 200
+https://metadata.ega-archive.org/datasets:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
 https://metagrid.esgf-west.org/search:
   checked_at: '2026-10-02T21:40:24Z'
   error: null
@@ -21178,11 +21308,13 @@ https://nodenorm.transltr.io/docs:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nodenormalization-sri.renci.org/docs:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nrcs.app.box.com/v/soils:
   checked_at: '2026-10-02T21:40:32Z'
@@ -21206,6 +21338,7 @@ https://obofoundry.org/:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obofoundry.org/COB/:
   checked_at: '2026-10-02T21:40:33Z'
@@ -21265,21 +21398,25 @@ https://obofoundry.org/principles/fp-000-summary.html:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obofoundry.org/registry/ontologies.jsonld:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obofoundry.org/registry/ontologies.ttl:
   checked_at: '2026-10-05T15:04:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obofoundry.org/registry/ontologies.yml:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://obophenotype.github.io/cell-ontology/:
   checked_at: '2026-10-02T21:40:34Z'
@@ -21851,6 +21988,7 @@ https://pages.nist.gov/iEdison-API-Documentation/:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pankbase-db.github.io/pankbase-client-openapi-spec/:
   checked_at: '2026-06-27T13:24:56Z'
@@ -22019,6 +22157,46 @@ https://pedcbioportal.kidsfirstdrc.org/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://peptideatlas.org/:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://peptideatlas.org/builds/human/202601/APD_Hs_all.fasta:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://peptideatlas.org/builds/human/202601/APD_ensembl_hits.tsv:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://peptideatlas.org/builds/human/202601/atlas_build_607.mysql.gz:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://peptideatlas.org/builds/human/202601/atlas_build_607.tsv.zip:
+  checked_at: '2026-10-05T15:25:38Z'
+  error: null
+  ok: true
+  status_code: 200
+https://peptideatlas.org/builds/human/202601/coordinate_mapping.txt:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://peptideatlas.org/passel/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://peptideatlas.org/repository/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
   status_code: 200
 https://pfocr.wikipathways.org/:
   checked_at: '2026-10-02T21:40:41Z'
@@ -22564,11 +22742,13 @@ https://public.era.nih.gov/assist/:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://public.era.nih.gov/commons/:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://publichealth.lsuhsc.edu/louisiana-tumor-registry/:
   checked_at: '2026-10-02T21:40:47Z'
@@ -22652,6 +22832,7 @@ https://pypi.org/project/bioregistry/:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pypi.org/project/omnipath/:
   checked_at: '2026-10-02T21:40:48Z'
@@ -22891,36 +23072,43 @@ https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/context
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.jsonld:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.ttl:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.tsv:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.yml:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/cmungall/gold-ontology/main/gold.owl:
   checked_at: '2026-10-02T21:40:49Z'
@@ -25295,6 +25483,11 @@ https://spoke.ucsf.edu/data-tools:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://srmatlas.org/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
   status_code: 200
 https://stargeo.org/:
   checked_at: '2026-10-02T21:41:05Z'
@@ -29375,6 +29568,16 @@ https://www.ebi.ac.uk/QuickGO/api/:
   ok: true
   source: cache
   status_code: 200
+https://www.ebi.ac.uk/biomodels/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 403
+https://www.ebi.ac.uk/biomodels/docs/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 403
 https://www.ebi.ac.uk/biostudies/:
   checked_at: '2026-10-03T23:08:45Z'
   error: null
@@ -29662,6 +29865,21 @@ https://www.ebi.ac.uk/interpro/entry/pfam/#table:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://www.ebi.ac.uk/metabolights/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.ebi.ac.uk/metabolights/guides:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.ebi.ac.uk/metabolights/ws/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
   status_code: 200
 https://www.ebi.ac.uk/metagenomics:
   checked_at: '2026-10-02T21:41:40Z'
@@ -30045,16 +30263,19 @@ https://www.era.nih.gov/:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.era.nih.gov/help-tutorials:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ers.usda.gov/data-products/rural-urban-continuum-codes:
   checked_at: '2026-10-02T21:41:42Z'
@@ -31166,6 +31387,26 @@ https://www.ncbi.nlm.nih.gov/dbvar/:
   ok: true
   source: cache
   status_code: 200
+https://www.ncbi.nlm.nih.gov/gap/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.ncbi.nlm.nih.gov/gap/advanced_search/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.ncbi.nlm.nih.gov/gap/docs/submissionguide/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.ncbi.nlm.nih.gov/gap/sstr/:
+  checked_at: '2026-10-05T15:25:39Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ncbi.nlm.nih.gov/gene/:
   checked_at: '2026-10-02T21:41:50Z'
   error: null
@@ -31368,6 +31609,7 @@ https://www.nist.gov/iedison:
   checked_at: '2026-10-05T15:04:31Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.nlm.nih.gov/:
   checked_at: '2026-10-02T21:41:51Z'

@@ -60,6 +60,7 @@ biogrid,active,PASS
 biohealth,active,PASS
 biolink,active,PASS
 biomarker,active,PASS
+biomodels,active,PASS
 biomuta,active,PASS
 bioplanet,active,PASS
 bioportal,active,PASS
@@ -174,6 +175,7 @@ cytoscape,active,PASS
 dailymed,active,PASS
 darkkinasekb,active,PASS
 darwins-ark,active,PASS
+dbgap,active,PASS
 dbpedia,active,PASS
 dbptm,active,PASS
 dbsno,active,PASS
@@ -228,6 +230,7 @@ edam,active,PASS
 edrr-invasive-catalog,active,PASS
 effas-kpi,active,PASS
 efo,active,PASS
+ega,active,PASS
 eggnog,active,PASS
 ekg,active,PASS
 ema,active,PASS
@@ -485,6 +488,7 @@ medkg,active,PASS
 medlineplus,active,PASS
 mesh,active,PASS
 metabokg,active,PASS
+metabolights,active,PASS
 metacyc,active,PASS
 metanetx,active,PASS
 metatraits,active,PASS
@@ -656,6 +660,7 @@ pdbe,active,PASS
 pdro,active,PASS
 pdsp,active,PASS
 peco,active,PASS
+peptideatlas,active,PASS
 petagraph,active,PASS
 pf1600,active,PASS
 pfam,active,PASS

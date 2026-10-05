@@ -8301,8 +8301,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -9853,6 +9851,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -9885,6 +9893,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -10692,13 +10710,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -19373,8 +19389,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
@@ -19516,8 +19530,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
@@ -25785,7 +25797,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -25793,10 +25805,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -28294,6 +28302,245 @@ resources:
   - category: Organization
     contact_details:
     - contact_type: url
+      value: https://www.ebi.ac.uk/biomodels/
+    - contact_type: github
+      value: EBI-BioModels
+    id: ebi
+    label: BioModels team, EMBL-EBI
+  creation_date: '2026-10-04T00:00:00Z'
+  description: BioModels is EMBL-EBI's repository of mathematical models of biological
+    and biomedical systems. It holds manually curated models, which are checked to
+    reproduce the results of their reference publication and annotated with cross-references
+    to ontologies and databases such as GO, ChEBI, UniProt and Reactome, alongside
+    non-curated submitted models and models generated automatically from pathway resources.
+    Models are mainly encoded in SBML and distributed as COMBINE archives (OMEX).
+    The models and their annotations are dedicated to the public domain under CC0.
+  domains:
+  - systems biology
+  - biological systems
+  fairsharing_id: FAIRsharing.paz6mh
+  homepage_url: https://www.ebi.ac.uk/biomodels/
+  id: biomodels
+  last_modified_date: '2026-10-05T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: BioModels
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching, browsing and downloading curated and
+      non-curated computational models, with model files, annotations, curation notes
+      and links to the reference publications.
+    format: http
+    id: biomodels.portal
+    name: BioModels Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.ebi.ac.uk/biomodels/
+  - category: ProgrammingInterface
+    description: REST web services for searching BioModels, retrieving model metadata
+      and files, and downloading models, documented with an interactive API reference.
+    format: http
+    id: biomodels.api
+    name: BioModels REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.ebi.ac.uk/biomodels/docs/
+  - category: Product
+    compression: other
+    description: Last numbered BioModels Database release (release 31, June 2017)
+      of the published models as SBML files in a tar.bz2 archive, about 184 MB compressed.
+      Companion archives in the same directory hold the RDF annotations and all model
+      files. Later models are only available through the portal and API.
+    format: sbml
+    id: biomodels.release.sbml
+    latest_version: r31
+    name: BioModels Database Release 31 SBML Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_file_size: 192581610
+    product_url: https://ftp.ebi.ac.uk/pub/databases/biomodels/releases/latest/BioModels_Database-r31_pub-sbml_files.tar.bz2
+    warnings:
+    - The latest numbered release on the FTP site is release 31 from 2017; current
+      models are not included. Checked on 2026-10-04.
+  - category: Product
+    compression: other
+    description: RDF export of BioModels models, one RDF/XML file per model describing
+      its SBML structure and annotations, in a tar.bz2 archive of about 28 MB, last
+      generated on 2020-11-12.
+    format: rdfxml
+    id: biomodels.rdf
+    latest_version: '2020-11-12'
+    name: BioModels RDF Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_file_size: 29724674
+    product_url: https://ftp.ebi.ac.uk/pub/databases/biomodels/rdf/BioModels-RDF-export-latest.tar.bz2
+  - category: DocumentationProduct
+    description: BioModels user guide covering model submission, curation, annotation
+      and use of the repository.
+    format: http
+    id: biomodels.user-guide
+    name: BioModels User Guide
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://github.com/EBI-BioModels/user-guide
+  - category: ProcessProduct
+    description: Source code for the BioModels platform and related tools, including
+      the COMBINE archive libraries, in the EBI-BioModels GitHub organization.
+    format: mixed
+    id: biomodels.code
+    name: BioModels Source Code
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://github.com/EBI-BioModels
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing integrated omics dataset metadata
+      across repositories.
+    format: http
+    id: omicsdi.portal
+    name: OmicsDI Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/
+  - category: ProgrammingInterface
+    connection_url: https://www.omicsdi.org/ws
+    description: Swagger-documented web service for programmatic querying of OmicsDI
+      dataset metadata.
+    format: http
+    id: omicsdi.api
+    is_public: true
+    name: OmicsDI API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+  - category: GraphProduct
+    compression: targz
+    description: KGX TSV transform of BioModels Ontology (BIOMODELS), produced by
+      KG-Bioportal from the BioPortal submission. The archive contains BIOMODELS_nodes.tsv
+      and BIOMODELS_edges.tsv.
+    edge_count: 452200
+    format: kgx
+    id: biomodels.kg-bioportal
+    latest_version: '21'
+    name: BIOMODELS KGX graph (KG-Bioportal)
+    node_count: 257551
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_file_size: 13416212
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOMODELS.tar.gz
+  publications:
+  - authors:
+    - Rahuman S Malik-Sheriff
+    - Mihai Glont
+    - Tung V N Nguyen
+    - Krishna Tiwari
+    - Matthew G Roberts
+    - Ashley Xavier
+    - Manh T Vu
+    - Jinghao Men
+    - Matthieu Maire
+    - Sarubini Kananathan
+    - Emma L Fairbanks
+    - Johannes P Meyer
+    - Chinmay Arankalle
+    - Thawfeek M Varusai
+    - Vincent Knight-Schrijver
+    - Lu Li
+    - Corina Dueñas-Roca
+    - Gaurhari Dass
+    - Sarah M Keating
+    - Young M Park
+    - Nicola Buso
+    - Nicolas Rodriguez
+    - Michael Hucka
+    - Henning Hermjakob
+    doi: 10.1093/nar/gkz1055
+    id: doi:10.1093/nar/gkz1055
+    journal: Nucleic Acids Research
+    preferred: true
+    title: BioModels—15 years of sharing computational models in life science
+    year: '2019'
+  synonyms:
+  - BioModels Database
+  - BioModels Repository
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
       value: https://hivelab.biochemistry.gwu.edu/
     label: GW HIVE Lab
   creation_date: '2026-06-02T00:00:00Z'
@@ -29281,6 +29528,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -29313,6 +29570,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -29585,8 +29852,6 @@ resources:
       source: biothings
     product_url: https://biothings.io/specs/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 204 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
@@ -36328,8 +36593,6 @@ resources:
       source: cellphonedb
     product_url: https://www.cellphonedb.org/downloads
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
@@ -41918,14 +42181,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -41964,13 +42225,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -43322,6 +43581,32 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubmed
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
+  - category: MappingProduct
+    description: JSON mapping from MetaboLights studies to the metabolites (ChEBI
+      identifiers) reported in them, last updated in October 2020.
+    format: json
+    id: metabolights.study-metabolites
+    name: MetaboLights Study to Metabolite Mapping
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: chebi
+    product_file_size: 137433775
+    product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json
+  - category: Product
+    description: JSON list of the ChEBI identifiers of metabolites in the MetaboLights
+      reference layer, last updated in October 2020.
+    format: json
+    id: metabolights.metabolites
+    name: MetaboLights Reference Metabolite List
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: chebi
+    product_file_size: 341671
+    product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/metabolites_complete.json
   publications:
   - authors:
     - Adnan Malik
@@ -45018,14 +45303,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -45250,8 +45533,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   - category: GraphProduct
@@ -76613,6 +76894,278 @@ resources:
   taxon:
   - NCBITaxon:9615
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ncbi.nlm.nih.gov/gap/
+    id: ncbi
+    label: dbGaP Team, National Center for Biotechnology Information (NCBI)
+  creation_date: '2026-10-04T00:00:00Z'
+  description: The database of Genotypes and Phenotypes (dbGaP) is NCBI's archive
+    for data and results from studies of the interaction of genotype and phenotype
+    in humans, including genome-wide association studies, medical sequencing, molecular
+    diagnostic assays and associations between genotype and non-clinical traits. Study
+    descriptions, protocols, data dictionaries and summary-level variable statistics
+    are public, while individual-level genotype and phenotype data are distributed
+    through controlled access under data use limitations set by each study. When checked
+    on 2026-10-04 the public FTP site held study directories for 3,322 phs accessions.
+  domains:
+  - biomedical
+  - genomics
+  - genetic variation
+  - genome-wide association studies
+  - clinical
+  fairsharing_id: FAIRsharing.88v2k0
+  homepage_url: https://www.ncbi.nlm.nih.gov/gap/
+  id: dbgap
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    label: Public Domain (U.S. Government work; NCBI and NLM Data Usage Policies)
+      for public metadata; individual-level data are controlled access
+  name: dbGaP
+  products:
+  - category: GraphicalInterface
+    description: dbGaP web portal for searching and browsing studies, variables, datasets,
+      documents and analyses, with study pages linking to public summaries and to
+      the controlled-access request system.
+    format: http
+    id: dbgap.portal
+    name: dbGaP Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://www.ncbi.nlm.nih.gov/gap/
+  - category: GraphicalInterface
+    description: dbGaP Advanced Search interface for faceted searching of studies
+      by study design, molecular data type, consent and other attributes.
+    format: http
+    id: dbgap.advanced-search
+    name: dbGaP Advanced Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://www.ncbi.nlm.nih.gov/gap/advanced_search/
+  - category: Product
+    description: Public FTP directory of released studies, one directory per phs accession
+      and version, holding GapExchange study XML, data dictionaries, variable summaries,
+      release notes, manifests and study documents. Individual-level data are not
+      included.
+    format: mixed
+    id: dbgap.ftp
+    name: dbGaP Public Study Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://ftp.ncbi.nlm.nih.gov/dbgap/studies/
+  - category: Product
+    description: Public FTP directory of GWAS analysis results and summary statistics
+      released through dbGaP.
+    format: mixed
+    id: dbgap.gwas-analysis
+    name: dbGaP GWAS Analysis Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://ftp.ncbi.nlm.nih.gov/dbgap/gwas_analysis/
+  - category: ProgrammingInterface
+    description: dbGaP Study Metadata (SSTR) API returning JSON summaries of a study
+      version, including name, BioProject links and consent groups, for example /api/v1/study/phs000001.v3.p1/summary.
+    format: http
+    id: dbgap.sstr-api
+    name: dbGaP Study Metadata API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://www.ncbi.nlm.nih.gov/gap/sstr/
+  - category: ProgrammingInterface
+    description: dbGaP FHIR API exposing study, subject and phenotype metadata as
+      HL7 FHIR resources; open studies are public and controlled studies require authorization.
+    format: http
+    id: dbgap.fhir-api
+    name: dbGaP FHIR API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/metadata
+    repository: https://github.com/ncbi/DbGaP-FHIR-API-Docs
+  - category: GraphicalInterface
+    description: dbGaP Authorized Access system, where approved investigators submit
+      data access requests and download controlled-access individual-level data. Requires
+      an eRA Commons or NIH login.
+    format: http
+    id: dbgap.authorized-access
+    name: dbGaP Authorized Access
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login
+  - category: DocumentationProduct
+    description: dbGaP Study Submission Guide describing submission, data dictionaries,
+      consent and file formats.
+    format: http
+    id: dbgap.submission-guide
+    name: dbGaP Study Submission Guide
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    product_url: https://www.ncbi.nlm.nih.gov/gap/docs/submissionguide/
+  - category: Product
+    description: Individual-level genotype and phenotype data available through dbGaP
+    format: vcf
+    id: gtex.dbgap-data
+    name: GTEx dbGaP Data
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gtex
+    product_url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: dbgap
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing integrated omics dataset metadata
+      across repositories.
+    format: http
+    id: omicsdi.portal
+    name: OmicsDI Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/
+  - category: ProgrammingInterface
+    connection_url: https://www.omicsdi.org/ws
+    description: Swagger-documented web service for programmatic querying of OmicsDI
+      dataset metadata.
+    format: http
+    id: omicsdi.api
+    is_public: true
+    name: OmicsDI API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+  publications:
+  - authors:
+    - Matthew D Mailman
+    - Michael Feolo
+    - Yumi Jin
+    - Masato Kimura
+    - Kimberly Tryka
+    - Rinat Bagoutdinov
+    - Luning Hao
+    - Anne Kiang
+    - Justin Paschall
+    - Lon Phan
+    - Natalia Popova
+    - Stephanie Pretel
+    - Lora Ziyabari
+    - Moira Lee
+    - Yu Shao
+    - Zhen Y Wang
+    - Karl Sirotkin
+    - Minghong Ward
+    - Michael Kholodov
+    - Kerry Zbicz
+    - Jeffrey Beck
+    - Michael Kimelman
+    - Sergey Shevelev
+    - Don Preuss
+    - Eugene Yaschenko
+    - Alan Graeff
+    - James Ostell
+    - Stephen T Sherry
+    doi: 10.1038/ng1007-1181
+    id: doi:10.1038/ng1007-1181
+    journal: Nature Genetics
+    preferred: true
+    title: The NCBI dbGaP database of genotypes and phenotypes
+    year: '2007'
+  - authors:
+    - Kimberly A. Tryka
+    - Luning Hao
+    - Anne Sturcke
+    - Yumi Jin
+    - Zhen Y. Wang
+    - Lora Ziyabari
+    - Moira Lee
+    - Natalia Popova
+    - Nataliya Sharopova
+    - Masato Kimura
+    - Michael Feolo
+    doi: 10.1093/nar/gkt1211
+    id: doi:10.1093/nar/gkt1211
+    journal: Nucleic Acids Research
+    title: 'NCBI’s Database of Genotypes and Phenotypes: dbGaP'
+    year: '2014'
+  synonyms:
+  - database of Genotypes and Phenotypes
+  - NCBI dbGaP
+  taxon:
+  - NCBITaxon:9606
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Organization
@@ -76883,14 +77436,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
-      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -87565,7 +88116,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -87573,10 +88124,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -103196,14 +103743,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -103242,13 +103787,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -104456,8 +104999,6 @@ resources:
       source: dsstoxdb
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -109536,6 +110077,230 @@ resources:
   repository: https://github.com/EBISPOT/efo
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://ega-archive.org/need-help/
+    - contact_type: github
+      value: EGA-archive
+    label: European Genome-phenome Archive (EMBL-EBI and CRG)
+  creation_date: '2026-10-04T00:00:00Z'
+  description: The European Genome-phenome Archive (EGA) is a global network for permanent
+    archiving and sharing of personally identifiable genetic, phenotypic and clinical
+    data generated by biomedical research projects and research-focused healthcare
+    systems. It is jointly managed by EMBL-EBI (Cambridge, UK) and the Centre for
+    Genomic Regulation (CRG, Barcelona) and was launched in 2008. Data are released
+    only to bona fide researchers under controlled access, with each dataset governed
+    by a Data Access Committee (DAC) and a data access policy. Study, dataset, DAC,
+    policy, sample, experiment, run and analysis metadata are public. Federated EGA
+    (FEGA) extends the archive with national nodes that keep data in their own jurisdictions.
+  domains:
+  - genomics
+  - clinical
+  - biomedical
+  fairsharing_id: FAIRsharing.mya1ff
+  homepage_url: https://ega-archive.org/
+  id: ega
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.ebi.ac.uk/about/terms-of-use
+    label: EMBL-EBI Terms of Use
+  name: European Genome-phenome Archive
+  products:
+  - category: GraphicalInterface
+    description: EGA web portal for discovering studies, datasets and Data Access
+      Committees, and for requesting access to controlled datasets. File access requires
+      approval from the dataset's DAC.
+    format: http
+    id: ega.portal
+    name: EGA Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    product_url: https://ega-archive.org/
+  - category: ProgrammingInterface
+    description: Public Metadata REST API returning JSON metadata for EGA studies,
+      datasets, DACs, policies, samples, experiments, runs and analyses by accession
+      (EGAS, EGAD, EGAC, EGAP, EGAN, EGAX, EGAR, EGAZ), with cross-queries between
+      object types. Authenticated users can also query private metadata they have
+      rights to.
+    format: json
+    id: ega.metadata-api
+    name: EGA Public Metadata API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    product_url: https://metadata.ega-archive.org/datasets
+  - category: DocumentationProduct
+    description: Documentation for the EGA Public Metadata API, covering identifiers,
+      requests, responses and cross-querying by object.
+    format: http
+    id: ega.metadata-api.docs
+    name: EGA Public Metadata API Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    product_url: https://ega-archive.org/discovery/metadata/public-metadata-api/
+  - category: ProcessProduct
+    description: PyEGA3, the Python command-line client for downloading controlled-access
+      EGA files that a user has been granted access to. Distributed on PyPI as pyega3.
+    format: python
+    id: ega.pyega3
+    license:
+      id: https://www.apache.org/licenses/LICENSE-2.0
+      label: Apache-2.0
+    name: PyEGA3 Download Client
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    product_url: https://github.com/EGA-archive/ega-download-client
+    repository: https://github.com/EGA-archive/ega-download-client
+  - category: DocumentationProduct
+    description: Overview of Federated EGA, the network of national EGA nodes that
+      store sensitive human data locally while sharing metadata and access processes
+      with the central EGA.
+    format: http
+    id: ega.fega
+    name: Federated EGA
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    product_url: https://ega-archive.org/about/projects-and-funders/federated-ega/
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing integrated omics dataset metadata
+      across repositories.
+    format: http
+    id: omicsdi.portal
+    name: OmicsDI Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/
+  - category: ProgrammingInterface
+    connection_url: https://www.omicsdi.org/ws
+    description: Swagger-documented web service for programmatic querying of OmicsDI
+      dataset metadata.
+    format: http
+    id: omicsdi.api
+    is_public: true
+    name: OmicsDI API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+  publications:
+  - authors:
+    - Mallory Ann Freeberg
+    - Lauren A Fromont
+    - Teresa D’Altri
+    - Anna Foix Romero
+    - Jorge Izquierdo Ciges
+    - Aina Jene
+    - Giselle Kerry
+    - Mauricio Moldes
+    - Roberto Ariosa
+    - Silvia Bahena
+    - Daniel Barrowdale
+    - Marcos Casado Barbero
+    - Dietmar Fernandez-Orth
+    - Carles Garcia-Linares
+    - Emilio Garcia-Rios
+    - Frédéric Haziza
+    - Bela Juhasz
+    - Oscar Martinez Llobet
+    - Gemma Milla
+    - Anand Mohan
+    - Manuel Rueda
+    - Aravind Sankar
+    - Dona Shaju
+    - Ashutosh Shimpi
+    - Babita Singh
+    - Coline Thomas
+    - Sabela de la Torre
+    - Umuthan Uyan
+    - Claudia Vasallo
+    - Paul Flicek
+    - Roderic Guigo
+    - Arcadi Navarro
+    - Helen Parkinson
+    - Thomas Keane
+    - Jordi Rambla
+    doi: 10.1093/nar/gkab1059
+    id: doi:10.1093/nar/gkab1059
+    journal: Nucleic Acids Research
+    preferred: true
+    title: The European Genome-phenome Archive in 2021
+    year: '2022'
+  repository: https://github.com/EGA-archive
+  synonyms:
+  - EGA
+  - European Genome-Phenome Archive
+  taxon:
+  - NCBITaxon:9606
+- activity_status: active
+  category: DataSource
   creation_date: '2026-01-30T00:00:00Z'
   description: A database of orthologous groups and functional annotations derived
     from comparative genomics, supporting cross-species gene function inference.
@@ -112198,6 +112963,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -112230,6 +113005,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -116678,6 +117463,19 @@ resources:
       source: cosmic
     product_file_size: 3873087
     product_url: https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv
+  - category: MappingProduct
+    description: Mapping of Human 2026-01 PeptideAtlas peptides to Ensembl proteins.
+    format: tsv
+    id: peptideatlas.human.ensembl-mapping
+    latest_version: 2026-01
+    name: PeptideAtlas Human Peptide to Ensembl Mapping
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: ensembl
+    product_file_size: 11751640392
+    product_url: https://peptideatlas.org/builds/human/202601/APD_ensembl_hits.tsv
   publications:
   - authors:
     - Dyer SC
@@ -122266,6 +123064,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -122298,6 +123106,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -125283,8 +126101,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
@@ -125298,8 +126114,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: Product
@@ -135675,6 +136489,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -135707,6 +136531,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 - activity_status: active
   category: DataSource
@@ -144158,8 +144992,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   - category: GraphicalInterface
@@ -144191,6 +145023,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -144223,6 +145065,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -150752,14 +151604,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -150798,13 +151648,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -154278,7 +155126,7 @@ resources:
   homepage_url: https://www.gtexportal.org/home/
   id: gtex
   infores_id: gtex
-  last_modified_date: '2026-09-23T00:00:00Z'
+  last_modified_date: '2026-10-04T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.gtexportal.org/home/license
@@ -154334,6 +155182,9 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: gtex
     product_url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: dbgap
   - category: GraphProduct
     description: GTEx Automat
     format: kgx-jsonl
@@ -158023,12 +158874,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
-      when accessing file'
   - category: ProgrammingInterface
     description: TRAPI endpoint for the Service Provider team, served by BioThings
       Explorer, querying the BioThings and other APIs registered to the team in SmartAPI.
@@ -158209,11 +159058,6 @@ resources:
       source: gutmdisorder
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-literature-associations.xlsx
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
-      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
-      exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
-      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
-      Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
@@ -158230,11 +159074,6 @@ resources:
       source: gutmdisorder
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
-      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
-      exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
-      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
-      Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
@@ -176312,14 +177151,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -176358,13 +177195,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -178654,13 +179489,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -188192,12 +189025,10 @@ resources:
       source: imo-knowledge-graph
     product_url: https://developer.imohealth.com/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
       context layer, curation model, and use in grounding clinical AI.
@@ -192846,7 +193677,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -192854,10 +193685,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -194044,14 +194871,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Robokop KG (Automat)
     format: kgx-jsonl
@@ -202572,14 +203397,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: OWL release of neo
     format: owl
@@ -202902,8 +203725,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   - category: ProcessProduct
@@ -203163,13 +203984,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -203624,7 +204443,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-05T14:54:05Z'
+  last_modified_date: '2026-10-05T15:19:10Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -207992,6 +208811,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -208024,6 +208853,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -212291,8 +213130,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   publications:
@@ -214776,6 +215613,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -214808,6 +215655,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -222625,8 +223482,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -223375,6 +224230,258 @@ resources:
   warnings:
   - The GitHub repository README states Apache License 2.0, but the repository did
     not expose a machine-readable GitHub license record when checked on 2026-06-02.
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ebi.ac.uk/metabolights/
+    - contact_type: github
+      value: EBI-Metabolights
+    id: ebi
+    label: MetaboLights team, EMBL-EBI
+  creation_date: '2026-10-04T00:00:00Z'
+  description: MetaboLights is EMBL-EBI's open repository for metabolomics experiments
+    and derived information. It holds study metadata in ISA-Tab format, raw and processed
+    spectra, and metabolite identifications across species and techniques (mass spectrometry
+    and NMR), and its reference layer links metabolites to ChEBI. It held 3,490 public
+    studies on 2026-10-04. Studies submitted from April 2025 are released under CC0;
+    earlier studies are governed by the EMBL-EBI Terms of Use.
+  domains:
+  - metabolomics
+  - chemistry and biochemistry
+  - biological systems
+  homepage_url: https://www.ebi.ac.uk/metabolights/
+  id: metabolights
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.ebi.ac.uk/about/terms-of-use
+    label: EMBL-EBI Terms of Use
+  name: MetaboLights
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching, browsing and submitting MetaboLights
+      metabolomics studies (MTBLS accessions) and their metabolite annotations.
+    format: http
+    id: metabolights.portal
+    name: MetaboLights Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    product_url: https://www.ebi.ac.uk/metabolights/
+  - category: ProgrammingInterface
+    description: MetaboLights RESTful web service (MtblsWS-Py) for listing studies
+      and retrieving study metadata, ISA-Tab files and metabolite assignments, documented
+      with an OpenAPI specification.
+    format: http
+    id: metabolights.api
+    name: MetaboLights REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    product_url: https://www.ebi.ac.uk/metabolights/ws/
+  - category: Product
+    description: FTP/HTTPS download area holding every public MetaboLights study as
+      a directory of ISA-Tab metadata, raw and processed data files, organized by
+      MTBLS accession.
+    format: mixed
+    id: metabolights.studies
+    name: MetaboLights Public Studies Archive
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/
+  - category: Product
+    description: Complete EB-eye XML export of MetaboLights studies and metabolites,
+      as used for EBI Search indexing, regenerated daily (about 369 MB on 2026-10-04).
+    format: xml
+    id: metabolights.ebeye.complete
+    name: MetaboLights EB-eye Complete Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    product_file_size: 370291873
+    product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_complete.xml
+  - category: Product
+    description: EB-eye XML export of MetaboLights study records only, regenerated
+      daily (about 344 MB on 2026-10-04).
+    format: xml
+    id: metabolights.ebeye.studies
+    name: MetaboLights EB-eye Studies Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    product_file_size: 344727382
+    product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_studies.xml
+  - category: MappingProduct
+    description: JSON mapping from MetaboLights studies to the metabolites (ChEBI
+      identifiers) reported in them, last updated in October 2020.
+    format: json
+    id: metabolights.study-metabolites
+    name: MetaboLights Study to Metabolite Mapping
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: chebi
+    product_file_size: 137433775
+    product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json
+  - category: Product
+    description: JSON list of the ChEBI identifiers of metabolites in the MetaboLights
+      reference layer, last updated in October 2020.
+    format: json
+    id: metabolights.metabolites
+    name: MetaboLights Reference Metabolite List
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: chebi
+    product_file_size: 341671
+    product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/metabolites_complete.json
+  - category: DocumentationProduct
+    description: MetaboLights help guides covering study submission, ISA-Tab metadata,
+      data formats and downloads.
+    format: http
+    id: metabolights.docs
+    name: MetaboLights Guides
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    product_url: https://www.ebi.ac.uk/metabolights/guides
+  - category: ProcessProduct
+    description: GitHub organization holding the MetaboLights web service, submission
+      tooling and pipelines.
+    format: mixed
+    id: metabolights.code
+    name: MetaboLights Source Code
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    product_url: https://github.com/EBI-Metabolights
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing integrated omics dataset metadata
+      across repositories.
+    format: http
+    id: omicsdi.portal
+    name: OmicsDI Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/
+  - category: ProgrammingInterface
+    connection_url: https://www.omicsdi.org/ws
+    description: Swagger-documented web service for programmatic querying of OmicsDI
+      dataset metadata.
+    format: http
+    id: omicsdi.api
+    is_public: true
+    name: OmicsDI API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+  publications:
+  - authors:
+    - Ozgur Yurekten
+    - Thomas Payne
+    - Noemi Tejera
+    - Felix Xavier Amaladoss
+    - Callum Martin
+    - Mark Williams
+    - Claire O’Donovan
+    doi: 10.1093/nar/gkad1045
+    id: doi:10.1093/nar/gkad1045
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'MetaboLights: open data repository for metabolomics'
+    year: '2024'
+  - authors:
+    - Kenneth Haug
+    - Reza M. Salek
+    - Pablo Conesa
+    - Janna Hastings
+    - Paula de Matos
+    - Mark Rijnbeek
+    - Tejasvi Mahendraker
+    - Mark Williams
+    - Steffen Neumann
+    - Philippe Rocca-Serra
+    - Eamonn Maguire
+    - Alejandra González-Beltrán
+    - Susanna-Assunta Sansone
+    - Julian L. Griffin
+    - Christoph Steinbeck
+    doi: 10.1093/nar/gks1004
+    id: doi:10.1093/nar/gks1004
+    journal: Nucleic Acids Research
+    title: MetaboLights—an open-access general-purpose repository for metabolomics
+      studies and associated meta-data
+    year: '2013'
+  synonyms:
+  - MTBLS
 - activity_status: active
   category: DataSource
   collection:
@@ -228706,7 +229813,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -228714,10 +229821,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -232015,7 +233118,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -232045,9 +233148,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -232059,7 +233159,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -232089,9 +233189,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -232103,7 +233200,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -232133,9 +233230,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -232147,7 +233241,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -232177,9 +233271,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -232191,7 +233282,7 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -232221,9 +233312,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -237486,12 +238574,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
-      when accessing file'
   - category: ProcessProduct
     description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
       and contraindications data and processing code
@@ -238245,14 +239331,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -238291,13 +239375,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -245182,6 +246264,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -245214,6 +246306,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -248752,12 +249854,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
-      when accessing file'
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -249428,14 +250528,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -256458,9 +257556,6 @@ resources:
       source: noaa-ncei
     product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
@@ -266850,13 +267945,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -268124,6 +269217,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -268156,6 +269259,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   - category: GraphProduct
     description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
@@ -271135,13 +272248,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -274063,8 +275174,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   publications:
@@ -278690,13 +279799,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -285943,6 +287050,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/
   - category: ProgrammingInterface
     connection_url: https://www.omicsdi.org/ws
@@ -285975,6 +287092,16 @@ resources:
       source: paxdb
     - relation_type: prov:hadPrimarySource
       source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
     product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
   publications:
   - authors:
@@ -289548,6 +290675,300 @@ resources:
       plant genomics and phenomics.'
     year: '2018'
   repository: https://github.com/Planteome/plant-experimental-conditions-ontology
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://peptideatlas.org/contacts.php
+    label: Institute for Systems Biology
+  - category: Individual
+    label: Eric W. Deutsch
+    orcid: 0000-0001-8732-0928
+  creation_date: '2026-10-04T00:00:00Z'
+  description: PeptideAtlas, from the Institute for Systems Biology (ISB), is a compendium
+    of peptides identified in tandem mass spectrometry proteomics experiments. Raw
+    data from public datasets are reprocessed through a uniform pipeline (the Trans-Proteomic
+    Pipeline) and mapped to reference proteomes and genomes, producing organism- and
+    sample-specific builds. On 2026-10-04 its build index listed 110 builds across
+    39 organism groups, including the Human 2026-01 build. The project also runs PASSEL,
+    a repository for SRM experiments, and SRMAtlas, a library of targeted proteomics
+    assays.
+  domains:
+  - proteomics
+  - biomedical
+  homepage_url: https://peptideatlas.org/
+  id: peptideatlas
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  name: PeptideAtlas
+  products:
+  - category: GraphicalInterface
+    description: PeptideAtlas web portal for browsing builds, searching peptides and
+      proteins, and reaching related ISB proteomics resources.
+    format: http
+    id: peptideatlas.portal
+    name: PeptideAtlas Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_url: https://peptideatlas.org/
+  - category: Product
+    description: Machine-readable JSON index of all PeptideAtlas builds, with build
+      id, name, description, organism, number of distinct peptides and the URL of
+      each build's download page.
+    format: json
+    id: peptideatlas.builds
+    name: PeptideAtlas Build Index
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_url: https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/main.cgi?output_format=json
+  - category: Product
+    description: FASTA file of all distinct peptides observed in the Human 2026-01
+      PeptideAtlas build (atlas build 607).
+    format: fasta
+    id: peptideatlas.human.peptides
+    latest_version: 2026-01
+    name: PeptideAtlas Human Peptides FASTA
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_file_size: 167809736
+    product_url: https://peptideatlas.org/builds/human/202601/APD_Hs_all.fasta
+  - category: Product
+    compression: zip
+    description: Tab-separated tables of the Human 2026-01 PeptideAtlas build (atlas
+      build 607), including peptides, protein identifications and mappings (about
+      6.8 GB compressed).
+    format: tsv
+    id: peptideatlas.human.tables
+    latest_version: 2026-01
+    name: PeptideAtlas Human Build Tables
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_file_size: 6762826956
+    product_url: https://peptideatlas.org/builds/human/202601/atlas_build_607.tsv.zip
+  - category: Product
+    compression: gzip
+    description: MySQL dump of the Human 2026-01 PeptideAtlas build (atlas build 607),
+      about 5.8 GB compressed.
+    format: mysql
+    id: peptideatlas.human.mysql
+    latest_version: 2026-01
+    name: PeptideAtlas Human Build MySQL Dump
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_file_size: 5821913317
+    product_url: https://peptideatlas.org/builds/human/202601/atlas_build_607.mysql.gz
+  - category: MappingProduct
+    description: Mapping of Human 2026-01 PeptideAtlas peptides to Ensembl proteins.
+    format: tsv
+    id: peptideatlas.human.ensembl-mapping
+    latest_version: 2026-01
+    name: PeptideAtlas Human Peptide to Ensembl Mapping
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: ensembl
+    product_file_size: 11751640392
+    product_url: https://peptideatlas.org/builds/human/202601/APD_ensembl_hits.tsv
+  - category: Product
+    description: Genome coordinate mapping of peptides in the Human 2026-01 PeptideAtlas
+      build (about 19 GB, uncompressed text).
+    format: txt
+    id: peptideatlas.human.coordinates
+    latest_version: 2026-01
+    name: PeptideAtlas Human Peptide Coordinates
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_file_size: 19026695342
+    product_url: https://peptideatlas.org/builds/human/202601/coordinate_mapping.txt
+  - category: GraphicalInterface
+    description: SBEAMS search interface for querying peptides across PeptideAtlas
+      builds.
+    format: http
+    id: peptideatlas.search
+    name: PeptideAtlas Peptide Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_url: https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetPeptides
+  - category: GraphicalInterface
+    description: PeptideAtlas data repository, which holds the raw and processed datasets
+      contributed to PeptideAtlas.
+    format: http
+    id: peptideatlas.repository
+    name: PeptideAtlas Data Repository
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_url: https://peptideatlas.org/repository/
+  - category: GraphicalInterface
+    description: PASSEL (PeptideAtlas SRM Experiment Library), the PeptideAtlas component
+      for submission, browsing and querying of selected reaction monitoring (SRM)
+      experiment results.
+    format: http
+    id: peptideatlas.passel
+    name: PASSEL
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_url: https://peptideatlas.org/passel/
+  - category: GraphicalInterface
+    description: SRMAtlas, a compendium of targeted proteomics (SRM) assays for the
+      complete human proteome and other organisms, built by the PeptideAtlas team.
+    format: http
+    id: peptideatlas.srmatlas
+    name: SRMAtlas
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    product_url: https://srmatlas.org/
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing integrated omics dataset metadata
+      across repositories.
+    format: http
+    id: omicsdi.portal
+    name: OmicsDI Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/
+  - category: ProgrammingInterface
+    connection_url: https://www.omicsdi.org/ws
+    description: Swagger-documented web service for programmatic querying of OmicsDI
+      dataset metadata.
+    format: http
+    id: omicsdi.api
+    is_public: true
+    name: OmicsDI API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: omicsdi
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: arrayexpress
+    - relation_type: prov:hadPrimarySource
+      source: expressionatlas
+    - relation_type: prov:hadPrimarySource
+      source: ena
+    - relation_type: prov:hadPrimarySource
+      source: biostudies
+    - relation_type: prov:hadPrimarySource
+      source: massive
+    - relation_type: prov:hadPrimarySource
+      source: gnps
+    - relation_type: prov:hadPrimarySource
+      source: mw
+    - relation_type: prov:hadPrimarySource
+      source: paxdb
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    - relation_type: prov:hadPrimarySource
+      source: metabolights
+    - relation_type: prov:hadPrimarySource
+      source: ega
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: peptideatlas
+    - relation_type: prov:hadPrimarySource
+      source: biomodels
+    product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+  publications:
+  - authors:
+    - F. Desiere
+    doi: 10.1093/nar/gkj040
+    id: doi:10.1093/nar/gkj040
+    journal: Nucleic Acids Research
+    preferred: true
+    title: The PeptideAtlas project
+    year: '2006'
+  - authors:
+    - Eric W Deutsch
+    - Henry Lam
+    - Ruedi Aebersold
+    doi: 10.1038/embor.2008.56
+    id: doi:10.1038/embor.2008.56
+    journal: The EMBO Reports
+    title: 'PeptideAtlas: a resource for target selection for emerging targeted proteomics
+      workflows'
+    year: '2008'
+  - authors:
+    - Ulrike Kusebauch
+    - David S. Campbell
+    - Eric W. Deutsch
+    - Caroline S. Chu
+    - Douglas A. Spicer
+    - Mi-Youn Brusniak
+    - Joseph Slagel
+    - Zhi Sun
+    - Jeffrey Stevens
+    - Barbara Grimes
+    - David Shteynberg
+    - Michael R. Hoopmann
+    - Peter Blattmann
+    - Alexander V. Ratushny
+    - Oliver Rinner
+    - Paola Picotti
+    - Christine Carapito
+    - Chung-Ying Huang
+    - Meghan Kapousouz
+    - Henry Lam
+    - Tommy Tran
+    - Emek Demir
+    - John D. Aitchison
+    - Chris Sander
+    - Leroy Hood
+    - Ruedi Aebersold
+    - Robert L. Moritz
+    doi: 10.1016/j.cell.2016.06.041
+    id: doi:10.1016/j.cell.2016.06.041
+    journal: Cell
+    title: 'Human SRMAtlas: A Resource of Targeted Assays to Quantify the Complete
+      Human Proteome'
+    year: '2016'
+  synonyms:
+  - PA
+  - PASSEL
+  - SRMAtlas
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -293238,13 +294659,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -313124,12 +314543,10 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
-      when accessing file'
   - category: ProgrammingInterface
     description: MarkerDB API documentation and endpoint examples for condition, chemical,
       genetic, protein, and karyotype biomarker records.
@@ -315754,14 +317171,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
-      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -318958,8 +320373,6 @@ resources:
       source: rapdb
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
       to URL'
   - category: GraphProduct
@@ -325483,13 +326896,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -357906,8 +359317,6 @@ resources:
       source: ssurgo
     product_url: https://nrcs.app.box.com/v/soils
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -362457,14 +363866,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -362503,13 +363910,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -368388,7 +369793,7 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 500 error
       when accessing file'
@@ -368396,8 +369801,6 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
-      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -369476,13 +370879,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -376515,14 +377916,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -390003,14 +391402,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
-      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -391025,14 +392422,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -397092,8 +398487,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   - category: Product
@@ -408695,12 +410088,10 @@ resources:
       source: aao
     product_url: http://purl.obolibrary.org/obo/aao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -408841,8 +410232,6 @@ resources:
       source: adw
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -410566,7 +411955,7 @@ resources:
       source: bio2rdf
     product_url: https://biosemantics.org/biosearch
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
       to URL: HTTPSConnectionPool(host=''biosemantics.org'', port=443): Max retries
@@ -410574,8 +411963,6 @@ resources:
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
-      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -410748,12 +412135,10 @@ resources:
       source: bootstrep
     product_url: http://purl.obolibrary.org/obo/bootstrep.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   publications: []
   use_instead:
   - go
@@ -411729,12 +413114,10 @@ resources:
       source: cmf
     product_url: http://purl.obolibrary.org/obo/cmf.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -411880,14 +413263,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: 'Robokop Plus: the ROBOKOP KG extended with CORD-19 and text-mined
       assertions (2023 data, Biolink 3.1.2; legacy).'
@@ -412184,12 +413565,10 @@ resources:
       source: dc_cl
     product_url: http://purl.obolibrary.org/obo/dc_cl.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - all
@@ -412912,8 +414291,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -412926,8 +414303,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   publications:
@@ -412979,12 +414354,10 @@ resources:
       source: epo
     product_url: http://purl.obolibrary.org/obo/epo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -413150,12 +414523,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -413166,12 +414537,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -414788,7 +416157,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -414796,10 +416165,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/intact/ws
     description: IntAct web service and URL-based programmatic interface for retrieving
@@ -414983,14 +416348,12 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
-      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
     format: http
@@ -415001,14 +416364,12 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
-      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
     format: http
@@ -415019,14 +416380,12 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
-      when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
       and binding motifs
@@ -416835,11 +418194,6 @@ resources:
       source: inoh
     product_url: http://www.inoh.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
-      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
-      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
-      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
-      name resolution)"))'
     - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
@@ -419606,8 +420960,6 @@ resources:
       source: mirnao
     product_url: http://purl.obolibrary.org/obo/mirnao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -419723,13 +421075,11 @@ resources:
       source: mo
     product_url: http://purl.obolibrary.org/obo/mo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -420036,8 +421386,6 @@ resources:
       source: netpath
     product_url: http://www.netpath.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
       when accessing file'
   - category: Product
@@ -420551,12 +421899,10 @@ resources:
       source: nmr
     product_url: http://purl.obolibrary.org/obo/nmr.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -420651,8 +421997,6 @@ resources:
       source: ogi
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -420772,14 +422116,12 @@ resources:
       source: oio
     product_url: http://purl.obolibrary.org/obo/oio.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -424087,14 +425429,12 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -427091,8 +428431,6 @@ resources:
     product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -431200,12 +432538,10 @@ resources:
       source: simap
     product_url: http://mips.helmholtz-muenchen.de/simap/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
-      to URL'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

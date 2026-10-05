@@ -161,7 +161,7 @@ obofoundry	Aggregator	no-upstream	https://creativecommons.org/publicdomain/zero/
 ohdsi	Aggregator	inferred			https://loinc.org/license/	custom	athena	
 okn-void	KnowledgeGraph	no-upstream						
 ols	Aggregator	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://creativecommons.org/publicdomain/zero/1.0/	public domain	obofoundry	
-omicsdi	Aggregator	declared	https://www.ebi.ac.uk/about/terms-of-use/	custom	https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress|biostudies	ena|gene-expression-omnibus|gnps|lincs|massive|mw|paxdb
+omicsdi	Aggregator	declared	https://www.ebi.ac.uk/about/terms-of-use/	custom	https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress|biostudies|ega|metabolights	ena|gene-expression-omnibus|gnps|lincs|massive|mw|paxdb
 omnipath	Aggregator	no-upstream						
 onco	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://www.ebi.ac.uk/about/terms-of-use	custom	europepmc	pdb
 ontology-kp	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	ubergraph	
