@@ -759,6 +759,8 @@ products:
     source: omim
   - relation_type: prov:hadPrimarySource
     source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
   product_url: http://togows.org/help/
   warnings:
   - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
@@ -847,6 +849,83 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biomodels
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: GraphicalInterface
+  description: Search interface for metadata across DDBJ, DRA, BioProject, BioSample
+    and JGA (study, dataset and policy records), with entry pages linking related
+    records.
+  format: http
+  id: ddbj.search
+  name: DDBJ Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/search
+- category: ProgrammingInterface
+  connection_url: https://getentry.ddbj.nig.ac.jp/getentry/
+  description: getentry, a web service and URL-based API for retrieving INSDC nucleotide
+    entries, translated protein entries and related records by accession number, in
+    flat file, FASTA and other formats.
+  format: http
+  id: ddbj.getentry
+  is_public: true
+  name: DDBJ getentry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://getentry.ddbj.nig.ac.jp/top-e.html
+- category: GraphicalInterface
+  description: ARSA (All-round Retrieval of Sequence and Annotation), a keyword and
+    field search over INSDC nucleotide sequence records held at DDBJ.
+  format: http
+  id: ddbj.arsa
+  name: DDBJ ARSA
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/arsa/
+- category: Product
+  compression: gzip
+  description: Release flat files of the DDBJ nucleotide sequence database (division
+    files such as ddbjbct*.seq.gz, accession indexes and file lists for release 143
+    at time of curation), plus TLS, TSA and WGS file lists.
+  format: mixed
+  id: ddbj.release
+  name: DDBJ Release Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/
+- category: Product
+  description: DDBJ Sequence Read Archive (DRA) download area with FASTQ, SRA and
+    SRA Lite files and run metadata for high-throughput sequencing submissions, exchanged
+    with NCBI SRA and ENA.
+  format: mixed
+  id: ddbj.dra
+  name: DDBJ Sequence Read Archive (DRA)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: sra
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/
 publications:
 - authors:
   - Burgin J
