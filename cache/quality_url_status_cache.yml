@@ -7320,6 +7320,21 @@ https://biopragmatics.github.io/obo-db-ingest/:
   ok: true
   source: cache
   status_code: 200
+https://bioregistry.io/:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://bioregistry.io/apidocs:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://bioregistry.readthedocs.io/:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
 https://biosemantics.org/biosearch:
   checked_at: '2026-10-02T21:38:17Z'
   error: 'HEAD request failed: HTTPSConnectionPool(host=''biosemantics.org'', port=443):
@@ -8080,6 +8095,7 @@ https://commondatastorage.googleapis.com/freebase-public/rdf/freebase-rdf-latest
   checked_at: '2026-10-04T13:19:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://compartments.jensenlab.org/:
   checked_at: '2026-10-02T21:38:25Z'
@@ -9308,6 +9324,7 @@ https://developers.google.com/freebase:
   checked_at: '2026-10-04T13:19:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dgidb.org:
   checked_at: '2026-10-02T21:38:41Z'
@@ -13869,6 +13886,16 @@ https://github.com/NCATSTranslator:
   ok: true
   source: cache
   status_code: 200
+https://github.com/NCATSTranslator/NodeNormalization:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/NCATSTranslator/NodeNormalization/blob/master/documentation/API.md:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/NCATSTranslator/Relay:
   checked_at: '2026-10-04T12:32:33Z'
   error: null
@@ -14108,6 +14135,11 @@ https://github.com/OBOFoundry/COB:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/OBOFoundry/OBOFoundry.github.io:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/OBioFoundry/FALDO:
   checked_at: '2026-10-02T21:39:16Z'
@@ -14930,6 +14962,11 @@ https://github.com/biolink/biolink-model/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/biopragmatics/bioregistry:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/biopragmatics/obo-db-ingest:
   checked_at: '2026-10-02T21:39:21Z'
@@ -18273,6 +18310,11 @@ https://github.com/unmtransinfo/TCRD:
   ok: true
   source: cache
   status_code: 429
+https://github.com/usnistgov/iEdison-API-Documentation:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/vaccineontology/VO:
   checked_at: '2026-10-02T21:39:37Z'
   error: null
@@ -19230,6 +19272,16 @@ https://idrblab.org/ttd/help:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://iedison.nist.gov/:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://iedison.nist.gov/iedison/swagger.json:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
   status_code: 200
 https://iid.ophid.utoronto.ca/:
   checked_at: '2026-10-02T21:39:47Z'
@@ -21122,6 +21174,16 @@ https://noctua.geneontology.org/:
   ok: false
   source: cache
   status_code: null
+https://nodenorm.transltr.io/docs:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://nodenormalization-sri.renci.org/docs:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
 https://nrcs.app.box.com/v/soils:
   checked_at: '2026-10-02T21:40:32Z'
   error: null
@@ -21139,6 +21201,11 @@ https://obis.org/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://obofoundry.org/:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
   status_code: 200
 https://obofoundry.org/COB/:
   checked_at: '2026-10-02T21:40:33Z'
@@ -21193,6 +21260,26 @@ https://obofoundry.org/ontology/vhog.html:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://obofoundry.org/principles/fp-000-summary.html:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://obofoundry.org/registry/ontologies.jsonld:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://obofoundry.org/registry/ontologies.ttl:
+  checked_at: '2026-10-05T15:04:30Z'
+  error: null
+  ok: true
+  status_code: 200
+https://obofoundry.org/registry/ontologies.yml:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
   status_code: 200
 https://obophenotype.github.io/cell-ontology/:
   checked_at: '2026-10-02T21:40:34Z'
@@ -21759,6 +21846,11 @@ https://pacer.uscourts.gov/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://pages.nist.gov/iEdison-API-Documentation/:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
   status_code: 200
 https://pankbase-db.github.io/pankbase-client-openapi-spec/:
   checked_at: '2026-06-27T13:24:56Z'
@@ -22468,6 +22560,16 @@ https://pubchem.ncbi.nlm.nih.gov/source/ChemIDplus:
   ok: true
   source: cache
   status_code: 200
+https://public.era.nih.gov/assist/:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://public.era.nih.gov/commons/:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
 https://publichealth.lsuhsc.edu/louisiana-tumor-registry/:
   checked_at: '2026-10-02T21:40:47Z'
   error: null
@@ -22545,6 +22647,11 @@ https://pypi.org/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://pypi.org/project/bioregistry/:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
   status_code: 200
 https://pypi.org/project/omnipath/:
   checked_at: '2026-10-02T21:40:48Z'
@@ -22779,6 +22886,41 @@ https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/projec
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/contexts/bioregistry.context.jsonld:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.jsonld:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.ttl:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.tsv:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.yml:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
   status_code: 200
 https://raw.githubusercontent.com/cmungall/gold-ontology/main/gold.owl:
   checked_at: '2026-10-02T21:40:49Z'
@@ -25526,11 +25668,13 @@ https://storage.googleapis.com/freebase-public/deleted_freebase.tar.gz:
   checked_at: '2026-10-04T13:19:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://storage.googleapis.com/freebase-public/fb2w.nt.gz:
   checked_at: '2026-10-04T13:19:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://storage.googleapis.com/translator-text-workflow-dev-public/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -29897,6 +30041,21 @@ https://www.era.europa.eu/domains/registers/era-knowlege-graph_en:
   ok: true
   source: cache
   status_code: 200
+https://www.era.nih.gov/:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.era.nih.gov/help-tutorials:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ers.usda.gov/data-products/rural-urban-continuum-codes:
   checked_at: '2026-10-02T21:41:42Z'
   error: null
@@ -31204,6 +31363,11 @@ https://www.nextprot.org/downloads:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://www.nist.gov/iedison:
+  checked_at: '2026-10-05T15:04:31Z'
+  error: null
+  ok: true
   status_code: 200
 https://www.nlm.nih.gov/:
   checked_at: '2026-10-02T21:41:51Z'

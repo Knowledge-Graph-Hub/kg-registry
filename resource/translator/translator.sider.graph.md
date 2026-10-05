@@ -1,9 +1,11 @@
 ---
 category: GraphProduct
 compatibility:
-  - standard: biolink
-    version: 4.3.6
-description: KGX JSONL graph package for SIDER distributed via the NCATS Translator release site (release 2026_03_06; build sider_4.1_56b9c307_2025sep1_4.3.6; source version 4.1; Biolink 4.3.6; Node Normalizer 2025sep1).
+- standard: biolink
+  version: 4.3.6
+description: KGX JSONL graph package for SIDER distributed via the NCATS Translator
+  release site (release 2026_03_06; build sider_4.1_56b9c307_2025sep1_4.3.6; source
+  version 4.1; Biolink 4.3.6; Node Normalizer 2025sep1).
 edge_count: 139874
 format: kgx-jsonl
 id: translator.sider.graph
@@ -14,13 +16,15 @@ license:
 name: Translator SIDER KGX Graph
 node_count: 5533
 original_source:
-  - source: sider
-    relation_type: prov:hadPrimarySource
-  - source: translator
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: sider
+- relation_type: prov:hadPrimarySource
+  source: translator
+- relation_type: prov:wasInfluencedBy
+  source: node-normalizer
 product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
 versions:
-  - '2026_03_06'
-  - sider_4.1_56b9c307_2025sep1_4.3.6
+- '2026_03_06'
+- sider_4.1_56b9c307_2025sep1_4.3.6
 layout: product_detail
 ---

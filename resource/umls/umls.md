@@ -1940,6 +1940,8 @@ products:
     source: bioportal
   - relation_type: prov:hadPrimarySource
     source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: obofoundry
   product_url: https://bioportal.bioontology.org/
 - category: ProgrammingInterface
   description: REST API for ontology concepts, search, mappings, metrics, and downloads.
@@ -1952,6 +1954,8 @@ products:
     source: bioportal
   - relation_type: prov:hadPrimarySource
     source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: obofoundry
   product_url: https://data.bioontology.org/
 - category: Product
   description: CSV format data files directory with additional data exports
