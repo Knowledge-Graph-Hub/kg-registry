@@ -19,7 +19,7 @@ domains:
 - genomics
 homepage_url: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 id: kg-jensenlab-diseases
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -67,6 +67,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 130
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
 - category: GraphProduct
@@ -91,6 +93,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 - category: GraphProduct
@@ -115,6 +119,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 - category: GraphProduct

@@ -20,7 +20,7 @@ domains:
 - drug discovery
 homepage_url: https://kgx-storage.rtx.ai/releases/
 id: translator
-last_modified_date: '2026-09-16T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/
@@ -48,6 +48,8 @@ products:
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
   versions:
   - '2026_03_06'
@@ -73,6 +75,8 @@ products:
     source: bgee
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
   versions:
   - '2026_03_06'
@@ -98,6 +102,8 @@ products:
     source: bindingdb
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
   versions:
   - '2026_03_06'
@@ -123,6 +129,8 @@ products:
     source: chembl
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
   versions:
   - '2026_03_06'
@@ -148,6 +156,8 @@ products:
     source: cohd
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
   versions:
   - '2026_03_12'
@@ -173,6 +183,8 @@ products:
     source: ctd
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
   versions:
   - '2026_03_27'
@@ -198,6 +210,8 @@ products:
     source: ctkp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
   versions:
   - '2026_03_27'
@@ -223,6 +237,8 @@ products:
     source: drug-approvals-kp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
   versions:
   - '2026_03_19'
@@ -248,6 +264,8 @@ products:
     source: dgidb
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
   versions:
   - '2026_03_06'
@@ -273,6 +291,8 @@ products:
     source: diseases
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
   versions:
   - '2026_03_19'
@@ -298,6 +318,8 @@ products:
     source: repohub
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
   versions:
   - '2026_03_06'
@@ -323,6 +345,8 @@ products:
     source: drugcentral
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
   versions:
   - '2026_03_19'
@@ -348,6 +372,8 @@ products:
     source: gene2phenotype
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
   versions:
   - '2026_03_27'
@@ -373,6 +399,8 @@ products:
     source: genetics-kp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
   versions:
   - '2026_03_27'
@@ -398,6 +426,8 @@ products:
     source: go-cam
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
   versions:
   - '2026_03_06'
@@ -423,6 +453,8 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
   versions:
   - '2026_03_06'
@@ -448,6 +480,8 @@ products:
     source: gtopdb
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
   versions:
   - '2026_03_19'
@@ -473,6 +507,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
   versions:
   - '2026_03_06'
@@ -498,6 +534,8 @@ products:
     source: icees-kg
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
   versions:
   - '2026_03_12'
@@ -523,6 +561,8 @@ products:
     source: intact
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
   versions:
   - '2026_03_06'
@@ -548,6 +588,8 @@ products:
     source: panther
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
   versions:
   - '2026_03_06'
@@ -573,6 +615,8 @@ products:
     source: pathbank
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
   versions:
   - '2026_03_27'
@@ -598,6 +642,8 @@ products:
     source: semmeddb
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
   versions:
   - '2026_03_27'
@@ -623,6 +669,8 @@ products:
     source: sider
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
   versions:
   - '2026_03_06'
@@ -648,6 +696,8 @@ products:
     source: signor
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
   versions:
   - '2026_03_06'
@@ -673,6 +723,8 @@ products:
     source: text-mining-kp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
   versions:
   - '2026_03_06'
@@ -754,6 +806,8 @@ products:
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ubergraph
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
   versions:
   - '2026_03_27'
@@ -779,6 +833,8 @@ products:
     source: translator
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
   versions:
   - '2026_03_06'
@@ -804,6 +860,8 @@ products:
     source: translator
   - relation_type: prov:hadPrimarySource
     source: ubergraph
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/ubergraph/latest/
   versions:
   - '2026_03_27'

@@ -26,6 +26,7 @@ biohealth	KnowledgeGraph	no-upstream
 biomarker	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	glygen|obci|uberon	
 biomarkerkg	KnowledgeGraph	no-upstream						
 bioportal	Aggregator	declared	https://www.bioontology.org/terms/	custom	https://uts.nlm.nih.gov/uts/	custom	umls	
+bioregistry	Aggregator	no-upstream	https://creativecommons.org/publicdomain/zero/1.0/	public domain				
 bioteque	KnowledgeGraph	inferred			https://depmap.org/portal/terms/	custom	achilles|cosmic|ctd|depmap|disgenet|gtex	chemicalchecker|clue|lincs|omnipath|prism
 cam-kp	KnowledgeGraph	conflict	https://opensource.org/licenses/MIT	permissive	https://ctdbase.org/about/legal.jsp	custom	ctd	
 cancer-registry-kg	KnowledgeGraph	declared	https://www.hhs.gov/open/public-access-guiding-principles/index.html	custom	https://www.kcr.uky.edu/research/how.php	custom	kentucky-cancer-registry|louisiana-tumor-registry|naaccr	
@@ -152,12 +153,14 @@ ncipidkg	KnowledgeGraph	unresolved
 nde	KnowledgeGraph	conflict	https://opensource.org/licenses/Apache-2.0	permissive	https://docs.immport.org/home/agreement/	custom	immport	vdjserver
 nikg	KnowledgeGraph	inferred			U.S. Government Work (public domain)	public domain	us-census	
 nlm-ckn	KnowledgeGraph	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://creativecommons.org/licenses/by/4.0/	permissive	cellxgene	
+node-normalizer	Aggregator	no-upstream	https://opensource.org/licenses/MIT	permissive				
 np-kg	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://uts.nlm.nih.gov/license.html	custom	semrep	pmc
 oard-kg	KnowledgeGraph	no-upstream						
 obo-db-ingest	Aggregator	declared	https://biopragmatics.github.io/obo-db-ingest/	custom	https://www.ama-assn.org/about/terms-use	custom	bigg|biocyc|cpt|depmap|ecocyc|kegg|metacyc|msigdb	cgnc|cvx|dictybase|gard|icd10|icd11|iconclass|npass|pid|rgd|spdx
+obofoundry	Aggregator	no-upstream	https://creativecommons.org/publicdomain/zero/1.0/	public domain				
 ohdsi	Aggregator	inferred			https://loinc.org/license/	custom	athena	
 okn-void	KnowledgeGraph	no-upstream						
-ols	Aggregator	no-upstream	https://www.apache.org/licenses/LICENSE-2.0	permissive				
+ols	Aggregator	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://creativecommons.org/publicdomain/zero/1.0/	public domain	obofoundry	
 omicsdi	Aggregator	declared	https://www.ebi.ac.uk/about/terms-of-use/	custom	https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress|biostudies	ena|gene-expression-omnibus|gnps|lincs|massive|mw|paxdb
 omnipath	Aggregator	no-upstream						
 onco	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	https://www.ebi.ac.uk/about/terms-of-use	custom	europepmc	pdb

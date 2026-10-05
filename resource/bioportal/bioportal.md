@@ -42,6 +42,8 @@ products:
     source: bioportal
   - relation_type: prov:hadPrimarySource
     source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: obofoundry
   product_url: https://bioportal.bioontology.org/
 - category: ProgrammingInterface
   description: REST API for ontology concepts, search, mappings, metrics, and downloads.
@@ -54,6 +56,8 @@ products:
     source: bioportal
   - relation_type: prov:hadPrimarySource
     source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: obofoundry
   product_url: https://data.bioontology.org/
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
@@ -264,9 +268,69 @@ products:
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: bioportal
+- category: Product
+  description: Full Bioregistry export as JSON, with every prefix record including
+    names, synonyms, URI formats, local identifier patterns, providers and mappings
+    to the prefixes of other registries.
+  format: json
+  id: bioregistry.registry.json
+  name: Bioregistry JSON Export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioregistry
+  - relation_type: prov:wasInfluencedBy
+    source: obofoundry
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: ols
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: cellosaurus
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  - relation_type: prov:wasInfluencedBy
+    source: biolink
+  product_file_size: 786637
+  product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+- category: MappingProduct
+  description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+    in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology
+    registry, Cellosaurus, UniProt and NCBI.
+  format: sssom
+  id: bioregistry.sssom
+  name: Bioregistry SSSOM Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioregistry
+  - relation_type: prov:wasInfluencedBy
+    source: obofoundry
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: ols
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: cellosaurus
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  - relation_type: prov:wasInfluencedBy
+    source: biolink
+  product_file_size: 136267
+  product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: GraphicalInterface
-  description: Web portal for searching and browsing the AberOWL ontology repository,
-    viewing class hierarchies and metadata, and running DL and SPARQL-rewriting queries.
+  description: Web portal for searching and browsing the AberOWL ontology repository, viewing
+    class hierarchies and metadata, and running DL and SPARQL-rewriting queries.
   format: http
   id: aberowl.portal
   is_public: true
@@ -278,9 +342,9 @@ products:
     source: bioportal
   product_url: https://aber-owl.net/
 - category: ProgrammingInterface
-  description: REST API (FastAPI, documented with Swagger UI) for listing ontologies,
-    retrieving classes, full-text search and DL queries (subclass, superclass, equivalent)
-    across the AberOWL repository.
+  description: REST API (FastAPI, documented with Swagger UI) for listing ontologies, retrieving
+    classes, full-text search and DL queries (subclass, superclass, equivalent) across the
+    AberOWL repository.
   format: http
   id: aberowl.api
   is_public: true
@@ -292,12 +356,11 @@ products:
     source: bioportal
   product_url: https://aber-owl.net/api/docs
   warnings:
-  - When checked on 2026-10-04, listing, search and statistics endpoints responded,
-    but DL query endpoints (/api/dlquery, /api/dlquery_all) returned "API server is
-    down!".
+  - When checked on 2026-10-04, listing, search and statistics endpoints responded, but DL
+    query endpoints (/api/dlquery, /api/dlquery_all) returned "API server is down!".
 - category: Product
-  description: JSON listing of all ontologies in AberOWL with metadata, reasoner status,
-    class counts and relative download URLs for the mirrored OWL files.
+  description: JSON listing of all ontologies in AberOWL with metadata, reasoner status, class
+    counts and relative download URLs for the mirrored OWL files.
   format: json
   id: aberowl.ontology-list
   is_public: true
@@ -309,9 +372,9 @@ products:
     source: bioportal
   product_url: https://aber-owl.net/api/listOntologies
 - category: GraphicalInterface
-  description: Web portal for searching, browsing and visualizing ecological ontologies,
-    thesauri and their mappings, with ontology recommender, text annotator and submission
-    of new semantic artefacts.
+  description: Web portal for searching, browsing and visualizing ecological ontologies, thesauri
+    and their mappings, with ontology recommender, text annotator and submission of new semantic
+    artefacts.
   format: http
   id: ecoportal.portal
   name: EcoPortal Portal
@@ -323,9 +386,9 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
 - category: ProgrammingInterface
-  description: OntoPortal REST API for EcoPortal ontologies, classes, search, mappings,
-    metrics, annotation and downloads. Requests require an API key, available free
-    with an EcoPortal account.
+  description: OntoPortal REST API for EcoPortal ontologies, classes, search, mappings, metrics,
+    annotation and downloads. Requests require an API key, available free with an EcoPortal
+    account.
   format: http
   id: ecoportal.api
   name: EcoPortal REST API

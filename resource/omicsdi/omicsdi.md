@@ -58,6 +58,16 @@ products:
     source: paxdb
   - relation_type: prov:hadPrimarySource
     source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: ega
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: biomodels
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -90,6 +100,16 @@ products:
     source: paxdb
   - relation_type: prov:hadPrimarySource
     source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: ega
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: biomodels
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 - category: GraphProduct
   description: RDF (Turtle) knowledge graph of the NIAID Data Ecosystem, harmonizing
