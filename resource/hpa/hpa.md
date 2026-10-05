@@ -1405,6 +1405,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
     SPOKE biomedical and environmental health knowledge graph, served through FRINK

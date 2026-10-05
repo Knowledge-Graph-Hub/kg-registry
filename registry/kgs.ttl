@@ -1867,6 +1867,8 @@ kgr:biolink a schema1:DataModel ;
         kgr:biolink.model.proto,
         kgr:biolink.model.shacl,
         kgr:biolink.model.shex,
+        kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
         kgr:cpathkg.code,
         kgr:mechreponet.kg,
         kgr:microbiomekg.api,
@@ -1979,6 +1981,8 @@ kgr:bioportal a schema1:Aggregator ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioportal.api,
         kgr:bioportal.portal,
+        kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
         kgr:ekg.browser,
         kgr:ekg.rdf,
         kgr:ekg.sparql,
@@ -1998,6 +2002,34 @@ kgr:bioportal a schema1:Aggregator ;
         "information technology" ;
     adms:status "Active" ;
     foaf:homepage <https://bioportal.bioontology.org/> .
+
+kgr:bioregistry a schema1:Aggregator ;
+    rdfs:label "Bioregistry" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Bioregistry is an open, community-curated registry of prefixes, CURIE patterns, URI formats and resolution rules for identifier resources in biomedicine and the life and natural sciences. It imports and aligns metadata from other registries, such as identifiers.org, the OBO Foundry, BioPortal, OLS, FAIRsharing, re3data, Wikidata and N2T, and adds manual curation of its own. It also resolves CURIEs to provider URLs and publishes the registry, its cross-registry mappings and derived prefix maps as open data. As of 2026-10-04 the registry export held 2,856 prefixes." ;
+    dcterms:identifier "bioregistry" ;
+    dcterms:isReferencedBy <doi:10.1038/s41597-022-01807-3> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:bioregistry.api,
+        kgr:bioregistry.context.jsonld,
+        kgr:bioregistry.docs,
+        kgr:bioregistry.portal,
+        kgr:bioregistry.python,
+        kgr:bioregistry.rdf.jsonld,
+        kgr:bioregistry.rdf.ttl,
+        kgr:bioregistry.registry.json,
+        kgr:bioregistry.registry.tsv,
+        kgr:bioregistry.registry.yml,
+        kgr:bioregistry.sssom ;
+    schema1:name "Bioregistry" ;
+    doap:repository <https://github.com/biopragmatics/bioregistry> ;
+    skos:inScheme "biomedical",
+        "information technology",
+        "metadata" ;
+    skos:notation "FAIRsharing.250a8c" ;
+    adms:status "Active" ;
+    foaf:homepage <https://bioregistry.io/> .
 
 kgr:biostudies a schema1:DataSource ;
     rdfs:label "BioStudies" ;
@@ -2811,7 +2843,9 @@ kgr:cellosaurus a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:bioteque.embeddings,
+    schema1:hasPart kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
+        kgr:bioteque.embeddings,
         kgr:cellmodelpassports.model_list,
         kgr:cellosaurus.api.rest,
         kgr:cellosaurus.api.sparql,
@@ -9694,6 +9728,8 @@ kgr:go a schema1:Ontology ;
         kgr:alzkb.data,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
         kgr:bioteque.embeddings,
         kgr:cacao.api,
         kgr:cacao.go-annotations,
@@ -11696,6 +11732,23 @@ kgr:idomal a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <https://www.vectorbase.org/ontology-browser> .
 
+kgr:iedison a schema1:DataSource ;
+    rdfs:label "iEdison" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "iEdison (Interagency Edison) is the U.S. federal online reporting system that recipients of federal funding agreements use to report subject inventions, patents and utilization to the funding agency, as required by the Bayh-Dole Act and its implementing regulations. NIH built the original Edison system in 1995 and opened it to other agencies in 1997; NIST took over operation in 2022. Many agencies, including NIH, DOD components, EPA, USDA and NNSA, accept reports through it. Records are not public, but NIH RePORTER uses iEdison to link patents to NIH grants." ;
+    dcterms:identifier "iedison" ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:iedison.api,
+        kgr:iedison.api-docs,
+        kgr:iedison.portal,
+        kgr:nihreporter.patents ;
+    schema1:name "iEdison" ;
+    skos:altLabel "Edison",
+        "Interagency Edison" ;
+    skos:inScheme "research funding" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.nist.gov/iedison> .
+
 kgr:iev a schema1:Ontology ;
     rdfs:label "Event (INOH pathway ontology)" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -12752,7 +12805,7 @@ kgr:kg-jensenlab-diseases a schema1:KnowledgeGraph ;
     dcterms:description "An ingest of Jensen Lab's DISEASES resource, for Translator use (output in Translator standards and NodeNormed, using own custom pipeline)" ;
     dcterms:identifier "kg-jensenlab-diseases" ;
     dcterms:license <https://cancer.sanger.ac.uk/cosmic/license> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:enrichr-kg.graph,
         kgr:kg-jensenlab-diseases.docs,
         kgr:kg-jensenlab-diseases.edges.kgx,
@@ -12794,7 +12847,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-04T13:13:38+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-05T14:54:05+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -16229,6 +16282,37 @@ kgr:nifc a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://data-nifc.opendata.arcgis.com/> .
 
+kgr:nih-era a schema1:DataSource ;
+    rdfs:label "NIH eRA (electronic Research Administration)" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "eRA (electronic Research Administration) is the NIH system for managing the grants lifecycle, from application receipt and peer review through award, post-award reporting and closeout, for NIH and other federal agencies. It combines IMPAC II, the internal system of record for NIH grant applications and awards since 2002, with eRA Commons, the external interface for applicants, recipients and reviewers. eRA itself is access-controlled, but its data feed public resources such as NIH RePORTER and the ExPORTER bulk files." ;
+    dcterms:identifier "nih-era" ;
+    dcterms:license <https://www.usa.gov/government-works> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:nih-era.assist,
+        kgr:nih-era.commons,
+        kgr:nih-era.help,
+        kgr:nih-era.reporting-docs,
+        kgr:nihreporter.abstracts,
+        kgr:nihreporter.api,
+        kgr:nihreporter.clinicalstudies,
+        kgr:nihreporter.crisp,
+        kgr:nihreporter.linktables,
+        kgr:nihreporter.patents,
+        kgr:nihreporter.portal,
+        kgr:nihreporter.projects,
+        kgr:nihreporter.publications ;
+    schema1:name "NIH eRA (electronic Research Administration)" ;
+    skos:altLabel "IMPAC II",
+        "NIH eRA",
+        "eRA",
+        "eRA Commons",
+        "electronic Research Administration" ;
+    skos:inScheme "biomedical",
+        "research funding" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.era.nih.gov/> .
+
 kgr:nihreporter a schema1:DataSource ;
     rdfs:label "NIH Reporter" ;
     dcterms:created "2025-07-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -16238,6 +16322,7 @@ kgr:nihreporter a schema1:DataSource ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:indra.cogex.code,
+        kgr:nih-era.reporting-docs,
         kgr:nihreporter.abstracts,
         kgr:nihreporter.api,
         kgr:nihreporter.clinicalstudies,
@@ -16405,6 +16490,61 @@ kgr:noaa-nwm a schema1:DataSource ;
         "water resources" ;
     adms:status "Active" ;
     foaf:homepage <https://water.noaa.gov/about/nwm> .
+
+kgr:node-normalizer a schema1:Aggregator ;
+    rdfs:label "SRI Node Normalizer" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The SRI Node Normalizer (NodeNorm) is an NCATS Biomedical Data Translator utility service from the Standards and Reference Implementation (SRI) team, built and hosted by RENCI. Given one or more CURIEs, it returns the preferred CURIE for each entity, all known equivalent identifiers, a preferred label and the entity's Biolink Model semantic types. Its data are the cliques of equivalent identifiers built by Babel from many biomedical vocabularies and databases. Translator knowledge providers use it to normalize node identifiers in their graphs, and Translator KGX releases record the Node Normalizer version used to build them." ;
+    dcterms:identifier "node-normalizer" ;
+    dcterms:isReferencedBy <https://doi.org/10.48550/arXiv.2601.10008> ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:kg-jensenlab-diseases.edges.kgx,
+        kgr:kg-jensenlab-diseases.edges.trapi,
+        kgr:kg-jensenlab-diseases.nodes.kgx,
+        kgr:node-normalizer.api,
+        kgr:node-normalizer.api.translator,
+        kgr:node-normalizer.code,
+        kgr:node-normalizer.docs,
+        kgr:translator.alliance.graph,
+        kgr:translator.bgee.graph,
+        kgr:translator.bindingdb.graph,
+        kgr:translator.chembl.graph,
+        kgr:translator.cohd.graph,
+        kgr:translator.ctd.graph,
+        kgr:translator.ctkp.graph,
+        kgr:translator.dakp.graph,
+        kgr:translator.dgidb.graph,
+        kgr:translator.diseases.graph,
+        kgr:translator.drug_rep_hub.graph,
+        kgr:translator.drugcentral.graph,
+        kgr:translator.gene2phenotype.graph,
+        kgr:translator.geneticskp.graph,
+        kgr:translator.go_cam.graph,
+        kgr:translator.goa.graph,
+        kgr:translator.gtopdb.graph,
+        kgr:translator.hpoa.graph,
+        kgr:translator.icees.graph,
+        kgr:translator.intact.graph,
+        kgr:translator.panther.graph,
+        kgr:translator.pathbank.graph,
+        kgr:translator.semmeddb.graph,
+        kgr:translator.sider.graph,
+        kgr:translator.signor.graph,
+        kgr:translator.tmkp.graph,
+        kgr:translator.translator_kg.graph,
+        kgr:translator.ttd.graph,
+        kgr:translator.ubergraph.graph ;
+    schema1:identifier "sri-node-normalizer" ;
+    schema1:name "SRI Node Normalizer" ;
+    doap:repository <https://github.com/NCATSTranslator/NodeNormalization> ;
+    skos:altLabel "Node Normalization",
+        "Node Normalizer",
+        "NodeNorm" ;
+    skos:inScheme "biomedical",
+        "information technology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://nodenormalization-sri.renci.org/docs> .
 
 kgr:nomen a schema1:Ontology ;
     rdfs:label "NOMEN - A nomenclatural ontology for biological names" ;
@@ -17119,6 +17259,39 @@ kgr:obo_rel a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <http://www.obofoundry.org/ro> .
 
+kgr:obofoundry a schema1:Aggregator ;
+    rdfs:label "OBO Foundry" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Open Biological and Biomedical Ontology (OBO) Foundry is a community of ontology developers committed to a shared set of principles for open, interoperable biomedical ontologies. It runs the OBO registry, the canonical list of member ontologies with their metadata, persistent URLs (PURLs), release products, licenses and contacts, and it reviews ontologies against its principles. When checked on 2026-10-04 the registry listed 267 ontologies, 191 of them active." ;
+    dcterms:identifier "obofoundry" ;
+    dcterms:isReferencedBy <doi:10.1038/nbt1346>,
+        <doi:10.1093/database/baab069> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:bioportal.api,
+        kgr:bioportal.portal,
+        kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
+        kgr:obofoundry.portal,
+        kgr:obofoundry.principles,
+        kgr:obofoundry.registry.jsonld,
+        kgr:obofoundry.registry.ttl,
+        kgr:obofoundry.registry.yaml,
+        kgr:obofoundry.repository,
+        kgr:ols.json,
+        kgr:ols.json-linked ;
+    schema1:name "OBO Foundry" ;
+    doap:repository <https://github.com/OBOFoundry/OBOFoundry.github.io> ;
+    skos:altLabel "OBO",
+        "OBO Library",
+        "OBO registry",
+        "Open Biological and Biomedical Ontology Foundry" ;
+    skos:inScheme "biomedical",
+        "information technology",
+        "metadata" ;
+    adms:status "Active" ;
+    foaf:homepage <https://obofoundry.org/> .
+
 kgr:occo a schema1:Ontology ;
     rdfs:label "Occupation Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -17334,7 +17507,9 @@ kgr:ols a schema1:Aggregator ;
     dcterms:isReferencedBy <PMID:40323307> ;
     dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:ols.api,
+    schema1:hasPart kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
+        kgr:ols.api,
         kgr:ols.embeddings,
         kgr:ols.json,
         kgr:ols.json-linked,
@@ -24533,7 +24708,7 @@ kgr:translator a schema1:Aggregator ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/30412337>,
         <https://www.ncbi.nlm.nih.gov/pubmed/30412340> ;
     dcterms:license <https://opensource.org/license/mit/> ;
-    dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ctkp.docs,
         kgr:ctkp.smartapi,
         kgr:drug-approvals-kp.code,
@@ -25210,6 +25385,8 @@ kgr:uniprot a schema1:DataSource ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
+        kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
         kgr:cacao.api,
         kgr:cacao.go-annotations,
         kgr:cacao.gowiki,
@@ -25851,7 +26028,9 @@ kgr:wikidata a schema1:KnowledgeGraph ;
     dcterms:identifier "wikidata" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:dbpedia.latest-core,
+    schema1:hasPart kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
+        kgr:dbpedia.latest-core,
         kgr:freebase.wikidata-mappings,
         kgr:identifier-mappings.graph,
         kgr:identifier-mappings.sparql,
@@ -27505,6 +27684,51 @@ kgr:bioplanet.data a schema1:Product ;
     rdfs:label "BioPlanet Pathway Data" ;
     dcterms:description "Comprehensive integrated pathway resource that incorporates 1,658 distinct human pathways." ;
     schema1:url <https://tripod.nih.gov/bioplanet/download/pathway.csv> .
+
+kgr:bioregistry.api a schema1:ProgrammingInterface ;
+    rdfs:label "Bioregistry REST API" ;
+    dcterms:description "REST API for querying Bioregistry records, metaregistry entries, collections and CURIE resolution, documented with OpenAPI." ;
+    schema1:url <https://bioregistry.io/apidocs> .
+
+kgr:bioregistry.context.jsonld a schema1:Product ;
+    rdfs:label "Bioregistry JSON-LD Context" ;
+    dcterms:description "JSON-LD context mapping each Bioregistry prefix to its preferred URI prefix, for expanding and contracting CURIEs. Other contexts (OBO, semantic web, extended prefix maps) are in the same exports directory." ;
+    schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/contexts/bioregistry.context.jsonld> .
+
+kgr:bioregistry.docs a schema1:DocumentationProduct ;
+    rdfs:label "Bioregistry Documentation" ;
+    dcterms:description "Bioregistry documentation, including the Python package reference and curation guidance." ;
+    schema1:url <https://bioregistry.readthedocs.io/> .
+
+kgr:bioregistry.portal a schema1:GraphicalInterface ;
+    rdfs:label "Bioregistry Web Site" ;
+    dcterms:description "Bioregistry web site for searching and browsing prefixes, registries and collections and for resolving CURIEs to provider URLs." ;
+    schema1:url <https://bioregistry.io/> .
+
+kgr:bioregistry.python a schema1:Product ;
+    rdfs:label "Bioregistry Python Package" ;
+    dcterms:description "Python package for loading and querying the Bioregistry, normalizing prefixes and CURIEs, and generating prefix maps. Released under the MIT License." ;
+    schema1:url <https://pypi.org/project/bioregistry/> .
+
+kgr:bioregistry.rdf.jsonld a schema1:Product ;
+    rdfs:label "Bioregistry RDF (JSON-LD)" ;
+    dcterms:description "RDF export of the Bioregistry in JSON-LD." ;
+    schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.jsonld> .
+
+kgr:bioregistry.rdf.ttl a schema1:Product ;
+    rdfs:label "Bioregistry RDF (Turtle)" ;
+    dcterms:description "RDF export of the Bioregistry in Turtle, describing prefixes, providers, registries and collections with the Bioregistry RDF schema." ;
+    schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.ttl> .
+
+kgr:bioregistry.registry.tsv a schema1:Product ;
+    rdfs:label "Bioregistry TSV Export" ;
+    dcterms:description "Flattened tabular Bioregistry export with one row per prefix." ;
+    schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.tsv> .
+
+kgr:bioregistry.registry.yml a schema1:Product ;
+    rdfs:label "Bioregistry YAML Export" ;
+    dcterms:description "Full Bioregistry export as YAML, with the same content as the JSON export." ;
+    schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.yml> .
 
 kgr:biostudies.portal a schema1:GraphicalInterface ;
     rdfs:label "BioStudies Web Interface" ;
@@ -33338,6 +33562,21 @@ kgr:idomal.owl a schema1:OntologyProduct ;
     dcterms:description "Malaria Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/idomal.owl> .
 
+kgr:iedison.api a schema1:ProgrammingInterface ;
+    rdfs:label "iEdison API" ;
+    dcterms:description "RESTful JSON web services for creating, updating and querying invention, patent and utilization reports. Access is limited to registered agencies and awardee organizations with certificate-based authentication." ;
+    schema1:url <https://iedison.nist.gov/iedison/swagger.json> .
+
+kgr:iedison.api-docs a schema1:DocumentationProduct ;
+    rdfs:label "iEdison API Documentation" ;
+    dcterms:description "Documentation for the current version of the iEdison invention, patent and utilization API." ;
+    schema1:url <https://pages.nist.gov/iEdison-API-Documentation/> .
+
+kgr:iedison.portal a schema1:GraphicalInterface ;
+    rdfs:label "iEdison Web System" ;
+    dcterms:description "Web system, requiring an account, in which funding recipients and federal agencies create and manage invention, patent and utilization reports." ;
+    schema1:url <https://iedison.nist.gov/> .
+
 kgr:iev.obo a schema1:OntologyProduct ;
     rdfs:label "iev.obo" ;
     dcterms:description "Event (INOH pathway ontology) in OBO format" ;
@@ -35977,35 +36216,20 @@ kgr:nifc.portal a schema1:GraphicalInterface ;
     dcterms:description "NIFC Open Data portal interface for searching, browsing, previewing on maps, and downloading wildfire geospatial datasets and feature layers." ;
     schema1:url <https://data-nifc.opendata.arcgis.com/> .
 
-kgr:nihreporter.abstracts a schema1:Product ;
-    rdfs:label "NIH-Funded Project Abstracts" ;
-    dcterms:description "Database of abstracts linked to NIH-funded research projects" ;
-    schema1:url <https://reporter.nih.gov/exporter/abstracts> .
+kgr:nih-era.assist a schema1:GraphicalInterface ;
+    rdfs:label "eRA ASSIST" ;
+    dcterms:description "ASSIST (Application Submission System and Interface for Submission Tracking), the login-protected eRA module for preparing and submitting grant applications to NIH and other agencies." ;
+    schema1:url <https://public.era.nih.gov/assist/> .
 
-kgr:nihreporter.api a schema1:ProgrammingInterface ;
-    rdfs:label "NIH Reporter API" ;
-    dcterms:description "Public REST API (no key required) returning JSON for searching projects (v2 projects endpoint) and project-linked publications" ;
-    schema1:url <https://api.reporter.nih.gov/> .
+kgr:nih-era.commons a schema1:GraphicalInterface ;
+    rdfs:label "eRA Commons" ;
+    dcterms:description "eRA Commons, the login-protected web interface where applicants, grant recipients, signing officials and reviewers track applications, view review outcomes and notices of award, and submit progress reports, invention reports and closeout documents." ;
+    schema1:url <https://public.era.nih.gov/commons/> .
 
-kgr:nihreporter.crisp a schema1:Product ;
-    rdfs:label "NIH Reporter Legacy CRISP Data" ;
-    dcterms:description "Legacy CRISP (Computer Retrieval of Information on Scientific Projects) project and abstract data for fiscal years 1970 to 2009, in CSV and XML." ;
-    schema1:url <https://reporter.nih.gov/exporter/crisp> .
-
-kgr:nihreporter.patents a schema1:Product ;
-    rdfs:label "NIH-Funded Project Patents" ;
-    dcterms:description "Database of patents linked to NIH-funded research projects" ;
-    schema1:url <https://reporter.nih.gov/exporter/patents> .
-
-kgr:nihreporter.portal a schema1:GraphicalInterface ;
-    rdfs:label "NIH Reporter Web Portal" ;
-    dcterms:description "Web-based search interface for exploring NIH-funded research projects with advanced search capabilities" ;
-    schema1:url <https://reporter.nih.gov/> .
-
-kgr:nihreporter.projects a schema1:Product ;
-    rdfs:label "NIH Reporter Exporter Projects" ;
-    dcterms:description "Bulk download of NIH research project data in structured format" ;
-    schema1:url <https://reporter.nih.gov/exporter/projects> .
+kgr:nih-era.help a schema1:DocumentationProduct ;
+    rdfs:label "eRA Help and Tutorials" ;
+    dcterms:description "eRA help and tutorials, including online help for eRA Commons, ASSIST and the other eRA modules, video tutorials and FAQs." ;
+    schema1:url <https://www.era.nih.gov/help-tutorials> .
 
 kgr:nij.publications a schema1:Product ;
     rdfs:label "NIJ Publications and Data" ;
@@ -36096,6 +36320,26 @@ kgr:noaa-nwm.landing a schema1:GraphicalInterface ;
     rdfs:label "NOAA National Water Model landing page" ;
     dcterms:description "NOAA National Water Center landing page describing the National Water Model, its forecast configurations, and access options." ;
     schema1:url <https://water.noaa.gov/about/nwm> .
+
+kgr:node-normalizer.api a schema1:ProgrammingInterface ;
+    rdfs:label "Node Normalization API (RENCI)" ;
+    dcterms:description "Node Normalization REST API hosted by RENCI (OpenAPI version 2.5.1, TRAPI 1.5 annotate_nodes operation). Endpoints include /get_normalized_nodes, /get_semantic_types, /get_curie_prefixes, /get_allowed_conflations, /get_setid and TRAPI /query and /asyncquery. The OpenAPI servers block labels this deployment development maturity." ;
+    schema1:url <https://nodenormalization-sri.renci.org/docs> .
+
+kgr:node-normalizer.api.translator a schema1:ProgrammingInterface ;
+    rdfs:label "Node Normalization API (Translator)" ;
+    dcterms:description "Node Normalization REST API deployed on NCATS Translator infrastructure." ;
+    schema1:url <https://nodenorm.transltr.io/docs> .
+
+kgr:node-normalizer.code a schema1:ProcessProduct ;
+    rdfs:label "NodeNormalization Source Repository" ;
+    dcterms:description "Source code for the Node Normalization service, which loads Babel compendia into Redis and serves them through a FastAPI application." ;
+    schema1:url <https://github.com/NCATSTranslator/NodeNormalization> .
+
+kgr:node-normalizer.docs a schema1:DocumentationProduct ;
+    rdfs:label "Node Normalization API Documentation" ;
+    dcterms:description "API documentation for Node Normalization, describing each endpoint, conflation options and response structure." ;
+    schema1:url <https://github.com/NCATSTranslator/NodeNormalization/blob/master/documentation/API.md> .
 
 kgr:nomen.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "NOMEN KGX graph (KG-Bioportal)" ;
@@ -36357,6 +36601,36 @@ kgr:obo-db-ingest.goldbook.tsv a schema1:Product ;
     dcterms:description "IUPAC Gold Book (Compendium of Chemical Terminology) Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/goldbook/goldbook.tsv> .
 
+kgr:obofoundry.portal a schema1:GraphicalInterface ;
+    rdfs:label "OBO Foundry Website" ;
+    dcterms:description "OBO Foundry website with a browsable table of registered ontologies, a detail page per ontology, and documentation of the OBO principles and review process." ;
+    schema1:url <https://obofoundry.org/> .
+
+kgr:obofoundry.principles a schema1:DocumentationProduct ;
+    rdfs:label "OBO Foundry Principles" ;
+    dcterms:description "Summary of the OBO Foundry principles that member ontologies are expected to follow, such as openness, common format, URI/identifier space, versioning and documentation." ;
+    schema1:url <https://obofoundry.org/principles/fp-000-summary.html> .
+
+kgr:obofoundry.registry.jsonld a schema1:Product ;
+    rdfs:label "OBO Foundry Registry Metadata (JSON-LD)" ;
+    dcterms:description "OBO registry ontology metadata serialized as JSON-LD." ;
+    schema1:url <https://obofoundry.org/registry/ontologies.jsonld> .
+
+kgr:obofoundry.registry.ttl a schema1:Product ;
+    rdfs:label "OBO Foundry Registry Metadata (Turtle)" ;
+    dcterms:description "OBO registry ontology metadata serialized as RDF Turtle." ;
+    schema1:url <https://obofoundry.org/registry/ontologies.ttl> .
+
+kgr:obofoundry.registry.yaml a schema1:Product ;
+    rdfs:label "OBO Foundry Registry Metadata (YAML)" ;
+    dcterms:description "Machine-readable metadata for every ontology in the OBO registry (ids, titles, descriptions, PURLs, products, licenses, contacts, dependencies and activity status), in YAML." ;
+    schema1:url <https://obofoundry.org/registry/ontologies.yml> .
+
+kgr:obofoundry.repository a schema1:Product ;
+    rdfs:label "OBO Foundry GitHub Repository" ;
+    dcterms:description "GitHub repository holding the OBO registry metadata (one Markdown file with YAML front matter per ontology), the Jekyll website, and the Python tooling that builds the registry exports and runs the OBO Dashboard checks. Data are CC0 1.0 and code is BSD 3-Clause." ;
+    schema1:url <https://github.com/OBOFoundry/OBOFoundry.github.io> .
+
 kgr:occo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "OCCO KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Occupation Ontology (OCCO), produced by KG-Bioportal from the BioPortal submission. The archive contains OCCO_nodes.tsv and OCCO_edges.tsv." ;
@@ -36568,16 +36842,6 @@ kgr:ols.embeddings a schema1:Product ;
     rdfs:label "OLS Term Embeddings" ;
     dcterms:description "Precomputed ontology term embeddings (full, PCA and UMAP projections) from multiple language models, used for semantic search in OLS." ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/> .
-
-kgr:ols.json a schema1:Product ;
-    rdfs:label "OLS Ontologies JSON" ;
-    dcterms:description "Gzipped tar archive (ontology_jsons.tgz, about 2 GB) of all ontologies loaded into OLS, in OLS JSON format." ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/> .
-
-kgr:ols.json-linked a schema1:Product ;
-    rdfs:label "OLS Linked Ontology JSON" ;
-    dcterms:description "Gzipped tar archive (ontology_jsons_linked.tgz) of OLS ontology JSON with added cross-ontology and external database links." ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/> .
 
 kgr:ols.mappings a schema1:MappingProduct ;
     rdfs:label "OLS SSSOM Mappings" ;
@@ -42452,16 +42716,6 @@ kgr:biomarker.kg a schema1:GraphProduct ;
     dcterms:description "Neo4j knowledge graph built from curated BiomarkerKB data and integrated into the CFDE Unified Biomedical Knowledge Graph (UBKG). The initial release comprises over 300,000 nodes and 1.2 million edges." ;
     schema1:url <https://github.com/clinical-biomarkers/Knowledge-Graph> .
 
-kgr:bioportal.api a schema1:ProgrammingInterface ;
-    rdfs:label "BioPortal REST API" ;
-    dcterms:description "REST API for ontology concepts, search, mappings, metrics, and downloads. Most endpoints require a free BioPortal API key." ;
-    schema1:url <https://data.bioontology.org/> .
-
-kgr:bioportal.portal a schema1:GraphicalInterface ;
-    rdfs:label "BioPortal Portal" ;
-    dcterms:description "Web portal for searching, browsing, and visualizing biomedical ontologies and mappings" ;
-    schema1:url <https://bioportal.bioontology.org/> .
-
 kgr:biostudies.api a schema1:ProgrammingInterface ;
     rdfs:label "BioStudies REST API" ;
     dcterms:description "REST API returning JSON for searching BioStudies, with per-collection search endpoints and per-study metadata and file listings. Covers all collections, including supplementary data imported from Europe PMC." ;
@@ -43133,10 +43387,35 @@ kgr:nextprot.sparql a schema1:ProgrammingInterface ;
     dcterms:description "neXtProt SPARQL endpoint for querying RDF representations of human protein knowledge." ;
     schema1:url <https://sparql.nextprot.org/> .
 
-kgr:nihreporter.clinicalstudies a schema1:Product ;
-    rdfs:label "NIH-Funded Project Clinical Studies" ;
-    dcterms:description "Database of clinical studies linked to NIH-funded research projects" ;
-    schema1:url <https://reporter.nih.gov/exporter/clinicalstudies> .
+kgr:nih-era.reporting-docs a schema1:DocumentationProduct ;
+    rdfs:label "eRA Reporting and Analytics Modules" ;
+    dcterms:description "Description of the eRA reporting and analytics modules, including the public RePORT and RePORTER tools and the internal QVR, SPIRES and iRePORT modules built on IMPAC II data." ;
+    schema1:url <https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics> .
+
+kgr:nihreporter.abstracts a schema1:Product ;
+    rdfs:label "NIH-Funded Project Abstracts" ;
+    dcterms:description "Database of abstracts linked to NIH-funded research projects" ;
+    schema1:url <https://reporter.nih.gov/exporter/abstracts> .
+
+kgr:nihreporter.api a schema1:ProgrammingInterface ;
+    rdfs:label "NIH Reporter API" ;
+    dcterms:description "Public REST API (no key required) returning JSON for searching projects (v2 projects endpoint) and project-linked publications" ;
+    schema1:url <https://api.reporter.nih.gov/> .
+
+kgr:nihreporter.crisp a schema1:Product ;
+    rdfs:label "NIH Reporter Legacy CRISP Data" ;
+    dcterms:description "Legacy CRISP (Computer Retrieval of Information on Scientific Projects) project and abstract data for fiscal years 1970 to 2009, in CSV and XML." ;
+    schema1:url <https://reporter.nih.gov/exporter/crisp> .
+
+kgr:nihreporter.portal a schema1:GraphicalInterface ;
+    rdfs:label "NIH Reporter Web Portal" ;
+    dcterms:description "Web-based search interface for exploring NIH-funded research projects with advanced search capabilities" ;
+    schema1:url <https://reporter.nih.gov/> .
+
+kgr:nihreporter.projects a schema1:Product ;
+    rdfs:label "NIH Reporter Exporter Projects" ;
+    dcterms:description "Bulk download of NIH research project data in structured format" ;
+    schema1:url <https://reporter.nih.gov/exporter/projects> .
 
 kgr:obo-db-ingest.bigg.compartment.json a schema1:Product ;
     rdfs:label "bigg.compartment OBO Graph JSON" ;
@@ -44648,6 +44927,16 @@ kgr:ohdsi.omop_cdm a schema1:DataModelProduct ;
     dcterms:description "OMOP Common Data Model specification and downloadable DDL artifacts maintained by the OHDSI community" ;
     schema1:url <https://ohdsi.github.io/CommonDataModel/> .
 
+kgr:ols.json a schema1:Product ;
+    rdfs:label "OLS Ontologies JSON" ;
+    dcterms:description "Gzipped tar archive (ontology_jsons.tgz, about 2 GB) of all ontologies loaded into OLS, in OLS JSON format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/> .
+
+kgr:ols.json-linked a schema1:Product ;
+    rdfs:label "OLS Linked Ontology JSON" ;
+    dcterms:description "Gzipped tar archive (ontology_jsons_linked.tgz) of OLS ontology JSON with added cross-ontology and external database links." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/> .
+
 kgr:oma.mapping.ensembl a schema1:MappingProduct ;
     rdfs:label "OMA to Ensembl Mapping" ;
     dcterms:description "Mapping of OMA identifiers to Ensembl identifiers" ;
@@ -45433,131 +45722,6 @@ kgr:togows.ucsc-api a schema1:ProgrammingInterface ;
     dcterms:description "REST API over the public UCSC Genome Browser MySQL databases, for listing genome assemblies, tables and columns, querying table rows by column values, and retrieving genomic sequence ranges." ;
     schema1:url <http://togows.org/help/> .
 
-kgr:translator.alliance.graph a schema1:GraphProduct ;
-    rdfs:label "Translator Alliance KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Alliance of Genome Resources distributed via the NCATS Translator release site (release 2026_03_06; build alliance_8.3.0_2023bb02_2025sep1_4.3.6; source version 8.3.0; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/alliance/latest/> .
-
-kgr:translator.bgee.graph a schema1:GraphProduct ;
-    rdfs:label "Translator Bgee KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Bgee - Gene Expression Database distributed via the NCATS Translator release site (release 2026_03_06; build bgee_15.2_a4fc19df_2025sep1_4.3.6; source version 15.2; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/bgee/latest/> .
-
-kgr:translator.bindingdb.graph a schema1:GraphProduct ;
-    rdfs:label "Translator BindingDB KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for BindingDB distributed via the NCATS Translator release site (release 2026_03_06; build bindingdb_202603_2f3418c8_2025sep1_4.3.6; source version 202603; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/bindingdb/latest/> .
-
-kgr:translator.chembl.graph a schema1:GraphProduct ;
-    rdfs:label "Translator ChEMBL KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for ChEMBL distributed via the NCATS Translator release site (release 2026_03_06; build chembl_36_76533eea_2025sep1_4.3.6; source version 36; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/chembl/latest/> .
-
-kgr:translator.cohd.graph a schema1:GraphProduct ;
-    rdfs:label "Translator COHD KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Columbia Open Health Data (COHD) distributed via the NCATS Translator release site (release 2026_03_12; build cohd_2024-11-25_75f200bb_2025sep1_4.3.6; source version 2024-11-25; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/cohd/latest/> .
-
-kgr:translator.ctd.graph a schema1:GraphProduct ;
-    rdfs:label "Translator CTD KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for CTD distributed via the NCATS Translator release site (release 2026_03_27; build ctd_February_2026_b588520f_2025sep1_4.3.6; source version February_2026; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/ctd/latest/> .
-
-kgr:translator.dgidb.graph a schema1:GraphProduct ;
-    rdfs:label "Translator DGIdb KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for DGIdb distributed via the NCATS Translator release site (release 2026_03_06; build dgidb_2024_12_06_755e30d8_2025sep1_4.3.6; source version 2024_12_06; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/dgidb/latest/> .
-
-kgr:translator.diseases.graph a schema1:GraphProduct ;
-    rdfs:label "Translator DISEASES KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for DISEASES distributed via the NCATS Translator release site (release 2026_03_19; build diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6; source version 2026_03_17; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/diseases/latest/> .
-
-kgr:translator.drug_rep_hub.graph a schema1:GraphProduct ;
-    rdfs:label "Translator Drug Repurposing Hub KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Drug Repurposing Hub distributed via the NCATS Translator release site (release 2026_03_06; build drug_rep_hub_2025-08-19_99c18ef1_2025sep1_4.3.6; source version 2025-08-19; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/> .
-
-kgr:translator.drugcentral.graph a schema1:GraphProduct ;
-    rdfs:label "Translator DrugCentral KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for DrugCentral distributed via the NCATS Translator release site (release 2026_03_19; build drugcentral_2023_11_01_82890f34_2025sep1_4.3.6; source version 2023_11_01; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/drugcentral/latest/> .
-
-kgr:translator.gene2phenotype.graph a schema1:GraphProduct ;
-    rdfs:label "Translator Gene2Phenotype KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Gene2Phenotype distributed via the NCATS Translator release site (release 2026_03_27; build gene2phenotype_2026_03_27_4773272d_2025sep1_4.3.6; source version 2026_03_27; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/> .
-
-kgr:translator.go_cam.graph a schema1:GraphProduct ;
-    rdfs:label "Translator GO-CAM KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for GO-CAM distributed via the NCATS Translator release site (release 2026_03_06; build go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6; source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/go_cam/latest/> .
-
-kgr:translator.goa.graph a schema1:GraphProduct ;
-    rdfs:label "Translator GOA KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for GOA distributed via the NCATS Translator release site (release 2026_03_06; build goa_2026-01-23_5fdd3125_2025sep1_4.3.6; source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/goa/latest/> .
-
-kgr:translator.gtopdb.graph a schema1:GraphProduct ;
-    rdfs:label "Translator GToPdb KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for GToPdb distributed via the NCATS Translator release site (release 2026_03_19; build gtopdb_2026.1_4d453431_2025sep1_4.3.6; source version 2026.1; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/gtopdb/latest/> .
-
-kgr:translator.hpoa.graph a schema1:GraphProduct ;
-    rdfs:label "Translator HPOA KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for HPOA distributed via the NCATS Translator release site (release 2026_03_06; build hpoa_2026-02-16_e80fcfa7_2025sep1_4.3.6; source version 2026-02-16; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/hpoa/latest/> .
-
-kgr:translator.icees.graph a schema1:GraphProduct ;
-    rdfs:label "Translator ICEES KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for ICEES distributed via the NCATS Translator release site (release 2026_03_12; build icees_2024-08-20_3ebb9d85_2025sep1_4.3.6; source version 2024-08-20; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/icees/latest/> .
-
-kgr:translator.intact.graph a schema1:GraphProduct ;
-    rdfs:label "Translator IntAct KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for IntAct distributed via the NCATS Translator release site (release 2026_03_06; build intact_2026_01_14_e14f80a8_2025sep1_4.3.6; source version 2026_01_14; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/intact/latest/> .
-
-kgr:translator.panther.graph a schema1:GraphProduct ;
-    rdfs:label "Translator PANTHER KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for PANTHER distributed via the NCATS Translator release site (release 2026_03_06; build panther_19.0_0b240030_2025sep1_4.3.6; source version 19.0; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/panther/latest/> .
-
-kgr:translator.pathbank.graph a schema1:GraphProduct ;
-    rdfs:label "Translator PathBank KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Pathbank distributed via the NCATS Translator release site (release 2026_03_27; build pathbank_2019-09-13_4589e2d2_2025sep1_4.3.6; source version 2019-09-13; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/pathbank/latest/> .
-
-kgr:translator.semmeddb.graph a schema1:GraphProduct ;
-    rdfs:label "Translator SemMedDB KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for SemMedDB distributed via the NCATS Translator release site (release 2026_03_27; build semmeddb_semmeddb-2023-kg2.10.3_fe8e6340_2025sep1_4.3.6; source version semmeddb-2023-kg2.10.3; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/semmeddb/latest/> .
-
-kgr:translator.sider.graph a schema1:GraphProduct ;
-    rdfs:label "Translator SIDER KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for SIDER distributed via the NCATS Translator release site (release 2026_03_06; build sider_4.1_56b9c307_2025sep1_4.3.6; source version 4.1; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/sider/latest/> .
-
-kgr:translator.signor.graph a schema1:GraphProduct ;
-    rdfs:label "Translator SIGNOR KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for SIGNOR distributed via the NCATS Translator release site (release 2026_03_06; build signor_2026_January_e2465db9_2025sep1_4.3.6; source version 2026_January; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/signor/latest/> .
-
-kgr:translator.tmkp.graph a schema1:GraphProduct ;
-    rdfs:label "Translator TMKP KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for TMKP distributed via the NCATS Translator release site (release 2026_03_06; build tmkp_tmkp-2023-03-05_6dadae40_2025sep1_4.3.6; source version tmkp-2023-03-05; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/tmkp/latest/> .
-
-kgr:translator.ttd.graph a schema1:GraphProduct ;
-    rdfs:label "Translator TTD KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for TTD distributed via the NCATS Translator release site (release 2026_03_06; build ttd_2024_03_30_0a11135d_2025sep1_4.3.6; source version 2024_03_30; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/ttd/latest/> .
-
-kgr:translator.ubergraph.graph a schema1:GraphProduct ;
-    rdfs:label "Translator Ubergraph KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Ubergraph distributed via the NCATS Translator release site (release 2026_03_27; build ubergraph_2026-03-08_0fef3756_2025sep1_4.3.6; source version 2026-03-08; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/ubergraph/latest/> .
-
 kgr:ttd.kegg-pathways a schema1:Product ;
     rdfs:label "Target KEGG Pathways" ;
     dcterms:description "KEGG pathway data for all targets" ;
@@ -45674,6 +45838,16 @@ kgr:automat.viralproteome a schema1:GraphProduct ;
     rdfs:label "ViralProteome_Automat" ;
     dcterms:description "Viral Proteome Automat: per-source KGX knowledge graph download (Biolink 4.2.1)." ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/ViralProteome_Automat/> .
+
+kgr:bioportal.api a schema1:ProgrammingInterface ;
+    rdfs:label "BioPortal REST API" ;
+    dcterms:description "REST API for ontology concepts, search, mappings, metrics, and downloads. Most endpoints require a free BioPortal API key." ;
+    schema1:url <https://data.bioontology.org/> .
+
+kgr:bioportal.portal a schema1:GraphicalInterface ;
+    rdfs:label "BioPortal Portal" ;
+    dcterms:description "Web portal for searching, browsing, and visualizing biomedical ontologies and mappings" ;
+    schema1:url <https://bioportal.bioontology.org/> .
 
 kgr:biostudies.ftp a schema1:Product ;
     rdfs:label "BioStudies FTP Archive" ;
@@ -45996,15 +46170,15 @@ kgr:ncipidkg.graph.ttl a schema1:GraphProduct ;
     dcterms:description "RDF graph converting NCI Pathway Interaction Database version 2.0 networks into RDF, enriched with INDRA evidence metadata." ;
     schema1:url <https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf> .
 
-kgr:nihreporter.linktables a schema1:Product ;
-    rdfs:label "NIH-Funded Publications Link Tables" ;
-    dcterms:description "Database of publication link tables for NIH-funded research projects" ;
-    schema1:url <https://reporter.nih.gov/exporter/linktables> .
+kgr:nihreporter.clinicalstudies a schema1:Product ;
+    rdfs:label "NIH-Funded Project Clinical Studies" ;
+    dcterms:description "Database of clinical studies linked to NIH-funded research projects" ;
+    schema1:url <https://reporter.nih.gov/exporter/clinicalstudies> .
 
-kgr:nihreporter.publications a schema1:Product ;
-    rdfs:label "NIH-Funded Publications Database" ;
-    dcterms:description "Database of publications linked to NIH-funded research projects" ;
-    schema1:url <https://reporter.nih.gov/exporter/publications> .
+kgr:nihreporter.patents a schema1:Product ;
+    rdfs:label "NIH-Funded Project Patents" ;
+    dcterms:description "Database of patents linked to NIH-funded research projects" ;
+    schema1:url <https://reporter.nih.gov/exporter/patents> .
 
 kgr:nikg.graph a schema1:GraphProduct ;
     rdfs:label "Neighborhood Information KG RDF Graph" ;
@@ -46161,10 +46335,130 @@ kgr:tera.chebi-to-mesh-csv a schema1:MappingProduct ;
     dcterms:description "Mapping file linking ChEBI identifiers to MeSH identifiers" ;
     schema1:url <https://zenodo.org/records/4244313/files/chebi_to_mesh.csv> .
 
-kgr:translator.dakp.graph a schema1:GraphProduct ;
-    rdfs:label "Translator DAKP KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Drug Approvals KP distributed via the NCATS Translator release site (release 2026_03_19; build dakp_0.5.3_c3f74ab4_2025sep1_4.3.6; source version 0.5.3; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/dakp/latest/> .
+kgr:translator.alliance.graph a schema1:GraphProduct ;
+    rdfs:label "Translator Alliance KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Alliance of Genome Resources distributed via the NCATS Translator release site (release 2026_03_06; build alliance_8.3.0_2023bb02_2025sep1_4.3.6; source version 8.3.0; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/alliance/latest/> .
+
+kgr:translator.bgee.graph a schema1:GraphProduct ;
+    rdfs:label "Translator Bgee KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Bgee - Gene Expression Database distributed via the NCATS Translator release site (release 2026_03_06; build bgee_15.2_a4fc19df_2025sep1_4.3.6; source version 15.2; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/bgee/latest/> .
+
+kgr:translator.bindingdb.graph a schema1:GraphProduct ;
+    rdfs:label "Translator BindingDB KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for BindingDB distributed via the NCATS Translator release site (release 2026_03_06; build bindingdb_202603_2f3418c8_2025sep1_4.3.6; source version 202603; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/bindingdb/latest/> .
+
+kgr:translator.chembl.graph a schema1:GraphProduct ;
+    rdfs:label "Translator ChEMBL KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for ChEMBL distributed via the NCATS Translator release site (release 2026_03_06; build chembl_36_76533eea_2025sep1_4.3.6; source version 36; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/chembl/latest/> .
+
+kgr:translator.cohd.graph a schema1:GraphProduct ;
+    rdfs:label "Translator COHD KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Columbia Open Health Data (COHD) distributed via the NCATS Translator release site (release 2026_03_12; build cohd_2024-11-25_75f200bb_2025sep1_4.3.6; source version 2024-11-25; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/cohd/latest/> .
+
+kgr:translator.ctd.graph a schema1:GraphProduct ;
+    rdfs:label "Translator CTD KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for CTD distributed via the NCATS Translator release site (release 2026_03_27; build ctd_February_2026_b588520f_2025sep1_4.3.6; source version February_2026; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/ctd/latest/> .
+
+kgr:translator.dgidb.graph a schema1:GraphProduct ;
+    rdfs:label "Translator DGIdb KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for DGIdb distributed via the NCATS Translator release site (release 2026_03_06; build dgidb_2024_12_06_755e30d8_2025sep1_4.3.6; source version 2024_12_06; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/dgidb/latest/> .
+
+kgr:translator.diseases.graph a schema1:GraphProduct ;
+    rdfs:label "Translator DISEASES KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for DISEASES distributed via the NCATS Translator release site (release 2026_03_19; build diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6; source version 2026_03_17; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/diseases/latest/> .
+
+kgr:translator.drug_rep_hub.graph a schema1:GraphProduct ;
+    rdfs:label "Translator Drug Repurposing Hub KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Drug Repurposing Hub distributed via the NCATS Translator release site (release 2026_03_06; build drug_rep_hub_2025-08-19_99c18ef1_2025sep1_4.3.6; source version 2025-08-19; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/> .
+
+kgr:translator.drugcentral.graph a schema1:GraphProduct ;
+    rdfs:label "Translator DrugCentral KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for DrugCentral distributed via the NCATS Translator release site (release 2026_03_19; build drugcentral_2023_11_01_82890f34_2025sep1_4.3.6; source version 2023_11_01; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/drugcentral/latest/> .
+
+kgr:translator.gene2phenotype.graph a schema1:GraphProduct ;
+    rdfs:label "Translator Gene2Phenotype KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Gene2Phenotype distributed via the NCATS Translator release site (release 2026_03_27; build gene2phenotype_2026_03_27_4773272d_2025sep1_4.3.6; source version 2026_03_27; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/> .
+
+kgr:translator.go_cam.graph a schema1:GraphProduct ;
+    rdfs:label "Translator GO-CAM KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for GO-CAM distributed via the NCATS Translator release site (release 2026_03_06; build go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6; source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/go_cam/latest/> .
+
+kgr:translator.goa.graph a schema1:GraphProduct ;
+    rdfs:label "Translator GOA KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for GOA distributed via the NCATS Translator release site (release 2026_03_06; build goa_2026-01-23_5fdd3125_2025sep1_4.3.6; source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/goa/latest/> .
+
+kgr:translator.gtopdb.graph a schema1:GraphProduct ;
+    rdfs:label "Translator GToPdb KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for GToPdb distributed via the NCATS Translator release site (release 2026_03_19; build gtopdb_2026.1_4d453431_2025sep1_4.3.6; source version 2026.1; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/gtopdb/latest/> .
+
+kgr:translator.hpoa.graph a schema1:GraphProduct ;
+    rdfs:label "Translator HPOA KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for HPOA distributed via the NCATS Translator release site (release 2026_03_06; build hpoa_2026-02-16_e80fcfa7_2025sep1_4.3.6; source version 2026-02-16; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/hpoa/latest/> .
+
+kgr:translator.icees.graph a schema1:GraphProduct ;
+    rdfs:label "Translator ICEES KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for ICEES distributed via the NCATS Translator release site (release 2026_03_12; build icees_2024-08-20_3ebb9d85_2025sep1_4.3.6; source version 2024-08-20; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/icees/latest/> .
+
+kgr:translator.intact.graph a schema1:GraphProduct ;
+    rdfs:label "Translator IntAct KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for IntAct distributed via the NCATS Translator release site (release 2026_03_06; build intact_2026_01_14_e14f80a8_2025sep1_4.3.6; source version 2026_01_14; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/intact/latest/> .
+
+kgr:translator.panther.graph a schema1:GraphProduct ;
+    rdfs:label "Translator PANTHER KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for PANTHER distributed via the NCATS Translator release site (release 2026_03_06; build panther_19.0_0b240030_2025sep1_4.3.6; source version 19.0; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/panther/latest/> .
+
+kgr:translator.pathbank.graph a schema1:GraphProduct ;
+    rdfs:label "Translator PathBank KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Pathbank distributed via the NCATS Translator release site (release 2026_03_27; build pathbank_2019-09-13_4589e2d2_2025sep1_4.3.6; source version 2019-09-13; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/pathbank/latest/> .
+
+kgr:translator.semmeddb.graph a schema1:GraphProduct ;
+    rdfs:label "Translator SemMedDB KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for SemMedDB distributed via the NCATS Translator release site (release 2026_03_27; build semmeddb_semmeddb-2023-kg2.10.3_fe8e6340_2025sep1_4.3.6; source version semmeddb-2023-kg2.10.3; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/semmeddb/latest/> .
+
+kgr:translator.sider.graph a schema1:GraphProduct ;
+    rdfs:label "Translator SIDER KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for SIDER distributed via the NCATS Translator release site (release 2026_03_06; build sider_4.1_56b9c307_2025sep1_4.3.6; source version 4.1; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/sider/latest/> .
+
+kgr:translator.signor.graph a schema1:GraphProduct ;
+    rdfs:label "Translator SIGNOR KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for SIGNOR distributed via the NCATS Translator release site (release 2026_03_06; build signor_2026_January_e2465db9_2025sep1_4.3.6; source version 2026_January; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/signor/latest/> .
+
+kgr:translator.tmkp.graph a schema1:GraphProduct ;
+    rdfs:label "Translator TMKP KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for TMKP distributed via the NCATS Translator release site (release 2026_03_06; build tmkp_tmkp-2023-03-05_6dadae40_2025sep1_4.3.6; source version tmkp-2023-03-05; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/tmkp/latest/> .
+
+kgr:translator.ttd.graph a schema1:GraphProduct ;
+    rdfs:label "Translator TTD KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for TTD distributed via the NCATS Translator release site (release 2026_03_06; build ttd_2024_03_30_0a11135d_2025sep1_4.3.6; source version 2024_03_30; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/ttd/latest/> .
+
+kgr:translator.ubergraph.graph a schema1:GraphProduct ;
+    rdfs:label "Translator Ubergraph KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Ubergraph distributed via the NCATS Translator release site (release 2026_03_27; build ubergraph_2026-03-08_0fef3756_2025sep1_4.3.6; source version 2026-03-08; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/ubergraph/latest/> .
 
 kgr:ttd.biomarker-disease a schema1:Product ;
     rdfs:label "Biomarker-Disease Mapping" ;
@@ -46451,6 +46745,16 @@ kgr:myaura.graph a schema1:GraphProduct ;
     dcterms:description "Multilayer epilepsy knowledge graph generated by the myAURA data processing workflow from biomedical, clinical, literature, and patient-centered data sources." ;
     schema1:url <https://github.com/cns-iu/myaura> .
 
+kgr:nihreporter.linktables a schema1:Product ;
+    rdfs:label "NIH-Funded Publications Link Tables" ;
+    dcterms:description "Database of publication link tables for NIH-funded research projects" ;
+    schema1:url <https://reporter.nih.gov/exporter/linktables> .
+
+kgr:nihreporter.publications a schema1:Product ;
+    rdfs:label "NIH-Funded Publications Database" ;
+    dcterms:description "Database of publications linked to NIH-funded research projects" ;
+    schema1:url <https://reporter.nih.gov/exporter/publications> .
+
 kgr:omim.mim2gene a schema1:MappingProduct ;
     rdfs:label "OMIM mim2gene.txt" ;
     dcterms:description "Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and HGNC symbols" ;
@@ -46506,10 +46810,10 @@ kgr:spatialkg.graph a schema1:GraphProduct ;
     dcterms:description "The SAWGraph Spatial KG as an RDF (Turtle) graph. It contains all Level 13 grid cells from the S2 grid together with administrative regions of levels 1 to 3 (states, counties, and county subdivisions) and the spatial relationships between them for the 48 contiguous U.S. states. S2 grid cells and state/county geometries are taken from KnowWhereGraph, and county subdivisions are sourced from the US Census Bureau. The graph is served through the SAWGraph Spatial KG SPARQL and Triple Pattern Fragments endpoints." ;
     schema1:url <https://github.com/SAWGraph/geospatial-kg> .
 
-kgr:translator.ctkp.graph a schema1:GraphProduct ;
-    rdfs:label "Translator CTKP KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for CTKP distributed via the NCATS Translator release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/ctkp/latest/> .
+kgr:translator.dakp.graph a schema1:GraphProduct ;
+    rdfs:label "Translator DAKP KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Drug Approvals KP distributed via the NCATS Translator release site (release 2026_03_19; build dakp_0.5.3_c3f74ab4_2025sep1_4.3.6; source version 0.5.3; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/dakp/latest/> .
 
 kgr:uf-okn.graph a schema1:GraphProduct ;
     rdfs:label "UF-OKN Knowledge Graph" ;
@@ -46765,6 +47069,11 @@ kgr:suppkg.source-data a schema1:ProcessProduct ;
     dcterms:description "Source data directory used for SuppKG in the SemRep_DS repository." ;
     schema1:url <https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG> .
 
+kgr:translator.ctkp.graph a schema1:GraphProduct ;
+    rdfs:label "Translator CTKP KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for CTKP distributed via the NCATS Translator release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/ctkp/latest/> .
+
 kgr:unibiomap.disease_desc a schema1:GraphProduct ;
     rdfs:label "UniBioMap Disease Descriptions" ;
     dcterms:description "UniBioMap disease entity descriptions." ;
@@ -46874,11 +47183,6 @@ kgr:sniff.federation-nodes a schema1:GraphProduct ;
     rdfs:label "Sniff KGX federation export, nodes" ;
     dcterms:description "A Biolink-conformant KGX TSV node file for the Sniff cross-species substrate, covering dog and human genes and canine and human diseases. Part of the facts-only federation bundle intended for ingest into other knowledge graphs." ;
     schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv> .
-
-kgr:translator.geneticskp.graph a schema1:GraphProduct ;
-    rdfs:label "Translator Genetics KP KGX Graph" ;
-    dcterms:description "KGX JSONL graph package for Genetics KP distributed via the NCATS Translator release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6; source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
-    schema1:url <https://kgx-storage.rtx.ai/releases/geneticskp/latest/> .
 
 kgr:aopwiki-rdf.ttl a schema1:GraphProduct ;
     rdfs:label "AOP-Wiki RDF Turtle Dataset" ;
@@ -46998,6 +47302,11 @@ kgr:tcrd.documentation a schema1:DocumentationProduct ;
     dcterms:description "Comprehensive documentation describing TCRD data sources, schema structure, and usage guidelines" ;
     schema1:url <https://unmtid-dbs.net/download/TCRD/> .
 
+kgr:translator.geneticskp.graph a schema1:GraphProduct ;
+    rdfs:label "Translator Genetics KP KGX Graph" ;
+    dcterms:description "KGX JSONL graph package for Genetics KP distributed via the NCATS Translator release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6; source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
+    schema1:url <https://kgx-storage.rtx.ai/releases/geneticskp/latest/> .
+
 kgr:wildlifekn.graph a schema1:GraphProduct ;
     rdfs:label "Wildlife-KN Knowledge Graph" ;
     dcterms:description "The Wildlife-KN knowledge graph, an integrative RDF network of managed species and their habitats, environmental factors, and climate context, built to support wildlife management under climate change. It is served as Linked Data through the Wildlife-KN SPARQL and Triple Pattern Fragments endpoints." ;
@@ -47066,21 +47375,6 @@ kgr:iid.mouse_annotated_ppis a schema1:GraphProduct ;
     rdfs:label "IID Mouse Annotated PPIs" ;
     dcterms:description "IID annotated mouse protein-protein interaction download." ;
     schema1:url <https://iid.ophid.utoronto.ca/static/download/mouse_annotated_PPIs.txt.gz> .
-
-kgr:kg-jensenlab-diseases.edges.kgx a schema1:GraphProduct ;
-    rdfs:label "DISEASES KGX edges" ;
-    dcterms:description "KGX edges file for JensenLab DISEASES KG" ;
-    schema1:url <https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl> .
-
-kgr:kg-jensenlab-diseases.edges.trapi a schema1:GraphProduct ;
-    rdfs:label "DISEASES TRAPI edges" ;
-    dcterms:description "TRAPI edges file for JensenLab DISEASES KG" ;
-    schema1:url <https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl> .
-
-kgr:kg-jensenlab-diseases.nodes.kgx a schema1:GraphProduct ;
-    rdfs:label "DISEASES KGX nodes" ;
-    dcterms:description "KGX nodes file for JensenLab DISEASES KG" ;
-    schema1:url <https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl> .
 
 kgr:lncrnalyzr.graph a schema1:GraphProduct ;
     rdfs:label "lncRNAlyzr Knowledge Graph" ;
@@ -47206,6 +47500,21 @@ kgr:icees-kg.graph a schema1:GraphProduct ;
     dcterms:description "KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/> .
 
+kgr:kg-jensenlab-diseases.edges.kgx a schema1:GraphProduct ;
+    rdfs:label "DISEASES KGX edges" ;
+    dcterms:description "KGX edges file for JensenLab DISEASES KG" ;
+    schema1:url <https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl> .
+
+kgr:kg-jensenlab-diseases.edges.trapi a schema1:GraphProduct ;
+    rdfs:label "DISEASES TRAPI edges" ;
+    dcterms:description "TRAPI edges file for JensenLab DISEASES KG" ;
+    schema1:url <https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl> .
+
+kgr:kg-jensenlab-diseases.nodes.kgx a schema1:GraphProduct ;
+    rdfs:label "DISEASES KGX nodes" ;
+    dcterms:description "KGX nodes file for JensenLab DISEASES KG" ;
+    schema1:url <https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl> .
+
 kgr:medgen.mgconso a schema1:Product ;
     rdfs:label "MGCONSO (Concept Names)" ;
     dcterms:description "Rich Release Format (RRF) file containing concept names and source identifiers with gzip compression" ;
@@ -47235,6 +47544,16 @@ kgr:aop-db.data a schema1:Product ;
     rdfs:label "AOP-DB Data" ;
     dcterms:description "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information." ;
     schema1:url <https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2> .
+
+kgr:bioregistry.registry.json a schema1:Product ;
+    rdfs:label "Bioregistry JSON Export" ;
+    dcterms:description "Full Bioregistry export as JSON, with every prefix record including names, synonyms, URI formats, local identifier patterns, providers and mappings to the prefixes of other registries." ;
+    schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json> .
+
+kgr:bioregistry.sssom a schema1:MappingProduct ;
+    rdfs:label "Bioregistry SSSOM Mappings" ;
+    dcterms:description "SSSOM mappings between Bioregistry prefixes and the equivalent prefixes in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology registry, Cellosaurus, UniProt and NCBI." ;
+    schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv> .
 
 kgr:cfde-gse.genesets a schema1:Product ;
     rdfs:label "CFDE Gene Set Collections" ;
@@ -47689,7 +48008,9 @@ kgr:ncbi a schema1:DataSource,
     dcterms:identifier "ncbi" ;
     dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
     dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:metatraits.gtdb2ncbi,
+    schema1:hasPart kgr:bioregistry.registry.json,
+        kgr:bioregistry.sssom,
+        kgr:metatraits.gtdb2ncbi,
         kgr:metatraits.ncbi.family-summary,
         kgr:metatraits.ncbi.genus-summary,
         kgr:metatraits.ncbi.species-summary,
