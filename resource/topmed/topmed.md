@@ -189,6 +189,102 @@ products:
       - relation_type: prov:hadPrimarySource
         source: zfin
     product_url: https://www.dbnsfp.org/license
+  - category: GraphicalInterface
+    description: BioData Catalyst portal, the entry point to the ecosystem's data catalog, data
+      access instructions, analysis platforms and training resources.
+    format: http
+    id: biodata-catalyst.portal
+    name: BioData Catalyst Portal
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://biodatacatalyst.nhlbi.nih.gov/
+  - category: GraphicalInterface
+    description: BDC PIC-SURE (Patient Information Commons Standard Unification of Research
+      Elements) web interface for searching, filtering and exporting harmonized clinical and
+      genomic variables across hosted studies. Open-access studies (such as 1000 Genomes and
+      BioLINCC training data) need no authorization; authorized access to controlled studies
+      requires an approved dbGaP data access request.
+    format: http
+    id: biodata-catalyst.picsure
+    name: BDC PIC-SURE
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+      - relation_type: prov:hadPrimarySource
+        source: 1000genomes
+    product_url: https://picsure.biodatacatalyst.nhlbi.nih.gov/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
+  - category: ProgrammingInterface
+    description: PIC-SURE REST API for programmatic query and export of BDC study variables,
+      used through the PicSureClient and PicSureBdcAdapter Python packages (and an R client)
+      with a personal access token from the PIC-SURE interface.
+    format: http
+    id: biodata-catalyst.picsure-api
+    is_public: false
+    name: BDC PIC-SURE API
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://picsure.biodatacatalyst.nhlbi.nih.gov/picsure/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
+    warnings:
+      - API endpoint returned HTTP 401 Unauthorized for anonymous requests when checked on 2026-10-05;
+        a PIC-SURE access token is required.
+  - category: GraphicalInterface
+    description: BDC Gen3 data commons for browsing study metadata, checking authorized data
+      access and exporting controlled-access TOPMed and other NHLBI study files to the analysis
+      workspaces.
+    format: http
+    id: biodata-catalyst.gen3
+    name: BDC Gen3 Data Commons
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://gen3.biodatacatalyst.nhlbi.nih.gov/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
+  - category: ProcessProduct
+    description: TOPMed Imputation Server, a web service that imputes missing genotypes in user-submitted
+      GWAS data using the TOPMed haplotype reference panel.
+    format: http
+    id: biodata-catalyst.imputation-server
+    name: TOPMed Imputation Server
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://imputation.biodatacatalyst.nhlbi.nih.gov/
+  - category: GraphicalInterface
+    description: Cloud analysis workspaces available within BDC, the Seven Bridges BDC platform
+      (https://platform.sb.biodatacatalyst.nhlbi.nih.gov/) and BDC Terra, where authorized users
+      run workflows, notebooks and genomic tools on hosted data. Both require login.
+    format: http
+    id: biodata-catalyst.analysis-platforms
+    name: BDC Analysis Platforms (Terra and Seven Bridges)
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://terra.biodatacatalyst.nhlbi.nih.gov/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
 publications:
 - authors:
   - Daniel Taliun

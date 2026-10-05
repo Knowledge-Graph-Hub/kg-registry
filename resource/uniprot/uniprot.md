@@ -5827,6 +5827,8 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
@@ -5857,6 +5859,8 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: MappingProduct
