@@ -1770,6 +1770,33 @@ entries:
     source_path: resource/dbgap/dbgap.md
     status: valid
     warnings: []
+  resource/dbnsfp/dbnsfp.md#publication[0]#DOI:10.1186/s13073-020-00803-9:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: dedd1a8677cec2df80ef865c0aa6a0d41e06c4fd422c4986d7730d6b22c062c3
+    publication_index: 0
+    reference_id: DOI:10.1186/s13073-020-00803-9
+    source_path: resource/dbnsfp/dbnsfp.md
+    status: valid
+    warnings: []
+  resource/dbnsfp/dbnsfp.md#publication[1]#DOI:10.1002/humu.21517:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 6275a4e2c793656b25edc03b04625644e1d00d8ecffa120ddaac74387024d7c7
+    publication_index: 1
+    reference_id: DOI:10.1002/humu.21517
+    source_path: resource/dbnsfp/dbnsfp.md
+    status: valid
+    warnings: []
+  resource/dbnsfp/dbnsfp.md#publication[2]#DOI:10.1093/nar/gku1206:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 65830706893ff42725bc344b1404fa51f9ce41db9feedc5cf1722e3795769b3f
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gku1206
+    source_path: resource/dbnsfp/dbnsfp.md
+    status: valid
+    warnings: []
   resource/dbpedia/dbpedia.md#publication[0]#DOI:10.1007/978-3-540-76298-0_52:
     checked_at: '2026-08-06T18:17:00Z'
     errors: []
@@ -2964,6 +2991,15 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkx1089
     source_path: resource/foodb/foodb.md
+    status: valid
+    warnings: []
+  resource/foodkg/foodkg.md#publication[0]#DOI:10.1007/978-3-030-30796-7_10:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: df8a27e3936dc8983a141bb4192feaad3bf719451b2f3cfe510ba07e56b2f042
+    publication_index: 0
+    reference_id: DOI:10.1007/978-3-030-30796-7_10
+    source_path: resource/foodkg/foodkg.md
     status: valid
     warnings: []
   resource/foodon/foodon.md#publication[0]#PMID:31304272:
@@ -7149,6 +7185,15 @@ entries:
     source_path: resource/preppi/preppi.md
     status: valid
     warnings: []
+  resource/pride-cv/pride-cv.md#publication[0]#DOI:10.1093/nar/gkae1011:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 76967eb946c8d32f3aaf46e934c803b6b93bfccc4158e1beaad826dfa65eb070
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1011
+    source_path: resource/pride-cv/pride-cv.md
+    status: valid
+    warnings: []
   resource/prism/prism.md#publication[0]#DOI:10.1038/s43018-019-0018-6:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -7256,6 +7301,33 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41587-019-0298-5
     source_path: resource/proteomehd/proteomehd.md
+    status: valid
+    warnings: []
+  resource/proteomexchange/proteomexchange.md#publication[0]#DOI:10.1093/nar/gkaf1146:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: daf2d5f00ba6de8893b206624df2893d0c2fb058115df3c5d856946ba2541c73
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1146
+    source_path: resource/proteomexchange/proteomexchange.md
+    status: valid
+    warnings: []
+  resource/proteomexchange/proteomexchange.md#publication[1]#DOI:10.1093/nar/gkac1040:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 409b64bba8430848e8d731f50479209e05c5de4b19fd12824cd229ba5bef8487
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkac1040
+    source_path: resource/proteomexchange/proteomexchange.md
+    status: valid
+    warnings: []
+  resource/proteomexchange/proteomexchange.md#publication[2]#DOI:10.1093/nar/gkw936:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 0eed185d334379a78f7e335812bcccce329028e4a0bdfe7daf821597a5966efd
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkw936
+    source_path: resource/proteomexchange/proteomexchange.md
     status: valid
     warnings: []
   resource/proteomicsdb/proteomicsdb.md#publication[0]#DOI:10.1093/nar/gkx1029:
