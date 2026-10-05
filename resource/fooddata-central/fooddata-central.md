@@ -292,6 +292,12 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
   - relation_type: prov:hadPrimarySource
     source: mydisease
   - relation_type: prov:hadPrimarySource
