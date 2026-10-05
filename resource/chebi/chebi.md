@@ -5233,6 +5233,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: MappingProduct
+  description: JSON mapping from MetaboLights studies to the metabolites (ChEBI identifiers)
+    reported in them, last updated in October 2020.
+  format: json
+  id: metabolights.study-metabolites
+  name: MetaboLights Study to Metabolite Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json
+- category: Product
+  description: JSON list of the ChEBI identifiers of metabolites in the MetaboLights
+    reference layer, last updated in October 2020.
+  format: json
+  id: metabolights.metabolites
+  name: MetaboLights Reference Metabolite List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/metabolites_complete.json
 publications:
 - authors:
   - Adnan Malik
