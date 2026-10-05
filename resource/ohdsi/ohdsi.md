@@ -171,6 +171,60 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/OHDSI/CohortDiagnostics
     repository: https://github.com/OHDSI/CohortDiagnostics
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+        version: 4.2.1
+    description: KGX JSONL nodes and edges files for the OHD@Carolina Automat graph (build f627ebbefd242454,
+      source version 2024-11-18, published 2025-10-06), with 27,356 nodes and 22,732,570 edges.
+      Edges use biolink:positively_correlated_with (22,352,823) and biolink:negatively_correlated_with
+      (379,747).
+    edge_count: 22732570
+    format: kgx-jsonl
+    id: ohd-carolina.graph
+    infores_id: automat-openhealthdata-carolina
+    name: OHD@Carolina Automat KGX Graph
+    node_categories:
+      - biolink:Disease
+      - biolink:PhenotypicFeature
+      - biolink:Drug
+      - biolink:SmallMolecule
+      - biolink:MolecularMixture
+      - biolink:ChemicalEntity
+      - biolink:Protein
+      - biolink:OrganismTaxon
+      - biolink:ComplexMolecularMixture
+      - biolink:Gene
+      - biolink:InformationContentEntity
+    node_count: 27356
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: ohd-carolina
+      - relation_type: prov:wasInfluencedBy
+        source: ohdsi
+    predicates:
+      - biolink:positively_correlated_with
+      - biolink:negatively_correlated_with
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/
+    versions:
+      - f627ebbefd242454
+  - category: Product
+    compression: zip
+    description: Source edge table (unc_omop_2018_2022_kg.csv, about 2 GB zipped) of concept
+      pair associations from the UNC Health OMOP cohort, with chi-squared p-values, log odds
+      ratios, scores and sample sizes, as ingested by the ORION OHD parser (build 2024-11-18).
+    format: csv
+    id: ohd-carolina.source-edges
+    infores_id: openhealthdata-carolina
+    name: OHD@Carolina Source Edge Table
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: ohd-carolina
+      - relation_type: prov:wasInfluencedBy
+        source: ohdsi
+    product_url: https://stars.renci.org/var/data_services/ohd/unc_omop_2018_2022_kg.zip
+    versions:
+      - '2024-11-18'
 synonyms:
   - Observational Health Data Sciences and Informatics
 taxon:

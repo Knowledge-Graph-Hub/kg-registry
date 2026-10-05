@@ -165,6 +165,8 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: ProcessProduct
   description: Source code and templates implementing Curated Query Service inference
@@ -203,6 +205,20 @@ products:
     was unreachable; ci, test and RENCI dev hosts returned HTTP 404) and the repository
     had no commits since 2024-11-15, although the ARS production configuration still
     lists ara-cqs as an active agent.
+- category: ProgrammingInterface
+  description: Production TRAPI 1.5 endpoint of BioThings Explorer for federated multi-hop
+    queries over SmartAPI-registered biomedical APIs, with synchronous, asynchronous
+    and pathfinder query support.
+  format: http
+  id: biothings-explorer.trapi
+  is_public: true
+  name: BioThings Explorer TRAPI API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biothings-explorer
+  - relation_type: prov:wasInformedBy
+    source: service-kp
+  product_url: https://bte.transltr.io/v1
 publications:
 - authors:
   - Sebastien Lelong

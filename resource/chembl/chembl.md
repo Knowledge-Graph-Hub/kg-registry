@@ -2493,6 +2493,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
@@ -2537,6 +2539,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
@@ -2582,6 +2586,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: Product
   description: chembl.compound OBO
@@ -2807,6 +2813,8 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 publications:
 - authors:

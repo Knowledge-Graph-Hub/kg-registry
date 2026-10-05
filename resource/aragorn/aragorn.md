@@ -69,6 +69,8 @@ products:
     source: genetics-kp
   - relation_type: prov:wasInformedBy
     source: connections-hypothesis-kp
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
   product_url: https://ars-prod.transltr.io/
 - category: ProgrammingInterface
   connection_url: https://ars-prod.transltr.io/ars/api
@@ -100,6 +102,8 @@ products:
     source: genetics-kp
   - relation_type: prov:wasInformedBy
     source: connections-hypothesis-kp
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
   product_url: https://ars-prod.transltr.io/ars/api/
 - category: ProcessProduct
   description: Source code and templates implementing Curated Query Service inference
@@ -138,6 +142,22 @@ products:
     was unreachable; ci, test and RENCI dev hosts returned HTTP 404) and the repository
     had no commits since 2024-11-15, although the ARS production configuration still
     lists ara-cqs as an active agent.
+- category: ProgrammingInterface
+  description: TRAPI query endpoint for the ARAGORN ARA implementation within Shepherd (/query
+    and /asyncquery), which answers queries with lookup, Omnicorp literature co-occurrence
+    support and scoring operations over knowledge from Retriever.
+  format: http
+  id: shepherd.aragorn.api
+  infores_id: shepherd-aragorn
+  name: Shepherd ARAGORN TRAPI API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: shepherd
+  - relation_type: prov:wasInfluencedBy
+    source: aragorn
+  - relation_type: prov:wasDerivedFrom
+    source: retriever
+  product_url: https://shepherd.transltr.io/aragorn/docs
 repository: https://github.com/ranking-agent/aragorn
 synonyms:
 - ARAGORN

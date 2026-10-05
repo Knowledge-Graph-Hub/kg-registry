@@ -386,6 +386,8 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 repository: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
 synonyms:
