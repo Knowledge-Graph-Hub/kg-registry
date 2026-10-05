@@ -17,10 +17,10 @@ creation_date: '2026-10-04T00:00:00Z'
 description: The Bioregistry is an open, community-curated registry of prefixes, CURIE
   patterns, URI formats and resolution rules for identifier resources in biomedicine
   and the life and natural sciences. It imports and aligns metadata from other registries,
-  such as identifiers.org, the OBO Foundry, BioPortal, OLS, FAIRsharing, re3data, Wikidata
-  and N2T, and adds manual curation of its own. It also resolves CURIEs to provider
-  URLs and publishes the registry, its cross-registry mappings and derived prefix maps
-  as open data. As of 2026-10-04 the registry export held 2,856 prefixes.
+  such as identifiers.org, the OBO Foundry, BioPortal, OLS, FAIRsharing, re3data,
+  Wikidata and N2T, and adds manual curation of its own. It also resolves CURIEs to
+  provider URLs and publishes the registry, its cross-registry mappings and derived
+  prefix maps as open data. As of 2026-10-04 the registry export held 2,856 prefixes.
 domains:
 - information technology
 - metadata
@@ -63,6 +63,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: Product
   description: Full Bioregistry export as YAML, with the same content as the JSON
@@ -73,6 +74,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bioregistry
+  product_file_size: 762017
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.yml
 - category: Product
   description: Flattened tabular Bioregistry export with one row per prefix.
@@ -82,6 +84,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bioregistry
+  product_file_size: 411960
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.tsv
 - category: MappingProduct
   description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
@@ -111,6 +114,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: Product
   description: RDF export of the Bioregistry in Turtle, describing prefixes, providers,
@@ -121,6 +125,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bioregistry
+  product_file_size: 786214
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.ttl
 - category: Product
   description: RDF export of the Bioregistry in JSON-LD.
@@ -130,6 +135,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bioregistry
+  product_file_size: 1117078
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.jsonld
 - category: Product
   description: JSON-LD context mapping each Bioregistry prefix to its preferred URI
@@ -141,6 +147,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: bioregistry
+  product_file_size: 40691
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/contexts/bioregistry.context.jsonld
 - category: GraphicalInterface
   description: Bioregistry web site for searching and browsing prefixes, registries

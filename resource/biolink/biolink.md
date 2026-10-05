@@ -474,6 +474,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
   description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
@@ -503,6 +504,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 publications:
 - authors:

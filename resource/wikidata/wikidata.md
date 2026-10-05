@@ -397,6 +397,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: PubChem substance information in ASN.1 format
@@ -580,6 +582,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
   description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
@@ -609,6 +612,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 repository: https://www.mediawiki.org/wiki/Wikibase
 synonyms:

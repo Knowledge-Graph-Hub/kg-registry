@@ -90,6 +90,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: node-normalizer
+  product_file_size: 4515
   product_url: https://github.com/NCATSTranslator/NodeNormalization/blob/master/documentation/API.md
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG

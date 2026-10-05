@@ -42,6 +42,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obofoundry
+  product_file_size: 76313
   product_url: https://obofoundry.org/registry/ontologies.yml
 - category: Product
   description: OBO registry ontology metadata serialized as JSON-LD.
@@ -54,6 +55,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obofoundry
+  product_file_size: 85640
   product_url: https://obofoundry.org/registry/ontologies.jsonld
 - category: Product
   description: OBO registry ontology metadata serialized as RDF Turtle.
@@ -66,6 +68,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: obofoundry
+  product_file_size: 537368
   product_url: https://obofoundry.org/registry/ontologies.ttl
 - category: GraphicalInterface
   description: OBO Foundry website with a browsable table of registered ontologies,
@@ -157,6 +160,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
   description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
@@ -186,6 +190,7 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: Product
   compression: targz
