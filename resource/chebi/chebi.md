@@ -3829,12 +3829,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX Distribution of KG-IDG
   format: kgx
@@ -3878,6 +3880,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -5229,12 +5233,36 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: MappingProduct
+  description: JSON mapping from MetaboLights studies to the metabolites (ChEBI identifiers)
+    reported in them, last updated in October 2020.
+  format: json
+  id: metabolights.study-metabolites
+  name: MetaboLights Study to Metabolite Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
-    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
-    object for one clique, listing its identifiers with labels, descriptions and taxa,
-    plus the preferred name and information content. Files carry a .txt extension;
-    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
+  description: JSON list of the ChEBI identifiers of metabolites in the MetaboLights
+    reference layer, last updated in October 2020.
+  format: json
+  id: metabolights.metabolites
+  name: MetaboLights Reference Metabolite List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  product_url: https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/metabolites_complete.json
+- category: Product
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
+    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
+    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
+    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
+    GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22

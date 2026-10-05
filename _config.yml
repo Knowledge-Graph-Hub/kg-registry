@@ -1549,6 +1549,8 @@ resources:
       source: ctkp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
     versions:
     - '2026_03_27'
@@ -5399,6 +5401,8 @@ resources:
       source: alliance
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
     versions:
     - '2026_03_06'
@@ -5480,6 +5484,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -8297,6 +8303,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
     description: Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki
@@ -10689,6 +10697,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -14988,6 +14998,8 @@ resources:
       source: bgee
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
     versions:
     - '2026_03_06'
@@ -15069,6 +15081,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -17480,6 +17494,8 @@ resources:
       source: bindingdb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
     versions:
     - '2026_03_06'
@@ -17561,6 +17577,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -19357,6 +19375,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
 - activity_status: active
   category: KnowledgeGraph
@@ -19497,6 +19517,8 @@ resources:
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
 - activity_status: active
@@ -25771,6 +25793,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -27611,6 +27637,66 @@ resources:
       source: biolink
     product_file_size: 32525
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOLINK.tar.gz
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
   publications:
   - authors:
     - Unni DR
@@ -28500,6 +28586,8 @@ resources:
       source: bioportal
     - relation_type: prov:hadPrimarySource
       source: umls
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
     product_url: https://bioportal.bioontology.org/
   - category: ProgrammingInterface
     description: REST API for ontology concepts, search, mappings, metrics, and downloads.
@@ -28512,6 +28600,8 @@ resources:
       source: bioportal
     - relation_type: prov:hadPrimarySource
       source: umls
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
     product_url: https://data.bioontology.org/
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
@@ -28722,6 +28812,66 @@ resources:
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: bioportal
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
   publications:
   - authors:
     - Jennifer Vendetti
@@ -28757,6 +28907,229 @@ resources:
   warnings:
   - Some ontologies have distinct licenses; review individual ontology license metadata
     before reuse.
+- activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: github
+      value: cthoyt
+    label: Charles Tapley Hoyt
+    orcid: 0000-0003-4423-4370
+  - category: Organization
+    contact_details:
+    - contact_type: github
+      value: biopragmatics
+    label: Biopragmatics
+  creation_date: '2026-10-04T00:00:00Z'
+  description: The Bioregistry is an open, community-curated registry of prefixes,
+    CURIE patterns, URI formats and resolution rules for identifier resources in biomedicine
+    and the life and natural sciences. It imports and aligns metadata from other registries,
+    such as identifiers.org, the OBO Foundry, BioPortal, OLS, FAIRsharing, re3data,
+    Wikidata and N2T, and adds manual curation of its own. It also resolves CURIEs
+    to provider URLs and publishes the registry, its cross-registry mappings and derived
+    prefix maps as open data. As of 2026-10-04 the registry export held 2,856 prefixes.
+  domains:
+  - information technology
+  - metadata
+  - biomedical
+  fairsharing_id: FAIRsharing.250a8c
+  homepage_url: https://bioregistry.io/
+  id: bioregistry
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: Bioregistry
+  products:
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: Product
+    description: Full Bioregistry export as YAML, with the same content as the JSON
+      export.
+    format: yaml
+    id: bioregistry.registry.yml
+    name: Bioregistry YAML Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_file_size: 762017
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.yml
+  - category: Product
+    description: Flattened tabular Bioregistry export with one row per prefix.
+    format: tsv
+    id: bioregistry.registry.tsv
+    name: Bioregistry TSV Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_file_size: 411960
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.tsv
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+  - category: Product
+    description: RDF export of the Bioregistry in Turtle, describing prefixes, providers,
+      registries and collections with the Bioregistry RDF schema.
+    format: ttl
+    id: bioregistry.rdf.ttl
+    name: Bioregistry RDF (Turtle)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_file_size: 786214
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.ttl
+  - category: Product
+    description: RDF export of the Bioregistry in JSON-LD.
+    format: jsonld
+    id: bioregistry.rdf.jsonld
+    name: Bioregistry RDF (JSON-LD)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_file_size: 1117078
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.jsonld
+  - category: Product
+    description: JSON-LD context mapping each Bioregistry prefix to its preferred
+      URI prefix, for expanding and contracting CURIEs. Other contexts (OBO, semantic
+      web, extended prefix maps) are in the same exports directory.
+    format: jsonld
+    id: bioregistry.context.jsonld
+    name: Bioregistry JSON-LD Context
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_file_size: 40691
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/contexts/bioregistry.context.jsonld
+  - category: GraphicalInterface
+    description: Bioregistry web site for searching and browsing prefixes, registries
+      and collections and for resolving CURIEs to provider URLs.
+    format: http
+    id: bioregistry.portal
+    name: Bioregistry Web Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_url: https://bioregistry.io/
+  - category: ProgrammingInterface
+    description: REST API for querying Bioregistry records, metaregistry entries,
+      collections and CURIE resolution, documented with OpenAPI.
+    format: http
+    id: bioregistry.api
+    name: Bioregistry REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_url: https://bioregistry.io/apidocs
+  - category: Product
+    description: Python package for loading and querying the Bioregistry, normalizing
+      prefixes and CURIEs, and generating prefix maps. Released under the MIT License.
+    format: python
+    id: bioregistry.python
+    license:
+      id: https://opensource.org/licenses/MIT
+      label: MIT
+    name: Bioregistry Python Package
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_url: https://pypi.org/project/bioregistry/
+    repository: https://github.com/biopragmatics/bioregistry
+  - category: DocumentationProduct
+    description: Bioregistry documentation, including the Python package reference
+      and curation guidance.
+    format: http
+    id: bioregistry.docs
+    name: Bioregistry Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    product_url: https://bioregistry.readthedocs.io/
+  publications:
+  - authors:
+    - Charles Tapley Hoyt
+    - Meghan Balk
+    - Tiffany J. Callahan
+    - Daniel Domingo-Fernández
+    - Melissa A. Haendel
+    - Harshad B. Hegde
+    - Daniel S. Himmelstein
+    - Klas Karis
+    - John Kunze
+    - Tiago Lubiana
+    - Nicolas Matentzoglu
+    - Julie McMurry
+    - Sierra Moxon
+    - Christopher J. Mungall
+    - Adriano Rutz
+    - Deepak R. Unni
+    - Egon Willighagen
+    - Donald Winston
+    - Benjamin M. Gyori
+    doi: 10.1038/s41597-022-01807-3
+    id: doi:10.1038/s41597-022-01807-3
+    journal: Scientific Data
+    preferred: true
+    title: Unifying the identification of biomedical entities with the Bioregistry
+    year: '2022'
+  repository: https://github.com/biopragmatics/bioregistry
 - activity_status: active
   category: DataSource
   contacts:
@@ -29213,6 +29586,8 @@ resources:
     product_url: https://biothings.io/specs/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 204 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: https://biothings.ncats.io/gtrx/query
@@ -35846,6 +36221,66 @@ resources:
       source: ncit
     product_file_size: 957555
     product_url: https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
   publications:
   - authors:
     - Bairoch A
@@ -35894,6 +36329,8 @@ resources:
     product_url: https://www.cellphonedb.org/downloads
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: Python package that interrogates single-cell transcriptomics data
@@ -41487,6 +41924,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -41530,6 +41969,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -43477,6 +43918,8 @@ resources:
       source: chembl
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
     versions:
     - '2026_03_06'
@@ -43884,6 +44327,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -44579,6 +45024,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -44804,6 +45251,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   - category: GraphProduct
     description: Integrated rare-disease knowledge graph produced by the RD-Clust
@@ -52173,6 +52622,8 @@ resources:
       source: genetics-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
     versions:
     - '2026_03_27'
@@ -53258,6 +53709,8 @@ resources:
       source: ctkp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
     versions:
     - '2026_03_27'
@@ -54153,6 +54606,8 @@ resources:
       source: nihreporter
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/clinicalstudies
   publications:
   - authors:
@@ -56654,6 +57109,8 @@ resources:
       source: genetics-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
     versions:
     - '2026_03_27'
@@ -61190,6 +61647,8 @@ resources:
       source: cohd
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
     versions:
     - '2026_03_12'
@@ -61271,6 +61730,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -66555,6 +67016,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -66579,6 +67042,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -66603,6 +67068,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: MappingProduct
@@ -70835,6 +71302,8 @@ resources:
       source: ctd
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
     versions:
     - '2026_03_27'
@@ -71212,6 +71681,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -74171,6 +74642,8 @@ resources:
       source: ctkp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
     versions:
     - '2026_03_27'
@@ -74276,6 +74749,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -76414,6 +76889,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
+      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -82511,6 +82988,8 @@ resources:
       source: dgidb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
     versions:
     - '2026_03_06'
@@ -82592,6 +83071,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -87092,6 +87573,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -88343,6 +88828,8 @@ resources:
       source: diseases
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
     versions:
     - '2026_03_19'
@@ -89119,6 +89606,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -90185,6 +90674,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -90209,6 +90700,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -90233,6 +90726,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: GraphProduct
@@ -95542,6 +96037,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -95566,6 +96063,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -95590,6 +96089,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: GraphProduct
@@ -96815,6 +97316,8 @@ resources:
       source: drug-approvals-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
     versions:
     - '2026_03_19'
@@ -96896,6 +97399,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -101635,6 +102140,8 @@ resources:
       source: drug-approvals-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
     versions:
     - '2026_03_19'
@@ -101675,6 +102182,8 @@ resources:
       source: drugcentral
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
     versions:
     - '2026_03_19'
@@ -101756,6 +102265,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -102691,6 +103202,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -102734,6 +103247,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -103942,6 +104457,8 @@ resources:
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -115990,6 +116507,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -116014,6 +116533,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -116038,6 +116559,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: GraphProduct
@@ -124762,6 +125285,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: FDA Orange Book preface describing publication structure, therapeutic
       equivalence codes, and interpretation of Orange Book listings.
@@ -124774,6 +125299,8 @@ resources:
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: Product
     description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
@@ -133728,6 +134255,8 @@ resources:
       source: genetics-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
     versions:
     - '2026_03_27'
@@ -135258,6 +135787,8 @@ resources:
       source: gene2phenotype
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
     versions:
     - '2026_03_27'
@@ -135339,6 +135870,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -135599,6 +136132,8 @@ resources:
       source: genetics-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
     versions:
     - '2026_03_27'
@@ -137524,6 +138059,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -137549,6 +138086,8 @@ resources:
       source: genetics-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
     versions:
     - '2026_03_27'
@@ -143620,6 +144159,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   - category: GraphicalInterface
     description: Web portal for searching and browsing integrated omics dataset metadata
@@ -150217,6 +150758,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -150260,6 +150803,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -151115,6 +151660,66 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubmed
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
   publications:
   - authors:
     - Ashburner M
@@ -151273,6 +151878,8 @@ resources:
       source: go-cam
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
     versions:
     - '2026_03_06'
@@ -151354,6 +151961,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -151576,6 +152185,8 @@ resources:
       source: goa
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
     versions:
     - '2026_03_06'
@@ -151669,6 +152280,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -155625,6 +156238,8 @@ resources:
       source: gtopdb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
     versions:
     - '2026_03_19'
@@ -155706,6 +156321,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -157410,6 +158027,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: TRAPI endpoint for the Service Provider team, served by BioThings
       Explorer, querying the BioThings and other APIs registered to the team in SmartAPI.
@@ -157595,6 +158214,11 @@ resources:
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
       Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: Product
     description: Gut microbe associations with disorders and interventions derived
       from re-annotated raw sequencing data in gutMDisorder v2.0, as an Excel workbook
@@ -157607,6 +158231,11 @@ resources:
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
@@ -172298,6 +172927,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -173890,6 +174521,8 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
     versions:
     - '2026_03_06'
@@ -175685,6 +176318,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -175728,6 +176363,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -178022,6 +178659,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -184290,6 +184929,8 @@ resources:
       source: icees-kg
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
     versions:
     - '2026_03_12'
@@ -184371,6 +185012,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -185418,6 +186061,80 @@ resources:
   repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
   taxon:
   - NCBITaxon:9606
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://contact.iedison.gov/
+    label: National Institute of Standards and Technology (NIST) Technology Partnerships
+      Office
+  creation_date: '2026-10-04T00:00:00Z'
+  description: iEdison (Interagency Edison) is the U.S. federal online reporting system
+    that recipients of federal funding agreements use to report subject inventions,
+    patents and utilization to the funding agency, as required by the Bayh-Dole Act
+    and its implementing regulations. NIH built the original Edison system in 1995
+    and opened it to other agencies in 1997; NIST took over operation in 2022. Many
+    agencies, including NIH, DOD components, EPA, USDA and NNSA, accept reports through
+    it. Records are not public, but NIH RePORTER uses iEdison to link patents to NIH
+    grants.
+  domains:
+  - research funding
+  homepage_url: https://www.nist.gov/iedison
+  id: iedison
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  name: iEdison
+  products:
+  - category: GraphicalInterface
+    description: Web system, requiring an account, in which funding recipients and
+      federal agencies create and manage invention, patent and utilization reports.
+    format: http
+    id: iedison.portal
+    name: iEdison Web System
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: iedison
+    product_url: https://iedison.nist.gov/
+  - category: ProgrammingInterface
+    description: RESTful JSON web services for creating, updating and querying invention,
+      patent and utilization reports. Access is limited to registered agencies and
+      awardee organizations with certificate-based authentication.
+    format: http
+    id: iedison.api
+    name: iEdison API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: iedison
+    product_url: https://iedison.nist.gov/iedison/swagger.json
+    repository: https://github.com/usnistgov/iEdison-API-Documentation
+  - category: DocumentationProduct
+    description: Documentation for the current version of the iEdison invention, patent
+      and utilization API.
+    format: http
+    id: iedison.api-docs
+    name: iEdison API Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: iedison
+    product_url: https://pages.nist.gov/iEdison-API-Documentation/
+  - category: Product
+    description: Database of patents linked to NIH-funded research projects
+    format: csv
+    id: nihreporter.patents
+    name: NIH-Funded Project Patents
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    - relation_type: prov:wasDerivedFrom
+      source: iedison
+    product_url: https://reporter.nih.gov/exporter/patents
+  synonyms:
+  - Interagency Edison
+  - Edison
 - activity_status: active
   category: DataSource
   contacts:
@@ -187478,6 +188195,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
       to URL'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
@@ -190707,6 +191426,8 @@ resources:
       source: intact
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
     versions:
     - '2026_03_06'
@@ -191791,6 +192512,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -192131,6 +192854,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -193323,6 +194050,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Robokop KG (Automat)
     format: kgx-jsonl
@@ -201849,6 +202578,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: OWL release of neo
     format: owl
@@ -202173,6 +202904,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
+      when accessing file'
   - category: ProcessProduct
     description: Full ENPKG workflow repository for generating experimental natural
       products knowledge graphs from metabolomics datasets.
@@ -202435,6 +203168,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -202457,7 +203192,7 @@ resources:
   evaluation_page: resource/kg-jensenlab-diseases/kg-jensenlab-diseases_eval_automated.html
   homepage_url: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
   id: kg-jensenlab-diseases
-  last_modified_date: '2026-09-23T00:00:00Z'
+  last_modified_date: '2026-10-04T00:00:00Z'
   layout: resource_detail
   license:
     display_note: 'No license is declared for this resource. This is the most restrictive
@@ -202505,6 +203240,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -202529,6 +203266,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -202553,6 +203292,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: GraphProduct
@@ -202883,7 +203624,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-04T13:13:38Z'
+  last_modified_date: '2026-10-05T14:54:05Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -211552,6 +212293,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
+      when accessing file'
   publications:
   - authors:
     - Adriano Rutz
@@ -219338,6 +220081,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -219362,6 +220107,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -219386,6 +220133,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: GraphProduct
@@ -221877,6 +222626,8 @@ resources:
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
@@ -227963,6 +228714,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -231290,6 +232045,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -231331,6 +232089,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -231372,6 +232133,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -231413,6 +232177,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -231454,6 +232221,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -236720,6 +237490,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
+      when accessing file'
   - category: ProcessProduct
     description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
       and contraindications data and processing code
@@ -237479,6 +238251,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -237522,6 +238296,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -245678,6 +246454,66 @@ resources:
       source: ncbi
     product_file_size: 191
     product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - activity_status: active
   category: DataSource
   contacts:
@@ -246824,6 +247660,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -247918,6 +248756,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -248594,6 +249434,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -254393,6 +255235,204 @@ resources:
   - category: Organization
     contact_details:
     - contact_type: url
+      value: https://www.era.nih.gov/need-help
+    label: NIH Office of Extramural Research, eRA Service Desk
+  creation_date: '2026-10-04T00:00:00Z'
+  description: eRA (electronic Research Administration) is the NIH system for managing
+    the grants lifecycle, from application receipt and peer review through award,
+    post-award reporting and closeout, for NIH and other federal agencies. It combines
+    IMPAC II, the internal system of record for NIH grant applications and awards
+    since 2002, with eRA Commons, the external interface for applicants, recipients
+    and reviewers. eRA itself is access-controlled, but its data feed public resources
+    such as NIH RePORTER and the ExPORTER bulk files.
+  domains:
+  - research funding
+  - biomedical
+  homepage_url: https://www.era.nih.gov/
+  id: nih-era
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.usa.gov/government-works
+    label: U.S. Government Work (public domain)
+  name: NIH eRA (electronic Research Administration)
+  products:
+  - category: GraphicalInterface
+    description: eRA Commons, the login-protected web interface where applicants,
+      grant recipients, signing officials and reviewers track applications, view review
+      outcomes and notices of award, and submit progress reports, invention reports
+      and closeout documents.
+    format: http
+    id: nih-era.commons
+    name: eRA Commons
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nih-era
+    product_url: https://public.era.nih.gov/commons/
+  - category: GraphicalInterface
+    description: ASSIST (Application Submission System and Interface for Submission
+      Tracking), the login-protected eRA module for preparing and submitting grant
+      applications to NIH and other agencies.
+    format: http
+    id: nih-era.assist
+    name: eRA ASSIST
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nih-era
+    product_url: https://public.era.nih.gov/assist/
+  - category: DocumentationProduct
+    description: eRA help and tutorials, including online help for eRA Commons, ASSIST
+      and the other eRA modules, video tutorials and FAQs.
+    format: http
+    id: nih-era.help
+    name: eRA Help and Tutorials
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nih-era
+    product_url: https://www.era.nih.gov/help-tutorials
+  - category: DocumentationProduct
+    description: Description of the eRA reporting and analytics modules, including
+      the public RePORT and RePORTER tools and the internal QVR, SPIRES and iRePORT
+      modules built on IMPAC II data.
+    format: http
+    id: nih-era.reporting-docs
+    name: eRA Reporting and Analytics Modules
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nih-era
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    product_url: https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics
+  - category: GraphicalInterface
+    description: Web-based search interface for exploring NIH-funded research projects
+      with advanced search capabilities
+    format: http
+    id: nihreporter.portal
+    name: NIH Reporter Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://reporter.nih.gov/
+  - category: Product
+    compression: zip
+    description: Bulk download of NIH research project data in structured format
+    format: csv
+    id: nihreporter.projects
+    name: NIH Reporter Exporter Projects
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://reporter.nih.gov/exporter/projects
+  - category: ProgrammingInterface
+    description: Public REST API (no key required) returning JSON for searching projects
+      (v2 projects endpoint) and project-linked publications
+    format: http
+    id: nihreporter.api
+    name: NIH Reporter API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://api.reporter.nih.gov/
+  - category: Product
+    compression: zip
+    description: Database of abstracts linked to NIH-funded research projects
+    format: csv
+    id: nihreporter.abstracts
+    name: NIH-Funded Project Abstracts
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://reporter.nih.gov/exporter/abstracts
+  - category: Product
+    description: Database of patents linked to NIH-funded research projects
+    format: csv
+    id: nihreporter.patents
+    name: NIH-Funded Project Patents
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    - relation_type: prov:wasDerivedFrom
+      source: iedison
+    product_url: https://reporter.nih.gov/exporter/patents
+  - category: Product
+    description: Database of clinical studies linked to NIH-funded research projects
+    format: csv
+    id: nihreporter.clinicalstudies
+    name: NIH-Funded Project Clinical Studies
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://reporter.nih.gov/exporter/clinicalstudies
+  - category: Product
+    compression: zip
+    description: Database of publications linked to NIH-funded research projects
+    format: csv
+    id: nihreporter.publications
+    name: NIH-Funded Publications Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://reporter.nih.gov/exporter/publications
+  - category: Product
+    description: Database of publication link tables for NIH-funded research projects
+    format: csv
+    id: nihreporter.linktables
+    name: NIH-Funded Publications Link Tables
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://reporter.nih.gov/exporter/linktables
+  - category: Product
+    compression: zip
+    description: Legacy CRISP (Computer Retrieval of Information on Scientific Projects)
+      project and abstract data for fiscal years 1970 to 2009, in CSV and XML.
+    format: csv
+    id: nihreporter.crisp
+    name: NIH Reporter Legacy CRISP Data
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    product_url: https://reporter.nih.gov/exporter/crisp
+  synonyms:
+  - eRA
+  - NIH eRA
+  - electronic Research Administration
+  - IMPAC II
+  - eRA Commons
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
       value: https://report.nih.gov/contactus
     - contact_type: email
       value: report@mail.nih.gov
@@ -254425,6 +255465,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/
   - category: Product
     compression: zip
@@ -254435,6 +255477,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/projects
   - category: ProgrammingInterface
     description: Public REST API (no key required) returning JSON for searching projects
@@ -254445,6 +255489,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://api.reporter.nih.gov/
   - category: Product
     compression: zip
@@ -254455,6 +255501,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/abstracts
   - category: Product
     description: Database of patents linked to NIH-funded research projects
@@ -254464,6 +255512,10 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
+    - relation_type: prov:wasDerivedFrom
+      source: iedison
     product_url: https://reporter.nih.gov/exporter/patents
   - category: Product
     description: Database of clinical studies linked to NIH-funded research projects
@@ -254475,6 +255527,8 @@ resources:
       source: nihreporter
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/clinicalstudies
   - category: Product
     compression: zip
@@ -254489,6 +255543,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/publications
   - category: Product
     description: Database of publication link tables for NIH-funded research projects
@@ -254502,6 +255558,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/linktables
   - category: Product
     compression: zip
@@ -254513,6 +255571,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: nihreporter
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/crisp
   - category: ProcessProduct
     description: INDRA CoGEx is a graph database integrating causal relations, ontological
@@ -254739,6 +255799,19 @@ resources:
       source: nihreporter
     product_file_size: 81463463
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json.gz
+  - category: DocumentationProduct
+    description: Description of the eRA reporting and analytics modules, including
+      the public RePORT and RePORTER tools and the internal QVR, SPIRES and iRePORT
+      modules built on IMPAC II data.
+    format: http
+    id: nih-era.reporting-docs
+    name: eRA Reporting and Analytics Modules
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nih-era
+    - relation_type: prov:hadPrimarySource
+      source: nihreporter
+    product_url: https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -255388,6 +256461,9 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
       30+ environmental and geospatial data layers accessible through SPARQL endpoint
@@ -255501,6 +256577,1040 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: usgs-nhd
     product_url: https://github.com/UFOKN/Knowledge-Graph
+- activity_status: active
+  category: Aggregator
+  collection:
+  - translator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://renci.org/
+    - contact_type: github
+      value: NCATSTranslator
+    label: RENCI / Translator Standards and Reference Implementation (SRI) team
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: bizon@renci.org
+    - contact_type: github
+      value: cbizon
+    label: Chris Bizon
+  creation_date: '2026-10-04T00:00:00Z'
+  description: The SRI Node Normalizer (NodeNorm) is an NCATS Biomedical Data Translator
+    utility service from the Standards and Reference Implementation (SRI) team, built
+    and hosted by RENCI. Given one or more CURIEs, it returns the preferred CURIE
+    for each entity, all known equivalent identifiers, a preferred label and the entity's
+    Biolink Model semantic types. Its data are the cliques of equivalent identifiers
+    built by Babel from many biomedical vocabularies and databases. Translator knowledge
+    providers use it to normalize node identifiers in their graphs, and Translator
+    KGX releases record the Node Normalizer version used to build them.
+  domains:
+  - biomedical
+  - information technology
+  homepage_url: https://nodenormalization-sri.renci.org/docs
+  id: node-normalizer
+  infores_id: sri-node-normalizer
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://opensource.org/licenses/MIT
+    label: MIT
+  name: SRI Node Normalizer
+  products:
+  - category: ProgrammingInterface
+    compatibility:
+    - standard: biolink
+    description: Node Normalization REST API hosted by RENCI (OpenAPI version 2.5.1,
+      TRAPI 1.5 annotate_nodes operation). Endpoints include /get_normalized_nodes,
+      /get_semantic_types, /get_curie_prefixes, /get_allowed_conflations, /get_setid
+      and TRAPI /query and /asyncquery. The OpenAPI servers block labels this deployment
+      development maturity.
+    format: http
+    id: node-normalizer.api
+    is_public: true
+    name: Node Normalization API (RENCI)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: node-normalizer
+    product_url: https://nodenormalization-sri.renci.org/docs
+  - category: ProgrammingInterface
+    compatibility:
+    - standard: biolink
+    description: Node Normalization REST API deployed on NCATS Translator infrastructure.
+    format: http
+    id: node-normalizer.api.translator
+    is_public: true
+    name: Node Normalization API (Translator)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: node-normalizer
+    product_url: https://nodenorm.transltr.io/docs
+  - category: ProcessProduct
+    description: Source code for the Node Normalization service, which loads Babel
+      compendia into Redis and serves them through a FastAPI application.
+    format: python
+    id: node-normalizer.code
+    license:
+      id: https://opensource.org/licenses/MIT
+      label: MIT
+    name: NodeNormalization Source Repository
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: node-normalizer
+    product_url: https://github.com/NCATSTranslator/NodeNormalization
+  - category: DocumentationProduct
+    description: API documentation for Node Normalization, describing each endpoint,
+      conflation options and response structure.
+    format: http
+    id: node-normalizer.docs
+    name: Node Normalization API Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: node-normalizer
+    product_file_size: 4515
+    product_url: https://github.com/NCATSTranslator/NodeNormalization/blob/master/documentation/API.md
+  - category: GraphProduct
+    description: KGX nodes file for JensenLab DISEASES KG
+    format: kgx-jsonl
+    id: kg-jensenlab-diseases.nodes.kgx
+    name: DISEASES KGX nodes
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: kg-jensenlab-diseases
+    - relation_type: prov:hadPrimarySource
+      source: diseases
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    - relation_type: prov:hadPrimarySource
+      source: string
+    - relation_type: prov:hadPrimarySource
+      source: ensembl
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: cosmic
+    - relation_type: prov:hadPrimarySource
+      source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_file_size: 130
+    product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
+  - category: GraphProduct
+    description: KGX edges file for JensenLab DISEASES KG
+    format: kgx-jsonl
+    id: kg-jensenlab-diseases.edges.kgx
+    name: DISEASES KGX edges
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: kg-jensenlab-diseases
+    - relation_type: prov:hadPrimarySource
+      source: diseases
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    - relation_type: prov:hadPrimarySource
+      source: string
+    - relation_type: prov:hadPrimarySource
+      source: ensembl
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: cosmic
+    - relation_type: prov:hadPrimarySource
+      source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_file_size: 132
+    product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
+  - category: GraphProduct
+    description: TRAPI edges file for JensenLab DISEASES KG
+    format: trapi-jsonl
+    id: kg-jensenlab-diseases.edges.trapi
+    name: DISEASES TRAPI edges
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: kg-jensenlab-diseases
+    - relation_type: prov:hadPrimarySource
+      source: diseases
+    - relation_type: prov:hadPrimarySource
+      source: doid
+    - relation_type: prov:hadPrimarySource
+      source: string
+    - relation_type: prov:hadPrimarySource
+      source: ensembl
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: cosmic
+    - relation_type: prov:hadPrimarySource
+      source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_file_size: 132
+    product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Alliance of Genome Resources distributed
+      via the NCATS Translator release site (release 2026_03_06; build alliance_8.3.0_2023bb02_2025sep1_4.3.6;
+      source version 8.3.0; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 129701
+    format: kgx-jsonl
+    id: translator.alliance.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Alliance KGX Graph
+    node_count: 16157
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: alliance
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
+    versions:
+    - '2026_03_06'
+    - alliance_8.3.0_2023bb02_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Bgee - Gene Expression Database distributed
+      via the NCATS Translator release site (release 2026_03_06; build bgee_15.2_a4fc19df_2025sep1_4.3.6;
+      source version 15.2; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 4654943
+    format: kgx-jsonl
+    id: translator.bgee.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Bgee KGX Graph
+    node_count: 74689
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bgee
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
+    versions:
+    - '2026_03_06'
+    - bgee_15.2_a4fc19df_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for BindingDB distributed via the NCATS Translator
+      release site (release 2026_03_06; build bindingdb_202603_2f3418c8_2025sep1_4.3.6;
+      source version 202603; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 1045781
+    format: kgx-jsonl
+    id: translator.bindingdb.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator BindingDB KGX Graph
+    node_count: 736988
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bindingdb
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
+    versions:
+    - '2026_03_06'
+    - bindingdb_202603_2f3418c8_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for ChEMBL distributed via the NCATS Translator
+      release site (release 2026_03_06; build chembl_36_76533eea_2025sep1_4.3.6; source
+      version 36; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 267871
+    format: kgx-jsonl
+    id: translator.chembl.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator ChEMBL KGX Graph
+    node_count: 153369
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
+    versions:
+    - '2026_03_06'
+    - chembl_36_76533eea_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Columbia Open Health Data (COHD) distributed
+      via the NCATS Translator release site (release 2026_03_12; build cohd_2024-11-25_75f200bb_2025sep1_4.3.6;
+      source version 2024-11-25; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 84
+    format: kgx-jsonl
+    id: translator.cohd.graph
+    latest_version: '2026_03_12'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator COHD KGX Graph
+    node_count: 86
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cohd
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
+    versions:
+    - '2026_03_12'
+    - cohd_2024-11-25_75f200bb_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for CTD distributed via the NCATS Translator
+      release site (release 2026_03_27; build ctd_February_2026_b588520f_2025sep1_4.3.6;
+      source version February_2026; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 4175538
+    format: kgx-jsonl
+    id: translator.ctd.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator CTD KGX Graph
+    node_count: 86425
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
+    versions:
+    - '2026_03_27'
+    - ctd_February_2026_b588520f_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for CTKP distributed via the NCATS Translator
+      release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6;
+      source version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 438575
+    format: kgx-jsonl
+    id: translator.ctkp.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator CTKP KGX Graph
+    node_count: 41243
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ctkp
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
+    versions:
+    - '2026_03_27'
+    - ctkp_3.1.37_a99268cc_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Drug Approvals KP distributed via the
+      NCATS Translator release site (release 2026_03_19; build dakp_0.5.3_c3f74ab4_2025sep1_4.3.6;
+      source version 0.5.3; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 73999
+    format: kgx-jsonl
+    id: translator.dakp.graph
+    latest_version: '2026_03_19'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator DAKP KGX Graph
+    node_count: 3783
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drug-approvals-kp
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
+    versions:
+    - '2026_03_19'
+    - dakp_0.5.3_c3f74ab4_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for DGIdb distributed via the NCATS Translator
+      release site (release 2026_03_06; build dgidb_2024_12_06_755e30d8_2025sep1_4.3.6;
+      source version 2024_12_06; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 52065
+    format: kgx-jsonl
+    id: translator.dgidb.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator DGIdb KGX Graph
+    node_count: 11691
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: dgidb
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
+    versions:
+    - '2026_03_06'
+    - dgidb_2024_12_06_755e30d8_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for DISEASES distributed via the NCATS Translator
+      release site (release 2026_03_19; build diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6;
+      source version 2026_03_17; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 270546
+    format: kgx-jsonl
+    id: translator.diseases.graph
+    latest_version: '2026_03_19'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator DISEASES KGX Graph
+    node_count: 22024
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: diseases
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
+    versions:
+    - '2026_03_19'
+    - diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Drug Repurposing Hub distributed via
+      the NCATS Translator release site (release 2026_03_06; build drug_rep_hub_2025-08-19_99c18ef1_2025sep1_4.3.6;
+      source version 2025-08-19; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 19389
+    format: kgx-jsonl
+    id: translator.drug_rep_hub.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Drug Repurposing Hub KGX Graph
+    node_count: 8842
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
+    versions:
+    - '2026_03_06'
+    - drug_rep_hub_2025-08-19_99c18ef1_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for DrugCentral distributed via the NCATS
+      Translator release site (release 2026_03_19; build drugcentral_2023_11_01_82890f34_2025sep1_4.3.6;
+      source version 2023_11_01; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 36494
+    format: kgx-jsonl
+    id: translator.drugcentral.graph
+    latest_version: '2026_03_19'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator DrugCentral KGX Graph
+    node_count: 5493
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
+    versions:
+    - '2026_03_19'
+    - drugcentral_2023_11_01_82890f34_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Gene2Phenotype distributed via the NCATS
+      Translator release site (release 2026_03_27; build gene2phenotype_2026_03_27_4773272d_2025sep1_4.3.6;
+      source version 2026_03_27; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 3022
+    format: kgx-jsonl
+    id: translator.gene2phenotype.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Gene2Phenotype KGX Graph
+    node_count: 5424
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gene2phenotype
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
+    versions:
+    - '2026_03_27'
+    - gene2phenotype_2026_03_27_4773272d_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Genetics KP distributed via the NCATS
+      Translator release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6;
+      source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 653544
+    format: kgx-jsonl
+    id: translator.geneticskp.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Genetics KP KGX Graph
+    node_count: 28023
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: genetics-kp
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
+    versions:
+    - '2026_03_27'
+    - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for GO-CAM distributed via the NCATS Translator
+      release site (release 2026_03_06; build go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6;
+      source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 4539
+    format: kgx-jsonl
+    id: translator.go_cam.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator GO-CAM KGX Graph
+    node_count: 3181
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: go-cam
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
+    versions:
+    - '2026_03_06'
+    - go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for GOA distributed via the NCATS Translator
+      release site (release 2026_03_06; build goa_2026-01-23_5fdd3125_2025sep1_4.3.6;
+      source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 1132872
+    format: kgx-jsonl
+    id: translator.goa.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator GOA KGX Graph
+    node_count: 91993
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: goa
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
+    versions:
+    - '2026_03_06'
+    - goa_2026-01-23_5fdd3125_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for GToPdb distributed via the NCATS Translator
+      release site (release 2026_03_19; build gtopdb_2026.1_4d453431_2025sep1_4.3.6;
+      source version 2026.1; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 18581
+    format: kgx-jsonl
+    id: translator.gtopdb.graph
+    latest_version: '2026_03_19'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator GToPdb KGX Graph
+    node_count: 10644
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gtopdb
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
+    versions:
+    - '2026_03_19'
+    - gtopdb_2026.1_4d453431_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for HPOA distributed via the NCATS Translator
+      release site (release 2026_03_06; build hpoa_2026-02-16_e80fcfa7_2025sep1_4.3.6;
+      source version 2026-02-16; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 590588
+    format: kgx-jsonl
+    id: translator.hpoa.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator HPOA KGX Graph
+    node_count: 27173
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: hp
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
+    versions:
+    - '2026_03_06'
+    - hpoa_2026-02-16_e80fcfa7_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for ICEES distributed via the NCATS Translator
+      release site (release 2026_03_12; build icees_2024-08-20_3ebb9d85_2025sep1_4.3.6;
+      source version 2024-08-20; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 13972
+    format: kgx-jsonl
+    id: translator.icees.graph
+    latest_version: '2026_03_12'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator ICEES KGX Graph
+    node_count: 224
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: icees-kg
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
+    versions:
+    - '2026_03_12'
+    - icees_2024-08-20_3ebb9d85_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for IntAct distributed via the NCATS Translator
+      release site (release 2026_03_06; build intact_2026_01_14_e14f80a8_2025sep1_4.3.6;
+      source version 2026_01_14; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 622361
+    format: kgx-jsonl
+    id: translator.intact.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator IntAct KGX Graph
+    node_count: 27681
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: intact
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
+    versions:
+    - '2026_03_06'
+    - intact_2026_01_14_e14f80a8_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for PANTHER distributed via the NCATS Translator
+      release site (release 2026_03_06; build panther_19.0_0b240030_2025sep1_4.3.6;
+      source version 19.0; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 135318
+    format: kgx-jsonl
+    id: translator.panther.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator PANTHER KGX Graph
+    node_count: 66728
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: panther
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
+    versions:
+    - '2026_03_06'
+    - panther_19.0_0b240030_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Pathbank distributed via the NCATS Translator
+      release site (release 2026_03_27; build pathbank_2019-09-13_4589e2d2_2025sep1_4.3.6;
+      source version 2019-09-13; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 1465291
+    format: kgx-jsonl
+    id: translator.pathbank.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator PathBank KGX Graph
+    node_count: 33443
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pathbank
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
+    versions:
+    - '2026_03_27'
+    - pathbank_2019-09-13_4589e2d2_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for SemMedDB distributed via the NCATS Translator
+      release site (release 2026_03_27; build semmeddb_semmeddb-2023-kg2.10.3_fe8e6340_2025sep1_4.3.6;
+      source version semmeddb-2023-kg2.10.3; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 1412108
+    format: kgx-jsonl
+    id: translator.semmeddb.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator SemMedDB KGX Graph
+    node_count: 69187
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: semmeddb
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
+    versions:
+    - '2026_03_27'
+    - semmeddb_semmeddb-2023-kg2.10.3_fe8e6340_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for SIDER distributed via the NCATS Translator
+      release site (release 2026_03_06; build sider_4.1_56b9c307_2025sep1_4.3.6; source
+      version 4.1; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 139874
+    format: kgx-jsonl
+    id: translator.sider.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator SIDER KGX Graph
+    node_count: 5533
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
+    versions:
+    - '2026_03_06'
+    - sider_4.1_56b9c307_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for SIGNOR distributed via the NCATS Translator
+      release site (release 2026_03_06; build signor_2026_January_e2465db9_2025sep1_4.3.6;
+      source version 2026_January; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 18341
+    format: kgx-jsonl
+    id: translator.signor.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator SIGNOR KGX Graph
+    node_count: 6633
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: signor
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
+    versions:
+    - '2026_03_06'
+    - signor_2026_January_e2465db9_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for TMKP distributed via the NCATS Translator
+      release site (release 2026_03_06; build tmkp_tmkp-2023-03-05_6dadae40_2025sep1_4.3.6;
+      source version tmkp-2023-03-05; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 1861988
+    format: kgx-jsonl
+    id: translator.tmkp.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator TMKP KGX Graph
+    node_count: 32276
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
+    versions:
+    - '2026_03_06'
+    - tmkp_tmkp-2023-03-05_6dadae40_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: Aggregated KGX JSONL graph package combining 29 Translator release
+      sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+      2025sep1).
+    edge_count: 29243943
+    format: kgx-jsonl
+    id: translator.translator_kg.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Aggregate KGX Graph
+    node_count: 1696790
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: alliance
+    - relation_type: prov:hadPrimarySource
+      source: bgee
+    - relation_type: prov:hadPrimarySource
+      source: bindingdb
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: cohd
+    - relation_type: prov:hadPrimarySource
+      source: ctd
+    - relation_type: prov:hadPrimarySource
+      source: ctkp
+    - relation_type: prov:hadPrimarySource
+      source: dgidb
+    - relation_type: prov:hadPrimarySource
+      source: diseases
+    - relation_type: prov:hadPrimarySource
+      source: drug-approvals-kp
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: gene2phenotype
+    - relation_type: prov:hadPrimarySource
+      source: genetics-kp
+    - relation_type: prov:hadPrimarySource
+      source: go-cam
+    - relation_type: prov:hadPrimarySource
+      source: goa
+    - relation_type: prov:hadPrimarySource
+      source: gtopdb
+    - relation_type: prov:hadPrimarySource
+      source: hp
+    - relation_type: prov:hadPrimarySource
+      source: icees-kg
+    - relation_type: prov:hadPrimarySource
+      source: intact
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: panther
+    - relation_type: prov:hadPrimarySource
+      source: pathbank
+    - relation_type: prov:hadPrimarySource
+      source: semmeddb
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: signor
+    - relation_type: prov:hadPrimarySource
+      source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:hadPrimarySource
+      source: ttd
+    - relation_type: prov:hadPrimarySource
+      source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+    versions:
+    - '2026_03_27'
+    - 423af7989cac
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for TTD distributed via the NCATS Translator
+      release site (release 2026_03_06; build ttd_2024_03_30_0a11135d_2025sep1_4.3.6;
+      source version 2024_03_30; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 69317
+    format: kgx-jsonl
+    id: translator.ttd.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator TTD KGX Graph
+    node_count: 25564
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:hadPrimarySource
+      source: ttd
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
+    versions:
+    - '2026_03_06'
+    - ttd_2024_03_30_0a11135d_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+      version: 4.3.6
+    description: KGX JSONL graph package for Ubergraph distributed via the NCATS Translator
+      release site (release 2026_03_27; build ubergraph_2026-03-08_0fef3756_2025sep1_4.3.6;
+      source version 2026-03-08; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 9937241
+    format: kgx-jsonl
+    id: translator.ubergraph.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Ubergraph KGX Graph
+    node_count: 580326
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: translator
+    - relation_type: prov:hadPrimarySource
+      source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
+    product_url: https://kgx-storage.rtx.ai/releases/ubergraph/latest/
+    versions:
+    - '2026_03_27'
+    - ubergraph_2026-03-08_0fef3756_2025sep1_4.3.6
+  publications:
+  - authors:
+    - Evan Morris
+    - Gaurav Vaidya
+    - Phil Owen
+    - Jason Reilly
+    - Karamarie Fecho
+    - Patrick Wang
+    - Yaphet Kebede
+    - E. Kathleen Carter
+    - Chris Bizon
+    category: Publication
+    doi: 10.48550/arXiv.2601.10008
+    id: https://doi.org/10.48550/arXiv.2601.10008
+    journal: arXiv
+    preferred: true
+    title: 'The "I" in FAIR: Translating from Interoperability in Principle to Interoperation
+      in Practice'
+    year: '2026'
+  repository: https://github.com/NCATSTranslator/NodeNormalization
+  synonyms:
+  - NodeNorm
+  - Node Normalization
+  - Node Normalizer
 - activity_status: active
   category: Ontology
   collection:
@@ -263917,6 +266027,291 @@ resources:
     year: '2025'
   repository: https://github.com/biopragmatics/obo-db-ingest
 - activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://obofoundry.org/
+    - contact_type: github
+      value: OBOFoundry
+    label: OBO Foundry Operations Committee
+  creation_date: '2026-10-04T00:00:00Z'
+  description: The Open Biological and Biomedical Ontology (OBO) Foundry is a community
+    of ontology developers committed to a shared set of principles for open, interoperable
+    biomedical ontologies. It runs the OBO registry, the canonical list of member
+    ontologies with their metadata, persistent URLs (PURLs), release products, licenses
+    and contacts, and it reviews ontologies against its principles. When checked on
+    2026-10-04 the registry listed 267 ontologies, 191 of them active.
+  domains:
+  - biomedical
+  - information technology
+  - metadata
+  homepage_url: https://obofoundry.org/
+  id: obofoundry
+  last_modified_date: '2026-10-04T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: OBO Foundry
+  products:
+  - category: Product
+    description: Machine-readable metadata for every ontology in the OBO registry
+      (ids, titles, descriptions, PURLs, products, licenses, contacts, dependencies
+      and activity status), in YAML.
+    format: yaml
+    id: obofoundry.registry.yaml
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: OBO Foundry Registry Metadata (YAML)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obofoundry
+    product_file_size: 76313
+    product_url: https://obofoundry.org/registry/ontologies.yml
+  - category: Product
+    description: OBO registry ontology metadata serialized as JSON-LD.
+    format: jsonld
+    id: obofoundry.registry.jsonld
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: OBO Foundry Registry Metadata (JSON-LD)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obofoundry
+    product_file_size: 85640
+    product_url: https://obofoundry.org/registry/ontologies.jsonld
+  - category: Product
+    description: OBO registry ontology metadata serialized as RDF Turtle.
+    format: ttl
+    id: obofoundry.registry.ttl
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: OBO Foundry Registry Metadata (Turtle)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obofoundry
+    product_file_size: 537368
+    product_url: https://obofoundry.org/registry/ontologies.ttl
+  - category: GraphicalInterface
+    description: OBO Foundry website with a browsable table of registered ontologies,
+      a detail page per ontology, and documentation of the OBO principles and review
+      process.
+    format: http
+    id: obofoundry.portal
+    name: OBO Foundry Website
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obofoundry
+    product_url: https://obofoundry.org/
+  - category: DocumentationProduct
+    description: Summary of the OBO Foundry principles that member ontologies are
+      expected to follow, such as openness, common format, URI/identifier space, versioning
+      and documentation.
+    format: http
+    id: obofoundry.principles
+    name: OBO Foundry Principles
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obofoundry
+    product_url: https://obofoundry.org/principles/fp-000-summary.html
+  - category: Product
+    description: GitHub repository holding the OBO registry metadata (one Markdown
+      file with YAML front matter per ontology), the Jekyll website, and the Python
+      tooling that builds the registry exports and runs the OBO Dashboard checks.
+      Data are CC0 1.0 and code is BSD 3-Clause.
+    format: mixed
+    id: obofoundry.repository
+    name: OBO Foundry GitHub Repository
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: obofoundry
+    product_url: https://github.com/OBOFoundry/OBOFoundry.github.io
+  - category: GraphicalInterface
+    description: Web portal for searching, browsing, and visualizing biomedical ontologies
+      and mappings
+    format: http
+    id: bioportal.portal
+    name: BioPortal Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioportal
+    - relation_type: prov:hadPrimarySource
+      source: umls
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
+    product_url: https://bioportal.bioontology.org/
+  - category: ProgrammingInterface
+    description: REST API for ontology concepts, search, mappings, metrics, and downloads.
+      Most endpoints require a free BioPortal API key.
+    format: http
+    id: bioportal.api
+    name: BioPortal REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioportal
+    - relation_type: prov:hadPrimarySource
+      source: umls
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
+    product_url: https://data.bioontology.org/
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+  - category: Product
+    compression: targz
+    description: Gzipped tar archive (ontology_jsons.tgz, about 2 GB) of all ontologies
+      loaded into OLS, in OLS JSON format.
+    format: json
+    id: ols.json
+    name: OLS Ontologies JSON
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ols
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
+    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
+  - category: Product
+    compression: targz
+    description: Gzipped tar archive (ontology_jsons_linked.tgz) of OLS ontology JSON
+      with added cross-ontology and external database links.
+    format: json
+    id: ols.json-linked
+    name: OLS Linked Ontology JSON
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ols
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
+    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
+  publications:
+  - authors:
+    - Rebecca Jackson
+    - Nicolas Matentzoglu
+    - James A Overton
+    - Randi Vita
+    - James P Balhoff
+    - Pier Luigi Buttigieg
+    - Seth Carbon
+    - Melanie Courtot
+    - Alexander D Diehl
+    - Damion M Dooley
+    - William D Duncan
+    - Nomi L Harris
+    - Melissa A Haendel
+    - Suzanna E Lewis
+    - Darren A Natale
+    - David Osumi-Sutherland
+    - Alan Ruttenberg
+    - Lynn M Schriml
+    - Barry Smith
+    - Christian J Stoeckert Jr.
+    - Nicole A Vasilevsky
+    - Ramona L Walls
+    - Jie Zheng
+    - Christopher J Mungall
+    - Bjoern Peters
+    doi: 10.1093/database/baab069
+    id: doi:10.1093/database/baab069
+    journal: Database
+    preferred: true
+    title: 'OBO Foundry in 2021: operationalizing open data principles to evaluate
+      ontologies'
+    year: '2021'
+  - authors:
+    - Barry Smith
+    - Michael Ashburner
+    - Cornelius Rosse
+    - Jonathan Bard
+    - William Bug
+    - Werner Ceusters
+    - Louis J Goldberg
+    - Karen Eilbeck
+    - Amelia Ireland
+    - Christopher J Mungall
+    - Neocles Leontis
+    - Philippe Rocca-Serra
+    - Alan Ruttenberg
+    - Susanna-Assunta Sansone
+    - Richard H Scheuermann
+    - Nigam Shah
+    - Patricia L Whetzel
+    - Suzanna Lewis
+    doi: 10.1038/nbt1346
+    id: doi:10.1038/nbt1346
+    journal: Nature Biotechnology
+    title: 'The OBO Foundry: coordinated evolution of ontologies to support biomedical
+      data integration'
+    year: '2007'
+  repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+  synonyms:
+  - OBO
+  - Open Biological and Biomedical Ontology Foundry
+  - OBO Library
+  - OBO registry
+- activity_status: active
   category: Ontology
   collection:
   - obo-foundry
@@ -264460,6 +266855,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -265036,6 +267433,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: ols
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
     product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
   - category: Product
     compression: targz
@@ -265044,9 +267443,11 @@ resources:
     format: json
     id: ols.json-linked
     name: OLS Linked Ontology JSON
-    original_source: &id001
+    original_source:
     - relation_type: prov:hadPrimarySource
       source: ols
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
     product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/
   - category: Product
     description: Precomputed ontology term embeddings (full, PCA and UMAP projections)
@@ -265054,7 +267455,9 @@ resources:
     format: parquet
     id: ols.embeddings
     name: OLS Term Embeddings
-    original_source: *id001
+    original_source: &id001
+    - relation_type: prov:hadPrimarySource
+      source: ols
     product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/latest/embeddings/
   - category: ProgrammingInterface
     description: Model Context Protocol (MCP) server for querying OLS from AI assistants
@@ -265180,6 +267583,66 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubmed
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
   publications:
   - authors:
     - James McLaughlin
@@ -268677,6 +271140,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -271599,6 +274064,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -276228,6 +278695,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -278504,6 +280973,8 @@ resources:
       source: panther
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
     versions:
     - '2026_03_06'
@@ -278585,6 +281056,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -279891,6 +282364,8 @@ resources:
       source: pathbank
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
     versions:
     - '2026_03_27'
@@ -279972,6 +282447,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -290766,6 +293243,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -298403,6 +300882,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/publications
   - category: Product
     description: Database of publication link tables for NIH-funded research projects
@@ -298416,6 +300897,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/linktables
   - category: Product
     description: Web interface for searching and visualizing chemical-protein interactions
@@ -310645,6 +313128,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: MarkerDB API documentation and endpoint examples for condition, chemical,
       genetic, protein, and karyotype biomarker records.
@@ -313275,6 +315760,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
+      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -314296,6 +316783,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/publications
   - category: Product
     description: Database of publication link tables for NIH-funded research projects
@@ -314309,6 +316798,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: pmc
+    - relation_type: prov:wasDerivedFrom
+      source: nih-era
     product_url: https://reporter.nih.gov/exporter/linktables
   - category: Product
     description: Web interface for searching and visualizing chemical-protein interactions
@@ -316468,6 +318959,8 @@ resources:
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
       to URL'
   - category: GraphProduct
     compression: tar
@@ -322995,6 +325488,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -328696,6 +331191,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -328881,6 +331378,8 @@ resources:
       source: repohub
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
     versions:
     - '2026_03_06'
@@ -343508,6 +346007,8 @@ resources:
       source: signor
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
     versions:
     - '2026_03_06'
@@ -343604,6 +346105,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -355405,6 +357908,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
       30+ environmental and geospatial data layers accessible through SPARQL endpoint
@@ -359958,6 +362463,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -360001,6 +362508,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -360023,6 +362532,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -360047,6 +362558,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -360071,6 +362584,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: GraphProduct
@@ -365881,6 +368396,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
+      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -366964,6 +369481,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -367525,6 +370044,8 @@ resources:
       source: text-mining-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
     versions:
     - '2026_03_06'
@@ -367606,6 +370127,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -370909,7 +373432,7 @@ resources:
   - drug discovery
   homepage_url: https://kgx-storage.rtx.ai/releases/
   id: translator
-  last_modified_date: '2026-09-16T00:00:00Z'
+  last_modified_date: '2026-10-04T00:00:00Z'
   layout: resource_detail
   license:
     id: https://opensource.org/license/mit/
@@ -370937,6 +373460,8 @@ resources:
       source: alliance
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
     versions:
     - '2026_03_06'
@@ -370962,6 +373487,8 @@ resources:
       source: bgee
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
     versions:
     - '2026_03_06'
@@ -370987,6 +373514,8 @@ resources:
       source: bindingdb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
     versions:
     - '2026_03_06'
@@ -371012,6 +373541,8 @@ resources:
       source: chembl
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
     versions:
     - '2026_03_06'
@@ -371037,6 +373568,8 @@ resources:
       source: cohd
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
     versions:
     - '2026_03_12'
@@ -371062,6 +373595,8 @@ resources:
       source: ctd
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
     versions:
     - '2026_03_27'
@@ -371087,6 +373622,8 @@ resources:
       source: ctkp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
     versions:
     - '2026_03_27'
@@ -371112,6 +373649,8 @@ resources:
       source: drug-approvals-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
     versions:
     - '2026_03_19'
@@ -371137,6 +373676,8 @@ resources:
       source: dgidb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
     versions:
     - '2026_03_06'
@@ -371162,6 +373703,8 @@ resources:
       source: diseases
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
     versions:
     - '2026_03_19'
@@ -371187,6 +373730,8 @@ resources:
       source: repohub
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
     versions:
     - '2026_03_06'
@@ -371212,6 +373757,8 @@ resources:
       source: drugcentral
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
     versions:
     - '2026_03_19'
@@ -371237,6 +373784,8 @@ resources:
       source: gene2phenotype
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
     versions:
     - '2026_03_27'
@@ -371262,6 +373811,8 @@ resources:
       source: genetics-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
     versions:
     - '2026_03_27'
@@ -371287,6 +373838,8 @@ resources:
       source: go-cam
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
     versions:
     - '2026_03_06'
@@ -371312,6 +373865,8 @@ resources:
       source: goa
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
     versions:
     - '2026_03_06'
@@ -371337,6 +373892,8 @@ resources:
       source: gtopdb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
     versions:
     - '2026_03_19'
@@ -371362,6 +373919,8 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
     versions:
     - '2026_03_06'
@@ -371387,6 +373946,8 @@ resources:
       source: icees-kg
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
     versions:
     - '2026_03_12'
@@ -371412,6 +373973,8 @@ resources:
       source: intact
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
     versions:
     - '2026_03_06'
@@ -371437,6 +374000,8 @@ resources:
       source: panther
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
     versions:
     - '2026_03_06'
@@ -371462,6 +374027,8 @@ resources:
       source: pathbank
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
     versions:
     - '2026_03_27'
@@ -371487,6 +374054,8 @@ resources:
       source: semmeddb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
     versions:
     - '2026_03_27'
@@ -371512,6 +374081,8 @@ resources:
       source: sider
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
     versions:
     - '2026_03_06'
@@ -371537,6 +374108,8 @@ resources:
       source: signor
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
     versions:
     - '2026_03_06'
@@ -371562,6 +374135,8 @@ resources:
       source: text-mining-kp
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
     versions:
     - '2026_03_06'
@@ -371643,6 +374218,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -371668,6 +374245,8 @@ resources:
       source: translator
     - relation_type: prov:hadPrimarySource
       source: ttd
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
     versions:
     - '2026_03_06'
@@ -371693,6 +374272,8 @@ resources:
       source: translator
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ubergraph/latest/
     versions:
     - '2026_03_27'
@@ -372889,6 +375470,8 @@ resources:
       source: translator
     - relation_type: prov:hadPrimarySource
       source: ttd
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
     versions:
     - '2026_03_06'
@@ -372970,6 +375553,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -373936,6 +376521,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -374535,6 +377122,8 @@ resources:
       source: translator
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/ubergraph/latest/
     versions:
     - '2026_03_27'
@@ -374634,6 +377223,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -381981,6 +384572,8 @@ resources:
       source: bioportal
     - relation_type: prov:hadPrimarySource
       source: umls
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
     product_url: https://bioportal.bioontology.org/
   - category: ProgrammingInterface
     description: REST API for ontology concepts, search, mappings, metrics, and downloads.
@@ -381993,6 +384586,8 @@ resources:
       source: bioportal
     - relation_type: prov:hadPrimarySource
       source: umls
+    - relation_type: prov:wasDerivedFrom
+      source: obofoundry
     product_url: https://data.bioontology.org/
   - category: Product
     description: CSV format data files directory with additional data exports
@@ -387414,6 +390009,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
+      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -388434,6 +391031,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -388456,6 +391055,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 130
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
   - category: GraphProduct
@@ -388480,6 +391081,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
   - category: GraphProduct
@@ -388504,6 +391107,8 @@ resources:
       source: cosmic
     - relation_type: prov:hadPrimarySource
       source: medlineplus
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_file_size: 132
     product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
   - category: GraphProduct
@@ -389623,6 +392228,66 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubmed
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
   publications:
   - authors:
     - Alex Bateman
@@ -394429,6 +397094,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: PubChem substance information in ASN.1 format
@@ -394584,6 +397251,66 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2026-10-04. Google Cloud Storage
       returned HTTP 403 AccessDenied for anonymous requests.
+  - category: Product
+    description: Full Bioregistry export as JSON, with every prefix record including
+      names, synonyms, URI formats, local identifier patterns, providers and mappings
+      to the prefixes of other registries.
+    format: json
+    id: bioregistry.registry.json
+    name: Bioregistry JSON Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 786637
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+  - category: MappingProduct
+    description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+      in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene
+      Ontology registry, Cellosaurus, UniProt and NCBI.
+    format: sssom
+    id: bioregistry.sssom
+    name: Bioregistry SSSOM Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:wasInfluencedBy
+      source: obofoundry
+    - relation_type: prov:wasInfluencedBy
+      source: bioportal
+    - relation_type: prov:wasInfluencedBy
+      source: ols
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+    - relation_type: prov:wasInfluencedBy
+      source: go
+    - relation_type: prov:wasInfluencedBy
+      source: cellosaurus
+    - relation_type: prov:wasInfluencedBy
+      source: uniprot
+    - relation_type: prov:wasInfluencedBy
+      source: ncbi
+    - relation_type: prov:wasInfluencedBy
+      source: biolink
+    product_file_size: 136267
+    product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
   repository: https://www.mediawiki.org/wiki/Wikibase
   synonyms:
   - Wikidata
@@ -405972,6 +408699,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -406113,6 +408842,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -407843,6 +410574,8 @@ resources:
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -408019,6 +410752,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   publications: []
   use_instead:
   - go
@@ -408998,6 +411733,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -409149,6 +411886,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: 'Robokop Plus: the ROBOKOP KG extended with CORD-19 and text-mined
       assertions (2023 data, Biolink 3.1.2; legacy).'
@@ -409449,6 +412188,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   publications: []
   taxon:
   - all
@@ -410173,6 +412914,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Plant Environment Ontology in OBO format
     format: obo
@@ -410184,6 +412927,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -410238,6 +412983,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -410407,6 +413154,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -410421,6 +413170,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -412045,6 +414796,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/intact/ws
     description: IntAct web service and URL-based programmatic interface for retrieving
@@ -412234,6 +414989,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
     format: http
@@ -412250,6 +415007,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
     format: http
@@ -412266,6 +415025,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
+      when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
       and binding motifs
@@ -414075,6 +416836,11 @@ resources:
     product_url: http://www.inoh.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: Error connecting
+      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
+      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
+      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
+      name resolution)"))'
+    - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
       port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
@@ -416842,6 +419608,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of MicroRNA Ontology (MIRNAO), produced by KG-Bioportal
@@ -416960,6 +419728,8 @@ resources:
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -417267,6 +420037,8 @@ resources:
     product_url: http://www.netpath.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 503 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -417783,6 +420555,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -417878,6 +420652,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -418002,6 +420778,8 @@ resources:
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -421315,6 +424093,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -424313,6 +427093,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
       to disease associations (requires registration and subscription).
@@ -425496,6 +428278,8 @@ resources:
       source: semmeddb
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
     versions:
     - '2026_03_27'
@@ -425577,6 +428361,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -426574,6 +429360,8 @@ resources:
       source: sider
     - relation_type: prov:hadPrimarySource
       source: translator
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
     versions:
     - '2026_03_06'
@@ -426951,6 +429739,8 @@ resources:
       source: ttd
     - relation_type: prov:hadPrimarySource
       source: ubergraph
+    - relation_type: prov:wasInfluencedBy
+      source: node-normalizer
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
     versions:
     - '2026_03_27'
@@ -428414,6 +431204,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
