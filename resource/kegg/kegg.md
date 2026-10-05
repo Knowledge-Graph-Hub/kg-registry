@@ -3537,11 +3537,26 @@ products:
     source: string
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
-    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
-    object for one clique, listing its identifiers with labels, descriptions and taxa,
-    plus the preferred name and information content. Files carry a .txt extension;
-    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
+  description: LSDB Archive copy of KEGG MEDICUS, the KEGG resource for drugs, diseases
+    and drug labels, in dated releases (2014 to 2023), licensed CC BY-SA 4.0.
+  format: mixed
+  id: lsdb-archive.kegg-medicus
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: KEGG MEDICUS (LSDB Archive)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lsdb-archive
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  product_url: https://dbarchive.biosciencedbc.jp/data/kegg-medicus/
+- category: Product
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
+    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
+    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
+    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
+    GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
