@@ -20,8 +20,8 @@ description: The GINsim model repository collects curated logical (Boolean and m
   and cancer signalling in organisms such as Drosophila, yeasts and mammals. Each
   page gives the taxon, biological process, authors and reference publications, and
   provides the model in the GINsim zginml format, with SBML-qual files and Jupyter
-  notebooks for some models. The repository is part of the GINsim website, whose
-  content is available under CC BY-NC-SA 4.0 unless stated otherwise.
+  notebooks for some models. The repository is part of the GINsim website, whose content
+  is available under CC BY-NC-SA 4.0 unless stated otherwise.
 domains:
 - systems biology
 - biological systems
@@ -97,6 +97,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ginsim-models
+  product_file_size: 40731588
   product_url: https://ginsim.github.io/install/GINsim-3.1-with-deps.jar
   repository: https://github.com/GINsim/GINsim
 - category: DocumentationProduct

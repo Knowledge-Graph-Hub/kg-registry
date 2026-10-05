@@ -268,6 +268,7 @@ eram,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
 esgf,active,PASS
+eu-ctr,active,PASS
 eu-knowledge-graph,active,PASS
 eupathdb,active,PASS
 eurio,active,PASS
@@ -331,6 +332,7 @@ geo,active,PASS
 geoconnex,active,PASS
 geonames,active,PASS
 gff,active,PASS
+ginsim-models,active,PASS
 glkb,active,PASS
 globi,active,PASS
 glycocoo,active,PASS
@@ -423,6 +425,7 @@ intermine,active,PASS
 interpro,active,PASS
 inxight-drugs,active,PASS
 iptmnet,active,PASS
+isrctn,active,PASS
 itis,active,PASS
 iucn-red-list,active,PASS
 jaspar,active,PASS
@@ -462,6 +465,7 @@ lncrnalyzr,active,PASS
 loinc,active,PASS
 lotus,active,PASS
 louisiana-tumor-registry,active,PASS
+lsdb-archive,active,PASS
 m-csa,active,PASS
 ma,active,PASS
 maine-egad,active,PASS
@@ -881,6 +885,7 @@ wbls,active,PASS
 wbphenotype,active,PASS
 web-of-science,active,PASS
 who,active,PASS
+who-ictrp,active,PASS
 wikidata,active,PASS
 wikipathways,active,PASS
 wikipedia,active,PASS

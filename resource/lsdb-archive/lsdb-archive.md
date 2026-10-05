@@ -64,14 +64,15 @@ products:
 - category: Product
   description: Machine-readable catalog of archived databases in JSON, with name,
     Integbio Database Catalog ID, DOI, creators, categories, organisms, description,
-    original sites and download page for each database. Some records in the file
-    are malformed duplicates.
+    original sites and download page for each database. Some records in the file are
+    malformed duplicates.
   format: json
   id: lsdb-archive.database-catalog-json
   name: LSDB Archive Database Catalog (JSON)
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lsdb-archive
+  product_file_size: 0
   product_url: https://dbarchive.biosciencedbc.jp/en/databases.json
 - category: Product
   description: Machine-readable catalog of archived databases in CSV, with the same
@@ -82,6 +83,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lsdb-archive
+  product_file_size: 0
   product_url: https://dbarchive.biosciencedbc.jp/en/databases.csv
 - category: Product
   compression: zip
@@ -94,6 +96,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lsdb-archive
+  product_file_size: 0
   product_url: https://dbarchive.biosciencedbc.jp/en/databases/download.json
 - category: Product
   description: Open directory of archived database files, with one folder per database
@@ -168,6 +171,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lsdb-archive
+  product_file_size: 499210
   product_url: https://dbarchive.biosciencedbc.jp/files/nbdc_riyou_kiyaku_en.pdf
 synonyms:
 - LSDB Archive

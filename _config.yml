@@ -53508,8 +53508,14 @@ resources:
     on over 400,000 studies covering a wide range of diseases and conditions, providing
     details about study design, locations, eligibility criteria, interventions, outcomes,
     and results. ClinicalTrials.gov serves as the primary registry for clinical trials
-    required by the FDA Amendments Act and WHO International Clinical Trials Registry
-    Platform (ICTRP).
+    required by the FDA Amendments Act and is a data provider to the WHO International
+    Clinical Trials Registry Platform (ICTRP). studies conducted around the world,
+    maintained by the National Library of Medicine (NLM) at the National Institutes
+    of Health (NIH). The registry contains information on over 400,000 studies covering
+    a wide range of diseases and conditions, providing details about study design,
+    locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov
+    serves as the primary registry for clinical trials required by the FDA Amendments
+    Act and WHO International Clinical Trials Registry Platform (ICTRP).
   domains:
   - clinical
   - biomedical
@@ -53521,7 +53527,7 @@ resources:
   homepage_url: https://clinicaltrials.gov/
   id: clinicaltrialsgov
   infores_id: clinicaltrials
-  last_modified_date: '2026-09-23T00:00:00Z'
+  last_modified_date: '2026-10-05T00:00:00Z'
   layout: resource_detail
   license:
     id: https://clinicaltrials.gov/about-site/terms-conditions
@@ -54890,6 +54896,61 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: nih-era
     product_url: https://reporter.nih.gov/exporter/clinicalstudies
+  - category: GraphicalInterface
+    description: ICTRP Search Portal for searching trial registration records from
+      all ICTRP data providers, with basic and advanced search, filters for phase,
+      results, children, COVID-19, rare diseases and genome editing, browsing by health
+      topic and country, and links to the original registry records.
+    format: http
+    id: who-ictrp.portal
+    name: ICTRP Search Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://trialsearch.who.int/
+  - category: Product
+    description: Export of ICTRP search results (selected records or all records of
+      a search) from the Search Portal in XML or CSV format, free of charge under
+      the WHO ICTRP data terms and conditions.
+    format: xml
+    id: who-ictrp.search-export
+    name: ICTRP Search Results Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database
+  - category: ProgrammingInterface
+    connection_url: https://trialsearch.who.int/TrialService.asmx
+    description: ICTRP Search Portal Web Service, a SOAP/XML web service (operations
+      include GetTrials and GetTrialDetails) for querying the ICTRP database in real
+      time. Access is granted to agreed partners for research purposes, and WHO may
+      charge to recoup costs.
+    format: xml
+    id: who-ictrp.web-service
+    is_public: false
+    name: ICTRP Search Portal Web Service
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service
   publications:
   - authors:
     - Zarin DA
@@ -120649,6 +120710,174 @@ resources:
       source: gcmd
     product_url: https://frink.renci.org/registry/kgs/climatepub4-kg/
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ema.europa.eu/
+    - contact_type: url
+      value: https://servicedesk.ema.europa.eu/
+    label: European Medicines Agency
+  creation_date: '2026-10-05T00:00:00Z'
+  description: The EU Clinical Trials Register (EU CTR) and the Clinical Trials Information
+    System (CTIS) are the European Medicines Agency's public registries of interventional
+    clinical trials of medicines in the European Union and European Economic Area.
+    The EU Clinical Trials Register, established under Article 11 of Directive 2001/20/EC,
+    gives public access to protocol and summary results information from the EudraCT
+    database for trials started since May 2004, including paediatric trials run outside
+    the EU/EEA as part of a paediatric investigation plan. CTIS, under Clinical Trials
+    Regulation (EU) No 536/2014, has handled all new trial applications since 31 January
+    2023 and became the single entry point for ongoing trials after the transition
+    period ended in January 2025; its public portal publishes trial information, documents
+    and results. The legacy register no longer accepts new trials but remains online
+    as the source for trials authorised under the Directive.
+  domains:
+  - clinical
+  - clinical trials
+  - biomedical
+  - pharmacology
+  homepage_url: https://www.clinicaltrialsregister.eu/
+  id: eu-ctr
+  last_modified_date: '2026-10-05T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.clinicaltrialsregister.eu/disclaimer.html
+    label: EMA terms - reuse permitted with attribution to the EU Clinical Trials
+      Register and the date of access; see also the EMA legal notice
+  name: EU Clinical Trials Register and Clinical Trials Information System
+  products:
+  - category: GraphicalInterface
+    description: Web search interface for the EU Clinical Trials Register, covering
+      protocol and results information for interventional trials authorised under
+      Directive 2001/20/EC, searchable by EudraCT number, condition, medicine, sponsor,
+      country, phase, population age and other fields.
+    format: http
+    id: eu-ctr.search
+    name: EU Clinical Trials Register Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    product_url: https://www.clinicaltrialsregister.eu/ctr-search/search
+  - category: Product
+    description: Plain-text export of EU Clinical Trials Register search results,
+      available as a summary or as full trial details (per member state), up to 20
+      trials per request.
+    format: txt
+    id: eu-ctr.download
+    name: EU Clinical Trials Register Search Results Download
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    product_url: https://www.clinicaltrialsregister.eu/ctr-search/rest/download/full?query=&page=1&mode=current_page
+  - category: GraphicalInterface
+    description: Summary results of EU Clinical Trials Register trials, including
+      trial information, subject disposition, baseline characteristics, end points
+      and adverse events, browsable from search results filtered to trials with results.
+    format: http
+    id: eu-ctr.results
+    name: EU Clinical Trials Register Results
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    product_url: https://www.clinicaltrialsregister.eu/ctr-search/search?query=&resultsstatus=trials-with-results
+  - category: GraphicalInterface
+    description: Public portal of the Clinical Trials Information System (CTIS), the
+      EU registry for trials under Clinical Trials Regulation (EU) No 536/2014, with
+      search over trial details, sponsors, therapeutic areas, recruitment status,
+      documents and results, plus a clinical trial map searchable by medical condition.
+    format: http
+    id: eu-ctr.ctis
+    name: CTIS Public Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    product_url: https://euclinicaltrials.eu/ctis-public/search
+  - category: DocumentationProduct
+    description: Frequently asked questions for the EU Clinical Trials Register, covering
+      register scope, search and download functions, and interpretation of trial and
+      results records.
+    format: pdf
+    id: eu-ctr.faq
+    name: EU Clinical Trials Register FAQ
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    product_file_size: 184110
+    product_url: https://www.clinicaltrialsregister.eu/doc/EU_CTR_FAQ.pdf
+  - category: DocumentationProduct
+    description: European Medicines Agency documentation for CTIS, including the system
+      overview, transition from the Clinical Trials Directive, transparency rules
+      and links to training and support material.
+    format: http
+    id: eu-ctr.ctis.docs
+    name: CTIS Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    product_url: https://www.ema.europa.eu/en/human-regulatory-overview/research-development/clinical-trials-human-medicines/clinical-trials-information-system-ctis
+  - category: GraphicalInterface
+    description: ICTRP Search Portal for searching trial registration records from
+      all ICTRP data providers, with basic and advanced search, filters for phase,
+      results, children, COVID-19, rare diseases and genome editing, browsing by health
+      topic and country, and links to the original registry records.
+    format: http
+    id: who-ictrp.portal
+    name: ICTRP Search Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://trialsearch.who.int/
+  - category: Product
+    description: Export of ICTRP search results (selected records or all records of
+      a search) from the Search Portal in XML or CSV format, free of charge under
+      the WHO ICTRP data terms and conditions.
+    format: xml
+    id: who-ictrp.search-export
+    name: ICTRP Search Results Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database
+  - category: ProgrammingInterface
+    connection_url: https://trialsearch.who.int/TrialService.asmx
+    description: ICTRP Search Portal Web Service, a SOAP/XML web service (operations
+      include GetTrials and GetTrialDetails) for querying the ICTRP database in real
+      time. Access is granted to agreed partners for research purposes, and WHO may
+      charge to recoup costs.
+    format: xml
+    id: who-ictrp.web-service
+    is_public: false
+    name: ICTRP Search Portal Web Service
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service
+  synonyms:
+  - EU CTR
+  - EU Clinical Trials Register
+  - Clinical Trials Information System
+  - CTIS
+  - euclinicaltrials.eu
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Organization
@@ -124912,6 +125141,21 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: motifmap
     product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+  - category: Product
+    description: LSDB Archive copy of FANTOM5 data files, in dated releases (2015
+      to 2019), licensed CC BY 4.0.
+    format: mixed
+    id: lsdb-archive.fantom5
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC BY 4.0
+    name: FANTOM5 (LSDB Archive)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    - relation_type: prov:hadPrimarySource
+      source: fantom5
+    product_url: https://dbarchive.biosciencedbc.jp/data/fantom5/
   publications:
   - authors:
     - The FANTOM Consortium and the RIKEN PMI and CLST (DGT)
@@ -141182,6 +141426,171 @@ resources:
   - General Feature Format
   - Generic Feature Format
   - GFF3
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://ginsim.github.io/contact/
+    - contact_type: email
+      value: ginsim-users@googlegroups.com
+    - contact_type: github
+      value: GINsim
+    label: GINsim team
+  creation_date: '2026-10-05T00:00:00Z'
+  description: The GINsim model repository collects curated logical (Boolean and multi-valued)
+    models of gene regulatory and signalling networks, maintained by the GINsim team
+    (Claudine Chaouiya, Pedro T. Monteiro, Aurelien Naldi and Denis Thieffry). Its
+    70 model pages, from a 1995 phage lambda lysis-lysogeny model to a 2024 promyelocytic
+    leukaemia model, cover development, cell cycle, cell fate, immune cell differentiation
+    and cancer signalling in organisms such as Drosophila, yeasts and mammals. Each
+    page gives the taxon, biological process, authors and reference publications,
+    and provides the model in the GINsim zginml format, with SBML-qual files and Jupyter
+    notebooks for some models. The repository is part of the GINsim website, whose
+    content is available under CC BY-NC-SA 4.0 unless stated otherwise.
+  domains:
+  - systems biology
+  - biological systems
+  homepage_url: https://ginsim.github.io/models/
+  id: ginsim-models
+  last_modified_date: '2026-10-05T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: GINsim Model Repository
+  products:
+  - category: GraphicalInterface
+    description: Web table of the 70 logical models in the repository, filterable
+      by model name, taxon, biological process, year and authors, linking to one page
+      per model with a description, reference publications and model file downloads.
+    format: http
+    id: ginsim-models.repository
+    name: GINsim Model Repository Website
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ginsim-models
+    product_url: https://ginsim.github.io/models/
+  - category: Product
+    compression: zip
+    description: Logical models in the GINsim zginml format (a zip archive holding
+      the GINML XML regulatory graph and associated settings), downloadable from each
+      model page. About 90 zginml files cover the 70 models.
+    format: xml
+    id: ginsim-models.zginml
+    name: GINsim Model Files (zginml)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ginsim-models
+    product_url: https://ginsim.github.io/models/
+  - category: Product
+    description: Logical models exported in SBML Level 3 qualitative models (SBML-qual)
+      format, downloadable from the model pages. Only nine SBML-qual files, for seven
+      models, were present when checked on 2026-10-05; the other models are distributed
+      in zginml only, which GINsim can export to SBML-qual.
+    format: sbml
+    id: ginsim-models.sbml-qual
+    name: GINsim Model Files (SBML-qual)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ginsim-models
+    product_url: https://ginsim.github.io/models/
+  - category: Product
+    description: Directory of the GINsim website GitHub repository (mkdocs branch)
+      holding the source of every model page, with the zginml and SBML-qual model
+      files, Jupyter notebooks, figures and supplementary files. New models can be
+      contributed by pull request.
+    format: mixed
+    id: ginsim-models.github
+    name: GINsim Model Repository Sources on GitHub
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ginsim-models
+    product_url: https://github.com/GINsim/GINsim.github.io/tree/mkdocs/docs/models
+  - category: ProcessProduct
+    description: GINsim (Gene Interaction Network simulation), a Java desktop application
+      for building, simulating and analysing logical models of regulatory networks,
+      including state transition graphs, stable state and trap space search, model
+      reduction and export to formats such as SBML-qual, NuSMV and Petri nets. Version
+      3.1 (January 2026) requires Java 11 or later.
+    format: java
+    id: ginsim-models.software
+    latest_version: '3.1'
+    license:
+      id: https://www.gnu.org/licenses/gpl-3.0.html
+      label: GPL-3.0
+    name: GINsim Software
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ginsim-models
+    product_file_size: 40731588
+    product_url: https://ginsim.github.io/install/GINsim-3.1-with-deps.jar
+    repository: https://github.com/GINsim/GINsim
+  - category: DocumentationProduct
+    description: GINsim user documentation covering the graphical interface, logical
+      regulatory graphs, perturbations, model reduction, simulation and dynamical
+      analyses, and supported import and export formats.
+    format: http
+    id: ginsim-models.docs
+    name: GINsim Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ginsim-models
+    product_url: https://ginsim.github.io/documentation/
+  - category: GraphicalInterface
+    description: Former location of the GINsim model repository on the ginsim.org
+      website, hosted at IGC and INESC-ID before the move to GitHub Pages.
+    format: http
+    id: ginsim-models.legacy-repository
+    name: GINsim Model Repository (ginsim.org)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ginsim-models
+    product_url: http://ginsim.org/models_repository
+    warnings:
+    - When checked on 2026-10-05 the URL returned HTTP 200 but served a domain parking
+      page ("ginsim.org is coming soon") instead of the model repository.
+  publications:
+  - authors:
+    - Aurélien Naldi
+    - Céline Hernandez
+    - Wassim Abou-Jaoudé
+    - Pedro T. Monteiro
+    - Claudine Chaouiya
+    - Denis Thieffry
+    doi: 10.3389/fphys.2018.00646
+    id: doi:10.3389/fphys.2018.00646
+    journal: Frontiers in Physiology
+    preferred: true
+    title: Logical Modeling and Analysis of Cellular Regulatory Networks With GINsim
+      3.0
+    year: '2018'
+  - authors:
+    - Claudine Chaouiya
+    - Aurélien Naldi
+    - Denis Thieffry
+    doi: 10.1007/978-1-61779-361-5_23
+    id: doi:10.1007/978-1-61779-361-5_23
+    journal: Methods in Molecular Biology
+    title: Logical Modelling of Gene Regulatory Networks with GINsim
+    year: '2012'
+  - authors:
+    - A. Gonzalez Gonzalez
+    - A. Naldi
+    - L. Sánchez
+    - D. Thieffry
+    - C. Chaouiya
+    doi: 10.1016/j.biosystems.2005.10.003
+    id: doi:10.1016/j.biosystems.2005.10.003
+    journal: Biosystems
+    title: 'GINsim: A software suite for the qualitative modelling, simulation and
+      analysis of regulatory networks'
+    year: '2006'
+  repository: https://github.com/GINsim/GINsim.github.io
+  synonyms:
+  - GINsim model library
+  - GINsim models
 - activity_status: active
   category: DataSource
   contacts:
@@ -198634,6 +199043,155 @@ resources:
   synonyms: []
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: info@isrctn.com
+    - contact_type: url
+      value: https://www.isrctn.com/page/contact
+    label: ISRCTN Registry, BioMed Central
+  creation_date: '2026-10-05T00:00:00Z'
+  description: ISRCTN is a primary clinical study registry recognised by the World
+    Health Organization International Clinical Trials Registry Platform (WHO ICTRP)
+    and the ICMJE. Launched in 2000 as the International Standard Randomised Controlled
+    Trial Number scheme, it now registers any interventional or observational study
+    that assesses health interventions in humans, and is positioned as the UK's clinical
+    study registry. Each record carries a unique ISRCTN identifier, the WHO 24-item
+    minimum trial registration dataset, plain English summaries, results and IPD sharing
+    plans. The registry is run by ISRCTN, a non-profit, through BioMed Central (Springer
+    Nature), and its records are available through a web search interface and a public
+    XML API.
+  domains:
+  - biomedical
+  - clinical
+  - clinical trials
+  - public health
+  homepage_url: https://www.isrctn.com/
+  id: isrctn
+  last_modified_date: '2026-10-05T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.isrctn.com/page/terms
+    label: CC BY for narrative record fields; CC0 for other metadata (records submitted
+      on or after 2019-01-01)
+  name: ISRCTN Registry
+  products:
+  - category: GraphicalInterface
+    description: Web portal for searching, browsing and viewing ISRCTN study records,
+      with basic and advanced search by condition, intervention, funder, recruitment
+      country and other fields, plus the Transparency Tracker view of results reporting.
+    format: http
+    id: isrctn.portal
+    name: ISRCTN Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.isrctn.com/
+  - category: ProgrammingInterface
+    description: Public, unauthenticated XML API for retrieving single trials (/api/trial/<isrctn>/format/<format>)
+      or querying multiple trials (/api/query/format/<format>?q=<query>&limit=<limit>)
+      with keyword and field constraints. Output formats include the ISRCTN default
+      format and the WHO ICTRP trial format.
+    format: xml
+    id: isrctn.api
+    name: ISRCTN XML API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.isrctn.com/api/query/format/default?q=
+  - category: DocumentationProduct
+    description: API documentation (PDF, prepared by 67 Bricks for Springer Nature)
+      describing the ISRCTN API endpoints, query constraints and output formats.
+    format: pdf
+    id: isrctn.api-docs
+    name: ISRCTN API Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_file_size: 450273
+    product_url: https://www.isrctn.com/editorial/retrieveFile/81786542-9920-48a0-8fce-09f8428ab843/37855
+  - category: DocumentationProduct
+    description: Definitions of the fields in ISRCTN study records and the registration
+      application form.
+    format: http
+    id: isrctn.definitions
+    name: ISRCTN Field Definitions
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.isrctn.com/page/definitions
+  - category: GraphicalInterface
+    description: ICTRP Search Portal for searching trial registration records from
+      all ICTRP data providers, with basic and advanced search, filters for phase,
+      results, children, COVID-19, rare diseases and genome editing, browsing by health
+      topic and country, and links to the original registry records.
+    format: http
+    id: who-ictrp.portal
+    name: ICTRP Search Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://trialsearch.who.int/
+  - category: Product
+    description: Export of ICTRP search results (selected records or all records of
+      a search) from the Search Portal in XML or CSV format, free of charge under
+      the WHO ICTRP data terms and conditions.
+    format: xml
+    id: who-ictrp.search-export
+    name: ICTRP Search Results Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database
+  - category: ProgrammingInterface
+    connection_url: https://trialsearch.who.int/TrialService.asmx
+    description: ICTRP Search Portal Web Service, a SOAP/XML web service (operations
+      include GetTrials and GetTrialDetails) for querying the ICTRP database in real
+      time. Access is granted to agreed partners for research purposes, and WHO may
+      charge to recoup costs.
+    format: xml
+    id: who-ictrp.web-service
+    is_public: false
+    name: ICTRP Search Portal Web Service
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service
+  publications:
+  - authors:
+    - Helene Faure
+    - Iain Hrynaszkiewicz
+    doi: 10.1111/j.1756-5391.2011.01138.x
+    id: doi:10.1111/j.1756-5391.2011.01138.x
+    journal: Journal of Evidence-Based Medicine
+    preferred: true
+    title: 'The ISRCTN Register: achievements and challenges 8 years on'
+    year: '2011'
+  synonyms:
+  - ISRCTN
+  - International Standard Randomised Controlled Trial Number
+  - The UK's Clinical Study Registry
+- activity_status: active
+  category: DataSource
   collection:
   - ber
   contacts:
@@ -203056,6 +203614,21 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: string
     product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+  - category: Product
+    description: LSDB Archive copy of KEGG MEDICUS, the KEGG resource for drugs, diseases
+      and drug labels, in dated releases (2014 to 2023), licensed CC BY-SA 4.0.
+    format: mixed
+    id: lsdb-archive.kegg-medicus
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC BY-SA 4.0
+    name: KEGG MEDICUS (LSDB Archive)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: https://dbarchive.biosciencedbc.jp/data/kegg-medicus/
   publications:
   - authors:
     - Minoru Kanehisa
@@ -204443,7 +205016,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-05T15:19:10Z'
+  last_modified_date: '2026-10-05T16:04:15Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -213225,6 +213798,183 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+- activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://form2.jst.go.jp/s/contact_nbdc
+    label: National Bioscience Database Center (NBDC), Japan Science and Technology
+      Agency
+  creation_date: '2026-10-05T00:00:00Z'
+  description: The Life Science Database Archive (LSDB Archive) is run by the National
+    Bioscience Database Center (NBDC) of the Japan Science and Technology Agency.
+    It preserves datasets from Japanese life science databases for the long term and
+    distributes each one as a whole-database download, with database-level and data-item-level
+    metadata in a common format, a DOI per archived database (prefix 10.18908/lsdba),
+    and a license stated per database. About 90 databases are archived, including
+    FANTOM5, ChIP-Atlas, KEGG MEDICUS, INOH, Open TG-GATEs, BodyParts3D and the NBDC
+    Nikkaji RDF. Creative Commons licenses are the standard, but the version differs
+    by database (for example CC BY 4.0, CC BY-SA 4.0 or CC BY-SA 2.1 Japan).
+  domains:
+  - biomedical
+  - metadata
+  - genomics
+  - organisms
+  - information technology
+  homepage_url: https://dbarchive.biosciencedbc.jp/
+  id: lsdb-archive
+  last_modified_date: '2026-10-05T00:00:00Z'
+  layout: resource_detail
+  license:
+    display_note: 'No license is declared for this resource. This is the most restrictive
+      license (custom) among its sources: kegg.'
+    id: https://www.kegg.jp/feedback/copyright.html
+    inferred_from:
+    - kegg
+    label: By request
+    restrictiveness: custom
+    status: inferred
+    unresolved_sources: []
+  name: Life Science Database Archive
+  products:
+  - category: GraphicalInterface
+    description: English web portal of the LSDB Archive for browsing archived databases,
+      reading each database's description and license, and reaching its download page
+      and TogoDB simple search.
+    format: http
+    id: lsdb-archive.portal
+    name: LSDB Archive Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_url: https://dbarchive.biosciencedbc.jp/index-e.html
+  - category: GraphicalInterface
+    description: Searchable list of data items (individual files and tables) across
+      all archived databases, with item-level metadata.
+    format: http
+    id: lsdb-archive.data-list
+    name: LSDB Archive Data List
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_url: https://dbarchive.biosciencedbc.jp/datameta-list-e.html
+  - category: Product
+    description: Machine-readable catalog of archived databases in JSON, with name,
+      Integbio Database Catalog ID, DOI, creators, categories, organisms, description,
+      original sites and download page for each database. Some records in the file
+      are malformed duplicates.
+    format: json
+    id: lsdb-archive.database-catalog-json
+    name: LSDB Archive Database Catalog (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_file_size: 0
+    product_url: https://dbarchive.biosciencedbc.jp/en/databases.json
+  - category: Product
+    description: Machine-readable catalog of archived databases in CSV, with the same
+      fields as the JSON catalog.
+    format: csv
+    id: lsdb-archive.database-catalog-csv
+    name: LSDB Archive Database Catalog (CSV)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_file_size: 0
+    product_url: https://dbarchive.biosciencedbc.jp/en/databases.csv
+  - category: Product
+    compression: zip
+    description: ZIP bundle of the full English metadata export, containing database-level
+      metadata (dbmeta_en.json) and data-item-level metadata (datameta_en.json) for
+      all archived databases.
+    format: json
+    id: lsdb-archive.metadata-dump
+    name: LSDB Archive Metadata Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_file_size: 0
+    product_url: https://dbarchive.biosciencedbc.jp/en/databases/download.json
+  - category: Product
+    description: Open directory of archived database files, with one folder per database
+      and dated release subfolders plus a LATEST link. File formats vary by database.
+    format: mixed
+    id: lsdb-archive.downloads
+    name: LSDB Archive Download Directory
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_url: https://dbarchive.biosciencedbc.jp/data/
+  - category: Product
+    description: LSDB Archive copy of FANTOM5 data files, in dated releases (2015
+      to 2019), licensed CC BY 4.0.
+    format: mixed
+    id: lsdb-archive.fantom5
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC BY 4.0
+    name: FANTOM5 (LSDB Archive)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    - relation_type: prov:hadPrimarySource
+      source: fantom5
+    product_url: https://dbarchive.biosciencedbc.jp/data/fantom5/
+  - category: Product
+    description: LSDB Archive copy of the INOH pathway database, in dated releases
+      (2011 to 2017), licensed CC BY-SA 2.1 Japan.
+    format: mixed
+    id: lsdb-archive.inoh
+    license:
+      id: https://creativecommons.org/licenses/by-sa/2.1/jp/
+      label: CC BY-SA 2.1 JP
+    name: INOH (LSDB Archive)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    - relation_type: prov:hadPrimarySource
+      source: inoh
+    product_url: https://dbarchive.biosciencedbc.jp/data/inoh/
+  - category: Product
+    description: LSDB Archive copy of KEGG MEDICUS, the KEGG resource for drugs, diseases
+      and drug labels, in dated releases (2014 to 2023), licensed CC BY-SA 4.0.
+    format: mixed
+    id: lsdb-archive.kegg-medicus
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC BY-SA 4.0
+    name: KEGG MEDICUS (LSDB Archive)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    product_url: https://dbarchive.biosciencedbc.jp/data/kegg-medicus/
+  - category: DocumentationProduct
+    description: About page describing the purpose of the archive, its common metadata
+      format and its use of Creative Commons licenses.
+    format: http
+    id: lsdb-archive.about
+    name: About the LSDB Archive
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_url: https://dbarchive.biosciencedbc.jp/contents-en/about/about.html
+  - category: DocumentationProduct
+    description: NBDC terms of service for the LSDB Archive site, in English (PDF).
+    format: pdf
+    id: lsdb-archive.terms
+    name: NBDC Terms of Service
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    product_file_size: 499210
+    product_url: https://dbarchive.biosciencedbc.jp/files/nbdc_riyou_kiyaku_en.pdf
+  synonyms:
+  - LSDB Archive
+  - NBDC Life Science Database Archive
 - activity_status: active
   category: DataSource
   contacts:
@@ -398089,6 +398839,150 @@ resources:
   synonyms:
   - WHO
 - activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://trialsearch.who.int/Contact.aspx
+    label: World Health Organization
+  creation_date: '2026-10-05T00:00:00Z'
+  description: The WHO International Clinical Trials Registry Platform (ICTRP) Search
+    Portal provides a single point of access to clinical trial registration records
+    supplied by the registries of the WHO Registry Network, including the WHO primary
+    registries and ClinicalTrials.gov. Records follow the WHO Trial Registration Data
+    Set, are provided in English, link back to the original registry records, and
+    are bridged (grouped) when several registries hold records for the same trial.
+    Data sets are imported weekly or every four weeks depending on the data provider.
+    The ICTRP is not itself a trial registry.
+  domains:
+  - clinical
+  - clinical trials
+  homepage_url: https://trialsearch.who.int/
+  id: who-ictrp
+  last_modified_date: '2026-10-05T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database
+    label: WHO ICTRP Terms and Conditions for Use of Data
+  name: WHO International Clinical Trials Registry Platform
+  products:
+  - category: GraphicalInterface
+    description: ICTRP Search Portal for searching trial registration records from
+      all ICTRP data providers, with basic and advanced search, filters for phase,
+      results, children, COVID-19, rare diseases and genome editing, browsing by health
+      topic and country, and links to the original registry records.
+    format: http
+    id: who-ictrp.portal
+    name: ICTRP Search Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://trialsearch.who.int/
+  - category: Product
+    description: Export of ICTRP search results (selected records or all records of
+      a search) from the Search Portal in XML or CSV format, free of charge under
+      the WHO ICTRP data terms and conditions.
+    format: xml
+    id: who-ictrp.search-export
+    name: ICTRP Search Results Export
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database
+  - category: ProgrammingInterface
+    connection_url: https://trialsearch.who.int/TrialService.asmx
+    description: ICTRP Search Portal Web Service, a SOAP/XML web service (operations
+      include GetTrials and GetTrialDetails) for querying the ICTRP database in real
+      time. Access is granted to agreed partners for research purposes, and WHO may
+      charge to recoup costs.
+    format: xml
+    id: who-ictrp.web-service
+    is_public: false
+    name: ICTRP Search Portal Web Service
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: eu-ctr
+    - relation_type: prov:hadPrimarySource
+      source: isrctn
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service
+  - category: DocumentationProduct
+    description: List of the primary registries in the WHO Registry Network that meet
+      WHO criteria for content, quality, accessibility, unique identification, technical
+      capacity and administration, with registry profiles and website links.
+    format: http
+    id: who-ictrp.primary-registries
+    name: WHO Primary Registries List
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/primary-registries
+  - category: DocumentationProduct
+    description: List of the data providers that supply trial records to the ICTRP
+      Search Portal, including the primary registries and ClinicalTrials.gov.
+    format: http
+    id: who-ictrp.data-providers
+    name: ICTRP Data Providers List
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/data-providers
+  - category: DocumentationProduct
+    description: Documentation of the WHO Trial Registration Data Set, the minimum
+      set of items a trial record must contain to be included in the ICTRP, with archived
+      earlier versions.
+    format: http
+    id: who-ictrp.who-data-set
+    name: WHO Trial Registration Data Set
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set
+  - category: DocumentationProduct
+    description: WHO ICTRP website describing the platform, the registry network,
+      the search portal and its services, trial registration standards, and the Universal
+      Trial Number.
+    format: http
+    id: who-ictrp.docs
+    name: ICTRP Website
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who-ictrp
+    product_url: https://www.who.int/tools/clinical-trials-registry-platform
+  publications:
+  - authors:
+    - Ida Sim
+    - An-Wen Chan
+    - A Metin Gülmezoglu
+    - Tim Evans
+    - Tikki Pang
+    doi: 10.1016/s0140-6736(06)68708-4
+    id: doi:10.1016/s0140-6736(06)68708-4
+    journal: The Lancet
+    preferred: true
+    title: 'Clinical trial registration: transparency is the watchword'
+    year: '2006'
+  synonyms:
+  - ICTRP
+  - WHO ICTRP
+  - ICTRP Search Portal
+- activity_status: active
   category: KnowledgeGraph
   collection:
   - okn
@@ -418515,6 +419409,21 @@ resources:
       source: innatedb
     - relation_type: prov:wasDerivedFrom
       source: biofactoid
+  - category: Product
+    description: LSDB Archive copy of the INOH pathway database, in dated releases
+      (2011 to 2017), licensed CC BY-SA 2.1 Japan.
+    format: mixed
+    id: lsdb-archive.inoh
+    license:
+      id: https://creativecommons.org/licenses/by-sa/2.1/jp/
+      label: CC BY-SA 2.1 JP
+    name: INOH (LSDB Archive)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: lsdb-archive
+    - relation_type: prov:hadPrimarySource
+      source: inoh
+    product_url: https://dbarchive.biosciencedbc.jp/data/inoh/
   publications:
   - authors:
     - S. Yamamoto

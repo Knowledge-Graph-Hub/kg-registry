@@ -3770,11 +3770,11 @@ kgr:clinicalkg a schema1:KnowledgeGraph ;
 kgr:clinicaltrialsgov a schema1:DataSource ;
     rdfs:label "ClinicalTrials.gov" ;
     dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "ClinicalTrials.gov is a database of privately and publicly funded clinical studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and WHO International Clinical Trials Registry Platform (ICTRP)." ;
+    dcterms:description "ClinicalTrials.gov is a database of privately and publicly funded clinical studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and is a data provider to the WHO International Clinical Trials Registry Platform (ICTRP). studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and WHO International Clinical Trials Registry Platform (ICTRP)." ;
     dcterms:identifier "clinicaltrialsgov" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/21366476/> ;
     dcterms:license <https://clinicaltrials.gov/about-site/terms-conditions> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aact.database,
         kgr:aact.downloads,
@@ -3814,7 +3814,10 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
         kgr:ttd.target-compound,
         kgr:ttd.target-disease,
         kgr:ttd.target-drug,
-        kgr:ttd.targets-raw ;
+        kgr:ttd.targets-raw,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service ;
     schema1:identifier "clinicaltrials" ;
     schema1:name "ClinicalTrials.gov" ;
     doap:repository <https://github.com/ctti-clinicaltrials/aact> ;
@@ -7815,6 +7818,35 @@ kgr:esgf a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://esgf.llnl.gov/> .
 
+kgr:eu-ctr a schema1:DataSource ;
+    rdfs:label "EU Clinical Trials Register and Clinical Trials Information System" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The EU Clinical Trials Register (EU CTR) and the Clinical Trials Information System (CTIS) are the European Medicines Agency's public registries of interventional clinical trials of medicines in the European Union and European Economic Area. The EU Clinical Trials Register, established under Article 11 of Directive 2001/20/EC, gives public access to protocol and summary results information from the EudraCT database for trials started since May 2004, including paediatric trials run outside the EU/EEA as part of a paediatric investigation plan. CTIS, under Clinical Trials Regulation (EU) No 536/2014, has handled all new trial applications since 31 January 2023 and became the single entry point for ongoing trials after the transition period ended in January 2025; its public portal publishes trial information, documents and results. The legacy register no longer accepts new trials but remains online as the source for trials authorised under the Directive." ;
+    dcterms:identifier "eu-ctr" ;
+    dcterms:license <https://www.clinicaltrialsregister.eu/disclaimer.html> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:eu-ctr.ctis,
+        kgr:eu-ctr.ctis.docs,
+        kgr:eu-ctr.download,
+        kgr:eu-ctr.faq,
+        kgr:eu-ctr.results,
+        kgr:eu-ctr.search,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service ;
+    schema1:name "EU Clinical Trials Register and Clinical Trials Information System" ;
+    skos:altLabel "CTIS",
+        "Clinical Trials Information System",
+        "EU CTR",
+        "EU Clinical Trials Register",
+        "euclinicaltrials.eu" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "clinical trials",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.clinicaltrialsregister.eu/> .
+
 kgr:eu-knowledge-graph a schema1:KnowledgeGraph ;
     rdfs:label "EU Knowledge Graph" ;
     dcterms:created "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
@@ -8180,7 +8212,8 @@ kgr:fantom5 a schema1:DataSource ;
         kgr:fantom5.sstar,
         kgr:fantom5.zenbu,
         kgr:genecards.web.interface,
-        kgr:genomickb.graph ;
+        kgr:genomickb.graph,
+        kgr:lsdb-archive.fantom5 ;
     schema1:name "FANTOM5" ;
     skos:inScheme "anatomy and development",
         "gene expression profiling",
@@ -9454,6 +9487,32 @@ kgr:ghr a schema1:DataSource ;
     adms:status "Inactive" ;
     foaf:homepage <https://medlineplus.gov/genetics/> ;
     foaf:maker kgr:ncbi .
+
+kgr:ginsim-models a schema1:DataSource ;
+    rdfs:label "GINsim Model Repository" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The GINsim model repository collects curated logical (Boolean and multi-valued) models of gene regulatory and signalling networks, maintained by the GINsim team (Claudine Chaouiya, Pedro T. Monteiro, Aurelien Naldi and Denis Thieffry). Its 70 model pages, from a 1995 phage lambda lysis-lysogeny model to a 2024 promyelocytic leukaemia model, cover development, cell cycle, cell fate, immune cell differentiation and cancer signalling in organisms such as Drosophila, yeasts and mammals. Each page gives the taxon, biological process, authors and reference publications, and provides the model in the GINsim zginml format, with SBML-qual files and Jupyter notebooks for some models. The repository is part of the GINsim website, whose content is available under CC BY-NC-SA 4.0 unless stated otherwise." ;
+    dcterms:identifier "ginsim-models" ;
+    dcterms:isReferencedBy <doi:10.1007/978-1-61779-361-5_23>,
+        <doi:10.1016/j.biosystems.2005.10.003>,
+        <doi:10.3389/fphys.2018.00646> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ginsim-models.docs,
+        kgr:ginsim-models.github,
+        kgr:ginsim-models.legacy-repository,
+        kgr:ginsim-models.repository,
+        kgr:ginsim-models.sbml-qual,
+        kgr:ginsim-models.software,
+        kgr:ginsim-models.zginml ;
+    schema1:name "GINsim Model Repository" ;
+    doap:repository <https://github.com/GINsim/GINsim.github.io> ;
+    skos:altLabel "GINsim model library",
+        "GINsim models" ;
+    skos:inScheme "biological systems",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ginsim.github.io/models/> .
 
 kgr:glkb a schema1:DataSource ;
     rdfs:label "GLKB" ;
@@ -12210,6 +12269,7 @@ kgr:inoh a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by-nc/3.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:inoh.pathways,
+        kgr:lsdb-archive.inoh,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
         kgr:pathwaycommons.gmt,
@@ -12527,6 +12587,32 @@ kgr:irefindex a schema1:Aggregator ;
     adms:status "Inactive" ;
     foaf:homepage <https://irefindex.vib.be/> .
 
+kgr:isrctn a schema1:DataSource ;
+    rdfs:label "ISRCTN Registry" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ISRCTN is a primary clinical study registry recognised by the World Health Organization International Clinical Trials Registry Platform (WHO ICTRP) and the ICMJE. Launched in 2000 as the International Standard Randomised Controlled Trial Number scheme, it now registers any interventional or observational study that assesses health interventions in humans, and is positioned as the UK's clinical study registry. Each record carries a unique ISRCTN identifier, the WHO 24-item minimum trial registration dataset, plain English summaries, results and IPD sharing plans. The registry is run by ISRCTN, a non-profit, through BioMed Central (Springer Nature), and its records are available through a web search interface and a public XML API." ;
+    dcterms:identifier "isrctn" ;
+    dcterms:isReferencedBy <doi:10.1111/j.1756-5391.2011.01138.x> ;
+    dcterms:license <https://www.isrctn.com/page/terms> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:isrctn.api,
+        kgr:isrctn.api-docs,
+        kgr:isrctn.definitions,
+        kgr:isrctn.portal,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service ;
+    schema1:name "ISRCTN Registry" ;
+    skos:altLabel "ISRCTN",
+        "International Standard Randomised Controlled Trial Number",
+        "The UK's Clinical Study Registry" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "clinical trials",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.isrctn.com/> .
+
 kgr:itis a schema1:DataSource ;
     rdfs:label "ITIS" ;
     dcterms:created "2025-09-03T00:00:00+00:00"^^xsd:dateTime ;
@@ -12657,6 +12743,7 @@ kgr:kegg a schema1:DataSource ;
         kgr:kegg.webapps,
         kgr:kinace.portal,
         kgr:lncrnalyzr.graph,
+        kgr:lsdb-archive.kegg-medicus,
         kgr:micromap.api,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
@@ -12938,7 +13025,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-05T15:19:10+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-05T16:04:15+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -13642,6 +13729,35 @@ kgr:louisiana-tumor-registry a schema1:DataSource ;
         "public health" ;
     adms:status "Active" ;
     foaf:homepage <https://publichealth.lsuhsc.edu/louisiana-tumor-registry/> .
+
+kgr:lsdb-archive a schema1:Aggregator ;
+    rdfs:label "Life Science Database Archive" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Life Science Database Archive (LSDB Archive) is run by the National Bioscience Database Center (NBDC) of the Japan Science and Technology Agency. It preserves datasets from Japanese life science databases for the long term and distributes each one as a whole-database download, with database-level and data-item-level metadata in a common format, a DOI per archived database (prefix 10.18908/lsdba), and a license stated per database. About 90 databases are archived, including FANTOM5, ChIP-Atlas, KEGG MEDICUS, INOH, Open TG-GATEs, BodyParts3D and the NBDC Nikkaji RDF. Creative Commons licenses are the standard, but the version differs by database (for example CC BY 4.0, CC BY-SA 4.0 or CC BY-SA 2.1 Japan)." ;
+    dcterms:identifier "lsdb-archive" ;
+    dcterms:license <https://www.kegg.jp/feedback/copyright.html> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:lsdb-archive.about,
+        kgr:lsdb-archive.data-list,
+        kgr:lsdb-archive.database-catalog-csv,
+        kgr:lsdb-archive.database-catalog-json,
+        kgr:lsdb-archive.downloads,
+        kgr:lsdb-archive.fantom5,
+        kgr:lsdb-archive.inoh,
+        kgr:lsdb-archive.kegg-medicus,
+        kgr:lsdb-archive.metadata-dump,
+        kgr:lsdb-archive.portal,
+        kgr:lsdb-archive.terms ;
+    schema1:name "Life Science Database Archive" ;
+    skos:altLabel "LSDB Archive",
+        "NBDC Life Science Database Archive" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "information technology",
+        "metadata",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://dbarchive.biosciencedbc.jp/> .
 
 kgr:m-csa a schema1:DataSource ;
     rdfs:label "M-CSA" ;
@@ -26172,6 +26288,30 @@ kgr:web-of-science a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/> .
 
+kgr:who-ictrp a schema1:Aggregator ;
+    rdfs:label "WHO International Clinical Trials Registry Platform" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The WHO International Clinical Trials Registry Platform (ICTRP) Search Portal provides a single point of access to clinical trial registration records supplied by the registries of the WHO Registry Network, including the WHO primary registries and ClinicalTrials.gov. Records follow the WHO Trial Registration Data Set, are provided in English, link back to the original registry records, and are bridged (grouped) when several registries hold records for the same trial. Data sets are imported weekly or every four weeks depending on the data provider. The ICTRP is not itself a trial registry." ;
+    dcterms:identifier "who-ictrp" ;
+    dcterms:isReferencedBy <doi:10.1016/s0140-6736(06)68708-4> ;
+    dcterms:license <https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:who-ictrp.data-providers,
+        kgr:who-ictrp.docs,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.primary-registries,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service,
+        kgr:who-ictrp.who-data-set ;
+    schema1:name "WHO International Clinical Trials Registry Platform" ;
+    skos:altLabel "ICTRP",
+        "ICTRP Search Portal",
+        "WHO ICTRP" ;
+    skos:inScheme "clinical",
+        "clinical trials" ;
+    adms:status "Active" ;
+    foaf:homepage <https://trialsearch.who.int/> .
+
 kgr:wikidata a schema1:KnowledgeGraph ;
     rdfs:label "Wikidata" ;
     dcterms:created "2025-10-31T00:00:00+00:00"^^xsd:dateTime ;
@@ -31346,6 +31486,36 @@ kgr:esgf.search a schema1:ProgrammingInterface ;
     dcterms:description "The ESGF search interface (MetaGrid / AIMS) provides discovery and access to climate dataset metadata across the federation, including CMIP model output indexed by source_id, experiment_id, variable_id, and activity_id." ;
     schema1:url <https://metagrid.esgf-west.org/search> .
 
+kgr:eu-ctr.ctis a schema1:GraphicalInterface ;
+    rdfs:label "CTIS Public Portal" ;
+    dcterms:description "Public portal of the Clinical Trials Information System (CTIS), the EU registry for trials under Clinical Trials Regulation (EU) No 536/2014, with search over trial details, sponsors, therapeutic areas, recruitment status, documents and results, plus a clinical trial map searchable by medical condition." ;
+    schema1:url <https://euclinicaltrials.eu/ctis-public/search> .
+
+kgr:eu-ctr.ctis.docs a schema1:DocumentationProduct ;
+    rdfs:label "CTIS Documentation" ;
+    dcterms:description "European Medicines Agency documentation for CTIS, including the system overview, transition from the Clinical Trials Directive, transparency rules and links to training and support material." ;
+    schema1:url <https://www.ema.europa.eu/en/human-regulatory-overview/research-development/clinical-trials-human-medicines/clinical-trials-information-system-ctis> .
+
+kgr:eu-ctr.download a schema1:Product ;
+    rdfs:label "EU Clinical Trials Register Search Results Download" ;
+    dcterms:description "Plain-text export of EU Clinical Trials Register search results, available as a summary or as full trial details (per member state), up to 20 trials per request." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/ctr-search/rest/download/full?query=&page=1&mode=current_page> .
+
+kgr:eu-ctr.faq a schema1:DocumentationProduct ;
+    rdfs:label "EU Clinical Trials Register FAQ" ;
+    dcterms:description "Frequently asked questions for the EU Clinical Trials Register, covering register scope, search and download functions, and interpretation of trial and results records." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/doc/EU_CTR_FAQ.pdf> .
+
+kgr:eu-ctr.results a schema1:GraphicalInterface ;
+    rdfs:label "EU Clinical Trials Register Results" ;
+    dcterms:description "Summary results of EU Clinical Trials Register trials, including trial information, subject disposition, baseline characteristics, end points and adverse events, browsable from search results filtered to trials with results." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/ctr-search/search?query=&resultsstatus=trials-with-results> .
+
+kgr:eu-ctr.search a schema1:GraphicalInterface ;
+    rdfs:label "EU Clinical Trials Register Search" ;
+    dcterms:description "Web search interface for the EU Clinical Trials Register, covering protocol and results information for interventional trials authorised under Directive 2001/20/EC, searchable by EudraCT number, condition, medicine, sponsor, country, phase, population age and other fields." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/ctr-search/search> .
+
 kgr:eu-knowledge-graph.api a schema1:ProgrammingInterface ;
     rdfs:label "EU Knowledge Graph Wikibase API" ;
     dcterms:description "MediaWiki and Wikibase action API of the EU Knowledge Graph instance, supporting entity retrieval, search, and change tracking. Verified responding on 2026-08-06." ;
@@ -32428,6 +32598,41 @@ kgr:ghr.portal a schema1:GraphicalInterface ;
     rdfs:label "MedlinePlus Genetics Portal" ;
     dcterms:description "MedlinePlus Genetics portal containing migrated Genetics Home Reference content." ;
     schema1:url <https://medlineplus.gov/genetics/> .
+
+kgr:ginsim-models.docs a schema1:DocumentationProduct ;
+    rdfs:label "GINsim Documentation" ;
+    dcterms:description "GINsim user documentation covering the graphical interface, logical regulatory graphs, perturbations, model reduction, simulation and dynamical analyses, and supported import and export formats." ;
+    schema1:url <https://ginsim.github.io/documentation/> .
+
+kgr:ginsim-models.github a schema1:Product ;
+    rdfs:label "GINsim Model Repository Sources on GitHub" ;
+    dcterms:description "Directory of the GINsim website GitHub repository (mkdocs branch) holding the source of every model page, with the zginml and SBML-qual model files, Jupyter notebooks, figures and supplementary files. New models can be contributed by pull request." ;
+    schema1:url <https://github.com/GINsim/GINsim.github.io/tree/mkdocs/docs/models> .
+
+kgr:ginsim-models.legacy-repository a schema1:GraphicalInterface ;
+    rdfs:label "GINsim Model Repository (ginsim.org)" ;
+    dcterms:description "Former location of the GINsim model repository on the ginsim.org website, hosted at IGC and INESC-ID before the move to GitHub Pages." ;
+    schema1:url <http://ginsim.org/models_repository> .
+
+kgr:ginsim-models.repository a schema1:GraphicalInterface ;
+    rdfs:label "GINsim Model Repository Website" ;
+    dcterms:description "Web table of the 70 logical models in the repository, filterable by model name, taxon, biological process, year and authors, linking to one page per model with a description, reference publications and model file downloads." ;
+    schema1:url <https://ginsim.github.io/models/> .
+
+kgr:ginsim-models.sbml-qual a schema1:Product ;
+    rdfs:label "GINsim Model Files (SBML-qual)" ;
+    dcterms:description "Logical models exported in SBML Level 3 qualitative models (SBML-qual) format, downloadable from the model pages. Only nine SBML-qual files, for seven models, were present when checked on 2026-10-05; the other models are distributed in zginml only, which GINsim can export to SBML-qual." ;
+    schema1:url <https://ginsim.github.io/models/> .
+
+kgr:ginsim-models.software a schema1:ProcessProduct ;
+    rdfs:label "GINsim Software" ;
+    dcterms:description "GINsim (Gene Interaction Network simulation), a Java desktop application for building, simulating and analysing logical models of regulatory networks, including state transition graphs, stable state and trap space search, model reduction and export to formats such as SBML-qual, NuSMV and Petri nets. Version 3.1 (January 2026) requires Java 11 or later." ;
+    schema1:url <https://ginsim.github.io/install/GINsim-3.1-with-deps.jar> .
+
+kgr:ginsim-models.zginml a schema1:Product ;
+    rdfs:label "GINsim Model Files (zginml)" ;
+    dcterms:description "Logical models in the GINsim zginml format (a zip archive holding the GINML XML regulatory graph and associated settings), downloadable from each model page. About 90 zginml files cover the 70 models." ;
+    schema1:url <https://ginsim.github.io/models/> .
 
 kgr:globi.api a schema1:ProgrammingInterface ;
     rdfs:label "GloBI API" ;
@@ -34146,6 +34351,26 @@ kgr:irefindex.irefweb a schema1:GraphicalInterface ;
     rdfs:label "iRefWeb" ;
     dcterms:description "Web interface for navigating the global protein-protein interaction landscape" .
 
+kgr:isrctn.api a schema1:ProgrammingInterface ;
+    rdfs:label "ISRCTN XML API" ;
+    dcterms:description "Public, unauthenticated XML API for retrieving single trials (/api/trial/<isrctn>/format/<format>) or querying multiple trials (/api/query/format/<format>?q=<query>&limit=<limit>) with keyword and field constraints. Output formats include the ISRCTN default format and the WHO ICTRP trial format." ;
+    schema1:url <https://www.isrctn.com/api/query/format/default?q=> .
+
+kgr:isrctn.api-docs a schema1:DocumentationProduct ;
+    rdfs:label "ISRCTN API Documentation" ;
+    dcterms:description "API documentation (PDF, prepared by 67 Bricks for Springer Nature) describing the ISRCTN API endpoints, query constraints and output formats." ;
+    schema1:url <https://www.isrctn.com/editorial/retrieveFile/81786542-9920-48a0-8fce-09f8428ab843/37855> .
+
+kgr:isrctn.definitions a schema1:DocumentationProduct ;
+    rdfs:label "ISRCTN Field Definitions" ;
+    dcterms:description "Definitions of the fields in ISRCTN study records and the registration application form." ;
+    schema1:url <https://www.isrctn.com/page/definitions> .
+
+kgr:isrctn.portal a schema1:GraphicalInterface ;
+    rdfs:label "ISRCTN Search" ;
+    dcterms:description "Web portal for searching, browsing and viewing ISRCTN study records, with basic and advanced search by condition, intervention, funder, recruitment country and other fields, plus the Transparency Tracker view of results reporting." ;
+    schema1:url <https://www.isrctn.com/> .
+
 kgr:itis.api a schema1:ProgrammingInterface ;
     rdfs:label "ITIS REST Services" ;
     dcterms:description "REST JSON services providing programmatic access to taxonomic records, synonyms, hierarchy, and search utilities" ;
@@ -34900,6 +35125,46 @@ kgr:louisiana-tumor-registry.data-request a schema1:GraphicalInterface ;
     rdfs:label "Louisiana Tumor Registry Data Request" ;
     dcterms:description "Web page describing how researchers and other parties may request Louisiana Tumor Registry data, including data use agreement and request procedures." ;
     schema1:url <https://publichealth.lsuhsc.edu/louisiana-tumor-registry/data-usestatistics/data-request.aspx> .
+
+kgr:lsdb-archive.about a schema1:DocumentationProduct ;
+    rdfs:label "About the LSDB Archive" ;
+    dcterms:description "About page describing the purpose of the archive, its common metadata format and its use of Creative Commons licenses." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/contents-en/about/about.html> .
+
+kgr:lsdb-archive.data-list a schema1:GraphicalInterface ;
+    rdfs:label "LSDB Archive Data List" ;
+    dcterms:description "Searchable list of data items (individual files and tables) across all archived databases, with item-level metadata." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/datameta-list-e.html> .
+
+kgr:lsdb-archive.database-catalog-csv a schema1:Product ;
+    rdfs:label "LSDB Archive Database Catalog (CSV)" ;
+    dcterms:description "Machine-readable catalog of archived databases in CSV, with the same fields as the JSON catalog." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/en/databases.csv> .
+
+kgr:lsdb-archive.database-catalog-json a schema1:Product ;
+    rdfs:label "LSDB Archive Database Catalog (JSON)" ;
+    dcterms:description "Machine-readable catalog of archived databases in JSON, with name, Integbio Database Catalog ID, DOI, creators, categories, organisms, description, original sites and download page for each database. Some records in the file are malformed duplicates." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/en/databases.json> .
+
+kgr:lsdb-archive.downloads a schema1:Product ;
+    rdfs:label "LSDB Archive Download Directory" ;
+    dcterms:description "Open directory of archived database files, with one folder per database and dated release subfolders plus a LATEST link. File formats vary by database." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/> .
+
+kgr:lsdb-archive.metadata-dump a schema1:Product ;
+    rdfs:label "LSDB Archive Metadata Export" ;
+    dcterms:description "ZIP bundle of the full English metadata export, containing database-level metadata (dbmeta_en.json) and data-item-level metadata (datameta_en.json) for all archived databases." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/en/databases/download.json> .
+
+kgr:lsdb-archive.portal a schema1:GraphicalInterface ;
+    rdfs:label "LSDB Archive Portal" ;
+    dcterms:description "English web portal of the LSDB Archive for browsing archived databases, reading each database's description and license, and reaching its download page and TogoDB simple search." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/index-e.html> .
+
+kgr:lsdb-archive.terms a schema1:DocumentationProduct ;
+    rdfs:label "NBDC Terms of Service" ;
+    dcterms:description "NBDC terms of service for the LSDB Archive site, in English (PDF)." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/files/nbdc_riyou_kiyaku_en.pdf> .
 
 kgr:m-csa.download a schema1:DocumentationProduct ;
     rdfs:label "M-CSA Download and API" ;
@@ -42336,6 +42601,26 @@ kgr:who a schema1:Aggregator,
     adms:status "Active" ;
     foaf:homepage <https://www.who.int/> .
 
+kgr:who-ictrp.data-providers a schema1:DocumentationProduct ;
+    rdfs:label "ICTRP Data Providers List" ;
+    dcterms:description "List of the data providers that supply trial records to the ICTRP Search Portal, including the primary registries and ClinicalTrials.gov." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/data-providers> .
+
+kgr:who-ictrp.docs a schema1:DocumentationProduct ;
+    rdfs:label "ICTRP Website" ;
+    dcterms:description "WHO ICTRP website describing the platform, the registry network, the search portal and its services, trial registration standards, and the Universal Trial Number." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform> .
+
+kgr:who-ictrp.primary-registries a schema1:DocumentationProduct ;
+    rdfs:label "WHO Primary Registries List" ;
+    dcterms:description "List of the primary registries in the WHO Registry Network that meet WHO criteria for content, quality, accessibility, unique identification, technical capacity and administration, with registry profiles and website links." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/primary-registries> .
+
+kgr:who-ictrp.who-data-set a schema1:DocumentationProduct ;
+    rdfs:label "WHO Trial Registration Data Set" ;
+    dcterms:description "Documentation of the WHO Trial Registration Data Set, the minimum set of items a trial record must contain to be included in the ICTRP, with archived earlier versions." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set> .
+
 kgr:who.data-platform a schema1:GraphicalInterface ;
     rdfs:label "WHO Data Platform" ;
     dcterms:description "WHO Data Platform landing page linking WHO data portals including the Global Health Observatory, immunization data, GLAAS, NCD data, SRHR policy data, and other health data sites." ;
@@ -43582,6 +43867,21 @@ kgr:kg-predict.ad_predictions a schema1:Product ;
     rdfs:label "AD Drug Predictions" ;
     dcterms:description "Alzheimer's disease case study drug repurposing predictions" ;
     schema1:url <http://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv> .
+
+kgr:lsdb-archive.fantom5 a schema1:Product ;
+    rdfs:label "FANTOM5 (LSDB Archive)" ;
+    dcterms:description "LSDB Archive copy of FANTOM5 data files, in dated releases (2015 to 2019), licensed CC BY 4.0." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/fantom5/> .
+
+kgr:lsdb-archive.inoh a schema1:Product ;
+    rdfs:label "INOH (LSDB Archive)" ;
+    dcterms:description "LSDB Archive copy of the INOH pathway database, in dated releases (2011 to 2017), licensed CC BY-SA 2.1 Japan." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/inoh/> .
+
+kgr:lsdb-archive.kegg-medicus a schema1:Product ;
+    rdfs:label "KEGG MEDICUS (LSDB Archive)" ;
+    dcterms:description "LSDB Archive copy of KEGG MEDICUS, the KEGG resource for drugs, diseases and drug labels, in dated releases (2014 to 2023), licensed CC BY-SA 4.0." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/kegg-medicus/> .
 
 kgr:markerdb.proteins.tsv a schema1:Product ;
     rdfs:label "MarkerDB Protein Biomarkers TSV" ;
@@ -47180,6 +47480,21 @@ kgr:unibiomap.pathway_desc a schema1:GraphProduct ;
     rdfs:label "UniBioMap Pathway Descriptions" ;
     dcterms:description "UniBioMap pathway entity descriptions." ;
     schema1:url <https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json> .
+
+kgr:who-ictrp.portal a schema1:GraphicalInterface ;
+    rdfs:label "ICTRP Search Portal" ;
+    dcterms:description "ICTRP Search Portal for searching trial registration records from all ICTRP data providers, with basic and advanced search, filters for phase, results, children, COVID-19, rare diseases and genome editing, browsing by health topic and country, and links to the original registry records." ;
+    schema1:url <https://trialsearch.who.int/> .
+
+kgr:who-ictrp.search-export a schema1:Product ;
+    rdfs:label "ICTRP Search Results Export" ;
+    dcterms:description "Export of ICTRP search results (selected records or all records of a search) from the Search Portal in XML or CSV format, free of charge under the WHO ICTRP data terms and conditions." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database> .
+
+kgr:who-ictrp.web-service a schema1:ProgrammingInterface ;
+    rdfs:label "ICTRP Search Portal Web Service" ;
+    dcterms:description "ICTRP Search Portal Web Service, a SOAP/XML web service (operations include GetTrials and GetTrialDetails) for querying the ICTRP database in real time. Access is granted to agreed partners for research purposes, and WHO may charge to recoup costs." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service> .
 
 kgr:activedriverdb.downloads a schema1:Product ;
     rdfs:label "ActiveDriverDB Downloads" ;
