@@ -8,6 +8,7 @@ name: Bioregistry RDF (Turtle)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bioregistry
+product_file_size: 786214
 product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/rdf/bioregistry.ttl
 layout: product_detail
 ---

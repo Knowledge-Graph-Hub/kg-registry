@@ -61,6 +61,7 @@ biohealth	Bio-Health KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/bioh
 biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resource/biolink/biolink.md
 biomarker	BiomarkerKB	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarker/biomarker.md
 biomarkerkg	BiomarkerKB KG	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarkerkg/biomarkerkg.md
+biomodels	BioModels	DataSource	https://www.ebi.ac.uk/biomodels/	resource/biomodels/biomodels.md
 biomuta	BioMuta	DataSource	https://hivelab.biochemistry.gwu.edu/biomuta	resource/biomuta/biomuta.md
 bioregistry	Bioregistry	Aggregator	https://bioregistry.io/	resource/bioregistry/bioregistry.md
 biostudies	BioStudies	DataSource	https://www.ebi.ac.uk/biostudies/	resource/biostudies/biostudies.md
@@ -158,6 +159,7 @@ cvdo	Cardiovascular Disease Ontology	Ontology	https://github.com/OpenLHS/CVDO	re
 cvx	Vaccine Administered Code Set (CVX)	DataSource	https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx	resource/cvx/cvx.md
 cytoscape	Cytoscape	DataSource	https://cytoscape.org/	resource/cytoscape/cytoscape.md
 darwins-ark	Darwin's Ark	DataSource	https://darwinsark.org/	resource/darwins-ark/darwins-ark.md
+dbgap	dbGaP	DataSource	https://www.ncbi.nlm.nih.gov/gap/	resource/dbgap/dbgap.md
 dbpedia	DBpedia	KnowledgeGraph	https://www.dbpedia.org/	resource/dbpedia/dbpedia.md
 dbptm	dbPTM	DataSource	https://biomics.lab.nycu.edu.tw/dbPTM/	resource/dbptm/dbptm.md
 dbsno	dbSNO	DataSource	https://biomics.lab.nycu.edu.tw/dbSNO/index.php	resource/dbsno/dbsno.md
@@ -198,6 +200,7 @@ edam	EDAM Ontology	Ontology	https://edamontology.org/	resource/edam/edam.md
 edrr-invasive-catalog	Catalog of U.S. Federal Early Detection/Rapid Response Invasive Species Databases and Tools	DataSource	https://www.sciencebase.gov/catalog/item/5bf87027e4b045bfcae2ece6	resource/edrr-invasive-catalog/edrr-invasive-catalog.md
 effas-kpi	EFFAS KPIs for ESG	DataModel	https://effas.com/	resource/effas-kpi/effas-kpi.md
 efip	eFIP	DataSource	https://proteininformationresource.org/efip/	resource/efip/efip.md
+ega	European Genome-phenome Archive	DataSource	https://ega-archive.org/	resource/ega/ega.md
 eggnog	eggNOG	DataSource	https://eggnogdb.org/	resource/eggnog/eggnog.md
 ehda	Human developmental anatomy, timed version	Ontology	http://genex.hgu.mrc.ac.uk/	resource/ehda/ehda.md
 ehdaa	Human developmental anatomy, abstract version	Ontology	https://obofoundry.org/ontology/ehdaa	resource/ehdaa/ehdaa.md
@@ -235,6 +238,7 @@ erccrbp	ERCC RNA Binding Protein Dataset	DataSource	https://exrna.org/	resource/
 erccreg	ERCC Regulatory Element Dataset	DataSource	https://exrna.org/	resource/erccreg/erccreg.md
 ero	eagle-i resource ontology	Ontology	https://open.med.harvard.edu/wiki/display/eaglei/Ontology	resource/ero/ero.md
 esgf	Earth System Grid Federation (ESGF)	DataSource	https://esgf.llnl.gov/	resource/esgf/esgf.md
+eu-ctr	EU Clinical Trials Register and Clinical Trials Information System	DataSource	https://www.clinicaltrialsregister.eu/	resource/eu-ctr/eu-ctr.md
 eu-knowledge-graph	EU Knowledge Graph	KnowledgeGraph	https://linkedopendata.eu/wiki/The_EU_Knowledge_Graph	resource/eu-knowledge-graph/eu-knowledge-graph.md
 eupath	VEuPathDB ontology	Ontology	https://github.com/VEuPathDB-ontology/VEuPathDB-ontology	resource/eupath/eupath.md
 eupathdb	Eukaryotic Pathogen Database (EuPathDB)	DataSource	https://veupathdb.org/	resource/eupathdb/eupathdb.md
@@ -288,6 +292,7 @@ geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-
 geoconnex	GEOCONNEX	KnowledgeGraph	https://docs.geoconnex.us/about/intro	resource/geoconnex/geoconnex.md
 geonames	GeoNames	DataSource	https://www.geonames.org/	resource/geonames/geonames.md
 gff	GFF	DataModel	https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md	resource/gff/gff.md
+ginsim-models	GINsim Model Repository	DataSource	https://ginsim.github.io/models/	resource/ginsim-models/ginsim-models.md
 glkb	GLKB	DataSource	https://glkb.org/	resource/glkb/glkb.md
 globi	Global Biotic Interactions (GloBI)	KnowledgeGraph	https://www.globalbioticinteractions.org/	resource/globi/globi.md
 glycocoo	GlycoConjugate Ontology (GlycoCoO)	Ontology	https://github.com/glycoinfo/GlycoCoO	resource/glycocoo/glycocoo.md
@@ -362,6 +367,7 @@ inoh	INOH	DataSource	http://www.inoh.org/	resource/inoh/inoh.md
 insight	INSIGHT	KnowledgeGraph	https://insight-project.org/	resource/insight/insight.md
 intermine	InterMine	DataSource	https://intermine.org/	resource/intermine/intermine.md
 ipr	Protein Domains	Ontology	http://www.ebi.ac.uk/interpro/index.html	resource/ipr/ipr.md
+isrctn	ISRCTN Registry	DataSource	https://www.isrctn.com/	resource/isrctn/isrctn.md
 itis	ITIS	DataSource	https://www.itis.gov/	resource/itis/itis.md
 iucn-red-list	IUCN Red List of Threatened Species	DataSource	https://www.iucnredlist.org/	resource/iucn-red-list/iucn-red-list.md
 jaspar	JASPAR	DataSource	https://jaspar.elixir.no/	resource/jaspar/jaspar.md
@@ -399,6 +405,7 @@ lncrnalyzr	lncRNAlyzr	KnowledgeGraph	https://lncrnalyzr.maayanlab.cloud/	resourc
 loggerhead	Loggerhead nesting	Ontology	http://www.mesquiteproject.org/ontology/Loggerhead/index.html	resource/loggerhead/loggerhead.md
 lotus	LOTUS (naturaL prOducTs occUrrence databaSe)	DataSource	https://lotus.naturalproducts.net/	resource/lotus/lotus.md
 louisiana-tumor-registry	Louisiana Tumor Registry	DataSource	https://publichealth.lsuhsc.edu/louisiana-tumor-registry/	resource/louisiana-tumor-registry/louisiana-tumor-registry.md
+lsdb-archive	Life Science Database Archive	Aggregator	https://dbarchive.biosciencedbc.jp/	resource/lsdb-archive/lsdb-archive.md
 m-csa	M-CSA	DataSource	https://www.ebi.ac.uk/thornton-srv/m-csa/	resource/m-csa/m-csa.md
 ma	Mouse adult gross anatomy	Ontology	https://github.com/obophenotype/adult-mouse-anatomy-ontology	resource/ma/ma.md
 maine-egad	Maine EGAD (Environmental and Geographic Analysis Database)	DataSource	https://www.maine.gov/dep/maps-data/egad/	resource/maine-egad/maine-egad.md
@@ -423,6 +430,7 @@ mediadive	MediaDive	DataSource	https://mediadive.dsmz.de/	resource/mediadive/med
 medispan-gpi	Medi-Span Generic Product Identifier	DataSource	https://www.wolterskluwer.com/en/solutions/medi-span/about/gpi	resource/medispan-gpi/medispan-gpi.md
 medkg	MedKG	KnowledgeGraph	http://pitools.niper.ac.in/medkg/	resource/medkg/medkg.md
 metabokg	MetaboKG	KnowledgeGraph	https://github.com/HolobiomicsLab/MetaBoKG	resource/metabokg/metabokg.md
+metabolights	MetaboLights	DataSource	https://www.ebi.ac.uk/metabolights/	resource/metabolights/metabolights.md
 metanetx	MetaNetX	DataSource	https://www.metanetx.org/	resource/metanetx/metanetx.md
 metatraits	metaTraits	KnowledgeGraph	https://metatraits.embl.de/	resource/metatraits/metatraits.md
 metpo	METPO (Microbial Ecophysiological Trait and Phenotype Ontology)	Ontology	https://github.com/berkeleybop/metpo	resource/metpo/metpo.md
@@ -574,6 +582,7 @@ pdbe	PDBe Knowledge Base	Aggregator	https://www.ebi.ac.uk/pdbe/pdbe-kb/	resource
 pdro	The Prescription of Drugs Ontology	Ontology	https://github.com/OpenLHS/PDRO	resource/pdro/pdro.md
 pdumdv	Platynereis Developmental Stages	Ontology	https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv	resource/pdumdv/pdumdv.md
 peco	Plant Experimental Conditions Ontology	Ontology	http://planteome.org/	resource/peco/peco.md
+peptideatlas	PeptideAtlas	DataSource	https://peptideatlas.org/	resource/peptideatlas/peptideatlas.md
 petagraph	Petagraph	KnowledgeGraph	https://github.com/TaylorResearchLab/Petagraph	resource/petagraph/petagraph.md
 pf1600	pf1600 Dataset	DataSource	https://doi.org/10.5524/102323	resource/pf1600/pf1600.md
 pgdso	Plant Growth and Development Stage	Ontology	http://www.plantontology.org	resource/pgdso/pgdso.md
@@ -769,6 +778,7 @@ vto	Vertebrate Taxonomy Ontology	Ontology	https://github.com/phenoscape/vertebra
 water-quality-portal	Water Quality Portal (WQP)	DataSource	https://www.waterqualitydata.us/	resource/water-quality-portal/water-quality-portal.md
 web-of-science	Web of Science	DataSource	https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/	resource/web-of-science/web-of-science.md
 who	World Health Organization	Aggregator	https://www.who.int/	resource/who/who.md
+who-ictrp	WHO International Clinical Trials Registry Platform	Aggregator	https://trialsearch.who.int/	resource/who-ictrp/who-ictrp.md
 wikipedia	Wikipedia	DataSource	https://www.wikipedia.org/	resource/wikipedia/wikipedia.md
 wikispecies	Wikispecies	DataSource	https://species.wikimedia.org/wiki/Main_Page	resource/wikispecies/wikispecies.md
 wildlifekn	Wildlife-KN	KnowledgeGraph	https://sites.nd.edu/kn-wildlife/	resource/wildlifekn/wildlifekn.md

@@ -1931,6 +1931,33 @@ kgr:biomarkerkg a schema1:KnowledgeGraph ;
     adms:status "Inactive" ;
     foaf:homepage <https://biomarkerkb.org/> .
 
+kgr:biomodels a schema1:DataSource ;
+    rdfs:label "BioModels" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "BioModels is EMBL-EBI's repository of mathematical models of biological and biomedical systems. It holds manually curated models, which are checked to reproduce the results of their reference publication and annotated with cross-references to ontologies and databases such as GO, ChEBI, UniProt and Reactome, alongside non-curated submitted models and models generated automatically from pathway resources. Models are mainly encoded in SBML and distributed as COMBINE archives (OMEX). The models and their annotations are dedicated to the public domain under CC0." ;
+    dcterms:identifier "biomodels" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkz1055> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biomodels.api,
+        kgr:biomodels.code,
+        kgr:biomodels.kg-bioportal,
+        kgr:biomodels.portal,
+        kgr:biomodels.rdf,
+        kgr:biomodels.release.sbml,
+        kgr:biomodels.user-guide,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal ;
+    schema1:name "BioModels" ;
+    skos:altLabel "BioModels Database",
+        "BioModels Repository" ;
+    skos:inScheme "biological systems",
+        "systems biology" ;
+    skos:notation "FAIRsharing.paz6mh" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ebi.ac.uk/biomodels/> ;
+    foaf:maker kgr:ebi .
+
 kgr:biomuta a schema1:DataSource ;
     rdfs:label "BioMuta" ;
     dcterms:created "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
@@ -3111,6 +3138,8 @@ kgr:chebi a schema1:Ontology ;
         kgr:medkg.site,
         kgr:metabokg.graph,
         kgr:metabokg.schema,
+        kgr:metabolights.metabolites,
+        kgr:metabolights.study-metabolites,
         kgr:microbiomekg.api,
         kgr:molepro.api,
         kgr:molepro.catalog,
@@ -3741,11 +3770,11 @@ kgr:clinicalkg a schema1:KnowledgeGraph ;
 kgr:clinicaltrialsgov a schema1:DataSource ;
     rdfs:label "ClinicalTrials.gov" ;
     dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "ClinicalTrials.gov is a database of privately and publicly funded clinical studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and WHO International Clinical Trials Registry Platform (ICTRP)." ;
+    dcterms:description "ClinicalTrials.gov is a database of privately and publicly funded clinical studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and is a data provider to the WHO International Clinical Trials Registry Platform (ICTRP). studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and WHO International Clinical Trials Registry Platform (ICTRP)." ;
     dcterms:identifier "clinicaltrialsgov" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/21366476/> ;
     dcterms:license <https://clinicaltrials.gov/about-site/terms-conditions> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aact.database,
         kgr:aact.downloads,
@@ -3785,7 +3814,10 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
         kgr:ttd.target-compound,
         kgr:ttd.target-disease,
         kgr:ttd.target-drug,
-        kgr:ttd.targets-raw ;
+        kgr:ttd.targets-raw,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service ;
     schema1:identifier "clinicaltrials" ;
     schema1:name "ClinicalTrials.gov" ;
     doap:repository <https://github.com/ctti-clinicaltrials/aact> ;
@@ -5135,6 +5167,40 @@ kgr:date a schema1:DataSource ;
         "systems biology" ;
     adms:status "Inactive" ;
     foaf:homepage <https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip> .
+
+kgr:dbgap a schema1:DataSource ;
+    rdfs:label "dbGaP" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The database of Genotypes and Phenotypes (dbGaP) is NCBI's archive for data and results from studies of the interaction of genotype and phenotype in humans, including genome-wide association studies, medical sequencing, molecular diagnostic assays and associations between genotype and non-clinical traits. Study descriptions, protocols, data dictionaries and summary-level variable statistics are public, while individual-level genotype and phenotype data are distributed through controlled access under data use limitations set by each study. When checked on 2026-10-04 the public FTP site held study directories for 3,322 phs accessions." ;
+    dcterms:identifier "dbgap" ;
+    dcterms:isReferencedBy <doi:10.1038/ng1007-1181>,
+        <doi:10.1093/nar/gkt1211> ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:dbgap.advanced-search,
+        kgr:dbgap.authorized-access,
+        kgr:dbgap.fhir-api,
+        kgr:dbgap.ftp,
+        kgr:dbgap.gwas-analysis,
+        kgr:dbgap.portal,
+        kgr:dbgap.sstr-api,
+        kgr:dbgap.submission-guide,
+        kgr:gtex.dbgap-data,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal ;
+    schema1:name "dbGaP" ;
+    skos:altLabel "NCBI dbGaP",
+        "database of Genotypes and Phenotypes" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "genetic variation",
+        "genome-wide association studies",
+        "genomics" ;
+    skos:notation "FAIRsharing.88v2k0" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ncbi.nlm.nih.gov/gap/> ;
+    foaf:maker kgr:ncbi .
 
 kgr:dbpedia a schema1:KnowledgeGraph ;
     rdfs:label "DBpedia" ;
@@ -6750,6 +6816,33 @@ kgr:efo a schema1:Ontology ;
     foaf:homepage <https://www.ebi.ac.uk/efo/> ;
     foaf:maker kgr:ebi .
 
+kgr:ega a schema1:DataSource ;
+    rdfs:label "European Genome-phenome Archive" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The European Genome-phenome Archive (EGA) is a global network for permanent archiving and sharing of personally identifiable genetic, phenotypic and clinical data generated by biomedical research projects and research-focused healthcare systems. It is jointly managed by EMBL-EBI (Cambridge, UK) and the Centre for Genomic Regulation (CRG, Barcelona) and was launched in 2008. Data are released only to bona fide researchers under controlled access, with each dataset governed by a Data Access Committee (DAC) and a data access policy. Study, dataset, DAC, policy, sample, experiment, run and analysis metadata are public. Federated EGA (FEGA) extends the archive with national nodes that keep data in their own jurisdictions." ;
+    dcterms:identifier "ega" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkab1059> ;
+    dcterms:license <https://www.ebi.ac.uk/about/terms-of-use> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:ega.fega,
+        kgr:ega.metadata-api,
+        kgr:ega.metadata-api.docs,
+        kgr:ega.portal,
+        kgr:ega.pyega3,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal ;
+    schema1:name "European Genome-phenome Archive" ;
+    doap:repository <https://github.com/EGA-archive> ;
+    skos:altLabel "EGA",
+        "European Genome-Phenome Archive" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "genomics" ;
+    skos:notation "FAIRsharing.mya1ff" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ega-archive.org/> .
+
 kgr:eggnog a schema1:DataSource ;
     rdfs:label "eggNOG" ;
     dcterms:created "2026-01-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -7235,6 +7328,7 @@ kgr:ensembl a schema1:DataSource ;
         kgr:ncbigene.gene2ensembl,
         kgr:oma.mapping.ensembl,
         kgr:omim.mim2gene,
+        kgr:peptideatlas.human.ensembl-mapping,
         kgr:pheknowlator.graph,
         kgr:phosphoelm.dataset,
         kgr:plant-reactome.mappings,
@@ -7724,6 +7818,35 @@ kgr:esgf a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://esgf.llnl.gov/> .
 
+kgr:eu-ctr a schema1:DataSource ;
+    rdfs:label "EU Clinical Trials Register and Clinical Trials Information System" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The EU Clinical Trials Register (EU CTR) and the Clinical Trials Information System (CTIS) are the European Medicines Agency's public registries of interventional clinical trials of medicines in the European Union and European Economic Area. The EU Clinical Trials Register, established under Article 11 of Directive 2001/20/EC, gives public access to protocol and summary results information from the EudraCT database for trials started since May 2004, including paediatric trials run outside the EU/EEA as part of a paediatric investigation plan. CTIS, under Clinical Trials Regulation (EU) No 536/2014, has handled all new trial applications since 31 January 2023 and became the single entry point for ongoing trials after the transition period ended in January 2025; its public portal publishes trial information, documents and results. The legacy register no longer accepts new trials but remains online as the source for trials authorised under the Directive." ;
+    dcterms:identifier "eu-ctr" ;
+    dcterms:license <https://www.clinicaltrialsregister.eu/disclaimer.html> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:eu-ctr.ctis,
+        kgr:eu-ctr.ctis.docs,
+        kgr:eu-ctr.download,
+        kgr:eu-ctr.faq,
+        kgr:eu-ctr.results,
+        kgr:eu-ctr.search,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service ;
+    schema1:name "EU Clinical Trials Register and Clinical Trials Information System" ;
+    skos:altLabel "CTIS",
+        "Clinical Trials Information System",
+        "EU CTR",
+        "EU Clinical Trials Register",
+        "euclinicaltrials.eu" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "clinical trials",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.clinicaltrialsregister.eu/> .
+
 kgr:eu-knowledge-graph a schema1:KnowledgeGraph ;
     rdfs:label "EU Knowledge Graph" ;
     dcterms:created "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
@@ -8089,7 +8212,8 @@ kgr:fantom5 a schema1:DataSource ;
         kgr:fantom5.sstar,
         kgr:fantom5.zenbu,
         kgr:genecards.web.interface,
-        kgr:genomickb.graph ;
+        kgr:genomickb.graph,
+        kgr:lsdb-archive.fantom5 ;
     schema1:name "FANTOM5" ;
     skos:inScheme "anatomy and development",
         "gene expression profiling",
@@ -9364,6 +9488,32 @@ kgr:ghr a schema1:DataSource ;
     foaf:homepage <https://medlineplus.gov/genetics/> ;
     foaf:maker kgr:ncbi .
 
+kgr:ginsim-models a schema1:DataSource ;
+    rdfs:label "GINsim Model Repository" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The GINsim model repository collects curated logical (Boolean and multi-valued) models of gene regulatory and signalling networks, maintained by the GINsim team (Claudine Chaouiya, Pedro T. Monteiro, Aurelien Naldi and Denis Thieffry). Its 70 model pages, from a 1995 phage lambda lysis-lysogeny model to a 2024 promyelocytic leukaemia model, cover development, cell cycle, cell fate, immune cell differentiation and cancer signalling in organisms such as Drosophila, yeasts and mammals. Each page gives the taxon, biological process, authors and reference publications, and provides the model in the GINsim zginml format, with SBML-qual files and Jupyter notebooks for some models. The repository is part of the GINsim website, whose content is available under CC BY-NC-SA 4.0 unless stated otherwise." ;
+    dcterms:identifier "ginsim-models" ;
+    dcterms:isReferencedBy <doi:10.1007/978-1-61779-361-5_23>,
+        <doi:10.1016/j.biosystems.2005.10.003>,
+        <doi:10.3389/fphys.2018.00646> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ginsim-models.docs,
+        kgr:ginsim-models.github,
+        kgr:ginsim-models.legacy-repository,
+        kgr:ginsim-models.repository,
+        kgr:ginsim-models.sbml-qual,
+        kgr:ginsim-models.software,
+        kgr:ginsim-models.zginml ;
+    schema1:name "GINsim Model Repository" ;
+    doap:repository <https://github.com/GINsim/GINsim.github.io> ;
+    skos:altLabel "GINsim model library",
+        "GINsim models" ;
+    skos:inScheme "biological systems",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ginsim.github.io/models/> .
+
 kgr:glkb a schema1:DataSource ;
     rdfs:label "GLKB" ;
     dcterms:created "2025-03-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -10164,7 +10314,7 @@ kgr:gtex a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1126/science.1262110>,
         <doi:10.1126/science.aaz1776> ;
     dcterms:license <https://www.gtexportal.org/home/license> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:automat.gtex,
         kgr:automat.robokopkg,
@@ -12119,6 +12269,7 @@ kgr:inoh a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by-nc/3.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:inoh.pathways,
+        kgr:lsdb-archive.inoh,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
         kgr:pathwaycommons.gmt,
@@ -12436,6 +12587,32 @@ kgr:irefindex a schema1:Aggregator ;
     adms:status "Inactive" ;
     foaf:homepage <https://irefindex.vib.be/> .
 
+kgr:isrctn a schema1:DataSource ;
+    rdfs:label "ISRCTN Registry" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ISRCTN is a primary clinical study registry recognised by the World Health Organization International Clinical Trials Registry Platform (WHO ICTRP) and the ICMJE. Launched in 2000 as the International Standard Randomised Controlled Trial Number scheme, it now registers any interventional or observational study that assesses health interventions in humans, and is positioned as the UK's clinical study registry. Each record carries a unique ISRCTN identifier, the WHO 24-item minimum trial registration dataset, plain English summaries, results and IPD sharing plans. The registry is run by ISRCTN, a non-profit, through BioMed Central (Springer Nature), and its records are available through a web search interface and a public XML API." ;
+    dcterms:identifier "isrctn" ;
+    dcterms:isReferencedBy <doi:10.1111/j.1756-5391.2011.01138.x> ;
+    dcterms:license <https://www.isrctn.com/page/terms> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:isrctn.api,
+        kgr:isrctn.api-docs,
+        kgr:isrctn.definitions,
+        kgr:isrctn.portal,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service ;
+    schema1:name "ISRCTN Registry" ;
+    skos:altLabel "ISRCTN",
+        "International Standard Randomised Controlled Trial Number",
+        "The UK's Clinical Study Registry" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "clinical trials",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.isrctn.com/> .
+
 kgr:itis a schema1:DataSource ;
     rdfs:label "ITIS" ;
     dcterms:created "2025-09-03T00:00:00+00:00"^^xsd:dateTime ;
@@ -12566,6 +12743,7 @@ kgr:kegg a schema1:DataSource ;
         kgr:kegg.webapps,
         kgr:kinace.portal,
         kgr:lncrnalyzr.graph,
+        kgr:lsdb-archive.kegg-medicus,
         kgr:micromap.api,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
@@ -12847,7 +13025,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-05T14:54:05+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-05T16:04:15+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -13551,6 +13729,35 @@ kgr:louisiana-tumor-registry a schema1:DataSource ;
         "public health" ;
     adms:status "Active" ;
     foaf:homepage <https://publichealth.lsuhsc.edu/louisiana-tumor-registry/> .
+
+kgr:lsdb-archive a schema1:Aggregator ;
+    rdfs:label "Life Science Database Archive" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Life Science Database Archive (LSDB Archive) is run by the National Bioscience Database Center (NBDC) of the Japan Science and Technology Agency. It preserves datasets from Japanese life science databases for the long term and distributes each one as a whole-database download, with database-level and data-item-level metadata in a common format, a DOI per archived database (prefix 10.18908/lsdba), and a license stated per database. About 90 databases are archived, including FANTOM5, ChIP-Atlas, KEGG MEDICUS, INOH, Open TG-GATEs, BodyParts3D and the NBDC Nikkaji RDF. Creative Commons licenses are the standard, but the version differs by database (for example CC BY 4.0, CC BY-SA 4.0 or CC BY-SA 2.1 Japan)." ;
+    dcterms:identifier "lsdb-archive" ;
+    dcterms:license <https://www.kegg.jp/feedback/copyright.html> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:lsdb-archive.about,
+        kgr:lsdb-archive.data-list,
+        kgr:lsdb-archive.database-catalog-csv,
+        kgr:lsdb-archive.database-catalog-json,
+        kgr:lsdb-archive.downloads,
+        kgr:lsdb-archive.fantom5,
+        kgr:lsdb-archive.inoh,
+        kgr:lsdb-archive.kegg-medicus,
+        kgr:lsdb-archive.metadata-dump,
+        kgr:lsdb-archive.portal,
+        kgr:lsdb-archive.terms ;
+    schema1:name "Life Science Database Archive" ;
+    skos:altLabel "LSDB Archive",
+        "NBDC Life Science Database Archive" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "information technology",
+        "metadata",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://dbarchive.biosciencedbc.jp/> .
 
 kgr:m-csa a schema1:DataSource ;
     rdfs:label "M-CSA" ;
@@ -14285,6 +14492,35 @@ kgr:metabokg a schema1:KnowledgeGraph ;
         "microbiology" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/HolobiomicsLab/MetaBoKG> .
+
+kgr:metabolights a schema1:DataSource ;
+    rdfs:label "MetaboLights" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "MetaboLights is EMBL-EBI's open repository for metabolomics experiments and derived information. It holds study metadata in ISA-Tab format, raw and processed spectra, and metabolite identifications across species and techniques (mass spectrometry and NMR), and its reference layer links metabolites to ChEBI. It held 3,490 public studies on 2026-10-04. Studies submitted from April 2025 are released under CC0; earlier studies are governed by the EMBL-EBI Terms of Use." ;
+    dcterms:identifier "metabolights" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkad1045>,
+        <doi:10.1093/nar/gks1004> ;
+    dcterms:license <https://www.ebi.ac.uk/about/terms-of-use> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:metabolights.api,
+        kgr:metabolights.code,
+        kgr:metabolights.docs,
+        kgr:metabolights.ebeye.complete,
+        kgr:metabolights.ebeye.studies,
+        kgr:metabolights.metabolites,
+        kgr:metabolights.portal,
+        kgr:metabolights.studies,
+        kgr:metabolights.study-metabolites,
+        kgr:omicsdi.api,
+        kgr:omicsdi.portal ;
+    schema1:name "MetaboLights" ;
+    skos:altLabel "MTBLS" ;
+    skos:inScheme "biological systems",
+        "chemistry and biochemistry",
+        "metabolomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ebi.ac.uk/metabolights/> ;
+    foaf:maker kgr:ebi .
 
 kgr:metacyc a schema1:DataSource ;
     rdfs:label "MetaCyc" ;
@@ -19164,6 +19400,37 @@ kgr:peco a schema1:Ontology ;
         "plants" ;
     adms:status "Active" ;
     foaf:homepage <http://planteome.org/> .
+
+kgr:peptideatlas a schema1:DataSource ;
+    rdfs:label "PeptideAtlas" ;
+    dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "PeptideAtlas, from the Institute for Systems Biology (ISB), is a compendium of peptides identified in tandem mass spectrometry proteomics experiments. Raw data from public datasets are reprocessed through a uniform pipeline (the Trans-Proteomic Pipeline) and mapped to reference proteomes and genomes, producing organism- and sample-specific builds. On 2026-10-04 its build index listed 110 builds across 39 organism groups, including the Human 2026-01 build. The project also runs PASSEL, a repository for SRM experiments, and SRMAtlas, a library of targeted proteomics assays." ;
+    dcterms:identifier "peptideatlas" ;
+    dcterms:isReferencedBy <doi:10.1016/j.cell.2016.06.041>,
+        <doi:10.1038/embor.2008.56>,
+        <doi:10.1093/nar/gkj040> ;
+    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:omicsdi.api,
+        kgr:omicsdi.portal,
+        kgr:peptideatlas.builds,
+        kgr:peptideatlas.human.coordinates,
+        kgr:peptideatlas.human.ensembl-mapping,
+        kgr:peptideatlas.human.mysql,
+        kgr:peptideatlas.human.peptides,
+        kgr:peptideatlas.human.tables,
+        kgr:peptideatlas.passel,
+        kgr:peptideatlas.portal,
+        kgr:peptideatlas.repository,
+        kgr:peptideatlas.search,
+        kgr:peptideatlas.srmatlas ;
+    schema1:name "PeptideAtlas" ;
+    skos:altLabel "PA",
+        "PASSEL",
+        "SRMAtlas" ;
+    skos:inScheme "biomedical",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://peptideatlas.org/> .
 
 kgr:petagraph a schema1:KnowledgeGraph ;
     rdfs:label "Petagraph" ;
@@ -26021,6 +26288,30 @@ kgr:web-of-science a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/> .
 
+kgr:who-ictrp a schema1:Aggregator ;
+    rdfs:label "WHO International Clinical Trials Registry Platform" ;
+    dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The WHO International Clinical Trials Registry Platform (ICTRP) Search Portal provides a single point of access to clinical trial registration records supplied by the registries of the WHO Registry Network, including the WHO primary registries and ClinicalTrials.gov. Records follow the WHO Trial Registration Data Set, are provided in English, link back to the original registry records, and are bridged (grouped) when several registries hold records for the same trial. Data sets are imported weekly or every four weeks depending on the data provider. The ICTRP is not itself a trial registry." ;
+    dcterms:identifier "who-ictrp" ;
+    dcterms:isReferencedBy <doi:10.1016/s0140-6736(06)68708-4> ;
+    dcterms:license <https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database> ;
+    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:who-ictrp.data-providers,
+        kgr:who-ictrp.docs,
+        kgr:who-ictrp.portal,
+        kgr:who-ictrp.primary-registries,
+        kgr:who-ictrp.search-export,
+        kgr:who-ictrp.web-service,
+        kgr:who-ictrp.who-data-set ;
+    schema1:name "WHO International Clinical Trials Registry Platform" ;
+    skos:altLabel "ICTRP",
+        "ICTRP Search Portal",
+        "WHO ICTRP" ;
+    skos:inScheme "clinical",
+        "clinical trials" ;
+    adms:status "Active" ;
+    foaf:homepage <https://trialsearch.who.int/> .
+
 kgr:wikidata a schema1:KnowledgeGraph ;
     rdfs:label "Wikidata" ;
     dcterms:created "2025-10-31T00:00:00+00:00"^^xsd:dateTime ;
@@ -27669,6 +27960,41 @@ kgr:biomarker.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BiomarkerKB KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BiomarkerKB KG" ;
     schema1:url <https://apps.okn.us/ldf/biomarkerkg> .
+
+kgr:biomodels.api a schema1:ProgrammingInterface ;
+    rdfs:label "BioModels REST API" ;
+    dcterms:description "REST web services for searching BioModels, retrieving model metadata and files, and downloading models, documented with an interactive API reference." ;
+    schema1:url <https://www.ebi.ac.uk/biomodels/docs/> .
+
+kgr:biomodels.code a schema1:ProcessProduct ;
+    rdfs:label "BioModels Source Code" ;
+    dcterms:description "Source code for the BioModels platform and related tools, including the COMBINE archive libraries, in the EBI-BioModels GitHub organization." ;
+    schema1:url <https://github.com/EBI-BioModels> .
+
+kgr:biomodels.kg-bioportal a schema1:GraphProduct ;
+    rdfs:label "BIOMODELS KGX graph (KG-Bioportal)" ;
+    dcterms:description "KGX TSV transform of BioModels Ontology (BIOMODELS), produced by KG-Bioportal from the BioPortal submission. The archive contains BIOMODELS_nodes.tsv and BIOMODELS_edges.tsv." ;
+    schema1:url <https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BIOMODELS.tar.gz> .
+
+kgr:biomodels.portal a schema1:GraphicalInterface ;
+    rdfs:label "BioModels Web Portal" ;
+    dcterms:description "Web interface for searching, browsing and downloading curated and non-curated computational models, with model files, annotations, curation notes and links to the reference publications." ;
+    schema1:url <https://www.ebi.ac.uk/biomodels/> .
+
+kgr:biomodels.rdf a schema1:Product ;
+    rdfs:label "BioModels RDF Export" ;
+    dcterms:description "RDF export of BioModels models, one RDF/XML file per model describing its SBML structure and annotations, in a tar.bz2 archive of about 28 MB, last generated on 2020-11-12." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/biomodels/rdf/BioModels-RDF-export-latest.tar.bz2> .
+
+kgr:biomodels.release.sbml a schema1:Product ;
+    rdfs:label "BioModels Database Release 31 SBML Files" ;
+    dcterms:description "Last numbered BioModels Database release (release 31, June 2017) of the published models as SBML files in a tar.bz2 archive, about 184 MB compressed. Companion archives in the same directory hold the RDF annotations and all model files. Later models are only available through the portal and API." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/biomodels/releases/latest/BioModels_Database-r31_pub-sbml_files.tar.bz2> .
+
+kgr:biomodels.user-guide a schema1:DocumentationProduct ;
+    rdfs:label "BioModels User Guide" ;
+    dcterms:description "BioModels user guide covering model submission, curation, annotation and use of the repository." ;
+    schema1:url <https://github.com/EBI-BioModels/user-guide> .
 
 kgr:biomuta.pipeline a schema1:ProcessProduct ;
     rdfs:label "BioMuta Data Release Pipeline" ;
@@ -29693,6 +30019,46 @@ kgr:darwins-ark.website a schema1:GraphicalInterface ;
     dcterms:description "The Darwin's Ark website, where owners enroll dogs, complete behavioral surveys, and browse project results." ;
     schema1:url <https://darwinsark.org/> .
 
+kgr:dbgap.advanced-search a schema1:GraphicalInterface ;
+    rdfs:label "dbGaP Advanced Search" ;
+    dcterms:description "dbGaP Advanced Search interface for faceted searching of studies by study design, molecular data type, consent and other attributes." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/gap/advanced_search/> .
+
+kgr:dbgap.authorized-access a schema1:GraphicalInterface ;
+    rdfs:label "dbGaP Authorized Access" ;
+    dcterms:description "dbGaP Authorized Access system, where approved investigators submit data access requests and download controlled-access individual-level data. Requires an eRA Commons or NIH login." ;
+    schema1:url <https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login> .
+
+kgr:dbgap.fhir-api a schema1:ProgrammingInterface ;
+    rdfs:label "dbGaP FHIR API" ;
+    dcterms:description "dbGaP FHIR API exposing study, subject and phenotype metadata as HL7 FHIR resources; open studies are public and controlled studies require authorization." ;
+    schema1:url <https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/metadata> .
+
+kgr:dbgap.ftp a schema1:Product ;
+    rdfs:label "dbGaP Public Study Files" ;
+    dcterms:description "Public FTP directory of released studies, one directory per phs accession and version, holding GapExchange study XML, data dictionaries, variable summaries, release notes, manifests and study documents. Individual-level data are not included." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/dbgap/studies/> .
+
+kgr:dbgap.gwas-analysis a schema1:Product ;
+    rdfs:label "dbGaP GWAS Analysis Files" ;
+    dcterms:description "Public FTP directory of GWAS analysis results and summary statistics released through dbGaP." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/dbgap/gwas_analysis/> .
+
+kgr:dbgap.portal a schema1:GraphicalInterface ;
+    rdfs:label "dbGaP Web Portal" ;
+    dcterms:description "dbGaP web portal for searching and browsing studies, variables, datasets, documents and analyses, with study pages linking to public summaries and to the controlled-access request system." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/gap/> .
+
+kgr:dbgap.sstr-api a schema1:ProgrammingInterface ;
+    rdfs:label "dbGaP Study Metadata API" ;
+    dcterms:description "dbGaP Study Metadata (SSTR) API returning JSON summaries of a study version, including name, BioProject links and consent groups, for example /api/v1/study/phs000001.v3.p1/summary." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/gap/sstr/> .
+
+kgr:dbgap.submission-guide a schema1:DocumentationProduct ;
+    rdfs:label "dbGaP Study Submission Guide" ;
+    dcterms:description "dbGaP Study Submission Guide describing submission, data dictionaries, consent and file formats." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/gap/docs/submissionguide/> .
+
 kgr:dbpedia.ontology a schema1:OntologyProduct ;
     rdfs:label "DBpedia Ontology" ;
     dcterms:description "DBpedia ontology T-box download used to define the cross-domain schema and mappings applied during DBpedia extraction releases." ;
@@ -30490,6 +30856,31 @@ kgr:efo.ols a schema1:GraphicalInterface ;
     dcterms:description "Browse EFO with EBI's Ontology Lookup Service (OLS)" ;
     schema1:url <https://www.ebi.ac.uk/ols/ontologies/efo> .
 
+kgr:ega.fega a schema1:DocumentationProduct ;
+    rdfs:label "Federated EGA" ;
+    dcterms:description "Overview of Federated EGA, the network of national EGA nodes that store sensitive human data locally while sharing metadata and access processes with the central EGA." ;
+    schema1:url <https://ega-archive.org/about/projects-and-funders/federated-ega/> .
+
+kgr:ega.metadata-api a schema1:ProgrammingInterface ;
+    rdfs:label "EGA Public Metadata API" ;
+    dcterms:description "Public Metadata REST API returning JSON metadata for EGA studies, datasets, DACs, policies, samples, experiments, runs and analyses by accession (EGAS, EGAD, EGAC, EGAP, EGAN, EGAX, EGAR, EGAZ), with cross-queries between object types. Authenticated users can also query private metadata they have rights to." ;
+    schema1:url <https://metadata.ega-archive.org/datasets> .
+
+kgr:ega.metadata-api.docs a schema1:DocumentationProduct ;
+    rdfs:label "EGA Public Metadata API Documentation" ;
+    dcterms:description "Documentation for the EGA Public Metadata API, covering identifiers, requests, responses and cross-querying by object." ;
+    schema1:url <https://ega-archive.org/discovery/metadata/public-metadata-api/> .
+
+kgr:ega.portal a schema1:GraphicalInterface ;
+    rdfs:label "EGA Web Portal" ;
+    dcterms:description "EGA web portal for discovering studies, datasets and Data Access Committees, and for requesting access to controlled datasets. File access requires approval from the dataset's DAC." ;
+    schema1:url <https://ega-archive.org/> .
+
+kgr:ega.pyega3 a schema1:ProcessProduct ;
+    rdfs:label "PyEGA3 Download Client" ;
+    dcterms:description "PyEGA3, the Python command-line client for downloading controlled-access EGA files that a user has been granted access to. Distributed on PyPI as pyega3." ;
+    schema1:url <https://github.com/EGA-archive/ega-download-client> .
+
 kgr:eggnog.download a schema1:Product ;
     rdfs:label "eggNOG Downloads" ;
     dcterms:description "Download interface for eggNOG annotation and orthology data releases." ;
@@ -31094,6 +31485,36 @@ kgr:esgf.search a schema1:ProgrammingInterface ;
     rdfs:label "ESGF Search" ;
     dcterms:description "The ESGF search interface (MetaGrid / AIMS) provides discovery and access to climate dataset metadata across the federation, including CMIP model output indexed by source_id, experiment_id, variable_id, and activity_id." ;
     schema1:url <https://metagrid.esgf-west.org/search> .
+
+kgr:eu-ctr.ctis a schema1:GraphicalInterface ;
+    rdfs:label "CTIS Public Portal" ;
+    dcterms:description "Public portal of the Clinical Trials Information System (CTIS), the EU registry for trials under Clinical Trials Regulation (EU) No 536/2014, with search over trial details, sponsors, therapeutic areas, recruitment status, documents and results, plus a clinical trial map searchable by medical condition." ;
+    schema1:url <https://euclinicaltrials.eu/ctis-public/search> .
+
+kgr:eu-ctr.ctis.docs a schema1:DocumentationProduct ;
+    rdfs:label "CTIS Documentation" ;
+    dcterms:description "European Medicines Agency documentation for CTIS, including the system overview, transition from the Clinical Trials Directive, transparency rules and links to training and support material." ;
+    schema1:url <https://www.ema.europa.eu/en/human-regulatory-overview/research-development/clinical-trials-human-medicines/clinical-trials-information-system-ctis> .
+
+kgr:eu-ctr.download a schema1:Product ;
+    rdfs:label "EU Clinical Trials Register Search Results Download" ;
+    dcterms:description "Plain-text export of EU Clinical Trials Register search results, available as a summary or as full trial details (per member state), up to 20 trials per request." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/ctr-search/rest/download/full?query=&page=1&mode=current_page> .
+
+kgr:eu-ctr.faq a schema1:DocumentationProduct ;
+    rdfs:label "EU Clinical Trials Register FAQ" ;
+    dcterms:description "Frequently asked questions for the EU Clinical Trials Register, covering register scope, search and download functions, and interpretation of trial and results records." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/doc/EU_CTR_FAQ.pdf> .
+
+kgr:eu-ctr.results a schema1:GraphicalInterface ;
+    rdfs:label "EU Clinical Trials Register Results" ;
+    dcterms:description "Summary results of EU Clinical Trials Register trials, including trial information, subject disposition, baseline characteristics, end points and adverse events, browsable from search results filtered to trials with results." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/ctr-search/search?query=&resultsstatus=trials-with-results> .
+
+kgr:eu-ctr.search a schema1:GraphicalInterface ;
+    rdfs:label "EU Clinical Trials Register Search" ;
+    dcterms:description "Web search interface for the EU Clinical Trials Register, covering protocol and results information for interventional trials authorised under Directive 2001/20/EC, searchable by EudraCT number, condition, medicine, sponsor, country, phase, population age and other fields." ;
+    schema1:url <https://www.clinicaltrialsregister.eu/ctr-search/search> .
 
 kgr:eu-knowledge-graph.api a schema1:ProgrammingInterface ;
     rdfs:label "EU Knowledge Graph Wikibase API" ;
@@ -32178,6 +32599,41 @@ kgr:ghr.portal a schema1:GraphicalInterface ;
     dcterms:description "MedlinePlus Genetics portal containing migrated Genetics Home Reference content." ;
     schema1:url <https://medlineplus.gov/genetics/> .
 
+kgr:ginsim-models.docs a schema1:DocumentationProduct ;
+    rdfs:label "GINsim Documentation" ;
+    dcterms:description "GINsim user documentation covering the graphical interface, logical regulatory graphs, perturbations, model reduction, simulation and dynamical analyses, and supported import and export formats." ;
+    schema1:url <https://ginsim.github.io/documentation/> .
+
+kgr:ginsim-models.github a schema1:Product ;
+    rdfs:label "GINsim Model Repository Sources on GitHub" ;
+    dcterms:description "Directory of the GINsim website GitHub repository (mkdocs branch) holding the source of every model page, with the zginml and SBML-qual model files, Jupyter notebooks, figures and supplementary files. New models can be contributed by pull request." ;
+    schema1:url <https://github.com/GINsim/GINsim.github.io/tree/mkdocs/docs/models> .
+
+kgr:ginsim-models.legacy-repository a schema1:GraphicalInterface ;
+    rdfs:label "GINsim Model Repository (ginsim.org)" ;
+    dcterms:description "Former location of the GINsim model repository on the ginsim.org website, hosted at IGC and INESC-ID before the move to GitHub Pages." ;
+    schema1:url <http://ginsim.org/models_repository> .
+
+kgr:ginsim-models.repository a schema1:GraphicalInterface ;
+    rdfs:label "GINsim Model Repository Website" ;
+    dcterms:description "Web table of the 70 logical models in the repository, filterable by model name, taxon, biological process, year and authors, linking to one page per model with a description, reference publications and model file downloads." ;
+    schema1:url <https://ginsim.github.io/models/> .
+
+kgr:ginsim-models.sbml-qual a schema1:Product ;
+    rdfs:label "GINsim Model Files (SBML-qual)" ;
+    dcterms:description "Logical models exported in SBML Level 3 qualitative models (SBML-qual) format, downloadable from the model pages. Only nine SBML-qual files, for seven models, were present when checked on 2026-10-05; the other models are distributed in zginml only, which GINsim can export to SBML-qual." ;
+    schema1:url <https://ginsim.github.io/models/> .
+
+kgr:ginsim-models.software a schema1:ProcessProduct ;
+    rdfs:label "GINsim Software" ;
+    dcterms:description "GINsim (Gene Interaction Network simulation), a Java desktop application for building, simulating and analysing logical models of regulatory networks, including state transition graphs, stable state and trap space search, model reduction and export to formats such as SBML-qual, NuSMV and Petri nets. Version 3.1 (January 2026) requires Java 11 or later." ;
+    schema1:url <https://ginsim.github.io/install/GINsim-3.1-with-deps.jar> .
+
+kgr:ginsim-models.zginml a schema1:Product ;
+    rdfs:label "GINsim Model Files (zginml)" ;
+    dcterms:description "Logical models in the GINsim zginml format (a zip archive holding the GINML XML regulatory graph and associated settings), downloadable from each model page. About 90 zginml files cover the 70 models." ;
+    schema1:url <https://ginsim.github.io/models/> .
+
 kgr:globi.api a schema1:ProgrammingInterface ;
     rdfs:label "GloBI API" ;
     dcterms:description "REST-style API endpoints for programmatic species interaction queries (JSON/CSV)" ;
@@ -32691,11 +33147,6 @@ kgr:gtex.bulk-data a schema1:Product ;
     rdfs:label "GTEx Bulk Data Downloads" ;
     dcterms:description "Complete GTEx v8 data including gene expression, transcript expression, exon expression, and junction data across tissues" ;
     schema1:url <https://www.gtexportal.org/home/downloads/adult-gtex> .
-
-kgr:gtex.dbgap-data a schema1:Product ;
-    rdfs:label "GTEx dbGaP Data" ;
-    dcterms:description "Individual-level genotype and phenotype data available through dbGaP" ;
-    schema1:url <https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424> .
 
 kgr:gtex.eqtl-data a schema1:Product ;
     rdfs:label "GTEx eQTL Data" ;
@@ -33900,6 +34351,26 @@ kgr:irefindex.irefweb a schema1:GraphicalInterface ;
     rdfs:label "iRefWeb" ;
     dcterms:description "Web interface for navigating the global protein-protein interaction landscape" .
 
+kgr:isrctn.api a schema1:ProgrammingInterface ;
+    rdfs:label "ISRCTN XML API" ;
+    dcterms:description "Public, unauthenticated XML API for retrieving single trials (/api/trial/<isrctn>/format/<format>) or querying multiple trials (/api/query/format/<format>?q=<query>&limit=<limit>) with keyword and field constraints. Output formats include the ISRCTN default format and the WHO ICTRP trial format." ;
+    schema1:url <https://www.isrctn.com/api/query/format/default?q=> .
+
+kgr:isrctn.api-docs a schema1:DocumentationProduct ;
+    rdfs:label "ISRCTN API Documentation" ;
+    dcterms:description "API documentation (PDF, prepared by 67 Bricks for Springer Nature) describing the ISRCTN API endpoints, query constraints and output formats." ;
+    schema1:url <https://www.isrctn.com/editorial/retrieveFile/81786542-9920-48a0-8fce-09f8428ab843/37855> .
+
+kgr:isrctn.definitions a schema1:DocumentationProduct ;
+    rdfs:label "ISRCTN Field Definitions" ;
+    dcterms:description "Definitions of the fields in ISRCTN study records and the registration application form." ;
+    schema1:url <https://www.isrctn.com/page/definitions> .
+
+kgr:isrctn.portal a schema1:GraphicalInterface ;
+    rdfs:label "ISRCTN Search" ;
+    dcterms:description "Web portal for searching, browsing and viewing ISRCTN study records, with basic and advanced search by condition, intervention, funder, recruitment country and other fields, plus the Transparency Tracker view of results reporting." ;
+    schema1:url <https://www.isrctn.com/> .
+
 kgr:itis.api a schema1:ProgrammingInterface ;
     rdfs:label "ITIS REST Services" ;
     dcterms:description "REST JSON services providing programmatic access to taxonomic records, synonyms, hierarchy, and search utilities" ;
@@ -34655,6 +35126,46 @@ kgr:louisiana-tumor-registry.data-request a schema1:GraphicalInterface ;
     dcterms:description "Web page describing how researchers and other parties may request Louisiana Tumor Registry data, including data use agreement and request procedures." ;
     schema1:url <https://publichealth.lsuhsc.edu/louisiana-tumor-registry/data-usestatistics/data-request.aspx> .
 
+kgr:lsdb-archive.about a schema1:DocumentationProduct ;
+    rdfs:label "About the LSDB Archive" ;
+    dcterms:description "About page describing the purpose of the archive, its common metadata format and its use of Creative Commons licenses." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/contents-en/about/about.html> .
+
+kgr:lsdb-archive.data-list a schema1:GraphicalInterface ;
+    rdfs:label "LSDB Archive Data List" ;
+    dcterms:description "Searchable list of data items (individual files and tables) across all archived databases, with item-level metadata." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/datameta-list-e.html> .
+
+kgr:lsdb-archive.database-catalog-csv a schema1:Product ;
+    rdfs:label "LSDB Archive Database Catalog (CSV)" ;
+    dcterms:description "Machine-readable catalog of archived databases in CSV, with the same fields as the JSON catalog." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/en/databases.csv> .
+
+kgr:lsdb-archive.database-catalog-json a schema1:Product ;
+    rdfs:label "LSDB Archive Database Catalog (JSON)" ;
+    dcterms:description "Machine-readable catalog of archived databases in JSON, with name, Integbio Database Catalog ID, DOI, creators, categories, organisms, description, original sites and download page for each database. Some records in the file are malformed duplicates." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/en/databases.json> .
+
+kgr:lsdb-archive.downloads a schema1:Product ;
+    rdfs:label "LSDB Archive Download Directory" ;
+    dcterms:description "Open directory of archived database files, with one folder per database and dated release subfolders plus a LATEST link. File formats vary by database." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/> .
+
+kgr:lsdb-archive.metadata-dump a schema1:Product ;
+    rdfs:label "LSDB Archive Metadata Export" ;
+    dcterms:description "ZIP bundle of the full English metadata export, containing database-level metadata (dbmeta_en.json) and data-item-level metadata (datameta_en.json) for all archived databases." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/en/databases/download.json> .
+
+kgr:lsdb-archive.portal a schema1:GraphicalInterface ;
+    rdfs:label "LSDB Archive Portal" ;
+    dcterms:description "English web portal of the LSDB Archive for browsing archived databases, reading each database's description and license, and reaching its download page and TogoDB simple search." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/index-e.html> .
+
+kgr:lsdb-archive.terms a schema1:DocumentationProduct ;
+    rdfs:label "NBDC Terms of Service" ;
+    dcterms:description "NBDC terms of service for the LSDB Archive site, in English (PDF)." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/files/nbdc_riyou_kiyaku_en.pdf> .
+
 kgr:m-csa.download a schema1:DocumentationProduct ;
     rdfs:label "M-CSA Download and API" ;
     dcterms:description "M-CSA download and API page describing export formats and programmatic access to the atlas." ;
@@ -35055,6 +35566,41 @@ kgr:metabokg.workflow a schema1:ProcessProduct ;
     rdfs:label "MetaBoKG Transformation Workflow" ;
     dcterms:description "Source-code workflow that fetches PubMed and PMC context, extracts GNPS and MassIVE identifiers, downloads GNPS job archives, materializes RDF with RML mappings, loads Virtuoso, and runs competency-question SPARQL queries." ;
     schema1:url <https://github.com/HolobiomicsLab/MetaBoKG/blob/main/main.py> .
+
+kgr:metabolights.api a schema1:ProgrammingInterface ;
+    rdfs:label "MetaboLights REST API" ;
+    dcterms:description "MetaboLights RESTful web service (MtblsWS-Py) for listing studies and retrieving study metadata, ISA-Tab files and metabolite assignments, documented with an OpenAPI specification." ;
+    schema1:url <https://www.ebi.ac.uk/metabolights/ws/> .
+
+kgr:metabolights.code a schema1:ProcessProduct ;
+    rdfs:label "MetaboLights Source Code" ;
+    dcterms:description "GitHub organization holding the MetaboLights web service, submission tooling and pipelines." ;
+    schema1:url <https://github.com/EBI-Metabolights> .
+
+kgr:metabolights.docs a schema1:DocumentationProduct ;
+    rdfs:label "MetaboLights Guides" ;
+    dcterms:description "MetaboLights help guides covering study submission, ISA-Tab metadata, data formats and downloads." ;
+    schema1:url <https://www.ebi.ac.uk/metabolights/guides> .
+
+kgr:metabolights.ebeye.complete a schema1:Product ;
+    rdfs:label "MetaboLights EB-eye Complete Export" ;
+    dcterms:description "Complete EB-eye XML export of MetaboLights studies and metabolites, as used for EBI Search indexing, regenerated daily (about 369 MB on 2026-10-04)." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_complete.xml> .
+
+kgr:metabolights.ebeye.studies a schema1:Product ;
+    rdfs:label "MetaboLights EB-eye Studies Export" ;
+    dcterms:description "EB-eye XML export of MetaboLights study records only, regenerated daily (about 344 MB on 2026-10-04)." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/eb_eye_metabolights_studies.xml> .
+
+kgr:metabolights.portal a schema1:GraphicalInterface ;
+    rdfs:label "MetaboLights Web Portal" ;
+    dcterms:description "Web interface for searching, browsing and submitting MetaboLights metabolomics studies (MTBLS accessions) and their metabolite annotations." ;
+    schema1:url <https://www.ebi.ac.uk/metabolights/> .
+
+kgr:metabolights.studies a schema1:Product ;
+    rdfs:label "MetaboLights Public Studies Archive" ;
+    dcterms:description "FTP/HTTPS download area holding every public MetaboLights study as a directory of ISA-Tab metadata, raw and processed data files, organized by MTBLS accession." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/> .
 
 kgr:metacyc.api a schema1:ProgrammingInterface ;
     rdfs:label "MetaCyc Web Services" ;
@@ -37866,6 +38412,56 @@ kgr:peco.owl a schema1:OntologyProduct ;
 
 kgr:pensoft a "Organization" ;
     rdfs:label "Pensoft Publishers" .
+
+kgr:peptideatlas.builds a schema1:Product ;
+    rdfs:label "PeptideAtlas Build Index" ;
+    dcterms:description "Machine-readable JSON index of all PeptideAtlas builds, with build id, name, description, organism, number of distinct peptides and the URL of each build's download page." ;
+    schema1:url <https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/main.cgi?output_format=json> .
+
+kgr:peptideatlas.human.coordinates a schema1:Product ;
+    rdfs:label "PeptideAtlas Human Peptide Coordinates" ;
+    dcterms:description "Genome coordinate mapping of peptides in the Human 2026-01 PeptideAtlas build (about 19 GB, uncompressed text)." ;
+    schema1:url <https://peptideatlas.org/builds/human/202601/coordinate_mapping.txt> .
+
+kgr:peptideatlas.human.mysql a schema1:Product ;
+    rdfs:label "PeptideAtlas Human Build MySQL Dump" ;
+    dcterms:description "MySQL dump of the Human 2026-01 PeptideAtlas build (atlas build 607), about 5.8 GB compressed." ;
+    schema1:url <https://peptideatlas.org/builds/human/202601/atlas_build_607.mysql.gz> .
+
+kgr:peptideatlas.human.peptides a schema1:Product ;
+    rdfs:label "PeptideAtlas Human Peptides FASTA" ;
+    dcterms:description "FASTA file of all distinct peptides observed in the Human 2026-01 PeptideAtlas build (atlas build 607)." ;
+    schema1:url <https://peptideatlas.org/builds/human/202601/APD_Hs_all.fasta> .
+
+kgr:peptideatlas.human.tables a schema1:Product ;
+    rdfs:label "PeptideAtlas Human Build Tables" ;
+    dcterms:description "Tab-separated tables of the Human 2026-01 PeptideAtlas build (atlas build 607), including peptides, protein identifications and mappings (about 6.8 GB compressed)." ;
+    schema1:url <https://peptideatlas.org/builds/human/202601/atlas_build_607.tsv.zip> .
+
+kgr:peptideatlas.passel a schema1:GraphicalInterface ;
+    rdfs:label "PASSEL" ;
+    dcterms:description "PASSEL (PeptideAtlas SRM Experiment Library), the PeptideAtlas component for submission, browsing and querying of selected reaction monitoring (SRM) experiment results." ;
+    schema1:url <https://peptideatlas.org/passel/> .
+
+kgr:peptideatlas.portal a schema1:GraphicalInterface ;
+    rdfs:label "PeptideAtlas Portal" ;
+    dcterms:description "PeptideAtlas web portal for browsing builds, searching peptides and proteins, and reaching related ISB proteomics resources." ;
+    schema1:url <https://peptideatlas.org/> .
+
+kgr:peptideatlas.repository a schema1:GraphicalInterface ;
+    rdfs:label "PeptideAtlas Data Repository" ;
+    dcterms:description "PeptideAtlas data repository, which holds the raw and processed datasets contributed to PeptideAtlas." ;
+    schema1:url <https://peptideatlas.org/repository/> .
+
+kgr:peptideatlas.search a schema1:GraphicalInterface ;
+    rdfs:label "PeptideAtlas Peptide Search" ;
+    dcterms:description "SBEAMS search interface for querying peptides across PeptideAtlas builds." ;
+    schema1:url <https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetPeptides> .
+
+kgr:peptideatlas.srmatlas a schema1:GraphicalInterface ;
+    rdfs:label "SRMAtlas" ;
+    dcterms:description "SRMAtlas, a compendium of targeted proteomics (SRM) assays for the complete human proteome and other organisms, built by the PeptideAtlas team." ;
+    schema1:url <https://srmatlas.org/> .
 
 kgr:pf1600.analysis_scripts a schema1:ProcessProduct ;
     rdfs:label "pf1600 Analysis Scripts" ;
@@ -42005,6 +42601,26 @@ kgr:who a schema1:Aggregator,
     adms:status "Active" ;
     foaf:homepage <https://www.who.int/> .
 
+kgr:who-ictrp.data-providers a schema1:DocumentationProduct ;
+    rdfs:label "ICTRP Data Providers List" ;
+    dcterms:description "List of the data providers that supply trial records to the ICTRP Search Portal, including the primary registries and ClinicalTrials.gov." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/data-providers> .
+
+kgr:who-ictrp.docs a schema1:DocumentationProduct ;
+    rdfs:label "ICTRP Website" ;
+    dcterms:description "WHO ICTRP website describing the platform, the registry network, the search portal and its services, trial registration standards, and the Universal Trial Number." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform> .
+
+kgr:who-ictrp.primary-registries a schema1:DocumentationProduct ;
+    rdfs:label "WHO Primary Registries List" ;
+    dcterms:description "List of the primary registries in the WHO Registry Network that meet WHO criteria for content, quality, accessibility, unique identification, technical capacity and administration, with registry profiles and website links." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/primary-registries> .
+
+kgr:who-ictrp.who-data-set a schema1:DocumentationProduct ;
+    rdfs:label "WHO Trial Registration Data Set" ;
+    dcterms:description "Documentation of the WHO Trial Registration Data Set, the minimum set of items a trial record must contain to be included in the ICTRP, with archived earlier versions." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set> .
+
 kgr:who.data-platform a schema1:GraphicalInterface ;
     rdfs:label "WHO Data Platform" ;
     dcterms:description "WHO Data Platform landing page linking WHO data portals including the Global Health Observatory, immunization data, GLAAS, NCD data, SRHR policy data, and other health data sites." ;
@@ -43062,6 +43678,11 @@ kgr:goa.quickgo a schema1:GraphicalInterface ;
     dcterms:description "Browser for searching and viewing Gene Ontology terms and GOA annotations" ;
     schema1:url <https://www.ebi.ac.uk/QuickGO/> .
 
+kgr:gtex.dbgap-data a schema1:Product ;
+    rdfs:label "GTEx dbGaP Data" ;
+    dcterms:description "Individual-level genotype and phenotype data available through dbGaP" ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424> .
+
 kgr:gtrx.api a schema1:ProgrammingInterface ;
     rdfs:label "gTRx API" ;
     dcterms:description "BioThings API for querying Genome-to-Treatment association records through `/query`, `/metadata`, and related BioThings endpoints" ;
@@ -43247,6 +43868,21 @@ kgr:kg-predict.ad_predictions a schema1:Product ;
     dcterms:description "Alzheimer's disease case study drug repurposing predictions" ;
     schema1:url <http://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv> .
 
+kgr:lsdb-archive.fantom5 a schema1:Product ;
+    rdfs:label "FANTOM5 (LSDB Archive)" ;
+    dcterms:description "LSDB Archive copy of FANTOM5 data files, in dated releases (2015 to 2019), licensed CC BY 4.0." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/fantom5/> .
+
+kgr:lsdb-archive.inoh a schema1:Product ;
+    rdfs:label "INOH (LSDB Archive)" ;
+    dcterms:description "LSDB Archive copy of the INOH pathway database, in dated releases (2011 to 2017), licensed CC BY-SA 2.1 Japan." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/inoh/> .
+
+kgr:lsdb-archive.kegg-medicus a schema1:Product ;
+    rdfs:label "KEGG MEDICUS (LSDB Archive)" ;
+    dcterms:description "LSDB Archive copy of KEGG MEDICUS, the KEGG resource for drugs, diseases and drug labels, in dated releases (2014 to 2023), licensed CC BY-SA 4.0." ;
+    schema1:url <https://dbarchive.biosciencedbc.jp/data/kegg-medicus/> .
+
 kgr:markerdb.proteins.tsv a schema1:Product ;
     rdfs:label "MarkerDB Protein Biomarkers TSV" ;
     dcterms:description "TSV export of MarkerDB protein biomarkers with associated conditions and concentration data." ;
@@ -43301,6 +43937,16 @@ kgr:medi.pmda a schema1:Product ;
     rdfs:label "MeDI PMDA Extract" ;
     dcterms:description "PMDA regulatory source extract from the medic v1.0.1 release" ;
     schema1:url <https://github.com/marcello-deluca/medic/releases/download/v1.0.1/pmda.xlsx> .
+
+kgr:metabolights.metabolites a schema1:Product ;
+    rdfs:label "MetaboLights Reference Metabolite List" ;
+    dcterms:description "JSON list of the ChEBI identifiers of metabolites in the MetaboLights reference layer, last updated in October 2020." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/metabolites_complete.json> .
+
+kgr:metabolights.study-metabolites a schema1:MappingProduct ;
+    rdfs:label "MetaboLights Study to Metabolite Mapping" ;
+    dcterms:description "JSON mapping from MetaboLights studies to the metabolites (ChEBI identifiers) reported in them, last updated in October 2020." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/metabolights/eb-eye/study_metabolites_mapping.json> .
 
 kgr:mrbase.api a schema1:ProgrammingInterface ;
     rdfs:label "MR-Base REST API" ;
@@ -45026,6 +45672,11 @@ kgr:patric.web a schema1:GraphicalInterface ;
     rdfs:label "PATRIC/BV-BRC Web Portal" ;
     dcterms:description "BV-BRC web portal that hosts legacy PATRIC bacterial genomics data and tools alongside expanded viral resources" ;
     schema1:url <https://www.bv-brc.org/> .
+
+kgr:peptideatlas.human.ensembl-mapping a schema1:MappingProduct ;
+    rdfs:label "PeptideAtlas Human Peptide to Ensembl Mapping" ;
+    dcterms:description "Mapping of Human 2026-01 PeptideAtlas peptides to Ensembl proteins." ;
+    schema1:url <https://peptideatlas.org/builds/human/202601/APD_ensembl_hits.tsv> .
 
 kgr:pharmacotherapydb.diseases a schema1:Product ;
     rdfs:label "PharmacotherapyDB Diseases TSV" ;
@@ -46830,6 +47481,21 @@ kgr:unibiomap.pathway_desc a schema1:GraphProduct ;
     dcterms:description "UniBioMap pathway entity descriptions." ;
     schema1:url <https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json> .
 
+kgr:who-ictrp.portal a schema1:GraphicalInterface ;
+    rdfs:label "ICTRP Search Portal" ;
+    dcterms:description "ICTRP Search Portal for searching trial registration records from all ICTRP data providers, with basic and advanced search, filters for phase, results, children, COVID-19, rare diseases and genome editing, browsing by health topic and country, and links to the original registry records." ;
+    schema1:url <https://trialsearch.who.int/> .
+
+kgr:who-ictrp.search-export a schema1:Product ;
+    rdfs:label "ICTRP Search Results Export" ;
+    dcterms:description "Export of ICTRP search results (selected records or all records of a search) from the Search Portal in XML or CSV format, free of charge under the WHO ICTRP data terms and conditions." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set/downloading-records-from-the-ictrp-database> .
+
+kgr:who-ictrp.web-service a schema1:ProgrammingInterface ;
+    rdfs:label "ICTRP Search Portal Web Service" ;
+    dcterms:description "ICTRP Search Portal Web Service, a SOAP/XML web service (operations include GetTrials and GetTrialDetails) for querying the ICTRP database in real time. Access is granted to agreed partners for research purposes, and WHO may charge to recoup costs." ;
+    schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service> .
+
 kgr:activedriverdb.downloads a schema1:Product ;
     rdfs:label "ActiveDriverDB Downloads" ;
     dcterms:description "Bulk downloadable ActiveDriverDB datasets, including cancer, disease, and population mutations affecting PTM sites and kinase-target site-specific networks." ;
@@ -47684,16 +48350,6 @@ kgr:kinace.portal a schema1:GraphicalInterface ;
     dcterms:description "Interactive Shiny web interface for exploring and visualizing human kinase-substrate interactions" ;
     schema1:url <https://kinet.kinametrix.com/> .
 
-kgr:omicsdi.api a schema1:ProgrammingInterface ;
-    rdfs:label "OmicsDI API" ;
-    dcterms:description "Swagger-documented web service for programmatic querying of OmicsDI dataset metadata." ;
-    schema1:url <https://www.omicsdi.org/ws/swagger-ui/index.html> .
-
-kgr:omicsdi.portal a schema1:GraphicalInterface ;
-    rdfs:label "OmicsDI Portal" ;
-    dcterms:description "Web portal for searching and browsing integrated omics dataset metadata across repositories." ;
-    schema1:url <https://www.omicsdi.org/> .
-
 kgr:athena.vocabularies a schema1:Product ;
     rdfs:label "Athena Vocabulary Downloads" ;
     dcterms:description "Downloadable standardized vocabulary bundles for OMOP CDM assembled through the authenticated Athena web application" ;
@@ -47863,6 +48519,16 @@ kgr:kg-microbe.graph.raw a schema1:GraphProduct ;
     dcterms:description "Raw source files for all KG-Microbe framework transforms (all 4 KGs)" ;
     schema1:url <https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest> .
 
+kgr:omicsdi.api a schema1:ProgrammingInterface ;
+    rdfs:label "OmicsDI API" ;
+    dcterms:description "Swagger-documented web service for programmatic querying of OmicsDI dataset metadata." ;
+    schema1:url <https://www.omicsdi.org/ws/swagger-ui/index.html> .
+
+kgr:omicsdi.portal a schema1:GraphicalInterface ;
+    rdfs:label "OmicsDI Portal" ;
+    dcterms:description "Web portal for searching and browsing integrated omics dataset metadata across repositories." ;
+    schema1:url <https://www.omicsdi.org/> .
+
 kgr:epigraphdb.graph a schema1:GraphProduct ;
     rdfs:label "EpiGraphDB Graph Database" ;
     dcterms:description "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)" ;
@@ -47986,6 +48652,11 @@ kgr:microbiomekg.api a schema1:ProgrammingInterface ;
     dcterms:description "Plover-hosted TRAPI web API for querying the Multiomics Microbiome knowledge graph" ;
     schema1:url <https://multiomics.transltr.io/mbkp> .
 
+kgr:knowwheregraph.graph a schema1:GraphProduct ;
+    rdfs:label "KnowWhereGraph RDF Knowledge Graph" ;
+    dcterms:description "KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating 30+ environmental and geospatial data layers accessible through SPARQL endpoint" ;
+    schema1:url <https://knowwheregraph.org/> .
+
 kgr:ncbi a schema1:DataSource,
         "Organization" ;
     rdfs:label "ClinVar Team, National Center for Biotechnology Information (NCBI)",
@@ -48002,7 +48673,8 @@ kgr:ncbi a schema1:DataSource,
         "National Library of Medicine",
         "National Library of Medicine (NLM)",
         "National Library of Medicine Clinical Trials Team",
-        "US National Library of Medicine" ;
+        "US National Library of Medicine",
+        "dbGaP Team, National Center for Biotechnology Information (NCBI)" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The National Center for Biotechnology Information advances science and health by providing access to biomedical and genomic information, databases, tools, and services." ;
     dcterms:identifier "ncbi" ;
@@ -48029,11 +48701,6 @@ kgr:ncbi a schema1:DataSource,
     adms:status "Active" ;
     foaf:homepage <https://www.ncbi.nlm.nih.gov/> .
 
-kgr:knowwheregraph.graph a schema1:GraphProduct ;
-    rdfs:label "KnowWhereGraph RDF Knowledge Graph" ;
-    dcterms:description "KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating 30+ environmental and geospatial data layers accessible through SPARQL endpoint" ;
-    schema1:url <https://knowwheregraph.org/> .
-
 kgr:alzkb.browser a schema1:GraphicalInterface ;
     rdfs:label "AlzKB Graph Database Browser" ;
     dcterms:description "A browser interface for a knowledge graph for Alzheimer's Disease." ;
@@ -48043,24 +48710,6 @@ kgr:alzkb.data a schema1:GraphProduct ;
     rdfs:label "AlzKB Data Release (Version 2.0.0)" ;
     dcterms:description "Memgraph data release for AlzKB." ;
     schema1:url <https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0> .
-
-kgr:ebi a "Organization" ;
-    rdfs:label "ChEMBL",
-        "ChEMBL Team at EMBL-EBI",
-        "EMBL-EBI",
-        "EMBL-EBI Samples, Phenotypes and Ontologies Team",
-        "EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT)",
-        "Ensembl Help Desk",
-        "European Bioinformatics Institute (EMBL-EBI)",
-        "GOA Team at EMBL-EBI",
-        "IntAct Team (EMBL-EBI)",
-        "InterPro",
-        "International Genome Sample Resource (EMBL-EBI)",
-        "NHGRI-EBI GWAS Catalog Team",
-        "RNAcentral Consortium (EMBL-EBI)",
-        "Reactome",
-        "Rfam Team at EMBL-EBI",
-        "UniProt Consortium" .
 
 kgr:np-kg.graph.networkx a schema1:GraphProduct ;
     rdfs:label "NP-KG gpickle" ;
@@ -48086,6 +48735,26 @@ kgr:pubchem.substances.sdf a schema1:Product ;
     rdfs:label "PubChem Substances SDF" ;
     dcterms:description "PubChem substance information in SDF format" ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/> .
+
+kgr:ebi a "Organization" ;
+    rdfs:label "BioModels team, EMBL-EBI",
+        "ChEMBL",
+        "ChEMBL Team at EMBL-EBI",
+        "EMBL-EBI",
+        "EMBL-EBI Samples, Phenotypes and Ontologies Team",
+        "EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT)",
+        "Ensembl Help Desk",
+        "European Bioinformatics Institute (EMBL-EBI)",
+        "GOA Team at EMBL-EBI",
+        "IntAct Team (EMBL-EBI)",
+        "InterPro",
+        "International Genome Sample Resource (EMBL-EBI)",
+        "MetaboLights team, EMBL-EBI",
+        "NHGRI-EBI GWAS Catalog Team",
+        "RNAcentral Consortium (EMBL-EBI)",
+        "Reactome",
+        "Rfam Team at EMBL-EBI",
+        "UniProt Consortium" .
 
 kgr:genomickb.graph a schema1:GraphProduct ;
     rdfs:label "GenomicKB Graph Dump" ;

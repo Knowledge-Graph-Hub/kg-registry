@@ -99,6 +99,7 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: ensembl
+  product_file_size: 11751640392
   product_url: https://peptideatlas.org/builds/human/202601/APD_ensembl_hits.tsv
 - category: Product
   description: Genome coordinate mapping of peptides in the Human 2026-01 PeptideAtlas
