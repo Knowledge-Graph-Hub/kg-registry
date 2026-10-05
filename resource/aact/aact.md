@@ -132,6 +132,8 @@ products:
     source: ctkp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
   versions:
   - '2026_03_27'
