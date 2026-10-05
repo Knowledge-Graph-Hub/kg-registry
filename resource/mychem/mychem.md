@@ -30,7 +30,7 @@ domains:
 homepage_url: https://mychem.info/
 id: mychem
 infores_id: mychem-info
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -75,6 +75,8 @@ products:
     source: aeolus
   - relation_type: prov:hadPrimarySource
     source: sider
+  - relation_type: prov:hadPrimarySource
+    source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
 - category: Product
   description: JSON metadata for the current MyChem.info build, listing each data

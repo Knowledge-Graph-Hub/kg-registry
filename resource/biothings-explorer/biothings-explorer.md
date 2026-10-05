@@ -30,7 +30,7 @@ domains:
 homepage_url: https://explorer.biothings.io/
 id: biothings-explorer
 infores_id: biothings-explorer
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/Apache-2.0
@@ -50,6 +50,8 @@ products:
     source: biothings-explorer
   - relation_type: prov:wasInformedBy
     source: service-kp
+  - relation_type: prov:wasInformedBy
+    source: smartapi
   product_url: https://bte.transltr.io/v1
 - category: Product
   description: Meta knowledge graph of the subject category, predicate and object

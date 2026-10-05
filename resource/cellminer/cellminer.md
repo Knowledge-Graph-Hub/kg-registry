@@ -26,7 +26,7 @@ domains:
 - genomics
 homepage_url: https://discover.nci.nih.gov/cellminer/
 id: cellminer
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 name: CellMiner
 products:
@@ -40,6 +40,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
   product_url: https://discover.nci.nih.gov/cellminer/
 - category: Product
   description: CellMiner download page listing processed NCI-60 datasets (drug activity
@@ -52,6 +54,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
   product_url: https://discover.nci.nih.gov/cellminer/loadDownload.do
 - category: Product
   compression: zip
@@ -64,6 +68,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
   product_file_size: 8514360
   product_url: https://discover.nci.nih.gov/cellminer/download/processeddataset/DTP_NCI60_ZSCORE.zip
 - category: Product
@@ -77,6 +83,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
   product_file_size: 21446814
   product_url: https://discover.nci.nih.gov/cellminer/download/rawdataset/DTP_NCI60_RAW.zip
 - category: GraphicalInterface
@@ -100,6 +108,8 @@ products:
     source: prism
   - relation_type: prov:hadPrimarySource
     source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: nci60
   product_url: https://discover.nci.nih.gov/cellminercdb/
 - category: ProgrammingInterface
   description: rcellminer Bioconductor package providing R functions to access, visualize

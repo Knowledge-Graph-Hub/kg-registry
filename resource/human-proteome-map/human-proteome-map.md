@@ -21,7 +21,7 @@ domains:
 - biomedical
 homepage_url: http://www.humanproteomemap.org/
 id: human-proteome-map
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 name: Human Proteome Map
 products:
@@ -67,6 +67,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: human-proteome-map
   product_url: https://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000561/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: pride
 - category: GraphicalInterface
   description: Expression browser data and source code showing tissue-specific expression
     of dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide

@@ -23,7 +23,7 @@ domains:
 - metadata
 homepage_url: https://newmdr.ecrin.org/
 id: ecrin-mdr
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -52,6 +52,16 @@ products:
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
   product_url: https://newmdr.ecrin.org/
 - category: ProgrammingInterface
   description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints
@@ -67,6 +77,16 @@ products:
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
   product_url: https://newmdr.ecrin.org/swagger/index.html
 - category: DataModelProduct
   description: ECRIN Metadata Schemas for Clinical Research, version 8 (September

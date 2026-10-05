@@ -20,7 +20,7 @@ domains:
 - information technology
 homepage_url: https://www.proteomexchange.org/
 id: proteomexchange
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 name: ProteomeXchange
 products:
@@ -46,6 +46,16 @@ products:
     source: proteomexchange
   - relation_type: prov:hadPrimarySource
     source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
   product_url: https://proteomecentral.proteomexchange.org/
 - category: Product
   description: Full tab-separated listing of all public ProteomeXchange datasets (about
@@ -60,6 +70,16 @@ products:
     source: proteomexchange
   - relation_type: prov:hadPrimarySource
     source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
   product_url: https://proteomecentral.proteomexchange.org/cgi/GetDataset?outputMode=tsv
 - category: Product
   description: Per-dataset ProteomeXchange announcement records retrieved by PXD accession
@@ -73,6 +93,16 @@ products:
     source: proteomexchange
   - relation_type: prov:hadPrimarySource
     source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
   product_url: https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD000001&outputMode=XML
 - category: ProgrammingInterface
   connection_url: https://proteomecentral.proteomexchange.org/api/proxi/v0.1/

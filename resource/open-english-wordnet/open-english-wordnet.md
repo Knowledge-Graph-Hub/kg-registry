@@ -68,6 +68,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: open-english-wordnet
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 11363503
   product_url: https://en-word.net/static/english-wordnet-2025.xml.gz
 - category: GraphProduct
@@ -80,6 +82,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: open-english-wordnet
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 17760615
   product_url: https://en-word.net/static/english-wordnet-2025.ttl.gz
 - category: Product
@@ -92,6 +96,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: open-english-wordnet
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 9986555
   product_url: https://en-word.net/static/english-wordnet-2025-json.zip
 - category: Product
@@ -104,6 +110,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: open-english-wordnet
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 9618697
   product_url: https://en-word.net/static/english-wordnet-2025.zip
 - category: Product
@@ -118,6 +126,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 12925887
   product_url: https://en-word.net/static/english-wordnet-2025-plus.xml.gz
 - category: GraphProduct
@@ -132,6 +142,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 20337343
   product_url: https://en-word.net/static/english-wordnet-2025-plus.ttl.gz
 - category: Product
@@ -146,6 +158,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 11298794
   product_url: https://en-word.net/static/english-wordnet-2025-plus-json.zip
 - category: Product
@@ -160,6 +174,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 10979359
   product_url: https://en-word.net/static/english-wordnet-2025-plus.zip
 publications:

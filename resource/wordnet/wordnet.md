@@ -21,7 +21,7 @@ domains:
 - natural language processing
 homepage_url: https://wordnet.princeton.edu/
 id: wordnet
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://wordnet.princeton.edu/license-and-commercial-use
@@ -114,6 +114,8 @@ publications:
 synonyms:
 - Princeton WordNet
 - PWN
+use_instead:
+- open-english-wordnet
 version: '3.1'
 ---
 # WordNet

@@ -23,7 +23,7 @@ domains:
 - nutrition
 homepage_url: https://foodkg.github.io/
 id: foodkg
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -60,6 +60,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://github.com/foodkg/foodkg.github.io/tree/master/src
 - category: ProgrammingInterface
   description: Public Blazegraph SPARQL endpoint for querying FoodKG recipes, ingredients
@@ -89,6 +91,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://drive.google.com/open?id=1hkitCcxnM_7R6OYuvC5zakWojlN2Xuog
 - category: MappingProduct
   description: Semantic Data Dictionary mapping file specifying how USDA nutrient
@@ -107,6 +111,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://foodkg.github.io/sdd/usdaDM.csv
 - category: OntologyProduct
   description: Food component of the WhatToMake ontology, containing the base classes

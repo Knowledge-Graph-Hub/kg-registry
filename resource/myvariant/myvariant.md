@@ -32,7 +32,7 @@ domains:
 homepage_url: https://myvariant.info/
 id: myvariant
 infores_id: myvariant-info
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -68,6 +68,10 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: snpeff
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: cadd
   product_url: https://myvariant.info/v1/query
 - category: Product
   description: JSON metadata for the current MyVariant.info build, with build date

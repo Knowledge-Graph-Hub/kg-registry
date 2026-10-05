@@ -24,7 +24,7 @@ domains:
 - biological systems
 homepage_url: https://models.physiomeproject.org/
 id: physiome-model-repository
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -51,6 +51,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: physiome-model-repository
+  - relation_type: prov:wasInfluencedBy
+    source: cellml
   product_url: https://models.physiomeproject.org/exposure
 - category: Product
   description: Listing of version-controlled model workspaces. Each workspace is a
@@ -62,6 +64,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: physiome-model-repository
+  - relation_type: prov:wasInfluencedBy
+    source: cellml
   product_url: https://models.physiomeproject.org/workspace
 - category: ProgrammingInterface
   description: JSON web service on the same URLs as the portal. Sending the header

@@ -31,7 +31,7 @@ domains:
 homepage_url: https://name-resolution-sri.renci.org/docs
 id: name-resolver
 infores_id: sri-name-resolver
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/
@@ -51,6 +51,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: name-resolver
+  - relation_type: prov:wasDerivedFrom
+    source: babel
   product_url: https://name-resolution-sri.renci.org/docs
 - category: ProgrammingInterface
   connection_url: https://name-lookup.transltr.io/
@@ -64,6 +66,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: name-resolver
+  - relation_type: prov:wasDerivedFrom
+    source: babel
   product_url: https://name-lookup.transltr.io/docs
 - category: ProcessProduct
   description: Python source code for the Name Resolver service, including the FastAPI

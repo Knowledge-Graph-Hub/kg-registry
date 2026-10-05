@@ -88,6 +88,8 @@ products:
     source: icgc
   - relation_type: prov:wasDerivedFrom
     source: mediadive
+  - relation_type: prov:wasDerivedFrom
+    source: jpost
   product_url: https://rdfportal.org/primary/sparql
 - category: ProgrammingInterface
   description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal,
@@ -182,6 +184,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: ddbj
   product_url: https://rdfportal.org/ddbj/sparql
 - category: ProgrammingInterface
   description: SPARQL endpoint for the DBKERO RDF dataset.
