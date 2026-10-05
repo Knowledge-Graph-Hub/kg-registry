@@ -13,6 +13,8 @@ product_file_size: 2310496
 product_url: https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/main/ecso/ECSO8.owl
 secondary_source:
 - relation_type: prov:used
+  source: oboe
+- relation_type: prov:used
   source: envo
 - relation_type: prov:used
   source: pato

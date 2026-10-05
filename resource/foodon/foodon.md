@@ -789,6 +789,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://github.com/foodkg/foodkg.github.io/tree/master/src
 - category: ProgrammingInterface
   description: Public Blazegraph SPARQL endpoint for querying FoodKG recipes, ingredients
@@ -818,6 +820,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://drive.google.com/open?id=1hkitCcxnM_7R6OYuvC5zakWojlN2Xuog
 - category: MappingProduct
   description: Semantic Data Dictionary mapping file specifying how USDA nutrient
@@ -836,6 +840,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://foodkg.github.io/sdd/usdaDM.csv
 - category: OntologyProduct
   description: FoodOn component of the WhatToMake ontology, containing the classes

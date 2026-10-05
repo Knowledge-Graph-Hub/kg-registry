@@ -1316,6 +1316,8 @@ products:
     source: aeolus
   - relation_type: prov:hadPrimarySource
     source: sider
+  - relation_type: prov:hadPrimarySource
+    source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
 - category: Product
   description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,

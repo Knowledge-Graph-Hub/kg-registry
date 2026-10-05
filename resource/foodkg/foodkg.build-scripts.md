@@ -18,6 +18,8 @@ original_source:
   source: foodon
 - relation_type: prov:hadPrimarySource
   source: uo
+- relation_type: prov:wasDerivedFrom
+  source: fooddata-central
 product_url: https://github.com/foodkg/foodkg.github.io/tree/master/src
 layout: product_detail
 ---

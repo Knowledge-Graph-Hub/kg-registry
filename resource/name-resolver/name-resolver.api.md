@@ -12,6 +12,8 @@ name: Name Resolver API (RENCI)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: name-resolver
+- relation_type: prov:wasDerivedFrom
+  source: babel
 product_url: https://name-resolution-sri.renci.org/docs
 layout: product_detail
 ---

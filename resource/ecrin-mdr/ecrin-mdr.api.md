@@ -13,6 +13,16 @@ original_source:
   source: clinicaltrialsgov
 - relation_type: prov:hadPrimarySource
   source: pubmed
+- relation_type: prov:hadPrimarySource
+  source: who-ictrp
+- relation_type: prov:hadPrimarySource
+  source: isrctn
+- relation_type: prov:hadPrimarySource
+  source: eu-ctr
+- relation_type: prov:hadPrimarySource
+  source: biolincc
+- relation_type: prov:hadPrimarySource
+  source: yoda
 product_url: https://newmdr.ecrin.org/swagger/index.html
 layout: product_detail
 ---

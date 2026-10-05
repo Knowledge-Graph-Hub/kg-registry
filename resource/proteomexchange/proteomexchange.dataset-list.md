@@ -12,6 +12,16 @@ original_source:
   source: proteomexchange
 - relation_type: prov:hadPrimarySource
   source: massive
+- relation_type: prov:hadPrimarySource
+  source: pride
+- relation_type: prov:hadPrimarySource
+  source: peptideatlas
+- relation_type: prov:hadPrimarySource
+  source: jpost
+- relation_type: prov:hadPrimarySource
+  source: iprox
+- relation_type: prov:hadPrimarySource
+  source: panorama-public
 product_url: https://proteomecentral.proteomexchange.org/cgi/GetDataset?outputMode=tsv
 layout: product_detail
 ---

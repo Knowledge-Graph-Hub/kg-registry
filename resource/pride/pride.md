@@ -210,6 +210,91 @@ products:
   - relation_type: prov:hadPrimarySource
     source: proteomexchange
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: Product
+  description: Raw LC-MS/MS data for the draft map of the human proteome, deposited
+    in the PRIDE Archive as PXD000561 (about 2,200 Thermo RAW files from LTQ Orbitrap
+    Elite and Velos instruments, with Proteome Discoverer MSF result files, SDRF sample
+    metadata and a README).
+  format: mixed
+  id: human-proteome-map.raw-data
+  name: Human Proteome Map Raw Data (PXD000561)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
+  product_url: https://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000561/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: pride
+- category: GraphicalInterface
+  description: ProteomeCentral, the central index of ProteomeXchange datasets announced
+    by all member repositories, with search, filtering and browsing of datasets and
+    spectral libraries, plus USI and Quetzal spectrum viewers.
+  format: http
+  id: proteomexchange.proteomecentral
+  name: ProteomeCentral
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  product_url: https://proteomecentral.proteomexchange.org/
+- category: Product
+  description: Full tab-separated listing of all public ProteomeXchange datasets (about
+    57,000 rows when checked on 2026-10-04), with identifier, title, repository, species,
+    instrument, publication, lab head, announcement date and keywords. Some cells
+    contain HTML anchor markup.
+  format: tsv
+  id: proteomexchange.dataset-list
+  name: ProteomeXchange Dataset Listing
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  product_url: https://proteomecentral.proteomexchange.org/cgi/GetDataset?outputMode=tsv
+- category: Product
+  description: Per-dataset ProteomeXchange announcement records retrieved by PXD accession
+    from ProteomeCentral, available as ProteomeXchange XML (outputMode=XML) or JSON
+    (outputMode=JSON). The URL shows dataset PXD000001 as an example.
+  format: xml
+  id: proteomexchange.dataset-records
+  name: ProteomeXchange Dataset Records
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  product_url: https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD000001&outputMode=XML
 publications:
 - authors:
   - Yasset Perez-Riverol

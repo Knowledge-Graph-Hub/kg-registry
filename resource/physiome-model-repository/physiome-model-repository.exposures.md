@@ -9,6 +9,8 @@ name: PMR Exposures
 original_source:
 - relation_type: prov:hadPrimarySource
   source: physiome-model-repository
+- relation_type: prov:wasInfluencedBy
+  source: cellml
 product_url: https://models.physiomeproject.org/exposure
 layout: product_detail
 ---

@@ -2508,6 +2508,8 @@ products:
     source: aeolus
   - relation_type: prov:hadPrimarySource
     source: sider
+  - relation_type: prov:hadPrimarySource
+    source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
 - category: ProgrammingInterface
   description: MyGene.info REST API (v3) for gene query and annotation retrieval by

@@ -133,6 +133,32 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cellml
   product_url: https://www.cellml.org/specifications
+- category: GraphicalInterface
+  description: Listing of exposures, the published and annotated views of CellML, FieldML
+    and SED-ML models, each tied to a specific workspace revision, with model documentation,
+    metadata and downloads.
+  format: http
+  id: physiome-model-repository.exposures
+  name: PMR Exposures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:wasInfluencedBy
+    source: cellml
+  product_url: https://models.physiomeproject.org/exposure
+- category: Product
+  description: Listing of version-controlled model workspaces. Each workspace is a Git repository
+    holding model files (CellML, FieldML, SED-ML, documentation) that can be cloned with git
+    clone using the workspace URI.
+  format: mixed
+  id: physiome-model-repository.workspaces
+  name: PMR Workspaces
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:wasInfluencedBy
+    source: cellml
+  product_url: https://models.physiomeproject.org/workspace
 publications:
 - authors:
   - Michael Clerx

@@ -2450,6 +2450,16 @@ products:
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
   product_url: https://newmdr.ecrin.org/
 - category: ProgrammingInterface
   description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints for study
@@ -2465,6 +2475,16 @@ products:
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
   product_url: https://newmdr.ecrin.org/swagger/index.html
 - category: Product
   description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,

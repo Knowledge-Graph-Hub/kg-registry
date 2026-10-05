@@ -528,6 +528,8 @@ products:
     source: prism
   - relation_type: prov:hadPrimarySource
     source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: nci60
   product_url: https://discover.nci.nih.gov/cellminercdb/
 publications:
 - authors:

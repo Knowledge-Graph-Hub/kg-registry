@@ -230,6 +230,8 @@ products:
     source: biothings-explorer
   - relation_type: prov:wasInformedBy
     source: service-kp
+  - relation_type: prov:wasInformedBy
+    source: smartapi
   product_url: https://bte.transltr.io/v1
 publications:
 - authors:

@@ -19,6 +19,8 @@ original_source:
   source: prism
 - relation_type: prov:hadPrimarySource
   source: achilles
+- relation_type: prov:hadPrimarySource
+  source: nci60
 product_url: https://discover.nci.nih.gov/cellminercdb/
 layout: product_detail
 ---

@@ -11,6 +11,8 @@ name: Name Resolver API (Translator production)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: name-resolver
+- relation_type: prov:wasDerivedFrom
+  source: babel
 product_url: https://name-lookup.transltr.io/docs
 layout: product_detail
 ---

@@ -709,6 +709,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://github.com/foodkg/foodkg.github.io/tree/master/src
 - category: GraphProduct
   description: Sample of FoodKG containing the USDA nutrient data mappings, generated with
@@ -723,6 +725,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://drive.google.com/open?id=1hkitCcxnM_7R6OYuvC5zakWojlN2Xuog
 - category: MappingProduct
   description: Semantic Data Dictionary mapping file specifying how USDA nutrient data columns
@@ -741,6 +745,8 @@ products:
     source: foodon
   - relation_type: prov:hadPrimarySource
     source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
   product_url: https://foodkg.github.io/sdd/usdaDM.csv
 publications:
 - authors:

@@ -162,6 +162,87 @@ products:
     source: human-proteome-map
   product_file_size: 7261526
   product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
+- category: GraphicalInterface
+  description: CellMiner web portal for querying NCI-60 gene transcript, DNA, protein
+    and drug activity patterns, comparing patterns across cell lines and browsing
+    cell line metadata.
+  format: http
+  id: cellminer.portal
+  name: CellMiner Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  product_url: https://discover.nci.nih.gov/cellminer/
+- category: Product
+  description: CellMiner download page listing processed NCI-60 datasets (drug activity
+    z-scores, copy number, exome mutations, methylation, transcript expression, microRNA,
+    proteomics and histone marks) and raw datasets, each as a ZIP archive containing
+    Excel workbooks plus documentation.
+  format: http
+  id: cellminer.downloads
+  name: CellMiner Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  product_url: https://discover.nci.nih.gov/cellminer/loadDownload.do
+- category: Product
+  compression: zip
+  description: Processed DTP NCI-60 compound activity data as z-scores of negative
+    log10 GI50 values across the NCI-60 cell lines, provided as an Excel workbook
+    with drug and cell line metadata documentation.
+  format: xlsx
+  id: cellminer.drug-zscore
+  name: CellMiner DTP NCI-60 Drug Activity Z-Scores
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  product_file_size: 8514360
+  product_url: https://discover.nci.nih.gov/cellminer/download/processeddataset/DTP_NCI60_ZSCORE.zip
+- category: Product
+  compression: zip
+  description: Raw DTP NCI-60 compound activity data (negative log10 GI50 values for
+    all replicate experiments) across the NCI-60 cell lines, provided as an Excel
+    workbook with drug and cell line metadata documentation.
+  format: xlsx
+  id: cellminer.drug-raw
+  name: CellMiner DTP NCI-60 Raw Drug Activity
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  product_file_size: 21446814
+  product_url: https://discover.nci.nih.gov/cellminer/download/rawdataset/DTP_NCI60_RAW.zip
+- category: GraphicalInterface
+  description: CellMinerCDB web application for integrative cross-database genomics
+    and pharmacogenomics analysis of cancer cell lines, combining NCI-60 data with
+    CCLE, GDSC, CTRP, PRISM, Project Achilles, NCI-DTP SCLC, MD Anderson and NCATS
+    datasets.
+  format: http
+  id: cellminer.cellminercdb
+  name: CellMinerCDB
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  product_url: https://discover.nci.nih.gov/cellminercdb/
 publications:
 - authors:
   - Robert H. Shoemaker

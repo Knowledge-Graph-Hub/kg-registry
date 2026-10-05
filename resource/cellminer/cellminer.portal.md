@@ -9,6 +9,8 @@ name: CellMiner Portal
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cellminer
+- relation_type: prov:hadPrimarySource
+  source: nci60
 product_url: https://discover.nci.nih.gov/cellminer/
 layout: product_detail
 ---

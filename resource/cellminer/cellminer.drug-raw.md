@@ -10,6 +10,8 @@ name: CellMiner DTP NCI-60 Raw Drug Activity
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cellminer
+- relation_type: prov:hadPrimarySource
+  source: nci60
 product_file_size: 21446814
 product_url: https://discover.nci.nih.gov/cellminer/download/rawdataset/DTP_NCI60_RAW.zip
 layout: product_detail

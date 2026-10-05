@@ -582,6 +582,18 @@ products:
     source: biolink
   - relation_type: prov:wasInfluencedBy
     source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
@@ -614,6 +626,18 @@ products:
     source: biolink
   - relation_type: prov:wasInfluencedBy
     source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: Product
@@ -630,6 +654,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 12925887
   product_url: https://en-word.net/static/english-wordnet-2025-plus.xml.gz
 - category: GraphProduct
@@ -646,6 +672,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 20337343
   product_url: https://en-word.net/static/english-wordnet-2025-plus.ttl.gz
 - category: Product
@@ -661,6 +689,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 11298794
   product_url: https://en-word.net/static/english-wordnet-2025-plus-json.zip
 - category: Product
@@ -677,6 +707,8 @@ products:
     source: open-english-wordnet
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  - relation_type: prov:wasDerivedFrom
+    source: wordnet
   product_file_size: 10979359
   product_url: https://en-word.net/static/english-wordnet-2025-plus.zip
 repository: https://www.mediawiki.org/wiki/Wikibase

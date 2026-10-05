@@ -12,6 +12,8 @@ original_source:
   source: foodon
 - relation_type: prov:hadPrimarySource
   source: uo
+- relation_type: prov:wasDerivedFrom
+  source: fooddata-central
 product_url: https://drive.google.com/open?id=1hkitCcxnM_7R6OYuvC5zakWojlN2Xuog
 layout: product_detail
 ---

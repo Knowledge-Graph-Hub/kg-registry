@@ -11,5 +11,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: human-proteome-map
 product_url: https://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000561/
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: pride
 layout: product_detail
 ---

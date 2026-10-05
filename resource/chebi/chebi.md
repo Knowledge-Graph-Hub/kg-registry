@@ -5304,6 +5304,8 @@ products:
     source: aeolus
   - relation_type: prov:hadPrimarySource
     source: sider
+  - relation_type: prov:hadPrimarySource
+    source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
 - category: Product
   description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
@@ -5468,6 +5470,8 @@ products:
   product_file_size: 2310496
   product_url: https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/main/ecso/ECSO8.owl
   secondary_source:
+  - relation_type: prov:used
+    source: oboe
   - relation_type: prov:used
     source: envo
   - relation_type: prov:used

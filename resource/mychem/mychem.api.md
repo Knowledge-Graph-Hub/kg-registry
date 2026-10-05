@@ -37,6 +37,8 @@ original_source:
   source: aeolus
 - relation_type: prov:hadPrimarySource
   source: sider
+- relation_type: prov:hadPrimarySource
+  source: fda-orphan-drugs
 product_url: https://mychem.info/v1/query
 layout: product_detail
 ---

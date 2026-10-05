@@ -3660,6 +3660,10 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: snpeff
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: cadd
   product_url: https://myvariant.info/v1/query
 - category: Product
   compression: zip

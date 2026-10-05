@@ -490,6 +490,8 @@ products:
     source: icgc
   - relation_type: prov:wasDerivedFrom
     source: mediadive
+  - relation_type: prov:wasDerivedFrom
+    source: jpost
   product_url: https://rdfportal.org/primary/sparql
 publications:
 - authors:

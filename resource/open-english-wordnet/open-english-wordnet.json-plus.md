@@ -13,6 +13,8 @@ original_source:
   source: open-english-wordnet
 - relation_type: prov:wasDerivedFrom
   source: wikidata
+- relation_type: prov:wasDerivedFrom
+  source: wordnet
 product_file_size: 11298794
 product_url: https://en-word.net/static/english-wordnet-2025-plus-json.zip
 layout: product_detail

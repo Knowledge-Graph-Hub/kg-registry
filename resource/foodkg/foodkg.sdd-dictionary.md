@@ -16,6 +16,8 @@ original_source:
   source: foodon
 - relation_type: prov:hadPrimarySource
   source: uo
+- relation_type: prov:wasDerivedFrom
+  source: fooddata-central
 product_url: https://foodkg.github.io/sdd/usdaDM.csv
 layout: product_detail
 ---

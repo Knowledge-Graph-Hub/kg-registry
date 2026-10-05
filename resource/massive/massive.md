@@ -300,6 +300,16 @@ products:
     source: proteomexchange
   - relation_type: prov:hadPrimarySource
     source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
   product_url: https://proteomecentral.proteomexchange.org/
 - category: Product
   description: Full tab-separated listing of all public ProteomeXchange datasets (about 57,000
@@ -314,6 +324,16 @@ products:
     source: proteomexchange
   - relation_type: prov:hadPrimarySource
     source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
   product_url: https://proteomecentral.proteomexchange.org/cgi/GetDataset?outputMode=tsv
 - category: Product
   description: Per-dataset ProteomeXchange announcement records retrieved by PXD accession
@@ -327,6 +347,16 @@ products:
     source: proteomexchange
   - relation_type: prov:hadPrimarySource
     source: massive
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
   product_url: https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD000001&outputMode=XML
 publications:
 - authors:

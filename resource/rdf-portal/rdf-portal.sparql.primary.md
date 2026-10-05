@@ -25,6 +25,8 @@ original_source:
   source: icgc
 - relation_type: prov:wasDerivedFrom
   source: mediadive
+- relation_type: prov:wasDerivedFrom
+  source: jpost
 product_url: https://rdfportal.org/primary/sparql
 layout: product_detail
 ---
