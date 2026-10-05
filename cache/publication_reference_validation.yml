@@ -134,6 +134,15 @@ entries:
     source_path: resource/agro/agro.md
     status: valid
     warnings: []
+  resource/agrovoc/agrovoc.md#publication[0]#DOI:10.3233/SW-130106:
+    checked_at: '2026-10-05T16:14:48Z'
+    errors: []
+    fingerprint: 2abd7e8a46e0ed7b0e599d5272557b8fb20ae1a3427d57164b01eb8ed11334f2
+    publication_index: 0
+    reference_id: DOI:10.3233/SW-130106
+    source_path: resource/agrovoc/agrovoc.md
+    status: valid
+    warnings: []
   resource/aism/aism.md#publication[0]#PMID:37094905:
     checked_at: '2026-08-06T18:16:30Z'
     errors: []
@@ -1336,6 +1345,33 @@ entries:
     source_path: resource/chemont/chemont.md
     status: valid
     warnings: []
+  resource/chip-atlas/chip-atlas.md#publication[0]#DOI:10.1093/nar/gkae358:
+    checked_at: '2026-10-05T16:15:21Z'
+    errors: []
+    fingerprint: 9035ad3391756422d358fa4e1e9a4ff8084dd8caa391bf60a3bb2ae6d9f7cf7d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae358
+    source_path: resource/chip-atlas/chip-atlas.md
+    status: valid
+    warnings: []
+  resource/chip-atlas/chip-atlas.md#publication[1]#DOI:10.1093/nar/gkac199:
+    checked_at: '2026-10-05T16:15:22Z'
+    errors: []
+    fingerprint: 4e75cc9986ad26260e962a61a37c1dd913630bb1b39e568098217c72c51a49cb
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkac199
+    source_path: resource/chip-atlas/chip-atlas.md
+    status: valid
+    warnings: []
+  resource/chip-atlas/chip-atlas.md#publication[2]#DOI:10.15252/embr.201846255:
+    checked_at: '2026-10-05T16:15:23Z'
+    errors: []
+    fingerprint: 495e35ad764b1cd15aefa4af717a1095db18a3634876a7cd6d1080a49e2e6cbb
+    publication_index: 2
+    reference_id: DOI:10.15252/embr.201846255
+    source_path: resource/chip-atlas/chip-atlas.md
+    status: valid
+    warnings: []
   resource/chiro/chiro.md#publication[0]#DOI:10.26434/chemrxiv.12591221:
     checked_at: '2026-08-06T18:16:48Z'
     errors: []
@@ -1984,6 +2020,24 @@ entries:
     publication_index: 0
     reference_id: PMID:18366659
     source_path: resource/ddanat/ddanat.md
+    status: valid
+    warnings: []
+  resource/ddbj/ddbj.md#publication[0]#DOI:10.1093/nar/gkaf1273:
+    checked_at: '2026-10-05T16:15:19Z'
+    errors: []
+    fingerprint: 1354c588744d11e5efa0221c450a3f98acb447f9126cd65d01a03cfb6f2a8210
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1273
+    source_path: resource/ddbj/ddbj.md
+    status: valid
+    warnings: []
+  resource/ddbj/ddbj.md#publication[1]#DOI:10.1093/nar/gkae882:
+    checked_at: '2026-10-05T16:15:20Z'
+    errors: []
+    fingerprint: db29f5ff9559812e29f05d0ddba8e6a79552b5ca594f3b3751c263e9db28b3dd
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkae882
+    source_path: resource/ddbj/ddbj.md
     status: valid
     warnings: []
   resource/ddinter/ddinter.md#publication[0]#PMID:34634800:
@@ -6222,6 +6276,24 @@ entries:
     source_path: resource/oostt/oostt.md
     status: valid
     warnings: []
+  resource/open-english-wordnet/open-english-wordnet.md#publication[0]#DOI:10.18653/v1/2019.gwc-1.31:
+    checked_at: '2026-10-05T16:14:46Z'
+    errors: []
+    fingerprint: 191f0b98cec72f0dec2bb314e31fa9da0b9abd474ad1acc8216d7e5502ff0860
+    publication_index: 0
+    reference_id: DOI:10.18653/v1/2019.gwc-1.31
+    source_path: resource/open-english-wordnet/open-english-wordnet.md
+    status: valid
+    warnings: []
+  resource/open-english-wordnet/open-english-wordnet.md#publication[1]#DOI:10.63317/4mit9o8vc2gw:
+    checked_at: '2026-10-05T16:14:47Z'
+    errors: []
+    fingerprint: 8de23e97e14c8fd5ca7838861ff57b9143eddecb66a5bc63ef00ebf94559ffa2
+    publication_index: 1
+    reference_id: DOI:10.63317/4mit9o8vc2gw
+    source_path: resource/open-english-wordnet/open-english-wordnet.md
+    status: valid
+    warnings: []
   resource/open-tree-of-life/open-tree-of-life.md#publication[0]#DOI:10.1073/pnas.1423041112:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6592,6 +6664,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkw1017
     source_path: resource/patric/patric.md
+    status: valid
+    warnings: []
+  resource/pavs-kg/pavs-kg.md#publication[0]#DOI:10.64898/2026.04.05.26350189:
+    checked_at: '2026-10-05T16:14:49Z'
+    errors: []
+    fingerprint: 8178b48e6ae1295a300d3d3a66a1549cf2884bd3c96a6faf1fbe2bbf6e5e3f2e
+    publication_index: 0
+    reference_id: DOI:10.64898/2026.04.05.26350189
+    source_path: resource/pavs-kg/pavs-kg.md
     status: valid
     warnings: []
   resource/paxdb/paxdb.md#publication[0]#DOI:10.1093/nar/gkaf1066:
