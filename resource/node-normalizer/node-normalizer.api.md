@@ -13,6 +13,8 @@ name: Node Normalization API (RENCI)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: node-normalizer
+- relation_type: prov:wasDerivedFrom
+  source: babel
 product_url: https://nodenormalization-sri.renci.org/docs
 layout: product_detail
 ---

@@ -1417,6 +1417,8 @@ products:
     source: omim
   - relation_type: prov:hadPrimarySource
     source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
   product_url: http://togows.org/help/
   warnings:
   - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
@@ -1467,6 +1469,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
@@ -1511,6 +1515,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
@@ -1556,7 +1562,141 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+- category: ProgrammingInterface
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
+    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
+    JSON documents merged from the integrated sources.
+  format: http
+  id: mygene.api
+  infores_id: mygene-info
+  name: MyGene.info API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: cellmarker
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://mygene.info/v3/api
+- category: GraphicalInterface
+  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence alignments,
+    structures and structure models, ligands and bioactivities, mutations, drugs and signaling
+    proteins, with interactive diagrams such as snake plots and phylogenetic trees.
+  format: http
+  id: gpcrdb.portal
+  name: GPCRdb Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/
+- category: ProgrammingInterface
+  description: REST API returning JSON for most GPCRdb data, including proteins, families,
+    alignments, residues, structures, ligands, mutations and signaling proteins.
+  format: http
+  id: gpcrdb.api
+  name: GPCRdb REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/services/reference/
+- category: Product
+  description: GitHub repository collecting the reference data used to build GPCRdb, including
+    protein, structure, ligand, mutant, drug, G protein, arrestin and residue data files,
+    plus a PDSP Ki data backup.
+  format: mixed
+  id: gpcrdb.data
+  name: GPCRdb Reference Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  product_url: https://github.com/protwis/gpcrdb_data
+  warnings:
+  - The repository has no license file; the GPCRdb legal notice states that GPCRdb data are
+    available under CC BY 4.0.
+- category: ProgrammingInterface
+  description: SPARQL endpoint for Protein Data Bank RDF datasets (wwPDB/RDF and BMRB/RDF).
+  format: http
+  id: rdf-portal.sparql.pdb
+  name: RDF Portal PDB SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: pdb
+  product_url: https://rdfportal.org/pdb/sparql
 publications:
 - authors:
   - wwPDB consortium

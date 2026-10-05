@@ -10,6 +10,10 @@ name: DKK Expression Browser
 original_source:
 - relation_type: prov:hadPrimarySource
   source: darkkinasekb
+- relation_type: prov:hadPrimarySource
+  source: human-proteome-map
+- relation_type: prov:hadPrimarySource
+  source: gtex
 product_url: https://github.com/IDG-Kinase/kinase_expression
 layout: product_detail
 ---

@@ -10,6 +10,8 @@ name: Node Normalization API (Translator)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: node-normalizer
+- relation_type: prov:wasDerivedFrom
+  source: babel
 product_url: https://nodenorm.transltr.io/docs
 layout: product_detail
 ---

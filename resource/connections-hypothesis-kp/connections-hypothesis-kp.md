@@ -11,7 +11,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/di2ag/chp_api
 id: connections-hypothesis-kp
-last_modified_date: '2026-07-01T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -31,6 +31,8 @@ products:
         relation_type: prov:hadPrimarySource
       - source: tcga
         relation_type: prov:hadPrimarySource
+      - source: smartapi
+        relation_type: prov:wasInfluencedBy
     product_url: https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f
   - category: ProcessProduct
     description: Source code for the Connections Hypothesis Provider API implementation.
@@ -49,6 +51,8 @@ products:
     original_source:
       - source: connections-hypothesis-kp
         relation_type: prov:hadPrimarySource
+      - source: smartapi
+        relation_type: prov:wasInfluencedBy
     product_url: https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f
   - category: GraphicalInterface
     description: JSON index of the ARS production relay server and its registered agent endpoints.
@@ -78,6 +82,8 @@ products:
       source: genetics-kp
     - relation_type: prov:wasInformedBy
       source: connections-hypothesis-kp
+    - relation_type: prov:wasInformedBy
+      source: biothings-explorer
     product_url: https://ars-prod.transltr.io/
   - category: ProgrammingInterface
     connection_url: https://ars-prod.transltr.io/ars/api
@@ -109,6 +115,8 @@ products:
       source: genetics-kp
     - relation_type: prov:wasInformedBy
       source: connections-hypothesis-kp
+    - relation_type: prov:wasInformedBy
+      source: biothings-explorer
     product_url: https://ars-prod.transltr.io/ars/api/
 creation_date: '2025-03-09T00:00:00Z'
 ---

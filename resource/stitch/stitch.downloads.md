@@ -42,6 +42,8 @@ original_source:
   source: pubchem
 - relation_type: prov:hadPrimarySource
   source: string
+- relation_type: prov:hadPrimarySource
+  source: glida
 product_url: http://stitch-db.org/cgi/download.pl
 layout: product_detail
 ---

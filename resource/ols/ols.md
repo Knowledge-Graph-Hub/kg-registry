@@ -212,6 +212,18 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:hadPrimarySource
+    source: fooddata-central
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: Product
   description: Full Bioregistry export as JSON, with every prefix record including
@@ -241,6 +253,20 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
@@ -271,6 +297,20 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 publications:

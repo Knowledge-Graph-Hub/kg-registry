@@ -244,6 +244,20 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
@@ -274,8 +288,123 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+- category: GraphicalInterface
+  description: CNGBdb web portal for searching CNSA records and the integrated literature,
+    gene, protein, sequence, organism, variation and other sub-databases, which include data
+    from NCBI and EBI.
+  format: http
+  id: cngbdb.portal
+  name: CNGBdb Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cngbdb
+  - relation_type: prov:wasDerivedFrom
+    source: ncbi
+  - relation_type: prov:wasDerivedFrom
+    source: ena
+  product_url: https://db.cngb.org/
+- category: GraphicalInterface
+  description: Search interface for metadata across DDBJ, DRA, BioProject, BioSample and JGA
+    (study, dataset and policy records), with entry pages linking related records.
+  format: http
+  id: ddbj.search
+  name: DDBJ Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/search
+- category: ProgrammingInterface
+  connection_url: https://getentry.ddbj.nig.ac.jp/getentry/
+  description: getentry, a web service and URL-based API for retrieving INSDC nucleotide entries,
+    translated protein entries and related records by accession number, in flat file, FASTA
+    and other formats.
+  format: http
+  id: ddbj.getentry
+  is_public: true
+  name: DDBJ getentry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://getentry.ddbj.nig.ac.jp/top-e.html
+- category: GraphicalInterface
+  description: ARSA (All-round Retrieval of Sequence and Annotation), a keyword and field
+    search over INSDC nucleotide sequence records held at DDBJ.
+  format: http
+  id: ddbj.arsa
+  name: DDBJ ARSA
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/arsa/
+- category: Product
+  compression: gzip
+  description: Release flat files of the DDBJ nucleotide sequence database (division files
+    such as ddbjbct*.seq.gz, accession indexes and file lists for release 143 at time of curation),
+    plus TLS, TSA and WGS file lists.
+  format: mixed
+  id: ddbj.release
+  name: DDBJ Release Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/
+- category: Product
+  description: BioProject XML records (all INSDC projects and the DDBJ-registered subset)
+    with a summary file and XML schema.
+  format: xml
+  id: ddbj.bioproject
+  name: DDBJ BioProject
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
+- category: Product
+  compression: gzip
+  description: BioSample XML records (all INSDC samples and the DDBJ-registered subset) with
+    a summary file and XML schema.
+  format: xml
+  id: ddbj.biosample
+  name: DDBJ BioSample
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
 ---
 # National Center for Biotechnology Information
 

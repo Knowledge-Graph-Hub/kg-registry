@@ -15,7 +15,7 @@ domains:
 homepage_url: https://darkkinome.org
 id: darkkinasekb
 infores_id: darkkinasekb
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 name: Dark Kinase Knowledgebase
 products:
@@ -42,6 +42,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
+  - relation_type: prov:hadPrimarySource
+    source: gtex
   product_url: https://github.com/IDG-Kinase/kinase_expression
 - category: Product
   description: Parallel reaction monitoring (PRM) peptides for quantitative mass spectrometry

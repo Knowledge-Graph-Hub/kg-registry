@@ -217,6 +217,118 @@ products:
     source: pdb
   - relation_type: prov:wasInfluencedBy
     source: lincs
+- category: GraphicalInterface
+  description: ChIP-Atlas web portal with the Peak Browser, Target Genes, Colocalization,
+    Enrichment Analysis, Diff Analysis and experiment search tools for exploring reprocessed
+    public ChIP-seq, ATAC-seq, DNase-seq and Bisulfite-seq data.
+  format: http
+  id: chip-atlas.portal
+  name: ChIP-Atlas Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  product_url: https://chip-atlas.org/
+- category: Product
+  description: Metadata table describing every ChIP-seq, ATAC-seq, DNase-seq and Bisulfite-seq
+    experiment (SRX, DRX or ERX accession) in ChIP-Atlas, including genome assembly,
+    curated antigen and cell type classes, and processing statistics.
+  format: tsv
+  id: chip-atlas.experimentlist
+  name: ChIP-Atlas experimentList.tab
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  product_url: https://chip-atlas.dbcls.jp/data/metadata/experimentList.tab
+- category: Product
+  description: Peak calls (MACS2, BED4 and BigBed) and coverage tracks (BigWig) for
+    each individual experiment, at MACS2 Q-value thresholds of 1e-05, 1e-10 and 1e-20,
+    plus methylation rate, coverage and hypo-, partially and hyper-methylated region
+    files for Bisulfite-seq. Files are addressed by genome assembly and experiment
+    accession under the data directory.
+  format: mixed
+  id: chip-atlas.peaks.each
+  name: ChIP-Atlas Per-Experiment Peak Calls and Coverage
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  product_url: https://chip-atlas.dbcls.jp/data/
+- category: Product
+  description: Assembled BED9 peak-call files used in the Peak Browser, concatenating
+    peaks across experiments by antigen or track type and cell type class, with sample
+    metadata in GFF3-style attributes for display in IGV. Files are named as listed
+    in fileList.tab; the URL given is one example file.
+  format: txt
+  id: chip-atlas.peaks.assembled
+  name: ChIP-Atlas Assembled Peak-call Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  product_url: https://chip-atlas.dbcls.jp/data/hg19/assembled/Oth.ALL.05.GATA2.AllCell.bed
+- category: Product
+  compression: gzip
+  description: Lighter version of all peak-call data for each genome assembly and
+    significance threshold, as gzipped BED files with experiment accessions in place
+    of full metadata.
+  format: txt
+  id: chip-atlas.peaks.light
+  name: ChIP-Atlas All Peaks (Light)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  product_url: https://chip-atlas.dbcls.jp/data/hg38/allPeaks_light/allPeaks_light.hg38.05.bed.gz
+- category: Product
+  description: Predicted target genes of each transcription factor or other DNA-binding
+    protein, as TSV tables of binding scores near transcription start sites within
+    1, 5 or 10 kb, across all experiments for that protein. Files follow the pattern
+    [Genome]/target/[Protein].[Distance].tsv; the URL given is one example file.
+  format: tsv
+  id: chip-atlas.targetgenes
+  name: ChIP-Atlas Target Genes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  product_url: https://chip-atlas.dbcls.jp/data/hg19/target/POU5F1.5.tsv
+- category: Product
+  description: Colocalization scores between pairs of transcription factors or other
+    DNA-binding proteins within each cell type class, as TSV tables per protein and
+    cell type class. Files follow the pattern [Genome]/colo/[Protein].[Cell_type_class].tsv;
+    the URL given is one example file.
+  format: tsv
+  id: chip-atlas.colocalization
+  name: ChIP-Atlas Colocalization
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  product_url: https://chip-atlas.dbcls.jp/data/hg19/colo/POU5F1.Pluripotent_stem_cell.tsv
+- category: Product
+  description: DDBJ Sequence Read Archive (DRA) download area with FASTQ, SRA and
+    SRA Lite files and run metadata for high-throughput sequencing submissions, exchanged
+    with NCBI SRA and ENA.
+  format: mixed
+  id: ddbj.dra
+  name: DDBJ Sequence Read Archive (DRA)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: sra
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/
 publications:
 - authors:
   - Katz K

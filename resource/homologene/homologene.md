@@ -327,6 +327,95 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: ProgrammingInterface
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
+    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
+    JSON documents merged from the integrated sources.
+  format: http
+  id: mygene.api
+  infores_id: mygene-info
+  name: MyGene.info API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: cellmarker
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://mygene.info/v3/api
+- category: ProgrammingInterface
+  description: SPARQL endpoint for the primary RDF Portal datasets, mostly from Japanese projects
+    and partner databases (for example BacDive, BRENDA, GlyTouCan, GTDB, HGNC, HomoloGene,
+    ICGC, jPOST, MediaDive, NANDO, PubCaseFinder and TogoID).
+  format: http
+  id: rdf-portal.sparql.primary
+  name: RDF Portal Primary SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: brenda
+  - relation_type: prov:wasDerivedFrom
+    source: glytoucan
+  - relation_type: prov:wasDerivedFrom
+    source: gtdb
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: homologene
+  - relation_type: prov:wasDerivedFrom
+    source: icgc
+  - relation_type: prov:wasDerivedFrom
+    source: mediadive
+  - relation_type: prov:wasDerivedFrom
+    source: jpost
+  product_url: https://rdfportal.org/primary/sparql
 taxon:
 - NCBITaxon:2759
 warnings:

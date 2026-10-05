@@ -300,6 +300,23 @@ products:
     source: faldo
   product_file_size: 1346
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FALDO.tar.gz
+- category: Product
+  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB
+    Archive, one directory per JPST dataset.
+  format: ttl
+  id: jpost.rdf
+  name: jPOSTdb RDF Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/data/rdf/
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+  - relation_type: prov:used
+    source: ms
+  - relation_type: prov:used
+    source: faldo
 repository: https://github.com/OBioFoundry/FALDO
 synonyms:
 - Feature Annotation Location Description Ontology

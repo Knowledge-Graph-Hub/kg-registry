@@ -79,6 +79,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
@@ -123,6 +125,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
@@ -168,6 +172,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
@@ -1038,6 +1044,10 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
   product_file_size: 7261526
   product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
 publications:

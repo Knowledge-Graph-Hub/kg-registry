@@ -1612,8 +1612,179 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
   product_file_size: 7261526
   product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
+- category: GraphicalInterface
+  description: Expression browser data and source code showing tissue-specific expression
+    of dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide
+    comparisons. The hosted Shiny application formerly at expression.darkkinome.org
+    has been retired; the underlying data and code remain available in this GitHub
+    repository.
+  format: http
+  id: darkkinasekb.expression
+  name: DKK Expression Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  product_url: https://github.com/IDG-Kinase/kinase_expression
+- category: ProgrammingInterface
+  connection_url: https://pavs.phenomebrowser.net/sparql
+  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing Saudi
+    case records, gene annotations, HPO disease annotations, HPO information content values
+    and literature phenopackets as RDF named graphs.
+  format: http
+  id: pavs-kg.sparql
+  is_public: true
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: PAVS SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pavs-kg
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: geno
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hancestro
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: phenopacket-store
+  product_url: https://pavs.phenomebrowser.net/sparql
+- category: GraphicalInterface
+  description: PAVS web portal with phenotype-based semantic similarity search, gene and variant
+    browsers, and an HPO hierarchy explorer over the knowledge graph.
+  format: http
+  id: pavs-kg.portal
+  name: PAVS Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pavs-kg
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: geno
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hancestro
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: phenopacket-store
+  product_url: https://pavs.phenomebrowser.net/
+- category: ProgrammingInterface
+  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation, for case
+    search and SPARQL-backed queries.
+  format: http
+  id: pavs-kg.api
+  name: PAVS REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pavs-kg
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: geno
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hancestro
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: phenopacket-store
+  product_url: https://pavs.phenomebrowser.net/api/docs
 publications:
 - authors:
   - François Aguet

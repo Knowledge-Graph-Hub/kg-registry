@@ -27,7 +27,7 @@ domains:
 - information technology
 homepage_url: http://togows.org/
 id: togows
-last_modified_date: '2026-10-03T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -73,6 +73,8 @@ products:
     source: omim
   - relation_type: prov:hadPrimarySource
     source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
   product_url: http://togows.org/help/
   warnings:
   - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned

@@ -78,6 +78,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
   product_file_size: 15816874
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
 - category: Product
@@ -116,6 +118,8 @@ products:
     source: clinpgx
   - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
   product_file_size: 5305829
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
 - category: MappingProduct
@@ -1089,6 +1093,194 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: Product
+  compression: gzip
+  description: Comprehensive XML extraction of all publicly available tests registered
+    in GTR, validated by the GTRPublicData.xsd schema in the documentation directory.
+    A copy is archived at the end of each month in the xml_archive subdirectory.
+  format: xml
+  id: gtr.xml
+  name: GTR Full XML Extraction
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtr
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/gtr_ftp.xml.gz
+- category: Product
+  description: Tab-delimited listing of every registered test and the conditions and
+    genes it targets, updated daily. Conditions carry MedGen concept IDs, OMIM numbers
+    and SNOMED CT IDs where available; genes carry NCBI Gene IDs and symbols.
+  format: tsv
+  id: gtr.test_condition_gene
+  name: GTR Test, Condition and Gene Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtr
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_condition_gene.txt
+- category: Product
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
+    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
+    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
+    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
+    GB and 46.7 GB) are also split into parts.
+  format: json
+  id: babel.compendia
+  latest_version: 2026jul22
+  name: Babel Compendia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: babel
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: meddra
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for NCBI- and NLM-derived RDF datasets, including ClinVar,
+    MedGen, MeSH, NCBI Gene, NLM Catalog, PubMed and PubTator Central.
+  format: http
+  id: rdf-portal.sparql.ncbi
+  name: RDF Portal NCBI SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: medgen
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  product_url: https://rdfportal.org/ncbi/sparql
+- category: ProgrammingInterface
+  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed by DBCLS,
+    with a GraphiQL interface in the browser. When checked it covered UniProt, ChEBI, ChEMBL
+    and MedGen.
+  format: http
+  id: rdf-portal.graphql
+  name: RDF Portal GraphQL API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: chembl
+  - relation_type: prov:wasDerivedFrom
+    source: medgen
+  product_url: https://rdfportal.org/grasp
 publications:
 - authors:
   - Louden DN

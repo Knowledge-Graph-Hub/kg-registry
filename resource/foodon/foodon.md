@@ -770,6 +770,94 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: ProcessProduct
+  description: Python scripts that build FoodKG from the Recipe1M recipe dataset (layer1.json
+    and det_ingrs.json, acquired manually), USDA nutrient data and FoodOn (downloaded
+    automatically). Outputs are three TriG files, usda-links.trig (about 4.1 million
+    triples), foodon-links.trig (about 30 thousand triples) and foodkg-core.trig (about
+    63 million triples), intended for loading into Blazegraph.
+  format: python
+  id: foodkg.build-scripts
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache-2.0
+  name: FoodKG Construction Scripts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodkg
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
+  product_url: https://github.com/foodkg/foodkg.github.io/tree/master/src
+- category: ProgrammingInterface
+  description: Public Blazegraph SPARQL endpoint for querying FoodKG recipes, ingredients
+    and nutrition data (namespace kb).
+  format: http
+  id: foodkg.sparql
+  name: FoodKG SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodkg
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  product_url: https://inciteprojects.idea.rpi.edu/foodkg/namespace/kb/sparql
+  warnings:
+  - Endpoint was not able to be reached when checked on 2026-10-04. The server returned
+    HTTP 502 Bad Gateway for the endpoint and its landing page.
+- category: GraphProduct
+  description: Sample of FoodKG containing the USDA nutrient data mappings, generated
+    with the Semantic Data Dictionary process (usda.rdf, hosted on Google Drive).
+  format: rdfxml
+  id: foodkg.usda-sample
+  name: FoodKG USDA Mappings Sample
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodkg
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
+  product_url: https://drive.google.com/open?id=1hkitCcxnM_7R6OYuvC5zakWojlN2Xuog
+- category: MappingProduct
+  description: Semantic Data Dictionary mapping file specifying how USDA nutrient
+    data columns are linked to external ontologies such as FoodOn and the Units of
+    Measurement Ontology when building FoodKG.
+  format: csv
+  id: foodkg.sdd-dictionary
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache-2.0
+  name: FoodKG USDA Semantic Data Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodkg
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:wasDerivedFrom
+    source: fooddata-central
+  product_url: https://foodkg.github.io/sdd/usdaDM.csv
+- category: OntologyProduct
+  description: FoodOn component of the WhatToMake ontology, containing the classes
+    imported from FoodOn.
+  format: rdfxml
+  id: foodkg.whattomake-foodon
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache-2.0
+  name: WhatToMake FoodOn Module
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodkg
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  product_url: http://purl.org/heals/foodon
 publications:
 - authors:
   - Dooley DM

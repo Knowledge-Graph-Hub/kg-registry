@@ -725,7 +725,43 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:hadPrimarySource
+    source: fooddata-central
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: GraphicalInterface
+  description: CellMinerCDB web application for integrative cross-database genomics
+    and pharmacogenomics analysis of cancer cell lines, combining NCI-60 data with
+    CCLE, GDSC, CTRP, PRISM, Project Achilles, NCI-DTP SCLC, MD Anderson and NCATS
+    datasets.
+  format: http
+  id: cellminer.cellminercdb
+  name: CellMinerCDB
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cellminer
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: ctrp
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  product_url: https://discover.nci.nih.gov/cellminercdb/
 publications:
 - authors:
   - Yang W

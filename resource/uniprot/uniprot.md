@@ -5134,6 +5134,8 @@ products:
     source: omim
   - relation_type: prov:hadPrimarySource
     source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
   product_url: http://togows.org/help/
   warnings:
   - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
@@ -5551,6 +5553,10 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
   product_file_size: 7261526
   product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
 - category: Product
@@ -5780,6 +5786,18 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:hadPrimarySource
+    source: fooddata-central
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: Product
   description: Full Bioregistry export as JSON, with every prefix record including
@@ -5809,6 +5827,20 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
@@ -5839,8 +5871,493 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+- category: MappingProduct
+  description: Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt accessions,
+    updated weekly.
+  format: tsv
+  id: genereviews.genes-uniprot
+  name: GeneReviews to Gene Symbol and UniProt Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt
+- category: ProgrammingInterface
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez
+    or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents
+    merged from the integrated sources.
+  format: http
+  id: mygene.api
+  infores_id: mygene-info
+  name: MyGene.info API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: cellmarker
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://mygene.info/v3/api
+- category: Product
+  compression: zip
+  description: jPOSTdb identified protein table from the NBDC LSDB Archive, with UniProt accession,
+    symbol, name, protein type and peptide and PSM counts for reanalyzed datasets (about 12
+    MB, file dated 2021-07-29).
+  format: csv
+  id: jpost.protein
+  name: jPOSTdb Identified Protein Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_protein.zip
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  compression: zip
+  description: jPOSTdb peptide spectrum match (PSM) table from the NBDC LSDB Archive, with
+    peptide sequence, UniProt accession, experimental and calculated m/z, charge and jPOST
+    score (about 68 MB, file dated 2021-07-29).
+  format: csv
+  id: jpost.psm
+  name: jPOSTdb PSM Peptide Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm.zip
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  description: Per-dataset Turtle files of the jPOST database RDF on the NBDC LSDB Archive,
+    one directory per JPST dataset.
+  format: ttl
+  id: jpost.rdf
+  name: jPOSTdb RDF Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/data/rdf/
+  secondary_source:
+  - relation_type: prov:used
+    source: uniprot
+  - relation_type: prov:used
+    source: ms
+  - relation_type: prov:used
+    source: faldo
+- category: Product
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
+    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
+    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
+    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
+    GB and 46.7 GB) are also split into parts.
+  format: json
+  id: babel.compendia
+  latest_version: 2026jul22
+  name: Babel Compendia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: babel
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: meddra
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: GraphicalInterface
+  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence alignments,
+    structures and structure models, ligands and bioactivities, mutations, drugs and signaling
+    proteins, with interactive diagrams such as snake plots and phylogenetic trees.
+  format: http
+  id: gpcrdb.portal
+  name: GPCRdb Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/
+- category: ProgrammingInterface
+  description: REST API returning JSON for most GPCRdb data, including proteins, families,
+    alignments, residues, structures, ligands, mutations and signaling proteins.
+  format: http
+  id: gpcrdb.api
+  name: GPCRdb REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/services/reference/
+- category: Product
+  description: GitHub repository collecting the reference data used to build GPCRdb, including
+    protein, structure, ligand, mutant, drug, G protein, arrestin and residue data files,
+    plus a PDSP Ki data backup.
+  format: mixed
+  id: gpcrdb.data
+  name: GPCRdb Reference Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  product_url: https://github.com/protwis/gpcrdb_data
+  warnings:
+  - The repository has no license file; the GPCRdb legal notice states that GPCRdb data are
+    available under CC BY 4.0.
+- category: Product
+  compression: zip
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
+    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
+    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
+    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
+    upstream scores that are free for academic use. Free for academic and non-commercial users
+    after registration with an institutional email; download links are issued on request.
+  format: tsv
+  id: dbnsfp.academic
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/4.0/
+    label: CC BY-NC-ND 4.0
+  name: dbNSFP Academic Branch
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://www.dbnsfp.org/download
+- category: Product
+  compression: zip
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
+    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
+    and RGC Million Exome data, whose authors require separate commercial licenses. Available
+    to subscribers under a paid license from Genos Bioinformatics.
+  format: tsv
+  id: dbnsfp.commercial
+  license:
+    id: https://www.dbnsfp.org/license
+    label: Commercial license (Genos Bioinformatics LLC)
+  name: dbNSFP Commercial Branch
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://www.dbnsfp.org/license
+- category: ProgrammingInterface
+  description: SPARQL endpoint for SIB-derived RDF datasets, including Bgee, Cellosaurus,
+    OMA, Rhea and UniProt.
+  format: http
+  id: rdf-portal.sparql.sib
+  name: RDF Portal SIB SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: bgee
+  - relation_type: prov:wasDerivedFrom
+    source: cellosaurus
+  - relation_type: prov:wasDerivedFrom
+    source: oma
+  - relation_type: prov:wasDerivedFrom
+    source: rhea
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  product_url: https://rdfportal.org/sib/sparql
+- category: ProgrammingInterface
+  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed by DBCLS,
+    with a GraphiQL interface in the browser. When checked it covered UniProt, ChEBI, ChEMBL
+    and MedGen.
+  format: http
+  id: rdf-portal.graphql
+  name: RDF Portal GraphQL API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: chembl
+  - relation_type: prov:wasDerivedFrom
+    source: medgen
+  product_url: https://rdfportal.org/grasp
 publications:
 - authors:
   - Alex Bateman

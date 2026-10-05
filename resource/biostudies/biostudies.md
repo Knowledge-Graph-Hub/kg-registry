@@ -158,6 +158,30 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -200,7 +224,49 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: Product
+  description: BioImage Archive study S-BIAD501 (released 2022), Open TG-GATEs rat liver and
+    kidney histopathology slide images, each linked to its histopathology finding with mapped
+    ontology terms and severity grade as recorded in ChEMBL.
+  format: http
+  id: open-tggates.histopathology-images
+  license:
+    id: https://creativecommons.org/licenses/by-sa/2.1/jp/
+    label: CC BY-SA 2.1 JP
+  name: Open TG-GATEs Histopathology Images
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: open-tggates
+  - relation_type: prov:hadPrimarySource
+    source: biostudies
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  product_url: https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD501
 publications:
 - authors:
   - Awais Athar

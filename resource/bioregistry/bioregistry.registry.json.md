@@ -27,6 +27,20 @@ original_source:
   source: ncbi
 - relation_type: prov:wasInfluencedBy
   source: biolink
+- relation_type: prov:wasInfluencedBy
+  source: n2t
+- relation_type: prov:wasInfluencedBy
+  source: identifiers-org
+- relation_type: prov:wasInfluencedBy
+  source: fairsharing
+- relation_type: prov:wasInfluencedBy
+  source: re3data
+- relation_type: prov:wasInfluencedBy
+  source: agroportal
+- relation_type: prov:wasInfluencedBy
+  source: ecoportal
+- relation_type: prov:wasInfluencedBy
+  source: aberowl
 product_file_size: 786637
 product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 layout: product_detail

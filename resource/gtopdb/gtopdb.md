@@ -1272,8 +1272,226 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
   product_file_size: 7261526
   product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
+- category: ProgrammingInterface
+  description: MyChem.info REST API (v1) for querying chemical and drug annotation
+    records by keyword, field or identifier (InChIKey, ChEMBL, DrugBank, PubChem,
+    ChEBI and UNII IDs), with batch queries over POST. Data in each record keep the
+    license of their original source.
+  format: json
+  id: mychem.api
+  infores_id: mychem-info
+  name: MyChem.info API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mychem
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: ndcd
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: aeolus
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: fda-orphan-drugs
+  product_url: https://mychem.info/v1/query
+- category: Product
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
+    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
+    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
+    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
+    GB and 46.7 GB) are also split into parts.
+  format: json
+  id: babel.compendia
+  latest_version: 2026jul22
+  name: Babel Compendia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: babel
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: meddra
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: GraphicalInterface
+  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence alignments,
+    structures and structure models, ligands and bioactivities, mutations, drugs and signaling
+    proteins, with interactive diagrams such as snake plots and phylogenetic trees.
+  format: http
+  id: gpcrdb.portal
+  name: GPCRdb Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/
+- category: ProgrammingInterface
+  description: REST API returning JSON for most GPCRdb data, including proteins, families,
+    alignments, residues, structures, ligands, mutations and signaling proteins.
+  format: http
+  id: gpcrdb.api
+  name: GPCRdb REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://gpcrdb.org/services/reference/
+- category: Product
+  description: GitHub repository collecting the reference data used to build GPCRdb, including
+    protein, structure, ligand, mutant, drug, G protein, arrestin and residue data files,
+    plus a PDSP Ki data backup.
+  format: mixed
+  id: gpcrdb.data
+  name: GPCRdb Reference Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gpcrdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pdsp
+  product_url: https://github.com/protwis/gpcrdb_data
+  warnings:
+  - The repository has no license file; the GPCRdb legal notice states that GPCRdb data are
+    available under CC BY 4.0.
 publications:
 - authors:
   - Harding SD

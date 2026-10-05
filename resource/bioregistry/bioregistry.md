@@ -28,7 +28,7 @@ domains:
 fairsharing_id: FAIRsharing.250a8c
 homepage_url: https://bioregistry.io/
 id: bioregistry
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -63,6 +63,20 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: Product
@@ -114,6 +128,20 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: Product

@@ -806,6 +806,50 @@ products:
     source: ro
   product_file_size: 62349
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOREL.tar.gz
+- category: ProcessProduct
+  description: Build system for Brain_Cell_KG. A Docker Compose OBASK pipeline fetches
+    the source OWL/RDF files listed in config/collectdata, loads them into an RDF4J
+    triplestore and builds a Neo4j knowledge graph; Makefile targets generate ROBOT
+    templates, OWL mapping files and Cypher-based CSV reports. No prebuilt graph dump
+    or public Neo4j instance is released.
+  format: http
+  id: brain-cell-kg.repository
+  name: Brain_Cell_KG repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: brain-cell-kg
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_url: https://github.com/Cellular-Semantics/Brain_Cell_KG
+  repository: https://github.com/Cellular-Semantics/Brain_Cell_KG
+- category: OntologyProduct
+  description: Current OWL release of ECSO (ECSO8.owl, version 0.10.0) in the DataONE sem-prov-ontologies
+    repository, with merged imports of ENVO, PATO, CHEBI, RO, IAO and BFO terms
+  format: owl
+  id: ecso.owl
+  name: ECSO OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecso
+  product_file_size: 2310496
+  product_url: https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/main/ecso/ECSO8.owl
+  secondary_source:
+  - relation_type: prov:used
+    source: oboe
+  - relation_type: prov:used
+    source: envo
+  - relation_type: prov:used
+    source: pato
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ro
+  - relation_type: prov:used
+    source: iao
+  - relation_type: prov:used
+    source: bfo
 publications:
 - authors:
   - Barry Smith

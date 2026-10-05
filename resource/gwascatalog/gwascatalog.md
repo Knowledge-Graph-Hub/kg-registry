@@ -2449,6 +2449,198 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gtex
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
+- category: ProgrammingInterface
+  description: MyVariant.info REST API (v1) for variant query and annotation retrieval
+    by HGVS id or rsid, with batch POST queries and field filtering. Returns JSON
+    documents merged from the integrated sources, on hg19 and hg38.
+  format: http
+  id: myvariant.api
+  infores_id: myvariant-info
+  name: MyVariant.info API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: docm
+  - relation_type: prov:hadPrimarySource
+    source: cancer-genome-interpreter
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: snpeff
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: cadd
+  product_url: https://myvariant.info/v1/query
+- category: Product
+  compression: zip
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
+    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
+    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
+    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
+    upstream scores that are free for academic use. Free for academic and non-commercial users
+    after registration with an institutional email; download links are issued on request.
+  format: tsv
+  id: dbnsfp.academic
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/4.0/
+    label: CC BY-NC-ND 4.0
+  name: dbNSFP Academic Branch
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://www.dbnsfp.org/download
+- category: Product
+  compression: zip
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
+    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
+    and RGC Million Exome data, whose authors require separate commercial licenses. Available
+    to subscribers under a paid license from Genos Bioinformatics.
+  format: tsv
+  id: dbnsfp.commercial
+  license:
+    id: https://www.dbnsfp.org/license
+    label: Commercial license (Genos Bioinformatics LLC)
+  name: dbNSFP Commercial Branch
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://www.dbnsfp.org/license
+- category: ProgrammingInterface
+  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal, BioModels,
+    BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog and Reactome.
+  format: http
+  id: rdf-portal.sparql.ebi
+  name: RDF Portal EBI SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: chembl
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  product_url: https://rdfportal.org/ebi/sparql
 publications:
 - authors:
   - Sollis E

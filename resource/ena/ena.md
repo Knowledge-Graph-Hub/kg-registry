@@ -759,6 +759,8 @@ products:
     source: omim
   - relation_type: prov:hadPrimarySource
     source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
   product_url: http://togows.org/help/
   warnings:
   - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
@@ -804,6 +806,30 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -846,7 +872,122 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: GraphicalInterface
+  description: CNGBdb web portal for searching CNSA records and the integrated literature,
+    gene, protein, sequence, organism, variation and other sub-databases, which include
+    data from NCBI and EBI.
+  format: http
+  id: cngbdb.portal
+  name: CNGBdb Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cngbdb
+  - relation_type: prov:wasDerivedFrom
+    source: ncbi
+  - relation_type: prov:wasDerivedFrom
+    source: ena
+  product_url: https://db.cngb.org/
+- category: GraphicalInterface
+  description: Search interface for metadata across DDBJ, DRA, BioProject, BioSample and JGA
+    (study, dataset and policy records), with entry pages linking related records.
+  format: http
+  id: ddbj.search
+  name: DDBJ Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/search
+- category: ProgrammingInterface
+  connection_url: https://getentry.ddbj.nig.ac.jp/getentry/
+  description: getentry, a web service and URL-based API for retrieving INSDC nucleotide entries,
+    translated protein entries and related records by accession number, in flat file, FASTA
+    and other formats.
+  format: http
+  id: ddbj.getentry
+  is_public: true
+  name: DDBJ getentry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://getentry.ddbj.nig.ac.jp/top-e.html
+- category: GraphicalInterface
+  description: ARSA (All-round Retrieval of Sequence and Annotation), a keyword and field
+    search over INSDC nucleotide sequence records held at DDBJ.
+  format: http
+  id: ddbj.arsa
+  name: DDBJ ARSA
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/arsa/
+- category: Product
+  compression: gzip
+  description: Release flat files of the DDBJ nucleotide sequence database (division files
+    such as ddbjbct*.seq.gz, accession indexes and file lists for release 143 at time of curation),
+    plus TLS, TSA and WGS file lists.
+  format: mixed
+  id: ddbj.release
+  name: DDBJ Release Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/
+- category: Product
+  description: DDBJ Sequence Read Archive (DRA) download area with FASTQ, SRA and SRA Lite
+    files and run metadata for high-throughput sequencing submissions, exchanged with NCBI
+    SRA and ENA.
+  format: mixed
+  id: ddbj.dra
+  name: DDBJ Sequence Read Archive (DRA)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
+  - relation_type: prov:wasInfluencedBy
+    source: sra
+  - relation_type: prov:wasInfluencedBy
+    source: ena
+  product_url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/
 publications:
 - authors:
   - Burgin J

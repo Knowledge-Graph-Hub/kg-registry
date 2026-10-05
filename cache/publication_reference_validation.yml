@@ -44,6 +44,24 @@ entries:
     source_path: resource/aact/aact.md
     status: valid
     warnings: []
+  resource/aberowl/aberowl.md#publication[0]#DOI:10.1186/s12859-015-0456-9:
+    checked_at: '2026-10-05T19:34:40Z'
+    errors: []
+    fingerprint: da545adf829f16e54345d0378d1f8536ef6f93c41c21363abd833da8fee4cd4b
+    publication_index: 0
+    reference_id: DOI:10.1186/s12859-015-0456-9
+    source_path: resource/aberowl/aberowl.md
+    status: valid
+    warnings: []
+  resource/aberowl/aberowl.md#publication[1]#DOI:10.1186/s13326-016-0090-0:
+    checked_at: '2026-10-05T19:34:40Z'
+    errors: []
+    fingerprint: c64e9e624681c5ccb7f37a960b8e309d5fb43ade24588010fabd7ad1c54e24af
+    publication_index: 1
+    reference_id: DOI:10.1186/s13326-016-0090-0
+    source_path: resource/aberowl/aberowl.md
+    status: valid
+    warnings: []
   resource/achilles/achilles.md#publication[0]#DOI:10.1016/j.cell.2017.06.010:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -132,6 +150,24 @@ entries:
     publication_index: 0
     reference_id: url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
     source_path: resource/agro/agro.md
+    status: valid
+    warnings: []
+  resource/agroportal/agroportal.md#publication[0]#DOI:10.1016/j.compag.2017.10.012:
+    checked_at: '2026-10-05T19:34:40Z'
+    errors: []
+    fingerprint: 03b4c66cbc7e921ecdf733d0b405a15d6c8c3b1e48c8830bd2760f865325c83e
+    publication_index: 0
+    reference_id: DOI:10.1016/j.compag.2017.10.012
+    source_path: resource/agroportal/agroportal.md
+    status: valid
+    warnings: []
+  resource/agrovoc/agrovoc.md#publication[0]#DOI:10.3233/SW-130106:
+    checked_at: '2026-10-05T16:14:48Z'
+    errors: []
+    fingerprint: 2abd7e8a46e0ed7b0e599d5272557b8fb20ae1a3427d57164b01eb8ed11334f2
+    publication_index: 0
+    reference_id: DOI:10.3233/SW-130106
+    source_path: resource/agrovoc/agrovoc.md
     status: valid
     warnings: []
   resource/aism/aism.md#publication[0]#PMID:37094905:
@@ -342,6 +378,15 @@ entries:
     source_path: resource/atom/atom.md
     status: valid
     warnings: []
+  resource/babel/babel.md#publication[0]#DOI:10.48550/arXiv.2601.10008:
+    checked_at: '2026-10-04T18:55:29Z'
+    errors: []
+    fingerprint: a02a1bb63134f028258c3b2a372fb1508c95d9cbeea93e7e1a4235a5ce9dffec
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2601.10008
+    source_path: resource/babel/babel.md
+    status: valid
+    warnings: []
   resource/bacdive/bacdive.md#publication[0]#DOI:10.1093/nar/gkae959:
     checked_at: '2026-06-22T16:35:49Z'
     errors: []
@@ -394,6 +439,24 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1038/srep21146
     source_path: resource/batman/batman.md
+    status: valid
+    warnings: []
+  resource/bbmri-eric-directory/bbmri-eric-directory.md#publication[0]#DOI:10.1089/bio.2016.0088:
+    checked_at: '2026-10-05T16:01:06Z'
+    errors: []
+    fingerprint: 3f1379b8ef806c24827ff7aae36c823863ec3ef486be8cb1946e543f96fe391f
+    publication_index: 0
+    reference_id: DOI:10.1089/bio.2016.0088
+    source_path: resource/bbmri-eric-directory/bbmri-eric-directory.md
+    status: valid
+    warnings: []
+  resource/bbmri-eric-directory/bbmri-eric-directory.md#publication[1]#DOI:10.1089/bio.2020.0144:
+    checked_at: '2026-10-05T16:01:07Z'
+    errors: []
+    fingerprint: f51774ea4c28767cc27d48d6df5e2b6acb01a8aee58aafebc6e7c5a81fbe3198
+    publication_index: 1
+    reference_id: DOI:10.1089/bio.2020.0144
+    source_path: resource/bbmri-eric-directory/bbmri-eric-directory.md
     status: valid
     warnings: []
   resource/bco/bco.md#publication[0]#DOI:10.1371/journal.pone.0089606:
@@ -540,6 +603,24 @@ entries:
     source_path: resource/biocyc/biocyc.md
     status: valid
     warnings: []
+  resource/biodata-catalyst/biodata-catalyst.md#publication[0]#DOI:10.1093/jamia/ocad048:
+    checked_at: '2026-10-05T19:34:41Z'
+    errors: []
+    fingerprint: c640cfd5198794cd5ee4382b698b891ee794717e88854943e60fbb1f40efc3eb
+    publication_index: 0
+    reference_id: DOI:10.1093/jamia/ocad048
+    source_path: resource/biodata-catalyst/biodata-catalyst.md
+    status: valid
+    warnings: []
+  resource/biodivportal/biodivportal.md#publication[0]#DOI:10.1007/s13222-024-00474-5:
+    checked_at: '2026-10-05T19:34:41Z'
+    errors: []
+    fingerprint: 5589ec7ec0c64e66b827e3749d382bf588bfa09b284842c1d773ad8f23e61ca9
+    publication_index: 0
+    reference_id: DOI:10.1007/s13222-024-00474-5
+    source_path: resource/biodivportal/biodivportal.md
+    status: valid
+    warnings: []
   resource/biofactoid/biofactoid.md#publication[0]#DOI:10.7554/eLife.68292:
     checked_at: '2026-06-22T16:25:07Z'
     errors: []
@@ -583,6 +664,24 @@ entries:
     publication_index: 2
     reference_id: DOI:10.1093/nar/gkj109
     source_path: resource/biogrid/biogrid.md
+    status: valid
+    warnings: []
+  resource/biolincc/biolincc.md#publication[0]#DOI:10.1089/bio.2014.0050:
+    checked_at: '2026-10-05T16:01:01Z'
+    errors: []
+    fingerprint: 29a061cbffc5f88bbbd5a6ec45651bf9d80560283703b5617ff969d826fa64c9
+    publication_index: 0
+    reference_id: DOI:10.1089/bio.2014.0050
+    source_path: resource/biolincc/biolincc.md
+    status: valid
+    warnings: []
+  resource/biolincc/biolincc.md#publication[1]#DOI:10.1371/journal.pone.0178141:
+    checked_at: '2026-10-05T16:01:02Z'
+    errors: []
+    fingerprint: 158c816c94bd2138a110664c3ab4bc845c4a2af67f60d225cbd1b246e055c306
+    publication_index: 1
+    reference_id: DOI:10.1371/journal.pone.0178141
+    source_path: resource/biolincc/biolincc.md
     status: valid
     warnings: []
   resource/biolink/biolink.md#publication[0]#DOI:10.1111/cts.13302:
@@ -704,6 +803,15 @@ entries:
     source_path: resource/bioteque/bioteque.md
     status: valid
     warnings: []
+  resource/biothings-explorer/biothings-explorer.md#publication[0]#DOI:10.1093/bioinformatics/btad570:
+    checked_at: '2026-10-05T16:48:28Z'
+    errors: []
+    fingerprint: a03a7a54c1dd32882da0f08fc4b7268e89a4143e05ed32c919b313abb0334c39
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btad570
+    source_path: resource/biothings-explorer/biothings-explorer.md
+    status: valid
+    warnings: []
   resource/biothings/biothings.md#publication[0]#DOI:10.1093/bioinformatics/btac017:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -802,6 +910,33 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkr907
     source_path: resource/cacao/cacao.md
+    status: valid
+    warnings: []
+  resource/cadd/cadd.md#publication[0]#DOI:10.1093/nar/gky1016:
+    checked_at: '2026-10-05T19:34:41Z'
+    errors: []
+    fingerprint: 8063ccd3d6448f099225031fe7190c8b1d0541a74066b397dfbc430c18282483
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky1016
+    source_path: resource/cadd/cadd.md
+    status: valid
+    warnings: []
+  resource/cadd/cadd.md#publication[1]#DOI:10.1038/ng.2892:
+    checked_at: '2026-10-05T19:34:41Z'
+    errors: []
+    fingerprint: dafde1046f2c65d31729eea55925181af4bb1fbc73cba9477e91931157de6a0f
+    publication_index: 1
+    reference_id: DOI:10.1038/ng.2892
+    source_path: resource/cadd/cadd.md
+    status: valid
+    warnings: []
+  resource/cadd/cadd.md#publication[2]#DOI:10.1093/nar/gkad989:
+    checked_at: '2026-10-05T19:34:41Z'
+    errors: []
+    fingerprint: f0de6c231eebaee193793eab9a8eff8bce15ca710876991b9b35dd160fd19a3a
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkad989
+    source_path: resource/cadd/cadd.md
     status: valid
     warnings: []
   resource/cam-kp/cam-kp.md#publication[0]#ARXIV:2004.01269:
@@ -1054,6 +1189,15 @@ entries:
     source_path: resource/cebs/cebs.md
     status: valid
     warnings: []
+  resource/cellcollective/cellcollective.md#publication[0]#DOI:10.1186/1752-0509-6-96:
+    checked_at: '2026-10-04T18:39:04Z'
+    errors: []
+    fingerprint: ea4620bbdc9745c9d1405dba5eb6ee34ede7a6da99737e399d7af3227c95669b
+    publication_index: 0
+    reference_id: DOI:10.1186/1752-0509-6-96
+    source_path: resource/cellcollective/cellcollective.md
+    status: valid
+    warnings: []
   resource/cellmarker/cellmarker.md#publication[0]#DOI:10.1093/nar/gkac947:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1070,6 +1214,69 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/nar/gky900
     source_path: resource/cellmarker/cellmarker.md
+    status: valid
+    warnings: []
+  resource/cellminer/cellminer.md#publication[0]#DOI:10.1158/0008-5472.CAN-12-1370:
+    checked_at: '2026-10-05T19:30:48Z'
+    errors: []
+    fingerprint: aa202b0bd7fd23768c4606dacc1c1a76bc7208afe3fcfc1eb96389100560b7ec
+    publication_index: 0
+    reference_id: DOI:10.1158/0008-5472.CAN-12-1370
+    source_path: resource/cellminer/cellminer.md
+    status: valid
+    warnings: []
+  resource/cellminer/cellminer.md#publication[1]#DOI:10.1016/j.isci.2018.11.029:
+    checked_at: '2026-10-05T19:30:48Z'
+    errors: []
+    fingerprint: 86cd7a2e1e00f75e8ed50850ff91764a305a803f335c94bc186edbc3a3cfb77d
+    publication_index: 1
+    reference_id: DOI:10.1016/j.isci.2018.11.029
+    source_path: resource/cellminer/cellminer.md
+    status: valid
+    warnings: []
+  resource/cellminer/cellminer.md#publication[2]#DOI:10.1093/bioinformatics/btv701:
+    checked_at: '2026-10-05T19:30:48Z'
+    errors: []
+    fingerprint: c08fc8f12f8e1997bf19c06f8e013254514675b5c9099709a171727a7a92703a
+    publication_index: 2
+    reference_id: DOI:10.1093/bioinformatics/btv701
+    source_path: resource/cellminer/cellminer.md
+    status: valid
+    warnings: []
+  resource/cellml/cellml.md#publication[0]#DOI:10.1515/jib-2020-0021:
+    checked_at: '2026-10-05T16:01:08Z'
+    errors: []
+    fingerprint: 24e2e103d8c8d5ff726f450bd17d0234461fb6339ca9c5e0d100a604e16272cc
+    publication_index: 0
+    reference_id: DOI:10.1515/jib-2020-0021
+    source_path: resource/cellml/cellml.md
+    status: valid
+    warnings: []
+  resource/cellml/cellml.md#publication[1]#DOI:10.1515/jib-2023-0003:
+    checked_at: '2026-10-05T16:01:10Z'
+    errors: []
+    fingerprint: eec411d2f6ba74954b293c10259f42d1d658287272d5bd81aa6d27d2662e5b43
+    publication_index: 1
+    reference_id: DOI:10.1515/jib-2023-0003
+    source_path: resource/cellml/cellml.md
+    status: valid
+    warnings: []
+  resource/cellml/cellml.md#publication[2]#DOI:10.1177/0037549703040939:
+    checked_at: '2026-10-05T16:01:12Z'
+    errors: []
+    fingerprint: a3e630339fe7eae347bbfd9aec16e52d3307e20f9dfcd384ebada4a66e41861b
+    publication_index: 2
+    reference_id: DOI:10.1177/0037549703040939
+    source_path: resource/cellml/cellml.md
+    status: valid
+    warnings: []
+  resource/cellml/cellml.md#publication[3]#DOI:10.1016/j.pbiomolbio.2004.01.004:
+    checked_at: '2026-10-05T16:01:15Z'
+    errors: []
+    fingerprint: 4e584c4c4725639f1c21c57140c394beb6735a69242479a3411e5995882fec82
+    publication_index: 3
+    reference_id: DOI:10.1016/j.pbiomolbio.2004.01.004
+    source_path: resource/cellml/cellml.md
     status: valid
     warnings: []
   resource/cellmodelpassports/cellmodelpassports.md#publication[0]#DOI:10.1093/nar/gky872:
@@ -1235,6 +1442,33 @@ entries:
     publication_index: 0
     reference_id: PMID:27867422
     source_path: resource/chemont/chemont.md
+    status: valid
+    warnings: []
+  resource/chip-atlas/chip-atlas.md#publication[0]#DOI:10.1093/nar/gkae358:
+    checked_at: '2026-10-05T16:15:21Z'
+    errors: []
+    fingerprint: 9035ad3391756422d358fa4e1e9a4ff8084dd8caa391bf60a3bb2ae6d9f7cf7d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae358
+    source_path: resource/chip-atlas/chip-atlas.md
+    status: valid
+    warnings: []
+  resource/chip-atlas/chip-atlas.md#publication[1]#DOI:10.1093/nar/gkac199:
+    checked_at: '2026-10-05T16:15:22Z'
+    errors: []
+    fingerprint: 4e75cc9986ad26260e962a61a37c1dd913630bb1b39e568098217c72c51a49cb
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkac199
+    source_path: resource/chip-atlas/chip-atlas.md
+    status: valid
+    warnings: []
+  resource/chip-atlas/chip-atlas.md#publication[2]#DOI:10.15252/embr.201846255:
+    checked_at: '2026-10-05T16:15:23Z'
+    errors: []
+    fingerprint: 495e35ad764b1cd15aefa4af717a1095db18a3634876a7cd6d1080a49e2e6cbb
+    publication_index: 2
+    reference_id: DOI:10.15252/embr.201846255
+    source_path: resource/chip-atlas/chip-atlas.md
     status: valid
     warnings: []
   resource/chiro/chiro.md#publication[0]#DOI:10.26434/chemrxiv.12591221:
@@ -1434,6 +1668,24 @@ entries:
     publication_index: 1
     reference_id: PMID:24103152
     source_path: resource/cmo/cmo.md
+    status: valid
+    warnings: []
+  resource/cngbdb/cngbdb.md#publication[0]#DOI:10.1093/database/baaa055:
+    checked_at: '2026-10-05T19:34:41Z'
+    errors: []
+    fingerprint: f37a809cd9d930441c01cbca56e4b1973ff7d7f92411b4d70a20d8e383db8efb
+    publication_index: 0
+    reference_id: DOI:10.1093/database/baaa055
+    source_path: resource/cngbdb/cngbdb.md
+    status: valid
+    warnings: []
+  resource/cngbdb/cngbdb.md#publication[1]#DOI:10.1093/hr/uhaf036:
+    checked_at: '2026-10-05T19:34:41Z'
+    errors: []
+    fingerprint: 4ecf5b733fcd7cb6c45778abcb545cca8302fb3a642d6b6c2eb0d0625f9a254e
+    publication_index: 1
+    reference_id: DOI:10.1093/hr/uhaf036
+    source_path: resource/cngbdb/cngbdb.md
     status: valid
     warnings: []
   resource/cog/cog.md#publication[0]#PMID:33167031:
@@ -1743,6 +1995,33 @@ entries:
     source_path: resource/dbgap/dbgap.md
     status: valid
     warnings: []
+  resource/dbnsfp/dbnsfp.md#publication[0]#DOI:10.1186/s13073-020-00803-9:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: dedd1a8677cec2df80ef865c0aa6a0d41e06c4fd422c4986d7730d6b22c062c3
+    publication_index: 0
+    reference_id: DOI:10.1186/s13073-020-00803-9
+    source_path: resource/dbnsfp/dbnsfp.md
+    status: valid
+    warnings: []
+  resource/dbnsfp/dbnsfp.md#publication[1]#DOI:10.1002/humu.21517:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 6275a4e2c793656b25edc03b04625644e1d00d8ecffa120ddaac74387024d7c7
+    publication_index: 1
+    reference_id: DOI:10.1002/humu.21517
+    source_path: resource/dbnsfp/dbnsfp.md
+    status: valid
+    warnings: []
+  resource/dbnsfp/dbnsfp.md#publication[2]#DOI:10.1093/nar/gku1206:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 65830706893ff42725bc344b1404fa51f9ce41db9feedc5cf1722e3795769b3f
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gku1206
+    source_path: resource/dbnsfp/dbnsfp.md
+    status: valid
+    warnings: []
   resource/dbpedia/dbpedia.md#publication[0]#DOI:10.1007/978-3-540-76298-0_52:
     checked_at: '2026-08-06T18:17:00Z'
     errors: []
@@ -1858,6 +2137,24 @@ entries:
     publication_index: 0
     reference_id: PMID:18366659
     source_path: resource/ddanat/ddanat.md
+    status: valid
+    warnings: []
+  resource/ddbj/ddbj.md#publication[0]#DOI:10.1093/nar/gkaf1273:
+    checked_at: '2026-10-05T16:15:19Z'
+    errors: []
+    fingerprint: 1354c588744d11e5efa0221c450a3f98acb447f9126cd65d01a03cfb6f2a8210
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1273
+    source_path: resource/ddbj/ddbj.md
+    status: valid
+    warnings: []
+  resource/ddbj/ddbj.md#publication[1]#DOI:10.1093/nar/gkae882:
+    checked_at: '2026-10-05T16:15:20Z'
+    errors: []
+    fingerprint: db29f5ff9559812e29f05d0ddba8e6a79552b5ca594f3b3751c263e9db28b3dd
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkae882
+    source_path: resource/ddbj/ddbj.md
     status: valid
     warnings: []
   resource/ddinter/ddinter.md#publication[0]#PMID:34634800:
@@ -2112,6 +2409,15 @@ entries:
     source_path: resource/doid/doid.md
     status: valid
     warnings: []
+  resource/dolce/dolce.md#publication[0]#DOI:10.3233/AO-210259:
+    checked_at: '2026-10-04T18:54:55Z'
+    errors: []
+    fingerprint: 2218c9b70eadd8e7fa0b968fca58c163995202a63a861dbc9662f6daf8bf2612
+    publication_index: 0
+    reference_id: DOI:10.3233/AO-210259
+    source_path: resource/dolce/dolce.md
+    status: valid
+    warnings: []
   resource/dorothea/dorothea.md#publication[0]#DOI:10.1101/gr.240663.118:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2211,6 +2517,15 @@ entries:
     source_path: resource/duo/duo.md
     status: valid
     warnings: []
+  resource/earthportal/earthportal.md#publication[0]#DOI:10.3897/aca.8.e151393:
+    checked_at: '2026-10-05T19:34:42Z'
+    errors: []
+    fingerprint: 23b448cceaa084d0fdbdfbd6adbaf78d8ceb9e92361da6ff0f37d8d2fb9a9541
+    publication_index: 0
+    reference_id: DOI:10.3897/aca.8.e151393
+    source_path: resource/earthportal/earthportal.md
+    status: valid
+    warnings: []
   resource/ecao/ecao.md#publication[0]#PMID:41717723:
     checked_at: '2026-08-06T18:17:12Z'
     errors: []
@@ -2263,6 +2578,51 @@ entries:
     publication_index: 0
     reference_id: PMID:34394059
     source_path: resource/ecocyc/ecocyc.md
+    status: valid
+    warnings: []
+  resource/ecoportal/ecoportal.md#publication[0]#DOI:10.3233/FC-240002:
+    checked_at: '2026-10-05T19:34:42Z'
+    errors: []
+    fingerprint: 50f4633f5ce0120693a29bf4d98d42d9ce748c8460f5f5744cce5cde7856d3c2
+    publication_index: 0
+    reference_id: DOI:10.3233/FC-240002
+    source_path: resource/ecoportal/ecoportal.md
+    status: valid
+    warnings: []
+  resource/ecoportal/ecoportal.md#publication[1]#url:https://ceur-ws.org/Vol-2969/paper6-s4biodiv.pdf:
+    checked_at: '2026-10-05T19:34:42Z'
+    errors: []
+    fingerprint: e065922810fd78c1f56f2984b12a956837a4af7b8aa22a74c14cce9471e9fc5f
+    publication_index: 1
+    reference_id: url:https://ceur-ws.org/Vol-2969/paper6-s4biodiv.pdf
+    source_path: resource/ecoportal/ecoportal.md
+    status: valid
+    warnings: []
+  resource/ecoportal/ecoportal.md#publication[2]#DOI:10.1038/s41597-024-03669-3:
+    checked_at: '2026-10-05T19:34:42Z'
+    errors: []
+    fingerprint: 5c9e5b20d20009c685a2256104b4a791e55917784457b8fe69eff3aa8042ee6d
+    publication_index: 2
+    reference_id: DOI:10.1038/s41597-024-03669-3
+    source_path: resource/ecoportal/ecoportal.md
+    status: valid
+    warnings: []
+  resource/ecrin-mdr/ecrin-mdr.md#publication[0]#DOI:10.12688/openreseurope.17131.2:
+    checked_at: '2026-10-04T18:39:00Z'
+    errors: []
+    fingerprint: 456a7a77c631bd7d6373d8c9b777385de7ad7ca6ad35b48b46f9aade984af04a
+    publication_index: 0
+    reference_id: DOI:10.12688/openreseurope.17131.2
+    source_path: resource/ecrin-mdr/ecrin-mdr.md
+    status: valid
+    warnings: []
+  resource/ecrin-mdr/ecrin-mdr.md#publication[1]#DOI:10.1186/s13063-016-1686-5:
+    checked_at: '2026-10-04T18:39:01Z'
+    errors: []
+    fingerprint: 8f5920bd758c5918b9db7c887b6ffa94eb3610a94626c7673fe0ba0b5cee0cae
+    publication_index: 1
+    reference_id: DOI:10.1186/s13063-016-1686-5
+    source_path: resource/ecrin-mdr/ecrin-mdr.md
     status: valid
     warnings: []
   resource/edam/edam.md#publication[0]#DOI:10.1093/bioinformatics/btt113:
@@ -2525,6 +2885,15 @@ entries:
     source_path: resource/envo/envo.md
     status: valid
     warnings: []
+  resource/envthes/envthes.md#publication[0]#url:https://dl.gi.de/handle/20.500.12116/25815:
+    checked_at: '2026-10-05T19:34:42Z'
+    errors: []
+    fingerprint: 756b3a07978cb240c00d6f4b237ee112a3f86d0f1dacc67e23b93bda2d8eac93
+    publication_index: 0
+    reference_id: url:https://dl.gi.de/handle/20.500.12116/25815
+    source_path: resource/envthes/envthes.md
+    status: valid
+    warnings: []
   resource/eo/eo.md#publication[0]#PMID:22847540:
     checked_at: '2026-08-06T18:17:17Z'
     errors: []
@@ -2669,6 +3038,15 @@ entries:
     source_path: resource/europepmc/europepmc.md
     status: valid
     warnings: []
+  resource/eva/eva.md#publication[0]#DOI:10.1093/nar/gkab960:
+    checked_at: '2026-10-04T18:18:41Z'
+    errors: []
+    fingerprint: 7d5af34cb2f18148d5d85093aac9c2ac9176fe5b6713ef47c979f612a8f47b67
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkab960
+    source_path: resource/eva/eva.md
+    status: valid
+    warnings: []
   resource/evlncrnas/evlncrnas.md#publication[0]#DOI:10.1093/nar/gkad1057:
     checked_at: '2026-06-22T16:26:35Z'
     errors: []
@@ -2739,6 +3117,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkz546
     source_path: resource/fabric/fabric.md
+    status: valid
+    warnings: []
+  resource/fairdomhub/fairdomhub.md#publication[0]#DOI:10.1093/nar/gkw1032:
+    checked_at: '2026-10-04T18:18:44Z'
+    errors: []
+    fingerprint: 2545c6756701c9e21b49380e19a310071c8c79aa18d071e68583eb68aeeb7a4d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkw1032
+    source_path: resource/fairdomhub/fairdomhub.md
+    status: valid
+    warnings: []
+  resource/fairsharing/fairsharing.md#publication[0]#DOI:10.1038/s41587-019-0080-8:
+    checked_at: '2026-10-05T19:34:42Z'
+    errors: []
+    fingerprint: 684f22787be5a06d4436c5938b55070d4007e75e1a393738866ea19f28f10153
+    publication_index: 0
+    reference_id: DOI:10.1038/s41587-019-0080-8
+    source_path: resource/fairsharing/fairsharing.md
     status: valid
     warnings: []
   resource/fantom5/fantom5.md#publication[0]#DOI:10.1038/nature13182:
@@ -2892,6 +3288,24 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkx1089
     source_path: resource/foodb/foodb.md
+    status: valid
+    warnings: []
+  resource/fooddata-central/fooddata-central.md#publication[0]#DOI:10.1093/ajcn/nqab397:
+    checked_at: '2026-10-05T19:34:42Z'
+    errors: []
+    fingerprint: 33a9f7a9073053c4f449174cbb0dd655a16ab6f3fe39830b017d352b0c7173d1
+    publication_index: 0
+    reference_id: DOI:10.1093/ajcn/nqab397
+    source_path: resource/fooddata-central/fooddata-central.md
+    status: valid
+    warnings: []
+  resource/foodkg/foodkg.md#publication[0]#DOI:10.1007/978-3-030-30796-7_10:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: df8a27e3936dc8983a141bb4192feaad3bf719451b2f3cfe510ba07e56b2f042
+    publication_index: 0
+    reference_id: DOI:10.1007/978-3-030-30796-7_10
+    source_path: resource/foodkg/foodkg.md
     status: valid
     warnings: []
   resource/foodon/foodon.md#publication[0]#PMID:31304272:
@@ -3150,6 +3564,24 @@ entries:
     source_path: resource/ginsim-models/ginsim-models.md
     status: valid
     warnings: []
+  resource/glida/glida.md#publication[0]#DOI:10.1093/nar/gkj028:
+    checked_at: '2026-10-05T16:48:28Z'
+    errors: []
+    fingerprint: a50cd5084c885cf2871ce04f0cfeb1fd2d5ab1ec709b4a66e1a9f85dba08c5cc
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkj028
+    source_path: resource/glida/glida.md
+    status: valid
+    warnings: []
+  resource/glida/glida.md#publication[1]#DOI:10.1093/nar/gkm948:
+    checked_at: '2026-10-05T16:48:28Z'
+    errors: []
+    fingerprint: f6c63ab9b1702b53ba0854c02f03f54d314379af7d6865da190cba338e9083be
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkm948
+    source_path: resource/glida/glida.md
+    status: valid
+    warnings: []
   resource/glkb/glkb.md#publication[0]#DOI:10.1101/2024.09.22.614323:
     checked_at: '2026-06-22T16:26:53Z'
     errors: []
@@ -3312,6 +3744,15 @@ entries:
     source_path: resource/go/go.md
     status: valid
     warnings: []
+  resource/goldbook/goldbook.md#publication[0]#DOI:10.1351/goldbook:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 741697346eda4250b731382441f83104ca70ea7cb4608492ba9c1646327a92c0
+    publication_index: 0
+    reference_id: DOI:10.1351/goldbook
+    source_path: resource/goldbook/goldbook.md
+    status: valid
+    warnings: []
   resource/gomapman/gomapman.md#publication[0]#PMID:24194592:
     checked_at: '2026-08-06T18:17:32Z'
     errors: []
@@ -3328,6 +3769,51 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1016/j.jbi.2022.104133
     source_path: resource/gp-kg/gp-kg.md
+    status: valid
+    warnings: []
+  resource/gpcrdb/gpcrdb.md#publication[0]#DOI:10.1093/nar/gkac1013:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 45ebcfad4765035f07b7ec66657f6032d13d64e3361417e9677d71d1c9fd7e34
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkac1013
+    source_path: resource/gpcrdb/gpcrdb.md
+    status: valid
+    warnings: []
+  resource/gpcrdb/gpcrdb.md#publication[1]#DOI:10.1093/nar/gkaa1080:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 3dbfd756c731a69da940988708139c4e45b7de52105c5df4f067df1941350151
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkaa1080
+    source_path: resource/gpcrdb/gpcrdb.md
+    status: valid
+    warnings: []
+  resource/gpcrdb/gpcrdb.md#publication[2]#DOI:10.1093/nar/gkx1109:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 912d077eede6746b7f61d37c199caf7c68f38dd5837a193768e7354e54d5611b
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkx1109
+    source_path: resource/gpcrdb/gpcrdb.md
+    status: valid
+    warnings: []
+  resource/gpmdb/gpmdb.md#publication[0]#DOI:10.1021/pr049882h:
+    checked_at: '2026-10-04T18:39:02Z'
+    errors: []
+    fingerprint: d30e4ad7867989b8f30dbf65e63a8a7690a9f60e913745345e940356a784b892
+    publication_index: 0
+    reference_id: DOI:10.1021/pr049882h
+    source_path: resource/gpmdb/gpmdb.md
+    status: valid
+    warnings: []
+  resource/gpmdb/gpmdb.md#publication[1]#DOI:10.1093/bioinformatics/bth092:
+    checked_at: '2026-10-04T18:39:03Z'
+    errors: []
+    fingerprint: 03ce6df7d0feafdc1fdae19a43ac8dbb284029890e513d0fad6aacb6988466f1
+    publication_index: 1
+    reference_id: DOI:10.1093/bioinformatics/bth092
+    source_path: resource/gpmdb/gpmdb.md
     status: valid
     warnings: []
   resource/greengenes/greengenes.md#publication[0]#DOI:10.1038/s41587-023-01845-1:
@@ -3382,6 +3868,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad944
     source_path: resource/gtopdb/gtopdb.md
+    status: valid
+    warnings: []
+  resource/gtr/gtr.md#publication[0]#DOI:10.1093/nar/gks1173:
+    checked_at: '2026-10-05T16:48:28Z'
+    errors: []
+    fingerprint: 96b845052629d1157cc5a761d2ec5cd87624b916539f54f8f6e339c4537e8828
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gks1173
+    source_path: resource/gtr/gtr.md
     status: valid
     warnings: []
   resource/gtrnadb/gtrnadb.md#publication[0]#DOI:10.1093/nar/gkv1309:
@@ -3728,6 +4223,15 @@ entries:
     status: warning
     warnings:
     - DOI:10.1038/s41592-024-02497-x has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1038_s41592-024-02497-x.md
+  resource/human-proteome-map/human-proteome-map.md#publication[0]#DOI:10.1038/nature13302:
+    checked_at: '2026-10-04T17:31:18Z'
+    errors: []
+    fingerprint: 238b785a3ad1c3972c7bed7259dd2606fccce78666df1dd31a1d5adbcd2087cd
+    publication_index: 0
+    reference_id: DOI:10.1038/nature13302
+    source_path: resource/human-proteome-map/human-proteome-map.md
+    status: valid
+    warnings: []
   resource/humancyc/humancyc.md#publication[0]#DOI:10.1186/gb-2004-6-1-r2:
     checked_at: '2026-08-06T18:17:45Z'
     errors: []
@@ -3762,6 +4266,33 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41586-020-2188-x
     source_path: resource/huri/huri.md
+    status: valid
+    warnings: []
+  resource/i-adopt/i-adopt.md#publication[0]#DOI:10.15497/RDA00071:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 00f964036a77a8802c6b0e72e8ebd2cec4dda2ce27b8f0f2d30731b82341d7c8
+    publication_index: 0
+    reference_id: DOI:10.15497/RDA00071
+    source_path: resource/i-adopt/i-adopt.md
+    status: valid
+    warnings: []
+  resource/i-adopt/i-adopt.md#publication[1]#DOI:10.48550/arXiv.2107.06547:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 6ad86f1557ad71fbb768dc0c639d106cc68b7f5af7d5cdbb68ecc95b7307e43b
+    publication_index: 1
+    reference_id: DOI:10.48550/arXiv.2107.06547
+    source_path: resource/i-adopt/i-adopt.md
+    status: valid
+    warnings: []
+  resource/iana-mediatype/iana-mediatype.md#publication[0]#DOI:10.17487/RFC6838:
+    checked_at: '2026-10-04T18:55:26Z'
+    errors: []
+    fingerprint: 4b056fdb63610b5aa754eed0161c8186cb729fe2b8a82462c595b91283ae5bb7
+    publication_index: 0
+    reference_id: DOI:10.17487/RFC6838
+    source_path: resource/iana-mediatype/iana-mediatype.md
     status: valid
     warnings: []
   resource/iao/iao.md#publication[0]#PMID:22874154:
@@ -3870,6 +4401,24 @@ entries:
     publication_index: 0
     reference_id: url:https://ceur-ws.org/Vol-1327/icbo2014_paper_54.pdf
     source_path: resource/ico/ico.md
+    status: valid
+    warnings: []
+  resource/identifiers-org/identifiers-org.md#publication[0]#DOI:10.1038/sdata.2018.29:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 6830a82310999f627093a9d319fe502a8114675b7a1120f58aeb7a356a0374fe
+    publication_index: 0
+    reference_id: DOI:10.1038/sdata.2018.29
+    source_path: resource/identifiers-org/identifiers-org.md
+    status: valid
+    warnings: []
+  resource/identifiers-org/identifiers-org.md#publication[1]#DOI:10.1093/nar/gkr1097:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: a7f9331b8f3be7d7e0c9f3882501dae61cb8531e5371ee0d39d1375a9d444444
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkr1097
+    source_path: resource/identifiers-org/identifiers-org.md
     status: valid
     warnings: []
   resource/idisk/idisk.md#publication[0]#DOI:10.1093/jamia/ocz216:
@@ -4091,6 +4640,24 @@ entries:
     status: warning
     warnings:
     - PMID:15022647 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_15022647.md
+  resource/iprox/iprox.md#publication[0]#DOI:10.1093/nar/gky869:
+    checked_at: '2026-10-04T18:18:42Z'
+    errors: []
+    fingerprint: 560d9738728dd00aa6ca3938d1326c6b5fbbf33f61bf265ae70728a659bfefac
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky869
+    source_path: resource/iprox/iprox.md
+    status: valid
+    warnings: []
+  resource/iprox/iprox.md#publication[1]#DOI:10.1093/nar/gkab1081:
+    checked_at: '2026-10-04T18:18:43Z'
+    errors: []
+    fingerprint: 5153ab3537be744004a5b9f4b4156f2333a4a6740b1b797e8cffdd0fdb64f4ee
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkab1081
+    source_path: resource/iprox/iprox.md
+    status: valid
+    warnings: []
   resource/iptmnet/iptmnet.md#publication[0]#DOI:10.1093/nar/gkx1104:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4143,6 +4710,51 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad1059
     source_path: resource/jaspar/jaspar.md
+    status: valid
+    warnings: []
+  resource/jpost/jpost.md#publication[0]#DOI:10.1093/nar/gkae1032:
+    checked_at: '2026-10-04T18:18:38Z'
+    errors: []
+    fingerprint: 0f95430e163471ea53947e5d12e6b36973c465ac29e8aa98f08b3f0b4351580d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1032
+    source_path: resource/jpost/jpost.md
+    status: valid
+    warnings: []
+  resource/jpost/jpost.md#publication[1]#DOI:10.1093/nar/gky899:
+    checked_at: '2026-10-04T18:18:39Z'
+    errors: []
+    fingerprint: ccca652cf094090aa46045ed2be44260207ad7c8ab7932516286c852cee5be0f
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gky899
+    source_path: resource/jpost/jpost.md
+    status: valid
+    warnings: []
+  resource/jpost/jpost.md#publication[2]#DOI:10.1093/nar/gkw1080:
+    checked_at: '2026-10-04T18:18:40Z'
+    errors: []
+    fingerprint: 441c7f0fe7fc349aef84aa717c4cc4b4c99c9b4e80a172e3e8b6b674b4896244
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkw1080
+    source_path: resource/jpost/jpost.md
+    status: valid
+    warnings: []
+  resource/jws-online/jws-online.md#publication[0]#DOI:10.1093/bioinformatics/bth200:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: dc48f7cf8b9bfabd806c9517ae37f9faeabec67a4cb2162a33024aa826a225a6
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/bth200
+    source_path: resource/jws-online/jws-online.md
+    status: valid
+    warnings: []
+  resource/jws-online/jws-online.md#publication[1]#DOI:10.1093/bioinformatics/btw831:
+    checked_at: '2026-10-05T19:34:43Z'
+    errors: []
+    fingerprint: 8c28581c595ee273dda7cbf2cd765374688a684055f31d08d86b4837298a7954
+    publication_index: 1
+    reference_id: DOI:10.1093/bioinformatics/btw831
+    source_path: resource/jws-online/jws-online.md
     status: valid
     warnings: []
   resource/kegg/kegg.md#publication[0]#DOI:10.1093/nar/gkae909:
@@ -5292,6 +5904,69 @@ entries:
     source_path: resource/myaura/myaura.md
     status: valid
     warnings: []
+  resource/mychem/mychem.md#publication[0]#DOI:10.1093/bioinformatics/btac017:
+    checked_at: '2026-10-04T17:29:07Z'
+    errors: []
+    fingerprint: 85ab05d0f14595af4c195bae4df06342fa294fd91ad5a8e2d0f0fc330ace0c95
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btac017
+    source_path: resource/mychem/mychem.md
+    status: valid
+    warnings: []
+  resource/mydisease/mydisease.md#publication[0]#DOI:10.1093/bioinformatics/btac017:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: 28717f944df21e995f678455c3735b177505a4444ff32411f2c6566dbdaeb60e
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btac017
+    source_path: resource/mydisease/mydisease.md
+    status: valid
+    warnings: []
+  resource/mygene/mygene.md#publication[0]#DOI:10.1186/s13059-016-0953-9:
+    checked_at: '2026-10-04T17:31:20Z'
+    errors: []
+    fingerprint: b6eb2bbdbf9e25d7d933e8d220936b4237d6718ed718cbc47454b18aba3e9006
+    publication_index: 0
+    reference_id: DOI:10.1186/s13059-016-0953-9
+    source_path: resource/mygene/mygene.md
+    status: valid
+    warnings: []
+  resource/mygene/mygene.md#publication[1]#DOI:10.1093/nar/gks1114:
+    checked_at: '2026-10-04T17:31:31Z'
+    errors: []
+    fingerprint: dddf6f4d3d03518644eeb4de01a2b98cff6cc61b3ca961a867eccbd634dc78b9
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gks1114
+    source_path: resource/mygene/mygene.md
+    status: valid
+    warnings: []
+  resource/myvariant/myvariant.md#publication[0]#DOI:10.1186/s13059-016-0953-9:
+    checked_at: '2026-10-05T19:30:36Z'
+    errors: []
+    fingerprint: b6eb2bbdbf9e25d7d933e8d220936b4237d6718ed718cbc47454b18aba3e9006
+    publication_index: 0
+    reference_id: DOI:10.1186/s13059-016-0953-9
+    source_path: resource/myvariant/myvariant.md
+    status: valid
+    warnings: []
+  resource/n2t/n2t.md#publication[0]#DOI:10.1038/sdata.2018.29:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: 6830a82310999f627093a9d319fe502a8114675b7a1120f58aeb7a356a0374fe
+    publication_index: 0
+    reference_id: DOI:10.1038/sdata.2018.29
+    source_path: resource/n2t/n2t.md
+    status: valid
+    warnings: []
+  resource/name-resolver/name-resolver.md#publication[0]#DOI:10.48550/arXiv.2601.10008:
+    checked_at: '2026-10-05T19:30:30Z'
+    errors: []
+    fingerprint: a02a1bb63134f028258c3b2a372fb1508c95d9cbeea93e7e1a4235a5ce9dffec
+    publication_index: 0
+    reference_id: DOI:10.48550/arXiv.2601.10008
+    source_path: resource/name-resolver/name-resolver.md
+    status: valid
+    warnings: []
   resource/nanopublications/nanopublications.md#publication[0]#DOI:10.3233/ds-170010:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5365,6 +6040,15 @@ entries:
     source_path: resource/ncbitaxon/ncbitaxon.md
     status: valid
     warnings: []
+  resource/nci60/nci60.md#publication[0]#DOI:10.1038/nrc1951:
+    checked_at: '2026-10-04T17:31:19Z'
+    errors: []
+    fingerprint: b5c9d28f46009f4cbfc331320470ab6abac24088a7a615d9329849a239047617
+    publication_index: 0
+    reference_id: DOI:10.1038/nrc1951
+    source_path: resource/nci60/nci60.md
+    status: valid
+    warnings: []
   resource/ncit/ncit.md#publication[0]#PMID:16697710:
     checked_at: '2026-08-06T18:18:16Z'
     errors: []
@@ -5427,6 +6111,51 @@ entries:
     publication_index: 0
     reference_id: PMID:40799495
     source_path: resource/ngbo/ngbo.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[0]#DOI:10.1093/nar/gkaf1172:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: 08aac8dc8e5bfea7ebdcffab41d44c075b58e5a2591b74c9afe7eca78212f19d
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1172
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[1]#DOI:10.1093/nar/gkae978:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: 862719312d7aeda745c9ced5c36530906ef56b5a19c87d9e328c188f8dcf961d
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkae978
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[2]#DOI:10.1093/nar/gkad1078:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: 3951659c6ef44ae4bcc3d9b7bcda72528c63836842f864c5964c93436d36d5f3
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkad1078
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[3]#DOI:10.1093/gpbjnl/qzaf072:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: 42ced1d7c56f4380dcf82ef9805a6fa6fda9b7ddaab66a6db3873825b1b8be77
+    publication_index: 3
+    reference_id: DOI:10.1093/gpbjnl/qzaf072
+    source_path: resource/ngdc/ngdc.md
+    status: valid
+    warnings: []
+  resource/ngdc/ngdc.md#publication[4]#DOI:10.1016/j.gpb.2021.08.001:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: bd5a61eecab0caf3ee9543dc78b4176fbd6fbde3c42bf2d4679fb4c4f8db409f
+    publication_index: 4
+    reference_id: DOI:10.1016/j.gpb.2021.08.001
+    source_path: resource/ngdc/ngdc.md
     status: valid
     warnings: []
   resource/node-normalizer/node-normalizer.md#publication[0]#DOI:10.48550/arXiv.2601.10008:
@@ -5609,6 +6338,15 @@ entries:
     publication_index: 0
     reference_id: PMID:15892874
     source_path: resource/obo_rel/obo_rel.md
+    status: valid
+    warnings: []
+  resource/oboe/oboe.md#publication[0]#DOI:10.1016/j.ecoinf.2007.05.004:
+    checked_at: '2026-10-05T19:34:44Z'
+    errors: []
+    fingerprint: 141cfeef129848cfed3e29fd6926662ffed22bd0e166689dad8bf6ba661024a8
+    publication_index: 0
+    reference_id: DOI:10.1016/j.ecoinf.2007.05.004
+    source_path: resource/oboe/oboe.md
     status: valid
     warnings: []
   resource/obofoundry/obofoundry.md#publication[0]#DOI:10.1093/database/baab069:
@@ -5898,6 +6636,33 @@ entries:
     source_path: resource/oostt/oostt.md
     status: valid
     warnings: []
+  resource/open-english-wordnet/open-english-wordnet.md#publication[0]#DOI:10.18653/v1/2019.gwc-1.31:
+    checked_at: '2026-10-05T16:14:46Z'
+    errors: []
+    fingerprint: 191f0b98cec72f0dec2bb314e31fa9da0b9abd474ad1acc8216d7e5502ff0860
+    publication_index: 0
+    reference_id: DOI:10.18653/v1/2019.gwc-1.31
+    source_path: resource/open-english-wordnet/open-english-wordnet.md
+    status: valid
+    warnings: []
+  resource/open-english-wordnet/open-english-wordnet.md#publication[1]#DOI:10.63317/4mit9o8vc2gw:
+    checked_at: '2026-10-05T16:14:47Z'
+    errors: []
+    fingerprint: 8de23e97e14c8fd5ca7838861ff57b9143eddecb66a5bc63ef00ebf94559ffa2
+    publication_index: 1
+    reference_id: DOI:10.63317/4mit9o8vc2gw
+    source_path: resource/open-english-wordnet/open-english-wordnet.md
+    status: valid
+    warnings: []
+  resource/open-tggates/open-tggates.md#publication[0]#DOI:10.1093/nar/gku955:
+    checked_at: '2026-10-05T19:34:45Z'
+    errors: []
+    fingerprint: 65ba882f6b55cc7d43d2b518cbc67ef027a402f10cc6dc91dd4170b0261c37f1
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gku955
+    source_path: resource/open-tggates/open-tggates.md
+    status: valid
+    warnings: []
   resource/open-tree-of-life/open-tree-of-life.md#publication[0]#DOI:10.1073/pnas.1423041112:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6151,6 +6916,15 @@ entries:
     status: warning
     warnings:
     - PMID:42327171 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_42327171.md
+  resource/panorama-public/panorama-public.md#publication[0]#DOI:10.1074/mcp.ra117.000543:
+    checked_at: '2026-10-04T18:39:02Z'
+    errors: []
+    fingerprint: f0ae5e4ac0d8d2240394ac29af342e9e28becf264f4b615a96796522dec9b421
+    publication_index: 0
+    reference_id: DOI:10.1074/mcp.ra117.000543
+    source_path: resource/panorama-public/panorama-public.md
+    status: valid
+    warnings: []
   resource/panther/panther.md#publication[0]#PMID:34717010:
     checked_at: '2026-08-06T18:18:28Z'
     errors: []
@@ -6259,6 +7033,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkw1017
     source_path: resource/patric/patric.md
+    status: valid
+    warnings: []
+  resource/pavs-kg/pavs-kg.md#publication[0]#DOI:10.64898/2026.04.05.26350189:
+    checked_at: '2026-10-05T16:14:49Z'
+    errors: []
+    fingerprint: 8178b48e6ae1295a300d3d3a66a1549cf2884bd3c96a6faf1fbe2bbf6e5e3f2e
+    publication_index: 0
+    reference_id: DOI:10.64898/2026.04.05.26350189
+    source_path: resource/pavs-kg/pavs-kg.md
     status: valid
     warnings: []
   resource/paxdb/paxdb.md#publication[0]#DOI:10.1093/nar/gkaf1066:
@@ -6695,6 +7478,24 @@ entries:
     source_path: resource/phosphositeplus/phosphositeplus.md
     status: valid
     warnings: []
+  resource/physiome-model-repository/physiome-model-repository.md#publication[0]#DOI:10.1093/bioinformatics/btq723:
+    checked_at: '2026-10-04T18:38:58Z'
+    errors: []
+    fingerprint: 8f09d9e1bffa2cfd866b1de2ce4639f95fc500b83b8d0efce0f73a22e014a650
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btq723
+    source_path: resource/physiome-model-repository/physiome-model-repository.md
+    status: valid
+    warnings: []
+  resource/physiome-model-repository/physiome-model-repository.md#publication[1]#DOI:10.1186/s12859-019-2987-y:
+    checked_at: '2026-10-04T18:38:59Z'
+    errors: []
+    fingerprint: 7487134da7bee99c493986b25f376821278cc70ba519ee76159602101eb75e9a
+    publication_index: 1
+    reference_id: DOI:10.1186/s12859-019-2987-y
+    source_path: resource/physiome-model-repository/physiome-model-repository.md
+    status: valid
+    warnings: []
   resource/pid/pid.md#publication[0]#DOI:10.1093/nar/gkn653:
     checked_at: '2026-08-06T18:18:37Z'
     errors: []
@@ -6906,6 +7707,33 @@ entries:
     source_path: resource/preppi/preppi.md
     status: valid
     warnings: []
+  resource/pride-cv/pride-cv.md#publication[0]#DOI:10.1093/nar/gkae1011:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 76967eb946c8d32f3aaf46e934c803b6b93bfccc4158e1beaad826dfa65eb070
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1011
+    source_path: resource/pride-cv/pride-cv.md
+    status: valid
+    warnings: []
+  resource/pride/pride.md#publication[0]#DOI:10.1093/nar/gkae1011:
+    checked_at: '2026-10-05T19:34:45Z'
+    errors: []
+    fingerprint: 76967eb946c8d32f3aaf46e934c803b6b93bfccc4158e1beaad826dfa65eb070
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1011
+    source_path: resource/pride/pride.md
+    status: valid
+    warnings: []
+  resource/pride/pride.md#publication[1]#DOI:10.1093/nar/gkab1038:
+    checked_at: '2026-10-05T19:34:45Z'
+    errors: []
+    fingerprint: dd445c08f9cab5fcde69b49d6cd623a0724ddba8eb61250857ae6851719886a9
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkab1038
+    source_path: resource/pride/pride.md
+    status: valid
+    warnings: []
   resource/prism/prism.md#publication[0]#DOI:10.1038/s43018-019-0018-6:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -7013,6 +7841,33 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41587-019-0298-5
     source_path: resource/proteomehd/proteomehd.md
+    status: valid
+    warnings: []
+  resource/proteomexchange/proteomexchange.md#publication[0]#DOI:10.1093/nar/gkaf1146:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: daf2d5f00ba6de8893b206624df2893d0c2fb058115df3c5d856946ba2541c73
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1146
+    source_path: resource/proteomexchange/proteomexchange.md
+    status: valid
+    warnings: []
+  resource/proteomexchange/proteomexchange.md#publication[1]#DOI:10.1093/nar/gkac1040:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 409b64bba8430848e8d731f50479209e05c5de4b19fd12824cd229ba5bef8487
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkac1040
+    source_path: resource/proteomexchange/proteomexchange.md
+    status: valid
+    warnings: []
+  resource/proteomexchange/proteomexchange.md#publication[2]#DOI:10.1093/nar/gkw936:
+    checked_at: '2026-10-05T16:38:34Z'
+    errors: []
+    fingerprint: 0eed185d334379a78f7e335812bcccce329028e4a0bdfe7daf821597a5966efd
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkw936
+    source_path: resource/proteomexchange/proteomexchange.md
     status: valid
     warnings: []
   resource/proteomicsdb/proteomicsdb.md#publication[0]#DOI:10.1093/nar/gkx1029:
@@ -7195,6 +8050,15 @@ entries:
     source_path: resource/rdbridge/rdbridge.md
     status: valid
     warnings: []
+  resource/rdf-portal/rdf-portal.md#publication[0]#DOI:10.1093/database/bay123:
+    checked_at: '2026-10-05T19:31:02Z'
+    errors: []
+    fingerprint: 5aa17a8028d51edce077e5d634fdea8788ffd085d855204cd952946890c61e8d
+    publication_index: 0
+    reference_id: DOI:10.1093/database/bay123
+    source_path: resource/rdf-portal/rdf-portal.md
+    status: valid
+    warnings: []
   resource/rdp/rdp.md#publication[0]#PMID:24288368:
     checked_at: '2026-10-05T17:41:03Z'
     errors: []
@@ -7215,6 +8079,24 @@ entries:
     status: warning
     warnings:
     - PMID:19004872 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_19004872.md
+  resource/re3data/re3data.md#publication[0]#DOI:10.1371/journal.pone.0078080:
+    checked_at: '2026-10-05T19:34:45Z'
+    errors: []
+    fingerprint: fa3fd6e6ec2183d54e21af7e76f5a471fec298c1730b1d4f42d9da8d695d825d
+    publication_index: 0
+    reference_id: DOI:10.1371/journal.pone.0078080
+    source_path: resource/re3data/re3data.md
+    status: valid
+    warnings: []
+  resource/re3data/re3data.md#publication[1]#DOI:10.1038/s41597-023-02462-y:
+    checked_at: '2026-10-05T19:34:45Z'
+    errors: []
+    fingerprint: d68d69c5b91882edb2fbef28dc9cd2f2eb961c0fea4a82356b60957e15670cd6
+    publication_index: 1
+    reference_id: DOI:10.1038/s41597-023-02462-y
+    source_path: resource/re3data/re3data.md
+    status: valid
+    warnings: []
   resource/reactome/reactome.md#publication[0]#DOI:10.1093/nar/gkab1028:
     checked_at: '2026-06-15T21:46:19Z'
     errors: []
@@ -7693,6 +8575,15 @@ entries:
     source_path: resource/sider/sider.md
     status: valid
     warnings: []
+  resource/sifr-bioportal/sifr-bioportal.md#publication[0]#DOI:10.1186/s12859-018-2429-2:
+    checked_at: '2026-10-05T19:34:45Z'
+    errors: []
+    fingerprint: 6927ee8305148b5c8387834de226bd02e78151bbc4d7a6dc2f77e2b832c91270
+    publication_index: 0
+    reference_id: DOI:10.1186/s12859-018-2429-2
+    source_path: resource/sifr-bioportal/sifr-bioportal.md
+    status: valid
+    warnings: []
   resource/signor/signor.md#publication[0]#DOI:10.1093/nar/gkac883:
     checked_at: '2026-08-06T18:18:59Z'
     errors: []
@@ -7764,6 +8655,15 @@ entries:
     publication_index: 0
     reference_id: PMID:33104802
     source_path: resource/smart/smart.md
+    status: valid
+    warnings: []
+  resource/smartapi/smartapi.md#publication[0]#DOI:10.1007/978-3-319-58451-5_11:
+    checked_at: '2026-10-05T19:34:46Z'
+    errors: []
+    fingerprint: 0e0e42ead2fa9e6627d3bd9446f8d5478a5eb5374020a75597b1fc6514ea4f2e
+    publication_index: 0
+    reference_id: DOI:10.1007/978-3-319-58451-5_11
+    source_path: resource/smartapi/smartapi.md
     status: valid
     warnings: []
   resource/smpdb/smpdb.md#publication[0]#DOI:10.1093/nar/gkp1002:
@@ -8041,6 +8941,15 @@ entries:
     status: warning
     warnings:
     - DOI:10.1007/978-3-031-71637-9_21 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1007_978-3-031-71637-9_21.md
+  resource/sugi-atlas/sugi-atlas.md#publication[0]#DOI:10.5281/zenodo.20569200:
+    checked_at: '2026-10-04T18:55:28Z'
+    errors: []
+    fingerprint: 7bd571cc4f7e7d723e83f2138c6552c6bb02744664135ae3f413e97b682673e8
+    publication_index: 0
+    reference_id: DOI:10.5281/zenodo.20569200
+    source_path: resource/sugi-atlas/sugi-atlas.md
+    status: valid
+    warnings: []
   resource/suppkg/suppkg.md#publication[0]#DOI:10.1016/j.jbi.2022.104120:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -8781,6 +9690,15 @@ entries:
     source_path: resource/wikipathways/wikipathways.md
     status: valid
     warnings: []
+  resource/wordnet/wordnet.md#publication[0]#DOI:10.1145/219717.219748:
+    checked_at: '2026-10-04T18:54:56Z'
+    errors: []
+    fingerprint: eb5b206fd4f1b65b68ff207f8ace36c9736cfce7c2710ba993db6215c84f908f
+    publication_index: 0
+    reference_id: DOI:10.1145/219717.219748
+    source_path: resource/wordnet/wordnet.md
+    status: valid
+    warnings: []
   resource/wormbase/wormbase.md#publication[0]#PMID:19910365:
     checked_at: '2026-08-06T18:19:25Z'
     errors: []
@@ -8851,6 +9769,24 @@ entries:
     publication_index: 0
     reference_id: PMID:35317743
     source_path: resource/xpo/xpo.md
+    status: valid
+    warnings: []
+  resource/yoda/yoda.md#publication[0]#DOI:10.1038/sdata.2018.268:
+    checked_at: '2026-10-05T16:01:04Z'
+    errors: []
+    fingerprint: 85e22572136f21b86defac399344e7ef734729b3fcedc41abac4fe85339e3e2a
+    publication_index: 0
+    reference_id: DOI:10.1038/sdata.2018.268
+    source_path: resource/yoda/yoda.md
+    status: valid
+    warnings: []
+  resource/yoda/yoda.md#publication[1]#DOI:10.1001/jama.2011.1459:
+    checked_at: '2026-10-05T16:01:05Z'
+    errors: []
+    fingerprint: 1da934489643bb4dbe336bf0fafb969a3ab15acb297907e0eeb581456ea275b9
+    publication_index: 1
+    reference_id: DOI:10.1001/jama.2011.1459
+    source_path: resource/yoda/yoda.md
     status: valid
     warnings: []
   resource/zfa/zfa.md#publication[0]#PMID:24568621:

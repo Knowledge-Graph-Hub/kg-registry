@@ -169,6 +169,30 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/
 - category: ProgrammingInterface
   connection_url: https://www.omicsdi.org/ws
@@ -211,7 +235,104 @@ products:
     source: peptideatlas
   - relation_type: prov:hadPrimarySource
     source: biomodels
+  - relation_type: prov:hadPrimarySource
+    source: pride
+  - relation_type: prov:hadPrimarySource
+    source: iprox
+  - relation_type: prov:hadPrimarySource
+    source: fairdomhub
+  - relation_type: prov:hadPrimarySource
+    source: eva
+  - relation_type: prov:hadPrimarySource
+    source: node-omics
+  - relation_type: prov:hadPrimarySource
+    source: jpost
+  - relation_type: prov:hadPrimarySource
+    source: gpmdb
+  - relation_type: prov:hadPrimarySource
+    source: cellcollective
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: panorama-public
+  - relation_type: prov:hadPrimarySource
+    source: physiome-model-repository
+  - relation_type: prov:hadPrimarySource
+    source: proteomexchange
   product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+- category: GraphicalInterface
+  description: BDC PIC-SURE (Patient Information Commons Standard Unification of Research
+    Elements) web interface for searching, filtering and exporting harmonized clinical
+    and genomic variables across hosted studies. Open-access studies (such as 1000
+    Genomes and BioLINCC training data) need no authorization; authorized access to
+    controlled studies requires an approved dbGaP data access request.
+  format: http
+  id: biodata-catalyst.picsure
+  name: BDC PIC-SURE
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodata-catalyst
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  product_url: https://picsure.biodatacatalyst.nhlbi.nih.gov/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: dbgap
+- category: ProgrammingInterface
+  description: PIC-SURE REST API for programmatic query and export of BDC study variables,
+    used through the PicSureClient and PicSureBdcAdapter Python packages (and an R
+    client) with a personal access token from the PIC-SURE interface.
+  format: http
+  id: biodata-catalyst.picsure-api
+  is_public: false
+  name: BDC PIC-SURE API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodata-catalyst
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  product_url: https://picsure.biodatacatalyst.nhlbi.nih.gov/picsure/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: dbgap
+  warnings:
+  - API endpoint returned HTTP 401 Unauthorized for anonymous requests when checked
+    on 2026-10-05; a PIC-SURE access token is required.
+- category: GraphicalInterface
+  description: BDC Gen3 data commons for browsing study metadata, checking authorized
+    data access and exporting controlled-access TOPMed and other NHLBI study files
+    to the analysis workspaces.
+  format: http
+  id: biodata-catalyst.gen3
+  name: BDC Gen3 Data Commons
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodata-catalyst
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  product_url: https://gen3.biodatacatalyst.nhlbi.nih.gov/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: dbgap
+- category: GraphicalInterface
+  description: Cloud analysis workspaces available within BDC, the Seven Bridges BDC
+    platform (https://platform.sb.biodatacatalyst.nhlbi.nih.gov/) and BDC Terra, where
+    authorized users run workflows, notebooks and genomic tools on hosted data. Both
+    require login.
+  format: http
+  id: biodata-catalyst.analysis-platforms
+  name: BDC Analysis Platforms (Terra and Seven Bridges)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodata-catalyst
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  product_url: https://terra.biodatacatalyst.nhlbi.nih.gov/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: dbgap
 publications:
 - authors:
   - Matthew D Mailman

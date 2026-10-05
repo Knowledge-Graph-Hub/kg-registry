@@ -20,7 +20,7 @@ domains:
 - clinical trials
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP
 id: ctkp
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
@@ -84,6 +84,8 @@ products:
     source: ctkp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: smartapi
   product_url: https://smart-api.info/registry?q=e51073371d7049b9643e1edbdd61bcbd
 - category: GraphProduct
   compatibility:

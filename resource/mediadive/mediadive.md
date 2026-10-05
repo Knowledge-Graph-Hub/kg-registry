@@ -284,6 +284,35 @@ products:
     source: uniprot
   product_file_size: 4640682152
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
+- category: ProgrammingInterface
+  description: SPARQL endpoint for the primary RDF Portal datasets, mostly from Japanese
+    projects and partner databases (for example BacDive, BRENDA, GlyTouCan, GTDB,
+    HGNC, HomoloGene, ICGC, jPOST, MediaDive, NANDO, PubCaseFinder and TogoID).
+  format: http
+  id: rdf-portal.sparql.primary
+  name: RDF Portal Primary SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: brenda
+  - relation_type: prov:wasDerivedFrom
+    source: glytoucan
+  - relation_type: prov:wasDerivedFrom
+    source: gtdb
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: homologene
+  - relation_type: prov:wasDerivedFrom
+    source: icgc
+  - relation_type: prov:wasDerivedFrom
+    source: mediadive
+  - relation_type: prov:wasDerivedFrom
+    source: jpost
+  product_url: https://rdfportal.org/primary/sparql
 publications:
 - authors:
   - Julia Koblitz

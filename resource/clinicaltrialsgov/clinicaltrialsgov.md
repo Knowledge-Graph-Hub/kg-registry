@@ -1463,6 +1463,68 @@ products:
   - relation_type: prov:hadPrimarySource
     source: isrctn
   product_url: https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service
+- category: GraphicalInterface
+  description: Web portal for searching clinical studies and their data objects by keyword,
+    registry identifier, PubMed ID or country, with CSV and JSON export of results.
+  format: http
+  id: ecrin-mdr.portal
+  name: ECRIN MDR Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
+  product_url: https://newmdr.ecrin.org/
+- category: ProgrammingInterface
+  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints for study
+    search, lookup by registry ID or PubMed ID, full study and object details, summary statistics
+    and an OmicsDI export feed. Documented with Swagger/OpenAPI.
+  format: http
+  id: ecrin-mdr.api
+  name: ECRIN MDR API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
+  product_url: https://newmdr.ecrin.org/swagger/index.html
+- category: GraphicalInterface
+  description: Searchable, filterable catalog of clinical trials whose individual participant-level
+    data and clinical study reports are available for request, listed by ClinicalTrials.gov
+    NCT number and filterable by Data Partner and generic drug or device name.
+  format: http
+  id: yoda.trial-catalog
+  name: YODA Trial Catalog
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: yoda
+  - relation_type: prov:wasInfluencedBy
+    source: clinicaltrialsgov
+  product_url: https://yoda.yale.edu/trials-search/
 publications:
 - authors:
   - Zarin DA

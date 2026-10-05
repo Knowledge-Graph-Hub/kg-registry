@@ -33,7 +33,7 @@ domains:
 homepage_url: https://nodenormalization-sri.renci.org/docs
 id: node-normalizer
 infores_id: sri-node-normalizer
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -55,6 +55,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: node-normalizer
+  - relation_type: prov:wasDerivedFrom
+    source: babel
   product_url: https://nodenormalization-sri.renci.org/docs
 - category: ProgrammingInterface
   compatibility:
@@ -67,6 +69,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: node-normalizer
+  - relation_type: prov:wasDerivedFrom
+    source: babel
   product_url: https://nodenorm.transltr.io/docs
 - category: ProcessProduct
   description: Source code for the Node Normalization service, which loads Babel compendia

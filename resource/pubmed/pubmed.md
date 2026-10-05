@@ -1976,6 +1976,8 @@ products:
     source: omim
   - relation_type: prov:hadPrimarySource
     source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: ddbj
   product_url: http://togows.org/help/
   warnings:
   - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned
@@ -2096,6 +2098,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
@@ -2140,6 +2144,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
@@ -2185,6 +2191,8 @@ products:
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: glida
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: GraphicalInterface
   description: CACAO annotation competition platform (relaunched 2024), where students
@@ -2404,7 +2412,214 @@ products:
     source: gdsc
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: biothings-explorer
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
+  - relation_type: prov:hadPrimarySource
+    source: mydisease
+  - relation_type: prov:hadPrimarySource
+    source: fooddata-central
+  - relation_type: prov:hadPrimarySource
+    source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: Product
+  description: Tab-delimited list of GeneReviews chapters with short name, chapter title,
+    NCBI Bookshelf (NBK) id and PubMed id, updated weekly.
+  format: tsv
+  id: genereviews.titles
+  name: GeneReviews Titles
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRtitle_shortname_NBKid.txt
+- category: GraphicalInterface
+  description: Web portal for searching clinical studies and their data objects by keyword,
+    registry identifier, PubMed ID or country, with CSV and JSON export of results.
+  format: http
+  id: ecrin-mdr.portal
+  name: ECRIN MDR Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
+  product_url: https://newmdr.ecrin.org/
+- category: ProgrammingInterface
+  description: REST API behind the MDR portal (MDR_FuiPortal.Server), with endpoints for study
+    search, lookup by registry ID or PubMed ID, full study and object details, summary statistics
+    and an OmicsDI export feed. Documented with Swagger/OpenAPI.
+  format: http
+  id: ecrin-mdr.api
+  name: ECRIN MDR API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecrin-mdr
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: who-ictrp
+  - relation_type: prov:hadPrimarySource
+    source: isrctn
+  - relation_type: prov:hadPrimarySource
+    source: eu-ctr
+  - relation_type: prov:hadPrimarySource
+    source: biolincc
+  - relation_type: prov:hadPrimarySource
+    source: yoda
+  product_url: https://newmdr.ecrin.org/swagger/index.html
+- category: Product
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
+    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
+    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
+    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
+    GB and 46.7 GB) are also split into parts.
+  format: json
+  id: babel.compendia
+  latest_version: 2026jul22
+  name: Babel Compendia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: babel
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: meddra
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for NCBI- and NLM-derived RDF datasets, including ClinVar,
+    MedGen, MeSH, NCBI Gene, NLM Catalog, PubMed and PubTator Central.
+  format: http
+  id: rdf-portal.sparql.ncbi
+  name: RDF Portal NCBI SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: medgen
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  product_url: https://rdfportal.org/ncbi/sparql
 publications:
 - authors:
   - Eric W Sayers

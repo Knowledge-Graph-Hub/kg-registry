@@ -51,6 +51,240 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 442890
     product_url: https://topmed.nhlbi.nih.gov/sites/default/files/documents/TOPMed%20WGS%20Counts%2020250505.pdf
+  - category: Product
+    compression: zip
+    description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
+      gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
+      and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
+      BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
+      upstream scores that are free for academic use. Free for academic and non-commercial users
+      after registration with an institutional email; download links are issued on request.
+    format: tsv
+    id: dbnsfp.academic
+    license:
+      id: https://creativecommons.org/licenses/by-nc-nd/4.0/
+      label: CC BY-NC-ND 4.0
+    name: dbNSFP Academic Branch
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: dbnsfp
+      - relation_type: prov:hadPrimarySource
+        source: 1000genomes
+      - relation_type: prov:hadPrimarySource
+        source: alphamissense
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: cpdb
+      - relation_type: prov:hadPrimarySource
+        source: dbsnp
+      - relation_type: prov:hadPrimarySource
+        source: ensembl
+      - relation_type: prov:hadPrimarySource
+        source: gencc
+      - relation_type: prov:hadPrimarySource
+        source: gencode
+      - relation_type: prov:hadPrimarySource
+        source: gnomad
+      - relation_type: prov:hadPrimarySource
+        source: go
+      - relation_type: prov:hadPrimarySource
+        source: gwascatalog
+      - relation_type: prov:hadPrimarySource
+        source: hgnc
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: hpa
+      - relation_type: prov:hadPrimarySource
+        source: intact
+      - relation_type: prov:hadPrimarySource
+        source: interpro
+      - relation_type: prov:hadPrimarySource
+        source: kegg
+      - relation_type: prov:hadPrimarySource
+        source: mgi
+      - relation_type: prov:hadPrimarySource
+        source: omim
+      - relation_type: prov:hadPrimarySource
+        source: orphanet
+      - relation_type: prov:hadPrimarySource
+        source: refseq
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+      - relation_type: prov:hadPrimarySource
+        source: ucsc
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
+      - relation_type: prov:hadPrimarySource
+        source: zfin
+    product_url: https://www.dbnsfp.org/download
+  - category: Product
+    compression: zip
+    description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
+      as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
+      and RGC Million Exome data, whose authors require separate commercial licenses. Available
+      to subscribers under a paid license from Genos Bioinformatics.
+    format: tsv
+    id: dbnsfp.commercial
+    license:
+      id: https://www.dbnsfp.org/license
+      label: Commercial license (Genos Bioinformatics LLC)
+    name: dbNSFP Commercial Branch
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: dbnsfp
+      - relation_type: prov:hadPrimarySource
+        source: 1000genomes
+      - relation_type: prov:hadPrimarySource
+        source: alphamissense
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: cpdb
+      - relation_type: prov:hadPrimarySource
+        source: dbsnp
+      - relation_type: prov:hadPrimarySource
+        source: ensembl
+      - relation_type: prov:hadPrimarySource
+        source: gencc
+      - relation_type: prov:hadPrimarySource
+        source: gencode
+      - relation_type: prov:hadPrimarySource
+        source: gnomad
+      - relation_type: prov:hadPrimarySource
+        source: go
+      - relation_type: prov:hadPrimarySource
+        source: gwascatalog
+      - relation_type: prov:hadPrimarySource
+        source: hgnc
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: hpa
+      - relation_type: prov:hadPrimarySource
+        source: intact
+      - relation_type: prov:hadPrimarySource
+        source: interpro
+      - relation_type: prov:hadPrimarySource
+        source: kegg
+      - relation_type: prov:hadPrimarySource
+        source: mgi
+      - relation_type: prov:hadPrimarySource
+        source: omim
+      - relation_type: prov:hadPrimarySource
+        source: orphanet
+      - relation_type: prov:hadPrimarySource
+        source: refseq
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+      - relation_type: prov:hadPrimarySource
+        source: ucsc
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
+      - relation_type: prov:hadPrimarySource
+        source: zfin
+    product_url: https://www.dbnsfp.org/license
+  - category: GraphicalInterface
+    description: BioData Catalyst portal, the entry point to the ecosystem's data catalog, data
+      access instructions, analysis platforms and training resources.
+    format: http
+    id: biodata-catalyst.portal
+    name: BioData Catalyst Portal
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://biodatacatalyst.nhlbi.nih.gov/
+  - category: GraphicalInterface
+    description: BDC PIC-SURE (Patient Information Commons Standard Unification of Research
+      Elements) web interface for searching, filtering and exporting harmonized clinical and
+      genomic variables across hosted studies. Open-access studies (such as 1000 Genomes and
+      BioLINCC training data) need no authorization; authorized access to controlled studies
+      requires an approved dbGaP data access request.
+    format: http
+    id: biodata-catalyst.picsure
+    name: BDC PIC-SURE
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+      - relation_type: prov:hadPrimarySource
+        source: 1000genomes
+    product_url: https://picsure.biodatacatalyst.nhlbi.nih.gov/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
+  - category: ProgrammingInterface
+    description: PIC-SURE REST API for programmatic query and export of BDC study variables,
+      used through the PicSureClient and PicSureBdcAdapter Python packages (and an R client)
+      with a personal access token from the PIC-SURE interface.
+    format: http
+    id: biodata-catalyst.picsure-api
+    is_public: false
+    name: BDC PIC-SURE API
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://picsure.biodatacatalyst.nhlbi.nih.gov/picsure/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
+    warnings:
+      - API endpoint returned HTTP 401 Unauthorized for anonymous requests when checked on 2026-10-05;
+        a PIC-SURE access token is required.
+  - category: GraphicalInterface
+    description: BDC Gen3 data commons for browsing study metadata, checking authorized data
+      access and exporting controlled-access TOPMed and other NHLBI study files to the analysis
+      workspaces.
+    format: http
+    id: biodata-catalyst.gen3
+    name: BDC Gen3 Data Commons
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://gen3.biodatacatalyst.nhlbi.nih.gov/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
+  - category: ProcessProduct
+    description: TOPMed Imputation Server, a web service that imputes missing genotypes in user-submitted
+      GWAS data using the TOPMed haplotype reference panel.
+    format: http
+    id: biodata-catalyst.imputation-server
+    name: TOPMed Imputation Server
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://imputation.biodatacatalyst.nhlbi.nih.gov/
+  - category: GraphicalInterface
+    description: Cloud analysis workspaces available within BDC, the Seven Bridges BDC platform
+      (https://platform.sb.biodatacatalyst.nhlbi.nih.gov/) and BDC Terra, where authorized users
+      run workflows, notebooks and genomic tools on hosted data. Both require login.
+    format: http
+    id: biodata-catalyst.analysis-platforms
+    name: BDC Analysis Platforms (Terra and Seven Bridges)
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: biodata-catalyst
+      - relation_type: prov:hadPrimarySource
+        source: topmed
+    product_url: https://terra.biodatacatalyst.nhlbi.nih.gov/
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: dbgap
 publications:
 - authors:
   - Daniel Taliun

@@ -28,6 +28,8 @@ original_source:
   source: omim
 - relation_type: prov:hadPrimarySource
   source: kegg
+- relation_type: prov:hadPrimarySource
+  source: ddbj
 product_url: http://togows.org/help/
 warnings:
 - On 2026-10-03 PDB entry retrieval returned empty results, PDB search returned HTTP

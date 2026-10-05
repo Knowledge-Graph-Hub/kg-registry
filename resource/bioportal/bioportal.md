@@ -296,6 +296,20 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 786637
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
 - category: MappingProduct
@@ -326,8 +340,263 @@ products:
     source: ncbi
   - relation_type: prov:wasInfluencedBy
     source: biolink
+  - relation_type: prov:wasInfluencedBy
+    source: n2t
+  - relation_type: prov:wasInfluencedBy
+    source: identifiers-org
+  - relation_type: prov:wasInfluencedBy
+    source: fairsharing
+  - relation_type: prov:wasInfluencedBy
+    source: re3data
+  - relation_type: prov:wasInfluencedBy
+    source: agroportal
+  - relation_type: prov:wasInfluencedBy
+    source: ecoportal
+  - relation_type: prov:wasInfluencedBy
+    source: aberowl
   product_file_size: 136267
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing agri-food ontologies and
+    semantic artefacts, their metadata, FAIRness scores, and mappings. The former address
+    https://agroportal.lirmm.fr/ redirects here.
+  format: http
+  id: agroportal.portal
+  name: AgroPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://agroportal.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: ProgrammingInterface
+  description: REST API for ontologies, classes, search, mappings, metrics, annotation, and
+    downloads of hosted semantic artefacts. Requests require a free API key, obtained by creating
+    an AgroPortal account. The former address https://data.agroportal.lirmm.fr/ redirects
+    here.
+  format: http
+  id: agroportal.api
+  name: AgroPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://data.agroportal.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: GraphicalInterface
+  description: Annotator service that tags free text with terms from AgroPortal ontologies.
+  format: http
+  id: agroportal.annotator
+  name: AgroPortal Annotator
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://agroportal.eu/annotator
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: DocumentationProduct
+  description: Documentation for the OntoPortal software that AgroPortal runs on, covering
+    installation, administration, and use of OntoPortal-based portals.
+  format: http
+  id: agroportal.ontoportal-docs
+  name: OntoPortal Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agroportal
+  product_url: https://ontoportal.github.io/documentation/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: GraphicalInterface
+  description: Web portal for searching and browsing the AberOWL ontology repository, viewing
+    class hierarchies and metadata, and running DL and SPARQL-rewriting queries.
+  format: http
+  id: aberowl.portal
+  is_public: true
+  name: AberOWL Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aberowl
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  product_url: https://aber-owl.net/
+- category: ProgrammingInterface
+  description: REST API (FastAPI, documented with Swagger UI) for listing ontologies, retrieving
+    classes, full-text search and DL queries (subclass, superclass, equivalent) across the
+    AberOWL repository.
+  format: http
+  id: aberowl.api
+  is_public: true
+  name: AberOWL REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aberowl
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  product_url: https://aber-owl.net/api/docs
+  warnings:
+  - When checked on 2026-10-04, listing, search and statistics endpoints responded, but DL
+    query endpoints (/api/dlquery, /api/dlquery_all) returned "API server is down!".
+- category: Product
+  description: JSON listing of all ontologies in AberOWL with metadata, reasoner status, class
+    counts and relative download URLs for the mirrored OWL files.
+  format: json
+  id: aberowl.ontology-list
+  is_public: true
+  name: AberOWL Ontology Listing
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aberowl
+  - relation_type: prov:hadPrimarySource
+    source: bioportal
+  product_url: https://aber-owl.net/api/listOntologies
+- category: GraphicalInterface
+  description: Web portal for searching, browsing and visualizing ecological ontologies, thesauri
+    and their mappings, with ontology recommender, text annotator and submission of new semantic
+    artefacts.
+  format: http
+  id: ecoportal.portal
+  name: EcoPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecoportal
+  product_url: https://ecoportal.lifewatch.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: ProgrammingInterface
+  description: OntoPortal REST API for EcoPortal ontologies, classes, search, mappings, metrics,
+    annotation and downloads. Requests require an API key, available free with an EcoPortal
+    account.
+  format: http
+  id: ecoportal.api
+  name: EcoPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecoportal
+  product_url: https://data.ecoportal.lifewatch.eu/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: GraphicalInterface
+  description: NCBO BioPortal entry for browsing and searching ECSO
+  format: http
+  id: ecso.bioportal
+  name: ECSO BioPortal Entry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecso
+  product_url: https://bioportal.bioontology.org/ontologies/ECSO
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  warnings:
+  - Page returned HTTP 403 to automated requests when checked on 2026-10-05. The BioPortal
+    REST API still lists the ontology.
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing French biomedical ontologies
+    and terminologies and the mappings between them, with recommender and landscape views.
+  format: http
+  id: sifr-bioportal.portal
+  name: SIFR BioPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sifr-bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://bioportal.lirmm.fr/
+- category: ProgrammingInterface
+  description: OntoPortal REST API for ontologies, classes, search, mappings, metrics, submissions,
+    and the annotator. Endpoints require a free SIFR BioPortal API key.
+  format: http
+  id: sifr-bioportal.api
+  name: SIFR BioPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sifr-bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://data.bioportal.lirmm.fr/
+- category: ProcessProduct
+  description: SIFR Annotator, a semantic annotation service for French biomedical text and
+    clinical notes that tags text with concepts from the ontologies hosted in SIFR BioPortal.
+    It ports the NCBO Annotator to French, adding lemmatization, negation, experiencer and
+    temporality detection, and scoring. Available as a web form and through the REST API (/annotator,
+    API key required).
+  format: http
+  id: sifr-bioportal.annotator
+  name: SIFR Annotator
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sifr-bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://bioportal.lirmm.fr/annotator
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing biodiversity ontologies
+    and semantic artefacts, with mappings, a recommender, and a landscape view of the catalogue.
+  format: http
+  id: biodivportal.portal
+  name: BiodivPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodivportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://biodivportal.gfbio.org/
+- category: ProgrammingInterface
+  description: OntoPortal REST API for artefact metadata, concepts, search, mappings, annotation,
+    recommendation, and downloads. Requests require a BiodivPortal API key, available with
+    a free account.
+  format: http
+  id: biodivportal.api
+  name: BiodivPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biodivportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://data.biodivportal.gfbio.org/
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing Earth and environmental
+    science ontologies and semantic artefacts, with mappings, a recommender, and a landscape
+    view of the catalogue.
+  format: http
+  id: earthportal.portal
+  name: EarthPortal Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: earthportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://earthportal.eu/
+- category: ProgrammingInterface
+  description: OntoPortal REST API for artefact metadata, concepts, search, mappings, annotation,
+    and downloads. Requests require an EarthPortal API key, available with a free account.
+  format: http
+  id: earthportal.api
+  name: EarthPortal REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: earthportal
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://data.earthportal.eu/
+- category: GraphicalInterface
+  description: BioPortal page for OBOE (acronym OBOE), providing browsing, search, and download
+    of the ontology. The latest submission is version 1.2, released 2019-09-17.
+  format: http
+  id: oboe.bioportal
+  name: OBOE on BioPortal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oboe
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://bioportal.bioontology.org/ontologies/OBOE
 publications:
 - authors:
   - Jennifer Vendetti

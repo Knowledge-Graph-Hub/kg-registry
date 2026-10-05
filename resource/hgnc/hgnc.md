@@ -4190,6 +4190,342 @@ products:
     source: genetics-kp
   product_file_size: 2127877
   product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+- category: MappingProduct
+  description: Tab-delimited mapping of GeneReviews chapters (NBK id and short name)
+    to HGNC gene symbols, updated weekly.
+  format: tsv
+  id: genereviews.genes
+  name: GeneReviews to Gene Symbol Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol.txt
+- category: MappingProduct
+  description: Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt
+    accessions, updated weekly.
+  format: tsv
+  id: genereviews.genes-uniprot
+  name: GeneReviews to Gene Symbol and UniProt Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt
+- category: MappingProduct
+  description: Pipe-delimited mapping of GeneReviews short names and NBK ids to gene
+    symbols and disease names, without a header row, updated weekly.
+  format: txt
+  id: genereviews.genes-diseases
+  name: GeneReviews Gene and Disease Name Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRshortname_NBKid_genesymbol_dzname.txt
+- category: Product
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
+    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
+    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
+    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
+    GB and 46.7 GB) are also split into parts.
+  format: json
+  id: babel.compendia
+  latest_version: 2026jul22
+  name: Babel Compendia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: babel
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: meddra
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: GraphicalInterface
+  description: Sugi Atlas web site with search and one static reference page per human gene,
+    drug and disease (for example /atlas/gene/TP53/). Each page also has a Markdown version
+    at index.md and embeds a schema.org JSON-LD record.
+  format: http
+  id: sugi-atlas.portal
+  name: Sugi Atlas Web Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sugi-atlas
+  - relation_type: prov:wasDerivedFrom
+    source: biobtree
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: chembl
+  product_url: https://sugi.bio/atlas/
+- category: Product
+  compression: zip
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
+    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
+    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
+    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
+    upstream scores that are free for academic use. Free for academic and non-commercial users
+    after registration with an institutional email; download links are issued on request.
+  format: tsv
+  id: dbnsfp.academic
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/4.0/
+    label: CC BY-NC-ND 4.0
+  name: dbNSFP Academic Branch
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://www.dbnsfp.org/download
+- category: Product
+  compression: zip
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
+    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
+    and RGC Million Exome data, whose authors require separate commercial licenses. Available
+    to subscribers under a paid license from Genos Bioinformatics.
+  format: tsv
+  id: dbnsfp.commercial
+  license:
+    id: https://www.dbnsfp.org/license
+    label: Commercial license (Genos Bioinformatics LLC)
+  name: dbNSFP Commercial Branch
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbnsfp
+  - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: topmed
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://www.dbnsfp.org/license
+- category: ProgrammingInterface
+  description: SPARQL endpoint for the primary RDF Portal datasets, mostly from Japanese projects
+    and partner databases (for example BacDive, BRENDA, GlyTouCan, GTDB, HGNC, HomoloGene,
+    ICGC, jPOST, MediaDive, NANDO, PubCaseFinder and TogoID).
+  format: http
+  id: rdf-portal.sparql.primary
+  name: RDF Portal Primary SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdf-portal
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: brenda
+  - relation_type: prov:wasDerivedFrom
+    source: glytoucan
+  - relation_type: prov:wasDerivedFrom
+    source: gtdb
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: homologene
+  - relation_type: prov:wasDerivedFrom
+    source: icgc
+  - relation_type: prov:wasDerivedFrom
+    source: mediadive
+  - relation_type: prov:wasDerivedFrom
+    source: jpost
+  product_url: https://rdfportal.org/primary/sparql
 publications:
 - authors:
   - Seal RL
