@@ -202,7 +202,23 @@ products:
     source: pubmed
   - relation_type: prov:wasInformedBy
     source: biothings-explorer
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: ProcessProduct
+  description: Source code of the MyGene.info web service and its data plugins, built with
+    the BioThings SDK.
+  format: python
+  id: mygene.code
+  name: MyGene.info Source Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:wasInfluencedBy
+    source: biothings
+  product_url: https://github.com/biothings/mygene.info
 publications:
 - authors:
   - Sebastien Lelong

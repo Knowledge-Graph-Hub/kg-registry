@@ -37,6 +37,10 @@ products:
         relation_type: prov:hadPrimarySource
       - source: gtopdb
         relation_type: prov:hadPrimarySource
+      - source: nci60
+        relation_type: prov:hadPrimarySource
+      - source: human-proteome-map
+        relation_type: prov:hadPrimarySource
     product_file_size: 7261526
     product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
 synonyms:

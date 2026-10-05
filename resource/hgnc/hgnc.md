@@ -4190,6 +4190,44 @@ products:
     source: genetics-kp
   product_file_size: 2127877
   product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+- category: MappingProduct
+  description: Tab-delimited mapping of GeneReviews chapters (NBK id and short name)
+    to HGNC gene symbols, updated weekly.
+  format: tsv
+  id: genereviews.genes
+  name: GeneReviews to Gene Symbol Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol.txt
+- category: MappingProduct
+  description: Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt
+    accessions, updated weekly.
+  format: tsv
+  id: genereviews.genes-uniprot
+  name: GeneReviews to Gene Symbol and UniProt Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt
+- category: MappingProduct
+  description: Pipe-delimited mapping of GeneReviews short names and NBK ids to gene
+    symbols and disease names, without a header row, updated weekly.
+  format: txt
+  id: genereviews.genes-diseases
+  name: GeneReviews Gene and Disease Name Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genereviews
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRshortname_NBKid_genesymbol_dzname.txt
 publications:
 - authors:
   - Seal RL

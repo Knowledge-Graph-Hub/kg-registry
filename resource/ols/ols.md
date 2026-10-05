@@ -214,6 +214,10 @@ products:
     source: pubmed
   - relation_type: prov:wasInformedBy
     source: biothings-explorer
+  - relation_type: prov:hadPrimarySource
+    source: mygene
+  - relation_type: prov:hadPrimarySource
+    source: mychem
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: Product
   description: Full Bioregistry export as JSON, with every prefix record including

@@ -3764,6 +3764,15 @@ entries:
     status: warning
     warnings:
     - DOI:10.1038/s41592-024-02497-x has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1038_s41592-024-02497-x.md
+  resource/human-proteome-map/human-proteome-map.md#publication[0]#DOI:10.1038/nature13302:
+    checked_at: '2026-10-04T17:31:18Z'
+    errors: []
+    fingerprint: 238b785a3ad1c3972c7bed7259dd2606fccce78666df1dd31a1d5adbcd2087cd
+    publication_index: 0
+    reference_id: DOI:10.1038/nature13302
+    source_path: resource/human-proteome-map/human-proteome-map.md
+    status: valid
+    warnings: []
   resource/humancyc/humancyc.md#publication[0]#DOI:10.1186/gb-2004-6-1-r2:
     checked_at: '2026-08-06T18:17:45Z'
     errors: []
@@ -5328,6 +5337,33 @@ entries:
     source_path: resource/myaura/myaura.md
     status: valid
     warnings: []
+  resource/mychem/mychem.md#publication[0]#DOI:10.1093/bioinformatics/btac017:
+    checked_at: '2026-10-04T17:29:07Z'
+    errors: []
+    fingerprint: 85ab05d0f14595af4c195bae4df06342fa294fd91ad5a8e2d0f0fc330ace0c95
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btac017
+    source_path: resource/mychem/mychem.md
+    status: valid
+    warnings: []
+  resource/mygene/mygene.md#publication[0]#DOI:10.1186/s13059-016-0953-9:
+    checked_at: '2026-10-04T17:31:20Z'
+    errors: []
+    fingerprint: b6eb2bbdbf9e25d7d933e8d220936b4237d6718ed718cbc47454b18aba3e9006
+    publication_index: 0
+    reference_id: DOI:10.1186/s13059-016-0953-9
+    source_path: resource/mygene/mygene.md
+    status: valid
+    warnings: []
+  resource/mygene/mygene.md#publication[1]#DOI:10.1093/nar/gks1114:
+    checked_at: '2026-10-04T17:31:31Z'
+    errors: []
+    fingerprint: dddf6f4d3d03518644eeb4de01a2b98cff6cc61b3ca961a867eccbd634dc78b9
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gks1114
+    source_path: resource/mygene/mygene.md
+    status: valid
+    warnings: []
   resource/nanopublications/nanopublications.md#publication[0]#DOI:10.3233/ds-170010:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5399,6 +5435,15 @@ entries:
     publication_index: 0
     reference_id: PMID:32761142
     source_path: resource/ncbitaxon/ncbitaxon.md
+    status: valid
+    warnings: []
+  resource/nci60/nci60.md#publication[0]#DOI:10.1038/nrc1951:
+    checked_at: '2026-10-04T17:31:19Z'
+    errors: []
+    fingerprint: b5c9d28f46009f4cbfc331320470ab6abac24088a7a615d9329849a239047617
+    publication_index: 0
+    reference_id: DOI:10.1038/nrc1951
+    source_path: resource/nci60/nci60.md
     status: valid
     warnings: []
   resource/ncit/ncit.md#publication[0]#PMID:16697710:

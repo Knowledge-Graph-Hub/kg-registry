@@ -1612,8 +1612,29 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: nci60
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
   product_file_size: 7261526
   product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
+- category: GraphicalInterface
+  description: Expression browser data and source code showing tissue-specific expression
+    of dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide
+    comparisons. The hosted Shiny application formerly at expression.darkkinome.org
+    has been retired; the underlying data and code remain available in this GitHub
+    repository.
+  format: http
+  id: darkkinasekb.expression
+  name: DKK Expression Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  product_url: https://github.com/IDG-Kinase/kinase_expression
 publications:
 - authors:
   - François Aguet
