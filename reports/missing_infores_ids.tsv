@@ -62,6 +62,7 @@ biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resourc
 biomarker	BiomarkerKB	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarker/biomarker.md
 biomarkerkg	BiomarkerKB KG	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarkerkg/biomarkerkg.md
 biomuta	BioMuta	DataSource	https://hivelab.biochemistry.gwu.edu/biomuta	resource/biomuta/biomuta.md
+bioregistry	Bioregistry	Aggregator	https://bioregistry.io/	resource/bioregistry/bioregistry.md
 biostudies	BioStudies	DataSource	https://www.ebi.ac.uk/biostudies/	resource/biostudies/biostudies.md
 bioteque	Bioteque	KnowledgeGraph	https://bioteque.irbbarcelona.org/	resource/bioteque/bioteque.md
 biothings	BioThings	DataSource	https://biothings.io/	resource/biothings/biothings.md
@@ -344,6 +345,7 @@ iconclass	ICONCLASS	DataSource	https://iconclass.org/	resource/iconclass/iconcla
 identifier-mappings	ID Mappings	KnowledgeGraph	https://www.wikidata.org/	resource/identifier-mappings/identifier-mappings.md
 ido	Infectious Disease Ontology	Ontology	http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology	resource/ido/ido.md
 idomal	Malaria Ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/idomal/idomal.md
+iedison	iEdison	DataSource	https://www.nist.gov/iedison	resource/iedison/iedison.md
 iev	Event (INOH pathway ontology)	Ontology	http://www.inoh.org	resource/iev/iev.md
 iid	Integrated Interactions Database	DataSource	https://iid.ophid.utoronto.ca/	resource/iid/iid.md
 iidp	Integrated Islet Distribution Program (IIDP)	DataSource	https://iidp.coh.org/	resource/iidp/iidp.md
@@ -482,6 +484,7 @@ nif_cell	NIF Cell	Ontology	http://neuinfo.org/	resource/nif_cell/nif_cell.md
 nif_dysfunction	NIF Dysfunction	Ontology	http://neuinfo.org/	resource/nif_dysfunction/nif_dysfunction.md
 nif_grossanatomy	NIF Gross Anatomy	Ontology	http://neuinfo.org/	resource/nif_grossanatomy/nif_grossanatomy.md
 nifc	National Interagency Fire Center Open Data	DataSource	https://data-nifc.opendata.arcgis.com/	resource/nifc/nifc.md
+nih-era	NIH eRA (electronic Research Administration)	DataSource	https://www.era.nih.gov/	resource/nih-era/nih-era.md
 nihreporter	NIH Reporter	DataSource	https://reporter.nih.gov/	resource/nihreporter/nihreporter.md
 nij	National Institute of Justice	DataSource	https://nij.ojp.gov/	resource/nij/nij.md
 nikg	Neighborhood Information KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/neighborhood-kg/	resource/nikg/nikg.md
@@ -509,6 +512,7 @@ obi	Ontology for Biomedical Investigations	Ontology	http://obi-ontology.org	reso
 obib	Ontology for Biobanking	Ontology	https://github.com/biobanking/biobanking	resource/obib/obib.md
 obo-db-ingest	OBO Database Ingestion	Aggregator	https://biopragmatics.github.io/obo-db-ingest/	resource/obo-db-ingest/obo-db-ingest.md
 obo_rel	OBO relationship types (legacy)	Ontology	http://www.obofoundry.org/ro	resource/obo_rel/obo_rel.md
+obofoundry	OBO Foundry	Aggregator	https://obofoundry.org/	resource/obofoundry/obofoundry.md
 occo	Occupation Ontology	Ontology	https://github.com/Occupation-Ontology/OccO	resource/occo/occo.md
 offsides	OFFSIDES	DataSource	http://tatonettilab.org/offsides/	resource/offsides/offsides.md
 ogg	The Ontology of Genes and Genomes	Ontology	https://bitbucket.org/hegroup/ogg	resource/ogg/ogg.md

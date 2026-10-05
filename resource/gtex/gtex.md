@@ -22,7 +22,7 @@ domains:
 homepage_url: https://www.gtexportal.org/home/
 id: gtex
 infores_id: gtex
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gtexportal.org/home/license
@@ -77,6 +77,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gtex
   product_url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: dbgap
 - category: GraphProduct
   description: GTEx Automat
   format: kgx-jsonl

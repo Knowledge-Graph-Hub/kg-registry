@@ -29,7 +29,15 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: lincs
 - relation_type: prov:hadPrimarySource
-  source: pride
+  source: metabolights
+- relation_type: prov:hadPrimarySource
+  source: ega
+- relation_type: prov:hadPrimarySource
+  source: dbgap
+- relation_type: prov:hadPrimarySource
+  source: peptideatlas
+- relation_type: prov:hadPrimarySource
+  source: biomodels
 product_url: https://www.omicsdi.org/
 layout: product_detail
 ---

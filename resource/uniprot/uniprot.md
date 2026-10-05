@@ -3573,6 +3573,8 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 500 error
+    when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
     entries, proteomics evidence, variants, expression, interactions, localization,
@@ -4584,12 +4586,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
   format: kgx-jsonl
@@ -4612,6 +4616,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 130
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
 - category: GraphProduct
@@ -4636,6 +4642,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 - category: GraphProduct
@@ -4660,6 +4668,8 @@ products:
     source: cosmic
   - relation_type: prov:hadPrimarySource
     source: medlineplus
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 - category: GraphProduct
@@ -5781,6 +5791,66 @@ products:
   - relation_type: prov:hadPrimarySource
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: Product
+  description: Full Bioregistry export as JSON, with every prefix record including
+    names, synonyms, URI formats, local identifier patterns, providers and mappings
+    to the prefixes of other registries.
+  format: json
+  id: bioregistry.registry.json
+  name: Bioregistry JSON Export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioregistry
+  - relation_type: prov:wasInfluencedBy
+    source: obofoundry
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: ols
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: cellosaurus
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  - relation_type: prov:wasInfluencedBy
+    source: biolink
+  product_file_size: 786637
+  product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.json
+- category: MappingProduct
+  description: SSSOM mappings between Bioregistry prefixes and the equivalent prefixes
+    in other registries, such as OBO Foundry, BioPortal, OLS, Wikidata, the Gene Ontology
+    registry, Cellosaurus, UniProt and NCBI.
+  format: sssom
+  id: bioregistry.sssom
+  name: Bioregistry SSSOM Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bioregistry
+  - relation_type: prov:wasInfluencedBy
+    source: obofoundry
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  - relation_type: prov:wasInfluencedBy
+    source: ols
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+  - relation_type: prov:wasInfluencedBy
+    source: go
+  - relation_type: prov:wasInfluencedBy
+    source: cellosaurus
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: ncbi
+  - relation_type: prov:wasInfluencedBy
+    source: biolink
+  product_file_size: 136267
+  product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 publications:
 - authors:
   - Alex Bateman
