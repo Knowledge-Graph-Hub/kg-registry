@@ -504,6 +504,8 @@ products:
     source: ctkp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:wasInfluencedBy
+    source: node-normalizer
   product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
   versions:
   - '2026_03_27'
@@ -1398,6 +1400,8 @@ products:
     source: nihreporter
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/clinicalstudies
 - category: GraphicalInterface
   description: Web portal for searching clinical studies and their data objects by

@@ -37,6 +37,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/
 - category: Product
   compression: zip
@@ -47,6 +49,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/projects
 - category: ProgrammingInterface
   description: Public REST API (no key required) returning JSON for searching projects
@@ -57,6 +61,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://api.reporter.nih.gov/
 - category: Product
   compression: zip
@@ -67,6 +73,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/abstracts
 - category: Product
   description: Database of patents linked to NIH-funded research projects
@@ -76,6 +84,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
+  - relation_type: prov:wasDerivedFrom
+    source: iedison
   product_url: https://reporter.nih.gov/exporter/patents
 - category: Product
   description: Database of clinical studies linked to NIH-funded research projects
@@ -87,6 +99,8 @@ products:
     source: nihreporter
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/clinicalstudies
 - category: Product
   compression: zip
@@ -101,6 +115,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/publications
 - category: Product
   description: Database of publication link tables for NIH-funded research projects
@@ -114,6 +130,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/linktables
 - category: Product
   compression: zip
@@ -125,6 +143,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
+  - relation_type: prov:wasDerivedFrom
+    source: nih-era
   product_url: https://reporter.nih.gov/exporter/crisp
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
@@ -351,6 +371,19 @@ products:
     source: nihreporter
   product_file_size: 81463463
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json.gz
+- category: DocumentationProduct
+  description: Description of the eRA reporting and analytics modules, including the
+    public RePORT and RePORTER tools and the internal QVR, SPIRES and iRePORT modules
+    built on IMPAC II data.
+  format: http
+  id: nih-era.reporting-docs
+  name: eRA Reporting and Analytics Modules
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nih-era
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics
 taxon:
 - NCBITaxon:9606
 ---

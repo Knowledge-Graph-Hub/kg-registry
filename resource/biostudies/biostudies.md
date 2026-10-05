@@ -149,6 +149,16 @@ products:
   - relation_type: prov:hadPrimarySource
     source: lincs
   - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: ega
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: biomodels
+  - relation_type: prov:hadPrimarySource
     source: gpmdb
   - relation_type: prov:hadPrimarySource
     source: cellcollective
@@ -190,6 +200,16 @@ products:
     source: paxdb
   - relation_type: prov:hadPrimarySource
     source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: metabolights
+  - relation_type: prov:hadPrimarySource
+    source: ega
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: peptideatlas
+  - relation_type: prov:hadPrimarySource
+    source: biomodels
   - relation_type: prov:hadPrimarySource
     source: gpmdb
   - relation_type: prov:hadPrimarySource

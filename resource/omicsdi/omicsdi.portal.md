@@ -29,15 +29,15 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: lincs
 - relation_type: prov:hadPrimarySource
-  source: gpmdb
+  source: metabolights
 - relation_type: prov:hadPrimarySource
-  source: cellcollective
+  source: ega
 - relation_type: prov:hadPrimarySource
-  source: ecrin-mdr
+  source: dbgap
 - relation_type: prov:hadPrimarySource
-  source: panorama-public
+  source: peptideatlas
 - relation_type: prov:hadPrimarySource
-  source: physiome-model-repository
+  source: biomodels
 product_url: https://www.omicsdi.org/
 layout: product_detail
 ---
