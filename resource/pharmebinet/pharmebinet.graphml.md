@@ -1,16 +1,17 @@
 ---
 category: GraphProduct
 compression: zip
-description: PharMeBINet V2 GraphML release published on February 6, 2024.
+description: PharMeBINet V3 GraphML release (Zenodo version published July 9, 2026;
+  files dated 2026-07-06).
 format: mixed
 id: pharmebinet.graphml
-latest_version: v2
+latest_version: v3
 name: PharMeBINet GraphML Release
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pharmebinet
-product_file_size: 2027519087
-product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+product_file_size: 4084011877
+product_url: https://zenodo.org/api/records/21276722/files/PharMeBiNet_graphml_26_07_06.zip/content
 secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: adrecs
