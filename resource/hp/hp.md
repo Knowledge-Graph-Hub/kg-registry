@@ -3409,17 +3409,18 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: bio2rdf
 - category: GraphProduct
-  compression: gzip
-  description: PharMeBINet V2 JSON release published on February 6, 2024.
+  compression: zip
+  description: PharMeBINet V3 JSON release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: json
   id: pharmebinet.json
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet JSON Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1942958027
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+  product_file_size: 3666110270
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_json_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -3525,16 +3526,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 TSV release published on February 6, 2024.
+  description: PharMeBINet V3 TSV release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: tsv
   id: pharmebinet.tsv
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet TSV Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1922614551
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+  product_file_size: 3772040437
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_tsv_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -3640,16 +3642,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 GraphML release published on February 6, 2024.
+  description: PharMeBINet V3 GraphML release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: mixed
   id: pharmebinet.graphml
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet GraphML Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 2027519087
-  product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+  product_file_size: 4084011877
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBiNet_graphml_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -3755,16 +3758,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j database release (Zenodo version published July
+    9, 2026; files dated 2026-07-06).
   format: neo4j
   id: pharmebinet.neo4j
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Database
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3847978577
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+  product_file_size: 8316655668
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -3870,17 +3874,18 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j dump release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j dump release (Zenodo version published July 9,
+    2026; files dated 2026-07-06).
   dump_format: neo4j
   format: neo4j
   id: pharmebinet.neo4j.dump
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Dump
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3598325722
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+  product_file_size: 8039662464
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_dump_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -6349,6 +6354,183 @@ products:
     source: omim
   product_file_size: 1921927
   product_url: https://raw.githubusercontent.com/bio-ontology-research-group/pavs-knowledge-graph/master/data/PAVS_phenopackets.json
+- category: GraphProduct
+  compression: zip
+  description: Data Distillery HGNC-HPO subgraph (build of 2024-09-20) as CSV node
+    and edge files. HGNC gene node mapping to Human Phenotype Ontology.
+  format: csv
+  id: cfde-ddkg.hgnchpo
+  name: DDKG HGNC-HPO Subgraph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  product_file_size: 15167322
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/HGNCHPO.zip
+- category: GraphProduct
+  description: Gene to birth defect phenotype associations from the Human Phenotype
+    Ontology (5,152 nodes, 125,458 edges).
+  format: json
+  id: reprotox-kg.graph.hpo
+  name: ReproTox-KG HPO Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  product_file_size: 50847638
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/hpo.valid.json
+- category: GraphProduct
+  description: Birth defect phenotype to drug associations from DrugShot literature
+    co-mentions (2,802 nodes, 12,502 edges).
+  format: json
+  id: reprotox-kg.graph.drugshot-hpo
+  name: ReproTox-KG DrugShot HPO-Drug Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 8941255
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
+- category: GraphProduct
+  description: Birth defect phenotype to gene associations from GeneShot literature
+    co-mentions (6,064 nodes, 13,487 edges).
+  format: json
+  id: reprotox-kg.graph.geneshot-hpo
+  name: ReproTox-KG GeneShot HPO-Gene Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 7214043
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  format: http
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: atc
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: epa-ucmr
+  - relation_type: prov:hadPrimarySource
+    source: fideo
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  - relation_type: prov:hadPrimarySource
+    source: ghr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: metacyc
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: protcid
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: spoke
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: who
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 publications:
 - authors:
   - Robinson PN

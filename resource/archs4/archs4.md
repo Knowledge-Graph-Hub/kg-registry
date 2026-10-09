@@ -281,6 +281,35 @@ products:
     source: kg-jensenlab-diseases
   product_file_size: 522141103
   product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
+- category: GraphProduct
+  compression: zip
+  description: Data Distillery ARCHS4 subgraph (build of 2024-09-20) as CSV node and
+    edge files. Coexpression Matrix based on Human RNA-seq studies from GEO.
+  format: csv
+  id: cfde-ddkg.archs4
+  name: DDKG ARCHS4 Subgraph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_file_size: 11358770
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/ARCHS4.zip
+- category: GraphProduct
+  description: Gene-gene positive and negative coexpression edges from ARCHS4 (17,964
+    nodes, 170,801 edges).
+  format: json
+  id: reprotox-kg.graph.archs4
+  name: ReproTox-KG ARCHS4 Coexpression Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  product_file_size: 93780518
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/archs4_coexpression.valid.json
 publications:
 - authors:
   - Lachmann A

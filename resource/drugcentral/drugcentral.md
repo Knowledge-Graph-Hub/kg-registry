@@ -52,11 +52,17 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: atc
+  - relation_type: prov:hadPrimarySource
     source: bgee
   - relation_type: prov:hadPrimarySource
     source: bindingdb
   - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
     source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -66,6 +72,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
     source: doid
@@ -74,15 +84,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: epa-ucmr
+  - relation_type: prov:hadPrimarySource
+    source: fideo
+  - relation_type: prov:hadPrimarySource
     source: foodb
   - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
     source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  - relation_type: prov:hadPrimarySource
+    source: ghr
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
     source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: interpro
   - relation_type: prov:hadPrimarySource
@@ -94,13 +120,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
     source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
     source: omim
   - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
     source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
@@ -116,11 +150,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: spoke
   - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://spoke.ucsf.edu/data-tools
@@ -906,17 +944,18 @@ products:
     source: drugcentral
   product_url: https://het.io/search
 - category: GraphProduct
-  compression: gzip
-  description: PharMeBINet V2 JSON release published on February 6, 2024.
+  compression: zip
+  description: PharMeBINet V3 JSON release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: json
   id: pharmebinet.json
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet JSON Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1942958027
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+  product_file_size: 3666110270
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_json_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -1022,16 +1061,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 TSV release published on February 6, 2024.
+  description: PharMeBINet V3 TSV release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: tsv
   id: pharmebinet.tsv
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet TSV Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1922614551
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+  product_file_size: 3772040437
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_tsv_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -1137,16 +1177,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 GraphML release published on February 6, 2024.
+  description: PharMeBINet V3 GraphML release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: mixed
   id: pharmebinet.graphml
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet GraphML Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 2027519087
-  product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+  product_file_size: 4084011877
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBiNet_graphml_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -1252,16 +1293,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j database release (Zenodo version published July
+    9, 2026; files dated 2026-07-06).
   format: neo4j
   id: pharmebinet.neo4j
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Database
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3847978577
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+  product_file_size: 8316655668
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -1367,17 +1409,18 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j dump release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j dump release (Zenodo version published July 9,
+    2026; files dated 2026-07-06).
   dump_format: neo4j
   format: neo4j
   id: pharmebinet.neo4j.dump
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Dump
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3598325722
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+  product_file_size: 8039662464
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_dump_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs

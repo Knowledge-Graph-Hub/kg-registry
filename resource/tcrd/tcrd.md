@@ -420,6 +420,33 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: hubmap
+- category: GraphProduct
+  compression: zip
+  description: Data Distillery IDG subgraph (build of 2024-09-20) as CSV node and
+    edge files. Relationships between compounds, diseases, and proteins.
+  format: csv
+  id: cfde-ddkg.idg
+  name: DDKG IDG Subgraph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  product_file_size: 29239738
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/IDG.zip
+- category: GraphProduct
+  description: Drug-target edges from the Illuminating the Druggable Genome program
+    (2,395 nodes, 7,326 edges).
+  format: json
+  id: reprotox-kg.graph.idg
+  name: ReproTox-KG IDG Drug Target Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  product_file_size: 6380321
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/idg_drug_targets.valid.json
 publications:
 - authors:
   - Timothy K Sheils

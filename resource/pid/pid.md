@@ -60,11 +60,17 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: atc
+  - relation_type: prov:hadPrimarySource
     source: bgee
   - relation_type: prov:hadPrimarySource
     source: bindingdb
   - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
     source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -74,6 +80,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
     source: doid
@@ -82,15 +92,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: epa-ucmr
+  - relation_type: prov:hadPrimarySource
+    source: fideo
+  - relation_type: prov:hadPrimarySource
     source: foodb
   - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
     source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  - relation_type: prov:hadPrimarySource
+    source: ghr
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
     source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: interpro
   - relation_type: prov:hadPrimarySource
@@ -102,13 +128,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
     source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
     source: omim
   - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
     source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
@@ -124,11 +158,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: spoke
   - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://spoke.ucsf.edu/data-tools

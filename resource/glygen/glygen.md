@@ -1011,6 +1011,20 @@ products:
     source: wikidata
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: Data Distillery GlyGen subgraph (build of 2024-09-20) as CSV node and
+    edge files. Associations from multiple glycomics database.
+  format: csv
+  id: cfde-ddkg.glygen
+  name: DDKG GlyGen Subgraph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  product_file_size: 43798093
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/GlyGen.zip
 publications:
 - authors:
   - William S York

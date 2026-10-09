@@ -833,11 +833,12 @@ products:
     source: pubchem
   product_url: https://maayanlab.cloud/reprotox-kg
 - category: Product
-  description: Data and content assets published with ReproTox-KG (markdown and supporting
-    materials).
+  description: Downloads page listing the ReproTox-KG graph serializations and supporting
+    tables (gene susceptibility scores, predicted placental crossing, birth defect
+    frequencies, phenotype lists, and topology measures).
   format: http
   id: reprotox-kg.data
-  name: ReproTox-KG Data Assets
+  name: ReproTox-KG Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reprotox-kg
@@ -845,7 +846,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pubchem
-  product_url: https://github.com/MaayanLab/Reprotox-KG/tree/main/markdown
+  product_url: https://maayanlab.cloud/reprotox-kg/downloads
 - category: ProcessProduct
   description: Source data directory used for SuppKG in the SemRep_DS repository.
   format: http
@@ -878,17 +879,18 @@ products:
   product_file_size: 78600
   product_url: https://zenodo.org/records/4244313/files/chebi_to_mesh.csv
 - category: GraphProduct
-  compression: gzip
-  description: PharMeBINet V2 JSON release published on February 6, 2024.
+  compression: zip
+  description: PharMeBINet V3 JSON release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: json
   id: pharmebinet.json
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet JSON Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1942958027
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+  product_file_size: 3666110270
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_json_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -994,16 +996,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 TSV release published on February 6, 2024.
+  description: PharMeBINet V3 TSV release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: tsv
   id: pharmebinet.tsv
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet TSV Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1922614551
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+  product_file_size: 3772040437
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_tsv_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -1109,16 +1112,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 GraphML release published on February 6, 2024.
+  description: PharMeBINet V3 GraphML release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: mixed
   id: pharmebinet.graphml
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet GraphML Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 2027519087
-  product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+  product_file_size: 4084011877
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBiNet_graphml_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -1224,16 +1228,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j database release (Zenodo version published July
+    9, 2026; files dated 2026-07-06).
   format: neo4j
   id: pharmebinet.neo4j
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Database
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3847978577
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+  product_file_size: 8316655668
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -1339,17 +1344,18 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j dump release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j dump release (Zenodo version published July 9,
+    2026; files dated 2026-07-06).
   dump_format: neo4j
   format: neo4j
   id: pharmebinet.neo4j.dump
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Dump
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3598325722
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+  product_file_size: 8039662464
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_dump_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
