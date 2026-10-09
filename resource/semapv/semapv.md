@@ -14,6 +14,12 @@ contacts:
     value: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: cthoyt
+  label: Charles Tapley Hoyt
+  orcid: 0000-0003-4423-4370
 creation_date: '2025-12-03T00:00:00Z'
 description: The Semantic Mapping Vocabulary (SEMAPV) is a vocabulary for describing
   the processes, entities, and agents involved in the curation of semantic mappings
@@ -25,7 +31,7 @@ domains:
 - general
 homepage_url: https://mapping-commons.github.io/semantic-mapping-vocabulary/
 id: semapv
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-10-09T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -220,6 +226,66 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
+- category: OntologyProduct
+  description: The full SEMAPV vocabulary in OWL (RDF/XML) format, merged from
+    its terms and properties modules.
+  format: owl
+  id: semapv.owl
+  name: SEMAPV OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: semapv
+  product_file_size: 50655
+  product_url: https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv.owl
+- category: OntologyProduct
+  description: ROBOT template defining the SEMAPV classes and individuals, such
+    as matching processes and mapping justifications.
+  format: tsv
+  id: semapv.terms.tsv
+  name: SEMAPV Terms Template
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: semapv
+  product_file_size: 17968
+  product_url: https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv-terms.tsv
+- category: OntologyProduct
+  description: ROBOT template defining the SEMAPV properties.
+  format: tsv
+  id: semapv.properties.tsv
+  name: SEMAPV Properties Template
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: semapv
+  product_file_size: 4048
+  product_url: https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv-properties.tsv
+- category: DocumentationProduct
+  description: Generated HTML documentation for the SEMAPV terms and properties.
+  format: http
+  id: semapv.docs
+  name: SEMAPV Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: semapv
+  product_url: https://mapping-commons.github.io/semantic-mapping-vocabulary/
+publications:
+- authors:
+  - Nicolas Matentzoglu
+  - Joe Flack
+  - John Graybeal
+  - Nomi L. Harris
+  - Harshad B. Hegde
+  - Charles T. Hoyt
+  - Hyeongsik Kim
+  - Sabrina Toro
+  - Nicole Vasilevsky
+  - Christopher J. Mungall
+  doi: 10.5281/zenodo.7672104
+  id: doi:10.5281/zenodo.7672104
+  journal: CEUR Workshop Proceedings
+  preferred: true
+  title: 'A Simple Standard for Ontological Mappings 2022: Updates of data model
+    and outlook'
+  year: '2022'
 repository: https://github.com/mapping-commons/semantic-mapping-vocabulary
 synonyms:
 - SEMAPV
