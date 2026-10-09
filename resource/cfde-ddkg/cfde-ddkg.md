@@ -339,50 +339,50 @@ products:
     product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/minio/Dictionary/DataDistilleryDataDictionary0228.html
 publications:
   - authors:
-      - Mohseni Ahooyi T
-      - Stear B
-      - Simmons JA
-      - Metzger VT
-      - Kumar P
-      - Evangelista JE
-      - Clarke DJB
-      - Xie Z
-      - Kim H
-      - Jenkins SL
-      - Maurya MR
-      - Ramachandran S
-      - Fahy E
-      - Imam FT
-      - Kokash N
-      - Roth ME
-      - Fullem R
-      - Jevtic D
-      - Mihajlovic A
-      - Tiemeyer M
-      - Gillespie TH
-      - Bakker C
-      - Schroeder AJ
-      - Markowski J
-      - Nedzel J
-      - Hill DD
-      - Terry J
-      - Nemarich C
-      - Boline J
-      - Park P
-      - Ardlie KG
-      - Vora J
-      - Mazumder R
-      - Ranzinger R
-      - de Bono B
-      - Subramaniam S
-      - Grethe JS
-      - Yang JJ
-      - Lambert CG
-      - Resnick A
-      - Milosavljevic A
-      - "Ma'ayan A"
-      - Silverstein JC
-      - Taylor DM
+      - Taha Mohseni Ahooyi
+      - Benjamin Stear
+      - J. Alan Simmons
+      - Vincent T. Metzger
+      - Praveen Kumar
+      - John Erol Evangelista
+      - Daniel J. B. Clarke
+      - Zhuorui Xie
+      - Heesu Kim
+      - Sherry L. Jenkins
+      - Mano R. Maurya
+      - Srinivasan Ramachandran
+      - Eoin Fahy
+      - Thomas H. Gillespie
+      - Fahim T. Imam
+      - Natallia Kokash
+      - Matthew E. Roth
+      - Robert Fullem
+      - Dubravka Jevtic
+      - Aleks Mihajlovic
+      - Michael Tiemeyer
+      - Clara Bakker
+      - Andrew J. Schroeder
+      - Julia Markowski
+      - Jared Nedzel
+      - Dave D. Hill
+      - James Terry
+      - Christopher Nemarich
+      - Jyl Boline
+      - Peter J. Park
+      - Kristin G. Ardlie
+      - Jeet Vora
+      - Raja Mazumder
+      - Rene Ranzinger
+      - Bernard de Bono
+      - Shankar Subramaniam
+      - Jeffrey S. Grethe
+      - Jeremy J. Yang
+      - Christophe G. Lambert
+      - Adam Resnick
+      - Aleks Milosavljevic
+      - Avi Ma’ayan
+      - Jonathan C. Silverstein
+      - Deanne M. Taylor
     doi: 10.1101/2025.08.11.666099
     id: doi:10.1101/2025.08.11.666099
     journal: bioRxiv
