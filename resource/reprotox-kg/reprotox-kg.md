@@ -21,6 +21,20 @@ homepage_url: https://maayanlab.cloud/reprotox-kg
 id: reprotox-kg
 last_modified_date: '2026-10-09T00:00:00Z'
 layout: resource_detail
+license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (no derivatives) among its sources: hp. Not accounted for, no known license:
+    faers, lincs-l1000.'
+  id: https://hpo.jax.org/app/license
+  inferred_from:
+  - hp
+  label: HPO License (free for any use with attribution and version display; content
+    may not be altered)
+  restrictiveness: no derivatives
+  status: inferred
+  unresolved_sources:
+  - faers
+  - lincs-l1000
 name: ReproTox-KG
 products:
 - category: GraphicalInterface

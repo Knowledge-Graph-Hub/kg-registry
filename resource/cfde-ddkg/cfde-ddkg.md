@@ -28,15 +28,24 @@ last_modified_date: '2026-10-09T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (custom) among its sources: ubkg, umls.'
-  id: https://uts.nlm.nih.gov/uts/
+    license (custom) among its sources: 4dn, gtex, msigdb, ubkg, umls. Not accounted
+    for, no known license: gene-expression-omnibus, kidsfirst, lincs, mw, sckan.'
+  id: https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal
   inferred_from:
+  - 4dn
+  - gtex
+  - msigdb
   - ubkg
   - umls
-  label: UMLS License (free for individuals)
+  label: Varies
   restrictiveness: custom
   status: inferred
-  unresolved_sources: []
+  unresolved_sources:
+  - gene-expression-omnibus
+  - kidsfirst
+  - lincs
+  - mw
+  - sckan
 name: Data Distillery Knowledge Graph (DDKG)
 products:
   - category: GraphicalInterface
