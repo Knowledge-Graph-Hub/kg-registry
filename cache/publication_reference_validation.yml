@@ -1316,6 +1316,15 @@ entries:
     status: warning
     warnings:
     - DOI:10.1093/nar/gkae1142 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1093_nar_gkae1142.md
+  resource/cfde-ddkg/cfde-ddkg.md#publication[0]#DOI:10.1101/2025.08.11.666099:
+    checked_at: '2026-10-09T21:59:39Z'
+    errors: []
+    fingerprint: f06deade78fd9ca5c3c1d1486136b49fe04ef00339d71514e4709386c89ef976
+    publication_index: 0
+    reference_id: DOI:10.1101/2025.08.11.666099
+    source_path: resource/cfde-ddkg/cfde-ddkg.md
+    status: valid
+    warnings: []
   resource/cfde-gse/cfde-gse.md#publication[0]#DOI:10.1038/s41467-022-28631-3:
     checked_at: '2026-10-05T21:25:34Z'
     errors: []
@@ -2031,11 +2040,47 @@ entries:
     source_path: resource/dbpedia/dbpedia.md
     status: valid
     warnings: []
+  resource/dbpedia/dbpedia.md#publication[0]#DOI:10.3233/SW-140134:
+    checked_at: '2026-10-09T21:58:30Z'
+    errors: []
+    fingerprint: 2b5d8044706ee434050805b6d74716dc16bb351a0d9a809a4955d6c23051b2f0
+    publication_index: 0
+    reference_id: DOI:10.3233/SW-140134
+    source_path: resource/dbpedia/dbpedia.md
+    status: valid
+    warnings: []
+  resource/dbpedia/dbpedia.md#publication[1]#DOI:10.1007/978-3-030-59833-4_1:
+    checked_at: '2026-10-09T21:58:59Z'
+    errors: []
+    fingerprint: 07b2896bf85d28121ed068685bbc730b0dbdd4ae2181e1d4383120635af29809
+    publication_index: 1
+    reference_id: DOI:10.1007/978-3-030-59833-4_1
+    source_path: resource/dbpedia/dbpedia.md
+    status: valid
+    warnings: []
   resource/dbpedia/dbpedia.md#publication[1]#DOI:10.1016/j.websem.2009.07.002:
     checked_at: '2026-08-06T18:17:00Z'
     errors: []
     fingerprint: 067e390c521603a961387d058f0421c8035aeae037acf4396cb945ac859ce60e
     publication_index: 1
+    reference_id: DOI:10.1016/j.websem.2009.07.002
+    source_path: resource/dbpedia/dbpedia.md
+    status: valid
+    warnings: []
+  resource/dbpedia/dbpedia.md#publication[2]#DOI:10.1007/978-3-540-76298-0_52:
+    checked_at: '2026-10-09T21:47:34Z'
+    errors: []
+    fingerprint: d54c3ec8f92bfa758ff70b959e99cae6d8956445b0cd4f87c7da8b0f4c3328af
+    publication_index: 2
+    reference_id: DOI:10.1007/978-3-540-76298-0_52
+    source_path: resource/dbpedia/dbpedia.md
+    status: valid
+    warnings: []
+  resource/dbpedia/dbpedia.md#publication[3]#DOI:10.1016/j.websem.2009.07.002:
+    checked_at: '2026-10-09T21:47:34Z'
+    errors: []
+    fingerprint: 1d2656395195ba1f2396bbf0c830a1d2c0992df4dd0717b8ad4d5ec98967c9f5
+    publication_index: 3
     reference_id: DOI:10.1016/j.websem.2009.07.002
     source_path: resource/dbpedia/dbpedia.md
     status: valid
@@ -3227,6 +3272,15 @@ entries:
     source_path: resource/flybase/flybase.md
     status: valid
     warnings: []
+  resource/fma/fma.md#publication[0]#PMID:14759820:
+    checked_at: '2026-10-09T21:58:03Z'
+    errors: []
+    fingerprint: b22d44ed7fd62eda55fbf13980c8bbbedc717503dfd9bdc3c49860b4852adfcf
+    publication_index: 0
+    reference_id: PMID:14759820
+    source_path: resource/fma/fma.md
+    status: valid
+    warnings: []
   resource/fma/fma.md#publication[0]#PMID:18688289:
     checked_at: '2026-06-15T21:55:10Z'
     errors: []
@@ -3245,11 +3299,38 @@ entries:
     source_path: resource/fma/fma.md
     status: valid
     warnings: []
+  resource/fma/fma.md#publication[1]#PMID:18688289:
+    checked_at: '2026-10-09T21:39:19Z'
+    errors: []
+    fingerprint: ea5040aee81d7c01b21710593d54cfa707fd6273514609f14770d7c90f305ce9
+    publication_index: 1
+    reference_id: PMID:18688289
+    source_path: resource/fma/fma.md
+    status: valid
+    warnings: []
   resource/fma/fma.md#publication[2]#PMID:16779026:
     checked_at: '2026-06-15T21:55:10Z'
     errors: []
     fingerprint: f6401803d0cc55d69f91a21b8f68b31fd2684cae55dcc50b91fc9b3a834bff57
     publication_index: 2
+    reference_id: PMID:16779026
+    source_path: resource/fma/fma.md
+    status: valid
+    warnings: []
+  resource/fma/fma.md#publication[2]#PMID:18360535:
+    checked_at: '2026-10-09T21:39:19Z'
+    errors: []
+    fingerprint: 77c03d46f3eeaaa56b418fc2fb5e712478e08aed9ed68bb33b62ba969be4ba57
+    publication_index: 2
+    reference_id: PMID:18360535
+    source_path: resource/fma/fma.md
+    status: valid
+    warnings: []
+  resource/fma/fma.md#publication[3]#PMID:16779026:
+    checked_at: '2026-10-09T21:39:19Z'
+    errors: []
+    fingerprint: f6401803d0cc55d69f91a21b8f68b31fd2684cae55dcc50b91fc9b3a834bff57
+    publication_index: 3
     reference_id: PMID:16779026
     source_path: resource/fma/fma.md
     status: valid
@@ -4403,6 +4484,33 @@ entries:
     source_path: resource/ico/ico.md
     status: valid
     warnings: []
+  resource/iconclass/iconclass.md#publication[0]#DOI:10.4324/9781315298375-19:
+    checked_at: '2026-10-09T21:58:24Z'
+    errors: []
+    fingerprint: 9ea0c5411a0f6e3c84f67a946b020aa5b060b6b79ee92f507e06a6686497fefc
+    publication_index: 0
+    reference_id: DOI:10.4324/9781315298375-19
+    source_path: resource/iconclass/iconclass.md
+    status: valid
+    warnings: []
+  resource/iconclass/iconclass.md#publication[1]#DOI:10.1017/alj.2024.14:
+    checked_at: '2026-10-09T21:58:25Z'
+    errors: []
+    fingerprint: aa1405ea682cff1df07285cdb12c29557c48830a6e88c3e74dcde9bf4f4d1e66
+    publication_index: 1
+    reference_id: DOI:10.1017/alj.2024.14
+    source_path: resource/iconclass/iconclass.md
+    status: valid
+    warnings: []
+  resource/iconclass/iconclass.md#publication[2]#DOI:10.1017/s0307472200003436:
+    checked_at: '2026-10-09T21:58:26Z'
+    errors: []
+    fingerprint: 81ac5ee735ca4c331f5abc0b101ee23c6a8790499c0315dbf0e5e1868ab3059c
+    publication_index: 2
+    reference_id: DOI:10.1017/s0307472200003436
+    source_path: resource/iconclass/iconclass.md
+    status: valid
+    warnings: []
   resource/identifiers-org/identifiers-org.md#publication[0]#DOI:10.1038/sdata.2018.29:
     checked_at: '2026-10-05T19:34:43Z'
     errors: []
@@ -4427,6 +4535,24 @@ entries:
     fingerprint: 9dae10f8d630407ff63cdcf4f2296eafd335b908424f8b0019d6a07cfd6ffff4
     publication_index: 0
     reference_id: DOI:10.1093/jamia/ocz216
+    source_path: resource/idisk/idisk.md
+    status: valid
+    warnings: []
+  resource/idisk/idisk.md#publication[1]#PMID:40106799:
+    checked_at: '2026-10-09T21:59:14Z'
+    errors: []
+    fingerprint: 5157bdf32f5fba63c63adc5d3946a5f7f790b9a8b58adee0a7e8de5a2df2aa7e
+    publication_index: 1
+    reference_id: PMID:40106799
+    source_path: resource/idisk/idisk.md
+    status: valid
+    warnings: []
+  resource/idisk/idisk.md#publication[2]#PMID:32940692:
+    checked_at: '2026-10-09T21:59:20Z'
+    errors: []
+    fingerprint: da658c20dc34fbf4cdead94ebdba2d174d127bd78f60b3899223ca9582c6cca1
+    publication_index: 2
+    reference_id: PMID:32940692
     source_path: resource/idisk/idisk.md
     status: valid
     warnings: []
@@ -6480,6 +6606,24 @@ entries:
     source_path: resource/oma/oma.md
     status: valid
     warnings: []
+  resource/omiabis/omiabis.md#publication[0]#PMID:24103726:
+    checked_at: '2026-10-09T21:58:12Z'
+    errors: []
+    fingerprint: 5348c2dc50d6803928deebb9fc9af4db6f698193b891f963ea93bb4ea9435874
+    publication_index: 0
+    reference_id: PMID:24103726
+    source_path: resource/omiabis/omiabis.md
+    status: valid
+    warnings: []
+  resource/omiabis/omiabis.md#publication[1]#PMID:24849882:
+    checked_at: '2026-10-09T21:58:16Z'
+    errors: []
+    fingerprint: 7febb111896d45cc5ea3bbdfb4c850c257c27b6953daf7cef25b2b901da003ea
+    publication_index: 1
+    reference_id: PMID:24849882
+    source_path: resource/omiabis/omiabis.md
+    status: valid
+    warnings: []
   resource/omicsdi/omicsdi.md#publication[0]#DOI:10.1038/nbt.3790:
     checked_at: '2026-06-22T16:28:16Z'
     errors: []
@@ -7307,6 +7451,17 @@ entries:
     source_path: resource/pharmebinet/pharmebinet.md
     status: valid
     warnings: []
+  resource/pharmebinet/pharmebinet.md#publication[1]#DOI:10.3205/mibe000243:
+    checked_at: '2026-10-09T21:59:04Z'
+    errors: []
+    fingerprint: b35a570c7115a3ab277aa279b9f8ab970f4d2de09505ca2fa78f695eeb6afad6
+    publication_index: 1
+    reference_id: DOI:10.3205/mibe000243
+    source_path: resource/pharmebinet/pharmebinet.md
+    status: warning
+    warnings:
+    - journal 'GMS Medizinische Informatik, Biometrie und Epidemiologie' does not
+      match cached journal 'German Medical Science GMS Publishing House' in references_cache/DOI_10.3205_mibe000243.md
   resource/pharmgkb/pharmgkb.md#publication[0]#PMID:34216021:
     checked_at: '2026-08-06T18:18:34Z'
     errors: []
@@ -8449,6 +8604,17 @@ entries:
     source_path: resource/scop/scop.md
     status: valid
     warnings: []
+  resource/semapv/semapv.md#publication[0]#DOI:10.5281/zenodo.7672104:
+    checked_at: '2026-10-09T21:53:42Z'
+    errors: []
+    fingerprint: a26ddca09df05840ff71882646ee7c14d4bc65c3cd837f4bdf736a271138b720
+    publication_index: 0
+    reference_id: DOI:10.5281/zenodo.7672104
+    source_path: resource/semapv/semapv.md
+    status: warning
+    warnings:
+    - journal 'CEUR Workshop Proceedings' does not match cached journal 'Zenodo' in
+      references_cache/DOI_10.5281_zenodo.7672104.md
   resource/semmeddb/semmeddb.md#publication[0]#DOI:10.1093/bioinformatics/bts591:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -8793,9 +8959,9 @@ entries:
     status: valid
     warnings: []
   resource/spoke/spoke.md#publication[0]#DOI:10.1093/bioinformatics/btad080:
-    checked_at: '2026-06-15T22:06:23Z'
+    checked_at: '2026-10-09T21:50:14Z'
     errors: []
-    fingerprint: 60e0d3aa06cc309e7fd8f6a3606c4f38e1aaa076ba4bdd20f75edf75559c9a91
+    fingerprint: 3aa50099ba53619e69e34389ffd29308a7b0650de7fee13bb40274e031f247b6
     publication_index: 0
     reference_id: DOI:10.1093/bioinformatics/btad080
     source_path: resource/spoke/spoke.md
@@ -8810,11 +8976,47 @@ entries:
     source_path: resource/spoke/spoke.md
     status: valid
     warnings: []
+  resource/spoke/spoke.md#publication[1]#DOI:10.1093/bioinformatics/btae560:
+    checked_at: '2026-10-09T21:59:06Z'
+    errors: []
+    fingerprint: 13d13d835878d6f0ec49bbdc90441d1b736b9dd15639230c0e5b8ac1f97c7409
+    publication_index: 1
+    reference_id: DOI:10.1093/bioinformatics/btae560
+    source_path: resource/spoke/spoke.md
+    status: valid
+    warnings: []
+  resource/spoke/spoke.md#publication[2]#DOI:10.1002/aaai.12037:
+    checked_at: '2026-10-09T21:50:14Z'
+    errors: []
+    fingerprint: 00dbeaab56cb5d4778879468da85062e6d261eab699b8ab9951155d5599aeb2b
+    publication_index: 2
+    reference_id: DOI:10.1002/aaai.12037
+    source_path: resource/spoke/spoke.md
+    status: valid
+    warnings: []
   resource/spoke/spoke.md#publication[2]#DOI:10.7554/eLife.26726:
     checked_at: '2026-06-15T22:06:23Z'
     errors: []
     fingerprint: ccb1ca7fb0570efbaa1363771fc2bf1a8c21a89bcce4e85bef42404951d810e1
     publication_index: 2
+    reference_id: DOI:10.7554/eLife.26726
+    source_path: resource/spoke/spoke.md
+    status: valid
+    warnings: []
+  resource/spoke/spoke.md#publication[3]#DOI:10.1038/s41467-019-11069-0:
+    checked_at: '2026-10-09T21:50:14Z'
+    errors: []
+    fingerprint: d700d514bde0dafd72e4c36737fb68d4efa823b15199b484a54f4d26cae42681
+    publication_index: 3
+    reference_id: DOI:10.1038/s41467-019-11069-0
+    source_path: resource/spoke/spoke.md
+    status: valid
+    warnings: []
+  resource/spoke/spoke.md#publication[4]#DOI:10.7554/eLife.26726:
+    checked_at: '2026-10-09T21:50:14Z'
+    errors: []
+    fingerprint: ccb1ca7fb0570efbaa1363771fc2bf1a8c21a89bcce4e85bef42404951d810e1
+    publication_index: 4
     reference_id: DOI:10.7554/eLife.26726
     source_path: resource/spoke/spoke.md
     status: valid
