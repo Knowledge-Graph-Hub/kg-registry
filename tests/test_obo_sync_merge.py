@@ -351,7 +351,10 @@ FMA_OBO = {
     "id": "fma",
     "name": "Foundational Model of Anatomy Ontology",
     "repository": "https://bitbucket.org/uwsig/fma",
-    "license": {"id": "http://sig.biostr.washington.edu/projects/fm/FMA_Release", "label": "CUSTOM"},
+    "license": {
+        "id": "http://sig.biostr.washington.edu/projects/fm/FMA_Release",
+        "label": "CUSTOM",
+    },
 }
 
 
@@ -489,7 +492,9 @@ def test_last_modified_date_unchanged_when_nothing_changes(tmp_path):
         "title": "Foundational Model of Anatomy Ontology",
         "repository": "https://bitbucket.org/uwsig/fma",
     }
-    syncer = OBOFoundrySync(registry_root=str(registry_root), state_path=str(tmp_path / "state.yml"))
+    syncer = OBOFoundrySync(
+        registry_root=str(registry_root), state_path=str(tmp_path / "state.yml")
+    )
     synced = syncer.transform_obo_to_kg_registry(record)
     syncer.state["ontologies"]["fma"] = syncer.snapshot(synced)
     # The page carries everything the sync would write, except a curated repository.
@@ -535,7 +540,13 @@ def test_sync_all_saves_state_and_dry_run_writes_nothing(tmp_path, monkeypatch):
 def test_seed_state_records_values_without_sources(tmp_path):
     syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
     seeded = syncer.seed_state(
-        [{"id": "fma", "title": "FMA", "products": [{"id": "fma.owl", "ontology_purl": "http://x/fma.owl"}]}]
+        [
+            {
+                "id": "fma",
+                "title": "FMA",
+                "products": [{"id": "fma.owl", "ontology_purl": "http://x/fma.owl"}],
+            }
+        ]
     )
 
     assert seeded == 1
@@ -576,9 +587,7 @@ def test_dependencies_become_sources_on_non_base_products(tmp_path):
             ],
         }
     )
-    sources = {
-        p["id"]: [s["source"] for s in p["original_source"]] for p in resource["products"]
-    }
+    sources = {p["id"]: [s["source"] for s in p["original_source"]] for p in resource["products"]}
 
     assert sources == {
         "cl.owl": ["cl", "bfo", "ro"],
