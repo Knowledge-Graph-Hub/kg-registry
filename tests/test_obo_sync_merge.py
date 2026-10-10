@@ -544,6 +544,49 @@ def test_seed_state_records_values_without_sources(tmp_path):
     assert "original_source" not in entry["products"]["fma.owl"]
 
 
+# --- Ontology dependencies become product sources (#421) -------------------
+
+
+def _registry_with(tmp_path, *ids):
+    root = tmp_path / "resource"
+    for resource_id in ids:
+        (root / resource_id).mkdir(parents=True, exist_ok=True)
+        (root / resource_id / f"{resource_id}.md").write_text(f"---\nid: {resource_id}\n---\n")
+    return root
+
+
+def test_dependencies_become_sources_on_non_base_products(tmp_path):
+    root = _registry_with(tmp_path, "bfo", "ro")
+    syncer = OBOFoundrySync(registry_root=str(root))
+
+    resource = syncer.transform_obo_to_kg_registry(
+        {
+            "id": "cl",
+            "title": "Cell Ontology",
+            "dependencies": [
+                {"id": "bfo"},
+                {"id": "ro"},
+                {"id": "notinregistry"},
+                {"id": "go/extensions/go-bridge-to-nifstd.owl", "type": "BridgeOntology"},
+            ],
+            "products": [
+                {"id": "cl.owl"},
+                {"id": "cl/cl-base.owl"},
+                {"id": "cl/cl-basic.obo"},
+            ],
+        }
+    )
+    sources = {
+        p["id"]: [s["source"] for s in p["original_source"]] for p in resource["products"]
+    }
+
+    assert sources == {
+        "cl.owl": ["cl", "bfo", "ro"],
+        "cl.cl-base.owl": ["cl"],
+        "cl.cl-basic.obo": ["cl", "bfo", "ro"],
+    }
+
+
 def test_dependency_sources_merge_with_curated_sources(tmp_path):
     syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
     own = {"relation_type": "prov:hadPrimarySource", "source": "cl"}

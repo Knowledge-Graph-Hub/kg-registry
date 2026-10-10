@@ -105,6 +105,19 @@ state file was introduced (#901). OBO registry records carry no modification
 dates, and per-record commit dates in the OBO repository are bumped by bulk edits,
 which is why the sync compares values rather than dates.
 
+## Ontology Dependencies
+
+Ontologies an OBO record lists under `dependencies` become sources on its products
+(#421). Each synced product lists the ontology itself as `prov:hadPrimarySource`.
+Products other than base modules also list each dependency the same way. Base
+modules (ids such as `cl-base.owl`) hold only the ontology's own axioms, so they
+don't get the dependencies. Dependencies without a registry resource are skipped,
+as are bridge files such as `go/extensions/go-bridge-to-nifstd.owl`.
+
+Sources are merged, not replaced. A dependency OBO Foundry added since the last
+sync is added, one it dropped is removed, and sources curated on the page are left
+alone.
+
 ## Domain Mapping
 
 OBO Foundry domains are mapped to KG-Registry domains as follows:

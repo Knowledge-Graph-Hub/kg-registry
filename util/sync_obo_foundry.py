@@ -266,6 +266,34 @@ class OBOFoundrySync:
                 merged_keys.add(key)
         return merged
 
+    @staticmethod
+    def _is_base_product(product_id: str) -> bool:
+        """True for OBO base modules, which carry no imported axioms."""
+        # Ids arrive namespaced and dotted, e.g. 'cl.cl-base.owl' or
+        # 'hancestro.hancestro-base.owl'; skip the leading ontology id.
+        segments = product_id.replace('/', '.').split('.')[1:]
+        return any(segment == 'base' or segment.endswith('-base') for segment in segments)
+
+    def _dependency_sources(self, ontology_id: str, obo_ontology: Dict[str, Any]) -> List[Dict[str, str]]:
+        """Registry ids of the ontologies this one imports (#421)."""
+        sources = []
+        seen = {ontology_id}
+        for dependency in obo_ontology.get('dependencies') or []:
+            dependency_id = dependency.get('id') if isinstance(dependency, dict) else dependency
+            if not isinstance(dependency_id, str):
+                continue
+            dependency_id = dependency_id.strip().lower()
+            if not dependency_id or dependency_id in seen:
+                continue
+            # Bridge files such as 'go/extensions/go-bridge-to-nifstd.owl' are
+            # not ontologies, and a source must name a registry resource.
+            if '/' in dependency_id or not (self.registry_root / dependency_id / f"{dependency_id}.md").exists():
+                logger.debug("Skipping dependency %s of %s: no registry resource", dependency_id, ontology_id)
+                continue
+            seen.add(dependency_id)
+            sources.append({'relation_type': 'prov:hadPrimarySource', 'source': dependency_id})
+        return sources
+
     def _map_obo_domain_to_schema(self, obo_domain: str) -> List[str]:
         """Map OBO Foundry domain to KG-Registry DomainEnum values"""
         domain_mapping = {
@@ -624,6 +652,16 @@ class OBOFoundrySync:
                 'format': default_format,
                 'category': 'OntologyProduct'  # Set category to OntologyProduct for ontology products
             })
+
+        # Every product comes from the ontology itself. Products other than base
+        # modules also carry the ontologies it imports (#421); a base module
+        # holds only the ontology's own axioms.
+        dependency_sources = self._dependency_sources(ontology_id, obo_ontology)
+        for product_obj in products:
+            sources = [{'relation_type': 'prov:hadPrimarySource', 'source': ontology_id}]
+            if not self._is_base_product(product_obj['id']):
+                sources.extend(copy.deepcopy(dependency_sources))
+            product_obj['original_source'] = sources
 
         # Get domain/categories and map to valid DomainEnum values
         obo_domain = obo_ontology.get('domain', '')
