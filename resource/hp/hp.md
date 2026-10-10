@@ -6396,6 +6396,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
   product_file_size: 8941255
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
 - category: GraphProduct
@@ -6411,6 +6413,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
   product_file_size: 7214043
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
 - category: GraphProduct

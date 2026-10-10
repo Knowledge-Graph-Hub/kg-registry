@@ -2571,6 +2571,24 @@ entries:
     source_path: resource/drugcentral/drugcentral.md
     status: valid
     warnings: []
+  resource/drugenrichr/drugenrichr.md#publication[0]#PMID:23586463:
+    checked_at: '2026-10-10T18:34:32Z'
+    errors: []
+    fingerprint: 8a9b5b31941f3c795d7962f0eab706733fa2ea434eb79b46543c8522f184b0bd
+    publication_index: 0
+    reference_id: PMID:23586463
+    source_path: resource/drugenrichr/drugenrichr.md
+    status: valid
+    warnings: []
+  resource/drugenrichr/drugenrichr.md#publication[1]#PMID:27141961:
+    checked_at: '2026-10-10T18:34:37Z'
+    errors: []
+    fingerprint: cdd544cd03acf38696f2daeea9bf79fd2e22284d56ee92e020e9a2f2a33aa76e
+    publication_index: 1
+    reference_id: PMID:27141961
+    source_path: resource/drugenrichr/drugenrichr.md
+    status: valid
+    warnings: []
   resource/drugmechdb/drugmechdb.md#publication[0]#DOI:10.1038/s41597-023-02534-z:
     checked_at: '2026-10-04T02:40:18Z'
     errors: []
@@ -2578,6 +2596,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41597-023-02534-z
     source_path: resource/drugmechdb/drugmechdb.md
+    status: valid
+    warnings: []
+  resource/drugshot/drugshot.md#publication[0]#PMID:35183110:
+    checked_at: '2026-10-10T18:32:10Z'
+    errors: []
+    fingerprint: 2372e29b57a48327ec2ddde09f15be5993808ab82c4b6037db47b6718bfb5f9d
+    publication_index: 0
+    reference_id: PMID:35183110
+    source_path: resource/drugshot/drugshot.md
     status: valid
     warnings: []
   resource/dsld/dsld.md#publication[0]#PMID:31249427:
@@ -3672,6 +3699,15 @@ entries:
     status: warning
     warnings:
     - PMID:22205509 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/PMID_22205509.md
+  resource/geneshot/geneshot.md#publication[0]#PMID:31114885:
+    checked_at: '2026-10-10T18:32:01Z'
+    errors: []
+    fingerprint: 273470357e77be29eba79456fcb8d16c7fa23de1c09530502d30d9bcee6eb4f0
+    publication_index: 0
+    reference_id: PMID:31114885
+    source_path: resource/geneshot/geneshot.md
+    status: valid
+    warnings: []
   resource/genomernai/genomernai.md#publication[0]#DOI:10.1093/nar/gks1170:
     checked_at: '2026-06-17T14:07:38Z'
     errors: []
@@ -8831,6 +8867,15 @@ entries:
     source_path: resource/sifr-bioportal/sifr-bioportal.md
     status: valid
     warnings: []
+  resource/sigcom-lincs/sigcom-lincs.md#publication[0]#PMID:35524556:
+    checked_at: '2026-10-10T18:34:45Z'
+    errors: []
+    fingerprint: 24a891938f55356294e8e4f8c5a8263c0e6b285fd59a1e965edf4afb34b37a40
+    publication_index: 0
+    reference_id: PMID:35524556
+    source_path: resource/sigcom-lincs/sigcom-lincs.md
+    status: valid
+    warnings: []
   resource/signor/signor.md#publication[0]#DOI:10.1093/nar/gkac883:
     checked_at: '2026-08-06T18:18:59Z'
     errors: []
@@ -9962,6 +10007,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1016/s0140-6736(06)68708-4
     source_path: resource/who-ictrp/who-ictrp.md
+    status: valid
+    warnings: []
+  resource/wikimedia-commons/wikimedia-commons.md#publication[0]#DOI:10.1145/3555766:
+    checked_at: '2026-10-10T18:31:53Z'
+    errors: []
+    fingerprint: 747eed6f86a890ea6ac7eb654824e776ae58b79fca179308295536007f6bb03c
+    publication_index: 0
+    reference_id: DOI:10.1145/3555766
+    source_path: resource/wikimedia-commons/wikimedia-commons.md
+    status: valid
+    warnings: []
+  resource/wikimedia-commons/wikimedia-commons.md#publication[1]#DOI:10.18438/eblip29575:
+    checked_at: '2026-10-10T18:31:54Z'
+    errors: []
+    fingerprint: 714597ceb2bd3d45594c1cae4f450fdd1dd59dc529df573887af967b0e2a3b5d
+    publication_index: 1
+    reference_id: DOI:10.18438/eblip29575
+    source_path: resource/wikimedia-commons/wikimedia-commons.md
     status: valid
     warnings: []
   resource/wikipathways/wikipathways.md#publication[0]#DOI:10.1093/nar/gkad960:

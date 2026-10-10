@@ -730,6 +730,60 @@ products:
     source: wikidata
   product_file_size: 5343
   product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikidata-kg-dump
+- category: ProgrammingInterface
+  description: Wikimedia Commons Query Service, a SPARQL endpoint and query interface
+    over Structured Data on Commons statements. Requires logging in with a Commons
+    account.
+  format: http
+  id: wikimedia-commons.query-service
+  is_public: false
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: Wikimedia Commons Query Service
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikimedia-commons
+  product_url: https://commons-query.wikimedia.org/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+- category: Product
+  compression: gzip
+  description: Weekly dump of all Structured Data on Commons MediaInfo entities (captions
+    and statements) in JSON.
+  format: json
+  id: wikimedia-commons.mediainfo.json
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: Structured Data on Commons Dump (JSON)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikimedia-commons
+  product_file_size: 78893159156
+  product_url: https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.json.gz
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
+- category: GraphProduct
+  compression: gzip
+  description: Weekly dump of all Structured Data on Commons MediaInfo entities as
+    RDF in Turtle.
+  format: ttl
+  id: wikimedia-commons.mediainfo.ttl
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: Structured Data on Commons Dump (Turtle)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikimedia-commons
+  product_file_size: 114887363530
+  product_url: https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.ttl.gz
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: wikidata
 repository: https://www.mediawiki.org/wiki/Wikibase
 synonyms:
 - Wikidata

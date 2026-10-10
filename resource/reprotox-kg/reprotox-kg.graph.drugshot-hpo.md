@@ -12,6 +12,8 @@ original_source:
   source: hp
 - relation_type: prov:hadPrimarySource
   source: pubmed
+- relation_type: prov:hadPrimarySource
+  source: drugshot
 product_file_size: 8941255
 product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
 layout: product_detail

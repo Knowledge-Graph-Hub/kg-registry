@@ -19,12 +19,12 @@ domains:
 - drug discovery
 homepage_url: https://maayanlab.cloud/reprotox-kg
 id: reprotox-kg
-last_modified_date: '2026-10-09T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
     license (no derivatives) among its sources: hp. Not accounted for, no known license:
-    faers, lincs-l1000.'
+    faers, lincs-l1000, sigcom-lincs.'
   id: https://hpo.jax.org/app/license
   inferred_from:
   - hp
@@ -35,6 +35,7 @@ license:
   unresolved_sources:
   - faers
   - lincs-l1000
+  - sigcom-lincs
 name: ReproTox-KG
 products:
 - category: GraphicalInterface
@@ -95,6 +96,12 @@ products:
     source: reprotox-kg
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
+  - relation_type: prov:hadPrimarySource
+    source: drugenrichr
   product_file_size: 1649245
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
 - category: GraphProduct
@@ -107,6 +114,8 @@ products:
     source: reprotox-kg
   - relation_type: prov:hadPrimarySource
     source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
   product_file_size: 114587395
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json
 - category: GraphProduct
@@ -181,6 +190,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
   product_file_size: 8941255
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
 - category: GraphProduct
@@ -195,6 +206,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
   product_file_size: 7214043
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
 - category: GraphProduct
