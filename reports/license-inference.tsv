@@ -115,7 +115,7 @@ icees-kg	KnowledgeGraph	inferred			https://uts.nlm.nih.gov/uts/	custom	umls
 ickg	KnowledgeGraph	inferred			https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 identifier-mappings	KnowledgeGraph	inferred			https://creativecommons.org/publicdomain/zero/1.0/	public domain	wikidata	
 identifiers-org	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
-idisk	KnowledgeGraph	conflict	http://creativecommons.org/licenses/by-sa/3.0/us/	copyleft	https://uts.nlm.nih.gov/uts/	custom	umls	meddra
+idisk	KnowledgeGraph	conflict	http://creativecommons.org/licenses/by-sa/3.0/us/	copyleft	https://www.mskcc.org/legal-disclaimer	custom	lnhpd|mskcc-about-herbs|umls	meddra
 ikraph	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 imex	Aggregator	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	intact	
 imo-knowledge-graph	KnowledgeGraph	declared	https://www.imohealth.com/terms-of-use/	custom	https://www.ama-assn.org/about/terms-use	custom	cpt|loinc|snomedct	icd10|rxnorm
@@ -252,6 +252,7 @@ suppkg	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	pe
 tbkg	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 tera	KnowledgeGraph	declared	https://opensource.org/licenses/MIT	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	chebi|mesh	
 text-mining-kp	KnowledgeGraph	inferred			https://opensource.org/license/mit/	permissive	translator	
+tflink	Aggregator	declared	https://tflink.net/faq/	non-commercial	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	remap	gtrd|htridb|redfly|tred|yeastract
 tissues	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 togows	Aggregator	inferred			https://www.ddbj.nig.ac.jp/policies-e.html	custom	ddbj|kegg	ena|pdb
 toxin	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				

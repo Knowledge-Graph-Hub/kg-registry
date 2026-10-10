@@ -71,6 +71,7 @@ biomarker,active,PASS
 biomodels,active,PASS
 biomuta,active,PASS
 bioplanet,active,PASS
+bioplex,active,PASS
 bioportal,active,PASS
 bioregistry,active,PASS
 biostudies,active,PASS
@@ -233,6 +234,7 @@ drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
 drugmechdb,active,PASS
+dsld,active,PASS
 dsstoxdb,active,PASS
 duo,active,PASS
 earthportal,active,PASS
@@ -393,6 +395,7 @@ gtdb,active,PASS
 gtex,active,PASS
 gtopdb,active,PASS
 gtr,active,PASS
+gtrd,active,PASS
 gtrnadb,active,PASS
 gtrx,active,PASS
 gutmdisorder,active,PASS
@@ -419,6 +422,7 @@ hrpimp,active,PASS
 hsapdv,active,PASS
 hso,active,PASS
 htn,active,PASS
+htridb,active,PASS
 hubmap,active,PASS
 humancyc,active,PASS
 humannet,active,PASS
@@ -502,6 +506,7 @@ lncbase,active,PASS
 lncbook,active,PASS
 lncrnadisease,active,PASS
 lncrnalyzr,active,PASS
+lnhpd,active,PASS
 loinc,active,PASS
 lotus,active,PASS
 louisiana-tumor-registry,active,PASS
@@ -573,6 +578,7 @@ mrbase,active,PASS
 mro,active,PASS
 ms,active,PASS
 msigdb,active,PASS
+mskcc-about-herbs,active,PASS
 mtbs,active,PASS
 multiomics-kp,active,PASS
 mutationds,active,PASS
@@ -793,6 +799,7 @@ re3data,active,PASS
 reacto,active,PASS
 reactome,active,PASS
 reconx,active,PASS
+redfly,active,PASS
 rediportal,active,PASS
 redu,active,PASS
 refseq,active,PASS
@@ -897,6 +904,7 @@ tcga,active,PASS
 tcrd,active,PASS
 tera,active,PASS
 text-mining-kp,active,PASS
+tflink,active,PASS
 tiga,active,PASS
 tissues,active,PASS
 to,active,PASS
@@ -963,6 +971,7 @@ xco,active,PASS
 xenbase,active,PASS
 xlmod,active,PASS
 xpo,active,PASS
+yeastract,active,PASS
 yoda,active,PASS
 zeco,active,PASS
 zfa,active,PASS

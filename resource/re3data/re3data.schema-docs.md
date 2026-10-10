@@ -10,8 +10,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: re3data
 product_url: https://doi.org/10.48440/re3.014
-warnings:
-- File was not able to be retrieved when checked on 2026-10-05_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

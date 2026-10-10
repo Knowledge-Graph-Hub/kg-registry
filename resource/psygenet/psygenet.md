@@ -48,8 +48,6 @@ products:
   product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
   repository: https://git.bioconductor.org/packages/psygenet2r
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 404 error
     when accessing file'
 - category: GraphProduct

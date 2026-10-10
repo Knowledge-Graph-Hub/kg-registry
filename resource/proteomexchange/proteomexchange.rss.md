@@ -10,7 +10,7 @@ original_source:
   source: proteomexchange
 product_url: https://groups.google.com/forum/feed/proteomexchange/msgs/rss_v2_0.xml
 warnings:
-- File was not able to be retrieved when checked on 2026-10-05_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-10-10_ HTTP 404 error when
   accessing file
 - Feed was not able to be retrieved when checked on 2026-10-04. The URL listed on
   the ProteomeXchange subscription page returned HTTP 404.

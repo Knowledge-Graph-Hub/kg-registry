@@ -2280,6 +2280,46 @@ kgr:bioplanet a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://tripod.nih.gov/bioplanet/> .
 
+kgr:bioplex a schema1:DataSource ;
+    rdfs:label "BioPlex" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "BioPlex is a proteome-scale map of human protein-protein interactions built by affinity purification-mass spectrometry (AP-MS) of tagged proteins expressed from the human ORFeome. It is a collaboration between the Gygi and Harper labs at Harvard Medical School. BioPlex 3.0 covers nearly 120,000 interactions among nearly 15,000 proteins in HEK293T cells, and a companion network covers about 71,000 interactions in HCT116 cells. Interaction tables for each network version can be downloaded, and the networks can be explored on the web or through R and Python packages." ;
+    dcterms:identifier "bioplex" ;
+    dcterms:isReferencedBy <PMID:26186194>,
+        <PMID:28514442>,
+        <PMID:29054129>,
+        <PMID:33961781>,
+        <PMID:36794911> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:bioplex.1.0-293t,
+        kgr:bioplex.1.0-293t-directed,
+        kgr:bioplex.2.0-293t,
+        kgr:bioplex.2.0-293t-directed,
+        kgr:bioplex.2.0-293t-unfiltered,
+        kgr:bioplex.3.0-293t,
+        kgr:bioplex.3.0-293t-directed,
+        kgr:bioplex.3.0-293t-unfiltered,
+        kgr:bioplex.3.0-hct116,
+        kgr:bioplex.3.0-hct116-directed,
+        kgr:bioplex.bioconductor,
+        kgr:bioplex.bioplexpy,
+        kgr:bioplex.comppass,
+        kgr:bioplex.explorer,
+        kgr:bioplex.hct116-unfiltered,
+        kgr:bioplex.proteome-comparison,
+        kgr:bioplex.raw-data,
+        kgr:spoke.graph ;
+    schema1:name "BioPlex" ;
+    skos:altLabel "BioPlex Interactome" ;
+    skos:inScheme "biological systems",
+        "cell biology",
+        "protein interactions",
+        "proteomics",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://bioplex.hms.harvard.edu/> .
+
 kgr:bioportal a schema1:Aggregator ;
     rdfs:label "BioPortal" ;
     dcterms:created "2025-08-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -5135,6 +5175,7 @@ kgr:corum a schema1:DataSource ;
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:bioplex.bioconductor,
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
@@ -6957,7 +6998,20 @@ kgr:dorothea a schema1:KnowledgeGraph ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:dorothea.docs,
         kgr:dorothea.graph,
-        kgr:dorothea.r-package ;
+        kgr:dorothea.r-package,
+        kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
     schema1:name "DoRothEA" ;
     doap:repository <https://github.com/saezlab/dorothea/> ;
     skos:inScheme "gene regulation",
@@ -7248,6 +7302,35 @@ kgr:drugmechdb a schema1:KnowledgeGraph ;
         "pharmacology" ;
     adms:status "Active" ;
     foaf:homepage <https://sulab.github.io/DrugMechDB/> .
+
+kgr:dsld a schema1:DataSource ;
+    rdfs:label "Dietary Supplement Label Database" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Dietary Supplement Label Database (DSLD) from the NIH Office of Dietary Supplements records the full label contents of dietary supplement products sold in the United States, including label images, ingredient names and forms, amounts of dietary ingredients, and all label statements. It holds more than 214,000 labels for products both on and off the market, categorized with LanguaL codes. Labels come mainly from manufacturers through an NIH contractor and from products reported in NHANES. Launched in 2013 and modernized with a public API in 2021, it is updated with regular releases." ;
+    dcterms:identifier "dsld" ;
+    dcterms:isReferencedBy <PMID:24928780>,
+        <PMID:31249427>,
+        <PMID:34366563> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:dsld.api,
+        kgr:dsld.api-guide,
+        kgr:dsld.csv,
+        kgr:dsld.json,
+        kgr:dsld.portal,
+        kgr:dsld.xlsx,
+        kgr:idisk.idisk2-entities,
+        kgr:idisk.idisk2-relations ;
+    schema1:name "Dietary Supplement Label Database" ;
+    skos:altLabel "DSLD" ;
+    skos:inScheme "chemistry and biochemistry",
+        "food",
+        "natural products",
+        "nutrition",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://dsld.od.nih.gov/> .
 
 kgr:dsstoxdb a schema1:DataSource ;
     rdfs:label "Distributed Structure-Searchable Toxicity (DSSTox) Database" ;
@@ -11821,6 +11904,29 @@ kgr:gtr a schema1:DataSource ;
     foaf:homepage <https://www.ncbi.nlm.nih.gov/gtr/> ;
     foaf:maker kgr:ncbi .
 
+kgr:gtrd a schema1:DataSource ;
+    rdfs:label "Gtrd" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for gtrd. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "gtrd" ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
+    schema1:name "Gtrd" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:gtrnadb a schema1:DataSource ;
     rdfs:label "GtRNAdb" ;
     dcterms:created "2009-01-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -12858,6 +12964,29 @@ kgr:htn a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/aellenhicks/htn_owl> .
 
+kgr:htridb a schema1:DataSource ;
+    rdfs:label "Htridb" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for htridb. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "htridb" ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
+    schema1:name "Htridb" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:hubmap a schema1:Aggregator ;
     rdfs:label "HuBMAP" ;
     dcterms:created "2025-08-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -13445,7 +13574,7 @@ kgr:idisk a schema1:KnowledgeGraph ;
         <PMID:40106799>,
         <doi:10.1093/jamia/ocz216> ;
     dcterms:license <http://creativecommons.org/licenses/by-sa/3.0/us/> ;
-    dcterms:modified "2026-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ibkh.graph,
         kgr:idisk.code,
         kgr:idisk.idisk2-entities,
@@ -14330,7 +14459,20 @@ kgr:jaspar a schema1:DataSource ;
         kgr:jaspar.api,
         kgr:jaspar.docs,
         kgr:jaspar.matrices,
-        kgr:jaspar.web ;
+        kgr:jaspar.web,
+        kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
     schema1:name "JASPAR" ;
     doap:repository <https://github.com/asntech/jaspar> ;
     skos:inScheme "gene regulation",
@@ -14741,7 +14883,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-10T17:35:27+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-10T18:17:02+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15371,6 +15513,32 @@ kgr:lncrnalyzr a schema1:KnowledgeGraph ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://lncrnalyzr.maayanlab.cloud/> .
+
+kgr:lnhpd a schema1:DataSource ;
+    rdfs:label "Licensed Natural Health Products Database" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Licensed Natural Health Products Database (LNHPD), managed by Health Canada, holds information about natural health products that have been issued a product licence in Canada, including vitamin and mineral supplements, herbal remedies, traditional medicines, probiotics, and homeopathic medicines. Each product is identified by a Natural Product Number (NPN) or Homeopathic Medicine Number (DIN-HM), and records give the licence holder, medicinal and non-medicinal ingredients, dosage form, recommended dose and use, route, and risk information. It covers more than 150,000 licensed and discontinued products and is updated nightly." ;
+    dcterms:identifier "lnhpd" ;
+    dcterms:license <https://open.canada.ca/en/open-government-licence-canada> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:idisk.idisk2-entities,
+        kgr:idisk.idisk2-relations,
+        kgr:lnhpd.api,
+        kgr:lnhpd.api-guide,
+        kgr:lnhpd.open-data,
+        kgr:lnhpd.productlicence.json,
+        kgr:lnhpd.search ;
+    schema1:name "Licensed Natural Health Products Database" ;
+    skos:altLabel "BDPSNH",
+        "Base de données des produits de santé naturels homologués",
+        "LNHPD" ;
+    skos:inScheme "chemistry and biochemistry",
+        "natural products",
+        "nutrition",
+        "pharmacology",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://health-products.canada.ca/lnhpd-bdpsnh/> .
 
 kgr:loggerhead a schema1:Ontology ;
     rdfs:label "Loggerhead nesting" ;
@@ -17532,6 +17700,32 @@ kgr:msigdb a schema1:DataSource ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://www.gsea-msigdb.org/gsea/msigdb/> .
+
+kgr:mskcc-about-herbs a schema1:DataSource ;
+    rdfs:label "MSKCC About Herbs" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "About Herbs is a database from the Integrative Medicine Service at Memorial Sloan Kettering Cancer Center with evidence-based monographs on about 300 herbs, botanicals, dietary supplements, and other products. Each monograph has a version for patients and caregivers and one for healthcare professionals; the professional version covers the scientific name, clinical summary, purported uses, mechanism of action, contraindications, adverse reactions, herb-drug and herb-lab interactions, and references. A pharmacist and botanicals expert updates the content continually, and it is also offered as a mobile app for iOS and Android." ;
+    dcterms:identifier "mskcc-about-herbs" ;
+    dcterms:isReferencedBy <PMID:31567464> ;
+    dcterms:license <https://www.mskcc.org/legal-disclaimer> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:idisk.idisk2-entities,
+        kgr:idisk.idisk2-relations,
+        kgr:mskcc-about-herbs.app,
+        kgr:mskcc-about-herbs.faq,
+        kgr:mskcc-about-herbs.portal ;
+    schema1:name "MSKCC About Herbs" ;
+    skos:altLabel "About Herbs",
+        "About Herbs, Botanicals & Other Products" ;
+    skos:inScheme "biomedical",
+        "cancer",
+        "chemistry and biochemistry",
+        "drug interactions",
+        "natural products",
+        "nutrition",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs> .
 
 kgr:mtbs a schema1:DataSource ;
     rdfs:label "Monitoring Trends in Burn Severity" ;
@@ -20889,7 +21083,20 @@ kgr:oreganno a schema1:DataSource ;
     dcterms:license <https://www.gnu.org/licenses/lgpl.html> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dorothea.graph,
-        kgr:oreganno.ucsc ;
+        kgr:oreganno.ucsc,
+        kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
     schema1:name "ORegAnno" ;
     skos:inScheme "gene regulation",
         "genomics",
@@ -24520,6 +24727,29 @@ kgr:reconx a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.vmh.life/> .
 
+kgr:redfly a schema1:DataSource ;
+    rdfs:label "Redfly" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for redfly. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "redfly" ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
+    schema1:name "Redfly" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:rediportal a schema1:DataSource ;
     rdfs:label "REDIportal" ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -24676,7 +24906,20 @@ kgr:remap a schema1:DataSource ;
         kgr:dorothea.graph,
         kgr:remap.api,
         kgr:remap.downloads,
-        kgr:remap.portal ;
+        kgr:remap.portal,
+        kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
     schema1:name "ReMap" ;
     skos:inScheme "gene regulation",
         "genomics",
@@ -26660,7 +26903,7 @@ kgr:spoke a schema1:KnowledgeGraph ;
         <https://doi.org/10.1093/bioinformatics/btae560>,
         <https://doi.org/10.7554/eLife.26726> ;
     dcterms:license <https://spoke.rbvi.ucsf.edu/docs/licenses.html> ;
-    dcterms:modified "2026-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:spoke-okn.graph,
         kgr:spoke.api,
@@ -27649,6 +27892,48 @@ kgr:tfacts a schema1:DataSource ;
     adms:status "Inactive" ;
     foaf:homepage <http://www.tfacts.org/> .
 
+kgr:tflink a schema1:Aggregator ;
+    rdfs:label "TFLink" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "TFLink is an integrated gateway to transcription factor (TF) to target gene interactions, TF binding site locations, and binding site sequences for human and six model organisms (mouse, rat, zebrafish, fruit fly, nematode, and yeast). It integrates small-scale and large-scale experimental evidence from ten source databases, including TRRUST, GTRD, ReMap, JASPAR, and DoRothEA, recording the source database, detection method, and PubMed IDs for each record. Version 1.0 holds about 11.8 million interactions between 3,984 TFs and 110,808 target genes, available through a web interface and as downloadable tables and MITAB, GMT, GFF3, and FASTA files." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:identifier "tflink" ;
+    dcterms:isReferencedBy <PMID:36124642> ;
+    dcterms:license <https://tflink.net/faq/> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:4932>,
+        <NCBITaxon:6239>,
+        <NCBITaxon:7227>,
+        <NCBITaxon:7955>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:spoke.graph,
+        kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.browse,
+        kgr:tflink.downloads,
+        kgr:tflink.faq,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish,
+        kgr:tflink.website-code ;
+    schema1:name "TFLink" ;
+    doap:repository <https://github.com/NetBiol/TFlink> ;
+    skos:inScheme "gene regulation",
+        "genomics",
+        "model organisms",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://tflink.net/> .
+
 kgr:tgma a schema1:Ontology ;
     rdfs:label "Mosquito gross anatomy ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -27993,6 +28278,19 @@ kgr:tred a schema1:DataSource ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/17202159/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dorothea.graph,
+        kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish,
         kgr:tred.docs ;
     schema1:name "Transcriptional Regulatory Element Database" ;
     skos:inScheme "gene regulation",
@@ -28027,6 +28325,19 @@ kgr:trrust a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dorothea.graph,
+        kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish,
         kgr:trrust.human.tsv,
         kgr:trrust.mouse.tsv,
         kgr:trrust.web ;
@@ -29796,6 +30107,29 @@ kgr:xpo a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/obophenotype/xenopus-phenotype-ontology> .
 
+kgr:yeastract a schema1:DataSource ;
+    rdfs:label "Yeastract" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for yeastract. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "yeastract" ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:tflink.binding-sites.human,
+        kgr:tflink.binding-sites.human.fasta,
+        kgr:tflink.binding-sites.human.gff3,
+        kgr:tflink.downloads,
+        kgr:tflink.gmt.human,
+        kgr:tflink.interactions.fly,
+        kgr:tflink.interactions.human,
+        kgr:tflink.interactions.human.mitab,
+        kgr:tflink.interactions.mouse,
+        kgr:tflink.interactions.rat,
+        kgr:tflink.interactions.worm,
+        kgr:tflink.interactions.yeast,
+        kgr:tflink.interactions.zebrafish ;
+    schema1:name "Yeastract" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:yoda a schema1:DataSource ;
     rdfs:label "The YODA Project" ;
     dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -31288,6 +31622,86 @@ kgr:bioplanet.data a schema1:Product ;
     rdfs:label "BioPlanet Pathway Data" ;
     dcterms:description "Comprehensive integrated pathway resource that incorporates 1,658 distinct human pathways." ;
     schema1:url <https://tripod.nih.gov/bioplanet/download/pathway.csv> .
+
+kgr:bioplex.1.0-293t a schema1:GraphProduct ;
+    rdfs:label "BioPlex 1.0 Interactions (HEK293T)" ;
+    dcterms:description "BioPlex 1.0 human protein-protein interaction network from HEK293T cells (2,594 baits; about 24,000 interactions among about 8,000 proteins)." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_interactionList_v2.tsv> .
+
+kgr:bioplex.1.0-293t-directed a schema1:GraphProduct ;
+    rdfs:label "BioPlex 1.0 Directed Edges (HEK293T)" ;
+    dcterms:description "BioPlex 1.0 network (HEK293T) as directed bait-prey edges, with bait and prey Entrez Gene IDs and symbols." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_1.0_293T_DirectedEdges.tsv> .
+
+kgr:bioplex.2.0-293t a schema1:GraphProduct ;
+    rdfs:label "BioPlex 2.0 Interactions (HEK293T)" ;
+    dcterms:description "BioPlex 2.0 human protein-protein interaction network from HEK293T cells (5,891 baits; about 57,000 interactions among about 11,000 proteins)." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_interactionList_v4a.tsv> .
+
+kgr:bioplex.2.0-293t-directed a schema1:GraphProduct ;
+    rdfs:label "BioPlex 2.0 Directed Edges (HEK293T)" ;
+    dcterms:description "BioPlex 2.0 network (HEK293T) as directed bait-prey edges, with bait and prey Entrez Gene IDs and symbols." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_2.0_293T_DirectedEdges.tsv> .
+
+kgr:bioplex.2.0-293t-unfiltered a schema1:Product ;
+    rdfs:label "BioPlex 2.0 Unfiltered Bait-Prey Pairs (HEK293T)" ;
+    dcterms:description "All candidate bait-prey pairs before background filtering, with CompPASS scores. The BioPlex site advises using these with caution." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BaitPreyPairs_noFilters_BP2a.tsv> .
+
+kgr:bioplex.3.0-293t a schema1:GraphProduct ;
+    rdfs:label "BioPlex 3.0 Interactions (HEK293T)" ;
+    dcterms:description "BioPlex 3.0 human protein-protein interaction network from HEK293T cells (10,128 baits; nearly 120,000 interactions among nearly 15,000 proteins), keyed by Entrez Gene IDs and UniProt accessions with interaction probabilities." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_293T_Network_10K_Dec_2019.tsv> .
+
+kgr:bioplex.3.0-293t-directed a schema1:GraphProduct ;
+    rdfs:label "BioPlex 3.0 Directed Edges (HEK293T)" ;
+    dcterms:description "BioPlex 3.0 network (HEK293T) as directed bait-prey edges, with bait and prey Entrez Gene IDs and symbols." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_3.0_293T_DirectedEdges.tsv> .
+
+kgr:bioplex.3.0-293t-unfiltered a schema1:Product ;
+    rdfs:label "BioPlex 3.0 Unfiltered Bait-Prey Pairs (HEK293T)" ;
+    dcterms:description "All candidate bait-prey pairs before background filtering, with CompPASS scores. The BioPlex site advises using these with caution." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_BaitPreyPairs_noFilters_293T_10K_Dec_2019.tsv> .
+
+kgr:bioplex.3.0-hct116 a schema1:GraphProduct ;
+    rdfs:label "BioPlex 3.0 Interactions (HCT116)" ;
+    dcterms:description "BioPlex human protein-protein interaction network from HCT116 cells (5,522 baits; about 71,000 interactions among 10,531 proteins), keyed by Entrez Gene IDs and UniProt accessions with interaction probabilities." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_HCT116_Network_5.5K_Dec_2019.tsv> .
+
+kgr:bioplex.3.0-hct116-directed a schema1:GraphProduct ;
+    rdfs:label "BioPlex 3.0 Directed Edges (HCT116)" ;
+    dcterms:description "BioPlex 3.0 network (HCT116) as directed bait-prey edges, with bait and prey Entrez Gene IDs and symbols." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_3.0_HCT116_DirectedEdges.tsv> .
+
+kgr:bioplex.bioplexpy a schema1:ProgrammingInterface ;
+    rdfs:label "BioPlexPy" ;
+    dcterms:description "Python package for accessing and analyzing BioPlex protein interaction data. MIT license." ;
+    schema1:url <https://pypi.org/project/bioplexpy/> .
+
+kgr:bioplex.comppass a schema1:ProcessProduct ;
+    rdfs:label "CompPASS" ;
+    dcterms:description "Comparative Proteomic Analysis Software Suite, the scoring method (NWD and Z scores) used to identify high-confidence interacting proteins in BioPlex; R implementation in cRomppass." ;
+    schema1:url <https://github.com/dnusinow/cRomppass> .
+
+kgr:bioplex.explorer a schema1:GraphicalInterface ;
+    rdfs:label "BioPlex Explorer" ;
+    dcterms:description "Interactive web explorer (BioPlex Display) for browsing BioPlex interactions with conservation, community, domain, and fitness views." ;
+    schema1:url <https://bioplex.hms.harvard.edu/explorer/> .
+
+kgr:bioplex.hct116-unfiltered a schema1:Product ;
+    rdfs:label "BioPlex HCT116 Unfiltered Bait-Prey Pairs" ;
+    dcterms:description "All candidate bait-prey pairs before background filtering, with CompPASS scores. The BioPlex site advises using these with caution." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/BioPlex_BaitPreyPairs_noFilters_HCT116_5.5K_Dec_2019.tsv> .
+
+kgr:bioplex.proteome-comparison a schema1:Product ;
+    rdfs:label "HEK293T-HCT116 Proteome Comparison" ;
+    dcterms:description "TMT-based protein abundance comparison between HEK293T and HCT116 cells, published with BioPlex 3.0." ;
+    schema1:url <https://bioplex.hms.harvard.edu/data/293T_HCT116_ProteomeComparison.tsv> .
+
+kgr:bioplex.raw-data a schema1:GraphicalInterface ;
+    rdfs:label "BioPlex Raw MS Data Download" ;
+    dcterms:description "Web tool for downloading raw mass spectrometry data for up to 10 bait proteins per query." ;
+    schema1:url <https://bioplex.hms.harvard.edu/download.php> .
 
 kgr:bioregistry.api a schema1:ProgrammingInterface ;
     rdfs:label "Bioregistry REST API" ;
@@ -34081,6 +34495,36 @@ kgr:drugmechdb.web a schema1:GraphicalInterface ;
     rdfs:label "DrugMechDB Website" ;
     dcterms:description "Web interface for exploring curated DrugMechDB paths by drug and disease." ;
     schema1:url <https://sulab.github.io/DrugMechDB/> .
+
+kgr:dsld.api a schema1:ProgrammingInterface ;
+    rdfs:label "DSLD Label API" ;
+    dcterms:description "REST API for retrieving individual label records and for searching and browsing labels, brands, and ingredient groups. Usable without a key; an api.data.gov key raises the rate limit." ;
+    schema1:url <https://api.ods.od.nih.gov/dsld/v9/> .
+
+kgr:dsld.api-guide a schema1:DocumentationProduct ;
+    rdfs:label "DSLD API Guide" ;
+    dcterms:description "Guide to the DSLD API, covering endpoints, rate limits, and the CC0 licensing statement." ;
+    schema1:url <https://dsld.od.nih.gov/api-guide> .
+
+kgr:dsld.csv a schema1:Product ;
+    rdfs:label "DSLD Full Database (CSV)" ;
+    dcterms:description "Full DSLD database download as CSV files. Updated with each release." ;
+    schema1:url <https://api.ods.od.nih.gov/dsld/s3/data/DSLD-full-database-CSV.zip> .
+
+kgr:dsld.json a schema1:Product ;
+    rdfs:label "DSLD Full Database (JSON)" ;
+    dcterms:description "Full DSLD database download in JSON, with complete label information for all current and historical products. Updated with each release." ;
+    schema1:url <https://api.ods.od.nih.gov/dsld/s3/data/DSLD-full-database-JSON.zip> .
+
+kgr:dsld.portal a schema1:GraphicalInterface ;
+    rdfs:label "DSLD Web Interface" ;
+    dcterms:description "DSLD web interface for searching and browsing dietary supplement labels by product, brand, or ingredient. Search results and product pages can be exported as CSV, Excel, or JSON." ;
+    schema1:url <https://dsld.od.nih.gov/> .
+
+kgr:dsld.xlsx a schema1:Product ;
+    rdfs:label "DSLD Full Database (Excel)" ;
+    dcterms:description "Full DSLD database download as Excel workbooks. Updated with each release." ;
+    schema1:url <https://api.ods.od.nih.gov/dsld/s3/data/DSLD-full-database-XLSX.zip> .
 
 kgr:dsmz-leibniz-institute-dsmz-german-collection-of-m a "Organization" ;
     rdfs:label "BacDive" .
@@ -37786,16 +38230,6 @@ kgr:identifiers-org.sparql a schema1:ProgrammingInterface ;
     dcterms:description "SPARQL endpoint over the Identifiers.org registry, generated with Ontop from R2RML mappings; the registry is modeled as a dcat:Catalog, namespaces as dcat:Dataset and resources as dcat:DataService." ;
     schema1:url <https://sparql.api.identifiers.org/sparql> .
 
-kgr:idisk.idisk2-entities a schema1:Product ;
-    rdfs:label "iDISK 2.0 Entities" ;
-    dcterms:description "iDISK 2.0 entity files (dietary supplement ingredients, products, drugs, diseases, and signs and symptoms) in CSV format, integrating DSLD, LNHPD, and MSKCC About Herbs." ;
-    schema1:url <https://drive.google.com/drive/folders/10mpvyHbRhhsrylw2o3xToT8RihvSWIA4> .
-
-kgr:idisk.idisk2-relations a schema1:Product ;
-    rdfs:label "iDISK 2.0 Relations" ;
-    dcterms:description "iDISK 2.0 relationship files (product-ingredient, ingredient-disease, ingredient-drug, and ingredient-symptom) in CSV format." ;
-    schema1:url <https://drive.google.com/drive/folders/1XTtb4KKxUXfqG8tZTbvxtwv7IDUHe424> .
-
 kgr:ido.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "IDO KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Infectious Disease Ontology (IDO), produced by KG-Bioportal from the BioPortal submission. The archive contains IDO_nodes.tsv and IDO_edges.tsv." ;
@@ -38958,6 +39392,31 @@ kgr:lncrnalyzr.portal a schema1:GraphicalInterface ;
     rdfs:label "lncRNAlyzr Explorer" ;
     dcterms:description "Interactive web platform for exploring lncRNA networks with expression visualization and functional analysis tools" ;
     schema1:url <https://lncrnalyzr.maayanlab.cloud/> .
+
+kgr:lnhpd.api a schema1:ProgrammingInterface ;
+    rdfs:label "LNHPD API" ;
+    dcterms:description "REST API (base URI https://health-products.canada.ca/api/natural-licences/) returning product licence, medicinal and non-medicinal ingredient, ingredient source, dose, purpose, risk, and route records in JSON or XML, in English or French. The product URL is a sample product licence query." ;
+    schema1:url <https://health-products.canada.ca/api/natural-licences/productlicence/?lang=en&type=json&id=3894657> .
+
+kgr:lnhpd.api-guide a schema1:DocumentationProduct ;
+    rdfs:label "LNHPD API Guide" ;
+    dcterms:description "LNHPD API guide describing endpoints, parameters, response fields, and sample responses." ;
+    schema1:url <https://health-products.canada.ca/api/documentation/lnhpd-documentation-en.html> .
+
+kgr:lnhpd.open-data a schema1:Product ;
+    rdfs:label "LNHPD Open Data Record" ;
+    dcterms:description "Open Government Portal dataset record for licensed natural health products, listing the API JSON and XML extract endpoints for each entity in English and French." ;
+    schema1:url <https://open.canada.ca/data/en/dataset/ef546c83-43a8-4404-943e-ab324164eeb3> .
+
+kgr:lnhpd.productlicence.json a schema1:Product ;
+    rdfs:label "LNHPD Product Licence Extract (JSON)" ;
+    dcterms:description "Full extract of all LNHPD product licence records in JSON, returned by the API's product licence endpoint without an id or page parameter. Other entities (ingredients, dose, purpose, risk, route) have matching endpoints, also offered as XML. Updated daily." ;
+    schema1:url <https://health-products.canada.ca/api/natural-licences/productlicence/?lang=en&type=json> .
+
+kgr:lnhpd.search a schema1:GraphicalInterface ;
+    rdfs:label "LNHPD Search" ;
+    dcterms:description "Web search for licensed natural health products by product name, NPN or DIN-HM, ingredient, company, and other fields, with basic and advanced search." ;
+    schema1:url <https://health-products.canada.ca/lnhpd-bdpsnh/> .
 
 kgr:loinc.api.fhir a schema1:ProgrammingInterface ;
     rdfs:label "LOINC FHIR API" ;
@@ -40260,6 +40719,21 @@ kgr:msigdb.investigate a schema1:GraphicalInterface ;
 
 kgr:mskcc a "Organization" ;
     rdfs:label "Memorial Sloan Kettering Cancer Center" .
+
+kgr:mskcc-about-herbs.app a schema1:GraphicalInterface ;
+    rdfs:label "About Herbs Mobile App" ;
+    dcterms:description "About Herbs mobile app for iOS and Android devices, presented by the MSK Integrative Medicine Service. This page links to the App Store and Google Play listings." ;
+    schema1:url <https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs/about-herbs> .
+
+kgr:mskcc-about-herbs.faq a schema1:DocumentationProduct ;
+    rdfs:label "Herbs, Botanicals and Other Products FAQs" ;
+    dcterms:description "Frequently asked questions about herbs, botanicals, and other products, covering supplements in cancer prevention and treatment and herb-drug interactions." ;
+    schema1:url <https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs/herbs-botanicals-other-products-faqs> .
+
+kgr:mskcc-about-herbs.portal a schema1:GraphicalInterface ;
+    rdfs:label "About Herbs Web Database" ;
+    dcterms:description "Searchable web database of About Herbs monographs, browsable by name or letter, with patient and healthcare professional versions of each monograph." ;
+    schema1:url <https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs/search> .
 
 kgr:mtbs.direct-download a schema1:Product ;
     rdfs:label "MTBS Direct Download" ;
@@ -46090,6 +46564,21 @@ kgr:tfacts.publication a schema1:DocumentationProduct ;
     dcterms:description "Peer-reviewed publication describing the TFactS method and the curated catalogue of signed transcription factor to target gene interactions. The original tfacts.org web server is defunct, so the paper serves as the authoritative reference for the resource." ;
     schema1:url <https://doi.org/10.1093/nar/gkq149> .
 
+kgr:tflink.browse a schema1:GraphicalInterface ;
+    rdfs:label "TFLink Browse" ;
+    dcterms:description "Web interface for browsing and searching TF-target interactions by organism, gene name, UniProt ID, NCBI Gene ID, role (TF or target), and evidence scale, with an entry page for each gene." ;
+    schema1:url <https://tflink.net/browse/> .
+
+kgr:tflink.faq a schema1:DocumentationProduct ;
+    rdfs:label "TFLink FAQ" ;
+    dcterms:description "Frequently asked questions covering file formats, source database versions and download dates, terms of use, and the project team." ;
+    schema1:url <https://tflink.net/faq/> .
+
+kgr:tflink.website-code a schema1:ProcessProduct ;
+    rdfs:label "TFLink Website Source" ;
+    dcterms:description "Source code of the TFLink website." ;
+    schema1:url <https://github.com/NetBiol/TFlink> .
+
 kgr:tgma.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "TGMA KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Mosquito Gross Anatomy Ontology (TGMA), produced by KG-Bioportal from the BioPortal submission. The archive contains TGMA_nodes.tsv and TGMA_edges.tsv." ;
@@ -47742,6 +48231,11 @@ kgr:biomarker.kg a schema1:GraphProduct ;
     rdfs:label "BiomarkerKB Knowledge Graph" ;
     dcterms:description "Neo4j knowledge graph built from curated BiomarkerKB data and integrated into the CFDE Unified Biomedical Knowledge Graph (UBKG). The initial release comprises over 300,000 nodes and 1.2 million edges." ;
     schema1:url <https://github.com/clinical-biomarkers/Knowledge-Graph> .
+
+kgr:bioplex.bioconductor a schema1:ProgrammingInterface ;
+    rdfs:label "BioPlex R Package (Bioconductor)" ;
+    dcterms:description "Bioconductor data package giving R access to the BioPlex HEK293T and HCT116 networks, together with CORUM complexes and transcriptome and proteome data. Artistic-2.0 license." ;
+    schema1:url <https://bioconductor.org/packages/BioPlex/> .
 
 kgr:biostudies.api a schema1:ProgrammingInterface ;
     rdfs:label "BioStudies REST API" ;
@@ -52532,6 +53026,16 @@ kgr:hrpimp.huri.psi a schema1:Product ;
     dcterms:description "Current HuRI PSI-MI formatted interaction file with detailed experimental information and isoform-specific ORF, transcript, and protein identifiers" ;
     schema1:url <https://www.interactome-atlas.org/data/HuRI.psi> .
 
+kgr:idisk.idisk2-entities a schema1:Product ;
+    rdfs:label "iDISK 2.0 Entities" ;
+    dcterms:description "iDISK 2.0 entity files (dietary supplement ingredients, products, drugs, diseases, and signs and symptoms) in CSV format, integrating DSLD, LNHPD, and MSKCC About Herbs." ;
+    schema1:url <https://drive.google.com/drive/folders/10mpvyHbRhhsrylw2o3xToT8RihvSWIA4> .
+
+kgr:idisk.idisk2-relations a schema1:Product ;
+    rdfs:label "iDISK 2.0 Relations" ;
+    dcterms:description "iDISK 2.0 relationship files (product-ingredient, ingredient-disease, ingredient-drug, and ingredient-symptom) in CSV format." ;
+    schema1:url <https://drive.google.com/drive/folders/1XTtb4KKxUXfqG8tZTbvxtwv7IDUHe424> .
+
 kgr:imodulondb.datasets a schema1:Product ;
     rdfs:label "iModulonDB Datasets" ;
     dcterms:description "Downloadable transcriptomic datasets and iModulon decompositions for 15 organisms including E. coli, B. subtilis, S. aureus, M. tuberculosis, P. aeruginosa, P. putida, and others. Includes gene expression matrices, iModulon activity matrices, gene weights, and metadata for over 9500 expression profiles from 525 studies." ;
@@ -53985,6 +54489,71 @@ kgr:kinace.portal a schema1:GraphicalInterface ;
     rdfs:label "KiNet Web Portal" ;
     dcterms:description "Interactive Shiny web interface for exploring and visualizing human kinase-substrate interactions" ;
     schema1:url <https://kinet.kinametrix.com/> .
+
+kgr:tflink.binding-sites.human a schema1:Product ;
+    rdfs:label "TFLink Human Binding Sites" ;
+    dcterms:description "Genomic locations of human TF binding sites, with the binding TF, target gene, and source database." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_annotation_v1.0.tsv.gz> .
+
+kgr:tflink.binding-sites.human.fasta a schema1:Product ;
+    rdfs:label "TFLink Human Binding Site Sequences" ;
+    dcterms:description "Nucleotide sequences of human TF binding sites in FASTA format." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_v1.0.fasta> .
+
+kgr:tflink.binding-sites.human.gff3 a schema1:Product ;
+    rdfs:label "TFLink Human Binding Sites (GFF3)" ;
+    dcterms:description "Human TF binding site locations as a GFF3 annotation file." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_annotation_v1.0.gff3> .
+
+kgr:tflink.downloads a schema1:Product ;
+    rdfs:label "TFLink Downloads" ;
+    dcterms:description "Download page listing interaction tables, MITAB files, GMT gene sets, and binding site tables, GFF3 annotations, and FASTA sequences for each organism, split into small-scale, large-scale, and combined evidence." ;
+    schema1:url <https://tflink.net/download/> .
+
+kgr:tflink.gmt.human a schema1:Product ;
+    rdfs:label "TFLink Human TF Target Gene Sets" ;
+    dcterms:description "Human gene sets, one per transcription factor, listing its target genes by NCBI Gene ID, in GMT format. Versions keyed by UniProt ID and protein name are also offered." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_interactions_All_GMT_ncbiGeneID_v1.0.gmt> .
+
+kgr:tflink.interactions.fly a schema1:GraphProduct ;
+    rdfs:label "TFLink Fruit Fly Interactions" ;
+    dcterms:description "All TF-target gene interactions for Drosophila melanogaster (small- and large-scale evidence combined), with UniProt IDs, NCBI Gene IDs, and names of TF and target, detection methods, PubMed IDs, source databases, and a small-scale flag." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Drosophila_melanogaster_interactions_All_simpleFormat_v1.0.tsv> .
+
+kgr:tflink.interactions.human a schema1:GraphProduct ;
+    rdfs:label "TFLink Human Interactions" ;
+    dcterms:description "All TF-target gene interactions for Homo sapiens (small- and large-scale evidence combined), with UniProt IDs, NCBI Gene IDs, and names of TF and target, detection methods, PubMed IDs, source databases, and a small-scale flag." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_interactions_All_simpleFormat_v1.0.tsv.gz> .
+
+kgr:tflink.interactions.human.mitab a schema1:GraphProduct ;
+    rdfs:label "TFLink Human Interactions (MITAB)" ;
+    dcterms:description "All human TF-target gene interactions in PSI-MI MITAB 2.8 format." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_interactions_All_mitab_v1.0.tsv.gz> .
+
+kgr:tflink.interactions.mouse a schema1:GraphProduct ;
+    rdfs:label "TFLink Mouse Interactions" ;
+    dcterms:description "All TF-target gene interactions for Mus musculus (small- and large-scale evidence combined), with UniProt IDs, NCBI Gene IDs, and names of TF and target, detection methods, PubMed IDs, source databases, and a small-scale flag." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Mus_musculus_interactions_All_simpleFormat_v1.0.tsv.gz> .
+
+kgr:tflink.interactions.rat a schema1:GraphProduct ;
+    rdfs:label "TFLink Rat Interactions" ;
+    dcterms:description "All TF-target gene interactions for Rattus norvegicus (small- and large-scale evidence combined), with UniProt IDs, NCBI Gene IDs, and names of TF and target, detection methods, PubMed IDs, source databases, and a small-scale flag." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Rattus_norvegicus_interactions_All_simpleFormat_v1.0.tsv> .
+
+kgr:tflink.interactions.worm a schema1:GraphProduct ;
+    rdfs:label "TFLink Nematode Interactions" ;
+    dcterms:description "All TF-target gene interactions for Caenorhabditis elegans (small- and large-scale evidence combined), with UniProt IDs, NCBI Gene IDs, and names of TF and target, detection methods, PubMed IDs, source databases, and a small-scale flag." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Caenorhabditis_elegans_interactions_All_simpleFormat_v1.0.tsv> .
+
+kgr:tflink.interactions.yeast a schema1:GraphProduct ;
+    rdfs:label "TFLink Yeast Interactions" ;
+    dcterms:description "All TF-target gene interactions for Saccharomyces cerevisiae (small- and large-scale evidence combined), with UniProt IDs, NCBI Gene IDs, and names of TF and target, detection methods, PubMed IDs, source databases, and a small-scale flag." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Saccharomyces_cerevisiae_interactions_All_simpleFormat_v1.0.tsv> .
+
+kgr:tflink.interactions.zebrafish a schema1:GraphProduct ;
+    rdfs:label "TFLink Zebrafish Interactions" ;
+    dcterms:description "All TF-target gene interactions for Danio rerio (small- and large-scale evidence combined), with UniProt IDs, NCBI Gene IDs, and names of TF and target, detection methods, PubMed IDs, source databases, and a small-scale flag." ;
+    schema1:url <https://cdn.netbiol.org/tflink/download_files/TFLink_Danio_rerio_interactions_All_simpleFormat_v1.0.tsv> .
 
 kgr:ars.api a schema1:ProgrammingInterface ;
     rdfs:label "ARS API" ;

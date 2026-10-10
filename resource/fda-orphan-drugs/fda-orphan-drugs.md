@@ -73,8 +73,6 @@ products:
     source: fda-orphan-drugs
   product_url: https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions/designating-orphan-product-drugs-and-biological-products
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface

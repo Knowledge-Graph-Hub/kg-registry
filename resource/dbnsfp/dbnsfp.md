@@ -245,8 +245,6 @@ products:
     source: dbnsfp
   product_url: https://usf.box.com/shared/static/ffwlywsat3q5ijypvunno3rg6steqfs8
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface

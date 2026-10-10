@@ -15,6 +15,7 @@ original_source:
   source: dbpedia
 - relation_type: prov:wasDerivedFrom
   source: wikidata
+product_file_size: 5343
 product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikidata-kg-dump
 layout: product_detail
 ---

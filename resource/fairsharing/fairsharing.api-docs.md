@@ -9,8 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: fairsharing
 product_url: https://fairsharing.org/API_doc
-warnings:
-- File was not able to be retrieved when checked on 2026-10-05_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

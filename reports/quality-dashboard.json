@@ -1,9 +1,9 @@
 {
   "citations": {
-    "publication_entries_total": 1074,
+    "publication_entries_total": 1084,
     "publication_entries_with_issues": 44,
     "resources_with_citation_issues": 33,
-    "resources_without_publications": 358,
+    "resources_without_publications": 363,
     "validation_errors": 2,
     "validation_warnings": 69
   },
@@ -12,8 +12,8 @@
     "missing_last_modified_date": 0,
     "modified_after_creation": 1022,
     "stale_over_365_days": 0,
-    "unchanged_since_creation": 101,
-    "with_both_dates": 1123
+    "unchanged_since_creation": 110,
+    "with_both_dates": 1132
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -645,6 +645,7 @@
       "biolincc",
       "biolink",
       "biomuta",
+      "bioplex",
       "bioportal",
       "bioregistry",
       "biostudies",
@@ -754,6 +755,7 @@
       "drkg",
       "dron",
       "drug-approvals-kp",
+      "dsld",
       "duo",
       "earthportal",
       "ec",
@@ -950,6 +952,7 @@
       "lipro",
       "lmha",
       "lncrnadisease",
+      "lnhpd",
       "loggerhead",
       "lotus",
       "louisiana-tumor-registry",
@@ -1003,6 +1006,7 @@
       "mps-db",
       "mro",
       "ms",
+      "mskcc-about-herbs",
       "mtbs",
       "multiomics-kp",
       "mutationds",
@@ -1264,6 +1268,7 @@
       "taxrank",
       "tera",
       "text-mining-kp",
+      "tflink",
       "tgma",
       "tissues",
       "tmrnawebsite",
@@ -1741,6 +1746,24 @@
       "biomuta.portal",
       "bioplanet",
       "bioplanet.data",
+      "bioplex",
+      "bioplex.1.0-293t",
+      "bioplex.1.0-293t-directed",
+      "bioplex.2.0-293t",
+      "bioplex.2.0-293t-directed",
+      "bioplex.2.0-293t-unfiltered",
+      "bioplex.3.0-293t",
+      "bioplex.3.0-293t-directed",
+      "bioplex.3.0-293t-unfiltered",
+      "bioplex.3.0-hct116",
+      "bioplex.3.0-hct116-directed",
+      "bioplex.bioconductor",
+      "bioplex.bioplexpy",
+      "bioplex.comppass",
+      "bioplex.explorer",
+      "bioplex.hct116-unfiltered",
+      "bioplex.proteome-comparison",
+      "bioplex.raw-data",
       "bioportal",
       "bioportal.api",
       "bioportal.portal",
@@ -2600,6 +2623,13 @@
       "drugmechdb",
       "drugmechdb.graph",
       "drugmechdb.web",
+      "dsld",
+      "dsld.api",
+      "dsld.api-guide",
+      "dsld.csv",
+      "dsld.json",
+      "dsld.portal",
+      "dsld.xlsx",
       "dsstoxdb",
       "dsstoxdb.api",
       "dsstoxdb.chemical-api",
@@ -4070,6 +4100,12 @@
       "lncrnalyzr.api",
       "lncrnalyzr.graph",
       "lncrnalyzr.portal",
+      "lnhpd",
+      "lnhpd.api",
+      "lnhpd.api-guide",
+      "lnhpd.open-data",
+      "lnhpd.productlicence.json",
+      "lnhpd.search",
       "loinc",
       "loinc.api.fhir",
       "loinc.archive",
@@ -4489,6 +4525,10 @@
       "msigdb.downloads.mouse",
       "msigdb.gene_families",
       "msigdb.investigate",
+      "mskcc-about-herbs",
+      "mskcc-about-herbs.app",
+      "mskcc-about-herbs.faq",
+      "mskcc-about-herbs.portal",
       "mtbs",
       "mtbs.direct-download",
       "mtbs.viewer",
@@ -6665,6 +6705,23 @@
       "text-mining-kp.graph",
       "tfacts",
       "tfacts.publication",
+      "tflink",
+      "tflink.binding-sites.human",
+      "tflink.binding-sites.human.fasta",
+      "tflink.binding-sites.human.gff3",
+      "tflink.browse",
+      "tflink.downloads",
+      "tflink.faq",
+      "tflink.gmt.human",
+      "tflink.interactions.fly",
+      "tflink.interactions.human",
+      "tflink.interactions.human.mitab",
+      "tflink.interactions.mouse",
+      "tflink.interactions.rat",
+      "tflink.interactions.worm",
+      "tflink.interactions.yeast",
+      "tflink.interactions.zebrafish",
+      "tflink.website-code",
       "tgma",
       "tgma.kg-bioportal",
       "tgma.obo",
@@ -7266,11 +7323,13 @@
       "genophenoenvo-kg",
       "globi",
       "greenclaims",
+      "gtrd",
       "gtrnadb",
       "hald",
       "hippie",
       "hocomoco",
       "hrpimp",
+      "htridb",
       "iev",
       "inchikey",
       "iptmnet",
@@ -7316,6 +7375,7 @@
       "psygenet",
       "qptm",
       "rdp",
+      "redfly",
       "rex",
       "rnadisease",
       "rnainter",
@@ -7340,6 +7400,7 @@
       "unicarbkb",
       "vhog",
       "xenbase",
+      "yeastract",
       "zwd"
     ],
     "missing_creation_date_resource_ids": [],
@@ -7430,6 +7491,7 @@
       "biomarkerkg",
       "biomuta",
       "bioplanet",
+      "bioplex",
       "bioportal",
       "biostudies",
       "bioteque",
@@ -7602,6 +7664,7 @@
       "drugbank",
       "drugcentral",
       "drugmechdb",
+      "dsld",
       "dsstoxdb",
       "duo",
       "earthportal",
@@ -7783,6 +7846,7 @@
       "gtex",
       "gtopdb",
       "gtr",
+      "gtrd",
       "gtrnadb",
       "gtrx",
       "gutmdisorder",
@@ -7811,6 +7875,7 @@
       "hsapdv",
       "hso",
       "htn",
+      "htridb",
       "hubmap",
       "human-proteome-map",
       "humancyc",
@@ -7906,6 +7971,7 @@
       "lncrnadb",
       "lncrnadisease",
       "lncrnalyzr",
+      "lnhpd",
       "loggerhead",
       "loinc",
       "lotus",
@@ -7991,6 +8057,7 @@
       "mro",
       "ms",
       "msigdb",
+      "mskcc-about-herbs",
       "mtbs",
       "multiomics-kp",
       "mutationds",
@@ -8245,6 +8312,7 @@
       "reacto",
       "reactome",
       "reconx",
+      "redfly",
       "rediportal",
       "redrugs",
       "redu",
@@ -8367,6 +8435,7 @@
       "tera",
       "text-mining-kp",
       "tfacts",
+      "tflink",
       "tgma",
       "tiga",
       "tissues",
@@ -8441,6 +8510,7 @@
       "xenbase",
       "xlmod",
       "xpo",
+      "yeastract",
       "yoda",
       "ypo",
       "zea",
@@ -8452,7 +8522,12 @@
       "zp",
       "zwd"
     ],
-    "missing_homepage_url_resource_ids": [],
+    "missing_homepage_url_resource_ids": [
+      "gtrd",
+      "htridb",
+      "redfly",
+      "yeastract"
+    ],
     "missing_infores_id_resource_ids": [
       "1000genomes",
       "4dn",
@@ -8526,6 +8601,7 @@
       "biomarkerkg",
       "biomodels",
       "biomuta",
+      "bioplex",
       "bioregistry",
       "biostudies",
       "bioteque",
@@ -8660,6 +8736,7 @@
       "drkg",
       "dron",
       "drug-approvals-kp",
+      "dsld",
       "duo",
       "earthportal",
       "ebrains",
@@ -8803,6 +8880,7 @@
       "gsso",
       "gtdb",
       "gtr",
+      "gtrd",
       "gtrnadb",
       "gutmdisorder",
       "gutmgene",
@@ -8822,6 +8900,7 @@
       "hrpimp",
       "hso",
       "htn",
+      "htridb",
       "hubmap",
       "human-proteome-map",
       "humancyc",
@@ -8897,6 +8976,7 @@
       "lncrnadb",
       "lncrnadisease",
       "lncrnalyzr",
+      "lnhpd",
       "loggerhead",
       "lotus",
       "louisiana-tumor-registry",
@@ -8959,6 +9039,7 @@
       "mrbase",
       "mro",
       "ms",
+      "mskcc-about-herbs",
       "mtbs",
       "multiomics-kp",
       "mutationds",
@@ -9158,6 +9239,7 @@
       "re3data",
       "reacto",
       "reconx",
+      "redfly",
       "rediportal",
       "redrugs",
       "redu",
@@ -9248,6 +9330,7 @@
       "tcdb",
       "tera",
       "tfacts",
+      "tflink",
       "tgma",
       "tmrnawebsite",
       "to",
@@ -9301,6 +9384,7 @@
       "worldclim",
       "xco",
       "xlmod",
+      "yeastract",
       "yoda",
       "ypo",
       "zea",
@@ -9349,6 +9433,7 @@
       "biomarkerkg",
       "biomuta",
       "bioplanet",
+      "bioplex",
       "bioteque",
       "bitterdb",
       "bluesky",
@@ -9480,6 +9565,7 @@
       "gpmdb",
       "greengenes",
       "gro",
+      "gtrd",
       "gtrnadb",
       "gtrx",
       "gutmdisorder",
@@ -9489,6 +9575,7 @@
       "hippie",
       "hpap",
       "hpidb",
+      "htridb",
       "human-proteome-map",
       "hydrologykg",
       "ibkh",
@@ -9644,6 +9731,7 @@
       "rdf-portal",
       "rdkg",
       "reacto",
+      "redfly",
       "rediportal",
       "redu",
       "refseq",
@@ -9719,6 +9807,7 @@
       "who",
       "wildlifekn",
       "worldclim",
+      "yeastract",
       "ypo",
       "zea",
       "zwd"
@@ -9768,6 +9857,7 @@
       "biolincc",
       "biomodels",
       "bioplanet",
+      "bioplex",
       "bitterdb",
       "bluesky",
       "bootstrep",
@@ -9854,6 +9944,7 @@
       "dolce",
       "dreamkg",
       "drugcentral",
+      "dsld",
       "dsstoxdb",
       "ec",
       "edrr-invasive-catalog",
@@ -9951,6 +10042,7 @@
       "gro",
       "gtdb",
       "gtr",
+      "gtrd",
       "gtrnadb",
       "gutmdisorder",
       "gutmgene",
@@ -9964,6 +10056,7 @@
       "hpap",
       "hpidb",
       "hprd",
+      "htridb",
       "human-proteome-map",
       "humancyc",
       "humannet",
@@ -10014,6 +10107,7 @@
       "lncipedia",
       "lncrnadb",
       "lncrnadisease",
+      "lnhpd",
       "loggerhead",
       "loinc",
       "lotus",
@@ -10061,6 +10155,7 @@
       "mps-db",
       "mrbase",
       "msigdb",
+      "mskcc-about-herbs",
       "mtbs",
       "multiomics-kp",
       "mutationds",
@@ -10180,6 +10275,7 @@
       "rdkg",
       "re3data",
       "reconx",
+      "redfly",
       "regl",
       "reliefweb",
       "remap",
@@ -10288,6 +10384,7 @@
       "wipo-tkp",
       "wordnet",
       "worldclim",
+      "yeastract",
       "yoda",
       "ypo",
       "zea",
@@ -11686,6 +11783,23 @@
       "biomuta.pipeline",
       "biomuta.portal",
       "bioplanet.data",
+      "bioplex.1.0-293t",
+      "bioplex.1.0-293t-directed",
+      "bioplex.2.0-293t",
+      "bioplex.2.0-293t-directed",
+      "bioplex.2.0-293t-unfiltered",
+      "bioplex.3.0-293t",
+      "bioplex.3.0-293t-directed",
+      "bioplex.3.0-293t-unfiltered",
+      "bioplex.3.0-hct116",
+      "bioplex.3.0-hct116-directed",
+      "bioplex.bioconductor",
+      "bioplex.bioplexpy",
+      "bioplex.comppass",
+      "bioplex.explorer",
+      "bioplex.hct116-unfiltered",
+      "bioplex.proteome-comparison",
+      "bioplex.raw-data",
       "bioportal.api",
       "bioportal.portal",
       "bioregistry.api",
@@ -12402,6 +12516,12 @@
       "drugcentral.data",
       "drugmechdb.graph",
       "drugmechdb.web",
+      "dsld.api",
+      "dsld.api-guide",
+      "dsld.csv",
+      "dsld.json",
+      "dsld.portal",
+      "dsld.xlsx",
       "dsstoxdb.api",
       "dsstoxdb.chemical-api",
       "dsstoxdb.dashboard",
@@ -13654,6 +13774,11 @@
       "lncrnalyzr.api",
       "lncrnalyzr.graph",
       "lncrnalyzr.portal",
+      "lnhpd.api",
+      "lnhpd.api-guide",
+      "lnhpd.open-data",
+      "lnhpd.productlicence.json",
+      "lnhpd.search",
       "loinc.api.fhir",
       "loinc.archive",
       "loinc.complete",
@@ -14010,6 +14135,9 @@
       "msigdb.downloads.mouse",
       "msigdb.gene_families",
       "msigdb.investigate",
+      "mskcc-about-herbs.app",
+      "mskcc-about-herbs.faq",
+      "mskcc-about-herbs.portal",
       "mtbs.direct-download",
       "mtbs.viewer",
       "multiomics-kp.code",
@@ -15882,6 +16010,22 @@
       "tera.zenodo-dataset",
       "text-mining-kp.graph",
       "tfacts.publication",
+      "tflink.binding-sites.human",
+      "tflink.binding-sites.human.fasta",
+      "tflink.binding-sites.human.gff3",
+      "tflink.browse",
+      "tflink.downloads",
+      "tflink.faq",
+      "tflink.gmt.human",
+      "tflink.interactions.fly",
+      "tflink.interactions.human",
+      "tflink.interactions.human.mitab",
+      "tflink.interactions.mouse",
+      "tflink.interactions.rat",
+      "tflink.interactions.worm",
+      "tflink.interactions.yeast",
+      "tflink.interactions.zebrafish",
+      "tflink.website-code",
       "tgma.kg-bioportal",
       "tgma.obo",
       "tgma.owl",
@@ -16342,6 +16486,7 @@
       "biomodels",
       "biomuta",
       "bioplanet",
+      "bioplex",
       "bioportal",
       "bioregistry",
       "biostudies",
@@ -16520,6 +16665,7 @@
       "drugbank",
       "drugcentral",
       "drugmechdb",
+      "dsld",
       "dsstoxdb",
       "duo",
       "earthportal",
@@ -16704,6 +16850,7 @@
       "gtex",
       "gtopdb",
       "gtr",
+      "gtrd",
       "gtrnadb",
       "gtrx",
       "gutmdisorder",
@@ -16734,6 +16881,7 @@
       "hsapdv",
       "hso",
       "htn",
+      "htridb",
       "hubmap",
       "human-proteome-map",
       "humancyc",
@@ -16829,6 +16977,7 @@
       "lncrnadb",
       "lncrnadisease",
       "lncrnalyzr",
+      "lnhpd",
       "loggerhead",
       "loinc",
       "lotus",
@@ -16914,6 +17063,7 @@
       "mro",
       "ms",
       "msigdb",
+      "mskcc-about-herbs",
       "mtbs",
       "multiomics-kp",
       "mutationds",
@@ -17170,6 +17320,7 @@
       "reacto",
       "reactome",
       "reconx",
+      "redfly",
       "rediportal",
       "redrugs",
       "redu",
@@ -17292,6 +17443,7 @@
       "tera",
       "text-mining-kp",
       "tfacts",
+      "tflink",
       "tgma",
       "tiga",
       "tissues",
@@ -17367,6 +17519,7 @@
       "xenbase",
       "xlmod",
       "xpo",
+      "yeastract",
       "yoda",
       "ypo",
       "zea",
@@ -17752,6 +17905,7 @@
       "google-reviews",
       "greenclaims",
       "gro",
+      "gtrd",
       "habronattus",
       "hifld",
       "homologene",
@@ -17760,6 +17914,7 @@
       "hsapdv",
       "hso",
       "htn",
+      "htridb",
       "hydrologykg",
       "icd10cm",
       "identifier-mappings",
@@ -17784,6 +17939,7 @@
       "kinomescan",
       "lepao",
       "lmha",
+      "lnhpd",
       "loggerhead",
       "louisiana-tumor-registry",
       "lsdb-archive",
@@ -17891,6 +18047,7 @@
       "rbo",
       "rdkg",
       "reacto",
+      "redfly",
       "reliefweb",
       "resid",
       "retriever",
@@ -17955,6 +18112,7 @@
       "wildlifekn",
       "wipo-tkp",
       "worldclim",
+      "yeastract",
       "ypo",
       "zea",
       "zeco",
@@ -18016,7 +18174,12 @@
       "tcdb.download.substrates"
     ],
     "stale_over_365_days_resource_ids": [],
-    "stub_resource_ids": [],
+    "stub_resource_ids": [
+      "gtrd",
+      "htridb",
+      "redfly",
+      "yeastract"
+    ],
     "unchanged_since_creation_resource_ids": [
       "aberowl",
       "acukg",
@@ -18028,6 +18191,7 @@
       "biodata-catalyst",
       "biodivportal",
       "biolincc",
+      "bioplex",
       "biostudies",
       "bitterdb",
       "brain-cell-kg",
@@ -18044,6 +18208,7 @@
       "dbnsfp",
       "ddbj",
       "dolce",
+      "dsld",
       "earthportal",
       "ecoportal",
       "ecso",
@@ -18069,6 +18234,8 @@
       "gpcrdb",
       "gpmdb",
       "gtr",
+      "gtrd",
+      "htridb",
       "i-adopt",
       "iana-mediatype",
       "identifiers-org",
@@ -18080,9 +18247,11 @@
       "jws-online",
       "kg-bioportal",
       "klocd",
+      "lnhpd",
       "lsdb-archive",
       "metabolights",
       "mps-db",
+      "mskcc-about-herbs",
       "mydisease",
       "mygene",
       "n2t",
@@ -18108,21 +18277,24 @@
       "pride-cv",
       "rdf-portal",
       "re3data",
+      "redfly",
       "shepherd",
       "sic",
       "sifr-bioportal",
       "smartapi",
       "sparc",
       "sugi-atlas",
+      "tflink",
       "usgs",
       "vdjserver",
       "who-ictrp",
+      "yeastract",
       "yoda",
       "zirc"
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-10-10T17:44:27Z",
+  "generated_at": "2026-10-10T18:29:22Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 166,
     "with_evaluation_page": 125,
@@ -18130,49 +18302,49 @@
   },
   "links": {
     "broken_urls": 260,
-    "cache_hits": 5345,
+    "cache_hits": 5398,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 5138,
-    "live_checked_urls": 53,
+    "healthy_urls": 5188,
+    "live_checked_urls": 50,
     "mode": "live",
-    "total_unique_urls": 5398,
+    "total_unique_urls": 5448,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 16,
     "missing_original_source": 0,
     "missing_product_url": 21,
-    "total": 4891,
+    "total": 4938,
     "with_retrieval_warning": 52
   },
-  "resource_count": 1123,
+  "resource_count": 1132,
   "resources": {
     "contacts_with_org_connection": 261,
-    "contacts_without_org_connection": 735,
-    "missing_contacts": 127,
+    "contacts_without_org_connection": 740,
+    "missing_contacts": 131,
     "missing_description": 0,
-    "missing_fairsharing_id": 1106,
-    "missing_homepage_url": 0,
-    "missing_infores_id": 853,
-    "missing_license": 412,
-    "missing_repository": 569,
+    "missing_fairsharing_id": 1115,
+    "missing_homepage_url": 4,
+    "missing_infores_id": 862,
+    "missing_license": 417,
+    "missing_repository": 577,
     "status_counts": {
-      "active": 972,
+      "active": 981,
       "inactive": 134,
       "orphaned": 13,
       "unresponsive": 4
     },
-    "stub_count": 0,
-    "total": 1123,
+    "stub_count": 4,
+    "total": 1132,
     "with_broken_links": 174,
     "with_citation_issues": 33,
     "without_products": 10,
-    "without_publications": 358
+    "without_publications": 363
   },
   "scoring": {
-    "average_score": 6.75,
+    "average_score": 6.82,
     "median_score": 6.0,
-    "resources_with_issues": 1082,
+    "resources_with_issues": 1091,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -18583,6 +18755,238 @@
       "score": 28
     },
     {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "gtrd",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "stub_domain",
+          "label": "Tagged as stub",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_homepage_url",
+          "label": "Missing homepage_url",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_contacts",
+          "label": "Missing contacts",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        }
+      ],
+      "name": "Gtrd",
+      "resource_page": "resource/gtrd/gtrd.html",
+      "score": 24
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "htridb",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "stub_domain",
+          "label": "Tagged as stub",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_homepage_url",
+          "label": "Missing homepage_url",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_contacts",
+          "label": "Missing contacts",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        }
+      ],
+      "name": "Htridb",
+      "resource_page": "resource/htridb/htridb.html",
+      "score": 24
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "redfly",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "stub_domain",
+          "label": "Tagged as stub",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_homepage_url",
+          "label": "Missing homepage_url",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_contacts",
+          "label": "Missing contacts",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        }
+      ],
+      "name": "Redfly",
+      "resource_page": "resource/redfly/redfly.html",
+      "score": 24
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "yeastract",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "stub_domain",
+          "label": "Tagged as stub",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_homepage_url",
+          "label": "Missing homepage_url",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_contacts",
+          "label": "Missing contacts",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        }
+      ],
+      "name": "Yeastract",
+      "resource_page": "resource/yeastract/yeastract.html",
+      "score": 24
+    },
+    {
       "activity_status": "inactive",
       "broken_links": [
         {
@@ -18757,218 +19161,6 @@
       ],
       "name": "ComPath",
       "resource_page": "resource/compath/compath.html",
-      "score": 19
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://www.inoh.org"
-        }
-      ],
-      "id": "imr",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Molecule role (INOH Protein name/family name ontology)",
-      "resource_page": "resource/imr/imr.html",
-      "score": 19
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html"
-        }
-      ],
-      "id": "mao",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Multiple alignment",
-      "resource_page": "resource/mao/mao.html",
-      "score": 19
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://www.obofoundry.org/ro"
-        }
-      ],
-      "id": "obo_rel",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "OBO relationship types (legacy)",
-      "resource_page": "resource/obo_rel/obo_rel.html",
-      "score": 19
-    },
-    {
-      "activity_status": "inactive",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://4dx.embl.de/platy"
-        }
-      ],
-      "id": "pd_st",
-      "issues": [
-        {
-          "count": 1,
-          "issue_key": "no_products",
-          "label": "No products listed",
-          "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Platynereis stage ontology",
-      "resource_page": "resource/pd_st/pd_st.html",
       "score": 19
     }
   ]
