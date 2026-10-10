@@ -637,6 +637,7 @@ products:
     source: sider
   - relation_type: prov:hadPrimarySource
     source: stitch
+  product_file_size: 4251
   product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
 - category: Product
   description: Drug-drug similarity matrix from cosine similarity of L1000 drug-induced

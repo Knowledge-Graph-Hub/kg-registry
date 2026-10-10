@@ -10992,6 +10992,20 @@ resources:
       source: archs4
     product_file_size: 93780518
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/archs4_coexpression.valid.json
+  - category: Product
+    compression: zip
+    description: Gene-gene correlation matrix from ARCHS4 human RNA-seq data, used
+      by Geneshot to predict related genes.
+    format: tsv
+    id: geneshot.archs4-correlation
+    name: ARCHS4 Gene Co-expression Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: archs4
+    product_file_size: 4246282120
+    product_url: https://s3.amazonaws.com/mssm-data/correlation.tsv.zip
   publications:
   - authors:
     - Lachmann A
@@ -12614,6 +12628,40 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikipathways
     product_url: https://spoke.ucsf.edu/data-tools
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   synonyms:
   - ATC
   - ATC/DDD
@@ -82271,6 +82319,40 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: creeds
     product_url: https://maayanlab.cloud/CREEDS/
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   publications:
   - authors:
     - Zichen Wang
@@ -120845,6 +120927,40 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: cl
     product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   publications:
   - authors:
     - Ursu O
@@ -120860,6 +120976,147 @@ resources:
     journal: Nucleic Acids Research
     title: 'DrugCentral: online drug compendium'
     year: '2017'
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: avi.maayan@mssm.edu
+    - contact_type: url
+      value: https://labs.icahn.mssm.edu/maayanlab/
+    label: Ma'ayan Laboratory
+  creation_date: '2026-10-10T00:00:00Z'
+  description: DrugEnrichr is a drug set enrichment analysis tool from the Ma'ayan
+    Laboratory. It has the Enrichr interface and statistics, but serves drug sets
+    instead of gene sets. Users submit a list of drugs and test it against 29 drug
+    set libraries (109,284 terms) built from drug-target, mechanism-of-action, side-effect,
+    pharmacogenomic, literature, and L1000 drug-perturbation sources, with results
+    ranked by p-value, adjusted p-value, z-score, and combined score.
+  domains:
+  - pharmacology
+  - drug discovery
+  - drug repositioning
+  homepage_url: https://maayanlab.cloud/DrugEnrichr/
+  id: drugenrichr
+  last_modified_date: '2026-10-10T00:00:00Z'
+  layout: resource_detail
+  name: DrugEnrichr
+  products:
+  - category: GraphicalInterface
+    description: Web interface for submitting drug lists, viewing enrichment results
+      against drug set libraries, browsing the libraries, and searching drug set terms.
+    format: http
+    id: drugenrichr.portal
+    name: DrugEnrichr Web Application
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    product_url: https://maayanlab.cloud/DrugEnrichr/
+  - category: ProgrammingInterface
+    description: REST API following the Enrichr pattern, with endpoints to add a drug
+      list, view it, run enrichment against a chosen library, export results, and
+      map drug names. Documented on the help page.
+    format: json
+    id: drugenrichr.api
+    is_public: true
+    name: DrugEnrichr API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    product_url: https://maayanlab.cloud/DrugEnrichr/help#api
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
+  - category: GraphProduct
+    description: Core ReproTox-KG graph linking birth defects, drugs, and genes from
+      DrugShot, DrugEnrichr, and GeneShot literature co-mention evidence (1,433 nodes,
+      2,252 edges).
+    format: json
+    id: reprotox-kg.graph.core
+    name: ReproTox-KG Core Graph
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: reprotox-kg
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    product_file_size: 1649245
+    product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
+  publications:
+  - authors:
+    - Chen EY
+    - Tan CM
+    - Kou Y
+    - Duan Q
+    - Wang Z
+    - Meirelles GV
+    - Clark NR
+    - Ma'ayan A
+    doi: 10.1186/1471-2105-14-128
+    id: PMID:23586463
+    journal: BMC Bioinformatics
+    preferred: true
+    title: 'Enrichr: interactive and collaborative HTML5 gene list enrichment analysis
+      tool'
+    year: '2013'
+  - authors:
+    - Kuleshov MV
+    - Jones MR
+    - Rouillard AD
+    - Fernandez NF
+    - Duan Q
+    - Wang Z
+    - Koplev S
+    - Jenkins SL
+    - Jagodnik KM
+    - Lachmann A
+    - McDermott MG
+    - Monteiro CD
+    - Gundersen GW
+    - Ma'ayan A
+    doi: 10.1093/nar/gkw377
+    id: PMID:27141961
+    journal: Nucleic Acids Res
+    title: 'Enrichr: a comprehensive gene set enrichment analysis web server 2016
+      update'
+    year: '2016'
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -121027,6 +121284,207 @@ resources:
   repository: https://github.com/SuLab/DrugMechDB
   taxon:
   - NCBITaxon:9606
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: avi.maayan@mssm.edu
+    - contact_type: url
+      value: https://labs.icahn.mssm.edu/maayanlab/
+    label: Ma'ayan Laboratory
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: eryk.kropiwnicki@icahn.mssm.edu
+    label: Eryk Kropiwnicki
+  creation_date: '2026-10-10T00:00:00Z'
+  description: DrugShot is a web server from the Ma'ayan Laboratory that takes any
+    biomedical search term and returns drugs and small molecules ranked by how often
+    they are co-mentioned with that term in PubMed, using the automatically generated
+    DrugRIF and AutoRIF drug-publication associations. It also predicts additional
+    compounds from drug-drug similarity matrices built from literature co-mentions
+    and from L1000 drug-induced gene expression signatures.
+  domains:
+  - literature
+  - drug discovery
+  - drug repositioning
+  - biomedical
+  homepage_url: https://maayanlab.cloud/drugshot/
+  id: drugshot
+  last_modified_date: '2026-10-10T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache-2.0 (source code); commercial users should contact Mount Sinai Innovation
+      Partners for licensing
+  name: DrugShot
+  products:
+  - category: GraphicalInterface
+    description: Web server that returns drugs and small molecules ranked by co-mention
+      with any biomedical search term in PubMed, with drug set augmentation.
+    format: http
+    id: drugshot.portal
+    name: DrugShot Web Application
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    product_url: https://maayanlab.cloud/drugshot/
+  - category: ProgrammingInterface
+    description: REST API with POST endpoints to search PubMed-linked drug rankings,
+      retrieve drug publications, and get associated drugs from literature co-mention
+      or L1000 signature similarity.
+    format: json
+    id: drugshot.api
+    is_public: true
+    name: DrugShot API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    product_url: https://maayanlab.cloud/drugshot/api.html
+  - category: Product
+    description: Download page for the DrugRIF and AutoRIF drug-publication associations
+      and the drug-drug similarity matrices used by DrugShot.
+    format: http
+    id: drugshot.downloads
+    name: DrugShot Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    product_url: https://maayanlab.cloud/drugshot/download.html
+  - category: Product
+    compression: gzip
+    description: About 2 million drug to PubMed article associations, built by querying
+      PubMed with the InChIKeys of Drugmonizome and SEP-L1000 compounds via PubChem.
+    format: tsv
+    id: drugshot.drugrif
+    name: DrugRIF Drug-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    product_file_size: 9016822
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/DrugRIF.tsv.gz
+  - category: Product
+    compression: gzip
+    description: About 8 million drug to PubMed article associations, built by querying
+      PubMed with drug names matched to MeSH.
+    format: tsv
+    id: drugshot.autorif
+    name: AutoRIF Drug-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    product_file_size: 33310010
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/AutoRIF.tsv.gz
+  - category: Product
+    description: Drug-drug similarity matrix from cosine similarity of L1000 drug-induced
+      gene expression signatures (SEP-L1000), used to predict related compounds.
+    format: hdf5
+    id: drugshot.l1000-similarity
+    name: L1000 Drug-Drug Similarity Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 1550026868
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/L1000_coexpression.h5
+  - category: Product
+    description: Drug-drug co-mention matrix computed from AutoRIF literature associations.
+    format: hdf5
+    id: drugshot.autorif-cooccurrence
+    name: AutoRIF Drug Co-mention Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 162117904
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/autorif_cooccur.h5
+  - category: Product
+    description: Drug-drug co-mention matrix computed from DrugRIF literature associations.
+    format: hdf5
+    id: drugshot.drugrif-cooccurrence
+    name: DrugRIF Drug Co-mention Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 153696656
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/drugrif_cooccur.h5
+  - category: ProcessProduct
+    description: Source code for the DrugShot web server, with notebooks for building
+      the DrugRIF associations and similarity matrices. Apache-2.0 license.
+    format: python
+    id: drugshot.source
+    name: DrugShot Source Code
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    product_url: https://github.com/MaayanLab/drugshot
+  - category: GraphProduct
+    description: Core ReproTox-KG graph linking birth defects, drugs, and genes from
+      DrugShot, DrugEnrichr, and GeneShot literature co-mention evidence (1,433 nodes,
+      2,252 edges).
+    format: json
+    id: reprotox-kg.graph.core
+    name: ReproTox-KG Core Graph
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: reprotox-kg
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    product_file_size: 1649245
+    product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
+  - category: GraphProduct
+    description: Birth defect phenotype to drug associations from DrugShot literature
+      co-mentions (2,802 nodes, 12,502 edges).
+    format: json
+    id: reprotox-kg.graph.drugshot-hpo
+    name: ReproTox-KG DrugShot HPO-Drug Graph
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: reprotox-kg
+    - relation_type: prov:hadPrimarySource
+      source: hp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    product_file_size: 8941255
+    product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
+  publications:
+  - authors:
+    - Kropiwnicki E
+    - Lachmann A
+    - Clarke DJB
+    - Xie Z
+    - Jagodnik KM
+    - Ma'ayan A
+    doi: 10.1186/s12859-022-04590-5
+    id: PMID:35183110
+    journal: BMC Bioinformatics
+    preferred: true
+    title: 'DrugShot: querying biomedical search terms to retrieve prioritized lists
+      of small molecules'
+    year: '2022'
+  repository: https://github.com/MaayanLab/drugshot
 - activity_status: active
   category: DataSource
   contacts:
@@ -132493,6 +132951,19 @@ resources:
       source: go
     product_file_size: 35177347
     product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/GO_Biological_Process_2021.GO_BP.Gene.edges.csv
+  - category: Product
+    description: Gene-gene co-occurrence matrix computed from gene lists submitted
+      to Enrichr, used by Geneshot to predict related genes.
+    format: tsv
+    id: geneshot.enrichr-cooccurrence
+    name: Enrichr Gene Co-occurrence Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: enrichr
+    product_file_size: 1593574495
+    product_url: https://s3.amazonaws.com/mssm-data/list_off_co.tsv
   publications:
   - authors:
     - Chen EY
@@ -159754,6 +160225,19 @@ resources:
       source: gene-expression-omnibus
     product_file_size: 11358770
     product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/ARCHS4.zip
+  - category: Product
+    description: Characteristic-direction gene expression signatures generated automatically
+      from human GEO studies.
+    format: tsv
+    id: sigcom-lincs.human-geo-signatures
+    name: Automatic Human GEO Signatures
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 2106353545
+    product_url: https://lincs-dcic.s3.amazonaws.com/auto-geo-sigs/human_geo_cd_sigs.tsv
 - activity_status: active
   category: DataSource
   contacts:
@@ -161929,6 +162413,221 @@ resources:
   synonyms:
   - GeneReviews®
   - GR
+  taxon:
+  - NCBITaxon:9606
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: avi.maayan@mssm.edu
+    - contact_type: url
+      value: https://labs.icahn.mssm.edu/maayanlab/
+    label: Ma'ayan Laboratory
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: alexander.lachmann@mssm.edu
+    label: Alexander Lachmann
+  creation_date: '2026-10-10T00:00:00Z'
+  description: Geneshot is a search engine from the Ma'ayan Laboratory that takes
+    arbitrary search terms and returns human genes ranked by how often they are co-mentioned
+    with those terms in PubMed, using GeneRIF and the automatically generated AutoRIF
+    gene-publication associations. It also predicts further related genes from gene-gene
+    similarity matrices built from ARCHS4 co-expression, Tagger literature co-occurrence,
+    Enrichr gene-list co-occurrence, and GeneRIF/AutoRIF co-mentions. Results can
+    be filtered by druggable genome families.
+  domains:
+  - literature
+  - genomics
+  - biomedical
+  homepage_url: https://maayanlab.cloud/geneshot/
+  id: geneshot
+  last_modified_date: '2026-10-10T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache-2.0 (source code); commercial users should contact Mount Sinai Innovation
+      Partners for licensing
+  name: Geneshot
+  products:
+  - category: GraphicalInterface
+    description: Web search engine that returns genes ranked by co-mention with arbitrary
+      search terms in PubMed, with gene function prediction and gene set augmentation
+      pages.
+    format: http
+    id: geneshot.portal
+    name: Geneshot Web Application
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    product_url: https://maayanlab.cloud/geneshot/
+  - category: ProgrammingInterface
+    description: REST API with POST endpoints to search PubMed-linked gene rankings,
+      retrieve gene publications and histograms, and get associated or predicted genes
+      from similarity matrices.
+    format: json
+    id: geneshot.api
+    is_public: true
+    name: Geneshot API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    product_url: https://maayanlab.cloud/geneshot/api.html
+  - category: Product
+    description: Download page for the GeneRIF and AutoRIF gene-publication associations
+      and the gene-gene similarity matrices used by Geneshot.
+    format: http
+    id: geneshot.downloads
+    name: Geneshot Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    product_url: https://maayanlab.cloud/geneshot/download.html
+  - category: Product
+    description: Human gene to PubMed article associations from NCBI GeneRIF, with
+      dates replaced by publication dates.
+    format: tsv
+    id: geneshot.generif
+    name: GeneRIF Gene-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 14546796
+    product_url: https://s3.amazonaws.com/mssm-data/generif.tsv
+  - category: Product
+    description: Automatically generated human gene to PubMed article associations,
+      built by querying PubMed with all human gene symbols.
+    format: tsv
+    id: geneshot.autorif
+    name: AutoRIF Gene-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 626888558
+    product_url: https://s3.amazonaws.com/mssm-data/autorif.tsv
+  - category: Product
+    compression: zip
+    description: Gene-gene correlation matrix from ARCHS4 human RNA-seq data, used
+      by Geneshot to predict related genes.
+    format: tsv
+    id: geneshot.archs4-correlation
+    name: ARCHS4 Gene Co-expression Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: archs4
+    product_file_size: 4246282120
+    product_url: https://s3.amazonaws.com/mssm-data/correlation.tsv.zip
+  - category: Product
+    description: Gene-gene co-occurrence matrix computed from gene lists submitted
+      to Enrichr, used by Geneshot to predict related genes.
+    format: tsv
+    id: geneshot.enrichr-cooccurrence
+    name: Enrichr Gene Co-occurrence Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: enrichr
+    product_file_size: 1593574495
+    product_url: https://s3.amazonaws.com/mssm-data/list_off_co.tsv
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
+  - category: GraphProduct
+    description: Core ReproTox-KG graph linking birth defects, drugs, and genes from
+      DrugShot, DrugEnrichr, and GeneShot literature co-mention evidence (1,433 nodes,
+      2,252 edges).
+    format: json
+    id: reprotox-kg.graph.core
+    name: ReproTox-KG Core Graph
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: reprotox-kg
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    product_file_size: 1649245
+    product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
+  - category: GraphProduct
+    description: Birth defect phenotype to gene associations from GeneShot literature
+      co-mentions (6,064 nodes, 13,487 edges).
+    format: json
+    id: reprotox-kg.graph.geneshot-hpo
+    name: ReproTox-KG GeneShot HPO-Gene Graph
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: reprotox-kg
+    - relation_type: prov:hadPrimarySource
+      source: hp
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    product_file_size: 7214043
+    product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
+  publications:
+  - authors:
+    - Lachmann A
+    - Schilder BM
+    - Wojciechowicz ML
+    - Torre D
+    - Kuleshov MV
+    - Keenan AB
+    - Ma'ayan A
+    doi: 10.1093/nar/gkz393
+    id: PMID:31114885
+    journal: Nucleic Acids Res
+    preferred: true
+    title: 'Geneshot: search engine for ranking genes from arbitrary text queries'
+    year: '2019'
+  synonyms:
+  - GeneShot
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -207377,6 +208076,8 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
     product_file_size: 8941255
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
   - category: GraphProduct
@@ -207392,6 +208093,8 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
     product_file_size: 7214043
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
   - category: GraphProduct
@@ -221457,8 +222160,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-04: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 406 error
       when accessing file'
   - category: DocumentationProduct
@@ -239294,7 +239995,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-10T18:17:02Z'
+  last_modified_date: '2026-10-10T18:44:49Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -242331,6 +243032,40 @@ resources:
       source: genetics-kp
     product_file_size: 2127877
     product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   synonyms:
   - HMS LINCS KINOMEscan
 - activity_status: active
@@ -243833,6 +244568,18 @@ resources:
       source: lincs
     product_file_size: 12175464
     product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/LINCS.zip
+  - category: Product
+    description: Metadata for the LINCS small molecules indexed in SigCom LINCS.
+    format: tsv
+    id: sigcom-lincs.small-molecules
+    name: LINCS Small Molecule Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    product_file_size: 3950516
+    product_url: https://s3.amazonaws.com/lincs-dcic/sigcom-lincs-metadata/LINCS_small_molecules.tsv
   publications:
   - authors:
     - Keenan AB
@@ -244611,6 +245358,8 @@ resources:
       source: reprotox-kg
     - relation_type: prov:hadPrimarySource
       source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
     product_file_size: 114587395
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json
   - category: GraphProduct
@@ -244626,6 +245375,172 @@ resources:
       source: lincs-l1000
     product_file_size: 15033998
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_drug_similarity.valid.json
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
+  - category: Product
+    description: Drug-drug similarity matrix from cosine similarity of L1000 drug-induced
+      gene expression signatures (SEP-L1000), used to predict related compounds.
+    format: hdf5
+    id: drugshot.l1000-similarity
+    name: L1000 Drug-Drug Similarity Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 1550026868
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/L1000_coexpression.h5
+  - category: Product
+    compression: gzip
+    description: Consensus (mean) characteristic-direction coefficient matrix of L1000
+      chemical perturbation signatures, 2021 processing.
+    format: tsv
+    id: sigcom-lincs.cp-consensus
+    name: L1000 Chemical Perturbation Consensus Signatures
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 1897525732
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/cp_mean_coeff_mat.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Consensus (mean) characteristic-direction coefficient matrix of L1000
+      CRISPR knockout signatures, 2021 processing.
+    format: tsv
+    id: sigcom-lincs.xpr-consensus
+    name: L1000 CRISPR Knockout Consensus Signatures
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 432492125
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/xpr_mean_coeff_mat.tsv.gz
+  - category: Product
+    description: Up and down gene sets for each L1000 chemical perturbation signature
+      in GMT format, 2021 processing.
+    format: tsv
+    id: sigcom-lincs.cp-gmt
+    name: L1000 Chemical Perturbation Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 2245934983
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_cp.gmt
+  - category: Product
+    description: Up and down gene sets for each L1000 CRISPR knockout signature in
+      GMT format.
+    format: tsv
+    id: sigcom-lincs.xpr-gmt
+    name: L1000 CRISPR Knockout Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 438363414
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_xpr.gmt
+  - category: Product
+    description: Up and down gene sets for each L1000 shRNA knockdown signature in
+      GMT format.
+    format: tsv
+    id: sigcom-lincs.shrna-gmt
+    name: L1000 shRNA Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 501676713
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_shRNA.gmt
+  - category: Product
+    description: Up and down gene sets for each L1000 overexpression signature in
+      GMT format.
+    format: tsv
+    id: sigcom-lincs.oe-gmt
+    name: L1000 Overexpression Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 105994280
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_oe.gmt
+  - category: Product
+    description: Characteristic-direction coefficient matrix for all individual L1000
+      chemical perturbation signatures in GCTX (HDF5) format.
+    format: hdf5
+    id: sigcom-lincs.cp-coefficients
+    name: L1000 Chemical Perturbation Signature Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 36084518760
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gctx/cd-coefficient/cp_coeff_mat.gctx
+  - category: Product
+    description: Drug-drug cosine similarity matrix computed from L1000 landmark gene
+      signatures.
+    format: hdf5
+    id: sigcom-lincs.drug-similarity
+    name: L1000 Drug-Drug Similarity Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 4521206656
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_drug_similarity_lm.h5
+  - category: Product
+    description: Gene-gene cosine similarity matrix computed from L1000 genetic perturbation
+      signatures on landmark genes.
+    format: hdf5
+    id: sigcom-lincs.gene-similarity
+    name: L1000 Gene-Gene Similarity Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 225768016
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_gene_similarity_lm.h5
   publications:
   - authors:
     - Subramanian, A.
@@ -260289,6 +261204,22 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: pubtator
     product_url: https://rdfportal.org/ncbi/sparql
+  - category: Product
+    compression: gzip
+    description: About 8 million drug to PubMed article associations, built by querying
+      PubMed with drug names matched to MeSH.
+    format: tsv
+    id: drugshot.autorif
+    name: AutoRIF Drug-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    product_file_size: 33310010
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/AutoRIF.tsv.gz
   publications:
   - authors:
     - Lipscomb CE
@@ -270112,10 +271043,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
@@ -270139,8 +271070,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
-      to URL'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -270155,10 +271084,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
@@ -270182,8 +271111,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
-      to URL'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -270198,10 +271125,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
@@ -270225,8 +271152,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
-      to URL'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -270241,10 +271166,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
@@ -270268,8 +271193,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
-      to URL'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -270284,10 +271207,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-07-02: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
@@ -270311,8 +271234,6 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
-      to URL'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -291912,6 +292833,21 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: phenopacket-store
     product_url: https://pavs.phenomebrowser.net/api/docs
+  - category: Product
+    description: Human gene to PubMed article associations from NCBI GeneRIF, with
+      dates replaced by publication dates.
+    format: tsv
+    id: geneshot.generif
+    name: GeneRIF Gene-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 14546796
+    product_url: https://s3.amazonaws.com/mssm-data/generif.tsv
   publications:
   - authors:
     - Donna Maglott
@@ -369009,6 +369945,22 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: pubchem
     product_url: https://rdfportal.org/pubchem/sparql
+  - category: Product
+    compression: gzip
+    description: About 2 million drug to PubMed article associations, built by querying
+      PubMed with the InChIKeys of Drugmonizome and SEP-L1000 compounds via PubChem.
+    format: tsv
+    id: drugshot.drugrif
+    name: DrugRIF Drug-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    product_file_size: 9016822
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/DrugRIF.tsv.gz
   publications:
   - authors:
     - Kim S
@@ -371716,6 +372668,12 @@ resources:
       source: reprotox-kg
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
     product_file_size: 1649245
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
   - category: GraphProduct
@@ -371731,6 +372689,8 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
     product_file_size: 8941255
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
   - category: GraphProduct
@@ -371746,8 +372706,94 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
     product_file_size: 7214043
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
+  - category: Product
+    compression: gzip
+    description: About 2 million drug to PubMed article associations, built by querying
+      PubMed with the InChIKeys of Drugmonizome and SEP-L1000 compounds via PubChem.
+    format: tsv
+    id: drugshot.drugrif
+    name: DrugRIF Drug-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    product_file_size: 9016822
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/DrugRIF.tsv.gz
+  - category: Product
+    compression: gzip
+    description: About 8 million drug to PubMed article associations, built by querying
+      PubMed with drug names matched to MeSH.
+    format: tsv
+    id: drugshot.autorif
+    name: AutoRIF Drug-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    product_file_size: 33310010
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/AutoRIF.tsv.gz
+  - category: Product
+    description: Drug-drug co-mention matrix computed from AutoRIF literature associations.
+    format: hdf5
+    id: drugshot.autorif-cooccurrence
+    name: AutoRIF Drug Co-mention Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 162117904
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/autorif_cooccur.h5
+  - category: Product
+    description: Drug-drug co-mention matrix computed from DrugRIF literature associations.
+    format: hdf5
+    id: drugshot.drugrif-cooccurrence
+    name: DrugRIF Drug Co-mention Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 153696656
+    product_url: https://appyters.maayanlab.cloud/storage/DrugShot/drugrif_cooccur.h5
+  - category: Product
+    description: Human gene to PubMed article associations from NCBI GeneRIF, with
+      dates replaced by publication dates.
+    format: tsv
+    id: geneshot.generif
+    name: GeneRIF Gene-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 14546796
+    product_url: https://s3.amazonaws.com/mssm-data/generif.tsv
+  - category: Product
+    description: Automatically generated human gene to PubMed article associations,
+      built by querying PubMed with all human gene symbols.
+    format: tsv
+    id: geneshot.autorif
+    name: AutoRIF Gene-Publication Associations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_file_size: 626888558
+    product_url: https://s3.amazonaws.com/mssm-data/autorif.tsv
   publications:
   - authors:
     - Eric W Sayers
@@ -387866,6 +388912,40 @@ resources:
     versions:
     - '2026_03_06'
     - drug_rep_hub_2025-08-19_99c18ef1_2025sep1_4.3.6
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   publications:
   - authors:
     - Corsello
@@ -387913,12 +388993,12 @@ resources:
   evaluation_page: resource/reprotox-kg/reprotox-kg_eval_automated.html
   homepage_url: https://maayanlab.cloud/reprotox-kg
   id: reprotox-kg
-  last_modified_date: '2026-10-09T00:00:00Z'
+  last_modified_date: '2026-10-10T00:00:00Z'
   layout: resource_detail
   license:
     display_note: 'No license is declared for this resource. This is the most restrictive
       license (no derivatives) among its sources: hp. Not accounted for, no known
-      license: faers, lincs-l1000.'
+      license: faers, lincs-l1000, sigcom-lincs.'
     id: https://hpo.jax.org/app/license
     inferred_from:
     - hp
@@ -387929,6 +389009,7 @@ resources:
     unresolved_sources:
     - faers
     - lincs-l1000
+    - sigcom-lincs
   name: ReproTox-KG
   products:
   - category: GraphicalInterface
@@ -387991,6 +389072,12 @@ resources:
       source: reprotox-kg
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
     product_file_size: 1649245
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
   - category: GraphProduct
@@ -388004,6 +389091,8 @@ resources:
       source: reprotox-kg
     - relation_type: prov:hadPrimarySource
       source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
     product_file_size: 114587395
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json
   - category: GraphProduct
@@ -388084,6 +389173,8 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: drugshot
     product_file_size: 8941255
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
   - category: GraphProduct
@@ -388099,6 +389190,8 @@ resources:
       source: hp
     - relation_type: prov:hadPrimarySource
       source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
     product_file_size: 7214043
     product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
   - category: GraphProduct
@@ -405579,6 +406672,266 @@ resources:
   warnings:
   - No overall license is stated for SIFR BioPortal content; individual terminologies
     carry their own licenses and terms (several, such as MedDRA and SNOMED, are restricted).
+- activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: avi.maayan@mssm.edu
+    - contact_type: url
+      value: https://labs.icahn.mssm.edu/maayanlab/
+    label: Ma'ayan Laboratory
+  creation_date: '2026-10-10T00:00:00Z'
+  description: SigCom LINCS is a web search engine from the Ma'ayan Laboratory, built
+    on the Signature Commons framework, that serves more than a million gene expression
+    signatures processed from LINCS (mostly L1000 chemical, shRNA, CRISPR knockout,
+    overexpression, and ligand perturbations), GTEx, and GEO. Users run rank-based
+    signature similarity searches to find perturbations that mimic or reverse a query
+    signature, and search metadata about signatures, datasets, genes, and drugs. All
+    data are available through a metadata API, a data API, and bulk downloads.
+  domains:
+  - genomics
+  - gene expression profiling
+  - drug discovery
+  - drug repositioning
+  homepage_url: https://maayanlab.cloud/sigcom-lincs/
+  id: sigcom-lincs
+  last_modified_date: '2026-10-10T00:00:00Z'
+  layout: resource_detail
+  name: SigCom LINCS
+  products:
+  - category: GraphicalInterface
+    description: Web search engine for running signature similarity searches with
+      up and down gene sets or a single gene set to find mimicking and reversing perturbations,
+      and for searching signature, dataset, gene, and drug metadata.
+    format: http
+    id: sigcom-lincs.portal
+    name: SigCom LINCS Web Application
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    product_url: https://maayanlab.cloud/sigcom-lincs/
+  - category: ProgrammingInterface
+    description: Signature Commons metadata API (LoopBack, OpenAPI) for querying libraries,
+      signatures, entities, and their metadata.
+    format: json
+    id: sigcom-lincs.metadata-api
+    is_public: true
+    name: SigCom LINCS Metadata API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    product_url: https://maayanlab.cloud/sigcom-lincs/metadata-api/
+  - category: ProgrammingInterface
+    description: Signature Commons data API (EnrichmentAPI) for rank-based signature
+      similarity and set enrichment queries over the stored signature matrices.
+    format: json
+    id: sigcom-lincs.data-api
+    is_public: true
+    name: SigCom LINCS Data API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    product_url: https://maayanlab.cloud/sigcom-lincs/data-api/
+  - category: DocumentationProduct
+    description: Jupyter notebook tutorial documenting the SigCom LINCS metadata and
+      data APIs with worked examples.
+    format: http
+    id: sigcom-lincs.documentation
+    name: SigCom LINCS Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    product_file_size: 15432
+    product_url: https://github.com/MaayanLab/sigcom-lincs/blob/main/tutorials/SigCom%20LINCS%20Documentation.ipynb
+  - category: Product
+    compression: gzip
+    description: Consensus (mean) characteristic-direction coefficient matrix of L1000
+      chemical perturbation signatures, 2021 processing.
+    format: tsv
+    id: sigcom-lincs.cp-consensus
+    name: L1000 Chemical Perturbation Consensus Signatures
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 1897525732
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/cp_mean_coeff_mat.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Consensus (mean) characteristic-direction coefficient matrix of L1000
+      CRISPR knockout signatures, 2021 processing.
+    format: tsv
+    id: sigcom-lincs.xpr-consensus
+    name: L1000 CRISPR Knockout Consensus Signatures
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 432492125
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/xpr_mean_coeff_mat.tsv.gz
+  - category: Product
+    description: Up and down gene sets for each L1000 chemical perturbation signature
+      in GMT format, 2021 processing.
+    format: tsv
+    id: sigcom-lincs.cp-gmt
+    name: L1000 Chemical Perturbation Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 2245934983
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_cp.gmt
+  - category: Product
+    description: Up and down gene sets for each L1000 CRISPR knockout signature in
+      GMT format.
+    format: tsv
+    id: sigcom-lincs.xpr-gmt
+    name: L1000 CRISPR Knockout Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 438363414
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_xpr.gmt
+  - category: Product
+    description: Up and down gene sets for each L1000 shRNA knockdown signature in
+      GMT format.
+    format: tsv
+    id: sigcom-lincs.shrna-gmt
+    name: L1000 shRNA Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 501676713
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_shRNA.gmt
+  - category: Product
+    description: Up and down gene sets for each L1000 overexpression signature in
+      GMT format.
+    format: tsv
+    id: sigcom-lincs.oe-gmt
+    name: L1000 Overexpression Gene Sets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 105994280
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_oe.gmt
+  - category: Product
+    description: Characteristic-direction coefficient matrix for all individual L1000
+      chemical perturbation signatures in GCTX (HDF5) format.
+    format: hdf5
+    id: sigcom-lincs.cp-coefficients
+    name: L1000 Chemical Perturbation Signature Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 36084518760
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gctx/cd-coefficient/cp_coeff_mat.gctx
+  - category: Product
+    description: Drug-drug cosine similarity matrix computed from L1000 landmark gene
+      signatures.
+    format: hdf5
+    id: sigcom-lincs.drug-similarity
+    name: L1000 Drug-Drug Similarity Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 4521206656
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_drug_similarity_lm.h5
+  - category: Product
+    description: Gene-gene cosine similarity matrix computed from L1000 genetic perturbation
+      signatures on landmark genes.
+    format: hdf5
+    id: sigcom-lincs.gene-similarity
+    name: L1000 Gene-Gene Similarity Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    product_file_size: 225768016
+    product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_gene_similarity_lm.h5
+  - category: Product
+    description: Metadata for the LINCS small molecules indexed in SigCom LINCS.
+    format: tsv
+    id: sigcom-lincs.small-molecules
+    name: LINCS Small Molecule Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: lincs
+    product_file_size: 3950516
+    product_url: https://s3.amazonaws.com/lincs-dcic/sigcom-lincs-metadata/LINCS_small_molecules.tsv
+  - category: Product
+    description: Characteristic-direction gene expression signatures generated automatically
+      from human GEO studies.
+    format: tsv
+    id: sigcom-lincs.human-geo-signatures
+    name: Automatic Human GEO Signatures
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    product_file_size: 2106353545
+    product_url: https://lincs-dcic.s3.amazonaws.com/auto-geo-sigs/human_geo_cd_sigs.tsv
+  - category: GraphProduct
+    description: Drug-to-gene up- and down-regulation edges from SigCom LINCS L1000
+      signatures (8,942 nodes, 225,509 edges).
+    format: json
+    id: reprotox-kg.graph.sigcom-lincs
+    name: ReproTox-KG SigCom LINCS Drug-Gene Graph
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: reprotox-kg
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    product_file_size: 114587395
+    product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json
+  publications:
+  - authors:
+    - Evangelista JE
+    - Clarke DJB
+    - Xie Z
+    - Lachmann A
+    - Jeon M
+    - Chen K
+    - Jagodnik KM
+    - Jenkins SL
+    - Kuleshov MV
+    - Wojciechowicz ML
+    - Schürer SC
+    - Medvedovic M
+    - Ma'ayan A
+    doi: 10.1093/nar/gkac328
+    id: PMID:35524556
+    journal: Nucleic Acids Res
+    preferred: true
+    title: 'SigCom LINCS: data and metadata search engine for a million gene expression
+      signatures'
+    year: '2022'
+  repository: https://github.com/MaayanLab/sigcom-lincs
+  synonyms:
+  - Signature Commons LINCS
+  taxon:
+  - NCBITaxon:9606
+  - NCBITaxon:10090
 - activity_status: active
   category: DataSource
   collection:
@@ -464111,10 +465464,247 @@ resources:
       source: wikidata
     product_file_size: 5343
     product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikidata-kg-dump
+  - category: ProgrammingInterface
+    description: Wikimedia Commons Query Service, a SPARQL endpoint and query interface
+      over Structured Data on Commons statements. Requires logging in with a Commons
+      account.
+    format: http
+    id: wikimedia-commons.query-service
+    is_public: false
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: Wikimedia Commons Query Service
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_url: https://commons-query.wikimedia.org/
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+  - category: Product
+    compression: gzip
+    description: Weekly dump of all Structured Data on Commons MediaInfo entities
+      (captions and statements) in JSON.
+    format: json
+    id: wikimedia-commons.mediainfo.json
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: Structured Data on Commons Dump (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_file_size: 78893159156
+    product_url: https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.json.gz
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+  - category: GraphProduct
+    compression: gzip
+    description: Weekly dump of all Structured Data on Commons MediaInfo entities
+      as RDF in Turtle.
+    format: ttl
+    id: wikimedia-commons.mediainfo.ttl
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: Structured Data on Commons Dump (Turtle)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_file_size: 114887363530
+    product_url: https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.ttl.gz
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
   repository: https://www.mediawiki.org/wiki/Wikibase
   synonyms:
   - Wikidata
   - Wikidata Knowledge Base
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://commons.wikimedia.org/wiki/Commons:Contact_us
+    id: wikimedia
+    label: Wikimedia Foundation
+  creation_date: '2026-10-10T00:00:00Z'
+  description: Wikimedia Commons is a collaboratively built repository of freely licensed
+    images, sounds, videos, and other media files, holding more than 149 million files
+    that are used across Wikipedia and other Wikimedia projects. Its content is contributed
+    and curated by a volunteer community and hosted by the Wikimedia Foundation. Through
+    Structured Data on Commons, each file also has a Wikibase MediaInfo entity carrying
+    multilingual captions and statements, such as what a file depicts, that use Wikidata
+    properties and items.
+  domains:
+  - general
+  - humanities and cultural heritage
+  homepage_url: https://commons.wikimedia.org/
+  id: wikimedia-commons
+  last_modified_date: '2026-10-10T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0 (text); structured data CC0; media files under per-file free
+      licenses
+    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
+  name: Wikimedia Commons
+  products:
+  - category: GraphicalInterface
+    description: Wikimedia Commons website for browsing, searching, uploading, and
+      describing media files.
+    format: http
+    id: wikimedia-commons.portal
+    name: Wikimedia Commons Website
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_url: https://commons.wikimedia.org/
+  - category: ProgrammingInterface
+    description: MediaWiki Action API for Wikimedia Commons, serving page and file
+      metadata and, through the Wikibase modules, Structured Data on Commons MediaInfo
+      entities.
+    format: http
+    id: wikimedia-commons.api
+    is_public: true
+    name: Wikimedia Commons Action API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_url: https://commons.wikimedia.org/w/api.php
+  - category: ProgrammingInterface
+    description: Wikimedia Commons Query Service, a SPARQL endpoint and query interface
+      over Structured Data on Commons statements. Requires logging in with a Commons
+      account.
+    format: http
+    id: wikimedia-commons.query-service
+    is_public: false
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: Wikimedia Commons Query Service
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_url: https://commons-query.wikimedia.org/
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+  - category: Product
+    description: Directory of the latest Wikimedia Commons database dumps, including
+      page text XML and SQL table dumps.
+    format: mixed
+    id: wikimedia-commons.dumps
+    name: Wikimedia Commons Database Dumps
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_url: https://dumps.wikimedia.org/commonswiki/latest/
+  - category: Product
+    description: Latest dump of current Wikimedia Commons page text, including file
+      description pages, as bzip2-compressed multistream XML.
+    format: xml
+    id: wikimedia-commons.pages-articles
+    name: Wikimedia Commons Pages-Articles Dump
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_file_size: 126904073228
+    product_url: https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-pages-articles-multistream.xml.bz2
+  - category: Product
+    compression: gzip
+    description: SQL dump of the image table, with metadata for every file on Commons
+      (name, size, dimensions, media type, and upload details).
+    format: mysql
+    id: wikimedia-commons.image-table
+    name: Wikimedia Commons Image Table Dump
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_file_size: 18622844065
+    product_url: https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-image.sql.gz
+  - category: Product
+    compression: gzip
+    description: SQL dump of the globalimagelinks table, recording where Commons files
+      are used across all Wikimedia wikis.
+    format: mysql
+    id: wikimedia-commons.globalimagelinks
+    name: Wikimedia Commons Global Image Links Dump
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_file_size: 11585333125
+    product_url: https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-globalimagelinks.sql.gz
+  - category: Product
+    compression: gzip
+    description: Weekly dump of all Structured Data on Commons MediaInfo entities
+      (captions and statements) in JSON.
+    format: json
+    id: wikimedia-commons.mediainfo.json
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: Structured Data on Commons Dump (JSON)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_file_size: 78893159156
+    product_url: https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.json.gz
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+  - category: GraphProduct
+    compression: gzip
+    description: Weekly dump of all Structured Data on Commons MediaInfo entities
+      as RDF in Turtle.
+    format: ttl
+    id: wikimedia-commons.mediainfo.ttl
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: Structured Data on Commons Dump (Turtle)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_file_size: 114887363530
+    product_url: https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.ttl.gz
+    secondary_source:
+    - relation_type: prov:wasInfluencedBy
+      source: wikidata
+  - category: DocumentationProduct
+    description: Commons licensing policy, explaining which free licenses are accepted
+      for media files.
+    format: http
+    id: wikimedia-commons.licensing
+    name: Commons Licensing Policy
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wikimedia-commons
+    product_url: https://commons.wikimedia.org/wiki/Commons:Licensing
+  publications:
+  - authors:
+    - Yihan Yu
+    - David W. McDonald
+    doi: 10.1145/3555766
+    id: doi:10.1145/3555766
+    journal: Proceedings of the ACM on Human-Computer Interaction
+    title: 'Unpacking Stitching between Wikipedia and Wikimedia Commons: Barriers
+      to Cross-Platform Collaboration'
+    year: '2022'
+  - authors:
+    - Elizabeth Joan Kelly
+    doi: 10.18438/eblip29575
+    id: doi:10.18438/eblip29575
+    journal: Evidence Based Library and Information Practice
+    title: Reuse of Wikimedia Commons Cultural Heritage Images on the Wider Web
+    year: '2019'
+  repository: https://github.com/wikimedia/mediawiki-extensions-WikibaseMediaInfo
+  synonyms:
+  - Commons
+  - Structured Data on Commons
 - activity_status: active
   category: DataSource
   collection:
@@ -495711,6 +497301,40 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikipedia
     product_url: https://mygene.info/v3/api
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   publications:
   - authors:
     - Whirl-Carrillo M
@@ -502389,6 +504013,40 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: fda-orphan-drugs
     product_url: https://mychem.info/v1/query
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   publications:
   - authors:
     - Kuhn M
@@ -504701,6 +506359,40 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikipathways
     product_url: https://spoke.ucsf.edu/data-tools
+  - category: Product
+    description: Statistics for the 29 drug set libraries (109,284 terms) served by
+      DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB
+      and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each
+      library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint
+      (mode=text&libraryName=<library>).
+    format: json
+    id: drugenrichr.libraries
+    name: DrugEnrichr Drug Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: drugenrichr
+    - relation_type: prov:hadPrimarySource
+      source: atc
+    - relation_type: prov:hadPrimarySource
+      source: repohub
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: pharmgkb
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: creeds
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sider
+    - relation_type: prov:hadPrimarySource
+      source: stitch
+    product_file_size: 4251
+    product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
   publications:
   - authors:
     - Damian Szklarczyk

@@ -233,7 +233,9 @@ dron,active,PASS
 drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
+drugenrichr,active,PASS
 drugmechdb,active,PASS
+drugshot,active,PASS
 dsld,active,PASS
 dsstoxdb,active,PASS
 duo,active,PASS
@@ -355,6 +357,7 @@ genemania,active,PASS
 geneorganizer,active,PASS
 genepio,active,PASS
 genereviews,active,PASS
+geneshot,active,PASS
 genetics-kp,active,PASS
 geno,active,PASS
 genomernai,active,PASS
@@ -851,6 +854,7 @@ shepherd,active,PASS
 sibils,active,PASS
 sic,active,PASS
 sifr-bioportal,active,PASS
+sigcom-lincs,active,PASS
 signor,active,PASS
 silva,active,PASS
 sio,active,PASS
@@ -959,6 +963,7 @@ web-of-science,active,PASS
 who,active,PASS
 who-ictrp,active,PASS
 wikidata,active,PASS
+wikimedia-commons,active,PASS
 wikipathways,active,PASS
 wikipedia,active,PASS
 wikispecies,active,PASS

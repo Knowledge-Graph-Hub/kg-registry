@@ -222,7 +222,7 @@ rdkg	KnowledgeGraph	inferred			https://uts.nlm.nih.gov/uts/	custom	umls
 re3data	Aggregator	no-upstream	https://creativecommons.org/publicdomain/zero/1.0/	public domain				
 redrugs	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://cancer.sanger.ac.uk/cosmic/license	custom	cosmic|irefindex	
 redu	Aggregator	no-upstream						
-reprotox-kg	KnowledgeGraph	inferred			https://hpo.jax.org/app/license	no derivatives	hp	faers|lincs-l1000
+reprotox-kg	KnowledgeGraph	inferred			https://hpo.jax.org/app/license	no derivatives	hp	faers|lincs-l1000|sigcom-lincs
 retriever	Aggregator	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://opensource.org/license/mit/	permissive	translator	
 rna-kg	KnowledgeGraph	conflict	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://cancer.sanger.ac.uk/cosmic/license	custom	circbase|cosmic	
 rnacentral	Aggregator	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	genecards|lncipedia|noncode	5srrnadb|crd|dictybase|ena|evlncrnas|greengenes|gtrnadb|lncbase|lncbook|lncrnadb|malacards|mgnify|mirgenedb|modomics|pirbase|plncdb|rediportal|rgd|silva|snodb|snopy|snornadatabase|srpdb|tair|tarbase|zwd
@@ -236,6 +236,7 @@ semopenalex	KnowledgeGraph	inferred			https://creativecommons.org/publicdomain/z
 service-kp	KnowledgeGraph	conflict	https://opensource.org/licenses/Apache-2.0	permissive	https://ctdbase.org/about/legal.jsp	custom	alliance|ctd|disgenet|gene2phenotype|innatedb|multiomics-kp|mydisease|semmeddb	bioplanet|ddinter|monarchinitiative|panther
 shepherd	Aggregator	inferred			https://www.apache.org/licenses/LICENSE-2.0	permissive	retriever	
 sifr-bioportal	Aggregator	no-upstream						
+sigcom-lincs	Aggregator	unresolved						
 skm	KnowledgeGraph	conflict	http://creativecommons.org/licenses/by-nc-sa/3.0/	non-commercial	https://biocyc.org/download.shtml	custom	biocyc|kegg|metacyc	araport|tair
 sldb	KnowledgeGraph	no-upstream						
 smartapi	Aggregator	no-upstream						

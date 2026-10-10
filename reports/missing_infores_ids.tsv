@@ -206,6 +206,8 @@ dreamkg	DREAM-KG	KnowledgeGraph	https://dreamkg.com/	resource/dreamkg/dreamkg.md
 drkg	Drug Repurposing Knowledge Graph	KnowledgeGraph	https://github.com/gnn4dr/DRKG	resource/drkg/drkg.md
 dron	The Drug Ontology	Ontology	https://github.com/ufbmi/dron	resource/dron/dron.md
 drug-approvals-kp	Drug Approvals KP	KnowledgeGraph	https://github.com/NCATSTranslator/Translator-All/wiki/Drug-Approvals-KP	resource/drug-approvals-kp/drug-approvals-kp.md
+drugenrichr	DrugEnrichr	DataSource	https://maayanlab.cloud/DrugEnrichr/	resource/drugenrichr/drugenrichr.md
+drugshot	DrugShot	DataSource	https://maayanlab.cloud/drugshot/	resource/drugshot/drugshot.md
 dsld	Dietary Supplement Label Database	DataSource	https://dsld.od.nih.gov/	resource/dsld/dsld.md
 duo	Data Use Ontology	Ontology	https://github.com/EBISPOT/DUO	resource/duo/duo.md
 earthportal	EarthPortal	Aggregator	https://earthportal.eu/	resource/earthportal/earthportal.md
@@ -314,6 +316,7 @@ genecards	GeneCards	Aggregator	https://www.genecards.org/	resource/genecards/gen
 genemania	GeneMANIA	DataSource	https://genemania.org/	resource/genemania/genemania.md
 geneorganizer	Gene ORGANizer	DataSource	https://geneorganizer.huji.ac.il/	resource/geneorganizer/geneorganizer.md
 genereviews	GeneReviews	DataSource	https://www.ncbi.nlm.nih.gov/books/NBK1116/	resource/genereviews/genereviews.md
+geneshot	Geneshot	DataSource	https://maayanlab.cloud/geneshot/	resource/geneshot/geneshot.md
 geno	Genotype Ontology	Ontology	https://github.com/monarch-initiative/GENO-ontology/	resource/geno/geno.md
 genomernai	GenomeRNAi	DataSource	http://www.genomernai.org/	resource/genomernai/genomernai.md
 genomickb	GenomicKB	KnowledgeGraph	https://gkb.dcmb.med.umich.edu/	resource/genomickb/genomickb.md
@@ -754,6 +757,7 @@ sibils	SIBiLS	DataSource	https://sibils.org/	resource/sibils/sibils.md
 sibo	Social Insect Behavior Ontology	Ontology	https://github.com/obophenotype/sibo	resource/sibo/sibo.md
 sic	Standard Industrial Classification (SIC)	DataSource	https://www.osha.gov/data/sic-manual	resource/sic/sic.md
 sifr-bioportal	SIFR BioPortal	Aggregator	https://bioportal.lirmm.fr/	resource/sifr-bioportal/sifr-bioportal.md
+sigcom-lincs	SigCom LINCS	Aggregator	https://maayanlab.cloud/sigcom-lincs/	resource/sigcom-lincs/sigcom-lincs.md
 silva	SILVA	DataSource	https://www.arb-silva.de/	resource/silva/silva.md
 simap	SIMAP	DataSource	http://mips.helmholtz-muenchen.de/simap/	resource/simap/simap.md
 sio	Semanticscience Integrated Ontology	Ontology	https://semanticscience.org/	resource/sio/sio.md
@@ -846,6 +850,7 @@ water-quality-portal	Water Quality Portal (WQP)	DataSource	https://www.waterqual
 web-of-science	Web of Science	DataSource	https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/	resource/web-of-science/web-of-science.md
 who	World Health Organization	Aggregator	https://www.who.int/	resource/who/who.md
 who-ictrp	WHO International Clinical Trials Registry Platform	Aggregator	https://trialsearch.who.int/	resource/who-ictrp/who-ictrp.md
+wikimedia-commons	Wikimedia Commons	DataSource	https://commons.wikimedia.org/	resource/wikimedia-commons/wikimedia-commons.md
 wikipedia	Wikipedia	DataSource	https://www.wikipedia.org/	resource/wikipedia/wikipedia.md
 wikispecies	Wikispecies	DataSource	https://species.wikimedia.org/wiki/Main_Page	resource/wikispecies/wikispecies.md
 wildlifekn	Wildlife-KN	KnowledgeGraph	https://sites.nd.edu/kn-wildlife/	resource/wildlifekn/wildlifekn.md

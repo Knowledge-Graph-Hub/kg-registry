@@ -965,6 +965,7 @@ kgr:archs4 a schema1:DataSource ;
         kgr:chea-kg.libraries,
         kgr:chea.libraries,
         kgr:enrichr-kg.graph,
+        kgr:geneshot.archs4-correlation,
         kgr:reprotox-kg.graph.archs4 ;
     schema1:name "ARCHS4" ;
     doap:repository <https://github.com/MaayanLab/archs4> ;
@@ -1060,6 +1061,7 @@ kgr:atc a schema1:DataSource ;
         kgr:atc.index,
         kgr:atc.kg-bioportal,
         kgr:atc.methodology,
+        kgr:drugenrichr.libraries,
         kgr:kg-idg.graph,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
@@ -5453,7 +5455,8 @@ kgr:creeds a schema1:DataSource ;
         kgr:creeds.manual_disease_signatures,
         kgr:creeds.manual_single_drug,
         kgr:creeds.manual_single_gene,
-        kgr:creeds.web_interface ;
+        kgr:creeds.web_interface,
+        kgr:drugenrichr.libraries ;
     schema1:name "CREEDS" ;
     skos:inScheme "gene expression profiling",
         "genomics",
@@ -7225,6 +7228,7 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:babel.compendia,
         kgr:bioteque.embeddings,
         kgr:drugcentral.data,
+        kgr:drugenrichr.libraries,
         kgr:drugmechdb.graph,
         kgr:hetionet.data.edges,
         kgr:hetionet.data.json,
@@ -7281,6 +7285,25 @@ kgr:drugcentral a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://drugcentral.org/> .
 
+kgr:drugenrichr a schema1:DataSource ;
+    rdfs:label "DrugEnrichr" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "DrugEnrichr is a drug set enrichment analysis tool from the Ma'ayan Laboratory. It has the Enrichr interface and statistics, but serves drug sets instead of gene sets. Users submit a list of drugs and test it against 29 drug set libraries (109,284 terms) built from drug-target, mechanism-of-action, side-effect, pharmacogenomic, literature, and L1000 drug-perturbation sources, with results ranked by p-value, adjusted p-value, z-score, and combined score." ;
+    dcterms:identifier "drugenrichr" ;
+    dcterms:isReferencedBy <PMID:23586463>,
+        <PMID:27141961> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:drugenrichr.api,
+        kgr:drugenrichr.libraries,
+        kgr:drugenrichr.portal,
+        kgr:reprotox-kg.graph.core ;
+    schema1:name "DrugEnrichr" ;
+    skos:inScheme "drug discovery",
+        "drug repositioning",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/DrugEnrichr/> .
+
 kgr:drugmechdb a schema1:KnowledgeGraph ;
     rdfs:label "DrugMechDB" ;
     dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
@@ -7302,6 +7325,34 @@ kgr:drugmechdb a schema1:KnowledgeGraph ;
         "pharmacology" ;
     adms:status "Active" ;
     foaf:homepage <https://sulab.github.io/DrugMechDB/> .
+
+kgr:drugshot a schema1:DataSource ;
+    rdfs:label "DrugShot" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "DrugShot is a web server from the Ma'ayan Laboratory that takes any biomedical search term and returns drugs and small molecules ranked by how often they are co-mentioned with that term in PubMed, using the automatically generated DrugRIF and AutoRIF drug-publication associations. It also predicts additional compounds from drug-drug similarity matrices built from literature co-mentions and from L1000 drug-induced gene expression signatures." ;
+    dcterms:identifier "drugshot" ;
+    dcterms:isReferencedBy <PMID:35183110> ;
+    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:drugshot.api,
+        kgr:drugshot.autorif,
+        kgr:drugshot.autorif-cooccurrence,
+        kgr:drugshot.downloads,
+        kgr:drugshot.drugrif,
+        kgr:drugshot.drugrif-cooccurrence,
+        kgr:drugshot.l1000-similarity,
+        kgr:drugshot.portal,
+        kgr:drugshot.source,
+        kgr:reprotox-kg.graph.core,
+        kgr:reprotox-kg.graph.drugshot-hpo ;
+    schema1:name "DrugShot" ;
+    doap:repository <https://github.com/MaayanLab/drugshot> ;
+    skos:inScheme "biomedical",
+        "drug discovery",
+        "drug repositioning",
+        "literature" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/drugshot/> .
 
 kgr:dsld a schema1:DataSource ;
     rdfs:label "Dietary Supplement Label Database" ;
@@ -8249,7 +8300,8 @@ kgr:enrichr a schema1:DataSource ;
         kgr:enrichr-kg.portal,
         kgr:enrichr.api,
         kgr:enrichr.library-statistics,
-        kgr:enrichr.portal ;
+        kgr:enrichr.portal,
+        kgr:geneshot.enrichr-cooccurrence ;
     schema1:name "Enrichr" ;
     doap:repository <https://github.com/MaayanLab/enrichr_issues> ;
     skos:inScheme "biomedical",
@@ -10369,7 +10421,8 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
         kgr:organoiddb.all-organoid-samples,
         kgr:organoiddb.general-samples,
         kgr:organoiddb.organoid-specificity-samples,
-        kgr:pankgraph.graph ;
+        kgr:pankgraph.graph,
+        kgr:sigcom-lincs.human-geo-signatures ;
     schema1:name "Gene Expression Omnibus (GEO)" ;
     skos:inScheme "biomedical",
         "gene expression profiling",
@@ -10557,6 +10610,33 @@ kgr:genereviews a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.ncbi.nlm.nih.gov/books/NBK1116/> ;
     foaf:maker kgr:ncbi .
+
+kgr:geneshot a schema1:DataSource ;
+    rdfs:label "Geneshot" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Geneshot is a search engine from the Ma'ayan Laboratory that takes arbitrary search terms and returns human genes ranked by how often they are co-mentioned with those terms in PubMed, using GeneRIF and the automatically generated AutoRIF gene-publication associations. It also predicts further related genes from gene-gene similarity matrices built from ARCHS4 co-expression, Tagger literature co-occurrence, Enrichr gene-list co-occurrence, and GeneRIF/AutoRIF co-mentions. Results can be filtered by druggable genome families." ;
+    dcterms:identifier "geneshot" ;
+    dcterms:isReferencedBy <PMID:31114885> ;
+    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:drugenrichr.libraries,
+        kgr:geneshot.api,
+        kgr:geneshot.archs4-correlation,
+        kgr:geneshot.autorif,
+        kgr:geneshot.downloads,
+        kgr:geneshot.enrichr-cooccurrence,
+        kgr:geneshot.generif,
+        kgr:geneshot.portal,
+        kgr:reprotox-kg.graph.core,
+        kgr:reprotox-kg.graph.geneshot-hpo ;
+    schema1:name "Geneshot" ;
+    skos:altLabel "GeneShot" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "literature" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/geneshot/> .
 
 kgr:genetics-kp a schema1:KnowledgeGraph ;
     rdfs:label "Genetics KP" ;
@@ -14883,7 +14963,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-10T18:17:02+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-10T18:44:49+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15073,7 +15153,8 @@ kgr:kinomescan a schema1:DataSource ;
     dcterms:description "KINOMEscan is a biochemical kinase profiling assay that measures drug binding using a panel of approximately 440 purified kinases. The HMS LINCS Project provides a comprehensive table of all small molecules in the HMS LINCS collection that have been profiled by KINOMEscan, with links to raw binding data." ;
     dcterms:identifier "kinomescan" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:kinomescan.portal,
+    schema1:hasPart kgr:drugenrichr.libraries,
+        kgr:kinomescan.portal,
         kgr:kinomescan.spreadsheet,
         kgr:molepro.api,
         kgr:molepro.catalog,
@@ -15245,6 +15326,7 @@ kgr:lincs a schema1:DataSource ;
         kgr:prokn.lincs_p100.experiment.perturbation_effect.ptmsite.edges,
         kgr:prokn.lincs_p100.perturbagen.is_used_in.experiment.edges,
         kgr:prokn.lincs_p100.ptmsite.is_site.site.edges,
+        kgr:sigcom-lincs.small-molecules,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "lincs" ;
@@ -15269,6 +15351,8 @@ kgr:lincs-l1000 a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
+        kgr:drugenrichr.libraries,
+        kgr:drugshot.l1000-similarity,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:lincs-l1000.clue,
@@ -15276,6 +15360,15 @@ kgr:lincs-l1000 a schema1:DataSource ;
         kgr:lincs-l1000.geo,
         kgr:reprotox-kg.graph.drug-similarity,
         kgr:reprotox-kg.graph.sigcom-lincs,
+        kgr:sigcom-lincs.cp-coefficients,
+        kgr:sigcom-lincs.cp-consensus,
+        kgr:sigcom-lincs.cp-gmt,
+        kgr:sigcom-lincs.drug-similarity,
+        kgr:sigcom-lincs.gene-similarity,
+        kgr:sigcom-lincs.oe-gmt,
+        kgr:sigcom-lincs.shrna-gmt,
+        kgr:sigcom-lincs.xpr-consensus,
+        kgr:sigcom-lincs.xpr-gmt,
         kgr:spoke-okn.graph,
         kgr:spoke.graph ;
     schema1:name "LINCS L1000" ;
@@ -16300,6 +16393,7 @@ kgr:mesh a schema1:Ontology ;
         kgr:ctd.genes_diseases,
         kgr:ctd.medic,
         kgr:drugmechdb.graph,
+        kgr:drugshot.autorif,
         kgr:eram.downloads,
         kgr:eram.web,
         kgr:forum.api,
@@ -18217,6 +18311,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:gendr.data,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
+        kgr:geneshot.generif,
         kgr:gtr.test_condition_gene,
         kgr:gtr.xml,
         kgr:gtrx.data,
@@ -22371,6 +22466,7 @@ kgr:pharmgkb a schema1:Resource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:clinpgx.downloads,
         kgr:clinpgx.portal,
+        kgr:drugenrichr.libraries,
         kgr:genecards.pharmacogenomics,
         kgr:genecards.web.interface,
         kgr:ibkh.graph,
@@ -24035,6 +24131,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:biomarker.bkg.nodes.compound,
         kgr:chemid.pubchem-guide,
         kgr:chemid.pubchem-source,
+        kgr:drugshot.drugrif,
         kgr:dsstoxdb.downloads,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
@@ -24124,6 +24221,10 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:cacao.portal,
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
+        kgr:drugshot.autorif,
+        kgr:drugshot.autorif-cooccurrence,
+        kgr:drugshot.drugrif,
+        kgr:drugshot.drugrif-cooccurrence,
         kgr:ecrin-mdr.api,
         kgr:ecrin-mdr.portal,
         kgr:entrez.eutils,
@@ -24143,6 +24244,8 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:genecards.literature,
         kgr:genecards.web.interface,
         kgr:genereviews.titles,
+        kgr:geneshot.autorif,
+        kgr:geneshot.generif,
         kgr:glkb.site,
         kgr:gnbr.graph,
         kgr:hald.aging-biomarkers.json,
@@ -24961,6 +25064,7 @@ kgr:repohub a schema1:DataSource ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
+        kgr:drugenrichr.libraries,
         kgr:molepro.api,
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
@@ -24999,7 +25103,7 @@ kgr:reprotox-kg a schema1:KnowledgeGraph ;
     dcterms:identifier "reprotox-kg" ;
     dcterms:isReferencedBy <PMID:37460679> ;
     dcterms:license <https://hpo.jax.org/app/license> ;
-    dcterms:modified "2026-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:reprotox-kg.code,
         kgr:reprotox-kg.data,
         kgr:reprotox-kg.graph.archs4,
@@ -26167,6 +26271,7 @@ kgr:sider a schema1:DataSource ;
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
+        kgr:drugenrichr.libraries,
         kgr:hetionet.data.edges,
         kgr:hetionet.data.json,
         kgr:hetionet.data.neo4j,
@@ -26240,6 +26345,41 @@ kgr:sifr-bioportal a schema1:Aggregator ;
         "natural language processing" ;
     adms:status "Active" ;
     foaf:homepage <https://bioportal.lirmm.fr/> .
+
+kgr:sigcom-lincs a schema1:Aggregator ;
+    rdfs:label "SigCom LINCS" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "SigCom LINCS is a web search engine from the Ma'ayan Laboratory, built on the Signature Commons framework, that serves more than a million gene expression signatures processed from LINCS (mostly L1000 chemical, shRNA, CRISPR knockout, overexpression, and ligand perturbations), GTEx, and GEO. Users run rank-based signature similarity searches to find perturbations that mimic or reverse a query signature, and search metadata about signatures, datasets, genes, and drugs. All data are available through a metadata API, a data API, and bulk downloads." ;
+    dcterms:identifier "sigcom-lincs" ;
+    dcterms:isReferencedBy <PMID:35524556> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:reprotox-kg.graph.sigcom-lincs,
+        kgr:sigcom-lincs.cp-coefficients,
+        kgr:sigcom-lincs.cp-consensus,
+        kgr:sigcom-lincs.cp-gmt,
+        kgr:sigcom-lincs.data-api,
+        kgr:sigcom-lincs.documentation,
+        kgr:sigcom-lincs.drug-similarity,
+        kgr:sigcom-lincs.gene-similarity,
+        kgr:sigcom-lincs.human-geo-signatures,
+        kgr:sigcom-lincs.metadata-api,
+        kgr:sigcom-lincs.oe-gmt,
+        kgr:sigcom-lincs.portal,
+        kgr:sigcom-lincs.shrna-gmt,
+        kgr:sigcom-lincs.small-molecules,
+        kgr:sigcom-lincs.xpr-consensus,
+        kgr:sigcom-lincs.xpr-gmt ;
+    schema1:name "SigCom LINCS" ;
+    doap:repository <https://github.com/MaayanLab/sigcom-lincs> ;
+    skos:altLabel "Signature Commons LINCS" ;
+    skos:inScheme "drug discovery",
+        "drug repositioning",
+        "gene expression profiling",
+        "genomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/sigcom-lincs/> .
 
 kgr:signor a schema1:DataSource ;
     rdfs:label "SIGNOR" ;
@@ -27164,6 +27304,7 @@ kgr:stitch a schema1:DataSource ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:date.archive,
+        kgr:drugenrichr.libraries,
         kgr:molepro.api,
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
@@ -29716,7 +29857,10 @@ kgr:wikidata a schema1:KnowledgeGraph ;
         kgr:wikidata.portal,
         kgr:wikidata.query.editor,
         kgr:wikidata.sparql,
-        kgr:wikidata.tpf ;
+        kgr:wikidata.tpf,
+        kgr:wikimedia-commons.mediainfo.json,
+        kgr:wikimedia-commons.mediainfo.ttl,
+        kgr:wikimedia-commons.query-service ;
     schema1:identifier "wikidata" ;
     schema1:name "Wikidata" ;
     doap:repository <https://www.mediawiki.org/wiki/Wikibase> ;
@@ -29725,6 +29869,35 @@ kgr:wikidata a schema1:KnowledgeGraph ;
     skos:inScheme "general" ;
     adms:status "Active" ;
     foaf:homepage <https://www.wikidata.org/> ;
+    foaf:maker kgr:wikimedia .
+
+kgr:wikimedia-commons a schema1:DataSource ;
+    rdfs:label "Wikimedia Commons" ;
+    dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Wikimedia Commons is a collaboratively built repository of freely licensed images, sounds, videos, and other media files, holding more than 149 million files that are used across Wikipedia and other Wikimedia projects. Its content is contributed and curated by a volunteer community and hosted by the Wikimedia Foundation. Through Structured Data on Commons, each file also has a Wikibase MediaInfo entity carrying multilingual captions and statements, such as what a file depicts, that use Wikidata properties and items." ;
+    dcterms:identifier "wikimedia-commons" ;
+    dcterms:isReferencedBy <doi:10.1145/3555766>,
+        <doi:10.18438/eblip29575> ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:wikimedia-commons.api,
+        kgr:wikimedia-commons.dumps,
+        kgr:wikimedia-commons.globalimagelinks,
+        kgr:wikimedia-commons.image-table,
+        kgr:wikimedia-commons.licensing,
+        kgr:wikimedia-commons.mediainfo.json,
+        kgr:wikimedia-commons.mediainfo.ttl,
+        kgr:wikimedia-commons.pages-articles,
+        kgr:wikimedia-commons.portal,
+        kgr:wikimedia-commons.query-service ;
+    schema1:name "Wikimedia Commons" ;
+    doap:repository <https://github.com/wikimedia/mediawiki-extensions-WikibaseMediaInfo> ;
+    skos:altLabel "Commons",
+        "Structured Data on Commons" ;
+    skos:inScheme "general",
+        "humanities and cultural heritage" ;
+    adms:status "Active" ;
+    foaf:homepage <https://commons.wikimedia.org/> ;
     foaf:maker kgr:wikimedia .
 
 kgr:wikipathways a schema1:DataSource ;
@@ -34491,10 +34664,40 @@ kgr:drugcentral.data a schema1:Product ;
     dcterms:description "PostgreSQL (v14.5) database dump of all information in DrugCentral." ;
     schema1:url <https://unmtid-dbs.net/download/drugcentral.dump.11012023.sql.gz> .
 
+kgr:drugenrichr.api a schema1:ProgrammingInterface ;
+    rdfs:label "DrugEnrichr API" ;
+    dcterms:description "REST API following the Enrichr pattern, with endpoints to add a drug list, view it, run enrichment against a chosen library, export results, and map drug names. Documented on the help page." ;
+    schema1:url <https://maayanlab.cloud/DrugEnrichr/help#api> .
+
+kgr:drugenrichr.portal a schema1:GraphicalInterface ;
+    rdfs:label "DrugEnrichr Web Application" ;
+    dcterms:description "Web interface for submitting drug lists, viewing enrichment results against drug set libraries, browsing the libraries, and searching drug set terms." ;
+    schema1:url <https://maayanlab.cloud/DrugEnrichr/> .
+
 kgr:drugmechdb.web a schema1:GraphicalInterface ;
     rdfs:label "DrugMechDB Website" ;
     dcterms:description "Web interface for exploring curated DrugMechDB paths by drug and disease." ;
     schema1:url <https://sulab.github.io/DrugMechDB/> .
+
+kgr:drugshot.api a schema1:ProgrammingInterface ;
+    rdfs:label "DrugShot API" ;
+    dcterms:description "REST API with POST endpoints to search PubMed-linked drug rankings, retrieve drug publications, and get associated drugs from literature co-mention or L1000 signature similarity." ;
+    schema1:url <https://maayanlab.cloud/drugshot/api.html> .
+
+kgr:drugshot.downloads a schema1:Product ;
+    rdfs:label "DrugShot Downloads" ;
+    dcterms:description "Download page for the DrugRIF and AutoRIF drug-publication associations and the drug-drug similarity matrices used by DrugShot." ;
+    schema1:url <https://maayanlab.cloud/drugshot/download.html> .
+
+kgr:drugshot.portal a schema1:GraphicalInterface ;
+    rdfs:label "DrugShot Web Application" ;
+    dcterms:description "Web server that returns drugs and small molecules ranked by co-mention with any biomedical search term in PubMed, with drug set augmentation." ;
+    schema1:url <https://maayanlab.cloud/drugshot/> .
+
+kgr:drugshot.source a schema1:ProcessProduct ;
+    rdfs:label "DrugShot Source Code" ;
+    dcterms:description "Source code for the DrugShot web server, with notebooks for building the DrugRIF associations and similarity matrices. Apache-2.0 license." ;
+    schema1:url <https://github.com/MaayanLab/drugshot> .
 
 kgr:dsld.api a schema1:ProgrammingInterface ;
     rdfs:label "DSLD Label API" ;
@@ -36545,6 +36748,21 @@ kgr:genereviews.readme a schema1:DocumentationProduct ;
     rdfs:label "GeneReviews Data README" ;
     dcterms:description "README for the GeneReviews data reports on the NCBI FTP site." ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/README.html> .
+
+kgr:geneshot.api a schema1:ProgrammingInterface ;
+    rdfs:label "Geneshot API" ;
+    dcterms:description "REST API with POST endpoints to search PubMed-linked gene rankings, retrieve gene publications and histograms, and get associated or predicted genes from similarity matrices." ;
+    schema1:url <https://maayanlab.cloud/geneshot/api.html> .
+
+kgr:geneshot.downloads a schema1:Product ;
+    rdfs:label "Geneshot Downloads" ;
+    dcterms:description "Download page for the GeneRIF and AutoRIF gene-publication associations and the gene-gene similarity matrices used by Geneshot." ;
+    schema1:url <https://maayanlab.cloud/geneshot/download.html> .
+
+kgr:geneshot.portal a schema1:GraphicalInterface ;
+    rdfs:label "Geneshot Web Application" ;
+    dcterms:description "Web search engine that returns genes ranked by co-mention with arbitrary search terms in PubMed, with gene function prediction and gene set augmentation pages." ;
+    schema1:url <https://maayanlab.cloud/geneshot/> .
 
 kgr:genetics-kp.code a schema1:ProcessProduct ;
     rdfs:label "Genetics KP Source Code" ;
@@ -45231,6 +45449,26 @@ kgr:sifr-bioportal.sparql a schema1:ProgrammingInterface ;
     dcterms:description "SPARQL endpoint over the ontology content stored in SIFR BioPortal, with a test query form." ;
     schema1:url <https://sparql.bioportal.lirmm.fr/test/> .
 
+kgr:sigcom-lincs.data-api a schema1:ProgrammingInterface ;
+    rdfs:label "SigCom LINCS Data API" ;
+    dcterms:description "Signature Commons data API (EnrichmentAPI) for rank-based signature similarity and set enrichment queries over the stored signature matrices." ;
+    schema1:url <https://maayanlab.cloud/sigcom-lincs/data-api/> .
+
+kgr:sigcom-lincs.documentation a schema1:DocumentationProduct ;
+    rdfs:label "SigCom LINCS Documentation" ;
+    dcterms:description "Jupyter notebook tutorial documenting the SigCom LINCS metadata and data APIs with worked examples." ;
+    schema1:url <https://github.com/MaayanLab/sigcom-lincs/blob/main/tutorials/SigCom%20LINCS%20Documentation.ipynb> .
+
+kgr:sigcom-lincs.metadata-api a schema1:ProgrammingInterface ;
+    rdfs:label "SigCom LINCS Metadata API" ;
+    dcterms:description "Signature Commons metadata API (LoopBack, OpenAPI) for querying libraries, signatures, entities, and their metadata." ;
+    schema1:url <https://maayanlab.cloud/sigcom-lincs/metadata-api/> .
+
+kgr:sigcom-lincs.portal a schema1:GraphicalInterface ;
+    rdfs:label "SigCom LINCS Web Application" ;
+    dcterms:description "Web search engine for running signature similarity searches with up and down gene sets or a single gene set to find mimicking and reversing perturbations, and for searching signature, dataset, gene, and drug metadata." ;
+    schema1:url <https://maayanlab.cloud/sigcom-lincs/> .
+
 kgr:signor.api a schema1:ProgrammingInterface ;
     rdfs:label "SIGNOR REST API" ;
     dcterms:description "REST-style endpoints for retrieving interaction, pathway, complex, and organism-specific datasets (tab-separated)" ;
@@ -47521,6 +47759,41 @@ kgr:wikidata.tpf a schema1:ProgrammingInterface ;
     dcterms:description "Triple Pattern Fragments endpoint for Wikidata" ;
     schema1:url <https://frink.apps.renci.org/ldf/wikidata> .
 
+kgr:wikimedia-commons.api a schema1:ProgrammingInterface ;
+    rdfs:label "Wikimedia Commons Action API" ;
+    dcterms:description "MediaWiki Action API for Wikimedia Commons, serving page and file metadata and, through the Wikibase modules, Structured Data on Commons MediaInfo entities." ;
+    schema1:url <https://commons.wikimedia.org/w/api.php> .
+
+kgr:wikimedia-commons.dumps a schema1:Product ;
+    rdfs:label "Wikimedia Commons Database Dumps" ;
+    dcterms:description "Directory of the latest Wikimedia Commons database dumps, including page text XML and SQL table dumps." ;
+    schema1:url <https://dumps.wikimedia.org/commonswiki/latest/> .
+
+kgr:wikimedia-commons.globalimagelinks a schema1:Product ;
+    rdfs:label "Wikimedia Commons Global Image Links Dump" ;
+    dcterms:description "SQL dump of the globalimagelinks table, recording where Commons files are used across all Wikimedia wikis." ;
+    schema1:url <https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-globalimagelinks.sql.gz> .
+
+kgr:wikimedia-commons.image-table a schema1:Product ;
+    rdfs:label "Wikimedia Commons Image Table Dump" ;
+    dcterms:description "SQL dump of the image table, with metadata for every file on Commons (name, size, dimensions, media type, and upload details)." ;
+    schema1:url <https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-image.sql.gz> .
+
+kgr:wikimedia-commons.licensing a schema1:DocumentationProduct ;
+    rdfs:label "Commons Licensing Policy" ;
+    dcterms:description "Commons licensing policy, explaining which free licenses are accepted for media files." ;
+    schema1:url <https://commons.wikimedia.org/wiki/Commons:Licensing> .
+
+kgr:wikimedia-commons.pages-articles a schema1:Product ;
+    rdfs:label "Wikimedia Commons Pages-Articles Dump" ;
+    dcterms:description "Latest dump of current Wikimedia Commons page text, including file description pages, as bzip2-compressed multistream XML." ;
+    schema1:url <https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-pages-articles-multistream.xml.bz2> .
+
+kgr:wikimedia-commons.portal a schema1:GraphicalInterface ;
+    rdfs:label "Wikimedia Commons Website" ;
+    dcterms:description "Wikimedia Commons website for browsing, searching, uploading, and describing media files." ;
+    schema1:url <https://commons.wikimedia.org/> .
+
 kgr:wikipathways.gmt a schema1:Product ;
     rdfs:label "WikiPathways GMT" ;
     dcterms:description "Pathways in Gene Matrix Transposed (GMT) format for Gene Set Enrichment Analysis" ;
@@ -48541,6 +48814,21 @@ kgr:drug-approvals-kp.code a schema1:ProcessProduct ;
     dcterms:description "Code for the Drug Approvals KP" ;
     schema1:url <https://github.com/multiomicsKP/drug_approvals_kp> .
 
+kgr:drugshot.autorif-cooccurrence a schema1:Product ;
+    rdfs:label "AutoRIF Drug Co-mention Matrix" ;
+    dcterms:description "Drug-drug co-mention matrix computed from AutoRIF literature associations." ;
+    schema1:url <https://appyters.maayanlab.cloud/storage/DrugShot/autorif_cooccur.h5> .
+
+kgr:drugshot.drugrif-cooccurrence a schema1:Product ;
+    rdfs:label "DrugRIF Drug Co-mention Matrix" ;
+    dcterms:description "Drug-drug co-mention matrix computed from DrugRIF literature associations." ;
+    schema1:url <https://appyters.maayanlab.cloud/storage/DrugShot/drugrif_cooccur.h5> .
+
+kgr:drugshot.l1000-similarity a schema1:Product ;
+    rdfs:label "L1000 Drug-Drug Similarity Matrix" ;
+    dcterms:description "Drug-drug similarity matrix from cosine similarity of L1000 drug-induced gene expression signatures (SEP-L1000), used to predict related compounds." ;
+    schema1:url <https://appyters.maayanlab.cloud/storage/DrugShot/L1000_coexpression.h5> .
+
 kgr:earthportal.api a schema1:ProgrammingInterface ;
     rdfs:label "EarthPortal REST API" ;
     dcterms:description "OntoPortal REST API for artefact metadata, concepts, search, mappings, annotation, and downloads. Requests require an EarthPortal API key, available with a free account." ;
@@ -48747,6 +49035,21 @@ kgr:genereviews.titles a schema1:Product ;
     rdfs:label "GeneReviews Titles" ;
     dcterms:description "Tab-delimited list of GeneReviews chapters with short name, chapter title, NCBI Bookshelf (NBK) id and PubMed id, updated weekly." ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRtitle_shortname_NBKid.txt> .
+
+kgr:geneshot.archs4-correlation a schema1:Product ;
+    rdfs:label "ARCHS4 Gene Co-expression Matrix" ;
+    dcterms:description "Gene-gene correlation matrix from ARCHS4 human RNA-seq data, used by Geneshot to predict related genes." ;
+    schema1:url <https://s3.amazonaws.com/mssm-data/correlation.tsv.zip> .
+
+kgr:geneshot.autorif a schema1:Product ;
+    rdfs:label "AutoRIF Gene-Publication Associations" ;
+    dcterms:description "Automatically generated human gene to PubMed article associations, built by querying PubMed with all human gene symbols." ;
+    schema1:url <https://s3.amazonaws.com/mssm-data/autorif.tsv> .
+
+kgr:geneshot.enrichr-cooccurrence a schema1:Product ;
+    rdfs:label "Enrichr Gene Co-occurrence Matrix" ;
+    dcterms:description "Gene-gene co-occurrence matrix computed from gene lists submitted to Enrichr, used by Geneshot to predict related genes." ;
+    schema1:url <https://s3.amazonaws.com/mssm-data/list_off_co.tsv> .
 
 kgr:genetics-kp.trapi a schema1:ProgrammingInterface ;
     rdfs:label "Genetics KP TRAPI Endpoint" ;
@@ -51608,11 +51911,6 @@ kgr:reprotox-kg.graph.archs4 a schema1:GraphProduct ;
     dcterms:description "Gene-gene positive and negative coexpression edges from ARCHS4 (17,964 nodes, 170,801 edges)." ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/archs4_coexpression.valid.json> .
 
-kgr:reprotox-kg.graph.core a schema1:GraphProduct ;
-    rdfs:label "ReproTox-KG Core Graph" ;
-    dcterms:description "Core ReproTox-KG graph linking birth defects, drugs, and genes from DrugShot, DrugEnrichr, and GeneShot literature co-mention evidence (1,433 nodes, 2,252 edges)." ;
-    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json> .
-
 kgr:reprotox-kg.graph.drug-similarity a schema1:GraphProduct ;
     rdfs:label "ReproTox-KG LINCS Drug Similarity Graph" ;
     dcterms:description "Drug-drug cosine similarity edges computed from LINCS L1000 signatures (4,523 nodes, 20,785 edges)." ;
@@ -51637,11 +51935,6 @@ kgr:reprotox-kg.graph.idg a schema1:GraphProduct ;
     rdfs:label "ReproTox-KG IDG Drug Target Graph" ;
     dcterms:description "Drug-target edges from the Illuminating the Druggable Genome program (2,395 nodes, 7,326 edges)." ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/idg_drug_targets.valid.json> .
-
-kgr:reprotox-kg.graph.sigcom-lincs a schema1:GraphProduct ;
-    rdfs:label "ReproTox-KG SigCom LINCS Drug-Gene Graph" ;
-    dcterms:description "Drug-to-gene up- and down-regulation edges from SigCom LINCS L1000 signatures (8,942 nodes, 225,509 edges)." ;
-    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json> .
 
 kgr:retriever.api a schema1:ProgrammingInterface ;
     rdfs:label "Retriever TRAPI API" ;
@@ -51707,6 +52000,61 @@ kgr:sifr-bioportal.portal a schema1:GraphicalInterface ;
     rdfs:label "SIFR BioPortal Portal" ;
     dcterms:description "Web portal for searching, browsing, and visualizing French biomedical ontologies and terminologies and the mappings between them, with recommender and landscape views." ;
     schema1:url <https://bioportal.lirmm.fr/> .
+
+kgr:sigcom-lincs.cp-coefficients a schema1:Product ;
+    rdfs:label "L1000 Chemical Perturbation Signature Matrix" ;
+    dcterms:description "Characteristic-direction coefficient matrix for all individual L1000 chemical perturbation signatures in GCTX (HDF5) format." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gctx/cd-coefficient/cp_coeff_mat.gctx> .
+
+kgr:sigcom-lincs.cp-consensus a schema1:Product ;
+    rdfs:label "L1000 Chemical Perturbation Consensus Signatures" ;
+    dcterms:description "Consensus (mean) characteristic-direction coefficient matrix of L1000 chemical perturbation signatures, 2021 processing." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/cp_mean_coeff_mat.tsv.gz> .
+
+kgr:sigcom-lincs.cp-gmt a schema1:Product ;
+    rdfs:label "L1000 Chemical Perturbation Gene Sets" ;
+    dcterms:description "Up and down gene sets for each L1000 chemical perturbation signature in GMT format, 2021 processing." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_cp.gmt> .
+
+kgr:sigcom-lincs.drug-similarity a schema1:Product ;
+    rdfs:label "L1000 Drug-Drug Similarity Matrix" ;
+    dcterms:description "Drug-drug cosine similarity matrix computed from L1000 landmark gene signatures." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_drug_similarity_lm.h5> .
+
+kgr:sigcom-lincs.gene-similarity a schema1:Product ;
+    rdfs:label "L1000 Gene-Gene Similarity Matrix" ;
+    dcterms:description "Gene-gene cosine similarity matrix computed from L1000 genetic perturbation signatures on landmark genes." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_gene_similarity_lm.h5> .
+
+kgr:sigcom-lincs.human-geo-signatures a schema1:Product ;
+    rdfs:label "Automatic Human GEO Signatures" ;
+    dcterms:description "Characteristic-direction gene expression signatures generated automatically from human GEO studies." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/auto-geo-sigs/human_geo_cd_sigs.tsv> .
+
+kgr:sigcom-lincs.oe-gmt a schema1:Product ;
+    rdfs:label "L1000 Overexpression Gene Sets" ;
+    dcterms:description "Up and down gene sets for each L1000 overexpression signature in GMT format." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_oe.gmt> .
+
+kgr:sigcom-lincs.shrna-gmt a schema1:Product ;
+    rdfs:label "L1000 shRNA Gene Sets" ;
+    dcterms:description "Up and down gene sets for each L1000 shRNA knockdown signature in GMT format." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_shRNA.gmt> .
+
+kgr:sigcom-lincs.small-molecules a schema1:Product ;
+    rdfs:label "LINCS Small Molecule Metadata" ;
+    dcterms:description "Metadata for the LINCS small molecules indexed in SigCom LINCS." ;
+    schema1:url <https://s3.amazonaws.com/lincs-dcic/sigcom-lincs-metadata/LINCS_small_molecules.tsv> .
+
+kgr:sigcom-lincs.xpr-consensus a schema1:Product ;
+    rdfs:label "L1000 CRISPR Knockout Consensus Signatures" ;
+    dcterms:description "Consensus (mean) characteristic-direction coefficient matrix of L1000 CRISPR knockout signatures, 2021 processing." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/xpr_mean_coeff_mat.tsv.gz> .
+
+kgr:sigcom-lincs.xpr-gmt a schema1:Product ;
+    rdfs:label "L1000 CRISPR Knockout Gene Sets" ;
+    dcterms:description "Up and down gene sets for each L1000 CRISPR knockout signature in GMT format." ;
+    schema1:url <https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_xpr.gmt> .
 
 kgr:sldb.data a schema1:Product ;
     rdfs:label "SLDB Interaction Table" ;
@@ -51833,8 +52181,20 @@ kgr:vbo.owl a schema1:OntologyProduct ;
     dcterms:description "Vertebrate Breed Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/vbo.owl> .
 
-kgr:wikimedia a "Organization" ;
-    rdfs:label "Wikimedia Foundation" .
+kgr:wikimedia-commons.mediainfo.json a schema1:Product ;
+    rdfs:label "Structured Data on Commons Dump (JSON)" ;
+    dcterms:description "Weekly dump of all Structured Data on Commons MediaInfo entities (captions and statements) in JSON." ;
+    schema1:url <https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.json.gz> .
+
+kgr:wikimedia-commons.mediainfo.ttl a schema1:GraphProduct ;
+    rdfs:label "Structured Data on Commons Dump (Turtle)" ;
+    dcterms:description "Weekly dump of all Structured Data on Commons MediaInfo entities as RDF in Turtle." ;
+    schema1:url <https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.ttl.gz> .
+
+kgr:wikimedia-commons.query-service a schema1:ProgrammingInterface ;
+    rdfs:label "Wikimedia Commons Query Service" ;
+    dcterms:description "Wikimedia Commons Query Service, a SPARQL endpoint and query interface over Structured Data on Commons statements. Requires logging in with a Commons account." ;
+    schema1:url <https://commons-query.wikimedia.org/> .
 
 kgr:yoda.trial-catalog a schema1:GraphicalInterface ;
     rdfs:label "YODA Trial Catalog" ;
@@ -52149,6 +52509,16 @@ kgr:disprot.idpo a schema1:OntologyProduct ;
     dcterms:description "IDP Ontology (IDPO) for representing functional aspects of intrinsically disordered proteins" ;
     schema1:url <https://www.disprot.org/assets/data/IDPO_v0.3.0.owl> .
 
+kgr:drugshot.autorif a schema1:Product ;
+    rdfs:label "AutoRIF Drug-Publication Associations" ;
+    dcterms:description "About 8 million drug to PubMed article associations, built by querying PubMed with drug names matched to MeSH." ;
+    schema1:url <https://appyters.maayanlab.cloud/storage/DrugShot/AutoRIF.tsv.gz> .
+
+kgr:drugshot.drugrif a schema1:Product ;
+    rdfs:label "DrugRIF Drug-Publication Associations" ;
+    dcterms:description "About 2 million drug to PubMed article associations, built by querying PubMed with the InChIKeys of Drugmonizome and SEP-L1000 compounds via PubChem." ;
+    schema1:url <https://appyters.maayanlab.cloud/storage/DrugShot/DrugRIF.tsv.gz> .
+
 kgr:duo.owl a schema1:OntologyProduct ;
     rdfs:label "duo.owl" ;
     dcterms:description "Data Use Ontology in OWL format" ;
@@ -52213,6 +52583,11 @@ kgr:genereviews.genes-uniprot a schema1:MappingProduct ;
     rdfs:label "GeneReviews to Gene Symbol and UniProt Mapping" ;
     dcterms:description "Tab-delimited mapping of GeneReviews chapters to gene symbols and UniProt accessions, updated weekly." ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt> .
+
+kgr:geneshot.generif a schema1:Product ;
+    rdfs:label "GeneRIF Gene-Publication Associations" ;
+    dcterms:description "Human gene to PubMed article associations from NCBI GeneRIF, with dates replaced by publication dates." ;
+    schema1:url <https://s3.amazonaws.com/mssm-data/generif.tsv> .
 
 kgr:gnbr.graph a schema1:GraphProduct ;
     rdfs:label "GNBR graph" ;
@@ -52586,15 +52961,10 @@ kgr:reprotox-kg.data a schema1:Product ;
     dcterms:description "Downloads page listing the ReproTox-KG graph serializations and supporting tables (gene susceptibility scores, predicted placental crossing, birth defect frequencies, phenotype lists, and topology measures)." ;
     schema1:url <https://maayanlab.cloud/reprotox-kg/downloads> .
 
-kgr:reprotox-kg.graph.drugshot-hpo a schema1:GraphProduct ;
-    rdfs:label "ReproTox-KG DrugShot HPO-Drug Graph" ;
-    dcterms:description "Birth defect phenotype to drug associations from DrugShot literature co-mentions (2,802 nodes, 12,502 edges)." ;
-    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json> .
-
-kgr:reprotox-kg.graph.geneshot-hpo a schema1:GraphProduct ;
-    rdfs:label "ReproTox-KG GeneShot HPO-Gene Graph" ;
-    dcterms:description "Birth defect phenotype to gene associations from GeneShot literature co-mentions (6,064 nodes, 13,487 edges)." ;
-    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json> .
+kgr:reprotox-kg.graph.sigcom-lincs a schema1:GraphProduct ;
+    rdfs:label "ReproTox-KG SigCom LINCS Drug-Gene Graph" ;
+    dcterms:description "Drug-to-gene up- and down-regulation edges from SigCom LINCS L1000 signatures (8,942 nodes, 225,509 edges)." ;
+    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json> .
 
 kgr:reprotox-kg.portal a schema1:GraphicalInterface ;
     rdfs:label "ReproTox-KG Explorer" ;
@@ -52810,6 +53180,9 @@ kgr:ubkg.api a schema1:ProgrammingInterface ;
     rdfs:label "UBKG API" ;
     dcterms:description "REST API with endpoints that abstract common types of queries against a UBKG neo4j knowledge graph database. Requires UMLS API key to access." ;
     schema1:url <https://smart-api.info/ui/96e5b5c0b0efeef5b93ea98ac2794837> .
+
+kgr:wikimedia a "Organization" ;
+    rdfs:label "Wikimedia Foundation" .
 
 kgr:aeolus.standardized_data a schema1:Product ;
     rdfs:label "AEOLUS Standardized FAERS Data" ;
@@ -53211,6 +53584,16 @@ kgr:ptmd.total_pda a schema1:Product ;
     dcterms:description "Complete PTMD 2.0 PTM-disease association download in tab-delimited format" ;
     schema1:url <https://ptmd.biocuckoo.cn/Download/Total.zip> .
 
+kgr:reprotox-kg.graph.drugshot-hpo a schema1:GraphProduct ;
+    rdfs:label "ReproTox-KG DrugShot HPO-Drug Graph" ;
+    dcterms:description "Birth defect phenotype to drug associations from DrugShot literature co-mentions (2,802 nodes, 12,502 edges)." ;
+    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json> .
+
+kgr:reprotox-kg.graph.geneshot-hpo a schema1:GraphProduct ;
+    rdfs:label "ReproTox-KG GeneShot HPO-Gene Graph" ;
+    dcterms:description "Birth defect phenotype to gene associations from GeneShot literature co-mentions (6,064 nodes, 13,487 edges)." ;
+    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json> .
+
 kgr:sniff.atlas-vcf a schema1:Product ;
     rdfs:label "Sniff Atlas sites VCF (v1.0.1)" ;
     dcterms:description "A sites-only VCF of the Sniff Atlas variant catalogue, containing allele frequencies for 9,667,790 imputed variants across 14,478 dogs and 188 breeds on the CanFam4 assembly, restricted to variants with allele frequency at or above 1%." ;
@@ -53574,6 +53957,11 @@ kgr:redrugs.source a schema1:Product ;
     rdfs:label "ReDrugs Source Code" ;
     dcterms:description "ReDrugS source code (TurboGears/SADI web application and probabilistic nanopublication pipeline). The hosted service it ran (redrugs.tw.rpi.edu) is no longer available." ;
     schema1:url <https://github.com/dlmcguinness/redrugs> .
+
+kgr:reprotox-kg.graph.core a schema1:GraphProduct ;
+    rdfs:label "ReproTox-KG Core Graph" ;
+    dcterms:description "Core ReproTox-KG graph linking birth defects, drugs, and genes from DrugShot, DrugEnrichr, and GeneShot literature co-mention evidence (1,433 nodes, 2,252 edges)." ;
+    schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json> .
 
 kgr:sniff.federation-edges a schema1:GraphProduct ;
     rdfs:label "Sniff KGX federation export, edges" ;
@@ -54439,6 +54827,11 @@ kgr:cardiokg.neo4j a schema1:GraphProduct ;
     rdfs:label "CardioKG Neo4j graph construction scripts" ;
     dcterms:description "Neo4j construction artifacts for CardioKG, including Cypher scripts to create graph nodes and add edges. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
     schema1:url <https://doi.org/10.5281/zenodo.16025953> .
+
+kgr:drugenrichr.libraries a schema1:Product ;
+    rdfs:label "DrugEnrichr Drug Set Libraries" ;
+    dcterms:description "Statistics for the 29 drug set libraries (109,284 terms) served by DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB and OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each library can be downloaded as a GMT-style text file from the geneSetLibrary endpoint (mode=text&libraryName=<library>)." ;
+    schema1:url <https://maayanlab.cloud/DrugEnrichr/datasetStatistics> .
 
 kgr:ecocore.obo a schema1:OntologyProduct ;
     rdfs:label "ecocore.obo" ;

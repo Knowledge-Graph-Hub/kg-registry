@@ -13,10 +13,10 @@ warnings:
 - File was not able to be retrieved when checked on 2026-10-10_ Error connecting to
   URL_ ('Connection aborted.', RemoteDisconnected('Remote end closed connection without
   response'))
+- File was not able to be retrieved when checked on 2026-10-10_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2026-07-10_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-07-02_ Timeout connecting
-  to URL
 - File was not able to be retrieved when checked on 2026-06-27_ HTTP 412 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-06-16_ HTTP 403 error when

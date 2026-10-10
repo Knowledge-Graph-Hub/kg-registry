@@ -6244,21 +6244,25 @@ https://api.ods.od.nih.gov/dsld/s3/data/DSLD-full-database-CSV.zip:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.ods.od.nih.gov/dsld/s3/data/DSLD-full-database-JSON.zip:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.ods.od.nih.gov/dsld/s3/data/DSLD-full-database-XLSX.zip:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.ods.od.nih.gov/dsld/v9/:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://api.opengwas.io/:
   checked_at: '2026-10-02T21:37:22Z'
@@ -7142,6 +7146,31 @@ https://apps.okn.us/wildlifekn/sparql:
   ok: false
   source: cache
   status_code: null
+https://appyters.maayanlab.cloud/storage/DrugShot/AutoRIF.tsv.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://appyters.maayanlab.cloud/storage/DrugShot/DrugRIF.tsv.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://appyters.maayanlab.cloud/storage/DrugShot/L1000_coexpression.h5:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://appyters.maayanlab.cloud/storage/DrugShot/autorif_cooccur.h5:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://appyters.maayanlab.cloud/storage/DrugShot/drugrif_cooccur.h5:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://aqs.epa.gov/aqsweb/documents/data_api.html:
   checked_at: '2026-10-02T21:38:13Z'
   error: null
@@ -7398,6 +7427,7 @@ https://bioconductor.org/packages/BioPlex/:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioconductor.org/packages/ExpressionAtlas/:
   checked_at: '2026-10-02T21:38:15Z'
@@ -7663,76 +7693,91 @@ https://bioplex.hms.harvard.edu/:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/293T_HCT116_ProteomeComparison.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BaitPreyPairs_noFilters_BP2a.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_1.0_293T_DirectedEdges.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_2.0_293T_DirectedEdges.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_293T_Network_10K_Dec_2019.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_3.0_293T_DirectedEdges.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_3.0_HCT116_DirectedEdges.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_BaitPreyPairs_noFilters_293T_10K_Dec_2019.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_BaitPreyPairs_noFilters_HCT116_5.5K_Dec_2019.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_HCT116_Network_5.5K_Dec_2019.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_interactionList_v2.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/data/BioPlex_interactionList_v4a.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/download.php:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioplex.hms.harvard.edu/explorer/:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioportal.bioontology.org/:
   checked_at: '2026-10-02T21:38:17Z'
@@ -8184,61 +8229,73 @@ https://cdn.netbiol.org/tflink/download_files/TFLink_Caenorhabditis_elegans_inte
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Danio_rerio_interactions_All_simpleFormat_v1.0.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Drosophila_melanogaster_interactions_All_simpleFormat_v1.0.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_annotation_v1.0.gff3:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_annotation_v1.0.tsv.gz:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_v1.0.fasta:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_interactions_All_GMT_ncbiGeneID_v1.0.gmt:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_interactions_All_mitab_v1.0.tsv.gz:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_interactions_All_simpleFormat_v1.0.tsv.gz:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Mus_musculus_interactions_All_simpleFormat_v1.0.tsv.gz:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Rattus_norvegicus_interactions_All_simpleFormat_v1.0.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.netbiol.org/tflink/download_files/TFLink_Saccharomyces_cerevisiae_interactions_All_simpleFormat_v1.0.tsv:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdno.info/:
   checked_at: '2026-10-02T21:38:22Z'
@@ -8760,6 +8817,26 @@ https://commondatastorage.googleapis.com/freebase-public/rdf/freebase-rdf-latest
   ok: true
   source: cache
   status_code: 403
+https://commons-query.wikimedia.org/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://commons.wikimedia.org/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://commons.wikimedia.org/w/api.php:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://commons.wikimedia.org/wiki/Commons:Licensing:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://compartments.jensenlab.org/:
   checked_at: '2026-10-02T21:38:25Z'
   error: GET returned HTTP 503
@@ -11343,11 +11420,13 @@ https://dsld.od.nih.gov/:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dsld.od.nih.gov/api-guide:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dtd.nlm.nih.gov/ncbi/pubmed/doc/out/250101/index.html:
   checked_at: '2026-10-02T21:38:54Z'
@@ -11360,6 +11439,26 @@ https://dtp.cancer.gov/discovery_development/nci-60/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://dumps.wikimedia.org/commonswiki/latest/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-globalimagelinks.sql.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-image.sql.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://dumps.wikimedia.org/commonswiki/latest/commonswiki-latest-pages-articles-multistream.xml.bz2:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://dumps.wikimedia.org/enwiki/latest/:
   checked_at: '2026-10-02T21:38:54Z'
@@ -11391,6 +11490,16 @@ https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/2026-03-01/xm
   ok: false
   source: cache
   status_code: 404
+https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.json.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://dumps.wikimedia.org/other/wikibase/commonswiki/latest-mediainfo.ttl.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://dumps.wikimedia.org/specieswiki/latest/:
   checked_at: '2026-10-02T21:38:55Z'
   error: null
@@ -15525,6 +15634,11 @@ https://github.com/MaayanLab/datadistillery-kg:
   ok: true
   source: cache
   status_code: 200
+https://github.com/MaayanLab/drugshot:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/MaayanLab/enrichr-kg:
   checked_at: '2026-10-02T21:39:13Z'
   error: GET returned HTTP 404
@@ -15548,6 +15662,16 @@ https://github.com/MaayanLab/lncRNAlyzr:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/MaayanLab/sigcom-lincs:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://github.com/MaayanLab/sigcom-lincs/blob/main/tutorials/SigCom%20LINCS%20Documentation.ipynb:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/MannLabs/CKG:
   checked_at: '2026-10-02T21:39:13Z'
@@ -15943,6 +16067,7 @@ https://github.com/NetBiol/TFlink:
   checked_at: '2026-10-10T18:29:29Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/OAE-ontology/OAE:
   checked_at: '2026-10-02T21:39:16Z'
@@ -17232,6 +17357,7 @@ https://github.com/dnusinow/cRomppass:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/duke-lungmap-team/lung_ontology:
   checked_at: '2026-10-02T21:39:23Z'
@@ -20491,6 +20617,11 @@ https://github.com/waldronlab/BugSigDBExports:
   ok: true
   source: cache
   status_code: 429
+https://github.com/wikimedia/mediawiki-extensions-WikibaseMediaInfo:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://github.com/wikipathways/pfocr:
   checked_at: '2026-06-27T13:24:56Z'
   error: get 404
@@ -21082,21 +21213,25 @@ https://health-products.canada.ca/api/documentation/lnhpd-documentation-en.html:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://health-products.canada.ca/api/natural-licences/productlicence/?lang=en&type=json:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://health-products.canada.ca/api/natural-licences/productlicence/?lang=en&type=json&id=3894657:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://health-products.canada.ca/lnhpd-bdpsnh/:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://healthyphases.org/:
   checked_at: '2026-10-02T21:39:40Z'
@@ -22347,6 +22482,56 @@ https://libcellml.org/:
   ok: true
   source: cache
   status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_drug_similarity_lm.h5:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_gene_similarity_lm.h5:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gctx/cd-coefficient/cp_coeff_mat.gctx:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_cp.gmt:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_oe.gmt:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_shRNA.gmt:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_xpr.gmt:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/cp_mean_coeff_mat.tsv.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/xpr_mean_coeff_mat.tsv.gz:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://lincs-dcic.s3.amazonaws.com/auto-geo-sigs/human_geo_cd_sigs.tsv:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://lincs.hms.harvard.edu/kinomescan/:
   checked_at: '2026-10-02T21:40:21Z'
   error: null
@@ -22533,6 +22718,21 @@ https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-v1.0.json:
   ok: true
   source: cache
   status_code: 200
+https://maayanlab.cloud/DrugEnrichr/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/DrugEnrichr/datasetStatistics:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/DrugEnrichr/help#api:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://maayanlab.cloud/Enrichr/:
   checked_at: '2026-10-02T21:40:22Z'
   error: null
@@ -22605,6 +22805,21 @@ https://maayanlab.cloud/chea3/index.html#content4-13:
   ok: true
   source: cache
   status_code: 200
+https://maayanlab.cloud/drugshot/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/drugshot/api.html:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/drugshot/download.html:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://maayanlab.cloud/enrichr-kg/:
   checked_at: '2026-10-02T21:40:23Z'
   error: null
@@ -22622,6 +22837,21 @@ https://maayanlab.cloud/enrichr-kg/downloads:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://maayanlab.cloud/geneshot/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/geneshot/api.html:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/geneshot/download.html:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://maayanlab.cloud/harmonizome-kg/:
   checked_at: '2026-05-19T18:51:16Z'
@@ -22646,6 +22876,21 @@ https://maayanlab.cloud/reprotox-kg/downloads:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://maayanlab.cloud/sigcom-lincs/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/sigcom-lincs/data-api/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
+https://maayanlab.cloud/sigcom-lincs/metadata-api/:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
   status_code: 200
 https://mangal.io/:
   checked_at: '2026-10-02T21:40:23Z'
@@ -24236,6 +24481,7 @@ https://open.canada.ca/data/en/dataset/ef546c83-43a8-4404-943e-ab324164eeb3:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://open.fda.gov/:
   checked_at: '2026-10-04T00:22:56Z'
@@ -25389,6 +25635,7 @@ https://pypi.org/project/bioplexpy/:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pypi.org/project/bioregistry/:
   checked_at: '2026-10-05T15:04:31Z'
@@ -27554,6 +27801,11 @@ https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz:
   ok: true
   source: cache
   status_code: 200
+https://s3.amazonaws.com/lincs-dcic/sigcom-lincs-metadata/LINCS_small_molecules.tsv:
+  checked_at: '2026-10-10T18:57:16Z'
+  error: null
+  ok: true
+  status_code: 200
 https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.edges.zip:
   checked_at: '2026-10-02T21:40:58Z'
   error: null
@@ -27823,6 +28075,26 @@ https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.jso
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://s3.amazonaws.com/mssm-data/autorif.tsv:
+  checked_at: '2026-10-10T18:57:17Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/mssm-data/correlation.tsv.zip:
+  checked_at: '2026-10-10T18:57:17Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/mssm-data/generif.tsv:
+  checked_at: '2026-10-10T18:57:17Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/mssm-data/list_off_co.tsv:
+  checked_at: '2026-10-10T18:57:17Z'
+  error: null
+  ok: true
   status_code: 200
 https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.latest.h5:
   checked_at: '2026-10-02T21:40:59Z'
@@ -29360,21 +29632,25 @@ https://tflink.net/:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://tflink.net/browse/:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://tflink.net/download/:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://tflink.net/faq/:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://thebiogrid.org/:
   checked_at: '2026-10-02T21:41:08Z'
@@ -35059,21 +35335,25 @@ https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integra
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs/about-herbs:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs/herbs-botanicals-other-products-faqs
 : checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs/search:
   checked_at: '2026-10-10T18:29:30Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.mtbs.gov/:
   checked_at: '2026-10-02T21:41:49Z'

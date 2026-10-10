@@ -70,6 +70,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: sigcom-lincs
+  product_file_size: 15432
   product_url: https://github.com/MaayanLab/sigcom-lincs/blob/main/tutorials/SigCom%20LINCS%20Documentation.ipynb
 - category: Product
   compression: gzip
