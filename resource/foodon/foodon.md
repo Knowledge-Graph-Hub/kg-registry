@@ -881,6 +881,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biogrid
   - relation_type: prov:hadPrimarySource
+    source: bioplex
+  - relation_type: prov:hadPrimarySource
     source: bv-brc
   - relation_type: prov:hadPrimarySource
     source: cdc-places
@@ -974,6 +976,8 @@ products:
     source: stitch
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: tflink
   - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
