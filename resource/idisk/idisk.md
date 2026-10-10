@@ -25,7 +25,7 @@ domains:
 homepage_url: https://doi.org/10.13020/d6bm3v
 id: idisk
 infores_id: idisk
-last_modified_date: '2026-10-09T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by-sa/3.0/us/
@@ -204,6 +204,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: dsld
+  - relation_type: prov:hadPrimarySource
+    source: lnhpd
+  - relation_type: prov:hadPrimarySource
+    source: mskcc-about-herbs
   product_url: https://drive.google.com/drive/folders/10mpvyHbRhhsrylw2o3xToT8RihvSWIA4
 - category: Product
   description: iDISK 2.0 relationship files (product-ingredient, ingredient-disease,
@@ -214,6 +220,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: dsld
+  - relation_type: prov:hadPrimarySource
+    source: lnhpd
+  - relation_type: prov:hadPrimarySource
+    source: mskcc-about-herbs
   product_url: https://drive.google.com/drive/folders/1XTtb4KKxUXfqG8tZTbvxtwv7IDUHe424
 - category: ProcessProduct
   description: Code used to build iDISK 1.0 from its source databases, including
