@@ -71,6 +71,40 @@ The sync process:
 - **Error Handling**: Robust error handling with detailed logging
 - **Dry Run Support**: Test mode to preview changes without making modifications
 
+## Local Edits and the Sync State
+
+The OBO Foundry record is the source for these page fields: `name`, `description`,
+`homepage_url`, `repository`, `activity_status`, `category`, `layout` and `license`.
+Each synced product has its own source fields: `name`, `description`, `format`,
+`category` and `product_url`. Local edits to any of them take priority.
+
+`cache/obo_sync_state.yml` records what OBO Foundry said for each ontology at the
+last sync. On each run, every field is decided by comparing three values: the
+page, the recorded value, and the incoming OBO value.
+
+| Page vs. recorded | Incoming vs. recorded | Result |
+|---|---|---|
+| same | same | nothing changes |
+| same | changed | the OBO value is applied |
+| edited | same | the local edit is kept |
+| edited | changed | the local edit is kept and the clash is reported |
+
+A license is compared as a whole object, URL and label together. Fields missing
+from the page are always filled in. A product that was synced before and has
+since been removed from the page is not re-added. Clashes are logged, counted in
+the summary, and written to `reports/obo_sync_conflicts.tsv` by
+`make sync-obo-foundry` and `make sync-obo-foundry-dry-run`. When a clash means
+the OBO Foundry record itself is out of date, the lasting fix is a pull request to
+that ontology's `ontology/<id>.md` in
+[OBOFoundry.github.io](https://github.com/OBOFoundry/OBOFoundry.github.io).
+
+The state is written after each full sync, but not by a dry run.
+`make sync-obo-foundry-seed-state` records current OBO values without changing any
+page. Use it only when the pages already match OBO Foundry, as they did when the
+state file was introduced (#901). OBO registry records carry no modification
+dates, and per-record commit dates in the OBO repository are bumped by bulk edits,
+which is why the sync compares values rather than dates.
+
 ## Domain Mapping
 
 OBO Foundry domains are mapped to KG-Registry domains as follows:
@@ -170,7 +204,7 @@ The script provides detailed logging at INFO and DEBUG levels:
 ## Future Enhancements
 
 Potential future improvements:
-- Incremental sync based on modification dates
+- Pull requests to OBO Foundry for records that clash with local curation
 - Configurable domain mappings
 - Support for additional OBO Foundry metadata fields
 - Integration with automated PR creation for updates

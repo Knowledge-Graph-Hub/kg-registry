@@ -111,19 +111,26 @@ sync-frink:
 	$(RUN) python util/sync_frink.py --verbose
 
 # Sync OBO Foundry ontologies to KG-Registry
-.PHONY: sync-obo-foundry sync-obo-foundry-dry-run sync-obo-foundry-test
+.PHONY: sync-obo-foundry sync-obo-foundry-dry-run sync-obo-foundry-test sync-obo-foundry-seed-state
 
 # Dry run to see what would be synced
 sync-obo-foundry-dry-run:
-	$(RUN) python util/sync_obo_foundry.py --dry-run --verbose
+	$(RUN) python util/sync_obo_foundry.py --dry-run --verbose --conflicts-report reports/obo_sync_conflicts.tsv
 
 # Test sync with limited number of ontologies
 sync-obo-foundry-test:
 	$(RUN) python util/sync_obo_foundry.py --limit 5 --verbose
 
-# Full sync of OBO Foundry ontologies
+# Full sync of OBO Foundry ontologies. A synced field changes only when OBO
+# Foundry changed it since the last sync (cache/obo_sync_state.yml); fields
+# edited both locally and upstream keep the local value and are listed in
+# reports/obo_sync_conflicts.tsv.
 sync-obo-foundry:
-	$(RUN) python util/sync_obo_foundry.py --verbose
+	$(RUN) python util/sync_obo_foundry.py --verbose --conflicts-report reports/obo_sync_conflicts.tsv
+
+# Record current OBO Foundry values as the sync baseline without changing pages.
+sync-obo-foundry-seed-state:
+	$(RUN) python util/sync_obo_foundry.py --seed-state
 
 # Add KG-Bioportal KGX transform products to matching KG-Registry resources.
 # This does not create resources -- see docs/kg-bioportal-sync.md.
