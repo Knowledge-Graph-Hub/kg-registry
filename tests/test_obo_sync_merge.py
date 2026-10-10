@@ -270,16 +270,27 @@ def test_merge_resource_metadata_keeps_curated_license_label_for_same_url(tmp_pa
     }
     synced_same = {"id": "https://hpo.jax.org/app/license", "label": "hpo"}
     synced_moved = {"id": "https://example.org/new-license", "label": "hpo"}
+    baseline = {"fields": {"license": synced_same}, "products": {}}
 
     kept = syncer.merge_resource_metadata(
-        {"id": "hp", "license": curated}, {"id": "hp", "license": synced_same}
+        {"id": "hp", "license": curated}, {"id": "hp", "license": synced_same}, baseline
     )
     assert kept["license"] == curated
+    assert syncer.conflicts == []
 
-    replaced = syncer.merge_resource_metadata(
-        {"id": "hp", "license": curated}, {"id": "hp", "license": synced_moved}
+    # Upstream moved the license too: both sides changed, so the curated
+    # license stays and the clash is reported for review.
+    clashed = syncer.merge_resource_metadata(
+        {"id": "hp", "license": curated}, {"id": "hp", "license": synced_moved}, baseline
     )
-    assert replaced["license"] == synced_moved
+    assert clashed["license"] == curated
+    assert [(c["ontology"], c["field"]) for c in syncer.conflicts] == [("hp", "license")]
+
+    # An untouched license follows upstream.
+    followed = syncer.merge_resource_metadata(
+        {"id": "hp", "license": synced_same}, {"id": "hp", "license": synced_moved}, baseline
+    )
+    assert followed["license"] == synced_moved
 
     filled = syncer.merge_resource_metadata({"id": "hp"}, {"id": "hp", "license": synced_same})
     assert filled["license"] == synced_same
@@ -332,3 +343,281 @@ def test_merge_resource_metadata_keeps_curated_license_when_sync_has_none(tmp_pa
 
     merged = syncer.merge_resource_metadata({"id": "pao", "license": curated}, {"id": "pao"})
     assert merged["license"] == curated
+
+
+# --- Local edits win over unchanged upstream values (#901) -----------------
+
+FMA_OBO = {
+    "id": "fma",
+    "name": "Foundational Model of Anatomy Ontology",
+    "repository": "https://bitbucket.org/uwsig/fma",
+    "license": {
+        "id": "http://sig.biostr.washington.edu/projects/fm/FMA_Release",
+        "label": "CUSTOM",
+    },
+}
+
+
+def _fma_baseline():
+    return {
+        "fields": {
+            "name": FMA_OBO["name"],
+            "repository": FMA_OBO["repository"],
+            "license": FMA_OBO["license"],
+        },
+        "products": {},
+    }
+
+
+def test_local_edit_survives_when_upstream_is_unchanged(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    local = {
+        "id": "fma",
+        "name": "Foundational Model of Anatomy Ontology",
+        "repository": "https://github.com/uw-sig/FMA",
+        "license": {"id": "https://creativecommons.org/licenses/by/4.0/", "label": "CC BY 4.0"},
+    }
+
+    merged = syncer.merge_resource_metadata(local, dict(FMA_OBO), _fma_baseline())
+
+    assert merged["repository"] == "https://github.com/uw-sig/FMA"
+    assert merged["license"] == local["license"]
+    assert syncer.conflicts == []
+
+
+def test_upstream_change_applies_to_untouched_field(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    local = {"id": "fma", "name": FMA_OBO["name"], "repository": FMA_OBO["repository"]}
+    incoming = dict(FMA_OBO, repository="https://github.com/uw-sig/FMA")
+
+    merged = syncer.merge_resource_metadata(local, incoming, _fma_baseline())
+
+    assert merged["repository"] == "https://github.com/uw-sig/FMA"
+    assert syncer.conflicts == []
+
+
+def test_both_sides_changed_keeps_local_and_reports(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    local = {"id": "fma", "name": "FMA (curated name)", "repository": FMA_OBO["repository"]}
+    incoming = dict(FMA_OBO, name="Foundational Model of Anatomy")
+
+    merged = syncer.merge_resource_metadata(local, incoming, _fma_baseline())
+
+    assert merged["name"] == "FMA (curated name)"
+    assert syncer.conflicts == [
+        {
+            "ontology": "fma",
+            "field": "name",
+            "local": "FMA (curated name)",
+            "last_synced": FMA_OBO["name"],
+            "incoming": "Foundational Model of Anatomy",
+        }
+    ]
+
+
+def test_without_sync_record_local_value_is_kept_and_reported(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    local = {"id": "fma", "repository": "https://github.com/uw-sig/FMA"}
+
+    merged = syncer.merge_resource_metadata(local, dict(FMA_OBO))
+
+    assert merged["repository"] == "https://github.com/uw-sig/FMA"
+    # Fields the page lacks are still filled from upstream.
+    assert merged["name"] == FMA_OBO["name"]
+    assert [c["field"] for c in syncer.conflicts] == ["repository"]
+    assert syncer.conflicts[0]["last_synced"] is None
+
+
+def test_product_fields_follow_the_same_rule(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    baseline = {
+        "fields": {},
+        "products": {
+            "fma.owl": {
+                "description": "FMA (subset) in OWL format",
+                "product_url": "http://purl.obolibrary.org/obo/fma.owl",
+            }
+        },
+    }
+    local = {
+        "id": "fma",
+        "products": [
+            {
+                "id": "fma.owl",
+                "description": "Curated description",
+                "product_url": "http://purl.obolibrary.org/obo/fma.owl",
+                "product_file_size": 208047132,
+            }
+        ],
+    }
+    incoming = {
+        "id": "fma",
+        "products": [
+            {
+                "id": "fma.owl",
+                "description": "FMA (subset) in OWL format",
+                "product_url": "http://purl.org/sig/ont/fma.owl",
+            }
+        ],
+    }
+
+    merged = syncer.merge_resource_metadata(local, incoming, baseline)
+    product = merged["products"][0]
+
+    assert product["description"] == "Curated description"
+    assert product["product_url"] == "http://purl.org/sig/ont/fma.owl"
+    assert product["product_file_size"] == 208047132
+    assert syncer.conflicts == []
+
+
+def test_product_removed_locally_is_not_re_added(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    baseline = {"fields": {}, "products": {"go.owl": {}, "go.obo": {}}}
+    incoming = [{"id": "go.owl"}, {"id": "go.obo"}, {"id": "go.json"}]
+
+    merged = syncer.merge_products(
+        [{"id": "go.owl"}], incoming, baseline_products=baseline["products"], ontology_id="go"
+    )
+
+    # go.obo was synced before and removed by a curator; go.json is new upstream.
+    assert [p["id"] for p in merged] == ["go.owl", "go.json"]
+
+
+def test_last_modified_date_unchanged_when_nothing_changes(tmp_path):
+    registry_root = tmp_path / "resource"
+    (registry_root / "fma").mkdir(parents=True)
+    page = registry_root / "fma" / "fma.md"
+    record = {
+        "id": "fma",
+        "title": "Foundational Model of Anatomy Ontology",
+        "repository": "https://bitbucket.org/uwsig/fma",
+    }
+    syncer = OBOFoundrySync(
+        registry_root=str(registry_root), state_path=str(tmp_path / "state.yml")
+    )
+    synced = syncer.transform_obo_to_kg_registry(record)
+    syncer.state["ontologies"]["fma"] = syncer.snapshot(synced)
+    # The page carries everything the sync would write, except a curated repository.
+    page_metadata = dict(
+        synced,
+        repository="https://github.com/uw-sig/FMA",
+        creation_date="2025-06-25T00:00:00Z",
+        last_modified_date="2026-10-09T00:00:00Z",
+    )
+    page.write_text(syncer._serialize_resource(page_metadata, "Body."), encoding="utf-8")
+    syncer.existing_resources = syncer._load_existing_resources()
+
+    before = page.read_text(encoding="utf-8")
+    assert syncer.sync_ontology(record)
+
+    assert page.read_text(encoding="utf-8") == before
+    assert syncer.conflicts == []
+
+
+def test_sync_all_saves_state_and_dry_run_writes_nothing(tmp_path, monkeypatch):
+    registry_root = tmp_path / "resource"
+    (registry_root / "fma").mkdir(parents=True)
+    page = registry_root / "fma" / "fma.md"
+    page.write_text("---\nid: fma\nname: Old name\n---\nBody.\n", encoding="utf-8")
+    state_path = tmp_path / "state.yml"
+    record = {"id": "fma", "title": "Foundational Model of Anatomy Ontology"}
+
+    syncer = OBOFoundrySync(registry_root=str(registry_root), state_path=str(state_path))
+    monkeypatch.setattr(syncer, "fetch_obo_foundry_data", lambda: [record])
+    before = page.read_text(encoding="utf-8")
+    stats = syncer.sync_all(dry_run=True)
+    assert page.read_text(encoding="utf-8") == before
+    assert not state_path.exists()
+    assert stats["conflicts"] == 1
+
+    syncer = OBOFoundrySync(registry_root=str(registry_root), state_path=str(state_path))
+    monkeypatch.setattr(syncer, "fetch_obo_foundry_data", lambda: [record])
+    syncer.sync_all()
+    reloaded = OBOFoundrySync(registry_root=str(registry_root), state_path=str(state_path))
+    assert reloaded.state["ontologies"]["fma"]["fields"]["name"] == record["title"]
+
+
+def test_seed_state_records_values_without_sources(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    seeded = syncer.seed_state(
+        [
+            {
+                "id": "fma",
+                "title": "FMA",
+                "products": [{"id": "fma.owl", "ontology_purl": "http://x/fma.owl"}],
+            }
+        ]
+    )
+
+    assert seeded == 1
+    entry = syncer.state["ontologies"]["fma"]
+    assert entry["fields"]["name"] == "FMA"
+    assert "original_source" not in entry["products"]["fma.owl"]
+
+
+# --- Ontology dependencies become product sources (#421) -------------------
+
+
+def _registry_with(tmp_path, *ids):
+    root = tmp_path / "resource"
+    for resource_id in ids:
+        (root / resource_id).mkdir(parents=True, exist_ok=True)
+        (root / resource_id / f"{resource_id}.md").write_text(f"---\nid: {resource_id}\n---\n")
+    return root
+
+
+def test_dependencies_become_sources_on_non_base_products(tmp_path):
+    root = _registry_with(tmp_path, "bfo", "ro")
+    syncer = OBOFoundrySync(registry_root=str(root))
+
+    resource = syncer.transform_obo_to_kg_registry(
+        {
+            "id": "cl",
+            "title": "Cell Ontology",
+            "dependencies": [
+                {"id": "bfo"},
+                {"id": "ro"},
+                {"id": "notinregistry"},
+                {"id": "go/extensions/go-bridge-to-nifstd.owl", "type": "BridgeOntology"},
+            ],
+            "products": [
+                {"id": "cl.owl"},
+                {"id": "cl/cl-base.owl"},
+                {"id": "cl/cl-basic.obo"},
+            ],
+        }
+    )
+    sources = {p["id"]: [s["source"] for s in p["original_source"]] for p in resource["products"]}
+
+    assert sources == {
+        "cl.owl": ["cl", "bfo", "ro"],
+        "cl.cl-base.owl": ["cl"],
+        "cl.cl-basic.obo": ["cl", "bfo", "ro"],
+    }
+
+
+def test_dependency_sources_merge_with_curated_sources(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    own = {"relation_type": "prov:hadPrimarySource", "source": "cl"}
+    bfo = {"relation_type": "prov:hadPrimarySource", "source": "bfo"}
+    ro = {"relation_type": "prov:hadPrimarySource", "source": "ro"}
+    uberon = {"relation_type": "prov:hadPrimarySource", "source": "uberon"}
+    curated = {"relation_type": "prov:wasDerivedFrom", "source": "hpa"}
+
+    # First sync after seeding: no recorded sources, so every upstream source is added.
+    merged = syncer.merge_products(
+        [{"id": "cl.owl", "original_source": [own, curated]}],
+        [{"id": "cl.owl", "original_source": [own, bfo, ro]}],
+        baseline_products={"cl.owl": {}},
+        ontology_id="cl",
+    )
+    assert merged[0]["original_source"] == [own, curated, bfo, ro]
+
+    # Upstream later drops ro and adds uberon; the curated source stays.
+    merged = syncer.merge_products(
+        merged,
+        [{"id": "cl.owl", "original_source": [own, bfo, uberon]}],
+        baseline_products={"cl.owl": {"original_source": [own, bfo, ro]}},
+        ontology_id="cl",
+    )
+    assert merged[0]["original_source"] == [own, curated, bfo, uberon]

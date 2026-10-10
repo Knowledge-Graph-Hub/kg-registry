@@ -28,13 +28,37 @@ logger = logging.getLogger(__name__)
 class OBOFoundrySync:
     """Synchronize OBO Foundry ontologies with KG-Registry"""
 
-    def __init__(self, registry_root: Optional[str] = None, cache_ttl_hours: int = 24):
+    # Page fields the OBO Foundry record is authoritative for. Each is updated
+    # only when OBO Foundry changed it since the last sync, so a local edit
+    # survives until upstream moves (#901).
+    SYNCED_FIELDS = (
+        'name',
+        'description',
+        'homepage_url',
+        'repository',
+        'activity_status',
+        'category',
+        'layout',
+        'license',
+    )
+    # The same rule applied to each synced product, keyed by product id.
+    SYNCED_PRODUCT_FIELDS = ('name', 'description', 'format', 'category', 'product_url')
+    STATE_VERSION = 1
+
+    def __init__(
+        self,
+        registry_root: Optional[str] = None,
+        cache_ttl_hours: int = 24,
+        state_path: Optional[str] = None,
+    ):
         """
         Initialize the sync class
 
         Args:
             registry_root: Path to registry root directory
             cache_ttl_hours: Cache time-to-live in hours (default: 24)
+            state_path: Path to the last-synced OBO values
+                (default: <registry_root>/../cache/obo_sync_state.yml)
         """
         if registry_root is None:
             # Default to the registry root directory relative to this script
@@ -46,6 +70,15 @@ class OBOFoundrySync:
         self.obo_foundry_url = "https://obofoundry.org/registry/ontologies.yml"
         self.existing_resources = self._load_existing_resources()
         self.product_exclusions = self._load_product_exclusions()
+
+        # What OBO Foundry said for each ontology at the last sync. Comparing it
+        # with the incoming record tells us which side changed a field.
+        if state_path is None:
+            self.state_path = self.registry_root.parent / 'cache' / 'obo_sync_state.yml'
+        else:
+            self.state_path = Path(state_path)
+        self.state = self._load_state()
+        self.conflicts: List[Dict[str, Any]] = []
 
         # Cache configuration
         self.cache_ttl_hours = cache_ttl_hours
@@ -86,6 +119,180 @@ class OBOFoundrySync:
         except Exception as e:
             logger.warning(f"Failed to load product exclusions: {e}")
         return exclusions
+
+    def _load_state(self) -> Dict[str, Any]:
+        """Load the last-synced OBO values, or an empty state."""
+        if not self.state_path.exists():
+            return {'version': self.STATE_VERSION, 'ontologies': {}}
+        try:
+            with open(self.state_path, 'r', encoding='utf-8') as handle:
+                data = yaml.safe_load(handle) or {}
+        except Exception as e:
+            logger.warning(f"Failed to load sync state from {self.state_path}: {e}")
+            data = {}
+        data.setdefault('version', self.STATE_VERSION)
+        data['ontologies'] = data.get('ontologies') or {}
+        return data
+
+    def save_state(self) -> None:
+        """Write the last-synced OBO values."""
+        self.state_path.parent.mkdir(parents=True, exist_ok=True)
+        ontologies = {key: self.state['ontologies'][key] for key in sorted(self.state['ontologies'])}
+        with open(self.state_path, 'w', encoding='utf-8') as handle:
+            yaml.safe_dump(
+                {'version': self.STATE_VERSION, 'ontologies': ontologies},
+                handle,
+                default_flow_style=False,
+                sort_keys=False,
+                allow_unicode=True,
+            )
+
+    def snapshot(self, synced_metadata: Dict[str, Any], include_sources: bool = True) -> Dict[str, Any]:
+        """Record what OBO Foundry said for one ontology.
+
+        ``include_sources=False`` leaves product sources out, so the next sync
+        treats every upstream source as new and adds it. Seeding uses this.
+        """
+        fields = {
+            field: copy.deepcopy(synced_metadata[field])
+            for field in self.SYNCED_FIELDS
+            if synced_metadata.get(field) is not None
+        }
+        products: Dict[str, Any] = {}
+        for product in synced_metadata.get('products') or []:
+            product_id = product.get('id') if isinstance(product, dict) else None
+            if not isinstance(product_id, str):
+                continue
+            entry = {
+                field: copy.deepcopy(product[field])
+                for field in self.SYNCED_PRODUCT_FIELDS
+                if product.get(field) is not None
+            }
+            if include_sources and product.get('original_source'):
+                entry['original_source'] = copy.deepcopy(product['original_source'])
+            products[product_id] = entry
+        return {'fields': fields, 'products': products}
+
+    def seed_state(self, ontologies: List[Dict[str, Any]]) -> int:
+        """Record current OBO values as the baseline without touching any page."""
+        seeded = 0
+        for ontology in ontologies:
+            ontology_id = ontology.get('id', '').lower()
+            if not ontology_id:
+                continue
+            synced = self.transform_obo_to_kg_registry(ontology)
+            self.state['ontologies'][ontology_id] = self.snapshot(synced, include_sources=False)
+            seeded += 1
+        return seeded
+
+    def _record_conflict(self, ontology_id: str, field: str, local: Any, base: Any, incoming: Any) -> None:
+        conflict = {
+            'ontology': ontology_id,
+            'field': field,
+            'local': local,
+            'last_synced': base,
+            'incoming': incoming,
+        }
+        self.conflicts.append(conflict)
+        if base is None:
+            logger.warning(
+                "Kept local %s for %s: no sync record to compare, and OBO Foundry has %r (local %r)",
+                field, ontology_id, incoming, local,
+            )
+        else:
+            logger.warning(
+                "Kept local %s for %s: OBO Foundry changed it to %r, but it was edited locally (%r)",
+                field, ontology_id, incoming, local,
+            )
+
+    def _three_way(
+        self,
+        ontology_id: str,
+        field: str,
+        local: Any,
+        incoming: Any,
+        baseline: Optional[Dict[str, Any]],
+        label: Optional[str] = None,
+    ) -> Any:
+        """Pick a field value, keeping local edits unless OBO changed the field.
+
+        ``baseline`` is the dict of last-synced values for this ontology or
+        product, or None when there is no record yet. ``label`` names the
+        field in conflict reports when it differs from the baseline key.
+        """
+        label = label or field
+        if incoming is None:
+            return local
+        if local is None:
+            return copy.deepcopy(incoming)
+        if local == incoming:
+            return local
+        if baseline is None:
+            # No record of what we last synced, so we cannot tell which side
+            # moved. Keep the page and report the difference.
+            self._record_conflict(ontology_id, label, local, None, incoming)
+            return local
+        base = baseline.get(field)
+        if incoming == base:
+            return local
+        if local == base:
+            return copy.deepcopy(incoming)
+        self._record_conflict(ontology_id, label, local, base, incoming)
+        return local
+
+    @staticmethod
+    def _source_key(source: Any) -> Tuple[str, str]:
+        if isinstance(source, dict):
+            return (str(source.get('source', '')), str(source.get('relation_type', '')))
+        return (str(source), '')
+
+    def _merge_sources(self, local: Any, incoming: Any, base: Any) -> List[Any]:
+        """Apply upstream source additions and removals to the local list.
+
+        A source OBO Foundry added since the last sync is added; one it dropped
+        is removed. Sources curated locally are left alone.
+        """
+        local = [copy.deepcopy(s) for s in local or []]
+        incoming = list(incoming or [])
+        base_keys = {self._source_key(s) for s in base or []}
+        incoming_keys = {self._source_key(s) for s in incoming}
+        removed = base_keys - incoming_keys
+        merged = [s for s in local if self._source_key(s) not in removed]
+        merged_keys = {self._source_key(s) for s in merged}
+        for source in incoming:
+            key = self._source_key(source)
+            if key not in base_keys and key not in merged_keys:
+                merged.append(copy.deepcopy(source))
+                merged_keys.add(key)
+        return merged
+
+    @staticmethod
+    def _is_base_product(product_id: str) -> bool:
+        """True for OBO base modules, which carry no imported axioms."""
+        # Ids arrive namespaced and dotted, e.g. 'cl.cl-base.owl' or
+        # 'hancestro.hancestro-base.owl'; skip the leading ontology id.
+        segments = product_id.replace('/', '.').split('.')[1:]
+        return any(segment == 'base' or segment.endswith('-base') for segment in segments)
+
+    def _dependency_sources(self, ontology_id: str, obo_ontology: Dict[str, Any]) -> List[Dict[str, str]]:
+        """Registry ids of the ontologies this one imports (#421)."""
+        sources = []
+        seen = {ontology_id}
+        for dependency in obo_ontology.get('dependencies') or []:
+            dependency_id = dependency.get('id') if isinstance(dependency, dict) else dependency
+            if not isinstance(dependency_id, str):
+                continue
+            dependency_id = dependency_id.strip().lower()
+            if not dependency_id or dependency_id in seen:
+                continue
+            # Bridge files such as 'go/extensions/go-bridge-to-nifstd.owl' are
+            # not ontologies, and a source must name a registry resource.
+            if '/' in dependency_id or not (self.registry_root / dependency_id / f"{dependency_id}.md").exists():
+                logger.debug("Skipping dependency %s of %s: no registry resource", dependency_id, ontology_id)
+                continue
+            seen.add(dependency_id)
+            sources.append({'relation_type': 'prov:hadPrimarySource', 'source': dependency_id})
+        return sources
 
     def _map_obo_domain_to_schema(self, obo_domain: str) -> List[str]:
         """Map OBO Foundry domain to KG-Registry DomainEnum values"""
@@ -446,6 +653,16 @@ class OBOFoundrySync:
                 'category': 'OntologyProduct'  # Set category to OntologyProduct for ontology products
             })
 
+        # Every product comes from the ontology itself. Products other than base
+        # modules also carry the ontologies it imports (#421); a base module
+        # holds only the ontology's own axioms.
+        dependency_sources = self._dependency_sources(ontology_id, obo_ontology)
+        for product_obj in products:
+            sources = [{'relation_type': 'prov:hadPrimarySource', 'source': ontology_id}]
+            if not self._is_base_product(product_obj['id']):
+                sources.extend(copy.deepcopy(dependency_sources))
+            product_obj['original_source'] = sources
+
         # Get domain/categories and map to valid DomainEnum values
         obo_domain = obo_ontology.get('domain', '')
         domains = self._map_obo_domain_to_schema(obo_domain)
@@ -590,7 +807,16 @@ class OBOFoundrySync:
         existing_products: Any,
         synced_products: Any,
         excluded_ids: Optional[set] = None,
+        baseline_products: Optional[Dict[str, Any]] = None,
+        ontology_id: str = '',
     ) -> List[Dict[str, Any]]:
+        """Merge synced products into the page's products.
+
+        Synced fields follow the same rule as page fields: a locally edited
+        value is kept unless OBO Foundry changed it since the last sync.
+        ``baseline_products`` maps product id to its last-synced values, or is
+        None when the ontology has no sync record.
+        """
         excluded_ids = excluded_ids or set()
 
         def _is_excluded(product: Dict[str, Any]) -> bool:
@@ -620,8 +846,21 @@ class OBOFoundrySync:
         for product in existing:
             product_id = product.get('id')
             if isinstance(product_id, str) and product_id in synced_by_id:
+                incoming = synced_by_id[product_id]
+                base = None if baseline_products is None else baseline_products.get(product_id, {})
                 updated = copy.deepcopy(product)
-                updated.update(synced_by_id[product_id])
+                for field, value in incoming.items():
+                    if field == 'original_source':
+                        updated[field] = self._merge_sources(
+                            product.get(field), value, (base or {}).get(field)
+                        )
+                    elif field in self.SYNCED_PRODUCT_FIELDS:
+                        updated[field] = self._three_way(
+                            ontology_id, field, product.get(field), value, base,
+                            label=f"products[{product_id}].{field}",
+                        )
+                    elif field not in updated:
+                        updated[field] = copy.deepcopy(value)
                 merged.append(updated)
                 seen_ids.add(product_id)
             else:
@@ -630,6 +869,10 @@ class OBOFoundrySync:
         for product in synced:
             product_id = product.get('id')
             if product_id in seen_ids:
+                continue
+            if baseline_products is not None and product_id in baseline_products:
+                # Synced before and gone from the page now: a curator removed it.
+                logger.info("Not re-adding product %s, removed locally", product_id)
                 continue
             merged.append(product)
 
@@ -692,40 +935,39 @@ class OBOFoundrySync:
         return merged
 
     def merge_resource_metadata(
-        self, existing_metadata: Dict[str, Any], synced_metadata: Dict[str, Any]
+        self,
+        existing_metadata: Dict[str, Any],
+        synced_metadata: Dict[str, Any],
+        baseline: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
+        """Merge an OBO Foundry record into a page's metadata.
+
+        ``baseline`` is this ontology's entry in the sync state (``fields`` and
+        ``products`` as OBO Foundry gave them at the last sync), or None when
+        there is no record. A synced field takes the OBO value only when OBO
+        changed it since then; a field edited on both sides keeps the local
+        value and is reported in ``self.conflicts`` (#901).
+        """
         if not existing_metadata:
             return copy.deepcopy(synced_metadata)
 
         merged = copy.deepcopy(existing_metadata)
+        ontology_id = str(
+            existing_metadata.get('id') or synced_metadata.get('id') or ''
+        ).lower()
+        baseline_fields = None if baseline is None else (baseline.get('fields') or {})
+        baseline_products = None if baseline is None else (baseline.get('products') or {})
 
-        for field in [
-            'name',
-            'description',
-            'homepage_url',
-            'repository',
-            'activity_status',
-            'category',
-            'layout',
-        ]:
-            if synced_metadata.get(field):
-                merged[field] = copy.deepcopy(synced_metadata[field])
-
-        # A curated license label survives the sync. The OBO Foundry record
-        # only carries a short name (e.g. "hpo"), and curators refine that to
-        # say what the license page actually grants. Take the synced license
-        # when the page has none, or when the URL itself has changed upstream.
-        synced_license = synced_metadata.get('license')
-        if synced_license:
-            existing_license = existing_metadata.get('license')
-            same_url = (
-                isinstance(existing_license, dict)
-                and isinstance(synced_license, dict)
-                and existing_license.get('id')
-                and existing_license.get('id') == synced_license.get('id')
+        # License compares as a whole object. Curators refine the short OBO
+        # label (e.g. "hpo") to say what the license grants, and that edit
+        # survives like any other.
+        for field in self.SYNCED_FIELDS:
+            incoming = synced_metadata.get(field) or None
+            value = self._three_way(
+                ontology_id, field, existing_metadata.get(field), incoming, baseline_fields
             )
-            if not same_url:
-                merged['license'] = copy.deepcopy(synced_license)
+            if value is not None:
+                merged[field] = value
 
         for field in ['domains', 'tags', 'taxon', 'collection']:
             merged_values = self._merge_unique_lists(
@@ -737,13 +979,12 @@ class OBOFoundrySync:
         merged['contacts'] = self.merge_contacts(
             existing_metadata.get('contacts'), synced_metadata.get('contacts')
         )
-        ontology_id = str(
-            existing_metadata.get('id') or synced_metadata.get('id') or ''
-        ).lower()
         merged['products'] = self.merge_products(
             existing_metadata.get('products'),
             synced_metadata.get('products'),
             excluded_ids=self.product_exclusions.get(ontology_id, set()),
+            baseline_products=baseline_products,
+            ontology_id=ontology_id,
         )
         merged['publications'] = self.merge_publications(
             existing_metadata.get('publications'), synced_metadata.get('publications')
@@ -969,8 +1210,12 @@ class OBOFoundrySync:
 
         return markdown_content
 
-    def sync_ontology(self, obo_ontology: Dict[str, Any]) -> bool:
-        """Sync a single ontology to KG-Registry format"""
+    def sync_ontology(self, obo_ontology: Dict[str, Any], dry_run: bool = False) -> bool:
+        """Sync a single ontology to KG-Registry format.
+
+        With ``dry_run`` the merge runs and conflicts are reported, but neither
+        the page nor the sync state is written.
+        """
 
         ontology_id = obo_ontology.get('id', '').lower()
         if not ontology_id:
@@ -983,15 +1228,13 @@ class OBOFoundrySync:
             # Transform to KG-Registry format
             kg_resource = self.transform_obo_to_kg_registry(obo_ontology)
 
-            # Create resource directory
             resource_dir = self.registry_root / ontology_id
-            resource_dir.mkdir(parents=True, exist_ok=True)
-
             resource_file = resource_dir / f"{ontology_id}.md"
 
             is_new = ontology_id not in self.existing_resources
             existing_metadata, existing_content = self._load_existing_post(resource_file)
-            merged_metadata = self.merge_resource_metadata(existing_metadata, kg_resource)
+            baseline = self.state['ontologies'].get(ontology_id)
+            merged_metadata = self.merge_resource_metadata(existing_metadata, kg_resource, baseline)
 
             today_iso = self._today_iso()
             if existing_metadata.get('creation_date'):
@@ -1009,11 +1252,21 @@ class OBOFoundrySync:
                 or self._content_for_compare(existing_content) != self._content_for_compare(content)
             )
 
+            if dry_run:
+                if has_changed:
+                    logger.info("[DRY RUN] Would update %s", ontology_id)
+                return True
+
+            # Record what OBO Foundry said this time, whether or not the page
+            # changed, so the next sync can tell which side moved.
+            self.state['ontologies'][ontology_id] = self.snapshot(kg_resource)
+
             if not has_changed:
                 logger.info("No OBO Foundry changes detected for %s", ontology_id)
                 return True
 
             merged_metadata['last_modified_date'] = today_iso
+            resource_dir.mkdir(parents=True, exist_ok=True)
             resource_file.write_text(
                 self._serialize_resource(merged_metadata, content),
                 encoding='utf-8',
@@ -1040,7 +1293,8 @@ class OBOFoundrySync:
             'created': 0,
             'updated': 0,
             'failed': 0,
-            'skipped': 0
+            'skipped': 0,
+            'conflicts': 0,
         }
 
         try:
@@ -1067,12 +1321,12 @@ class OBOFoundrySync:
 
                 stats['processed'] += 1
 
-                if dry_run:
-                    logger.info(f"[DRY RUN] Would sync ontology: {ontology_id}")
-                    continue
-
                 # Check if this is new or existing
                 is_new = ontology_id not in self.existing_resources
+
+                if dry_run:
+                    self.sync_ontology(ontology, dry_run=True)
+                    continue
 
                 if self.sync_ontology(ontology):
                     if is_new:
@@ -1082,12 +1336,40 @@ class OBOFoundrySync:
                 else:
                     stats['failed'] += 1
 
+            stats['conflicts'] = len(self.conflicts)
+            if not dry_run:
+                self.save_state()
             logger.info(f"Sync completed. Stats: {stats}")
             return stats
 
         except Exception as e:
             logger.error(f"Sync failed: {e}")
             raise
+
+
+def write_conflicts_report(conflicts: List[Dict[str, Any]], path: str) -> None:
+    """Write sync conflicts as TSV: ontology, field, local, last synced, incoming."""
+    import csv
+    import json
+
+    def _cell(value: Any) -> str:
+        if value is None:
+            return ''
+        if isinstance(value, str):
+            return value
+        return json.dumps(value, sort_keys=True)
+
+    with open(path, 'w', encoding='utf-8', newline='') as handle:
+        writer = csv.writer(handle, delimiter='\t')
+        writer.writerow(['ontology', 'field', 'local', 'last_synced', 'incoming'])
+        for conflict in conflicts:
+            writer.writerow([
+                conflict['ontology'],
+                conflict['field'],
+                _cell(conflict['local']),
+                _cell(conflict['last_synced']),
+                _cell(conflict['incoming']),
+            ])
 
 
 def main():
@@ -1107,6 +1389,13 @@ def main():
                         help='Disable cache and fetch fresh data')
     parser.add_argument('--cache-ttl', type=int, default=24,
                         help='Cache time-to-live in hours (default: 24)')
+    parser.add_argument('--state', type=str,
+                        help='Path to the last-synced OBO values (default: cache/obo_sync_state.yml)')
+    parser.add_argument('--seed-state', action='store_true',
+                        help='Record current OBO Foundry values as the sync baseline '
+                             'without changing any resource page, then exit')
+    parser.add_argument('--conflicts-report', type=str,
+                        help='Write fields edited both locally and upstream to this TSV file')
 
     args = parser.parse_args()
 
@@ -1117,8 +1406,20 @@ def main():
         # Set cache TTL to 0 if --no-cache is specified (forces fresh fetch)
         cache_ttl = 0 if args.no_cache else args.cache_ttl
 
-        syncer = OBOFoundrySync(registry_root=args.registry_root, cache_ttl_hours=cache_ttl)
+        syncer = OBOFoundrySync(
+            registry_root=args.registry_root, cache_ttl_hours=cache_ttl, state_path=args.state
+        )
+
+        if args.seed_state:
+            seeded = syncer.seed_state(syncer.fetch_obo_foundry_data())
+            syncer.save_state()
+            print(f"Seeded sync state for {seeded} ontologies at {syncer.state_path}")
+            return
+
         stats = syncer.sync_all(dry_run=args.dry_run, limit=args.limit)
+
+        if args.conflicts_report:
+            write_conflicts_report(syncer.conflicts, args.conflicts_report)
 
         print(f"\nSync Summary:")
         print(f"  Processed: {stats['processed']}")
@@ -1126,6 +1427,10 @@ def main():
         print(f"  Updated: {stats['updated']}")
         print(f"  Failed: {stats['failed']}")
         print(f"  Skipped: {stats['skipped']}")
+        print(f"  Conflicts (local value kept): {stats['conflicts']}")
+        for conflict in syncer.conflicts:
+            print(f"    {conflict['ontology']} {conflict['field']}: "
+                  f"local={conflict['local']!r} incoming={conflict['incoming']!r}")
 
         # Only exit with error if sync completely failed or no ontologies were processed
         # Failed individual ontologies (usually due to missing descriptions) are expected
