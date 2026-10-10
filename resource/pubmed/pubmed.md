@@ -2679,6 +2679,12 @@ products:
     source: reprotox-kg
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
+  - relation_type: prov:hadPrimarySource
+    source: drugenrichr
   product_file_size: 1649245
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
 - category: GraphProduct
@@ -2694,6 +2700,8 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
   product_file_size: 8941255
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
 - category: GraphProduct
@@ -2709,8 +2717,94 @@ products:
     source: hp
   - relation_type: prov:hadPrimarySource
     source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
   product_file_size: 7214043
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
+- category: Product
+  compression: gzip
+  description: About 2 million drug to PubMed article associations, built by querying
+    PubMed with the InChIKeys of Drugmonizome and SEP-L1000 compounds via PubChem.
+  format: tsv
+  id: drugshot.drugrif
+  name: DrugRIF Drug-Publication Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_file_size: 9016822
+  product_url: https://appyters.maayanlab.cloud/storage/DrugShot/DrugRIF.tsv.gz
+- category: Product
+  compression: gzip
+  description: About 8 million drug to PubMed article associations, built by querying
+    PubMed with drug names matched to MeSH.
+  format: tsv
+  id: drugshot.autorif
+  name: AutoRIF Drug-Publication Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 33310010
+  product_url: https://appyters.maayanlab.cloud/storage/DrugShot/AutoRIF.tsv.gz
+- category: Product
+  description: Drug-drug co-mention matrix computed from AutoRIF literature associations.
+  format: hdf5
+  id: drugshot.autorif-cooccurrence
+  name: AutoRIF Drug Co-mention Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 162117904
+  product_url: https://appyters.maayanlab.cloud/storage/DrugShot/autorif_cooccur.h5
+- category: Product
+  description: Drug-drug co-mention matrix computed from DrugRIF literature associations.
+  format: hdf5
+  id: drugshot.drugrif-cooccurrence
+  name: DrugRIF Drug Co-mention Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 153696656
+  product_url: https://appyters.maayanlab.cloud/storage/DrugShot/drugrif_cooccur.h5
+- category: Product
+  description: Human gene to PubMed article associations from NCBI GeneRIF, with dates
+    replaced by publication dates.
+  format: tsv
+  id: geneshot.generif
+  name: GeneRIF Gene-Publication Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 14546796
+  product_url: https://s3.amazonaws.com/mssm-data/generif.tsv
+- category: Product
+  description: Automatically generated human gene to PubMed article associations,
+    built by querying PubMed with all human gene symbols.
+  format: tsv
+  id: geneshot.autorif
+  name: AutoRIF Gene-Publication Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 626888558
+  product_url: https://s3.amazonaws.com/mssm-data/autorif.tsv
 publications:
 - authors:
   - Eric W Sayers

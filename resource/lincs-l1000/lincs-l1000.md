@@ -589,6 +589,8 @@ products:
     source: reprotox-kg
   - relation_type: prov:hadPrimarySource
     source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
   product_file_size: 114587395
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json
 - category: GraphProduct
@@ -604,6 +606,170 @@ products:
     source: lincs-l1000
   product_file_size: 15033998
   product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_drug_similarity.valid.json
+- category: Product
+  description: Statistics for the 29 drug set libraries (109,284 terms) served by
+    DrugEnrichr, built from ATC, the Drug Repurposing Hub, KINOMEscan, PharmGKB and
+    OFFSIDES, DrugCentral, CREEDS, Geneshot, L1000FWD, SIDER, and STITCH. Each library
+    can be downloaded as a GMT-style text file from the geneSetLibrary endpoint (mode=text&libraryName=<library>).
+  format: json
+  id: drugenrichr.libraries
+  name: DrugEnrichr Drug Set Libraries
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugenrichr
+  - relation_type: prov:hadPrimarySource
+    source: atc
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
+- category: Product
+  description: Drug-drug similarity matrix from cosine similarity of L1000 drug-induced
+    gene expression signatures (SEP-L1000), used to predict related compounds.
+  format: hdf5
+  id: drugshot.l1000-similarity
+  name: L1000 Drug-Drug Similarity Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugshot
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 1550026868
+  product_url: https://appyters.maayanlab.cloud/storage/DrugShot/L1000_coexpression.h5
+- category: Product
+  compression: gzip
+  description: Consensus (mean) characteristic-direction coefficient matrix of L1000
+    chemical perturbation signatures, 2021 processing.
+  format: tsv
+  id: sigcom-lincs.cp-consensus
+  name: L1000 Chemical Perturbation Consensus Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 1897525732
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/cp_mean_coeff_mat.tsv.gz
+- category: Product
+  compression: gzip
+  description: Consensus (mean) characteristic-direction coefficient matrix of L1000
+    CRISPR knockout signatures, 2021 processing.
+  format: tsv
+  id: sigcom-lincs.xpr-consensus
+  name: L1000 CRISPR Knockout Consensus Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 432492125
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/means/xpr_mean_coeff_mat.tsv.gz
+- category: Product
+  description: Up and down gene sets for each L1000 chemical perturbation signature
+    in GMT format, 2021 processing.
+  format: tsv
+  id: sigcom-lincs.cp-gmt
+  name: L1000 Chemical Perturbation Gene Sets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 2245934983
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_cp.gmt
+- category: Product
+  description: Up and down gene sets for each L1000 CRISPR knockout signature in GMT
+    format.
+  format: tsv
+  id: sigcom-lincs.xpr-gmt
+  name: L1000 CRISPR Knockout Gene Sets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 438363414
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_xpr.gmt
+- category: Product
+  description: Up and down gene sets for each L1000 shRNA knockdown signature in GMT
+    format.
+  format: tsv
+  id: sigcom-lincs.shrna-gmt
+  name: L1000 shRNA Gene Sets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 501676713
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_shRNA.gmt
+- category: Product
+  description: Up and down gene sets for each L1000 overexpression signature in GMT
+    format.
+  format: tsv
+  id: sigcom-lincs.oe-gmt
+  name: L1000 Overexpression Gene Sets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 105994280
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gmt/l1000_oe.gmt
+- category: Product
+  description: Characteristic-direction coefficient matrix for all individual L1000
+    chemical perturbation signatures in GCTX (HDF5) format.
+  format: hdf5
+  id: sigcom-lincs.cp-coefficients
+  name: L1000 Chemical Perturbation Signature Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 36084518760
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-sigs-2021/gctx/cd-coefficient/cp_coeff_mat.gctx
+- category: Product
+  description: Drug-drug cosine similarity matrix computed from L1000 landmark gene
+    signatures.
+  format: hdf5
+  id: sigcom-lincs.drug-similarity
+  name: L1000 Drug-Drug Similarity Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 4521206656
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_drug_similarity_lm.h5
+- category: Product
+  description: Gene-gene cosine similarity matrix computed from L1000 genetic perturbation
+    signatures on landmark genes.
+  format: hdf5
+  id: sigcom-lincs.gene-similarity
+  name: L1000 Gene-Gene Similarity Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 225768016
+  product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_gene_similarity_lm.h5
 publications:
 - authors:
   - Subramanian, A.
