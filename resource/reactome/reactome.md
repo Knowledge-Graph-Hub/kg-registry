@@ -1177,7 +1177,7 @@ products:
   - '1.0'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -1201,7 +1201,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1307,7 +1307,7 @@ products:
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -1331,7 +1331,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1437,7 +1437,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -1461,7 +1461,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1568,7 +1568,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
@@ -1592,7 +1592,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1699,7 +1699,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
@@ -1723,7 +1723,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -2030,7 +2030,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -2054,7 +2054,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -2161,7 +2161,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -2185,7 +2185,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -2291,7 +2291,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -2315,7 +2315,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -2421,7 +2421,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -2445,7 +2445,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -6257,6 +6257,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -7555,9 +7557,9 @@ products:
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: ProgrammingInterface
-  description: MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez
-    or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents
-    merged from the integrated sources.
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
+    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
+    JSON documents merged from the integrated sources.
   format: http
   id: mygene.api
   infores_id: mygene-info
@@ -7615,11 +7617,11 @@ products:
     source: wikipedia
   product_url: https://mygene.info/v3/api
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -7727,8 +7729,9 @@ products:
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: ProgrammingInterface
-  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal, BioModels,
-    BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog and Reactome.
+  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal,
+    BioModels, BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog
+    and Reactome.
   format: http
   id: rdf-portal.sparql.ebi
   name: RDF Portal EBI SPARQL Endpoint

@@ -945,6 +945,7 @@ http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/:
   checked_at: '2026-10-05T21:24:48Z'
   error: GET returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 http://phenomebrowser.net/:
   checked_at: '2026-10-02T21:36:42Z'
@@ -4309,16 +4310,19 @@ http://purl.org/heals/food:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://purl.org/heals/foodon:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://purl.org/heals/ingredient:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://purl.org/spar/cito.ttl:
   checked_at: '2026-10-02T21:37:07Z'
@@ -4348,6 +4352,7 @@ http://rdf.jpostdb.org/ontology/jpost.owl:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://redrugs.tw.rpi.edu/:
   checked_at: '2026-06-02T22:35:44Z'
@@ -4463,6 +4468,11 @@ http://sideeffects.embl.de/media/download/meddra_freq.tsv.gz:
   ok: true
   source: cache
   status_code: 200
+http://sig.biostr.washington.edu/share/downloads/fma/release/latest/pun_fma.owl:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi:
   checked_at: '2026-10-02T21:37:08Z'
   error: null
@@ -4570,6 +4580,7 @@ http://togodb.biosciencedbc.jp/togodb/view/open_tggates_main:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://togows.org/:
   checked_at: '2026-10-04T00:22:56Z'
@@ -4593,6 +4604,7 @@ http://toxico.nibiohn.go.jp/:
     port=80): Failed to resolve ''toxico.nibiohn.go.jp'' ([Errno -2] Name or service
     not known)"))'
   ok: false
+  source: cache
   status_code: null
 http://uberon.org:
   checked_at: '2026-10-02T21:37:09Z'
@@ -4622,6 +4634,7 @@ http://web.archive.org/web/2007/http://pharminfo.pharm.kyoto-u.ac.jp/services/gl
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 429
 http://web.archive.org/web/20180524103413/http://chembank.broadinstitute.org/:
   checked_at: '2026-10-02T21:37:09Z'
@@ -4633,6 +4646,7 @@ http://web.archive.org/web/20181108212124/http://pharminfo.pharm.kyoto-u.ac.jp:8
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 429
 http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology:
   checked_at: '2026-10-02T21:37:09Z'
@@ -4644,6 +4658,7 @@ http://wordnetweb.princeton.edu/perl/webwn:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html:
   checked_at: '2026-10-02T21:37:10Z'
@@ -4943,16 +4958,19 @@ http://www.humanproteomemap.org/:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.humanproteomemap.org/download.php:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.humanproteomemap.org/query.php:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.inbirg.com/organoid_db/:
   checked_at: '2026-10-02T21:37:12Z'
@@ -5078,21 +5096,25 @@ http://www.loa.istc.cnr.it/dolce/overview.html:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.loa.istc.cnr.it/old/Papers/D18.pdf:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.loa.istc.cnr.it/ontologies/DLP3971.zip:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl:
   checked_at: '2026-10-05T21:24:48Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.loria.fr/~coulet/sopharm2.0_description.php:
   checked_at: '2026-10-02T21:37:13Z'
@@ -5254,6 +5276,7 @@ http://www.ontologydesignpatterns.org/ont/dul/DUL.owl:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://www.ontotext.com/proton/protontop:
   checked_at: '2026-10-02T21:37:14Z'
@@ -5524,31 +5547,37 @@ https://aber-owl.net/:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aber-owl.net/api/docs:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aber-owl.net/api/listOntologies:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aber-owl.net/api/sparql:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aber-owl.net/docs:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aber-owl.net/mcp/ontology/mcp:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 406
 https://academic.oup.com/nar/article/47/D1/D1118/5144144:
   checked_at: '2026-10-02T21:37:17Z'
@@ -5602,51 +5631,61 @@ https://agroportal.eu/:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agroportal.eu/annotator:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agroportal.eu/sparql:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agrovoc.fao.org/browse/agrovoc/en/:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agrovoc.fao.org/browse/rest/v1/agrovoc/:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.nt.zip:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.rdf.zip:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agrovoc.fao.org/latestAgrovoc/agrovoc_lod.nq.zip:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agrovoc.fao.org/latestAgrovoc/agrovoc_lod.nt.zip:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://agrovoc.fao.org/sparql:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json:
   checked_at: '2026-10-02T21:37:18Z'
@@ -5712,6 +5751,7 @@ https://aims.fao.org/aos/agrovoc/void.ttl:
   checked_at: '2026-10-05T21:24:49Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aims2.llnl.gov/search:
   checked_at: '2026-08-31T18:00:50Z'
@@ -6098,6 +6138,7 @@ https://api.fairsharing.org/:
     port=443) at 0x7f04579c3380>, ''Connection to api.fairsharing.org timed out. (connect
     timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 https://api.gbif.org/maps/:
   checked_at: '2026-06-27T13:24:56Z'
@@ -6178,6 +6219,7 @@ https://api.nal.usda.gov/fdc/v1/:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://api.ncbi.nlm.nih.gov/variation/v0/:
   checked_at: '2026-10-02T21:37:22Z'
@@ -7191,11 +7233,13 @@ https://aucklandphysiomerepository.readthedocs.io/en/latest/:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://aucklandphysiomerepository.readthedocs.io/en/latest/webservice.html:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://automat.renci.org/#/cam-kp:
   checked_at: '2026-10-02T21:38:14Z'
@@ -7213,6 +7257,7 @@ https://automat.renci.org/ohd/docs:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome:
   checked_at: '2026-10-02T21:38:14Z'
@@ -7254,6 +7299,7 @@ https://bdcatalyst.gitbook.io/biodata-catalyst-documentation:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://berkeleybop.org/software/owlsim/:
   checked_at: '2026-10-02T21:38:14Z'
@@ -7349,6 +7395,7 @@ https://bioconductor.org/packages/release/bioc/html/rcellminer.html:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf:
   checked_at: '2026-10-02T21:38:15Z'
@@ -7366,6 +7413,7 @@ https://bioconductor.org/packages/release/data/experiment/html/rcellminerData.ht
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://biocyc.org/:
   checked_at: '2026-10-02T21:38:15Z'
@@ -7383,16 +7431,19 @@ https://biodatacatalyst.nhlbi.nih.gov/:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://biodivportal.gfbio.org/:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://biodivportal.gfbio.org/annotator:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://biofactoid.org/:
   checked_at: '2026-10-02T21:38:15Z'
@@ -7469,6 +7520,7 @@ https://biolincc.nhlbi.nih.gov/:
     Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
     port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
   ok: false
+  source: cache
   status_code: null
 https://biolincc.nhlbi.nih.gov/faq/:
   checked_at: '2026-10-05T21:24:50Z'
@@ -7479,6 +7531,7 @@ https://biolincc.nhlbi.nih.gov/faq/:
     Max retries exceeded with url: /faq/ (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
     port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
   ok: false
+  source: cache
   status_code: null
 https://biolincc.nhlbi.nih.gov/media/BioLINCC_User_Guide_05Jan2026.pdf:
   checked_at: '2026-10-05T21:24:50Z'
@@ -7491,6 +7544,7 @@ https://biolincc.nhlbi.nih.gov/media/BioLINCC_User_Guide_05Jan2026.pdf:
     by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'', port=443):
     Failed to establish a new connection: [Errno 101] Network is unreachable"))'
   ok: false
+  source: cache
   status_code: null
 https://biolincc.nhlbi.nih.gov/studies/:
   checked_at: '2026-10-05T21:24:50Z'
@@ -7501,6 +7555,7 @@ https://biolincc.nhlbi.nih.gov/studies/:
     Max retries exceeded with url: /studies/ (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
     port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
   ok: false
+  source: cache
   status_code: null
 https://biolincc.nhlbi.nih.gov/studies/?_export:
   checked_at: '2026-10-05T21:24:50Z'
@@ -7511,6 +7566,7 @@ https://biolincc.nhlbi.nih.gov/studies/?_export:
     Max retries exceeded with url: /studies/?_export (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
     port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
   ok: false
+  source: cache
   status_code: null
 https://biolincc.nhlbi.nih.gov/teaching/:
   checked_at: '2026-10-05T21:24:50Z'
@@ -7521,6 +7577,7 @@ https://biolincc.nhlbi.nih.gov/teaching/:
     Max retries exceeded with url: /teaching/ (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
     port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
   ok: false
+  source: cache
   status_code: null
 https://biolink.github.io/biolink-model/:
   checked_at: '2026-10-02T21:38:16Z'
@@ -7586,6 +7643,7 @@ https://bioportal.bioontology.org/ontologies/ECSO:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://bioportal.bioontology.org/ontologies/GLYCOCOO:
   checked_at: '2026-10-02T21:38:17Z'
@@ -7615,6 +7673,7 @@ https://bioportal.bioontology.org/ontologies/OBOE:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://bioportal.bioontology.org/ontologies/SIO:
   checked_at: '2026-10-02T21:38:17Z'
@@ -7638,11 +7697,13 @@ https://bioportal.lirmm.fr/:
   checked_at: '2026-10-05T21:24:50Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bioportal.lirmm.fr/annotator:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://biopragmatics.github.io/obo-db-ingest/:
   checked_at: '2026-10-02T21:38:17Z'
@@ -7809,11 +7870,13 @@ https://bte.transltr.io/v1:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bte.transltr.io/v1/meta_knowledge_graph:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://bte.transltr.io/v1/team/Service%20Provider:
   checked_at: '2026-10-04T12:32:33Z'
@@ -7843,26 +7906,31 @@ https://cadd.gs.washington.edu/:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cadd.gs.washington.edu/api:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cadd.gs.washington.edu/download:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cadd.gs.washington.edu/info:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cadd.gs.washington.edu/score:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cam-kp-api-dev.renci.org/1.2.0/query:
   checked_at: '2026-05-19T18:50:20Z'
@@ -7949,6 +8017,7 @@ https://cdluc3.github.io/naan_reg_priv/naan_registry.txt:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json:
   checked_at: '2026-10-02T21:38:21Z'
@@ -8056,11 +8125,13 @@ https://cellcollective.org/:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cellml-specification.readthedocs.io/:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cellmodelpassports.sanger.ac.uk/:
   checked_at: '2026-10-03T18:50:00Z'
@@ -8204,41 +8275,49 @@ https://chip-atlas.dbcls.jp/data/:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chip-atlas.dbcls.jp/data/hg19/assembled/Oth.ALL.05.GATA2.AllCell.bed:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chip-atlas.dbcls.jp/data/hg19/colo/POU5F1.Pluripotent_stem_cell.tsv:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chip-atlas.dbcls.jp/data/hg19/target/POU5F1.5.tsv:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chip-atlas.dbcls.jp/data/hg38/allPeaks_light/allPeaks_light.hg38.05.bed.gz:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chip-atlas.dbcls.jp/data/metadata/experimentList.tab:
   checked_at: '2026-10-05T21:24:51Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chip-atlas.dbcls.jp/data/metadata/fileList.tab:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://chip-atlas.org/:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://civicdb.org/:
   checked_at: '2026-10-02T21:38:23Z'
@@ -9070,21 +9149,25 @@ https://data.agroportal.eu/:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.agroportal.eu/documentation:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.biodivportal.gfbio.org/:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.biodivportal.gfbio.org/documentation:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.biomarkerkb.org/:
   checked_at: '2026-10-02T21:38:36Z'
@@ -9102,11 +9185,13 @@ https://data.bioportal.lirmm.fr/:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.bioportal.lirmm.fr/documentation:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.cdc.gov/browse?category=500+Cities+%26+Places:
   checked_at: '2026-10-02T21:38:37Z'
@@ -9124,16 +9209,19 @@ https://data.earthportal.eu/:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.earthportal.eu/documentation:
   checked_at: '2026-10-05T21:24:52Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.ecoportal.lifewatch.eu/:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://data.europa.eu/data/datasets/named-graphs-from-eurio-knowledge-graph:
   checked_at: '2026-10-02T21:38:37Z'
@@ -9554,6 +9642,21 @@ https://databus.dbpedia.org/dbpedia/collections/latest-core:
   ok: true
   source: cache
   status_code: 200
+https://databus.dbpedia.org/dbpedia/dbpedia-wikidata-kg-dump:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://databus.dbpedia.org/dbpedia/dbpedia-wikipedia-kg-dump:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://databus.dbpedia.org/ontologies/dbpedia.org/ontology--DEV/2024.07.29-001000/ontology--DEV_type=parsed.owl:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo:
   checked_at: '2026-10-02T21:38:40Z'
   error: null
@@ -9624,21 +9727,25 @@ https://db.cngb.org/:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://db.cngb.org/cnsa/:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://db.cngb.org/dc_assets/data/dc_cnsa/doc/cnsa_handbook_en.pdf:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://db.cngb.org/stomics/:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv:
   checked_at: '2026-10-02T21:38:40Z'
@@ -9698,21 +9805,25 @@ https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_protein.zip:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm.zip:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm_modification.zip:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/jpostdb/data/rdf/:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/kegg-medicus/:
   checked_at: '2026-10-05T16:14:15Z'
@@ -9724,36 +9835,43 @@ https://dbarchive.biosciencedbc.jp/data/open-tggates/LATEST/:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/open-tggates/LATEST/Open-tggates_AllAttribute.zip:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/open-tggates/LATEST/Rat/:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/open-tggates/LATEST/open_tggates_biochemistry.zip:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/open-tggates/LATEST/open_tggates_hematology.zip:
   checked_at: '2026-10-05T21:24:53Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/open-tggates/LATEST/open_tggates_main.zip:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/data/open-tggates/LATEST/open_tggates_pathology.zip:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/datameta-list-e.html:
   checked_at: '2026-10-05T16:14:15Z'
@@ -9783,11 +9901,13 @@ https://dbarchive.biosciencedbc.jp/en/open-tggates/desc.html:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/en/open-tggates/download.html:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dbarchive.biosciencedbc.jp/files/nbdc_riyou_kiyaku_en.pdf:
   checked_at: '2026-10-05T16:14:15Z'
@@ -9813,6 +9933,11 @@ https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login:
   ok: true
   source: cache
   status_code: 200
+https://dbpedia.org/sparql:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://dd-kg-ui.cfde.cloud/:
   checked_at: '2026-10-02T21:38:41Z'
   error: null
@@ -9825,40 +9950,52 @@ https://dd-kg-ui.cfde.cloud/about:
   ok: true
   source: cache
   status_code: 200
+https://dd-kg-ui.cfde.cloud/api-doc:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://ddbj.nig.ac.jp/arsa/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ddbj.nig.ac.jp/public/ddbj_database/biosample/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ddbj.nig.ac.jp/public/ddbj_database/dra/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ddbj.nig.ac.jp/public/rdf/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ddbj.nig.ac.jp/search:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ddinter.scbdd.com/download/:
   checked_at: '2026-10-02T21:38:41Z'
@@ -10182,31 +10319,37 @@ https://directory.bbmri-eric.eu/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://directory.bbmri-eric.eu/ERIC/api/jsonld:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://directory.bbmri-eric.eu/ERIC/api/ttl:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://directory.bbmri-eric.eu/ERIC/api/zip:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://directory.bbmri-eric.eu/ERIC/directory/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://directory.bbmri-eric.eu/ERIC/graphql:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://disbiome.ugent.be/:
   checked_at: '2026-10-02T21:38:46Z'
@@ -10248,36 +10391,43 @@ https://discover.nci.nih.gov/cellminer/:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://discover.nci.nih.gov/cellminer/datasets.do:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://discover.nci.nih.gov/cellminer/download/processeddataset/DTP_NCI60_ZSCORE.zip:
   checked_at: '2026-10-05T21:24:54Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://discover.nci.nih.gov/cellminer/download/rawdataset/DTP_NCI60_RAW.zip:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://discover.nci.nih.gov/cellminer/loadDownload.do:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://discover.nci.nih.gov/cellminer/releaseNotes.do:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://discover.nci.nih.gov/cellminercdb/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://discovery.indra.bio/:
   checked_at: '2026-10-02T21:38:46Z'
@@ -10313,11 +10463,13 @@ https://dist.genos.us/release/dbNSFP5.4a.readme.txt:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dist.genos.us/release/dbNSFP5.4a_variant.columns.txt:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.biothings.io/:
   checked_at: '2026-10-02T21:38:46Z'
@@ -10353,6 +10505,7 @@ https://docs.gpcrdb.org/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.hubmapconsortium.org/apis.html:
   checked_at: '2026-10-02T21:38:47Z'
@@ -10376,6 +10529,7 @@ https://docs.identifiers.org/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.kg.ebrains.eu/:
   checked_at: '2026-10-02T21:38:47Z'
@@ -10387,21 +10541,25 @@ https://docs.mychem.info/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.mydisease.info/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.mygene.info/en/latest/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.myvariant.info/en/latest/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.nfdi4culture.de/ta5-cgif-specification/introduction:
   checked_at: '2026-10-02T21:38:47Z'
@@ -10455,6 +10613,7 @@ https://docs.seek4science.org/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://docs.sparc.science/docs/sckan:
   checked_at: '2026-10-02T21:38:48Z'
@@ -10574,6 +10733,7 @@ https://doi.org/10.48373/59AV-7504:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://doi.org/10.48440/re3.014:
   checked_at: '2026-10-05T21:24:55Z'
@@ -10585,6 +10745,7 @@ https://doi.org/10.48440/re3.014:
     ConnectTimeoutError(<HTTPSConnection(host=''gfzpublic.gfz.de'', port=443) at 0x7f04579dacf0>,
     ''Connection to gfzpublic.gfz.de timed out. (connect timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 https://doi.org/10.5281/zenodo.13168726:
   checked_at: '2026-10-02T21:38:49Z'
@@ -10728,6 +10889,7 @@ https://download.cncb.ac.cn/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://download.jensenlab.org/diseases_dictionary.tar.gz:
   checked_at: '2026-10-02T21:38:52Z'
@@ -10951,10 +11113,21 @@ https://dreamkg.com/:
   ok: true
   source: cache
   status_code: 200
+https://drive.google.com/drive/folders/10mpvyHbRhhsrylw2o3xToT8RihvSWIA4:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://drive.google.com/drive/folders/1XTtb4KKxUXfqG8tZTbvxtwv7IDUHe424:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://drive.google.com/open?id=1hkitCcxnM_7R6OYuvC5zakWojlN2Xuog:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://droughtmonitor.unl.edu/:
   checked_at: '2026-10-02T21:38:54Z'
@@ -11008,6 +11181,7 @@ https://dtp.cancer.gov/discovery_development/nci-60/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://dumps.wikimedia.org/enwiki/latest/:
   checked_at: '2026-10-02T21:38:54Z'
@@ -11121,16 +11295,19 @@ https://earthportal.eu/:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://earthportal.eu/annotator:
   checked_at: '2026-10-05T21:24:55Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://earthportal.eu/sparql:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://earthquake.usgs.gov/data/comcat/:
   checked_at: '2026-10-02T21:38:55Z'
@@ -11184,6 +11361,7 @@ https://ecoportal.lifewatch.eu/:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://edamontology.org/:
   checked_at: '2026-10-02T21:38:55Z'
@@ -11321,51 +11499,61 @@ https://en-word.net/:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/api/docs:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025-json.zip:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025-plus-json.zip:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025-plus.ttl.gz:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025-plus.xml.gz:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025-plus.zip:
   checked_at: '2026-10-05T21:24:56Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025.ttl.gz:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025.xml.gz:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en-word.net/static/english-wordnet-2025.zip:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://en.wikipedia.org/api/rest_v1/:
   checked_at: '2026-10-02T21:38:57Z'
@@ -11641,6 +11829,7 @@ https://explorer.biothings.io/:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://exrna.org/:
   checked_at: '2026-10-02T21:38:59Z'
@@ -11670,21 +11859,25 @@ https://fairdomhub.org/:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fairdomhub.org/api:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fairdomhub.org/sparql:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fairsharing.gitbook.io/fairsharing/:
   checked_at: '2026-10-05T21:24:57Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fairsharing.org/:
   checked_at: '2026-10-05T21:24:57Z'
@@ -11696,6 +11889,7 @@ https://fairsharing.org/:
     port=443) at 0x7f045d29a060>, ''Connection to fairsharing.org timed out. (connect
     timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 https://fairsharing.org/API_doc:
   checked_at: '2026-10-05T21:24:57Z'
@@ -11707,6 +11901,7 @@ https://fairsharing.org/API_doc:
     port=443) at 0x7f045d29ad20>, ''Connection to fairsharing.org timed out. (connect
     timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 https://fantom.gsc.riken.jp/5/:
   checked_at: '2026-10-02T21:38:59Z'
@@ -11736,66 +11931,79 @@ https://fdc.nal.usda.gov/:
   checked_at: '2026-10-05T21:24:58Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/api-guide:
   checked_at: '2026-10-05T21:24:58Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/download-datasets:
   checked_at: '2026-10-05T21:24:58Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_branded_food_csv_2026-04-30.zip:
   checked_at: '2026-10-05T21:24:58Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_branded_food_json_2026-04-30.zip:
   checked_at: '2026-10-05T21:24:58Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_csv_2026-04-30.zip:
   checked_at: '2026-10-05T21:24:58Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-04-30.zip:
   checked_at: '2026-10-05T21:24:58Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_json_2026-04-30.zip:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_json_2018-04.zip:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_survey_food_csv_2024-10-31.zip:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_survey_food_json_2024-10-31.zip:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://fdc.nal.usda.gov/food-search:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://files.cpicpgx.org/resources/CPIC-overview-updates-02.2025.pptx:
   checked_at: '2026-10-02T21:38:59Z'
@@ -11951,16 +12159,19 @@ https://foodkg.github.io/:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://foodkg.github.io/ontologies/dgo.owl:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://foodkg.github.io/sdd/usdaDM.csv:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://foodon.org/:
   checked_at: '2026-10-02T21:39:00Z'
@@ -12542,6 +12753,7 @@ https://ftp.cngb.org/pub/CNSA/:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/:
   checked_at: '2026-10-02T21:39:01Z'
@@ -12697,11 +12909,13 @@ https://ftp.ebi.ac.uk/pub/databases/eva/:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/eva/rs_releases/:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz:
   checked_at: '2026-10-02T21:39:02Z'
@@ -13451,46 +13665,55 @@ https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/gtr_ftp.xml.gz:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_condition_gene.txt:
   checked_at: '2026-10-05T21:24:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_version.gz:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRshortname_NBKid_genesymbol_dzname.txt:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRtitle_shortname_NBKid.txt:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_OMIM.txt:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol.txt:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/README.html:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/:
   checked_at: '2026-10-02T21:39:06Z'
@@ -13712,11 +13935,13 @@ https://ftp.pride.ebi.ac.uk/pride/data/archive/:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000561/:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.proteininformationresource.org/pir_databases/pirsf/:
   checked_at: '2026-10-02T21:39:06Z'
@@ -13848,6 +14073,7 @@ https://gen3.biodatacatalyst.nhlbi.nih.gov/:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://genebass.org/:
   checked_at: '2026-10-02T21:39:07Z'
@@ -14027,6 +14253,7 @@ https://getentry.ddbj.nig.ac.jp/top-e.html:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gigadb.org/dataset/102323:
   checked_at: '2026-05-19T18:50:42Z'
@@ -14092,16 +14319,19 @@ https://github.com/BBMRI-ERIC/directory-scripts:
   checked_at: '2026-10-05T21:25:00Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/BBMRI-ERIC/miabis:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/BBMRI-ERIC/negotiator:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/BFO-ontology/BFO:
   checked_at: '2026-10-02T21:39:08Z'
@@ -14126,6 +14356,11 @@ https://github.com/BV-BRC:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/BaranziniLab:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/BaranziniLab/spoke_genelab:
   checked_at: '2026-10-02T21:39:08Z'
@@ -14179,11 +14414,13 @@ https://github.com/BioPack-team/shepherd:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/BioPack-team/shepherd#readme:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/BiodiversityOntologies/bco:
   checked_at: '2026-10-02T21:39:09Z'
@@ -14219,6 +14456,7 @@ https://github.com/CDLUC3/N2T:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/CLO-Ontology/CLO:
   checked_at: '2026-10-02T21:39:09Z'
@@ -14254,16 +14492,19 @@ https://github.com/Cellular-Semantics/Brain_Cell_KG:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/Cellular-Semantics/Brain_Cell_KG/tree/main/owl:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/Cellular-Semantics/Brain_Cell_KG/tree/main/reports:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/Cellular-Semantics/CL_KG:
   checked_at: '2026-10-02T21:39:09Z'
@@ -14275,6 +14516,7 @@ https://github.com/Cellular-Semantics/WMB_BG_KG:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ClinicalTrialOntology/CTO:
   checked_at: '2026-10-02T21:39:09Z'
@@ -14322,6 +14564,7 @@ https://github.com/DataONEorg/sem-prov-ontologies:
   checked_at: '2026-10-05T21:25:01Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/DessimozLab/pyomabrowser:
   checked_at: '2026-10-02T21:39:09Z'
@@ -14459,11 +14702,13 @@ https://github.com/EBIvariation:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/EBIvariation/eva-ws:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/EGA-archive:
   checked_at: '2026-10-05T15:25:38Z'
@@ -14493,11 +14738,13 @@ https://github.com/EarthPortal:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/EarthPortal/earthportal_management/wiki:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/EcologicalSemantics/ecocore:
   checked_at: '2026-10-02T21:39:10Z'
@@ -14569,11 +14816,13 @@ https://github.com/FAIRsharing/fairsharing-mcp:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/FAIRsharing/fairsharing.github.io:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/FDA/openfda:
   checked_at: '2026-10-04T00:22:56Z'
@@ -14945,16 +15194,19 @@ https://github.com/LTER-Europe/EnvThes:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/LabKey/MacCossLabModules:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/LabKey/MacCossLabModules/tree/develop/panoramapublic:
   checked_at: '2026-10-05T21:25:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/MPIO-Developers/MPIO:
   checked_at: '2026-10-02T21:39:12Z'
@@ -15242,21 +15494,25 @@ https://github.com/NCATSTranslator/Babel:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/Babel/blob/main/docs/DataFormats.md:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/NameResolution:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/NameResolution/tree/main/documentation:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/NodeNormalization:
   checked_at: '2026-10-05T15:04:30Z'
@@ -15370,6 +15626,7 @@ https://github.com/NCATSTranslator/Translator-All/wiki/Open-Health-Data-at-Carol
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCATSTranslator/Translator-All/wiki/Richards-Effector-Gene-List:
   checked_at: '2026-10-02T21:39:15Z'
@@ -15417,6 +15674,7 @@ https://github.com/NCEAS/oboe:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/NCIP/pathway-interaction-database:
   checked_at: '2026-10-02T21:39:15Z'
@@ -15710,16 +15968,19 @@ https://github.com/PMR2:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/PRIDE-Archive:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/PRIDE-Utilities/pride-ontology:
   checked_at: '2026-10-05T21:25:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/PROconsortium/PRoteinOntology:
   checked_at: '2026-10-02T21:39:17Z'
@@ -16013,11 +16274,13 @@ https://github.com/SmartAPI/smartAPI:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/SmartAPI/smartapi_registry:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/Sniffscore:
   checked_at: '2026-10-02T21:39:19Z'
@@ -16305,11 +16568,13 @@ https://github.com/bio-ontology-research-group/AberOWL:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/bio-ontology-research-group/aberowl2:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/bio-ontology-research-group/pathophenodb:
   checked_at: '2026-10-02T21:39:20Z'
@@ -16321,6 +16586,7 @@ https://github.com/bio-ontology-research-group/pavs-knowledge-graph:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/bio-ontology-research-group/unit-ontology:
   checked_at: '2026-10-02T21:39:20Z'
@@ -16416,41 +16682,49 @@ https://github.com/biothings/biothings_client.py:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/biothings_explorer:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/mychem.info:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/mydisease.info:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/mygene.info:
   checked_at: '2026-10-05T21:25:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/mygene.py:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/myvariant.info:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/myvariant.py:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl:
   checked_at: '2026-10-02T21:39:21Z'
@@ -16576,11 +16850,13 @@ https://github.com/cellml:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/cellml/libcellml:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/cerivs/zebrafish-anatomical-ontology:
   checked_at: '2026-10-02T21:39:21Z'
@@ -16820,6 +17096,7 @@ https://github.com/ecrin-github:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/edamontology/edamontology:
   checked_at: '2026-10-02T21:39:23Z'
@@ -16915,6 +17192,7 @@ https://github.com/foodkg/foodkg.github.io/tree/master/src:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/foundingGIDE/fbbi:
   checked_at: '2026-10-02T21:39:23Z'
@@ -16992,6 +17270,7 @@ https://github.com/globalwordnet/english-wordnet:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/glycoinfo/GlycoCoO:
   checked_at: '2026-10-02T21:39:24Z'
@@ -17195,16 +17474,24 @@ https://github.com/i-adopt/ontology:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
+  status_code: 200
+https://github.com/iconclass/data:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/identifiers-org:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/identifiers-org/ontop/tree/main/idorg-ontology:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/idslme/ecid:
   checked_at: '2026-10-02T21:39:25Z'
@@ -17282,16 +17569,19 @@ https://github.com/inutano/chip-atlas:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/inutano/chip-atlas/wiki:
   checked_at: '2026-10-05T21:25:05Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/inutano/chip-atlas/wiki/Perform-Enrichment-Analysis-programmatically:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/iobis/:
   checked_at: '2026-10-02T21:39:25Z'
@@ -17327,9 +17617,16 @@ https://github.com/judegomila/OnCo:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/judegomila/OnCo/tree/main/packages:
   checked_at: '2026-10-05T21:25:06Z'
+  error: null
+  ok: true
+  source: cache
+  status_code: 200
+https://github.com/jvasilakes/iDISK:
+  checked_at: '2026-10-10T17:44:32Z'
   error: null
   ok: true
   status_code: 200
@@ -17343,6 +17640,7 @@ https://github.com/kircherlab/CADD-scripts:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/labda/DINTO:
   checked_at: '2026-10-02T21:39:26Z'
@@ -17354,6 +17652,7 @@ https://github.com/lifewatch-eric:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/linikujp/OGSF:
   checked_at: '2026-10-02T21:39:26Z'
@@ -18061,6 +18360,7 @@ https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECSO.tar.gz:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECTO.tar.gz:
   checked_at: '2026-10-02T21:39:29Z'
@@ -18294,6 +18594,7 @@ https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/I-ADOPT.tar.
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/IAO.tar.gz:
   checked_at: '2026-10-02T21:39:30Z'
@@ -18551,6 +18852,7 @@ https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOE.tar.gz:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBOREL.tar.gz:
   checked_at: '2026-10-02T21:39:31Z'
@@ -19504,6 +19806,7 @@ https://github.com/ontoportal:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/opalasca/TISSUES_Update:
   checked_at: '2026-10-02T21:39:35Z'
@@ -19635,11 +19938,13 @@ https://github.com/protwis/gpcrdb_data:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/protwis/protwis:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/purdue-hcss/SecureChain:
   checked_at: '2026-10-02T21:39:36Z'
@@ -19819,6 +20124,7 @@ https://github.com/seek4science/seek:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/semanticchemistry/semanticchemistry:
   checked_at: '2026-10-02T21:39:36Z'
@@ -19836,6 +20142,7 @@ https://github.com/sifrproject:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/snap-stanford/stellar:
   checked_at: '2026-10-02T21:39:36Z'
@@ -19877,6 +20184,7 @@ https://github.com/tamerh/sugi-atlas:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/tatonetti-lab:
   checked_at: '2026-10-02T21:39:37Z'
@@ -20206,6 +20514,7 @@ https://globe.jpostdb.org/:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://glyconavi.org/:
   checked_at: '2026-10-02T21:39:38Z'
@@ -20356,26 +20665,31 @@ https://goldbook.iupac.org/:
   checked_at: '2026-10-05T21:25:06Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://goldbook.iupac.org/pages/api:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://goldbook.iupac.org/sources/index/all/json/download:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://goldbook.iupac.org/terms/index/all/json/download:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://goldbook.iupac.org/terms/index/all/xml/download:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://gomapman.nib.si/:
   checked_at: '2026-10-02T21:39:39Z'
@@ -20403,16 +20717,19 @@ https://gpcrdb.org/:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gpcrdb.org/services/reference/:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gpmdb.thegpm.org/:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://graph.data.era.europa.eu/:
   checked_at: '2026-10-02T21:39:39Z'
@@ -20442,6 +20759,7 @@ https://groups.google.com/forum/feed/proteomexchange/msgs/rss_v2_0.xml:
   checked_at: '2026-10-05T21:25:07Z'
   error: GET returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 https://gse.cfde.cloud/:
   checked_at: '2026-10-02T21:39:39Z'
@@ -20770,21 +21088,25 @@ https://i-adopt.github.io/index.html:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://i-adopt.github.io/ontology/ontology.jsonld:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://i-adopt.github.io/ontology/ontology.owl:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://i-adopt.github.io/ontology/ontology.ttl:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://icd.who.int/browse/latest-release/mms/en:
   checked_at: '2026-10-02T21:39:40Z'
@@ -20840,6 +21162,11 @@ https://iconclass.org/:
   ok: true
   source: cache
   status_code: 200
+https://iconclass.org/docs:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://id.nlm.nih.gov/mesh/query:
   checked_at: '2026-10-02T21:39:41Z'
   error: null
@@ -20856,6 +21183,7 @@ https://identifiers.org/:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://idir.sockg.org/:
   checked_at: '2026-10-02T21:39:41Z'
@@ -21056,6 +21384,7 @@ https://imputation.biodatacatalyst.nhlbi.nih.gov/:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://incatools.github.io/kgcl/:
   checked_at: '2026-10-02T21:39:48Z'
@@ -21075,6 +21404,7 @@ https://inciteprojects.idea.rpi.edu/foodkg/namespace/kb/sparql:
     port=443) at 0x7f045d2b5610>, ''Connection to inciteprojects.idea.rpi.edu timed
     out. (connect timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 https://info.orcid.org/documentation/:
   checked_at: '2026-10-02T21:39:48Z'
@@ -21191,31 +21521,37 @@ https://jjj.biochem.sun.ac.za/:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jjj.biochem.sun.ac.za/models/:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jjj.biochem.sun.ac.za/models/achcar1/sbml/?download=1:
   checked_at: '2026-10-05T21:25:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jjj.biochem.sun.ac.za/models/experiments/:
   checked_at: '2026-10-05T21:25:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jjj.biochem.sun.ac.za/models/manuscripts/:
   checked_at: '2026-10-05T21:25:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jjj.biochem.sun.ac.za/rest/models/?format=json:
   checked_at: '2026-10-05T21:25:12Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686:
   checked_at: '2026-10-02T21:39:49Z'
@@ -21227,16 +21563,19 @@ https://jpostdb.org/:
   checked_at: '2026-10-05T21:25:13Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jpostdb.org/help/:
   checked_at: '2026-10-05T21:25:13Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jws-docs.readthedocs.io/:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://kchen-lab.github.io/immune-knowledgegraph.github.io/:
   checked_at: '2026-10-02T21:39:49Z'
@@ -21740,21 +22079,25 @@ https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh37/whole_genome_SNVs.ts
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/gnomad.genomes.r4.0.indel.tsv.gz:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://learn.cellcollective.org/:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://lhncbc.nlm.nih.gov/LSG/index.html:
   checked_at: '2026-10-02T21:40:21Z'
@@ -21790,6 +22133,7 @@ https://libcellml.org/:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://lincs.hms.harvard.edu/kinomescan/:
   checked_at: '2026-10-02T21:40:21Z'
@@ -21917,6 +22261,11 @@ https://loinc.org/search/:
   ok: true
   source: cache
   status_code: 403
+https://lookup.dbpedia.org/:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
 https://lotus.naturalproducts.net/:
   checked_at: '2026-10-02T21:40:22Z'
   error: null
@@ -22078,6 +22427,11 @@ https://maayanlab.cloud/reprotox-kg:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://maayanlab.cloud/reprotox-kg/downloads:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://mangal.io/:
   checked_at: '2026-10-02T21:40:23Z'
@@ -22349,6 +22703,7 @@ https://miabis.bbmri-eric.eu/:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mint.bio.uniroma2.it/:
   checked_at: '2026-10-02T21:40:24Z'
@@ -22445,16 +22800,19 @@ https://models.physiomeproject.org/:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://models.physiomeproject.org/exposure:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://models.physiomeproject.org/workspace:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://molepro-trapi.transltr.io/molepro/trapi/v1.5/ui/:
   checked_at: '2026-10-02T21:40:24Z'
@@ -22670,91 +23028,109 @@ https://mychem.info/:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mychem.info/v1/metadata:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mychem.info/v1/query:
   checked_at: '2026-10-05T21:25:14Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mydisease.info/:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mydisease.info/v1/metadata:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mydisease.info/v1/query:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mygene.info/:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 204
 https://mygene.info/v3/api:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://mygene.info/v3/metadata:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://myvariant.info/:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://myvariant.info/v1/metadata:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://myvariant.info/v1/query:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://n2t.net/:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://n2t.net/.info?valid=1:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://n2t.net/e/about.html:
   checked_at: '2026-10-05T21:25:15Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://n2t.net/e/n2t_full_prefixes.yaml:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://name-lookup.transltr.io/docs:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://name-resolution-sri.renci.org/docs:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nams.network/:
   checked_at: '2026-10-02T21:40:26Z'
@@ -22850,6 +23226,7 @@ https://negotiator.bbmri-eric.eu/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://neo4j.het.io/browser/:
   checked_at: '2026-10-02T21:40:27Z'
@@ -22861,11 +23238,13 @@ https://newmdr.ecrin.org/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://newmdr.ecrin.org/swagger/index.html:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://nfdi.fiz-karlsruhe.de/4culture/:
   checked_at: '2026-10-02T21:40:27Z'
@@ -22901,46 +23280,55 @@ https://ngdc.cncb.ac.cn/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/bioproject/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/biosample/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/databasecommons/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/gsa-human/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/gsa/:
   checked_at: '2026-10-05T21:25:16Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/gsa/support/documents:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/gvm/:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/gwh/:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ngdc.cncb.ac.cn/lgc:
   checked_at: '2026-10-02T21:40:29Z'
@@ -23562,31 +23950,37 @@ https://onco.cc/:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://onco.cc/api/:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://onco.cc/api/v1/all.json:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://onco.cc/api/v1/all.ndjson:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://onco.cc/api/v1/onco.nt:
   checked_at: '2026-10-05T21:25:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://onco.cc/api/v1/schema.json:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ontobee.org/ontology/AFO:
   checked_at: '2026-10-02T21:40:37Z'
@@ -23604,11 +23998,13 @@ https://ontoportal.github.io/documentation/:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ontoportal.github.io/documentation/user_guide/EcoPortal:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf:
   checked_at: '2026-10-02T21:40:37Z'
@@ -23874,26 +24270,31 @@ https://panoramaweb.org/_webdav/Panorama%20Public/:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://panoramaweb.org/home/wiki-page.view?name=panorama_public:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://panoramaweb.org/project/Panorama%20Public/begin.view:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://panoramaweb.org/public.url:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://panoramaweb.org/wiki/home/page.view?name=download_public_data:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://parasite.wormbase.org/:
   checked_at: '2026-10-02T21:40:39Z'
@@ -23953,16 +24354,19 @@ https://pavs.phenomebrowser.net/:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pavs.phenomebrowser.net/api/docs:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pavs.phenomebrowser.net/sparql:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pax-db.org/:
   checked_at: '2026-10-02T21:40:40Z'
@@ -24250,11 +24654,13 @@ https://picsure.biodatacatalyst.nhlbi.nih.gov/:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://picsure.biodatacatalyst.nhlbi.nih.gov/picsure/:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 401
 https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/:
   checked_at: '2026-10-02T21:40:43Z'
@@ -24590,21 +24996,25 @@ https://proteomecentral.proteomexchange.org/:
   checked_at: '2026-10-05T21:25:18Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://proteomecentral.proteomexchange.org/api/proxi/v0.1/ui/:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD000001&outputMode=XML:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://proteomecentral.proteomexchange.org/cgi/GetDataset?outputMode=tsv:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://proteopedia.org/:
   checked_at: '2026-10-02T21:40:47Z'
@@ -24766,16 +25176,19 @@ https://pypi.org/project/biothings-client/:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pypi.org/project/mygene/:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pypi.org/project/myvariant/:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://pypi.org/project/omnipath/:
   checked_at: '2026-10-02T21:40:48Z'
@@ -24811,11 +25224,13 @@ https://query.dbnsfp.org:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://query.genos.us:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://query.linkedopendata.eu/:
   checked_at: '2026-10-02T21:40:48Z'
@@ -24911,6 +25326,7 @@ https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/main/ecso/ECSO8
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/GauravPandeyLab/KiNet/master/data/2023-10-30-kinace-dataset.zip:
   checked_at: '2026-10-02T21:40:48Z'
@@ -24934,16 +25350,19 @@ https://raw.githubusercontent.com/LTER-Europe/EnvThes/main/EnvThes.csv:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/LTER-Europe/EnvThes/main/EnvThes.ttl:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/LTER-Europe/EnvThes/main/EnvThes.xlsx:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/MontageBai/KGFM/main/Answer%20Reference.zip:
   checked_at: '2026-10-02T21:40:49Z'
@@ -24967,31 +25386,37 @@ https://raw.githubusercontent.com/NCEAS/oboe/master/oboe-characteristics.owl:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/NCEAS/oboe/master/oboe-core.owl:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/NCEAS/oboe/master/oboe-standards.owl:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/NCEAS/oboe/master/oboe.owl:
   checked_at: '2026-10-05T21:25:19Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/pride_cv.obo:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/pride_cv.owl:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/2025_PGO_V1.0_core_concepts.md:
   checked_at: '2026-10-02T21:40:49Z'
@@ -25057,6 +25482,7 @@ https://raw.githubusercontent.com/bio-ontology-research-group/pavs-knowledge-gra
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto:
   checked_at: '2026-10-02T21:40:49Z'
@@ -25194,6 +25620,27 @@ https://raw.githubusercontent.com/i-adopt/ontology/main/ontology/i-adopt_extende
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
+  status_code: 200
+https://raw.githubusercontent.com/iconclass/data/main/all_notations.gz:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv-properties.tsv:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv-terms.tsv:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv.owl:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
   status_code: 200
 https://raw.githubusercontent.com/marvinm2/AOPWikiRDF/master/data/AOPWikiRDF-Void.ttl:
   checked_at: '2026-10-02T21:40:50Z'
@@ -25241,76 +25688,91 @@ https://rdfportal.org/:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/dataset/jpostdb/:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/datasets/:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/ddbj/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/documents/data_submission/:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/documents/manual/:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/ebi/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/grasp:
   checked_at: '2026-10-05T21:25:20Z'
   error: GET returned HTTP 400
   ok: false
+  source: cache
   status_code: 400
 https://rdfportal.org/kero/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/ncbi/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/pdb/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/primary/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/pub/ntriples/:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/pubchem/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rdfportal.org/sib/sparql:
   checked_at: '2026-10-05T21:25:20Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://reactome.org:
   checked_at: '2026-10-02T21:40:50Z'
@@ -25358,16 +25820,19 @@ https://registry.api.identifiers.org/resolutionApi/getResolverDataset:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://registry.api.identifiers.org/restApi/namespaces:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 204
 https://registry.identifiers.org/registry:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://registry.intermine.org/:
   checked_at: '2026-10-02T21:40:50Z'
@@ -25541,6 +26006,7 @@ https://repository.jpostdb.org/:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://reprotox-kg.net/:
   checked_at: '2026-05-19T18:51:31Z'
@@ -26593,11 +27059,13 @@ https://research.cellcollective.org/:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://resolver.api.identifiers.org/:
   checked_at: '2026-10-05T21:25:21Z'
   error: GET returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 https://rest.ensembl.org:
   checked_at: '2026-08-31T18:03:32Z'
@@ -26616,6 +27084,7 @@ https://rest.thegpm.org/1:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://retriever.transltr.io/:
   checked_at: '2026-10-04T12:32:33Z'
@@ -26935,6 +27404,96 @@ https://s3.amazonaws.com/maayan-kg/cfde-kg/042123/KOMP2_Mouse_Phenotypes_2022.KO
   ok: true
   source: cache
   status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/4DN.zip:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/ARCHS4.zip:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/CLINVAR.zip:
+  checked_at: '2026-10-10T17:44:32Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/ERCC.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/GTEx.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/GlyGen.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/HGNCHPO.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/HGNCUNIPROT.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/HuBMAP.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/IDG.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/KF.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/LINCS.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/MSIGDB.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/MW.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/MoTrPAC.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/SPARC.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/hgnc_enzyme.zip:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/dd-kg/minio/Dictionary/DataDistilleryDataDictionary0228.html:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
 https://s3.amazonaws.com/maayan-kg/dd-kg/minio/downloads.json:
   checked_at: '2026-10-02T21:40:59Z'
   error: null
@@ -26958,6 +27517,56 @@ https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/archs4_coexpression.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/drugsto_faers_female.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/drugsto_faers_male.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/hpo.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/idg_drug_targets.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_drug_similarity.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
   status_code: 200
 https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.latest.h5:
   checked_at: '2026-10-02T21:40:59Z'
@@ -27035,6 +27644,7 @@ https://schema.re3data.org/4-0/re3dataV4-0.xsd:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://scibite.com/:
   checked_at: '2026-10-02T21:40:59Z'
@@ -27166,26 +27776,31 @@ https://shepherd.transltr.io/aragorn/docs:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://shepherd.transltr.io/arax/docs:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://shepherd.transltr.io/bte/docs:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://shepherd.transltr.io/docs:
   checked_at: '2026-10-05T21:25:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://shepherd.transltr.io/sipr/docs:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sib-swiss.github.io/sparql-editor/emi:
   checked_at: '2026-10-02T21:41:01Z'
@@ -27281,6 +27896,7 @@ https://sites.google.com/site/jpopgen/dbNSFP:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sites.nd.edu/kn-wildlife/:
   checked_at: '2026-10-02T21:41:02Z'
@@ -27454,21 +28070,25 @@ https://smart-api.info/:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://smart-api.info/api:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://smart-api.info/api/metakg:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://smart-api.info/guide:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://smart-api.info/portal/translator:
   checked_at: '2026-10-02T21:41:03Z'
@@ -27480,6 +28100,7 @@ https://smart-api.info/registry:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f:
   checked_at: '2026-10-02T21:41:04Z'
@@ -27497,6 +28118,7 @@ https://smart-api.info/ui/27a5b60716c3a401f2c021a5b718c5b1:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://smart-api.info/ui/96e5b5c0b0efeef5b93ea98ac2794837:
   checked_at: '2026-10-02T21:41:04Z'
@@ -27622,11 +28244,13 @@ https://sparql.api.identifiers.org/sparql:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sparql.bioportal.lirmm.fr/test/:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sparql.dsmz.de/brenda:
   checked_at: '2026-10-02T21:41:04Z'
@@ -27688,11 +28312,21 @@ https://species.wikimedia.org/wiki/Main_Page:
   ok: true
   source: cache
   status_code: 200
+https://spoke.rbvi.ucsf.edu/docs/index.html:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
 https://spoke.rbvi.ucsf.edu/neighborhood.html:
   checked_at: '2026-10-02T21:41:05Z'
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://spoke.rbvi.ucsf.edu/swagger/:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
   status_code: 200
 https://spoke.ucsf.edu:
   checked_at: '2026-10-02T21:41:05Z'
@@ -27722,11 +28356,13 @@ https://standards.iso.org/iso-iec/21838/-3/ed-1/en/Dolce.owl:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://standards.iso.org/iso-iec/21838/-3/ed-1/en/dolce_simple_clif.p:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stargeo.org/:
   checked_at: '2026-10-02T21:41:05Z'
@@ -27746,31 +28382,37 @@ https://stars.renci.org/var/babel_outputs/latest/compendia/:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/babel_outputs/latest/conflation/:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/babel_outputs/latest/duckdb/:
   checked_at: '2026-10-05T21:25:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/babel_outputs/latest/kgx/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/babel_outputs/latest/synonyms/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/data_services/ohd/unc_omop_2018_2022_kg.zip:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/329f8c92051c18d4/:
   checked_at: '2026-10-02T21:41:05Z'
@@ -27896,21 +28538,25 @@ https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/graph_f627ebbefd242454.db.dump:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/meta_knowledge_graph.json:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/:
   checked_at: '2026-10-02T21:41:06Z'
@@ -28336,21 +28982,25 @@ https://sugi.bio/atlas/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sugi.bio/atlas/manifest.json:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sugi.bio/atlas/preprint/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sugi.bio/atlas/sources/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sugi.bio/biobtree/:
   checked_at: '2026-10-02T21:41:08Z'
@@ -28446,6 +29096,7 @@ https://terra.biodatacatalyst.nhlbi.nih.gov/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://thebiogrid.org/:
   checked_at: '2026-10-02T21:41:08Z'
@@ -28487,6 +29138,7 @@ https://togomcp.rdfportal.org/mcp:
   checked_at: '2026-10-05T21:25:23Z'
   error: GET returned HTTP 400
   ok: false
+  source: cache
   status_code: 400
 https://tools.airfire.org/:
   checked_at: '2026-10-02T21:41:08Z'
@@ -28702,6 +29354,7 @@ https://usf.box.com/shared/static/ffwlywsat3q5ijypvunno3rg6steqfs8:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://uts.nlm.nih.gov/uts/umls/home:
   checked_at: '2026-10-02T21:41:10Z'
@@ -28794,11 +29447,13 @@ https://vocabs.lter-europe.net/EnvThes/en/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://vocabs.lter-europe.net/rest/v1/EnvThes/:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biolink/biolink-model.graphql:
   checked_at: '2026-06-27T13:24:56Z'
@@ -29614,26 +30269,31 @@ https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.json:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.obo:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.owl:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.sssom.tsv:
   checked_at: '2026-10-05T21:25:23Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/iana.mediatype/iana.mediatype.tsv:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/biopragmatics/resources/icd10/icd10.json:
   checked_at: '2026-10-02T21:41:19Z'
@@ -30947,6 +31607,7 @@ https://w3id.org/iadopt/ont:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://w3id.org/kgcl/kgcl.context.jsonld:
   checked_at: '2026-10-02T21:41:33Z'
@@ -31018,41 +31679,49 @@ https://wiki.nci.nih.gov/download/attachments/147193864/DOSERESP.zip:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.nci.nih.gov/download/attachments/147193864/GI50.zip:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.nci.nih.gov/download/attachments/147193864/IC50.zip:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.nci.nih.gov/download/attachments/147193864/LC50.zip:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.nci.nih.gov/download/attachments/147193864/ONECONC.zip:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.nci.nih.gov/download/attachments/147193864/TGI.zip:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.nci.nih.gov/download/attachments/147193864/public_nscs.csv:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.nci.nih.gov/spaces/NCIDTPdata/pages/147193864/NCI-60+Growth+Inhibition+Data:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wiki.thebiogrid.org/doku.php/biogridrest:
   checked_at: '2026-10-02T21:41:33Z'
@@ -31076,21 +31745,25 @@ https://wordnet.princeton.edu/:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://wordnet.princeton.edu/download/current-version:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://wormbase.org/:
   checked_at: '2026-10-02T21:41:33Z'
@@ -31150,6 +31823,7 @@ https://www.accessdata.fda.gov/scripts/opdlisting/oopd/:
   checked_at: '2026-10-05T21:25:24Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ai.sri.com/~halo/public/exported-kb/biokb.html:
   checked_at: '2026-10-02T21:41:33Z'
@@ -31479,21 +32153,25 @@ https://www.biosino.org/node/:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.biosino.org/node/browse:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.biosino.org/node/help:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.biosino.org/node/statistic:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.bork.embl.de/~robbani/metatraits/GTDB2NCBI.tsv.gz:
   checked_at: '2026-10-02T21:41:36Z'
@@ -31721,36 +32399,43 @@ https://www.cellml.org/:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.cellml.org/cellml/cellml_1_0.dtd:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.cellml.org/cellml/cellml_1_1.dtd:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.cellml.org/specifications:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.cellml.org/specifications/cellml_1.0:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.cellml.org/specifications/cellml_1.1:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.cellml.org/specifications/cellml_2.0/cellml_2_0_normative_specification.pdf:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.cellosaurus.org/:
   checked_at: '2026-10-02T21:41:37Z'
@@ -31942,21 +32627,25 @@ https://www.dbnsfp.org/:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.dbnsfp.org/download:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.dbnsfp.org/license:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.dbnsfp.org/releases:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.dbpedia.org/:
   checked_at: '2026-10-02T21:41:38Z'
@@ -31968,16 +32657,19 @@ https://www.ddbj.nig.ac.jp/:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ddbj.nig.ac.jp/jga/index-e.html:
   checked_at: '2026-10-05T21:25:25Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ddbj.nig.ac.jp/services/index-e.html:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.deciphergenomics.org/:
   checked_at: '2026-10-02T21:41:38Z'
@@ -32163,26 +32855,31 @@ https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-797:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-798:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-799:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-800:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD501:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/biostudies/submissions/:
   checked_at: '2026-10-03T23:08:45Z'
@@ -32290,26 +32987,31 @@ https://www.ebi.ac.uk/eva/:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/eva/?Help:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/eva/?Variant-Browser:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/eva/webservices/identifiers/swagger-ui.html:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/eva/webservices/rest/swagger-ui.html:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/fg/annotare/:
   checked_at: '2026-10-03T20:11:39Z'
@@ -32543,6 +33245,7 @@ https://www.ebi.ac.uk/ols4/api/ontologies/pride:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/ols4/mcp:
   checked_at: '2026-10-04T03:43:16Z'
@@ -32560,6 +33263,7 @@ https://www.ebi.ac.uk/ols4/ontologies/pride:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/pdbe/download/docs:
   checked_at: '2026-10-02T21:41:40Z'
@@ -32589,21 +33293,25 @@ https://www.ebi.ac.uk/pride/:
   checked_at: '2026-10-05T21:25:26Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/pride/archive/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/pride/markdownpage/documentationpage:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/pride/ws/archive/v3/webjars/swagger-ui/index.html:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ebi.ac.uk/rdf/services/sparql:
   checked_at: '2026-06-27T13:24:56Z'
@@ -32939,11 +33647,13 @@ https://www.fao.org/agrovoc:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.fao.org/agrovoc/access:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.fda.gov/cder/ob/default.htm:
   checked_at: '2026-08-31T18:04:12Z'
@@ -33003,6 +33713,7 @@ https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers
 : checked_at: '2026-10-05T21:25:27Z'
   error: GET returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 ? https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database
 : checked_at: '2026-10-02T21:41:42Z'
@@ -33404,71 +34115,85 @@ https://www.iana.org/assignments/media-types/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/application.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/audio.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/font.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/haptics.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/image.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/media-types.txt:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/media-types.xhtml:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/media-types.xml:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/message.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/model.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/multipart.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/text.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iana.org/assignments/media-types/video.csv:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.icgc-argo.org/:
   checked_at: '2026-10-02T21:41:45Z'
@@ -33630,21 +34355,25 @@ https://www.iprox.cn/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iprox.cn/page/helpApi.html:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iprox.cn/page/project.html:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.iprox.org/page/iproxDataLisence.html:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.isrctn.com/:
   checked_at: '2026-10-05T16:14:16Z'
@@ -34118,6 +34847,7 @@ https://www.ncbi.nlm.nih.gov/books/NBK1116/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/books/NBK179288/:
   checked_at: '2026-10-02T21:41:50Z'
@@ -34213,11 +34943,13 @@ https://www.ncbi.nlm.nih.gov/gtr/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/gtr/docs/about/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/homologene:
   checked_at: '2026-10-02T21:41:50Z'
@@ -34907,16 +35639,19 @@ https://www.proteomexchange.org/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.proteomexchange.org/docs/guidelines_px.pdf:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.proteomexchange.org/submission/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.proteomicsdb.org/:
   checked_at: '2026-10-02T21:41:56Z'
@@ -34946,16 +35681,19 @@ https://www.re3data.org/:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.re3data.org/api/doc:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.re3data.org/export/re3data-repositories.zip:
   checked_at: '2026-10-05T21:25:27Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.rhea-db.org/:
   checked_at: '2026-10-02T21:41:56Z'
@@ -35251,11 +35989,13 @@ https://www.thegpm.org/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://www.thegpm.org/tandem/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 403
 https://www.try-db.org/TryWeb/Home.php:
   checked_at: '2026-10-02T21:41:58Z'
@@ -35615,6 +36355,7 @@ https://x-bte-extension.readthedocs.io/en/latest/index.html:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://xenbase.org/xenbase/:
   checked_at: '2026-10-02T21:42:00Z'
@@ -35668,36 +36409,43 @@ https://yoda.yale.edu/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yoda.yale.edu/about/policies-procedures/data-use-agreement/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yoda.yale.edu/metrics/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yoda.yale.edu/request/approved-data-requests/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yoda.yale.edu/request/data-request-review-process/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yoda.yale.edu/trials-search/:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yoda.yale.edu/wp-content/uploads/2022/11/YODA-Project-Data-Release-Procedures-January-2025.pdf:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zebrafish.org/:
   checked_at: '2026-10-03T22:16:28Z'
@@ -35758,6 +36506,31 @@ https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/conte
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://zenodo.org/api/records/21276722/files/PharMeBINet_26_07_06.zip/content:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://zenodo.org/api/records/21276722/files/PharMeBINet_dump_26_07_06.zip/content:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://zenodo.org/api/records/21276722/files/PharMeBINet_json_26_07_06.zip/content:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://zenodo.org/api/records/21276722/files/PharMeBINet_tsv_26_07_06.zip/content:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
+  status_code: 200
+https://zenodo.org/api/records/21276722/files/PharMeBiNet_graphml_26_07_06.zip/content:
+  checked_at: '2026-10-10T17:44:33Z'
+  error: null
+  ok: true
   status_code: 200
 https://zenodo.org/badge/latestdoi/2478263:
   checked_at: '2026-10-02T21:42:01Z'
@@ -36057,6 +36830,7 @@ https://zenodo.org/records/6520132/files/I_ADOPT_recommendations.pdf:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zenodo.org/records/7753956:
   checked_at: '2026-10-02T21:42:03Z'
@@ -36110,6 +36884,7 @@ https://zenodo.org/records/8368709:
   checked_at: '2026-10-05T21:25:28Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://zfin.org/:
   checked_at: '2026-10-02T21:42:04Z'
@@ -36151,4 +36926,5 @@ sftp://fms.biosino.org:
   checked_at: '2026-10-05T21:25:28Z'
   error: 'Unsupported URL scheme: sftp'
   ok: false
+  source: cache
   status_code: null

@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/planaria-ontology
 id: plana
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -35,6 +35,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: plana
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 178099
   product_url: http://purl.obolibrary.org/obo/plana.owl
 - category: OntologyProduct
@@ -45,6 +49,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: plana
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 120490
   product_url: http://purl.obolibrary.org/obo/plana.obo
 - category: GraphProduct
@@ -63,6 +71,42 @@ products:
     source: plana
   product_file_size: 123647
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PLANA.tar.gz
+- category: OntologyProduct
+  description: Planarian Phenotype Ontology in OWL format
+  format: owl
+  id: planp.owl
+  name: planp.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: planp
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: plana
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 535526
+  product_url: http://purl.obolibrary.org/obo/planp.owl
+- category: OntologyProduct
+  description: Planarian Phenotype Ontology in OBO format
+  format: obo
+  id: planp.obo
+  name: planp.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: planp
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: plana
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 339560
+  product_url: http://purl.obolibrary.org/obo/planp.obo
 publications:
 - authors:
   - Nowotarski SH

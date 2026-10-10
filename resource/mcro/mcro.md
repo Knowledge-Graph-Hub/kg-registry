@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Tuan Amith
+  orcid: 0000-0003-4333-1857
   contact_details:
   - contact_type: email
     value: muamith@utmb.edu
   - contact_type: github
     value: ProfTuan
-  label: Tuan Amith
-  orcid: 0000-0003-4333-1857
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology representing the structure of model card reports - reports
   that describe basic characteristics of machine learning models for the public and
@@ -22,7 +22,7 @@ domains:
 - machine learning
 homepage_url: https://github.com/UTHealth-Ontology/MCRO
 id: mcro
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mcro
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: swo
   product_file_size: 7969
   product_url: http://purl.obolibrary.org/obo/mcro.owl
 - category: GraphProduct

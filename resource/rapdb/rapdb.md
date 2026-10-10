@@ -53,6 +53,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: tar
   description: Knowledge graph containing plant traits data from Planteome and EOL

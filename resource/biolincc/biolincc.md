@@ -69,11 +69,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biolincc
   product_url: https://biolincc.nhlbi.nih.gov/studies/?_export
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
-    exceeded with url: /studies/?_export (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
-    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
+  warnings: []
 - category: Product
   description: Teaching datasets derived from the Framingham Heart Study, the Digitalis
     Investigation Group trial and the Childhood Asthma Management Program, anonymized
@@ -87,11 +83,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biolincc
   product_url: https://biolincc.nhlbi.nih.gov/teaching/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
-    exceeded with url: /teaching/ (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
-    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
+  warnings: []
 - category: DocumentationProduct
   description: BioLINCC Users Guide describing how to search for and request study
     datasets and biospecimens, the review process, required IRB documentation and
@@ -102,12 +94,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolincc
+  product_file_size: 1022222
   product_url: https://biolincc.nhlbi.nih.gov/media/BioLINCC_User_Guide_05Jan2026.pdf
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
-    exceeded with url: /media/BioLINCC_User_Guide_05Jan2026.pdf (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
-    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
+  warnings: []
 - category: DocumentationProduct
   description: Frequently asked questions on account registration, request requirements,
     costs, de-identification and redaction, request timelines and terms of use for
@@ -119,11 +108,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biolincc
   product_url: https://biolincc.nhlbi.nih.gov/faq/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: Error connecting
-    to URL: HTTPSConnectionPool(host=''biolincc.nhlbi.nih.gov'', port=443): Max retries
-    exceeded with url: /faq/ (Caused by NewConnectionError("HTTPSConnection(host=''biolincc.nhlbi.nih.gov'',
-    port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))'
+  warnings: []
 - category: GraphicalInterface
   description: Web portal for searching clinical studies and their data objects by
     keyword, registry identifier, PubMed ID or country, with CSV and JSON export of

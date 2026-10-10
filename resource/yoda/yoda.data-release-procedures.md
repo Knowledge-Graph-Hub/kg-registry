@@ -8,6 +8,7 @@ name: YODA Project Data Release Policies and Procedures
 original_source:
 - relation_type: prov:hadPrimarySource
   source: yoda
+product_file_size: 193269
 product_url: https://yoda.yale.edu/wp-content/uploads/2022/11/YODA-Project-Data-Release-Procedures-January-2025.pdf
 layout: product_detail
 ---

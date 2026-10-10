@@ -10,6 +10,7 @@ name: GTR Test Version History
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gtr
+product_file_size: 13064784
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_version.gz
 layout: product_detail
 ---

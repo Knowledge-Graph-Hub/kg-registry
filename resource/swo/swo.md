@@ -66,6 +66,20 @@ products:
     source: swo
   product_file_size: 220577
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SWO.tar.gz
+- category: OntologyProduct
+  description: Model Card Report Ontology in OWL format
+  format: owl
+  id: mcro.owl
+  name: mcro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mcro
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: swo
+  product_file_size: 7969
+  product_url: http://purl.obolibrary.org/obo/mcro.owl
 publications:
 - authors:
   - Malone J

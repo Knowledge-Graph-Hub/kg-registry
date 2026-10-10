@@ -11,6 +11,7 @@ original_source:
   source: chip-atlas
 - relation_type: prov:hadPrimarySource
   source: sra
+product_file_size: 21398659343
 product_url: https://chip-atlas.dbcls.jp/data/hg38/allPeaks_light/allPeaks_light.hg38.05.bed.gz
 layout: product_detail
 ---

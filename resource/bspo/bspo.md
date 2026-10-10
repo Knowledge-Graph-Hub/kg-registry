@@ -213,6 +213,442 @@ products:
     source: bspo
   product_file_size: 23215
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BSPO.tar.gz
+- category: OntologyProduct
+  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
+    in OWL format
+  format: owl
+  id: aism.owl
+  name: aism.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1378303
+  product_url: http://purl.obolibrary.org/obo/aism.owl
+- category: OntologyProduct
+  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
+    in OBO format
+  format: obo
+  id: aism.obo
+  name: aism.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 896550
+  product_url: http://purl.obolibrary.org/obo/aism.obo
+- category: OntologyProduct
+  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
+    in JSON format
+  format: json
+  id: aism.json
+  name: aism.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 929390
+  product_url: http://purl.obolibrary.org/obo/aism.json
+- category: OntologyProduct
+  description: Coleoptera Anatomy Ontology (COLAO) in OWL format
+  format: owl
+  id: colao.owl
+  name: colao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: colao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 164547
+  product_url: http://purl.obolibrary.org/obo/colao.owl
+- category: OntologyProduct
+  description: Coleoptera Anatomy Ontology (COLAO) in OBO format
+  format: obo
+  id: colao.obo
+  name: colao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: colao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 83585
+  product_url: http://purl.obolibrary.org/obo/colao.obo
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OWL format
+  format: owl
+  id: fovt.owl
+  name: fovt.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fovt
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 2587818
+  product_url: http://purl.obolibrary.org/obo/fovt.owl
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OBO format
+  format: obo
+  id: fovt.obo
+  name: fovt.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fovt
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1628339
+  product_url: http://purl.obolibrary.org/obo/fovt.obo
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OWL format
+  format: owl
+  id: lepao.owl
+  name: lepao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lepao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 141799
+  product_url: http://purl.obolibrary.org/obo/lepao.owl
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OBO format
+  format: obo
+  id: lepao.obo
+  name: lepao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lepao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 74809
+  product_url: http://purl.obolibrary.org/obo/lepao.obo
+- category: OntologyProduct
+  description: core ontology
+  format: owl
+  id: uberon.owl
+  name: Uberon
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 98551256
+  product_url: http://purl.obolibrary.org/obo/uberon.owl
+- category: OntologyProduct
+  description: Uberon edition that excludes external ontologies and most relations
+  format: obo
+  id: uberon.uberon-basic.obo
+  name: Uberon basic
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 12146722
+  product_url: http://purl.obolibrary.org/obo/uberon/uberon-basic.obo
+- category: OntologyProduct
+  description: Uberon plus all metazoan ontologies
+  format: owl
+  id: uberon.collected-metazoan.owl
+  name: Uberon collected metazoan ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 284938816
+  product_url: http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl
+- category: OntologyProduct
+  description: Uberon and all metazoan ontologies with redundant species-specific
+    terms removed
+  format: owl
+  id: uberon.composite-metazoan.owl
+  name: Uberon composite metazoan ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 259794621
+  product_url: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
+- category: OntologyProduct
+  description: Uberon composite vertebrate ontology
+  format: owl
+  id: uberon.composite-vertebrate.owl
+  name: Uberon composite vertebrate ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 126856799
+  product_url: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
+- category: OntologyProduct
+  description: Zebrafish Phenotype Ontology in OWL format
+  format: owl
+  id: zp.owl
+  name: zp.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  product_file_size: 170306263
+  product_url: http://purl.obolibrary.org/obo/zp.owl
+- category: OntologyProduct
+  description: Zebrafish Phenotype Ontology in OBO format
+  format: obo
+  id: zp.obo
+  name: zp.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  product_file_size: 15870641
+  product_url: http://purl.obolibrary.org/obo/zp.obo
 publications:
 - authors:
   - Dahdul WM

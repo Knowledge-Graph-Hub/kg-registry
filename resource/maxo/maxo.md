@@ -22,7 +22,7 @@ domains:
 homepage_url: https://github.com/monarch-initiative/MAxO
 id: maxo
 infores_id: maxo
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,24 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 16448041
   product_url: http://purl.obolibrary.org/obo/maxo.owl
 - category: OntologyProduct
@@ -48,6 +66,24 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 4180499
   product_url: http://purl.obolibrary.org/obo/maxo.obo
 - category: OntologyProduct
@@ -58,6 +94,24 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 9856275
   product_url: http://purl.obolibrary.org/obo/maxo.json
 - category: OntologyProduct
@@ -92,7 +146,7 @@ products:
   product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.json
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -116,7 +170,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -222,7 +276,7 @@ products:
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -246,7 +300,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -352,7 +406,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -376,7 +430,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -483,7 +537,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
@@ -507,7 +561,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -614,7 +668,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
@@ -638,7 +692,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -745,7 +799,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -769,7 +823,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -876,7 +930,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -900,7 +954,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1006,7 +1060,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -1030,7 +1084,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1136,7 +1190,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1160,7 +1214,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1414,6 +1468,117 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OWL
+    format
+  format: owl
+  id: ecto.owl
+  name: ecto.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 2277332
+  product_url: http://purl.obolibrary.org/obo/ecto.owl
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OBO
+    format
+  format: obo
+  id: ecto.obo
+  name: ecto.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 1509031
+  product_url: http://purl.obolibrary.org/obo/ecto.obo
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in JSON
+    format
+  format: json
+  id: ecto.json
+  name: ecto.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 1646990
+  product_url: http://purl.obolibrary.org/obo/ecto.json
 publications:
 - authors:
   - Leigh C Carmody

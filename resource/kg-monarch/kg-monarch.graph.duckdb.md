@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: DuckDB database of KG-Monarch
-edge_count: 16418621
+edge_count: 16433147
 format: mixed
 id: kg-monarch.graph.duckdb
 name: DuckDB database of KG-Monarch
@@ -25,7 +25,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1668236
+node_count: 1670861
 original_source:
 - relation_type: prov:hadPrimarySource
   source: alliance

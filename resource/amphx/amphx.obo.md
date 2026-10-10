@@ -4,10 +4,12 @@ description: The Amphioxus Development and Anatomy Ontology in OBO format
 format: obo
 id: amphx.obo
 name: amphx.obo
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: amphx
+- relation_type: prov:hadPrimarySource
+  source: uberon
 product_file_size: 8608
 product_url: http://purl.obolibrary.org/obo/amphx.obo
 layout: product_detail
-original_source:
-  - source: amphx
-    relation_type: prov:hadPrimarySource
 ---

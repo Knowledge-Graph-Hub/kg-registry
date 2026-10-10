@@ -28,7 +28,7 @@ domains:
 - general
 homepage_url: https://github.com/foundingGIDE/fbbi
 id: fbbi
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,6 +44,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: fbbi
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: ro
   product_file_size: 701623
   product_url: http://purl.obolibrary.org/obo/fbbi.owl
 - category: OntologyProduct
@@ -54,6 +60,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: fbbi
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: ro
   product_file_size: 195618
   product_url: http://purl.obolibrary.org/obo/fbbi.obo
 - category: OntologyProduct

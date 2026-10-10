@@ -21,7 +21,7 @@ domains:
 - ecology
 homepage_url: https://github.com/PopulationAndCommunityOntology/pco
 id: pco
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -37,6 +37,22 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
   product_file_size: 62282
   product_url: http://purl.obolibrary.org/obo/pco.owl
 - category: GraphProduct
@@ -55,6 +71,222 @@ products:
     source: pco
   product_file_size: 27141
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PCO.tar.gz
+- category: OntologyProduct
+  description: An ontology of core ecological entities in OWL format
+  format: owl
+  id: ecocore.owl
+  name: ecocore.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecocore
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1287569
+  product_url: http://purl.obolibrary.org/obo/ecocore.owl
+- category: OntologyProduct
+  description: An ontology of core ecological entities in OBO format
+  format: obo
+  id: ecocore.obo
+  name: ecocore.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecocore
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 834439
+  product_url: http://purl.obolibrary.org/obo/ecocore.obo
+- category: OntologyProduct
+  description: main ENVO OWL release
+  format: owl
+  id: envo.owl
+  name: main ENVO OWL release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 819909
+  product_url: http://purl.obolibrary.org/obo/envo.owl
+- category: OntologyProduct
+  description: ENVO in obographs JSON format
+  format: json
+  id: envo.json
+  name: ENVO in obographs JSON format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 653600
+  product_url: http://purl.obolibrary.org/obo/envo.json
+- category: OntologyProduct
+  description: ENVO in OBO Format. May be lossy
+  format: obo
+  id: envo.obo
+  name: ENVO in OBO Format. May be lossy
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 595276
+  product_url: http://purl.obolibrary.org/obo/envo.obo
+- category: OntologyProduct
+  description: OBO-Basic edition of ENVO
+  format: obo
+  id: envo.subsets.envo-basic.obo
+  name: OBO-Basic edition of ENVO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 422465
+  product_url: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
+- category: OntologyProduct
+  description: Earth Microbiome Project subset
+  format: owl
+  id: envo.subsets.envoEmpo.owl
+  name: Earth Microbiome Project subset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 19016
+  product_url: http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl
+- category: OntologyProduct
+  description: GSC Lite subset of ENVO
+  format: obo
+  id: envo.subsets.EnvO-Lite-GSC.obo
+  name: GSC Lite subset of ENVO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 12912
+  product_url: http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo
 publications:
 - authors:
   - Walls RL

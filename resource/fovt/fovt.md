@@ -21,7 +21,7 @@ domains:
 - phenotype
 homepage_url: https://github.com/futres/fovt
 id: fovt
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -39,6 +39,22 @@ products:
   original_source:
   - source: fovt
     relation_type: prov:hadPrimarySource
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
 - category: OntologyProduct
   description: FuTRES Ontology of Vertebrate Traits in OBO format
   format: obo
@@ -49,6 +65,22 @@ products:
   original_source:
   - source: fovt
     relation_type: prov:hadPrimarySource
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
 - category: OntologyProduct
   description: FuTRES Ontology of Vertebrate Traits in OWL format
   format: owl

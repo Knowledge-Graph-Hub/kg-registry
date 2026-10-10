@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jennifer C. Giron
+  orcid: 0000-0002-0851-6883
   contact_details:
   - contact_type: email
     value: entiminae@gmail.com
   - contact_type: github
     value: JCGiron
-  label: Jennifer C. Giron
-  orcid: 0000-0002-0851-6883
 creation_date: '2025-09-29T00:00:00Z'
 description: The Coleoptera Anatomy Ontology contains terms used for describing the
   anatomy and phenotype of beetles in biodiversity research. It has been built using
@@ -23,7 +23,7 @@ domains:
 - insects
 homepage_url: https://github.com/insect-morphology/colao
 id: colao
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -39,6 +39,20 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: colao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 164547
   product_url: http://purl.obolibrary.org/obo/colao.owl
 - category: OntologyProduct
@@ -49,6 +63,20 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: colao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 83585
   product_url: http://purl.obolibrary.org/obo/colao.obo
 - category: GraphProduct

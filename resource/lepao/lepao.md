@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Luis A. Gonzalez-Montana
+  orcid: 0000-0002-9136-9932
   contact_details:
   - contact_type: email
     value: lagonzalezmo@unal.edu.co
   - contact_type: github
     value: luis-gonzalez-m
-  label: Luis A. Gonzalez-Montana
-  orcid: 0000-0002-9136-9932
 creation_date: '2025-09-29T00:00:00Z'
 description: The Lepidoptera Anatomy Ontology contains terms used for describing the
   anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is
@@ -22,7 +22,7 @@ domains:
 - insects
 homepage_url: https://github.com/insect-morphology/lepao
 id: lepao
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,20 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lepao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 141799
   product_url: http://purl.obolibrary.org/obo/lepao.owl
 - category: OntologyProduct
@@ -48,6 +62,20 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: lepao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 74809
   product_url: http://purl.obolibrary.org/obo/lepao.obo
 - category: GraphProduct

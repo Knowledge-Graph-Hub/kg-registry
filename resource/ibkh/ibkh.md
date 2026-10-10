@@ -23,13 +23,12 @@ id: ibkh
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (custom) among its sources: ctd, idisk, kegg.'
-  id: https://conservancy.umn.edu/handle/11299/204783
+    license (custom) among its sources: ctd, kegg.'
+  id: https://ctdbase.org/about/legal.jsp
   inferred_from:
   - ctd
-  - idisk
   - kegg
-  label: Varies
+  label: Custom
   restrictiveness: custom
   status: inferred
   unresolved_sources: []

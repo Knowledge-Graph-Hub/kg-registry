@@ -638,6 +638,7 @@ products:
     source: dbpedia
   - relation_type: prov:wasDerivedFrom
     source: wikipedia
+  product_file_size: 5340
   product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikipedia-kg-dump
 synonyms:
 - English Wikipedia

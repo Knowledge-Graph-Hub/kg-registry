@@ -10,6 +10,7 @@ original_source:
   source: genereviews
 - relation_type: prov:hadPrimarySource
   source: hgnc
+product_file_size: 29333
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/GRshortname_NBKid_genesymbol_dzname.txt
 layout: product_detail
 ---

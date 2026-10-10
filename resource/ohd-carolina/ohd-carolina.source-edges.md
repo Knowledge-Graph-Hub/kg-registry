@@ -14,6 +14,7 @@ original_source:
   source: ohd-carolina
 - relation_type: prov:wasInfluencedBy
   source: ohdsi
+product_file_size: 2001145655
 product_url: https://stars.renci.org/var/data_services/ohd/unc_omop_2018_2022_kg.zip
 versions:
 - '2024-11-18'

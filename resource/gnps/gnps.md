@@ -170,6 +170,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 406 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing integrated omics dataset metadata
     across repositories.

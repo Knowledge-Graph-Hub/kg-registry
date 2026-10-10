@@ -546,6 +546,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: clo
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 2121232
   product_url: http://purl.obolibrary.org/obo/clo.owl
 - category: ProgrammingInterface
@@ -2042,8 +2050,8 @@ products:
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: OntologyProduct
-  description: PRIDE Controlled Vocabulary in OBO format (about 980 PRIDE terms), the source
-    file that is edited directly in the repository.
+  description: PRIDE Controlled Vocabulary in OBO format (about 980 PRIDE terms),
+    the source file that is edited directly in the repository.
   format: obo
   id: pride-cv.obo
   latest_version: releases/2026-09-22
@@ -2059,8 +2067,8 @@ products:
   - relation_type: prov:used
     source: efo
 - category: OntologyProduct
-  description: PRIDE Controlled Vocabulary in OWL format, generated from the OBO file with
-    ROBOT; this is the file loaded by the Ontology Lookup Service.
+  description: PRIDE Controlled Vocabulary in OWL format, generated from the OBO file
+    with ROBOT; this is the file loaded by the Ontology Lookup Service.
   format: owl
   id: pride-cv.owl
   name: pride_cv.owl

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Paul Fabry
+  orcid: 0000-0002-3336-2476
   contact_details:
   - contact_type: email
     value: paul.fabry@usherbrooke.ca
   - contact_type: github
     value: pfabry
-  label: Paul Fabry
-  orcid: 0000-0002-3336-2476
 creation_date: '2025-09-29T00:00:00Z'
 description: LABO is an ontology of informational entities formalizing clinical laboratory
   tests prescriptions and reporting documents.
@@ -21,7 +21,7 @@ domains:
 - clinical
 homepage_url: https://github.com/OpenLHS/LABO
 id: labo
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,6 +37,18 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: labo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: omiabis
+  - relation_type: prov:hadPrimarySource
+    source: omrse
+  - relation_type: prov:hadPrimarySource
+    source: opmi
   product_file_size: 47001
   product_url: http://purl.obolibrary.org/obo/labo.owl
 - category: GraphProduct

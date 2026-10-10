@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Liliana Andres Hernandez
+  orcid: 0000-0002-7696-731X
   contact_details:
   - contact_type: email
     value: landreshdz@gmail.com
   - contact_type: github
     value: LilyAndres
-  label: Liliana Andres Hernandez
-  orcid: 0000-0002-7696-731X
 creation_date: '2025-09-29T00:00:00Z'
 description: CDNO provides structured terminologies to describe nutritional attributes
   of material entities that contribute to human diet.
@@ -21,7 +21,7 @@ domains:
 - food
 homepage_url: https://cdno.info/
 id: cdno
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,16 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cdno
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
   product_file_size: 590900
   product_url: http://purl.obolibrary.org/obo/cdno.owl
 - category: OntologyProduct
@@ -47,6 +57,16 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cdno
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
   product_file_size: 331277
   product_url: http://purl.obolibrary.org/obo/cdno.obo
 - category: GraphProduct

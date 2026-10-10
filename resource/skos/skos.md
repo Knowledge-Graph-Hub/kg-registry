@@ -242,6 +242,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: clo
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 2121232
   product_url: http://purl.obolibrary.org/obo/clo.owl
 - category: OntologyProduct

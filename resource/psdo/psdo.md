@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Zach Landis-Lewis
+  orcid: 0000-0002-9117-9338
   contact_details:
   - contact_type: email
     value: zachll@umich.edu
   - contact_type: github
     value: zachll
-  label: Zach Landis-Lewis
-  orcid: 0000-0002-9117-9338
 creation_date: '2025-09-29T00:00:00Z'
 description: Ontology to reproducibly study visualizations of clinical performance
 domains:
@@ -20,7 +20,7 @@ domains:
 - clinical
 homepage_url: https://github.com/Display-Lab/psdo
 id: psdo
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -36,6 +36,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: psdo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
   product_file_size: 9703
   product_url: http://purl.obolibrary.org/obo/psdo.owl
 - category: GraphProduct

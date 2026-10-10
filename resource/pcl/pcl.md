@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: David Osumi-Sutherland
+  orcid: 0000-0002-7073-9172
   contact_details:
   - contact_type: email
     value: davidos@ebi.ac.uk
   - contact_type: github
     value: dosumis
-  label: David Osumi-Sutherland
-  orcid: 0000-0002-7073-9172
 - category: Organization
   contact_details:
   - contact_type: url
@@ -29,7 +29,7 @@ domains:
 - single-cell analysis
 homepage_url: https://github.com/obophenotype/provisional_cell_ontology
 id: pcl
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -45,6 +45,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 167561057
   product_url: http://purl.obolibrary.org/obo/pcl.owl
 - category: OntologyProduct
@@ -55,6 +79,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 39796128
   product_url: http://purl.obolibrary.org/obo/pcl.obo
 - category: GraphProduct

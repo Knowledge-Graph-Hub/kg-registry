@@ -5,10 +5,10 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jonathan Bard
   contact_details:
   - contact_type: email
     value: J.Bard@ed.ac.uk
-  label: Jonathan Bard
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of stage-specific anatomical structures
   of the developing human.
@@ -17,7 +17,7 @@ domains:
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology
 id: ehdaa2
 infores_id: ehdaa2
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,6 +33,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ehdaa2
+  - relation_type: prov:hadPrimarySource
+    source: aeo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: cl
   product_file_size: 125946
   product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
 - category: OntologyProduct
@@ -43,6 +49,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ehdaa2
+  - relation_type: prov:hadPrimarySource
+    source: aeo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: cl
   product_file_size: 83809
   product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
 - category: GraphProduct

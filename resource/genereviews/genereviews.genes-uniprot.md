@@ -12,6 +12,7 @@ original_source:
   source: hgnc
 - relation_type: prov:hadPrimarySource
   source: uniprot
+product_file_size: 24053
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_genesymbol_UniProt.txt
 layout: product_detail
 ---

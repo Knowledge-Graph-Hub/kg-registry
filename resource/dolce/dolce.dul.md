@@ -10,6 +10,7 @@ name: DOLCE+DnS Ultralite (DUL)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dolce
+product_file_size: 186902
 product_url: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl
 layout: product_detail
 ---

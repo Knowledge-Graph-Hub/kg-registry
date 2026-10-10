@@ -1092,9 +1092,9 @@ products:
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: ProgrammingInterface
   connection_url: https://pavs.phenomebrowser.net/sparql
-  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing Saudi
-    case records, gene annotations, HPO disease annotations, HPO information content values
-    and literature phenopackets as RDF named graphs.
+  description: Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing
+    Saudi case records, gene annotations, HPO disease annotations, HPO information
+    content values and literature phenopackets as RDF named graphs.
   format: http
   id: pavs-kg.sparql
   is_public: true
@@ -1145,8 +1145,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/sparql
 - category: GraphicalInterface
-  description: PAVS web portal with phenotype-based semantic similarity search, gene and variant
-    browsers, and an HPO hierarchy explorer over the knowledge graph.
+  description: PAVS web portal with phenotype-based semantic similarity search, gene
+    and variant browsers, and an HPO hierarchy explorer over the knowledge graph.
   format: http
   id: pavs-kg.portal
   name: PAVS Web Portal
@@ -1193,8 +1193,8 @@ products:
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/
 - category: ProgrammingInterface
-  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation, for case
-    search and SPARQL-backed queries.
+  description: FastAPI REST API backing the PAVS portal, with OpenAPI documentation,
+    for case search and SPARQL-backed queries.
   format: http
   id: pavs-kg.api
   name: PAVS REST API
@@ -1240,6 +1240,198 @@ products:
   - relation_type: prov:hadPrimarySource
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/api/docs
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OWL format
+  format: owl
+  id: chiro.owl
+  name: chiro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chiro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 7043
+  product_url: http://purl.obolibrary.org/obo/chiro.owl
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OBO format
+  format: obo
+  id: chiro.obo
+  name: chiro.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chiro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 3337
+  product_url: http://purl.obolibrary.org/obo/chiro.obo
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OWL format
+  format: owl
+  id: scdo.owl
+  name: scdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 367519
+  product_url: http://purl.obolibrary.org/obo/scdo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OBO format
+  format: obo
+  id: scdo.obo
+  name: scdo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 324416
+  product_url: http://purl.obolibrary.org/obo/scdo.obo
 publications:
 - authors:
   - Bello SM

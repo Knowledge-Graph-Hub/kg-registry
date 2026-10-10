@@ -8,6 +8,7 @@ name: Babel Data Formats Documentation
 original_source:
 - relation_type: prov:hadPrimarySource
   source: babel
+product_file_size: 5926
 product_url: https://github.com/NCATSTranslator/Babel/blob/main/docs/DataFormats.md
 layout: product_detail
 ---

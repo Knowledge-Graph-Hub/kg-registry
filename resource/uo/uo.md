@@ -749,6 +749,264 @@ products:
     source: fooddata-central
   product_file_size: 1066
   product_url: https://foodkg.github.io/sdd/usdaDM.csv
+- category: OntologyProduct
+  description: Contains all AgrO terms and links to other relevant ontologies.
+  format: owl
+  id: agro.owl
+  name: AgrO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agro
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 463598
+  product_url: http://purl.obolibrary.org/obo/agro.owl
+- category: OntologyProduct
+  description: Mass spectrometry ontology in OBO format
+  format: obo
+  id: ms.obo
+  name: ms.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ms
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_file_size: 1143028
+  product_url: http://purl.obolibrary.org/obo/ms.obo
+- category: OntologyProduct
+  description: Mass spectrometry ontology in OWL format
+  format: owl
+  id: ms.owl
+  name: ms.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ms
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_file_size: 4925738
+  product_url: http://purl.obolibrary.org/obo/ms.owl
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OWL format
+  format: owl
+  id: rbo.owl
+  name: rbo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rbo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_file_size: 1902434
+  product_url: http://purl.obolibrary.org/obo/rbo.owl
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OBO format
+  format: obo
+  id: rbo.obo
+  name: rbo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rbo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_file_size: 486142
+  product_url: http://purl.obolibrary.org/obo/rbo.obo
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OWL format
+  format: owl
+  id: scdo.owl
+  name: scdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 367519
+  product_url: http://purl.obolibrary.org/obo/scdo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OBO format
+  format: obo
+  id: scdo.obo
+  name: scdo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 324416
+  product_url: http://purl.obolibrary.org/obo/scdo.obo
 publications:
 - authors:
   - Gkoutos GV

@@ -86,6 +86,28 @@ products:
     source: cheminf
   product_file_size: 22283
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/CHEMINF.tar.gz
+- category: OntologyProduct
+  description: Process Chemistry Ontology in OWL format
+  format: owl
+  id: proco.owl
+  name: proco.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proco
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cheminf
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  product_file_size: 143615
+  product_url: http://purl.obolibrary.org/obo/proco.owl
 publications:
 - authors:
   - Hastings J

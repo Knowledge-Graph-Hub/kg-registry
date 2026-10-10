@@ -93,6 +93,208 @@ products:
     source: stato
   product_file_size: 150377
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/STATO.tar.gz
+- category: OntologyProduct
+  description: The main ontology in OWL
+  format: owl
+  id: ontoavida.owl
+  name: OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoavida
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  product_file_size: 472853
+  product_url: http://purl.obolibrary.org/obo/ontoavida.owl
+- category: OntologyProduct
+  description: Equivalent to ontoavida.owl, in obo format
+  format: obo
+  id: ontoavida.obo
+  name: OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoavida
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  product_file_size: 240082
+  product_url: http://purl.obolibrary.org/obo/ontoavida.obo
+- category: OntologyProduct
+  description: Performance Summary Display Ontology in OWL format
+  format: owl
+  id: psdo.owl
+  name: psdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: psdo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  product_file_size: 9703
+  product_url: http://purl.obolibrary.org/obo/psdo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OWL format
+  format: owl
+  id: scdo.owl
+  name: scdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 367519
+  product_url: http://purl.obolibrary.org/obo/scdo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OBO format
+  format: obo
+  id: scdo.obo
+  name: scdo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 324416
+  product_url: http://purl.obolibrary.org/obo/scdo.obo
 publications:
 - authors:
   - Rocca-Serra P

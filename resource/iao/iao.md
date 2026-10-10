@@ -348,6 +348,561 @@ products:
     source: iao
   - relation_type: prov:used
     source: bfo
+- category: OntologyProduct
+  description: Contains all AgrO terms and links to other relevant ontologies.
+  format: owl
+  id: agro.owl
+  name: AgrO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agro
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 463598
+  product_url: http://purl.obolibrary.org/obo/agro.owl
+- category: OntologyProduct
+  description: Clytia hemisphaerica Development and Anatomy Ontology in OWL format
+  format: owl
+  id: clyh.owl
+  name: clyh.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clyh
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 13404
+  product_url: http://purl.obolibrary.org/obo/clyh.owl
+- category: OntologyProduct
+  description: Clytia hemisphaerica Development and Anatomy Ontology in OBO format
+  format: obo
+  id: clyh.obo
+  name: clyh.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clyh
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 9651
+  product_url: http://purl.obolibrary.org/obo/clyh.obo
+- category: OntologyProduct
+  description: Data Use Ontology in OWL format
+  format: owl
+  id: duo.owl
+  name: duo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  product_file_size: 8062
+  product_url: http://purl.obolibrary.org/obo/duo.owl
+- category: OntologyProduct
+  description: An ontology of core ecological entities in OWL format
+  format: owl
+  id: ecocore.owl
+  name: ecocore.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecocore
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1287569
+  product_url: http://purl.obolibrary.org/obo/ecocore.owl
+- category: OntologyProduct
+  description: An ontology of core ecological entities in OBO format
+  format: obo
+  id: ecocore.obo
+  name: ecocore.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecocore
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 834439
+  product_url: http://purl.obolibrary.org/obo/ecocore.obo
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OWL
+    format
+  format: owl
+  id: ecto.owl
+  name: ecto.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 2277332
+  product_url: http://purl.obolibrary.org/obo/ecto.owl
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OBO
+    format
+  format: obo
+  id: ecto.obo
+  name: ecto.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 1509031
+  product_url: http://purl.obolibrary.org/obo/ecto.obo
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in JSON
+    format
+  format: json
+  id: ecto.json
+  name: ecto.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 1646990
+  product_url: http://purl.obolibrary.org/obo/ecto.json
+- category: OntologyProduct
+  description: Biological Imaging Methods Ontology in OWL format
+  format: owl
+  id: fbbi.owl
+  name: fbbi.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbbi
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 701623
+  product_url: http://purl.obolibrary.org/obo/fbbi.owl
+- category: OntologyProduct
+  description: Biological Imaging Methods Ontology in OBO format
+  format: obo
+  id: fbbi.obo
+  name: fbbi.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fbbi
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 195618
+  product_url: http://purl.obolibrary.org/obo/fbbi.obo
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OWL format
+  format: owl
+  id: fovt.owl
+  name: fovt.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fovt
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 2587818
+  product_url: http://purl.obolibrary.org/obo/fovt.owl
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OBO format
+  format: obo
+  id: fovt.obo
+  name: fovt.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fovt
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1628339
+  product_url: http://purl.obolibrary.org/obo/fovt.obo
+- category: OntologyProduct
+  description: clinical LABoratory Ontology in OWL format
+  format: owl
+  id: labo.owl
+  name: labo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: labo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: omiabis
+  - relation_type: prov:hadPrimarySource
+    source: omrse
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  product_file_size: 47001
+  product_url: http://purl.obolibrary.org/obo/labo.owl
+- category: OntologyProduct
+  description: Medical Action Ontology in OWL format
+  format: owl
+  id: maxo.owl
+  name: maxo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 16448041
+  product_url: http://purl.obolibrary.org/obo/maxo.owl
+- category: OntologyProduct
+  description: Medical Action Ontology in OBO format
+  format: obo
+  id: maxo.obo
+  name: maxo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 4180499
+  product_url: http://purl.obolibrary.org/obo/maxo.obo
+- category: OntologyProduct
+  description: Medical Action Ontology in JSON format
+  format: json
+  id: maxo.json
+  name: maxo.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 9856275
+  product_url: http://purl.obolibrary.org/obo/maxo.json
+- category: OntologyProduct
+  description: Model Card Report Ontology in OWL format
+  format: owl
+  id: mcro.owl
+  name: mcro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mcro
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: swo
+  product_file_size: 7969
+  product_url: http://purl.obolibrary.org/obo/mcro.owl
+- category: OntologyProduct
+  description: Population and Community Ontology in OWL format
+  format: owl
+  id: pco.owl
+  name: pco.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 62282
+  product_url: http://purl.obolibrary.org/obo/pco.owl
+- category: OntologyProduct
+  description: Performance Summary Display Ontology in OWL format
+  format: owl
+  id: psdo.owl
+  name: psdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: psdo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  product_file_size: 9703
+  product_url: http://purl.obolibrary.org/obo/psdo.owl
+- category: OntologyProduct
+  description: Xenopus Phenotype Ontology in OWL format
+  format: owl
+  id: xpo.owl
+  name: xpo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  product_file_size: 97539811
+  product_url: http://purl.obolibrary.org/obo/xpo.owl
+- category: OntologyProduct
+  description: Xenopus Phenotype Ontology in OBO format
+  format: obo
+  id: xpo.obo
+  name: xpo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  product_file_size: 11508476
+  product_url: http://purl.obolibrary.org/obo/xpo.obo
 publications:
 - authors:
   - Ceusters W

@@ -9,6 +9,7 @@ name: JWS Online SBML Model Downloads
 original_source:
 - relation_type: prov:hadPrimarySource
   source: jws-online
+product_file_size: 83967
 product_url: https://jjj.biochem.sun.ac.za/models/achcar1/sbml/?download=1
 layout: product_detail
 ---

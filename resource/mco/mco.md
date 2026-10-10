@@ -28,7 +28,7 @@ domains:
 - general
 homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 id: mco
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -44,6 +44,34 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: micro
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omp
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zeco
   product_file_size: 772100
   product_url: http://purl.obolibrary.org/obo/mco.owl
 - category: OntologyProduct
@@ -54,6 +82,34 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: micro
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omp
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zeco
   product_file_size: 409757
   product_url: http://purl.obolibrary.org/obo/mco.obo
 - category: GraphProduct

@@ -10,6 +10,7 @@ name: NCI-60 GI50 Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nci60
+product_file_size: 39004593
 product_url: https://wiki.nci.nih.gov/download/attachments/147193864/GI50.zip
 layout: product_detail
 ---

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Alpha Tom Kodamullil
+  orcid: 0000-0001-9896-3531
   contact_details:
   - contact_type: email
     value: alpha.tom.kodamullil@scai.fraunhofer.de
   - contact_type: github
     value: akodamullil
-  label: Alpha Tom Kodamullil
-  orcid: 0000-0001-9896-3531
 creation_date: '2025-09-29T00:00:00Z'
 description: A application driven Epilepsy Ontology with official terms from the ILAE.
 domains:
@@ -20,7 +20,7 @@ domains:
 - clinical
 homepage_url: https://github.com/SCAI-BIO/EpilepsyOntology
 id: epio
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: epio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
   product_file_size: 415175
   product_url: http://purl.obolibrary.org/obo/epio.owl
 - category: GraphProduct

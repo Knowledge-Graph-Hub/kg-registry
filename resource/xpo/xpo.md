@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Erik Segerdell
+  orcid: 0000-0002-9611-1279
   contact_details:
   - contact_type: email
     value: Erik.Segerdell@cchmc.org
   - contact_type: github
     value: seger
-  label: Erik Segerdell
-  orcid: 0000-0002-9611-1279
 creation_date: '2025-09-29T00:00:00Z'
 description: XPO represents anatomical, cellular, and gene function phenotypes occurring
   throughout the development of the African frogs Xenopus laevis and tropicalis.
@@ -20,7 +20,7 @@ domains:
 homepage_url: https://github.com/obophenotype/xenopus-phenotype-ontology
 id: xpo
 infores_id: xpo
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -36,6 +36,22 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: xao
   product_file_size: 97539811
   product_url: http://purl.obolibrary.org/obo/xpo.owl
 - category: OntologyProduct
@@ -46,6 +62,22 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: xao
   product_file_size: 11508476
   product_url: http://purl.obolibrary.org/obo/xpo.obo
 - category: GraphProduct

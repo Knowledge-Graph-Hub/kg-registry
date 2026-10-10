@@ -8,6 +8,7 @@ name: BBMRI-ERIC Directory JSON-LD Export
 original_source:
 - relation_type: prov:hadPrimarySource
   source: bbmri-eric-directory
+product_file_size: 0
 product_url: https://directory.bbmri-eric.eu/ERIC/api/jsonld
 layout: product_detail
 ---

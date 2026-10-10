@@ -11,6 +11,7 @@ name: Dietary Guideline Ontology
 original_source:
 - relation_type: prov:hadPrimarySource
   source: foodkg
+product_file_size: 3687
 product_url: https://foodkg.github.io/ontologies/dgo.owl
 layout: product_detail
 ---

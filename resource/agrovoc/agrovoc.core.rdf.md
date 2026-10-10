@@ -9,6 +9,7 @@ name: AGROVOC Core Dump (RDF/XML)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: agrovoc
+product_file_size: 73279691
 product_url: https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.rdf.zip
 layout: product_detail
 ---

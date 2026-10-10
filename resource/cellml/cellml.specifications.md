@@ -8,6 +8,7 @@ name: CellML Specifications Index
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cellml
+product_file_size: 1
 product_url: https://www.cellml.org/specifications
 layout: product_detail
 ---

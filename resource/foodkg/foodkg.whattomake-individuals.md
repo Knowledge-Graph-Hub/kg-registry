@@ -11,6 +11,7 @@ name: WhatToMake Individuals
 original_source:
 - relation_type: prov:hadPrimarySource
   source: foodkg
+product_file_size: 14373
 product_url: http://purl.org/heals/ingredient
 layout: product_detail
 ---

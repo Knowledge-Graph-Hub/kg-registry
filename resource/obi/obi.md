@@ -538,6 +538,580 @@ products:
     source: obi
   product_file_size: 578003
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OBI.tar.gz
+- category: OntologyProduct
+  description: Contains all AgrO terms and links to other relevant ontologies.
+  format: owl
+  id: agro.owl
+  name: AgrO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: agro
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: xco
+  product_file_size: 463598
+  product_url: http://purl.obolibrary.org/obo/agro.owl
+- category: OntologyProduct
+  description: FoodOn ontology with import file references and over 9,000 food products
+  format: owl
+  id: foodon.owl
+  name: FoodOn ontology with import file references and over 9,000 food products
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 2852449
+  product_url: http://purl.obolibrary.org/obo/foodon.owl
+- category: OntologyProduct
+  description: Plant Gall Ontology in OWL format
+  format: owl
+  id: gallont.owl
+  name: gallont.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gallont
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: flopo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 91521
+  product_url: http://purl.obolibrary.org/obo/gallont.owl
+- category: OntologyProduct
+  description: Plant Gall Ontology in OBO format
+  format: obo
+  id: gallont.obo
+  name: gallont.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gallont
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: flopo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 60631
+  product_url: http://purl.obolibrary.org/obo/gallont.obo
+- category: OntologyProduct
+  description: Health Surveillance Ontology in OWL format
+  format: owl
+  id: hso.owl
+  name: hso.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hso
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 138245
+  product_url: http://purl.obolibrary.org/obo/hso.owl
+- category: OntologyProduct
+  description: clinical LABoratory Ontology in OWL format
+  format: owl
+  id: labo.owl
+  name: labo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: labo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: omiabis
+  - relation_type: prov:hadPrimarySource
+    source: omrse
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  product_file_size: 47001
+  product_url: http://purl.obolibrary.org/obo/labo.owl
+- category: OntologyProduct
+  description: Medical Action Ontology in OWL format
+  format: owl
+  id: maxo.owl
+  name: maxo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 16448041
+  product_url: http://purl.obolibrary.org/obo/maxo.owl
+- category: OntologyProduct
+  description: Medical Action Ontology in OBO format
+  format: obo
+  id: maxo.obo
+  name: maxo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 4180499
+  product_url: http://purl.obolibrary.org/obo/maxo.obo
+- category: OntologyProduct
+  description: Medical Action Ontology in JSON format
+  format: json
+  id: maxo.json
+  name: maxo.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: maxo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 9856275
+  product_url: http://purl.obolibrary.org/obo/maxo.json
+- category: OntologyProduct
+  description: Microbial Conditions Ontology in OWL format
+  format: owl
+  id: mco.owl
+  name: mco.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: micro
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omp
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zeco
+  product_file_size: 772100
+  product_url: http://purl.obolibrary.org/obo/mco.owl
+- category: OntologyProduct
+  description: Microbial Conditions Ontology in OBO format
+  format: obo
+  id: mco.obo
+  name: mco.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: micro
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omp
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zeco
+  product_file_size: 409757
+  product_url: http://purl.obolibrary.org/obo/mco.obo
+- category: OntologyProduct
+  description: Ontology for Nutritional Epidemiology in OWL format
+  format: owl
+  id: one.owl
+  name: one.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: one
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ons
+  product_file_size: 9258
+  product_url: http://purl.obolibrary.org/obo/one.owl
+- category: OntologyProduct
+  description: ONS latest release
+  format: owl
+  id: ons.owl
+  name: ONS latest release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ons
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 215578
+  product_url: http://purl.obolibrary.org/obo/ons.owl
+- category: OntologyProduct
+  description: Process Chemistry Ontology in OWL format
+  format: owl
+  id: proco.owl
+  name: proco.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proco
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cheminf
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  product_file_size: 143615
+  product_url: http://purl.obolibrary.org/obo/proco.owl
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OWL format
+  format: owl
+  id: rbo.owl
+  name: rbo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rbo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_file_size: 1902434
+  product_url: http://purl.obolibrary.org/obo/rbo.owl
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OBO format
+  format: obo
+  id: rbo.obo
+  name: rbo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rbo
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_file_size: 486142
+  product_url: http://purl.obolibrary.org/obo/rbo.obo
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OWL format
+  format: owl
+  id: scdo.owl
+  name: scdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 367519
+  product_url: http://purl.obolibrary.org/obo/scdo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OBO format
+  format: obo
+  id: scdo.obo
+  name: scdo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 324416
+  product_url: http://purl.obolibrary.org/obo/scdo.obo
 publications:
 - authors:
   - Bandrowski A

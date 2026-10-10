@@ -3616,6 +3616,8 @@ products:
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 500 error
+    when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
     entries, proteomics evidence, variants, expression, interactions, localization,
@@ -4627,12 +4629,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
   format: kgx-jsonl

@@ -10,6 +10,7 @@ name: NCI-60 Concentration/Response Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nci60
+product_file_size: 347853412
 product_url: https://wiki.nci.nih.gov/download/attachments/147193864/DOSERESP.zip
 layout: product_detail
 ---

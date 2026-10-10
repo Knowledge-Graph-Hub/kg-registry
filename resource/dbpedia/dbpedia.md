@@ -88,6 +88,7 @@ products:
     source: dbpedia
   - relation_type: prov:wasDerivedFrom
     source: wikipedia
+  product_file_size: 5340
   product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikipedia-kg-dump
 - category: GraphProduct
   compression: gzip
@@ -105,6 +106,7 @@ products:
     source: dbpedia
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  product_file_size: 5343
   product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikidata-kg-dump
 - category: ProgrammingInterface
   description: DBpedia Lookup, a search service for finding DBpedia resource URIs

@@ -2944,9 +2944,10 @@ products:
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: ProgrammingInterface
-  description: MyDisease.info REST API (v1) for querying disease annotation records by keyword,
-    field or identifier (Mondo, DOID, OMIM, Orphanet, MeSH and UMLS IDs), with batch queries
-    over POST. Data in each record keep the license of their original source.
+  description: MyDisease.info REST API (v1) for querying disease annotation records
+    by keyword, field or identifier (Mondo, DOID, OMIM, Orphanet, MeSH and UMLS IDs),
+    with batch queries over POST. Data in each record keep the license of their original
+    source.
   format: json
   id: mydisease.api
   infores_id: mydisease-info
@@ -2966,11 +2967,11 @@ products:
     source: umls
   product_url: https://mydisease.info/v1/query
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -3077,6 +3078,168 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: OntologyProduct
+  description: Cell Line Ontology in OWL format
+  format: owl
+  id: clo.owl
+  name: clo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 2121232
+  product_url: http://purl.obolibrary.org/obo/clo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OWL format
+  format: owl
+  id: scdo.owl
+  name: scdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 367519
+  product_url: http://purl.obolibrary.org/obo/scdo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OBO format
+  format: obo
+  id: scdo.obo
+  name: scdo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 324416
+  product_url: http://purl.obolibrary.org/obo/scdo.obo
 publications:
 - authors:
   - Kibbe WA

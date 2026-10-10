@@ -11,6 +11,7 @@ original_source:
   source: chip-atlas
 - relation_type: prov:hadPrimarySource
   source: sra
+product_file_size: 359471390
 product_url: https://chip-atlas.dbcls.jp/data/metadata/experimentList.tab
 layout: product_detail
 ---

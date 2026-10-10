@@ -12,6 +12,7 @@ name: WhatToMake Ontology
 original_source:
 - relation_type: prov:hadPrimarySource
   source: foodkg
+product_file_size: 6542
 product_url: http://purl.org/heals/food
 layout: product_detail
 ---

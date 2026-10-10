@@ -12,6 +12,7 @@ original_source:
   source: icd10
 - relation_type: prov:wasInfluencedBy
   source: orphanet
+product_file_size: 0
 product_url: https://directory.bbmri-eric.eu/ERIC/api/ttl
 layout: product_detail
 ---

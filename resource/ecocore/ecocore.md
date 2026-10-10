@@ -6,13 +6,13 @@ collection:
 - ber
 contacts:
 - category: Individual
+  label: Pier Luigi Buttigieg
+  orcid: 0000-0002-4366-3088
   contact_details:
   - contact_type: email
     value: p.buttigieg@gmail.com
   - contact_type: github
     value: pbuttigieg
-  label: Pier Luigi Buttigieg
-  orcid: 0000-0002-4366-3088
 creation_date: '2025-09-29T00:00:00Z'
 description: Ecocore is a community ontology for the concise and controlled description
   of ecological traits of organisms.
@@ -21,7 +21,7 @@ domains:
 - ecology
 homepage_url: https://github.com/EcologicalSemantics/ecocore
 id: ecocore
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,26 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ecocore
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 1287569
   product_url: http://purl.obolibrary.org/obo/ecocore.owl
 - category: OntologyProduct
@@ -47,6 +67,26 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ecocore
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 834439
   product_url: http://purl.obolibrary.org/obo/ecocore.obo
 - category: GraphProduct

@@ -54,6 +54,58 @@ products:
     source: flopo
   product_file_size: 2441725
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/FLOPO.tar.gz
+- category: OntologyProduct
+  description: Plant Gall Ontology in OWL format
+  format: owl
+  id: gallont.owl
+  name: gallont.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gallont
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: flopo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 91521
+  product_url: http://purl.obolibrary.org/obo/gallont.owl
+- category: OntologyProduct
+  description: Plant Gall Ontology in OBO format
+  format: obo
+  id: gallont.obo
+  name: gallont.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gallont
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: flopo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 60631
+  product_url: http://purl.obolibrary.org/obo/gallont.obo
 publications:
 - authors:
   - Hoehndorf R

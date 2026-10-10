@@ -19,7 +19,7 @@ domains:
 - nutrition
 homepage_url: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 id: ons
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,6 +35,22 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ons
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 215578
   product_url: http://purl.obolibrary.org/obo/ons.owl
 - category: GraphProduct
@@ -53,6 +69,22 @@ products:
     source: ons
   product_file_size: 257463
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ONS.tar.gz
+- category: OntologyProduct
+  description: Ontology for Nutritional Epidemiology in OWL format
+  format: owl
+  id: one.owl
+  name: one.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: one
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ons
+  product_file_size: 9258
+  product_url: http://purl.obolibrary.org/obo/one.owl
 publications:
 - authors:
   - Vitali F

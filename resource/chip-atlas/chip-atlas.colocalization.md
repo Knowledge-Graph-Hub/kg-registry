@@ -12,6 +12,7 @@ original_source:
   source: chip-atlas
 - relation_type: prov:hadPrimarySource
   source: sra
+product_file_size: 270398
 product_url: https://chip-atlas.dbcls.jp/data/hg19/colo/POU5F1.Pluripotent_stem_cell.tsv
 layout: product_detail
 ---

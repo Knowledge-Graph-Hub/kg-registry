@@ -12,6 +12,7 @@ original_source:
   source: chip-atlas
 - relation_type: prov:hadPrimarySource
   source: sra
+product_file_size: 2603130
 product_url: https://chip-atlas.dbcls.jp/data/hg19/target/POU5F1.5.tsv
 layout: product_detail
 ---

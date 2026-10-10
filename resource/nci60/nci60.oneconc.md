@@ -9,6 +9,7 @@ name: NCI-60 One-Dose Prescreen Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nci60
+product_file_size: 54777377
 product_url: https://wiki.nci.nih.gov/download/attachments/147193864/ONECONC.zip
 layout: product_detail
 ---

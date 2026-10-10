@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Jingshan Huang
-  orcid: 0000-0003-2408-2883
   contact_details:
   - contact_type: email
     value: huang@southalabama.edu
   - contact_type: github
     value: Huang-OMIT
+  label: Jingshan Huang
+  orcid: 0000-0003-2408-2883
 creation_date: '2025-06-25T00:00:00Z'
 description: Ontology to establish data exchange standards and common data elements
   in the microRNA (miR) domain
@@ -278,6 +278,82 @@ products:
     source: omit
   product_file_size: 1400036
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OMIT.tar.gz
+- category: OntologyProduct
+  description: Microbial Conditions Ontology in OWL format
+  format: owl
+  id: mco.owl
+  name: mco.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: micro
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omp
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zeco
+  product_file_size: 772100
+  product_url: http://purl.obolibrary.org/obo/mco.owl
+- category: OntologyProduct
+  description: Microbial Conditions Ontology in OBO format
+  format: obo
+  id: mco.obo
+  name: mco.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: micro
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omp
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: zeco
+  product_file_size: 409757
+  product_url: http://purl.obolibrary.org/obo/mco.obo
 publications: []
 repository: https://github.com/OmniSearch/omit
 ---

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Darren Natale
-  orcid: 0000-0001-5809-9523
   contact_details:
   - contact_type: email
     value: dan5@georgetown.edu
   - contact_type: github
     value: nataled
+  label: Darren Natale
+  orcid: 0000-0001-5809-9523
 creation_date: '2025-06-25T00:00:00Z'
 description: An ontological representation of protein-related entities
 domains:
@@ -954,11 +954,11 @@ products:
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -1065,6 +1065,583 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OWL format
+  format: owl
+  id: chiro.owl
+  name: chiro.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chiro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 7043
+  product_url: http://purl.obolibrary.org/obo/chiro.owl
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OBO format
+  format: obo
+  id: chiro.obo
+  name: chiro.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chiro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 3337
+  product_url: http://purl.obolibrary.org/obo/chiro.obo
+- category: OntologyProduct
+  description: Complete ontology, plus inter-ontology axioms, and imports modules
+  format: owl
+  id: cl.owl
+  name: Main CL OWL edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 65879178
+  product_url: http://purl.obolibrary.org/obo/cl.owl
+- category: OntologyProduct
+  description: Complete ontology, plus inter-ontology axioms, and imports modules
+    merged in
+  format: obo
+  id: cl.obo
+  name: CL obo format edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 17326417
+  product_url: http://purl.obolibrary.org/obo/cl.obo
+- category: OntologyProduct
+  description: Complete ontology, plus inter-ontology axioms, and imports modules
+    merged in
+  format: json
+  id: cl.json
+  name: CL OBOGraph-JSON format edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 39845315
+  product_url: http://purl.obolibrary.org/obo/cl.json
+- category: OntologyProduct
+  description: Basic version, no inter-ontology axioms
+  format: owl
+  id: cl.cl-basic.owl
+  name: Basic CL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 9533929
+  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
+- category: OntologyProduct
+  description: Basic version, no inter-ontology axioms
+  format: obo
+  id: cl.cl-basic.obo
+  name: Basic CL (OBO version)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 3346117
+  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
+- category: OntologyProduct
+  description: Basic version, no inter-ontology axioms
+  format: json
+  id: cl.cl-basic.json
+  name: Basic CL (OBOGraph-JSON version)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 6060633
+  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
+- category: OntologyProduct
+  description: Provisional Cell Ontology in OWL format
+  format: owl
+  id: pcl.owl
+  name: pcl.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 167561057
+  product_url: http://purl.obolibrary.org/obo/pcl.owl
+- category: OntologyProduct
+  description: Provisional Cell Ontology in OBO format
+  format: obo
+  id: pcl.obo
+  name: pcl.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 39796128
+  product_url: http://purl.obolibrary.org/obo/pcl.obo
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OWL format
+  format: owl
+  id: scdo.owl
+  name: scdo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 367519
+  product_url: http://purl.obolibrary.org/obo/scdo.owl
+- category: OntologyProduct
+  description: Sickle Cell Disease Ontology in OBO format
+  format: obo
+  id: scdo.obo
+  name: scdo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scdo
+  - relation_type: prov:hadPrimarySource
+    source: apollo_sv
+  - relation_type: prov:hadPrimarySource
+    source: aro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chmo
+  - relation_type: prov:hadPrimarySource
+    source: cmo
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: dron
+  - relation_type: prov:hadPrimarySource
+    source: duo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: eupath
+  - relation_type: prov:hadPrimarySource
+    source: exo
+  - relation_type: prov:hadPrimarySource
+    source: gaz
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: ico
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: idomal
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: opmi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  - relation_type: prov:hadPrimarySource
+    source: symp
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: vo
+  - relation_type: prov:hadPrimarySource
+    source: vt
+  product_file_size: 324416
+  product_url: http://purl.obolibrary.org/obo/scdo.obo
+- category: OntologyProduct
+  description: core ontology
+  format: owl
+  id: uberon.owl
+  name: Uberon
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 98551256
+  product_url: http://purl.obolibrary.org/obo/uberon.owl
+- category: OntologyProduct
+  description: Uberon edition that excludes external ontologies and most relations
+  format: obo
+  id: uberon.uberon-basic.obo
+  name: Uberon basic
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 12146722
+  product_url: http://purl.obolibrary.org/obo/uberon/uberon-basic.obo
+- category: OntologyProduct
+  description: Uberon plus all metazoan ontologies
+  format: owl
+  id: uberon.collected-metazoan.owl
+  name: Uberon collected metazoan ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 284938816
+  product_url: http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl
+- category: OntologyProduct
+  description: Uberon and all metazoan ontologies with redundant species-specific
+    terms removed
+  format: owl
+  id: uberon.composite-metazoan.owl
+  name: Uberon composite metazoan ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 259794621
+  product_url: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
+- category: OntologyProduct
+  description: Uberon composite vertebrate ontology
+  format: owl
+  id: uberon.composite-vertebrate.owl
+  name: Uberon composite vertebrate ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 126856799
+  product_url: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
 publications:
 - authors:
   - Natale DA

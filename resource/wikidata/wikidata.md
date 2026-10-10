@@ -397,6 +397,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 406 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: PubChem substance information in ASN.1 format
@@ -642,9 +644,9 @@ products:
   product_url: https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/sssom/bioregistry.sssom.tsv
 - category: Product
   compression: gzip
-  description: 2025+ edition of Open English WordNet, which adds a manually validated selection
-    of proper nouns from Open English Namenet (derived from Wikidata) in Global WordNet Association
-    WN-LMF XML format.
+  description: 2025+ edition of Open English WordNet, which adds a manually validated
+    selection of proper nouns from Open English Namenet (derived from Wikidata) in
+    Global WordNet Association WN-LMF XML format.
   format: xml
   id: open-english-wordnet.lmf-plus
   latest_version: '2025'
@@ -660,9 +662,9 @@ products:
   product_url: https://en-word.net/static/english-wordnet-2025-plus.xml.gz
 - category: GraphProduct
   compression: gzip
-  description: 2025+ edition of Open English WordNet, which adds a manually validated selection
-    of proper nouns from Open English Namenet (derived from Wikidata) as RDF in Turtle syntax,
-    using the Lemon/OntoLex model.
+  description: 2025+ edition of Open English WordNet, which adds a manually validated
+    selection of proper nouns from Open English Namenet (derived from Wikidata) as
+    RDF in Turtle syntax, using the Lemon/OntoLex model.
   format: ttl
   id: open-english-wordnet.rdf-plus
   latest_version: '2025'
@@ -678,8 +680,9 @@ products:
   product_url: https://en-word.net/static/english-wordnet-2025-plus.ttl.gz
 - category: Product
   compression: zip
-  description: 2025+ edition of Open English WordNet, which adds a manually validated selection
-    of proper nouns from Open English Namenet (derived from Wikidata) as a set of JSON files.
+  description: 2025+ edition of Open English WordNet, which adds a manually validated
+    selection of proper nouns from Open English Namenet (derived from Wikidata) as
+    a set of JSON files.
   format: json
   id: open-english-wordnet.json-plus
   latest_version: '2025'
@@ -695,9 +698,9 @@ products:
   product_url: https://en-word.net/static/english-wordnet-2025-plus-json.zip
 - category: Product
   compression: zip
-  description: 2025+ edition of Open English WordNet, which adds a manually validated selection
-    of proper nouns from Open English Namenet (derived from Wikidata) in the legacy Princeton
-    WordNet database (WNDB) text file format, for older applications.
+  description: 2025+ edition of Open English WordNet, which adds a manually validated
+    selection of proper nouns from Open English Namenet (derived from Wikidata) in
+    the legacy Princeton WordNet database (WNDB) text file format, for older applications.
   format: txt
   id: open-english-wordnet.wndb-plus
   latest_version: '2025'
@@ -727,6 +730,7 @@ products:
     source: dbpedia
   - relation_type: prov:wasDerivedFrom
     source: wikidata
+  product_file_size: 5343
   product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikidata-kg-dump
 repository: https://www.mediawiki.org/wiki/Wikibase
 synonyms:

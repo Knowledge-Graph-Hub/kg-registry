@@ -13,6 +13,7 @@ node_count: 51
 original_source:
 - relation_type: prov:hadPrimarySource
   source: i-adopt
+product_file_size: 1514
 product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/I-ADOPT.tar.gz
 layout: product_detail
 ---

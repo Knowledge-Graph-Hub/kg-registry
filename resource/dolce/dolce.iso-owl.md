@@ -10,6 +10,7 @@ name: DOLCE OWL (ISO/IEC 21838-3)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dolce
+product_file_size: 37374
 product_url: https://standards.iso.org/iso-iec/21838/-3/ed-1/en/Dolce.owl
 layout: product_detail
 ---

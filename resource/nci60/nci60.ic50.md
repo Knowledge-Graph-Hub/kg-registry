@@ -9,6 +9,7 @@ name: NCI-60 IC50 Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nci60
+product_file_size: 37078627
 product_url: https://wiki.nci.nih.gov/download/attachments/147193864/IC50.zip
 layout: product_detail
 ---

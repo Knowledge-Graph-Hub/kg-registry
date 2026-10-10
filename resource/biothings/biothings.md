@@ -56,6 +56,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 204 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 204 error
+    when accessing file'
 - category: ProgrammingInterface
   connection_url: https://biothings.ncats.io/gtrx/query
   description: BioThings API for querying Genome-to-Treatment association records
@@ -216,8 +218,8 @@ products:
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: ProcessProduct
-  description: Source code of the MyGene.info web service and its data plugins, built with
-    the BioThings SDK.
+  description: Source code of the MyGene.info web service and its data plugins, built
+    with the BioThings SDK.
   format: python
   id: mygene.code
   name: MyGene.info Source Code
@@ -228,8 +230,8 @@ products:
     source: biothings
   product_url: https://github.com/biothings/mygene.info
 - category: ProcessProduct
-  description: Source code for the MyDisease.info data parsers and web service, built with
-    the BioThings SDK.
+  description: Source code for the MyDisease.info data parsers and web service, built
+    with the BioThings SDK.
   format: python
   id: mydisease.code
   name: MyDisease.info Source Code
@@ -240,8 +242,8 @@ products:
     source: biothings
   product_url: https://github.com/biothings/mydisease.info
 - category: ProcessProduct
-  description: Source code for the MyVariant.info service, including the BioThings data plugins
-    and parsers that build the variant index.
+  description: Source code for the MyVariant.info service, including the BioThings
+    data plugins and parsers that build the variant index.
   format: python
   id: myvariant.code
   name: MyVariant.info Source Code

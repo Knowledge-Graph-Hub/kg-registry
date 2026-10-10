@@ -10,6 +10,7 @@ name: DOLCE Lite-Plus 3.97 Library
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dolce
+product_file_size: 261017
 product_url: http://www.loa.istc.cnr.it/ontologies/DLP3971.zip
 layout: product_detail
 ---

@@ -1698,12 +1698,14 @@ products:
     source: uniprot
   product_url: https://kghub.io/kg-covid-19/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
-    when accessing file'
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -1929,6 +1931,8 @@ products:
     source: chembl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 406 error
     when accessing file'
 - category: GraphProduct
   description: Integrated rare-disease knowledge graph produced by the RD-Clust workflow,
@@ -2865,9 +2869,10 @@ products:
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
 - category: ProgrammingInterface
-  description: MyChem.info REST API (v1) for querying chemical and drug annotation records
-    by keyword, field or identifier (InChIKey, ChEMBL, DrugBank, PubChem, ChEBI and UNII IDs),
-    with batch queries over POST. Data in each record keep the license of their original source.
+  description: MyChem.info REST API (v1) for querying chemical and drug annotation
+    records by keyword, field or identifier (InChIKey, ChEMBL, DrugBank, PubChem,
+    ChEBI and UNII IDs), with batch queries over POST. Data in each record keep the
+    license of their original source.
   format: json
   id: mychem.api
   infores_id: mychem-info
@@ -2905,9 +2910,9 @@ products:
     source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
 - category: ProgrammingInterface
-  description: MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez
-    or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents
-    merged from the integrated sources.
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
+    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
+    JSON documents merged from the integrated sources.
   format: http
   id: mygene.api
   infores_id: mygene-info
@@ -2965,11 +2970,11 @@ products:
     source: wikipedia
   product_url: https://mygene.info/v3/api
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -3077,9 +3082,9 @@ products:
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: GraphicalInterface
-  description: Sugi Atlas web site with search and one static reference page per human gene,
-    drug and disease (for example /atlas/gene/TP53/). Each page also has a Markdown version
-    at index.md and embeds a schema.org JSON-LD record.
+  description: Sugi Atlas web site with search and one static reference page per human
+    gene, drug and disease (for example /atlas/gene/TP53/). Each page also has a Markdown
+    version at index.md and embeds a schema.org JSON-LD record.
   format: http
   id: sugi-atlas.portal
   name: Sugi Atlas Web Site
@@ -3096,9 +3101,10 @@ products:
     source: chembl
   product_url: https://sugi.bio/atlas/
 - category: GraphicalInterface
-  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence alignments,
-    structures and structure models, ligands and bioactivities, mutations, drugs and signaling
-    proteins, with interactive diagrams such as snake plots and phylogenetic trees.
+  description: GPCRdb web portal for browsing and analyzing GPCR receptors, sequence
+    alignments, structures and structure models, ligands and bioactivities, mutations,
+    drugs and signaling proteins, with interactive diagrams such as snake plots and
+    phylogenetic trees.
   format: http
   id: gpcrdb.portal
   name: GPCRdb Web Portal
@@ -3133,9 +3139,9 @@ products:
     source: gtopdb
   product_url: https://gpcrdb.org/services/reference/
 - category: Product
-  description: GitHub repository collecting the reference data used to build GPCRdb, including
-    protein, structure, ligand, mutant, drug, G protein, arrestin and residue data files,
-    plus a PDSP Ki data backup.
+  description: GitHub repository collecting the reference data used to build GPCRdb,
+    including protein, structure, ligand, mutant, drug, G protein, arrestin and residue
+    data files, plus a PDSP Ki data backup.
   format: mixed
   id: gpcrdb.data
   name: GPCRdb Reference Data Repository
@@ -3154,11 +3160,12 @@ products:
     source: pdsp
   product_url: https://github.com/protwis/gpcrdb_data
   warnings:
-  - The repository has no license file; the GPCRdb legal notice states that GPCRdb data are
-    available under CC BY 4.0.
+  - The repository has no license file; the GPCRdb legal notice states that GPCRdb
+    data are available under CC BY 4.0.
 - category: ProgrammingInterface
-  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal, BioModels,
-    BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog and Reactome.
+  description: SPARQL endpoint for EBI-derived RDF datasets, including AMR portal,
+    BioModels, BioSample, ChEBI, ChEMBL, Ensembl (including GRCh37), GWAS Catalog
+    and Reactome.
   format: http
   id: rdf-portal.sparql.ebi
   name: RDF Portal EBI SPARQL Endpoint
@@ -3177,9 +3184,9 @@ products:
     source: reactome
   product_url: https://rdfportal.org/ebi/sparql
 - category: ProgrammingInterface
-  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed by DBCLS,
-    with a GraphiQL interface in the browser. When checked it covered UniProt, ChEBI, ChEMBL
-    and MedGen.
+  description: GraphQL API powered by Grasp, a GraphQL-to-SPARQL bridge developed
+    by DBCLS, with a GraphiQL interface in the browser. When checked it covered UniProt,
+    ChEBI, ChEMBL and MedGen.
   format: http
   id: rdf-portal.graphql
   name: RDF Portal GraphQL API
@@ -3196,9 +3203,9 @@ products:
     source: medgen
   product_url: https://rdfportal.org/grasp
 - category: Product
-  description: BioImage Archive study S-BIAD501 (released 2022), Open TG-GATEs rat liver and
-    kidney histopathology slide images, each linked to its histopathology finding with mapped
-    ontology terms and severity grade as recorded in ChEMBL.
+  description: BioImage Archive study S-BIAD501 (released 2022), Open TG-GATEs rat
+    liver and kidney histopathology slide images, each linked to its histopathology
+    finding with mapped ontology terms and severity grade as recorded in ChEMBL.
   format: http
   id: open-tggates.histopathology-images
   license:

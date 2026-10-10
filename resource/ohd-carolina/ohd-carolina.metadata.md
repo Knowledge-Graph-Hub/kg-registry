@@ -8,6 +8,7 @@ name: OHD@Carolina Meta Knowledge Graph
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ohd-carolina
+product_file_size: 560260
 product_url: https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/meta_knowledge_graph.json
 layout: product_detail
 ---

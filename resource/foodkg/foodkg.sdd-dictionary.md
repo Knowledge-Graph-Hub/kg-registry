@@ -18,6 +18,7 @@ original_source:
   source: uo
 - relation_type: prov:wasDerivedFrom
   source: fooddata-central
+product_file_size: 1066
 product_url: https://foodkg.github.io/sdd/usdaDM.csv
 layout: product_detail
 ---

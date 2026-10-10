@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Lucas Leclere
+  orcid: 0000-0002-7440-0467
   contact_details:
   - contact_type: email
     value: lucas.leclere@obs-banyuls.fr
   - contact_type: github
     value: Leclere-L
-  label: Lucas Leclere
-  orcid: 0000-0002-7440-0467
 creation_date: '2025-09-29T00:00:00Z'
 description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes
   the anatomical and developmental features of the Clytia hemisphaerica life cycle.
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/EBISPOT/clyh_ontology
 id: clyh
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -35,6 +35,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: clyh
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 13404
   product_url: http://purl.obolibrary.org/obo/clyh.owl
 - category: OntologyProduct
@@ -45,6 +51,12 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: clyh
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 9651
   product_url: http://purl.obolibrary.org/obo/clyh.obo
 - category: GraphProduct

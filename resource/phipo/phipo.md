@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Alayne Cuzick
+  orcid: 0000-0001-8941-3984
   contact_details:
   - contact_type: email
     value: alayne.cuzick@rothamsted.ac.uk
   - contact_type: github
     value: CuzickA
-  label: Alayne Cuzick
-  orcid: 0000-0001-8941-3984
 creation_date: '2025-09-29T00:00:00Z'
 description: PHIPO is a formal ontology of species-neutral phenotypes observed in
   pathogen-host interactions.
@@ -21,7 +21,7 @@ domains:
 - host-pathogen interactions
 homepage_url: https://github.com/PHI-base/phipo
 id: phipo
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: phipo
+  - relation_type: prov:hadPrimarySource
+    source: pato
   product_file_size: 1709467
   product_url: http://purl.obolibrary.org/obo/phipo.owl
 - category: OntologyProduct
@@ -47,6 +49,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: phipo
+  - relation_type: prov:hadPrimarySource
+    source: pato
   product_file_size: 1133552
   product_url: http://purl.obolibrary.org/obo/phipo.obo
 - category: GraphProduct

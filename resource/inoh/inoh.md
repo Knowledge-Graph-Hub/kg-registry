@@ -44,6 +44,11 @@ products:
     with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
     port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
     name resolution)"))'
+  - 'File was not able to be retrieved when checked on 2026-10-10: Error connecting
+    to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
+    with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
+    port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
+    name resolution)"))'
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized
@@ -359,8 +364,8 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 - category: Product
-  description: LSDB Archive copy of the INOH pathway database, in dated releases (2011 to
-    2017), licensed CC BY-SA 2.1 Japan.
+  description: LSDB Archive copy of the INOH pathway database, in dated releases (2011
+    to 2017), licensed CC BY-SA 2.1 Japan.
   format: mixed
   id: lsdb-archive.inoh
   license:

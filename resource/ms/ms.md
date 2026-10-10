@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Joshua Klein
+  orcid: 0000-0003-1279-6838
   contact_details:
   - contact_type: email
     value: joshua.adam.klein@gmail.com
   - contact_type: github
     value: mobiusklein
-  label: Joshua Klein
-  orcid: 0000-0003-1279-6838
 creation_date: '2025-08-12T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of experiments
   concerned with proteomics mass spectrometry.
@@ -22,7 +22,7 @@ domains:
 - general
 homepage_url: http://www.psidev.info/groups/controlled-vocabularies
 id: ms
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -38,6 +38,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ms
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: uo
   product_file_size: 1143028
   product_url: http://purl.obolibrary.org/obo/ms.obo
 - category: OntologyProduct
@@ -48,6 +52,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ms
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: uo
   product_file_size: 4925738
   product_url: http://purl.obolibrary.org/obo/ms.owl
 - category: GraphProduct

@@ -13,6 +13,7 @@ original_source:
   source: foodkg
 - relation_type: prov:hadPrimarySource
   source: foodon
+product_file_size: 15252
 product_url: http://purl.org/heals/foodon
 layout: product_detail
 ---

@@ -8,6 +8,7 @@ name: I-ADOPT Framework Ontology Documentation
 original_source:
 - relation_type: prov:hadPrimarySource
   source: i-adopt
+product_file_size: 3227
 product_url: https://w3id.org/iadopt/ont
 layout: product_detail
 ---

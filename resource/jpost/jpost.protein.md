@@ -10,6 +10,7 @@ name: jPOSTdb Identified Protein Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: jpost
+product_file_size: 12474382
 product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_protein.zip
 secondary_source:
 - relation_type: prov:used

@@ -111,7 +111,7 @@ cellosaurus	Cellosaurus	DataSource	https://www.cellosaurus.org/	resource/cellosa
 cellphonedb	CellPhoneDB	DataSource	https://www.cellphonedb.org/	resource/cellphonedb/cellphonedb.md
 cellxgene	CZ CELLxGENE	DataSource	https://cellxgene.cziscience.com/	resource/cellxgene/cellxgene.md
 ceph	Cephalopod Ontology	Ontology	https://github.com/obophenotype/cephalopod-ontology	resource/ceph/ceph.md
-cfde-ddkg	Data Distillery Knowledge Graph (DDKG)	KnowledgeGraph	https://dd-kg-ui.cfde.cloud/about	resource/cfde-ddkg/cfde-ddkg.md
+cfde-ddkg	Data Distillery Knowledge Graph (DDKG)	KnowledgeGraph	https://dd-kg-ui.cfde.cloud/	resource/cfde-ddkg/cfde-ddkg.md
 cfde-gse	Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)	KnowledgeGraph	https://gse.cfde.cloud/	resource/cfde-gse/cfde-gse.md
 cgc	Caenorhabditis Genetics Center	DataSource	https://cgc.umn.edu/	resource/cgc/cgc.md
 cgnc	CGNC	DataSource	https://birdgenenames.org/index.jsp	resource/cgnc/cgnc.md
@@ -291,7 +291,7 @@ fire	FIRE (Frequently Interacting REgions)	DataSource	https://doi.org/10.1016/j.
 fix	Physico-chemical methods and properties	Ontology	http://www.ebi.ac.uk/chebi	resource/fix/fix.md
 flopo	Flora Phenotype Ontology	Ontology	https://github.com/flora-phenotype-ontology/flopoontology	resource/flopo/flopo.md
 flu	Influenza Ontology	Ontology	http://purl.obolibrary.org/obo/flu/	resource/flu/flu.md
-fma	Foundational Model of Anatomy Ontology (subset)	Ontology	http://si.washington.edu/projects/fma	resource/fma/fma.md
+fma	Foundational Model of Anatomy Ontology	Ontology	http://si.washington.edu/projects/fma	resource/fma/fma.md
 fobi	Food-Biomarker Ontology	Ontology	https://github.com/pcastellanoescuder/FoodBiomarkerOntology	resource/fobi/fobi.md
 foodkg	FoodKG	KnowledgeGraph	https://foodkg.github.io/	resource/foodkg/foodkg.md
 forum	FORUM	KnowledgeGraph	https://forum-webapp.semantic-metabolomics.fr/	resource/forum/forum.md

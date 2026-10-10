@@ -1519,10 +1519,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
-    when accessing file'
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-10-05: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 502 error
+    when accessing file'
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,
     genetic, protein, and karyotype biomarker records.
@@ -3159,11 +3161,11 @@ products:
     source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22

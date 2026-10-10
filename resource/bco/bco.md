@@ -55,6 +55,58 @@ products:
     source: bco
   product_file_size: 41667
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/BCO.tar.gz
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OWL format
+  format: owl
+  id: fovt.owl
+  name: fovt.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fovt
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 2587818
+  product_url: http://purl.obolibrary.org/obo/fovt.owl
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OBO format
+  format: obo
+  id: fovt.obo
+  name: fovt.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fovt
+  - relation_type: prov:hadPrimarySource
+    source: bco
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 1628339
+  product_url: http://purl.obolibrary.org/obo/fovt.obo
 publications:
 - authors:
   - Ramona L. Walls

@@ -18,7 +18,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/porifera-ontology
 id: poro
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -34,6 +34,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 62597
   product_url: http://purl.obolibrary.org/obo/poro.owl
 - category: OntologyProduct
@@ -44,6 +48,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 54580
   product_url: http://purl.obolibrary.org/obo/poro.obo
 - category: GraphProduct
@@ -61,6 +69,58 @@ products:
     source: poro
   product_file_size: 38450
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/PORO.tar.gz
+- category: OntologyProduct
+  description: Plant Gall Ontology in OWL format
+  format: owl
+  id: gallont.owl
+  name: gallont.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gallont
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: flopo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 91521
+  product_url: http://purl.obolibrary.org/obo/gallont.owl
+- category: OntologyProduct
+  description: Plant Gall Ontology in OBO format
+  format: obo
+  id: gallont.obo
+  name: gallont.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gallont
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: flopo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: poro
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  product_file_size: 60631
+  product_url: http://purl.obolibrary.org/obo/gallont.obo
 publications:
 - authors:
   - Thacker RW

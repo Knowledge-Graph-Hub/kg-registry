@@ -10,6 +10,7 @@ name: jPOSTdb PSM Peptide Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: jpost
+product_file_size: 67761000
 product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm.zip
 secondary_source:
 - relation_type: prov:used

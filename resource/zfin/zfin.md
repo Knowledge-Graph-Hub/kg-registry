@@ -137,7 +137,7 @@ products:
   product_url: https://zfin.org/downloads/gene_publication.txt
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -161,7 +161,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -267,7 +267,7 @@ products:
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -291,7 +291,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -397,7 +397,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -421,7 +421,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -528,7 +528,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
@@ -552,7 +552,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -659,7 +659,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 16418621
+  edge_count: 16433147
   format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
@@ -683,7 +683,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -790,7 +790,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -814,7 +814,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -921,7 +921,7 @@ products:
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 16418621
+  edge_count: 16433147
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -945,7 +945,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1051,7 +1051,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -1075,7 +1075,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1181,7 +1181,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 16418621
+  edge_count: 16433147
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1205,7 +1205,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1668236
+  node_count: 1670861
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -2182,12 +2182,13 @@ products:
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
-    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
-    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
-    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
-    upstream scores that are free for academic use. Free for academic and non-commercial users
-    after registration with an institutional email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
+    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
+    column descriptions and the search_dbNSFP Java program. Variant tables are also
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    use. Free for academic and non-commercial users after registration with an institutional
+    email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -2252,10 +2253,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
-    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
-    and RGC Million Exome data, whose authors require separate commercial licenses. Available
-    to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
+    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
+    PrimateAI and RGC Million Exome data, whose authors require separate commercial
+    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:

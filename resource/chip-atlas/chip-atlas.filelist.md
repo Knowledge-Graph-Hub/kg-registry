@@ -8,6 +8,7 @@ name: ChIP-Atlas fileList.tab
 original_source:
 - relation_type: prov:hadPrimarySource
   source: chip-atlas
+product_file_size: 126917161
 product_url: https://chip-atlas.dbcls.jp/data/metadata/fileList.tab
 layout: product_detail
 ---

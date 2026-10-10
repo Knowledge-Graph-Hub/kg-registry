@@ -9,6 +9,7 @@ name: N2T Registered Schemes
 original_source:
 - relation_type: prov:hadPrimarySource
   source: n2t
+product_file_size: 31248
 product_url: https://n2t.net/.info?valid=1
 layout: product_detail
 ---

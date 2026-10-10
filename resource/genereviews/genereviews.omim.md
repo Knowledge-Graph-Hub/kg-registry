@@ -10,6 +10,7 @@ original_source:
   source: genereviews
 - relation_type: prov:hadPrimarySource
   source: omim
+product_file_size: 24971
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/GeneReviews/NBKid_shortname_OMIM.txt
 layout: product_detail
 ---

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Nicole Vasilevsky
+  orcid: 0000-0001-5208-3432
   contact_details:
   - contact_type: email
     value: vasilevs@ohsu.edu
   - contact_type: github
     value: nicolevasilevsky
-  label: Nicole Vasilevsky
-  orcid: 0000-0001-5208-3432
 creation_date: '2025-09-29T00:00:00Z'
 description: CHEBI provides a distinct role hierarchy. Chemicals in the structural
   hierarchy are connected via a 'has role' relation. CHIRO provides links from these
@@ -23,7 +23,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/obophenotype/chiro
 id: chiro
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -39,6 +39,20 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chiro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 7043
   product_url: http://purl.obolibrary.org/obo/chiro.owl
 - category: OntologyProduct
@@ -49,6 +63,20 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chiro
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 3337
   product_url: http://purl.obolibrary.org/obo/chiro.obo
 - category: GraphProduct

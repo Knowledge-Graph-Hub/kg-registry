@@ -9,6 +9,7 @@ name: AGROVOC Core Dump (N-Triples)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: agrovoc
+product_file_size: 73760195
 product_url: https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.nt.zip
 layout: product_detail
 ---

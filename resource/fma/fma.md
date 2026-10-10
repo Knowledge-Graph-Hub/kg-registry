@@ -5,6 +5,11 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Onard Mejino
+  contact_details:
+  - contact_type: email
+    value: mejino@u.washington.edu
+- category: Individual
   contact_details:
   - contact_type: email
     value: mejino@u.washington.edu
@@ -19,7 +24,7 @@ domains:
 - anatomy and development
 homepage_url: http://si.washington.edu/projects/fma
 id: fma
-last_modified_date: '2026-10-09T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -39,8 +44,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/fma.owl
   warnings: []
 - category: OntologyProduct
-  description: OWL individuals that pun the FMA classes so the ontology can be
-    queried more easily with SPARQL. Imports fma.owl.
+  description: OWL individuals that pun the FMA classes so the ontology can be queried
+    more easily with SPARQL. Imports fma.owl.
   format: owl
   id: fma.puns
   latest_version: 5.1.0

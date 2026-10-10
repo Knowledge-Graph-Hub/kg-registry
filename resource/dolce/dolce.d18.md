@@ -9,6 +9,7 @@ name: WonderWeb Deliverable D18
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dolce
+product_file_size: 1789764
 product_url: http://www.loa.istc.cnr.it/old/Papers/D18.pdf
 layout: product_detail
 ---

@@ -14,6 +14,7 @@ original_source:
   source: medgen
 - relation_type: prov:hadPrimarySource
   source: ncbigene
+product_file_size: 195005473
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/gtr_ftp.xml.gz
 layout: product_detail
 ---

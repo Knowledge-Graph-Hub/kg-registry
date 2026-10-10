@@ -65,9 +65,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: fairsharing
   product_url: https://fairsharing.org/API_doc
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-05: Timeout connecting
-    to URL'
+  warnings: []
 - category: DocumentationProduct
   description: User guide for FAIRsharing covering record types, curation, searching,
     collections, and how to register and maintain records.

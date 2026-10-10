@@ -9,6 +9,7 @@ name: jPOSTdb PSM Peptide Modification Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: jpost
+product_file_size: 16805069
 product_url: https://dbarchive.biosciencedbc.jp/data/jpostdb/LATEST/jpostdb_psm_modification.zip
 layout: product_detail
 ---

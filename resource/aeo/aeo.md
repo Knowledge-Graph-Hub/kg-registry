@@ -49,6 +49,38 @@ products:
     source: aeo
   product_file_size: 18041
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AEO.tar.gz
+- category: OntologyProduct
+  description: Human developmental anatomy, abstract in OWL format
+  format: owl
+  id: ehdaa2.owl
+  name: ehdaa2.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehdaa2
+  - relation_type: prov:hadPrimarySource
+    source: aeo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_file_size: 125946
+  product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
+- category: OntologyProduct
+  description: Human developmental anatomy, abstract in OBO format
+  format: obo
+  id: ehdaa2.obo
+  name: ehdaa2.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehdaa2
+  - relation_type: prov:hadPrimarySource
+    source: aeo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  product_file_size: 83809
+  product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
 publications: []
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 ---

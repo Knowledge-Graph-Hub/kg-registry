@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Miguel A. Fortuna
+  orcid: 0000-0002-8374-1941
   contact_details:
   - contact_type: email
     value: fortuna@ebd.csic.es
   - contact_type: github
     value: miguelfortuna
-  label: Miguel A. Fortuna
-  orcid: 0000-0002-8374-1941
 creation_date: '2025-09-29T00:00:00Z'
 description: OntoAvida develops an integrated vocabulary for the description of the
   most widely-used computational approach for studying evolution using digital organisms
@@ -22,7 +22,7 @@ domains:
 - information technology
 homepage_url: https://gitlab.com/fortunalab/ontoavida
 id: ontoavida
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,16 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ontoavida
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
   product_file_size: 472853
   product_url: http://purl.obolibrary.org/obo/ontoavida.owl
 - category: OntologyProduct
@@ -48,6 +58,16 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ontoavida
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
   product_file_size: 240082
   product_url: http://purl.obolibrary.org/obo/ontoavida.obo
 - category: GraphProduct

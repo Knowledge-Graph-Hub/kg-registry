@@ -22,7 +22,7 @@ domains:
 - insects
 homepage_url: https://github.com/insect-morphology/aism
 id: aism
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -39,6 +39,18 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 1378303
   product_url: http://purl.obolibrary.org/obo/aism.owl
 - category: OntologyProduct
@@ -50,6 +62,18 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 896550
   product_url: http://purl.obolibrary.org/obo/aism.obo
 - category: OntologyProduct
@@ -61,6 +85,18 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 929390
   product_url: http://purl.obolibrary.org/obo/aism.json
 - category: GraphProduct
@@ -79,6 +115,102 @@ products:
     source: aism
   product_file_size: 865456
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/AISM.tar.gz
+- category: OntologyProduct
+  description: Coleoptera Anatomy Ontology (COLAO) in OWL format
+  format: owl
+  id: colao.owl
+  name: colao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: colao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 164547
+  product_url: http://purl.obolibrary.org/obo/colao.owl
+- category: OntologyProduct
+  description: Coleoptera Anatomy Ontology (COLAO) in OBO format
+  format: obo
+  id: colao.obo
+  name: colao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: colao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 83585
+  product_url: http://purl.obolibrary.org/obo/colao.obo
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OWL format
+  format: owl
+  id: lepao.owl
+  name: lepao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lepao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 141799
+  product_url: http://purl.obolibrary.org/obo/lepao.owl
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OBO format
+  format: obo
+  id: lepao.obo
+  name: lepao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lepao
+  - relation_type: prov:hadPrimarySource
+    source: aism
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: caro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 74809
+  product_url: http://purl.obolibrary.org/obo/lepao.obo
 publications:
 - authors:
   - Girón JC

@@ -75,6 +75,46 @@ products:
     source: fbcv
   product_file_size: 142353
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FB-CV.tar.gz
+- category: OntologyProduct
+  description: The main ontology in OWL
+  format: owl
+  id: ontoavida.owl
+  name: OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoavida
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  product_file_size: 472853
+  product_url: http://purl.obolibrary.org/obo/ontoavida.owl
+- category: OntologyProduct
+  description: Equivalent to ontoavida.owl, in obo format
+  format: obo
+  id: ontoavida.obo
+  name: OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ontoavida
+  - relation_type: prov:hadPrimarySource
+    source: fbcv
+  - relation_type: prov:hadPrimarySource
+    source: gsso
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: stato
+  product_file_size: 240082
+  product_url: http://purl.obolibrary.org/obo/ontoavida.obo
 publications: []
 repository: https://github.com/FlyBase/flybase-controlled-vocabulary
 ---

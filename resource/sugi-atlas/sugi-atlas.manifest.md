@@ -11,6 +11,7 @@ original_source:
   source: sugi-atlas
 - relation_type: prov:wasDerivedFrom
   source: biobtree
+product_file_size: 12797962
 product_url: https://sugi.bio/atlas/manifest.json
 layout: product_detail
 ---

@@ -8,6 +8,7 @@ name: ProteomeXchange Guidelines
 original_source:
 - relation_type: prov:hadPrimarySource
   source: proteomexchange
+product_file_size: 319114
 product_url: https://www.proteomexchange.org/docs/guidelines_px.pdf
 layout: product_detail
 ---

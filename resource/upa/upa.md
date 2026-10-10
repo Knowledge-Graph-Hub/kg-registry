@@ -21,7 +21,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/geneontology/unipathway
 id: upa
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: upa
+  - relation_type: prov:hadPrimarySource
+    source: ro
   product_file_size: 798911
   product_url: http://purl.obolibrary.org/obo/upa.owl
 - category: OntologyProduct
@@ -47,6 +49,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: upa
+  - relation_type: prov:hadPrimarySource
+    source: ro
   product_file_size: 454223
   product_url: http://purl.obolibrary.org/obo/upa.obo
 - category: GraphProduct

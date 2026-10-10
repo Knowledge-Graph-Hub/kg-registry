@@ -9,6 +9,7 @@ name: NCI-60 TGI Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nci60
+product_file_size: 34477901
 product_url: https://wiki.nci.nih.gov/download/attachments/147193864/TGI.zip
 layout: product_detail
 ---

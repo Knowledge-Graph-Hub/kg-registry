@@ -6,13 +6,13 @@ collection:
 - ber
 contacts:
 - category: Individual
+  label: Marie-Ang lique Laporte
+  orcid: 0000-0002-8461-9745
   contact_details:
   - contact_type: email
     value: m.a.laporte@cgiar.org
   - contact_type: github
     value: marieALaporte
-  label: Marie-Ang lique Laporte
-  orcid: 0000-0002-8461-9745
 creation_date: '2025-09-29T00:00:00Z'
 description: Ontology of agronomic practices, agronomic techniques, and agronomic
   variables used in agronomic experiments
@@ -20,7 +20,7 @@ domains:
 - agriculture
 homepage_url: https://github.com/AgriculturalSemantics/agro
 id: agro
-last_modified_date: '2026-08-06T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,34 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: agro
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: xco
   product_file_size: 463598
   product_url: http://purl.obolibrary.org/obo/agro.owl
 - category: GraphProduct

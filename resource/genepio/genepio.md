@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Damion Dooley
+  orcid: 0000-0002-8844-9165
   contact_details:
   - contact_type: email
     value: damion_dooley@sfu.ca
   - contact_type: github
     value: ddooley
-  label: Damion Dooley
-  orcid: 0000-0002-8844-9165
 creation_date: '2025-09-29T00:00:00Z'
 description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary
   to identify, document and research foodborne pathogens and associated outbreaks.
@@ -23,7 +23,7 @@ domains:
 homepage_url: http://genepio.org/
 id: genepio
 infores_id: genepio
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -39,6 +39,16 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: genepio
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: uberon
   product_file_size: 732830
   product_url: http://purl.obolibrary.org/obo/genepio.owl
 - category: GraphProduct
