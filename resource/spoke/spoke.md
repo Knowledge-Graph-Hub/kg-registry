@@ -30,7 +30,7 @@ domains:
 homepage_url: https://spoke.ucsf.edu/
 id: spoke
 infores_id: spoke
-last_modified_date: '2026-10-09T00:00:00Z'
+last_modified_date: '2026-10-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://spoke.rbvi.ucsf.edu/docs/licenses.html
@@ -52,6 +52,8 @@ products:
     source: bindingdb
   - relation_type: prov:hadPrimarySource
     source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: bioplex
   - relation_type: prov:hadPrimarySource
     source: bv-brc
   - relation_type: prov:hadPrimarySource
@@ -146,6 +148,8 @@ products:
     source: stitch
   - relation_type: prov:hadPrimarySource
     source: string
+  - relation_type: prov:hadPrimarySource
+    source: tflink
   - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
