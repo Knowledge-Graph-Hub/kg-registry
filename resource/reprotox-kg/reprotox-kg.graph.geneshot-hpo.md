@@ -12,6 +12,8 @@ original_source:
   source: hp
 - relation_type: prov:hadPrimarySource
   source: pubmed
+- relation_type: prov:hadPrimarySource
+  source: geneshot
 product_file_size: 7214043
 product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
 layout: product_detail

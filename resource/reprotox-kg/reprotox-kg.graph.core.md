@@ -10,6 +10,12 @@ original_source:
   source: reprotox-kg
 - relation_type: prov:hadPrimarySource
   source: pubmed
+- relation_type: prov:hadPrimarySource
+  source: geneshot
+- relation_type: prov:hadPrimarySource
+  source: drugshot
+- relation_type: prov:hadPrimarySource
+  source: drugenrichr
 product_file_size: 1649245
 product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
 layout: product_detail

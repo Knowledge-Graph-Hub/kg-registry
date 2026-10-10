@@ -10,6 +10,8 @@ original_source:
   source: reprotox-kg
 - relation_type: prov:hadPrimarySource
   source: lincs-l1000
+- relation_type: prov:hadPrimarySource
+  source: sigcom-lincs
 product_file_size: 114587395
 product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json
 layout: product_detail
