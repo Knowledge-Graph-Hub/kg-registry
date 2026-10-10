@@ -1,16 +1,17 @@
 ---
 category: GraphProduct
 compression: zip
-description: PharMeBINet V2 TSV release published on February 6, 2024.
+description: PharMeBINet V3 TSV release (Zenodo version published July 9, 2026; files
+  dated 2026-07-06).
 format: tsv
 id: pharmebinet.tsv
-latest_version: v2
+latest_version: v3
 name: PharMeBINet TSV Release
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pharmebinet
-product_file_size: 1922614551
-product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+product_file_size: 3772040437
+product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_tsv_26_07_06.zip/content
 secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: adrecs

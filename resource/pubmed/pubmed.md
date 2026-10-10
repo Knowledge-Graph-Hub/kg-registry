@@ -144,11 +144,17 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: atc
+  - relation_type: prov:hadPrimarySource
     source: bgee
   - relation_type: prov:hadPrimarySource
     source: bindingdb
   - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
     source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -158,6 +164,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
     source: doid
@@ -166,15 +176,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: epa-ucmr
+  - relation_type: prov:hadPrimarySource
+    source: fideo
+  - relation_type: prov:hadPrimarySource
     source: foodb
   - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
     source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  - relation_type: prov:hadPrimarySource
+    source: ghr
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
     source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: interpro
   - relation_type: prov:hadPrimarySource
@@ -186,13 +212,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
     source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
     source: omim
   - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
     source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
@@ -208,11 +242,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: spoke
   - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://spoke.ucsf.edu/data-tools
@@ -644,11 +682,12 @@ products:
     source: pubchem
   product_url: https://maayanlab.cloud/reprotox-kg
 - category: Product
-  description: Data and content assets published with ReproTox-KG (markdown and supporting
-    materials).
+  description: Downloads page listing the ReproTox-KG graph serializations and supporting
+    tables (gene susceptibility scores, predicted placental crossing, birth defect
+    frequencies, phenotype lists, and topology measures).
   format: http
   id: reprotox-kg.data
-  name: ReproTox-KG Data Assets
+  name: ReproTox-KG Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reprotox-kg
@@ -656,7 +695,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: pubchem
-  product_url: https://github.com/MaayanLab/Reprotox-KG/tree/main/markdown
+  product_url: https://maayanlab.cloud/reprotox-kg/downloads
 - category: DocumentationProduct
   description: Translator wiki page describing SuppKG scope and example supplement-disease
     relationships.
@@ -2622,6 +2661,50 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: pubtator
   product_url: https://rdfportal.org/ncbi/sparql
+- category: GraphProduct
+  description: Core ReproTox-KG graph linking birth defects, drugs, and genes from
+    DrugShot, DrugEnrichr, and GeneShot literature co-mention evidence (1,433 nodes,
+    2,252 edges).
+  format: json
+  id: reprotox-kg.graph.core
+  name: ReproTox-KG Core Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 1649245
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/reprotox_serialization.valid.json
+- category: GraphProduct
+  description: Birth defect phenotype to drug associations from DrugShot literature
+    co-mentions (2,802 nodes, 12,502 edges).
+  format: json
+  id: reprotox-kg.graph.drugshot-hpo
+  name: ReproTox-KG DrugShot HPO-Drug Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 8941255
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Drugshot_HPO_to_Drug.valid.json
+- category: GraphProduct
+  description: Birth defect phenotype to gene associations from GeneShot literature
+    co-mentions (6,064 nodes, 13,487 edges).
+  format: json
+  id: reprotox-kg.graph.geneshot-hpo
+  name: ReproTox-KG GeneShot HPO-Gene Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 7214043
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json
 publications:
 - authors:
   - Eric W Sayers

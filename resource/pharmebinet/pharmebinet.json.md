@@ -1,16 +1,17 @@
 ---
 category: GraphProduct
-compression: gzip
-description: PharMeBINet V2 JSON release published on February 6, 2024.
+compression: zip
+description: PharMeBINet V3 JSON release (Zenodo version published July 9, 2026; files
+  dated 2026-07-06).
 format: json
 id: pharmebinet.json
-latest_version: v2
+latest_version: v3
 name: PharMeBINet JSON Release
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pharmebinet
-product_file_size: 1942958027
-product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+product_file_size: 3666110270
+product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_json_26_07_06.zip/content
 secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: adrecs

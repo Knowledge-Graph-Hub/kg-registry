@@ -1999,17 +1999,18 @@ products:
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
 - category: GraphProduct
-  compression: gzip
-  description: PharMeBINet V2 JSON release published on February 6, 2024.
+  compression: zip
+  description: PharMeBINet V3 JSON release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: json
   id: pharmebinet.json
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet JSON Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1942958027
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+  product_file_size: 3666110270
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_json_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -2115,16 +2116,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 TSV release published on February 6, 2024.
+  description: PharMeBINet V3 TSV release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: tsv
   id: pharmebinet.tsv
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet TSV Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 1922614551
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+  product_file_size: 3772040437
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_tsv_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -2230,16 +2232,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 GraphML release published on February 6, 2024.
+  description: PharMeBINet V3 GraphML release (Zenodo version published July 9, 2026;
+    files dated 2026-07-06).
   format: mixed
   id: pharmebinet.graphml
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet GraphML Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 2027519087
-  product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+  product_file_size: 4084011877
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBiNet_graphml_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -2345,16 +2348,17 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j database release (Zenodo version published July
+    9, 2026; files dated 2026-07-06).
   format: neo4j
   id: pharmebinet.neo4j
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Database
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3847978577
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+  product_file_size: 8316655668
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -2460,17 +2464,18 @@ products:
     source: wikipathways
 - category: GraphProduct
   compression: zip
-  description: PharMeBINet V2 Neo4j dump release published on February 6, 2024.
+  description: PharMeBINet V3 Neo4j dump release (Zenodo version published July 9,
+    2026; files dated 2026-07-06).
   dump_format: neo4j
   format: neo4j
   id: pharmebinet.neo4j.dump
-  latest_version: v2
+  latest_version: v3
   name: PharMeBINet Neo4j Dump
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmebinet
-  product_file_size: 3598325722
-  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+  product_file_size: 8039662464
+  product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_dump_26_07_06.zip/content
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: adrecs
@@ -4530,6 +4535,52 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: jpost
   product_url: https://rdfportal.org/primary/sparql
+- category: GraphProduct
+  compression: zip
+  description: Data Distillery HGNC-HPO subgraph (build of 2024-09-20) as CSV node
+    and edge files. HGNC gene node mapping to Human Phenotype Ontology.
+  format: csv
+  id: cfde-ddkg.hgnchpo
+  name: DDKG HGNC-HPO Subgraph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  product_file_size: 15167322
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/HGNCHPO.zip
+- category: GraphProduct
+  compression: zip
+  description: Data Distillery HGNC-UniProt subgraph (build of 2024-09-20) as CSV
+    node and edge files. Gene-Protein relationships.
+  format: csv
+  id: cfde-ddkg.hgncuniprot
+  name: DDKG HGNC-UniProt Subgraph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 937014
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/HGNCUNIPROT.zip
+- category: GraphProduct
+  compression: zip
+  description: Data Distillery HGNC Enzyme Genes subgraph (build of 2024-09-20) as
+    CSV node and edge files. HGNC enzyme gene list.
+  format: csv
+  id: cfde-ddkg.hgnc-enzyme
+  name: DDKG HGNC Enzyme Genes Subgraph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 84470
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/hgnc_enzyme.zip
 publications:
 - authors:
   - Seal RL

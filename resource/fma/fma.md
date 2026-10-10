@@ -8,31 +8,48 @@ contacts:
   contact_details:
   - contact_type: email
     value: mejino@u.washington.edu
-  label: Onard Mejino
+  - contact_type: github
+    value: Onard
+  label: Jose Leonardo (Onard) Mejino
+  orcid: 0000-0003-2105-2283
 creation_date: '2025-06-25T00:00:00Z'
-description: This is currently a slimmed down version of FMA
+description: The Foundational Model of Anatomy Ontology (FMA) is a reference ontology
+  for the domain of human anatomy.
 domains:
 - anatomy and development
 homepage_url: http://si.washington.edu/projects/fma
 id: fma
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-10-09T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Foundational Model of Anatomy Ontology (subset)
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: Foundational Model of Anatomy Ontology
 products:
 - category: OntologyProduct
-  description: Foundational Model of Anatomy Ontology (subset) in OWL format
+  description: Foundational Model of Anatomy Ontology in OWL format
   format: owl
   id: fma.owl
+  latest_version: 5.1.0
   name: fma.owl
   original_source:
   - relation_type: prov:hadPrimarySource
     source: fma
+  product_file_size: 208047132
   product_url: http://purl.obolibrary.org/obo/fma.owl
   warnings: []
+- category: OntologyProduct
+  description: OWL individuals that pun the FMA classes so the ontology can be
+    queried more easily with SPARQL. Imports fma.owl.
+  format: owl
+  id: fma.puns
+  latest_version: 5.1.0
+  name: FMA Puns (OWL)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  product_file_size: 26457364
+  product_url: http://sig.biostr.washington.edu/share/downloads/fma/release/latest/pun_fma.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -535,6 +552,16 @@ products:
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 publications:
 - authors:
+  - Rosse C
+  - Mejino JL Jr
+  doi: 10.1016/j.jbi.2003.11.007
+  id: https://www.ncbi.nlm.nih.gov/pubmed/14759820
+  journal: J Biomed Inform
+  preferred: true
+  title: 'A reference ontology for biomedical informatics: the Foundational Model
+    of Anatomy'
+  year: '2003'
+- authors:
   - Noy NF
   - Rubin DL
   doi: 10.1016/j.websem.2007.12.001
@@ -566,17 +593,23 @@ taxon:
 ---
 ## Description
 
-This is currently a slimmed down version of FMA
+The Foundational Model of Anatomy Ontology (FMA) is a reference ontology for the
+domain of human anatomy. The OBO Foundry's bespoke OBO-format slim of the FMA has
+been deprecated; the `fma.owl` PURL now resolves to the official FMA release.
+Version 5.1.0 was released in May 2026 from the GitHub repository
+https://github.com/uw-sig/FMA. The release notes for version 5.0.0 describe it as
+the last version released by the Structural Informatics Group before its members
+retired or moved on.
 
 ## Contacts
 
-- Onard Mejino (mejino@u.washington.edu)
+- Jose Leonardo (Onard) Mejino (mejino@u.washington.edu) [ORCID: 0000-0003-2105-2283](https://orcid.org/0000-0003-2105-2283)
 
 ## Products
 
 ### fma.owl
 
-Foundational Model of Anatomy Ontology (subset) in OWL format
+Foundational Model of Anatomy Ontology in OWL format
 
 **URL**: [http://purl.obolibrary.org/obo/fma.owl](http://purl.obolibrary.org/obo/fma.owl)
 
@@ -584,6 +617,7 @@ Foundational Model of Anatomy Ontology (subset) in OWL format
 
 ## Publications
 
+- [A reference ontology for biomedical informatics: the Foundational Model of Anatomy](https://www.ncbi.nlm.nih.gov/pubmed/14759820)
 - [Translating the Foundational Model of Anatomy into OWL](https://www.ncbi.nlm.nih.gov/pubmed/18688289)
 - [The foundational model of anatomy in OWL: Experience and perspectives](https://www.ncbi.nlm.nih.gov/pubmed/18360535)
 - [Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study](https://www.ncbi.nlm.nih.gov/pubmed/16779026)

@@ -1,16 +1,17 @@
 ---
 category: GraphProduct
 compression: zip
-description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+description: PharMeBINet V3 Neo4j database release (Zenodo version published July
+  9, 2026; files dated 2026-07-06).
 format: neo4j
 id: pharmebinet.neo4j
-latest_version: v2
+latest_version: v3
 name: PharMeBINet Neo4j Database
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pharmebinet
-product_file_size: 3847978577
-product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+product_file_size: 8316655668
+product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_26_07_06.zip/content
 secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: adrecs

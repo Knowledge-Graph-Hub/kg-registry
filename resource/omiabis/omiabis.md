@@ -16,7 +16,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/OMIABIS/omiabis-dev
 id: omiabis
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-10-09T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -29,18 +29,55 @@ products:
     format: owl
     id: omiabis.owl
     name: omiabis.owl
-    product_file_size: 109985
+    product_file_size: 989845
     product_url: http://purl.obolibrary.org/obo/omiabis.owl
     original_source:
       - source: omiabis
         relation_type: prov:hadPrimarySource
 repository: https://github.com/OMIABIS/omiabis-dev
-publications: []
+publications:
+  - authors:
+      - Brochhausen M
+      - Fransson MN
+      - Kanaskar NV
+      - Eriksson M
+      - Merino-Martinez R
+      - Hall RA
+      - Norlin L
+      - Kjellqvist S
+      - Hortlund M
+      - Topaloglu U
+      - Hogan WR
+      - Litton JE
+    doi: 10.1186/2041-1480-4-23
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24103726
+    journal: J Biomed Semantics
+    preferred: true
+    title: Developing a semantically rich ontology for the biobank-administration domain
+    year: '2013'
+  - authors:
+      - Norlin L
+      - Fransson MN
+      - Eriksson M
+      - Merino-Martinez R
+      - Anderberg M
+      - Kurtovic S
+      - Litton JE
+    doi: 10.1089/bio.2012.0003
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24849882
+    journal: Biopreserv Biobank
+    title: 'A Minimum Data Set for Sharing Biobank Samples, Information, and Data: MIABIS'
+    year: '2012'
 ---
 
 ## Description
 
 An ontological version of MIABIS (Minimum Information About BIobank data Sharing)
+
+OMIABIS is obsolete in the OBO Foundry: it has been merged into the Ontology for
+Biobanking ([OBIB](../obib/obib.html)). Its development repository has had no
+commits since February 2016. The MIABIS standard itself is maintained by BBMRI-ERIC
+(see [bbmri-eric-directory](../bbmri-eric-directory/bbmri-eric-directory.html)).
 
 ## Contacts
 

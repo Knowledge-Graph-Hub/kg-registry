@@ -4,6 +4,8 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   contact_details:
+  - contact_type: email
+    value: zhan1386@umn.edu
   - contact_type: url
     value: https://github.com/zhang-informatics
   label: Rui Zhang
@@ -12,7 +14,10 @@ description: The integrated DIetary Supplements Knowledge base (iDISK) is a stan
   knowledge base integrating dietary supplement information from multiple authoritative
   sources including ingredients, products, drug interactions, effectiveness, adverse
   effects, and therapeutic uses, represented according to established terminology
-  principles with UMLS and MedDRA mappings.
+  principles with UMLS and MedDRA mappings. The original iDISK 1.0 release was withdrawn
+  in April 2025 when its license for Natural Medicines Comprehensive Database content
+  expired; iDISK 2.0 integrates DSLD, LNHPD, and MSKCC About Herbs and is distributed
+  as CSV files.
 domains:
 - nutrition
 - biomedical
@@ -20,11 +25,11 @@ domains:
 homepage_url: https://doi.org/10.13020/d6bm3v
 id: idisk
 infores_id: idisk
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-10-09T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://conservancy.umn.edu/handle/11299/204783
-  label: Varies
+  id: http://creativecommons.org/licenses/by-sa/3.0/us/
+  label: CC BY-SA 3.0 US
 name: integrated Dietary Supplement Knowledge Base
 products:
 - category: GraphProduct
@@ -189,6 +194,41 @@ products:
   - relation_type: prov:hadPrimarySource
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: Product
+  description: iDISK 2.0 entity files (dietary supplement ingredients, products,
+    drugs, diseases, and signs and symptoms) in CSV format, integrating DSLD, LNHPD,
+    and MSKCC About Herbs.
+  format: csv
+  id: idisk.idisk2-entities
+  name: iDISK 2.0 Entities
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  product_url: https://drive.google.com/drive/folders/10mpvyHbRhhsrylw2o3xToT8RihvSWIA4
+- category: Product
+  description: iDISK 2.0 relationship files (product-ingredient, ingredient-disease,
+    ingredient-drug, and ingredient-symptom) in CSV format.
+  format: csv
+  id: idisk.idisk2-relations
+  name: iDISK 2.0 Relations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  product_url: https://drive.google.com/drive/folders/1XTtb4KKxUXfqG8tZTbvxtwv7IDUHe424
+- category: ProcessProduct
+  description: Code used to build iDISK 1.0 from its source databases, including
+    normalization against UMLS and MedDRA.
+  format: python
+  id: idisk.code
+  name: iDISK Build Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: meddra
+  product_url: https://github.com/jvasilakes/iDISK
 publications:
 - authors:
   - Rubina F Rizvi
@@ -205,7 +245,31 @@ publications:
   preferred: true
   title: 'iDISK: the integrated DIetary Supplements Knowledge base'
   year: '2020'
-repository: https://github.com/zhang-informatics/iDISK
+- authors:
+  - Hou Y
+  - Bishop JR
+  - Liu H
+  - Zhang R
+  doi: 10.2196/67677
+  id: PMID:40106799
+  journal: J Med Internet Res
+  title: 'Improving Dietary Supplement Information Retrieval: Development of a Retrieval-Augmented
+    Generation System With Large Language Models'
+  year: '2025'
+- authors:
+  - Vasilakes J
+  - Bompelli A
+  - Bishop JR
+  - Adam TJ
+  - Bodenreider O
+  - Zhang R
+  doi: 10.1093/jamia/ocaa128
+  id: PMID:32940692
+  journal: J Am Med Inform Assoc
+  title: Assessing the enrichment of dietary supplement coverage in the Unified Medical
+    Language System
+  year: '2020'
+repository: https://github.com/jvasilakes/iDISK
 synonyms:
 - iDISK
 ---
@@ -339,10 +403,14 @@ iDISK integrates information from four authoritative resources:
 
 ## Access and Availability
 
-- **Current Version**: Publicly available at https://doi.org/10.13020/d6bm3v
-- **Source Code**: https://github.com/zhang-informatics/iDISK
-- **Format**: Neo4j database and UMLS-style flat files
-- **License**: Publicly available with permission from Therapeutic Research Center for NMCD content
+- **iDISK 1.0 (withdrawn)**: The DRUM record at https://doi.org/10.13020/d6bm3v was
+  released under CC BY-SA 3.0 US. As of April 2025 its Neo4j and RRF files are no longer
+  available because the license for third-party Natural Medicines Comprehensive Database
+  content expired; only the README is kept as a historical record.
+- **Source Code**: https://github.com/jvasilakes/iDISK
+- **iDISK 2.0**: https://github.com/houyurain/iDISK2.0 links to CSV entity and relationship
+  files integrating DSLD, LNHPD, and MSKCC About Herbs (NMCD is no longer included). It is
+  described in Hou et al. 2025 (J Med Internet Res, doi:10.2196/67677).
 
 ## Integration with iBKH
 

@@ -1,10 +1,11 @@
 ---
 category: Product
-description: Data and content assets published with ReproTox-KG (markdown and supporting
-  materials).
+description: Downloads page listing the ReproTox-KG graph serializations and supporting
+  tables (gene susceptibility scores, predicted placental crossing, birth defect frequencies,
+  phenotype lists, and topology measures).
 format: http
 id: reprotox-kg.data
-name: ReproTox-KG Data Assets
+name: ReproTox-KG Downloads
 original_source:
 - relation_type: prov:hadPrimarySource
   source: reprotox-kg
@@ -12,6 +13,6 @@ original_source:
   source: pubmed
 - relation_type: prov:hadPrimarySource
   source: pubchem
-product_url: https://github.com/MaayanLab/Reprotox-KG/tree/main/markdown
+product_url: https://maayanlab.cloud/reprotox-kg/downloads
 layout: product_detail
 ---

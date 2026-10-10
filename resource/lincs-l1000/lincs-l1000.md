@@ -76,11 +76,17 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: atc
+  - relation_type: prov:hadPrimarySource
     source: bgee
   - relation_type: prov:hadPrimarySource
     source: bindingdb
   - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
     source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: cdc-places
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
@@ -90,6 +96,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
     source: doid
@@ -98,15 +108,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: epa-ucmr
+  - relation_type: prov:hadPrimarySource
+    source: fideo
+  - relation_type: prov:hadPrimarySource
     source: foodb
   - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
     source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: geonames
+  - relation_type: prov:hadPrimarySource
+    source: ghr
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
     source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: interpro
   - relation_type: prov:hadPrimarySource
@@ -118,13 +144,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
     source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
     source: omim
   - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
     source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
@@ -140,11 +174,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: spoke
   - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://spoke.ucsf.edu/data-tools
@@ -536,6 +574,32 @@ products:
     source: uniprot
   - relation_type: prov:wasInfluencedBy
     source: wikipathways
+- category: GraphProduct
+  description: Drug-to-gene up- and down-regulation edges from SigCom LINCS L1000
+    signatures (8,942 nodes, 225,509 edges).
+  format: json
+  id: reprotox-kg.graph.sigcom-lincs
+  name: ReproTox-KG SigCom LINCS Drug-Gene Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 114587395
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_serialization.valid.json
+- category: GraphProduct
+  description: Drug-drug cosine similarity edges computed from LINCS L1000 signatures
+    (4,523 nodes, 20,785 edges).
+  format: json
+  id: reprotox-kg.graph.drug-similarity
+  name: ReproTox-KG LINCS Drug Similarity Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  product_file_size: 15033998
+  product_url: https://s3.amazonaws.com/maayan-kg/reprotox/sigcom_lincs_drug_similarity.valid.json
 publications:
 - authors:
   - Subramanian, A.

@@ -1,6 +1,17 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+contacts:
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: c.koenigs@uni-bielefeld.de
+    label: Cassandra Königs
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.uni-bielefeld.de/
+    label: Bielefeld University
 creation_date: '2026-04-06T00:00:00Z'
 description: PharMeBINet is a heterogeneous pharmacological medical biochemical network that integrates biomedical data sources into a graph for studying drugs, adverse drug reactions, genes, proteins, variants, diseases, and their relationships.
 domains:
@@ -9,11 +20,11 @@ domains:
   - biomedical
 homepage_url: https://pharmebi.net/
 id: pharmebinet
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-10-09T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
+  label: CC BY 4.0 (integrated content retains source licenses)
 name: PharMeBINet
 products:
   - category: GraphicalInterface
@@ -26,11 +37,11 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://pharmebi.net/
   - category: GraphProduct
-    compression: gzip
-    description: PharMeBINet V2 JSON release published on February 6, 2024.
+    compression: zip
+    description: PharMeBINet V3 JSON release (Zenodo version published July 9, 2026; files dated 2026-07-06).
     format: json
     id: pharmebinet.json
-    latest_version: v2
+    latest_version: v3
     name: PharMeBINet JSON Release
     original_source:
       - source: pharmebinet
@@ -138,14 +149,14 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: wikipathways
         relation_type: prov:wasDerivedFrom
-    product_file_size: 1942958027
-    product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+    product_file_size: 3666110270
+    product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_json_26_07_06.zip/content
   - category: GraphProduct
     compression: zip
-    description: PharMeBINet V2 TSV release published on February 6, 2024.
+    description: PharMeBINet V3 TSV release (Zenodo version published July 9, 2026; files dated 2026-07-06).
     format: tsv
     id: pharmebinet.tsv
-    latest_version: v2
+    latest_version: v3
     name: PharMeBINet TSV Release
     original_source:
       - source: pharmebinet
@@ -253,14 +264,14 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: wikipathways
         relation_type: prov:wasDerivedFrom
-    product_file_size: 1922614551
-    product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+    product_file_size: 3772040437
+    product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_tsv_26_07_06.zip/content
   - category: GraphProduct
     compression: zip
-    description: PharMeBINet V2 GraphML release published on February 6, 2024.
+    description: PharMeBINet V3 GraphML release (Zenodo version published July 9, 2026; files dated 2026-07-06).
     format: mixed
     id: pharmebinet.graphml
-    latest_version: v2
+    latest_version: v3
     name: PharMeBINet GraphML Release
     original_source:
       - source: pharmebinet
@@ -368,14 +379,14 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: wikipathways
         relation_type: prov:wasDerivedFrom
-    product_file_size: 2027519087
-    product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+    product_file_size: 4084011877
+    product_url: https://zenodo.org/api/records/21276722/files/PharMeBiNet_graphml_26_07_06.zip/content
   - category: GraphProduct
     compression: zip
-    description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+    description: PharMeBINet V3 Neo4j database release (Zenodo version published July 9, 2026; files dated 2026-07-06).
     format: neo4j
     id: pharmebinet.neo4j
-    latest_version: v2
+    latest_version: v3
     name: PharMeBINet Neo4j Database
     original_source:
       - source: pharmebinet
@@ -483,15 +494,15 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: wikipathways
         relation_type: prov:wasDerivedFrom
-    product_file_size: 3847978577
-    product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+    product_file_size: 8316655668
+    product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_26_07_06.zip/content
   - category: GraphProduct
     compression: zip
-    description: PharMeBINet V2 Neo4j dump release published on February 6, 2024.
+    description: PharMeBINet V3 Neo4j dump release (Zenodo version published July 9, 2026; files dated 2026-07-06).
     dump_format: neo4j
     format: neo4j
     id: pharmebinet.neo4j.dump
-    latest_version: v2
+    latest_version: v3
     name: PharMeBINet Neo4j Dump
     original_source:
       - source: pharmebinet
@@ -599,8 +610,8 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: wikipathways
         relation_type: prov:wasDerivedFrom
-    product_file_size: 3598325722
-    product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+    product_file_size: 8039662464
+    product_url: https://zenodo.org/api/records/21276722/files/PharMeBINet_dump_26_07_06.zip/content
   - category: DocumentationProduct
     description: Data sources documentation page describing the upstream resources integrated into PharMeBINet.
     format: http
@@ -621,9 +632,19 @@ publications:
   preferred: true
   title: The heterogeneous pharmacological medical biochemical network PharMeBINet
   year: '2022'
+- authors:
+  - Cassandra Königs
+  - Theresa Dietrich
+  doi: 10.3205/mibe000243
+  id: https://doi.org/10.3205/mibe000243
+  journal: GMS Medizinische Informatik, Biometrie und Epidemiologie
+  title: A web-based pathway enrichment analysis module for the PharMeBINet database
+  year: '2023'
 repository: https://github.com/ckoenigs/PharMeBINet
 ---
 
 # PharMeBINet
 
 PharMeBINet is a large heterogeneous biomedical knowledge graph centered on pharmacology and adverse drug reaction analysis. The project integrates many biomedical resources into a graph database and provides both a public web interface and versioned releases in JSON, TSV, GraphML, and Neo4j formats for downstream analysis.
+
+Version 3 integrates 51 data sources. Its latest Zenodo deposit (doi:10.5281/zenodo.21276722, July 2026) requires Neo4j 5.26.4 or higher for the database files. Newly generated content such as the graph structure, mappings, and derived edges is licensed CC BY 4.0, while content taken from each source keeps that source's license; every node and edge records its `resources` and `licenses`.

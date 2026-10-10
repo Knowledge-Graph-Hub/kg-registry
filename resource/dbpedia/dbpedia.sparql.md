@@ -6,8 +6,8 @@ id: dbpedia.sparql
 is_public: true
 name: DBpedia SPARQL Endpoint
 original_source:
-  - source: dbpedia
-    relation_type: prov:hadPrimarySource
-product_url: http://dbpedia.org/sparql
+- relation_type: prov:hadPrimarySource
+  source: dbpedia
+product_url: https://dbpedia.org/sparql
 layout: product_detail
 ---
