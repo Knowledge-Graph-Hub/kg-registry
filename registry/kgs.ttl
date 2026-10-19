@@ -735,7 +735,7 @@ kgr:aop-db a schema1:Aggregator ;
     dcterms:isReferencedBy <doi:10.1016/j.taap.2018.02.006>,
         <doi:10.1038/s41597-021-00962-3> ;
     dcterms:license <https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -758,7 +758,7 @@ kgr:aop-wiki a schema1:DataSource ;
     dcterms:hasVersion "2.8" ;
     dcterms:identifier "aop-wiki" ;
     dcterms:license <https://aopwiki.org/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aop-db.data,
         kgr:aop-db.sparql,
@@ -798,7 +798,7 @@ kgr:aopwiki-rdf a schema1:KnowledgeGraph ;
         <doi:10.5281/zenodo.13353286> ;
     dcterms:language "en" ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:aopwiki-rdf.converter,
         kgr:aopwiki-rdf.dashboard,
         kgr:aopwiki-rdf.grlc-api,
@@ -1746,7 +1746,7 @@ kgr:biobricks-aopwiki a schema1:KnowledgeGraph ;
     dcterms:description "BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways from the AOP-Wiki." ;
     dcterms:identifier "biobricks-aopwiki" ;
     dcterms:license <https://aopwiki.org/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-aopwiki.graph,
         kgr:biobricks-aopwiki.sparql,
         kgr:biobricks-aopwiki.tpf ;
@@ -1763,7 +1763,7 @@ kgr:biobricks-ice a schema1:KnowledgeGraph ;
     dcterms:description "BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph for cheminformatics and chemical safety data from EPA's CompTox database." ;
     dcterms:identifier "biobricks-ice" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-ice.graph,
         kgr:biobricks-ice.sparql,
         kgr:biobricks-ice.tpf ;
@@ -1814,7 +1814,7 @@ kgr:biobricks-tox21 a schema1:KnowledgeGraph ;
     dcterms:description "BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening data." ;
     dcterms:identifier "biobricks-tox21" ;
     dcterms:license <https://www.usa.gov/government-works> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-tox21.graph,
         kgr:biobricks-tox21.sparql,
         kgr:biobricks-tox21.tpf ;
@@ -1832,7 +1832,7 @@ kgr:biobricks-toxcast a schema1:KnowledgeGraph ;
     dcterms:description "BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput screening data." ;
     dcterms:identifier "biobricks-toxcast" ;
     dcterms:license <https://www.epa.gov/privacy/privacy-and-security-notice> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-toxcast.graph,
         kgr:biobricks-toxcast.sparql,
         kgr:biobricks-toxcast.tpf ;
@@ -5105,6 +5105,32 @@ kgr:complexportal a schema1:DataSource ;
     foaf:homepage <https://www.ebi.ac.uk/complexportal/> ;
     foaf:maker kgr:ebi .
 
+kgr:comptox-dashboard a schema1:Aggregator ;
+    rdfs:label "CompTox Chemicals Dashboard" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The CompTox Chemicals Dashboard (formerly the Chemistry Dashboard) is a US Environmental Protection Agency (EPA) web application that integrates chemistry, toxicity, and exposure information for over one million chemicals, with over 300 chemical lists based on structure or category. Built on the DSSTox chemical database, it brings together physicochemical properties, environmental fate and transport, exposure and use data, in vivo hazard data (ToxValDB, ToxRefDB), in vitro bioactivity from the ToxCast and Tox21 high-throughput screening programs (invitrodb), and high-throughput toxicokinetic (HTTK) ADME/IVIVE predictions. Its data and models support chemical prioritization and efforts to reduce animal use in chemical testing through new approach methodologies (NAMs)." ;
+    dcterms:identifier "comptox-dashboard" ;
+    dcterms:isReferencedBy <https://doi.org/10.1186/s13321-017-0247-6> ;
+    dcterms:license "U.S. Government Work (public domain)" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:comptox-dashboard.ctx-api,
+        kgr:comptox-dashboard.downloads,
+        kgr:comptox-dashboard.portal,
+        kgr:comptox-dashboard.release-notes,
+        kgr:echemportal.portal ;
+    schema1:name "CompTox Chemicals Dashboard" ;
+    skos:altLabel "CompTox Chemistry Dashboard" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "drug discovery",
+        "environment",
+        "environmental exposure",
+        "high-throughput screening",
+        "public health",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://comptox.epa.gov/dashboard> .
+
 kgr:connections-hypothesis-kp a schema1:KnowledgeGraph ;
     rdfs:label "Connections Hypothesis KP" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -5902,6 +5928,23 @@ kgr:date a schema1:DataSource ;
         "systems biology" ;
     adms:status "Inactive" ;
     foaf:homepage <https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip> .
+
+kgr:db-alm a schema1:DataSource ;
+    rdfs:label "DB-ALM (EURL ECVAM DataBase service on ALternative Methods to animal experimentation)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The EURL ECVAM DataBase service on ALternative Methods to animal experimentation (DB-ALM) is a collection of method summaries and standardised protocols for alternative methods in toxicology and biomedical science, maintained by the EU Reference Laboratory for Alternatives to Animal Testing (EURL ECVAM) at the European Commission Joint Research Centre (JRC). It covers methods submitted to EURL ECVAM for validation and methods identified through literature reviews and end users. The former interactive online database has been replaced by a versioned open dataset published through the JRC Data Catalogue, with a browsable static index of documents and a complete downloadable archive." ;
+    dcterms:identifier "db-alm" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:db-alm.download,
+        kgr:db-alm.online ;
+    schema1:name "DB-ALM (EURL ECVAM DataBase service on ALternative Methods to animal experimentation)" ;
+    skos:altLabel "DB-ALM",
+        "DBALM" ;
+    skos:inScheme "biomedical",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://data.jrc.ec.europa.eu/dataset/b7597ada-148d-4560-9079-ab0a5539cad3> .
 
 kgr:dbgap a schema1:DataSource ;
     rdfs:label "dbGaP" ;
@@ -7391,9 +7434,12 @@ kgr:dsstoxdb a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1186/s13321-017-0247-6>,
         <https://pubmed.ncbi.nlm.nih.gov/33426407> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
+        kgr:comptox-dashboard.ctx-api,
+        kgr:comptox-dashboard.downloads,
+        kgr:comptox-dashboard.portal,
         kgr:dsstoxdb.api,
         kgr:dsstoxdb.chemical-api,
         kgr:dsstoxdb.dashboard,
@@ -7517,6 +7563,26 @@ kgr:ecao a schema1:Ontology ;
     skos:inScheme "anatomy and development" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/echinoderm-ontology/ecao_ontology> .
+
+kgr:echemportal a schema1:Aggregator ;
+    rdfs:label "eChemPortal (The Global Portal to Information on Chemical Substances)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "eChemPortal (The Global Portal to Information on Chemical Substances) is a free public portal run by the Organisation for Economic Co-operation and Development (OECD), developed in collaboration with the European Chemicals Agency (ECHA), that provides simultaneous search across chemical hazard and risk information prepared for government chemical programmes at national, regional, and international levels. It covers existing and new industrial chemicals, pesticides, and biocides, and supports search by substance name or number, by chemical property and endpoint data (structured according to the OECD Harmonised Templates), and by GHS or national hazard classification, linking to about 34 participating data sources." ;
+    dcterms:identifier "echemportal" ;
+    dcterms:isReferencedBy <https://doi.org/10.1016/B978-0-12-824315-2.01159-3> ;
+    dcterms:license <https://www.echemportal.org/echemportal/page/12> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:echemportal.portal,
+        kgr:echemportal.sources ;
+    schema1:name "eChemPortal (The Global Portal to Information on Chemical Substances)" ;
+    skos:altLabel "Global Portal to Information on Chemical Substances",
+        "eChemPortal" ;
+    skos:inScheme "chemistry and biochemistry",
+        "environment",
+        "public health",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.echemportal.org/> .
 
 kgr:ecid a schema1:DataSource ;
     rdfs:label "ECID" ;
@@ -12446,6 +12512,30 @@ kgr:hippie a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/index.php> .
 
+kgr:hipsci a schema1:DataSource ;
+    rdfs:label "Human Induced Pluripotent Stem Cells Initiative (HipSci)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Human Induced Pluripotent Stem Cells Initiative (HipSci) generated a large, systematically characterised reference panel of human induced pluripotent stem cell (iPSC) lines from hundreds of phenotypically healthy donors and from cohorts of donors with inherited rare diseases, using a standardised derivation pipeline. Each line is profiled with assays including genotyping arrays, expression arrays, methylation arrays, RNA-seq, exome sequencing, proteomics mass spectrometry and high-content cellular phenotyping, with whole-genome sequencing for a subset. The data are deposited in EMBL-EBI archives (ENA, EGA, ArrayExpress and PRIDE), and the cell lines are available from the ECACC and EBiSC cell banks. The project was funded by the Wellcome Trust and the Medical Research Council, with partners including the Wellcome Sanger Institute, EMBL-EBI, King's College London, the University of Dundee, the University of Cambridge and UCL." ;
+    dcterms:identifier "hipsci" ;
+    dcterms:isReferencedBy <https://doi.org/10.1038/nature22403>,
+        <https://doi.org/10.1093/nar/gkw928> ;
+    dcterms:license <https://www.hipsci.org/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:hipsci.cell-line-browser,
+        kgr:hipsci.data-browser ;
+    schema1:name "Human Induced Pluripotent Stem Cells Initiative (HipSci)" ;
+    skos:inScheme "biological systems",
+        "biomedical",
+        "cell biology",
+        "epigenomics",
+        "gene expression profiling",
+        "genetic variation",
+        "genomics",
+        "proteomics",
+        "rare disease" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.hipsci.org/> .
+
 kgr:hmdb a schema1:Aggregator ;
     rdfs:label "Human Metabolome Database" ;
     dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
@@ -12887,6 +12977,26 @@ kgr:hprd a schema1:Aggregator ;
     adms:status "Inactive" ;
     foaf:homepage <http://www.hprd.org/> .
 
+kgr:hpscreg a schema1:DataSource ;
+    rdfs:label "Human Pluripotent Stem Cell Registry (hPSCreg)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Human Pluripotent Stem Cell Registry (hPSCreg) is a global public registry and data portal for human embryonic stem cell (hESC) and human induced pluripotent stem cell (hiPSC) lines. Registered lines receive a standard name and unique identifier, and their records cover donor and derivation information, ethical provenance and consent, culture conditions, genetic and characterization data, and links to other databases such as BioSamples. Lines are checked by curators before release, and hPSCreg issues certificates of ethical provenance and pluripotency. The registry also holds research project registrations and a database of clinical studies that use hPSC-derived cells. It was founded with European Commission funding and is operated by the Fraunhofer Institute for Biomedical Engineering (IBMT)." ;
+    dcterms:identifier "hpscreg" ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkv963>,
+        <https://doi.org/10.1111/cpr.13238> ;
+    dcterms:license <https://hpscreg.eu/terms> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:hpscreg.names-api,
+        kgr:hpscreg.portal ;
+    schema1:name "Human Pluripotent Stem Cell Registry (hPSCreg)" ;
+    skos:inScheme "biological systems",
+        "biomedical",
+        "cell biology",
+        "clinical",
+        "clinical trials" ;
+    adms:status "Active" ;
+    foaf:homepage <https://hpscreg.eu/> .
+
 kgr:hra a schema1:DataModel ;
     rdfs:label "Human Reference Atlas" ;
     dcterms:created "2025-11-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -13066,6 +13176,30 @@ kgr:htridb a schema1:DataSource ;
     schema1:name "Htridb" ;
     skos:inScheme "stub" ;
     adms:status "Active" .
+
+kgr:httk a schema1:DataSource ;
+    rdfs:label "httk (High-Throughput Toxicokinetics)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "High-Throughput Toxicokinetics (httk) is a US EPA R package that provides free, open-source data and models for toxicokinetics (TK). It pairs chemical-specific in vitro measurements and in silico predictions, available for thousands of chemicals, multiple exposure routes, and several species, with generic physiologically based (PBTK) and empirical TK models. The package supports traditional dosimetry and in vitro to in vivo extrapolation (IVIVE), including reverse dosimetry that converts high-throughput screening concentrations (e.g., from ToxCast and Tox21) into equivalent real-world exposures." ;
+    dcterms:identifier "httk" ;
+    dcterms:isReferencedBy <https://doi.org/10.18637/jss.v079.i04> ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:comptox-dashboard.downloads,
+        kgr:comptox-dashboard.portal,
+        kgr:httk.package,
+        kgr:httk.repository ;
+    schema1:name "httk (High-Throughput Toxicokinetics)" ;
+    doap:repository <https://github.com/USEPA/CompTox-ExpoCast-httk> ;
+    skos:inScheme "chemistry and biochemistry",
+        "environment",
+        "environmental exposure",
+        "information technology",
+        "pharmacology",
+        "software",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://CRAN.R-project.org/package=httk> .
 
 kgr:hubmap a schema1:Aggregator ;
     rdfs:label "HuBMAP" ;
@@ -13449,7 +13583,7 @@ kgr:ice a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.tiv.2020.104916>,
         <https://doi.org/10.3389/ftox.2022.987848> ;
     dcterms:license "U.S. Government Work (public domain)" ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-ice.graph,
         kgr:ice.data ;
     schema1:name "ICE (Integrated Chemical Environment)" ;
@@ -14597,6 +14731,25 @@ kgr:jpost a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://jpostdb.org/> .
 
+kgr:jrc-qsar-model-database a schema1:DataSource ;
+    rdfs:label "JRC QSAR Model Database" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The JRC QSAR Model Database is an inventory of (Q)SAR models submitted to the EU Reference Laboratory for Alternatives to Animal Testing (EURL ECVAM) at the European Commission Joint Research Centre (JRC), each documented in the harmonised QSAR Model Reporting Format (QMRF), which is structured according to the OECD (Q)SAR validation principles. It was intended to help identify valid (Q)SARs for regulatory use, particularly under REACH. The database is now a historical archive published as a static dataset in the JRC Data Catalogue; its most recent QMRF updates date from 2019." ;
+    dcterms:identifier "jrc-qsar-model-database" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:jrc-qsar-model-database.download,
+        kgr:jrc-qsar-model-database.index,
+        kgr:jrc-qsar-model-database.qmrf-xml ;
+    schema1:name "JRC QSAR Model Database" ;
+    skos:altLabel "JRC QSAR Model Database (QMRF Inventory)",
+        "QMRF Inventory" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "toxicology" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://data.jrc.ec.europa.eu/dataset/e4ef8d13-d743-4524-a6eb-80e18b58cba4> .
+
 kgr:jws-online a schema1:DataSource ;
     rdfs:label "JWS Online" ;
     dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -14963,7 +15116,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-10T18:44:49+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T21:23:25+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -17652,7 +17805,7 @@ kgr:mps-db a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1039/c9lc01047e>,
         <doi:10.1089/aivt.2016.0011> ;
     dcterms:license <https://doi.org/10.1039/c9lc01047e> ;
-    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mps-db.eveanalytics,
         kgr:mps-db.portal ;
     schema1:name "Microphysiology Systems Database" ;
@@ -18136,7 +18289,7 @@ kgr:namsnetwork a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "NAMs.network is the first database of regulatory-relevant New Approach Methodologies (NAMs) for assessing the safety of materials and chemicals. Given the ethical, economic, and time-related challenges associated with animal testing, as well as emerging bans on such methods in the EU, it is paramount to develop and validate alternative in silico, in chemico, in vitro, and ex vivo approaches. NAMs.network provides state-of-the-art knowledge on different NAMs for materials and chemical safety assessment." ;
     dcterms:identifier "namsnetwork" ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:namsnetwork.portal ;
     schema1:name "NAMs Network" ;
     skos:inScheme "chemistry and biochemistry",
@@ -20020,6 +20173,28 @@ kgr:occo a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/Occupation-Ontology/OccO> .
 
+kgr:oecd-qsar-toolbox a schema1:Aggregator ;
+    rdfs:label "OECD QSAR Toolbox" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The OECD QSAR Toolbox is a free software application, owned by the Organisation for Economic Co-operation and Development (OECD) and the European Chemicals Agency (ECHA) and developed by the Laboratory of Mathematical Chemistry (LMC, Bourgas, Bulgaria), that supports transparent and reproducible chemical hazard assessment. It bundles about 63 databases with experimental data for more than 140,000 chemical structures, together with profilers, metabolism simulators, and QSAR models, to find structurally and mechanistically defined analogues, build and assess chemical categories, and fill data gaps by read-across and trend analysis as an alternative to animal testing." ;
+    dcterms:identifier "oecd-qsar-toolbox" ;
+    dcterms:isReferencedBy <https://doi.org/10.1007/978-1-4939-7899-1_2>,
+        <https://doi.org/10.1080/1062936X.2015.1136680> ;
+    dcterms:license <https://qsartoolbox.org/license-agreement/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:oecd-qsar-toolbox.databases,
+        kgr:oecd-qsar-toolbox.software,
+        kgr:oecd-qsar-toolbox.webapi ;
+    schema1:name "OECD QSAR Toolbox" ;
+    skos:altLabel "(Q)SAR Application Toolbox",
+        "QSAR Toolbox" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "environment",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://qsartoolbox.org/> .
+
 kgr:offsides a schema1:DataSource ;
     rdfs:label "OFFSIDES" ;
     dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
@@ -20801,6 +20976,27 @@ kgr:open-english-wordnet a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://en-word.net/> .
 
+kgr:open-systems-pharmacology a schema1:DataSource ;
+    rdfs:label "Open Systems Pharmacology (OSP)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Open Systems Pharmacology (OSP) is an open-source, community-governed platform for physiologically based pharmacokinetic (PBPK) and quantitative systems pharmacology (QSP) modeling. Its OSP Suite comprises PK-Sim, for whole-body PBPK modeling, and MoBi, for multiscale physiological modeling and model extension, along with the ospsuite R package and reporting tools. The project also maintains the OSP PBPK Model Library, a set of released PBPK models for individual compounds, including small-molecule drugs and antibodies, each with an evaluation report and a PK-Sim project file, and qualification documents for the suite. The OSP management team includes members from pharmaceutical companies and academic and service organizations." ;
+    dcterms:identifier "open-systems-pharmacology" ;
+    dcterms:isReferencedBy <https://doi.org/10.1002/psp4.12473> ;
+    dcterms:license <https://github.com/Open-Systems-Pharmacology/Suite/blob/master/LICENSE> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:open-systems-pharmacology.docs,
+        kgr:open-systems-pharmacology.ospsuite-r,
+        kgr:open-systems-pharmacology.pbpk-model-library,
+        kgr:open-systems-pharmacology.suite ;
+    schema1:name "Open Systems Pharmacology (OSP)" ;
+    skos:inScheme "biomedical",
+        "drug interactions",
+        "information technology",
+        "pharmacology",
+        "software" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.open-systems-pharmacology.org/> .
+
 kgr:open-tggates a schema1:DataSource ;
     rdfs:label "Open TG-GATEs" ;
     dcterms:created "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -20808,7 +21004,7 @@ kgr:open-tggates a schema1:DataSource ;
     dcterms:identifier "open-tggates" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gku955> ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/2.1/jp/> ;
-    dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10116>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:open-tggates.all-attributes,
@@ -21077,6 +21273,28 @@ kgr:opentargets a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://www.opentargets.org/> .
 
+kgr:opera a schema1:DataSource ;
+    rdfs:label "OPERA (OPEn structure-activity/property Relationship App)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "OPERA (OPEn structure-activity/property Relationship App) is a free and open-source, open-data suite of QSAR models that predicts physicochemical properties, environmental fate, ADME/toxicokinetic parameters and toxicity endpoints for chemicals, together with an applicability domain and accuracy assessment for each prediction. Endpoints include logP, logD, pKa, water solubility, melting and boiling point, vapor pressure, Henry's law constant, bioconcentration factor, biodegradation, soil adsorption (Koc), hepatic intrinsic clearance, plasma fraction unbound, Caco-2 permeability, estrogen and androgen receptor activity (CERAPP and CoMPARA consensus models) and acute oral systemic toxicity (CATMoS). The models were built following OECD principles for QSAR validation and are developed through a collaboration between NIEHS NICEATM and the U.S. EPA. OPERA runs as a command-line or graphical application for Windows and Linux, and its predictions are also served through the EPA CompTox Chemicals Dashboard and the NICEATM Integrated Chemical Environment (ICE)." ;
+    dcterms:identifier "opera" ;
+    dcterms:isReferencedBy <https://doi.org/10.1186/s13321-018-0263-1>,
+        <https://doi.org/10.1186/s13321-024-00814-3> ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:opera.application,
+        kgr:opera.repository ;
+    schema1:name "OPERA (OPEn structure-activity/property Relationship App)" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "environment",
+        "information technology",
+        "machine learning",
+        "pharmacology",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/NIEHS/OPERA> .
+
 kgr:opl a schema1:Ontology ;
     rdfs:label "Ontology for Parasite LifeCycle" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -21227,7 +21445,7 @@ kgr:organoiddb a schema1:DataSource ;
     dcterms:identifier "organoiddb" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/36271792/> ;
     dcterms:license <http://www.inbirg.com/organoid_db/> ;
-    dcterms:modified "2026-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:organoiddb.all-organoid-samples,
         kgr:organoiddb.general-samples,
         kgr:organoiddb.organoid-specificity-samples,
@@ -21904,7 +22122,7 @@ kgr:pbpko a schema1:Ontology ;
     dcterms:identifier "pbpko" ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.toxlet.2024.07.382> ;
     dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:pbpko.kg-bioportal,
         kgr:pbpko.owl ;
     schema1:name "Physiologically-Based Pharmacokinetic Ontology" ;
@@ -24131,8 +24349,10 @@ kgr:pubchem a schema1:DataSource ;
         kgr:biomarker.bkg.nodes.compound,
         kgr:chemid.pubchem-guide,
         kgr:chemid.pubchem-source,
+        kgr:comptox-dashboard.portal,
         kgr:drugshot.drugrif,
         kgr:dsstoxdb.downloads,
+        kgr:echemportal.portal,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
         kgr:foodb.data.mysql,
@@ -26098,6 +26318,28 @@ kgr:sepio a schema1:Ontology ;
         "general" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/monarch-initiative/SEPIO-ontology> .
+
+kgr:seqapass a schema1:DataSource ;
+    rdfs:label "SeqAPASS (Sequence Alignment to Predict Across Species Susceptibility)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Sequence Alignment to Predict Across Species Susceptibility (SeqAPASS) is an online US EPA screening tool for extrapolating chemical toxicity information from data-rich model organisms (e.g., human, mouse, rat, zebrafish) to thousands of non-target species. Many chemicals act through known protein targets. Using protein sequence and structure data from the NCBI protein database, SeqAPASS compares amino acid sequence and protein structure similarity across species to predict whether those targets are present, and so whether the species are likely to be susceptible. Version 8 can also generate protein structures across species and report metrics on their quality." ;
+    dcterms:identifier "seqapass" ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/toxsci/kfw119>,
+        <https://doi.org/10.1093/toxsci/kfy186> ;
+    dcterms:license "U.S. Government Work (public domain)" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:seqapass.app,
+        kgr:seqapass.user-guide ;
+    schema1:name "SeqAPASS (Sequence Alignment to Predict Across Species Susceptibility)" ;
+    skos:inScheme "ecology",
+        "environment",
+        "genomics",
+        "molecular evolution",
+        "protein structure",
+        "proteomics",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.epa.gov/comptox-tools/sequence-alignment-predict-across-species-susceptibility-seqapass-resource-hub> .
 
 kgr:service-kp a schema1:KnowledgeGraph ;
     rdfs:label "Service KP" ;
@@ -28264,8 +28506,9 @@ kgr:tox21 a schema1:DataSource ;
     dcterms:identifier "tox21" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/23603828> ;
     dcterms:license <https://www.usa.gov/government-works> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-tox21.graph,
+        kgr:comptox-dashboard.portal,
         kgr:tox21.data ;
     schema1:name "Tox21 (Toxicology in the 21st Century)" ;
     skos:inScheme "biomedical",
@@ -28283,9 +28526,12 @@ kgr:toxcast a schema1:DataSource ;
     dcterms:description "ToxCast (US EPA Toxicity Forecaster) is a high-throughput screening program generating bioactivity profiles for thousands of environmental chemicals across diverse in vitro assays to prioritize substances for hazard characterization, integrate exposure and pathway information, and support predictive toxicology." ;
     dcterms:identifier "toxcast" ;
     dcterms:license <https://www.epa.gov/privacy/privacy-and-security-notice> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:aop-db.data,
         kgr:biobricks-toxcast.graph,
+        kgr:comptox-dashboard.ctx-api,
+        kgr:comptox-dashboard.downloads,
+        kgr:comptox-dashboard.portal,
         kgr:toxcast.api,
         kgr:toxcast.downloads,
         kgr:toxcast.portal ;
@@ -28306,7 +28552,7 @@ kgr:toxin a schema1:KnowledgeGraph ;
     dcterms:identifier "toxin" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/database/baae121> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-05T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:toxin.web ;
     schema1:name "TOXIN" ;
@@ -28315,6 +28561,51 @@ kgr:toxin a schema1:KnowledgeGraph ;
         "toxicology" ;
     adms:status "Active" ;
     foaf:homepage <https://toxin-search.netlify.app/> .
+
+kgr:toxrefdb a schema1:DataSource ;
+    rdfs:label "ToxRefDB (Toxicity Reference Database)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Toxicity Reference Database (ToxRefDB) is a US EPA database of in vivo animal toxicity study data from thousands of guideline or guideline-like studies covering over 1,000 chemicals. Study designs, doses, treatment-related effects, and endpoints are recorded with a controlled vocabulary, making the data structured and computable. ToxRefDB supports retrospective and predictive toxicology analyses, including the validation and benchmarking of in vitro high-throughput screening and other new approach methodologies (NAMs)." ;
+    dcterms:identifier "toxrefdb" ;
+    dcterms:isReferencedBy <https://doi.org/10.1016/j.reprotox.2019.07.012>,
+        <https://doi.org/10.3389/ftox.2023.1260305> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:comptox-dashboard.downloads,
+        kgr:comptox-dashboard.portal,
+        kgr:toxrefdb.download,
+        kgr:toxrefdb.repository,
+        kgr:toxvaldb.download,
+        kgr:toxvaldb.main ;
+    schema1:name "ToxRefDB (Toxicity Reference Database)" ;
+    doap:repository <https://github.com/USEPA/CompTox-ToxRefDB> ;
+    skos:inScheme "chemistry and biochemistry",
+        "public health",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data> .
+
+kgr:toxvaldb a schema1:Aggregator ;
+    rdfs:label "ToxValDB (Toxicity Values Database)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The US EPA Toxicity Values Database (ToxValDB) is a large compilation of human health-relevant in vivo toxicology data and risk assessment values, covering both in vivo toxicity experiment results and derived toxicity and guideline values. It was created because consistently annotated, computable toxicology data were needed to develop and validate new approach methodologies (NAMs). ToxValDB has two components. ToxValDB Stage keeps data close to each source's structure and terminology, and main ToxValDB maps all source data to a consistent structure and set of vocabularies. Version 9.7.0 contains 249,071 records covering 41,855 chemicals from 51 sources." ;
+    dcterms:identifier "toxvaldb" ;
+    dcterms:isReferencedBy <https://doi.org/10.1016/j.comtox.2025.100365> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:comptox-dashboard.ctx-api,
+        kgr:comptox-dashboard.downloads,
+        kgr:comptox-dashboard.portal,
+        kgr:toxvaldb.download,
+        kgr:toxvaldb.main,
+        kgr:toxvaldb.stage ;
+    schema1:name "ToxValDB (Toxicity Values Database)" ;
+    doap:repository <https://github.com/USEPA/toxvaldbmain> ;
+    skos:inScheme "chemistry and biochemistry",
+        "public health",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data> .
 
 kgr:trans a schema1:Ontology ;
     rdfs:label "Pathogen Transmission Ontology" ;
@@ -28511,6 +28802,21 @@ kgr:try a schema1:DataSource ;
         "plants" ;
     adms:status "Active" ;
     foaf:homepage <https://www.try-db.org/TryWeb/Home.php> .
+
+kgr:tsar a schema1:DataSource ;
+    rdfs:label "TSAR (Tracking System for Alternative methods towards Regulatory acceptance)" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "TSAR (EURL ECVAM Tracking System for Alternative methods towards Regulatory acceptance) is a database maintained by the European Commission Joint Research Centre (JRC) that tracks the progress of alternative test methods for chemicals and biological agents such as vaccines toward recognition for regulatory use. For each method it records the submission, validation, peer review, recommendation, and regulatory acceptance (including international standards such as OECD Test Guidelines) stages, with links to supporting documents where available. It covers methods validated by governmental organisations affiliated with the International Cooperation on Alternative Test Methods (ICATM)." ;
+    dcterms:identifier "tsar" ;
+    dcterms:license <https://commission.europa.eu/legal-notice_en> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:tsar.about,
+        kgr:tsar.test-methods ;
+    schema1:name "TSAR (Tracking System for Alternative methods towards Regulatory acceptance)" ;
+    skos:altLabel "TSAR" ;
+    skos:inScheme "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://tsar.jrc.ec.europa.eu/> .
 
 kgr:ttd a schema1:Aggregator ;
     rdfs:label "Therapeutic Target Database" ;
@@ -33550,6 +33856,11 @@ kgr:complexportal.zebrafish.complextab a schema1:Product ;
     dcterms:description "Zebrafish complexes dataset from Complex Portal in ComplexTAB format" ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7955.tsv> .
 
+kgr:comptox-dashboard.release-notes a schema1:DocumentationProduct ;
+    rdfs:label "CompTox Chemicals Dashboard Release Notes" ;
+    dcterms:description "Release notes for the CompTox Chemicals Dashboard, listing feature updates and the versions of underlying data sources (e.g., ToxValDB, ToxRefDB, invitrodb, httk) loaded in each release." ;
+    schema1:url <https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-release-notes> .
+
 kgr:connections-hypothesis-kp.code a schema1:ProcessProduct ;
     rdfs:label "Connections Hypothesis KP Source Code" ;
     dcterms:description "Source code for the Connections Hypothesis Provider API implementation." ;
@@ -33973,6 +34284,16 @@ kgr:darwins-ark.website a schema1:GraphicalInterface ;
     rdfs:label "Darwin's Ark website" ;
     dcterms:description "The Darwin's Ark website, where owners enroll dogs, complete behavioral surveys, and browse project results." ;
     schema1:url <https://darwinsark.org/> .
+
+kgr:db-alm.download a schema1:Product ;
+    rdfs:label "DB-ALM Dataset Download" ;
+    dcterms:description "Complete downloadable DB-ALM dataset archive (latest release) from the JRC open data repository, containing the method summaries, protocols, and supporting documents for local use." ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EURL-ECVAM/datasets/DBALM/LATEST/downloadable/> .
+
+kgr:db-alm.online a schema1:GraphicalInterface ;
+    rdfs:label "DB-ALM Online Index" ;
+    dcterms:description "Browsable static index of DB-ALM documents (method summaries, protocols, and EU project descriptions), filterable by topic area, models and strategies, biological endpoints, experimental systems, and regulatory information, with links to the individual PDF documents." ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EURL-ECVAM/datasets/DBALM/LATEST/online/dbalm.html> .
 
 kgr:dbgap.advanced-search a schema1:GraphicalInterface ;
     rdfs:label "dbGaP Advanced Search" ;
@@ -34801,6 +35122,11 @@ kgr:ecao.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "ECAO KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of The Echinoderm Anatomy and Development Ontology (ECAO), produced by KG-Bioportal from the BioPortal submission. The archive contains ECAO_nodes.tsv and ECAO_edges.tsv." ;
     schema1:url <https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECAO.tar.gz> .
+
+kgr:echemportal.sources a schema1:DocumentationProduct ;
+    rdfs:label "eChemPortal Participating Sources" ;
+    dcterms:description "List of eChemPortal participating data sources, indicating which provide chemical property data and which provide classification data, with links to each source." ;
+    schema1:url <https://www.echemportal.org/echemportal/page/2> .
 
 kgr:ecid.bloodexposome.data a schema1:Product ;
     rdfs:label "Blood Exposome Database" ;
@@ -37663,6 +37989,16 @@ kgr:hippie.portal a schema1:Product ;
     dcterms:description "HIPPIE portal for human protein-protein interaction reference data." ;
     schema1:url <http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/index.php> .
 
+kgr:hipsci.cell-line-browser a schema1:GraphicalInterface ;
+    rdfs:label "HipSci cell line browser" ;
+    dcterms:description "HipSci cell line browser for finding iPSC lines by cohort, donor, assay and other attributes, with a page per line giving donor metadata, banking status and purchase links (ECACC and EBiSC), BioSamples accession, pluripotency and copy number quality information, and links to archived assay data." ;
+    schema1:url <https://www.hipsci.org/#/lines> .
+
+kgr:hipsci.data-browser a schema1:GraphicalInterface ;
+    rdfs:label "HipSci data browser" ;
+    dcterms:description "HipSci data browser listing assay data files per cell line (assay, description, instrument, archive and download link), donor tables and the most recent managed-access EGA datasets per cohort and assay, with CSV and TSV export of the file and donor tables." ;
+    schema1:url <https://www.hipsci.org/#/data> .
+
 kgr:hmdb.fasta.enzymes a schema1:Product ;
     rdfs:label "HMDB Enzyme Protein Sequences (FASTA)" ;
     dcterms:description "All metabolite metabolizing enzyme protein sequences (FASTA)" ;
@@ -38043,6 +38379,16 @@ kgr:hprd.xml.download a schema1:DocumentationProduct ;
     dcterms:description "HPRD data in XML format for programmatic access" ;
     schema1:url <http://www.hprd.org/> .
 
+kgr:hpscreg.names-api a schema1:ProgrammingInterface ;
+    rdfs:label "hPSCreg Names API" ;
+    dcterms:description "Names API returning a JSON list of all released hPSCreg cell line names, with cell type, ontology term, synonyms and identifiers in other databases such as BioSamples, and lookup of the hPSCreg name for a given synonym or external identifier." ;
+    schema1:url <https://hpscreg.eu/api/names> .
+
+kgr:hpscreg.portal a schema1:GraphicalInterface ;
+    rdfs:label "hPSCreg web portal" ;
+    dcterms:description "Web portal for searching and browsing registered hESC and hiPSC lines, with a page per line covering donor, derivation, ethics, culture and characterization data, plus browse views by provider, research project, country, disease, publication and clinical study." ;
+    schema1:url <https://hpscreg.eu/search?q> .
+
 kgr:hra.api a schema1:ProgrammingInterface ;
     rdfs:label "HRA API" ;
     dcterms:description "Production HRA API for programmatic access to Common Coordinate Framework data, schemas, spatial relationships, and HRA services" ;
@@ -38102,6 +38448,16 @@ kgr:htn.owl a schema1:OntologyProduct ;
     rdfs:label "HTN" ;
     dcterms:description "HTN" ;
     schema1:url <http://purl.obolibrary.org/obo/htn.owl> .
+
+kgr:httk.package a schema1:ProcessProduct ;
+    rdfs:label "httk R Package" ;
+    dcterms:description "The httk R package on CRAN, bundling chemical-specific in vitro TK data with generic PBTK and empirical TK models, a Monte Carlo sampler for population variability and parameter uncertainty, and IVIVE/reverse dosimetry functions." ;
+    schema1:url <https://CRAN.R-project.org/package=httk> .
+
+kgr:httk.repository a schema1:Product ;
+    rdfs:label "httk GitHub Repository" ;
+    dcterms:description "GitHub repository for the httk R package, used for bug reports and contributed enhancements." ;
+    schema1:url <https://github.com/USEPA/CompTox-ExpoCast-httk> .
 
 kgr:hubmap.antibody_validation_reports a schema1:Product ;
     rdfs:label "Antibody Validation Reports" ;
@@ -38938,6 +39294,21 @@ kgr:jpost.sparql a schema1:ProgrammingInterface ;
     rdfs:label "jPOST Database RDF SPARQL Endpoint" ;
     dcterms:description "SPARQL endpoint of the RDF Portal (DBCLS) serving the jPOST database RDF (version 202509, about 578 million triples) with the jPOST ontology. The RDF Portal lists this dataset under CC BY 4.0." ;
     schema1:url <https://rdfportal.org/primary/sparql> .
+
+kgr:jrc-qsar-model-database.download a schema1:Product ;
+    rdfs:label "JRC QSAR Model Database Archive" ;
+    dcterms:description "Complete archive of the JRC QSAR Model Database (QMRF documents in PDF and XML with attachments) for download." ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EURL-ECVAM/datasets/QSARDB/LATEST/qsardb.zip> .
+
+kgr:jrc-qsar-model-database.index a schema1:GraphicalInterface ;
+    rdfs:label "JRC QSAR Model Database Index" ;
+    dcterms:description "Static browsable index of the QMRF documents in the JRC QSAR Model Database, listing QMRF number, model title, endpoint, and last update date, with links to each QMRF as PDF and XML." ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EURL-ECVAM/datasets/QSARDB/LATEST/qsardb.html> .
+
+kgr:jrc-qsar-model-database.qmrf-xml a schema1:Product ;
+    rdfs:label "JRC QSAR Model Database QMRF XML Files" ;
+    dcterms:description "Individual QMRF (QSAR Model Reporting Format) documents in XML, one per model, as distributed in the JRC open data repository." ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EURL-ECVAM/datasets/QSARDB/LATEST/XML/> .
 
 kgr:jws-online.api a schema1:ProgrammingInterface ;
     rdfs:label "JWS Online REST API" ;
@@ -41987,6 +42358,21 @@ kgr:occo.owl a schema1:OntologyProduct ;
     dcterms:description "Occupation Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/occo.owl> .
 
+kgr:oecd-qsar-toolbox.databases a schema1:DocumentationProduct ;
+    rdfs:label "QSAR Toolbox Databases Overview" ;
+    dcterms:description "Description of the experimental databases bundled with the QSAR Toolbox, grouped into physical-chemical properties, environmental fate and transport, ecotoxicological information, human health hazards, and intermediate (mechanistic) effects." ;
+    schema1:url <https://qsartoolbox.org/resources/databases/> .
+
+kgr:oecd-qsar-toolbox.software a schema1:ProcessProduct ;
+    rdfs:label "QSAR Toolbox Installer" ;
+    dcterms:description "Windows installation package for the QSAR Toolbox client and server (current release v4.9), including the bundled experimental databases, profilers, metabolism simulators, and QSAR models; previous versions are also available for reproducing earlier results." ;
+    schema1:url <https://qsartoolbox.org/download/> .
+
+kgr:oecd-qsar-toolbox.webapi a schema1:ProgrammingInterface ;
+    rdfs:label "QSAR Toolbox WebAPI" ;
+    dcterms:description "Self-hosted Toolbox WebAPI exposing services for chemical search, structure information, profiling, parameter calculation, metabolite generation, and data retrieval, run locally via the Toolbox WebSuite or the Toolbox Server." ;
+    schema1:url <https://qsartoolbox.org/developers/webapi/> .
+
 kgr:offsides.data a schema1:Product ;
     rdfs:label "OFFSIDES Data Export" ;
     dcterms:description "Gzipped OFFSIDES table of drug side effects mined from FAERS that are not listed on official FDA labels." ;
@@ -42494,6 +42880,26 @@ kgr:open-english-wordnet.repo a schema1:Product ;
     dcterms:description "GitHub repository holding the Open English WordNet source data (one YAML file per lexicographer file), build scripts, issue tracker and versioned releases." ;
     schema1:url <https://github.com/globalwordnet/english-wordnet> .
 
+kgr:open-systems-pharmacology.docs a schema1:DocumentationProduct ;
+    rdfs:label "OSP Suite documentation" ;
+    dcterms:description "OSP Suite manual covering mechanistic PK/PD modeling concepts, PK-Sim and MoBi use, shared tools, qualification and the ospsuite R package." ;
+    schema1:url <https://docs.open-systems-pharmacology.org/> .
+
+kgr:open-systems-pharmacology.ospsuite-r a schema1:ProcessProduct ;
+    rdfs:label "ospsuite R package" ;
+    dcterms:description "ospsuite R package for loading, running and analysing OSP Suite simulations from R." ;
+    schema1:url <https://github.com/Open-Systems-Pharmacology/OSPSuite-R> .
+
+kgr:open-systems-pharmacology.pbpk-model-library a schema1:Product ;
+    rdfs:label "OSP PBPK Model Library" ;
+    dcterms:description "OSP PBPK Model Library of released PBPK models for individual compounds, including antibiotics, antivirals, anesthetics, sedatives, anticonvulsants, cardiovascular agents and antibodies, each with an HTML and PDF model evaluation report and PK-Sim project files (some with pediatric versions)." ;
+    schema1:url <https://www.open-systems-pharmacology.org/OSP-PBPK-Model-Library/> .
+
+kgr:open-systems-pharmacology.suite a schema1:ProcessProduct ;
+    rdfs:label "OSP Suite (PK-Sim and MoBi)" ;
+    dcterms:description "OSP Suite installers for PK-Sim (whole-body PBPK modeling) and MoBi (multiscale physiological modeling and simulation)." ;
+    schema1:url <https://github.com/Open-Systems-Pharmacology/Suite/releases> .
+
 kgr:open-tggates.all-attributes a schema1:Product ;
     rdfs:label "Open TG-GATEs CEL File Attachments (All Attributes)" ;
     dcterms:description "Combined attribute table for all CEL files, with compound, dose, time point, sample and toxicological measurements for each array, as a single TSV file." ;
@@ -42646,6 +43052,16 @@ kgr:opentargets.platform a schema1:GraphicalInterface ;
     rdfs:label "Open Targets Platform" ;
     dcterms:description "The Open Targets Platform integrates and visualizes public data on target-disease associations to assist in drug target identification and prioritization." ;
     schema1:url <https://platform.opentargets.org/> .
+
+kgr:opera.application a schema1:ProcessProduct ;
+    rdfs:label "OPERA application releases" ;
+    dcterms:description "Compiled OPERA application, as command-line (including a parallel version) and graphical user interface builds for Windows and Linux, plus a Python library build, for batch prediction of physicochemical, environmental fate, ADME and toxicity endpoints with applicability domain and accuracy estimates." ;
+    schema1:url <https://github.com/NIEHS/OPERA/releases> .
+
+kgr:opera.repository a schema1:Product ;
+    rdfs:label "OPERA source code and data" ;
+    dcterms:description "OPERA source code repository, with the model code, data, and QSAR Model Reporting Format (QMRF) reports for the models." ;
+    schema1:url <https://github.com/NIEHS/OPERA> .
 
 kgr:opl.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "OPL KGX graph (KG-Bioportal)" ;
@@ -45326,6 +45742,11 @@ kgr:sepio.owl a schema1:OntologyProduct ;
     dcterms:description "SEPIO" ;
     schema1:url <http://purl.obolibrary.org/obo/sepio.owl> .
 
+kgr:seqapass.user-guide a schema1:DocumentationProduct ;
+    rdfs:label "SeqAPASS User Guide" ;
+    dcterms:description "SeqAPASS V8 user guide describing how to run and interpret cross-species susceptibility queries." ;
+    schema1:url <https://www.epa.gov/comptox-tools/seqapass-user-guide> .
+
 kgr:sequence-ontology a "Organization" ;
     rdfs:label "Sequence Ontology Consortium" .
 
@@ -46942,6 +47363,21 @@ kgr:toxin.web a schema1:GraphicalInterface ;
     dcterms:description "Web portal for searching and exploring toxic compounds, targets, and pathway relationships in the TOXIN knowledge graph." ;
     schema1:url <https://toxin-search.netlify.app/> .
 
+kgr:toxrefdb.download a schema1:Product ;
+    rdfs:label "ToxRefDB Database Download" ;
+    dcterms:description "ToxRefDB database package and associated files (v3.0, released August 2025), distributed through EPA's figshare repository." ;
+    schema1:url <https://epa.figshare.com/articles/dataset/Animal_Toxicity_Studies_Effects_and_Endpoints_Toxicity_Reference_Database_-_ToxRefDB_files_/6062545> .
+
+kgr:toxrefdb.repository a schema1:Product ;
+    rdfs:label "ToxRefDB GitHub Repository" ;
+    dcterms:description "GitHub repository for US EPA's Toxicity Reference Database (ToxRefDB)." ;
+    schema1:url <https://github.com/USEPA/CompTox-ToxRefDB> .
+
+kgr:toxvaldb.stage a schema1:ProcessProduct ;
+    rdfs:label "toxvaldbstage R Package" ;
+    dcterms:description "R package used to process and stage source data for loading into ToxValDB (ToxValDB Stage)." ;
+    schema1:url <https://github.com/USEPA/toxvaldbstage> .
+
 kgr:trans.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "PTRANS KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Pathogen Transmission Ontology (PTRANS), produced by KG-Bioportal from the BioPortal submission. The archive contains PTRANS_nodes.tsv and PTRANS_edges.tsv." ;
@@ -47004,6 +47440,16 @@ kgr:try.portal a schema1:Product ;
     rdfs:label "TRY Data Portal" ;
     dcterms:description "Trait data available through the TRY data portal (access upon request/registration)" ;
     schema1:url <https://www.try-db.org/TryWeb/Home.php> .
+
+kgr:tsar.about a schema1:DocumentationProduct ;
+    rdfs:label "About TSAR" ;
+    dcterms:description "Description of the scope, stages, partners, and update policy of TSAR." ;
+    schema1:url <https://tsar.jrc.ec.europa.eu/content/about-tsar> .
+
+kgr:tsar.test-methods a schema1:GraphicalInterface ;
+    rdfs:label "TSAR Test Methods Browser" ;
+    dcterms:description "Searchable listing of test methods tracked in TSAR, filterable by topic (for example skin sensitisation, endocrine disruption, genotoxicity, eye irritation), responsible organisation, current stage, and status, with per-method records of submission, validation, peer review, recommendation, and regulatory acceptance and links to associated documents." ;
+    schema1:url <https://tsar.jrc.ec.europa.eu/test-methods> .
 
 kgr:ttd.crossmatch a schema1:Product ;
     rdfs:label "Cross-matching Drug IDs" ;
@@ -51971,6 +52417,11 @@ kgr:semopenalex.graph a schema1:GraphProduct ;
     dcterms:description "RDF graph representation of the OpenAlex scholarly data as Linked Open Data, distributed as Turtle (TTL) snapshots via the SemOpenAlex code and data repository." ;
     schema1:url <https://github.com/metaphacts/semopenalex> .
 
+kgr:seqapass.app a schema1:GraphicalInterface ;
+    rdfs:label "SeqAPASS Web Application" ;
+    dcterms:description "The SeqAPASS web application for cross-species comparison of chemical protein targets by primary amino acid sequence, functional domain, and individual amino acid residue similarity, with protein structure generation in version 8. A user account is required." ;
+    schema1:url <https://seqapass.epa.gov/seqapass/> .
+
 kgr:service-kp.code a schema1:ProcessProduct ;
     rdfs:label "Service KP Source Code" ;
     dcterms:description "BioThings API stack source repository used by the Service Provider team." ;
@@ -52120,6 +52571,16 @@ kgr:togows.ucsc-api a schema1:ProgrammingInterface ;
     rdfs:label "TogoWS UCSC API" ;
     dcterms:description "REST API over the public UCSC Genome Browser MySQL databases, for listing genome assemblies, tables and columns, querying table rows by column values, and retrieving genomic sequence ranges." ;
     schema1:url <http://togows.org/help/> .
+
+kgr:toxvaldb.download a schema1:Product ;
+    rdfs:label "ToxValDB Database Download" ;
+    dcterms:description "ToxValDB database releases (current v9.7.0, with archived versions), distributed through EPA's figshare repository." ;
+    schema1:url <https://epa.figshare.com/articles/dataset/ToxValDB_v9_1/20394501> .
+
+kgr:toxvaldb.main a schema1:ProcessProduct ;
+    rdfs:label "toxvaldbmain R Package" ;
+    dcterms:description "R package of scripts that transform staged source data into the normalized main ToxValDB format, including loaders for ToxRefDB data." ;
+    schema1:url <https://github.com/USEPA/toxvaldbmain> .
 
 kgr:ttd.kegg-pathways a schema1:Product ;
     rdfs:label "Target KEGG Pathways" ;
@@ -52523,6 +52984,11 @@ kgr:duo.owl a schema1:OntologyProduct ;
     rdfs:label "duo.owl" ;
     dcterms:description "Data Use Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/duo.owl> .
+
+kgr:echemportal.portal a schema1:GraphicalInterface ;
+    rdfs:label "eChemPortal Search Portal" ;
+    dcterms:description "Web portal for searching participating chemical information sources by substance identifiers, by chemical property and endpoint values, and by GHS classification, with direct links to the corresponding records in each source." ;
+    schema1:url <https://www.echemportal.org/echemportal/> .
 
 kgr:edam.csv a schema1:OntologyProduct ;
     rdfs:label "EDAM CSV" ;
@@ -53248,6 +53714,11 @@ kgr:clyh.owl a schema1:OntologyProduct ;
     rdfs:label "clyh.owl" ;
     dcterms:description "Clytia hemisphaerica Development and Anatomy Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/clyh.owl> .
+
+kgr:comptox-dashboard.ctx-api a schema1:ProgrammingInterface ;
+    rdfs:label "CTX (Computational Toxicology and Exposure) APIs" ;
+    dcterms:description "The EPA Computational Toxicology and Exposure (CTX) APIs, providing programmatic access to the chemical, hazard, bioactivity, and exposure data domains that underlie the CompTox Chemicals Dashboard. A free API key is required." ;
+    schema1:url <https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis-about> .
 
 kgr:ctd.anatomy a schema1:Product ;
     rdfs:label "CTD Anatomy Vocabulary" ;
@@ -54028,6 +54499,11 @@ kgr:cellmodelpassports.model_list a schema1:MappingProduct ;
     dcterms:description "Annotated list of all cell line and organoid models with tissue, cancer type (NCIt), clinical and patient annotation, and cross-references to Cellosaurus RRIDs, COSMIC IDs, DepMap (Broad) IDs and CCLE names." ;
     schema1:url <https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv> .
 
+kgr:comptox-dashboard.downloads a schema1:Product ;
+    rdfs:label "Downloadable Computational Toxicology Data" ;
+    dcterms:description "EPA's downloadable computational toxicology data page, collecting bulk downloads of the datasets surfaced in the Dashboard (e.g., DSSTox identifiers, invitrodb, ToxRefDB, ToxValDB, CPDat, HTTK)." ;
+    schema1:url <https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data> .
+
 kgr:genecards.disease.associations a schema1:Product ;
     rdfs:label "GeneCards Disease Associations" ;
     dcterms:description "Disease association data integrated from OMIM, MalaCards, ClinVar, Orphanet, DisGeNET and other disease databases" ;
@@ -54399,6 +54875,11 @@ kgr:colao.owl a schema1:OntologyProduct ;
     rdfs:label "colao.owl" ;
     dcterms:description "Coleoptera Anatomy Ontology (COLAO) in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/colao.owl> .
+
+kgr:comptox-dashboard.portal a schema1:GraphicalInterface ;
+    rdfs:label "CompTox Chemicals Dashboard Web Application" ;
+    dcterms:description "Web interface to the CompTox Chemicals Dashboard, supporting search by chemical identifiers (e.g., DTXSID, CASRN), product use categories, and assays/genes, plus advanced (mass/formula) and batch searches, with per-chemical pages covering chemistry, hazard, bioactivity, ADME/IVIVE, and exposure data." ;
+    schema1:url <https://comptox.epa.gov/dashboard> .
 
 kgr:ecrin-mdr.api a schema1:ProgrammingInterface ;
     rdfs:label "ECRIN MDR API" ;
@@ -55429,7 +55910,8 @@ kgr:ncbi a schema1:DataSource,
         kgr:obo-db-ingest.ncbi.gc.obo,
         kgr:obo-db-ingest.ncbi.gc.owl,
         kgr:obo-db-ingest.ncbi.gc.sssom.tsv,
-        kgr:obo-db-ingest.ncbi.gc.tsv ;
+        kgr:obo-db-ingest.ncbi.gc.tsv,
+        kgr:seqapass.app ;
     schema1:name "National Center for Biotechnology Information" ;
     skos:inScheme "biomedical",
         "genomics",

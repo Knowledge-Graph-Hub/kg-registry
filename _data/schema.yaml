@@ -1069,9 +1069,9 @@ enums:
       nams:
         text: nams
         description: This entity provides data, models, or methods for New Approach
-          Methodologies (NAMs), such as in vitro, in chemico,
-          in silico, organoid, and microphysiological approaches, including resources
-          supporting their development, validation, and regulatory use.
+          Methodologies (NAMs), such as in vitro, in chemico, in silico, organoid,
+          and microphysiological approaches, including resources supporting their
+          development, validation, and regulatory use.
         meaning: https://dpcpsi.nih.gov/oriva/about
   DumpFormatEnum:
     name: DumpFormatEnum

@@ -164,6 +164,7 @@ collectri,active,PASS
 compartments,active,PASS
 compath,active,PASS
 complexportal,active,PASS
+comptox-dashboard,active,PASS
 connections-hypothesis-kp,active,PASS
 corum,active,PASS
 cosmic,active,PASS
@@ -192,6 +193,7 @@ cytoscape,active,PASS
 dailymed,active,PASS
 darkkinasekb,active,PASS
 darwins-ark,active,PASS
+db-alm,active,PASS
 dbgap,active,PASS
 dbnsfp,active,PASS
 dbpedia,active,PASS
@@ -243,6 +245,7 @@ earthportal,active,PASS
 ebrains,active,PASS
 ec,active,PASS
 ecao,active,PASS
+echemportal,active,PASS
 ecid,active,PASS
 eco,active,PASS
 eco-kg,active,PASS
@@ -412,12 +415,14 @@ hetionet,active,PASS
 hgnc,active,PASS
 hifld,active,PASS
 hippie,active,PASS
+hipsci,active,PASS
 hmdb,active,PASS
 hocomoco,active,PASS
 hom,active,PASS
 hp,active,PASS
 hpa,active,PASS
 hpap,active,PASS
+hpscreg,active,PASS
 hra,active,PASS
 hra-kg,active,PASS
 hravs,active,PASS
@@ -426,6 +431,7 @@ hsapdv,active,PASS
 hso,active,PASS
 htn,active,PASS
 htridb,active,PASS
+httk,active,PASS
 hubmap,active,PASS
 humancyc,active,PASS
 humannet,active,PASS
@@ -655,6 +661,7 @@ obis,active,PASS
 obo-db-ingest,active,PASS
 obofoundry,active,PASS
 occo,active,PASS
+oecd-qsar-toolbox,active,PASS
 offsides,active,PASS
 ogg,active,PASS
 ogms,active,PASS
@@ -684,6 +691,7 @@ ontology-kp,active,PASS
 ontoneo,active,PASS
 oostt,active,PASS
 open-english-wordnet,active,PASS
+open-systems-pharmacology,active,PASS
 open-tree-of-life,active,PASS
 openalex,active,PASS
 openbiodiv,active,PASS
@@ -694,6 +702,7 @@ opengwas,active,PASS
 openpredict,active,PASS
 openstreetmap,active,PASS
 opentargets,active,PASS
+opera,active,PASS
 opl,active,PASS
 opmi,active,PASS
 orcid,active,PASS
@@ -847,6 +856,7 @@ semopenalex,active,PASS
 semrep,active,PASS
 sennet,active,PASS
 sepio,active,PASS
+seqapass,active,PASS
 service-kp,active,PASS
 sfld,active,PASS
 sgd,active,PASS
@@ -917,12 +927,15 @@ topmed,active,PASS
 tox21,active,PASS
 toxcast,active,PASS
 toxin,active,PASS
+toxrefdb,active,PASS
+toxvaldb,active,PASS
 trans,active,PASS
 translator,active,PASS
 treatkb,active,PASS
 treefam,active,PASS
 trrust,active,PASS
 try,active,PASS
+tsar,active,PASS
 ttd,active,PASS
 tto,active,PASS
 txpo,active,PASS
@@ -1053,6 +1066,7 @@ inoh,orphaned,PASS
 ipr,inactive,PASS
 iproclass,inactive,PASS
 irefindex,inactive,PASS
+jrc-qsar-model-database,inactive,PASS
 labeledin,inactive,PASS
 lipro,inactive,PASS
 lncipedia,inactive,PASS
