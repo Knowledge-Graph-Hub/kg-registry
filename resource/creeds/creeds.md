@@ -277,6 +277,25 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+- category: GraphicalInterface
+  description: Interactive fireworks and t-SNE maps of drug-induced L1000 signatures
+    for all cell lines and individual cell lines, with signature similarity search
+    using up and down gene sets, signature landing pages, and subset visualization.
+  format: http
+  id: l1000fwd.portal
+  name: L1000FWD Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_url: https://maayanlab.cloud/l1000fwd/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: creeds
+  warnings:
+  - Web application returned HTTP 503 when checked on 2026-10-19, although static
+    download files were served; the homepage was archived with HTTP 200 on 2026-09-29.
 publications:
 - authors:
   - Zichen Wang

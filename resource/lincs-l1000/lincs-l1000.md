@@ -826,6 +826,164 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+- category: GraphicalInterface
+  description: Interactive fireworks and t-SNE maps of drug-induced L1000 signatures
+    for all cell lines and individual cell lines, with signature similarity search
+    using up and down gene sets, signature landing pages, and subset visualization.
+  format: http
+  id: l1000fwd.portal
+  name: L1000FWD Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_url: https://maayanlab.cloud/l1000fwd/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: creeds
+  warnings:
+  - Web application returned HTTP 503 when checked on 2026-10-19, although static
+    download files were served; the homepage was archived with HTTP 200 on 2026-09-29.
+- category: ProgrammingInterface
+  description: REST API for searching drugs by name or synonym, retrieving a signature
+    by ID, querying signatures with up and down gene sets, and retrieving the top
+    50 results. Documented on the API page with Python and R examples.
+  format: json
+  id: l1000fwd.api
+  is_public: true
+  name: L1000FWD API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_url: https://maayanlab.cloud/l1000fwd/api_page
+  warnings:
+  - API page returned HTTP 503 when checked on 2026-10-19.
+- category: Product
+  description: Characteristic direction (CD) signature matrix for 42,809 significant
+    L1000 drug and small-molecule signatures in the 978 landmark gene space, in GCTX
+    (HDF5) format.
+  format: hdf5
+  id: l1000fwd.cd-signatures-landmark
+  name: L1000FWD CD Signatures (Landmark Genes)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 346694992
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_LM_42809x978.gctx
+- category: Product
+  description: Characteristic direction (CD) signature matrix for 42,809 significant
+    L1000 drug and small-molecule signatures in the full space of 22,268 probes, in
+    GCTX (HDF5) format.
+  format: hdf5
+  id: l1000fwd.cd-signatures-full
+  name: L1000FWD CD Signatures (Full Space)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 7638514350
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_full_42809x22268.gctx
+- category: Product
+  description: Cosine similarity adjacency matrix among all 42,809 significant CD
+    signatures in the landmark gene space, in GCTX (HDF5) format.
+  format: hdf5
+  id: l1000fwd.adjacency-matrix
+  name: L1000FWD Signature Adjacency Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 14684362180
+  product_url: https://maayanlab.cloud/l1000fwd/download/Adjacency_matrix_LM_space_42809x42809.gctx
+- category: Product
+  description: Up and down gene sets for the 42,809 CD signatures in the full gene
+    space, in GMT format.
+  format: tsv
+  id: l1000fwd.gene-sets-gmt
+  name: L1000FWD Signature Gene Sets (GMT)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 120617799
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.gmt
+- category: Product
+  description: Up and down gene sets for the 42,809 CD signatures in the full gene
+    space, in JSON format.
+  format: json
+  id: l1000fwd.gene-sets-json
+  name: L1000FWD Signature Gene Sets (JSON)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 177765632
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.json
+- category: Product
+  description: Metadata for the L1000FWD signatures indexed by sig_id, including batch,
+    cell line, perturbagen, dose, time, and signature strength.
+  format: csv
+  id: l1000fwd.signature-metadata
+  name: L1000FWD Signature Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 5075455
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signature_metadata.csv
+- category: Product
+  description: Metadata for the profiled drugs and small molecules indexed by pert_id,
+    including LINCS small molecule IDs, names, SMILES, InChIKeys, molecular formulas,
+    and PubChem CIDs.
+  format: csv
+  id: l1000fwd.drug-metadata
+  name: L1000FWD Drug Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs
+  product_file_size: 7797325
+  product_url: https://maayanlab.cloud/l1000fwd/download/Drugs_metadata.csv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+- category: Product
+  description: Metadata for the L1000 probes of the 978 landmark genes.
+  format: csv
+  id: l1000fwd.probes-landmark-metadata
+  name: L1000FWD Landmark Probe Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 16690
+  product_url: https://maayanlab.cloud/l1000fwd/download/Probes_L1000_metadata.csv
+- category: Product
+  description: Metadata for the 22,268 probes used in the full gene space.
+  format: csv
+  id: l1000fwd.probes-full-metadata
+  name: L1000FWD Full Probe Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 372943
+  product_url: https://maayanlab.cloud/l1000fwd/download/Probes_full_metadata.csv
 publications:
 - authors:
   - Subramanian, A.

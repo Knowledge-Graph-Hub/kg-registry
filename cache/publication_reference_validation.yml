@@ -5302,6 +5302,15 @@ entries:
     source_path: resource/knowwheregraph/knowwheregraph.md
     status: valid
     warnings: []
+  resource/l1000fwd/l1000fwd.md#publication[0]#PMID:29420694:
+    checked_at: '2026-10-19T22:10:51Z'
+    errors: []
+    fingerprint: 2ff881ea565832d82cfabb7811703dc6a6456bfca1e30d858f5e062b344b3808
+    publication_index: 0
+    reference_id: PMID:29420694
+    source_path: resource/l1000fwd/l1000fwd.md
+    status: valid
+    warnings: []
   resource/labeledin/labeledin.md#publication[0]#DOI:10.1016/j.jbi.2014.08.004:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
