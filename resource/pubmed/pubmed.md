@@ -2848,6 +2848,60 @@ products:
     source: flybase
   - relation_type: prov:wasInformedBy
     source: fbbt
+- category: GraphicalInterface
+  description: Yeastract web interface for Saccharomyces cerevisiae, with searches
+    for TFs, target genes, and regulatory associations, DNA motif searches, promoter
+    analysis, regulation matrix generation, and ranking of genes by TF or GO term.
+    Associations are manually curated from the literature; gene and GO annotations
+    come from SGD.
+  format: http
+  id: yeastract.scerevisiae
+  name: Yeastract (S. cerevisiae)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: yeastract
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://yeastract-plus.org/yeastract/scerevisiae/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: sgd
+  - relation_type: prov:wasInformedBy
+    source: go
+- category: GraphicalInterface
+  description: PathoYeastract web interface with curated TF-target gene regulatory
+    associations for pathogenic yeasts (Candida glabrata, C. albicans, C. tropicalis,
+    C. parapsilosis, C. auris, and Cryptococcus neoformans). Associations are manually
+    curated from the literature; GO annotations for Candida genes come from the Candida
+    Genome Database.
+  format: http
+  id: yeastract.pathoyeastract
+  name: PathoYeastract
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: yeastract
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://yeastract-plus.org/pathoyeastract/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: candida-genome-database
+  - relation_type: prov:wasInformedBy
+    source: go
+- category: GraphicalInterface
+  description: N.C.Yeastract web interface with curated TF-target gene regulatory
+    associations for non-conventional yeasts (Zygosaccharomyces bailii, Kluyveromyces
+    lactis, K. marxianus, Yarrowia lipolytica, Komagataella phaffii, and Rhodotorula
+    toruloides), curated from the literature.
+  format: http
+  id: yeastract.ncyeastract
+  name: N.C.Yeastract
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: yeastract
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://yeastract-plus.org/ncyeastract/
 publications:
 - authors:
   - Eric W Sayers

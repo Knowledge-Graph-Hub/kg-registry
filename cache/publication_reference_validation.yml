@@ -10450,6 +10450,42 @@ entries:
     source_path: resource/xpo/xpo.md
     status: valid
     warnings: []
+  resource/yeastract/yeastract.md#publication[0]#PMID:36350610:
+    checked_at: '2026-10-19T22:10:29Z'
+    errors: []
+    fingerprint: 71677a233098fe3423c700c3a5e13ec0928f4901a3324956546177a73e2e01ba
+    publication_index: 0
+    reference_id: PMID:36350610
+    source_path: resource/yeastract/yeastract.md
+    status: valid
+    warnings: []
+  resource/yeastract/yeastract.md#publication[1]#PMID:31586406:
+    checked_at: '2026-10-19T22:10:33Z'
+    errors: []
+    fingerprint: fca6bba74f67aeb6f24a0f6481c65bb7ad42e82d1f097823b1909b36a8b3ff1e
+    publication_index: 1
+    reference_id: PMID:31586406
+    source_path: resource/yeastract/yeastract.md
+    status: valid
+    warnings: []
+  resource/yeastract/yeastract.md#publication[2]#PMID:29036684:
+    checked_at: '2026-10-19T22:10:39Z'
+    errors: []
+    fingerprint: f4883c918e62b6e56de98c6c82274642cbfea87441980f8a646232d236d96dfa
+    publication_index: 2
+    reference_id: PMID:29036684
+    source_path: resource/yeastract/yeastract.md
+    status: valid
+    warnings: []
+  resource/yeastract/yeastract.md#publication[3]#PMID:16381908:
+    checked_at: '2026-10-19T22:10:43Z'
+    errors: []
+    fingerprint: 660e764683e91422b126d03cf343e0824903663a454b063efca84497df58dcd4
+    publication_index: 3
+    reference_id: PMID:16381908
+    source_path: resource/yeastract/yeastract.md
+    status: valid
+    warnings: []
   resource/yoda/yoda.md#publication[0]#DOI:10.1038/sdata.2018.268:
     checked_at: '2026-10-05T16:01:04Z'
     errors: []
