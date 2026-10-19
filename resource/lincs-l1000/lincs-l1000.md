@@ -984,6 +984,124 @@ products:
     source: lincs-l1000
   product_file_size: 372943
   product_url: https://maayanlab.cloud/l1000fwd/download/Probes_full_metadata.csv
+- category: GraphicalInterface
+  description: Web portal for browsing and searching predicted and known drug-side
+    effect connections by drug or side effect, with side effect-GO term and side effect-phenotype
+    networks.
+  format: http
+  id: sep-l1000.portal
+  name: SEP-L1000 Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: offsides
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: mlpcn-profiling
+  product_url: http://maayanlab.net/SEP-L1000/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: meddra
+  - relation_type: prov:wasInformedBy
+    source: drugbank
+- category: Product
+  compression: gzip
+  description: Characteristic direction gene expression signatures for 20,339 drugs
+    and small molecules in the 978 landmark gene space, computed from LINCS L1000
+    profiles.
+  format: csv
+  id: sep-l1000.lincs-signatures
+  name: SEP-L1000 LINCS L1000 CD Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 40428519
+  product_url: http://maayanlab.net/SEP-L1000/downloads/LINCS_Gene_Experssion_signatures_CD.csv.gz
+- category: Product
+  compression: gzip
+  description: Gene Ontology transformed L1000 signatures, giving Principal Angle
+    Enrichment Analysis p-values of each drug signature against GO Biological Process,
+    Cellular Component, and Molecular Function gene sets (20,338 compounds by 4,438
+    terms).
+  format: csv
+  id: sep-l1000.go-signatures
+  name: SEP-L1000 GO-Transformed Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_file_size: 230607368
+  product_url: http://maayanlab.net/SEP-L1000/downloads/GO_transformed_signatures_PAEA.csv.gz
+- category: Product
+  compression: gzip
+  description: 166-bit MACCS chemical fingerprint matrix for 41,774 drugs and small
+    molecules from LINCS L1000 and MLPCN, computed with Open Babel from SMILES.
+  format: csv
+  id: sep-l1000.maccs-fingerprints
+  name: SEP-L1000 MACCS Fingerprints
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mlpcn-profiling
+  product_file_size: 1254411
+  product_url: http://maayanlab.net/SEP-L1000/downloads/MACCS_bitmatrix.csv.gz
+- category: Product
+  description: Metadata mapping each LINCS L1000 compound (pert_id) to the control
+    and perturbation distil_ids and the strongest signature used.
+  format: csv
+  id: sep-l1000.strongest-signatures-metadata
+  name: SEP-L1000 Strongest Signature Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 33352601
+  product_url: http://maayanlab.net/SEP-L1000/downloads/meta_LINCS_strongest_signatures.csv
+- category: Product
+  description: Mapping of L1000 probes to gene symbols.
+  format: csv
+  id: sep-l1000.probes-metadata
+  name: SEP-L1000 Probe Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 370344
+  product_url: http://maayanlab.net/SEP-L1000/downloads/meta_Probes_info.csv
+- category: Product
+  description: Compound metadata for 41,774 LINCS L1000 and MLPCN small molecules
+    with pert_id, name, PubChem CID, and SMILES.
+  format: csv
+  id: sep-l1000.smiles-metadata
+  name: SEP-L1000 Compound SMILES Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mlpcn-profiling
+  product_file_size: 4014816
+  product_url: http://maayanlab.net/SEP-L1000/downloads/meta_SMILES.csv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubchem
 publications:
 - authors:
   - Subramanian, A.

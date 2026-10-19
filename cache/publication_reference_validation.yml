@@ -9038,6 +9038,15 @@ entries:
     source_path: resource/sennet/sennet.md
     status: valid
     warnings: []
+  resource/sep-l1000/sep-l1000.md#publication[0]#PMID:27153606:
+    checked_at: '2026-10-19T22:10:58Z'
+    errors: []
+    fingerprint: e5fa256bcac4837f7bb40d6ee3bcb62a5a7015b0b2b168a4932a23381e633876
+    publication_index: 0
+    reference_id: PMID:27153606
+    source_path: resource/sep-l1000/sep-l1000.md
+    status: valid
+    warnings: []
   resource/sepio/sepio.md#publication[0]#url:http://ceur-ws.org/Vol-1747/IT605_ICBO2016.pdf:
     checked_at: '2026-08-31T17:59:38Z'
     errors: []

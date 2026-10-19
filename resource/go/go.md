@@ -9202,6 +9202,50 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+- category: GraphicalInterface
+  description: Web portal for browsing and searching predicted and known drug-side
+    effect connections by drug or side effect, with side effect-GO term and side effect-phenotype
+    networks.
+  format: http
+  id: sep-l1000.portal
+  name: SEP-L1000 Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: offsides
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: mlpcn-profiling
+  product_url: http://maayanlab.net/SEP-L1000/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: meddra
+  - relation_type: prov:wasInformedBy
+    source: drugbank
+- category: Product
+  compression: gzip
+  description: Gene Ontology transformed L1000 signatures, giving Principal Angle
+    Enrichment Analysis p-values of each drug signature against GO Biological Process,
+    Cellular Component, and Molecular Function gene sets (20,338 compounds by 4,438
+    terms).
+  format: csv
+  id: sep-l1000.go-signatures
+  name: SEP-L1000 GO-Transformed Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_file_size: 230607368
+  product_url: http://maayanlab.net/SEP-L1000/downloads/GO_transformed_signatures_PAEA.csv.gz
 publications:
 - authors:
   - Ashburner M
