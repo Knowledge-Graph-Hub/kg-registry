@@ -4266,6 +4266,33 @@ entries:
     source_path: resource/harmonizome/harmonizome.md
     status: valid
     warnings: []
+  resource/hcop/hcop.md#publication[0]#PMID:33959747:
+    checked_at: '2026-10-19T22:11:27Z'
+    errors: []
+    fingerprint: e3fa5e6b3b0bf52ac746529b2d9ed83fb1cc4082990cf62cee122b2f05eee750
+    publication_index: 0
+    reference_id: PMID:33959747
+    source_path: resource/hcop/hcop.md
+    status: valid
+    warnings: []
+  resource/hcop/hcop.md#publication[1]#PMID:16951416:
+    checked_at: '2026-10-19T22:11:30Z'
+    errors: []
+    fingerprint: 49ca283b5779267e2fd5cc60c6220ff0a6e6c8991bae2409b5afccb1b75a7fb7
+    publication_index: 1
+    reference_id: PMID:16951416
+    source_path: resource/hcop/hcop.md
+    status: valid
+    warnings: []
+  resource/hcop/hcop.md#publication[2]#PMID:16284797:
+    checked_at: '2026-10-19T22:11:35Z'
+    errors: []
+    fingerprint: abedcffb446067b66624714f560df7861544d1b3b8f1f25398bbe934e01718d3
+    publication_index: 2
+    reference_id: PMID:16284797
+    source_path: resource/hcop/hcop.md
+    status: valid
+    warnings: []
   resource/hetionet/hetionet.md#publication[0]#DOI:10.1093/gigascience/giad047:
     checked_at: '2026-06-22T16:27:15Z'
     errors: []
