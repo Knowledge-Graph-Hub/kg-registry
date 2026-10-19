@@ -24,6 +24,7 @@ URI: [kgr:CollectionEnum](https://w3id.org/bridge2ai/data-sheets-schema/Collecti
 | translator | https://ncats.nih.gov/research/research-activities/translator | This entity is part of those developed and used by the NCATS Biomedical Trans... |
 | obo-foundry | https://obofoundry.org/ | This entity is an ontology from the OBO Foundry, a collaborative effort to cr... |
 | okn | https://www.proto-okn.net/ | This entity is part of the Prototype Open Knowledge Network (OKN), a knowledg... |
+| nams | https://dpcpsi.nih.gov/oriva/about | This entity provides data, models, or methods for New Approach Methodologies ... |
 
 
 
@@ -94,6 +95,13 @@ permissible_values:
     description: This entity is part of the Prototype Open Knowledge Network (OKN),
       a knowledge graph network supported by the National Science Foundation (NSF).
     meaning: https://www.proto-okn.net/
+  nams:
+    text: nams
+    description: This entity provides data, models, or methods for New Approach
+      Methodologies (NAMs), such as in vitro, in chemico,
+      in silico, organoid, and microphysiological approaches, including resources
+      supporting their development, validation, and regulatory use.
+    meaning: https://dpcpsi.nih.gov/oriva/about
 
 ```
 </details>

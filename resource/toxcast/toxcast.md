@@ -3,6 +3,7 @@ activity_status: active
 category: DataSource
 collection:
 - ber
+- nams
 creation_date: '2025-09-04T00:00:00Z'
 description: ToxCast (US EPA Toxicity Forecaster) is a high-throughput screening program
   generating bioactivity profiles for thousands of environmental chemicals across
@@ -17,7 +18,7 @@ domains:
 - high-throughput screening
 homepage_url: https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast
 id: toxcast
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/privacy/privacy-and-security-notice
@@ -99,5 +100,70 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: toxcast
   product_url: https://github.com/biobricks-ai/biobricks-okg
+- category: GraphicalInterface
+  description: Web interface to the CompTox Chemicals Dashboard, supporting search
+    by chemical identifiers (e.g., DTXSID, CASRN), product use categories, and assays/genes,
+    plus advanced (mass/formula) and batch searches, with per-chemical pages covering
+    chemistry, hazard, bioactivity, ADME/IVIVE, and exposure data.
+  format: http
+  id: comptox-dashboard.portal
+  is_public: true
+  name: CompTox Chemicals Dashboard Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: comptox-dashboard
+  - relation_type: prov:wasDerivedFrom
+    source: dsstoxdb
+  - relation_type: prov:wasDerivedFrom
+    source: toxcast
+  - relation_type: prov:wasDerivedFrom
+    source: tox21
+  - relation_type: prov:wasDerivedFrom
+    source: toxvaldb
+  - relation_type: prov:wasDerivedFrom
+    source: toxrefdb
+  - relation_type: prov:wasDerivedFrom
+    source: httk
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  product_url: https://comptox.epa.gov/dashboard
+- category: ProgrammingInterface
+  description: The EPA Computational Toxicology and Exposure (CTX) APIs, providing
+    programmatic access to the chemical, hazard, bioactivity, and exposure data domains
+    that underlie the CompTox Chemicals Dashboard. A free API key is required.
+  format: http
+  id: comptox-dashboard.ctx-api
+  name: CTX (Computational Toxicology and Exposure) APIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: comptox-dashboard
+  - relation_type: prov:wasDerivedFrom
+    source: dsstoxdb
+  - relation_type: prov:wasDerivedFrom
+    source: toxcast
+  - relation_type: prov:wasDerivedFrom
+    source: toxvaldb
+  product_url: https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis-about
+- category: Product
+  description: EPA's downloadable computational toxicology data page, collecting bulk
+    downloads of the datasets surfaced in the Dashboard (e.g., DSSTox identifiers,
+    invitrodb, ToxRefDB, ToxValDB, CPDat, HTTK).
+  format: mixed
+  id: comptox-dashboard.downloads
+  name: Downloadable Computational Toxicology Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: comptox-dashboard
+  - relation_type: prov:wasDerivedFrom
+    source: dsstoxdb
+  - relation_type: prov:wasDerivedFrom
+    source: toxcast
+  - relation_type: prov:wasDerivedFrom
+    source: toxrefdb
+  - relation_type: prov:wasDerivedFrom
+    source: toxvaldb
+  - relation_type: prov:wasDerivedFrom
+    source: httk
+  product_url: https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data
 ---
 # ToxCast

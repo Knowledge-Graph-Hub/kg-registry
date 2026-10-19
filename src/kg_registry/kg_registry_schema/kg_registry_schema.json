@@ -260,7 +260,8 @@
                 "omop",
                 "translator",
                 "obo-foundry",
-                "okn"
+                "okn",
+                "nams"
             ],
             "title": "CollectionEnum",
             "type": "string"

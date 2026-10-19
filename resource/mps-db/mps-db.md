@@ -1,6 +1,8 @@
 ---
 activity_status: inactive
 category: DataSource
+collection:
+- nams
 contacts:
 - category: Organization
   contact_details:
@@ -33,7 +35,7 @@ domains:
 - anatomy and development
 homepage_url: https://mps.csb.pitt.edu/
 id: mps-db
-last_modified_date: '2026-10-03T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://doi.org/10.1039/c9lc01047e

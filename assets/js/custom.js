@@ -57,6 +57,10 @@ jQuery(document).ready(function () {
         "okn": {
             displayName: "OKN",
             description: "This entity is part of the Prototype Open Knowledge Network (OKN), a knowledge graph network supported by the National Science Foundation (NSF)."
+        },
+        "nams": {
+            displayName: "NAMs",
+            description: "This entity provides data, models, or methods for New Approach Methodologies (NAMs), such as in vitro, in chemico, in silico, organoid, and microphysiological approaches, including resources supporting their development, validation, and regulatory use."
         }
     };
 

@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+  - nams
 contacts:
   - category: Individual
     contact_details:
@@ -18,7 +20,7 @@ domains:
   - anatomy and development
 homepage_url: http://www.inbirg.com/organoid_db/
 id: organoiddb
-last_modified_date: '2026-10-03T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.inbirg.com/organoid_db/

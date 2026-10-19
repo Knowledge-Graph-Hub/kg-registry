@@ -1,6 +1,8 @@
 ---
 activity_status: inactive
 category: DataSource
+collection:
+- nams
 contacts:
 - category: Organization
   contact_details:
@@ -26,7 +28,7 @@ domains:
 - gene expression profiling
 homepage_url: https://dbarchive.biosciencedbc.jp/en/open-tggates/desc.html
 id: open-tggates
-last_modified_date: '2026-10-05T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/2.1/jp/

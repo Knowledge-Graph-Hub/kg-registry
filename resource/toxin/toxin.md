@@ -3,6 +3,7 @@ activity_status: active
 category: KnowledgeGraph
 collection:
   - aop
+  - nams
 contacts:
   - category: Organization
     contact_details:
@@ -17,7 +18,7 @@ domains:
   - systems biology
 homepage_url: https://toxin-search.netlify.app/
 id: toxin
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+collection:
+  - nams
 contacts:
   - category: Organization
     contact_details:
@@ -26,7 +28,7 @@ products:
       - source: namsnetwork
         relation_type: prov:hadPrimarySource
 creation_date: '2025-12-13T00:00:00Z'
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 ---
 
 NAMs Network
