@@ -4207,11 +4207,11 @@ products:
     source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -4373,6 +4373,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-19: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for browsing and searching predicted and known drug-side
     effect connections by drug or side effect, with side effect-GO term and side effect-phenotype

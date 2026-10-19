@@ -70,14 +70,14 @@ products:
   product_url: https://maayanlab.cloud/drugmonizome/data-api/
 - category: Product
   description: The 35 Drugmonizome drug set libraries, listed with metadata and per-library
-    download links. Each library is downloadable as a GMT-like DMT file keyed by
-    InChIKey or by drug name. Sources are DrugBank (targets, enzymes, carriers, transporters,
+    download links. Each library is downloadable as a GMT-like DMT file keyed by InChIKey
+    or by drug name. Sources are DrugBank (targets, enzymes, carriers, transporters,
     ATC codes), DrugCentral targets, the Drug Repurposing Hub (targets and mechanisms
     of action), STITCH targets, KINOMEscan kinases, SIDER side effects and indications,
-    PharmGKB variants and OFFSIDES side effects, PubChem and RDKit MACCS chemical fingerprints,
-    Geneshot literature and predicted genes (including ARCHS4 coexpression and Enrichr
-    co-occurrence), CREEDS signatures, and L1000FWD signatures, Enrichr GO and KEGG
-    terms, and SEP-L1000 predicted side effects.
+    PharmGKB variants and OFFSIDES side effects, PubChem and RDKit MACCS chemical
+    fingerprints, Geneshot literature and predicted genes (including ARCHS4 coexpression
+    and Enrichr co-occurrence), CREEDS signatures, and L1000FWD signatures, Enrichr
+    GO and KEGG terms, and SEP-L1000 predicted side effects.
   format: json
   id: drugmonizome.libraries
   name: Drugmonizome Drug Set Libraries
@@ -123,6 +123,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-19: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Drugmonizome-ML Appyter, a Jupyter-notebook-based web app that builds
     customized machine learning pipelines from selected Drugmonizome drug set libraries
@@ -150,8 +153,8 @@ publications:
   id: PMID:33787872
   journal: Database (Oxford)
   preferred: true
-  title: 'Drugmonizome and Drugmonizome-ML: integration and abstraction of small
-    molecule attributes for drug enrichment analysis and machine learning'
+  title: 'Drugmonizome and Drugmonizome-ML: integration and abstraction of small molecule
+    attributes for drug enrichment analysis and machine learning'
   year: '2021'
 repository: https://github.com/MaayanLab/drugmonizome
 synonyms:

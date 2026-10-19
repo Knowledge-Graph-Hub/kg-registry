@@ -964,6 +964,7 @@ kgr:archs4 a schema1:DataSource ;
         kgr:chea-kg.graph,
         kgr:chea-kg.libraries,
         kgr:chea.libraries,
+        kgr:drugmonizome.libraries,
         kgr:enrichr-kg.graph,
         kgr:geneshot.archs4-correlation,
         kgr:reprotox-kg.graph.archs4 ;
@@ -1062,6 +1063,7 @@ kgr:atc a schema1:DataSource ;
         kgr:atc.kg-bioportal,
         kgr:atc.methodology,
         kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:kg-idg.graph,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
@@ -2684,7 +2686,9 @@ kgr:bto a schema1:Ontology ;
         kgr:clinicalkg.graph,
         kgr:efo.obo,
         kgr:efo.owl,
-        kgr:genomickb.graph ;
+        kgr:genomickb.graph,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary ;
     schema1:name "BRENDA tissue / enzyme source" ;
     doap:repository <https://github.com/BRENDA-Enzymes/BTO> ;
     skos:inScheme "anatomy and development",
@@ -2915,6 +2919,17 @@ kgr:cancer-registry-kg a schema1:KnowledgeGraph ;
         "public health" ;
     adms:status "Active" ;
     foaf:homepage <https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/> .
+
+kgr:candida-genome-database a schema1:DataSource ;
+    rdfs:label "Candida-genome-database" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for candida-genome-database. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "candida-genome-database" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:yeastract.pathoyeastract ;
+    schema1:name "Candida-genome-database" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:canvas a schema1:DataSource ;
     rdfs:label "CanVAS" ;
@@ -5482,7 +5497,9 @@ kgr:creeds a schema1:DataSource ;
         kgr:creeds.manual_single_drug,
         kgr:creeds.manual_single_gene,
         kgr:creeds.web_interface,
-        kgr:drugenrichr.libraries ;
+        kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
+        kgr:l1000fwd.portal ;
     schema1:name "CREEDS" ;
     skos:inScheme "gene expression profiling",
         "genomics",
@@ -6995,6 +7012,8 @@ kgr:doid a schema1:Ontology ;
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j,
         kgr:unibiomap.disease_desc ;
@@ -7183,6 +7202,7 @@ kgr:drugbank a schema1:DataSource ;
         kgr:drugbank.clinical.api,
         kgr:drugbank.web,
         kgr:drugmechdb.graph,
+        kgr:drugmonizome.libraries,
         kgr:genecards.pharmacogenomics,
         kgr:genecards.web.interface,
         kgr:gp-kg.graph,
@@ -7236,6 +7256,7 @@ kgr:drugbank a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:sep-l1000.portal,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:stitch.api,
@@ -7273,6 +7294,7 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:drugcentral.data,
         kgr:drugenrichr.libraries,
         kgr:drugmechdb.graph,
+        kgr:drugmonizome.libraries,
         kgr:hetionet.data.edges,
         kgr:hetionet.data.json,
         kgr:hetionet.data.neo4j,
@@ -7368,6 +7390,33 @@ kgr:drugmechdb a schema1:KnowledgeGraph ;
         "pharmacology" ;
     adms:status "Active" ;
     foaf:homepage <https://sulab.github.io/DrugMechDB/> .
+
+kgr:drugmonizome a schema1:Aggregator ;
+    rdfs:label "Drugmonizome" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Drugmonizome is a database and search engine from the Ma'ayan Laboratory, built on the Signature Commons framework, that abstracts drug and small-molecule attributes from 13 resources into 35 drug set libraries (110,903 drug sets covering 14,579 small molecules). Libraries cover targets, mechanisms of action, indications, side effects, pharmacogenomic variants, chemical fingerprints, literature co-mentions, and L1000-induced gene expression and enriched terms. Users can search drug sets and run drug set enrichment analysis, and the companion Drugmonizome-ML Appyter builds machine learning pipelines on the same libraries." ;
+    dcterms:identifier "drugmonizome" ;
+    dcterms:isReferencedBy <PMID:33787872> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:drugmonizome.data-api,
+        kgr:drugmonizome.libraries,
+        kgr:drugmonizome.metadata-api,
+        kgr:drugmonizome.ml-appyter,
+        kgr:drugmonizome.portal ;
+    schema1:name "Drugmonizome" ;
+    doap:repository <https://github.com/MaayanLab/drugmonizome> ;
+    skos:altLabel "Drugmonizome-ML" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "drug discovery",
+        "drug repositioning",
+        "information technology",
+        "machine learning",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/drugmonizome/> .
 
 kgr:drugshot a schema1:DataSource ;
     rdfs:label "DrugShot" ;
@@ -7964,6 +8013,10 @@ kgr:eggnog a schema1:DataSource ;
         kgr:eggnog.download.e7.taxid-info,
         kgr:eggnog.download.e7.trees,
         kgr:eggnog.portal,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:string.cog.links,
         kgr:string.cog.links.detailed,
         kgr:string.database,
@@ -8302,6 +8355,8 @@ kgr:encode a schema1:DataSource ;
         kgr:encode.portal,
         kgr:genecards.web.interface,
         kgr:genomickb.graph,
+        kgr:gtrd.chip-seq_peaks,
+        kgr:gtrd.downloads,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:lncrnalyzr.graph ;
@@ -8359,6 +8414,7 @@ kgr:enrichr a schema1:DataSource ;
     schema1:hasPart kgr:chea-kg.graph,
         kgr:chea-kg.libraries,
         kgr:chea.libraries,
+        kgr:drugmonizome.libraries,
         kgr:enrichr-kg.api,
         kgr:enrichr-kg.edges-csv,
         kgr:enrichr-kg.graph,
@@ -8441,6 +8497,11 @@ kgr:ensembl a schema1:DataSource ;
         kgr:genecards.web.interface,
         kgr:genomickb.graph,
         kgr:gpmdb.api,
+        kgr:gtrd.target_genes,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:hrpimp.data,
         kgr:hrpimp.huri.psi,
         kgr:kg-jensenlab-diseases.edges.kgx,
@@ -8549,6 +8610,8 @@ kgr:envo a schema1:Ontology ;
         kgr:rbo.owl,
         kgr:scdo.obo,
         kgr:scdo.owl,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary,
         kgr:uberon.collected-metazoan.owl,
         kgr:uberon.composite-metazoan.owl,
         kgr:uberon.composite-vertebrate.owl,
@@ -9373,7 +9436,8 @@ kgr:faers a schema1:DataSource ;
         kgr:openfda.apis,
         kgr:openfda.downloads,
         kgr:reprotox-kg.graph.faers-female,
-        kgr:reprotox-kg.graph.faers-male ;
+        kgr:reprotox-kg.graph.faers-male,
+        kgr:sep-l1000.faers-offsides ;
     schema1:identifier "faers" ;
     schema1:name "FDA Adverse Event Reporting System" ;
     skos:altLabel "AEMS",
@@ -9539,6 +9603,7 @@ kgr:fbbt a schema1:Ontology ;
         kgr:fbbt.json,
         kgr:fbbt.obo,
         kgr:fbbt.owl,
+        kgr:redfly.search,
         kgr:sri-reference-kg.graph ;
     schema1:identifier "fbbt" ;
     schema1:name "Drosophila gross anatomy" ;
@@ -9815,6 +9880,7 @@ kgr:flybase a schema1:DataSource ;
         kgr:obo-db-ingest.flybase.obo,
         kgr:obo-db-ingest.flybase.owl,
         kgr:obo-db-ingest.flybase.tsv,
+        kgr:redfly.search,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
@@ -10480,6 +10546,8 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cfde-ddkg.archs4,
         kgr:gene-expression-omnibus.portal,
+        kgr:gtrd.chip-seq_peaks,
+        kgr:gtrd.downloads,
         kgr:klocd.portal,
         kgr:nde.graph,
         kgr:omicsdi.api,
@@ -10687,6 +10755,7 @@ kgr:geneshot a schema1:DataSource ;
     dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:geneshot.api,
         kgr:geneshot.archs4-correlation,
         kgr:geneshot.autorif,
@@ -11389,6 +11458,7 @@ kgr:go a schema1:Ontology ;
         kgr:disprot.downloads,
         kgr:disprot.idpo,
         kgr:drugmechdb.graph,
+        kgr:drugmonizome.libraries,
         kgr:eco-kg.graph,
         kgr:ecocore.obo,
         kgr:ecocore.owl,
@@ -11535,6 +11605,8 @@ kgr:go a schema1:Ontology ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:sep-l1000.go-signatures,
+        kgr:sep-l1000.portal,
         kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
@@ -11549,6 +11621,8 @@ kgr:go a schema1:Ontology ;
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full,
         kgr:swisslipid.go,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary,
         kgr:uberon.collected-metazoan.owl,
         kgr:uberon.composite-metazoan.owl,
         kgr:uberon.composite-vertebrate.owl,
@@ -11561,6 +11635,8 @@ kgr:go a schema1:Ontology ;
         kgr:unibiomap.pred.full,
         kgr:xpo.obo,
         kgr:xpo.owl,
+        kgr:yeastract.pathoyeastract,
+        kgr:yeastract.scerevisiae,
         kgr:zp.obo,
         kgr:zp.owl ;
     schema1:identifier "go" ;
@@ -12051,12 +12127,30 @@ kgr:gtr a schema1:DataSource ;
     foaf:maker kgr:ncbi .
 
 kgr:gtrd a schema1:DataSource ;
-    rdfs:label "Gtrd" ;
+    rdfs:label "GTRD" ;
     dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for gtrd. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "GTRD (Gene Transcription Regulation Database) is a database of uniformly annotated and processed next-generation sequencing data on gene transcription regulation, including ChIP-seq, ChIP-exo, DNase-seq, MNase-seq, ATAC-seq, FAIRE-seq, and RNA-seq from cells with altered transcription factor activity. Raw data are collected from GEO, SRA, ENCODE, and modENCODE, annotated with controlled vocabularies and ontologies, and processed with uniform workflows to produce transcription factor binding site peaks and meta-clusters, open chromatin regions and footprints, nucleosome positions, and predicted transcription factor target genes for nine species (human, mouse, rat, zebrafish, fruit fly, nematode, budding and fission yeast, and Arabidopsis). Data are available through a web interface, bulk downloads, and UCSC/Ensembl track hubs." ;
     dcterms:identifier "gtrd" ;
-    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:tflink.binding-sites.human,
+    dcterms:isReferencedBy <PMID:27924024>,
+        <PMID:30445619>,
+        <PMID:33231677> ;
+    dcterms:license <https://wiki.biouml.org/index.php/GTRD> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:3702>,
+        <NCBITaxon:4896>,
+        <NCBITaxon:4932>,
+        <NCBITaxon:6239>,
+        <NCBITaxon:7227>,
+        <NCBITaxon:7955>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:gtrd.chip-seq_peaks,
+        kgr:gtrd.downloads,
+        kgr:gtrd.portal,
+        kgr:gtrd.target_genes,
+        kgr:gtrd.track_hub,
+        kgr:tflink.binding-sites.human,
         kgr:tflink.binding-sites.human.fasta,
         kgr:tflink.binding-sites.human.gff3,
         kgr:tflink.downloads,
@@ -12069,9 +12163,14 @@ kgr:gtrd a schema1:DataSource ;
         kgr:tflink.interactions.worm,
         kgr:tflink.interactions.yeast,
         kgr:tflink.interactions.zebrafish ;
-    schema1:name "Gtrd" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "GTRD" ;
+    skos:inScheme "epigenomics",
+        "gene regulation",
+        "genomics",
+        "model organisms",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://gtrd.biouml.org/> .
 
 kgr:gtrnadb a schema1:DataSource ;
     rdfs:label "GtRNAdb" ;
@@ -12333,6 +12432,50 @@ kgr:harmonizome a schema1:Aggregator ;
     adms:status "Active" ;
     foaf:homepage <https://maayanlab.cloud/Harmonizome/> .
 
+kgr:hcop a schema1:Aggregator ;
+    rdfs:label "HCOP" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "HCOP (HGNC Comparison of Orthology Predictions) is an HGNC tool and dataset that integrates orthology assertions between human genes and genes of 19 other species (chimp, macaque, mouse, rat, dog, cat, horse, cattle, pig, opossum, platypus, chicken, anole lizard, Xenopus, zebrafish, C. elegans, Drosophila, S. cerevisiae, and S. pombe) from eggNOG, Ensembl Compara, HGNC, HomoloGene, Inparanoid, NCBI Gene orthology, OMA, OrthoDB, OrthoMCL, PANTHER, PhylomeDB, PomBase, TreeFam, and ZFIN. Each predicted ortholog pair lists the supporting sources, so the number of concurring databases indicates reliability, and gene data come from the relevant nomenclature and model organism databases. Data are updated weekly." ;
+    dcterms:identifier "hcop" ;
+    dcterms:isReferencedBy <PMID:16284797>,
+        <PMID:16951416>,
+        <PMID:33959747> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:13616>,
+        <NCBITaxon:28377>,
+        <NCBITaxon:284812>,
+        <NCBITaxon:4932>,
+        <NCBITaxon:6239>,
+        <NCBITaxon:7227>,
+        <NCBITaxon:7955>,
+        <NCBITaxon:8364>,
+        <NCBITaxon:9031>,
+        <NCBITaxon:9258>,
+        <NCBITaxon:9544>,
+        <NCBITaxon:9598>,
+        <NCBITaxon:9606>,
+        <NCBITaxon:9615>,
+        <NCBITaxon:9685>,
+        <NCBITaxon:9796>,
+        <NCBITaxon:9823>,
+        <NCBITaxon:9913> ;
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.docs,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web ;
+    schema1:name "HCOP" ;
+    skos:altLabel "HGNC Comparison of Orthology Predictions" ;
+    skos:inScheme "genomics",
+        "model organisms",
+        "molecular evolution",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.genenames.org/tools/hcop/> .
+
 kgr:hetionet a schema1:KnowledgeGraph ;
     rdfs:label "Hetionet" ;
     dcterms:created "2025-06-24T00:00:00+00:00"^^xsd:dateTime ;
@@ -12402,6 +12545,10 @@ kgr:hgnc a schema1:DataSource ;
         kgr:genereviews.genes-diseases,
         kgr:genereviews.genes-uniprot,
         kgr:genomickb.graph,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:hra-kg.graph.json,
         kgr:hra-kg.graph.nq,
         kgr:hra-kg.graph.nt,
@@ -12536,6 +12683,17 @@ kgr:hipsci a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.hipsci.org/> .
 
+kgr:hmchip a schema1:DataSource ;
+    rdfs:label "Hmchip" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for hmchip. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "hmchip" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:htridb.downloads ;
+    schema1:name "Hmchip" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:hmdb a schema1:Aggregator ;
     rdfs:label "Human Metabolome Database" ;
     dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
@@ -12666,6 +12824,10 @@ kgr:homologene a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2759> ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:homologene.data,
         kgr:homologene.ftp_archive,
         kgr:homologene.xml,
@@ -13155,12 +13317,16 @@ kgr:htn a schema1:Ontology ;
     foaf:homepage <https://github.com/aellenhicks/htn_owl> .
 
 kgr:htridb a schema1:DataSource ;
-    rdfs:label "Htridb" ;
+    rdfs:label "HTRIdb" ;
     dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for htridb. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "HTRIdb (Human Transcriptional Regulation Interactions database) is an open-access database of experimentally verified interactions between human transcription factors and their target genes, developed at the Universidade Estadual Paulista (UNESP), Botucatu, Brazil. Each interaction records the TF and target gene symbols and NCBI Gene IDs, the experimental technique used to detect it, and the PubMed ID of the supporting article. At publication (2012) it held 51,871 interactions between 284 TFs and 18,302 target genes, curated from small- and mid-scale experiments in the literature and from ChIP-chip and ChIP-seq studies. The website has been did not respond when checked in October 2026; the most recent archived snapshot is from August 2022." ;
     dcterms:identifier "htridb" ;
-    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:tflink.binding-sites.human,
+    dcterms:isReferencedBy <PMID:22900683> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:htridb.downloads,
+        kgr:htridb.portal,
+        kgr:tflink.binding-sites.human,
         kgr:tflink.binding-sites.human.fasta,
         kgr:tflink.binding-sites.human.gff3,
         kgr:tflink.downloads,
@@ -13173,9 +13339,11 @@ kgr:htridb a schema1:DataSource ;
         kgr:tflink.interactions.worm,
         kgr:tflink.interactions.yeast,
         kgr:tflink.interactions.zebrafish ;
-    schema1:name "Htridb" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "HTRIdb" ;
+    skos:inScheme "gene regulation",
+        "genomics" ;
+    adms:status "unresponsive" ;
+    foaf:homepage <http://www.lbbc.ibb.unesp.br/htri/> .
 
 kgr:httk a schema1:DataSource ;
     rdfs:label "httk (High-Throughput Toxicokinetics)" ;
@@ -13664,6 +13832,17 @@ kgr:icgc a schema1:DataSource ;
         "genomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.icgc-argo.org/> .
+
+kgr:ich-m5 a schema1:DataSource ;
+    rdfs:label "Ich-m5" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for ich-m5. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "ich-m5" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:nhpid.web ;
+    schema1:name "Ich-m5" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:ickg a schema1:KnowledgeGraph ;
     rdfs:label "Immune Cell Knowledge Graph" ;
@@ -14246,6 +14425,20 @@ kgr:inoh a schema1:DataSource ;
     adms:status "Orphaned" ;
     foaf:homepage <http://www.inoh.org/> .
 
+kgr:inparanoid a schema1:DataSource ;
+    rdfs:label "Inparanoid" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for inparanoid. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "inparanoid" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web ;
+    schema1:name "Inparanoid" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:insight a schema1:KnowledgeGraph ;
     rdfs:label "INSIGHT" ;
     dcterms:created "2025-08-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -14800,6 +14993,7 @@ kgr:kegg a schema1:DataSource ;
         kgr:ctd.pathways,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
+        kgr:drugmonizome.libraries,
         kgr:enrichr-kg.graph,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
@@ -15116,7 +15310,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-19T21:23:25+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-19T22:21:51+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15307,6 +15501,7 @@ kgr:kinomescan a schema1:DataSource ;
     dcterms:identifier "kinomescan" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:kinomescan.portal,
         kgr:kinomescan.spreadsheet,
         kgr:molepro.api,
@@ -15391,6 +15586,38 @@ kgr:knowwheregraph a schema1:KnowledgeGraph ;
     foaf:homepage <https://knowwheregraph.org/> ;
     foaf:maker kgr:ucsb-geography .
 
+kgr:l1000fwd a schema1:DataSource ;
+    rdfs:label "L1000FWD" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "L1000FWD (L1000 FireWorks Display) is a web application from the Ma'ayan Laboratory that visualizes over 16,000 drug and small-molecule induced gene expression signatures from the LINCS L1000 project as interactive two- and three-dimensional maps. Signatures can be colored by cell type, time point, concentration, mechanism of action, and clinical phase, and searched for mimicking or opposing signatures with up and down gene sets. Characteristic direction signatures, signature similarity matrices, gene sets, and metadata are available for download." ;
+    dcterms:identifier "l1000fwd" ;
+    dcterms:isReferencedBy <PMID:29420694> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:drugmonizome.libraries,
+        kgr:l1000fwd.adjacency-matrix,
+        kgr:l1000fwd.api,
+        kgr:l1000fwd.cd-signatures-full,
+        kgr:l1000fwd.cd-signatures-landmark,
+        kgr:l1000fwd.drug-metadata,
+        kgr:l1000fwd.gene-sets-gmt,
+        kgr:l1000fwd.gene-sets-json,
+        kgr:l1000fwd.portal,
+        kgr:l1000fwd.probes-full-metadata,
+        kgr:l1000fwd.probes-landmark-metadata,
+        kgr:l1000fwd.signature-metadata ;
+    schema1:name "L1000FWD" ;
+    doap:repository <https://github.com/MaayanLab/l1000fwd> ;
+    skos:altLabel "L1000 FireWorks Display",
+        "L1000 Fireworks Display" ;
+    skos:inScheme "drug discovery",
+        "gene expression profiling",
+        "genomics",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/l1000fwd/> .
+
 kgr:labeledin a schema1:DataSource ;
     rdfs:label "LabeledIn" ;
     dcterms:created "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
@@ -15467,6 +15694,7 @@ kgr:lincs a schema1:DataSource ;
         kgr:cmap.query_app,
         kgr:digcfdekg.graph,
         kgr:enrichr-kg.graph,
+        kgr:l1000fwd.drug-metadata,
         kgr:lincs.api,
         kgr:lincs.portal,
         kgr:nde.graph,
@@ -15505,14 +15733,33 @@ kgr:lincs-l1000 a schema1:DataSource ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:drugshot.l1000-similarity,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
+        kgr:l1000fwd.adjacency-matrix,
+        kgr:l1000fwd.api,
+        kgr:l1000fwd.cd-signatures-full,
+        kgr:l1000fwd.cd-signatures-landmark,
+        kgr:l1000fwd.drug-metadata,
+        kgr:l1000fwd.gene-sets-gmt,
+        kgr:l1000fwd.gene-sets-json,
+        kgr:l1000fwd.portal,
+        kgr:l1000fwd.probes-full-metadata,
+        kgr:l1000fwd.probes-landmark-metadata,
+        kgr:l1000fwd.signature-metadata,
         kgr:lincs-l1000.clue,
         kgr:lincs-l1000.cmap,
         kgr:lincs-l1000.geo,
         kgr:reprotox-kg.graph.drug-similarity,
         kgr:reprotox-kg.graph.sigcom-lincs,
+        kgr:sep-l1000.go-signatures,
+        kgr:sep-l1000.lincs-signatures,
+        kgr:sep-l1000.maccs-fingerprints,
+        kgr:sep-l1000.portal,
+        kgr:sep-l1000.probes-metadata,
+        kgr:sep-l1000.smiles-metadata,
+        kgr:sep-l1000.strongest-signatures-metadata,
         kgr:sigcom-lincs.cp-coefficients,
         kgr:sigcom-lincs.cp-consensus,
         kgr:sigcom-lincs.cp-gmt,
@@ -16333,7 +16580,10 @@ kgr:meddra a schema1:DataSource ;
         kgr:idisk.code,
         kgr:meddra.ich-page,
         kgr:meddra.release-files,
-        kgr:meddra.web-browser ;
+        kgr:meddra.web-browser,
+        kgr:sep-l1000.faers-offsides,
+        kgr:sep-l1000.portal,
+        kgr:sep-l1000.sider ;
     schema1:name "MedDRA" ;
     skos:altLabel "Medical Dictionary for Regulatory Activities" ;
     skos:inScheme "biomedical",
@@ -16901,6 +17151,10 @@ kgr:mgi a schema1:DataSource ;
         kgr:gencode.mouse.gtf,
         kgr:genecards.web.interface,
         kgr:gp-kg.graph,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:kg-alzheimers.graph,
         kgr:kg-predict.gpkg,
         kgr:mgi.portal,
@@ -17359,6 +17613,20 @@ kgr:mixs a schema1:DataModel ;
     adms:status "Active" ;
     foaf:homepage <https://w3id.org/mixs> .
 
+kgr:mlpcn-profiling a schema1:DataSource ;
+    rdfs:label "Mlpcn-profiling" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for mlpcn-profiling. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "mlpcn-profiling" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:sep-l1000.maccs-fingerprints,
+        kgr:sep-l1000.mlpcn-morphology,
+        kgr:sep-l1000.portal,
+        kgr:sep-l1000.smiles-metadata ;
+    schema1:name "Mlpcn-profiling" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:mmo a schema1:Ontology ;
     rdfs:label "Measurement method ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -17451,6 +17719,18 @@ kgr:mod a schema1:Ontology ;
         "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <http://www.psidev.info/MOD> .
+
+kgr:modencode a schema1:DataSource ;
+    rdfs:label "Modencode" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for modencode. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "modencode" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:gtrd.chip-seq_peaks,
+        kgr:gtrd.downloads ;
+    schema1:name "Modencode" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:modomics a schema1:DataSource ;
     rdfs:label "MODOMICS" ;
@@ -17749,6 +18029,8 @@ kgr:mp a schema1:Ontology ;
         kgr:scdo.obo,
         kgr:scdo.owl,
         kgr:sri-reference-kg.graph,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "mp" ;
@@ -18468,6 +18750,10 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:gtr.test_condition_gene,
         kgr:gtr.xml,
         kgr:gtrx.data,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:hetionet.data.edges,
         kgr:hetionet.data.json,
         kgr:hetionet.data.neo4j,
@@ -18475,6 +18761,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:hetionet.hetnetpy,
         kgr:hetionet.neo4j,
         kgr:hetionet.search,
+        kgr:htridb.downloads,
         kgr:kg-alzheimers.graph,
         kgr:kg-covid-19.graph,
         kgr:microbiomekg.api,
@@ -18626,6 +18913,8 @@ kgr:ncbitaxon a schema1:Ontology ;
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:sri-reference-kg.graph,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary,
         kgr:uberon.collected-metazoan.owl,
         kgr:uberon.composite-metazoan.owl,
         kgr:uberon.composite-vertebrate.owl,
@@ -18947,6 +19236,27 @@ kgr:ngdc a schema1:Aggregator ;
         "genomics" ;
     adms:status "Active" ;
     foaf:homepage <https://ngdc.cncb.ac.cn/> .
+
+kgr:nhpid a schema1:DataSource ;
+    rdfs:label "Natural Health Products Ingredients Database" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Natural Health Products Ingredients Database (NHPID) is Health Canada's repository of scientific terminology and pre-cleared information approved by the Natural and Non-prescription Health Products Directorate (NNHPD). It lists acceptable medicinal, non-medicinal, homeopathic, and non-NHP ingredients for natural health products with their restrictions and details such as CAS numbers, organism parts, and preparations; controlled vocabularies used in NHP product licence applications (dosage forms, routes of administration, units, ingredient categories, organism parts, non-medicinal purposes, test methods); and single-ingredient and product monographs." ;
+    dcterms:identifier "nhpid" ;
+    dcterms:license <https://www.canada.ca/en/transparency/terms.html> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:nhpid.product-monographs,
+        kgr:nhpid.single-ingredient-monographs,
+        kgr:nhpid.web ;
+    schema1:name "Natural Health Products Ingredients Database" ;
+    skos:altLabel "BDIPSN",
+        "Base de données des ingrédients des produits de santé naturels",
+        "NHPID" ;
+    skos:inScheme "chemistry and biochemistry",
+        "natural products",
+        "nutrition",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng> .
 
 kgr:nhpn a schema1:DataSource ;
     rdfs:label "National Highway Planning Network" ;
@@ -20204,8 +20514,11 @@ kgr:offsides a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.embeddings,
+        kgr:drugmonizome.libraries,
         kgr:offsides.data,
-        kgr:offsides.docs ;
+        kgr:offsides.docs,
+        kgr:sep-l1000.faers-offsides,
+        kgr:sep-l1000.portal ;
     schema1:name "OFFSIDES" ;
     doap:repository <https://github.com/tatonetti-lab/nsides> ;
     skos:altLabel "OffSIDES" ;
@@ -20452,7 +20765,11 @@ kgr:oma a schema1:DataSource ;
         <https://doi.org/10.1093/nar/gkad1020> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:oma.api.rest,
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
+        kgr:oma.api.rest,
         kgr:oma.api.sparql,
         kgr:oma.group-descriptions.txt,
         kgr:oma.groups.txt,
@@ -21576,7 +21893,11 @@ kgr:orthodb a schema1:DataSource ;
         <doi:10.1093/nar/gky1053> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:orthodb.aa_fasta,
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
+        kgr:orthodb.aa_fasta,
         kgr:orthodb.api.rest,
         kgr:orthodb.api.sparql,
         kgr:orthodb.cds_fasta,
@@ -21594,6 +21915,20 @@ kgr:orthodb a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.orthodb.org/> ;
     foaf:maker kgr:sib .
+
+kgr:orthomcl a schema1:DataSource ;
+    rdfs:label "Orthomcl" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for orthomcl. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "orthomcl" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web ;
+    schema1:name "Orthomcl" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:osv a schema1:DataSource ;
     rdfs:label "OSV (Open Source Vulnerabilities)" ;
@@ -21790,6 +22125,10 @@ kgr:panther a schema1:Resource ;
         kgr:genecards.web.interface,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:kg-alzheimers.graph,
         kgr:kg-monarch.graph,
         kgr:kg-monarch.graph.duckdb,
@@ -22685,6 +23024,7 @@ kgr:pharmgkb a schema1:Resource ;
         kgr:clinpgx.downloads,
         kgr:clinpgx.portal,
         kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:genecards.pharmacogenomics,
         kgr:genecards.web.interface,
         kgr:ibkh.graph,
@@ -23078,6 +23418,20 @@ kgr:phosphositeplus a schema1:Aggregator ;
         "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.phosphosite.org/> .
+
+kgr:phylomedb a schema1:DataSource ;
+    rdfs:label "Phylomedb" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for phylomedb. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "phylomedb" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web ;
+    schema1:name "Phylomedb" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:physiome-model-repository a schema1:DataSource ;
     rdfs:label "Physiome Model Repository" ;
@@ -23500,7 +23854,11 @@ kgr:pombase a schema1:Resource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:4896>,
         <NCBITaxon:4932> ;
-    schema1:hasPart kgr:iptmnet.ptm,
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
+        kgr:iptmnet.ptm,
         kgr:kg-alzheimers.graph,
         kgr:kg-monarch.graph,
         kgr:kg-monarch.graph.duckdb,
@@ -23524,7 +23882,8 @@ kgr:pombase a schema1:Resource ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db,
-        kgr:sri-reference-kg.graph ;
+        kgr:sri-reference-kg.graph,
+        kgr:yeastract.community ;
     schema1:identifier "pombase" ;
     schema1:name "PomBase" ;
     doap:repository <https://www.pombase.org/datasets> ;
@@ -24350,6 +24709,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:chemid.pubchem-guide,
         kgr:chemid.pubchem-source,
         kgr:comptox-dashboard.portal,
+        kgr:drugmonizome.libraries,
         kgr:drugshot.drugrif,
         kgr:dsstoxdb.downloads,
         kgr:echemportal.portal,
@@ -24369,6 +24729,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:icees-kg.metadata,
         kgr:icees-kg.trapi,
         kgr:klocd.portal,
+        kgr:l1000fwd.drug-metadata,
         kgr:markerdb.api,
         kgr:markerdb.chemicals.tsv,
         kgr:microbiomekg.api,
@@ -24399,6 +24760,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:repohub.sample-info.tsv,
         kgr:reprotox-kg.data,
         kgr:reprotox-kg.portal,
+        kgr:sep-l1000.smiles-metadata,
         kgr:stitch.api,
         kgr:stitch.downloads,
         kgr:stitch.portal,
@@ -24476,6 +24838,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:hald.longevity-biomarkers.json,
         kgr:hald.relation-info.json,
         kgr:hald.roles.csv,
+        kgr:htridb.downloads,
         kgr:ickg.graph-data,
         kgr:ikraph.code,
         kgr:ikraph.graph,
@@ -24511,6 +24874,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:pubmed.portal,
         kgr:pubmed.updates,
         kgr:rdf-portal.sparql.ncbi,
+        kgr:redfly.search,
         kgr:reprotox-kg.data,
         kgr:reprotox-kg.graph.core,
         kgr:reprotox-kg.graph.drugshot-hpo,
@@ -24534,7 +24898,10 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:ttd.target-compound,
         kgr:ttd.target-disease,
         kgr:ttd.target-drug,
-        kgr:ttd.targets-raw ;
+        kgr:ttd.targets-raw,
+        kgr:yeastract.ncyeastract,
+        kgr:yeastract.pathoyeastract,
+        kgr:yeastract.scerevisiae ;
     schema1:identifier "pubmed" ;
     schema1:name "PubMed and MEDLINE" ;
     doap:repository <https://www.ncbi.nlm.nih.gov/> ;
@@ -25051,12 +25418,24 @@ kgr:reconx a schema1:DataSource ;
     foaf:homepage <https://www.vmh.life/> .
 
 kgr:redfly a schema1:DataSource ;
-    rdfs:label "Redfly" ;
+    rdfs:label "REDfly" ;
     dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for redfly. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "REDfly (Regulatory Element Database for Drosophila and other insects) is a curated knowledgebase of insect transcriptional cis-regulatory sequences, including reporter-construct-defined cis-regulatory modules (CRMs), CRM segments, inferred and predicted CRMs, and transcription factor binding sites (TFBSs). Records are curated from the published literature with an emphasis on empirically validated elements, and include DNA sequence and coordinates, associated genes, and the expression patterns they direct annotated with anatomy ontology terms. Most data are for Drosophila melanogaster, with a growing number of other insect species. REDfly is developed by the Halfon lab and the Center for Computational Research at the University at Buffalo." ;
+    dcterms:hasVersion "10.0.1" ;
     dcterms:identifier "redfly" ;
-    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:tflink.binding-sites.human,
+    dcterms:isReferencedBy <PMID:16303794>,
+        <PMID:18039705>,
+        <PMID:20965965>,
+        <PMID:30329093>,
+        <PMID:35886794> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:50557>,
+        <NCBITaxon:7227> ;
+    schema1:hasPart kgr:redfly.jbrowse,
+        kgr:redfly.scrmshaw,
+        kgr:redfly.search,
+        kgr:tflink.binding-sites.human,
         kgr:tflink.binding-sites.human.fasta,
         kgr:tflink.binding-sites.human.gff3,
         kgr:tflink.downloads,
@@ -25069,9 +25448,15 @@ kgr:redfly a schema1:DataSource ;
         kgr:tflink.interactions.worm,
         kgr:tflink.interactions.yeast,
         kgr:tflink.interactions.zebrafish ;
-    schema1:name "Redfly" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "REDfly" ;
+    doap:repository <https://github.com/redflydb/redfly> ;
+    skos:inScheme "gene regulation",
+        "genomics",
+        "insects",
+        "model organisms",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://redfly.ccr.buffalo.edu/> .
 
 kgr:rediportal a schema1:DataSource ;
     rdfs:label "REDIportal" ;
@@ -25285,6 +25670,7 @@ kgr:repohub a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:molepro.api,
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
@@ -25438,6 +25824,10 @@ kgr:rgd a schema1:DataSource ;
     schema1:hasPart kgr:babel.compendia,
         kgr:disgenet.data,
         kgr:genecards.web.interface,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:kg-alzheimers.graph,
         kgr:neo.model,
         kgr:neo.obo,
@@ -26302,6 +26692,38 @@ kgr:sep a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <http://psidev.info/index.php?q=node/312> .
 
+kgr:sep-l1000 a schema1:DataSource ;
+    rdfs:label "SEP-L1000" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "SEP-L1000 (Side Effect Prediction based on L1000 data) is a web portal from the Ma'ayan Laboratory that presents adverse drug reaction (ADR) predictions for 20,412 small molecules profiled by the LINCS L1000 project across 1,054 side effects. Predictions come from multi-label extremely randomized trees classifiers trained on known ADRs from SIDER and OFFSIDES, using L1000 gene expression signatures, Gene Ontology enrichment vectors, chemical fingerprints, and cell morphology profiles as features. The processed feature and label matrices are available for download." ;
+    dcterms:identifier "sep-l1000" ;
+    dcterms:isReferencedBy <PMID:27153606> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:drugmonizome.libraries,
+        kgr:sep-l1000.faers-offsides,
+        kgr:sep-l1000.go-signatures,
+        kgr:sep-l1000.lincs-signatures,
+        kgr:sep-l1000.maccs-fingerprints,
+        kgr:sep-l1000.mlpcn-morphology,
+        kgr:sep-l1000.portal,
+        kgr:sep-l1000.probes-metadata,
+        kgr:sep-l1000.sider,
+        kgr:sep-l1000.smiles-metadata,
+        kgr:sep-l1000.strongest-signatures-metadata ;
+    schema1:name "SEP-L1000" ;
+    doap:repository <https://github.com/MaayanLab/SEP-L1000> ;
+    skos:altLabel "Side Effect Prediction based on L1000 data" ;
+    skos:inScheme "drug discovery",
+        "gene expression profiling",
+        "genomics",
+        "information technology",
+        "machine learning",
+        "pharmacology",
+        "pharmacovigilance" ;
+    adms:status "Active" ;
+    foaf:homepage <http://maayanlab.net/SEP-L1000/> .
+
 kgr:sepio a schema1:Ontology ;
     rdfs:label "Scientific Evidence and Provenance Information Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -26392,6 +26814,10 @@ kgr:sgd a schema1:DataSource ;
     schema1:hasPart kgr:babel.compendia,
         kgr:genecards.model.organisms,
         kgr:genecards.web.interface,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:kg-alzheimers.graph,
         kgr:neo.model,
         kgr:neo.obo,
@@ -26413,7 +26839,8 @@ kgr:sgd a schema1:DataSource ;
         kgr:string.protein.links.full,
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
-        kgr:string.protein.physical.links.full ;
+        kgr:string.protein.physical.links.full,
+        kgr:yeastract.scerevisiae ;
     schema1:identifier "sgd" ;
     schema1:name "Saccharomyces Genome Database" ;
     doap:repository <https://github.com/yeastgenome/SGDBackend-Nex2> ;
@@ -26514,6 +26941,7 @@ kgr:sider a schema1:DataSource ;
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:hetionet.data.edges,
         kgr:hetionet.data.json,
         kgr:hetionet.data.neo4j,
@@ -26538,6 +26966,8 @@ kgr:sider a schema1:DataSource ;
         kgr:pharmebinet.tsv,
         kgr:pharmkg.graph,
         kgr:primekg.graph,
+        kgr:sep-l1000.portal,
+        kgr:sep-l1000.sider,
         kgr:sider.drug_atc,
         kgr:sider.drug_names,
         kgr:sider.meddra,
@@ -27364,6 +27794,8 @@ kgr:sra a schema1:DataSource ;
         kgr:chip-atlas.portal,
         kgr:chip-atlas.targetgenes,
         kgr:ddbj.dra,
+        kgr:gtrd.chip-seq_peaks,
+        kgr:gtrd.downloads,
         kgr:imodulondb.datasets,
         kgr:imodulondb.imodulonminer,
         kgr:imodulondb.modulome_workflow,
@@ -27547,6 +27979,7 @@ kgr:stitch a schema1:DataSource ;
         kgr:clinicalkg.graph,
         kgr:date.archive,
         kgr:drugenrichr.libraries,
+        kgr:drugmonizome.libraries,
         kgr:molepro.api,
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
@@ -27556,6 +27989,8 @@ kgr:stitch a schema1:DataSource ;
         kgr:stitch.api,
         kgr:stitch.downloads,
         kgr:stitch.portal,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary,
         kgr:unibiomap.auxs,
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
@@ -27654,6 +28089,8 @@ kgr:string a schema1:DataSource ;
         kgr:string.species,
         kgr:string.species.tree,
         kgr:string.web,
+        kgr:tagger.dictionary,
+        kgr:tagger.full-dictionary,
         kgr:tcrd.api,
         kgr:tcrd.database_download,
         kgr:tcrd.documentation,
@@ -27951,6 +28388,32 @@ kgr:tads a schema1:Ontology ;
     skos:inScheme "anatomy and development" ;
     adms:status "Inactive" ;
     foaf:homepage <https://www.vectorbase.org/ontology-browser> .
+
+kgr:tagger a schema1:DataSource ;
+    rdfs:label "Tagger" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Tagger is the JensenLab dictionary-based named entity recognition (NER) engine, a fast C++ program with a Python interface that finds mentions of genes/proteins, chemicals, species, diseases, tissues, subcellular compartments, environments, phenotypes, and Gene Ontology terms in text and normalizes them to database identifiers. It is available as open-source software, as a public web service (tagger.jensenlab.org), and with precompiled dictionaries, and it produces the weekly text-mining results used by STRING, DISEASES, TISSUES, COMPARTMENTS, and ORGANISMS." ;
+    dcterms:identifier "tagger" ;
+    dcterms:isReferencedBy <PMID:23823062>,
+        <doi:10.1101/067132> ;
+    dcterms:license <https://opensource.org/licenses/BSD-2-Clause> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:tagger.api,
+        kgr:tagger.dictionary,
+        kgr:tagger.docs,
+        kgr:tagger.full-dictionary,
+        kgr:tagger.repository ;
+    schema1:name "Tagger" ;
+    doap:repository <https://github.com/larsjuhljensen/tagger> ;
+    skos:altLabel "JensenLab Tagger",
+        "tagcorpus" ;
+    skos:inScheme "genomics",
+        "information technology",
+        "literature",
+        "natural language processing",
+        "software" ;
+    adms:status "Active" ;
+    foaf:homepage <https://jensenlab.org/resources/textmining/> .
 
 kgr:tahe a schema1:Ontology ;
     rdfs:label "Terminology of Anatomy of Human Embryology" ;
@@ -28316,6 +28779,17 @@ kgr:tflink a schema1:Aggregator ;
         "organisms" ;
     adms:status "Active" ;
     foaf:homepage <https://tflink.net/> .
+
+kgr:tga-approved-terminology a schema1:DataSource ;
+    rdfs:label "Tga-approved-terminology" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for tga-approved-terminology. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "tga-approved-terminology" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:nhpid.web ;
+    schema1:name "Tga-approved-terminology" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:tgma a schema1:Ontology ;
     rdfs:label "Mosquito gross anatomy ontology" ;
@@ -28739,6 +29213,10 @@ kgr:treefam a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkt1055> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:treefam.downloads,
         kgr:treefam.site ;
     schema1:name "TreeFam" ;
@@ -29466,6 +29944,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:gpcrdb.api,
         kgr:gpcrdb.data,
         kgr:gpcrdb.portal,
+        kgr:gtrd.target_genes,
         kgr:hra.data,
         kgr:iid.human_annotated_ppis,
         kgr:iid.mouse_annotated_ppis,
@@ -29889,6 +30368,20 @@ kgr:vectology a schema1:Resource ;
         "machine learning" ;
     adms:status "Inactive" ;
     foaf:homepage <http://vectology.mrcieu.ac.uk/> .
+
+kgr:vgnc a schema1:DataSource ;
+    rdfs:label "Vgnc" ;
+    dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for vgnc. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "vgnc" ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web ;
+    schema1:name "Vgnc" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:vhog a schema1:Ontology ;
     rdfs:label "Vertebrate Homologous Ontology Group Ontology" ;
@@ -30427,6 +30920,10 @@ kgr:wormbase a schema1:DataSource ;
     schema1:about <NCBITaxon:6237> ;
     schema1:hasPart kgr:babel.compendia,
         kgr:genecards.web.interface,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:neo.model,
         kgr:neo.obo,
         kgr:sri-reference-kg.graph,
@@ -30513,6 +31010,10 @@ kgr:xenbase a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:8355> ;
     schema1:hasPart kgr:biogrid.identifiers,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:kg-alzheimers.graph,
         kgr:kg-monarch.graph,
         kgr:kg-monarch.graph.duckdb,
@@ -30587,11 +31088,29 @@ kgr:xpo a schema1:Ontology ;
     foaf:homepage <https://github.com/obophenotype/xenopus-phenotype-ontology> .
 
 kgr:yeastract a schema1:DataSource ;
-    rdfs:label "Yeastract" ;
+    rdfs:label "YEASTRACT" ;
     dcterms:created "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for yeastract. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "YEASTRACT (Yeast Search for Transcriptional Regulators And Consensus Tracking) is a curated repository of documented regulatory associations between transcription factors (TFs) and target genes, and of TF binding sites, in Saccharomyces cerevisiae, compiled by manual curation of the published literature. It is now part of the YEASTRACT+ portal, which also hosts PathoYeastract (pathogenic Candida species and Cryptococcus neoformans), N.C.Yeastract (non-conventional biotechnological yeasts), and CommunityYeastract (automatically generated databases for further species and strains). YEASTRACT+ provides tools to search regulators, targets, and associations, analyze promoter motifs, rank genes by TF or GO term, compare regulatory networks across species through orthology, and combine regulatory data with genome-scale metabolic models. In 2023 the portal held over 300,000 documented regulatory associations across 11 yeast species, about 215,000 of them for S. cerevisiae." ;
     dcterms:identifier "yeastract" ;
-    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <PMID:16381908>,
+        <PMID:29036684>,
+        <PMID:31586406>,
+        <PMID:36350610> ;
+    dcterms:license <https://yeastract-plus.org/termsusage.php> ;
+    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:28985>,
+        <NCBITaxon:460519>,
+        <NCBITaxon:4911>,
+        <NCBITaxon:4932>,
+        <NCBITaxon:4952>,
+        <NCBITaxon:4954>,
+        <NCBITaxon:498019>,
+        <NCBITaxon:5207>,
+        <NCBITaxon:5286>,
+        <NCBITaxon:5476>,
+        <NCBITaxon:5478>,
+        <NCBITaxon:5480>,
+        <NCBITaxon:5482> ;
     schema1:hasPart kgr:tflink.binding-sites.human,
         kgr:tflink.binding-sites.human.fasta,
         kgr:tflink.binding-sites.human.gff3,
@@ -30604,10 +31123,20 @@ kgr:yeastract a schema1:DataSource ;
         kgr:tflink.interactions.rat,
         kgr:tflink.interactions.worm,
         kgr:tflink.interactions.yeast,
-        kgr:tflink.interactions.zebrafish ;
-    schema1:name "Yeastract" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:tflink.interactions.zebrafish,
+        kgr:yeastract.community,
+        kgr:yeastract.ncyeastract,
+        kgr:yeastract.pathoyeastract,
+        kgr:yeastract.portal,
+        kgr:yeastract.scerevisiae ;
+    schema1:name "YEASTRACT" ;
+    skos:inScheme "gene regulation",
+        "genomics",
+        "microbiology",
+        "model organisms",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://yeastract-plus.org/> .
 
 kgr:yoda a schema1:DataSource ;
     rdfs:label "The YODA Project" ;
@@ -30722,6 +31251,10 @@ kgr:zfin a schema1:DataSource ;
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:genecards.model.organisms,
+        kgr:hcop.all-seven-column,
+        kgr:hcop.all-sixteen-column,
+        kgr:hcop.species-downloads,
+        kgr:hcop.web,
         kgr:kg-alzheimers.graph,
         kgr:kg-monarch.graph,
         kgr:kg-monarch.graph.duckdb,
@@ -35000,6 +35533,26 @@ kgr:drugmechdb.web a schema1:GraphicalInterface ;
     dcterms:description "Web interface for exploring curated DrugMechDB paths by drug and disease." ;
     schema1:url <https://sulab.github.io/DrugMechDB/> .
 
+kgr:drugmonizome.data-api a schema1:ProgrammingInterface ;
+    rdfs:label "Drugmonizome Data API" ;
+    dcterms:description "Signature Commons data API (EnrichmentAPI) for fast drug set enrichment queries over the Drugmonizome libraries." ;
+    schema1:url <https://maayanlab.cloud/drugmonizome/data-api/> .
+
+kgr:drugmonizome.metadata-api a schema1:ProgrammingInterface ;
+    rdfs:label "Drugmonizome Metadata API" ;
+    dcterms:description "Signature Commons metadata API (LoopBack, OpenAPI) for querying Drugmonizome resources, libraries, drug sets, and small-molecule entities and their metadata." ;
+    schema1:url <https://maayanlab.cloud/drugmonizome/metadata-api/> .
+
+kgr:drugmonizome.ml-appyter a schema1:GraphicalInterface ;
+    rdfs:label "Drugmonizome-ML" ;
+    dcterms:description "Drugmonizome-ML Appyter, a Jupyter-notebook-based web app that builds customized machine learning pipelines from selected Drugmonizome drug set libraries to predict drug attributes such as side effects." ;
+    schema1:url <https://appyters.maayanlab.cloud/Drugmonizome_ML/> .
+
+kgr:drugmonizome.portal a schema1:GraphicalInterface ;
+    rdfs:label "Drugmonizome Web Application" ;
+    dcterms:description "Web search engine for querying drug set libraries by term or drug, and for submitting drug lists for drug set enrichment analysis against the Drugmonizome libraries." ;
+    schema1:url <https://maayanlab.cloud/drugmonizome/> .
+
 kgr:drugshot.api a schema1:ProgrammingInterface ;
     rdfs:label "DrugShot API" ;
     dcterms:description "REST API with POST endpoints to search PubMed-linked drug rankings, retrieve drug publications, and get associated drugs from literature co-mention or L1000 signature similarity." ;
@@ -37829,6 +38382,16 @@ kgr:gtr.test_version a schema1:Product ;
     dcterms:description "Tab-delimited test version history for all publicly available GTR tests, with laboratory, location, CLIA number, conditions, methods, platforms, genes and status fields for each test version." ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_version.gz> .
 
+kgr:gtrd.portal a schema1:GraphicalInterface ;
+    rdfs:label "GTRD Web Interface" ;
+    dcterms:description "GTRD web interface for browsing and searching transcription factors, experiments, binding sites, meta-clusters, and target genes, with a built-in BioUML genome browser." ;
+    schema1:url <https://gtrd.biouml.org/> .
+
+kgr:gtrd.track_hub a schema1:Product ;
+    rdfs:label "GTRD Track Hub" ;
+    dcterms:description "UCSC-format track hub with GTRD bigBed and bigWig tracks for hg38, mm10, rn6, danRer11, dm6, ce11, sacCer3, S. pombe, and TAIR10 genome assemblies, viewable in the UCSC and Ensembl genome browsers." ;
+    schema1:url <http://gtrd.biouml.org:8888/downloads/current/gtrdHub/hub.txt> .
+
 kgr:gtrnadb.archives a schema1:Product ;
     rdfs:label "Previous Releases Archive" ;
     dcterms:description "Archive of previous GtRNAdb data releases with change logs" ;
@@ -37968,6 +38531,11 @@ kgr:harmonizome.portal a schema1:GraphicalInterface ;
     rdfs:label "Harmonizome Portal" ;
     dcterms:description "Harmonizome 3.0 web portal for searching and exploring processed gene and protein datasets, resources, genes, attributes, and associations." ;
     schema1:url <https://maayanlab.cloud/Harmonizome/> .
+
+kgr:hcop.docs a schema1:DocumentationProduct ;
+    rdfs:label "HCOP Help" ;
+    dcterms:description "HCOP help page describing search usage, result fields, the orthology sources and versions used, species covered, link templates, and bulk download file layouts." ;
+    schema1:url <https://www.genenames.org/help/hcop/> .
 
 kgr:hifld.api a schema1:ProgrammingInterface ;
     rdfs:label "HIFLD Open Data API" ;
@@ -38448,6 +39016,11 @@ kgr:htn.owl a schema1:OntologyProduct ;
     rdfs:label "HTN" ;
     dcterms:description "HTN" ;
     schema1:url <http://purl.obolibrary.org/obo/htn.owl> .
+
+kgr:htridb.portal a schema1:GraphicalInterface ;
+    rdfs:label "HTRIdb Web Interface" ;
+    dcterms:description "HTRIdb web interface for searching human transcription factor-target gene interactions by TF or target gene, viewing them as networks with Cytoscape Web, and uploading new interactions. The site did not respond when checked on 2026-10-19." ;
+    schema1:url <http://www.lbbc.ibb.unesp.br/htri/> .
 
 kgr:httk.package a schema1:ProcessProduct ;
     rdfs:label "httk R Package" ;
@@ -41808,6 +42381,16 @@ kgr:ngdc.portal a schema1:GraphicalInterface ;
     dcterms:description "Main NGDC web portal, linking to all NGDC databases, tools and submission services, with cross-database search." ;
     schema1:url <https://ngdc.cncb.ac.cn/> .
 
+kgr:nhpid.product-monographs a schema1:Product ;
+    rdfs:label "NHPID Product Monographs" ;
+    dcterms:description "List of NNHPD product monographs, which describe pre-cleared information for multi-ingredient natural health product types." ;
+    schema1:url <https://webprod.hc-sc.gc.ca/nhpid-bdipsn/monosReq?monotype=product&lang=eng> .
+
+kgr:nhpid.single-ingredient-monographs a schema1:Product ;
+    rdfs:label "NHPID Single Ingredient Monographs" ;
+    dcterms:description "List of NNHPD single ingredient monographs, which describe pre-cleared information (sources, doses, uses, risks, quality) for natural health products containing a single medicinal ingredient. Monographs marked with an asterisk are generated directly from the NHPID." ;
+    schema1:url <https://webprod.hc-sc.gc.ca/nhpid-bdipsn/monosReq?monotype=single&lang=eng> .
+
 kgr:nhpn.geojson a schema1:Product ;
     rdfs:label "NHPN GeoJSON edition" ;
     dcterms:description "NHPN version 14.05 distributed as zipped GeoJSON, containing the geospatial line features for the national highway network." ;
@@ -45088,6 +45671,16 @@ kgr:reconx.vmh a schema1:GraphicalInterface ;
     dcterms:description "Virtual Metabolic Human web portal for browsing and querying the Recon human metabolic reconstruction, including reactions, metabolites, genes, and associated microbiota and nutrition data." ;
     schema1:url <https://www.vmh.life/> .
 
+kgr:redfly.jbrowse a schema1:GraphicalInterface ;
+    rdfs:label "REDfly JBrowse" ;
+    dcterms:description "JBrowse genome browser displaying REDfly regulatory elements in genomic context." ;
+    schema1:url <https://redfly.ccr.buffalo.edu/jbrowse> .
+
+kgr:redfly.scrmshaw a schema1:GraphicalInterface ;
+    rdfs:label "REDfly SCRMshaw Predicted CRMs" ;
+    dcterms:description "Search interface for SCRMshaw-predicted cis-regulatory modules across sequenced insect genomes, distributed through REDfly." ;
+    schema1:url <https://redfly.ccr.buffalo.edu/scrm/options> .
+
 kgr:rediportal.portal a schema1:GraphicalInterface ;
     rdfs:label "REDIportal Web Portal" ;
     dcterms:description "Web interface for browsing A-to-I RNA editing sites; supports Search Positions, Search Sample (GTEx/TCGA), Search dsRNA, and Gene View with integrated links to Ensembl, RNAcentral, UniProt, and PRIDE." ;
@@ -46989,6 +47582,21 @@ kgr:tads.owl a schema1:OntologyProduct ;
     dcterms:description "Tick Anatomy Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/tads.owl> .
 
+kgr:tagger.api a schema1:ProgrammingInterface ;
+    rdfs:label "Tagger Web Service" ;
+    dcterms:description "Public Tagger web service. Endpoints such as GetEntities and GetHTML accept a document and a list of entity types (NCBI Taxonomy IDs for proteins of a species, or negative type codes such as -1 for chemicals, -22 for GO cellular components, -25 for BTO tissues, -26 for diseases) and return the recognized entities with their normalized identifiers as TSV, XML, or annotated HTML. The service uses the reduced tagger dictionary. The bare host returns HTTP 400; queries must include an endpoint and parameters." ;
+    schema1:url <https://tagger.jensenlab.org/GetEntities?document=TP53&entity_types=9606&format=tsv> .
+
+kgr:tagger.docs a schema1:DocumentationProduct ;
+    rdfs:label "JensenLab Text-mining Resources" ;
+    dcterms:description "JensenLab text-mining resources page describing the Tagger software, the topic-specific dictionaries (organisms, compartments, tissues, diseases, phenotypes, environments, and per-species gene/protein dictionaries), annotated corpora, and related tools." ;
+    schema1:url <https://jensenlab.org/resources/textmining/> .
+
+kgr:tagger.repository a schema1:ProcessProduct ;
+    rdfs:label "Tagger Source Code" ;
+    dcterms:description "Source code for the tagger/tagcorpus C++ named entity recognition software (with Python bindings via SWIG), including documentation of the dictionary input files and entity type codes." ;
+    schema1:url <https://github.com/larsjuhljensen/tagger> .
+
 kgr:tahe.obo a schema1:OntologyProduct ;
     rdfs:label "tahe.obo" ;
     dcterms:description "Terminology of Anatomy of Human Embryology in OBO format" ;
@@ -48498,6 +49106,11 @@ kgr:xpo.kg-bioportal a schema1:GraphProduct ;
     dcterms:description "KGX TSV transform of Xenopus Phenotype Ontology (XPO), produced by KG-Bioportal from the BioPortal submission. The archive contains XPO_nodes.tsv and XPO_edges.tsv." ;
     schema1:url <https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/XPO.tar.gz> .
 
+kgr:yeastract.portal a schema1:GraphicalInterface ;
+    rdfs:label "YEASTRACT+ Portal" ;
+    dcterms:description "YEASTRACT+ portal giving access to the Yeastract, PathoYeastract, N.C.Yeastract, and CommunityYeastract databases and cross-species tools for transcription regulation analysis in yeasts." ;
+    schema1:url <https://yeastract-plus.org/> .
+
 kgr:yoda.approved-requests a schema1:GraphicalInterface ;
     rdfs:label "YODA Approved Data Requests" ;
     dcterms:description "Listing of approved data requests, with the research proposal, requestor, trials requested and status or publications for each project." ;
@@ -49761,6 +50374,51 @@ kgr:kg-predict.ad_predictions a schema1:Product ;
     rdfs:label "AD Drug Predictions" ;
     dcterms:description "Alzheimer's disease case study drug repurposing predictions" ;
     schema1:url <http://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv> .
+
+kgr:l1000fwd.adjacency-matrix a schema1:Product ;
+    rdfs:label "L1000FWD Signature Adjacency Matrix" ;
+    dcterms:description "Cosine similarity adjacency matrix among all 42,809 significant CD signatures in the landmark gene space, in GCTX (HDF5) format." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/Adjacency_matrix_LM_space_42809x42809.gctx> .
+
+kgr:l1000fwd.api a schema1:ProgrammingInterface ;
+    rdfs:label "L1000FWD API" ;
+    dcterms:description "REST API for searching drugs by name or synonym, retrieving a signature by ID, querying signatures with up and down gene sets, and retrieving the top 50 results. Documented on the API page with Python and R examples." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/api_page> .
+
+kgr:l1000fwd.cd-signatures-full a schema1:Product ;
+    rdfs:label "L1000FWD CD Signatures (Full Space)" ;
+    dcterms:description "Characteristic direction (CD) signature matrix for 42,809 significant L1000 drug and small-molecule signatures in the full space of 22,268 probes, in GCTX (HDF5) format." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/CD_signatures_full_42809x22268.gctx> .
+
+kgr:l1000fwd.cd-signatures-landmark a schema1:Product ;
+    rdfs:label "L1000FWD CD Signatures (Landmark Genes)" ;
+    dcterms:description "Characteristic direction (CD) signature matrix for 42,809 significant L1000 drug and small-molecule signatures in the 978 landmark gene space, in GCTX (HDF5) format." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/CD_signatures_LM_42809x978.gctx> .
+
+kgr:l1000fwd.gene-sets-gmt a schema1:Product ;
+    rdfs:label "L1000FWD Signature Gene Sets (GMT)" ;
+    dcterms:description "Up and down gene sets for the 42,809 CD signatures in the full gene space, in GMT format." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.gmt> .
+
+kgr:l1000fwd.gene-sets-json a schema1:Product ;
+    rdfs:label "L1000FWD Signature Gene Sets (JSON)" ;
+    dcterms:description "Up and down gene sets for the 42,809 CD signatures in the full gene space, in JSON format." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.json> .
+
+kgr:l1000fwd.probes-full-metadata a schema1:Product ;
+    rdfs:label "L1000FWD Full Probe Metadata" ;
+    dcterms:description "Metadata for the 22,268 probes used in the full gene space." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/Probes_full_metadata.csv> .
+
+kgr:l1000fwd.probes-landmark-metadata a schema1:Product ;
+    rdfs:label "L1000FWD Landmark Probe Metadata" ;
+    dcterms:description "Metadata for the L1000 probes of the 978 landmark genes." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/Probes_L1000_metadata.csv> .
+
+kgr:l1000fwd.signature-metadata a schema1:Product ;
+    rdfs:label "L1000FWD Signature Metadata" ;
+    dcterms:description "Metadata for the L1000FWD signatures indexed by sig_id, including batch, cell line, perturbagen, dose, time, and signature strength." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/CD_signature_metadata.csv> .
 
 kgr:lipro.owl a schema1:OntologyProduct ;
     rdfs:label "Lipid Ontology OWL product" ;
@@ -52417,6 +53075,26 @@ kgr:semopenalex.graph a schema1:GraphProduct ;
     dcterms:description "RDF graph representation of the OpenAlex scholarly data as Linked Open Data, distributed as Turtle (TTL) snapshots via the SemOpenAlex code and data repository." ;
     schema1:url <https://github.com/metaphacts/semopenalex> .
 
+kgr:sep-l1000.lincs-signatures a schema1:Product ;
+    rdfs:label "SEP-L1000 LINCS L1000 CD Signatures" ;
+    dcterms:description "Characteristic direction gene expression signatures for 20,339 drugs and small molecules in the 978 landmark gene space, computed from LINCS L1000 profiles." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/LINCS_Gene_Experssion_signatures_CD.csv.gz> .
+
+kgr:sep-l1000.mlpcn-morphology a schema1:Product ;
+    rdfs:label "SEP-L1000 MLPCN Morphological Profiles" ;
+    dcterms:description "Cell morphology profiles (812 Cell Painting image features) for 19,864 small molecules from the Broad Institute MLPCN profiling dataset." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/MLPCN_morplological_profiles.csv.gz> .
+
+kgr:sep-l1000.probes-metadata a schema1:Product ;
+    rdfs:label "SEP-L1000 Probe Metadata" ;
+    dcterms:description "Mapping of L1000 probes to gene symbols." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/meta_Probes_info.csv> .
+
+kgr:sep-l1000.strongest-signatures-metadata a schema1:Product ;
+    rdfs:label "SEP-L1000 Strongest Signature Metadata" ;
+    dcterms:description "Metadata mapping each LINCS L1000 compound (pert_id) to the control and perturbation distil_ids and the strongest signature used." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/meta_LINCS_strongest_signatures.csv> .
+
 kgr:seqapass.app a schema1:GraphicalInterface ;
     rdfs:label "SeqAPASS Web Application" ;
     dcterms:description "The SeqAPASS web application for cross-species comparison of chemical protein targets by primary amino acid sequence, functional domain, and individual amino acid residue similarity, with protein structure generation in version 8. A user account is required." ;
@@ -52656,6 +53334,16 @@ kgr:wikimedia-commons.query-service a schema1:ProgrammingInterface ;
     rdfs:label "Wikimedia Commons Query Service" ;
     dcterms:description "Wikimedia Commons Query Service, a SPARQL endpoint and query interface over Structured Data on Commons statements. Requires logging in with a Commons account." ;
     schema1:url <https://commons-query.wikimedia.org/> .
+
+kgr:yeastract.community a schema1:GraphicalInterface ;
+    rdfs:label "CommunityYeastract" ;
+    dcterms:description "CommunityYeastract, a set of automatically generated YEASTRACT-like databases for additional yeast species and strains (such as Saccharomyces boulardii strains and Schizosaccharomyces pombe 972h-) that predict regulation from homologous genes in the curated YEASTRACT+ databases." ;
+    schema1:url <https://yeastract-plus.org/community/> .
+
+kgr:yeastract.ncyeastract a schema1:GraphicalInterface ;
+    rdfs:label "N.C.Yeastract" ;
+    dcterms:description "N.C.Yeastract web interface with curated TF-target gene regulatory associations for non-conventional yeasts (Zygosaccharomyces bailii, Kluyveromyces lactis, K. marxianus, Yarrowia lipolytica, Komagataella phaffii, and Rhodotorula toruloides), curated from the literature." ;
+    schema1:url <https://yeastract-plus.org/ncyeastract/> .
 
 kgr:yoda.trial-catalog a schema1:GraphicalInterface ;
     rdfs:label "YODA Trial Catalog" ;
@@ -53085,6 +53773,11 @@ kgr:gtr.xml a schema1:Product ;
     dcterms:description "Comprehensive XML extraction of all publicly available tests registered in GTR, validated by the GTRPublicData.xsd schema in the documentation directory. A copy is archived at the end of each month in the xml_archive subdirectory." ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/gtr_ftp.xml.gz> .
 
+kgr:gtrd.target_genes a schema1:Product ;
+    rdfs:label "GTRD Transcription Factor Target Genes" ;
+    dcterms:description "Per-species lists of transcription factor target genes and transcripts, one file per TF (named by UniProt ID), where a gene is a target if its promoter or gene body region contains a GTRD meta-cluster for that TF. Genes and transcripts are identified by Ensembl IDs." ;
+    schema1:url <http://gtrd.biouml.org:8888/downloads/current/intervals/target_genes/> .
+
 kgr:hydrologykg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph Hydrology Knowledge Graph" ;
     dcterms:description "The SAWGraph Hydrology knowledge graph, describing surface water bodies (lakes, rivers, wetlands), the flowlines that connect them, and groundwater features (aquifers, wells, springs) together with their locations. Surface water bodies and flowlines are modeled from USGS NHDPlus data (NHDWaterbody and NHDFlowline); groundwater features are drawn primarily from individual state geological surveys (for example, the Maine Geological Survey). The RDF (Turtle) graph is served through the SAWGraph Hydrology KG SPARQL and Triple Pattern Fragments endpoints." ;
@@ -53109,6 +53802,11 @@ kgr:kg4sl.synlethkg a schema1:GraphProduct ;
     rdfs:label "SynLethKG Data Files" ;
     dcterms:description "Data files for SynLethKG, the knowledge graph used by KG4SL and described as constructed from SynLethDB (v1.0/v2.0) and Hetionet." ;
     schema1:url <https://github.com/JieZheng-ShanghaiTech/KG4SL/tree/main/data> .
+
+kgr:l1000fwd.portal a schema1:GraphicalInterface ;
+    rdfs:label "L1000FWD Web Application" ;
+    dcterms:description "Interactive fireworks and t-SNE maps of drug-induced L1000 signatures for all cell lines and individual cell lines, with signature similarity search using up and down gene sets, signature landing pages, and subset visualization." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/> .
 
 kgr:labeledin.indications a schema1:Product ;
     rdfs:label "LabeledIn Drug Indication Corpus" ;
@@ -53236,6 +53934,11 @@ kgr:ncipidkg.graph.ttl a schema1:GraphProduct ;
     rdfs:label "NCI-PID 2.0 KG RDF graph" ;
     dcterms:description "RDF graph converting NCI Pathway Interaction Database version 2.0 networks into RDF, enriched with INDRA evidence metadata." ;
     schema1:url <https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf> .
+
+kgr:nhpid.web a schema1:GraphicalInterface ;
+    rdfs:label "NHPID Search" ;
+    dcterms:description "Web application for searching NHPID ingredients by name or CAS number and role (homeopathic, medicinal, non-medicinal, non-NHP, component), and for searching the NHP controlled vocabularies by category. Controlled vocabulary terms for dosage forms, routes of administration, and units are adapted from ICH M5 lists, and ingredient naming conventions from the TGA approved terminology." ;
+    schema1:url <https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng> .
 
 kgr:nihreporter.clinicalstudies a schema1:Product ;
     rdfs:label "NIH-Funded Project Clinical Studies" ;
@@ -53436,6 +54139,21 @@ kgr:reprotox-kg.portal a schema1:GraphicalInterface ;
     rdfs:label "ReproTox-KG Explorer" ;
     dcterms:description "Public web interface for querying and exploring ReproTox-KG relationships." ;
     schema1:url <https://maayanlab.cloud/reprotox-kg> .
+
+kgr:sep-l1000.go-signatures a schema1:Product ;
+    rdfs:label "SEP-L1000 GO-Transformed Signatures" ;
+    dcterms:description "Gene Ontology transformed L1000 signatures, giving Principal Angle Enrichment Analysis p-values of each drug signature against GO Biological Process, Cellular Component, and Molecular Function gene sets (20,338 compounds by 4,438 terms)." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/GO_transformed_signatures_PAEA.csv.gz> .
+
+kgr:sep-l1000.maccs-fingerprints a schema1:Product ;
+    rdfs:label "SEP-L1000 MACCS Fingerprints" ;
+    dcterms:description "166-bit MACCS chemical fingerprint matrix for 41,774 drugs and small molecules from LINCS L1000 and MLPCN, computed with Open Babel from SMILES." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/MACCS_bitmatrix.csv.gz> .
+
+kgr:sep-l1000.sider a schema1:Product ;
+    rdfs:label "SEP-L1000 SIDER Side Effect Matrix" ;
+    dcterms:description "On-label drug-ADR matrix (834 drugs by 3,165 MedDRA preferred terms) mined from drug package inserts in SIDER." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/SIDER_PTs.csv.gz> .
 
 kgr:service-kp.portal a schema1:GraphicalInterface ;
     rdfs:label "Service KP SmartAPI Portal" ;
@@ -53870,6 +54588,11 @@ kgr:hrpimp.huri.psi a schema1:Product ;
     dcterms:description "Current HuRI PSI-MI formatted interaction file with detailed experimental information and isoform-specific ORF, transcript, and protein identifiers" ;
     schema1:url <https://www.interactome-atlas.org/data/HuRI.psi> .
 
+kgr:htridb.downloads a schema1:Product ;
+    rdfs:label "HTRIdb Downloads" ;
+    dcterms:description "HTRIdb download page offering all transcription factor-target gene interactions (optionally with associated protein-protein interactions), with experimental techniques and PubMed IDs, as tab-delimited or spreadsheet files. Interactions were manually curated from the literature (found through PubMed searches) and from ChIP-chip and ChIP-seq studies selected via the hmChIP database. The site did not respond when checked on 2026-10-19." ;
+    schema1:url <http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp> .
+
 kgr:idisk.idisk2-entities a schema1:Product ;
     rdfs:label "iDISK 2.0 Entities" ;
     dcterms:description "iDISK 2.0 entity files (dietary supplement ingredients, products, drugs, diseases, and signs and symptoms) in CSV format, integrating DSLD, LNHPD, and MSKCC About Herbs." ;
@@ -53894,6 +54617,11 @@ kgr:kinace.interactions a schema1:GraphProduct ;
     rdfs:label "KiNet Full Interaction Dataset" ;
     dcterms:description "CSV download of the full KiNet human kinase-substrate interaction dataset with source database, evidence, and PMID reference fields" ;
     schema1:url <https://raw.githubusercontent.com/GauravPandeyLab/KiNet/master/data/ksi_source_full_dataset.csv> .
+
+kgr:l1000fwd.drug-metadata a schema1:Product ;
+    rdfs:label "L1000FWD Drug Metadata" ;
+    dcterms:description "Metadata for the profiled drugs and small molecules indexed by pert_id, including LINCS small molecule IDs, names, SMILES, InChIKeys, molecular formulas, and PubChem CIDs." ;
+    schema1:url <https://maayanlab.cloud/l1000fwd/download/Drugs_metadata.csv> .
 
 kgr:mangal.api a schema1:ProgrammingInterface ;
     rdfs:label "mangal.io API" ;
@@ -54055,6 +54783,11 @@ kgr:ptmd.total_pda a schema1:Product ;
     dcterms:description "Complete PTMD 2.0 PTM-disease association download in tab-delimited format" ;
     schema1:url <https://ptmd.biocuckoo.cn/Download/Total.zip> .
 
+kgr:redfly.search a schema1:GraphicalInterface ;
+    rdfs:label "REDfly Search" ;
+    dcterms:description "REDfly search interface for querying CRMs, CRM segments, predicted CRMs, and TFBSs by gene, PubMed ID, location, or expression pattern, with selected records downloadable in several formats including GFF. Records are curated from the published literature." ;
+    schema1:url <https://redfly.ccr.buffalo.edu/search/options?sequence=1&assayed=1&cellCulture=1&range=10000> .
+
 kgr:reprotox-kg.graph.drugshot-hpo a schema1:GraphProduct ;
     rdfs:label "ReproTox-KG DrugShot HPO-Drug Graph" ;
     dcterms:description "Birth defect phenotype to drug associations from DrugShot literature co-mentions (2,802 nodes, 12,502 edges)." ;
@@ -54064,6 +54797,16 @@ kgr:reprotox-kg.graph.geneshot-hpo a schema1:GraphProduct ;
     rdfs:label "ReproTox-KG GeneShot HPO-Gene Graph" ;
     dcterms:description "Birth defect phenotype to gene associations from GeneShot literature co-mentions (6,064 nodes, 13,487 edges)." ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json> .
+
+kgr:sep-l1000.faers-offsides a schema1:Product ;
+    rdfs:label "SEP-L1000 FAERS OFFSIDES Side Effect Matrix" ;
+    dcterms:description "Off-label drug-ADR matrix (684 drugs by 9,404 MedDRA preferred terms) from OFFSIDES, which processed FDA Adverse Event Reporting System (FAERS) reports with propensity score matching." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/FAERS_offsides_PTs.csv.gz> .
+
+kgr:sep-l1000.smiles-metadata a schema1:Product ;
+    rdfs:label "SEP-L1000 Compound SMILES Metadata" ;
+    dcterms:description "Compound metadata for 41,774 LINCS L1000 and MLPCN small molecules with pert_id, name, PubChem CID, and SMILES." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/downloads/meta_SMILES.csv> .
 
 kgr:sniff.atlas-vcf a schema1:Product ;
     rdfs:label "Sniff Atlas sites VCF (v1.0.1)" ;
@@ -54109,6 +54852,16 @@ kgr:who-ictrp.web-service a schema1:ProgrammingInterface ;
     rdfs:label "ICTRP Search Portal Web Service" ;
     dcterms:description "ICTRP Search Portal Web Service, a SOAP/XML web service (operations include GetTrials and GetTrialDetails) for querying the ICTRP database in real time. Access is granted to agreed partners for research purposes, and WHO may charge to recoup costs." ;
     schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal/ictrp-search-portal-web-service> .
+
+kgr:yeastract.pathoyeastract a schema1:GraphicalInterface ;
+    rdfs:label "PathoYeastract" ;
+    dcterms:description "PathoYeastract web interface with curated TF-target gene regulatory associations for pathogenic yeasts (Candida glabrata, C. albicans, C. tropicalis, C. parapsilosis, C. auris, and Cryptococcus neoformans). Associations are manually curated from the literature; GO annotations for Candida genes come from the Candida Genome Database." ;
+    schema1:url <https://yeastract-plus.org/pathoyeastract/> .
+
+kgr:yeastract.scerevisiae a schema1:GraphicalInterface ;
+    rdfs:label "Yeastract (S. cerevisiae)" ;
+    dcterms:description "Yeastract web interface for Saccharomyces cerevisiae, with searches for TFs, target genes, and regulatory associations, DNA motif searches, promoter analysis, regulation matrix generation, and ranking of genes by TF or GO term. Associations are manually curated from the literature; gene and GO annotations come from SGD." ;
+    schema1:url <https://yeastract-plus.org/yeastract/scerevisiae/> .
 
 kgr:activedriverdb.downloads a schema1:Product ;
     rdfs:label "ActiveDriverDB Downloads" ;
@@ -54284,6 +55037,16 @@ kgr:gtr.test_condition_gene a schema1:Product ;
     rdfs:label "GTR Test, Condition and Gene Table" ;
     dcterms:description "Tab-delimited listing of every registered test and the conditions and genes it targets, updated daily. Conditions carry MedGen concept IDs, OMIM numbers and SNOMED CT IDs where available; genes carry NCBI Gene IDs and symbols." ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/GTR/data/test_condition_gene.txt> .
+
+kgr:gtrd.chip-seq_peaks a schema1:Product ;
+    rdfs:label "GTRD ChIP-seq Peaks" ;
+    dcterms:description "Per-species archives of transcription factor ChIP-seq peaks called with GEM, MACS2, PICS, and SISSRs on uniformly reprocessed ChIP-seq data from GEO, SRA, ENCODE, and modENCODE." ;
+    schema1:url <http://gtrd.biouml.org:8888/downloads/current/intervals/chip-seq/> .
+
+kgr:gtrd.downloads a schema1:Product ;
+    rdfs:label "GTRD Downloads" ;
+    dcterms:description "GTRD bulk download directory with plain-text results of uniform annotation and analysis, including experiment metadata, peak and meta-cluster intervals for ChIP-seq, ChIP-exo, DNase-seq, and MNase-seq, bigBed files, target gene lists, and genome browser track hubs. Raw data were obtained from GEO, SRA, ENCODE, and modENCODE." ;
+    schema1:url <https://gtrd.biouml.org/downloads/current/> .
 
 kgr:hpidb.mitab a schema1:Product ;
     rdfs:label "HPIDB PSI-MITAB Dataset" ;
@@ -55006,6 +55769,11 @@ kgr:securechainkg.graph a schema1:GraphProduct ;
     dcterms:description "SecureChain knowledge graph of software supply-chain components, versions, dependencies, and vulnerabilities, served as RDF/Turtle via the project's SPARQL and Triple Pattern Fragments endpoints." ;
     schema1:url <https://purdue-hcss.github.io/nsf-software-supply-chain_security/> .
 
+kgr:sep-l1000.portal a schema1:GraphicalInterface ;
+    rdfs:label "SEP-L1000 Web Portal" ;
+    dcterms:description "Web portal for browsing and searching predicted and known drug-side effect connections by drug or side effect, with side effect-GO term and side effect-phenotype networks." ;
+    schema1:url <http://maayanlab.net/SEP-L1000/> .
+
 kgr:skm.pss.live.boolnet.annotations a schema1:GraphProduct ;
     rdfs:label "PSS Live Downloads (BoolNet), node annotations" ;
     dcterms:description "Current PSS model in Boolean network format compatible with BoolDog and BoolNet. This file contains the node annotations." ;
@@ -55179,6 +55947,16 @@ kgr:pco.owl a schema1:OntologyProduct ;
     rdfs:label "pco.owl" ;
     dcterms:description "Population and Community Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/pco.owl> .
+
+kgr:tagger.dictionary a schema1:Product ;
+    rdfs:label "Tagger Dictionary" ;
+    dcterms:description "Reduced tagger dictionary used by the Tagger web service, as tab-separated entities, names, groups, global, preferred-name, and text files. Gene/protein names come from the STRING alias file, chemical names from STITCH (PubChem compound identifiers), and other names from NCBI Taxonomy, Gene Ontology, BRENDA Tissue Ontology, Disease Ontology, Environment Ontology, and the Mammalian Phenotype Ontology." ;
+    schema1:url <https://download.jensenlab.org/tagger_dictionary.tar.gz> .
+
+kgr:tagger.full-dictionary a schema1:Product ;
+    rdfs:label "Tagger Full Dictionary" ;
+    dcterms:description "Combined full dictionary (entities and names TSV files) used for the weekly text mining of the biomedical literature behind the JensenLab databases (STRING, DISEASES, TISSUES, COMPARTMENTS, ORGANISMS). Built from the STRING alias file, STITCH chemicals, and taxonomy and ontology resources." ;
+    schema1:url <https://download.jensenlab.org/full_dictionary.tar.gz> .
 
 kgr:xpo.obo a schema1:OntologyProduct ;
     rdfs:label "xpo.obo" ;
@@ -55821,6 +56599,11 @@ kgr:stitch.portal a schema1:Product ;
     dcterms:description "Web interface for searching and visualizing chemical-protein interactions across organisms" ;
     schema1:url <http://stitch-db.org/> .
 
+kgr:drugmonizome.libraries a schema1:Product ;
+    rdfs:label "Drugmonizome Drug Set Libraries" ;
+    dcterms:description "The 35 Drugmonizome drug set libraries, listed with metadata and per-library download links. Each library is downloadable as a GMT-like DMT file keyed by InChIKey or by drug name. Sources are DrugBank (targets, enzymes, carriers, transporters, ATC codes), DrugCentral targets, the Drug Repurposing Hub (targets and mechanisms of action), STITCH targets, KINOMEscan kinases, SIDER side effects and indications, PharmGKB variants and OFFSIDES side effects, PubChem and RDKit MACCS chemical fingerprints, Geneshot literature and predicted genes (including ARCHS4 coexpression and Enrichr co-occurrence), CREEDS signatures, and L1000FWD signatures, Enrichr GO and KEGG terms, and SEP-L1000 predicted side effects." ;
+    schema1:url <https://maayanlab.cloud/drugmonizome/metadata-api/libraries> .
+
 kgr:pavs-kg.api a schema1:ProgrammingInterface ;
     rdfs:label "PAVS REST API" ;
     dcterms:description "FastAPI REST API backing the PAVS portal, with OpenAPI documentation, for case search and SPARQL-backed queries." ;
@@ -55835,6 +56618,26 @@ kgr:pavs-kg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "PAVS SPARQL Endpoint" ;
     dcterms:description "Public Virtuoso SPARQL endpoint for the PAVS knowledge graph, containing Saudi case records, gene annotations, HPO disease annotations, HPO information content values and literature phenopackets as RDF named graphs." ;
     schema1:url <https://pavs.phenomebrowser.net/sparql> .
+
+kgr:hcop.all-seven-column a schema1:MappingProduct ;
+    rdfs:label "HCOP All Species Orthologs (7 column)" ;
+    dcterms:description "All human ortholog assertions from HCOP for every ortholog species in one tab-delimited file (7 columns) with the ortholog species taxon ID, human and ortholog NCBI Gene and Ensembl gene IDs, and the assertion IDs." ;
+    schema1:url <https://storage.googleapis.com/public-download-files/hcop/human_all_hcop_seven_column.txt.gz> .
+
+kgr:hcop.all-sixteen-column a schema1:MappingProduct ;
+    rdfs:label "HCOP All Species Orthologs (16 column)" ;
+    dcterms:description "All human ortholog assertions from HCOP for every ortholog species in one tab-delimited file (16 columns), adding HGNC and species database IDs, approved symbols and names, chromosomal locations, and the list of supporting orthology sources to the 7-column file." ;
+    schema1:url <https://storage.googleapis.com/public-download-files/hcop/human_all_hcop_sixteen_column.txt.gz> .
+
+kgr:hcop.species-downloads a schema1:Product ;
+    rdfs:label "HCOP Per-species Bulk Downloads" ;
+    dcterms:description "HCOP bulk downloads page with pre-computed per-species files of human orthologs for each of the 19 ortholog species, as gzipped tab-delimited files in 6-column (raw assertions with Ensembl and NCBI Gene IDs) and 15-column (adding nomenclature, locations, and supporting sources) layouts, e.g. human_mouse_hcop_fifteen_column.txt.gz." ;
+    schema1:url <https://www.genenames.org/download/hcop/tsv/> .
+
+kgr:hcop.web a schema1:GraphicalInterface ;
+    rdfs:label "HCOP Search" ;
+    dcterms:description "HCOP web search for orthologs of one or more genes (by symbol, name, Ensembl, NCBI Gene, or species database ID, with wildcards) between human and selected species, filterable by orthology source; supports direct-link URLs and tab-delimited export of results." ;
+    schema1:url <https://www.genenames.org/tools/hcop/> .
 
 kgr:knowwheregraph.graph a schema1:GraphProduct ;
     rdfs:label "KnowWhereGraph RDF Knowledge Graph" ;

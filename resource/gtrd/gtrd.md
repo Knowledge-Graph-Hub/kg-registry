@@ -43,8 +43,8 @@ name: GTRD
 products:
 - category: GraphicalInterface
   description: GTRD web interface for browsing and searching transcription factors,
-    experiments, binding sites, meta-clusters, and target genes, with a built-in
-    BioUML genome browser.
+    experiments, binding sites, meta-clusters, and target genes, with a built-in BioUML
+    genome browser.
   format: http
   id: gtrd.portal
   name: GTRD Web Interface
@@ -119,6 +119,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtrd
+  product_file_size: 136
   product_url: http://gtrd.biouml.org:8888/downloads/current/gtrdHub/hub.txt
 - category: Product
   description: Download page listing interaction tables, MITAB files, GMT gene sets,

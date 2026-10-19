@@ -49,10 +49,11 @@ products:
     Internet Archive snapshot is from 2022-08-17.
 - category: Product
   description: HTRIdb download page offering all transcription factor-target gene
-    interactions (optionally with associated protein-protein interactions), with
-    experimental techniques and PubMed IDs, as tab-delimited or spreadsheet files. Interactions were manually curated from the literature (found through PubMed
-    searches) and from ChIP-chip and ChIP-seq studies selected via the hmChIP database.
-    The site did not respond when checked on 2026-10-19.
+    interactions (optionally with associated protein-protein interactions), with experimental
+    techniques and PubMed IDs, as tab-delimited or spreadsheet files. Interactions
+    were manually curated from the literature (found through PubMed searches) and
+    from ChIP-chip and ChIP-seq studies selected via the hmChIP database. The site
+    did not respond when checked on 2026-10-19.
   format: http
   id: htridb.downloads
   name: HTRIdb Downloads
@@ -70,6 +71,8 @@ products:
   warnings:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
+  - 'File was not able to be retrieved when checked on 2026-10-19: Timeout connecting
+    to URL'
 - category: Product
   description: Download page listing interaction tables, MITAB files, GMT gene sets,
     and binding site tables, GFF3 annotations, and FASTA sequences for each organism,

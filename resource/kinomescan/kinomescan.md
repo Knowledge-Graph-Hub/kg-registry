@@ -515,6 +515,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-19: HTTP 404 error
+    when accessing file'
 synonyms:
 - HMS LINCS KINOMEscan
 ---

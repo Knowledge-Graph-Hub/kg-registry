@@ -29,7 +29,6 @@ license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
   label: CC-BY-NC-SA-4.0
 name: OFFSIDES
-repository: https://github.com/tatonetti-lab/nsides
 products:
 - category: DocumentationProduct
   description: Tatonetti Lab project page describing OffSIDES and related nSIDES resources.
@@ -191,6 +190,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-19: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for browsing and searching predicted and known drug-side
     effect connections by drug or side effect, with side effect-GO term and side effect-phenotype
@@ -249,6 +251,7 @@ publications:
   preferred: true
   title: Data-driven prediction of drug effects and interactions
   year: '2012'
+repository: https://github.com/tatonetti-lab/nsides
 synonyms:
 - OffSIDES
 ---

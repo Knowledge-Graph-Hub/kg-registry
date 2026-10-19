@@ -9,6 +9,7 @@ name: JRC QSAR Model Database Archive
 original_source:
 - relation_type: prov:hadPrimarySource
   source: jrc-qsar-model-database
+product_file_size: 41800275
 product_url: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EURL-ECVAM/datasets/QSARDB/LATEST/qsardb.zip
 layout: product_detail
 ---

@@ -19,6 +19,8 @@ taxon_hierarchy:
   - NCBITaxon:1263720
   NCBITaxon:131567:
   - NCBITaxon:131567
+  NCBITaxon:13616:
+  - NCBITaxon:13616
   NCBITaxon:15368:
   - NCBITaxon:15368
   NCBITaxon:2:
@@ -39,8 +41,12 @@ taxon_hierarchy:
   - NCBITaxon:2759
   NCBITaxon:2763:
   - NCBITaxon:2763
+  NCBITaxon:28377:
+  - NCBITaxon:28377
   NCBITaxon:284812:
   - NCBITaxon:284812
+  NCBITaxon:28985:
+  - NCBITaxon:28985
   NCBITaxon:30538:
   - NCBITaxon:30538
   NCBITaxon:3055:
@@ -90,6 +96,8 @@ taxon_hierarchy:
   - NCBITaxon:4575
   NCBITaxon:4577:
   - NCBITaxon:4577
+  NCBITaxon:460519:
+  - NCBITaxon:460519
   NCBITaxon:4641:
   - NCBITaxon:4641
   NCBITaxon:4751:
@@ -98,8 +106,30 @@ taxon_hierarchy:
   - NCBITaxon:4890
   NCBITaxon:4896:
   - NCBITaxon:4896
+  NCBITaxon:4911:
+  - NCBITaxon:4911
   NCBITaxon:4932:
   - NCBITaxon:4932
+  NCBITaxon:4952:
+  - NCBITaxon:4952
+  NCBITaxon:4954:
+  - NCBITaxon:4954
+  NCBITaxon:498019:
+  - NCBITaxon:498019
+  NCBITaxon:50557:
+  - NCBITaxon:50557
+  NCBITaxon:5207:
+  - NCBITaxon:5207
+  NCBITaxon:5286:
+  - NCBITaxon:5286
+  NCBITaxon:5476:
+  - NCBITaxon:5476
+  NCBITaxon:5478:
+  - NCBITaxon:5478
+  NCBITaxon:5480:
+  - NCBITaxon:5480
+  NCBITaxon:5482:
+  - NCBITaxon:5482
   NCBITaxon:559292:
   - NCBITaxon:559292
   NCBITaxon:562:
@@ -166,6 +196,10 @@ taxon_hierarchy:
   - NCBITaxon:9531
   NCBITaxon:9541:
   - NCBITaxon:9541
+  NCBITaxon:9544:
+  - NCBITaxon:9544
+  NCBITaxon:9598:
+  - NCBITaxon:9598
   NCBITaxon:9606:
   - NCBITaxon:9606
   NCBITaxon:9615:

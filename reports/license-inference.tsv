@@ -68,6 +68,7 @@ dreamkg	KnowledgeGraph	unresolved
 drkg	KnowledgeGraph	inferred			https://go.drugbank.com/legal/terms_of_use	non-commercial	drugbank	
 drug-approvals-kp	KnowledgeGraph	inferred			https://hpo.jax.org/app/license	no derivatives	hp	
 drugmechdb	KnowledgeGraph	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://hpo.jax.org/app/license	no derivatives	hp	
+drugmonizome	Aggregator	conflict	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial	https://www.kegg.jp/feedback/copyright.html	custom	kegg	atc|kinomescan|lincs-l1000
 earthportal	Aggregator	no-upstream						
 ebrains	KnowledgeGraph	no-upstream						
 echemportal	Aggregator	declared	https://www.echemportal.org/echemportal/page/12	custom	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	comptox-dashboard|pubchem	
@@ -105,6 +106,7 @@ gp-kg	KnowledgeGraph	inferred			https://www.ebi.ac.uk/about/terms-of-use	custom	
 gtrx	Aggregator	inferred			https://opensource.org/licenses/Apache-2.0	permissive	biothings	
 hald	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 harmonizome	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://depmap.org/portal/terms/	custom	achilles|cmap|cosmic|ctd|depmap|disgenet|gtex|kegg|msigdb	biogps|cellmarker|impc|lincs-l1000|mirtarbase|panther|phosphositeplus|pid|tcga
+hcop	Aggregator	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://xenbase.org/xenbase/	custom	xenbase	eggnog|inparanoid|orthomcl|panther|phylomedb|rgd|treefam|vgnc
 hetionet	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://uts.nlm.nih.gov/uts/	custom	umls	pid
 hmdb	Aggregator	no-upstream	https://www.hmdb.ca/downloads	non-commercial				
 hpa	Aggregator	no-upstream	https://creativecommons.org/licenses/by-sa/4.0/	copyleft				
@@ -256,7 +258,7 @@ suppkg	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	pe
 tbkg	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 tera	KnowledgeGraph	declared	https://opensource.org/licenses/MIT	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	chebi|mesh	
 text-mining-kp	KnowledgeGraph	inferred			https://opensource.org/license/mit/	permissive	translator	
-tflink	Aggregator	declared	https://tflink.net/faq/	non-commercial	https://creativecommons.org/licenses/by-nc/4.0/	non-commercial	remap	gtrd|htridb|redfly|tred|yeastract
+tflink	Aggregator	conflict	https://tflink.net/faq/	non-commercial	https://yeastract-plus.org/termsusage.php	custom	yeastract	tred
 tissues	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 togows	Aggregator	inferred			https://www.ddbj.nig.ac.jp/policies-e.html	custom	ddbj|kegg	ena|pdb
 toxin	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				

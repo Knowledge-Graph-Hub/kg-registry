@@ -3602,9 +3602,9 @@ products:
     source: kegg
   product_url: https://dbarchive.biosciencedbc.jp/data/kegg-medicus/
 - category: ProgrammingInterface
-  description: MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez
-    or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents
-    merged from the integrated sources.
+  description: MyGene.info REST API (v3) for gene query and annotation retrieval by
+    Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns
+    JSON documents merged from the integrated sources.
   format: http
   id: mygene.api
   infores_id: mygene-info
@@ -3662,11 +3662,11 @@ products:
     source: wikipedia
   product_url: https://mygene.info/v3/api
 - category: Product
-  description: Babel compendia, one file per Biolink type (for example Gene, Protein, Disease,
-    ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON object for one clique,
-    listing its identifiers with labels, descriptions and taxa, plus the preferred name and
-    information content. Files carry a .txt extension; the Gene and Protein files (about 17.8
-    GB and 46.7 GB) are also split into parts.
+  description: Babel compendia, one file per Biolink type (for example Gene, Protein,
+    Disease, ChemicalEntity, SmallMolecule, AnatomicalEntity). Each line is a JSON
+    object for one clique, listing its identifiers with labels, descriptions and taxa,
+    plus the preferred name and information content. Files carry a .txt extension;
+    the Gene and Protein files (about 17.8 GB and 46.7 GB) are also split into parts.
   format: json
   id: babel.compendia
   latest_version: 2026jul22
@@ -3775,12 +3775,13 @@ products:
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 - category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
-    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
-    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
-    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
-    upstream scores that are free for academic use. Free for academic and non-commercial users
-    after registration with an institutional email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
+    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
+    column descriptions and the search_dbNSFP Java program. Variant tables are also
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    use. Free for academic and non-commercial users after registration with an institutional
+    email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -3845,10 +3846,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
-    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
-    and RGC Million Exome data, whose authors require separate commercial licenses. Available
-    to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
+    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
+    PrimateAI and RGC Million Exome data, whose authors require separate commercial
+    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:
@@ -3966,6 +3967,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-19: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Minoru Kanehisa
