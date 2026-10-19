@@ -2625,6 +2625,15 @@ entries:
     source_path: resource/drugmechdb/drugmechdb.md
     status: valid
     warnings: []
+  resource/drugmonizome/drugmonizome.md#publication[0]#PMID:33787872:
+    checked_at: '2026-10-19T22:11:07Z'
+    errors: []
+    fingerprint: 8eb5f23042ba82d99b5e31ace05599b62f2693e9b30925681d9c40ee3a71db3b
+    publication_index: 0
+    reference_id: PMID:33787872
+    source_path: resource/drugmonizome/drugmonizome.md
+    status: valid
+    warnings: []
   resource/drugshot/drugshot.md#publication[0]#PMID:35183110:
     checked_at: '2026-10-10T18:32:10Z'
     errors: []
