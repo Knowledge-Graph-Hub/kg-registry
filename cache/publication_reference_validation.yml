@@ -8594,6 +8594,51 @@ entries:
     source_path: resource/reconx/reconx.md
     status: valid
     warnings: []
+  resource/redfly/redfly.md#publication[0]#PMID:35886794:
+    checked_at: '2026-10-19T22:10:01Z'
+    errors: []
+    fingerprint: 9d68f1c2418ee1bdcc81fe7de1513b0a6d56766048710904af6fd5ab50ed0a7a
+    publication_index: 0
+    reference_id: PMID:35886794
+    source_path: resource/redfly/redfly.md
+    status: valid
+    warnings: []
+  resource/redfly/redfly.md#publication[1]#PMID:30329093:
+    checked_at: '2026-10-19T22:10:06Z'
+    errors: []
+    fingerprint: e68460eb254753712a4efcf06dcfd8ba01a875aa11cd0ad096916e31cc7ee069
+    publication_index: 1
+    reference_id: PMID:30329093
+    source_path: resource/redfly/redfly.md
+    status: valid
+    warnings: []
+  resource/redfly/redfly.md#publication[2]#PMID:20965965:
+    checked_at: '2026-10-19T22:10:11Z'
+    errors: []
+    fingerprint: 3fbaaee850aca7f112bf3f358409d96d9651190d8f9107bd0354041a17f5d529
+    publication_index: 2
+    reference_id: PMID:20965965
+    source_path: resource/redfly/redfly.md
+    status: valid
+    warnings: []
+  resource/redfly/redfly.md#publication[3]#PMID:18039705:
+    checked_at: '2026-10-19T22:10:20Z'
+    errors: []
+    fingerprint: a567ae20e4a7c7b7ea352c3ef45bde6281ae58fd21ac36dcdaf757b05a343a54
+    publication_index: 3
+    reference_id: PMID:18039705
+    source_path: resource/redfly/redfly.md
+    status: valid
+    warnings: []
+  resource/redfly/redfly.md#publication[4]#PMID:16303794:
+    checked_at: '2026-10-19T22:10:23Z'
+    errors: []
+    fingerprint: 8e0d02f5aaaf743b69d76c257606ee40f0ef32ce133a87a5322bfd07ed8c1373
+    publication_index: 4
+    reference_id: PMID:16303794
+    source_path: resource/redfly/redfly.md
+    status: valid
+    warnings: []
   resource/rediportal/rediportal.md#publication[0]#DOI:10.1093/nar/gkae1083:
     checked_at: '2026-06-22T16:28:46Z'
     errors: []

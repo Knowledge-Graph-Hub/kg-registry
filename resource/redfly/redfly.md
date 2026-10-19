@@ -1,16 +1,84 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://redfly.ccr.buffalo.edu/contact
+  - contact_type: github
+    value: redflydb
+  label: REDfly team, University at Buffalo
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: mshalfon@buffalo.edu
+  label: Marc S Halfon
 creation_date: '2026-10-10T00:00:00Z'
-description: Stub Resource page for redfly. This page was automatically generated
-  because it was referenced by other resources.
+description: REDfly (Regulatory Element Database for Drosophila and other insects)
+  is a curated knowledgebase of insect transcriptional cis-regulatory sequences, including
+  reporter-construct-defined cis-regulatory modules (CRMs), CRM segments, inferred
+  and predicted CRMs, and transcription factor binding sites (TFBSs). Records are
+  curated from the published literature with an emphasis on empirically validated
+  elements, and include DNA sequence and coordinates, associated genes, and the expression
+  patterns they direct annotated with anatomy ontology terms. Most data are for Drosophila
+  melanogaster, with a growing number of other insect species. REDfly is developed
+  by the Halfon lab and the Center for Computational Research at the University at
+  Buffalo.
 domains:
-- stub
+- gene regulation
+- genomics
+- insects
+- model organisms
+- organisms
+homepage_url: https://redfly.ccr.buffalo.edu/
 id: redfly
-last_modified_date: '2026-10-10T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
-name: Redfly
+license:
+  id: https://creativecommons.org/licenses/by-nc-nd/4.0/
+  label: CC BY-NC-ND 4.0
+name: REDfly
 products:
+- category: GraphicalInterface
+  description: REDfly search interface for querying CRMs, CRM segments, predicted
+    CRMs, and TFBSs by gene, PubMed ID, location, or expression pattern, with selected
+    records downloadable in several formats including GFF. Records are curated from
+    the published literature.
+  format: http
+  id: redfly.search
+  name: REDfly Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redfly
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://redfly.ccr.buffalo.edu/search/options?sequence=1&assayed=1&cellCulture=1&range=10000
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: flybase
+  - relation_type: prov:wasInformedBy
+    source: fbbt
+- category: GraphicalInterface
+  description: JBrowse genome browser displaying REDfly regulatory elements in genomic
+    context.
+  format: http
+  id: redfly.jbrowse
+  name: REDfly JBrowse
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redfly
+  product_url: https://redfly.ccr.buffalo.edu/jbrowse
+- category: GraphicalInterface
+  description: Search interface for SCRMshaw-predicted cis-regulatory modules across
+    sequenced insect genomes, distributed through REDfly.
+  format: http
+  id: redfly.scrmshaw
+  name: REDfly SCRMshaw Predicted CRMs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redfly
+  product_url: https://redfly.ccr.buffalo.edu/scrm/options
 - category: Product
   description: Download page listing interaction tables, MITAB files, GMT gene sets,
     and binding site tables, GFF3 annotations, and FASTA sequences for each organism,
@@ -426,10 +494,82 @@ products:
     source: yeastract
   product_file_size: 1138803022
   product_url: https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_v1.0.fasta
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+publications:
+- authors:
+  - Keränen SVE
+  - Villahoz-Baleta A
+  - Bruno AE
+  - Halfon MS
+  doi: 10.3390/insects13070618
+  id: PMID:35886794
+  journal: Insects
+  preferred: true
+  title: 'REDfly: An Integrated Knowledgebase for Insect Regulatory Genomics'
+  year: '2022'
+- authors:
+  - Rivera J
+  - Keränen SVE
+  - Gallo SM
+  - Halfon MS
+  doi: 10.1093/nar/gky957
+  id: PMID:30329093
+  journal: Nucleic Acids Res
+  title: 'REDfly: the transcriptional regulatory element database for Drosophila'
+  year: '2019'
+- authors:
+  - Gallo SM
+  - Gerrard DT
+  - Miner D
+  - Simich M
+  - Des Soye B
+  - Bergman CM
+  - Halfon MS
+  doi: 10.1093/nar/gkq999
+  id: PMID:20965965
+  journal: Nucleic Acids Res
+  title: 'REDfly v3.0: toward a comprehensive database of transcriptional regulatory
+    elements in Drosophila'
+  year: '2011'
+- authors:
+  - Halfon MS
+  - Gallo SM
+  - Bergman CM
+  doi: 10.1093/nar/gkm876
+  id: PMID:18039705
+  journal: Nucleic Acids Res
+  title: 'REDfly 2.0: an integrated database of cis-regulatory modules and transcription
+    factor binding sites in Drosophila'
+  year: '2008'
+- authors:
+  - Gallo SM
+  - Li L
+  - Hu Z
+  - Halfon MS
+  doi: 10.1093/bioinformatics/bti794
+  id: PMID:16303794
+  journal: Bioinformatics
+  title: 'REDfly: a Regulatory Element Database for Drosophila'
+  year: '2006'
+repository: https://github.com/redflydb/redfly
+taxon:
+- NCBITaxon:7227
+- NCBITaxon:50557
+version: '10.0.1'
 ---
-# Redfly
+# REDfly
 
-This is an automatically generated stub page for redfly. Please update with proper information.
+## Overview
+
+REDfly (Regulatory Element Database for Drosophila and other insects) is a curated collection of insect transcriptional cis-regulatory sequences. It is a collaboration between Marc Halfon's lab and the Center for Computational Research at the University at Buffalo, and is described most recently in Keränen et al. 2022 (Insects).
+
+## Data Content
+
+REDfly separates regulatory elements into reporter constructs (RCs, which define CRMs), CRM segments, inferred CRMs (derived from overlapping REDfly records), predicted CRMs (pCRMs, from computational or chromatin-based methods), and transcription factor binding sites (TFBSs). Records are curated from the literature and include sequence, coordinates, associated genes, supporting PubMed IDs, and the expression patterns that each element directs, annotated with Drosophila anatomy ontology terms for interoperability with FlyBase. Most records are for *Drosophila melanogaster*, with growing coverage of other insects. REDfly data are also shared with FlyBase and FlyMine.
+
+## Access
+
+The website (version 10) provides a search tool with downloads of selected records, a JBrowse genome browser, and a search interface for SCRMshaw-predicted CRMs across insect genomes. A legacy interface remains available for now. The application source code is on GitHub.
+
+## License
+
+The REDfly database is licensed under CC BY-NC-ND 4.0, and its source code under GPL 3.0. Users are asked to cite the original publications for specific CRMs and TFBSs.
