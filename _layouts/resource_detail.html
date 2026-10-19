@@ -50,6 +50,7 @@ layout: default
     {% if collection == "omop" %}{% assign collection_display = "OMOP" %}{% endif %}
     {% if collection == "obo-foundry" %}{% assign collection_display = "OBO Foundry" %}{% endif %}
     {% if collection == "okn" %}{% assign collection_display = "OKN" %}{% endif %}
+    {% if collection == "nams" %}{% assign collection_display = "NAMs" %}{% endif %}
     the <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{
         collection_display }}</strong></span> collection.
     {% else %}
@@ -63,6 +64,7 @@ layout: default
     {% if collection == "omop" %}{% assign collection_display = "OMOP" %}{% endif %}
     {% if collection == "obo-foundry" %}{% assign collection_display = "OBO Foundry" %}{% endif %}
     {% if collection == "okn" %}{% assign collection_display = "OKN" %}{% endif %}
+    {% if collection == "nams" %}{% assign collection_display = "NAMs" %}{% endif %}
     <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ collection_display }}</strong></span>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
     {% endif %}
