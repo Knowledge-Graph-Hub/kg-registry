@@ -771,6 +771,337 @@ products:
     source: lincs-l1000
   product_file_size: 225768016
   product_url: https://lincs-dcic.s3.amazonaws.com/LINCS-data-2020/similarity/L1000_2021_cosine_gene_similarity_lm.h5
+- category: Product
+  description: The 35 Drugmonizome drug set libraries, listed with metadata and per-library
+    download links. Each library is downloadable as a GMT-like DMT file keyed by InChIKey
+    or by drug name. Sources are DrugBank (targets, enzymes, carriers, transporters,
+    ATC codes), DrugCentral targets, the Drug Repurposing Hub (targets and mechanisms
+    of action), STITCH targets, KINOMEscan kinases, SIDER side effects and indications,
+    PharmGKB variants and OFFSIDES side effects, PubChem and RDKit MACCS chemical
+    fingerprints, Geneshot literature and predicted genes (including ARCHS4 coexpression
+    and Enrichr co-occurrence), CREEDS signatures, and L1000FWD signatures, Enrichr
+    GO and KEGG terms, and SEP-L1000 predicted side effects.
+  format: json
+  id: drugmonizome.libraries
+  name: Drugmonizome Drug Set Libraries
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugmonizome
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: repohub
+  - relation_type: prov:wasDerivedFrom
+    source: stitch
+  - relation_type: prov:wasDerivedFrom
+    source: kinomescan
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: offsides
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: geneshot
+  - relation_type: prov:wasDerivedFrom
+    source: archs4
+  - relation_type: prov:wasDerivedFrom
+    source: enrichr
+  - relation_type: prov:wasDerivedFrom
+    source: creeds
+  - relation_type: prov:wasDerivedFrom
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: sep-l1000
+  product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+- category: GraphicalInterface
+  description: Interactive fireworks and t-SNE maps of drug-induced L1000 signatures
+    for all cell lines and individual cell lines, with signature similarity search
+    using up and down gene sets, signature landing pages, and subset visualization.
+  format: http
+  id: l1000fwd.portal
+  name: L1000FWD Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_url: https://maayanlab.cloud/l1000fwd/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: creeds
+  warnings:
+  - Web application returned HTTP 503 when checked on 2026-10-19, although static
+    download files were served; the homepage was archived with HTTP 200 on 2026-09-29.
+- category: ProgrammingInterface
+  description: REST API for searching drugs by name or synonym, retrieving a signature
+    by ID, querying signatures with up and down gene sets, and retrieving the top
+    50 results. Documented on the API page with Python and R examples.
+  format: json
+  id: l1000fwd.api
+  is_public: true
+  name: L1000FWD API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_url: https://maayanlab.cloud/l1000fwd/api_page
+  warnings:
+  - API page returned HTTP 503 when checked on 2026-10-19.
+- category: Product
+  description: Characteristic direction (CD) signature matrix for 42,809 significant
+    L1000 drug and small-molecule signatures in the 978 landmark gene space, in GCTX
+    (HDF5) format.
+  format: hdf5
+  id: l1000fwd.cd-signatures-landmark
+  name: L1000FWD CD Signatures (Landmark Genes)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 346694992
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_LM_42809x978.gctx
+- category: Product
+  description: Characteristic direction (CD) signature matrix for 42,809 significant
+    L1000 drug and small-molecule signatures in the full space of 22,268 probes, in
+    GCTX (HDF5) format.
+  format: hdf5
+  id: l1000fwd.cd-signatures-full
+  name: L1000FWD CD Signatures (Full Space)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 7638514350
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_full_42809x22268.gctx
+- category: Product
+  description: Cosine similarity adjacency matrix among all 42,809 significant CD
+    signatures in the landmark gene space, in GCTX (HDF5) format.
+  format: hdf5
+  id: l1000fwd.adjacency-matrix
+  name: L1000FWD Signature Adjacency Matrix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 14684362180
+  product_url: https://maayanlab.cloud/l1000fwd/download/Adjacency_matrix_LM_space_42809x42809.gctx
+- category: Product
+  description: Up and down gene sets for the 42,809 CD signatures in the full gene
+    space, in GMT format.
+  format: tsv
+  id: l1000fwd.gene-sets-gmt
+  name: L1000FWD Signature Gene Sets (GMT)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 120617799
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.gmt
+- category: Product
+  description: Up and down gene sets for the 42,809 CD signatures in the full gene
+    space, in JSON format.
+  format: json
+  id: l1000fwd.gene-sets-json
+  name: L1000FWD Signature Gene Sets (JSON)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 177765632
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.json
+- category: Product
+  description: Metadata for the L1000FWD signatures indexed by sig_id, including batch,
+    cell line, perturbagen, dose, time, and signature strength.
+  format: csv
+  id: l1000fwd.signature-metadata
+  name: L1000FWD Signature Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 5075455
+  product_url: https://maayanlab.cloud/l1000fwd/download/CD_signature_metadata.csv
+- category: Product
+  description: Metadata for the profiled drugs and small molecules indexed by pert_id,
+    including LINCS small molecule IDs, names, SMILES, InChIKeys, molecular formulas,
+    and PubChem CIDs.
+  format: csv
+  id: l1000fwd.drug-metadata
+  name: L1000FWD Drug Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs
+  product_file_size: 7797325
+  product_url: https://maayanlab.cloud/l1000fwd/download/Drugs_metadata.csv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+- category: Product
+  description: Metadata for the L1000 probes of the 978 landmark genes.
+  format: csv
+  id: l1000fwd.probes-landmark-metadata
+  name: L1000FWD Landmark Probe Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 16690
+  product_url: https://maayanlab.cloud/l1000fwd/download/Probes_L1000_metadata.csv
+- category: Product
+  description: Metadata for the 22,268 probes used in the full gene space.
+  format: csv
+  id: l1000fwd.probes-full-metadata
+  name: L1000FWD Full Probe Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 372943
+  product_url: https://maayanlab.cloud/l1000fwd/download/Probes_full_metadata.csv
+- category: GraphicalInterface
+  description: Web portal for browsing and searching predicted and known drug-side
+    effect connections by drug or side effect, with side effect-GO term and side effect-phenotype
+    networks.
+  format: http
+  id: sep-l1000.portal
+  name: SEP-L1000 Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: offsides
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: mlpcn-profiling
+  product_url: http://maayanlab.net/SEP-L1000/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: meddra
+  - relation_type: prov:wasInformedBy
+    source: drugbank
+- category: Product
+  compression: gzip
+  description: Characteristic direction gene expression signatures for 20,339 drugs
+    and small molecules in the 978 landmark gene space, computed from LINCS L1000
+    profiles.
+  format: csv
+  id: sep-l1000.lincs-signatures
+  name: SEP-L1000 LINCS L1000 CD Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 40428519
+  product_url: http://maayanlab.net/SEP-L1000/downloads/LINCS_Gene_Experssion_signatures_CD.csv.gz
+- category: Product
+  compression: gzip
+  description: Gene Ontology transformed L1000 signatures, giving Principal Angle
+    Enrichment Analysis p-values of each drug signature against GO Biological Process,
+    Cellular Component, and Molecular Function gene sets (20,338 compounds by 4,438
+    terms).
+  format: csv
+  id: sep-l1000.go-signatures
+  name: SEP-L1000 GO-Transformed Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  product_file_size: 230607368
+  product_url: http://maayanlab.net/SEP-L1000/downloads/GO_transformed_signatures_PAEA.csv.gz
+- category: Product
+  compression: gzip
+  description: 166-bit MACCS chemical fingerprint matrix for 41,774 drugs and small
+    molecules from LINCS L1000 and MLPCN, computed with Open Babel from SMILES.
+  format: csv
+  id: sep-l1000.maccs-fingerprints
+  name: SEP-L1000 MACCS Fingerprints
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mlpcn-profiling
+  product_file_size: 1254411
+  product_url: http://maayanlab.net/SEP-L1000/downloads/MACCS_bitmatrix.csv.gz
+- category: Product
+  description: Metadata mapping each LINCS L1000 compound (pert_id) to the control
+    and perturbation distil_ids and the strongest signature used.
+  format: csv
+  id: sep-l1000.strongest-signatures-metadata
+  name: SEP-L1000 Strongest Signature Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 33352601
+  product_url: http://maayanlab.net/SEP-L1000/downloads/meta_LINCS_strongest_signatures.csv
+- category: Product
+  description: Mapping of L1000 probes to gene symbols.
+  format: csv
+  id: sep-l1000.probes-metadata
+  name: SEP-L1000 Probe Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  product_file_size: 370344
+  product_url: http://maayanlab.net/SEP-L1000/downloads/meta_Probes_info.csv
+- category: Product
+  description: Compound metadata for 41,774 LINCS L1000 and MLPCN small molecules
+    with pert_id, name, PubChem CID, and SMILES.
+  format: csv
+  id: sep-l1000.smiles-metadata
+  name: SEP-L1000 Compound SMILES Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sep-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mlpcn-profiling
+  product_file_size: 4014816
+  product_url: http://maayanlab.net/SEP-L1000/downloads/meta_SMILES.csv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubchem
 publications:
 - authors:
   - Subramanian, A.

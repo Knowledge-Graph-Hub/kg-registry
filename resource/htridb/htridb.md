@@ -1,16 +1,75 @@
 ---
-activity_status: active
+activity_status: unresponsive
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: labovolenta@ibb.unesp.br
+  label: Luiz A Bovolenta
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lemke@ibb.unesp.br
+  label: Ney Lemke
 creation_date: '2026-10-10T00:00:00Z'
-description: Stub Resource page for htridb. This page was automatically generated
-  because it was referenced by other resources.
+description: HTRIdb (Human Transcriptional Regulation Interactions database) is an
+  open-access database of experimentally verified interactions between human transcription
+  factors and their target genes, developed at the Universidade Estadual Paulista
+  (UNESP), Botucatu, Brazil. Each interaction records the TF and target gene symbols
+  and NCBI Gene IDs, the experimental technique used to detect it, and the PubMed
+  ID of the supporting article. At publication (2012) it held 51,871 interactions
+  between 284 TFs and 18,302 target genes, curated from small- and mid-scale experiments
+  in the literature and from ChIP-chip and ChIP-seq studies. The website has been
+  did not respond when checked in October 2026; the most recent archived snapshot
+  is from August 2022.
 domains:
-- stub
+- gene regulation
+- genomics
+homepage_url: http://www.lbbc.ibb.unesp.br/htri/
 id: htridb
-last_modified_date: '2026-10-10T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
-name: Htridb
+name: HTRIdb
 products:
+- category: GraphicalInterface
+  description: HTRIdb web interface for searching human transcription factor-target
+    gene interactions by TF or target gene, viewing them as networks with Cytoscape
+    Web, and uploading new interactions. The site did not respond when checked on
+    2026-10-19.
+  format: http
+  id: htridb.portal
+  name: HTRIdb Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: htridb
+  product_url: http://www.lbbc.ibb.unesp.br/htri/
+  warnings:
+  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
+    Internet Archive snapshot is from 2022-08-17.
+- category: Product
+  description: HTRIdb download page offering all transcription factor-target gene
+    interactions (optionally with associated protein-protein interactions), with
+    experimental techniques and PubMed IDs, as tab-delimited or spreadsheet files. Interactions were manually curated from the literature (found through PubMed
+    searches) and from ChIP-chip and ChIP-seq studies selected via the hmChIP database.
+    The site did not respond when checked on 2026-10-19.
+  format: http
+  id: htridb.downloads
+  name: HTRIdb Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: htridb
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: hmchip
+  product_url: http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  warnings:
+  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
+    Internet Archive snapshot is from 2022-08-17.
 - category: Product
   description: Download page listing interaction tables, MITAB files, GMT gene sets,
     and binding site tables, GFF3 annotations, and FASTA sequences for each organism,
@@ -426,10 +485,41 @@ products:
     source: yeastract
   product_file_size: 1138803022
   product_url: https://cdn.netbiol.org/tflink/download_files/TFLink_Homo_sapiens_bindingSites_All_v1.0.fasta
+publications:
+- authors:
+  - Bovolenta LA
+  - Acencio ML
+  - Lemke N
+  doi: 10.1186/1471-2164-13-405
+  id: PMID:22900683
+  journal: BMC Genomics
+  preferred: true
+  title: 'HTRIdb: an open-access database for experimentally verified human transcriptional
+    regulation interactions'
+  year: '2012'
+taxon:
+- NCBITaxon:9606
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- The HTRIdb website (http://www.lbbc.ibb.unesp.br/htri/) did not respond when checked
+  on 2026-10-19 (connection timed out). The most recent Internet Archive snapshot
+  is from 2022-08-17.
 ---
-# Htridb
+# HTRIdb
 
-This is an automatically generated stub page for htridb. Please update with proper information.
+## Overview
+
+HTRIdb (Human Transcriptional Regulation Interactions database) is a repository of experimentally verified interactions between human transcription factors (TFs) and their target genes. It was built by Luiz Bovolenta, Marcio Acencio, and Ney Lemke at the Instituto de Biociências de Botucatu, Universidade Estadual Paulista (UNESP), Brazil, and is described in Bovolenta et al. 2012 (BMC Genomics).
+
+**Note**: As of 2026-10-19 the HTRIdb website does not respond. The most recent Internet Archive snapshot of the site is from August 2022.
+
+## Data Content
+
+Each interaction lists the TF and target gene symbols and NCBI Gene IDs, the detection technique, and the PubMed ID of the reporting article, along with protein-protein interactions of the TF and target. At publication, HTRIdb held 51,871 interactions between 284 TFs and 18,302 target genes. Of these, 2,283 came from small- and mid-scale techniques (such as EMSA, DNase I footprinting, and ChIP) curated from articles found through PubMed searches, and 49,588 came from ChIP-chip and ChIP-seq studies selected through the hmChIP database.
+
+## Access
+
+When online, the database could be searched through a web interface, with results downloadable as tab-delimited or spreadsheet files or viewed as networks in Cytoscape Web. Users could also submit new interactions. TFLink incorporated HTRIdb interactions into its integrated data set.
+
+## License
+
+The publication describes HTRIdb as open access and freely available. No explicit data license was found.

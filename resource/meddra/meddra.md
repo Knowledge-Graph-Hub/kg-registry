@@ -200,6 +200,69 @@ products:
     - relation_type: prov:hadPrimarySource
       source: meddra
     product_url: https://github.com/jvasilakes/iDISK
+  - category: GraphicalInterface
+    description: Web portal for browsing and searching predicted and known drug-side
+      effect connections by drug or side effect, with side effect-GO term and side effect-phenotype
+      networks.
+    format: http
+    id: sep-l1000.portal
+    name: SEP-L1000 Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sep-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: lincs-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: sider
+    - relation_type: prov:wasDerivedFrom
+      source: offsides
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    - relation_type: prov:wasDerivedFrom
+      source: mlpcn-profiling
+    product_url: http://maayanlab.net/SEP-L1000/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: meddra
+    - relation_type: prov:wasInformedBy
+      source: drugbank
+  - category: Product
+    compression: gzip
+    description: Off-label drug-ADR matrix (684 drugs by 9,404 MedDRA preferred terms)
+      from OFFSIDES, which processed FDA Adverse Event Reporting System (FAERS) reports
+      with propensity score matching.
+    format: csv
+    id: sep-l1000.faers-offsides
+    name: SEP-L1000 FAERS OFFSIDES Side Effect Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sep-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: offsides
+    - relation_type: prov:wasDerivedFrom
+      source: faers
+    product_file_size: 463065
+    product_url: http://maayanlab.net/SEP-L1000/downloads/FAERS_offsides_PTs.csv.gz
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: meddra
+  - category: Product
+    compression: gzip
+    description: On-label drug-ADR matrix (834 drugs by 3,165 MedDRA preferred terms)
+      mined from drug package inserts in SIDER.
+    format: csv
+    id: sep-l1000.sider
+    name: SEP-L1000 SIDER Side Effect Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sep-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: sider
+    product_file_size: 169907
+    product_url: http://maayanlab.net/SEP-L1000/downloads/SIDER_PTs.csv.gz
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: meddra
 publications:
   - authors:
       - Brown EG

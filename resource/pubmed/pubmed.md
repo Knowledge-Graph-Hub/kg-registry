@@ -2805,6 +2805,103 @@ products:
     source: pubmed
   product_file_size: 626888558
   product_url: https://s3.amazonaws.com/mssm-data/autorif.tsv
+- category: Product
+  description: HTRIdb download page offering all transcription factor-target gene
+    interactions (optionally with associated protein-protein interactions), with experimental
+    techniques and PubMed IDs, as tab-delimited or spreadsheet files. Interactions
+    were manually curated from the literature (found through PubMed searches) and
+    from ChIP-chip and ChIP-seq studies selected via the hmChIP database. The site
+    did not respond when checked on 2026-10-19.
+  format: http
+  id: htridb.downloads
+  name: HTRIdb Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: htridb
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: hmchip
+  product_url: http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  warnings:
+  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
+    Internet Archive snapshot is from 2022-08-17.
+- category: GraphicalInterface
+  description: REDfly search interface for querying CRMs, CRM segments, predicted
+    CRMs, and TFBSs by gene, PubMed ID, location, or expression pattern, with selected
+    records downloadable in several formats including GFF. Records are curated from
+    the published literature.
+  format: http
+  id: redfly.search
+  name: REDfly Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redfly
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://redfly.ccr.buffalo.edu/search/options?sequence=1&assayed=1&cellCulture=1&range=10000
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: flybase
+  - relation_type: prov:wasInformedBy
+    source: fbbt
+- category: GraphicalInterface
+  description: Yeastract web interface for Saccharomyces cerevisiae, with searches
+    for TFs, target genes, and regulatory associations, DNA motif searches, promoter
+    analysis, regulation matrix generation, and ranking of genes by TF or GO term.
+    Associations are manually curated from the literature; gene and GO annotations
+    come from SGD.
+  format: http
+  id: yeastract.scerevisiae
+  name: Yeastract (S. cerevisiae)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: yeastract
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://yeastract-plus.org/yeastract/scerevisiae/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: sgd
+  - relation_type: prov:wasInformedBy
+    source: go
+- category: GraphicalInterface
+  description: PathoYeastract web interface with curated TF-target gene regulatory
+    associations for pathogenic yeasts (Candida glabrata, C. albicans, C. tropicalis,
+    C. parapsilosis, C. auris, and Cryptococcus neoformans). Associations are manually
+    curated from the literature; GO annotations for Candida genes come from the Candida
+    Genome Database.
+  format: http
+  id: yeastract.pathoyeastract
+  name: PathoYeastract
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: yeastract
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://yeastract-plus.org/pathoyeastract/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: candida-genome-database
+  - relation_type: prov:wasInformedBy
+    source: go
+- category: GraphicalInterface
+  description: N.C.Yeastract web interface with curated TF-target gene regulatory
+    associations for non-conventional yeasts (Zygosaccharomyces bailii, Kluyveromyces
+    lactis, K. marxianus, Yarrowia lipolytica, Komagataella phaffii, and Rhodotorula
+    toruloides), curated from the literature.
+  format: http
+  id: yeastract.ncyeastract
+  name: N.C.Yeastract
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: yeastract
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://yeastract-plus.org/ncyeastract/
 publications:
 - authors:
   - Eric W Sayers

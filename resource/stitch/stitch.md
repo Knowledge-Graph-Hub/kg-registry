@@ -1205,6 +1205,125 @@ products:
     source: stitch
   product_file_size: 4251
   product_url: https://maayanlab.cloud/DrugEnrichr/datasetStatistics
+- category: Product
+  description: The 35 Drugmonizome drug set libraries, listed with metadata and per-library
+    download links. Each library is downloadable as a GMT-like DMT file keyed by InChIKey
+    or by drug name. Sources are DrugBank (targets, enzymes, carriers, transporters,
+    ATC codes), DrugCentral targets, the Drug Repurposing Hub (targets and mechanisms
+    of action), STITCH targets, KINOMEscan kinases, SIDER side effects and indications,
+    PharmGKB variants and OFFSIDES side effects, PubChem and RDKit MACCS chemical
+    fingerprints, Geneshot literature and predicted genes (including ARCHS4 coexpression
+    and Enrichr co-occurrence), CREEDS signatures, and L1000FWD signatures, Enrichr
+    GO and KEGG terms, and SEP-L1000 predicted side effects.
+  format: json
+  id: drugmonizome.libraries
+  name: Drugmonizome Drug Set Libraries
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugmonizome
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: repohub
+  - relation_type: prov:wasDerivedFrom
+    source: stitch
+  - relation_type: prov:wasDerivedFrom
+    source: kinomescan
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: offsides
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: geneshot
+  - relation_type: prov:wasDerivedFrom
+    source: archs4
+  - relation_type: prov:wasDerivedFrom
+    source: enrichr
+  - relation_type: prov:wasDerivedFrom
+    source: creeds
+  - relation_type: prov:wasDerivedFrom
+    source: l1000fwd
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: sep-l1000
+  product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
+- category: Product
+  compression: targz
+  description: Reduced tagger dictionary used by the Tagger web service, as tab-separated
+    entities, names, groups, global, preferred-name, and text files. Gene/protein
+    names come from the STRING alias file, chemical names from STITCH (PubChem compound
+    identifiers), and other names from NCBI Taxonomy, Gene Ontology, BRENDA Tissue
+    Ontology, Disease Ontology, Environment Ontology, and the Mammalian Phenotype
+    Ontology.
+  format: tsv
+  id: tagger.dictionary
+  name: Tagger Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tagger
+  product_file_size: 388733075
+  product_url: https://download.jensenlab.org/tagger_dictionary.tar.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: stitch
+  - relation_type: prov:wasDerivedFrom
+    source: ncbitaxon
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: bto
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: envo
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+- category: Product
+  compression: targz
+  description: Combined full dictionary (entities and names TSV files) used for the
+    weekly text mining of the biomedical literature behind the JensenLab databases
+    (STRING, DISEASES, TISSUES, COMPARTMENTS, ORGANISMS). Built from the STRING alias
+    file, STITCH chemicals, and taxonomy and ontology resources.
+  format: tsv
+  id: tagger.full-dictionary
+  name: Tagger Full Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tagger
+  product_file_size: 3799651519
+  product_url: https://download.jensenlab.org/full_dictionary.tar.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: stitch
+  - relation_type: prov:wasDerivedFrom
+    source: ncbitaxon
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: bto
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: envo
+  - relation_type: prov:wasDerivedFrom
+    source: mp
 publications:
 - authors:
   - Damian Szklarczyk
