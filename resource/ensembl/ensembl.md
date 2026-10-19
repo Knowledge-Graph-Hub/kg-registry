@@ -3288,6 +3288,23 @@ products:
     source: omim
   product_file_size: 1921927
   product_url: https://raw.githubusercontent.com/bio-ontology-research-group/pavs-knowledge-graph/master/data/PAVS_phenopackets.json
+- category: Product
+  description: Per-species lists of transcription factor target genes and transcripts,
+    one file per TF (named by UniProt ID), where a gene is a target if its promoter
+    or gene body region contains a GTRD meta-cluster for that TF. Genes and transcripts
+    are identified by Ensembl IDs.
+  format: http
+  id: gtrd.target_genes
+  name: GTRD Transcription Factor Target Genes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtrd
+  product_url: http://gtrd.biouml.org:8888/downloads/current/intervals/target_genes/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: uniprot
 publications:
 - authors:
   - Dyer SC

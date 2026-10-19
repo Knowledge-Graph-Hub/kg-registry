@@ -4113,6 +4113,33 @@ entries:
     source_path: resource/gtr/gtr.md
     status: valid
     warnings: []
+  resource/gtrd/gtrd.md#publication[0]#PMID:33231677:
+    checked_at: '2026-10-19T22:07:29Z'
+    errors: []
+    fingerprint: 074eaf1c3c1024ea2b4b4c4815996fc688433c00a57faa6c5f305cc25c3e800c
+    publication_index: 0
+    reference_id: PMID:33231677
+    source_path: resource/gtrd/gtrd.md
+    status: valid
+    warnings: []
+  resource/gtrd/gtrd.md#publication[1]#PMID:30445619:
+    checked_at: '2026-10-19T22:07:34Z'
+    errors: []
+    fingerprint: 6da3195d910f0cdac18b4244b927ba1c17848fa2b2f4382ebe1804353ab950f4
+    publication_index: 1
+    reference_id: PMID:30445619
+    source_path: resource/gtrd/gtrd.md
+    status: valid
+    warnings: []
+  resource/gtrd/gtrd.md#publication[2]#PMID:27924024:
+    checked_at: '2026-10-19T22:07:39Z'
+    errors: []
+    fingerprint: b6eec428ea3b0713bdd4966721a8b622ba8765b40e701b67f931f4ddd7b84654
+    publication_index: 2
+    reference_id: PMID:27924024
+    source_path: resource/gtrd/gtrd.md
+    status: valid
+    warnings: []
   resource/gtrnadb/gtrnadb.md#publication[0]#DOI:10.1093/nar/gkv1309:
     checked_at: '2026-06-15T22:06:36Z'
     errors: []
