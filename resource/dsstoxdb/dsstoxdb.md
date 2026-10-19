@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- nams
 contacts:
 - category: Organization
   contact_details:
@@ -28,7 +30,7 @@ domains:
 homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 id: dsstoxdb
 infores_id: dsstoxdb
-last_modified_date: '2026-10-04T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

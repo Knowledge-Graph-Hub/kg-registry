@@ -3,6 +3,7 @@ activity_status: active
 category: KnowledgeGraph
 collection:
 - aop
+- nams
 contacts:
 - category: Individual
   contact_details:
@@ -40,7 +41,7 @@ domains:
 homepage_url: https://aopwiki.rdf.bigcat-bioinformatics.org/
 id: aopwiki-rdf
 language: en
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

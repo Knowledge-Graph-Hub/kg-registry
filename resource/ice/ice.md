@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- nams
 contacts:
 - category: Organization
   contact_details:
@@ -25,7 +27,7 @@ domains:
 - environmental exposure
 homepage_url: https://ice.ntp.niehs.nih.gov/
 id: ice
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: ''

@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- nams
 contacts:
 - category: Organization
   contact_details:
@@ -28,7 +30,7 @@ domains:
 - high-throughput screening
 homepage_url: https://tox21.gov/
 id: tox21
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.usa.gov/government-works

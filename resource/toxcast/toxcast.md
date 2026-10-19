@@ -3,6 +3,7 @@ activity_status: active
 category: DataSource
 collection:
 - ber
+- nams
 creation_date: '2025-09-04T00:00:00Z'
 description: ToxCast (US EPA Toxicity Forecaster) is a high-throughput screening program
   generating bioactivity profiles for thousands of environmental chemicals across
@@ -17,7 +18,7 @@ domains:
 - high-throughput screening
 homepage_url: https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast
 id: toxcast
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/privacy/privacy-and-security-notice

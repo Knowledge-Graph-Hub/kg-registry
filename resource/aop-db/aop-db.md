@@ -4,6 +4,7 @@ category: Aggregator
 collection:
 - aop
 - ber
+- nams
 contacts:
 - category: Organization
   contact_details:
@@ -24,7 +25,7 @@ domains:
 - adverse outcome pathways
 homepage_url: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
 id: aop-db
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
