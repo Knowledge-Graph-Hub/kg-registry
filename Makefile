@@ -173,6 +173,7 @@ clean-schema:
 
 clean-cache:
 	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/kg_bioportal_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/publication_reference_validation.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
+	rm -Rf cache/scicrunch_resolver
 	@echo "✅ Cleared cache files"
 
 ### Directories:
@@ -280,6 +281,22 @@ tmp/unsorted-resources.yml: tmp/resource-files.txt | tmp
 .PHONY: populate-infores-ids
 populate-infores-ids: tmp/unsorted-resources.yml
 	$(RUN) python util/populate_infores_ids.py
+
+# Populate SciCrunch RRIDs for resources (backfill; not part of the build pipeline).
+# Seeds known RRIDs and confirms candidates via the open resolver. Set
+# SCICRUNCH_API_KEY to enable search-based discovery; without it, unconfirmed
+# resources are listed in reports/rrid_candidates.tsv.
+.PHONY: populate-rrids populate-rrids-dry-run populate-rrids-seed
+populate-rrids:
+	$(RUN) python util/populate_rrids.py
+
+# Preview what RRIDs would be populated (dry run)
+populate-rrids-dry-run:
+	$(RUN) python util/populate_rrids.py --dry-run --verbose
+
+# Write only the known seed RRIDs (no SciCrunch search)
+populate-rrids-seed:
+	$(RUN) python util/populate_rrids.py --seed-only
 
 # Retrieve file sizes for products with URLs and update product_file_size field
 # Use parallel version by default for speed (10x faster)

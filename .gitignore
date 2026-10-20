@@ -47,6 +47,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
+cache/scicrunch_resolver/
 nosetests.xml
 coverage.xml
 *.cover
