@@ -757,6 +757,7 @@ publications:
   preferred: true
   title: 'SWISS-MODEL: homology modelling of protein structures and complexes'
   year: '2018'
+rrid: SCR_018123
 synonyms:
 - SWISS-MODEL
 - SWISSMODEL

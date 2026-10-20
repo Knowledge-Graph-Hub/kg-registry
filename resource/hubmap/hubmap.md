@@ -856,6 +856,7 @@ publications:
     single-cell data'
   year: '2024'
 repository: https://github.com/hubmapconsortium
+rrid: SCR_016922
 taxon:
 - NCBITaxon:9606
 ---

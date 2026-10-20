@@ -3215,6 +3215,7 @@ publications:
   title: WikiPathways - connecting communities
   year: '2021'
 repository: https://github.com/wikipathways/wikipathways-database
+rrid: SCR_002134
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

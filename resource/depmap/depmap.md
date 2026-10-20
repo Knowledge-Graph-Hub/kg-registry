@@ -1104,6 +1104,7 @@ publications:
   title: Defining a Cancer Dependency Map
   year: '2017'
 repository: https://github.com/broadinstitute/depmap_omics
+rrid: SCR_017655
 taxon:
 - NCBITaxon:9606
 ---

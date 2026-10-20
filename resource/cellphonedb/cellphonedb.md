@@ -390,6 +390,7 @@ publications:
     of multi-subunit ligand–receptor complexes'
   year: '2020'
 repository: https://github.com/ventolab/CellphoneDB
+rrid: SCR_017054
 ---
 # CellPhoneDB
 

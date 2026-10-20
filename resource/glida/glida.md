@@ -225,6 +225,7 @@ publications:
   title: 'GLIDA: GPCR ligand database for chemical genomics drug discovery database
     and tools update'
   year: '2007'
+rrid: SCR_007690
 synonyms:
 - GPCR-LIgand DAtabase
 - GPCR-Ligand Database

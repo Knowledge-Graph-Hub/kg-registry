@@ -2730,6 +2730,7 @@ publications:
   journal: Molecular Systems Biology
   title: A side effect resource to capture phenotypic effects of drugs
   year: '2010'
+rrid: SCR_004321
 warnings:
 - The last release for this resource was on October 21, 2015.
 ---

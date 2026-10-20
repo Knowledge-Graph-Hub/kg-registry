@@ -6984,6 +6984,7 @@ publications:
   title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.
   year: '2019'
 repository: https://github.com/obophenotype/human-phenotype-ontology
+rrid: SCR_006016
 taxon:
 - NCBITaxon:9606
 ---

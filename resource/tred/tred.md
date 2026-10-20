@@ -487,6 +487,7 @@ publications:
   title: 'TRED: a transcriptional regulatory element database, new entries and other
     development'
   year: '2007'
+rrid: SCR_005661
 ---
 # Transcriptional Regulatory Element Database (TRED)
 

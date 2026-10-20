@@ -309,6 +309,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'iProX in 2021: connecting proteomics data sharing with big data'
   year: '2022'
+rrid: SCR_026109
 synonyms:
 - integrated Proteome resources
 ---

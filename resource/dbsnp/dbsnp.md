@@ -2151,6 +2151,7 @@ publications:
   title: 'The evolution of dbSNP: 25 years of impact in genomic research'
   year: '2025'
 repository: https://github.com/ncbi/dbsnp
+rrid: SCR_002338
 taxon:
 - NCBITaxon:9606
 ---

@@ -1877,6 +1877,7 @@ publications:
   journal: Nucleic Acids Res
   title: The microRNA Registry
   year: '2004'
+rrid: SCR_003152
 ---
 # miRBase
 

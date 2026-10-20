@@ -226,6 +226,7 @@ publications:
     to structured descriptions of biological functions and systems
   year: '2019'
 repository: https://github.com/geneontology/noctua
+rrid: SCR_002811
 ---
 GO-CAM provides a structured framework for integrating Gene Ontology annotations into 
 computable models of biological functions. Unlike standard GO annotations, which link 

@@ -411,6 +411,7 @@ publications:
   preferred: false
   title: 'The neXtProt knowledgebase on human proteins: 2017 update'
   year: '2017'
+rrid: SCR_008911
 taxon:
 - NCBITaxon:9606
 ---

@@ -1203,6 +1203,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'PhosphoSitePlus, 2014: mutations, PTMs and recalibrations.'
   year: '2015'
+rrid: SCR_001837
 ---
 # PhosphoSitePlus
 

@@ -73,6 +73,7 @@ publications:
     of lifecycle stages in parasitic organisms'
   year: '2012'
 repository: https://github.com/OPL-ontology/OPL
+rrid: SCR_003427
 ---
 ## Description
 

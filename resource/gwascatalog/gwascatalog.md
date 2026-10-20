@@ -2726,6 +2726,7 @@ publications:
   preferred: true
   title: 'The NHGRI-EBI GWAS Catalog: knowledgebase and deposition resource'
   year: '2023'
+rrid: SCR_012745
 ---
 ## Overview
 

@@ -262,6 +262,7 @@ publications:
   title: 'DDBJ update in 2024: the DDBJ Group Cloud service for sharing pre-publication
     data'
   year: '2025'
+rrid: SCR_002359
 synonyms:
 - DDBJ
 - DNA Data Bank of Japan

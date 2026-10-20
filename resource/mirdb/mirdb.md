@@ -481,6 +481,7 @@ publications:
   preferred: true
   title: 'miRDB: an online database for prediction of functional microRNA targets'
   year: '2020'
+rrid: SCR_010848
 ---
 # miRDB
 

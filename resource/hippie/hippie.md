@@ -677,6 +677,7 @@ publications:
   preferred: true
   title: 'HIPPIE v2.0: enhancing meaningfulness and reliability of protein-protein interaction networks'
   year: '2017'
+rrid: SCR_014651
 synonyms:
 - HIPPIE
 - Human Integrated Protein-Protein Interaction rEference

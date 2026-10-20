@@ -69,6 +69,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cabi-isc
   product_url: https://apps.okn.us/ldf/wildlifekn
+rrid: SCR_010168
 ---
 # U.S. Geological Survey (USGS)
 

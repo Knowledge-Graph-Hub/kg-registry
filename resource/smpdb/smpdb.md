@@ -1406,6 +1406,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'SMPDB 2.0: Big Improvements to the Small Molecule Pathway Database'
   year: '2014'
+rrid: SCR_004844
 synonyms:
 - SMPDB
 taxon:

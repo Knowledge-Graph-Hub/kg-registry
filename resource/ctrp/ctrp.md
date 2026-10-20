@@ -634,6 +634,7 @@ publications:
   title: An Interactive Resource to Identify Cancer Genetic and Lineage Dependencies
     Targeted by Small Molecules
   year: '2013'
+rrid: SCR_026293
 synonyms:
 - CTRP
 - Cancer Therapeutics Response Portal

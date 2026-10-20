@@ -309,6 +309,7 @@ publications:
   title: 'The SCOP database in 2020: expanded classification of representative family
     and superfamily domains of known protein structures'
   year: '2020'
+rrid: SCR_007039
 ---
 # SCOP
 

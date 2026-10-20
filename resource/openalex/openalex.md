@@ -101,6 +101,7 @@ publications:
   title: 'OpenAlex: A fully-open index of scholarly works, authors, venues, institutions,
     and concepts'
   year: '2022'
+rrid: SCR_022787
 ---
 ## Description
 

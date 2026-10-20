@@ -536,6 +536,7 @@ publications:
   title: 'TRRUST v2: an expanded reference database of human and mouse transcriptional
     regulatory interactions'
   year: '2018'
+rrid: SCR_022554
 ---
 # TRRUST
 

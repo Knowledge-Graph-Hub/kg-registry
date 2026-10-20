@@ -759,6 +759,7 @@ publications:
   title: 'COG database update: focus on microbial diversity, model organisms, and
     widespread pathogens'
   year: '2021'
+rrid: SCR_007139
 synonyms:
 - COG
 - Clusters of Orthologous Groups

@@ -292,6 +292,7 @@ publications:
     more accurate annotation of gene expression and queries on Xenbase.'
   year: '2013'
 repository: https://github.com/xenopus-anatomy/xao
+rrid: SCR_004337
 taxon:
 - NCBITaxon:8353
 ---

@@ -159,6 +159,7 @@ publications:
   title: PhosPhAt, a database of phosphorylation sites in Arabidopsis thaliana and
     a plant-specific phosphorylation site predictor
   year: '2007'
+rrid: SCR_003332
 synonyms:
 - Arabidopsis Protein Phosphorylation Site Database
 taxon:

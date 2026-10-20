@@ -5540,6 +5540,7 @@ publications:
     biology in Uberon
   year: '2014'
 repository: https://github.com/obophenotype/uberon
+rrid: SCR_010668
 taxon:
 - NCBITaxon:33208
 ---

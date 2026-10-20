@@ -1713,6 +1713,7 @@ publications:
   title: 'Protein Data Bank: the single global archive for 3D macromolecular structure
     data'
   year: '2019'
+rrid: SCR_012820
 synonyms:
 - PDB
 - Protein Data Bank

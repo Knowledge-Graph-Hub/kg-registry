@@ -132,6 +132,7 @@ publications:
   journal: BMC Genomics
   title: The Chicken Gene Nomenclature Committee report
   year: '2009'
+rrid: SCR_004966
 ---
 # CGNC
 

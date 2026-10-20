@@ -2258,6 +2258,7 @@ publications:
   preferred: true
   title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
   year: '2004'
+rrid: SCR_006363
 synonyms:
 - UMLS
 taxon:

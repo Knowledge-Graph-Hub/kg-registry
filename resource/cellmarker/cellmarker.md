@@ -465,6 +465,7 @@ publications:
   journal: Nucleic Acids Research
   title: CellMarker - a manually curated resource of cell markers in human and mouse
   year: '2019'
+rrid: SCR_018503
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

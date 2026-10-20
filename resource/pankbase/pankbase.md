@@ -113,6 +113,7 @@ publications:
     Islets'
   year: '2026'
 repository: https://github.com/PanKbase
+rrid: SCR_026593
 taxon:
 - NCBITaxon:9606
 ---

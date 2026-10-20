@@ -123,6 +123,7 @@ publications:
   title: 'httk: R Package for High-Throughput Toxicokinetics'
   year: '2017'
 repository: https://github.com/USEPA/CompTox-ExpoCast-httk
+rrid: SCR_024702
 ---
 # httk (High-Throughput Toxicokinetics)
 

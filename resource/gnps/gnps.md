@@ -317,6 +317,7 @@ publications:
     Products Social Molecular Networking
   year: '2016'
 repository: https://github.com/CCMS-UCSD/GNPSDocumentation
+rrid: SCR_019012
 synonyms:
 - GNPS
 - Global Natural Products Social Molecular Networking

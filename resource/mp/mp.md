@@ -1529,6 +1529,7 @@ publications:
     screens
   year: '2015'
 repository: https://github.com/mgijax/mammalian-phenotype-ontology
+rrid: SCR_004855
 taxon:
 - NCBITaxon:40674
 ---

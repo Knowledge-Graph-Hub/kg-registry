@@ -301,6 +301,7 @@ publications:
     in Skyline'
   year: '2018'
 repository: https://github.com/LabKey/MacCossLabModules
+rrid: SCR_017136
 synonyms:
 - PanoramaWeb Public
 ---

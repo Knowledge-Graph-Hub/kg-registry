@@ -144,6 +144,7 @@ publications:
     title: 'InterMine: extensive web services for modern biology'
     year: '2014'
 repository: https://github.com/intermine/intermine
+rrid: SCR_001772
 ---
 
 # InterMine

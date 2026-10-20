@@ -2664,6 +2664,7 @@ publications:
     in animals
   year: '2021'
 repository: https://github.com/BgeeDB/bgee_apps
+rrid: SCR_002028
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

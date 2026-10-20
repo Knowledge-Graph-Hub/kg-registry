@@ -648,6 +648,7 @@ publications:
   preferred: true
   title: The mutational constraint spectrum quantified from variation in 141,456 humans
   year: '2020'
+rrid: SCR_014964
 synonyms:
 - gnomAD
 taxon:

@@ -249,6 +249,7 @@ publications:
   title: Unifying the identification of biomedical entities with the Bioregistry
   year: '2022'
 repository: https://github.com/biopragmatics/bioregistry
+rrid: SCR_022586
 ---
 # Bioregistry
 

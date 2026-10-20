@@ -100,6 +100,7 @@ publications:
     journal: Human Molecular Genetics
     title: Systematic analysis of the gerontome reveals links between aging and age-related diseases
     year: '2016'
+rrid: SCR_010223
 synonyms:
   - GenAge
   - The Aging Gene Database

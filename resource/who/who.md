@@ -294,6 +294,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://spoke.ucsf.edu/data-tools
+rrid: SCR_008505
 synonyms:
 - WHO
 ---

@@ -6646,6 +6646,7 @@ publications:
   title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
   year: '2016'
 repository: https://github.com/ebi-chebi/ChEBI
+rrid: SCR_002088
 ---
 ## Description
 

@@ -266,6 +266,7 @@ publications:
     research'
   year: '2022'
 repository: https://github.com/biothings/biothings.api
+rrid: SCR_024539
 ---
 # BioThings
 

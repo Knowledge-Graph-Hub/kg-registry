@@ -502,6 +502,7 @@ publications:
     order and more'
   year: '2021'
 repository: https://github.com/DessimozLab/pyomabrowser
+rrid: SCR_011978
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.
 

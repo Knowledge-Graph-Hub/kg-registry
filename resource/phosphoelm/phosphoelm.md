@@ -168,6 +168,7 @@ publications:
   journal: BMC Bioinformatics
   title: Phospho.ELM, a database of experimentally verified phosphorylation sites in eukaryotic proteins
   year: '2004'
+rrid: SCR_001109
 synonyms:
 - PhosphoELM
 warnings:

@@ -419,6 +419,7 @@ publications:
   title: 'Evolving BioAssay Ontology (BAO): modularization, integration and applications'
   year: '2014'
 repository: https://github.com/BioAssayOntology/BAO
+rrid: SCR_002638
 ---
 # BioAssay Ontology
 

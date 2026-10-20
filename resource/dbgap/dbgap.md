@@ -386,6 +386,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'NCBI’s Database of Genotypes and Phenotypes: dbGaP'
   year: '2014'
+rrid: SCR_002709
 synonyms:
 - database of Genotypes and Phenotypes
 - NCBI dbGaP

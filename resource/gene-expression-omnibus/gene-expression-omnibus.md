@@ -1454,6 +1454,7 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+rrid: SCR_005012
 ---
 Gene Expression Omnibus (GEO)
 

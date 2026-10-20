@@ -1720,6 +1720,7 @@ publications:
   title: 'Clinical Practice Guidelines for Rare Diseases: The Orphanet Database'
   year: '2017'
 repository: https://github.com/Orphanet
+rrid: SCR_006628
 taxon:
 - NCBITaxon:9606
 version: December 2025

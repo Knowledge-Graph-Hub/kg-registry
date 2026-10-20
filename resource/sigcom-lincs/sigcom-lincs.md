@@ -254,6 +254,7 @@ publications:
     signatures'
   year: '2022'
 repository: https://github.com/MaayanLab/sigcom-lincs
+rrid: SCR_022275
 synonyms:
 - Signature Commons LINCS
 taxon:

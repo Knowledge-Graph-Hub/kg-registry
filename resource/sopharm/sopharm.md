@@ -58,6 +58,7 @@ products:
   product_file_size: 6800
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SOPHARM.tar.gz
 publications: []
+rrid: SCR_003497
 taxon:
 - NCBITaxon:9606
 ---

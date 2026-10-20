@@ -390,6 +390,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: nihreporter
   product_url: https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics
+rrid: SCR_006874
 taxon:
 - NCBITaxon:9606
 ---

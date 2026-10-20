@@ -340,6 +340,7 @@ publications:
   preferred: true
   title: The conserved domain database in 2023
   year: '2023'
+rrid: SCR_002077
 ---
 # Conserved Domain Database
 

@@ -1601,6 +1601,7 @@ publications:
   preferred: true
   title: The BioCyc collection of microbial genomes and metabolic pathways
   year: '2019'
+rrid: SCR_002298
 taxon:
 - NCBITaxon:2759
 ---

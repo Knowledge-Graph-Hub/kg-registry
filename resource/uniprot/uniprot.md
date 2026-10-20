@@ -6550,6 +6550,7 @@ publications:
   title: 'UniProt: the Universal Protein Knowledgebase in 2025'
   year: '2025'
 repository: https://www.uniprot.org/help/downloads
+rrid: SCR_004477
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

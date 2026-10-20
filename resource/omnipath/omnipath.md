@@ -205,6 +205,7 @@ publications:
     omics analysis
   year: '2021'
 repository: https://github.com/saezlab/pypath
+rrid: SCR_028649
 ---
 # OmniPath
 

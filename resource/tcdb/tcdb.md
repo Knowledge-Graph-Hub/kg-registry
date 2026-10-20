@@ -474,6 +474,7 @@ publications:
   preferred: true
   title: 'The Transporter Classification Database (TCDB): 2021 update'
   year: '2021'
+rrid: SCR_004490
 synonyms:
 - TCDB
 - Transporter Classification Database

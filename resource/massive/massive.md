@@ -493,6 +493,7 @@ publications:
   title: Sharing and community curation of mass spectrometry data with Global Natural
     Products Social Molecular Networking
   year: '2016'
+rrid: SCR_013665
 synonyms:
 - Mass Spectrometry Interactive Virtual Environment
 - MassIVE

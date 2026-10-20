@@ -111,6 +111,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: doid
   product_url: http://www.organchip.cn/
+rrid: SCR_011215
 synonyms:
 - EMA
 ---

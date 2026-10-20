@@ -337,6 +337,7 @@ publications:
     topics and formats'
   year: '2013'
 repository: https://github.com/edamontology/edamontology
+rrid: SCR_006620
 ---
 EDAM provides a simple, four-branch structure (Topic, Operation, Data, Format) to organise
 concepts prevalent in computational biology and bioinformatics, enabling consistent

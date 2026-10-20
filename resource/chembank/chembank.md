@@ -455,6 +455,7 @@ publications:
   preferred: true
   title: 'ChemBank: a small-molecule screening and cheminformatics resource database'
   year: '2008'
+rrid: SCR_007592
 ---
 # ChemBank
 

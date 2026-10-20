@@ -67,6 +67,7 @@ publications:
     Sciences'
   year: '2011'
 repository: https://github.com/jannahastings/emotion-ontology
+rrid: SCR_003272
 ---
 ## Description
 

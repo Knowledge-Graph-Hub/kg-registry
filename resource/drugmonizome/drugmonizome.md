@@ -157,6 +157,7 @@ publications:
     attributes for drug enrichment analysis and machine learning'
   year: '2021'
 repository: https://github.com/MaayanLab/drugmonizome
+rrid: SCR_024821
 synonyms:
 - Drugmonizome-ML
 taxon:

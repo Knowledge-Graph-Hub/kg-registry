@@ -117,6 +117,7 @@ publications:
   journal: Bioinformatics
   title: The JWS online simulation database
   year: '2017'
+rrid: SCR_008127
 synonyms:
 - JWS
 - Java Web Simulation

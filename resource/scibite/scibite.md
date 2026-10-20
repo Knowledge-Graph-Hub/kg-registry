@@ -39,5 +39,6 @@ products:
   product_file_size: 8114434
   product_url: https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-04-01.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
+rrid: SCR_003952
 ---
 SciBite

@@ -193,6 +193,7 @@ publications:
   preferred: true
   title: 'The ISRCTN Register: achievements and challenges 8 years on'
   year: '2011'
+rrid: SCR_006087
 synonyms:
 - ISRCTN
 - International Standard Randomised Controlled Trial Number

@@ -219,6 +219,7 @@ publications:
   title: 'CADD v1.7: using protein language models, regulatory CNNs and other nucleotide-level
     scores to improve genome-wide variant predictions'
   year: '2024'
+rrid: SCR_018393
 synonyms:
 - Combined Annotation Dependent Depletion
 ---

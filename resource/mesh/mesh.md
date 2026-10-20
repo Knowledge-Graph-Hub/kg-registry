@@ -3162,6 +3162,7 @@ publications:
   title: Medical Subject Headings (MeSH).
   year: '2000'
 repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
+rrid: SCR_004750
 ---
 # Medical Subject Headings (MeSH)
 

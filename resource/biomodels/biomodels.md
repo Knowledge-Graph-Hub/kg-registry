@@ -281,6 +281,7 @@ publications:
   preferred: true
   title: BioModels—15 years of sharing computational models in life science
   year: '2019'
+rrid: SCR_001993
 synonyms:
 - BioModels Database
 - BioModels Repository

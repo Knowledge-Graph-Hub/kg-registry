@@ -297,6 +297,7 @@ publications:
   title: MetaboLights—an open-access general-purpose repository for metabolomics studies
     and associated meta-data
   year: '2013'
+rrid: SCR_014663
 synonyms:
 - MTBLS
 ---

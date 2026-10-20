@@ -337,6 +337,7 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: meddra
+rrid: SCR_013718
 synonyms:
 - AEMS
 - FDA Adverse Event Monitoring System

@@ -793,6 +793,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: phenopacket-store
   product_url: https://pavs.phenomebrowser.net/api/docs
+rrid: SCR_007691
 ---
 ## Overview
 

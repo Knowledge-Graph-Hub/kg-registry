@@ -1077,6 +1077,7 @@ publications:
   title: 'Expression Atlas update: from tissues to single cells'
   year: '2019'
 repository: https://github.com/ebi-gene-expression-group
+rrid: SCR_007989
 ---
 # Expression Atlas
 

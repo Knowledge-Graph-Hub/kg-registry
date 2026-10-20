@@ -533,6 +533,7 @@ publications:
   title: 'LIPID MAPS: update to databases and tools for the lipidomics community'
   year: '2024'
 repository: https://www.lipidmaps.org/databases/lmsd
+rrid: SCR_006579
 ---
 # LIPID MAPS
 

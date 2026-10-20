@@ -2493,6 +2493,7 @@ publications:
   title: 'BindingDB in 2024: a FAIR knowledgebase of protein-small molecule binding
     data'
   year: '2025'
+rrid: SCR_000390
 ---
 # BindingDB
 

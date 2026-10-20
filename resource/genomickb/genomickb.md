@@ -90,6 +90,7 @@ products:
       - relation_type: prov:hadPrimarySource
         source: motifmap
     product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+rrid: SCR_026591
 ---
 
 GenomicKB

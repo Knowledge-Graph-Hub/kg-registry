@@ -3548,6 +3548,7 @@ publications:
   title: Ensembl 2025
   year: '2025'
 repository: https://github.com/Ensembl/
+rrid: SCR_006766
 taxon:
 - NCBITaxon:10116
 - NCBITaxon:9606

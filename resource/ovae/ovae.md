@@ -58,6 +58,7 @@ products:
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OVAE.tar.gz
 publications: []
 repository: https://github.com/OVAE-Ontology/ovae
+rrid: SCR_003442
 ---
 ## Description
 

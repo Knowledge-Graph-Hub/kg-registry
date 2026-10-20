@@ -2376,6 +2376,7 @@ publications:
     of genomes, transcripts and proteins'
   year: '2007'
 repository: https://ftp.ncbi.nlm.nih.gov/refseq/
+rrid: SCR_022748
 ---
 # RefSeq: NCBI Reference Sequence Database
 

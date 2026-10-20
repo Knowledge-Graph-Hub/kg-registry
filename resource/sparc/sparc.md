@@ -101,6 +101,7 @@ products:
     source: sckan
   product_file_size: 198292
   product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/SPARC.zip
+rrid: SCR_017041
 synonyms:
 - SPARC
 - Stimulating Peripheral Activity to Relieve Conditions

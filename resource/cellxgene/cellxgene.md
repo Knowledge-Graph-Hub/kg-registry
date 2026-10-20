@@ -436,6 +436,7 @@ publications:
     analysis and modeling of aggregated data'
   year: '2025'
 repository: https://github.com/chanzuckerberg/single-cell-data-portal
+rrid: SCR_024894
 ---
 # CZ CELLxGENE
 

@@ -1717,6 +1717,7 @@ publications:
   title: Analysis of the human protein interactome and comparison with yeast, worm
     and fly interaction datasets
   year: '2006'
+rrid: SCR_007027
 taxon:
 - NCBITaxon:9606
 ---

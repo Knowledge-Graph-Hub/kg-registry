@@ -388,6 +388,7 @@ publications:
   preferred: true
   title: 'The Sequence Read Archive: a decade more of explosive growth'
   year: '2022'
+rrid: SCR_004891
 synonyms:
 - SRA
 - Sequence Read Archive

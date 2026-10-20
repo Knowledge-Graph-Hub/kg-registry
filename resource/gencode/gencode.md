@@ -829,6 +829,7 @@ publications:
   preferred: true
   title: 'GENCODE 2025: reference gene annotation for human and mouse'
   year: '2025'
+rrid: SCR_014966
 synonyms:
 - GENCODE
 - Encyclopedia of genes and gene variants

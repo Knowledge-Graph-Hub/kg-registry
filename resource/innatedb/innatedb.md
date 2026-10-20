@@ -759,6 +759,7 @@ publications:
   title: 'InnateDB: systems biology of innate immunity and beyond - recent updates
     and continuing curation'
   year: '2013'
+rrid: SCR_006714
 synonyms:
 - InnateDB
 taxon:

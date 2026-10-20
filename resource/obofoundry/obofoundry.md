@@ -305,6 +305,7 @@ publications:
     data integration'
   year: '2007'
 repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+rrid: SCR_007083
 synonyms:
 - OBO
 - Open Biological and Biomedical Ontology Foundry

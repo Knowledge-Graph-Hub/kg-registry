@@ -1401,6 +1401,7 @@ products:
   product_url: http://purl.obolibrary.org/obo/zp.obo
 publications: []
 repository: https://github.com/BFO-ontology/BFO
+rrid: SCR_004818
 ---
 ## Description
 

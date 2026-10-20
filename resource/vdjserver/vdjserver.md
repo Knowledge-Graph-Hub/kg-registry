@@ -65,6 +65,7 @@ products:
     source: pdb
   - relation_type: prov:wasInfluencedBy
     source: lincs
+rrid: SCR_014356
 taxon:
 - NCBITaxon:9606
 ---

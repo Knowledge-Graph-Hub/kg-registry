@@ -2586,6 +2586,7 @@ publications:
   journal: Methods
   title: 'DISEASES: text mining and data integration of disease-gene associations.'
   year: '2015'
+rrid: SCR_015664
 synonyms:
 - DISEASES Database
 - JensenLab DISEASES

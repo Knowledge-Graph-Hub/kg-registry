@@ -312,6 +312,7 @@ publications:
   title: Proteopedia - a scientific 'wiki' bridging the rift between three-dimensional
     structure and function of biomacromolecules
   year: '2008'
+rrid: SCR_004647
 ---
 # Proteopedia
 

@@ -703,6 +703,7 @@ publications:
     (ECO)
   year: '2014'
 repository: https://github.com/evidenceontology/evidenceontology
+rrid: SCR_002477
 ---
 ## Description
 

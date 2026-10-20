@@ -153,6 +153,7 @@ publications:
     journal: Nucleic Acids Research
     year: '2010'
 repository: https://github.com/GeneMANIA/genemania
+rrid: SCR_005709
 synonyms:
   - GeneMANIA
   - GeneMANIA prediction server

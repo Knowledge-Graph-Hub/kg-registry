@@ -374,6 +374,7 @@ publications:
   title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
     Expression Database for Mouse Development (GXD)'
 repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
+rrid: SCR_021808
 taxon:
 - NCBITaxon:10088
 ---

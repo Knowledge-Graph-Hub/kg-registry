@@ -241,6 +241,7 @@ publications:
     biology research'
   year: '2017'
 repository: https://github.com/seek4science/seek
+rrid: SCR_021119
 synonyms:
 - FAIRDOM Hub
 ---

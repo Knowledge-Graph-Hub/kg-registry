@@ -768,6 +768,7 @@ publications:
   preferred: false
   title: 'MalaCards: A Comprehensive Automatically-Mined Database of Human Diseases'
   year: '2014'
+rrid: SCR_005817
 taxon:
 - NCBITaxon:9606
 ---

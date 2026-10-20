@@ -335,6 +335,7 @@ publications:
   preferred: true
   title: New and continuing developments at PROSITE
   year: '2012'
+rrid: SCR_003457
 ---
 # PROSITE
 

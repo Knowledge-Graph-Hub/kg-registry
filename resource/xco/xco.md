@@ -249,6 +249,7 @@ publications:
     ontologies: expansion, improvements and new applications.'
   year: '2013'
 repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
+rrid: SCR_003306
 ---
 ## Description
 

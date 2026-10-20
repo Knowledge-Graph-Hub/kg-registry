@@ -175,6 +175,7 @@ publications:
   title: DBpedia - A crystallization point for the Web of Data
   year: '2009'
 repository: https://github.com/dbpedia/extraction-framework
+rrid: SCR_003661
 synonyms:
 - DBpedia
 ---

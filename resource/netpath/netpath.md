@@ -403,6 +403,7 @@ publications:
   journal: Genome Biology
   title: 'NetPath: a public resource of curated signal transduction pathways'
   year: '2010'
+rrid: SCR_003567
 synonyms:
 - NetPath
 taxon:

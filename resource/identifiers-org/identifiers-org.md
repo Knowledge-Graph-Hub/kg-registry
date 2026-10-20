@@ -255,6 +255,7 @@ publications:
     identification'
   year: '2012'
 repository: https://github.com/identifiers-org
+rrid: SCR_003735
 synonyms:
 - identifiers.org
 - MIRIAM Registry

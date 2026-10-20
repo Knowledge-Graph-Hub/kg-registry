@@ -327,6 +327,7 @@ publications:
   preferred: true
   title: ProteomicsDB
   year: '2018'
+rrid: SCR_015562
 ---
 # ProteomicsDB
 

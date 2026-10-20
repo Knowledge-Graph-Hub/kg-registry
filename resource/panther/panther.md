@@ -2937,5 +2937,6 @@ publications:
   title: 'PANTHER: Making genome-scale phylogenetics accessible to all'
   year: '2022'
 repository: https://data.pantherdb.org/ftp/
+rrid: SCR_004869
 ---
 PANTHER

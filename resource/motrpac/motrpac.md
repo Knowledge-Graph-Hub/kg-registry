@@ -837,6 +837,7 @@ publications:
   title: Temporal dynamics of the multi-omic response to endurance exercise training
   year: '2024'
 repository: https://github.com/MoTrPAC
+rrid: SCR_017611
 taxon:
 - NCBITaxon:10116
 ---

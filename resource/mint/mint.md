@@ -1499,6 +1499,7 @@ publications:
   journal: Nucleic Acids Res
   title: 'MINT, the molecular interaction database: 2012 update'
   year: '2012'
+rrid: SCR_001523
 synonyms:
 - MINT
 - Molecular INTeraction Database

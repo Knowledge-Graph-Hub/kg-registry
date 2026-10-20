@@ -640,6 +640,7 @@ products:
     source: wikipedia
   product_file_size: 5340
   product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikipedia-kg-dump
+rrid: SCR_004897
 synonyms:
 - English Wikipedia
 ---

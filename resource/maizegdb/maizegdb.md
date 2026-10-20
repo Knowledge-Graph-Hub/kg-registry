@@ -117,6 +117,7 @@ publications:
   preferred: true
   title: 'MaizeGDB 2018: the maize multi-genome genetics and genomics database'
   year: '2019'
+rrid: SCR_006600
 ---
 ## Description
 

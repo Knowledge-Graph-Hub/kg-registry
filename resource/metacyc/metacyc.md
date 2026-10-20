@@ -480,6 +480,7 @@ publications:
   preferred: true
   title: The MetaCyc database of metabolic pathways and enzymes - a 2019 update
   year: '2020'
+rrid: SCR_007778
 ---
 # MetaCyc
 

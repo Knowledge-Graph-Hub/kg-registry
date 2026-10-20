@@ -3478,6 +3478,7 @@ publications:
   title: PubChem 2019 update - improved access to chemical data
   year: '2019'
 repository: https://github.com/ncbi/datasets
+rrid: SCR_004742
 ---
 PubChem is a database of chemical molecules and their activities against biological assays maintained by the National Center for Biotechnology Information (NCBI), a component of the National Library of Medicine, which is part of the United States National Institutes of Health (NIH).
 
