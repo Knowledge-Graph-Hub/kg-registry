@@ -99,6 +99,7 @@ publications:
   title: Aquaculture, husbandry, and shipping at the Zebrafish International Resource
     Center
   year: '2016'
+rrid: SCR_005065
 synonyms:
 - ZIRC
 taxon:
