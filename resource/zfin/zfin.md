@@ -2564,6 +2564,7 @@ publications:
   title: Zebrafish Information Network, the knowledgebase for Danio rerio research
   year: '2022'
 repository: https://github.com/ZFIN/
+rrid: SCR_013326
 taxon:
 - NCBITaxon:7955
 ---

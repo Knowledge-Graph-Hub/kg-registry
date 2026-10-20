@@ -100,6 +100,7 @@ publications:
     preferred: true
     title: 'dbPTM 2025 update: comprehensive integration of PTMs and proteomic data for advanced insights into cancer research'
     year: '2025'
+rrid: SCR_007619
 taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090

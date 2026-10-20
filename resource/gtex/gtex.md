@@ -1818,6 +1818,7 @@ publications:
     in humans'
   year: '2015'
 repository: https://github.com/broadinstitute/gtex-pipeline
+rrid: SCR_001618
 taxon:
 - NCBITaxon:9606
 ---

@@ -133,6 +133,7 @@ publications:
     preferred: true
     title: 'UniRef: comprehensive and non-redundant UniProt reference clusters'
     year: '2007'
+rrid: SCR_010646
 synonyms:
   - UniRef
   - UniRef100

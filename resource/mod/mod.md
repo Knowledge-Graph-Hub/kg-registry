@@ -231,6 +231,7 @@ publications:
     data
   year: '2008'
 repository: https://github.com/HUPO-PSI/psi-mod-CV
+rrid: SCR_004198
 ---
 ## Description
 

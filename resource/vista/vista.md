@@ -319,6 +319,7 @@ publications:
   preferred: true
   title: VISTA Enhancer Browser--a database of tissue-specific human enhancers
   year: '2007'
+rrid: SCR_007973
 ---
 # VISTA Enhancer Browser
 

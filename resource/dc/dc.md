@@ -390,6 +390,7 @@ publications:
     element set — Part 2: DCMI Properties and classes'
   year: '2019'
 repository: https://github.com/dcmi/
+rrid: SCR_012921
 ---
 # Dublin Core Metadata Terms
 

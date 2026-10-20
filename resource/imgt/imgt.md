@@ -334,6 +334,7 @@ publications:
   preferred: true
   title: IMGT, the international ImMunoGeneTics information system 25 years on
   year: '2015'
+rrid: SCR_012780
 ---
 # IMGT
 

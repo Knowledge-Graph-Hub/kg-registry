@@ -1061,6 +1061,7 @@ publications:
   journal: Nature Communications
   title: Connecting omics signatures and revealing biological mechanisms with iLINCS
   year: '2022'
+rrid: SCR_003937
 taxon:
 - NCBITaxon:9606
 ---

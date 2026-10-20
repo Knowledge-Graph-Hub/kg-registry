@@ -444,6 +444,7 @@ publications:
   title: 'The International Mouse Phenotyping Consortium: comprehensive knockout phenotyping
     underpinning the study of human disease'
   year: '2023'
+rrid: SCR_006158
 taxon:
 - NCBITaxon:10090
 - NCBITaxon:9606

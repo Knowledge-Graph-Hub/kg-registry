@@ -550,6 +550,7 @@ publications:
   title: The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer
     drug sensitivity
   year: '2012'
+rrid: SCR_013836
 taxon:
 - NCBITaxon:9606
 ---

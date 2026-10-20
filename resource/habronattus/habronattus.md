@@ -21,6 +21,7 @@ layout: resource_detail
 name: Habronattus courtship
 products: []
 publications: []
+rrid: SCR_010334
 ---
 ## Description
 

@@ -82,6 +82,7 @@ publications:
   title: 'ORCID: a system to uniquely identify researchers'
   year: '2012'
 repository: https://github.com/ORCID
+rrid: SCR_008700
 ---
 ORCID is a free, unique, persistent identifier (PID) for individuals
 to use as they engage in research, scholarship, and innovation

@@ -4820,6 +4820,7 @@ publications:
   title: 'Genenames.org: the HGNC resources in 2023'
   year: '2023'
 repository: https://github.com/HGNC
+rrid: SCR_002827
 taxon:
 - NCBITaxon:9606
 ---

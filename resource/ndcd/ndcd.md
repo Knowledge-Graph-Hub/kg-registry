@@ -211,6 +211,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: fda-orphan-drugs
   product_url: https://mychem.info/v1/query
+rrid: SCR_013721
 synonyms:
 - NDC
 - NDCD

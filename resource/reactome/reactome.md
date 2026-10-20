@@ -7795,6 +7795,7 @@ publications:
   title: The Reactome pathway knowledgebase 2022
   year: '2022'
 repository: https://github.com/reactome
+rrid: SCR_023504
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

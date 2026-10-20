@@ -4498,6 +4498,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'BioGRID: a general repository for interaction datasets'
   year: '2006'
+rrid: SCR_007393
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:4932

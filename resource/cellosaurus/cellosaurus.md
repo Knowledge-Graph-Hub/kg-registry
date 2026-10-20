@@ -350,6 +350,7 @@ publications:
   title: The Cellosaurus, a cell-line knowledge resource
   year: '2018'
 repository: https://github.com/calipho-sib/cellosaurus
+rrid: SCR_024863
 taxon:
 - NCBITaxon:9606
 ---

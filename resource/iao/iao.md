@@ -914,6 +914,7 @@ publications:
     representational artifacts
   year: '2012'
 repository: https://github.com/information-artifact-ontology/IAO
+rrid: SCR_000477
 ---
 ## Description
 

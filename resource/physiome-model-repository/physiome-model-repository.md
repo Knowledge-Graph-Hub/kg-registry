@@ -264,6 +264,7 @@ publications:
   journal: BMC Bioinformatics
   title: Model annotation and discovery with the Physiome Model Repository
   year: '2019'
+rrid: SCR_017374
 synonyms:
 - PMR
 - PMR2

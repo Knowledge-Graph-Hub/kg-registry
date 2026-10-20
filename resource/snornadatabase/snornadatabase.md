@@ -455,6 +455,7 @@ publications:
     preferred: true
     title: snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box snoRNAs
     year: '2006'
+rrid: SCR_007939
 synonyms:
   - snoRNA-LBME-db
   - snoRNA database

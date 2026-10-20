@@ -264,6 +264,7 @@ publications:
   journal: Nature Communications
   title: Quantifying the impact of public omics data
   year: '2019'
+rrid: SCR_010494
 synonyms:
 - OmicsDI
 - Omics Discovery Index

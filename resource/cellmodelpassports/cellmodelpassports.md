@@ -191,6 +191,7 @@ publications:
   title: Cell Model Passports-a hub for clinical, genetic and functional datasets
     of preclinical cancer models
   year: '2019'
+rrid: SCR_027682
 synonyms:
 - CMP
 ---

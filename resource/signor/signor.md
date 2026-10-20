@@ -1053,6 +1053,7 @@ publications:
   preferred: true
   title: 'SIGNOR 3.0, the SIGnaling network open resource 3.0: 2022 update'
   year: '2023'
+rrid: SCR_018485
 taxon:
 - NCBITaxon:9606
 ---

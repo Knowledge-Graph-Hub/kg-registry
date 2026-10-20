@@ -839,6 +839,7 @@ publications:
   preferred: true
   title: 'Normalized names for clinical drugs: RxNorm at 6 years.'
   year: '2011'
+rrid: SCR_006645
 taxon:
 - NCBITaxon:9606
 ---

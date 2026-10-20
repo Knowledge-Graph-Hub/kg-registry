@@ -406,6 +406,7 @@ publications:
   title: 'Human SRMAtlas: A Resource of Targeted Assays to Quantify the Complete Human
     Proteome'
   year: '2016'
+rrid: SCR_006783
 synonyms:
 - PA
 - PASSEL

@@ -551,6 +551,7 @@ publications:
   title: 'REDfly: a Regulatory Element Database for Drosophila'
   year: '2006'
 repository: https://github.com/redflydb/redfly
+rrid: SCR_006790
 taxon:
 - NCBITaxon:7227
 - NCBITaxon:50557

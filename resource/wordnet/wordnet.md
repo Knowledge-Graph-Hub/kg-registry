@@ -244,6 +244,7 @@ publications:
   preferred: true
   title: WordNet
   year: '1995'
+rrid: SCR_022182
 synonyms:
 - Princeton WordNet
 - PWN

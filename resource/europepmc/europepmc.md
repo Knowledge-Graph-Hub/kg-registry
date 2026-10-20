@@ -273,6 +273,7 @@ publications:
     for innovation'
   year: '2015'
 repository: https://github.com/EuropePMC
+rrid: SCR_005901
 synonyms:
 - Europe PubMed Central
 - EuropePMC

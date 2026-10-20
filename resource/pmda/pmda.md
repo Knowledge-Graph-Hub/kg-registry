@@ -70,6 +70,7 @@ products:
     secondary_source:
       - relation_type: prov:wasDerivedFrom
         source: pmda
+rrid: SCR_000244
 synonyms:
   - PMDA
 ---

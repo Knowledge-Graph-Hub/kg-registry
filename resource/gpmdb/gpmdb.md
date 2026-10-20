@@ -215,6 +215,7 @@ publications:
   journal: Bioinformatics
   title: 'TANDEM: matching proteins with tandem mass spectra'
   year: '2004'
+rrid: SCR_006617
 synonyms:
 - GPMDB
 - The Global Proteome Machine

@@ -193,6 +193,7 @@ products:
     source: genereviews
   product_file_size: 5305829
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+rrid: SCR_006560
 synonyms:
 - GeneReviews®
 - GR

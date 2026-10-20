@@ -22,6 +22,7 @@ layout: resource_detail
 name: Cereal Plant Gross Anatomy
 products: []
 publications: []
+rrid: SCR_007061
 ---
 ## Description
 

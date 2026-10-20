@@ -108,6 +108,7 @@ publications:
   title: 'Rice Annotation Project Database (RAP-DB): an integrative and interactive
     database for rice genomics'
   year: '2013'
+rrid: SCR_015062
 ---
 # Rice Annotation Project Database
 

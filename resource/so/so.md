@@ -708,6 +708,7 @@ publications:
   title: Evolution of the Sequence Ontology terms and relationships.
   year: '2011'
 repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
+rrid: SCR_004374
 ---
 ## Description
 

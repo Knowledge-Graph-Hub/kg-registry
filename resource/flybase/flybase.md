@@ -1969,6 +1969,7 @@ publications:
   title: 'FlyBase: updates to the Drosophila genes and genomes database'
   year: '2024'
 repository: https://github.com/FlyBase
+rrid: SCR_006549
 taxon:
 - NCBITaxon:7227
 ---

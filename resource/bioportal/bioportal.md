@@ -628,6 +628,7 @@ publications:
   title: 'BioPortal: ontologies and integrated data resources at the click of a mouse'
   year: '2009'
 repository: https://github.com/ncbo
+rrid: SCR_002713
 warnings:
 - Some ontologies have distinct licenses; review individual ontology license metadata
   before reuse.

@@ -394,6 +394,7 @@ publications:
     form using Biofactoid'
   year: '2021'
 repository: https://github.com/PathwayCommons/factoid
+rrid: SCR_021011
 synonyms:
 - Factoid
 tags:

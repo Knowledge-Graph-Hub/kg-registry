@@ -104,6 +104,7 @@ products:
     source: text-mining-kp
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
 repository: https://github.com/NCATS-Gamma/robokop
+rrid: SCR_023437
 ---
 ### ROBOKOP: A Knowledge Graph System for Biomedical Question Answering
 

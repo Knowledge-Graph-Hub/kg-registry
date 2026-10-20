@@ -46,6 +46,7 @@ products:
 repository: https://github.com/HumanBrainProject/kg-core
 creation_date: '2025-05-01T00:00:00Z'
 last_modified_date: '2026-07-03T00:00:00Z'
+rrid: SCR_017612
 ---
 
 EBRAINS Knowledge Graph

@@ -748,6 +748,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'MarkerDB: an online database of molecular biomarkers'
   year: '2021'
+rrid: SCR_026817
 ---
 # MarkerDB
 

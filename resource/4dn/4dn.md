@@ -425,6 +425,7 @@ publications:
   title: The 4D Nucleome Data Portal as a resource for searching and visualizing curated
     nucleomics data
   year: '2022'
+rrid: SCR_016925
 taxon:
 - NCBITaxon:9606
 ---

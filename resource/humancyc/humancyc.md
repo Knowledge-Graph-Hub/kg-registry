@@ -647,6 +647,7 @@ publications:
   title: Computational prediction of human metabolic pathways from the complete human
     genome
   year: '2004'
+rrid: SCR_007050
 synonyms:
 - HumanCyc
 taxon:

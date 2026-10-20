@@ -295,6 +295,7 @@ publications:
   title: 'BioGPS and MyGene.info: organizing online, gene-centric information'
   year: '2013'
 repository: https://github.com/biothings/mygene.info
+rrid: SCR_018660
 synonyms:
 - MyGene
 - mygene.info

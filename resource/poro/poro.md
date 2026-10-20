@@ -137,6 +137,7 @@ publications:
     ontology'
   year: '2014'
 repository: https://github.com/obophenotype/porifera-ontology
+rrid: SCR_000134
 taxon:
 - NCBITaxon:6040
 ---

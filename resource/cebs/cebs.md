@@ -108,6 +108,7 @@ publications:
   journal: Nucleic Acids Research
   title: 'CEBS: a comprehensive annotated database of toxicological data'
   year: '2017'
+rrid: SCR_006778
 synonyms:
 - CEBS
 - Chemical Effects in Biological Systems

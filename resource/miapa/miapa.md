@@ -88,6 +88,7 @@ publications:
     Minimum Information about a Phylogenetic Analysis (MIAPA)'
   year: '2006'
 repository: https://github.com/evoinfo/miapa
+rrid: SCR_003777
 ---
 ## Description
 

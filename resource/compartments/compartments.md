@@ -1301,5 +1301,6 @@ publications:
   title: 'COMPARTMENTS: unification and visualization of protein subcellular localization
     evidence'
   year: '2014'
+rrid: SCR_015561
 ---
 # COMPARTMENTS

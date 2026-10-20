@@ -2886,5 +2886,6 @@ publications:
   journal: Nucleic Acids Research
   title: 'DrugCentral: online drug compendium'
   year: '2017'
+rrid: SCR_015663
 ---
 DrugCentral

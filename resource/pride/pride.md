@@ -336,6 +336,7 @@ publications:
     proteomics evidences'
   year: '2022'
 repository: https://github.com/PRIDE-Archive
+rrid: SCR_003411
 synonyms:
 - PRIDE
 - PRoteomics IDEntifications Database

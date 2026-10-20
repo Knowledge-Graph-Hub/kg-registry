@@ -125,6 +125,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: unii
   product_url: https://open.fda.gov/data/downloads/
+rrid: SCR_013727
 synonyms:
 - Approved Drug Products with Therapeutic Equivalence Evaluations
 - Orange Book

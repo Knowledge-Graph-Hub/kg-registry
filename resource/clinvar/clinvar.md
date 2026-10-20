@@ -4089,6 +4089,7 @@ publications:
   journal: Nucleic Acids Research
   title: ClinVar - improving access to variant interpretations and supporting evidence
   year: '2018'
+rrid: SCR_006169
 taxon:
 - NCBITaxon:9606
 ---

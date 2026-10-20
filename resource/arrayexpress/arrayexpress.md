@@ -438,6 +438,7 @@ publications:
   journal: Nucleic Acids Research
   title: ArrayExpress update - from bulk to single-cell expression data
   year: '2019'
+rrid: SCR_002964
 synonyms:
 - AE
 ---

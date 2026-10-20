@@ -526,6 +526,7 @@ publications:
   journal: Nucleic Acids Res
   title: 'BRENDA, the ELIXIR core data resource in 2021: new developments and updates'
   year: '2021'
+rrid: SCR_002997
 taxon:
 - NCBITaxon:131567
 ---

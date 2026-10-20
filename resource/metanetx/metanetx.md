@@ -137,6 +137,7 @@ publications:
   journal: Briefings in Bioinformatics
   title: Reconciliation of metabolites and biochemical reactions for metabolic networks
   year: '2014'
+rrid: SCR_015882
 ---
 MetaNetX is a comprehensive platform for accessing, analyzing, and manipulating genome-scale metabolic networks (GSMs) and biochemical pathways. Its primary focus is providing a unified namespace for metabolites and biochemical reactions in the context of metabolic models.
 

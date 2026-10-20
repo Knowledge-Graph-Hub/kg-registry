@@ -470,6 +470,7 @@ publications:
   title: 'BioPlexR and BioPlexPy: integrated data products for the analysis of human
     protein interactions'
   year: '2023'
+rrid: SCR_016144
 synonyms:
 - BioPlex Interactome
 taxon:

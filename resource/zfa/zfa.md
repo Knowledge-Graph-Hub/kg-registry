@@ -463,6 +463,7 @@ publications:
     development of Danio rerio.'
   year: '2014'
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+rrid: SCR_005887
 taxon:
 - NCBITaxon:7954
 ---

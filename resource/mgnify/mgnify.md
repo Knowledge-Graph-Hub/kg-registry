@@ -500,6 +500,7 @@ publications:
   preferred: true
   title: 'MGnify: the microbiome sequence data analysis resource in 2023'
   year: '2023'
+rrid: SCR_016429
 taxon:
   - NCBITaxon:9606
 ---

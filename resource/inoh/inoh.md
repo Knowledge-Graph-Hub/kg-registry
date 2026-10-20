@@ -386,6 +386,7 @@ publications:
   journal: Database
   title: 'INOH: ontology-based highly structured database of signal transduction pathways'
   year: '2011'
+rrid: SCR_002084
 synonyms:
 - Integrating Network Objects with Hierarchies
 ---

@@ -376,6 +376,7 @@ publications:
   title: 'The ProteomeXchange consortium in 2017: supporting the cultural change in
     proteomics public data deposition'
   year: '2017'
+rrid: SCR_004055
 synonyms:
 - PX
 - ProteomeCentral

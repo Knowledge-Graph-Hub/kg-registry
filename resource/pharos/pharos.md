@@ -784,6 +784,7 @@ publications:
   title: 'TCRD and Pharos 2021: mining the human proteome for disease biology'
   year: '2021'
 repository: https://github.com/ncats/pharos_frontend
+rrid: SCR_016258
 synonyms:
 - Pharos
 - TCRD

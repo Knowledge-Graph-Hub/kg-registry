@@ -202,6 +202,7 @@ publications:
   title: The EcoCyc Database in 2021
   year: '2021'
 repository: https://biocyc.org/download.shtml
+rrid: SCR_002433
 ---
 # EcoCyc
 

@@ -375,6 +375,7 @@ publications:
   title: 'The eukaryotic promoter database: expansion of EPDnew and new promoter analysis
     tools'
   year: '2015'
+rrid: SCR_002485
 ---
 # Eukaryotic Promoter Database
 

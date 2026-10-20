@@ -469,6 +469,7 @@ publications:
     and metadata, metabolite standards, protocols, tutorials and training, and analysis
     tools'
   year: '2016'
+rrid: SCR_013794
 synonyms:
 - MW
 - NMDR

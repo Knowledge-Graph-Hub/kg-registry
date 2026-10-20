@@ -420,6 +420,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ncbi
   product_url: https://seqapass.epa.gov/seqapass/
+rrid: SCR_006472
 ---
 # National Center for Biotechnology Information
 

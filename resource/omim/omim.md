@@ -4374,6 +4374,7 @@ publications:
   title: 'OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog
     of human genes and genetic disorders'
   year: '2015'
+rrid: SCR_006437
 taxon:
 - NCBITaxon:9606
 warnings:

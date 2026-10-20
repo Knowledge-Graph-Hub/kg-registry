@@ -718,6 +718,7 @@ publications:
   preferred: true
   title: Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program
   year: '2021'
+rrid: SCR_028178
 synonyms:
   - TOPMed
   - Trans-Omics for Precision Medicine

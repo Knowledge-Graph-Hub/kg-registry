@@ -45,13 +45,17 @@ CACHE_DIR = ROOT.joinpath("cache")
 RESOLVER_CACHE_DIR = CACHE_DIR.joinpath("scicrunch_resolver")
 
 RESOLVER_URL = "https://scicrunch.org/resolver/RRID:{rrid}.json"
-# SciCrunch search needs an API key; this is the documented elastic endpoint.
-SEARCH_URL = "https://api.scicrunch.io/elastic/v1/RRID/_search"
+# SciCrunch search needs an API key. The RIN resource registry lives in the
+# Elasticsearch index aliased 'RIN_Tool_pr'; the key goes in an 'apikey' header
+# (see https://docs.scicrunch.io/.../basic-rin-search-examples). Each search hit
+# has the same _source.item / _source.rrid / distributions shape the resolver
+# returns, so extract_resolver_record() reads it unchanged.
+SEARCH_URL = "https://api.scicrunch.io/elastic/v1/RIN_Tool_pr/_search"
 
 # SciCrunch rejects the default urllib User-Agent (HTTP 403), so present a
 # browser-like one.
 USER_AGENT = "Mozilla/5.0 (KG-Registry RRID backfill; +https://kghub.org)"
-HTTP_TIMEOUT = 30
+HTTP_TIMEOUT = 15
 
 # RRIDs already found in page body text (see issue #757). These are written
 # directly because they are human-verified; the resolver is still consulted to
@@ -150,7 +154,7 @@ def _name_set(*values) -> set:
 
 
 def name_matches(record: Dict, name: Optional[str], synonyms: Optional[List[str]] = None) -> bool:
-    """True if the resolver name/abbreviations/synonyms overlap ours (case-insensitive)."""
+    """True if the resolver name/abbreviations/synonyms overlap ours (whole-string, case-insensitive)."""
     if not record:
         return False
     resolver_names = _name_set(
@@ -160,29 +164,131 @@ def name_matches(record: Dict, name: Optional[str], synonyms: Optional[List[str]
     return bool(resolver_names & ours)
 
 
+# Registered domains shared by many unrelated resources: a domain match on one
+# of these is meaningless (e.g. every OBO ontology lives under obolibrary.org),
+# so they never count toward a domain confirmation.
+SHARED_HOST_DOMAINS = {
+    "obolibrary.org", "purl.org", "bioontology.org", "ontobee.org",
+    "github.io", "github.com", "gitlab.io", "code.google.com", "googlecode.com",
+    "sourceforge.net", "bio.tools", "doi.org", "scicrunch.org", "zenodo.org",
+    "figshare.com", "amazonaws.com", "herokuapp.com", "readthedocs.io",
+    "readthedocs.org", "netlify.app", "wordpress.com", "google.com",
+}
+
+# Two-level public suffixes, so e.g. example.co.uk keeps 'example.co.uk'.
+_TWO_LEVEL_SUFFIXES = {
+    "co.uk", "ac.uk", "org.uk", "gov.uk", "co.jp", "com.au", "edu.au",
+    "gov.au", "org.au", "co.nz", "com.br", "co.in", "org.in",
+}
+
+# Generic tokens dropped before comparing names, so a name and its fuller form
+# ("4D Nucleome" vs "4D Nucleome Data Portal") still match on the salient words.
+_GENERIC_NAME_TOKENS = {
+    "the", "of", "for", "and", "a", "an", "database", "db", "data", "portal",
+    "project", "resource", "resources", "repository", "registry", "ontology",
+    "tool", "tools", "atlas", "browser", "server", "web", "online", "system",
+}
+
+
+def registered_domain(url: Optional[str]) -> str:
+    """
+    Return the registered domain (eTLD+1-ish) of a URL, ignoring subdomains.
+
+    Uses a small two-level-suffix table; it is a heuristic, not the full public
+    suffix list. '' for falsy input.
+
+    >>> registered_domain("https://data.4dnucleome.org/")
+    '4dnucleome.org'
+    >>> registered_domain("http://www.4dnucleome.org")
+    '4dnucleome.org'
+    """
+    if not url:
+        return ""
+    parsed = urllib.parse.urlsplit(url.strip() if "//" in url else "//" + url.strip())
+    host = (parsed.netloc or parsed.path).split("/")[0].split(":")[0].lower()
+    labels = host.split(".")
+    if len(labels) < 2:
+        return host
+    last_two = ".".join(labels[-2:])
+    if last_two in _TWO_LEVEL_SUFFIXES and len(labels) >= 3:
+        return ".".join(labels[-3:])
+    return last_two
+
+
+def registered_domain_matches(record: Dict, homepage_url: Optional[str]) -> bool:
+    """
+    True if a resolver landing page shares our homepage's registered domain,
+    unless that domain is a shared host (obolibrary.org, github.io, ...).
+    """
+    if not record or not homepage_url:
+        return False
+    home = registered_domain(homepage_url)
+    if not home or home in SHARED_HOST_DOMAINS:
+        return False
+    return any(registered_domain(u) == home for u in record.get("landing_urls", []))
+
+
+def _salient_tokens(*values) -> set:
+    tokens = set()
+    for whole in _name_set(*values):
+        for tok in re.split(r"[^a-z0-9]+", whole):
+            if tok and tok not in _GENERIC_NAME_TOKENS:
+                tokens.add(tok)
+    return tokens
+
+
+def names_compatible(record: Dict, name: Optional[str],
+                     synonyms: Optional[List[str]] = None) -> bool:
+    """
+    True if the two names agree on their salient words: either a whole-string
+    match, or one side's salient tokens are a subset of the other's (so
+    '4D Nucleome' matches '4D Nucleome Data Portal' but 'Adverse Event Reporting
+    Ontology' does not match 'Information Artifact Ontology').
+    """
+    if not record:
+        return False
+    if name_matches(record, name, synonyms):
+        return True
+    ours = _salient_tokens(name, synonyms or [])
+    theirs = _salient_tokens(
+        record.get("name"), record.get("synonyms"), record.get("abbreviations")
+    )
+    if not ours or not theirs:
+        return False
+    return ours <= theirs or theirs <= ours
+
+
 def confirm_rrid(record: Dict, homepage_url: Optional[str], name: Optional[str],
                  synonyms: Optional[List[str]] = None) -> Tuple[bool, List[str]]:
     """
     Decide whether a resolver record is a high-confidence match for a resource.
 
-    A landing-page match is treated as sufficient on its own (strongest signal).
-    A name/abbreviation/synonym match is reported as a reason but is not, by
-    itself, enough to auto-write. Returns (high_confidence, reasons).
+    High confidence (auto-write) is either:
+      * an exact landing-page match (strongest signal, sufficient alone), or
+      * a registered-domain match (ignoring subdomains, excluding shared hosts)
+        together with a compatible name.
+    A name agreement without a domain match is reported but not auto-written.
+    Returns (high_confidence, reasons).
     """
     reasons: List[str] = []
     if record is None:
         return False, ["resolver returned no record"]
 
     url_hit = landing_url_matches(record, homepage_url)
-    name_hit = name_matches(record, name, synonyms)
+    domain_hit = registered_domain_matches(record, homepage_url)
+    name_hit = names_compatible(record, name, synonyms)
+
     if url_hit:
         reasons.append("landing page matches homepage_url")
+    if domain_hit:
+        reasons.append("same registered domain")
     if name_hit:
-        reasons.append("name/abbreviation matches")
-    if not url_hit and not name_hit:
-        reasons.append("no landing-page or name match")
+        reasons.append("name matches")
+    if not (url_hit or domain_hit or name_hit):
+        reasons.append("no landing-page, domain, or name match")
 
-    return url_hit, reasons
+    high_confidence = url_hit or (domain_hit and name_hit)
+    return high_confidence, reasons
 
 
 # ---------------------------------------------------------------------------
@@ -228,9 +334,11 @@ def search_scicrunch(query: str, api_key: str,
     """
     if not api_key:
         return []
-    params = urllib.parse.urlencode({"q": query, "key": api_key, "size": 5})
+    params = urllib.parse.urlencode({"q": query, "size": 5})
     url = f"{SEARCH_URL}?{params}"
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    request = urllib.request.Request(
+        url, headers={"User-Agent": USER_AGENT, "apikey": api_key}
+    )
     try:
         with opener(request, timeout=HTTP_TIMEOUT) as response:
             data = json.loads(response.read())
@@ -345,30 +453,39 @@ def process_resource(resource_path: pathlib.Path, api_key: str, force: bool,
             write_rrid(resource_path, rrid)
         return rrid, "seeded", []
 
-    # 2. Discover (needs an API key).
-    queries = [name] + [s for s in synonyms if s]
-    seen = set()
-    for query in queries:
-        for cand in search_scicrunch(query, api_key):
-            if cand in seen:
+    # 2. Discover (needs an API key). Search by name first; fall back to the
+    # synonyms only when the name search finds nothing, to keep the request
+    # count down over the whole registry.
+    candidate_ids = search_scicrunch(name, api_key)
+    if not candidate_ids:
+        for synonym in synonyms:
+            if not synonym:
                 continue
-            seen.add(cand)
-            record = extract_resolver_record(fetch_resolver_json(cand, force=force) or {})
-            high, reasons = confirm_rrid(record, homepage_url, name, synonyms)
-            if high:
-                if not dry_run:
-                    write_rrid(resource_path, cand)
-                return cand, "confirmed", []
-            if record:
-                candidate_rows.append({
-                    "resource_id": resource_id,
-                    "resource_name": name,
-                    "candidate_rrid": cand,
-                    "resolver_name": record.get("name", ""),
-                    "homepage_url": homepage_url,
-                    "landing_urls": "; ".join(record.get("landing_urls", [])),
-                    "reasons": "; ".join(reasons),
-                })
+            candidate_ids = search_scicrunch(synonym, api_key)
+            if candidate_ids:
+                break
+
+    seen = set()
+    for cand in candidate_ids:
+        if cand in seen:
+            continue
+        seen.add(cand)
+        record = extract_resolver_record(fetch_resolver_json(cand, force=force) or {})
+        high, reasons = confirm_rrid(record, homepage_url, name, synonyms)
+        if high:
+            if not dry_run:
+                write_rrid(resource_path, cand)
+            return cand, "confirmed", []
+        if record:
+            candidate_rows.append({
+                "resource_id": resource_id,
+                "resource_name": name,
+                "candidate_rrid": cand,
+                "resolver_name": record.get("name", ""),
+                "homepage_url": homepage_url,
+                "landing_urls": "; ".join(record.get("landing_urls", [])),
+                "reasons": "; ".join(reasons),
+            })
 
     status = "candidate" if candidate_rows else "none"
     return None, status, candidate_rows
@@ -399,10 +516,20 @@ def main():
     parser.add_argument("--resource", help="Process only a specific resource (by ID)")
     parser.add_argument("--seed-only", action="store_true",
                         help="Only write the known seed RRIDs; skip SciCrunch search")
+    parser.add_argument("--api-key-file",
+                        help="Read the SciCrunch API key from this file "
+                             "(takes precedence over the SCICRUNCH_API_KEY env var)")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Process at most N resources (useful for a test batch)")
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
     args = parser.parse_args()
 
-    api_key = "" if args.seed_only else os.environ.get("SCICRUNCH_API_KEY", "")
+    if args.seed_only:
+        api_key = ""
+    elif args.api_key_file:
+        api_key = pathlib.Path(args.api_key_file).expanduser().read_text().strip()
+    else:
+        api_key = os.environ.get("SCICRUNCH_API_KEY", "")
     if not args.seed_only and not api_key:
         print("ℹ️  No SCICRUNCH_API_KEY set: seeding known RRIDs and confirming via "
               "the open resolver only. Resources without a match are listed in the report.")
@@ -416,22 +543,34 @@ def main():
     else:
         resource_files = get_all_resource_files()
 
+    resource_files = sorted(resource_files)
+    if args.limit is not None:
+        resource_files = resource_files[: args.limit]
+
     print(f"\n{'=' * 60}")
     print("DRY RUN - no files will be modified" if args.dry_run
           else "Populating KG-Registry resources with RRIDs")
+    print(f"Processing {len(resource_files)} resource(s)")
     print(f"{'=' * 60}\n")
 
     written = 0
     all_candidates: List[Dict] = []
-    for resource_path in sorted(resource_files):
+    total = len(resource_files)
+    # Persist the report periodically so an interrupted run keeps its progress.
+    REPORT_EVERY = 25
+    for idx, resource_path in enumerate(resource_files, start=1):
         rrid, status, candidates = process_resource(
             resource_path, api_key, args.force, args.dry_run)
         all_candidates.extend(candidates)
         if rrid:
             written += 1
-            print(f"📝 {resource_path.parent.name}: set rrid to '{rrid}' ({status})")
+            print(f"[{idx}/{total}] 📝 {resource_path.parent.name}: "
+                  f"set rrid to '{rrid}' ({status})", flush=True)
         elif args.verbose and status not in ("skip", "present"):
-            print(f"⏭️  {resource_path.parent.name}: {status}")
+            print(f"[{idx}/{total}] ⏭️  {resource_path.parent.name}: {status}",
+                  flush=True)
+        if all_candidates and idx % REPORT_EVERY == 0:
+            write_candidates_report(all_candidates)
 
     print(f"\n{'=' * 60}")
     print(f"Summary: {'would write' if args.dry_run else 'wrote'} {written} RRID(s)")
@@ -439,7 +578,7 @@ def main():
         report_path = write_candidates_report(all_candidates)
         print(f"📊 {len(all_candidates)} unconfirmed candidate(s) → "
               f"{report_path.relative_to(ROOT)}")
-    print(f"{'=' * 60}\n")
+    print(f"{'=' * 60}\n", flush=True)
     return 0
 
 

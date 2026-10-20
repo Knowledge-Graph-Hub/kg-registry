@@ -439,6 +439,7 @@ publications:
   title: 'REDIportal: toward an integrated view of the A-to-I editing'
   year: '2025'
 repository: https://github.com/BioinfoUNIBA/REDItools
+rrid: SCR_018490
 ---
 
 # REDIportal

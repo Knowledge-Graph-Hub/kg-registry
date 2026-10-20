@@ -189,6 +189,7 @@ publications:
   title: 'Providing researchers with online access to NHLBI biospecimen collections:
     The results of the first six years of the NHLBI BioLINCC program'
   year: '2017'
+rrid: SCR_013142
 synonyms:
 - Biologic Specimen and Data Repository Information Coordinating Center
 - NHLBI Biologic Specimen and Data Repository

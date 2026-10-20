@@ -205,6 +205,7 @@ publications:
   preferred: true
   title: FAIRsharing as a community approach to standards, repositories and policies
   year: '2019'
+rrid: SCR_004177
 synonyms:
 - BioSharing
 ---

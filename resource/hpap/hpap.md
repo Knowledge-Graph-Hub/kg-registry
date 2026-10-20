@@ -56,6 +56,7 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: gene-expression-omnibus
+rrid: SCR_016202
 taxon:
 - NCBITaxon:9606
 ---

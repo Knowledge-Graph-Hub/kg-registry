@@ -328,6 +328,7 @@ publications:
     ecosystem'
   year: '2025'
 repository: https://github.com/EBISPOT/ols4
+rrid: SCR_006596
 synonyms:
 - OLS
 - OLS4

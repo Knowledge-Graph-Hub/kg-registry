@@ -67,6 +67,7 @@ publications:
   title: 'The teleost anatomy ontology: anatomical representation for the genomics
     age'
   year: '2010'
+rrid: SCR_001610
 taxon:
 - NCBITaxon:32443
 use_instead:

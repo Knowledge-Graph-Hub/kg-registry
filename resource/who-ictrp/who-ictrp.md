@@ -188,6 +188,7 @@ publications:
   preferred: true
   title: 'Clinical trial registration: transparency is the watchword'
   year: '2006'
+rrid: SCR_004475
 synonyms:
 - ICTRP
 - WHO ICTRP

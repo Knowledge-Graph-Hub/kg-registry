@@ -1313,6 +1313,7 @@ publications:
   title: 'MedGen: NCBI''s Portal to Information on Medical Conditions with a Genetic
     Component'
   year: '2020'
+rrid: SCR_000111
 taxon:
 - NCBITaxon:9606
 ---

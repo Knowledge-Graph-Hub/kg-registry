@@ -847,6 +847,7 @@ publications:
   title: 'iPTMnet: an integrated resource for protein post-translational modification
     network discovery'
   year: '2018'
+rrid: SCR_014416
 synonyms: []
 ---
 # iPTMnet

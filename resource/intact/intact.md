@@ -3907,6 +3907,7 @@ publications:
   title: The IntAct molecular interaction database in 2012
   year: '2012'
 repository: https://github.com/intact-portal
+rrid: SCR_006944
 synonyms:
 - IntAct Molecular Interaction Database
 - IMEx IntAct

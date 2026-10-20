@@ -1867,6 +1867,7 @@ publications:
   title: 'Xenbase: key features and resources of the Xenopus model organism knowledgebase'
   year: '2023'
 repository: https://github.com/xenopus-anatomy
+rrid: SCR_003280
 taxon:
 - NCBITaxon:8355
 ---

@@ -79,6 +79,7 @@ publications:
     title: 'Cytoscape: a software environment for integrated models of biomolecular interaction networks'
     year: '2003'
 repository: https://github.com/cytoscape/cytoscape
+rrid: SCR_003032
 ---
 
 # Cytoscape

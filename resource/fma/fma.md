@@ -593,6 +593,7 @@ publications:
     Model of Anatomy case-study'
   year: '2005'
 repository: https://bitbucket.org/uwsig/fma
+rrid: SCR_003379
 taxon:
 - NCBITaxon:9606
 ---

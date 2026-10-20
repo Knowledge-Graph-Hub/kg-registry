@@ -719,5 +719,6 @@ publications:
     models'
   year: '2016'
 repository: https://github.com/SBRG/bigg_models
+rrid: SCR_005809
 ---
 BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.

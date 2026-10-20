@@ -447,6 +447,7 @@ publications:
   title: 'PaxDb v6.0: reprocessed, LLM-selected, curated protein abundance data across
     organisms'
   year: '2026'
+rrid: SCR_018910
 ---
 # PaxDb
 

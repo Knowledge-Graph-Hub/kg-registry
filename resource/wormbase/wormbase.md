@@ -1673,6 +1673,7 @@ publications:
   title: 'WormBase: a comprehensive resource for nematode research.'
   year: '2010'
 repository: https://github.com/WormBase
+rrid: SCR_003098
 synonyms:
 - WB
 taxon:

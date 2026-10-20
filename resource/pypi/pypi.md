@@ -55,6 +55,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: osv
   product_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+rrid: SCR_023145
 ---
 ## Python Package Index (PyPI)
 

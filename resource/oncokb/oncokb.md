@@ -287,6 +287,7 @@ publications:
     with Cancer
   year: '2024'
 repository: https://github.com/oncokb
+rrid: SCR_014782
 taxon:
 - NCBITaxon:9606
 ---

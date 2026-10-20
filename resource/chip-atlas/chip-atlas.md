@@ -207,6 +207,7 @@ publications:
     data'
   year: '2018'
 repository: https://github.com/inutano/chip-atlas
+rrid: SCR_015511
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

@@ -53,6 +53,7 @@ products:
   product_file_size: 9832
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/OGI.tar.gz
 publications: []
+rrid: SCR_003423
 use_instead:
 - ogsf
 ---

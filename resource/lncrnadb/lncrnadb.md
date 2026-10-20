@@ -464,6 +464,7 @@ publications:
   preferred: true
   title: 'lncRNAdb: a reference database for long noncoding RNAs'
   year: '2011'
+rrid: SCR_015491
 warnings:
   - This database is no longer active and the website is no longer accessible.
 taxon:

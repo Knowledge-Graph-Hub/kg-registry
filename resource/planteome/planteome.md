@@ -104,6 +104,7 @@ publications:
   title: 'The Planteome database: an integrated resource for reference ontologies,
     plant genomics and phenomics'
   year: '2018'
+rrid: SCR_014411
 ---
 # Planteome
 

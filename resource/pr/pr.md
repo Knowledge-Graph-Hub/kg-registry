@@ -1673,6 +1673,7 @@ publications:
     entities'
   year: '2017'
 repository: https://github.com/PROconsortium/PRoteinOntology
+rrid: SCR_004964
 ---
 ## Description
 

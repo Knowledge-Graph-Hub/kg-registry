@@ -206,6 +206,7 @@ products:
   product_url: http://purl.obolibrary.org/obo/scdo.obo
 publications: []
 repository: https://github.com/VEuPathDB-ontology/IDOMAL
+rrid: SCR_003369
 ---
 ## Description
 

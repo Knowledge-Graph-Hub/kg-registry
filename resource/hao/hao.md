@@ -88,6 +88,7 @@ publications:
   title: A gross anatomy ontology for hymenoptera
   year: '2010'
 repository: https://github.com/hymao/hao
+rrid: SCR_003340
 taxon:
 - NCBITaxon:7399
 ---

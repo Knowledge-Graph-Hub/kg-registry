@@ -1089,6 +1089,7 @@ publications:
   title: An integrated encyclopedia of DNA elements in the human genome
   year: '2012'
 repository: https://github.com/ENCODE-DCC/encoded
+rrid: SCR_006793
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

@@ -241,6 +241,7 @@ publications:
   journal: Nucleic Acids Res
   title: 'DisProt: intrinsic protein disorder annotation in 2020.'
   year: '2020'
+rrid: SCR_007097
 ---
 
 # DisProt

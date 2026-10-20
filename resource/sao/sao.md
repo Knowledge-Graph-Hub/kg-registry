@@ -49,6 +49,7 @@ products:
   product_file_size: 40424
   product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SAO.tar.gz
 publications: []
+rrid: SCR_003486
 taxon:
 - NCBITaxon:9606
 use_instead:

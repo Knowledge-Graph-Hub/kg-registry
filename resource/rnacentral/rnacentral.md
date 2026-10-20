@@ -1338,6 +1338,7 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+rrid: SCR_023115
 ---
 # RNAcentral
 

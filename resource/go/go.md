@@ -9384,6 +9384,7 @@ publications:
   title: 'The Gene Ontology resource: enriching a GOld mine'
   year: '2021'
 repository: https://github.com/geneontology/go-ontology
+rrid: SCR_002811
 synonyms:
 - GO
 taxon:

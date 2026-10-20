@@ -413,6 +413,7 @@ publications:
   title: ConsensusPathDB--a database for integrating human functional interaction
     networks
   year: '2009'
+rrid: SCR_002231
 synonyms:
 - CPDB
 - CPDB-human

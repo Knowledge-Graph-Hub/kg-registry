@@ -3250,6 +3250,7 @@ publications:
     bioactivity data types and time periods'
   year: '2024'
 repository: https://github.com/chembl
+rrid: SCR_014042
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090

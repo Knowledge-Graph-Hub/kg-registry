@@ -828,6 +828,7 @@ publications:
   preferred: false
   title: 'MODOMICS: a database of RNA modification pathways. 2021 update'
   year: '2022'
+rrid: SCR_007804
 taxon:
 - NCBITaxon:9606
 ---

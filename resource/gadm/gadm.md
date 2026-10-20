@@ -111,6 +111,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: usgs-comcat
   product_url: https://knowwheregraph.org/
+rrid: SCR_023746
 synonyms:
 - Database of Global Administrative Areas
 ---

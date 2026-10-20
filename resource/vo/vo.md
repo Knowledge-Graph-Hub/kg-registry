@@ -419,6 +419,7 @@ publications:
     Ontology
   year: '2011'
 repository: https://github.com/vaccineontology/VO
+rrid: SCR_003442
 ---
 ## Description
 

@@ -633,6 +633,7 @@ publications:
   title: 'BioGPS: an extensible and customizable portal for querying and organizing
     gene annotation resources'
   year: '2009'
+rrid: SCR_006433
 ---
 # BioGPS
 

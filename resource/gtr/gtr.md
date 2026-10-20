@@ -128,6 +128,7 @@ publications:
   title: 'The NIH genetic testing registry: a new, centralized database of genetic
     tests to enable access to comprehensive information and improve transparency'
   year: '2012'
+rrid: SCR_005565
 synonyms:
 - GTR
 - NIH Genetic Testing Registry

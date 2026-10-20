@@ -214,6 +214,7 @@ publications:
   title: 'rcellminer: exploring molecular profiles and drug response of the NCI-60
     cell lines in R'
   year: '2016'
+rrid: SCR_025648
 synonyms:
 - CellMinerCDB
 - CellMiner NCI-60

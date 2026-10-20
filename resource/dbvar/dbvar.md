@@ -130,6 +130,7 @@ publications:
   preferred: true
   title: 'DbVar and DGVa: public archives for genomic structural variation'
   year: '2013'
+rrid: SCR_003219
 taxon:
 - NCBITaxon:9606
 ---

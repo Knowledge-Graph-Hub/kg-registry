@@ -163,6 +163,7 @@ publications:
   title: 'GPCRdb in 2018: adding GPCR structure models and ligands'
   year: '2018'
 repository: https://github.com/protwis/protwis
+rrid: SCR_007419
 synonyms:
 - GPCR database
 - GPCRDB

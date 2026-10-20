@@ -1794,6 +1794,7 @@ publications:
   preferred: true
   title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
   year: '2023'
+rrid: SCR_016863
 synonyms:
 - MSigDB
 taxon:

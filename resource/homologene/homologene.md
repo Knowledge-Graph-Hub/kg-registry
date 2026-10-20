@@ -639,6 +639,7 @@ products:
     source: wormbase
   - relation_type: prov:wasDerivedFrom
     source: xenbase
+rrid: SCR_002924
 taxon:
 - NCBITaxon:2759
 warnings:

@@ -524,6 +524,7 @@ publications:
   title: The SwissLipids knowledgebase for lipid biology
   year: '2015'
 repository: https://www.swisslipids.org/
+rrid: SCR_019074
 synonyms:
 - slm
 - swisslipid

@@ -596,6 +596,7 @@ publications:
   preferred: true
   title: The human genome browser at UCSC
   year: '2002'
+rrid: SCR_005780
 ---
 # UCSC Genome Browser
 

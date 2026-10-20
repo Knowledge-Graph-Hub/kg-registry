@@ -331,6 +331,7 @@ publications:
     phenotypes to genotypes across species'
   year: '2017'
 repository: https://github.com/monarch-initiative
+rrid: SCR_000824
 synonyms:
 - Monarch
 - The Monarch Initiative

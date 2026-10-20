@@ -2958,6 +2958,7 @@ publications:
   title: 'Best Match: New relevance search for PubMed'
   year: '2018'
 repository: https://www.ncbi.nlm.nih.gov/
+rrid: SCR_004846
 synonyms:
 - PubMed
 - MEDLINE

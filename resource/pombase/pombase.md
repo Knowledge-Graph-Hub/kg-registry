@@ -2295,6 +2295,7 @@ publications:
   title: 'PomBase: a Global Core Biodata Resource-growth, collaboration, and sustainability'
   year: '2024'
 repository: https://www.pombase.org/datasets
+rrid: SCR_006586
 taxon:
 - NCBITaxon:4896
 - NCBITaxon:4932

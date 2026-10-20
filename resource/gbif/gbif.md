@@ -292,6 +292,7 @@ publications:
     of Biodiversity Data on the Internet'
   year: '2014'
 repository: https://github.com/gbif
+rrid: SCR_005904
 taxon:
 - NCBITaxon:1
 ---

@@ -195,6 +195,7 @@ publications:
   journal: JAMA
   title: A Model for Dissemination and Independent Analysis of Industry Data
   year: '2011'
+rrid: SCR_022761
 synonyms:
 - YODA Project
 - Yale University Open Data Access Project
