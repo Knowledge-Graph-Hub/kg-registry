@@ -175,6 +175,10 @@ def add_resource_to_graph(graph, resource):
     if resource.get("fairsharing_id"):
         add_string_property(graph, uri, SKOS.notation, resource.get("fairsharing_id"))
 
+    # RRID (SciCrunch Research Resource Identifier)
+    if resource.get("rrid"):
+        add_string_property(graph, uri, SCHEMA.identifier, f"RRID:{resource.get('rrid')}")
+
     # Contacts (nested objects)
     for contact in resource.get("contacts", []):
         if isinstance(contact, dict):
@@ -217,6 +221,12 @@ def add_resource_to_graph(graph, resource):
                 add_string_property(graph, product_uri, RDFS.label, product.get("name"))
                 add_string_property(graph, product_uri, DCTERMS.description, product.get("description"))
                 add_uri_property(graph, product_uri, SCHEMA.url, product.get("product_url"))
+                if product.get("infores_id"):
+                    add_string_property(graph, product_uri, SCHEMA.identifier, product.get("infores_id"))
+                if product.get("fairsharing_id"):
+                    add_string_property(graph, product_uri, SKOS.notation, product.get("fairsharing_id"))
+                if product.get("rrid"):
+                    add_string_property(graph, product_uri, SCHEMA.identifier, f"RRID:{product.get('rrid')}")
                 if product.get("category"):
                     graph.add((product_uri, RDF.type, URIRef(SCHEMA + product.get("category"))))
 
