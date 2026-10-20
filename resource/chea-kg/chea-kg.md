@@ -68,7 +68,7 @@ products:
         relation_type: prov:hadPrimarySource
       - source: enrichr
         relation_type: prov:hadPrimarySource
-      - source: geo
+      - source: gene-expression-omnibus
         relation_type: prov:hadPrimarySource
       - source: tcga
         relation_type: prov:hadPrimarySource
@@ -94,7 +94,7 @@ products:
         relation_type: prov:hadPrimarySource
       - source: enrichr
         relation_type: prov:hadPrimarySource
-      - source: geo
+      - source: gene-expression-omnibus
         relation_type: prov:hadPrimarySource
       - source: tcga
         relation_type: prov:hadPrimarySource
