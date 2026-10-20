@@ -33,12 +33,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: ncbigene
   warnings:
-  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
-    Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-10-19: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
     to URL'
+  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
+    Internet Archive snapshot is from 2022-08-17.
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

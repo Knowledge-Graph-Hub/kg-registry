@@ -10544,10 +10544,21 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
     dcterms:description "The Gene Expression Omnibus (GEO) is a public functional genomics data repository maintained by the NCBI at the U.S. National Library of Medicine. It archives and freely distributes high-throughput gene expression and other functional genomics datasets, including the single-cell and single-nucleus studies of human pancreatic islets that PanKbase identified and reprocessed." ;
     dcterms:identifier "gene-expression-omnibus" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:cfde-ddkg.archs4,
+    schema1:hasPart kgr:archs4.human.gene_counts,
+        kgr:archs4.human.transcript_counts,
+        kgr:archs4.mouse.gene_counts,
+        kgr:archs4.mouse.transcript_counts,
+        kgr:archs4.zoo,
+        kgr:cfde-ddkg.archs4,
+        kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries,
         kgr:gene-expression-omnibus.portal,
+        kgr:genemania.networks,
         kgr:gtrd.chip-seq_peaks,
         kgr:gtrd.downloads,
+        kgr:harmonizome.downloads,
+        kgr:harmonizome.kg-neo4j,
         kgr:klocd.portal,
         kgr:nde.graph,
         kgr:omicsdi.api,
@@ -10556,7 +10567,16 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
         kgr:organoiddb.general-samples,
         kgr:organoiddb.organoid-specificity-samples,
         kgr:pankgraph.graph,
-        kgr:sigcom-lincs.human-geo-signatures ;
+        kgr:sigcom-lincs.human-geo-signatures,
+        kgr:string.cog.links,
+        kgr:string.cog.links.detailed,
+        kgr:string.database,
+        kgr:string.protein.links,
+        kgr:string.protein.links.detailed,
+        kgr:string.protein.links.full,
+        kgr:string.protein.physical.links,
+        kgr:string.protein.physical.links.detailed,
+        kgr:string.protein.physical.links.full ;
     schema1:name "Gene Expression Omnibus (GEO)" ;
     skos:inScheme "biomedical",
         "gene expression profiling",
@@ -10881,29 +10901,9 @@ kgr:geo a schema1:Ontology ;
     dcterms:identifier "geo" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:archs4.human.gene_counts,
-        kgr:archs4.human.transcript_counts,
-        kgr:archs4.mouse.gene_counts,
-        kgr:archs4.mouse.transcript_counts,
-        kgr:archs4.zoo,
-        kgr:chea-kg.graph,
-        kgr:chea-kg.libraries,
-        kgr:chea.libraries,
-        kgr:genemania.networks,
-        kgr:geo.docs,
+    schema1:hasPart kgr:geo.docs,
         kgr:geo.kg-bioportal,
-        kgr:geo.owl,
-        kgr:harmonizome.downloads,
-        kgr:harmonizome.kg-neo4j,
-        kgr:string.cog.links,
-        kgr:string.cog.links.detailed,
-        kgr:string.database,
-        kgr:string.protein.links,
-        kgr:string.protein.links.detailed,
-        kgr:string.protein.links.full,
-        kgr:string.protein.physical.links,
-        kgr:string.protein.physical.links.detailed,
-        kgr:string.protein.physical.links.full ;
+        kgr:geo.owl ;
     schema1:name "Geographical Entity Ontology" ;
     doap:repository <https://github.com/ufbmi/geographical-entity-ontology> ;
     skos:inScheme "environment",
@@ -15310,7 +15310,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-20T13:56:13+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-20T14:22:51+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,

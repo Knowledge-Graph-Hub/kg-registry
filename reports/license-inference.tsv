@@ -42,7 +42,7 @@ catalogue-of-life	KnowledgeGraph	declared	https://creativecommons.org/licenses/b
 cdiscvocab	Aggregator	no-upstream						
 cfde-ddkg	KnowledgeGraph	inferred			https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal	custom	4dn|gtex|msigdb|ubkg|umls	gene-expression-omnibus|kidsfirst|lincs|mw|sckan
 cfde-gse	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.disgenet.com/Legal	custom	disgenet|gtex|kegg|msigdb	lincs
-chea-kg	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial	https://www.gtexportal.org/home/license	custom	gtex	tcga
+chea-kg	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial	https://www.gtexportal.org/home/license	custom	gtex	gene-expression-omnibus|tcga
 ciel	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 circbase	Aggregator	no-upstream	http://www.circbase.org/	custom				
 cl-kg	KnowledgeGraph	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	http://creativecommons.org/licenses/by/4.0/	permissive	cellxgene|cl	
@@ -105,7 +105,7 @@ gnbr	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permis
 gp-kg	KnowledgeGraph	inferred			https://www.ebi.ac.uk/about/terms-of-use	custom	goa|gtex|umls	faers|treatkb
 gtrx	Aggregator	inferred			https://opensource.org/licenses/Apache-2.0	permissive	biothings	
 hald	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
-harmonizome	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://depmap.org/portal/terms/	custom	achilles|cmap|cosmic|ctd|depmap|disgenet|gtex|kegg|msigdb	biogps|cellmarker|impc|lincs-l1000|mirtarbase|panther|phosphositeplus|pid|tcga
+harmonizome	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://depmap.org/portal/terms/	custom	achilles|cmap|cosmic|ctd|depmap|disgenet|gtex|kegg|msigdb	biogps|cellmarker|gene-expression-omnibus|impc|lincs-l1000|mirtarbase|panther|phosphositeplus|pid|tcga
 hcop	Aggregator	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://xenbase.org/xenbase/	custom	xenbase	eggnog|inparanoid|orthomcl|panther|phylomedb|rgd|treefam|vgnc
 hetionet	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://uts.nlm.nih.gov/uts/	custom	umls	pid
 hmdb	Aggregator	no-upstream	https://www.hmdb.ca/downloads	non-commercial				
