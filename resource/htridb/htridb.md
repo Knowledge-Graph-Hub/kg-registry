@@ -73,6 +73,8 @@ products:
     Internet Archive snapshot is from 2022-08-17.
   - 'File was not able to be retrieved when checked on 2026-10-19: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
+    to URL'
 - category: Product
   description: Download page listing interaction tables, MITAB files, GMT gene sets,
     and binding site tables, GFF3 annotations, and FASTA sequences for each organism,

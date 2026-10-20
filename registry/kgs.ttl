@@ -15310,7 +15310,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-19T22:21:51+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-20T13:56:13+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15780,6 +15780,24 @@ kgr:lincs-l1000 a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://lincsproject.org/LINCS/> ;
     foaf:maker kgr:broad .
+
+kgr:linked-discoveries a schema1:Aggregator ;
+    rdfs:label "Linked Discoveries" ;
+    dcterms:created "2026-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Linked Discoveries is an experimental pilot tool from the National Library of Medicine, launched in September 2026 as part of the NIH replication and reproducibility initiative. Starting from a PubMed citation, it builds a neighborhood of closely related publications, including replication studies, and highlights shared conditions, genes, and chemicals, NIH funding, citation relationships, retractions, and reviews. It draws on PubMed together with linked data from NCBI Gene, MedGen, and PubChem, and covers more than 29 million PubMed publications." ;
+    dcterms:identifier "linked-discoveries" ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:linked-discoveries.site ;
+    schema1:name "Linked Discoveries" ;
+    skos:altLabel "NIH Linked Discoveries",
+        "NLM Linked Discoveries" ;
+    skos:inScheme "biomedical",
+        "literature",
+        "scholarly communication" ;
+    adms:status "Active" ;
+    foaf:homepage <https://linkeddiscoveries.ncbi.nlm.nih.gov/> ;
+    foaf:maker kgr:ncbi .
 
 kgr:lipidmaps a schema1:DataSource ;
     rdfs:label "LIPID MAPS" ;
@@ -16607,6 +16625,7 @@ kgr:medgen a schema1:Aggregator ;
         kgr:genecards.web.interface,
         kgr:gtr.test_condition_gene,
         kgr:gtr.xml,
+        kgr:linked-discoveries.site,
         kgr:medgen.csv,
         kgr:medgen.cui-history,
         kgr:medgen.faq,
@@ -18764,6 +18783,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:htridb.downloads,
         kgr:kg-alzheimers.graph,
         kgr:kg-covid-19.graph,
+        kgr:linked-discoveries.site,
         kgr:microbiomekg.api,
         kgr:mygene.api,
         kgr:ncatsgardkg.graph,
@@ -24730,6 +24750,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:icees-kg.trapi,
         kgr:klocd.portal,
         kgr:l1000fwd.drug-metadata,
+        kgr:linked-discoveries.site,
         kgr:markerdb.api,
         kgr:markerdb.chemicals.tsv,
         kgr:microbiomekg.api,
@@ -24846,6 +24867,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:ikraph.site,
         kgr:indra.cogex.code,
         kgr:klocd.portal,
+        kgr:linked-discoveries.site,
         kgr:litvar.api,
         kgr:litvar.web_interface,
         kgr:medgen.csv,
@@ -55108,6 +55130,11 @@ kgr:kg-ebi-gene2pheno.nodes.kgx a schema1:GraphProduct ;
     dcterms:description "KGX nodes file for EBI Gene2Phenotype KG" ;
     schema1:url <https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_nodes.jsonl> .
 
+kgr:linked-discoveries.site a schema1:GraphicalInterface ;
+    rdfs:label "Linked Discoveries Web Interface" ;
+    dcterms:description "Interactive web interface for exploring the neighborhood of related publications around a PubMed citation as a graph or a timeline, with shared conditions (MedGen), genes (NCBI Gene), and chemicals (PubChem), NIH funding, citation links, retractions, and reviews." ;
+    schema1:url <https://linkeddiscoveries.ncbi.nlm.nih.gov/> .
+
 kgr:metatraits.traits a schema1:Product ;
     rdfs:label "metaTraits Trait List" ;
     dcterms:description "Trait data table listing all 140+ harmonized traits available in metaTraits, mapped to standardized ontologies." ;
@@ -56669,6 +56696,26 @@ kgr:automat.robokopkg a schema1:GraphProduct ;
     dcterms:description "Robokop KG (Automat)" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/> .
 
+kgr:pubchem.substances.asn a schema1:Product ;
+    rdfs:label "PubChem Substances ASN" ;
+    dcterms:description "PubChem substance information in ASN.1 format" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/ASN/> .
+
+kgr:pubchem.substances.sdf a schema1:Product ;
+    rdfs:label "PubChem Substances SDF" ;
+    dcterms:description "PubChem substance information in SDF format" ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/> .
+
+kgr:genomickb.graph a schema1:GraphProduct ;
+    rdfs:label "GenomicKB Graph Dump" ;
+    dcterms:description "GenomicKB 1.0 Neo4j Database Dump (Requires license)" ;
+    schema1:url <https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome> .
+
+kgr:kg-alzheimers.graph a schema1:GraphProduct ;
+    rdfs:label "KGX Distribution of KG-Alzheimers" ;
+    dcterms:description "KGX Distribution of KG-Alzheimers" ;
+    schema1:url <https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz> .
+
 kgr:ncbi a schema1:DataSource,
         "Organization" ;
     rdfs:label "ClinVar Team, National Center for Biotechnology Information (NCBI)",
@@ -56721,26 +56768,6 @@ kgr:ncbi a schema1:DataSource,
         "literature" ;
     adms:status "Active" ;
     foaf:homepage <https://www.ncbi.nlm.nih.gov/> .
-
-kgr:pubchem.substances.asn a schema1:Product ;
-    rdfs:label "PubChem Substances ASN" ;
-    dcterms:description "PubChem substance information in ASN.1 format" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/ASN/> .
-
-kgr:pubchem.substances.sdf a schema1:Product ;
-    rdfs:label "PubChem Substances SDF" ;
-    dcterms:description "PubChem substance information in SDF format" ;
-    schema1:url <https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/> .
-
-kgr:genomickb.graph a schema1:GraphProduct ;
-    rdfs:label "GenomicKB Graph Dump" ;
-    dcterms:description "GenomicKB 1.0 Neo4j Database Dump (Requires license)" ;
-    schema1:url <https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome> .
-
-kgr:kg-alzheimers.graph a schema1:GraphProduct ;
-    rdfs:label "KGX Distribution of KG-Alzheimers" ;
-    dcterms:description "KGX Distribution of KG-Alzheimers" ;
-    schema1:url <https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz> .
 
 kgr:rtx-kg2.graph.edges a schema1:GraphProduct ;
     rdfs:label "RTX-KG2.10.1c KGX JSONL Edges" ;

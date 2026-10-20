@@ -689,16 +689,19 @@ http://gtrd.biouml.org:8888/downloads/current/gtrdHub/hub.txt:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://gtrd.biouml.org:8888/downloads/current/intervals/chip-seq/:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://gtrd.biouml.org:8888/downloads/current/intervals/target_genes/:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://hymao.org:
   checked_at: '2026-10-19T21:36:03Z'
@@ -775,51 +778,61 @@ http://maayanlab.net/SEP-L1000/:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/FAERS_offsides_PTs.csv.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/GO_transformed_signatures_PAEA.csv.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/LINCS_Gene_Experssion_signatures_CD.csv.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/MACCS_bitmatrix.csv.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/MLPCN_morplological_profiles.csv.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/SIDER_PTs.csv.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/meta_LINCS_strongest_signatures.csv:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/meta_Probes_info.csv:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://maayanlab.net/SEP-L1000/downloads/meta_SMILES.csv:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://matador.embl.de/:
   checked_at: '2026-10-19T21:36:04Z'
@@ -5149,6 +5162,7 @@ http://www.lbbc.ibb.unesp.br/htri/:
     port=80) at 0x7f3be06858b0>, ''Connection to www.lbbc.ibb.unesp.br timed out.
     (connect timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp:
   checked_at: '2026-10-19T22:31:07Z'
@@ -5160,6 +5174,7 @@ http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp:
     port=80) at 0x7f3be658ab40>, ''Connection to www.lbbc.ibb.unesp.br timed out.
     (connect timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 http://www.licpathway.net/ENdb/:
   checked_at: '2026-10-19T21:36:35Z'
@@ -7181,6 +7196,7 @@ https://appyters.maayanlab.cloud/Drugmonizome_ML/:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://appyters.maayanlab.cloud/storage/DrugShot/AutoRIF.tsv.gz:
   checked_at: '2026-10-10T18:57:16Z'
@@ -11179,6 +11195,7 @@ https://download.jensenlab.org/full_dictionary.tar.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://download.jensenlab.org/human_disease_experiments_filtered.tsv:
   checked_at: '2026-10-19T21:37:45Z'
@@ -11226,6 +11243,7 @@ https://download.jensenlab.org/tagger_dictionary.tar.gz:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://download.maizegdb.org/:
   checked_at: '2026-10-19T21:37:46Z'
@@ -15643,6 +15661,7 @@ https://github.com/MaayanLab/Drugmonizome-ML:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/MaayanLab/HarmonizomePythonScripts:
   checked_at: '2026-10-19T21:38:10Z'
@@ -15678,6 +15697,7 @@ https://github.com/MaayanLab/SEP-L1000:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/MaayanLab/archs4:
   checked_at: '2026-10-19T21:38:11Z'
@@ -15719,6 +15739,7 @@ https://github.com/MaayanLab/drugmonizome:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/MaayanLab/drugshot:
   checked_at: '2026-10-10T18:57:16Z'
@@ -15748,6 +15769,7 @@ https://github.com/MaayanLab/l1000fwd:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/MaayanLab/lncRNAlyzr:
   checked_at: '2026-10-19T21:38:11Z'
@@ -18111,6 +18133,7 @@ https://github.com/larsjuhljensen/tagger:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/lifewatch-eric:
   checked_at: '2026-10-19T21:38:25Z'
@@ -20486,6 +20509,7 @@ https://github.com/redflydb/redfly:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/reimandlab/ActiveDriverDB:
   checked_at: '2026-10-19T21:38:34Z'
@@ -21286,11 +21310,13 @@ https://gtrd.biouml.org/:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gtrd.biouml.org/downloads/current/:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gtrnadb.org/:
   checked_at: '2026-10-19T21:38:38Z'
@@ -22023,6 +22049,7 @@ https://jensenlab.org/resources/textmining/:
   checked_at: '2026-10-19T22:31:07Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/ETOHA-OPEN/epidemicIE-DONs.rdf:
   checked_at: '2026-10-19T21:38:43Z'
@@ -22780,6 +22807,11 @@ https://lincsproject.org/LINCS/:
   ok: true
   source: cache
   status_code: 200
+https://linkeddiscoveries.ncbi.nlm.nih.gov/:
+  checked_at: '2026-10-20T14:03:24Z'
+  error: null
+  ok: true
+  status_code: 200
 https://linkedopendata.eu/:
   checked_at: '2026-10-19T21:39:18Z'
   error: null
@@ -23036,21 +23068,25 @@ https://maayanlab.cloud/drugmonizome/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/drugmonizome/data-api/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/drugmonizome/metadata-api/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/drugmonizome/metadata-api/libraries:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/drugshot/:
   checked_at: '2026-10-10T18:57:16Z'
@@ -23122,56 +23158,67 @@ https://maayanlab.cloud/l1000fwd/:
   checked_at: '2026-10-19T22:31:08Z'
   error: GET returned HTTP 503
   ok: false
+  source: cache
   status_code: 503
 https://maayanlab.cloud/l1000fwd/api_page:
   checked_at: '2026-10-19T22:31:08Z'
   error: GET returned HTTP 503
   ok: false
+  source: cache
   status_code: 503
 https://maayanlab.cloud/l1000fwd/download/Adjacency_matrix_LM_space_42809x42809.gctx:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/CD_signature_metadata.csv:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/CD_signatures_LM_42809x978.gctx:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.gmt:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/CD_signatures_binary_42809.json:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/CD_signatures_full_42809x22268.gctx:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/Drugs_metadata.csv:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/Probes_L1000_metadata.csv:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/l1000fwd/download/Probes_full_metadata.csv:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/reprotox-kg:
   checked_at: '2026-10-19T21:39:19Z'
@@ -26620,21 +26667,25 @@ https://redfly.ccr.buffalo.edu/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://redfly.ccr.buffalo.edu/jbrowse:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://redfly.ccr.buffalo.edu/scrm/options:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://redfly.ccr.buffalo.edu/search/options?sequence=1&assayed=1&cellCulture=1&range=10000:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rediportal.cloud.ba.infn.it/atlas/:
   checked_at: '2026-10-19T21:39:47Z'
@@ -29708,11 +29759,13 @@ https://storage.googleapis.com/public-download-files/hcop/human_all_hcop_seven_c
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://storage.googleapis.com/public-download-files/hcop/human_all_hcop_sixteen_column.txt.gz:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://storage.googleapis.com/translator-text-workflow-dev-public/:
   checked_at: '2026-10-19T21:40:05Z'
@@ -29982,6 +30035,7 @@ https://tagger.jensenlab.org/GetEntities?document=TP53&entity_types=9606&format=
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://tatonettilab-resources.s3.amazonaws.com/KidSIDES/ade_nichd.csv.gz:
   checked_at: '2026-10-19T21:40:06Z'
@@ -32624,16 +32678,19 @@ https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://webprod.hc-sc.gc.ca/nhpid-bdipsn/monosReq?monotype=product&lang=eng:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://webprod.hc-sc.gc.ca/nhpid-bdipsn/monosReq?monotype=single&lang=eng:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://websoilsurvey.nrcs.usda.gov/:
   checked_at: '2026-10-19T21:40:33Z'
@@ -34883,16 +34940,19 @@ https://www.genenames.org/download/hcop/tsv/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.genenames.org/help/hcop/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.genenames.org/tools/hcop/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.genome.gov/Funded-Programs-Projects/Electronic-Medical-Records-and-Genomics-Network-eMERGE:
   checked_at: '2026-10-19T21:40:49Z'
@@ -37528,26 +37588,31 @@ https://yeastract-plus.org/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yeastract-plus.org/community/:
   checked_at: '2026-10-19T22:31:08Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yeastract-plus.org/ncyeastract/:
   checked_at: '2026-10-19T22:31:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yeastract-plus.org/pathoyeastract/:
   checked_at: '2026-10-19T22:31:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yeastract-plus.org/yeastract/scerevisiae/:
   checked_at: '2026-10-19T22:31:09Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://yoda.yale.edu/:
   checked_at: '2026-10-19T21:41:19Z'

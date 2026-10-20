@@ -9,6 +9,7 @@ name: GTRD Track Hub
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gtrd
+product_file_size: 136
 product_url: http://gtrd.biouml.org:8888/downloads/current/gtrdHub/hub.txt
 layout: product_detail
 ---

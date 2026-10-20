@@ -142,6 +142,7 @@ kg4sl	KnowledgeGraph	unresolved
 kinace	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.gtexportal.org/home/license	custom	darkkinasekb|kegg	coralkinome|kinhub|phosphositeplus
 klocd	KnowledgeGraph	inferred			https://ctdbase.org/about/legal.jsp	custom	ctd|togows|unichem	gene-expression-omnibus
 knowwheregraph	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	GADM license (free for academic/non-commercial use)	non-commercial	gadm	bluesky|hifld|mtbs|usdm
+linked-discoveries	Aggregator	conflict	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	https://www.ncbi.nlm.nih.gov/home/about/policies/	custom	medgen	
 lncrnalyzr	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc-sa/4.0/	non-commercial	https://www.gtexportal.org/home/license	custom	gtex|kegg	
 lsdb-archive	Aggregator	inferred			https://www.kegg.jp/feedback/copyright.html	custom	kegg	
 malacards	Aggregator	no-upstream						

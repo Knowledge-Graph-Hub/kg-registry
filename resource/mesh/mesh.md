@@ -2433,6 +2433,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-19: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
     SPOKE biomedical and environmental health knowledge graph, served through FRINK
