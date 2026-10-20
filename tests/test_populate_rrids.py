@@ -89,16 +89,18 @@ def test_name_matches(record):
 
 
 def test_confirm_rrid_high_confidence_on_url(record):
-    high, reasons = confirm_rrid(record, "https://zebrafish.org/",
-                                 "Zebrafish International Resource Center")
+    high, reasons = confirm_rrid(
+        record, "https://zebrafish.org/", "Zebrafish International Resource Center"
+    )
     assert high is True
     assert any("landing page" in r for r in reasons)
 
 
 def test_confirm_rrid_name_only_not_sufficient(record):
     # Name matches but homepage does not -> not auto-written, reported instead.
-    high, reasons = confirm_rrid(record, "https://unrelated.example/",
-                                 "Zebrafish International Resource Center")
+    high, reasons = confirm_rrid(
+        record, "https://unrelated.example/", "Zebrafish International Resource Center"
+    )
     assert high is False
     assert any("name" in r for r in reasons)
 
