@@ -1230,6 +1230,7 @@
                     "year": "2022"
                 }
             ],
+            "rrid": "SCR_016925",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -19026,6 +19027,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_002964",
             "synonyms": [
                 "AE"
             ]
@@ -24404,7 +24406,8 @@
                     "year": "2014"
                 }
             ],
-            "repository": "https://github.com/BioAssayOntology/BAO"
+            "repository": "https://github.com/BioAssayOntology/BAO",
+            "rrid": "SCR_002638"
         },
         {
             "activity_status": "active",
@@ -28050,7 +28053,8 @@
                 }
             ],
             "publications": [],
-            "repository": "https://github.com/BFO-ontology/BFO"
+            "repository": "https://github.com/BFO-ontology/BFO",
+            "rrid": "SCR_004818"
         },
         {
             "activity_status": "active",
@@ -32294,6 +32298,7 @@
                 }
             ],
             "repository": "https://github.com/BgeeDB/bgee_apps",
+            "rrid": "SCR_002028",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090",
@@ -33569,7 +33574,8 @@
                     "year": "2016"
                 }
             ],
-            "repository": "https://github.com/SBRG/bigg_models"
+            "repository": "https://github.com/SBRG/bigg_models",
+            "rrid": "SCR_005809"
         },
         {
             "activity_status": "active",
@@ -38133,7 +38139,8 @@
                     "title": "BindingDB in 2024: a FAIR knowledgebase of protein-small molecule binding data",
                     "year": "2025"
                 }
-            ]
+            ],
+            "rrid": "SCR_000390"
         },
         {
             "activity_status": "active",
@@ -42497,6 +42504,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_002298",
             "taxon": [
                 "NCBITaxon:2759"
             ]
@@ -43607,6 +43615,7 @@
                 }
             ],
             "repository": "https://github.com/PathwayCommons/factoid",
+            "rrid": "SCR_021011",
             "synonyms": [
                 "Factoid"
             ],
@@ -44773,7 +44782,8 @@
                     "title": "BioGPS: an extensible and customizable portal for querying and organizing gene annotation resources",
                     "year": "2009"
                 }
-            ]
+            ],
+            "rrid": "SCR_006433"
         },
         {
             "activity_status": "active",
@@ -52442,6 +52452,7 @@
                     "year": "2006"
                 }
             ],
+            "rrid": "SCR_007393",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:4932",
@@ -52750,6 +52761,7 @@
                     "year": "2017"
                 }
             ],
+            "rrid": "SCR_013142",
             "synonyms": [
                 "Biologic Specimen and Data Repository Information Coordinating Center",
                 "NHLBI Biologic Specimen and Data Repository"
@@ -54930,6 +54942,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_001993",
             "synonyms": [
                 "BioModels Database",
                 "BioModels Repository"
@@ -56037,6 +56050,7 @@
                     "year": "2023"
                 }
             ],
+            "rrid": "SCR_016144",
             "synonyms": [
                 "BioPlex Interactome"
             ],
@@ -57010,6 +57024,7 @@
                 }
             ],
             "repository": "https://github.com/ncbo",
+            "rrid": "SCR_002713",
             "warnings": [
                 "Some ontologies have distinct licenses; review individual ontology license metadata before reuse."
             ]
@@ -57385,7 +57400,8 @@
                     "year": "2022"
                 }
             ],
-            "repository": "https://github.com/biopragmatics/bioregistry"
+            "repository": "https://github.com/biopragmatics/bioregistry",
+            "rrid": "SCR_022586"
         },
         {
             "activity_status": "active",
@@ -58595,7 +58611,8 @@
                     "year": "2022"
                 }
             ],
-            "repository": "https://github.com/biothings/biothings.api"
+            "repository": "https://github.com/biothings/biothings.api",
+            "rrid": "SCR_024539"
         },
         {
             "activity_status": "active",
@@ -60927,6 +60944,7 @@
                     "year": "2021"
                 }
             ],
+            "rrid": "SCR_002997",
             "taxon": [
                 "NCBITaxon:131567"
             ]
@@ -65178,6 +65196,7 @@
                     "year": "2024"
                 }
             ],
+            "rrid": "SCR_018393",
             "synonyms": [
                 "Combined Annotation Dependent Depletion"
             ]
@@ -67913,6 +67932,7 @@
                     "year": "2012"
                 }
             ],
+            "rrid": "SCR_013836",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -69385,7 +69405,8 @@
                     "title": "The conserved domain database in 2023",
                     "year": "2023"
                 }
-            ]
+            ],
+            "rrid": "SCR_002077"
         },
         {
             "activity_status": "active",
@@ -70043,6 +70064,7 @@
                     "year": "2017"
                 }
             ],
+            "rrid": "SCR_006778",
             "synonyms": [
                 "CEBS",
                 "Chemical Effects in Biological Systems"
@@ -71199,6 +71221,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_018503",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090"
@@ -71481,6 +71504,7 @@
                     "year": "2016"
                 }
             ],
+            "rrid": "SCR_025648",
             "synonyms": [
                 "CellMinerCDB",
                 "CellMiner NCI-60"
@@ -71769,7 +71793,8 @@
                     "year": "2004"
                 }
             ],
-            "repository": "https://github.com/cellml"
+            "repository": "https://github.com/cellml",
+            "rrid": "SCR_008061"
         },
         {
             "activity_status": "active",
@@ -72036,6 +72061,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_027682",
             "synonyms": [
                 "CMP"
             ]
@@ -72635,6 +72661,7 @@
                 }
             ],
             "repository": "https://github.com/calipho-sib/cellosaurus",
+            "rrid": "SCR_024863",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -73272,7 +73299,8 @@
                     "year": "2020"
                 }
             ],
-            "repository": "https://github.com/ventolab/CellphoneDB"
+            "repository": "https://github.com/ventolab/CellphoneDB",
+            "rrid": "SCR_017054"
         },
         {
             "activity_status": "active",
@@ -73991,7 +74019,8 @@
                     "year": "2025"
                 }
             ],
-            "repository": "https://github.com/chanzuckerberg/single-cell-data-portal"
+            "repository": "https://github.com/chanzuckerberg/single-cell-data-portal",
+            "rrid": "SCR_024894"
         },
         {
             "activity_status": "active",
@@ -75081,7 +75110,8 @@
                     "title": "The Chicken Gene Nomenclature Committee report",
                     "year": "2009"
                 }
-            ]
+            ],
+            "rrid": "SCR_004966"
         },
         {
             "activity_status": "active",
@@ -88216,7 +88246,8 @@
                     "year": "2016"
                 }
             ],
-            "repository": "https://github.com/ebi-chebi/ChEBI"
+            "repository": "https://github.com/ebi-chebi/ChEBI",
+            "rrid": "SCR_002088"
         },
         {
             "activity_status": "active",
@@ -94085,6 +94116,7 @@
                 }
             ],
             "repository": "https://github.com/chembl",
+            "rrid": "SCR_014042",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090"
@@ -94955,6 +94987,7 @@
                 }
             ],
             "repository": "https://github.com/inutano/chip-atlas",
+            "rrid": "SCR_015511",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090",
@@ -111644,6 +111677,7 @@
                 }
             ],
             "repository": "https://github.com/ctti-clinicaltrials/aact",
+            "rrid": "SCR_002309",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -118747,6 +118781,7 @@
                     "year": "2018"
                 }
             ],
+            "rrid": "SCR_006169",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -124989,6 +125024,7 @@
                     "year": "2021"
                 }
             ],
+            "rrid": "SCR_007139",
             "synonyms": [
                 "COG",
                 "Clusters of Orthologous Groups"
@@ -128744,7 +128780,8 @@
                     "title": "COMPARTMENTS: unification and visualization of protein subcellular localization evidence",
                     "year": "2014"
                 }
-            ]
+            ],
+            "rrid": "SCR_015561"
         },
         {
             "activity_status": "active",
@@ -136349,6 +136386,7 @@
                     "year": "2009"
                 }
             ],
+            "rrid": "SCR_002231",
             "synonyms": [
                 "CPDB",
                 "CPDB-human",
@@ -150202,6 +150240,7 @@
                     "year": "2013"
                 }
             ],
+            "rrid": "SCR_026293",
             "synonyms": [
                 "CTRP",
                 "Cancer Therapeutics Response Portal"
@@ -151066,7 +151105,8 @@
                     "year": "2003"
                 }
             ],
-            "repository": "https://github.com/cytoscape/cytoscape"
+            "repository": "https://github.com/cytoscape/cytoscape",
+            "rrid": "SCR_003032"
         },
         {
             "activity_status": "active",
@@ -152748,6 +152788,7 @@
                     "year": "2014"
                 }
             ],
+            "rrid": "SCR_002709",
             "synonyms": [
                 "database of Genotypes and Phenotypes",
                 "NCBI dbGaP"
@@ -153481,6 +153522,7 @@
                 }
             ],
             "repository": "https://github.com/dbpedia/extraction-framework",
+            "rrid": "SCR_003661",
             "synonyms": [
                 "DBpedia"
             ]
@@ -153651,6 +153693,7 @@
                     "year": "2025"
                 }
             ],
+            "rrid": "SCR_007619",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090"
@@ -157763,6 +157806,7 @@
                 }
             ],
             "repository": "https://github.com/ncbi/dbsnp",
+            "rrid": "SCR_002338",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -158666,6 +158710,7 @@
                     "year": "2013"
                 }
             ],
+            "rrid": "SCR_003219",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -159322,7 +159367,8 @@
                     "year": "2019"
                 }
             ],
-            "repository": "https://github.com/dcmi/"
+            "repository": "https://github.com/dcmi/",
+            "rrid": "SCR_012921"
         },
         {
             "activity_status": "active",
@@ -160852,6 +160898,7 @@
                     "year": "2025"
                 }
             ],
+            "rrid": "SCR_002359",
             "synonyms": [
                 "DDBJ",
                 "DNA Data Bank of Japan"
@@ -164992,6 +165039,7 @@
                 }
             ],
             "repository": "https://github.com/broadinstitute/depmap_omics",
+            "rrid": "SCR_017655",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -179986,6 +180034,7 @@
                     "year": "2015"
                 }
             ],
+            "rrid": "SCR_015664",
             "synonyms": [
                 "DISEASES Database",
                 "JensenLab DISEASES"
@@ -184239,7 +184288,8 @@
                     "title": "DisProt: intrinsic protein disorder annotation in 2020.",
                     "year": "2020"
                 }
-            ]
+            ],
+            "rrid": "SCR_007097"
         },
         {
             "activity_status": "active",
@@ -207138,7 +207188,8 @@
                     "title": "DrugCentral: online drug compendium",
                     "year": "2017"
                 }
-            ]
+            ],
+            "rrid": "SCR_015663"
         },
         {
             "activity_status": "active",
@@ -207814,6 +207865,7 @@
                 }
             ],
             "repository": "https://github.com/MaayanLab/drugmonizome",
+            "rrid": "SCR_024821",
             "synonyms": [
                 "Drugmonizome-ML"
             ],
@@ -210231,7 +210283,8 @@
                     "product_url": "https://core.kg.ebrains.eu/swagger-ui/index.html"
                 }
             ],
-            "repository": "https://github.com/HumanBrainProject/kg-core"
+            "repository": "https://github.com/HumanBrainProject/kg-core",
+            "rrid": "SCR_017612"
         },
         {
             "activity_status": "active",
@@ -212651,7 +212704,8 @@
                     "year": "2014"
                 }
             ],
-            "repository": "https://github.com/evidenceontology/evidenceontology"
+            "repository": "https://github.com/evidenceontology/evidenceontology",
+            "rrid": "SCR_002477"
         },
         {
             "activity_status": "active",
@@ -213270,7 +213324,8 @@
                     "year": "2021"
                 }
             ],
-            "repository": "https://biocyc.org/download.shtml"
+            "repository": "https://biocyc.org/download.shtml",
+            "rrid": "SCR_002433"
         },
         {
             "activity_status": "active",
@@ -215535,7 +215590,8 @@
                     "year": "2013"
                 }
             ],
-            "repository": "https://github.com/edamontology/edamontology"
+            "repository": "https://github.com/edamontology/edamontology",
+            "rrid": "SCR_006620"
         },
         {
             "activity_status": "active",
@@ -222355,6 +222411,7 @@
                     "product_url": "http://www.organchip.cn/"
                 }
             ],
+            "rrid": "SCR_011215",
             "synonyms": [
                 "EMA"
             ]
@@ -223015,6 +223072,7 @@
                 }
             ],
             "repository": "https://github.com/obophenotype/developmental-mouse-anatomy-ontology",
+            "rrid": "SCR_021808",
             "taxon": [
                 "NCBITaxon:10088"
             ]
@@ -227599,6 +227657,7 @@
                 }
             ],
             "repository": "https://github.com/ENCODE-DCC/encoded",
+            "rrid": "SCR_006793",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090"
@@ -235197,6 +235256,7 @@
                 }
             ],
             "repository": "https://github.com/Ensembl/",
+            "rrid": "SCR_006766",
             "taxon": [
                 "NCBITaxon:10116",
                 "NCBITaxon:9606",
@@ -238009,6 +238069,7 @@
                 }
             ],
             "repository": "https://github.com/EOL",
+            "rrid": "SCR_005905",
             "taxon": [
                 "NCBITaxon:1"
             ]
@@ -239907,7 +239968,8 @@
                     "title": "The eukaryotic promoter database: expansion of EPDnew and new promoter analysis tools",
                     "year": "2015"
                 }
-            ]
+            ],
+            "rrid": "SCR_002485"
         },
         {
             "activity_status": "active",
@@ -243331,6 +243393,7 @@
                 }
             ],
             "repository": "https://github.com/EuropePMC",
+            "rrid": "SCR_005901",
             "synonyms": [
                 "Europe PubMed Central",
                 "EuropePMC"
@@ -247402,7 +247465,8 @@
                     "year": "2019"
                 }
             ],
-            "repository": "https://github.com/ebi-gene-expression-group"
+            "repository": "https://github.com/ebi-gene-expression-group",
+            "rrid": "SCR_007989"
         },
         {
             "activity_status": "active",
@@ -248671,6 +248735,7 @@
                     ]
                 }
             ],
+            "rrid": "SCR_013718",
             "synonyms": [
                 "AEMS",
                 "FDA Adverse Event Monitoring System",
@@ -249069,6 +249134,7 @@
                 }
             ],
             "repository": "https://github.com/seek4science/seek",
+            "rrid": "SCR_021119",
             "synonyms": [
                 "FAIRDOM Hub"
             ]
@@ -249383,6 +249449,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_004177",
             "synonyms": [
                 "BioSharing"
             ]
@@ -253512,6 +253579,7 @@
                     "product_url": "https://open.fda.gov/data/downloads/"
                 }
             ],
+            "rrid": "SCR_013727",
             "synonyms": [
                 "Approved Drug Products with Therapeutic Equivalence Evaluations",
                 "Orange Book"
@@ -259628,6 +259696,7 @@
                 }
             ],
             "repository": "https://github.com/FlyBase",
+            "rrid": "SCR_006549",
             "taxon": [
                 "NCBITaxon:7227"
             ]
@@ -265869,6 +265938,7 @@
                     "product_url": "https://knowwheregraph.org/"
                 }
             ],
+            "rrid": "SCR_023746",
             "synonyms": [
                 "Database of Global Administrative Areas"
             ]
@@ -267981,6 +268051,7 @@
                 }
             ],
             "repository": "https://github.com/gbif",
+            "rrid": "SCR_005904",
             "taxon": [
                 "NCBITaxon:1"
             ]
@@ -270947,6 +271018,7 @@
                     "year": "2016"
                 }
             ],
+            "rrid": "SCR_010223",
             "synonyms": [
                 "GenAge",
                 "The Aging Gene Database"
@@ -274559,6 +274631,7 @@
                     "year": "2025"
                 }
             ],
+            "rrid": "SCR_014966",
             "synonyms": [
                 "GENCODE",
                 "Encyclopedia of genes and gene variants"
@@ -274804,7 +274877,8 @@
                     ],
                     "product_url": "https://apps.okn.us/ldf/gene-expression-atlas-okn"
                 }
-            ]
+            ],
+            "rrid": "SCR_007989"
         },
         {
             "activity_status": "active",
@@ -277459,7 +277533,8 @@
                     "product_file_size": 281505096430,
                     "product_url": "https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz"
                 }
-            ]
+            ],
+            "rrid": "SCR_005012"
         },
         {
             "activity_status": "active",
@@ -280175,6 +280250,7 @@
                 }
             ],
             "repository": "https://github.com/GeneMANIA/genemania",
+            "rrid": "SCR_005709",
             "synonyms": [
                 "GeneMANIA",
                 "GeneMANIA prediction server"
@@ -281174,6 +281250,7 @@
                     "product_url": "https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz"
                 }
             ],
+            "rrid": "SCR_006560",
             "synonyms": [
                 "GeneReviews®",
                 "GR"
@@ -283681,7 +283758,8 @@
                     ],
                     "product_url": "https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome"
                 }
-            ]
+            ],
+            "rrid": "SCR_026591"
         },
         {
             "activity_status": "active",
@@ -289721,7 +289799,8 @@
                     "year": "2020"
                 }
             ],
-            "repository": "https://github.com/glygener/glygen-backend-api"
+            "repository": "https://github.com/glygener/glygen-backend-api",
+            "rrid": "SCR_023438"
         },
         {
             "activity_status": "active",
@@ -291548,6 +291627,7 @@
                     "year": "2020"
                 }
             ],
+            "rrid": "SCR_014964",
             "synonyms": [
                 "gnomAD"
             ],
@@ -292078,6 +292158,7 @@
                 }
             ],
             "repository": "https://github.com/CCMS-UCSD/GNPSDocumentation",
+            "rrid": "SCR_019012",
             "synonyms": [
                 "GNPS",
                 "Global Natural Products Social Molecular Networking"
@@ -308531,6 +308612,7 @@
                 }
             ],
             "repository": "https://github.com/geneontology/go-ontology",
+            "rrid": "SCR_002811",
             "synonyms": [
                 "GO"
             ],
@@ -308893,7 +308975,8 @@
                     "year": "2019"
                 }
             ],
-            "repository": "https://github.com/geneontology/noctua"
+            "repository": "https://github.com/geneontology/noctua",
+            "rrid": "SCR_002811"
         },
         {
             "activity_status": "active",
@@ -310302,7 +310385,8 @@
                     ],
                     "product_url": "https://pavs.phenomebrowser.net/api/docs"
                 }
-            ]
+            ],
+            "rrid": "SCR_007691"
         },
         {
             "activity_status": "active",
@@ -312095,6 +312179,7 @@
                 }
             ],
             "repository": "https://github.com/protwis/protwis",
+            "rrid": "SCR_007419",
             "synonyms": [
                 "GPCR database",
                 "GPCRDB"
@@ -312455,6 +312540,7 @@
                     "year": "2004"
                 }
             ],
+            "rrid": "SCR_006617",
             "synonyms": [
                 "GPMDB",
                 "The Global Proteome Machine",
@@ -317528,6 +317614,7 @@
                 }
             ],
             "repository": "https://github.com/broadinstitute/gtex-pipeline",
+            "rrid": "SCR_001618",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -320461,6 +320548,7 @@
                     "year": "2012"
                 }
             ],
+            "rrid": "SCR_005565",
             "synonyms": [
                 "GTR",
                 "NIH Genetic Testing Registry",
@@ -328515,7 +328603,8 @@
                     "title": "The NHGRI-EBI GWAS Catalog: knowledgebase and deposition resource",
                     "year": "2023"
                 }
-            ]
+            ],
+            "rrid": "SCR_012745"
         },
         {
             "activity_status": "active",
@@ -329649,6 +329738,7 @@
                 }
             ],
             "repository": "https://github.com/hymao/hao",
+            "rrid": "SCR_003340",
             "taxon": [
                 "NCBITaxon:7399"
             ]
@@ -341690,6 +341780,7 @@
                 }
             ],
             "repository": "https://github.com/HGNC",
+            "rrid": "SCR_002827",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -343113,6 +343204,7 @@
                     "year": "2017"
                 }
             ],
+            "rrid": "SCR_014651",
             "synonyms": [
                 "HIPPIE",
                 "Human Integrated Protein-Protein Interaction rEference"
@@ -361763,6 +361855,7 @@
                 }
             ],
             "repository": "https://github.com/obophenotype/human-phenotype-ontology",
+            "rrid": "SCR_006016",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -364955,6 +365048,7 @@
                     ]
                 }
             ],
+            "rrid": "SCR_016202",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -368325,7 +368419,8 @@
                     "year": "2017"
                 }
             ],
-            "repository": "https://github.com/USEPA/CompTox-ExpoCast-httk"
+            "repository": "https://github.com/USEPA/CompTox-ExpoCast-httk",
+            "rrid": "SCR_024702"
         },
         {
             "activity_status": "active",
@@ -369836,6 +369931,7 @@
                 }
             ],
             "repository": "https://github.com/hubmapconsortium",
+            "rrid": "SCR_016922",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -371042,6 +371138,7 @@
                     "year": "2004"
                 }
             ],
+            "rrid": "SCR_007050",
             "synonyms": [
                 "HumanCyc"
             ],
@@ -374056,7 +374153,8 @@
                     "year": "2012"
                 }
             ],
-            "repository": "https://github.com/information-artifact-ontology/IAO"
+            "repository": "https://github.com/information-artifact-ontology/IAO",
+            "rrid": "SCR_000477"
         },
         {
             "activity_status": "active",
@@ -379498,6 +379596,7 @@
                 }
             ],
             "repository": "https://github.com/identifiers-org",
+            "rrid": "SCR_003735",
             "synonyms": [
                 "identifiers.org",
                 "MIRIAM Registry",
@@ -382741,6 +382840,7 @@
                     ]
                 }
             ],
+            "rrid": "SCR_014387",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -383853,7 +383953,8 @@
                     "title": "IMGT, the international ImMunoGeneTics information system 25 years on",
                     "year": "2015"
                 }
-            ]
+            ],
+            "rrid": "SCR_012780"
         },
         {
             "activity_status": "active",
@@ -385241,6 +385342,7 @@
                     "year": "2023"
                 }
             ],
+            "rrid": "SCR_006158",
             "taxon": [
                 "NCBITaxon:10090",
                 "NCBITaxon:9606"
@@ -388053,6 +388155,7 @@
                     "year": "2013"
                 }
             ],
+            "rrid": "SCR_006714",
             "synonyms": [
                 "InnateDB"
             ],
@@ -395820,6 +395923,7 @@
                 }
             ],
             "repository": "https://github.com/intact-portal",
+            "rrid": "SCR_006944",
             "synonyms": [
                 "IntAct Molecular Interaction Database",
                 "IMEx IntAct"
@@ -396046,7 +396150,8 @@
                     "year": "2014"
                 }
             ],
-            "repository": "https://github.com/intermine/intermine"
+            "repository": "https://github.com/intermine/intermine",
+            "rrid": "SCR_001772"
         },
         {
             "activity_status": "active",
@@ -400439,7 +400544,8 @@
                     "year": "2025"
                 }
             ],
-            "repository": "https://www.ebi.ac.uk/interpro/"
+            "repository": "https://www.ebi.ac.uk/interpro/",
+            "rrid": "SCR_006695"
         },
         {
             "activity_status": "active",
@@ -401763,6 +401869,7 @@
                     "year": "2022"
                 }
             ],
+            "rrid": "SCR_026109",
             "synonyms": [
                 "integrated Proteome resources"
             ]
@@ -403289,6 +403396,7 @@
                     "year": "2018"
                 }
             ],
+            "rrid": "SCR_014416",
             "synonyms": []
         },
         {
@@ -403564,6 +403672,7 @@
                     "year": "2011"
                 }
             ],
+            "rrid": "SCR_006087",
             "synonyms": [
                 "ISRCTN",
                 "International Standard Randomised Controlled Trial Number",
@@ -404279,7 +404388,8 @@
                     ],
                     "product_url": "https://apps.okn.us/ldf/wildlifekn"
                 }
-            ]
+            ],
+            "rrid": "SCR_012758"
         },
         {
             "activity_status": "active",
@@ -406572,6 +406682,7 @@
                     "year": "2017"
                 }
             ],
+            "rrid": "SCR_008127",
             "synonyms": [
                 "JWS",
                 "Java Web Simulation"
@@ -415874,7 +415985,7 @@
             "evaluation_page": "resource/kg-monarch/kg-monarch_eval.html",
             "homepage_url": "https://monarchinitiative.org/kg/downloads",
             "id": "kg-monarch",
-            "last_modified_date": "2026-10-20T16:15:45Z",
+            "last_modified_date": "2026-10-20T23:03:21Z",
             "layout": "resource_detail",
             "license": {
                 "id": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -423735,6 +423846,7 @@
                     "year": "2022"
                 }
             ],
+            "rrid": "SCR_003937",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -426624,7 +426736,8 @@
                     "year": "2024"
                 }
             ],
-            "repository": "https://www.lipidmaps.org/databases/lmsd"
+            "repository": "https://www.lipidmaps.org/databases/lmsd",
+            "rrid": "SCR_006579"
         },
         {
             "activity_status": "active",
@@ -433246,7 +433359,8 @@
                     "title": "MaizeGDB 2018: the maize multi-genome genetics and genomics database",
                     "year": "2019"
                 }
-            ]
+            ],
+            "rrid": "SCR_006600"
         },
         {
             "activity_status": "active",
@@ -434684,6 +434798,7 @@
                     "year": "2014"
                 }
             ],
+            "rrid": "SCR_005817",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -436219,7 +436334,8 @@
                     "title": "MarkerDB: an online database of molecular biomarkers",
                     "year": "2021"
                 }
-            ]
+            ],
+            "rrid": "SCR_026817"
         },
         {
             "activity_status": "active",
@@ -436967,6 +437083,7 @@
                     "year": "2016"
                 }
             ],
+            "rrid": "SCR_013665",
             "synonyms": [
                 "Mass Spectrometry Interactive Virtual Environment",
                 "MassIVE"
@@ -444569,6 +444686,7 @@
                     "year": "2020"
                 }
             ],
+            "rrid": "SCR_000111",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -452257,7 +452375,8 @@
                     "year": "2000"
                 }
             ],
-            "repository": "https://nlmpubs.nlm.nih.gov/projects/mesh/"
+            "repository": "https://nlmpubs.nlm.nih.gov/projects/mesh/",
+            "rrid": "SCR_004750"
         },
         {
             "activity_status": "active",
@@ -452982,6 +453101,7 @@
                     "year": "2013"
                 }
             ],
+            "rrid": "SCR_014663",
             "synonyms": [
                 "MTBLS"
             ]
@@ -453824,7 +453944,8 @@
                     "title": "The MetaCyc database of metabolic pathways and enzymes - a 2019 update",
                     "year": "2020"
                 }
-            ]
+            ],
+            "rrid": "SCR_007778"
         },
         {
             "activity_status": "active",
@@ -454007,7 +454128,8 @@
                     "title": "Reconciliation of metabolites and biochemical reactions for metabolic networks",
                     "year": "2014"
                 }
-            ]
+            ],
+            "rrid": "SCR_015882"
         },
         {
             "activity_status": "active",
@@ -455034,7 +455156,8 @@
                     "year": "2011"
                 }
             ],
-            "repository": "https://github.com/jannahastings/emotion-ontology"
+            "repository": "https://github.com/jannahastings/emotion-ontology",
+            "rrid": "SCR_003272"
         },
         {
             "activity_status": "active",
@@ -459399,6 +459522,7 @@
                     "year": "2023"
                 }
             ],
+            "rrid": "SCR_016429",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -460604,7 +460728,8 @@
                     "year": "2006"
                 }
             ],
-            "repository": "https://github.com/evoinfo/miapa"
+            "repository": "https://github.com/evoinfo/miapa",
+            "rrid": "SCR_003777"
         },
         {
             "activity_status": "active",
@@ -463874,6 +463999,7 @@
                     "year": "2012"
                 }
             ],
+            "rrid": "SCR_001523",
             "synonyms": [
                 "MINT",
                 "Molecular INTeraction Database"
@@ -467294,7 +467420,8 @@
                     "title": "The microRNA Registry",
                     "year": "2004"
                 }
-            ]
+            ],
+            "rrid": "SCR_003152"
         },
         {
             "activity_status": "active",
@@ -468128,7 +468255,8 @@
                     "title": "miRDB: an online database for prediction of functional microRNA targets",
                     "year": "2020"
                 }
-            ]
+            ],
+            "rrid": "SCR_010848"
         },
         {
             "activity_status": "active",
@@ -472556,7 +472684,8 @@
                     "year": "2008"
                 }
             ],
-            "repository": "https://github.com/HUPO-PSI/psi-mod-CV"
+            "repository": "https://github.com/HUPO-PSI/psi-mod-CV",
+            "rrid": "SCR_004198"
         },
         {
             "activity_status": "active",
@@ -474155,6 +474284,7 @@
                     "year": "2022"
                 }
             ],
+            "rrid": "SCR_007804",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -475723,6 +475853,7 @@
                 }
             ],
             "repository": "https://github.com/monarch-initiative",
+            "rrid": "SCR_000824",
             "synonyms": [
                 "Monarch",
                 "The Monarch Initiative"
@@ -484706,6 +484837,7 @@
                 }
             ],
             "repository": "https://github.com/MoTrPAC",
+            "rrid": "SCR_017611",
             "taxon": [
                 "NCBITaxon:10116"
             ]
@@ -487701,6 +487833,7 @@
                 }
             ],
             "repository": "https://github.com/mgijax/mammalian-phenotype-ontology",
+            "rrid": "SCR_004855",
             "taxon": [
                 "NCBITaxon:40674"
             ]
@@ -492988,6 +493121,7 @@
                     "year": "2023"
                 }
             ],
+            "rrid": "SCR_016863",
             "synonyms": [
                 "MSigDB"
             ],
@@ -495002,6 +495136,7 @@
                     "year": "2016"
                 }
             ],
+            "rrid": "SCR_013794",
             "synonyms": [
                 "MW",
                 "NMDR",
@@ -496450,6 +496585,7 @@
                 }
             ],
             "repository": "https://github.com/biothings/mygene.info",
+            "rrid": "SCR_018660",
             "synonyms": [
                 "MyGene",
                 "mygene.info"
@@ -497337,7 +497473,8 @@
                         "File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file"
                     ]
                 }
-            ]
+            ],
+            "rrid": "SCR_026199"
         },
         {
             "activity_status": "active",
@@ -500393,7 +500530,8 @@
                     ],
                     "product_url": "https://seqapass.epa.gov/seqapass/"
                 }
-            ]
+            ],
+            "rrid": "SCR_006472"
         },
         {
             "activity_status": "active",
@@ -518596,6 +518734,7 @@
                     "product_url": "https://mychem.info/v1/query"
                 }
             ],
+            "rrid": "SCR_013721",
             "synonyms": [
                 "NDC",
                 "NDCD",
@@ -521014,6 +521153,7 @@
                     "year": "2017"
                 }
             ],
+            "rrid": "SCR_008911",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -522834,6 +522974,7 @@
                     "product_url": "https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics"
                 }
             ],
+            "rrid": "SCR_006874",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -528638,7 +528779,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "rrid": "SCR_007031"
         },
         {
             "activity_status": "active",
@@ -541293,6 +541435,7 @@
                 }
             ],
             "repository": "https://github.com/OBOFoundry/OBOFoundry.github.io",
+            "rrid": "SCR_007083",
             "synonyms": [
                 "OBO",
                 "Open Biological and Biomedical Ontology Foundry",
@@ -544346,6 +544489,7 @@
                 }
             ],
             "repository": "https://github.com/EBISPOT/ols4",
+            "rrid": "SCR_006596",
             "synonyms": [
                 "OLS",
                 "OLS4"
@@ -545161,7 +545305,8 @@
                     "year": "2021"
                 }
             ],
-            "repository": "https://github.com/DessimozLab/pyomabrowser"
+            "repository": "https://github.com/DessimozLab/pyomabrowser",
+            "rrid": "SCR_011978"
         },
         {
             "activity_status": "active",
@@ -545787,6 +545932,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_010494",
             "synonyms": [
                 "OmicsDI",
                 "Omics Discovery Index"
@@ -553845,6 +553991,7 @@
                     "year": "2015"
                 }
             ],
+            "rrid": "SCR_006437",
             "taxon": [
                 "NCBITaxon:9606"
             ],
@@ -554910,7 +555057,8 @@
                     "year": "2021"
                 }
             ],
-            "repository": "https://github.com/saezlab/pypath"
+            "repository": "https://github.com/saezlab/pypath",
+            "rrid": "SCR_028649"
         },
         {
             "activity_status": "active",
@@ -557129,6 +557277,7 @@
                 }
             ],
             "repository": "https://github.com/oncokb",
+            "rrid": "SCR_014782",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -558659,7 +558808,8 @@
                     "title": "OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts",
                     "year": "2022"
                 }
-            ]
+            ],
+            "rrid": "SCR_022787"
         },
         {
             "activity_status": "active",
@@ -561951,7 +562101,8 @@
                     "year": "2012"
                 }
             ],
-            "repository": "https://github.com/OPL-ontology/OPL"
+            "repository": "https://github.com/OPL-ontology/OPL",
+            "rrid": "SCR_003427"
         },
         {
             "activity_status": "active",
@@ -562500,7 +562651,8 @@
                     "year": "2012"
                 }
             ],
-            "repository": "https://github.com/ORCID"
+            "repository": "https://github.com/ORCID",
+            "rrid": "SCR_008700"
         },
         {
             "activity_status": "active",
@@ -567783,6 +567935,7 @@
                 }
             ],
             "repository": "https://github.com/Orphanet",
+            "rrid": "SCR_006628",
             "taxon": [
                 "NCBITaxon:9606"
             ],
@@ -569048,7 +569201,8 @@
                 }
             ],
             "publications": [],
-            "repository": "https://github.com/OVAE-Ontology/ovae"
+            "repository": "https://github.com/OVAE-Ontology/ovae",
+            "rrid": "SCR_003442"
         },
         {
             "activity_status": "active",
@@ -569463,6 +569617,7 @@
                 }
             ],
             "repository": "https://github.com/PanKbase",
+            "rrid": "SCR_026593",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -570084,6 +570239,7 @@
                 }
             ],
             "repository": "https://github.com/LabKey/MacCossLabModules",
+            "rrid": "SCR_017136",
             "synonyms": [
                 "PanoramaWeb Public"
             ]
@@ -574933,7 +575089,8 @@
                     "year": "2022"
                 }
             ],
-            "repository": "https://data.pantherdb.org/ftp/"
+            "repository": "https://data.pantherdb.org/ftp/",
+            "rrid": "SCR_004869"
         },
         {
             "activity_status": "active",
@@ -584893,7 +585050,8 @@
                     "title": "PaxDb v6.0: reprocessed, LLM-selected, curated protein abundance data across organisms",
                     "year": "2026"
                 }
-            ]
+            ],
+            "rrid": "SCR_018910"
         },
         {
             "activity_status": "active",
@@ -589360,6 +589518,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_012820",
             "synonyms": [
                 "PDB",
                 "Protein Data Bank"
@@ -592593,6 +592752,7 @@
                     "year": "2016"
                 }
             ],
+            "rrid": "SCR_006783",
             "synonyms": [
                 "PA",
                 "PASSEL",
@@ -600334,6 +600494,7 @@
                 }
             ],
             "repository": "https://github.com/ncats/pharos_frontend",
+            "rrid": "SCR_016258",
             "synonyms": [
                 "Pharos",
                 "TCRD",
@@ -604344,6 +604505,7 @@
                     "year": "2007"
                 }
             ],
+            "rrid": "SCR_003332",
             "synonyms": [
                 "Arabidopsis Protein Phosphorylation Site Database"
             ],
@@ -606566,7 +606728,8 @@
                     "title": "PhosphoSitePlus, 2014: mutations, PTMs and recalibrations.",
                     "year": "2015"
                 }
-            ]
+            ],
+            "rrid": "SCR_001837"
         },
         {
             "activity_status": "active",
@@ -607411,6 +607574,7 @@
                     "year": "2019"
                 }
             ],
+            "rrid": "SCR_017374",
             "synonyms": [
                 "PMR",
                 "PMR2",
@@ -610366,7 +610530,8 @@
                     "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics",
                     "year": "2018"
                 }
-            ]
+            ],
+            "rrid": "SCR_014411"
         },
         {
             "activity_status": "active",
@@ -613853,6 +614018,7 @@
                     ]
                 }
             ],
+            "rrid": "SCR_000244",
             "synonyms": [
                 "PMDA"
             ]
@@ -619289,6 +619455,7 @@
                 }
             ],
             "repository": "https://www.pombase.org/datasets",
+            "rrid": "SCR_006586",
             "taxon": [
                 "NCBITaxon:4896",
                 "NCBITaxon:4932"
@@ -619512,6 +619679,7 @@
                 }
             ],
             "repository": "https://github.com/obophenotype/porifera-ontology",
+            "rrid": "SCR_000134",
             "taxon": [
                 "NCBITaxon:6040"
             ]
@@ -622691,7 +622859,8 @@
                     "year": "2017"
                 }
             ],
-            "repository": "https://github.com/PROconsortium/PRoteinOntology"
+            "repository": "https://github.com/PROconsortium/PRoteinOntology",
+            "rrid": "SCR_004964"
         },
         {
             "activity_status": "active",
@@ -623497,6 +623666,7 @@
                 }
             ],
             "repository": "https://github.com/PRIDE-Archive",
+            "rrid": "SCR_003411",
             "synonyms": [
                 "PRIDE",
                 "PRoteomics IDEntifications Database",
@@ -629912,7 +630082,8 @@
                     "title": "New and continuing developments at PROSITE",
                     "year": "2012"
                 }
-            ]
+            ],
+            "rrid": "SCR_003457"
         },
         {
             "activity_status": "active",
@@ -632459,6 +632630,7 @@
                     "year": "2017"
                 }
             ],
+            "rrid": "SCR_004055",
             "synonyms": [
                 "PX",
                 "ProteomeCentral"
@@ -633066,7 +633238,8 @@
                     "title": "ProteomicsDB",
                     "year": "2018"
                 }
-            ]
+            ],
+            "rrid": "SCR_015562"
         },
         {
             "activity_status": "active",
@@ -633651,7 +633824,8 @@
                     "title": "Proteopedia - a scientific 'wiki' bridging the rift between three-dimensional structure and function of biomacromolecules",
                     "year": "2008"
                 }
-            ]
+            ],
+            "rrid": "SCR_004647"
         },
         {
             "activity_status": "active",
@@ -641704,7 +641878,8 @@
                     "year": "2019"
                 }
             ],
-            "repository": "https://github.com/ncbi/datasets"
+            "repository": "https://github.com/ncbi/datasets",
+            "rrid": "SCR_004742"
         },
         {
             "activity_status": "active",
@@ -646691,6 +646866,7 @@
                 }
             ],
             "repository": "https://www.ncbi.nlm.nih.gov/",
+            "rrid": "SCR_004846",
             "synonyms": [
                 "PubMed",
                 "MEDLINE",
@@ -648492,7 +648668,8 @@
                     ],
                     "product_url": "https://purdue-hcss.github.io/nsf-software-supply-chain_security/"
                 }
-            ]
+            ],
+            "rrid": "SCR_023145"
         },
         {
             "activity_status": "active",
@@ -649900,7 +650077,8 @@
                     "title": "Rice Annotation Project Database (RAP-DB): an integrative and interactive database for rice genomics",
                     "year": "2013"
                 }
-            ]
+            ],
+            "rrid": "SCR_015062"
         },
         {
             "activity_status": "active",
@@ -664826,6 +665004,7 @@
                 }
             ],
             "repository": "https://github.com/reactome",
+            "rrid": "SCR_023504",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090"
@@ -666406,6 +666585,7 @@
                 }
             ],
             "repository": "https://github.com/redflydb/redfly",
+            "rrid": "SCR_006790",
             "taxon": [
                 "NCBITaxon:7227",
                 "NCBITaxon:50557"
@@ -667245,7 +667425,8 @@
                     "year": "2025"
                 }
             ],
-            "repository": "https://github.com/BioinfoUNIBA/REDItools"
+            "repository": "https://github.com/BioinfoUNIBA/REDItools",
+            "rrid": "SCR_018490"
         },
         {
             "activity_status": "active",
@@ -671846,7 +672027,8 @@
                     "year": "2007"
                 }
             ],
-            "repository": "https://ftp.ncbi.nlm.nih.gov/refseq/"
+            "repository": "https://ftp.ncbi.nlm.nih.gov/refseq/",
+            "rrid": "SCR_022748"
         },
         {
             "activity_status": "active",
@@ -681639,7 +681821,8 @@
                     "title": "Rhea, the reaction knowledgebase in 2022",
                     "year": "2022"
                 }
-            ]
+            ],
+            "rrid": "SCR_004713"
         },
         {
             "activity_status": "active",
@@ -686772,7 +686955,8 @@
                     "product_file_size": 681668343,
                     "product_url": "http://purl.obolibrary.org/obo/go/noctua/neo.obo"
                 }
-            ]
+            ],
+            "rrid": "SCR_023115"
         },
         {
             "activity_status": "active",
@@ -694303,7 +694487,8 @@
                     "product_url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/"
                 }
             ],
-            "repository": "https://github.com/NCATS-Gamma/robokop"
+            "repository": "https://github.com/NCATS-Gamma/robokop",
+            "rrid": "SCR_023437"
         },
         {
             "activity_status": "active",
@@ -695250,7 +695435,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "rrid": "SCR_027474"
         },
         {
             "activity_status": "active",
@@ -696914,6 +697100,7 @@
                     "year": "2011"
                 }
             ],
+            "rrid": "SCR_006645",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -698596,7 +698783,8 @@
                     "product_url": "https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-04-01.owl.zip",
                     "repository": "https://github.com/elsevier-health/scibite-ontology"
                 }
-            ]
+            ],
+            "rrid": "SCR_003952"
         },
         {
             "activity_status": "active",
@@ -699720,7 +699908,8 @@
                     "title": "The SCOP database in 2020: expanded classification of representative family and superfamily domains of known protein structures",
                     "year": "2020"
                 }
-            ]
+            ],
+            "rrid": "SCR_007039"
         },
         {
             "activity_status": "active",
@@ -708018,6 +708207,7 @@
                 }
             ],
             "repository": "https://github.com/MaayanLab/sigcom-lincs",
+            "rrid": "SCR_022275",
             "synonyms": [
                 "Signature Commons LINCS"
             ],
@@ -709888,6 +710078,7 @@
                     "year": "2023"
                 }
             ],
+            "rrid": "SCR_018485",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -711362,6 +711553,7 @@
                 }
             ],
             "repository": "https://github.com/epruesse/SINA",
+            "rrid": "SCR_006423",
             "taxon": [
                 "NCBITaxon:2",
                 "NCBITaxon:2157"
@@ -718197,6 +718389,7 @@
                     "year": "2014"
                 }
             ],
+            "rrid": "SCR_004844",
             "synonyms": [
                 "SMPDB"
             ],
@@ -724960,6 +725153,7 @@
                     "year": "2006"
                 }
             ],
+            "rrid": "SCR_007939",
             "synonyms": [
                 "snoRNA-LBME-db",
                 "snoRNA database"
@@ -726473,7 +726667,8 @@
                     "year": "2011"
                 }
             ],
-            "repository": "https://github.com/The-Sequence-Ontology/SO-Ontologies"
+            "repository": "https://github.com/The-Sequence-Ontology/SO-Ontologies",
+            "rrid": "SCR_004374"
         },
         {
             "activity_status": "active",
@@ -726732,6 +726927,7 @@
                     "product_url": "https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/SPARC.zip"
                 }
             ],
+            "rrid": "SCR_017041",
             "synonyms": [
                 "SPARC",
                 "Stimulating Peripheral Activity to Relieve Conditions"
@@ -728701,6 +728897,7 @@
                     "year": "2022"
                 }
             ],
+            "rrid": "SCR_004891",
             "synonyms": [
                 "SRA",
                 "Sequence Read Archive"
@@ -743552,6 +743749,7 @@
                 }
             ],
             "repository": "https://www.swisslipids.org/",
+            "rrid": "SCR_019074",
             "synonyms": [
                 "slm",
                 "swisslipid"
@@ -744971,6 +745169,7 @@
                     "year": "2018"
                 }
             ],
+            "rrid": "SCR_018123",
             "synonyms": [
                 "SWISS-MODEL",
                 "SWISSMODEL"
@@ -750847,6 +751046,7 @@
                     "year": "2021"
                 }
             ],
+            "rrid": "SCR_004490",
             "synonyms": [
                 "TCDB",
                 "Transporter Classification Database"
@@ -759579,6 +759779,7 @@
                     "year": "2021"
                 }
             ],
+            "rrid": "SCR_028178",
             "synonyms": [
                 "TOPMed",
                 "Trans-Omics for Precision Medicine"
@@ -764215,7 +764416,8 @@
                     "title": "TRRUST v2: an expanded reference database of human and mouse transcriptional regulatory interactions",
                     "year": "2018"
                 }
-            ]
+            ],
+            "rrid": "SCR_022554"
         },
         {
             "activity_status": "active",
@@ -778743,6 +778945,7 @@
                 }
             ],
             "repository": "https://github.com/obophenotype/uberon",
+            "rrid": "SCR_010668",
             "taxon": [
                 "NCBITaxon:33208"
             ]
@@ -781043,7 +781246,8 @@
                     "title": "The human genome browser at UCSC",
                     "year": "2002"
                 }
-            ]
+            ],
+            "rrid": "SCR_005780"
         },
         {
             "activity_status": "active",
@@ -785608,6 +785812,7 @@
                     "year": "2004"
                 }
             ],
+            "rrid": "SCR_006363",
             "synonyms": [
                 "UMLS"
             ],
@@ -801031,6 +801236,7 @@
                 }
             ],
             "repository": "https://www.uniprot.org/help/downloads",
+            "rrid": "SCR_004477",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090",
@@ -801239,6 +801445,7 @@
                     "year": "2007"
                 }
             ],
+            "rrid": "SCR_010646",
             "synonyms": [
                 "UniRef",
                 "UniRef100",
@@ -803955,7 +804162,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "rrid": "SCR_011587"
         },
         {
             "activity_status": "active",
@@ -804212,7 +804420,8 @@
                     ],
                     "product_url": "https://apps.okn.us/ldf/wildlifekn"
                 }
-            ]
+            ],
+            "rrid": "SCR_010168"
         },
         {
             "activity_status": "active",
@@ -805284,6 +805493,7 @@
                     ]
                 }
             ],
+            "rrid": "SCR_014356",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -806305,7 +806515,8 @@
                     "title": "VISTA Enhancer Browser--a database of tissue-specific human enhancers",
                     "year": "2007"
                 }
-            ]
+            ],
+            "rrid": "SCR_007973"
         },
         {
             "activity_status": "active",
@@ -807059,7 +807270,8 @@
                     "year": "2011"
                 }
             ],
-            "repository": "https://github.com/vaccineontology/VO"
+            "repository": "https://github.com/vaccineontology/VO",
+            "rrid": "SCR_003442"
         },
         {
             "activity_status": "active",
@@ -809875,6 +810087,7 @@
                     "product_url": "https://spoke.ucsf.edu/data-tools"
                 }
             ],
+            "rrid": "SCR_008505",
             "synonyms": [
                 "WHO"
             ]
@@ -810148,6 +810361,7 @@
                     "year": "2006"
                 }
             ],
+            "rrid": "SCR_004475",
             "synonyms": [
                 "ICTRP",
                 "WHO ICTRP",
@@ -817708,6 +817922,7 @@
                 }
             ],
             "repository": "https://github.com/wikipathways/wikipathways-database",
+            "rrid": "SCR_002134",
             "taxon": [
                 "NCBITaxon:9606",
                 "NCBITaxon:10090"
@@ -818857,6 +819072,7 @@
                     "product_url": "https://databus.dbpedia.org/dbpedia/dbpedia-wikipedia-kg-dump"
                 }
             ],
+            "rrid": "SCR_004897",
             "synonyms": [
                 "English Wikipedia"
             ]
@@ -819566,7 +819782,8 @@
                     ],
                     "product_url": "https://apps.okn.us/ldf/wildlifekn"
                 }
-            ]
+            ],
+            "rrid": "SCR_010244"
         },
         {
             "activity_status": "active",
@@ -822679,6 +822896,7 @@
                 }
             ],
             "repository": "https://github.com/WormBase",
+            "rrid": "SCR_003098",
             "synonyms": [
                 "WB"
             ],
@@ -823198,6 +823416,7 @@
                 }
             ],
             "repository": "https://github.com/xenopus-anatomy/xao",
+            "rrid": "SCR_004337",
             "taxon": [
                 "NCBITaxon:8353"
             ]
@@ -823605,7 +823824,8 @@
                     "year": "2013"
                 }
             ],
-            "repository": "https://github.com/rat-genome-database/XCO-experimental-condition-ontology"
+            "repository": "https://github.com/rat-genome-database/XCO-experimental-condition-ontology",
+            "rrid": "SCR_003306"
         },
         {
             "activity_status": "active",
@@ -826358,6 +826578,7 @@
                 }
             ],
             "repository": "https://github.com/xenopus-anatomy",
+            "rrid": "SCR_003280",
             "taxon": [
                 "NCBITaxon:8355"
             ]
@@ -828208,6 +828429,7 @@
                     "year": "2011"
                 }
             ],
+            "rrid": "SCR_022761",
             "synonyms": [
                 "YODA Project",
                 "Yale University Open Data Access Project",
@@ -829319,6 +829541,7 @@
                 }
             ],
             "repository": "https://github.com/cerivs/zebrafish-anatomical-ontology",
+            "rrid": "SCR_005887",
             "taxon": [
                 "NCBITaxon:7954"
             ]
@@ -833392,6 +833615,7 @@
                 }
             ],
             "repository": "https://github.com/ZFIN/",
+            "rrid": "SCR_013326",
             "taxon": [
                 "NCBITaxon:7955"
             ]
@@ -840190,7 +840414,8 @@
                     "title": "ChemBank: a small-molecule screening and cheminformatics resource database",
                     "year": "2008"
                 }
-            ]
+            ],
+            "rrid": "SCR_007592"
         },
         {
             "activity_status": "inactive",
@@ -843066,7 +843291,8 @@
                     "product_url": "https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIX.tar.gz"
                 }
             ],
-            "publications": []
+            "publications": [],
+            "rrid": "SCR_010407"
         },
         {
             "activity_status": "inactive",
@@ -843133,7 +843359,8 @@
                     "product_url": "https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/FLU.tar.gz"
                 }
             ],
-            "publications": []
+            "publications": [],
+            "rrid": "SCR_003346"
         },
         {
             "activity_status": "inactive",
@@ -844193,6 +844420,7 @@
                 }
             ],
             "repository": "https://bitbucket.org/uwsig/fma",
+            "rrid": "SCR_003379",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -845620,6 +845848,7 @@
                     "year": "2007"
                 }
             ],
+            "rrid": "SCR_007690",
             "synonyms": [
                 "GPCR-LIgand DAtabase",
                 "GPCR-Ligand Database"
@@ -845720,7 +845949,8 @@
             "layout": "resource_detail",
             "name": "Cereal Plant Gross Anatomy",
             "products": [],
-            "publications": []
+            "publications": [],
+            "rrid": "SCR_007061"
         },
         {
             "activity_status": "inactive",
@@ -845752,7 +845982,8 @@
             "layout": "resource_detail",
             "name": "Habronattus courtship",
             "products": [],
-            "publications": []
+            "publications": [],
+            "rrid": "SCR_010334"
         },
         {
             "activity_status": "inactive",
@@ -846920,6 +847151,7 @@
                     ]
                 }
             ],
+            "rrid": "SCR_002924",
             "taxon": [
                 "NCBITaxon:2759"
             ],
@@ -850301,6 +850533,7 @@
                     "year": "2006"
                 }
             ],
+            "rrid": "SCR_007027",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -851747,7 +851980,8 @@
                 }
             ],
             "publications": [],
-            "repository": "https://github.com/VEuPathDB-ontology/IDOMAL"
+            "repository": "https://github.com/VEuPathDB-ontology/IDOMAL",
+            "rrid": "SCR_003369"
         },
         {
             "activity_status": "inactive",
@@ -852527,6 +852761,7 @@
                     "year": "2011"
                 }
             ],
+            "rrid": "SCR_002084",
             "synonyms": [
                 "Integrating Network Objects with Hierarchies"
             ]
@@ -855589,6 +855824,7 @@
                     "year": "2011"
                 }
             ],
+            "rrid": "SCR_015491",
             "taxon": [
                 "NCBITaxon:2759"
             ],
@@ -856712,7 +856948,8 @@
                     "product_url": "https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIRNAO.tar.gz"
                 }
             ],
-            "publications": []
+            "publications": [],
+            "rrid": "SCR_010360"
         },
         {
             "activity_status": "inactive",
@@ -857903,6 +858140,7 @@
                     "year": "2010"
                 }
             ],
+            "rrid": "SCR_003567",
             "synonyms": [
                 "NetPath"
             ],
@@ -858519,6 +858757,7 @@
                 }
             ],
             "publications": [],
+            "rrid": "SCR_003423",
             "use_instead": [
                 "ogsf"
             ]
@@ -866812,6 +867051,7 @@
                     "year": "2004"
                 }
             ],
+            "rrid": "SCR_001109",
             "synonyms": [
                 "PhosphoELM"
             ],
@@ -872282,6 +872522,7 @@
                 }
             ],
             "publications": [],
+            "rrid": "SCR_003486",
             "taxon": [
                 "NCBITaxon:9606"
             ],
@@ -878476,6 +878717,7 @@
                     "year": "2010"
                 }
             ],
+            "rrid": "SCR_004321",
             "warnings": [
                 "The last release for this resource was on October 21, 2015."
             ]
@@ -880473,6 +880715,7 @@
                 }
             ],
             "publications": [],
+            "rrid": "SCR_003497",
             "taxon": [
                 "NCBITaxon:9606"
             ]
@@ -883338,6 +883581,7 @@
                     "year": "2010"
                 }
             ],
+            "rrid": "SCR_001610",
             "taxon": [
                 "NCBITaxon:32443"
             ],
@@ -885242,7 +885486,8 @@
                     "title": "TRED: a transcriptional regulatory element database, new entries and other development",
                     "year": "2007"
                 }
-            ]
+            ],
+            "rrid": "SCR_005661"
         },
         {
             "activity_status": "inactive",
@@ -886111,6 +886356,7 @@
                     "year": "1995"
                 }
             ],
+            "rrid": "SCR_022182",
             "synonyms": [
                 "Princeton WordNet",
                 "PWN"

@@ -59,6 +59,7 @@ kgr:4dn a schema1:DataSource ;
         kgr:genomickb.graph,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_016925" ;
     schema1:name "4D Nucleome Data Portal" ;
     skos:inScheme "epigenomics",
         "genomics",
@@ -1025,6 +1026,7 @@ kgr:arrayexpress a schema1:DataSource ;
         kgr:organoiddb.all-organoid-samples,
         kgr:organoiddb.general-samples,
         kgr:organoiddb.organoid-specificity-samples ;
+    schema1:identifier "RRID:SCR_002964" ;
     schema1:name "ArrayExpress" ;
     skos:altLabel "AE" ;
     skos:inScheme "biological systems",
@@ -1323,6 +1325,7 @@ kgr:bao a schema1:Ontology ;
         kgr:bao.website,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph ;
+    schema1:identifier "RRID:SCR_002638" ;
     schema1:name "BioAssay Ontology" ;
     doap:repository <https://github.com/BioAssayOntology/BAO> ;
     skos:inScheme "biomedical",
@@ -1469,7 +1472,8 @@ kgr:bfo a schema1:Ontology ;
         kgr:xpo.owl,
         kgr:zp.obo,
         kgr:zp.owl ;
-    schema1:identifier "bfo" ;
+    schema1:identifier "RRID:SCR_004818",
+        "bfo" ;
     schema1:name "Basic Formal Ontology" ;
     doap:repository <https://github.com/BFO-ontology/BFO> ;
     skos:inScheme "general" ;
@@ -1539,7 +1543,8 @@ kgr:bgee a schema1:DataSource ;
         kgr:sri-reference-kg.graph,
         kgr:translator.bgee.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "bgee" ;
+    schema1:identifier "RRID:SCR_002028",
+        "bgee" ;
     schema1:name "Bgee - Gene Expression Database" ;
     doap:repository <https://github.com/BgeeDB/bgee_apps> ;
     skos:inScheme "gene expression profiling",
@@ -1581,7 +1586,8 @@ kgr:bigg a schema1:DataSource ;
         kgr:obo-db-ingest.bigg.reaction.owl,
         kgr:obo-db-ingest.bigg.reaction.sssom.tsv,
         kgr:obo-db-ingest.bigg.reaction.tsv ;
-    schema1:identifier "bigg-models" ;
+    schema1:identifier "RRID:SCR_005809",
+        "bigg-models" ;
     schema1:name "BiGG Models" ;
     doap:repository <https://github.com/SBRG/bigg_models> ;
     skos:inScheme "information technology",
@@ -1687,7 +1693,8 @@ kgr:bindingdb a schema1:DataSource ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "bindingdb" ;
+    schema1:identifier "RRID:SCR_000390",
+        "bindingdb" ;
     schema1:name "BindingDB" ;
     skos:inScheme "biomedical",
         "chemistry and biochemistry",
@@ -1914,6 +1921,7 @@ kgr:biocyc a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
+    schema1:identifier "RRID:SCR_002298" ;
     schema1:name "BioCyc" ;
     skos:inScheme "metabolism",
         "pathways" ;
@@ -1986,6 +1994,7 @@ kgr:biofactoid a schema1:DataSource ;
         kgr:pathwaycommons.gmt,
         kgr:pathwaycommons.sif,
         kgr:pathwaycommons.txt ;
+    schema1:identifier "RRID:SCR_021011" ;
     schema1:name "Biofactoid" ;
     doap:repository <https://github.com/PathwayCommons/factoid> ;
     skos:altLabel "Factoid" ;
@@ -2012,6 +2021,7 @@ kgr:biogps a schema1:Aggregator ;
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:pharmkg.graph ;
+    schema1:identifier "RRID:SCR_006433" ;
     schema1:name "BioGPS" ;
     skos:inScheme "gene expression profiling",
         "genomics" ;
@@ -2091,7 +2101,8 @@ kgr:biogrid a schema1:DataSource ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "biogrid" ;
+    schema1:identifier "RRID:SCR_007393",
+        "biogrid" ;
     schema1:name "BioGRID" ;
     skos:inScheme "genomics",
         "protein interactions",
@@ -2131,6 +2142,7 @@ kgr:biolincc a schema1:DataSource ;
         kgr:biolincc.users-guide,
         kgr:ecrin-mdr.api,
         kgr:ecrin-mdr.portal ;
+    schema1:identifier "RRID:SCR_013142" ;
     schema1:name "BioLINCC" ;
     skos:altLabel "Biologic Specimen and Data Repository Information Coordinating Center",
         "NHLBI Biologic Specimen and Data Repository" ;
@@ -2236,6 +2248,7 @@ kgr:biomodels a schema1:DataSource ;
         kgr:biomodels.user-guide,
         kgr:omicsdi.api,
         kgr:omicsdi.portal ;
+    schema1:identifier "RRID:SCR_001993" ;
     schema1:name "BioModels" ;
     skos:altLabel "BioModels Database",
         "BioModels Repository" ;
@@ -2314,6 +2327,7 @@ kgr:bioplex a schema1:DataSource ;
         kgr:bioplex.proteome-comparison,
         kgr:bioplex.raw-data,
         kgr:spoke.graph ;
+    schema1:identifier "RRID:SCR_016144" ;
     schema1:name "BioPlex" ;
     skos:altLabel "BioPlex Interactome" ;
     skos:inScheme "biological systems",
@@ -2366,7 +2380,8 @@ kgr:bioportal a schema1:Aggregator ;
         kgr:sifr-bioportal.annotator,
         kgr:sifr-bioportal.api,
         kgr:sifr-bioportal.portal ;
-    schema1:identifier "bioportal" ;
+    schema1:identifier "RRID:SCR_002713",
+        "bioportal" ;
     schema1:name "BioPortal" ;
     doap:repository <https://github.com/ncbo> ;
     skos:inScheme "biomedical",
@@ -2395,6 +2410,7 @@ kgr:bioregistry a schema1:Aggregator ;
         kgr:bioregistry.registry.tsv,
         kgr:bioregistry.registry.yml,
         kgr:bioregistry.sssom ;
+    schema1:identifier "RRID:SCR_022586" ;
     schema1:name "Bioregistry" ;
     doap:repository <https://github.com/biopragmatics/bioregistry> ;
     skos:inScheme "biomedical",
@@ -2470,6 +2486,7 @@ kgr:biothings a schema1:DataSource ;
         kgr:service-kp.code,
         kgr:service-kp.portal,
         kgr:service-kp.trapi ;
+    schema1:identifier "RRID:SCR_024539" ;
     schema1:name "BioThings" ;
     doap:repository <https://github.com/biothings/biothings.api> ;
     skos:inScheme "biomedical",
@@ -2606,6 +2623,7 @@ kgr:brenda a schema1:DataSource ;
         kgr:europepmc.textmined-terms,
         kgr:ibkh.graph,
         kgr:rdf-portal.sparql.primary ;
+    schema1:identifier "RRID:SCR_002997" ;
     schema1:name "BRENDA" ;
     skos:inScheme "chemistry and biochemistry",
         "enzymes",
@@ -2817,6 +2835,7 @@ kgr:cadd a schema1:DataSource ;
         kgr:cadd.snvs.grch38,
         kgr:cadd.website,
         kgr:myvariant.api ;
+    schema1:identifier "RRID:SCR_018393" ;
     schema1:name "CADD" ;
     skos:altLabel "Combined Annotation Dependent Depletion" ;
     skos:inScheme "biomedical",
@@ -3101,6 +3120,7 @@ kgr:ccle a schema1:DataSource ;
         kgr:pharmacodb.api,
         kgr:pharmacodb.documentation,
         kgr:pharmacodb.portal ;
+    schema1:identifier "RRID:SCR_013836" ;
     schema1:name "CCLE" ;
     skos:inScheme "biomedical",
         "cancer" ;
@@ -3192,6 +3212,7 @@ kgr:cdd a schema1:DataSource ;
         kgr:cdd.downloads,
         kgr:cdd.site,
         kgr:genecards.web.interface ;
+    schema1:identifier "RRID:SCR_002077" ;
     schema1:name "Conserved Domain Database" ;
     skos:inScheme "genomics",
         "protein domains",
@@ -3262,7 +3283,8 @@ kgr:cebs a schema1:DataSource ;
         kgr:cebs.citation-guide,
         kgr:cebs.data,
         kgr:cebs.web ;
-    schema1:identifier "cebs" ;
+    schema1:identifier "RRID:SCR_006778",
+        "cebs" ;
     schema1:name "CEBS" ;
     skos:altLabel "CEBS",
         "Chemical Effects in Biological Systems" ;
@@ -3311,7 +3333,8 @@ kgr:cellmarker a schema1:DataSource ;
         kgr:indra.cogex.code,
         kgr:multiomics-kp.graph,
         kgr:mygene.api ;
-    schema1:identifier "cellmarker" ;
+    schema1:identifier "RRID:SCR_018503",
+        "cellmarker" ;
     schema1:name "CellMarker" ;
     skos:inScheme "biological systems",
         "biomedical",
@@ -3340,6 +3363,7 @@ kgr:cellminer a schema1:DataSource ;
         kgr:cellminer.rcellminer,
         kgr:cellminer.rcellminerdata,
         kgr:cellminer.release-notes ;
+    schema1:identifier "RRID:SCR_025648" ;
     schema1:name "CellMiner" ;
     skos:altLabel "CellMiner NCI-60",
         "CellMinerCDB" ;
@@ -3372,6 +3396,7 @@ kgr:cellml a schema1:DataModel ;
         kgr:cellml.specifications,
         kgr:physiome-model-repository.exposures,
         kgr:physiome-model-repository.workspaces ;
+    schema1:identifier "RRID:SCR_008061" ;
     schema1:name "CellML" ;
     doap:repository <https://github.com/cellml> ;
     skos:inScheme "biological systems",
@@ -3397,6 +3422,7 @@ kgr:cellmodelpassports a schema1:DataSource ;
         kgr:cellmodelpassports.portal,
         kgr:cellmodelpassports.proteomics,
         kgr:cellmodelpassports.rnaseq_merged ;
+    schema1:identifier "RRID:SCR_027682" ;
     schema1:name "Cell Model Passports" ;
     skos:altLabel "CMP" ;
     skos:inScheme "biomedical",
@@ -3430,6 +3456,7 @@ kgr:cellosaurus a schema1:DataSource ;
         kgr:cellosaurus.xrefs,
         kgr:europepmc.textmined-terms,
         kgr:rdf-portal.sparql.sib ;
+    schema1:identifier "RRID:SCR_024863" ;
     schema1:name "Cellosaurus" ;
     doap:repository <https://github.com/calipho-sib/cellosaurus> ;
     skos:inScheme "biological systems",
@@ -3453,6 +3480,7 @@ kgr:cellphonedb a schema1:DataSource ;
         kgr:cellphonedb.docs,
         kgr:cellphonedb.package,
         kgr:cellphonedb.web ;
+    schema1:identifier "RRID:SCR_017054" ;
     schema1:name "CellPhoneDB" ;
     doap:repository <https://github.com/ventolab/CellphoneDB> ;
     skos:inScheme "biological systems",
@@ -3478,6 +3506,7 @@ kgr:cellxgene a schema1:DataSource ;
         kgr:cellxgene.portal,
         kgr:cl-kg.api.neo4j,
         kgr:nlm-ckn.graph ;
+    schema1:identifier "RRID:SCR_024894" ;
     schema1:name "CZ CELLxGENE" ;
     doap:repository <https://github.com/chanzuckerberg/single-cell-data-portal> ;
     skos:inScheme "biological systems",
@@ -3598,6 +3627,7 @@ kgr:cgnc a schema1:DataSource ;
         kgr:obo-db-ingest.cgnc.owl,
         kgr:obo-db-ingest.cgnc.sssom.tsv,
         kgr:obo-db-ingest.cgnc.tsv ;
+    schema1:identifier "RRID:SCR_004966" ;
     schema1:name "CGNC" ;
     skos:inScheme "domestic animals",
         "organisms" ;
@@ -3805,7 +3835,8 @@ kgr:chebi a schema1:Ontology ;
         kgr:unibiomap.pred.full,
         kgr:xpo.obo,
         kgr:xpo.owl ;
-    schema1:identifier "chebi" ;
+    schema1:identifier "RRID:SCR_002088",
+        "chebi" ;
     schema1:name "Chemical Entities of Biological Interest" ;
     doap:repository <https://github.com/ebi-chebi/ChEBI> ;
     skos:inScheme "chemistry and biochemistry" ;
@@ -3827,7 +3858,8 @@ kgr:chembank a schema1:DataSource ;
         kgr:molepro.graph.edges,
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi ;
-    schema1:identifier "chembank" ;
+    schema1:identifier "RRID:SCR_007592",
+        "chembank" ;
     schema1:name "ChemBank" ;
     skos:inScheme "chemistry and biochemistry",
         "drug discovery",
@@ -3915,7 +3947,8 @@ kgr:chembl a schema1:DataSource ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "chembl" ;
+    schema1:identifier "RRID:SCR_014042",
+        "chembl" ;
     schema1:name "ChEMBL" ;
     doap:repository <https://github.com/chembl> ;
     skos:inScheme "chemistry and biochemistry",
@@ -4028,6 +4061,7 @@ kgr:chip-atlas a schema1:DataSource ;
         kgr:chip-atlas.peaks.light,
         kgr:chip-atlas.portal,
         kgr:chip-atlas.targetgenes ;
+    schema1:identifier "RRID:SCR_015511" ;
     schema1:name "ChIP-Atlas" ;
     doap:repository <https://github.com/inutano/chip-atlas> ;
     skos:inScheme "epigenomics",
@@ -4519,7 +4553,8 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
         kgr:who-ictrp.search-export,
         kgr:who-ictrp.web-service,
         kgr:yoda.trial-catalog ;
-    schema1:identifier "clinicaltrials" ;
+    schema1:identifier "RRID:SCR_002309",
+        "clinicaltrials" ;
     schema1:name "ClinicalTrials.gov" ;
     doap:repository <https://github.com/ctti-clinicaltrials/aact> ;
     skos:inScheme "biomedical",
@@ -4622,7 +4657,8 @@ kgr:clinvar a schema1:DataSource ;
         kgr:translator.geneticskp.graph,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
-    schema1:identifier "clinvar" ;
+    schema1:identifier "RRID:SCR_006169",
+        "clinvar" ;
     schema1:name "ClinVar" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -4887,6 +4923,7 @@ kgr:cog a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
+    schema1:identifier "RRID:SCR_007139" ;
     schema1:name "COG" ;
     skos:altLabel "COG",
         "Clusters of Orthologous Groups" ;
@@ -4988,6 +5025,7 @@ kgr:compartments a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
+    schema1:identifier "RRID:SCR_015561" ;
     schema1:name "COMPARTMENTS" ;
     skos:inScheme "biological systems",
         "cell biology",
@@ -5337,7 +5375,8 @@ kgr:cpdb a schema1:Aggregator ;
         kgr:mygene.api,
         kgr:rdbridge.graph,
         kgr:service-kp.trapi ;
-    schema1:identifier "cpdb" ;
+    schema1:identifier "RRID:SCR_002231",
+        "cpdb" ;
     schema1:name "ConsensusPathDB" ;
     skos:altLabel "CPDB",
         "CPDB-human",
@@ -5744,7 +5783,8 @@ kgr:ctrp a schema1:DataSource ;
         kgr:pharmacodb.api,
         kgr:pharmacodb.documentation,
         kgr:pharmacodb.portal ;
-    schema1:identifier "ctrp" ;
+    schema1:identifier "RRID:SCR_026293",
+        "ctrp" ;
     schema1:name "Cancer Therapeutics Response Portal" ;
     skos:altLabel "CTRP",
         "Cancer Therapeutics Response Portal" ;
@@ -5846,6 +5886,7 @@ kgr:cytoscape a schema1:DataSource ;
         kgr:cytoscape.automation-api,
         kgr:cytoscape.desktop,
         kgr:genemania.cytoscape-app ;
+    schema1:identifier "RRID:SCR_003032" ;
     schema1:name "Cytoscape" ;
     doap:repository <https://github.com/cytoscape/cytoscape> ;
     skos:inScheme "information technology",
@@ -5989,6 +6030,7 @@ kgr:dbgap a schema1:DataSource ;
         kgr:gtex.dbgap-data,
         kgr:omicsdi.api,
         kgr:omicsdi.portal ;
+    schema1:identifier "RRID:SCR_002709" ;
     schema1:name "dbGaP" ;
     skos:altLabel "NCBI dbGaP",
         "database of Genotypes and Phenotypes" ;
@@ -6051,6 +6093,7 @@ kgr:dbpedia a schema1:KnowledgeGraph ;
         kgr:dbpedia.sparql,
         kgr:dbpedia.wikidata-kg-dump,
         kgr:dbpedia.wikipedia-kg-dump ;
+    schema1:identifier "RRID:SCR_003661" ;
     schema1:name "DBpedia" ;
     doap:repository <https://github.com/dbpedia/extraction-framework> ;
     skos:altLabel "DBpedia" ;
@@ -6070,6 +6113,7 @@ kgr:dbptm a schema1:DataSource ;
     schema1:hasPart kgr:dbptm.downloads,
         kgr:dbptm.portal,
         kgr:iptmnet.ptm ;
+    schema1:identifier "RRID:SCR_007619" ;
     schema1:name "dbPTM" ;
     skos:inScheme "biomedical",
         "post-translational modification",
@@ -6140,7 +6184,8 @@ kgr:dbsnp a schema1:DataSource ;
         kgr:rna-kg.kg.nodes,
         kgr:service-kp.trapi,
         kgr:togows.rest-api ;
-    schema1:identifier "dbsnp" ;
+    schema1:identifier "RRID:SCR_002338",
+        "dbsnp" ;
     schema1:name "dbSNP" ;
     doap:repository <https://github.com/ncbi/dbsnp> ;
     skos:inScheme "biomedical",
@@ -6180,6 +6225,7 @@ kgr:dbvar a schema1:DataSource ;
     schema1:hasPart kgr:dbvar.ftp,
         kgr:dbvar.portal,
         kgr:genomickb.graph ;
+    schema1:identifier "RRID:SCR_003219" ;
     schema1:name "dbVar" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -6212,6 +6258,7 @@ kgr:dc a schema1:DataModel ;
         kgr:efo.obo,
         kgr:efo.owl,
         kgr:forum.graph.dump ;
+    schema1:identifier "RRID:SCR_012921" ;
     schema1:name "Dublin Core Metadata Terms" ;
     doap:repository <https://github.com/dcmi/> ;
     skos:inScheme "information technology",
@@ -6337,6 +6384,7 @@ kgr:ddbj a schema1:DataSource ;
         kgr:ddbj.search,
         kgr:rdf-portal.sparql.ddbj,
         kgr:togows.rest-api ;
+    schema1:identifier "RRID:SCR_002359" ;
     schema1:name "DNA Data Bank of Japan (DDBJ)" ;
     skos:altLabel "DDBJ",
         "DNA Data Bank of Japan" ;
@@ -6459,7 +6507,8 @@ kgr:depmap a schema1:DataSource ;
         kgr:prism.datasets,
         kgr:prism.primary_screen_lfc,
         kgr:prism.secondary_screen_dose_response ;
-    schema1:identifier "depmap" ;
+    schema1:identifier "RRID:SCR_017655",
+        "depmap" ;
     schema1:name "DepMap" ;
     doap:repository <https://github.com/broadinstitute/depmap_omics> ;
     skos:inScheme "biomedical",
@@ -6763,7 +6812,8 @@ kgr:diseases a schema1:Aggregator ;
         kgr:string.protein.physical.links.full,
         kgr:translator.diseases.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "diseases" ;
+    schema1:identifier "RRID:SCR_015664",
+        "diseases" ;
     schema1:name "DISEASES" ;
     skos:altLabel "DISEASES Database",
         "JensenLab DISEASES" ;
@@ -6839,7 +6889,8 @@ kgr:disprot a schema1:DataSource ;
         kgr:disprot.deposition,
         kgr:disprot.downloads,
         kgr:disprot.idpo ;
-    schema1:identifier "disprot" ;
+    schema1:identifier "RRID:SCR_007097",
+        "disprot" ;
     schema1:name "DisProt" ;
     skos:inScheme "protein structure",
         "proteomics" ;
@@ -7343,7 +7394,8 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:translator.dakp.graph,
         kgr:translator.drugcentral.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "drugcentral" ;
+    schema1:identifier "RRID:SCR_015663",
+        "drugcentral" ;
     schema1:name "DrugCentral" ;
     skos:inScheme "biomedical",
         "drug discovery",
@@ -7406,6 +7458,7 @@ kgr:drugmonizome a schema1:Aggregator ;
         kgr:drugmonizome.metadata-api,
         kgr:drugmonizome.ml-appyter,
         kgr:drugmonizome.portal ;
+    schema1:identifier "RRID:SCR_024821" ;
     schema1:name "Drugmonizome" ;
     doap:repository <https://github.com/MaayanLab/drugmonizome> ;
     skos:altLabel "Drugmonizome-ML" ;
@@ -7560,6 +7613,7 @@ kgr:ebrains a schema1:KnowledgeGraph ;
     schema1:hasPart kgr:ebrains.api.core,
         kgr:ebrains.graph,
         kgr:ebrains.stats ;
+    schema1:identifier "RRID:SCR_017612" ;
     schema1:name "EBRAINS Knowledge Graph" ;
     doap:repository <https://github.com/HumanBrainProject/kg-core> ;
     skos:inScheme "biomedical",
@@ -7685,7 +7739,8 @@ kgr:eco a schema1:Ontology ;
         kgr:eco.owl,
         kgr:sri-reference-kg.graph,
         kgr:swisslipid.evidences ;
-    schema1:identifier "eco" ;
+    schema1:identifier "RRID:SCR_002477",
+        "eco" ;
     schema1:name "Evidence and Conclusion Ontology" ;
     doap:repository <https://github.com/evidenceontology/evidenceontology> ;
     skos:inScheme "biomedical",
@@ -7743,6 +7798,7 @@ kgr:ecocyc a schema1:DataSource ;
         kgr:neo.model,
         kgr:neo.obo,
         kgr:obo-db-ingest.rhea.sssom.tsv ;
+    schema1:identifier "RRID:SCR_002433" ;
     schema1:name "EcoCyc" ;
     doap:repository <https://biocyc.org/download.shtml> ;
     skos:inScheme "genomics",
@@ -7874,6 +7930,7 @@ kgr:edam a schema1:Ontology ;
         kgr:edam.tsv,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_006620" ;
     schema1:name "EDAM Ontology" ;
     doap:repository <https://github.com/edamontology/edamontology> ;
     skos:inScheme "biological systems",
@@ -8137,6 +8194,7 @@ kgr:ema a schema1:DataSource ;
         kgr:ema.medicines,
         kgr:klocd.portal,
         kgr:medi.ema ;
+    schema1:identifier "RRID:SCR_011215" ;
     schema1:name "European Medicines Agency" ;
     skos:altLabel "EMA" ;
     skos:inScheme "biomedical",
@@ -8178,7 +8236,8 @@ kgr:emapa a schema1:Ontology ;
         kgr:emapa.obo,
         kgr:emapa.owl,
         kgr:sri-reference-kg.graph ;
-    schema1:identifier "emapa" ;
+    schema1:identifier "RRID:SCR_021808",
+        "emapa" ;
     schema1:name "Mouse Developmental Anatomy Ontology" ;
     doap:repository <https://github.com/obophenotype/developmental-mouse-anatomy-ontology> ;
     skos:inScheme "anatomy and development" ;
@@ -8361,6 +8420,7 @@ kgr:encode a schema1:DataSource ;
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:lncrnalyzr.graph ;
+    schema1:identifier "RRID:SCR_006793" ;
     schema1:name "ENCODE" ;
     doap:repository <https://github.com/ENCODE-DCC/encoded> ;
     skos:inScheme "epigenomics",
@@ -8542,7 +8602,8 @@ kgr:ensembl a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
-    schema1:identifier "ensembl-gene" ;
+    schema1:identifier "RRID:SCR_006766",
+        "ensembl-gene" ;
     schema1:name "Ensembl" ;
     doap:repository <https://github.com/Ensembl/> ;
     skos:inScheme "genomics" ;
@@ -8684,7 +8745,8 @@ kgr:eol-traitbank a schema1:DataSource ;
         kgr:eol-traitbank.docs,
         kgr:eol-traitbank.reconciliation,
         kgr:eol-traitbank.web ;
-    schema1:identifier "eol-traitbank" ;
+    schema1:identifier "RRID:SCR_005905",
+        "eol-traitbank" ;
     schema1:name "Encyclopedia of Life (EOL) TraitBank" ;
     doap:repository <https://github.com/EOL> ;
     skos:inScheme "biodiversity",
@@ -8828,6 +8890,7 @@ kgr:epd a schema1:DataSource ;
         kgr:epd.site,
         kgr:genecards.web.interface,
         kgr:genomickb.graph ;
+    schema1:identifier "RRID:SCR_002485" ;
     schema1:name "Eukaryotic Promoter Database" ;
     skos:inScheme "gene regulation",
         "genomics",
@@ -9205,6 +9268,7 @@ kgr:europepmc a schema1:Aggregator ;
         kgr:europepmc.rest-api,
         kgr:europepmc.textmined-terms,
         kgr:onco.all_json ;
+    schema1:identifier "RRID:SCR_005901" ;
     schema1:name "Europe PMC" ;
     doap:repository <https://github.com/EuropePMC> ;
     skos:altLabel "Europe PubMed Central",
@@ -9371,6 +9435,7 @@ kgr:expressionatlas a schema1:Aggregator ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_007989" ;
     schema1:name "Expression Atlas" ;
     doap:repository <https://github.com/ebi-gene-expression-group> ;
     skos:inScheme "biomedical",
@@ -9439,7 +9504,8 @@ kgr:faers a schema1:DataSource ;
         kgr:reprotox-kg.graph.faers-female,
         kgr:reprotox-kg.graph.faers-male,
         kgr:sep-l1000.faers-offsides ;
-    schema1:identifier "faers" ;
+    schema1:identifier "RRID:SCR_013718",
+        "faers" ;
     schema1:name "FDA Adverse Event Reporting System" ;
     skos:altLabel "AEMS",
         "FAERS",
@@ -9469,6 +9535,7 @@ kgr:fairdomhub a schema1:DataSource ;
         kgr:fairdomhub.sparql,
         kgr:omicsdi.api,
         kgr:omicsdi.portal ;
+    schema1:identifier "RRID:SCR_021119" ;
     schema1:name "FAIRDOMHub" ;
     doap:repository <https://github.com/seek4science/seek> ;
     skos:altLabel "FAIRDOM Hub" ;
@@ -9493,6 +9560,7 @@ kgr:fairsharing a schema1:Aggregator ;
         kgr:fairsharing.docs,
         kgr:fairsharing.mcp,
         kgr:fairsharing.portal ;
+    schema1:identifier "RRID:SCR_004177" ;
     schema1:name "FAIRsharing" ;
     skos:altLabel "BioSharing" ;
     skos:inScheme "information technology",
@@ -9690,6 +9758,7 @@ kgr:fda-orange-book a schema1:DataSource ;
         kgr:medi.orangebook,
         kgr:openfda.apis,
         kgr:openfda.downloads ;
+    schema1:identifier "RRID:SCR_013727" ;
     schema1:name "FDA Orange Book" ;
     skos:altLabel "Approved Drug Products with Therapeutic Equivalence Evaluations",
         "Orange Book" ;
@@ -9816,6 +9885,7 @@ kgr:fix a schema1:Ontology ;
     schema1:hasPart kgr:fix.kg-bioportal,
         kgr:fix.obo,
         kgr:fix.owl ;
+    schema1:identifier "RRID:SCR_010407" ;
     schema1:name "Physico-chemical methods and properties" ;
     skos:inScheme "chemistry and biochemistry" ;
     adms:status "Orphaned" ;
@@ -9850,6 +9920,7 @@ kgr:flu a schema1:Ontology ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:flu.kg-bioportal,
         kgr:flu.owl ;
+    schema1:identifier "RRID:SCR_003346" ;
     schema1:name "Influenza Ontology" ;
     skos:inScheme "biomedical",
         "infectious disease" ;
@@ -9896,7 +9967,8 @@ kgr:flybase a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
-    schema1:identifier "flybase" ;
+    schema1:identifier "RRID:SCR_006549",
+        "flybase" ;
     schema1:name "FlyBase" ;
     doap:repository <https://github.com/FlyBase> ;
     skos:inScheme "genomics",
@@ -9930,6 +10002,7 @@ kgr:fma a schema1:Ontology ;
         kgr:hra-kg.graph.xml,
         kgr:hra.data,
         kgr:hra.knowledge-graph ;
+    schema1:identifier "RRID:SCR_003379" ;
     schema1:name "Foundational Model of Anatomy Ontology" ;
     doap:repository <https://bitbucket.org/uwsig/fma> ;
     skos:inScheme "anatomy and development" ;
@@ -10208,6 +10281,7 @@ kgr:gadm a schema1:DataSource ;
         kgr:gadm.download_world,
         kgr:gadm.metadata,
         kgr:knowwheregraph.graph ;
+    schema1:identifier "RRID:SCR_023746" ;
     schema1:name "GADM" ;
     skos:altLabel "Database of Global Administrative Areas" ;
     skos:inScheme "environment",
@@ -10429,7 +10503,8 @@ kgr:genage a schema1:DataSource ;
         kgr:genage.human.search,
         kgr:genage.models,
         kgr:genage.models.search ;
-    schema1:identifier "genage" ;
+    schema1:identifier "RRID:SCR_010223",
+        "genage" ;
     schema1:name "GenAge Database of Ageing-Related Genes" ;
     skos:altLabel "GenAge",
         "The Aging Gene Database" ;
@@ -10492,6 +10567,7 @@ kgr:gencode a schema1:DataSource ;
         kgr:lncrnalyzr.graph,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_014966" ;
     schema1:name "GENCODE" ;
     skos:altLabel "Encyclopedia of genes and gene variants",
         "GENCODE" ;
@@ -10532,6 +10608,7 @@ kgr:gene-expression-atlas-okn a schema1:KnowledgeGraph ;
     schema1:hasPart kgr:gene-expression-atlas-okn.graph,
         kgr:gene-expression-atlas-okn.sparql,
         kgr:gene-expression-atlas-okn.tpf ;
+    schema1:identifier "RRID:SCR_007989" ;
     schema1:name "Gene Expression Atlas" ;
     skos:inScheme "biomedical",
         "gene expression profiling",
@@ -10578,6 +10655,7 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
+    schema1:identifier "RRID:SCR_005012" ;
     schema1:name "Gene Expression Omnibus (GEO)" ;
     skos:inScheme "biomedical",
         "gene expression profiling",
@@ -10680,6 +10758,7 @@ kgr:genemania a schema1:DataSource ;
         kgr:genemania.networks,
         kgr:genemania.web,
         kgr:pheknowlator.graph ;
+    schema1:identifier "RRID:SCR_005709" ;
     schema1:name "GeneMANIA" ;
     doap:repository <https://github.com/GeneMANIA/genemania> ;
     skos:altLabel "GeneMANIA",
@@ -10755,6 +10834,7 @@ kgr:genereviews a schema1:DataSource ;
         kgr:genereviews.titles,
         kgr:medgen.mgconso,
         kgr:medgen.mgdef ;
+    schema1:identifier "RRID:SCR_006560" ;
     schema1:name "GeneReviews" ;
     skos:altLabel "GR",
         "GeneReviews®" ;
@@ -10868,6 +10948,7 @@ kgr:genomickb a schema1:KnowledgeGraph ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genomickb.graph,
         kgr:genomickb.site ;
+    schema1:identifier "RRID:SCR_026591" ;
     schema1:name "GenomicKB" ;
     skos:inScheme "genomics" ;
     adms:status "Active" ;
@@ -11044,6 +11125,7 @@ kgr:glida a schema1:DataSource ;
         kgr:stitch.api,
         kgr:stitch.downloads,
         kgr:stitch.portal ;
+    schema1:identifier "RRID:SCR_007690" ;
     schema1:name "GLIDA" ;
     skos:altLabel "GPCR-LIgand DAtabase",
         "GPCR-Ligand Database" ;
@@ -11249,6 +11331,7 @@ kgr:glygen a schema1:DataSource ;
         kgr:prokn.glygen.protein.has_isoform.protein.edges,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf ;
+    schema1:identifier "RRID:SCR_023438" ;
     schema1:name "GlyGen" ;
     doap:repository <https://github.com/glygener/glygen-backend-api> ;
     skos:inScheme "chemistry and biochemistry",
@@ -11377,6 +11460,7 @@ kgr:gnomad a schema1:DataSource ;
         kgr:pavs-kg.portal,
         kgr:pavs-kg.sparql,
         kgr:sniff.federation-nodes ;
+    schema1:identifier "RRID:SCR_014964" ;
     schema1:name "Genome Aggregation Database (gnomAD)" ;
     skos:altLabel "gnomAD" ;
     skos:inScheme "biomedical",
@@ -11403,6 +11487,7 @@ kgr:gnps a schema1:DataSource ;
         kgr:omicsdi.api,
         kgr:omicsdi.portal,
         kgr:redu.dashboard ;
+    schema1:identifier "RRID:SCR_019012" ;
     schema1:name "Global Natural Products Social Molecular Networking" ;
     doap:repository <https://github.com/CCMS-UCSD/GNPSDocumentation> ;
     skos:altLabel "GNPS",
@@ -11640,7 +11725,8 @@ kgr:go a schema1:Ontology ;
         kgr:yeastract.scerevisiae,
         kgr:zp.obo,
         kgr:zp.owl ;
-    schema1:identifier "go" ;
+    schema1:identifier "RRID:SCR_002811",
+        "go" ;
     schema1:name "Gene Ontology" ;
     doap:repository <https://github.com/geneontology/go-ontology> ;
     skos:altLabel "GO" ;
@@ -11665,7 +11751,8 @@ kgr:go-cam a schema1:DataModel ;
         kgr:go-cam.noctua,
         kgr:translator.go_cam.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "go-cam" ;
+    schema1:identifier "RRID:SCR_002811",
+        "go-cam" ;
     schema1:name "Gene Ontology Causal Activity Modeling (GO-CAM)" ;
     doap:repository <https://github.com/geneontology/noctua> ;
     skos:inScheme "genomics",
@@ -11705,7 +11792,8 @@ kgr:goa a schema1:DataSource ;
         kgr:sri-reference-kg.graph,
         kgr:translator.goa.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "goa" ;
+    schema1:identifier "RRID:SCR_007691",
+        "goa" ;
     schema1:name "GOA" ;
     skos:inScheme "genomics",
         "proteomics" ;
@@ -11849,6 +11937,7 @@ kgr:gpcrdb a schema1:DataSource ;
         kgr:gpcrdb.data,
         kgr:gpcrdb.docs,
         kgr:gpcrdb.portal ;
+    schema1:identifier "RRID:SCR_007419" ;
     schema1:name "GPCRdb" ;
     doap:repository <https://github.com/protwis/protwis> ;
     skos:altLabel "GPCR database",
@@ -11874,6 +11963,7 @@ kgr:gpmdb a schema1:DataSource ;
         kgr:gpmdb.xtandem,
         kgr:omicsdi.api,
         kgr:omicsdi.portal ;
+    schema1:identifier "RRID:SCR_006617" ;
     schema1:name "Global Proteome Machine Database" ;
     skos:altLabel "GPM",
         "GPMDB",
@@ -11932,6 +12022,7 @@ kgr:gro a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "gro" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:identifier "RRID:SCR_007061" ;
     schema1:name "Cereal Plant Gross Anatomy" ;
     skos:inScheme "anatomy and development",
         "organisms",
@@ -12043,7 +12134,8 @@ kgr:gtex a schema1:DataSource ;
         kgr:tcrd.documentation,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
-    schema1:identifier "gtex" ;
+    schema1:identifier "RRID:SCR_001618",
+        "gtex" ;
     schema1:name "GTEx" ;
     doap:repository <https://github.com/broadinstitute/gtex-pipeline> ;
     skos:inScheme "anatomy and development",
@@ -12116,6 +12208,7 @@ kgr:gtr a schema1:DataSource ;
         kgr:gtr.test_condition_gene,
         kgr:gtr.test_version,
         kgr:gtr.xml ;
+    schema1:identifier "RRID:SCR_005565" ;
     schema1:name "Genetic Testing Registry" ;
     skos:altLabel "GTR",
         "NCBI Genetic Testing Registry",
@@ -12315,7 +12408,8 @@ kgr:gwascatalog a schema1:DataSource ;
         kgr:rdf-portal.sparql.ebi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph ;
-    schema1:identifier "gwas-catalog" ;
+    schema1:identifier "RRID:SCR_012745",
+        "gwas-catalog" ;
     schema1:name "GWAS Catalog" ;
     skos:inScheme "biomedical",
         "genome-wide association studies",
@@ -12330,6 +12424,7 @@ kgr:habronattus a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "habronattus" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:identifier "RRID:SCR_010334" ;
     schema1:name "Habronattus courtship" ;
     skos:inScheme "organisms" ;
     adms:status "Inactive" ;
@@ -12400,6 +12495,7 @@ kgr:hao a schema1:Ontology ;
         kgr:hao.kg-bioportal,
         kgr:hao.obo,
         kgr:hao.owl ;
+    schema1:identifier "RRID:SCR_003340" ;
     schema1:name "Hymenoptera Anatomy Ontology" ;
     doap:repository <https://github.com/hymao/hao> ;
     skos:inScheme "anatomy and development",
@@ -12608,7 +12704,8 @@ kgr:hgnc a schema1:DataSource ;
         kgr:sugi-atlas.portal,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
-    schema1:identifier "hgnc" ;
+    schema1:identifier "RRID:SCR_002827",
+        "hgnc" ;
     schema1:name "HGNC" ;
     doap:repository <https://github.com/HGNC> ;
     skos:inScheme "genomics" ;
@@ -12652,6 +12749,7 @@ kgr:hippie a schema1:DataSource ;
         kgr:pharmebinet.neo4j,
         kgr:pharmebinet.neo4j.dump,
         kgr:pharmebinet.tsv ;
+    schema1:identifier "RRID:SCR_014651" ;
     schema1:name "HIPPIE" ;
     skos:altLabel "HIPPIE",
         "Human Integrated Protein-Protein Interaction rEference" ;
@@ -12834,7 +12932,8 @@ kgr:homologene a schema1:DataSource ;
         kgr:homologene.xml,
         kgr:mygene.api,
         kgr:rdf-portal.sparql.primary ;
-    schema1:identifier "homologene" ;
+    schema1:identifier "RRID:SCR_002924",
+        "homologene" ;
     schema1:name "HomoloGene" ;
     skos:inScheme "genomics",
         "molecular evolution" ;
@@ -12980,7 +13079,8 @@ kgr:hp a schema1:Ontology ;
         kgr:unibiomap.phenotype_desc,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "hpo" ;
+    schema1:identifier "RRID:SCR_006016",
+        "hpo" ;
     schema1:name "Human Phenotype Ontology (HPO)" ;
     doap:repository <https://github.com/obophenotype/human-phenotype-ontology> ;
     skos:inScheme "biomedical",
@@ -13052,6 +13152,7 @@ kgr:hpap a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:hpap.pancdb,
         kgr:pankgraph.graph ;
+    schema1:identifier "RRID:SCR_016202" ;
     schema1:name "Human Pancreas Analysis Program (HPAP)" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -13131,6 +13232,7 @@ kgr:hprd a schema1:Aggregator ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
+    schema1:identifier "RRID:SCR_007027" ;
     schema1:name "HPRD" ;
     skos:inScheme "biomedical",
         "post-translational modification",
@@ -13358,6 +13460,7 @@ kgr:httk a schema1:DataSource ;
         kgr:comptox-dashboard.portal,
         kgr:httk.package,
         kgr:httk.repository ;
+    schema1:identifier "RRID:SCR_024702" ;
     schema1:name "httk (High-Throughput Toxicokinetics)" ;
     doap:repository <https://github.com/USEPA/CompTox-ExpoCast-httk> ;
     skos:inScheme "chemistry and biochemistry",
@@ -13405,6 +13508,7 @@ kgr:hubmap a schema1:Aggregator ;
         kgr:prokn.hmaz.anatomy.nodes,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_016922" ;
     schema1:name "HuBMAP" ;
     doap:repository <https://github.com/hubmapconsortium> ;
     skos:inScheme "anatomy and development",
@@ -13456,6 +13560,7 @@ kgr:humancyc a schema1:DataSource ;
         kgr:pathwaycommons.gmt,
         kgr:pathwaycommons.sif,
         kgr:pathwaycommons.txt ;
+    schema1:identifier "RRID:SCR_007050" ;
     schema1:name "HumanCyc" ;
     skos:altLabel "HumanCyc" ;
     skos:inScheme "chemistry and biochemistry",
@@ -13632,6 +13737,7 @@ kgr:iao a schema1:Ontology ;
         kgr:psdo.owl,
         kgr:xpo.obo,
         kgr:xpo.owl ;
+    schema1:identifier "RRID:SCR_000477" ;
     schema1:name "Information Artifact Ontology" ;
     doap:repository <https://github.com/information-artifact-ontology/IAO> ;
     skos:inScheme "biomedical",
@@ -13948,6 +14054,7 @@ kgr:identifiers-org a schema1:Aggregator ;
         kgr:identifiers-org.resolver,
         kgr:identifiers-org.resolver-api,
         kgr:identifiers-org.sparql ;
+    schema1:identifier "RRID:SCR_003735" ;
     schema1:name "Identifiers.org" ;
     doap:repository <https://github.com/identifiers-org> ;
     skos:altLabel "Identifiers.org (MIRIAM Registry)",
@@ -14018,6 +14125,7 @@ kgr:idomal a schema1:Ontology ;
         kgr:idomal.owl,
         kgr:scdo.obo,
         kgr:scdo.owl ;
+    schema1:identifier "RRID:SCR_003369" ;
     schema1:name "Malaria Ontology" ;
     doap:repository <https://github.com/VEuPathDB-ontology/IDOMAL> ;
     skos:inScheme "biomedical",
@@ -14107,6 +14215,7 @@ kgr:iidp a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:iidp.portal,
         kgr:pankgraph.graph ;
+    schema1:identifier "RRID:SCR_014387" ;
     schema1:name "Integrated Islet Distribution Program (IIDP)" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -14175,6 +14284,7 @@ kgr:imgt a schema1:DataSource ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:imgt.genedb,
         kgr:imgt.site ;
+    schema1:identifier "RRID:SCR_012780" ;
     schema1:name "IMGT" ;
     skos:inScheme "genomics",
         "immunology",
@@ -14284,6 +14394,7 @@ kgr:impc a schema1:DataSource ;
         kgr:prokn.impc.imppublication.impc_alleles.impcallele.edges,
         kgr:prokn.pir.impchumangene.orthologous_to.protein.edges,
         kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges ;
+    schema1:identifier "RRID:SCR_006158" ;
     schema1:name "International Mouse Phenotyping Consortium" ;
     skos:inScheme "biomedical",
         "genomics",
@@ -14375,7 +14486,8 @@ kgr:innatedb a schema1:DataSource ;
         kgr:pathwaycommons.sif,
         kgr:pathwaycommons.txt,
         kgr:service-kp.trapi ;
-    schema1:identifier "innatedb" ;
+    schema1:identifier "RRID:SCR_006714",
+        "innatedb" ;
     schema1:name "InnateDB" ;
     skos:altLabel "InnateDB" ;
     skos:inScheme "host-pathogen interactions",
@@ -14418,6 +14530,7 @@ kgr:inoh a schema1:DataSource ;
         kgr:pathwaycommons.gmt,
         kgr:pathwaycommons.sif,
         kgr:pathwaycommons.txt ;
+    schema1:identifier "RRID:SCR_002084" ;
     schema1:name "INOH" ;
     skos:altLabel "Integrating Network Objects with Hierarchies" ;
     skos:inScheme "pathways",
@@ -14537,7 +14650,8 @@ kgr:intact a schema1:Aggregator ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "intact" ;
+    schema1:identifier "RRID:SCR_006944",
+        "intact" ;
     schema1:name "IntAct" ;
     doap:repository <https://github.com/intact-portal> ;
     skos:altLabel "IMEx IntAct",
@@ -14566,6 +14680,7 @@ kgr:intermine a schema1:DataSource ;
         kgr:mousemine.querybuilder,
         kgr:mousemine.templates,
         kgr:mousemine.web ;
+    schema1:identifier "RRID:SCR_001772" ;
     schema1:name "InterMine" ;
     doap:repository <https://github.com/intermine/intermine> ;
     skos:inScheme "genomics",
@@ -14623,7 +14738,8 @@ kgr:interpro a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
-    schema1:identifier "interpro" ;
+    schema1:identifier "RRID:SCR_006695",
+        "interpro" ;
     schema1:name "InterPro" ;
     doap:repository <https://www.ebi.ac.uk/interpro/> ;
     skos:inScheme "drug discovery",
@@ -14709,6 +14825,7 @@ kgr:iprox a schema1:DataSource ;
         kgr:proteomexchange.dataset-list,
         kgr:proteomexchange.dataset-records,
         kgr:proteomexchange.proteomecentral ;
+    schema1:identifier "RRID:SCR_026109" ;
     schema1:name "iProX" ;
     skos:altLabel "integrated Proteome resources" ;
     skos:inScheme "proteomics" ;
@@ -14741,7 +14858,8 @@ kgr:iptmnet a schema1:DataSource ;
         kgr:pharmebinet.tsv,
         kgr:prokn.iptmnet.protein.catalyzes.ptmsite.edges,
         kgr:prokn.iptmnet.protein.has_site.site.edges ;
-    schema1:identifier "iptmnet" ;
+    schema1:identifier "RRID:SCR_014416",
+        "iptmnet" ;
     schema1:name "iPTMnet" ;
     skos:inScheme "post-translational modification",
         "proteomics" ;
@@ -14791,6 +14909,7 @@ kgr:isrctn a schema1:DataSource ;
         kgr:who-ictrp.portal,
         kgr:who-ictrp.search-export,
         kgr:who-ictrp.web-service ;
+    schema1:identifier "RRID:SCR_006087" ;
     schema1:name "ISRCTN Registry" ;
     skos:altLabel "ISRCTN",
         "International Standard Randomised Controlled Trial Number",
@@ -14846,6 +14965,7 @@ kgr:iucn-red-list a schema1:DataSource ;
     schema1:hasPart kgr:iucn-red-list.api,
         kgr:iucn-red-list.portal,
         kgr:wildlifekn.graph ;
+    schema1:identifier "RRID:SCR_012758" ;
     schema1:name "IUCN Red List of Threatened Species" ;
     skos:inScheme "biodiversity",
         "environment",
@@ -14958,6 +15078,7 @@ kgr:jws-online a schema1:DataSource ;
         kgr:jws-online.models,
         kgr:jws-online.sbml,
         kgr:jws-online.simulations ;
+    schema1:identifier "RRID:SCR_008127" ;
     schema1:name "JWS Online" ;
     skos:altLabel "JWS",
         "Java Web Simulation" ;
@@ -15311,7 +15432,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-20T16:15:45+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-20T23:03:21+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -15711,7 +15832,8 @@ kgr:lincs a schema1:DataSource ;
         kgr:sigcom-lincs.small-molecules,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
-    schema1:identifier "lincs" ;
+    schema1:identifier "RRID:SCR_003937",
+        "lincs" ;
     schema1:name "LINCS" ;
     skos:inScheme "biomedical",
         "drug discovery",
@@ -15817,6 +15939,7 @@ kgr:lipidmaps a schema1:DataSource ;
         kgr:lipidmaps.lmsd,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf ;
+    schema1:identifier "RRID:SCR_006579" ;
     schema1:name "LIPID MAPS" ;
     doap:repository <https://www.lipidmaps.org/databases/lmsd> ;
     skos:inScheme "chemistry and biochemistry",
@@ -15983,6 +16106,7 @@ kgr:lncrnadb a schema1:DataSource ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_015491" ;
     schema1:name "lncRNAdb" ;
     skos:inScheme "genomics",
         "non-coding RNA" ;
@@ -16225,6 +16349,7 @@ kgr:maizegdb a schema1:DataSource ;
         kgr:maizegdb.downloads,
         kgr:maizegdb.gene_model_gff,
         kgr:maizegdb.maizemine ;
+    schema1:identifier "RRID:SCR_006600" ;
     schema1:name "MaizeGDB" ;
     skos:inScheme "agriculture",
         "genomics",
@@ -16252,6 +16377,7 @@ kgr:malacards a schema1:Aggregator ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_005817" ;
     schema1:name "MalaCards" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -16330,6 +16456,7 @@ kgr:markerdb a schema1:DataSource ;
         kgr:pharmebinet.neo4j,
         kgr:pharmebinet.neo4j.dump,
         kgr:pharmebinet.tsv ;
+    schema1:identifier "RRID:SCR_026817" ;
     schema1:name "MarkerDB" ;
     skos:inScheme "biomedical",
         "clinical" ;
@@ -16354,6 +16481,7 @@ kgr:massive a schema1:DataSource ;
         kgr:proteomexchange.dataset-records,
         kgr:proteomexchange.proteomecentral,
         kgr:redu.dashboard ;
+    schema1:identifier "RRID:SCR_013665" ;
     schema1:name "MassIVE" ;
     skos:altLabel "Mass Spectrometry Interactive Virtual Environment",
         "MassIVE" ;
@@ -16659,7 +16787,8 @@ kgr:medgen a schema1:Aggregator ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "medgen" ;
+    schema1:identifier "RRID:SCR_000111",
+        "medgen" ;
     schema1:name "MedGen" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -16884,7 +17013,8 @@ kgr:mesh a schema1:Ontology ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "mesh" ;
+    schema1:identifier "RRID:SCR_004750",
+        "mesh" ;
     schema1:name "Medical Subject Headings (MeSH)" ;
     doap:repository <https://nlmpubs.nlm.nih.gov/projects/mesh/> ;
     skos:inScheme "biomedical",
@@ -16934,6 +17064,7 @@ kgr:metabolights a schema1:DataSource ;
         kgr:metabolights.study-metabolites,
         kgr:omicsdi.api,
         kgr:omicsdi.portal ;
+    schema1:identifier "RRID:SCR_014663" ;
     schema1:name "MetaboLights" ;
     skos:altLabel "MTBLS" ;
     skos:inScheme "biological systems",
@@ -16962,7 +17093,8 @@ kgr:metacyc a schema1:DataSource ;
         kgr:skm.ckn.v2.graph,
         kgr:spoke-okn.graph,
         kgr:spoke.graph ;
-    schema1:identifier "metacyc" ;
+    schema1:identifier "RRID:SCR_007778",
+        "metacyc" ;
     schema1:name "MetaCyc" ;
     skos:inScheme "metabolism",
         "pathways" ;
@@ -16985,6 +17117,7 @@ kgr:metanetx a schema1:DataSource ;
         kgr:metanetx.rdf,
         kgr:metanetx.site,
         kgr:metanetx.sparql ;
+    schema1:identifier "RRID:SCR_015882" ;
     schema1:name "MetaNetX" ;
     skos:inScheme "chemistry and biochemistry",
         "metabolism",
@@ -17102,6 +17235,7 @@ kgr:mfoem a schema1:Ontology ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mfoem.kg-bioportal,
         kgr:mfoem.owl ;
+    schema1:identifier "RRID:SCR_003272" ;
     schema1:name "Emotion Ontology" ;
     doap:repository <https://github.com/jannahastings/emotion-ontology> ;
     skos:inScheme "biomedical",
@@ -17238,6 +17372,7 @@ kgr:mgnify a schema1:Aggregator ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_016429" ;
     schema1:name "MGnify" ;
     skos:inScheme "clinical",
         "environment",
@@ -17287,6 +17422,7 @@ kgr:miapa a schema1:Ontology ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:miapa.kg-bioportal,
         kgr:miapa.owl ;
+    schema1:identifier "RRID:SCR_003777" ;
     schema1:name "MIAPA Ontology" ;
     doap:repository <https://github.com/evoinfo/miapa> ;
     skos:inScheme "genomics",
@@ -17415,7 +17551,8 @@ kgr:mint a schema1:Aggregator ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
-    schema1:identifier "mint" ;
+    schema1:identifier "RRID:SCR_001523",
+        "mint" ;
     schema1:name "Mint" ;
     skos:altLabel "MINT",
         "Molecular INTeraction Database" ;
@@ -17483,7 +17620,8 @@ kgr:mirbase a schema1:Aggregator ;
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db,
         kgr:spoke.graph ;
-    schema1:identifier "mirbase" ;
+    schema1:identifier "RRID:SCR_003152",
+        "mirbase" ;
     schema1:name "miRBase" ;
     skos:inScheme "genomics",
         "non-coding RNA" ;
@@ -17503,6 +17641,7 @@ kgr:mirdb a schema1:DataSource ;
         kgr:mirdb.predicted-targets,
         kgr:mirdb.search,
         kgr:spoke.graph ;
+    schema1:identifier "RRID:SCR_010848" ;
     schema1:name "miRDB" ;
     skos:inScheme "genomics",
         "non-coding RNA" ;
@@ -17562,6 +17701,7 @@ kgr:mirnao a schema1:Ontology ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mirnao.kg-bioportal,
         kgr:mirnao.owl ;
+    schema1:identifier "RRID:SCR_010360" ;
     schema1:name "microRNA Ontology" ;
     skos:inScheme "chemistry and biochemistry",
         "genomics",
@@ -17732,6 +17872,7 @@ kgr:mod a schema1:Ontology ;
         kgr:clinicalkg.graph,
         kgr:mod.obo,
         kgr:mod.owl ;
+    schema1:identifier "RRID:SCR_004198" ;
     schema1:name "Protein modification" ;
     doap:repository <https://github.com/HUPO-PSI/psi-mod-CV> ;
     skos:inScheme "chemistry and biochemistry",
@@ -17778,6 +17919,7 @@ kgr:modomics a schema1:DataSource ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_007804" ;
     schema1:name "MODOMICS" ;
     skos:inScheme "chemistry and biochemistry",
         "genomics",
@@ -17981,6 +18123,7 @@ kgr:motrpac a schema1:DataSource ;
         kgr:motrpac.video-tutorials,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_017611" ;
     schema1:name "Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub" ;
     doap:repository <https://github.com/MoTrPAC> ;
     skos:inScheme "biomedical",
@@ -18053,7 +18196,8 @@ kgr:mp a schema1:Ontology ;
         kgr:tagger.full-dictionary,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
-    schema1:identifier "mp" ;
+    schema1:identifier "RRID:SCR_004855",
+        "mp" ;
     schema1:name "Mammalian Phenotype Ontology" ;
     doap:repository <https://github.com/mgijax/mammalian-phenotype-ontology> ;
     skos:inScheme "phenotype" ;
@@ -18242,7 +18386,8 @@ kgr:msigdb a schema1:DataSource ;
         kgr:prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
-    schema1:identifier "msigdb" ;
+    schema1:identifier "RRID:SCR_016863",
+        "msigdb" ;
     schema1:name "Molecular Signatures Database" ;
     skos:altLabel "MSigDB" ;
     skos:inScheme "genomics",
@@ -18346,6 +18491,7 @@ kgr:mw a schema1:DataSource ;
         kgr:omicsdi.portal,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_013794" ;
     schema1:name "Metabolomics Workbench" ;
     skos:altLabel "MW",
         "NMDR",
@@ -18451,7 +18597,8 @@ kgr:mygene a schema1:Aggregator ;
         kgr:mygene.metadata,
         kgr:mygene.python,
         kgr:service-kp.trapi ;
-    schema1:identifier "mygene-info" ;
+    schema1:identifier "RRID:SCR_018660",
+        "mygene-info" ;
     schema1:name "MyGene.info" ;
     doap:repository <https://github.com/biothings/mygene.info> ;
     skos:altLabel "MyGene",
@@ -18523,6 +18670,7 @@ kgr:naaccr a schema1:DataSource ;
         kgr:cancer-registry-kg.ltr,
         kgr:naaccr.data-dictionary,
         kgr:naaccr.standards ;
+    schema1:identifier "RRID:SCR_026199" ;
     schema1:name "North American Association of Central Cancer Registries" ;
     skos:inScheme "biomedical",
         "cancer",
@@ -19088,7 +19236,8 @@ kgr:ndcd a schema1:DataSource ;
         kgr:ndcd.text,
         kgr:openfda.apis,
         kgr:openfda.downloads ;
-    schema1:identifier "ndcd" ;
+    schema1:identifier "RRID:SCR_013721",
+        "ndcd" ;
     schema1:name "National Drug Code Directory" ;
     skos:altLabel "NDC",
         "NDC Directory",
@@ -19180,6 +19329,7 @@ kgr:netpath a schema1:DataSource ;
         kgr:pathwaycommons.gmt,
         kgr:pathwaycommons.sif,
         kgr:pathwaycommons.txt ;
+    schema1:identifier "RRID:SCR_003567" ;
     schema1:name "NetPath" ;
     skos:altLabel "NetPath" ;
     skos:inScheme "immunology",
@@ -19204,6 +19354,7 @@ kgr:nextprot a schema1:DataSource ;
         kgr:nextprot.downloads,
         kgr:nextprot.portal,
         kgr:nextprot.sparql ;
+    schema1:identifier "RRID:SCR_008911" ;
     schema1:name "neXtProt" ;
     skos:inScheme "genomics",
         "proteomics" ;
@@ -19427,6 +19578,7 @@ kgr:nihreporter a schema1:DataSource ;
         kgr:stitch.api,
         kgr:stitch.downloads,
         kgr:stitch.portal ;
+    schema1:identifier "RRID:SCR_006874" ;
     schema1:name "NIH Reporter" ;
     skos:inScheme "biomedical",
         "clinical" ;
@@ -19792,6 +19944,7 @@ kgr:nsduh a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nsduh.samhsa-page,
         kgr:ruralkg.graph ;
+    schema1:identifier "RRID:SCR_007031" ;
     schema1:name "National Survey on Drug Use and Health" ;
     skos:inScheme "mental disorders",
         "neuroscience",
@@ -20476,6 +20629,7 @@ kgr:obofoundry a schema1:Aggregator ;
         kgr:obofoundry.repository,
         kgr:ols.json,
         kgr:ols.json-linked ;
+    schema1:identifier "RRID:SCR_007083" ;
     schema1:name "OBO Foundry" ;
     doap:repository <https://github.com/OBOFoundry/OBOFoundry.github.io> ;
     skos:altLabel "OBO",
@@ -20573,6 +20727,7 @@ kgr:ogi a schema1:Ontology ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ogi.kg-bioportal,
         kgr:ogi.owl ;
+    schema1:identifier "RRID:SCR_003423" ;
     schema1:name "Ontology for genetic interval" ;
     skos:inScheme "chemistry and biochemistry",
         "genomics" ;
@@ -20766,7 +20921,8 @@ kgr:ols a schema1:Aggregator ;
         kgr:ols.mcp,
         kgr:ols.portal,
         kgr:service-kp.trapi ;
-    schema1:identifier "ols" ;
+    schema1:identifier "RRID:SCR_006596",
+        "ols" ;
     schema1:name "Ontology Lookup Service" ;
     doap:repository <https://github.com/EBISPOT/ols4> ;
     skos:altLabel "OLS",
@@ -20808,6 +20964,7 @@ kgr:oma a schema1:DataSource ;
         kgr:oma.site,
         kgr:oma.species.txt,
         kgr:rdf-portal.sparql.sib ;
+    schema1:identifier "RRID:SCR_011978" ;
     schema1:name "OMA" ;
     doap:repository <https://github.com/DessimozLab/pyomabrowser> ;
     skos:inScheme "genomics",
@@ -20871,7 +21028,8 @@ kgr:omicsdi a schema1:Aggregator ;
     schema1:hasPart kgr:nde.graph,
         kgr:omicsdi.api,
         kgr:omicsdi.portal ;
-    schema1:identifier "omicsdi" ;
+    schema1:identifier "RRID:SCR_010494",
+        "omicsdi" ;
     schema1:name "OmicsDI" ;
     skos:altLabel "Omics Discovery Index",
         "OmicsDI" ;
@@ -20981,7 +21139,8 @@ kgr:omim a schema1:DataSource ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "omim" ;
+    schema1:identifier "RRID:SCR_006437",
+        "omim" ;
     schema1:name "OMIM" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -21046,6 +21205,7 @@ kgr:omnipath a schema1:Aggregator ;
         kgr:omnipath.python_client,
         kgr:omnipath.r_package,
         kgr:omnipath.webservice ;
+    schema1:identifier "RRID:SCR_028649" ;
     schema1:name "OmniPath" ;
     doap:repository <https://github.com/saezlab/pypath> ;
     skos:inScheme "pathways",
@@ -21167,7 +21327,8 @@ kgr:oncokb a schema1:DataSource ;
         kgr:oncokb.api,
         kgr:oncokb.demo,
         kgr:oncokb.web_interface ;
-    schema1:identifier "oncokb" ;
+    schema1:identifier "RRID:SCR_014782",
+        "oncokb" ;
     schema1:name "OncoKB" ;
     doap:repository <https://github.com/oncokb> ;
     skos:inScheme "biomedical",
@@ -21411,6 +21572,7 @@ kgr:openalex a schema1:DataSource ;
         kgr:openalex.api,
         kgr:openalex.snapshot,
         kgr:semopenalex.graph ;
+    schema1:identifier "RRID:SCR_022787" ;
     schema1:name "OpenAlex" ;
     skos:inScheme "general",
         "information technology",
@@ -21644,6 +21806,7 @@ kgr:opl a schema1:Ontology ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:opl.kg-bioportal,
         kgr:opl.owl ;
+    schema1:identifier "RRID:SCR_003427" ;
     schema1:name "Ontology for Parasite LifeCycle" ;
     doap:repository <https://github.com/OPL-ontology/OPL> ;
     skos:inScheme "organisms" ;
@@ -21683,6 +21846,7 @@ kgr:orcid a schema1:DataSource ;
         kgr:orcid.api,
         kgr:orcid.docs,
         kgr:orcid.portal ;
+    schema1:identifier "RRID:SCR_008700" ;
     schema1:name "ORCID" ;
     doap:repository <https://github.com/ORCID> ;
     skos:inScheme "literature",
@@ -21896,7 +22060,8 @@ kgr:orphanet a schema1:DataSource ;
         kgr:raras.encyclopedia,
         kgr:raras.portal,
         kgr:sri-reference-kg.graph ;
-    schema1:identifier "orphanet" ;
+    schema1:identifier "RRID:SCR_006628",
+        "orphanet" ;
     schema1:name "Orphanet" ;
     doap:repository <https://github.com/Orphanet> ;
     skos:inScheme "biomedical",
@@ -21977,6 +22142,7 @@ kgr:ovae a schema1:Ontology ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ovae.kg-bioportal,
         kgr:ovae.owl ;
+    schema1:identifier "RRID:SCR_003442" ;
     schema1:name "Ontology of Vaccine Adverse Events" ;
     doap:repository <https://github.com/OVAE-Ontology/ovae> ;
     skos:inScheme "biomedical",
@@ -22080,6 +22246,7 @@ kgr:pankbase a schema1:DataSource ;
         kgr:pankbase.graph.api,
         kgr:pankbase.graph.site,
         kgr:pankgraph.graph ;
+    schema1:identifier "RRID:SCR_026593" ;
     schema1:name "PanKBase" ;
     doap:repository <https://github.com/PanKbase> ;
     skos:inScheme "biomedical",
@@ -22126,6 +22293,7 @@ kgr:panorama-public a schema1:DataSource ;
         kgr:proteomexchange.dataset-list,
         kgr:proteomexchange.dataset-records,
         kgr:proteomexchange.proteomecentral ;
+    schema1:identifier "RRID:SCR_017136" ;
     schema1:name "Panorama Public" ;
     doap:repository <https://github.com/LabKey/MacCossLabModules> ;
     skos:altLabel "PanoramaWeb Public" ;
@@ -22172,7 +22340,8 @@ kgr:panther a schema1:Resource ;
         kgr:sri-reference-kg.graph,
         kgr:translator.panther.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "panther" ;
+    schema1:identifier "RRID:SCR_004869",
+        "panther" ;
     schema1:name "PANTHER" ;
     doap:repository <https://data.pantherdb.org/ftp/> ;
     skos:inScheme "genomics",
@@ -22471,6 +22640,7 @@ kgr:paxdb a schema1:DataSource ;
         kgr:omicsdi.portal,
         kgr:paxdb.downloads,
         kgr:paxdb.site ;
+    schema1:identifier "RRID:SCR_018910" ;
     schema1:name "PaxDb" ;
     skos:inScheme "proteomics" ;
     adms:status "Active" ;
@@ -22593,6 +22763,7 @@ kgr:pdb a schema1:DataSource ;
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full,
         kgr:togows.rest-api ;
+    schema1:identifier "RRID:SCR_012820" ;
     schema1:name "Protein Data Bank (PDB)" ;
     skos:altLabel "PDB",
         "Protein Data Bank" ;
@@ -22752,6 +22923,7 @@ kgr:peptideatlas a schema1:DataSource ;
         kgr:proteomexchange.dataset-list,
         kgr:proteomexchange.dataset-records,
         kgr:proteomexchange.proteomecentral ;
+    schema1:identifier "RRID:SCR_006783" ;
     schema1:name "PeptideAtlas" ;
     skos:altLabel "PA",
         "PASSEL",
@@ -23170,7 +23342,8 @@ kgr:pharos a schema1:Aggregator ;
         kgr:pharos.graphql_server_source,
         kgr:pharos.portal,
         kgr:pharos.tcrd.download ;
-    schema1:identifier "pharos" ;
+    schema1:identifier "RRID:SCR_016258",
+        "pharos" ;
     schema1:name "Pharos" ;
     doap:repository <https://github.com/ncats/pharos_frontend> ;
     skos:altLabel "IDG Pharos",
@@ -23353,6 +23526,7 @@ kgr:phosphat a schema1:DataSource ;
         kgr:phosphat.portal,
         kgr:phosphat.predictor,
         kgr:phosphat.protein-motif ;
+    schema1:identifier "RRID:SCR_003332" ;
     schema1:name "PhosPhAt" ;
     skos:altLabel "Arabidopsis Protein Phosphorylation Site Database" ;
     skos:inScheme "agriculture",
@@ -23377,6 +23551,7 @@ kgr:phosphoelm a schema1:DataSource ;
         kgr:phosphoelm.phosphoblast,
         kgr:phosphoelm.portal,
         kgr:phosphoelm.webservice ;
+    schema1:identifier "RRID:SCR_001109" ;
     schema1:name "Phospho.ELM" ;
     skos:altLabel "PhosphoELM" ;
     skos:inScheme "post-translational modification",
@@ -23433,7 +23608,8 @@ kgr:phosphositeplus a schema1:Aggregator ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "psite-plus" ;
+    schema1:identifier "RRID:SCR_001837",
+        "psite-plus" ;
     schema1:name "PhosphoSitePlus" ;
     skos:inScheme "biomedical",
         "post-translational modification",
@@ -23472,6 +23648,7 @@ kgr:physiome-model-repository a schema1:DataSource ;
         kgr:physiome-model-repository.exposures,
         kgr:physiome-model-repository.portal,
         kgr:physiome-model-repository.workspaces ;
+    schema1:identifier "RRID:SCR_017374" ;
     schema1:name "Physiome Model Repository" ;
     skos:altLabel "CellML Model Repository",
         "PMR",
@@ -23806,6 +23983,7 @@ kgr:pmda a schema1:DataSource ;
         kgr:pmda.english-search-index,
         kgr:pmda.iyaku-search,
         kgr:pmda.portal ;
+    schema1:identifier "RRID:SCR_000244" ;
     schema1:name "Pharmaceuticals and Medical Devices Agency" ;
     skos:altLabel "PMDA" ;
     skos:inScheme "biomedical",
@@ -23906,7 +24084,8 @@ kgr:pombase a schema1:Resource ;
         kgr:rnacentral.public-db,
         kgr:sri-reference-kg.graph,
         kgr:yeastract.community ;
-    schema1:identifier "pombase" ;
+    schema1:identifier "RRID:SCR_006586",
+        "pombase" ;
     schema1:name "PomBase" ;
     doap:repository <https://www.pombase.org/datasets> ;
     skos:inScheme "genomics",
@@ -23929,6 +24108,7 @@ kgr:poro a schema1:Ontology ;
         kgr:poro.kg-bioportal,
         kgr:poro.obo,
         kgr:poro.owl ;
+    schema1:identifier "RRID:SCR_000134" ;
     schema1:name "Porifera Ontology" ;
     doap:repository <https://github.com/obophenotype/porifera-ontology> ;
     skos:inScheme "anatomy and development" ;
@@ -23997,7 +24177,8 @@ kgr:pr a schema1:Ontology ;
         kgr:uberon.composite-vertebrate.owl,
         kgr:uberon.owl,
         kgr:uberon.uberon-basic.obo ;
-    schema1:identifier "pr" ;
+    schema1:identifier "RRID:SCR_004964",
+        "pr" ;
     schema1:name "PRotein Ontology (PRO)" ;
     doap:repository <https://github.com/PROconsortium/PRoteinOntology> ;
     skos:inScheme "chemistry and biochemistry",
@@ -24092,6 +24273,7 @@ kgr:pride a schema1:DataSource ;
         kgr:proteomexchange.dataset-list,
         kgr:proteomexchange.dataset-records,
         kgr:proteomexchange.proteomecentral ;
+    schema1:identifier "RRID:SCR_003411" ;
     schema1:name "PRIDE Archive" ;
     doap:repository <https://github.com/PRIDE-Archive> ;
     skos:altLabel "PRIDE",
@@ -24444,6 +24626,7 @@ kgr:prosite a schema1:DataSource ;
         kgr:prosite.downloads,
         kgr:prosite.scanprosite,
         kgr:prosite.site ;
+    schema1:identifier "RRID:SCR_003457" ;
     schema1:name "PROSITE" ;
     skos:inScheme "chemistry and biochemistry",
         "protein domains",
@@ -24524,6 +24707,7 @@ kgr:proteomexchange a schema1:Aggregator ;
         kgr:proteomexchange.proxi-api,
         kgr:proteomexchange.rss,
         kgr:proteomexchange.submission-docs ;
+    schema1:identifier "RRID:SCR_004055" ;
     schema1:name "ProteomeXchange" ;
     skos:altLabel "PX",
         "ProteomeCentral" ;
@@ -24543,6 +24727,7 @@ kgr:proteomicsdb a schema1:DataSource ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:proteomicsdb.api,
         kgr:proteomicsdb.site ;
+    schema1:identifier "RRID:SCR_015562" ;
     schema1:name "ProteomicsDB" ;
     skos:inScheme "proteomics" ;
     adms:status "Active" ;
@@ -24557,6 +24742,7 @@ kgr:proteopedia a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:proteopedia.site ;
+    schema1:identifier "RRID:SCR_004647" ;
     schema1:name "Proteopedia" ;
     skos:inScheme "chemistry and biochemistry",
         "protein structure",
@@ -24794,7 +24980,8 @@ kgr:pubchem a schema1:DataSource ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "pubchem" ;
+    schema1:identifier "RRID:SCR_004742",
+        "pubchem" ;
     schema1:name "PubChem" ;
     doap:repository <https://github.com/ncbi/datasets> ;
     skos:inScheme "biomedical",
@@ -24926,7 +25113,8 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:yeastract.ncyeastract,
         kgr:yeastract.pathoyeastract,
         kgr:yeastract.scerevisiae ;
-    schema1:identifier "pubmed" ;
+    schema1:identifier "RRID:SCR_004846",
+        "pubmed" ;
     schema1:name "PubMed and MEDLINE" ;
     doap:repository <https://www.ncbi.nlm.nih.gov/> ;
     skos:altLabel "MEDLARS",
@@ -25022,6 +25210,7 @@ kgr:pypi a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:pypi.website,
         kgr:securechainkg.graph ;
+    schema1:identifier "RRID:SCR_023145" ;
     schema1:name "Python Package Index (PyPI)" ;
     skos:inScheme "information technology",
         "software" ;
@@ -25081,6 +25270,7 @@ kgr:rapdb a schema1:DataSource ;
     schema1:hasPart kgr:eco-kg.graph,
         kgr:rapdb.downloads,
         kgr:rapdb.portal ;
+    schema1:identifier "RRID:SCR_015062" ;
     schema1:name "Rice Annotation Project Database" ;
     skos:inScheme "agriculture",
         "genomics",
@@ -25403,7 +25593,8 @@ kgr:reactome a schema1:DataSource ;
         kgr:unibiomap.pathway_desc,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "reactome" ;
+    schema1:identifier "RRID:SCR_023504",
+        "reactome" ;
     schema1:name "Reactome" ;
     doap:repository <https://github.com/reactome> ;
     skos:inScheme "biomedical",
@@ -25472,6 +25663,7 @@ kgr:redfly a schema1:DataSource ;
         kgr:tflink.interactions.worm,
         kgr:tflink.interactions.yeast,
         kgr:tflink.interactions.zebrafish ;
+    schema1:identifier "RRID:SCR_006790" ;
     schema1:name "REDfly" ;
     doap:repository <https://github.com/redflydb/redfly> ;
     skos:inScheme "gene regulation",
@@ -25494,6 +25686,7 @@ kgr:rediportal a schema1:DataSource ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_018490" ;
     schema1:name "REDIportal" ;
     doap:repository <https://github.com/BioinfoUNIBA/REDItools> ;
     skos:inScheme "genomics" ;
@@ -25577,6 +25770,7 @@ kgr:refseq a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full ;
+    schema1:identifier "RRID:SCR_022748" ;
     schema1:name "RefSeq" ;
     doap:repository <https://ftp.ncbi.nlm.nih.gov/refseq/> ;
     skos:inScheme "genomics" ;
@@ -25900,7 +26094,8 @@ kgr:rhea a schema1:DataSource ;
         kgr:rdf-portal.sparql.sib,
         kgr:service-kp.trapi,
         kgr:swisslipid.enzymes ;
-    schema1:identifier "rhea" ;
+    schema1:identifier "RRID:SCR_004713",
+        "rhea" ;
     schema1:name "Rhea" ;
     skos:inScheme "chemistry and biochemistry",
         "enzymes" ;
@@ -26039,7 +26234,8 @@ kgr:rnacentral a schema1:Aggregator ;
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
-    schema1:identifier "rnacentral" ;
+    schema1:identifier "RRID:SCR_023115",
+        "rnacentral" ;
     schema1:name "RNAcentral" ;
     skos:inScheme "genomics",
         "non-coding RNA" ;
@@ -26237,7 +26433,8 @@ kgr:robokop a schema1:KnowledgeGraph ;
     schema1:hasPart kgr:automat.robokopkg,
         kgr:automat.robokopplus,
         kgr:robokop.graph ;
-    schema1:identifier "robokop" ;
+    schema1:identifier "RRID:SCR_023437",
+        "robokop" ;
     schema1:name "ROBOKOP" ;
     doap:repository <https://github.com/NCATS-Gamma/robokop> ;
     skos:inScheme "biomedical" ;
@@ -26328,6 +26525,7 @@ kgr:rural-urban-continuum-codes a schema1:DataSource ;
     schema1:hasPart kgr:cancer-registry-kg.cdi,
         kgr:rural-urban-continuum-codes.ers-page,
         kgr:ruralkg.graph ;
+    schema1:identifier "RRID:SCR_027474" ;
     schema1:name "Rural-Urban Continuum Codes" ;
     skos:inScheme "agriculture",
         "public health",
@@ -26399,7 +26597,8 @@ kgr:rxnorm a schema1:DataSource ;
         kgr:rxnorm.rxmix,
         kgr:rxnorm.rxnav,
         kgr:rxnorm.rxnav_in_a_box ;
-    schema1:identifier "rxnorm" ;
+    schema1:identifier "RRID:SCR_006645",
+        "rxnorm" ;
     schema1:name "RxNorm" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -26418,6 +26617,7 @@ kgr:sao a schema1:Ontology ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:sao.kg-bioportal,
         kgr:sao.owl ;
+    schema1:identifier "RRID:SCR_003486" ;
     schema1:name "Subcellular anatomy ontology" ;
     skos:inScheme "anatomy and development",
         "biological systems",
@@ -26512,7 +26712,8 @@ kgr:scibite a schema1:Resource ;
     dcterms:identifier "scibite" ;
     dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:scibite.hgnc ;
-    schema1:identifier "scibite" ;
+    schema1:identifier "RRID:SCR_003952",
+        "scibite" ;
     schema1:name "SciBite" ;
     skos:inScheme "biological systems" ;
     adms:status "Active" ;
@@ -26546,6 +26747,7 @@ kgr:scop a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:scop.site ;
+    schema1:identifier "RRID:SCR_007039" ;
     schema1:name "SCOP" ;
     skos:inScheme "protein structure",
         "proteomics" ;
@@ -27009,7 +27211,8 @@ kgr:sider a schema1:DataSource ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "sider" ;
+    schema1:identifier "RRID:SCR_004321",
+        "sider" ;
     schema1:name "SIDER" ;
     skos:inScheme "biomedical",
         "drug discovery",
@@ -27067,6 +27270,7 @@ kgr:sigcom-lincs a schema1:Aggregator ;
         kgr:sigcom-lincs.small-molecules,
         kgr:sigcom-lincs.xpr-consensus,
         kgr:sigcom-lincs.xpr-gmt ;
+    schema1:identifier "RRID:SCR_022275" ;
     schema1:name "SigCom LINCS" ;
     doap:repository <https://github.com/MaayanLab/sigcom-lincs> ;
     skos:altLabel "Signature Commons LINCS" ;
@@ -27103,7 +27307,8 @@ kgr:signor a schema1:DataSource ;
         kgr:signor.web,
         kgr:translator.signor.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "signor" ;
+    schema1:identifier "RRID:SCR_018485",
+        "signor" ;
     schema1:name "SIGNOR" ;
     skos:inScheme "biomedical",
         "pathways",
@@ -27136,6 +27341,7 @@ kgr:silva a schema1:DataSource ;
         kgr:silva.search,
         kgr:silva.testprime,
         kgr:silva.testprobe ;
+    schema1:identifier "RRID:SCR_006423" ;
     schema1:name "SILVA" ;
     doap:repository <https://github.com/epruesse/SINA> ;
     skos:inScheme "genomics",
@@ -27380,7 +27586,8 @@ kgr:smpdb a schema1:DataSource ;
         kgr:unibiomap.pathway_desc,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "smpdb" ;
+    schema1:identifier "RRID:SCR_004844",
+        "smpdb" ;
     schema1:name "Small Molecule Pathway Database" ;
     skos:altLabel "SMPDB" ;
     skos:inScheme "chemistry and biochemistry",
@@ -27556,6 +27763,7 @@ kgr:snornadatabase a schema1:DataSource ;
         kgr:snornadatabase.find_guide,
         kgr:snornadatabase.portal,
         kgr:snornadatabase.search ;
+    schema1:identifier "RRID:SCR_007939" ;
     schema1:name "snoRNABase" ;
     skos:altLabel "snoRNA database",
         "snoRNA-LBME-db" ;
@@ -27613,7 +27821,8 @@ kgr:so a schema1:Ontology ;
         kgr:so.subsets.SOFA.obo,
         kgr:so.subsets.SOFA.owl,
         kgr:sri-reference-kg.graph ;
-    schema1:identifier "so" ;
+    schema1:identifier "RRID:SCR_004374",
+        "so" ;
     schema1:name "Sequence types and features ontology" ;
     doap:repository <https://github.com/The-Sequence-Ontology/SO-Ontologies> ;
     skos:inScheme "chemistry and biochemistry",
@@ -27647,6 +27856,7 @@ kgr:sopharm a schema1:Ontology ;
     schema1:hasPart kgr:sopharm.kg-bioportal,
         kgr:sopharm.obo,
         kgr:sopharm.owl ;
+    schema1:identifier "RRID:SCR_003497" ;
     schema1:name "Suggested Ontology for Pharmacogenomics" ;
     skos:inScheme "chemistry and biochemistry",
         "pharmacogenomics",
@@ -27666,6 +27876,7 @@ kgr:sparc a schema1:DataSource ;
         kgr:digcfdekg.graph,
         kgr:sparc.data,
         kgr:sparc.portal ;
+    schema1:identifier "RRID:SCR_017041" ;
     schema1:name "Stimulating Peripheral Activity to Relieve Conditions (SPARC)" ;
     skos:altLabel "SPARC",
         "Stimulating Peripheral Activity to Relieve Conditions" ;
@@ -27827,6 +28038,7 @@ kgr:sra a schema1:DataSource ;
         kgr:sra.docs,
         kgr:sra.portal,
         kgr:sra.run_selector ;
+    schema1:identifier "RRID:SCR_004891" ;
     schema1:name "Sequence Read Archive" ;
     skos:altLabel "SRA",
         "Sequence Read Archive" ;
@@ -28260,6 +28472,7 @@ kgr:swisslipid a schema1:DataSource ;
         kgr:swisslipid.lipids2uniprot,
         kgr:swisslipid.portal,
         kgr:swisslipid.tissues ;
+    schema1:identifier "RRID:SCR_019074" ;
     schema1:name "SwissLipids" ;
     doap:repository <https://www.swisslipids.org/> ;
     skos:altLabel "slm",
@@ -28288,6 +28501,7 @@ kgr:swissmodel a schema1:DataSource ;
         kgr:swissmodel.api,
         kgr:swissmodel.portal,
         kgr:swissmodel.repository ;
+    schema1:identifier "RRID:SCR_018123" ;
     schema1:name "SWISS-MODEL" ;
     skos:altLabel "SWISS-MODEL",
         "SWISSMODEL" ;
@@ -28518,6 +28732,7 @@ kgr:tao a schema1:Ontology ;
     schema1:about <NCBITaxon:32443> ;
     schema1:hasPart kgr:tao.kg-bioportal,
         kgr:tao.owl ;
+    schema1:identifier "RRID:SCR_001610" ;
     schema1:name "Teleost Anatomy Ontology" ;
     skos:inScheme "anatomy and development" ;
     adms:status "Inactive" ;
@@ -28616,6 +28831,7 @@ kgr:tcdb a schema1:DataSource ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
+    schema1:identifier "RRID:SCR_004490" ;
     schema1:name "Transporter Classification Database (TCDB)" ;
     skos:altLabel "TCDB",
         "Transporter Classification Database" ;
@@ -28984,7 +29200,8 @@ kgr:topmed a schema1:DataSource ;
         kgr:topmed.data-access,
         kgr:topmed.portal,
         kgr:topmed.wgs-counts ;
-    schema1:identifier "topmed" ;
+    schema1:identifier "RRID:SCR_028178",
+        "topmed" ;
     schema1:name "NHLBI Trans-Omics for Precision Medicine" ;
     skos:altLabel "TOPMed",
         "Trans-Omics for Precision Medicine" ;
@@ -29222,6 +29439,7 @@ kgr:tred a schema1:DataSource ;
         kgr:tflink.interactions.yeast,
         kgr:tflink.interactions.zebrafish,
         kgr:tred.docs ;
+    schema1:identifier "RRID:SCR_005661" ;
     schema1:name "Transcriptional Regulatory Element Database" ;
     skos:inScheme "gene regulation",
         "genomics",
@@ -29275,6 +29493,7 @@ kgr:trrust a schema1:DataSource ;
         kgr:trrust.human.tsv,
         kgr:trrust.mouse.tsv,
         kgr:trrust.web ;
+    schema1:identifier "RRID:SCR_022554" ;
     schema1:name "TRRUST" ;
     skos:inScheme "gene regulation",
         "genomics",
@@ -29591,7 +29810,8 @@ kgr:uberon a schema1:Ontology ;
         kgr:unibiomap.pred.full,
         kgr:zp.obo,
         kgr:zp.owl ;
-    schema1:identifier "uberon" ;
+    schema1:identifier "RRID:SCR_010668",
+        "uberon" ;
     schema1:name "Uberon multi-species anatomy ontology" ;
     doap:repository <https://github.com/obophenotype/uberon> ;
     skos:inScheme "anatomy and development" ;
@@ -29654,6 +29874,7 @@ kgr:ucsc a schema1:DataSource ;
         kgr:ucsc.browser,
         kgr:ucsc.downloads,
         kgr:ucsc.tablebrowser ;
+    schema1:identifier "RRID:SCR_005780" ;
     schema1:name "UCSC Genome Browser" ;
     skos:inScheme "genomics" ;
     adms:status "Active" ;
@@ -29778,7 +29999,8 @@ kgr:umls a schema1:Aggregator ;
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
         kgr:unibiomap.pred.full ;
-    schema1:identifier "umls" ;
+    schema1:identifier "RRID:SCR_006363",
+        "umls" ;
     schema1:name "Unified Medical Language System" ;
     skos:altLabel "UMLS" ;
     skos:inScheme "biomedical",
@@ -30076,7 +30298,8 @@ kgr:uniprot a schema1:DataSource ;
         kgr:uniprot.swissprot.xml,
         kgr:uniprot.trembl.fasta,
         kgr:uniprot.trembl.xml ;
-    schema1:identifier "uniprot" ;
+    schema1:identifier "RRID:SCR_004477",
+        "uniprot" ;
     schema1:name "uniprot" ;
     doap:repository <https://www.uniprot.org/help/downloads> ;
     skos:inScheme "proteomics" ;
@@ -30100,7 +30323,8 @@ kgr:uniref a schema1:DataSource ;
         kgr:uniref.uniref50.xml,
         kgr:uniref.uniref90.fasta,
         kgr:uniref.uniref90.xml ;
-    schema1:identifier "uniref" ;
+    schema1:identifier "RRID:SCR_010646",
+        "uniref" ;
     schema1:name "UniRef" ;
     skos:altLabel "UniRef",
         "UniRef100",
@@ -30204,6 +30428,7 @@ kgr:us-census a schema1:DataSource ;
         kgr:sudokn.graph,
         kgr:us-census.api,
         kgr:us-census.data ;
+    schema1:identifier "RRID:SCR_011587" ;
     schema1:name "United States Census Bureau" ;
     skos:inScheme "general",
         "information technology",
@@ -30239,6 +30464,7 @@ kgr:usgs a schema1:DataSource ;
     schema1:hasPart kgr:usgs.data,
         kgr:usgs.sciencebase,
         kgr:wildlifekn.graph ;
+    schema1:identifier "RRID:SCR_010168" ;
     schema1:name "U.S. Geological Survey (USGS)" ;
     skos:inScheme "environment",
         "general" ;
@@ -30366,6 +30592,7 @@ kgr:vdjserver a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:nde.graph,
         kgr:vdjserver.portal ;
+    schema1:identifier "RRID:SCR_014356" ;
     schema1:name "VDJServer" ;
     skos:inScheme "biomedical",
         "genomics",
@@ -30430,6 +30657,7 @@ kgr:vista a schema1:DataSource ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:vista.data,
         kgr:vista.site ;
+    schema1:identifier "RRID:SCR_007973" ;
     schema1:name "VISTA Enhancer Browser" ;
     skos:inScheme "anatomy and development",
         "gene regulation",
@@ -30454,6 +30682,7 @@ kgr:vo a schema1:Ontology ;
         kgr:scdo.owl,
         kgr:vo.kg-bioportal,
         kgr:vo.owl ;
+    schema1:identifier "RRID:SCR_003442" ;
     schema1:name "Vaccine Ontology" ;
     doap:repository <https://github.com/vaccineontology/VO> ;
     skos:inScheme "biomedical",
@@ -30630,6 +30859,7 @@ kgr:who-ictrp a schema1:Aggregator ;
         kgr:who-ictrp.search-export,
         kgr:who-ictrp.web-service,
         kgr:who-ictrp.who-data-set ;
+    schema1:identifier "RRID:SCR_004475" ;
     schema1:name "WHO International Clinical Trials Registry Platform" ;
     skos:altLabel "ICTRP",
         "ICTRP Search Portal",
@@ -30788,7 +31018,8 @@ kgr:wikipathways a schema1:DataSource ;
         kgr:wikipathways.rdf,
         kgr:wikipathways.sparql,
         kgr:wikipathways.web ;
-    schema1:identifier "wikipathways" ;
+    schema1:identifier "RRID:SCR_002134",
+        "wikipathways" ;
     schema1:name "WikiPathways" ;
     doap:repository <https://github.com/wikipathways/wikipathways-database> ;
     skos:inScheme "biomedical",
@@ -30820,6 +31051,7 @@ kgr:wikipedia a schema1:DataSource ;
         kgr:wikipedia.dumps.enwiki.history,
         kgr:wikipedia.portal,
         kgr:wikipedia.rest ;
+    schema1:identifier "RRID:SCR_004897" ;
     schema1:name "Wikipedia" ;
     skos:altLabel "English Wikipedia" ;
     skos:inScheme "general" ;
@@ -30909,6 +31141,7 @@ kgr:wordnet a schema1:DataSource ;
         kgr:wordnet.download-page,
         kgr:wordnet.release-3.0,
         kgr:wordnet.search ;
+    schema1:identifier "RRID:SCR_022182" ;
     schema1:name "WordNet" ;
     skos:altLabel "PWN",
         "Princeton WordNet" ;
@@ -30927,6 +31160,7 @@ kgr:worldclim a schema1:DataSource ;
     schema1:hasPart kgr:wildlifekn.graph,
         kgr:worldclim.download,
         kgr:worldclim.portal ;
+    schema1:identifier "RRID:SCR_010244" ;
     schema1:name "WorldClim" ;
     skos:inScheme "climate",
         "environment" ;
@@ -30967,7 +31201,8 @@ kgr:wormbase a schema1:DataSource ;
         kgr:wormbase.portal,
         kgr:wormbase.textpresso,
         kgr:wormbase.wormmine ;
-    schema1:identifier "wormbase" ;
+    schema1:identifier "RRID:SCR_003098",
+        "wormbase" ;
     schema1:name "WormBase" ;
     doap:repository <https://github.com/WormBase> ;
     skos:altLabel "WB" ;
@@ -30994,7 +31229,8 @@ kgr:xao a schema1:Ontology ;
         kgr:xao.owl,
         kgr:xpo.obo,
         kgr:xpo.owl ;
-    schema1:identifier "xao" ;
+    schema1:identifier "RRID:SCR_004337",
+        "xao" ;
     schema1:name "Xenopus Anatomy Ontology" ;
     doap:repository <https://github.com/xenopus-anatomy/xao> ;
     skos:inScheme "anatomy and development" ;
@@ -31017,6 +31253,7 @@ kgr:xco a schema1:Ontology ;
         kgr:xco.kg-bioportal,
         kgr:xco.obo,
         kgr:xco.owl ;
+    schema1:identifier "RRID:SCR_003306" ;
     schema1:name "Experimental condition ontology" ;
     doap:repository <https://github.com/rat-genome-database/XCO-experimental-condition-ontology> ;
     skos:inScheme "biomedical",
@@ -31061,7 +31298,8 @@ kgr:xenbase a schema1:DataSource ;
         kgr:xenbase.phenotype-data,
         kgr:xenbase.web-portal,
         kgr:xenbase.wiki ;
-    schema1:identifier "xenbase" ;
+    schema1:identifier "RRID:SCR_003280",
+        "xenbase" ;
     schema1:name "Xenbase" ;
     doap:repository <https://github.com/xenopus-anatomy> ;
     skos:inScheme "anatomy and development",
@@ -31180,6 +31418,7 @@ kgr:yoda a schema1:DataSource ;
         kgr:yoda.portal,
         kgr:yoda.request-process,
         kgr:yoda.trial-catalog ;
+    schema1:identifier "RRID:SCR_022761" ;
     schema1:name "The YODA Project" ;
     skos:altLabel "YODA Project",
         "Yale Open Data Access Project",
@@ -31254,7 +31493,8 @@ kgr:zfa a schema1:Ontology ;
         kgr:zfa.owl,
         kgr:zp.obo,
         kgr:zp.owl ;
-    schema1:identifier "zfa" ;
+    schema1:identifier "RRID:SCR_005887",
+        "zfa" ;
     schema1:name "Zebrafish anatomy and development ontology" ;
     doap:repository <https://github.com/cerivs/zebrafish-anatomical-ontology> ;
     skos:inScheme "anatomy and development" ;
@@ -31306,7 +31546,8 @@ kgr:zfin a schema1:DataSource ;
         kgr:zfin.gene-to-publication,
         kgr:zfin.zfa,
         kgr:zirc.fish-catalog ;
-    schema1:identifier "zfin" ;
+    schema1:identifier "RRID:SCR_013326",
+        "zfin" ;
     schema1:name "ZFIN" ;
     doap:repository <https://github.com/ZFIN/> ;
     skos:inScheme "anatomy and development",
@@ -37452,7 +37693,8 @@ kgr:gbif a schema1:DataSource,
         kgr:openbiodiv.portal,
         kgr:openbiodiv.sparql,
         kgr:wildlifekn.graph ;
-    schema1:identifier "gbif" ;
+    schema1:identifier "RRID:SCR_005904",
+        "gbif" ;
     schema1:name "Global Biodiversity Information Facility (GBIF)" ;
     doap:repository <https://github.com/gbif> ;
     skos:inScheme "biodiversity",
@@ -44942,6 +45184,7 @@ kgr:planteome a schema1:Aggregator,
     schema1:hasPart kgr:eco-kg.graph,
         kgr:planteome.browser,
         kgr:planteome.po ;
+    schema1:identifier "RRID:SCR_014411" ;
     schema1:name "Planteome" ;
     skos:inScheme "agriculture",
         "genomics",
@@ -48705,6 +48948,7 @@ kgr:who a schema1:Aggregator,
         kgr:who.gho,
         kgr:who.gho-odata-api,
         kgr:who.portal ;
+    schema1:identifier "RRID:SCR_008505" ;
     schema1:name "World Health Organization" ;
     skos:altLabel "WHO" ;
     skos:inScheme "biomedical",
@@ -53918,7 +54162,8 @@ kgr:monarchinitiative a schema1:Aggregator,
         kgr:monarchinitiative.kg,
         kgr:monarchinitiative.portal,
         kgr:service-kp.trapi ;
-    schema1:identifier "monarchinitiative" ;
+    schema1:identifier "RRID:SCR_000824",
+        "monarchinitiative" ;
     schema1:name "Monarch Initiative" ;
     doap:repository <https://github.com/monarch-initiative> ;
     skos:altLabel "Monarch",
@@ -56787,6 +57032,7 @@ kgr:ncbi a schema1:DataSource,
         kgr:obo-db-ingest.ncbi.gc.sssom.tsv,
         kgr:obo-db-ingest.ncbi.gc.tsv,
         kgr:seqapass.app ;
+    schema1:identifier "RRID:SCR_006472" ;
     schema1:name "National Center for Biotechnology Information" ;
     skos:inScheme "biomedical",
         "genomics",

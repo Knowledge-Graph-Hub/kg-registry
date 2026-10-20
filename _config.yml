@@ -774,6 +774,7 @@ resources:
     title: The 4D Nucleome Data Portal as a resource for searching and visualizing
       curated nucleomics data
     year: '2022'
+  rrid: SCR_016925
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -11771,6 +11772,7 @@ resources:
     journal: Nucleic Acids Research
     title: ArrayExpress update - from bulk to single-cell expression data
     year: '2019'
+  rrid: SCR_002964
   synonyms:
   - AE
 - activity_status: active
@@ -14986,6 +14988,7 @@ resources:
     title: 'Evolving BioAssay Ontology (BAO): modularization, integration and applications'
     year: '2014'
   repository: https://github.com/BioAssayOntology/BAO
+  rrid: SCR_002638
 - activity_status: active
   category: DataSource
   contacts:
@@ -17078,6 +17081,7 @@ resources:
     product_url: http://purl.obolibrary.org/obo/zp.obo
   publications: []
   repository: https://github.com/BFO-ontology/BFO
+  rrid: SCR_004818
 - activity_status: active
   category: DataSource
   contacts:
@@ -19745,6 +19749,7 @@ resources:
       in animals
     year: '2021'
   repository: https://github.com/BgeeDB/bgee_apps
+  rrid: SCR_002028
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -20491,6 +20496,7 @@ resources:
       models'
     year: '2016'
   repository: https://github.com/SBRG/bigg_models
+  rrid: SCR_005809
 - activity_status: active
   category: DataSource
   contacts:
@@ -22985,6 +22991,7 @@ resources:
     title: 'BindingDB in 2024: a FAIR knowledgebase of protein-small molecule binding
       data'
     year: '2025'
+  rrid: SCR_000390
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -25521,6 +25528,7 @@ resources:
     preferred: true
     title: The BioCyc collection of microbial genomes and metabolic pathways
     year: '2019'
+  rrid: SCR_002298
   taxon:
   - NCBITaxon:2759
 - activity_status: active
@@ -26252,6 +26260,7 @@ resources:
       form using Biofactoid'
     year: '2021'
   repository: https://github.com/PathwayCommons/factoid
+  rrid: SCR_021011
   synonyms:
   - Factoid
   tags:
@@ -26890,6 +26899,7 @@ resources:
     title: 'BioGPS: an extensible and customizable portal for querying and organizing
       gene annotation resources'
     year: '2009'
+  rrid: SCR_006433
 - activity_status: active
   category: DataSource
   collection:
@@ -31393,6 +31403,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'BioGRID: a general repository for interaction datasets'
     year: '2006'
+  rrid: SCR_007393
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:4932
@@ -31630,6 +31641,7 @@ resources:
     title: 'Providing researchers with online access to NHLBI biospecimen collections:
       The results of the first six years of the NHLBI BioLINCC program'
     year: '2017'
+  rrid: SCR_013142
   synonyms:
   - Biologic Specimen and Data Repository Information Coordinating Center
   - NHLBI Biologic Specimen and Data Repository
@@ -33044,6 +33056,7 @@ resources:
     preferred: true
     title: BioModels—15 years of sharing computational models in life science
     year: '2019'
+  rrid: SCR_001993
   synonyms:
   - BioModels Database
   - BioModels Repository
@@ -33786,6 +33799,7 @@ resources:
     title: 'BioPlexR and BioPlexPy: integrated data products for the analysis of human
       protein interactions'
     year: '2023'
+  rrid: SCR_016144
   synonyms:
   - BioPlex Interactome
   taxon:
@@ -34428,6 +34442,7 @@ resources:
       mouse'
     year: '2009'
   repository: https://github.com/ncbo
+  rrid: SCR_002713
   warnings:
   - Some ontologies have distinct licenses; review individual ontology license metadata
     before reuse.
@@ -34682,6 +34697,7 @@ resources:
     title: Unifying the identification of biomedical entities with the Bioregistry
     year: '2022'
   repository: https://github.com/biopragmatics/bioregistry
+  rrid: SCR_022586
 - activity_status: active
   category: DataSource
   contacts:
@@ -35435,6 +35451,7 @@ resources:
       research'
     year: '2022'
   repository: https://github.com/biothings/biothings.api
+  rrid: SCR_024539
 - activity_status: active
   category: Aggregator
   collection:
@@ -36859,6 +36876,7 @@ resources:
     journal: Nucleic Acids Res
     title: 'BRENDA, the ELIXIR core data resource in 2021: new developments and updates'
     year: '2021'
+  rrid: SCR_002997
   taxon:
   - NCBITaxon:131567
 - activity_status: active
@@ -39437,6 +39455,7 @@ resources:
     title: 'CADD v1.7: using protein language models, regulatory CNNs and other nucleotide-level
       scores to improve genome-wide variant predictions'
     year: '2024'
+  rrid: SCR_018393
   synonyms:
   - Combined Annotation Dependent Depletion
 - activity_status: active
@@ -41182,6 +41201,7 @@ resources:
     title: The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer
       drug sensitivity
     year: '2012'
+  rrid: SCR_013836
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -42060,6 +42080,7 @@ resources:
     preferred: true
     title: The conserved domain database in 2023
     year: '2023'
+  rrid: SCR_002077
 - activity_status: active
   category: Aggregator
   collection:
@@ -42524,6 +42545,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'CEBS: a comprehensive annotated database of toxicological data'
     year: '2017'
+  rrid: SCR_006778
   synonyms:
   - CEBS
   - Chemical Effects in Biological Systems
@@ -43204,6 +43226,7 @@ resources:
     journal: Nucleic Acids Research
     title: CellMarker - a manually curated resource of cell markers in human and mouse
     year: '2019'
+  rrid: SCR_018503
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -43423,6 +43446,7 @@ resources:
     title: 'rcellminer: exploring molecular profiles and drug response of the NCI-60
       cell lines in R'
     year: '2016'
+  rrid: SCR_025648
   synonyms:
   - CellMinerCDB
   - CellMiner NCI-60
@@ -43644,6 +43668,7 @@ resources:
     title: 'CellML: its future, present and past'
     year: '2004'
   repository: https://github.com/cellml
+  rrid: SCR_008061
 - activity_status: active
   category: DataSource
   contacts:
@@ -43836,6 +43861,7 @@ resources:
     title: Cell Model Passports-a hub for clinical, genetic and functional datasets
       of preclinical cancer models
     year: '2019'
+  rrid: SCR_027682
   synonyms:
   - CMP
 - activity_status: active
@@ -44190,6 +44216,7 @@ resources:
     title: The Cellosaurus, a cell-line knowledge resource
     year: '2018'
   repository: https://github.com/calipho-sib/cellosaurus
+  rrid: SCR_024863
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -44583,6 +44610,7 @@ resources:
       of multi-subunit ligand–receptor complexes'
     year: '2020'
   repository: https://github.com/ventolab/CellphoneDB
+  rrid: SCR_017054
 - activity_status: active
   category: DataSource
   contacts:
@@ -45022,6 +45050,7 @@ resources:
       analysis and modeling of aggregated data'
     year: '2025'
   repository: https://github.com/chanzuckerberg/single-cell-data-portal
+  rrid: SCR_024894
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -45804,6 +45833,7 @@ resources:
     journal: BMC Genomics
     title: The Chicken Gene Nomenclature Committee report
     year: '2009'
+  rrid: SCR_004966
 - activity_status: active
   category: DataSource
   contacts:
@@ -52978,6 +53008,7 @@ resources:
     title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
     year: '2016'
   repository: https://github.com/ebi-chebi/ChEBI
+  rrid: SCR_002088
 - activity_status: active
   category: DataSource
   contacts:
@@ -56231,6 +56262,7 @@ resources:
       bioactivity data types and time periods'
     year: '2024'
   repository: https://github.com/chembl
+  rrid: SCR_014042
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -56832,6 +56864,7 @@ resources:
       ChIP‐seq data'
     year: '2018'
   repository: https://github.com/inutano/chip-atlas
+  rrid: SCR_015511
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -66716,6 +66749,7 @@ resources:
     title: The ClinicalTrials.gov results database--update and key issues
     year: '2011'
   repository: https://github.com/ctti-clinicaltrials/aact
+  rrid: SCR_002309
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -70970,6 +71004,7 @@ resources:
     journal: Nucleic Acids Research
     title: ClinVar - improving access to variant interpretations and supporting evidence
     year: '2018'
+  rrid: SCR_006169
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -74574,6 +74609,7 @@ resources:
     title: 'COG database update: focus on microbial diversity, model organisms, and
       widespread pathogens'
     year: '2021'
+  rrid: SCR_007139
   synonyms:
   - COG
   - Clusters of Orthologous Groups
@@ -76676,6 +76712,7 @@ resources:
     title: 'COMPARTMENTS: unification and visualization of protein subcellular localization
       evidence'
     year: '2014'
+  rrid: SCR_015561
 - activity_status: active
   category: DataSource
   contacts:
@@ -81149,6 +81186,7 @@ resources:
     title: ConsensusPathDB--a database for integrating human functional interaction
       networks
     year: '2009'
+  rrid: SCR_002231
   synonyms:
   - CPDB
   - CPDB-human
@@ -89393,6 +89431,7 @@ resources:
     title: An Interactive Resource to Identify Cancer Genetic and Lineage Dependencies
       Targeted by Small Molecules
     year: '2013'
+  rrid: SCR_026293
   synonyms:
   - CTRP
   - Cancer Therapeutics Response Portal
@@ -89982,6 +90021,7 @@ resources:
       interaction networks'
     year: '2003'
   repository: https://github.com/cytoscape/cytoscape
+  rrid: SCR_003032
 - activity_status: active
   category: DataSource
   contacts:
@@ -91100,6 +91140,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'NCBI’s Database of Genotypes and Phenotypes: dbGaP'
     year: '2014'
+  rrid: SCR_002709
   synonyms:
   - database of Genotypes and Phenotypes
   - NCBI dbGaP
@@ -91605,6 +91646,7 @@ resources:
     title: DBpedia - A crystallization point for the Web of Data
     year: '2009'
   repository: https://github.com/dbpedia/extraction-framework
+  rrid: SCR_003661
   synonyms:
   - DBpedia
 - activity_status: active
@@ -91716,6 +91758,7 @@ resources:
     title: 'dbPTM 2025 update: comprehensive integration of PTMs and proteomic data
       for advanced insights into cancer research'
     year: '2025'
+  rrid: SCR_007619
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -93995,6 +94038,7 @@ resources:
     title: 'The evolution of dbSNP: 25 years of impact in genomic research'
     year: '2025'
   repository: https://github.com/ncbi/dbsnp
+  rrid: SCR_002338
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -94502,6 +94546,7 @@ resources:
     preferred: true
     title: 'DbVar and DGVa: public archives for genomic structural variation'
     year: '2013'
+  rrid: SCR_003219
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -94896,6 +94941,7 @@ resources:
       element set — Part 2: DCMI Properties and classes'
     year: '2019'
   repository: https://github.com/dcmi/
+  rrid: SCR_012921
 - activity_status: active
   category: DataModel
   contacts:
@@ -95838,6 +95884,7 @@ resources:
     title: 'DDBJ update in 2024: the DDBJ Group Cloud service for sharing pre-publication
       data'
     year: '2025'
+  rrid: SCR_002359
   synonyms:
   - DDBJ
   - DNA Data Bank of Japan
@@ -98154,6 +98201,7 @@ resources:
     title: Defining a Cancer Dependency Map
     year: '2017'
   repository: https://github.com/broadinstitute/depmap_omics
+  rrid: SCR_017655
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -106691,6 +106739,7 @@ resources:
     journal: Methods
     title: 'DISEASES: text mining and data integration of disease-gene associations.'
     year: '2015'
+  rrid: SCR_015664
   synonyms:
   - DISEASES Database
   - JensenLab DISEASES
@@ -109053,6 +109102,7 @@ resources:
     journal: Nucleic Acids Res
     title: 'DisProt: intrinsic protein disorder annotation in 2020.'
     year: '2020'
+  rrid: SCR_007097
 - activity_status: active
   category: DataSource
   contacts:
@@ -121697,6 +121747,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'DrugCentral: online drug compendium'
     year: '2017'
+  rrid: SCR_015663
 - activity_status: active
   category: DataSource
   contacts:
@@ -122163,6 +122214,7 @@ resources:
       molecule attributes for drug enrichment analysis and machine learning'
     year: '2021'
   repository: https://github.com/MaayanLab/drugmonizome
+  rrid: SCR_024821
   synonyms:
   - Drugmonizome-ML
   taxon:
@@ -123692,6 +123744,7 @@ resources:
       source: ebrains
     product_url: https://core.kg.ebrains.eu/swagger-ui/index.html
   repository: https://github.com/HumanBrainProject/kg-core
+  rrid: SCR_017612
 - activity_status: active
   category: Ontology
   contacts:
@@ -125161,6 +125214,7 @@ resources:
       (ECO)
     year: '2014'
   repository: https://github.com/evidenceontology/evidenceontology
+  rrid: SCR_002477
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -125544,6 +125598,7 @@ resources:
     title: The EcoCyc Database in 2021
     year: '2021'
   repository: https://biocyc.org/download.shtml
+  rrid: SCR_002433
 - activity_status: active
   category: Aggregator
   contacts:
@@ -126912,6 +126967,7 @@ resources:
       topics and formats'
     year: '2013'
   repository: https://github.com/edamontology/edamontology
+  rrid: SCR_006620
 - activity_status: active
   category: DataSource
   contacts:
@@ -130724,6 +130780,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: doid
     product_url: http://www.organchip.cn/
+  rrid: SCR_011215
   synonyms:
   - EMA
 - activity_status: active
@@ -131101,6 +131158,7 @@ resources:
     title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
       Expression Database for Mouse Development (GXD)'
   repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
+  rrid: SCR_021808
   taxon:
   - NCBITaxon:10088
 - activity_status: active
@@ -133749,6 +133807,7 @@ resources:
     title: An integrated encyclopedia of DNA elements in the human genome
     year: '2012'
   repository: https://github.com/ENCODE-DCC/encoded
+  rrid: SCR_006793
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -138063,6 +138122,7 @@ resources:
     title: Ensembl 2025
     year: '2025'
   repository: https://github.com/Ensembl/
+  rrid: SCR_006766
   taxon:
   - NCBITaxon:10116
   - NCBITaxon:9606
@@ -139756,6 +139816,7 @@ resources:
       Life on Earth'
     year: '2014'
   repository: https://github.com/EOL
+  rrid: SCR_005905
   taxon:
   - NCBITaxon:1
 - activity_status: active
@@ -140918,6 +140979,7 @@ resources:
     title: 'The eukaryotic promoter database: expansion of EPDnew and new promoter
       analysis tools'
     year: '2015'
+  rrid: SCR_002485
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -143327,6 +143389,7 @@ resources:
       platform for innovation'
     year: '2015'
   repository: https://github.com/EuropePMC
+  rrid: SCR_005901
   synonyms:
   - Europe PubMed Central
   - EuropePMC
@@ -145705,6 +145768,7 @@ resources:
     title: 'Expression Atlas update: from tissues to single cells'
     year: '2019'
   repository: https://github.com/ebi-gene-expression-group
+  rrid: SCR_007989
 - activity_status: active
   category: Ontology
   creation_date: '2025-12-11T00:00:00Z'
@@ -146468,6 +146532,7 @@ resources:
     secondary_source:
     - relation_type: prov:wasInformedBy
       source: meddra
+  rrid: SCR_013718
   synonyms:
   - AEMS
   - FDA Adverse Event Monitoring System
@@ -146718,6 +146783,7 @@ resources:
       biology research'
     year: '2017'
   repository: https://github.com/seek4science/seek
+  rrid: SCR_021119
   synonyms:
   - FAIRDOM Hub
 - activity_status: active
@@ -146927,6 +146993,7 @@ resources:
     preferred: true
     title: FAIRsharing as a community approach to standards, repositories and policies
     year: '2019'
+  rrid: SCR_004177
   synonyms:
   - BioSharing
 - activity_status: active
@@ -149302,6 +149369,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: unii
     product_url: https://open.fda.gov/data/downloads/
+  rrid: SCR_013727
   synonyms:
   - Approved Drug Products with Therapeutic Equivalence Evaluations
   - Orange Book
@@ -152829,6 +152897,7 @@ resources:
     title: 'FlyBase: updates to the Drosophila genes and genomes database'
     year: '2024'
   repository: https://github.com/FlyBase
+  rrid: SCR_006549
   taxon:
   - NCBITaxon:7227
 - activity_status: active
@@ -156418,6 +156487,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: usgs-comcat
     product_url: https://knowwheregraph.org/
+  rrid: SCR_023746
   synonyms:
   - Database of Global Administrative Areas
 - activity_status: active
@@ -157658,6 +157728,7 @@ resources:
       of Biodiversity Data on the Internet'
     year: '2014'
   repository: https://github.com/gbif
+  rrid: SCR_005904
   taxon:
   - NCBITaxon:1
 - activity_status: active
@@ -159434,6 +159505,7 @@ resources:
     title: Systematic analysis of the gerontome reveals links between aging and age-related
       diseases
     year: '2016'
+  rrid: SCR_010223
   synonyms:
   - GenAge
   - The Aging Gene Database
@@ -161439,6 +161511,7 @@ resources:
     preferred: true
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
     year: '2025'
+  rrid: SCR_014966
   synonyms:
   - GENCODE
   - Encyclopedia of genes and gene variants
@@ -161613,6 +161686,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: gene-expression-atlas-okn
     product_url: https://apps.okn.us/ldf/gene-expression-atlas-okn
+  rrid: SCR_007989
 - activity_status: active
   category: Aggregator
   contacts:
@@ -163068,6 +163142,7 @@ resources:
       source: wormbase
     product_file_size: 281505096430
     product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+  rrid: SCR_005012
 - activity_status: active
   category: DataSource
   contacts:
@@ -164654,6 +164729,7 @@ resources:
       prioritization and predicting gene function'
     year: '2010'
   repository: https://github.com/GeneMANIA/genemania
+  rrid: SCR_005709
   synonyms:
   - GeneMANIA
   - GeneMANIA prediction server
@@ -165240,6 +165316,7 @@ resources:
       source: genereviews
     product_file_size: 5305829
     product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+  rrid: SCR_006560
   synonyms:
   - GeneReviews®
   - GR
@@ -166697,6 +166774,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: motifmap
     product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+  rrid: SCR_026591
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -170410,6 +170488,7 @@ resources:
     title: 'GlyGen: Computational and Informatics Resources for Glycoscience'
     year: '2020'
   repository: https://github.com/glygener/glygen-backend-api
+  rrid: SCR_023438
 - activity_status: active
   category: DataSource
   contacts:
@@ -171657,6 +171736,7 @@ resources:
     title: The mutational constraint spectrum quantified from variation in 141,456
       humans
     year: '2020'
+  rrid: SCR_014964
   synonyms:
   - gnomAD
   taxon:
@@ -171982,6 +172062,7 @@ resources:
       Products Social Molecular Networking
     year: '2016'
   repository: https://github.com/CCMS-UCSD/GNPSDocumentation
+  rrid: SCR_019012
   synonyms:
   - GNPS
   - Global Natural Products Social Molecular Networking
@@ -181374,6 +181455,7 @@ resources:
     title: 'The Gene Ontology resource: enriching a GOld mine'
     year: '2021'
   repository: https://github.com/geneontology/go-ontology
+  rrid: SCR_002811
   synonyms:
   - GO
   taxon:
@@ -181607,6 +181689,7 @@ resources:
       to structured descriptions of biological functions and systems
     year: '2019'
   repository: https://github.com/geneontology/noctua
+  rrid: SCR_002811
 - activity_status: active
   category: DataSource
   contacts:
@@ -182403,6 +182486,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: phenopacket-store
     product_url: https://pavs.phenomebrowser.net/api/docs
+  rrid: SCR_007691
 - activity_status: active
   category: DataSource
   contacts:
@@ -183574,6 +183658,7 @@ resources:
     title: 'GPCRdb in 2018: adding GPCR structure models and ligands'
     year: '2018'
   repository: https://github.com/protwis/protwis
+  rrid: SCR_007419
   synonyms:
   - GPCR database
   - GPCRDB
@@ -183793,6 +183878,7 @@ resources:
     journal: Bioinformatics
     title: 'TANDEM: matching proteins with tandem mass spectra'
     year: '2004'
+  rrid: SCR_006617
   synonyms:
   - GPMDB
   - The Global Proteome Machine
@@ -186637,6 +186723,7 @@ resources:
       regulation in humans'
     year: '2015'
   repository: https://github.com/broadinstitute/gtex-pipeline
+  rrid: SCR_001618
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -188281,6 +188368,7 @@ resources:
     title: 'The NIH genetic testing registry: a new, centralized database of genetic
       tests to enable access to comprehensive information and improve transparency'
     year: '2012'
+  rrid: SCR_005565
   synonyms:
   - GTR
   - NIH Genetic Testing Registry
@@ -192822,6 +192910,7 @@ resources:
     preferred: true
     title: 'The NHGRI-EBI GWAS Catalog: knowledgebase and deposition resource'
     year: '2023'
+  rrid: SCR_012745
 - activity_status: active
   category: KnowledgeGraph
   creation_date: '2026-04-06T00:00:00Z'
@@ -193509,6 +193598,7 @@ resources:
     title: A gross anatomy ontology for hymenoptera
     year: '2010'
   repository: https://github.com/hymao/hao
+  rrid: SCR_003340
   taxon:
   - NCBITaxon:7399
 - activity_status: active
@@ -200086,6 +200176,7 @@ resources:
     title: 'Genenames.org: the HGNC resources in 2023'
     year: '2023'
   repository: https://github.com/HGNC
+  rrid: SCR_002827
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -200872,6 +200963,7 @@ resources:
     title: 'HIPPIE v2.0: enhancing meaningfulness and reliability of protein-protein
       interaction networks'
     year: '2017'
+  rrid: SCR_014651
   synonyms:
   - HIPPIE
   - Human Integrated Protein-Protein Interaction rEference
@@ -211555,6 +211647,7 @@ resources:
     title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.
     year: '2019'
   repository: https://github.com/obophenotype/human-phenotype-ontology
+  rrid: SCR_006016
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -213309,6 +213402,7 @@ resources:
     secondary_source:
     - relation_type: prov:wasInfluencedBy
       source: gene-expression-omnibus
+  rrid: SCR_016202
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -215363,6 +215457,7 @@ resources:
     title: 'httk: R Package for High-Throughput Toxicokinetics'
     year: '2017'
   repository: https://github.com/USEPA/CompTox-ExpoCast-httk
+  rrid: SCR_024702
 - activity_status: active
   category: Aggregator
   contacts:
@@ -216222,6 +216317,7 @@ resources:
       single-cell data'
     year: '2024'
   repository: https://github.com/hubmapconsortium
+  rrid: SCR_016922
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -216874,6 +216970,7 @@ resources:
     title: Computational prediction of human metabolic pathways from the complete
       human genome
     year: '2004'
+  rrid: SCR_007050
   synonyms:
   - HumanCyc
   taxon:
@@ -218739,6 +218836,7 @@ resources:
       representational artifacts
     year: '2012'
   repository: https://github.com/information-artifact-ontology/IAO
+  rrid: SCR_000477
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -222041,6 +222139,7 @@ resources:
       identification'
     year: '2012'
   repository: https://github.com/identifiers-org
+  rrid: SCR_003735
   synonyms:
   - identifiers.org
   - MIRIAM Registry
@@ -223855,6 +223954,7 @@ resources:
     secondary_source:
     - relation_type: prov:wasInfluencedBy
       source: gene-expression-omnibus
+  rrid: SCR_014387
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -224540,6 +224640,7 @@ resources:
     preferred: true
     title: IMGT, the international ImMunoGeneTics information system 25 years on
     year: '2015'
+  rrid: SCR_012780
 - activity_status: active
   category: DataSource
   contacts:
@@ -225493,6 +225594,7 @@ resources:
     title: 'The International Mouse Phenotyping Consortium: comprehensive knockout
       phenotyping underpinning the study of human disease'
     year: '2023'
+  rrid: SCR_006158
   taxon:
   - NCBITaxon:10090
   - NCBITaxon:9606
@@ -227026,6 +227128,7 @@ resources:
     title: 'InnateDB: systems biology of innate immunity and beyond - recent updates
       and continuing curation'
     year: '2013'
+  rrid: SCR_006714
   synonyms:
   - InnateDB
   taxon:
@@ -231354,6 +231457,7 @@ resources:
     title: The IntAct molecular interaction database in 2012
     year: '2012'
   repository: https://github.com/intact-portal
+  rrid: SCR_006944
   synonyms:
   - IntAct Molecular Interaction Database
   - IMEx IntAct
@@ -231514,6 +231618,7 @@ resources:
     title: 'InterMine: extensive web services for modern biology'
     year: '2014'
   repository: https://github.com/intermine/intermine
+  rrid: SCR_001772
 - activity_status: active
   category: DataSource
   contacts:
@@ -233924,6 +234029,7 @@ resources:
     title: 'InterPro: the protein sequence classification resource in 2025'
     year: '2025'
   repository: https://www.ebi.ac.uk/interpro/
+  rrid: SCR_006695
 - activity_status: active
   category: DataSource
   contacts:
@@ -234696,6 +234802,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'iProX in 2021: connecting proteomics data sharing with big data'
     year: '2022'
+  rrid: SCR_026109
   synonyms:
   - integrated Proteome resources
 - activity_status: active
@@ -235546,6 +235653,7 @@ resources:
     title: 'iPTMnet: an integrated resource for protein post-translational modification
       network discovery'
     year: '2018'
+  rrid: SCR_014416
   synonyms: []
 - activity_status: active
   category: DataSource
@@ -235742,6 +235850,7 @@ resources:
     preferred: true
     title: 'The ISRCTN Register: achievements and challenges 8 years on'
     year: '2011'
+  rrid: SCR_006087
   synonyms:
   - ISRCTN
   - International Standard Randomised Controlled Trial Number
@@ -236199,6 +236308,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: cabi-isc
     product_url: https://apps.okn.us/ldf/wildlifekn
+  rrid: SCR_012758
 - activity_status: active
   category: DataSource
   creation_date: '2026-06-15T00:00:00Z'
@@ -237638,6 +237748,7 @@ resources:
     journal: Bioinformatics
     title: The JWS online simulation database
     year: '2017'
+  rrid: SCR_008127
   synonyms:
   - JWS
   - Java Web Simulation
@@ -243004,7 +243115,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-20T16:15:45Z'
+  last_modified_date: '2026-10-20T23:03:21Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -248117,6 +248228,7 @@ resources:
     journal: Nature Communications
     title: Connecting omics signatures and revealing biological mechanisms with iLINCS
     year: '2022'
+  rrid: SCR_003937
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -249888,6 +250000,7 @@ resources:
     title: 'LIPID MAPS: update to databases and tools for the lipidomics community'
     year: '2024'
   repository: https://www.lipidmaps.org/databases/lmsd
+  rrid: SCR_006579
 - activity_status: active
   category: DataSource
   contacts:
@@ -253803,6 +253916,7 @@ resources:
     preferred: true
     title: 'MaizeGDB 2018: the maize multi-genome genetics and genomics database'
     year: '2019'
+  rrid: SCR_006600
 - activity_status: active
   category: Aggregator
   creation_date: '2025-09-09T00:00:00Z'
@@ -254572,6 +254686,7 @@ resources:
     preferred: false
     title: 'MalaCards: A Comprehensive Automatically-Mined Database of Human Diseases'
     year: '2014'
+  rrid: SCR_005817
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -255442,6 +255557,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'MarkerDB: an online database of molecular biomarkers'
     year: '2021'
+  rrid: SCR_026817
 - activity_status: active
   category: DataSource
   contacts:
@@ -255937,6 +256053,7 @@ resources:
     title: Sharing and community curation of mass spectrometry data with Global Natural
       Products Social Molecular Networking
     year: '2016'
+  rrid: SCR_013665
   synonyms:
   - Mass Spectrometry Interactive Virtual Environment
   - MassIVE
@@ -260644,6 +260761,7 @@ resources:
     title: 'MedGen: NCBI''s Portal to Information on Medical Conditions with a Genetic
       Component'
     year: '2020'
+  rrid: SCR_000111
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -265056,6 +265174,7 @@ resources:
     title: Medical Subject Headings (MeSH).
     year: '2000'
   repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
+  rrid: SCR_004750
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -265525,6 +265644,7 @@ resources:
     title: MetaboLights—an open-access general-purpose repository for metabolomics
       studies and associated meta-data
     year: '2013'
+  rrid: SCR_014663
   synonyms:
   - MTBLS
 - activity_status: active
@@ -266008,6 +266128,7 @@ resources:
     preferred: true
     title: The MetaCyc database of metabolic pathways and enzymes - a 2019 update
     year: '2020'
+  rrid: SCR_007778
 - activity_status: active
   category: DataSource
   contacts:
@@ -266148,6 +266269,7 @@ resources:
     journal: Briefings in Bioinformatics
     title: Reconciliation of metabolites and biochemical reactions for metabolic networks
     year: '2014'
+  rrid: SCR_015882
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -266799,6 +266921,7 @@ resources:
       Sciences'
     year: '2011'
   repository: https://github.com/jannahastings/emotion-ontology
+  rrid: SCR_003272
 - activity_status: active
   category: Ontology
   collection:
@@ -269311,6 +269434,7 @@ resources:
     preferred: true
     title: 'MGnify: the microbiome sequence data analysis resource in 2023'
     year: '2023'
+  rrid: SCR_016429
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -270039,6 +270163,7 @@ resources:
       Minimum Information about a Phylogenetic Analysis (MIAPA)'
     year: '2006'
   repository: https://github.com/evoinfo/miapa
+  rrid: SCR_003777
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -271942,6 +272067,7 @@ resources:
     journal: Nucleic Acids Res
     title: 'MINT, the molecular interaction database: 2012 update'
     year: '2012'
+  rrid: SCR_001523
   synonyms:
   - MINT
   - Molecular INTeraction Database
@@ -273824,6 +273950,7 @@ resources:
     journal: Nucleic Acids Res
     title: The microRNA Registry
     year: '2004'
+  rrid: SCR_003152
 - activity_status: active
   category: DataSource
   creation_date: '2026-06-15T00:00:00Z'
@@ -274306,6 +274433,7 @@ resources:
     preferred: true
     title: 'miRDB: an online database for prediction of functional microRNA targets'
     year: '2020'
+  rrid: SCR_010848
 - activity_status: active
   category: DataSource
   creation_date: '2025-09-09T00:00:00Z'
@@ -276930,6 +277058,7 @@ resources:
       data
     year: '2008'
   repository: https://github.com/HUPO-PSI/psi-mod-CV
+  rrid: SCR_004198
 - activity_status: active
   category: DataSource
   creation_date: '2026-10-19T00:00:00Z'
@@ -277817,6 +277946,7 @@ resources:
     preferred: false
     title: 'MODOMICS: a database of RNA modification pathways. 2021 update'
     year: '2022'
+  rrid: SCR_007804
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -278692,6 +278822,7 @@ resources:
       phenotypes to genotypes across species'
     year: '2017'
   repository: https://github.com/monarch-initiative
+  rrid: SCR_000824
   synonyms:
   - Monarch
   - The Monarch Initiative
@@ -283731,6 +283862,7 @@ resources:
     title: Temporal dynamics of the multi-omic response to endurance exercise training
     year: '2024'
   repository: https://github.com/MoTrPAC
+  rrid: SCR_017611
   taxon:
   - NCBITaxon:10116
 - activity_status: active
@@ -285381,6 +285513,7 @@ resources:
       screens
     year: '2015'
   repository: https://github.com/mgijax/mammalian-phenotype-ontology
+  rrid: SCR_004855
   taxon:
   - NCBITaxon:40674
 - activity_status: active
@@ -288429,6 +288562,7 @@ resources:
     preferred: true
     title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
     year: '2023'
+  rrid: SCR_016863
   synonyms:
   - MSigDB
   taxon:
@@ -289613,6 +289747,7 @@ resources:
       and metadata, metabolite standards, protocols, tutorials and training, and analysis
       tools'
     year: '2016'
+  rrid: SCR_013794
   synonyms:
   - MW
   - NMDR
@@ -290501,6 +290636,7 @@ resources:
     title: 'BioGPS and MyGene.info: organizing online, gene-centric information'
     year: '2013'
   repository: https://github.com/biothings/mygene.info
+  rrid: SCR_018660
   synonyms:
   - MyGene
   - mygene.info
@@ -291094,6 +291230,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+  rrid: SCR_026199
 - activity_status: active
   category: DataSource
   contacts:
@@ -293029,6 +293166,7 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: ncbi
     product_url: https://seqapass.epa.gov/seqapass/
+  rrid: SCR_006472
 - activity_status: active
   category: DataSource
   contacts:
@@ -303198,6 +303336,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: fda-orphan-drugs
     product_url: https://mychem.info/v1/query
+  rrid: SCR_013721
   synonyms:
   - NDC
   - NDCD
@@ -304549,6 +304688,7 @@ resources:
     preferred: false
     title: 'The neXtProt knowledgebase on human proteins: 2017 update'
     year: '2017'
+  rrid: SCR_008911
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -305795,6 +305935,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: nihreporter
     product_url: https://www.era.nih.gov/about-era/services-for-agency-staff/reporting-analytics
+  rrid: SCR_006874
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -309445,6 +309586,7 @@ resources:
     secondary_source:
     - relation_type: prov:wasInfluencedBy
       source: us-census
+  rrid: SCR_007031
 - activity_status: active
   category: DataSource
   contacts:
@@ -317491,6 +317633,7 @@ resources:
       data integration'
     year: '2007'
   repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+  rrid: SCR_007083
   synonyms:
   - OBO
   - Open Biological and Biomedical Ontology Foundry
@@ -319475,6 +319618,7 @@ resources:
       ecosystem'
     year: '2025'
   repository: https://github.com/EBISPOT/ols4
+  rrid: SCR_006596
   synonyms:
   - OLS
   - OLS4
@@ -319983,6 +320127,7 @@ resources:
       gene order and more'
     year: '2021'
   repository: https://github.com/DessimozLab/pyomabrowser
+  rrid: SCR_011978
 - activity_status: active
   category: DataSource
   contacts:
@@ -320390,6 +320535,7 @@ resources:
     journal: Nature Communications
     title: Quantifying the impact of public omics data
     year: '2019'
+  rrid: SCR_010494
   synonyms:
   - OmicsDI
   - Omics Discovery Index
@@ -324771,6 +324917,7 @@ resources:
     title: 'OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog
       of human genes and genetic disorders'
     year: '2015'
+  rrid: SCR_006437
   taxon:
   - NCBITaxon:9606
   warnings:
@@ -325405,6 +325552,7 @@ resources:
       omics analysis
     year: '2021'
   repository: https://github.com/saezlab/pypath
+  rrid: SCR_028649
 - activity_status: active
   category: Ontology
   collection:
@@ -326737,6 +326885,7 @@ resources:
       with Cancer
     year: '2024'
   repository: https://github.com/oncokb
+  rrid: SCR_014782
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -327870,6 +328019,7 @@ resources:
     title: 'OpenAlex: A fully-open index of scholarly works, authors, venues, institutions,
       and concepts'
     year: '2022'
+  rrid: SCR_022787
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -329919,6 +330069,7 @@ resources:
       of lifecycle stages in parasitic organisms'
     year: '2012'
   repository: https://github.com/OPL-ontology/OPL
+  rrid: SCR_003427
 - activity_status: active
   category: Ontology
   collection:
@@ -330258,6 +330409,7 @@ resources:
     title: 'ORCID: a system to uniquely identify researchers'
     year: '2012'
   repository: https://github.com/ORCID
+  rrid: SCR_008700
 - activity_status: active
   category: DataSource
   contacts:
@@ -333315,6 +333467,7 @@ resources:
     title: 'Clinical Practice Guidelines for Rare Diseases: The Orphanet Database'
     year: '2017'
   repository: https://github.com/Orphanet
+  rrid: SCR_006628
   taxon:
   - NCBITaxon:9606
   version: December 2025
@@ -334090,6 +334243,7 @@ resources:
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/OVAE.tar.gz
   publications: []
   repository: https://github.com/OVAE-Ontology/ovae
+  rrid: SCR_003442
 - activity_status: active
   category: DataSource
   collection:
@@ -334378,6 +334532,7 @@ resources:
       Islets'
     year: '2026'
   repository: https://github.com/PanKbase
+  rrid: SCR_026593
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -334770,6 +334925,7 @@ resources:
       in Skyline'
     year: '2018'
   repository: https://github.com/LabKey/MacCossLabModules
+  rrid: SCR_017136
   synonyms:
   - PanoramaWeb Public
 - activity_status: active
@@ -337712,6 +337868,7 @@ resources:
     title: 'PANTHER: Making genome-scale phylogenetics accessible to all'
     year: '2022'
   repository: https://data.pantherdb.org/ftp/
+  rrid: SCR_004869
 - activity_status: active
   category: DataSource
   contacts:
@@ -343259,6 +343416,7 @@ resources:
     title: 'PaxDb v6.0: reprocessed, LLM-selected, curated protein abundance data
       across organisms'
     year: '2026'
+  rrid: SCR_018910
 - activity_status: active
   category: Ontology
   collection:
@@ -345862,6 +346020,7 @@ resources:
     title: 'Protein Data Bank: the single global archive for 3D macromolecular structure
       data'
     year: '2019'
+  rrid: SCR_012820
   synonyms:
   - PDB
   - Protein Data Bank
@@ -347794,6 +347953,7 @@ resources:
     title: 'Human SRMAtlas: A Resource of Targeted Assays to Quantify the Complete
       Human Proteome'
     year: '2016'
+  rrid: SCR_006783
   synonyms:
   - PA
   - PASSEL
@@ -352188,6 +352348,7 @@ resources:
     title: 'TCRD and Pharos 2021: mining the human proteome for disease biology'
     year: '2021'
   repository: https://github.com/ncats/pharos_frontend
+  rrid: SCR_016258
   synonyms:
   - Pharos
   - TCRD
@@ -354882,6 +355043,7 @@ resources:
     title: PhosPhAt, a database of phosphorylation sites in Arabidopsis thaliana and
       a plant-specific phosphorylation site predictor
     year: '2007'
+  rrid: SCR_003332
   synonyms:
   - Arabidopsis Protein Phosphorylation Site Database
   taxon:
@@ -356093,6 +356255,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'PhosphoSitePlus, 2014: mutations, PTMs and recalibrations.'
     year: '2015'
+  rrid: SCR_001837
 - activity_status: active
   category: DataSource
   creation_date: '2026-10-19T00:00:00Z'
@@ -356597,6 +356760,7 @@ resources:
     journal: BMC Bioinformatics
     title: Model annotation and discovery with the Physiome Model Repository
     year: '2019'
+  rrid: SCR_017374
   synonyms:
   - PMR
   - PMR2
@@ -358457,6 +358621,7 @@ resources:
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics'
     year: '2018'
+  rrid: SCR_014411
 - activity_status: active
   category: DataSource
   creation_date: '2025-09-09T00:00:00Z'
@@ -360404,6 +360569,7 @@ resources:
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: pmda
+  rrid: SCR_000244
   synonyms:
   - PMDA
 - activity_status: active
@@ -363764,6 +363930,7 @@ resources:
     title: 'PomBase: a Global Core Biodata Resource-growth, collaboration, and sustainability'
     year: '2024'
   repository: https://www.pombase.org/datasets
+  rrid: SCR_006586
   taxon:
   - NCBITaxon:4896
   - NCBITaxon:4932
@@ -363905,6 +364072,7 @@ resources:
       ontology'
     year: '2014'
   repository: https://github.com/obophenotype/porifera-ontology
+  rrid: SCR_000134
   taxon:
   - NCBITaxon:6040
 - activity_status: active
@@ -365656,6 +365824,7 @@ resources:
       protein entities'
     year: '2017'
   repository: https://github.com/PROconsortium/PRoteinOntology
+  rrid: SCR_004964
 - activity_status: active
   category: Ontology
   collection:
@@ -366211,6 +366380,7 @@ resources:
       proteomics evidences'
     year: '2022'
   repository: https://github.com/PRIDE-Archive
+  rrid: SCR_003411
   synonyms:
   - PRIDE
   - PRoteomics IDEntifications Database
@@ -370043,6 +370213,7 @@ resources:
     preferred: true
     title: New and continuing developments at PROSITE
     year: '2012'
+  rrid: SCR_003457
 - activity_status: active
   category: DataSource
   contacts:
@@ -371503,6 +371674,7 @@ resources:
     title: 'The ProteomeXchange consortium in 2017: supporting the cultural change
       in proteomics public data deposition'
     year: '2017'
+  rrid: SCR_004055
   synonyms:
   - PX
   - ProteomeCentral
@@ -371834,6 +372006,7 @@ resources:
     preferred: true
     title: ProteomicsDB
     year: '2018'
+  rrid: SCR_015562
 - activity_status: active
   category: DataSource
   contacts:
@@ -372147,6 +372320,7 @@ resources:
     title: Proteopedia - a scientific 'wiki' bridging the rift between three-dimensional
       structure and function of biomacromolecules
     year: '2008'
+  rrid: SCR_004647
 - activity_status: active
   category: Ontology
   contacts:
@@ -376634,6 +376808,7 @@ resources:
     title: PubChem 2019 update - improved access to chemical data
     year: '2019'
   repository: https://github.com/ncbi/datasets
+  rrid: SCR_004742
 - activity_status: active
   category: Aggregator
   contacts:
@@ -379600,6 +379775,7 @@ resources:
     title: 'Best Match: New relevance search for PubMed'
     year: '2018'
   repository: https://www.ncbi.nlm.nih.gov/
+  rrid: SCR_004846
   synonyms:
   - PubMed
   - MEDLINE
@@ -380653,6 +380829,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: osv
     product_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+  rrid: SCR_023145
 - activity_status: active
   category: DataSource
   creation_date: '2026-05-29T00:00:00Z'
@@ -381453,6 +381630,7 @@ resources:
     title: 'Rice Annotation Project Database (RAP-DB): an integrative and interactive
       database for rice genomics'
     year: '2013'
+  rrid: SCR_015062
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -390046,6 +390224,7 @@ resources:
     title: The Reactome pathway knowledgebase 2022
     year: '2022'
   repository: https://github.com/reactome
+  rrid: SCR_023504
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -390994,6 +391173,7 @@ resources:
     title: 'REDfly: a Regulatory Element Database for Drosophila'
     year: '2006'
   repository: https://github.com/redflydb/redfly
+  rrid: SCR_006790
   taxon:
   - NCBITaxon:7227
   - NCBITaxon:50557
@@ -391446,6 +391626,7 @@ resources:
     title: 'REDIportal: toward an integrated view of the A-to-I editing'
     year: '2025'
   repository: https://github.com/BioinfoUNIBA/REDItools
+  rrid: SCR_018490
 - activity_status: active
   category: Aggregator
   contacts:
@@ -393967,6 +394148,7 @@ resources:
       of genomes, transcripts and proteins'
     year: '2007'
   repository: https://ftp.ncbi.nlm.nih.gov/refseq/
+  rrid: SCR_022748
 - activity_status: active
   category: DataSource
   collection:
@@ -399575,6 +399757,7 @@ resources:
     preferred: true
     title: Rhea, the reaction knowledgebase in 2022
     year: '2022'
+  rrid: SCR_004713
 - activity_status: active
   category: DataSource
   contacts:
@@ -402432,6 +402615,7 @@ resources:
       source: rnacentral
     product_file_size: 681668343
     product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+  rrid: SCR_023115
 - activity_status: active
   category: DataSource
   creation_date: '2026-05-29T00:00:00Z'
@@ -406618,6 +406802,7 @@ resources:
       source: text-mining-kp
     product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
   repository: https://github.com/NCATS-Gamma/robokop
+  rrid: SCR_023437
 - activity_status: active
   category: DataSource
   contacts:
@@ -407225,6 +407410,7 @@ resources:
     secondary_source:
     - relation_type: prov:wasInfluencedBy
       source: us-census
+  rrid: SCR_027474
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -408212,6 +408398,7 @@ resources:
     preferred: true
     title: 'Normalized names for clinical drugs: RxNorm at 6 years.'
     year: '2011'
+  rrid: SCR_006645
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -409232,6 +409419,7 @@ resources:
     product_file_size: 8114434
     product_url: https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-04-01.owl.zip
     repository: https://github.com/elsevier-health/scibite-ontology
+  rrid: SCR_003952
 - activity_status: active
   category: DataSource
   creation_date: '2025-09-09T00:00:00Z'
@@ -409848,6 +410036,7 @@ resources:
     title: 'The SCOP database in 2020: expanded classification of representative family
       and superfamily domains of known protein structures'
     year: '2020'
+  rrid: SCR_007039
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -414719,6 +414908,7 @@ resources:
       signatures'
     year: '2022'
   repository: https://github.com/MaayanLab/sigcom-lincs
+  rrid: SCR_022275
   synonyms:
   - Signature Commons LINCS
   taxon:
@@ -415779,6 +415969,7 @@ resources:
     preferred: true
     title: 'SIGNOR 3.0, the SIGnaling network open resource 3.0: 2022 update'
     year: '2023'
+  rrid: SCR_018485
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -416578,6 +416769,7 @@ resources:
     title: The SILVA and 'All-species Living Tree Project (LTP)' taxonomic frameworks
     year: '2014'
   repository: https://github.com/epruesse/SINA
+  rrid: SCR_006423
   taxon:
   - NCBITaxon:2
   - NCBITaxon:2157
@@ -420410,6 +420602,7 @@ resources:
     journal: Nucleic Acids Research
     title: 'SMPDB 2.0: Big Improvements to the Small Molecule Pathway Database'
     year: '2014'
+  rrid: SCR_004844
   synonyms:
   - SMPDB
   taxon:
@@ -424165,6 +424358,7 @@ resources:
     preferred: true
     title: snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box snoRNAs
     year: '2006'
+  rrid: SCR_007939
   synonyms:
   - snoRNA-LBME-db
   - snoRNA database
@@ -425042,6 +425236,7 @@ resources:
     title: Evolution of the Sequence Ontology terms and relationships.
     year: '2011'
   repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
+  rrid: SCR_004374
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -425223,6 +425418,7 @@ resources:
       source: sckan
     product_file_size: 198292
     product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/SPARC.zip
+  rrid: SCR_017041
   synonyms:
   - SPARC
   - Stimulating Peripheral Activity to Relieve Conditions
@@ -426530,6 +426726,7 @@ resources:
     preferred: true
     title: 'The Sequence Read Archive: a decade more of explosive growth'
     year: '2022'
+  rrid: SCR_004891
   synonyms:
   - SRA
   - Sequence Read Archive
@@ -435240,6 +435437,7 @@ resources:
     title: The SwissLipids knowledgebase for lipid biology
     year: '2015'
   repository: https://www.swisslipids.org/
+  rrid: SCR_019074
   synonyms:
   - slm
   - swisslipid
@@ -436001,6 +436199,7 @@ resources:
     preferred: true
     title: 'SWISS-MODEL: homology modelling of protein structures and complexes'
     year: '2018'
+  rrid: SCR_018123
   synonyms:
   - SWISS-MODEL
   - SWISSMODEL
@@ -439462,6 +439661,7 @@ resources:
     preferred: true
     title: 'The Transporter Classification Database (TCDB): 2021 update'
     year: '2021'
+  rrid: SCR_004490
   synonyms:
   - TCDB
   - Transporter Classification Database
@@ -444713,6 +444913,7 @@ resources:
     preferred: true
     title: Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program
     year: '2021'
+  rrid: SCR_028178
   synonyms:
   - TOPMed
   - Trans-Omics for Precision Medicine
@@ -447709,6 +447910,7 @@ resources:
     title: 'TRRUST v2: an expanded reference database of human and mouse transcriptional
       regulatory interactions'
     year: '2018'
+  rrid: SCR_022554
 - activity_status: active
   category: DataSource
   contacts:
@@ -455821,6 +456023,7 @@ resources:
       biology in Uberon
     year: '2014'
   repository: https://github.com/obophenotype/uberon
+  rrid: SCR_010668
   taxon:
   - NCBITaxon:33208
 - activity_status: active
@@ -457099,6 +457302,7 @@ resources:
     preferred: true
     title: The human genome browser at UCSC
     year: '2002'
+  rrid: SCR_005780
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -459720,6 +459924,7 @@ resources:
     preferred: true
     title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
     year: '2004'
+  rrid: SCR_006363
   synonyms:
   - UMLS
   taxon:
@@ -468329,6 +468534,7 @@ resources:
     title: 'UniProt: the Universal Protein Knowledgebase in 2025'
     year: '2025'
   repository: https://www.uniprot.org/help/downloads
+  rrid: SCR_004477
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -468494,6 +468700,7 @@ resources:
     preferred: true
     title: 'UniRef: comprehensive and non-redundant UniProt reference clusters'
     year: '2007'
+  rrid: SCR_010646
   synonyms:
   - UniRef
   - UniRef100
@@ -470065,6 +470272,7 @@ resources:
     secondary_source:
     - relation_type: prov:wasInfluencedBy
       source: us-census
+  rrid: SCR_011587
 - activity_status: active
   category: DataSource
   collection:
@@ -470236,6 +470444,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: cabi-isc
     product_url: https://apps.okn.us/ldf/wildlifekn
+  rrid: SCR_010168
 - activity_status: active
   category: DataSource
   contacts:
@@ -470963,6 +471172,7 @@ resources:
       source: pdb
     - relation_type: prov:wasInfluencedBy
       source: lincs
+  rrid: SCR_014356
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -471523,6 +471733,7 @@ resources:
     preferred: true
     title: VISTA Enhancer Browser--a database of tissue-specific human enhancers
     year: '2007'
+  rrid: SCR_007973
 - activity_status: active
   category: Ontology
   collection:
@@ -471943,6 +472154,7 @@ resources:
       Vaccine Ontology
     year: '2011'
   repository: https://github.com/vaccineontology/VO
+  rrid: SCR_003442
 - activity_status: active
   category: Ontology
   collection:
@@ -473596,6 +473808,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikipathways
     product_url: https://spoke.ucsf.edu/data-tools
+  rrid: SCR_008505
   synonyms:
   - WHO
 - activity_status: active
@@ -473788,6 +474001,7 @@ resources:
     preferred: true
     title: 'Clinical trial registration: transparency is the watchword'
     year: '2006'
+  rrid: SCR_004475
   synonyms:
   - ICTRP
   - WHO ICTRP
@@ -477984,6 +478198,7 @@ resources:
     title: WikiPathways - connecting communities
     year: '2021'
   repository: https://github.com/wikipathways/wikipathways-database
+  rrid: SCR_002134
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
@@ -478629,6 +478844,7 @@ resources:
       source: wikipedia
     product_file_size: 5340
     product_url: https://databus.dbpedia.org/dbpedia/dbpedia-wikipedia-kg-dump
+  rrid: SCR_004897
   synonyms:
   - English Wikipedia
 - activity_status: active
@@ -479084,6 +479300,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: cabi-isc
     product_url: https://apps.okn.us/ldf/wildlifekn
+  rrid: SCR_010244
 - activity_status: active
   category: DataSource
   contacts:
@@ -480759,6 +480976,7 @@ resources:
     title: 'WormBase: a comprehensive resource for nematode research.'
     year: '2010'
   repository: https://github.com/WormBase
+  rrid: SCR_003098
   synonyms:
   - WB
   taxon:
@@ -481057,6 +481275,7 @@ resources:
       more accurate annotation of gene expression and queries on Xenbase.'
     year: '2013'
   repository: https://github.com/xenopus-anatomy/xao
+  rrid: SCR_004337
   taxon:
   - NCBITaxon:8353
 - activity_status: active
@@ -481309,6 +481528,7 @@ resources:
       ontologies: expansion, improvements and new applications.'
     year: '2013'
   repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
+  rrid: SCR_003306
 - activity_status: active
   category: DataSource
   creation_date: '2025-08-13T00:00:00Z'
@@ -483179,6 +483399,7 @@ resources:
     title: 'Xenbase: key features and resources of the Xenopus model organism knowledgebase'
     year: '2023'
   repository: https://github.com/xenopus-anatomy
+  rrid: SCR_003280
   taxon:
   - NCBITaxon:8355
 - activity_status: active
@@ -484373,6 +484594,7 @@ resources:
     journal: JAMA
     title: A Model for Dissemination and Independent Analysis of Industry Data
     year: '2011'
+  rrid: SCR_022761
   synonyms:
   - YODA Project
   - Yale University Open Data Access Project
@@ -484995,6 +485217,7 @@ resources:
       development of Danio rerio.'
     year: '2014'
   repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+  rrid: SCR_005887
   taxon:
   - NCBITaxon:7954
 - activity_status: active
@@ -487564,6 +487787,7 @@ resources:
     title: Zebrafish Information Network, the knowledgebase for Danio rerio research
     year: '2022'
   repository: https://github.com/ZFIN/
+  rrid: SCR_013326
   taxon:
   - NCBITaxon:7955
 - activity_status: active
@@ -491818,6 +492042,7 @@ resources:
     preferred: true
     title: 'ChemBank: a small-molecule screening and cheminformatics resource database'
     year: '2008'
+  rrid: SCR_007592
 - activity_status: inactive
   category: DataSource
   contacts:
@@ -493825,6 +494050,7 @@ resources:
     product_file_size: 23439
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/FIX.tar.gz
   publications: []
+  rrid: SCR_010407
 - activity_status: inactive
   category: Ontology
   collection:
@@ -493872,6 +494098,7 @@ resources:
     product_file_size: 12298
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/FLU.tar.gz
   publications: []
+  rrid: SCR_003346
 - activity_status: inactive
   category: Ontology
   collection:
@@ -494467,6 +494694,7 @@ resources:
       Model of Anatomy case-study'
     year: '2005'
   repository: https://bitbucket.org/uwsig/fma
+  rrid: SCR_003379
   taxon:
   - NCBITaxon:9606
 - activity_status: inactive
@@ -495392,6 +495620,7 @@ resources:
     title: 'GLIDA: GPCR ligand database for chemical genomics drug discovery database
       and tools update'
     year: '2007'
+  rrid: SCR_007690
   synonyms:
   - GPCR-LIgand DAtabase
   - GPCR-Ligand Database
@@ -495472,6 +495701,7 @@ resources:
   name: Cereal Plant Gross Anatomy
   products: []
   publications: []
+  rrid: SCR_007061
 - activity_status: inactive
   category: Ontology
   collection:
@@ -495494,6 +495724,7 @@ resources:
   name: Habronattus courtship
   products: []
   publications: []
+  rrid: SCR_010334
 - activity_status: inactive
   category: DataSource
   contacts:
@@ -496134,6 +496365,7 @@ resources:
       source: wormbase
     - relation_type: prov:wasDerivedFrom
       source: xenbase
+  rrid: SCR_002924
   taxon:
   - NCBITaxon:2759
   warnings:
@@ -498063,6 +498295,7 @@ resources:
     title: Analysis of the human protein interactome and comparison with yeast, worm
       and fly interaction datasets
     year: '2006'
+  rrid: SCR_007027
   taxon:
   - NCBITaxon:9606
 - activity_status: unresponsive
@@ -498987,6 +499220,7 @@ resources:
     product_url: http://purl.obolibrary.org/obo/scdo.obo
   publications: []
   repository: https://github.com/VEuPathDB-ontology/IDOMAL
+  rrid: SCR_003369
 - activity_status: inactive
   category: Ontology
   collection:
@@ -499450,6 +499684,7 @@ resources:
     title: 'INOH: ontology-based highly structured database of signal transduction
       pathways'
     year: '2011'
+  rrid: SCR_002084
   synonyms:
   - Integrating Network Objects with Hierarchies
 - activity_status: inactive
@@ -501223,6 +501458,7 @@ resources:
     preferred: true
     title: 'lncRNAdb: a reference database for long noncoding RNAs'
     year: '2011'
+  rrid: SCR_015491
   taxon:
   - NCBITaxon:2759
   warnings:
@@ -502058,6 +502294,7 @@ resources:
     product_file_size: 34554
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MIRNAO.tar.gz
   publications: []
+  rrid: SCR_010360
 - activity_status: inactive
   category: Ontology
   collection:
@@ -502834,6 +503071,7 @@ resources:
     journal: Genome Biology
     title: 'NetPath: a public resource of curated signal transduction pathways'
     year: '2010'
+  rrid: SCR_003567
   synonyms:
   - NetPath
   taxon:
@@ -503282,6 +503520,7 @@ resources:
     product_file_size: 9832
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08/OGI.tar.gz
   publications: []
+  rrid: SCR_003423
   use_instead:
   - ogsf
 - activity_status: inactive
@@ -508333,6 +508572,7 @@ resources:
     title: Phospho.ELM, a database of experimentally verified phosphorylation sites
       in eukaryotic proteins
     year: '2004'
+  rrid: SCR_001109
   synonyms:
   - PhosphoELM
   warnings:
@@ -511574,6 +511814,7 @@ resources:
     product_file_size: 40424
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SAO.tar.gz
   publications: []
+  rrid: SCR_003486
   taxon:
   - NCBITaxon:9606
   use_instead:
@@ -514977,6 +515218,7 @@ resources:
     journal: Molecular Systems Biology
     title: A side effect resource to capture phenotypic effects of drugs
     year: '2010'
+  rrid: SCR_004321
   warnings:
   - The last release for this resource was on October 21, 2015.
 - activity_status: inactive
@@ -516056,6 +516298,7 @@ resources:
     product_file_size: 6800
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/SOPHARM.tar.gz
   publications: []
+  rrid: SCR_003497
   taxon:
   - NCBITaxon:9606
 - activity_status: inactive
@@ -517680,6 +517923,7 @@ resources:
     title: 'The teleost anatomy ontology: anatomical representation for the genomics
       age'
     year: '2010'
+  rrid: SCR_001610
   taxon:
   - NCBITaxon:32443
   use_instead:
@@ -518806,6 +519050,7 @@ resources:
     title: 'TRED: a transcriptional regulatory element database, new entries and other
       development'
     year: '2007'
+  rrid: SCR_005661
 - activity_status: inactive
   category: Ontology
   collection:
@@ -519428,6 +519673,7 @@ resources:
     preferred: true
     title: WordNet
     year: '1995'
+  rrid: SCR_022182
   synonyms:
   - Princeton WordNet
   - PWN
