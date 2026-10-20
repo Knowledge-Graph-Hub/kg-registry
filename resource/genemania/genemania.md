@@ -32,7 +32,7 @@ products:
         source: genemania
     secondary_source:
       - relation_type: prov:wasDerivedFrom
-        source: geo
+        source: gene-expression-omnibus
       - relation_type: prov:wasDerivedFrom
         source: biogrid
       - relation_type: prov:wasDerivedFrom

@@ -9,7 +9,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: archs4
 - relation_type: prov:hadPrimarySource
-  source: geo
+  source: gene-expression-omnibus
 - relation_type: prov:hadPrimarySource
   source: sra
 - relation_type: prov:wasDerivedFrom

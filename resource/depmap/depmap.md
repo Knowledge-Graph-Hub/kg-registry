@@ -431,7 +431,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: gdsc
   - relation_type: prov:wasDerivedFrom
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:wasDerivedFrom
     source: glygen
   - relation_type: prov:wasDerivedFrom
@@ -532,7 +532,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: gdsc
   - relation_type: prov:wasDerivedFrom
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:wasDerivedFrom
     source: glygen
   - relation_type: prov:wasDerivedFrom

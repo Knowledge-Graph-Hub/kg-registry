@@ -13,7 +13,7 @@ original_source:
 product_url: https://genemania.org/data/current/
 secondary_source:
 - relation_type: prov:wasDerivedFrom
-  source: geo
+  source: gene-expression-omnibus
 - relation_type: prov:wasDerivedFrom
   source: biogrid
 - relation_type: prov:wasDerivedFrom

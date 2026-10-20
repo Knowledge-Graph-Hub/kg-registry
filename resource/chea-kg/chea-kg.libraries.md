@@ -19,7 +19,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: enrichr
 - relation_type: prov:hadPrimarySource
-  source: geo
+  source: gene-expression-omnibus
 - relation_type: prov:hadPrimarySource
   source: tcga
 product_url: https://maayanlab.cloud/chea3/index.html#content4-13

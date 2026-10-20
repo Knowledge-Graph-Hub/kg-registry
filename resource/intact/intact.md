@@ -1239,7 +1239,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1316,7 +1316,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1394,7 +1394,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1471,7 +1471,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1548,7 +1548,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1626,7 +1626,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1703,7 +1703,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1780,7 +1780,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -1857,7 +1857,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: flybase
   - relation_type: prov:hadPrimarySource
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
@@ -2248,7 +2248,7 @@ products:
   product_url: https://genemania.org/data/current/
   secondary_source:
   - relation_type: prov:wasDerivedFrom
-    source: geo
+    source: gene-expression-omnibus
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   - relation_type: prov:wasDerivedFrom

@@ -20,7 +20,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: enrichr
 - relation_type: prov:hadPrimarySource
-  source: geo
+  source: gene-expression-omnibus
 - relation_type: prov:hadPrimarySource
   source: tcga
 secondary_source:
