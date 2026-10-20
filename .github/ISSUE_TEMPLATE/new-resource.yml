@@ -72,6 +72,15 @@ body:
     validations:
       required: false
 
+  - type: input
+    id: rrid
+    attributes:
+      label: RRID
+      description: The SciCrunch Research Resource Identifier, if known. Enter it without the 'RRID:' prefix.
+      placeholder: e.g., SCR_005065
+    validations:
+      required: false
+
   - type: markdown
     attributes:
       value: "## Domains and Tags"

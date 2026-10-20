@@ -191,6 +191,12 @@ classes:
           The Infores ID of the resource.
           Do not include the 'infores' prefix.
         range: string
+      rrid:
+        description: >-
+          The SciCrunch Research Resource Identifier (RRID) of the resource.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        range: string
+        pattern: "^[A-Za-z]+_[A-Za-z0-9_.-]+$"
       taxon:
         description: >-
           The taxon or taxa that the resource is relevant to.
@@ -359,11 +365,21 @@ classes:
         description: Tags associated with the product.
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        description: >-
+          The FAIRsharing ID of the product.
+        range: string
       infores_id:
         description: >-
           The Infores ID of the product.
           Do not include the 'infores' prefix.
         range: string
+      rrid:
+        description: >-
+          The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        range: string
+        pattern: "^[A-Za-z]+_[A-Za-z0-9_.-]+$"
       compatibility:
         description: >-
           A list of standards that the product conforms to.

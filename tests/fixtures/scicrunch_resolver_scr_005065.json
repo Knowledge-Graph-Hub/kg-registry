@@ -1,0 +1,397 @@
+{
+ "hits": {
+  "total": 1,
+  "hits": [
+   {
+    "_source": {
+     "item": {
+      "supercategory": [
+       {
+        "name": "Resource",
+        "type": "supercategory"
+       }
+      ],
+      "contentTypes": [
+       {
+        "curie": "ilx:0381348",
+        "name": "product"
+       }
+      ],
+      "language": "en",
+      "description": "Center that supplies access to wild-type, mutant, and transgenic zebrafish lines, EST's/cDNAs, antibodies and fish health services. ZIRC Health Services include diagnostic pathology testing for zebrafish and other small laboratory fish species.",
+      "identifier": "SCR_005065",
+      "docid": "rrid:scr_005065",
+      "uuid": "617c1cba-8231-56ca-b2c2-382ff144c4ee",
+      "synonyms": [
+       {
+        "name": "Zebrafish International Resource Center"
+       }
+      ],
+      "types": [
+       {
+        "name": "biomaterial supply resource",
+        "type": "category"
+       },
+       {
+        "name": "material resource",
+        "type": "category"
+       },
+       {
+        "name": "organism supplier",
+        "type": "category"
+       }
+      ],
+      "keywords": [
+       {
+        "keyword": "RIN"
+       },
+       {
+        "keyword": "Resource Information Network"
+       },
+       {
+        "keyword": "zebrafish line"
+       },
+       {
+        "keyword": "expressed sequence tag"
+       },
+       {
+        "keyword": "cdna"
+       },
+       {
+        "keyword": "fish"
+       },
+       {
+        "keyword": "antibody"
+       },
+       {
+        "keyword": "pathology"
+       },
+       {
+        "keyword": "research"
+       },
+       {
+        "keyword": "embryo"
+       },
+       {
+        "keyword": "adult"
+       },
+       {
+        "keyword": "RRID Community Authority"
+       }
+      ],
+      "specification": [
+       {
+        "uri": ""
+       }
+      ],
+      "curie": "SCR_005065",
+      "availability": [
+       {
+        "description": "Restricted",
+        "keyword": "Restricted"
+       }
+      ],
+      "alternateIdentifiers": [
+       {
+        "identifier": "nif-0000-00242"
+       }
+      ],
+      "abbreviations": [
+       {
+        "name": "ZIRC"
+       }
+      ],
+      "name": "Zebrafish International Resource Center"
+     },
+     "authority": {
+      "name": "SciCrunch Registry",
+      "identifier": "SCR_005400",
+      "curie": "RRID:SCR_005400"
+     },
+     "distributions": {
+      "current": [
+       {
+        "type": "landing page",
+        "uri": "http://zebrafish.org"
+       }
+      ],
+      "deprecated": [
+       {
+        "uri": ""
+       }
+      ],
+      "alternate": [
+       {
+        "uri": "http://zebrafish.org/home/guide.php"
+       }
+      ]
+     },
+     "rrid": {
+      "is_unique": "true",
+      "curie": "RRID:SCR_005065",
+      "properCitation": "Zebrafish International Resource Center (RRID:SCR_005065)"
+     },
+     "disco": {
+      "v_uuid": "617c1cba-8231-56ca-b2c2-382ff144c4ee"
+     },
+     "graph": {
+      "parent": [
+       {
+        "resource": {
+         "identifier": "SCR_006269",
+         "name": "University of Oregon; Oregon; USA"
+        },
+        "relationship": {
+         "identifier": "7",
+         "name": "has_parent_organization"
+        }
+       }
+      ],
+      "related": [
+       {
+        "resource": {
+         "identifier": "SCR_004193",
+         "name": "One Mind Biospecimen Bank Listing"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_006161",
+         "name": "ZMP"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_004834",
+         "name": "NIF Data Federation"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_002560",
+         "name": "Zebrafish Information Network (ZFIN)"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_006896",
+         "name": "zfishbook"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       }
+      ],
+      "relationships": [
+       {
+        "resource": {
+         "identifier": "SCR_001421",
+         "name": "Integrated Animals"
+        },
+        "relationship": {
+         "identifier": "2",
+         "name": "is_used_by"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_004193",
+         "name": "One Mind Biospecimen Bank Listing"
+        },
+        "relationship": {
+         "identifier": "4",
+         "name": "is_listed_by"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_023186",
+         "name": "Resource Information Network"
+        },
+        "relationship": {
+         "identifier": "4",
+         "name": "is_listed_by"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_004193",
+         "name": "One Mind Biospecimen Bank Listing"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_006161",
+         "name": "ZMP"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_004834",
+         "name": "NIF Data Federation"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_002560",
+         "name": "Zebrafish Information Network (ZFIN)"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_006896",
+         "name": "zfishbook"
+        },
+        "relationship": {
+         "identifier": "6",
+         "name": "is_related_to"
+        }
+       },
+       {
+        "resource": {
+         "identifier": "SCR_006269",
+         "name": "University of Oregon; Oregon; USA"
+        },
+        "relationship": {
+         "identifier": "7",
+         "name": "has_parent_organization"
+        }
+       }
+      ]
+     },
+     "legal": {
+      "license": {
+       "name": "Resource specific license"
+      },
+      "terms": {
+       "uris": [
+        "http://zebrafish.org/documents/terms_of_use.php"
+       ]
+      }
+     },
+     "diseases": {
+      "related": [
+       {
+        "role": "Related Disease",
+        "name": ""
+       }
+      ]
+     },
+     "supportingAwards": [
+      {
+       "agency": {
+        "identifier": "RR12546",
+        "name": "NCRR"
+       }
+      },
+      {
+       "agency": {
+        "identifier": "HD12546",
+        "name": "NICHD"
+       }
+      },
+      {
+       "agency": {
+        "identifier": "P40 OD011021",
+        "name": "NIH Office of the Director"
+       }
+      },
+      {
+       "agency": {
+        "identifier": "",
+        "name": "W.M. Keck Foundation"
+       }
+      }
+     ],
+     "references": [
+      {
+       "curie": ""
+      }
+     ],
+     "organisms": {
+      "related": [
+       {
+        "role": "Related Species",
+        "species": {
+         "name": "Zebrafish"
+        }
+       }
+      ]
+     },
+     "organization": {
+      "hierarchy": []
+     },
+     "validation": {
+      "isValidated": false,
+      "totalValidationSites": {
+       "count": 0
+      }
+     },
+     "issues": {
+      "totalIssues": {
+       "count": 0
+      },
+      "status": [
+       "No Known Issues"
+      ]
+     },
+     "mentions": [
+      {
+       "totalResourceMentions": {
+        "count": 236
+       },
+       "availability": {
+        "keyword": "available"
+       },
+       "totalRRIDMentions": {
+        "count": 291
+       },
+       "totalMentions": {
+        "count": 461
+       },
+       "timestamp": "2026-10-17 20:34:33.46"
+      }
+     ],
+     "recordValid": true
+    }
+   }
+  ]
+ },
+ "resolver": {
+  "uri": "scicrunch.org/resolver",
+  "timestamp": "2026-10-20T07:45:34-07:00"
+ }
+}

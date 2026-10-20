@@ -1082,8 +1082,9 @@ class Resource(NamedThing):
     funding: Optional[list[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     publications: Optional[list[Publication]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Usage']} })
     usages: Optional[list[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
-    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization'], 'slot_uri': 'dcterms:identifier'} })
@@ -1093,6 +1094,19 @@ class Resource(NamedThing):
     layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class KnowledgeGraph(Resource):
@@ -1125,8 +1139,9 @@ class KnowledgeGraph(Resource):
     funding: Optional[list[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     publications: Optional[list[Publication]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Usage']} })
     usages: Optional[list[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
-    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization'], 'slot_uri': 'dcterms:identifier'} })
@@ -1136,6 +1151,19 @@ class KnowledgeGraph(Resource):
     layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class DataSource(Resource):
@@ -1162,8 +1190,9 @@ class DataSource(Resource):
     funding: Optional[list[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     publications: Optional[list[Publication]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Usage']} })
     usages: Optional[list[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
-    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization'], 'slot_uri': 'dcterms:identifier'} })
@@ -1173,6 +1202,19 @@ class DataSource(Resource):
     layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class DataModel(Resource):
@@ -1199,8 +1241,9 @@ class DataModel(Resource):
     funding: Optional[list[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     publications: Optional[list[Publication]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Usage']} })
     usages: Optional[list[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
-    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization'], 'slot_uri': 'dcterms:identifier'} })
@@ -1210,6 +1253,19 @@ class DataModel(Resource):
     layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class Ontology(Resource):
@@ -1236,8 +1292,9 @@ class Ontology(Resource):
     funding: Optional[list[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     publications: Optional[list[Publication]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Usage']} })
     usages: Optional[list[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
-    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization'], 'slot_uri': 'dcterms:identifier'} })
@@ -1247,6 +1304,19 @@ class Ontology(Resource):
     layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class Aggregator(Resource):
@@ -1273,8 +1343,9 @@ class Aggregator(Resource):
     funding: Optional[list[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     publications: Optional[list[Publication]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Usage']} })
     usages: Optional[list[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
-    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization'], 'slot_uri': 'dcterms:identifier'} })
@@ -1284,6 +1355,19 @@ class Aggregator(Resource):
     layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class Product(NamedThing):
@@ -1305,7 +1389,9 @@ class Product(NamedThing):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1319,6 +1405,19 @@ class Product(NamedThing):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class GraphProduct(Product):
@@ -1344,7 +1443,9 @@ class GraphProduct(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1358,6 +1459,19 @@ class GraphProduct(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class DataModelProduct(Product):
@@ -1379,7 +1493,9 @@ class DataModelProduct(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1393,6 +1509,19 @@ class DataModelProduct(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class OntologyProduct(Product):
@@ -1414,7 +1543,9 @@ class OntologyProduct(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1428,6 +1559,19 @@ class OntologyProduct(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class MappingProduct(Product):
@@ -1449,7 +1593,9 @@ class MappingProduct(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1463,6 +1609,19 @@ class MappingProduct(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class ProcessProduct(Product):
@@ -1484,7 +1643,9 @@ class ProcessProduct(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1498,6 +1659,19 @@ class ProcessProduct(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class GraphicalInterface(Product):
@@ -1519,7 +1693,9 @@ class GraphicalInterface(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1533,6 +1709,19 @@ class GraphicalInterface(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class ProgrammingInterface(Product):
@@ -1557,7 +1746,9 @@ class ProgrammingInterface(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1571,6 +1762,19 @@ class ProgrammingInterface(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class DocumentationProduct(Product):
@@ -1592,7 +1796,9 @@ class DocumentationProduct(Product):
     contacts: Optional[list[Contact]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     curators: Optional[list[Contact]] = Field(default=None, description="""The curator(s) of the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     tags: Optional[list[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
+    rrid: Optional[str] = Field(default=None, description="""The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1606,6 +1812,19 @@ class DocumentationProduct(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     creation_date: Optional[datetime ] = Field(default=None, description="""The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
     last_modified_date: Optional[datetime ] = Field(default=None, description="""The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.""", json_schema_extra = { "linkml_meta": {'domain_of': ['NamedThing', 'Organization']} })
+
+    @field_validator('rrid')
+    def pattern_rrid(cls, v):
+        pattern=re.compile(r"^[A-Za-z]+_[A-Za-z0-9_.-]+$")
+        if isinstance(v, list):
+            for element in v:
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid rrid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid rrid format: {v}"
+            raise ValueError(err_msg)
+        return v
 
 
 class ContactDetails(ConfiguredBaseModel):

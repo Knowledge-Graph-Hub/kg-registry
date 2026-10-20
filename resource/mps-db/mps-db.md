@@ -112,6 +112,7 @@ publications:
   title: Applications of the microphysiology systems database for experimental ADME-Tox
     and disease models
   year: '2020'
+rrid: SCR_021126
 synonyms:
 - MPS-Db
 - MPS Database

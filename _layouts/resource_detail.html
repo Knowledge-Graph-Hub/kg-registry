@@ -219,23 +219,25 @@ layout: default
       <div class="col d-flex">
         <div class="card bg-light h-100 w-100">
           <div class="card-body">
-            <h5 class="card-title">Infores ID</h5>
-            {% if page.infores_id %}
-            <p class="card-text">infores:{{page.infores_id}}</p>
+            <h5 class="card-title">External IDs</h5>
+            {% assign has_external_ids = false %}
+            {% if page.infores_id %}{% assign has_external_ids = true %}{% endif %}
+            {% if page.fairsharing_id %}{% assign has_external_ids = true %}{% endif %}
+            {% if page.rrid %}{% assign has_external_ids = true %}{% endif %}
+            {% if has_external_ids %}
+            <ul class="list-unstyled card-text mb-0">
+              {% if page.infores_id %}
+              <li><span class="text-muted">Infores:</span> infores:{{page.infores_id}}</li>
+              {% endif %}
+              {% if page.fairsharing_id %}
+              <li><span class="text-muted">FAIRsharing:</span> <a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></li>
+              {% endif %}
+              {% if page.rrid %}
+              <li><span class="text-muted">RRID:</span> <a href="https://scicrunch.org/resolver/RRID:{{page.rrid}}">RRID:{{page.rrid}}</a></li>
+              {% endif %}
+            </ul>
             {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-      <div class="col d-flex">
-        <div class="card bg-light h-100 w-100">
-          <div class="card-body">
-            <h5 class="card-title">FAIRsharing ID</h5>
-            {% if page.fairsharing_id %}
-            <p class="card-text"><a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></p>
-            {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
+            <p class="card-text text-muted">No external IDs available</p>
             {% endif %}
           </div>
         </div>

@@ -17,6 +17,8 @@ When creating new Resource entries or updating stub entries, ensure that you inc
 
 If a Product mentions another Resource in its description, find the ID of that Resource and include it in the Product's `original_source` field. For example, if a product is described as "A mapping file to WikiPathways", then the `original_source` list for this Product should include `wikipathways`.
 
+If a Resource or Product has a SciCrunch Research Resource Identifier (RRID), record it in the `rrid` field rather than only in the page body text. Store the identifier without the `RRID:` prefix (e.g. `SCR_005065`). If you find an RRID written in the body text, move it into the `rrid` field.
+
 For new products, if you cannot identify an appropriate category, use "Product". There is no such category as "DataProduct".
 
 The `creation_date` field refers to the date our metadata page was created, not the date of creation of the described resource.

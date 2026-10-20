@@ -71,6 +71,7 @@ publications:
   title: 'From nematode to Nobel: How community-shared resources fueled the rise of
     Caenorhabditis elegans as a research organism'
   year: '2025'
+rrid: SCR_007341
 synonyms:
 - CGC
 taxon:
