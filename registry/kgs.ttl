@@ -3573,6 +3573,7 @@ kgr:cgc a schema1:DataSource ;
     schema1:about <NCBITaxon:6237> ;
     schema1:hasPart kgr:cgc.strain-list,
         kgr:cgc.strain-search ;
+    schema1:identifier "RRID:SCR_007341" ;
     schema1:name "Caenorhabditis Genetics Center" ;
     skos:altLabel "CGC" ;
     skos:inScheme "genetic variation",
@@ -15310,7 +15311,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-20T14:22:51+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-20T16:15:45+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -18109,6 +18110,7 @@ kgr:mps-db a schema1:DataSource ;
     dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mps-db.eveanalytics,
         kgr:mps-db.portal ;
+    schema1:identifier "RRID:SCR_021126" ;
     schema1:name "Microphysiology Systems Database" ;
     skos:altLabel "BioSystics Analytics Platform",
         "BioSystics-AP",
@@ -31347,6 +31349,7 @@ kgr:zirc a schema1:DataSource ;
     schema1:hasPart kgr:zirc.antibody-catalog,
         kgr:zirc.est-catalog,
         kgr:zirc.fish-catalog ;
+    schema1:identifier "RRID:SCR_005065" ;
     schema1:name "Zebrafish International Resource Center" ;
     skos:altLabel "ZIRC" ;
     skos:inScheme "genetic variation",
@@ -49394,26 +49397,31 @@ kgr:atom.pipeline a schema1:ProcessProduct ;
 kgr:automat.ctd a schema1:GraphProduct ;
     rdfs:label "ctd_automat" ;
     dcterms:description "CTD Automat" ;
+    schema1:identifier "automat-ctd" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/CTD_Automat/f92c663160ec5e36/> .
 
 kgr:automat.drugcentral a schema1:GraphProduct ;
     rdfs:label "drugcentral_automat" ;
     dcterms:description "DrugCentral Automat" ;
+    schema1:identifier "automat-drug-central" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/DrugCentral_Automat/dec0617490b49c7a/> .
 
 kgr:automat.gtex a schema1:GraphProduct ;
     rdfs:label "gtex_automat" ;
     dcterms:description "GTEx Automat" ;
+    schema1:identifier "automat-gtex" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/> .
 
 kgr:automat.gtopdb a schema1:GraphProduct ;
     rdfs:label "gtopdb_automat" ;
     dcterms:description "GtoPdb Automat" ;
+    schema1:identifier "automat-gtopdb" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/GtoPdb_Automat/0ea6074c824c2236/> .
 
 kgr:automat.gwascatalog a schema1:GraphProduct ;
     rdfs:label "gwascatalog_automat" ;
     dcterms:description "GWASCatalog Automat" ;
+    schema1:identifier "automat-gwas-catalog" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/> .
 
 kgr:automat.hetio a schema1:GraphProduct ;
@@ -49424,21 +49432,25 @@ kgr:automat.hetio a schema1:GraphProduct ;
 kgr:automat.hgnc a schema1:GraphProduct ;
     rdfs:label "hgnc_automat" ;
     dcterms:description "HGNC Automat" ;
+    schema1:identifier "automat-hgnc" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/HGNC_Automat/dee31cfce74e5944/> .
 
 kgr:automat.hmdb a schema1:GraphProduct ;
     rdfs:label "hmdb_automat" ;
     dcterms:description "HMDB Automat" ;
+    schema1:identifier "automat-hmdb" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/HMDB_Automat/6715124699b6dbf0/> .
 
 kgr:automat.humangoa a schema1:GraphProduct ;
     rdfs:label "humangoa_automat" ;
     dcterms:description "HumanGOA Automat" ;
+    schema1:identifier "automat-human-goa" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/> .
 
 kgr:automat.intact a schema1:GraphProduct ;
     rdfs:label "intact_automat" ;
     dcterms:description "IntAct Automat" ;
+    schema1:identifier "automat-intact" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/> .
 
 kgr:automat.ohd-carolina a schema1:GraphProduct ;
@@ -49449,11 +49461,13 @@ kgr:automat.ohd-carolina a schema1:GraphProduct ;
 kgr:automat.panther a schema1:GraphProduct ;
     rdfs:label "panther_automat" ;
     dcterms:description "PANTHER Automat" ;
+    schema1:identifier "automat-panther" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/> .
 
 kgr:automat.pharos a schema1:GraphProduct ;
     rdfs:label "pharos_automat" ;
     dcterms:description "PHAROS Automat" ;
+    schema1:identifier "automat-pharos" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/PHAROS_Automat/d3068b509bf17ff3/> .
 
 kgr:automat.stringdb a schema1:GraphProduct ;
@@ -50200,6 +50214,7 @@ kgr:gtex.dbgap-data a schema1:Product ;
 kgr:gtrx.api a schema1:ProgrammingInterface ;
     rdfs:label "gTRx API" ;
     dcterms:description "BioThings API for querying Genome-to-Treatment association records through `/query`, `/metadata`, and related BioThings endpoints" ;
+    schema1:identifier "biothings-gtrx" ;
     schema1:url <https://biothings.ncats.io/gtrx> .
 
 kgr:hald.aging-biomarkers.json a schema1:Product ;
@@ -52235,11 +52250,13 @@ kgr:oboe.bioportal a schema1:GraphicalInterface ;
 kgr:ohd-carolina.graph a schema1:GraphProduct ;
     rdfs:label "OHD@Carolina Automat KGX Graph" ;
     dcterms:description "KGX JSONL nodes and edges files for the OHD@Carolina Automat graph (build f627ebbefd242454, source version 2024-11-18, published 2025-10-06), with 27,356 nodes and 22,732,570 edges. Edges use biolink:positively_correlated_with (22,352,823) and biolink:negatively_correlated_with (379,747)." ;
+    schema1:identifier "automat-openhealthdata-carolina" ;
     schema1:url <https://stars.renci.org/var/plater/bl-4.2.1/OHD_Carolina_Automat/f627ebbefd242454/> .
 
 kgr:ohd-carolina.source-edges a schema1:Product ;
     rdfs:label "OHD@Carolina Source Edge Table" ;
     dcterms:description "Source edge table (unc_omop_2018_2022_kg.csv, about 2 GB zipped) of concept pair associations from the UNC Health OMOP cohort, with chi-squared p-values, log odds ratios, scores and sample sizes, as ingested by the ORION OHD parser (build 2024-11-18)." ;
+    schema1:identifier "openhealthdata-carolina" ;
     schema1:url <https://stars.renci.org/var/data_services/ohd/unc_omop_2018_2022_kg.zip> .
 
 kgr:ohdsi.athena a schema1:GraphicalInterface ;
@@ -53135,6 +53152,7 @@ kgr:shepherd.api a schema1:ProgrammingInterface ;
 kgr:shepherd.sipr.api a schema1:ProgrammingInterface ;
     rdfs:label "Shepherd SIPR TRAPI API" ;
     dcterms:description "TRAPI query endpoint for the SIPR ARA within Shepherd (/query and /asyncquery), which uses a PageRank algorithm to answer set input queries over knowledge from Retriever." ;
+    schema1:identifier "shepherd-sipr" ;
     schema1:url <https://shepherd.transltr.io/sipr/docs> .
 
 kgr:sifr-bioportal.annotator a schema1:ProcessProduct ;
@@ -53995,6 +54013,7 @@ kgr:obo-db-ingest.bigg.compartment.sssom.tsv a schema1:MappingProduct ;
 kgr:ohd-carolina.trapi a schema1:ProgrammingInterface ;
     rdfs:label "OHD@Carolina Automat TRAPI API" ;
     dcterms:description "Automat TRAPI endpoint for OHD@Carolina, with query, meta knowledge graph, Cypher and node lookup operations (Biolink 4.2.1)." ;
+    schema1:identifier "automat-openhealthdata-carolina" ;
     schema1:url <https://automat.renci.org/ohd/docs> .
 
 kgr:omnicorp.api a schema1:ProgrammingInterface ;
@@ -54185,16 +54204,19 @@ kgr:service-kp.portal a schema1:GraphicalInterface ;
 kgr:shepherd.aragorn.api a schema1:ProgrammingInterface ;
     rdfs:label "Shepherd ARAGORN TRAPI API" ;
     dcterms:description "TRAPI query endpoint for the ARAGORN ARA implementation within Shepherd (/query and /asyncquery), which answers queries with lookup, Omnicorp literature co-occurrence support and scoring operations over knowledge from Retriever." ;
+    schema1:identifier "shepherd-aragorn" ;
     schema1:url <https://shepherd.transltr.io/aragorn/docs> .
 
 kgr:shepherd.arax.api a schema1:ProgrammingInterface ;
     rdfs:label "Shepherd ARAX TRAPI API" ;
     dcterms:description "TRAPI query endpoint for the ARAX ARA implementation within Shepherd (/query and /asyncquery), an in-process port of ARAX's expand, overlay, pathfinding and ranking steps over knowledge from Retriever." ;
+    schema1:identifier "shepherd-arax" ;
     schema1:url <https://shepherd.transltr.io/arax/docs> .
 
 kgr:shepherd.bte.api a schema1:ProgrammingInterface ;
     rdfs:label "Shepherd BTE TRAPI API" ;
     dcterms:description "TRAPI query endpoint for the BioThings Explorer (BTE) ARA implementation within Shepherd (/query and /asyncquery), over knowledge from Retriever." ;
+    schema1:identifier "shepherd-bte" ;
     schema1:url <https://shepherd.transltr.io/bte/docs> .
 
 kgr:sockg.graph a schema1:GraphProduct ;
@@ -55352,6 +55374,7 @@ kgr:metatraits.ncbi.species-summary a schema1:Product ;
 kgr:mydisease.api a schema1:ProgrammingInterface ;
     rdfs:label "MyDisease.info API" ;
     dcterms:description "MyDisease.info REST API (v1) for querying disease annotation records by keyword, field or identifier (Mondo, DOID, OMIM, Orphanet, MeSH and UMLS IDs), with batch queries over POST. Data in each record keep the license of their original source." ;
+    schema1:identifier "mydisease-info" ;
     schema1:url <https://mydisease.info/v1/query> .
 
 kgr:obo-db-ingest.bigg.metabolite.sssom.tsv a schema1:MappingProduct ;
@@ -56267,6 +56290,7 @@ kgr:metabokg.schema a schema1:DataModelProduct ;
 kgr:myvariant.api a schema1:ProgrammingInterface ;
     rdfs:label "MyVariant.info API" ;
     dcterms:description "MyVariant.info REST API (v1) for variant query and annotation retrieval by HGVS id or rsid, with batch POST queries and field filtering. Returns JSON documents merged from the integrated sources, on hg19 and hg38." ;
+    schema1:identifier "myvariant-info" ;
     schema1:url <https://myvariant.info/v1/query> .
 
 kgr:ncatsgardkg.graph a schema1:GraphProduct ;
@@ -56437,6 +56461,7 @@ kgr:medgen.mgdef a schema1:Product ;
 kgr:mychem.api a schema1:ProgrammingInterface ;
     rdfs:label "MyChem.info API" ;
     dcterms:description "MyChem.info REST API (v1) for querying chemical and drug annotation records by keyword, field or identifier (InChIKey, ChEMBL, DrugBank, PubChem, ChEBI and UNII IDs), with batch queries over POST. Data in each record keep the license of their original source." ;
+    schema1:identifier "mychem-info" ;
     schema1:url <https://mychem.info/v1/query> .
 
 kgr:oregano.graph a schema1:GraphProduct ;
@@ -56787,6 +56812,7 @@ kgr:rtx-kg2.neo4j a schema1:ProgrammingInterface ;
 kgr:mygene.api a schema1:ProgrammingInterface ;
     rdfs:label "MyGene.info API" ;
     dcterms:description "MyGene.info REST API (v3) for gene query and annotation retrieval by Entrez or Ensembl gene id, with batch POST queries and field filtering. Returns JSON documents merged from the integrated sources." ;
+    schema1:identifier "mygene-info" ;
     schema1:url <https://mygene.info/v3/api> .
 
 kgr:pathwaycommons.biopax a schema1:Product ;

@@ -45625,6 +45625,7 @@ resources:
     title: 'From nematode to Nobel: How community-shared resources fueled the rise
       of Caenorhabditis elegans as a research organism'
     year: '2025'
+  rrid: SCR_007341
   synonyms:
   - CGC
   taxon:
@@ -242962,7 +242963,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-20T14:22:51Z'
+  last_modified_date: '2026-10-20T16:15:45Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -487843,6 +487844,7 @@ resources:
     title: Aquaculture, husbandry, and shipping at the Zebrafish International Resource
       Center
     year: '2016'
+  rrid: SCR_005065
   synonyms:
   - ZIRC
   taxon:
@@ -502379,6 +502381,7 @@ resources:
     title: Applications of the microphysiology systems database for experimental ADME-Tox
       and disease models
     year: '2020'
+  rrid: SCR_021126
   synonyms:
   - MPS-Db
   - MPS Database
