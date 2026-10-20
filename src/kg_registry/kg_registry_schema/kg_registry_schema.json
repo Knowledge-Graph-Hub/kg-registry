@@ -175,6 +175,14 @@
                         "null"
                     ]
                 },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "synonyms": {
                     "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
                     "items": {
@@ -515,6 +523,14 @@
                         "null"
                     ]
                 },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "synonyms": {
                     "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
                     "items": {
@@ -666,6 +682,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -754,6 +777,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -970,6 +1001,14 @@
                         "null"
                     ]
                 },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "synonyms": {
                     "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
                     "items": {
@@ -1121,6 +1160,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -1209,6 +1255,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -1600,6 +1654,13 @@
                         "null"
                     ]
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -1715,6 +1776,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -1842,6 +1911,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -1930,6 +2006,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -2224,6 +2308,14 @@
                         "null"
                     ]
                 },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "synonyms": {
                     "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
                     "items": {
@@ -2511,6 +2603,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -2599,6 +2698,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -2880,6 +2987,14 @@
                         "null"
                     ]
                 },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "synonyms": {
                     "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
                     "items": {
@@ -3031,6 +3146,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -3119,6 +3241,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -3336,6 +3466,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -3424,6 +3561,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -3551,6 +3696,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -3639,6 +3791,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -3773,6 +3933,13 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "format": {
                     "$ref": "#/$defs/FormatEnum",
                     "description": "The format or serialization of the product. Generally corresponds to the file extension."
@@ -3875,6 +4042,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the product. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"
@@ -4226,6 +4401,14 @@
                 },
                 "repository": {
                     "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rrid": {
+                    "description": "The SciCrunch Research Resource Identifier (RRID) of the resource. Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').",
+                    "pattern": "^[A-Za-z]+_[A-Za-z0-9_.-]+$",
                     "type": [
                         "string",
                         "null"

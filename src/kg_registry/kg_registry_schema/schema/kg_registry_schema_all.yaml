@@ -1896,6 +1896,7 @@ classes:
         owner: Resource
         domain_of:
         - Resource
+        - Product
         range: string
       infores_id:
         name: infores_id
@@ -1907,6 +1908,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the resource.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: Resource
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       taxon:
         name: taxon
         description: The taxon or taxa that the resource is relevant to. This is preferably
@@ -2257,6 +2269,7 @@ classes:
         owner: KnowledgeGraph
         domain_of:
         - Resource
+        - Product
         range: string
       infores_id:
         name: infores_id
@@ -2268,6 +2281,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the resource.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: KnowledgeGraph
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       taxon:
         name: taxon
         description: The taxon or taxa that the resource is relevant to. This is preferably
@@ -2569,6 +2593,7 @@ classes:
         owner: DataSource
         domain_of:
         - Resource
+        - Product
         range: string
       infores_id:
         name: infores_id
@@ -2580,6 +2605,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the resource.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: DataSource
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       taxon:
         name: taxon
         description: The taxon or taxa that the resource is relevant to. This is preferably
@@ -2884,6 +2920,7 @@ classes:
         owner: DataModel
         domain_of:
         - Resource
+        - Product
         range: string
       infores_id:
         name: infores_id
@@ -2895,6 +2932,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the resource.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: DataModel
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       taxon:
         name: taxon
         description: The taxon or taxa that the resource is relevant to. This is preferably
@@ -3199,6 +3247,7 @@ classes:
         owner: Ontology
         domain_of:
         - Resource
+        - Product
         range: string
       infores_id:
         name: infores_id
@@ -3210,6 +3259,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the resource.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: Ontology
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       taxon:
         name: taxon
         description: The taxon or taxa that the resource is relevant to. This is preferably
@@ -3513,6 +3573,7 @@ classes:
         owner: Aggregator
         domain_of:
         - Resource
+        - Product
         range: string
       infores_id:
         name: infores_id
@@ -3524,6 +3585,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the resource.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: Aggregator
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       taxon:
         name: taxon
         description: The taxon or taxa that the resource is relevant to. This is preferably
@@ -3770,6 +3842,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: Product
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -3779,6 +3860,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: Product
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -4086,6 +4178,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: GraphProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -4095,6 +4196,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: GraphProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -4368,6 +4480,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: DataModelProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -4377,6 +4498,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: DataModelProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -4651,6 +4783,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -4660,6 +4801,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -4934,6 +5086,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: MappingProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -4943,6 +5104,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: MappingProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -5216,6 +5388,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: ProcessProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -5225,6 +5406,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: ProcessProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -5499,6 +5691,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: GraphicalInterface
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -5508,6 +5709,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: GraphicalInterface
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -5807,6 +6019,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: ProgrammingInterface
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -5816,6 +6037,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: ProgrammingInterface
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
@@ -6090,6 +6322,15 @@ classes:
         - Product
         range: TagEnum
         multivalued: true
+      fairsharing_id:
+        name: fairsharing_id
+        description: The FAIRsharing ID of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: DocumentationProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
       infores_id:
         name: infores_id
         description: The Infores ID of the product. Do not include the 'infores' prefix.
@@ -6099,6 +6340,17 @@ classes:
         - Resource
         - Product
         range: string
+      rrid:
+        name: rrid
+        description: The SciCrunch Research Resource Identifier (RRID) of the product.
+          Do not include the 'RRID:' prefix (e.g. use 'SCR_005065').
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        owner: DocumentationProduct
+        domain_of:
+        - Resource
+        - Product
+        range: string
+        pattern: ^[A-Za-z]+_[A-Za-z0-9_.-]+$
       compatibility:
         name: compatibility
         description: A list of standards that the product conforms to. This is not
