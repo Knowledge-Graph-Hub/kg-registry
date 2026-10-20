@@ -45,8 +45,12 @@ CACHE_DIR = ROOT.joinpath("cache")
 RESOLVER_CACHE_DIR = CACHE_DIR.joinpath("scicrunch_resolver")
 
 RESOLVER_URL = "https://scicrunch.org/resolver/RRID:{rrid}.json"
-# SciCrunch search needs an API key; this is the documented elastic endpoint.
-SEARCH_URL = "https://api.scicrunch.io/elastic/v1/RRID/_search"
+# SciCrunch search needs an API key. The RIN resource registry lives in the
+# Elasticsearch index aliased 'RIN_Tool_pr'; the key goes in an 'apikey' header
+# (see https://docs.scicrunch.io/.../basic-rin-search-examples). Each search hit
+# has the same _source.item / _source.rrid / distributions shape the resolver
+# returns, so extract_resolver_record() reads it unchanged.
+SEARCH_URL = "https://api.scicrunch.io/elastic/v1/RIN_Tool_pr/_search"
 
 # SciCrunch rejects the default urllib User-Agent (HTTP 403), so present a
 # browser-like one.
@@ -228,9 +232,11 @@ def search_scicrunch(query: str, api_key: str,
     """
     if not api_key:
         return []
-    params = urllib.parse.urlencode({"q": query, "key": api_key, "size": 5})
+    params = urllib.parse.urlencode({"q": query, "size": 5})
     url = f"{SEARCH_URL}?{params}"
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    request = urllib.request.Request(
+        url, headers={"User-Agent": USER_AGENT, "apikey": api_key}
+    )
     try:
         with opener(request, timeout=HTTP_TIMEOUT) as response:
             data = json.loads(response.read())
@@ -399,10 +405,20 @@ def main():
     parser.add_argument("--resource", help="Process only a specific resource (by ID)")
     parser.add_argument("--seed-only", action="store_true",
                         help="Only write the known seed RRIDs; skip SciCrunch search")
+    parser.add_argument("--api-key-file",
+                        help="Read the SciCrunch API key from this file "
+                             "(takes precedence over the SCICRUNCH_API_KEY env var)")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Process at most N resources (useful for a test batch)")
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
     args = parser.parse_args()
 
-    api_key = "" if args.seed_only else os.environ.get("SCICRUNCH_API_KEY", "")
+    if args.seed_only:
+        api_key = ""
+    elif args.api_key_file:
+        api_key = pathlib.Path(args.api_key_file).expanduser().read_text().strip()
+    else:
+        api_key = os.environ.get("SCICRUNCH_API_KEY", "")
     if not args.seed_only and not api_key:
         print("ℹ️  No SCICRUNCH_API_KEY set: seeding known RRIDs and confirming via "
               "the open resolver only. Resources without a match are listed in the report.")
@@ -416,14 +432,19 @@ def main():
     else:
         resource_files = get_all_resource_files()
 
+    resource_files = sorted(resource_files)
+    if args.limit is not None:
+        resource_files = resource_files[: args.limit]
+
     print(f"\n{'=' * 60}")
     print("DRY RUN - no files will be modified" if args.dry_run
           else "Populating KG-Registry resources with RRIDs")
+    print(f"Processing {len(resource_files)} resource(s)")
     print(f"{'=' * 60}\n")
 
     written = 0
     all_candidates: List[Dict] = []
-    for resource_path in sorted(resource_files):
+    for resource_path in resource_files:
         rrid, status, candidates = process_resource(
             resource_path, api_key, args.force, args.dry_run)
         all_candidates.extend(candidates)

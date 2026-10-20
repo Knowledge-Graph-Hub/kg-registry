@@ -4,6 +4,7 @@ All tests run offline against a recorded resolver response, so the default
 test run never touches the network.
 """
 
+import io
 import json
 import pathlib
 
@@ -114,6 +115,28 @@ def test_confirm_rrid_no_record():
 def test_search_without_key_returns_empty():
     # No API key -> empty list, no network call.
     assert search_scicrunch("zebrafish", "") == []
+
+
+def test_search_sends_apikey_header_and_parses_hits(resolver_json):
+    # Build a search-style response from the recorded _source, and a fake opener
+    # that records the request so we can assert the apikey header is sent.
+    source = resolver_json["hits"]["hits"][0]["_source"]
+    search_body = json.dumps({"hits": {"hits": [{"_source": source}]}}).encode()
+    captured = {}
+
+    def fake_opener(request, timeout=None):
+        captured["url"] = request.full_url
+        captured["headers"] = {k.lower(): v for k, v in request.header_items()}
+        return io.BytesIO(search_body)
+
+    result = search_scicrunch(
+        "Zebrafish International Resource Center", "SECRET_KEY", opener=fake_opener
+    )
+    assert result == ["SCR_005065"]
+    assert captured["headers"].get("apikey") == "SECRET_KEY"
+    assert "RIN_Tool_pr/_search" in captured["url"]
+    # Key is sent as a header, not leaked into the query string.
+    assert "SECRET_KEY" not in captured["url"]
 
 
 def test_splice_rrid_inserts_at_sorted_position():
