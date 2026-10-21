@@ -1132,6 +1132,15 @@ entries:
     source_path: resource/cancer-registry-kg/cancer-registry-kg.md
     status: valid
     warnings: []
+  resource/candida-genome-database/candida-genome-database.md#publication[0]#DOI:10.1093/nar/gkw924:
+    checked_at: '2026-10-21T13:30:11Z'
+    errors: []
+    fingerprint: d0269a5ead9bfb0978508c177e1e0e2a454a6b41b1500811e30892607519462c
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkw924
+    source_path: resource/candida-genome-database/candida-genome-database.md
+    status: valid
+    warnings: []
   resource/canvas/canvas.md#publication[0]#DOI:10.64898/2026.04.13.718238:
     checked_at: '2026-08-12T18:06:23Z'
     errors: []
@@ -4338,6 +4347,15 @@ entries:
     source_path: resource/hipsci/hipsci.md
     status: valid
     warnings: []
+  resource/hmchip/hmchip.md#publication[0]#DOI:10.1093/bioinformatics/btr156:
+    checked_at: '2026-10-21T13:30:07Z'
+    errors: []
+    fingerprint: 8561184798c7cab3ce15d777f5e548f9891a7d92f20c3c326e08ee273e186c3d
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btr156
+    source_path: resource/hmchip/hmchip.md
+    status: valid
+    warnings: []
   resource/hmdb/hmdb.md#publication[0]#PMID:34986597:
     checked_at: '2026-08-06T18:17:39Z'
     errors: []
@@ -4942,6 +4960,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/database/bar052
     source_path: resource/inoh/inoh.md
+    status: valid
+    warnings: []
+  resource/inparanoid/inparanoid.md#publication[0]#DOI:10.1016/j.jmb.2023.168001:
+    checked_at: '2026-10-21T13:30:42Z'
+    errors: []
+    fingerprint: 2a4de1e195654af6c50e11fefc4589889f5886d809442f10562d31092935b713
+    publication_index: 0
+    reference_id: DOI:10.1016/j.jmb.2023.168001
+    source_path: resource/inparanoid/inparanoid.md
+    status: valid
+    warnings: []
+  resource/inparanoid/inparanoid.md#publication[1]#DOI:10.1006/jmbi.2000.5197:
+    checked_at: '2026-10-21T13:30:44Z'
+    errors: []
+    fingerprint: 5142cb4de240cd59d017b7bc692d6edb3116eab36fb41adca266362aadf28df1
+    publication_index: 1
+    reference_id: DOI:10.1006/jmbi.2000.5197
+    source_path: resource/inparanoid/inparanoid.md
     status: valid
     warnings: []
   resource/insight/insight.md#publication[0]#DOI:10.1016/j.csbj.2025.03.042:
@@ -6042,6 +6078,15 @@ entries:
     source_path: resource/mirtarbase/mirtarbase.md
     status: valid
     warnings: []
+  resource/mlpcn-profiling/mlpcn-profiling.md#publication[0]#DOI:10.1073/pnas.1410933111:
+    checked_at: '2026-10-21T13:32:49Z'
+    errors: []
+    fingerprint: 715555594ced0aef2ef6585a0812fd73cd9a3b4ac94c907709f6eb96dcb0d33d
+    publication_index: 0
+    reference_id: DOI:10.1073/pnas.1410933111
+    source_path: resource/mlpcn-profiling/mlpcn-profiling.md
+    status: valid
+    warnings: []
   resource/mmo/mmo.md#publication[0]#PMID:22654893:
     checked_at: '2026-06-15T22:07:53Z'
     errors: []
@@ -6086,6 +6131,24 @@ entries:
     publication_index: 0
     reference_id: PMID:18688235
     source_path: resource/mod/mod.md
+    status: valid
+    warnings: []
+  resource/modencode/modencode.md#publication[0]#DOI:10.1126/science.1198374:
+    checked_at: '2026-10-21T13:33:27Z'
+    errors: []
+    fingerprint: e38d2d79b8d936fdcd23bbd6aa5607ee69a6c3319a72d79e7a9db718b6ccf113
+    publication_index: 0
+    reference_id: DOI:10.1126/science.1198374
+    source_path: resource/modencode/modencode.md
+    status: valid
+    warnings: []
+  resource/modencode/modencode.md#publication[1]#DOI:10.1126/science.1196914:
+    checked_at: '2026-10-21T13:30:10Z'
+    errors: []
+    fingerprint: c26b9d95fd560231712946b85aee6854cd364146d1a8e9f9faf92f34e8d41b8f
+    publication_index: 1
+    reference_id: DOI:10.1126/science.1196914
+    source_path: resource/modencode/modencode.md
     status: valid
     warnings: []
   resource/modomics/modomics.md#publication[0]#DOI:10.1093/nar/gkad1083:
@@ -7356,6 +7419,24 @@ entries:
     source_path: resource/orthodb/orthodb.md
     status: valid
     warnings: []
+  resource/orthomcl/orthomcl.md#publication[0]#DOI:10.1093/nar/gkj123:
+    checked_at: '2026-10-21T13:31:15Z'
+    errors: []
+    fingerprint: 046fd3eb8f8b26ea96bd5d545ce3c589f8f4a0dcae0c134bd026ae332730495b
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkj123
+    source_path: resource/orthomcl/orthomcl.md
+    status: valid
+    warnings: []
+  resource/orthomcl/orthomcl.md#publication[1]#DOI:10.1101/gr.1224503:
+    checked_at: '2026-10-21T13:32:15Z'
+    errors: []
+    fingerprint: 059f639eab319a4473a7826a5db265e5f28108c42a33db53580349bc495b5dde
+    publication_index: 1
+    reference_id: DOI:10.1101/gr.1224503
+    source_path: resource/orthomcl/orthomcl.md
+    status: valid
+    warnings: []
   resource/owlsim/owlsim.md#publication[0]#DOI:10.1101/gr.160325.113:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -7955,6 +8036,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gku1267
     source_path: resource/phosphositeplus/phosphositeplus.md
+    status: valid
+    warnings: []
+  resource/phylomedb/phylomedb.md#publication[0]#DOI:10.1093/nar/gkab966:
+    checked_at: '2026-10-21T13:32:17Z'
+    errors: []
+    fingerprint: b427923f118b489d883f092f55e266ee65ed9e9e6257f87418464a10c958f9bb
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkab966
+    source_path: resource/phylomedb/phylomedb.md
     status: valid
     warnings: []
   resource/physiome-model-repository/physiome-model-repository.md#publication[0]#DOI:10.1093/bioinformatics/btq723:
@@ -10252,6 +10342,15 @@ entries:
     status: warning
     warnings:
     - DOI:10.1093/bioinformatics/btad169 has no cached reference at /home/runner/work/kg-registry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btad169.md
+  resource/vgnc/vgnc.md#publication[0]#DOI:10.1093/nar/gkaa980:
+    checked_at: '2026-10-21T13:32:18Z'
+    errors: []
+    fingerprint: b3f09be291b049f24cae0237ca54084fbdc75b58a94acbc191c6603704f10ec5
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaa980
+    source_path: resource/vgnc/vgnc.md
+    status: valid
+    warnings: []
   resource/vista/vista.md#publication[0]#DOI:10.1093/nar/gkl822:
     checked_at: '2026-06-17T13:48:58Z'
     errors: []
