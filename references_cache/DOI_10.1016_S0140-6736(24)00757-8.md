@@ -1,0 +1,1344 @@
+---
+reference_id: DOI:10.1016/S0140-6736(24)00757-8
+title: "Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021"
+authors:
+- Alize J Ferrari
+- Damian Francesco Santomauro
+- Amirali Aali
+- Yohannes Habtegiorgis Abate
+- Cristiana Abbafati
+- Hedayat Abbastabar
+- Samar Abd ElHafeez
+- Michael Abdelmasseh
+- Sherief Abd-Elsalam
+- Arash Abdollahi
+- Auwal Abdullahi
+- Kedir Hussein Abegaz
+- Roberto Ariel Abeldaño Zuñiga
+- Richard Gyan Aboagye
+- Hassan Abolhassani
+- Lucas Guimarães Abreu
+- Hasan Abualruz
+- Eman Abu-Gharbieh
+- Niveen ME Abu-Rmeileh
+- Ilana N Ackerman
+- Isaac Yeboah Addo
+- Giovanni Addolorato
+- Akindele Olupelumi Adebiyi
+- Abiola Victor Adepoju
+- Habeeb Omoponle Adewuyi
+- Shadi Afyouni
+- Saira Afzal
+- Sina Afzal
+- Antonella Agodi
+- Aqeel Ahmad
+- Danish Ahmad
+- Firdos Ahmad
+- Shahzaib Ahmad
+- Ali Ahmed
+- Luai A Ahmed
+- Muktar Beshir Ahmed
+- Marjan Ajami
+- Karolina Akinosoglou
+- Mohammed Ahmed Akkaif
+- Syed Mahfuz Al Hasan
+- Samer O Alalalmeh
+- Ziyad Al-Aly
+- Mohammed Albashtawy
+- Robert W Aldridge
+- Meseret Desalegn Alemu
+- Yihun Mulugeta Alemu
+- Kefyalew Addis Alene
+- Adel Ali Saeed Al-Gheethi
+- Maryam Alharrasi
+- Robert Kaba Alhassan
+- Mohammed Usman Ali
+- Rafat Ali
+- Syed Shujait Shujait Ali
+- Sheikh Mohammad Alif
+- Syed Mohamed Aljunid
+- Sabah Al-Marwani
+- Joseph Uy Almazan
+- Mahmoud A Alomari
+- Basem Al-Omari
+- Zaid Altaany
+- Nelson Alvis-Guzman
+- Nelson J Alvis-Zakzuk
+- Hassan Alwafi
+- Mohammad Sami Al-Wardat
+- Yaser Mohammed Al-Worafi
+- Safwat Aly
+- Karem H Alzoubi
+- Azmeraw T Amare
+- Prince M Amegbor
+- Edward Kwabena Ameyaw
+- Tarek Tawfik Amin
+- Alireza Amindarolzarbi
+- Sohrab Amiri
+- Dickson A Amugsi
+- Robert Ancuceanu
+- Deanna Anderlini
+- David B Anderson
+- Pedro Prata Andrade
+- Catalina Liliana Andrei
+- Hossein Ansari
+- Catherine M Antony
+- Saleha Anwar
+- Sumadi Lukman Anwar
+- Razique Anwer
+- Philip Emeka Anyanwu
+- Juan Pablo Arab
+- Jalal Arabloo
+- Mosab Arafat
+- Daniel T Araki
+- Aleksandr Y Aravkin
+- Mesay Arkew
+- Benedetta Armocida
+- Michael Benjamin Arndt
+- Mahwish Arooj
+- Anton A Artamonov
+- Raphael Taiwo Aruleba
+- Ashokan Arumugam
+- Charlie Ashbaugh
+- Mubarek Yesse Ashemo
+- Muhammad Ashraf
+- Marvellous O Asika
+- Elaheh Askari
+- Thomas Astell-Burt
+- Seyyed Shamsadin Athari
+- Prince Atorkey
+- "Maha Moh'd Wahbi Atout"
+- Alok Atreya
+- Avinash Aujayeb
+- Marcel Ausloos
+- Abolfazl Avan
+- Adedapo Wasiu Awotidebe
+- Kofi Awuviry-Newton
+- Beatriz Paulina Ayala Quintanilla
+- Jose L Ayuso-Mateos
+- Sina Azadnajafabad
+- Rui M S Azevedo
+- Abraham Samuel Babu
+- Muhammad Badar
+- Ashish D Badiye
+- Soroush Baghdadi
+- Nasser Bagheri
+- Sulaiman Bah
+- Ruhai Bai
+- Jennifer L Baker
+- Shankar M Bakkannavar
+- Abdulaziz T Bako
+- Senthilkumar Balakrishnan
+- Kiran Bam
+- Palash Chandra Banik
+- Martina Barchitta
+- Mainak Bardhan
+- Erfan Bardideh
+- Suzanne Lyn Barker-Collo
+- Hiba Jawdat Barqawi
+- Amadou Barrow
+- Sandra Barteit
+- Lingkan Barua
+- Somaye Bashiri Aliabadi
+- Afisu Basiru
+- Sanjay Basu
+- Saurav Basu
+- Prapthi Persis Bathini
+- Kavita Batra
+- Bernhard T Baune
+- Nebiyou Simegnew Bayileyegn
+- Babak Behnam
+- Amir Hossein Behnoush
+- Maryam Beiranvand
+- Diana Fernanda Bejarano Ramirez
+- Michelle L Bell
+- Olorunjuwon Omolaja Bello
+- Apostolos Beloukas
+- Isabela M Bensenor
+- Zombor Berezvai
+- Eduardo Bernabe
+- Robert S Bernstein
+- Paulo J G Bettencourt
+- Akshaya Srikanth Bhagavathula
+- Neeraj Bhala
+- Dinesh Bhandari
+- Ashish Bhargava
+- Sonu Bhaskar
+- Vivek Bhat
+- Gurjit Kaur Bhatti
+- Jasvinder Singh Bhatti
+- Manpreet S Bhatti
+- Rajbir Bhatti
+- Zulfiqar A Bhutta
+- Boris Bikbov
+- Jessica Devin Bishai
+- Catherine Bisignano
+- Veera R Bitra
+- Tone Bjørge
+- Virginia Bodolica
+- Aadam Olalekan Bodunrin
+- Eyob Ketema Bogale
+- Milad Bonakdar Hashemi
+- Aime Bonny
+- Berrak Bora Basara
+- Hamed Borhany
+- Christopher Boxe
+- Oliver J Brady
+- Nicola Luigi Bragazzi
+- Dejana Braithwaite
+- Luisa C Brant
+- Michael Brauer
+- Susanne Breitner
+- Hermann Brenner
+- Julie Brown
+- Traolach Brugha
+- Norma B Bulamu
+- Danilo Buonsenso
+- Katrin Burkart
+- Richard A Burns
+- Reinhard Busse
+- Yasser Bustanji
+- Zahid A Butt
+- Justin Byun
+- Florentino Luciano Caetano dos Santos
+- Daniela Calina
+- Luis Alberto Cámera
+- Ismael R Campos-Nonato
+- Chao Cao
+- Angelo Capodici
+- Sinclair Carr
+- Giulia Carreras
+- Andrea Carugno
+- Márcia Carvalho
+- Joao Mauricio Castaldelli-Maia
+- Carlos A Castañeda-Orjuela
+- Giulio Castelpietra
+- Alberico L Catapano
+- Maria Sofia Cattaruzza
+- Arthur Caye
+- Luca Cegolon
+- Francieli Cembranel
+- Muthia Cenderadewi
+- Ester Cerin
+- Promit Ananyo Chakraborty
+- Jeffrey Shi Kai Chan
+- Raymond N C Chan
+- Rama Mohan Chandika
+- Eeshwar K Chandrasekar
+- Periklis Charalampous
+- Vijay Kumar Chattu
+- Victoria Chatzimavridou-Grigoriadou
+- Angela W Chen
+- An-Tian Chen
+- Catherine S Chen
+- Haowei Chen
+- Nathalie M Chen
+- Esther T W Cheng
+- Odgerel Chimed-Ochir
+- Ritesh Chimoriya
+- Patrick R Ching
+- William C S Cho
+- Sungchul Choi
+- Bryan Chong
+- Yuen Yu Chong
+- Sonali Gajanan Choudhari
+- Rajiv Chowdhury
+- Steffan Wittrup McPhee Christensen
+- Dinh-Toi Chu
+- Isaac Sunday Chukwu
+- Eric Chung
+- Eunice Chung
+- Muhammad Chutiyami
+- Mareli M Claassens
+- Rebecca M Cogen
+- Alyssa Columbus
+- Joao Conde
+- Paolo Angelo Cortesi
+- Ewerton Cousin
+- Michael H Criqui
+- Natália Cruz-Martins
+- Omid Dadras
+- Siyu Dai
+- Xiaochen Dai
+- Zhaoli Dai
+- Maxwell Ayindenaba Dalaba
+- Giovanni Damiani
+- Jai K Das
+- Saswati Das
+- Mohsen Dashti
+- Claudio Alberto Dávila-Cervantes
+- Kairat Davletov
+- Diego De Leo
+- Aklilu Tamire Debele
+- Shayom Debopadhaya
+- Nicole K DeCleene
+- Farah Deeba
+- Louisa Degenhardt
+- "Cristian Del Bo'"
+- Ivan Delgado-Enciso
+- Andreas K Demetriades
+- Edgar Denova-Gutiérrez
+- Nikolaos Dervenis
+- Hardik Dineshbhai Desai
+- Rupak Desai
+- Keshab Deuba
+- Kuldeep Dhama
+- Samath Dhamminda Dharmaratne
+- Sameer Dhingra
+- Diana Dias da Silva
+- Daniel Diaz
+- Luis Antonio Diaz
+- Michael J Diaz
+- Adriana Dima
+- Delaney D Ding
+- M Ashworth Dirac
+- Thao Huynh Phuong Do
+- Camila Bruneli do Prado
+- Sushil Dohare
+- Regina-Mae Villanueva Dominguez
+- Wanyue Dong
+- Deepa Dongarwar
+- "Mario D'Oria"
+- E Ray Dorsey
+- Leila Doshmangir
+- Robert Kokou Dowou
+- Tim Robert Driscoll
+- Haneil Larson Dsouza
+- Viola Dsouza
+- John Dube
+- Samuel C Dumith
+- Bruce B Duncan
+- Andre Rodrigues Duraes
+- Senbagam Duraisamy
+- Oyewole Christopher Durojaiye
+- Paulina Agnieszka Dzianach
+- Arkadiusz Marian Dziedzic
+- Ejemai Eboreime
+- Alireza Ebrahimi
+- Hisham Atan Edinur
+- David Edvardsson
+- Terje Andreas Eikemo
+- Ebrahim Eini
+- Michael Ekholuenetale
+- Temitope Cyrus Ekundayo
+- Iman El Sayed
+- Maha El Tantawi
+- Iffat Elbarazi
+- Noha Mousaad Elemam
+- Ghada Metwally Tawfik ElGohary
+- Muhammed Elhadi
+- Omar Abdelsadek Abdou Elmeligy
+- Gihan ELNahas
+- Mohammed Elshaer
+- Ibrahim Elsohaby
+- Luchuo Engelbert Bain
+- Ryenchindorj Erkhembayar
+- Babak Eshrati
+- Kara Estep
+- Natalia Fabin
+- Adeniyi Francis Fagbamigbe
+- Luca Falzone
+- Mohammad Fareed
+- Carla Sofia e Sá Farinha
+- MoezAlIslam Ezzat Mahmoud Faris
+- Andre Faro
+- Pegah Farrokhi
+- Ali Fatehizadeh
+- Nelsensius Klau Fauk
+- Valery L Feigin
+- Xiaoqi Feng
+- Seyed-Mohammad Fereshtehnejad
+- Abdullah Hamid Feroze
+- Nuno Ferreira
+- Paulo H Ferreira
+- Florian Fischer
+- Joanne Flavel
+- David Flood
+- Luisa S Flor
+- Nataliya A Foigt
+- Morenike Oluwatoyin Folayan
+- Lisa M Force
+- Daniela Fortuna
+- Matteo Foschi
+- Richard Charles Franklin
+- Alberto Freitas
+- Takeshi Fukumoto
+- João M Furtado
+- Peter Andras Gaal
+- Muktar A Gadanya
+- Abhay Motiramji Gaidhane
+- Santosh Gaihre
+- Yaseen Galali
+- Mandukhai Ganbat
+- Aravind P Gandhi
+- Balasankar Ganesan
+- Mohd Ashraf Ganie
+- Mohammad Arfat Ganiyani
+- William M Gardner
+- Tilaye Gebru Gebi
+- Miglas W Gebregergis
+- Mesfin Gebrehiwot
+- Tesfay B B Gebremariam
+- Teferi Gebru Gebremeskel
+- Yibeltal Yismaw Gela
+- Simona Roxana Georgescu
+- Abera Getachew Obsa
+- Peter W Gething
+- Molla Getie
+- Keyghobad Ghadiri
+- Fataneh Ghadirian
+- Khalid Yaser Ghailan
+- Alireza Ghajar
+- MohammadReza Ghasemi
+- Ghazal Ghasempour Dabaghi
+- Afsaneh Ghasemzadeh
+- Ramy Mohamed Ghazy
+- Ali Gholamrezanezhad
+- Mahsa Ghorbani
+- Elena Ghotbi
+- Ruth Margaret Gibson
+- Tiffany K Gill
+- Themba G Ginindza
+- Alem Girmay
+- James C Glasbey
+- Laszlo Göbölös
+- Myron Anthony Godinho
+- Salime Goharinezhad
+- Mohamad Goldust
+- Mahaveer Golechha
+- Pouya Goleij
+- Philimon N Gona
+- Giuseppe Gorini
+- Alessandra C Goulart
+- Ayman Grada
+- Michal Grivna
+- Shi-Yang Guan
+- Giovanni Guarducci
+- Mohammed Ibrahim Mohialdeen Gubari
+- Mesay Dechasa Gudeta
+- Avirup Guha
+- Stefano Guicciardi
+- Snigdha Gulati
+- David Gulisashvili
+- Damitha Asanga Gunawardane
+- Cui Guo
+- Anish Kumar Gupta
+- Bhawna Gupta
+- Ishita Gupta
+- Mohak Gupta
+- Rajeev Gupta
+- Veer Bala Gupta
+- Vijai Kumar Gupta
+- Vivek Kumar Gupta
+- Reyna Alma Gutiérrez
+- Farrokh Habibzadeh
+- Parham Habibzadeh
+- Rasool Haddadi
+- Najah R Hadi
+- Nils Haep
+- Nima Hafezi-Nejad
+- Abdul Hafiz
+- Hailey Hagins
+- Esam S Halboub
+- Aram Halimi
+- Sebastian Haller
+- Rabih Halwani
+- Erin B Hamilton
+- Graeme J Hankey
+- Md Abdul Hannan
+- Md Nuruzzaman Haque
+- Harapan Harapan
+- Josep Maria Haro
+- Jan Hartvigsen
+- Ahmed I Hasaballah
+- Ikramul Hasan
+- Mohammad Hasanian
+- Md Saquib Hasnain
+- Amr Hassan
+- Johannes Haubold
+- Rasmus J Havmoeller
+- Simon I Hay
+- Khezar Hayat
+- Jeffrey J Hebert
+- Omar E Hegazi
+- Golnaz Heidari
+- Bartosz Helfer
+- Mehdi Hemmati
+- Delia Hendrie
+- Claire A Henson
+- Kamal Hezam
+- Yuta Hiraike
+- Nguyen Quoc Hoan
+- Ramesh Holla
+- Julia Hon
+- Md Mahbub Hossain
+- Hassan Hosseinzadeh
+- Mehdi Hosseinzadeh
+- Mihaela Hostiuc
+- Sorin Hostiuc
+- Johnathan M Hsu
+- Junjie Huang
+- Fernando N Hugo
+- Kiavash Hushmandi
+- Javid Hussain
+- Nawfal R Hussein
+- Chantal K Huynh
+- Hong-Han Huynh
+- Bing-Fang Hwang
+- Vincent C Iannucci
+- Audrey L Ihler
+- Adalia I Ikiroma
+- Kevin S Ikuta
+- Olayinka Stephen Ilesanmi
+- Irena M Ilic
+- Milena D Ilic
+- Mohammad Tarique Imam
+- Mustapha Immurana
+- Lalu Muhammad Irham
+- Md Rabiul Islam
+- Sheikh Mohammed Shariful Islam
+- Farhad Islami
+- Faisal Ismail
+- Nahlah Elkudssiah Ismail
+- Gaetano Isola
+- Masao Iwagami
+- Chidozie C D Iwu
+- Mahalaxmi Iyer
+- Jalil Jaafari
+- Kathryn H Jacobsen
+- Farhad Jadidi-Niaragh
+- Morteza Jafarinia
+- Khushleen Jaggi
+- Kasra Jahankhani
+- Nader Jahanmehr
+- Haitham Jahrami
+- Akhil Jain
+- Nityanand Jain
+- Ammar Abdulrahman Jairoun
+- Abhishek Jaiswal
+- Mihajlo Jakovljevic
+- Abubakar Ibrahim Jatau
+- Sabzali Javadov
+- Tahereh Javaheri
+- Sathish Kumar Jayapal
+- Shubha Jayaram
+- Sun Ha Jee
+- Jayakumar Jeganathan
+- Angeline Jeyakumar
+- Anil K Jha
+- Heng Jiang
+- Yinzi Jin
+- Jost B Jonas
+- Tamas Joo
+- Abel Joseph
+- Nitin Joseph
+- Charity Ehimwenma Joshua
+- Jacek Jerzy Jozwiak
+- Mikk Jürisson
+- Vaishali K
+- Billingsley Kaambwa
+- Ali Kabir
+- Zubair Kabir
+- Vidya Kadashetti
+- Rizwan Kalani
+- Leila R Kalankesh
+- Feroze Kaliyadan
+- Sanjay Kalra
+- Kaloyan Kamenov
+- Naser Kamyari
+- Thanigaivelan Kanagasabai
+- Himal Kandel
+- Arun R Kanmanthareddy
+- Kehinde Kazeem Kanmodi
+- Rami S Kantar
+- Ibraheem M Karaye
+- Asima Karim
+- Salah Eddin Karimi
+- Yeganeh Karimi
+- Hengameh Kasraei
+- Molly B Kassel
+- Joonas H Kauppila
+- Norito Kawakami
+- Gbenga A Kayode
+- Foad Kazemi
+- Sina Kazemian
+- Leila Keikavoosi-Arani
+- Cathleen Keller
+- John H Kempen
+- Jessica A Kerr
+- Kamyab Keshtkar
+- Emmanuelle Kesse-Guyot
+- Mohammad Keykhaei
+- Himanshu Khajuria
+- Amirmohammad Khalaji
+- Asaad Khalid
+- Nauman Khalid
+- Alireza Khalilian
+- Faham Khamesipour
+- Asaduzzaman Khan
+- Ikramullah Khan
+- Maseer Khan
+- Moien AB Khan
+- Shaghayegh Khanmohammadi
+- Khaled Khatab
+- Fatemeh Khatami
+- Moawiah Mohammad Khatatbeh
+- Amir M Khater
+- Hamid Reza Khayat Kashani
+- Feriha Fatima Khidri
+- Elaheh Khodadoust
+- Moein Khormali
+- Zahra Khorrami
+- Zemene Demelash Kifle
+- Min Seo Kim
+- Ruth W Kimokoti
+- Adnan Kisa
+- Sezer Kisa
+- Ann Kristin Skrindo Knudsen
+- Jonathan M Kocarnik
+- Sonali Kochhar
+- Hyun Yong Koh
+- Ali-Asghar Kolahi
+- Farzad Kompani
+- Gerbrand Koren
+- Oleksii Korzh
+- Soewarta Kosen
+- Sindhura Lakshmi Koulmane Laxminarayana
+- Kewal Krishan
+- Varun Krishna
+- Vijay Krishnamoorthy
+- Barthelemy Kuate Defo
+- Md Abdul Kuddus
+- Mohammed Kuddus
+- Ilari Kuitunen
+- Vishnutheertha Kulkarni
+- Manasi Kumar
+- Nithin Kumar
+- Rakesh Kumar
+- Om P Kurmi
+- Dian Kusuma
+- Hmwe Hmwe Kyu
+- Carlo La Vecchia
+- Ben Lacey
+- Muhammad Awwal Ladan
+- Lucie Laflamme
+- Alessandra Lafranconi
+- Chandrakant Lahariya
+- Daphne Teck Ching Lai
+- Dharmesh Kumar Lal
+- Ratilal Lalloo
+- Tea Lallukka
+- Judit Lám
+- Qing Lan
+- Tuo Lan
+- Iván Landires
+- Francesco Lanfranchi
+- Berthold Langguth
+- Ariane Laplante-Lévesque
+- Bagher Larijani
+- Anders O Larsson
+- Savita Lasrado
+- Paolo Lauriola
+- Huu-Hoai Le
+- Long Khanh Dao Le
+- Nhi Huu Hanh Le
+- Trang Diep Thanh Le
+- Janet L Leasher
+- Caterina Ledda
+- Munjae Lee
+- Paul H Lee
+- Sang-woong Lee
+- Seung Won Lee
+- Wei-Chen Lee
+- Yo Han Lee
+- Kate E LeGrand
+- Jacopo Lenzi
+- Elvynna Leong
+- Janni Leung
+- Ming-Chieh Li
+- Wei Li
+- Xiaopan Li
+- Yichong Li
+- Yongze Li
+- Lee-Ling Lim
+- Stephen S Lim
+- Megan Lindstrom
+- Shai Linn
+- Gang Liu
+- Runben Liu
+- Shiwei Liu
+- Wei Liu
+- Xiaofeng Liu
+- Xuefeng Liu
+- Erand Llanaj
+- Chun-Han Lo
+- Rubén López-Bueno
+- Arianna Maever Loreche
+- László Lorenzovici
+- Rafael Lozano
+- Jailos Lubinda
+- Giancarlo Lucchetti
+- Raimundas Lunevicius
+- Jay B Lusk
+- hengliang lv
+- Zheng Feei Ma
+- Nikolaos Machairas
+- Áurea M Madureira-Carvalho
+- Javier A Magaña Gómez
+- Azzam A Maghazachi
+- Preeti Maharjan
+- Phetole Walter Mahasha
+- Mina Maheri
+- Soleiman Mahjoub
+- Mansour Adam Mahmoud
+- Elham Mahmoudi
+- Azeem Majeed
+- Konstantinos Christos Makris
+- Elaheh Malakan Rad
+- Kashish Malhotra
+- Ahmad Azam Malik
+- Iram Malik
+- Deborah Carvalho Malta
+- Yosef Manla
+- Ali Mansour
+- Pejman Mansouri
+- Mohammad Ali Mansournia
+- Ana M Mantilla Herrera
+- Lorenzo Giovanni Mantovani
+- Emmanuel Manu
+- Hamid Reza Marateb
+- Parham Mardi
+- Gabriel Martinez
+- Ramon Martinez-Piedra
+- Daniela Martini
+- Francisco Rogerlândio Martins-Melo
+- Miquel Martorell
+- Wolfgang Marx
+- Sharmeen Maryam
+- Roy Rillera Marzo
+- Yasith Mathangasinghe
+- Stephanie Mathieson
+- Alexander G Mathioudakis
+- Jishanth Mattumpuram
+- Andrea Maugeri
+- Mahsa Mayeli
+- Mohsen Mazidi
+- Antonio Mazzotti
+- John J McGrath
+- Martin McKee
+- Anna Laura W McKowen
+- Michael A McPhail
+- Kamran Mehrabani-Zeinabad
+- Entezar Mehrabi Nasab
+- Tesfahun Mekene Meto
+- Walter Mendoza
+- Ritesh G Menezes
+- George A Mensah
+- Alexios-Fotios A Mentis
+- Sultan Ayoub Meo
+- Haftu Asmerom Meresa
+- Atte Meretoja
+- Tuomo J Meretoja
+- Abera M Mersha
+- Tomislav Mestrovic
+- Kukulege Chamila Dinushi Mettananda
+- Sachith Mettananda
+- Irmina Maria Michalek
+- Paul Anthony Miller
+- Ted R Miller
+- Edward J Mills
+- Le Huu Nhat Minh
+- Antonio Mirijello
+- Erkin M Mirrakhimov
+- Mizan Kiros Mirutse
+- Mohammad Mirza-Aghazadeh-Attari
+- Maryam Mirzaei
+- Roya Mirzaei
+- Awoke Misganaw
+- Ajay Kumar Mishra
+- Philip B Mitchell
+- Chaitanya Mittal
+- Babak Moazen
+- Madeline E Moberg
+- Jama Mohamed
+- Mouhand F H Mohamed
+- Nouh Saad Mohamed
+- Esmaeil Mohammadi
+- Soheil Mohammadi
+- Hussen Mohammed
+- Salahuddin Mohammed
+- Shafiu Mohammed
+- Robin M Mohr
+- Ali H Mokdad
+- Sabrina Molinaro
+- Sara Momtazmanesh
+- Lorenzo Monasta
+- Stefania Mondello
+- AmirAli Moodi Ghalibaf
+- Maryam Moradi
+- Yousef Moradi
+- Maziar Moradi-Lakeh
+- Paula Moraga
+- Lidia Morawska
+- Rafael Silveira Moreira
+- Negar Morovatdar
+- Shane Douglas Morrison
+- Jakub Morze
+- Abbas Mosapour
+- Jonathan F Mosser
+- Elias Mossialos
+- Rohith Motappa
+- Vincent Mougin
+- Simin Mouodi
+- Matías Mrejen
+- Ahmed Msherghi
+- Sumaira Mubarik
+- Ulrich Otto Mueller
+- Francesk Mulita
+- Kavita Munjal
+- Efrén Murillo-Zamora
+- BV Murlimanju
+- Ghulam Mustafa
+- Sathish Muthu
+- Muhammad Muzaffar
+- Woojae Myung
+- Ahamarshan Jayaraman Nagarajan
+- Pirouz Naghavi
+- Ganesh R Naik
+- Firzan Nainu
+- Sanjeev Nair
+- Hastyar Hama Rashid Najmuldeen
+- Vinay Nangia
+- Atta Abbas Naqvi
+- Aparna Ichalangod Narayana
+- Shumaila Nargus
+- Gustavo G Nascimento
+- Abdulqadir J Nashwan
+- Ali Nasrollahizadeh
+- Amir Nasrollahizadeh
+- Zuhair S Natto
+- Biswa Prakash Nayak
+- Vinod C Nayak
+- Sabina Onyinye Nduaguba
+- Hadush Negash
+- Ionut Negoi
+- Ruxandra Irina Negoi
+- Seyed Aria Nejadghaderi
+- Olivia D Nesbit
+- Henok Biresaw Netsere
+- Marie Ng
+- Georges Nguefack-Tsague
+- Josephine W Ngunjiri
+- Dang H Nguyen
+- Hien Quang Nguyen
+- Robina Khan Niazi
+- Taxiarchis Konstantinos Nikolouzakis
+- Ali Nikoobar
+- Fatemeh Nikoomanesh
+- Amin Reza Nikpoor
+- Chukwudi A Nnaji
+- Lawrence Achilles Nnyanzi
+- Efaq Ali Noman
+- Shuhei Nomura
+- Bo Norrving
+- Chisom Adaobi Nri-Ezedi
+- George Ntaios
+- Mpiko Ntsekhe
+- Dieta Nurrika
+- Chimezie Igwegbe Nzoputam
+- Ogochukwu Janet Nzoputam
+- Bogdan Oancea
+- Ismail A Odetokun
+- "Martin James O'Donnell"
+- Ayodipupo Sikiru Oguntade
+- James Odhiambo Oguta
+- Hassan Okati-Aliabad
+- Sylvester Reuben Okeke
+- Akinkunmi Paul Okekunle
+- Osaretin Christabel Okonji
+- Andrew T Olagunju
+- Omotola O Olasupo
+- Matthew Idowu Olatubi
+- Gláucia Maria Moraes Oliveira
+- Isaac Iyinoluwa Olufadewa
+- Bolajoko Olubukunola Olusanya
+- Jacob Olusegun Olusanya
+- Hany A Omar
+- Goran Latif Omer
+- Abidemi E Emmanuel Omonisi
+- Sandersan Onie
+- Obinna E Onwujekwe
+- Michal Ordak
+- Verner N Orish
+- Doris V Ortega-Altamirano
+- Alberto Ortiz
+- Edgar Ortiz-Brizuela
+- Wael M S Osman
+- Samuel M Ostroff
+- Uchechukwu Levi Osuagwu
+- Adrian Otoiu
+- Nikita Otstavnov
+- Stanislav S Otstavnov
+- Amel Ouyahia
+- Guoqing Ouyang
+- Mayowa O Owolabi
+- Mahesh Padukudru P A
+- Alicia Padron-Monedero
+- Jagadish Rao Padubidri
+- Tamás Palicz
+- Claudia Palladino
+- Feng Pan
+- Seithikurippu R Pandi-Perumal
+- Helena Ullyartha Pangaribuan
+- Georgios D Panos
+- Leonidas D Panos
+- Anca Mihaela Pantea Stoian
+- Shahina Pardhan
+- Romil R Parikh
+- Ava Pashaei
+- Maja Pasovic
+- Roberto Passera
+- Jay Patel
+- Sangram Kishor Patel
+- Shankargouda Patil
+- Dimitrios Patoulias
+- Venkata Suresh Patthipati
+- Shrikant Pawar
+- Hamidreza Pazoki Toroudi
+- Spencer A Pease
+- Amy E Peden
+- Paolo Pedersini
+- Minjin Peng
+- Umberto Pensato
+- Veincent Christian Filipino Pepito
+- Emmanuel K Peprah
+- Prince Peprah
+- João Perdigão
+- Maria Odete Pereira
+- Arokiasamy Perianayagam
+- Norberto Perico
+- Konrad Pesudovs
+- Fanny Emily Petermann-Rocha
+- William A Petri
+- Hoang Tran Pham
+- Anil K Philip
+- Michael R Phillips
+- Manon Pigeolet
+- David M Pigott
+- Julian David Pillay
+- Zahra Zahid Piracha
+- Saeed Pirouzpanah
+- Dietrich Plass
+- Evgenii Plotnikov
+- Dimitri Poddighe
+- Suzanne Polinder
+- Maarten J Postma
+- Naeimeh Pourtaheri
+- Sergio I Prada
+- Pranil Man Singh Pradhan
+- V Prakash
+- Manya Prasad
+- Elton Junio Sady Prates
+- Tina Priscilla
+- Natalie Pritchett
+- Pooja Puri
+- Jagadeesh Puvvula
+- Nameer Hashim Qasim
+- Ibrahim Qattea
+- Asma Saleem Qazi
+- Gangzhen Qian
+- Mehrdad Rabiee Rad
+- Raghu Anekal Radhakrishnan
+- Venkatraman Radhakrishnan
+- Hadi Raeisi Shahraki
+- Quinn Rafferty
+- Alberto Raggi
+- Pankaja Raghav Raghav
+- Md Jillur Rahim
+- Md Mosfequr Rahman
+- Mohammad Hifz Ur Rahman
+- Mosiur Rahman
+- Muhammad Aziz Rahman
+- Shayan Rahmani
+- Mohammad Rahmanian
+- Setyaningrum Rahmawaty
+- Sathish Rajaa
+- Mahmoud Mohammed Ramadan
+- Shakthi Kumaran Ramasamy
+- Premkumar Ramasubramani
+- Sheena Ramazanu
+- Kritika Rana
+- Chhabi Lal Ranabhat
+- Nemanja Rancic
+- Amey Rane
+- Chythra R Rao
+- Kumuda Rao
+- Mithun Rao
+- Sowmya J Rao
+- Mohammad-Mahdi Rashidi
+- Giridhara Rathnaiah Babu
+- Santosh Kumar Rauniyar
+- David Laith Rawaf
+- Salman Rawaf
+- Christian Razo
+- Murali Mohan Rama Krishna Reddy
+- Elrashdy Moustafa Mohamed Redwan
+- Lennart Reifels
+- Robert C Reiner Jr
+- Giuseppe Remuzzi
+- Andre M N Renzaho
+- Bhageerathy Reshmi
+- Luis Felipe Reyes
+- Nazila Rezaei
+- Negar Rezaei
+- Nima Rezaei
+- Peyman Rezaei Hachesu
+- Mohsen Rezaeian
+- Jennifer Rickard
+- Célia Fortuna Rodrigues
+- Jefferson Antonio Buendia Rodriguez
+- Leonardo Roever
+- Luca Ronfani
+- Gholamreza Roshandel
+- Kunle Rotimi
+- Himanshu Sekhar Rout
+- Bedanta Roy
+- Nitai Roy
+- Priyanka Roy
+- Enrico Rubagotti
+- Chandan S N
+- Aly M A Saad
+- Maha Mohamed Saber-Ayad
+- Siamak Sabour
+- Simona Sacco
+- Perminder S Sachdev
+- Basema Saddik
+- Adam Saddler
+- Bashdar Abuzed Sadee
+- Erfan Sadeghi
+- Masoumeh Sadeghi
+- Mohammad Reza Saeb
+- Umar Saeed
+- Sher Zaman Safi
+- Rajesh Sagar
+- Dominic Sagoe
+- Zahra Saif
+- Mirza Rizwan Sajid
+- Joseph W Sakshaug
+- Nasir Salam
+- Afeez Abolarinwa Salami
+- Luciane B Salaroli
+- Mohamed A Saleh
+- Marwa Rashad Salem
+- Mohammed Z Y Salem
+- Malik Sallam
+- Sara Samadzadeh
+- Saad Samargandy
+- Yoseph Leonardo Samodra
+- Abdallah M Samy
+- Juan Sanabria
+- Francesca Sanna
+- Itamar S Santos
+- Milena M Santric-Milicevic
+- Made Ary Sarasmita
+- Yaser Sarikhani
+- Rodrigo Sarmiento-Suárez
+- Gargi Sachin Sarode
+- Sachin C Sarode
+- Arash Sarveazad
+- Brijesh Sathian
+- Anudeep Sathyanarayan
+- Maheswar Satpathy
+- Monika Sawhney
+- Nikolaos Scarmeas
+- Benedikt Michael Schaarschmidt
+- Maria Inês Schmidt
+- Ione Jayce Ceola Schneider
+- Austin E Schumacher
+- David C Schwebel
+- Falk Schwendicke
+- Mansour Sedighi
+- Sabyasachi Senapati
+- Subramanian Senthilkumaran
+- Sadaf G Sepanlou
+- Yashendra Sethi
+- Soko Setoguchi
+- Allen Seylani
+- Jamileh Shadid
+- Mahan Shafie
+- Humaira Shah
+- Nilay S Shah
+- Pritik A Shah
+- Ataollah Shahbandi
+- Samiah Shahid
+- Wajeehah Shahid
+- Moyad Jamal Shahwan
+- Masood Ali Shaikh
+- Alireza Shakeri
+- Ali S Shalash
+- Sunder Sham
+- Muhammad Aaqib Shamim
+- Mohammad Ali Shamshirgaran
+- Mohammad Anas Shamsi
+- Mohd Shanawaz
+- Abhishek Shankar
+- Mohammed Shannawaz
+- Medha Sharath
+- Amin Sharifan
+- Javad Sharifi-Rad
+- Manoj Sharma
+- Rajesh Sharma
+- Saurab Sharma
+- Ujjawal Sharma
+- Vishal Sharma
+- Rajesh P Shastry
+- Amin Shavandi
+- Amir Mehdi Shayan
+- Maryam Shayan
+- Amr Mohamed Elsayed Shehabeldine
+- Pavanchand H Shetty
+- Kenji Shibuya
+- Jemal Ebrahim Shifa
+- Desalegn Shiferaw
+- Wondimeneh Shibabaw Shiferaw
+- Mika Shigematsu
+- Rahman Shiri
+- Nebiyu Aniley Shitaye
+- Aminu Shittu
+- K M Shivakumar
+- Velizar Shivarov
+- Zahra Shokati Eshkiki
+- Sina Shool
+- Sunil Shrestha
+- Kerem Shuval
+- Migbar Mekonnen Sibhat
+- Emmanuel Edwar Siddig
+- Inga Dora Sigfusdottir
+- Diego Augusto Santos Silva
+- João Pedro Silva
+- Luís Manuel Lopes Rodrigues Silva
+- Soraia Silva
+- Colin R Simpson
+- Anjali Singal
+- Abhinav Singh
+- Balbir Bagicha Singh
+- Harmanjit Singh
+- Jasvinder A Singh
+- Mahendra Singh
+- Paramdeep Singh
+- Søren T Skou
+- David A Sleet
+- Erica Leigh N Slepak
+- Ranjan Solanki
+- Sameh S M Soliman
+- Suhang Song
+- Yimeng Song
+- Reed J D Sorensen
+- Joan B Soriano
+- Ireneous N Soyiri
+- Michael Spartalis
+- Chandrashekhar T Sreeramareddy
+- Benjamin A Stark
+- Antonina V Starodubova
+- Caroline Stein
+- Dan J Stein
+- Caitlyn Steiner
+- Timothy J Steiner
+- Jaimie D Steinmetz
+- Paschalis Steiropoulos
+- Leo Stockfelt
+- Mark A Stokes
+- Narayan Subedi Subedi
+- Vetriselvan Subramaniyan
+- Claudia Kimie Suemoto
+- Muhammad Suleman
+- Rizwan Suliankatchi Abdulkader
+- Abida Sultana
+- Johan Sundström
+- Chandan Kumar Swain
+- Lukasz Szarpak
+- Payam Tabaee Damavandi
+- Rafael Tabarés-Seisdedos
+- Ozra Tabatabaei Malazy
+- Seyed-Amir Tabatabaeizadeh
+- Shima Tabatabai
+- Celine Tabche
+- Mohammad Tabish
+- Santosh Kumar Tadakamadla
+- Yasaman Taheri Abkenar
+- Moslem Taheri Soodejani
+- Amir Taherkhani
+- Jabeen Taiba
+- Iman M Talaat
+- Ashis Talukder
+- Mircea Tampa
+- Jacques Lukenze Tamuzi
+- Ker-Kan Tan
+- Sarmila Tandukar
+- Haosu Tang
+- Razieh Tavakoli Oliaee
+- Seyed Mohammad Tavangar
+- Mojtaba Teimoori
+- Mohamad-Hani Temsah
+- Masayuki Teramoto
+- Pugazhenthan Thangaraju
+- Kavumpurathu Raman Thankappan
+- Rekha Thapar
+- Rasiah Thayakaran
+- Sathish Thirunavukkarasu
+- Nihal Thomas
+- Nikhil Kenny Thomas
+- Chern Choong Chern Thum
+- Ales Tichopad
+- Jansje Henny Vera Ticoalu
+- Tala Tillawi
+- Tenaw Yimer Tiruye
+- Ruoyan Tobe-Gai
+- Marcello Tonelli
+- Roman Topor-Madry
+- Anna E Torre
+- Mathilde Touvier
+- Marcos Roberto Tovani-Palone
+- Jasmine T Tran
+- Mai Thi Ngoc Tran
+- Nghia Minh Tran
+- Ngoc-Ha Tran
+- Domenico Trico
+- Samuel Joseph Tromans
+- Thien Tan Tri Tai Truyen
+- Aristidis Tsatsakis
+- Guesh Mebrahtom Tsegay
+- Evangelia Eirini Tsermpini
+- Munkhtuya Tumurkhuu
+- Stefanos Tyrovolas
+- Arit Udoh
+- Muhammad Umair
+- Srikanth Umakanthan
+- Tungki Pratama Umar
+- Eduardo A Undurraga
+- Brigid Unim
+- Bhaskaran Unnikrishnan
+- Carolyn Anne Unsworth
+- Era Upadhyay
+- Daniele Urso
+- Jibrin Sammani Usman
+- Seyed Mohammad Vahabi
+- Asokan Govindaraj Vaithinathan
+- Jef Van den Eynde
+- Orsolya Varga
+- Ravi Prasad Varma
+- Priya Vart
+- Tommi Juhani Vasankari
+- Milena Vasic
+- Siavash Vaziri
+- Balachandar Vellingiri
+- Narayanaswamy Venketasubramanian
+- Massimiliano Veroux
+- Georgios-Ioannis Verras
+- Dominique Vervoort
+- Jorge Hugo Villafañe
+- Francesco S Violante
+- Vasily Vlassov
+- Stein Emil Vollset
+- Simona Ruxandra Volovat
+- Avina Vongpradith
+- Yasir Waheed
+- Cong Wang
+- Fang Wang
+- Ning Wang
+- Shu Wang
+- Yanzhong Wang
+- Yuan-Pang Wang
+- Paul Ward
+- Emebet Gashaw Wassie
+- Marcia R Weaver
+- Kosala Gayan Weerakoon
+- Robert G Weintraub
+- Daniel J Weiss
+- Abrha Hailay Weldemariam
+- Katherine M Wells
+- Yi Feng Wen
+- Joanna L Whisnant
+- Harvey A Whiteford
+- Taweewat Wiangkham
+- Dakshitha Praneeth Wickramasinghe
+- Nuwan Darshana Wickramasinghe
+- Angga Wilandika
+- Caroline Wilkerson
+- Peter Willeit
+- Anders Wimo
+- Demewoz H Woldegebreal
+- Axel Walter Wolf
+- Yen Jun Wong
+- Anthony D Woolf
+- Chenkai Wu
+- Felicia Wu
+- Xinsheng Wu
+- Zenghong Wu
+- Sarah Wulf Hanson
+- Yanjie Xia
+- Hong Xiao
+- Xiaoyue Xu
+- Yvonne Yiru Xu
+- Lalit Yadav
+- Ali Yadollahpour
+- Sajad Yaghoubi
+- Kazumasa Yamagishi
+- Lin Yang
+- Yuichiro Yano
+- Yao Yao
+- Habib Yaribeygi
+- Mohammad Hosein Yazdanpanah
+- Pengpeng Ye
+- Sisay Shewasinad Yehualashet
+- Subah Abderehim Yesuf
+- Saber Yezli
+- Arzu Yiğit
+- Vahit Yiğit
+- Zeamanuel Anteneh Yigzaw
+- Yazachew Yismaw
+- Dong Keon Yon
+- Naohiro Yonemoto
+- Mustafa Z Younis
+- Chuanhua Yu
+- Yong Yu
+- Hadiza Yusuf
+- Mondal Hasan Zahid
+- Fathiah Zakham
+- Leila Zaki
+- Nazar Zaki
+- Burhan Abdullah Zaman
+- Nelson Zamora
+- Ramin Zand
+- Ghazal G Z Zandieh
+- Heather J Zar
+- Armin Zarrintan
+- Mikhail Sergeevich Zastrozhin
+- Haijun Zhang
+- Ning Zhang
+- Yunquan Zhang
+- Hanqing Zhao
+- Chenwen Zhong
+- Panliang Zhong
+- Juexiao Zhou
+- Zhaohua Zhu
+- Makan Ziafati
+- Magdalena Zielińska
+- Stephanie R M Zimsen
+- Mohammad Zoladl
+- Alimuddin Zumla
+- Samer H Zyoud
+- Theo Vos
+- Christopher J L Murray
+journal: The Lancet
+year: '2024'
+doi: 10.1016/S0140-6736(24)00757-8
+content_type: unavailable
+---
+
+# Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021
+**Authors:** Alize J Ferrari, Damian Francesco Santomauro, Amirali Aali, Yohannes Habtegiorgis Abate, Cristiana Abbafati, Hedayat Abbastabar, Samar Abd ElHafeez, Michael Abdelmasseh, Sherief Abd-Elsalam, Arash Abdollahi, Auwal Abdullahi, Kedir Hussein Abegaz, Roberto Ariel Abeldaño Zuñiga, Richard Gyan Aboagye, Hassan Abolhassani, Lucas Guimarães Abreu, Hasan Abualruz, Eman Abu-Gharbieh, Niveen ME Abu-Rmeileh, Ilana N Ackerman, Isaac Yeboah Addo, Giovanni Addolorato, Akindele Olupelumi Adebiyi, Abiola Victor Adepoju, Habeeb Omoponle Adewuyi, Shadi Afyouni, Saira Afzal, Sina Afzal, Antonella Agodi, Aqeel Ahmad, Danish Ahmad, Firdos Ahmad, Shahzaib Ahmad, Ali Ahmed, Luai A Ahmed, Muktar Beshir Ahmed, Marjan Ajami, Karolina Akinosoglou, Mohammed Ahmed Akkaif, Syed Mahfuz Al Hasan, Samer O Alalalmeh, Ziyad Al-Aly, Mohammed Albashtawy, Robert W Aldridge, Meseret Desalegn Alemu, Yihun Mulugeta Alemu, Kefyalew Addis Alene, Adel Ali Saeed Al-Gheethi, Maryam Alharrasi, Robert Kaba Alhassan, Mohammed Usman Ali, Rafat Ali, Syed Shujait Shujait Ali, Sheikh Mohammad Alif, Syed Mohamed Aljunid, Sabah Al-Marwani, Joseph Uy Almazan, Mahmoud A Alomari, Basem Al-Omari, Zaid Altaany, Nelson Alvis-Guzman, Nelson J Alvis-Zakzuk, Hassan Alwafi, Mohammad Sami Al-Wardat, Yaser Mohammed Al-Worafi, Safwat Aly, Karem H Alzoubi, Azmeraw T Amare, Prince M Amegbor, Edward Kwabena Ameyaw, Tarek Tawfik Amin, Alireza Amindarolzarbi, Sohrab Amiri, Dickson A Amugsi, Robert Ancuceanu, Deanna Anderlini, David B Anderson, Pedro Prata Andrade, Catalina Liliana Andrei, Hossein Ansari, Catherine M Antony, Saleha Anwar, Sumadi Lukman Anwar, Razique Anwer, Philip Emeka Anyanwu, Juan Pablo Arab, Jalal Arabloo, Mosab Arafat, Daniel T Araki, Aleksandr Y Aravkin, Mesay Arkew, Benedetta Armocida, Michael Benjamin Arndt, Mahwish Arooj, Anton A Artamonov, Raphael Taiwo Aruleba, Ashokan Arumugam, Charlie Ashbaugh, Mubarek Yesse Ashemo, Muhammad Ashraf, Marvellous O Asika, Elaheh Askari, Thomas Astell-Burt, Seyyed Shamsadin Athari, Prince Atorkey, Maha Moh'd Wahbi Atout, Alok Atreya, Avinash Aujayeb, Marcel Ausloos, Abolfazl Avan, Adedapo Wasiu Awotidebe, Kofi Awuviry-Newton, Beatriz Paulina Ayala Quintanilla, Jose L Ayuso-Mateos, Sina Azadnajafabad, Rui M S Azevedo, Abraham Samuel Babu, Muhammad Badar, Ashish D Badiye, Soroush Baghdadi, Nasser Bagheri, Sulaiman Bah, Ruhai Bai, Jennifer L Baker, Shankar M Bakkannavar, Abdulaziz T Bako, Senthilkumar Balakrishnan, Kiran Bam, Palash Chandra Banik, Martina Barchitta, Mainak Bardhan, Erfan Bardideh, Suzanne Lyn Barker-Collo, Hiba Jawdat Barqawi, Amadou Barrow, Sandra Barteit, Lingkan Barua, Somaye Bashiri Aliabadi, Afisu Basiru, Sanjay Basu, Saurav Basu, Prapthi Persis Bathini, Kavita Batra, Bernhard T Baune, Nebiyou Simegnew Bayileyegn, Babak Behnam, Amir Hossein Behnoush, Maryam Beiranvand, Diana Fernanda Bejarano Ramirez, Michelle L Bell, Olorunjuwon Omolaja Bello, Apostolos Beloukas, Isabela M Bensenor, Zombor Berezvai, Eduardo Bernabe, Robert S Bernstein, Paulo J G Bettencourt, Akshaya Srikanth Bhagavathula, Neeraj Bhala, Dinesh Bhandari, Ashish Bhargava, Sonu Bhaskar, Vivek Bhat, Gurjit Kaur Bhatti, Jasvinder Singh Bhatti, Manpreet S Bhatti, Rajbir Bhatti, Zulfiqar A Bhutta, Boris Bikbov, Jessica Devin Bishai, Catherine Bisignano, Veera R Bitra, Tone Bjørge, Virginia Bodolica, Aadam Olalekan Bodunrin, Eyob Ketema Bogale, Milad Bonakdar Hashemi, Aime Bonny, Berrak Bora Basara, Hamed Borhany, Christopher Boxe, Oliver J Brady, Nicola Luigi Bragazzi, Dejana Braithwaite, Luisa C Brant, Michael Brauer, Susanne Breitner, Hermann Brenner, Julie Brown, Traolach Brugha, Norma B Bulamu, Danilo Buonsenso, Katrin Burkart, Richard A Burns, Reinhard Busse, Yasser Bustanji, Zahid A Butt, Justin Byun, Florentino Luciano Caetano dos Santos, Daniela Calina, Luis Alberto Cámera, Ismael R Campos-Nonato, Chao Cao, Angelo Capodici, Sinclair Carr, Giulia Carreras, Andrea Carugno, Márcia Carvalho, Joao Mauricio Castaldelli-Maia, Carlos A Castañeda-Orjuela, Giulio Castelpietra, Alberico L Catapano, Maria Sofia Cattaruzza, Arthur Caye, Luca Cegolon, Francieli Cembranel, Muthia Cenderadewi, Ester Cerin, Promit Ananyo Chakraborty, Jeffrey Shi Kai Chan, Raymond N C Chan, Rama Mohan Chandika, Eeshwar K Chandrasekar, Periklis Charalampous, Vijay Kumar Chattu, Victoria Chatzimavridou-Grigoriadou, Angela W Chen, An-Tian Chen, Catherine S Chen, Haowei Chen, Nathalie M Chen, Esther T W Cheng, Odgerel Chimed-Ochir, Ritesh Chimoriya, Patrick R Ching, William C S Cho, Sungchul Choi, Bryan Chong, Yuen Yu Chong, Sonali Gajanan Choudhari, Rajiv Chowdhury, Steffan Wittrup McPhee Christensen, Dinh-Toi Chu, Isaac Sunday Chukwu, Eric Chung, Eunice Chung, Muhammad Chutiyami, Mareli M Claassens, Rebecca M Cogen, Alyssa Columbus, Joao Conde, Paolo Angelo Cortesi, Ewerton Cousin, Michael H Criqui, Natália Cruz-Martins, Omid Dadras, Siyu Dai, Xiaochen Dai, Zhaoli Dai, Maxwell Ayindenaba Dalaba, Giovanni Damiani, Jai K Das, Saswati Das, Mohsen Dashti, Claudio Alberto Dávila-Cervantes, Kairat Davletov, Diego De Leo, Aklilu Tamire Debele, Shayom Debopadhaya, Nicole K DeCleene, Farah Deeba, Louisa Degenhardt, Cristian Del Bo', Ivan Delgado-Enciso, Andreas K Demetriades, Edgar Denova-Gutiérrez, Nikolaos Dervenis, Hardik Dineshbhai Desai, Rupak Desai, Keshab Deuba, Kuldeep Dhama, Samath Dhamminda Dharmaratne, Sameer Dhingra, Diana Dias da Silva, Daniel Diaz, Luis Antonio Diaz, Michael J Diaz, Adriana Dima, Delaney D Ding, M Ashworth Dirac, Thao Huynh Phuong Do, Camila Bruneli do Prado, Sushil Dohare, Regina-Mae Villanueva Dominguez, Wanyue Dong, Deepa Dongarwar, Mario D'Oria, E Ray Dorsey, Leila Doshmangir, Robert Kokou Dowou, Tim Robert Driscoll, Haneil Larson Dsouza, Viola Dsouza, John Dube, Samuel C Dumith, Bruce B Duncan, Andre Rodrigues Duraes, Senbagam Duraisamy, Oyewole Christopher Durojaiye, Paulina Agnieszka Dzianach, Arkadiusz Marian Dziedzic, Ejemai Eboreime, Alireza Ebrahimi, Hisham Atan Edinur, David Edvardsson, Terje Andreas Eikemo, Ebrahim Eini, Michael Ekholuenetale, Temitope Cyrus Ekundayo, Iman El Sayed, Maha El Tantawi, Iffat Elbarazi, Noha Mousaad Elemam, Ghada Metwally Tawfik ElGohary, Muhammed Elhadi, Omar Abdelsadek Abdou Elmeligy, Gihan ELNahas, Mohammed Elshaer, Ibrahim Elsohaby, Luchuo Engelbert Bain, Ryenchindorj Erkhembayar, Babak Eshrati, Kara Estep, Natalia Fabin, Adeniyi Francis Fagbamigbe, Luca Falzone, Mohammad Fareed, Carla Sofia e Sá Farinha, MoezAlIslam Ezzat Mahmoud Faris, Andre Faro, Pegah Farrokhi, Ali Fatehizadeh, Nelsensius Klau Fauk, Valery L Feigin, Xiaoqi Feng, Seyed-Mohammad Fereshtehnejad, Abdullah Hamid Feroze, Nuno Ferreira, Paulo H Ferreira, Florian Fischer, Joanne Flavel, David Flood, Luisa S Flor, Nataliya A Foigt, Morenike Oluwatoyin Folayan, Lisa M Force, Daniela Fortuna, Matteo Foschi, Richard Charles Franklin, Alberto Freitas, Takeshi Fukumoto, João M Furtado, Peter Andras Gaal, Muktar A Gadanya, Abhay Motiramji Gaidhane, Santosh Gaihre, Yaseen Galali, Mandukhai Ganbat, Aravind P Gandhi, Balasankar Ganesan, Mohd Ashraf Ganie, Mohammad Arfat Ganiyani, William M Gardner, Tilaye Gebru Gebi, Miglas W Gebregergis, Mesfin Gebrehiwot, Tesfay B B Gebremariam, Teferi Gebru Gebremeskel, Yibeltal Yismaw Gela, Simona Roxana Georgescu, Abera Getachew Obsa, Peter W Gething, Molla Getie, Keyghobad Ghadiri, Fataneh Ghadirian, Khalid Yaser Ghailan, Alireza Ghajar, MohammadReza Ghasemi, Ghazal Ghasempour Dabaghi, Afsaneh Ghasemzadeh, Ramy Mohamed Ghazy, Ali Gholamrezanezhad, Mahsa Ghorbani, Elena Ghotbi, Ruth Margaret Gibson, Tiffany K Gill, Themba G Ginindza, Alem Girmay, James C Glasbey, Laszlo Göbölös, Myron Anthony Godinho, Salime Goharinezhad, Mohamad Goldust, Mahaveer Golechha, Pouya Goleij, Philimon N Gona, Giuseppe Gorini, Alessandra C Goulart, Ayman Grada, Michal Grivna, Shi-Yang Guan, Giovanni Guarducci, Mohammed Ibrahim Mohialdeen Gubari, Mesay Dechasa Gudeta, Avirup Guha, Stefano Guicciardi, Snigdha Gulati, David Gulisashvili, Damitha Asanga Gunawardane, Cui Guo, Anish Kumar Gupta, Bhawna Gupta, Ishita Gupta, Mohak Gupta, Rajeev Gupta, Veer Bala Gupta, Vijai Kumar Gupta, Vivek Kumar Gupta, Reyna Alma Gutiérrez, Farrokh Habibzadeh, Parham Habibzadeh, Rasool Haddadi, Najah R Hadi, Nils Haep, Nima Hafezi-Nejad, Abdul Hafiz, Hailey Hagins, Esam S Halboub, Aram Halimi, Sebastian Haller, Rabih Halwani, Erin B Hamilton, Graeme J Hankey, Md Abdul Hannan, Md Nuruzzaman Haque, Harapan Harapan, Josep Maria Haro, Jan Hartvigsen, Ahmed I Hasaballah, Ikramul Hasan, Mohammad Hasanian, Md Saquib Hasnain, Amr Hassan, Johannes Haubold, Rasmus J Havmoeller, Simon I Hay, Khezar Hayat, Jeffrey J Hebert, Omar E Hegazi, Golnaz Heidari, Bartosz Helfer, Mehdi Hemmati, Delia Hendrie, Claire A Henson, Kamal Hezam, Yuta Hiraike, Nguyen Quoc Hoan, Ramesh Holla, Julia Hon, Md Mahbub Hossain, Hassan Hosseinzadeh, Mehdi Hosseinzadeh, Mihaela Hostiuc, Sorin Hostiuc, Johnathan M Hsu, Junjie Huang, Fernando N Hugo, Kiavash Hushmandi, Javid Hussain, Nawfal R Hussein, Chantal K Huynh, Hong-Han Huynh, Bing-Fang Hwang, Vincent C Iannucci, Audrey L Ihler, Adalia I Ikiroma, Kevin S Ikuta, Olayinka Stephen Ilesanmi, Irena M Ilic, Milena D Ilic, Mohammad Tarique Imam, Mustapha Immurana, Lalu Muhammad Irham, Md Rabiul Islam, Sheikh Mohammed Shariful Islam, Farhad Islami, Faisal Ismail, Nahlah Elkudssiah Ismail, Gaetano Isola, Masao Iwagami, Chidozie C D Iwu, Mahalaxmi Iyer, Jalil Jaafari, Kathryn H Jacobsen, Farhad Jadidi-Niaragh, Morteza Jafarinia, Khushleen Jaggi, Kasra Jahankhani, Nader Jahanmehr, Haitham Jahrami, Akhil Jain, Nityanand Jain, Ammar Abdulrahman Jairoun, Abhishek Jaiswal, Mihajlo Jakovljevic, Abubakar Ibrahim Jatau, Sabzali Javadov, Tahereh Javaheri, Sathish Kumar Jayapal, Shubha Jayaram, Sun Ha Jee, Jayakumar Jeganathan, Angeline Jeyakumar, Anil K Jha, Heng Jiang, Yinzi Jin, Jost B Jonas, Tamas Joo, Abel Joseph, Nitin Joseph, Charity Ehimwenma Joshua, Jacek Jerzy Jozwiak, Mikk Jürisson, Vaishali K, Billingsley Kaambwa, Ali Kabir, Zubair Kabir, Vidya Kadashetti, Rizwan Kalani, Leila R Kalankesh, Feroze Kaliyadan, Sanjay Kalra, Kaloyan Kamenov, Naser Kamyari, Thanigaivelan Kanagasabai, Himal Kandel, Arun R Kanmanthareddy, Kehinde Kazeem Kanmodi, Rami S Kantar, Ibraheem M Karaye, Asima Karim, Salah Eddin Karimi, Yeganeh Karimi, Hengameh Kasraei, Molly B Kassel, Joonas H Kauppila, Norito Kawakami, Gbenga A Kayode, Foad Kazemi, Sina Kazemian, Leila Keikavoosi-Arani, Cathleen Keller, John H Kempen, Jessica A Kerr, Kamyab Keshtkar, Emmanuelle Kesse-Guyot, Mohammad Keykhaei, Himanshu Khajuria, Amirmohammad Khalaji, Asaad Khalid, Nauman Khalid, Alireza Khalilian, Faham Khamesipour, Asaduzzaman Khan, Ikramullah Khan, Maseer Khan, Moien AB Khan, Shaghayegh Khanmohammadi, Khaled Khatab, Fatemeh Khatami, Moawiah Mohammad Khatatbeh, Amir M Khater, Hamid Reza Khayat Kashani, Feriha Fatima Khidri, Elaheh Khodadoust, Moein Khormali, Zahra Khorrami, Zemene Demelash Kifle, Min Seo Kim, Ruth W Kimokoti, Adnan Kisa, Sezer Kisa, Ann Kristin Skrindo Knudsen, Jonathan M Kocarnik, Sonali Kochhar, Hyun Yong Koh, Ali-Asghar Kolahi, Farzad Kompani, Gerbrand Koren, Oleksii Korzh, Soewarta Kosen, Sindhura Lakshmi Koulmane Laxminarayana, Kewal Krishan, Varun Krishna, Vijay Krishnamoorthy, Barthelemy Kuate Defo, Md Abdul Kuddus, Mohammed Kuddus, Ilari Kuitunen, Vishnutheertha Kulkarni, Manasi Kumar, Nithin Kumar, Rakesh Kumar, Om P Kurmi, Dian Kusuma, Hmwe Hmwe Kyu, Carlo La Vecchia, Ben Lacey, Muhammad Awwal Ladan, Lucie Laflamme, Alessandra Lafranconi, Chandrakant Lahariya, Daphne Teck Ching Lai, Dharmesh Kumar Lal, Ratilal Lalloo, Tea Lallukka, Judit Lám, Qing Lan, Tuo Lan, Iván Landires, Francesco Lanfranchi, Berthold Langguth, Ariane Laplante-Lévesque, Bagher Larijani, Anders O Larsson, Savita Lasrado, Paolo Lauriola, Huu-Hoai Le, Long Khanh Dao Le, Nhi Huu Hanh Le, Trang Diep Thanh Le, Janet L Leasher, Caterina Ledda, Munjae Lee, Paul H Lee, Sang-woong Lee, Seung Won Lee, Wei-Chen Lee, Yo Han Lee, Kate E LeGrand, Jacopo Lenzi, Elvynna Leong, Janni Leung, Ming-Chieh Li, Wei Li, Xiaopan Li, Yichong Li, Yongze Li, Lee-Ling Lim, Stephen S Lim, Megan Lindstrom, Shai Linn, Gang Liu, Runben Liu, Shiwei Liu, Wei Liu, Xiaofeng Liu, Xuefeng Liu, Erand Llanaj, Chun-Han Lo, Rubén López-Bueno, Arianna Maever Loreche, László Lorenzovici, Rafael Lozano, Jailos Lubinda, Giancarlo Lucchetti, Raimundas Lunevicius, Jay B Lusk, hengliang lv, Zheng Feei Ma, Nikolaos Machairas, Áurea M Madureira-Carvalho, Javier A Magaña Gómez, Azzam A Maghazachi, Preeti Maharjan, Phetole Walter Mahasha, Mina Maheri, Soleiman Mahjoub, Mansour Adam Mahmoud, Elham Mahmoudi, Azeem Majeed, Konstantinos Christos Makris, Elaheh Malakan Rad, Kashish Malhotra, Ahmad Azam Malik, Iram Malik, Deborah Carvalho Malta, Yosef Manla, Ali Mansour, Pejman Mansouri, Mohammad Ali Mansournia, Ana M Mantilla Herrera, Lorenzo Giovanni Mantovani, Emmanuel Manu, Hamid Reza Marateb, Parham Mardi, Gabriel Martinez, Ramon Martinez-Piedra, Daniela Martini, Francisco Rogerlândio Martins-Melo, Miquel Martorell, Wolfgang Marx, Sharmeen Maryam, Roy Rillera Marzo, Yasith Mathangasinghe, Stephanie Mathieson, Alexander G Mathioudakis, Jishanth Mattumpuram, Andrea Maugeri, Mahsa Mayeli, Mohsen Mazidi, Antonio Mazzotti, John J McGrath, Martin McKee, Anna Laura W McKowen, Michael A McPhail, Kamran Mehrabani-Zeinabad, Entezar Mehrabi Nasab, Tesfahun Mekene Meto, Walter Mendoza, Ritesh G Menezes, George A Mensah, Alexios-Fotios A Mentis, Sultan Ayoub Meo, Haftu Asmerom Meresa, Atte Meretoja, Tuomo J Meretoja, Abera M Mersha, Tomislav Mestrovic, Kukulege Chamila Dinushi Mettananda, Sachith Mettananda, Irmina Maria Michalek, Paul Anthony Miller, Ted R Miller, Edward J Mills, Le Huu Nhat Minh, Antonio Mirijello, Erkin M Mirrakhimov, Mizan Kiros Mirutse, Mohammad Mirza-Aghazadeh-Attari, Maryam Mirzaei, Roya Mirzaei, Awoke Misganaw, Ajay Kumar Mishra, Philip B Mitchell, Chaitanya Mittal, Babak Moazen, Madeline E Moberg, Jama Mohamed, Mouhand F H Mohamed, Nouh Saad Mohamed, Esmaeil Mohammadi, Soheil Mohammadi, Hussen Mohammed, Salahuddin Mohammed, Shafiu Mohammed, Robin M Mohr, Ali H Mokdad, Sabrina Molinaro, Sara Momtazmanesh, Lorenzo Monasta, Stefania Mondello, AmirAli Moodi Ghalibaf, Maryam Moradi, Yousef Moradi, Maziar Moradi-Lakeh, Paula Moraga, Lidia Morawska, Rafael Silveira Moreira, Negar Morovatdar, Shane Douglas Morrison, Jakub Morze, Abbas Mosapour, Jonathan F Mosser, Elias Mossialos, Rohith Motappa, Vincent Mougin, Simin Mouodi, Matías Mrejen, Ahmed Msherghi, Sumaira Mubarik, Ulrich Otto Mueller, Francesk Mulita, Kavita Munjal, Efrén Murillo-Zamora, BV Murlimanju, Ghulam Mustafa, Sathish Muthu, Muhammad Muzaffar, Woojae Myung, Ahamarshan Jayaraman Nagarajan, Pirouz Naghavi, Ganesh R Naik, Firzan Nainu, Sanjeev Nair, Hastyar Hama Rashid Najmuldeen, Vinay Nangia, Atta Abbas Naqvi, Aparna Ichalangod Narayana, Shumaila Nargus, Gustavo G Nascimento, Abdulqadir J Nashwan, Ali Nasrollahizadeh, Amir Nasrollahizadeh, Zuhair S Natto, Biswa Prakash Nayak, Vinod C Nayak, Sabina Onyinye Nduaguba, Hadush Negash, Ionut Negoi, Ruxandra Irina Negoi, Seyed Aria Nejadghaderi, Olivia D Nesbit, Henok Biresaw Netsere, Marie Ng, Georges Nguefack-Tsague, Josephine W Ngunjiri, Dang H Nguyen, Hien Quang Nguyen, Robina Khan Niazi, Taxiarchis Konstantinos Nikolouzakis, Ali Nikoobar, Fatemeh Nikoomanesh, Amin Reza Nikpoor, Chukwudi A Nnaji, Lawrence Achilles Nnyanzi, Efaq Ali Noman, Shuhei Nomura, Bo Norrving, Chisom Adaobi Nri-Ezedi, George Ntaios, Mpiko Ntsekhe, Dieta Nurrika, Chimezie Igwegbe Nzoputam, Ogochukwu Janet Nzoputam, Bogdan Oancea, Ismail A Odetokun, Martin James O'Donnell, Ayodipupo Sikiru Oguntade, James Odhiambo Oguta, Hassan Okati-Aliabad, Sylvester Reuben Okeke, Akinkunmi Paul Okekunle, Osaretin Christabel Okonji, Andrew T Olagunju, Omotola O Olasupo, Matthew Idowu Olatubi, Gláucia Maria Moraes Oliveira, Isaac Iyinoluwa Olufadewa, Bolajoko Olubukunola Olusanya, Jacob Olusegun Olusanya, Hany A Omar, Goran Latif Omer, Abidemi E Emmanuel Omonisi, Sandersan Onie, Obinna E Onwujekwe, Michal Ordak, Verner N Orish, Doris V Ortega-Altamirano, Alberto Ortiz, Edgar Ortiz-Brizuela, Wael M S Osman, Samuel M Ostroff, Uchechukwu Levi Osuagwu, Adrian Otoiu, Nikita Otstavnov, Stanislav S Otstavnov, Amel Ouyahia, Guoqing Ouyang, Mayowa O Owolabi, Mahesh Padukudru P A, Alicia Padron-Monedero, Jagadish Rao Padubidri, Tamás Palicz, Claudia Palladino, Feng Pan, Seithikurippu R Pandi-Perumal, Helena Ullyartha Pangaribuan, Georgios D Panos, Leonidas D Panos, Anca Mihaela Pantea Stoian, Shahina Pardhan, Romil R Parikh, Ava Pashaei, Maja Pasovic, Roberto Passera, Jay Patel, Sangram Kishor Patel, Shankargouda Patil, Dimitrios Patoulias, Venkata Suresh Patthipati, Shrikant Pawar, Hamidreza Pazoki Toroudi, Spencer A Pease, Amy E Peden, Paolo Pedersini, Minjin Peng, Umberto Pensato, Veincent Christian Filipino Pepito, Emmanuel K Peprah, Prince Peprah, João Perdigão, Maria Odete Pereira, Arokiasamy Perianayagam, Norberto Perico, Konrad Pesudovs, Fanny Emily Petermann-Rocha, William A Petri, Hoang Tran Pham, Anil K Philip, Michael R Phillips, Manon Pigeolet, David M Pigott, Julian David Pillay, Zahra Zahid Piracha, Saeed Pirouzpanah, Dietrich Plass, Evgenii Plotnikov, Dimitri Poddighe, Suzanne Polinder, Maarten J Postma, Naeimeh Pourtaheri, Sergio I Prada, Pranil Man Singh Pradhan, V Prakash, Manya Prasad, Elton Junio Sady Prates, Tina Priscilla, Natalie Pritchett, Pooja Puri, Jagadeesh Puvvula, Nameer Hashim Qasim, Ibrahim Qattea, Asma Saleem Qazi, Gangzhen Qian, Mehrdad Rabiee Rad, Raghu Anekal Radhakrishnan, Venkatraman Radhakrishnan, Hadi Raeisi Shahraki, Quinn Rafferty, Alberto Raggi, Pankaja Raghav Raghav, Md Jillur Rahim, Md Mosfequr Rahman, Mohammad Hifz Ur Rahman, Mosiur Rahman, Muhammad Aziz Rahman, Shayan Rahmani, Mohammad Rahmanian, Setyaningrum Rahmawaty, Sathish Rajaa, Mahmoud Mohammed Ramadan, Shakthi Kumaran Ramasamy, Premkumar Ramasubramani, Sheena Ramazanu, Kritika Rana, Chhabi Lal Ranabhat, Nemanja Rancic, Amey Rane, Chythra R Rao, Kumuda Rao, Mithun Rao, Sowmya J Rao, Mohammad-Mahdi Rashidi, Giridhara Rathnaiah Babu, Santosh Kumar Rauniyar, David Laith Rawaf, Salman Rawaf, Christian Razo, Murali Mohan Rama Krishna Reddy, Elrashdy Moustafa Mohamed Redwan, Lennart Reifels, Robert C Reiner Jr, Giuseppe Remuzzi, Andre M N Renzaho, Bhageerathy Reshmi, Luis Felipe Reyes, Nazila Rezaei, Negar Rezaei, Nima Rezaei, Peyman Rezaei Hachesu, Mohsen Rezaeian, Jennifer Rickard, Célia Fortuna Rodrigues, Jefferson Antonio Buendia Rodriguez, Leonardo Roever, Luca Ronfani, Gholamreza Roshandel, Kunle Rotimi, Himanshu Sekhar Rout, Bedanta Roy, Nitai Roy, Priyanka Roy, Enrico Rubagotti, Chandan S N, Aly M A Saad, Maha Mohamed Saber-Ayad, Siamak Sabour, Simona Sacco, Perminder S Sachdev, Basema Saddik, Adam Saddler, Bashdar Abuzed Sadee, Erfan Sadeghi, Masoumeh Sadeghi, Mohammad Reza Saeb, Umar Saeed, Sher Zaman Safi, Rajesh Sagar, Dominic Sagoe, Zahra Saif, Mirza Rizwan Sajid, Joseph W Sakshaug, Nasir Salam, Afeez Abolarinwa Salami, Luciane B Salaroli, Mohamed A Saleh, Marwa Rashad Salem, Mohammed Z Y Salem, Malik Sallam, Sara Samadzadeh, Saad Samargandy, Yoseph Leonardo Samodra, Abdallah M Samy, Juan Sanabria, Francesca Sanna, Itamar S Santos, Milena M Santric-Milicevic, Made Ary Sarasmita, Yaser Sarikhani, Rodrigo Sarmiento-Suárez, Gargi Sachin Sarode, Sachin C Sarode, Arash Sarveazad, Brijesh Sathian, Anudeep Sathyanarayan, Maheswar Satpathy, Monika Sawhney, Nikolaos Scarmeas, Benedikt Michael Schaarschmidt, Maria Inês Schmidt, Ione Jayce Ceola Schneider, Austin E Schumacher, David C Schwebel, Falk Schwendicke, Mansour Sedighi, Sabyasachi Senapati, Subramanian Senthilkumaran, Sadaf G Sepanlou, Yashendra Sethi, Soko Setoguchi, Allen Seylani, Jamileh Shadid, Mahan Shafie, Humaira Shah, Nilay S Shah, Pritik A Shah, Ataollah Shahbandi, Samiah Shahid, Wajeehah Shahid, Moyad Jamal Shahwan, Masood Ali Shaikh, Alireza Shakeri, Ali S Shalash, Sunder Sham, Muhammad Aaqib Shamim, Mohammad Ali Shamshirgaran, Mohammad Anas Shamsi, Mohd Shanawaz, Abhishek Shankar, Mohammed Shannawaz, Medha Sharath, Amin Sharifan, Javad Sharifi-Rad, Manoj Sharma, Rajesh Sharma, Saurab Sharma, Ujjawal Sharma, Vishal Sharma, Rajesh P Shastry, Amin Shavandi, Amir Mehdi Shayan, Maryam Shayan, Amr Mohamed Elsayed Shehabeldine, Pavanchand H Shetty, Kenji Shibuya, Jemal Ebrahim Shifa, Desalegn Shiferaw, Wondimeneh Shibabaw Shiferaw, Mika Shigematsu, Rahman Shiri, Nebiyu Aniley Shitaye, Aminu Shittu, K M Shivakumar, Velizar Shivarov, Zahra Shokati Eshkiki, Sina Shool, Sunil Shrestha, Kerem Shuval, Migbar Mekonnen Sibhat, Emmanuel Edwar Siddig, Inga Dora Sigfusdottir, Diego Augusto Santos Silva, João Pedro Silva, Luís Manuel Lopes Rodrigues Silva, Soraia Silva, Colin R Simpson, Anjali Singal, Abhinav Singh, Balbir Bagicha Singh, Harmanjit Singh, Jasvinder A Singh, Mahendra Singh, Paramdeep Singh, Søren T Skou, David A Sleet, Erica Leigh N Slepak, Ranjan Solanki, Sameh S M Soliman, Suhang Song, Yimeng Song, Reed J D Sorensen, Joan B Soriano, Ireneous N Soyiri, Michael Spartalis, Chandrashekhar T Sreeramareddy, Benjamin A Stark, Antonina V Starodubova, Caroline Stein, Dan J Stein, Caitlyn Steiner, Timothy J Steiner, Jaimie D Steinmetz, Paschalis Steiropoulos, Leo Stockfelt, Mark A Stokes, Narayan Subedi Subedi, Vetriselvan Subramaniyan, Claudia Kimie Suemoto, Muhammad Suleman, Rizwan Suliankatchi Abdulkader, Abida Sultana, Johan Sundström, Chandan Kumar Swain, Lukasz Szarpak, Payam Tabaee Damavandi, Rafael Tabarés-Seisdedos, Ozra Tabatabaei Malazy, Seyed-Amir Tabatabaeizadeh, Shima Tabatabai, Celine Tabche, Mohammad Tabish, Santosh Kumar Tadakamadla, Yasaman Taheri Abkenar, Moslem Taheri Soodejani, Amir Taherkhani, Jabeen Taiba, Iman M Talaat, Ashis Talukder, Mircea Tampa, Jacques Lukenze Tamuzi, Ker-Kan Tan, Sarmila Tandukar, Haosu Tang, Razieh Tavakoli Oliaee, Seyed Mohammad Tavangar, Mojtaba Teimoori, Mohamad-Hani Temsah, Masayuki Teramoto, Pugazhenthan Thangaraju, Kavumpurathu Raman Thankappan, Rekha Thapar, Rasiah Thayakaran, Sathish Thirunavukkarasu, Nihal Thomas, Nikhil Kenny Thomas, Chern Choong Chern Thum, Ales Tichopad, Jansje Henny Vera Ticoalu, Tala Tillawi, Tenaw Yimer Tiruye, Ruoyan Tobe-Gai, Marcello Tonelli, Roman Topor-Madry, Anna E Torre, Mathilde Touvier, Marcos Roberto Tovani-Palone, Jasmine T Tran, Mai Thi Ngoc Tran, Nghia Minh Tran, Ngoc-Ha Tran, Domenico Trico, Samuel Joseph Tromans, Thien Tan Tri Tai Truyen, Aristidis Tsatsakis, Guesh Mebrahtom Tsegay, Evangelia Eirini Tsermpini, Munkhtuya Tumurkhuu, Stefanos Tyrovolas, Arit Udoh, Muhammad Umair, Srikanth Umakanthan, Tungki Pratama Umar, Eduardo A Undurraga, Brigid Unim, Bhaskaran Unnikrishnan, Carolyn Anne Unsworth, Era Upadhyay, Daniele Urso, Jibrin Sammani Usman, Seyed Mohammad Vahabi, Asokan Govindaraj Vaithinathan, Jef Van den Eynde, Orsolya Varga, Ravi Prasad Varma, Priya Vart, Tommi Juhani Vasankari, Milena Vasic, Siavash Vaziri, Balachandar Vellingiri, Narayanaswamy Venketasubramanian, Massimiliano Veroux, Georgios-Ioannis Verras, Dominique Vervoort, Jorge Hugo Villafañe, Francesco S Violante, Vasily Vlassov, Stein Emil Vollset, Simona Ruxandra Volovat, Avina Vongpradith, Yasir Waheed, Cong Wang, Fang Wang, Ning Wang, Shu Wang, Yanzhong Wang, Yuan-Pang Wang, Paul Ward, Emebet Gashaw Wassie, Marcia R Weaver, Kosala Gayan Weerakoon, Robert G Weintraub, Daniel J Weiss, Abrha Hailay Weldemariam, Katherine M Wells, Yi Feng Wen, Joanna L Whisnant, Harvey A Whiteford, Taweewat Wiangkham, Dakshitha Praneeth Wickramasinghe, Nuwan Darshana Wickramasinghe, Angga Wilandika, Caroline Wilkerson, Peter Willeit, Anders Wimo, Demewoz H Woldegebreal, Axel Walter Wolf, Yen Jun Wong, Anthony D Woolf, Chenkai Wu, Felicia Wu, Xinsheng Wu, Zenghong Wu, Sarah Wulf Hanson, Yanjie Xia, Hong Xiao, Xiaoyue Xu, Yvonne Yiru Xu, Lalit Yadav, Ali Yadollahpour, Sajad Yaghoubi, Kazumasa Yamagishi, Lin Yang, Yuichiro Yano, Yao Yao, Habib Yaribeygi, Mohammad Hosein Yazdanpanah, Pengpeng Ye, Sisay Shewasinad Yehualashet, Subah Abderehim Yesuf, Saber Yezli, Arzu Yiğit, Vahit Yiğit, Zeamanuel Anteneh Yigzaw, Yazachew Yismaw, Dong Keon Yon, Naohiro Yonemoto, Mustafa Z Younis, Chuanhua Yu, Yong Yu, Hadiza Yusuf, Mondal Hasan Zahid, Fathiah Zakham, Leila Zaki, Nazar Zaki, Burhan Abdullah Zaman, Nelson Zamora, Ramin Zand, Ghazal G Z Zandieh, Heather J Zar, Armin Zarrintan, Mikhail Sergeevich Zastrozhin, Haijun Zhang, Ning Zhang, Yunquan Zhang, Hanqing Zhao, Chenwen Zhong, Panliang Zhong, Juexiao Zhou, Zhaohua Zhu, Makan Ziafati, Magdalena Zielińska, Stephanie R M Zimsen, Mohammad Zoladl, Alimuddin Zumla, Samer H Zyoud, Theo Vos, Christopher J L Murray
+**Journal:** The Lancet (2024)
+**DOI:** [10.1016/S0140-6736(24)00757-8](https://doi.org/10.1016/S0140-6736(24)00757-8)
+
+## Content
