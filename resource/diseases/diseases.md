@@ -2558,6 +2558,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: myvariant
   product_url: https://bte.transltr.io/v1/team/Service%20Provider
+- category: GraphicalInterface
+  description: Web interface for querying and visualizing disease- and trait-associated
+    SNPs and genes within LD blocks, searchable by disease, SNP, or gene. The site
+    refused connections when checked in October 2026.
+  format: http
+  id: distild.database
+  name: DistiLD Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: distild
+  product_url: http://distild.jensenlab.org/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
 publications:
 - authors:
   - Wright AJ
