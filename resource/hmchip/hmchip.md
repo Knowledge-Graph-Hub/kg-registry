@@ -14,7 +14,8 @@ description: hmChIP is a database and web server for exploring publicly availabl
   from individual samples for user-supplied genomic regions, and cluster samples and
   regions to compare binding patterns across cell types. At publication (2011) it
   held 2,016 samples from 492 experiments covering 170 proteins. The web server and
-  download pages were unreachable (HTTP 500 and HTTP 403) when checked in October 2026.
+  download pages were unreachable (HTTP 500 and HTTP 403) when checked in October
+  2026.
 domains:
 - gene regulation
 - genomics
@@ -46,10 +47,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: ncbigene
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
-    to URL'
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
+  - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Web server and query interface to the hmChIP database, retrieving protein-DNA
     binding intensities from individual human and mouse ChIP-seq and ChIP-chip samples

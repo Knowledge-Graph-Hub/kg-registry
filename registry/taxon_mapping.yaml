@@ -80,6 +80,8 @@ taxon_hierarchy:
   - NCBITaxon:4081
   NCBITaxon:4113:
   - NCBITaxon:4113
+  NCBITaxon:42374:
+  - NCBITaxon:42374
   NCBITaxon:44484:
   - NCBITaxon:44484
   NCBITaxon:44689:

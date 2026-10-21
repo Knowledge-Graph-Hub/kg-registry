@@ -4214,6 +4214,69 @@ resources:
   taxon:
   - NCBITaxon:9606
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.foodstandards.gov.au/
+    label: Food Standards Australia New Zealand (FSANZ)
+  creation_date: '2026-10-21T00:00:00Z'
+  description: The Australian Food Composition Database (AFCD) is Food Standards Australia
+    New Zealand's (FSANZ) reference database of the nutrient content of foods available
+    in Australia, and is the successor to the NUTTAB series. The current edition,
+    Release 3 (December 2025), covers 1,588 foods with up to 268 nutrient values per
+    food. It is distributed as downloadable Excel files and through a searchable online
+    food-search interface.
+  domains:
+  - food
+  - nutrition
+  homepage_url: https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd
+  id: afcd
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: Creative Commons Attribution 4.0 International
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Australian Food Composition Database (AFCD)
+  products:
+  - category: GraphicalInterface
+    description: Interactive online search of the Australian Food Composition Database
+      by food, alphabetical list, food group, or nutrient.
+    format: http
+    id: afcd.search
+    name: AFCD Searchable Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: afcd
+    product_url: https://afcd.foodstandards.gov.au/
+  - category: Product
+    description: Per-food descriptive details for the AFCD Release 3 foods, as an
+      Excel file.
+    format: xlsx
+    id: afcd.food-details
+    name: AFCD Release 3 Food Details
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: afcd
+    product_file_size: 1137444
+    product_url: https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Food%20Details.xlsx
+  - category: Product
+    description: Nutrient values for each food in AFCD Release 3, as an Excel file.
+    format: xlsx
+    id: afcd.nutrient-profiles
+    name: AFCD Release 3 Nutrient Profiles
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: afcd
+    product_file_size: 2107021
+    product_url: https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx
+  synonyms:
+  - AFCD
+  - NUTTAB
+  version: Release 3
+- activity_status: active
   category: Ontology
   contacts:
   - category: Organization
@@ -9602,6 +9665,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
     description: Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki
@@ -11067,6 +11132,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -12553,6 +12620,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -12782,6 +12851,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   synonyms:
   - ATC
@@ -23137,6 +23208,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
 - activity_status: active
   category: KnowledgeGraph
@@ -23278,6 +23351,8 @@ resources:
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
 - activity_status: active
@@ -29936,6 +30011,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -35241,6 +35320,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 204 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 204 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: https://biothings.ncats.io/gtrx/query
     description: BioThings API for querying Genome-to-Treatment association records
@@ -39460,6 +39541,36 @@ resources:
   - Combined Annotation Dependent Depletion
 - activity_status: active
   category: DataSource
+  creation_date: '2026-10-21T00:00:00Z'
+  description: Stub Resource page for cameo. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: cameo
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: Cameo
+  products:
+  - category: Product
+    description: Master file list indexing every 15-minute GDELT 2.0 Event, Mentions,
+      and Global Knowledge Graph update file (size, MD5, URL); the payload files are
+      tab-delimited despite a .CSV extension.
+    format: tsv
+    id: gdelt.raw-data
+    name: GDELT 2.0 Raw Data Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gdelt
+    product_file_size: 128756658
+    product_url: https://data.gdeltproject.org/gdeltv2/masterfilelist.txt
+    secondary_source:
+    - relation_type: prov:used
+      source: cameo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -39881,15 +39992,33 @@ resources:
   - NCBITaxon:9606
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: http://www.candidagenome.org/
+    - contact_type: email
+      value: candida-curator@lists.stanford.edu
+    label: Candida Genome Database
   creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for candida-genome-database. This page was automatically
-    generated because it was referenced by other resources.
+  description: The Candida Genome Database (CGD) is a community resource providing
+    genomic sequence, gene structure and chromosomal-feature data, and functional
+    annotation for Candida albicans and related pathogenic yeast species. It integrates
+    manually curated Gene Ontology (GO) annotations, gene nomenclature and systematic
+    identifiers, phenotype, pathway, protein, orthology, and literature data drawn
+    from the published literature. CGD hosts the C. albicans Assembly 22 chromosome-level
+    phased diploid assembly and offers search, BLAST, a JBrowse genome browser, and
+    bulk downloads.
   domains:
-  - stub
+  - genomics
+  - microbiology
+  - model organisms
+  - organisms
+  homepage_url: https://www.candidagenome.org/
   id: candida-genome-database
-  last_modified_date: '2026-10-19T00:00:00Z'
+  last_modified_date: '2026-10-21T00:00:00Z'
   layout: resource_detail
-  name: Candida-genome-database
+  name: Candida Genome Database (CGD)
   products:
   - category: GraphicalInterface
     description: PathoYeastract web interface with curated TF-target gene regulatory
@@ -39911,9 +40040,62 @@ resources:
       source: candida-genome-database
     - relation_type: prov:wasInformedBy
       source: go
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: The CGD web portal, with gene pages, text and sequence search, BLAST,
+      and a JBrowse genome browser for Candida albicans and related pathogenic yeast
+      species.
+    format: http
+    id: candida-genome-database.portal
+    name: CGD Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: candida-genome-database
+    product_url: https://www.candidagenome.org/
+  - category: Product
+    description: CGD bulk download area with per-species subdirectories for genome
+      sequence (FASTA), gene models (GFF), chromosomal feature tables, GO annotations,
+      homology, pathways, phenotype, and protein data.
+    format: mixed
+    id: candida-genome-database.downloads
+    name: CGD Download Area
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: candida-genome-database
+    product_url: https://www.candidagenome.org/download/
+  - category: Product
+    compression: gzip
+    description: Per-species GO gene-association (GAF) files, including the combined
+      gene_association.cgd.gz, updated weekly.
+    format: tsv
+    id: candida-genome-database.go-annotations
+    name: CGD GO Gene Association Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: candida-genome-database
+    product_url: https://www.candidagenome.org/download/go/
+  publications:
+  - authors:
+    - Marek S. Skrzypek
+    - Jonathan Binkley
+    - Gail Binkley
+    - Stuart R. Miyasato
+    - Matt Simison
+    - Gavin Sherlock
+    doi: 10.1093/nar/gkw924
+    id: doi:10.1093/nar/gkw924
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'The Candida Genome Database (CGD): incorporation of Assembly 22, systematic
+      identifiers and visualization of high throughput sequencing data'
+    year: '2017'
+  rrid: SCR_002036
+  taxon:
+  - NCBITaxon:5476
+  - NCBITaxon:5478
+  - NCBITaxon:5480
+  - NCBITaxon:5482
+  - NCBITaxon:42374
+  - NCBITaxon:498019
 - activity_status: active
   category: DataSource
   contacts:
@@ -42555,6 +42737,67 @@ resources:
   - category: Organization
     contact_details:
     - contact_type: url
+      value: https://ngdc.cncb.ac.cn/celltaxonomy/
+    label: National Genomics Data Center, CNCB
+  creation_date: '2026-10-21T00:00:00Z'
+  description: Cell Taxonomy is a manually curated repository of cell types and their
+    associated marker genes across species, tissues, and conditions, hosted by the
+    China National Center for Bioinformation (CNCB) / National Genomics Data Center.
+    It integrates cell markers with multifaceted characterization including marker
+    and cluster quality assessment, cross-species comparison, tissue cell composition,
+    and marker-based cellular similarity. The release described in its 2023 paper
+    spans 3,143 cell types and 26,613 cell markers across 34 species, drawing on 4,299
+    publications and single-cell profiles of about 3.5 million cells.
+  domains:
+  - cell biology
+  - single-cell analysis
+  - biological systems
+  homepage_url: https://ngdc.cncb.ac.cn/celltaxonomy/
+  id: cell-taxonomy
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: Cell Taxonomy
+  products:
+  - category: GraphicalInterface
+    description: Web interface to browse and search curated cell types, markers, tissues,
+      species, and single-cell studies, with Cell Type Comparator and Predictor tools.
+    format: http
+    id: cell-taxonomy.portal
+    name: Cell Taxonomy Browser
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cell-taxonomy
+    product_url: https://ngdc.cncb.ac.cn/celltaxonomy/
+  - category: Product
+    description: Bulk download of the curated cell types and their associated marker
+      genes as a single tab-delimited plain-text table.
+    format: txt
+    id: cell-taxonomy.download
+    name: Cell Taxonomy Cell Types and Markers
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cell-taxonomy
+    product_url: https://download.cncb.ac.cn/celltaxonomy/Cell_Taxonomy_resource.txt
+  publications:
+  - authors:
+    - Shuai Jiang
+    - Qiheng Qian
+    - Tongtong Zhu
+    - Wenting Zong
+    - Yunfei Shang
+    - et al.
+    doi: 10.1093/nar/gkac816
+    id: doi:10.1093/nar/gkac816
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Cell Taxonomy: a curated repository of cell types with multifaceted characterization'
+    year: '2023'
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
       value: https://cellcollective.org/
     - contact_type: email
       value: support@cellcollective.org
@@ -44255,6 +44498,8 @@ resources:
     product_url: https://www.cellphonedb.org/downloads
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: Python package that interrogates single-cell transcriptomics data
@@ -50202,6 +50447,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -50245,6 +50492,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -54719,6 +54968,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -54944,6 +55195,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 406 error
       when accessing file'
   - category: GraphProduct
     description: Integrated rare-disease knowledge graph produced by the RD-Clust
@@ -82824,6 +83077,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Interactive fireworks and t-SNE maps of drug-induced L1000 signatures
       for all cell lines and individual cell lines, with signature similarity search
@@ -83116,6 +83371,83 @@ resources:
   - id: doi:10.1080/10106049.2011.562309
     title: 'Monitoring US agriculture: the US Department of Agriculture, National
       Agricultural Statistics Service, Cropland Data Layer Program'
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://wollscheidlab.org/CSPA
+    label: Wollscheid Lab, ETH Zurich
+  creation_date: '2026-10-21T00:00:00Z'
+  description: The Cell Surface Protein Atlas (CSPA) is a mass spectrometry-derived
+    resource mapping the cell surface glycoproteins (the surfaceome) of 41 human and
+    31 mouse cell types and cell lines, generated with Cell Surface Capture technology
+    by the Wollscheid Lab at ETH Zurich. The combined dataset covers 1,492 human and
+    1,296 mouse cell surface N-glycoproteins. It is offered as a browsable database
+    plus downloadable data matrices and targeting tools.
+  domains:
+  - proteomics
+  - cell biology
+  - biological systems
+  homepage_url: https://wlab.ethz.ch/cspa/
+  id: cspa
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: Cell Surface Protein Atlas (CSPA)
+  products:
+  - category: GraphicalInterface
+    description: The CSPA web portal for browsing the cell surface protein atlas and
+      reaching all downloads (current host wollscheidlab.org/CSPA; the ETH wlab.ethz.ch/cspa
+      URL redirects here).
+    format: http
+    id: cspa.portal
+    name: CSPA Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cspa
+    product_url: https://wollscheidlab.org/CSPA
+  - category: Product
+    description: Excel workbook with the human (1,492 proteins) and mouse (1,296 proteins)
+      detection matrices, per-cell-type protein counts, and log2-scaled relative quantities.
+    format: xlsx
+    id: cspa.detection-matrix
+    name: CSPA Protein Detection Matrix
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cspa
+    product_file_size: 2721208
+    product_url: https://wollscheidlab.org/CSPA/data/S1_File.xlsx
+  - category: Product
+    description: Annotated human and mouse surfaceome protein lists and the identified
+      N-glycopeptides.
+    format: xlsx
+    id: cspa.validated-surfaceome
+    name: CSPA Validated Surfaceome Proteins
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: cspa
+    product_file_size: 1430284
+    product_url: https://wollscheidlab.org/CSPA/data/S2_File.xlsx
+  publications:
+  - authors:
+    - Damaris Bausch-Fluck
+    - Andreas Hofmann
+    - Thomas Bock
+    - Andreas P. Frei
+    - Ferdinando Cerciello
+    - et al.
+    doi: 10.1371/journal.pone.0121314
+    id: doi:10.1371/journal.pone.0121314
+    journal: PLoS ONE
+    preferred: true
+    title: A Mass Spectrometric-Derived Cell Surface Protein Atlas
+    year: '2015'
+  synonyms:
+  - CSPA
+  taxon:
+  - NCBITaxon:9606
+  - NCBITaxon:10090
 - activity_status: active
   category: DataSource
   contacts:
@@ -91394,6 +91726,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     description: MyVariant.info REST API (v1) for variant query and annotation retrieval
       by HGVS id or rsid, with batch POST queries and field filtering. Returns JSON
@@ -91818,6 +92152,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 500 error
+      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -103310,6 +103646,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -106711,6 +107051,24 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: myvariant
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
+  - category: GraphicalInterface
+    description: Web interface for querying and visualizing disease- and trait-associated
+      SNPs and genes within LD blocks, searchable by disease, SNP, or gene. The site
+      refused connections when checked in October 2026.
+    format: http
+    id: distild.database
+    name: DistiLD Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: distild
+    product_url: http://distild.jensenlab.org/
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: gwascatalog
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+    - relation_type: prov:wasDerivedFrom
+      source: diseases
   publications:
   - authors:
     - Wright AJ
@@ -118748,6 +119106,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web portal for browsing and searching predicted and known drug-side
       effect connections by drug or side effect, with side effect-GO term and side
@@ -120506,6 +120866,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -120549,6 +120911,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -121732,6 +122096,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Ursu O
@@ -122182,6 +122548,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Drugmonizome-ML Appyter, a Jupyter-notebook-based web app that builds
@@ -122723,6 +123091,8 @@ resources:
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
@@ -134367,6 +134737,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Chen EY
@@ -138102,6 +138474,24 @@ resources:
       source: wormbase
     - relation_type: prov:wasDerivedFrom
       source: xenbase
+  - category: GraphicalInterface
+    description: Web interface for querying and visualizing disease- and trait-associated
+      SNPs and genes within LD blocks, searchable by disease, SNP, or gene. The site
+      refused connections when checked in October 2026.
+    format: http
+    id: distild.database
+    name: DistiLD Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: distild
+    product_url: http://distild.jensenlab.org/
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: gwascatalog
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+    - relation_type: prov:wasDerivedFrom
+      source: diseases
   publications:
   - authors:
     - Dyer SC
@@ -149294,6 +149684,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: FDA Orange Book preface describing publication structure, therapeutic
       equivalence codes, and interpretation of Orange Book listings.
@@ -149306,6 +149698,8 @@ resources:
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: Product
     description: FDA Orange Book regulatory source extract from the medic v1.0.1 release
@@ -149449,6 +149843,8 @@ resources:
     product_url: https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions/designating-orphan-product-drugs-and-biological-products
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: MyChem.info REST API (v1) for querying chemical and drug annotation
@@ -157434,6 +157830,84 @@ resources:
   repository: https://github.com/EnvironmentOntology/gaz
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.healthdata.org/
+    label: Institute for Health Metrics and Evaluation (IHME)
+  creation_date: '2026-10-21T00:00:00Z'
+  description: The Global Burden of Disease (GBD) study, led by the Institute for
+    Health Metrics and Evaluation (IHME) at the University of Washington, produces
+    comparable estimates of prevalence, incidence, mortality, and disability for hundreds
+    of diseases, injuries, and risk factors across countries and over time. The most
+    recent completed cycle, GBD 2021, covers 371 diseases and injuries and 88 risk
+    factors across 204 countries and territories and 811 subnational locations for
+    1990–2021, and is the first cycle to incorporate the health impact of the COVID-19
+    pandemic.
+  domains:
+  - public health
+  - epidemiology
+  homepage_url: https://www.healthdata.org/research-analysis/gbd
+  id: gbd
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.healthdata.org/sites/default/files/files/free-of-charge_non-commercial_user_agreement.pdf
+    label: IHME Free-of-Charge Non-Commercial User Agreement
+  name: Global Burden of Disease (IHME)
+  products:
+  - category: GraphicalInterface
+    description: Interactive query and download tool for GBD estimates (deaths, DALYs,
+      YLDs, YLLs, prevalence, incidence) by location, year, cause, risk, age, and
+      sex.
+    format: http
+    id: gbd.results-tool
+    name: GBD Results Tool
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gbd
+    product_url: https://vizhub.healthdata.org/gbd-results/
+  - category: GraphicalInterface
+    description: Interactive visualization (treemaps, arrow diagrams, maps) for exploring
+      and comparing causes of death and disability across locations and time.
+    format: http
+    id: gbd.compare
+    name: GBD Compare
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gbd
+    product_url: https://vizhub.healthdata.org/gbd-compare/
+  - category: Product
+    description: IHME's data catalog cataloging GBD and other global health datasets
+      with metadata and download links.
+    format: http
+    id: gbd.ghdx
+    name: Global Health Data Exchange (GHDx)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gbd
+    product_url: https://ghdx.healthdata.org/
+  publications:
+  - authors:
+    - Alize J Ferrari
+    - GBD 2021 Diseases and Injuries Collaborators
+    doi: 10.1016/S0140-6736(24)00757-8
+    id: doi:10.1016/S0140-6736(24)00757-8
+    journal: The Lancet
+    preferred: true
+    title: 'Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted
+      life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and
+      injuries in 204 countries and territories and 811 subnational locations, 1990-2021:
+      a systematic analysis for the Global Burden of Disease Study 2021'
+    year: '2024'
+  synonyms:
+  - GBD
+  - Global Burden of Disease Study
+  taxon:
+  - NCBITaxon:9606
+- activity_status: active
+  category: DataSource
   collection:
   - ber
   contacts:
@@ -157862,6 +158336,91 @@ resources:
   - Genomic Data Commons
   taxon:
   - NCBITaxon:9606
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.gdeltproject.org/
+    label: The GDELT Project
+  creation_date: '2026-10-21T00:00:00Z'
+  description: The GDELT Project (Global Database of Events, Language, and Tone) is
+    an open platform that monitors print, broadcast, and web news worldwide in over
+    100 languages and renders it into structured, machine-readable data about global
+    society. Its two core datasets are the Event Database, which records physical
+    activities across 300+ CAMEO-coded categories with georeferencing and about 60
+    attributes per event, and the Global Knowledge Graph (GKG), which extracts people,
+    organizations, locations, themes, and emotions to provide context and tone. The
+    GDELT 2.0 data streams update every 15 minutes, are supported by Google Jigsaw,
+    and are free and open.
+  domains:
+  - human populations
+  - natural language processing
+  - geographic information systems
+  - organisms
+  - literature
+  - environment
+  homepage_url: https://www.gdeltproject.org/
+  id: gdelt
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.gdeltproject.org/about.html#termsofuse
+    label: GDELT Terms of Use (free and open; attribution and link-back required)
+  name: GDELT Project (Global Database of Events, Language, and Tone)
+  products:
+  - category: Product
+    description: Master file list indexing every 15-minute GDELT 2.0 Event, Mentions,
+      and Global Knowledge Graph update file (size, MD5, URL); the payload files are
+      tab-delimited despite a .CSV extension.
+    format: tsv
+    id: gdelt.raw-data
+    name: GDELT 2.0 Raw Data Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gdelt
+    product_file_size: 128756658
+    product_url: https://data.gdeltproject.org/gdeltv2/masterfilelist.txt
+    secondary_source:
+    - relation_type: prov:used
+      source: cameo
+  - category: ProgrammingInterface
+    description: Live JSON API for full-text search across GDELT's global online news
+      coverage, returning articles, timelines, and aggregations.
+    format: http
+    id: gdelt.doc-api
+    is_public: true
+    name: GDELT DOC 2.0 API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gdelt
+    product_url: https://api.gdeltproject.org/api/v2/doc/doc
+  - category: Product
+    description: The full GDELT datasets in Google BigQuery (project gdelt-bq), queryable
+      with standard SQL and refreshed every 15 minutes.
+    format: http
+    id: gdelt.bigquery
+    name: GDELT BigQuery Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gdelt
+    product_url: https://console.cloud.google.com/bigquery?project=gdelt-bq
+  - category: DocumentationProduct
+    description: Data format documentation, column headers, and codebooks for the
+      Event Database and GKG, including the CAMEO code reference.
+    format: http
+    id: gdelt.documentation
+    name: GDELT Documentation and Codebooks
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gdelt
+    product_url: https://www.gdeltproject.org/data.html#documentation
+  synonyms:
+  - GDELT
+  - Global Knowledge Graph
+  - GKG
+  version: GDELT 2.0
 - activity_status: active
   category: DataSource
   contacts:
@@ -165576,6 +166135,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Lachmann A
@@ -171914,6 +172475,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 406 error
       when accessing file'
   - category: GraphicalInterface
     description: Web portal for searching and browsing integrated omics dataset metadata
@@ -178707,6 +179270,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -178750,6 +179315,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -181270,6 +181837,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Web portal for browsing and searching predicted and known drug-side
@@ -189808,6 +190377,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: TRAPI endpoint for the Service Provider team, served by BioThings
       Explorer, querying the BioThings and other APIs registered to the team in SmartAPI.
@@ -190005,6 +190576,11 @@ resources:
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
       Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: Product
     description: Gut microbe associations with disorders and interventions derived
       from re-annotated raw sequencing data in gutMDisorder v2.0, as an Excel workbook
@@ -190017,6 +190593,11 @@ resources:
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: Error connecting
+      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
+      exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
+      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
+      Failed to establish a new connection: [Errno 111] Connection refused"))'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
       (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
@@ -192872,6 +193453,24 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: reactome
     product_url: https://rdfportal.org/ebi/sparql
+  - category: GraphicalInterface
+    description: Web interface for querying and visualizing disease- and trait-associated
+      SNPs and genes within LD blocks, searchable by disease, SNP, or gene. The site
+      refused connections when checked in October 2026.
+    format: http
+    id: distild.database
+    name: DistiLD Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: distild
+    product_url: http://distild.jensenlab.org/
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: gwascatalog
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+    - relation_type: prov:wasDerivedFrom
+      source: diseases
   publications:
   - authors:
     - Sollis E
@@ -201103,47 +201702,6 @@ resources:
     journal: Nature
     title: Common genetic variation drives molecular heterogeneity in human iPSCs
     year: '2017'
-- activity_status: active
-  category: DataSource
-  creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for hmchip. This page was automatically generated
-    because it was referenced by other resources.
-  domains:
-  - stub
-  id: hmchip
-  last_modified_date: '2026-10-19T00:00:00Z'
-  layout: resource_detail
-  name: Hmchip
-  products:
-  - category: Product
-    description: HTRIdb download page offering all transcription factor-target gene
-      interactions (optionally with associated protein-protein interactions), with
-      experimental techniques and PubMed IDs, as tab-delimited or spreadsheet files.
-      Interactions were manually curated from the literature (found through PubMed
-      searches) and from ChIP-chip and ChIP-seq studies selected via the hmChIP database.
-      The site did not respond when checked on 2026-10-19.
-    format: http
-    id: htridb.downloads
-    name: HTRIdb Downloads
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: htridb
-    - relation_type: prov:wasDerivedFrom
-      source: pubmed
-    - relation_type: prov:wasDerivedFrom
-      source: hmchip
-    product_url: http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp
-    secondary_source:
-    - relation_type: prov:wasInformedBy
-      source: ncbigene
-    warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
-      to URL'
-    - Site did not respond (connection timed out) when checked on 2026-10-19; the
-      last Internet Archive snapshot is from 2022-08-17.
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: Aggregator
   contacts:
@@ -209779,6 +210337,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -209822,6 +210382,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -213099,6 +213661,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -221325,39 +221889,6 @@ resources:
   - International Cancer Genome Consortium
   - ICGC ARGO
 - activity_status: active
-  category: DataSource
-  creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for ich-m5. This page was automatically generated
-    because it was referenced by other resources.
-  domains:
-  - stub
-  id: ich-m5
-  last_modified_date: '2026-10-19T00:00:00Z'
-  layout: resource_detail
-  name: Ich-m5
-  products:
-  - category: GraphicalInterface
-    description: Web application for searching NHPID ingredients by name or CAS number
-      and role (homeopathic, medicinal, non-medicinal, non-NHP, component), and for
-      searching the NHP controlled vocabularies by category. Controlled vocabulary
-      terms for dosage forms, routes of administration, and units are adapted from
-      ICH M5 lists, and ingredient naming conventions from the TGA approved terminology.
-    format: http
-    id: nhpid.web
-    name: NHPID Search
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: nhpid
-    product_url: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng
-    secondary_source:
-    - relation_type: prov:wasDerivedFrom
-      source: tga-approved-terminology
-    - relation_type: prov:wasDerivedFrom
-      source: ich-m5
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
-- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Organization
@@ -224976,6 +225507,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
       context layer, curation model, and use in grounding clinical AI.
@@ -227203,15 +227736,29 @@ resources:
   repository: https://github.com/INO-ontology/ino
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://inparanoidb.sbc.su.se/
+    label: Sonnhammer group, Stockholm University (SciLifeLab / SBC)
   creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for inparanoid. This page was automatically generated
-    because it was referenced by other resources.
+  description: InParanoid is an algorithm and database that detects orthologs and
+    in-paralogs between two species by pairwise whole-proteome comparison, seeding
+    ortholog clusters from reciprocal best sequence matches and then adding species-specific
+    in-paralogs without multiple alignments or phylogenetic trees. The current release,
+    InParanoiDB 9, uses the InParanoid-DIAMOND pipeline over 640 organisms (447 eukaryotic,
+    158 bacterial, and 35 archaeal proteomes) and provides ortholog groups for both
+    full-length proteins and protein domains. It is developed by Erik Sonnhammer's
+    group at Stockholm University (SciLifeLab / Stockholm Bioinformatics Centre).
   domains:
-  - stub
+  - molecular evolution
+  - genomics
+  homepage_url: https://inparanoidb.sbc.su.se/
   id: inparanoid
-  last_modified_date: '2026-10-19T00:00:00Z'
+  last_modified_date: '2026-10-21T00:00:00Z'
   layout: resource_detail
-  name: Inparanoid
+  name: InParanoid
   products:
   - category: GraphicalInterface
     description: HCOP web search for orthologs of one or more genes (by symbol, name,
@@ -227436,9 +227983,51 @@ resources:
       source: wormbase
     - relation_type: prov:wasDerivedFrom
       source: xenbase
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: Browse and search interface for ortholog groups and in-paralogs,
+      for both full-length proteins and protein domains, across 640 organisms.
+    format: http
+    id: inparanoid.portal
+    name: InParanoiDB 9 Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: inparanoid
+    product_url: https://inparanoidb.sbc.su.se/
+  - category: Product
+    description: Download area serving proteomes, species lists, and pairwise ortholog
+      and domain files (as tab-delimited SQLtable text or OrthoXML), plus previous
+      versions back to v2.0.
+    format: http
+    id: inparanoid.downloads
+    name: InParanoiDB 9 Bulk Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: inparanoid
+    product_url: https://inparanoidb.sbc.su.se/download
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
+  publications:
+  - authors:
+    - Emma Persson
+    - Erik L. L. Sonnhammer
+    doi: 10.1016/j.jmb.2023.168001
+    id: doi:10.1016/j.jmb.2023.168001
+    journal: Journal of Molecular Biology
+    preferred: true
+    title: 'InParanoiDB 9: Ortholog Groups for Protein Domains and Full-Length Proteins'
+    year: '2023'
+  - authors:
+    - Maido Remm
+    - Christian E. V. Storm
+    - Erik L. L. Sonnhammer
+    doi: 10.1006/jmbi.2000.5197
+    id: doi:10.1006/jmbi.2000.5197
+    journal: Journal of Molecular Biology
+    title: Automatic clustering of orthologs and in-paralogs from pairwise species
+      comparisons
+    year: '2001'
+  rrid: SCR_006801
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -229884,6 +230473,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -231076,6 +231669,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Robokop KG (Automat)
     format: kgx-jsonl
@@ -241728,6 +242323,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Minoru Kanehisa
@@ -242075,6 +242672,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: OWL release of neo
     format: owl
@@ -242399,6 +242998,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 406 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 406 error
+      when accessing file'
   - category: ProcessProduct
     description: Full ENPKG workflow repository for generating experimental natural
       products knowledge graphs from metabolomics datasets.
@@ -242661,6 +243262,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -243115,7 +243718,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-20T23:03:21Z'
+  last_modified_date: '2026-10-21T15:54:26Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -246244,6 +246847,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   synonyms:
   - HMS LINCS KINOMEscan
 - activity_status: active
@@ -246967,6 +247572,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -249062,6 +249669,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Interactive fireworks and t-SNE maps of drug-induced L1000 signatures
@@ -253080,6 +253689,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -260943,6 +261554,85 @@ resources:
   - NCBITaxon:9606
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.mediacloud.org/
+    label: Media Cloud consortium (Media Ecosystems Analysis Group, UMass Amherst,
+      Northeastern University)
+  creation_date: '2026-10-21T00:00:00Z'
+  description: Media Cloud is an open-source media research platform for studying
+    the flow of online news and information worldwide. It maintains a database of
+    over a billion news stories and a directory of more than 25,000 media sources,
+    with open tools to search, aggregate, analyze, and visualize media coverage of
+    topics. It is run as a consortium of the Media Ecosystems Analysis Group, the
+    University of Massachusetts Amherst, and Northeastern University, and was originally
+    incubated at Harvard University and MIT.
+  domains:
+  - natural language processing
+  - human populations
+  - literature
+  - organisms
+  homepage_url: https://www.mediacloud.org/
+  id: mediacloud
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache License 2.0 (software; news content under Media Cloud Terms of Use)
+  name: Media Cloud
+  products:
+  - category: GraphicalInterface
+    description: Web tool for retrieving online news stories and analyzing and visualizing
+      how digital news covers a topic across the Online News Archive; free with an
+      account.
+    format: http
+    id: mediacloud.search
+    name: Media Cloud Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mediacloud
+    product_url: https://search.mediacloud.org/
+  - category: GraphicalInterface
+    description: Searchable directory of the 25,000+ news media sources, collections,
+      and feeds indexed by Media Cloud.
+    format: http
+    id: mediacloud.directory
+    name: Media Cloud Directory
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mediacloud
+    product_url: https://search.mediacloud.org/directory
+  - category: Product
+    description: Public Python client library (PyPI package `mediacloud`) for the
+      Media Cloud API, to run searches and browse the source and collection directory.
+    format: python
+    id: mediacloud.api-client
+    name: Media Cloud Python API Client
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mediacloud
+    product_url: https://github.com/mediacloud/api-client
+    repository: https://github.com/mediacloud/api-client
+  publications:
+  - authors:
+    - Hal Roberts
+    - Rahul Bhargava
+    - Linas Valiukas
+    - Dennis Jen
+    - Momin M. Malik
+    - et al.
+    doi: 10.1609/icwsm.v15i1.18127
+    id: doi:10.1609/icwsm.v15i1.18127
+    journal: Proceedings of the International AAAI Conference on Web and Social Media
+    preferred: true
+    title: 'Media Cloud: Massive Open Source Collection of Global News on the Open
+      Web'
+    year: '2021'
+  repository: https://github.com/mediacloud
+- activity_status: active
+  category: DataSource
   collection:
   - ber
   contacts:
@@ -264444,6 +265134,8 @@ resources:
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
@@ -271670,6 +272362,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: GraphProduct
     compression: gzip
     description: IID annotated human protein-protein interaction download.
@@ -275249,6 +275945,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -275290,6 +275989,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -275331,6 +276033,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -275372,6 +276077,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -275413,6 +276121,9 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -276333,95 +277044,6 @@ resources:
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.08.02-6/MIXS.tar.gz
   repository: https://github.com/GenomicsStandardsConsortium/mixs
 - activity_status: active
-  category: DataSource
-  creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for mlpcn-profiling. This page was automatically
-    generated because it was referenced by other resources.
-  domains:
-  - stub
-  id: mlpcn-profiling
-  last_modified_date: '2026-10-19T00:00:00Z'
-  layout: resource_detail
-  name: Mlpcn-profiling
-  products:
-  - category: GraphicalInterface
-    description: Web portal for browsing and searching predicted and known drug-side
-      effect connections by drug or side effect, with side effect-GO term and side
-      effect-phenotype networks.
-    format: http
-    id: sep-l1000.portal
-    name: SEP-L1000 Web Portal
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: sep-l1000
-    - relation_type: prov:wasDerivedFrom
-      source: lincs-l1000
-    - relation_type: prov:wasDerivedFrom
-      source: sider
-    - relation_type: prov:wasDerivedFrom
-      source: offsides
-    - relation_type: prov:wasDerivedFrom
-      source: go
-    - relation_type: prov:wasDerivedFrom
-      source: mlpcn-profiling
-    product_url: http://maayanlab.net/SEP-L1000/
-    secondary_source:
-    - relation_type: prov:wasInformedBy
-      source: meddra
-    - relation_type: prov:wasInformedBy
-      source: drugbank
-  - category: Product
-    compression: gzip
-    description: 166-bit MACCS chemical fingerprint matrix for 41,774 drugs and small
-      molecules from LINCS L1000 and MLPCN, computed with Open Babel from SMILES.
-    format: csv
-    id: sep-l1000.maccs-fingerprints
-    name: SEP-L1000 MACCS Fingerprints
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: sep-l1000
-    - relation_type: prov:wasDerivedFrom
-      source: lincs-l1000
-    - relation_type: prov:wasDerivedFrom
-      source: mlpcn-profiling
-    product_file_size: 1254411
-    product_url: http://maayanlab.net/SEP-L1000/downloads/MACCS_bitmatrix.csv.gz
-  - category: Product
-    description: Compound metadata for 41,774 LINCS L1000 and MLPCN small molecules
-      with pert_id, name, PubChem CID, and SMILES.
-    format: csv
-    id: sep-l1000.smiles-metadata
-    name: SEP-L1000 Compound SMILES Metadata
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: sep-l1000
-    - relation_type: prov:wasDerivedFrom
-      source: lincs-l1000
-    - relation_type: prov:wasDerivedFrom
-      source: mlpcn-profiling
-    product_file_size: 4014816
-    product_url: http://maayanlab.net/SEP-L1000/downloads/meta_SMILES.csv
-    secondary_source:
-    - relation_type: prov:wasInformedBy
-      source: pubchem
-  - category: Product
-    compression: gzip
-    description: Cell morphology profiles (812 Cell Painting image features) for 19,864
-      small molecules from the Broad Institute MLPCN profiling dataset.
-    format: csv
-    id: sep-l1000.mlpcn-morphology
-    name: SEP-L1000 MLPCN Morphological Profiles
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: sep-l1000
-    - relation_type: prov:wasDerivedFrom
-      source: mlpcn-profiling
-    product_file_size: 55418948
-    product_url: http://maayanlab.net/SEP-L1000/downloads/MLPCN_morplological_profiles.csv.gz
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
-- activity_status: active
   category: Ontology
   collection:
   - obo-foundry
@@ -277059,61 +277681,6 @@ resources:
     year: '2008'
   repository: https://github.com/HUPO-PSI/psi-mod-CV
   rrid: SCR_004198
-- activity_status: active
-  category: DataSource
-  creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for modencode. This page was automatically generated
-    because it was referenced by other resources.
-  domains:
-  - stub
-  id: modencode
-  last_modified_date: '2026-10-19T00:00:00Z'
-  layout: resource_detail
-  name: Modencode
-  products:
-  - category: Product
-    description: GTRD bulk download directory with plain-text results of uniform annotation
-      and analysis, including experiment metadata, peak and meta-cluster intervals
-      for ChIP-seq, ChIP-exo, DNase-seq, and MNase-seq, bigBed files, target gene
-      lists, and genome browser track hubs. Raw data were obtained from GEO, SRA,
-      ENCODE, and modENCODE.
-    format: http
-    id: gtrd.downloads
-    name: GTRD Downloads
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: gtrd
-    - relation_type: prov:wasDerivedFrom
-      source: gene-expression-omnibus
-    - relation_type: prov:wasDerivedFrom
-      source: sra
-    - relation_type: prov:wasDerivedFrom
-      source: encode
-    - relation_type: prov:wasDerivedFrom
-      source: modencode
-    product_url: https://gtrd.biouml.org/downloads/current/
-  - category: Product
-    description: Per-species archives of transcription factor ChIP-seq peaks called
-      with GEM, MACS2, PICS, and SISSRs on uniformly reprocessed ChIP-seq data from
-      GEO, SRA, ENCODE, and modENCODE.
-    format: http
-    id: gtrd.chip-seq_peaks
-    name: GTRD ChIP-seq Peaks
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: gtrd
-    - relation_type: prov:wasDerivedFrom
-      source: gene-expression-omnibus
-    - relation_type: prov:wasDerivedFrom
-      source: sra
-    - relation_type: prov:wasDerivedFrom
-      source: encode
-    - relation_type: prov:wasDerivedFrom
-      source: modencode
-    product_url: http://gtrd.biouml.org:8888/downloads/current/intervals/chip-seq/
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: DataSource
   creation_date: '2025-09-09T00:00:00Z'
@@ -280847,6 +281414,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 502 error
+      when accessing file'
   - category: ProcessProduct
     description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
       and contraindications data and processing code
@@ -281606,6 +282175,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -281649,6 +282220,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -295456,6 +296029,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: REST API for searching identifiers and special keywords, mapping
       between data sources with a chain-query syntax, and retrieving entries across
@@ -296132,6 +296707,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -297511,6 +298088,8 @@ resources:
       to URL'
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: Interactive web interface for exploring the neighborhood of related
       publications around a PubMed citation as a graph or a timeline, with shared
@@ -304995,6 +305574,70 @@ resources:
   contacts:
   - category: Organization
     contact_details:
+    - contact_type: url
+      value: https://www.cdc.gov/nchs/nhanes/
+    label: CDC National Center for Health Statistics
+  creation_date: '2026-10-21T00:00:00Z'
+  description: NHANES, the National Health and Nutrition Examination Survey, is a
+    program of the CDC's National Center for Health Statistics that assesses the health
+    and nutritional status of adults and children in the United States. It is unusual
+    in combining household interviews with standardized physical examinations and
+    laboratory tests. Run continuously since 1999, it uses a multistage probability
+    sample of the non-institutionalized US population and releases public-use data
+    in two-year cycles.
+  domains:
+  - public health
+  - nutrition
+  - epidemiology
+  homepage_url: https://www.cdc.gov/nchs/nhanes/
+  id: nhanes
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.usa.gov/government-works
+    label: Public domain (U.S. Government work)
+  name: NHANES (National Health and Nutrition Examination Survey)
+  products:
+  - category: Product
+    description: The main data portal listing NHANES questionnaire, examination, and
+      laboratory data files and documentation, organized by survey cycle.
+    format: mixed
+    id: nhanes.data
+    name: NHANES Questionnaires, Datasets, and Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nhanes
+    product_url: https://wwwn.cdc.gov/nchs/nhanes/default.aspx
+  - category: Product
+    description: Public-use data files for the ongoing (1999-onward) NHANES, grouped
+      by component (demographics, dietary, examination, laboratory, questionnaire),
+      with methods and response rates.
+    format: mixed
+    id: nhanes.continuous
+    name: Continuous NHANES Data
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nhanes
+    product_url: https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx
+  - category: DocumentationProduct
+    description: 'Tutorial modules on using NHANES data: datasets and documentation,
+      sample design, weighting, variance estimation, and dietary analyses, with sample
+      code.'
+    format: http
+    id: nhanes.tutorials
+    name: NHANES Tutorials
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nhanes
+    product_url: https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx
+  rrid: SCR_013201
+  taxon:
+  - NCBITaxon:9606
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
     - contact_type: email
       value: ingredient_support@hc-sc.gc.ca
     - contact_type: url
@@ -306585,6 +307228,9 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-20: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+      without response''))'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
       30+ environmental and geospatial data layers accessible through SPARQL endpoint
@@ -307803,6 +308449,8 @@ resources:
       to URL: No connection adapters were found for ''sftp://fms.biosino.org'''
     - The SFTP service requires a NODE account and was not tested when checked on
       2026-10-04. Host and ports are taken from the NODE help pages.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: No connection adapters were found for ''sftp://fms.biosino.org'''
   - category: GraphicalInterface
     description: NODE statistics pages summarizing data volume, data flow, popular
       datasets and linked publications.
@@ -318013,6 +318661,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web portal for browsing and searching predicted and known drug-side
       effect connections by drug or side effect, with side effect-GO term and side
@@ -318394,6 +319044,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -323461,6 +324113,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -327850,6 +328504,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 406 error
       when accessing file'
   publications:
   - authors:
@@ -332877,6 +333533,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -333889,15 +334547,28 @@ resources:
     year: '2017'
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://orthomcl.org/
+    label: VEuPathDB
   creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for orthomcl. This page was automatically generated
-    because it was referenced by other resources.
+  description: OrthoMCL is a genome-scale algorithm and database for grouping orthologous
+    protein sequences across eukaryotic and prokaryotic proteomes. It computes all-against-all
+    reciprocal best BLAST hits, normalizes the similarity scores, and clusters the
+    resulting protein-pair graph with the Markov Cluster (MCL) algorithm to build
+    ortholog groups. OrthoMCL DB is maintained by VEuPathDB; its OrthoMCL 7 content
+    covers millions of proteins from hundreds of complete proteomes spanning the tree
+    of life, clustered into hundreds of thousands of ortholog groups.
   domains:
-  - stub
+  - molecular evolution
+  - genomics
+  homepage_url: https://orthomcl.org/
   id: orthomcl
-  last_modified_date: '2026-10-19T00:00:00Z'
+  last_modified_date: '2026-10-21T00:00:00Z'
   layout: resource_detail
-  name: Orthomcl
+  name: OrthoMCL DB
   products:
   - category: GraphicalInterface
     description: HCOP web search for orthologs of one or more genes (by symbol, name,
@@ -334122,9 +334793,71 @@ resources:
       source: wormbase
     - relation_type: prov:wasDerivedFrom
       source: xenbase
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: Interactive VEuPathDB search and browse interface for OrthoMCL ortholog
+      groups, proteins, and phyletic patterns.
+    format: http
+    id: orthomcl.portal
+    name: OrthoMCL DB Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: orthomcl
+    product_url: https://orthomcl.org/orthomcl/
+  - category: Product
+    description: Open directory index of bulk data files for the current OrthoMCL
+      release.
+    format: http
+    id: orthomcl.downloads
+    name: OrthoMCL DB Current Release Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: orthomcl
+    product_url: https://orthomcl.org/common/downloads/Current_Release/
+  - category: Product
+    compression: gzip
+    description: Flat file listing each ortholog group and its member protein identifiers.
+    format: txt
+    id: orthomcl.groups
+    name: OrthoMCL Ortholog Groups File
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: orthomcl
+    product_file_size: 51943340
+    product_url: https://orthomcl.org/common/downloads/Current_Release/groups_OrthoMCL-8.2.txt.gz
+  - category: Product
+    compression: gzip
+    description: Amino-acid sequences for all proteins in the current OrthoMCL release.
+    format: fasta
+    id: orthomcl.protein-sequences
+    name: OrthoMCL Protein Sequences (FASTA)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: orthomcl
+    product_file_size: 2773509993
+    product_url: https://orthomcl.org/common/downloads/Current_Release/aa_seqs_OrthoMCL-8.2.fasta.gz
+  publications:
+  - authors:
+    - Feng Chen
+    - Aaron J. Mackey
+    - Christian J. Stoeckert Jr.
+    - David S. Roos
+    doi: 10.1093/nar/gkj123
+    id: doi:10.1093/nar/gkj123
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'OrthoMCL-DB: querying a comprehensive multi-species collection of ortholog
+      groups'
+    year: '2006'
+  - authors:
+    - Li Li
+    - Christian J. Stoeckert Jr.
+    - David S. Roos
+    doi: 10.1101/gr.1224503
+    id: doi:10.1101/gr.1224503
+    journal: Genome Research
+    title: 'OrthoMCL: identification of ortholog groups for eukaryotic genomes'
+    year: '2003'
+  rrid: SCR_007839
 - activity_status: active
   category: DataSource
   contacts:
@@ -351731,6 +352464,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -356258,15 +356993,31 @@ resources:
   rrid: SCR_001837
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://phylomedb.org/
+    label: Comparative Genomics group, Barcelona Supercomputing Center
   creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for phylomedb. This page was automatically generated
-    because it was referenced by other resources.
+  description: PhylomeDB is a public database of phylomes, the complete collections
+    of annotated gene phylogenies (homologous sequences, their alignments, and reconstructed
+    trees) for a set of species. The current release, version 5, provides 534 phylomes
+    comprising more than 8 million trees and covers homology relationships for genes
+    across more than 6,000 species. From these trees PhylomeDB derives genome-wide
+    orthology and paralogy predictions. It is maintained by the Comparative Genomics
+    group at the Barcelona Supercomputing Center.
   domains:
-  - stub
+  - molecular evolution
+  - genomics
+  homepage_url: https://phylomedb.org/
   id: phylomedb
-  last_modified_date: '2026-10-19T00:00:00Z'
+  last_modified_date: '2026-10-21T00:00:00Z'
   layout: resource_detail
-  name: Phylomedb
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: Creative Commons Attribution-NonCommercial 4.0 International
+  name: PhylomeDB
   products:
   - category: GraphicalInterface
     description: HCOP web search for orthologs of one or more genes (by symbol, name,
@@ -356491,9 +357242,42 @@ resources:
       source: wormbase
     - relation_type: prov:wasDerivedFrom
       source: xenbase
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: PhylomeDB 5 web interface for browsing phylomes, gene trees, alignments,
+      and orthology and paralogy predictions.
+    format: http
+    id: phylomedb.portal
+    name: PhylomeDB Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: phylomedb
+    product_url: https://phylomedb.org/
+  - category: Product
+    description: 'Download page linking to per-phylome bulk data: gene trees (Newick/NHX),
+      multiple sequence alignments, and orthology and paralogy prediction files.'
+    format: http
+    id: phylomedb.downloads
+    name: PhylomeDB Download Area
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: phylomedb
+    product_url: https://phylomedb.org/download
+  publications:
+  - authors:
+    - Diego Fuentes
+    - Marina Molina
+    - Uciel Chorostecki
+    - Salvador Capella-Gutiérrez
+    - Marina Marcet-Houben
+    - Toni Gabaldón
+    doi: 10.1093/nar/gkab966
+    id: doi:10.1093/nar/gkab966
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'PhylomeDB V5: an expanding repository for genome-wide catalogues of annotated
+      gene phylogenies'
+    year: '2022'
+  rrid: SCR_007850
 - activity_status: active
   category: DataSource
   contacts:
@@ -369882,6 +370666,69 @@ resources:
   - category: Organization
     contact_details:
     - contact_type: url
+      value: https://ngdc.cncb.ac.cn/propan/home
+    - contact_type: email
+      value: propan@big.ac.cn
+    label: National Genomics Data Center, CNCB
+  creation_date: '2026-10-21T00:00:00Z'
+  description: ProPan is a comprehensive database for profiling the pan-genome dynamics
+    of prokaryotes, hosted by the China National Center for Bioinformation (CNCB)
+    / National Genomics Data Center. It provides post-processed gene-content data,
+    functional annotation, and multi-dimensional analyses across bacterial and archaeal
+    species, including orthologous gene clustering, nucleotide diversity, COG enrichment,
+    metabolism analyses, antibiotic-resistance gene prediction, and KEGG and PPI mapping.
+    It covers 1,504 species (1,481 bacterial and 23 archaeal) spanning 51,882 strain
+    genomes sourced from NCBI.
+  domains:
+  - microbiology
+  - genomics
+  homepage_url: https://ngdc.cncb.ac.cn/propan/home
+  id: propan
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: ProPan
+  products:
+  - category: GraphicalInterface
+    description: Web portal to browse, search, and view prokaryotic pan-genome profiles,
+      functional annotations, and analyses by species.
+    format: http
+    id: propan.portal
+    name: ProPan Browser
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: propan
+    product_url: https://ngdc.cncb.ac.cn/propan/home
+  - category: Product
+    description: Bulk download of ProPan post-processed pan-genome datasets (gene
+      clusters, annotations) by species.
+    format: http
+    id: propan.downloads
+    name: ProPan Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: propan
+    product_url: https://ngdc.cncb.ac.cn/propan/downloads
+  publications:
+  - authors:
+    - Yadong Zhang
+    - Hao Zhang
+    - Zaichao Zhang
+    - Qiheng Qian
+    - Zhewen Zhang
+    - Jingfa Xiao
+    doi: 10.1093/nar/gkac832
+    id: doi:10.1093/nar/gkac832
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'ProPan: a comprehensive database for profiling prokaryotic pan-genome
+      dynamics'
+    year: '2023'
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
       value: https://prosite.expasy.org/
     label: PROSITE Group - SIB Swiss Institute of Bioinformatics
   creation_date: '2026-06-17T00:00:00Z'
@@ -371443,6 +372290,8 @@ resources:
       when accessing file'
     - Feed was not able to be retrieved when checked on 2026-10-04. The URL listed
       on the ProteomeXchange subscription page returned HTTP 404.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: ProteomeXchange data submission and dissemination guidelines for
       partner repositories and submitters.
@@ -374853,6 +375702,8 @@ resources:
       when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 502 error
+      when accessing file'
   - category: ProgrammingInterface
     description: MarkerDB API documentation and endpoint examples for condition, chemical,
       genetic, protein, and karyotype biomarker records.
@@ -376727,6 +377578,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Metadata for the profiled drugs and small molecules indexed by pert_id,
       including LINCS small molecule IDs, names, SMILES, InChIKeys, molecular formulas,
@@ -377872,6 +378725,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 500 error
+      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -379646,6 +380501,8 @@ resources:
       to URL'
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: REDfly search interface for querying CRMs, CRM segments, predicted
       CRMs, and TFBSs by gene, PubMed ID, location, or expression pattern, with selected
@@ -381574,6 +382431,8 @@ resources:
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
   - category: GraphProduct
     compression: tar
@@ -388690,6 +389549,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -396083,6 +396944,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -411298,6 +412161,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -428005,6 +428870,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
       30+ environmental and geospatial data layers accessible through SPARQL endpoint
@@ -432802,6 +433669,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX Distribution of KG-IDG
     format: kgx
@@ -432845,6 +433714,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -439258,6 +440129,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -440344,6 +441217,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -441903,15 +442778,34 @@ resources:
   version: '1.0'
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.tga.gov.au/
+    label: Therapeutic Goods Administration (Australia)
   creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for tga-approved-terminology. This page was automatically
-    generated because it was referenced by other resources.
+  description: TGA Approved Terminology for Therapeutic Goods is the Australian Therapeutic
+    Goods Administration's official, standardized vocabulary for describing therapeutic
+    goods in applications for the Australian Register of Therapeutic Goods (ARTG)
+    and on product labels. It defines Australian Approved Names for ingredients (active
+    ingredients, excipients, components, and cells and tissues) together with code-table
+    terms for presentation attributes such as dosage forms, routes of administration,
+    and containers. The authoritative lists are maintained by the TGA and published
+    through TGA Business Services. (The TGA website blocks automated requests, so
+    the homepage URL was confirmed via web search rather than a direct fetch.)
   domains:
-  - stub
+  - pharmacology
+  - natural products
+  - chemistry and biochemistry
+  homepage_url: https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods
   id: tga-approved-terminology
-  last_modified_date: '2026-10-19T00:00:00Z'
+  last_modified_date: '2026-10-21T00:00:00Z'
   layout: resource_detail
-  name: Tga-approved-terminology
+  license:
+    id: https://www.tga.gov.au/about/website-copyright
+    label: © Commonwealth of Australia (TGA website copyright; reuse by permission)
+  name: TGA Approved Terminology for Therapeutic Goods
   products:
   - category: GraphicalInterface
     description: Web application for searching NHPID ingredients by name or CAS number
@@ -441931,9 +442825,42 @@ resources:
       source: tga-approved-terminology
     - relation_type: prov:wasDerivedFrom
       source: ich-m5
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: DocumentationProduct
+    description: Official TGA publication landing page for the approved terminology
+      guidance.
+    format: http
+    id: tga-approved-terminology.publication
+    name: TGA Approved Terminology Publication Page
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: tga-approved-terminology
+    product_url: https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
+  - category: DocumentationProduct
+    description: Downloadable guidance document describing approved ingredient naming
+      and presentation terminology.
+    format: pdf
+    id: tga-approved-terminology.guidance-pdf
+    name: TGA Approved Terminology Guidance (PDF)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: tga-approved-terminology
+    product_url: https://www.tga.gov.au/sites/default/files/2024-10/tga-approved-terminology-therapeutic-goods.pdf
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
+  - category: GraphicalInterface
+    description: TGA page directing users to the Ingredients Table and Code Tables
+      (dosage forms, routes, containers) in TGA Business Services.
+    format: http
+    id: tga-approved-terminology.where-to-find
+    name: Where to Find Approved Terminology
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: tga-approved-terminology
+    product_url: https://www.tga.gov.au/where-find-approved-terminology
 - activity_status: active
   category: DataSource
   collection:
@@ -449521,6 +450448,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -465596,6 +466525,8 @@ resources:
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 500 error
+      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -466616,6 +467547,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -471177,15 +472110,33 @@ resources:
   - NCBITaxon:9606
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://vertebrate.genenames.org/about/
+    label: HUGO Gene Nomenclature Committee (HGNC)
   creation_date: '2026-10-19T00:00:00Z'
-  description: Stub Resource page for vgnc. This page was automatically generated
-    because it was referenced by other resources.
+  description: The Vertebrate Gene Nomenclature Committee (VGNC) assigns standardized,
+    HGNC-style approved gene symbols and names to genes in selected vertebrate species
+    that lack a dedicated nomenclature committee, naming genes in line with their
+    human homologs. A sister project of the HGNC, it began with chimpanzee and has
+    expanded to species including rhesus macaque, dog, cat, horse, cattle, and pig.
+    VGNC shares infrastructure with genenames.org and coordinates with the existing
+    mouse, rat, chicken, Xenopus, and zebrafish nomenclature committees.
   domains:
-  - stub
+  - genomics
+  - model organisms
+  - organisms
+  homepage_url: https://vertebrate.genenames.org/
   id: vgnc
-  last_modified_date: '2026-10-19T00:00:00Z'
+  last_modified_date: '2026-10-21T00:00:00Z'
   layout: resource_detail
-  name: Vgnc
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: Creative Commons Public Domain Dedication (CC0 1.0)
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: Vertebrate Gene Nomenclature Committee (VGNC)
   products:
   - category: GraphicalInterface
     description: HCOP web search for orthologs of one or more genes (by symbol, name,
@@ -471410,9 +472361,60 @@ resources:
       source: wormbase
     - relation_type: prov:wasDerivedFrom
       source: xenbase
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: Web tool to search and browse VGNC-approved vertebrate gene symbols,
+      names, and records.
+    format: http
+    id: vgnc.search
+    name: VGNC Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: vgnc
+    product_url: https://vertebrate.genenames.org/tools/search/
+  - category: Product
+    description: Directory of downloadable, tab-delimited VGNC gene symbol report
+      files and per-species nomenclature statistics.
+    format: tsv
+    id: vgnc.downloads
+    name: VGNC Statistics and Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: vgnc
+    product_url: https://vertebrate.genenames.org/download/statistics-and-files/
+  - category: ProgrammingInterface
+    description: Shared genenames.org REST service for programmatic retrieval of HGNC
+      and VGNC gene nomenclature records.
+    format: http
+    id: vgnc.rest-api
+    is_public: true
+    name: genenames.org REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: vgnc
+    product_url: https://www.genenames.org/help/rest/
+  publications:
+  - authors:
+    - Susan Tweedie
+    - Bryony Braschi
+    - Kristian Gray
+    - Tamsin E. M. Jones
+    - Ruth L. Seal
+    - Elspeth A. Bruford
+    doi: 10.1093/nar/gkaa980
+    id: doi:10.1093/nar/gkaa980
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Genenames.org: the HGNC and VGNC resources in 2021'
+    year: '2021'
+  rrid: SCR_017514
+  taxon:
+  - NCBITaxon:9598
+  - NCBITaxon:9544
+  - NCBITaxon:9615
+  - NCBITaxon:9685
+  - NCBITaxon:9796
+  - NCBITaxon:9913
+  - NCBITaxon:9823
 - activity_status: active
   category: DataSource
   contacts:
@@ -474406,6 +475408,8 @@ resources:
       source: chembl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 406 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 406 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -480981,6 +481985,82 @@ resources:
   - WB
   taxon:
   - NCBITaxon:6237
+- activity_status: active
+  category: DataModel
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.epa.gov/waterdata
+    label: US Environmental Protection Agency
+  creation_date: '2026-10-21T00:00:00Z'
+  description: The Water Quality Exchange (WQX) is the US EPA's national data format
+    and submission mechanism for sharing water quality monitoring data. State, tribal,
+    and federal agencies, local governments, universities, and non-governmental organizations
+    submit monitoring locations, sampling activities, and results, which populate
+    EPA's WQX database. Data can be prepared with spreadsheet templates, submitted
+    through the WQXWeb application, or sent as WQX XML through the EPA Exchange Network.
+    WQX data are published to the public through the Water Quality Portal, which combines
+    them with USGS NWIS data. Version 3.0 is current and version 2.2 is also supported.
+  domains:
+  - environment
+  - water resources
+  homepage_url: https://www.epa.gov/waterdata/water-quality-data
+  id: wqx
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.usa.gov/government-works
+    label: Public domain (U.S. federal government work)
+  name: Water Quality Exchange (WQX)
+  products:
+  - category: DataModelProduct
+    description: 'The WQX data flow package on the EPA Exchange Network: the XML schema,
+      flow configuration document, schema change logs, and the Data Exchange Template
+      for versions 3.0 and 2.2.'
+    format: xml
+    id: wqx.schema
+    name: WQX Data Exchange Schema and Template
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wqx
+    product_url: https://exchangenetwork.net/data-exchange/wqx/
+  - category: DocumentationProduct
+    description: EPA guidance and the WQXWeb application for reformatting and submitting
+      monitoring data to WQX, including templates, the WQXWeb REST API, and Exchange
+      Network node submission.
+    format: http
+    id: wqx.upload-guidance
+    name: Water Quality Data Upload with WQX
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wqx
+    product_url: https://www.epa.gov/waterdata/water-quality-data-upload-wqx
+  - category: Product
+    description: Downloadable Excel template and data-dictionary packages for importing
+      physical-chemical, biological, habitat, metrics, lab, and continuous monitoring
+      results into WQX Web.
+    format: xlsx
+    id: wqx.web-templates
+    name: WQX Web Template Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wqx
+    product_url: https://www.epa.gov/waterdata/water-quality-exchange-web-template-files
+  - category: GraphicalInterface
+    description: EPA's Central Data Exchange (CDX), the electronic reporting portal
+      through which registered users log in to WQXWeb to submit water quality data.
+    format: http
+    id: wqx.cdx
+    name: WQXWeb via EPA Central Data Exchange
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: wqx
+    product_url: https://cdx.epa.gov/
+  synonyms:
+  - WQX
+  - Water Quality eXchange
+  version: '3.0'
 - activity_status: active
   category: Ontology
   collection:
@@ -488821,6 +489901,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -488963,6 +490045,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Animal Natural History and Life History Ontology
@@ -490724,6 +491808,8 @@ resources:
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -490899,6 +491985,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
   publications: []
   use_instead:
@@ -492159,6 +493247,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -492310,6 +493400,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: 'Robokop Plus: the ROBOKOP KG extended with CORD-19 and text-mined
       assertions (2023 data, Biolink 3.1.2; legacy).'
@@ -492614,6 +493706,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   publications: []
   taxon:
   - all
@@ -492747,6 +493841,65 @@ resources:
       and Their Mechanisms.'
     year: '2015'
   repository: https://github.com/labda/DINTO
+- activity_status: unresponsive
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://jensenlab.org/
+    label: Jensen Lab, Novo Nordisk Foundation Center for Protein Research
+  creation_date: '2026-10-21T00:00:00Z'
+  description: DistiLD maps disease- and trait-associated SNPs and genes from genome-wide
+    association studies (GWAS) onto linkage disequilibrium (LD) blocks to help identify
+    candidate disease genes. It links published GWAS results to standardized ICD-10
+    disease codes and uses HapMap data to partition chromosomes into LD blocks onto
+    which SNPs and genes are mapped. The web interface let users query by disease,
+    SNP, or gene. The homepage refused connections when checked in October 2026 and
+    the resource appears retired.
+  domains:
+  - genome-wide association studies
+  - genetic variation
+  - genomics
+  homepage_url: http://distild.jensenlab.org/
+  id: distild
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: DistiLD
+  products:
+  - category: GraphicalInterface
+    description: Web interface for querying and visualizing disease- and trait-associated
+      SNPs and genes within LD blocks, searchable by disease, SNP, or gene. The site
+      refused connections when checked in October 2026.
+    format: http
+    id: distild.database
+    name: DistiLD Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: distild
+    product_url: http://distild.jensenlab.org/
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: gwascatalog
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+    - relation_type: prov:wasDerivedFrom
+      source: diseases
+  publications:
+  - authors:
+    - Albert Pallejà
+    - Heiko Horn
+    - Sabrina Eliasson
+    - Lars Juhl Jensen
+    doi: 10.1093/nar/gkr899
+    id: doi:10.1093/nar/gkr899
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'DistiLD Database: diseases and traits in linkage disequilibrium blocks'
+    year: '2012'
+  rrid: SCR_005943
+  taxon:
+  - NCBITaxon:9606
 - activity_status: inactive
   category: Ontology
   creation_date: '2025-10-30T00:00:00Z'
@@ -493384,6 +494537,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Plant Environment Ontology in OBO format
     format: obo
@@ -493395,6 +494550,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: FoodOn ontology with import file references and over 9,000 food products
@@ -493474,6 +494631,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
   publications: []
 - activity_status: inactive
@@ -493788,6 +494947,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -493801,6 +494962,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
   publications: []
 - activity_status: inactive
@@ -495725,6 +496888,89 @@ resources:
   products: []
   publications: []
   rrid: SCR_010334
+- activity_status: unresponsive
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://publichealth.jhu.edu/faculty/4036/hongkai-ji
+    label: Ji Lab, Johns Hopkins Bloomberg School of Public Health
+  creation_date: '2026-10-19T00:00:00Z'
+  description: hmChIP is a database and web server for exploring publicly available
+    genome-wide chromatin immunoprecipitation (ChIP-seq and ChIP-chip) data in human
+    and mouse. Users query the database to retrieve protein-DNA binding intensities
+    from individual samples for user-supplied genomic regions, and cluster samples
+    and regions to compare binding patterns across cell types. At publication (2011)
+    it held 2,016 samples from 492 experiments covering 170 proteins. The web server
+    and download pages were unreachable (HTTP 500 and HTTP 403) when checked in October
+    2026.
+  domains:
+  - gene regulation
+  - genomics
+  homepage_url: http://jilab.biostat.jhsph.edu/database/cgi-bin/hmChIP.pl
+  id: hmchip
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: hmChIP
+  products:
+  - category: Product
+    description: HTRIdb download page offering all transcription factor-target gene
+      interactions (optionally with associated protein-protein interactions), with
+      experimental techniques and PubMed IDs, as tab-delimited or spreadsheet files.
+      Interactions were manually curated from the literature (found through PubMed
+      searches) and from ChIP-chip and ChIP-seq studies selected via the hmChIP database.
+      The site did not respond when checked on 2026-10-19.
+    format: http
+    id: htridb.downloads
+    name: HTRIdb Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: htridb
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    - relation_type: prov:wasDerivedFrom
+      source: hmchip
+    product_url: http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
+      to URL'
+    - Site did not respond (connection timed out) when checked on 2026-10-19; the
+      last Internet Archive snapshot is from 2022-08-17.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
+  - category: GraphicalInterface
+    description: Web server and query interface to the hmChIP database, retrieving
+      protein-DNA binding intensities from individual human and mouse ChIP-seq and
+      ChIP-chip samples for user-supplied genomic regions, with clustering of samples
+      and regions. The server returned HTTP 500 and was unreachable when checked in
+      October 2026.
+    format: http
+    id: hmchip.webserver
+    name: hmChIP Web Server
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: hmchip
+    product_url: http://jilab.biostat.jhsph.edu/database/cgi-bin/hmChIP.pl
+  publications:
+  - authors:
+    - Li Chen
+    - George Wu
+    - Hongkai Ji
+    doi: 10.1093/bioinformatics/btr156
+    id: doi:10.1093/bioinformatics/btr156
+    journal: Bioinformatics
+    preferred: true
+    title: 'hmChIP: a database and web server for exploring publicly available human
+      and mouse ChIP-seq and ChIP-chip data'
+    year: '2011'
+  rrid: SCR_005407
+  taxon:
+  - NCBITaxon:9606
+  - NCBITaxon:10090
 - activity_status: inactive
   category: DataSource
   contacts:
@@ -496444,6 +497690,10 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
+      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
+      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/intact/ws
     description: IntAct web service and URL-based programmatic interface for retrieving
@@ -496633,6 +497883,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
     format: http
@@ -496649,6 +497901,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
     format: http
@@ -496665,6 +497919,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 503 error
+      when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
       and binding motifs
@@ -498372,6 +499628,8 @@ resources:
       to URL'
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: Product
     description: Download page listing interaction tables, MITAB files, GMT gene sets,
       and binding site tables, GFF3 annotations, and FASTA sequences for each organism,
@@ -499014,6 +500272,84 @@ resources:
   taxon:
   - NCBITaxon:9606
 - activity_status: inactive
+  category: DataModel
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ich.org/
+    label: International Council for Harmonisation (ICH)
+  creation_date: '2026-10-19T00:00:00Z'
+  description: 'ICH M5, "Data Elements and Standards for Drug Dictionaries," was a
+    multidisciplinary ICH topic that developed controlled vocabularies for dosage
+    forms, routes of administration, and units of measurement to standardize drug
+    dictionary data; a consensus (Step 2) draft was issued in 2005. It was never finalized
+    as a standalone ICH guideline: the M5 Expert Working Group was closed following
+    finalisation of the ISO IDMP (Identification of Medicinal Products) standards,
+    and the vocabulary substance now lives in ISO IDMP and the actively maintained
+    EDQM Standard Terms. This registry entry records the historical ICH M5 vocabularies
+    as a data model.'
+  domains:
+  - pharmacology
+  - clinical coding
+  - clinical
+  homepage_url: https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-data-elements-standards-drug-dictionaries
+  id: ich-m5
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: ICH M5 controlled vocabularies
+  products:
+  - category: GraphicalInterface
+    description: Web application for searching NHPID ingredients by name or CAS number
+      and role (homeopathic, medicinal, non-medicinal, non-NHP, component), and for
+      searching the NHP controlled vocabularies by category. Controlled vocabulary
+      terms for dosage forms, routes of administration, and units are adapted from
+      ICH M5 lists, and ingredient naming conventions from the TGA approved terminology.
+    format: http
+    id: nhpid.web
+    name: NHPID Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nhpid
+    product_url: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: tga-approved-terminology
+    - relation_type: prov:wasDerivedFrom
+      source: ich-m5
+  - category: DataModelProduct
+    description: The 2005 ICH M5 consensus (Step 2) draft specifying data elements
+      and standards for drug dictionaries, including controlled vocabularies for routes
+      of administration and units.
+    format: pdf
+    id: ich-m5.guideline
+    name: ICH M5 Drug Dictionaries Guideline (2005 draft)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ich-m5
+    product_file_size: 0
+    product_url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-guideline-m5-data-elements-and-standards-drug-dictionaries_en.pdf
+  - category: DataModelProduct
+    description: The M5 Expert Working Group controlled vocabulary mapping route-of-administration
+      terms, with regional equivalents and E2B codes.
+    format: http
+    id: ich-m5.routes-cv
+    name: ICH M5 Routes of Administration Controlled Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ich-m5
+    product_url: https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-ewg-routes-administration-controlled-vocabulary
+  - category: DataModelProduct
+    description: The M5 Expert Working Group controlled vocabulary for units and measurements
+      used in drug dictionaries.
+    format: http
+    id: ich-m5.units-cv
+    name: ICH M5 Units and Measurements Controlled Vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ich-m5
+    product_url: https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-ewg-units-measurements-controlled-vocabulary
+- activity_status: inactive
   category: Ontology
   collection:
   - obo-foundry
@@ -499335,6 +500671,11 @@ resources:
     product_url: http://www.inoh.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: Error connecting
+      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
+      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
+      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
+      name resolution)"))'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
       port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
@@ -502278,6 +503619,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of MicroRNA Ontology (MIRNAO), produced by KG-Bioportal
@@ -502358,6 +503701,158 @@ resources:
   repository: https://github.com/VEuPathDB-ontology/MIRO
   taxon:
   - NCBITaxon:44484
+- activity_status: orphaned
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.broadinstitute.org/chembio-therapeutics/mlpcnprofiling
+    label: Broad Institute, Chemical Biology and Therapeutics
+  creation_date: '2026-10-19T00:00:00Z'
+  description: MLPCN Profiling Data is a Broad Institute reference dataset of high-dimensional
+    cellular profiling of small molecules screened through the NIH Molecular Libraries
+    Probe Production Centers Network (MLPCN). It contains multiplex-cytological (image-based,
+    Cell Painting-style) and gene-expression profiles for roughly 30,000 compounds
+    in human U2OS cells, spanning diversity-oriented synthesis compounds, chemically
+    diverse library compounds, and known bioactive landmark compounds. It was generated
+    to test whether diversity of biological measurements, rather than of chemical
+    structure, better predicts phenotypic screening performance (Wawer et al., 2014).
+  domains:
+  - drug discovery
+  - high-throughput screening
+  - cheminformatics
+  - chemistry and biochemistry
+  homepage_url: https://www.broadinstitute.org/chembio-therapeutics/mlpcnprofiling
+  id: mlpcn-profiling
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: MLPCN Profiling Data
+  products:
+  - category: GraphicalInterface
+    description: Web portal for browsing and searching predicted and known drug-side
+      effect connections by drug or side effect, with side effect-GO term and side
+      effect-phenotype networks.
+    format: http
+    id: sep-l1000.portal
+    name: SEP-L1000 Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sep-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: lincs-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: sider
+    - relation_type: prov:wasDerivedFrom
+      source: offsides
+    - relation_type: prov:wasDerivedFrom
+      source: go
+    - relation_type: prov:wasDerivedFrom
+      source: mlpcn-profiling
+    product_url: http://maayanlab.net/SEP-L1000/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: meddra
+    - relation_type: prov:wasInformedBy
+      source: drugbank
+  - category: Product
+    compression: gzip
+    description: 166-bit MACCS chemical fingerprint matrix for 41,774 drugs and small
+      molecules from LINCS L1000 and MLPCN, computed with Open Babel from SMILES.
+    format: csv
+    id: sep-l1000.maccs-fingerprints
+    name: SEP-L1000 MACCS Fingerprints
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sep-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: lincs-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: mlpcn-profiling
+    product_file_size: 1254411
+    product_url: http://maayanlab.net/SEP-L1000/downloads/MACCS_bitmatrix.csv.gz
+  - category: Product
+    description: Compound metadata for 41,774 LINCS L1000 and MLPCN small molecules
+      with pert_id, name, PubChem CID, and SMILES.
+    format: csv
+    id: sep-l1000.smiles-metadata
+    name: SEP-L1000 Compound SMILES Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sep-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: lincs-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: mlpcn-profiling
+    product_file_size: 4014816
+    product_url: http://maayanlab.net/SEP-L1000/downloads/meta_SMILES.csv
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: pubchem
+  - category: Product
+    compression: gzip
+    description: Cell morphology profiles (812 Cell Painting image features) for 19,864
+      small molecules from the Broad Institute MLPCN profiling dataset.
+    format: csv
+    id: sep-l1000.mlpcn-morphology
+    name: SEP-L1000 MLPCN Morphological Profiles
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: sep-l1000
+    - relation_type: prov:wasDerivedFrom
+      source: mlpcn-profiling
+    product_file_size: 55418948
+    product_url: http://maayanlab.net/SEP-L1000/downloads/MLPCN_morplological_profiles.csv.gz
+  - category: GraphicalInterface
+    description: Broad Institute landing page describing the profiling assays, compound
+      sets, and data download links.
+    format: http
+    id: mlpcn-profiling.portal
+    name: MLPCN Profiling Data Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mlpcn-profiling
+    product_url: https://www.broadinstitute.org/chembio-therapeutics/mlpcnprofiling
+  - category: Product
+    compression: zip
+    description: Complete archive of multiplex-cytological and gene-expression profiling
+      data for the MLP-sponsored compound sets.
+    format: mixed
+    id: mlpcn-profiling.full-dataset
+    name: MLP-sponsored Profiling Data
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mlpcn-profiling
+    product_file_size: 382690558
+    product_url: https://data.broadinstitute.org/csoft/mlpcn/Broad.HG005032.ProfilingData.zip
+  - category: Product
+    compression: zip
+    description: The profiling data subset accompanying Wawer et al. 2014 (PNAS).
+    format: mixed
+    id: mlpcn-profiling.pnas2014-dataset
+    name: PNAS 2014 Profiling Data
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mlpcn-profiling
+    product_file_size: 327620838
+    product_url: https://data.broadinstitute.org/csoft/mlpcn/Broad.PNAS2014.ProfilingData.zip
+  publications:
+  - authors:
+    - Mathias J. Wawer
+    - Kejie Li
+    - Sigrun M. Gustafsdottir
+    - Vebjorn Ljosa
+    - Nicole E. Bodycombe
+    - et al.
+    doi: 10.1073/pnas.1410933111
+    id: doi:10.1073/pnas.1410933111
+    journal: Proceedings of the National Academy of Sciences
+    preferred: true
+    title: Toward performance-diverse small-molecule libraries for cell-based phenotypic
+      screening using multiplexed high-dimensional profiling
+    year: '2014'
+  taxon:
+  - NCBITaxon:9606
 - activity_status: inactive
   category: Ontology
   collection:
@@ -502397,6 +503892,8 @@ resources:
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -502439,6 +503936,138 @@ resources:
   repository: https://sourceforge.net/projects/mged/
   use_instead:
   - obi
+- activity_status: orphaned
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: http://data.modencode.org/
+    label: modENCODE Consortium
+  creation_date: '2026-10-19T00:00:00Z'
+  description: modENCODE (model organism ENCyclopedia Of DNA Elements) was an NHGRI-funded
+    consortium, begun in 2007, created to systematically identify and annotate the
+    functional genomic elements (genes, transcripts, and regulatory, chromatin, and
+    replication elements) in the genomes of Drosophila melanogaster and Caenorhabditis
+    elegans using high-throughput approaches including ChIP-seq and RNA-seq. The consortium
+    generated hundreds of genome-wide datasets and concluded around 2012. Its original
+    web portals were retired in 2023 after funding ended, and its data are now distributed
+    through FlyBase, WormBase, and the ENCODE Data Coordination Center.
+  domains:
+  - genomics
+  - gene regulation
+  - model organisms
+  - organisms
+  homepage_url: http://data.modencode.org/
+  id: modencode
+  last_modified_date: '2026-10-21T00:00:00Z'
+  layout: resource_detail
+  name: modENCODE
+  products:
+  - category: Product
+    description: GTRD bulk download directory with plain-text results of uniform annotation
+      and analysis, including experiment metadata, peak and meta-cluster intervals
+      for ChIP-seq, ChIP-exo, DNase-seq, and MNase-seq, bigBed files, target gene
+      lists, and genome browser track hubs. Raw data were obtained from GEO, SRA,
+      ENCODE, and modENCODE.
+    format: http
+    id: gtrd.downloads
+    name: GTRD Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gtrd
+    - relation_type: prov:wasDerivedFrom
+      source: gene-expression-omnibus
+    - relation_type: prov:wasDerivedFrom
+      source: sra
+    - relation_type: prov:wasDerivedFrom
+      source: encode
+    - relation_type: prov:wasDerivedFrom
+      source: modencode
+    product_url: https://gtrd.biouml.org/downloads/current/
+  - category: Product
+    description: Per-species archives of transcription factor ChIP-seq peaks called
+      with GEM, MACS2, PICS, and SISSRs on uniformly reprocessed ChIP-seq data from
+      GEO, SRA, ENCODE, and modENCODE.
+    format: http
+    id: gtrd.chip-seq_peaks
+    name: GTRD ChIP-seq Peaks
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gtrd
+    - relation_type: prov:wasDerivedFrom
+      source: gene-expression-omnibus
+    - relation_type: prov:wasDerivedFrom
+      source: sra
+    - relation_type: prov:wasDerivedFrom
+      source: encode
+    - relation_type: prov:wasDerivedFrom
+      source: modencode
+    product_url: http://gtrd.biouml.org:8888/downloads/current/intervals/chip-seq/
+  - category: GraphicalInterface
+    description: Static landing page for the retired modENCODE project, linking to
+      the successor data repositories (FlyBase, WormBase, and the ENCODE Portal) that
+      now host the project's data.
+    format: http
+    id: modencode.portal
+    name: modENCODE Data Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: modencode
+    product_url: http://data.modencode.org/
+  - category: Product
+    compression: tar
+    description: Tar archive of supplementary files from the Drosophila modENCODE
+      2010 Science paper (PMID 21177974).
+    format: txt
+    id: modencode.fly-suppl-2010
+    name: modENCODE Drosophila 2010 Supplemental Data
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: modencode
+    product_file_size: 168091136
+    product_url: https://s3.us-west-2.amazonaws.com/data.modencode.org/modencode_Science-2010_fly_suppl_PMID21177974.tar
+  - category: GraphicalInterface
+    description: ENCODE Data Coordination Center experiment matrix hosting released
+      modENCODE (and modERN) datasets for Drosophila melanogaster and Caenorhabditis
+      elegans.
+    format: http
+    id: modencode.encode-portal
+    name: modENCODE Data at the ENCODE Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: modencode
+    product_url: https://www.encodeproject.org/search/?type=Experiment&internal_tags=ENCORTEX
+  publications:
+  - authors:
+    - Sushmita Roy
+    - Jason Ernst
+    - Peter V. Kharchenko
+    - Pouya Kheradpour
+    - modENCODE Consortium
+    doi: 10.1126/science.1198374
+    id: doi:10.1126/science.1198374
+    journal: Science
+    preferred: true
+    title: Identification of functional elements and regulatory circuits by Drosophila
+      modENCODE
+    year: '2010'
+  - authors:
+    - Mark B. Gerstein
+    - Zhi John Lu
+    - Eric L. Van Nostrand
+    - Chao Cheng
+    - Bradley I. Arshinoff
+    doi: 10.1126/science.1196914
+    id: doi:10.1126/science.1196914
+    journal: Science
+    title: Integrative analysis of the Caenorhabditis elegans genome by the modENCODE
+      project
+    year: '2010'
+  rrid: SCR_006206
+  taxon:
+  - NCBITaxon:7227
+  - NCBITaxon:6239
 - activity_status: inactive
   category: DataSource
   creation_date: '2026-06-18T00:00:00Z'
@@ -502707,6 +504336,8 @@ resources:
     product_url: http://www.netpath.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 503 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -503224,6 +504855,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -503503,6 +505136,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for Genetic Interval (OGI), produced
@@ -503627,6 +505262,8 @@ resources:
       to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -507666,6 +509303,8 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -508379,6 +510018,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -510911,6 +512552,8 @@ resources:
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
@@ -515152,6 +516795,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web portal for browsing and searching predicted and known drug-side
       effect connections by drug or side effect, with side effect-GO term and side
@@ -515258,6 +516903,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -517600,6 +519247,8 @@ resources:
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
       when accessing file'
   - category: Product
     compression: targz

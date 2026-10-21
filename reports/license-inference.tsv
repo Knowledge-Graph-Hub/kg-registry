@@ -93,6 +93,7 @@ fiokg	KnowledgeGraph	inferred			US federal government public domain	public domai
 foodkg	KnowledgeGraph	declared	https://www.apache.org/licenses/LICENSE-2.0	permissive	http://creativecommons.org/licenses/by/3.0/	permissive	foodon|uo	
 forum	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	chebi|dc|mesh|skos	chemont|cito|fabio
 freebase	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/2.5/	permissive	https://creativecommons.org/publicdomain/zero/1.0/	public domain	wikidata	
+gdelt	KnowledgeGraph	declared	https://www.gdeltproject.org/about.html#termsofuse	permissive				
 gene-expression-atlas-okn	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	expressionatlas	
 gene-expression-omnibus	Aggregator	no-upstream						
 genecards	Aggregator	conflict	https://www.lifemapsc.com/genecards-suite-terms-of-use/	non-commercial	https://www.alliancegenome.org/privacy-warranty-licensing	custom	alliance|biocyc|cosmic|ctd|disgenet|gtex|iid|innatedb|medgen|snomedct|umls	5srrnadb|aminode|biogps|bitterdb|cdd|dbsuper|dgv|ena|epd|fabric|gard|geneorganizer|genomernai|gtrnadb|icd10|icd11|lncbase|lncbook|lncrnadisease|malacards|medlineplus|mirgenedb|mirtarbase|modomics|panther|paxdb|pdb|pid|pirsf|proteomicsdb|proteopedia|refseq|rgd|scop|sfld|silva|simap|smart|snodb|snopy|srpdb|tair|tarbase|treefam|ucnebase|vista
@@ -106,7 +107,7 @@ gp-kg	KnowledgeGraph	inferred			https://www.ebi.ac.uk/about/terms-of-use	custom	
 gtrx	Aggregator	inferred			https://opensource.org/licenses/Apache-2.0	permissive	biothings	
 hald	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 harmonizome	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://depmap.org/portal/terms/	custom	achilles|cmap|cosmic|ctd|depmap|disgenet|gtex|kegg|msigdb	biogps|cellmarker|gene-expression-omnibus|impc|lincs-l1000|mirtarbase|panther|phosphositeplus|pid|tcga
-hcop	Aggregator	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://xenbase.org/xenbase/	custom	xenbase	eggnog|inparanoid|orthomcl|panther|phylomedb|rgd|treefam|vgnc
+hcop	Aggregator	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://xenbase.org/xenbase/	custom	xenbase	eggnog|inparanoid|orthomcl|panther|rgd|treefam
 hetionet	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://uts.nlm.nih.gov/uts/	custom	umls	pid
 hmdb	Aggregator	no-upstream	https://www.hmdb.ca/downloads	non-commercial				
 hpa	Aggregator	no-upstream	https://creativecommons.org/licenses/by-sa/4.0/	copyleft				

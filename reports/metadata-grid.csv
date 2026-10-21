@@ -10,6 +10,7 @@ ado,active,PASS
 adrecs,active,PASS
 aelous,active,PASS
 aeolus,active,PASS
+afcd,active,PASS
 afo,active,PASS
 afpo,active,PASS
 agcros,active,PASS
@@ -91,6 +92,7 @@ bv-brc,active,PASS
 cabi-isc,active,PASS
 cacao,active,PASS
 cadd,active,PASS
+cameo,active,PASS
 campbell-biology,active,PASS
 cancer-genome-interpreter,active,PASS
 cancer-registry-kg,active,PASS
@@ -109,6 +111,7 @@ cdd,active,PASS
 cdiscvocab,active,PASS
 cdno,active,PASS
 cebs,active,PASS
+cell-taxonomy,active,PASS
 cellcollective,active,PASS
 cellmarker,active,PASS
 cellminer,active,PASS
@@ -180,6 +183,7 @@ credit,active,PASS
 creeds,active,PASS
 cro,active,PASS
 cropland-data-layer,active,PASS
+cspa,active,PASS
 ctd,active,PASS
 ctd2,active,PASS
 cteno,active,PASS
@@ -342,9 +346,11 @@ gadm,active,PASS
 gallont,active,PASS
 gard,active,PASS
 gaz,active,PASS
+gbd,active,PASS
 gbif,active,PASS
 gcmd,active,PASS
 gdc,active,PASS
+gdelt,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
 gelinea,active,PASS
@@ -419,7 +425,6 @@ hgnc,active,PASS
 hifld,active,PASS
 hippie,active,PASS
 hipsci,active,PASS
-hmchip,active,PASS
 hmdb,active,PASS
 hocomoco,active,PASS
 hom,active,PASS
@@ -451,7 +456,6 @@ ice,active,PASS
 icees-kg,active,PASS
 iceo,active,PASS
 icgc,active,PASS
-ich-m5,active,PASS
 ickg,active,PASS
 ico,active,PASS
 iconclass,active,PASS
@@ -547,6 +551,7 @@ med-rt,active,PASS
 meddra,active,PASS
 medgen,active,PASS
 medi,active,PASS
+mediacloud,active,PASS
 mediadive,active,PASS
 medispan-gpi,active,PASS
 medkg,active,PASS
@@ -576,12 +581,10 @@ mirdb,active,PASS
 mirgenedb,active,PASS
 mirtarbase,active,PASS
 mixs,active,PASS
-mlpcn-profiling,active,PASS
 mmo,active,PASS
 mmrrc,active,PASS
 mmusdv,active,PASS
 mod,active,PASS
-modencode,active,PASS
 modomics,active,PASS
 molepro,active,PASS
 monarchinitiative,active,PASS
@@ -633,6 +636,7 @@ neo,active,PASS
 nextprot,active,PASS
 ngbo,active,PASS
 ngdc,active,PASS
+nhanes,active,PASS
 nhpid,active,PASS
 nhpn,active,PASS
 nibrs,active,PASS
@@ -796,6 +800,7 @@ prodo,active,PASS
 progenomes,active,PASS
 progeny,active,PASS
 prokn,active,PASS
+propan,active,PASS
 prosite,active,PASS
 protcid,active,PASS
 proteomehd,active,PASS
@@ -1000,6 +1005,7 @@ wildlifekn,active,PASS
 wipo-tkp,active,PASS
 worldclim,active,PASS
 wormbase,active,PASS
+wqx,active,PASS
 xao,active,PASS
 xco,active,PASS
 xenbase,active,PASS
@@ -1044,6 +1050,7 @@ date,inactive,PASS
 dc_cl,inactive,PASS
 dcdb,inactive,PASS
 dinto,inactive,PASS
+distild,unresponsive,PASS
 doaf,inactive,PASS
 docm,inactive,PASS
 efip,inactive,PASS
@@ -1071,11 +1078,13 @@ glida,inactive,PASS
 greenclaims,inactive,PASS
 gro,inactive,PASS
 habronattus,inactive,PASS
+hmchip,unresponsive,PASS
 homologene,inactive,PASS
 hpidb,unresponsive,PASS
 hprd,inactive,PASS
 htridb,unresponsive,PASS
 human-proteome-map,orphaned,PASS
+ich-m5,inactive,PASS
 idomal,inactive,PASS
 iev,inactive,PASS
 imr,inactive,PASS
@@ -1099,7 +1108,9 @@ micro,inactive,PASS
 mirgate,unresponsive,PASS
 mirnao,inactive,PASS
 miro,inactive,PASS
+mlpcn-profiling,orphaned,PASS
 mo,inactive,PASS
+modencode,orphaned,PASS
 motifmap,inactive,PASS
 mps-db,inactive,PASS
 netpath,orphaned,PASS

@@ -35,6 +35,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-08-17: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+    to URL'
 publications: []
 taxon:
 - NCBITaxon:8292

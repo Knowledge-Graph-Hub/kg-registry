@@ -9,13 +9,13 @@ contacts:
   label: Sonnhammer group, Stockholm University (SciLifeLab / SBC)
 creation_date: '2026-10-19T00:00:00Z'
 description: InParanoid is an algorithm and database that detects orthologs and in-paralogs
-  between two species by pairwise whole-proteome comparison, seeding ortholog clusters from
-  reciprocal best sequence matches and then adding species-specific in-paralogs without multiple
-  alignments or phylogenetic trees. The current release, InParanoiDB 9, uses the InParanoid-DIAMOND
-  pipeline over 640 organisms (447 eukaryotic, 158 bacterial, and 35 archaeal proteomes) and
-  provides ortholog groups for both full-length proteins and protein domains. It is developed
-  by Erik Sonnhammer's group at Stockholm University (SciLifeLab / Stockholm Bioinformatics
-  Centre).
+  between two species by pairwise whole-proteome comparison, seeding ortholog clusters
+  from reciprocal best sequence matches and then adding species-specific in-paralogs
+  without multiple alignments or phylogenetic trees. The current release, InParanoiDB
+  9, uses the InParanoid-DIAMOND pipeline over 640 organisms (447 eukaryotic, 158
+  bacterial, and 35 archaeal proteomes) and provides ortholog groups for both full-length
+  proteins and protein domains. It is developed by Erik Sonnhammer's group at Stockholm
+  University (SciLifeLab / Stockholm Bioinformatics Centre).
 domains:
 - molecular evolution
 - genomics
@@ -26,10 +26,10 @@ layout: resource_detail
 name: InParanoid
 products:
 - category: GraphicalInterface
-  description: HCOP web search for orthologs of one or more genes (by symbol, name, Ensembl,
-    NCBI Gene, or species database ID, with wildcards) between human and selected species,
-    filterable by orthology source; supports direct-link URLs and tab-delimited export of
-    results.
+  description: HCOP web search for orthologs of one or more genes (by symbol, name,
+    Ensembl, NCBI Gene, or species database ID, with wildcards) between human and
+    selected species, filterable by orthology source; supports direct-link URLs and
+    tab-delimited export of results.
   format: http
   id: hcop.web
   name: HCOP Search
@@ -82,9 +82,9 @@ products:
     source: xenbase
 - category: MappingProduct
   compression: gzip
-  description: All human ortholog assertions from HCOP for every ortholog species in one tab-delimited
-    file (7 columns) with the ortholog species taxon ID, human and ortholog NCBI Gene and
-    Ensembl gene IDs, and the assertion IDs.
+  description: All human ortholog assertions from HCOP for every ortholog species
+    in one tab-delimited file (7 columns) with the ortholog species taxon ID, human
+    and ortholog NCBI Gene and Ensembl gene IDs, and the assertion IDs.
   format: tsv
   id: hcop.all-seven-column
   name: HCOP All Species Orthologs (7 column)
@@ -138,9 +138,10 @@ products:
     source: xenbase
 - category: MappingProduct
   compression: gzip
-  description: All human ortholog assertions from HCOP for every ortholog species in one tab-delimited
-    file (16 columns), adding HGNC and species database IDs, approved symbols and names, chromosomal
-    locations, and the list of supporting orthology sources to the 7-column file.
+  description: All human ortholog assertions from HCOP for every ortholog species
+    in one tab-delimited file (16 columns), adding HGNC and species database IDs,
+    approved symbols and names, chromosomal locations, and the list of supporting
+    orthology sources to the 7-column file.
   format: tsv
   id: hcop.all-sixteen-column
   name: HCOP All Species Orthologs (16 column)
@@ -193,10 +194,10 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: xenbase
 - category: Product
-  description: HCOP bulk downloads page with pre-computed per-species files of human orthologs
-    for each of the 19 ortholog species, as gzipped tab-delimited files in 6-column (raw assertions
-    with Ensembl and NCBI Gene IDs) and 15-column (adding nomenclature, locations, and supporting
-    sources) layouts, e.g. human_mouse_hcop_fifteen_column.txt.gz.
+  description: HCOP bulk downloads page with pre-computed per-species files of human
+    orthologs for each of the 19 ortholog species, as gzipped tab-delimited files
+    in 6-column (raw assertions with Ensembl and NCBI Gene IDs) and 15-column (adding
+    nomenclature, locations, and supporting sources) layouts, e.g. human_mouse_hcop_fifteen_column.txt.gz.
   format: http
   id: hcop.species-downloads
   name: HCOP Per-species Bulk Downloads
@@ -248,8 +249,8 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: xenbase
 - category: GraphicalInterface
-  description: Browse and search interface for ortholog groups and in-paralogs, for both full-length
-    proteins and protein domains, across 640 organisms.
+  description: Browse and search interface for ortholog groups and in-paralogs, for
+    both full-length proteins and protein domains, across 640 organisms.
   format: http
   id: inparanoid.portal
   name: InParanoiDB 9 Web Portal
@@ -258,8 +259,9 @@ products:
     source: inparanoid
   product_url: https://inparanoidb.sbc.su.se/
 - category: Product
-  description: Download area serving proteomes, species lists, and pairwise ortholog and domain
-    files (as tab-delimited SQLtable text or OrthoXML), plus previous versions back to v2.0.
+  description: Download area serving proteomes, species lists, and pairwise ortholog
+    and domain files (as tab-delimited SQLtable text or OrthoXML), plus previous versions
+    back to v2.0.
   format: http
   id: inparanoid.downloads
   name: InParanoiDB 9 Bulk Downloads
@@ -267,6 +269,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inparanoid
   product_url: https://inparanoidb.sbc.su.se/download
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+    to URL'
 publications:
 - authors:
   - Emma Persson
@@ -288,7 +293,6 @@ publications:
   year: '2001'
 rrid: SCR_006801
 ---
-
 # InParanoid
 
 ## Overview

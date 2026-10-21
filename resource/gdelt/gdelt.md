@@ -8,14 +8,15 @@ contacts:
     value: https://www.gdeltproject.org/
   label: The GDELT Project
 creation_date: '2026-10-21T00:00:00Z'
-description: The GDELT Project (Global Database of Events, Language, and Tone) is an open
-  platform that monitors print, broadcast, and web news worldwide in over 100 languages and
-  renders it into structured, machine-readable data about global society. Its two core datasets
-  are the Event Database, which records physical activities across 300+ CAMEO-coded categories
-  with georeferencing and about 60 attributes per event, and the Global Knowledge Graph (GKG),
-  which extracts people, organizations, locations, themes, and emotions to provide context
-  and tone. The GDELT 2.0 data streams update every 15 minutes, are supported by Google Jigsaw,
-  and are free and open.
+description: The GDELT Project (Global Database of Events, Language, and Tone) is
+  an open platform that monitors print, broadcast, and web news worldwide in over
+  100 languages and renders it into structured, machine-readable data about global
+  society. Its two core datasets are the Event Database, which records physical activities
+  across 300+ CAMEO-coded categories with georeferencing and about 60 attributes per
+  event, and the Global Knowledge Graph (GKG), which extracts people, organizations,
+  locations, themes, and emotions to provide context and tone. The GDELT 2.0 data
+  streams update every 15 minutes, are supported by Google Jigsaw, and are free and
+  open.
 domains:
 - human populations
 - natural language processing
@@ -33,22 +34,23 @@ license:
 name: GDELT Project (Global Database of Events, Language, and Tone)
 products:
 - category: Product
-  description: Master file list indexing every 15-minute GDELT 2.0 Event, Mentions, and Global
-    Knowledge Graph update file (size, MD5, URL); the payload files are tab-delimited despite
-    a .CSV extension.
+  description: Master file list indexing every 15-minute GDELT 2.0 Event, Mentions,
+    and Global Knowledge Graph update file (size, MD5, URL); the payload files are
+    tab-delimited despite a .CSV extension.
   format: tsv
   id: gdelt.raw-data
   name: GDELT 2.0 Raw Data Files
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gdelt
+  product_file_size: 128756658
   product_url: https://data.gdeltproject.org/gdeltv2/masterfilelist.txt
   secondary_source:
   - relation_type: prov:used
     source: cameo
 - category: ProgrammingInterface
-  description: Live JSON API for full-text search across GDELT's global online news coverage,
-    returning articles, timelines, and aggregations.
+  description: Live JSON API for full-text search across GDELT's global online news
+    coverage, returning articles, timelines, and aggregations.
   format: http
   id: gdelt.doc-api
   is_public: true
@@ -58,8 +60,8 @@ products:
     source: gdelt
   product_url: https://api.gdeltproject.org/api/v2/doc/doc
 - category: Product
-  description: The full GDELT datasets in Google BigQuery (project gdelt-bq), queryable with
-    standard SQL and refreshed every 15 minutes.
+  description: The full GDELT datasets in Google BigQuery (project gdelt-bq), queryable
+    with standard SQL and refreshed every 15 minutes.
   format: http
   id: gdelt.bigquery
   name: GDELT BigQuery Dataset
@@ -68,8 +70,8 @@ products:
     source: gdelt
   product_url: https://console.cloud.google.com/bigquery?project=gdelt-bq
 - category: DocumentationProduct
-  description: Data format documentation, column headers, and codebooks for the Event Database
-    and GKG, including the CAMEO code reference.
+  description: Data format documentation, column headers, and codebooks for the Event
+    Database and GKG, including the CAMEO code reference.
   format: http
   id: gdelt.documentation
   name: GDELT Documentation and Codebooks
@@ -83,7 +85,6 @@ synonyms:
 - GKG
 version: GDELT 2.0
 ---
-
 # GDELT Project (Global Database of Events, Language, and Tone)
 
 ## Overview

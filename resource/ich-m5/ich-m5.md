@@ -10,12 +10,12 @@ contacts:
 creation_date: '2026-10-19T00:00:00Z'
 description: 'ICH M5, "Data Elements and Standards for Drug Dictionaries," was a multidisciplinary
   ICH topic that developed controlled vocabularies for dosage forms, routes of administration,
-  and units of measurement to standardize drug dictionary data; a consensus (Step 2) draft
-  was issued in 2005. It was never finalized as a standalone ICH guideline: the M5 Expert
-  Working Group was closed following finalisation of the ISO IDMP (Identification of Medicinal
-  Products) standards, and the vocabulary substance now lives in ISO IDMP and the actively
-  maintained EDQM Standard Terms. This registry entry records the historical ICH M5 vocabularies
-  as a data model.'
+  and units of measurement to standardize drug dictionary data; a consensus (Step
+  2) draft was issued in 2005. It was never finalized as a standalone ICH guideline:
+  the M5 Expert Working Group was closed following finalisation of the ISO IDMP (Identification
+  of Medicinal Products) standards, and the vocabulary substance now lives in ISO
+  IDMP and the actively maintained EDQM Standard Terms. This registry entry records
+  the historical ICH M5 vocabularies as a data model.'
 domains:
 - pharmacology
 - clinical coding
@@ -27,11 +27,11 @@ layout: resource_detail
 name: ICH M5 controlled vocabularies
 products:
 - category: GraphicalInterface
-  description: Web application for searching NHPID ingredients by name or CAS number and role
-    (homeopathic, medicinal, non-medicinal, non-NHP, component), and for searching the NHP
-    controlled vocabularies by category. Controlled vocabulary terms for dosage forms, routes
-    of administration, and units are adapted from ICH M5 lists, and ingredient naming conventions
-    from the TGA approved terminology.
+  description: Web application for searching NHPID ingredients by name or CAS number
+    and role (homeopathic, medicinal, non-medicinal, non-NHP, component), and for
+    searching the NHP controlled vocabularies by category. Controlled vocabulary terms
+    for dosage forms, routes of administration, and units are adapted from ICH M5
+    lists, and ingredient naming conventions from the TGA approved terminology.
   format: http
   id: nhpid.web
   name: NHPID Search
@@ -45,15 +45,16 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ich-m5
 - category: DataModelProduct
-  description: The 2005 ICH M5 consensus (Step 2) draft specifying data elements and standards
-    for drug dictionaries, including controlled vocabularies for routes of administration
-    and units.
+  description: The 2005 ICH M5 consensus (Step 2) draft specifying data elements and
+    standards for drug dictionaries, including controlled vocabularies for routes
+    of administration and units.
   format: pdf
   id: ich-m5.guideline
   name: ICH M5 Drug Dictionaries Guideline (2005 draft)
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ich-m5
+  product_file_size: 0
   product_url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-guideline-m5-data-elements-and-standards-drug-dictionaries_en.pdf
 - category: DataModelProduct
   description: The M5 Expert Working Group controlled vocabulary mapping route-of-administration
@@ -76,7 +77,6 @@ products:
     source: ich-m5
   product_url: https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-ewg-units-measurements-controlled-vocabulary
 ---
-
 # ICH M5 controlled vocabularies
 
 ## Overview

@@ -365,6 +365,25 @@ kgr:aero a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <http://purl.obolibrary.org/obo/aero> .
 
+kgr:afcd a schema1:DataSource ;
+    rdfs:label "Australian Food Composition Database (AFCD)" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Australian Food Composition Database (AFCD) is Food Standards Australia New Zealand's (FSANZ) reference database of the nutrient content of foods available in Australia, and is the successor to the NUTTAB series. The current edition, Release 3 (December 2025), covers 1,588 foods with up to 268 nutrient values per food. It is distributed as downloadable Excel files and through a searchable online food-search interface." ;
+    dcterms:hasVersion "Release 3" ;
+    dcterms:identifier "afcd" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:afcd.food-details,
+        kgr:afcd.nutrient-profiles,
+        kgr:afcd.search ;
+    schema1:name "Australian Food Composition Database (AFCD)" ;
+    skos:altLabel "AFCD",
+        "NUTTAB" ;
+    skos:inScheme "food",
+        "nutrition" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd> .
+
 kgr:afcs a schema1:DataSource ;
     rdfs:label "Alliance for Cellular Signaling" ;
     dcterms:created "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
@@ -2875,6 +2894,17 @@ kgr:cam-kp a schema1:KnowledgeGraph ;
     foaf:homepage <https://automat.renci.org/#/cam-kp> ;
     foaf:maker kgr:renci .
 
+kgr:cameo a schema1:DataSource ;
+    rdfs:label "Cameo" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for cameo. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "cameo" ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:gdelt.raw-data ;
+    schema1:name "Cameo" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:campbell-biology a schema1:DataSource ;
     rdfs:label "Campbell Biology" ;
     dcterms:created "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
@@ -2940,15 +2970,30 @@ kgr:cancer-registry-kg a schema1:KnowledgeGraph ;
     foaf:homepage <https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/> .
 
 kgr:candida-genome-database a schema1:DataSource ;
-    rdfs:label "Candida-genome-database" ;
+    rdfs:label "Candida Genome Database (CGD)" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for candida-genome-database. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The Candida Genome Database (CGD) is a community resource providing genomic sequence, gene structure and chromosomal-feature data, and functional annotation for Candida albicans and related pathogenic yeast species. It integrates manually curated Gene Ontology (GO) annotations, gene nomenclature and systematic identifiers, phenotype, pathway, protein, orthology, and literature data drawn from the published literature. CGD hosts the C. albicans Assembly 22 chromosome-level phased diploid assembly and offers search, BLAST, a JBrowse genome browser, and bulk downloads." ;
     dcterms:identifier "candida-genome-database" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:yeastract.pathoyeastract ;
-    schema1:name "Candida-genome-database" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:isReferencedBy <doi:10.1093/nar/gkw924> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:42374>,
+        <NCBITaxon:498019>,
+        <NCBITaxon:5476>,
+        <NCBITaxon:5478>,
+        <NCBITaxon:5480>,
+        <NCBITaxon:5482> ;
+    schema1:hasPart kgr:candida-genome-database.downloads,
+        kgr:candida-genome-database.go-annotations,
+        kgr:candida-genome-database.portal,
+        kgr:yeastract.pathoyeastract ;
+    schema1:identifier "RRID:SCR_002036" ;
+    schema1:name "Candida Genome Database (CGD)" ;
+    skos:inScheme "genomics",
+        "microbiology",
+        "model organisms",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.candidagenome.org/> .
 
 kgr:canvas a schema1:DataSource ;
     rdfs:label "CanVAS" ;
@@ -3293,6 +3338,22 @@ kgr:cebs a schema1:DataSource ;
         "toxicology" ;
     adms:status "Active" ;
     foaf:homepage <https://cebs.niehs.nih.gov/> .
+
+kgr:cell-taxonomy a schema1:DataSource ;
+    rdfs:label "Cell Taxonomy" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Cell Taxonomy is a manually curated repository of cell types and their associated marker genes across species, tissues, and conditions, hosted by the China National Center for Bioinformation (CNCB) / National Genomics Data Center. It integrates cell markers with multifaceted characterization including marker and cluster quality assessment, cross-species comparison, tissue cell composition, and marker-based cellular similarity. The release described in its 2023 paper spans 3,143 cell types and 26,613 cell markers across 34 species, drawing on 4,299 publications and single-cell profiles of about 3.5 million cells." ;
+    dcterms:identifier "cell-taxonomy" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkac816> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cell-taxonomy.download,
+        kgr:cell-taxonomy.portal ;
+    schema1:name "Cell Taxonomy" ;
+    skos:inScheme "biological systems",
+        "cell biology",
+        "single-cell analysis" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ngdc.cncb.ac.cn/celltaxonomy/> .
 
 kgr:cellcollective a schema1:DataSource ;
     rdfs:label "Cell Collective" ;
@@ -5583,6 +5644,26 @@ kgr:cropland-data-layer a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php> .
 
+kgr:cspa a schema1:DataSource ;
+    rdfs:label "Cell Surface Protein Atlas (CSPA)" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Cell Surface Protein Atlas (CSPA) is a mass spectrometry-derived resource mapping the cell surface glycoproteins (the surfaceome) of 41 human and 31 mouse cell types and cell lines, generated with Cell Surface Capture technology by the Wollscheid Lab at ETH Zurich. The combined dataset covers 1,492 human and 1,296 mouse cell surface N-glycoproteins. It is offered as a browsable database plus downloadable data matrices and targeting tools." ;
+    dcterms:identifier "cspa" ;
+    dcterms:isReferencedBy <doi:10.1371/journal.pone.0121314> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:cspa.detection-matrix,
+        kgr:cspa.portal,
+        kgr:cspa.validated-surfaceome ;
+    schema1:name "Cell Surface Protein Atlas (CSPA)" ;
+    skos:altLabel "CSPA" ;
+    skos:inScheme "biological systems",
+        "cell biology",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://wlab.ethz.ch/cspa/> .
+
 kgr:ctd a schema1:DataSource ;
     rdfs:label "Comparative Toxicogenomics Database" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -6787,6 +6868,7 @@ kgr:diseases a schema1:Aggregator ;
         kgr:diseases.portal,
         kgr:diseases.textmining-filtered,
         kgr:diseases.textmining-full,
+        kgr:distild.database,
         kgr:genecards.web.interface,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
@@ -6896,6 +6978,23 @@ kgr:disprot a schema1:DataSource ;
         "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.disprot.org> .
+
+kgr:distild a schema1:DataSource ;
+    rdfs:label "DistiLD" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "DistiLD maps disease- and trait-associated SNPs and genes from genome-wide association studies (GWAS) onto linkage disequilibrium (LD) blocks to help identify candidate disease genes. It links published GWAS results to standardized ICD-10 disease codes and uses HapMap data to partition chromosomes into LD blocks onto which SNPs and genes are mapped. The web interface let users query by disease, SNP, or gene. The homepage refused connections when checked in October 2026 and the resource appears retired." ;
+    dcterms:identifier "distild" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkr899> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:distild.database ;
+    schema1:identifier "RRID:SCR_005943" ;
+    schema1:name "DistiLD" ;
+    skos:inScheme "genetic variation",
+        "genome-wide association studies",
+        "genomics" ;
+    adms:status "unresponsive" ;
+    foaf:homepage <http://distild.jensenlab.org/> .
 
 kgr:dmd a schema1:DataSource ;
     rdfs:label "NHS dictionary of medicines and devices" ;
@@ -8545,6 +8644,7 @@ kgr:ensembl a schema1:DataSource ;
         kgr:cellmodelpassports.gene_identifiers,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
+        kgr:distild.database,
         kgr:ensembl.api.perl,
         kgr:ensembl.api.rest,
         kgr:ensembl.biomart,
@@ -10353,6 +10453,26 @@ kgr:gaz a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <http://environmentontology.github.io/gaz/> .
 
+kgr:gbd a schema1:DataSource ;
+    rdfs:label "Global Burden of Disease (IHME)" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Global Burden of Disease (GBD) study, led by the Institute for Health Metrics and Evaluation (IHME) at the University of Washington, produces comparable estimates of prevalence, incidence, mortality, and disability for hundreds of diseases, injuries, and risk factors across countries and over time. The most recent completed cycle, GBD 2021, covers 371 diseases and injuries and 88 risk factors across 204 countries and territories and 811 subnational locations for 1990–2021, and is the first cycle to incorporate the health impact of the COVID-19 pandemic." ;
+    dcterms:identifier "gbd" ;
+    dcterms:isReferencedBy <doi:10.1016/S0140-6736(24)00757-8> ;
+    dcterms:license <https://www.healthdata.org/sites/default/files/files/free-of-charge_non-commercial_user_agreement.pdf> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:gbd.compare,
+        kgr:gbd.ghdx,
+        kgr:gbd.results-tool ;
+    schema1:name "Global Burden of Disease (IHME)" ;
+    skos:altLabel "GBD",
+        "Global Burden of Disease Study" ;
+    skos:inScheme "epidemiology",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.healthdata.org/research-analysis/gbd> .
+
 kgr:gcmd a schema1:DataSource ;
     rdfs:label "NASA Global Change Master Directory (GCMD) Keywords" ;
     dcterms:created "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
@@ -10389,6 +10509,31 @@ kgr:gdc a schema1:DataSource ;
         "precision medicine" ;
     adms:status "Active" ;
     foaf:homepage <https://portal.gdc.cancer.gov> .
+
+kgr:gdelt a schema1:KnowledgeGraph ;
+    rdfs:label "GDELT Project (Global Database of Events, Language, and Tone)" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The GDELT Project (Global Database of Events, Language, and Tone) is an open platform that monitors print, broadcast, and web news worldwide in over 100 languages and renders it into structured, machine-readable data about global society. Its two core datasets are the Event Database, which records physical activities across 300+ CAMEO-coded categories with georeferencing and about 60 attributes per event, and the Global Knowledge Graph (GKG), which extracts people, organizations, locations, themes, and emotions to provide context and tone. The GDELT 2.0 data streams update every 15 minutes, are supported by Google Jigsaw, and are free and open." ;
+    dcterms:hasVersion "GDELT 2.0" ;
+    dcterms:identifier "gdelt" ;
+    dcterms:license <https://www.gdeltproject.org/about.html#termsofuse> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:gdelt.bigquery,
+        kgr:gdelt.doc-api,
+        kgr:gdelt.documentation,
+        kgr:gdelt.raw-data ;
+    schema1:name "GDELT Project (Global Database of Events, Language, and Tone)" ;
+    skos:altLabel "GDELT",
+        "GKG",
+        "Global Knowledge Graph" ;
+    skos:inScheme "environment",
+        "geographic information systems",
+        "human populations",
+        "literature",
+        "natural language processing",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.gdeltproject.org/> .
 
 kgr:gdsc a schema1:DataSource ;
     rdfs:label "Genomics of Drug Sensitivity in Cancer" ;
@@ -12378,6 +12523,7 @@ kgr:gwascatalog a schema1:DataSource ;
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:disgenet.data,
+        kgr:distild.database,
         kgr:enrichr-kg.graph,
         kgr:genecards.variant.data,
         kgr:genecards.web.interface,
@@ -12783,15 +12929,22 @@ kgr:hipsci a schema1:DataSource ;
     foaf:homepage <https://www.hipsci.org/> .
 
 kgr:hmchip a schema1:DataSource ;
-    rdfs:label "Hmchip" ;
+    rdfs:label "hmChIP" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for hmchip. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "hmChIP is a database and web server for exploring publicly available genome-wide chromatin immunoprecipitation (ChIP-seq and ChIP-chip) data in human and mouse. Users query the database to retrieve protein-DNA binding intensities from individual samples for user-supplied genomic regions, and cluster samples and regions to compare binding patterns across cell types. At publication (2011) it held 2,016 samples from 492 experiments covering 170 proteins. The web server and download pages were unreachable (HTTP 500 and HTTP 403) when checked in October 2026." ;
     dcterms:identifier "hmchip" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:htridb.downloads ;
-    schema1:name "Hmchip" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btr156> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:hmchip.webserver,
+        kgr:htridb.downloads ;
+    schema1:identifier "RRID:SCR_005407" ;
+    schema1:name "hmChIP" ;
+    skos:inScheme "gene regulation",
+        "genomics" ;
+    adms:status "unresponsive" ;
+    foaf:homepage <http://jilab.biostat.jhsph.edu/database/cgi-bin/hmChIP.pl> .
 
 kgr:hmdb a schema1:Aggregator ;
     rdfs:label "Human Metabolome Database" ;
@@ -13940,16 +14093,22 @@ kgr:icgc a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.icgc-argo.org/> .
 
-kgr:ich-m5 a schema1:DataSource ;
-    rdfs:label "Ich-m5" ;
+kgr:ich-m5 a schema1:DataModel ;
+    rdfs:label "ICH M5 controlled vocabularies" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for ich-m5. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "ICH M5, \"Data Elements and Standards for Drug Dictionaries,\" was a multidisciplinary ICH topic that developed controlled vocabularies for dosage forms, routes of administration, and units of measurement to standardize drug dictionary data; a consensus (Step 2) draft was issued in 2005. It was never finalized as a standalone ICH guideline: the M5 Expert Working Group was closed following finalisation of the ISO IDMP (Identification of Medicinal Products) standards, and the vocabulary substance now lives in ISO IDMP and the actively maintained EDQM Standard Terms. This registry entry records the historical ICH M5 vocabularies as a data model." ;
     dcterms:identifier "ich-m5" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:nhpid.web ;
-    schema1:name "Ich-m5" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ich-m5.guideline,
+        kgr:ich-m5.routes-cv,
+        kgr:ich-m5.units-cv,
+        kgr:nhpid.web ;
+    schema1:name "ICH M5 controlled vocabularies" ;
+    skos:inScheme "clinical",
+        "clinical coding",
+        "pharmacology" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-data-elements-standards-drug-dictionaries> .
 
 kgr:ickg a schema1:KnowledgeGraph ;
     rdfs:label "Immune Cell Knowledge Graph" ;
@@ -14540,18 +14699,25 @@ kgr:inoh a schema1:DataSource ;
     foaf:homepage <http://www.inoh.org/> .
 
 kgr:inparanoid a schema1:DataSource ;
-    rdfs:label "Inparanoid" ;
+    rdfs:label "InParanoid" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for inparanoid. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "InParanoid is an algorithm and database that detects orthologs and in-paralogs between two species by pairwise whole-proteome comparison, seeding ortholog clusters from reciprocal best sequence matches and then adding species-specific in-paralogs without multiple alignments or phylogenetic trees. The current release, InParanoiDB 9, uses the InParanoid-DIAMOND pipeline over 640 organisms (447 eukaryotic, 158 bacterial, and 35 archaeal proteomes) and provides ortholog groups for both full-length proteins and protein domains. It is developed by Erik Sonnhammer's group at Stockholm University (SciLifeLab / Stockholm Bioinformatics Centre)." ;
     dcterms:identifier "inparanoid" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1006/jmbi.2000.5197>,
+        <doi:10.1016/j.jmb.2023.168001> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:hcop.all-seven-column,
         kgr:hcop.all-sixteen-column,
         kgr:hcop.species-downloads,
-        kgr:hcop.web ;
-    schema1:name "Inparanoid" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:hcop.web,
+        kgr:inparanoid.downloads,
+        kgr:inparanoid.portal ;
+    schema1:identifier "RRID:SCR_006801" ;
+    schema1:name "InParanoid" ;
+    skos:inScheme "genomics",
+        "molecular evolution" ;
+    adms:status "Active" ;
+    foaf:homepage <https://inparanoidb.sbc.su.se/> .
 
 kgr:insight a schema1:KnowledgeGraph ;
     rdfs:label "INSIGHT" ;
@@ -15432,7 +15598,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-20T23:03:21+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-21T15:54:26+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -16825,6 +16991,26 @@ kgr:medi a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/marcello-deluca/medic> .
 
+kgr:mediacloud a schema1:DataSource ;
+    rdfs:label "Media Cloud" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Media Cloud is an open-source media research platform for studying the flow of online news and information worldwide. It maintains a database of over a billion news stories and a directory of more than 25,000 media sources, with open tools to search, aggregate, analyze, and visualize media coverage of topics. It is run as a consortium of the Media Ecosystems Analysis Group, the University of Massachusetts Amherst, and Northeastern University, and was originally incubated at Harvard University and MIT." ;
+    dcterms:identifier "mediacloud" ;
+    dcterms:isReferencedBy <doi:10.1609/icwsm.v15i1.18127> ;
+    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:mediacloud.api-client,
+        kgr:mediacloud.directory,
+        kgr:mediacloud.search ;
+    schema1:name "Media Cloud" ;
+    doap:repository <https://github.com/mediacloud> ;
+    skos:inScheme "human populations",
+        "literature",
+        "natural language processing",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.mediacloud.org/> .
+
 kgr:mediadive a schema1:DataSource ;
     rdfs:label "MediaDive" ;
     dcterms:created "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
@@ -17774,18 +17960,27 @@ kgr:mixs a schema1:DataModel ;
     foaf:homepage <https://w3id.org/mixs> .
 
 kgr:mlpcn-profiling a schema1:DataSource ;
-    rdfs:label "Mlpcn-profiling" ;
+    rdfs:label "MLPCN Profiling Data" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for mlpcn-profiling. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "MLPCN Profiling Data is a Broad Institute reference dataset of high-dimensional cellular profiling of small molecules screened through the NIH Molecular Libraries Probe Production Centers Network (MLPCN). It contains multiplex-cytological (image-based, Cell Painting-style) and gene-expression profiles for roughly 30,000 compounds in human U2OS cells, spanning diversity-oriented synthesis compounds, chemically diverse library compounds, and known bioactive landmark compounds. It was generated to test whether diversity of biological measurements, rather than of chemical structure, better predicts phenotypic screening performance (Wawer et al., 2014)." ;
     dcterms:identifier "mlpcn-profiling" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:sep-l1000.maccs-fingerprints,
+    dcterms:isReferencedBy <doi:10.1073/pnas.1410933111> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:mlpcn-profiling.full-dataset,
+        kgr:mlpcn-profiling.pnas2014-dataset,
+        kgr:mlpcn-profiling.portal,
+        kgr:sep-l1000.maccs-fingerprints,
         kgr:sep-l1000.mlpcn-morphology,
         kgr:sep-l1000.portal,
         kgr:sep-l1000.smiles-metadata ;
-    schema1:name "Mlpcn-profiling" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "MLPCN Profiling Data" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "drug discovery",
+        "high-throughput screening" ;
+    adms:status "Orphaned" ;
+    foaf:homepage <https://www.broadinstitute.org/chembio-therapeutics/mlpcnprofiling> .
 
 kgr:mmo a schema1:Ontology ;
     rdfs:label "Measurement method ontology" ;
@@ -17882,16 +18077,28 @@ kgr:mod a schema1:Ontology ;
     foaf:homepage <http://www.psidev.info/MOD> .
 
 kgr:modencode a schema1:DataSource ;
-    rdfs:label "Modencode" ;
+    rdfs:label "modENCODE" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for modencode. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "modENCODE (model organism ENCyclopedia Of DNA Elements) was an NHGRI-funded consortium, begun in 2007, created to systematically identify and annotate the functional genomic elements (genes, transcripts, and regulatory, chromatin, and replication elements) in the genomes of Drosophila melanogaster and Caenorhabditis elegans using high-throughput approaches including ChIP-seq and RNA-seq. The consortium generated hundreds of genome-wide datasets and concluded around 2012. Its original web portals were retired in 2023 after funding ended, and its data are now distributed through FlyBase, WormBase, and the ENCODE Data Coordination Center." ;
     dcterms:identifier "modencode" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1126/science.1196914>,
+        <doi:10.1126/science.1198374> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:6239>,
+        <NCBITaxon:7227> ;
     schema1:hasPart kgr:gtrd.chip-seq_peaks,
-        kgr:gtrd.downloads ;
-    schema1:name "Modencode" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:gtrd.downloads,
+        kgr:modencode.encode-portal,
+        kgr:modencode.fly-suppl-2010,
+        kgr:modencode.portal ;
+    schema1:identifier "RRID:SCR_006206" ;
+    schema1:name "modENCODE" ;
+    skos:inScheme "gene regulation",
+        "genomics",
+        "model organisms",
+        "organisms" ;
+    adms:status "Orphaned" ;
+    foaf:homepage <http://data.modencode.org/> .
 
 kgr:modomics a schema1:DataSource ;
     rdfs:label "MODOMICS" ;
@@ -19409,6 +19616,25 @@ kgr:ngdc a schema1:Aggregator ;
         "genomics" ;
     adms:status "Active" ;
     foaf:homepage <https://ngdc.cncb.ac.cn/> .
+
+kgr:nhanes a schema1:DataSource ;
+    rdfs:label "NHANES (National Health and Nutrition Examination Survey)" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "NHANES, the National Health and Nutrition Examination Survey, is a program of the CDC's National Center for Health Statistics that assesses the health and nutritional status of adults and children in the United States. It is unusual in combining household interviews with standardized physical examinations and laboratory tests. Run continuously since 1999, it uses a multistage probability sample of the non-institutionalized US population and releases public-use data in two-year cycles." ;
+    dcterms:identifier "nhanes" ;
+    dcterms:license <https://www.usa.gov/government-works> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:nhanes.continuous,
+        kgr:nhanes.data,
+        kgr:nhanes.tutorials ;
+    schema1:identifier "RRID:SCR_013201" ;
+    schema1:name "NHANES (National Health and Nutrition Examination Survey)" ;
+    skos:inScheme "epidemiology",
+        "nutrition",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.cdc.gov/nchs/nhanes/> .
 
 kgr:nhpid a schema1:DataSource ;
     rdfs:label "Natural Health Products Ingredients Database" ;
@@ -22104,18 +22330,27 @@ kgr:orthodb a schema1:DataSource ;
     foaf:maker kgr:sib .
 
 kgr:orthomcl a schema1:DataSource ;
-    rdfs:label "Orthomcl" ;
+    rdfs:label "OrthoMCL DB" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for orthomcl. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "OrthoMCL is a genome-scale algorithm and database for grouping orthologous protein sequences across eukaryotic and prokaryotic proteomes. It computes all-against-all reciprocal best BLAST hits, normalizes the similarity scores, and clusters the resulting protein-pair graph with the Markov Cluster (MCL) algorithm to build ortholog groups. OrthoMCL DB is maintained by VEuPathDB; its OrthoMCL 7 content covers millions of proteins from hundreds of complete proteomes spanning the tree of life, clustered into hundreds of thousands of ortholog groups." ;
     dcterms:identifier "orthomcl" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkj123>,
+        <doi:10.1101/gr.1224503> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:hcop.all-seven-column,
         kgr:hcop.all-sixteen-column,
         kgr:hcop.species-downloads,
-        kgr:hcop.web ;
-    schema1:name "Orthomcl" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:hcop.web,
+        kgr:orthomcl.downloads,
+        kgr:orthomcl.groups,
+        kgr:orthomcl.portal,
+        kgr:orthomcl.protein-sequences ;
+    schema1:identifier "RRID:SCR_007839" ;
+    schema1:name "OrthoMCL DB" ;
+    skos:inScheme "genomics",
+        "molecular evolution" ;
+    adms:status "Active" ;
+    foaf:homepage <https://orthomcl.org/> .
 
 kgr:osv a schema1:DataSource ;
     rdfs:label "OSV (Open Source Vulnerabilities)" ;
@@ -23618,18 +23853,25 @@ kgr:phosphositeplus a schema1:Aggregator ;
     foaf:homepage <https://www.phosphosite.org/> .
 
 kgr:phylomedb a schema1:DataSource ;
-    rdfs:label "Phylomedb" ;
+    rdfs:label "PhylomeDB" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for phylomedb. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "PhylomeDB is a public database of phylomes, the complete collections of annotated gene phylogenies (homologous sequences, their alignments, and reconstructed trees) for a set of species. The current release, version 5, provides 534 phylomes comprising more than 8 million trees and covers homology relationships for genes across more than 6,000 species. From these trees PhylomeDB derives genome-wide orthology and paralogy predictions. It is maintained by the Comparative Genomics group at the Barcelona Supercomputing Center." ;
     dcterms:identifier "phylomedb" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkab966> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:hcop.all-seven-column,
         kgr:hcop.all-sixteen-column,
         kgr:hcop.species-downloads,
-        kgr:hcop.web ;
-    schema1:name "Phylomedb" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:hcop.web,
+        kgr:phylomedb.downloads,
+        kgr:phylomedb.portal ;
+    schema1:identifier "RRID:SCR_007850" ;
+    schema1:name "PhylomeDB" ;
+    skos:inScheme "genomics",
+        "molecular evolution" ;
+    adms:status "Active" ;
+    foaf:homepage <https://phylomedb.org/> .
 
 kgr:physiome-model-repository a schema1:DataSource ;
     rdfs:label "Physiome Model Repository" ;
@@ -24599,6 +24841,21 @@ kgr:prokn a schema1:KnowledgeGraph ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://research.bioinformatics.udel.edu/ProKN/> .
+
+kgr:propan a schema1:DataSource ;
+    rdfs:label "ProPan" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ProPan is a comprehensive database for profiling the pan-genome dynamics of prokaryotes, hosted by the China National Center for Bioinformation (CNCB) / National Genomics Data Center. It provides post-processed gene-content data, functional annotation, and multi-dimensional analyses across bacterial and archaeal species, including orthologous gene clustering, nucleotide diversity, COG enrichment, metabolism analyses, antibiotic-resistance gene prediction, and KEGG and PPI mapping. It covers 1,504 species (1,481 bacterial and 23 archaeal) spanning 51,882 strain genomes sourced from NCBI." ;
+    dcterms:identifier "propan" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkac832> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:propan.downloads,
+        kgr:propan.portal ;
+    schema1:name "ProPan" ;
+    skos:inScheme "genomics",
+        "microbiology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ngdc.cncb.ac.cn/propan/home> .
 
 kgr:propreo a schema1:Ontology ;
     rdfs:label "Proteomics data and process provenance" ;
@@ -29021,15 +29278,22 @@ kgr:tflink a schema1:Aggregator ;
     foaf:homepage <https://tflink.net/> .
 
 kgr:tga-approved-terminology a schema1:DataSource ;
-    rdfs:label "Tga-approved-terminology" ;
+    rdfs:label "TGA Approved Terminology for Therapeutic Goods" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for tga-approved-terminology. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "TGA Approved Terminology for Therapeutic Goods is the Australian Therapeutic Goods Administration's official, standardized vocabulary for describing therapeutic goods in applications for the Australian Register of Therapeutic Goods (ARTG) and on product labels. It defines Australian Approved Names for ingredients (active ingredients, excipients, components, and cells and tissues) together with code-table terms for presentation attributes such as dosage forms, routes of administration, and containers. The authoritative lists are maintained by the TGA and published through TGA Business Services. (The TGA website blocks automated requests, so the homepage URL was confirmed via web search rather than a direct fetch.)" ;
     dcterms:identifier "tga-approved-terminology" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:nhpid.web ;
-    schema1:name "Tga-approved-terminology" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:license <https://www.tga.gov.au/about/website-copyright> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:nhpid.web,
+        kgr:tga-approved-terminology.guidance-pdf,
+        kgr:tga-approved-terminology.publication,
+        kgr:tga-approved-terminology.where-to-find ;
+    schema1:name "TGA Approved Terminology for Therapeutic Goods" ;
+    skos:inScheme "chemistry and biochemistry",
+        "natural products",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods> .
 
 kgr:tgma a schema1:Ontology ;
     rdfs:label "Mosquito gross anatomy ontology" ;
@@ -30621,18 +30885,34 @@ kgr:vectology a schema1:Resource ;
     foaf:homepage <http://vectology.mrcieu.ac.uk/> .
 
 kgr:vgnc a schema1:DataSource ;
-    rdfs:label "Vgnc" ;
+    rdfs:label "Vertebrate Gene Nomenclature Committee (VGNC)" ;
     dcterms:created "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for vgnc. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The Vertebrate Gene Nomenclature Committee (VGNC) assigns standardized, HGNC-style approved gene symbols and names to genes in selected vertebrate species that lack a dedicated nomenclature committee, naming genes in line with their human homologs. A sister project of the HGNC, it began with chimpanzee and has expanded to species including rhesus macaque, dog, cat, horse, cattle, and pig. VGNC shares infrastructure with genenames.org and coordinates with the existing mouse, rat, chicken, Xenopus, and zebrafish nomenclature committees." ;
     dcterms:identifier "vgnc" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkaa980> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9544>,
+        <NCBITaxon:9598>,
+        <NCBITaxon:9615>,
+        <NCBITaxon:9685>,
+        <NCBITaxon:9796>,
+        <NCBITaxon:9823>,
+        <NCBITaxon:9913> ;
     schema1:hasPart kgr:hcop.all-seven-column,
         kgr:hcop.all-sixteen-column,
         kgr:hcop.species-downloads,
-        kgr:hcop.web ;
-    schema1:name "Vgnc" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:hcop.web,
+        kgr:vgnc.downloads,
+        kgr:vgnc.rest-api,
+        kgr:vgnc.search ;
+    schema1:identifier "RRID:SCR_017514" ;
+    schema1:name "Vertebrate Gene Nomenclature Committee (VGNC)" ;
+    skos:inScheme "genomics",
+        "model organisms",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://vertebrate.genenames.org/> .
 
 kgr:vhog a schema1:Ontology ;
     rdfs:label "Vertebrate Homologous Ontology Group Ontology" ;
@@ -31212,6 +31492,26 @@ kgr:wormbase a schema1:DataSource ;
         "organisms" ;
     adms:status "Active" ;
     foaf:homepage <https://wormbase.org/> .
+
+kgr:wqx a schema1:DataModel ;
+    rdfs:label "Water Quality Exchange (WQX)" ;
+    dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Water Quality Exchange (WQX) is the US EPA's national data format and submission mechanism for sharing water quality monitoring data. State, tribal, and federal agencies, local governments, universities, and non-governmental organizations submit monitoring locations, sampling activities, and results, which populate EPA's WQX database. Data can be prepared with spreadsheet templates, submitted through the WQXWeb application, or sent as WQX XML through the EPA Exchange Network. WQX data are published to the public through the Water Quality Portal, which combines them with USGS NWIS data. Version 3.0 is current and version 2.2 is also supported." ;
+    dcterms:hasVersion "3.0" ;
+    dcterms:identifier "wqx" ;
+    dcterms:license <https://www.usa.gov/government-works> ;
+    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:wqx.cdx,
+        kgr:wqx.schema,
+        kgr:wqx.upload-guidance,
+        kgr:wqx.web-templates ;
+    schema1:name "Water Quality Exchange (WQX)" ;
+    skos:altLabel "WQX",
+        "Water Quality eXchange" ;
+    skos:inScheme "environment",
+        "water resources" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.epa.gov/waterdata/water-quality-data> .
 
 kgr:xao a schema1:Ontology ;
     rdfs:label "Xenopus Anatomy Ontology" ;
@@ -31853,6 +32153,21 @@ kgr:aero.owl a schema1:OntologyProduct ;
     rdfs:label "aero.owl" ;
     dcterms:description "Adverse Event Reporting Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/aero.owl> .
+
+kgr:afcd.food-details a schema1:Product ;
+    rdfs:label "AFCD Release 3 Food Details" ;
+    dcterms:description "Per-food descriptive details for the AFCD Release 3 foods, as an Excel file." ;
+    schema1:url <https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Food%20Details.xlsx> .
+
+kgr:afcd.nutrient-profiles a schema1:Product ;
+    rdfs:label "AFCD Release 3 Nutrient Profiles" ;
+    dcterms:description "Nutrient values for each food in AFCD Release 3, as an Excel file." ;
+    schema1:url <https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx> .
+
+kgr:afcd.search a schema1:GraphicalInterface ;
+    rdfs:label "AFCD Searchable Database" ;
+    dcterms:description "Interactive online search of the Australian Food Composition Database by food, alphabetical list, food group, or nutrient." ;
+    schema1:url <https://afcd.foodstandards.gov.au/> .
 
 kgr:afcs.molecule-pages a schema1:GraphicalInterface ;
     rdfs:label "AfCS-Nature Molecule Pages" ;
@@ -33322,6 +33637,21 @@ kgr:cancer-registry-kg.visualization a schema1:GraphicalInterface ;
     dcterms:description "Interactive graph visualization service using Gephi with Semantic Web Importer plugin to query Virtuoso SPARQL endpoint. Provides high-level and low-level visualizations with graph algorithms (PageRank, connected components, modularity) for pattern discovery and anomaly detection." ;
     schema1:url <https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/> .
 
+kgr:candida-genome-database.downloads a schema1:Product ;
+    rdfs:label "CGD Download Area" ;
+    dcterms:description "CGD bulk download area with per-species subdirectories for genome sequence (FASTA), gene models (GFF), chromosomal feature tables, GO annotations, homology, pathways, phenotype, and protein data." ;
+    schema1:url <https://www.candidagenome.org/download/> .
+
+kgr:candida-genome-database.go-annotations a schema1:Product ;
+    rdfs:label "CGD GO Gene Association Files" ;
+    dcterms:description "Per-species GO gene-association (GAF) files, including the combined gene_association.cgd.gz, updated weekly." ;
+    schema1:url <https://www.candidagenome.org/download/go/> .
+
+kgr:candida-genome-database.portal a schema1:GraphicalInterface ;
+    rdfs:label "CGD Web Portal" ;
+    dcterms:description "The CGD web portal, with gene pages, text and sequence search, BLAST, and a JBrowse genome browser for Candida albicans and related pathogenic yeast species." ;
+    schema1:url <https://www.candidagenome.org/> .
+
 kgr:canvas.backbone a schema1:Product ;
     rdfs:label "CanVAS backbone genotypes" ;
     dcterms:description "The CanVAS backbone genotype set, comprising sites genotyped in at least 90% of samples prior to imputation, as a PLINK binary fileset in CanFam4 coordinates." ;
@@ -33531,6 +33861,16 @@ kgr:cebs.web a schema1:GraphicalInterface ;
     rdfs:label "CEBS Search Interface" ;
     dcterms:description "Web interface for searching and browsing CEBS toxicology data" ;
     schema1:url <https://cebs.niehs.nih.gov/cebs/search> .
+
+kgr:cell-taxonomy.download a schema1:Product ;
+    rdfs:label "Cell Taxonomy Cell Types and Markers" ;
+    dcterms:description "Bulk download of the curated cell types and their associated marker genes as a single tab-delimited plain-text table." ;
+    schema1:url <https://download.cncb.ac.cn/celltaxonomy/Cell_Taxonomy_resource.txt> .
+
+kgr:cell-taxonomy.portal a schema1:GraphicalInterface ;
+    rdfs:label "Cell Taxonomy Browser" ;
+    dcterms:description "Web interface to browse and search curated cell types, markers, tissues, species, and single-cell studies, with Cell Type Comparator and Predictor tools." ;
+    schema1:url <https://ngdc.cncb.ac.cn/celltaxonomy/> .
 
 kgr:cellcollective.learn a schema1:GraphicalInterface ;
     rdfs:label "Cell Collective Learn" ;
@@ -34873,6 +35213,21 @@ kgr:cropland-data-layer.croplandcros a schema1:GraphicalInterface ;
     rdfs:label "CroplandCROS Viewer" ;
     dcterms:description "CroplandCROS web mapping application for interactive viewing, querying, and exporting Cropland Data Layer crop-type raster data." ;
     schema1:url <https://croplandcros.scinet.usda.gov/> .
+
+kgr:cspa.detection-matrix a schema1:Product ;
+    rdfs:label "CSPA Protein Detection Matrix" ;
+    dcterms:description "Excel workbook with the human (1,492 proteins) and mouse (1,296 proteins) detection matrices, per-cell-type protein counts, and log2-scaled relative quantities." ;
+    schema1:url <https://wollscheidlab.org/CSPA/data/S1_File.xlsx> .
+
+kgr:cspa.portal a schema1:GraphicalInterface ;
+    rdfs:label "CSPA Portal" ;
+    dcterms:description "The CSPA web portal for browsing the cell surface protein atlas and reaching all downloads (current host wollscheidlab.org/CSPA; the ETH wlab.ethz.ch/cspa URL redirects here)." ;
+    schema1:url <https://wollscheidlab.org/CSPA> .
+
+kgr:cspa.validated-surfaceome a schema1:Product ;
+    rdfs:label "CSPA Validated Surfaceome Proteins" ;
+    dcterms:description "Annotated human and mouse surfaceome protein lists and the identified N-glycopeptides." ;
+    schema1:url <https://wollscheidlab.org/CSPA/data/S2_File.xlsx> .
 
 kgr:ctd.batch_query a schema1:GraphicalInterface ;
     rdfs:label "CTD Batch Query" ;
@@ -37666,6 +38021,21 @@ kgr:gaz.owl a schema1:OntologyProduct ;
     dcterms:description "Gazetteer in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/gaz.owl> .
 
+kgr:gbd.compare a schema1:GraphicalInterface ;
+    rdfs:label "GBD Compare" ;
+    dcterms:description "Interactive visualization (treemaps, arrow diagrams, maps) for exploring and comparing causes of death and disability across locations and time." ;
+    schema1:url <https://vizhub.healthdata.org/gbd-compare/> .
+
+kgr:gbd.ghdx a schema1:Product ;
+    rdfs:label "Global Health Data Exchange (GHDx)" ;
+    dcterms:description "IHME's data catalog cataloging GBD and other global health datasets with metadata and download links." ;
+    schema1:url <https://ghdx.healthdata.org/> .
+
+kgr:gbd.results-tool a schema1:GraphicalInterface ;
+    rdfs:label "GBD Results Tool" ;
+    dcterms:description "Interactive query and download tool for GBD estimates (deaths, DALYs, YLDs, YLLs, prevalence, incidence) by location, year, cause, risk, age, and sex." ;
+    schema1:url <https://vizhub.healthdata.org/gbd-results/> .
+
 kgr:gbif a schema1:DataSource,
         "Organization" ;
     rdfs:label "Global Biodiversity Information Facility (GBIF)" ;
@@ -37761,6 +38131,21 @@ kgr:gdc.portal a schema1:GraphicalInterface ;
     rdfs:label "GDC Data Portal" ;
     dcterms:description "Main GDC web portal for interactive exploration of projects, cohorts, and files." ;
     schema1:url <https://portal.gdc.cancer.gov/> .
+
+kgr:gdelt.bigquery a schema1:Product ;
+    rdfs:label "GDELT BigQuery Dataset" ;
+    dcterms:description "The full GDELT datasets in Google BigQuery (project gdelt-bq), queryable with standard SQL and refreshed every 15 minutes." ;
+    schema1:url <https://console.cloud.google.com/bigquery?project=gdelt-bq> .
+
+kgr:gdelt.doc-api a schema1:ProgrammingInterface ;
+    rdfs:label "GDELT DOC 2.0 API" ;
+    dcterms:description "Live JSON API for full-text search across GDELT's global online news coverage, returning articles, timelines, and aggregations." ;
+    schema1:url <https://api.gdeltproject.org/api/v2/doc/doc> .
+
+kgr:gdelt.documentation a schema1:DocumentationProduct ;
+    rdfs:label "GDELT Documentation and Codebooks" ;
+    dcterms:description "Data format documentation, column headers, and codebooks for the Event Database and GKG, including the CAMEO code reference." ;
+    schema1:url <https://www.gdeltproject.org/data.html#documentation> .
 
 kgr:gdsc.site a schema1:GraphicalInterface ;
     rdfs:label "GDSC Web Interface" ;
@@ -38834,6 +39219,11 @@ kgr:hipsci.data-browser a schema1:GraphicalInterface ;
     dcterms:description "HipSci data browser listing assay data files per cell line (assay, description, instrument, archive and download link), donor tables and the most recent managed-access EGA datasets per cohort and assay, with CSV and TSV export of the file and donor tables." ;
     schema1:url <https://www.hipsci.org/#/data> .
 
+kgr:hmchip.webserver a schema1:GraphicalInterface ;
+    rdfs:label "hmChIP Web Server" ;
+    dcterms:description "Web server and query interface to the hmChIP database, retrieving protein-DNA binding intensities from individual human and mouse ChIP-seq and ChIP-chip samples for user-supplied genomic regions, with clustering of samples and regions. The server returned HTTP 500 and was unreachable when checked in October 2026." ;
+    schema1:url <http://jilab.biostat.jhsph.edu/database/cgi-bin/hmChIP.pl> .
+
 kgr:hmdb.fasta.enzymes a schema1:Product ;
     rdfs:label "HMDB Enzyme Protein Sequences (FASTA)" ;
     dcterms:description "All metabolite metabolizing enzyme protein sequences (FASTA)" ;
@@ -39559,6 +39949,21 @@ kgr:icgc.platform a schema1:GraphicalInterface ;
     dcterms:description "ICGC ARGO data platform for browsing, querying, and accessing uniformly analyzed cancer genomics and clinical data aligned to GRCh38." ;
     schema1:url <https://platform.icgc-argo.org/> .
 
+kgr:ich-m5.guideline a schema1:DataModelProduct ;
+    rdfs:label "ICH M5 Drug Dictionaries Guideline (2005 draft)" ;
+    dcterms:description "The 2005 ICH M5 consensus (Step 2) draft specifying data elements and standards for drug dictionaries, including controlled vocabularies for routes of administration and units." ;
+    schema1:url <https://www.ema.europa.eu/en/documents/scientific-guideline/ich-guideline-m5-data-elements-and-standards-drug-dictionaries_en.pdf> .
+
+kgr:ich-m5.routes-cv a schema1:DataModelProduct ;
+    rdfs:label "ICH M5 Routes of Administration Controlled Vocabulary" ;
+    dcterms:description "The M5 Expert Working Group controlled vocabulary mapping route-of-administration terms, with regional equivalents and E2B codes." ;
+    schema1:url <https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-ewg-routes-administration-controlled-vocabulary> .
+
+kgr:ich-m5.units-cv a schema1:DataModelProduct ;
+    rdfs:label "ICH M5 Units and Measurements Controlled Vocabulary" ;
+    dcterms:description "The M5 Expert Working Group controlled vocabulary for units and measurements used in drug dictionaries." ;
+    schema1:url <https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-ewg-units-measurements-controlled-vocabulary> .
+
 kgr:ickg.code a schema1:ProcessProduct ;
     rdfs:label "ICKG code repository" ;
     dcterms:description "Source code and models used for constructing and using Immune Cell Knowledge Graphs." ;
@@ -39861,6 +40266,16 @@ kgr:inoh.pathways a schema1:Product ;
     rdfs:label "INOH Pathway Data" ;
     dcterms:description "Manually curated signal transduction and metabolic pathway data, distributed in INOH XML and BioPAX (Level 2 and Level 3) formats." ;
     schema1:url <http://www.inoh.org/> .
+
+kgr:inparanoid.downloads a schema1:Product ;
+    rdfs:label "InParanoiDB 9 Bulk Downloads" ;
+    dcterms:description "Download area serving proteomes, species lists, and pairwise ortholog and domain files (as tab-delimited SQLtable text or OrthoXML), plus previous versions back to v2.0." ;
+    schema1:url <https://inparanoidb.sbc.su.se/download> .
+
+kgr:inparanoid.portal a schema1:GraphicalInterface ;
+    rdfs:label "InParanoiDB 9 Web Portal" ;
+    dcterms:description "Browse and search interface for ortholog groups and in-paralogs, for both full-length proteins and protein domains, across 640 organisms." ;
+    schema1:url <https://inparanoidb.sbc.su.se/> .
 
 kgr:insight.portal a schema1:GraphicalInterface ;
     rdfs:label "INSIGHT Project Portal" ;
@@ -41193,6 +41608,21 @@ kgr:medi.release a schema1:Product ;
     dcterms:description "Latest medic release of the MeDI dataset and related regulatory source extracts" ;
     schema1:url <https://github.com/marcello-deluca/medic/releases/tag/v1.0.1> .
 
+kgr:mediacloud.api-client a schema1:Product ;
+    rdfs:label "Media Cloud Python API Client" ;
+    dcterms:description "Public Python client library (PyPI package `mediacloud`) for the Media Cloud API, to run searches and browse the source and collection directory." ;
+    schema1:url <https://github.com/mediacloud/api-client> .
+
+kgr:mediacloud.directory a schema1:GraphicalInterface ;
+    rdfs:label "Media Cloud Directory" ;
+    dcterms:description "Searchable directory of the 25,000+ news media sources, collections, and feeds indexed by Media Cloud." ;
+    schema1:url <https://search.mediacloud.org/directory> .
+
+kgr:mediacloud.search a schema1:GraphicalInterface ;
+    rdfs:label "Media Cloud Search" ;
+    dcterms:description "Web tool for retrieving online news stories and analyzing and visualizing how digital news covers a topic across the Online News Archive; free with an account." ;
+    schema1:url <https://search.mediacloud.org/> .
+
 kgr:medispan-gpi.commercial_data a schema1:Product ;
     rdfs:label "Medi-Span GPI Commercial Data" ;
     dcterms:description "Commercial Medi-Span GPI terminology data maintained by Wolters Kluwer for drug concept identification and therapeutic classification" ;
@@ -41751,6 +42181,21 @@ kgr:mixs.model a schema1:DataModelProduct ;
     dcterms:description "OWL release of mixs" ;
     schema1:url <https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl> .
 
+kgr:mlpcn-profiling.full-dataset a schema1:Product ;
+    rdfs:label "MLP-sponsored Profiling Data" ;
+    dcterms:description "Complete archive of multiplex-cytological and gene-expression profiling data for the MLP-sponsored compound sets." ;
+    schema1:url <https://data.broadinstitute.org/csoft/mlpcn/Broad.HG005032.ProfilingData.zip> .
+
+kgr:mlpcn-profiling.pnas2014-dataset a schema1:Product ;
+    rdfs:label "PNAS 2014 Profiling Data" ;
+    dcterms:description "The profiling data subset accompanying Wawer et al. 2014 (PNAS)." ;
+    schema1:url <https://data.broadinstitute.org/csoft/mlpcn/Broad.PNAS2014.ProfilingData.zip> .
+
+kgr:mlpcn-profiling.portal a schema1:GraphicalInterface ;
+    rdfs:label "MLPCN Profiling Data Portal" ;
+    dcterms:description "Broad Institute landing page describing the profiling assays, compound sets, and data download links." ;
+    schema1:url <https://www.broadinstitute.org/chembio-therapeutics/mlpcnprofiling> .
+
 kgr:mmo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "MMO KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Measurement Method Ontology (MMO), produced by KG-Bioportal from the BioPortal submission. The archive contains MMO_nodes.tsv and MMO_edges.tsv." ;
@@ -41815,6 +42260,21 @@ kgr:mod.owl a schema1:OntologyProduct ;
     rdfs:label "PSI-MOD.owl" ;
     dcterms:description "PSI-MOD Ontology, OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/mod.owl> .
+
+kgr:modencode.encode-portal a schema1:GraphicalInterface ;
+    rdfs:label "modENCODE Data at the ENCODE Portal" ;
+    dcterms:description "ENCODE Data Coordination Center experiment matrix hosting released modENCODE (and modERN) datasets for Drosophila melanogaster and Caenorhabditis elegans." ;
+    schema1:url <https://www.encodeproject.org/search/?type=Experiment&internal_tags=ENCORTEX> .
+
+kgr:modencode.fly-suppl-2010 a schema1:Product ;
+    rdfs:label "modENCODE Drosophila 2010 Supplemental Data" ;
+    dcterms:description "Tar archive of supplementary files from the Drosophila modENCODE 2010 Science paper (PMID 21177974)." ;
+    schema1:url <https://s3.us-west-2.amazonaws.com/data.modencode.org/modencode_Science-2010_fly_suppl_PMID21177974.tar> .
+
+kgr:modencode.portal a schema1:GraphicalInterface ;
+    rdfs:label "modENCODE Data Portal" ;
+    dcterms:description "Static landing page for the retired modENCODE project, linking to the successor data repositories (FlyBase, WormBase, and the ENCODE Portal) that now host the project's data." ;
+    schema1:url <http://data.modencode.org/> .
 
 kgr:modomics.annotation a schema1:DocumentationProduct ;
     rdfs:label "MODOMICS Data Annotation Information" ;
@@ -42647,6 +43107,21 @@ kgr:ngdc.portal a schema1:GraphicalInterface ;
     rdfs:label "NGDC Portal" ;
     dcterms:description "Main NGDC web portal, linking to all NGDC databases, tools and submission services, with cross-database search." ;
     schema1:url <https://ngdc.cncb.ac.cn/> .
+
+kgr:nhanes.continuous a schema1:Product ;
+    rdfs:label "Continuous NHANES Data" ;
+    dcterms:description "Public-use data files for the ongoing (1999-onward) NHANES, grouped by component (demographics, dietary, examination, laboratory, questionnaire), with methods and response rates." ;
+    schema1:url <https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx> .
+
+kgr:nhanes.data a schema1:Product ;
+    rdfs:label "NHANES Questionnaires, Datasets, and Documentation" ;
+    dcterms:description "The main data portal listing NHANES questionnaire, examination, and laboratory data files and documentation, organized by survey cycle." ;
+    schema1:url <https://wwwn.cdc.gov/nchs/nhanes/default.aspx> .
+
+kgr:nhanes.tutorials a schema1:DocumentationProduct ;
+    rdfs:label "NHANES Tutorials" ;
+    dcterms:description "Tutorial modules on using NHANES data: datasets and documentation, sample design, weighting, variance estimation, and dietary analyses, with sample code." ;
+    schema1:url <https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx> .
 
 kgr:nhpid.product-monographs a schema1:Product ;
     rdfs:label "NHPID Product Monographs" ;
@@ -44178,6 +44653,26 @@ kgr:orthodb.species a schema1:Product ;
     dcterms:description "Tab-separated file with species information based on NCBI taxonomy" ;
     schema1:url <https://data.orthodb.org/current/download/odb_data_dump/odb12v2_species.tab.gz> .
 
+kgr:orthomcl.downloads a schema1:Product ;
+    rdfs:label "OrthoMCL DB Current Release Downloads" ;
+    dcterms:description "Open directory index of bulk data files for the current OrthoMCL release." ;
+    schema1:url <https://orthomcl.org/common/downloads/Current_Release/> .
+
+kgr:orthomcl.groups a schema1:Product ;
+    rdfs:label "OrthoMCL Ortholog Groups File" ;
+    dcterms:description "Flat file listing each ortholog group and its member protein identifiers." ;
+    schema1:url <https://orthomcl.org/common/downloads/Current_Release/groups_OrthoMCL-8.2.txt.gz> .
+
+kgr:orthomcl.portal a schema1:GraphicalInterface ;
+    rdfs:label "OrthoMCL DB Web Portal" ;
+    dcterms:description "Interactive VEuPathDB search and browse interface for OrthoMCL ortholog groups, proteins, and phyletic patterns." ;
+    schema1:url <https://orthomcl.org/orthomcl/> .
+
+kgr:orthomcl.protein-sequences a schema1:Product ;
+    rdfs:label "OrthoMCL Protein Sequences (FASTA)" ;
+    dcterms:description "Amino-acid sequences for all proteins in the current OrthoMCL release." ;
+    schema1:url <https://orthomcl.org/common/downloads/Current_Release/aa_seqs_OrthoMCL-8.2.fasta.gz> .
+
 kgr:osv.website a schema1:GraphicalInterface ;
     rdfs:label "OSV website" ;
     dcterms:description "Web interface and API for the OSV open-source vulnerability database" ;
@@ -44981,6 +45476,16 @@ kgr:phosphositeplus.portal a schema1:GraphicalInterface ;
     dcterms:description "Web portal for browsing PTM sites, kinase–substrate relationships, motifs, mutations and protein pages" ;
     schema1:url <https://www.phosphosite.org/> .
 
+kgr:phylomedb.downloads a schema1:Product ;
+    rdfs:label "PhylomeDB Download Area" ;
+    dcterms:description "Download page linking to per-phylome bulk data: gene trees (Newick/NHX), multiple sequence alignments, and orthology and paralogy prediction files." ;
+    schema1:url <https://phylomedb.org/download> .
+
+kgr:phylomedb.portal a schema1:GraphicalInterface ;
+    rdfs:label "PhylomeDB Web Portal" ;
+    dcterms:description "PhylomeDB 5 web interface for browsing phylomes, gene trees, alignments, and orthology and paralogy predictions." ;
+    schema1:url <https://phylomedb.org/> .
+
 kgr:physiome-model-repository.api a schema1:ProgrammingInterface ;
     rdfs:label "PMR2 JSON Web Service" ;
     dcterms:description "JSON web service on the same URLs as the portal. Sending the header Accept application/vnd.physiome.pmr2.json.1 returns Collection+JSON hypermedia for workspaces, exposures and search; application/vnd.physiome.pmr2.json.0 returns plain JSON lists." ;
@@ -45504,6 +46009,16 @@ kgr:prokn.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Protein Knowledge Network TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Protein Knowledge Network" ;
     schema1:url <https://apps.okn.us/ldf/prokn> .
+
+kgr:propan.downloads a schema1:Product ;
+    rdfs:label "ProPan Downloads" ;
+    dcterms:description "Bulk download of ProPan post-processed pan-genome datasets (gene clusters, annotations) by species." ;
+    schema1:url <https://ngdc.cncb.ac.cn/propan/downloads> .
+
+kgr:propan.portal a schema1:GraphicalInterface ;
+    rdfs:label "ProPan Browser" ;
+    dcterms:description "Web portal to browse, search, and view prokaryotic pan-genome profiles, functional annotations, and analyses by species." ;
+    schema1:url <https://ngdc.cncb.ac.cn/propan/home> .
 
 kgr:propreo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "PROPREO KGX graph (KG-Bioportal)" ;
@@ -48114,6 +48629,21 @@ kgr:tflink.website-code a schema1:ProcessProduct ;
     dcterms:description "Source code of the TFLink website." ;
     schema1:url <https://github.com/NetBiol/TFlink> .
 
+kgr:tga-approved-terminology.guidance-pdf a schema1:DocumentationProduct ;
+    rdfs:label "TGA Approved Terminology Guidance (PDF)" ;
+    dcterms:description "Downloadable guidance document describing approved ingredient naming and presentation terminology." ;
+    schema1:url <https://www.tga.gov.au/sites/default/files/2024-10/tga-approved-terminology-therapeutic-goods.pdf> .
+
+kgr:tga-approved-terminology.publication a schema1:DocumentationProduct ;
+    rdfs:label "TGA Approved Terminology Publication Page" ;
+    dcterms:description "Official TGA publication landing page for the approved terminology guidance." ;
+    schema1:url <https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods> .
+
+kgr:tga-approved-terminology.where-to-find a schema1:GraphicalInterface ;
+    rdfs:label "Where to Find Approved Terminology" ;
+    dcterms:description "TGA page directing users to the Ingredients Table and Code Tables (dosage forms, routes, containers) in TGA Business Services." ;
+    schema1:url <https://www.tga.gov.au/where-find-approved-terminology> .
+
 kgr:tgma.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "TGMA KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Mosquito Gross Anatomy Ontology (TGMA), produced by KG-Bioportal from the BioPortal submission. The archive contains TGMA_nodes.tsv and TGMA_edges.tsv." ;
@@ -48807,6 +49337,21 @@ kgr:vectology.docs a schema1:DocumentationProduct ;
     dcterms:description "Project information page including description, maintenance status, contacts, and publication reference" ;
     schema1:url <https://mrcieu.github.io/software/vectology/> .
 
+kgr:vgnc.downloads a schema1:Product ;
+    rdfs:label "VGNC Statistics and Downloads" ;
+    dcterms:description "Directory of downloadable, tab-delimited VGNC gene symbol report files and per-species nomenclature statistics." ;
+    schema1:url <https://vertebrate.genenames.org/download/statistics-and-files/> .
+
+kgr:vgnc.rest-api a schema1:ProgrammingInterface ;
+    rdfs:label "genenames.org REST API" ;
+    dcterms:description "Shared genenames.org REST service for programmatic retrieval of HGNC and VGNC gene nomenclature records." ;
+    schema1:url <https://www.genenames.org/help/rest/> .
+
+kgr:vgnc.search a schema1:GraphicalInterface ;
+    rdfs:label "VGNC Search" ;
+    dcterms:description "Web tool to search and browse VGNC-approved vertebrate gene symbols, names, and records." ;
+    schema1:url <https://vertebrate.genenames.org/tools/search/> .
+
 kgr:vhog.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "VHOG KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Vertebrate Homologous Organ Group Ontology (VHOG), produced by KG-Bioportal from the BioPortal submission. The archive contains VHOG_nodes.tsv and VHOG_edges.tsv." ;
@@ -49274,6 +49819,26 @@ kgr:wormbase.wormmine a schema1:GraphicalInterface ;
     rdfs:label "WormMine" ;
     dcterms:description "WormMine InterMine instance for complex queries and bulk data retrieval across WormBase datasets" ;
     schema1:url <https://www.wormbase.org/tools/wormmine/> .
+
+kgr:wqx.cdx a schema1:GraphicalInterface ;
+    rdfs:label "WQXWeb via EPA Central Data Exchange" ;
+    dcterms:description "EPA's Central Data Exchange (CDX), the electronic reporting portal through which registered users log in to WQXWeb to submit water quality data." ;
+    schema1:url <https://cdx.epa.gov/> .
+
+kgr:wqx.schema a schema1:DataModelProduct ;
+    rdfs:label "WQX Data Exchange Schema and Template" ;
+    dcterms:description "The WQX data flow package on the EPA Exchange Network: the XML schema, flow configuration document, schema change logs, and the Data Exchange Template for versions 3.0 and 2.2." ;
+    schema1:url <https://exchangenetwork.net/data-exchange/wqx/> .
+
+kgr:wqx.upload-guidance a schema1:DocumentationProduct ;
+    rdfs:label "Water Quality Data Upload with WQX" ;
+    dcterms:description "EPA guidance and the WQXWeb application for reformatting and submitting monitoring data to WQX, including templates, the WQXWeb REST API, and Exchange Network node submission." ;
+    schema1:url <https://www.epa.gov/waterdata/water-quality-data-upload-wqx> .
+
+kgr:wqx.web-templates a schema1:Product ;
+    rdfs:label "WQX Web Template Files" ;
+    dcterms:description "Downloadable Excel template and data-dictionary packages for importing physical-chemical, biological, habitat, metrics, lab, and continuous monitoring results into WQX Web." ;
+    schema1:url <https://www.epa.gov/waterdata/water-quality-exchange-web-template-files> .
 
 kgr:xao.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "XAO KGX graph (KG-Bioportal)" ;
@@ -50309,6 +50874,11 @@ kgr:freebase.wikidata-mappings a schema1:MappingProduct ;
     rdfs:label "Freebase/Wikidata Mappings" ;
     dcterms:description "About 2.1 million owl sameAs links between Freebase MIDs and Wikidata items, built from the Wikidata dump of 2013-10-28 using shared Wikipedia links, released under CC0." ;
     schema1:url <https://storage.googleapis.com/freebase-public/fb2w.nt.gz> .
+
+kgr:gdelt.raw-data a schema1:Product ;
+    rdfs:label "GDELT 2.0 Raw Data Files" ;
+    dcterms:description "Master file list indexing every 15-minute GDELT 2.0 Event, Mentions, and Global Knowledge Graph update file (size, MD5, URL); the payload files are tab-delimited despite a .CSV extension." ;
+    schema1:url <https://data.gdeltproject.org/gdeltv2/masterfilelist.txt> .
 
 kgr:gemscript.bulletin a schema1:DocumentationProduct ;
     rdfs:label "Gemscript Monthly Bulletin" ;
@@ -54751,6 +55321,11 @@ kgr:depmap.drug_sensitivity a schema1:Product ;
     rdfs:label "DepMap Drug Sensitivity Data" ;
     dcterms:description "Drug screening data from various platforms including GDSC, PRISM, and CTD2" ;
     schema1:url <https://depmap.org/portal/data_page/> .
+
+kgr:distild.database a schema1:GraphicalInterface ;
+    rdfs:label "DistiLD Database" ;
+    dcterms:description "Web interface for querying and visualizing disease- and trait-associated SNPs and genes within LD blocks, searchable by disease, SNP, or gene. The site refused connections when checked in October 2026." ;
+    schema1:url <http://distild.jensenlab.org/> .
 
 kgr:dreamkg.graph a schema1:GraphProduct ;
     rdfs:label "DREAM-KG Knowledge Graph" ;
