@@ -31,6 +31,8 @@ original_source:
   source: depmap
 - relation_type: prov:hadPrimarySource
   source: ccle
+- relation_type: prov:hadPrimarySource
+  source: biocarta
 product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
 secondary_source:
 - relation_type: prov:used

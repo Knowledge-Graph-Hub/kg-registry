@@ -463,6 +463,8 @@ products:
     source: geneshot
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://maayanlab.cloud/Enrichr/#libraries
 - category: ProgrammingInterface
   connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
@@ -510,6 +512,14 @@ products:
     source: sra
   - relation_type: prov:hadPrimarySource
     source: cdd
+  - relation_type: prov:hadPrimarySource
+    source: genbank
+  - relation_type: prov:hadPrimarySource
+    source: ncbi-protein
+  - relation_type: prov:hadPrimarySource
+    source: bioproject
+  - relation_type: prov:hadPrimarySource
+    source: biosample
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
   secondary_source:
   - relation_type: prov:wasInformedBy
@@ -561,6 +571,14 @@ products:
     source: sra
   - relation_type: prov:hadPrimarySource
     source: cdd
+  - relation_type: prov:hadPrimarySource
+    source: genbank
+  - relation_type: prov:hadPrimarySource
+    source: ncbi-protein
+  - relation_type: prov:hadPrimarySource
+    source: bioproject
+  - relation_type: prov:hadPrimarySource
+    source: biosample
   product_url: https://www.ncbi.nlm.nih.gov/search/
 - category: ProgrammingInterface
   description: Entrez Direct (EDirect) command-line tools for Unix systems that wrap
@@ -606,6 +624,14 @@ products:
     source: sra
   - relation_type: prov:hadPrimarySource
     source: cdd
+  - relation_type: prov:hadPrimarySource
+    source: genbank
+  - relation_type: prov:hadPrimarySource
+    source: ncbi-protein
+  - relation_type: prov:hadPrimarySource
+    source: bioproject
+  - relation_type: prov:hadPrimarySource
+    source: biosample
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
   repository: https://github.com/ncbi/entrez-direct
 publications:

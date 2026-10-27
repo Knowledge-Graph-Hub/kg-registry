@@ -47,6 +47,58 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ecotox
   product_url: https://cfpub.epa.gov/ecotox/help.cfm
+- category: Product
+  description: TERA knowledge graph dataset snapshot version 1.1.0 hosted on Zenodo,
+    including NT files and CSV mappings
+  format: http
+  id: tera.zenodo-dataset
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY 4.0
+  name: TERA Knowledge Graph Dataset (Zenodo)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: ecotox
+  product_file_size: 5905580032
+  product_url: https://zenodo.org/records/4244313
+- category: Product
+  description: Chemical data from EPA ECOTOX in N-Triples RDF format
+  format: ntriples
+  id: tera.ecotox-chemical-nt
+  name: ECOTOX Chemical Data (N-Triples)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: ecotox
+  product_file_size: 680300
+  product_url: https://zenodo.org/records/4244313/files/ecotox_chemical.nt
+- category: Product
+  description: Taxonomy data from EPA ECOTOX in N-Triples RDF format
+  format: ntriples
+  id: tera.ecotox-taxonomy-nt
+  name: ECOTOX Taxonomy Data (N-Triples)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: ecotox
+  product_file_size: 22800000
+  product_url: https://zenodo.org/records/4244313/files/ecotox_taxonomy.nt
+- category: Product
+  description: Chemical effects data in N-Triples RDF format
+  format: ntriples
+  id: tera.effects-nt
+  name: Effects Data (N-Triples)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: ecotox
+  product_file_size: 1000000000
+  product_url: https://zenodo.org/records/4244313/files/effects.nt
 publications:
 - authors:
   - Jennifer H. Olker

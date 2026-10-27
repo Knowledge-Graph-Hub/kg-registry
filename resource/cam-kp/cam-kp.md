@@ -255,6 +255,8 @@ products:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint, with
@@ -298,6 +300,8 @@ products:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
 publications:
 - authors:

@@ -4,10 +4,12 @@ description: Chemical data from EPA ECOTOX in N-Triples RDF format
 format: ntriples
 id: tera.ecotox-chemical-nt
 name: ECOTOX Chemical Data (N-Triples)
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: tera
+- relation_type: prov:hadPrimarySource
+  source: ecotox
 product_file_size: 680300
 product_url: https://zenodo.org/records/4244313/files/ecotox_chemical.nt
 layout: product_detail
-original_source:
-  - source: tera
-    relation_type: prov:hadPrimarySource
 ---

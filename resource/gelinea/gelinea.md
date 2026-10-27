@@ -450,6 +450,8 @@ products:
     source: openpredict
   - relation_type: prov:hadPrimarySource
     source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: strider
   product_url: https://aragorn.renci.org/docs
 publications:
 - authors:

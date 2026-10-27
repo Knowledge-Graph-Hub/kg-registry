@@ -459,6 +459,10 @@ products:
     source: ukbiobank
   - relation_type: prov:hadPrimarySource
     source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: biomappings
+  - relation_type: prov:hadPrimarySource
+    source: semra
   product_url: https://www.ebi.ac.uk/spot/oxo/
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -498,6 +502,10 @@ products:
     source: ukbiobank
   - relation_type: prov:hadPrimarySource
     source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: biomappings
+  - relation_type: prov:hadPrimarySource
+    source: semra
   product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
 publications:
 - authors:
