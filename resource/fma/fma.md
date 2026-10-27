@@ -47,6 +47,8 @@ products:
     source: radlex
   - relation_type: prov:wasInfluencedBy
     source: interlex
+  - relation_type: prov:wasDerivedFrom
+    source: terminologia-anatomica
   warnings: []
 - category: OntologyProduct
   description: OWL individuals that pun the FMA classes so the ontology can be queried
