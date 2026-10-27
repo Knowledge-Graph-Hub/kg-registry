@@ -18,7 +18,7 @@ domains:
   - environment
 homepage_url: https://niva-knowledge-graph.github.io/TERA/
 id: tera
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -47,6 +47,8 @@ products:
     original_source:
       - source: tera
         relation_type: prov:hadPrimarySource
+      - source: ecotox
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Chemical data from EPA ECOTOX in N-Triples RDF format
     format: ntriples
@@ -56,6 +58,8 @@ products:
     product_url: https://zenodo.org/records/4244313/files/ecotox_chemical.nt
     original_source:
       - source: tera
+        relation_type: prov:hadPrimarySource
+      - source: ecotox
         relation_type: prov:hadPrimarySource
   - category: Product
     description: Taxonomy data from EPA ECOTOX in N-Triples RDF format
@@ -67,6 +71,8 @@ products:
     original_source:
       - source: tera
         relation_type: prov:hadPrimarySource
+      - source: ecotox
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Chemical effects data in N-Triples RDF format
     format: ntriples
@@ -76,6 +82,8 @@ products:
     product_url: https://zenodo.org/records/4244313/files/effects.nt
     original_source:
       - source: tera
+        relation_type: prov:hadPrimarySource
+      - source: ecotox
         relation_type: prov:hadPrimarySource
   - category: Product
     description: MeSH (Medical Subject Headings) data in N-Triples RDF format

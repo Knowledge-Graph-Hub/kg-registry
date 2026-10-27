@@ -2024,6 +2024,26 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubtator
   product_url: https://pharos.nih.gov/graphql
+- category: GraphicalInterface
+  description: Entrez search interface for NCBI Protein sequence records, with links
+    to Gene, Nucleotide, Structure, and Conserved Domains.
+  format: http
+  id: ncbi-protein.web
+  name: NCBI Protein Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi-protein
+  - relation_type: prov:hadPrimarySource
+    source: genbank
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  product_url: https://www.ncbi.nlm.nih.gov/protein/
 publications:
 - authors:
   - wwPDB consortium

@@ -309,6 +309,8 @@ products:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
 
 creation_date: '2025-03-09T00:00:00Z'

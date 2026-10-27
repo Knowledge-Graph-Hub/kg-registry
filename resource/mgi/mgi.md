@@ -1751,6 +1751,8 @@ products:
     source: geneshot
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://maayanlab.cloud/Enrichr/#libraries
 - category: Product
   description: Downloadable gene set files for mouse collections including mouse-ortholog
@@ -1776,6 +1778,8 @@ products:
     source: mirdb
   - relation_type: prov:hadPrimarySource
     source: gtrd
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
   secondary_source:
   - relation_type: prov:used
@@ -1819,6 +1823,10 @@ products:
     source: ukbiobank
   - relation_type: prov:hadPrimarySource
     source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: biomappings
+  - relation_type: prov:hadPrimarySource
+    source: semra
   product_url: https://www.ebi.ac.uk/spot/oxo/
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -1858,6 +1866,10 @@ products:
     source: ukbiobank
   - relation_type: prov:hadPrimarySource
     source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: biomappings
+  - relation_type: prov:hadPrimarySource
+    source: semra
   product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
 - category: GraphicalInterface
   description: Web interface for searching, browsing, and analyzing protein target

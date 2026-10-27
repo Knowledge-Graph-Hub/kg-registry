@@ -4,10 +4,12 @@ description: Taxonomy data from EPA ECOTOX in N-Triples RDF format
 format: ntriples
 id: tera.ecotox-taxonomy-nt
 name: ECOTOX Taxonomy Data (N-Triples)
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: tera
+- relation_type: prov:hadPrimarySource
+  source: ecotox
 product_file_size: 22800000
 product_url: https://zenodo.org/records/4244313/files/ecotox_taxonomy.nt
 layout: product_detail
-original_source:
-  - source: tera
-    relation_type: prov:hadPrimarySource
 ---

@@ -548,6 +548,8 @@ products:
     source: geneshot
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://maayanlab.cloud/Enrichr/#libraries
 - category: GraphicalInterface
   description: OxO2 web interface for searching and browsing ontology cross-references
@@ -585,6 +587,10 @@ products:
     source: ukbiobank
   - relation_type: prov:hadPrimarySource
     source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: biomappings
+  - relation_type: prov:hadPrimarySource
+    source: semra
   product_url: https://www.ebi.ac.uk/spot/oxo/
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -624,6 +630,10 @@ products:
     source: ukbiobank
   - relation_type: prov:hadPrimarySource
     source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: biomappings
+  - relation_type: prov:hadPrimarySource
+    source: semra
   product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
 - category: GraphicalInterface
   description: Web interface for searching, browsing, and analyzing protein target

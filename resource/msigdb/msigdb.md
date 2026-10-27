@@ -74,6 +74,8 @@ products:
     source: depmap
   - relation_type: prov:hadPrimarySource
     source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
   secondary_source:
   - relation_type: prov:used
@@ -105,6 +107,8 @@ products:
     source: mirdb
   - relation_type: prov:hadPrimarySource
     source: gtrd
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
   secondary_source:
   - relation_type: prov:used
@@ -1949,6 +1953,8 @@ products:
     source: geneshot
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://maayanlab.cloud/Enrichr/#libraries
 publications:
 - authors:

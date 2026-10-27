@@ -942,6 +942,8 @@ products:
     source: geneshot
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: biocarta
   product_url: https://maayanlab.cloud/Enrichr/#libraries
 publications:
 - authors:
