@@ -12,6 +12,8 @@ original_source:
   source: umls
 - relation_type: prov:hadPrimarySource
   source: meddra
+- relation_type: prov:hadPrimarySource
+  source: nmcd
 product_url: https://github.com/jvasilakes/iDISK
 layout: product_detail
 ---

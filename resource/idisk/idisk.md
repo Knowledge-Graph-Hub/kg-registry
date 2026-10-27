@@ -25,7 +25,7 @@ domains:
 homepage_url: https://doi.org/10.13020/d6bm3v
 id: idisk
 infores_id: idisk
-last_modified_date: '2026-10-10T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by-sa/3.0/us/
@@ -240,6 +240,8 @@ products:
     source: umls
   - relation_type: prov:hadPrimarySource
     source: meddra
+  - relation_type: prov:hadPrimarySource
+    source: nmcd
   product_url: https://github.com/jvasilakes/iDISK
 publications:
 - authors:

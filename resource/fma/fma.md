@@ -24,7 +24,7 @@ domains:
 - anatomy and development
 homepage_url: http://si.washington.edu/projects/fma
 id: fma
-last_modified_date: '2026-10-10T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -42,6 +42,13 @@ products:
     source: fma
   product_file_size: 208047132
   product_url: http://purl.obolibrary.org/obo/fma.owl
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: radlex
+  - relation_type: prov:wasInfluencedBy
+    source: interlex
+  - relation_type: prov:wasDerivedFrom
+    source: terminologia-anatomica
   warnings: []
 - category: OntologyProduct
   description: OWL individuals that pun the FMA classes so the ontology can be queried
