@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: Resource
+category: Ontology
 contacts:
 - category: Individual
   contact_details:
@@ -10,23 +10,30 @@ contacts:
     value: caufieldjh
   label: J. Harry Caufield
 creation_date: '2025-03-09T00:00:00Z'
-description: An ontology for accessing and comparing knowledge concerning phenotypes
-  across species and genetic backgrounds.
+description: PHENIO (Phenomics Integrated Ontology) is an application ontology for
+  accessing and comparing knowledge concerning phenotypes across species and genetic
+  backgrounds. Built with the Ontology Development Kit, it merges species-specific
+  and cross-species phenotype ontologies (uPheno, HP, MP, ZP, XPO, FYPO, WBPhenotype,
+  DDPHENO, DPO, OBA), anatomy and developmental stage ontologies (Uberon, CL, FBbt,
+  ZFA, XAO, WBbt, EMAPA, DDANAT, and others), Mondo, GO, PATO, and supporting ontologies
+  into a single resource that provides the ontological backbone of the Monarch Knowledge
+  Graph.
 domains:
 - phenotype
 homepage_url: https://monarch-initiative.github.io/phenio/
 id: phenio
 infores_id: phenio
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause
   label: BSD3
-name: An integrated ontology for Phenomics
+name: Phenomics Integrated Ontology (PHENIO)
 products:
-- category: Product
+- category: OntologyProduct
   compression: gzip
-  description: OWL version of phenio
+  description: OWL version of PHENIO (full release), merging phenotype, anatomy,
+    disease, chemical, gene, and upper-level ontologies imported via the ODK pipeline
   format: owl
   id: phenio.model
   license:
@@ -36,6 +43,84 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: upheno
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: fypo
+  - relation_type: prov:hadPrimarySource
+    source: wbphenotype
+  - relation_type: prov:hadPrimarySource
+    source: ddpheno
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: ddanat
+  - relation_type: prov:hadPrimarySource
+    source: zfs
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: chr
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
   product_file_size: 124412326
   product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl.gz
   repository: https://github.com/monarch-initiative/phenio
@@ -54,9 +139,103 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: upheno
   product_file_size: 71579307
   product_url: https://github.com/Knowledge-Graph-Hub/kg-phenio/releases/latest/download/kg-phenio.tar.gz
   repository: https://github.com/Knowledge-Graph-Hub/kg-phenio
+- category: OntologyProduct
+  description: OBO Graphs JSON version of PHENIO (full release)
+  format: json
+  id: phenio.json
+  license:
+    id: https://opensource.org/license/bsd-3-clause
+    label: BSD3
+  name: phenio JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: upheno
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: fypo
+  - relation_type: prov:hadPrimarySource
+    source: wbphenotype
+  - relation_type: prov:hadPrimarySource
+    source: ddpheno
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: ddanat
+  - relation_type: prov:hadPrimarySource
+    source: zfs
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: chr
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 1261625948
+  product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
+  repository: https://github.com/monarch-initiative/phenio
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 16433147
@@ -1454,7 +1633,63 @@ products:
     source: phenopacket-store
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+publications:
+- authors:
+  - "Tim E Putman"
+  - "Kevin Schaper"
+  - "Nicolas Matentzoglu"
+  - "Vincent P Rubinetti"
+  - "Faisal S Alquaddoomi"
+  - "Corey Cox"
+  - "J Harry Caufield"
+  - "Glass Elsarboukh"
+  - "Sarah Gehrke"
+  - "Harshad Hegde"
+  - "Justin T Reese"
+  - "Ian Braun"
+  - "Richard M Bruskiewich"
+  - "Luca Cappelletti"
+  - "Seth Carbon"
+  - "Anita R Caron"
+  - "Lauren E Chan"
+  - "Christopher G Chute"
+  - "Katherina G Cortes"
+  - "Vinícius De Souza"
+  - "Tommaso Fontana"
+  - "Nomi L Harris"
+  - "Emily L Hartley"
+  - "Eric Hurwitz"
+  - "Julius O B Jacobsen"
+  - "Madan Krishnamurthy"
+  - "Bryan J Laraway"
+  - "James A McLaughlin"
+  - "Julie A McMurry"
+  - "Sierra A T Moxon"
+  - "Kathleen R Mullen"
+  - "Shawn T O'Neil"
+  - "Kent A Shefchek"
+  - "Ray Stefancsik"
+  - "Sabrina Toro"
+  - "Nicole A Vasilevsky"
+  - "Ramona L Walls"
+  - "Patricia L Whetzel"
+  - "David Osumi-Sutherland"
+  - "Damian Smedley"
+  - "Peter N Robinson"
+  - "Christopher J Mungall"
+  - "Melissa A Haendel"
+  - "Monica C Munoz-Torres"
+  doi: 10.1093/nar/gkad1082
+  id: doi:10.1093/nar/gkad1082
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'The Monarch Initiative in 2024: an analytic platform integrating phenotypes,
+    genes and diseases across species'
+  year: '2024'
 repository: https://github.com/monarch-initiative/phenio
+synonyms:
+- PHENIO
+- An integrated ontology for Phenomics
 usages:
 - description: PHENIO is used by the Monarch Initiative for cross-species inference.
     As an example, the disease of Parkinsonism may compared on the basis of its phenotype
@@ -1476,4 +1711,36 @@ usages:
       value: https://monarchinitiative.org/
     label: The Monarch Initiative
 ---
-PHENIO
+
+# Phenomics Integrated Ontology (PHENIO)
+
+## Overview
+
+PHENIO is an application ontology for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds. It is developed by the Monarch Initiative using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit) and provides the ontological backbone of the Monarch Knowledge Graph.
+
+## Composition
+
+According to the PHENIO ODK configuration (`src/ontology/phenio-odk.yaml`), PHENIO merges:
+
+- **Phenotype ontologies**: uPheno, HP, MP, ZP, XPO, FYPO, WBPhenotype, DDPHENO, DPO, OBA, plus uPheno bridge and alignment axioms
+- **Anatomy and development ontologies**: Uberon, CL, FBbt, ZFA, XAO, WBbt, EMAPA, DDANAT, ZFS, FBdv, WBls, HsapDv, BSPO
+- **Disease and biological process ontologies**: Mondo, GO
+- **Supporting ontologies and vocabularies**: BFO, RO, PATO, ChEBI (slim), PRO (slim), SO, ECO, NCBITaxon (taxslim), MPATH, NBO, FoodOn, Monochrom (CHR), NCBI Gene, HGNC
+
+SSSOM mappings from Uberon, CL, and uPheno (uPheno-OBA) are also used in the build.
+
+## Access
+
+- Latest OWL release: [phenio.owl.gz](https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl.gz)
+- Latest OBO Graphs JSON release: [phenio.json](https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json)
+- KGX graph (KG-Phenio, which adds uPheno cross-species mappings): [kg-phenio.tar.gz](https://github.com/Knowledge-Graph-Hub/kg-phenio/releases/latest/download/kg-phenio.tar.gz)
+- Documentation: [https://monarch-initiative.github.io/phenio/](https://monarch-initiative.github.io/phenio/)
+- Repository: [https://github.com/monarch-initiative/phenio](https://github.com/monarch-initiative/phenio)
+
+## Citation
+
+Putman TE, et al. The Monarch Initiative in 2024: an analytic platform integrating phenotypes, genes and diseases across species. Nucleic Acids Research. 2024. doi:10.1093/nar/gkad1082
+
+## Information Resource ID
+
+This resource has the Information Resource identifier: `infores:phenio`
