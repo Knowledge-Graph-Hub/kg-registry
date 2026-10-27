@@ -68,13 +68,16 @@ biogrid,active,PASS
 biohealth,active,PASS
 biolincc,active,PASS
 biolink,active,PASS
+biomappings,active,PASS
 biomarker,active,PASS
 biomodels,active,PASS
 biomuta,active,PASS
 bioplanet,active,PASS
 bioplex,active,PASS
 bioportal,active,PASS
+bioproject,active,PASS
 bioregistry,active,PASS
+biosample,active,PASS
 biostudies,active,PASS
 bioteque,active,PASS
 biothings,active,PASS
@@ -260,6 +263,7 @@ ecocore,active,PASS
 ecocyc,active,PASS
 ecoportal,active,PASS
 ecosim,active,PASS
+ecotox,active,PASS
 ecrin-mdr,active,PASS
 ecso,active,PASS
 ecto,active,PASS
@@ -357,6 +361,7 @@ gecko,active,PASS
 gelinea,active,PASS
 gemscript,active,PASS
 genage,active,PASS
+genbank,active,PASS
 gencc,active,PASS
 gencode,active,PASS
 gendr,active,PASS
@@ -625,6 +630,7 @@ national-directory-mental-health-facilities,active,PASS
 nbo,active,PASS
 ncatsgardkg,active,PASS
 ncbi,active,PASS
+ncbi-protein,active,PASS
 ncbigene,active,PASS
 ncbitaxon,active,PASS
 nci60,active,PASS
@@ -876,6 +882,7 @@ securechainkg,active,PASS
 semantic-scholar,active,PASS
 semapv,active,PASS
 semopenalex,active,PASS
+semra,active,PASS
 semrep,active,PASS
 sennet,active,PASS
 sep-l1000,active,PASS
@@ -920,6 +927,7 @@ srpdb,active,PASS
 ssurgo,active,PASS
 stato,active,PASS
 stellar,active,PASS
+strider,active,PASS
 string,active,PASS
 sty,active,PASS
 sudokn,active,PASS
@@ -1043,6 +1051,7 @@ bcgo,inactive,PASS
 bila,inactive,PASS
 bind,inactive,PASS
 bio2rdf,inactive,PASS
+biocarta,inactive,PASS
 biomarkerkg,inactive,PASS
 bootstrep,inactive,PASS
 cam-kp,inactive,PASS

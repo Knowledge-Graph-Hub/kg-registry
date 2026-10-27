@@ -60,6 +60,7 @@ biobricks-pubchem-annotations	BioBricks PubChem Annotations	KnowledgeGraph	https
 biobricks-tox21	BioBricks Tox21	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-tox21/biobricks-tox21.md
 biobricks-toxcast	BioBricks ToxCast	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-toxcast/biobricks-toxcast.md
 biobtree	BioBTree	KnowledgeGraph	https://sugi.bio/biobtree/	resource/biobtree/biobtree.md
+biocarta	BioCarta	DataSource	https://www.biocarta.com/	resource/biocarta/biocarta.md
 biocyc	BioCyc	DataSource	https://biocyc.org/	resource/biocyc/biocyc.md
 biodata-catalyst	NHLBI BioData Catalyst	Aggregator	https://biodatacatalyst.nhlbi.nih.gov/	resource/biodata-catalyst/biodata-catalyst.md
 biodivportal	BiodivPortal	Aggregator	https://biodivportal.gfbio.org/	resource/biodivportal/biodivportal.md
@@ -68,12 +69,15 @@ biogps	BioGPS	Aggregator	http://biogps.org/	resource/biogps/biogps.md
 biohealth	Bio-Health KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/biohealth/	resource/biohealth/biohealth.md
 biolincc	BioLINCC	DataSource	https://biolincc.nhlbi.nih.gov/	resource/biolincc/biolincc.md
 biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resource/biolink/biolink.md
+biomappings	Biomappings	DataSource	https://biopragmatics.github.io/biomappings/	resource/biomappings/biomappings.md
 biomarker	BiomarkerKB	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarker/biomarker.md
 biomarkerkg	BiomarkerKB KG	KnowledgeGraph	https://biomarkerkb.org/	resource/biomarkerkg/biomarkerkg.md
 biomodels	BioModels	DataSource	https://www.ebi.ac.uk/biomodels/	resource/biomodels/biomodels.md
 biomuta	BioMuta	DataSource	https://hivelab.biochemistry.gwu.edu/biomuta	resource/biomuta/biomuta.md
 bioplex	BioPlex	DataSource	https://bioplex.hms.harvard.edu/	resource/bioplex/bioplex.md
+bioproject	NCBI BioProject	DataSource	https://www.ncbi.nlm.nih.gov/bioproject/	resource/bioproject/bioproject.md
 bioregistry	Bioregistry	Aggregator	https://bioregistry.io/	resource/bioregistry/bioregistry.md
+biosample	NCBI BioSample	DataSource	https://www.ncbi.nlm.nih.gov/biosample/	resource/biosample/biosample.md
 biostudies	BioStudies	DataSource	https://www.ebi.ac.uk/biostudies/	resource/biostudies/biostudies.md
 bioteque	Bioteque	KnowledgeGraph	https://bioteque.irbbarcelona.org/	resource/bioteque/bioteque.md
 biothings	BioThings	DataSource	https://biothings.io/	resource/biothings/biothings.md
@@ -231,6 +235,7 @@ ecocore	An ontology of core ecological entities	Ontology	https://github.com/Ecol
 ecocyc	EcoCyc	DataSource	https://ecocyc.org/	resource/ecocyc/ecocyc.md
 ecoportal	EcoPortal	Aggregator	https://ecoportal.lifewatch.eu/	resource/ecoportal/ecoportal.md
 ecosim	ecosim	Resource	https://github.com/bioepic-data/ecosim-ontology	resource/ecosim/ecosim.md
+ecotox	ECOTOX Knowledgebase	DataSource	https://cfpub.epa.gov/ecotox/	resource/ecotox/ecotox.md
 ecrin-mdr	ECRIN Clinical Research Metadata Repository	Aggregator	https://newmdr.ecrin.org/	resource/ecrin-mdr/ecrin-mdr.md
 ecso	The Ecosystem Ontology	Ontology	https://github.com/DataONEorg/sem-prov-ontologies	resource/ecso/ecso.md
 edam	EDAM Ontology	Ontology	https://edamontology.org/	resource/edam/edam.md
@@ -322,6 +327,7 @@ gcmd	NASA Global Change Master Directory (GCMD) Keywords	DataSource	https://gcmd
 gdelt	GDELT Project (Global Database of Events, Language, and Tone)	KnowledgeGraph	https://www.gdeltproject.org/	resource/gdelt/gdelt.md
 gecko	Genomics Cohorts Knowledge Ontology	Ontology	https://github.com/IHCC-cohorts/GECKO	resource/gecko/gecko.md
 gemscript	Gemscript	DataSource	https://help.visionhealth.co.uk/Vision_Consultation_Manager_Help_Centre/Content/ConMgr/Gemscript/Gemscript_Drug_Dictionary.htm	resource/gemscript/gemscript.md
+genbank	GenBank	DataSource	https://www.ncbi.nlm.nih.gov/genbank/	resource/genbank/genbank.md
 gencode	GENCODE	DataSource	https://www.gencodegenes.org/	resource/gencode/gencode.md
 gene-expression-atlas-okn	Gene Expression Atlas	KnowledgeGraph	https://www.ebi.ac.uk/gxa/home	resource/gene-expression-atlas-okn/gene-expression-atlas-okn.md
 gene-expression-omnibus	Gene Expression Omnibus (GEO)	Aggregator	https://www.ncbi.nlm.nih.gov/geo/	resource/gene-expression-omnibus/gene-expression-omnibus.md
@@ -556,6 +562,7 @@ nasa-osdr	NASA Open Science Data Repository (OSDR) / GeneLab	DataSource	https://
 national-directory-mental-health-facilities	National Directory of Mental Health Treatment Facilities	DataSource	https://www.samhsa.gov/data/report/national-directory-mental-health-treatment-facilities	resource/national-directory-mental-health-facilities/national-directory-mental-health-facilities.md
 ncatsgardkg	NCATS GARD KG	KnowledgeGraph	https://github.com/ncats/RD-Clust	resource/ncatsgardkg/ncatsgardkg.md
 ncbi	National Center for Biotechnology Information	DataSource	https://www.ncbi.nlm.nih.gov/	resource/ncbi/ncbi.md
+ncbi-protein	NCBI Protein	Aggregator	https://www.ncbi.nlm.nih.gov/protein/	resource/ncbi-protein/ncbi-protein.md
 nci60	NCI-60 Human Tumor Cell Lines Screen	DataSource	https://dtp.cancer.gov/discovery_development/nci-60/	resource/nci60/nci60.md
 ncipidkg	NCI-PID 2.0 KG	KnowledgeGraph	https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf	resource/ncipidkg/ncipidkg.md
 ncro	Non-Coding RNA Ontology	Ontology	http://omnisearch.soc.southalabama.edu/w/index.php/Ontology	resource/ncro/ncro.md
@@ -785,6 +792,7 @@ securechainkg	SecureChain KG	KnowledgeGraph	https://purdue-hcss.github.io/nsf-so
 semantic-scholar	Semantic Scholar	DataSource	https://www.semanticscholar.org/	resource/semantic-scholar/semantic-scholar.md
 semapv	Semantic Mapping Vocabulary	Ontology	https://mapping-commons.github.io/semantic-mapping-vocabulary/	resource/semapv/semapv.md
 semopenalex	SemOpenAlex	KnowledgeGraph	https://semopenalex.org/	resource/semopenalex/semopenalex.md
+semra	SeMRA (Semantic Mapping Reasoner and Assembler)	Aggregator	https://github.com/biopragmatics/semra	resource/semra/semra.md
 semrep	SemRep	DataSource	https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR.html	resource/semrep/semrep.md
 sennet	SenNet	DataSource	https://sennetconsortium.org/	resource/sennet/sennet.md
 sep	Sample processing and separation techniques	Ontology	http://psidev.info/index.php?q=node/312	resource/sep/sep.md
@@ -823,6 +831,7 @@ srpdb	SRPDB	DataSource	https://rth.dk/resources/rnp/SRPDB/	resource/srpdb/srpdb.
 ssurgo	Soil Survey Geographic Database (SSURGO)	DataSource	https://websoilsurvey.nrcs.usda.gov/	resource/ssurgo/ssurgo.md
 stato	The Statistical Methods Ontology	Ontology	http://stato-ontology.org/	resource/stato/stato.md
 stellar	STELLAR	Resource	https://snap.stanford.edu/stellar/	resource/stellar/stellar.md
+strider	Strider	Aggregator	https://strider.renci.org/docs	resource/strider/strider.md
 sty	UMLS Semantic Types	Ontology	https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html	resource/sty/sty.md
 sudokn	SUDOKN	KnowledgeGraph	https://projects.engineering.asu.edu/sudokn/	resource/sudokn/sudokn.md
 sugi-atlas	Sugi Atlas	Aggregator	https://sugi.bio/atlas/	resource/sugi-atlas/sugi-atlas.md

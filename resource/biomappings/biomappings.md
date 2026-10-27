@@ -37,6 +37,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biomappings
+  product_file_size: 288990
   product_url: https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/positive.sssom.tsv
 - category: MappingProduct
   description: Human-curated non-trivial false (incorrect) mappings, in SSSOM TSV
@@ -47,6 +48,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biomappings
+  product_file_size: 45640
   product_url: https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/negative.sssom.tsv
 - category: MappingProduct
   description: Automatically predicted mappings awaiting curation, in SSSOM TSV format.
@@ -56,16 +58,17 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biomappings
+  product_file_size: 2556770
   product_url: https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/predictions.sssom.tsv
 - category: ProcessProduct
   description: Biomappings Python package (MIT) for accessing, predicting, and curating
     mappings.
   format: python
   id: biomappings.code
-  name: Biomappings Python Package
   license:
     id: https://github.com/biopragmatics/biomappings/blob/main/LICENSE
     label: MIT
+  name: Biomappings Python Package
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biomappings

@@ -2658,6 +2658,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -10574,6 +10576,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -10617,6 +10621,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   - category: GraphicalInterface
     description: The NCATS Translator user interface, which submits questions through
@@ -11476,6 +11482,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -14270,6 +14278,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -14313,6 +14323,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   repository: https://github.com/RENCI-AUTOMAT/automat-server
 - activity_status: active
@@ -28027,6 +28039,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -33365,6 +33379,199 @@ resources:
     year: '2022'
   repository: https://github.com/biolink/biolink-model/
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: github
+      value: cthoyt
+    label: Charles Tapley Hoyt
+    orcid: 0000-0003-4423-4370
+  creation_date: '2026-10-27T00:00:00Z'
+  description: Biomappings is a community-curated repository of semantic mappings
+    between biomedical identifiers (equivalences and related relations) that are missing
+    from primary sources. It holds human-curated positive mappings, curated non-trivial
+    negative (incorrect) mappings, and automatically predicted mappings awaiting review,
+    all in SSSOM TSV format. Contributors curate predictions through a web curation
+    interface or by pull request, and the mappings are released under CC0.
+  domains:
+  - metadata
+  - information technology
+  - biomedical
+  homepage_url: https://biopragmatics.github.io/biomappings/
+  id: biomappings
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: Biomappings
+  products:
+  - category: MappingProduct
+    description: Human-curated true (positive) semantic mappings between biomedical
+      identifiers, in SSSOM TSV format.
+    format: sssom
+    id: biomappings.positive
+    name: Biomappings Positive Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    product_file_size: 288990
+    product_url: https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/positive.sssom.tsv
+  - category: MappingProduct
+    description: Human-curated non-trivial false (incorrect) mappings, in SSSOM TSV
+      format.
+    format: sssom
+    id: biomappings.negative
+    name: Biomappings Negative Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    product_file_size: 45640
+    product_url: https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/negative.sssom.tsv
+  - category: MappingProduct
+    description: Automatically predicted mappings awaiting curation, in SSSOM TSV
+      format.
+    format: sssom
+    id: biomappings.predictions
+    name: Biomappings Predicted Mappings
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    product_file_size: 2556770
+    product_url: https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/predictions.sssom.tsv
+  - category: ProcessProduct
+    description: Biomappings Python package (MIT) for accessing, predicting, and curating
+      mappings.
+    format: python
+    id: biomappings.code
+    license:
+      id: https://github.com/biopragmatics/biomappings/blob/main/LICENSE
+      label: MIT
+    name: Biomappings Python Package
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    product_url: https://github.com/biopragmatics/biomappings
+  - category: GraphicalInterface
+    description: OxO2 web interface for searching and browsing ontology cross-references
+      and SSSOM mappings, including asserted mappings from OLS ontologies and curated
+      mapping sets, plus inferred cross-set mappings
+    format: http
+    id: oxo.portal
+    name: OxO Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: oxo
+    - relation_type: prov:hadPrimarySource
+      source: ols
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: mondo
+    - relation_type: prov:hadPrimarySource
+      source: uberon
+    - relation_type: prov:hadPrimarySource
+      source: upheno
+    - relation_type: prov:hadPrimarySource
+      source: impc
+    - relation_type: prov:hadPrimarySource
+      source: mgi
+    - relation_type: prov:hadPrimarySource
+      source: monarchinitiative
+    - relation_type: prov:hadPrimarySource
+      source: loinc
+    - relation_type: prov:hadPrimarySource
+      source: gwascatalog
+    - relation_type: prov:hadPrimarySource
+      source: opentargets
+    - relation_type: prov:hadPrimarySource
+      source: ukbiobank
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    product_url: https://www.ebi.ac.uk/spot/oxo/
+  - category: ProgrammingInterface
+    connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
+    description: OxO2 REST API (OpenAPI 3) for querying mappings, mapping sets, and
+      ontologies; supports SSSOM-shaped JSON and SSSOM TSV export of mapping search
+      results. Also exposes legacy OxO v1-compatible endpoints.
+    format: http
+    id: oxo.api
+    is_public: true
+    name: OxO2 REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: oxo
+    - relation_type: prov:hadPrimarySource
+      source: ols
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: mondo
+    - relation_type: prov:hadPrimarySource
+      source: uberon
+    - relation_type: prov:hadPrimarySource
+      source: upheno
+    - relation_type: prov:hadPrimarySource
+      source: impc
+    - relation_type: prov:hadPrimarySource
+      source: mgi
+    - relation_type: prov:hadPrimarySource
+      source: monarchinitiative
+    - relation_type: prov:hadPrimarySource
+      source: loinc
+    - relation_type: prov:hadPrimarySource
+      source: gwascatalog
+    - relation_type: prov:hadPrimarySource
+      source: opentargets
+    - relation_type: prov:hadPrimarySource
+      source: ukbiobank
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
+  - category: MappingProduct
+    description: SeMRA Raw Semantic Mappings Database, pre-assembled semantic mappings
+      from ontologies indexed in the Bioregistry, databases integrated in PyOBO, Biomappings,
+      Wikidata, and custom SeMRA resources, published on Zenodo under CC0.
+    format: sssom
+    id: semra.raw-mappings
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: SeMRA Raw Semantic Mappings Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_url: https://doi.org/10.5281/zenodo.11082038
+  publications:
+  - authors:
+    - Charles Tapley Hoyt
+    - Amelia L. Hoyt
+    - Benjamin M. Gyori
+    doi: 10.1093/bioinformatics/btad130
+    id: doi:10.1093/bioinformatics/btad130
+    journal: Bioinformatics
+    preferred: true
+    title: Prediction and curation of missing biomedical identifier mappings with
+      Biomappings
+    year: '2023'
+  repository: https://github.com/biopragmatics/biomappings
+- activity_status: active
   category: KnowledgeGraph
   collection:
   - okn
@@ -34583,6 +34790,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -35080,6 +35289,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -36196,6 +36407,241 @@ resources:
   - Some ontologies have distinct licenses; review individual ontology license metadata
     before reuse.
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ncbi.nlm.nih.gov/bioproject/
+    label: National Center for Biotechnology Information (NCBI)
+  creation_date: '2026-10-27T00:00:00Z'
+  description: BioProject is NCBI's database of biological research projects. A BioProject
+    is a collection of biological data related to a single initiative, originating
+    from a single organization or from a consortium, and its record provides a single
+    place to find links to the diverse data types generated for that project in NCBI
+    archives such as SRA, GenBank, GEO, dbGaP, and Assembly. It replaced the earlier
+    Genome Project database. BioProject accessions (PRJNA, and PRJEB and PRJDB through
+    the INSDC partners ENA and DDBJ) organize submissions from single studies to large
+    consortia.
+  domains:
+  - genomics
+  - metadata
+  - information technology
+  - biomedical
+  homepage_url: https://www.ncbi.nlm.nih.gov/bioproject/
+  id: bioproject
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    label: NCBI usage policies
+  name: NCBI BioProject
+  products:
+  - category: GraphicalInterface
+    description: Entrez BioProject search over research project records and their
+      links to data in other NCBI archives.
+    format: http
+    id: bioproject.web
+    name: BioProject Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    product_url: https://www.ncbi.nlm.nih.gov/bioproject/
+  - category: Product
+    description: Bulk BioProject records in XML and summary files.
+    format: xml
+    id: bioproject.ftp
+    name: BioProject FTP
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    product_url: https://ftp.ncbi.nlm.nih.gov/bioproject/
+  - category: ProgrammingInterface
+    connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+    description: Entrez Programming Utilities (E-utilities), a set of server-side
+      programs (EInfo, ESearch, ESummary, EFetch, ELink, EPost, EGQuery, ESpell, ECitMatch)
+      with a fixed URL syntax for searching, linking and retrieving records from the
+      38 Entrez databases. Results are returned as XML, with JSON available for several
+      utilities.
+    format: mixed
+    id: entrez.eutils
+    name: Entrez E-utilities
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: ncbitaxon
+  - category: GraphicalInterface
+    description: NCBI global cross-database search page, which runs a single query
+      against all Entrez databases and reports hit counts per database.
+    format: http
+    id: entrez.web
+    name: Entrez Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/search/
+  - category: ProgrammingInterface
+    description: Entrez Direct (EDirect) command-line tools for Unix systems that
+      wrap the E-utilities (esearch, efetch, elink, efilter, xtract and others) for
+      pipeline access to Entrez databases.
+    format: mixed
+    id: entrez.edirect
+    name: Entrez Direct (EDirect)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
+    repository: https://github.com/ncbi/entrez-direct
+  publications:
+  - authors:
+    - T. Barrett
+    - K. Clark
+    - R. Gevorgyan
+    - V. Gorelenkov
+    - et al.
+    doi: 10.1093/nar/gkr1163
+    id: doi:10.1093/nar/gkr1163
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'BioProject and BioSample databases at NCBI: facilitating capture and organization
+      of metadata'
+    year: '2012'
+  synonyms:
+  - BioProject
+- activity_status: active
   category: Aggregator
   contacts:
   - category: Individual
@@ -36454,6 +36900,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -36493,7 +36943,31 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
+  - category: MappingProduct
+    description: SeMRA Raw Semantic Mappings Database, pre-assembled semantic mappings
+      from ontologies indexed in the Bioregistry, databases integrated in PyOBO, Biomappings,
+      Wikidata, and custom SeMRA resources, published on Zenodo under CC0.
+    format: sssom
+    id: semra.raw-mappings
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: SeMRA Raw Semantic Mappings Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_url: https://doi.org/10.5281/zenodo.11082038
   publications:
   - authors:
     - Charles Tapley Hoyt
@@ -36523,6 +36997,240 @@ resources:
     year: '2022'
   repository: https://github.com/biopragmatics/bioregistry
   rrid: SCR_022586
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ncbi.nlm.nih.gov/biosample/
+    label: National Center for Biotechnology Information (NCBI)
+  creation_date: '2026-10-27T00:00:00Z'
+  description: The BioSample database contains descriptions of biological source materials
+    used in experimental assays. Each record captures sample attributes such as organism,
+    tissue, cell line, isolate, and environment, using community attribute packages
+    such as MIxS, and links to the experimental data derived from the sample in SRA,
+    GenBank, GEO, dbGaP, and other archives. BioSample accessions (SAMN, and SAMEA
+    and SAMD through the INSDC partners ENA and DDBJ) are exchanged with EMBL-EBI
+    and DDBJ.
+  domains:
+  - genomics
+  - metadata
+  - information technology
+  - biomedical
+  homepage_url: https://www.ncbi.nlm.nih.gov/biosample/
+  id: biosample
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    label: NCBI usage policies
+  name: NCBI BioSample
+  products:
+  - category: GraphicalInterface
+    description: Entrez BioSample search over biological sample records and their
+      links to experimental data.
+    format: http
+    id: biosample.web
+    name: BioSample Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/biosample/
+  - category: Product
+    description: Bulk BioSample records in XML and attribute summary files.
+    format: xml
+    id: biosample.ftp
+    name: BioSample FTP
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://ftp.ncbi.nlm.nih.gov/biosample/
+  - category: ProgrammingInterface
+    connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+    description: Entrez Programming Utilities (E-utilities), a set of server-side
+      programs (EInfo, ESearch, ESummary, EFetch, ELink, EPost, EGQuery, ESpell, ECitMatch)
+      with a fixed URL syntax for searching, linking and retrieving records from the
+      38 Entrez databases. Results are returned as XML, with JSON available for several
+      utilities.
+    format: mixed
+    id: entrez.eutils
+    name: Entrez E-utilities
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: ncbitaxon
+  - category: GraphicalInterface
+    description: NCBI global cross-database search page, which runs a single query
+      against all Entrez databases and reports hit counts per database.
+    format: http
+    id: entrez.web
+    name: Entrez Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/search/
+  - category: ProgrammingInterface
+    description: Entrez Direct (EDirect) command-line tools for Unix systems that
+      wrap the E-utilities (esearch, efetch, elink, efilter, xtract and others) for
+      pipeline access to Entrez databases.
+    format: mixed
+    id: entrez.edirect
+    name: Entrez Direct (EDirect)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
+    repository: https://github.com/ncbi/entrez-direct
+  publications:
+  - authors:
+    - T. Barrett
+    - K. Clark
+    - R. Gevorgyan
+    - V. Gorelenkov
+    - et al.
+    doi: 10.1093/nar/gkr1163
+    id: doi:10.1093/nar/gkr1163
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'BioProject and BioSample databases at NCBI: facilitating capture and organization
+      of metadata'
+    year: '2012'
+  synonyms:
+  - BioSample
 - activity_status: active
   category: DataSource
   contacts:
@@ -43467,6 +44175,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: Product
     description: Downloadable gene set files in GMT, XML, and other formats for human
@@ -43500,6 +44210,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -44751,6 +45463,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -44802,6 +45522,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -44847,6 +45575,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -46188,6 +46924,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -49335,6 +50073,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -75114,6 +75854,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: ProgrammingInterface
     connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
@@ -75162,6 +75904,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -75213,6 +75963,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -75258,6 +76016,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   - category: GraphicalInterface
@@ -75296,6 +76062,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -75335,6 +76105,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -77765,6 +78539,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -79799,6 +80575,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   publications:
   - authors:
@@ -81715,6 +82493,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -83708,6 +84488,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
 - activity_status: active
   category: DataSource
@@ -85076,6 +85858,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -95025,6 +95809,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   repository: https://github.com/multiomicsKP/clinical_trials_kp
   tags:
@@ -97839,6 +98625,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: ProgrammingInterface
     connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
@@ -97887,6 +98675,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -97938,6 +98734,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -97983,6 +98787,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -100960,6 +101772,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -101011,6 +101831,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -101056,6 +101884,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -101614,6 +102450,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -101665,6 +102509,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -101710,6 +102562,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -105889,6 +106749,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: Product
     description: Downloadable gene set files in GMT, XML, and other formats for human
@@ -105922,6 +106784,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -107472,6 +108336,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -114745,6 +115611,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -117325,6 +118193,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -123847,6 +124717,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   repository: https://github.com/multiomicsKP/drug_approvals_kp
 - activity_status: active
@@ -131342,6 +132214,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -135982,6 +136856,123 @@ resources:
     product_file_size: 489
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/ECOSIM.tar.gz
   repository: https://github.com/bioepic-data/ecosim-ontology
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://cfpub.epa.gov/ecotox/
+    label: U.S. Environmental Protection Agency (EPA), Office of Research and Development
+  creation_date: '2026-10-27T00:00:00Z'
+  description: The ECOTOXicology Knowledgebase (ECOTOX) is the U.S. EPA's curated
+    knowledgebase of single-chemical toxicity test results for ecologically relevant
+    aquatic and terrestrial species, abstracted from the peer-reviewed literature.
+    Each record captures the chemical, test species, exposure conditions, and measured
+    effects and endpoints. ECOTOX supports environmental research, chemical risk assessment,
+    and the development of ecological models and QSARs.
+  domains:
+  - toxicology
+  - ecology
+  - environment
+  - environmental exposure
+  homepage_url: https://cfpub.epa.gov/ecotox/
+  id: ecotox
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.usa.gov/government-works
+    label: U.S. Government Work (public domain)
+  name: ECOTOX Knowledgebase
+  products:
+  - category: GraphicalInterface
+    description: ECOTOX web interface for searching and exploring toxicity records
+      by chemical, species, and effect, with result export.
+    format: http
+    id: ecotox.web
+    name: ECOTOX Knowledgebase Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
+    product_url: https://cfpub.epa.gov/ecotox/
+  - category: DocumentationProduct
+    description: ECOTOX help and user documentation.
+    format: http
+    id: ecotox.help
+    name: ECOTOX Help
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
+    product_url: https://cfpub.epa.gov/ecotox/help.cfm
+  - category: Product
+    description: TERA knowledge graph dataset snapshot version 1.1.0 hosted on Zenodo,
+      including NT files and CSV mappings
+    format: http
+    id: tera.zenodo-dataset
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY 4.0
+    name: TERA Knowledge Graph Dataset (Zenodo)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
+    product_file_size: 5905580032
+    product_url: https://zenodo.org/records/4244313
+  - category: Product
+    description: Chemical data from EPA ECOTOX in N-Triples RDF format
+    format: ntriples
+    id: tera.ecotox-chemical-nt
+    name: ECOTOX Chemical Data (N-Triples)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
+    product_file_size: 680300
+    product_url: https://zenodo.org/records/4244313/files/ecotox_chemical.nt
+  - category: Product
+    description: Taxonomy data from EPA ECOTOX in N-Triples RDF format
+    format: ntriples
+    id: tera.ecotox-taxonomy-nt
+    name: ECOTOX Taxonomy Data (N-Triples)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
+    product_file_size: 22800000
+    product_url: https://zenodo.org/records/4244313/files/ecotox_taxonomy.nt
+  - category: Product
+    description: Chemical effects data in N-Triples RDF format
+    format: ntriples
+    id: tera.effects-nt
+    name: Effects Data (N-Triples)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
+    product_file_size: 1000000000
+    product_url: https://zenodo.org/records/4244313/files/effects.nt
+  publications:
+  - authors:
+    - Jennifer H. Olker
+    - Colleen M. Elonen
+    - Anne Pilli
+    - Arne Anderson
+    - et al.
+    doi: 10.1002/etc.5324
+    id: doi:10.1002/etc.5324
+    journal: Environmental Toxicology and Chemistry
+    preferred: true
+    title: 'The ECOTOXicology Knowledgebase: A Curated Database of Ecologically Relevant
+      Toxicity Tests to Support Environmental Research and Risk Assessment'
+    year: '2022'
+  synonyms:
+  - ECOTOX
+  - ECOTOXicology Knowledgebase
 - activity_status: active
   category: Aggregator
   contacts:
@@ -144244,6 +145235,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -144697,6 +145690,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphProduct
     description: Neo4j knowledge graph integrating transcription factor target libraries,
@@ -149154,6 +150149,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -149205,6 +150208,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -149250,6 +150261,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -171993,6 +173012,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   publications:
   - authors:
@@ -172232,6 +173253,260 @@ resources:
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:4932
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ncbi.nlm.nih.gov/genbank/
+    label: National Center for Biotechnology Information (NCBI)
+  creation_date: '2026-10-27T00:00:00Z'
+  description: GenBank is the NIH genetic sequence database, an annotated collection
+    of all publicly available DNA sequences, built from submissions by individual
+    laboratories and large-scale sequencing projects. It is part of the International
+    Nucleotide Sequence Database Collaboration (INSDC), exchanging data daily with
+    the DNA Data Bank of Japan (DDBJ) and the European Nucleotide Archive (ENA). GenBank
+    records are searchable through the Entrez Nucleotide database and distributed
+    as bimonthly releases with daily updates.
+  domains:
+  - genomics
+  - biomedical
+  homepage_url: https://www.ncbi.nlm.nih.gov/genbank/
+  id: genbank
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/genbank/about/
+    label: NCBI policies (no restrictions on use or distribution of GenBank data)
+  name: GenBank
+  products:
+  - category: Product
+    compression: gzip
+    description: Full GenBank releases (every two months) and daily update files in
+      GenBank flat-file format.
+    format: txt
+    id: genbank.ftp
+    name: GenBank FTP Releases
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    product_url: https://ftp.ncbi.nlm.nih.gov/genbank/
+  - category: GraphicalInterface
+    description: Entrez Nucleotide search over GenBank and other nucleotide sequence
+      records.
+    format: http
+    id: genbank.nucleotide
+    name: Entrez Nucleotide
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    product_url: https://www.ncbi.nlm.nih.gov/nuccore/
+  - category: ProgrammingInterface
+    connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+    description: Entrez Programming Utilities (E-utilities), a set of server-side
+      programs (EInfo, ESearch, ESummary, EFetch, ELink, EPost, EGQuery, ESpell, ECitMatch)
+      with a fixed URL syntax for searching, linking and retrieving records from the
+      38 Entrez databases. Results are returned as XML, with JSON available for several
+      utilities.
+    format: mixed
+    id: entrez.eutils
+    name: Entrez E-utilities
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: ncbitaxon
+  - category: GraphicalInterface
+    description: NCBI global cross-database search page, which runs a single query
+      against all Entrez databases and reports hit counts per database.
+    format: http
+    id: entrez.web
+    name: Entrez Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/search/
+  - category: ProgrammingInterface
+    description: Entrez Direct (EDirect) command-line tools for Unix systems that
+      wrap the E-utilities (esearch, efetch, elink, efilter, xtract and others) for
+      pipeline access to Entrez databases.
+    format: mixed
+    id: entrez.edirect
+    name: Entrez Direct (EDirect)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
+    repository: https://github.com/ncbi/entrez-direct
+  - category: GraphicalInterface
+    description: Entrez search interface for NCBI Protein sequence records, with links
+      to Gene, Nucleotide, Structure, and Conserved Domains.
+    format: http
+    id: ncbi-protein.web
+    name: NCBI Protein Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: pir
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    product_url: https://www.ncbi.nlm.nih.gov/protein/
+  publications:
+  - authors:
+    - Eric W. Sayers
+    - Mark Cavanaugh
+    - Linda Frisse
+    - Kim D. Pruitt
+    - et al.
+    doi: 10.1093/nar/gkae1114
+    id: doi:10.1093/nar/gkae1114
+    journal: Nucleic Acids Research
+    preferred: true
+    title: GenBank 2025 update
+    year: '2025'
+  synonyms:
+  - NCBI GenBank
+  - Nucleotide
 - activity_status: active
   category: DataSource
   contacts:
@@ -175992,6 +177267,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: ProgrammingInterface
     connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
@@ -176040,6 +177317,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -176091,6 +177376,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -176136,6 +177429,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   - category: Product
@@ -176189,6 +177490,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -178760,6 +180063,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -179311,6 +180616,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -179354,6 +180661,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   repository: https://github.com/broadinstitute/genetics-kp-dev
 - activity_status: active
@@ -183840,6 +185149,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -191396,6 +192707,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -191427,6 +192740,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -195286,6 +196601,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -201215,6 +202532,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -203550,6 +204869,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -203601,6 +204928,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -203646,6 +204981,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -204256,6 +205599,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -204287,6 +205632,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -208401,6 +209748,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: OxO2 web interface for searching and browsing ontology cross-references
@@ -208438,6 +209787,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -208477,6 +209830,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -221635,6 +222992,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -225954,6 +227313,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -225985,6 +227346,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -228809,6 +230172,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: OntologyProduct
     compression: gzip
@@ -234458,6 +235823,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -235249,6 +236616,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -239450,6 +240819,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -239493,6 +240864,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   publications:
   - authors:
@@ -243319,8 +244692,6 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-10: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
       when accessing file'
   - category: DocumentationProduct
@@ -244045,6 +245416,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: OxO2 web interface for searching and browsing ontology cross-references
@@ -244082,6 +245455,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -244121,6 +245498,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -246341,8 +247722,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: inparanoid
     product_url: https://inparanoidb.sbc.su.se/
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: Download area serving proteomes, species lists, and pairwise ortholog
       and domain files (as tab-delimited SQLtable text or OrthoXML), plus previous
       versions back to v2.0.
@@ -253184,6 +254564,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -256453,6 +257835,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -259035,6 +260419,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -259066,6 +260452,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -261200,6 +262588,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -262915,7 +264305,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-27T20:57:07Z'
+  last_modified_date: '2026-10-27T22:44:29Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -266174,6 +267564,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   synonyms:
   - HMS LINCS KINOMEscan
@@ -269400,6 +270792,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -273406,6 +274800,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -273445,6 +274843,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   publications:
   - authors:
@@ -281279,6 +282681,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -281330,6 +282740,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -281375,6 +282793,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -285917,6 +287343,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -285968,6 +287402,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -286013,6 +287455,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -289821,6 +291271,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: Product
     description: Downloadable gene set files for mouse collections including mouse-ortholog
@@ -289846,6 +291298,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -289889,6 +291343,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -289928,6 +291386,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -291710,6 +293172,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   publications:
   - authors:
@@ -293610,6 +295074,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -294921,6 +296387,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -294952,6 +296420,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -296055,6 +297525,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -296086,6 +297558,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -298035,6 +299509,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -300178,6 +301654,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -300221,6 +301699,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   repository: https://github.com/broadinstitute/molecular-data-provider
   synonyms:
@@ -300562,6 +302042,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -300601,6 +302085,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -305015,6 +306503,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -305054,6 +306546,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: OntologyProduct
     compression: gzip
@@ -306375,6 +307871,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -308145,6 +309643,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: Product
     description: Downloadable gene set files for mouse collections including mouse-ortholog
@@ -308170,6 +309670,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -309910,6 +311412,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -309941,6 +311445,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -311787,6 +313293,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -312383,6 +313891,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
 - activity_status: active
   category: DataSource
@@ -316683,6 +318193,226 @@ resources:
     product_url: https://seqapass.epa.gov/seqapass/
   rrid: SCR_006472
 - activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ncbi.nlm.nih.gov/protein/
+    label: National Center for Biotechnology Information (NCBI)
+  creation_date: '2026-10-27T00:00:00Z'
+  description: The NCBI Protein database is a collection of protein sequence records
+    from several sources, including translations of annotated coding regions in GenBank
+    and RefSeq, as well as records from UniProtKB/Swiss-Prot, PIR, PRF, and PDB. It
+    is searchable through Entrez and linked to related NCBI resources such as Gene,
+    Nucleotide, Structure, and Conserved Domains. On 2026-10-26 it held about 1.66
+    billion records.
+  domains:
+  - proteomics
+  - genomics
+  - biomedical
+  homepage_url: https://www.ncbi.nlm.nih.gov/protein/
+  id: ncbi-protein
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    label: NCBI usage policies
+  name: NCBI Protein
+  products:
+  - category: GraphicalInterface
+    description: Entrez search interface for NCBI Protein sequence records, with links
+      to Gene, Nucleotide, Structure, and Conserved Domains.
+    format: http
+    id: ncbi-protein.web
+    name: NCBI Protein Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: pir
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    product_url: https://www.ncbi.nlm.nih.gov/protein/
+  - category: ProgrammingInterface
+    connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+    description: Entrez Programming Utilities (E-utilities), a set of server-side
+      programs (EInfo, ESearch, ESummary, EFetch, ELink, EPost, EGQuery, ESpell, ECitMatch)
+      with a fixed URL syntax for searching, linking and retrieving records from the
+      38 Entrez databases. Results are returned as XML, with JSON available for several
+      utilities.
+    format: mixed
+    id: entrez.eutils
+    name: Entrez E-utilities
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: ncbitaxon
+  - category: GraphicalInterface
+    description: NCBI global cross-database search page, which runs a single query
+      against all Entrez databases and reports hit counts per database.
+    format: http
+    id: entrez.web
+    name: Entrez Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/search/
+  - category: ProgrammingInterface
+    description: Entrez Direct (EDirect) command-line tools for Unix systems that
+      wrap the E-utilities (esearch, efetch, elink, efilter, xtract and others) for
+      pipeline access to Entrez databases.
+    format: mixed
+    id: entrez.edirect
+    name: Entrez Direct (EDirect)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: entrez
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: pmc
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: ncbitaxon
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dbsnp
+    - relation_type: prov:hadPrimarySource
+      source: dbvar
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: medgen
+    - relation_type: prov:hadPrimarySource
+      source: gtr
+    - relation_type: prov:hadPrimarySource
+      source: mesh
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: sra
+    - relation_type: prov:hadPrimarySource
+      source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
+    repository: https://github.com/ncbi/entrez-direct
+  synonyms:
+  - Protein
+  - Entrez Protein
+- activity_status: active
   category: DataSource
   contacts:
   - category: Organization
@@ -318924,6 +320654,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -321216,6 +322954,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: NCBI global cross-database search page, which runs a single query
@@ -321260,6 +323000,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -321305,6 +323053,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   - category: GraphicalInterface
@@ -322844,6 +324600,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -325322,6 +327086,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -325367,6 +327139,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   - category: OntologyProduct
@@ -326037,6 +327817,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
 - activity_status: active
   category: Ontology
@@ -332622,6 +334404,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -332665,6 +334449,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   publications:
   - authors:
@@ -344913,6 +346699,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -344952,6 +346742,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   publications:
   - authors:
@@ -350373,6 +352167,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: ProgrammingInterface
     connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
@@ -350421,6 +352217,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -350472,6 +352276,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -350517,6 +352329,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   - category: GraphicalInterface
@@ -351331,6 +353151,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -351374,6 +353196,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   repository: https://github.com/NCATS-Gamma/omnicorp
   synonyms:
@@ -354989,6 +356813,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   publications:
   - authors:
@@ -355960,6 +357786,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -355999,6 +357829,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   publications:
   - authors:
@@ -359732,6 +361566,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -360673,6 +362509,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -360712,6 +362552,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   repository: https://github.com/EBISPOT/oxo2
   synonyms:
@@ -364456,6 +366300,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -373775,6 +375621,26 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubtator
     product_url: https://pharos.nih.gov/graphql
+  - category: GraphicalInterface
+    description: Entrez search interface for NCBI Protein sequence records, with links
+      to Gene, Nucleotide, Structure, and Conserved Domains.
+    format: http
+    id: ncbi-protein.web
+    name: NCBI Protein Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: pir
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    product_url: https://www.ncbi.nlm.nih.gov/protein/
   publications:
   - authors:
     - wwPDB consortium
@@ -377714,6 +379580,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -378325,6 +380193,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -385568,6 +387438,26 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikipedia
     product_url: https://mygene.info/v3/api
+  - category: GraphicalInterface
+    description: Entrez search interface for NCBI Protein sequence records, with links
+      to Gene, Nucleotide, Structure, and Conserved Domains.
+    format: http
+    id: ncbi-protein.web
+    name: NCBI Protein Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: pir
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    product_url: https://www.ncbi.nlm.nih.gov/protein/
   publications:
   - authors:
     - Wu CH
@@ -389166,6 +391056,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -389217,6 +391115,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -389262,6 +391168,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   synonyms:
@@ -401143,6 +403057,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -405991,6 +407907,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -406042,6 +407966,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -406087,6 +408019,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   - category: GraphicalInterface
@@ -407366,6 +409306,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -409465,6 +411413,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -409510,6 +411466,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   - category: GraphicalInterface
@@ -417928,6 +419892,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -417959,6 +419925,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -420886,6 +422854,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -425155,6 +427125,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -425206,6 +427184,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -425251,8 +427237,36 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
+  - category: GraphicalInterface
+    description: Entrez search interface for NCBI Protein sequence records, with links
+      to Gene, Nucleotide, Structure, and Conserved Domains.
+    format: http
+    id: ncbi-protein.web
+    name: NCBI Protein Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: pir
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    product_url: https://www.ncbi.nlm.nih.gov/protein/
   publications:
   - authors:
     - Nuala A. O'Leary
@@ -438531,6 +440545,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -438574,6 +440590,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   repository: https://github.com/NCATS-Gamma/robokop
   rrid: SCR_023437
@@ -442300,6 +444318,164 @@ resources:
       source: openalex
     product_url: https://github.com/metaphacts/semopenalex
 - activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: github
+      value: cthoyt
+    label: Charles Tapley Hoyt
+    orcid: 0000-0003-4423-4370
+  creation_date: '2026-10-27T00:00:00Z'
+  description: SeMRA (Semantic Mapping Reasoner and Assembler) is a Python package
+    and dataset for assembling and reasoning over semantic mappings at scale. It provides
+    an SSSOM-based object model for mappings, inference over chains of mappings, a
+    provenance model for automatically generated mappings, and a confidence model
+    at the curator, mapping-set, and community levels. The SeMRA Raw Semantic Mappings
+    Database is a pre-assembled set of semantic mappings drawn from hundreds of ontologies
+    and databases, published on Zenodo and rebuildable with `semra build`, alongside
+    domain-specific processed mapping databases.
+  domains:
+  - metadata
+  - information technology
+  - biomedical
+  homepage_url: https://github.com/biopragmatics/semra
+  id: semra
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://github.com/biopragmatics/semra/blob/main/LICENSE
+    label: MIT
+  name: SeMRA (Semantic Mapping Reasoner and Assembler)
+  products:
+  - category: MappingProduct
+    description: SeMRA Raw Semantic Mappings Database, pre-assembled semantic mappings
+      from ontologies indexed in the Bioregistry, databases integrated in PyOBO, Biomappings,
+      Wikidata, and custom SeMRA resources, published on Zenodo under CC0.
+    format: sssom
+    id: semra.raw-mappings
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: SeMRA Raw Semantic Mappings Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_url: https://doi.org/10.5281/zenodo.11082038
+  - category: ProcessProduct
+    description: SeMRA Python package for assembling, reasoning over, and processing
+      semantic mappings.
+    format: python
+    id: semra.code
+    name: SeMRA Python Package
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    product_url: https://github.com/biopragmatics/semra
+  - category: DocumentationProduct
+    description: SeMRA documentation on Read the Docs.
+    format: http
+    id: semra.docs
+    name: SeMRA Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    product_url: https://semra.readthedocs.io/
+  - category: GraphicalInterface
+    description: OxO2 web interface for searching and browsing ontology cross-references
+      and SSSOM mappings, including asserted mappings from OLS ontologies and curated
+      mapping sets, plus inferred cross-set mappings
+    format: http
+    id: oxo.portal
+    name: OxO Web Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: oxo
+    - relation_type: prov:hadPrimarySource
+      source: ols
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: mondo
+    - relation_type: prov:hadPrimarySource
+      source: uberon
+    - relation_type: prov:hadPrimarySource
+      source: upheno
+    - relation_type: prov:hadPrimarySource
+      source: impc
+    - relation_type: prov:hadPrimarySource
+      source: mgi
+    - relation_type: prov:hadPrimarySource
+      source: monarchinitiative
+    - relation_type: prov:hadPrimarySource
+      source: loinc
+    - relation_type: prov:hadPrimarySource
+      source: gwascatalog
+    - relation_type: prov:hadPrimarySource
+      source: opentargets
+    - relation_type: prov:hadPrimarySource
+      source: ukbiobank
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    product_url: https://www.ebi.ac.uk/spot/oxo/
+  - category: ProgrammingInterface
+    connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
+    description: OxO2 REST API (OpenAPI 3) for querying mappings, mapping sets, and
+      ontologies; supports SSSOM-shaped JSON and SSSOM TSV export of mapping search
+      results. Also exposes legacy OxO v1-compatible endpoints.
+    format: http
+    id: oxo.api
+    is_public: true
+    name: OxO2 REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: oxo
+    - relation_type: prov:hadPrimarySource
+      source: ols
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: mondo
+    - relation_type: prov:hadPrimarySource
+      source: uberon
+    - relation_type: prov:hadPrimarySource
+      source: upheno
+    - relation_type: prov:hadPrimarySource
+      source: impc
+    - relation_type: prov:hadPrimarySource
+      source: mgi
+    - relation_type: prov:hadPrimarySource
+      source: monarchinitiative
+    - relation_type: prov:hadPrimarySource
+      source: loinc
+    - relation_type: prov:hadPrimarySource
+      source: gwascatalog
+    - relation_type: prov:hadPrimarySource
+      source: opentargets
+    - relation_type: prov:hadPrimarySource
+      source: ukbiobank
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
+  repository: https://github.com/biopragmatics/semra
+  synonyms:
+  - SeMRA
+  - Semantic Mapping Reasoner and Assembler
+- activity_status: active
   category: DataSource
   contacts:
   - category: Organization
@@ -443528,6 +445704,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   publications:
   - authors:
@@ -446832,6 +449010,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -458893,6 +461073,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
     secondary_source:
     - relation_type: prov:wasInformedBy
@@ -458944,6 +461132,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct (EDirect) command-line tools for Unix systems that
@@ -458989,6 +461185,14 @@ resources:
       source: sra
     - relation_type: prov:hadPrimarySource
       source: cdd
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: bioproject
+    - relation_type: prov:hadPrimarySource
+      source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
   publications:
@@ -461005,6 +463209,152 @@ resources:
     title: Annotation of spatially resolved single-cell data with STELLAR
     year: '2022'
   repository: https://github.com/snap-stanford/stellar
+- activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://renci.org/
+    - contact_type: github
+      value: ranking-agent
+    label: Renaissance Computing Institute (RENCI)
+  creation_date: '2026-10-27T00:00:00Z'
+  description: Strider is the knowledge-provider querying and answer-generating module
+    of the ARAGORN autonomous relay agent in the NCATS Biomedical Data Translator.
+    It accepts a biomedical question as a Translator Reasoner API (TRAPI) message,
+    decomposes the query graph into one-hop subqueries, sends them to registered Translator
+    knowledge providers (KPs), and assembles their responses into TRAPI results asynchronously.
+    It is developed by RENCI in the ranking-agent GitHub organization.
+  domains:
+  - biomedical
+  - software
+  - information technology
+  homepage_url: https://strider.renci.org/docs
+  id: strider
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://github.com/ranking-agent/strider/blob/master/LICENSE
+    label: MIT
+  name: Strider
+  products:
+  - category: ProgrammingInterface
+    description: Strider TRAPI web service (RENCI deployment), with OpenAPI documentation;
+      answers TRAPI query graphs by querying registered Translator knowledge providers.
+    format: http
+    id: strider.api
+    name: Strider TRAPI API (RENCI)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: strider
+    product_url: https://strider.renci.org/docs
+  - category: ProgrammingInterface
+    description: Strider TRAPI web service on the NCATS Translator ITRB infrastructure.
+    format: http
+    id: strider.api.itrb
+    name: Strider TRAPI API (ITRB)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: strider
+    product_url: https://strider.transltr.io/docs
+  - category: ProcessProduct
+    description: Strider source code (Python), with Docker-based development and test
+      tooling.
+    format: python
+    id: strider.code
+    name: Strider Source Code
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: strider
+    product_url: https://github.com/ranking-agent/strider
+  - category: ProgrammingInterface
+    description: RENCI-hosted TRAPI endpoint (/query, /asyncquery) for the ARAGORN
+      ARA, with Swagger documentation. Queries are answered by Strider over the knowledge
+      providers it has registered (here including the Automat ROBOKOP KG, CAM-KP,
+      ICEES, Ubergraph, GeLiNEA, Genetics KP, MolePro, OpenPredict and Text Mining
+      KP co-occurrence), plus direct ROBOKOP KG lookups for inferred queries, SRI
+      Node Normalizer identifier normalization and OmniCorp literature co-occurrence
+      overlays for scoring.
+    format: http
+    id: aragorn.api
+    name: ARAGORN API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: aragorn
+    - relation_type: prov:hadPrimarySource
+      source: robokop
+    - relation_type: prov:hadPrimarySource
+      source: automat
+    - relation_type: prov:hadPrimarySource
+      source: omnicorp
+    - relation_type: prov:hadPrimarySource
+      source: node-normalizer
+    - relation_type: prov:hadPrimarySource
+      source: cam-kp
+    - relation_type: prov:hadPrimarySource
+      source: icees-kg
+    - relation_type: prov:hadPrimarySource
+      source: ubergraph
+    - relation_type: prov:hadPrimarySource
+      source: gelinea
+    - relation_type: prov:hadPrimarySource
+      source: genetics-kp
+    - relation_type: prov:hadPrimarySource
+      source: molepro
+    - relation_type: prov:hadPrimarySource
+      source: openpredict
+    - relation_type: prov:hadPrimarySource
+      source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
+    product_url: https://aragorn.renci.org/docs
+  - category: ProgrammingInterface
+    description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
+      with Swagger documentation. Like the RENCI deployment it queries knowledge providers
+      through Strider, looks up the ROBOKOP KG via Automat, normalizes identifiers
+      with the SRI Node Normalizer and scores answers with OmniCorp literature co-occurrence.
+    format: http
+    id: aragorn.api.itrb
+    is_public: true
+    name: ARAGORN Production API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: aragorn
+    - relation_type: prov:hadPrimarySource
+      source: robokop
+    - relation_type: prov:hadPrimarySource
+      source: automat
+    - relation_type: prov:hadPrimarySource
+      source: omnicorp
+    - relation_type: prov:hadPrimarySource
+      source: node-normalizer
+    - relation_type: prov:hadPrimarySource
+      source: cam-kp
+    - relation_type: prov:hadPrimarySource
+      source: icees-kg
+    - relation_type: prov:hadPrimarySource
+      source: genetics-kp
+    - relation_type: prov:hadPrimarySource
+      source: molepro
+    - relation_type: prov:hadPrimarySource
+      source: cohd
+    - relation_type: prov:hadPrimarySource
+      source: connections-hypothesis-kp
+    - relation_type: prov:hadPrimarySource
+      source: ctkp
+    - relation_type: prov:hadPrimarySource
+      source: multiomics-kp
+    - relation_type: prov:hadPrimarySource
+      source: drug-approvals-kp
+    - relation_type: prov:hadPrimarySource
+      source: microbiomekg
+    - relation_type: prov:hadPrimarySource
+      source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
+    product_url: https://aragorn.transltr.io/aragorn/docs
+  repository: https://github.com/ranking-agent/strider
 - activity_status: active
   category: DataSource
   collection:
@@ -473792,7 +476142,7 @@ resources:
   evaluation_page: resource/tera/tera_eval_automated.html
   homepage_url: https://niva-knowledge-graph.github.io/TERA/
   id: tera
-  last_modified_date: '2026-09-23T00:00:00Z'
+  last_modified_date: '2026-10-27T00:00:00Z'
   layout: resource_detail
   license:
     id: https://opensource.org/licenses/MIT
@@ -473820,6 +476170,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
     product_file_size: 5905580032
     product_url: https://zenodo.org/records/4244313
   - category: Product
@@ -473830,6 +476182,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
     product_file_size: 680300
     product_url: https://zenodo.org/records/4244313/files/ecotox_chemical.nt
   - category: Product
@@ -473840,6 +476194,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
     product_file_size: 22800000
     product_url: https://zenodo.org/records/4244313/files/ecotox_taxonomy.nt
   - category: Product
@@ -473850,6 +476206,8 @@ resources:
     original_source:
     - relation_type: prov:hadPrimarySource
       source: tera
+    - relation_type: prov:hadPrimarySource
+      source: ecotox
     product_file_size: 1000000000
     product_url: https://zenodo.org/records/4244313/files/effects.nt
   - category: Product
@@ -474519,6 +476877,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   repository: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
   synonyms:
@@ -477388,6 +479748,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -482126,6 +484488,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -484762,6 +487126,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   repository: https://github.com/INCATools/ubergraph
 - activity_status: active
@@ -490306,6 +492672,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -490345,6 +492715,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: OntologyProduct
     compression: gzip
@@ -491964,6 +494338,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -492417,6 +494793,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: OxO2 web interface for searching and browsing ontology cross-references
@@ -492454,6 +494832,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -492493,6 +494875,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   publications:
   - authors:
@@ -503641,6 +506027,26 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubtator
     product_url: https://pharos.nih.gov/graphql
+  - category: GraphicalInterface
+    description: Entrez search interface for NCBI Protein sequence records, with links
+      to Gene, Nucleotide, Structure, and Conserved Domains.
+    format: http
+    id: ncbi-protein.web
+    name: NCBI Protein Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi-protein
+    - relation_type: prov:hadPrimarySource
+      source: genbank
+    - relation_type: prov:hadPrimarySource
+      source: refseq
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    - relation_type: prov:hadPrimarySource
+      source: pir
+    - relation_type: prov:hadPrimarySource
+      source: pdb
+    product_url: https://www.ncbi.nlm.nih.gov/protein/
   publications:
   - authors:
     - Alex Bateman
@@ -505188,6 +507594,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -505227,6 +507637,10 @@ resources:
       source: ukbiobank
     - relation_type: prov:hadPrimarySource
       source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: semra
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
   - category: OntologyProduct
     compression: gzip
@@ -510918,6 +513332,26 @@ resources:
     secondary_source:
     - relation_type: prov:wasInfluencedBy
       source: wikidata
+  - category: MappingProduct
+    description: SeMRA Raw Semantic Mappings Database, pre-assembled semantic mappings
+      from ontologies indexed in the Bioregistry, databases integrated in PyOBO, Biomappings,
+      Wikidata, and custom SeMRA resources, published on Zenodo under CC0.
+    format: sssom
+    id: semra.raw-mappings
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: SeMRA Raw Semantic Mappings Database
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: semra
+    - relation_type: prov:hadPrimarySource
+      source: bioregistry
+    - relation_type: prov:hadPrimarySource
+      source: biomappings
+    - relation_type: prov:hadPrimarySource
+      source: wikidata
+    product_url: https://doi.org/10.5281/zenodo.11082038
   repository: https://www.mediawiki.org/wiki/Wikibase
   synonyms:
   - Wikidata
@@ -513479,6 +515913,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -513510,6 +515946,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -514444,6 +516882,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -528430,6 +530870,251 @@ resources:
   taxon:
   - NCBITaxon:1
 - activity_status: inactive
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.biocarta.com/
+    label: BioCarta
+  creation_date: '2026-10-27T00:00:00Z'
+  description: BioCarta was a commercial collection of interactive, community-contributed
+    pathway diagrams covering signaling, metabolic, and immunologic pathways in human
+    and mouse, each listing the genes and proteins that participate in the pathway.
+    The original BioCarta website is no longer online, and the NCI Cancer Genome Anatomy
+    Project (CGAP) mirror of the BioCarta pathways has been retired. The pathway gene
+    sets persist in downstream resources, most notably the MSigDB C2 CP:BIOCARTA subcollection
+    (human and mouse) and the Enrichr BioCarta gene set libraries.
+  domains:
+  - pathways
+  - systems biology
+  - biomedical
+  homepage_url: https://www.biocarta.com/
+  id: biocarta
+  last_modified_date: '2026-10-27T00:00:00Z'
+  layout: resource_detail
+  name: BioCarta
+  products:
+  - category: GraphicalInterface
+    description: Former NCI CGAP mirror of the BioCarta pathway diagrams and gene
+      lists. Retired; the page now shows a CGAP retirement notice.
+    format: http
+    id: biocarta.cgap-pathways
+    name: BioCarta Pathways (NCI CGAP mirror, retired)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
+    product_url: https://cgap.nci.nih.gov/Pathways/BioCarta_Pathways
+  - category: Product
+    description: Downloadable Enrichr gene set libraries (more than 200 libraries
+      across transcription, pathways, ontologies, diseases/drugs, cell types, crowd-contributed,
+      and legacy categories), each retrievable as a GMT-style tab-delimited text file
+      via the geneSetLibrary endpoint (e.g. geneSetLibrary?mode=text&libraryName=KEGG_2021_Human).
+      Libraries are compiled from external databases including GO, KEGG, Reactome,
+      WikiPathways, MSigDB, ChEA/ENCODE, GTEx, ARCHS4, LINCS L1000, GEO, DisGeNET,
+      OMIM, GWAS Catalog, HPO, MGI, CellMarker, and others.
+    format: txt
+    id: enrichr.libraries
+    name: Enrichr Gene Set Libraries
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: enrichr
+    - relation_type: prov:hadPrimarySource
+      source: archs4
+    - relation_type: prov:hadPrimarySource
+      source: achilles
+    - relation_type: prov:hadPrimarySource
+      source: depmap
+    - relation_type: prov:hadPrimarySource
+      source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: hubmap
+    - relation_type: prov:hadPrimarySource
+      source: bioplanet
+    - relation_type: prov:hadPrimarySource
+      source: bioplex
+    - relation_type: prov:hadPrimarySource
+      source: cellmarker
+    - relation_type: prov:hadPrimarySource
+      source: chea
+    - relation_type: prov:hadPrimarySource
+      source: msigdb
+    - relation_type: prov:hadPrimarySource
+      source: ucsc
+    - relation_type: prov:hadPrimarySource
+      source: clinvar
+    - relation_type: prov:hadPrimarySource
+      source: dgidb
+    - relation_type: prov:hadPrimarySource
+      source: disgenet
+    - relation_type: prov:hadPrimarySource
+      source: drugcentral
+    - relation_type: prov:hadPrimarySource
+      source: encode
+    - relation_type: prov:hadPrimarySource
+      source: gtex
+    - relation_type: prov:hadPrimarySource
+      source: gwascatalog
+    - relation_type: prov:hadPrimarySource
+      source: dbgap
+    - relation_type: prov:hadPrimarySource
+      source: ukbiobank
+    - relation_type: prov:hadPrimarySource
+      source: hmdb
+    - relation_type: prov:hadPrimarySource
+      source: kinomescan
+    - relation_type: prov:hadPrimarySource
+      source: homologene
+    - relation_type: prov:hadPrimarySource
+      source: humancyc
+    - relation_type: prov:hadPrimarySource
+      source: biogps
+    - relation_type: prov:hadPrimarySource
+      source: hp
+    - relation_type: prov:hadPrimarySource
+      source: mp
+    - relation_type: prov:hadPrimarySource
+      source: mgi
+    - relation_type: prov:hadPrimarySource
+      source: impc
+    - relation_type: prov:hadPrimarySource
+      source: interpro
+    - relation_type: prov:hadPrimarySource
+      source: pfam
+    - relation_type: prov:hadPrimarySource
+      source: jaspar
+    - relation_type: prov:hadPrimarySource
+      source: compartments
+    - relation_type: prov:hadPrimarySource
+      source: diseases
+    - relation_type: prov:hadPrimarySource
+      source: tissues
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    - relation_type: prov:hadPrimarySource
+      source: reactome
+    - relation_type: prov:hadPrimarySource
+      source: wikipathways
+    - relation_type: prov:hadPrimarySource
+      source: pfocr
+    - relation_type: prov:hadPrimarySource
+      source: panther
+    - relation_type: prov:hadPrimarySource
+      source: ncipidkg
+    - relation_type: prov:hadPrimarySource
+      source: go
+    - relation_type: prov:hadPrimarySource
+      source: lincs-l1000
+    - relation_type: prov:hadPrimarySource
+      source: sigcom-lincs
+    - relation_type: prov:hadPrimarySource
+      source: cmap
+    - relation_type: prov:hadPrimarySource
+      source: motrpac
+    - relation_type: prov:hadPrimarySource
+      source: omim
+    - relation_type: prov:hadPrimarySource
+      source: orphanet
+    - relation_type: prov:hadPrimarySource
+      source: proteomicsdb
+    - relation_type: prov:hadPrimarySource
+      source: open-tggates
+    - relation_type: prov:hadPrimarySource
+      source: trrust
+    - relation_type: prov:hadPrimarySource
+      source: mint
+    - relation_type: prov:hadPrimarySource
+      source: mirtarbase
+    - relation_type: prov:hadPrimarySource
+      source: corum
+    - relation_type: prov:hadPrimarySource
+      source: glygen
+    - relation_type: prov:hadPrimarySource
+      source: geneshot
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
+    product_url: https://maayanlab.cloud/Enrichr/#libraries
+  - category: Product
+    description: Downloadable gene set files in GMT, XML, and other formats for human
+      collections including hallmarks, curated pathways, ontologies, and computational
+      signatures; free registration is required for downloads
+    format: mixed
+    id: msigdb.downloads.human
+    name: MSigDB Human Gene Sets Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: msigdb
+    - relation_type: prov:hadPrimarySource
+      source: go
+    - relation_type: prov:hadPrimarySource
+      source: hp
+    - relation_type: prov:hadPrimarySource
+      source: kegg
+    - relation_type: prov:hadPrimarySource
+      source: reactome
+    - relation_type: prov:hadPrimarySource
+      source: wikipathways
+    - relation_type: prov:hadPrimarySource
+      source: pid
+    - relation_type: prov:hadPrimarySource
+      source: mirdb
+    - relation_type: prov:hadPrimarySource
+      source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: gene-expression-omnibus
+    - relation_type: prov:hadPrimarySource
+      source: depmap
+    - relation_type: prov:hadPrimarySource
+      source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
+    product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+    secondary_source:
+    - relation_type: prov:used
+      source: mirbase
+    warnings:
+    - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+      is free but required for direct file access.
+  - category: Product
+    description: Downloadable gene set files for mouse collections including mouse-ortholog
+      hallmarks, curated pathways, ontologies, and cell type signatures; free registration
+      is required for downloads
+    format: mixed
+    id: msigdb.downloads.mouse
+    name: MSigDB Mouse Gene Sets Downloads
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: msigdb
+    - relation_type: prov:hadPrimarySource
+      source: go
+    - relation_type: prov:hadPrimarySource
+      source: mp
+    - relation_type: prov:hadPrimarySource
+      source: mgi
+    - relation_type: prov:hadPrimarySource
+      source: reactome
+    - relation_type: prov:hadPrimarySource
+      source: wikipathways
+    - relation_type: prov:hadPrimarySource
+      source: mirdb
+    - relation_type: prov:hadPrimarySource
+      source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
+    product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+    secondary_source:
+    - relation_type: prov:used
+      source: mirbase
+    warnings:
+    - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+      is free but required for direct file access.
+  synonyms:
+  - BioCarta Pathways
+- activity_status: inactive
   category: KnowledgeGraph
   collection:
   - okn
@@ -528783,6 +531468,8 @@ resources:
       source: openpredict
     - relation_type: prov:hadPrimarySource
       source: text-mining-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.renci.org/docs
   - category: ProgrammingInterface
     description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint,
@@ -528826,6 +531513,8 @@ resources:
       source: microbiomekg
     - relation_type: prov:hadPrimarySource
       source: service-kp
+    - relation_type: prov:hadPrimarySource
+      source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
   publications:
   - authors:
@@ -534325,6 +537014,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   - category: GraphicalInterface
     description: Web interface for searching, browsing, and analyzing protein target
@@ -543328,6 +546019,8 @@ resources:
       source: geneshot
     - relation_type: prov:hadPrimarySource
       source: ncbigene
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
   publications:
   - authors:
@@ -548349,6 +551042,8 @@ resources:
       source: depmap
     - relation_type: prov:hadPrimarySource
       source: ccle
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used
@@ -548380,6 +551075,8 @@ resources:
       source: mirdb
     - relation_type: prov:hadPrimarySource
       source: gtrd
+    - relation_type: prov:hadPrimarySource
+      source: biocarta
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
     secondary_source:
     - relation_type: prov:used

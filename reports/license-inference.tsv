@@ -81,7 +81,7 @@ embiology	KnowledgeGraph	declared	https://www.elsevier.com/legal/elsevier-websit
 emeraldgraph	KnowledgeGraph	conflict	https://www.apache.org/licenses/LICENSE-2.0	permissive	https://effas.com/legal-notice/	custom	effas-kpi	
 emikg	KnowledgeGraph	conflict	https://creativecommons.org/publicdomain/zero/1.0/	public domain	https://creativecommons.org/licenses/by/4.0/	permissive	globi|try	
 enrichr-kg	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://depmap.org/portal/terms/	custom	achilles|depmap|disgenet|gtex|kegg|kg-jensenlab-diseases	lincs
-entrez	Aggregator	conflict	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	https://www.ncbi.nlm.nih.gov/home/about/policies/	custom	medgen	cdd|gene-expression-omnibus|pmc|refseq|sra
+entrez	Aggregator	conflict	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	https://www.ncbi.nlm.nih.gov/home/about/policies/	custom	bioproject|biosample|genbank|medgen|ncbi-protein	cdd|gene-expression-omnibus|pmc|refseq|sra
 epigraphdb	KnowledgeGraph	declared	https://github.com/MRCIEU/epigraphdb	custom	https://www.gtexportal.org/home/license	custom	gtex|semmeddb|ukbiobank	eqtlgen|mrbase
 era-kg	KnowledgeGraph	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 eu-knowledge-graph	KnowledgeGraph	no-upstream						
@@ -177,6 +177,7 @@ name-resolver	Aggregator	declared	https://opensource.org/license/mit/	permissive
 namsnetwork	KnowledgeGraph	no-upstream						
 nasa-gesdisc-kg	KnowledgeGraph	declared	https://opensource.org/licenses/Apache-2.0	permissive	https://www.earthdata.nasa.gov/engage/open-data-services-software-policies	public domain	nasa-gesdisc	
 ncatsgardkg	KnowledgeGraph	unresolved						
+ncbi-protein	Aggregator	declared	https://www.ncbi.nlm.nih.gov/home/about/policies/	custom	https://www.ncbi.nlm.nih.gov/genbank/about/	custom	genbank|pir	pdb|refseq
 ncipidkg	KnowledgeGraph	unresolved						
 nde	KnowledgeGraph	conflict	https://opensource.org/licenses/Apache-2.0	permissive	https://docs.immport.org/home/agreement/	custom	immport	vdjserver
 ngdc	Aggregator	no-upstream						
@@ -241,6 +242,7 @@ sawgraph	KnowledgeGraph	inferred			US federal government public domain	public do
 scales	KnowledgeGraph	inferred			U.S. Government Work (public domain records; PACER access subject to per-page usage fees)	public domain	pacer	
 securechainkg	KnowledgeGraph	declared	https://opensource.org/licenses/Apache-2.0	permissive	https://opensource.org/licenses/Apache-2.0	permissive	osv	cargo|maven-central|npm|nuget|pypi|rubygems
 semopenalex	KnowledgeGraph	inferred			https://creativecommons.org/publicdomain/zero/1.0/	public domain	openalex	
+semra	Aggregator	declared	https://github.com/biopragmatics/semra/blob/main/LICENSE	permissive	https://creativecommons.org/publicdomain/zero/1.0/	public domain	biomappings|bioregistry|wikidata	
 service-kp	KnowledgeGraph	conflict	https://opensource.org/licenses/Apache-2.0	permissive	https://ctdbase.org/about/legal.jsp	custom	alliance|ctd|disgenet|gene2phenotype|innatedb|multiomics-kp|mydisease|semmeddb	bioplanet|ddinter|monarchinitiative|panther
 shepherd	Aggregator	inferred			https://www.apache.org/licenses/LICENSE-2.0	permissive	retriever	
 sifr-bioportal	Aggregator	no-upstream						
@@ -255,6 +257,7 @@ spoke	KnowledgeGraph	declared	https://spoke.rbvi.ucsf.edu/docs/licenses.html	cus
 spoke-genelab	KnowledgeGraph	no-upstream						
 spoke-okn	KnowledgeGraph	declared	https://spoke.rbvi.ucsf.edu/docs/licenses.html	custom	https://spoke.rbvi.ucsf.edu/docs/licenses.html	custom	spoke	
 sri-reference-kg	KnowledgeGraph	inferred			https://www.alliancegenome.org/privacy-warranty-licensing	custom	alliance|ctd|decipher|goa|xenbase	cureid|dictybase|icd11|panther|rgd
+strider	Aggregator	no-upstream	https://github.com/ranking-agent/strider/blob/master/LICENSE	permissive				
 sudokn	KnowledgeGraph	no-upstream						
 sugi-atlas	Aggregator	declared	https://creativecommons.org/licenses/by-sa/4.0/	copyleft	https://creativecommons.org/licenses/by-sa/3.0/	copyleft	biobtree|chembl	
 suppkg	KnowledgeGraph	inferred			https://creativecommons.org/licenses/by/4.0/	permissive	chebi|uniprot	

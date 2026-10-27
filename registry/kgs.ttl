@@ -1910,6 +1910,24 @@ kgr:biobtree a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://sugi.bio/biobtree/> .
 
+kgr:biocarta a schema1:DataSource ;
+    rdfs:label "BioCarta" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "BioCarta was a commercial collection of interactive, community-contributed pathway diagrams covering signaling, metabolic, and immunologic pathways in human and mouse, each listing the genes and proteins that participate in the pathway. The original BioCarta website is no longer online, and the NCI Cancer Genome Anatomy Project (CGAP) mirror of the BioCarta pathways has been retired. The pathway gene sets persist in downstream resources, most notably the MSigDB C2 CP:BIOCARTA subcollection (human and mouse) and the Enrichr BioCarta gene set libraries." ;
+    dcterms:identifier "biocarta" ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biocarta.cgap-pathways,
+        kgr:enrichr.libraries,
+        kgr:msigdb.downloads.human,
+        kgr:msigdb.downloads.mouse ;
+    schema1:name "BioCarta" ;
+    skos:altLabel "BioCarta Pathways" ;
+    skos:inScheme "biomedical",
+        "pathways",
+        "systems biology" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://www.biocarta.com/> .
+
 kgr:biocyc a schema1:DataSource ;
     rdfs:label "BioCyc" ;
     dcterms:created "2025-03-18T00:00:00+00:00"^^xsd:dateTime ;
@@ -2212,6 +2230,29 @@ kgr:biolink a schema1:DataModel ;
     adms:status "Active" ;
     foaf:homepage <https://biolink.github.io/biolink-model/> .
 
+kgr:biomappings a schema1:DataSource ;
+    rdfs:label "Biomappings" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Biomappings is a community-curated repository of semantic mappings between biomedical identifiers (equivalences and related relations) that are missing from primary sources. It holds human-curated positive mappings, curated non-trivial negative (incorrect) mappings, and automatically predicted mappings awaiting review, all in SSSOM TSV format. Contributors curate predictions through a web curation interface or by pull request, and the mappings are released under CC0." ;
+    dcterms:identifier "biomappings" ;
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btad130> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biomappings.code,
+        kgr:biomappings.negative,
+        kgr:biomappings.positive,
+        kgr:biomappings.predictions,
+        kgr:oxo.api,
+        kgr:oxo.portal,
+        kgr:semra.raw-mappings ;
+    schema1:name "Biomappings" ;
+    doap:repository <https://github.com/biopragmatics/biomappings> ;
+    skos:inScheme "biomedical",
+        "information technology",
+        "metadata" ;
+    adms:status "Active" ;
+    foaf:homepage <https://biopragmatics.github.io/biomappings/> .
+
 kgr:biomarker a schema1:KnowledgeGraph ;
     rdfs:label "BiomarkerKB" ;
     dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -2428,6 +2469,28 @@ kgr:bioportal a schema1:Aggregator ;
     adms:status "Active" ;
     foaf:homepage <https://bioportal.bioontology.org/> .
 
+kgr:bioproject a schema1:DataSource ;
+    rdfs:label "NCBI BioProject" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "BioProject is NCBI's database of biological research projects. A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium, and its record provides a single place to find links to the diverse data types generated for that project in NCBI archives such as SRA, GenBank, GEO, dbGaP, and Assembly. It replaced the earlier Genome Project database. BioProject accessions (PRJNA, and PRJEB and PRJDB through the INSDC partners ENA and DDBJ) organize submissions from single studies to large consortia." ;
+    dcterms:identifier "bioproject" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkr1163> ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:bioproject.ftp,
+        kgr:bioproject.web,
+        kgr:entrez.edirect,
+        kgr:entrez.eutils,
+        kgr:entrez.web ;
+    schema1:name "NCBI BioProject" ;
+    skos:altLabel "BioProject" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "information technology",
+        "metadata" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ncbi.nlm.nih.gov/bioproject/> .
+
 kgr:bioregistry a schema1:Aggregator ;
     rdfs:label "Bioregistry" ;
     dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
@@ -2448,7 +2511,8 @@ kgr:bioregistry a schema1:Aggregator ;
         kgr:bioregistry.registry.yml,
         kgr:bioregistry.sssom,
         kgr:oxo.api,
-        kgr:oxo.portal ;
+        kgr:oxo.portal,
+        kgr:semra.raw-mappings ;
     schema1:identifier "RRID:SCR_022586" ;
     schema1:name "Bioregistry" ;
     doap:repository <https://github.com/biopragmatics/bioregistry> ;
@@ -2458,6 +2522,28 @@ kgr:bioregistry a schema1:Aggregator ;
     skos:notation "FAIRsharing.250a8c" ;
     adms:status "Active" ;
     foaf:homepage <https://bioregistry.io/> .
+
+kgr:biosample a schema1:DataSource ;
+    rdfs:label "NCBI BioSample" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The BioSample database contains descriptions of biological source materials used in experimental assays. Each record captures sample attributes such as organism, tissue, cell line, isolate, and environment, using community attribute packages such as MIxS, and links to the experimental data derived from the sample in SRA, GenBank, GEO, dbGaP, and other archives. BioSample accessions (SAMN, and SAMEA and SAMD through the INSDC partners ENA and DDBJ) are exchanged with EMBL-EBI and DDBJ." ;
+    dcterms:identifier "biosample" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkr1163> ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biosample.ftp,
+        kgr:biosample.web,
+        kgr:entrez.edirect,
+        kgr:entrez.eutils,
+        kgr:entrez.web ;
+    schema1:name "NCBI BioSample" ;
+    skos:altLabel "BioSample" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "information technology",
+        "metadata" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ncbi.nlm.nih.gov/biosample/> .
 
 kgr:biostudies a schema1:DataSource ;
     rdfs:label "BioStudies" ;
@@ -8081,6 +8167,30 @@ kgr:ecosim a schema1:Resource ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/bioepic-data/ecosim-ontology> .
 
+kgr:ecotox a schema1:DataSource ;
+    rdfs:label "ECOTOX Knowledgebase" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The ECOTOXicology Knowledgebase (ECOTOX) is the U.S. EPA's curated knowledgebase of single-chemical toxicity test results for ecologically relevant aquatic and terrestrial species, abstracted from the peer-reviewed literature. Each record captures the chemical, test species, exposure conditions, and measured effects and endpoints. ECOTOX supports environmental research, chemical risk assessment, and the development of ecological models and QSARs." ;
+    dcterms:identifier "ecotox" ;
+    dcterms:isReferencedBy <doi:10.1002/etc.5324> ;
+    dcterms:license <https://www.usa.gov/government-works> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ecotox.help,
+        kgr:ecotox.web,
+        kgr:tera.ecotox-chemical-nt,
+        kgr:tera.ecotox-taxonomy-nt,
+        kgr:tera.effects-nt,
+        kgr:tera.zenodo-dataset ;
+    schema1:name "ECOTOX Knowledgebase" ;
+    skos:altLabel "ECOTOX",
+        "ECOTOXicology Knowledgebase" ;
+    skos:inScheme "ecology",
+        "environment",
+        "environmental exposure",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://cfpub.epa.gov/ecotox/> .
+
 kgr:ecrin-mdr a schema1:Aggregator ;
     rdfs:label "ECRIN Clinical Research Metadata Repository" ;
     dcterms:created "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
@@ -10823,6 +10933,28 @@ kgr:genage a schema1:DataSource ;
         "genomics" ;
     adms:status "Active" ;
     foaf:homepage <http://genomics.senescence.info/genes/> .
+
+kgr:genbank a schema1:DataSource ;
+    rdfs:label "GenBank" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences, built from submissions by individual laboratories and large-scale sequencing projects. It is part of the International Nucleotide Sequence Database Collaboration (INSDC), exchanging data daily with the DNA Data Bank of Japan (DDBJ) and the European Nucleotide Archive (ENA). GenBank records are searchable through the Entrez Nucleotide database and distributed as bimonthly releases with daily updates." ;
+    dcterms:identifier "genbank" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkae1114> ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/genbank/about/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:entrez.edirect,
+        kgr:entrez.eutils,
+        kgr:entrez.web,
+        kgr:genbank.ftp,
+        kgr:genbank.nucleotide,
+        kgr:ncbi-protein.web ;
+    schema1:name "GenBank" ;
+    skos:altLabel "NCBI GenBank",
+        "Nucleotide" ;
+    skos:inScheme "biomedical",
+        "genomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ncbi.nlm.nih.gov/genbank/> .
 
 kgr:gencc a schema1:DataSource ;
     rdfs:label "The Gene Curation Coalition (GenCC)" ;
@@ -15869,7 +16001,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-27T20:57:07+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-27T22:44:29+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -19413,6 +19545,26 @@ kgr:ncatsgardkg a schema1:KnowledgeGraph ;
         "rare disease" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/ncats/RD-Clust> .
+
+kgr:ncbi-protein a schema1:Aggregator ;
+    rdfs:label "NCBI Protein" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The NCBI Protein database is a collection of protein sequence records from several sources, including translations of annotated coding regions in GenBank and RefSeq, as well as records from UniProtKB/Swiss-Prot, PIR, PRF, and PDB. It is searchable through Entrez and linked to related NCBI resources such as Gene, Nucleotide, Structure, and Conserved Domains. On 2026-10-26 it held about 1.66 billion records." ;
+    dcterms:identifier "ncbi-protein" ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:entrez.edirect,
+        kgr:entrez.eutils,
+        kgr:entrez.web,
+        kgr:ncbi-protein.web ;
+    schema1:name "NCBI Protein" ;
+    skos:altLabel "Entrez Protein",
+        "Protein" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ncbi.nlm.nih.gov/protein/> .
 
 kgr:ncbigene a schema1:DataSource ;
     rdfs:label "NCBI Gene" ;
@@ -23391,6 +23543,7 @@ kgr:pdb a schema1:DataSource ;
         kgr:gpcrdb.data,
         kgr:gpcrdb.portal,
         kgr:mygene.api,
+        kgr:ncbi-protein.web,
         kgr:nde.graph,
         kgr:onco.all_json,
         kgr:pdb.archive,
@@ -24379,6 +24532,7 @@ kgr:pir a schema1:DataSource ;
     dcterms:license <https://proteininformationresource.org/pirwww/about/linkpir.shtml> ;
     dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mygene.api,
+        kgr:ncbi-protein.web,
         kgr:pir.downloads,
         kgr:pir.portal,
         kgr:prokn.pir.compound.skos_exact_match.compound.edges,
@@ -26487,6 +26641,7 @@ kgr:refseq a schema1:DataSource ;
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
         kgr:mygene.api,
+        kgr:ncbi-protein.web,
         kgr:ncbigene.gene2refseq,
         kgr:ncbigene.gene_refseq_uniprotkb_collab,
         kgr:oma.mapping.refseq,
@@ -27598,6 +27753,28 @@ kgr:semopenalex a schema1:KnowledgeGraph ;
         "scholarly communication" ;
     adms:status "Active" ;
     foaf:homepage <https://semopenalex.org/> .
+
+kgr:semra a schema1:Aggregator ;
+    rdfs:label "SeMRA (Semantic Mapping Reasoner and Assembler)" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "SeMRA (Semantic Mapping Reasoner and Assembler) is a Python package and dataset for assembling and reasoning over semantic mappings at scale. It provides an SSSOM-based object model for mappings, inference over chains of mappings, a provenance model for automatically generated mappings, and a confidence model at the curator, mapping-set, and community levels. The SeMRA Raw Semantic Mappings Database is a pre-assembled set of semantic mappings drawn from hundreds of ontologies and databases, published on Zenodo and rebuildable with `semra build`, alongside domain-specific processed mapping databases." ;
+    dcterms:identifier "semra" ;
+    dcterms:license <https://github.com/biopragmatics/semra/blob/main/LICENSE> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:oxo.api,
+        kgr:oxo.portal,
+        kgr:semra.code,
+        kgr:semra.docs,
+        kgr:semra.raw-mappings ;
+    schema1:name "SeMRA (Semantic Mapping Reasoner and Assembler)" ;
+    doap:repository <https://github.com/biopragmatics/semra> ;
+    skos:altLabel "SeMRA",
+        "Semantic Mapping Reasoner and Assembler" ;
+    skos:inScheme "biomedical",
+        "information technology",
+        "metadata" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/biopragmatics/semra> .
 
 kgr:semrep a schema1:DataSource ;
     rdfs:label "SemRep" ;
@@ -28988,6 +29165,26 @@ kgr:stitch a schema1:DataSource ;
     foaf:homepage <http://stitch-db.org/> ;
     foaf:maker kgr:stringdb .
 
+kgr:strider a schema1:Aggregator ;
+    rdfs:label "Strider" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Strider is the knowledge-provider querying and answer-generating module of the ARAGORN autonomous relay agent in the NCATS Biomedical Data Translator. It accepts a biomedical question as a Translator Reasoner API (TRAPI) message, decomposes the query graph into one-hop subqueries, sends them to registered Translator knowledge providers (KPs), and assembles their responses into TRAPI results asynchronously. It is developed by RENCI in the ranking-agent GitHub organization." ;
+    dcterms:identifier "strider" ;
+    dcterms:license <https://github.com/ranking-agent/strider/blob/master/LICENSE> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:aragorn.api,
+        kgr:aragorn.api.itrb,
+        kgr:strider.api,
+        kgr:strider.api.itrb,
+        kgr:strider.code ;
+    schema1:name "Strider" ;
+    doap:repository <https://github.com/ranking-agent/strider> ;
+    skos:inScheme "biomedical",
+        "information technology",
+        "software" ;
+    adms:status "Active" ;
+    foaf:homepage <https://strider.renci.org/docs> .
+
 kgr:string a schema1:DataSource ;
     rdfs:label "STRING" ;
     dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
@@ -29693,7 +29890,7 @@ kgr:tera a schema1:KnowledgeGraph ;
     dcterms:isReferencedBy <https://doi.org/10.3233/sw-222804>,
         <https://doi.org/10.48550/arXiv.1908.10128> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:tera.cas-to-mesh-csv,
         kgr:tera.chebi-to-mesh-csv,
         kgr:tera.chembl-to-mesh-csv,
@@ -31048,6 +31245,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:mygene.api,
+        kgr:ncbi-protein.web,
         kgr:ncbigene.gene_refseq_uniprotkb_collab,
         kgr:neo.model,
         kgr:neo.obo,
@@ -31754,6 +31952,7 @@ kgr:wikidata a schema1:KnowledgeGraph ;
         kgr:pubchem.substances.sdf,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
+        kgr:semra.raw-mappings,
         kgr:wikidata.api,
         kgr:wikidata.dumps.incremental,
         kgr:wikidata.dumps.json,
@@ -33548,6 +33747,11 @@ kgr:biobtree.qa a schema1:GraphicalInterface ;
     dcterms:description "Web-based question-and-answer interface that generates factual, identifier-anchored answers to biological questions, with each answer linked to the underlying REST API calls." ;
     schema1:url <https://sugi.bio/biobtree/> .
 
+kgr:biocarta.cgap-pathways a schema1:GraphicalInterface ;
+    rdfs:label "BioCarta Pathways (NCI CGAP mirror, retired)" ;
+    dcterms:description "Former NCI CGAP mirror of the BioCarta pathway diagrams and gene lists. Retired; the page now shows a CGAP retirement notice." ;
+    schema1:url <https://cgap.nci.nih.gov/Pathways/BioCarta_Pathways> .
+
 kgr:biodata-catalyst.docs a schema1:DocumentationProduct ;
     rdfs:label "BioData Catalyst Documentation" ;
     dcterms:description "BDC user documentation covering account setup, data access checks, PIC-SURE, Gen3, Seven Bridges, Terra and other ecosystem components." ;
@@ -33707,6 +33911,26 @@ kgr:biolink.model.shex a schema1:DataModelProduct ;
     rdfs:label "Biolink Model ShEx release" ;
     dcterms:description "ShEx release of Biolink Model" ;
     schema1:url <https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex> .
+
+kgr:biomappings.code a schema1:ProcessProduct ;
+    rdfs:label "Biomappings Python Package" ;
+    dcterms:description "Biomappings Python package (MIT) for accessing, predicting, and curating mappings." ;
+    schema1:url <https://github.com/biopragmatics/biomappings> .
+
+kgr:biomappings.negative a schema1:MappingProduct ;
+    rdfs:label "Biomappings Negative Mappings" ;
+    dcterms:description "Human-curated non-trivial false (incorrect) mappings, in SSSOM TSV format." ;
+    schema1:url <https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/negative.sssom.tsv> .
+
+kgr:biomappings.positive a schema1:MappingProduct ;
+    rdfs:label "Biomappings Positive Mappings" ;
+    dcterms:description "Human-curated true (positive) semantic mappings between biomedical identifiers, in SSSOM TSV format." ;
+    schema1:url <https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/positive.sssom.tsv> .
+
+kgr:biomappings.predictions a schema1:MappingProduct ;
+    rdfs:label "Biomappings Predicted Mappings" ;
+    dcterms:description "Automatically predicted mappings awaiting curation, in SSSOM TSV format." ;
+    schema1:url <https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/predictions.sssom.tsv> .
 
 kgr:biomarker.api a schema1:ProgrammingInterface ;
     rdfs:label "BiomarkerKB API" ;
@@ -33878,6 +34102,16 @@ kgr:bioplex.raw-data a schema1:GraphicalInterface ;
     dcterms:description "Web tool for downloading raw mass spectrometry data for up to 10 bait proteins per query." ;
     schema1:url <https://bioplex.hms.harvard.edu/download.php> .
 
+kgr:bioproject.ftp a schema1:Product ;
+    rdfs:label "BioProject FTP" ;
+    dcterms:description "Bulk BioProject records in XML and summary files." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/bioproject/> .
+
+kgr:bioproject.web a schema1:GraphicalInterface ;
+    rdfs:label "BioProject Search" ;
+    dcterms:description "Entrez BioProject search over research project records and their links to data in other NCBI archives." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/bioproject/> .
+
 kgr:bioregistry.api a schema1:ProgrammingInterface ;
     rdfs:label "Bioregistry REST API" ;
     dcterms:description "REST API for querying Bioregistry records, metaregistry entries, collections and CURIE resolution, documented with OpenAPI." ;
@@ -33922,6 +34156,16 @@ kgr:bioregistry.registry.yml a schema1:Product ;
     rdfs:label "Bioregistry YAML Export" ;
     dcterms:description "Full Bioregistry export as YAML, with the same content as the JSON export." ;
     schema1:url <https://raw.githubusercontent.com/biopragmatics/bioregistry/main/exports/registry/registry.yml> .
+
+kgr:biosample.ftp a schema1:Product ;
+    rdfs:label "BioSample FTP" ;
+    dcterms:description "Bulk BioSample records in XML and attribute summary files." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/biosample/> .
+
+kgr:biosample.web a schema1:GraphicalInterface ;
+    rdfs:label "BioSample Search" ;
+    dcterms:description "Entrez BioSample search over biological sample records and their links to experimental data." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/biosample/> .
 
 kgr:biostudies.portal a schema1:GraphicalInterface ;
     rdfs:label "BioStudies Web Interface" ;
@@ -36978,6 +37222,16 @@ kgr:ecosim.model.owl a schema1:Product ;
     rdfs:label "ecosim OWL release" ;
     dcterms:description "OWL release of ecosim" .
 
+kgr:ecotox.help a schema1:DocumentationProduct ;
+    rdfs:label "ECOTOX Help" ;
+    dcterms:description "ECOTOX help and user documentation." ;
+    schema1:url <https://cfpub.epa.gov/ecotox/help.cfm> .
+
+kgr:ecotox.web a schema1:GraphicalInterface ;
+    rdfs:label "ECOTOX Knowledgebase Search" ;
+    dcterms:description "ECOTOX web interface for searching and exploring toxicity records by chemical, species, and effect, with result export." ;
+    schema1:url <https://cfpub.epa.gov/ecotox/> .
+
 kgr:ecrin-mdr.code a schema1:ProcessProduct ;
     rdfs:label "ECRIN MDR Source Code" ;
     dcterms:description "ECRIN GitHub organization holding the MDR code, including the downloader, harvester, importer, coder and aggregator pipeline, the Blazor portal and API (MDR_FuiPortal), and MDRMine, an InterMine-based successor that also loads EU CTR, CTIS, WHO ICTRP, BioLINCC and BBMRI-ERIC data." ;
@@ -38738,6 +38992,16 @@ kgr:genage.models.search a schema1:GraphicalInterface ;
     rdfs:label "GenAge Model Organisms Search" ;
     dcterms:description "Web interface for searching and browsing model organism ageing genes" ;
     schema1:url <https://genomics.senescence.info/genes/models.html> .
+
+kgr:genbank.ftp a schema1:Product ;
+    rdfs:label "GenBank FTP Releases" ;
+    dcterms:description "Full GenBank releases (every two months) and daily update files in GenBank flat-file format." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/genbank/> .
+
+kgr:genbank.nucleotide a schema1:GraphicalInterface ;
+    rdfs:label "Entrez Nucleotide" ;
+    dcterms:description "Entrez Nucleotide search over GenBank and other nucleotide sequence records." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/nuccore/> .
 
 kgr:gencc.database a schema1:Product ;
     rdfs:label "GenCC Database" ;
@@ -47660,6 +47924,16 @@ kgr:semopenalex.tpf a schema1:ProgrammingInterface ;
     dcterms:description "Triple Pattern Fragments endpoint for SemOpenAlex" ;
     schema1:url <https://apps.okn.us/ldf/semopenalex> .
 
+kgr:semra.code a schema1:ProcessProduct ;
+    rdfs:label "SeMRA Python Package" ;
+    dcterms:description "SeMRA Python package for assembling, reasoning over, and processing semantic mappings." ;
+    schema1:url <https://github.com/biopragmatics/semra> .
+
+kgr:semra.docs a schema1:DocumentationProduct ;
+    rdfs:label "SeMRA Documentation" ;
+    dcterms:description "SeMRA documentation on Read the Docs." ;
+    schema1:url <https://semra.readthedocs.io/> .
+
 kgr:semrep.homepage a schema1:GraphicalInterface ;
     rdfs:label "SemRep / SemMedDB SKR Tools Page" ;
     dcterms:description "SemRep and SemMedDB tool homepage and documentation hub hosted by the NLM Lister Hill National Center for Biomedical Communications, with access to the Semantic Knowledge Representation (SKR) tools, distributions, and documentation." ;
@@ -48664,6 +48938,21 @@ kgr:stellar.demo a schema1:GraphicalInterface ;
     dcterms:description "Demo Jupyter notebook showing example usage of STELLAR on downsampled datasets" ;
     schema1:url <https://github.com/snap-stanford/stellar/blob/main/demo.ipynb> .
 
+kgr:strider.api a schema1:ProgrammingInterface ;
+    rdfs:label "Strider TRAPI API (RENCI)" ;
+    dcterms:description "Strider TRAPI web service (RENCI deployment), with OpenAPI documentation; answers TRAPI query graphs by querying registered Translator knowledge providers." ;
+    schema1:url <https://strider.renci.org/docs> .
+
+kgr:strider.api.itrb a schema1:ProgrammingInterface ;
+    rdfs:label "Strider TRAPI API (ITRB)" ;
+    dcterms:description "Strider TRAPI web service on the NCATS Translator ITRB infrastructure." ;
+    schema1:url <https://strider.transltr.io/docs> .
+
+kgr:strider.code a schema1:ProcessProduct ;
+    rdfs:label "Strider Source Code" ;
+    dcterms:description "Strider source code (Python), with Docker-based development and test tooling." ;
+    schema1:url <https://github.com/ranking-agent/strider> .
+
 kgr:string.api a schema1:ProgrammingInterface ;
     rdfs:label "STRING REST API" ;
     dcterms:description "RESTful API for programmatic access to STRING data" ;
@@ -49152,21 +49441,6 @@ kgr:tera.documentation a schema1:DocumentationProduct ;
     dcterms:description "API documentation for the TERA knowledge graph package" ;
     schema1:url <https://niva-knowledge-graph.github.io/TERA/> .
 
-kgr:tera.ecotox-chemical-nt a schema1:Product ;
-    rdfs:label "ECOTOX Chemical Data (N-Triples)" ;
-    dcterms:description "Chemical data from EPA ECOTOX in N-Triples RDF format" ;
-    schema1:url <https://zenodo.org/records/4244313/files/ecotox_chemical.nt> .
-
-kgr:tera.ecotox-taxonomy-nt a schema1:Product ;
-    rdfs:label "ECOTOX Taxonomy Data (N-Triples)" ;
-    dcterms:description "Taxonomy data from EPA ECOTOX in N-Triples RDF format" ;
-    schema1:url <https://zenodo.org/records/4244313/files/ecotox_taxonomy.nt> .
-
-kgr:tera.effects-nt a schema1:Product ;
-    rdfs:label "Effects Data (N-Triples)" ;
-    dcterms:description "Chemical effects data in N-Triples RDF format" ;
-    schema1:url <https://zenodo.org/records/4244313/files/effects.nt> .
-
 kgr:tera.mesh-nt a schema1:Product ;
     rdfs:label "MeSH Data (N-Triples)" ;
     dcterms:description "MeSH (Medical Subject Headings) data in N-Triples RDF format" ;
@@ -49185,11 +49459,6 @@ kgr:tera.ncbi-to-eol-csv a schema1:MappingProduct ;
 kgr:tera.python-package a schema1:ProgrammingInterface ;
     rdfs:label "TERA Python Package" ;
     dcterms:description "Python package providing APIs for data aggregation, integration, and access of TERA knowledge graph" .
-
-kgr:tera.zenodo-dataset a schema1:Product ;
-    rdfs:label "TERA Knowledge Graph Dataset (Zenodo)" ;
-    dcterms:description "TERA knowledge graph dataset snapshot version 1.1.0 hosted on Zenodo, including NT files and CSV mappings" ;
-    schema1:url <https://zenodo.org/records/4244313> .
 
 kgr:terminologia-anatomica.ta2-publication a schema1:DocumentationProduct ;
     rdfs:label "Terminologia Anatomica, 2nd edition, Part 1 (FIPAT publication)" ;
@@ -54731,10 +55000,30 @@ kgr:tcpa.patient-cohorts a schema1:GraphicalInterface ;
     dcterms:description "TCPA web module for RPPA500 functional proteomics data of patient tumor cohorts from The Cancer Genome Atlas, with modules for summary, correlation, differential expression, survival, and network visualization of protein markers." ;
     schema1:url <https://tcpa.drbioright.org/rppa500/main.html> .
 
+kgr:tera.ecotox-chemical-nt a schema1:Product ;
+    rdfs:label "ECOTOX Chemical Data (N-Triples)" ;
+    dcterms:description "Chemical data from EPA ECOTOX in N-Triples RDF format" ;
+    schema1:url <https://zenodo.org/records/4244313/files/ecotox_chemical.nt> .
+
+kgr:tera.ecotox-taxonomy-nt a schema1:Product ;
+    rdfs:label "ECOTOX Taxonomy Data (N-Triples)" ;
+    dcterms:description "Taxonomy data from EPA ECOTOX in N-Triples RDF format" ;
+    schema1:url <https://zenodo.org/records/4244313/files/ecotox_taxonomy.nt> .
+
+kgr:tera.effects-nt a schema1:Product ;
+    rdfs:label "Effects Data (N-Triples)" ;
+    dcterms:description "Chemical effects data in N-Triples RDF format" ;
+    schema1:url <https://zenodo.org/records/4244313/files/effects.nt> .
+
 kgr:tera.traits-nt a schema1:Product ;
     rdfs:label "EOL Traits Data (N-Triples)" ;
     dcterms:description "Encyclopedia of Life traits data in N-Triples RDF format" ;
     schema1:url <https://zenodo.org/records/4244313/files/traits.nt> .
+
+kgr:tera.zenodo-dataset a schema1:Product ;
+    rdfs:label "TERA Knowledge Graph Dataset (Zenodo)" ;
+    dcterms:description "TERA knowledge graph dataset snapshot version 1.1.0 hosted on Zenodo, including NT files and CSV mappings" ;
+    schema1:url <https://zenodo.org/records/4244313> .
 
 kgr:text-mining-kp.graph a schema1:GraphProduct ;
     rdfs:label "Text Mining KP Release Files" ;
@@ -56319,6 +56608,11 @@ kgr:reprotox-kg.graph.geneshot-hpo a schema1:GraphProduct ;
     dcterms:description "Birth defect phenotype to gene associations from GeneShot literature co-mentions (6,064 nodes, 13,487 edges)." ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json> .
 
+kgr:semra.raw-mappings a schema1:MappingProduct ;
+    rdfs:label "SeMRA Raw Semantic Mappings Database" ;
+    dcterms:description "SeMRA Raw Semantic Mappings Database, pre-assembled semantic mappings from ontologies indexed in the Bioregistry, databases integrated in PyOBO, Biomappings, Wikidata, and custom SeMRA resources, published on Zenodo under CC0." ;
+    schema1:url <https://doi.org/10.5281/zenodo.11082038> .
+
 kgr:sep-l1000.faers-offsides a schema1:Product ;
     rdfs:label "SEP-L1000 FAERS OFFSIDES Side Effect Matrix" ;
     dcterms:description "Off-label drug-ADR matrix (684 drugs by 9,404 MedDRA preferred terms) from OFFSIDES, which processed FDA Adverse Event Reporting System (FAERS) reports with propensity score matching." ;
@@ -56853,6 +57147,11 @@ kgr:mydisease.api a schema1:ProgrammingInterface ;
     dcterms:description "MyDisease.info REST API (v1) for querying disease annotation records by keyword, field or identifier (Mondo, DOID, OMIM, Orphanet, MeSH and UMLS IDs), with batch queries over POST. Data in each record keep the license of their original source." ;
     schema1:identifier "mydisease-info" ;
     schema1:url <https://mydisease.info/v1/query> .
+
+kgr:ncbi-protein.web a schema1:GraphicalInterface ;
+    rdfs:label "NCBI Protein Search" ;
+    dcterms:description "Entrez search interface for NCBI Protein sequence records, with links to Gene, Nucleotide, Structure, and Conserved Domains." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/protein/> .
 
 kgr:obo-db-ingest.bigg.metabolite.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "bigg.metabolite SSSOM" ;
@@ -57759,11 +58058,6 @@ kgr:metabokg.schema a schema1:DataModelProduct ;
     dcterms:description "Turtle schema files defining MetaBoKG classes, properties, and ReDU class hierarchies used by the generated knowledge graph." ;
     schema1:url <https://github.com/HolobiomicsLab/MetaBoKG/tree/main/Schema> .
 
-kgr:msigdb.downloads.mouse a schema1:Product ;
-    rdfs:label "MSigDB Mouse Gene Sets Downloads" ;
-    dcterms:description "Downloadable gene set files for mouse collections including mouse-ortholog hallmarks, curated pathways, ontologies, and cell type signatures; free registration is required for downloads" ;
-    schema1:url <https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb> .
-
 kgr:myvariant.api a schema1:ProgrammingInterface ;
     rdfs:label "MyVariant.info API" ;
     dcterms:description "MyVariant.info REST API (v1) for variant query and annotation retrieval by HGVS id or rsid, with batch POST queries and field filtering. Returns JSON documents merged from the integrated sources, on hg19 and hg38." ;
@@ -57774,11 +58068,6 @@ kgr:ncatsgardkg.graph a schema1:GraphProduct ;
     rdfs:label "NCATS GARD Knowledge Graph" ;
     dcterms:description "Integrated rare-disease knowledge graph produced by the RD-Clust workflow, connecting rare diseases to genes, phenotypes, Gene Ontology terms, drugs/ligands, and pathway interactions. Distributed as the processed disease ontograph within the RD-Clust repository." ;
     schema1:url <https://github.com/ncats/RD-Clust/tree/main/data/processed> .
-
-kgr:aragorn.api a schema1:ProgrammingInterface ;
-    rdfs:label "ARAGORN API" ;
-    dcterms:description "RENCI-hosted TRAPI endpoint (/query, /asyncquery) for the ARAGORN ARA, with Swagger documentation. Queries are answered by Strider over the knowledge providers it has registered (here including the Automat ROBOKOP KG, CAM-KP, ICEES, Ubergraph, GeLiNEA, Genetics KP, MolePro, OpenPredict and Text Mining KP co-occurrence), plus direct ROBOKOP KG lookups for inferred queries, SRI Node Normalizer identifier normalization and OmniCorp literature co-occurrence overlays for scoring." ;
-    schema1:url <https://aragorn.renci.org/docs> .
 
 kgr:hetionet.data.edges a schema1:GraphProduct ;
     rdfs:label "Hetionet v1.0 edges (SIF)" ;
@@ -57815,9 +58104,9 @@ kgr:hetionet.search a schema1:GraphicalInterface ;
     dcterms:description "Web application to search and explore connectivity between nodes in Hetionet" ;
     schema1:url <https://het.io/search> .
 
-kgr:msigdb.downloads.human a schema1:Product ;
-    rdfs:label "MSigDB Human Gene Sets Downloads" ;
-    dcterms:description "Downloadable gene set files in GMT, XML, and other formats for human collections including hallmarks, curated pathways, ontologies, and computational signatures; free registration is required for downloads" ;
+kgr:msigdb.downloads.mouse a schema1:Product ;
+    rdfs:label "MSigDB Mouse Gene Sets Downloads" ;
+    dcterms:description "Downloadable gene set files for mouse collections including mouse-ortholog hallmarks, curated pathways, ontologies, and cell type signatures; free registration is required for downloads" ;
     schema1:url <https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb> .
 
 kgr:orkg.dump a schema1:GraphProduct ;
@@ -57875,6 +58164,11 @@ kgr:uberon.uberon-basic.obo a schema1:OntologyProduct ;
     dcterms:description "Uberon edition that excludes external ontologies and most relations" ;
     schema1:url <http://purl.obolibrary.org/obo/uberon/uberon-basic.obo> .
 
+kgr:aragorn.api a schema1:ProgrammingInterface ;
+    rdfs:label "ARAGORN API" ;
+    dcterms:description "RENCI-hosted TRAPI endpoint (/query, /asyncquery) for the ARAGORN ARA, with Swagger documentation. Queries are answered by Strider over the knowledge providers it has registered (here including the Automat ROBOKOP KG, CAM-KP, ICEES, Ubergraph, GeLiNEA, Genetics KP, MolePro, OpenPredict and Text Mining KP co-occurrence), plus direct ROBOKOP KG lookups for inferred queries, SRI Node Normalizer identifier normalization and OmniCorp literature co-occurrence overlays for scoring." ;
+    schema1:url <https://aragorn.renci.org/docs> .
+
 kgr:disgenet.data a schema1:GraphProduct ;
     rdfs:label "DisGeNET Data" ;
     dcterms:description "DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription)." ;
@@ -57910,20 +58204,15 @@ kgr:micromap.api a schema1:ProgrammingInterface ;
     dcterms:description "REST API and MCP server over the production MicroMap Neo4j graph, with endpoints for taxa, diseases, metabolites, drugs, genes, proteins, pathways, biomarker signatures, papers, cross-feeding networks, provenance and graph traversal. Access requires a Graphomics API key. The API application code is in the open-source repository." ;
     schema1:url <https://www.graphomics.com/docs> .
 
+kgr:msigdb.downloads.human a schema1:Product ;
+    rdfs:label "MSigDB Human Gene Sets Downloads" ;
+    dcterms:description "Downloadable gene set files in GMT, XML, and other formats for human collections including hallmarks, curated pathways, ontologies, and computational signatures; free registration is required for downloads" ;
+    schema1:url <https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb> .
+
 kgr:multiomics-kp.graph a schema1:GraphProduct ;
     rdfs:label "Multiomics KP Knowledge Graph" ;
     dcterms:description "Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse KP, exposing the multiomics knowledge graph served by the Multiomics Provider (built from GTEx, TCGA, and drug-response data, with additional clinical-trials, drug-approval and knowledge-resource inputs)." ;
     schema1:url <https://biothings.transltr.io/biggim_drugresponse_kp/metadata> .
-
-kgr:oxo.api a schema1:ProgrammingInterface ;
-    rdfs:label "OxO2 REST API" ;
-    dcterms:description "OxO2 REST API (OpenAPI 3) for querying mappings, mapping sets, and ontologies; supports SSSOM-shaped JSON and SSSOM TSV export of mapping search results. Also exposes legacy OxO v1-compatible endpoints." ;
-    schema1:url <https://www.ebi.ac.uk/spot/oxo/swagger-ui.html> .
-
-kgr:oxo.portal a schema1:GraphicalInterface ;
-    rdfs:label "OxO Web Interface" ;
-    dcterms:description "OxO2 web interface for searching and browsing ontology cross-references and SSSOM mappings, including asserted mappings from OLS ontologies and curated mapping sets, plus inferred cross-set mappings" ;
-    schema1:url <https://www.ebi.ac.uk/spot/oxo/> .
 
 kgr:agro.owl a schema1:OntologyProduct ;
     rdfs:label "AgrO" ;
@@ -57975,11 +58264,6 @@ kgr:primekg.graph a schema1:GraphProduct ;
     dcterms:description "The full PrimeKG dataset containing disease relationships." ;
     schema1:url <https://dataverse.harvard.edu/api/access/datafile/6180620> .
 
-kgr:aragorn.api.itrb a schema1:ProgrammingInterface ;
-    rdfs:label "ARAGORN Production API" ;
-    dcterms:description "Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint, with Swagger documentation. Like the RENCI deployment it queries knowledge providers through Strider, looks up the ROBOKOP KG via Automat, normalizes identifiers with the SRI Node Normalizer and scores answers with OmniCorp literature co-occurrence." ;
-    schema1:url <https://aragorn.transltr.io/aragorn/docs> .
-
 kgr:drugmechdb.graph a schema1:GraphProduct ;
     rdfs:label "DrugMechDB Graph Dataset" ;
     dcterms:description "Curated mechanistic drug–disease paths comprising the DrugMechDB dataset packaged as a downloadable archive." ;
@@ -58020,6 +58304,21 @@ kgr:kg-microbe.graph.raw a schema1:GraphProduct ;
     dcterms:description "Raw source files for all KG-Microbe framework transforms (all 4 KGs)" ;
     schema1:url <https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest> .
 
+kgr:oxo.api a schema1:ProgrammingInterface ;
+    rdfs:label "OxO2 REST API" ;
+    dcterms:description "OxO2 REST API (OpenAPI 3) for querying mappings, mapping sets, and ontologies; supports SSSOM-shaped JSON and SSSOM TSV export of mapping search results. Also exposes legacy OxO v1-compatible endpoints." ;
+    schema1:url <https://www.ebi.ac.uk/spot/oxo/swagger-ui.html> .
+
+kgr:oxo.portal a schema1:GraphicalInterface ;
+    rdfs:label "OxO Web Interface" ;
+    dcterms:description "OxO2 web interface for searching and browsing ontology cross-references and SSSOM mappings, including asserted mappings from OLS ontologies and curated mapping sets, plus inferred cross-set mappings" ;
+    schema1:url <https://www.ebi.ac.uk/spot/oxo/> .
+
+kgr:aragorn.api.itrb a schema1:ProgrammingInterface ;
+    rdfs:label "ARAGORN Production API" ;
+    dcterms:description "Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint, with Swagger documentation. Like the RENCI deployment it queries knowledge providers through Strider, looks up the ROBOKOP KG via Automat, normalizes identifiers with the SRI Node Normalizer and scores answers with OmniCorp literature co-occurrence." ;
+    schema1:url <https://aragorn.transltr.io/aragorn/docs> .
+
 kgr:bioregistry.registry.json a schema1:Product ;
     rdfs:label "Bioregistry JSON Export" ;
     dcterms:description "Full Bioregistry export as JSON, with every prefix record including names, synonyms, URI formats, local identifier patterns, providers and mappings to the prefixes of other registries." ;
@@ -58054,21 +58353,6 @@ kgr:enrichr-kg.graph a schema1:GraphProduct ;
     rdfs:label "Enrichr-KG Neo4j Database" ;
     dcterms:description "Neo4j graph database integrating Enrichr gene set libraries with genes, terms, pathways, diseases, drugs, cell types, and other functional annotations" ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump> .
-
-kgr:entrez.edirect a schema1:ProgrammingInterface ;
-    rdfs:label "Entrez Direct (EDirect)" ;
-    dcterms:description "Entrez Direct (EDirect) command-line tools for Unix systems that wrap the E-utilities (esearch, efetch, elink, efilter, xtract and others) for pipeline access to Entrez databases." ;
-    schema1:url <https://www.ncbi.nlm.nih.gov/books/NBK179288/> .
-
-kgr:entrez.eutils a schema1:ProgrammingInterface ;
-    rdfs:label "Entrez E-utilities" ;
-    dcterms:description "Entrez Programming Utilities (E-utilities), a set of server-side programs (EInfo, ESearch, ESummary, EFetch, ELink, EPost, EGQuery, ESpell, ECitMatch) with a fixed URL syntax for searching, linking and retrieving records from the 38 Entrez databases. Results are returned as XML, with JSON available for several utilities." ;
-    schema1:url <https://www.ncbi.nlm.nih.gov/books/NBK25501/> .
-
-kgr:entrez.web a schema1:GraphicalInterface ;
-    rdfs:label "Entrez Web Interface" ;
-    dcterms:description "NCBI global cross-database search page, which runs a single query against all Entrez databases and reports hit counts per database." ;
-    schema1:url <https://www.ncbi.nlm.nih.gov/search/> .
 
 kgr:kg-monarch.graph a schema1:GraphProduct ;
     rdfs:label "KGX Distribution of KG-Monarch" ;
@@ -58222,6 +58506,21 @@ kgr:alzkb.data a schema1:GraphProduct ;
     rdfs:label "AlzKB Data Release (Version 2.0.0)" ;
     dcterms:description "Memgraph data release for AlzKB." ;
     schema1:url <https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0> .
+
+kgr:entrez.edirect a schema1:ProgrammingInterface ;
+    rdfs:label "Entrez Direct (EDirect)" ;
+    dcterms:description "Entrez Direct (EDirect) command-line tools for Unix systems that wrap the E-utilities (esearch, efetch, elink, efilter, xtract and others) for pipeline access to Entrez databases." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/books/NBK179288/> .
+
+kgr:entrez.eutils a schema1:ProgrammingInterface ;
+    rdfs:label "Entrez E-utilities" ;
+    dcterms:description "Entrez Programming Utilities (E-utilities), a set of server-side programs (EInfo, ESearch, ESummary, EFetch, ELink, EPost, EGQuery, ESpell, ECitMatch) with a fixed URL syntax for searching, linking and retrieving records from the 38 Entrez databases. Results are returned as XML, with JSON available for several utilities." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/books/NBK25501/> .
+
+kgr:entrez.web a schema1:GraphicalInterface ;
+    rdfs:label "Entrez Web Interface" ;
+    dcterms:description "NCBI global cross-database search page, which runs a single query against all Entrez databases and reports hit counts per database." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/search/> .
 
 kgr:np-kg.graph.networkx a schema1:GraphProduct ;
     rdfs:label "NP-KG gpickle" ;
