@@ -45,6 +45,8 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: radlex
+  - relation_type: prov:wasInfluencedBy
+    source: interlex
   warnings: []
 - category: OntologyProduct
   description: OWL individuals that pun the FMA classes so the ontology can be queried
