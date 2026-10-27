@@ -29,6 +29,7 @@ from yamllint import config, linter
 
 try:
     from util.common import dump_frontmatter_text
+    from util.frontmatter_patch import write_frontmatter_minimal
     from util.source_associations import (
         ensure_direct_product_primary_source,
         iter_source_ids,
@@ -45,6 +46,7 @@ try:
     )
 except ModuleNotFoundError:
     from common import dump_frontmatter_text
+    from frontmatter_patch import write_frontmatter_minimal
     from source_associations import (
         ensure_direct_product_primary_source,
         iter_source_ids,
@@ -639,8 +641,7 @@ def concat_resource_yaml(args):
                         if isinstance(product, dict) and ensure_direct_product_primary_source(resource_id, product):
                             metadata_changed = True
                     if metadata_changed:
-                        with open(fn, "w", encoding="utf-8") as f:
-                            f.write("---\n" + yaml.dump(metadata, allow_unicode=True) + "---\n" + md)
+                        write_frontmatter_minimal(fn, metadata, md)
                 except Exception as e:
                     print(f"Error normalizing direct product sources for {resource_id}: {str(e)}")
 
@@ -699,9 +700,10 @@ def concat_resource_yaml(args):
                             _, existing_date = groups[key]
                             if d and ((existing_date is None) or (d > existing_date)):
                                 groups[key] = (w, d)
-                    # Rebuild list: choose the kept warning per group; stable order by descending date then text
-                    new_warns = [wd[0] for wd in sorted(
-                        groups.values(), key=lambda wd: (wd[1] is not None, wd[1]), reverse=True)]
+                    # Keep each group's chosen warning where the group first appeared, so
+                    # dropping a duplicate never reorders the remaining warnings (#934).
+                    new_warns = [groups[key][0] for key in dict.fromkeys(
+                        _normalize_warning_msg(w) for w in warns)]
                     if new_warns != warns:
                         p["warnings"] = new_warns
                         changed = True
@@ -722,8 +724,7 @@ def concat_resource_yaml(args):
                                 if id_to_warns[prod["id"]] != prod.get("warnings"):
                                     metadata["products"][idx]["warnings"] = id_to_warns[prod["id"]]
                                     updated_resources += 1
-                    with open(fn, "w", encoding="utf-8") as f:
-                        f.write("---\n" + yaml.dump(metadata, allow_unicode=True) + "---\n" + md)
+                    write_frontmatter_minimal(fn, metadata, md)
                 except Exception as e:
                     print(f"Error updating warnings for resource {obj['id']}: {str(e)}")
         if updated_resources:
@@ -855,11 +856,7 @@ def concat_resource_yaml(args):
                         if added_products > 0:
                             print(f"Added {added_products} stub products to {resource_id}")
                             # Write updated metadata back to file
-                            with open(resource_file, "w", encoding="utf-8") as f:
-                                f.write("---\n")
-                                yaml.dump(metadata, f, allow_unicode=True)
-                                f.write("---\n")
-                                f.write(md)
+                            write_frontmatter_minimal(resource_file, metadata, md)
                     except Exception as e:
                         print(f"Error updating products for {resource_id}: {str(e)}")
 
@@ -938,8 +935,7 @@ def concat_resource_yaml(args):
                         (metadata, md) = load_md(fn)
                         if "domains" in metadata and metadata["domains"] == ["other"]:
                             metadata["domains"] = ["stub"]
-                            with open(fn, "w", encoding="utf-8") as f:
-                                f.write("---\n" + yaml.dump(metadata, allow_unicode=True) + "---\n" + md)
+                            write_frontmatter_minimal(fn, metadata, md)
                             updated_count += 1
                             print(
                                 f"Updated domain for stub resource {obj['id']} from 'other' to 'stub'")
@@ -1029,8 +1025,7 @@ def concat_resource_yaml(args):
 
                             if len(unique_metadata_products) < len(metadata["products"]):
                                 metadata["products"] = unique_metadata_products
-                                with open(fn, "w", encoding="utf-8") as f:
-                                    f.write("---\n" + yaml.dump(metadata, allow_unicode=True) + "---\n" + md)
+                                write_frontmatter_minimal(fn, metadata, md)
                     except Exception as e:
                         print(f"Error updating resource file {fn}: {str(e)}")
 
@@ -1091,8 +1086,7 @@ def concat_resource_yaml(args):
                         metadata_changed = True
 
             if metadata_changed:
-                with open(fn, "w", encoding="utf-8") as f:
-                    f.write("---\n" + yaml.dump(metadata, allow_unicode=True) + "---\n" + md)
+                write_frontmatter_minimal(fn, metadata, md)
 
             if total_written > 0:
                 print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
@@ -1166,11 +1160,7 @@ def concat_resource_yaml(args):
                                     continue
                             new_products.append(p)
                         metadata['products'] = new_products
-                        with open(fn, 'w', encoding="utf-8") as f:
-                            f.write('---\n')
-                            yaml.dump(metadata, f, allow_unicode=True)
-                            f.write('---\n')
-                            f.write(md)
+                        write_frontmatter_minimal(fn, metadata, md)
                         updated_files += 1
                 except Exception as e:
                     print(f"WARN: could not synchronize products for {rid}: {e}")
@@ -1221,11 +1211,7 @@ def concat_resource_yaml(args):
                         mw = [w for w in metadata['warnings'] if not pattern.match(str(w))]
                         if mw != metadata['warnings']:
                             metadata['warnings'] = mw
-                            with open(fn, 'w', encoding="utf-8") as f:
-                                f.write('---\n')
-                                yaml.dump(metadata, f, allow_unicode=True)
-                                f.write('---\n')
-                                f.write(md)
+                            write_frontmatter_minimal(fn, metadata, md)
                             updated += 1
                 except Exception as e:
                     print(f"WARN: could not clean resource-level warnings for {rid}: {e}")
@@ -1497,11 +1483,7 @@ def concat_resource_yaml(args):
                     link_snippet = f"[{rid} evaluation]({rid}_eval.html)"
                     if link_snippet not in md:
                         md_update = md.rstrip() + "\n\n## Evaluation\n\n- View the evaluation: " + link_snippet + "\n"
-                        with open(res_file, 'w', encoding='utf-8') as rf:
-                            rf.write("---\n")
-                            yaml.dump(metadata, rf, allow_unicode=True)
-                            rf.write("---\n")
-                            rf.write(md_update)
+                        write_frontmatter_minimal(res_file, metadata, md_update)
                         updated_links += 1
                 except Exception as e:
                     print(
