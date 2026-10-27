@@ -39,6 +39,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: ntp
   product_url: https://cebs.niehs.nih.gov/cebs/search
 - category: GraphicalInterface
   description: DTT Data Collections Guided Search, providing filterable, downloadable
@@ -53,6 +55,8 @@ products:
     source: cebs
   - relation_type: prov:hadPrimarySource
     source: tox21
+  - relation_type: prov:hadPrimarySource
+    source: ntp
   product_url: https://cebs-ext.niehs.nih.gov/datasets
 - category: Product
   description: Toxicology study data from NTP and other programs
@@ -62,6 +66,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: ntp
   product_url: https://cebs.niehs.nih.gov/cebs/
 - category: ProgrammingInterface
   connection_url: https://manticore.niehs.nih.gov/cebsapi/v1
@@ -74,6 +80,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: ntp
   product_url: https://tools.niehs.nih.gov/cebs3/support/assets/docs/CEBS_API-User-Help.pdf
 - category: DocumentationProduct
   description: CEBS citation guidance for referencing the database and study URLs
