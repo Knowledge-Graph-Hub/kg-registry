@@ -13,8 +13,11 @@ description: The Molecular Signatures Database (MSigDB) is a comprehensive colle
   (GSEA) software. MSigDB includes curated gene sets from pathway databases, gene
   ontology annotations, hallmark gene sets, immunologic signatures, regulatory target
   sets, and cell type-specific signatures derived from single-cell sequencing studies.
-  Available for both human and mouse, with the current public site listing Human MSigDB
-  v2026.1.Hs and Mouse MSigDB v2026.1.Mm.
+  Canonical pathway, ontology, and regulatory target collections are derived from external
+  resources including Gene Ontology, the Human Phenotype Ontology, the Mammalian Phenotype
+  Ontology, KEGG, Reactome, WikiPathways, BioCarta, PID, miRDB, and GTRD. Available for
+  both human and mouse, with the current public site listing Human MSigDB v2026.2.Hs
+  (35,092 gene sets) and Mouse MSigDB v2026.2.Mm (23,881 gene sets).
 domains:
 - genomics
 - systems biology
@@ -22,7 +25,7 @@ domains:
 homepage_url: https://www.gsea-msigdb.org/gsea/msigdb/
 id: msigdb
 infores_id: msigdb
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gsea-msigdb.org/gsea/license_terms_list.jsp
@@ -49,22 +52,32 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: gtrd
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ccle
   product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
   secondary_source:
   - relation_type: prov:used
-    source: go
-  - relation_type: prov:used
-    source: hp
-  - relation_type: prov:used
-    source: kegg
-  - relation_type: prov:used
     source: mirbase
-  - relation_type: prov:used
-    source: pid
-  - relation_type: prov:used
-    source: reactome
-  - relation_type: prov:used
-    source: wikipathways
   warnings:
   - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
     is free but required for direct file access.
@@ -78,22 +91,24 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: gtrd
   product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
   secondary_source:
   - relation_type: prov:used
-    source: go
-  - relation_type: prov:used
-    source: hp
-  - relation_type: prov:used
-    source: kegg
-  - relation_type: prov:used
     source: mirbase
-  - relation_type: prov:used
-    source: pid
-  - relation_type: prov:used
-    source: reactome
-  - relation_type: prov:used
-    source: wikipathways
   warnings:
   - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
     is free but required for direct file access.
@@ -1819,6 +1834,51 @@ publications:
   preferred: true
   title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
   year: '2023'
+- authors:
+  - Subramanian A
+  - Tamayo P
+  - Mootha VK
+  - Mukherjee S
+  - Ebert BL
+  - Gillette MA
+  - Paulovich A
+  - Pomeroy SL
+  - Golub TR
+  - Lander ES
+  - Mesirov JP
+  doi: 10.1073/pnas.0506580102
+  id: doi:10.1073/pnas.0506580102
+  journal: Proceedings of the National Academy of Sciences
+  preferred: false
+  title: 'Gene set enrichment analysis: A knowledge-based approach for interpreting
+    genome-wide expression profiles'
+  year: '2005'
+- authors:
+  - Liberzon A
+  - Subramanian A
+  - Pinchback R
+  - Thorvaldsdóttir H
+  - Tamayo P
+  - Mesirov JP
+  doi: 10.1093/bioinformatics/btr260
+  id: doi:10.1093/bioinformatics/btr260
+  journal: Bioinformatics
+  preferred: false
+  title: Molecular signatures database (MSigDB) 3.0
+  year: '2011'
+- authors:
+  - Liberzon A
+  - Birger C
+  - Thorvaldsdóttir H
+  - Ghandi M
+  - Mesirov JP
+  - Tamayo P
+  doi: 10.1016/j.cels.2015.12.004
+  id: doi:10.1016/j.cels.2015.12.004
+  journal: Cell Systems
+  preferred: false
+  title: The Molecular Signatures Database Hallmark Gene Set Collection
+  year: '2015'
 rrid: SCR_016863
 synonyms:
 - MSigDB
@@ -1834,26 +1894,27 @@ The Molecular Signatures Database (MSigDB) is a comprehensive resource of tens o
 
 ## Collections
 
-### Human Collections (v2026.1.Hs)
+### Human Collections (v2026.2.Hs)
 
 - **Hallmark Gene Sets**: Coherently expressed signatures representing well-defined biological states or processes
-- **Curated Gene Sets**: From pathway databases, PubMed publications, and domain experts
-- **Regulatory Target Gene Sets**: microRNA seed sequences and transcription factor binding sites
+- **Curated Gene Sets (C2)**: Chemical and genetic perturbations from the literature, plus canonical pathways from BioCarta, KEGG (KEGG_MEDICUS and KEGG_LEGACY), PID, Reactome, and WikiPathways
+- **Regulatory Target Gene Sets (C3)**: miRDB microRNA target predictions and GTRD transcription factor binding site sets, plus legacy seed-match and motif sets
 - **Computational Gene Sets**: Mined from large cancer-oriented expression datasets
-- **Gene Ontology Gene Sets**: Genes annotated by the same ontology term
-- **Oncogenic Signature Gene Sets**: From cancer gene perturbations
-- **Immunologic Signature Gene Sets**: Cell states and perturbations in the immune system
+- **Ontology Gene Sets (C5)**: Gene Ontology (BP, CC, MF) and Human Phenotype Ontology terms
+- **Oncogenic Signature Gene Sets (C6)**: Mostly generated from NCBI GEO microarray data on perturbation of cancer genes
+- **Immunologic Signature Gene Sets (C7)**: ImmuneSigDB and HIPC vaccine response (VAX) gene sets
 - **Cell Type Signature Gene Sets**: Cluster markers from single-cell sequencing studies
-- **Positional Gene Sets**: Chromosome cytogenetic band locations
+- **Positional Gene Sets (C1)**: Chromosome cytogenetic band locations
+- **Computational Perturbation Signatures (C9)**: Derived from DepMap CRISPR screens and CCLE expression profiles
 
-### Mouse Collections (v2026.1.Mm)
+### Mouse Collections (v2026.2.Mm)
 
 - Mouse-ortholog versions of hallmark gene sets
-- Curated gene sets from pathways and literature
-- Gene ontology annotations
+- Curated gene sets from the literature and canonical pathways from BioCarta, Reactome, and WikiPathways
+- Gene Ontology and Mammalian Phenotype Ontology (general and tumor phenotype) gene sets
 - Immunologic signatures
 - Cell type signatures from single-cell studies
-- Regulatory target gene sets
+- Regulatory target gene sets from miRDB and GTRD
 - Positional gene sets
 
 ## Features
@@ -1883,3 +1944,10 @@ Currently funded by NCI's Informatics Technology for Cancer Research (ITCR) prog
 ## Community Contributions
 
 MSigDB welcomes suggestions and contributions of new gene sets from the research community.
+
+## Citation
+
+- Subramanian A et al. Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles. PNAS. 2005. doi:10.1073/pnas.0506580102
+- Liberzon A et al. Molecular signatures database (MSigDB) 3.0. Bioinformatics. 2011. doi:10.1093/bioinformatics/btr260
+- Liberzon A et al. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Systems. 2015. doi:10.1016/j.cels.2015.12.004
+- Castanza AS et al. Extending support for mouse data in the Molecular Signatures Database (MSigDB). Nature Methods. 2023. doi:10.1038/s41592-023-02014-7
