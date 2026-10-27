@@ -9,6 +9,7 @@ name: GDELT 2.0 Raw Data Files
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gdelt
+product_file_size: 128756658
 product_url: https://data.gdeltproject.org/gdeltv2/masterfilelist.txt
 secondary_source:
 - relation_type: prov:used

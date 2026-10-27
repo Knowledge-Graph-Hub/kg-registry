@@ -56,6 +56,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: radlex
+  product_file_size: 16011575
   product_url: https://radlex.org/Files/Radlex.csv
 - category: GraphicalInterface
   description: RadLex term browser and search interface on radlex.org.

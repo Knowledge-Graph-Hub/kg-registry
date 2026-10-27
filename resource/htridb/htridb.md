@@ -71,9 +71,9 @@ products:
   warnings:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
     to URL'
 - category: Product
   description: Download page listing interaction tables, MITAB files, GMT gene sets,

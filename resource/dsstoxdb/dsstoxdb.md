@@ -99,9 +99,9 @@ products:
     source: dsstoxdb
   product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP

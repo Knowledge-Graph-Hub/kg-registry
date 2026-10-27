@@ -8,6 +8,7 @@ name: CSPA Validated Surfaceome Proteins
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cspa
+product_file_size: 1430284
 product_url: https://wollscheidlab.org/CSPA/data/S2_File.xlsx
 layout: product_detail
 ---
