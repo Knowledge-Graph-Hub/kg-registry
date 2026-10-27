@@ -64,6 +64,8 @@ products:
         relation_type: prov:hadPrimarySource
       - source: biomappings
         relation_type: prov:hadPrimarySource
+      - source: semra
+        relation_type: prov:hadPrimarySource
     product_url: https://www.ebi.ac.uk/spot/oxo/
   - category: ProgrammingInterface
     connection_url: https://www.ebi.ac.uk/spot/oxo/api/v2
@@ -102,6 +104,8 @@ products:
       - source: clinvar
         relation_type: prov:hadPrimarySource
       - source: biomappings
+        relation_type: prov:hadPrimarySource
+      - source: semra
         relation_type: prov:hadPrimarySource
     product_url: https://www.ebi.ac.uk/spot/oxo/swagger-ui.html
 repository: https://github.com/EBISPOT/oxo2
