@@ -27,7 +27,7 @@ domains:
 homepage_url: https://cebs.niehs.nih.gov/
 id: cebs
 infores_id: cebs
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 name: CEBS
 products:
@@ -40,6 +40,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cebs
   product_url: https://cebs.niehs.nih.gov/cebs/search
+- category: GraphicalInterface
+  description: DTT Data Collections Guided Search, providing filterable, downloadable
+    tables for curated NIEHS Division of Translational Toxicology (DTT) data collections
+    (e.g., clinical chemistry, hematology, and other individual animal data; treatment-related
+    findings; DTT publications; and a Tox21 p53 activator dataset)
+  format: http
+  id: cebs.dtt-data-collections
+  name: DTT Data Collections Guided Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: tox21
+  product_url: https://cebs-ext.niehs.nih.gov/datasets
 - category: Product
   description: Toxicology study data from NTP and other programs
   format: mixed
@@ -52,7 +66,8 @@ products:
 - category: ProgrammingInterface
   connection_url: https://manticore.niehs.nih.gov/cebsapi/v1
   description: Programmatic API access to CEBS data, documented by the CEBS API user
-    help
+    help. Note that as of October 2026 the documented base URL (https://manticore.niehs.nih.gov/cebsapi/v1)
+    and example requests returned HTTP 404.
   format: http
   id: cebs.api
   name: CEBS API
@@ -147,8 +162,21 @@ Web-based interface for querying and browsing NTP toxicology studies with advanc
 ### CEBS Study Data
 Downloadable toxicology study data including individual animal data, pathology findings, and study summaries.
 
+### DTT Data Collections Guided Search
+Guided search over curated NIEHS Division of Translational Toxicology (DTT) data collections, with results shown as filterable tables available for download: [https://cebs-ext.niehs.nih.gov/datasets](https://cebs-ext.niehs.nih.gov/datasets).
+
 ### CEBS API
-Programmatic access to CEBS data for computational toxicology applications.
+Programmatic access to CEBS data for computational toxicology applications, documented in the [CEBS API User Help](https://tools.niehs.nih.gov/cebs3/support/assets/docs/CEBS_API-User-Help.pdf). As of October 2026, the documented base URL (`https://manticore.niehs.nih.gov/cebsapi/v1`) returned HTTP 404.
+
+## Data Sources
+
+CEBS data come primarily from studies conducted by the National Toxicology Program (NTP) and the NIEHS Division of Translational Toxicology (DTT), including carcinogenicity, short-term toxicity, and genetic toxicity studies, as well as non-DTT studies of environmental health interest deposited by other investigators. Some DTT data collections incorporate Tox21 assay results.
+
+## Citation
+
+Per the CEBS citation guidance: Chemical Effects in Biological Systems (CEBS). Research Triangle Park, NC (USA): Division of Translational Toxicology, NIEHS (DTT). https://cebs.niehs.nih.gov/cebs/
+
+Martini C, et al. CEBS update: curated toxicology database with enhanced tools for data integration. Nucleic Acids Research. 2022. doi:10.1093/nar/gkab981
 
 ## Information Resource ID
 
