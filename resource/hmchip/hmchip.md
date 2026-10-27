@@ -47,12 +47,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: ncbigene
   warnings:
-  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
-    Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
     to URL'
+  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
+    Internet Archive snapshot is from 2022-08-17.
 - category: GraphicalInterface
   description: Web server and query interface to the hmChIP database, retrieving protein-DNA
     binding intensities from individual human and mouse ChIP-seq and ChIP-chip samples

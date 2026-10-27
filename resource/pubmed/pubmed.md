@@ -1091,14 +1091,12 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 500 error
-    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed
@@ -2864,12 +2862,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: ncbigene
   warnings:
-  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
-    Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
     to URL'
+  - Site did not respond (connection timed out) when checked on 2026-10-19; the last
+    Internet Archive snapshot is from 2022-08-17.
 - category: GraphicalInterface
   description: REDfly search interface for querying CRMs, CRM segments, predicted
     CRMs, and TFBSs by gene, PubMed ID, location, or expression pattern, with selected

@@ -9,9 +9,9 @@ original_source:
   source: ev
 product_url: http://purl.obolibrary.org/obo/ev.obo
 warnings:
+- File was not able to be retrieved when checked on 2026-10-27_ HTTP 404 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-10-20_ HTTP 404 error when
-  accessing file
 layout: product_detail
 ---

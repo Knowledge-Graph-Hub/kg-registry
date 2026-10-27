@@ -29,6 +29,31 @@ id: pharos
 infores_id: pharos
 last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
+license:
+  display_note: 'No license is declared for this resource. This is the most restrictive
+    license (custom) among its sources: ctd, darkkinasekb, disgenet, gtex, kegg. Not
+    accounted for, no known license: cspa, human-proteome-map, impc, lincs-l1000,
+    monarchinitiative, panther, pdb, rgd, tiga.'
+  id: https://www.gtexportal.org/home/license
+  inferred_from:
+  - ctd
+  - darkkinasekb
+  - disgenet
+  - gtex
+  - kegg
+  label: GTEx Portal Data License
+  restrictiveness: custom
+  status: inferred
+  unresolved_sources:
+  - cspa
+  - human-proteome-map
+  - impc
+  - lincs-l1000
+  - monarchinitiative
+  - panther
+  - pdb
+  - rgd
+  - tiga
 name: Pharos
 products:
 - category: GraphicalInterface
@@ -253,8 +278,8 @@ products:
   connection_url: https://pharos-api.ncats.io/graphql
   description: GraphQL API for programmatic access to Pharos and TCRD data enabling
     custom queries and integrations. The pharos.nih.gov/graphql page is the in-browser
-    explorer; queries are served by the pharos-api.ncats.io/graphql endpoint used by
-    the Pharos frontend.
+    explorer; queries are served by the pharos-api.ncats.io/graphql endpoint used
+    by the Pharos frontend.
   format: graphql
   id: pharos.api
   name: Pharos GraphQL API
@@ -453,13 +478,11 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
     The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -1091,7 +1114,6 @@ warnings:
   asks users to respect individual source licenses; no single data license is asserted
   for all Pharos/TCRD content.
 ---
-
 # Pharos
 
 ## Overview

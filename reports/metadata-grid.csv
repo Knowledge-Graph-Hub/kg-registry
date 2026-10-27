@@ -664,6 +664,7 @@ npo,active,PASS
 nsduh,active,PASS
 nsides,active,PASS
 nsrr,active,PASS
+ntp,active,PASS
 nuget,active,PASS
 oae,active,PASS
 oarcs,active,PASS
@@ -733,6 +734,7 @@ orthodb,active,PASS
 orthomcl,active,PASS
 osv,active,PASS
 ovae,active,PASS
+oxo,active,PASS
 p3db,active,PASS
 pacer,active,PASS
 pankbase,active,PASS
@@ -1134,7 +1136,6 @@ omiabis,inactive,PASS
 open-tggates,inactive,PASS
 oreganno,inactive,PASS
 owlsim,inactive,PASS
-oxo,inactive,PASS
 pao,inactive,PASS
 patric,inactive,PASS
 pd_st,inactive,PASS

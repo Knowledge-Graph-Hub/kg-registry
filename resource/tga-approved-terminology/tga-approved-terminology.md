@@ -59,8 +59,6 @@ products:
     source: tga-approved-terminology
   product_url: https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
     to URL'
 - category: DocumentationProduct
@@ -74,8 +72,6 @@ products:
     source: tga-approved-terminology
   product_url: https://www.tga.gov.au/sites/default/files/2024-10/tga-approved-terminology-therapeutic-goods.pdf
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
     to URL'
 - category: GraphicalInterface

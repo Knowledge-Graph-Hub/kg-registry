@@ -11,7 +11,7 @@ original_source:
   source: inparanoid
 product_url: https://inparanoidb.sbc.su.se/download
 warnings:
-- File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-10-27_ Timeout connecting
   to URL
 layout: product_detail
 ---

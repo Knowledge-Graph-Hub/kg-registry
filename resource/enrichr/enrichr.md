@@ -65,9 +65,9 @@ products:
     transcription, pathways, ontologies, diseases/drugs, cell types, crowd-contributed,
     and legacy categories), each retrievable as a GMT-style tab-delimited text file
     via the geneSetLibrary endpoint (e.g. geneSetLibrary?mode=text&libraryName=KEGG_2021_Human).
-    Libraries are compiled from external databases including GO, KEGG, Reactome,
-    WikiPathways, MSigDB, ChEA/ENCODE, GTEx, ARCHS4, LINCS L1000, GEO, DisGeNET, OMIM,
-    GWAS Catalog, HPO, MGI, CellMarker, and others.
+    Libraries are compiled from external databases including GO, KEGG, Reactome, WikiPathways,
+    MSigDB, ChEA/ENCODE, GTEx, ARCHS4, LINCS L1000, GEO, DisGeNET, OMIM, GWAS Catalog,
+    HPO, MGI, CellMarker, and others.
   format: txt
   id: enrichr.libraries
   name: Enrichr Gene Set Libraries
@@ -439,8 +439,6 @@ products:
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
     when accessing file'
 publications:

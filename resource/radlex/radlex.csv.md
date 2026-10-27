@@ -9,6 +9,7 @@ name: RadLex CSV
 original_source:
 - relation_type: prov:hadPrimarySource
   source: radlex
+product_file_size: 16011575
 product_url: https://radlex.org/Files/Radlex.csv
 layout: product_detail
 ---
