@@ -27,7 +27,7 @@ domains:
 homepage_url: https://pharos.nih.gov/
 id: pharos
 infores_id: pharos
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 name: Pharos
 products:
@@ -41,6 +41,102 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: tiga
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: cspa
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: bioplex
+  - relation_type: prov:hadPrimarySource
+    source: impc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: hcop
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubtator
   product_url: https://pharos.nih.gov/
 - category: Product
   description: Target Central Resource Database (TCRD) downloadable database files
@@ -52,20 +148,215 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: tiga
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: cspa
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: bioplex
+  - relation_type: prov:hadPrimarySource
+    source: impc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: hcop
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubtator
   product_url: https://opendata.ncats.nih.gov/public/pharos/
   warnings:
   - The Pharos footer still links the historical Juniper TCRD download host, but the
     about page points Pharos data downloads to NCATS OpenData; the registry uses the
     NCATS OpenData URL.
 - category: ProgrammingInterface
+  connection_url: https://pharos-api.ncats.io/graphql
   description: GraphQL API for programmatic access to Pharos and TCRD data enabling
-    custom queries and integrations
-  format: http
+    custom queries and integrations. The pharos.nih.gov/graphql page is the in-browser
+    explorer; queries are served by the pharos-api.ncats.io/graphql endpoint used by
+    the Pharos frontend.
+  format: graphql
   id: pharos.api
   name: Pharos GraphQL API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharos
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  - relation_type: prov:hadPrimarySource
+    source: monarchinitiative
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: tiga
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: human-proteome-map
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: cspa
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: bioplex
+  - relation_type: prov:hadPrimarySource
+    source: impc
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: hcop
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubtator
   product_url: https://pharos.nih.gov/graphql
 - category: DocumentationProduct
   description: API documentation and usage examples for the Pharos GraphQL interface
@@ -800,3 +1091,27 @@ warnings:
   asks users to respect individual source licenses; no single data license is asserted
   for all Pharos/TCRD content.
 ---
+
+# Pharos
+
+## Overview
+
+Pharos is the web interface to the Target Central Resource Database (TCRD), built by the NIH Illuminating the Druggable Genome (IDG) program. It classifies human proteins into Target Development Levels (Tclin, Tchem, Tbio, Tdark) and brings together target, disease and ligand data from more than 80 sources.
+
+## Data Sources
+
+The Pharos GraphQL `dataSourceCounts` query (checked 2026-10-27) lists the datasets loaded into TCRD/Pharos. They include UniProt, NCBI Gene, HGNC, Ensembl, ChEMBL, DrugCentral, Guide to Pharmacology, PubChem, DisGeNET, JensenLab DISEASES, COMPARTMENTS and TISSUES, OMIM, ClinVar, CTD, Disease Ontology, eRAM, Monarch, GWAS Catalog, TIGA, GTEx, Human Protein Atlas, Human Proteome Map, Expression Atlas, ARCHS4, CCLE, Cell Surface Protein Atlas, Harmonizome, LINCS L1000, Gene Ontology, Reactome, KEGG, WikiPathways, PathwayCommons, PANTHER, STRING, BioPlex, IMPC, MGI, RGD, HomoloGene, HCOP orthologs, RCSB PDB, GlyGen, the Dark Kinase Knowledgebase, PubMed and PubTator. Other sources include Antibodypedia, AnimalTFDB, the Drug Target Ontology, Human Cell Atlas, LocSigDB, P-HIPSTer, ProKinO, RESOLUTE, TIN-X and TMHMM.
+
+## Access
+
+- Web portal: https://pharos.nih.gov/
+- GraphQL API: https://pharos-api.ncats.io/graphql (explorer at https://pharos.nih.gov/graphql; docs at https://pharos.nih.gov/api-docs)
+- Data downloads: https://opendata.ncats.nih.gov/public/pharos/
+
+## License
+
+Pharos does not assert a single data license; its about page asks users to respect the licenses of the individual primary sources. The frontend source code is MIT licensed.
+
+## Citation
+
+Kelleher K, et al. Pharos 2023: an integrated resource for the understudied human proteome. Nucleic Acids Research. 2023. doi:10.1093/nar/gkac1033

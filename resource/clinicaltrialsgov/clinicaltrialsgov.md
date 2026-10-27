@@ -1567,6 +1567,19 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: clinicaltrialsgov
   product_url: https://yoda.yale.edu/trials-search/
+- category: GraphicalInterface
+  description: Web interface for exploring biological relationships in EmBiology
+  format: http
+  id: embiology.web
+  name: EmBiology Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: embiology
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://www.embiology.com/
 publications:
 - authors:
   - Zarin DA

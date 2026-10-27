@@ -9,16 +9,18 @@ contacts:
   label: Ma'ayan Laboratory
 creation_date: '2026-05-21T00:00:00Z'
 description: Enrichr is a Ma'ayan Lab web-based gene set enrichment analysis resource
-  that accepts gene lists and related inputs, tests them against hundreds of curated
-  and crowd-sourced gene set libraries, and provides ranked enrichment results, visualizations,
-  and programmatic access.
+  that accepts gene lists and related inputs, tests them against more than 200 gene
+  set libraries compiled from external databases (e.g. GO, KEGG, Reactome, WikiPathways,
+  MSigDB, ENCODE/ChEA, GTEx, ARCHS4, LINCS L1000, GEO, DisGeNET, GWAS Catalog) and
+  crowd-sourced submissions, and provides ranked enrichment results, visualizations,
+  downloadable libraries, and programmatic access.
 domains:
 - biomedical
 - genomics
 - systems biology
 homepage_url: https://maayanlab.cloud/Enrichr/
 id: enrichr
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -58,6 +60,137 @@ products:
     source: enrichr
   product_url: https://maayanlab.cloud/Enrichr/datasetStatistics
   warnings: []
+- category: Product
+  description: Downloadable Enrichr gene set libraries (more than 200 libraries across
+    transcription, pathways, ontologies, diseases/drugs, cell types, crowd-contributed,
+    and legacy categories), each retrievable as a GMT-style tab-delimited text file
+    via the geneSetLibrary endpoint (e.g. geneSetLibrary?mode=text&libraryName=KEGG_2021_Human).
+    Libraries are compiled from external databases including GO, KEGG, Reactome,
+    WikiPathways, MSigDB, ChEA/ENCODE, GTEx, ARCHS4, LINCS L1000, GEO, DisGeNET, OMIM,
+    GWAS Catalog, HPO, MGI, CellMarker, and others.
+  format: txt
+  id: enrichr.libraries
+  name: Enrichr Gene Set Libraries
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: bioplanet
+  - relation_type: prov:hadPrimarySource
+    source: bioplex
+  - relation_type: prov:hadPrimarySource
+    source: cellmarker
+  - relation_type: prov:hadPrimarySource
+    source: chea
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: kinomescan
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: impc
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: ncipidkg
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: sigcom-lincs
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: proteomicsdb
+  - relation_type: prov:hadPrimarySource
+    source: open-tggates
+  - relation_type: prov:hadPrimarySource
+    source: trrust
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: mirtarbase
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: geneshot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://maayanlab.cloud/Enrichr/#libraries
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource
@@ -340,6 +473,7 @@ publications:
   - Lachmann A
   - McDermott MG
   - Monteiro CD
+  - Gundersen GW
   - Ma'ayan A
   doi: 10.1093/nar/gkw377
   id: doi:10.1093/nar/gkw377
@@ -347,7 +481,27 @@ publications:
   preferred: false
   title: 'Enrichr: a comprehensive gene set enrichment analysis web server 2016 update'
   year: '2016'
+- authors:
+  - Xie Z
+  - Bailey A
+  - Kuleshov MV
+  - Clarke DJB
+  - Evangelista JE
+  - Jenkins SL
+  - Lachmann A
+  - Wojciechowicz ML
+  - Kropiwnicki E
+  - Jagodnik KM
+  - Jeon M
+  - Ma'ayan A
+  doi: 10.1002/cpz1.90
+  id: doi:10.1002/cpz1.90
+  journal: Current Protocols
+  preferred: false
+  title: Gene Set Knowledge Discovery with Enrichr
+  year: '2021'
 repository: https://github.com/MaayanLab/enrichr_issues
+rrid: SCR_001575
 taxon:
 - NCBITaxon:9606
 ---
@@ -362,6 +516,17 @@ Current Enrichr documentation describes support for crisp and fuzzy gene sets, o
 - Main portal: [Enrichr](https://maayanlab.cloud/Enrichr/)
 - API documentation: [Enrichr API](https://maayanlab.cloud/Enrichr/help#api)
 - Library statistics: [datasetStatistics](https://maayanlab.cloud/Enrichr/datasetStatistics)
+- Gene set library downloads: [Libraries](https://maayanlab.cloud/Enrichr/#libraries); individual libraries can be fetched as GMT-style text via `https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName=<library>`
+
+## Gene Set Library Sources
+
+As of October 2026 the library statistics endpoint lists 228 libraries in eight categories (Transcription, Pathways, Ontologies, Diseases/Drugs, Cell Types, Misc, Legacy, Crowd). Libraries are built from external resources including Gene Ontology, KEGG, Reactome, WikiPathways, PFOCR, PANTHER, HumanCyc, BioPlanet, NCI-Nature PID, MSigDB, ChEA, ENCODE, JASPAR, TRRUST, ARCHS4, GTEx, BioGPS, ProteomicsDB, LINCS L1000 and the Connectivity Map, GEO-derived perturbation signatures, DepMap/Achilles and CCLE, DisGeNET, OMIM, Orphanet, ClinVar, GWAS Catalog, UK Biobank, dbGaP, the Human Phenotype Ontology, MGI Mammalian Phenotype annotations, IMPC/KOMP2, CellMarker, HuBMAP/Azimuth, the JensenLab COMPARTMENTS, DISEASES, and TISSUES resources, DGIdb, DrugCentral, KINOMEscan, HMDB, CORUM, BioPlex, miRTarBase, and others, as well as crowd-contributed Enrichr gene lists.
+
+## Citation
+
+- Chen EY et al. Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool. BMC Bioinformatics. 2013;14:128. doi:10.1186/1471-2105-14-128
+- Kuleshov MV et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Research. 2016. doi:10.1093/nar/gkw377
+- Xie Z et al. Gene Set Knowledge Discovery with Enrichr. Current Protocols. 2021;1:e90. doi:10.1002/cpz1.90
 
 ## Automated Evaluation
 
