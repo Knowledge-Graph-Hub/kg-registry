@@ -85,6 +85,19 @@ products:
       - source: biothings-explorer
         relation_type: prov:wasInformedBy
     product_url: https://ars-prod.transltr.io/ars/api/
+  - category: GraphicalInterface
+    description: The NCATS Translator user interface, which submits questions through
+      the Autonomous Relay System (ARS) and displays merged, ranked answers from ARAGORN
+      and the other Translator ARAs.
+    format: http
+    id: aragorn.ui
+    name: ARAGORN User Interface
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: aragorn
+    - relation_type: prov:hadPrimarySource
+      source: ars
+    product_url: https://ui.transltr.io/
 repository: https://github.com/NCATSTranslator/Relay
 license:
   id: https://opensource.org/licenses/MIT

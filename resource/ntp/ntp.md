@@ -77,6 +77,58 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ntp
   product_url: https://ntp.niehs.nih.gov/data/controls
+- category: GraphicalInterface
+  description: Web interface for searching and browsing CEBS toxicology data
+  format: http
+  id: cebs.web
+  name: CEBS Search Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: ntp
+  product_url: https://cebs.niehs.nih.gov/cebs/search
+- category: GraphicalInterface
+  description: DTT Data Collections Guided Search, providing filterable, downloadable
+    tables for curated NIEHS Division of Translational Toxicology (DTT) data collections
+    (e.g., clinical chemistry, hematology, and other individual animal data; treatment-related
+    findings; DTT publications; and a Tox21 p53 activator dataset)
+  format: http
+  id: cebs.dtt-data-collections
+  name: DTT Data Collections Guided Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: tox21
+  - relation_type: prov:hadPrimarySource
+    source: ntp
+  product_url: https://cebs-ext.niehs.nih.gov/datasets
+- category: Product
+  description: Toxicology study data from NTP and other programs
+  format: mixed
+  id: cebs.data
+  name: CEBS Study Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: ntp
+  product_url: https://cebs.niehs.nih.gov/cebs/
+- category: ProgrammingInterface
+  connection_url: https://manticore.niehs.nih.gov/cebsapi/v1
+  description: Programmatic API access to CEBS data, documented by the CEBS API user
+    help. Note that as of October 2026 the documented base URL (https://manticore.niehs.nih.gov/cebsapi/v1)
+    and example requests returned HTTP 404.
+  format: http
+  id: cebs.api
+  name: CEBS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  - relation_type: prov:hadPrimarySource
+    source: ntp
+  product_url: https://tools.niehs.nih.gov/cebs3/support/assets/docs/CEBS_API-User-Help.pdf
 synonyms:
 - NTP
 - NIEHS Division of Translational Toxicology

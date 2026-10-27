@@ -7,6 +7,8 @@ name: CEBS Study Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cebs
+- relation_type: prov:hadPrimarySource
+  source: ntp
 product_url: https://cebs.niehs.nih.gov/cebs/
 layout: product_detail
 ---

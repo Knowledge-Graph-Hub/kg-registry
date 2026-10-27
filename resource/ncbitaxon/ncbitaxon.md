@@ -965,13 +965,50 @@ products:
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 - category: ProgrammingInterface
   connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
-  description: E-utilities API for programmatic access to Entrez databases
-  format: json
+  description: Entrez Programming Utilities (E-utilities), a set of server-side programs
+    (EInfo, ESearch, ESummary, EFetch, ELink, EPost, EGQuery, ESpell, ECitMatch) with
+    a fixed URL syntax for searching, linking and retrieving records from the 38 Entrez
+    databases. Results are returned as XML, with JSON available for several utilities.
+  format: mixed
   id: entrez.eutils
   name: Entrez E-utilities
   original_source:
   - relation_type: prov:hadPrimarySource
     source: entrez
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: gtr
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:hadPrimarySource
+    source: cdd
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
   secondary_source:
   - relation_type: prov:wasInformedBy
@@ -3407,6 +3444,282 @@ products:
     source: envo
   - relation_type: prov:wasDerivedFrom
     source: mp
+- category: GraphicalInterface
+  description: NCBI global cross-database search page, which runs a single query against
+    all Entrez databases and reports hit counts per database.
+  format: http
+  id: entrez.web
+  name: Entrez Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: entrez
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: gtr
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:hadPrimarySource
+    source: cdd
+  product_url: https://www.ncbi.nlm.nih.gov/search/
+- category: ProgrammingInterface
+  description: Entrez Direct (EDirect) command-line tools for Unix systems that wrap
+    the E-utilities (esearch, efetch, elink, efilter, xtract and others) for pipeline
+    access to Entrez databases.
+  format: mixed
+  id: entrez.edirect
+  name: Entrez Direct (EDirect)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: entrez
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pmc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: dbgap
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: gtr
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:hadPrimarySource
+    source: cdd
+  product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
+  repository: https://github.com/ncbi/entrez-direct
+- category: OntologyProduct
+  compression: gzip
+  description: OWL version of PHENIO (full release), merging phenotype, anatomy, disease,
+    chemical, gene, and upper-level ontologies imported via the ODK pipeline
+  format: owl
+  id: phenio.model
+  license:
+    id: https://opensource.org/license/bsd-3-clause
+    label: BSD3
+  name: phenio
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: upheno
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: fypo
+  - relation_type: prov:hadPrimarySource
+    source: wbphenotype
+  - relation_type: prov:hadPrimarySource
+    source: ddpheno
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: ddanat
+  - relation_type: prov:hadPrimarySource
+    source: zfs
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: chr
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 124412326
+  product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl.gz
+  repository: https://github.com/monarch-initiative/phenio
+- category: OntologyProduct
+  description: OBO Graphs JSON version of PHENIO (full release)
+  format: json
+  id: phenio.json
+  license:
+    id: https://opensource.org/license/bsd-3-clause
+    label: BSD3
+  name: phenio JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phenio
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: upheno
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: zp
+  - relation_type: prov:hadPrimarySource
+    source: xpo
+  - relation_type: prov:hadPrimarySource
+    source: fypo
+  - relation_type: prov:hadPrimarySource
+    source: wbphenotype
+  - relation_type: prov:hadPrimarySource
+    source: ddpheno
+  - relation_type: prov:hadPrimarySource
+    source: dpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  - relation_type: prov:hadPrimarySource
+    source: xao
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  - relation_type: prov:hadPrimarySource
+    source: emapa
+  - relation_type: prov:hadPrimarySource
+    source: ddanat
+  - relation_type: prov:hadPrimarySource
+    source: zfs
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: bspo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: nbo
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  - relation_type: prov:hadPrimarySource
+    source: chr
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 1261625948
+  product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
+  repository: https://github.com/monarch-initiative/phenio
 publications:
 - authors:
   - Schoch CL
