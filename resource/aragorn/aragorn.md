@@ -7,6 +7,13 @@ contacts:
       - contact_type: url
         value: https://github.com/NCATSTranslator/Translator-All/wiki/ARAGORN
     label: NCATS Translator
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: bizon@renci.org
+      - contact_type: github
+        value: cbizon
+    label: Chris Bizon
 creation_date: '2025-11-05T00:00:00Z'
 description: ARAGORN (Autonomous Relay Agent for Generation Of Ranked Networks) is an NCATS Translator Autonomous Relay Agent (ARA) that performs query operations by compiling and ranking data from multiple ARAGORN-affiliated knowledge provider services. ARAGORN acts as an intermediary between user queries and underlying knowledge providers, aggregating results, performing inference, and ranking answers based on evidence and confidence scores. It implements the Translator Reasoner API (TRAPI) standard for biomedical question-answering.
 domains:
@@ -15,7 +22,7 @@ domains:
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/ARAGORN
 id: aragorn
 infores_id: aragorn
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-10-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/mit/
@@ -23,22 +30,98 @@ license:
 name: ARAGORN
 products:
 - category: ProgrammingInterface
-  description: TRAPI-compliant API documentation for biomedical question answering
+  description: RENCI-hosted TRAPI endpoint (/query, /asyncquery) for the ARAGORN ARA,
+    with Swagger documentation. Queries are answered by Strider over the knowledge
+    providers it has registered (here including the Automat ROBOKOP KG, CAM-KP, ICEES,
+    Ubergraph, GeLiNEA, Genetics KP, MolePro, OpenPredict and Text Mining KP co-occurrence),
+    plus direct ROBOKOP KG lookups for inferred queries, SRI Node Normalizer identifier
+    normalization and OmniCorp literature co-occurrence overlays for scoring.
   format: http
   id: aragorn.api
   name: ARAGORN API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: aragorn
+  - relation_type: prov:hadPrimarySource
+    source: robokop
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: omnicorp
+  - relation_type: prov:hadPrimarySource
+    source: node-normalizer
+  - relation_type: prov:hadPrimarySource
+    source: cam-kp
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  - relation_type: prov:hadPrimarySource
+    source: gelinea
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
   product_url: https://aragorn.renci.org/docs
+- category: ProgrammingInterface
+  description: Production (NCATS ITRB) deployment of the ARAGORN TRAPI endpoint, with
+    Swagger documentation. Like the RENCI deployment it queries knowledge providers
+    through Strider, looks up the ROBOKOP KG via Automat, normalizes identifiers with
+    the SRI Node Normalizer and scores answers with OmniCorp literature co-occurrence.
+  format: http
+  id: aragorn.api.itrb
+  is_public: true
+  name: ARAGORN Production API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aragorn
+  - relation_type: prov:hadPrimarySource
+    source: robokop
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: omnicorp
+  - relation_type: prov:hadPrimarySource
+    source: node-normalizer
+  - relation_type: prov:hadPrimarySource
+    source: cam-kp
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: genetics-kp
+  - relation_type: prov:hadPrimarySource
+    source: molepro
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  - relation_type: prov:hadPrimarySource
+    source: connections-hypothesis-kp
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: multiomics-kp
+  - relation_type: prov:hadPrimarySource
+    source: drug-approvals-kp
+  - relation_type: prov:hadPrimarySource
+    source: microbiomekg
+  - relation_type: prov:hadPrimarySource
+    source: service-kp
+  product_url: https://aragorn.transltr.io/aragorn/docs
 - category: GraphicalInterface
-  description: Web interface for querying ARAGORN
+  description: The NCATS Translator user interface, which submits questions through
+    the Autonomous Relay System (ARS) and displays merged, ranked answers from ARAGORN
+    and the other Translator ARAs.
   format: http
   id: aragorn.ui
   name: ARAGORN User Interface
   original_source:
   - relation_type: prov:hadPrimarySource
     source: aragorn
+  - relation_type: prov:hadPrimarySource
+    source: ars
   product_url: https://ui.transltr.io/
 - category: GraphicalInterface
   description: JSON index of the ARS production relay server and its registered agent
@@ -184,20 +267,25 @@ As a key component of the Translator ecosystem, ARAGORN acts as an intelligent i
 
 ## Architecture
 
-ARAGORN operates as an intermediary layer in the Translator architecture:
-- Receives biomedical questions in TRAPI format
-- Distributes queries to affiliated knowledge providers
-- Aggregates and normalizes results
-- Applies ranking algorithms based on evidence
-- Returns structured answers with provenance
+ARAGORN passes each query through a chain of sub-services
+([source](https://github.com/ranking-agent/aragorn), [Translator wiki](https://github.com/NCATSTranslator/Translator-All/wiki/ARAGORN)):
+
+- **Strider** builds a query plan and sends one-hop queries to the knowledge providers registered in SmartAPI (the live list is at https://strider.renci.org/kps and https://strider.transltr.io/kps), then assembles results.
+- **ROBOKOP KG lookup**: for inferred ("creative") queries, ARAGORN applies mined rules and queries the ROBOKOP KG directly through Automat.
+- **SRI Node Normalizer** supplies preferred identifiers and equivalents.
+- **Answer Coalesce** (optional) groups answers by property, graph or ontology.
+- **ARAGORN Ranker** adds OmniCorp literature co-occurrence overlays and scores results (0 to 1).
 
 ## Products
 
 ### ARAGORN API
-TRAPI-compliant RESTful API endpoint for submitting biomedical questions and receiving ranked answers from integrated knowledge sources.
+TRAPI endpoint hosted at RENCI (https://aragorn.renci.org/docs).
+
+### ARAGORN Production API
+NCATS ITRB production deployment (https://aragorn.transltr.io/aragorn/docs).
 
 ### ARAGORN User Interface
-Web-based interface accessible through the Translator UI for interactive exploration of ARAGORN query capabilities.
+The Translator UI (https://ui.transltr.io/), which shows ARAGORN answers alongside those of the other ARAs via the ARS.
 
 ## Information Resource ID
 
@@ -205,14 +293,15 @@ This resource has the Information Resource identifier: `infores:aragorn`
 
 ## Repository
 
-Source code and documentation: https://github.com/ranking-agent/aragorn
+Source code and documentation: https://github.com/ranking-agent/aragorn (MIT License)
 
-Live API documentation: https://aragorn.renci.org/docs
+## Contacts
+
+- Chris Bizon (RENCI), responsible developer: bizon@renci.org
 
 ## Domains
 
 - Biomedical
-- Translational
 - Information Technology
 
 ## Tags
