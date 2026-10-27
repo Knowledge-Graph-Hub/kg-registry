@@ -10,6 +10,13 @@ original_source:
   source: fma
 product_file_size: 208047132
 product_url: http://purl.obolibrary.org/obo/fma.owl
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: radlex
+- relation_type: prov:wasInfluencedBy
+  source: interlex
+- relation_type: prov:wasDerivedFrom
+  source: terminologia-anatomica
 warnings: []
 layout: product_detail
 ---

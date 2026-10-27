@@ -199,6 +199,8 @@ products:
       source: umls
     - relation_type: prov:hadPrimarySource
       source: meddra
+    - relation_type: prov:hadPrimarySource
+      source: nmcd
     product_url: https://github.com/jvasilakes/iDISK
   - category: GraphicalInterface
     description: Web portal for browsing and searching predicted and known drug-side

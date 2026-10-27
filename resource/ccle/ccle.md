@@ -536,6 +536,44 @@ products:
   - relation_type: prov:hadPrimarySource
     source: nci60
   product_url: https://discover.nci.nih.gov/cellminercdb/
+- category: GraphicalInterface
+  description: DrBioRight web platform and LLM-powered chatbot for searching curated
+    cancer omics datasets and running analyses and visualizations through natural-language
+    questions. Integrates molecular, clinical, and functional data from The Cancer
+    Genome Atlas (via the GDC), the Cancer Cell Line Encyclopedia (via DepMap), and
+    the RPPA500 functional proteomics data of The Cancer Proteome Atlas.
+  format: http
+  id: drbioright.portal
+  name: DrBioRight Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drbioright
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  - relation_type: prov:hadPrimarySource
+    source: gdc
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: tcpa
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://drbioright.org/
+- category: GraphicalInterface
+  description: TCPA web module for RPPA functional proteomics data of cancer cell
+    lines, including Cancer Cell Line Encyclopedia lines, with protein-level views
+    alongside cell line drug sensitivity and dependency data.
+  format: http
+  id: tcpa.cell-lines
+  name: TCPA Cancer Cell Lines (MCLP)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcpa
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  product_url: https://tcpa.drbioright.org/rppa500mclp/
 publications:
 - authors:
   - Barretina J

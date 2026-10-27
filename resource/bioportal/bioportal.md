@@ -585,6 +585,18 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
   product_url: https://data.earthportal.eu/
+- category: OntologyProduct
+  description: RadLex hosted in NCBO BioPortal for browsing, API access, and annotation.
+  format: http
+  id: radlex.bioportal
+  name: RadLex in BioPortal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: radlex
+  product_url: https://bioportal.bioontology.org/ontologies/RADLEX
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
 - category: GraphicalInterface
   description: BioPortal page for OBOE (acronym OBOE), providing browsing, search, and download
     of the ontology. The latest submission is version 1.2, released 2019-09-17.

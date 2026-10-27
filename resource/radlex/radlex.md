@@ -74,10 +74,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: radlex
+  product_url: https://bioportal.bioontology.org/ontologies/RADLEX
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
-  product_url: https://bioportal.bioontology.org/ontologies/RADLEX
 - category: GraphicalInterface
   description: RadLex Playbook, a lexicon of radiology orderables and imaging procedure
     step names built on RadLex. The Playbook is now harmonized with LOINC as the LOINC/RSNA
@@ -91,6 +91,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: loinc
   product_url: https://playbook.radlex.org/
+- category: OntologyProduct
+  description: Foundational Model of Anatomy Ontology in OWL format
+  format: owl
+  id: fma.owl
+  latest_version: 5.1.0
+  name: fma.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  product_file_size: 208047132
+  product_url: http://purl.obolibrary.org/obo/fma.owl
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: radlex
+  - relation_type: prov:wasInfluencedBy
+    source: interlex
+  - relation_type: prov:wasDerivedFrom
+    source: terminologia-anatomica
+  warnings: []
 publications:
 - authors:
   - Curtis P. Langlotz

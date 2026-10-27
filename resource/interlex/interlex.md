@@ -17,14 +17,14 @@ contacts:
   orcid: 0000-0002-8406-3871
 creation_date: '2026-10-27T00:00:00Z'
 description: InterLex is a dynamic lexicon of biomedical terms maintained by SciCrunch
-  and the FAIR Data Informatics Lab at UC San Diego. It was built on NeuroLex, the neuroscience
-  lexicon of the Neuroscience Information Framework, and contains all NeuroLex terms,
-  extended to other biomedical domains. Terms are modeled with OWL primitives and carry
-  stable ILX identifiers; users can contribute, annotate, and fork terms into their
-  own namespaces, and InterLex maps data fields and values to common data elements
-  and existing terminologies to support data integration. InterLex identifiers and
-  NeuroLex cross-references appear in resources such as the Foundational Model of Anatomy
-  and the NIF Standard ontologies.
+  and the FAIR Data Informatics Lab at UC San Diego. It was built on NeuroLex, the
+  neuroscience lexicon of the Neuroscience Information Framework, and contains all
+  NeuroLex terms, extended to other biomedical domains. Terms are modeled with OWL
+  primitives and carry stable ILX identifiers; users can contribute, annotate, and
+  fork terms into their own namespaces, and InterLex maps data fields and values to
+  common data elements and existing terminologies to support data integration. InterLex
+  identifiers and NeuroLex cross-references appear in resources such as the Foundational
+  Model of Anatomy and the NIF Standard ontologies.
 domains:
 - neuroscience
 - biomedical
@@ -57,6 +57,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: interlex
   product_url: https://scicrunch.org/scicrunch/interlex/view/ilx_0101963
+- category: OntologyProduct
+  description: Foundational Model of Anatomy Ontology in OWL format
+  format: owl
+  id: fma.owl
+  latest_version: 5.1.0
+  name: fma.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  product_file_size: 208047132
+  product_url: http://purl.obolibrary.org/obo/fma.owl
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: radlex
+  - relation_type: prov:wasInfluencedBy
+    source: interlex
+  - relation_type: prov:wasDerivedFrom
+    source: terminologia-anatomica
+  warnings: []
 publications:
 - authors:
   - Stephen D. Larson

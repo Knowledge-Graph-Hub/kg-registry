@@ -14,15 +14,15 @@ contacts:
   label: Open Anatomy Project, Brigham and Women's Hospital
 creation_date: '2026-10-27T00:00:00Z'
 description: Terminologia Anatomica (TA) is the international standard for human anatomical
-  terminology, developed by the Federative International Programme for Anatomical Terminology
-  (FIPAT) of the International Federation of Associations of Anatomists (IFAA). It
-  provides official Latin anatomical terms with English equivalents and numeric TA
-  identifiers, organized by body system. TA2, the second edition, was published by
-  FIPAT in 2019 and adopted by the IFAA General Assembly in 2020, superseding the
+  terminology, developed by the Federative International Programme for Anatomical
+  Terminology (FIPAT) of the International Federation of Associations of Anatomists
+  (IFAA). It provides official Latin anatomical terms with English equivalents and
+  numeric TA identifiers, organized by body system. TA2, the second edition, was published
+  by FIPAT in 2019 and adopted by the IFAA General Assembly in 2020, superseding the
   1998 first edition (TA98). The TA2 publication is distributed under a Creative Commons
   Attribution-NoDerivatives 4.0 license, with the individual terms treated as public
-  domain. The TA2Viewer, built by the IFAA and the Open Anatomy Project, provides an
-  open web browser for TA2 terms and identifiers.
+  domain. The TA2Viewer, built by the IFAA and the Open Anatomy Project, provides
+  an open web browser for TA2 terms and identifiers.
 domains:
 - anatomy and development
 - biomedical
@@ -59,6 +59,25 @@ products:
     source: terminologia-anatomica
   product_file_size: 448632
   product_url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-1.pdf
+- category: OntologyProduct
+  description: Foundational Model of Anatomy Ontology in OWL format
+  format: owl
+  id: fma.owl
+  latest_version: 5.1.0
+  name: fma.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  product_file_size: 208047132
+  product_url: http://purl.obolibrary.org/obo/fma.owl
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: radlex
+  - relation_type: prov:wasInfluencedBy
+    source: interlex
+  - relation_type: prov:wasDerivedFrom
+    source: terminologia-anatomica
+  warnings: []
 publications:
 - authors:
   - Michael W. Halle

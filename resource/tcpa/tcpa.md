@@ -6,8 +6,8 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://tcpa.drbioright.org/about.html#contact
-  label: Han Liang Lab, Department of Bioinformatics and Computational Biology, The University
-    of Texas MD Anderson Cancer Center
+  label: Han Liang Lab, Department of Bioinformatics and Computational Biology, The
+    University of Texas MD Anderson Cancer Center
 creation_date: '2026-10-27T00:00:00Z'
 description: The Cancer Proteome Atlas (TCPA) is a data portal for exploring, visualizing,
   and analyzing large-scale functional proteomics data generated with reverse phase
@@ -17,8 +17,8 @@ description: The Cancer Proteome Atlas (TCPA) is a data portal for exploring, vi
   Proteomics Atlas (CPPA) of drug- and perturbation-response proteomic profiles. Its
   current RPPA500 compendium covers about 9,000 samples (about 7,800 TCGA tumors across
   32 cancer types and about 880 CCLE cell lines) measured with a panel of 447 protein
-  markers, including 90 post-translationally modified proteins. TCPA is developed at
-  MD Anderson Cancer Center and its data also back the DrBioRight analytics platform.
+  markers, including 90 post-translationally modified proteins. TCPA is developed
+  at MD Anderson Cancer Center and its data also back the DrBioRight analytics platform.
 domains:
 - biomedical
 - cancer
@@ -47,9 +47,9 @@ products:
     source: tcga
   product_url: https://tcpa.drbioright.org/rppa500/main.html
 - category: GraphicalInterface
-  description: TCPA web module for RPPA functional proteomics data of cancer cell lines,
-    including Cancer Cell Line Encyclopedia lines, with protein-level views alongside
-    cell line drug sensitivity and dependency data.
+  description: TCPA web module for RPPA functional proteomics data of cancer cell
+    lines, including Cancer Cell Line Encyclopedia lines, with protein-level views
+    alongside cell line drug sensitivity and dependency data.
   format: http
   id: tcpa.cell-lines
   name: TCPA Cancer Cell Lines (MCLP)
@@ -69,6 +69,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tcpa
   product_url: https://tcpa.drbioright.org/cppa/
+- category: GraphicalInterface
+  description: DrBioRight web platform and LLM-powered chatbot for searching curated
+    cancer omics datasets and running analyses and visualizations through natural-language
+    questions. Integrates molecular, clinical, and functional data from The Cancer
+    Genome Atlas (via the GDC), the Cancer Cell Line Encyclopedia (via DepMap), and
+    the RPPA500 functional proteomics data of The Cancer Proteome Atlas.
+  format: http
+  id: drbioright.portal
+  name: DrBioRight Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drbioright
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  - relation_type: prov:hadPrimarySource
+    source: gdc
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: tcpa
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://drbioright.org/
 publications:
 - authors:
   - Jun Li

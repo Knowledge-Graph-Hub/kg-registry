@@ -10,13 +10,13 @@ contacts:
 creation_date: '2026-10-27T00:00:00Z'
 description: The Natural Medicines Comprehensive Database (NMCD), now offered as NatMed
   Pro, is a commercial, evidence-based reference on dietary supplements, herbs, natural
-  medicines, and complementary and integrative therapies published by Therapeutic Research
-  Center (TRC). It provides monographs on more than a thousand ingredients and therapies
-  with graded effectiveness ratings by condition, safety and adverse effect information,
-  pregnancy and lactation safety, nutrient depletions caused by medications, and interactions
-  with prescription and over-the-counter drugs, alongside a database of commercially
-  available supplement products. It absorbed Natural Standard in 2013. Access requires
-  a subscription; NMCD was a licensed source for iDISK 1.0.
+  medicines, and complementary and integrative therapies published by Therapeutic
+  Research Center (TRC). It provides monographs on more than a thousand ingredients
+  and therapies with graded effectiveness ratings by condition, safety and adverse
+  effect information, pregnancy and lactation safety, nutrient depletions caused by
+  medications, and interactions with prescription and over-the-counter drugs, alongside
+  a database of commercially available supplement products. It absorbed Natural Standard
+  in 2013. Access requires a subscription; NMCD was a licensed source for iDISK 1.0.
 domains:
 - natural products
 - chemistry and biochemistry
@@ -55,6 +55,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: nmcd
   product_url: https://naturalmedicines.therapeuticresearch.com/
+- category: ProcessProduct
+  description: Code used to build iDISK 1.0 from its source databases, including normalization
+    against UMLS and MedDRA.
+  format: python
+  id: idisk.code
+  name: iDISK Build Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: meddra
+  - relation_type: prov:hadPrimarySource
+    source: nmcd
+  product_url: https://github.com/jvasilakes/iDISK
 synonyms:
 - NatMed Pro
 - Natural Medicines Database
