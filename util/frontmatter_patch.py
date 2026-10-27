@@ -127,6 +127,8 @@ def _patch_mapping(lines: List[str], indent: int, old: dict, new: dict) -> Optio
             patched = _patch_nested_mapping(key, block, indent, old[key], new[key])
         elif _dict_items(old[key]) and _dict_items(new[key]):
             patched = _patch_item_list(block, indent, old[key], new[key])
+        if patched is None and _is_extension(old[key], new[key]):
+            patched = _append_list_items(block, indent, new[key][len(old[key]):])
         blocks[key] = patched if patched is not None else _emit_key(key, new[key], indent)
 
     order = [k for k in seen if k in new]
@@ -151,6 +153,25 @@ def _patch_nested_mapping(key: str, block: List[str], indent: int, old: dict, ne
         return None
     patched = _patch_mapping(body, _indent_of(first), old, new)
     return None if patched is None else [block[0]] + patched
+
+
+def _is_extension(old: Any, new: Any) -> bool:
+    return isinstance(old, list) and isinstance(new, list) and len(new) > len(old) > 0 and new[: len(old)] == old
+
+
+def _append_list_items(block: List[str], indent: int, extra: list) -> Optional[List[str]]:
+    """Keep a block list's existing text and append ``extra`` items after it."""
+    first = next((l for l in block[1:] if l.strip()), None)
+    if first is None or block[0][indent:].rstrip().endswith(":") is False:
+        return None
+    item_indent = _indent_of(first)
+    if item_indent < indent or not first[item_indent:].startswith("- "):
+        return None
+    end = len(block)
+    while end > 1 and not block[end - 1].strip():
+        end -= 1
+    pad = " " * item_indent
+    return block[:end] + [pad + l if l else l for l in _dump(extra)] + block[end:]
 
 
 def _patch_item_list(block: List[str], indent: int, old: list, new: list) -> Optional[List[str]]:

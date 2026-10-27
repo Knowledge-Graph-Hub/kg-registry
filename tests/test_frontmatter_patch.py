@@ -100,8 +100,9 @@ def test_changed_product_only_rewrites_the_changed_key():
     # The hand-wrapped descriptions survive; only demo.web's source list changed.
     assert "description: A demo resource whose description is wrapped by hand" in text
     assert "    description: Demo download, also wrapped\n      by hand." in text
-    removed = _changed_lines(PAGE, text)
-    assert set(removed) <= {"      - source: demo", "        relation_type: prov:hadPrimarySource"}
+    # Appending a source keeps the existing entries' text and adds only the new one.
+    assert _changed_lines(PAGE, text) == []
+    assert text.count("source: upstream") == 1
 
 
 def test_removed_and_new_top_level_keys():
