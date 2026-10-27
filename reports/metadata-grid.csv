@@ -234,6 +234,7 @@ doid,active,PASS
 dolce,active,PASS
 dorothea,active,PASS
 dpo,active,PASS
+drbioright,active,PASS
 dreamkg,active,PASS
 drkg,active,PASS
 dron,active,PASS
@@ -480,6 +481,7 @@ ino,active,PASS
 inparanoid,active,PASS
 insight,active,PASS
 intact,active,PASS
+interlex,active,PASS
 intermine,active,PASS
 interpro,active,PASS
 inxight-drugs,active,PASS
@@ -647,6 +649,7 @@ nij,active,PASS
 nikg,active,PASS
 nlm,active,PASS
 nlm-ckn,active,PASS
+nmcd,active,PASS
 noaa-hms,active,PASS
 noaa-ncei,active,PASS
 noaa-nwm,active,PASS
@@ -818,6 +821,7 @@ pubtator,active,PASS
 pw,active,PASS
 pypi,active,PASS
 qptm,active,PASS
+radlex,active,PASS
 rampdb,active,PASS
 rapdb,active,PASS
 raras,active,PASS
@@ -934,8 +938,10 @@ taxrank,active,PASS
 tbkg,active,PASS
 tcdb,active,PASS
 tcga,active,PASS
+tcpa,active,PASS
 tcrd,active,PASS
 tera,active,PASS
+terminologia-anatomica,active,PASS
 text-mining-kp,active,PASS
 tflink,active,PASS
 tga-approved-terminology,active,PASS

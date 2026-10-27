@@ -2396,6 +2396,7 @@ kgr:bioportal a schema1:Aggregator ;
         kgr:kg-bioportal.manifest,
         kgr:oboe.bioportal,
         kgr:pheknowlator.graph,
+        kgr:radlex.bioportal,
         kgr:sifr-bioportal.annotator,
         kgr:sifr-bioportal.api,
         kgr:sifr-bioportal.portal ;
@@ -3154,6 +3155,7 @@ kgr:ccle a schema1:DataSource ;
         kgr:ccle.docs,
         kgr:cellminer.cellminercdb,
         kgr:cellmodelpassports.model_list,
+        kgr:drbioright.portal,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:indra.cogex.code,
@@ -3164,7 +3166,8 @@ kgr:ccle a schema1:DataSource ;
         kgr:obo-db-ingest.ccle.tsv,
         kgr:pharmacodb.api,
         kgr:pharmacodb.documentation,
-        kgr:pharmacodb.portal ;
+        kgr:pharmacodb.portal,
+        kgr:tcpa.cell-lines ;
     schema1:identifier "RRID:SCR_013836" ;
     schema1:name "CCLE" ;
     skos:inScheme "biomedical",
@@ -6572,6 +6575,7 @@ kgr:depmap a schema1:DataSource ;
         kgr:depmap.portal,
         kgr:depmap.proteomics,
         kgr:depmap.target_discovery,
+        kgr:drbioright.portal,
         kgr:enrichr-kg.graph,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
@@ -7256,6 +7260,28 @@ kgr:dpo a schema1:Ontology ;
         "phenotype" ;
     adms:status "Active" ;
     foaf:homepage <http://purl.obolibrary.org/obo/fbcv> .
+
+kgr:drbioright a schema1:Aggregator ;
+    rdfs:label "DrBioRight" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "DrBioRight is a web platform for natural-language analysis of cancer omics data, backed by a large curated collection of cancer omics datasets. Users search datasets and pose questions in plain language; a large language model-based chatbot turns the questions into analyses, generating and running code and returning visualizations and interpretations. The platform hosts about 508,000 samples across about 4,200 cohorts, spanning RNA expression, protein expression, DNA methylation, DNA mutations, and copy number variation, including molecular, clinical, and functional data from The Cancer Genome Atlas and the Cancer Cell Line Encyclopedia and the RPPA500 functional proteomics compendium of The Cancer Proteome Atlas. DrBioRight is developed by the Han Liang Lab (Department of Bioinformatics and Computational Biology, MD Anderson Cancer Center) and the Jun Li Lab (School of Data and Information Sciences, UNC Chapel Hill), with support from the NIH Informatics Technology for Cancer Research (ITCR) program." ;
+    dcterms:hasVersion "3.2.41" ;
+    dcterms:identifier "drbioright" ;
+    dcterms:isReferencedBy <doi:10.1016/j.ccell.2020.09.002>,
+        <doi:10.1038/s41467-025-57430-4> ;
+    dcterms:license <https://drbioright.org/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:drbioright.docs,
+        kgr:drbioright.portal ;
+    schema1:name "DrBioRight" ;
+    skos:inScheme "biomedical",
+        "cancer",
+        "epigenomics",
+        "genomics",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://drbioright.org/> .
 
 kgr:dreamkg a schema1:KnowledgeGraph ;
     rdfs:label "DREAM-KG" ;
@@ -10088,7 +10114,7 @@ kgr:fma a schema1:Ontology ;
         <https://www.ncbi.nlm.nih.gov/pubmed/18360535>,
         <https://www.ncbi.nlm.nih.gov/pubmed/18688289> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:babel.compendia,
         kgr:efo.obo,
@@ -10495,7 +10521,8 @@ kgr:gdc a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1182/blood-2017-03-735654> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:gdc.api,
+    schema1:hasPart kgr:drbioright.portal,
+        kgr:gdc.api,
         kgr:gdc.data-transfer-tool,
         kgr:gdc.portal ;
     schema1:identifier "gdc" ;
@@ -14234,7 +14261,7 @@ kgr:idisk a schema1:KnowledgeGraph ;
         <PMID:40106799>,
         <doi:10.1093/jamia/ocz216> ;
     dcterms:license <http://creativecommons.org/licenses/by-sa/3.0/us/> ;
-    dcterms:modified "2026-10-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ibkh.graph,
         kgr:idisk.code,
         kgr:idisk.idisk2-entities,
@@ -14828,6 +14855,28 @@ kgr:intact a schema1:Aggregator ;
     adms:status "Active" ;
     foaf:homepage <https://www.ebi.ac.uk/intact/home> ;
     foaf:maker kgr:ebi .
+
+kgr:interlex a schema1:Ontology ;
+    rdfs:label "InterLex" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "InterLex is a dynamic lexicon of biomedical terms maintained by SciCrunch and the FAIR Data Informatics Lab at UC San Diego. It was built on NeuroLex, the neuroscience lexicon of the Neuroscience Information Framework, and contains all NeuroLex terms, extended to other biomedical domains. Terms are modeled with OWL primitives and carry stable ILX identifiers; users can contribute, annotate, and fork terms into their own namespaces, and InterLex maps data fields and values to common data elements and existing terminologies to support data integration. InterLex identifiers and NeuroLex cross-references appear in resources such as the Foundational Model of Anatomy and the NIF Standard ontologies." ;
+    dcterms:identifier "interlex" ;
+    dcterms:isReferencedBy <doi:10.3389/fninf.2013.00018> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:fma.owl,
+        kgr:interlex.dashboard,
+        kgr:interlex.term-resolver ;
+    schema1:identifier "RRID:SCR_016178" ;
+    schema1:name "InterLex" ;
+    skos:altLabel "ILX",
+        "NeuroLex" ;
+    skos:inScheme "biomedical",
+        "information technology",
+        "metadata",
+        "neuroscience" ;
+    skos:notation "FAIRsharing.67sssf" ;
+    adms:status "Active" ;
+    foaf:homepage <https://interlex.org/> .
 
 kgr:intermine a schema1:DataSource ;
     rdfs:label "InterMine" ;
@@ -15598,7 +15647,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-21T15:54:26+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-27T19:22:28+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -16370,6 +16419,7 @@ kgr:loinc a schema1:DataModel ;
         kgr:loinc.complete,
         kgr:loinc.principles,
         kgr:loinc.web,
+        kgr:radlex.playbook,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "loinc" ;
@@ -18562,6 +18612,7 @@ kgr:msigdb a schema1:DataSource ;
         kgr:cfde-ddkg.msigdb,
         kgr:cfde-gse.genesets,
         kgr:cfde-gse.graph,
+        kgr:drbioright.portal,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:molepro.api,
@@ -19889,6 +19940,29 @@ kgr:nlm-ckn a schema1:KnowledgeGraph ;
         "single-cell analysis" ;
     adms:status "Active" ;
     foaf:homepage <https://nlm-ckn.org> .
+
+kgr:nmcd a schema1:DataSource ;
+    rdfs:label "Natural Medicines Comprehensive Database (NMCD)" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Natural Medicines Comprehensive Database (NMCD), now offered as NatMed Pro, is a commercial, evidence-based reference on dietary supplements, herbs, natural medicines, and complementary and integrative therapies published by Therapeutic Research Center (TRC). It provides monographs on more than a thousand ingredients and therapies with graded effectiveness ratings by condition, safety and adverse effect information, pregnancy and lactation safety, nutrient depletions caused by medications, and interactions with prescription and over-the-counter drugs, alongside a database of commercially available supplement products. It absorbed Natural Standard in 2013. Access requires a subscription; NMCD was a licensed source for iDISK 1.0." ;
+    dcterms:identifier "nmcd" ;
+    dcterms:license <https://naturalmedicines.therapeuticresearch.com/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:idisk.code,
+        kgr:nmcd.interaction-checker,
+        kgr:nmcd.monographs ;
+    schema1:name "Natural Medicines Comprehensive Database (NMCD)" ;
+    skos:altLabel "NatMed Pro",
+        "Natural Medicines Database" ;
+    skos:inScheme "biomedical",
+        "chemistry and biochemistry",
+        "clinical",
+        "drug interactions",
+        "natural products",
+        "nutrition",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://naturalmedicines.therapeuticresearch.com/> .
 
 kgr:nmr a schema1:Ontology ;
     rdfs:label "NMR-instrument specific component of metabolomics investigations" ;
@@ -25493,6 +25567,32 @@ kgr:qptm a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <http://qptm.omicsbio.info/index.php> .
 
+kgr:radlex a schema1:Ontology ;
+    rdfs:label "RadLex" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "RadLex is the Radiological Society of North America's comprehensive lexicon and ontology of radiology terms, used for reporting, indexing and retrieval of radiology information, decision support, data mining, registries, education, and research. It covers imaging modalities, procedures and procedure steps, anatomical entities, imaging observations and findings, and related properties. Version 4.3 contains about 34,000 active classes with 35 relationship slots. RadLex is freely licensed for commercial and non-commercial use under the RadLex License Agreement and Terms of Use, and is also distributed through NCBO BioPortal and as a FHIR CodeSystem." ;
+    dcterms:hasVersion "4.3" ;
+    dcterms:identifier "radlex" ;
+    dcterms:isReferencedBy <doi:10.1016/j.jvir.2009.04.031>,
+        <doi:10.1148/rg.266065168> ;
+    dcterms:license <https://www.rsna.org/uploadedFiles/RSNA/Content/Informatics/RadLex_License_Agreement_and_Terms_of_Use_V2_Final.pdf> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:fma.owl,
+        kgr:radlex.bioportal,
+        kgr:radlex.browser,
+        kgr:radlex.csv,
+        kgr:radlex.owl,
+        kgr:radlex.playbook ;
+    schema1:identifier "RRID:SCR_010418" ;
+    schema1:name "RadLex" ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "clinical coding",
+        "medical imaging" ;
+    skos:notation "FAIRsharing.shm2f2" ;
+    adms:status "Active" ;
+    foaf:homepage <https://radlex.org/> .
+
 kgr:rampdb a schema1:DataSource ;
     rdfs:label "RaMPDB" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -29110,12 +29210,14 @@ kgr:tcga a schema1:DataSource ;
         kgr:chea-kg.libraries,
         kgr:chea.libraries,
         kgr:connections-hypothesis-kp.graph,
+        kgr:drbioright.portal,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:multiomics-kp.graph,
         kgr:tcga.gdc_api,
         kgr:tcga.gdc_portal,
-        kgr:tcga.gdc_submission ;
+        kgr:tcga.gdc_submission,
+        kgr:tcpa.patient-cohorts ;
     schema1:identifier "tcga" ;
     schema1:name "The Cancer Genome Atlas" ;
     skos:altLabel "TCGA" ;
@@ -29124,6 +29226,30 @@ kgr:tcga a schema1:DataSource ;
         "genomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga> .
+
+kgr:tcpa a schema1:DataSource ;
+    rdfs:label "The Cancer Proteome Atlas (TCPA)" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Cancer Proteome Atlas (TCPA) is a data portal for exploring, visualizing, and analyzing large-scale functional proteomics data generated with reverse phase protein arrays (RPPA) on cancer samples. It covers protein expression profiles of patient tumors from The Cancer Genome Atlas (TCGA) and of cancer cell lines, including those of the Cancer Cell Line Encyclopedia (CCLE), together with a Cancer Perturbed Proteomics Atlas (CPPA) of drug- and perturbation-response proteomic profiles. Its current RPPA500 compendium covers about 9,000 samples (about 7,800 TCGA tumors across 32 cancer types and about 880 CCLE cell lines) measured with a panel of 447 protein markers, including 90 post-translationally modified proteins. TCPA is developed at MD Anderson Cancer Center and its data also back the DrBioRight analytics platform." ;
+    dcterms:identifier "tcpa" ;
+    dcterms:isReferencedBy <doi:10.1016/j.ccell.2017.01.005>,
+        <doi:10.1038/nmeth.2650>,
+        <doi:10.1074/mcp.RA118.001260>,
+        <doi:10.1158/0008-5472.CAN-17-0369> ;
+    dcterms:license <https://tcpa.drbioright.org/about.html#terms> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:drbioright.portal,
+        kgr:tcpa.cell-lines,
+        kgr:tcpa.cppa,
+        kgr:tcpa.patient-cohorts ;
+    schema1:name "The Cancer Proteome Atlas (TCPA)" ;
+    skos:inScheme "biomedical",
+        "cancer",
+        "post-translational modification",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://tcpaportal.org/> .
 
 kgr:tcrd a schema1:DataSource ;
     rdfs:label "Target Central Resource Database" ;
@@ -29191,6 +29317,28 @@ kgr:tera a schema1:KnowledgeGraph ;
         "toxicology" ;
     adms:status "Active" ;
     foaf:homepage <https://niva-knowledge-graph.github.io/TERA/> .
+
+kgr:terminologia-anatomica a schema1:Ontology ;
+    rdfs:label "Terminologia Anatomica (TA2)" ;
+    dcterms:created "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Terminologia Anatomica (TA) is the international standard for human anatomical terminology, developed by the Federative International Programme for Anatomical Terminology (FIPAT) of the International Federation of Associations of Anatomists (IFAA). It provides official Latin anatomical terms with English equivalents and numeric TA identifiers, organized by body system. TA2, the second edition, was published by FIPAT in 2019 and adopted by the IFAA General Assembly in 2020, superseding the 1998 first edition (TA98). The TA2 publication is distributed under a Creative Commons Attribution-NoDerivatives 4.0 license, with the individual terms treated as public domain. The TA2Viewer, built by the IFAA and the Open Anatomy Project, provides an open web browser for TA2 terms and identifiers." ;
+    dcterms:hasVersion "TA2 (2019)" ;
+    dcterms:identifier "terminologia-anatomica" ;
+    dcterms:isReferencedBy <doi:10.1002/ca.24162> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nd/4.0/> ;
+    dcterms:modified "2026-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:fma.owl,
+        kgr:terminologia-anatomica.ta2-publication,
+        kgr:terminologia-anatomica.ta2viewer ;
+    schema1:name "Terminologia Anatomica (TA2)" ;
+    skos:altLabel "TA2",
+        "TA98",
+        "Terminologia Anatomica" ;
+    skos:inScheme "anatomy and development",
+        "biomedical" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ta2viewer.openanatomy.org/> .
 
 kgr:text-mining-kp a schema1:KnowledgeGraph ;
     rdfs:label "Text Mining KP" ;
@@ -36104,6 +36252,11 @@ kgr:dpo.owl a schema1:OntologyProduct ;
     dcterms:description "Drosophila Phenotype Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/dpo.owl> .
 
+kgr:drbioright.docs a schema1:DocumentationProduct ;
+    rdfs:label "DrBioRight Documentation" ;
+    dcterms:description "DrBioRight user documentation describing datasets, query workflow, and analysis features of the platform." ;
+    schema1:url <https://drbioright.org/docs> .
+
 kgr:dreamkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "DREAM-KG SPARQL" ;
     dcterms:description "SPARQL endpoint for DREAM-KG" ;
@@ -37780,11 +37933,6 @@ kgr:flybase.web.interface a schema1:GraphicalInterface ;
     rdfs:label "FlyBase Web Interface" ;
     dcterms:description "Web-based search and query interface for accessing FlyBase data, including gene information, phenotypes, stocks, and literature" ;
     schema1:url <https://flybase.org/> .
-
-kgr:fma.owl a schema1:OntologyProduct ;
-    rdfs:label "fma.owl" ;
-    dcterms:description "Foundational Model of Anatomy Ontology in OWL format" ;
-    schema1:url <http://purl.obolibrary.org/obo/fma.owl> .
 
 kgr:fma.puns a schema1:OntologyProduct ;
     rdfs:label "FMA Puns (OWL)" ;
@@ -40294,6 +40442,16 @@ kgr:intact.portal a schema1:GraphicalInterface ;
     rdfs:label "IntAct Portal" ;
     dcterms:description "Web portal for browsing, searching, and accessing IntAct molecular interaction data" ;
     schema1:url <https://www.ebi.ac.uk/intact/home> .
+
+kgr:interlex.dashboard a schema1:GraphicalInterface ;
+    rdfs:label "InterLex Dashboard" ;
+    dcterms:description "InterLex web dashboard for searching, browsing, and contributing biomedical terms (including all former NeuroLex terms) and resolving ILX identifiers." ;
+    schema1:url <https://scicrunch.org/scicrunch/interlex/dashboard> .
+
+kgr:interlex.term-resolver a schema1:GraphicalInterface ;
+    rdfs:label "InterLex Term Resolver" ;
+    dcterms:description "Term pages resolving InterLex ILX identifiers (pattern https://scicrunch.org/scicrunch/interlex/view/ilx_NNNNNNN), with labels, definitions, synonyms, superclasses, and mappings." ;
+    schema1:url <https://scicrunch.org/scicrunch/interlex/view/ilx_0101963> .
 
 kgr:intermine.documentation a schema1:DocumentationProduct ;
     rdfs:label "InterMine Documentation" ;
@@ -43237,6 +43395,16 @@ kgr:nlm.portal a schema1:DocumentationProduct ;
     rdfs:label "NLM Web Portal" ;
     dcterms:description "NLM public homepage and organizational entry point for literature, terminology, clinical, and informatics resources." ;
     schema1:url <https://www.nlm.nih.gov/> .
+
+kgr:nmcd.interaction-checker a schema1:GraphicalInterface ;
+    rdfs:label "Natural Medicines Interactions Checker" ;
+    dcterms:description "Subscription Interactions Checker that screens natural medicines and supplements against prescription and over-the-counter drugs." ;
+    schema1:url <https://naturalmedicines.therapeuticresearch.com/> .
+
+kgr:nmcd.monographs a schema1:GraphicalInterface ;
+    rdfs:label "Natural Medicines Ingredients and Therapies Monographs" ;
+    dcterms:description "Subscription web database of evidence-based monographs on foods, herbs, supplements, diets, and integrative therapies, with effectiveness ratings, safety, adverse effects, and drug interaction information." ;
+    schema1:url <https://naturalmedicines.therapeuticresearch.com/> .
 
 kgr:nmr.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "NMR KGX graph (KG-Bioportal)" ;
@@ -46255,6 +46423,21 @@ kgr:qptm.web a schema1:Product ;
     dcterms:description "qPTM website for quantitative post-translational modification data." ;
     schema1:url <http://qptm.omicsbio.info/index.php> .
 
+kgr:radlex.browser a schema1:GraphicalInterface ;
+    rdfs:label "RadLex Term Browser" ;
+    dcterms:description "RadLex term browser and search interface on radlex.org." ;
+    schema1:url <https://radlex.org/> .
+
+kgr:radlex.csv a schema1:OntologyProduct ;
+    rdfs:label "RadLex CSV" ;
+    dcterms:description "RadLex terms as a CSV spreadsheet export, with RadLex IDs, preferred names, synonyms, definitions, and parent classes." ;
+    schema1:url <https://radlex.org/Files/Radlex.csv> .
+
+kgr:radlex.owl a schema1:OntologyProduct ;
+    rdfs:label "RadLex OWL (with puns)" ;
+    dcterms:description "RadLex 4.3 release in OWL format, with punned classes and individuals, distributed as a ZIP archive." ;
+    schema1:url <https://radlex.org/download/PunRadLex_Owl4.3.zip> .
+
 kgr:rampdb.api a schema1:ProgrammingInterface ;
     rdfs:label "RaMP-DB API" ;
     dcterms:description "Programmatic interface for accessing RaMP-DB integrated metabolomic pathway data and performing enrichment analyses." ;
@@ -48555,6 +48738,11 @@ kgr:tcga.gdc_submission a schema1:GraphicalInterface ;
     dcterms:description "Data Submission Portal for uploading and managing cancer genomic data submissions to GDC" ;
     schema1:url <https://portal.gdc.cancer.gov/submission> .
 
+kgr:tcpa.cppa a schema1:GraphicalInterface ;
+    rdfs:label "Cancer Perturbed Proteomics Atlas (CPPA)" ;
+    dcterms:description "Cancer Perturbed Proteomics Atlas (CPPA), a TCPA module for RPPA profiles of cancer cell lines under drug and other perturbations." ;
+    schema1:url <https://tcpa.drbioright.org/cppa/> .
+
 kgr:tera.chembl-to-mesh-csv a schema1:MappingProduct ;
     rdfs:label "ChEMBL to MeSH Mapping (CSV)" ;
     dcterms:description "Mapping file linking ChEMBL identifiers to MeSH identifiers" ;
@@ -48608,6 +48796,16 @@ kgr:tera.zenodo-dataset a schema1:Product ;
     rdfs:label "TERA Knowledge Graph Dataset (Zenodo)" ;
     dcterms:description "TERA knowledge graph dataset snapshot version 1.1.0 hosted on Zenodo, including NT files and CSV mappings" ;
     schema1:url <https://zenodo.org/records/4244313> .
+
+kgr:terminologia-anatomica.ta2-publication a schema1:DocumentationProduct ;
+    rdfs:label "Terminologia Anatomica, 2nd edition, Part 1 (FIPAT publication)" ;
+    dcterms:description "Part 1 of the official FIPAT publication of Terminologia Anatomica, 2nd edition (2019), listing TA2 terms with identifiers and Latin and English names. The front matter and later parts are published as separate PDFs alongside it by Dalhousie University Libraries." ;
+    schema1:url <https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-1.pdf> .
+
+kgr:terminologia-anatomica.ta2viewer a schema1:GraphicalInterface ;
+    rdfs:label "TA2Viewer" ;
+    dcterms:description "TA2Viewer, an open-access web application and database for browsing Terminologia Anatomica (TA2) terms, their Latin and English names, TA identifiers, and hierarchy, on desktop or mobile." ;
+    schema1:url <https://ta2viewer.openanatomy.org/> .
 
 kgr:tfacts.publication a schema1:DocumentationProduct ;
     rdfs:label "TFactS publication (Nucleic Acids Research, 2010)" ;
@@ -53833,6 +54031,16 @@ kgr:pubmed-knowledge-graph.website a schema1:GraphicalInterface ;
     dcterms:description "Project homepage for the PubMed Knowledge Graph, providing dataset documentation and download access." ;
     schema1:url <https://pubmedkg.github.io/> .
 
+kgr:radlex.bioportal a schema1:OntologyProduct ;
+    rdfs:label "RadLex in BioPortal" ;
+    dcterms:description "RadLex hosted in NCBO BioPortal for browsing, API access, and annotation." ;
+    schema1:url <https://bioportal.bioontology.org/ontologies/RADLEX> .
+
+kgr:radlex.playbook a schema1:GraphicalInterface ;
+    rdfs:label "RadLex Playbook" ;
+    dcterms:description "RadLex Playbook, a lexicon of radiology orderables and imaging procedure step names built on RadLex. The Playbook is now harmonized with LOINC as the LOINC/RSNA Radiology Playbook." ;
+    schema1:url <https://playbook.radlex.org/> .
+
 kgr:rdf-portal.sparql.ddbj a schema1:ProgrammingInterface ;
     rdfs:label "RDF Portal DDBJ SPARQL Endpoint" ;
     dcterms:description "SPARQL endpoint for the DDBJ RDF dataset." ;
@@ -54088,6 +54296,16 @@ kgr:swisslipid.lipids2uniprot a schema1:MappingProduct ;
     rdfs:label "SwissLipids Lipids to UniProt" ;
     dcterms:description "TSV mapping between SwissLipids lipid entries and UniProtKB proteins." ;
     schema1:url <https://www.swisslipids.org/api/file.php?cas=download_files&file=lipids2uniprot.tsv> .
+
+kgr:tcpa.cell-lines a schema1:GraphicalInterface ;
+    rdfs:label "TCPA Cancer Cell Lines (MCLP)" ;
+    dcterms:description "TCPA web module for RPPA functional proteomics data of cancer cell lines, including Cancer Cell Line Encyclopedia lines, with protein-level views alongside cell line drug sensitivity and dependency data." ;
+    schema1:url <https://tcpa.drbioright.org/rppa500mclp/> .
+
+kgr:tcpa.patient-cohorts a schema1:GraphicalInterface ;
+    rdfs:label "TCPA Patient Cohorts (RPPA500)" ;
+    dcterms:description "TCPA web module for RPPA500 functional proteomics data of patient tumor cohorts from The Cancer Genome Atlas, with modules for summary, correlation, differential expression, survival, and network visualization of protein markers." ;
+    schema1:url <https://tcpa.drbioright.org/rppa500/main.html> .
 
 kgr:tera.traits-nt a schema1:Product ;
     rdfs:label "EOL Traits Data (N-Triples)" ;
@@ -54636,11 +54854,6 @@ kgr:hydrologykg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph Hydrology Knowledge Graph" ;
     dcterms:description "The SAWGraph Hydrology knowledge graph, describing surface water bodies (lakes, rivers, wetlands), the flowlines that connect them, and groundwater features (aquifers, wells, springs) together with their locations. Surface water bodies and flowlines are modeled from USGS NHDPlus data (NHDWaterbody and NHDFlowline); groundwater features are drawn primarily from individual state geological surveys (for example, the Maine Geological Survey). The RDF (Turtle) graph is served through the SAWGraph Hydrology KG SPARQL and Triple Pattern Fragments endpoints." ;
     schema1:url <https://github.com/SAWGraph/water-kg> .
-
-kgr:idisk.code a schema1:ProcessProduct ;
-    rdfs:label "iDISK Build Code" ;
-    dcterms:description "Code used to build iDISK 1.0 from its source databases, including normalization against UMLS and MedDRA." ;
-    schema1:url <https://github.com/jvasilakes/iDISK> .
 
 kgr:imodulondb.browser a schema1:GraphicalInterface ;
     rdfs:label "iModulonDB Web Interface" ;
@@ -55392,6 +55605,11 @@ kgr:fbbi.owl a schema1:OntologyProduct ;
     dcterms:description "Biological Imaging Methods Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/fbbi.owl> .
 
+kgr:fma.owl a schema1:OntologyProduct ;
+    rdfs:label "fma.owl" ;
+    dcterms:description "Foundational Model of Anatomy Ontology in OWL format" ;
+    schema1:url <http://purl.obolibrary.org/obo/fma.owl> .
+
 kgr:foodkg.build-scripts a schema1:ProcessProduct ;
     rdfs:label "FoodKG Construction Scripts" ;
     dcterms:description "Python scripts that build FoodKG from the Recipe1M recipe dataset (layer1.json and det_ingrs.json, acquired manually), USDA nutrient data and FoodOn (downloaded automatically). Outputs are three TriG files, usda-links.trig (about 4.1 million triples), foodon-links.trig (about 30 thousand triples) and foodkg-core.trig (about 63 million triples), intended for loading into Blazegraph." ;
@@ -55456,6 +55674,11 @@ kgr:htridb.downloads a schema1:Product ;
     rdfs:label "HTRIdb Downloads" ;
     dcterms:description "HTRIdb download page offering all transcription factor-target gene interactions (optionally with associated protein-protein interactions), with experimental techniques and PubMed IDs, as tab-delimited or spreadsheet files. Interactions were manually curated from the literature (found through PubMed searches) and from ChIP-chip and ChIP-seq studies selected via the hmChIP database. The site did not respond when checked on 2026-10-19." ;
     schema1:url <http://www.lbbc.ibb.unesp.br/htri/pagdown.jsp> .
+
+kgr:idisk.code a schema1:ProcessProduct ;
+    rdfs:label "iDISK Build Code" ;
+    dcterms:description "Code used to build iDISK 1.0 from its source databases, including normalization against UMLS and MedDRA." ;
+    schema1:url <https://github.com/jvasilakes/iDISK> .
 
 kgr:idisk.idisk2-entities a schema1:Product ;
     rdfs:label "iDISK 2.0 Entities" ;
@@ -56281,6 +56504,11 @@ kgr:clo.owl a schema1:OntologyProduct ;
     rdfs:label "clo.owl" ;
     dcterms:description "Cell Line Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/clo.owl> .
+
+kgr:drbioright.portal a schema1:GraphicalInterface ;
+    rdfs:label "DrBioRight Platform" ;
+    dcterms:description "DrBioRight web platform and LLM-powered chatbot for searching curated cancer omics datasets and running analyses and visualizations through natural-language questions. Integrates molecular, clinical, and functional data from The Cancer Genome Atlas (via the GDC), the Cancer Cell Line Encyclopedia (via DepMap), and the RPPA500 functional proteomics data of The Cancer Proteome Atlas." ;
+    schema1:url <https://drbioright.org/> .
 
 kgr:drkg.graph a schema1:GraphProduct ;
     rdfs:label "DRKG graph" ;

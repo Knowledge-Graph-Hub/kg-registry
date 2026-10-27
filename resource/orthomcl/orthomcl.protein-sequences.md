@@ -8,6 +8,7 @@ name: OrthoMCL Protein Sequences (FASTA)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: orthomcl
+product_file_size: 2773509993
 product_url: https://orthomcl.org/common/downloads/Current_Release/aa_seqs_OrthoMCL-8.2.fasta.gz
 layout: product_detail
 ---

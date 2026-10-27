@@ -64,6 +64,7 @@ dbpedia	KnowledgeGraph	declared	https://creativecommons.org/licenses/by-sa/3.0/	
 digcfdekg	KnowledgeGraph	inferred			https://www.gtexportal.org/home/license	custom	gtex	bridge2ai|impc|lincs|mw|sennet
 diseases	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
 dorothea	KnowledgeGraph	conflict	https://github.com/saezlab/dorothea/blob/master/LICENSE	copyleft	https://www.gtexportal.org/home/license	custom	gtex	tfacts|tred
+drbioright	Aggregator	conflict	https://drbioright.org/	non-commercial	https://depmap.org/portal/terms/	custom	depmap|msigdb	gdc|tcga
 dreamkg	KnowledgeGraph	unresolved						
 drkg	KnowledgeGraph	inferred			https://go.drugbank.com/legal/terms_of_use	non-commercial	drugbank	
 drug-approvals-kp	KnowledgeGraph	inferred			https://hpo.jax.org/app/license	no derivatives	hp	
@@ -120,7 +121,7 @@ icees-kg	KnowledgeGraph	inferred			https://uts.nlm.nih.gov/uts/	custom	umls
 ickg	KnowledgeGraph	inferred			https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 identifier-mappings	KnowledgeGraph	inferred			https://creativecommons.org/publicdomain/zero/1.0/	public domain	wikidata	
 identifiers-org	Aggregator	no-upstream	https://creativecommons.org/licenses/by/4.0/	permissive				
-idisk	KnowledgeGraph	conflict	http://creativecommons.org/licenses/by-sa/3.0/us/	copyleft	https://www.mskcc.org/legal-disclaimer	custom	lnhpd|mskcc-about-herbs|umls	meddra
+idisk	KnowledgeGraph	conflict	http://creativecommons.org/licenses/by-sa/3.0/us/	copyleft	https://www.mskcc.org/legal-disclaimer	custom	lnhpd|mskcc-about-herbs|nmcd|umls	meddra
 ikraph	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubmed	
 imex	Aggregator	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/licenses/by/4.0/	permissive	intact	
 imo-knowledge-graph	KnowledgeGraph	declared	https://www.imohealth.com/terms-of-use/	custom	https://www.ama-assn.org/about/terms-use	custom	cpt|loinc|snomedct	icd10|rxnorm

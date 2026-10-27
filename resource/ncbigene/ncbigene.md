@@ -2320,9 +2320,9 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 502 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
@@ -2998,9 +2998,9 @@ products:
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-10-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
@@ -4376,9 +4376,9 @@ products:
   warnings:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-10-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
     to URL'
 - category: GraphicalInterface
   description: Interactive web interface for exploring the neighborhood of related

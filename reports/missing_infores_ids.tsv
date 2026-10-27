@@ -210,6 +210,7 @@ doid	Human Disease Ontology	Ontology	https://disease-ontology.org	resource/doid/
 dolce	DOLCE	Ontology	http://www.loa.istc.cnr.it/dolce/overview.html	resource/dolce/dolce.md
 dorothea	DoRothEA	KnowledgeGraph	https://saezlab.github.io/dorothea/	resource/dorothea/dorothea.md
 dpo	Drosophila Phenotype Ontology	Ontology	http://purl.obolibrary.org/obo/fbcv	resource/dpo/dpo.md
+drbioright	DrBioRight	Aggregator	https://drbioright.org/	resource/drbioright/drbioright.md
 dreamkg	DREAM-KG	KnowledgeGraph	https://dreamkg.com/	resource/dreamkg/dreamkg.md
 drkg	Drug Repurposing Knowledge Graph	KnowledgeGraph	https://github.com/gnn4dr/DRKG	resource/drkg/drkg.md
 dron	The Drug Ontology	Ontology	https://github.com/ufbmi/dron	resource/dron/dron.md
@@ -428,6 +429,7 @@ indra	INDRA	Aggregator	https://www.indra.bio/	resource/indra/indra.md
 inoh	INOH	DataSource	http://www.inoh.org/	resource/inoh/inoh.md
 inparanoid	InParanoid	DataSource	https://inparanoidb.sbc.su.se/	resource/inparanoid/inparanoid.md
 insight	INSIGHT	KnowledgeGraph	https://insight-project.org/	resource/insight/insight.md
+interlex	InterLex	Ontology	https://interlex.org/	resource/interlex/interlex.md
 intermine	InterMine	DataSource	https://intermine.org/	resource/intermine/intermine.md
 ipr	Protein Domains	Ontology	http://www.ebi.ac.uk/interpro/index.html	resource/ipr/ipr.md
 iprox	iProX	DataSource	https://www.iprox.cn/	resource/iprox/iprox.md
@@ -577,6 +579,7 @@ nij	National Institute of Justice	DataSource	https://nij.ojp.gov/	resource/nij/n
 nikg	Neighborhood Information KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/neighborhood-kg/	resource/nikg/nikg.md
 nlm	National Library of Medicine	DataSource	https://www.nlm.nih.gov/	resource/nlm/nlm.md
 nlm-ckn	NLM-CKN	KnowledgeGraph	https://nlm-ckn.org	resource/nlm-ckn/nlm-ckn.md
+nmcd	Natural Medicines Comprehensive Database (NMCD)	DataSource	https://naturalmedicines.therapeuticresearch.com/	resource/nmcd/nmcd.md
 nmr	NMR-instrument specific component of metabolomics investigations	Ontology	http://msi-ontology.sourceforge.net/	resource/nmr/nmr.md
 noaa-hms	NOAA Hazard Mapping System Fire and Smoke Product	DataSource	https://www.ospo.noaa.gov/products/land/hms.html	resource/noaa-hms/noaa-hms.md
 noaa-ncei	NOAA National Centers for Environmental Information	DataSource	https://www.ncei.noaa.gov/	resource/noaa-ncei/noaa-ncei.md
@@ -735,6 +738,7 @@ pubmed-knowledge-graph	PubMed Knowledge Graph	KnowledgeGraph	https://pubmedkg.gi
 pw	Pathway ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/search.html	resource/pw/pw.md
 pypi	Python Package Index (PyPI)	DataSource	https://pypi.org/	resource/pypi/pypi.md
 qptm	qPTM	DataSource	http://qptm.omicsbio.info/index.php	resource/qptm/qptm.md
+radlex	RadLex	Ontology	https://radlex.org/	resource/radlex/radlex.md
 rapdb	Rice Annotation Project Database	DataSource	https://rapdb.dna.affrc.go.jp/	resource/rapdb/rapdb.md
 raras	Raras	KnowledgeGraph	https://raras.org/	resource/raras/raras.md
 rbo	Radiation Biology Ontology	Ontology	https://github.com/Radiobiology-Informatics-Consortium/RBO	resource/rbo/rbo.md
@@ -838,7 +842,9 @@ tarbase	TarBase	DataSource	https://dianalab.e-ce.uth.gr/tarbasev9	resource/tarba
 taxrank	Taxonomic rank vocabulary	Ontology	https://github.com/phenoscape/taxrank	resource/taxrank/taxrank.md
 tbkg	Tumor-Biomarker Knowledge Graph	KnowledgeGraph	https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full	resource/tbkg/tbkg.md
 tcdb	Transporter Classification Database (TCDB)	DataSource	https://www.tcdb.org/	resource/tcdb/tcdb.md
+tcpa	The Cancer Proteome Atlas (TCPA)	DataSource	https://tcpaportal.org/	resource/tcpa/tcpa.md
 tera	TERA: Toxicological Effect and Risk Assessment Knowledge Graph	KnowledgeGraph	https://niva-knowledge-graph.github.io/TERA/	resource/tera/tera.md
+terminologia-anatomica	Terminologia Anatomica (TA2)	Ontology	https://ta2viewer.openanatomy.org/	resource/terminologia-anatomica/terminologia-anatomica.md
 tfacts	TFactS	DataSource	http://www.tfacts.org/	resource/tfacts/tfacts.md
 tflink	TFLink	Aggregator	https://tflink.net/	resource/tflink/tflink.md
 tga-approved-terminology	TGA Approved Terminology for Therapeutic Goods	DataSource	https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods	resource/tga-approved-terminology/tga-approved-terminology.md

@@ -9,6 +9,7 @@ name: ICH M5 Drug Dictionaries Guideline (2005 draft)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: ich-m5
+product_file_size: 0
 product_url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-guideline-m5-data-elements-and-standards-drug-dictionaries_en.pdf
 layout: product_detail
 ---

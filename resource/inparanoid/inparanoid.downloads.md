@@ -10,5 +10,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: inparanoid
 product_url: https://inparanoidb.sbc.su.se/download
+warnings:
+- File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
+  to URL
 layout: product_detail
 ---

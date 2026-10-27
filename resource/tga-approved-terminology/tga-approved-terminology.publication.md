@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: tga-approved-terminology
 product_url: https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods
+warnings:
+- File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
+  to URL
 layout: product_detail
 ---

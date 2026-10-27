@@ -8,6 +8,7 @@ name: CSPA Protein Detection Matrix
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cspa
+product_file_size: 2721208
 product_url: https://wollscheidlab.org/CSPA/data/S1_File.xlsx
 layout: product_detail
 ---

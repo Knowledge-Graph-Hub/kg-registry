@@ -8,6 +8,7 @@ name: OrthoMCL Ortholog Groups File
 original_source:
 - relation_type: prov:hadPrimarySource
   source: orthomcl
+product_file_size: 51943340
 product_url: https://orthomcl.org/common/downloads/Current_Release/groups_OrthoMCL-8.2.txt.gz
 layout: product_detail
 ---
