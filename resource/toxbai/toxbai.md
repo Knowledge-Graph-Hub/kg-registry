@@ -20,17 +20,18 @@ creation_date: '2026-10-28T00:00:00Z'
 description: ToxBAI is a desktop application for predicting the toxicity of chemicals
   with mechanistically explainable AI organized around the adverse outcome pathway
   (AOP) framework. From a chemical structure (CAS number or SMILES), it computes molecular
-  descriptors and fingerprints and performs Active/Inactive binary classification across
-  toxicity endpoints, reporting a confidence level, performance metrics (F1, recall,
-  AUC), training dataset size, and an applicability-domain reliability flag for each
-  prediction. It offers two families of models — apical-outcome (AO) prediction models
-  trained on OECD Test Guideline data that map to regulatory endpoints, and mechanism
-  prediction models trained on ToxCast high-throughput bioactivity data that correspond
-  to molecular initiating events and key events; predicted MIEs and KEs are mapped to
-  AOP networks in the OECD AOP-Wiki for mechanistic interpretation. ToxBAI is developed
-  by the Environmental Systems Toxicology group at the University of Seoul and operated
-  by ChemBAI, in collaboration with RTI International. It supports pre-screening of
-  untested chemicals under the Next Generation Risk Assessment (NGRA) framework.
+  descriptors and fingerprints and performs Active/Inactive binary classification
+  across toxicity endpoints, reporting a confidence level, performance metrics (F1,
+  recall, AUC), training dataset size, and an applicability-domain reliability flag
+  for each prediction. It offers two families of models — apical-outcome (AO) prediction
+  models trained on OECD Test Guideline data that map to regulatory endpoints, and
+  mechanism prediction models trained on ToxCast high-throughput bioactivity data
+  that correspond to molecular initiating events and key events; predicted MIEs and
+  KEs are mapped to AOP networks in the OECD AOP-Wiki for mechanistic interpretation.
+  ToxBAI is developed by the Environmental Systems Toxicology group at the University
+  of Seoul and operated by ChemBAI, in collaboration with RTI International. It supports
+  pre-screening of untested chemicals under the Next Generation Risk Assessment (NGRA)
+  framework.
 domains:
 - toxicology
 - adverse outcome pathways
@@ -53,8 +54,8 @@ products:
     and run the AO prediction models (OECD Test Guideline data) and mechanism prediction
     models (ToxCast data); results are shown as a toxicity-category heatmap and per-substance
     detail with applicability-domain flags, with AOP-linked interpretation and Excel
-    report export. Requires a Google sign-in. In version 1.0 the prediction toolbox is
-    available; the AOP-based AI and NGRA 1.0 panels are coming-soon placeholders.
+    report export. Requires a Google sign-in. In version 1.0 the prediction toolbox
+    is available; the AOP-based AI and NGRA 1.0 panels are coming-soon placeholders.
   format: http
   id: toxbai.app
   name: ToxBAI Prediction Application
@@ -67,14 +68,15 @@ products:
     source: aop-wiki
   product_url: http://toxbai.com/
 - category: DocumentationProduct
-  description: ToxBAI user guide (beta, English), covering installation, sign-in, substance
-    entry, model selection, and result review and export.
+  description: ToxBAI user guide (beta, English), covering installation, sign-in,
+    substance entry, model selection, and result review and export.
   format: pdf
   id: toxbai.userguide
   name: ToxBAI User Guide
   original_source:
   - relation_type: prov:hadPrimarySource
     source: toxbai
+  product_file_size: 12208208
   product_url: http://toxbai.com/downloads/manual/TOXBAI_Userguide_beta_EN.pdf
 version: '1.0'
 ---

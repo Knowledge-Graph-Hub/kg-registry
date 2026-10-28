@@ -863,6 +863,7 @@ tmrnawebsite	The tmRNA Website	DataSource	https://rnacentral.org/expert-database
 to	Plant Trait Ontology	Ontology	http://browser.planteome.org/amigo	resource/to/to.md
 togows	TogoWS	Aggregator	http://togows.org/	resource/togows/togows.md
 tox21	Tox21 (Toxicology in the 21st Century)	DataSource	https://tox21.gov/	resource/tox21/tox21.md
+toxbai	ToxBAI	DataSource	http://toxbai.com/	resource/toxbai/toxbai.md
 toxcast	ToxCast	DataSource	https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast	resource/toxcast/toxcast.md
 toxin	TOXIN	KnowledgeGraph	https://toxin-search.netlify.app/	resource/toxin/toxin.md
 toxrefdb	ToxRefDB (Toxicity Reference Database)	DataSource	https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data	resource/toxrefdb/toxrefdb.md

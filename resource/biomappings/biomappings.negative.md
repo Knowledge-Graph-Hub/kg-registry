@@ -7,6 +7,7 @@ name: Biomappings Negative Mappings
 original_source:
 - relation_type: prov:hadPrimarySource
   source: biomappings
+product_file_size: 45640
 product_url: https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/negative.sssom.tsv
 layout: product_detail
 ---

@@ -4702,6 +4702,16 @@ http://togows.org/help/:
   ok: true
   source: cache
   status_code: 200
+http://toxbai.com/:
+  checked_at: '2026-10-28T14:23:17Z'
+  error: null
+  ok: true
+  status_code: 200
+http://toxbai.com/downloads/manual/TOXBAI_Userguide_beta_EN.pdf:
+  checked_at: '2026-10-28T14:23:17Z'
+  error: null
+  ok: true
+  status_code: 200
 http://toxico.nibiohn.go.jp/:
   checked_at: '2026-10-19T21:36:30Z'
   error: 'HEAD request failed: HTTPConnectionPool(host=''toxico.nibiohn.go.jp'', port=80):
@@ -7930,6 +7940,7 @@ https://biopragmatics.github.io/biomappings/:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://biopragmatics.github.io/obo-db-ingest/:
   checked_at: '2026-10-19T21:37:13Z'
@@ -8543,16 +8554,19 @@ https://cfpub.epa.gov/ecotox/:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cfpub.epa.gov/ecotox/help.cfm:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cgap.nci.nih.gov/Pathways/BioCarta_Pathways:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cgc.umn.edu/:
   checked_at: '2026-10-19T21:37:17Z'
@@ -11164,6 +11178,7 @@ https://doi.org/10.5281/zenodo.11082038:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://doi.org/10.5281/zenodo.13168726:
   checked_at: '2026-10-19T21:37:43Z'
@@ -14075,11 +14090,13 @@ https://ftp.ncbi.nlm.nih.gov/bioproject/:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/biosample/:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/dbgap/gwas_analysis/:
   checked_at: '2026-10-19T21:38:01Z'
@@ -14097,6 +14114,7 @@ https://ftp.ncbi.nlm.nih.gov/genbank/:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/gene/:
   checked_at: '2026-10-19T21:38:01Z'
@@ -17300,21 +17318,25 @@ https://github.com/biopragmatics/biomappings:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/negative.sssom.tsv:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/positive.sssom.tsv:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biopragmatics/biomappings/raw/main/src/biomappings/resources/predictions.sssom.tsv:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biopragmatics/bioregistry:
   checked_at: '2026-10-19T21:38:19Z'
@@ -17332,6 +17354,7 @@ https://github.com/biopragmatics/semra:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/biothings/GTRx:
   checked_at: '2026-10-19T21:38:19Z'
@@ -20661,6 +20684,7 @@ https://github.com/ranking-agent/strider:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/rat-genome-database:
   checked_at: '2026-10-19T21:38:34Z'
@@ -29099,6 +29123,7 @@ https://semra.readthedocs.io/:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sennetconsortium.org/:
   checked_at: '2026-10-19T21:39:57Z'
@@ -30174,11 +30199,13 @@ https://strider.renci.org/docs:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://strider.transltr.io/docs:
   checked_at: '2026-10-27T22:55:21Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://string-db.org/:
   checked_at: '2026-10-19T21:40:05Z'
@@ -33672,6 +33699,7 @@ https://www.biocarta.com/:
     port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8,
     ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)'')))'
   ok: false
+  source: cache
   status_code: null
 https://www.bioconductor.org/packages/release/bioc/html/progeny.html:
   checked_at: '2026-10-19T21:40:36Z'
@@ -36647,11 +36675,13 @@ https://www.ncbi.nlm.nih.gov/bioproject/:
   checked_at: '2026-10-27T22:55:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/biosample/:
   checked_at: '2026-10-27T22:55:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/books/NBK1116/:
   checked_at: '2026-10-19T21:41:02Z'
@@ -36735,6 +36765,7 @@ https://www.ncbi.nlm.nih.gov/genbank/:
   checked_at: '2026-10-27T22:55:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/gene/:
   checked_at: '2026-10-19T21:41:03Z'
@@ -36806,6 +36837,7 @@ https://www.ncbi.nlm.nih.gov/nuccore/:
   checked_at: '2026-10-27T22:55:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5135022/:
   checked_at: '2026-10-19T21:41:04Z'
@@ -36829,6 +36861,7 @@ https://www.ncbi.nlm.nih.gov/protein/:
   checked_at: '2026-10-27T22:55:22Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ncbi.nlm.nih.gov/refseq/:
   checked_at: '2026-10-19T21:41:04Z'

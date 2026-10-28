@@ -26,7 +26,7 @@ domains:
   - phenotype
 homepage_url: https://monarchinitiative.org/kg/downloads
 id: kg-monarch
-last_modified_date: '2026-10-27T22:44:29Z'
+last_modified_date: '2026-10-28T14:15:36Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

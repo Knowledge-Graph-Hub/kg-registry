@@ -800,7 +800,8 @@ kgr:aop-wiki a schema1:DataSource ;
         kgr:aopwiki-rdf.sparql,
         kgr:aopwiki-rdf.ttl,
         kgr:aopwiki-rdf.void,
-        kgr:biobricks-aopwiki.graph ;
+        kgr:biobricks-aopwiki.graph,
+        kgr:toxbai.app ;
     schema1:name "AOP-Wiki" ;
     skos:inScheme "adverse outcome pathways",
         "environment",
@@ -16001,7 +16002,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-27T22:44:29+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-28T14:15:36+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -30250,6 +30251,26 @@ kgr:tox21 a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://tox21.gov/> .
 
+kgr:toxbai a schema1:DataSource ;
+    rdfs:label "ToxBAI" ;
+    dcterms:created "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ToxBAI is a desktop application for predicting the toxicity of chemicals with mechanistically explainable AI organized around the adverse outcome pathway (AOP) framework. From a chemical structure (CAS number or SMILES), it computes molecular descriptors and fingerprints and performs Active/Inactive binary classification across toxicity endpoints, reporting a confidence level, performance metrics (F1, recall, AUC), training dataset size, and an applicability-domain reliability flag for each prediction. It offers two families of models — apical-outcome (AO) prediction models trained on OECD Test Guideline data that map to regulatory endpoints, and mechanism prediction models trained on ToxCast high-throughput bioactivity data that correspond to molecular initiating events and key events; predicted MIEs and KEs are mapped to AOP networks in the OECD AOP-Wiki for mechanistic interpretation. ToxBAI is developed by the Environmental Systems Toxicology group at the University of Seoul and operated by ChemBAI, in collaboration with RTI International. It supports pre-screening of untested chemicals under the Next Generation Risk Assessment (NGRA) framework." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:identifier "toxbai" ;
+    dcterms:license <http://toxbai.com/> ;
+    dcterms:modified "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:toxbai.app,
+        kgr:toxbai.userguide ;
+    schema1:name "ToxBAI" ;
+    skos:inScheme "adverse outcome pathways",
+        "cheminformatics",
+        "chemistry and biochemistry",
+        "information technology",
+        "machine learning",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <http://toxbai.com/> .
+
 kgr:toxcast a schema1:DataSource ;
     rdfs:label "ToxCast" ;
     dcterms:created "2025-09-04T00:00:00+00:00"^^xsd:dateTime ;
@@ -30262,6 +30283,7 @@ kgr:toxcast a schema1:DataSource ;
         kgr:comptox-dashboard.ctx-api,
         kgr:comptox-dashboard.downloads,
         kgr:comptox-dashboard.portal,
+        kgr:toxbai.app,
         kgr:toxcast.api,
         kgr:toxcast.downloads,
         kgr:toxcast.portal ;
@@ -49610,6 +49632,11 @@ kgr:tox21.data a schema1:Product ;
     dcterms:description "Tox21 data and resources, including quantitative high-throughput screening results for approximately 10,000 chemicals across nuclear-receptor and stress-response pathway assays, along with associated tools and documentation published by the Tox21 consortium." ;
     schema1:url <https://tox21.gov/resources/> .
 
+kgr:toxbai.userguide a schema1:DocumentationProduct ;
+    rdfs:label "ToxBAI User Guide" ;
+    dcterms:description "ToxBAI user guide (beta, English), covering installation, sign-in, substance entry, model selection, and result review and export." ;
+    schema1:url <http://toxbai.com/downloads/manual/TOXBAI_Userguide_beta_EN.pdf> .
+
 kgr:toxcast.api a schema1:ProgrammingInterface ;
     rdfs:label "EPA CTX (Computational Toxicology and Exposure) API (ToxCast Bioactivity)" ;
     dcterms:description "REST API providing programmatic access to ToxCast-related assay, chemical, and bioactivity data via the EPA Computational Toxicology and Exposure (CTX) APIs. The Bioactivity domain is backed by ToxCast's invitrodb. An API key (free, via ccte_api@epa.gov) is required for data calls." ;
@@ -56004,6 +56031,11 @@ kgr:tera.chebi-to-mesh-csv a schema1:MappingProduct ;
     rdfs:label "ChEBI to MeSH Mapping (CSV)" ;
     dcterms:description "Mapping file linking ChEBI identifiers to MeSH identifiers" ;
     schema1:url <https://zenodo.org/records/4244313/files/chebi_to_mesh.csv> .
+
+kgr:toxbai.app a schema1:GraphicalInterface ;
+    rdfs:label "ToxBAI Prediction Application" ;
+    dcterms:description "ToxBAI desktop application (Windows and macOS) for predicting chemical toxicity. Users enter substances by CAS number or SMILES, or upload an Excel file, and run the AO prediction models (OECD Test Guideline data) and mechanism prediction models (ToxCast data); results are shown as a toxicity-category heatmap and per-substance detail with applicability-domain flags, with AOP-linked interpretation and Excel report export. Requires a Google sign-in. In version 1.0 the prediction toolbox is available; the AOP-based AI and NGRA 1.0 panels are coming-soon placeholders." ;
+    schema1:url <http://toxbai.com/> .
 
 kgr:translator.alliance.graph a schema1:GraphProduct ;
     rdfs:label "Translator Alliance KGX Graph" ;

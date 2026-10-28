@@ -61,6 +61,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+    to URL'
 - category: DocumentationProduct
   description: Downloadable guidance document describing approved ingredient naming
     and presentation terminology.
@@ -73,6 +75,8 @@ products:
   product_url: https://www.tga.gov.au/sites/default/files/2024-10/tga-approved-terminology-therapeutic-goods.pdf
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
     to URL'
 - category: GraphicalInterface
   description: TGA page directing users to the Ingredients Table and Code Tables (dosage

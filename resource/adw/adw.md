@@ -34,6 +34,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of Animal Natural History and Life History Ontology

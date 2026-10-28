@@ -83,6 +83,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
+    when accessing file'
 publications:
 - authors:
   - Adriano Rutz
