@@ -319,6 +319,7 @@ europepmc,active,PASS
 eva,active,PASS
 evlncrnas,active,PASS
 evoweb,active,PASS
+excape-db,active,PASS
 exmo,active,PASS
 exo,active,PASS
 expressionatlas,active,PASS
@@ -748,6 +749,7 @@ pankbase,active,PASS
 pankgraph,active,PASS
 panorama-public,active,PASS
 panther,active,PASS
+papyrus,active,PASS
 pathbank,active,PASS
 pathophenodb,active,PASS
 pathwaycommons,active,PASS

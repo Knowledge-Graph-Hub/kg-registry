@@ -4097,6 +4097,7 @@ kgr:chembl a schema1:DataSource ;
         kgr:chembl.site,
         kgr:chembl.sparql,
         kgr:chembl.sqlite,
+        kgr:excape-db.dataset,
         kgr:genecards.web.interface,
         kgr:gpcrdb.api,
         kgr:gpcrdb.data,
@@ -4130,6 +4131,7 @@ kgr:chembl a schema1:DataSource ;
         kgr:obo-db-ingest.chembl.target.sssom.tsv,
         kgr:obo-db-ingest.chembl.target.tsv,
         kgr:open-tggates.histopathology-images,
+        kgr:papyrus.dataset,
         kgr:pharmdb.graph,
         kgr:pharos.api,
         kgr:pharos.portal,
@@ -9747,6 +9749,27 @@ kgr:evoweb a schema1:KnowledgeGraph ;
         "molecular evolution" ;
     adms:status "Active" ;
     foaf:homepage <https://data.niaid.nih.gov/> .
+
+kgr:excape-db a schema1:Aggregator ;
+    rdfs:label "ExCAPE-DB" ;
+    dcterms:created "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ExCAPE-DB (the ExCAPE chemogenomics database) is an integrated, large-scale, open-access dataset of structure-activity relationship data built for big-data analysis in chemogenomics. It combines active and inactive compound-target bioactivity annotations from the two public sources ChEMBL and PubChem into a single standardized, normalized dataset of over 70 million SAR data points, with chemical structures, target information, and activity annotations. It was created for the EU Horizon 2020 ExCAPE project and is provided both as a downloadable dataset and through a searchable web interface." ;
+    dcterms:identifier "excape-db" ;
+    dcterms:isReferencedBy <doi:10.1186/s13321-017-0203-5> ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:excape-db.dataset,
+        kgr:excape-db.search,
+        kgr:papyrus.dataset ;
+    schema1:name "ExCAPE-DB" ;
+    skos:altLabel "ExCAPE chemogenomics database" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "drug discovery",
+        "information technology",
+        "machine learning" ;
+    adms:status "Active" ;
+    foaf:homepage <https://solr.ideaconsult.net/search/excape/> .
 
 kgr:exmo a schema1:Ontology ;
     rdfs:label "Exercise Medicine Ontology" ;
@@ -16023,7 +16046,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-28T14:41:09+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-28T16:33:40+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -23187,6 +23210,26 @@ kgr:pao a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <http://www.plantontology.org> .
 
+kgr:papyrus a schema1:DataSource ;
+    rdfs:label "Papyrus" ;
+    dcterms:created "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Papyrus is a large-scale, standardized and curated dataset of small-molecule bioactivity data aimed at machine learning applications such as QSAR and proteochemometric modeling. It aggregates and normalizes ligand-protein bioactivity measurements (with standardized compound structures, UniProt protein targets, and precomputed molecular and protein descriptors) into quality-graded records, and is distributed as versioned releases. The original release compiled about 60 million data points from ChEMBL and ExCAPE-DB; later versions add further sources and grow the dataset. A high-confidence subset, Papyrus++, is provided alongside the full all-quality dataset. The data are hosted on 4TU.ResearchData and Zenodo, and the companion papyrus-scripts Python package and command-line tool handle downloading, versioning, filtering, searching, and export." ;
+    dcterms:hasVersion "2024.09.2" ;
+    dcterms:identifier "papyrus" ;
+    dcterms:isReferencedBy <doi:10.1186/s13321-022-00672-x> ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:papyrus.dataset,
+        kgr:papyrus.scripts ;
+    schema1:name "Papyrus" ;
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "drug discovery",
+        "information technology",
+        "machine learning" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/OlivierBeq/Papyrus-scripts> .
+
 kgr:pathbank a schema1:DataSource ;
     rdfs:label "PathBank" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
@@ -25786,6 +25829,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:entrez.edirect,
         kgr:entrez.eutils,
         kgr:entrez.web,
+        kgr:excape-db.dataset,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
         kgr:foodb.data.mysql,
@@ -31309,6 +31353,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:obo-db-ingest.uniprot.tsv,
         kgr:oma.mapping.uniprot,
         kgr:oregano.graph,
+        kgr:papyrus.dataset,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
         kgr:pathwaycommons.gmt,
@@ -38210,6 +38255,11 @@ kgr:evoweb.tpf a schema1:ProgrammingInterface ;
     rdfs:label "EvoWeb TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for EvoWeb" ;
     schema1:url <https://apps.okn.us/ldf/evoweb> .
+
+kgr:excape-db.search a schema1:GraphicalInterface ;
+    rdfs:label "ExCAPE-DB Search" ;
+    dcterms:description "ExCAPE-DB searchable web interface (Solr-based) for querying the ExCAPE chemogenomics dataset by compound and target." ;
+    schema1:url <https://solr.ideaconsult.net/search/excape/> .
 
 kgr:exmo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "EXMO KGX graph (KG-Bioportal)" ;
@@ -45697,6 +45747,11 @@ kgr:pao.owl a schema1:OntologyProduct ;
     rdfs:label "pao.owl" ;
     dcterms:description "OWL edition of the plant anatomy content. The original Plant Anatomy Ontology OBO PURL no longer resolves; product_url now points to the Plant Ontology (PO), which superseded and absorbed the plant anatomy content." ;
     schema1:url <http://purl.obolibrary.org/obo/po.owl> .
+
+kgr:papyrus.scripts a schema1:ProcessProduct ;
+    rdfs:label "papyrus-scripts" ;
+    dcterms:description "papyrus-scripts, a Python library and command-line tool for working with the Papyrus dataset. It downloads, versions, and caches releases from 4TU or Zenodo, provides a lazy filtering and search API over the data (quality, source, organism, protein class, and molecular filters), builds similarity and substructure search indexes, and exports selected subsets." ;
+    schema1:url <https://github.com/OlivierBeq/Papyrus-scripts> .
 
 kgr:pathbank.biopax a schema1:GraphProduct ;
     rdfs:label "PathBank BioPAX Archive" ;
@@ -55562,6 +55617,11 @@ kgr:europepmc.rest-api a schema1:ProgrammingInterface ;
     dcterms:description "REST API for searching Europe PMC and retrieving article metadata, abstracts, open access full text (XML), references, citations and database cross-references." ;
     schema1:url <https://www.ebi.ac.uk/europepmc/webservices/rest/> .
 
+kgr:excape-db.dataset a schema1:Product ;
+    rdfs:label "ExCAPE Dataset" ;
+    dcterms:description "The ExCAPE chemogenomics dataset (over 70 million SAR data points integrating ChEMBL and PubChem bioactivity annotations), distributed on Zenodo; version 2 fixed SMILES errors." ;
+    schema1:url <https://doi.org/10.5281/zenodo.675987> .
+
 kgr:fobi.owl a schema1:OntologyProduct ;
     rdfs:label "FOBI is an ontology to represent food intake data and associate it with metabolomic data" ;
     dcterms:description "FOBI is an ontology to represent food intake data and associate it with metabolomic data" ;
@@ -56616,6 +56676,11 @@ kgr:one.owl a schema1:OntologyProduct ;
     rdfs:label "one.owl" ;
     dcterms:description "Ontology for Nutritional Epidemiology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/one.owl> .
+
+kgr:papyrus.dataset a schema1:Product ;
+    rdfs:label "Papyrus Dataset" ;
+    dcterms:description "The Papyrus bioactivity dataset, distributed as versioned releases on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized ligand-protein bioactivity records, compound structures, UniProt protein targets, and precomputed molecular and protein descriptors, in tab-delimited and Parquet formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside the full all-quality dataset." ;
+    schema1:url <https://doi.org/10.4121/16896406> .
 
 kgr:pathwhiz.pathways a schema1:GraphicalInterface ;
     rdfs:label "PathWhiz Pathway Library" ;

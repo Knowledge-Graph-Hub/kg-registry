@@ -292,6 +292,7 @@ ev	eVOC (Expressed Sequence Annotation for Humans)	Ontology	https://obofoundry.o
 eva	European Variation Archive	DataSource	https://www.ebi.ac.uk/eva/	resource/eva/eva.md
 evlncrnas	EVLncRNAs	DataSource	https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/	resource/evlncrnas/evlncrnas.md
 evoweb	EvoWeb	KnowledgeGraph	https://data.niaid.nih.gov/	resource/evoweb/evoweb.md
+excape-db	ExCAPE-DB	Aggregator	https://solr.ideaconsult.net/search/excape/	resource/excape-db/excape-db.md
 exmo	Exercise Medicine Ontology	Ontology	https://github.com/Exercise-Medicine-Ontology/EXMO	resource/exmo/exmo.md
 exo	Exposure ontology	Ontology	https://github.com/CTDbase/exposure-ontology	resource/exo/exo.md
 expressionatlas	Expression Atlas	Aggregator	https://www.ebi.ac.uk/gxa/home	resource/expressionatlas/expressionatlas.md
@@ -672,6 +673,7 @@ pankbase	PanKBase	DataSource	https://pankbase.org/	resource/pankbase/pankbase.md
 pankgraph	PanKgraph	KnowledgeGraph	https://pankbase.org/	resource/pankgraph/pankgraph.md
 panorama-public	Panorama Public	DataSource	https://panoramaweb.org/public.url	resource/panorama-public/panorama-public.md
 pao	Plant Anatomy Ontology	Ontology	http://www.plantontology.org	resource/pao/pao.md
+papyrus	Papyrus	DataSource	https://github.com/OlivierBeq/Papyrus-scripts	resource/papyrus/papyrus.md
 pathbank	PathBank	DataSource	https://pathbank.org/	resource/pathbank/pathbank.md
 pavs-kg	PAVS Knowledge Graph	KnowledgeGraph	https://pavs.phenomebrowser.net/	resource/pavs-kg/pavs-kg.md
 paxdb	PaxDb	DataSource	https://pax-db.org/	resource/paxdb/paxdb.md

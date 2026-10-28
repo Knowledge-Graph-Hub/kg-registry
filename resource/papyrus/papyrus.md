@@ -19,11 +19,12 @@ description: Papyrus is a large-scale, standardized and curated dataset of small
   modeling. It aggregates and normalizes ligand-protein bioactivity measurements (with
   standardized compound structures, UniProt protein targets, and precomputed molecular
   and protein descriptors) into quality-graded records, and is distributed as versioned
-  releases. The original release compiled about 60 million data points from ChEMBL and
-  ExCAPE-DB; later versions add further sources and grow the dataset. A high-confidence
-  subset, Papyrus++, is provided alongside the full all-quality dataset. The data are
-  hosted on 4TU.ResearchData and Zenodo, and the companion papyrus-scripts Python package
-  and command-line tool handle downloading, versioning, filtering, searching, and export.
+  releases. The original release compiled about 60 million data points from ChEMBL
+  and ExCAPE-DB; later versions add further sources and grow the dataset. A high-confidence
+  subset, Papyrus++, is provided alongside the full all-quality dataset. The data
+  are hosted on 4TU.ResearchData and Zenodo, and the companion papyrus-scripts Python
+  package and command-line tool handle downloading, versioning, filtering, searching,
+  and export.
 domains:
 - cheminformatics
 - drug discovery
@@ -40,12 +41,12 @@ license:
 name: Papyrus
 products:
 - category: Product
-  description: The Papyrus bioactivity dataset, distributed as versioned releases on
-    4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized ligand-protein
-    bioactivity records, compound structures, UniProt protein targets, and precomputed
-    molecular and protein descriptors, in tab-delimited and Parquet formats (LZMA/Gzip
-    compressed), with a high-confidence Papyrus++ subset alongside the full all-quality
-    dataset.
+  description: The Papyrus bioactivity dataset, distributed as versioned releases
+    on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
+    ligand-protein bioactivity records, compound structures, UniProt protein targets,
+    and precomputed molecular and protein descriptors, in tab-delimited and Parquet
+    formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside
+    the full all-quality dataset.
   format: mixed
   id: papyrus.dataset
   name: Papyrus Dataset
@@ -59,18 +60,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://doi.org/10.4121/16896406
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+    to URL'
 - category: ProcessProduct
-  description: papyrus-scripts, a Python library and command-line tool for working with
-    the Papyrus dataset. It downloads, versions, and caches releases from 4TU or Zenodo,
-    provides a lazy filtering and search API over the data (quality, source, organism,
-    protein class, and molecular filters), builds similarity and substructure search
-    indexes, and exports selected subsets.
+  description: papyrus-scripts, a Python library and command-line tool for working
+    with the Papyrus dataset. It downloads, versions, and caches releases from 4TU
+    or Zenodo, provides a lazy filtering and search API over the data (quality, source,
+    organism, protein class, and molecular filters), builds similarity and substructure
+    search indexes, and exports selected subsets.
   format: python
   id: papyrus.scripts
-  name: papyrus-scripts
   license:
     id: https://opensource.org/licenses/MIT
     label: MIT License
+  name: papyrus-scripts
   original_source:
   - relation_type: prov:hadPrimarySource
     source: papyrus

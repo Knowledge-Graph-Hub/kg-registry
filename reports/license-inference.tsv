@@ -89,6 +89,7 @@ eu-knowledge-graph	KnowledgeGraph	no-upstream
 eurio	KnowledgeGraph	no-upstream						
 europepmc	Aggregator	inferred			https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress|biostudies	pmc
 evoweb	KnowledgeGraph	no-upstream						
+excape-db	Aggregator	declared	https://creativecommons.org/licenses/by-sa/4.0/	copyleft	https://creativecommons.org/licenses/by-sa/3.0/	copyleft	chembl	
 expressionatlas	Aggregator	conflict	https://creativecommons.org/licenses/by/4.0/	permissive	https://www.ebi.ac.uk/about/terms-of-use	custom	arrayexpress	
 fairsharing	Aggregator	no-upstream	https://creativecommons.org/licenses/by-sa/4.0/	copyleft				
 fiokg	KnowledgeGraph	inferred			US federal government public domain	public domain	epa-frs|sawgraph	

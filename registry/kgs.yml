@@ -60710,6 +60710,45 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubtator
     product_url: https://pharos.nih.gov/graphql
+  - category: Product
+    compression: targz
+    description: The ExCAPE chemogenomics dataset (over 70 million SAR data points
+      integrating ChEMBL and PubChem bioactivity annotations), distributed on Zenodo;
+      version 2 fixed SMILES errors.
+    format: tsv
+    id: excape-db.dataset
+    name: ExCAPE Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    product_url: https://doi.org/10.5281/zenodo.675987
+  - category: Product
+    description: The Papyrus bioactivity dataset, distributed as versioned releases
+      on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
+      ligand-protein bioactivity records, compound structures, UniProt protein targets,
+      and precomputed molecular and protein descriptors, in tab-delimited and Parquet
+      formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside
+      the full all-quality dataset.
+    format: mixed
+    id: papyrus.dataset
+    name: Papyrus Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: papyrus
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    product_url: https://doi.org/10.4121/16896406
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+      to URL'
   publications:
   - authors:
     - Zdrazil B
@@ -156811,6 +156850,115 @@ resources:
     title: 'EvoWeaver: large-scale prediction of gene functional associations from
       coevolutionary signals'
     year: '2025'
+- activity_status: active
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ideaconsult.net/
+    label: IDEAconsult Ltd (ExCAPE project)
+  - category: Individual
+    contact_details:
+    - contact_type: url
+      value: https://orcid.org/0000-0002-8755-3394
+    label: Nina Jeliazkova
+  creation_date: '2026-10-28T00:00:00Z'
+  description: ExCAPE-DB (the ExCAPE chemogenomics database) is an integrated, large-scale,
+    open-access dataset of structure-activity relationship data built for big-data
+    analysis in chemogenomics. It combines active and inactive compound-target bioactivity
+    annotations from the two public sources ChEMBL and PubChem into a single standardized,
+    normalized dataset of over 70 million SAR data points, with chemical structures,
+    target information, and activity annotations. It was created for the EU Horizon
+    2020 ExCAPE project and is provided both as a downloadable dataset and through
+    a searchable web interface.
+  domains:
+  - cheminformatics
+  - chemistry and biochemistry
+  - drug discovery
+  - machine learning
+  - information technology
+  homepage_url: https://solr.ideaconsult.net/search/excape/
+  id: excape-db
+  last_modified_date: '2026-10-28T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
+  name: ExCAPE-DB
+  products:
+  - category: GraphicalInterface
+    description: ExCAPE-DB searchable web interface (Solr-based) for querying the
+      ExCAPE chemogenomics dataset by compound and target.
+    format: http
+    id: excape-db.search
+    name: ExCAPE-DB Search
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    product_url: https://solr.ideaconsult.net/search/excape/
+  - category: Product
+    compression: targz
+    description: The ExCAPE chemogenomics dataset (over 70 million SAR data points
+      integrating ChEMBL and PubChem bioactivity annotations), distributed on Zenodo;
+      version 2 fixed SMILES errors.
+    format: tsv
+    id: excape-db.dataset
+    name: ExCAPE Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    product_url: https://doi.org/10.5281/zenodo.675987
+  - category: Product
+    description: The Papyrus bioactivity dataset, distributed as versioned releases
+      on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
+      ligand-protein bioactivity records, compound structures, UniProt protein targets,
+      and precomputed molecular and protein descriptors, in tab-delimited and Parquet
+      formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside
+      the full all-quality dataset.
+    format: mixed
+    id: papyrus.dataset
+    name: Papyrus Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: papyrus
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    product_url: https://doi.org/10.4121/16896406
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+      to URL'
+  publications:
+  - authors:
+    - Jiangming Sun
+    - Nina Jeliazkova
+    - Vladimir Chupakhin
+    - Jose-Felipe Golib-Dzib
+    - Ola Engkvist
+    - Lars Carlsson
+    - Jörg Wegner
+    - Hugo Ceulemans
+    - Ivan Georgiev
+    - Vedrin Jeliazkov
+    - et al.
+    doi: 10.1186/s13321-017-0203-5
+    id: doi:10.1186/s13321-017-0203-5
+    journal: Journal of Cheminformatics
+    preferred: true
+    title: 'ExCAPE-DB: an integrated large scale dataset facilitating Big Data analysis
+      in chemogenomics'
+    year: '2017'
+  synonyms:
+  - ExCAPE chemogenomics database
 - activity_status: active
   category: Ontology
   collection:
@@ -264412,7 +264560,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-28T14:41:09Z'
+  last_modified_date: '2026-10-28T16:33:40Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -366756,6 +366904,102 @@ resources:
 - activity_status: active
   category: DataSource
   contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: github
+      value: OlivierBeq
+    label: Olivier J. M. Béquignon
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.universiteitleiden.nl/en/science/drug-research
+    label: Computational Drug Discovery, Leiden Academic Centre for Drug Research,
+      Leiden University
+  creation_date: '2026-10-28T00:00:00Z'
+  description: Papyrus is a large-scale, standardized and curated dataset of small-molecule
+    bioactivity data aimed at machine learning applications such as QSAR and proteochemometric
+    modeling. It aggregates and normalizes ligand-protein bioactivity measurements
+    (with standardized compound structures, UniProt protein targets, and precomputed
+    molecular and protein descriptors) into quality-graded records, and is distributed
+    as versioned releases. The original release compiled about 60 million data points
+    from ChEMBL and ExCAPE-DB; later versions add further sources and grow the dataset.
+    A high-confidence subset, Papyrus++, is provided alongside the full all-quality
+    dataset. The data are hosted on 4TU.ResearchData and Zenodo, and the companion
+    papyrus-scripts Python package and command-line tool handle downloading, versioning,
+    filtering, searching, and export.
+  domains:
+  - cheminformatics
+  - drug discovery
+  - chemistry and biochemistry
+  - machine learning
+  - information technology
+  homepage_url: https://github.com/OlivierBeq/Papyrus-scripts
+  id: papyrus
+  last_modified_date: '2026-10-28T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
+  name: Papyrus
+  products:
+  - category: Product
+    description: The Papyrus bioactivity dataset, distributed as versioned releases
+      on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
+      ligand-protein bioactivity records, compound structures, UniProt protein targets,
+      and precomputed molecular and protein descriptors, in tab-delimited and Parquet
+      formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside
+      the full all-quality dataset.
+    format: mixed
+    id: papyrus.dataset
+    name: Papyrus Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: papyrus
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    product_url: https://doi.org/10.4121/16896406
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+      to URL'
+  - category: ProcessProduct
+    description: papyrus-scripts, a Python library and command-line tool for working
+      with the Papyrus dataset. It downloads, versions, and caches releases from 4TU
+      or Zenodo, provides a lazy filtering and search API over the data (quality,
+      source, organism, protein class, and molecular filters), builds similarity and
+      substructure search indexes, and exports selected subsets.
+    format: python
+    id: papyrus.scripts
+    license:
+      id: https://opensource.org/licenses/MIT
+      label: MIT License
+    name: papyrus-scripts
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: papyrus
+    product_url: https://github.com/OlivierBeq/Papyrus-scripts
+  publications:
+  - authors:
+    - Olivier J. M. Béquignon
+    - Brandon J. Bongers
+    - Willem Jespers
+    - Adriaan P. IJzerman
+    - Bob van der Water
+    - Gerard J. P. van Westen
+    doi: 10.1186/s13321-022-00672-x
+    id: doi:10.1186/s13321-022-00672-x
+    journal: Journal of Cheminformatics
+    preferred: true
+    title: 'Papyrus: a large-scale curated dataset aimed at bioactivity predictions'
+    year: '2023'
+  version: 2024.09.2
+- activity_status: active
+  category: DataSource
+  contacts:
   - category: Organization
     contact_details:
     - contact_type: url
@@ -408463,6 +408707,22 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubtator
     product_url: https://pharos.nih.gov/graphql
+  - category: Product
+    compression: targz
+    description: The ExCAPE chemogenomics dataset (over 70 million SAR data points
+      integrating ChEMBL and PubChem bioactivity annotations), distributed on Zenodo;
+      version 2 fixed SMILES errors.
+    format: tsv
+    id: excape-db.dataset
+    name: ExCAPE Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: pubchem
+    product_url: https://doi.org/10.5281/zenodo.675987
   publications:
   - authors:
     - Kim S
@@ -506273,6 +506533,29 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pdb
     product_url: https://www.ncbi.nlm.nih.gov/protein/
+  - category: Product
+    description: The Papyrus bioactivity dataset, distributed as versioned releases
+      on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
+      ligand-protein bioactivity records, compound structures, UniProt protein targets,
+      and precomputed molecular and protein descriptors, in tab-delimited and Parquet
+      formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside
+      the full all-quality dataset.
+    format: mixed
+    id: papyrus.dataset
+    name: Papyrus Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: papyrus
+    - relation_type: prov:hadPrimarySource
+      source: chembl
+    - relation_type: prov:hadPrimarySource
+      source: excape-db
+    - relation_type: prov:hadPrimarySource
+      source: uniprot
+    product_url: https://doi.org/10.4121/16896406
+    warnings:
+    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+      to URL'
   publications:
   - authors:
     - Alex Bateman

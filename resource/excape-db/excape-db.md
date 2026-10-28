@@ -18,8 +18,8 @@ description: ExCAPE-DB (the ExCAPE chemogenomics database) is an integrated, lar
   in chemogenomics. It combines active and inactive compound-target bioactivity annotations
   from the two public sources ChEMBL and PubChem into a single standardized, normalized
   dataset of over 70 million SAR data points, with chemical structures, target information,
-  and activity annotations. It was created for the EU Horizon 2020 ExCAPE project and
-  is provided both as a downloadable dataset and through a searchable web interface.
+  and activity annotations. It was created for the EU Horizon 2020 ExCAPE project
+  and is provided both as a downloadable dataset and through a searchable web interface.
 domains:
 - cheminformatics
 - chemistry and biochemistry
@@ -46,11 +46,11 @@ products:
     source: excape-db
   product_url: https://solr.ideaconsult.net/search/excape/
 - category: Product
-  description: The ExCAPE chemogenomics dataset (over 70 million SAR data points integrating
-    ChEMBL and PubChem bioactivity annotations), distributed on Zenodo; version 2 fixed
-    SMILES errors.
-  format: tsv
   compression: targz
+  description: The ExCAPE chemogenomics dataset (over 70 million SAR data points integrating
+    ChEMBL and PubChem bioactivity annotations), distributed on Zenodo; version 2
+    fixed SMILES errors.
+  format: tsv
   id: excape-db.dataset
   name: ExCAPE Dataset
   original_source:
@@ -81,6 +81,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://doi.org/10.4121/16896406
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+    to URL'
 publications:
 - authors:
   - Jiangming Sun

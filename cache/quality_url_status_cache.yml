@@ -8196,16 +8196,19 @@ https://camera.od.nih.gov/:
   checked_at: '2026-10-28T14:48:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://camera.od.nih.gov/explore:
   checked_at: '2026-10-28T14:48:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://camera.od.nih.gov/user-guide:
   checked_at: '2026-10-28T14:48:59Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://cancer-rates.com/ky/?datasource=mort&std=us2000:
   checked_at: '2026-10-19T21:37:16Z'
@@ -11179,6 +11182,17 @@ https://doi.org/10.25345/C59J97:
   ok: true
   source: cache
   status_code: 200
+https://doi.org/10.4121/16896406:
+  checked_at: '2026-10-28T16:40:12Z'
+  error: 'HEAD request failed: HTTPSConnectionPool(host=''data.4tu.nl'', port=443):
+    Max retries exceeded with url: /articles/_/16896406 (Caused by ConnectTimeoutError(<HTTPSConnection(host=''data.4tu.nl'',
+    port=443) at 0x7e6be6fd1bd0>, ''Connection to data.4tu.nl timed out. (connect
+    timeout=8.0)'')); GET request failed: HTTPSConnectionPool(host=''data.4tu.nl'',
+    port=443): Max retries exceeded with url: /articles/_/16896406 (Caused by ConnectTimeoutError(<HTTPSConnection(host=''data.4tu.nl'',
+    port=443) at 0x7e6be6fd2d50>, ''Connection to data.4tu.nl timed out. (connect
+    timeout=8.0)''))'
+  ok: false
+  status_code: null
 https://doi.org/10.48373/59AV-7504:
   checked_at: '2026-10-19T21:37:42Z'
   error: null
@@ -11256,6 +11270,11 @@ https://doi.org/10.5281/zenodo.6617348:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://doi.org/10.5281/zenodo.675987:
+  checked_at: '2026-10-28T16:40:12Z'
+  error: null
+  ok: true
   status_code: 200
 https://doi.org/10.5281/zenodo.6814507:
   checked_at: '2026-10-19T21:37:44Z'
@@ -16544,6 +16563,11 @@ https://github.com/Occupation-Ontology/OccO:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://github.com/OlivierBeq/Papyrus-scripts:
+  checked_at: '2026-10-28T16:40:12Z'
+  error: null
+  ok: true
   status_code: 200
 https://github.com/OmniSearch/ncro:
   checked_at: '2026-10-19T21:38:15Z'
@@ -29586,6 +29610,11 @@ https://snpeff.odsp.astrazeneca.com/versions/snpEff_latest_core.zip:
   ok: true
   source: cache
   status_code: 403
+https://solr.ideaconsult.net/search/excape/:
+  checked_at: '2026-10-28T16:40:12Z'
+  error: null
+  ok: true
+  status_code: 200
 https://sourceforge.net/projects/mged/:
   checked_at: '2026-10-19T21:40:01Z'
   error: null
