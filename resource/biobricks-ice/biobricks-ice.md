@@ -60,7 +60,7 @@ products:
   original_source:
   - source: biobricks-ice
     relation_type: prov:hadPrimarySource
-  - source: ice
+  - source: nice
     relation_type: prov:wasDerivedFrom
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'

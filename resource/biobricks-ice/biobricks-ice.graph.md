@@ -10,7 +10,7 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: biobricks-ice
 - relation_type: prov:wasDerivedFrom
-  source: ice
+  source: nice
 product_url: https://github.com/biobricks-ai/biobricks-okg
 layout: product_detail
 ---
