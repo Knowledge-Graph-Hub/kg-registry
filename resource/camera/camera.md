@@ -56,6 +56,8 @@ products:
     source: aop-wiki
   - relation_type: prov:hadPrimarySource
     source: comptox-dashboard
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://camera.od.nih.gov/explore
 - category: DocumentationProduct
   description: CAMERA user guide, with help and FAQs for using the database and interface.
@@ -91,7 +93,7 @@ synonyms:
 
 CAMERA is a public NIH database and web interface that consolidates validated and qualified New Approach Methods (NAMs) for chemical safety testing. It gathers validation study reports, data, protocols and SOPs, and regulatory guidance that were previously scattered across agencies and organizations, and presents them in one searchable interface, filterable by alternative method type, defined approach, test method endpoint, and regulatory guidance.
 
-CAMERA also uses standardized ontology vocabulary and large language models to link validated NAMs to the key events of OECD-endorsed adverse outcome pathways, drawing on AOP-Wiki, so that methods can be found by the key event or AOP they inform. Chemical identity and data in the interface are drawn from the EPA CompTox Chemicals Dashboard. It currently holds 67 validated NAMs.
+CAMERA also uses standardized ontology vocabulary and large language models to link validated NAMs to the key events of OECD-endorsed adverse outcome pathways, drawing on AOP-Wiki, so that methods can be found by the key event or AOP they inform. Chemical identity and data in the interface are drawn from the EPA CompTox Chemicals Dashboard, and method records link out to the supporting literature in PubMed. It currently holds 67 validated NAMs.
 
 CAMERA is supported by NICEATM and operates under the direction and oversight of ICCVAM.
 
