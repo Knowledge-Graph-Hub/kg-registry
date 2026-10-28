@@ -130,7 +130,9 @@ def test_body_change_keeps_frontmatter_text():
 
 def test_unpatchable_yaml_falls_back_to_full_dump(tmp_path):
     page = tmp_path / "flow.md"
-    page.write_text("---\nid: flow\nproducts: [{id: flow.a, name: A}]\n---\nBody\n", encoding="utf-8")
+    page.write_text(
+        "---\nid: flow\nproducts: [{id: flow.a, name: A}]\n---\nBody\n", encoding="utf-8"
+    )
     metadata, md = _load(page.read_text(encoding="utf-8"))
     metadata["products"].append({"id": "flow.b", "name": "B"})
 
@@ -150,12 +152,16 @@ def test_dedupe_keeps_warning_order(extract_metadata_module, monkeypatch, tmp_pa
         "name": "Demo",
         "category": "DataSource",
         "domains": ["genomics"],
-        "products": [{"id": "demo.data", "name": "Demo data", "category": "Product", "warnings": warnings}],
+        "products": [
+            {"id": "demo.data", "name": "Demo data", "category": "Product", "warnings": warnings}
+        ],
     }
     resource_dir = tmp_path / "resource" / "demo"
     resource_dir.mkdir(parents=True)
     page = resource_dir / "demo.md"
-    page.write_text("---\n" + yaml.safe_dump(meta, sort_keys=False) + "---\n# Demo\n", encoding="utf-8")
+    page.write_text(
+        "---\n" + yaml.safe_dump(meta, sort_keys=False) + "---\n# Demo\n", encoding="utf-8"
+    )
     monkeypatch.chdir(tmp_path)
 
     extract_metadata_module.concat_resource_yaml(
@@ -193,7 +199,9 @@ def test_concat_is_idempotent(extract_metadata_module, monkeypatch, tmp_path):
             }
         ],
     }
-    derived = _write("derived", "---\n" + yaml.safe_dump(derived_meta, sort_keys=False) + "---\n# Derived\n")
+    derived = _write(
+        "derived", "---\n" + yaml.safe_dump(derived_meta, sort_keys=False) + "---\n# Derived\n"
+    )
     monkeypatch.chdir(tmp_path)
 
     def _run():
