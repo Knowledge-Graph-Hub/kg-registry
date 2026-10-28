@@ -3547,6 +3547,42 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubtator
   product_url: https://pharos.nih.gov/graphql
+- category: Product
+  compression: targz
+  description: The ExCAPE chemogenomics dataset (over 70 million SAR data points integrating
+    ChEMBL and PubChem bioactivity annotations), distributed on Zenodo; version 2
+    fixed SMILES errors.
+  format: tsv
+  id: excape-db.dataset
+  name: ExCAPE Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: excape-db
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://doi.org/10.5281/zenodo.675987
+- category: Product
+  description: The Papyrus bioactivity dataset, distributed as versioned releases
+    on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
+    ligand-protein bioactivity records, compound structures, UniProt protein targets,
+    and precomputed molecular and protein descriptors, in tab-delimited and Parquet
+    formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside
+    the full all-quality dataset.
+  format: mixed
+  id: papyrus.dataset
+  name: Papyrus Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: papyrus
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: excape-db
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://doi.org/10.4121/16896406
 publications:
 - authors:
   - Zdrazil B
