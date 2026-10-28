@@ -55,10 +55,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chembl
   - relation_type: prov:hadPrimarySource
+    source: excape-db
+  - relation_type: prov:hadPrimarySource
     source: uniprot
-  secondary_source:
-  - relation_type: prov:wasDerivedFrom
-    source: pubchem
   product_url: https://doi.org/10.4121/16896406
 - category: ProcessProduct
   description: papyrus-scripts, a Python library and command-line tool for working with
@@ -109,7 +108,7 @@ There is no interactive web frontend; access is through the dataset files and th
 
 ## Upstream sources
 
-ChEMBL and ExCAPE-DB are the core bioactivity sources, and protein targets are mapped to UniProt. ExCAPE-DB itself aggregates ChEMBL and PubChem bioassay data, so PubChem-origin activities enter Papyrus through it. ExCAPE-DB does not currently have its own registry entry.
+ChEMBL and ExCAPE-DB are the core bioactivity sources, and protein targets are mapped to UniProt. ExCAPE-DB itself aggregates ChEMBL and PubChem bioassay data, so PubChem-origin activities enter Papyrus through it.
 
 ## Citation
 
