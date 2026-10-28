@@ -6815,6 +6815,24 @@ entries:
     source_path: resource/ngdc/ngdc.md
     status: valid
     warnings: []
+  resource/nice/nice.md#publication[0]#DOI:10.1016/j.tiv.2020.104916:
+    checked_at: '2026-10-28T19:58:55Z'
+    errors: []
+    fingerprint: f1f9bdc8abecf5485df06e38aad146fb5f0690676e1f65c43748f95d59a987f9
+    publication_index: 0
+    reference_id: DOI:10.1016/j.tiv.2020.104916
+    source_path: resource/nice/nice.md
+    status: valid
+    warnings: []
+  resource/nice/nice.md#publication[1]#DOI:10.3389/ftox.2022.987848:
+    checked_at: '2026-10-28T19:58:55Z'
+    errors: []
+    fingerprint: 757b2bb324e4035428d921a7d14dbcb923833ffdd5cec1d6573daca853f2a60f
+    publication_index: 1
+    reference_id: DOI:10.3389/ftox.2022.987848
+    source_path: resource/nice/nice.md
+    status: valid
+    warnings: []
   resource/node-normalizer/node-normalizer.md#publication[0]#DOI:10.48550/arXiv.2601.10008:
     checked_at: '2026-10-04T17:01:59Z'
     errors: []
