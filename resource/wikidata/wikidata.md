@@ -395,10 +395,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when
+    accessing file'
 - category: Product
   compression: gzip
   description: PubChem substance information in ASN.1 format

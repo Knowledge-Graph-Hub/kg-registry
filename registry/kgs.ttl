@@ -801,6 +801,7 @@ kgr:aop-wiki a schema1:DataSource ;
         kgr:aopwiki-rdf.ttl,
         kgr:aopwiki-rdf.void,
         kgr:biobricks-aopwiki.graph,
+        kgr:camera.explore,
         kgr:toxbai.app ;
     schema1:name "AOP-Wiki" ;
     skos:inScheme "adverse outcome pathways",
@@ -3015,6 +3016,25 @@ kgr:cameo a schema1:DataSource ;
     schema1:name "Cameo" ;
     skos:inScheme "stub" ;
     adms:status "Active" .
+
+kgr:camera a schema1:Aggregator ;
+    rdfs:label "CAMERA (Collection of Alternative Methods for Regulatory Application)" ;
+    dcterms:created "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "CAMERA (Collection of Alternative Methods for Regulatory Application) is a public, interactive NIH database and web interface that consolidates validated and qualified New Approach Methods (NAMs) for chemical safety testing into a single resource. It brings together validation study reports, data, protocols and SOPs, and regulatory guidance that were previously scattered across multiple agencies and organizations, and lets users filter by alternative method type, defined approach, test method endpoint, and regulatory guidance. CAMERA additionally uses standardized ontology vocabulary and large language models to identify validated NAMs that can measure the key events (KEs) of OECD-endorsed adverse outcome pathways (AOPs), linking methods to AOP-Wiki content to support next generation risk assessment. It currently holds 67 validated NAMs. CAMERA is supported by NICEATM and operates under the direction and oversight of the Interagency Coordinating Committee on the Validation of Alternative Methods (ICCVAM)." ;
+    dcterms:identifier "camera" ;
+    dcterms:isReferencedBy <doi:10.6084/m9.figshare.34809921.v1> ;
+    dcterms:license <https://www.usa.gov/government-works> ;
+    dcterms:modified "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:camera.explore,
+        kgr:camera.user-guide ;
+    schema1:name "CAMERA (Collection of Alternative Methods for Regulatory Application)" ;
+    skos:altLabel "Collection of Alternative Methods for Regulatory Application" ;
+    skos:inScheme "adverse outcome pathways",
+        "chemistry and biochemistry",
+        "environment",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://camera.od.nih.gov/> .
 
 kgr:campbell-biology a schema1:DataSource ;
     rdfs:label "Campbell Biology" ;
@@ -5377,7 +5397,8 @@ kgr:comptox-dashboard a schema1:Aggregator ;
     dcterms:isReferencedBy <https://doi.org/10.1186/s13321-017-0247-6> ;
     dcterms:license "U.S. Government Work (public domain)" ;
     dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:comptox-dashboard.ctx-api,
+    schema1:hasPart kgr:camera.explore,
+        kgr:comptox-dashboard.ctx-api,
         kgr:comptox-dashboard.downloads,
         kgr:comptox-dashboard.portal,
         kgr:comptox-dashboard.release-notes,
@@ -16002,7 +16023,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-28T14:15:36+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-28T14:41:09+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -25858,6 +25879,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:cacao.go-annotations,
         kgr:cacao.gowiki,
         kgr:cacao.portal,
+        kgr:camera.explore,
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
         kgr:drugshot.autorif,
@@ -34459,6 +34481,11 @@ kgr:cam-kp.sparql a schema1:ProgrammingInterface ;
     rdfs:label "CAM-KP SPARQL Endpoint" ;
     dcterms:description "SPARQL endpoint for complex semantic queries on the RDF triplestore containing causal activity models, ontologies, and integrated biomedical knowledge" ;
     schema1:url <https://stars-app.renci.org/cam/sparql> .
+
+kgr:camera.user-guide a schema1:DocumentationProduct ;
+    rdfs:label "CAMERA User Guide" ;
+    dcterms:description "CAMERA user guide, with help and FAQs for using the database and interface." ;
+    schema1:url <https://camera.od.nih.gov/user-guide> .
 
 kgr:campbell-biology.openlibrary a schema1:Product ;
     rdfs:label "Campbell Biology (Open Library record)" ;
@@ -56249,6 +56276,11 @@ kgr:cadd.snvs.grch38 a schema1:Product ;
     rdfs:label "CADD v1.7 Whole-Genome SNV Scores (GRCh38)" ;
     dcterms:description "CADD v1.7 precomputed raw and PHRED-scaled scores for all possible single nucleotide variants in the GRCh38 human reference genome, tab-separated and bgzip-compressed with a tabix index. A larger version including all annotations is also offered." ;
     schema1:url <https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz> .
+
+kgr:camera.explore a schema1:GraphicalInterface ;
+    rdfs:label "Explore NAMs" ;
+    dcterms:description "CAMERA Explore NAMs interface for searching and filtering validated and qualified New Approach Methods by alternative method type, defined approach, test method endpoint, chemical, and regulatory guidance, with links to validation study reports, data, protocols/SOPs, and the associated adverse outcome pathway key events. Chemical identity and data are drawn from the EPA CompTox Chemicals Dashboard." ;
+    schema1:url <https://camera.od.nih.gov/explore> .
 
 kgr:climatemodelskg.graph a schema1:GraphProduct ;
     rdfs:label "Climate Models KG Graph" ;

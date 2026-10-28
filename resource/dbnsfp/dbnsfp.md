@@ -245,10 +245,8 @@ products:
     source: dbnsfp
   product_url: https://usf.box.com/shared/static/ffwlywsat3q5ijypvunno3rg6steqfs8
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
+    accessing file'
 - category: ProgrammingInterface
   description: MyVariant.info REST API (v1) for variant query and annotation retrieval
     by HGVS id or rsid, with batch POST queries and field filtering. Returns JSON

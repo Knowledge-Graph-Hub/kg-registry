@@ -2332,12 +2332,8 @@ products:
   warnings:
   - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
     on 2026-06-02.
-  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
-    during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during
+    curation on 2026-06-02.
   - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
@@ -3525,13 +3521,11 @@ products:
   product_url: https://kghub.io/kg-covid-19/
   warnings:
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
-    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
-    kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
-    return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
+    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19
+    artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP
+    403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
+    accessing file'
 - category: GraphProduct
   description: Robokop KG (Automat)
   format: kgx-jsonl

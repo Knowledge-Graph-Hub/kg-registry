@@ -66,14 +66,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 500 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 500 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error when
+    accessing file'
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
     but this endpoint serves data, not Python source code.

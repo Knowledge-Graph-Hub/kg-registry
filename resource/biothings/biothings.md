@@ -54,10 +54,8 @@ products:
     source: biothings
   product_url: https://biothings.io/specs/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 204 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 204 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 204 error when
+    accessing file'
 - category: ProgrammingInterface
   connection_url: https://biothings.ncats.io/gtrx/query
   description: BioThings API for querying Genome-to-Treatment association records

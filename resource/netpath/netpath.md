@@ -40,10 +40,8 @@ products:
     source: netpath
   product_url: http://www.netpath.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 503 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when
+    accessing file'
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized

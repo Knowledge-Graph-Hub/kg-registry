@@ -1950,13 +1950,11 @@ products:
   product_url: https://kghub.io/kg-covid-19/
   warnings:
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
-    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
-    kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
-    return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
+    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19
+    artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP
+    403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
+    accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -2667,10 +2665,8 @@ products:
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
+    accessing file'
 publications:
 - authors:
   - Whirl-Carrillo M

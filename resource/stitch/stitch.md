@@ -1261,10 +1261,8 @@ products:
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
+    accessing file'
 - category: Product
   compression: targz
   description: Reduced tagger dictionary used by the Tagger web service, as tab-separated

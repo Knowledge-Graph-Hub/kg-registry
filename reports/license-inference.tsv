@@ -36,6 +36,7 @@ bioteque	KnowledgeGraph	inferred			https://depmap.org/portal/terms/	custom	achil
 biothings-explorer	Aggregator	no-upstream	https://opensource.org/licenses/Apache-2.0	permissive				
 brain-cell-kg	KnowledgeGraph	inferred			http://creativecommons.org/licenses/by/4.0/	permissive	cl	
 cam-kp	KnowledgeGraph	conflict	https://opensource.org/licenses/MIT	permissive	https://ctdbase.org/about/legal.jsp	custom	ctd	
+camera	Aggregator	conflict	https://www.usa.gov/government-works	public domain	https://aopwiki.org/	custom	aop-wiki	
 cancer-registry-kg	KnowledgeGraph	declared	https://www.hhs.gov/open/public-access-guiding-principles/index.html	custom	https://www.kcr.uky.edu/research/how.php	custom	kentucky-cancer-registry|louisiana-tumor-registry|naaccr	
 cardiokg	KnowledgeGraph	conflict	https://opensource.org/license/mit/	permissive	https://www.disgenet.com/Legal	custom	disgenet|kegg|ukbiobank	
 catalogue-of-life	KnowledgeGraph	declared	https://creativecommons.org/licenses/by/4.0/	permissive	https://creativecommons.org/publicdomain/zero/1.0/	permissive	gbif	

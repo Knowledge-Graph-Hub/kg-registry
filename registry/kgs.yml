@@ -9755,8 +9755,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -9939,6 +9937,26 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: aop-wiki
     product_url: http://toxbai.com/
+  - category: GraphicalInterface
+    description: CAMERA Explore NAMs interface for searching and filtering validated
+      and qualified New Approach Methods by alternative method type, defined approach,
+      test method endpoint, chemical, and regulatory guidance, with links to validation
+      study reports, data, protocols/SOPs, and the associated adverse outcome pathway
+      key events. Chemical identity and data are drawn from the EPA CompTox Chemicals
+      Dashboard.
+    format: http
+    id: camera.explore
+    name: Explore NAMs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: camera
+    - relation_type: prov:hadPrimarySource
+      source: aop-wiki
+    - relation_type: prov:hadPrimarySource
+      source: comptox-dashboard
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_url: https://camera.od.nih.gov/explore
   taxon:
   - NCBITaxon:9606
   version: '2.8'
@@ -11330,8 +11348,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product
@@ -13287,13 +13303,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -13522,8 +13536,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   synonyms:
@@ -24150,8 +24162,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
@@ -24294,8 +24304,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
@@ -31080,10 +31088,6 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
@@ -37766,8 +37770,6 @@ resources:
       source: biothings
     product_url: https://biothings.io/specs/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 204 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
@@ -42203,6 +42205,95 @@ resources:
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
+- activity_status: active
+  category: Aggregator
+  collection:
+  - nams
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://camera.od.nih.gov/contact
+    - contact_type: url
+      value: https://ntp.niehs.nih.gov/whatwestudy/niceatm
+    label: NTP Interagency Center for the Evaluation of Alternative Toxicological
+      Methods (NICEATM)
+  creation_date: '2026-10-28T00:00:00Z'
+  description: CAMERA (Collection of Alternative Methods for Regulatory Application)
+    is a public, interactive NIH database and web interface that consolidates validated
+    and qualified New Approach Methods (NAMs) for chemical safety testing into a single
+    resource. It brings together validation study reports, data, protocols and SOPs,
+    and regulatory guidance that were previously scattered across multiple agencies
+    and organizations, and lets users filter by alternative method type, defined approach,
+    test method endpoint, and regulatory guidance. CAMERA additionally uses standardized
+    ontology vocabulary and large language models to identify validated NAMs that
+    can measure the key events (KEs) of OECD-endorsed adverse outcome pathways (AOPs),
+    linking methods to AOP-Wiki content to support next generation risk assessment.
+    It currently holds 67 validated NAMs. CAMERA is supported by NICEATM and operates
+    under the direction and oversight of the Interagency Coordinating Committee on
+    the Validation of Alternative Methods (ICCVAM).
+  domains:
+  - toxicology
+  - adverse outcome pathways
+  - chemistry and biochemistry
+  - environment
+  homepage_url: https://camera.od.nih.gov/
+  id: camera
+  last_modified_date: '2026-10-28T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://www.usa.gov/government-works
+    label: U.S. Government Work (public domain)
+  name: CAMERA (Collection of Alternative Methods for Regulatory Application)
+  products:
+  - category: GraphicalInterface
+    description: CAMERA Explore NAMs interface for searching and filtering validated
+      and qualified New Approach Methods by alternative method type, defined approach,
+      test method endpoint, chemical, and regulatory guidance, with links to validation
+      study reports, data, protocols/SOPs, and the associated adverse outcome pathway
+      key events. Chemical identity and data are drawn from the EPA CompTox Chemicals
+      Dashboard.
+    format: http
+    id: camera.explore
+    name: Explore NAMs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: camera
+    - relation_type: prov:hadPrimarySource
+      source: aop-wiki
+    - relation_type: prov:hadPrimarySource
+      source: comptox-dashboard
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_url: https://camera.od.nih.gov/explore
+  - category: DocumentationProduct
+    description: CAMERA user guide, with help and FAQs for using the database and
+      interface.
+    format: http
+    id: camera.user-guide
+    name: CAMERA User Guide
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: camera
+    product_url: https://camera.od.nih.gov/user-guide
+  publications:
+  - authors:
+    - Alexander Cole
+    - Katie Needham
+    - Prince Osei-Akyeampong
+    - Tosho Agunloye
+    - Jeremiah Mensah
+    - Caleb DeGroote
+    - Helena T. Hogberg
+    doi: 10.6084/m9.figshare.34809921.v1
+    id: doi:10.6084/m9.figshare.34809921.v1
+    journal: figshare
+    preferred: true
+    title: 'CAMERA and AOP-Wiki: Building a NAMs Database with Integrated AOP Features
+      to Support Next Generation Risk Assessment'
+    year: '2026'
+  synonyms:
+  - Collection of Alternative Methods for Regulatory Application
 - activity_status: active
   category: DataSource
   contacts:
@@ -47995,8 +48086,6 @@ resources:
       source: cellphonedb
     product_url: https://www.cellphonedb.org/downloads
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
@@ -54072,8 +54161,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -54118,13 +54205,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -58779,8 +58864,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -59011,8 +59094,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
       when accessing file'
   - category: GraphProduct
@@ -84307,6 +84388,26 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: pubchem
     product_url: https://www.echemportal.org/echemportal/
+  - category: GraphicalInterface
+    description: CAMERA Explore NAMs interface for searching and filtering validated
+      and qualified New Approach Methods by alternative method type, defined approach,
+      test method endpoint, chemical, and regulatory guidance, with links to validation
+      study reports, data, protocols/SOPs, and the associated adverse outcome pathway
+      key events. Chemical identity and data are drawn from the EPA CompTox Chemicals
+      Dashboard.
+    format: http
+    id: camera.explore
+    name: Explore NAMs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: camera
+    - relation_type: prov:hadPrimarySource
+      source: aop-wiki
+    - relation_type: prov:hadPrimarySource
+      source: comptox-dashboard
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_url: https://camera.od.nih.gov/explore
   publications:
   - authors:
     - Antony J. Williams
@@ -89133,8 +89234,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -99110,8 +99209,6 @@ resources:
       source: dbnsfp
     product_url: https://usf.box.com/shared/static/ffwlywsat3q5ijypvunno3rg6steqfs8
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -99532,14 +99629,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
-      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -112066,10 +112161,6 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
@@ -129114,8 +129205,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -130870,8 +130959,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -130916,13 +131003,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -132104,8 +132189,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product
@@ -133017,8 +133100,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -133560,8 +133641,6 @@ resources:
       source: dsstoxdb
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -145969,8 +146048,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   publications:
@@ -162462,8 +162539,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
@@ -162477,8 +162552,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product
@@ -162622,8 +162695,6 @@ resources:
       source: fda-orphan-drugs
     product_url: https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions/designating-orphan-product-drugs-and-biological-products
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -179967,8 +180038,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product
@@ -186987,8 +187056,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
       when accessing file'
   - category: GraphicalInterface
@@ -193793,8 +193860,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -193839,13 +193904,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -196365,8 +196428,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -206578,8 +206639,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 502 error
-      when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
@@ -206776,11 +206835,6 @@ resources:
       source: gutmdisorder
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-literature-associations.xlsx
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
-      exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
-      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
-      Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx
@@ -206797,11 +206851,6 @@ resources:
       source: gutmdisorder
     product_url: http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
-      exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
-      (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80):
-      Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries
       exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx
@@ -228396,8 +228445,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -228442,13 +228489,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -232040,13 +232085,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -244754,12 +244797,10 @@ resources:
       source: imo-knowledge-graph
     product_url: https://developer.imohealth.com/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
       context layer, curation model, and use in grounding clinical AI.
@@ -250299,10 +250340,6 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
@@ -251497,8 +251534,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -262528,8 +262563,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product
@@ -263333,8 +263366,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -263663,8 +263694,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
       when accessing file'
   - category: ProcessProduct
@@ -263924,13 +263953,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -264385,7 +264412,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-10-28T14:15:36Z'
+  last_modified_date: '2026-10-28T14:41:09Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -267512,8 +267539,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product
@@ -268371,8 +268396,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   publications:
@@ -270468,8 +270491,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -275045,8 +275066,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
       when accessing file'
   publications:
@@ -286661,8 +286680,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -294673,10 +294690,6 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
@@ -298457,22 +298470,6 @@ resources:
       source: mirtarbase
     product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
-    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
-      to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max
-      retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
-      by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
-      failure (_ssl.c:1028)'')))'
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
@@ -298490,20 +298487,6 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
-  - category: Product
-    description: Dataset of microRNA target sites with detailed binding site information
-      in CSV format.
-    format: csv
-    id: mirtarbase.target_sites
-    name: miRTarBase Target Sites Dataset
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: mirtarbase
-    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
-    warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -298517,6 +298500,17 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
+  - category: Product
+    description: Dataset of microRNA target sites with detailed binding site information
+      in CSV format.
+    format: csv
+    id: mirtarbase.target_sites
+    name: miRTarBase Target Sites Dataset
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mirtarbase
+    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
+    warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
@@ -298534,20 +298528,6 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
-  - category: Product
-    description: Species-specific microRNA-target interaction datasets in CSV format
-      for human, mouse, rat, and 25+ other species.
-    format: csv
-    id: mirtarbase.species_mti
-    name: miRTarBase Species-Specific MTI Files
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: mirtarbase
-    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
-    warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -298561,6 +298541,17 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
+  - category: Product
+    description: Species-specific microRNA-target interaction datasets in CSV format
+      for human, mouse, rat, and 25+ other species.
+    format: csv
+    id: mirtarbase.species_mti
+    name: miRTarBase Species-Specific MTI Files
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mirtarbase
+    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
+    warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
@@ -298578,20 +298569,6 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
-  - category: Product
-    description: Curated datasets filtered for strong experimental evidence including
-      reporter assays, western blot, qPCR, and CLIP-Seq data.
-    format: csv
-    id: mirtarbase.strong_evidence
-    name: miRTarBase Strong Evidence Datasets
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: mirtarbase
-    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
-    warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -298605,6 +298582,17 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
+  - category: Product
+    description: Curated datasets filtered for strong experimental evidence including
+      reporter assays, western blot, qPCR, and CLIP-Seq data.
+    format: csv
+    id: mirtarbase.strong_evidence
+    name: miRTarBase Strong Evidence Datasets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mirtarbase
+    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
+    warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
@@ -298622,20 +298610,6 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
-  - category: Product
-    description: Archive of previous miRTarBase releases for reproducibility and historical
-      comparisons.
-    format: http
-    id: mirtarbase.archive
-    name: miRTarBase Previous Releases Archive
-    original_source:
-    - relation_type: prov:hadPrimarySource
-      source: mirtarbase
-    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
-    warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
@@ -298649,6 +298623,17 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
+  - category: Product
+    description: Archive of previous miRTarBase releases for reproducibility and historical
+      comparisons.
+    format: http
+    id: mirtarbase.archive
+    name: miRTarBase Previous Releases Archive
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: mirtarbase
+    product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
+    warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
@@ -298666,6 +298651,19 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
+    - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
+      to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max
+      retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
+      by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
+      failure (_ssl.c:1028)'')))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -304582,8 +304580,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 502 error
-      when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
@@ -305341,8 +305337,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -305387,13 +305381,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -320858,8 +320850,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 502 error
-      when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
@@ -321534,8 +321524,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -322917,8 +322905,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbigene
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
@@ -333357,9 +333343,6 @@ resources:
       source: noaa-ncei
     product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
@@ -334663,8 +334646,6 @@ resources:
       source: node-omics
     product_url: sftp://fms.biosino.org
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: No connection adapters were found for ''sftp://fms.biosino.org'''
     - The SFTP service requires a NODE account and was not tested when checked on
       2026-10-04. Host and ports are taken from the NODE help pages.
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
@@ -345197,8 +345178,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -345577,13 +345556,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -350730,13 +350707,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -355840,8 +355815,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
       when accessing file'
   publications:
@@ -360990,13 +360963,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -382081,13 +382052,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -402518,8 +402487,6 @@ resources:
       source: proteomexchange
     product_url: https://groups.google.com/forum/feed/proteomexchange/msgs/rss_v2_0.xml
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - Feed was not able to be retrieved when checked on 2026-10-04. The URL listed
       on the ProteomeXchange subscription page returned HTTP 404.
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
@@ -406063,8 +406030,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: pubchem
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 502 error
-      when accessing file'
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
@@ -407941,8 +407906,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product
@@ -409626,14 +409589,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
-      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -411404,8 +411365,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbigene
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
@@ -411951,6 +411910,26 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubtator
     product_url: https://pharos.nih.gov/graphql
+  - category: GraphicalInterface
+    description: CAMERA Explore NAMs interface for searching and filtering validated
+      and qualified New Approach Methods by alternative method type, defined approach,
+      test method endpoint, chemical, and regulatory guidance, with links to validation
+      study reports, data, protocols/SOPs, and the associated adverse outcome pathway
+      key events. Chemical identity and data are drawn from the EPA CompTox Chemicals
+      Dashboard.
+    format: http
+    id: camera.explore
+    name: Explore NAMs
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: camera
+    - relation_type: prov:hadPrimarySource
+      source: aop-wiki
+    - relation_type: prov:hadPrimarySource
+      source: comptox-dashboard
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    product_url: https://camera.od.nih.gov/explore
   publications:
   - authors:
     - Eric W Sayers
@@ -414249,8 +414228,6 @@ resources:
       source: rapdb
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
       to URL'
   - category: GraphProduct
@@ -421379,13 +421356,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -429427,8 +429402,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   publications:
@@ -445401,8 +445374,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   publications:
@@ -462642,8 +462613,6 @@ resources:
       source: ssurgo
     product_url: https://nrcs.app.box.com/v/soils
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -467583,8 +467552,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -467629,13 +467596,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -474368,16 +474333,14 @@ resources:
       source: tcdb
     product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
+    - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+      to URL
+    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
-    - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -475651,13 +475614,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -477749,8 +477710,6 @@ resources:
       source: tga-approved-terminology
     product_url: https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
       to URL'
   - category: DocumentationProduct
@@ -477764,8 +477723,6 @@ resources:
       source: tga-approved-terminology
     product_url: https://www.tga.gov.au/sites/default/files/2024-10/tga-approved-terminology-therapeutic-goods.pdf
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
       to URL'
   - category: GraphicalInterface
@@ -486394,8 +486351,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -503134,14 +503089,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
-      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -504156,8 +504109,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -513217,8 +513168,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
       when accessing file'
   - category: Product
@@ -529133,12 +529082,10 @@ resources:
       source: aao
     product_url: http://purl.obolibrary.org/obo/aao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -529279,12 +529226,10 @@ resources:
       source: adw
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Animal Natural History and Life History Ontology
@@ -531038,16 +530983,14 @@ resources:
       source: bio2rdf
     product_url: https://biosemantics.org/biosearch
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
+    - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+      to URL
+    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
       to URL: HTTPSConnectionPool(host=''biosemantics.org'', port=443): Max retries
       exceeded with url: /biosearch (Caused by NewConnectionError("HTTPSConnection(host=''biosemantics.org'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-    - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -531465,12 +531408,10 @@ resources:
       source: bootstrep
     product_url: http://purl.obolibrary.org/obo/bootstrep.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   publications: []
   use_instead:
   - go
@@ -532812,12 +532753,10 @@ resources:
       source: cmf
     product_url: http://purl.obolibrary.org/obo/cmf.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -532963,8 +532902,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -533271,12 +533208,10 @@ resources:
       source: dc_cl
     product_url: http://purl.obolibrary.org/obo/dc_cl.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - all
@@ -534104,8 +534039,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -534118,8 +534051,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -534197,12 +534128,10 @@ resources:
       source: epo
     product_url: http://purl.obolibrary.org/obo/epo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -534512,12 +534441,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -534528,12 +534455,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -536512,8 +536437,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbigene
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
@@ -537718,10 +537641,6 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: biogrid
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
@@ -537913,8 +537832,6 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 503 error
-      when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
@@ -537931,8 +537848,6 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 503 error
-      when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
@@ -537949,8 +537864,6 @@ resources:
       source: hprd
     product_url: http://www.hprd.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 503 error
-      when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
@@ -539660,8 +539573,6 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbigene
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
@@ -541033,11 +540944,6 @@ resources:
       source: inoh
     product_url: http://www.inoh.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
-      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
-      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
-      name resolution)"))'
     - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
@@ -543980,8 +543886,6 @@ resources:
       source: mirnao
     product_url: http://purl.obolibrary.org/obo/mirnao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -544250,15 +544154,13 @@ resources:
       source: mo
     product_url: http://purl.obolibrary.org/obo/mo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
-      to URL'
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -544700,8 +544602,6 @@ resources:
       source: netpath
     product_url: http://www.netpath.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error
       when accessing file'
   - category: Product
@@ -545216,12 +545116,10 @@ resources:
       source: nmr
     product_url: http://purl.obolibrary.org/obo/nmr.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -545499,8 +545397,6 @@ resources:
       source: ogi
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -545621,14 +545517,12 @@ resources:
       source: oio
     product_url: http://purl.obolibrary.org/obo/oio.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
-      to URL'
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -549750,8 +549644,6 @@ resources:
       source: uniprot
     product_url: https://kghub.io/kg-covid-19/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
@@ -550470,8 +550362,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   publications:
@@ -553020,8 +552910,6 @@ resources:
     product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -557262,8 +557150,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -557368,8 +557254,6 @@ resources:
       source: simap
     product_url: http://mips.helmholtz-muenchen.de/simap/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: Timeout connecting
-      to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
@@ -559715,8 +559599,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
       when accessing file'
   - category: Product

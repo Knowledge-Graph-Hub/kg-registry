@@ -1,6 +1,6 @@
 {
   "citations": {
-    "publication_entries_total": 1168,
+    "publication_entries_total": 1169,
     "publication_entries_with_issues": 44,
     "resources_with_citation_issues": 33,
     "resources_without_publications": 376,
@@ -12,8 +12,8 @@
     "missing_last_modified_date": 0,
     "modified_after_creation": 1038,
     "stale_over_365_days": 0,
-    "unchanged_since_creation": 158,
-    "with_both_dates": 1196
+    "unchanged_since_creation": 159,
+    "with_both_dates": 1197
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -704,6 +704,7 @@
       "cacao",
       "cadd",
       "cam-kp",
+      "camera",
       "campbell-biology",
       "candida-genome-database",
       "canvas",
@@ -1975,6 +1976,9 @@
       "cam-kp.automat",
       "cam-kp.documentation",
       "cam-kp.go-cams",
+      "camera",
+      "camera.explore",
+      "camera.user-guide",
       "campbell-biology",
       "campbell-biology.openlibrary",
       "cancer-genome-interpreter",
@@ -7894,6 +7898,7 @@
       "cadd",
       "cam-kp",
       "cameo",
+      "camera",
       "campbell-biology",
       "cancer-genome-interpreter",
       "cancer-registry-kg",
@@ -9059,6 +9064,7 @@
       "cabi-isc",
       "cadd",
       "cameo",
+      "camera",
       "campbell-biology",
       "cancer-genome-interpreter",
       "cancer-registry-kg",
@@ -10382,6 +10388,7 @@
       "cacao",
       "cadd",
       "cameo",
+      "camera",
       "campbell-biology",
       "cancer-genome-interpreter",
       "cancer-registry-kg",
@@ -12472,6 +12479,8 @@
       "cam-kp.go-cams",
       "cam-kp.reactome-cams",
       "cam-kp.sparql",
+      "camera.explore",
+      "camera.user-guide",
       "campbell-biology.openlibrary",
       "cancer-genome-interpreter.api",
       "cancer-genome-interpreter.clinicalkg.graph",
@@ -17329,6 +17338,7 @@
       "cadd",
       "cam-kp",
       "cameo",
+      "camera",
       "campbell-biology",
       "cancer-genome-interpreter",
       "cancer-registry-kg",
@@ -19089,6 +19099,7 @@
       "brain-cell-kg",
       "cadd",
       "cameo",
+      "camera",
       "cell-taxonomy",
       "cellcollective",
       "cellml",
@@ -19229,7 +19240,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-10-28T14:23:14Z",
+  "generated_at": "2026-10-28T14:48:55Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 167,
     "with_evaluation_page": 125,
@@ -19237,40 +19248,40 @@
   },
   "links": {
     "broken_urls": 258,
-    "cache_hits": 5717,
+    "cache_hits": 5719,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 5461,
-    "live_checked_urls": 2,
+    "healthy_urls": 5464,
+    "live_checked_urls": 3,
     "mode": "live",
-    "total_unique_urls": 5719,
+    "total_unique_urls": 5722,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 17,
     "missing_original_source": 0,
     "missing_product_url": 21,
-    "total": 5175,
+    "total": 5177,
     "with_retrieval_warning": 56
   },
-  "resource_count": 1196,
+  "resource_count": 1197,
   "resources": {
     "contacts_with_org_connection": 271,
-    "contacts_without_org_connection": 797,
+    "contacts_without_org_connection": 798,
     "missing_contacts": 128,
     "missing_description": 0,
-    "missing_fairsharing_id": 1177,
+    "missing_fairsharing_id": 1178,
     "missing_homepage_url": 1,
-    "missing_infores_id": 926,
+    "missing_infores_id": 927,
     "missing_license": 430,
-    "missing_repository": 626,
+    "missing_repository": 627,
     "status_counts": {
-      "active": 1038,
+      "active": 1039,
       "inactive": 136,
       "orphaned": 15,
       "unresponsive": 7
     },
     "stub_count": 1,
-    "total": 1196,
+    "total": 1197,
     "with_broken_links": 168,
     "with_citation_issues": 33,
     "without_products": 10,
@@ -19279,7 +19290,7 @@
   "scoring": {
     "average_score": 6.83,
     "median_score": 7.0,
-    "resources_with_issues": 1155,
+    "resources_with_issues": 1156,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],

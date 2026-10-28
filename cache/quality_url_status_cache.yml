@@ -4706,11 +4706,13 @@ http://toxbai.com/:
   checked_at: '2026-10-28T14:23:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://toxbai.com/downloads/manual/TOXBAI_Userguide_beta_EN.pdf:
   checked_at: '2026-10-28T14:23:17Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 http://toxico.nibiohn.go.jp/:
   checked_at: '2026-10-19T21:36:30Z'
@@ -8190,6 +8192,21 @@ https://cam-kp-api-dev.renci.org/1.2.0/query:
   ok: false
   source: cache
   status_code: null
+https://camera.od.nih.gov/:
+  checked_at: '2026-10-28T14:48:59Z'
+  error: null
+  ok: true
+  status_code: 200
+https://camera.od.nih.gov/explore:
+  checked_at: '2026-10-28T14:48:59Z'
+  error: null
+  ok: true
+  status_code: 200
+https://camera.od.nih.gov/user-guide:
+  checked_at: '2026-10-28T14:48:59Z'
+  error: null
+  ok: true
+  status_code: 200
 https://cancer-rates.com/ky/?datasource=mort&std=us2000:
   checked_at: '2026-10-19T21:37:16Z'
   error: null

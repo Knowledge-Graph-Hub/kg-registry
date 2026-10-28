@@ -1521,10 +1521,8 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when
+    accessing file'
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,
     genetic, protein, and karyotype biomarker records.
@@ -3397,10 +3395,8 @@ products:
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
+    accessing file'
 - category: Product
   description: Metadata for the profiled drugs and small molecules indexed by pert_id,
     including LINCS small molecule IDs, names, SMILES, InChIKeys, molecular formulas,

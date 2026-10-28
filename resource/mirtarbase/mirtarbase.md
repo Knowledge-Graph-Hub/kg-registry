@@ -36,36 +36,33 @@ products:
     source: mirtarbase
   product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-03-08_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
   - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when
+    accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-    without response''))'
 - category: Product
   description: Dataset of microRNA target sites with detailed binding site information
     in CSV format.
@@ -81,32 +78,29 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
   - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when
+    accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-    without response''))'
 - category: Product
   description: Species-specific microRNA-target interaction datasets in CSV format
     for human, mouse, rat, and 25+ other species.
@@ -118,36 +112,33 @@ products:
     source: mirtarbase
   product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
   - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when
+    accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-    without response''))'
 - category: Product
   description: Curated datasets filtered for strong experimental evidence including
     reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -159,36 +150,33 @@ products:
     source: mirtarbase
   product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-25_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
   - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when
+    accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-    without response''))'
 - category: Product
   description: Archive of previous miRTarBase releases for reproducibility and historical
     comparisons.
@@ -200,36 +188,33 @@ products:
     source: mirtarbase
   product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-13_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
-    exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
+    URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
+    with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
   - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when
+    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when
+    accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-    without response''))'
 - description: The MechRepoNet knowledge graph in its original format
   format: mixed
   id: mechreponet.kg

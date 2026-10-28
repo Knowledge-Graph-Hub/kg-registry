@@ -73,10 +73,8 @@ products:
     source: fda-orphan-drugs
   product_url: https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions/designating-orphan-product-drugs-and-biological-products
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
+    accessing file'
 - category: ProgrammingInterface
   description: MyChem.info REST API (v1) for querying chemical and drug annotation
     records by keyword, field or identifier (InChIKey, ChEMBL, DrugBank, PubChem,

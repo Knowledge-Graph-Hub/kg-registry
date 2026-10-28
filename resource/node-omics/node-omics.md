@@ -64,8 +64,6 @@ products:
   warnings:
   - The SFTP service requires a NODE account and was not tested when checked on 2026-10-04.
     Host and ports are taken from the NODE help pages.
-  - 'File was not able to be retrieved when checked on 2026-10-27: Error connecting
-    to URL: No connection adapters were found for ''sftp://fms.biosino.org'''
   - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: No connection adapters were found for ''sftp://fms.biosino.org'''
 - category: GraphicalInterface

@@ -94,6 +94,7 @@ bv-brc	Bacterial and Viral Bioinformatics Resource Center	DataSource	https://www
 cabi-isc	CABI Invasive Species Compendium	DataSource	https://www.cabidigitallibrary.org/product/qi	resource/cabi-isc/cabi-isc.md
 cadd	CADD	DataSource	https://cadd.gs.washington.edu/	resource/cadd/cadd.md
 cameo	Cameo	DataSource		resource/cameo/cameo.md
+camera	CAMERA (Collection of Alternative Methods for Regulatory Application)	Aggregator	https://camera.od.nih.gov/	resource/camera/camera.md
 campbell-biology	Campbell Biology	DataSource	https://openlibrary.org/isbn/9780134093413	resource/campbell-biology/campbell-biology.md
 cancer-genome-interpreter	Cancer Genome Interpreter	DataSource	https://www.cancergenomeinterpreter.org/	resource/cancer-genome-interpreter/cancer-genome-interpreter.md
 cancer-registry-kg	Cancer Registry Knowledge Graph	KnowledgeGraph	https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/	resource/cancer-registry-kg/cancer-registry-kg.md
