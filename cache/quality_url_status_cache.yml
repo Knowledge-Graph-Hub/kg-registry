@@ -11192,6 +11192,7 @@ https://doi.org/10.4121/16896406:
     port=443) at 0x7e6be6fd2d50>, ''Connection to data.4tu.nl timed out. (connect
     timeout=8.0)''))'
   ok: false
+  source: cache
   status_code: null
 https://doi.org/10.48373/59AV-7504:
   checked_at: '2026-10-19T21:37:42Z'
@@ -11275,6 +11276,7 @@ https://doi.org/10.5281/zenodo.675987:
   checked_at: '2026-10-28T16:40:12Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://doi.org/10.5281/zenodo.6814507:
   checked_at: '2026-10-19T21:37:44Z'
@@ -16568,6 +16570,7 @@ https://github.com/OlivierBeq/Papyrus-scripts:
   checked_at: '2026-10-28T16:40:12Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/OmniSearch/ncro:
   checked_at: '2026-10-19T21:38:15Z'
@@ -21988,6 +21991,16 @@ https://ice.ntp.niehs.nih.gov/DATASETDESCRIPTION:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://ice.ntp.niehs.nih.gov/Tools:
+  checked_at: '2026-10-28T20:25:10Z'
+  error: null
+  ok: true
+  status_code: 200
+https://ice.ntp.niehs.nih.gov/search:
+  checked_at: '2026-10-28T20:25:10Z'
+  error: null
+  ok: true
   status_code: 200
 https://iconclass.org/:
   checked_at: '2026-10-19T21:38:40Z'
@@ -29614,6 +29627,7 @@ https://solr.ideaconsult.net/search/excape/:
   checked_at: '2026-10-28T16:40:12Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://sourceforge.net/projects/mged/:
   checked_at: '2026-10-19T21:40:01Z'

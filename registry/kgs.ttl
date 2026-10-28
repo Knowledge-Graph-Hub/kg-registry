@@ -5404,7 +5404,9 @@ kgr:comptox-dashboard a schema1:Aggregator ;
         kgr:comptox-dashboard.downloads,
         kgr:comptox-dashboard.portal,
         kgr:comptox-dashboard.release-notes,
-        kgr:echemportal.portal ;
+        kgr:echemportal.portal,
+        kgr:nice.data,
+        kgr:nice.search ;
     schema1:name "CompTox Chemicals Dashboard" ;
     skos:altLabel "CompTox Chemistry Dashboard" ;
     skos:inScheme "cheminformatics",
@@ -7893,7 +7895,9 @@ kgr:dsstoxdb a schema1:DataSource ;
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
         kgr:molepro.graph.nodes,
-        kgr:molepro.trapi ;
+        kgr:molepro.trapi,
+        kgr:nice.data,
+        kgr:nice.search ;
     schema1:identifier "dsstoxdb" ;
     schema1:name "Distributed Structure-Searchable Toxicity (DSSTox) Database" ;
     skos:inScheme "biomedical",
@@ -14410,26 +14414,6 @@ kgr:icd11 a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://icd.who.int/en> .
 
-kgr:ice a schema1:DataSource ;
-    rdfs:label "ICE (Integrated Chemical Environment)" ;
-    dcterms:created "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Integrated Chemical Environment (ICE) is a resource developed by the NTP Interagency Center for the Evaluation of Alternative Toxicological Methods (NICEATM), part of the National Toxicology Program (NTP) at the National Institute of Environmental Health Sciences (NIEHS). ICE provides curated chemical data, in vitro assay data, and computational tools and workflows that support chemical safety assessment and toxicological evaluation, including predictions of in vivo toxicity from in vitro and in silico data. It is intended to help scientists develop and evaluate new approach methodologies (NAMs) for chemical hazard characterization." ;
-    dcterms:identifier "ice" ;
-    dcterms:isReferencedBy <https://doi.org/10.1016/j.tiv.2020.104916>,
-        <https://doi.org/10.3389/ftox.2022.987848> ;
-    dcterms:license "U.S. Government Work (public domain)" ;
-    dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:biobricks-ice.graph,
-        kgr:ice.data ;
-    schema1:name "ICE (Integrated Chemical Environment)" ;
-    skos:inScheme "biomedical",
-        "chemistry and biochemistry",
-        "environment",
-        "environmental exposure",
-        "toxicology" ;
-    adms:status "Active" ;
-    foaf:homepage <https://ice.ntp.niehs.nih.gov/> .
-
 kgr:icees-kg a schema1:KnowledgeGraph ;
     rdfs:label "Exposures KP (icees-kg)" ;
     dcterms:created "2025-11-05T00:00:00+00:00"^^xsd:dateTime ;
@@ -16046,7 +16030,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-28T16:33:40+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-10-28T20:14:21+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -20218,6 +20202,32 @@ kgr:nibrs a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://cde.ucr.cjis.gov/> .
 
+kgr:nice a schema1:DataSource ;
+    rdfs:label "NICE (NIH Integrated Chemical Environment)" ;
+    dcterms:created "2026-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "NICE, the NIH Integrated Chemical Environment (formerly the Integrated Chemical Environment, ICE), is a public web resource developed by the NTP Interagency Center for the Evaluation of Alternative Toxicological Methods (NICEATM), part of the National Toxicology Program (NTP) at the National Institute of Environmental Health Sciences (NIEHS). It brings together curated chemical characterization and physicochemical data, curated in vitro and high-throughput screening (cHTS) assay data, and reference in vivo toxicity datasets, together with computational tools and workflows (including in vitro to in vivo extrapolation, a dose-response Curve Surfer, and physiologically based pharmacokinetic modeling). NICE integrates data from established sources, including ToxCast and Tox21 high-throughput screening data, chemical identity and property data from the EPA CompTox Chemicals Dashboard and DSSTox, and OPERA-predicted physicochemical and ADME properties. It is designed to help scientists develop, evaluate, and apply new approach methodologies (NAMs) for chemical hazard characterization and next generation risk assessment." ;
+    dcterms:identifier "nice" ;
+    dcterms:isReferencedBy <https://doi.org/10.1016/j.tiv.2020.104916>,
+        <https://doi.org/10.3389/ftox.2022.987848> ;
+    dcterms:license "U.S. Government Work (public domain)" ;
+    dcterms:modified "2026-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobricks-ice.graph,
+        kgr:nice.data,
+        kgr:nice.search,
+        kgr:nice.tools ;
+    schema1:name "NICE (NIH Integrated Chemical Environment)" ;
+    skos:altLabel "ICE",
+        "Integrated Chemical Environment",
+        "NIH Integrated Chemical Environment" ;
+    skos:inScheme "biomedical",
+        "cheminformatics",
+        "chemistry and biochemistry",
+        "environment",
+        "environmental exposure",
+        "toxicology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ice.ntp.niehs.nih.gov/> .
+
 kgr:nif_cell a schema1:Ontology ;
     rdfs:label "NIF Cell" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -22607,7 +22617,9 @@ kgr:opera a schema1:DataSource ;
         <https://doi.org/10.1186/s13321-024-00814-3> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:modified "2026-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:opera.application,
+    schema1:hasPart kgr:nice.data,
+        kgr:nice.search,
+        kgr:opera.application,
         kgr:opera.repository ;
     schema1:name "OPERA (OPEn structure-activity/property Relationship App)" ;
     skos:inScheme "cheminformatics",
@@ -30306,6 +30318,8 @@ kgr:tox21 a schema1:DataSource ;
     schema1:hasPart kgr:biobricks-tox21.graph,
         kgr:cebs.dtt-data-collections,
         kgr:comptox-dashboard.portal,
+        kgr:nice.data,
+        kgr:nice.search,
         kgr:tox21.data ;
     schema1:name "Tox21 (Toxicology in the 21st Century)" ;
     skos:inScheme "biomedical",
@@ -30349,6 +30363,8 @@ kgr:toxcast a schema1:DataSource ;
         kgr:comptox-dashboard.ctx-api,
         kgr:comptox-dashboard.downloads,
         kgr:comptox-dashboard.portal,
+        kgr:nice.data,
+        kgr:nice.search,
         kgr:toxbai.app,
         kgr:toxcast.api,
         kgr:toxcast.downloads,
@@ -40844,11 +40860,6 @@ kgr:icd11.browser a schema1:GraphicalInterface ;
     dcterms:description "Official ICD-11 browser for the latest released mortality and morbidity classification." ;
     schema1:url <https://icd.who.int/browse/latest-release/mms/en> .
 
-kgr:ice.data a schema1:Product ;
-    rdfs:label "ICE Data" ;
-    dcterms:description "The ICE data downloads and query interface, providing access to curated chemical data, in vitro assay data, and reference toxicity datasets, together with dataset descriptions and computational tools/workflows for chemical safety evaluation." ;
-    schema1:url <https://ice.ntp.niehs.nih.gov/DATASETDESCRIPTION> .
-
 kgr:iceo.owl a schema1:OntologyProduct ;
     rdfs:label "iceo.owl" ;
     dcterms:description "Integrative and Conjugative Element Ontology in OWL format" ;
@@ -44072,6 +44083,11 @@ kgr:nibrs.cde a schema1:GraphicalInterface ;
     rdfs:label "FBI Crime Data Explorer" ;
     dcterms:description "The FBI Crime Data Explorer (CDE) is the public platform for accessing, exploring, and downloading NIBRS incident-level crime data reported by law enforcement agencies across the United States." ;
     schema1:url <https://cde.ucr.cjis.gov/> .
+
+kgr:nice.tools a schema1:GraphicalInterface ;
+    rdfs:label "NICE Tools" ;
+    dcterms:description "NICE computational tools and workflows, including in vitro to in vivo extrapolation (IVIVE), a dose-response Curve Surfer, and physiologically based pharmacokinetic (PBPK) modeling, for applying NICE data to chemical safety evaluation." ;
+    schema1:url <https://ice.ntp.niehs.nih.gov/Tools> .
 
 kgr:nif_cell.ttl a schema1:OntologyProduct ;
     rdfs:label "NIF Cell (Turtle)" ;
@@ -57281,6 +57297,16 @@ kgr:ncbi-protein.web a schema1:GraphicalInterface ;
     rdfs:label "NCBI Protein Search" ;
     dcterms:description "Entrez search interface for NCBI Protein sequence records, with links to Gene, Nucleotide, Structure, and Conserved Domains." ;
     schema1:url <https://www.ncbi.nlm.nih.gov/protein/> .
+
+kgr:nice.data a schema1:Product ;
+    rdfs:label "NICE Data" ;
+    dcterms:description "The NICE data downloads and dataset descriptions, providing access to curated chemical data, curated in vitro and high-throughput screening (cHTS) assay data, physicochemical and ADME property data, and reference in vivo toxicity datasets." ;
+    schema1:url <https://ice.ntp.niehs.nih.gov/DATASETDESCRIPTION> .
+
+kgr:nice.search a schema1:GraphicalInterface ;
+    rdfs:label "NICE Search" ;
+    dcterms:description "NICE Search, the interactive query interface for exploring curated chemical, in vitro and high-throughput screening, physicochemical, and reference in vivo toxicity data by chemical, assay, endpoint, and mechanistic target, with filtering and export." ;
+    schema1:url <https://ice.ntp.niehs.nih.gov/search> .
 
 kgr:obo-db-ingest.bigg.metabolite.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "bigg.metabolite SSSOM" ;

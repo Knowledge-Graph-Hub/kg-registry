@@ -460,7 +460,6 @@ ibkh,active,PASS
 icd10,active,PASS
 icd10cm,active,PASS
 icd11,active,PASS
-ice,active,PASS
 icees-kg,active,PASS
 iceo,active,PASS
 icgc,active,PASS
@@ -650,6 +649,7 @@ nhanes,active,PASS
 nhpid,active,PASS
 nhpn,active,PASS
 nibrs,active,PASS
+nice,active,PASS
 nifc,active,PASS
 nih-era,active,PASS
 nihreporter,active,PASS

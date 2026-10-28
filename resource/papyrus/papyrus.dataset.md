@@ -19,5 +19,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: uniprot
 product_url: https://doi.org/10.4121/16896406
+warnings:
+- File was not able to be retrieved when checked on 2026-10-28_ Timeout connecting
+  to URL
 layout: product_detail
 ---

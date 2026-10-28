@@ -410,7 +410,6 @@ iana-mediatype	IANA Media Types	DataSource	https://www.iana.org/assignments/medi
 iao	Information Artifact Ontology	Ontology	https://github.com/information-artifact-ontology/IAO/	resource/iao/iao.md
 ibkh	integrative Biomedical Knowledge Hub	KnowledgeGraph	https://pubmed.ncbi.nlm.nih.gov/37020958/	resource/ibkh/ibkh.md
 icd11	ICD-11	DataSource	https://icd.who.int/en	resource/icd11/icd11.md
-ice	ICE (Integrated Chemical Environment)	DataSource	https://ice.ntp.niehs.nih.gov/	resource/ice/ice.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
 icgc	ICGC	DataSource	https://www.icgc-argo.org/	resource/icgc/icgc.md
 ich-m5	ICH M5 controlled vocabularies	DataModel	https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-data-elements-standards-drug-dictionaries	resource/ich-m5/ich-m5.md
@@ -578,6 +577,7 @@ nhanes	NHANES (National Health and Nutrition Examination Survey)	DataSource	http
 nhpid	Natural Health Products Ingredients Database	DataSource	https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng	resource/nhpid/nhpid.md
 nhpn	National Highway Planning Network	DataSource	https://www.fhwa.dot.gov/planning/processes/tools/nhpn/	resource/nhpn/nhpn.md
 nibrs	National Incident-Based Reporting System	DataSource	https://cde.ucr.cjis.gov/	resource/nibrs/nibrs.md
+nice	NICE (NIH Integrated Chemical Environment)	DataSource	https://ice.ntp.niehs.nih.gov/	resource/nice/nice.md
 nif_cell	NIF Cell	Ontology	http://neuinfo.org/	resource/nif_cell/nif_cell.md
 nif_dysfunction	NIF Dysfunction	Ontology	http://neuinfo.org/	resource/nif_dysfunction/nif_dysfunction.md
 nif_grossanatomy	NIF Gross Anatomy	Ontology	http://neuinfo.org/	resource/nif_grossanatomy/nif_grossanatomy.md

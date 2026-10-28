@@ -18,7 +18,7 @@ babel	Aggregator	conflict	https://opensource.org/licenses/MIT	permissive	https:/
 bio101	KnowledgeGraph	conflict	https://creativecommons.org/licenses/by-nc-sa/3.0/	non-commercial	https://www.pearson.com/en-us/legal-information/terms-of-use.html	custom	campbell-biology	
 bio2rdf	Aggregator	no-upstream	https://creativecommons.org/licenses/by/3.0/	permissive				
 biobricks-aopwiki	KnowledgeGraph	inferred			https://aopwiki.org/	custom	aop-wiki	
-biobricks-ice	KnowledgeGraph	declared	https://opensource.org/licenses/MIT	permissive	U.S. Government Work (public domain)	public domain	ice	
+biobricks-ice	KnowledgeGraph	declared	https://opensource.org/licenses/MIT	permissive	U.S. Government Work (public domain)	public domain	nice	
 biobricks-mesh	KnowledgeGraph	inferred			https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html	permissive	mesh	
 biobricks-pubchem-annotations	KnowledgeGraph	inferred			https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubchem	
 biobricks-tox21	KnowledgeGraph	inferred			https://www.usa.gov/government-works	public domain	tox21	

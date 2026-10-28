@@ -67,6 +67,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
+  - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
     30+ environmental and geospatial data layers accessible through SPARQL endpoint
