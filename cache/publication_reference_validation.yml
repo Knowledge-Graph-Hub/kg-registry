@@ -5527,6 +5527,15 @@ entries:
     source_path: resource/labeledin/labeledin.md
     status: valid
     warnings: []
+  resource/labeledin/labeledin.md#publication[1]#DOI:10.1093/database/bav016:
+    checked_at: '2026-11-10T17:05:11Z'
+    errors: []
+    fingerprint: 027f389c0c7ade8fb5d7823267a4f0f86198d3f14c48777d30e4b8568be0e0bb
+    publication_index: 1
+    reference_id: DOI:10.1093/database/bav016
+    source_path: resource/labeledin/labeledin.md
+    status: valid
+    warnings: []
   resource/labo/labo.md#publication[0]#DOI:10.5281/zenodo.6522019:
     checked_at: '2026-08-06T18:17:57Z'
     errors: []
