@@ -1,7 +1,8 @@
 ---
 category: Product
-description: Monthly ROR registry data dump available in JSON and CSV formats.
-format: json
+description: Full ROR registry data dump, released on Zenodo at least monthly as a
+  zip containing JSON (format of record) and CSV files in ROR Schema 2.x.
+format: mixed
 id: ror.data-dump
 name: ROR Data Dump
 original_source:

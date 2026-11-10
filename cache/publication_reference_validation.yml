@@ -9288,6 +9288,15 @@ entries:
     source_path: resource/ro/ro.md
     status: valid
     warnings: []
+  resource/ror/ror.md#publication[0]#DOI:10.6087/kcse.192:
+    checked_at: '2026-11-10T17:04:09Z'
+    errors: []
+    fingerprint: 1efc2a78f168951b947e189153761520ebadf217504d1d29c5050f0554c395d0
+    publication_index: 0
+    reference_id: DOI:10.6087/kcse.192
+    source_path: resource/ror/ror.md
+    status: valid
+    warnings: []
   resource/rs/rs.md#publication[0]#PMID:24267899:
     checked_at: '2026-08-06T18:18:55Z'
     errors: []
