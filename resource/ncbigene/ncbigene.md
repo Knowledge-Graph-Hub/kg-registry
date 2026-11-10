@@ -5156,6 +5156,26 @@ products:
   product_file_size: 1261625948
   product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
   repository: https://github.com/monarch-initiative/phenio
+- category: GraphicalInterface
+  description: Archived snapshot of the DOAF web interface (doa.nubic.northwestern.edu),
+    which supported gene-to-disease and disease-to-gene queries, batch queries, and
+    download of the DO-gene mappings. The live site is offline.
+  format: http
+  id: doaf.web
+  name: DOAF web interface (archived)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: doaf
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:used
+    source: doid
+  - relation_type: prov:used
+    source: bioportal
+  product_url: https://web.archive.org/web/20160601045226/http://doa.nubic.northwestern.edu/pages/about.php
+  warnings:
+  - The original site at http://doa.nubic.northwestern.edu did not resolve when checked
+    on 2026-11-10; the last Internet Archive captures date from 2016.
 publications:
 - authors:
   - Donna Maglott

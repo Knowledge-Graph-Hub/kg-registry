@@ -2545,9 +2545,9 @@ entries:
     status: valid
     warnings: []
   resource/doaf/doaf.md#publication[0]#DOI:10.1371/journal.pone.0049686:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-11-10T16:59:00Z'
     errors: []
-    fingerprint: 81b2665fba1a7788168feefb6f91bf4cee35cbaf2fdeac9056d20c58216ff1ad
+    fingerprint: 6e7bfc95855c35636740b176c35c3b416299f6ed1437facb74538581b68cefed
     publication_index: 0
     reference_id: DOI:10.1371/journal.pone.0049686
     source_path: resource/doaf/doaf.md
