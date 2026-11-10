@@ -1,7 +1,7 @@
 ---
 category: DocumentationProduct
-description: List of PGO Version 1.0 core concepts defining essential entities for
-  pharmaceutical R&D data exchange
+description: Markdown list of the PGO Version 1.0 core concepts defining essential
+  entities for pharmaceutical R&D data exchange
 format: txt
 id: pistoia-pgo.core_concepts
 name: PGO Core Concepts (Version 1.0)

@@ -8393,6 +8393,15 @@ entries:
     source_path: resource/pirsf/pirsf.md
     status: valid
     warnings: []
+  resource/pistoia-pgo/pistoia-pgo.md#publication[0]#url:https://ceur-ws.org/Vol-4196/paper_3.pdf:
+    checked_at: '2026-11-10T17:07:39Z'
+    errors: []
+    fingerprint: d9dc4ca83095a3824cbbd896daec45269a3840ab9b3d65d1fc2a8183ad97badb
+    publication_index: 0
+    reference_id: url:https://ceur-ws.org/Vol-4196/paper_3.pdf
+    source_path: resource/pistoia-pgo/pistoia-pgo.md
+    status: valid
+    warnings: []
   resource/plana/plana.md#publication[0]#PMID:34318308:
     checked_at: '2026-08-06T18:18:38Z'
     errors: []
