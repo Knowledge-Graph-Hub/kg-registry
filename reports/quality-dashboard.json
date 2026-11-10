@@ -1,18 +1,18 @@
 {
   "citations": {
-    "publication_entries_total": 1171,
+    "publication_entries_total": 1177,
     "publication_entries_with_issues": 44,
     "resources_with_citation_issues": 33,
-    "resources_without_publications": 377,
+    "resources_without_publications": 374,
     "validation_errors": 2,
     "validation_warnings": 69
   },
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 1038,
+    "modified_after_creation": 1039,
     "stale_over_365_days": 0,
-    "unchanged_since_creation": 162,
+    "unchanged_since_creation": 161,
     "with_both_dates": 1200
   },
   "detail_lists": {
@@ -841,6 +841,7 @@
       "disdriv",
       "distild",
       "dmd",
+      "doaf",
       "doco",
       "dog10k",
       "doid",
@@ -943,6 +944,7 @@
       "gdelt",
       "gecko",
       "genbank",
+      "gencode",
       "gene-expression-atlas-okn",
       "gene-expression-omnibus",
       "gene2phenotype",
@@ -1512,8 +1514,10 @@
       "activedriverdb.downloads",
       "activedriverdb.portal",
       "acukg",
+      "acukg.acupoint-vocabulary",
       "acukg.csv",
       "acukg.json",
+      "acukg.mesh-conditions",
       "acukg.rdf",
       "ado",
       "ado.kg-bioportal",
@@ -2751,6 +2755,7 @@
       "dmd.terminology-server",
       "doaf",
       "doaf.framework-publication",
+      "doaf.web",
       "docm",
       "docm.data.sql",
       "docm.variants.tsv",
@@ -3065,6 +3070,8 @@
       "epa-sdwis.reports",
       "epa-srs",
       "epa-srs.about",
+      "epa-srs.exchange_network",
+      "epa-srs.rest_api",
       "epa-srs.search",
       "epa-srs.widget",
       "epa-ucmr",
@@ -3425,8 +3432,18 @@
       "gencc.downloads",
       "gencc.search_interface",
       "gencode",
+      "gencode.docs",
+      "gencode.ftp",
+      "gencode.human.gff3",
+      "gencode.human.grch37.gtf",
       "gencode.human.gtf",
+      "gencode.human.metadata.hgnc",
+      "gencode.human.transcripts",
+      "gencode.human.translations",
+      "gencode.mouse.gff3",
       "gencode.mouse.gtf",
+      "gencode.mouse.transcripts",
+      "gencode.mouse.translations",
       "gencode.primary",
       "gendr",
       "gendr.data",
@@ -4320,6 +4337,10 @@
       "l1000fwd.probes-landmark-metadata",
       "l1000fwd.signature-metadata",
       "labeledin",
+      "labeledin.annotated-xml",
+      "labeledin.corpus-html",
+      "labeledin.crowdsourced",
+      "labeledin.guidelines",
       "labeledin.indications",
       "labeledin.publication",
       "labo",
@@ -4903,8 +4924,13 @@
       "ncbi",
       "ncbi-protein",
       "ncbi-protein.web",
+      "ncbi.blast",
+      "ncbi.datasets",
       "ncbi.datasets-api",
+      "ncbi.eutils",
+      "ncbi.ftp",
       "ncbi.gc",
+      "ncbi.portal",
       "ncbigene",
       "ncbigene.gene2accession",
       "ncbigene.gene2ensembl",
@@ -5035,6 +5061,10 @@
       "nlm-ckn.schema",
       "nlm-ckn.scsilhouette",
       "nlm-ckn.ui",
+      "nlm.catalog",
+      "nlm.catalog-records",
+      "nlm.data-discovery",
+      "nlm.data-distribution",
       "nlm.portal",
       "nmcd",
       "nmcd.interaction-checker",
@@ -6036,8 +6066,10 @@
       "pistoia-pgo",
       "pistoia-pgo.core_concepts",
       "pistoia-pgo.core_concepts_csv",
+      "pistoia-pgo.core_concepts_xlsx",
       "pistoia-pgo.documentation",
       "pistoia-pgo.github",
+      "pistoia-pgo.project_page",
       "pistoia-pgo.use_cases",
       "plana",
       "plana.kg-bioportal",
@@ -6533,6 +6565,8 @@
       "ror",
       "ror.api",
       "ror.data-dump",
+      "ror.docs",
+      "ror.search",
       "rs",
       "rs.kg-bioportal",
       "rs.obo",
@@ -7350,11 +7384,14 @@
       "who-ictrp.search-export",
       "who-ictrp.web-service",
       "who-ictrp.who-data-set",
+      "who.data-hub",
       "who.data-platform",
       "who.disease-outbreak-news",
       "who.disease-outbreak-news-api",
       "who.gho",
       "who.gho-odata-api",
+      "who.iris",
+      "who.iris-oai-pmh",
       "who.portal",
       "wikidata",
       "wikidata.api",
@@ -7697,7 +7734,6 @@
       "ddinter",
       "dictybase",
       "disbiome",
-      "doaf",
       "dorothea",
       "eggnog",
       "ehrlink",
@@ -7715,7 +7751,6 @@
       "gad",
       "gelinea",
       "gemscript",
-      "gencode",
       "genecards",
       "genemania",
       "geneprof",
@@ -10345,7 +10380,6 @@
       "vhog",
       "vista",
       "vsao",
-      "who",
       "wildlifekn",
       "worldclim",
       "ypo",
@@ -10739,7 +10773,6 @@
       "nasa-gesdisc",
       "nasa-osdr",
       "national-directory-mental-health-facilities",
-      "ncbi",
       "ncbi-protein",
       "nci60",
       "ncipidkg",
@@ -10876,7 +10909,6 @@
       "rnacentral",
       "rnadisease",
       "rnainter",
-      "ror",
       "rubygems",
       "rural-urban-continuum-codes",
       "ruralkg",
@@ -10992,6 +11024,7 @@
       "aao",
       "achilles",
       "activedriverdb",
+      "acukg",
       "ado",
       "adrecs",
       "adw",
@@ -12067,8 +12100,10 @@
       "activedriverdb.api",
       "activedriverdb.downloads",
       "activedriverdb.portal",
+      "acukg.acupoint-vocabulary",
       "acukg.csv",
       "acukg.json",
+      "acukg.mesh-conditions",
       "acukg.rdf",
       "ado.kg-bioportal",
       "ado.owl",
@@ -13118,6 +13153,7 @@
       "dmd.raw-files",
       "dmd.terminology-server",
       "doaf.framework-publication",
+      "doaf.web",
       "docm.data.sql",
       "docm.variants.tsv",
       "docm.variants.vcf",
@@ -13371,6 +13407,8 @@
       "epa-sdwis.landing",
       "epa-sdwis.reports",
       "epa-srs.about",
+      "epa-srs.exchange_network",
+      "epa-srs.rest_api",
       "epa-srs.search",
       "epa-srs.widget",
       "epa-ucmr.landing",
@@ -13671,8 +13709,18 @@
       "gencc.database",
       "gencc.downloads",
       "gencc.search_interface",
+      "gencode.docs",
+      "gencode.ftp",
+      "gencode.human.gff3",
+      "gencode.human.grch37.gtf",
       "gencode.human.gtf",
+      "gencode.human.metadata.hgnc",
+      "gencode.human.transcripts",
+      "gencode.human.translations",
+      "gencode.mouse.gff3",
       "gencode.mouse.gtf",
+      "gencode.mouse.transcripts",
+      "gencode.mouse.translations",
       "gencode.primary",
       "gendr.data",
       "gendr.expression-signatures",
@@ -14448,6 +14496,10 @@
       "l1000fwd.probes-full-metadata",
       "l1000fwd.probes-landmark-metadata",
       "l1000fwd.signature-metadata",
+      "labeledin.annotated-xml",
+      "labeledin.corpus-html",
+      "labeledin.crowdsourced",
+      "labeledin.guidelines",
       "labeledin.indications",
       "labeledin.publication",
       "labo.kg-bioportal",
@@ -14934,8 +14986,13 @@
       "ncatsgardkg.graph",
       "ncatsgardkg.raw-data",
       "ncbi-protein.web",
+      "ncbi.blast",
+      "ncbi.datasets",
       "ncbi.datasets-api",
+      "ncbi.eutils",
+      "ncbi.ftp",
       "ncbi.gc",
+      "ncbi.portal",
       "ncbigene.gene2accession",
       "ncbigene.gene2ensembl",
       "ncbigene.gene2go",
@@ -15041,6 +15098,10 @@
       "nlm-ckn.schema",
       "nlm-ckn.scsilhouette",
       "nlm-ckn.ui",
+      "nlm.catalog",
+      "nlm.catalog-records",
+      "nlm.data-discovery",
+      "nlm.data-distribution",
       "nlm.portal",
       "nmcd.interaction-checker",
       "nmcd.monographs",
@@ -15940,8 +16001,10 @@
       "pirsf.site",
       "pistoia-pgo.core_concepts",
       "pistoia-pgo.core_concepts_csv",
+      "pistoia-pgo.core_concepts_xlsx",
       "pistoia-pgo.documentation",
       "pistoia-pgo.github",
+      "pistoia-pgo.project_page",
       "pistoia-pgo.use_cases",
       "plana.kg-bioportal",
       "plana.obo",
@@ -16376,6 +16439,8 @@
       "robokop.graph",
       "ror.api",
       "ror.data-dump",
+      "ror.docs",
+      "ror.search",
       "rs.kg-bioportal",
       "rs.obo",
       "rs.owl",
@@ -17090,11 +17155,14 @@
       "who-ictrp.search-export",
       "who-ictrp.web-service",
       "who-ictrp.who-data-set",
+      "who.data-hub",
       "who.data-platform",
       "who.disease-outbreak-news",
       "who.disease-outbreak-news-api",
       "who.gho",
       "who.gho-odata-api",
+      "who.iris",
+      "who.iris-oai-pmh",
       "who.portal",
       "wikidata.api",
       "wikidata.dumps.incremental",
@@ -18916,7 +18984,6 @@
       "namsnetwork",
       "nasa-gesdisc",
       "national-directory-mental-health-facilities",
-      "ncbi",
       "ncbi-protein",
       "ncipidkg",
       "ndcd",
@@ -18980,7 +19047,6 @@
       "pharmdb",
       "phaseskg",
       "phenopacket-store",
-      "pistoia-pgo",
       "planp",
       "plo",
       "pmc",
@@ -19002,7 +19068,6 @@
       "rnacentral",
       "rnao",
       "robokop",
-      "ror",
       "rubygems",
       "rural-urban-continuum-codes",
       "ruralkg",
@@ -19135,7 +19200,6 @@
     ],
     "unchanged_since_creation_resource_ids": [
       "aberowl",
-      "acukg",
       "afcd",
       "agroportal",
       "agrovoc",
@@ -19299,7 +19363,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-11-10T16:57:17Z",
+  "generated_at": "2026-11-10T18:09:49Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 167,
     "with_evaluation_page": 125,
@@ -19307,32 +19371,32 @@
   },
   "links": {
     "broken_urls": 306,
-    "cache_hits": 212,
+    "cache_hits": 5729,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 5427,
-    "live_checked_urls": 5521,
+    "healthy_urls": 5466,
+    "live_checked_urls": 43,
     "mode": "live",
-    "total_unique_urls": 5733,
+    "total_unique_urls": 5772,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 17,
     "missing_original_source": 0,
     "missing_product_url": 21,
-    "total": 5187,
+    "total": 5222,
     "with_retrieval_warning": 56
   },
   "resource_count": 1200,
   "resources": {
     "contacts_with_org_connection": 271,
-    "contacts_without_org_connection": 801,
-    "missing_contacts": 128,
+    "contacts_without_org_connection": 803,
+    "missing_contacts": 126,
     "missing_description": 0,
     "missing_fairsharing_id": 1181,
     "missing_homepage_url": 1,
     "missing_infores_id": 930,
-    "missing_license": 431,
-    "missing_repository": 630,
+    "missing_license": 430,
+    "missing_repository": 628,
     "status_counts": {
       "active": 1042,
       "inactive": 136,
@@ -19344,10 +19408,10 @@
     "with_broken_links": 185,
     "with_citation_issues": 33,
     "without_products": 10,
-    "without_publications": 377
+    "without_publications": 374
   },
   "scoring": {
-    "average_score": 6.96,
+    "average_score": 6.94,
     "median_score": 7.0,
     "resources_with_issues": 1160,
     "tracked_but_unscored_metrics": [
@@ -19382,181 +19446,181 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/alliance/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bgee/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/bindingdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/chembl/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/cohd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ctkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dakp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/dgidb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/diseases/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/drugcentral/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/geneticskp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/go_cam/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/goa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/gtopdb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/hpoa/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/icees/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/intact/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/panther/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/pathbank/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/semmeddb/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/sider/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/signor/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/tmkp/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/translator_kg/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ttd/latest/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://kgx-storage.rtx.ai/releases/ubergraph/latest/"
         }
@@ -19598,37 +19662,37 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/crosswalks"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/knowledge-graph"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/terminology-server-api"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/api-catalog/value-sets-graphql"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://developer.imohealth.com/mcp-server"
         }
@@ -19681,37 +19745,37 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=about"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=blast"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=orthologs"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=statistics"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target"
         }
@@ -19758,43 +19822,43 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.4dnucleome.org/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.4dnucleome.org/hic-data-overview"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.4dnucleome.org/microscopy-data-overview"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.4dnucleome.org/resources/data-collections/chromatin-tracing-datasets"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.4dnucleome.org/tools/jupyterhub"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.4dnucleome.org/tools/micro-meta-app"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.4dnucleome.org/tools/visualization"
         }
@@ -19887,31 +19951,31 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioportal.lirmm.fr/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioportal.lirmm.fr/annotator"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.bioportal.lirmm.fr/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.bioportal.lirmm.fr/documentation"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://sparql.bioportal.lirmm.fr/test/"
         }
@@ -19958,7 +20022,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Habronattus/index.html"
         }
@@ -20017,7 +20081,7 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html"
         }
@@ -20076,31 +20140,31 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.inbirg.com/organoid_db/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.inbirg.com/organoid_db/download/all_org_samples"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.inbirg.com/organoid_db/download/general_samples"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.inbirg.com/organoid_db/download/org_specificity_samples"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://www.inbirg.com/organoid_db/genes"
         }
@@ -20141,31 +20205,31 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://117.50.127.228/CellMarker/CellMarker_annotation.jsp"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx"
         }

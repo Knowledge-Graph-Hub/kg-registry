@@ -225,13 +225,16 @@ kgr:acukg a schema1:KnowledgeGraph ;
     dcterms:identifier "acukg" ;
     dcterms:isReferencedBy <doi:10.1093/jamia/ocaf179> ;
     dcterms:license <https://www.snomed.org/snomed-ct/get-snomed> ;
-    dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:acukg.csv,
+    schema1:hasPart kgr:acukg.acupoint-vocabulary,
+        kgr:acukg.csv,
         kgr:acukg.json,
+        kgr:acukg.mesh-conditions,
         kgr:acukg.rdf ;
     schema1:name "AcuKG" ;
     doap:repository <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture> ;
+    skos:altLabel "Acupuncture Knowledge Graph" ;
     skos:inScheme "anatomy and development",
         "biomedical",
         "clinical" ;
@@ -2440,6 +2443,7 @@ kgr:bioportal a schema1:Aggregator ;
         kgr:bioportal.portal,
         kgr:bioregistry.registry.json,
         kgr:bioregistry.sssom,
+        kgr:doaf.web,
         kgr:earthportal.api,
         kgr:earthportal.portal,
         kgr:ecoportal.api,
@@ -3997,6 +4001,8 @@ kgr:chebi a schema1:Ontology ;
         kgr:pheknowlator.graph,
         kgr:phenio.json,
         kgr:phenio.model,
+        kgr:pistoia-pgo.core_concepts_csv,
+        kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:proco.owl,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
@@ -6170,6 +6176,8 @@ kgr:dailymed a schema1:DataSource ;
         kgr:dailymed.spl_files,
         kgr:dailymed.web_services,
         kgr:dailymed.website,
+        kgr:labeledin.annotated-xml,
+        kgr:labeledin.crowdsourced,
         kgr:labeledin.indications,
         kgr:med-rt.core_dts,
         kgr:med-rt.core_spl,
@@ -7230,21 +7238,23 @@ kgr:dmd a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://digital.nhs.uk/services/terminology-and-classifications/dm-d> .
 
-kgr:doaf a schema1:Ontology ;
+kgr:doaf a schema1:DataSource ;
     rdfs:label "Disease Ontology Annotation Framework" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Disease Ontology Annotation Framework (DOAF) was a semantic framework for representing and sharing disease annotations, enabling standardized disease ontology annotations across biomedical resources." ;
+    dcterms:description "The Disease Ontology Annotation Framework (DOAF) was an automated pipeline and web resource from Northwestern University that annotated human genes with Disease Ontology terms by text mining NCBI GeneRIF entries with the NCBO Annotator, producing gene-disease associations backed by PubMed evidence." ;
     dcterms:identifier "doaf" ;
     dcterms:isReferencedBy <doi:10.1371/journal.pone.0049686> ;
-    dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:doaf.framework-publication ;
+    schema1:hasPart kgr:doaf.framework-publication,
+        kgr:doaf.web ;
     schema1:identifier "doaf" ;
     schema1:name "Disease Ontology Annotation Framework" ;
     skos:altLabel "DOAF",
         "Disease Ontology Annotation Framework" ;
     skos:inScheme "biomedical",
-        "clinical" ;
+        "clinical",
+        "genomics" ;
     adms:status "Inactive" ;
     foaf:homepage <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686> .
 
@@ -7332,6 +7342,7 @@ kgr:doid a schema1:Ontology ;
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:clo.owl,
+        kgr:doaf.web,
         kgr:doid.kg-bioportal,
         kgr:doid.obo,
         kgr:doid.owl,
@@ -7891,6 +7902,7 @@ kgr:dsstoxdb a schema1:DataSource ;
         kgr:dsstoxdb.dashboard,
         kgr:dsstoxdb.description,
         kgr:dsstoxdb.downloads,
+        kgr:epa-srs.rest_api,
         kgr:molepro.api,
         kgr:molepro.catalog,
         kgr:molepro.graph.edges,
@@ -8930,7 +8942,11 @@ kgr:ensembl a schema1:DataSource ;
         kgr:ensembl.browser,
         kgr:ensembl.vep,
         kgr:epigraphdb.graph,
+        kgr:gencode.docs,
+        kgr:gencode.human.gff3,
         kgr:gencode.human.gtf,
+        kgr:gencode.human.metadata.hgnc,
+        kgr:gencode.mouse.gff3,
         kgr:gencode.mouse.gtf,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
@@ -9231,17 +9247,21 @@ kgr:epa-sdwis a schema1:DataSource ;
 kgr:epa-srs a schema1:DataSource ;
     rdfs:label "EPA Substance Registry Services" ;
     dcterms:created "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "EPA Substance Registry Services is the U.S. Environmental Protection Agency's central system for information about substances tracked or regulated by EPA or other sources, including chemicals, biological organisms, and substance lists." ;
+    dcterms:description "EPA Substance Registry Services (SRS) is the U.S. Environmental Protection Agency's central registry for information about regulated and monitored substances, including chemicals, biological organisms, and other substances listed in environmental statutes and EPA data systems, as well as substances of interest from other federal agencies, international organizations, and states. SRS supports EPA's Chemical Identification and Biological Taxonomy data standards, records the names and synonyms each EPA program or statute uses for a substance, and is a component of EPA's System of Registries." ;
     dcterms:identifier "epa-srs" ;
     dcterms:license <https://edg.epa.gov/epa_data_license.html> ;
-    dcterms:modified "2026-06-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dsstoxdb.downloads,
         kgr:epa-srs.about,
+        kgr:epa-srs.exchange_network,
+        kgr:epa-srs.rest_api,
         kgr:epa-srs.search,
         kgr:epa-srs.widget ;
     schema1:name "EPA Substance Registry Services" ;
     skos:altLabel "EPA SRS",
-        "Substance Registry Services" ;
+        "SRS",
+        "Substance Registry Services",
+        "Substance Registry System" ;
     skos:inScheme "chemistry and biochemistry",
         "environment" ;
     adms:status "Active" ;
@@ -10996,7 +11016,8 @@ kgr:genbank a schema1:DataSource ;
         kgr:entrez.web,
         kgr:genbank.ftp,
         kgr:genbank.nucleotide,
-        kgr:ncbi-protein.web ;
+        kgr:ncbi-protein.web,
+        kgr:ncbi.ftp ;
     schema1:name "GenBank" ;
     skos:altLabel "NCBI GenBank",
         "Nucleotide" ;
@@ -11040,15 +11061,28 @@ kgr:gencode a schema1:DataSource ;
     rdfs:label "GENCODE" ;
     dcterms:created "2025-11-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "GENCODE is a comprehensive and high-quality reference annotation of the human and mouse genomes, providing evidence-based gene annotations including protein-coding genes, long non-coding RNAs, small RNAs, pseudogenes, and other genomic features based on manual curation and computational analysis." ;
+    dcterms:hasVersion "50 (human), M39 (mouse)" ;
     dcterms:identifier "gencode" ;
-    dcterms:isReferencedBy <doi:10.1093/nar/gkae1078> ;
-    dcterms:modified "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkac1071>,
+        <doi:10.1093/nar/gkae1078>,
+        <doi:10.1101/gr.135350.111> ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
+        kgr:gencode.docs,
+        kgr:gencode.ftp,
+        kgr:gencode.human.gff3,
+        kgr:gencode.human.grch37.gtf,
         kgr:gencode.human.gtf,
+        kgr:gencode.human.metadata.hgnc,
+        kgr:gencode.human.transcripts,
+        kgr:gencode.human.translations,
+        kgr:gencode.mouse.gff3,
         kgr:gencode.mouse.gtf,
+        kgr:gencode.mouse.transcripts,
+        kgr:gencode.mouse.translations,
         kgr:gencode.primary,
         kgr:genecards.web.interface,
         kgr:genomickb.graph,
@@ -11061,7 +11095,8 @@ kgr:gencode a schema1:DataSource ;
     schema1:name "GENCODE" ;
     skos:altLabel "Encyclopedia of genes and gene variants",
         "GENCODE" ;
-    skos:inScheme "genomics" ;
+    skos:inScheme "genomics",
+        "non-coding RNA" ;
     adms:status "Active" ;
     foaf:homepage <https://www.gencodegenes.org/> .
 
@@ -13190,6 +13225,7 @@ kgr:hgnc a schema1:DataSource ;
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:gencode.human.gtf,
+        kgr:gencode.human.metadata.hgnc,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
         kgr:genereviews.genes,
@@ -15544,6 +15580,7 @@ kgr:itis a schema1:DataSource ;
     schema1:about <NCBITaxon:2759> ;
     schema1:hasPart kgr:catalogue-of-life.annual-releases,
         kgr:catalogue-of-life.downloads,
+        kgr:epa-srs.rest_api,
         kgr:foodb.data.csv,
         kgr:foodb.data.json,
         kgr:foodb.data.mysql,
@@ -16050,7 +16087,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-11-10T16:46:28+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-10T18:03:22+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -16362,12 +16399,17 @@ kgr:l1000fwd a schema1:DataSource ;
 kgr:labeledin a schema1:DataSource ;
     rdfs:label "LabeledIn" ;
     dcterms:created "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "LabeledIn is a human-reviewed, machine-readable, source-linked catalog of labeled indications for human drugs derived from FDA drug labels made available through DailyMed." ;
+    dcterms:description "LabeledIn is a human-reviewed, machine-readable, source-linked catalog of labeled indications for human drugs derived from FDA drug labels made available through DailyMed. It links 7,805 drug-disease treatment relationships to UMLS disease concepts and RxNorm drug identifiers, and was extended with a crowdsourced annotation set covering a further 706 drug labels." ;
     dcterms:identifier "labeledin" ;
-    dcterms:isReferencedBy <doi:10.1016/j.jbi.2014.08.004> ;
+    dcterms:isReferencedBy <doi:10.1016/j.jbi.2014.08.004>,
+        <doi:10.1093/database/bav016> ;
     dcterms:license <https://www.usa.gov/government-works> ;
-    dcterms:modified "2026-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:labeledin.indications,
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:labeledin.annotated-xml,
+        kgr:labeledin.corpus-html,
+        kgr:labeledin.crowdsourced,
+        kgr:labeledin.guidelines,
+        kgr:labeledin.indications,
         kgr:labeledin.publication,
         kgr:pharmacotherapydb.indications ;
     schema1:name "LabeledIn" ;
@@ -16375,7 +16417,7 @@ kgr:labeledin a schema1:DataSource ;
         "clinical",
         "pharmacology" ;
     adms:status "Inactive" ;
-    foaf:homepage <https://doi.org/10.1016/j.jbi.2014.08.004> .
+    foaf:homepage <https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/> .
 
 kgr:labo a schema1:Ontology ;
     rdfs:label "clinical LABoratory Ontology" ;
@@ -17577,6 +17619,7 @@ kgr:mesh a schema1:Ontology ;
     dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:acukg.csv,
         kgr:acukg.json,
+        kgr:acukg.mesh-conditions,
         kgr:acukg.rdf,
         kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -17642,6 +17685,7 @@ kgr:mesh a schema1:Ontology ;
         kgr:mind.test,
         kgr:mind.train,
         kgr:mind.valid,
+        kgr:nlm.data-distribution,
         kgr:obo-db-ingest.mesh.json,
         kgr:obo-db-ingest.mesh.obo,
         kgr:obo-db-ingest.mesh.owl,
@@ -17650,6 +17694,8 @@ kgr:mesh a schema1:Ontology ;
         kgr:openpredict.predictions,
         kgr:orphanet.scientific_knowledge_files,
         kgr:pharmkg.graph,
+        kgr:pistoia-pgo.core_concepts_csv,
+        kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:predict.method,
         kgr:predict.supporting-information,
         kgr:pubchem.substances.asn,
@@ -18060,6 +18106,8 @@ kgr:mi a schema1:Ontology ;
         kgr:mint.mitab.mouse,
         kgr:mint.mitab.yeast,
         kgr:mint.psicquic,
+        kgr:pistoia-pgo.core_concepts_csv,
+        kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "mi" ;
@@ -19635,11 +19683,13 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:ctd.chem_gene_ixns,
         kgr:ctd.genes,
         kgr:ctd.genes_diseases,
+        kgr:doaf.web,
         kgr:enrichr.libraries,
         kgr:entrez.edirect,
         kgr:entrez.eutils,
         kgr:entrez.web,
         kgr:gencode.human.gtf,
+        kgr:gencode.human.metadata.hgnc,
         kgr:gencode.mouse.gtf,
         kgr:gendr.data,
         kgr:genecards.gene.annotations,
@@ -19666,6 +19716,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:microbiomekg.api,
         kgr:mygene.api,
         kgr:ncatsgardkg.graph,
+        kgr:ncbi.ftp,
         kgr:ncbigene.gene2accession,
         kgr:ncbigene.gene2ensembl,
         kgr:ncbigene.gene2go,
@@ -19801,6 +19852,7 @@ kgr:ncbitaxon a schema1:Ontology ;
         kgr:metabokg.schema,
         kgr:microbiomekg.api,
         kgr:micromap.api,
+        kgr:ncbi.ftp,
         kgr:ncbitaxon.json,
         kgr:ncbitaxon.obo,
         kgr:ncbitaxon.owl,
@@ -19929,6 +19981,8 @@ kgr:ncit a schema1:Ontology ;
         kgr:pavs-kg.phenopackets,
         kgr:pavs-kg.portal,
         kgr:pavs-kg.sparql,
+        kgr:pistoia-pgo.core_concepts_csv,
+        kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:scdo.obo,
         kgr:scdo.owl,
         kgr:sri-reference-kg.graph ;
@@ -20405,9 +20459,13 @@ kgr:nlm a schema1:DataSource ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The National Library of Medicine is the world's largest biomedical library and a national resource for health professionals, scientists, and the public." ;
     dcterms:identifier "nlm" ;
-    dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
-    dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:nlm.portal,
+    dcterms:license <https://www.nlm.nih.gov/web_policies.html#copyright> ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:nlm.catalog,
+        kgr:nlm.catalog-records,
+        kgr:nlm.data-discovery,
+        kgr:nlm.data-distribution,
+        kgr:nlm.portal,
         kgr:obo-db-ingest.nlm.json,
         kgr:obo-db-ingest.nlm.obo,
         kgr:obo-db-ingest.nlm.owl,
@@ -20418,7 +20476,9 @@ kgr:nlm a schema1:DataSource ;
         kgr:obo-db-ingest.nlm.publisher.tsv,
         kgr:obo-db-ingest.nlm.sssom.tsv,
         kgr:obo-db-ingest.nlm.tsv ;
+    schema1:identifier "RRID:SCR_011446" ;
     schema1:name "National Library of Medicine" ;
+    skos:altLabel "NLM" ;
     skos:inScheme "biomedical",
         "literature" ;
     adms:status "Active" ;
@@ -21020,6 +21080,8 @@ kgr:obi a schema1:Ontology ;
         kgr:one.owl,
         kgr:ons.owl,
         kgr:orkg.dump,
+        kgr:pistoia-pgo.core_concepts_csv,
+        kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:proco.owl,
         kgr:rbo.obo,
         kgr:rbo.owl,
@@ -23635,6 +23697,7 @@ kgr:pdb a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:gencode.human.metadata.hgnc,
         kgr:genecards.web.interface,
         kgr:gpcrdb.api,
         kgr:gpcrdb.data,
@@ -24707,16 +24770,20 @@ kgr:pistoia-pgo a schema1:Ontology ;
     dcterms:description "The Pistoia Alliance Pharma General Ontology (PGO) is a collaborative initiative to provide a shared upper-level reference ontology for the pharmaceutical industry. PGO aims to serve as a \"Rosetta Stone\" enabling semantic interoperability within and across organizations by identifying key concepts used throughout the drug development lifecycle and selecting public resources that can provide identifiers for each concept. Rather than creating new ontologies or mandating specific terminologies, PGO focuses on providing clear mechanisms to enable unambiguous declaration of the resources used and capturing the criteria for selecting semantic artifacts. The project follows FAIR principles and reuses existing semantic resources, including ontologies and controlled terminologies, as well as open source community software. The initial phase focuses on Research & Development (R&D) operations, defining core concepts and recommendations for associating controlled terminologies to service data exchange among pharmaceutical industry stakeholders. PGO is developed using LinkML for representing and documenting each type, and is supported by a consortium of major pharmaceutical companies including AstraZeneca, Chiesi Group, GSK, Merck KGaA, Novo Nordisk, Pfizer, and Hoffmann-La Roche." ;
     dcterms:hasVersion "1.0" ;
     dcterms:identifier "pistoia-pgo" ;
+    dcterms:isReferencedBy <https://ceur-ws.org/Vol-4196/paper_3.pdf> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:pistoia-pgo.core_concepts,
         kgr:pistoia-pgo.core_concepts_csv,
+        kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:pistoia-pgo.documentation,
         kgr:pistoia-pgo.github,
+        kgr:pistoia-pgo.project_page,
         kgr:pistoia-pgo.use_cases ;
     schema1:name "Pistoia Alliance Pharma General Ontology" ;
     doap:repository <https://github.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO> ;
     skos:altLabel "PGO",
+        "PGO-Terminology",
         "Pharma General Ontology" ;
     skos:inScheme "drug discovery",
         "general" ;
@@ -25979,6 +26046,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:forum.graph.dump,
         kgr:forum.void,
         kgr:forum.webapp,
+        kgr:gencode.human.metadata.hgnc,
         kgr:gendr.data,
         kgr:gendr.expression-signatures,
         kgr:genecards.literature,
@@ -26014,10 +26082,12 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:micromap.api,
         kgr:multiomics-kp.graph,
         kgr:myaura.graph,
+        kgr:ncbi.ftp,
         kgr:ncbigene.gene2pubmed,
         kgr:nihreporter.linktables,
         kgr:nihreporter.publications,
         kgr:nlm-ckn.graph,
+        kgr:nlm.data-distribution,
         kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
         kgr:omnicorp.api,
@@ -26737,10 +26807,12 @@ kgr:refseq a schema1:DataSource ;
         kgr:entrez.edirect,
         kgr:entrez.eutils,
         kgr:entrez.web,
+        kgr:gencode.human.metadata.hgnc,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
         kgr:mygene.api,
         kgr:ncbi-protein.web,
+        kgr:ncbi.ftp,
         kgr:ncbigene.gene2refseq,
         kgr:ncbigene.gene_refseq_uniprotkb_collab,
         kgr:oma.mapping.refseq,
@@ -27441,18 +27513,26 @@ kgr:ror a schema1:DataSource ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Research Organization Registry is a global, community-led registry of open persistent identifiers and metadata for research and funding organizations." ;
     dcterms:identifier "ror" ;
+    dcterms:isReferencedBy <doi:10.6087/kcse.192> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.ror.json,
         kgr:obo-db-ingest.ror.obo,
         kgr:obo-db-ingest.ror.owl,
         kgr:obo-db-ingest.ror.sssom.tsv,
         kgr:obo-db-ingest.ror.tsv,
         kgr:ror.api,
-        kgr:ror.data-dump ;
+        kgr:ror.data-dump,
+        kgr:ror.docs,
+        kgr:ror.search ;
+    schema1:identifier "RRID:SCR_021891" ;
     schema1:name "Research Organization Registry" ;
+    doap:repository <https://github.com/ror-community> ;
+    skos:altLabel "ROR" ;
     skos:inScheme "general",
-        "research funding" ;
+        "literature",
+        "research funding",
+        "scholarly communication" ;
     adms:status "Active" ;
     foaf:homepage <https://ror.org/> .
 
@@ -27574,6 +27654,8 @@ kgr:rxnorm a schema1:DataSource ;
         kgr:babel.compendia,
         kgr:dailymed.spl_files,
         kgr:imo-knowledge-graph.data,
+        kgr:labeledin.annotated-xml,
+        kgr:labeledin.crowdsourced,
         kgr:labeledin.indications,
         kgr:med-rt.core_dts,
         kgr:med-rt.core_spl,
@@ -31013,6 +31095,7 @@ kgr:ucsc a schema1:DataSource ;
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:enrichr.libraries,
+        kgr:gencode.docs,
         kgr:genecards.web.interface,
         kgr:mygene.api,
         kgr:togows.ucsc-api,
@@ -31106,6 +31189,9 @@ kgr:umls a schema1:Aggregator ;
         kgr:icees-kg.trapi,
         kgr:idisk.code,
         kgr:kg-predict.gpkg,
+        kgr:labeledin.annotated-xml,
+        kgr:labeledin.crowdsourced,
+        kgr:labeledin.indications,
         kgr:med-rt.core_dts,
         kgr:med-rt.core_spl,
         kgr:med-rt.core_xml,
@@ -31327,6 +31413,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:disprot.downloads,
         kgr:drugmechdb.graph,
         kgr:epsd.download,
+        kgr:gencode.human.metadata.hgnc,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
         kgr:genereviews.genes-uniprot,
@@ -31405,6 +31492,8 @@ kgr:uniprot a schema1:DataSource ;
         kgr:pharos.tcrd.download,
         kgr:pheknowlator.graph,
         kgr:phosphoelm.dataset,
+        kgr:pistoia-pgo.core_concepts_csv,
+        kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:pombase.genes-products,
         kgr:pombase.to-uniprot,
         kgr:preppi.download,
@@ -32077,6 +32166,7 @@ kgr:wikidata a schema1:KnowledgeGraph ;
         kgr:pubchem.substances.sdf,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
+        kgr:ror.api,
         kgr:semra.raw-mappings,
         kgr:wikidata.api,
         kgr:wikidata.dumps.incremental,
@@ -37842,14 +37932,19 @@ kgr:epa-srs.about a schema1:DocumentationProduct ;
     dcterms:description "EPA overview page explaining Substance Registry Services as the central EPA system for substance information and program-list membership." ;
     schema1:url <https://cdxapps.epa.gov/oms-substance-registry-services/about-srs> .
 
+kgr:epa-srs.exchange_network a schema1:ProgrammingInterface ;
+    rdfs:label "SRS Exchange Network Data Exchange" ;
+    dcterms:description "Exchange Network data exchange for SRS (version 3.0), providing services for Exchange Network partners to retrieve full SRS records for a single substance, pull substance lists, and submit substances and synonyms to SRS lists. The page offers the full exchange package for download." ;
+    schema1:url <https://exchangenetwork.net/data-exchange/srs/> .
+
 kgr:epa-srs.search a schema1:GraphicalInterface ;
     rdfs:label "EPA SRS Search" ;
-    dcterms:description "Public EPA Substance Registry Services search interface for looking up substances tracked or regulated by EPA programs and other sources." ;
+    dcterms:description "Public EPA Substance Registry Services search interface for looking up substances tracked or regulated by EPA programs and other sources, by name, CAS number, and other identifiers, with basic, advanced, and multi-substance search. Search results and substance lists can be exported as Excel, JSON, or XML files." ;
     schema1:url <https://cdxapps.epa.gov/oms-substance-registry-services/search> .
 
 kgr:epa-srs.widget a schema1:ProgrammingInterface ;
     rdfs:label "EPA SRS Widget" ;
-    dcterms:description "EPA SRS widget service for embedding a Substance Registry Services search box in external web pages." ;
+    dcterms:description "EPA SRS widget service for embedding a Substance Registry Services search box in external web pages using a JavaScript file served from ofmpub.epa.gov." ;
     schema1:url <https://www.epa.gov/developers/data-data-products-substance-registry-services-widget> .
 
 kgr:epa-ucmr.landing a schema1:GraphicalInterface ;
@@ -39152,6 +39247,36 @@ kgr:gencc.search_interface a schema1:GraphicalInterface ;
     rdfs:label "GenCC Search Interface" ;
     dcterms:description "Interactive web-based search and browse interface at search.thegencc.org allowing users to filter gene-disease assertions by gene symbol, disease, submitter, and validity classification" ;
     schema1:url <https://search.thegencc.org/> .
+
+kgr:gencode.ftp a schema1:Product ;
+    rdfs:label "GENCODE FTP Site" ;
+    dcterms:description "GENCODE FTP site hosting all current and past human and mouse releases, with README files describing each file type." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/> .
+
+kgr:gencode.human.grch37.gtf a schema1:Product ;
+    rdfs:label "GENCODE Human Annotations Lifted to GRCh37 GTF" ;
+    dcterms:description "Current comprehensive GENCODE human annotation mapped back to the older GRCh37 assembly, in GTF format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/GRCh37_mapping/gencode.v50lift37.annotation.gtf.gz> .
+
+kgr:gencode.human.transcripts a schema1:Product ;
+    rdfs:label "GENCODE Human Transcript Sequences" ;
+    dcterms:description "Nucleotide sequences of all GENCODE human transcripts on the GRCh38 reference chromosomes, in FASTA format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.transcripts.fa.gz> .
+
+kgr:gencode.human.translations a schema1:Product ;
+    rdfs:label "GENCODE Human Protein Translations" ;
+    dcterms:description "Amino acid sequences of GENCODE human protein-coding transcript translations on the GRCh38 reference chromosomes, in FASTA format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.pc_translations.fa.gz> .
+
+kgr:gencode.mouse.transcripts a schema1:Product ;
+    rdfs:label "GENCODE Mouse Transcript Sequences" ;
+    dcterms:description "Nucleotide sequences of all GENCODE mouse transcripts on the GRCm39 reference chromosomes, in FASTA format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.transcripts.fa.gz> .
+
+kgr:gencode.mouse.translations a schema1:Product ;
+    rdfs:label "GENCODE Mouse Protein Translations" ;
+    dcterms:description "Amino acid sequences of GENCODE mouse protein-coding transcript translations on the GRCm39 reference chromosomes, in FASTA format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.pc_translations.fa.gz> .
 
 kgr:gencode.primary a schema1:Product ;
     rdfs:label "GENCODE Primary Transcripts" ;
@@ -41996,6 +42121,16 @@ kgr:knowwheregraph.sparql a schema1:ProgrammingInterface ;
     dcterms:description "SPARQL endpoint with GeoSPARQL support for querying KnowWhereGraph data and performing geospatial queries, served via the FRINK (Proto-OKN) platform" ;
     schema1:url <https://frink.apps.renci.org/spatialkg/sparql> .
 
+kgr:labeledin.corpus-html a schema1:GraphicalInterface ;
+    rdfs:label "LabeledIn Visual HTML Corpus" ;
+    dcterms:description "Single-page HTML view of the LabeledIn corpus that visually presents the annotated drug labels and their linked indications." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_corpus.html> .
+
+kgr:labeledin.guidelines a schema1:DocumentationProduct ;
+    rdfs:label "LabeledIn Annotation Guidelines" ;
+    dcterms:description "Annotation guidelines used by the expert annotators to mark drug indications in FDA drug label text for LabeledIn." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Annotation_Guidelines.pdf> .
+
 kgr:labeledin.publication a schema1:DocumentationProduct ;
     rdfs:label "LabeledIn Publication" ;
     dcterms:description "Publication describing the LabeledIn corpus construction workflow, including drug label selection, automatic disease recognition, and manual indication annotation." ;
@@ -43839,15 +43974,35 @@ kgr:ncatsgardkg.raw-data a schema1:Product ;
     dcterms:description "Repository subdirectory containing raw datasets used to construct the NCATS GARD KG workflow." ;
     schema1:url <https://github.com/ncats/RD-Clust/tree/main/data/raw> .
 
-kgr:ncbi.datasets-api a schema1:DocumentationProduct ;
+kgr:ncbi.blast a schema1:GraphicalInterface ;
+    rdfs:label "NCBI BLAST" ;
+    dcterms:description "BLAST (Basic Local Alignment Search Tool) web service for comparing nucleotide or protein query sequences against NCBI sequence databases." ;
+    schema1:url <https://blast.ncbi.nlm.nih.gov/Blast.cgi> .
+
+kgr:ncbi.datasets a schema1:GraphicalInterface ;
+    rdfs:label "NCBI Datasets" ;
+    dcterms:description "NCBI Datasets web interface for browsing and downloading genome assemblies, gene records and associated sequence, annotation and metadata packages." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/datasets/> .
+
+kgr:ncbi.datasets-api a schema1:ProgrammingInterface ;
     rdfs:label "NCBI Datasets API" ;
-    dcterms:description "NCBI Datasets API documentation for genome, gene, taxonomy, virus, and BioSample programmatic access." ;
+    dcterms:description "NCBI Datasets v2 REST API for programmatic access to genome, gene, taxonomy, virus, and BioSample data and metadata, with companion datasets and dataformat command-line tools." ;
     schema1:url <https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/rest-api/> .
+
+kgr:ncbi.eutils a schema1:ProgrammingInterface ;
+    rdfs:label "NCBI E-utilities" ;
+    dcterms:description "Entrez Programming Utilities (E-utilities), a set of server-side programs (ESearch, EFetch, ESummary, ELink, EInfo and others) providing a URL-based API for searching and retrieving records from the Entrez databases. An API key raises the request rate limit." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/books/NBK25501/> .
 
 kgr:ncbi.gc a schema1:DataModelProduct ;
     rdfs:label "NCBI Genetic Codes" ;
     dcterms:description "NCBI Genetic Codes tables summarizing translation tables used in GenBank and the NCBI taxonomy." ;
     schema1:url <https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi> .
+
+kgr:ncbi.portal a schema1:GraphicalInterface ;
+    rdfs:label "NCBI Web Portal" ;
+    dcterms:description "NCBI web portal with Entrez search across NCBI literature, sequence, gene, protein, genome, variation, taxonomy and chemical databases." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/> .
 
 kgr:ncbigene.gene2accession a schema1:MappingProduct ;
     rdfs:label "Gene to Accession Mapping" ;
@@ -44213,6 +44368,21 @@ kgr:nlm-ckn.ui a schema1:GraphicalInterface ;
     rdfs:label "nlm-ckn-ui" ;
     dcterms:description "The NLM-CKN web application, a Django and React interface that loads a pre-built ArangoDB dataset produced by the ETL pipeline and lets researchers query, visualize, and explore the cell knowledge graph." ;
     schema1:url <https://github.com/NIH-NLM/nlm-ckn-ui> .
+
+kgr:nlm.catalog a schema1:GraphicalInterface ;
+    rdfs:label "NLM Catalog" ;
+    dcterms:description "NLM Catalog, a search interface for bibliographic records of journals, books, audiovisuals and other materials in NLM's collections, including NLM Unique IDs and journal indexing status." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/nlmcatalog/> .
+
+kgr:nlm.catalog-records a schema1:Product ;
+    rdfs:label "NLM Catalog Record Data" ;
+    dcterms:description "Bulk downloads of NLM bibliographic catalog records for books, journals and other materials in NLM's collections (CatfilePlus, Catfile and Serfile), as baseline and update files in NLMXML, MARCXML and MARC 21 formats." ;
+    schema1:url <https://www.nlm.nih.gov/databases/download/catalog.html> .
+
+kgr:nlm.data-discovery a schema1:GraphicalInterface ;
+    rdfs:label "NLM Data Discovery" ;
+    dcterms:description "NLM Data Discovery, a catalog of NLM products and services with links to product information, data downloads, APIs and other programmatic interfaces." ;
+    schema1:url <https://datadiscovery.nlm.nih.gov/> .
 
 kgr:nlm.portal a schema1:DocumentationProduct ;
     rdfs:label "NLM Web Portal" ;
@@ -46614,13 +46784,8 @@ kgr:pirsf.site a schema1:GraphicalInterface ;
 
 kgr:pistoia-pgo.core_concepts a schema1:DocumentationProduct ;
     rdfs:label "PGO Core Concepts (Version 1.0)" ;
-    dcterms:description "List of PGO Version 1.0 core concepts defining essential entities for pharmaceutical R&D data exchange" ;
+    dcterms:description "Markdown list of the PGO Version 1.0 core concepts defining essential entities for pharmaceutical R&D data exchange" ;
     schema1:url <https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/2025_PGO_V1.0_core_concepts.md> .
-
-kgr:pistoia-pgo.core_concepts_csv a schema1:Product ;
-    rdfs:label "PGO Core Concepts CSV (Version 1.0)" ;
-    dcterms:description "CSV release of the PGO Version 1.0 core concept list dated 2026-03-20" ;
-    schema1:url <https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv> .
 
 kgr:pistoia-pgo.documentation a schema1:DocumentationProduct ;
     rdfs:label "PGO Documentation Website" ;
@@ -46629,13 +46794,18 @@ kgr:pistoia-pgo.documentation a schema1:DocumentationProduct ;
 
 kgr:pistoia-pgo.github a schema1:OntologyProduct ;
     rdfs:label "PGO GitHub Repository" ;
-    dcterms:description "GitHub repository containing the PGO core concepts, documentation, and LinkML schemas" ;
+    dcterms:description "GitHub repository containing the PGO core concept list (Markdown, CSV, and Excel), per-concept documentation pages, concept diagrams, and the source of the documentation website. Documentation releases are tagged (latest docs-public-V1.0.2, October 2026)." ;
     schema1:url <https://github.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO> .
+
+kgr:pistoia-pgo.project_page a schema1:DocumentationProduct ;
+    rdfs:label "PGO Project Page" ;
+    dcterms:description "Pistoia Alliance project page for PGO, linking project deliverables such as posters, the Phase 1 webinar, the use case report, governance documents, and the roadmap. Some documents require a Pistoia Alliance member login." ;
+    schema1:url <https://pistoiaalliance.org/project/pharma-general-ontology/> .
 
 kgr:pistoia-pgo.use_cases a schema1:DocumentationProduct ;
     rdfs:label "PGO Use Cases" ;
-    dcterms:description "High-level use cases demonstrating PGO applications in pharmaceutical data exchange" ;
-    schema1:url <https://www.pistoiaalliance.org/resource-library/pharma-general-ontology-use-cases/> .
+    dcterms:description "High-level use cases demonstrating PGO applications in pharmaceutical data exchange (project deliverable D2.2)" ;
+    schema1:url <https://pistoiaalliance.org/resource-library/pharma-general-ontology-use-cases/> .
 
 kgr:plana.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "PLANA KGX graph (KG-Bioportal)" ;
@@ -47863,15 +48033,20 @@ kgr:robokop.graph a schema1:Product ;
     dcterms:description "A biomedical knowledge graph containing ~10 million nodes and ~250 million edges from ~30 biological data sources and bio-ontologies." ;
     schema1:url <http://robokopkg.renci.org> .
 
-kgr:ror.api a schema1:ProgrammingInterface ;
-    rdfs:label "ROR REST API Documentation" ;
-    dcterms:description "REST API for searching and retrieving ROR organization records." ;
-    schema1:url <https://ror.readme.io/docs/rest-api> .
-
 kgr:ror.data-dump a schema1:Product ;
     rdfs:label "ROR Data Dump" ;
-    dcterms:description "Monthly ROR registry data dump available in JSON and CSV formats." ;
+    dcterms:description "Full ROR registry data dump, released on Zenodo at least monthly as a zip containing JSON (format of record) and CSV files in ROR Schema 2.x." ;
     schema1:url <https://doi.org/10.5281/zenodo.6347574> .
+
+kgr:ror.docs a schema1:DocumentationProduct ;
+    rdfs:label "ROR Technical Documentation" ;
+    dcterms:description "Technical documentation for ROR, covering the REST API, affiliation matching, the data dump, and the ROR record schema." ;
+    schema1:url <https://ror.readme.io/> .
+
+kgr:ror.search a schema1:GraphicalInterface ;
+    rdfs:label "ROR Search" ;
+    dcterms:description "Web interface for searching and browsing ROR organization records by name, identifier, location, and other attributes." ;
+    schema1:url <https://ror.org/search> .
 
 kgr:rs.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "RS KGX graph (KG-Bioportal)" ;
@@ -50506,18 +50681,26 @@ kgr:who a schema1:Aggregator,
     dcterms:created "2026-06-02T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The World Health Organization (WHO) is a United Nations specialized agency for international public health that publishes global health statistics, classifications, guidance, disease outbreak reports, and emergency information products." ;
     dcterms:identifier "who" ;
-    dcterms:modified "2026-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:ekg.browser,
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/3.0/igo/> ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:acukg.acupoint-vocabulary,
+        kgr:acukg.csv,
+        kgr:acukg.json,
+        kgr:acukg.rdf,
+        kgr:ekg.browser,
         kgr:ekg.csv,
         kgr:ekg.rdf,
         kgr:ekg.sparql,
         kgr:ekg.ttl,
         kgr:spoke.graph,
+        kgr:who.data-hub,
         kgr:who.data-platform,
         kgr:who.disease-outbreak-news,
         kgr:who.disease-outbreak-news-api,
         kgr:who.gho,
         kgr:who.gho-odata-api,
+        kgr:who.iris,
+        kgr:who.iris-oai-pmh,
         kgr:who.portal ;
     schema1:identifier "RRID:SCR_008505" ;
     schema1:name "World Health Organization" ;
@@ -50548,6 +50731,11 @@ kgr:who-ictrp.who-data-set a schema1:DocumentationProduct ;
     dcterms:description "Documentation of the WHO Trial Registration Data Set, the minimum set of items a trial record must contain to be included in the ICTRP, with archived earlier versions." ;
     schema1:url <https://www.who.int/tools/clinical-trials-registry-platform/network/who-data-set> .
 
+kgr:who.data-hub a schema1:GraphicalInterface ;
+    rdfs:label "WHO Data Hub" ;
+    dcterms:description "WHO Data hub (data.who.int), WHO's newer home for health data, with indicator pages, country profiles, and dashboards; indicator pages offer CSV downloads of the underlying data." ;
+    schema1:url <https://data.who.int/> .
+
 kgr:who.data-platform a schema1:GraphicalInterface ;
     rdfs:label "WHO Data Platform" ;
     dcterms:description "WHO Data Platform landing page linking WHO data portals including the Global Health Observatory, immunization data, GLAAS, NCD data, SRHR policy data, and other health data sites." ;
@@ -50572,6 +50760,16 @@ kgr:who.gho-odata-api a schema1:ProgrammingInterface ;
     rdfs:label "WHO GHO OData API" ;
     dcterms:description "WHO Global Health Observatory OData API for querying WHO statistics and indicator data through the OData protocol." ;
     schema1:url <https://www.who.int/data/gho/info/gho-odata-api> .
+
+kgr:who.iris a schema1:GraphicalInterface ;
+    rdfs:label "WHO IRIS" ;
+    dcterms:description "WHO Institutional Repository for Information Sharing (IRIS), a DSpace repository of WHO publications, technical documents, governing body documents, and reports in multiple languages." ;
+    schema1:url <https://iris.who.int/> .
+
+kgr:who.iris-oai-pmh a schema1:ProgrammingInterface ;
+    rdfs:label "WHO IRIS OAI-PMH Endpoint" ;
+    dcterms:description "OAI-PMH 2.0 endpoint for harvesting metadata records from the WHO IRIS publications repository." ;
+    schema1:url <https://iris.who.int/server/oai/request?verb=Identify> .
 
 kgr:who.portal a schema1:GraphicalInterface ;
     rdfs:label "WHO Web Portal" ;
@@ -51128,6 +51326,16 @@ kgr:achilles.downloads a schema1:Product ;
     rdfs:label "Project Achilles Data Releases" ;
     dcterms:description "DepMap all-data downloads page where current Achilles and related dependency datasets are released." ;
     schema1:url <https://depmap.org/portal/download/all/> .
+
+kgr:acukg.acupoint-vocabulary a schema1:Product ;
+    rdfs:label "AcuKG local acupoint vocabulary" ;
+    dcterms:description "Multilingual acupoint vocabulary listing the 361 standard acupoint codes with Chinese names, transliterations, English, Pinyin, Korean, and Vietnamese names." ;
+    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/local_acupoint_vocabulary.csv> .
+
+kgr:acukg.mesh-conditions a schema1:Product ;
+    rdfs:label "AcuKG MeSH condition list" ;
+    dcterms:description "List of MeSH descriptor IDs and terms used to normalize the conditions represented in AcuKG." ;
+    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/MeSH-Condition.csv> .
 
 kgr:ado.owl a schema1:OntologyProduct ;
     rdfs:label "ado.owl" ;
@@ -51935,6 +52143,16 @@ kgr:gemscript.documentation a schema1:DocumentationProduct ;
     rdfs:label "Gemscript Vision Help Documentation" ;
     dcterms:description "Vision help documentation describing Gemscript as the integrated drug dictionary used in Vision 3 prescribing workflows" ;
     schema1:url <https://help.visionhealth.co.uk/Vision_Consultation_Manager_Help_Centre/Content/ConMgr/Gemscript/Gemscript_Drug_Dictionary.htm> .
+
+kgr:gencode.human.gff3 a schema1:Product ;
+    rdfs:label "GENCODE Human Annotations GFF3" ;
+    dcterms:description "Current comprehensive GENCODE gene annotations for the human GRCh38.p14 genome assembly (reference chromosomes only) in GFF3 format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gff3.gz> .
+
+kgr:gencode.mouse.gff3 a schema1:Product ;
+    rdfs:label "GENCODE Mouse Annotations GFF3" ;
+    dcterms:description "Current comprehensive GENCODE gene annotations for the mouse GRCm39 genome assembly (reference chromosomes only) in GFF3 format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gff3.gz> .
 
 kgr:gendr.expression-signatures a schema1:Product ;
     rdfs:label "GenDR Dietary Restriction Expression Signatures" ;
@@ -54979,6 +55197,11 @@ kgr:rlims-p.text-mining-service a schema1:ProcessProduct ;
     dcterms:description "Rule-based text-mining service for extracting protein phosphorylation events, including kinase, substrate, phosphorylation site, and textual evidence, from PubMed abstracts and selected literature corpora." ;
     schema1:url <https://research.bioinformatics.udel.edu/text_mining/rlimsp2/> .
 
+kgr:ror.api a schema1:ProgrammingInterface ;
+    rdfs:label "ROR REST API" ;
+    dcterms:description "Open REST API (v2) for searching and retrieving ROR organization records, including keyword and external identifier search (GRID, ISNI, Wikidata, Crossref Funder ID), advanced filtering, and matching of free-text affiliation strings to ROR IDs. No registration is required; requests are rate-limited per IP address." ;
+    schema1:url <https://api.ror.org/v2/organizations> .
+
 kgr:scales.graph a schema1:GraphProduct ;
     rdfs:label "SCALES Knowledge Graph" ;
     dcterms:description "SCALES knowledge graph of U.S. federal court records, derived from PACER data and served via the SCALES SPARQL and Triple Pattern Fragments endpoints." ;
@@ -55663,6 +55886,11 @@ kgr:enrichr-kg.edges-csv a schema1:Product ;
     dcterms:description "Edge-table CSV snapshot from the Enrichr-KG downloads page using source.relation.target edge triples" ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/GO_Biological_Process_2021.GO_BP.Gene.edges.csv> .
 
+kgr:epa-srs.rest_api a schema1:ProgrammingInterface ;
+    rdfs:label "SRS REST Web Services" ;
+    dcterms:description "SRS REST web services (OpenAPI/Swagger documented, version v1.2) returning JSON records for substances queried by CAS number, name or synonym, EPA ID, internal tracking number, ITIS taxonomic serial number, CompTox DTXSID, substance list acronym, classification, or characteristic, plus lookups of TSCA generic substances by PMN or accession number. Records include identifiers such as CAS numbers, DTXSIDs, InChI, and SMILES, and the synonyms used by each EPA list." ;
+    schema1:url <https://cdxapps.epa.gov/oms-substance-registry-services/swagger-ui/> .
+
 kgr:europepmc.portal a schema1:GraphicalInterface ;
     rdfs:label "Europe PMC Website" ;
     dcterms:description "Europe PMC website for searching and reading life sciences literature, including abstracts, full text, preprints, patents and theses, with SciLite text-mined annotations and links to grants, data citations and database records." ;
@@ -55682,6 +55910,11 @@ kgr:fobi.owl a schema1:OntologyProduct ;
     rdfs:label "FOBI is an ontology to represent food intake data and associate it with metabolomic data" ;
     dcterms:description "FOBI is an ontology to represent food intake data and associate it with metabolomic data" ;
     schema1:url <http://purl.obolibrary.org/obo/fobi.owl> .
+
+kgr:gencode.docs a schema1:DocumentationProduct ;
+    rdfs:label "GENCODE Data Access Documentation" ;
+    dcterms:description "GENCODE documentation on data access, file formats, tags, and biotypes, including links to Ensembl and UCSC Genome Browser views and track hubs for GENCODE annotation." ;
+    schema1:url <https://www.gencodegenes.org/pages/data_access.html> .
 
 kgr:gendr.data a schema1:Product ;
     rdfs:label "GenDR Data Download" ;
@@ -55767,11 +56000,6 @@ kgr:l1000fwd.portal a schema1:GraphicalInterface ;
     rdfs:label "L1000FWD Web Application" ;
     dcterms:description "Interactive fireworks and t-SNE maps of drug-induced L1000 signatures for all cell lines and individual cell lines, with signature similarity search using up and down gene sets, signature landing pages, and subset visualization." ;
     schema1:url <https://maayanlab.cloud/l1000fwd/> .
-
-kgr:labeledin.indications a schema1:Product ;
-    rdfs:label "LabeledIn Drug Indication Corpus" ;
-    dcterms:description "LabeledIn indication corpus described in the source publication, containing human-reviewed drug-disease treatment relationships with links back to source drug labels." ;
-    schema1:url <https://doi.org/10.1016/j.jbi.2014.08.004> .
 
 kgr:markerdb.chemicals.tsv a schema1:Product ;
     rdfs:label "MarkerDB Chemical Biomarkers TSV" ;
@@ -55920,6 +56148,11 @@ kgr:nikg.graph a schema1:GraphProduct ;
     rdfs:label "Neighborhood Information KG RDF Graph" ;
     dcterms:description "The Neighborhood Information KG (NIKG) RDF graph, a knowledge graph warehouse integrating neighborhood-level information such as demographics, land use, local incidents and injuries, and proximity to trauma centers. Built from census data and other neighborhood-level records, the graph is served in RDF (Turtle) through the NIKG SPARQL and Triple Pattern Fragments endpoints hosted on the FRINK / Proto-OKN infrastructure." ;
     schema1:url <https://frink.renci.org/registry/kgs/neighborhood-kg/> .
+
+kgr:nlm.data-distribution a schema1:DocumentationProduct ;
+    rdfs:label "NLM Data Distribution" ;
+    dcterms:description "NLM Data Distribution program page, the preferred access point for bulk downloads of MEDLINE/PubMed baseline and daily update citation files (XML), MeSH data, and NLM catalog record data, with the associated terms and conditions." ;
+    schema1:url <https://www.nlm.nih.gov/databases/download/data_distrib_main.html> .
 
 kgr:oard-kg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL" ;
@@ -56448,6 +56681,11 @@ kgr:distild.database a schema1:GraphicalInterface ;
     dcterms:description "Web interface for querying and visualizing disease- and trait-associated SNPs and genes within LD blocks, searchable by disease, SNP, or gene. The site refused connections when checked in October 2026." ;
     schema1:url <http://distild.jensenlab.org/> .
 
+kgr:doaf.web a schema1:GraphicalInterface ;
+    rdfs:label "DOAF web interface (archived)" ;
+    dcterms:description "Archived snapshot of the DOAF web interface (doa.nubic.northwestern.edu), which supported gene-to-disease and disease-to-gene queries, batch queries, and download of the DO-gene mappings. The live site is offline." ;
+    schema1:url <https://web.archive.org/web/20160601045226/http://doa.nubic.northwestern.edu/pages/about.php> .
+
 kgr:dreamkg.graph a schema1:GraphProduct ;
     rdfs:label "DREAM-KG Knowledge Graph" ;
     dcterms:description "DREAM-KG homelessness and social-services knowledge graph for the Philadelphia region, integrating social service directory records and provider reviews. Served via the DREAM-KG SPARQL and Triple Pattern Fragments endpoints." ;
@@ -56530,13 +56768,13 @@ kgr:foodkg.usda-sample a schema1:GraphProduct ;
 
 kgr:gencode.human.gtf a schema1:Product ;
     rdfs:label "GENCODE Human Annotations GTF" ;
-    dcterms:description "Current comprehensive GENCODE gene annotations for the human GRCh38.p14 genome assembly in GTF format" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz> .
+    dcterms:description "Current comprehensive GENCODE gene annotations for the human GRCh38.p14 genome assembly (reference chromosomes only) in GTF format. Release 50 corresponds to Ensembl 116." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz> .
 
 kgr:gencode.mouse.gtf a schema1:Product ;
     rdfs:label "GENCODE Mouse Annotations GTF" ;
-    dcterms:description "Current comprehensive GENCODE gene annotations for the mouse GRCm39 genome assembly in GTF format" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz> .
+    dcterms:description "Current comprehensive GENCODE gene annotations for the mouse GRCm39 genome assembly (reference chromosomes only) in GTF format. Release M39 corresponds to Ensembl 116." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gtf.gz> .
 
 kgr:genecards.expression.data a schema1:Product ;
     rdfs:label "GeneCards Expression Data" ;
@@ -56612,6 +56850,21 @@ kgr:l1000fwd.drug-metadata a schema1:Product ;
     rdfs:label "L1000FWD Drug Metadata" ;
     dcterms:description "Metadata for the profiled drugs and small molecules indexed by pert_id, including LINCS small molecule IDs, names, SMILES, InChIKeys, molecular formulas, and PubChem CIDs." ;
     schema1:url <https://maayanlab.cloud/l1000fwd/download/Drugs_metadata.csv> .
+
+kgr:labeledin.annotated-xml a schema1:Product ;
+    rdfs:label "LabeledIn Annotated XML Corpus" ;
+    dcterms:description "LabeledIn annotated corpus in pipe-delimited form, containing the Indications and Usage section of each DailyMed drug label with expert indication mentions marked up in inline XML tags carrying UMLS CUIs." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_annotated_XML.txt> .
+
+kgr:labeledin.crowdsourced a schema1:Product ;
+    rdfs:label "LabeledIn Crowdsourced Indications" ;
+    dcterms:description "Crowdsourced LabeledIn extension (2015) in pipe-delimited structured form, covering 3,004 Amazon Mechanical Turk tasks over 706 DailyMed drug labels, with UMLS CUIs, RxNorm RXCUIs, and the majority-vote indication judgement. Annotated XML and HTML versions and answer codes are in the same directory." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Crowdsourcing/Crowdsourced_Results.txt> .
+
+kgr:labeledin.indications a schema1:Product ;
+    rdfs:label "LabeledIn Structured Indications" ;
+    dcterms:description "Pipe-delimited structured LabeledIn results (September 2014 release), with one row per annotated drug label giving the DailyMed SPL Set ID, UMLS CUIs for the annotated indications, and linked RxNorm ingredient, dose form, and clinical drug RXCUIs." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_Structured_Results.txt> .
 
 kgr:mangal.api a schema1:ProgrammingInterface ;
     rdfs:label "mangal.io API" ;
@@ -57227,21 +57480,6 @@ kgr:unibiomap.disease_desc a schema1:GraphProduct ;
     dcterms:description "UniBioMap disease entity descriptions." ;
     schema1:url <https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json> .
 
-kgr:acukg.csv a schema1:GraphProduct ;
-    rdfs:label "AcuKG CSV tables" ;
-    dcterms:description "Source CSV tables for AcuKG, including acupoint therapeutic actions, indications, anatomy relationships, clinical trial links, and PubMed links." ;
-    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG> .
-
-kgr:acukg.json a schema1:GraphProduct ;
-    rdfs:label "AcuKG JSON files" ;
-    dcterms:description "JSON representation of AcuKG relationship tables." ;
-    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json> .
-
-kgr:acukg.rdf a schema1:GraphProduct ;
-    rdfs:label "AcuKG RDF Turtle files" ;
-    dcterms:description "RDF Turtle representation of AcuKG relationship tables." ;
-    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_RDF> .
-
 kgr:biogrid.identifiers a schema1:MappingProduct ;
     rdfs:label "BIOGRID-IDENTIFIERS-LATEST.tab.zip" ;
     dcterms:description "A single delimited text file format containing a list of mappings between different identifiers stored in BioGRID and the identifiers used in downloads." ;
@@ -57338,6 +57576,11 @@ kgr:ncbi-protein.web a schema1:GraphicalInterface ;
     dcterms:description "Entrez search interface for NCBI Protein sequence records, with links to Gene, Nucleotide, Structure, and Conserved Domains." ;
     schema1:url <https://www.ncbi.nlm.nih.gov/protein/> .
 
+kgr:ncbi.ftp a schema1:Product ;
+    rdfs:label "NCBI FTP Site" ;
+    dcterms:description "NCBI FTP site providing bulk downloads for NCBI databases, including GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump, gene data files, and the PubMed baseline and update files." ;
+    schema1:url <https://ftp.ncbi.nlm.nih.gov/> .
+
 kgr:nice.data a schema1:Product ;
     rdfs:label "NICE Data" ;
     dcterms:description "The NICE data downloads and dataset descriptions, providing access to curated chemical data, curated in vitro and high-throughput screening (cHTS) assay data, physicochemical and ADME property data, and reference in vivo toxicity datasets." ;
@@ -57402,6 +57645,21 @@ kgr:sniff.federation-nodes a schema1:GraphProduct ;
     rdfs:label "Sniff KGX federation export, nodes" ;
     dcterms:description "A Biolink-conformant KGX TSV node file for the Sniff cross-species substrate, covering dog and human genes and canine and human diseases. Part of the facts-only federation bundle intended for ingest into other knowledge graphs." ;
     schema1:url <https://sniffdog-data.s3.amazonaws.com/federation/kgx/sniff_nodes.tsv> .
+
+kgr:acukg.csv a schema1:GraphProduct ;
+    rdfs:label "AcuKG CSV tables" ;
+    dcterms:description "Source CSV tables for AcuKG, including acupoint therapeutic actions, indications, anatomy relationships, clinical trial links, and PubMed links." ;
+    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG> .
+
+kgr:acukg.json a schema1:GraphProduct ;
+    rdfs:label "AcuKG JSON files" ;
+    dcterms:description "JSON representation of AcuKG relationship tables." ;
+    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json> .
+
+kgr:acukg.rdf a schema1:GraphProduct ;
+    rdfs:label "AcuKG RDF Turtle files" ;
+    dcterms:description "RDF Turtle representation of AcuKG relationship tables." ;
+    schema1:url <https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_RDF> .
 
 kgr:aism.json a schema1:OntologyProduct ;
     rdfs:label "aism.json" ;
@@ -57531,6 +57789,16 @@ kgr:pharmacotherapydb.indications a schema1:Product ;
     rdfs:label "PharmacotherapyDB Indications TSV" ;
     dcterms:description "Curated TSV catalog of drug-disease indications classified as disease-modifying, symptomatic, or non-indications" ;
     schema1:url <https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/indications.tsv> .
+
+kgr:pistoia-pgo.core_concepts_csv a schema1:Product ;
+    rdfs:label "PGO Core Concepts CSV (Version 1.0)" ;
+    dcterms:description "CSV release of the PGO Version 1.0 core concept list dated 2026-03-20, giving 17 core concepts with recommended definitions, the source vocabulary and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI, UniProt, and QUDT), steering committee approval dates, and example sources." ;
+    schema1:url <https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv> .
+
+kgr:pistoia-pgo.core_concepts_xlsx a schema1:Product ;
+    rdfs:label "PGO Core Concepts Excel (Version 1.0)" ;
+    dcterms:description "Excel release of the PGO Version 1.0 core concept list dated 2026-03-20, with the same content as the CSV release (recommended definitions and their source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and QUDT)." ;
+    schema1:url <https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx> .
 
 kgr:proco.owl a schema1:OntologyProduct ;
     rdfs:label "proco.owl" ;
@@ -57694,6 +57962,11 @@ kgr:eram.web a schema1:GraphicalInterface ;
     rdfs:label "eRAM Web Interface" ;
     dcterms:description "Web-based interface for browsing and querying rare disease annotations including phenotypes, symptoms, genes, and genotypes with tree-structured disease organization" ;
     schema1:url <http://119.3.41.228/eram/> .
+
+kgr:gencode.human.metadata.hgnc a schema1:MappingProduct ;
+    rdfs:label "GENCODE Human HGNC Metadata" ;
+    dcterms:description "Mapping of GENCODE human transcripts to HGNC approved gene symbols, from the Ensembl xref pipeline. Companion metadata files in the same release map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and TrEMBL, PDB, and PubMed IDs." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz> .
 
 kgr:genemania.networks a schema1:GraphProduct ;
     rdfs:label "GeneMANIA Interaction Network Archive" ;
@@ -58774,8 +59047,9 @@ kgr:ncbi a schema1:DataSource,
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The National Center for Biotechnology Information advances science and health by providing access to biomedical and genomic information, databases, tools, and services." ;
     dcterms:identifier "ncbi" ;
-    dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
-    dcterms:modified "2026-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkaf1060> ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioregistry.registry.json,
         kgr:bioregistry.sssom,
         kgr:cngbdb.portal,
@@ -58790,8 +59064,13 @@ kgr:ncbi a schema1:DataSource,
         kgr:metatraits.ncbi.genus-summary,
         kgr:metatraits.ncbi.species-summary,
         kgr:metatraits.ncbi2gtdb,
+        kgr:ncbi.blast,
+        kgr:ncbi.datasets,
         kgr:ncbi.datasets-api,
+        kgr:ncbi.eutils,
+        kgr:ncbi.ftp,
         kgr:ncbi.gc,
+        kgr:ncbi.portal,
         kgr:obo-db-ingest.ncbi.gc.json,
         kgr:obo-db-ingest.ncbi.gc.obo,
         kgr:obo-db-ingest.ncbi.gc.owl,
@@ -58800,6 +59079,8 @@ kgr:ncbi a schema1:DataSource,
         kgr:seqapass.app ;
     schema1:identifier "RRID:SCR_006472" ;
     schema1:name "National Center for Biotechnology Information" ;
+    doap:repository <https://github.com/ncbi> ;
+    skos:altLabel "NCBI" ;
     skos:inScheme "biomedical",
         "genomics",
         "literature" ;

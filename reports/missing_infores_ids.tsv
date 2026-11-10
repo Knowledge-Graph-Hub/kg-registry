@@ -467,7 +467,7 @@ kinhub	KinHub	DataSource	http://www.kinhub.org/	resource/kinhub/kinhub.md
 kisao	Kinetic Simulation Algorithm Ontology	Ontology	https://github.com/SED-ML/KiSAO	resource/kisao/kisao.md
 klocd	Knowledge Graph & Large Language Model-Enhanced Organ on a Chip Database	KnowledgeGraph	http://www.organchip.cn/	resource/klocd/klocd.md
 l1000fwd	L1000FWD	DataSource	https://maayanlab.cloud/l1000fwd/	resource/l1000fwd/l1000fwd.md
-labeledin	LabeledIn	DataSource	https://doi.org/10.1016/j.jbi.2014.08.004	resource/labeledin/labeledin.md
+labeledin	LabeledIn	DataSource	https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/	resource/labeledin/labeledin.md
 labo	clinical LABoratory Ontology	Ontology	https://github.com/OpenLHS/LABO	resource/labo/labo.md
 lepao	Lepidoptera Anatomy Ontology	Ontology	https://github.com/insect-morphology/lepao	resource/lepao/lepao.md
 lincs-l1000	LINCS L1000	DataSource	https://lincsproject.org/LINCS/	resource/lincs-l1000/lincs-l1000.md

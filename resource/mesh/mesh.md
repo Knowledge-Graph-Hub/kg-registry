@@ -2437,8 +2437,6 @@ products:
     source: mesh
   product_url: https://github.com/biobricks-ai/mesh-kg
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -3341,6 +3339,7 @@ products:
     source: acukg
   - relation_type: prov:wasDerivedFrom
     source: mesh
+  product_file_size: 71303
   product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/MeSH-Condition.csv
 - category: DocumentationProduct
   description: NLM Data Distribution program page, the preferred access point for

@@ -20,7 +20,7 @@ secondary_source:
 warnings:
 - The historical source website reported in the BioThings metadata, https_//gtrx.rbsapp.net/about.html,
   returned HTTP 404 during curation on 2026-06-02.
-- File was not able to be retrieved when checked on 2026-10-28_ HTTP 502 error when
+- File was not able to be retrieved when checked on 2026-11-10_ HTTP 502 error when
   accessing file
 layout: product_detail
 ---

@@ -2695,7 +2695,7 @@ resources:
   - anatomy and development
   homepage_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture
   id: acukg
-  last_modified_date: '2026-06-12T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   license:
     display_note: 'No license is declared for this resource. This is the most restrictive
@@ -2724,6 +2724,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -2745,6 +2747,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -2766,6 +2770,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -2773,6 +2779,33 @@ resources:
     - relation_type: prov:used
       source: snomedct
     product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json
+  - category: Product
+    description: Multilingual acupoint vocabulary listing the 361 standard acupoint
+      codes with Chinese names, transliterations, English, Pinyin, Korean, and Vietnamese
+      names.
+    format: csv
+    id: acukg.acupoint-vocabulary
+    name: AcuKG local acupoint vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: acukg
+    - relation_type: prov:hadPrimarySource
+      source: who
+    product_file_size: 14884
+    product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/local_acupoint_vocabulary.csv
+  - category: Product
+    description: List of MeSH descriptor IDs and terms used to normalize the conditions
+      represented in AcuKG.
+    format: csv
+    id: acukg.mesh-conditions
+    name: AcuKG MeSH condition list
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: acukg
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    product_file_size: 71303
+    product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/MeSH-Condition.csv
   publications:
   - authors:
     - Yiming Li
@@ -2792,9 +2825,12 @@ resources:
     doi: 10.1093/jamia/ocaf179
     id: doi:10.1093/jamia/ocaf179
     journal: Journal of the American Medical Informatics Association
+    preferred: true
     title: 'AcuKG: a comprehensive knowledge graph for medical acupuncture'
     year: '2026'
   repository: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture
+  synonyms:
+  - Acupuncture Knowledge Graph
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -9796,8 +9832,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -11391,8 +11425,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product
@@ -13348,13 +13380,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Anatomical Therapeutic Chemical Classification
@@ -13583,8 +13613,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   synonyms:
@@ -24211,8 +24239,6 @@ resources:
       source: aop-wiki
     product_url: https://github.com/biobricks-ai/aopwikirdf-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/aopwikirdf-kg
@@ -24355,8 +24381,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   repository: https://github.com/biobricks-ai/mesh-kg
@@ -31145,10 +31169,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
@@ -36425,6 +36445,26 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: bioportal
     product_url: https://bioportal.bioontology.org/ontologies/OBOE
+  - category: GraphicalInterface
+    description: Archived snapshot of the DOAF web interface (doa.nubic.northwestern.edu),
+      which supported gene-to-disease and disease-to-gene queries, batch queries,
+      and download of the DO-gene mappings. The live site is offline.
+    format: http
+    id: doaf.web
+    name: DOAF web interface (archived)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: doaf
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:used
+      source: doid
+    - relation_type: prov:used
+      source: bioportal
+    product_url: https://web.archive.org/web/20160601045226/http://doa.nubic.northwestern.edu/pages/about.php
+    warnings:
+    - The original site at http://doa.nubic.northwestern.edu did not resolve when
+      checked on 2026-11-10; the last Internet Archive captures date from 2016.
   publications:
   - authors:
     - Jennifer Vendetti
@@ -37827,8 +37867,6 @@ resources:
       source: biothings
     product_url: https://biothings.io/specs/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 204 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 204 error
       when accessing file'
   - category: ProgrammingInterface
@@ -48145,8 +48183,6 @@ resources:
       source: cellphonedb
     product_url: https://www.cellphonedb.org/downloads
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
@@ -54226,8 +54262,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -54268,13 +54302,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -57190,6 +57222,58 @@ resources:
     product_file_size: 1261625948
     product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
     repository: https://github.com/monarch-initiative/phenio
+  - category: Product
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      giving 17 core concepts with recommended definitions, the source vocabulary
+      and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI,
+      UniProt, and QUDT), steering committee approval dates, and example sources.
+    format: csv
+    id: pistoia-pgo.core_concepts_csv
+    name: PGO Core Concepts CSV (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 11226
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
+  - category: Product
+    description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      with the same content as the CSV release (recommended definitions and their
+      source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and
+      QUDT).
+    format: xlsx
+    id: pistoia-pgo.core_concepts_xlsx
+    name: PGO Core Concepts Excel (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 23347
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
   publications:
   - authors:
     - Adnan Malik
@@ -58933,8 +59017,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -59161,8 +59243,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
       when accessing file'
   - category: GraphProduct
@@ -60795,8 +60875,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubchem
     product_url: https://doi.org/10.5281/zenodo.675987
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: The Papyrus bioactivity dataset, distributed as versioned releases
       on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
       ligand-protein bioactivity records, compound structures, UniProt protein targets,
@@ -70734,6 +70813,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -70755,6 +70836,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -70776,6 +70859,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -89387,8 +89472,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -97594,21 +97677,25 @@ resources:
     - relation_type: prov:wasInformedBy
       source: rxnorm
   - category: Product
-    description: LabeledIn indication corpus described in the source publication,
-      containing human-reviewed drug-disease treatment relationships with links back
-      to source drug labels.
-    format: http
+    description: Pipe-delimited structured LabeledIn results (September 2014 release),
+      with one row per annotated drug label giving the DailyMed SPL Set ID, UMLS CUIs
+      for the annotated indications, and linked RxNorm ingredient, dose form, and
+      clinical drug RXCUIs.
+    format: txt
     id: labeledin.indications
-    name: LabeledIn Drug Indication Corpus
+    name: LabeledIn Structured Indications
     original_source:
     - relation_type: prov:hadPrimarySource
       source: labeledin
-    product_url: https://doi.org/10.1016/j.jbi.2014.08.004
+    product_file_size: 70793
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_Structured_Results.txt
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: dailymed
     - relation_type: prov:used
       source: rxnorm
+    - relation_type: prov:used
+      source: umls
   - category: GraphProduct
     description: Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse
       KP, exposing the multiomics knowledge graph served by the Multiomics Provider
@@ -97770,6 +97857,45 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikipathways
     product_url: https://spoke.ucsf.edu/data-tools
+  - category: Product
+    description: LabeledIn annotated corpus in pipe-delimited form, containing the
+      Indications and Usage section of each DailyMed drug label with expert indication
+      mentions marked up in inline XML tags carrying UMLS CUIs.
+    format: txt
+    id: labeledin.annotated-xml
+    name: LabeledIn Annotated XML Corpus
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 977027
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_annotated_XML.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
+  - category: Product
+    description: Crowdsourced LabeledIn extension (2015) in pipe-delimited structured
+      form, covering 3,004 Amazon Mechanical Turk tasks over 706 DailyMed drug labels,
+      with UMLS CUIs, RxNorm RXCUIs, and the majority-vote indication judgement. Annotated
+      XML and HTML versions and answer codes are in the same directory.
+    format: txt
+    id: labeledin.crowdsourced
+    name: LabeledIn Crowdsourced Indications
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 360250
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Crowdsourcing/Crowdsourced_Results.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -99364,8 +99490,6 @@ resources:
       source: dbnsfp
     product_url: https://usf.box.com/shared/static/ffwlywsat3q5ijypvunno3rg6steqfs8
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -99786,14 +99910,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error
-      when accessing file'
   - category: GraphProduct
     description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
       organism, site, enzyme, relation identifiers, and publication evidence.
@@ -112324,10 +112446,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
@@ -123024,6 +123142,26 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubtator
     product_url: https://pharos.nih.gov/graphql
+  - category: GraphicalInterface
+    description: Archived snapshot of the DOAF web interface (doa.nubic.northwestern.edu),
+      which supported gene-to-disease and disease-to-gene queries, batch queries,
+      and download of the DO-gene mappings. The live site is offline.
+    format: http
+    id: doaf.web
+    name: DOAF web interface (archived)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: doaf
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:used
+      source: doid
+    - relation_type: prov:used
+      source: bioportal
+    product_url: https://web.archive.org/web/20160601045226/http://doa.nubic.northwestern.edu/pages/about.php
+    warnings:
+    - The original site at http://doa.nubic.northwestern.edu did not resolve when
+      checked on 2026-11-10; the last Internet Archive captures date from 2016.
   publications:
   - authors:
     - Kibbe WA
@@ -129368,8 +129506,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -131128,8 +131264,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -131170,13 +131304,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -132358,8 +132490,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product
@@ -133271,8 +133401,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -133814,8 +133942,6 @@ resources:
       source: dsstoxdb
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -134415,6 +134541,27 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: opera
     product_url: https://ice.ntp.niehs.nih.gov/DATASETDESCRIPTION
+  - category: ProgrammingInterface
+    description: SRS REST web services (OpenAPI/Swagger documented, version v1.2)
+      returning JSON records for substances queried by CAS number, name or synonym,
+      EPA ID, internal tracking number, ITIS taxonomic serial number, CompTox DTXSID,
+      substance list acronym, classification, or characteristic, plus lookups of TSCA
+      generic substances by PMN or accession number. Records include identifiers such
+      as CAS numbers, DTXSIDs, InChI, and SMILES, and the synonyms used by each EPA
+      list.
+    format: http
+    id: epa-srs.rest_api
+    is_public: true
+    name: SRS REST Web Services
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: epa-srs
+    product_url: https://cdxapps.epa.gov/oms-substance-registry-services/swagger-ui/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: dsstoxdb
+    - relation_type: prov:wasInformedBy
+      source: itis
   publications:
   - authors:
     - Grulke CM
@@ -146269,8 +146416,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   publications:
@@ -148263,17 +148408,19 @@ resources:
     product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
     warnings: []
   - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release 50 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.human.gtf
-    latest_version: v49
+    latest_version: '50'
     name: GENCODE Human Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 93374019
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+    product_file_size: 124527720
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -148282,17 +148429,19 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbigene
   - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release M39 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.mouse.gtf
-    latest_version: M38
+    latest_version: M39
     name: GENCODE Mouse Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 37627563
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+    product_file_size: 91730109
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -150374,6 +150523,83 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubtator
     product_url: https://pharos.nih.gov/graphql
+  - category: Product
+    compression: gzip
+    description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+      genome assembly (reference chromosomes only) in GFF3 format.
+    format: gff
+    id: gencode.human.gff3
+    latest_version: '50'
+    name: GENCODE Human Annotations GFF3
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 160590749
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gff3.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    compression: gzip
+    description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+      genome assembly (reference chromosomes only) in GFF3 format.
+    format: gff
+    id: gencode.mouse.gff3
+    latest_version: M39
+    name: GENCODE Mouse Annotations GFF3
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 120486831
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gff3.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: DocumentationProduct
+    description: GENCODE documentation on data access, file formats, tags, and biotypes,
+      including links to Ensembl and UCSC Genome Browser views and track hubs for
+      GENCODE annotation.
+    format: http
+    id: gencode.docs
+    name: GENCODE Data Access Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: ensembl
+    - relation_type: prov:wasInformedBy
+      source: ucsc
+    product_url: https://www.gencodegenes.org/pages/data_access.html
   publications:
   - authors:
     - Dyer SC
@@ -152772,18 +152998,24 @@ resources:
     contact_details:
     - contact_type: url
       value: https://www.epa.gov/
+    - contact_type: url
+      value: https://www.epa.gov/data/forms/contact-us-about-system-registries
     label: U.S. Environmental Protection Agency
   creation_date: '2026-06-02T00:00:00Z'
-  description: EPA Substance Registry Services is the U.S. Environmental Protection
-    Agency's central system for information about substances tracked or regulated
-    by EPA or other sources, including chemicals, biological organisms, and substance
-    lists.
+  description: EPA Substance Registry Services (SRS) is the U.S. Environmental Protection
+    Agency's central registry for information about regulated and monitored substances,
+    including chemicals, biological organisms, and other substances listed in environmental
+    statutes and EPA data systems, as well as substances of interest from other federal
+    agencies, international organizations, and states. SRS supports EPA's Chemical
+    Identification and Biological Taxonomy data standards, records the names and synonyms
+    each EPA program or statute uses for a substance, and is a component of EPA's
+    System of Registries.
   domains:
   - environment
   - chemistry and biochemistry
   homepage_url: https://cdxapps.epa.gov/oms-substance-registry-services/about-srs
   id: epa-srs
-  last_modified_date: '2026-06-03T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   license:
     id: https://edg.epa.gov/epa_data_license.html
@@ -152792,7 +153024,10 @@ resources:
   products:
   - category: GraphicalInterface
     description: Public EPA Substance Registry Services search interface for looking
-      up substances tracked or regulated by EPA programs and other sources.
+      up substances tracked or regulated by EPA programs and other sources, by name,
+      CAS number, and other identifiers, with basic, advanced, and multi-substance
+      search. Search results and substance lists can be exported as Excel, JSON, or
+      XML files.
     format: http
     id: epa-srs.search
     name: EPA SRS Search
@@ -152812,7 +153047,7 @@ resources:
     product_url: https://cdxapps.epa.gov/oms-substance-registry-services/about-srs
   - category: ProgrammingInterface
     description: EPA SRS widget service for embedding a Substance Registry Services
-      search box in external web pages.
+      search box in external web pages using a JavaScript file served from ofmpub.epa.gov.
     format: http
     id: epa-srs.widget
     is_public: true
@@ -152821,6 +153056,39 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: epa-srs
     product_url: https://www.epa.gov/developers/data-data-products-substance-registry-services-widget
+  - category: ProgrammingInterface
+    description: SRS REST web services (OpenAPI/Swagger documented, version v1.2)
+      returning JSON records for substances queried by CAS number, name or synonym,
+      EPA ID, internal tracking number, ITIS taxonomic serial number, CompTox DTXSID,
+      substance list acronym, classification, or characteristic, plus lookups of TSCA
+      generic substances by PMN or accession number. Records include identifiers such
+      as CAS numbers, DTXSIDs, InChI, and SMILES, and the synonyms used by each EPA
+      list.
+    format: http
+    id: epa-srs.rest_api
+    is_public: true
+    name: SRS REST Web Services
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: epa-srs
+    product_url: https://cdxapps.epa.gov/oms-substance-registry-services/swagger-ui/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: dsstoxdb
+    - relation_type: prov:wasInformedBy
+      source: itis
+  - category: ProgrammingInterface
+    description: Exchange Network data exchange for SRS (version 3.0), providing services
+      for Exchange Network partners to retrieve full SRS records for a single substance,
+      pull substance lists, and submit substances and synonyms to SRS lists. The page
+      offers the full exchange package for download.
+    format: http
+    id: epa-srs.exchange_network
+    name: SRS Exchange Network Data Exchange
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: epa-srs
+    product_url: https://exchangenetwork.net/data-exchange/srs/
   - category: MappingProduct
     description: Downloadable Excel and CSV files containing DSSTox identifiers mapped
       to CAS numbers, InChIKeys, SMILES, molecular formulas, and other chemical identifiers
@@ -152846,6 +153114,8 @@ resources:
   synonyms:
   - EPA SRS
   - Substance Registry Services
+  - Substance Registry System
+  - SRS
 - activity_status: active
   category: DataSource
   contacts:
@@ -157098,8 +157368,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubchem
     product_url: https://doi.org/10.5281/zenodo.675987
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: The Papyrus bioactivity dataset, distributed as versioned releases
       on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
       ligand-protein bioactivity records, compound structures, UniProt protein targets,
@@ -162870,8 +163139,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
@@ -162885,8 +163152,6 @@ resources:
       source: fda-orange-book
     product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product
@@ -163030,8 +163295,6 @@ resources:
       source: fda-orphan-drugs
     product_url: https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions/designating-orphan-product-drugs-and-biological-products
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
@@ -173935,6 +174198,27 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pdb
     product_url: https://www.ncbi.nlm.nih.gov/protein/
+  - category: Product
+    description: NCBI FTP site providing bulk downloads for NCBI databases, including
+      GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump,
+      gene data files, and the PubMed baseline and update files.
+    format: mixed
+    id: ncbi.ftp
+    name: NCBI FTP Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    - relation_type: prov:wasDerivedFrom
+      source: genbank
+    - relation_type: prov:wasDerivedFrom
+      source: refseq
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    product_url: https://ftp.ncbi.nlm.nih.gov/
   publications:
   - authors:
     - Eric W. Sayers
@@ -175121,6 +175405,14 @@ resources:
   - NCBITaxon:9606
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: gencode-help@ebi.ac.uk
+    - contact_type: url
+      value: https://www.gencodegenes.org/pages/contact.html
+    label: GENCODE Helpdesk
   creation_date: '2025-11-26T00:00:00Z'
   description: GENCODE is a comprehensive and high-quality reference annotation of
     the human and mouse genomes, providing evidence-based gene annotations including
@@ -175128,24 +175420,27 @@ resources:
     genomic features based on manual curation and computational analysis.
   domains:
   - genomics
+  - non-coding RNA
   homepage_url: https://www.gencodegenes.org/
   id: gencode
-  last_modified_date: '2026-06-02T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   name: GENCODE
   products:
   - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release 50 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.human.gtf
-    latest_version: v49
+    latest_version: '50'
     name: GENCODE Human Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 93374019
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+    product_file_size: 124527720
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -175154,17 +175449,104 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbigene
   - category: Product
+    compression: gzip
+    description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+      genome assembly (reference chromosomes only) in GFF3 format.
+    format: gff
+    id: gencode.human.gff3
+    latest_version: '50'
+    name: GENCODE Human Annotations GFF3
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 160590749
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gff3.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    compression: gzip
+    description: Nucleotide sequences of all GENCODE human transcripts on the GRCh38
+      reference chromosomes, in FASTA format.
+    format: fasta
+    id: gencode.human.transcripts
+    latest_version: '50'
+    name: GENCODE Human Transcript Sequences
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 183554921
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.transcripts.fa.gz
+  - category: Product
+    compression: gzip
+    description: Amino acid sequences of GENCODE human protein-coding transcript translations
+      on the GRCh38 reference chromosomes, in FASTA format.
+    format: fasta
+    id: gencode.human.translations
+    latest_version: '50'
+    name: GENCODE Human Protein Translations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 21136991
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.pc_translations.fa.gz
+  - category: Product
+    compression: gzip
+    description: Current comprehensive GENCODE human annotation mapped back to the
+      older GRCh37 assembly, in GTF format.
+    format: gff
+    id: gencode.human.grch37.gtf
+    latest_version: 50lift37
+    name: GENCODE Human Annotations Lifted to GRCh37 GTF
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 159680082
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/GRCh37_mapping/gencode.v50lift37.annotation.gtf.gz
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release M39 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.mouse.gtf
-    latest_version: M38
+    latest_version: M39
     name: GENCODE Mouse Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 37627563
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+    product_file_size: 91730109
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -175172,6 +175554,48 @@ resources:
       source: mgi
     - relation_type: prov:wasInformedBy
       source: ncbigene
+  - category: Product
+    compression: gzip
+    description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+      genome assembly (reference chromosomes only) in GFF3 format.
+    format: gff
+    id: gencode.mouse.gff3
+    latest_version: M39
+    name: GENCODE Mouse Annotations GFF3
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 120486831
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gff3.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    compression: gzip
+    description: Nucleotide sequences of all GENCODE mouse transcripts on the GRCm39
+      reference chromosomes, in FASTA format.
+    format: fasta
+    id: gencode.mouse.transcripts
+    latest_version: M39
+    name: GENCODE Mouse Transcript Sequences
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 135512511
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.transcripts.fa.gz
+  - category: Product
+    compression: gzip
+    description: Amino acid sequences of GENCODE mouse protein-coding transcript translations
+      on the GRCm39 reference chromosomes, in FASTA format.
+    format: fasta
+    id: gencode.mouse.translations
+    latest_version: M39
+    name: GENCODE Mouse Protein Translations
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_file_size: 16190224
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.pc_translations.fa.gz
   - category: Product
     description: GENCODE Primary transcript set capturing minimal transcripts at protein
       coding genes
@@ -175183,6 +175607,31 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: gencode
     product_url: https://www.gencodegenes.org/pages/gencode_primary/
+  - category: Product
+    description: GENCODE FTP site hosting all current and past human and mouse releases,
+      with README files describing each file type.
+    format: http
+    id: gencode.ftp
+    name: GENCODE FTP Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/
+  - category: DocumentationProduct
+    description: GENCODE documentation on data access, file formats, tags, and biotypes,
+      including links to Ensembl and UCSC Genome Browser views and track hubs for
+      GENCODE annotation.
+    format: http
+    id: gencode.docs
+    name: GENCODE Data Access Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: ensembl
+    - relation_type: prov:wasInformedBy
+      source: ucsc
+    product_url: https://www.gencodegenes.org/pages/data_access.html
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -175941,15 +176390,39 @@ resources:
   publications:
   - authors:
     - Mudge JM
+    - Carbonell-Sala S
+    - Diekhans M
+    - Martinez JG
+    - Martin FJ
     - Frankish A
-    - Harrow J
-    - Flicek P
     doi: 10.1093/nar/gkae1078
     id: doi:10.1093/nar/gkae1078
     journal: Nucleic Acids Research
     preferred: true
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
     year: '2025'
+  - authors:
+    - Frankish A
+    - Carbonell-Sala S
+    - Diekhans M
+    - Tress ML
+    - Flicek P
+    doi: 10.1093/nar/gkac1071
+    id: doi:10.1093/nar/gkac1071
+    journal: Nucleic Acids Research
+    title: 'GENCODE: reference annotation for the human and mouse genomes in 2023'
+    year: '2023'
+  - authors:
+    - Harrow J
+    - Frankish A
+    - Gonzalez JM
+    - Guigó R
+    - Hubbard TJ
+    doi: 10.1101/gr.135350.111
+    id: doi:10.1101/gr.135350.111
+    journal: Genome Research
+    title: 'GENCODE: The reference human genome annotation for The ENCODE Project'
+    year: '2012'
   rrid: SCR_014966
   synonyms:
   - GENCODE
@@ -175957,6 +176430,7 @@ resources:
   taxon:
   - NCBITaxon:9606
   - NCBITaxon:10090
+  version: 50 (human), M39 (mouse)
 - activity_status: active
   category: DataSource
   contacts:
@@ -180375,8 +180849,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product
@@ -187466,8 +187938,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
       when accessing file'
   - category: GraphicalInterface
@@ -194276,8 +194746,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -194318,13 +194786,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -196844,8 +197310,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -207059,8 +207523,6 @@ resources:
     warnings:
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error
       when accessing file'
   - category: ProgrammingInterface
@@ -216409,17 +216871,19 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: wikipathways
   - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release 50 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.human.gtf
-    latest_version: v49
+    latest_version: '50'
     name: GENCODE Human Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 93374019
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+    product_file_size: 124527720
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -219148,6 +219612,36 @@ resources:
     product_file_size: 1261625948
     product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
     repository: https://github.com/monarch-initiative/phenio
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
   publications:
   - authors:
     - Seal RL
@@ -228873,8 +229367,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -228915,13 +229407,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -232513,13 +233003,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: The SPOKE-OKN knowledge graph, an OKN-hosted RDF publication of the
       SPOKE biomedical and environmental health knowledge graph, served through FRINK
@@ -245123,12 +245611,10 @@ resources:
       source: imo-knowledge-graph
     product_url: https://developer.imohealth.com/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
-      to URL'
   - category: DocumentationProduct
     description: Product page describing the IMO Health Knowledge Graph, its clinical
       context layer, curation model, and use in grounding clinical AI.
@@ -250672,10 +251158,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
@@ -251870,8 +252352,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -257259,6 +257739,27 @@ resources:
       source: wikipedia
     - relation_type: prov:wasInformedBy
       source: wikispecies
+  - category: ProgrammingInterface
+    description: SRS REST web services (OpenAPI/Swagger documented, version v1.2)
+      returning JSON records for substances queried by CAS number, name or synonym,
+      EPA ID, internal tracking number, ITIS taxonomic serial number, CompTox DTXSID,
+      substance list acronym, classification, or characteristic, plus lookups of TSCA
+      generic substances by PMN or accession number. Records include identifiers such
+      as CAS numbers, DTXSIDs, InChI, and SMILES, and the synonyms used by each EPA
+      list.
+    format: http
+    id: epa-srs.rest_api
+    is_public: true
+    name: SRS REST Web Services
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: epa-srs
+    product_url: https://cdxapps.epa.gov/oms-substance-registry-services/swagger-ui/
+    secondary_source:
+    - relation_type: prov:wasInformedBy
+      source: dsstoxdb
+    - relation_type: prov:wasInformedBy
+      source: itis
   taxon:
   - NCBITaxon:2759
 - activity_status: active
@@ -262897,8 +263398,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product
@@ -263706,8 +264205,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -264032,8 +264529,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
       when accessing file'
   - category: ProcessProduct
@@ -264293,13 +264788,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -264754,7 +265247,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://monarchinitiative.org/kg/downloads
   id: kg-monarch
-  last_modified_date: '2026-11-10T16:46:28Z'
+  last_modified_date: '2026-11-10T18:03:22Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -267881,8 +268374,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product
@@ -268740,8 +269231,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   publications:
@@ -270837,8 +271326,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -275414,8 +275901,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
       when accessing file'
   publications:
@@ -286250,6 +286735,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -286271,6 +286758,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -286292,6 +286781,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -287030,8 +287521,6 @@ resources:
       source: mesh
     product_url: https://github.com/biobricks-ai/mesh-kg
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -287924,6 +288413,86 @@ resources:
       source: biosample
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
     repository: https://github.com/ncbi/entrez-direct
+  - category: Product
+    description: List of MeSH descriptor IDs and terms used to normalize the conditions
+      represented in AcuKG.
+    format: csv
+    id: acukg.mesh-conditions
+    name: AcuKG MeSH condition list
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: acukg
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    product_file_size: 71303
+    product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/MeSH-Condition.csv
+  - category: DocumentationProduct
+    description: NLM Data Distribution program page, the preferred access point for
+      bulk downloads of MEDLINE/PubMed baseline and daily update citation files (XML),
+      MeSH data, and NLM catalog record data, with the associated terms and conditions.
+    format: http
+    id: nlm.data-distribution
+    name: NLM Data Distribution
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nlm
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    product_url: https://www.nlm.nih.gov/databases/download/data_distrib_main.html
+  - category: Product
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      giving 17 core concepts with recommended definitions, the source vocabulary
+      and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI,
+      UniProt, and QUDT), steering committee approval dates, and example sources.
+    format: csv
+    id: pistoia-pgo.core_concepts_csv
+    name: PGO Core Concepts CSV (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 11226
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
+  - category: Product
+    description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      with the same content as the CSV release (recommended definitions and their
+      source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and
+      QUDT).
+    format: xlsx
+    id: pistoia-pgo.core_concepts_xlsx
+    name: PGO Core Concepts Excel (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 23347
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
   publications:
   - authors:
     - Lipscomb CE
@@ -290077,17 +290646,19 @@ resources:
     product_file_size: 522141103
     product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/dumps/enrichr-kg-042123.dump
   - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release M39 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.mouse.gtf
-    latest_version: M38
+    latest_version: M39
     name: GENCODE Mouse Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 37627563
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+    product_file_size: 91730109
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -293360,6 +293931,58 @@ resources:
       source: mi
     product_file_size: 136568
     product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/MI.tar.gz
+  - category: Product
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      giving 17 core concepts with recommended definitions, the source vocabulary
+      and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI,
+      UniProt, and QUDT), steering committee approval dates, and example sources.
+    format: csv
+    id: pistoia-pgo.core_concepts_csv
+    name: PGO Core Concepts CSV (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 11226
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
+  - category: Product
+    description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      with the same content as the CSV release (recommended definitions and their
+      source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and
+      QUDT).
+    format: xlsx
+    id: pistoia-pgo.core_concepts_xlsx
+    name: PGO Core Concepts Excel (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 23347
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
   publications:
   - authors:
     - Henning Hermjakob
@@ -295046,10 +295669,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
@@ -298840,7 +299459,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
@@ -298856,9 +299475,6 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
       in CSV format.
@@ -298884,7 +299500,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
@@ -298900,9 +299516,6 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
       for human, mouse, rat, and 25+ other species.
@@ -298928,7 +299541,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
@@ -298944,9 +299557,6 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
       reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -298972,7 +299582,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
@@ -298988,9 +299598,6 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
       comparisons.
@@ -299016,7 +299623,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-10: Timeout connecting
@@ -299032,9 +299639,6 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - description: The MechRepoNet knowledge graph in its original format
     format: mixed
     id: mechreponet.kg
@@ -304953,8 +305557,6 @@ resources:
     warnings:
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error
       when accessing file'
   - category: ProcessProduct
@@ -305714,8 +306316,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -305756,13 +306356,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
@@ -318271,23 +318869,91 @@ resources:
   - literature
   homepage_url: https://www.ncbi.nlm.nih.gov/
   id: ncbi
-  last_modified_date: '2026-05-30T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   license:
-    id: https://www.nlm.nih.gov/web_policies.html
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
     label: Public Domain
   name: National Center for Biotechnology Information
   products:
-  - category: DocumentationProduct
-    description: NCBI Datasets API documentation for genome, gene, taxonomy, virus,
-      and BioSample programmatic access.
+  - category: GraphicalInterface
+    description: NCBI web portal with Entrez search across NCBI literature, sequence,
+      gene, protein, genome, variation, taxonomy and chemical databases.
+    format: http
+    id: ncbi.portal
+    name: NCBI Web Portal
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    product_url: https://www.ncbi.nlm.nih.gov/
+  - category: ProgrammingInterface
+    connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+    description: Entrez Programming Utilities (E-utilities), a set of server-side
+      programs (ESearch, EFetch, ESummary, ELink, EInfo and others) providing a URL-based
+      API for searching and retrieving records from the Entrez databases. An API key
+      raises the request rate limit.
+    format: http
+    id: ncbi.eutils
+    is_public: true
+    name: NCBI E-utilities
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+  - category: ProgrammingInterface
+    connection_url: https://api.ncbi.nlm.nih.gov/datasets/v2/
+    description: NCBI Datasets v2 REST API for programmatic access to genome, gene,
+      taxonomy, virus, and BioSample data and metadata, with companion datasets and
+      dataformat command-line tools.
     format: http
     id: ncbi.datasets-api
+    is_public: true
     name: NCBI Datasets API
     original_source:
     - relation_type: prov:hadPrimarySource
       source: ncbi
     product_url: https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/rest-api/
+  - category: GraphicalInterface
+    description: NCBI Datasets web interface for browsing and downloading genome assemblies,
+      gene records and associated sequence, annotation and metadata packages.
+    format: http
+    id: ncbi.datasets
+    name: NCBI Datasets
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    product_url: https://www.ncbi.nlm.nih.gov/datasets/
+  - category: GraphicalInterface
+    description: BLAST (Basic Local Alignment Search Tool) web service for comparing
+      nucleotide or protein query sequences against NCBI sequence databases.
+    format: http
+    id: ncbi.blast
+    name: NCBI BLAST
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    product_url: https://blast.ncbi.nlm.nih.gov/Blast.cgi
+  - category: Product
+    description: NCBI FTP site providing bulk downloads for NCBI databases, including
+      GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump,
+      gene data files, and the PubMed baseline and update files.
+    format: mixed
+    id: ncbi.ftp
+    name: NCBI FTP Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    - relation_type: prov:wasDerivedFrom
+      source: genbank
+    - relation_type: prov:wasDerivedFrom
+      source: refseq
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    product_url: https://ftp.ncbi.nlm.nih.gov/
   - category: DataModelProduct
     description: NCBI Genetic Codes tables summarizing translation tables used in
       GenBank and the NCBI taxonomy.
@@ -318675,7 +319341,38 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: ncbi
     product_url: https://seqapass.epa.gov/seqapass/
+  publications:
+  - authors:
+    - Sayers EW
+    - Bolton EE
+    - Fine AM
+    - Kelly C
+    - Kim S
+    - Landrum M
+    - Lathrop S
+    - Malheiro A
+    - Murphy TD
+    - Phan L
+    - Pujar S
+    - Trawick BW
+    - Schneider VA
+    - Pruitt KD
+    doi: 10.1093/nar/gkaf1060
+    id: doi:10.1093/nar/gkaf1060
+    journal: Nucleic Acids Research
+    preferred: true
+    title: Database resources of the National Center for Biotechnology Information
+      in 2026
+    year: '2026'
+  repository: https://github.com/ncbi
   rrid: SCR_006472
+  synonyms:
+  - NCBI
+  warnings:
+  - Some content served by NCBI, including PubMed Central articles, Bookshelf content,
+    OMIM and parts of PubChem, may be protected by copyright held by third parties;
+    NCBI places no restrictions on its molecular data, but submitters may claim rights
+    to some records.
 - activity_status: active
   category: Aggregator
   contacts:
@@ -321155,17 +321852,19 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbitaxon
   - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release 50 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.human.gtf
-    latest_version: v49
+    latest_version: '50'
     name: GENCODE Human Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 93374019
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+    product_file_size: 124527720
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -321174,17 +321873,19 @@ resources:
     - relation_type: prov:wasInformedBy
       source: ncbigene
   - category: Product
+    compression: gzip
     description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
-      genome assembly in GTF format
+      genome assembly (reference chromosomes only) in GTF format. Release M39 corresponds
+      to Ensembl 116.
     format: gff
     id: gencode.mouse.gtf
-    latest_version: M38
+    latest_version: M39
     name: GENCODE Mouse Annotations GTF
     original_source:
     - relation_type: prov:hadPrimarySource
       source: gencode
-    product_file_size: 37627563
-    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+    product_file_size: 91730109
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gtf.gz
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: ensembl
@@ -321229,8 +321930,6 @@ resources:
     warnings:
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error
       when accessing file'
   - category: ProgrammingInterface
@@ -321907,8 +322606,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -323288,8 +323985,6 @@ resources:
     warnings:
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: GraphicalInterface
@@ -324066,6 +324761,77 @@ resources:
     product_file_size: 1261625948
     product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
     repository: https://github.com/monarch-initiative/phenio
+  - category: GraphicalInterface
+    description: Archived snapshot of the DOAF web interface (doa.nubic.northwestern.edu),
+      which supported gene-to-disease and disease-to-gene queries, batch queries,
+      and download of the DO-gene mappings. The live site is offline.
+    format: http
+    id: doaf.web
+    name: DOAF web interface (archived)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: doaf
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:used
+      source: doid
+    - relation_type: prov:used
+      source: bioportal
+    product_url: https://web.archive.org/web/20160601045226/http://doa.nubic.northwestern.edu/pages/about.php
+    warnings:
+    - The original site at http://doa.nubic.northwestern.edu did not resolve when
+      checked on 2026-11-10; the last Internet Archive captures date from 2016.
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    description: NCBI FTP site providing bulk downloads for NCBI databases, including
+      GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump,
+      gene data files, and the PubMed baseline and update files.
+    format: mixed
+    id: ncbi.ftp
+    name: NCBI FTP Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    - relation_type: prov:wasDerivedFrom
+      source: genbank
+    - relation_type: prov:wasDerivedFrom
+      source: refseq
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    product_url: https://ftp.ncbi.nlm.nih.gov/
   publications:
   - authors:
     - Donna Maglott
@@ -327825,6 +328591,27 @@ resources:
     product_file_size: 1261625948
     product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
     repository: https://github.com/monarch-initiative/phenio
+  - category: Product
+    description: NCBI FTP site providing bulk downloads for NCBI databases, including
+      GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump,
+      gene data files, and the PubMed baseline and update files.
+    format: mixed
+    id: ncbi.ftp
+    name: NCBI FTP Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    - relation_type: prov:wasDerivedFrom
+      source: genbank
+    - relation_type: prov:wasDerivedFrom
+      source: refseq
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    product_url: https://ftp.ncbi.nlm.nih.gov/
   publications:
   - authors:
     - Schoch CL
@@ -330023,6 +330810,58 @@ resources:
       source: vt
     product_file_size: 324416
     product_url: http://purl.obolibrary.org/obo/scdo.obo
+  - category: Product
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      giving 17 core concepts with recommended definitions, the source vocabulary
+      and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI,
+      UniProt, and QUDT), steering committee approval dates, and example sources.
+    format: csv
+    id: pistoia-pgo.core_concepts_csv
+    name: PGO Core Concepts CSV (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 11226
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
+  - category: Product
+    description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      with the same content as the CSV release (recommended definitions and their
+      source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and
+      QUDT).
+    format: xlsx
+    id: pistoia-pgo.core_concepts_xlsx
+    name: PGO Core Concepts Excel (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 23347
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
   publications:
   - authors:
     - Nicholas Sioutos
@@ -333303,6 +334142,8 @@ resources:
     contact_details:
     - contact_type: url
       value: https://support.nlm.nih.gov/
+    - contact_type: email
+      value: custserv@nlm.nih.gov
     label: National Library of Medicine
   creation_date: '2026-02-26T00:00:00Z'
   description: The National Library of Medicine is the world's largest biomedical
@@ -333313,10 +334154,10 @@ resources:
   - literature
   homepage_url: https://www.nlm.nih.gov/
   id: nlm
-  last_modified_date: '2026-05-30T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   license:
-    id: https://www.nlm.nih.gov/web_policies.html
+    id: https://www.nlm.nih.gov/web_policies.html#copyright
     label: Public Domain
   name: National Library of Medicine
   products:
@@ -333330,6 +334171,53 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: nlm
     product_url: https://www.nlm.nih.gov/
+  - category: DocumentationProduct
+    description: NLM Data Distribution program page, the preferred access point for
+      bulk downloads of MEDLINE/PubMed baseline and daily update citation files (XML),
+      MeSH data, and NLM catalog record data, with the associated terms and conditions.
+    format: http
+    id: nlm.data-distribution
+    name: NLM Data Distribution
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nlm
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    product_url: https://www.nlm.nih.gov/databases/download/data_distrib_main.html
+  - category: Product
+    description: Bulk downloads of NLM bibliographic catalog records for books, journals
+      and other materials in NLM's collections (CatfilePlus, Catfile and Serfile),
+      as baseline and update files in NLMXML, MARCXML and MARC 21 formats.
+    format: mixed
+    id: nlm.catalog-records
+    name: NLM Catalog Record Data
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nlm
+    product_url: https://www.nlm.nih.gov/databases/download/catalog.html
+  - category: GraphicalInterface
+    description: NLM Catalog, a search interface for bibliographic records of journals,
+      books, audiovisuals and other materials in NLM's collections, including NLM
+      Unique IDs and journal indexing status.
+    format: http
+    id: nlm.catalog
+    name: NLM Catalog
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nlm
+    product_url: https://www.ncbi.nlm.nih.gov/nlmcatalog/
+  - category: GraphicalInterface
+    description: NLM Data Discovery, a catalog of NLM products and services with links
+      to product information, data downloads, APIs and other programmatic interfaces.
+    format: http
+    id: nlm.data-discovery
+    name: NLM Data Discovery
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nlm
+    product_url: https://datadiscovery.nlm.nih.gov/
   - category: Product
     description: nlm Nodes TSV
     format: tsv
@@ -333480,6 +334368,14 @@ resources:
       source: nlm
     product_file_size: 12675
     product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.json
+  rrid: SCR_011446
+  synonyms:
+  - NLM
+  warnings:
+  - NLM data include U.S. government works not protected by U.S. copyright, but also
+    abstracts and other material that may be protected by copyright; bulk downloads
+    are subject to the NLM Terms and Conditions, which require acknowledging NLM as
+    the source.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -333886,14 +334782,11 @@ resources:
       source: noaa-ncei
     product_url: https://www.ncei.noaa.gov/products/international-best-track-archive
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
       without response''))'
     - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
-      to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
-      without response''))'
   - category: GraphProduct
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating
       30+ environmental and geospatial data layers accessible through SPARQL endpoint
@@ -335196,8 +336089,6 @@ resources:
     warnings:
     - The SFTP service requires a NODE account and was not tested when checked on
       2026-10-04. Host and ports are taken from the NODE help pages.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-      to URL: No connection adapters were found for ''sftp://fms.biosino.org'''
     - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: No connection adapters were found for ''sftp://fms.biosino.org'''
   - category: GraphicalInterface
@@ -339901,6 +340792,58 @@ resources:
       source: vt
     product_file_size: 324416
     product_url: http://purl.obolibrary.org/obo/scdo.obo
+  - category: Product
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      giving 17 core concepts with recommended definitions, the source vocabulary
+      and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI,
+      UniProt, and QUDT), steering committee approval dates, and example sources.
+    format: csv
+    id: pistoia-pgo.core_concepts_csv
+    name: PGO Core Concepts CSV (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 11226
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
+  - category: Product
+    description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      with the same content as the CSV release (recommended definitions and their
+      source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and
+      QUDT).
+    format: xlsx
+    id: pistoia-pgo.core_concepts_xlsx
+    name: PGO Core Concepts Excel (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 23347
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
   publications:
   - authors:
     - Bandrowski A
@@ -345728,8 +346671,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -346108,13 +347049,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Ontology for General Medical Science (OGMS),
@@ -351261,13 +352200,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs,
       targets, diseases, and associations
@@ -356371,8 +357308,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
       when accessing file'
   publications:
@@ -361567,13 +362502,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX distribution of the SRI-Reference KG
     format: kgx
@@ -367401,8 +368334,7 @@ resources:
     logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
   name: Papyrus
   products:
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: The Papyrus bioactivity dataset, distributed as versioned releases
       on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
       ligand-protein bioactivity records, compound structures, UniProt protein targets,
@@ -376449,6 +377381,36 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pdb
     product_url: https://www.ncbi.nlm.nih.gov/protein/
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
   publications:
   - authors:
     - wwPDB consortium
@@ -382753,13 +383715,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -389348,7 +390308,7 @@ resources:
   - general
   homepage_url: https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/
   id: pistoia-pgo
-  last_modified_date: '2026-06-02T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -389357,8 +390317,10 @@ resources:
   name: Pistoia Alliance Pharma General Ontology
   products:
   - category: OntologyProduct
-    description: GitHub repository containing the PGO core concepts, documentation,
-      and LinkML schemas
+    description: GitHub repository containing the PGO core concept list (Markdown,
+      CSV, and Excel), per-concept documentation pages, concept diagrams, and the
+      source of the documentation website. Documentation releases are tagged (latest
+      docs-public-V1.0.2, October 2026).
     format: http
     id: pistoia-pgo.github
     name: PGO GitHub Repository
@@ -389377,8 +390339,8 @@ resources:
       source: pistoia-pgo
     product_url: https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/
   - category: DocumentationProduct
-    description: List of PGO Version 1.0 core concepts defining essential entities
-      for pharmaceutical R&D data exchange
+    description: Markdown list of the PGO Version 1.0 core concepts defining essential
+      entities for pharmaceutical R&D data exchange
     format: txt
     id: pistoia-pgo.core_concepts
     name: PGO Core Concepts (Version 1.0)
@@ -389388,7 +390350,10 @@ resources:
     product_file_size: 16543
     product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/2025_PGO_V1.0_core_concepts.md
   - category: Product
-    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      giving 17 core concepts with recommended definitions, the source vocabulary
+      and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI,
+      UniProt, and QUDT), steering committee approval dates, and example sources.
     format: csv
     id: pistoia-pgo.core_concepts_csv
     name: PGO Core Concepts CSV (Version 1.0)
@@ -389397,24 +390362,97 @@ resources:
       source: pistoia-pgo
     product_file_size: 11226
     product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
+  - category: Product
+    description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      with the same content as the CSV release (recommended definitions and their
+      source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and
+      QUDT).
+    format: xlsx
+    id: pistoia-pgo.core_concepts_xlsx
+    name: PGO Core Concepts Excel (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 23347
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
   - category: DocumentationProduct
     description: High-level use cases demonstrating PGO applications in pharmaceutical
-      data exchange
+      data exchange (project deliverable D2.2)
     format: http
     id: pistoia-pgo.use_cases
     name: PGO Use Cases
     original_source:
     - relation_type: prov:hadPrimarySource
       source: pistoia-pgo
-    product_url: https://www.pistoiaalliance.org/resource-library/pharma-general-ontology-use-cases/
+    product_url: https://pistoiaalliance.org/resource-library/pharma-general-ontology-use-cases/
+  - category: DocumentationProduct
+    description: Pistoia Alliance project page for PGO, linking project deliverables
+      such as posters, the Phase 1 webinar, the use case report, governance documents,
+      and the roadmap. Some documents require a Pistoia Alliance member login.
+    format: http
+    id: pistoia-pgo.project_page
+    name: PGO Project Page
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_url: https://pistoiaalliance.org/project/pharma-general-ontology/
+  publications:
+  - authors:
+    - Joshua Valdez
+    - Philippe Rocca-Serra
+    - Markus Hartmann
+    - Darko Hric
+    - Asiyah Yu Lin
+    - Birgit Meldal
+    - Peter McQuilton
+    - Riccardo Mariani
+    - Martin Romacker
+    - Giovanni Nisato
+    - Ben Gardner
+    id: https://ceur-ws.org/Vol-4196/paper_3.pdf
+    journal: CEUR Workshop Proceedings
+    preferred: true
+    title: 'The Pistoia Alliance Pharma General Ontology: Experience Using LinkML
+      in Pharma'
+    year: '2025'
   repository: https://github.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO
   synonyms:
   - PGO
   - Pharma General Ontology
+  - PGO-Terminology
   version: '1.0'
   warnings:
   - The repository README says the documentation is a work in progress and that listed
     sources are not recommendations at this stage.
+  - PGO is currently released as a list of core concepts with recommended definitions
+    (Markdown, CSV, and Excel) rather than as an OWL or LinkML ontology file; a machine-readable
+    version of PGO-terminology is on the 2026 roadmap.
 - activity_status: active
   category: Ontology
   collection:
@@ -403192,8 +404230,6 @@ resources:
     warnings:
     - Feed was not able to be retrieved when checked on 2026-10-04. The URL listed
       on the ProteomeXchange subscription page returned HTTP 404.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
@@ -406737,8 +407773,6 @@ resources:
     warnings:
     - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
       returned HTTP 404 during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error
       when accessing file'
   - category: ProgrammingInterface
@@ -408613,8 +409647,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product
@@ -410314,14 +411346,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error
-      when accessing file'
   - category: Product
     description: Phospho.ELM version 9.0 dataset request page for phosphorylation
       instances with accessions, sequences, residue positions, phosphorylated residues,
@@ -410388,6 +411418,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -410409,6 +411441,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -410430,6 +411464,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -412094,8 +413130,6 @@ resources:
     warnings:
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: GraphicalInterface
@@ -412659,6 +413693,72 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pubmed
     product_url: https://camera.od.nih.gov/explore
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    description: NCBI FTP site providing bulk downloads for NCBI databases, including
+      GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump,
+      gene data files, and the PubMed baseline and update files.
+    format: mixed
+    id: ncbi.ftp
+    name: NCBI FTP Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    - relation_type: prov:wasDerivedFrom
+      source: genbank
+    - relation_type: prov:wasDerivedFrom
+      source: refseq
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    product_url: https://ftp.ncbi.nlm.nih.gov/
+  - category: DocumentationProduct
+    description: NLM Data Distribution program page, the preferred access point for
+      bulk downloads of MEDLINE/PubMed baseline and daily update citation files (XML),
+      MeSH data, and NLM catalog record data, with the associated terms and conditions.
+    format: http
+    id: nlm.data-distribution
+    name: NLM Data Distribution
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: nlm
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    - relation_type: prov:wasDerivedFrom
+      source: mesh
+    product_url: https://www.nlm.nih.gov/databases/download/data_distrib_main.html
   publications:
   - authors:
     - Eric W Sayers
@@ -414957,8 +416057,6 @@ resources:
       source: rapdb
     product_url: https://rapdb.dna.affrc.go.jp/download/index.html
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: GraphProduct
@@ -422087,13 +423185,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -428127,6 +429223,57 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pdb
     product_url: https://www.ncbi.nlm.nih.gov/protein/
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    description: NCBI FTP site providing bulk downloads for NCBI databases, including
+      GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump,
+      gene data files, and the PubMed baseline and update files.
+    format: mixed
+    id: ncbi.ftp
+    name: NCBI FTP Site
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ncbi
+    - relation_type: prov:wasDerivedFrom
+      source: genbank
+    - relation_type: prov:wasDerivedFrom
+      source: refseq
+    - relation_type: prov:wasDerivedFrom
+      source: ncbitaxon
+    - relation_type: prov:wasDerivedFrom
+      source: ncbigene
+    - relation_type: prov:wasDerivedFrom
+      source: pubmed
+    product_url: https://ftp.ncbi.nlm.nih.gov/
   publications:
   - authors:
     - Nuala A. O'Leary
@@ -430135,8 +431282,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   publications:
@@ -441464,16 +442609,20 @@ resources:
     contact_details:
     - contact_type: email
       value: support@ror.org
+    - contact_type: github
+      value: ror-community
     label: ROR
   creation_date: '2026-02-26T00:00:00Z'
   description: The Research Organization Registry is a global, community-led registry
     of open persistent identifiers and metadata for research and funding organizations.
   domains:
   - research funding
+  - literature
+  - scholarly communication
   - general
   homepage_url: https://ror.org/
   id: ror
-  last_modified_date: '2026-05-30T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -441481,24 +442630,53 @@ resources:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: Research Organization Registry
   products:
-  - category: ProgrammingInterface
-    description: REST API for searching and retrieving ROR organization records.
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing ROR organization records
+      by name, identifier, location, and other attributes.
     format: http
-    id: ror.api
-    name: ROR REST API Documentation
+    id: ror.search
+    name: ROR Search
     original_source:
     - relation_type: prov:hadPrimarySource
       source: ror
-    product_url: https://ror.readme.io/docs/rest-api
+    product_url: https://ror.org/search
+  - category: ProgrammingInterface
+    description: Open REST API (v2) for searching and retrieving ROR organization
+      records, including keyword and external identifier search (GRID, ISNI, Wikidata,
+      Crossref Funder ID), advanced filtering, and matching of free-text affiliation
+      strings to ROR IDs. No registration is required; requests are rate-limited per
+      IP address.
+    format: http
+    id: ror.api
+    name: ROR REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ror
+    - relation_type: prov:wasInformedBy
+      source: wikidata
+    product_url: https://api.ror.org/v2/organizations
+    repository: https://github.com/ror-community/ror-api
   - category: Product
-    description: Monthly ROR registry data dump available in JSON and CSV formats.
-    format: json
+    description: Full ROR registry data dump, released on Zenodo at least monthly
+      as a zip containing JSON (format of record) and CSV files in ROR Schema 2.x.
+    format: mixed
     id: ror.data-dump
     name: ROR Data Dump
     original_source:
     - relation_type: prov:hadPrimarySource
       source: ror
     product_url: https://doi.org/10.5281/zenodo.6347574
+  - category: DocumentationProduct
+    description: Technical documentation for ROR, covering the REST API, affiliation
+      matching, the data dump, and the ROR record schema.
+    format: http
+    id: ror.docs
+    name: ROR Technical Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ror
+    product_url: https://ror.readme.io/
+    repository: https://github.com/ror-community/ror-docs
   - category: Product
     description: ror Nodes TSV
     format: tsv
@@ -441576,6 +442754,19 @@ resources:
       source: ror
     product_file_size: 2333177
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv
+  publications:
+  - authors:
+    - Lammey R
+    doi: 10.6087/kcse.192
+    id: doi:10.6087/kcse.192
+    journal: Science Editing
+    title: 'Solutions for identification problems: a look at the Research Organization
+      Registry'
+    year: '2020'
+  repository: https://github.com/ror-community
+  rrid: SCR_021891
+  synonyms:
+  - ROR
 - activity_status: active
   category: Ontology
   collection:
@@ -442500,21 +443691,25 @@ resources:
     - relation_type: prov:wasInformedBy
       source: rxnorm
   - category: Product
-    description: LabeledIn indication corpus described in the source publication,
-      containing human-reviewed drug-disease treatment relationships with links back
-      to source drug labels.
-    format: http
+    description: Pipe-delimited structured LabeledIn results (September 2014 release),
+      with one row per annotated drug label giving the DailyMed SPL Set ID, UMLS CUIs
+      for the annotated indications, and linked RxNorm ingredient, dose form, and
+      clinical drug RXCUIs.
+    format: txt
     id: labeledin.indications
-    name: LabeledIn Drug Indication Corpus
+    name: LabeledIn Structured Indications
     original_source:
     - relation_type: prov:hadPrimarySource
       source: labeledin
-    product_url: https://doi.org/10.1016/j.jbi.2014.08.004
+    product_file_size: 70793
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_Structured_Results.txt
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: dailymed
     - relation_type: prov:used
       source: rxnorm
+    - relation_type: prov:used
+      source: umls
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -443038,6 +444233,45 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: cl
     product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+  - category: Product
+    description: LabeledIn annotated corpus in pipe-delimited form, containing the
+      Indications and Usage section of each DailyMed drug label with expert indication
+      mentions marked up in inline XML tags carrying UMLS CUIs.
+    format: txt
+    id: labeledin.annotated-xml
+    name: LabeledIn Annotated XML Corpus
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 977027
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_annotated_XML.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
+  - category: Product
+    description: Crowdsourced LabeledIn extension (2015) in pipe-delimited structured
+      form, covering 3,004 Amazon Mechanical Turk tasks over 706 DailyMed drug labels,
+      with UMLS CUIs, RxNorm RXCUIs, and the majority-vote indication judgement. Annotated
+      XML and HTML versions and answer codes are in the same directory.
+    format: txt
+    id: labeledin.crowdsourced
+    name: LabeledIn Crowdsourced Indications
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 360250
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Crowdsourcing/Crowdsourced_Results.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
   publications:
   - authors:
     - Nelson SJ
@@ -446109,8 +447343,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   publications:
@@ -457359,6 +458591,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -457380,6 +458614,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -457401,6 +458637,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -463350,8 +464588,6 @@ resources:
       source: ssurgo
     product_url: https://nrcs.app.box.com/v/soils
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -468295,8 +469531,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -468337,13 +469571,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes file for JensenLab DISEASES KG
     format: kgx-jsonl
@@ -475078,14 +476310,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-09-08: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
-      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -476359,13 +477589,11 @@ resources:
       source: tcrd
     product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
       The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are
       pending relocation to a new home; no live download is currently available.'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     description: KGX nodes for Molecular Data KP
     format: kgx
@@ -478457,8 +479685,6 @@ resources:
       source: tga-approved-terminology
     product_url: https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: DocumentationProduct
@@ -478472,8 +479698,6 @@ resources:
       source: tga-approved-terminology
     product_url: https://www.tga.gov.au/sites/default/files/2024-10/tga-approved-terminology-therapeutic-goods.pdf
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: GraphicalInterface
@@ -487198,8 +488422,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -490926,6 +492148,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -490947,6 +492171,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -490968,6 +492194,8 @@ resources:
       source: pubmed
     - relation_type: prov:hadPrimarySource
       source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
     - relation_type: prov:used
       source: mesh
     - relation_type: prov:used
@@ -495412,6 +496640,21 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: biocarta
     product_url: https://maayanlab.cloud/Enrichr/#libraries
+  - category: DocumentationProduct
+    description: GENCODE documentation on data access, file formats, tags, and biotypes,
+      including links to Ensembl and UCSC Genome Browser views and track hubs for
+      GENCODE annotation.
+    format: http
+    id: gencode.docs
+    name: GENCODE Data Access Documentation
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: ensembl
+    - relation_type: prov:wasInformedBy
+      source: ucsc
+    product_url: https://www.gencodegenes.org/pages/data_access.html
   publications:
   - authors:
     - W. James Kent
@@ -498259,6 +499502,65 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: nmcd
     product_url: https://github.com/jvasilakes/iDISK
+  - category: Product
+    description: Pipe-delimited structured LabeledIn results (September 2014 release),
+      with one row per annotated drug label giving the DailyMed SPL Set ID, UMLS CUIs
+      for the annotated indications, and linked RxNorm ingredient, dose form, and
+      clinical drug RXCUIs.
+    format: txt
+    id: labeledin.indications
+    name: LabeledIn Structured Indications
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 70793
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_Structured_Results.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
+  - category: Product
+    description: LabeledIn annotated corpus in pipe-delimited form, containing the
+      Indications and Usage section of each DailyMed drug label with expert indication
+      mentions marked up in inline XML tags carrying UMLS CUIs.
+    format: txt
+    id: labeledin.annotated-xml
+    name: LabeledIn Annotated XML Corpus
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 977027
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_annotated_XML.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
+  - category: Product
+    description: Crowdsourced LabeledIn extension (2015) in pipe-delimited structured
+      form, covering 3,004 Amazon Mechanical Turk tasks over 706 DailyMed drug labels,
+      with UMLS CUIs, RxNorm RXCUIs, and the majority-vote indication judgement. Annotated
+      XML and HTML versions and answer codes are in the same directory.
+    format: txt
+    id: labeledin.crowdsourced
+    name: LabeledIn Crowdsourced Indications
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 360250
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Crowdsourcing/Crowdsourced_Results.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
   publications:
   - authors:
     - Bodenreider O
@@ -503934,14 +505236,12 @@ resources:
     - relation_type: prov:wasDerivedFrom
       source: uniprot
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
       when accessing file. The dbSNO 3.0 download page (download.php) renders its
       page shell but the server errors before emitting download links; the rest of
       the site (index.php, statistics.php) is live (200).'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error
-      when accessing file'
   - category: GraphicalInterface
     description: neXtProt web platform for searching and browsing curated human protein
       entries, proteomics evidence, variants, expression, interactions, localization,
@@ -504960,8 +506260,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -507122,8 +508420,7 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: pdb
     product_url: https://www.ncbi.nlm.nih.gov/protein/
-  - _replace_warnings: true
-    category: Product
+  - category: Product
     description: The Papyrus bioactivity dataset, distributed as versioned releases
       on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized
       ligand-protein bioactivity records, compound structures, UniProt protein targets,
@@ -507144,6 +508441,88 @@ resources:
       source: uniprot
     product_url: https://doi.org/10.4121/16896406
     warnings: []
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+      from the Ensembl xref pipeline. Companion metadata files in the same release
+      map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+      TrEMBL, PDB, and PubMed IDs.
+    format: tsv
+    id: gencode.human.metadata.hgnc
+    latest_version: '50'
+    name: GENCODE Human HGNC Metadata
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: gencode
+    - relation_type: prov:wasInformedBy
+      source: hgnc
+    - relation_type: prov:wasInformedBy
+      source: ncbigene
+    - relation_type: prov:wasInformedBy
+      source: refseq
+    - relation_type: prov:wasInformedBy
+      source: uniprot
+    - relation_type: prov:wasInformedBy
+      source: pdb
+    - relation_type: prov:wasInformedBy
+      source: pubmed
+    product_file_size: 2698457
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: ensembl
+  - category: Product
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      giving 17 core concepts with recommended definitions, the source vocabulary
+      and identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI,
+      UniProt, and QUDT), steering committee approval dates, and example sources.
+    format: csv
+    id: pistoia-pgo.core_concepts_csv
+    name: PGO Core Concepts CSV (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 11226
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
+  - category: Product
+    description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+      with the same content as the CSV release (recommended definitions and their
+      source vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and
+      QUDT).
+    format: xlsx
+    id: pistoia-pgo.core_concepts_xlsx
+    name: PGO Core Concepts Excel (Version 1.0)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: pistoia-pgo
+    product_file_size: 23347
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+    secondary_source:
+    - relation_type: prov:used
+      source: ncit
+    - relation_type: prov:used
+      source: obi
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: chebi
+    - relation_type: prov:used
+      source: mi
+    - relation_type: prov:used
+      source: uniprot
   publications:
   - authors:
     - Alex Bateman
@@ -513165,8 +514544,11 @@ resources:
   - clinical
   homepage_url: https://www.who.int/
   id: who
-  last_modified_date: '2026-06-03T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/3.0/igo/
+    label: CC BY-NC-SA 3.0 IGO
   name: World Health Organization
   products:
   - category: GraphicalInterface
@@ -513212,6 +514594,40 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: who
     product_url: https://www.who.int/data/gho/info/gho-odata-api
+  - category: GraphicalInterface
+    description: WHO Data hub (data.who.int), WHO's newer home for health data, with
+      indicator pages, country profiles, and dashboards; indicator pages offer CSV
+      downloads of the underlying data.
+    format: http
+    id: who.data-hub
+    name: WHO Data Hub
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who
+    product_url: https://data.who.int/
+  - category: GraphicalInterface
+    description: WHO Institutional Repository for Information Sharing (IRIS), a DSpace
+      repository of WHO publications, technical documents, governing body documents,
+      and reports in multiple languages.
+    format: http
+    id: who.iris
+    name: WHO IRIS
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who
+    product_url: https://iris.who.int/
+  - category: ProgrammingInterface
+    connection_url: https://iris.who.int/server/oai/request
+    description: OAI-PMH 2.0 endpoint for harvesting metadata records from the WHO
+      IRIS publications repository.
+    format: http
+    id: who.iris-oai-pmh
+    is_public: true
+    name: WHO IRIS OAI-PMH Endpoint
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: who
+    product_url: https://iris.who.int/server/oai/request?verb=Identify
   - category: GraphicalInterface
     description: WHO Disease Outbreak News page providing reports on confirmed and
       potential acute public health events of concern across hazards.
@@ -513442,6 +514858,90 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikipathways
     product_url: https://spoke.ucsf.edu/data-tools
+  - category: GraphProduct
+    description: Source CSV tables for AcuKG, including acupoint therapeutic actions,
+      indications, anatomy relationships, clinical trial links, and PubMed links.
+    edge_count: 11527
+    format: csv
+    id: acukg.csv
+    name: AcuKG CSV tables
+    node_count: 1839
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: acukg
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: uberon
+    - relation_type: prov:used
+      source: snomedct
+    product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG
+  - category: GraphProduct
+    description: RDF Turtle representation of AcuKG relationship tables.
+    edge_count: 11527
+    format: ttl
+    id: acukg.rdf
+    name: AcuKG RDF Turtle files
+    node_count: 1839
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: acukg
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: uberon
+    - relation_type: prov:used
+      source: snomedct
+    product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_RDF
+  - category: GraphProduct
+    description: JSON representation of AcuKG relationship tables.
+    edge_count: 11527
+    format: json
+    id: acukg.json
+    name: AcuKG JSON files
+    node_count: 1839
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: acukg
+    - relation_type: prov:hadPrimarySource
+      source: pubmed
+    - relation_type: prov:hadPrimarySource
+      source: clinicaltrialsgov
+    - relation_type: prov:hadPrimarySource
+      source: who
+    - relation_type: prov:used
+      source: mesh
+    - relation_type: prov:used
+      source: uberon
+    - relation_type: prov:used
+      source: snomedct
+    product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json
+  - category: Product
+    description: Multilingual acupoint vocabulary listing the 361 standard acupoint
+      codes with Chinese names, transliterations, English, Pinyin, Korean, and Vietnamese
+      names.
+    format: csv
+    id: acukg.acupoint-vocabulary
+    name: AcuKG local acupoint vocabulary
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: acukg
+    - relation_type: prov:hadPrimarySource
+      source: who
+    product_file_size: 14884
+    product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/local_acupoint_vocabulary.csv
   rrid: SCR_008505
   synonyms:
   - WHO
@@ -514039,8 +515539,6 @@ resources:
     - relation_type: prov:wasInfluencedBy
       source: chembl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
       when accessing file'
   - category: Product
@@ -514451,6 +515949,22 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: wikidata
     product_url: https://doi.org/10.5281/zenodo.11082038
+  - category: ProgrammingInterface
+    description: Open REST API (v2) for searching and retrieving ROR organization
+      records, including keyword and external identifier search (GRID, ISNI, Wikidata,
+      Crossref Funder ID), advanced filtering, and matching of free-text affiliation
+      strings to ROR IDs. No registration is required; requests are rate-limited per
+      IP address.
+    format: http
+    id: ror.api
+    name: ROR REST API
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: ror
+    - relation_type: prov:wasInformedBy
+      source: wikidata
+    product_url: https://api.ror.org/v2/organizations
+    repository: https://github.com/ror-community/ror-api
   repository: https://www.mediawiki.org/wiki/Wikibase
   synonyms:
   - Wikidata
@@ -529955,12 +531469,10 @@ resources:
       source: aao
     product_url: http://purl.obolibrary.org/obo/aao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:8292
@@ -530101,12 +531613,10 @@ resources:
       source: adw
     product_url: http://purl.obolibrary.org/obo/adw.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Animal Natural History and Life History Ontology
@@ -531862,14 +533372,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-07-10: Error connecting
       to URL: HTTPSConnectionPool(host=''biosemantics.org'', port=443): Max retries
       exceeded with url: /biosearch (Caused by NewConnectionError("HTTPSConnection(host=''biosemantics.org'',
       port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-    - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
-      to URL'
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
       and disease information for drug repositioning.
@@ -532287,12 +533795,10 @@ resources:
       source: bootstrep
     product_url: http://purl.obolibrary.org/obo/bootstrep.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   publications: []
   use_instead:
   - go
@@ -533634,12 +535140,10 @@ resources:
       source: cmf
     product_url: http://purl.obolibrary.org/obo/cmf.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: DataSource
@@ -533789,8 +535293,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -534093,12 +535595,10 @@ resources:
       source: dc_cl
     product_url: http://purl.obolibrary.org/obo/dc_cl.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   publications: []
   taxon:
   - all
@@ -534292,18 +535792,27 @@ resources:
   taxon:
   - NCBITaxon:9606
 - activity_status: inactive
-  category: Ontology
+  category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: url
+      value: https://orcid.org/0000-0001-5622-7659
+    label: Warren A. Kibbe
+    orcid: 0000-0001-5622-7659
   creation_date: '2025-10-30T00:00:00Z'
-  description: The Disease Ontology Annotation Framework (DOAF) was a semantic framework
-    for representing and sharing disease annotations, enabling standardized disease
-    ontology annotations across biomedical resources.
+  description: The Disease Ontology Annotation Framework (DOAF) was an automated pipeline
+    and web resource from Northwestern University that annotated human genes with
+    Disease Ontology terms by text mining NCBI GeneRIF entries with the NCBO Annotator,
+    producing gene-disease associations backed by PubMed evidence.
   domains:
   - biomedical
   - clinical
+  - genomics
   homepage_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686
   id: doaf
   infores_id: doaf
-  last_modified_date: '2026-06-12T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   name: Disease Ontology Annotation Framework
   products:
@@ -534317,6 +535826,26 @@ resources:
     - relation_type: prov:hadPrimarySource
       source: doaf
     product_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686
+  - category: GraphicalInterface
+    description: Archived snapshot of the DOAF web interface (doa.nubic.northwestern.edu),
+      which supported gene-to-disease and disease-to-gene queries, batch queries,
+      and download of the DO-gene mappings. The live site is offline.
+    format: http
+    id: doaf.web
+    name: DOAF web interface (archived)
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: doaf
+    - relation_type: prov:hadPrimarySource
+      source: ncbigene
+    - relation_type: prov:used
+      source: doid
+    - relation_type: prov:used
+      source: bioportal
+    product_url: https://web.archive.org/web/20160601045226/http://doa.nubic.northwestern.edu/pages/about.php
+    warnings:
+    - The original site at http://doa.nubic.northwestern.edu did not resolve when
+      checked on 2026-11-10; the last Internet Archive captures date from 2016.
   publications:
   - authors:
     - Wei Xu
@@ -534329,6 +535858,7 @@ resources:
     doi: 10.1371/journal.pone.0049686
     id: doi:10.1371/journal.pone.0049686
     journal: PLoS ONE
+    preferred: true
     title: A Framework for Annotating Human Genome in Disease Context
     year: '2012'
   synonyms:
@@ -534336,6 +535866,10 @@ resources:
   - Disease Ontology Annotation Framework
   taxon:
   - NCBITaxon:9606
+  warnings:
+  - The DOAF web site (http://doa.nubic.northwestern.edu) and its REST API are offline
+    as of 2026-11-10; the last Internet Archive captures date from 2016. No downloadable
+    DOAF data files are known to survive.
 - activity_status: inactive
   category: DataSource
   contacts:
@@ -534926,8 +536460,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -534940,8 +536472,6 @@ resources:
       source: eo
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
@@ -535019,12 +536549,10 @@ resources:
       source: epo
     product_url: http://purl.obolibrary.org/obo/epo.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -535334,12 +536862,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: eVOC in OBO format
     format: obo
@@ -535350,12 +536876,10 @@ resources:
       source: ev
     product_url: http://purl.obolibrary.org/obo/ev.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -537336,8 +538860,6 @@ resources:
     warnings:
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: GraphicalInterface
@@ -538544,10 +540066,6 @@ resources:
       on 2026-06-02.
     - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
       during curation on 2026-06-02.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-      to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
-      retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-      port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
     - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max
       retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
@@ -538739,8 +540257,6 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
@@ -538757,8 +540273,6 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
@@ -538775,8 +540289,6 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error
       when accessing file'
   - category: GraphicalInterface
@@ -540484,8 +541996,6 @@ resources:
     warnings:
     - Site did not respond (connection timed out) when checked on 2026-10-19; the
       last Internet Archive snapshot is from 2022-08-17.
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: Product
@@ -541855,11 +543365,6 @@ resources:
       source: inoh
     product_url: http://www.inoh.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
-      to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
-      with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
-      port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
-      name resolution)"))'
     - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
       to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
       with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
@@ -542636,14 +544141,16 @@ resources:
   creation_date: '2026-06-02T00:00:00Z'
   description: LabeledIn is a human-reviewed, machine-readable, source-linked catalog
     of labeled indications for human drugs derived from FDA drug labels made available
-    through DailyMed.
+    through DailyMed. It links 7,805 drug-disease treatment relationships to UMLS
+    disease concepts and RxNorm drug identifiers, and was extended with a crowdsourced
+    annotation set covering a further 706 drug labels.
   domains:
   - pharmacology
   - clinical
   - biomedical
-  homepage_url: https://doi.org/10.1016/j.jbi.2014.08.004
+  homepage_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/
   id: labeledin
-  last_modified_date: '2026-06-03T00:00:00Z'
+  last_modified_date: '2026-11-10T00:00:00Z'
   layout: resource_detail
   license:
     id: https://www.usa.gov/government-works
@@ -542651,21 +544158,86 @@ resources:
   name: LabeledIn
   products:
   - category: Product
-    description: LabeledIn indication corpus described in the source publication,
-      containing human-reviewed drug-disease treatment relationships with links back
-      to source drug labels.
-    format: http
+    description: Pipe-delimited structured LabeledIn results (September 2014 release),
+      with one row per annotated drug label giving the DailyMed SPL Set ID, UMLS CUIs
+      for the annotated indications, and linked RxNorm ingredient, dose form, and
+      clinical drug RXCUIs.
+    format: txt
     id: labeledin.indications
-    name: LabeledIn Drug Indication Corpus
+    name: LabeledIn Structured Indications
     original_source:
     - relation_type: prov:hadPrimarySource
       source: labeledin
-    product_url: https://doi.org/10.1016/j.jbi.2014.08.004
+    product_file_size: 70793
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_Structured_Results.txt
     secondary_source:
     - relation_type: prov:wasDerivedFrom
       source: dailymed
     - relation_type: prov:used
       source: rxnorm
+    - relation_type: prov:used
+      source: umls
+  - category: Product
+    description: LabeledIn annotated corpus in pipe-delimited form, containing the
+      Indications and Usage section of each DailyMed drug label with expert indication
+      mentions marked up in inline XML tags carrying UMLS CUIs.
+    format: txt
+    id: labeledin.annotated-xml
+    name: LabeledIn Annotated XML Corpus
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 977027
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_annotated_XML.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
+  - category: GraphicalInterface
+    description: Single-page HTML view of the LabeledIn corpus that visually presents
+      the annotated drug labels and their linked indications.
+    format: http
+    id: labeledin.corpus-html
+    name: LabeledIn Visual HTML Corpus
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 2275981
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_corpus.html
+  - category: Product
+    description: Crowdsourced LabeledIn extension (2015) in pipe-delimited structured
+      form, covering 3,004 Amazon Mechanical Turk tasks over 706 DailyMed drug labels,
+      with UMLS CUIs, RxNorm RXCUIs, and the majority-vote indication judgement. Annotated
+      XML and HTML versions and answer codes are in the same directory.
+    format: txt
+    id: labeledin.crowdsourced
+    name: LabeledIn Crowdsourced Indications
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 360250
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Crowdsourcing/Crowdsourced_Results.txt
+    secondary_source:
+    - relation_type: prov:wasDerivedFrom
+      source: dailymed
+    - relation_type: prov:used
+      source: rxnorm
+    - relation_type: prov:used
+      source: umls
+  - category: DocumentationProduct
+    description: Annotation guidelines used by the expert annotators to mark drug
+      indications in FDA drug label text for LabeledIn.
+    format: pdf
+    id: labeledin.guidelines
+    name: LabeledIn Annotation Guidelines
+    original_source:
+    - relation_type: prov:hadPrimarySource
+      source: labeledin
+    product_file_size: 273880
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Annotation_Guidelines.pdf
   - category: DocumentationProduct
     description: Publication describing the LabeledIn corpus construction workflow,
       including drug label selection, automatic disease recognition, and manual indication
@@ -542712,9 +544284,23 @@ resources:
     preferred: true
     title: 'LabeledIn: Cataloging labeled indications for human drugs'
     year: '2014'
+  - authors:
+    - Ritu Khare
+    - John D. Burger
+    - John S. Aberdeen
+    - David W. Tresner-Kirsch
+    - Theodore J. Corrales
+    - Lynette Hirschman
+    - Zhiyong Lu
+    doi: 10.1093/database/bav016
+    id: doi:10.1093/database/bav016
+    journal: Database
+    title: Scaling drug indication curation through crowdsourcing
+    year: '2015'
   warnings:
-  - The original LabeledIn data distribution is not clearly maintained as a standalone
-    portal; PharmacotherapyDB preserves processed LabeledIn indication evidence.
+  - LabeledIn has not been updated since its 2014 release (crowdsourced extension
+    2015). Annotations are based on the August 28, 2012 DailyMed release, so indications
+    and SPL Set IDs may not reflect current drug labels.
 - activity_status: inactive
   category: Ontology
   collection:
@@ -544802,8 +546388,6 @@ resources:
       source: mirnao
     product_url: http://purl.obolibrary.org/obo/mirnao.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -545075,12 +546659,10 @@ resources:
     - The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves
       (HTTP 404); product_url now points to a Wayback Machine archived snapshot of
       the MGED Ontology OWL.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of Microarray and Gene Expression Data Ontology
@@ -545522,8 +547104,6 @@ resources:
       source: netpath
     product_url: http://www.netpath.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error
       when accessing file'
   - category: Product
@@ -546038,12 +547618,10 @@ resources:
       source: nmr
     product_url: http://purl.obolibrary.org/obo/nmr.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: GraphProduct
     compression: targz
     description: KGX TSV transform of NMR-Controlled Vocabulary (NMR), produced by
@@ -546321,8 +547899,6 @@ resources:
       source: ogi
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -546445,12 +548021,10 @@ resources:
     warnings:
     - OIO is deprecated and retained for legacy compatibility; use OMO for current
       ontology metadata.
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-10-21: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-      when accessing file'
   - category: OntologyProduct
     description: OBO Interoperability Ontology in OBO format
     format: obo
@@ -550576,8 +552150,6 @@ resources:
       file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for
       all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3
       objects return HTTP 403. No replacement public download URL is available.'
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -551292,8 +552864,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   publications:
@@ -553842,8 +555412,6 @@ resources:
     product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
     repository: https://git.bioconductor.org/packages/psygenet2r
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -558084,8 +559652,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
@@ -558192,8 +559758,6 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
       to URL'
   - category: GraphProduct
@@ -560537,8 +562101,6 @@ resources:
       source: sep-l1000
     product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
     warnings:
-    - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
       when accessing file'
   - category: Product

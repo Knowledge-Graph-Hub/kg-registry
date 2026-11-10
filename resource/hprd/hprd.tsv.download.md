@@ -13,7 +13,7 @@ warnings:
   accessing file
 - Original HPRD website is no longer accessible. Data may be available through archive.org
   or integrated databases.
-- File was not able to be retrieved when checked on 2026-10-28_ HTTP 503 error when
+- File was not able to be retrieved when checked on 2026-11-10_ HTTP 503 error when
   accessing file
 layout: product_detail
 ---

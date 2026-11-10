@@ -413,6 +413,7 @@ products:
     source: acukg
   - relation_type: prov:hadPrimarySource
     source: who
+  product_file_size: 14884
   product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/local_acupoint_vocabulary.csv
 rrid: SCR_008505
 synonyms:

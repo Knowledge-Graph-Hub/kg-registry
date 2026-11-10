@@ -22,7 +22,7 @@ warnings:
   on 2026-06-02.
 - The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during
   curation on 2026-06-02.
-- File was not able to be retrieved when checked on 2026-10-28_ Error connecting to
+- File was not able to be retrieved when checked on 2026-11-10_ Error connecting to
   URL_ HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443)_ Max retries exceeded
   with url_ / (Caused by NewConnectionError("HTTPSConnection(host='hpidb.igbb.msstate.edu',
   port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))

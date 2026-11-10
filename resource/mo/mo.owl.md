@@ -12,7 +12,7 @@ warnings:
 - The original OBO PURL (http_//purl.obolibrary.org/obo/mo.owl) no longer resolves
   (HTTP 404); product_url now points to a Wayback Machine archived snapshot of the
   MGED Ontology OWL.
-- File was not able to be retrieved when checked on 2026-10-28_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-11-10_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
   to URL
