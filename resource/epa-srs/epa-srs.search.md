@@ -1,7 +1,9 @@
 ---
 category: GraphicalInterface
 description: Public EPA Substance Registry Services search interface for looking up
-  substances tracked or regulated by EPA programs and other sources.
+  substances tracked or regulated by EPA programs and other sources, by name, CAS
+  number, and other identifiers, with basic, advanced, and multi-substance search.
+  Search results and substance lists can be exported as Excel, JSON, or XML files.
 format: http
 id: epa-srs.search
 name: EPA SRS Search
