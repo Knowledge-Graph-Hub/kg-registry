@@ -180,8 +180,10 @@ products:
     source: aop-wiki
   product_url: https://github.com/biobricks-ai/aopwikirdf-kg
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
   description: Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki RDF
@@ -361,11 +363,12 @@ products:
     source: aop-wiki
   product_url: http://toxbai.com/
 - category: GraphicalInterface
-  description: CAMERA Explore NAMs interface for searching and filtering validated and
-    qualified New Approach Methods by alternative method type, defined approach, test
-    method endpoint, chemical, and regulatory guidance, with links to validation study
-    reports, data, protocols/SOPs, and the associated adverse outcome pathway key events.
-    Chemical identity and data are drawn from the EPA CompTox Chemicals Dashboard.
+  description: CAMERA Explore NAMs interface for searching and filtering validated
+    and qualified New Approach Methods by alternative method type, defined approach,
+    test method endpoint, chemical, and regulatory guidance, with links to validation
+    study reports, data, protocols/SOPs, and the associated adverse outcome pathway
+    key events. Chemical identity and data are drawn from the EPA CompTox Chemicals
+    Dashboard.
   format: http
   id: camera.explore
   name: Explore NAMs
