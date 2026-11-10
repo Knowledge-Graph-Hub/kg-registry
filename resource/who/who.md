@@ -17,8 +17,11 @@ domains:
 - clinical
 homepage_url: https://www.who.int/
 id: who
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-11-10T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc-sa/3.0/igo/
+  label: CC BY-NC-SA 3.0 IGO
 name: World Health Organization
 products:
 - category: GraphicalInterface
@@ -64,6 +67,40 @@ products:
   - relation_type: prov:hadPrimarySource
     source: who
   product_url: https://www.who.int/data/gho/info/gho-odata-api
+- category: GraphicalInterface
+  description: WHO Data hub (data.who.int), WHO's newer home for health data, with
+    indicator pages, country profiles, and dashboards; indicator pages offer CSV downloads
+    of the underlying data.
+  format: http
+  id: who.data-hub
+  name: WHO Data Hub
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: who
+  product_url: https://data.who.int/
+- category: GraphicalInterface
+  description: WHO Institutional Repository for Information Sharing (IRIS), a DSpace
+    repository of WHO publications, technical documents, governing body documents,
+    and reports in multiple languages.
+  format: http
+  id: who.iris
+  name: WHO IRIS
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: who
+  product_url: https://iris.who.int/
+- category: ProgrammingInterface
+  connection_url: https://iris.who.int/server/oai/request
+  description: OAI-PMH 2.0 endpoint for harvesting metadata records from the WHO IRIS
+    publications repository.
+  format: http
+  id: who.iris-oai-pmh
+  is_public: true
+  name: WHO IRIS OAI-PMH Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: who
+  product_url: https://iris.who.int/server/oai/request?verb=Identify
 - category: GraphicalInterface
   description: WHO Disease Outbreak News page providing reports on confirmed and potential
     acute public health events of concern across hazards.
@@ -383,7 +420,23 @@ synonyms:
 ---
 # World Health Organization
 
-The World Health Organization publishes global health information products,
-statistics, classifications, and disease outbreak reports. WHO Disease Outbreak
-News is also used as an upstream source for the eKG epidemiological knowledge
-graph.
+The World Health Organization (WHO) is the United Nations specialized agency for
+international public health. It publishes global health statistics,
+international classifications, technical guidance, and disease outbreak reports.
+
+Data products include the Global Health Observatory (GHO), queryable through the
+GHO OData API, and the newer WHO Data hub at data.who.int, to which WHO is moving
+its indicator pages and dashboards. WHO publications are deposited in the IRIS
+repository, which can be harvested over OAI-PMH. WHO Disease Outbreak News is
+available as web pages and through a JSON API, and is an upstream source for the
+eKG epidemiological knowledge graph.
+
+WHO classifications have their own registry pages: ICD-10 (`icd10`) and ICD-11
+(`icd11`), including the ICD-11 browser and API. The International Clinical
+Trials Registry Platform is described at `who-ictrp`.
+
+WHO content is mainly licensed under CC BY-NC-SA 3.0 IGO. ICD, ICF, and ICHI are
+licensed under CC BY-ND 3.0 IGO. WHO data compilations come under WHO's own
+data policy terms and conditions instead
+(https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions),
+which permit use for public health purposes with attribution to WHO.
