@@ -343,6 +343,7 @@ genomernai	GenomeRNAi	DataSource	http://www.genomernai.org/	resource/genomernai/
 genomickb	GenomicKB	KnowledgeGraph	https://gkb.dcmb.med.umich.edu/	resource/genomickb/genomickb.md
 genophenoenvo-kg	GenoPhenoEnvo Knowledge Graph	KnowledgeGraph	https://github.com/genophenoenvo/knowledge-graph	resource/genophenoenvo-kg/genophenoenvo-kg.md
 geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-entity-ontology/wiki	resource/geo/geo.md
+geoals	GeoALS	DataSource	https://www.geoals.org/	resource/geoals/geoals.md
 geoconnex	GEOCONNEX	KnowledgeGraph	https://docs.geoconnex.us/about/intro	resource/geoconnex/geoconnex.md
 geonames	GeoNames	DataSource	https://www.geonames.org/	resource/geonames/geonames.md
 gff	GFF	DataModel	https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md	resource/gff/gff.md

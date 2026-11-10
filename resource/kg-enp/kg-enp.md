@@ -106,8 +106,10 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
+    when accessing file'
 - category: ProcessProduct
   description: Full ENPKG workflow repository for generating experimental natural
     products knowledge graphs from metabolomics datasets.

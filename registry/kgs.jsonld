@@ -16057,7 +16057,8 @@
                     ],
                     "product_url": "https://github.com/biobricks-ai/aopwikirdf-kg",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -18443,7 +18444,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -21880,7 +21882,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -22285,7 +22288,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -40259,7 +40263,8 @@
                     ],
                     "product_url": "https://github.com/biobricks-ai/aopwikirdf-kg",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -40467,7 +40472,8 @@
                     ],
                     "product_url": "https://github.com/biobricks-ai/mesh-kg",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -51947,7 +51953,8 @@
                     "warnings": [
                         "The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.",
                         "The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
                     ]
                 },
                 {
@@ -62816,7 +62823,8 @@
                     ],
                     "product_url": "https://biothings.io/specs/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 204 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 204 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 204 error when accessing file"
                     ]
                 },
                 {
@@ -79524,7 +79532,8 @@
                     ],
                     "product_url": "https://www.cellphonedb.org/downloads",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -90191,7 +90200,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -90265,7 +90275,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -98769,7 +98780,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -99191,7 +99203,8 @@
                         }
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when accessing file"
                     ]
                 },
                 {
@@ -102154,6 +102167,7 @@
                     "product_url": "https://doi.org/10.5281/zenodo.675987"
                 },
                 {
+                    "_replace_warnings": true,
                     "category": "Product",
                     "description": "The Papyrus bioactivity dataset, distributed as versioned releases on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized ligand-protein bioactivity records, compound structures, UniProt protein targets, and precomputed molecular and protein descriptors, in tab-delimited and Parquet formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside the full all-quality dataset.",
                     "format": "mixed",
@@ -102178,9 +102192,7 @@
                         }
                     ],
                     "product_url": "https://doi.org/10.4121/16896406",
-                    "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
-                    ]
+                    "warnings": []
                 }
             ],
             "publications": [
@@ -150950,7 +150962,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -167565,7 +167578,8 @@
                     ],
                     "product_url": "https://usf.box.com/shared/static/ffwlywsat3q5ijypvunno3rg6steqfs8",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -168156,7 +168170,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error when accessing file. The dbSNO 3.0 download page (download.php) renders its page shell but the server errors before emitting download links; the rest of the site (index.php, statistics.php) is live (200)."
+                        "File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error when accessing file. The dbSNO 3.0 download page (download.php) renders its page shell but the server errors before emitting download links; the rest of the site (index.php, statistics.php) is live (200).",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error when accessing file"
                     ]
                 },
                 {
@@ -190058,7 +190073,8 @@
                     "warnings": [
                         "The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.",
                         "The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
                     ]
                 },
                 {
@@ -221046,7 +221062,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -224183,7 +224200,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -224257,7 +224275,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -226446,7 +226465,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -227976,7 +227996,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -228701,7 +228722,8 @@
                     ],
                     "product_url": "https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -250133,7 +250155,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -268153,6 +268176,7 @@
                     "product_url": "https://doi.org/10.5281/zenodo.675987"
                 },
                 {
+                    "_replace_warnings": true,
                     "category": "Product",
                     "description": "The Papyrus bioactivity dataset, distributed as versioned releases on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized ligand-protein bioactivity records, compound structures, UniProt protein targets, and precomputed molecular and protein descriptors, in tab-delimited and Parquet formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside the full all-quality dataset.",
                     "format": "mixed",
@@ -268177,9 +268201,7 @@
                         }
                     ],
                     "product_url": "https://doi.org/10.4121/16896406",
-                    "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
-                    ]
+                    "warnings": []
                 }
             ],
             "publications": [
@@ -278125,7 +278147,8 @@
                     ],
                     "product_url": "https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -278142,7 +278165,8 @@
                     ],
                     "product_url": "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -278324,7 +278348,8 @@
                     ],
                     "product_url": "https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions/designating-orphan-product-drugs-and-biological-products",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -308385,7 +308410,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -311116,6 +311142,101 @@
             ],
             "publications": [],
             "repository": "https://github.com/ufbmi/geographical-entity-ontology"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "contact@geoals.org"
+                        },
+                        {
+                            "contact_type": "url",
+                            "value": "https://www.geoals.org/"
+                        }
+                    ],
+                    "label": "GeoALS"
+                }
+            ],
+            "creation_date": "2026-11-10T00:00:00Z",
+            "description": "GeoALS is a nonprofit organization that applies geographic information systems (GIS) to improve care, accelerate research, and support advocacy for people with amyotrophic lateral sclerosis (ALS). Its ALS Geospatial Hub, built on the ArcGIS platform, provides maps and apps for the ALS community, including a locator for ALS clinics in the United States, a dashboard of clinic reviews contributed by people with ALS and their caregivers, and a Legislative Viewer that maps legislators.",
+            "domains": [
+                "geographic information systems",
+                "environment",
+                "neurodegenerative disease",
+                "neuroscience",
+                "public health"
+            ],
+            "homepage_url": "https://www.geoals.org/",
+            "id": "geoals",
+            "last_modified_date": "2026-11-10T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "GeoALS",
+            "products": [
+                {
+                    "category": "Product",
+                    "description": "Interactive ArcGIS map application for locating ALS clinics in the United States, drawing on the GeoALS database of ALS clinics.",
+                    "format": "http",
+                    "id": "geoals.clinic_locator",
+                    "name": "GeoALS ALS Clinic Locator",
+                    "original_source": [
+                        {
+                            "relation_type": "prov:hadPrimarySource",
+                            "source": "geoals"
+                        }
+                    ],
+                    "product_url": "https://experience.arcgis.com/experience/8ec9920c6a9441d9803dcaf7935a67b7"
+                },
+                {
+                    "category": "Product",
+                    "description": "Dashboard of ALS clinic reviews submitted by people with ALS and their caregivers through the GeoALS Advisor survey.",
+                    "format": "http",
+                    "id": "geoals.advisor_dashboard",
+                    "name": "GeoALS Advisor Clinic Review Dashboard",
+                    "original_source": [
+                        {
+                            "relation_type": "prov:hadPrimarySource",
+                            "source": "geoals"
+                        }
+                    ],
+                    "product_url": "https://experience.arcgis.com/experience/bbaeab35fed24b2f8f52cc46bcbbb8c1"
+                },
+                {
+                    "category": "Product",
+                    "description": "Map application showing legislators and their districts alongside their photos, intended to support ALS advocacy.",
+                    "format": "http",
+                    "id": "geoals.legislative_viewer",
+                    "name": "GeoALS Legislative Viewer",
+                    "original_source": [
+                        {
+                            "relation_type": "prov:hadPrimarySource",
+                            "source": "geoals"
+                        }
+                    ],
+                    "product_url": "https://experience.arcgis.com/experience/432276c3289a4839be09c409b817ebd2"
+                },
+                {
+                    "category": "Product",
+                    "description": "ALS Geospatial Hub gallery collecting the maps and apps produced by GeoALS for the ALS community.",
+                    "format": "http",
+                    "id": "geoals.hub_maps",
+                    "name": "ALS Geospatial Hub Map Gallery",
+                    "original_source": [
+                        {
+                            "relation_type": "prov:hadPrimarySource",
+                            "source": "geoals"
+                        }
+                    ],
+                    "product_url": "https://als-geospatial-hub-nonprofit.hub.arcgis.com/pages/the-maps"
+                }
+            ],
+            "synonyms": [
+                "ALS Geospatial Hub"
+            ]
         },
         {
             "activity_status": "active",
@@ -319908,7 +320029,8 @@
                         }
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when accessing file"
                     ]
                 },
                 {
@@ -331762,7 +331884,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -331836,7 +331959,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -336394,7 +336518,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -354229,7 +354354,8 @@
                     ],
                     "warnings": [
                         "The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html, returned HTTP 404 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -354549,7 +354675,8 @@
                     ],
                     "product_url": "http://bio-annotation.cn/gutMDisorder/public/res/2.0-literature-associations.xlsx",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPConnectionPool(host='bio-annotation.cn', port=80): Max retries exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx (Caused by NewConnectionError(\"HTTPConnection(host='bio-annotation.cn', port=80): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPConnectionPool(host='bio-annotation.cn', port=80): Max retries exceeded with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx (Caused by NewConnectionError(\"HTTPConnection(host='bio-annotation.cn', port=80): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -354566,7 +354693,8 @@
                     ],
                     "product_url": "http://bio-annotation.cn/gutMDisorder/public/res/2.0-raw%20data-associations.xlsx",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPConnectionPool(host='bio-annotation.cn', port=80): Max retries exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx (Caused by NewConnectionError(\"HTTPConnection(host='bio-annotation.cn', port=80): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPConnectionPool(host='bio-annotation.cn', port=80): Max retries exceeded with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx (Caused by NewConnectionError(\"HTTPConnection(host='bio-annotation.cn', port=80): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -393285,7 +393413,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -393359,7 +393488,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -399836,7 +399966,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -421133,7 +421264,8 @@
                     "product_url": "https://developer.imohealth.com/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-27: HTTP 406 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -431043,7 +431175,8 @@
                     "warnings": [
                         "The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.",
                         "The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
                     ]
                 },
                 {
@@ -433168,7 +433301,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -452413,7 +452547,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -453783,7 +453918,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -454281,7 +454417,8 @@
                         }
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when accessing file"
                     ]
                 },
                 {
@@ -454637,7 +454774,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -455422,7 +455560,7 @@
             "evaluation_page": "resource/kg-monarch/kg-monarch_eval.html",
             "homepage_url": "https://monarchinitiative.org/kg/downloads",
             "id": "kg-monarch",
-            "last_modified_date": "2026-10-28T20:14:21Z",
+            "last_modified_date": "2026-11-10T16:46:28Z",
             "layout": "resource_detail",
             "license": {
                 "id": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -460227,7 +460365,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -461499,7 +461638,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -464976,7 +465116,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -472858,7 +472999,8 @@
                         }
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when accessing file"
                     ]
                 }
             ],
@@ -492242,7 +492384,8 @@
                     ],
                     "product_url": "https://github.com/biobricks-ai/mesh-kg",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -505862,7 +506005,8 @@
                     "warnings": [
                         "The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.",
                         "The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
                     ]
                 },
                 {
@@ -512727,7 +512871,8 @@
                         "File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))"
+                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
                     ]
                 },
                 {
@@ -512753,7 +512898,8 @@
                         "File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))"
+                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
                     ]
                 },
                 {
@@ -512779,7 +512925,8 @@
                         "File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))"
+                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
                     ]
                 },
                 {
@@ -512805,7 +512952,8 @@
                         "File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))"
+                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
                     ]
                 },
                 {
@@ -512831,7 +512979,8 @@
                         "File was not able to be retrieved when checked on 2026-07-10: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-27: HTTP 412 error when accessing file",
                         "File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))"
+                        "File was not able to be retrieved when checked on 2026-06-12: Error connecting to URL: HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
                     ]
                 },
                 {
@@ -523583,7 +523732,8 @@
                     ],
                     "warnings": [
                         "The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html, returned HTTP 404 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -524959,7 +525109,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -525033,7 +525184,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -551711,7 +551863,8 @@
                     ],
                     "warnings": [
                         "The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html, returned HTTP 404 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -552950,7 +553103,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -555423,7 +555577,8 @@
                     ],
                     "warnings": [
                         "Site did not respond (connection timed out) when checked on 2026-10-19; the last Internet Archive snapshot is from 2022-08-17.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -573556,7 +573711,8 @@
                     "product_url": "https://www.ncei.noaa.gov/products/international-best-track-archive",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
                     ]
                 },
                 {
@@ -575497,7 +575653,8 @@
                     "product_url": "sftp://fms.biosino.org",
                     "warnings": [
                         "The SFTP service requires a NODE account and was not tested when checked on 2026-10-04. Host and ports are taken from the NODE help pages.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: No connection adapters were found for 'sftp://fms.biosino.org'"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: No connection adapters were found for 'sftp://fms.biosino.org'",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: No connection adapters were found for 'sftp://fms.biosino.org'"
                     ]
                 },
                 {
@@ -592341,7 +592498,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -593004,7 +593162,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -601889,7 +602048,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -610417,7 +610577,8 @@
                         }
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when accessing file"
                     ]
                 }
             ],
@@ -618975,7 +619136,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -628675,6 +628837,7 @@
             "name": "Papyrus",
             "products": [
                 {
+                    "_replace_warnings": true,
                     "category": "Product",
                     "description": "The Papyrus bioactivity dataset, distributed as versioned releases on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized ligand-protein bioactivity records, compound structures, UniProt protein targets, and precomputed molecular and protein descriptors, in tab-delimited and Parquet formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside the full all-quality dataset.",
                     "format": "mixed",
@@ -628699,9 +628862,7 @@
                         }
                     ],
                     "product_url": "https://doi.org/10.4121/16896406",
-                    "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
-                    ]
+                    "warnings": []
                 },
                 {
                     "category": "ProcessProduct",
@@ -655766,7 +655927,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -689879,7 +690041,8 @@
                     "product_url": "https://groups.google.com/forum/feed/proteomexchange/msgs/rss_v2_0.xml",
                     "warnings": [
                         "Feed was not able to be retrieved when checked on 2026-10-04. The URL listed on the ProteomeXchange subscription page returned HTTP 404.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -696237,7 +696400,8 @@
                     ],
                     "warnings": [
                         "The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html, returned HTTP 404 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -699625,7 +699789,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -702461,7 +702626,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error when accessing file. The dbSNO 3.0 download page (download.php) renders its page shell but the server errors before emitting download links; the rest of the site (index.php, statistics.php) is live (200)."
+                        "File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error when accessing file. The dbSNO 3.0 download page (download.php) renders its page shell but the server errors before emitting download links; the rest of the site (index.php, statistics.php) is live (200).",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error when accessing file"
                     ]
                 },
                 {
@@ -705592,7 +705758,8 @@
                     ],
                     "warnings": [
                         "Site did not respond (connection timed out) when checked on 2026-10-19; the last Internet Archive snapshot is from 2022-08-17.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -710576,7 +710743,8 @@
                     ],
                     "product_url": "https://rapdb.dna.affrc.go.jp/download/index.html",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -722805,7 +722973,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -737108,7 +737277,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -765167,7 +765337,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -795338,7 +795509,8 @@
                     ],
                     "product_url": "https://nrcs.app.box.com/v/soils",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -803678,7 +803850,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -803752,7 +803925,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -815370,7 +815544,8 @@
                         "File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2026-09-08: HTTP 500 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -817452,7 +817627,8 @@
                     "product_url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available."
+                        "File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending relocation to a new home; no live download is currently available.",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -820948,7 +821124,8 @@
                     ],
                     "product_url": "https://www.tga.gov.au/publication/tga-approved-terminology-therapeutic-goods",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -820965,7 +821142,8 @@
                     ],
                     "product_url": "https://www.tga.gov.au/sites/default/files/2024-10/tga-approved-terminology-therapeutic-goods.pdf",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -835410,7 +835588,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -865493,7 +865672,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 500 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error when accessing file. The dbSNO 3.0 download page (download.php) renders its page shell but the server errors before emitting download links; the rest of the site (index.php, statistics.php) is live (200)."
+                        "File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error when accessing file. The dbSNO 3.0 download page (download.php) renders its page shell but the server errors before emitting download links; the rest of the site (index.php, statistics.php) is live (200).",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error when accessing file"
                     ]
                 },
                 {
@@ -867339,7 +867519,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -871206,6 +871387,7 @@
                     "product_url": "https://www.ncbi.nlm.nih.gov/protein/"
                 },
                 {
+                    "_replace_warnings": true,
                     "category": "Product",
                     "description": "The Papyrus bioactivity dataset, distributed as versioned releases on 4TU.ResearchData (and mirrored on Zenodo). Each release provides standardized ligand-protein bioactivity records, compound structures, UniProt protein targets, and precomputed molecular and protein descriptors, in tab-delimited and Parquet formats (LZMA/Gzip compressed), with a high-confidence Papyrus++ subset alongside the full all-quality dataset.",
                     "format": "mixed",
@@ -871230,9 +871412,7 @@
                         }
                     ],
                     "product_url": "https://doi.org/10.4121/16896406",
-                    "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
-                    ]
+                    "warnings": []
                 }
             ],
             "publications": [
@@ -882790,7 +882970,8 @@
                         }
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when accessing file"
                     ]
                 },
                 {
@@ -910028,7 +910209,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/aao.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -910231,7 +910413,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/adw.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -912836,7 +913019,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2026-07-10: Error connecting to URL: HTTPSConnectionPool(host='biosemantics.org', port=443): Max retries exceeded with url: /biosearch (Caused by NewConnectionError(\"HTTPSConnection(host='biosemantics.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-07-10: Error connecting to URL: HTTPSConnectionPool(host='biosemantics.org', port=443): Max retries exceeded with url: /biosearch (Caused by NewConnectionError(\"HTTPSConnection(host='biosemantics.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -913511,7 +913695,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/bootstrep.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -915730,7 +915915,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/cmf.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -915944,7 +916130,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -916329,7 +916516,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/dc_cl.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -917505,7 +917693,8 @@
                     ],
                     "product_url": "http://purl.obolibrary.org/obo/eo.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -917522,7 +917711,8 @@
                     ],
                     "product_url": "http://purl.obolibrary.org/obo/eo.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -917635,7 +917825,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/epo.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -918141,7 +918332,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/ev.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -918159,7 +918351,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/ev.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -921286,7 +921479,8 @@
                     ],
                     "warnings": [
                         "Site did not respond (connection timed out) when checked on 2026-10-19; the last Internet Archive snapshot is from 2022-08-17.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -923457,7 +923651,8 @@
                     "warnings": [
                         "The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.",
                         "The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during curation on 2026-06-02.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hpidb.igbb.msstate.edu', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
                     ]
                 },
                 {
@@ -923742,7 +923937,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when accessing file",
                         "Original HPRD website is no longer accessible. Data has been archived in iRefIndex and other interaction databases.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -923761,7 +923957,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when accessing file",
                         "Original HPRD website is no longer accessible. Data may be available through archive.org or integrated databases.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -923780,7 +923977,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when accessing file",
                         "Original HPRD website is no longer accessible. Data may be available through archive.org or integrated databases.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -926833,7 +927031,8 @@
                     ],
                     "warnings": [
                         "Site did not respond (connection timed out) when checked on 2026-10-19; the last Internet Archive snapshot is from 2022-08-17.",
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -929061,7 +929260,8 @@
                     ],
                     "product_url": "http://www.inoh.org/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPConnectionPool(host='www.inoh.org', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPConnection(host='www.inoh.org', port=80): Failed to resolve 'www.inoh.org' ([Errno -3] Temporary failure in name resolution)\"))"
+                        "File was not able to be retrieved when checked on 2026-10-28: Error connecting to URL: HTTPConnectionPool(host='www.inoh.org', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPConnection(host='www.inoh.org', port=80): Failed to resolve 'www.inoh.org' ([Errno -3] Temporary failure in name resolution)\"))",
+                        "File was not able to be retrieved when checked on 2026-11-10: Error connecting to URL: HTTPConnectionPool(host='www.inoh.org', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPConnection(host='www.inoh.org', port=80): Failed to resolve 'www.inoh.org' ([Errno -3] Temporary failure in name resolution)\"))"
                     ]
                 },
                 {
@@ -933856,7 +934056,8 @@
                     ],
                     "product_url": "http://purl.obolibrary.org/obo/mirnao.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -934232,7 +934433,8 @@
                     "warnings": [
                         "The original OBO PURL (http://purl.obolibrary.org/obo/mo.owl) no longer resolves (HTTP 404); product_url now points to a Wayback Machine archived snapshot of the MGED Ontology OWL.",
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -934815,7 +935017,8 @@
                     ],
                     "product_url": "http://www.netpath.org/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -935670,7 +935873,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/nmr.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -936051,7 +936255,8 @@
                     ],
                     "product_url": "http://purl.obolibrary.org/obo/ogi.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -936210,7 +936415,8 @@
                     "warnings": [
                         "OIO is deprecated and retained for legacy compatibility; use OMO for current ontology metadata.",
                         "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-21: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -942963,7 +943169,8 @@
                     "product_url": "https://kghub.io/kg-covid-19/",
                     "warnings": [
                         "Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP 403. No replacement public download URL is available.",
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -944282,7 +944489,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -948606,7 +948814,8 @@
                     "product_url": "https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf",
                     "repository": "https://git.bioconductor.org/packages/psygenet2r",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -956155,7 +956364,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -956295,7 +956505,8 @@
                     "product_url": "http://mips.helmholtz-muenchen.de/simap/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2026-10-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2026-11-10: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -960656,7 +960867,8 @@
                     ],
                     "product_url": "https://maayanlab.cloud/drugmonizome/metadata-api/libraries",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when accessing file"
                     ]
                 },
                 {

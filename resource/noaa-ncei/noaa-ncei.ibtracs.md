@@ -14,5 +14,7 @@ warnings:
 - File was not able to be retrieved when checked on 2026-10-28_ Error connecting to
   URL_ ('Connection aborted.', RemoteDisconnected('Remote end closed connection without
   response'))
+- File was not able to be retrieved when checked on 2026-10-28_ Timeout connecting
+  to URL
 layout: product_detail
 ---

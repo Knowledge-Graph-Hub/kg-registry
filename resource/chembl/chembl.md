@@ -1708,6 +1708,8 @@ products:
     return HTTP 403. No replacement public download URL is available.'
   - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -1933,6 +1935,8 @@ products:
     source: chembl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-28: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
     when accessing file'
 - category: GraphProduct
   description: Integrated rare-disease knowledge graph produced by the RD-Clust workflow,
@@ -3583,9 +3587,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://doi.org/10.4121/16896406
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-    to URL'
+  warnings: []
 publications:
 - authors:
   - Zdrazil B

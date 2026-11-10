@@ -11492,6 +11492,26 @@ kgr:geo a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/ufbmi/geographical-entity-ontology/wiki> .
 
+kgr:geoals a schema1:DataSource ;
+    rdfs:label "GeoALS" ;
+    dcterms:created "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "GeoALS is a nonprofit organization that applies geographic information systems (GIS) to improve care, accelerate research, and support advocacy for people with amyotrophic lateral sclerosis (ALS). Its ALS Geospatial Hub, built on the ArcGIS platform, provides maps and apps for the ALS community, including a locator for ALS clinics in the United States, a dashboard of clinic reviews contributed by people with ALS and their caregivers, and a Legislative Viewer that maps legislators." ;
+    dcterms:identifier "geoals" ;
+    dcterms:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:geoals.advisor_dashboard,
+        kgr:geoals.clinic_locator,
+        kgr:geoals.hub_maps,
+        kgr:geoals.legislative_viewer ;
+    schema1:name "GeoALS" ;
+    skos:altLabel "ALS Geospatial Hub" ;
+    skos:inScheme "environment",
+        "geographic information systems",
+        "neurodegenerative disease",
+        "neuroscience",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.geoals.org/> .
+
 kgr:geoconnex a schema1:KnowledgeGraph ;
     rdfs:label "GEOCONNEX" ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
@@ -16030,7 +16050,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-28T20:14:21+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-10T16:46:28+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -39285,6 +39305,26 @@ kgr:geo.owl a schema1:OntologyProduct ;
     rdfs:label "geo.owl" ;
     dcterms:description "Geographical Entity Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/geo.owl> .
+
+kgr:geoals.advisor_dashboard a schema1:Product ;
+    rdfs:label "GeoALS Advisor Clinic Review Dashboard" ;
+    dcterms:description "Dashboard of ALS clinic reviews submitted by people with ALS and their caregivers through the GeoALS Advisor survey." ;
+    schema1:url <https://experience.arcgis.com/experience/bbaeab35fed24b2f8f52cc46bcbbb8c1> .
+
+kgr:geoals.clinic_locator a schema1:Product ;
+    rdfs:label "GeoALS ALS Clinic Locator" ;
+    dcterms:description "Interactive ArcGIS map application for locating ALS clinics in the United States, drawing on the GeoALS database of ALS clinics." ;
+    schema1:url <https://experience.arcgis.com/experience/8ec9920c6a9441d9803dcaf7935a67b7> .
+
+kgr:geoals.hub_maps a schema1:Product ;
+    rdfs:label "ALS Geospatial Hub Map Gallery" ;
+    dcterms:description "ALS Geospatial Hub gallery collecting the maps and apps produced by GeoALS for the ALS community." ;
+    schema1:url <https://als-geospatial-hub-nonprofit.hub.arcgis.com/pages/the-maps> .
+
+kgr:geoals.legislative_viewer a schema1:Product ;
+    rdfs:label "GeoALS Legislative Viewer" ;
+    dcterms:description "Map application showing legislators and their districts alongside their photos, intended to support ALS advocacy." ;
+    schema1:url <https://experience.arcgis.com/experience/432276c3289a4839be09c409b817ebd2> .
 
 kgr:geoconnex.sparql a schema1:ProgrammingInterface ;
     rdfs:label "GEOCONNEX SPARQL" ;

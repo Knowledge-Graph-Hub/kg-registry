@@ -36,6 +36,8 @@ products:
     to URL
   - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)

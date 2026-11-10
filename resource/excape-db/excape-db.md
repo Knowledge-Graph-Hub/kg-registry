@@ -81,9 +81,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://doi.org/10.4121/16896406
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-10-28: Timeout connecting
-    to URL'
+  warnings: []
 publications:
 - authors:
   - Jiangming Sun
