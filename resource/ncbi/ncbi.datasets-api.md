@@ -1,9 +1,12 @@
 ---
-category: DocumentationProduct
-description: NCBI Datasets API documentation for genome, gene, taxonomy, virus, and
-  BioSample programmatic access.
+category: ProgrammingInterface
+connection_url: https://api.ncbi.nlm.nih.gov/datasets/v2/
+description: NCBI Datasets v2 REST API for programmatic access to genome, gene, taxonomy,
+  virus, and BioSample data and metadata, with companion datasets and dataformat command-line
+  tools.
 format: http
 id: ncbi.datasets-api
+is_public: true
 name: NCBI Datasets API
 original_source:
 - relation_type: prov:hadPrimarySource

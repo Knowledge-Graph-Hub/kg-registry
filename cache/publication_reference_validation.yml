@@ -6706,6 +6706,15 @@ entries:
     source_path: resource/ncatsgardkg/ncatsgardkg.md
     status: valid
     warnings: []
+  resource/ncbi/ncbi.md#publication[0]#DOI:10.1093/nar/gkaf1060:
+    checked_at: '2026-11-10T16:54:56Z'
+    errors: []
+    fingerprint: 38fb463514a4cffef5bb036e6ee0f3d35b43063ac6e2a36a1b4d07d176cfaab2
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1060
+    source_path: resource/ncbi/ncbi.md
+    status: valid
+    warnings: []
   resource/ncbigene/ncbigene.md#publication[0]#DOI:10.1093/nar/gkq1237:
     checked_at: '2026-06-22T14:45:05Z'
     errors: []

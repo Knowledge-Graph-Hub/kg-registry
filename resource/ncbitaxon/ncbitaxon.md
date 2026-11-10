@@ -3744,6 +3744,27 @@ products:
   product_file_size: 1261625948
   product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
   repository: https://github.com/monarch-initiative/phenio
+- category: Product
+  description: NCBI FTP site providing bulk downloads for NCBI databases, including
+    GenBank and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump,
+    gene data files, and the PubMed baseline and update files.
+  format: mixed
+  id: ncbi.ftp
+  name: NCBI FTP Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  - relation_type: prov:wasDerivedFrom
+    source: genbank
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: ncbitaxon
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://ftp.ncbi.nlm.nih.gov/
 publications:
 - authors:
   - Schoch CL
