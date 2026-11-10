@@ -1170,6 +1170,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:used
     source: mesh
   - relation_type: prov:used
@@ -1191,6 +1193,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:used
     source: mesh
   - relation_type: prov:used
@@ -1212,6 +1216,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:used
     source: mesh
   - relation_type: prov:used
