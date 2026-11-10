@@ -1767,17 +1767,19 @@ products:
   product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
   warnings: []
 - category: Product
+  compression: gzip
   description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
-    genome assembly in GTF format
+    genome assembly (reference chromosomes only) in GTF format. Release 50 corresponds
+    to Ensembl 116.
   format: gff
   id: gencode.human.gtf
-  latest_version: v49
+  latest_version: '50'
   name: GENCODE Human Annotations GTF
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
-  product_file_size: 93374019
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+  product_file_size: 124527720
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
@@ -1786,17 +1788,19 @@ products:
   - relation_type: prov:wasInformedBy
     source: ncbigene
 - category: Product
-  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
-    genome assembly in GTF format
+  compression: gzip
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39 genome
+    assembly (reference chromosomes only) in GTF format. Release M39 corresponds to
+    Ensembl 116.
   format: gff
   id: gencode.mouse.gtf
-  latest_version: M38
+  latest_version: M39
   name: GENCODE Mouse Annotations GTF
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
-  product_file_size: 37627563
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+  product_file_size: 91730109
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gtf.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
@@ -3873,6 +3877,83 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubtator
   product_url: https://pharos.nih.gov/graphql
+- category: Product
+  compression: gzip
+  description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+    genome assembly (reference chromosomes only) in GFF3 format.
+  format: gff
+  id: gencode.human.gff3
+  latest_version: '50'
+  name: GENCODE Human Annotations GFF3
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 160590749
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gff3.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+    from the Ensembl xref pipeline. Companion metadata files in the same release map
+    transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and TrEMBL,
+    PDB, and PubMed IDs.
+  format: tsv
+  id: gencode.human.metadata.hgnc
+  latest_version: '50'
+  name: GENCODE Human HGNC Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: refseq
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: pdb
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  product_file_size: 2698457
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+- category: Product
+  compression: gzip
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+    genome assembly (reference chromosomes only) in GFF3 format.
+  format: gff
+  id: gencode.mouse.gff3
+  latest_version: M39
+  name: GENCODE Mouse Annotations GFF3
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 120486831
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gff3.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+- category: DocumentationProduct
+  description: GENCODE documentation on data access, file formats, tags, and biotypes,
+    including links to Ensembl and UCSC Genome Browser views and track hubs for GENCODE
+    annotation.
+  format: http
+  id: gencode.docs
+  name: GENCODE Data Access Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: ucsc
+  product_url: https://www.gencodegenes.org/pages/data_access.html
 publications:
 - authors:
   - Dyer SC

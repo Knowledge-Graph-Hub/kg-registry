@@ -1,6 +1,14 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: gencode-help@ebi.ac.uk
+  - contact_type: url
+    value: https://www.gencodegenes.org/pages/contact.html
+  label: GENCODE Helpdesk
 creation_date: '2025-11-26T00:00:00Z'
 description: GENCODE is a comprehensive and high-quality reference annotation of the
   human and mouse genomes, providing evidence-based gene annotations including protein-coding
@@ -8,24 +16,27 @@ description: GENCODE is a comprehensive and high-quality reference annotation of
   based on manual curation and computational analysis.
 domains:
 - genomics
+- non-coding RNA
 homepage_url: https://www.gencodegenes.org/
 id: gencode
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-11-10T00:00:00Z'
 layout: resource_detail
 name: GENCODE
 products:
 - category: Product
+  compression: gzip
   description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
-    genome assembly in GTF format
+    genome assembly (reference chromosomes only) in GTF format. Release 50 corresponds
+    to Ensembl 116.
   format: gff
   id: gencode.human.gtf
-  latest_version: v49
+  latest_version: '50'
   name: GENCODE Human Annotations GTF
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
-  product_file_size: 93374019
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+  product_file_size: 124527720
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
@@ -34,17 +45,104 @@ products:
   - relation_type: prov:wasInformedBy
     source: ncbigene
 - category: Product
+  compression: gzip
+  description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+    genome assembly (reference chromosomes only) in GFF3 format.
+  format: gff
+  id: gencode.human.gff3
+  latest_version: '50'
+  name: GENCODE Human Annotations GFF3
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 160590749
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gff3.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+- category: Product
+  compression: gzip
+  description: Nucleotide sequences of all GENCODE human transcripts on the GRCh38
+    reference chromosomes, in FASTA format.
+  format: fasta
+  id: gencode.human.transcripts
+  latest_version: '50'
+  name: GENCODE Human Transcript Sequences
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 183554921
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.transcripts.fa.gz
+- category: Product
+  compression: gzip
+  description: Amino acid sequences of GENCODE human protein-coding transcript translations
+    on the GRCh38 reference chromosomes, in FASTA format.
+  format: fasta
+  id: gencode.human.translations
+  latest_version: '50'
+  name: GENCODE Human Protein Translations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 21136991
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.pc_translations.fa.gz
+- category: Product
+  compression: gzip
+  description: Current comprehensive GENCODE human annotation mapped back to the older
+    GRCh37 assembly, in GTF format.
+  format: gff
+  id: gencode.human.grch37.gtf
+  latest_version: 50lift37
+  name: GENCODE Human Annotations Lifted to GRCh37 GTF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 159680082
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/GRCh37_mapping/gencode.v50lift37.annotation.gtf.gz
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+    from the Ensembl xref pipeline. Companion metadata files in the same release
+    map transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and
+    TrEMBL, PDB, and PubMed IDs.
+  format: tsv
+  id: gencode.human.metadata.hgnc
+  latest_version: '50'
+  name: GENCODE Human HGNC Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: refseq
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: pdb
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  product_file_size: 2698457
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+- category: Product
+  compression: gzip
   description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
-    genome assembly in GTF format
+    genome assembly (reference chromosomes only) in GTF format. Release M39 corresponds
+    to Ensembl 116.
   format: gff
   id: gencode.mouse.gtf
-  latest_version: M38
+  latest_version: M39
   name: GENCODE Mouse Annotations GTF
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
-  product_file_size: 37627563
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+  product_file_size: 91730109
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gtf.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
@@ -52,6 +150,48 @@ products:
     source: mgi
   - relation_type: prov:wasInformedBy
     source: ncbigene
+- category: Product
+  compression: gzip
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+    genome assembly (reference chromosomes only) in GFF3 format.
+  format: gff
+  id: gencode.mouse.gff3
+  latest_version: M39
+  name: GENCODE Mouse Annotations GFF3
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 120486831
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.annotation.gff3.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+- category: Product
+  compression: gzip
+  description: Nucleotide sequences of all GENCODE mouse transcripts on the GRCm39
+    reference chromosomes, in FASTA format.
+  format: fasta
+  id: gencode.mouse.transcripts
+  latest_version: M39
+  name: GENCODE Mouse Transcript Sequences
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 135512511
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.transcripts.fa.gz
+- category: Product
+  compression: gzip
+  description: Amino acid sequences of GENCODE mouse protein-coding transcript translations
+    on the GRCm39 reference chromosomes, in FASTA format.
+  format: fasta
+  id: gencode.mouse.translations
+  latest_version: M39
+  name: GENCODE Mouse Protein Translations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 16190224
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M39/gencode.vM39.pc_translations.fa.gz
 - category: Product
   description: GENCODE Primary transcript set capturing minimal transcripts at protein
     coding genes
@@ -63,6 +203,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gencode
   product_url: https://www.gencodegenes.org/pages/gencode_primary/
+- category: Product
+  description: GENCODE FTP site hosting all current and past human and mouse releases,
+    with README files describing each file type.
+  format: http
+  id: gencode.ftp
+  name: GENCODE FTP Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/
+- category: DocumentationProduct
+  description: GENCODE documentation on data access, file formats, tags, and biotypes,
+    including links to Ensembl and UCSC Genome Browser views and track hubs for GENCODE
+    annotation.
+  format: http
+  id: gencode.docs
+  name: GENCODE Data Access Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: ucsc
+  product_url: https://www.gencodegenes.org/pages/data_access.html
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -820,15 +985,39 @@ products:
 publications:
 - authors:
   - Mudge JM
+  - Carbonell-Sala S
+  - Diekhans M
+  - Martinez JG
+  - Martin FJ
   - Frankish A
-  - Harrow J
-  - Flicek P
   doi: 10.1093/nar/gkae1078
   id: doi:10.1093/nar/gkae1078
   journal: Nucleic Acids Research
   preferred: true
   title: 'GENCODE 2025: reference gene annotation for human and mouse'
   year: '2025'
+- authors:
+  - Frankish A
+  - Carbonell-Sala S
+  - Diekhans M
+  - Tress ML
+  - Flicek P
+  doi: 10.1093/nar/gkac1071
+  id: doi:10.1093/nar/gkac1071
+  journal: Nucleic Acids Research
+  title: 'GENCODE: reference annotation for the human and mouse genomes in 2023'
+  year: '2023'
+- authors:
+  - Harrow J
+  - Frankish A
+  - Gonzalez JM
+  - Guigó R
+  - Hubbard TJ
+  doi: 10.1101/gr.135350.111
+  id: doi:10.1101/gr.135350.111
+  journal: Genome Research
+  title: 'GENCODE: The reference human genome annotation for The ENCODE Project'
+  year: '2012'
 rrid: SCR_014966
 synonyms:
 - GENCODE
@@ -836,6 +1025,7 @@ synonyms:
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090
+version: 50 (human), M39 (mouse)
 ---
 # GENCODE
 
@@ -851,14 +1041,16 @@ The goal of the GENCODE project is to identify and classify all gene features in
 
 - **Comprehensive Annotations**: Protein-coding genes, long non-coding RNAs (lncRNAs), small RNAs, pseudogenes, and other genomic features
 - **Evidence-Based**: Combines manual curation with computational analysis
-- **Regular Updates**: New releases approximately every 3-4 months
+- **Regular Updates**: New human and mouse releases issued in step with Ensembl releases
 - **High Quality**: Integrates experimental data including Capture Long-read Sequencing
 - **Global Core Biodata Resource**: Recognized as essential infrastructure for life sciences research
 
-## Current Releases (September 2025)
+## Current Releases (June 2026)
 
-- **GENCODE 49**: Human genome annotations
-- **GENCODE M38**: Mouse genome annotations
+- **GENCODE 50**: Human annotation on GRCh38.p14 (Ensembl 116); also provided lifted back to GRCh37
+- **GENCODE M39**: Mouse annotation on GRCm39 (Ensembl 116)
+
+Human and mouse releases are made together with Ensembl releases. The current release history is at https://www.gencodegenes.org/human/releases.html and https://www.gencodegenes.org/mouse/releases.html.
 
 ## Annotation Types
 
@@ -881,9 +1073,9 @@ The goal of the GENCODE project is to identify and classify all gene features in
 
 ## Data Formats
 
-- **GTF/GFF3**: Gene transfer format files
-- **FASTA**: Sequence files for transcripts and proteins
-- **Metadata**: Gene and transcript metadata
+- **GTF/GFF3**: Comprehensive, basic, primary-assembly, and patch/haplotype/scaffold annotation sets, plus subsets for lncRNAs, polyA features, tRNAs, pseudogenes, and promoter windows
+- **FASTA**: Transcript, protein-coding transcript, lncRNA transcript, and protein translation sequences, plus the genome sequence
+- **Metadata**: Tab-separated cross-references from transcripts to HGNC, NCBI Gene (Entrez), RefSeq, UniProtKB/Swiss-Prot and TrEMBL, PDB, and PubMed, plus supporting-evidence and source tables
 
 ## Applications
 
@@ -897,40 +1089,38 @@ The goal of the GENCODE project is to identify and classify all gene features in
 
 ## Integration
 
-GENCODE annotations are integrated into:
-- Ensembl genome browser
-- UCSC Genome Browser
-- NCBI RefSeq
-- UniProt
-- UBKG (Unified Biomedical Knowledge Graph)
-- GTEx (Genotype-Tissue Expression)
-- Various RNA-seq analysis pipelines
+The current GENCODE release is the default gene set in the Ensembl Genome Browser for human and mouse, and the UCSC Genome Browser hosts selected GENCODE releases as tracks. GENCODE annotations are also used by many other resources and projects, including UBKG (Unified Biomedical Knowledge Graph), GTEx (Genotype-Tissue Expression), and RNA-seq analysis pipelines. GENCODE collaborates with NCBI on the CCDS project.
 
 ## Consortium Members
 
-- EMBL-EBI (European Bioinformatics Institute)
-- The Wellcome Sanger Institute
+Current participating institutions (per https://www.gencodegenes.org/pages/gencode.html):
+
+- EMBL-EBI (European Bioinformatics Institute), lead institution
 - CRG (Centre for Genomic Regulation, Barcelona)
-- UCSC (University of California, Santa Cruz)
-- CNIO (Spanish National Cancer Research Centre)
 - MIT (Massachusetts Institute of Technology)
 - Yale University
+- UCSC (University of California, Santa Cruz)
+- CNIO (Spanish National Cancer Research Centre)
+- Stanford University
+
+The project began at the Wellcome Sanger Institute as part of ENCODE before moving to EMBL-EBI.
 
 ## Funding
 
-GENCODE is supported by the National Human Genome Research Institute (NHGRI) of the US National Institutes of Health.
+GENCODE is supported by the National Human Genome Research Institute (NHGRI) of the US National Institutes of Health, through a series of grants beginning in 2003 under ENCODE, with later grants in 2013, 2017, and 2021.
 
 ## Access
 
 - **Website**: https://www.gencodegenes.org/
-- **HTTPS Downloads**: Gene annotations, sequences, and metadata
-- **Genome Browsers**: Via Ensembl and UCSC
-- **Social Media**: @GencodeGenes on Twitter
+- **Downloads**: https://ftp.ebi.ac.uk/pub/databases/gencode/ (human and mouse; `latest_release` points to the current release)
+- **Data access guide**: https://www.gencodegenes.org/pages/data_access.html
+- **Genome Browsers**: Via Ensembl and UCSC, including GENCODE track hubs
+- **Helpdesk**: gencode-help@ebi.ac.uk
 
 ## Citation
 
-When using GENCODE data, please cite the GENCODE project and relevant publications describing the specific release used.
+When using GENCODE data, cite the most recent GENCODE paper (currently Mudge et al., GENCODE 2025, Nucleic Acids Research, doi:10.1093/nar/gkae1078) and state the release number used.
 
 ## License
 
-GENCODE data are freely available for research use. See EMBL-EBI Terms of Use for details.
+GENCODE data are freely available. The website and FTP site are provided under the EMBL-EBI Terms of Use; no separate data license is stated.

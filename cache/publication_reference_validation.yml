@@ -3822,11 +3822,29 @@ entries:
     status: valid
     warnings: []
   resource/gencode/gencode.md#publication[0]#DOI:10.1093/nar/gkae1078:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-11-10T16:59:08Z'
     errors: []
-    fingerprint: a2e8db329b5065e19dcda5f8e6707e2bcac766c7dad418f0447b42bd5052d941
+    fingerprint: b02d44203384f096e0254dadca45cc012e55ed8d6d87e8e4678b8d38b45889e7
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkae1078
+    source_path: resource/gencode/gencode.md
+    status: valid
+    warnings: []
+  resource/gencode/gencode.md#publication[1]#DOI:10.1093/nar/gkac1071:
+    checked_at: '2026-11-10T17:04:10Z'
+    errors: []
+    fingerprint: dc1d53ba4a9b35fe84fe4c68398facf0053013f72c7e7577fe601a8ed0fbdae1
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkac1071
+    source_path: resource/gencode/gencode.md
+    status: valid
+    warnings: []
+  resource/gencode/gencode.md#publication[2]#DOI:10.1101/gr.135350.111:
+    checked_at: '2026-11-10T17:04:40Z'
+    errors: []
+    fingerprint: e30e17dc761fac4b65f6a24ca787e0b325b8df7f255b5eb39fd266414e538e61
+    publication_index: 2
+    reference_id: DOI:10.1101/gr.135350.111
     source_path: resource/gencode/gencode.md
     status: valid
     warnings: []
