@@ -287,21 +287,25 @@ products:
   - relation_type: prov:wasInformedBy
     source: rxnorm
 - category: Product
-  description: LabeledIn indication corpus described in the source publication, containing
-    human-reviewed drug-disease treatment relationships with links back to source
-    drug labels.
-  format: http
+  description: Pipe-delimited structured LabeledIn results (September 2014 release),
+    with one row per annotated drug label giving the DailyMed SPL Set ID, UMLS CUIs
+    for the annotated indications, and linked RxNorm ingredient, dose form, and clinical
+    drug RXCUIs.
+  format: txt
   id: labeledin.indications
-  name: LabeledIn Drug Indication Corpus
+  name: LabeledIn Structured Indications
   original_source:
   - relation_type: prov:hadPrimarySource
     source: labeledin
-  product_url: https://doi.org/10.1016/j.jbi.2014.08.004
+  product_file_size: 70793
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_Structured_Results.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: dailymed
   - relation_type: prov:used
     source: rxnorm
+  - relation_type: prov:used
+    source: umls
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -825,6 +829,45 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
+- category: Product
+  description: LabeledIn annotated corpus in pipe-delimited form, containing the Indications
+    and Usage section of each DailyMed drug label with expert indication mentions
+    marked up in inline XML tags carrying UMLS CUIs.
+  format: txt
+  id: labeledin.annotated-xml
+  name: LabeledIn Annotated XML Corpus
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: labeledin
+  product_file_size: 977027
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/LabeledIn_annotated_XML.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: dailymed
+  - relation_type: prov:used
+    source: rxnorm
+  - relation_type: prov:used
+    source: umls
+- category: Product
+  description: Crowdsourced LabeledIn extension (2015) in pipe-delimited structured
+    form, covering 3,004 Amazon Mechanical Turk tasks over 706 DailyMed drug labels,
+    with UMLS CUIs, RxNorm RXCUIs, and the majority-vote indication judgement. Annotated
+    XML and HTML versions and answer codes are in the same directory.
+  format: txt
+  id: labeledin.crowdsourced
+  name: LabeledIn Crowdsourced Indications
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: labeledin
+  product_file_size: 360250
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/LabeledIn/Crowdsourcing/Crowdsourced_Results.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: dailymed
+  - relation_type: prov:used
+    source: rxnorm
+  - relation_type: prov:used
+    source: umls
 publications:
 - authors:
   - Nelson SJ

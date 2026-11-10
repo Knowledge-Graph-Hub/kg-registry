@@ -6802,6 +6802,57 @@ products:
   product_file_size: 1261625948
   product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.json
   repository: https://github.com/monarch-initiative/phenio
+- category: Product
+  description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+    giving 17 core concepts with recommended definitions, the source vocabulary and
+    identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI, UniProt,
+    and QUDT), steering committee approval dates, and example sources.
+  format: csv
+  id: pistoia-pgo.core_concepts_csv
+  name: PGO Core Concepts CSV (Version 1.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pistoia-pgo
+  product_file_size: 11226
+  product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+  secondary_source:
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: obi
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: mi
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+    with the same content as the CSV release (recommended definitions and their source
+    vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and QUDT).
+  format: xlsx
+  id: pistoia-pgo.core_concepts_xlsx
+  name: PGO Core Concepts Excel (Version 1.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pistoia-pgo
+  product_file_size: 23347
+  product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+  secondary_source:
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: obi
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: mi
+  - relation_type: prov:used
+    source: uniprot
 publications:
 - authors:
   - Adnan Malik

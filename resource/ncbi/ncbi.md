@@ -17,23 +17,91 @@ domains:
 - literature
 homepage_url: https://www.ncbi.nlm.nih.gov/
 id: ncbi
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-11-10T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://www.nlm.nih.gov/web_policies.html
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
   label: Public Domain
 name: National Center for Biotechnology Information
 products:
-- category: DocumentationProduct
-  description: NCBI Datasets API documentation for genome, gene, taxonomy, virus,
-    and BioSample programmatic access.
+- category: GraphicalInterface
+  description: NCBI web portal with Entrez search across NCBI literature, sequence,
+    gene, protein, genome, variation, taxonomy and chemical databases.
+  format: http
+  id: ncbi.portal
+  name: NCBI Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_url: https://www.ncbi.nlm.nih.gov/
+- category: ProgrammingInterface
+  connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+  description: Entrez Programming Utilities (E-utilities), a set of server-side programs
+    (ESearch, EFetch, ESummary, ELink, EInfo and others) providing a URL-based API for
+    searching and retrieving records from the Entrez databases. An API key raises the
+    request rate limit.
+  format: http
+  id: ncbi.eutils
+  is_public: true
+  name: NCBI E-utilities
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+- category: ProgrammingInterface
+  connection_url: https://api.ncbi.nlm.nih.gov/datasets/v2/
+  description: NCBI Datasets v2 REST API for programmatic access to genome, gene, taxonomy,
+    virus, and BioSample data and metadata, with companion datasets and dataformat
+    command-line tools.
   format: http
   id: ncbi.datasets-api
+  is_public: true
   name: NCBI Datasets API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ncbi
   product_url: https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/rest-api/
+- category: GraphicalInterface
+  description: NCBI Datasets web interface for browsing and downloading genome assemblies,
+    gene records and associated sequence, annotation and metadata packages.
+  format: http
+  id: ncbi.datasets
+  name: NCBI Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_url: https://www.ncbi.nlm.nih.gov/datasets/
+- category: GraphicalInterface
+  description: BLAST (Basic Local Alignment Search Tool) web service for comparing nucleotide
+    or protein query sequences against NCBI sequence databases.
+  format: http
+  id: ncbi.blast
+  name: NCBI BLAST
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_url: https://blast.ncbi.nlm.nih.gov/Blast.cgi
+- category: Product
+  description: NCBI FTP site providing bulk downloads for NCBI databases, including GenBank
+    and RefSeq sequence releases, genome assemblies, the NCBI Taxonomy dump, gene data
+    files, and the PubMed baseline and update files.
+  format: mixed
+  id: ncbi.ftp
+  name: NCBI FTP Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  - relation_type: prov:wasDerivedFrom
+    source: genbank
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: ncbitaxon
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  product_url: https://ftp.ncbi.nlm.nih.gov/
 - category: DataModelProduct
   description: NCBI Genetic Codes tables summarizing translation tables used in GenBank
     and the NCBI taxonomy.
@@ -420,10 +488,55 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ncbi
   product_url: https://seqapass.epa.gov/seqapass/
+publications:
+- authors:
+  - Sayers EW
+  - Bolton EE
+  - Fine AM
+  - Kelly C
+  - Kim S
+  - Landrum M
+  - Lathrop S
+  - Malheiro A
+  - Murphy TD
+  - Phan L
+  - Pujar S
+  - Trawick BW
+  - Schneider VA
+  - Pruitt KD
+  doi: 10.1093/nar/gkaf1060
+  id: doi:10.1093/nar/gkaf1060
+  journal: Nucleic Acids Research
+  preferred: true
+  title: Database resources of the National Center for Biotechnology Information in
+    2026
+  year: '2026'
+repository: https://github.com/ncbi
 rrid: SCR_006472
+synonyms:
+- NCBI
+warnings:
+- Some content served by NCBI, including PubMed Central articles, Bookshelf content,
+  OMIM and parts of PubChem, may be protected by copyright held by third parties; NCBI
+  places no restrictions on its molecular data, but submitters may claim rights to
+  some records.
 ---
 # National Center for Biotechnology Information
 
-NCBI is a major biomedical information resource at the U.S. National Library of Medicine, offering databases, search systems, analysis tools, and download services across genomics, literature, taxonomy, and related domains.
+The National Center for Biotechnology Information (NCBI) is a division of the U.S. National Library of Medicine (NLM) at the National Institutes of Health. It was established by legislation on November 4, 1988, as a national resource for molecular biology information, and it builds and maintains public databases, conducts research in computational biology, and develops software tools for analyzing genomic and biomedical data.
 
-Its public platform spans popular resources such as PubMed, Gene, Protein, Genome, Taxonomy, and BLAST, and NCBI Datasets provides an increasingly broad API and download surface for genome, gene, taxonomy, virus, and BioSample workflows.
+## Databases and services
+
+NCBI hosts several dozen interlinked databases searchable through the Entrez system. These cover literature (PubMed, PubMed Central, Bookshelf), nucleotide and protein sequences (GenBank, RefSeq), genomes and assemblies, genes (Gene), variation (dbSNP, dbVar, ClinVar), taxonomy (NCBI Taxonomy), sequencing reads (SRA), study and sample metadata (BioProject, BioSample), genotype-phenotype studies (dbGaP), and chemicals (PubChem). Analysis services include BLAST for sequence similarity search. NCBI also maintains reference tables such as the Genetic Codes used to assign translation tables to GenBank coding sequences.
+
+## Access
+
+- **Web**: the NCBI portal and per-database search pages.
+- **APIs**: the Entrez Programming Utilities (E-utilities) for search and retrieval across Entrez databases, and the NCBI Datasets v2 REST API with the `datasets` and `dataformat` command-line tools for genome, gene, taxonomy and virus data.
+- **Bulk downloads**: the NCBI FTP site (https://ftp.ncbi.nlm.nih.gov/) distributes full releases and dumps of many databases.
+
+NCBI publishes an annual overview of its resources in the *Nucleic Acids Research* database issue. Source code for many NCBI tools is available from the NCBI GitHub organization.
+
+## Usage terms
+
+Information created by or for the U.S. government on NCBI web pages is in the public domain, and NCBI places no restrictions on the use or distribution of its molecular data. Some resources incorporate third-party copyrighted material (for example PMC, Bookshelf, OMIM and PubChem), and users are expected to follow the terms of the copyright holders.

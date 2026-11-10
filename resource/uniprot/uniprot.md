@@ -6815,6 +6815,87 @@ products:
     source: uniprot
   product_url: https://doi.org/10.4121/16896406
   warnings: []
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of GENCODE human transcripts to HGNC approved gene symbols,
+    from the Ensembl xref pipeline. Companion metadata files in the same release map
+    transcripts to NCBI Gene (Entrez) IDs, RefSeq, UniProtKB/Swiss-Prot and TrEMBL,
+    PDB, and PubMed IDs.
+  format: tsv
+  id: gencode.human.metadata.hgnc
+  latest_version: '50'
+  name: GENCODE Human HGNC Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: refseq
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: pdb
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  product_file_size: 2698457
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.HGNC.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+- category: Product
+  description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+    giving 17 core concepts with recommended definitions, the source vocabulary and
+    identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI, UniProt,
+    and QUDT), steering committee approval dates, and example sources.
+  format: csv
+  id: pistoia-pgo.core_concepts_csv
+  name: PGO Core Concepts CSV (Version 1.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pistoia-pgo
+  product_file_size: 11226
+  product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+  secondary_source:
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: obi
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: mi
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+    with the same content as the CSV release (recommended definitions and their source
+    vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and QUDT).
+  format: xlsx
+  id: pistoia-pgo.core_concepts_xlsx
+  name: PGO Core Concepts Excel (Version 1.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pistoia-pgo
+  product_file_size: 23347
+  product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+  secondary_source:
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: obi
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: mi
+  - relation_type: prov:used
+    source: uniprot
 publications:
 - authors:
   - Alex Bateman

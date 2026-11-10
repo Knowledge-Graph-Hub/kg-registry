@@ -1,7 +1,9 @@
 ---
 category: OntologyProduct
-description: GitHub repository containing the PGO core concepts, documentation, and
-  LinkML schemas
+description: GitHub repository containing the PGO core concept list (Markdown, CSV,
+  and Excel), per-concept documentation pages, concept diagrams, and the source of
+  the documentation website. Documentation releases are tagged (latest docs-public-V1.0.2,
+  October 2026).
 format: http
 id: pistoia-pgo.github
 name: PGO GitHub Repository

@@ -1651,6 +1651,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:used
     source: mesh
   - relation_type: prov:used
@@ -1672,6 +1674,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:used
     source: mesh
   - relation_type: prov:used
@@ -1693,6 +1697,8 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: who
   - relation_type: prov:used
     source: mesh
   - relation_type: prov:used
@@ -3324,6 +3330,84 @@ products:
     source: biosample
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
   repository: https://github.com/ncbi/entrez-direct
+- category: Product
+  description: List of MeSH descriptor IDs and terms used to normalize the conditions
+    represented in AcuKG.
+  format: csv
+  id: acukg.mesh-conditions
+  name: AcuKG MeSH condition list
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: acukg
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/MeSH-Condition.csv
+- category: DocumentationProduct
+  description: NLM Data Distribution program page, the preferred access point for
+    bulk downloads of MEDLINE/PubMed baseline and daily update citation files (XML),
+    MeSH data, and NLM catalog record data, with the associated terms and conditions.
+  format: http
+  id: nlm.data-distribution
+  name: NLM Data Distribution
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nlm
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  product_url: https://www.nlm.nih.gov/databases/download/data_distrib_main.html
+- category: Product
+  description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20,
+    giving 17 core concepts with recommended definitions, the source vocabulary and
+    identifier of each definition (mostly NCIt, plus OBI, MeSH, ChEBI, PSI-MI, UniProt,
+    and QUDT), steering committee approval dates, and example sources.
+  format: csv
+  id: pistoia-pgo.core_concepts_csv
+  name: PGO Core Concepts CSV (Version 1.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pistoia-pgo
+  product_file_size: 11226
+  product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
+  secondary_source:
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: obi
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: mi
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  description: Excel release of the PGO Version 1.0 core concept list dated 2026-03-20,
+    with the same content as the CSV release (recommended definitions and their source
+    vocabularies, including NCIt, OBI, MeSH, ChEBI, PSI-MI, UniProt, and QUDT).
+  format: xlsx
+  id: pistoia-pgo.core_concepts_xlsx
+  name: PGO Core Concepts Excel (Version 1.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pistoia-pgo
+  product_file_size: 23347
+  product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.xlsx
+  secondary_source:
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: obi
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: mi
+  - relation_type: prov:used
+    source: uniprot
 publications:
 - authors:
   - Lipscomb CE
