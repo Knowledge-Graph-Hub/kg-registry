@@ -1,6 +1,19 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: fimam@ucsd.edu
+  label: Fahim T. Imam
+- category: Organization
+  contact_details:
+  - contact_type: github
+    value: SciCrunch
+  - contact_type: url
+    value: https://github.com/SciCrunch/sparc-curation
+  label: SciCrunch
 creation_date: '2025-09-09T00:00:00Z'
 description: SCKAN (SPARC Connectivity Knowledge base of the Autonomic Nervous system)
   is a curated knowledge base representing neural circuit connectivity in the autonomic
@@ -11,10 +24,15 @@ description: SCKAN (SPARC Connectivity Knowledge base of the Autonomic Nervous s
 domains:
 - anatomy and development
 - neuroscience
+funding:
+- National Institutes of Health (NIH) Common Fund, SPARC program (3OT2OD030541)
 homepage_url: https://docs.sparc.science/docs/sckan
 id: sckan
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-11-12T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: SCKAN
 products:
 - category: GraphicalInterface
@@ -50,15 +68,56 @@ products:
     source: sckan
   product_url: https://github.com/SciCrunch/sparc-curation/tree/master/docs/sckan
 - category: Product
-  description: Latest SCKAN data release, including curated knowledge and models,
-    available via Zenodo.
+  description: Latest SCKAN data release on Zenodo (concept DOI, resolving to the
+    newest version), containing the raw data inputs with the Blazegraph journal file,
+    the SciGraph database, and a Docker data image bundling both with server configuration
+    files.
   format: http
   id: sckan.data_release
   name: SCKAN Data Release
   original_source:
   - relation_type: prov:hadPrimarySource
     source: sckan
+  - relation_type: prov:hadPrimarySource
+    source: sparc
+  - relation_type: prov:hadPrimarySource
+    source: npo
+  - relation_type: prov:hadPrimarySource
+    source: nif-ontology
   product_url: https://doi.org/10.5281/zenodo.5337441
+- category: GraphicalInterface
+  description: SCKAN Explorer, a query interface designed for SCKAN knowledge curators
+    to check and verify connections without writing SPARQL, searchable by origin,
+    destination, via location, phenotype, named model, neuron ID, species and target
+    organ.
+  format: http
+  id: sckan.explorer
+  name: SCKAN Explorer
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  product_url: https://services.scicrunch.io/sckan/explorer/
+  rrid: SCR_026080
+- category: DocumentationProduct
+  description: Example SPARQL queries and Jupyter notebooks for SCKAN, including the
+    code and results for the competency queries described in the SCKAN paper.
+  format: http
+  id: sckan.query-examples
+  name: SCKAN Example Queries
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  product_url: https://github.com/SciCrunch/sckan-query-examples
+- category: DocumentationProduct
+  description: SCKAN Curation Manual describing how neural connectivity knowledge
+    is curated into SCKAN.
+  format: http
+  id: sckan.curation-manual
+  name: SCKAN Curation Manual
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  product_url: https://doi.org/10.5281/zenodo.14774195
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -305,6 +364,31 @@ products:
     source: sckan
   product_file_size: 198292
   product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/09202024/SPARC.zip
+publications:
+- authors:
+  - Imam FT
+  - Gillespie TH
+  - Ziogas I
+  - Surles-Zeigler MC
+  - Tappan S
+  - Ozyurt BI
+  - Boline J
+  - de Bono B
+  - Grethe JS
+  - Martone ME
+  doi: 10.3389/fninf.2025.1541184
+  id: doi:10.3389/fninf.2025.1541184
+  journal: Frontiers in Neuroinformatics
+  preferred: true
+  title: Developing a multiscale neural connectivity knowledgebase of the autonomic
+    nervous system
+  year: '2025'
+repository: https://github.com/SciCrunch/sparc-curation
+rrid: SCR_026088
+synonyms:
+- SPARC Connectivity Knowledgebase of the Autonomic Nervous System
+- SPARC Connectivity Knowledge base of the Autonomic Nervous System
+version: '2026-02-11'
 ---
 # SCKAN
 

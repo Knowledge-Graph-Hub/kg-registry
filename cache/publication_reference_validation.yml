@@ -9720,6 +9720,15 @@ entries:
     source_path: resource/scdo/scdo.md
     status: valid
     warnings: []
+  resource/sckan/sckan.md#publication[0]#DOI:10.3389/fninf.2025.1541184:
+    checked_at: '2026-11-12T20:24:41Z'
+    errors: []
+    fingerprint: 3d4ac49c78d117b6fb8d8d81a9afb48d80db801fe4dae68362a4e31bf3926649
+    publication_index: 0
+    reference_id: DOI:10.3389/fninf.2025.1541184
+    source_path: resource/sckan/sckan.md
+    status: valid
+    warnings: []
   resource/scop/scop.md#publication[0]#DOI:10.1093/nar/gkz1064:
     checked_at: '2026-06-17T14:07:33Z'
     errors: []

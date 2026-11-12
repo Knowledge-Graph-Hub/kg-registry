@@ -29,7 +29,7 @@ layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
     license (custom) among its sources: 4dn, gtex, msigdb, ubkg, umls. Not accounted
-    for, no known license: gene-expression-omnibus, kidsfirst, lincs, mw, sckan.'
+    for, no known license: gene-expression-omnibus, kidsfirst, lincs, mw.'
   id: https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal
   inferred_from:
   - 4dn
@@ -45,7 +45,6 @@ license:
   - kidsfirst
   - lincs
   - mw
-  - sckan
 name: Data Distillery Knowledge Graph (DDKG)
 products:
   - category: GraphicalInterface
