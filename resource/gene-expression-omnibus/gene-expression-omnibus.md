@@ -1815,6 +1815,91 @@ products:
   warnings:
   - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
     is free but required for direct file access.
+- category: Product
+  description: Tab-delimited table of ncRNAs predicted to be associated with drug
+    resistance from differential expression analysis of resistant versus sensitive
+    samples in GEO series.
+  format: tsv
+  id: ncrnadrug.drug-resistance-geo
+  name: ncRNADrug Predicted Drug Resistance Associations from GEO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_file_size: 59928861
+  product_url: http://www.jianglab.cn/ncRNADrug/data_download/DR_GEO.txt
+- category: Product
+  description: Tab-delimited table of ncRNAs predicted to be targeted by drugs from
+    differential expression analysis of drug-treated versus control samples in GEO
+    series.
+  format: tsv
+  id: ncrnadrug.drug-target-geo
+  name: ncRNADrug Predicted Drug Target Associations from GEO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_file_size: 55064571
+  product_url: http://www.jianglab.cn/ncRNADrug/data_download/DT_GEO.txt
+- category: GraphProduct
+  compression: gzip
+  description: All NPInter v5.0 ncRNA interactions (literature-curated, high-throughput
+    and computational) as a gzipped tab-delimited table of ncRNA, partner, interaction
+    class, level, experiment, data source, organism, tissue or cell, and PubMed IDs.
+  format: tsv
+  id: npinter.interactions
+  latest_version: '5.0'
+  name: NPInter v5.0 All Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: Experimentally validated NPInter v5.0 ncRNA interactions as a gzipped
+    tab-delimited table.
+  format: tsv
+  id: npinter.interactions-experimental
+  latest_version: '5.0'
+  name: NPInter v5.0 Experimentally Validated Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.expr.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: Genome-wide RNA-DNA interactions collected by NPInter v5.0 from iMARGI,
+    ChAR-seq and GRID-seq datasets, as a gzipped tab-delimited table.
+  format: tsv
+  id: npinter.rna-dna-interactions
+  latest_version: '5.0'
+  name: NPInter v5.0 RNA-DNA Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/dna_interactions.npinter5.txt.gz
 rrid: SCR_005012
 ---
 Gene Expression Omnibus (GEO)

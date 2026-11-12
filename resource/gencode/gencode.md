@@ -982,6 +982,62 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zfin
   product_url: https://www.dbnsfp.org/license
+- category: ProcessProduct
+  description: Pangolin source code and trained models, a Python (PyTorch) tool that
+    annotates variants in a VCF or CSV file with splice gain and loss scores, using
+    a gene annotation database (GENCODE-based databases are provided) for masking.
+    A Google Colab notebook is also provided.
+  format: python
+  id: pangolin.software
+  license:
+    id: https://www.gnu.org/licenses/gpl-3.0.html
+    label: GPL-3.0
+  name: Pangolin Software
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pangolin
+  - relation_type: prov:wasInfluencedBy
+    source: gencode
+  product_url: https://github.com/tkzeng/Pangolin
+- category: Product
+  compression: zip
+  description: Pangolin precomputed scores for all SNVs in protein-coding genes on
+    hg38, computed with default parameters (window size 50 nt) and masked using GENCODE
+    splice site annotations, as per-gene TSV files with chromosome, position, reference
+    and alternate alleles, gain and loss scores and their relative positions. Computed
+    by Nils Wagner and Aleksandr Neverov (Technical University of Munich) and published
+    on Zenodo on 2025-06-12.
+  format: tsv
+  id: pangolin.hg38-snvs-masked
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: Pangolin Precomputed hg38 SNV Scores (Masked)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pangolin
+  - relation_type: prov:wasInfluencedBy
+    source: gencode
+  product_file_size: 12988141317
+  product_url: https://zenodo.org/records/15649338
+- category: Product
+  description: Illumina precomputed SpliceAI scores for all possible substitutions,
+    1-base insertions and 1-4 base deletions within genes, on GRCh37 and GRCh38, raw
+    and masked, distributed as VCF files through Illumina BaseSpace (login required).
+    Free for academic and not-for-profit use; other uses require a commercial license.
+  format: http
+  id: spliceai.precomputed
+  license:
+    id: https://basespace.illumina.com/s/otSPW8hnhaZR
+    label: Free for academic and not-for-profit use; commercial use requires a license
+      from Illumina
+  name: SpliceAI Precomputed Scores (Illumina BaseSpace)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spliceai
+  - relation_type: prov:wasInfluencedBy
+    source: gencode
+  product_url: https://basespace.illumina.com/s/otSPW8hnhaZR
 publications:
 - authors:
   - Mudge JM

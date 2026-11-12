@@ -3144,6 +3144,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biobtree
   - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
     source: alphafold
   - relation_type: prov:hadPrimarySource
     source: alphamissense
@@ -3158,6 +3160,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: brenda
   - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
     source: cellphonedb
   - relation_type: prov:hadPrimarySource
     source: cellxgene
@@ -3165,6 +3169,10 @@ products:
     source: chebi
   - relation_type: prov:hadPrimarySource
     source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: civic
   - relation_type: prov:hadPrimarySource
     source: cl
   - relation_type: prov:hadPrimarySource
@@ -3180,6 +3188,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: dbsnp
   - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
     source: eco
   - relation_type: prov:hadPrimarySource
     source: efo
@@ -3190,11 +3204,19 @@ products:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
   - relation_type: prov:hadPrimarySource
+    source: faers
+  - relation_type: prov:hadPrimarySource
     source: fantom5
   - relation_type: prov:hadPrimarySource
     source: gencc
   - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gpn-star
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
@@ -3202,15 +3224,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hmdb
   - relation_type: prov:hadPrimarySource
+    source: hmdd
+  - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
     source: interpro
   - relation_type: prov:hadPrimarySource
+    source: intogen
+  - relation_type: prov:hadPrimarySource
     source: jaspar
   - relation_type: prov:hadPrimarySource
     source: lipidmaps
+  - relation_type: prov:hadPrimarySource
+    source: mavedb
   - relation_type: prov:hadPrimarySource
     source: mesh
   - relation_type: prov:hadPrimarySource
@@ -3224,7 +3252,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
     source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panelapp
+  - relation_type: prov:hadPrimarySource
+    source: pangolin
   - relation_type: prov:hadPrimarySource
     source: pdb
   - relation_type: prov:hadPrimarySource
@@ -3236,11 +3272,19 @@ products:
   - relation_type: prov:hadPrimarySource
     source: refseq
   - relation_type: prov:hadPrimarySource
+    source: revel
+  - relation_type: prov:hadPrimarySource
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: rnacentral
   - relation_type: prov:hadPrimarySource
+    source: sabdab
+  - relation_type: prov:hadPrimarySource
+    source: saprot
+  - relation_type: prov:hadPrimarySource
     source: signor
+  - relation_type: prov:hadPrimarySource
+    source: spliceai
   - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
@@ -3248,9 +3292,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: swisslipid
   - relation_type: prov:hadPrimarySource
+    source: therasabdab
+  - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
   product_url: https://sugi.bio/biobtree/api/
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
@@ -3521,13 +3569,16 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
-    exported as a biolink-typed KGX graph (~40M nodes / ~132M edges, ~8.3 GB compressed
-    across separate node and edge files). A practical projection of the full graph
-    for human-centric biomedical use. Published on Zenodo.
-  edge_count: 132075627
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
+    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
+    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
+    of the full graph for human-centric biomedical use. Sources without compatible redistribution
+    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
+    variant-prediction layers). Published on Zenodo.
+  edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph
+  latest_version: v2-2026-11
   license:
     id: https://creativecommons.org/licenses/by-nc-sa/4.0/
     label: CC-BY-NC-SA-4.0
@@ -3559,14 +3610,14 @@ products:
   - biolink:SequenceVariant
   - biolink:SmallMolecule
   - biolink:Transcript
-  node_count: 40160474
+  node_count: 47361928
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biobtree
   - relation_type: prov:hadPrimarySource
-    source: alphafold
+    source: alliance
   - relation_type: prov:hadPrimarySource
-    source: alphamissense
+    source: alphafold
   - relation_type: prov:hadPrimarySource
     source: bao
   - relation_type: prov:hadPrimarySource
@@ -3578,6 +3629,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: brenda
   - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
     source: cellphonedb
   - relation_type: prov:hadPrimarySource
     source: cellxgene
@@ -3585,6 +3638,10 @@ products:
     source: chebi
   - relation_type: prov:hadPrimarySource
     source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: civic
   - relation_type: prov:hadPrimarySource
     source: cl
   - relation_type: prov:hadPrimarySource
@@ -3596,9 +3653,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: corum
   - relation_type: prov:hadPrimarySource
-    source: ctd
-  - relation_type: prov:hadPrimarySource
     source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   - relation_type: prov:hadPrimarySource
     source: eco
   - relation_type: prov:hadPrimarySource
@@ -3610,11 +3671,17 @@ products:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
   - relation_type: prov:hadPrimarySource
+    source: faers
+  - relation_type: prov:hadPrimarySource
     source: fantom5
   - relation_type: prov:hadPrimarySource
     source: gencc
   - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
@@ -3633,8 +3700,6 @@ products:
     source: lipidmaps
   - relation_type: prov:hadPrimarySource
     source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: mirdb
   - relation_type: prov:hadPrimarySource
     source: mondo
   - relation_type: prov:hadPrimarySource
@@ -3671,6 +3736,8 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
   predicates:
   - biolink:actively_involved_in
   - biolink:affects
@@ -3698,13 +3765,14 @@ products:
   - biolink:paralogous_to
   - biolink:participates_in
   - biolink:physically_interacts_with
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
   - biolink:transcribed_from
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
-  product_url: https://zenodo.org/records/20816742
+  product_url: https://doi.org/10.5281/zenodo.20816741
 - category: GraphProduct
   description: Public SPARQL endpoint (OpenLink Virtuoso) providing query access to
     the complete FORUM knowledge graph. The former credentialed FTP tarball dump (2021)

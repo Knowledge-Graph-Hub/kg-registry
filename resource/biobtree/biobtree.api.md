@@ -11,6 +11,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: biobtree
 - relation_type: prov:hadPrimarySource
+  source: alliance
+- relation_type: prov:hadPrimarySource
   source: alphafold
 - relation_type: prov:hadPrimarySource
   source: alphamissense
@@ -25,6 +27,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: brenda
 - relation_type: prov:hadPrimarySource
+  source: cellosaurus
+- relation_type: prov:hadPrimarySource
   source: cellphonedb
 - relation_type: prov:hadPrimarySource
   source: cellxgene
@@ -32,6 +36,10 @@ original_source:
   source: chebi
 - relation_type: prov:hadPrimarySource
   source: chembl
+- relation_type: prov:hadPrimarySource
+  source: chip-atlas
+- relation_type: prov:hadPrimarySource
+  source: civic
 - relation_type: prov:hadPrimarySource
   source: cl
 - relation_type: prov:hadPrimarySource
@@ -47,6 +55,12 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: dbsnp
 - relation_type: prov:hadPrimarySource
+  source: dbvar
+- relation_type: prov:hadPrimarySource
+  source: depmap
+- relation_type: prov:hadPrimarySource
+  source: drugcentral
+- relation_type: prov:hadPrimarySource
   source: eco
 - relation_type: prov:hadPrimarySource
   source: efo
@@ -57,11 +71,19 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: expressionatlas
 - relation_type: prov:hadPrimarySource
+  source: faers
+- relation_type: prov:hadPrimarySource
   source: fantom5
 - relation_type: prov:hadPrimarySource
   source: gencc
 - relation_type: prov:hadPrimarySource
+  source: gnomad
+- relation_type: prov:hadPrimarySource
   source: go
+- relation_type: prov:hadPrimarySource
+  source: goa
+- relation_type: prov:hadPrimarySource
+  source: gpn-star
 - relation_type: prov:hadPrimarySource
   source: gwascatalog
 - relation_type: prov:hadPrimarySource
@@ -69,15 +91,21 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: hmdb
 - relation_type: prov:hadPrimarySource
+  source: hmdd
+- relation_type: prov:hadPrimarySource
   source: hp
 - relation_type: prov:hadPrimarySource
   source: intact
 - relation_type: prov:hadPrimarySource
   source: interpro
 - relation_type: prov:hadPrimarySource
+  source: intogen
+- relation_type: prov:hadPrimarySource
   source: jaspar
 - relation_type: prov:hadPrimarySource
   source: lipidmaps
+- relation_type: prov:hadPrimarySource
+  source: mavedb
 - relation_type: prov:hadPrimarySource
   source: mesh
 - relation_type: prov:hadPrimarySource
@@ -91,7 +119,15 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: ncbitaxon
 - relation_type: prov:hadPrimarySource
+  source: ncrnadrug
+- relation_type: prov:hadPrimarySource
+  source: npinter
+- relation_type: prov:hadPrimarySource
   source: orphanet
+- relation_type: prov:hadPrimarySource
+  source: panelapp
+- relation_type: prov:hadPrimarySource
+  source: pangolin
 - relation_type: prov:hadPrimarySource
   source: pdb
 - relation_type: prov:hadPrimarySource
@@ -103,11 +139,19 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: refseq
 - relation_type: prov:hadPrimarySource
+  source: revel
+- relation_type: prov:hadPrimarySource
   source: rhea
 - relation_type: prov:hadPrimarySource
   source: rnacentral
 - relation_type: prov:hadPrimarySource
+  source: sabdab
+- relation_type: prov:hadPrimarySource
+  source: saprot
+- relation_type: prov:hadPrimarySource
   source: signor
+- relation_type: prov:hadPrimarySource
+  source: spliceai
 - relation_type: prov:hadPrimarySource
   source: string
 - relation_type: prov:hadPrimarySource
@@ -115,9 +159,13 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: swisslipid
 - relation_type: prov:hadPrimarySource
+  source: therasabdab
+- relation_type: prov:hadPrimarySource
   source: uberon
 - relation_type: prov:hadPrimarySource
   source: uniprot
+- relation_type: prov:hadPrimarySource
+  source: wikipathways
 product_url: https://sugi.bio/biobtree/api/
 layout: product_detail
 ---

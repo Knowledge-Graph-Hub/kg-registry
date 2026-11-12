@@ -1838,6 +1838,112 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://spoke.ucsf.edu/data-tools
+- category: Product
+  description: Tab-delimited table of all HMDD v4.0 miRNA-disease association entries,
+    with evidence code, PubMed ID, miRNA name, disease name, and a description of
+    the supporting evidence. MiRNA names follow miRBase nomenclature and disease names
+    follow MeSH.
+  format: tsv
+  id: hmdd.alldata
+  is_public: true
+  latest_version: v4.0
+  name: HMDD v4.0 All Association Data (text)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hmdd
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 12849414
+  product_url: http://www.cuilab.cn/static/hmdd3/data/alldata_v4.txt
+- category: Product
+  description: Excel version of the full HMDD v4.0 miRNA-disease association table.
+  format: xlsx
+  id: hmdd.alldata-xlsx
+  is_public: true
+  latest_version: v4.0
+  name: HMDD v4.0 All Association Data (Excel)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hmdd
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 5674249
+  product_url: http://www.cuilab.cn/static/hmdd3/data/alldata_v4.xlsx
+- category: Product
+  description: Tab-delimited table of experimentally supported ncRNAs associated with
+    drug resistance or drug response, manually curated from the literature, with ncRNA
+    and drug identifiers, effect, target genes, pathways, detection method and condition.
+  format: tsv
+  id: ncrnadrug.drug-resistance-curated
+  name: ncRNADrug Curated Drug Resistance Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  product_file_size: 15627539
+  product_url: http://www.jianglab.cn/ncRNADrug/data_download/DR_Curated.txt
+- category: Product
+  description: Tab-delimited table of experimentally supported ncRNAs targeted by
+    drugs (drugs that regulate ncRNA expression), manually curated from the literature,
+    with ncRNA and drug identifiers, regulation direction, detection method and condition.
+  format: tsv
+  id: ncrnadrug.drug-target-curated
+  name: ncRNADrug Curated Drug Target Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  product_file_size: 16640321
+  product_url: http://www.jianglab.cn/ncRNADrug/data_download/DT_Curated.txt
+- category: GraphProduct
+  compression: gzip
+  description: All NPInter v5.0 ncRNA interactions (literature-curated, high-throughput
+    and computational) as a gzipped tab-delimited table of ncRNA, partner, interaction
+    class, level, experiment, data source, organism, tissue or cell, and PubMed IDs.
+  format: tsv
+  id: npinter.interactions
+  latest_version: '5.0'
+  name: NPInter v5.0 All Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
 publications:
 - authors:
   - Kozomara
