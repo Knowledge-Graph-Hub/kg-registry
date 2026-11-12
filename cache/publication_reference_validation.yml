@@ -7815,6 +7815,24 @@ entries:
     source_path: resource/p3db/p3db.md
     status: valid
     warnings: []
+  resource/panelapp/panelapp.md#publication[0]#DOI:10.1038/s41588-019-0528-2:
+    checked_at: '2026-11-12T19:19:14Z'
+    errors: []
+    fingerprint: 33ce8e5c3a864e536da2a4f1b8e6ae325de54a6bb50625c98e17eba67dffa6a4
+    publication_index: 0
+    reference_id: DOI:10.1038/s41588-019-0528-2
+    source_path: resource/panelapp/panelapp.md
+    status: valid
+    warnings: []
+  resource/panelapp/panelapp.md#publication[1]#DOI:10.1016/j.ajhg.2021.06.020:
+    checked_at: '2026-11-12T19:19:15Z'
+    errors: []
+    fingerprint: dd1307316c2927348ed66e98506dc954651b96cb51f040eb94ea8ed409b3b19b
+    publication_index: 1
+    reference_id: DOI:10.1016/j.ajhg.2021.06.020
+    source_path: resource/panelapp/panelapp.md
+    status: valid
+    warnings: []
   resource/pankbase/pankbase.md#publication[0]#PMID:42327171:
     checked_at: '2026-11-10T18:09:55Z'
     errors: []
