@@ -79,6 +79,33 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gdelt
   product_url: https://www.gdeltproject.org/data.html#documentation
+- category: DataModelProduct
+  description: Tab-delimited lookup table of CAMEO event codes and their descriptions
+    (root, base and sub-category codes), as distributed by the GDELT Project for decoding
+    its Event Database.
+  format: tsv
+  id: cameo.event-codes
+  name: CAMEO Event Codes Lookup (GDELT)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cameo
+  - relation_type: prov:hadPrimarySource
+    source: gdelt
+  product_file_size: 12157
+  product_url: https://www.gdeltproject.org/data/lookups/CAMEO.eventcodes.txt
+- category: DataModelProduct
+  description: Tab-delimited lookup table assigning a Goldstein scale conflict-cooperation
+    score to each CAMEO event code, as distributed by the GDELT Project.
+  format: tsv
+  id: cameo.goldstein-scale
+  name: CAMEO Goldstein Scale Lookup (GDELT)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cameo
+  - relation_type: prov:hadPrimarySource
+    source: gdelt
+  product_file_size: 3165
+  product_url: https://www.gdeltproject.org/data/lookups/CAMEO.goldsteinscale.txt
 synonyms:
 - GDELT
 - Global Knowledge Graph

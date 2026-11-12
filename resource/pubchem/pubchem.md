@@ -4039,6 +4039,110 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubchem
   product_url: https://doi.org/10.5281/zenodo.675987
+- category: Product
+  compression: zip
+  description: Latest CDCDB release (version of 18 June 2024) as CSV tables covering
+    clinical trial design groups, studies, conditions, MeSH terms and references,
+    FDA Orange Book combination products and patents, patent drug, metadata and IPC
+    tables, and the all-combinations table with DrugBank and PubChem identifiers.
+  format: csv
+  id: cdcdb.csv
+  name: CDCDB CSV Tables
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdcdb
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: fda-orange-book
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_file_size: 70422005
+  product_url: https://icc.ise.bgu.ac.il/medical_ai/api/version/18.06.2024.zip
+  secondary_source:
+  - relation_type: prov:used
+    source: umls
+- category: Product
+  compression: zip
+  description: Latest CDCDB release (version of 18 June 2024) as a SQLite database
+    holding the same tables as the CSV release.
+  format: sqlite
+  id: cdcdb.sqlite
+  name: CDCDB SQLite Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdcdb
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: fda-orange-book
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_file_size: 75016574
+  product_url: https://icc.ise.bgu.ac.il/medical_ai/api/version/18.06.2024.sqlite.zip
+  secondary_source:
+  - relation_type: prov:used
+    source: umls
+- category: Product
+  description: Figshare collection accompanying the Scientific Data paper, with the
+    CSV and SQLite versions of CDCDB from 12 April 2022, the database schema, a description
+    and a read-me file, released under CC0.
+  format: mixed
+  id: cdcdb.figshare
+  name: CDCDB Figshare Collection (12 April 2022)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cdcdb
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: fda-orange-book
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://doi.org/10.6084/m9.figshare.c.5375228.v1
+- category: Product
+  compression: zip
+  description: DCDB 2.0 data as tab-delimited plain text files (drug combinations,
+    components, targets and their interactions), formerly offered on the DCDB download
+    page alongside an Oracle 11.2 dump.
+  format: tsv
+  id: dcdb.plain_text_dump
+  name: DCDB 2.0 Plain Text Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dcdb
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: fda-orange-book
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: http://www.cls.zju.edu.cn/dcdb/downloadfile/DCDB2_plaintxt.zip
+  warnings:
+  - File was not able to be retrieved when checked on 2026-11-12 (HTTP 404); no archived
+    copy was found in the Internet Archive.
 publications:
 - authors:
   - Kim S

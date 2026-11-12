@@ -11,10 +11,10 @@ name: psygenet2r R Package
 original_source:
 - relation_type: prov:hadPrimarySource
   source: psygenet
-product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
+product_url: https://bioconductor.org/packages/3.20/bioc/html/psygenet2r.html
 repository: https://git.bioconductor.org/packages/psygenet2r
 warnings:
-- File was not able to be retrieved when checked on 2026-11-10_ HTTP 404 error when
-  accessing file
+- psygenet2r was deprecated in Bioconductor 3.20 and removed with the Bioconductor
+  3.21 release; the product URL points to the last Bioconductor 3.20 package page.
 layout: product_detail
 ---

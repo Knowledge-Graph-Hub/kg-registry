@@ -9,6 +9,10 @@ name: miRDB Predicted Targets
 original_source:
 - relation_type: prov:hadPrimarySource
   source: mirdb
+- relation_type: prov:hadPrimarySource
+  source: mirbase
+- relation_type: prov:hadPrimarySource
+  source: ncbigene
 product_url: https://mirdb.org/download.html
 warnings: []
 layout: product_detail

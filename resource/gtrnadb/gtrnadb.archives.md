@@ -4,9 +4,12 @@ description: Archive of previous GtRNAdb data releases with change logs
 format: http
 id: gtrnadb.archives
 name: Previous Releases Archive
-product_url: https://gtrnadb.org/archives.html
-layout: product_detail
 original_source:
-  - source: gtrnadb
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: gtrnadb
+product_url: https://gtrnadb.org/archives.html
+secondary_source:
+- relation_type: prov:used
+  source: trnascan-se
+layout: product_detail
 ---

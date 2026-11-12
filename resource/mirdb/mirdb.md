@@ -1,6 +1,20 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://chicago.medicine.uic.edu/pharmacology/mcph-research/research-labs/wang-lab/
+  - contact_type: url
+    value: https://mirdb.org/comment.html
+  label: Wang Lab, Department of Pharmacology and Regenerative Medicine, University
+    of Illinois Chicago
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: xwang317@uic.edu
+  label: Xiaowei Wang
 creation_date: '2026-06-15T00:00:00Z'
 description: miRDB is an online database for microRNA (miRNA) target prediction and
   functional annotations. Targets are predicted by MirTarget, a computational tool
@@ -11,9 +25,12 @@ description: miRDB is an online database for microRNA (miRNA) target prediction 
 domains:
 - genomics
 - non-coding RNA
+funding:
+- National Institutes of Health (NIH) (R01GM089784)
+- National Institutes of Health (NIH) (R01DE026471)
 homepage_url: https://mirdb.org/
 id: mirdb
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-11-12T00:00:00Z'
 layout: resource_detail
 name: miRDB
 products:
@@ -27,8 +44,49 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
   product_url: https://mirdb.org/download.html
   warnings: []
+- category: Product
+  description: miRDB version 6.0 (June 2019) predicted miRNA targets for human, mouse,
+    rat, dog and chicken, generated with MirTarget V4 using miRNA sequences from
+    miRBase 22, as a gzipped tab-delimited text file.
+  format: txt
+  id: mirdb.predicted-targets-v6
+  name: miRDB v6.0 Predicted Targets File
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz
+- category: GraphicalInterface
+  description: Custom target prediction tool that runs MirTarget on a user-submitted
+    miRNA sequence or mRNA target sequence for human, mouse, rat, dog or chicken.
+  format: http
+  id: mirdb.custom-prediction
+  name: miRDB Custom Prediction
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  product_url: https://mirdb.org/custom.html
+- category: GraphicalInterface
+  description: FuncMir, a browsable collection of functional human and mouse precursor
+    and mature miRNAs with links to their predicted targets.
+  format: http
+  id: mirdb.funcmir
+  name: miRDB FuncMir Collection
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_url: https://mirdb.org/FuncMir.html
 - category: GraphicalInterface
   description: Web interface for searching predicted miRNA targets by miRNA name or
     gene, performing custom target prediction on user-provided sequences, and browsing
@@ -414,7 +472,34 @@ publications:
   preferred: true
   title: 'miRDB: an online database for prediction of functional microRNA targets'
   year: '2020'
+- authors:
+  - Liu W
+  - Wang X
+  doi: doi:10.1186/s13059-019-1629-z
+  id: doi:10.1186/s13059-019-1629-z
+  journal: Genome Biology
+  title: Prediction of functional microRNA targets by integrative modeling of microRNA
+    binding and target expression data
+  year: '2019'
+- authors:
+  - Wong N
+  - Wang X
+  doi: doi:10.1093/nar/gku1104
+  id: doi:10.1093/nar/gku1104
+  journal: Nucleic Acids Research
+  title: 'miRDB: an online resource for microRNA target prediction and functional
+    annotations'
+  year: '2015'
 rrid: SCR_010848
+synonyms:
+- MicroRNA Target Prediction Database
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:10116
+- NCBITaxon:9615
+- NCBITaxon:9031
+version: '6.0'
 ---
 # miRDB
 
@@ -427,3 +512,8 @@ The database provides millions of predicted targets regulated by thousands of
 miRNAs across human, mouse, rat, dog, and chicken. Users can search for predicted
 targets by miRNA name or by gene, run custom target prediction on their own
 sequences, and download the full set of predicted miRNA-target interactions.
+
+The current release (version 6.0, June 2019) was generated with MirTarget V4 using
+miRNA sequences from miRBase 22 and contains about 3.5 million predicted targets
+for 7,086 miRNAs. miRDB was created by Xiaowei Wang's lab, now in the Department of
+Pharmacology and Regenerative Medicine at the University of Illinois Chicago.

@@ -8,7 +8,7 @@ name: CMAUP Database Publication
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cmaup
-product_url: https://academic.oup.com/nar/article/47/D1/D1118/5144144
+product_url: https://doi.org/10.1093/nar/gky965
 warnings: []
 layout: product_detail
 ---

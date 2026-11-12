@@ -27,10 +27,13 @@ domains:
 - biological systems
 homepage_url: https://biomarkerkb.org/
 id: biomarkerkg
-last_modified_date: '2026-07-15T00:00:00Z'
+last_modified_date: '2026-11-12T00:00:00Z'
 layout: resource_detail
 name: BiomarkerKB KG
 repository: https://github.com/MaayanLab/BiomarkerKG
+synonyms:
+- BKG
+- Biomarker-KG
 use_instead:
 - biomarker
 ---

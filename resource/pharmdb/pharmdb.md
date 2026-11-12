@@ -15,17 +15,17 @@ last_modified_date: '2026-09-23T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (custom) among its sources: ctd, dip. Not accounted for, no known license:
-    dcdb, gad.'
+    license (custom) among its sources: ctd, dcdb, dip. Not accounted for, no known
+    license: gad.'
   id: https://ctdbase.org/about/legal.jsp
   inferred_from:
   - ctd
+  - dcdb
   - dip
   label: Custom
   restrictiveness: custom
   status: inferred
   unresolved_sources:
-  - dcdb
   - gad
 name: PharmDB
 products:
