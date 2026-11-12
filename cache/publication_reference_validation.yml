@@ -7014,6 +7014,24 @@ entries:
     source_path: resource/npass/npass.md
     status: valid
     warnings: []
+  resource/npinter/npinter.md#publication[0]#DOI:10.1093/nar/gkac1002:
+    checked_at: '2026-11-12T19:20:28Z'
+    errors: []
+    fingerprint: 29e02069ce44252ec3ff4de18b79f94979f3ba971d3ffd74dc23d89d89d781e1
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkac1002
+    source_path: resource/npinter/npinter.md
+    status: valid
+    warnings: []
+  resource/npinter/npinter.md#publication[1]#DOI:10.1093/nar/gkz969:
+    checked_at: '2026-11-12T19:21:44Z'
+    errors: []
+    fingerprint: 5392c31ad07e047391653a1e4d309b10d1d9cff681d98b6054685e0c2065ad4b
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkz969
+    source_path: resource/npinter/npinter.md
+    status: valid
+    warnings: []
   resource/npo/npo.md#publication[0]#PMID:35267146:
     checked_at: '2026-08-06T18:18:19Z'
     errors: []
