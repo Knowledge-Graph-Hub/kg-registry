@@ -10439,6 +10439,15 @@ entries:
     source_path: resource/tflink/tflink.md
     status: valid
     warnings: []
+  resource/therasabdab/therasabdab.md#publication[0]#DOI:10.1093/nar/gkz827:
+    checked_at: '2026-11-12T19:20:36Z'
+    errors: []
+    fingerprint: 0964e09e9e44660d1662108b2f4fa1f340d443fbc99209c1d57e5dca67acdddd
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkz827
+    source_path: resource/therasabdab/therasabdab.md
+    status: valid
+    warnings: []
   resource/tiga/tiga.md#publication[0]#PMID:34086846:
     checked_at: '2026-08-06T18:19:11Z'
     errors: []
