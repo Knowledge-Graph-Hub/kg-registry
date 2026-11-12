@@ -6411,6 +6411,24 @@ entries:
     source_path: resource/mirdb/mirdb.md
     status: valid
     warnings: []
+  resource/mirdb/mirdb.md#publication[1]#DOI:10.1186/s13059-019-1629-z:
+    checked_at: '2026-11-12T20:24:51Z'
+    errors: []
+    fingerprint: f255bf54212b206b86a5eb6197f9740da2d1ba6c85e3fed333edf5cfd0973bd4
+    publication_index: 1
+    reference_id: DOI:10.1186/s13059-019-1629-z
+    source_path: resource/mirdb/mirdb.md
+    status: valid
+    warnings: []
+  resource/mirdb/mirdb.md#publication[2]#DOI:10.1093/nar/gku1104:
+    checked_at: '2026-11-12T20:24:53Z'
+    errors: []
+    fingerprint: 073502c09b07045fd948fa9e980df269c148b454d1038756f6e3fce2e1d6f6a8
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gku1104
+    source_path: resource/mirdb/mirdb.md
+    status: valid
+    warnings: []
   resource/mirgate/mirgate.md#publication[0]#PMID:25858286:
     checked_at: '2026-08-06T18:18:07Z'
     errors: []

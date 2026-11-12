@@ -1945,6 +1945,49 @@ products:
     source: ensembl
   product_file_size: 43319525
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
+- category: Product
+  description: Compressed plain-text file of all predicted miRNA targets generated
+    with the MirTarget prediction tool, covering the miRNAs and genes in the current
+    miRDB release.
+  format: txt
+  id: mirdb.predicted-targets
+  name: miRDB Predicted Targets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://mirdb.org/download.html
+  warnings: []
+- category: Product
+  description: miRDB version 6.0 (June 2019) predicted miRNA targets for human, mouse,
+    rat, dog and chicken, generated with MirTarget V4 using miRNA sequences from miRBase
+    22, as a gzipped tab-delimited text file.
+  format: txt
+  id: mirdb.predicted-targets-v6
+  name: miRDB v6.0 Predicted Targets File
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz
+- category: GraphicalInterface
+  description: FuncMir, a browsable collection of functional human and mouse precursor
+    and mature miRNAs with links to their predicted targets.
+  format: http
+  id: mirdb.funcmir
+  name: miRDB FuncMir Collection
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  product_url: https://mirdb.org/FuncMir.html
 publications:
 - authors:
   - Kozomara

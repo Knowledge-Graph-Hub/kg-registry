@@ -5305,6 +5305,37 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: pubmed
   product_url: https://ftp.ncbi.nlm.nih.gov/
+- category: Product
+  description: Compressed plain-text file of all predicted miRNA targets generated
+    with the MirTarget prediction tool, covering the miRNAs and genes in the current
+    miRDB release.
+  format: txt
+  id: mirdb.predicted-targets
+  name: miRDB Predicted Targets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://mirdb.org/download.html
+  warnings: []
+- category: Product
+  description: miRDB version 6.0 (June 2019) predicted miRNA targets for human, mouse,
+    rat, dog and chicken, generated with MirTarget V4 using miRNA sequences from miRBase
+    22, as a gzipped tab-delimited text file.
+  format: txt
+  id: mirdb.predicted-targets-v6
+  name: miRDB v6.0 Predicted Targets File
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz
 publications:
 - authors:
   - Donna Maglott
