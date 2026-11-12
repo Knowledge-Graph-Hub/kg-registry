@@ -7833,6 +7833,15 @@ entries:
     source_path: resource/panelapp/panelapp.md
     status: valid
     warnings: []
+  resource/pangolin/pangolin.md#publication[0]#DOI:10.1186/s13059-022-02664-4:
+    checked_at: '2026-11-12T19:20:22Z'
+    errors: []
+    fingerprint: 5d50e521266dad382efc97300ed8e54c5c38d47e399178066b86f423650295ad
+    publication_index: 0
+    reference_id: DOI:10.1186/s13059-022-02664-4
+    source_path: resource/pangolin/pangolin.md
+    status: valid
+    warnings: []
   resource/pankbase/pankbase.md#publication[0]#PMID:42327171:
     checked_at: '2026-11-10T18:09:55Z'
     errors: []
