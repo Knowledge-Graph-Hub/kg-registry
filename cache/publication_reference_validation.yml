@@ -5024,6 +5024,15 @@ entries:
     source_path: resource/iceo/iceo.md
     status: valid
     warnings: []
+  resource/icews/icews.md#publication[0]#DOI:10.1111/j.1468-2486.2009.00914.x:
+    checked_at: '2026-11-12T20:57:53Z'
+    errors: []
+    fingerprint: 961ae60c8bd3d7ea09b29aa35f9245b6eded1575a8c95bdd3eac391aec1a4731
+    publication_index: 0
+    reference_id: DOI:10.1111/j.1468-2486.2009.00914.x
+    source_path: resource/icews/icews.md
+    status: valid
+    warnings: []
   resource/icgc/icgc.md#publication[0]#DOI:10.1038/nature08987:
     checked_at: '2026-06-22T16:27:20Z'
     errors: []
