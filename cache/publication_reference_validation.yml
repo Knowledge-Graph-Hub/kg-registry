@@ -9079,11 +9079,20 @@ entries:
     status: valid
     warnings: []
   resource/psygenet/psygenet.md#publication[1]#DOI:10.1093/bioinformatics/btx506:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-11-12T20:24:54Z'
     errors: []
-    fingerprint: 1556f71a1ac8cfcadcd8dc7ce3c0b367b7d39d14d7c4f3b9a33a37c3eec0cee1
+    fingerprint: 737ebaf1315c03cc05eac0f3beb67cf688e9489ffe02b4a4da0225aa7989c395
     publication_index: 1
     reference_id: DOI:10.1093/bioinformatics/btx506
+    source_path: resource/psygenet/psygenet.md
+    status: valid
+    warnings: []
+  resource/psygenet/psygenet.md#publication[2]#DOI:10.1093/database/bax043:
+    checked_at: '2026-11-12T20:26:46Z'
+    errors: []
+    fingerprint: 08d8a21b2170c7b02dc116d1539687d3f604a44c77bd21277b3c6c0515a4e3f8
+    publication_index: 2
+    reference_id: DOI:10.1093/database/bax043
     source_path: resource/psygenet/psygenet.md
     status: valid
     warnings: []
