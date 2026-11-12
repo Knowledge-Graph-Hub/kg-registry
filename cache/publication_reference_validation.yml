@@ -8133,6 +8133,24 @@ entries:
     source_path: resource/paxdb/paxdb.md
     status: valid
     warnings: []
+  resource/pazar/pazar.md#publication[0]#DOI:10.1186/gb-2007-8-10-r207:
+    checked_at: '2026-11-12T20:57:53Z'
+    errors: []
+    fingerprint: d2703cf80660db3ada72d43fa6546a2e5d169fcd63751a91c2a0a1aa136b8d06
+    publication_index: 0
+    reference_id: DOI:10.1186/gb-2007-8-10-r207
+    source_path: resource/pazar/pazar.md
+    status: valid
+    warnings: []
+  resource/pazar/pazar.md#publication[1]#DOI:10.1093/nar/gkn783:
+    checked_at: '2026-11-12T20:57:53Z'
+    errors: []
+    fingerprint: 562225419b1bd77e98a3f0f318684c4ff914d91b37ac88d73d79839c00be6a5b
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkn783
+    source_path: resource/pazar/pazar.md
+    status: valid
+    warnings: []
   resource/pbpko/pbpko.md#publication[0]#DOI:10.1016/j.toxlet.2024.07.382:
     checked_at: '2026-08-06T18:18:30Z'
     errors: []
