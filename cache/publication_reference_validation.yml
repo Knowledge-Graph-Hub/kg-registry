@@ -5906,6 +5906,24 @@ entries:
     source_path: resource/matador/matador.md
     status: valid
     warnings: []
+  resource/mavedb/mavedb.md#publication[0]#DOI:10.1186/s13059-025-03476-y:
+    checked_at: '2026-11-12T19:19:16Z'
+    errors: []
+    fingerprint: a78dac2bc95d7aaaf7b262c32fcd7987d16ec5c60f444422929a2c8adc7454ea
+    publication_index: 0
+    reference_id: DOI:10.1186/s13059-025-03476-y
+    source_path: resource/mavedb/mavedb.md
+    status: valid
+    warnings: []
+  resource/mavedb/mavedb.md#publication[1]#DOI:10.1186/s13059-019-1845-6:
+    checked_at: '2026-11-12T19:19:46Z'
+    errors: []
+    fingerprint: 1fd824baf2835f7be712e230be471883a24d94bf584f3a9af0e5c649c1a6845c
+    publication_index: 1
+    reference_id: DOI:10.1186/s13059-019-1845-6
+    source_path: resource/mavedb/mavedb.md
+    status: valid
+    warnings: []
   resource/maxo/maxo.md#publication[0]#PMID:37963467:
     checked_at: '2026-08-06T18:18:01Z'
     errors: []
