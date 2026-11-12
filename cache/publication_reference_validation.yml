@@ -603,11 +603,38 @@ entries:
     source_path: resource/biobtree/biobtree.md
     status: valid
     warnings: []
+  resource/biobtree/biobtree.md#publication[0]#DOI:10.5281/zenodo.24144112:
+    checked_at: '2026-11-12T18:46:40Z'
+    errors: []
+    fingerprint: 516f6447a885a609bb8599b8fb89ec18a1c7d8ecfdda9bd45757ae7567d394c8
+    publication_index: 0
+    reference_id: DOI:10.5281/zenodo.24144112
+    source_path: resource/biobtree/biobtree.md
+    status: valid
+    warnings: []
   resource/biobtree/biobtree.md#publication[1]#DOI:10.12688/f1000research.17927.1:
     checked_at: '2026-06-24T15:55:55Z'
     errors: []
     fingerprint: a6fb7317382a3136652b324c54bcf353bfe9d10faeaf01ddf7c73876eb3db444
     publication_index: 1
+    reference_id: DOI:10.12688/f1000research.17927.1
+    source_path: resource/biobtree/biobtree.md
+    status: valid
+    warnings: []
+  resource/biobtree/biobtree.md#publication[1]#DOI:10.5281/zenodo.18962899:
+    checked_at: '2026-11-12T18:46:40Z'
+    errors: []
+    fingerprint: 3a6cc2b7a2c679ea79320bcba9f2f69884fe65be9603e8d38c43d76cbc6ad317
+    publication_index: 1
+    reference_id: DOI:10.5281/zenodo.18962899
+    source_path: resource/biobtree/biobtree.md
+    status: valid
+    warnings: []
+  resource/biobtree/biobtree.md#publication[2]#DOI:10.12688/f1000research.17927.1:
+    checked_at: '2026-11-12T18:46:40Z'
+    errors: []
+    fingerprint: a6fb7317382a3136652b324c54bcf353bfe9d10faeaf01ddf7c73876eb3db444
+    publication_index: 2
     reference_id: DOI:10.12688/f1000research.17927.1
     source_path: resource/biobtree/biobtree.md
     status: valid
