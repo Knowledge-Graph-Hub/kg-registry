@@ -5232,6 +5232,24 @@ entries:
     source_path: resource/inchikey/inchikey.md
     status: valid
     warnings: []
+  resource/infernal/infernal.md#publication[0]#DOI:10.1093/bioinformatics/btt509:
+    checked_at: '2026-11-12T20:57:33Z'
+    errors: []
+    fingerprint: 056422b91b07aa948e0016ea1b6d5817f2d35f5901f9b373520b234fb63597a0
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btt509
+    source_path: resource/infernal/infernal.md
+    status: valid
+    warnings: []
+  resource/infernal/infernal.md#publication[1]#DOI:10.1093/bioinformatics/btp157:
+    checked_at: '2026-11-12T20:57:34Z'
+    errors: []
+    fingerprint: 12c6cf617909c204a631651e4d076ab7f58afff9ce6d12279c691bb9caf1803f
+    publication_index: 1
+    reference_id: DOI:10.1093/bioinformatics/btp157
+    source_path: resource/infernal/infernal.md
+    status: valid
+    warnings: []
   resource/innatedb/innatedb.md#publication[0]#DOI:10.1093/nar/gks1147:
     checked_at: '2026-06-22T16:27:25Z'
     errors: []

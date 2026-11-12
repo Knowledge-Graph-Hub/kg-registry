@@ -23,7 +23,7 @@ domains:
 - non-coding RNA
 homepage_url: https://rfam.org/
 id: rfam
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-11-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -77,6 +77,9 @@ products:
     source: rfam
   product_file_size: 45111170
   product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz
+  secondary_source:
+  - relation_type: prov:used
+    source: infernal
 - category: Product
   description: SEED alignments for all RNA families in Stockholm format
   format: stockholm
