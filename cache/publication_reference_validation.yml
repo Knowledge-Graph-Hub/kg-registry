@@ -7085,6 +7085,24 @@ entries:
     source_path: resource/nice/nice.md
     status: valid
     warnings: []
+  resource/nif-ontology/nif-ontology.md#publication[0]#DOI:10.1007/s12021-008-9032-z:
+    checked_at: '2026-11-12T20:38:00Z'
+    errors: []
+    fingerprint: fb959f915b106e059780a4a6607492e11e3b6fc3c414f693e3c754909bdd2b63
+    publication_index: 0
+    reference_id: DOI:10.1007/s12021-008-9032-z
+    source_path: resource/nif-ontology/nif-ontology.md
+    status: valid
+    warnings: []
+  resource/nif-ontology/nif-ontology.md#publication[1]#DOI:10.3389/fgene.2012.00111:
+    checked_at: '2026-11-12T20:38:01Z'
+    errors: []
+    fingerprint: 4fb4621420721c392906a3b075ceb34c11267fde8dd74fba1605c7272ebd14ed
+    publication_index: 1
+    reference_id: DOI:10.3389/fgene.2012.00111
+    source_path: resource/nif-ontology/nif-ontology.md
+    status: valid
+    warnings: []
   resource/node-normalizer/node-normalizer.md#publication[0]#DOI:10.48550/arXiv.2601.10008:
     checked_at: '2026-10-04T17:01:59Z'
     errors: []
