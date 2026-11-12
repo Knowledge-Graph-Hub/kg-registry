@@ -412,6 +412,7 @@ google-reviews,active,PASS
 gp-kg,active,PASS
 gpcrdb,active,PASS
 gpmdb,active,PASS
+gpn-star,active,PASS
 greengenes,active,PASS
 gsso,active,PASS
 gtdb,active,PASS
@@ -435,6 +436,7 @@ hifld,active,PASS
 hippie,active,PASS
 hipsci,active,PASS
 hmdb,active,PASS
+hmdd,active,PASS
 hocomoco,active,PASS
 hom,active,PASS
 hp,active,PASS
@@ -491,6 +493,7 @@ intact,active,PASS
 interlex,active,PASS
 intermine,active,PASS
 interpro,active,PASS
+intogen,active,PASS
 inxight-drugs,active,PASS
 iprox,active,PASS
 iptmnet,active,PASS
@@ -550,6 +553,7 @@ markerdb,active,PASS
 massive,active,PASS
 maude,active,PASS
 maudekg,active,PASS
+mavedb,active,PASS
 maven-central,active,PASS
 maxo,active,PASS
 mbodymap,active,PASS
@@ -638,6 +642,7 @@ ncbitaxon,active,PASS
 nci60,active,PASS
 ncipidkg,active,PASS
 ncit,active,PASS
+ncrnadrug,active,PASS
 ncro,active,PASS
 ndcd,active,PASS
 nde,active,PASS
@@ -668,6 +673,7 @@ nomen,active,PASS
 noncode,active,PASS
 np-kg,active,PASS
 npass,active,PASS
+npinter,active,PASS
 npm,active,PASS
 npo,active,PASS
 nsduh,active,PASS
@@ -746,6 +752,8 @@ ovae,active,PASS
 oxo,active,PASS
 p3db,active,PASS
 pacer,active,PASS
+panelapp,active,PASS
+pangolin,active,PASS
 pankbase,active,PASS
 pankgraph,active,PASS
 panorama-public,active,PASS
@@ -855,6 +863,7 @@ repodb,active,PASS
 repohub,active,PASS
 reprotox-kg,active,PASS
 retriever,active,PASS
+revel,active,PASS
 rfam,active,PASS
 rgd,active,PASS
 rhea,active,PASS
@@ -875,6 +884,8 @@ rural-urban-continuum-codes,active,PASS
 ruralkg,active,PASS
 rxno,active,PASS
 rxnorm,active,PASS
+sabdab,active,PASS
+saprot,active,PASS
 sawgraph,active,PASS
 sbo,active,PASS
 scales,active,PASS
@@ -959,6 +970,7 @@ terminologia-anatomica,active,PASS
 text-mining-kp,active,PASS
 tflink,active,PASS
 tga-approved-terminology,active,PASS
+therasabdab,active,PASS
 tiga,active,PASS
 tissues,active,PASS
 to,active,PASS
@@ -1181,6 +1193,7 @@ sibo,orphaned,PASS
 sider,inactive,PASS
 simap,inactive,PASS
 sopharm,inactive,PASS
+spliceai,inactive,PASS
 startgeo,inactive,PASS
 stitch,inactive,PASS
 tads,inactive,PASS

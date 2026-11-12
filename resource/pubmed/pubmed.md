@@ -1099,12 +1099,14 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error when
-    accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error when
-    accessing file. The dbSNO 3.0 download page (download.php) renders its page shell
-    but the server errors before emitting download links; the rest of the site (index.php,
-    statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
+    when accessing file. The dbSNO 3.0 download page (download.php) renders its page
+    shell but the server errors before emitting download links; the rest of the site
+    (index.php, statistics.php) is live (200).'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed
@@ -2880,6 +2882,8 @@ products:
     Internet Archive snapshot is from 2022-08-17.
   - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: REDfly search interface for querying CRMs, CRM segments, predicted
     CRMs, and TFBSs by gene, PubMed ID, location, or expression pattern, with selected
@@ -3612,6 +3616,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: ensembl
+  product_file_size: 43319525
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -3628,6 +3633,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: gene-expression-omnibus
+  product_file_size: 704301
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.expr.txt.gz
 publications:
 - authors:

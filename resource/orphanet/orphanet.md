@@ -897,12 +897,12 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
-    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
-    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
-    of the full graph for human-centric biomedical use. Sources without compatible redistribution
-    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
-    variant-prediction layers). Published on Zenodo.
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
+    exported as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed
+    across node and edge files in both TSV and JSON Lines, plus a manifest). A practical
+    projection of the full graph for human-centric biomedical use. Sources without
+    compatible redistribution terms are excluded (full OMIM data, CTD, PanelApp, miRDB,
+    and the SpliceAI and AlphaMissense variant-prediction layers). Published on Zenodo.
   edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph
@@ -1193,11 +1193,13 @@ products:
     source: tcrd
   product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-idg.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when
-    accessing file'
-  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error. The
-    kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-07-01: HTTP 404 error.
+    The kg-hub.berkeleybop.io host is being reorganized and KG-IDG downloads are pending
     relocation to a new home; no live download is currently available.'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx

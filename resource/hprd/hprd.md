@@ -55,8 +55,10 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
     and other interaction databases.
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: HPRD data in XML format for programmatic access
   format: http
@@ -71,8 +73,10 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: HPRD data in tab-delimited format for programmatic access
   format: http
@@ -87,8 +91,10 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 503 error
+    when accessing file'
 - category: GraphicalInterface
   description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
     and binding motifs

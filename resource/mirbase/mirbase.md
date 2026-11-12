@@ -1943,6 +1943,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: ensembl
+  product_file_size: 43319525
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
 publications:
 - authors:

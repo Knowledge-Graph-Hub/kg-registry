@@ -1530,12 +1530,12 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
-    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
-    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
-    of the full graph for human-centric biomedical use. Sources without compatible redistribution
-    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
-    variant-prediction layers). Published on Zenodo.
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
+    exported as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed
+    across node and edge files in both TSV and JSON Lines, plus a manifest). A practical
+    projection of the full graph for human-centric biomedical use. Sources without
+    compatible redistribution terms are excluded (full OMIM data, CTD, PanelApp, miRDB,
+    and the SpliceAI and AlphaMissense variant-prediction layers). Published on Zenodo.
   edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph
@@ -1771,11 +1771,13 @@ products:
   product_url: https://kghub.io/kg-covid-19/
   warnings:
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
-    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19
-    artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP
-    403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when
-    accessing file'
+    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
+    kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
+    return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: KGX nodes for Molecular Data KP
   format: kgx
@@ -2000,8 +2002,10 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 406 error
+    when accessing file'
 - category: GraphProduct
   description: Integrated rare-disease knowledge graph produced by the RD-Clust workflow,
     connecting rare diseases to genes, phenotypes, Gene Ontology terms, drugs/ligands,

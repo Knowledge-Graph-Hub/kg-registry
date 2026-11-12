@@ -180,8 +180,10 @@ products:
     source: aop-wiki
   product_url: https://github.com/biobricks-ai/aopwikirdf-kg
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   connection_url: https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
   description: Public SPARQL 1.1 endpoint (Virtuoso 7.2.11) serving the AOP-Wiki RDF

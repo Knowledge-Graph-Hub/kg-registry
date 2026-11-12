@@ -168,8 +168,10 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chembl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 406 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 406 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing integrated omics dataset metadata
     across repositories.

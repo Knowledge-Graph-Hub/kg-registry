@@ -3027,9 +3027,13 @@ products:
   warnings:
   - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
     on 2026-06-02.
-  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during
-    curation on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
   - 'File was not able to be retrieved when checked on 2026-11-10: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -3936,12 +3940,12 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
-    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
-    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
-    of the full graph for human-centric biomedical use. Sources without compatible redistribution
-    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
-    variant-prediction layers). Published on Zenodo.
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
+    exported as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed
+    across node and edge files in both TSV and JSON Lines, plus a manifest). A practical
+    projection of the full graph for human-centric biomedical use. Sources without
+    compatible redistribution terms are excluded (full OMIM data, CTD, PanelApp, miRDB,
+    and the SpliceAI and AlphaMissense variant-prediction layers). Published on Zenodo.
   edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph

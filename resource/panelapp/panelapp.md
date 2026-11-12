@@ -73,6 +73,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: panelapp
+  product_file_size: 1666055
   product_url: https://panelapp.genomicsengland.co.uk/media/files/GUI-BIO-004_PanelApp_Handbook-v105.pdf
 - category: ProcessProduct
   description: Source code of the PanelApp application (Python/Django). The GitHub

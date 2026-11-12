@@ -40,8 +40,10 @@ products:
     source: eo
   product_url: http://purl.obolibrary.org/obo/eo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Plant Environment Ontology in OBO format
   format: obo
@@ -52,8 +54,10 @@ products:
     source: eo
   product_url: http://purl.obolibrary.org/obo/eo.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: FoodOn ontology with import file references and over 9,000 food products
   format: owl

@@ -2276,9 +2276,9 @@ products:
     source: ncbigene
 - category: Product
   compression: gzip
-  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39 genome
-    assembly (reference chromosomes only) in GTF format. Release M39 corresponds to
-    Ensembl 116.
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+    genome assembly (reference chromosomes only) in GTF format. Release M39 corresponds
+    to Ensembl 116.
   format: gff
   id: gencode.mouse.gtf
   latest_version: M39
@@ -2332,8 +2332,10 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error when
-    accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 502 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
@@ -2771,12 +2773,12 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
-    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
-    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
-    of the full graph for human-centric biomedical use. Sources without compatible redistribution
-    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
-    variant-prediction layers). Published on Zenodo.
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
+    exported as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed
+    across node and edge files in both TSV and JSON Lines, plus a manifest). A practical
+    projection of the full graph for human-centric biomedical use. Sources without
+    compatible redistribution terms are excluded (full OMIM data, CTD, PanelApp, miRDB,
+    and the SpliceAI and AlphaMissense variant-prediction layers). Published on Zenodo.
   edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph
@@ -3073,11 +3075,13 @@ products:
   product_url: https://kghub.io/kg-covid-19/
   warnings:
   - 'Download offline as of 2026-07-01: the KG-Hub reorganization has taken this file
-    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19
-    artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP
-    403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error when
-    accessing file'
+    offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
+    kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
+    return HTTP 403. No replacement public download URL is available.'
+  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations
@@ -4453,6 +4457,8 @@ products:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
   - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
     to URL'
 - category: GraphicalInterface
   description: Interactive web interface for exploring the neighborhood of related

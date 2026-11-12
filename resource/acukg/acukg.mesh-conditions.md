@@ -10,6 +10,7 @@ original_source:
   source: acukg
 - relation_type: prov:wasDerivedFrom
   source: mesh
+product_file_size: 71303
 product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/blob/main/MeSH-Condition.csv
 layout: product_detail
 ---

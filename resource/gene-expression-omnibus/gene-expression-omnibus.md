@@ -1869,6 +1869,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: ensembl
+  product_file_size: 43319525
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -1885,6 +1886,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: gene-expression-omnibus
+  product_file_size: 704301
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.expr.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -1900,6 +1902,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gene-expression-omnibus
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/dna_interactions.npinter5.txt.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
+    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+    without response''))'
 rrid: SCR_005012
 ---
 Gene Expression Omnibus (GEO)

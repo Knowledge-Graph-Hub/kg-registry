@@ -23,7 +23,7 @@ biobricks-mesh	KnowledgeGraph	inferred			https://www.nlm.nih.gov/databases/downl
 biobricks-pubchem-annotations	KnowledgeGraph	inferred			https://www.ncbi.nlm.nih.gov/home/about/policies/	public domain	pubchem	
 biobricks-tox21	KnowledgeGraph	inferred			https://www.usa.gov/government-works	public domain	tox21	
 biobricks-toxcast	KnowledgeGraph	inferred			https://www.epa.gov/privacy/privacy-and-security-notice	public domain	toxcast	
-biobtree	KnowledgeGraph	conflict	https://www.gnu.org/licenses/agpl-3.0.en.html	copyleft	https://ctdbase.org/about/legal.jsp	custom	ctd|msigdb	mirdb|pdb|refseq
+biobtree	KnowledgeGraph	conflict	https://www.gnu.org/licenses/agpl-3.0.en.html	copyleft	http://www.circbase.org/	custom	alliance|ctd|depmap|goa|msigdb|ncrnadrug|npinter	faers|mirdb|pdb|refseq
 biodata-catalyst	Aggregator	inferred			https://www.internationalgenome.org/IGSR_disclaimer	custom	1000genomes	topmed
 biodivportal	Aggregator	no-upstream						
 biogps	Aggregator	no-upstream						

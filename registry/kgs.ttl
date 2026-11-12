@@ -582,6 +582,8 @@ kgr:alliance a schema1:Aggregator ;
         kgr:alliance.portal,
         kgr:alliance.textpresso,
         kgr:automat.alliance-orthologs,
+        kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
         kgr:genecards.web.interface,
         kgr:kg-alzheimers.graph,
         kgr:kg-monarch.graph,
@@ -621,7 +623,9 @@ kgr:alphafold a schema1:DataSource ;
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:europepmc.textmined-terms,
-        kgr:genecards.web.interface ;
+        kgr:genecards.web.interface,
+        kgr:saprot.af2-uniref50,
+        kgr:saprot.models ;
     schema1:name "AlphaFold Protein Structure Database" ;
     doap:repository <https://github.com/google-deepmind/alphafold> ;
     skos:inScheme "information technology",
@@ -646,9 +650,9 @@ kgr:alphamissense a schema1:DataSource ;
         kgr:alphamissense.software,
         kgr:alphamissense.viewer,
         kgr:biobtree.api,
-        kgr:biobtree.graph.human-subgraph,
         kgr:dbnsfp.academic,
-        kgr:dbnsfp.commercial ;
+        kgr:dbnsfp.commercial,
+        kgr:spliceai.lookup ;
     schema1:name "AlphaMissense" ;
     doap:repository <https://github.com/google-deepmind/alphamissense> ;
     skos:inScheme "biomedical",
@@ -1891,13 +1895,15 @@ kgr:biobricks-toxcast a schema1:KnowledgeGraph ;
 kgr:biobtree a schema1:KnowledgeGraph ;
     rdfs:label "BioBTree" ;
     dcterms:created "2026-06-15T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "BioBTree is a unified biomedical knowledge graph that integrates more than 70 primary data sources, including Ensembl, UniProt, PDB, ChEMBL, Reactome, and ClinVar, into a single queryable graph of cross-reference edges spanning genes, proteins, compounds, diseases, pathways, and clinical data. It lets users search, map, and traverse identifiers across databases with a chain-query syntax (for example, mapping a gene in Ensembl to UniProt proteins and on to PDB structures), and exposes the graph through a REST API, a Model Context Protocol (MCP) server, and a question-answering web interface for grounding LLM responses in structured biomedical data." ;
+    dcterms:description "BioBTree is a unified biomedical knowledge graph that integrates more than 95 public data sources, including Ensembl, UniProt, PDB, ChEMBL, Reactome, and ClinVar, into a single queryable graph of cross-reference edges spanning genes, proteins, compounds, diseases, pathways, and clinical data. The full graph holds about 3.5 billion entries and 9.3 billion bidirectional cross-references, plus 11.7 billion position-level variant scores (as of November 2026). It lets users search, map, and traverse identifiers across databases with a chain-query syntax (for example, mapping a gene in Ensembl to UniProt proteins and on to PDB structures), and exposes the graph through a REST API, a Model Context Protocol (MCP) server, and a question-answering web interface for grounding LLM responses in structured biomedical data." ;
     dcterms:identifier "biobtree" ;
     dcterms:isReferencedBy <doi:10.12688/f1000research.17927.1>,
-        <doi:10.5281/zenodo.18962899> ;
+        <doi:10.5281/zenodo.18962899>,
+        <doi:10.5281/zenodo.24144112> ;
     dcterms:license <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
-    dcterms:modified "2026-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobtree.api,
+        kgr:biobtree.bench,
         kgr:biobtree.docs,
         kgr:biobtree.graph.human-subgraph,
         kgr:biobtree.mcp,
@@ -3295,6 +3301,7 @@ kgr:ccle a schema1:DataSource ;
         kgr:harmonizome.kg-neo4j,
         kgr:indra.cogex.code,
         kgr:msigdb.downloads.human,
+        kgr:ncrnadrug.drug-resistance-ccle,
         kgr:obo-db-ingest.ccle.json,
         kgr:obo-db-ingest.ccle.obo,
         kgr:obo-db-ingest.ccle.owl,
@@ -3570,7 +3577,8 @@ kgr:cellminer a schema1:DataSource ;
         kgr:cellminer.portal,
         kgr:cellminer.rcellminer,
         kgr:cellminer.rcellminerdata,
-        kgr:cellminer.release-notes ;
+        kgr:cellminer.release-notes,
+        kgr:ncrnadrug.drug-resistance-nci60 ;
     schema1:identifier "RRID:SCR_025648" ;
     schema1:name "CellMiner" ;
     skos:altLabel "CellMiner NCI-60",
@@ -3651,7 +3659,9 @@ kgr:cellosaurus a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:bioregistry.registry.json,
+    schema1:hasPart kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
+        kgr:bioregistry.registry.json,
         kgr:bioregistry.sssom,
         kgr:bioteque.embeddings,
         kgr:cellmodelpassports.model_list,
@@ -4269,7 +4279,9 @@ kgr:chip-atlas a schema1:DataSource ;
         <NCBITaxon:6239>,
         <NCBITaxon:7227>,
         <NCBITaxon:9606> ;
-    schema1:hasPart kgr:chip-atlas.api,
+    schema1:hasPart kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
+        kgr:chip-atlas.api,
         kgr:chip-atlas.colocalization,
         kgr:chip-atlas.docs,
         kgr:chip-atlas.experimentlist,
@@ -4417,6 +4429,9 @@ kgr:circbase a schema1:Aggregator ;
     schema1:hasPart kgr:circbase.docs,
         kgr:circbase.downloads,
         kgr:circbase.portal,
+        kgr:ncrnadrug.drug-resistance-curated,
+        kgr:ncrnadrug.drug-target-curated,
+        kgr:npinter.interactions,
         kgr:rna-kg.kg.edges,
         kgr:rna-kg.kg.neo4j,
         kgr:rna-kg.kg.nodes ;
@@ -4454,7 +4469,9 @@ kgr:civic a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:biomuta.dataset,
+    schema1:hasPart kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
+        kgr:biomuta.dataset,
         kgr:civic.api.v1,
         kgr:civic.api.v2,
         kgr:civic.data.acceptedsubmittedvariants,
@@ -5001,6 +5018,7 @@ kgr:cmap a schema1:DataSource ;
         kgr:molepro.graph.edges,
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
+        kgr:ncrnadrug.drug-target-cmap,
         kgr:pharmkg.graph,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
@@ -5542,6 +5560,7 @@ kgr:cosmic a schema1:DataSource ;
         kgr:genecards.web.interface,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
+        kgr:intogen.drivers,
         kgr:kg-jensenlab-diseases.edges.kgx,
         kgr:kg-jensenlab-diseases.edges.trapi,
         kgr:kg-jensenlab-diseases.nodes.kgx,
@@ -5862,7 +5881,6 @@ kgr:ctd a schema1:DataSource ;
         kgr:automat.ctd,
         kgr:automat.robokopkg,
         kgr:biobtree.api,
-        kgr:biobtree.graph.human-subgraph,
         kgr:bioteque.embeddings,
         kgr:cam-kp.ctd-interactions,
         kgr:ctd.anatomy,
@@ -6343,7 +6361,9 @@ kgr:dbnsfp a schema1:Aggregator ;
         kgr:dbnsfp.legacy,
         kgr:dbnsfp.readme,
         kgr:dbnsfp.variant-columns,
-        kgr:myvariant.api ;
+        kgr:myvariant.api,
+        kgr:revel.all-chromosomes,
+        kgr:revel.zenodo ;
     schema1:name "dbNSFP" ;
     doap:repository <https://www.dbnsfp.org/releases> ;
     skos:altLabel "database of human non-synonymous SNVs and their functional predictions" ;
@@ -6504,7 +6524,9 @@ kgr:dbvar a schema1:DataSource ;
     dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:dbvar.ftp,
+    schema1:hasPart kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
+        kgr:dbvar.ftp,
         kgr:dbvar.portal,
         kgr:entrez.edirect,
         kgr:entrez.eutils,
@@ -6761,6 +6783,8 @@ kgr:depmap a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:achilles.downloads,
+        kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
         kgr:bioteque.embeddings,
         kgr:cellmodelpassports.crispr_fitness_scores,
         kgr:cellmodelpassports.model_list,
@@ -7629,6 +7653,8 @@ kgr:drugbank a schema1:DataSource ;
         kgr:molepro.trapi,
         kgr:mps-db.portal,
         kgr:mychem.api,
+        kgr:ncrnadrug.drug-resistance-curated,
+        kgr:ncrnadrug.drug-target-curated,
         kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
         kgr:openpredict.api,
@@ -7692,6 +7718,8 @@ kgr:drugcentral a schema1:DataSource ;
     schema1:hasPart kgr:automat.drugcentral,
         kgr:automat.robokopkg,
         kgr:babel.compendia,
+        kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
         kgr:bioteque.embeddings,
         kgr:drugcentral.data,
         kgr:drugenrichr.libraries,
@@ -8959,11 +8987,13 @@ kgr:ensembl a schema1:DataSource ;
         kgr:hcop.web,
         kgr:hrpimp.data,
         kgr:hrpimp.huri.psi,
+        kgr:intogen.drivers,
         kgr:kg-jensenlab-diseases.edges.kgx,
         kgr:kg-jensenlab-diseases.edges.trapi,
         kgr:kg-jensenlab-diseases.nodes.kgx,
         kgr:mygene.api,
         kgr:ncbigene.gene2ensembl,
+        kgr:npinter.interactions,
         kgr:oma.mapping.ensembl,
         kgr:omim.mim2gene,
         kgr:pavs-kg.api,
@@ -8978,6 +9008,8 @@ kgr:ensembl a schema1:DataSource ;
         kgr:phosphoelm.dataset,
         kgr:plant-reactome.mappings,
         kgr:rdf-portal.sparql.ebi,
+        kgr:revel.all-chromosomes,
+        kgr:revel.zenodo,
         kgr:rna-kg.kg.edges,
         kgr:rna-kg.kg.neo4j,
         kgr:rna-kg.kg.nodes,
@@ -8990,6 +9022,9 @@ kgr:ensembl a schema1:DataSource ;
         kgr:rtx-kg2.neo4j,
         kgr:sniff.federation-edges,
         kgr:sniff.federation-nodes,
+        kgr:spliceai.ensembl-downloads,
+        kgr:spliceai.ensembl-mane-masked,
+        kgr:spliceai.ensembl-mane-raw,
         kgr:string.cog.links,
         kgr:string.cog.links.detailed,
         kgr:string.database,
@@ -9923,6 +9958,8 @@ kgr:faers a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aeolus.standardized_data,
+        kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
         kgr:faers.electronic_submissions,
         kgr:faers.faq,
         kgr:faers.public_dashboard,
@@ -10896,6 +10933,7 @@ kgr:gdsc a schema1:DataSource ;
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:multiomics-kp.graph,
+        kgr:ncrnadrug.drug-resistance-ccle,
         kgr:pharmacodb.api,
         kgr:pharmacodb.documentation,
         kgr:pharmacodb.portal,
@@ -11089,6 +11127,9 @@ kgr:gencode a schema1:DataSource ;
         kgr:hrpimp.data,
         kgr:hrpimp.huri.psi,
         kgr:lncrnalyzr.graph,
+        kgr:pangolin.hg38-snvs-masked,
+        kgr:pangolin.software,
+        kgr:spliceai.precomputed,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "RRID:SCR_014966" ;
@@ -11169,7 +11210,12 @@ kgr:gene-expression-omnibus a schema1:Aggregator ;
         kgr:insight.pfas_toxicogenomics,
         kgr:klocd.portal,
         kgr:msigdb.downloads.human,
+        kgr:ncrnadrug.drug-resistance-geo,
+        kgr:ncrnadrug.drug-target-geo,
         kgr:nde.graph,
+        kgr:npinter.interactions,
+        kgr:npinter.interactions-experimental,
+        kgr:npinter.rna-dna-interactions,
         kgr:omicsdi.api,
         kgr:omicsdi.portal,
         kgr:organoiddb.all-organoid-samples,
@@ -12006,7 +12052,9 @@ kgr:gnomad a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:cadd.gnomad-indels.grch38,
+    schema1:hasPart kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
+        kgr:cadd.gnomad-indels.grch38,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:gnomad.api,
@@ -12336,6 +12384,8 @@ kgr:goa a schema1:DataSource ;
     schema1:hasPart kgr:automat.humangoa,
         kgr:automat.robokopkg,
         kgr:automat.viralproteome,
+        kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
         kgr:goa.documentation,
         kgr:goa.ftp,
         kgr:goa.human,
@@ -12535,6 +12585,34 @@ kgr:gpmdb a schema1:DataSource ;
     skos:inScheme "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.thegpm.org/> .
+
+kgr:gpn-star a schema1:DataSource ;
+    rdfs:label "GPN-Star" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "GPN-Star is a phylogeny-aware genomic language model from the Song lab at UC Berkeley that predicts functional constraint and variant effects across the genome from multispecies whole-genome alignments, using a phylogeny-informed attention design. It supersedes GPN-MSA. Three human (hg38) models were trained on vertebrate (100-way), mammalian (447-way) and primate (243-way) alignments, and further models cover mouse, chicken, Drosophila melanogaster, Caenorhabditis elegans and Arabidopsis thaliana. The authors distribute the trained models on Hugging Face (MIT license), genome-wide mutation-rate-calibrated constraint (entropy) and variant (log-likelihood ratio) scores as Parquet and BigWig files on Hugging Face (Apache 2.0), a multi-assembly UCSC Genome Browser track hub, and the gpn Python package for inference and training." ;
+    dcterms:identifier "gpn-star" ;
+    dcterms:isReferencedBy <doi:10.1038/s41586-026-11005-5>,
+        <doi:10.1101/2025.09.21.677619> ;
+    dcterms:license <https://github.com/songlab-cal/gpn/blob/main/LICENSE> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:gpn-star.docs,
+        kgr:gpn-star.models,
+        kgr:gpn-star.scores,
+        kgr:gpn-star.software,
+        kgr:gpn-star.ucsc-hub ;
+    schema1:name "GPN-Star" ;
+    doap:repository <https://github.com/songlab-cal/gpn> ;
+    skos:inScheme "biomedical",
+        "genetic variation",
+        "genomics",
+        "information technology",
+        "machine learning",
+        "model organisms",
+        "molecular evolution",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://gpn.readthedocs.io/en/latest/models/gpn-star/> .
 
 kgr:greenclaims a schema1:DataSource ;
     rdfs:label "GreenClaims" ;
@@ -13480,6 +13558,28 @@ kgr:hmdb a schema1:Aggregator ;
         "metabolomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.hmdb.ca/> .
+
+kgr:hmdd a schema1:DataSource ;
+    rdfs:label "Human microRNA Disease Database (HMDD)" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Human microRNA Disease Database (HMDD) is a manually curated database of experimentally supported associations between human microRNAs (miRNAs) and diseases, curated from the literature. Each entry records the miRNA, the disease, the supporting PubMed reference, and a description of the evidence, classified into evidence categories such as genetics, epigenetics, circulating miRNAs, miRNA-target interactions, tissue expression, exosomal miRNAs, and virus-encoded miRNAs. HMDD v4.0 (released June 2023) contains 53,530 miRNA-disease association entries covering 1,817 human miRNA genes, 79 virus-derived miRNAs, and 2,360 diseases from 37,090 papers." ;
+    dcterms:identifier "hmdd" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkad717>,
+        <doi:10.1093/nar/gky1010> ;
+    dcterms:license <http://www.cuilab.cn/hmdd> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:hmdd.alldata,
+        kgr:hmdd.alldata-xlsx,
+        kgr:hmdd.portal ;
+    schema1:name "Human microRNA Disease Database (HMDD)" ;
+    skos:inScheme "biomedical",
+        "gene regulation",
+        "genomics",
+        "non-coding RNA" ;
+    adms:status "Active" ;
+    foaf:homepage <http://www.cuilab.cn/hmdd> .
 
 kgr:hocomoco a schema1:DataSource ;
     rdfs:label "HOCOMOCO" ;
@@ -14531,6 +14631,8 @@ kgr:icgc a schema1:DataSource ;
     schema1:hasPart kgr:biomuta.dataset,
         kgr:icgc.downloads,
         kgr:icgc.platform,
+        kgr:intogen.cohorts,
+        kgr:intogen.drivers,
         kgr:rdf-portal.sparql.primary ;
     schema1:name "ICGC" ;
     skos:altLabel "ICGC ARGO",
@@ -15399,6 +15501,32 @@ kgr:interpro a schema1:DataSource ;
     foaf:homepage <https://www.ebi.ac.uk/interpro/> ;
     foaf:maker kgr:ebi .
 
+kgr:intogen a schema1:DataSource ;
+    rdfs:label "IntOGen" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "IntOGen is a framework and web platform that identifies mutational cancer driver genes by running a pipeline of complementary driver discovery methods over somatic mutation data from tumor cohorts, and publishes the resulting Compendium of Cancer Genes. The 2024.09.20 release analyzes 271 cohorts (about 33,000 tumor samples across 87 cancer types) from sources such as TCGA, PCAWG, ICGC, the Hartwig Medical Foundation, St. Jude, and CPTAC, and reports 633 driver genes with their mutational features, combined significance, and consensus mode of action per cohort." ;
+    dcterms:identifier "intogen" ;
+    dcterms:isReferencedBy <doi:10.1038/s41568-020-0290-x> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:intogen.cohorts,
+        kgr:intogen.docs,
+        kgr:intogen.drivers,
+        kgr:intogen.pipeline,
+        kgr:intogen.portal ;
+    schema1:identifier "RRID:SCR_027727" ;
+    schema1:name "IntOGen" ;
+    doap:repository <https://github.com/bbglab/intogen-plus> ;
+    skos:inScheme "biomedical",
+        "cancer",
+        "genetic variation",
+        "genomics",
+        "precision medicine" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.intogen.org/> .
+
 kgr:inxight-drugs a schema1:DataSource ;
     rdfs:label "Inxight: Drugs" ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
@@ -16087,7 +16215,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-11-10T18:03:22+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-12T19:45:40+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -17227,6 +17355,29 @@ kgr:maudekg a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/Prabhadeus/Proto-OKN> .
 
+kgr:mavedb a schema1:DataSource ;
+    rdfs:label "MaveDB" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "MaveDB is an open-source community database of record for datasets from multiplexed assays of variant effect (MAVEs), such as deep mutational scanning (DMS), saturation genome editing, and massively parallel reporter assays (MPRAs). It stores variant effect score sets and, where available, raw count data, together with structured metadata on the experiment, the assayed target sequence, and the associated publications. The 2024 update holds over 7 million variant effect measurements and maps variants to reference genome and protein coordinates, with built-in visualization tools, a REST API for data federation and submission, and periodic bulk downloads." ;
+    dcterms:identifier "mavedb" ;
+    dcterms:isReferencedBy <doi:10.1186/s13059-019-1845-6>,
+        <doi:10.1186/s13059-025-03476-y> ;
+    dcterms:license <https://api.mavedb.org/api/v1/licenses/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:mavedb.api,
+        kgr:mavedb.api-code,
+        kgr:mavedb.bulk-download,
+        kgr:mavedb.portal ;
+    schema1:name "MaveDB" ;
+    doap:repository <https://github.com/VariantEffect/mavedb-api> ;
+    skos:inScheme "genetic variation",
+        "genomics",
+        "precision medicine",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.mavedb.org/> .
+
 kgr:maven-central a schema1:DataSource ;
     rdfs:label "Maven Central Repository" ;
     dcterms:created "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
@@ -17655,6 +17806,8 @@ kgr:mesh a schema1:Ontology ;
         kgr:hetionet.hetnetpy,
         kgr:hetionet.neo4j,
         kgr:hetionet.search,
+        kgr:hmdd.alldata,
+        kgr:hmdd.alldata-xlsx,
         kgr:icees-kg.graph,
         kgr:icees-kg.metadata,
         kgr:icees-kg.trapi,
@@ -18285,6 +18438,8 @@ kgr:mirbase a schema1:Aggregator ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:hmdd.alldata,
+        kgr:hmdd.alldata-xlsx,
         kgr:mirbase.ath-gff3,
         kgr:mirbase.browse,
         kgr:mirbase.cel-gff3,
@@ -18306,6 +18461,9 @@ kgr:mirbase a schema1:Aggregator ;
         kgr:mirbase.tissue-search,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
+        kgr:ncrnadrug.drug-resistance-curated,
+        kgr:ncrnadrug.drug-target-curated,
+        kgr:npinter.interactions,
         kgr:obo-db-ingest.mirbase.family.json,
         kgr:obo-db-ingest.mirbase.family.obo,
         kgr:obo-db-ingest.mirbase.family.owl,
@@ -18346,7 +18504,6 @@ kgr:mirdb a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkz757> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobtree.api,
-        kgr:biobtree.graph.human-subgraph,
         kgr:mirdb.predicted-targets,
         kgr:mirdb.search,
         kgr:msigdb.downloads.human,
@@ -19914,7 +20071,8 @@ kgr:nci60 a schema1:DataSource ;
         kgr:nci60.oneconc,
         kgr:nci60.portal,
         kgr:nci60.public-nscs,
-        kgr:nci60.tgi ;
+        kgr:nci60.tgi,
+        kgr:ncrnadrug.drug-resistance-nci60 ;
     schema1:name "NCI-60 Human Tumor Cell Lines Screen" ;
     skos:altLabel "NCI 60 cell line screen",
         "NCI-60",
@@ -19993,6 +20151,31 @@ kgr:ncit a schema1:Ontology ;
         "cancer" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/ncit-obo-org/ncit-obo-edition> .
+
+kgr:ncrnadrug a schema1:DataSource ;
+    rdfs:label "ncRNADrug" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ncRNADrug is a database of validated and predicted non-coding RNAs (miRNAs, lncRNAs and circRNAs) associated with drug resistance or targeted by drugs. Its curated portion, manually extracted from more than 9,000 publications and integrated with the earlier SM2miR, D-lnc and ncDR resources, holds 29,551 drug resistance entries (9,195 ncRNAs, 266 drugs) and 32,969 drug-target entries (10,480 ncRNAs, 965 drugs). Predicted associations are derived by differential expression analysis of drug resistance and drug perturbation datasets from GEO, NCI60 (via CellMiner), GDSC with CCLE lncRNA profiles (via TANRIC), and CMap. ncRNAs are identified with miRBase, Ensembl, NONCODE and circBase identifiers, and drugs with DrugBank, PubChem and NCI DTP identifiers." ;
+    dcterms:identifier "ncrnadrug" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkad1042> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:ncrnadrug.downloads,
+        kgr:ncrnadrug.drug-resistance-ccle,
+        kgr:ncrnadrug.drug-resistance-curated,
+        kgr:ncrnadrug.drug-resistance-geo,
+        kgr:ncrnadrug.drug-resistance-nci60,
+        kgr:ncrnadrug.drug-target-cmap,
+        kgr:ncrnadrug.drug-target-curated,
+        kgr:ncrnadrug.drug-target-geo,
+        kgr:ncrnadrug.portal ;
+    schema1:name "ncRNADrug" ;
+    skos:inScheme "genomics",
+        "non-coding RNA",
+        "pharmacogenomics",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <http://www.jianglab.cn/ncRNADrug/> .
 
 kgr:ncro a schema1:Ontology ;
     rdfs:label "Non-Coding RNA Ontology" ;
@@ -20717,6 +20900,7 @@ kgr:noncode a schema1:DataSource ;
         kgr:noncode.id-conversion,
         kgr:noncode.portal,
         kgr:noncode.search,
+        kgr:npinter.interactions,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
@@ -20772,6 +20956,31 @@ kgr:npass a schema1:DataSource ;
         "natural products" ;
     adms:status "Active" ;
     foaf:homepage <https://bidd.group/NPASS/> .
+
+kgr:npinter a schema1:DataSource ;
+    rdfs:label "NPInter" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "NPInter is a database of functional interactions between non-coding RNAs (excluding tRNAs and rRNAs) and other biomolecules, including proteins, RNAs and genomic DNA. Version 5.0 holds about 2.6 million ncRNA interactions across 60 species, drawn from manual curation of the literature and from high-throughput experiments such as CLIP-seq in GEO, plus over 8 million RNA-DNA interaction pairs from iMARGI, ChAR-seq and GRID-seq data. It adds an RNA-binding protein module covering 277 human RBPs, a panel of SARS-CoV-2-related RNA interactions, and cell-type-specific lncRNA interactions inferred from single-cell RNA-seq. Molecules are identified with NONCODE, miRBase, circBase, Ensembl, RefSeq and UniProt identifiers." ;
+    dcterms:identifier "npinter" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkac1002>,
+        <doi:10.1093/nar/gkz969> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:npinter.binding-sites,
+        kgr:npinter.downloads,
+        kgr:npinter.interactions,
+        kgr:npinter.interactions-experimental,
+        kgr:npinter.interactions-predicted,
+        kgr:npinter.portal,
+        kgr:npinter.rna-dna-interactions ;
+    schema1:identifier "RRID:SCR_007825" ;
+    schema1:name "NPInter" ;
+    skos:inScheme "genomics",
+        "non-coding RNA",
+        "protein interactions",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <http://bigdata.ibp.ac.cn/npinter5/> .
 
 kgr:npm a schema1:DataSource ;
     rdfs:label "npm registry" ;
@@ -22001,6 +22210,8 @@ kgr:omim a schema1:DataSource ;
         kgr:openpredict.api,
         kgr:openpredict.predictions,
         kgr:orphanet.scientific_knowledge_files,
+        kgr:panelapp.api,
+        kgr:panelapp.portal,
         kgr:pavs-kg.api,
         kgr:pavs-kg.phenopackets,
         kgr:pavs-kg.portal,
@@ -22976,6 +23187,8 @@ kgr:orphanet a schema1:DataSource ;
         kgr:orphanet.researchprojects,
         kgr:orphanet.researchprojectsnetworks,
         kgr:orphanet.scientific_knowledge_files,
+        kgr:panelapp.api,
+        kgr:panelapp.portal,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
         kgr:sri-reference-kg.graph ;
@@ -23161,6 +23374,51 @@ kgr:pacer a schema1:DataSource ;
         "public health" ;
     adms:status "Active" ;
     foaf:homepage <https://pacer.uscourts.gov/> .
+
+kgr:panelapp a schema1:DataSource ;
+    rdfs:label "Genomics England PanelApp" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Genomics England PanelApp is a public knowledgebase and crowdsourcing tool for creating, reviewing and sharing virtual gene panels for human disorders. Each panel covers a clinical indication and lists genes, short tandem repeats and copy-number regions, each rated with a traffic-light confidence level (green for diagnostic grade, amber for borderline, red for insufficient evidence) agreed through expert review. The panels underpin genome interpretation in the NHS Genomic Medicine Service in England, where signed-off panels are approved for diagnostic testing. When checked on 2026-11-12, the PanelApp API listed 433 public panels, 296 of them signed off for the Genomic Medicine Service. Data are free to browse and download for non-commercial, non-diagnostic use under the PanelApp Terms of Use." ;
+    dcterms:identifier "panelapp" ;
+    dcterms:isReferencedBy <doi:10.1016/j.ajhg.2021.06.020>,
+        <doi:10.1038/s41588-019-0528-2> ;
+    dcterms:license <https://panelapp.genomicsengland.co.uk/media/files/GEL_-_PanelApp_Terms_of_Use_December_2019.pdf> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:panelapp.api,
+        kgr:panelapp.handbook,
+        kgr:panelapp.portal,
+        kgr:panelapp.software ;
+    schema1:name "Genomics England PanelApp" ;
+    doap:repository <https://github.com/genomicsengland/panelapp> ;
+    skos:inScheme "biomedical",
+        "clinical",
+        "genomics",
+        "rare disease" ;
+    adms:status "Active" ;
+    foaf:homepage <https://panelapp.genomicsengland.co.uk/> .
+
+kgr:pangolin a schema1:DataSource ;
+    rdfs:label "Pangolin" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Pangolin is a deep learning model that predicts splice site usage from DNA sequence and the effect of genetic variants on splicing. Trained on splice site usage measured in RNA-seq from multiple tissues of human, rhesus macaque, mouse and rat, it reports, for a window around each variant, the maximum increase (gain) and decrease (loss) in splice site usage and their positions, optionally masked using a gene annotation. The Pangolin software is distributed on GitHub under GPL-3.0. Precomputed hg38 scores for all SNVs in protein-coding genes, masked using GENCODE splice site annotations, were computed with default parameters by researchers at the Technical University of Munich and published on Zenodo under CC BY 4.0." ;
+    dcterms:identifier "pangolin" ;
+    dcterms:isReferencedBy <doi:10.1186/s13059-022-02664-4> ;
+    dcterms:license <https://www.gnu.org/licenses/gpl-3.0.html> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:pangolin.hg38-snvs-masked,
+        kgr:pangolin.software,
+        kgr:spliceai.lookup ;
+    schema1:name "Pangolin" ;
+    doap:repository <https://github.com/tkzeng/Pangolin> ;
+    skos:inScheme "biomedical",
+        "genetic variation",
+        "genomics",
+        "information technology",
+        "machine learning" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/tkzeng/Pangolin> .
 
 kgr:pankbase a schema1:DataSource ;
     rdfs:label "PanKBase" ;
@@ -23714,6 +23972,12 @@ kgr:pdb a schema1:DataSource ;
         kgr:pharos.tcrd.download,
         kgr:preppi.download,
         kgr:rdf-portal.sparql.pdb,
+        kgr:sabdab.api,
+        kgr:sabdab.portal,
+        kgr:sabdab.single-domain-summary,
+        kgr:sabdab.structures,
+        kgr:sabdab.summary,
+        kgr:saprot.models,
         kgr:stitch.api,
         kgr:stitch.downloads,
         kgr:stitch.portal,
@@ -23726,6 +23990,7 @@ kgr:pdb a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full,
+        kgr:therasabdab.sequences-structures,
         kgr:togows.rest-api ;
     schema1:identifier "RRID:SCR_012820" ;
     schema1:name "Protein Data Bank (PDB)" ;
@@ -26064,6 +26329,8 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:hald.longevity-biomarkers.json,
         kgr:hald.relation-info.json,
         kgr:hald.roles.csv,
+        kgr:hmdd.alldata,
+        kgr:hmdd.alldata-xlsx,
         kgr:htridb.downloads,
         kgr:ickg.graph-data,
         kgr:ikraph.code,
@@ -26084,12 +26351,16 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:myaura.graph,
         kgr:ncbi.ftp,
         kgr:ncbigene.gene2pubmed,
+        kgr:ncrnadrug.drug-resistance-curated,
+        kgr:ncrnadrug.drug-target-curated,
         kgr:nihreporter.linktables,
         kgr:nihreporter.publications,
         kgr:nlm-ckn.graph,
         kgr:nlm.data-distribution,
         kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
+        kgr:npinter.interactions,
+        kgr:npinter.interactions-experimental,
         kgr:omnicorp.api,
         kgr:omnicorp.cooccurrence,
         kgr:pharos.api,
@@ -27047,6 +27318,31 @@ kgr:retriever a schema1:Aggregator ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/BioPack-team/retriever> .
 
+kgr:revel a schema1:DataSource ;
+    rdfs:label "REVEL" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "REVEL (Rare Exome Variant Ensemble Learner) is an ensemble method for predicting the pathogenicity of missense variants in the human genome. It combines scores from 13 individual tools (including MutPred, FATHMM, VEST, PolyPhen, SIFT, PROVEAN, MutationAssessor, MutationTaster, LRT, GERP, SiPhy, phyloP and phastCons) with a random forest trained on recently discovered disease mutations and rare neutral variants, and reports a score from 0 to 1 where higher values indicate a greater likelihood of being disease-causing. REVEL scores are precomputed for all possible human missense variants and distributed as CSV files with hg19/GRCh37 and GRCh38 positions and Ensembl transcript IDs. Scores are freely available for non-commercial use." ;
+    dcterms:hasVersion "1.3" ;
+    dcterms:identifier "revel" ;
+    dcterms:isReferencedBy <doi:10.1016/j.ajhg.2016.08.016> ;
+    dcterms:license <https://sites.google.com/site/revelgenomics/downloads> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:revel.all-chromosomes,
+        kgr:revel.docs,
+        kgr:revel.downloads,
+        kgr:revel.zenodo ;
+    schema1:name "REVEL" ;
+    skos:altLabel "Rare Exome Variant Ensemble Learner" ;
+    skos:inScheme "biomedical",
+        "genetic variation",
+        "genomics",
+        "information technology",
+        "machine learning",
+        "rare disease" ;
+    adms:status "Active" ;
+    foaf:homepage <https://sites.google.com/site/revelgenomics/> .
+
 kgr:rex a schema1:Ontology ;
     rdfs:label "Physico-chemical process" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -27685,6 +27981,32 @@ kgr:rxnorm a schema1:DataSource ;
     foaf:homepage <https://www.nlm.nih.gov/research/umls/rxnorm/> ;
     foaf:maker kgr:ncbi .
 
+kgr:sabdab a schema1:DataSource ;
+    rdfs:label "Structural Antibody Database (SAbDab)" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Structural Antibody Database (SAbDab) collects and annotates all publicly available, experimentally determined antibody and nanobody structures, updated weekly from the Protein Data Bank. Each structure is annotated with experimental details, heavy and light chain pairings, CDR sequences, antigen details, species, resolution and affinity data where available, and structures are offered pre-numbered under standard antibody numbering schemes. SAbDab-nano tracks single-domain antibody (nanobody) structures. The current release, SAbDab2, adds sequence, CDR and antigen-sequence similarity searches, a REST API, and bulk summary and structure downloads aimed at machine learning use." ;
+    dcterms:identifier "sabdab" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkab1050>,
+        <doi:10.1093/nar/gkag1091>,
+        <doi:10.1093/nar/gkt1043> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:sabdab.api,
+        kgr:sabdab.portal,
+        kgr:sabdab.single-domain-summary,
+        kgr:sabdab.structures,
+        kgr:sabdab.summary,
+        kgr:therasabdab.portal,
+        kgr:therasabdab.sequences-structures ;
+    schema1:identifier "RRID:SCR_022096" ;
+    schema1:name "Structural Antibody Database (SAbDab)" ;
+    skos:inScheme "immunology",
+        "protein structure",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://sabdab.opig.stats.ox.ac.uk/> .
+
 kgr:sao a schema1:Ontology ;
     rdfs:label "Subcellular anatomy ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -27701,6 +28023,32 @@ kgr:sao a schema1:Ontology ;
         "cell biology" ;
     adms:status "Inactive" ;
     foaf:homepage <http://ccdb.ucsd.edu/CCDBWebSite/sao.html> .
+
+kgr:saprot a schema1:DataSource ;
+    rdfs:label "SaProt" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "SaProt is a structure-aware protein language model from Westlake University. It uses a structure-aware vocabulary that combines each amino acid with a Foldseek 3Di structure token, and was pre-trained on about 40 million AlphaFold2-predicted protein structures (UniRef50 clusters), with a 650M model further trained on PDB structures and a 1.3B model also trained on metagenomic and NCBI sequences. SaProt supports zero-shot prediction of mutational effects (including missense variant pathogenicity, benchmarked on ClinVar and ProteinGym) and fine-tuning for protein property prediction. The authors distribute the trained models (35M, 650M and 1.3B parameters) and the AF2_UniRef50 pre-training dataset on Hugging Face and the code on GitHub under the MIT license, along with ColabSaprot and the SaprotHub model-sharing platform. The authors do not distribute precomputed variant-effect scores." ;
+    dcterms:identifier "saprot" ;
+    dcterms:isReferencedBy <doi:10.1038/s41587-025-02859-7>,
+        <doi:10.1101/2023.10.01.560349> ;
+    dcterms:license <https://github.com/westlake-repl/SaProt/blob/main/LICENSE> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:saprot.af2-uniref50,
+        kgr:saprot.models,
+        kgr:saprot.saprothub,
+        kgr:saprot.software ;
+    schema1:name "SaProt" ;
+    doap:repository <https://github.com/westlake-repl/SaProt> ;
+    skos:inScheme "biomedical",
+        "genetic variation",
+        "genomics",
+        "information technology",
+        "machine learning",
+        "protein structure",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/westlake-repl/SaProt> .
 
 kgr:sawgraph a schema1:KnowledgeGraph ;
     rdfs:label "SAWGraph PFAS KG" ;
@@ -29042,6 +29390,32 @@ kgr:spdx a schema1:DataModel ;
     adms:status "Active" ;
     foaf:homepage <https://spdx.org/licenses/> .
 
+kgr:spliceai a schema1:DataSource ;
+    rdfs:label "SpliceAI" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "SpliceAI is a deep residual neural network from Illumina that predicts splice junctions from pre-mRNA sequence and scores the effect of genetic variants on splicing. For each variant it reports delta scores (0 to 1) for acceptor gain, acceptor loss, donor gain and donor loss, with the position of each predicted change. Illumina distributes precomputed SpliceAI scores for all possible substitutions, 1-base insertions and 1-4 base deletions within genes, and Ensembl distributes precomputed SpliceAI scores for all GRCh38 SNVs in MANE Select transcripts for use with the VEP SpliceAI plugin. The source code is under the PolyForm Strict License 1.0.0, the trained models under CC BY-NC 4.0, and the precomputed scores are free for academic and not-for-profit use. The GitHub repository was archived on 2026-04-20 at release v1.3.1." ;
+    dcterms:hasVersion "1.3.1" ;
+    dcterms:identifier "spliceai" ;
+    dcterms:isReferencedBy <doi:10.1016/j.cell.2018.12.015> ;
+    dcterms:license <https://polyformproject.org/licenses/strict/1.0.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:spliceai.ensembl-downloads,
+        kgr:spliceai.ensembl-mane-masked,
+        kgr:spliceai.ensembl-mane-raw,
+        kgr:spliceai.lookup,
+        kgr:spliceai.precomputed,
+        kgr:spliceai.software ;
+    schema1:name "SpliceAI" ;
+    doap:repository <https://github.com/Illumina/SpliceAI> ;
+    skos:inScheme "biomedical",
+        "genetic variation",
+        "genomics",
+        "information technology",
+        "machine learning" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://github.com/Illumina/SpliceAI> .
+
 kgr:spoke a schema1:KnowledgeGraph ;
     rdfs:label "SPOKE" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -29985,6 +30359,8 @@ kgr:tcga a schema1:DataSource ;
         kgr:drbioright.portal,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
+        kgr:intogen.cohorts,
+        kgr:intogen.drivers,
         kgr:multiomics-kp.graph,
         kgr:tcga.gdc_api,
         kgr:tcga.gdc_portal,
@@ -30237,6 +30613,26 @@ kgr:tgma a schema1:Ontology ;
         "organisms" ;
     adms:status "Inactive" ;
     foaf:homepage <https://www.vectorbase.org/ontology-browser> .
+
+kgr:therasabdab a schema1:DataSource ;
+    rdfs:label "Therapeutic Structural Antibody Database (Thera-SAbDab)" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Therapeutic Structural Antibody Database (Thera-SAbDab) tracks all antibody- and nanobody-derived therapeutics recognized by the World Health Organization International Nonproprietary Names (INN) programme, recording their variable domain sequences together with format, isotype, targets, companies, approved and investigated conditions, and highest clinical trial stage. Each therapeutic is linked to its exact (100% sequence identity) and near (95-99%) structural representatives in SAbDab, and these structural mappings are refreshed alongside SAbDab's weekly updates. New therapeutics are added with each WHO INN list, and clinical status is updated from AdisInsight." ;
+    dcterms:identifier "therasabdab" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkz827> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:biobtree.api,
+        kgr:therasabdab.portal,
+        kgr:therasabdab.sequences-structures ;
+    schema1:identifier "RRID:SCR_022093" ;
+    schema1:name "Therapeutic Structural Antibody Database (Thera-SAbDab)" ;
+    skos:inScheme "drug discovery",
+        "immunology",
+        "pharmacology",
+        "protein structure",
+        "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/therasabdab> .
 
 kgr:tiga a schema1:DataSource ;
     rdfs:label "Target Illumination GWAS Analytics" ;
@@ -31097,6 +31493,7 @@ kgr:ucsc a schema1:DataSource ;
         kgr:enrichr.libraries,
         kgr:gencode.docs,
         kgr:genecards.web.interface,
+        kgr:gpn-star.ucsc-hub,
         kgr:mygene.api,
         kgr:togows.ucsc-api,
         kgr:ucsc.api,
@@ -31464,6 +31861,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:nextprot.downloads,
         kgr:nextprot.portal,
         kgr:nextprot.sparql,
+        kgr:npinter.interactions,
         kgr:obo-db-ingest.uniprot.json,
         kgr:obo-db-ingest.uniprot.obo,
         kgr:obo-db-ingest.uniprot.owl,
@@ -31509,6 +31907,8 @@ kgr:uniprot a schema1:DataSource ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:saprot.af2-uniref50,
+        kgr:saprot.models,
         kgr:service-kp.trapi,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
@@ -32238,6 +32638,8 @@ kgr:wikipathways a schema1:DataSource ;
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
+        kgr:biobtree.api,
+        kgr:biobtree.graph.human-subgraph,
         kgr:enrichr-kg.graph,
         kgr:enrichr.libraries,
         kgr:genecards.pathway.data,
@@ -33946,6 +34348,11 @@ kgr:biobricks-toxcast.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks ToxCast TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BioBricks ToxCast" ;
     schema1:url <https://apps.okn.us/ldf/biobricks-toxcast> .
+
+kgr:biobtree.bench a schema1:Product ;
+    rdfs:label "BioBTree Benchmark (biobtree-bench)" ;
+    dcterms:description "Benchmark harness, question sets and per-question results for evaluating BioBTree as an LLM tool set against no tools, web search and domain-specific MCP servers. Includes about 1,700 questions in the main sets, among them 900 GeneTuring and 160 LAB-Bench DbQA questions, and a cells.csv file of 9,391 result rows. Code is MIT; GeneTuring questions are CC BY-NC 4.0, LAB-Bench questions are CC BY-SA 4.0, and other questions and results are CC BY 4.0." ;
+    schema1:url <https://github.com/tamerh/biobtree-bench> .
 
 kgr:biobtree.docs a schema1:DocumentationProduct ;
     rdfs:label "BioBTree Repository and Documentation" ;
@@ -39982,6 +40389,26 @@ kgr:gpmdb.xtandem a schema1:ProcessProduct ;
     dcterms:description "X! Tandem, the open source search engine that matches tandem mass spectra to peptide sequences and underlies the GPM pipeline that populates GPMDB. Latest release ALANINE (2017.02.01)." ;
     schema1:url <https://www.thegpm.org/tandem/> .
 
+kgr:gpn-star.docs a schema1:DocumentationProduct ;
+    rdfs:label "GPN-Star Documentation" ;
+    dcterms:description "GPN documentation pages for GPN-Star, describing the models, published assets (models, alignments, scores and benchmark datasets) and usage." ;
+    schema1:url <https://gpn.readthedocs.io/en/latest/models/gpn-star/> .
+
+kgr:gpn-star.models a schema1:Product ;
+    rdfs:label "GPN-Star Models" ;
+    dcterms:description "Hugging Face collection of trained GPN-Star model checkpoints (safetensors weights with configuration and calibration tables), including the human vertebrate (v100), mammal (m447) and primate (p243) models at 25M, 85M and 200M parameters and models for mouse, chicken, D. melanogaster, C. elegans and A. thaliana. Loadable with Hugging Face Transformers through the gpn package." ;
+    schema1:url <https://huggingface.co/collections/songlab/gpn-star-68c0c055acc2ee51d5c4f129> .
+
+kgr:gpn-star.scores a schema1:Product ;
+    rdfs:label "GPN-Star Genome-wide Scores" ;
+    dcterms:description "GPN-Star genome-wide scores on Hugging Face, with mutation-rate-calibrated constraint (entropy) and variant (log-likelihood ratio) scores for eight score sets (human hg38 vertebrate, mammal and primate models; mouse mm39; chicken galGal6; D. melanogaster dm6; C. elegans ce11; A. thaliana TAIR10). Canonical scores are chromosome-sharded Parquet files; BigWig display tracks are also provided." ;
+    schema1:url <https://huggingface.co/datasets/songlab/gpn-star-scores> .
+
+kgr:gpn-star.software a schema1:ProcessProduct ;
+    rdfs:label "GPN Software" ;
+    dcterms:description "The gpn Python package and repository (songlab-cal/gpn), with code for GPN, GPN-MSA, PhyloGPN and GPN-Star, a command-line interface for variant effect prediction, logits and embeddings, training recipes, and Colab notebooks including one for querying the precomputed GPN-Star scores. Installable with pip install gpn." ;
+    schema1:url <https://github.com/songlab-cal/gpn> .
+
 kgr:gramene a "Organization" ;
     rdfs:label "Gramene Project" .
 
@@ -40444,6 +40871,11 @@ kgr:hmdb.xml.proteins a schema1:Product ;
     rdfs:label "HMDB All Proteins (XML)" ;
     dcterms:description "All proteins dataset (XML)" ;
     schema1:url <https://www.hmdb.ca/downloads#metabolite-protein-xml> .
+
+kgr:hmdd.portal a schema1:GraphicalInterface ;
+    rdfs:label "HMDD Website" ;
+    dcterms:description "Web interface for browsing and searching miRNA-disease associations, with tools for miRNA-target network visualization, causality annotations, and disease network analysis." ;
+    schema1:url <http://www.cuilab.cn/hmdd> .
 
 kgr:hocomoco.core-pwms a schema1:Product ;
     rdfs:label "HOCOMOCO v11 Core Human Mononucleotide PWMs" ;
@@ -41460,6 +41892,21 @@ kgr:interpro.xml a schema1:DataModelProduct ;
     rdfs:label "InterPro XML" ;
     dcterms:description "Complete InterPro database in XML format containing entries, member database signatures, GO terms, and relationships" ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz> .
+
+kgr:intogen.docs a schema1:DocumentationProduct ;
+    rdfs:label "IntOGen Documentation" ;
+    dcterms:description "Documentation for the IntOGen pipeline, covering its methods, inputs, outputs, and post-processing of driver gene results." ;
+    schema1:url <https://intogen.readthedocs.io/en/latest/> .
+
+kgr:intogen.pipeline a schema1:ProcessProduct ;
+    rdfs:label "IntOGen Pipeline Source Code" ;
+    dcterms:description "Source code of the IntOGen pipeline (intogen-plus), which combines multiple driver discovery methods to identify cancer driver genes from somatic mutation data." ;
+    schema1:url <https://github.com/bbglab/intogen-plus> .
+
+kgr:intogen.portal a schema1:GraphicalInterface ;
+    rdfs:label "IntOGen Website" ;
+    dcterms:description "Web interface for searching and browsing cancer driver genes, cohorts, cancer types, and mutation distributions in the current IntOGen release." ;
+    schema1:url <https://www.intogen.org/search> .
 
 kgr:inxight-drugs.api a schema1:ProgrammingInterface ;
     rdfs:label "Inxight: Drugs REST API" ;
@@ -42580,6 +43027,26 @@ kgr:maudekg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "FDA MAUDE Adverse Event Knowledge Graph TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for FDA MAUDE Adverse Event Knowledge Graph" ;
     schema1:url <https://apps.okn.us/ldf/maudekg> .
+
+kgr:mavedb.api a schema1:ProgrammingInterface ;
+    rdfs:label "MaveDB API" ;
+    dcterms:description "REST API for programmatic search, retrieval, and submission of MaveDB records, including score sets, count data, target genes, and variant mappings." ;
+    schema1:url <https://api.mavedb.org/docs> .
+
+kgr:mavedb.api-code a schema1:ProcessProduct ;
+    rdfs:label "MaveDB API Source Code" ;
+    dcterms:description "Source code for the MaveDB API server, which provides the database back end and REST API for MaveDB." ;
+    schema1:url <https://github.com/VariantEffect/mavedb-api> .
+
+kgr:mavedb.bulk-download a schema1:Product ;
+    rdfs:label "MaveDB Bulk Download" ;
+    dcterms:description "Bulk download of all data published in MaveDB under the Creative Commons Zero license, including score and count tables with associated record metadata. Deposited periodically on Zenodo." ;
+    schema1:url <https://doi.org/10.5281/zenodo.11201736> .
+
+kgr:mavedb.portal a schema1:GraphicalInterface ;
+    rdfs:label "MaveDB Website" ;
+    dcterms:description "Web interface for searching, browsing, visualizing, and submitting MAVE experiment sets, experiments, and variant effect score sets." ;
+    schema1:url <https://www.mavedb.org/> .
 
 kgr:maven-central.website a schema1:GraphicalInterface ;
     rdfs:label "Maven Central website" ;
@@ -44134,6 +44601,16 @@ kgr:ncit.owl a schema1:OntologyProduct ;
     dcterms:description "A direct transformation of the standard NCIt content using OBO-style term and ontology IRIs and annotation properties." ;
     schema1:url <http://purl.obolibrary.org/obo/ncit.owl> .
 
+kgr:ncrnadrug.downloads a schema1:Product ;
+    rdfs:label "ncRNADrug Downloads" ;
+    dcterms:description "Download page listing the curated and predicted ncRNADrug association tables, each offered as tab-delimited text and as Excel workbooks." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/download.html> .
+
+kgr:ncrnadrug.portal a schema1:GraphicalInterface ;
+    rdfs:label "ncRNADrug Web Portal" ;
+    dcterms:description "ncRNADrug web portal for browsing and searching ncRNA drug resistance and drug-target associations by drug, miRNA, lncRNA, circRNA, drug response or target, with an online tool for predicting ncRNAs targeted by drugs." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/> .
+
 kgr:ncro.dev.ncro.owl a schema1:OntologyProduct ;
     rdfs:label "NCRO development version" ;
     dcterms:description "NCRO development version" ;
@@ -44538,6 +45015,26 @@ kgr:npass.portal a schema1:GraphicalInterface ;
     rdfs:label "NPASS Portal" ;
     dcterms:description "Official NPASS portal for searching and browsing natural products, source organisms, targets, activity records, and associated ADME-tox data." ;
     schema1:url <https://bidd.group/NPASS/> .
+
+kgr:npinter.binding-sites a schema1:Product ;
+    rdfs:label "NPInter v5.0 Binding Sites" ;
+    dcterms:description "NPInter v5.0 ncRNA binding sites as a gzipped tab-delimited table." ;
+    schema1:url <http://bigdata.ibp.ac.cn/npinter5/download/file/bindingsite_NPInterv5.txt.gz> .
+
+kgr:npinter.downloads a schema1:Product ;
+    rdfs:label "NPInter Downloads" ;
+    dcterms:description "Download page for NPInter interaction, binding site and RNA-DNA interaction files, including files from earlier NPInter versions." ;
+    schema1:url <http://bigdata.ibp.ac.cn/npinter5/download/> .
+
+kgr:npinter.interactions-predicted a schema1:GraphProduct ;
+    rdfs:label "NPInter v5.0 Computationally Predicted Interactions" ;
+    dcterms:description "Computationally predicted NPInter v5.0 ncRNA interactions as a gzipped tab-delimited table." ;
+    schema1:url <http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.comp.txt.gz> .
+
+kgr:npinter.portal a schema1:GraphicalInterface ;
+    rdfs:label "NPInter v5.0 Web Portal" ;
+    dcterms:description "NPInter v5.0 web portal for browsing and searching ncRNA interactions, ncRNA-genome bindings, RBPs, SARS-CoV-2 RNA interactions and single-cell lncRNA interactions, with functional search and BLAST." ;
+    schema1:url <http://bigdata.ibp.ac.cn/npinter5/> .
 
 kgr:npm.website a schema1:GraphicalInterface ;
     rdfs:label "npm registry website" ;
@@ -45903,6 +46400,16 @@ kgr:pacer.case-locator a schema1:Product ;
     rdfs:label "PACER Case/Docket Records Access" ;
     dcterms:description "The PACER Case Locator is the national index and access point for federal court case and docket records, allowing searches across U.S. district, bankruptcy, and appellate courts for dockets, case summaries, and filed documents. Access is subject to PACER per-page usage fees." ;
     schema1:url <https://pcl.uscourts.gov/pcl/index.jsf> .
+
+kgr:panelapp.handbook a schema1:DocumentationProduct ;
+    rdfs:label "PanelApp Handbook" ;
+    dcterms:description "PanelApp Handbook (version 105) describing panel structure, the gene rating criteria, the review and sign-off process, and how to use the site." ;
+    schema1:url <https://panelapp.genomicsengland.co.uk/media/files/GUI-BIO-004_PanelApp_Handbook-v105.pdf> .
+
+kgr:panelapp.software a schema1:ProcessProduct ;
+    rdfs:label "PanelApp Software" ;
+    dcterms:description "Source code of the PanelApp application (Python/Django). The GitHub mirror was last updated in 2019." ;
+    schema1:url <https://github.com/genomicsengland/panelapp> .
 
 kgr:pankbase.api a schema1:ProgrammingInterface ;
     rdfs:label "PanKBase Data Library API" ;
@@ -47768,6 +48275,16 @@ kgr:retriever.docs a schema1:DocumentationProduct ;
     dcterms:description "Project README with deployment and usage instructions for Retriever." ;
     schema1:url <https://github.com/BioPack-team/retriever#readme> .
 
+kgr:revel.docs a schema1:DocumentationProduct ;
+    rdfs:label "REVEL Website" ;
+    dcterms:description "REVEL website describing the method, score interpretation, and sensitivity, specificity and likelihood ratio threshold tables." ;
+    schema1:url <https://sites.google.com/site/revelgenomics/> .
+
+kgr:revel.downloads a schema1:Product ;
+    rdfs:label "REVEL Downloads" ;
+    dcterms:description "REVEL downloads page with the all-chromosome file, links to genome segment files, the Zenodo mirror, file format description and release notes." ;
+    schema1:url <https://sites.google.com/site/revelgenomics/downloads> .
+
 kgr:rex.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "REX KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Physico-Chemical Process (REX), produced by KG-Bioportal from the BioPortal submission. The archive contains REX_nodes.tsv and REX_edges.tsv." ;
@@ -48140,6 +48657,16 @@ kgr:sao.owl a schema1:OntologyProduct ;
     rdfs:label "Subcellular anatomy ontology OWL edition" ;
     dcterms:description "Canonical OWL edition of the Subcellular Anatomy Ontology distributed via OBO PURL." ;
     schema1:url <http://purl.obolibrary.org/obo/sao.owl> .
+
+kgr:saprot.saprothub a schema1:ProcessProduct ;
+    rdfs:label "SaprotHub and ColabSaprot" ;
+    dcterms:description "SaprotHub and ColabSaprot, a platform and Google Colab notebook for training, sharing and using fine-tuned SaProt models without programming, with a Hugging Face community hub for sharing models." ;
+    schema1:url <https://github.com/westlake-repl/SaprotHub> .
+
+kgr:saprot.software a schema1:ProcessProduct ;
+    rdfs:label "SaProt Software" ;
+    dcterms:description "SaProt source code (Python, PyTorch) for pre-training, fine-tuning, zero-shot mutational effect prediction and benchmark evaluation (including ProteinGym and ClinVar), with Foldseek-based conversion of protein structures into structure-aware sequences." ;
+    schema1:url <https://github.com/westlake-repl/SaProt> .
 
 kgr:sawgraph.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph PFAS KG SPARQL" ;
@@ -49007,6 +49534,11 @@ kgr:spdx.portal a schema1:DocumentationProduct ;
     rdfs:label "SPDX License List Portal" ;
     dcterms:description "Human-readable SPDX License List with canonical identifiers, exception pages, and matching guidance." ;
     schema1:url <https://spdx.org/licenses/> .
+
+kgr:spliceai.software a schema1:ProcessProduct ;
+    rdfs:label "SpliceAI Software" ;
+    dcterms:description "SpliceAI source code and trained models, a Python package that annotates variants in a VCF file with SpliceAI delta scores and positions. Installable with pip or bioconda (requires TensorFlow). The repository was archived on 2026-04-20 at release v1.3.1." ;
+    schema1:url <https://github.com/Illumina/SpliceAI> .
 
 kgr:spoke-okn.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SPOKE-OKN SPARQL" ;
@@ -50693,6 +51225,8 @@ kgr:who a schema1:Aggregator,
         kgr:ekg.sparql,
         kgr:ekg.ttl,
         kgr:spoke.graph,
+        kgr:therasabdab.portal,
+        kgr:therasabdab.sequences-structures,
         kgr:who.data-hub,
         kgr:who.data-platform,
         kgr:who.disease-outbreak-news,
@@ -52284,6 +52818,11 @@ kgr:gpmdb.api a schema1:ProgrammingInterface ;
     dcterms:description "GPMDB REST API (version 2015.02.19) returning JSON for protein and peptide observation counts, best expectation values, peptide sequences, charge states, modifications, single amino acid variants and protein sequences, keyed by protein accession (mainly Ensembl ENSP identifiers) or peptide sequence." ;
     schema1:url <https://rest.thegpm.org/1> .
 
+kgr:gpn-star.ucsc-hub a schema1:GraphicalInterface ;
+    rdfs:label "GPN-Star UCSC Track Hub" ;
+    dcterms:description "Multi-assembly UCSC Genome Browser track hub for GPN-Star scores, hosted in the Hugging Face scores dataset and showing per-base logo and log-likelihood ratio tracks for the eight GPN-Star score sets." ;
+    schema1:url <https://genome.ucsc.edu/cgi-bin/hgTracks?hubUrl=https%3A%2F%2Fhuggingface.co%2Fdatasets%2Fsonglab%2Fgpn-star-scores%2Fresolve%2Fmain%2Fucsc%2Fhub.txt> .
+
 kgr:gtex.dbgap-data a schema1:Product ;
     rdfs:label "GTEx dbGaP Data" ;
     dcterms:description "Individual-level genotype and phenotype data available through dbGaP" ;
@@ -52705,6 +53244,21 @@ kgr:ncbigene.gene2refseq a schema1:MappingProduct ;
     dcterms:description "Gene to RefSeq mapping data providing links between gene records and RefSeq sequence identifiers" ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2refseq.gz> .
 
+kgr:ncrnadrug.drug-resistance-geo a schema1:Product ;
+    rdfs:label "ncRNADrug Predicted Drug Resistance Associations from GEO" ;
+    dcterms:description "Tab-delimited table of ncRNAs predicted to be associated with drug resistance from differential expression analysis of resistant versus sensitive samples in GEO series." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/data_download/DR_GEO.txt> .
+
+kgr:ncrnadrug.drug-target-cmap a schema1:Product ;
+    rdfs:label "ncRNADrug Predicted Drug Target Associations from CMap" ;
+    dcterms:description "Tab-delimited table of lncRNAs predicted to be targeted by drugs from re-annotated CMap drug perturbation expression profiles." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/data_download/DT_CMap.txt> .
+
+kgr:ncrnadrug.drug-target-geo a schema1:Product ;
+    rdfs:label "ncRNADrug Predicted Drug Target Associations from GEO" ;
+    dcterms:description "Tab-delimited table of ncRNAs predicted to be targeted by drugs from differential expression analysis of drug-treated versus control samples in GEO series." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/data_download/DT_GEO.txt> .
+
 kgr:ndcd.api a schema1:ProgrammingInterface ;
     rdfs:label "NDC API" ;
     dcterms:description "REST API providing programmatic access to National Drug Code data through the openFDA platform" ;
@@ -52779,6 +53333,11 @@ kgr:node-normalizer.api.translator a schema1:ProgrammingInterface ;
     rdfs:label "Node Normalization API (Translator)" ;
     dcterms:description "Node Normalization REST API deployed on NCATS Translator infrastructure." ;
     schema1:url <https://nodenorm.transltr.io/docs> .
+
+kgr:npinter.rna-dna-interactions a schema1:GraphProduct ;
+    rdfs:label "NPInter v5.0 RNA-DNA Interactions" ;
+    dcterms:description "Genome-wide RNA-DNA interactions collected by NPInter v5.0 from iMARGI, ChAR-seq and GRID-seq datasets, as a gzipped tab-delimited table." ;
+    schema1:url <http://bigdata.ibp.ac.cn/npinter5/download/file/dna_interactions.npinter5.txt.gz> .
 
 kgr:obo-db-ingest.bigg.compartment.json a schema1:Product ;
     rdfs:label "bigg.compartment OBO Graph JSON" ;
@@ -54477,6 +55036,16 @@ kgr:orphanet.ordo_release a schema1:DocumentationProduct ;
     dcterms:description "Current Orphadata Science page for the Orphanet Rare Disease Ontology release, including ORDO 4.8 OWL downloads and release notes" ;
     schema1:url <https://sciences.orphadata.com/ordo/> .
 
+kgr:pangolin.hg38-snvs-masked a schema1:Product ;
+    rdfs:label "Pangolin Precomputed hg38 SNV Scores (Masked)" ;
+    dcterms:description "Pangolin precomputed scores for all SNVs in protein-coding genes on hg38, computed with default parameters (window size 50 nt) and masked using GENCODE splice site annotations, as per-gene TSV files with chromosome, position, reference and alternate alleles, gain and loss scores and their relative positions. Computed by Nils Wagner and Aleksandr Neverov (Technical University of Munich) and published on Zenodo on 2025-06-12." ;
+    schema1:url <https://zenodo.org/records/15649338> .
+
+kgr:pangolin.software a schema1:ProcessProduct ;
+    rdfs:label "Pangolin Software" ;
+    dcterms:description "Pangolin source code and trained models, a Python (PyTorch) tool that annotates variants in a VCF or CSV file with splice gain and loss scores, using a gene annotation database (GENCODE-based databases are provided) for masking. A Google Colab notebook is also provided." ;
+    schema1:url <https://github.com/tkzeng/Pangolin> .
+
 kgr:patric.api a schema1:ProgrammingInterface ;
     rdfs:label "BV-BRC API" ;
     dcterms:description "BV-BRC REST Data API for querying and retrieving public data, including data inherited from PATRIC" ;
@@ -55202,6 +55771,31 @@ kgr:ror.api a schema1:ProgrammingInterface ;
     dcterms:description "Open REST API (v2) for searching and retrieving ROR organization records, including keyword and external identifier search (GRID, ISNI, Wikidata, Crossref Funder ID), advanced filtering, and matching of free-text affiliation strings to ROR IDs. No registration is required; requests are rate-limited per IP address." ;
     schema1:url <https://api.ror.org/v2/organizations> .
 
+kgr:sabdab.api a schema1:ProgrammingInterface ;
+    rdfs:label "SAbDab REST API" ;
+    dcterms:description "SAbDab REST API for retrieving antibody, antibody instance, antigen and PDB entry records, running sequence similarity searches, and requesting summary and structure downloads; documented with an OpenAPI specification." ;
+    schema1:url <https://sabdab.opig.stats.ox.ac.uk/api/docs> .
+
+kgr:sabdab.portal a schema1:GraphicalInterface ;
+    rdfs:label "SAbDab2 Web Portal" ;
+    dcterms:description "SAbDab2 web portal for searching antibody and nanobody structures by attributes, sequence, CDR or antigen sequence, with structure viewers, statistics and downloads." ;
+    schema1:url <https://sabdab.opig.stats.ox.ac.uk/> .
+
+kgr:sabdab.single-domain-summary a schema1:Product ;
+    rdfs:label "SAbDab Single-Domain Antibody Summary" ;
+    dcterms:description "CSV summary of all single-domain antibody (nanobody) structures in SAbDab." ;
+    schema1:url <https://sabdab.opig.stats.ox.ac.uk/api/download/all-single-domain-summary> .
+
+kgr:sabdab.structures a schema1:Product ;
+    rdfs:label "SAbDab All Structures Archive" ;
+    dcterms:description "Tar archive of all SAbDab antibody structure files, built as a download job through the SAbDab API." ;
+    schema1:url <https://sabdab.opig.stats.ox.ac.uk/api/download/all-structures> .
+
+kgr:sabdab.summary a schema1:Product ;
+    rdfs:label "SAbDab All Structures Summary" ;
+    dcterms:description "CSV summary of all antibody structures in SAbDab, one row per antibody instance, with PDB ID, chain identifiers, variable domain and CDR sequences, antigen chains and type, organisms, experimental method, resolution and dates." ;
+    schema1:url <https://sabdab.opig.stats.ox.ac.uk/api/download/all-summary> .
+
 kgr:scales.graph a schema1:GraphProduct ;
     rdfs:label "SCALES Knowledge Graph" ;
     dcterms:description "SCALES knowledge graph of U.S. federal court records, derived from PACER data and served via the SCALES SPARQL and Triple Pattern Fragments endpoints." ;
@@ -55337,6 +55931,26 @@ kgr:snomedct.icd10cm.map a schema1:MappingProduct ;
     rdfs:label "SNOMED CT to ICD-10-CM Map" ;
     dcterms:description "The biannual release of the SNOMED CT to ICD-10-CM Map, which maps SNOMED CT concepts to ICD-10-CM codes." ;
     schema1:url <https://download.nlm.nih.gov/mlb/utsauth/ICD10CM/SNOMED_CT_to_ICD-10-CM_Resources_20250301.zip> .
+
+kgr:spliceai.ensembl-downloads a schema1:Product ;
+    rdfs:label "Ensembl SpliceAI Score Downloads" ;
+    dcterms:description "Ensembl directory of precomputed SpliceAI score files for the VEP SpliceAI plugin, with raw and masked SNV scores computed against Ensembl/MANE transcript sets (Ensembl 107 and 110, MANE v1.0 and v1.4) on GRCh38, plus a README." ;
+    schema1:url <https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_plugins/> .
+
+kgr:spliceai.ensembl-mane-masked a schema1:Product ;
+    rdfs:label "SpliceAI Masked SNV Scores, Ensembl MANE v1.4 (GRCh38)" ;
+    dcterms:description "Ensembl precomputed masked SpliceAI scores for all possible SNVs on GRCh38, calculated against one MANE Select transcript per protein-coding gene (MANE v1.4) with a maximum distance of 50 bases, as a bgzip-compressed VCF with a tabix index. Prepared for the Ensembl VEP SpliceAI plugin." ;
+    schema1:url <https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_plugins/spliceai_scores.masked.snv.ensembl_mane_v1.4.grch38.vcf.gz> .
+
+kgr:spliceai.ensembl-mane-raw a schema1:Product ;
+    rdfs:label "SpliceAI Raw SNV Scores, Ensembl MANE v1.4 (GRCh38)" ;
+    dcterms:description "Ensembl precomputed raw SpliceAI scores for all possible SNVs on GRCh38, calculated against one MANE Select transcript per protein-coding gene (MANE v1.4) with a maximum distance of 50 bases, as a bgzip-compressed VCF with a tabix index. Prepared for the Ensembl VEP SpliceAI plugin." ;
+    schema1:url <https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_plugins/spliceai_scores.raw.snv.ensembl_mane_v1.4.grch38.vcf.gz> .
+
+kgr:spliceai.precomputed a schema1:Product ;
+    rdfs:label "SpliceAI Precomputed Scores (Illumina BaseSpace)" ;
+    dcterms:description "Illumina precomputed SpliceAI scores for all possible substitutions, 1-base insertions and 1-4 base deletions within genes, on GRCh37 and GRCh38, raw and masked, distributed as VCF files through Illumina BaseSpace (login required). Free for academic and not-for-profit use; other uses require a commercial license." ;
+    schema1:url <https://basespace.illumina.com/s/otSPW8hnhaZR> .
 
 kgr:spoke-genelab.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SPOKE GeneLab SPARQL" ;
@@ -55986,6 +56600,11 @@ kgr:imodulondb.browser a schema1:GraphicalInterface ;
     dcterms:description "Interactive web interface for browsing and analyzing iModulons across 15 prokaryotic organisms with 22 datasets, 1924 curated iModulons, and 9576 expression profiles. Includes organism-specific dataset pages, iModulon dashboards, gene search functionality, and project information pages displaying experimental conditions and publication abstracts." ;
     schema1:url <https://imodulondb.org/> .
 
+kgr:intogen.cohorts a schema1:Product ;
+    rdfs:label "IntOGen Cohorts Table" ;
+    dcterms:description "Table of the cohorts analyzed in the current IntOGen release (cohorts.tsv), with cancer type, data source, sequencing platform, literature reference, treatment status, and sample and mutation counts for each cohort." ;
+    schema1:url <https://www.intogen.org/download?file=IntOGen-Cohorts-20240920.zip> .
+
 kgr:jpost.ontology a schema1:OntologyProduct ;
     rdfs:label "jPOST Ontology" ;
     dcterms:description "jPOST ontology (Turtle serialization at an .owl URL) defining the classes and properties of the jPOST database RDF, importing SIO and reusing PSI-MS, UniProt core, Unimod and FALDO terms." ;
@@ -56129,6 +56748,16 @@ kgr:ncipidkg.graph.ttl a schema1:GraphProduct ;
     dcterms:description "RDF graph converting NCI Pathway Interaction Database version 2.0 networks into RDF, enriched with INDRA evidence metadata." ;
     schema1:url <https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf> .
 
+kgr:ncrnadrug.drug-resistance-ccle a schema1:Product ;
+    rdfs:label "ncRNADrug Predicted Drug Resistance Associations from CCLE" ;
+    dcterms:description "Tab-delimited table of lncRNAs predicted to be associated with drug resistance from GDSC drug response data and CCLE lncRNA expression profiles (via TANRIC)." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/data_download/DR_CCLE.txt> .
+
+kgr:ncrnadrug.drug-resistance-nci60 a schema1:Product ;
+    rdfs:label "ncRNADrug Predicted Drug Resistance Associations from NCI60" ;
+    dcterms:description "Tab-delimited table of miRNAs predicted to be associated with drug resistance from NCI60 cancer cell line drug response and miRNA expression data obtained through CellMiner." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/data_download/DR_NCI60.txt> .
+
 kgr:nhpid.web a schema1:GraphicalInterface ;
     rdfs:label "NHPID Search" ;
     dcterms:description "Web application for searching NHPID ingredients by name or CAS number and role (homeopathic, medicinal, non-medicinal, non-NHP, component), and for searching the NHP controlled vocabularies by category. Controlled vocabulary terms for dosage forms, routes of administration, and units are adapted from ICH M5 lists, and ingredient naming conventions from the TGA approved terminology." ;
@@ -56153,6 +56782,11 @@ kgr:nlm.data-distribution a schema1:DocumentationProduct ;
     rdfs:label "NLM Data Distribution" ;
     dcterms:description "NLM Data Distribution program page, the preferred access point for bulk downloads of MEDLINE/PubMed baseline and daily update citation files (XML), MeSH data, and NLM catalog record data, with the associated terms and conditions." ;
     schema1:url <https://www.nlm.nih.gov/databases/download/data_distrib_main.html> .
+
+kgr:npinter.interactions-experimental a schema1:GraphProduct ;
+    rdfs:label "NPInter v5.0 Experimentally Validated Interactions" ;
+    dcterms:description "Experimentally validated NPInter v5.0 ncRNA interactions as a gzipped tab-delimited table." ;
+    schema1:url <http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.expr.txt.gz> .
 
 kgr:oard-kg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL" ;
@@ -56224,6 +56858,16 @@ kgr:organoiddb.organoid-specificity-samples a schema1:Product ;
     rdfs:label "OrganoidDB organoid specificity samples" ;
     dcterms:description "Sample metadata for the organoid samples used by the OrganoidDB organoid specificity search." ;
     schema1:url <http://www.inbirg.com/organoid_db/download/org_specificity_samples> .
+
+kgr:panelapp.api a schema1:ProgrammingInterface ;
+    rdfs:label "PanelApp REST API" ;
+    dcterms:description "Public REST API (JSON, paginated) for panels, genes, STRs, regions, panel versions and the panels signed off for the NHS Genomic Medicine Service (/api/v1/panels/signedoff/)." ;
+    schema1:url <https://panelapp.genomicsengland.co.uk/api/docs/> .
+
+kgr:panelapp.portal a schema1:GraphicalInterface ;
+    rdfs:label "PanelApp Web Site" ;
+    dcterms:description "PanelApp web site for browsing, searching and downloading gene panels, viewing gene, STR and region ratings and evidence, and submitting expert reviews." ;
+    schema1:url <https://panelapp.genomicsengland.co.uk/> .
 
 kgr:phewascat.associations a schema1:Product ;
     rdfs:label "PheWAS Association Data" ;
@@ -56340,6 +56984,21 @@ kgr:reprotox-kg.portal a schema1:GraphicalInterface ;
     dcterms:description "Public web interface for querying and exploring ReproTox-KG relationships." ;
     schema1:url <https://maayanlab.cloud/reprotox-kg> .
 
+kgr:revel.all-chromosomes a schema1:Product ;
+    rdfs:label "REVEL v1.3 Scores, All Chromosomes" ;
+    dcterms:description "REVEL v1.3 precomputed scores for all possible human missense variants in a single comma-separated file, with chromosome, hg19 and GRCh38 positions, reference and alternate nucleotides and amino acids, REVEL score, and Ensembl transcript IDs (released 2021-05-03)." ;
+    schema1:url <https://rothsj06.dmz.hpc.mssm.edu/revel-v1.3_all_chromosomes.zip> .
+
+kgr:revel.zenodo a schema1:Product ;
+    rdfs:label "REVEL Scores on Zenodo" ;
+    dcterms:description "Zenodo record of REVEL v1.3 scores, with the all-chromosome file and per-chromosome genome segment files (up to 500,000 variants per file) as zipped CSVs. The Zenodo record is labelled with the Open Data Commons Open Database License." ;
+    schema1:url <https://zenodo.org/records/7072866> .
+
+kgr:saprot.af2-uniref50 a schema1:Product ;
+    rdfs:label "SaProt AF2_UniRef50 Pre-training Dataset" ;
+    dcterms:description "AF2_UniRef50, the SaProt pre-training dataset of structure-aware sequences derived from AlphaFold2-predicted structures of UniRef50 representative proteins, in LMDB format with CSV train and validation splits." ;
+    schema1:url <https://huggingface.co/datasets/westlake-repl/AF2_UniRef50> .
+
 kgr:sep-l1000.go-signatures a schema1:Product ;
     rdfs:label "SEP-L1000 GO-Transformed Signatures" ;
     dcterms:description "Gene Ontology transformed L1000 signatures, giving Principal Angle Enrichment Analysis p-values of each drug signature against GO Biological Process, Cellular Component, and Molecular Function gene sets (20,338 compounds by 4,438 terms)." ;
@@ -56383,6 +57042,12 @@ kgr:sockg.graph a schema1:GraphProduct ;
     dcterms:description "The Soil Organic Carbon Knowledge Graph (SOCKG), an RDF knowledge graph integrating and mapping agricultural experimental data (soil properties, greenhouse gas fluxes, crop yields, and management practices) to support soil carbon modeling. Terminology is semantically aligned to the National Agricultural Library Thesaurus." ;
     schema1:url <https://idir.sockg.org/> .
 
+kgr:spliceai.lookup a schema1:GraphicalInterface ;
+    rdfs:label "SpliceAI-lookup" ;
+    dcterms:description "SpliceAI-lookup, a web tool maintained by the Broad Institute TGG that computes SpliceAI and Pangolin splicing predictions for a single variant (using modified versions supporting multi-nucleotide variants and raw scores) and shows other variant scores alongside. Source code is on GitHub (broadinstitute/SpliceAI-lookup, MIT license) for running a local API server." ;
+    schema1:identifier "RRID:SCR_026278" ;
+    schema1:url <https://spliceailookup.broadinstitute.org/> .
+
 kgr:swisslipid.enzymes a schema1:Product ;
     rdfs:label "SwissLipids Enzymes" ;
     dcterms:description "TSV export of lipid-related enzymes with UniProt, Rhea, and evidence links." ;
@@ -56407,6 +57072,11 @@ kgr:tera.chebi-to-mesh-csv a schema1:MappingProduct ;
     rdfs:label "ChEBI to MeSH Mapping (CSV)" ;
     dcterms:description "Mapping file linking ChEBI identifiers to MeSH identifiers" ;
     schema1:url <https://zenodo.org/records/4244313/files/chebi_to_mesh.csv> .
+
+kgr:therasabdab.portal a schema1:GraphicalInterface ;
+    rdfs:label "Thera-SAbDab Search Portal" ;
+    dcterms:description "Thera-SAbDab search interface for finding therapeutic antibodies by INN, target, format, clinical stage or sequence similarity, with summary pages linking each therapeutic to its matching SAbDab structures." ;
+    schema1:url <https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/therasabdab/search/> .
 
 kgr:toxbai.app a schema1:GraphicalInterface ;
     rdfs:label "ToxBAI Prediction Application" ;
@@ -56806,6 +57476,16 @@ kgr:gtrx.data a schema1:Product ;
     dcterms:description "BioThings GTRx association collection built from Genome-to-Treatment source records; the 20220802 build reports 695 association records" ;
     schema1:url <https://biothings.ncats.io/gtrx/metadata> .
 
+kgr:hmdd.alldata a schema1:Product ;
+    rdfs:label "HMDD v4.0 All Association Data (text)" ;
+    dcterms:description "Tab-delimited table of all HMDD v4.0 miRNA-disease association entries, with evidence code, PubMed ID, miRNA name, disease name, and a description of the supporting evidence. MiRNA names follow miRBase nomenclature and disease names follow MeSH." ;
+    schema1:url <http://www.cuilab.cn/static/hmdd3/data/alldata_v4.txt> .
+
+kgr:hmdd.alldata-xlsx a schema1:Product ;
+    rdfs:label "HMDD v4.0 All Association Data (Excel)" ;
+    dcterms:description "Excel version of the full HMDD v4.0 miRNA-disease association table." ;
+    schema1:url <http://www.cuilab.cn/static/hmdd3/data/alldata_v4.xlsx> .
+
 kgr:hrpimp.huri.psi a schema1:Product ;
     rdfs:label "HuRI PSI-MI Interaction Data" ;
     dcterms:description "Current HuRI PSI-MI formatted interaction file with detailed experimental information and isoform-specific ORF, transcript, and protein identifiers" ;
@@ -57046,6 +57726,11 @@ kgr:reprotox-kg.graph.geneshot-hpo a schema1:GraphProduct ;
     dcterms:description "Birth defect phenotype to gene associations from GeneShot literature co-mentions (6,064 nodes, 13,487 edges)." ;
     schema1:url <https://s3.amazonaws.com/maayan-kg/reprotox/Geneshot_HPO_to_Gene.valid.json> .
 
+kgr:saprot.models a schema1:Product ;
+    rdfs:label "SaProt Models" ;
+    dcterms:description "Trained SaProt model checkpoint (650M parameters) pre-trained on about 40 million AlphaFold2 structures, loadable with Hugging Face Transformers. Other released checkpoints include SaProt_35M_AF2, SaProt_650M_PDB, SaProt_1.3B_AF2 and SaProt_1.3B_AFDB_OMG_NCBI in the same organization." ;
+    schema1:url <https://huggingface.co/westlake-repl/SaProt_650M_AF2> .
+
 kgr:semra.raw-mappings a schema1:MappingProduct ;
     rdfs:label "SeMRA Raw Semantic Mappings Database" ;
     dcterms:description "SeMRA Raw Semantic Mappings Database, pre-assembled semantic mappings from ontologies indexed in the Bioregistry, databases integrated in PyOBO, Biomappings, Wikidata, and custom SeMRA resources, published on Zenodo under CC0." ;
@@ -57070,6 +57755,11 @@ kgr:spatialkg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph Spatial KG Graph" ;
     dcterms:description "The SAWGraph Spatial KG as an RDF (Turtle) graph. It contains all Level 13 grid cells from the S2 grid together with administrative regions of levels 1 to 3 (states, counties, and county subdivisions) and the spatial relationships between them for the 48 contiguous U.S. states. S2 grid cells and state/county geometries are taken from KnowWhereGraph, and county subdivisions are sourced from the US Census Bureau. The graph is served through the SAWGraph Spatial KG SPARQL and Triple Pattern Fragments endpoints." ;
     schema1:url <https://github.com/SAWGraph/geospatial-kg> .
+
+kgr:therasabdab.sequences-structures a schema1:Product ;
+    rdfs:label "Thera-SAbDab Sequences and Structures Table" ;
+    dcterms:description "CSV table of all Thera-SAbDab therapeutics with format, isotype, clinical trial stage and status, heavy and light chain variable domain sequences, matching SAbDab structures at 100%, 99% and 95-98% sequence identity, INN proposal and recommendation years, targets, companies and conditions." ;
+    schema1:url <https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/static/downloads/TheraSAbDab_SeqStruc_OnlineDownload.csv> .
 
 kgr:translator.dakp.graph a schema1:GraphProduct ;
     rdfs:label "Translator DAKP KGX Graph" ;
@@ -57346,6 +58036,11 @@ kgr:intact.ftp.psimitab.all a schema1:Product ;
     dcterms:description "Entire MITAB export of the database as a single archive (intact.zip)" ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip> .
 
+kgr:intogen.drivers a schema1:Product ;
+    rdfs:label "IntOGen Compendium of Cancer Genes" ;
+    dcterms:description "Compendium of Cancer Genes from the current IntOGen release, containing the catalog of driver genes (Compendium_Cancer_Genes.tsv) and the unfiltered driver results (Unfiltered_drivers.tsv) across all analyzed cohorts, with tumor type, mutated samples, method-specific and combined significance, and mode of action. Cohorts are drawn from TCGA, PCAWG, ICGC, Hartwig Medical Foundation, and other sequencing projects; genes are annotated with Ensembl canonical transcripts and the COSMIC Cancer Gene Census." ;
+    schema1:url <https://www.intogen.org/download?file=IntOGen-Drivers-20240920.zip> .
+
 kgr:kg-ebi-gene2pheno.edges.kgx a schema1:GraphProduct ;
     rdfs:label "EBI gene2pheno KGX edges" ;
     dcterms:description "KGX edges file for EBI Gene2Phenotype KG" ;
@@ -57395,6 +58090,16 @@ kgr:mind.valid a schema1:GraphProduct ;
     rdfs:label "MIND Validation Data" ;
     dcterms:description "Validation data for the MIND knowledge graph containing DrugCentral indications" ;
     schema1:url <https://zenodo.org/records/8117748/files/valid.txt> .
+
+kgr:ncrnadrug.drug-resistance-curated a schema1:Product ;
+    rdfs:label "ncRNADrug Curated Drug Resistance Associations" ;
+    dcterms:description "Tab-delimited table of experimentally supported ncRNAs associated with drug resistance or drug response, manually curated from the literature, with ncRNA and drug identifiers, effect, target genes, pathways, detection method and condition." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/data_download/DR_Curated.txt> .
+
+kgr:ncrnadrug.drug-target-curated a schema1:Product ;
+    rdfs:label "ncRNADrug Curated Drug Target Associations" ;
+    dcterms:description "Tab-delimited table of experimentally supported ncRNAs targeted by drugs (drugs that regulate ncRNA expression), manually curated from the literature, with ncRNA and drug identifiers, regulation direction, detection method and condition." ;
+    schema1:url <http://www.jianglab.cn/ncRNADrug/data_download/DT_Curated.txt> .
 
 kgr:openbiodiv.ontology.ttl a schema1:OntologyProduct ;
     rdfs:label "OpenBioDiv-O" ;
@@ -58017,6 +58722,11 @@ kgr:nlm-ckn.graph a schema1:GraphProduct ;
     rdfs:label "nlm-ckn-graph" ;
     dcterms:description "The NLM-CKN knowledge graph of cellular phenotypes. It is built from triple assertions (subject-predicate-object) that link single-cell genomics experimental data (from the CELLxGENE Census) and computationally derived NS-Forest marker genes to the Cell Ontology and other reference ontologies, augmented with literature-derived assertions from text mining/NLP. The graph is produced by the NLM-CKN ETL pipeline as an ArangoDB archive and served via the web application at https://nlm-ckn.org." ;
     schema1:url <https://nlm-ckn.org> .
+
+kgr:npinter.interactions a schema1:GraphProduct ;
+    rdfs:label "NPInter v5.0 All Interactions" ;
+    dcterms:description "All NPInter v5.0 ncRNA interactions (literature-curated, high-throughput and computational) as a gzipped tab-delimited table of ncRNA, partner, interaction class, level, experiment, data source, organism, tissue or cell, and PubMed IDs." ;
+    schema1:url <http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz> .
 
 kgr:onco.all_json a schema1:GraphProduct ;
     rdfs:label "OnCo full corpus (JSON)" ;
@@ -59415,16 +60125,6 @@ kgr:service-kp.trapi a schema1:ProgrammingInterface ;
     dcterms:description "TRAPI endpoint for the Service Provider team, served by BioThings Explorer, querying the BioThings and other APIs registered to the team in SmartAPI." ;
     schema1:url <https://bte.transltr.io/v1/team/Service%20Provider> .
 
-kgr:biobtree.api a schema1:ProgrammingInterface ;
-    rdfs:label "BioBTree REST API" ;
-    dcterms:description "REST API for searching identifiers and special keywords, mapping between data sources with a chain-query syntax, and retrieving entries across the integrated BioBTree databases." ;
-    schema1:url <https://sugi.bio/biobtree/api/> .
-
-kgr:biobtree.graph.human-subgraph a schema1:GraphProduct ;
-    rdfs:label "BioBTree Knowledge Graph - Human Subgraph (KGX)" ;
-    dcterms:description "Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported as a biolink-typed KGX graph (~40M nodes / ~132M edges, ~8.3 GB compressed across separate node and edge files). A practical projection of the full graph for human-centric biomedical use. Published on Zenodo." ;
-    schema1:url <https://zenodo.org/records/20816742> .
-
 kgr:spoke.graph a schema1:GraphProduct ;
     rdfs:label "SPOKE Graph" ;
     dcterms:description "The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources." ;
@@ -59435,10 +60135,20 @@ kgr:enrichr.libraries a schema1:Product ;
     dcterms:description "Downloadable Enrichr gene set libraries (more than 200 libraries across transcription, pathways, ontologies, diseases/drugs, cell types, crowd-contributed, and legacy categories), each retrievable as a GMT-style tab-delimited text file via the geneSetLibrary endpoint (e.g. geneSetLibrary?mode=text&libraryName=KEGG_2021_Human). Libraries are compiled from external databases including GO, KEGG, Reactome, WikiPathways, MSigDB, ChEA/ENCODE, GTEx, ARCHS4, LINCS L1000, GEO, DisGeNET, OMIM, GWAS Catalog, HPO, MGI, CellMarker, and others." ;
     schema1:url <https://maayanlab.cloud/Enrichr/#libraries> .
 
+kgr:biobtree.graph.human-subgraph a schema1:GraphProduct ;
+    rdfs:label "BioBTree Knowledge Graph - Human Subgraph (KGX)" ;
+    dcterms:description "Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection of the full graph for human-centric biomedical use. Sources without compatible redistribution terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense variant-prediction layers). Published on Zenodo." ;
+    schema1:url <https://doi.org/10.5281/zenodo.20816741> .
+
 kgr:sri-reference-kg.graph a schema1:GraphProduct ;
     rdfs:label "SRI-Reference KG (KGX distribution)" ;
     dcterms:description "KGX distribution of the SRI-Reference KG" ;
     schema1:url <https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz> .
+
+kgr:biobtree.api a schema1:ProgrammingInterface ;
+    rdfs:label "BioBTree REST API" ;
+    dcterms:description "REST API for searching identifiers and special keywords, mapping between data sources with a chain-query syntax, and retrieving entries across the integrated BioBTree databases." ;
+    schema1:url <https://sugi.bio/biobtree/api/> .
 
 kgr:genecards.web.interface a schema1:GraphicalInterface ;
     rdfs:label "GeneCards Web Interface" ;

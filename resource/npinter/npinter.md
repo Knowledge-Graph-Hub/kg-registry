@@ -83,6 +83,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: ensembl
+  product_file_size: 43319525
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -99,6 +100,7 @@ products:
     source: pubmed
   - relation_type: prov:hadPrimarySource
     source: gene-expression-omnibus
+  product_file_size: 704301
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.expr.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -111,6 +113,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: npinter
+  product_file_size: 42613351
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.comp.txt.gz
 - category: Product
   compression: gzip
@@ -123,6 +126,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: npinter
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/bindingsite_NPInterv5.txt.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
+    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+    without response''))'
 - category: GraphProduct
   compression: gzip
   description: Genome-wide RNA-DNA interactions collected by NPInter v5.0 from iMARGI,
@@ -137,6 +144,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gene-expression-omnibus
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/dna_interactions.npinter5.txt.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
+    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+    without response''))'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
