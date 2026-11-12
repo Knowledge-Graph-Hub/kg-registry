@@ -2364,12 +2364,30 @@ entries:
     source_path: resource/dcat/dcat.md
     status: valid
     warnings: []
+  resource/dcdb/dcdb.md#publication[0]#DOI:10.1093/bioinformatics/btp697:
+    checked_at: '2026-11-12T20:25:27Z'
+    errors: []
+    fingerprint: b5e02427eb01a8ff274abe62ba8d7bf1073b27407304c9d5591fff98d02407e3
+    publication_index: 0
+    reference_id: DOI:10.1093/bioinformatics/btp697
+    source_path: resource/dcdb/dcdb.md
+    status: valid
+    warnings: []
   resource/dcdb/dcdb.md#publication[0]#PMID:20031966:
     checked_at: '2026-08-06T18:17:01Z'
     errors: []
     fingerprint: 0e1e0287a442746421434c2e00c54032d040dac2430cb80b406a0507470b0805
     publication_index: 0
     reference_id: PMID:20031966
+    source_path: resource/dcdb/dcdb.md
+    status: valid
+    warnings: []
+  resource/dcdb/dcdb.md#publication[1]#DOI:10.1093/database/bau124:
+    checked_at: '2026-11-12T20:25:29Z'
+    errors: []
+    fingerprint: 7618139c64d7207687f74d20c78f9ad10d2df8abfafc40d35811e7f136f9b63c
+    publication_index: 1
+    reference_id: DOI:10.1093/database/bau124
     source_path: resource/dcdb/dcdb.md
     status: valid
     warnings: []
