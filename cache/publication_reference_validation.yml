@@ -9477,6 +9477,33 @@ entries:
     source_path: resource/rxnorm/rxnorm.md
     status: valid
     warnings: []
+  resource/sabdab/sabdab.md#publication[0]#DOI:10.1093/nar/gkag1091:
+    checked_at: '2026-11-12T19:20:29Z'
+    errors: []
+    fingerprint: eb88520308af41557b9f0f65236031e2083fc2fe3df14b898ed62eca6c705f06
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkag1091
+    source_path: resource/sabdab/sabdab.md
+    status: valid
+    warnings: []
+  resource/sabdab/sabdab.md#publication[1]#DOI:10.1093/nar/gkt1043:
+    checked_at: '2026-11-12T19:20:31Z'
+    errors: []
+    fingerprint: 2bd48311f66c3601931579bf4950311dad1cd4d51893df1306e7ffe1fb55e6d6
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkt1043
+    source_path: resource/sabdab/sabdab.md
+    status: valid
+    warnings: []
+  resource/sabdab/sabdab.md#publication[2]#DOI:10.1093/nar/gkab1050:
+    checked_at: '2026-11-12T19:20:32Z'
+    errors: []
+    fingerprint: 75842ab1b77753b214a264b965d83e45dcbcf343ff305716d13e05132a1c2ec8
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkab1050
+    source_path: resource/sabdab/sabdab.md
+    status: valid
+    warnings: []
   resource/sbo/sbo.md#publication[0]#PMID:22027554:
     checked_at: '2026-08-06T18:18:56Z'
     errors: []
