@@ -5268,6 +5268,15 @@ entries:
     source_path: resource/interpro/interpro.md
     status: valid
     warnings: []
+  resource/intogen/intogen.md#publication[0]#DOI:10.1038/s41568-020-0290-x:
+    checked_at: '2026-11-12T19:20:17Z'
+    errors: []
+    fingerprint: 1503bb69c36e4f2f130c3f3e7cc8530cf8e0f273be25f45f936ead5e837b229b
+    publication_index: 0
+    reference_id: DOI:10.1038/s41568-020-0290-x
+    source_path: resource/intogen/intogen.md
+    status: valid
+    warnings: []
   resource/inxight-drugs/inxight-drugs.md#publication[0]#PMID:34648031:
     checked_at: '2026-08-06T18:17:52Z'
     errors: []
