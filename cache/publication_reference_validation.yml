@@ -1297,6 +1297,15 @@ entries:
     source_path: resource/cdc-places/cdc-places.md
     status: valid
     warnings: []
+  resource/cdcdb/cdcdb.md#publication[0]#DOI:10.1038/s41597-022-01360-z:
+    checked_at: '2026-11-12T20:57:36Z'
+    errors: []
+    fingerprint: 3d767726e1b93f8dc0d1226789ac3479a59c623283c93c7c3e7f620d49bc6bcd
+    publication_index: 0
+    reference_id: DOI:10.1038/s41597-022-01360-z
+    source_path: resource/cdcdb/cdcdb.md
+    status: valid
+    warnings: []
   resource/cdd/cdd.md#publication[0]#DOI:10.1093/nar/gkac1096:
     checked_at: '2026-06-17T14:07:31Z'
     errors: []
